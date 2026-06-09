@@ -1,0 +1,27 @@
+services:
+  mediawiki:
+    image: mediawiki:1.43
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+    volumes:
+      - mediawiki-images:/var/www/html/images
+      - ./LocalSettings.vocomipedia.php:/var/www/html/LocalSettings.php:ro
+    depends_on:
+      - db
+
+  db:
+    image: mariadb:11
+    restart: unless-stopped
+    environment:
+      MARIADB_DATABASE: mediawiki
+      MARIADB_USER: mediawiki
+      MARIADB_PASSWORD: change-me
+      MARIADB_ROOT_PASSWORD: change-me-root
+    volumes:
+      - mediawiki-db:/var/lib/mysql
+
+volumes:
+  mediawiki-images:
+  mediawiki-db:
+
