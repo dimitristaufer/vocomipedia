@@ -14,6 +14,8 @@ existing Azure upload code for older app versions and rollback support.
 
 Nginx serves `current` with `sendfile`, byte-range resume support, ETags, and a
 per-connection download cap. The initial cap is 25 MB/s after the first 5 MB.
+The deploy tool keeps old server releases according to `--keep-releases`; use
+`--keep-releases 3` for normal production runs.
 
 ## GitHub Environment Secrets
 
@@ -43,8 +45,33 @@ python3 tools/deploy_packs_to_vps.py \
   --port "$VPS_PORT" \
   --user vocomipedia \
   --ssh-key "$VPS_SSH_KEY_PATH" \
-  --remote-root /srv/vocomi-packs
+  --remote-root /srv/vocomi-packs \
+  --keep-releases 3
 ```
+
+## Local Artifact Cleanup
+
+Local pack builds can accumulate quickly under `vocomi_pack_generation/packs`.
+Use the dry run first:
+
+```bash
+python3 tools/prune_pack_artifacts.py \
+  --packs-dir ../vocomi_pack_generation/packs \
+  --keep 3
+```
+
+Then apply:
+
+```bash
+python3 tools/prune_pack_artifacts.py \
+  --packs-dir ../vocomi_pack_generation/packs \
+  --keep 3 \
+  --apply
+```
+
+The grouping key is deck/artifact family plus pack kind. That means data packs,
+preview image packs, full image packs, and individual chunk packs each keep
+their own last three artifacts.
 
 ## URLs
 

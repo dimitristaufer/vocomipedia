@@ -132,7 +132,7 @@ def main() -> int:
     ap.add_argument("--port", default=22, type=int)
     ap.add_argument("--ssh-key", required=True, type=Path)
     ap.add_argument("--remote-root", default="/srv/vocomi-packs")
-    ap.add_argument("--keep-releases", default=8, type=int)
+    ap.add_argument("--keep-releases", default=3, type=int)
     args = ap.parse_args()
 
     packs_dir = args.packs_dir.resolve()

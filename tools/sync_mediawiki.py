@@ -8,11 +8,14 @@ import copy
 import datetime as dt
 import hashlib
 import html
+import http.client
 import http.cookiejar
 import json
 import os
 import re
 import tempfile
+import time
+import urllib.error
 import urllib.parse
 import urllib.request
 from pathlib import Path
@@ -845,15 +848,35 @@ class MediaWikiClient:
         self.cookies = http.cookiejar.CookieJar()
         self.opener = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(self.cookies))
 
+    def open_with_retries(self, request_factory, *, attempts: int = 5) -> bytes:
+        last_error: Exception | None = None
+        for attempt in range(1, attempts + 1):
+            try:
+                with self.opener.open(request_factory(), timeout=180) as resp:
+                    return resp.read()
+            except urllib.error.HTTPError as exc:
+                if exc.code not in {429, 500, 502, 503, 504} or attempt == attempts:
+                    raise
+                last_error = exc
+            except (urllib.error.URLError, TimeoutError, ConnectionResetError, http.client.RemoteDisconnected) as exc:
+                if attempt == attempts:
+                    raise
+                last_error = exc
+            time.sleep(min(30, 2 ** attempt))
+        if last_error:
+            raise last_error
+        raise RuntimeError("MediaWiki request failed without an exception")
+
     def request(self, params: dict, method: str = "POST") -> dict:
         encoded = urllib.parse.urlencode(params).encode("utf-8")
-        if method == "GET":
-            url = self.api_url + "?" + encoded.decode("utf-8")
-            req = urllib.request.Request(url)
-        else:
-            req = urllib.request.Request(self.api_url, data=encoded)
-        with self.opener.open(req) as resp:
-            return json.loads(resp.read().decode("utf-8"))
+
+        def make_request():
+            if method == "GET":
+                url = self.api_url + "?" + encoded.decode("utf-8")
+                return urllib.request.Request(url)
+            return urllib.request.Request(self.api_url, data=encoded)
+
+        return json.loads(self.open_with_retries(make_request).decode("utf-8"))
 
     def login(self, username: str, password: str) -> None:
         token_resp = self.request({"action": "query", "meta": "tokens", "type": "login", "format": "json"})
@@ -920,13 +943,16 @@ class MediaWikiClient:
                 f"--{boundary}--\r\n".encode("utf-8"),
             ]
         )
-        req = urllib.request.Request(
-            self.api_url,
-            data=b"".join(chunks),
-            headers={"Content-Type": f"multipart/form-data; boundary={boundary}"},
-        )
-        with self.opener.open(req) as resp:
-            data = json.loads(resp.read().decode("utf-8"))
+        body = b"".join(chunks)
+
+        def make_request():
+            return urllib.request.Request(
+                self.api_url,
+                data=body,
+                headers={"Content-Type": f"multipart/form-data; boundary={boundary}"},
+            )
+
+        data = json.loads(self.open_with_retries(make_request).decode("utf-8"))
         if "error" in data:
             if (data.get("error") or {}).get("code") == "fileexists-no-change":
                 return

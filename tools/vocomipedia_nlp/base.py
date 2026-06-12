@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import copy
 import dataclasses
+import functools
 import re
 import unicodedata
 from typing import Any, Dict, Iterable, List, Optional
@@ -388,6 +389,7 @@ def _parse_feats(raw: Any) -> Dict[str, str]:
     return out
 
 
+@functools.lru_cache(maxsize=16)
 def analyzer_for_language(language: str) -> SentenceAnalyzer:
     language = normalize_language(language)
     if language == "ja":

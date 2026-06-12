@@ -179,7 +179,7 @@ MEDIAWIKI_USERNAME='BotUser@BotName' \
 MEDIAWIKI_PASSWORD='bot-password' \
 python3 tools/sync_mediawiki.py push-api \
   --deck-dir data/languages/zh/zh_1 \
-  --api-url 'https://vocomipedia.com/w/api.php' \
+  --api-url 'https://vocomipedia.com/api.php' \
   --approved-only
 ```
 
@@ -193,7 +193,7 @@ To refresh only those pages, run:
 
 ```bash
 python3 tools/sync_mediawiki.py seed-structure \
-  --api-url 'https://vocomipedia.com/w/api.php' \
+  --api-url 'https://vocomipedia.com/api.php' \
   --username 'AdminUser' \
   --password 'admin-password'
 ```
@@ -205,7 +205,7 @@ Pull canonical JSON blocks back from MediaWiki pages:
 
 ```bash
 python3 tools/sync_mediawiki.py pull-api \
-  --api-url 'https://vocomipedia.com/w/api.php' \
+  --api-url 'https://vocomipedia.com/api.php' \
   --prefix 'Item:zh_1/' \
   --out-dir tmp/wiki-pull/zh_1
 ```

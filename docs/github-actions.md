@@ -24,7 +24,7 @@ needs permission to push branches and open pull requests in `dimitristaufer/Voco
 For MediaWiki pull/push:
 
 ```text
-MEDIAWIKI_API_URL      https://vocomipedia.com/w/api.php
+MEDIAWIKI_API_URL      https://vocomipedia.com/api.php
 MEDIAWIKI_USERNAME     BotUser@BotName
 MEDIAWIKI_PASSWORD     bot password
 ```
@@ -146,6 +146,13 @@ upload: true
 vps_pack_deploy: true
 mediawiki_push: true
 generate_search_sql: true
+```
+
+For the current VPS-only deployment, keep Azure disabled:
+
+```text
+upload: false
+vps_pack_deploy: true
 ```
 
 The release workflow automatically imports sibling decks needed for combined
