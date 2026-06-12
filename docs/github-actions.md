@@ -80,9 +80,9 @@ Create a protected GitHub environment named:
 production
 ```
 
-Require approval for that environment. `Release And Deploy` always uses it, so
-build/upload/wiki-push runs are gated even when the workflow is manually
-started.
+Require approval for that environment. `Wiki Sync Back` and `Release And
+Deploy` both use it so private-repo, MediaWiki, and deployment secrets stay
+behind the same manual approval gate.
 
 ## Sync Approved Wiki Edits Back
 
