@@ -87,7 +87,27 @@ rm -f "$root/incoming/$name.tar.gz"
 cd "$root/incoming/$name"
 if compgen -G "*.sha256" >/dev/null; then
   for checksum in *.sha256; do
-    sha256sum -c "$checksum"
+    if sha256sum -c "$checksum" >/dev/null 2>&1; then
+      sha256sum -c "$checksum"
+      continue
+    fi
+    target="${{checksum%.sha256}}.vpack"
+    expected="$(tr -d '[:space:]' < "$checksum")"
+    if ! [[ "$expected" =~ ^[0-9A-Fa-f]{{64}}$ ]]; then
+      echo "$checksum: unsupported checksum format" >&2
+      exit 1
+    fi
+    if [ ! -f "$target" ]; then
+      echo "$checksum: expected artifact $target is missing" >&2
+      exit 1
+    fi
+    actual="$(sha256sum "$target" | awk '{{print $1}}')"
+    if [ "${{actual,,}}" != "${{expected,,}}" ]; then
+      echo "$target: FAILED" >&2
+      echo "$checksum: expected $expected, got $actual" >&2
+      exit 1
+    fi
+    echo "$target: OK"
   done
 fi
 find . -type f -exec chmod 0644 {{}} +
