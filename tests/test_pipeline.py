@@ -4,7 +4,9 @@
 from __future__ import annotations
 
 import json
+import contextlib
 import importlib.util
+import io
 import shutil
 import sqlite3
 import subprocess
@@ -41,6 +43,10 @@ DEPLOY_PACKS_SPEC = importlib.util.spec_from_file_location("deploy_packs_to_vps"
 assert DEPLOY_PACKS_SPEC and DEPLOY_PACKS_SPEC.loader
 deploy_packs_to_vps = importlib.util.module_from_spec(DEPLOY_PACKS_SPEC)
 DEPLOY_PACKS_SPEC.loader.exec_module(deploy_packs_to_vps)
+CHANGED_ITEMS_SPEC = importlib.util.spec_from_file_location("changed_deck_items", TOOLS / "changed_deck_items.py")
+assert CHANGED_ITEMS_SPEC and CHANGED_ITEMS_SPEC.loader
+changed_deck_items = importlib.util.module_from_spec(CHANGED_ITEMS_SPEC)
+CHANGED_ITEMS_SPEC.loader.exec_module(changed_deck_items)
 from vocomipedia_nlp import analyze_sentence
 
 
@@ -82,6 +88,104 @@ class VocomipediaPipelineTests(unittest.TestCase):
         self.assertIn('(root / "packs-images.json").write_text', script)
         self.assertLess(script.find('find -L "$root/current"'), script.find('tar -xzf "$root/incoming/$name.tar.gz"'))
         self.assertLess(script.find('rm -f packs.json packs-images.json'), script.find("if compgen -G"))
+
+    def test_push_api_filters_changed_items_without_shrinking_index_source(self) -> None:
+        with tempfile.TemporaryDirectory() as td:
+            tmp = Path(td)
+            pack_dir = tmp / "ja_n5"
+            item_dir = pack_dir / "items"
+            item_dir.mkdir(parents=True)
+
+            def item(item_id: str, entry_id: str) -> dict:
+                return {
+                    "schema_version": "vocomipedia-item-2",
+                    "id": f"ja_n5:{item_id}",
+                    "pack_code": "ja_n5",
+                    "language": "ja",
+                    "entry_id": entry_id,
+                    "headword": entry_id,
+                    "reading": "",
+                    "label": "",
+                    "level": "N5",
+                    "order": 0,
+                    "part_of_speech": ["Noun"],
+                    "glosses": {"en": entry_id},
+                    "sentences": [],
+                    "media": {"image_filename": "", "license": "Vocomi-created", "review_status": "approved"},
+                    "review": {"status": "approved"},
+                    "provenance": {"origin": "test", "ai_generated": True, "license_status": "generated_by_vocomi"},
+                    "app_payload": {},
+                }
+
+            (item_dir / "one.json").write_text(json.dumps(item("one", "one"), ensure_ascii=False), encoding="utf-8")
+            (item_dir / "two.json").write_text(json.dumps(item("two", "two"), ensure_ascii=False), encoding="utf-8")
+            (pack_dir / "pack.json").write_text(
+                json.dumps(
+                    {
+                        "schema_version": "vocomipedia-pack-1",
+                        "pack_code": "ja_n5",
+                        "title": "Japanese N5",
+                        "language": "ja",
+                        "items": [
+                            {"id": "ja_n5:one", "entry_id": "one", "file": "items/one.json", "order": 0},
+                            {"id": "ja_n5:two", "entry_id": "two", "file": "items/two.json", "order": 1},
+                        ],
+                    }
+                ),
+                encoding="utf-8",
+            )
+            changed = tmp / "changed.txt"
+            changed.write_text("items/two.json\n", encoding="utf-8")
+            buf = io.StringIO()
+            with contextlib.redirect_stdout(buf):
+                count = sync_mediawiki.push_api(
+                    pack_dir,
+                    "https://example.invalid/api.php",
+                    "",
+                    "",
+                    approved_only=True,
+                    dry_run=True,
+                    skip_index_pages=True,
+                    admin_pages=False,
+                    structure=False,
+                    entry_images=False,
+                    changed_items_file=changed,
+                    skip_if_no_changed_items=True,
+                )
+            output = buf.getvalue()
+            self.assertEqual(count, 1)
+            self.assertIn("Selected 1 changed item page(s) out of 2 approved item(s).", output)
+            self.assertIn("DRY RUN: would edit Item:ja_n5/two", output)
+            self.assertNotIn("DRY RUN: would edit Item:ja_n5/one", output)
+
+    def test_changed_deck_items_detects_changed_canonical_item_files(self) -> None:
+        with tempfile.TemporaryDirectory() as td:
+            tmp = Path(td)
+            run(["git", "init"], cwd=tmp)
+            run(["git", "config", "user.email", "test@example.invalid"], cwd=tmp)
+            run(["git", "config", "user.name", "Test User"], cwd=tmp)
+            pack_dir = tmp / "data" / "languages" / "ja" / "ja_n5"
+            item_dir = pack_dir / "items"
+            item_dir.mkdir(parents=True)
+            (pack_dir / "pack.json").write_text(
+                json.dumps(
+                    {
+                        "schema_version": "vocomipedia-pack-1",
+                        "pack_code": "ja_n5",
+                        "items": [{"id": "ja_n5:one", "entry_id": "one", "file": "items/one.json", "order": 0}],
+                    }
+                ),
+                encoding="utf-8",
+            )
+            (item_dir / "one.json").write_text('{"id":"ja_n5:one"}\n', encoding="utf-8")
+            run(["git", "add", "."], cwd=tmp)
+            run(["git", "commit", "-m", "base"], cwd=tmp)
+            base = run(["git", "rev-parse", "HEAD"], cwd=tmp).stdout.strip()
+            (item_dir / "one.json").write_text('{"id":"ja_n5:one","changed":true}\n', encoding="utf-8")
+            run(["git", "add", "."], cwd=tmp)
+            run(["git", "commit", "-m", "change"], cwd=tmp)
+            paths = changed_deck_items.changed_item_paths(tmp, base, "HEAD", pack_dir)
+            self.assertEqual(paths, ["items/one.json"])
 
     def test_import_validate_export_round_trip(self) -> None:
         with tempfile.TemporaryDirectory() as td:

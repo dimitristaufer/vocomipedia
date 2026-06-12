@@ -2242,6 +2242,37 @@ def generate_pages(pack_dir: Path, out_dir: Path, approved_only: bool) -> int:
     return count
 
 
+def load_changed_item_refs(path: Path | None, pack_dir: Path) -> tuple[set[Path], set[str]] | None:
+    if path is None:
+        return None
+    if not path.exists():
+        raise SystemExit(f"changed items file does not exist: {path}")
+    paths: set[Path] = set()
+    ids: set[str] = set()
+    repo = Path.cwd().resolve()
+    for raw in path.read_text(encoding="utf-8").splitlines():
+        value = raw.strip()
+        if not value or value.startswith("#"):
+            continue
+        if value.endswith(".json") or "/" in value:
+            candidate = Path(value)
+            if candidate.is_absolute():
+                paths.add(candidate.resolve())
+            else:
+                paths.add((pack_dir / candidate).resolve())
+                paths.add((repo / candidate).resolve())
+            continue
+        ids.add(value)
+    return paths, ids
+
+
+def item_matches_changed_refs(item: dict, path: Path, changed_refs: tuple[set[Path], set[str]] | None) -> bool:
+    if changed_refs is None:
+        return True
+    changed_paths, changed_ids = changed_refs
+    return path.resolve() in changed_paths or str(item.get("id") or "") in changed_ids
+
+
 def push_api(
     pack_dir: Path,
     api_url: str,
@@ -2255,10 +2286,21 @@ def push_api(
     structure: bool = True,
     interface_pages: bool = False,
     entry_images: bool = True,
+    changed_items_file: Path | None = None,
+    skip_if_no_changed_items: bool = False,
 ) -> int:
     manifest = load_pack_manifest(pack_dir)
-    client = MediaWikiClient(api_url)
+    changed_refs = load_changed_item_refs(changed_items_file, pack_dir)
+    all_items = list(iter_pack_items(pack_dir, approved_only=approved_only))
+    items_to_push = [(item, path) for item, path in all_items if item_matches_changed_refs(item, path, changed_refs)]
+    if changed_refs is not None:
+        print(f"Selected {len(items_to_push)} changed item page(s) out of {len(all_items)} approved item(s).", flush=True)
+    if skip_if_no_changed_items and not items_to_push:
+        print("No changed item pages selected; skipping MediaWiki push.", flush=True)
+        return 0
+    client = None if dry_run else MediaWikiClient(api_url)
     if not dry_run:
+        assert client is not None
         client.login(username, password)
         token = client.csrf_token()
     else:
@@ -2269,12 +2311,12 @@ def push_api(
             if dry_run:
                 print(f"DRY RUN: would edit {title}")
             else:
+                assert client is not None
                 client.edit(title, text, summary, token)
-    pushed_items: list[dict] = []
     uploaded_images = 0
     with tempfile.TemporaryDirectory(prefix="vocomipedia-entry-images.") as td:
         image_work_dir = Path(td)
-        for item, _path in iter_pack_items(pack_dir, approved_only=approved_only):
+        for item, _path in items_to_push:
             title = page_title(manifest["pack_code"], item)
             entry_image = entry_image_reference(pack_dir, item)
             if entry_images:
@@ -2284,22 +2326,25 @@ def push_api(
                     if dry_run:
                         print(f"DRY RUN: would upload File:{entry_image}")
                     else:
+                        assert client is not None
                         client.upload_file(entry_image, image_path, f"Sync low-res Vocomipedia entry image for {item['entry_id']}", token)
                     uploaded_images += 1
             text = render_item_page(item, entry_image=entry_image)
             if dry_run:
                 print(f"DRY RUN: would edit {title}")
             else:
+                assert client is not None
                 client.edit(title, text, f"Sync {manifest['pack_code']} item {item['entry_id']}", token)
             count += 1
-            pushed_items.append(item)
-    if pushed_items and not skip_index_pages:
+    index_items = [item for item, _path in all_items]
+    if index_items and not skip_index_pages:
         deck_title = f"Deck:{manifest['pack_code']}"
-        deck_text = render_deck_index(manifest["pack_code"], pushed_items)
+        deck_text = render_deck_index(manifest["pack_code"], index_items)
         if dry_run:
             print(f"DRY RUN: would edit {deck_title}")
             print("DRY RUN: would edit Main Page")
         else:
+            assert client is not None
             client.edit(deck_title, deck_text, f"Sync {manifest['pack_code']} deck index", token)
             deck_codes = [
                 normalize_deck_code(title.split(":", 1)[1])
@@ -2316,12 +2361,14 @@ def push_api(
         if dry_run:
             print(f"DRY RUN: would edit {admin_title}")
         else:
+            assert client is not None
             client.edit(admin_title, render_admin_page(), "Sync Vocomipedia admin dashboard", token)
     if sidebar:
         sidebar_title = "MediaWiki:Sidebar"
         if dry_run:
             print(f"DRY RUN: would edit {sidebar_title}")
         else:
+            assert client is not None
             client.edit(sidebar_title, render_sidebar_page(), "Sync Vocomipedia sidebar", token)
     image_note = f", {'would upload' if dry_run else 'uploaded'} {uploaded_images} low-res image(s)" if entry_images else ", skipped image uploads"
     print(f"{'Would push' if dry_run else 'Pushed'} {count} page(s){image_note}.")
@@ -2390,6 +2437,8 @@ def main() -> int:
     push.add_argument("--push-interface-pages", action="store_true", help="Also update MediaWiki: interface messages. Requires editinterface rights.")
     push.add_argument("--push-sidebar", action="store_true", help="Update MediaWiki:Sidebar. Requires editinterface rights.")
     push.add_argument("--skip-entry-images", action="store_true", help="Do not upload low-res entry images; rendered item pages still reference canonical image filenames.")
+    push.add_argument("--changed-items-file", type=Path, help="Only push item pages listed in this file. Lines may be item ids or paths relative to --deck-dir.")
+    push.add_argument("--skip-if-no-changed-items", action="store_true", help="Exit before login if --changed-items-file selects no item pages.")
 
     seed = sub.add_parser("seed-structure", help="Push Page Forms templates/forms and optional interface messages only.")
     seed.add_argument("--api-url", required=True)
@@ -2430,6 +2479,8 @@ def main() -> int:
             structure=not args.skip_structure_pages,
             interface_pages=args.push_interface_pages,
             entry_images=not args.skip_entry_images,
+            changed_items_file=args.changed_items_file,
+            skip_if_no_changed_items=args.skip_if_no_changed_items,
         )
         return 0
     if args.cmd == "seed-structure":
