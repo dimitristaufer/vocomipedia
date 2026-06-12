@@ -267,4 +267,5 @@ and search-index artifacts.
 Local MediaWiki setup is documented in `docs/local-mediawiki.md`.
 GitHub Actions setup and required secrets are documented in
 `docs/github-actions.md`.
+VPS static pack hosting is documented in `docs/vps-pack-hosting.md`.
 # vocomipedia

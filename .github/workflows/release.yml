@@ -30,6 +30,11 @@ on:
         type: boolean
         required: false
         default: false
+      vps_pack_deploy:
+        description: "Deploy built pack artifacts to the VPS static pack host"
+        type: boolean
+        required: false
+        default: false
       mediawiki_push:
         description: "Push generated approved item pages to MediaWiki"
         type: boolean
@@ -151,6 +156,32 @@ jobs:
             --outdir release \
             --validate-private-key "${{ steps.private-key.outputs.path }}" \
             $UPLOAD_ARG
+      - name: Deploy pack artifacts to VPS
+        if: inputs.vps_pack_deploy
+        env:
+          VPS_PACK_HOST: ${{ secrets.VPS_PACK_HOST }}
+          VPS_PACK_PORT: ${{ secrets.VPS_PACK_PORT }}
+          VPS_PACK_USER: ${{ secrets.VPS_PACK_USER }}
+          VPS_PACK_SSH_KEY: ${{ secrets.VPS_PACK_SSH_KEY }}
+          VPS_PACK_ROOT: ${{ secrets.VPS_PACK_ROOT }}
+        run: |
+          test -n "$VPS_PACK_HOST"
+          test -n "$VPS_PACK_USER"
+          test -n "$VPS_PACK_SSH_KEY"
+          install -m 700 -d ~/.ssh
+          printf '%s\n' "$VPS_PACK_SSH_KEY" > ~/.ssh/vocomipedia_pack_deploy
+          chmod 600 ~/.ssh/vocomipedia_pack_deploy
+          PORT="${VPS_PACK_PORT:-22}"
+          ROOT="${VPS_PACK_ROOT:-/srv/vocomi-packs}"
+          cd vocomipedia
+          python tools/deploy_packs_to_vps.py \
+            --packs-dir release/packs \
+            --release-name "${{ github.sha }}-${{ github.run_id }}" \
+            --host "$VPS_PACK_HOST" \
+            --port "$PORT" \
+            --user "$VPS_PACK_USER" \
+            --ssh-key ~/.ssh/vocomipedia_pack_deploy \
+            --remote-root "$ROOT"
       - name: Push selected decks to MediaWiki
         if: inputs.mediawiki_push
         env:

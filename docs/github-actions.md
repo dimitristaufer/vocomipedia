@@ -58,6 +58,16 @@ MEDIAWIKI_SSH_PRIVATE_KEY
 MEDIAWIKI_REINDEX_COMMAND
 ```
 
+For VPS static pack hosting:
+
+```text
+VPS_PACK_HOST          VPS IP address or packs.vocomipedia.com
+VPS_PACK_PORT          22
+VPS_PACK_USER          vocomipedia
+VPS_PACK_SSH_KEY       private key for the deploy user
+VPS_PACK_ROOT          /srv/vocomi-packs
+```
+
 `MEDIAWIKI_REINDEX_COMMAND` should be the exact server-side command, for
 example a command that updates the deployed Vocomipedia checkout and runs the
 search projection rebuild.
@@ -133,6 +143,7 @@ sync_limit: 0
 revise_japanese_furigana: true
 build_vpack: true
 upload: true
+vps_pack_deploy: true
 mediawiki_push: true
 generate_search_sql: true
 ```

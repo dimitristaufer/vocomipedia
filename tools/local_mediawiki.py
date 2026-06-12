@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import os
+import shlex
 import secrets
 import shutil
 import subprocess
@@ -63,7 +64,8 @@ def ensure_env() -> dict[str, str]:
 
 def compose_files(install: bool = False) -> list[str]:
     filename = "compose.local.install.yml" if install else "compose.local.yml"
-    return ["docker", "compose", "--env-file", str(ENV_PATH), "-f", str(DOCKER_DIR / filename)]
+    compose_cmd = shlex.split(os.environ.get("VOCOMIPEDIA_DOCKER_COMPOSE", "docker compose"))
+    return [*compose_cmd, "--env-file", str(ENV_PATH), "-f", str(DOCKER_DIR / filename)]
 
 
 def run(
