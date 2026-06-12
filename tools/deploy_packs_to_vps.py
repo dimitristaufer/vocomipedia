@@ -4,6 +4,8 @@
 from __future__ import annotations
 
 import argparse
+import datetime as dt
+import json
 import re
 import subprocess
 import tarfile
@@ -54,7 +56,7 @@ def scp_base(host: str, user: str, port: int, key: Path) -> list[str]:
 
 
 def collect_artifacts(packs_dir: Path) -> list[Path]:
-    patterns = ["*.vpack", "*.meta.json", "*.sha256"]
+    patterns = ["*.vpack", "*.meta.json", "*.sha256", "packs.json", "packs-images.json"]
     files: list[Path] = []
     for pattern in patterns:
         files.extend(sorted(packs_dir.glob(pattern)))
@@ -64,6 +66,45 @@ def collect_artifacts(packs_dir: Path) -> list[Path]:
     if not any(path.suffix == ".vpack" for path in unique):
         raise SystemExit(f"No .vpack files found in {packs_dir}")
     return unique
+
+
+def pack_manifest(packs_dir: Path, *, include_data: bool) -> dict:
+    packs: list[dict] = []
+    for meta_path in sorted(packs_dir.glob("*.meta.json")):
+        try:
+            meta = json.loads(meta_path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError as exc:
+            raise SystemExit(f"{meta_path}: invalid JSON: {exc}") from exc
+        name = str(meta.get("name") or meta_path.name.removesuffix(".meta.json") + ".vpack")
+        if not re.match(r"^[A-Za-z0-9._-]+\.vpack$", name):
+            raise SystemExit(f"{meta_path}: unsafe pack name {name!r}")
+        if not (packs_dir / name).is_file():
+            raise SystemExit(f"{meta_path}: referenced pack is missing: {name}")
+        if not include_data and str(meta.get("pack_kind") or "").lower() == "data":
+            continue
+        meta["name"] = name
+        meta["download_name"] = str(meta.get("download_name") or name)
+        packs.append(meta)
+    packs.sort(key=lambda item: str(item.get("version") or ""), reverse=True)
+    return {
+        "packs": packs,
+        "server_time_utc": dt.datetime.now(dt.UTC).isoformat().replace("+00:00", "Z"),
+        "require_signed": False,
+        "rate": {"max": 50, "window_sec": 3600},
+    }
+
+
+def write_manifest(packs_dir: Path) -> Path:
+    manifest_path = packs_dir / "packs.json"
+    manifest_path.write_text(
+        json.dumps(pack_manifest(packs_dir, include_data=True), ensure_ascii=False, indent=2, sort_keys=True) + "\n",
+        encoding="utf-8",
+    )
+    (packs_dir / "packs-images.json").write_text(
+        json.dumps(pack_manifest(packs_dir, include_data=False), ensure_ascii=False, indent=2, sort_keys=True) + "\n",
+        encoding="utf-8",
+    )
+    return manifest_path
 
 
 def make_archive(files: list[Path], packs_dir: Path, dest: Path) -> None:
@@ -143,6 +184,7 @@ def main() -> int:
         raise SystemExit(f"ssh key does not exist: {key}")
 
     name = release_name(args.release_name)
+    write_manifest(packs_dir)
     files = collect_artifacts(packs_dir)
     with tempfile.TemporaryDirectory(prefix="vocomipedia-pack-deploy.") as td:
         archive = Path(td) / f"{name}.tar.gz"

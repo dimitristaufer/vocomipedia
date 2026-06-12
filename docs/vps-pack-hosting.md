@@ -17,6 +17,9 @@ per-connection download cap. The initial cap is 25 MB/s after the first 5 MB.
 The deploy tool keeps old server releases according to `--keep-releases`; use
 `--keep-releases 3` for normal production runs.
 
+Each deploy writes `packs.json` for app clients that need image and data packs,
+and `packs-images.json` for lightweight image-only listings.
+
 ## GitHub Environment Secrets
 
 Add these to the protected `production` environment in the Vocomipedia repo:
@@ -78,9 +81,21 @@ their own last three artifacts.
 Pack artifacts are served as plain static files:
 
 ```text
+https://packs.vocomipedia.com/packs.json
+https://packs.vocomipedia.com/packs-images.json
 https://packs.vocomipedia.com/<file>.vpack
 https://packs.vocomipedia.com/<file>.meta.json
 https://packs.vocomipedia.com/<file>.sha256
+```
+
+Compatibility endpoints mirror the old list/SAS shape without proxying large
+downloads:
+
+```text
+https://packs.vocomipedia.com/api/packs/list?include_data=1
+https://packs.vocomipedia.com/api/packs/sas?name=<file>.vpack
+https://packs.vocomipedia.com/api/?action=list&include_data=1
+https://packs.vocomipedia.com/api/?action=download&name=<file>.vpack
 ```
 
 During DNS propagation, test with the VPS IP and a Host header:
