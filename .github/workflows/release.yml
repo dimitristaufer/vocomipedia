@@ -94,8 +94,25 @@ jobs:
           test -n "$VPS_PACK_USER"
           test -n "$VPS_PACK_SSH_KEY"
           install -m 700 -d ~/.ssh
-          printf '%s\n' "$VPS_PACK_SSH_KEY" > ~/.ssh/vocomipedia_pack_deploy
+          python - ~/.ssh/vocomipedia_pack_deploy <<'PY'
+          import base64
+          import os
+          import sys
+          from pathlib import Path
+
+          raw = os.environ["VPS_PACK_SSH_KEY"].strip()
+          if "\\n" in raw and "\n" not in raw:
+              raw = raw.replace("\\n", "\n")
+          if not raw.startswith("-----BEGIN") and not raw.startswith("OPENSSH"):
+              try:
+                  raw = base64.b64decode(raw, validate=True).decode("utf-8").strip()
+              except Exception:
+                  pass
+          Path(sys.argv[1]).write_text(raw + "\n", encoding="utf-8")
+          Path(sys.argv[1]).chmod(0o600)
+          PY
           chmod 600 ~/.ssh/vocomipedia_pack_deploy
+          ssh-keygen -y -f ~/.ssh/vocomipedia_pack_deploy >/dev/null
           PORT="${VPS_PACK_PORT:-22}"
           REMOTE_ROOT="${VPS_CANONICAL_MEDIA_ROOT:-/srv/vocomipedia/data/languages}"
           cd vocomipedia
@@ -149,8 +166,25 @@ jobs:
           test -n "$VPS_PACK_USER"
           test -n "$VPS_PACK_SSH_KEY"
           install -m 700 -d ~/.ssh
-          printf '%s\n' "$VPS_PACK_SSH_KEY" > ~/.ssh/vocomipedia_pack_deploy
+          python - ~/.ssh/vocomipedia_pack_deploy <<'PY'
+          import base64
+          import os
+          import sys
+          from pathlib import Path
+
+          raw = os.environ["VPS_PACK_SSH_KEY"].strip()
+          if "\\n" in raw and "\n" not in raw:
+              raw = raw.replace("\\n", "\n")
+          if not raw.startswith("-----BEGIN") and not raw.startswith("OPENSSH"):
+              try:
+                  raw = base64.b64decode(raw, validate=True).decode("utf-8").strip()
+              except Exception:
+                  pass
+          Path(sys.argv[1]).write_text(raw + "\n", encoding="utf-8")
+          Path(sys.argv[1]).chmod(0o600)
+          PY
           chmod 600 ~/.ssh/vocomipedia_pack_deploy
+          ssh-keygen -y -f ~/.ssh/vocomipedia_pack_deploy >/dev/null
           PORT="${VPS_PACK_PORT:-22}"
           ROOT="${VPS_PACK_ROOT:-/srv/vocomi-packs}"
           cd vocomipedia
@@ -207,8 +241,25 @@ jobs:
           test -n "$MEDIAWIKI_SSH_PRIVATE_KEY"
           test -n "$MEDIAWIKI_REINDEX_COMMAND"
           install -m 700 -d ~/.ssh
-          printf '%s\n' "$MEDIAWIKI_SSH_PRIVATE_KEY" > ~/.ssh/vocomipedia_deploy
+          python - ~/.ssh/vocomipedia_deploy <<'PY'
+          import base64
+          import os
+          import sys
+          from pathlib import Path
+
+          raw = os.environ["MEDIAWIKI_SSH_PRIVATE_KEY"].strip()
+          if "\\n" in raw and "\n" not in raw:
+              raw = raw.replace("\\n", "\n")
+          if not raw.startswith("-----BEGIN") and not raw.startswith("OPENSSH"):
+              try:
+                  raw = base64.b64decode(raw, validate=True).decode("utf-8").strip()
+              except Exception:
+                  pass
+          Path(sys.argv[1]).write_text(raw + "\n", encoding="utf-8")
+          Path(sys.argv[1]).chmod(0o600)
+          PY
           chmod 600 ~/.ssh/vocomipedia_deploy
+          ssh-keygen -y -f ~/.ssh/vocomipedia_deploy >/dev/null
           ssh-keyscan -H "$MEDIAWIKI_SSH_HOST" >> ~/.ssh/known_hosts
           ssh -i ~/.ssh/vocomipedia_deploy "$MEDIAWIKI_SSH_USER@$MEDIAWIKI_SSH_HOST" "$MEDIAWIKI_REINDEX_COMMAND"
       - name: Upload release artifacts and reports
