@@ -13,6 +13,7 @@ import http.cookiejar
 import json
 import os
 import re
+import sys
 import tempfile
 import time
 import urllib.error
@@ -842,9 +843,59 @@ def apply_visible_page_edits(source: str, item: dict) -> dict:
     return updated
 
 
+def api_url_candidates(api_url: str) -> list[str]:
+    raw = str(api_url or "").strip()
+    if not raw:
+        return []
+    parsed = urllib.parse.urlparse(raw)
+    if not parsed.scheme or not parsed.netloc:
+        return [raw]
+    origin = urllib.parse.urlunparse((parsed.scheme, parsed.netloc, "", "", "", ""))
+    path = parsed.path or ""
+    candidates = [raw]
+    if path.endswith("/api.php"):
+        parent = path[: -len("/api.php")]
+        if parent:
+            candidates.append(urllib.parse.urlunparse((parsed.scheme, parsed.netloc, parent + "/api.php", "", "", "")))
+    elif path.endswith("/"):
+        candidates.append(urllib.parse.urlunparse((parsed.scheme, parsed.netloc, path.rstrip("/") + "/api.php", "", "", "")))
+    elif path:
+        candidates.append(urllib.parse.urlunparse((parsed.scheme, parsed.netloc, path.rstrip("/") + "/api.php", "", "", "")))
+    candidates.extend([origin + "/api.php", origin + "/w/api.php"])
+    seen: set[str] = set()
+    out: list[str] = []
+    for candidate in candidates:
+        if candidate not in seen:
+            seen.add(candidate)
+            out.append(candidate)
+    return out
+
+
+def resolve_api_url(api_url: str) -> str:
+    candidates = api_url_candidates(api_url)
+    if not candidates:
+        raise ValueError("MediaWiki API URL is empty")
+    probe_params = urllib.parse.urlencode({"action": "query", "meta": "siteinfo", "format": "json"})
+    last_error: Exception | None = None
+    for candidate in candidates:
+        try:
+            with urllib.request.urlopen(candidate + "?" + probe_params, timeout=30) as resp:
+                data = json.loads(resp.read().decode("utf-8"))
+            if isinstance(data.get("query"), dict):
+                if candidate != candidates[0]:
+                    print(f"Resolved MediaWiki API URL from configured value to {candidate}", file=sys.stderr)
+                return candidate
+        except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError, json.JSONDecodeError) as exc:
+            last_error = exc
+            continue
+    if last_error:
+        raise last_error
+    return candidates[0]
+
+
 class MediaWikiClient:
     def __init__(self, api_url: str):
-        self.api_url = api_url
+        self.api_url = resolve_api_url(api_url)
         self.cookies = http.cookiejar.CookieJar()
         self.opener = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(self.cookies))
 

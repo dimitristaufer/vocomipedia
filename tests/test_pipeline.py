@@ -1060,6 +1060,8 @@ packs:
         self.assertEqual(sync_mediawiki.split_namespace_prefix("Item:ja_n5/abc"), (3000, "ja_n5/abc"))
         self.assertEqual(sync_mediawiki.split_namespace_prefix("Deck:"), (3002, ""))
         self.assertEqual(sync_mediawiki.split_namespace_prefix("plain-prefix"), (0, "plain-prefix"))
+        self.assertEqual(sync_mediawiki.api_url_candidates("https://vocomipedia.com/wiki/api.php")[0], "https://vocomipedia.com/wiki/api.php")
+        self.assertIn("https://vocomipedia.com/api.php", sync_mediawiki.api_url_candidates("https://vocomipedia.com/wiki/api.php"))
         self.assertIn("[[Special:Moderation|Moderation queue]]", sync_mediawiki.render_admin_page())
         self.assertIn("[[Category:Sentence replacement proposals|Sentence replacement proposals]]", sync_mediawiki.render_admin_page())
         self.assertNotIn("[[Vocomipedia:Admin|Admin dashboard]]", sync_mediawiki.render_main_page(["ja_n5"]))
