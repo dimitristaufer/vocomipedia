@@ -42,10 +42,12 @@ VPS_PACK_ROOT          /srv/vocomi-packs
 For optional remote search reindex after MediaWiki push:
 
 ```text
-MEDIAWIKI_SSH_HOST
-MEDIAWIKI_SSH_USER
-MEDIAWIKI_SSH_PRIVATE_KEY
-MEDIAWIKI_REINDEX_COMMAND
+MEDIAWIKI_SSH_HOST          VPS IP address or vocomipedia.com
+MEDIAWIKI_SSH_PORT          22
+MEDIAWIKI_SSH_USER          root or another user that can run docker-compose
+MEDIAWIKI_SSH_PRIVATE_KEY   private key for that user
+MEDIAWIKI_REMOTE_ROOT       /srv/vocomipedia
+MEDIAWIKI_DOCKER_COMPOSE    docker-compose
 ```
 
 `VOCOMI_REPO_TOKEN` is no longer required for the current Vocomipedia-owned
@@ -105,8 +107,9 @@ The release workflow copies selected canonical JSON decks into a temporary
 workspace, hydrates `media/` folders from the VPS, adds sibling decks needed for
 combined data packs, validates release readiness, builds single and combined
 `.vpack` files with the bundled pack builder, deploys to the VPS, pushes
-approved pages back to MediaWiki, emits search-index SQL, and runs the remote
-search reindex command.
+approved pages back to MediaWiki, emits search-index SQL, syncs the production
+checkout to the release commit, and streams the search projection rebuild into
+MariaDB on the VPS.
 
 ## Search Index
 
@@ -115,7 +118,14 @@ an artifact. The SQL creates the search projection table if missing and upserts
 selected deck rows without dropping the existing table.
 
 For a full rebuild, run `tools/reindex_mediawiki_search.py` on the MediaWiki
-server against the production checkout.
+server against the production checkout. The script streams SQL into MariaDB in
+chunks, so it should be run directly instead of generating one giant SQL file:
+
+```bash
+cd /srv/vocomipedia
+VOCOMIPEDIA_DOCKER_COMPOSE=docker-compose \
+  python3 tools/reindex_mediawiki_search.py --root data/languages --no-drop
+```
 
 ## Backups
 

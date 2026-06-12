@@ -81,6 +81,19 @@ manual validation so Certbot does not wait several minutes before starting.
 
 6. Verify public search and representative item pages, including images.
 
+Manual production search projection rebuild:
+
+```bash
+cd /srv/vocomipedia
+git config --global --add safe.directory /srv/vocomipedia
+VOCOMIPEDIA_DOCKER_COMPOSE=docker-compose \
+  python3 tools/reindex_mediawiki_search.py --root data/languages --no-drop
+```
+
+The search projection script streams SQL to MariaDB. Do not pipe a full
+generated SQL file for production-sized corpora unless you explicitly need an
+artifact copy.
+
 For new languages, also confirm the offline sentence analyzer supports the
 language or add one under `tools/vocomipedia_nlp/` before enabling public
 sentence editing for that deck.

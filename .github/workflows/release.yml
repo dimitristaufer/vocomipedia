@@ -264,17 +264,18 @@ jobs:
             --root tmp/actions-data \
             --no-drop \
             --dry-run > reports/search/vocomipedia-search-upsert.sql
-      - name: Run remote search reindex command
+      - name: Rebuild remote search projection
         env:
           MEDIAWIKI_SSH_HOST: ${{ secrets.MEDIAWIKI_SSH_HOST }}
+          MEDIAWIKI_SSH_PORT: ${{ secrets.MEDIAWIKI_SSH_PORT }}
           MEDIAWIKI_SSH_USER: ${{ secrets.MEDIAWIKI_SSH_USER }}
           MEDIAWIKI_SSH_PRIVATE_KEY: ${{ secrets.MEDIAWIKI_SSH_PRIVATE_KEY }}
-          MEDIAWIKI_REINDEX_COMMAND: ${{ secrets.MEDIAWIKI_REINDEX_COMMAND }}
+          MEDIAWIKI_REMOTE_ROOT: ${{ secrets.MEDIAWIKI_REMOTE_ROOT }}
+          MEDIAWIKI_DOCKER_COMPOSE: ${{ secrets.MEDIAWIKI_DOCKER_COMPOSE }}
         run: |
           test -n "$MEDIAWIKI_SSH_HOST"
           test -n "$MEDIAWIKI_SSH_USER"
           test -n "$MEDIAWIKI_SSH_PRIVATE_KEY"
-          test -n "$MEDIAWIKI_REINDEX_COMMAND"
           install -m 700 -d ~/.ssh
           python - ~/.ssh/vocomipedia_deploy <<'PY'
           import base64
@@ -295,8 +296,27 @@ jobs:
           PY
           chmod 600 ~/.ssh/vocomipedia_deploy
           ssh-keygen -y -f ~/.ssh/vocomipedia_deploy >/dev/null
-          ssh-keyscan -H "$MEDIAWIKI_SSH_HOST" >> ~/.ssh/known_hosts
-          ssh -i ~/.ssh/vocomipedia_deploy "$MEDIAWIKI_SSH_USER@$MEDIAWIKI_SSH_HOST" "$MEDIAWIKI_REINDEX_COMMAND"
+          PORT="${MEDIAWIKI_SSH_PORT:-22}"
+          REMOTE_ROOT="${MEDIAWIKI_REMOTE_ROOT:-/srv/vocomipedia}"
+          REMOTE_COMPOSE="${MEDIAWIKI_DOCKER_COMPOSE:-docker-compose}"
+          ssh-keyscan -p "$PORT" -H "$MEDIAWIKI_SSH_HOST" >> ~/.ssh/known_hosts
+          ssh -i ~/.ssh/vocomipedia_deploy -p "$PORT" "$MEDIAWIKI_SSH_USER@$MEDIAWIKI_SSH_HOST" \
+            bash -s -- "$REMOTE_ROOT" "$REMOTE_COMPOSE" "${{ github.sha }}" <<'SH'
+          set -Eeuo pipefail
+          REMOTE_ROOT="$1"
+          REMOTE_COMPOSE="$2"
+          RELEASE_SHA="$3"
+
+          echo "Using checkout: $REMOTE_ROOT"
+          cd "$REMOTE_ROOT"
+          git config --global --add safe.directory "$REMOTE_ROOT"
+          git fetch --depth=2 origin main
+          git reset --hard "$RELEASE_SHA"
+          read -r -a COMPOSE_CMD <<< "$REMOTE_COMPOSE"
+          "${COMPOSE_CMD[@]}" --env-file docker/local/.env -f docker/compose.local.yml ps
+          VOCOMIPEDIA_DOCKER_COMPOSE="$REMOTE_COMPOSE" \
+            python3 tools/reindex_mediawiki_search.py --root data/languages --no-drop
+          SH
       - name: Upload release artifacts and reports
         uses: actions/upload-artifact@v4
         if: always()

@@ -10,6 +10,7 @@ import re
 import shlex
 import subprocess
 import sys
+from collections.abc import Callable
 from pathlib import Path
 
 from sync_mediawiki import GLOSS_LANGUAGES, page_title
@@ -157,8 +158,8 @@ def insert_statement(rows: list[tuple[str, str, str, str, str, str, str]]) -> st
     )
 
 
-def build_sql(root: Path, chunk_size: int, *, drop_existing: bool = True) -> tuple[str, int]:
-    statements = []
+def table_statements(*, drop_existing: bool = True) -> list[str]:
+    statements: list[str] = []
     if drop_existing:
         statements.append("DROP TABLE IF EXISTS vocomipedia_search_item;")
     create_prefix = (
@@ -188,6 +189,19 @@ def build_sql(root: Path, chunk_size: int, *, drop_existing: bool = True) -> tup
             ") ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;",
         ]
     )
+    return statements
+
+
+def write_sql(
+    root: Path,
+    chunk_size: int,
+    *,
+    drop_existing: bool = True,
+    writer: Callable[[str], None],
+) -> int:
+    for statement in table_statements(drop_existing=drop_existing):
+        writer(statement + "\n")
+
     chunk: list[tuple[str, str, str, str, str, str, str]] = []
     count = 0
     for pack_code, item in iter_items(root):
@@ -207,11 +221,22 @@ def build_sql(root: Path, chunk_size: int, *, drop_existing: bool = True) -> tup
         )
         count += 1
         if len(chunk) >= chunk_size:
-            statements.append(insert_statement(chunk))
+            writer(insert_statement(chunk) + "\n")
             chunk = []
     if chunk:
-        statements.append(insert_statement(chunk))
-    return "\n".join(statements) + "\n", count
+        writer(insert_statement(chunk) + "\n")
+    return count
+
+
+def build_sql(root: Path, chunk_size: int, *, drop_existing: bool = True) -> tuple[str, int]:
+    statements: list[str] = []
+    count = write_sql(
+        root,
+        chunk_size,
+        drop_existing=drop_existing,
+        writer=statements.append,
+    )
+    return "".join(statements), count
 
 
 def main() -> int:
@@ -224,9 +249,13 @@ def main() -> int:
     ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args()
 
-    sql, count = build_sql(args.root, args.chunk_size, drop_existing=not args.no_drop)
     if args.dry_run:
-        sys.stdout.write(sql)
+        count = write_sql(
+            args.root,
+            args.chunk_size,
+            drop_existing=not args.no_drop,
+            writer=sys.stdout.write,
+        )
         print(f"-- indexed {count} item(s)", file=sys.stderr)
         return 0
 
@@ -241,7 +270,23 @@ def main() -> int:
         f"-p{env.get('MW_DB_PASSWORD', 'mediawiki_pass')}",
         env.get("MW_DB_NAME", "mediawiki"),
     ]
-    subprocess.run(cmd, cwd=ROOT, input=sql, text=True, check=True)
+    with subprocess.Popen(cmd, cwd=ROOT, stdin=subprocess.PIPE, text=True) as proc:
+        assert proc.stdin is not None
+        try:
+            count = write_sql(
+                args.root,
+                args.chunk_size,
+                drop_existing=not args.no_drop,
+                writer=proc.stdin.write,
+            )
+            proc.stdin.close()
+            returncode = proc.wait()
+        except Exception:
+            proc.kill()
+            proc.wait()
+            raise
+    if returncode:
+        raise subprocess.CalledProcessError(returncode, cmd)
     print(f"Indexed {count} Vocomipedia item(s).")
     return 0
 

@@ -1051,6 +1051,8 @@ packs:
         self.assertIn("CREATE TABLE vocomipedia_search_item", indexer)
         self.assertIn("vsi_headword_norm", indexer)
         self.assertIn("collect_search_text", indexer)
+        self.assertIn("def write_sql", indexer)
+        self.assertIn("subprocess.Popen", indexer)
 
         docs = (ROOT / "docs" / "local-mediawiki.md").read_text(encoding="utf-8")
         self.assertIn("local_mediawiki.py reindex-search", docs)
