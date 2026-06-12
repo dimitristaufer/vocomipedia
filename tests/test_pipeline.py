@@ -615,7 +615,7 @@ packs:
             }
             page = sync_mediawiki.render_item_page(item)
             proposed = sync_mediawiki.extract_item_json(
-                page.replace("|ruby_source=川を見る。", "|ruby_source=山[やま]を見る。").replace("|translation_en=I see a river.", "|translation_en=I see a mountain.")
+                page.replace("|ruby_source=川を見る。", "|ruby_source=山[やま]を見[み]る。").replace("|translation_en=I see a river.", "|translation_en=I see a mountain.")
             )
             proposal_id = proposed["review"]["sentence_proposals"][0]["id"]
             item_path.write_text(json.dumps(proposed, ensure_ascii=False, indent=2), encoding="utf-8")
@@ -767,7 +767,7 @@ packs:
             )
             page = sync_mediawiki.render_item_page(item)
             pulled = sync_mediawiki.extract_item_json(
-                page.replace("|ruby_source=川を見る。", "|ruby_source=山[やま]を見る。")
+                page.replace("|ruby_source=川を見る。", "|ruby_source=山[やま]を見[み]る。")
                 .replace("|translation_en=I see a river.", "|translation_en=I see a mountain.")
             )
             pulled["review"]["wiki"]["revision_id"] = 6

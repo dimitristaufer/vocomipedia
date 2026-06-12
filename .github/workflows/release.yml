@@ -36,13 +36,31 @@ jobs:
           test -n "$VOCOMI_IOS_PRIVATE_PEM"
           KEY_PATH="$RUNNER_TEMP/ios_private.pem"
           PUB_PATH="$RUNNER_TEMP/ios_public.pem"
-          printf '%s\n' "$VOCOMI_IOS_PRIVATE_PEM" > "$KEY_PATH"
-          chmod 600 "$KEY_PATH"
           python - "$KEY_PATH" "$PUB_PATH" <<'PY'
+          import base64
+          import os
           import sys
           from pathlib import Path
           from cryptography.hazmat.primitives import serialization
-          key = serialization.load_pem_private_key(Path(sys.argv[1]).read_bytes(), password=None)
+
+          raw = os.environ["VOCOMI_IOS_PRIVATE_PEM"].strip()
+          if "\\n" in raw and "\n" not in raw:
+              raw = raw.replace("\\n", "\n")
+          if not raw.startswith("-----BEGIN"):
+              try:
+                  raw = base64.b64decode(raw, validate=True).decode("utf-8").strip()
+              except Exception:
+                  pass
+          pem = (raw + "\n").encode("utf-8")
+          try:
+              key = serialization.load_pem_private_key(pem, password=None)
+          except Exception as exc:
+              raise SystemExit(
+                  "VOCOMI_IOS_PRIVATE_PEM is not a valid unencrypted PEM private key. "
+                  "Paste the complete ios_private.pem contents, or base64-encode that file."
+              ) from exc
+          Path(sys.argv[1]).write_bytes(pem)
+          Path(sys.argv[1]).chmod(0o600)
           Path(sys.argv[2]).write_bytes(
               key.public_key().public_bytes(
                   encoding=serialization.Encoding.PEM,
@@ -50,6 +68,7 @@ jobs:
               )
           )
           PY
+          chmod 600 "$KEY_PATH"
           echo "path=$KEY_PATH" >> "$GITHUB_OUTPUT"
           echo "public_path=$PUB_PATH" >> "$GITHUB_OUTPUT"
       - name: Resolve deck closure
