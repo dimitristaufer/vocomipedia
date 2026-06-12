@@ -1,0 +1,43 @@
+services:
+  mediawiki:
+    build:
+      context: .
+      dockerfile: mediawiki/Dockerfile
+    image: vocomipedia-mediawiki:1.43-moderation
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+    volumes:
+      - mediawiki-images:/var/www/html/images
+      - ./assets/vocomi-logo-135.png:/var/www/html/resources/assets/vocomi-logo-135.png:ro
+      - ./LocalSettings.vocomipedia.php:/var/www/html/LocalSettings.php:ro
+    depends_on:
+      - db
+      - elasticsearch
+
+  db:
+    image: mariadb:11
+    restart: unless-stopped
+    environment:
+      MARIADB_DATABASE: mediawiki
+      MARIADB_USER: mediawiki
+      MARIADB_PASSWORD: change-me
+      MARIADB_ROOT_PASSWORD: change-me-root
+    volumes:
+      - mediawiki-db:/var/lib/mysql
+
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.10.2
+    platform: linux/amd64
+    restart: unless-stopped
+    environment:
+      discovery.type: single-node
+      xpack.security.enabled: "false"
+      ES_JAVA_OPTS: "-Xms512m -Xmx512m"
+    volumes:
+      - mediawiki-elasticsearch:/usr/share/elasticsearch/data
+
+volumes:
+  mediawiki-images:
+  mediawiki-db:
+  mediawiki-elasticsearch:

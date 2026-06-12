@@ -1,0 +1,150 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://vocomipedia.com/schema/vocomipedia-item.schema.json",
+  "title": "Vocomipedia Item",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "id",
+    "pack_code",
+    "language",
+    "entry_id",
+    "headword",
+    "sentences",
+    "media",
+    "review",
+    "provenance",
+    "app_payload"
+  ],
+  "properties": {
+    "schema_version": { "const": "vocomipedia-item-2" },
+    "id": { "type": "string", "minLength": 1 },
+    "pack_code": { "type": "string", "minLength": 1 },
+    "language": { "type": "string", "minLength": 2 },
+    "entry_id": { "type": "string", "minLength": 1 },
+    "headword": { "type": "string", "minLength": 1 },
+    "reading": { "type": "string" },
+    "label": { "type": "string" },
+    "level": { "type": "string" },
+    "part_of_speech": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "glosses": {
+      "type": "object",
+      "additionalProperties": { "type": "string" }
+    },
+    "sentences": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["target", "translations"],
+        "properties": {
+          "target": { "type": "string", "minLength": 1 },
+          "reading": { "type": "string" },
+          "translations": {
+            "type": "object",
+            "additionalProperties": { "type": "string" }
+          },
+          "tokens": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "surface": { "type": "string" },
+                "reading_kana": { "type": "string" },
+                "ruby_text": { "type": "string" },
+                "ruby_spans": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": ["base", "reading", "start", "length"],
+                    "properties": {
+                      "base": { "type": "string" },
+                      "reading": { "type": "string" },
+                      "start": { "type": "integer", "minimum": 0 },
+                      "length": { "type": "integer", "minimum": 1 }
+                    },
+                    "additionalProperties": true
+                  }
+                },
+                "ruby_confidence": {
+                  "enum": ["high", "medium", "needs_review", "reviewed"]
+                },
+                "ruby_source": {
+                  "type": "string",
+                  "description": "Source used to derive ruby_text, e.g. sudachipy_sudachidict_core_c or deterministic_fallback."
+                },
+                "ruby_grade": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 8,
+                  "description": "Legacy external furigana grade, retained only for older revisions."
+                },
+                "furigana": {
+                  "type": "string",
+                  "description": "Legacy full-kana token reading, derived from reading_kana for app compatibility."
+                }
+              },
+              "additionalProperties": true
+            }
+          },
+          "difficulty": { "type": ["number", "integer", "null"] }
+        },
+        "additionalProperties": true
+      }
+    },
+    "media": {
+      "type": "object",
+      "required": ["image_filename", "license", "review_status"],
+      "properties": {
+        "image_filename": { "type": ["string", "null"] },
+        "source_image_filename": { "type": ["string", "null"] },
+        "license": { "type": "string" },
+        "review_status": { "type": "string" },
+        "attribution": { "type": ["string", "null"] },
+        "source_url": { "type": ["string", "null"] }
+      },
+      "additionalProperties": true
+    },
+    "review": {
+      "type": "object",
+      "required": ["status"],
+      "properties": {
+        "status": {
+          "enum": ["draft", "needs_review", "approved", "deprecated"]
+        },
+        "language_reviewers": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "content_reviewers": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "last_reviewed_utc": { "type": ["string", "null"] }
+      },
+      "additionalProperties": true
+    },
+    "provenance": {
+      "type": "object",
+      "required": ["origin", "ai_generated", "license_status"],
+      "properties": {
+        "origin": { "type": "string" },
+        "ai_generated": { "type": "boolean" },
+        "license_status": { "type": "string" },
+        "source_urls": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      },
+      "additionalProperties": true
+    },
+    "app_payload": {
+      "type": "object",
+      "description": "Original or generated flat Vocomi app metadata payload."
+    }
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://vocomipedia.com/schema/vocomipedia-pack.schema.json",
+  "title": "Vocomipedia Pack Manifest",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "pack_code",
+    "title",
+    "language",
+    "lang_prefix",
+    "lang_level",
+    "target_sentence_key",
+    "reading_sentence_key",
+    "items"
+  ],
+  "properties": {
+    "schema_version": { "const": "vocomipedia-pack-1" },
+    "pack_code": { "type": "string", "minLength": 1 },
+    "title": { "type": "string" },
+    "language": { "type": "string" },
+    "lang_prefix": { "type": "string" },
+    "lang_level": { "type": "string" },
+    "level": { "type": "string" },
+    "target_sentence_key": { "type": "string" },
+    "reading_sentence_key": { "type": "string" },
+    "data_pack_code": { "type": ["string", "null"] },
+    "source": { "type": "object" },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "file", "entry_id"],
+        "properties": {
+          "id": { "type": "string" },
+          "file": { "type": "string" },
+          "entry_id": { "type": "string" },
+          "order": { "type": "integer" }
+        }
+      }
+    }
+  },
+  "additionalProperties": true
+}
+

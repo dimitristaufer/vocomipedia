@@ -1,0 +1,181 @@
+name: Vocomipedia
+
+on:
+  push:
+    paths:
+      - "**"
+      - ".github/workflows/vocomipedia.yml"
+  pull_request:
+    paths:
+      - "**"
+      - ".github/workflows/vocomipedia.yml"
+  workflow_dispatch:
+    inputs:
+      deck_codes:
+        description: "Space-separated deck codes for manual sync/release, e.g. zh_1 ja_n5"
+        required: false
+        default: "zh_1"
+      sync_limit:
+        description: "Limit entries per deck. Use 0 for full deck."
+        required: false
+        default: "2"
+      release:
+        description: "Build .vpack artifacts for selected decks"
+        type: boolean
+        required: false
+        default: false
+      upload:
+        description: "Upload release artifacts to Azure Blob Storage"
+        type: boolean
+        required: false
+        default: false
+      mediawiki_push:
+        description: "Push generated item pages to MediaWiki API"
+        type: boolean
+        required: false
+        default: false
+      revise_japanese_furigana:
+        description: "Revise Japanese ruby with SudachiPy/SudachiDict"
+        type: boolean
+        required: false
+        default: false
+
+jobs:
+  validate:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install pillow pyyaml cryptography azure-storage-blob sudachipy sudachidict_core
+      - name: Backup-aware validation
+        run: python tools/ci_validate.py --skip-smoke-release
+      - name: Upload CI backup
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: vocomipedia-ci-backups
+          path: reports/backups/*.tar.gz
+          if-no-files-found: ignore
+
+  manual-sync-release:
+    if: github.event_name == 'workflow_dispatch' && (inputs.release || inputs.upload || inputs.mediawiki_push || inputs.revise_japanese_furigana)
+    runs-on: macos-latest
+    needs: validate
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: vocomipedia
+      - uses: actions/checkout@v4
+        with:
+          repository: dimitristaufer/Vocomi
+          token: ${{ secrets.VOCOMI_REPO_TOKEN || github.token }}
+          path: vocomi
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install pillow pyyaml cryptography azure-storage-blob sudachipy sudachidict_core
+      - name: Sync selected decks into Vocomipedia workspace
+        run: |
+          LIMIT_ARG=""
+          if [ "${{ inputs.sync_limit }}" != "0" ]; then
+            LIMIT_ARG="--limit ${{ inputs.sync_limit }}"
+          fi
+          SUDACHI_ARG=""
+          if [ "${{ inputs.revise_japanese_furigana }}" = "true" ]; then
+            SUDACHI_ARG="--revise-japanese-furigana --sudachi-dict core --sudachi-mode C"
+          fi
+          cd vocomipedia
+          python tools/sync_all_packs.py \
+            --decks ${{ inputs.deck_codes }} \
+            $LIMIT_ARG \
+            $SUDACHI_ARG \
+            --copy-media \
+            --mark-approved \
+            --validate \
+            --strict-media \
+            --pack-generation-dir ../vocomi/vocomi_pack_generation \
+            --out-root tmp/actions-data \
+            --backup-dir reports/backups
+      - name: Build selected release artifacts
+        if: inputs.release || inputs.upload
+        env:
+          AZURE_STORAGE_ACCOUNT: ${{ secrets.AZURE_STORAGE_ACCOUNT }}
+          AZURE_STORAGE_KEY: ${{ secrets.AZURE_STORAGE_KEY }}
+          PACKS_CONTAINER: ${{ secrets.PACKS_CONTAINER }}
+        run: |
+          UPLOAD_ARG=""
+          if [ "${{ inputs.upload }}" = "true" ]; then
+            UPLOAD_ARG="--upload"
+          fi
+          cd vocomipedia
+          for code in ${{ inputs.deck_codes }}; do
+            lang="${code%%_*}"
+            deck_dir="tmp/actions-data/${lang}/${code}"
+            if [ ! -d "$deck_dir" ]; then
+              case "$code" in
+                ja_*) deck_dir="tmp/actions-data/ja/${code}" ;;
+                zh_*) deck_dir="tmp/actions-data/zh/${code}" ;;
+                ko_*) deck_dir="tmp/actions-data/ko/${code}" ;;
+              esac
+            fi
+            python tools/release_pack.py \
+              --deck-dir "$deck_dir" \
+              --pack-generation-dir ../vocomi/vocomi_pack_generation \
+              --outdir release \
+              --validate-private-key ../vocomi/vocomi_pack_generation/ios_private.pem \
+              $UPLOAD_ARG
+          done
+          python tools/release_combined_pack.py \
+            --changed-decks ${{ inputs.deck_codes }} \
+            --root tmp/actions-data \
+            --root data/languages \
+            --catalog catalog/packs.yaml \
+            --pack-generation-dir ../vocomi/vocomi_pack_generation \
+            --outdir release \
+            --validate-private-key ../vocomi/vocomi_pack_generation/ios_private.pem \
+            $UPLOAD_ARG
+      - name: Push selected decks to MediaWiki
+        if: inputs.mediawiki_push
+        env:
+          MEDIAWIKI_USERNAME: ${{ secrets.MEDIAWIKI_USERNAME }}
+          MEDIAWIKI_PASSWORD: ${{ secrets.MEDIAWIKI_PASSWORD }}
+          MEDIAWIKI_API_URL: ${{ secrets.MEDIAWIKI_API_URL }}
+        run: |
+          test -n "$MEDIAWIKI_USERNAME"
+          test -n "$MEDIAWIKI_PASSWORD"
+          test -n "$MEDIAWIKI_API_URL"
+          cd vocomipedia
+          for code in ${{ inputs.deck_codes }}; do
+            lang="${code%%_*}"
+            deck_dir="tmp/actions-data/${lang}/${code}"
+            if [ ! -d "$deck_dir" ]; then
+              case "$code" in
+                ja_*) deck_dir="tmp/actions-data/ja/${code}" ;;
+                zh_*) deck_dir="tmp/actions-data/zh/${code}" ;;
+                ko_*) deck_dir="tmp/actions-data/ko/${code}" ;;
+              esac
+            fi
+            python tools/sync_mediawiki.py push-api \
+              --deck-dir "$deck_dir" \
+              --api-url "$MEDIAWIKI_API_URL" \
+              --approved-only
+          done
+      - name: Upload release artifacts and backups
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: vocomipedia-manual-run
+          path: |
+            vocomipedia/release/**
+            vocomipedia/reports/backups/*.tar.gz
+          if-no-files-found: ignore

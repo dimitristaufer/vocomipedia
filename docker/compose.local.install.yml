@@ -1,0 +1,32 @@
+services:
+  db:
+    image: mariadb:11
+    restart: unless-stopped
+    environment:
+      MARIADB_DATABASE: ${MW_DB_NAME:-mediawiki}
+      MARIADB_USER: ${MW_DB_USER:-mediawiki}
+      MARIADB_PASSWORD: ${MW_DB_PASSWORD:-mediawiki_pass}
+      MARIADB_ROOT_PASSWORD: ${MW_DB_ROOT_PASSWORD:-mediawiki_root_pass}
+    volumes:
+      - mw-db:/var/lib/mysql
+    healthcheck:
+      test: ["CMD-SHELL", "mariadb-admin ping -h 127.0.0.1 -u root -p$${MARIADB_ROOT_PASSWORD} --silent"]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+
+  mediawiki:
+    image: mediawiki:1.43
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "${MW_PORT:-8080}:80"
+    volumes:
+      - mw-images:/var/www/html/images
+      - ./assets/vocomi-logo-135.png:/var/www/html/resources/assets/vocomi-logo-135.png:ro
+
+volumes:
+  mw-db:
+  mw-images:

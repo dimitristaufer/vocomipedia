@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "VocomipediaSearch",
+  "version": "0.1.0",
+  "author": "Vocomi",
+  "url": "https://vocomipedia.com",
+  "descriptionmsg": "vocomipediasearch-desc",
+  "type": "specialpage",
+  "AutoloadClasses": {
+    "SpecialVocomipediaSearch": "includes/SpecialVocomipediaSearch.php",
+    "VocomipediaSearchHooks": "includes/VocomipediaSearchHooks.php"
+  },
+  "SpecialPages": {
+    "VocomipediaSearch": "SpecialVocomipediaSearch"
+  },
+  "Hooks": {
+    "SpecialPageBeforeExecute": "VocomipediaSearchHooks::onSpecialPageBeforeExecute"
+  },
+  "MessagesDirs": {
+    "VocomipediaSearch": [
+      "i18n"
+    ]
+  }
+}
