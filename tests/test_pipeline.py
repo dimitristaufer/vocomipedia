@@ -83,6 +83,8 @@ class VocomipediaPipelineTests(unittest.TestCase):
         self.assertIn('find -L "$root/current"', script)
         self.assertIn("-name '*.vpack'", script)
         self.assertIn("-name 'release-state.json'", script)
+        self.assertIn("release-state.previous.json", script)
+        self.assertIn('state["deck_git_sha"] = deck_git_sha', script)
         self.assertIn("rm -f packs.json packs-images.json", script)
         self.assertIn("python3 - <<'PY'", script)
         self.assertIn('root.glob("*.meta.json")', script)
@@ -95,10 +97,12 @@ class VocomipediaPipelineTests(unittest.TestCase):
         self.assertIn("fetch-depth: 0", workflow)
         self.assertIn("Resolve previous release base", workflow)
         self.assertIn("current/release-state.json", workflow)
+        self.assertIn("--release-state-file tmp/release-state/previous.json", workflow)
         self.assertIn("--base \"$RELEASE_BASE_SHA\"", workflow)
         self.assertIn("Reconcile MediaWiki entry images", workflow)
         self.assertIn("sync-images-api", workflow)
         self.assertIn("--source-sha \"${{ github.sha }}\"", workflow)
+        self.assertIn("--updated-decks ${{ inputs.deck_codes }}", workflow)
 
     def test_push_api_filters_changed_items_without_shrinking_index_source(self) -> None:
         with tempfile.TemporaryDirectory() as td:
@@ -253,6 +257,61 @@ class VocomipediaPipelineTests(unittest.TestCase):
             run(["git", "commit", "-m", "change"], cwd=tmp)
             paths = changed_deck_items.changed_item_paths(tmp, base, "HEAD", pack_dir)
             self.assertEqual(paths, ["items/one.json"])
+
+    def test_changed_deck_items_uses_per_deck_release_state(self) -> None:
+        with tempfile.TemporaryDirectory() as td:
+            tmp = Path(td)
+            run(["git", "init"], cwd=tmp)
+            run(["git", "config", "user.email", "test@example.invalid"], cwd=tmp)
+            run(["git", "config", "user.name", "Test User"], cwd=tmp)
+            for code, lang in [("ja_n5", "ja"), ("de_b2", "de")]:
+                pack_dir = tmp / "data" / "languages" / lang / code
+                item_dir = pack_dir / "items"
+                item_dir.mkdir(parents=True)
+                (pack_dir / "pack.json").write_text(
+                    json.dumps(
+                        {
+                            "schema_version": "vocomipedia-pack-1",
+                            "pack_code": code,
+                            "items": [{"id": f"{code}:one", "entry_id": "one", "file": "items/one.json", "order": 0}],
+                        }
+                    ),
+                    encoding="utf-8",
+                )
+                (item_dir / "one.json").write_text(json.dumps({"id": f"{code}:one"}), encoding="utf-8")
+            run(["git", "add", "."], cwd=tmp)
+            run(["git", "commit", "-m", "base"], cwd=tmp)
+            ja_released = run(["git", "rev-parse", "HEAD"], cwd=tmp).stdout.strip()
+            (tmp / "data" / "languages" / "de" / "de_b2" / "items" / "one.json").write_text('{"id":"de_b2:one","changed":true}\n', encoding="utf-8")
+            run(["git", "add", "."], cwd=tmp)
+            run(["git", "commit", "-m", "de change"], cwd=tmp)
+            catalog = tmp / "catalog" / "packs.yaml"
+            catalog.parent.mkdir()
+            catalog.write_text(
+                """schema_version: vocomipedia-pack-catalog-1
+packs:
+  ja_n5:
+    language: ja
+  de_b2:
+    language: de
+""",
+                encoding="utf-8",
+            )
+            state = tmp / "state.json"
+            state.write_text(json.dumps({"deck_git_sha": {"ja_n5": ja_released}}), encoding="utf-8")
+            release_state = changed_deck_items.load_release_state(state)
+            ja_base = changed_deck_items.base_for_deck(release_state, "ja_n5", "")
+            de_base = changed_deck_items.base_for_deck(release_state, "de_b2", "")
+            self.assertEqual(ja_base, ja_released)
+            self.assertEqual(de_base, "")
+            self.assertEqual(
+                changed_deck_items.changed_item_paths(tmp, ja_base, "HEAD", tmp / "data" / "languages" / "ja" / "ja_n5"),
+                [],
+            )
+            self.assertEqual(
+                changed_deck_items.all_item_paths(tmp / "data" / "languages" / "de" / "de_b2"),
+                ["items/one.json"],
+            )
 
     def test_import_validate_export_round_trip(self) -> None:
         with tempfile.TemporaryDirectory() as td:

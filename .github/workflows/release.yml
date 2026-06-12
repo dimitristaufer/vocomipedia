@@ -128,7 +128,7 @@ jobs:
           PY
           )"
           if [ -n "$BASE_SHA" ] && git cat-file -e "$BASE_SHA^{commit}" 2>/dev/null; then
-            echo "Using previous deployed release base: $BASE_SHA"
+            echo "Using previous global deployed release fallback: $BASE_SHA"
           elif BASE_SHA="$(git rev-parse HEAD^ 2>/dev/null)"; then
             echo "Previous release base unavailable; falling back to HEAD^: $BASE_SHA"
           else
@@ -147,6 +147,18 @@ jobs:
           cd vocomipedia
           mkdir -p tmp/changed-items
           if [ -n "${RELEASE_BASE_SHA:-}" ]; then
+            FALLBACK_ARGS=(--fallback-base "$RELEASE_BASE_SHA")
+          else
+            FALLBACK_ARGS=()
+          fi
+          if [ -s tmp/release-state/previous.json ]; then
+            python tools/changed_deck_items.py \
+              --decks ${{ inputs.deck_codes }} \
+              --release-state-file tmp/release-state/previous.json \
+              "${FALLBACK_ARGS[@]}" \
+              --head HEAD \
+              --out-dir tmp/changed-items
+          elif [ -n "${RELEASE_BASE_SHA:-}" ]; then
             python tools/changed_deck_items.py \
               --decks ${{ inputs.deck_codes }} \
               --base "$RELEASE_BASE_SHA" \
@@ -281,7 +293,8 @@ jobs:
             --ssh-key ~/.ssh/vocomipedia_pack_deploy \
             --remote-root "$ROOT" \
             --source-sha "${{ github.sha }}" \
-            --github-run-id "${{ github.run_id }}"
+            --github-run-id "${{ github.run_id }}" \
+            --updated-decks ${{ inputs.deck_codes }}
       - name: Push changed item pages to MediaWiki
         env:
           MEDIAWIKI_USERNAME: ${{ secrets.MEDIAWIKI_USERNAME }}

@@ -113,11 +113,12 @@ def make_archive(files: list[Path], packs_dir: Path, dest: Path) -> None:
             tar.add(path, arcname=str(path.relative_to(packs_dir)))
 
 
-def write_release_state(packs_dir: Path, *, release_name_value: str, source_sha: str, run_id: str) -> None:
+def write_release_state(packs_dir: Path, *, release_name_value: str, source_sha: str, run_id: str, updated_decks: list[str]) -> None:
     state = {
         "release_name": release_name_value,
         "git_sha": source_sha,
         "github_run_id": run_id,
+        "updated_decks": sorted({deck.lower() for deck in updated_decks if deck}),
         "created_utc": dt.datetime.now(dt.UTC).isoformat().replace("+00:00", "Z"),
     }
     (packs_dir / "release-state.json").write_text(
@@ -138,6 +139,9 @@ rm -rf "$root/incoming/$name"
 mkdir -p "$root/incoming/$name"
 if [ -e "$root/current" ]; then
   find -L "$root/current" -maxdepth 1 -type f \\( -name '*.vpack' -o -name '*.meta.json' -o -name '*.sha256' -o -name 'release-state.json' \\) -exec cp -al -t "$root/incoming/$name" {{}} +
+  if [ -f "$root/current/release-state.json" ]; then
+    cp -f "$root/current/release-state.json" "$root/incoming/$name/release-state.previous.json"
+  fi
 fi
 tar -xzf "$root/incoming/$name.tar.gz" -C "$root/incoming/$name"
 rm -f "$root/incoming/$name.tar.gz"
@@ -209,6 +213,34 @@ def build_manifest(include_data):
     json.dumps(build_manifest(False), ensure_ascii=False, indent=2, sort_keys=True) + "\\n",
     encoding="utf-8",
 )
+
+state_path = root / "release-state.json"
+previous_path = root / "release-state.previous.json"
+if state_path.exists():
+    try:
+        state = json.loads(state_path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError as exc:
+        raise SystemExit(f"release-state.json: invalid JSON: {{exc}}") from exc
+    previous = {{}}
+    if previous_path.exists():
+        try:
+            previous = json.loads(previous_path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            previous = {{}}
+    deck_git_sha = dict(previous.get("deck_git_sha") or {{}})
+    # Backfill older global-only state for decks that were explicitly updated
+    # by the previous release. New state is per deck so partial releases do not
+    # hide unreleased changes in unrelated decks.
+    previous_git_sha = str(previous.get("git_sha") or "")
+    for deck in previous.get("updated_decks") or []:
+        deck_git_sha.setdefault(str(deck).lower(), previous_git_sha)
+    git_sha = str(state.get("git_sha") or "")
+    for deck in state.get("updated_decks") or []:
+        if git_sha:
+            deck_git_sha[str(deck).lower()] = git_sha
+    state["deck_git_sha"] = deck_git_sha
+    state_path.write_text(json.dumps(state, ensure_ascii=False, indent=2, sort_keys=True) + "\\n", encoding="utf-8")
+previous_path.unlink(missing_ok=True)
 PY
 find . -type f -exec chmod 0644 {{}} +
 find . -type d -exec chmod 0755 {{}} +
@@ -235,6 +267,7 @@ def main() -> int:
     ap.add_argument("--keep-releases", default=3, type=int)
     ap.add_argument("--source-sha", default="", help="Git commit SHA represented by this release.")
     ap.add_argument("--github-run-id", default="", help="GitHub Actions run id represented by this release.")
+    ap.add_argument("--updated-decks", nargs="*", default=[], help="Deck codes intentionally updated by this release.")
     args = ap.parse_args()
 
     packs_dir = args.packs_dir.resolve()
@@ -245,7 +278,13 @@ def main() -> int:
         raise SystemExit(f"ssh key does not exist: {key}")
 
     name = release_name(args.release_name)
-    write_release_state(packs_dir, release_name_value=name, source_sha=args.source_sha, run_id=args.github_run_id)
+    write_release_state(
+        packs_dir,
+        release_name_value=name,
+        source_sha=args.source_sha,
+        run_id=args.github_run_id,
+        updated_decks=args.updated_decks,
+    )
     write_manifest(packs_dir)
     files = collect_artifacts(packs_dir)
     with tempfile.TemporaryDirectory(prefix="vocomipedia-pack-deploy.") as td:
