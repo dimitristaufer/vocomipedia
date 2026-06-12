@@ -140,6 +140,7 @@ def legacy_to_canonical(
     order: int,
     media_root: Optional[Path] = None,
     entry_id_override: Optional[str] = None,
+    auto_pos_analysis: bool = False,
 ) -> Dict[str, Any]:
     pack_code = pack["pack_code"]
     target_key = pack.get("target_sentence_key", "jp")
@@ -218,7 +219,12 @@ def legacy_to_canonical(
         },
         "app_payload": dict(entry),
     }
-    return normalize_japanese_item(item)
+    item = normalize_japanese_item(item)
+    if auto_pos_analysis:
+        from vocomipedia_nlp import sync_item_pos_analysis
+
+        item = sync_item_pos_analysis(item)
+    return item
 
 
 def canonical_to_legacy(item: Dict[str, Any], *, pack: Dict[str, Any]) -> Dict[str, Any]:

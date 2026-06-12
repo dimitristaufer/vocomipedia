@@ -58,6 +58,7 @@ manual validation so Certbot does not wait several minutes before starting.
      --decks <deck_code> \
      --limit 5 \
      --copy-media \
+     --auto-pos-analysis \
      --mark-approved \
      --validate \
      --strict-media \
@@ -65,6 +66,9 @@ manual validation so Certbot does not wait several minutes before starting.
      --out-root tmp/deck-smoke \
      --backup-dir reports/backups
    ```
+
+   New deck scaffolding and source-generation expectations are documented in
+   `docs/deck-generation.md`.
 
 4. Validate the canonical deck:
 

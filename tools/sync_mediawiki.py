@@ -1012,6 +1012,19 @@ class MediaWikiClient:
         if result not in {"Success", "Warning"}:
             raise RuntimeError(f"MediaWiki upload failed for {filename}: {data}")
 
+    def file_exists(self, filename: str) -> bool:
+        resp = self.request(
+            {
+                "action": "query",
+                "titles": "File:" + filename,
+                "formatversion": "2",
+                "format": "json",
+            },
+            method="GET",
+        )
+        pages = resp.get("query", {}).get("pages", []) or []
+        return bool(pages and "missing" not in pages[0])
+
     def all_pages(self, prefix: str, namespace: int | None = None) -> list[str]:
         namespace_id, api_prefix = split_namespace_prefix(prefix, namespace)
         titles: list[str] = []
@@ -2375,6 +2388,61 @@ def push_api(
     return count
 
 
+def sync_images_api(
+    pack_dir: Path,
+    api_url: str,
+    username: str,
+    password: str,
+    approved_only: bool,
+    dry_run: bool,
+    changed_items_file: Path | None = None,
+    only_missing: bool = False,
+) -> int:
+    manifest = load_pack_manifest(pack_dir)
+    changed_refs = load_changed_item_refs(changed_items_file, pack_dir)
+    all_items = list(iter_pack_items(pack_dir, approved_only=approved_only))
+    items_to_sync = [(item, path) for item, path in all_items if item_matches_changed_refs(item, path, changed_refs)]
+    if changed_refs is not None:
+        print(f"Selected {len(items_to_sync)} item image(s) out of {len(all_items)} approved item(s).", flush=True)
+    client = None if dry_run else MediaWikiClient(api_url)
+    if not dry_run:
+        assert client is not None
+        client.login(username, password)
+        token = client.csrf_token()
+    else:
+        token = ""
+
+    uploaded = 0
+    missing_media = 0
+    skipped_existing = 0
+    with tempfile.TemporaryDirectory(prefix="vocomipedia-entry-images.") as td:
+        image_work_dir = Path(td)
+        for item, _path in items_to_sync:
+            prepared = prepare_entry_image(pack_dir, item, image_work_dir)
+            if not prepared:
+                if (item.get("media") or {}).get("image_filename"):
+                    missing_media += 1
+                continue
+            filename, image_path = prepared
+            if only_missing and not dry_run:
+                assert client is not None
+                if client.file_exists(filename):
+                    skipped_existing += 1
+                    continue
+            if dry_run:
+                print(f"DRY RUN: would upload File:{filename}")
+            else:
+                assert client is not None
+                client.upload_file(filename, image_path, f"Sync low-res Vocomipedia entry image for {item['entry_id']}", token)
+            uploaded += 1
+    action = "Would sync" if dry_run else "Synced"
+    print(
+        f"{action} {uploaded} {manifest['pack_code']} low-res image(s); "
+        f"skipped {skipped_existing} existing image(s), {missing_media} missing source media file(s)."
+    )
+    return uploaded
+
+
 def seed_structure_api(
     api_url: str,
     username: str,
@@ -2440,6 +2508,16 @@ def main() -> int:
     push.add_argument("--changed-items-file", type=Path, help="Only push item pages listed in this file. Lines may be item ids or paths relative to --deck-dir.")
     push.add_argument("--skip-if-no-changed-items", action="store_true", help="Exit before login if --changed-items-file selects no item pages.")
 
+    sync_images = sub.add_parser("sync-images-api", help="Upload/reconcile low-res entry images without editing item pages.")
+    sync_images.add_argument("--deck-dir", "--pack-dir", dest="pack_dir", metavar="DECK_DIR", required=True, type=Path)
+    sync_images.add_argument("--api-url", required=True)
+    sync_images.add_argument("--username", default=os.environ.get("MEDIAWIKI_USERNAME", ""))
+    sync_images.add_argument("--password", default=os.environ.get("MEDIAWIKI_PASSWORD", ""))
+    sync_images.add_argument("--approved-only", action="store_true")
+    sync_images.add_argument("--dry-run", action="store_true")
+    sync_images.add_argument("--changed-items-file", type=Path, help="Only sync images for items listed in this file.")
+    sync_images.add_argument("--only-missing", action="store_true", help="Skip upload when File: already exists. By default images are reconciled/overwritten when changed.")
+
     seed = sub.add_parser("seed-structure", help="Push Page Forms templates/forms and optional interface messages only.")
     seed.add_argument("--api-url", required=True)
     seed.add_argument("--username", default=os.environ.get("MEDIAWIKI_USERNAME", ""))
@@ -2481,6 +2559,20 @@ def main() -> int:
             entry_images=not args.skip_entry_images,
             changed_items_file=args.changed_items_file,
             skip_if_no_changed_items=args.skip_if_no_changed_items,
+        )
+        return 0
+    if args.cmd == "sync-images-api":
+        if not args.dry_run and (not args.username or not args.password):
+            raise SystemExit("MEDIAWIKI_USERNAME/MEDIAWIKI_PASSWORD or --username/--password are required.")
+        sync_images_api(
+            args.pack_dir,
+            args.api_url,
+            args.username,
+            args.password,
+            args.approved_only,
+            args.dry_run,
+            changed_items_file=args.changed_items_file,
+            only_missing=args.only_missing,
         )
         return 0
     if args.cmd == "seed-structure":

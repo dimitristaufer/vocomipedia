@@ -52,6 +52,7 @@ def main() -> int:
     ap.add_argument("--limit", type=int, default=0, help="Import only the first N entries, for smoke tests.")
     ap.add_argument("--copy-media", action="store_true", help="Copy comic images into the canonical deck media folder.")
     ap.add_argument("--mark-approved", action="store_true", help="Mark imported entries approved. Useful only for controlled smoke releases.")
+    ap.add_argument("--auto-pos-analysis", action="store_true", help="Regenerate sentence token/POS analysis with Vocomipedia offline analyzers instead of trusting legacy pos_analysis.")
     args = ap.parse_args()
 
     pack = pack_config(args.pack_code, args.catalog)
@@ -75,7 +76,14 @@ def main() -> int:
         base_id = entry_identifier(entry)
         seen_legacy_ids[base_id] = seen_legacy_ids.get(base_id, 0) + 1
         unique_id = base_id if seen_legacy_ids[base_id] == 1 else f"{base_id}__v{seen_legacy_ids[base_id]}"
-        item = legacy_to_canonical(entry, pack=pack, order=idx, media_root=args.asset_dir, entry_id_override=unique_id)
+        item = legacy_to_canonical(
+            entry,
+            pack=pack,
+            order=idx,
+            media_root=args.asset_dir,
+            entry_id_override=unique_id,
+            auto_pos_analysis=args.auto_pos_analysis,
+        )
         if args.mark_approved:
             item["review"]["status"] = "approved"
             item["media"]["license"] = "Vocomi-created"

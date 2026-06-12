@@ -80,6 +80,7 @@ def main() -> int:
     ap.add_argument("--all", action="store_true")
     ap.add_argument("--limit", type=int, default=0, help="Import only first N rows per deck for validation/smoke sync.")
     ap.add_argument("--copy-media", action="store_true")
+    ap.add_argument("--auto-pos-analysis", action="store_true", help="Regenerate sentence token/POS analysis with Vocomipedia offline analyzers during import.")
     ap.add_argument("--mark-approved", action="store_true")
     ap.add_argument("--validate", action="store_true")
     ap.add_argument("--strict-media", action="store_true")
@@ -139,6 +140,8 @@ def main() -> int:
             cmd.extend(["--limit", str(args.limit)])
         if args.copy_media:
             cmd.append("--copy-media")
+        if args.auto_pos_analysis:
+            cmd.append("--auto-pos-analysis")
         if args.mark_approved:
             cmd.append("--mark-approved")
         run(cmd, dry_run=args.dry_run)

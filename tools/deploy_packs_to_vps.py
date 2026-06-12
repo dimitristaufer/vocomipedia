@@ -56,7 +56,7 @@ def scp_base(host: str, user: str, port: int, key: Path) -> list[str]:
 
 
 def collect_artifacts(packs_dir: Path) -> list[Path]:
-    patterns = ["*.vpack", "*.meta.json", "*.sha256", "packs.json", "packs-images.json"]
+    patterns = ["*.vpack", "*.meta.json", "*.sha256", "packs.json", "packs-images.json", "release-state.json"]
     files: list[Path] = []
     for pattern in patterns:
         files.extend(sorted(packs_dir.glob(pattern)))
@@ -113,6 +113,19 @@ def make_archive(files: list[Path], packs_dir: Path, dest: Path) -> None:
             tar.add(path, arcname=str(path.relative_to(packs_dir)))
 
 
+def write_release_state(packs_dir: Path, *, release_name_value: str, source_sha: str, run_id: str) -> None:
+    state = {
+        "release_name": release_name_value,
+        "git_sha": source_sha,
+        "github_run_id": run_id,
+        "created_utc": dt.datetime.now(dt.UTC).isoformat().replace("+00:00", "Z"),
+    }
+    (packs_dir / "release-state.json").write_text(
+        json.dumps(state, ensure_ascii=False, indent=2, sort_keys=True) + "\n",
+        encoding="utf-8",
+    )
+
+
 def remote_deploy_script(root: str, name: str, keep_releases: int) -> str:
     return f"""
 set -euo pipefail
@@ -124,7 +137,7 @@ mkdir -p "$root/incoming" "$root/releases"
 rm -rf "$root/incoming/$name"
 mkdir -p "$root/incoming/$name"
 if [ -e "$root/current" ]; then
-  find -L "$root/current" -maxdepth 1 -type f \\( -name '*.vpack' -o -name '*.meta.json' -o -name '*.sha256' \\) -exec cp -al -t "$root/incoming/$name" {{}} +
+  find -L "$root/current" -maxdepth 1 -type f \\( -name '*.vpack' -o -name '*.meta.json' -o -name '*.sha256' -o -name 'release-state.json' \\) -exec cp -al -t "$root/incoming/$name" {{}} +
 fi
 tar -xzf "$root/incoming/$name.tar.gz" -C "$root/incoming/$name"
 rm -f "$root/incoming/$name.tar.gz"
@@ -220,6 +233,8 @@ def main() -> int:
     ap.add_argument("--ssh-key", required=True, type=Path)
     ap.add_argument("--remote-root", default="/srv/vocomi-packs")
     ap.add_argument("--keep-releases", default=3, type=int)
+    ap.add_argument("--source-sha", default="", help="Git commit SHA represented by this release.")
+    ap.add_argument("--github-run-id", default="", help="GitHub Actions run id represented by this release.")
     args = ap.parse_args()
 
     packs_dir = args.packs_dir.resolve()
@@ -230,6 +245,7 @@ def main() -> int:
         raise SystemExit(f"ssh key does not exist: {key}")
 
     name = release_name(args.release_name)
+    write_release_state(packs_dir, release_name_value=name, source_sha=args.source_sha, run_id=args.github_run_id)
     write_manifest(packs_dir)
     files = collect_artifacts(packs_dir)
     with tempfile.TemporaryDirectory(prefix="vocomipedia-pack-deploy.") as td:

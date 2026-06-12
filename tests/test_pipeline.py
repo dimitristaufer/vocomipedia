@@ -82,12 +82,23 @@ class VocomipediaPipelineTests(unittest.TestCase):
         script = deploy_packs_to_vps.remote_deploy_script("/srv/vocomi-packs", "test-release", 3)
         self.assertIn('find -L "$root/current"', script)
         self.assertIn("-name '*.vpack'", script)
+        self.assertIn("-name 'release-state.json'", script)
         self.assertIn("rm -f packs.json packs-images.json", script)
         self.assertIn("python3 - <<'PY'", script)
         self.assertIn('root.glob("*.meta.json")', script)
         self.assertIn('(root / "packs-images.json").write_text', script)
         self.assertLess(script.find('find -L "$root/current"'), script.find('tar -xzf "$root/incoming/$name.tar.gz"'))
         self.assertLess(script.find('rm -f packs.json packs-images.json'), script.find("if compgen -G"))
+
+    def test_release_workflow_uses_previous_release_base_and_reconciles_images(self) -> None:
+        workflow = (ROOT / ".github" / "workflows" / "release.yml").read_text(encoding="utf-8")
+        self.assertIn("fetch-depth: 0", workflow)
+        self.assertIn("Resolve previous release base", workflow)
+        self.assertIn("current/release-state.json", workflow)
+        self.assertIn("--base \"$RELEASE_BASE_SHA\"", workflow)
+        self.assertIn("Reconcile MediaWiki entry images", workflow)
+        self.assertIn("sync-images-api", workflow)
+        self.assertIn("--source-sha \"${{ github.sha }}\"", workflow)
 
     def test_push_api_filters_changed_items_without_shrinking_index_source(self) -> None:
         with tempfile.TemporaryDirectory() as td:
@@ -157,6 +168,62 @@ class VocomipediaPipelineTests(unittest.TestCase):
             self.assertIn("Selected 1 changed item page(s) out of 2 approved item(s).", output)
             self.assertIn("DRY RUN: would edit Item:ja_n5/two", output)
             self.assertNotIn("DRY RUN: would edit Item:ja_n5/one", output)
+
+    def test_sync_images_api_reconciles_images_without_editing_pages(self) -> None:
+        with tempfile.TemporaryDirectory() as td:
+            tmp = Path(td)
+            pack_dir = tmp / "ja_n5"
+            item_dir = pack_dir / "items"
+            media_dir = pack_dir / "media"
+            item_dir.mkdir(parents=True)
+            media_dir.mkdir(parents=True)
+            Image.new("RGBA", (96, 96), (200, 10, 10, 255)).save(media_dir / "source.png")
+            item = {
+                "schema_version": "vocomipedia-item-2",
+                "id": "ja_n5:one",
+                "pack_code": "ja_n5",
+                "language": "ja",
+                "entry_id": "one",
+                "headword": "one",
+                "reading": "",
+                "label": "",
+                "level": "N5",
+                "order": 0,
+                "part_of_speech": ["Noun"],
+                "glosses": {"en": "one"},
+                "sentences": [],
+                "media": {"image_filename": "source.png", "license": "Vocomi-created", "review_status": "approved"},
+                "review": {"status": "approved"},
+                "provenance": {"origin": "test", "ai_generated": True, "license_status": "generated_by_vocomi"},
+                "app_payload": {},
+            }
+            (item_dir / "one.json").write_text(json.dumps(item, ensure_ascii=False), encoding="utf-8")
+            (pack_dir / "pack.json").write_text(
+                json.dumps(
+                    {
+                        "schema_version": "vocomipedia-pack-1",
+                        "pack_code": "ja_n5",
+                        "title": "Japanese N5",
+                        "language": "ja",
+                        "items": [{"id": "ja_n5:one", "entry_id": "one", "file": "items/one.json", "order": 0}],
+                    }
+                ),
+                encoding="utf-8",
+            )
+            buf = io.StringIO()
+            with contextlib.redirect_stdout(buf):
+                count = sync_mediawiki.sync_images_api(
+                    pack_dir,
+                    "https://example.invalid/api.php",
+                    "",
+                    "",
+                    approved_only=True,
+                    dry_run=True,
+                )
+            output = buf.getvalue()
+            self.assertEqual(count, 1)
+            self.assertIn("DRY RUN: would upload File:Vocomipedia_ja_n5_one_entry.jpg", output)
+            self.assertNotIn("DRY RUN: would edit", output)
 
     def test_changed_deck_items_detects_changed_canonical_item_files(self) -> None:
         with tempfile.TemporaryDirectory() as td:
@@ -283,11 +350,52 @@ packs:
                     str(tmp / "backups"),
                     "--decks",
                     "ja_n5",
+                    "--auto-pos-analysis",
                     "--mark-approved",
                     "--validate",
                 ]
             )
             self.assertTrue((out_root / "ja" / "ja_n5" / "pack.json").exists())
+            item_path = next((out_root / "ja" / "ja_n5" / "items").glob("*.json"))
+            item = json.loads(item_path.read_text(encoding="utf-8"))
+            self.assertTrue(item["sentences"][0]["tokens"])
+            self.assertNotEqual(item["sentences"][0]["tokens"], json.loads(source_json.read_text(encoding="utf-8"))[0]["pos_analysis"][0]["tokens"])
+
+    def test_scaffold_deck_adds_catalog_entry_and_empty_manifest(self) -> None:
+        with tempfile.TemporaryDirectory() as td:
+            tmp = Path(td)
+            catalog = tmp / "packs.yaml"
+            catalog.write_text("schema_version: vocomipedia-pack-catalog-1\npacks: {}\n", encoding="utf-8")
+            out_root = tmp / "data"
+            run(
+                [
+                    sys.executable,
+                    str(TOOLS / "scaffold_deck.py"),
+                    "--deck-code",
+                    "de_b2",
+                    "--title",
+                    "German B2",
+                    "--language",
+                    "de",
+                    "--level",
+                    "B2",
+                    "--data-pack-code",
+                    "de_b2",
+                    "--source-json",
+                    "vocomi_pack_generation/language_packs/german_B2/german_B2_structure.json",
+                    "--source-asset-dir",
+                    "vocomi_pack_generation/language_packs/german_B2",
+                    "--catalog",
+                    str(catalog),
+                    "--out-root",
+                    str(out_root),
+                ]
+            )
+            catalog_obj = json.loads(json.dumps(__import__("yaml").safe_load(catalog.read_text(encoding="utf-8"))))
+            self.assertIn("de_b2", catalog_obj["packs"])
+            manifest = json.loads((out_root / "de" / "de_b2" / "pack.json").read_text(encoding="utf-8"))
+            self.assertEqual(manifest["pack_code"], "de_b2")
+            self.assertEqual(manifest["items"], [])
 
     @unittest.skipUnless(PACK_GENERATION_AVAILABLE, "bundled pack builder is required")
     def test_release_skip_vpack_builds_sqlite_assets(self) -> None:

@@ -22,6 +22,9 @@ back, and builds signed `.vpack` releases for the app.
 python3 -m pip install -r requirements.txt
 ```
 
+Release-only jobs can install the smaller `requirements-release.txt`; NLP
+import/sync jobs use the full `requirements.txt`.
+
 Secrets live outside the repo. Local production handoff files are under
 `~/.vocomipedia/`.
 
@@ -48,17 +51,21 @@ import from a local legacy pack-generation checkout:
 python3 tools/sync_all_packs.py \
   --decks ja_n5 ja_n4 \
   --copy-media \
+  --auto-pos-analysis \
   --mark-approved \
   --validate \
   --strict-media \
   --pack-generation-dir ../vocomi_pack_generation
 ```
 
-For Japanese decks, add `--revise-japanese-furigana` to regenerate ruby with
-Sudachi before validation.
+`--auto-pos-analysis` lets source generation scripts skip heavyweight
+token/POS annotation and rely on the same offline analyzers used by moderated
+sentence edits. For Japanese decks, add `--revise-japanese-furigana` when you
+need to refresh bracket ruby with Sudachi before validation.
 
 For a new deck, add it to `catalog/packs.yaml`, sync it locally, run validation,
-then use the release workflow.
+then use the release workflow. The full new-deck process is in
+`docs/deck-generation.md`.
 
 ## MediaWiki Sync
 
@@ -191,3 +198,4 @@ Add `--apply` only after reviewing the output.
 - VPS pack hosting: `docs/vps-pack-hosting.md`
 - Operations runbook: `docs/operations-runbook.md`
 - Japanese ruby: `docs/japanese-ruby.md`
+- Deck generation: `docs/deck-generation.md`
