@@ -5,7 +5,9 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import re
+import shlex
 import subprocess
 import sys
 from pathlib import Path
@@ -28,6 +30,11 @@ def load_env(path: Path) -> dict[str, str]:
         key, value = line.split("=", 1)
         out[key.strip()] = value.strip()
     return out
+
+
+def compose_command(env_file: Path, compose_file: Path) -> list[str]:
+    compose = shlex.split(os.environ.get("VOCOMIPEDIA_DOCKER_COMPOSE", "docker compose"))
+    return [*compose, "--env-file", str(env_file), "-f", str(compose_file)]
 
 
 def sql_quote(value: object) -> str:
@@ -225,12 +232,7 @@ def main() -> int:
 
     env = load_env(args.env_file)
     cmd = [
-        "docker",
-        "compose",
-        "--env-file",
-        str(args.env_file),
-        "-f",
-        str(args.compose_file),
+        *compose_command(args.env_file, args.compose_file),
         "exec",
         "-T",
         "db",

@@ -27,7 +27,7 @@ services:
       elasticsearch:
         condition: service_started
     ports:
-      - "${MW_PORT:-8080}:80"
+      - "${MW_BIND:-127.0.0.1}:${MW_PORT:-8080}:80"
     volumes:
       - mw-images:/var/www/html/images
       - ./assets/vocomi-logo-135.png:/var/www/html/resources/assets/vocomi-logo-135.png:ro
