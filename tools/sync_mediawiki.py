@@ -1033,6 +1033,51 @@ class MediaWikiClient:
             cont = resp["continue"]
         return titles
 
+    def raw_pages_with_metadata(self, prefix: str, namespace: int | None = None) -> list[tuple[str, str, dict]]:
+        namespace_id, api_prefix = split_namespace_prefix(prefix, namespace)
+        rows: list[tuple[str, str, dict]] = []
+        cont: dict = {}
+        while True:
+            params = {
+                "action": "query",
+                "generator": "allpages",
+                "gapprefix": api_prefix,
+                "gapnamespace": str(namespace_id),
+                "gaplimit": "50",
+                "prop": "revisions",
+                "rvprop": "ids|timestamp|user|comment|content",
+                "rvslots": "main",
+                "formatversion": "2",
+                "format": "json",
+            }
+            params.update(cont)
+            resp = self.request(params, method="GET")
+            for page in resp.get("query", {}).get("pages", []) or []:
+                if "missing" in page:
+                    continue
+                revs = page.get("revisions", [])
+                if not revs:
+                    continue
+                rev = revs[0]
+                raw = rev.get("slots", {}).get("main", {}).get("content", "")
+                rows.append(
+                    (
+                        str(page.get("title") or ""),
+                        raw,
+                        {
+                            "revision_id": rev.get("revid"),
+                            "parent_revision_id": rev.get("parentid"),
+                            "revision_timestamp_utc": rev.get("timestamp"),
+                            "revision_user": rev.get("user"),
+                            "revision_comment": rev.get("comment"),
+                        },
+                    )
+                )
+            if "continue" not in resp:
+                break
+            cont = resp["continue"]
+        return rows
+
     def raw_page_with_metadata(self, title: str) -> tuple[str, dict]:
         resp = self.request(
             {
@@ -2310,14 +2355,15 @@ def pull_api(api_url: str, prefix: str, namespace: int | None, out_dir: Path, ma
     client = MediaWikiClient(api_url)
     out_dir.mkdir(parents=True, exist_ok=True)
     count = 0
-    for title in client.all_pages(prefix, namespace=namespace):
-        raw, metadata = client.raw_page_with_metadata(title)
+    for title, raw, metadata in client.raw_pages_with_metadata(prefix, namespace=namespace):
         item = extract_item_json(raw)
         if not item:
             continue
         item = record_wiki_review(item, title, metadata, mark_approved=mark_approved)
         write_json(out_dir / safe_filename(str(item["id"]), str(item.get("headword", ""))), item)
         count += 1
+        if count % 100 == 0:
+            print(f"Pulled {count} item JSON file(s)...", flush=True)
     print(f"Pulled {count} item JSON file(s) to {out_dir}")
     return count
 
