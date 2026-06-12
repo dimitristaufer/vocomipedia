@@ -49,8 +49,8 @@ MEDIAWIKI_REINDEX_COMMAND
 ```
 
 `VOCOMI_REPO_TOKEN` is no longer required for the current Vocomipedia-owned
-sync or release workflows. Legacy Azure upload inputs remain disabled in the
-workflow; deploy current packs to the VPS.
+sync or release workflows. Azure upload remains available only in legacy/local
+tooling; production releases deploy current packs to the VPS.
 
 ## Required Environment
 
@@ -95,46 +95,27 @@ Run:
 GitHub -> Actions -> Release And Deploy -> Run workflow
 ```
 
-Smoke build:
+After the sync-back PR is merged, enter only the changed deck codes:
 
 ```text
-deck_codes: zh_1
-sync_limit: 2
-build_vpack: true
-upload: false
-mediawiki_push: false
-```
-
-Production release after the sync-back PR is merged:
-
-```text
-deck_codes: ja_n5 ja_n4
-sync_limit: 0
-revise_japanese_furigana: true
-build_vpack: true
-upload: false
-vps_pack_deploy: true
-mediawiki_push: true
-generate_search_sql: true
-run_remote_reindex: true
+deck_codes: ja_n5
 ```
 
 The release workflow copies selected canonical JSON decks into a temporary
-workspace, hydrates `media/` folders from the VPS when packs or wiki pages need
-images, adds sibling decks needed for combined data packs, validates release
-readiness, builds single and combined `.vpack` files with the bundled pack
-builder, and deploys to the VPS when enabled.
+workspace, hydrates `media/` folders from the VPS, adds sibling decks needed for
+combined data packs, validates release readiness, builds single and combined
+`.vpack` files with the bundled pack builder, deploys to the VPS, pushes
+approved pages back to MediaWiki, emits search-index SQL, and runs the remote
+search reindex command.
 
 ## Search Index
 
 `Release And Deploy` uploads `reports/search/vocomipedia-search-upsert.sql` as
-an artifact when `generate_search_sql` is enabled. The SQL creates the search
-projection table if missing and upserts selected deck rows without dropping the
-existing table.
+an artifact. The SQL creates the search projection table if missing and upserts
+selected deck rows without dropping the existing table.
 
 For a full rebuild, run `tools/reindex_mediawiki_search.py` on the MediaWiki
-server against the production checkout. For deployment automation, set the
-optional SSH secrets and enable `run_remote_reindex`.
+server against the production checkout.
 
 ## Backups
 

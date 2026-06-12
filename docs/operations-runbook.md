@@ -77,16 +77,9 @@ manual validation so Certbot does not wait several minutes before starting.
 
    ```text
    deck_codes: <deck_code or changed deck group>
-   sync_limit: 0
-   build_vpack: true
-   upload: false
-   vps_pack_deploy: true
-   mediawiki_push: true
-   generate_search_sql: true
-   run_remote_reindex: true
    ```
 
-5. Verify public search and representative item pages, including images.
+6. Verify public search and representative item pages, including images.
 
 For new languages, also confirm the offline sentence analyzer supports the
 language or add one under `tools/vocomipedia_nlp/` before enabling public

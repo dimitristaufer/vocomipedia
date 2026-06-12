@@ -159,14 +159,10 @@ production deployment serves packs from `packs.vocomipedia.com`.
 - `Release And Deploy`: builds packs from canonical data, deploys to VPS, pushes wiki
   pages, and reindexes search.
 
-Use the production workflow with:
+Run the production workflow with only the changed deck codes:
 
 ```text
-upload: false
-vps_pack_deploy: true
-mediawiki_push: true
-generate_search_sql: true
-run_remote_reindex: true
+deck_codes: ja_n5
 ```
 
 Required secrets and environment setup are documented in

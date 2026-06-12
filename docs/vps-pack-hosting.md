@@ -32,9 +32,8 @@ VPS_PACK_SSH_KEY       private key for the deploy user
 VPS_PACK_ROOT          /srv/vocomi-packs
 ```
 
-`Release And Deploy` uploads to the VPS when `vps_pack_deploy` is enabled. This
-is independent of Azure: `upload` controls Azure upload, and `vps_pack_deploy`
-controls VPS static hosting.
+`Release And Deploy` uploads built pack artifacts to the VPS by default. Azure
+upload support remains only in legacy/local tooling.
 
 ## Manual Deploy
 

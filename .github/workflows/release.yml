@@ -6,46 +6,7 @@ on:
       deck_codes:
         description: "Space-separated deck codes, e.g. zh_1 ja_n5 ja_n4"
         required: true
-        default: "zh_1"
-      sync_limit:
-        description: "Limit entries per deck. Use 0 for full production decks."
-        required: false
-        default: "0"
-      revise_japanese_furigana:
-        description: "Revise Japanese ruby with SudachiPy/SudachiDict before release"
-        type: boolean
-        required: false
-        default: false
-      build_vpack:
-        description: "Build .vpack artifacts"
-        type: boolean
-        required: false
-        default: true
-      upload:
-        description: "Legacy Azure upload is disabled in the Vocomipedia-owned release workflow"
-        type: boolean
-        required: false
-        default: false
-      vps_pack_deploy:
-        description: "Deploy built pack artifacts to the VPS static pack host"
-        type: boolean
-        required: false
-        default: false
-      mediawiki_push:
-        description: "Push generated approved item pages to MediaWiki"
-        type: boolean
-        required: false
-        default: false
-      generate_search_sql:
-        description: "Generate an upsert SQL artifact for VocomipediaSearch"
-        type: boolean
-        required: false
-        default: true
-      run_remote_reindex:
-        description: "Run MEDIAWIKI_REINDEX_COMMAND over SSH after push"
-        type: boolean
-        required: false
-        default: false
+        default: "ja_n5"
 
 jobs:
   release:
@@ -98,24 +59,11 @@ jobs:
           echo "SYNC_DECK_CODES=$SYNC_DECK_CODES" >> "$GITHUB_ENV"
       - name: Prepare selected canonical decks
         run: |
-          LIMIT_ARG=""
-          if [ "${{ inputs.sync_limit }}" != "0" ]; then
-            LIMIT_ARG="--limit ${{ inputs.sync_limit }}"
-          fi
           cd vocomipedia
           python tools/prepare_release_workspace.py \
             --decks $SYNC_DECK_CODES \
-            $LIMIT_ARG \
             --out-root tmp/actions-data
-          if [ "${{ inputs.revise_japanese_furigana }}" = "true" ]; then
-            python tools/revise_japanese_furigana.py \
-              --root tmp/actions-data \
-              --sudachi-dict core \
-              --sudachi-mode C \
-              --backup-dir reports/backups
-          fi
       - name: Hydrate release media from VPS
-        if: inputs.build_vpack || inputs.mediawiki_push
         env:
           VPS_PACK_HOST: ${{ secrets.VPS_PACK_HOST }}
           VPS_PACK_PORT: ${{ secrets.VPS_PACK_PORT }}
@@ -143,23 +91,9 @@ jobs:
       - name: Validate release workspace
         run: |
           cd vocomipedia
-          MEDIA_ARG=""
-          if [ "${{ inputs.build_vpack }}" = "true" ] || [ "${{ inputs.mediawiki_push }}" = "true" ]; then
-            MEDIA_ARG="--strict-media"
-          fi
-          python tools/validate_corpus.py --root tmp/actions-data $MEDIA_ARG --release-ready
-      - name: Build and optionally upload release artifacts
-        if: inputs.build_vpack || inputs.upload
-        env:
-          AZURE_STORAGE_ACCOUNT: ${{ secrets.AZURE_STORAGE_ACCOUNT }}
-          AZURE_STORAGE_KEY: ${{ secrets.AZURE_STORAGE_KEY }}
-          PACKS_CONTAINER: ${{ secrets.PACKS_CONTAINER }}
+          python tools/validate_corpus.py --root tmp/actions-data --strict-media --release-ready
+      - name: Build release artifacts
         run: |
-          UPLOAD_ARG=""
-          if [ "${{ inputs.upload }}" = "true" ]; then
-            echo "Azure upload is not supported in the Vocomipedia-owned release workflow; deploy to VPS instead." >&2
-            exit 2
-          fi
           cd vocomipedia
           for code in ${{ inputs.deck_codes }}; do
             lang="${code%%_*}"
@@ -175,8 +109,7 @@ jobs:
               --deck-dir "$deck_dir" \
               --outdir release \
               --app-pubkey "${{ steps.private-key.outputs.public_path }}" \
-              --validate-private-key "${{ steps.private-key.outputs.path }}" \
-              $UPLOAD_ARG
+              --validate-private-key "${{ steps.private-key.outputs.path }}"
           done
           python tools/release_combined_pack.py \
             --changed-decks ${{ inputs.deck_codes }} \
@@ -184,10 +117,8 @@ jobs:
             --catalog catalog/packs.yaml \
             --outdir release \
             --app-pubkey "${{ steps.private-key.outputs.public_path }}" \
-            --validate-private-key "${{ steps.private-key.outputs.path }}" \
-            $UPLOAD_ARG
+            --validate-private-key "${{ steps.private-key.outputs.path }}"
       - name: Deploy pack artifacts to VPS
-        if: inputs.vps_pack_deploy
         env:
           VPS_PACK_HOST: ${{ secrets.VPS_PACK_HOST }}
           VPS_PACK_PORT: ${{ secrets.VPS_PACK_PORT }}
@@ -213,7 +144,6 @@ jobs:
             --ssh-key ~/.ssh/vocomipedia_pack_deploy \
             --remote-root "$ROOT"
       - name: Push selected decks to MediaWiki
-        if: inputs.mediawiki_push
         env:
           MEDIAWIKI_USERNAME: ${{ secrets.MEDIAWIKI_USERNAME }}
           MEDIAWIKI_PASSWORD: ${{ secrets.MEDIAWIKI_PASSWORD }}
@@ -239,7 +169,6 @@ jobs:
               --approved-only
           done
       - name: Generate search projection SQL
-        if: inputs.generate_search_sql
         run: |
           cd vocomipedia
           mkdir -p reports/search
@@ -248,7 +177,6 @@ jobs:
             --no-drop \
             --dry-run > reports/search/vocomipedia-search-upsert.sql
       - name: Run remote search reindex command
-        if: inputs.run_remote_reindex
         env:
           MEDIAWIKI_SSH_HOST: ${{ secrets.MEDIAWIKI_SSH_HOST }}
           MEDIAWIKI_SSH_USER: ${{ secrets.MEDIAWIKI_SSH_USER }}
