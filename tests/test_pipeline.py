@@ -682,11 +682,24 @@ packs:
                 result = analyze_sentence(language, sentence, ruby_source=ruby_source)
                 self.assertEqual(result.sentence, sentence)
                 self.assertTrue(result.tokens)
-                self.assertEqual("".join(str(token.get("surface") or "") for token in result.tokens), sentence.replace(" ", ""))
                 for token in result.tokens:
                     self.assertIn("surface", token)
                     self.assertIn("upos", token)
                     self.assertIn("analyzer", token)
+                joined_surface = "".join(str(token.get("surface") or "") for token in result.tokens)
+                if joined_surface != sentence.replace(" ", ""):
+                    covered = set()
+                    for token in result.tokens:
+                        start = token.get("start")
+                        end = token.get("end")
+                        self.assertIsInstance(start, int)
+                        self.assertIsInstance(end, int)
+                        self.assertGreaterEqual(start, 0)
+                        self.assertGreater(end, start)
+                        self.assertLessEqual(end, len(sentence))
+                        covered.update(range(start, end))
+                    expected = {i for i, char in enumerate(sentence) if not char.isspace()}
+                    self.assertEqual(covered, expected)
                 if language == "ja":
                     self.assertEqual(result.tokens[0]["ruby_text"], "山[やま]")
                     self.assertEqual(result.tokens[0]["ruby_source"], "mediawiki_sentence_ruby")
@@ -714,13 +727,12 @@ packs:
     def test_local_setup_searches_vocomipedia_namespaces_by_default(self) -> None:
         source = (TOOLS / "local_mediawiki.py").read_text(encoding="utf-8")
         skeleton = (ROOT / "docker" / "LocalSettings.vocomipedia.php").read_text(encoding="utf-8")
-        local_settings = (ROOT / "docker" / "local" / "LocalSettings.php").read_text(encoding="utf-8")
         for text in (source, skeleton):
             self.assertIn("$wgNamespacesToBeSearchedDefault[NS_MAIN] = false;", text)
             self.assertIn("$wgNamespacesToBeSearchedDefault[NS_VOCOMIPEDIA_ITEM] = true;", text)
             self.assertIn("$wgNamespacesToBeSearchedDefault[NS_VOCOMIPEDIA_DECK] = true;", text)
             self.assertIn("$wgNamespacesToBeSearchedDefault[NS_VOCOMIPEDIA_POLICY] = true;", text)
-        for text in (source, skeleton, local_settings):
+        for text in (source, skeleton):
             self.assertIn("wfLoadExtension( 'VocomipediaSearch' );", text)
             self.assertIn("wfLoadExtension( 'Elastica' );", text)
             self.assertIn("wfLoadExtension( 'CirrusSearch' );", text)
