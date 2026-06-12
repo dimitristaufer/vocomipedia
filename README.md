@@ -26,7 +26,7 @@ Backup-aware sync all selected latest generated decks from
 `vocomi_pack_generation` into canonical Vocomipedia data:
 
 ```bash
-python3 vocomipedia/tools/sync_all_packs.py \
+python3 tools/sync_all_packs.py \
   --decks zh_1 ja_n5 \
   --copy-media \
   --validate \
@@ -34,14 +34,14 @@ python3 vocomipedia/tools/sync_all_packs.py \
 ```
 
 The sync command always creates a timestamped tar backup before replacing deck
-directories. Backups are written to `vocomipedia/backups/` by default.
+directories. Backups are written to `backups/` by default.
 
 For Japanese decks, revise dictionary-style ruby locally with
 SudachiPy/SudachiDict after import:
 
 ```bash
 python3 -m pip install sudachipy sudachidict_core
-python3 vocomipedia/tools/sync_all_packs.py \
+python3 tools/sync_all_packs.py \
   --decks ja_n5 ja_n4 \
   --copy-media \
   --mark-approved \
@@ -56,10 +56,10 @@ Sentence corrections from MediaWiki are moderation proposals. Analyze or apply
 them locally with offline token/POS generation:
 
 ```bash
-python3 vocomipedia/tools/apply_sentence_proposals.py \
-  --deck-dir vocomipedia/data/languages/ja/ja_n5 \
+python3 tools/apply_sentence_proposals.py \
+  --deck-dir data/languages/ja/ja_n5 \
   --apply \
-  --diff-report vocomipedia/reports/sentence-proposals-ja_n5.diff
+  --diff-report reports/sentence-proposals-ja_n5.diff
 ```
 
 The analyzer uses local language-specific libraries when installed
@@ -70,26 +70,26 @@ can still be reviewed without network calls.
 Import a current legacy deck into canonical Vocomipedia items:
 
 ```bash
-python3 vocomipedia/tools/import_legacy_pack.py \
+python3 tools/import_legacy_pack.py \
   --deck-code zh_1 \
   --input-json vocomi_pack_generation/HSK_1/HSK_1_structure.json \
   --asset-dir vocomi_pack_generation/HSK_1 \
-  --out-root vocomipedia/data/languages \
+  --out-root data/languages \
   --copy-media
 ```
 
 Validate canonical data:
 
 ```bash
-python3 vocomipedia/tools/validate_corpus.py --root vocomipedia/data/languages
+python3 tools/validate_corpus.py --root data/languages
 ```
 
 Run stricter content and release-policy validation when auditing a deck before
 publication:
 
 ```bash
-python3 vocomipedia/tools/validate_corpus.py \
-  --root vocomipedia/data/languages/ja/ja_n5 \
+python3 tools/validate_corpus.py \
+  --root data/languages/ja/ja_n5 \
   --strict-media \
   --release-ready
 ```
@@ -101,8 +101,8 @@ Revise an already-imported Japanese deck without re-importing from
 `vocomi_pack_generation`:
 
 ```bash
-python3 vocomipedia/tools/revise_japanese_furigana.py \
-  --root vocomipedia/data/languages/ja/ja_n5 \
+python3 tools/revise_japanese_furigana.py \
+  --root data/languages/ja/ja_n5 \
   --sudachi-dict core \
   --sudachi-mode C
 ```
@@ -111,8 +111,8 @@ Export canonical data back to the flat legacy structure expected by the current
 deck builder:
 
 ```bash
-python3 vocomipedia/tools/export_legacy_structure.py \
-  --deck-dir vocomipedia/data/languages/zh/zh_1 \
+python3 tools/export_legacy_structure.py \
+  --deck-dir data/languages/zh/zh_1 \
   --out-json /tmp/zh_1_structure.json
 ```
 
@@ -120,8 +120,8 @@ Build current iOS assets and, unless `--skip-vpack` is provided, the encrypted
 server deck:
 
 ```bash
-python3 vocomipedia/tools/release_pack.py \
-  --deck-dir vocomipedia/data/languages/zh/zh_1 \
+python3 tools/release_pack.py \
+  --deck-dir data/languages/zh/zh_1 \
   --pack-generation-dir vocomi_pack_generation \
   --outdir /tmp/vocomipedia-release
 ```
@@ -129,10 +129,10 @@ python3 vocomipedia/tools/release_pack.py \
 Build and upload through the existing Azure-capable deck builder:
 
 ```bash
-python3 vocomipedia/tools/release_pack.py \
-  --deck-dir vocomipedia/data/languages/zh/zh_1 \
+python3 tools/release_pack.py \
+  --deck-dir data/languages/zh/zh_1 \
   --pack-generation-dir vocomi_pack_generation \
-  --outdir vocomipedia/release \
+  --outdir release \
   --upload
 ```
 
@@ -140,11 +140,11 @@ Build a combined data pack from canonical component decks. For example, this
 rebuilds `ja_n5-n4` from the approved contents of `ja_n5` and `ja_n4`:
 
 ```bash
-python3 vocomipedia/tools/release_combined_pack.py \
+python3 tools/release_combined_pack.py \
   --data-pack-code ja_n5-n4 \
-  --root vocomipedia/data/languages \
+  --root data/languages \
   --pack-generation-dir vocomi_pack_generation \
-  --outdir vocomipedia/release \
+  --outdir release \
   --validate-private-key vocomi_pack_generation/ios_private.pem
 ```
 
@@ -157,8 +157,8 @@ Validate a generated `.vpack` by decrypting it with the iOS private key and
 checking ZIP integrity:
 
 ```bash
-python3 vocomipedia/tools/validate_vpack.py \
-  --vpack vocomipedia/release/packs/<deck>.vpack \
+python3 tools/validate_vpack.py \
+  --vpack release/packs/<deck>.vpack \
   --private-key vocomi_pack_generation/ios_private.pem \
   --require-sqlite
 ```
@@ -166,9 +166,9 @@ python3 vocomipedia/tools/validate_vpack.py \
 Generate MediaWiki pages:
 
 ```bash
-python3 vocomipedia/tools/sync_mediawiki.py generate \
-  --deck-dir vocomipedia/data/languages/zh/zh_1 \
-  --out-dir vocomipedia/reports/mediawiki-pages \
+python3 tools/sync_mediawiki.py generate \
+  --deck-dir data/languages/zh/zh_1 \
+  --out-dir reports/mediawiki-pages \
   --approved-only
 ```
 
@@ -177,8 +177,8 @@ Push pages to MediaWiki with a bot password:
 ```bash
 MEDIAWIKI_USERNAME='BotUser@BotName' \
 MEDIAWIKI_PASSWORD='bot-password' \
-python3 vocomipedia/tools/sync_mediawiki.py push-api \
-  --deck-dir vocomipedia/data/languages/zh/zh_1 \
+python3 tools/sync_mediawiki.py push-api \
+  --deck-dir data/languages/zh/zh_1 \
   --api-url 'https://vocomipedia.com/w/api.php' \
   --approved-only
 ```
@@ -192,7 +192,7 @@ low-res JPEG `File:` and renders it as the entry image on the item page. Use
 To refresh only those pages, run:
 
 ```bash
-python3 vocomipedia/tools/sync_mediawiki.py seed-structure \
+python3 tools/sync_mediawiki.py seed-structure \
   --api-url 'https://vocomipedia.com/w/api.php' \
   --username 'AdminUser' \
   --password 'admin-password'
@@ -204,19 +204,19 @@ the AbuseFilter warning message in `MediaWiki:`.
 Pull canonical JSON blocks back from MediaWiki pages:
 
 ```bash
-python3 vocomipedia/tools/sync_mediawiki.py pull-api \
+python3 tools/sync_mediawiki.py pull-api \
   --api-url 'https://vocomipedia.com/w/api.php' \
   --prefix 'Item:zh_1/' \
-  --out-dir vocomipedia/tmp/wiki-pull/zh_1
+  --out-dir tmp/wiki-pull/zh_1
 ```
 
 Apply pulled JSON into a canonical deck. This creates a backup before writing:
 
 ```bash
-python3 vocomipedia/tools/apply_pulled_items.py \
-  --deck-dir vocomipedia/data/languages/zh/zh_1 \
-  --pulled-dir vocomipedia/tmp/wiki-pull/zh_1 \
-  --diff-report vocomipedia/reports/wiki-apply-zh_1.diff
+python3 tools/apply_pulled_items.py \
+  --deck-dir data/languages/zh/zh_1 \
+  --pulled-dir tmp/wiki-pull/zh_1 \
+  --diff-report reports/wiki-apply-zh_1.diff
 ```
 
 Pulled pages record the visible MediaWiki revision under `review.wiki`.
@@ -259,9 +259,10 @@ pages. Real custom namespaces are configured for `Item:`, `Deck:`, and
 
 ## CI
 
-`.github/workflows/vocomipedia.yml` runs backup-aware validation for this
-pipeline. The workflow creates a tar backup before validation and uploads it as
-an artifact.
+`.github/workflows/ci.yml` runs backup-aware validation for this pipeline.
+`Wiki Sync Back` opens source PRs from approved MediaWiki edits, and
+`Release And Deploy` handles protected pack builds, uploads, MediaWiki push,
+and search-index artifacts.
 
 Local MediaWiki setup is documented in `docs/local-mediawiki.md`.
 GitHub Actions setup and required secrets are documented in

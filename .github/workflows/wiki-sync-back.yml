@@ -1,0 +1,125 @@
+name: Wiki Sync Back
+
+on:
+  workflow_dispatch:
+    inputs:
+      deck_codes:
+        description: "Space-separated deck codes to pull, e.g. ja_n5 de_a2"
+        required: true
+        default: "ja_n5"
+      source_ref:
+        description: "Vocomi branch/ref to update"
+        required: false
+        default: "main"
+      export_source:
+        description: "Export accepted changes back into vocomi_pack_generation source JSON"
+        type: boolean
+        required: false
+        default: true
+      create_pr:
+        description: "Create a PR in dimitristaufer/Vocomi when source JSON changes"
+        type: boolean
+        required: false
+        default: true
+      apply_all_sentence_proposals:
+        description: "Apply every active sentence proposal before export"
+        type: boolean
+        required: false
+        default: false
+      proposal_ids:
+        description: "Optional comma/space-separated proposal ids to apply"
+        required: false
+        default: ""
+
+jobs:
+  sync-back:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout Vocomipedia
+        uses: actions/checkout@v4
+        with:
+          path: vocomipedia
+      - name: Checkout Vocomi source repo
+        uses: actions/checkout@v4
+        with:
+          repository: dimitristaufer/Vocomi
+          ref: ${{ inputs.source_ref }}
+          token: ${{ secrets.VOCOMI_REPO_TOKEN }}
+          path: vocomi
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+          cache-dependency-path: vocomipedia/requirements.txt
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r vocomipedia/requirements.txt
+      - name: Pull approved wiki edits and export source changes
+        env:
+          MEDIAWIKI_API_URL: ${{ secrets.MEDIAWIKI_API_URL }}
+          PROPOSAL_IDS: ${{ inputs.proposal_ids }}
+        run: |
+          test -n "$MEDIAWIKI_API_URL"
+          EXPORT_ARG=""
+          if [ "${{ inputs.export_source }}" = "true" ]; then
+            EXPORT_ARG="--export-source"
+          fi
+          APPLY_ALL_ARG=""
+          if [ "${{ inputs.apply_all_sentence_proposals }}" = "true" ]; then
+            APPLY_ALL_ARG="--apply-all-proposals --mark-approved-proposals"
+          fi
+          PROPOSAL_ARGS=""
+          for proposal_id in ${PROPOSAL_IDS//,/ }; do
+            PROPOSAL_ARGS="$PROPOSAL_ARGS --proposal-id $proposal_id --mark-approved-proposals"
+          done
+          cd vocomipedia
+          python tools/wiki_sync_back.py \
+            --decks ${{ inputs.deck_codes }} \
+            --api-url "$MEDIAWIKI_API_URL" \
+            --pack-generation-dir ../vocomi/vocomi_pack_generation \
+            --work-root tmp/wiki-sync-back-data \
+            --pulled-root tmp/wiki-pull \
+            --reports-dir reports/wiki-sync-back \
+            $EXPORT_ARG \
+            $APPLY_ALL_ARG \
+            $PROPOSAL_ARGS
+      - name: Upload sync reports
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: vocomipedia-wiki-sync-back
+          path: |
+            vocomipedia/reports/wiki-sync-back/**
+          if-no-files-found: ignore
+      - name: Detect Vocomi source changes
+        id: diff
+        run: |
+          cd vocomi
+          if git diff --quiet -- vocomi_pack_generation; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Create Vocomi PR
+        if: inputs.create_pr && steps.diff.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.VOCOMI_REPO_TOKEN }}
+        run: |
+          test -n "$GH_TOKEN"
+          BRANCH="vocomipedia/wiki-sync-${{ github.run_id }}"
+          cd vocomi
+          git config user.name "vocomipedia-bot"
+          git config user.email "vocomipedia-bot@users.noreply.github.com"
+          git checkout -b "$BRANCH"
+          git add vocomi_pack_generation
+          git commit -m "Sync approved Vocomipedia edits"
+          git push origin "$BRANCH"
+          gh pr create \
+            --repo dimitristaufer/Vocomi \
+            --base "${{ inputs.source_ref }}" \
+            --head "$BRANCH" \
+            --title "Sync approved Vocomipedia edits" \
+            --body-file ../vocomipedia/reports/wiki-sync-back/summary.md

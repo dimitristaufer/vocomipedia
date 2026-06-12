@@ -62,8 +62,8 @@ after dependencies are installed:
 
 ```bash
 python3 -m pip install sudachipy sudachidict_core
-python3 vocomipedia/tools/revise_japanese_furigana.py \
-  --root vocomipedia/data/languages/ja/ja_n5 \
+python3 tools/revise_japanese_furigana.py \
+  --root data/languages/ja/ja_n5 \
   --sudachi-dict core \
   --sudachi-mode C
 ```
@@ -75,7 +75,7 @@ The tool creates a backup before writing and updates both canonical
 For future imports, run the backup-aware sync with:
 
 ```bash
-python3 vocomipedia/tools/sync_all_packs.py \
+python3 tools/sync_all_packs.py \
   --decks ja_n5 ja_n4 \
   --copy-media \
   --mark-approved \

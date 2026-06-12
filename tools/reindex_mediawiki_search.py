@@ -150,27 +150,37 @@ def insert_statement(rows: list[tuple[str, str, str, str, str, str, str]]) -> st
     )
 
 
-def build_sql(root: Path, chunk_size: int) -> tuple[str, int]:
-    statements = [
-        "DROP TABLE IF EXISTS vocomipedia_search_item;",
-        "CREATE TABLE vocomipedia_search_item ("
-        "vsi_page_id INT UNSIGNED NOT NULL DEFAULT 0,"
-        "vsi_page_title VARBINARY(255) NOT NULL,"
-        "vsi_headword_norm VARBINARY(255) NOT NULL,"
-        "vsi_reading_norm VARBINARY(255) NOT NULL,"
-        "vsi_entry_norm VARBINARY(255) NOT NULL,"
-        "vsi_label_norm VARBINARY(255) NOT NULL,"
-        "vsi_item_json MEDIUMTEXT NOT NULL,"
-        "vsi_search_text MEDIUMTEXT NOT NULL,"
-        "PRIMARY KEY (vsi_page_title),"
-        "KEY vsi_page_id (vsi_page_id),"
-        "KEY vsi_headword_norm (vsi_headword_norm),"
-        "KEY vsi_reading_norm (vsi_reading_norm),"
-        "KEY vsi_entry_norm (vsi_entry_norm),"
-        "KEY vsi_label_norm (vsi_label_norm),"
-        "FULLTEXT KEY vsi_search_text_fulltext (vsi_search_text)"
-        ") ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;",
-    ]
+def build_sql(root: Path, chunk_size: int, *, drop_existing: bool = True) -> tuple[str, int]:
+    statements = []
+    if drop_existing:
+        statements.append("DROP TABLE IF EXISTS vocomipedia_search_item;")
+    create_prefix = (
+        "CREATE TABLE vocomipedia_search_item"
+        if drop_existing
+        else "CREATE TABLE IF NOT EXISTS vocomipedia_search_item"
+    )
+    statements.extend(
+        [
+            create_prefix
+            + " ("
+            "vsi_page_id INT UNSIGNED NOT NULL DEFAULT 0,"
+            "vsi_page_title VARBINARY(255) NOT NULL,"
+            "vsi_headword_norm VARBINARY(255) NOT NULL,"
+            "vsi_reading_norm VARBINARY(255) NOT NULL,"
+            "vsi_entry_norm VARBINARY(255) NOT NULL,"
+            "vsi_label_norm VARBINARY(255) NOT NULL,"
+            "vsi_item_json MEDIUMTEXT NOT NULL,"
+            "vsi_search_text MEDIUMTEXT NOT NULL,"
+            "PRIMARY KEY (vsi_page_title),"
+            "KEY vsi_page_id (vsi_page_id),"
+            "KEY vsi_headword_norm (vsi_headword_norm),"
+            "KEY vsi_reading_norm (vsi_reading_norm),"
+            "KEY vsi_entry_norm (vsi_entry_norm),"
+            "KEY vsi_label_norm (vsi_label_norm),"
+            "FULLTEXT KEY vsi_search_text_fulltext (vsi_search_text)"
+            ") ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;",
+        ]
+    )
     chunk: list[tuple[str, str, str, str, str, str, str]] = []
     count = 0
     for pack_code, item in iter_items(root):
@@ -203,10 +213,11 @@ def main() -> int:
     ap.add_argument("--env-file", default=DEFAULT_ENV_PATH, type=Path)
     ap.add_argument("--compose-file", default=DEFAULT_COMPOSE, type=Path)
     ap.add_argument("--chunk-size", default=200, type=int)
+    ap.add_argument("--no-drop", action="store_true", help="Upsert selected rows without dropping the existing projection table.")
     ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args()
 
-    sql, count = build_sql(args.root, args.chunk_size)
+    sql, count = build_sql(args.root, args.chunk_size, drop_existing=not args.no_drop)
     if args.dry_run:
         sys.stdout.write(sql)
         print(f"-- indexed {count} item(s)", file=sys.stderr)

@@ -1,90 +1,96 @@
-name: Vocomipedia
+name: Release And Deploy
 
 on:
-  push:
-    paths:
-      - "**"
-      - ".github/workflows/vocomipedia.yml"
-  pull_request:
-    paths:
-      - "**"
-      - ".github/workflows/vocomipedia.yml"
   workflow_dispatch:
     inputs:
       deck_codes:
-        description: "Space-separated deck codes for manual sync/release, e.g. zh_1 ja_n5"
-        required: false
+        description: "Space-separated deck codes, e.g. zh_1 ja_n5 ja_n4"
+        required: true
         default: "zh_1"
-      sync_limit:
-        description: "Limit entries per deck. Use 0 for full deck."
+      source_ref:
+        description: "Vocomi branch/ref to release from"
         required: false
-        default: "2"
-      release:
-        description: "Build .vpack artifacts for selected decks"
+        default: "main"
+      sync_limit:
+        description: "Limit entries per deck. Use 0 for full production decks."
+        required: false
+        default: "0"
+      revise_japanese_furigana:
+        description: "Revise Japanese ruby with SudachiPy/SudachiDict before release"
         type: boolean
         required: false
         default: false
+      build_vpack:
+        description: "Build .vpack artifacts"
+        type: boolean
+        required: false
+        default: true
       upload:
-        description: "Upload release artifacts to Azure Blob Storage"
+        description: "Upload .vpack artifacts to Azure Blob Storage"
         type: boolean
         required: false
         default: false
       mediawiki_push:
-        description: "Push generated item pages to MediaWiki API"
+        description: "Push generated approved item pages to MediaWiki"
         type: boolean
         required: false
         default: false
-      revise_japanese_furigana:
-        description: "Revise Japanese ruby with SudachiPy/SudachiDict"
+      generate_search_sql:
+        description: "Generate an upsert SQL artifact for VocomipediaSearch"
+        type: boolean
+        required: false
+        default: true
+      run_remote_reindex:
+        description: "Run MEDIAWIKI_REINDEX_COMMAND over SSH after push"
         type: boolean
         required: false
         default: false
 
 jobs:
-  validate:
-    runs-on: macos-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          python -m pip install pillow pyyaml cryptography azure-storage-blob sudachipy sudachidict_core
-      - name: Backup-aware validation
-        run: python tools/ci_validate.py --skip-smoke-release
-      - name: Upload CI backup
-        uses: actions/upload-artifact@v4
-        if: always()
-        with:
-          name: vocomipedia-ci-backups
-          path: reports/backups/*.tar.gz
-          if-no-files-found: ignore
-
-  manual-sync-release:
-    if: github.event_name == 'workflow_dispatch' && (inputs.release || inputs.upload || inputs.mediawiki_push || inputs.revise_japanese_furigana)
-    runs-on: macos-latest
-    needs: validate
+  release:
+    runs-on: ubuntu-latest
+    environment: production
     permissions:
       contents: read
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout Vocomipedia
+        uses: actions/checkout@v4
         with:
           path: vocomipedia
-      - uses: actions/checkout@v4
+      - name: Checkout Vocomi source repo
+        uses: actions/checkout@v4
         with:
           repository: dimitristaufer/Vocomi
-          token: ${{ secrets.VOCOMI_REPO_TOKEN || github.token }}
+          ref: ${{ inputs.source_ref }}
+          token: ${{ secrets.VOCOMI_REPO_TOKEN }}
           path: vocomi
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+          cache: "pip"
+          cache-dependency-path: vocomipedia/requirements.txt
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          python -m pip install pillow pyyaml cryptography azure-storage-blob sudachipy sudachidict_core
-      - name: Sync selected decks into Vocomipedia workspace
+          python -m pip install -r vocomipedia/requirements.txt
+      - name: Prepare private key
+        id: private-key
+        env:
+          VOCOMI_IOS_PRIVATE_PEM: ${{ secrets.VOCOMI_IOS_PRIVATE_PEM }}
+        run: |
+          KEY_PATH="../vocomi/vocomi_pack_generation/ios_private.pem"
+          if [ -n "$VOCOMI_IOS_PRIVATE_PEM" ]; then
+            KEY_PATH="$RUNNER_TEMP/ios_private.pem"
+            printf '%s\n' "$VOCOMI_IOS_PRIVATE_PEM" > "$KEY_PATH"
+            chmod 600 "$KEY_PATH"
+          fi
+          echo "path=$KEY_PATH" >> "$GITHUB_OUTPUT"
+      - name: Resolve deck closure
+        run: |
+          cd vocomipedia
+          SYNC_DECK_CODES="$(python tools/catalog_decks.py --decks ${{ inputs.deck_codes }} --with-combined-siblings)"
+          echo "SYNC_DECK_CODES=$SYNC_DECK_CODES" >> "$GITHUB_ENV"
+      - name: Sync selected decks into canonical workspace
         run: |
           LIMIT_ARG=""
           if [ "${{ inputs.sync_limit }}" != "0" ]; then
@@ -96,7 +102,7 @@ jobs:
           fi
           cd vocomipedia
           python tools/sync_all_packs.py \
-            --decks ${{ inputs.deck_codes }} \
+            --decks $SYNC_DECK_CODES \
             $LIMIT_ARG \
             $SUDACHI_ARG \
             --copy-media \
@@ -106,8 +112,8 @@ jobs:
             --pack-generation-dir ../vocomi/vocomi_pack_generation \
             --out-root tmp/actions-data \
             --backup-dir reports/backups
-      - name: Build selected release artifacts
-        if: inputs.release || inputs.upload
+      - name: Build and optionally upload release artifacts
+        if: inputs.build_vpack || inputs.upload
         env:
           AZURE_STORAGE_ACCOUNT: ${{ secrets.AZURE_STORAGE_ACCOUNT }}
           AZURE_STORAGE_KEY: ${{ secrets.AZURE_STORAGE_KEY }}
@@ -115,6 +121,8 @@ jobs:
         run: |
           UPLOAD_ARG=""
           if [ "${{ inputs.upload }}" = "true" ]; then
+            test -n "$AZURE_STORAGE_ACCOUNT"
+            test -n "$AZURE_STORAGE_KEY"
             UPLOAD_ARG="--upload"
           fi
           cd vocomipedia
@@ -132,17 +140,16 @@ jobs:
               --deck-dir "$deck_dir" \
               --pack-generation-dir ../vocomi/vocomi_pack_generation \
               --outdir release \
-              --validate-private-key ../vocomi/vocomi_pack_generation/ios_private.pem \
+              --validate-private-key "${{ steps.private-key.outputs.path }}" \
               $UPLOAD_ARG
           done
           python tools/release_combined_pack.py \
             --changed-decks ${{ inputs.deck_codes }} \
             --root tmp/actions-data \
-            --root data/languages \
             --catalog catalog/packs.yaml \
             --pack-generation-dir ../vocomi/vocomi_pack_generation \
             --outdir release \
-            --validate-private-key ../vocomi/vocomi_pack_generation/ios_private.pem \
+            --validate-private-key "${{ steps.private-key.outputs.path }}" \
             $UPLOAD_ARG
       - name: Push selected decks to MediaWiki
         if: inputs.mediawiki_push
@@ -170,12 +177,39 @@ jobs:
               --api-url "$MEDIAWIKI_API_URL" \
               --approved-only
           done
-      - name: Upload release artifacts and backups
+      - name: Generate search projection SQL
+        if: inputs.generate_search_sql
+        run: |
+          cd vocomipedia
+          mkdir -p reports/search
+          python tools/reindex_mediawiki_search.py \
+            --root tmp/actions-data \
+            --no-drop \
+            --dry-run > reports/search/vocomipedia-search-upsert.sql
+      - name: Run remote search reindex command
+        if: inputs.run_remote_reindex
+        env:
+          MEDIAWIKI_SSH_HOST: ${{ secrets.MEDIAWIKI_SSH_HOST }}
+          MEDIAWIKI_SSH_USER: ${{ secrets.MEDIAWIKI_SSH_USER }}
+          MEDIAWIKI_SSH_PRIVATE_KEY: ${{ secrets.MEDIAWIKI_SSH_PRIVATE_KEY }}
+          MEDIAWIKI_REINDEX_COMMAND: ${{ secrets.MEDIAWIKI_REINDEX_COMMAND }}
+        run: |
+          test -n "$MEDIAWIKI_SSH_HOST"
+          test -n "$MEDIAWIKI_SSH_USER"
+          test -n "$MEDIAWIKI_SSH_PRIVATE_KEY"
+          test -n "$MEDIAWIKI_REINDEX_COMMAND"
+          install -m 700 -d ~/.ssh
+          printf '%s\n' "$MEDIAWIKI_SSH_PRIVATE_KEY" > ~/.ssh/vocomipedia_deploy
+          chmod 600 ~/.ssh/vocomipedia_deploy
+          ssh-keyscan -H "$MEDIAWIKI_SSH_HOST" >> ~/.ssh/known_hosts
+          ssh -i ~/.ssh/vocomipedia_deploy "$MEDIAWIKI_SSH_USER@$MEDIAWIKI_SSH_HOST" "$MEDIAWIKI_REINDEX_COMMAND"
+      - name: Upload release artifacts and reports
         uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: vocomipedia-manual-run
+          name: vocomipedia-release
           path: |
             vocomipedia/release/**
             vocomipedia/reports/backups/*.tar.gz
+            vocomipedia/reports/search/**
           if-no-files-found: ignore

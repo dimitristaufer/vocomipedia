@@ -43,6 +43,16 @@ def source_path(root: Path, raw: str) -> Path:
     return p if p.is_absolute() else root / p
 
 
+def source_asset_path(root: Path, pack_generation_dir: Path, raw: str) -> Path:
+    p = Path(raw)
+    if p.is_absolute():
+        return p
+    parts = p.parts
+    if parts and parts[0] == "vocomi_pack_generation":
+        return pack_generation_dir.joinpath(*parts[1:])
+    return root / p
+
+
 def affected_combined_data_codes(catalog: Dict[str, dict], codes: Iterable[str]) -> List[str]:
     groups: Dict[str, list[str]] = {}
     for code, cfg in catalog.items():
@@ -114,14 +124,14 @@ def main() -> int:
         cmd = [
             sys.executable,
             str(TOOLS / "import_legacy_pack.py"),
-            "--deck-code",
-            code,
-            "--input-json",
-            str(source_path(root, src_json)),
-            "--asset-dir",
-            str(source_path(root, src_asset)),
-            "--out-root",
-            str(out_root),
+                "--deck-code",
+                code,
+                "--input-json",
+                str(source_asset_path(root, pack_generation_dir, src_json)),
+                "--asset-dir",
+                str(source_asset_path(root, pack_generation_dir, src_asset)),
+                "--out-root",
+                str(out_root),
             "--catalog",
             str(catalog_path),
         ]

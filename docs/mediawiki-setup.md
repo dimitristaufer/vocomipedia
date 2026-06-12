@@ -91,11 +91,11 @@ sentence, writes generated tokens/readings, updates translations, and syncs
 `review.sentence_proposals[]` with status `applied`.
 
 ```bash
-python3 vocomipedia/tools/apply_sentence_proposals.py \
-  --deck-dir vocomipedia/data/languages/ja/ja_n5 \
+python3 tools/apply_sentence_proposals.py \
+  --deck-dir data/languages/ja/ja_n5 \
   --proposal-id sentprop-... \
   --apply \
-  --diff-report vocomipedia/reports/sentence-proposal.diff
+  --diff-report reports/sentence-proposal.diff
 ```
 
 `sync_mediawiki.py push-api` seeds the templates, form, category, and filter

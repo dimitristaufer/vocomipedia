@@ -19,6 +19,7 @@ ROOT = Path(__file__).resolve().parents[1]
 TOOLS = ROOT / "tools"
 FIXTURES = ROOT / "tests" / "fixtures"
 PACK_GENERATION_DIR = ROOT.parent / "vocomi_pack_generation"
+PACK_GENERATION_AVAILABLE = (PACK_GENERATION_DIR / "ios_package_assets.py").exists()
 
 if str(TOOLS) not in sys.path:
     sys.path.insert(0, str(TOOLS))
@@ -93,6 +94,58 @@ class VocomipediaPipelineTests(unittest.TestCase):
             self.assertEqual(rebuilt["de"], original["de"])
             self.assertEqual(rebuilt["word_en"], original["word_en"])
 
+    def test_sync_all_resolves_external_pack_generation_sources(self) -> None:
+        with tempfile.TemporaryDirectory() as td:
+            tmp = Path(td)
+            pack_generation = tmp / "vocomi_pack_generation"
+            assets = pack_generation / "language_packs" / "japanese_N5"
+            assets.mkdir(parents=True)
+            source_json = assets / "japanese_N5_structure.json"
+            shutil.copy2(FIXTURES / "sample_legacy.json", source_json)
+            Image.new("RGBA", (256, 256), (255, 255, 255, 255)).save(assets / "comic_愛__あい__sample_blank.png")
+            catalog = tmp / "packs.yaml"
+            catalog.write_text(
+                """schema_version: vocomipedia-pack-catalog-1
+packs:
+  ja_n5:
+    title: Japanese N5
+    language: ja
+    lang_prefix: ja
+    lang_level: n5
+    level: N5
+    source_kind: single
+    target_sentence_key: jp
+    reading_sentence_key: fu
+    data_pack_code: ja_n5-n4
+    review_policy: approved-only
+    license_policy: test
+    source_json: vocomi_pack_generation/language_packs/japanese_N5/japanese_N5_structure.json
+    source_asset_dir: vocomi_pack_generation/language_packs/japanese_N5
+""",
+                encoding="utf-8",
+            )
+            out_root = tmp / "data"
+            run(
+                [
+                    sys.executable,
+                    str(TOOLS / "sync_all_packs.py"),
+                    "--catalog",
+                    str(catalog),
+                    "--pack-generation-dir",
+                    str(pack_generation),
+                    "--out-root",
+                    str(out_root),
+                    "--backup-dir",
+                    str(tmp / "backups"),
+                    "--decks",
+                    "ja_n5",
+                    "--mark-approved",
+                    "--validate",
+                ]
+            )
+            self.assertTrue((out_root / "ja" / "ja_n5" / "pack.json").exists())
+
+    @unittest.skipUnless(PACK_GENERATION_AVAILABLE, "vocomi_pack_generation checkout is required")
     def test_release_skip_vpack_builds_sqlite_assets(self) -> None:
         with tempfile.TemporaryDirectory() as td:
             tmp = Path(td)
@@ -142,6 +195,7 @@ class VocomipediaPipelineTests(unittest.TestCase):
                 conn.close()
             self.assertEqual(count, 1)
 
+    @unittest.skipUnless(PACK_GENERATION_AVAILABLE, "vocomi_pack_generation checkout is required")
     def test_combined_release_rebuilds_data_assets_from_component_decks(self) -> None:
         with tempfile.TemporaryDirectory() as td:
             tmp = Path(td)
@@ -501,6 +555,7 @@ class VocomipediaPipelineTests(unittest.TestCase):
         self.assertIn("translation_[^", sync_mediawiki.render_common_js_page())
         self.assertNotIn("VocomipediaToken", sync_mediawiki.render_common_js_page())
 
+    @unittest.skipUnless(PACK_GENERATION_AVAILABLE, "vocomi_pack_generation checkout is required")
     def test_sentence_proposal_apply_generates_tokens_and_updates_payload(self) -> None:
         with tempfile.TemporaryDirectory() as td:
             tmp = Path(td)

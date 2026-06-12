@@ -32,14 +32,19 @@ def main() -> int:
     root = repo_root_from_tool()
     pack_generation_dir = args.pack_generation_dir if args.pack_generation_dir.is_absolute() else (root / args.pack_generation_dir).resolve()
     backup = create_backup(
-        paths=[root / "data", root / "catalog"],
+        paths=[root / "catalog", root / "schema"],
         backup_dir=(root / args.backup_dir).resolve() if not args.backup_dir.is_absolute() else args.backup_dir,
         label="ci",
         base_dir=root,
     )
     print(f"CI backup created: {backup}")
 
-    run([sys.executable, "-m", "py_compile", *[str(p) for p in sorted((root / "tools").glob("*.py"))]], cwd=root)
+    tool_sources = [str(p) for p in sorted((root / "tools").rglob("*.py"))]
+    run([sys.executable, "-m", "py_compile", *tool_sources], cwd=root)
+    for workflow in sorted((root / ".github" / "workflows").glob("*.yml")):
+        import yaml
+
+        yaml.safe_load(workflow.read_text(encoding="utf-8"))
     run([sys.executable, "-m", "unittest", "tests.test_pipeline", "-v"], cwd=root)
 
     if args.skip_smoke_release:
