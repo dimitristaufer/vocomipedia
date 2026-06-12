@@ -23,6 +23,9 @@ Important server paths:
 /etc/nginx/conf.d                public Nginx config
 ```
 
+Versioned Nginx templates live in `infra/nginx/`. After changing those, copy
+them into `/etc/nginx/conf.d/`, run `nginx -t`, then reload Nginx.
+
 Useful checks:
 
 ```bash
