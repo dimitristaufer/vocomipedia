@@ -8,7 +8,8 @@ back, and builds signed `.vpack` releases for the app.
 
 ## Layout
 
-- `data/languages/` canonical Vocomipedia deck data.
+- `data/languages/` canonical Vocomipedia deck JSON. Media folders are kept
+  out of Git and hydrated from the VPS for release jobs.
 - `catalog/packs.yaml` deck metadata and combined-pack rules.
 - `tools/` import, validation, wiki sync, POS analysis, release, and deploy tools.
 - `docker/` local/production MediaWiki assets and the Vocomipedia search extension.

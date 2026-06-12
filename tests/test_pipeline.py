@@ -41,7 +41,10 @@ from vocomipedia_nlp import analyze_sentence
 
 
 def run(cmd: list[str], cwd: Path = ROOT) -> subprocess.CompletedProcess:
-    return subprocess.run(cmd, cwd=cwd, text=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, check=True)
+    result = subprocess.run(cmd, cwd=cwd, text=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+    if result.returncode != 0:
+        raise AssertionError(f"command failed with exit {result.returncode}: {' '.join(cmd)}\n{result.stdout}")
+    return result
 
 
 def write_test_keypair(tmp: Path) -> tuple[Path, Path]:

@@ -114,7 +114,40 @@ jobs:
               --sudachi-mode C \
               --backup-dir reports/backups
           fi
-          python tools/validate_corpus.py --root tmp/actions-data --strict-media --release-ready
+      - name: Hydrate release media from VPS
+        if: inputs.build_vpack || inputs.mediawiki_push
+        env:
+          VPS_PACK_HOST: ${{ secrets.VPS_PACK_HOST }}
+          VPS_PACK_PORT: ${{ secrets.VPS_PACK_PORT }}
+          VPS_PACK_USER: ${{ secrets.VPS_PACK_USER }}
+          VPS_PACK_SSH_KEY: ${{ secrets.VPS_PACK_SSH_KEY }}
+          VPS_CANONICAL_MEDIA_ROOT: ${{ secrets.VPS_CANONICAL_MEDIA_ROOT }}
+        run: |
+          test -n "$VPS_PACK_HOST"
+          test -n "$VPS_PACK_USER"
+          test -n "$VPS_PACK_SSH_KEY"
+          install -m 700 -d ~/.ssh
+          printf '%s\n' "$VPS_PACK_SSH_KEY" > ~/.ssh/vocomipedia_pack_deploy
+          chmod 600 ~/.ssh/vocomipedia_pack_deploy
+          PORT="${VPS_PACK_PORT:-22}"
+          REMOTE_ROOT="${VPS_CANONICAL_MEDIA_ROOT:-/srv/vocomipedia/data/languages}"
+          cd vocomipedia
+          python tools/sync_release_media_from_vps.py \
+            --decks $SYNC_DECK_CODES \
+            --root tmp/actions-data \
+            --host "$VPS_PACK_HOST" \
+            --port "$PORT" \
+            --user "$VPS_PACK_USER" \
+            --ssh-key ~/.ssh/vocomipedia_pack_deploy \
+            --remote-root "$REMOTE_ROOT"
+      - name: Validate release workspace
+        run: |
+          cd vocomipedia
+          MEDIA_ARG=""
+          if [ "${{ inputs.build_vpack }}" = "true" ] || [ "${{ inputs.mediawiki_push }}" = "true" ]; then
+            MEDIA_ARG="--strict-media"
+          fi
+          python tools/validate_corpus.py --root tmp/actions-data $MEDIA_ARG --release-ready
       - name: Build and optionally upload release artifacts
         if: inputs.build_vpack || inputs.upload
         env:

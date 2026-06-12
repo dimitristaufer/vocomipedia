@@ -45,7 +45,9 @@ manual validation so Certbot does not wait several minutes before starting.
 
 ## Adding Or Updating Decks
 
-1. Add or update the canonical deck under `data/languages`.
+1. Add or update the canonical deck JSON under `data/languages`. Commit
+   `pack.json` and `items/*.json`; keep `media/` folders on the VPS/local
+   release machine, not in Git.
 2. Add a `catalog/packs.yaml` entry for any new deck code, language, level, and
    combined data-pack code. Keep legacy source paths only when local imports are
    still needed.

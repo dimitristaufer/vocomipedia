@@ -111,10 +111,11 @@ generate_search_sql: true
 run_remote_reindex: true
 ```
 
-The release workflow copies selected canonical decks into a temporary workspace,
-adds sibling decks needed for combined data packs, validates release readiness,
-builds single and combined `.vpack` files with the bundled pack builder, and
-deploys to the VPS when enabled.
+The release workflow copies selected canonical JSON decks into a temporary
+workspace, hydrates `media/` folders from the VPS when packs or wiki pages need
+images, adds sibling decks needed for combined data packs, validates release
+readiness, builds single and combined `.vpack` files with the bundled pack
+builder, and deploys to the VPS when enabled.
 
 ## Search Index
 
