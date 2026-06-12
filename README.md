@@ -21,12 +21,6 @@ back, and builds signed `.vpack` releases for the app.
 python3 -m pip install -r requirements.txt
 ```
 
-The release and full sync workflows also need the sibling private Vocomi repo:
-
-```text
-../vocomi_pack_generation
-```
-
 Secrets live outside the repo. Local production handoff files are under
 `~/.vocomipedia/`.
 
@@ -46,7 +40,8 @@ python3 tools/validate_corpus.py --root data/languages --strict-media --release-
 
 ## Import Or Update Decks
 
-Sync selected generated Vocomi decks into canonical Vocomipedia data:
+Canonical decks live in `data/languages/`. For new or refreshed source decks,
+import from a local legacy pack-generation checkout:
 
 ```bash
 python3 tools/sync_all_packs.py \
@@ -104,8 +99,8 @@ python3 tools/apply_pulled_items.py \
   --diff-report reports/wiki-apply-ja_n5.diff
 ```
 
-Sentence edits create moderation proposals. Accepted proposals regenerate
-tokens/POS/readings offline:
+Sentence edits create moderation proposals. `Wiki Sync Back` auto-applies
+approved sentence proposals after regenerating tokens/POS/readings offline:
 
 ```bash
 python3 tools/apply_sentence_proposals.py \
@@ -123,9 +118,8 @@ Build a deck:
 ```bash
 python3 tools/release_pack.py \
   --deck-dir data/languages/ja/ja_n5 \
-  --pack-generation-dir ../vocomi_pack_generation \
   --outdir release \
-  --validate-private-key ../vocomi_pack_generation/ios_private.pem
+  --validate-private-key /path/to/ios_private.pem
 ```
 
 Build affected combined packs:
@@ -135,9 +129,8 @@ python3 tools/release_combined_pack.py \
   --changed-decks ja_n5 ja_n4 \
   --root data/languages \
   --catalog catalog/packs.yaml \
-  --pack-generation-dir ../vocomi_pack_generation \
   --outdir release \
-  --validate-private-key ../vocomi_pack_generation/ios_private.pem
+  --validate-private-key /path/to/ios_private.pem
 ```
 
 Deploy static pack artifacts to the VPS:
@@ -160,8 +153,9 @@ production deployment serves packs from `packs.vocomipedia.com`.
 ## GitHub Actions
 
 - `CI`: validates tools and tests.
-- `Wiki Sync Back`: imports approved MediaWiki edits and opens source PRs.
-- `Release And Deploy`: syncs decks, builds packs, deploys to VPS, pushes wiki
+- `Wiki Sync Back`: imports approved MediaWiki edits into canonical data and
+  opens Vocomipedia PRs.
+- `Release And Deploy`: builds packs from canonical data, deploys to VPS, pushes wiki
   pages, and reindexes search.
 
 Use the production workflow with:
@@ -187,7 +181,7 @@ Clean stale local `.vpack` artifacts with a dry run first:
 
 ```bash
 python3 tools/prune_pack_artifacts.py \
-  --packs-dir ../vocomi_pack_generation/packs \
+  --packs-dir release/packs \
   --keep 3
 ```
 

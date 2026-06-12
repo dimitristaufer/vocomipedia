@@ -18,9 +18,9 @@ def run(cmd: list[str], cwd: Path | None = None) -> None:
 
 
 def main() -> int:
-    ap = argparse.ArgumentParser(description="Build current Vocomi iOS assets and server deck from a Vocomipedia deck.")
+    ap = argparse.ArgumentParser(description="Build iOS assets and server deck artifacts from a Vocomipedia deck.")
     ap.add_argument("--deck-dir", "--pack-dir", dest="pack_dir", metavar="DECK_DIR", required=True, type=Path)
-    ap.add_argument("--pack-generation-dir", default=Path("vocomi_pack_generation"), type=Path)
+    ap.add_argument("--pack-generation-dir", default=Path("tools/pack_builder"), type=Path)
     ap.add_argument("--outdir", required=True, type=Path)
     ap.add_argument("--approved-only", action="store_true", default=True)
     ap.add_argument("--include-unapproved", action="store_true", help="Release every item, including draft/needs_review entries.")

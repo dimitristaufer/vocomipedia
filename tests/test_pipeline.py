@@ -13,12 +13,14 @@ import tempfile
 import unittest
 from pathlib import Path
 
+from cryptography.hazmat.primitives import serialization
+from cryptography.hazmat.primitives.asymmetric import rsa
 from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
 TOOLS = ROOT / "tools"
 FIXTURES = ROOT / "tests" / "fixtures"
-PACK_GENERATION_DIR = ROOT.parent / "vocomi_pack_generation"
+PACK_GENERATION_DIR = ROOT / "tools" / "pack_builder"
 PACK_GENERATION_AVAILABLE = (PACK_GENERATION_DIR / "ios_package_assets.py").exists()
 
 if str(TOOLS) not in sys.path:
@@ -40,6 +42,26 @@ from vocomipedia_nlp import analyze_sentence
 
 def run(cmd: list[str], cwd: Path = ROOT) -> subprocess.CompletedProcess:
     return subprocess.run(cmd, cwd=cwd, text=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, check=True)
+
+
+def write_test_keypair(tmp: Path) -> tuple[Path, Path]:
+    key = rsa.generate_private_key(public_exponent=65537, key_size=2048)
+    private_path = tmp / "ios_private.pem"
+    public_path = tmp / "ios_public.pem"
+    private_path.write_bytes(
+        key.private_bytes(
+            encoding=serialization.Encoding.PEM,
+            format=serialization.PrivateFormat.TraditionalOpenSSL,
+            encryption_algorithm=serialization.NoEncryption(),
+        )
+    )
+    public_path.write_bytes(
+        key.public_key().public_bytes(
+            encoding=serialization.Encoding.PEM,
+            format=serialization.PublicFormat.SubjectPublicKeyInfo,
+        )
+    )
+    return private_path, public_path
 
 
 class VocomipediaPipelineTests(unittest.TestCase):
@@ -145,7 +167,7 @@ packs:
             )
             self.assertTrue((out_root / "ja" / "ja_n5" / "pack.json").exists())
 
-    @unittest.skipUnless(PACK_GENERATION_AVAILABLE, "vocomi_pack_generation checkout is required")
+    @unittest.skipUnless(PACK_GENERATION_AVAILABLE, "bundled pack builder is required")
     def test_release_skip_vpack_builds_sqlite_assets(self) -> None:
         with tempfile.TemporaryDirectory() as td:
             tmp = Path(td)
@@ -195,7 +217,7 @@ packs:
                 conn.close()
             self.assertEqual(count, 1)
 
-    @unittest.skipUnless(PACK_GENERATION_AVAILABLE, "vocomi_pack_generation checkout is required")
+    @unittest.skipUnless(PACK_GENERATION_AVAILABLE, "bundled pack builder is required")
     def test_combined_release_rebuilds_data_assets_from_component_decks(self) -> None:
         with tempfile.TemporaryDirectory() as td:
             tmp = Path(td)
@@ -260,6 +282,7 @@ packs:
                 )
 
             release_out = tmp / "release"
+            private_key, public_key = write_test_keypair(tmp)
             run(
                 [
                     sys.executable,
@@ -272,8 +295,10 @@ packs:
                     str(PACK_GENERATION_DIR),
                     "--outdir",
                     str(release_out),
+                    "--app-pubkey",
+                    str(public_key),
                     "--validate-private-key",
-                    str(PACK_GENERATION_DIR / "ios_private.pem"),
+                    str(private_key),
                     "--chunk-mb",
                     "1",
                 ]
@@ -555,7 +580,7 @@ packs:
         self.assertIn("translation_[^", sync_mediawiki.render_common_js_page())
         self.assertNotIn("VocomipediaToken", sync_mediawiki.render_common_js_page())
 
-    @unittest.skipUnless(PACK_GENERATION_AVAILABLE, "vocomi_pack_generation checkout is required")
+    @unittest.skipUnless(PACK_GENERATION_AVAILABLE, "bundled pack builder is required")
     def test_sentence_proposal_apply_generates_tokens_and_updates_payload(self) -> None:
         with tempfile.TemporaryDirectory() as td:
             tmp = Path(td)
@@ -636,6 +661,7 @@ packs:
             self.assertEqual(applied["review"]["sentence_proposals"][0]["status"], "applied")
             self.assertEqual(applied["review"]["status"], "approved")
             release_out = tmp / "release"
+            private_key, public_key = write_test_keypair(tmp)
             run(
                 [
                     sys.executable,
@@ -648,8 +674,10 @@ packs:
                     str(release_out),
                     "--chunk-mb",
                     "1",
+                    "--app-pubkey",
+                    str(public_key),
                     "--validate-private-key",
-                    str(PACK_GENERATION_DIR / "ios_private.pem"),
+                    str(private_key),
                 ]
             )
             db_path = release_out / "staging" / "ja_n5" / "iOS_assets" / "ja_n5.db"
@@ -667,6 +695,111 @@ packs:
             self.assertTrue(list((release_out / "packs").glob("*.vpack")))
         self.assertIn("[name=\"wpSave\"], [name=\"wpPreview\"], [name=\"wpDiff\"]", sync_mediawiki.render_common_js_page())
         self.assertIn(".vocomipedia-sentence-heading[data-sentence]", sync_mediawiki.render_common_js_page())
+
+    def test_wiki_sync_back_auto_applies_sentence_proposals_without_ids(self) -> None:
+        with tempfile.TemporaryDirectory() as td:
+            tmp = Path(td)
+            canonical_root = tmp / "data"
+            pack_dir = canonical_root / "ja" / "ja_n5"
+            item_dir = pack_dir / "items"
+            item_dir.mkdir(parents=True)
+            item = {
+                "schema_version": "vocomipedia-item-2",
+                "id": "ja_n5:test",
+                "pack_code": "ja_n5",
+                "language": "ja",
+                "entry_id": "川",
+                "headword": "川",
+                "reading": "かわ",
+                "label": "",
+                "level": "N5",
+                "order": 0,
+                "part_of_speech": ["Noun"],
+                "glosses": {"en": "river"},
+                "sentences": [
+                    {
+                        "target": "川を見る。",
+                        "reading": "かわをみる。",
+                        "translations": {"en": "I see a river."},
+                        "tokens": [],
+                        "difficulty": 1,
+                    }
+                ],
+                "media": {"image_filename": "", "license": "Vocomi-created", "review_status": "approved"},
+                "review": {"status": "approved", "wiki": {"revision_id": 5}},
+                "provenance": {"origin": "test", "ai_generated": True, "license_status": "generated_by_vocomi"},
+                "app_payload": {"pos_analysis": [{"sentence": "川を見る。", "tokens": [], "difficulty_aggregated": 1}]},
+            }
+            (item_dir / "sample.json").write_text(json.dumps(item, ensure_ascii=False, indent=2), encoding="utf-8")
+            (pack_dir / "pack.json").write_text(
+                json.dumps(
+                    {
+                        "schema_version": "vocomipedia-pack-1",
+                        "pack_code": "ja_n5",
+                        "title": "Japanese N5",
+                        "language": "ja",
+                        "lang_prefix": "ja",
+                        "lang_level": "n5",
+                        "level": "N5",
+                        "target_sentence_key": "jp",
+                        "reading_sentence_key": "fu",
+                        "items": [{"id": "ja_n5:test", "entry_id": "川", "file": "items/sample.json", "order": 0}],
+                    },
+                    ensure_ascii=False,
+                    indent=2,
+                ),
+                encoding="utf-8",
+            )
+            catalog = tmp / "packs.yaml"
+            catalog.write_text(
+                """schema_version: vocomipedia-pack-catalog-1
+packs:
+  ja_n5:
+    title: Japanese N5
+    language: ja
+    lang_prefix: ja
+    lang_level: n5
+""",
+                encoding="utf-8",
+            )
+            page = sync_mediawiki.render_item_page(item)
+            pulled = sync_mediawiki.extract_item_json(
+                page.replace("|ruby_source=川を見る。", "|ruby_source=山[やま]を見る。")
+                .replace("|translation_en=I see a river.", "|translation_en=I see a mountain.")
+            )
+            pulled["review"]["wiki"]["revision_id"] = 6
+            pulled_dir = tmp / "pulled" / "ja_n5"
+            pulled_dir.mkdir(parents=True)
+            (pulled_dir / "sample.json").write_text(json.dumps(pulled, ensure_ascii=False, indent=2), encoding="utf-8")
+
+            run(
+                [
+                    sys.executable,
+                    str(TOOLS / "wiki_sync_back.py"),
+                    "--decks",
+                    "ja_n5",
+                    "--catalog",
+                    str(catalog),
+                    "--canonical-root",
+                    str(canonical_root),
+                    "--work-root",
+                    str(tmp / "work"),
+                    "--pulled-root",
+                    str(tmp / "pulled"),
+                    "--reports-dir",
+                    str(tmp / "reports"),
+                    "--skip-pull",
+                    "--export-source",
+                ]
+            )
+
+            applied = json.loads((item_dir / "sample.json").read_text(encoding="utf-8"))
+            self.assertEqual(applied["sentences"][0]["target"], "山を見る。")
+            self.assertEqual(applied["sentences"][0]["translations"]["en"], "I see a mountain.")
+            self.assertEqual(applied["sentences"][0]["tokens"][0]["ruby_text"], "山[やま]")
+            self.assertEqual(applied["app_payload"]["pos_analysis"][0]["sentence"], "山を見る。")
+            self.assertEqual(applied["review"]["sentence_proposals"][0]["status"], "applied")
+            self.assertEqual(applied["review"]["status"], "approved")
 
     def test_offline_sentence_analyzers_cover_supported_languages(self) -> None:
         cases = [

@@ -45,11 +45,11 @@ manual validation so Certbot does not wait several minutes before starting.
 
 ## Adding Or Updating Decks
 
-1. Add or update the source deck under `vocomi_pack_generation` in the private
-   Vocomi repo.
-2. Add a `catalog/packs.yaml` entry in Vocomipedia for any new deck code,
-   language, level, source JSON, asset directory, and combined data-pack code.
-3. Run a local import/validation smoke:
+1. Add or update the canonical deck under `data/languages`.
+2. Add a `catalog/packs.yaml` entry for any new deck code, language, level, and
+   combined data-pack code. Keep legacy source paths only when local imports are
+   still needed.
+3. If importing from a local legacy pack-generation checkout, run a smoke import:
 
    ```bash
    python3 tools/sync_all_packs.py \
@@ -64,7 +64,14 @@ manual validation so Certbot does not wait several minutes before starting.
      --backup-dir reports/backups
    ```
 
-4. For full release, run GitHub Actions `Release And Deploy` with:
+4. Validate the canonical deck:
+
+   ```bash
+   python3 tools/validate_corpus.py --root data/languages --strict-media --release-ready
+   python3 tools/audit_pos_pipeline.py --root data/languages
+   ```
+
+5. For full release, run GitHub Actions `Release And Deploy` with:
 
    ```text
    deck_codes: <deck_code or changed deck group>
@@ -96,9 +103,10 @@ auxiliaries more finely than the legacy deck tokens.
 
 ## Syncing Wiki Edits Back
 
-Run GitHub Actions `Wiki Sync Back` for the affected deck. Use explicit
-`proposal_ids` for reviewed sentence proposals. Merge the generated Vocomi PR
-before running a production release.
+Run GitHub Actions `Wiki Sync Back` for the affected deck. It pulls approved
+wiki edits, auto-applies approved sentence proposals with generated token/POS
+data, and opens a Vocomipedia PR against `data/languages`. Merge that PR before
+running a production release.
 
 ## Pack Retention
 
@@ -112,7 +120,7 @@ Local stale pack cleanup:
 
 ```bash
 python3 tools/prune_pack_artifacts.py \
-  --packs-dir ../vocomi_pack_generation/packs \
+  --packs-dir release/packs \
   --keep 3
 ```
 
@@ -121,7 +129,8 @@ Review the dry run, then add `--apply`.
 ## Security Review Checklist
 
 - GitHub `production` environment requires approval.
-- `VOCOMI_REPO_TOKEN` is fine-grained and scoped to the minimum required repos.
+- GitHub tokens are repo-scoped and no private app repo checkout is required for
+  normal sync/release workflows.
 - VPS SSH keys used in GitHub are deploy-only where possible; avoid root keys in
   Actions.
 - MediaWiki admin accounts use strong passwords and 2FA.

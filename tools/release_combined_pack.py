@@ -228,7 +228,7 @@ def main() -> int:
     ap.add_argument("--changed-decks", nargs="+", help="Deck codes that changed; builds any affected combined data packs.")
     ap.add_argument("--root", action="append", type=Path, help="Canonical root to search. Earlier roots override later roots.")
     ap.add_argument("--catalog", default=Path("catalog/packs.yaml"), type=Path)
-    ap.add_argument("--pack-generation-dir", default=Path("vocomi_pack_generation"), type=Path)
+    ap.add_argument("--pack-generation-dir", default=Path("tools/pack_builder"), type=Path)
     ap.add_argument("--outdir", required=True, type=Path)
     ap.add_argument("--approved-only", action="store_true", default=True)
     ap.add_argument("--include-unapproved", action="store_true")

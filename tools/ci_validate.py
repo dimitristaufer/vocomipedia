@@ -11,6 +11,8 @@ import sys
 import tempfile
 from pathlib import Path
 
+from cryptography.hazmat.primitives import serialization
+from cryptography.hazmat.primitives.asymmetric import rsa
 from PIL import Image
 
 from backup import create_backup
@@ -22,10 +24,30 @@ def run(cmd: list[str], cwd: Path) -> None:
     subprocess.run(cmd, cwd=str(cwd), check=True)
 
 
+def write_test_keypair(tmp: Path) -> tuple[Path, Path]:
+    key = rsa.generate_private_key(public_exponent=65537, key_size=2048)
+    private_path = tmp / "ios_private.pem"
+    public_path = tmp / "ios_public.pem"
+    private_path.write_bytes(
+        key.private_bytes(
+            encoding=serialization.Encoding.PEM,
+            format=serialization.PrivateFormat.TraditionalOpenSSL,
+            encryption_algorithm=serialization.NoEncryption(),
+        )
+    )
+    public_path.write_bytes(
+        key.public_key().public_bytes(
+            encoding=serialization.Encoding.PEM,
+            format=serialization.PublicFormat.SubjectPublicKeyInfo,
+        )
+    )
+    return private_path, public_path
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description="Backup-aware CI validation for Vocomipedia.")
     ap.add_argument("--backup-dir", default=Path("reports/backups"), type=Path)
-    ap.add_argument("--pack-generation-dir", default=Path("../vocomi_pack_generation"), type=Path)
+    ap.add_argument("--pack-generation-dir", default=Path("tools/pack_builder"), type=Path)
     ap.add_argument("--skip-smoke-release", action="store_true")
     args = ap.parse_args()
 
@@ -60,6 +82,7 @@ def main() -> int:
         Image.new("RGBA", (512, 512), (235, 240, 245, 255)).save(assets / "comic_愛__あい__sample_blank.png")
         data_root = tmp / "data"
         release_out = tmp / "release"
+        private_key, public_key = write_test_keypair(tmp)
         run(
             [
                 sys.executable,
@@ -89,8 +112,10 @@ def main() -> int:
                 str(pack_generation_dir),
                 "--outdir",
                 str(release_out),
+                "--app-pubkey",
+                str(public_key),
                 "--validate-private-key",
-                str(pack_generation_dir / "ios_private.pem"),
+                str(private_key),
                 "--chunk-mb",
                 "1",
             ],

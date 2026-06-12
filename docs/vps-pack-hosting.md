@@ -54,12 +54,12 @@ python3 tools/deploy_packs_to_vps.py \
 
 ## Local Artifact Cleanup
 
-Local pack builds can accumulate quickly under `vocomi_pack_generation/packs`.
-Use the dry run first:
+Local pack builds can accumulate quickly under `release/packs`. Use the dry run
+first:
 
 ```bash
 python3 tools/prune_pack_artifacts.py \
-  --packs-dir ../vocomi_pack_generation/packs \
+  --packs-dir release/packs \
   --keep 3
 ```
 
@@ -67,7 +67,7 @@ Then apply:
 
 ```bash
 python3 tools/prune_pack_artifacts.py \
-  --packs-dir ../vocomi_pack_generation/packs \
+  --packs-dir release/packs \
   --keep 3 \
   --apply
 ```

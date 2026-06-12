@@ -1,53 +1,36 @@
 # GitHub Actions Setup
 
-Vocomipedia now has three workflow gates:
+Vocomipedia has three workflow gates:
 
-- `CI`: validates tools, schemas, and unit tests on every push/PR.
-- `Wiki Sync Back`: pulls approved MediaWiki edits, analyzes sentence proposals,
-  exports accepted source changes back into `vocomi_pack_generation`, and opens
-  a PR in `dimitristaufer/Vocomi`.
-- `Release And Deploy`: imports current Vocomi source decks, validates release
-  content, builds `.vpack` artifacts, optionally uploads them, optionally pushes
-  generated pages to MediaWiki, and emits search-index SQL.
+- `CI`: validates tools, schemas, unit tests, local MediaWiki config, search,
+  release scripts, and offline sentence analyzers.
+- `Wiki Sync Back`: pulls approved MediaWiki edits, auto-applies approved
+  sentence proposals with offline POS/token generation, writes canonical changes
+  to `data/languages`, and opens a PR in this repository.
+- `Release And Deploy`: builds `.vpack` artifacts from checked-in canonical
+  data, deploys them to the VPS pack host, optionally pushes generated wiki
+  pages, and emits search-index SQL.
 
 ## Required Secrets
 
-For any workflow that checks out or opens PRs against the private Vocomi repo:
-
-```text
-VOCOMI_REPO_TOKEN
-```
-
-The token needs read access for release jobs. For `Wiki Sync Back`, it also
-needs permission to push branches and open pull requests in `dimitristaufer/Vocomi`.
-
-For MediaWiki pull/push:
+Store these in the protected `production` environment:
 
 ```text
 MEDIAWIKI_API_URL      https://vocomipedia.com/api.php
 MEDIAWIKI_USERNAME     BotUser@BotName
 MEDIAWIKI_PASSWORD     bot password
+VOCOMI_IOS_PRIVATE_PEM full iOS private PEM; workflow derives the matching public key
 ```
 
-`Wiki Sync Back` only requires `MEDIAWIKI_API_URL`; `Release And Deploy` needs
-the username/password when `mediawiki_push` is enabled.
-
-For Azure upload:
+For VPS static pack deployment:
 
 ```text
-AZURE_STORAGE_ACCOUNT
-AZURE_STORAGE_KEY
-PACKS_CONTAINER        packs
+VPS_PACK_HOST          VPS IP address or packs.vocomipedia.com
+VPS_PACK_PORT          22
+VPS_PACK_USER          vocomipedia
+VPS_PACK_SSH_KEY       private key for the deploy user
+VPS_PACK_ROOT          /srv/vocomi-packs
 ```
-
-For vpack validation, prefer storing the private key as an environment secret:
-
-```text
-VOCOMI_IOS_PRIVATE_PEM
-```
-
-If that secret is absent, release jobs fall back to
-`vocomi_pack_generation/ios_private.pem` from the checked-out Vocomi repo.
 
 For optional remote search reindex after MediaWiki push:
 
@@ -58,19 +41,9 @@ MEDIAWIKI_SSH_PRIVATE_KEY
 MEDIAWIKI_REINDEX_COMMAND
 ```
 
-For VPS static pack hosting:
-
-```text
-VPS_PACK_HOST          VPS IP address or packs.vocomipedia.com
-VPS_PACK_PORT          22
-VPS_PACK_USER          vocomipedia
-VPS_PACK_SSH_KEY       private key for the deploy user
-VPS_PACK_ROOT          /srv/vocomi-packs
-```
-
-`MEDIAWIKI_REINDEX_COMMAND` should be the exact server-side command, for
-example a command that updates the deployed Vocomipedia checkout and runs the
-search projection rebuild.
+`VOCOMI_REPO_TOKEN` is no longer required for the current Vocomipedia-owned
+sync or release workflows. Legacy Azure upload inputs remain disabled in the
+workflow; deploy current packs to the VPS.
 
 ## Required Environment
 
@@ -81,7 +54,7 @@ production
 ```
 
 Require approval for that environment. `Wiki Sync Back` and `Release And
-Deploy` both use it so private-repo, MediaWiki, and deployment secrets stay
+Deploy` both use it so MediaWiki, private-key, and deployment secrets stay
 behind the same manual approval gate.
 
 ## Sync Approved Wiki Edits Back
@@ -92,29 +65,19 @@ Run:
 GitHub -> Actions -> Wiki Sync Back -> Run workflow
 ```
 
-Typical safe run:
+Typical run:
 
 ```text
 deck_codes: ja_n5
 export_source: true
 create_pr: true
-apply_all_sentence_proposals: false
-proposal_ids:
 ```
 
-This imports the current deck from `dimitristaufer/Vocomi`, pulls approved
-`Item:<deck>/...` pages from MediaWiki, applies safe visible fields, analyzes
-sentence proposals, writes reports, exports accepted non-proposal changes back
-to the source JSON, and opens a Vocomi PR if the source changed.
-
-To apply specific reviewed sentence proposals:
-
-```text
-proposal_ids: sentprop-abc123 sentprop-def456
-```
-
-Only use `apply_all_sentence_proposals: true` for a controlled deck where every
-active proposal has already been reviewed.
+This pulls approved `Item:<deck>/...` pages from MediaWiki, merges safe visible
+fields, converts direct sentence edits into sentence proposals, regenerates
+sentence token/POS/readings offline, auto-applies the approved proposals, writes
+reports, and opens a Vocomipedia PR when `data/languages` changes. No proposal
+IDs are needed in normal operation.
 
 ## Release And Deploy
 
@@ -134,41 +97,35 @@ upload: false
 mediawiki_push: false
 ```
 
-Production release after the sync-back PR is merged into Vocomi:
+Production release after the sync-back PR is merged:
 
 ```text
 deck_codes: ja_n5 ja_n4
-source_ref: main
 sync_limit: 0
 revise_japanese_furigana: true
 build_vpack: true
-upload: true
+upload: false
 vps_pack_deploy: true
 mediawiki_push: true
 generate_search_sql: true
+run_remote_reindex: true
 ```
 
-For the current VPS-only deployment, keep Azure disabled:
-
-```text
-upload: false
-vps_pack_deploy: true
-```
-
-The release workflow automatically imports sibling decks needed for combined
-data packs. For example, selecting `ja_n5` includes `ja_n4` in the temporary
-canonical workspace so `ja_n5-n4` can be rebuilt.
+The release workflow copies selected canonical decks into a temporary workspace,
+adds sibling decks needed for combined data packs, validates release readiness,
+builds single and combined `.vpack` files with the bundled pack builder, and
+deploys to the VPS when enabled.
 
 ## Search Index
 
 `Release And Deploy` uploads `reports/search/vocomipedia-search-upsert.sql` as
 an artifact when `generate_search_sql` is enabled. The SQL creates the search
-projection table if missing and upserts the selected deck rows without dropping
-the existing table.
+projection table if missing and upserts selected deck rows without dropping the
+existing table.
 
 For a full rebuild, run `tools/reindex_mediawiki_search.py` on the MediaWiki
-server against a full canonical data checkout. For deployment automation, set
-the optional SSH secrets and enable `run_remote_reindex`.
+server against the production checkout. For deployment automation, set the
+optional SSH secrets and enable `run_remote_reindex`.
 
 ## Backups
 

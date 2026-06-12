@@ -84,16 +84,15 @@ Sentence replacement proposals are review metadata, not release data.
 `sync_mediawiki.py` attaches an offline token/POS analysis to each proposal. If
 a Japanese edit changes only bracketed furigana while the surface sentence stays
 the same, the proposal is classified as `ruby_update` and the generated tokens
-carry the user-supplied readings. Reviewers apply accepted proposals with
-`apply_sentence_proposals.py --apply`; that command replaces the canonical
-sentence, writes generated tokens/readings, updates translations, and syncs
-`app_payload.pos_analysis`. The proposal stays auditable under
-`review.sentence_proposals[]` with status `applied`.
+carry the user-supplied readings. `Wiki Sync Back` applies approved proposals
+automatically; it replaces the canonical sentence, writes generated
+tokens/readings, updates translations, and syncs `app_payload.pos_analysis`.
+The proposal stays auditable under `review.sentence_proposals[]` with status
+`applied`.
 
 ```bash
 python3 tools/apply_sentence_proposals.py \
   --deck-dir data/languages/ja/ja_n5 \
-  --proposal-id sentprop-... \
   --apply \
   --diff-report reports/sentence-proposal.diff
 ```
@@ -151,7 +150,8 @@ For existing canonical items, the apply step does not trust arbitrary hidden
 JSON edits: it merges only the visible editable fields plus wiki revision
 metadata. Template-backed pages are strict: changed protected IDs, missing item
 templates, and duplicate/missing sentence indexes are rejected before apply.
-Direct sentence rewrites are converted into sentence proposals and stay in
-review metadata until `apply_sentence_proposals.py` applies them with generated
-token/POS data. Legacy wikitable pages remain accepted as a migration fallback.
-Use `--trust-hidden-json` only for controlled operator migrations.
+Direct sentence rewrites are converted into sentence proposals. `Wiki Sync Back`
+then analyzes and applies approved proposals automatically with generated
+token/POS data before opening the canonical data PR. Legacy wikitable pages
+remain accepted as a migration fallback. Use `--trust-hidden-json` only for
+controlled operator migrations.

@@ -7,10 +7,6 @@ on:
         description: "Space-separated deck codes, e.g. zh_1 ja_n5 ja_n4"
         required: true
         default: "zh_1"
-      source_ref:
-        description: "Vocomi branch/ref to release from"
-        required: false
-        default: "main"
       sync_limit:
         description: "Limit entries per deck. Use 0 for full production decks."
         required: false
@@ -26,7 +22,7 @@ on:
         required: false
         default: true
       upload:
-        description: "Upload .vpack artifacts to Azure Blob Storage"
+        description: "Legacy Azure upload is disabled in the Vocomipedia-owned release workflow"
         type: boolean
         required: false
         default: false
@@ -62,13 +58,6 @@ jobs:
         uses: actions/checkout@v4
         with:
           path: vocomipedia
-      - name: Checkout Vocomi source repo
-        uses: actions/checkout@v4
-        with:
-          repository: dimitristaufer/Vocomi
-          ref: ${{ inputs.source_ref }}
-          token: ${{ secrets.VOCOMI_REPO_TOKEN }}
-          path: vocomi
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
@@ -83,40 +72,49 @@ jobs:
         env:
           VOCOMI_IOS_PRIVATE_PEM: ${{ secrets.VOCOMI_IOS_PRIVATE_PEM }}
         run: |
-          KEY_PATH="../vocomi/vocomi_pack_generation/ios_private.pem"
-          if [ -n "$VOCOMI_IOS_PRIVATE_PEM" ]; then
-            KEY_PATH="$RUNNER_TEMP/ios_private.pem"
-            printf '%s\n' "$VOCOMI_IOS_PRIVATE_PEM" > "$KEY_PATH"
-            chmod 600 "$KEY_PATH"
-          fi
+          test -n "$VOCOMI_IOS_PRIVATE_PEM"
+          KEY_PATH="$RUNNER_TEMP/ios_private.pem"
+          PUB_PATH="$RUNNER_TEMP/ios_public.pem"
+          printf '%s\n' "$VOCOMI_IOS_PRIVATE_PEM" > "$KEY_PATH"
+          chmod 600 "$KEY_PATH"
+          python - "$KEY_PATH" "$PUB_PATH" <<'PY'
+          import sys
+          from pathlib import Path
+          from cryptography.hazmat.primitives import serialization
+          key = serialization.load_pem_private_key(Path(sys.argv[1]).read_bytes(), password=None)
+          Path(sys.argv[2]).write_bytes(
+              key.public_key().public_bytes(
+                  encoding=serialization.Encoding.PEM,
+                  format=serialization.PublicFormat.SubjectPublicKeyInfo,
+              )
+          )
+          PY
           echo "path=$KEY_PATH" >> "$GITHUB_OUTPUT"
+          echo "public_path=$PUB_PATH" >> "$GITHUB_OUTPUT"
       - name: Resolve deck closure
         run: |
           cd vocomipedia
           SYNC_DECK_CODES="$(python tools/catalog_decks.py --decks ${{ inputs.deck_codes }} --with-combined-siblings)"
           echo "SYNC_DECK_CODES=$SYNC_DECK_CODES" >> "$GITHUB_ENV"
-      - name: Sync selected decks into canonical workspace
+      - name: Prepare selected canonical decks
         run: |
           LIMIT_ARG=""
           if [ "${{ inputs.sync_limit }}" != "0" ]; then
             LIMIT_ARG="--limit ${{ inputs.sync_limit }}"
           fi
-          SUDACHI_ARG=""
-          if [ "${{ inputs.revise_japanese_furigana }}" = "true" ]; then
-            SUDACHI_ARG="--revise-japanese-furigana --sudachi-dict core --sudachi-mode C"
-          fi
           cd vocomipedia
-          python tools/sync_all_packs.py \
+          python tools/prepare_release_workspace.py \
             --decks $SYNC_DECK_CODES \
             $LIMIT_ARG \
-            $SUDACHI_ARG \
-            --copy-media \
-            --mark-approved \
-            --validate \
-            --strict-media \
-            --pack-generation-dir ../vocomi/vocomi_pack_generation \
-            --out-root tmp/actions-data \
-            --backup-dir reports/backups
+            --out-root tmp/actions-data
+          if [ "${{ inputs.revise_japanese_furigana }}" = "true" ]; then
+            python tools/revise_japanese_furigana.py \
+              --root tmp/actions-data \
+              --sudachi-dict core \
+              --sudachi-mode C \
+              --backup-dir reports/backups
+          fi
+          python tools/validate_corpus.py --root tmp/actions-data --strict-media --release-ready
       - name: Build and optionally upload release artifacts
         if: inputs.build_vpack || inputs.upload
         env:
@@ -126,9 +124,8 @@ jobs:
         run: |
           UPLOAD_ARG=""
           if [ "${{ inputs.upload }}" = "true" ]; then
-            test -n "$AZURE_STORAGE_ACCOUNT"
-            test -n "$AZURE_STORAGE_KEY"
-            UPLOAD_ARG="--upload"
+            echo "Azure upload is not supported in the Vocomipedia-owned release workflow; deploy to VPS instead." >&2
+            exit 2
           fi
           cd vocomipedia
           for code in ${{ inputs.deck_codes }}; do
@@ -143,8 +140,8 @@ jobs:
             fi
             python tools/release_pack.py \
               --deck-dir "$deck_dir" \
-              --pack-generation-dir ../vocomi/vocomi_pack_generation \
               --outdir release \
+              --app-pubkey "${{ steps.private-key.outputs.public_path }}" \
               --validate-private-key "${{ steps.private-key.outputs.path }}" \
               $UPLOAD_ARG
           done
@@ -152,8 +149,8 @@ jobs:
             --changed-decks ${{ inputs.deck_codes }} \
             --root tmp/actions-data \
             --catalog catalog/packs.yaml \
-            --pack-generation-dir ../vocomi/vocomi_pack_generation \
             --outdir release \
+            --app-pubkey "${{ steps.private-key.outputs.public_path }}" \
             --validate-private-key "${{ steps.private-key.outputs.path }}" \
             $UPLOAD_ARG
       - name: Deploy pack artifacts to VPS
