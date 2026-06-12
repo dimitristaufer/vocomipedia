@@ -22,6 +22,13 @@ MEDIAWIKI_PASSWORD     bot password
 VOCOMI_IOS_PRIVATE_PEM full iOS private PEM; workflow derives the matching public key
 ```
 
+Optional, but recommended if GitHub Actions is not allowed to create pull
+requests with the default repository token:
+
+```text
+VOCOMIPEDIA_PR_TOKEN   fine-grained PAT with Contents read/write and Pull requests read/write on this repo
+```
+
 For VPS static pack deployment:
 
 ```text
@@ -77,7 +84,8 @@ This pulls approved `Item:<deck>/...` pages from MediaWiki, merges safe visible
 fields, converts direct sentence edits into sentence proposals, regenerates
 sentence token/POS/readings offline, auto-applies the approved proposals, writes
 reports, and opens a Vocomipedia PR when `data/languages` changes. No proposal
-IDs are needed in normal operation.
+IDs are needed in normal operation. If GitHub blocks PR creation, the workflow
+still pushes the sync branch and prints the manual PR URL in the run summary.
 
 ## Release And Deploy
 

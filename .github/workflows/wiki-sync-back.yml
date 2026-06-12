@@ -76,19 +76,42 @@ jobs:
       - name: Create Vocomipedia PR
         if: inputs.create_pr && steps.diff.outputs.changed == 'true'
         env:
-          GH_TOKEN: ${{ github.token }}
+          VOCOMIPEDIA_PR_TOKEN: ${{ secrets.VOCOMIPEDIA_PR_TOKEN }}
+          GITHUB_TOKEN_FALLBACK: ${{ github.token }}
         run: |
           BRANCH="vocomipedia/wiki-sync-${{ github.run_id }}"
           cd vocomipedia
           git config user.name "vocomipedia-bot"
           git config user.email "vocomipedia-bot@users.noreply.github.com"
-          git checkout -b "$BRANCH"
+          git checkout -B "$BRANCH"
           git add data/languages
           git commit -m "Sync approved Vocomipedia edits"
-          git push origin "$BRANCH"
-          gh pr create \
+          git push --force-with-lease origin "$BRANCH"
+
+          if [ -n "${VOCOMIPEDIA_PR_TOKEN:-}" ]; then
+            export GH_TOKEN="$VOCOMIPEDIA_PR_TOKEN"
+            TOKEN_LABEL="VOCOMIPEDIA_PR_TOKEN"
+          else
+            export GH_TOKEN="$GITHUB_TOKEN_FALLBACK"
+            TOKEN_LABEL="GITHUB_TOKEN"
+          fi
+
+          if gh pr create \
             --repo dimitristaufer/vocomipedia \
             --base main \
             --head "$BRANCH" \
             --title "Sync approved Vocomipedia edits" \
-            --body-file reports/wiki-sync-back/summary.md
+            --body-file reports/wiki-sync-back/summary.md; then
+            exit 0
+          fi
+
+          {
+            echo "### Wiki sync back"
+            echo
+            echo "Canonical changes were pushed to \`$BRANCH\`, but PR creation failed using \`$TOKEN_LABEL\`."
+            echo
+            echo "Open the PR manually:"
+            echo
+            echo "https://github.com/dimitristaufer/vocomipedia/compare/main...$BRANCH?expand=1"
+          } >> "$GITHUB_STEP_SUMMARY"
+          echo "PR creation failed, but the sync branch was pushed: $BRANCH" >&2
