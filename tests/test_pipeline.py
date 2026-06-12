@@ -37,6 +37,10 @@ APPLY_SENTENCE_SPEC = importlib.util.spec_from_file_location("apply_sentence_pro
 assert APPLY_SENTENCE_SPEC and APPLY_SENTENCE_SPEC.loader
 apply_sentence_proposals = importlib.util.module_from_spec(APPLY_SENTENCE_SPEC)
 APPLY_SENTENCE_SPEC.loader.exec_module(apply_sentence_proposals)
+DEPLOY_PACKS_SPEC = importlib.util.spec_from_file_location("deploy_packs_to_vps", TOOLS / "deploy_packs_to_vps.py")
+assert DEPLOY_PACKS_SPEC and DEPLOY_PACKS_SPEC.loader
+deploy_packs_to_vps = importlib.util.module_from_spec(DEPLOY_PACKS_SPEC)
+DEPLOY_PACKS_SPEC.loader.exec_module(deploy_packs_to_vps)
 from vocomipedia_nlp import analyze_sentence
 
 
@@ -68,6 +72,17 @@ def write_test_keypair(tmp: Path) -> tuple[Path, Path]:
 
 
 class VocomipediaPipelineTests(unittest.TestCase):
+    def test_vps_partial_pack_deploy_preserves_existing_catalog(self) -> None:
+        script = deploy_packs_to_vps.remote_deploy_script("/srv/vocomi-packs", "test-release", 3)
+        self.assertIn('find -L "$root/current"', script)
+        self.assertIn("-name '*.vpack'", script)
+        self.assertIn("rm -f packs.json packs-images.json", script)
+        self.assertIn("python3 - <<'PY'", script)
+        self.assertIn('root.glob("*.meta.json")', script)
+        self.assertIn('(root / "packs-images.json").write_text', script)
+        self.assertLess(script.find('find -L "$root/current"'), script.find('tar -xzf "$root/incoming/$name.tar.gz"'))
+        self.assertLess(script.find('rm -f packs.json packs-images.json'), script.find("if compgen -G"))
+
     def test_import_validate_export_round_trip(self) -> None:
         with tempfile.TemporaryDirectory() as td:
             tmp = Path(td)

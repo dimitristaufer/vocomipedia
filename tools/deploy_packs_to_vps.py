@@ -123,9 +123,13 @@ umask 022
 mkdir -p "$root/incoming" "$root/releases"
 rm -rf "$root/incoming/$name"
 mkdir -p "$root/incoming/$name"
+if [ -e "$root/current" ]; then
+  find -L "$root/current" -maxdepth 1 -type f \\( -name '*.vpack' -o -name '*.meta.json' -o -name '*.sha256' \\) -exec cp -al -t "$root/incoming/$name" {{}} +
+fi
 tar -xzf "$root/incoming/$name.tar.gz" -C "$root/incoming/$name"
 rm -f "$root/incoming/$name.tar.gz"
 cd "$root/incoming/$name"
+rm -f packs.json packs-images.json
 if compgen -G "*.sha256" >/dev/null; then
   for checksum in *.sha256; do
     if sha256sum -c "$checksum" >/dev/null 2>&1; then
@@ -151,6 +155,48 @@ if compgen -G "*.sha256" >/dev/null; then
     echo "$target: OK"
   done
 fi
+python3 - <<'PY'
+import datetime as dt
+import json
+import re
+from pathlib import Path
+
+root = Path(".")
+
+def build_manifest(include_data):
+    packs = []
+    for meta_path in sorted(root.glob("*.meta.json")):
+        try:
+            meta = json.loads(meta_path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError as exc:
+            raise SystemExit(f"{{meta_path}}: invalid JSON: {{exc}}") from exc
+        name = str(meta.get("name") or meta_path.name.removesuffix(".meta.json") + ".vpack")
+        if not re.match(r"^[A-Za-z0-9._-]+\\.vpack$", name):
+            raise SystemExit(f"{{meta_path}}: unsafe pack name {{name!r}}")
+        if not (root / name).is_file():
+            raise SystemExit(f"{{meta_path}}: referenced pack is missing: {{name}}")
+        if not include_data and str(meta.get("pack_kind") or "").lower() == "data":
+            continue
+        meta["name"] = name
+        meta["download_name"] = str(meta.get("download_name") or name)
+        packs.append(meta)
+    packs.sort(key=lambda item: str(item.get("version") or ""), reverse=True)
+    return {{
+        "packs": packs,
+        "server_time_utc": dt.datetime.now(dt.UTC).isoformat().replace("+00:00", "Z"),
+        "require_signed": False,
+        "rate": {{"max": 50, "window_sec": 3600}},
+    }}
+
+(root / "packs.json").write_text(
+    json.dumps(build_manifest(True), ensure_ascii=False, indent=2, sort_keys=True) + "\\n",
+    encoding="utf-8",
+)
+(root / "packs-images.json").write_text(
+    json.dumps(build_manifest(False), ensure_ascii=False, indent=2, sort_keys=True) + "\\n",
+    encoding="utf-8",
+)
+PY
 find . -type f -exec chmod 0644 {{}} +
 find . -type d -exec chmod 0755 {{}} +
 rm -rf "$root/releases/$name"
