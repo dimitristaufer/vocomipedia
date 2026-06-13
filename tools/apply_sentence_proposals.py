@@ -167,7 +167,7 @@ def main() -> int:
         after, changed = process_item(item, proposal_id=args.proposal_id, apply=args.apply, applied_by=args.applied_by, mark_approved=args.mark_approved)
         if not changed or before == after:
             continue
-        errors = validate_item(after, strict_content=True)
+        errors = validate_item(after, strict_content=args.apply)
         if errors:
             raise SystemExit(f"{path}: validation failed after proposal processing:\n- " + "\n- ".join(errors))
         changed_count += 1
