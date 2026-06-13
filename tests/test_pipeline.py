@@ -78,6 +78,17 @@ def write_test_keypair(tmp: Path) -> tuple[Path, Path]:
 
 
 class VocomipediaPipelineTests(unittest.TestCase):
+    def test_next_level_catalog_combined_pack_mapping(self) -> None:
+        catalog = __import__("yaml").safe_load((ROOT / "catalog" / "packs.yaml").read_text(encoding="utf-8"))["packs"]
+        self.assertEqual(catalog["ja_n5"]["data_pack_code"], "ja_n5-n3")
+        self.assertEqual(catalog["ja_n4"]["data_pack_code"], "ja_n5-n3")
+        self.assertEqual(catalog["ja_n3"]["data_pack_code"], "ja_n5-n3")
+        self.assertEqual(catalog["ja_n3"]["source_json"], "vocomi_pack_generation/language_packs/japanese_N3/ja_n3_structure.json")
+        self.assertEqual(catalog["es_a1"]["data_pack_code"], "es_a1-a2")
+        self.assertEqual(catalog["es_a2"]["data_pack_code"], "es_a1-a2")
+        self.assertEqual(catalog["ko_1"]["data_pack_code"], "ko_1-2")
+        self.assertEqual(catalog["ko_2"]["data_pack_code"], "ko_1-2")
+
     def test_vps_partial_pack_deploy_preserves_existing_catalog(self) -> None:
         script = deploy_packs_to_vps.remote_deploy_script("/srv/vocomi-packs", "test-release", 3)
         self.assertIn('find -L "$root/current"', script)
@@ -728,6 +739,28 @@ packs:
                         "--mark-approved",
                     ]
                 )
+            n3_dir = data_root / "ja" / "ja_n3"
+            (n3_dir / "items").mkdir(parents=True)
+            (n3_dir / "media").mkdir()
+            (n3_dir / "pack.json").write_text(
+                json.dumps(
+                    {
+                        "schema_version": "vocomipedia-pack-1",
+                        "pack_code": "ja_n3",
+                        "title": "Japanese N3",
+                        "language": "ja",
+                        "lang_prefix": "ja",
+                        "lang_level": "n3",
+                        "level": "N3",
+                        "target_sentence_key": "jp",
+                        "reading_sentence_key": "fu",
+                        "data_pack_code": "ja_n5-n3",
+                        "items": [],
+                    },
+                    ensure_ascii=False,
+                ),
+                encoding="utf-8",
+            )
 
             release_out = tmp / "release"
             private_key, public_key = write_test_keypair(tmp)
@@ -736,7 +769,7 @@ packs:
                     sys.executable,
                     str(TOOLS / "release_combined_pack.py"),
                     "--data-pack-code",
-                    "ja_n5-n4",
+                    "ja_n5-n3",
                     "--root",
                     str(data_root),
                     "--pack-generation-dir",
@@ -752,7 +785,7 @@ packs:
                 ]
             )
 
-            db_path = release_out / "staging" / "combined" / "ja_n5-n4" / "combined-assets" / "ja_N5-N4" / "iOS_assets" / "ja_n5-n4.db"
+            db_path = release_out / "staging" / "combined" / "ja_n5-n3" / "combined-assets" / "ja_N5-N3" / "iOS_assets" / "ja_n5-n3.db"
             self.assertTrue(db_path.exists())
             conn = sqlite3.connect(db_path)
             try:
@@ -760,7 +793,7 @@ packs:
             finally:
                 conn.close()
             self.assertEqual(count, 2)
-            self.assertTrue(list((release_out / "packs").glob("ja_n5-n4_*.vpack")))
+            self.assertTrue(list((release_out / "packs").glob("ja_n5-n3_*.vpack")))
 
     def test_visible_wiki_sentence_edits_create_analyzed_proposals(self) -> None:
         item = {
