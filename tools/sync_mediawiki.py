@@ -1025,6 +1025,46 @@ class MediaWikiClient:
         pages = resp.get("query", {}).get("pages", []) or []
         return bool(pages and "missing" not in pages[0])
 
+    def file_imageinfo(self, filenames: list[str]) -> dict[str, dict]:
+        out: dict[str, dict] = {}
+        wanted = [name for name in filenames if name]
+        for idx in range(0, len(wanted), 50):
+            batch = wanted[idx : idx + 50]
+            if not batch:
+                continue
+            resp = self.request(
+                {
+                    "action": "query",
+                    "titles": "|".join("File:" + name for name in batch),
+                    "prop": "imageinfo",
+                    "iiprop": "sha1|size",
+                    "formatversion": "2",
+                    "format": "json",
+                },
+                method="GET",
+            )
+            title_to_original: dict[str, str] = {"File:" + name: name for name in batch}
+            for row in resp.get("query", {}).get("normalized", []) or []:
+                original = title_to_original.get(str(row.get("from") or ""))
+                normalized = str(row.get("to") or "")
+                if original and normalized:
+                    title_to_original[normalized] = original
+            for page in resp.get("query", {}).get("pages", []) or []:
+                if "missing" in page:
+                    continue
+                title = str(page.get("title") or "")
+                original = title_to_original.get(title)
+                if not original and title.startswith("File:"):
+                    original = title.split(":", 1)[1].replace(" ", "_")
+                if not original:
+                    continue
+                imageinfo = (page.get("imageinfo") or [{}])[0]
+                out[original] = {
+                    "sha1": str(imageinfo.get("sha1") or "").lower(),
+                    "size": int(imageinfo.get("size") or 0),
+                }
+        return out
+
     def all_pages(self, prefix: str, namespace: int | None = None) -> list[str]:
         namespace_id, api_prefix = split_namespace_prefix(prefix, namespace)
         titles: list[str] = []
@@ -2404,17 +2444,25 @@ def sync_images_api(
     items_to_sync = [(item, path) for item, path in all_items if item_matches_changed_refs(item, path, changed_refs)]
     if changed_refs is not None:
         print(f"Selected {len(items_to_sync)} item image(s) out of {len(all_items)} approved item(s).", flush=True)
+    expected_filenames = [
+        entry_image_filename(item)
+        for item, _path in items_to_sync
+        if entry_image_reference(pack_dir, item)
+    ]
     client = None if dry_run else MediaWikiClient(api_url)
+    existing: dict[str, dict] = {}
     if not dry_run:
         assert client is not None
         client.login(username, password)
         token = client.csrf_token()
+        existing = client.file_imageinfo(expected_filenames)
     else:
         token = ""
 
     uploaded = 0
     missing_media = 0
     skipped_existing = 0
+    skipped_unchanged = 0
     with tempfile.TemporaryDirectory(prefix="vocomipedia-entry-images.") as td:
         image_work_dir = Path(td)
         for item, _path in items_to_sync:
@@ -2425,10 +2473,17 @@ def sync_images_api(
                 continue
             filename, image_path = prepared
             if only_missing and not dry_run:
-                assert client is not None
-                if client.file_exists(filename):
-                    skipped_existing += 1
-                    continue
+                    assert client is not None
+                    if client.file_exists(filename):
+                        skipped_existing += 1
+                        continue
+            if not dry_run and not only_missing:
+                info = existing.get(filename)
+                if info:
+                    local_bytes = image_path.read_bytes()
+                    if info.get("size") == len(local_bytes) and info.get("sha1") == hashlib.sha1(local_bytes).hexdigest():
+                        skipped_unchanged += 1
+                        continue
             if dry_run:
                 print(f"DRY RUN: would upload File:{filename}")
             else:
@@ -2438,7 +2493,8 @@ def sync_images_api(
     action = "Would sync" if dry_run else "Synced"
     print(
         f"{action} {uploaded} {manifest['pack_code']} low-res image(s); "
-        f"skipped {skipped_existing} existing image(s), {missing_media} missing source media file(s)."
+        f"skipped {skipped_existing} existing image(s), {skipped_unchanged} unchanged image(s), "
+        f"{missing_media} missing source media file(s)."
     )
     return uploaded
 

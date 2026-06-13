@@ -95,6 +95,9 @@ class VocomipediaPipelineTests(unittest.TestCase):
     def test_release_workflow_uses_previous_release_base_and_reconciles_images(self) -> None:
         workflow = (ROOT / ".github" / "workflows" / "release.yml").read_text(encoding="utf-8")
         self.assertIn("fetch-depth: 0", workflow)
+        self.assertIn("actions/checkout@v6", workflow)
+        self.assertIn("actions/setup-python@v6", workflow)
+        self.assertIn("actions/upload-artifact@v6", workflow)
         self.assertIn("Resolve previous release base", workflow)
         self.assertIn("current/release-state.json", workflow)
         self.assertIn("--release-state-file tmp/release-state/previous.json", workflow)
@@ -228,6 +231,89 @@ class VocomipediaPipelineTests(unittest.TestCase):
             self.assertEqual(count, 1)
             self.assertIn("DRY RUN: would upload File:Vocomipedia_ja_n5_one_entry.jpg", output)
             self.assertNotIn("DRY RUN: would edit", output)
+
+    def test_sync_images_api_skips_unchanged_remote_images(self) -> None:
+        with tempfile.TemporaryDirectory() as td:
+            tmp = Path(td)
+            pack_dir = tmp / "ja_n5"
+            item_dir = pack_dir / "items"
+            media_dir = pack_dir / "media"
+            item_dir.mkdir(parents=True)
+            media_dir.mkdir(parents=True)
+            Image.new("RGBA", (96, 96), (10, 20, 200, 255)).save(media_dir / "source.png")
+            item = {
+                "schema_version": "vocomipedia-item-2",
+                "id": "ja_n5:one",
+                "pack_code": "ja_n5",
+                "language": "ja",
+                "entry_id": "one",
+                "headword": "one",
+                "reading": "",
+                "label": "",
+                "level": "N5",
+                "order": 0,
+                "part_of_speech": ["Noun"],
+                "glosses": {"en": "one"},
+                "sentences": [],
+                "media": {"image_filename": "source.png", "license": "Vocomi-created", "review_status": "approved"},
+                "review": {"status": "approved"},
+                "provenance": {"origin": "test", "ai_generated": True, "license_status": "generated_by_vocomi"},
+                "app_payload": {},
+            }
+            (item_dir / "one.json").write_text(json.dumps(item, ensure_ascii=False), encoding="utf-8")
+            (pack_dir / "pack.json").write_text(
+                json.dumps(
+                    {
+                        "schema_version": "vocomipedia-pack-1",
+                        "pack_code": "ja_n5",
+                        "title": "Japanese N5",
+                        "language": "ja",
+                        "items": [{"id": "ja_n5:one", "entry_id": "one", "file": "items/one.json", "order": 0}],
+                    }
+                ),
+                encoding="utf-8",
+            )
+            with tempfile.TemporaryDirectory() as image_td:
+                filename, image_path = sync_mediawiki.prepare_entry_image(pack_dir, item, Path(image_td))
+                image_bytes = image_path.read_bytes()
+
+            class FakeClient:
+                uploads: list[str] = []
+
+                def __init__(self, api_url: str):
+                    self.api_url = api_url
+
+                def login(self, username: str, password: str) -> None:
+                    pass
+
+                def csrf_token(self) -> str:
+                    return "token"
+
+                def file_imageinfo(self, filenames: list[str]) -> dict[str, dict]:
+                    self.seen = filenames
+                    return {filename: {"size": len(image_bytes), "sha1": __import__("hashlib").sha1(image_bytes).hexdigest()}}
+
+                def upload_file(self, filename: str, path: Path, comment: str, token: str) -> None:
+                    self.uploads.append(filename)
+
+            old_client = sync_mediawiki.MediaWikiClient
+            sync_mediawiki.MediaWikiClient = FakeClient
+            try:
+                buf = io.StringIO()
+                with contextlib.redirect_stdout(buf):
+                    count = sync_mediawiki.sync_images_api(
+                        pack_dir,
+                        "https://example.invalid/api.php",
+                        "user",
+                        "password",
+                        approved_only=True,
+                        dry_run=False,
+                    )
+            finally:
+                sync_mediawiki.MediaWikiClient = old_client
+            self.assertEqual(count, 0)
+            self.assertIn("skipped 0 existing image(s), 1 unchanged image(s)", buf.getvalue())
+            self.assertEqual(FakeClient.uploads, [])
 
     def test_changed_deck_items_detects_changed_canonical_item_files(self) -> None:
         with tempfile.TemporaryDirectory() as td:
