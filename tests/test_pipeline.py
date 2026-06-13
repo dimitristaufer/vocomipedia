@@ -542,6 +542,79 @@ packs:
             self.assertEqual(manifest["pack_code"], "de_b2")
             self.assertEqual(manifest["items"], [])
 
+    def test_auto_pos_analysis_imports_lightweight_source_without_legacy_pos(self) -> None:
+        with tempfile.TemporaryDirectory() as td:
+            tmp = Path(td)
+            source_json = tmp / "de_b2_structure.json"
+            source_json.write_text(
+                json.dumps(
+                    [
+                        {
+                            "entry_id": "Katze",
+                            "word": "Katze",
+                            "word_label": "Noun [ feminine ]",
+                            "word_en": "cat",
+                            "word_de": "Katze",
+                            "comic_difficulty": 2.0,
+                            "jp": ["Die Katze schläft."],
+                            "fu": ["/diː ˈkatsə ʃlɛːft/"],
+                            "de": ["Die Katze schläft."],
+                            "en": ["The cat is sleeping."],
+                            "generation": {"schema_version": "vocomipedia-source-1", "no_pos_analysis": True},
+                        }
+                    ],
+                    ensure_ascii=False,
+                ),
+                encoding="utf-8",
+            )
+            asset_dir = tmp / "assets"
+            asset_dir.mkdir()
+            Image.new("RGBA", (64, 64), (220, 220, 220, 255)).save(asset_dir / "comic_Katze_blank.png")
+            catalog = tmp / "packs.yaml"
+            catalog.write_text(
+                """schema_version: vocomipedia-pack-catalog-1
+packs:
+  de_b2:
+    title: German B2
+    language: de
+    lang_prefix: de
+    lang_level: b2
+    level: B2
+    source_kind: single
+    target_sentence_key: jp
+    reading_sentence_key: fu
+    data_pack_code: de_b2
+    review_policy: approved-only
+    license_policy: test
+""",
+                encoding="utf-8",
+            )
+            out_root = tmp / "data"
+            run(
+                [
+                    sys.executable,
+                    str(TOOLS / "import_legacy_pack.py"),
+                    "--deck-code",
+                    "de_b2",
+                    "--catalog",
+                    str(catalog),
+                    "--input-json",
+                    str(source_json),
+                    "--asset-dir",
+                    str(asset_dir),
+                    "--out-root",
+                    str(out_root),
+                    "--copy-media",
+                    "--mark-approved",
+                    "--auto-pos-analysis",
+                ]
+            )
+            item_path = next((out_root / "de" / "de_b2" / "items").glob("*.json"))
+            item = json.loads(item_path.read_text(encoding="utf-8"))
+            self.assertTrue(item["sentences"][0]["tokens"])
+            self.assertEqual(item["app_payload"]["pos_analysis"][0]["tokens"], item["sentences"][0]["tokens"])
+            self.assertNotIn("pos_analysis", item["app_payload"]["generation"])
+
     @unittest.skipUnless(PACK_GENERATION_AVAILABLE, "bundled pack builder is required")
     def test_release_skip_vpack_builds_sqlite_assets(self) -> None:
         with tempfile.TemporaryDirectory() as td:

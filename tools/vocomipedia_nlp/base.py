@@ -453,7 +453,22 @@ def generated_pos_analysis_entry(sentence: Dict[str, Any]) -> Dict[str, Any]:
     }
 
 
-def sync_item_pos_analysis(item: Dict[str, Any]) -> Dict[str, Any]:
+def sync_item_pos_analysis(item: Dict[str, Any], *, regenerate: bool = False) -> Dict[str, Any]:
+    if regenerate:
+        language = normalize_language(str(item.get("language") or ""))
+        for sentence in item.get("sentences") or []:
+            if not isinstance(sentence, dict):
+                continue
+            text = str(sentence.get("target") or "")
+            if not text:
+                sentence["tokens"] = []
+                continue
+            result = analyze_sentence(language, text, existing_sentence=sentence, entry=item)
+            sentence["tokens"] = result.tokens
+            if result.reading:
+                sentence["reading"] = result.reading
+            elif language != "ja":
+                sentence["reading"] = sentence.get("reading", "")
     payload = item.setdefault("app_payload", {})
     payload["pos_analysis"] = [generated_pos_analysis_entry(sentence) for sentence in item.get("sentences") or []]
     return item

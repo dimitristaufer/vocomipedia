@@ -223,7 +223,7 @@ def legacy_to_canonical(
     if auto_pos_analysis:
         from vocomipedia_nlp import sync_item_pos_analysis
 
-        item = sync_item_pos_analysis(item)
+        item = sync_item_pos_analysis(item, regenerate=True)
     return item
 
 

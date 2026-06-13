@@ -21,7 +21,37 @@ older source decks.
 
 ## Add A Deck
 
-1. Generate the source JSON and assets in `vocomi_pack_generation`.
+1. Generate the source JSON and assets in `vocomi_pack_generation`. For new
+   decks, use the lightweight generator so generation does not create
+   POS/token annotations:
+
+   ```bash
+   cd ../vocomi_pack_generation
+   python3 vocomipedia_source_generator.py \
+     --csv german_B2.csv \
+     --deck-code de_b2 \
+     --language de \
+     --level B2 \
+     --output-dir language_packs/german_B2
+   ```
+
+   Or run generation, scaffold, and import in one command:
+
+   ```bash
+   cd ../vocomi_pack_generation
+   python3 vocomipedia_source_pipeline.py \
+     --csv german_B2.csv \
+     --deck-code de_b2 \
+     --title "German B2" \
+     --language de \
+     --level B2 \
+     --data-pack-code de_b2 \
+     --mark-approved \
+     --validate
+   ```
+
+   Keep older language-specific generators only for legacy/Azure-compatible
+   workflows.
 2. Scaffold the Vocomipedia catalog entry:
 
    ```bash
