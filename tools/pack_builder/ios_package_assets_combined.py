@@ -17,7 +17,8 @@ Safety checks included:
 - Ensures you don't mix languages (LANG_PREFIX) across packs.
 - Ensures the directory roots (e.g., "japanese_", "german_") match across packs.
 - Ensures all LEVELs belong to the same "family" (JLPT N-, CEFR A/B/C-, or numeric TOPIK-style).
-- Ensures the per-entry translation keys ("langs") are consistent across packs.
+- Normalizes mixed per-entry translation keys across packs by filling missing
+  sentence-language lists with empty strings.
 - Warns on duplicate 'word' IDs (first occurrence wins).
 
 Audio fields from older data are **ignored entirely** (not used for detection and not stored in DB).
@@ -256,6 +257,39 @@ def dir_label_from_levels(levels_lower: List[str]) -> str:
         return "+".join(upcase_token(lv) for lv in unique_sorted)
 
 
+def sentence_lang_keys(entry: Dict[str, Any], fixed_keys: Set[str]) -> List[str]:
+    return sorted(
+        key for key, val in entry.items()
+        if key not in fixed_keys
+        and not key.endswith('_audio')
+        and isinstance(val, list)
+        and all(isinstance(item, str) for item in val)
+    )
+
+
+def sentence_count(entry: Dict[str, Any]) -> int:
+    for key in ("jp", "ko", "en"):
+        value = entry.get(key)
+        if isinstance(value, list):
+            return len(value)
+    for value in entry.values():
+        if isinstance(value, list) and all(isinstance(item, str) for item in value):
+            return len(value)
+    return 0
+
+
+def normalize_sentence_language_fields(entries: List[Dict[str, Any]], fixed_keys: Set[str]) -> List[str]:
+    langs: Set[str] = set()
+    for entry in entries:
+        langs.update(sentence_lang_keys(entry, fixed_keys))
+    normalized = sorted(langs)
+    for entry in entries:
+        count = sentence_count(entry)
+        for lang in normalized:
+            entry.setdefault(lang, [""] * count)
+    return normalized
+
+
 def _human_size(num_bytes: int) -> str:
     units = ["B", "KB", "MB", "GB", "TB"]
     i = 0
@@ -351,7 +385,6 @@ def main(combined_packs: Optional[List[Dict[str, str]]] = None,
     word_owner_level: Dict[str, str] = {}              # word id -> LEVEL (lowercase) of first occurrence
     duplicate_words: List[Tuple[str, str, str]] = []   # (word, first_level, dup_level)
 
-    reference_langs: Optional[List[str]] = None
     normalized_fields_count = 0
 
     for p in combined_packs:
@@ -364,31 +397,6 @@ def main(combined_packs: Optional[List[Dict[str, str]]] = None,
 
         if not entries:
             print(f"⚠️ No entries in {json_file}")
-
-        # Detect user-language keys for this pack.
-        # IMPORTANT: ignore *_audio completely (older data may include e.g. 'jp_audio' lists).
-        langs_this: List[str] = []
-        if entries:
-            sample = entries[0]
-            langs_this = sorted(
-                key for key, val in sample.items()
-                if key not in FIXED_KEYS
-                and not key.endswith('_audio')              # drop audio keys from detection
-                and isinstance(val, list)
-                and all(isinstance(item, str) for item in val)
-            )
-
-            # Enforce consistent user language fields (like original script)
-            if reference_langs is None:
-                reference_langs = langs_this
-            else:
-                if langs_this != reference_langs:
-                    raise RuntimeError(
-                        "Inconsistent user language fields between packs.\n"
-                        f"Expected langs: {reference_langs}\n"
-                        f"Got langs in level {level}: {langs_this}\n"
-                        "Refuse to combine structurally different packs."
-                    )
 
         # Normalize semicolons in "word_*" keys and deduplicate by identifier
         for e in entries:
@@ -419,6 +427,9 @@ def main(combined_packs: Optional[List[Dict[str, str]]] = None,
 
     if not all_entries:
         raise RuntimeError("No entries loaded. Check your COMBINED_PACKS configuration and JSON files.")
+
+    normalized_langs = normalize_sentence_language_fields(all_entries, FIXED_KEYS)
+    print(f"Normalized sentence language fields across combined pack: {normalized_langs}")
 
     # ─── EXTRACT & COMPRESS IMAGES (one per unique word id) ──────────────────
     missing_images = 0

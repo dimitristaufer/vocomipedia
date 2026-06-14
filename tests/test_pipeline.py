@@ -97,6 +97,18 @@ class VocomipediaPipelineTests(unittest.TestCase):
         self.assertEqual(ios_package_assets_combined.condense_levels(["1", "2"]), ("1-2", ["1", "2"]))
         self.assertEqual(ios_package_assets_combined.dir_label_from_levels(["1", "2"]), "1-2")
 
+    def test_combined_asset_builder_normalizes_mixed_language_fields(self) -> None:
+        fixed = {"word", "jp", "fu", "png_files", "palette_png_files", "comic_difficulty", "pos_analysis"}
+        entries = [
+            {"word": "것", "ko": ["그것이에요."], "en": ["It is that."], "de": ["Das ist es."]},
+            {"word": "등", "ko": ["1등이에요."], "en": ["It is first place."]},
+        ]
+
+        langs = ios_package_assets_combined.normalize_sentence_language_fields(entries, fixed)
+
+        self.assertEqual(langs, ["de", "en", "ko"])
+        self.assertEqual(entries[1]["de"], [""])
+
     def test_vps_partial_pack_deploy_preserves_existing_catalog(self) -> None:
         script = deploy_packs_to_vps.remote_deploy_script("/srv/vocomi-packs", "test-release", 3)
         self.assertIn('find -L "$root/current"', script)
