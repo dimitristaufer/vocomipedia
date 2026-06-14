@@ -135,6 +135,9 @@ class VocomipediaPipelineTests(unittest.TestCase):
         self.assertIn("--base \"$RELEASE_BASE_SHA\"", workflow)
         self.assertIn("Reconcile MediaWiki entry images", workflow)
         self.assertIn("sync-images-api", workflow)
+        self.assertIn("Refresh MediaWiki deck indexes", workflow)
+        self.assertIn("--changed-items-file tmp/changed-items/none.txt", workflow)
+        self.assertIn("--skip-entry-images", workflow)
         self.assertIn("--source-sha \"${{ github.sha }}\"", workflow)
         self.assertIn("--updated-decks ${{ inputs.deck_codes }}", workflow)
 

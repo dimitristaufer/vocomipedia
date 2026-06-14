@@ -330,6 +330,37 @@ jobs:
               --skip-admin-pages \
               --skip-structure-pages
           done
+      - name: Refresh MediaWiki deck indexes
+        env:
+          MEDIAWIKI_USERNAME: ${{ secrets.MEDIAWIKI_USERNAME }}
+          MEDIAWIKI_PASSWORD: ${{ secrets.MEDIAWIKI_PASSWORD }}
+          MEDIAWIKI_API_URL: ${{ secrets.MEDIAWIKI_API_URL }}
+        run: |
+          test -n "$MEDIAWIKI_USERNAME"
+          test -n "$MEDIAWIKI_PASSWORD"
+          test -n "$MEDIAWIKI_API_URL"
+          cd vocomipedia
+          mkdir -p tmp/changed-items
+          : > tmp/changed-items/none.txt
+          for code in ${{ inputs.deck_codes }}; do
+            lang="${code%%_*}"
+            deck_dir="tmp/actions-data/${lang}/${code}"
+            if [ ! -d "$deck_dir" ]; then
+              case "$code" in
+                ja_*) deck_dir="tmp/actions-data/ja/${code}" ;;
+                zh_*) deck_dir="tmp/actions-data/zh/${code}" ;;
+                ko_*) deck_dir="tmp/actions-data/ko/${code}" ;;
+              esac
+            fi
+            python tools/sync_mediawiki.py push-api \
+              --deck-dir "$deck_dir" \
+              --api-url "$MEDIAWIKI_API_URL" \
+              --approved-only \
+              --changed-items-file tmp/changed-items/none.txt \
+              --skip-admin-pages \
+              --skip-structure-pages \
+              --skip-entry-images
+          done
       - name: Reconcile MediaWiki entry images
         env:
           MEDIAWIKI_USERNAME: ${{ secrets.MEDIAWIKI_USERNAME }}
