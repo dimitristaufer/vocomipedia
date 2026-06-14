@@ -700,6 +700,79 @@ packs:
             self.assertEqual(count, 1)
 
     @unittest.skipUnless(PACK_GENERATION_AVAILABLE, "bundled pack builder is required")
+    def test_release_component_with_combined_data_pack_builds_image_pack(self) -> None:
+        with tempfile.TemporaryDirectory() as td:
+            tmp = Path(td)
+            legacy_json = tmp / "sample_legacy.json"
+            shutil.copy2(FIXTURES / "sample_legacy.json", legacy_json)
+            asset_dir = tmp / "assets"
+            asset_dir.mkdir()
+            Image.new("RGBA", (512, 512), (240, 240, 240, 255)).save(asset_dir / "comic_愛__あい__sample_blank.png")
+            out_root = tmp / "data"
+            catalog = tmp / "packs.yaml"
+            catalog.write_text(
+                """
+schema_version: vocomipedia-pack-catalog-1
+packs:
+  ko_2:
+    title: Korean TOPIK 2
+    language: ko
+    lang_prefix: ko
+    lang_level: "2"
+    level: TOPIK 2
+    source_kind: single
+    target_sentence_key: jp
+    reading_sentence_key: fu
+    data_pack_code: ko_1-2
+""".lstrip(),
+                encoding="utf-8",
+            )
+            run(
+                [
+                    sys.executable,
+                    str(TOOLS / "import_legacy_pack.py"),
+                    "--pack-code",
+                    "ko_2",
+                    "--input-json",
+                    str(legacy_json),
+                    "--asset-dir",
+                    str(asset_dir),
+                    "--out-root",
+                    str(out_root),
+                    "--catalog",
+                    str(catalog),
+                    "--copy-media",
+                    "--mark-approved",
+                ]
+            )
+            release_out = tmp / "release"
+            private_key, public_key = write_test_keypair(tmp)
+            run(
+                [
+                    sys.executable,
+                    str(TOOLS / "release_pack.py"),
+                    "--pack-dir",
+                    str(out_root / "ko" / "ko_2"),
+                    "--pack-generation-dir",
+                    str(PACK_GENERATION_DIR),
+                    "--outdir",
+                    str(release_out),
+                    "--chunk-mb",
+                    "1",
+                    "--app-pubkey",
+                    str(public_key),
+                    "--validate-private-key",
+                    str(private_key),
+                ]
+            )
+
+            metas = sorted((release_out / "packs").glob("ko_2_*.meta.json"))
+            self.assertEqual(len(metas), 1)
+            meta = json.loads(metas[0].read_text(encoding="utf-8"))
+            self.assertEqual(meta["pack_kind"], "images")
+            self.assertEqual(meta["data_pack_code"], "ko_1-2")
+
+    @unittest.skipUnless(PACK_GENERATION_AVAILABLE, "bundled pack builder is required")
     def test_combined_release_rebuilds_data_assets_from_component_decks(self) -> None:
         with tempfile.TemporaryDirectory() as td:
             tmp = Path(td)

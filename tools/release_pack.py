@@ -17,6 +17,13 @@ def run(cmd: list[str], cwd: Path | None = None) -> None:
     subprocess.run(cmd, cwd=str(cwd) if cwd else None, check=True)
 
 
+def release_pack_kind(pack_code: str, data_pack_code: object) -> str:
+    data_code = str(data_pack_code or "").strip().lower()
+    if data_code and data_code != str(pack_code).strip().lower():
+        return "images"
+    return "data"
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description="Build iOS assets and server deck artifacts from a Vocomipedia deck.")
     ap.add_argument("--deck-dir", "--pack-dir", dest="pack_dir", metavar="DECK_DIR", required=True, type=Path)
@@ -111,6 +118,7 @@ def main() -> int:
 
     pubkey = args.app_pubkey or (args.pack_generation_dir / "ios_public.pem")
     builder_name = "make_server_language_pack_chunked_upload.py" if args.upload else "make_server_language_pack_chunked.py"
+    pack_kind = release_pack_kind(str(manifest["pack_code"]), pack.get("data_pack_code"))
     cmd = [
         sys.executable,
         str(args.pack_generation_dir / builder_name),
@@ -127,7 +135,7 @@ def main() -> int:
         "--chunk-mb",
         str(args.chunk_mb),
         "--pack-kind",
-        "data",
+        pack_kind,
     ]
     data_pack_code = pack.get("data_pack_code")
     if data_pack_code:
@@ -149,8 +157,9 @@ def main() -> int:
             str(vpacks[0]),
             "--private-key",
             str(args.validate_private_key),
-            "--require-sqlite",
         ]
+        if pack_kind == "data":
+            validate_cmd.append("--require-sqlite")
         run(validate_cmd)
     print(f"Built release artifacts in {packs_out}")
     return 0
