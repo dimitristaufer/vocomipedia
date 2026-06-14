@@ -4,7 +4,8 @@
 
 """
 Build iOS asset packages by combining two or more language LEVELS
-(e.g. N5 + N4 => LANG_LEVEL "n5-n4", or German A1 + A2 + B1 => "a1-b1").
+(e.g. N5 + N4 => LANG_LEVEL "n5-n4", German A1 + A2 + B1 => "a1-b1",
+or TOPIK 1 + 2 => "1-2").
 
 Output structure (matches single-level packs):
 - A single top-level folder named like "<root>_<LEVELS>", e.g. "japanese_N5-N4" or "german_A1-B1"
@@ -15,7 +16,7 @@ Output structure (matches single-level packs):
 Safety checks included:
 - Ensures you don't mix languages (LANG_PREFIX) across packs.
 - Ensures the directory roots (e.g., "japanese_", "german_") match across packs.
-- Ensures all LEVELs belong to the same "family" (JLPT N- or CEFR A/B/C-).
+- Ensures all LEVELs belong to the same "family" (JLPT N-, CEFR A/B/C-, or numeric TOPIK-style).
 - Ensures the per-entry translation keys ("langs") are consistent across packs.
 - Warns on duplicate 'word' IDs (first occurrence wins).
 
@@ -179,20 +180,24 @@ _JLPT_ORDER = ["n5", "n4", "n3", "n2", "n1"]  # ascending difficulty
 _CEFR_ORDER = ["a1", "a2", "b1", "b2", "c1", "c2"]  # ascending difficulty
 
 def _family(level: str) -> str:
-    """Return 'jlpt' for n1-n5, 'cefr' for a1-c2; raise if unknown."""
+    """Return level family for JLPT, CEFR, or numeric TOPIK-style levels."""
     s = level.strip().lower()
     if re.fullmatch(r"n[1-5]", s):
         return "jlpt"
     if re.fullmatch(r"[abc][12]", s):
         return "cefr"
-    raise ValueError(f"Unknown level format: {level!r}. Expected JLPT (n1–n5) or CEFR (a1–c2).")
+    if re.fullmatch(r"[1-9][0-9]*", s):
+        return "numeric"
+    raise ValueError(f"Unknown level format: {level!r}. Expected JLPT (n1-n5), CEFR (a1-c2), or numeric levels like 1/2.")
 
 def _order_index(level: str) -> int:
     s = level.strip().lower()
     fam = _family(s)
     if fam == "jlpt":
         return _JLPT_ORDER.index(s)
-    return _CEFR_ORDER.index(s)
+    if fam == "cefr":
+        return _CEFR_ORDER.index(s)
+    return int(s) - 1
 
 def condense_levels(levels: List[str]) -> Tuple[str, List[str]]:
     """

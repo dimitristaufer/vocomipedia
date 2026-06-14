@@ -47,6 +47,10 @@ CHANGED_ITEMS_SPEC = importlib.util.spec_from_file_location("changed_deck_items"
 assert CHANGED_ITEMS_SPEC and CHANGED_ITEMS_SPEC.loader
 changed_deck_items = importlib.util.module_from_spec(CHANGED_ITEMS_SPEC)
 CHANGED_ITEMS_SPEC.loader.exec_module(changed_deck_items)
+COMBINED_ASSETS_SPEC = importlib.util.spec_from_file_location("ios_package_assets_combined", TOOLS / "pack_builder" / "ios_package_assets_combined.py")
+assert COMBINED_ASSETS_SPEC and COMBINED_ASSETS_SPEC.loader
+ios_package_assets_combined = importlib.util.module_from_spec(COMBINED_ASSETS_SPEC)
+COMBINED_ASSETS_SPEC.loader.exec_module(ios_package_assets_combined)
 from vocomipedia_nlp import analyze_sentence
 
 
@@ -88,6 +92,10 @@ class VocomipediaPipelineTests(unittest.TestCase):
         self.assertEqual(catalog["es_a2"]["data_pack_code"], "es_a1-a2")
         self.assertEqual(catalog["ko_1"]["data_pack_code"], "ko_1-2")
         self.assertEqual(catalog["ko_2"]["data_pack_code"], "ko_1-2")
+
+    def test_combined_asset_builder_condenses_numeric_levels(self) -> None:
+        self.assertEqual(ios_package_assets_combined.condense_levels(["1", "2"]), ("1-2", ["1", "2"]))
+        self.assertEqual(ios_package_assets_combined.dir_label_from_levels(["1", "2"]), "1-2")
 
     def test_vps_partial_pack_deploy_preserves_existing_catalog(self) -> None:
         script = deploy_packs_to_vps.remote_deploy_script("/srv/vocomi-packs", "test-release", 3)
