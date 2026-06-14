@@ -56,7 +56,7 @@ def scp_base(host: str, user: str, port: int, key: Path) -> list[str]:
 
 
 def collect_artifacts(packs_dir: Path) -> list[Path]:
-    patterns = ["*.vpack", "*.meta.json", "*.sha256", "packs.json", "packs-images.json", "release-state.json"]
+    patterns = ["*.vpack", "*.meta.json", "*.sha256", "packs.json", "packs-images.json", "release-state.json", "release-files.json"]
     files: list[Path] = []
     for pattern in patterns:
         files.extend(sorted(packs_dir.glob(pattern)))
@@ -107,6 +107,13 @@ def write_manifest(packs_dir: Path) -> Path:
     return manifest_path
 
 
+def write_release_files(packs_dir: Path) -> Path:
+    meta_files = sorted(path.name for path in packs_dir.glob("*.meta.json"))
+    path = packs_dir / "release-files.json"
+    path.write_text(json.dumps({"meta_files": meta_files}, ensure_ascii=False, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+    return path
+
+
 def make_archive(files: list[Path], packs_dir: Path, dest: Path) -> None:
     with tarfile.open(dest, "w:gz") as tar:
         for path in files:
@@ -147,6 +154,51 @@ tar -xzf "$root/incoming/$name.tar.gz" -C "$root/incoming/$name"
 rm -f "$root/incoming/$name.tar.gz"
 cd "$root/incoming/$name"
 rm -f packs.json packs-images.json
+python3 - <<'PY'
+import json
+from pathlib import Path
+
+root = Path(".")
+release_files_path = root / "release-files.json"
+try:
+    release_files = json.loads(release_files_path.read_text(encoding="utf-8"))
+except FileNotFoundError:
+    release_files = {{}}
+except json.JSONDecodeError as exc:
+    raise SystemExit(f"release-files.json: invalid JSON: {{exc}}") from exc
+
+new_meta_names = {{str(name) for name in release_files.get("meta_files") or []}}
+all_meta = {{}}
+for meta_path in root.glob("*.meta.json"):
+    try:
+        meta = json.loads(meta_path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError as exc:
+        raise SystemExit(f"{{meta_path}}: invalid JSON: {{exc}}") from exc
+    all_meta[meta_path.name] = (meta_path, meta)
+
+superseded_keys = set()
+for name in new_meta_names:
+    pair = all_meta.get(name)
+    if not pair:
+        continue
+    _path, meta = pair
+    if str(meta.get("pack_kind") or "").lower() == "images" and str(meta.get("data_pack_code") or ""):
+        superseded_keys.add((str(meta.get("lang_prefix") or ""), str(meta.get("lang_level") or "")))
+
+for name, (meta_path, meta) in list(all_meta.items()):
+    if name in new_meta_names:
+        continue
+    key = (str(meta.get("lang_prefix") or ""), str(meta.get("lang_level") or ""))
+    if key not in superseded_keys:
+        continue
+    if str(meta.get("pack_kind") or "").lower() != "data":
+        continue
+    pack_name = str(meta.get("name") or meta_path.name.removesuffix(".meta.json") + ".vpack")
+    for stale in [meta_path, root / pack_name, root / (pack_name.removesuffix(".vpack") + ".sha256")]:
+        stale.unlink(missing_ok=True)
+
+release_files_path.unlink(missing_ok=True)
+PY
 if compgen -G "*.sha256" >/dev/null; then
   for checksum in *.sha256; do
     if sha256sum -c "$checksum" >/dev/null 2>&1; then
@@ -286,6 +338,7 @@ def main() -> int:
         updated_decks=args.updated_decks,
     )
     write_manifest(packs_dir)
+    write_release_files(packs_dir)
     files = collect_artifacts(packs_dir)
     with tempfile.TemporaryDirectory(prefix="vocomipedia-pack-deploy.") as td:
         archive = Path(td) / f"{name}.tar.gz"

@@ -114,6 +114,8 @@ class VocomipediaPipelineTests(unittest.TestCase):
         self.assertIn('find -L "$root/current"', script)
         self.assertIn("-name '*.vpack'", script)
         self.assertIn("-name 'release-state.json'", script)
+        self.assertIn("release-files.json", script)
+        self.assertIn("superseded_keys", script)
         self.assertIn("release-state.previous.json", script)
         self.assertIn('state["deck_git_sha"] = deck_git_sha', script)
         self.assertIn("rm -f packs.json packs-images.json", script)
@@ -122,6 +124,31 @@ class VocomipediaPipelineTests(unittest.TestCase):
         self.assertIn('(root / "packs-images.json").write_text', script)
         self.assertLess(script.find('find -L "$root/current"'), script.find('tar -xzf "$root/incoming/$name.tar.gz"'))
         self.assertLess(script.find('rm -f packs.json packs-images.json'), script.find("if compgen -G"))
+
+    def test_deploy_archive_tracks_new_meta_files_for_stale_pack_cleanup(self) -> None:
+        with tempfile.TemporaryDirectory() as td:
+            tmp = Path(td)
+            (tmp / "ko_2_test.vpack").write_bytes(b"vpack")
+            (tmp / "ko_2_test.sha256").write_text("0" * 64 + "\n", encoding="utf-8")
+            (tmp / "ko_2_test.meta.json").write_text(
+                json.dumps(
+                    {
+                        "name": "ko_2_test.vpack",
+                        "lang_prefix": "ko",
+                        "lang_level": "2",
+                        "pack_kind": "images",
+                        "data_pack_code": "ko_1-2",
+                    }
+                ),
+                encoding="utf-8",
+            )
+
+            release_files = deploy_packs_to_vps.write_release_files(tmp)
+            files = deploy_packs_to_vps.collect_artifacts(tmp)
+            payload = json.loads(release_files.read_text(encoding="utf-8"))
+
+            self.assertIn(release_files.resolve(), {path.resolve() for path in files})
+            self.assertEqual(payload["meta_files"], ["ko_2_test.meta.json"])
 
     def test_release_workflow_uses_previous_release_base_and_reconciles_images(self) -> None:
         workflow = (ROOT / ".github" / "workflows" / "release.yml").read_text(encoding="utf-8")
