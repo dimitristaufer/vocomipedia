@@ -468,6 +468,7 @@ packs:
             asset_dir = tmp / "assets"
             asset_dir.mkdir()
             Image.new("RGBA", (256, 256), (255, 255, 255, 255)).save(asset_dir / "comic_愛__あい__sample_blank.png")
+            Image.new("RGBA", (256, 256), (1, 2, 3, 255)).save(asset_dir / "comic_愛__あい__sample_blank_pal.png")
 
             out_root = tmp / "data"
             run(
@@ -487,6 +488,8 @@ packs:
                 ]
             )
             pack_dir = out_root / "ja" / "ja_n5"
+            with Image.open(pack_dir / "media" / "comic_愛__あい__sample_blank.png") as copied:
+                self.assertEqual(copied.convert("RGBA").getpixel((0, 0)), (1, 2, 3, 255))
             run([sys.executable, str(TOOLS / "validate_corpus.py"), "--root", str(pack_dir), "--strict-media"])
 
             exported = tmp / "exported.json"

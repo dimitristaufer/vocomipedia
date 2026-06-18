@@ -432,6 +432,9 @@ def copy_item_media(item: Dict[str, Any], source_dirs: List[Path], dest_dir: Pat
         return None
     for src_dir in source_dirs:
         src = src_dir / source_name
+        paletted = src.with_name(src.stem + "_pal" + src.suffix)
+        if paletted.exists():
+            src = paletted
         if src.exists():
             dest_dir.mkdir(parents=True, exist_ok=True)
             dest = dest_dir / dest_name
