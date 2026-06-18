@@ -20,6 +20,7 @@ DEFAULT_ENV_PATH = ROOT / "docker" / "local" / ".env"
 DEFAULT_ROOT = ROOT / "data" / "languages"
 DEFAULT_COMPOSE = ROOT / "docker" / "compose.local.yml"
 SEARCH_LANGUAGES = {lang for lang, _label in GLOSS_LANGUAGES}
+NORMALIZED_COLUMN_BYTES = 1024
 
 
 def load_env(path: Path) -> dict[str, str]:
@@ -173,10 +174,10 @@ def table_statements(*, drop_existing: bool = True) -> list[str]:
             + " ("
             "vsi_page_id INT UNSIGNED NOT NULL DEFAULT 0,"
             "vsi_page_title VARBINARY(255) NOT NULL,"
-            "vsi_headword_norm VARBINARY(255) NOT NULL,"
-            "vsi_reading_norm VARBINARY(255) NOT NULL,"
-            "vsi_entry_norm VARBINARY(255) NOT NULL,"
-            "vsi_label_norm VARBINARY(255) NOT NULL,"
+            f"vsi_headword_norm VARBINARY({NORMALIZED_COLUMN_BYTES}) NOT NULL,"
+            f"vsi_reading_norm VARBINARY({NORMALIZED_COLUMN_BYTES}) NOT NULL,"
+            f"vsi_entry_norm VARBINARY({NORMALIZED_COLUMN_BYTES}) NOT NULL,"
+            f"vsi_label_norm VARBINARY({NORMALIZED_COLUMN_BYTES}) NOT NULL,"
             "vsi_item_json MEDIUMTEXT NOT NULL,"
             "vsi_search_text MEDIUMTEXT NOT NULL,"
             "PRIMARY KEY (vsi_page_title),"
@@ -189,6 +190,12 @@ def table_statements(*, drop_existing: bool = True) -> list[str]:
             ") ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;",
         ]
     )
+    if not drop_existing:
+        for column in ["vsi_headword_norm", "vsi_reading_norm", "vsi_entry_norm", "vsi_label_norm"]:
+            statements.append(
+                f"ALTER TABLE vocomipedia_search_item MODIFY {column} "
+                f"VARBINARY({NORMALIZED_COLUMN_BYTES}) NOT NULL;"
+            )
     return statements
 
 

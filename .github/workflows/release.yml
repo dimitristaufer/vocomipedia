@@ -445,7 +445,7 @@ jobs:
           read -r -a COMPOSE_CMD <<< "$REMOTE_COMPOSE"
           "${COMPOSE_CMD[@]}" --env-file docker/local/.env -f docker/compose.local.yml ps
           VOCOMIPEDIA_DOCKER_COMPOSE="$REMOTE_COMPOSE" \
-            python3 tools/reindex_mediawiki_search.py --root data/languages --no-drop
+            python3 tools/reindex_mediawiki_search.py --root data/languages
           SH
       - name: Upload release artifacts and reports
         uses: actions/upload-artifact@v6
