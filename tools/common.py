@@ -7,6 +7,7 @@ import hashlib
 import json
 import re
 import shutil
+import copy
 from pathlib import Path
 from typing import Any, Dict, Iterable, List, Optional, Tuple
 
@@ -31,6 +32,84 @@ NON_TRANSLATION_LIST_KEYS = {
 
 class VocomipediaError(RuntimeError):
     pass
+
+
+KOREAN_JOSA_SUFFIXES = [
+    "에게서", "으로써", "으로서", "에서", "에게", "한테", "부터", "까지", "처럼", "보다", "으로",
+    "이", "가", "은", "는", "을", "를", "의", "에", "로", "과", "와", "도", "만", "랑", "나",
+]
+
+
+def _contains_hangul(value: str) -> bool:
+    return any(0xAC00 <= ord(ch) <= 0xD7AF or 0x1100 <= ord(ch) <= 0x11FF for ch in value)
+
+
+def _strip_final_korean_josa(value: str) -> str:
+    for suffix in KOREAN_JOSA_SUFFIXES:
+        if value.endswith(suffix) and len(value) > len(suffix):
+            return value[: -len(suffix)]
+    return value
+
+
+def _token_text(token: Dict[str, Any], key: str) -> str:
+    value = token.get(key)
+    return str(value or "").strip()
+
+
+def _roman_norm(value: str) -> str:
+    return re.sub(r"^[^\w]+|[^\w]+$", "", str(value or "").casefold())
+
+
+def _matches_main_word(token: Dict[str, Any], *, headword: str, language: str) -> bool:
+    surface = _token_text(token, "surface")
+    lemma = _token_text(token, "lemma")
+    if not surface and not lemma:
+        return False
+
+    if language == "ko" or _contains_hangul(surface + lemma + headword):
+        surface_stem = _strip_final_korean_josa(surface)
+        lemma_stem = _strip_final_korean_josa(lemma)
+        if headword in {surface, surface_stem, lemma, lemma_stem}:
+            return True
+        upos = str(token.get("upos") or token.get("pos") or "").upper()
+        if headword.endswith("다"):
+            stem = headword[:-1]
+            if (upos.startswith("VERB") or upos.startswith("AUX") or upos.startswith("ADJ") or len(stem) >= 2):
+                if surface_stem.startswith(stem) or lemma_stem.startswith(stem):
+                    return True
+                if stem.endswith("하"):
+                    base = stem[:-1]
+                    if base and (surface_stem == base or lemma_stem == base):
+                        return True
+                    if base and any(
+                        surface_stem.startswith(prefix) or lemma_stem.startswith(prefix)
+                        for prefix in (f"{base}해", f"{base}했")
+                    ):
+                        return True
+        return False
+
+    if language in {"ja", "zh", "zh-hans"}:
+        base = headword.replace("～", "").replace("〜", "").replace("？", "").lstrip("ー")
+        return bool(base and (surface == base or lemma == base or surface.startswith(base) or lemma.startswith(base)))
+
+    head = _roman_norm(headword)
+    parts = {part for part in re.split(r"[\s\-–—·‧'’/]+", head) if part}
+    surface_norm = _roman_norm(surface)
+    lemma_norm = _roman_norm(lemma)
+    return surface_norm == head or lemma_norm == head or surface_norm in parts or lemma_norm in parts
+
+
+def annotate_main_word_tokens(item: Dict[str, Any], tokens: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    headword = str(item.get("headword") or item.get("entry_id") or "")
+    language = str(item.get("language") or "").lower()
+    if not headword or not tokens:
+        return tokens
+    if any(token.get("is_main_word") is True for token in tokens if isinstance(token, dict)):
+        return tokens
+    for token in tokens:
+        if isinstance(token, dict):
+            token["is_main_word"] = _matches_main_word(token, headword=headword, language=language)
+    return tokens
 
 
 def read_json(path: Path) -> Any:
@@ -259,10 +338,13 @@ def canonical_to_legacy(item: Dict[str, Any], *, pack: Dict[str, Any]) -> Dict[s
 
     pos_analysis = []
     for s in sentences:
+        tokens = copy.deepcopy(s.get("tokens", []))
+        if isinstance(tokens, list):
+            annotate_main_word_tokens(item, tokens)
         pos_analysis.append(
             {
                 "sentence": s.get("target", ""),
-                "tokens": s.get("tokens", []),
+                "tokens": tokens,
                 "difficulty_aggregated": s.get("difficulty"),
             }
         )
@@ -403,6 +485,23 @@ def validate_item(
         license_status = (item.get("provenance") or {}).get("license_status")
         if not isinstance(license_status, str) or not license_status.strip():
             errors.append("provenance.license_status must be a non-empty string")
+        if str(item.get("language") or "").lower() == "ko":
+            for sentence_idx, sentence in enumerate(item.get("sentences") or []):
+                if not isinstance(sentence, dict):
+                    continue
+                for token_idx, token in enumerate(sentence.get("tokens") or []):
+                    if not isinstance(token, dict):
+                        continue
+                    analyzer = str(token.get("analyzer") or "")
+                    upos = str(token.get("upos") or token.get("pos") or "").upper()
+                    if analyzer == "fallback_unicode_rules":
+                        errors.append(
+                            f"sentences[{sentence_idx}].tokens[{token_idx}] uses fallback Korean POS analyzer"
+                        )
+                    if upos == "X":
+                        errors.append(
+                            f"sentences[{sentence_idx}].tokens[{token_idx}] has unknown Korean POS X"
+                        )
 
     return errors
 

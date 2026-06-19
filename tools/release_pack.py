@@ -17,6 +17,18 @@ def run(cmd: list[str], cwd: Path | None = None) -> None:
     subprocess.run(cmd, cwd=str(cwd) if cwd else None, check=True)
 
 
+def newest_matching_vpack(packs_out: Path, lang_prefix: str, lang_level: str, before: set[Path]) -> Path:
+    prefix = f"{lang_prefix}_{lang_level}_"
+    candidates = [
+        path
+        for path in packs_out.glob(f"{prefix}*.vpack")
+        if path.resolve() not in before
+    ]
+    if not candidates:
+        raise SystemExit(f"No new .vpack artifact found for {lang_prefix}_{lang_level}.")
+    return max(candidates, key=lambda p: p.stat().st_mtime)
+
+
 def release_pack_kind(pack_code: str, data_pack_code: object) -> str:
     data_code = str(data_pack_code or "").strip().lower()
     if data_code and data_code != str(pack_code).strip().lower():
@@ -119,48 +131,67 @@ def main() -> int:
     pubkey = args.app_pubkey or (args.pack_generation_dir / "ios_public.pem")
     builder_name = "make_server_language_pack_chunked_upload.py" if args.upload else "make_server_language_pack_chunked.py"
     pack_kind = release_pack_kind(str(manifest["pack_code"]), pack.get("data_pack_code"))
-    cmd = [
-        sys.executable,
-        str(args.pack_generation_dir / builder_name),
-        "--source",
-        str(ios_assets_dir),
-        "--lang-prefix",
-        str(pack["lang_prefix"]),
-        "--lang-level",
-        str(pack["lang_level"]),
-        "--app-pubkey",
-        str(pubkey),
-        "--outdir",
-        str(packs_out),
-        "--chunk-mb",
-        str(args.chunk_mb),
-        "--pack-kind",
-        pack_kind,
-    ]
     data_pack_code = pack.get("data_pack_code")
-    if data_pack_code:
-        cmd.extend(["--data-pack-code", str(data_pack_code)])
-    if args.upload:
-        cmd.append("--upload")
-        cmd.extend(["--upload-retries", str(args.upload_retries)])
-        cmd.extend(["--upload-timeout", str(args.upload_timeout)])
-        cmd.extend(["--upload-max-concurrency", str(args.upload_max_concurrency)])
-    run(cmd, cwd=args.pack_generation_dir)
-    if args.validate_private_key:
-        vpacks = sorted(packs_out.glob("*.vpack"), key=lambda p: p.stat().st_mtime, reverse=True)
-        if not vpacks:
-            raise SystemExit("No .vpack artifact found to validate.")
-        validate_cmd = [
+    generated_vpacks: list[tuple[Path, bool]] = []
+
+    def build_vpack(kind: str) -> None:
+        before = {path.resolve() for path in packs_out.glob("*.vpack")}
+        cmd = [
             sys.executable,
-            str(Path(__file__).resolve().parent / "validate_vpack.py"),
-            "--vpack",
-            str(vpacks[0]),
-            "--private-key",
-            str(args.validate_private_key),
+            str(args.pack_generation_dir / builder_name),
+            "--source",
+            str(ios_assets_dir),
+            "--lang-prefix",
+            str(pack["lang_prefix"]),
+            "--lang-level",
+            str(pack["lang_level"]),
+            "--app-pubkey",
+            str(pubkey),
+            "--outdir",
+            str(packs_out),
+            "--chunk-mb",
+            str(args.chunk_mb),
+            "--pack-kind",
+            kind,
         ]
-        if pack_kind == "data":
-            validate_cmd.append("--require-sqlite")
-        run(validate_cmd)
+        if data_pack_code:
+            cmd.extend(["--data-pack-code", str(data_pack_code)])
+        if args.upload:
+            cmd.append("--upload")
+            cmd.extend(["--upload-retries", str(args.upload_retries)])
+            cmd.extend(["--upload-timeout", str(args.upload_timeout)])
+            cmd.extend(["--upload-max-concurrency", str(args.upload_max_concurrency)])
+        run(cmd, cwd=args.pack_generation_dir)
+        generated_vpacks.append(
+            (
+                newest_matching_vpack(
+                    packs_out,
+                    str(pack["lang_prefix"]),
+                    str(pack["lang_level"]),
+                    before,
+                ),
+                kind == "data",
+            )
+        )
+
+    build_vpack(pack_kind)
+    if pack_kind == "images":
+        build_vpack("images_preview")
+
+    if args.validate_private_key:
+        for vpack_path, require_sqlite in generated_vpacks:
+            print(f"Validating {vpack_path.name}")
+            validate_cmd = [
+                sys.executable,
+                str(Path(__file__).resolve().parent / "validate_vpack.py"),
+                "--vpack",
+                str(vpack_path),
+                "--private-key",
+                str(args.validate_private_key),
+            ]
+            if require_sqlite:
+                validate_cmd.append("--require-sqlite")
+            run(validate_cmd)
     print(f"Built release artifacts in {packs_out}")
     return 0
 

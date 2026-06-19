@@ -159,6 +159,10 @@ class FallbackAnalyzer(SentenceAnalyzer):
         return AnalysisResult(language=language, sentence=text, tokens=tokens, reading=reading, analyzer=self.source, warnings=warnings)
 
 
+class RequiredAnalyzerUnavailable(RuntimeError):
+    pass
+
+
 def _upos_from_japanese_pos(pos: Any) -> str:
     head = ""
     if isinstance(pos, (list, tuple)) and pos:
@@ -219,14 +223,34 @@ class SudachiAnalyzer(SentenceAnalyzer):
 
 def _upos_from_kiwi_tag(tag: str) -> str:
     tag = str(tag or "")
+    if tag == "NP":
+        return "PRON"
+    if tag.startswith("NR") or tag == "SN":
+        return "NUM"
     if tag.startswith("N"):
         return "NOUN"
+    if tag in {"VA"}:
+        return "ADJ"
+    if tag in {"VX", "VCP", "VCN"}:
+        return "AUX"
     if tag.startswith("V"):
         return "VERB"
     if tag.startswith("J") or tag.startswith("E"):
         return "PART"
+    if tag == "MM":
+        return "DET"
     if tag.startswith("M"):
         return "ADV"
+    if tag == "IC":
+        return "INTJ"
+    if tag in {"XSV", "XSA"}:
+        return "AUX"
+    if tag.startswith("X"):
+        return "PART"
+    if tag == "Z_CODA":
+        return "PART"
+    if tag.startswith("SL") or tag.startswith("SH"):
+        return "NOUN"
     if tag.startswith("S"):
         return "PUNCT"
     return "X"
@@ -400,8 +424,11 @@ def analyzer_for_language(language: str) -> SentenceAnalyzer:
     if language == "ko":
         try:
             return KiwiAnalyzer()
-        except Exception:
-            return FallbackAnalyzer()
+        except Exception as exc:
+            raise RequiredAnalyzerUnavailable(
+                "Korean POS analysis requires kiwipiepy. Install requirements-nlp.txt "
+                "before importing or regenerating Korean decks."
+            ) from exc
     model = SPACY_MODELS.get(language)
     if model:
         try:

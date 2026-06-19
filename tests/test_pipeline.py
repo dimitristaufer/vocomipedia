@@ -13,6 +13,7 @@ import subprocess
 import sys
 import tempfile
 import unittest
+from unittest import mock
 from pathlib import Path
 
 from cryptography.hazmat.primitives import serialization
@@ -51,7 +52,14 @@ COMBINED_ASSETS_SPEC = importlib.util.spec_from_file_location("ios_package_asset
 assert COMBINED_ASSETS_SPEC and COMBINED_ASSETS_SPEC.loader
 ios_package_assets_combined = importlib.util.module_from_spec(COMBINED_ASSETS_SPEC)
 COMBINED_ASSETS_SPEC.loader.exec_module(ios_package_assets_combined)
+DECKSEARCH_SPEC = importlib.util.spec_from_file_location("decksearch_prebuilt_index", TOOLS / "pack_builder" / "decksearch_prebuilt_index.py")
+assert DECKSEARCH_SPEC and DECKSEARCH_SPEC.loader
+decksearch_prebuilt_index = importlib.util.module_from_spec(DECKSEARCH_SPEC)
+sys.modules["decksearch_prebuilt_index"] = decksearch_prebuilt_index
+DECKSEARCH_SPEC.loader.exec_module(decksearch_prebuilt_index)
+import common
 from vocomipedia_nlp import analyze_sentence
+import vocomipedia_nlp.base as nlp_base
 
 
 def run(cmd: list[str], cwd: Path = ROOT) -> subprocess.CompletedProcess:
@@ -93,6 +101,19 @@ class VocomipediaPipelineTests(unittest.TestCase):
         self.assertEqual(catalog["ko_1"]["data_pack_code"], "ko_1-2")
         self.assertEqual(catalog["ko_2"]["data_pack_code"], "ko_1-2")
 
+    def test_pack_manifests_match_catalog_data_pack_codes(self) -> None:
+        catalog = __import__("yaml").safe_load((ROOT / "catalog" / "packs.yaml").read_text(encoding="utf-8"))["packs"]
+        for code, cfg in catalog.items():
+            manifest_path = ROOT / "data" / "languages" / str(cfg["language"]) / code / "pack.json"
+            if not manifest_path.exists():
+                continue
+            manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+            self.assertEqual(
+                manifest.get("data_pack_code"),
+                cfg.get("data_pack_code"),
+                f"{code} data_pack_code mismatch",
+            )
+
     def test_combined_asset_builder_condenses_numeric_levels(self) -> None:
         self.assertEqual(ios_package_assets_combined.condense_levels(["1", "2"]), ("1-2", ["1", "2"]))
         self.assertEqual(ios_package_assets_combined.dir_label_from_levels(["1", "2"]), "1-2")
@@ -108,6 +129,226 @@ class VocomipediaPipelineTests(unittest.TestCase):
 
         self.assertEqual(langs, ["de", "en", "ko"])
         self.assertEqual(entries[1]["de"], [""])
+
+    def test_decksearch_index_keeps_multilingual_sentences_out_of_global_body(self) -> None:
+        with tempfile.TemporaryDirectory() as td:
+            tmp = Path(td)
+            source_db = tmp / "ko_1-2.db"
+            conn = sqlite3.connect(source_db)
+            try:
+                conn.execute("CREATE TABLE vocab(id TEXT PRIMARY KEY, metadata TEXT NOT NULL)")
+                conn.execute(
+                    "INSERT INTO vocab(id, metadata) VALUES (?, ?)",
+                    (
+                        "nom",
+                        json.dumps(
+                            {
+                                "word": "놈",
+                                "word_reading": "nom",
+                                "word_en": "a fellow",
+                                "ko": ["그 놈이 또 약속을 안 지켰어요."],
+                                "en": ["That cat climbed onto the table again."],
+                            },
+                            ensure_ascii=False,
+                        ),
+                    ),
+                )
+                conn.commit()
+            finally:
+                conn.close()
+
+            out_db = tmp / "decksearch.sqlite3"
+            decksearch_prebuilt_index.build_single_index(
+                source_db,
+                out_db,
+                pack_code="ko_1-2",
+                pack_version="test",
+                ui_lang_ids=["en"],
+            )
+
+            conn = sqlite3.connect(out_db)
+            try:
+                body = conn.execute(
+                    "SELECT body_norm FROM decksearch_entries WHERE entry_id='nom'"
+                ).fetchone()[0]
+                self.assertNotIn("cat", body)
+                self.assertNotIn("climbed", body)
+                self.assertEqual(
+                    conn.execute(
+                        """
+                        SELECT COUNT(1) FROM decksearch_postings
+                        WHERE kind='trans_prefix' AND token='cat' AND ui_lang_id='en'
+                        """
+                    ).fetchone()[0],
+                    0,
+                )
+                self.assertEqual(
+                    conn.execute(
+                        """
+                        SELECT COUNT(1) FROM decksearch_postings
+                        WHERE kind='sent_token' AND token='cat' AND ui_lang_id='en'
+                        """
+                    ).fetchone()[0],
+                    0,
+                )
+                self.assertEqual(
+                    conn.execute(
+                        """
+                        SELECT COUNT(1) FROM decksearch_postings
+                        WHERE kind='sent_token' AND token='climbed' AND ui_lang_id='en'
+                        """
+                    ).fetchone()[0],
+                    1,
+                )
+            finally:
+                conn.close()
+
+    def test_release_export_annotates_korean_main_word_without_source_flags(self) -> None:
+        item = {
+            "schema_version": "vocomipedia-item-2",
+            "id": "ko_2:test",
+            "pack_code": "ko_2",
+            "language": "ko",
+            "entry_id": "해설",
+            "headword": "해설",
+            "reading": "",
+            "label": "Commentary",
+            "level": "TOPIK 2",
+            "part_of_speech": ["Noun"],
+            "glosses": {"en": "commentary", "ko": "해설"},
+            "sentences": [
+                {
+                    "target": "선생님의 해설을 들으니 이해가 됐어요.",
+                    "translations": {"en": "I understood after hearing the teacher's explanation."},
+                    "tokens": [
+                        {"surface": "선생님의", "lemma": "선생님의", "pos": "X"},
+                        {"surface": "해설을", "lemma": "해설을", "pos": "X"},
+                        {"surface": "들으니", "lemma": "들으니", "pos": "X"},
+                    ],
+                    "difficulty": 2,
+                }
+            ],
+            "media": {},
+            "review": {},
+            "provenance": {},
+            "app_payload": {},
+        }
+        payload = common.canonical_to_legacy(item, pack={"target_sentence_key": "jp", "reading_sentence_key": "fu"})
+        tokens = payload["pos_analysis"][0]["tokens"]
+        self.assertEqual([token["is_main_word"] for token in tokens], [False, True, False])
+
+    def test_release_export_annotates_korean_dictionary_verbs_without_pos(self) -> None:
+        item = {
+            "schema_version": "vocomipedia-item-2",
+            "id": "ko_2:test-verb",
+            "pack_code": "ko_2",
+            "language": "ko",
+            "entry_id": "구속하다",
+            "headword": "구속하다",
+            "reading": "",
+            "label": "To arrest",
+            "level": "TOPIK 2",
+            "part_of_speech": ["Verb"],
+            "glosses": {"en": "arrest", "ko": "구속하다"},
+            "sentences": [
+                {
+                    "target": "경찰이 범인을 구속했어요.",
+                    "translations": {"en": "The police arrested the criminal."},
+                    "tokens": [
+                        {"surface": "경찰이", "lemma": "경찰이", "pos": "X"},
+                        {"surface": "범인을", "lemma": "범인을", "pos": "X"},
+                        {"surface": "구속했어요", "lemma": "구속했어요", "pos": "X"},
+                    ],
+                    "difficulty": 2,
+                }
+            ],
+            "media": {},
+            "review": {},
+            "provenance": {},
+            "app_payload": {},
+        }
+        payload = common.canonical_to_legacy(item, pack={"target_sentence_key": "jp", "reading_sentence_key": "fu"})
+        tokens = payload["pos_analysis"][0]["tokens"]
+        self.assertEqual([token["is_main_word"] for token in tokens], [False, False, True])
+
+    def test_release_export_annotates_split_korean_hada_compounds(self) -> None:
+        item = {
+            "schema_version": "vocomipedia-item-2",
+            "id": "ko_2:test-split-verb",
+            "pack_code": "ko_2",
+            "language": "ko",
+            "entry_id": "구속하다",
+            "headword": "구속하다",
+            "reading": "",
+            "label": "To arrest",
+            "level": "TOPIK 2",
+            "part_of_speech": ["Verb"],
+            "glosses": {"en": "arrest", "ko": "구속하다"},
+            "sentences": [
+                {
+                    "target": "경찰이 범인을 구속했어요.",
+                    "translations": {"en": "The police arrested the criminal."},
+                    "tokens": [
+                        {"surface": "경찰", "lemma": "경찰", "pos": "NOUN"},
+                        {"surface": "이", "lemma": "이", "pos": "PART"},
+                        {"surface": "범인", "lemma": "범인", "pos": "NOUN"},
+                        {"surface": "을", "lemma": "을", "pos": "PART"},
+                        {"surface": "구속", "lemma": "구속", "pos": "NOUN"},
+                        {"surface": "하", "lemma": "하", "pos": "AUX"},
+                        {"surface": "었어요", "lemma": "었어요", "pos": "PART"},
+                    ],
+                    "difficulty": 2,
+                }
+            ],
+            "media": {},
+            "review": {},
+            "provenance": {},
+            "app_payload": {},
+        }
+        payload = common.canonical_to_legacy(item, pack={"target_sentence_key": "jp", "reading_sentence_key": "fu"})
+        tokens = payload["pos_analysis"][0]["tokens"]
+        self.assertEqual([token["is_main_word"] for token in tokens], [False, False, False, False, True, False, False])
+
+    def test_korean_auto_pos_requires_kiwi_analyzer(self) -> None:
+        nlp_base.analyzer_for_language.cache_clear()
+        try:
+            with mock.patch.object(nlp_base, "KiwiAnalyzer", side_effect=RuntimeError("missing kiwi")):
+                with self.assertRaises(nlp_base.RequiredAnalyzerUnavailable):
+                    nlp_base.analyzer_for_language("ko")
+        finally:
+            nlp_base.analyzer_for_language.cache_clear()
+
+    def test_release_ready_rejects_korean_fallback_pos_tokens(self) -> None:
+        item = {
+            "schema_version": "vocomipedia-item-2",
+            "id": "ko_2:test",
+            "pack_code": "ko_2",
+            "language": "ko",
+            "entry_id": "구속하다",
+            "headword": "구속하다",
+            "reading": "",
+            "sentences": [
+                {
+                    "target": "경찰이 범인을 구속했어요.",
+                    "translations": {"en": "The police arrested the criminal."},
+                    "tokens": [
+                        {
+                            "surface": "구속했어요",
+                            "lemma": "구속했어요",
+                            "upos": "X",
+                            "analyzer": "fallback_unicode_rules",
+                        }
+                    ],
+                }
+            ],
+            "media": {"license": "Vocomi-created", "review_status": "approved"},
+            "review": {"status": "approved"},
+            "provenance": {"license_status": "generated_by_vocomi"},
+            "app_payload": {},
+        }
+        errors = common.validate_item(item, require_release_ready=True, release_allowed_licenses={"Vocomi-created"})
+        self.assertTrue(any("fallback Korean POS analyzer" in error for error in errors), errors)
+        self.assertTrue(any("unknown Korean POS X" in error for error in errors), errors)
 
     def test_vps_partial_pack_deploy_preserves_existing_catalog(self) -> None:
         script = deploy_packs_to_vps.remote_deploy_script("/srv/vocomi-packs", "test-release", 3)
@@ -797,10 +1038,15 @@ packs:
             )
 
             metas = sorted((release_out / "packs").glob("ko_2_*.meta.json"))
-            self.assertEqual(len(metas), 1)
-            meta = json.loads(metas[0].read_text(encoding="utf-8"))
-            self.assertEqual(meta["pack_kind"], "images")
-            self.assertEqual(meta["data_pack_code"], "ko_1-2")
+            self.assertEqual(len(metas), 2)
+            by_kind = {}
+            for meta_path in metas:
+                meta = json.loads(meta_path.read_text(encoding="utf-8"))
+                by_kind[meta["pack_kind"]] = meta
+            self.assertEqual(set(by_kind), {"images", "images_preview"})
+            self.assertEqual(by_kind["images"]["data_pack_code"], "ko_1-2")
+            self.assertEqual(by_kind["images_preview"]["data_pack_code"], "ko_1-2")
+            self.assertNotEqual(by_kind["images"]["name"], by_kind["images_preview"]["name"])
 
     @unittest.skipUnless(PACK_GENERATION_AVAILABLE, "bundled pack builder is required")
     def test_combined_release_rebuilds_data_assets_from_component_decks(self) -> None:

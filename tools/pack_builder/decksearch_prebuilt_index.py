@@ -276,7 +276,7 @@ def build_gloss_sets(entry: Dict, ui_lang: str) -> Tuple[Set[str], Set[str]]:
     gloss_sent: Set[str] = set()
     for t in transl:
         if isinstance(t, str):
-            gloss_sent.update(gloss_tokenize(t, ui_lang=lang))
+            gloss_sent.update(gloss_tokenize(t, ui_lang=lang, min_length=4, cap=16))
 
     return set(list(gloss_head)[:96]), set(list(gloss_sent)[:96])
 
@@ -412,16 +412,6 @@ def _pick_wordtr(entry: Dict, ui_langs: Sequence[str]) -> str:
     return ""
 
 
-def _all_translation_strings(entry: Dict, ui_langs: Sequence[str]) -> List[str]:
-    out: List[str] = []
-    for ui in ui_langs:
-        arr = _translation_list_for_ui(entry, ui)
-        for item in arr:
-            if isinstance(item, str):
-                out.append(item)
-    return out
-
-
 def build_single_index(
     source_db: Path,
     out_db: Path,
@@ -503,8 +493,6 @@ def build_single_index(
             word_reading = obj.get("word_reading") if isinstance(obj.get("word_reading"), str) else ""
 
             wordtr = _pick_wordtr(obj, ui_lang_ids)
-            transl_all = _all_translation_strings(obj, ui_lang_ids)
-
             jp = obj.get("jp") if isinstance(obj.get("jp"), list) else []
             fu = obj.get("fu") if isinstance(obj.get("fu"), list) else []
 
@@ -516,7 +504,6 @@ def build_single_index(
             body_parts: List[str] = [word, word_reading, wordtr]
             body_parts += [s for s in jp if isinstance(s, str)]
             body_parts += [s for s in fu if isinstance(s, str)]
-            body_parts += transl_all
             body_norm = normalize_common(" ".join(body_parts))
 
             entry_rows.append(
@@ -572,9 +559,8 @@ def build_single_index(
                 gloss_head, gloss_sent = build_gloss_sets(obj, ui)
                 for tok in gloss_head:
                     add_post("trans_token", tok, eid, ui)
-                    if len(tok) >= 3:
-                        for l in range(3, min(4, len(tok)) + 1):
-                            add_post("trans_prefix", tok[:l], eid, ui)
+                    if len(tok) >= 4:
+                        add_post("trans_prefix", tok[:4], eid, ui)
                 for tok in gloss_sent:
                     add_post("sent_token", tok, eid, ui)
 
