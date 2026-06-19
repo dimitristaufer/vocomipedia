@@ -21,6 +21,8 @@ services:
       dockerfile: mediawiki/Dockerfile
     image: vocomipedia-mediawiki:1.43-moderation
     restart: unless-stopped
+    environment:
+      MW_REQUIRE_PRIVILEGED_2FA: ${MW_REQUIRE_PRIVILEGED_2FA:-0}
     depends_on:
       db:
         condition: service_healthy

@@ -41,6 +41,25 @@ contributors, explicit license data, and content safety review.
 The Docker config defines real custom namespaces for `Item:`, `Deck:`, and
 `Policy:`. `Vocomipedia:` uses MediaWiki's project namespace.
 
+## Privileged Account 2FA
+
+OATHAuth is loaded by the Docker image and LocalSettings skeleton. Before
+requiring 2FA globally, each `sysop`, `bureaucrat`, and `moderator` account
+must enroll a device from `Special:AccountSecurity`. Once enrollment is complete,
+set this in `docker/local/.env` and restart MediaWiki:
+
+```text
+MW_REQUIRE_PRIVILEGED_2FA=1
+```
+
+Then run:
+
+```bash
+python3 tools/mediawiki_security_audit.py --strict
+```
+
+The audit reports aggregate counts only, not usernames.
+
 ## Stable Export Rule
 
 The exporter should consume only approved page revisions or approved JSON

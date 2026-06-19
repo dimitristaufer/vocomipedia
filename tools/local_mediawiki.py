@@ -35,6 +35,7 @@ DEFAULT_ENV = {
     "MW_ADMIN_PASSWORD": "ChangeMeAdmin123!",
     "MW_BOT_USER": "VocomiBot",
     "MW_BOT_PASSWORD": "ChangeMeBot123!",
+    "MW_REQUIRE_PRIVILEGED_2FA": "0",
 }
 
 
@@ -229,6 +230,7 @@ $wgGroupPermissions['bot']['editsitecss'] = true;
 $wgGroupPermissions['bot']['editsitejs'] = true;
 $wgGroupPermissions['bot']['skip-moderation'] = true;
 $wgGroupPermissions['bot']['skip-move-moderation'] = true;
+$wgGroupPermissions['bot']['noratelimit'] = true;
 $wgGroupPermissions['sysop']['moderation'] = true;
 $wgGroupPermissions['sysop']['move'] = true;
 $wgGroupPermissions['sysop']['move-subpages'] = true;
@@ -248,6 +250,7 @@ $wgGroupPermissions['sysop']['deletedtext'] = true;
 $wgGroupPermissions['sysop']['deleterevision'] = true;
 $wgGroupPermissions['sysop']['oathauth-disable-for-user'] = true;
 $wgGroupPermissions['sysop']['oathauth-view-log'] = true;
+$wgGroupPermissions['sysop']['noratelimit'] = true;
 $wgGroupPermissions['automoderated']['skip-moderation'] = true;
 $wgGroupPermissions['automoderated']['skip-move-moderation'] = false;
 $wgGroupPermissions['automoderated']['upload'] = true;
@@ -263,7 +266,7 @@ $wgEnableUploads = true;
 $wgGroupPermissions['user']['upload'] = false;
 $wgGroupPermissions['sysop']['upload'] = true;
 $wgFileExtensions = [ 'png', 'jpg', 'jpeg', 'webp' ];
-$wgRateLimits = [];
+$wgStrictFileExtensions = true;
 
 wfLoadExtension( 'AbuseFilter' );
 wfLoadExtension( 'SpamBlacklist' );
@@ -294,6 +297,14 @@ $wgCaptchaTriggers['addurl'] = true;
 $wgCaptchaTriggers['badlogin'] = true;
 $wgCaptchaTriggers['create'] = true;
 $wgCaptchaTriggers['edit'] = false;
+$wgRateLimits['createaccount']['ip'] = [ 5, 86400 ];
+$wgRateLimits['badcaptcha']['ip'] = [ 20, 3600 ];
+$wgRateLimits['edit']['user'] = [ 60, 3600 ];
+$wgRateLimits['move']['user'] = [ 20, 3600 ];
+$wgRateLimits['upload']['user'] = [ 20, 3600 ];
+if ( getenv( 'MW_REQUIRE_PRIVILEGED_2FA' ) === '1' ) {{
+    $wgOATHRequiredForGroups = [ 'sysop', 'bureaucrat', 'moderator' ];
+}}
 $wgGroupPermissions['*']['viewedittab'] = true;
 $wgGroupPermissions['user']['viewedittab'] = true;
 $wgGroupPermissions['user']['createclass'] = false;

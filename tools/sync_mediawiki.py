@@ -898,6 +898,8 @@ class MediaWikiClient:
         self.api_url = resolve_api_url(api_url)
         self.cookies = http.cookiejar.CookieJar()
         self.opener = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(self.cookies))
+        self.api_ratelimit_attempts = int(os.environ.get("MEDIAWIKI_API_RATELIMIT_ATTEMPTS", "5"))
+        self.api_ratelimit_initial_sleep = float(os.environ.get("MEDIAWIKI_API_RATELIMIT_INITIAL_SLEEP", "15"))
 
     def open_with_retries(self, request_factory, *, attempts: int = 5) -> bytes:
         last_error: Exception | None = None
@@ -929,6 +931,19 @@ class MediaWikiClient:
 
         return json.loads(self.open_with_retries(make_request).decode("utf-8"))
 
+    def request_with_api_retries(self, params: dict, *, method: str = "POST", context: str) -> dict:
+        for attempt in range(1, max(1, self.api_ratelimit_attempts) + 1):
+            resp = self.request(params, method=method)
+            error = resp.get("error") or {}
+            if error.get("code") != "ratelimited":
+                return resp
+            if attempt >= self.api_ratelimit_attempts:
+                return resp
+            delay = min(300.0, self.api_ratelimit_initial_sleep * (2 ** (attempt - 1)))
+            print(f"MediaWiki API rate-limited {context}; retrying in {delay:.0f}s ({attempt}/{self.api_ratelimit_attempts}).", file=sys.stderr, flush=True)
+            time.sleep(delay)
+        return resp
+
     def login(self, username: str, password: str) -> None:
         token_resp = self.request({"action": "query", "meta": "tokens", "type": "login", "format": "json"})
         login_token = token_resp["query"]["tokens"]["logintoken"]
@@ -950,7 +965,7 @@ class MediaWikiClient:
         return resp["query"]["tokens"]["csrftoken"]
 
     def edit(self, title: str, text: str, summary: str, token: str) -> None:
-        resp = self.request(
+        resp = self.request_with_api_retries(
             {
                 "action": "edit",
                 "title": title,
@@ -959,7 +974,8 @@ class MediaWikiClient:
                 "token": token,
                 "format": "json",
                 "bot": "1",
-            }
+            },
+            context=f"edit {title}",
         )
         if "error" in resp:
             raise RuntimeError(f"MediaWiki edit failed for {title}: {resp}")
@@ -1003,7 +1019,17 @@ class MediaWikiClient:
                 headers={"Content-Type": f"multipart/form-data; boundary={boundary}"},
             )
 
-        data = json.loads(self.open_with_retries(make_request).decode("utf-8"))
+        data = {}
+        for attempt in range(1, max(1, self.api_ratelimit_attempts) + 1):
+            data = json.loads(self.open_with_retries(make_request).decode("utf-8"))
+            error = data.get("error") or {}
+            if error.get("code") != "ratelimited":
+                break
+            if attempt >= self.api_ratelimit_attempts:
+                break
+            delay = min(300.0, self.api_ratelimit_initial_sleep * (2 ** (attempt - 1)))
+            print(f"MediaWiki API rate-limited upload {filename}; retrying in {delay:.0f}s ({attempt}/{self.api_ratelimit_attempts}).", file=sys.stderr, flush=True)
+            time.sleep(delay)
         if "error" in data:
             if (data.get("error") or {}).get("code") == "fileexists-no-change":
                 return

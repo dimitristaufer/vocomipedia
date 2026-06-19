@@ -83,6 +83,16 @@ $wgCaptchaTriggers['badlogin'] = true;
 $wgCaptchaTriggers['create'] = true;
 $wgCaptchaTriggers['edit'] = false;
 
+$wgRateLimits['createaccount']['ip'] = [ 5, 86400 ];
+$wgRateLimits['badcaptcha']['ip'] = [ 20, 3600 ];
+$wgRateLimits['edit']['user'] = [ 60, 3600 ];
+$wgRateLimits['move']['user'] = [ 20, 3600 ];
+$wgRateLimits['upload']['user'] = [ 20, 3600 ];
+
+if ( getenv( 'MW_REQUIRE_PRIVILEGED_2FA' ) === '1' ) {
+    $wgOATHRequiredForGroups = [ 'sysop', 'bureaucrat', 'moderator' ];
+}
+
 $wgGroupPermissions['bureaucrat']['userrights'] = true;
 $wgGroupPermissions['*']['viewedittab'] = true;
 $wgGroupPermissions['user']['viewedittab'] = true;
@@ -110,10 +120,12 @@ $wgGroupPermissions['sysop']['deletedtext'] = true;
 $wgGroupPermissions['sysop']['deleterevision'] = true;
 $wgGroupPermissions['sysop']['oathauth-disable-for-user'] = true;
 $wgGroupPermissions['sysop']['oathauth-view-log'] = true;
+$wgGroupPermissions['sysop']['noratelimit'] = true;
 $wgGroupPermissions['bot']['skip-moderation'] = true;
 $wgGroupPermissions['bot']['move'] = true;
 $wgGroupPermissions['bot']['skip-move-moderation'] = true;
 $wgGroupPermissions['bot']['upload'] = true;
+$wgGroupPermissions['bot']['noratelimit'] = true;
 $wgGroupPermissions['automoderated']['skip-moderation'] = true;
 $wgGroupPermissions['automoderated']['skip-move-moderation'] = false;
 $wgGroupPermissions['moderator']['moderation'] = true;

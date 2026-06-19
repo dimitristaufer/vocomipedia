@@ -18,6 +18,10 @@ on:
         required: false
         default: true
 
+concurrency:
+  group: vocomipedia-production-wiki-sync-back
+  cancel-in-progress: false
+
 jobs:
   sync-back:
     runs-on: ubuntu-latest

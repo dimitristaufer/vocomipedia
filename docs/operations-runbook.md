@@ -120,6 +120,72 @@ wiki edits, auto-applies approved sentence proposals with generated token/POS
 data, and opens a Vocomipedia PR against `data/languages`. Merge that PR before
 running a production release.
 
+## MediaWiki Backups And Restore
+
+MediaWiki backups are separate from canonical-data workflow artifacts. A real
+server backup must include MariaDB, uploaded wiki images, and the generated
+Docker/MediaWiki configuration.
+
+Create and verify a production backup:
+
+```bash
+cd /srv/vocomipedia
+VOCOMIPEDIA_DOCKER_COMPOSE=docker-compose \
+  python3 tools/mediawiki_backup.py backup \
+    --backup-dir /srv/backups/vocomipedia \
+    --latest-symlink \
+    --keep-count 14
+VOCOMIPEDIA_DOCKER_COMPOSE=docker-compose \
+  python3 tools/mediawiki_backup.py verify /srv/backups/vocomipedia/latest.tar.gz
+```
+
+The archive contains:
+
+```text
+manifest.json
+db.sql.gz
+images.tar.gz
+config.tar.gz
+```
+
+`config.tar.gz` includes `docker/local/.env` and the generated
+`LocalSettings.php`; treat the backup bundle as secret material. Store copies
+off the VPS with encryption and checksum verification.
+
+Install the daily systemd backup timer:
+
+```bash
+cd /srv/vocomipedia
+sudo python3 tools/mediawiki_backup.py install-systemd \
+  --backup-dir /srv/backups/vocomipedia \
+  --hour-utc 2
+systemctl list-timers --all | grep vocomipedia-mediawiki-backup
+```
+
+The timer keeps the newest 14 backup bundles by default.
+
+Run a restore drill on a disposable host or cloned stack, never first on
+production:
+
+```bash
+cd /srv/vocomipedia
+VOCOMIPEDIA_DOCKER_COMPOSE=docker-compose \
+  python3 tools/mediawiki_backup.py restore /srv/backups/vocomipedia/latest.tar.gz \
+    --confirm 'RESTORE MEDIAWIKI'
+```
+
+After restore, validate:
+
+```bash
+docker-compose --env-file docker/local/.env -f docker/compose.local.yml ps
+python3 tools/mediawiki_security_audit.py --strict
+VOCOMIPEDIA_DOCKER_COMPOSE=docker-compose \
+  python3 tools/reindex_mediawiki_search.py --root data/languages
+```
+
+Then check representative wiki pages, uploaded images, login, moderation,
+uploads, and `Special:VocomipediaSearch`.
+
 ## Pack Retention
 
 Server deployments should keep the last three static pack releases:
@@ -141,12 +207,18 @@ Review the dry run, then add `--apply`.
 ## Security Review Checklist
 
 - GitHub `production` environment requires approval.
+- `Release And Deploy` and `Wiki Sync Back` have production concurrency groups.
+- `Release And Deploy` creates and verifies a MediaWiki DB/images/config backup
+  before MediaWiki API mutations.
 - GitHub tokens are repo-scoped and no private app repo checkout is required for
   normal sync/release workflows.
 - VPS SSH keys used in GitHub are deploy-only where possible; avoid root keys in
   Actions.
 - MediaWiki admin accounts use strong passwords and 2FA.
+- `MW_REQUIRE_PRIVILEGED_2FA=1` is set only after all privileged users are
+  enrolled in 2FA.
 - MediaWiki bot accounts are scoped to automation and not used interactively.
+- MediaWiki rate limits are not globally disabled.
 - Certbot renewal dry run passes.
 - UFW allows only SSH/HTTP/HTTPS.
 - SSH password login is disabled; root is key-only; `MaxAuthTries` is 3.
@@ -155,3 +227,10 @@ Review the dry run, then add `--apply`.
 - Nginx serves a real `/robots.txt` and rate-limits known AI crawler user
   agents before proxying to MediaWiki.
 - Database and image-volume backups are tested, not only configured.
+
+Run the no-usernames production audit:
+
+```bash
+cd /srv/vocomipedia
+python3 tools/mediawiki_security_audit.py --strict
+```

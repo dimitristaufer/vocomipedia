@@ -5,12 +5,16 @@ from __future__ import annotations
 
 import json
 import contextlib
+import gzip
+import hashlib
 import importlib.util
 import io
+import os
 import shutil
 import sqlite3
 import subprocess
 import sys
+import tarfile
 import tempfile
 import unittest
 from unittest import mock
@@ -44,6 +48,14 @@ DEPLOY_PACKS_SPEC = importlib.util.spec_from_file_location("deploy_packs_to_vps"
 assert DEPLOY_PACKS_SPEC and DEPLOY_PACKS_SPEC.loader
 deploy_packs_to_vps = importlib.util.module_from_spec(DEPLOY_PACKS_SPEC)
 DEPLOY_PACKS_SPEC.loader.exec_module(deploy_packs_to_vps)
+MEDIAWIKI_BACKUP_SPEC = importlib.util.spec_from_file_location("mediawiki_backup", TOOLS / "mediawiki_backup.py")
+assert MEDIAWIKI_BACKUP_SPEC and MEDIAWIKI_BACKUP_SPEC.loader
+mediawiki_backup = importlib.util.module_from_spec(MEDIAWIKI_BACKUP_SPEC)
+MEDIAWIKI_BACKUP_SPEC.loader.exec_module(mediawiki_backup)
+MEDIAWIKI_SECURITY_AUDIT_SPEC = importlib.util.spec_from_file_location("mediawiki_security_audit", TOOLS / "mediawiki_security_audit.py")
+assert MEDIAWIKI_SECURITY_AUDIT_SPEC and MEDIAWIKI_SECURITY_AUDIT_SPEC.loader
+mediawiki_security_audit = importlib.util.module_from_spec(MEDIAWIKI_SECURITY_AUDIT_SPEC)
+MEDIAWIKI_SECURITY_AUDIT_SPEC.loader.exec_module(mediawiki_security_audit)
 CHANGED_ITEMS_SPEC = importlib.util.spec_from_file_location("changed_deck_items", TOOLS / "changed_deck_items.py")
 assert CHANGED_ITEMS_SPEC and CHANGED_ITEMS_SPEC.loader
 changed_deck_items = importlib.util.module_from_spec(CHANGED_ITEMS_SPEC)
@@ -199,6 +211,62 @@ class VocomipediaPipelineTests(unittest.TestCase):
                         """
                     ).fetchone()[0],
                     1,
+                )
+            finally:
+                conn.close()
+
+    def test_decksearch_index_keeps_romanized_readings_out_of_global_body(self) -> None:
+        with tempfile.TemporaryDirectory() as td:
+            tmp = Path(td)
+            source_db = tmp / "ko_1-2.db"
+            conn = sqlite3.connect(source_db)
+            try:
+                conn.execute("CREATE TABLE vocab(id TEXT PRIMARY KEY, metadata TEXT NOT NULL)")
+                conn.execute(
+                    "INSERT INTO vocab(id, metadata) VALUES (?, ?)",
+                    (
+                        "gwan",
+                        json.dumps(
+                            {
+                                "word": "기관",
+                                "word_reading": "gigwan",
+                                "word_en": "an engine or a machine",
+                                "ko": ["새 기관을 달면 속도가 빨라져요."],
+                                "fu": ["sae gigwan eul damyeon sokdoga ppallajyeoyo."],
+                                "en": ["If you install a new engine, the speed increases."],
+                            },
+                            ensure_ascii=False,
+                        ),
+                    ),
+                )
+                conn.commit()
+            finally:
+                conn.close()
+
+            out_db = tmp / "decksearch.sqlite3"
+            decksearch_prebuilt_index.build_single_index(
+                source_db,
+                out_db,
+                pack_code="ko_1-2",
+                pack_version="test",
+                ui_lang_ids=["en"],
+            )
+
+            conn = sqlite3.connect(out_db)
+            try:
+                body = conn.execute(
+                    "SELECT body_norm FROM decksearch_entries WHERE entry_id='gwan'"
+                ).fetchone()[0]
+                self.assertNotIn("gigwan", body)
+                self.assertNotIn("sokdoga", body)
+                self.assertGreater(
+                    conn.execute(
+                        """
+                        SELECT COUNT(1) FROM decksearch_postings
+                        WHERE kind='reading_prefix' AND token='sokd' AND ui_lang_id=''
+                        """
+                    ).fetchone()[0],
+                    0,
                 )
             finally:
                 conn.close()
@@ -401,6 +469,9 @@ class VocomipediaPipelineTests(unittest.TestCase):
         self.assertIn("current/release-state.json", workflow)
         self.assertIn("--release-state-file tmp/release-state/previous.json", workflow)
         self.assertIn("--base \"$RELEASE_BASE_SHA\"", workflow)
+        self.assertIn("Prepare remote MediaWiki checkout and backup", workflow)
+        self.assertIn("tools/mediawiki_backup.py backup", workflow)
+        self.assertIn("tools/mediawiki_backup.py verify", workflow)
         self.assertIn("Reconcile MediaWiki entry images", workflow)
         self.assertIn("sync-images-api", workflow)
         self.assertIn("Refresh MediaWiki deck indexes", workflow)
@@ -408,6 +479,129 @@ class VocomipediaPipelineTests(unittest.TestCase):
         self.assertIn("--skip-entry-images", workflow)
         self.assertIn("--source-sha \"${{ github.sha }}\"", workflow)
         self.assertIn("--updated-decks ${{ inputs.deck_codes }}", workflow)
+
+    def test_production_workflows_serialize_mutating_runs(self) -> None:
+        release = (ROOT / ".github" / "workflows" / "release.yml").read_text(encoding="utf-8")
+        sync_back = (ROOT / ".github" / "workflows" / "wiki-sync-back.yml").read_text(encoding="utf-8")
+        self.assertIn("concurrency:", release)
+        self.assertIn("group: vocomipedia-production-release", release)
+        self.assertIn("cancel-in-progress: false", release)
+        self.assertLess(release.find("Rebuild remote search projection"), release.find("Deploy pack artifacts to VPS"))
+        self.assertIn("concurrency:", sync_back)
+        self.assertIn("group: vocomipedia-production-wiki-sync-back", sync_back)
+
+    def test_mediawiki_backup_bundle_verification_checks_payloads(self) -> None:
+        with tempfile.TemporaryDirectory() as td:
+            tmp = Path(td)
+            db = tmp / "db.sql.gz"
+            with gzip.open(db, "wb") as out:
+                out.write(b"-- test dump\nCREATE TABLE page (page_id int);\n")
+            images = tmp / "images.tar.gz"
+            with tarfile.open(images, "w:gz") as tf:
+                info = tarfile.TarInfo("images/example.jpg")
+                payload = b"image"
+                info.size = len(payload)
+                tf.addfile(info, io.BytesIO(payload))
+            config = tmp / "config.tar.gz"
+            with tarfile.open(config, "w:gz") as tf:
+                info = tarfile.TarInfo("docker/local/LocalSettings.php")
+                payload = b"<?php\n"
+                info.size = len(payload)
+                tf.addfile(info, io.BytesIO(payload))
+            manifest = {
+                "schema_version": "vocomipedia-mediawiki-backup-1",
+                "files": {
+                    path.name: {"sha256": hashlib.sha256(path.read_bytes()).hexdigest(), "bytes": path.stat().st_size}
+                    for path in [db, images, config]
+                },
+            }
+            (tmp / "manifest.json").write_text(json.dumps(manifest), encoding="utf-8")
+            bundle = tmp / "backup.tar.gz"
+            with tarfile.open(bundle, "w:gz") as tf:
+                for path in [tmp / "manifest.json", db, images, config]:
+                    tf.add(path, arcname=path.name)
+
+            verified = mediawiki_backup.verify_backup(bundle)
+            self.assertEqual(verified["schema_version"], "vocomipedia-mediawiki-backup-1")
+
+    def test_mediawiki_backup_systemd_units_are_daily_and_secret_aware(self) -> None:
+        with tempfile.TemporaryDirectory() as td:
+            tmp = Path(td)
+            service = tmp / "vocomipedia-mediawiki-backup.service"
+            timer = tmp / "vocomipedia-mediawiki-backup.timer"
+            mediawiki_backup.write_systemd_units(
+                service_path=service,
+                timer_path=timer,
+                root=ROOT,
+                backup_dir=Path("/srv/backups/vocomipedia"),
+                hour_utc=2,
+            )
+            self.assertIn("tools/mediawiki_backup.py backup", service.read_text(encoding="utf-8"))
+            self.assertIn("--latest-symlink", service.read_text(encoding="utf-8"))
+            self.assertIn("--keep-count 14", service.read_text(encoding="utf-8"))
+            self.assertIn("OnCalendar=*-*-* 02:17:00 UTC", timer.read_text(encoding="utf-8"))
+            self.assertIn("Persistent=true", timer.read_text(encoding="utf-8"))
+
+    def test_mediawiki_backup_prunes_old_archives_by_count(self) -> None:
+        with tempfile.TemporaryDirectory() as td:
+            tmp = Path(td)
+            paths = []
+            for index in range(4):
+                path = tmp / f"2026010{index}T000000Z-mediawiki.tar.gz"
+                path.write_text(str(index), encoding="utf-8")
+                os.utime(path, (index, index))
+                paths.append(path)
+            removed = mediawiki_backup.prune_backups(tmp, keep_count=2)
+            self.assertEqual({path.name for path in removed}, {paths[0].name, paths[1].name})
+            self.assertEqual(
+                {path.name for path in tmp.glob("*-mediawiki.tar.gz")},
+                {paths[2].name, paths[3].name},
+            )
+
+    def test_mediawiki_security_config_requires_privileged_2fa_and_rate_limits(self) -> None:
+        skeleton = (ROOT / "docker" / "LocalSettings.vocomipedia.php").read_text(encoding="utf-8")
+        compose = (ROOT / "docker" / "compose.local.yml").read_text(encoding="utf-8")
+        self.assertIn("wfLoadExtension( 'OATHAuth' );", skeleton)
+        self.assertIn("$wgOATHRequiredForGroups", skeleton)
+        self.assertIn("'sysop'", skeleton)
+        self.assertIn("'bureaucrat'", skeleton)
+        self.assertIn("'moderator'", skeleton)
+        self.assertIn("$wgStrictFileExtensions = true;", skeleton)
+        self.assertNotIn("$wgRateLimits = [];", skeleton)
+        self.assertIn("$wgGroupPermissions['bot']['noratelimit'] = true;", skeleton)
+        self.assertIn("$wgGroupPermissions['sysop']['noratelimit'] = true;", skeleton)
+        self.assertIn("MW_REQUIRE_PRIVILEGED_2FA: ${MW_REQUIRE_PRIVILEGED_2FA:-0}", compose)
+
+        with tempfile.TemporaryDirectory() as td:
+            settings = Path(td) / "LocalSettings.php"
+            settings.write_text(skeleton, encoding="utf-8")
+            checks = {check["id"]: check["ok"] for check in mediawiki_security_audit.setting_checks(settings)}
+            self.assertTrue(checks["oathauth_loaded"])
+            self.assertTrue(checks["oath_required_groups"])
+            self.assertTrue(checks["strict_file_extensions"])
+            self.assertTrue(checks["rate_limits_not_disabled"])
+            self.assertTrue(checks["bot_noratelimit"])
+
+    def test_mediawiki_edit_retries_api_ratelimit_response(self) -> None:
+        client = object.__new__(sync_mediawiki.MediaWikiClient)
+        client.api_ratelimit_attempts = 2
+        client.api_ratelimit_initial_sleep = 0.01
+        responses = [
+            {"error": {"code": "ratelimited", "info": "wait"}},
+            {"edit": {"result": "Success"}},
+        ]
+        calls = []
+
+        def fake_request(params: dict, method: str = "POST") -> dict:
+            calls.append(params)
+            return responses.pop(0)
+
+        client.request = fake_request
+        with mock.patch.object(sync_mediawiki.time, "sleep") as sleep:
+            client.edit("Item:test", "text", "summary", "token")
+
+        self.assertEqual(len(calls), 2)
+        sleep.assert_called_once()
 
     def test_push_api_filters_changed_items_without_shrinking_index_source(self) -> None:
         with tempfile.TemporaryDirectory() as td:

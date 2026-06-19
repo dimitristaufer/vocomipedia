@@ -48,6 +48,7 @@ MEDIAWIKI_SSH_USER          root or another user that can run docker-compose
 MEDIAWIKI_SSH_PRIVATE_KEY   private key for that user
 MEDIAWIKI_REMOTE_ROOT       /srv/vocomipedia
 MEDIAWIKI_DOCKER_COMPOSE    docker-compose
+MEDIAWIKI_BACKUP_DIR        /srv/backups/vocomipedia
 ```
 
 `VOCOMI_REPO_TOKEN` is no longer required for the current Vocomipedia-owned
@@ -113,9 +114,12 @@ MariaDB on the VPS.
 
 ## Search Index
 
-`Release And Deploy` uploads `reports/search/vocomipedia-search-upsert.sql` as
-an artifact. The SQL creates the search projection table if missing and upserts
-selected deck rows without dropping the existing table.
+`Release And Deploy` first updates the remote MediaWiki checkout to the release
+commit and creates a verified server-side MediaWiki backup before it pushes
+pages, reconciles images, or rebuilds search. It then uploads
+`reports/search/vocomipedia-search-upsert.sql` as an artifact. The SQL creates
+the search projection table if missing and upserts selected deck rows without
+dropping the existing table.
 
 For a full rebuild, run `tools/reindex_mediawiki_search.py` on the MediaWiki
 server against the production checkout. The script streams SQL into MariaDB in
@@ -132,3 +136,8 @@ VOCOMIPEDIA_DOCKER_COMPOSE=docker-compose \
 The Python tools create tar backups before mutating local canonical data. The
 workflows upload those backups and reports as artifacts. They do not replace
 server-level MediaWiki database and file backups.
+
+`Release And Deploy` also creates a server-side MediaWiki backup with
+`tools/mediawiki_backup.py` before production wiki mutations. Those backup
+bundles stay on the VPS by default, under `MEDIAWIKI_BACKUP_DIR` or
+`/srv/backups/vocomipedia`.

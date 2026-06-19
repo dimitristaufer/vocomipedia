@@ -501,9 +501,11 @@ def build_single_index(
             reading_norm = normalize_common(jp_to_hiragana(word_reading))
             translation_norm = normalize_common(wordtr)
 
-            body_parts: List[str] = [word, word_reading, wordtr]
+            # Keep readings out of body_norm. They have dedicated reading postings,
+            # while body fallback is intentionally broad and should not match
+            # Latin query fragments inside romanized CJK sentences.
+            body_parts: List[str] = [word, wordtr]
             body_parts += [s for s in jp if isinstance(s, str)]
-            body_parts += [s for s in fu if isinstance(s, str)]
             body_norm = normalize_common(" ".join(body_parts))
 
             entry_rows.append(
