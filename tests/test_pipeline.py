@@ -1070,6 +1070,36 @@ packs:
             self.assertEqual(rebuilt["de"], original["de"])
             self.assertEqual(rebuilt["word_en"], original["word_en"])
 
+    def test_strict_media_validation_rejects_case_mismatch(self) -> None:
+        with tempfile.TemporaryDirectory() as td:
+            media_root = Path(td)
+            (media_root / "Comic.png").write_bytes(b"not really a png")
+            item = {
+                "schema_version": "vocomipedia-item-2",
+                "id": "ja_n5:test",
+                "pack_code": "ja_n5",
+                "language": "ja",
+                "entry_id": "test",
+                "headword": "test",
+                "reading": "",
+                "label": "",
+                "level": "N5",
+                "part_of_speech": ["Noun"],
+                "glosses": {"en": "test"},
+                "sentences": [],
+                "media": {
+                    "image_filename": "comic.png",
+                    "source_image_filename": "comic.png",
+                    "license": "Vocomi-created",
+                    "review_status": "approved",
+                },
+                "review": {"status": "approved"},
+                "provenance": {},
+                "app_payload": {},
+            }
+            errors = common.validate_item(item, strict_media_root=media_root)
+            self.assertIn("missing media file: comic.png", errors)
+
     def test_sync_all_resolves_external_pack_generation_sources(self) -> None:
         with tempfile.TemporaryDirectory() as td:
             tmp = Path(td)

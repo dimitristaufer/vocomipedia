@@ -390,6 +390,23 @@ def validate_token_sequence(sentence: Dict[str, Any]) -> List[str]:
     return errors
 
 
+def path_exists_exact(root: Path, relative_path: str) -> bool:
+    current = root
+    for part in Path(relative_path).parts:
+        if part in {"", "."}:
+            continue
+        if part == "..":
+            return False
+        try:
+            children = {child.name: child for child in current.iterdir()}
+        except OSError:
+            return False
+        current = children.get(part)
+        if current is None:
+            return False
+    return current.is_file()
+
+
 def validate_item(
     item: Dict[str, Any],
     *,
@@ -464,10 +481,15 @@ def validate_item(
         errors.append("media.license must be a non-empty string")
     if not isinstance(media.get("review_status"), str) or not media.get("review_status", "").strip():
         errors.append("media.review_status must be a non-empty string")
-    image_filename = media.get("image_filename")
-    if strict_media_root and image_filename:
-        if not (strict_media_root / image_filename).exists():
-            errors.append(f"missing media file: {image_filename}")
+    if strict_media_root:
+        media_filenames = {
+            filename
+            for filename in (media.get("image_filename"), media.get("source_image_filename"))
+            if isinstance(filename, str) and filename
+        }
+        for media_filename in sorted(media_filenames):
+            if not path_exists_exact(strict_media_root, media_filename):
+                errors.append(f"missing media file: {media_filename}")
     if require_release_ready:
         if status != "approved":
             errors.append(f"review.status must be approved for release, got {status!r}")
