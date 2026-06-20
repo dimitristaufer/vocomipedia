@@ -12,12 +12,19 @@ from common import load_pack_catalog
 def main() -> int:
     ap = argparse.ArgumentParser(description="Resolve Vocomipedia catalog deck selections for workflows.")
     ap.add_argument("--catalog", default=Path("catalog/packs.yaml"), type=Path)
-    ap.add_argument("--decks", nargs="+", required=True)
+    ap.add_argument("--decks", nargs="*", default=[])
+    ap.add_argument("--deck-string", default="", help="Whitespace-separated deck codes from workflow input.")
+    ap.add_argument("--all", action="store_true", help="Select every deck in the catalog.")
     ap.add_argument("--with-combined-siblings", action="store_true")
     args = ap.parse_args()
 
     catalog = load_pack_catalog(args.catalog)
-    selected = [deck.lower() for deck in args.decks]
+    requested_decks = list(args.decks)
+    if args.deck_string:
+        requested_decks.extend(args.deck_string.split())
+    selected = sorted(catalog) if args.all else [deck.lower() for deck in requested_decks]
+    if not selected:
+        raise SystemExit("Provide at least one deck with --decks, or pass --all.")
     missing = sorted(set(selected) - set(catalog))
     if missing:
         raise SystemExit("Unknown deck code(s): " + ", ".join(missing))

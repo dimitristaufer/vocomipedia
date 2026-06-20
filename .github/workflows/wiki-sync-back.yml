@@ -3,9 +3,14 @@ name: Wiki Sync Back
 on:
   workflow_dispatch:
     inputs:
+      process_all_decks:
+        description: "Process every deck from catalog/packs.yaml"
+        type: boolean
+        required: false
+        default: false
       deck_codes:
-        description: "Space-separated deck codes to pull, e.g. ja_n5 de_a2"
-        required: true
+        description: "Space-separated deck codes to pull, e.g. ja_n5 de_a2. Ignored when process_all_decks is true."
+        required: false
         default: "ja_n5"
       export_source:
         description: "Write accepted changes back into Vocomipedia canonical data"
@@ -43,6 +48,18 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           python -m pip install -r vocomipedia/requirements.txt
+      - name: Resolve requested decks
+        env:
+          REQUESTED_DECK_INPUT: ${{ inputs.deck_codes }}
+        run: |
+          cd vocomipedia
+          if [ "${{ inputs.process_all_decks }}" = "true" ]; then
+            REQUESTED_DECK_CODES="$(python tools/catalog_decks.py --all)"
+          else
+            REQUESTED_DECK_CODES="$(python tools/catalog_decks.py --deck-string "$REQUESTED_DECK_INPUT")"
+          fi
+          echo "REQUESTED_DECK_CODES=$REQUESTED_DECK_CODES" >> "$GITHUB_ENV"
+          echo "Requested decks: $REQUESTED_DECK_CODES"
       - name: Pull approved wiki edits and export source changes
         env:
           MEDIAWIKI_API_URL: ${{ secrets.MEDIAWIKI_API_URL }}
@@ -54,7 +71,7 @@ jobs:
           fi
           cd vocomipedia
           python tools/wiki_sync_back.py \
-            --decks ${{ inputs.deck_codes }} \
+            --decks $REQUESTED_DECK_CODES \
             --api-url "$MEDIAWIKI_API_URL" \
             --work-root tmp/wiki-sync-back-data \
             --pulled-root tmp/wiki-pull \

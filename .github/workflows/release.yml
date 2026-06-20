@@ -3,9 +3,14 @@ name: Release And Deploy
 on:
   workflow_dispatch:
     inputs:
+      process_all_decks:
+        description: "Process every deck from catalog/packs.yaml"
+        type: boolean
+        required: false
+        default: false
       deck_codes:
-        description: "Space-separated deck codes, e.g. zh_1 ja_n5 ja_n4"
-        required: true
+        description: "Space-separated deck codes, e.g. zh_1 ja_n5 ja_n4. Ignored when process_all_decks is true."
+        required: false
         default: "ja_n5"
 
 concurrency:
@@ -76,11 +81,21 @@ jobs:
           chmod 600 "$KEY_PATH"
           echo "path=$KEY_PATH" >> "$GITHUB_OUTPUT"
           echo "public_path=$PUB_PATH" >> "$GITHUB_OUTPUT"
-      - name: Resolve deck closure
+      - name: Resolve requested decks and closure
+        env:
+          REQUESTED_DECK_INPUT: ${{ inputs.deck_codes }}
         run: |
           cd vocomipedia
-          SYNC_DECK_CODES="$(python tools/catalog_decks.py --decks ${{ inputs.deck_codes }} --with-combined-siblings)"
+          if [ "${{ inputs.process_all_decks }}" = "true" ]; then
+            REQUESTED_DECK_CODES="$(python tools/catalog_decks.py --all)"
+          else
+            REQUESTED_DECK_CODES="$(python tools/catalog_decks.py --deck-string "$REQUESTED_DECK_INPUT")"
+          fi
+          SYNC_DECK_CODES="$(python tools/catalog_decks.py --decks $REQUESTED_DECK_CODES --with-combined-siblings)"
+          echo "REQUESTED_DECK_CODES=$REQUESTED_DECK_CODES" >> "$GITHUB_ENV"
           echo "SYNC_DECK_CODES=$SYNC_DECK_CODES" >> "$GITHUB_ENV"
+          echo "Requested decks: $REQUESTED_DECK_CODES"
+          echo "Sync closure: $SYNC_DECK_CODES"
       - name: Resolve previous release base
         env:
           VPS_PACK_HOST: ${{ secrets.VPS_PACK_HOST }}
@@ -157,19 +172,19 @@ jobs:
           fi
           if [ -s tmp/release-state/previous.json ]; then
             python tools/changed_deck_items.py \
-              --decks ${{ inputs.deck_codes }} \
+              --decks $REQUESTED_DECK_CODES \
               --release-state-file tmp/release-state/previous.json \
               "${FALLBACK_ARGS[@]}" \
               --head HEAD \
               --out-dir tmp/changed-items
           elif [ -n "${RELEASE_BASE_SHA:-}" ]; then
             python tools/changed_deck_items.py \
-              --decks ${{ inputs.deck_codes }} \
+              --decks $REQUESTED_DECK_CODES \
               --base "$RELEASE_BASE_SHA" \
               --head HEAD \
               --out-dir tmp/changed-items
           else
-            for code in ${{ inputs.deck_codes }}; do
+            for code in $REQUESTED_DECK_CODES; do
               lang="${code%%_*}"
               deck_dir="tmp/actions-data/${lang}/${code}"
               if [ ! -d "$deck_dir" ]; then
@@ -231,7 +246,7 @@ jobs:
       - name: Build release artifacts
         run: |
           cd vocomipedia
-          for code in ${{ inputs.deck_codes }}; do
+          for code in $REQUESTED_DECK_CODES; do
             lang="${code%%_*}"
             deck_dir="tmp/actions-data/${lang}/${code}"
             if [ ! -d "$deck_dir" ]; then
@@ -248,7 +263,7 @@ jobs:
               --validate-private-key "${{ steps.private-key.outputs.path }}"
           done
           python tools/release_combined_pack.py \
-            --changed-decks ${{ inputs.deck_codes }} \
+            --changed-decks $REQUESTED_DECK_CODES \
             --root tmp/actions-data \
             --catalog catalog/packs.yaml \
             --outdir release \
@@ -321,7 +336,7 @@ jobs:
           test -n "$MEDIAWIKI_PASSWORD"
           test -n "$MEDIAWIKI_API_URL"
           cd vocomipedia
-          for code in ${{ inputs.deck_codes }}; do
+          for code in $REQUESTED_DECK_CODES; do
             lang="${code%%_*}"
             deck_dir="tmp/actions-data/${lang}/${code}"
             if [ ! -d "$deck_dir" ]; then
@@ -358,7 +373,7 @@ jobs:
           cd vocomipedia
           mkdir -p tmp/changed-items
           : > tmp/changed-items/none.txt
-          for code in ${{ inputs.deck_codes }}; do
+          for code in $REQUESTED_DECK_CODES; do
             lang="${code%%_*}"
             deck_dir="tmp/actions-data/${lang}/${code}"
             if [ ! -d "$deck_dir" ]; then
@@ -387,7 +402,7 @@ jobs:
           test -n "$MEDIAWIKI_PASSWORD"
           test -n "$MEDIAWIKI_API_URL"
           cd vocomipedia
-          for code in ${{ inputs.deck_codes }}; do
+          for code in $REQUESTED_DECK_CODES; do
             lang="${code%%_*}"
             deck_dir="tmp/actions-data/${lang}/${code}"
             if [ ! -d "$deck_dir" ]; then
@@ -507,7 +522,7 @@ jobs:
             --remote-root "$ROOT" \
             --source-sha "${{ github.sha }}" \
             --github-run-id "${{ github.run_id }}" \
-            --updated-decks ${{ inputs.deck_codes }}
+            --updated-decks $REQUESTED_DECK_CODES
       - name: Upload release artifacts and reports
         uses: actions/upload-artifact@v6
         if: always()

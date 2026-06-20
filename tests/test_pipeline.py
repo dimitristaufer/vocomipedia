@@ -126,6 +126,29 @@ class VocomipediaPipelineTests(unittest.TestCase):
                 f"{code} data_pack_code mismatch",
             )
 
+    def test_catalog_decks_resolves_all_catalog_decks(self) -> None:
+        result = run([sys.executable, str(TOOLS / "catalog_decks.py"), "--all"])
+        decks = result.stdout.strip().split()
+        catalog = common.load_pack_catalog(ROOT / "catalog" / "packs.yaml")
+        self.assertEqual(decks, sorted(catalog))
+        self.assertIn("ko_1", decks)
+        self.assertIn("ko_2", decks)
+
+    def test_catalog_decks_accepts_workflow_deck_string(self) -> None:
+        result = run([sys.executable, str(TOOLS / "catalog_decks.py"), "--deck-string", "ko_2 ko_1"])
+        self.assertEqual(result.stdout.strip(), "ko_1 ko_2")
+
+    def test_catalog_decks_requires_explicit_selection(self) -> None:
+        result = subprocess.run(
+            [sys.executable, str(TOOLS / "catalog_decks.py")],
+            cwd=ROOT,
+            text=True,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.STDOUT,
+        )
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("Provide at least one deck", result.stdout)
+
     def test_combined_asset_builder_condenses_numeric_levels(self) -> None:
         self.assertEqual(ios_package_assets_combined.condense_levels(["1", "2"]), ("1-2", ["1", "2"]))
         self.assertEqual(ios_package_assets_combined.dir_label_from_levels(["1", "2"]), "1-2")
@@ -478,7 +501,15 @@ class VocomipediaPipelineTests(unittest.TestCase):
         self.assertIn("--changed-items-file tmp/changed-items/none.txt", workflow)
         self.assertIn("--skip-entry-images", workflow)
         self.assertIn("--source-sha \"${{ github.sha }}\"", workflow)
-        self.assertIn("--updated-decks ${{ inputs.deck_codes }}", workflow)
+        self.assertIn("process_all_decks:", workflow)
+        self.assertIn("REQUESTED_DECK_INPUT: ${{ inputs.deck_codes }}", workflow)
+        self.assertIn("REQUESTED_DECK_CODES=\"$(python tools/catalog_decks.py --all)\"", workflow)
+        self.assertIn("REQUESTED_DECK_CODES=\"$(python tools/catalog_decks.py --deck-string \"$REQUESTED_DECK_INPUT\")\"", workflow)
+        self.assertIn(
+            "SYNC_DECK_CODES=\"$(python tools/catalog_decks.py --decks $REQUESTED_DECK_CODES --with-combined-siblings)\"",
+            workflow,
+        )
+        self.assertIn("--updated-decks $REQUESTED_DECK_CODES", workflow)
 
     def test_production_workflows_serialize_mutating_runs(self) -> None:
         release = (ROOT / ".github" / "workflows" / "release.yml").read_text(encoding="utf-8")
@@ -489,6 +520,11 @@ class VocomipediaPipelineTests(unittest.TestCase):
         self.assertLess(release.find("Rebuild remote search projection"), release.find("Deploy pack artifacts to VPS"))
         self.assertIn("concurrency:", sync_back)
         self.assertIn("group: vocomipedia-production-wiki-sync-back", sync_back)
+        self.assertIn("process_all_decks:", sync_back)
+        self.assertIn("REQUESTED_DECK_INPUT: ${{ inputs.deck_codes }}", sync_back)
+        self.assertIn("REQUESTED_DECK_CODES=\"$(python tools/catalog_decks.py --all)\"", sync_back)
+        self.assertIn("REQUESTED_DECK_CODES=\"$(python tools/catalog_decks.py --deck-string \"$REQUESTED_DECK_INPUT\")\"", sync_back)
+        self.assertIn("--decks $REQUESTED_DECK_CODES", sync_back)
 
     def test_mediawiki_backup_bundle_verification_checks_payloads(self) -> None:
         with tempfile.TemporaryDirectory() as td:
