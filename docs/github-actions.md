@@ -13,7 +13,10 @@ Vocomipedia has three workflow gates:
 
 ## Required Secrets
 
-Store these in the protected `production` environment:
+Store these as repository or organization secrets. The all-deck production
+workflows fan out into matrix jobs after a single approval gate; GitHub does
+not expose protected-environment secrets to later jobs unless each job declares
+the environment, which would require repeated approvals.
 
 ```text
 MEDIAWIKI_API_URL      https://vocomipedia.com/api.php
@@ -64,8 +67,9 @@ production
 ```
 
 Require approval for that environment. `Wiki Sync Back` and `Release And
-Deploy` both use it so MediaWiki, private-key, and deployment secrets stay
-behind the same manual approval gate.
+Deploy` use it only as a manual approval gate. Keep the secret values above as
+repository or organization secrets so the post-approval matrix jobs can read
+them without triggering one approval per deck.
 
 ## Sync Approved Wiki Edits Back
 

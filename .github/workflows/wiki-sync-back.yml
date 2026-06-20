@@ -73,10 +73,28 @@ jobs:
         run: |
           echo "Production wiki sync back approved for: ${{ needs.plan.outputs.requested_deck_codes }}"
 
+  secrets-preflight:
+    needs: production-approval
+    runs-on: ubuntu-latest
+    env:
+      MEDIAWIKI_API_URL: ${{ secrets.MEDIAWIKI_API_URL }}
+    steps:
+      - name: Verify repository production secrets
+        run: |
+          if [ -z "${MEDIAWIKI_API_URL:-}" ]; then
+            {
+              echo "Missing repository/org secret: MEDIAWIKI_API_URL"
+              echo
+              echo "Single-approval matrix sync-back cannot use secrets stored only in the protected production environment."
+              echo "Move/copy this value to a repository or organization secret, and keep the production environment as the approval gate only."
+            } >&2
+            exit 1
+          fi
+
   sync-back-deck:
     needs:
       - plan
-      - production-approval
+      - secrets-preflight
     runs-on: ubuntu-latest
     timeout-minutes: 330
     permissions:

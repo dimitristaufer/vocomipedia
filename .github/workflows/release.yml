@@ -73,10 +73,54 @@ jobs:
         run: |
           echo "Production release approved for: ${{ needs.plan.outputs.requested_deck_codes }}"
 
+  secrets-preflight:
+    needs: production-approval
+    runs-on: ubuntu-latest
+    env:
+      MEDIAWIKI_API_URL: ${{ secrets.MEDIAWIKI_API_URL }}
+      MEDIAWIKI_PASSWORD: ${{ secrets.MEDIAWIKI_PASSWORD }}
+      MEDIAWIKI_SSH_HOST: ${{ secrets.MEDIAWIKI_SSH_HOST }}
+      MEDIAWIKI_SSH_PRIVATE_KEY: ${{ secrets.MEDIAWIKI_SSH_PRIVATE_KEY }}
+      MEDIAWIKI_SSH_USER: ${{ secrets.MEDIAWIKI_SSH_USER }}
+      MEDIAWIKI_USERNAME: ${{ secrets.MEDIAWIKI_USERNAME }}
+      VOCOMI_IOS_PRIVATE_PEM: ${{ secrets.VOCOMI_IOS_PRIVATE_PEM }}
+      VPS_PACK_HOST: ${{ secrets.VPS_PACK_HOST }}
+      VPS_PACK_SSH_KEY: ${{ secrets.VPS_PACK_SSH_KEY }}
+      VPS_PACK_USER: ${{ secrets.VPS_PACK_USER }}
+    steps:
+      - name: Verify repository production secrets
+        run: |
+          missing=()
+          for name in \
+            MEDIAWIKI_API_URL \
+            MEDIAWIKI_PASSWORD \
+            MEDIAWIKI_SSH_HOST \
+            MEDIAWIKI_SSH_PRIVATE_KEY \
+            MEDIAWIKI_SSH_USER \
+            MEDIAWIKI_USERNAME \
+            VOCOMI_IOS_PRIVATE_PEM \
+            VPS_PACK_HOST \
+            VPS_PACK_SSH_KEY \
+            VPS_PACK_USER
+          do
+            if [ -z "${!name:-}" ]; then
+              missing+=("$name")
+            fi
+          done
+          if [ "${#missing[@]}" -gt 0 ]; then
+            {
+              echo "Missing repository/org secret(s): ${missing[*]}"
+              echo
+              echo "Single-approval matrix releases cannot use secrets stored only in the protected production environment."
+              echo "Move/copy these values to repository or organization secrets, and keep the production environment as the approval gate only."
+            } >&2
+            exit 1
+          fi
+
   build-deck:
     needs:
       - plan
-      - production-approval
+      - secrets-preflight
     runs-on: ubuntu-latest
     timeout-minutes: 330
     permissions:
@@ -228,7 +272,7 @@ jobs:
   build-combined:
     needs:
       - plan
-      - production-approval
+      - secrets-preflight
     if: needs.plan.outputs.combined_data_codes_json != '[]'
     runs-on: ubuntu-latest
     timeout-minutes: 330
@@ -373,7 +417,7 @@ jobs:
   mediawiki-backup:
     needs:
       - plan
-      - production-approval
+      - secrets-preflight
       - build-deck
       - build-combined
     if: always() && needs.build-deck.result == 'success' && (needs.build-combined.result == 'success' || needs.build-combined.result == 'skipped')
