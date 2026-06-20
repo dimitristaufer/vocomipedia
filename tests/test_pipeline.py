@@ -529,6 +529,8 @@ class VocomipediaPipelineTests(unittest.TestCase):
         self.assertIn("REQUESTED_DECK_CODES=\"$(python tools/catalog_decks.py --deck-string \"$REQUESTED_DECK_INPUT\")\"", workflow)
         self.assertIn("requested_decks_json: ${{ steps.plan.outputs.requested_decks_json }}", workflow)
         self.assertIn("combined_data_codes_json: ${{ steps.plan.outputs.combined_data_codes_json }}", workflow)
+        self.assertEqual(workflow.count("environment: production"), 1)
+        self.assertIn("production-approval:", workflow)
         self.assertIn("build-deck:", workflow)
         self.assertIn("build-combined:", workflow)
         self.assertIn("mediawiki-backup:", workflow)
@@ -557,6 +559,8 @@ class VocomipediaPipelineTests(unittest.TestCase):
         self.assertIn("group: vocomipedia-production-wiki-sync-back", sync_back)
         self.assertIn("process_all_decks:", sync_back)
         self.assertIn("REQUESTED_DECK_INPUT: ${{ inputs.deck_codes }}", sync_back)
+        self.assertEqual(sync_back.count("environment: production"), 1)
+        self.assertIn("production-approval:", sync_back)
         self.assertIn("REQUESTED_DECK_CODES=\"$(python tools/catalog_decks.py --all)\"", sync_back)
         self.assertIn("REQUESTED_DECK_CODES=\"$(python tools/catalog_decks.py --deck-string \"$REQUESTED_DECK_INPUT\")\"", sync_back)
         self.assertIn("sync-back-deck:", sync_back)
@@ -566,6 +570,11 @@ class VocomipediaPipelineTests(unittest.TestCase):
         self.assertIn("pattern: vocomipedia-wiki-sync-back-*", sync_back)
         self.assertIn("tools/merge_wiki_sync_reports.py", sync_back)
         self.assertIn("--decks \"$DECK_CODE\"", sync_back)
+
+    def test_release_media_hydration_does_not_delete_local_media(self) -> None:
+        script = (TOOLS / "sync_release_media_from_vps.py").read_text(encoding="utf-8")
+        self.assertIn('"rsync"', script)
+        self.assertNotIn('"--delete"', script)
 
     def test_merge_wiki_sync_reports_combines_per_deck_summaries(self) -> None:
         with tempfile.TemporaryDirectory() as td:

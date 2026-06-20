@@ -64,7 +64,6 @@ def main() -> int:
             [
                 "rsync",
                 "-a",
-                "--delete",
                 "-e",
                 ssh,
                 f"{args.user}@{args.host}:{remote_media}",

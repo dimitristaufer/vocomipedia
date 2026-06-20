@@ -64,10 +64,20 @@ jobs:
           echo "Sync closure: $SYNC_DECK_CODES"
           echo "Combined data packs: $COMBINED_DATA_CODES_JSON"
 
-  build-deck:
+  production-approval:
     needs: plan
     runs-on: ubuntu-latest
     environment: production
+    steps:
+      - name: Approve production release
+        run: |
+          echo "Production release approved for: ${{ needs.plan.outputs.requested_deck_codes }}"
+
+  build-deck:
+    needs:
+      - plan
+      - production-approval
+    runs-on: ubuntu-latest
     timeout-minutes: 330
     permissions:
       contents: read
@@ -216,10 +226,11 @@ jobs:
           if-no-files-found: error
 
   build-combined:
-    needs: plan
+    needs:
+      - plan
+      - production-approval
     if: needs.plan.outputs.combined_data_codes_json != '[]'
     runs-on: ubuntu-latest
-    environment: production
     timeout-minutes: 330
     permissions:
       contents: read
@@ -362,11 +373,11 @@ jobs:
   mediawiki-backup:
     needs:
       - plan
+      - production-approval
       - build-deck
       - build-combined
     if: always() && needs.build-deck.result == 'success' && (needs.build-combined.result == 'success' || needs.build-combined.result == 'skipped')
     runs-on: ubuntu-latest
-    environment: production
     timeout-minutes: 330
     permissions:
       contents: read
@@ -448,7 +459,6 @@ jobs:
       - plan
       - mediawiki-backup
     runs-on: ubuntu-latest
-    environment: production
     timeout-minutes: 330
     permissions:
       contents: read
@@ -719,7 +729,6 @@ jobs:
       - mediawiki-deck
     if: always() && needs.build-deck.result == 'success' && (needs.build-combined.result == 'success' || needs.build-combined.result == 'skipped') && needs.mediawiki-deck.result == 'success'
     runs-on: ubuntu-latest
-    environment: production
     timeout-minutes: 330
     permissions:
       contents: read

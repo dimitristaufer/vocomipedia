@@ -64,10 +64,20 @@ jobs:
           echo "requested_decks_json=$REQUESTED_DECKS_JSON" >> "$GITHUB_OUTPUT"
           echo "Requested decks: $REQUESTED_DECK_CODES"
 
-  sync-back-deck:
+  production-approval:
     needs: plan
     runs-on: ubuntu-latest
     environment: production
+    steps:
+      - name: Approve production wiki sync back
+        run: |
+          echo "Production wiki sync back approved for: ${{ needs.plan.outputs.requested_deck_codes }}"
+
+  sync-back-deck:
+    needs:
+      - plan
+      - production-approval
+    runs-on: ubuntu-latest
     timeout-minutes: 330
     permissions:
       contents: read
