@@ -18,11 +18,64 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  release:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      requested_deck_codes: ${{ steps.plan.outputs.requested_deck_codes }}
+      requested_decks_json: ${{ steps.plan.outputs.requested_decks_json }}
+      sync_deck_codes: ${{ steps.plan.outputs.sync_deck_codes }}
+      combined_data_codes_json: ${{ steps.plan.outputs.combined_data_codes_json }}
+    steps:
+      - name: Checkout Vocomipedia
+        uses: actions/checkout@v6
+        with:
+          path: vocomipedia
+          fetch-depth: 0
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: "pip"
+          cache-dependency-path: vocomipedia/requirements-release.txt
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r vocomipedia/requirements-release.txt
+      - name: Resolve requested decks and closure
+        id: plan
+        env:
+          REQUESTED_DECK_INPUT: ${{ inputs.deck_codes }}
+        run: |
+          cd vocomipedia
+          if [ "${{ inputs.process_all_decks }}" = "true" ]; then
+            REQUESTED_DECK_CODES="$(python tools/catalog_decks.py --all)"
+            REQUESTED_DECKS_JSON="$(python tools/catalog_decks.py --all --format json)"
+            COMBINED_DATA_CODES_JSON="$(python tools/catalog_decks.py --all --combined-data-codes --format json)"
+          else
+            REQUESTED_DECK_CODES="$(python tools/catalog_decks.py --deck-string "$REQUESTED_DECK_INPUT")"
+            REQUESTED_DECKS_JSON="$(python tools/catalog_decks.py --deck-string "$REQUESTED_DECK_INPUT" --format json)"
+            COMBINED_DATA_CODES_JSON="$(python tools/catalog_decks.py --deck-string "$REQUESTED_DECK_INPUT" --combined-data-codes --format json)"
+          fi
+          SYNC_DECK_CODES="$(python tools/catalog_decks.py --decks $REQUESTED_DECK_CODES --with-combined-siblings)"
+          echo "requested_deck_codes=$REQUESTED_DECK_CODES" >> "$GITHUB_OUTPUT"
+          echo "requested_decks_json=$REQUESTED_DECKS_JSON" >> "$GITHUB_OUTPUT"
+          echo "sync_deck_codes=$SYNC_DECK_CODES" >> "$GITHUB_OUTPUT"
+          echo "combined_data_codes_json=$COMBINED_DATA_CODES_JSON" >> "$GITHUB_OUTPUT"
+          echo "Requested decks: $REQUESTED_DECK_CODES"
+          echo "Sync closure: $SYNC_DECK_CODES"
+          echo "Combined data packs: $COMBINED_DATA_CODES_JSON"
+
+  build-deck:
+    needs: plan
     runs-on: ubuntu-latest
     environment: production
+    timeout-minutes: 330
     permissions:
       contents: read
+    strategy:
+      fail-fast: false
+      max-parallel: 3
+      matrix:
+        deck: ${{ fromJson(needs.plan.outputs.requested_decks_json) }}
     steps:
       - name: Checkout Vocomipedia
         uses: actions/checkout@v6
@@ -81,21 +134,344 @@ jobs:
           chmod 600 "$KEY_PATH"
           echo "path=$KEY_PATH" >> "$GITHUB_OUTPUT"
           echo "public_path=$PUB_PATH" >> "$GITHUB_OUTPUT"
-      - name: Resolve requested decks and closure
+      - name: Prepare selected canonical deck
         env:
-          REQUESTED_DECK_INPUT: ${{ inputs.deck_codes }}
+          DECK_CODE: ${{ matrix.deck }}
         run: |
           cd vocomipedia
-          if [ "${{ inputs.process_all_decks }}" = "true" ]; then
-            REQUESTED_DECK_CODES="$(python tools/catalog_decks.py --all)"
-          else
-            REQUESTED_DECK_CODES="$(python tools/catalog_decks.py --deck-string "$REQUESTED_DECK_INPUT")"
+          python tools/prepare_release_workspace.py \
+            --decks "$DECK_CODE" \
+            --out-root tmp/actions-data
+      - name: Hydrate release media from VPS
+        env:
+          DECK_CODE: ${{ matrix.deck }}
+          VPS_PACK_HOST: ${{ secrets.VPS_PACK_HOST }}
+          VPS_PACK_PORT: ${{ secrets.VPS_PACK_PORT }}
+          VPS_PACK_USER: ${{ secrets.VPS_PACK_USER }}
+          VPS_PACK_SSH_KEY: ${{ secrets.VPS_PACK_SSH_KEY }}
+          VPS_CANONICAL_MEDIA_ROOT: ${{ secrets.VPS_CANONICAL_MEDIA_ROOT }}
+        run: |
+          test -n "$VPS_PACK_HOST"
+          test -n "$VPS_PACK_USER"
+          test -n "$VPS_PACK_SSH_KEY"
+          install -m 700 -d ~/.ssh
+          python - ~/.ssh/vocomipedia_pack_deploy <<'PY'
+          import base64
+          import os
+          import sys
+          from pathlib import Path
+
+          raw = os.environ["VPS_PACK_SSH_KEY"].strip()
+          if "\\n" in raw and "\n" not in raw:
+              raw = raw.replace("\\n", "\n")
+          if not raw.startswith("-----BEGIN") and not raw.startswith("OPENSSH"):
+              try:
+                  raw = base64.b64decode(raw, validate=True).decode("utf-8").strip()
+              except Exception:
+                  pass
+          Path(sys.argv[1]).write_text(raw + "\n", encoding="utf-8")
+          Path(sys.argv[1]).chmod(0o600)
+          PY
+          chmod 600 ~/.ssh/vocomipedia_pack_deploy
+          ssh-keygen -y -f ~/.ssh/vocomipedia_pack_deploy >/dev/null
+          PORT="${VPS_PACK_PORT:-22}"
+          REMOTE_ROOT="${VPS_CANONICAL_MEDIA_ROOT:-/srv/vocomipedia/data/languages}"
+          cd vocomipedia
+          python tools/sync_release_media_from_vps.py \
+            --decks "$DECK_CODE" \
+            --root tmp/actions-data \
+            --host "$VPS_PACK_HOST" \
+            --port "$PORT" \
+            --user "$VPS_PACK_USER" \
+            --ssh-key ~/.ssh/vocomipedia_pack_deploy \
+            --remote-root "$REMOTE_ROOT"
+      - name: Validate release workspace
+        run: |
+          cd vocomipedia
+          python tools/validate_corpus.py --root tmp/actions-data --strict-media --release-ready
+      - name: Build deck release artifacts
+        env:
+          DECK_CODE: ${{ matrix.deck }}
+        run: |
+          cd vocomipedia
+          lang="${DECK_CODE%%_*}"
+          deck_dir="tmp/actions-data/${lang}/${DECK_CODE}"
+          if [ ! -d "$deck_dir" ]; then
+            case "$DECK_CODE" in
+              ja_*) deck_dir="tmp/actions-data/ja/${DECK_CODE}" ;;
+              zh_*) deck_dir="tmp/actions-data/zh/${DECK_CODE}" ;;
+              ko_*) deck_dir="tmp/actions-data/ko/${DECK_CODE}" ;;
+            esac
           fi
-          SYNC_DECK_CODES="$(python tools/catalog_decks.py --decks $REQUESTED_DECK_CODES --with-combined-siblings)"
-          echo "REQUESTED_DECK_CODES=$REQUESTED_DECK_CODES" >> "$GITHUB_ENV"
-          echo "SYNC_DECK_CODES=$SYNC_DECK_CODES" >> "$GITHUB_ENV"
-          echo "Requested decks: $REQUESTED_DECK_CODES"
-          echo "Sync closure: $SYNC_DECK_CODES"
+          python tools/release_pack.py \
+            --deck-dir "$deck_dir" \
+            --outdir release \
+            --app-pubkey "${{ steps.private-key.outputs.public_path }}" \
+            --validate-private-key "${{ steps.private-key.outputs.path }}"
+      - name: Upload deck release artifacts
+        uses: actions/upload-artifact@v6
+        with:
+          name: vocomipedia-release-pack-${{ matrix.deck }}
+          path: vocomipedia/release/packs/*
+          if-no-files-found: error
+
+  build-combined:
+    needs: plan
+    if: needs.plan.outputs.combined_data_codes_json != '[]'
+    runs-on: ubuntu-latest
+    environment: production
+    timeout-minutes: 330
+    permissions:
+      contents: read
+    strategy:
+      fail-fast: false
+      max-parallel: 3
+      matrix:
+        data_pack_code: ${{ fromJson(needs.plan.outputs.combined_data_codes_json) }}
+    steps:
+      - name: Checkout Vocomipedia
+        uses: actions/checkout@v6
+        with:
+          path: vocomipedia
+          fetch-depth: 0
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: "pip"
+          cache-dependency-path: vocomipedia/requirements-release.txt
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r vocomipedia/requirements-release.txt
+      - name: Prepare private key
+        id: private-key
+        env:
+          VOCOMI_IOS_PRIVATE_PEM: ${{ secrets.VOCOMI_IOS_PRIVATE_PEM }}
+        run: |
+          test -n "$VOCOMI_IOS_PRIVATE_PEM"
+          KEY_PATH="$RUNNER_TEMP/ios_private.pem"
+          PUB_PATH="$RUNNER_TEMP/ios_public.pem"
+          python - "$KEY_PATH" "$PUB_PATH" <<'PY'
+          import base64
+          import os
+          import sys
+          from pathlib import Path
+          from cryptography.hazmat.primitives import serialization
+
+          raw = os.environ["VOCOMI_IOS_PRIVATE_PEM"].strip()
+          if "\\n" in raw and "\n" not in raw:
+              raw = raw.replace("\\n", "\n")
+          if not raw.startswith("-----BEGIN"):
+              try:
+                  raw = base64.b64decode(raw, validate=True).decode("utf-8").strip()
+              except Exception:
+                  pass
+          pem = (raw + "\n").encode("utf-8")
+          key = serialization.load_pem_private_key(pem, password=None)
+          Path(sys.argv[1]).write_bytes(pem)
+          Path(sys.argv[1]).chmod(0o600)
+          Path(sys.argv[2]).write_bytes(
+              key.public_key().public_bytes(
+                  encoding=serialization.Encoding.PEM,
+                  format=serialization.PublicFormat.SubjectPublicKeyInfo,
+              )
+          )
+          PY
+          chmod 600 "$KEY_PATH"
+          echo "path=$KEY_PATH" >> "$GITHUB_OUTPUT"
+          echo "public_path=$PUB_PATH" >> "$GITHUB_OUTPUT"
+      - name: Resolve combined components
+        env:
+          DATA_PACK_CODE: ${{ matrix.data_pack_code }}
+        run: |
+          cd vocomipedia
+          COMPONENT_DECK_CODES="$(python tools/catalog_decks.py --data-pack-code-components "$DATA_PACK_CODE")"
+          echo "COMPONENT_DECK_CODES=$COMPONENT_DECK_CODES" >> "$GITHUB_ENV"
+          echo "Components for $DATA_PACK_CODE: $COMPONENT_DECK_CODES"
+      - name: Prepare combined canonical decks
+        run: |
+          cd vocomipedia
+          python tools/prepare_release_workspace.py \
+            --decks $COMPONENT_DECK_CODES \
+            --out-root tmp/actions-data
+      - name: Hydrate release media from VPS
+        env:
+          VPS_PACK_HOST: ${{ secrets.VPS_PACK_HOST }}
+          VPS_PACK_PORT: ${{ secrets.VPS_PACK_PORT }}
+          VPS_PACK_USER: ${{ secrets.VPS_PACK_USER }}
+          VPS_PACK_SSH_KEY: ${{ secrets.VPS_PACK_SSH_KEY }}
+          VPS_CANONICAL_MEDIA_ROOT: ${{ secrets.VPS_CANONICAL_MEDIA_ROOT }}
+        run: |
+          test -n "$VPS_PACK_HOST"
+          test -n "$VPS_PACK_USER"
+          test -n "$VPS_PACK_SSH_KEY"
+          install -m 700 -d ~/.ssh
+          python - ~/.ssh/vocomipedia_pack_deploy <<'PY'
+          import base64
+          import os
+          import sys
+          from pathlib import Path
+
+          raw = os.environ["VPS_PACK_SSH_KEY"].strip()
+          if "\\n" in raw and "\n" not in raw:
+              raw = raw.replace("\\n", "\n")
+          if not raw.startswith("-----BEGIN") and not raw.startswith("OPENSSH"):
+              try:
+                  raw = base64.b64decode(raw, validate=True).decode("utf-8").strip()
+              except Exception:
+                  pass
+          Path(sys.argv[1]).write_text(raw + "\n", encoding="utf-8")
+          Path(sys.argv[1]).chmod(0o600)
+          PY
+          chmod 600 ~/.ssh/vocomipedia_pack_deploy
+          ssh-keygen -y -f ~/.ssh/vocomipedia_pack_deploy >/dev/null
+          PORT="${VPS_PACK_PORT:-22}"
+          REMOTE_ROOT="${VPS_CANONICAL_MEDIA_ROOT:-/srv/vocomipedia/data/languages}"
+          cd vocomipedia
+          python tools/sync_release_media_from_vps.py \
+            --decks $COMPONENT_DECK_CODES \
+            --root tmp/actions-data \
+            --host "$VPS_PACK_HOST" \
+            --port "$PORT" \
+            --user "$VPS_PACK_USER" \
+            --ssh-key ~/.ssh/vocomipedia_pack_deploy \
+            --remote-root "$REMOTE_ROOT"
+      - name: Validate release workspace
+        run: |
+          cd vocomipedia
+          python tools/validate_corpus.py --root tmp/actions-data --strict-media --release-ready
+      - name: Build combined release artifacts
+        env:
+          DATA_PACK_CODE: ${{ matrix.data_pack_code }}
+        run: |
+          cd vocomipedia
+          python tools/release_combined_pack.py \
+            --data-pack-code "$DATA_PACK_CODE" \
+            --root tmp/actions-data \
+            --catalog catalog/packs.yaml \
+            --outdir release \
+            --app-pubkey "${{ steps.private-key.outputs.public_path }}" \
+            --validate-private-key "${{ steps.private-key.outputs.path }}"
+      - name: Upload combined release artifacts
+        uses: actions/upload-artifact@v6
+        with:
+          name: vocomipedia-release-pack-combined-${{ matrix.data_pack_code }}
+          path: vocomipedia/release/packs/*
+          if-no-files-found: error
+
+  mediawiki-backup:
+    needs:
+      - plan
+      - build-deck
+      - build-combined
+    if: always() && needs.build-deck.result == 'success' && (needs.build-combined.result == 'success' || needs.build-combined.result == 'skipped')
+    runs-on: ubuntu-latest
+    environment: production
+    timeout-minutes: 330
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout Vocomipedia
+        uses: actions/checkout@v6
+        with:
+          path: vocomipedia
+          fetch-depth: 0
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: "pip"
+          cache-dependency-path: vocomipedia/requirements-release.txt
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r vocomipedia/requirements-release.txt
+      - name: Prepare remote MediaWiki checkout and backup
+        env:
+          MEDIAWIKI_SSH_HOST: ${{ secrets.MEDIAWIKI_SSH_HOST }}
+          MEDIAWIKI_SSH_PORT: ${{ secrets.MEDIAWIKI_SSH_PORT }}
+          MEDIAWIKI_SSH_USER: ${{ secrets.MEDIAWIKI_SSH_USER }}
+          MEDIAWIKI_SSH_PRIVATE_KEY: ${{ secrets.MEDIAWIKI_SSH_PRIVATE_KEY }}
+          MEDIAWIKI_REMOTE_ROOT: ${{ secrets.MEDIAWIKI_REMOTE_ROOT }}
+          MEDIAWIKI_DOCKER_COMPOSE: ${{ secrets.MEDIAWIKI_DOCKER_COMPOSE }}
+          MEDIAWIKI_BACKUP_DIR: ${{ secrets.MEDIAWIKI_BACKUP_DIR }}
+        run: |
+          test -n "$MEDIAWIKI_SSH_HOST"
+          test -n "$MEDIAWIKI_SSH_USER"
+          test -n "$MEDIAWIKI_SSH_PRIVATE_KEY"
+          install -m 700 -d ~/.ssh
+          python - ~/.ssh/vocomipedia_deploy <<'PY'
+          import base64
+          import os
+          import sys
+          from pathlib import Path
+
+          raw = os.environ["MEDIAWIKI_SSH_PRIVATE_KEY"].strip()
+          if "\\n" in raw and "\n" not in raw:
+              raw = raw.replace("\\n", "\n")
+          if not raw.startswith("-----BEGIN") and not raw.startswith("OPENSSH"):
+              try:
+                  raw = base64.b64decode(raw, validate=True).decode("utf-8").strip()
+              except Exception:
+                  pass
+          Path(sys.argv[1]).write_text(raw + "\n", encoding="utf-8")
+          Path(sys.argv[1]).chmod(0o600)
+          PY
+          chmod 600 ~/.ssh/vocomipedia_deploy
+          ssh-keygen -y -f ~/.ssh/vocomipedia_deploy >/dev/null
+          PORT="${MEDIAWIKI_SSH_PORT:-22}"
+          REMOTE_ROOT="${MEDIAWIKI_REMOTE_ROOT:-/srv/vocomipedia}"
+          REMOTE_COMPOSE="${MEDIAWIKI_DOCKER_COMPOSE:-docker-compose}"
+          BACKUP_DIR="${MEDIAWIKI_BACKUP_DIR:-/srv/backups/vocomipedia}"
+          ssh-keyscan -p "$PORT" -H "$MEDIAWIKI_SSH_HOST" >> ~/.ssh/known_hosts
+          ssh -i ~/.ssh/vocomipedia_deploy -p "$PORT" "$MEDIAWIKI_SSH_USER@$MEDIAWIKI_SSH_HOST" \
+            bash -s -- "$REMOTE_ROOT" "$REMOTE_COMPOSE" "$BACKUP_DIR" "${{ github.sha }}" <<'SH'
+          set -Eeuo pipefail
+          REMOTE_ROOT="$1"
+          REMOTE_COMPOSE="$2"
+          BACKUP_DIR="$3"
+          RELEASE_SHA="$4"
+
+          cd "$REMOTE_ROOT"
+          git config --global --add safe.directory "$REMOTE_ROOT"
+          git fetch --depth=2 origin main
+          git reset --hard "$RELEASE_SHA"
+          read -r -a COMPOSE_CMD <<< "$REMOTE_COMPOSE"
+          "${COMPOSE_CMD[@]}" --env-file docker/local/.env -f docker/compose.local.yml ps
+          VOCOMIPEDIA_DOCKER_COMPOSE="$REMOTE_COMPOSE" \
+            python3 tools/mediawiki_backup.py backup --backup-dir "$BACKUP_DIR" --latest-symlink
+          VOCOMIPEDIA_DOCKER_COMPOSE="$REMOTE_COMPOSE" \
+            python3 tools/mediawiki_backup.py verify "$BACKUP_DIR/latest.tar.gz"
+          SH
+
+  mediawiki-deck:
+    needs:
+      - plan
+      - mediawiki-backup
+    runs-on: ubuntu-latest
+    environment: production
+    timeout-minutes: 330
+    permissions:
+      contents: read
+    strategy:
+      fail-fast: false
+      max-parallel: 1
+      matrix:
+        deck: ${{ fromJson(needs.plan.outputs.requested_decks_json) }}
+    steps:
+      - name: Checkout Vocomipedia
+        uses: actions/checkout@v6
+        with:
+          path: vocomipedia
+          fetch-depth: 0
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: "pip"
+          cache-dependency-path: vocomipedia/requirements-release.txt
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r vocomipedia/requirements-release.txt
       - name: Resolve previous release base
         env:
           VPS_PACK_HOST: ${{ secrets.VPS_PACK_HOST }}
@@ -155,13 +531,17 @@ jobs:
             echo "No previous release base is available; changed-item detection will include all selected items."
           fi
           echo "RELEASE_BASE_SHA=$BASE_SHA" >> "$GITHUB_ENV"
-      - name: Prepare selected canonical decks
+      - name: Prepare selected canonical deck
+        env:
+          DECK_CODE: ${{ matrix.deck }}
         run: |
           cd vocomipedia
           python tools/prepare_release_workspace.py \
-            --decks $SYNC_DECK_CODES \
+            --decks "$DECK_CODE" \
             --out-root tmp/actions-data
       - name: Detect changed MediaWiki item pages
+        env:
+          DECK_CODE: ${{ matrix.deck }}
         run: |
           cd vocomipedia
           mkdir -p tmp/changed-items
@@ -172,31 +552,212 @@ jobs:
           fi
           if [ -s tmp/release-state/previous.json ]; then
             python tools/changed_deck_items.py \
-              --decks $REQUESTED_DECK_CODES \
+              --decks "$DECK_CODE" \
               --release-state-file tmp/release-state/previous.json \
               "${FALLBACK_ARGS[@]}" \
               --head HEAD \
               --out-dir tmp/changed-items
           elif [ -n "${RELEASE_BASE_SHA:-}" ]; then
             python tools/changed_deck_items.py \
-              --decks $REQUESTED_DECK_CODES \
+              --decks "$DECK_CODE" \
               --base "$RELEASE_BASE_SHA" \
               --head HEAD \
               --out-dir tmp/changed-items
           else
-            for code in $REQUESTED_DECK_CODES; do
-              lang="${code%%_*}"
-              deck_dir="tmp/actions-data/${lang}/${code}"
-              if [ ! -d "$deck_dir" ]; then
-                case "$code" in
-                  ja_*) deck_dir="tmp/actions-data/ja/${code}" ;;
-                  zh_*) deck_dir="tmp/actions-data/zh/${code}" ;;
-                  ko_*) deck_dir="tmp/actions-data/ko/${code}" ;;
-                esac
-              fi
-              find "$deck_dir/items" -maxdepth 1 -type f -name '*.json' -printf 'items/%f\n' | sort > "tmp/changed-items/${code}.txt"
-            done
+            lang="${DECK_CODE%%_*}"
+            deck_dir="tmp/actions-data/${lang}/${DECK_CODE}"
+            if [ ! -d "$deck_dir" ]; then
+              case "$DECK_CODE" in
+                ja_*) deck_dir="tmp/actions-data/ja/${DECK_CODE}" ;;
+                zh_*) deck_dir="tmp/actions-data/zh/${DECK_CODE}" ;;
+                ko_*) deck_dir="tmp/actions-data/ko/${DECK_CODE}" ;;
+              esac
+            fi
+            find "$deck_dir/items" -maxdepth 1 -type f -name '*.json' -printf 'items/%f\n' | sort > "tmp/changed-items/${DECK_CODE}.txt"
           fi
+      - name: Hydrate release media from VPS
+        env:
+          DECK_CODE: ${{ matrix.deck }}
+          VPS_PACK_HOST: ${{ secrets.VPS_PACK_HOST }}
+          VPS_PACK_PORT: ${{ secrets.VPS_PACK_PORT }}
+          VPS_PACK_USER: ${{ secrets.VPS_PACK_USER }}
+          VPS_PACK_SSH_KEY: ${{ secrets.VPS_PACK_SSH_KEY }}
+          VPS_CANONICAL_MEDIA_ROOT: ${{ secrets.VPS_CANONICAL_MEDIA_ROOT }}
+        run: |
+          test -n "$VPS_PACK_HOST"
+          test -n "$VPS_PACK_USER"
+          test -n "$VPS_PACK_SSH_KEY"
+          install -m 700 -d ~/.ssh
+          python - ~/.ssh/vocomipedia_pack_deploy <<'PY'
+          import base64
+          import os
+          import sys
+          from pathlib import Path
+
+          raw = os.environ["VPS_PACK_SSH_KEY"].strip()
+          if "\\n" in raw and "\n" not in raw:
+              raw = raw.replace("\\n", "\n")
+          if not raw.startswith("-----BEGIN") and not raw.startswith("OPENSSH"):
+              try:
+                  raw = base64.b64decode(raw, validate=True).decode("utf-8").strip()
+              except Exception:
+                  pass
+          Path(sys.argv[1]).write_text(raw + "\n", encoding="utf-8")
+          Path(sys.argv[1]).chmod(0o600)
+          PY
+          chmod 600 ~/.ssh/vocomipedia_pack_deploy
+          ssh-keygen -y -f ~/.ssh/vocomipedia_pack_deploy >/dev/null
+          PORT="${VPS_PACK_PORT:-22}"
+          REMOTE_ROOT="${VPS_CANONICAL_MEDIA_ROOT:-/srv/vocomipedia/data/languages}"
+          cd vocomipedia
+          python tools/sync_release_media_from_vps.py \
+            --decks "$DECK_CODE" \
+            --root tmp/actions-data \
+            --host "$VPS_PACK_HOST" \
+            --port "$PORT" \
+            --user "$VPS_PACK_USER" \
+            --ssh-key ~/.ssh/vocomipedia_pack_deploy \
+            --remote-root "$REMOTE_ROOT"
+      - name: Validate release workspace
+        run: |
+          cd vocomipedia
+          python tools/validate_corpus.py --root tmp/actions-data --strict-media --release-ready
+      - name: Push changed item pages to MediaWiki
+        env:
+          DECK_CODE: ${{ matrix.deck }}
+          MEDIAWIKI_USERNAME: ${{ secrets.MEDIAWIKI_USERNAME }}
+          MEDIAWIKI_PASSWORD: ${{ secrets.MEDIAWIKI_PASSWORD }}
+          MEDIAWIKI_API_URL: ${{ secrets.MEDIAWIKI_API_URL }}
+        run: |
+          test -n "$MEDIAWIKI_USERNAME"
+          test -n "$MEDIAWIKI_PASSWORD"
+          test -n "$MEDIAWIKI_API_URL"
+          cd vocomipedia
+          lang="${DECK_CODE%%_*}"
+          deck_dir="tmp/actions-data/${lang}/${DECK_CODE}"
+          if [ ! -d "$deck_dir" ]; then
+            case "$DECK_CODE" in
+              ja_*) deck_dir="tmp/actions-data/ja/${DECK_CODE}" ;;
+              zh_*) deck_dir="tmp/actions-data/zh/${DECK_CODE}" ;;
+              ko_*) deck_dir="tmp/actions-data/ko/${DECK_CODE}" ;;
+            esac
+          fi
+          changed_file="tmp/changed-items/${DECK_CODE}.txt"
+          if [ ! -s "$changed_file" ]; then
+            echo "No changed item pages for $DECK_CODE; skipping MediaWiki item push."
+            exit 0
+          fi
+          python tools/sync_mediawiki.py push-api \
+            --deck-dir "$deck_dir" \
+            --api-url "$MEDIAWIKI_API_URL" \
+            --approved-only \
+            --changed-items-file "$changed_file" \
+            --skip-if-no-changed-items \
+            --skip-index-pages \
+            --skip-admin-pages \
+            --skip-structure-pages
+      - name: Refresh MediaWiki deck indexes
+        env:
+          DECK_CODE: ${{ matrix.deck }}
+          MEDIAWIKI_USERNAME: ${{ secrets.MEDIAWIKI_USERNAME }}
+          MEDIAWIKI_PASSWORD: ${{ secrets.MEDIAWIKI_PASSWORD }}
+          MEDIAWIKI_API_URL: ${{ secrets.MEDIAWIKI_API_URL }}
+        run: |
+          test -n "$MEDIAWIKI_USERNAME"
+          test -n "$MEDIAWIKI_PASSWORD"
+          test -n "$MEDIAWIKI_API_URL"
+          cd vocomipedia
+          mkdir -p tmp/changed-items
+          : > tmp/changed-items/none.txt
+          lang="${DECK_CODE%%_*}"
+          deck_dir="tmp/actions-data/${lang}/${DECK_CODE}"
+          if [ ! -d "$deck_dir" ]; then
+            case "$DECK_CODE" in
+              ja_*) deck_dir="tmp/actions-data/ja/${DECK_CODE}" ;;
+              zh_*) deck_dir="tmp/actions-data/zh/${DECK_CODE}" ;;
+              ko_*) deck_dir="tmp/actions-data/ko/${DECK_CODE}" ;;
+            esac
+          fi
+          python tools/sync_mediawiki.py push-api \
+            --deck-dir "$deck_dir" \
+            --api-url "$MEDIAWIKI_API_URL" \
+            --approved-only \
+            --changed-items-file tmp/changed-items/none.txt \
+            --skip-admin-pages \
+            --skip-structure-pages \
+            --skip-entry-images
+      - name: Reconcile MediaWiki entry images
+        env:
+          DECK_CODE: ${{ matrix.deck }}
+          MEDIAWIKI_USERNAME: ${{ secrets.MEDIAWIKI_USERNAME }}
+          MEDIAWIKI_PASSWORD: ${{ secrets.MEDIAWIKI_PASSWORD }}
+          MEDIAWIKI_API_URL: ${{ secrets.MEDIAWIKI_API_URL }}
+        run: |
+          test -n "$MEDIAWIKI_USERNAME"
+          test -n "$MEDIAWIKI_PASSWORD"
+          test -n "$MEDIAWIKI_API_URL"
+          cd vocomipedia
+          lang="${DECK_CODE%%_*}"
+          deck_dir="tmp/actions-data/${lang}/${DECK_CODE}"
+          if [ ! -d "$deck_dir" ]; then
+            case "$DECK_CODE" in
+              ja_*) deck_dir="tmp/actions-data/ja/${DECK_CODE}" ;;
+              zh_*) deck_dir="tmp/actions-data/zh/${DECK_CODE}" ;;
+              ko_*) deck_dir="tmp/actions-data/ko/${DECK_CODE}" ;;
+            esac
+          fi
+          python tools/sync_mediawiki.py sync-images-api \
+            --deck-dir "$deck_dir" \
+            --api-url "$MEDIAWIKI_API_URL" \
+            --approved-only
+
+  publish:
+    needs:
+      - plan
+      - build-deck
+      - build-combined
+      - mediawiki-deck
+    if: always() && needs.build-deck.result == 'success' && (needs.build-combined.result == 'success' || needs.build-combined.result == 'skipped') && needs.mediawiki-deck.result == 'success'
+    runs-on: ubuntu-latest
+    environment: production
+    timeout-minutes: 330
+    permissions:
+      contents: read
+    env:
+      REQUESTED_DECK_CODES: ${{ needs.plan.outputs.requested_deck_codes }}
+      SYNC_DECK_CODES: ${{ needs.plan.outputs.sync_deck_codes }}
+    steps:
+      - name: Checkout Vocomipedia
+        uses: actions/checkout@v6
+        with:
+          path: vocomipedia
+          fetch-depth: 0
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: "pip"
+          cache-dependency-path: vocomipedia/requirements-release.txt
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r vocomipedia/requirements-release.txt
+      - name: Download release pack artifacts
+        uses: actions/download-artifact@v6
+        with:
+          pattern: vocomipedia-release-pack-*
+          path: vocomipedia/release/packs
+          merge-multiple: true
+      - name: Verify downloaded release artifacts
+        run: |
+          cd vocomipedia
+          test -n "$(find release/packs -maxdepth 1 -type f -name '*.vpack' -print -quit)"
+          find release/packs -maxdepth 1 -type f | sort
+      - name: Prepare selected canonical decks
+        run: |
+          cd vocomipedia
+          python tools/prepare_release_workspace.py \
+            --decks $SYNC_DECK_CODES \
+            --out-root tmp/actions-data
       - name: Hydrate release media from VPS
         env:
           VPS_PACK_HOST: ${{ secrets.VPS_PACK_HOST }}
@@ -243,180 +804,6 @@ jobs:
         run: |
           cd vocomipedia
           python tools/validate_corpus.py --root tmp/actions-data --strict-media --release-ready
-      - name: Build release artifacts
-        run: |
-          cd vocomipedia
-          for code in $REQUESTED_DECK_CODES; do
-            lang="${code%%_*}"
-            deck_dir="tmp/actions-data/${lang}/${code}"
-            if [ ! -d "$deck_dir" ]; then
-              case "$code" in
-                ja_*) deck_dir="tmp/actions-data/ja/${code}" ;;
-                zh_*) deck_dir="tmp/actions-data/zh/${code}" ;;
-                ko_*) deck_dir="tmp/actions-data/ko/${code}" ;;
-              esac
-            fi
-            python tools/release_pack.py \
-              --deck-dir "$deck_dir" \
-              --outdir release \
-              --app-pubkey "${{ steps.private-key.outputs.public_path }}" \
-              --validate-private-key "${{ steps.private-key.outputs.path }}"
-          done
-          python tools/release_combined_pack.py \
-            --changed-decks $REQUESTED_DECK_CODES \
-            --root tmp/actions-data \
-            --catalog catalog/packs.yaml \
-            --outdir release \
-            --app-pubkey "${{ steps.private-key.outputs.public_path }}" \
-            --validate-private-key "${{ steps.private-key.outputs.path }}"
-      - name: Prepare remote MediaWiki checkout and backup
-        env:
-          MEDIAWIKI_SSH_HOST: ${{ secrets.MEDIAWIKI_SSH_HOST }}
-          MEDIAWIKI_SSH_PORT: ${{ secrets.MEDIAWIKI_SSH_PORT }}
-          MEDIAWIKI_SSH_USER: ${{ secrets.MEDIAWIKI_SSH_USER }}
-          MEDIAWIKI_SSH_PRIVATE_KEY: ${{ secrets.MEDIAWIKI_SSH_PRIVATE_KEY }}
-          MEDIAWIKI_REMOTE_ROOT: ${{ secrets.MEDIAWIKI_REMOTE_ROOT }}
-          MEDIAWIKI_DOCKER_COMPOSE: ${{ secrets.MEDIAWIKI_DOCKER_COMPOSE }}
-          MEDIAWIKI_BACKUP_DIR: ${{ secrets.MEDIAWIKI_BACKUP_DIR }}
-        run: |
-          test -n "$MEDIAWIKI_SSH_HOST"
-          test -n "$MEDIAWIKI_SSH_USER"
-          test -n "$MEDIAWIKI_SSH_PRIVATE_KEY"
-          install -m 700 -d ~/.ssh
-          python - ~/.ssh/vocomipedia_deploy <<'PY'
-          import base64
-          import os
-          import sys
-          from pathlib import Path
-
-          raw = os.environ["MEDIAWIKI_SSH_PRIVATE_KEY"].strip()
-          if "\\n" in raw and "\n" not in raw:
-              raw = raw.replace("\\n", "\n")
-          if not raw.startswith("-----BEGIN") and not raw.startswith("OPENSSH"):
-              try:
-                  raw = base64.b64decode(raw, validate=True).decode("utf-8").strip()
-              except Exception:
-                  pass
-          Path(sys.argv[1]).write_text(raw + "\n", encoding="utf-8")
-          Path(sys.argv[1]).chmod(0o600)
-          PY
-          chmod 600 ~/.ssh/vocomipedia_deploy
-          ssh-keygen -y -f ~/.ssh/vocomipedia_deploy >/dev/null
-          PORT="${MEDIAWIKI_SSH_PORT:-22}"
-          REMOTE_ROOT="${MEDIAWIKI_REMOTE_ROOT:-/srv/vocomipedia}"
-          REMOTE_COMPOSE="${MEDIAWIKI_DOCKER_COMPOSE:-docker-compose}"
-          BACKUP_DIR="${MEDIAWIKI_BACKUP_DIR:-/srv/backups/vocomipedia}"
-          ssh-keyscan -p "$PORT" -H "$MEDIAWIKI_SSH_HOST" >> ~/.ssh/known_hosts
-          ssh -i ~/.ssh/vocomipedia_deploy -p "$PORT" "$MEDIAWIKI_SSH_USER@$MEDIAWIKI_SSH_HOST" \
-            bash -s -- "$REMOTE_ROOT" "$REMOTE_COMPOSE" "$BACKUP_DIR" "${{ github.sha }}" <<'SH'
-          set -Eeuo pipefail
-          REMOTE_ROOT="$1"
-          REMOTE_COMPOSE="$2"
-          BACKUP_DIR="$3"
-          RELEASE_SHA="$4"
-
-          cd "$REMOTE_ROOT"
-          git config --global --add safe.directory "$REMOTE_ROOT"
-          git fetch --depth=2 origin main
-          git reset --hard "$RELEASE_SHA"
-          read -r -a COMPOSE_CMD <<< "$REMOTE_COMPOSE"
-          "${COMPOSE_CMD[@]}" --env-file docker/local/.env -f docker/compose.local.yml ps
-          VOCOMIPEDIA_DOCKER_COMPOSE="$REMOTE_COMPOSE" \
-            python3 tools/mediawiki_backup.py backup --backup-dir "$BACKUP_DIR" --latest-symlink
-          VOCOMIPEDIA_DOCKER_COMPOSE="$REMOTE_COMPOSE" \
-            python3 tools/mediawiki_backup.py verify "$BACKUP_DIR/latest.tar.gz"
-          SH
-      - name: Push changed item pages to MediaWiki
-        env:
-          MEDIAWIKI_USERNAME: ${{ secrets.MEDIAWIKI_USERNAME }}
-          MEDIAWIKI_PASSWORD: ${{ secrets.MEDIAWIKI_PASSWORD }}
-          MEDIAWIKI_API_URL: ${{ secrets.MEDIAWIKI_API_URL }}
-        run: |
-          test -n "$MEDIAWIKI_USERNAME"
-          test -n "$MEDIAWIKI_PASSWORD"
-          test -n "$MEDIAWIKI_API_URL"
-          cd vocomipedia
-          for code in $REQUESTED_DECK_CODES; do
-            lang="${code%%_*}"
-            deck_dir="tmp/actions-data/${lang}/${code}"
-            if [ ! -d "$deck_dir" ]; then
-              case "$code" in
-                ja_*) deck_dir="tmp/actions-data/ja/${code}" ;;
-                zh_*) deck_dir="tmp/actions-data/zh/${code}" ;;
-                ko_*) deck_dir="tmp/actions-data/ko/${code}" ;;
-              esac
-            fi
-            changed_file="tmp/changed-items/${code}.txt"
-            if [ ! -s "$changed_file" ]; then
-              echo "No changed item pages for $code; skipping MediaWiki item push."
-              continue
-            fi
-            python tools/sync_mediawiki.py push-api \
-              --deck-dir "$deck_dir" \
-              --api-url "$MEDIAWIKI_API_URL" \
-              --approved-only \
-              --changed-items-file "$changed_file" \
-              --skip-if-no-changed-items \
-              --skip-index-pages \
-              --skip-admin-pages \
-              --skip-structure-pages
-          done
-      - name: Refresh MediaWiki deck indexes
-        env:
-          MEDIAWIKI_USERNAME: ${{ secrets.MEDIAWIKI_USERNAME }}
-          MEDIAWIKI_PASSWORD: ${{ secrets.MEDIAWIKI_PASSWORD }}
-          MEDIAWIKI_API_URL: ${{ secrets.MEDIAWIKI_API_URL }}
-        run: |
-          test -n "$MEDIAWIKI_USERNAME"
-          test -n "$MEDIAWIKI_PASSWORD"
-          test -n "$MEDIAWIKI_API_URL"
-          cd vocomipedia
-          mkdir -p tmp/changed-items
-          : > tmp/changed-items/none.txt
-          for code in $REQUESTED_DECK_CODES; do
-            lang="${code%%_*}"
-            deck_dir="tmp/actions-data/${lang}/${code}"
-            if [ ! -d "$deck_dir" ]; then
-              case "$code" in
-                ja_*) deck_dir="tmp/actions-data/ja/${code}" ;;
-                zh_*) deck_dir="tmp/actions-data/zh/${code}" ;;
-                ko_*) deck_dir="tmp/actions-data/ko/${code}" ;;
-              esac
-            fi
-            python tools/sync_mediawiki.py push-api \
-              --deck-dir "$deck_dir" \
-              --api-url "$MEDIAWIKI_API_URL" \
-              --approved-only \
-              --changed-items-file tmp/changed-items/none.txt \
-              --skip-admin-pages \
-              --skip-structure-pages \
-              --skip-entry-images
-          done
-      - name: Reconcile MediaWiki entry images
-        env:
-          MEDIAWIKI_USERNAME: ${{ secrets.MEDIAWIKI_USERNAME }}
-          MEDIAWIKI_PASSWORD: ${{ secrets.MEDIAWIKI_PASSWORD }}
-          MEDIAWIKI_API_URL: ${{ secrets.MEDIAWIKI_API_URL }}
-        run: |
-          test -n "$MEDIAWIKI_USERNAME"
-          test -n "$MEDIAWIKI_PASSWORD"
-          test -n "$MEDIAWIKI_API_URL"
-          cd vocomipedia
-          for code in $REQUESTED_DECK_CODES; do
-            lang="${code%%_*}"
-            deck_dir="tmp/actions-data/${lang}/${code}"
-            if [ ! -d "$deck_dir" ]; then
-              case "$code" in
-                ja_*) deck_dir="tmp/actions-data/ja/${code}" ;;
-                zh_*) deck_dir="tmp/actions-data/zh/${code}" ;;
-                ko_*) deck_dir="tmp/actions-data/ko/${code}" ;;
-              esac
-            fi
-            python tools/sync_mediawiki.py sync-images-api \
-              --deck-dir "$deck_dir" \
-              --api-url "$MEDIAWIKI_API_URL" \
-              --approved-only
-          done
       - name: Generate search projection SQL
         run: |
           cd vocomipedia

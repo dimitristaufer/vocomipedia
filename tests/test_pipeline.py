@@ -138,6 +138,28 @@ class VocomipediaPipelineTests(unittest.TestCase):
         result = run([sys.executable, str(TOOLS / "catalog_decks.py"), "--deck-string", "ko_2 ko_1"])
         self.assertEqual(result.stdout.strip(), "ko_1 ko_2")
 
+    def test_catalog_decks_emits_workflow_matrices(self) -> None:
+        all_decks = run([sys.executable, str(TOOLS / "catalog_decks.py"), "--all", "--format", "json"])
+        decks = json.loads(all_decks.stdout)
+        self.assertIn("ko_1", decks)
+        self.assertIn("ko_2", decks)
+
+        combined = run(
+            [
+                sys.executable,
+                str(TOOLS / "catalog_decks.py"),
+                "--deck-string",
+                "ko_2 ko_1",
+                "--combined-data-codes",
+                "--format",
+                "json",
+            ]
+        )
+        self.assertEqual(json.loads(combined.stdout), ["ko_1-2"])
+
+        components = run([sys.executable, str(TOOLS / "catalog_decks.py"), "--data-pack-code-components", "ko_1-2"])
+        self.assertEqual(components.stdout.strip(), "ko_1 ko_2")
+
     def test_catalog_decks_requires_explicit_selection(self) -> None:
         result = subprocess.run(
             [sys.executable, str(TOOLS / "catalog_decks.py")],
@@ -505,6 +527,19 @@ class VocomipediaPipelineTests(unittest.TestCase):
         self.assertIn("REQUESTED_DECK_INPUT: ${{ inputs.deck_codes }}", workflow)
         self.assertIn("REQUESTED_DECK_CODES=\"$(python tools/catalog_decks.py --all)\"", workflow)
         self.assertIn("REQUESTED_DECK_CODES=\"$(python tools/catalog_decks.py --deck-string \"$REQUESTED_DECK_INPUT\")\"", workflow)
+        self.assertIn("requested_decks_json: ${{ steps.plan.outputs.requested_decks_json }}", workflow)
+        self.assertIn("combined_data_codes_json: ${{ steps.plan.outputs.combined_data_codes_json }}", workflow)
+        self.assertIn("build-deck:", workflow)
+        self.assertIn("build-combined:", workflow)
+        self.assertIn("mediawiki-backup:", workflow)
+        self.assertIn("mediawiki-deck:", workflow)
+        self.assertIn("matrix:", workflow)
+        self.assertIn("deck: ${{ fromJson(needs.plan.outputs.requested_decks_json) }}", workflow)
+        self.assertIn("data_pack_code: ${{ fromJson(needs.plan.outputs.combined_data_codes_json) }}", workflow)
+        self.assertIn("max-parallel: 1", workflow)
+        self.assertIn("actions/download-artifact@v6", workflow)
+        self.assertIn("pattern: vocomipedia-release-pack-*", workflow)
+        self.assertIn("merge-multiple: true", workflow)
         self.assertIn(
             "SYNC_DECK_CODES=\"$(python tools/catalog_decks.py --decks $REQUESTED_DECK_CODES --with-combined-siblings)\"",
             workflow,
@@ -524,7 +559,44 @@ class VocomipediaPipelineTests(unittest.TestCase):
         self.assertIn("REQUESTED_DECK_INPUT: ${{ inputs.deck_codes }}", sync_back)
         self.assertIn("REQUESTED_DECK_CODES=\"$(python tools/catalog_decks.py --all)\"", sync_back)
         self.assertIn("REQUESTED_DECK_CODES=\"$(python tools/catalog_decks.py --deck-string \"$REQUESTED_DECK_INPUT\")\"", sync_back)
-        self.assertIn("--decks $REQUESTED_DECK_CODES", sync_back)
+        self.assertIn("sync-back-deck:", sync_back)
+        self.assertIn("aggregate:", sync_back)
+        self.assertIn("max-parallel: 1", sync_back)
+        self.assertIn("deck: ${{ fromJson(needs.plan.outputs.requested_decks_json) }}", sync_back)
+        self.assertIn("pattern: vocomipedia-wiki-sync-back-*", sync_back)
+        self.assertIn("tools/merge_wiki_sync_reports.py", sync_back)
+        self.assertIn("--decks \"$DECK_CODE\"", sync_back)
+
+    def test_merge_wiki_sync_reports_combines_per_deck_summaries(self) -> None:
+        with tempfile.TemporaryDirectory() as td:
+            reports = Path(td) / "reports" / "wiki-sync-back"
+            for deck, pulled in [("ko_1", 2), ("ko_2", 3)]:
+                deck_dir = reports / deck
+                deck_dir.mkdir(parents=True)
+                (deck_dir / "summary.json").write_text(
+                    json.dumps(
+                        {
+                            "decks": [
+                                {
+                                    "deck": deck,
+                                    "pulled_count": pulled,
+                                    "applied_files": pulled,
+                                    "canonical_dir": f"/tmp/{deck}",
+                                    "source_changed": deck == "ko_2",
+                                }
+                            ],
+                            "active_sentence_proposals": [],
+                        }
+                    ),
+                    encoding="utf-8",
+                )
+
+            run([sys.executable, str(TOOLS / "merge_wiki_sync_reports.py"), "--reports-dir", str(reports), "--export-source"])
+            summary = (reports / "summary.md").read_text(encoding="utf-8")
+            payload = json.loads((reports / "summary.json").read_text(encoding="utf-8"))
+            self.assertIn("| ko_1 | 2 | 2 | /tmp/ko_1 | no |", summary)
+            self.assertIn("| ko_2 | 3 | 3 | /tmp/ko_2 | yes |", summary)
+            self.assertEqual([row["deck"] for row in payload["decks"]], ["ko_1", "ko_2"])
 
     def test_mediawiki_backup_bundle_verification_checks_payloads(self) -> None:
         with tempfile.TemporaryDirectory() as td:
