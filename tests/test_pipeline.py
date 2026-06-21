@@ -572,6 +572,11 @@ class VocomipediaPipelineTests(unittest.TestCase):
         self.assertIn("max-parallel: 1", sync_back)
         self.assertIn("deck: ${{ fromJson(needs.plan.outputs.requested_decks_json) }}", sync_back)
         self.assertIn("pattern: vocomipedia-wiki-sync-back-*", sync_back)
+        self.assertIn("PYTHONPATH: tools", sync_back)
+        self.assertIn("Resolve per-deck artifact paths", sync_back)
+        self.assertIn("path: ${{ steps.artifact-paths.outputs.paths }}", sync_back)
+        self.assertIn('if [ -n "${DECK_DIR:-}" ]; then', sync_back)
+        self.assertNotIn("${{ steps.deck-path.outputs.deck_dir }}/**", sync_back)
         self.assertIn("tools/merge_wiki_sync_reports.py", sync_back)
         self.assertIn("--decks \"$DECK_CODE\"", sync_back)
 

@@ -140,6 +140,7 @@ jobs:
         id: deck-path
         env:
           DECK_CODE: ${{ matrix.deck }}
+          PYTHONPATH: tools
         run: |
           cd vocomipedia
           DECK_DIR="$(python - "$DECK_CODE" <<'PY'
@@ -157,15 +158,27 @@ jobs:
           )"
           echo "deck_dir=$DECK_DIR" >> "$GITHUB_OUTPUT"
           echo "Exported deck path: $DECK_DIR"
+      - name: Resolve per-deck artifact paths
+        id: artifact-paths
+        if: always()
+        env:
+          DECK_DIR: ${{ steps.deck-path.outputs.deck_dir }}
+        run: |
+          {
+            echo "paths<<EOF"
+            if [ -n "${DECK_DIR:-}" ]; then
+              echo "$DECK_DIR/**"
+            fi
+            echo "vocomipedia/reports/wiki-sync-back/${{ matrix.deck }}/**"
+            echo "EOF"
+          } >> "$GITHUB_OUTPUT"
       - name: Upload per-deck sync result
         uses: actions/upload-artifact@v6
         if: always()
         with:
           name: vocomipedia-wiki-sync-back-${{ matrix.deck }}
-          path: |
-            ${{ steps.deck-path.outputs.deck_dir }}/**
-            vocomipedia/reports/wiki-sync-back/${{ matrix.deck }}/**
-          if-no-files-found: error
+          path: ${{ steps.artifact-paths.outputs.paths }}
+          if-no-files-found: ignore
 
   aggregate:
     needs:
