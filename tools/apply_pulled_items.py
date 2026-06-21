@@ -57,6 +57,10 @@ def wiki_revision_id(item: Dict) -> int | None:
 
 def comparable_item(item: Dict) -> Dict:
     out = copy.deepcopy(item)
+    # app_payload is a derived legacy export mirror. It can legitimately drift
+    # after exporter fixes while the canonical wiki-visible item revision stays
+    # unchanged, so it must not make same-revision pulls fatal.
+    out.pop("app_payload", None)
     wiki = ((out.get("review") or {}).get("wiki") or {})
     wiki.pop("pulled_utc", None)
     wiki.pop("applied_utc", None)

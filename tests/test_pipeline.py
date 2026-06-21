@@ -2473,6 +2473,73 @@ packs:
             self.assertNotEqual(result.returncode, 0)
             self.assertIn("not newer than current recorded revision", result.stdout)
 
+    def test_apply_pulled_skips_same_revision_with_only_derived_payload_drift(self) -> None:
+        with tempfile.TemporaryDirectory() as td:
+            tmp = Path(td)
+            pack_dir = tmp / "pack"
+            pulled_dir = tmp / "pulled"
+            (pack_dir / "items").mkdir(parents=True)
+            pulled_dir.mkdir()
+            item = {
+                "schema_version": "vocomipedia-item-2",
+                "id": "ja_n5:test",
+                "pack_code": "ja_n5",
+                "language": "ja",
+                "entry_id": "川",
+                "headword": "川",
+                "reading": "かわ",
+                "label": "",
+                "level": "N5",
+                "order": 0,
+                "part_of_speech": ["Noun"],
+                "glosses": {"en": "river"},
+                "sentences": [{"target": "川です。", "translations": {"en": "It is a river."}, "tokens": []}],
+                "media": {"image_filename": "", "license": "Vocomi-created", "review_status": "approved"},
+                "review": {"status": "approved", "wiki": {"revision_id": 5}},
+                "provenance": {"origin": "test", "ai_generated": True, "license_status": "generated_by_vocomi"},
+                "app_payload": {"word_en": "river", "fu": ["かわです。"]},
+            }
+            (pack_dir / "items" / "item.json").write_text(json.dumps(item, ensure_ascii=False), encoding="utf-8")
+            (pack_dir / "pack.json").write_text(
+                json.dumps(
+                    {
+                        "schema_version": "vocomipedia-pack-1",
+                        "pack_code": "ja_n5",
+                        "title": "Japanese N5",
+                        "language": "ja",
+                        "lang_prefix": "ja",
+                        "lang_level": "n5",
+                        "items": [{"id": item["id"], "entry_id": item["entry_id"], "file": "items/item.json", "order": 0}],
+                    }
+                ),
+                encoding="utf-8",
+            )
+            pulled = json.loads(json.dumps(item))
+            pulled["app_payload"] = {"word_en": "old river", "fu": ["old"]}
+            pulled["review"]["wiki"]["pulled_utc"] = "2026-01-01T00:00:00Z"
+            (pulled_dir / "item.json").write_text(json.dumps(pulled, ensure_ascii=False), encoding="utf-8")
+
+            result = subprocess.run(
+                [
+                    sys.executable,
+                    str(TOOLS / "apply_pulled_items.py"),
+                    "--deck-dir",
+                    str(pack_dir),
+                    "--pulled-dir",
+                    str(pulled_dir),
+                    "--backup-dir",
+                    str(tmp / "backups"),
+                ],
+                cwd=ROOT,
+                text=True,
+                stdout=subprocess.PIPE,
+                stderr=subprocess.STDOUT,
+            )
+            self.assertEqual(result.returncode, 0, result.stdout)
+            self.assertIn("Applied 0 pulled item(s)", result.stdout)
+            applied = json.loads((pack_dir / "items" / "item.json").read_text(encoding="utf-8"))
+            self.assertEqual(applied["app_payload"]["word_en"], "river")
+
     def test_apply_pulled_merges_visible_fields_without_trusting_hidden_json(self) -> None:
         with tempfile.TemporaryDirectory() as td:
             tmp = Path(td)
