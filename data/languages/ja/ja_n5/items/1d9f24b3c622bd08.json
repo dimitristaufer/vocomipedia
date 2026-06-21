@@ -39,17 +39,17 @@
     "cs": "řeka",
     "da": "flod",
     "fi": "joki",
-    "en": "river / stream 2"
+    "en": "river / stream"
   },
   "sentences": [
     {
-      "target": "あの川はとてもきれいですね。",
-      "reading": "あのかわはとてもきれいですね。",
+      "target": "あの川はとてもきれいたね。",
+      "reading": "あのかわわはとてもきれいたね。",
       "translations": {
         "en": "That river is really beautiful, isn't it?",
         "es": "Ese río es realmente hermoso, ¿no?",
         "fr": "Cette rivière est vraiment belle, n’est-ce pas ?",
-        "de": "Dieser Fluss ist wirklich schön, nicht wahr?",
+        "de": "Dieser Fluss ist wirklich schön, ned wor?",
         "it": "Quel fiume è davvero bello, non è vero?",
         "ko": "저 강은 정말 아름답죠?",
         "zh-Hans": "那条河真的很漂亮，不是吗？",
@@ -77,115 +77,139 @@
       "tokens": [
         {
           "surface": "あの",
-          "surface_en": "that",
-          "furigana": "あの",
-          "pos": "demonstrative",
           "lemma": "あの",
-          "explanation": "Demonstrative used to point out something known to both speaker and listener",
-          "difficulty": 1,
-          "is_main_word": false,
+          "pos": "連体詞/*/*/*/*/*",
+          "upos": "DET",
+          "xpos": "連体詞",
+          "feats": {},
+          "start": 0,
+          "end": 2,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "あの",
           "ruby_text": "あの",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "あの"
         },
         {
           "surface": "川",
-          "surface_en": "river",
-          "furigana": "かわ",
-          "pos": "noun",
           "lemma": "川",
-          "explanation": "The main noun referring to a river",
-          "difficulty": 1,
-          "is_main_word": true,
-          "reading_kana": "かわ",
-          "ruby_text": "川[かわ]",
+          "pos": "名詞/普通名詞/一般/*/*/*",
+          "upos": "NOUN",
+          "xpos": "名詞",
+          "feats": {},
+          "start": 2,
+          "end": 3,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "かわわ",
+          "ruby_text": "川[かわわ]",
           "ruby_spans": [
             {
               "base": "川",
-              "reading": "かわ",
+              "reading": "かわわ",
               "start": 0,
               "length": 1
             }
           ],
-          "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "ruby_confidence": "reviewed",
+          "furigana": "かわわ",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "は",
-          "surface_en": "(topic marker)",
-          "furigana": "は",
-          "pos": "particle",
           "lemma": "は",
-          "explanation": "Marks '川' as the topic of the sentence",
-          "difficulty": 1,
-          "is_main_word": false,
+          "pos": "助詞/係助詞/*/*/*/*",
+          "upos": "PART",
+          "xpos": "助詞",
+          "feats": {},
+          "start": 3,
+          "end": 4,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "は",
           "ruby_text": "は",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "は"
         },
         {
           "surface": "とても",
-          "surface_en": "very",
-          "furigana": "とても",
-          "pos": "adverb",
           "lemma": "とても",
-          "explanation": "Modifies the adjective to indicate high degree",
-          "difficulty": 1,
-          "is_main_word": false,
+          "pos": "副詞/*/*/*/*/*",
+          "upos": "ADV",
+          "xpos": "副詞",
+          "feats": {},
+          "start": 4,
+          "end": 7,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "とても",
           "ruby_text": "とても",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "とても"
         },
         {
           "surface": "きれい",
-          "surface_en": "beautiful",
-          "furigana": "きれい",
-          "pos": "adjective (na)",
           "lemma": "きれい",
-          "explanation": "Describes the appearance of the river",
-          "difficulty": 1,
-          "is_main_word": false,
+          "pos": "形状詞/一般/*/*/*/*",
+          "upos": "ADJ",
+          "xpos": "形状詞",
+          "feats": {},
+          "start": 7,
+          "end": 10,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "きれい",
           "ruby_text": "きれい",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "きれい"
         },
         {
-          "surface": "です",
-          "surface_en": "is",
-          "furigana": "です",
-          "pos": "copula",
-          "lemma": "です",
-          "explanation": "Polite copula linking adjective to the topic",
-          "difficulty": 1,
-          "is_main_word": false,
-          "reading_kana": "です",
-          "ruby_text": "です",
+          "surface": "た",
+          "lemma": "た",
+          "pos": "助動詞/*/*/*/助動詞-タ/終止形-一般",
+          "upos": "AUX",
+          "xpos": "助動詞",
+          "feats": {},
+          "start": 10,
+          "end": 11,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "た",
+          "ruby_text": "た",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "た"
         },
         {
           "surface": "ね",
-          "surface_en": "right?",
-          "furigana": "ね",
-          "pos": "particle",
           "lemma": "ね",
-          "explanation": "Sentence-ending particle seeking agreement or confirmation",
-          "difficulty": 1,
-          "is_main_word": false,
+          "pos": "助詞/終助詞/*/*/*/*",
+          "upos": "PART",
+          "xpos": "助詞",
+          "feats": {},
+          "start": 11,
+          "end": 12,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "ね",
           "ruby_text": "ね",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "ね"
+        },
+        {
+          "surface": "。",
+          "lemma": "。",
+          "pos": "補助記号/句点/*/*/*/*",
+          "upos": "PUNCT",
+          "xpos": "補助記号",
+          "feats": {},
+          "start": 12,
+          "end": 13,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "。",
+          "ruby_text": "。",
+          "ruby_spans": [],
+          "ruby_confidence": "high",
+          "furigana": "。"
         }
       ],
       "difficulty": 1,
@@ -642,19 +666,405 @@
     "content_reviewers": [
       "mediawiki-visible-revision"
     ],
-    "last_reviewed_utc": "2026-06-21T14:42:02Z",
-    "approval_source": "mediawiki_visible_revision",
+    "last_reviewed_utc": "2026-06-21T19:49:16Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
     "wiki": {
       "title": "Item:Ja n5/1d9f24b3c622bd08",
-      "revision_id": 57881,
-      "parent_revision_id": 36326,
-      "revision_timestamp_utc": "2026-06-21T14:42:02Z",
+      "revision_id": 59091,
+      "parent_revision_id": 57882,
+      "revision_timestamp_utc": "2026-06-21T19:49:16Z",
       "revision_user": "Admin",
       "revision_comment": "",
-      "pulled_utc": "2026-06-21T16:29:25Z",
-      "applied_utc": "2026-06-21T16:29:44Z",
+      "pulled_utc": "2026-06-21T20:53:38Z",
+      "applied_utc": "2026-06-21T20:53:52Z",
       "applied_by": "vocomipedia-apply-pulled"
-    }
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-a6beb3c7a024ba4b",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "ja_n5:1d9f24b3c622bd08",
+        "pack_code": "ja_n5",
+        "entry_id": "川",
+        "language": "ja",
+        "sentence_index": 1,
+        "old_sentence": "あの川はとてもきれいですね。",
+        "old_translations": {
+          "en": "That river is really beautiful, isn't it?",
+          "es": "Ese río es realmente hermoso, ¿no?",
+          "fr": "Cette rivière est vraiment belle, n’est-ce pas ?",
+          "de": "Dieser Fluss ist wirklich schön, nicht wahr?",
+          "it": "Quel fiume è davvero bello, non è vero?",
+          "ko": "저 강은 정말 아름답죠?",
+          "zh-Hans": "那条河真的很漂亮，不是吗？",
+          "yue": "條河真係好漂亮，唔係咩？",
+          "ru": "Эта река действительно красива, не так ли?",
+          "pt": "Aquele rio é realmente lindo, não é?",
+          "he": "הנהר הזה ממש יפה, נכון?",
+          "tr": "O nehir gerçekten çok güzel, değil mi?",
+          "vi": "Dòng sông đó thật sự đẹp, phải không?",
+          "ar": "ذلك النهر جميل حقًا، أليس كذلك؟",
+          "nl": "Die rivier is echt prachtig, nietwaar?",
+          "uk": "Ця річка справді прекрасна, чи не так?",
+          "hu": "Az a folyó tényleg nagyon szép, ugye?",
+          "hi": "वह नदी वास्तव में सुंदर है, है ना?",
+          "pl": "Ta rzeka jest naprawdę piękna, prawda?",
+          "el": "Αυτό το ποτάμι είναι πραγματικά όμορφο, έτσι δεν είναι;",
+          "nb": "Den elven er virkelig vakker, ikke sant?",
+          "id": "Sungai itu benar-benar indah, bukan?",
+          "sv": "Den floden är verkligen vacker, eller hur?",
+          "ro": "Râul acela este cu adevărat frumos, nu-i așa?",
+          "cs": "Ta řeka je opravdu krásná, že?",
+          "da": "Den flod er virkelig smuk, ikke sandt?",
+          "fi": "Tuo joki on todella kaunis, eikö olekin?"
+        },
+        "proposed_sentence": "あの川はとてもきれいたね。",
+        "proposed_translations": {
+          "en": "That river is really beautiful, isn't it?",
+          "es": "Ese río es realmente hermoso, ¿no?",
+          "fr": "Cette rivière est vraiment belle, n’est-ce pas ?",
+          "de": "Dieser Fluss ist wirklich schön, ned wor?",
+          "it": "Quel fiume è davvero bello, non è vero?",
+          "ko": "저 강은 정말 아름답죠?",
+          "zh-Hans": "那条河真的很漂亮，不是吗？",
+          "yue": "條河真係好漂亮，唔係咩？",
+          "ru": "Эта река действительно красива, не так ли?",
+          "pt": "Aquele rio é realmente lindo, não é?",
+          "he": "הנהר הזה ממש יפה, נכון?",
+          "tr": "O nehir gerçekten çok güzel, değil mi?",
+          "vi": "Dòng sông đó thật sự đẹp, phải không?",
+          "ar": "ذلك النهر جميل حقًا، أليس كذلك؟",
+          "nl": "Die rivier is echt prachtig, nietwaar?",
+          "uk": "Ця річка справді прекрасна, чи не так?",
+          "hu": "Az a folyó tényleg nagyon szép, ugye?",
+          "hi": "वह नदी वास्तव में सुंदर है, है ना?",
+          "pl": "Ta rzeka jest naprawdę piękna, prawda?",
+          "el": "Αυτό το ποτάμι είναι πραγματικά όμορφο, έτσι δεν είναι;",
+          "nb": "Den elven er virkelig vakker, ikke sant?",
+          "id": "Sungai itu benar-benar indah, bukan?",
+          "sv": "Den floden är verkligen vacker, eller hur?",
+          "ro": "Râul acela este cu adevărat frumos, nu-i așa?",
+          "cs": "Ta řeka je opravdu krásná, že?",
+          "da": "Den flod er virkelig smuk, ikke sandt?",
+          "fi": "Tuo joki on todella kaunis, eikö olekin?"
+        },
+        "old_ruby_source": "あの川[かわ]はとてもきれいですね。",
+        "proposed_ruby_source": "あの川[かわわ]はとてもきれいたね。",
+        "old_japanese": "あの川はとてもきれいですね。",
+        "old_english": "That river is really beautiful, isn't it?",
+        "proposed_japanese": "あの川はとてもきれいたね。",
+        "proposed_english": "That river is really beautiful, isn't it?",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "ja",
+          "sentence": "あの川はとてもきれいたね。",
+          "tokens": [
+            {
+              "surface": "あの",
+              "lemma": "あの",
+              "pos": "連体詞/*/*/*/*/*",
+              "upos": "DET",
+              "xpos": "連体詞",
+              "feats": {},
+              "start": 0,
+              "end": 2,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "あの",
+              "ruby_text": "あの",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "あの"
+            },
+            {
+              "surface": "川",
+              "lemma": "川",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 2,
+              "end": 3,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "かわわ",
+              "ruby_text": "川[かわわ]",
+              "ruby_spans": [
+                {
+                  "base": "川",
+                  "reading": "かわわ",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "かわわ",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "は",
+              "lemma": "は",
+              "pos": "助詞/係助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 3,
+              "end": 4,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "は",
+              "ruby_text": "は",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "は"
+            },
+            {
+              "surface": "とても",
+              "lemma": "とても",
+              "pos": "副詞/*/*/*/*/*",
+              "upos": "ADV",
+              "xpos": "副詞",
+              "feats": {},
+              "start": 4,
+              "end": 7,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "とても",
+              "ruby_text": "とても",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "とても"
+            },
+            {
+              "surface": "きれい",
+              "lemma": "きれい",
+              "pos": "形状詞/一般/*/*/*/*",
+              "upos": "ADJ",
+              "xpos": "形状詞",
+              "feats": {},
+              "start": 7,
+              "end": 10,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "きれい",
+              "ruby_text": "きれい",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "きれい"
+            },
+            {
+              "surface": "た",
+              "lemma": "た",
+              "pos": "助動詞/*/*/*/助動詞-タ/終止形-一般",
+              "upos": "AUX",
+              "xpos": "助動詞",
+              "feats": {},
+              "start": 10,
+              "end": 11,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "た",
+              "ruby_text": "た",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "た"
+            },
+            {
+              "surface": "ね",
+              "lemma": "ね",
+              "pos": "助詞/終助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 11,
+              "end": 12,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "ね",
+              "ruby_text": "ね",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "ね"
+            },
+            {
+              "surface": "。",
+              "lemma": "。",
+              "pos": "補助記号/句点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 12,
+              "end": 13,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "。",
+              "ruby_text": "。",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "。"
+            }
+          ],
+          "reading": "あのかわわはとてもきれいたね。",
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "warnings": [
+            "mediawiki ruby hints applied"
+          ]
+        },
+        "generated_tokens": [
+          {
+            "surface": "あの",
+            "lemma": "あの",
+            "pos": "連体詞/*/*/*/*/*",
+            "upos": "DET",
+            "xpos": "連体詞",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "あの",
+            "ruby_text": "あの",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "あの"
+          },
+          {
+            "surface": "川",
+            "lemma": "川",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 2,
+            "end": 3,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "かわわ",
+            "ruby_text": "川[かわわ]",
+            "ruby_spans": [
+              {
+                "base": "川",
+                "reading": "かわわ",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "かわわ",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "は",
+            "lemma": "は",
+            "pos": "助詞/係助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 3,
+            "end": 4,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "は",
+            "ruby_text": "は",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "は"
+          },
+          {
+            "surface": "とても",
+            "lemma": "とても",
+            "pos": "副詞/*/*/*/*/*",
+            "upos": "ADV",
+            "xpos": "副詞",
+            "feats": {},
+            "start": 4,
+            "end": 7,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "とても",
+            "ruby_text": "とても",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "とても"
+          },
+          {
+            "surface": "きれい",
+            "lemma": "きれい",
+            "pos": "形状詞/一般/*/*/*/*",
+            "upos": "ADJ",
+            "xpos": "形状詞",
+            "feats": {},
+            "start": 7,
+            "end": 10,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "きれい",
+            "ruby_text": "きれい",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "きれい"
+          },
+          {
+            "surface": "た",
+            "lemma": "た",
+            "pos": "助動詞/*/*/*/助動詞-タ/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 10,
+            "end": 11,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "た",
+            "ruby_text": "た",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "た"
+          },
+          {
+            "surface": "ね",
+            "lemma": "ね",
+            "pos": "助詞/終助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 11,
+            "end": 12,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ね",
+            "ruby_text": "ね",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "ね"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 12,
+            "end": 13,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
+          }
+        ],
+        "generated_reading": "あのかわわはとてもきれいたね。",
+        "analyzer": "sudachipy_sudachidict_core_c",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-06-21T20:53:38Z",
+        "updated_utc": "2026-06-21T20:54:11Z",
+        "applied_utc": "2026-06-21T20:54:11Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-06-21T20:54:11Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -681,12 +1091,6 @@
     ],
     "comic_difficulty": 3.36,
     "word": "川",
-    "en": [
-      "That river is really beautiful, isn't it?",
-      "I found a fish in the river.",
-      "The children crossed the river.",
-      "The river flows from the top of the mountain."
-    ],
     "jp": [
       "あの川はとてもきれいですね。",
       "川で魚を見つけた。",
@@ -701,119 +1105,143 @@
     ],
     "pos_analysis": [
       {
-        "sentence": "あの川はとてもきれいですね。",
+        "sentence": "あの川はとてもきれいたね。",
         "tokens": [
           {
             "surface": "あの",
-            "surface_en": "that",
-            "furigana": "あの",
-            "pos": "demonstrative",
             "lemma": "あの",
-            "explanation": "Demonstrative used to point out something known to both speaker and listener",
-            "difficulty": 1,
-            "is_main_word": false,
+            "pos": "連体詞/*/*/*/*/*",
+            "upos": "DET",
+            "xpos": "連体詞",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "あの",
             "ruby_text": "あの",
             "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "あの"
           },
           {
             "surface": "川",
-            "surface_en": "river",
-            "furigana": "かわ",
-            "pos": "noun",
             "lemma": "川",
-            "explanation": "The main noun referring to a river",
-            "difficulty": 1,
-            "is_main_word": true,
-            "reading_kana": "かわ",
-            "ruby_text": "川[かわ]",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 2,
+            "end": 3,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "かわわ",
+            "ruby_text": "川[かわわ]",
             "ruby_spans": [
               {
                 "base": "川",
-                "reading": "かわ",
+                "reading": "かわわ",
                 "start": 0,
                 "length": 1
               }
             ],
-            "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "ruby_confidence": "reviewed",
+            "furigana": "かわわ",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "は",
-            "surface_en": "(topic marker)",
-            "furigana": "は",
-            "pos": "particle",
             "lemma": "は",
-            "explanation": "Marks '川' as the topic of the sentence",
-            "difficulty": 1,
-            "is_main_word": false,
+            "pos": "助詞/係助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 3,
+            "end": 4,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "は",
             "ruby_text": "は",
             "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "は"
           },
           {
             "surface": "とても",
-            "surface_en": "very",
-            "furigana": "とても",
-            "pos": "adverb",
             "lemma": "とても",
-            "explanation": "Modifies the adjective to indicate high degree",
-            "difficulty": 1,
-            "is_main_word": false,
+            "pos": "副詞/*/*/*/*/*",
+            "upos": "ADV",
+            "xpos": "副詞",
+            "feats": {},
+            "start": 4,
+            "end": 7,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "とても",
             "ruby_text": "とても",
             "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "とても"
           },
           {
             "surface": "きれい",
-            "surface_en": "beautiful",
-            "furigana": "きれい",
-            "pos": "adjective (na)",
             "lemma": "きれい",
-            "explanation": "Describes the appearance of the river",
-            "difficulty": 1,
-            "is_main_word": false,
+            "pos": "形状詞/一般/*/*/*/*",
+            "upos": "ADJ",
+            "xpos": "形状詞",
+            "feats": {},
+            "start": 7,
+            "end": 10,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "きれい",
             "ruby_text": "きれい",
             "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "きれい"
           },
           {
-            "surface": "です",
-            "surface_en": "is",
-            "furigana": "です",
-            "pos": "copula",
-            "lemma": "です",
-            "explanation": "Polite copula linking adjective to the topic",
-            "difficulty": 1,
-            "is_main_word": false,
-            "reading_kana": "です",
-            "ruby_text": "です",
+            "surface": "た",
+            "lemma": "た",
+            "pos": "助動詞/*/*/*/助動詞-タ/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 10,
+            "end": 11,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "た",
+            "ruby_text": "た",
             "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "た"
           },
           {
             "surface": "ね",
-            "surface_en": "right?",
-            "furigana": "ね",
-            "pos": "particle",
             "lemma": "ね",
-            "explanation": "Sentence-ending particle seeking agreement or confirmation",
-            "difficulty": 1,
-            "is_main_word": false,
+            "pos": "助詞/終助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 11,
+            "end": 12,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "ね",
             "ruby_text": "ね",
             "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "ね"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 12,
+            "end": 13,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
           }
         ],
         "difficulty_aggregated": 1
@@ -1162,6 +1590,9 @@
         "difficulty_aggregated": 1
       }
     ],
+    "word_reading": "かわ",
+    "word_POS": "Noun",
+    "entry_id": "川",
     "word_es": "río",
     "word_fr": "fleuve",
     "word_de": "Fluss",
@@ -1188,143 +1619,12 @@
     "word_cs": "řeka",
     "word_da": "flod",
     "word_fi": "joki",
-    "es": [
-      "Ese río es realmente hermoso, ¿no?",
-      "Encontré un pez en el río.",
-      "Los niños cruzaron el río.",
-      "El río fluye desde la cima de la montaña."
-    ],
-    "fr": [
-      "Cette rivière est vraiment belle, n’est-ce pas ?",
-      "J’ai trouvé un poisson dans la rivière.",
-      "Les enfants ont traversé la rivière.",
-      "La rivière coule du sommet de la montagne."
-    ],
-    "de": [
-      "Dieser Fluss ist wirklich schön, nicht wahr?",
-      "Ich habe einen Fisch im Fluss gefunden.",
-      "Die Kinder überquerten den Fluss.",
-      "Der Fluss fließt von der Spitze des Berges."
-    ],
-    "it": [
-      "Quel fiume è davvero bello, non è vero?",
-      "Ho trovato un pesce nel fiume.",
-      "I bambini attraversarono il fiume.",
-      "Il fiume scorre dalla cima della montagna."
-    ],
-    "ko": [
-      "저 강은 정말 아름답죠?",
-      "강에서 물고기를 찾았습니다.",
-      "아이들은 강을 건넜다.",
-      "강은 산 정상에서 흐릅니다."
-    ],
-    "zh-Hans": [
-      "那条河真的很漂亮，不是吗？",
-      "我在河里发现了一条鱼。",
-      "孩子们过了河。",
-      "河流从山顶流出。"
-    ],
-    "yue": [
-      "條河真係好漂亮，唔係咩？",
-      "我喺河度發現咗一條魚。",
-      "細路仔哋過咗河。",
-      "河流由山頂流出。"
-    ],
-    "ru": [
-      "Эта река действительно красива, не так ли?",
-      "Я нашёл рыбу в реке.",
-      "Дети переправились через реку.",
-      "Река течёт с вершины горы."
-    ],
-    "pt": [
-      "Aquele rio é realmente lindo, não é?",
-      "Encontrei um peixe no rio.",
-      "As crianças atravessaram o rio.",
-      "O rio flui do topo da montanha."
-    ],
-    "he": [
-      "הנהר הזה ממש יפה, נכון?",
-      "מצאתי דג בנהר.",
-      "הילדים חצו את הנהר.",
-      "הנהר זורם מראש ההר."
-    ],
-    "tr": [
-      "O nehir gerçekten çok güzel, değil mi?",
-      "Nehirde bir balık buldum.",
-      "Çocuklar nehri geçti.",
-      "Nehir dağın tepesinden akıyor."
-    ],
-    "vi": [
-      "Dòng sông đó thật sự đẹp, phải không?",
-      "Tôi tìm thấy một con cá trong sông.",
-      "Bọn trẻ đã vượt qua con sông.",
-      "Dòng sông chảy từ đỉnh núi."
-    ],
+    "word_en": "river / stream",
     "ar": [
       "ذلك النهر جميل حقًا، أليس كذلك؟",
       "وجدت سمكة في النهر.",
       "عبر الأطفال النهر.",
       "يتدفق النهر من قمة الجبل."
-    ],
-    "nl": [
-      "Die rivier is echt prachtig, nietwaar?",
-      "Ik vond een vis in de rivier.",
-      "De kinderen staken de rivier over.",
-      "De rivier stroomt vanaf de top van de berg."
-    ],
-    "uk": [
-      "Ця річка справді прекрасна, чи не так?",
-      "Я знайшов у річці рибу.",
-      "Діти переправилися через річку.",
-      "Річка тече з вершини гори."
-    ],
-    "hu": [
-      "Az a folyó tényleg nagyon szép, ugye?",
-      "Találtam egy halat a folyóban.",
-      "A gyerekek átkeltek a folyón.",
-      "A folyó a hegy tetejéről folyik."
-    ],
-    "hi": [
-      "वह नदी वास्तव में सुंदर है, है ना?",
-      "मुझे नदी में एक मछली मिली।",
-      "बच्चों ने नदी पार की।",
-      "नदी पहाड़ की चोटी से बहती है।"
-    ],
-    "pl": [
-      "Ta rzeka jest naprawdę piękna, prawda?",
-      "Znalazłem rybę w rzece.",
-      "Dzieci przeprawiły się przez rzekę.",
-      "Rzeka wypływa ze szczytu góry."
-    ],
-    "el": [
-      "Αυτό το ποτάμι είναι πραγματικά όμορφο, έτσι δεν είναι;",
-      "Βρήκα ένα ψάρι στο ποτάμι.",
-      "Τα παιδιά διέσχισαν το ποτάμι.",
-      "Ο ποταμός ρέει από την κορυφή του βουνού."
-    ],
-    "nb": [
-      "Den elven er virkelig vakker, ikke sant?",
-      "Jeg fant en fisk i elven.",
-      "Barna krysset elven.",
-      "Elven renner fra toppen av fjellet."
-    ],
-    "id": [
-      "Sungai itu benar-benar indah, bukan?",
-      "Saya menemukan ikan di sungai.",
-      "Anak-anak menyeberangi sungai.",
-      "Sungai mengalir dari puncak gunung."
-    ],
-    "sv": [
-      "Den floden är verkligen vacker, eller hur?",
-      "Jag hittade en fisk i floden.",
-      "Barnen gick över floden.",
-      "Floden rinner från toppen av berget."
-    ],
-    "ro": [
-      "Râul acela este cu adevărat frumos, nu-i așa?",
-      "Am găsit un pește în râu.",
-      "Copiii au traversat râul.",
-      "Râul curge din vârful muntelui."
     ],
     "cs": [
       "Ta řeka je opravdu krásná, že?",
@@ -1338,14 +1638,149 @@
       "Børnene krydsede floden.",
       "Floden løber fra toppen af bjerget."
     ],
+    "de": [
+      "Dieser Fluss ist wirklich schön, nicht wahr?",
+      "Ich habe einen Fisch im Fluss gefunden.",
+      "Die Kinder überquerten den Fluss.",
+      "Der Fluss fließt von der Spitze des Berges."
+    ],
+    "el": [
+      "Αυτό το ποτάμι είναι πραγματικά όμορφο, έτσι δεν είναι;",
+      "Βρήκα ένα ψάρι στο ποτάμι.",
+      "Τα παιδιά διέσχισαν το ποτάμι.",
+      "Ο ποταμός ρέει από την κορυφή του βουνού."
+    ],
+    "en": [
+      "That river is really beautiful, isn't it?",
+      "I found a fish in the river.",
+      "The children crossed the river.",
+      "The river flows from the top of the mountain."
+    ],
+    "es": [
+      "Ese río es realmente hermoso, ¿no?",
+      "Encontré un pez en el río.",
+      "Los niños cruzaron el río.",
+      "El río fluye desde la cima de la montaña."
+    ],
     "fi": [
       "Tuo joki on todella kaunis, eikö olekin?",
       "Löysin kalan joesta.",
       "Lapset ylittivät joen.",
       "Joki virtaa vuoren huipulta."
     ],
-    "word_reading": "かわ",
-    "word_en": "river / stream",
-    "word_POS": "Noun"
+    "fr": [
+      "Cette rivière est vraiment belle, n’est-ce pas ?",
+      "J’ai trouvé un poisson dans la rivière.",
+      "Les enfants ont traversé la rivière.",
+      "La rivière coule du sommet de la montagne."
+    ],
+    "he": [
+      "הנהר הזה ממש יפה, נכון?",
+      "מצאתי דג בנהר.",
+      "הילדים חצו את הנהר.",
+      "הנהר זורם מראש ההר."
+    ],
+    "hi": [
+      "वह नदी वास्तव में सुंदर है, है ना?",
+      "मुझे नदी में एक मछली मिली।",
+      "बच्चों ने नदी पार की।",
+      "नदी पहाड़ की चोटी से बहती है।"
+    ],
+    "hu": [
+      "Az a folyó tényleg nagyon szép, ugye?",
+      "Találtam egy halat a folyóban.",
+      "A gyerekek átkeltek a folyón.",
+      "A folyó a hegy tetejéről folyik."
+    ],
+    "id": [
+      "Sungai itu benar-benar indah, bukan?",
+      "Saya menemukan ikan di sungai.",
+      "Anak-anak menyeberangi sungai.",
+      "Sungai mengalir dari puncak gunung."
+    ],
+    "it": [
+      "Quel fiume è davvero bello, non è vero?",
+      "Ho trovato un pesce nel fiume.",
+      "I bambini attraversarono il fiume.",
+      "Il fiume scorre dalla cima della montagna."
+    ],
+    "ko": [
+      "저 강은 정말 아름답죠?",
+      "강에서 물고기를 찾았습니다.",
+      "아이들은 강을 건넜다.",
+      "강은 산 정상에서 흐릅니다."
+    ],
+    "nb": [
+      "Den elven er virkelig vakker, ikke sant?",
+      "Jeg fant en fisk i elven.",
+      "Barna krysset elven.",
+      "Elven renner fra toppen av fjellet."
+    ],
+    "nl": [
+      "Die rivier is echt prachtig, nietwaar?",
+      "Ik vond een vis in de rivier.",
+      "De kinderen staken de rivier over.",
+      "De rivier stroomt vanaf de top van de berg."
+    ],
+    "pl": [
+      "Ta rzeka jest naprawdę piękna, prawda?",
+      "Znalazłem rybę w rzece.",
+      "Dzieci przeprawiły się przez rzekę.",
+      "Rzeka wypływa ze szczytu góry."
+    ],
+    "pt": [
+      "Aquele rio é realmente lindo, não é?",
+      "Encontrei um peixe no rio.",
+      "As crianças atravessaram o rio.",
+      "O rio flui do topo da montanha."
+    ],
+    "ro": [
+      "Râul acela este cu adevărat frumos, nu-i așa?",
+      "Am găsit un pește în râu.",
+      "Copiii au traversat râul.",
+      "Râul curge din vârful muntelui."
+    ],
+    "ru": [
+      "Эта река действительно красива, не так ли?",
+      "Я нашёл рыбу в реке.",
+      "Дети переправились через реку.",
+      "Река течёт с вершины горы."
+    ],
+    "sv": [
+      "Den floden är verkligen vacker, eller hur?",
+      "Jag hittade en fisk i floden.",
+      "Barnen gick över floden.",
+      "Floden rinner från toppen av berget."
+    ],
+    "tr": [
+      "O nehir gerçekten çok güzel, değil mi?",
+      "Nehirde bir balık buldum.",
+      "Çocuklar nehri geçti.",
+      "Nehir dağın tepesinden akıyor."
+    ],
+    "uk": [
+      "Ця річка справді прекрасна, чи не так?",
+      "Я знайшов у річці рибу.",
+      "Діти переправилися через річку.",
+      "Річка тече з вершини гори."
+    ],
+    "vi": [
+      "Dòng sông đó thật sự đẹp, phải không?",
+      "Tôi tìm thấy một con cá trong sông.",
+      "Bọn trẻ đã vượt qua con sông.",
+      "Dòng sông chảy từ đỉnh núi."
+    ],
+    "yue": [
+      "條河真係好漂亮，唔係咩？",
+      "我喺河度發現咗一條魚。",
+      "細路仔哋過咗河。",
+      "河流由山頂流出。"
+    ],
+    "zh-Hans": [
+      "那条河真的很漂亮，不是吗？",
+      "我在河里发现了一条鱼。",
+      "孩子们过了河。",
+      "河流从山顶流出。"
+    ]
   }
 }
