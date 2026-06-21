@@ -32,6 +32,9 @@ requests with the default repository token:
 VOCOMIPEDIA_PR_TOKEN   fine-grained PAT with Contents read/write and Pull requests read/write on this repo
 ```
 
+`Wiki Sync Back` also accepts the older `VOCOMI_REPO_TOKEN` as a compatibility
+fallback for PR creation.
+
 For VPS static pack deployment:
 
 ```text
@@ -54,9 +57,9 @@ MEDIAWIKI_DOCKER_COMPOSE    docker-compose
 MEDIAWIKI_BACKUP_DIR        /srv/backups/vocomipedia
 ```
 
-`VOCOMI_REPO_TOKEN` is no longer required for the current Vocomipedia-owned
-sync or release workflows. Azure upload remains available only in legacy/local
-tooling; production releases deploy current packs to the VPS.
+`VOCOMI_REPO_TOKEN` is no longer required when `VOCOMIPEDIA_PR_TOKEN` is
+configured. Azure upload remains available only in legacy/local tooling;
+production releases deploy current packs to the VPS.
 
 ## Required Environment
 

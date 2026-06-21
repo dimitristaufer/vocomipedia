@@ -241,6 +241,7 @@ jobs:
         if: inputs.create_pr && steps.diff.outputs.changed == 'true'
         env:
           VOCOMIPEDIA_PR_TOKEN: ${{ secrets.VOCOMIPEDIA_PR_TOKEN }}
+          VOCOMI_REPO_TOKEN: ${{ secrets.VOCOMI_REPO_TOKEN }}
           GITHUB_TOKEN_FALLBACK: ${{ github.token }}
         run: |
           BRANCH="vocomipedia/wiki-sync-${{ github.run_id }}"
@@ -255,6 +256,9 @@ jobs:
           if [ -n "${VOCOMIPEDIA_PR_TOKEN:-}" ]; then
             export GH_TOKEN="$VOCOMIPEDIA_PR_TOKEN"
             TOKEN_LABEL="VOCOMIPEDIA_PR_TOKEN"
+          elif [ -n "${VOCOMI_REPO_TOKEN:-}" ]; then
+            export GH_TOKEN="$VOCOMI_REPO_TOKEN"
+            TOKEN_LABEL="VOCOMI_REPO_TOKEN"
           else
             export GH_TOKEN="$GITHUB_TOKEN_FALLBACK"
             TOKEN_LABEL="GITHUB_TOKEN"
@@ -279,3 +283,4 @@ jobs:
             echo "https://github.com/dimitristaufer/vocomipedia/compare/main...$BRANCH?expand=1"
           } >> "$GITHUB_STEP_SUMMARY"
           echo "PR creation failed, but the sync branch was pushed: $BRANCH" >&2
+          exit 1

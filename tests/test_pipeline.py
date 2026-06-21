@@ -350,6 +350,46 @@ class VocomipediaPipelineTests(unittest.TestCase):
         tokens = payload["pos_analysis"][0]["tokens"]
         self.assertEqual([token["is_main_word"] for token in tokens], [False, True, False])
 
+    def test_release_export_rebuilds_derived_legacy_payload_fields(self) -> None:
+        item = {
+            "schema_version": "vocomipedia-item-2",
+            "id": "ja_n5:test",
+            "pack_code": "ja_n5",
+            "language": "ja",
+            "entry_id": "川",
+            "headword": "川",
+            "reading": "かわ",
+            "label": "",
+            "level": "N5",
+            "part_of_speech": ["Noun"],
+            "glosses": {"en": "stream"},
+            "sentences": [
+                {
+                    "target": "川です。",
+                    "reading": "かわです。",
+                    "translations": {"en": "This is a stream."},
+                    "tokens": [],
+                    "difficulty": 1,
+                }
+            ],
+            "media": {},
+            "review": {},
+            "provenance": {},
+            "app_payload": {
+                "word_en": "river",
+                "word_de": "Fluss",
+                "word_label": "old label",
+                "en": ["It is a river."],
+                "de": ["Es ist ein Fluss."],
+            },
+        }
+        payload = common.canonical_to_legacy(item, pack={"target_sentence_key": "jp", "reading_sentence_key": "fu"})
+        self.assertEqual(payload["word_en"], "stream")
+        self.assertEqual(payload["en"], ["This is a stream."])
+        self.assertNotIn("word_de", payload)
+        self.assertNotIn("word_label", payload)
+        self.assertNotIn("de", payload)
+
     def test_release_export_annotates_korean_dictionary_verbs_without_pos(self) -> None:
         item = {
             "schema_version": "vocomipedia-item-2",
@@ -579,6 +619,9 @@ class VocomipediaPipelineTests(unittest.TestCase):
         self.assertNotIn("${{ steps.deck-path.outputs.deck_dir }}/**", sync_back)
         self.assertIn("tools/merge_wiki_sync_reports.py", sync_back)
         self.assertIn("--decks \"$DECK_CODE\"", sync_back)
+        self.assertIn("VOCOMI_REPO_TOKEN: ${{ secrets.VOCOMI_REPO_TOKEN }}", sync_back)
+        self.assertIn('TOKEN_LABEL="VOCOMI_REPO_TOKEN"', sync_back)
+        self.assertIn("exit 1", sync_back)
 
     def test_release_media_hydration_does_not_delete_local_media(self) -> None:
         script = (TOOLS / "sync_release_media_from_vps.py").read_text(encoding="utf-8")
@@ -2399,7 +2442,12 @@ packs:
                 "media": {"image_filename": "comic.png", "license": "Vocomi-created", "review_status": "approved"},
                 "review": {"status": "approved", "wiki": {"revision_id": 5}},
                 "provenance": {"origin": "test", "ai_generated": True, "license_status": "generated_by_vocomi"},
-                "app_payload": {},
+                "app_payload": {
+                    "word_en": "river",
+                    "word_de": "Fluss",
+                    "en": ["It is a river."],
+                    "de": ["Es ist ein Fluss."],
+                },
             }
             (pack_dir / "items" / "item.json").write_text(json.dumps(item, ensure_ascii=False), encoding="utf-8")
             (pack_dir / "pack.json").write_text(
@@ -2459,6 +2507,10 @@ packs:
             self.assertNotIn("de", applied["glosses"])
             self.assertEqual(applied["sentences"][0]["target"], "川です。")
             self.assertEqual(applied["sentences"][0]["translations"]["en"], "This is a river.")
+            self.assertEqual(applied["app_payload"]["word_en"], "stream")
+            self.assertEqual(applied["app_payload"]["en"], ["This is a river."])
+            self.assertNotIn("word_de", applied["app_payload"])
+            self.assertNotIn("de", applied["app_payload"])
             self.assertEqual(applied["media"]["license"], "Vocomi-created")
             self.assertEqual(applied["review"]["sentence_proposals"][0]["id"], "sentprop-test")
             self.assertFalse(applied["review"]["sentence_proposals"][0]["validation"]["comic_invalidation_supported"])

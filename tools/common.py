@@ -28,6 +28,7 @@ NON_TRANSLATION_LIST_KEYS = {
     "pos_analysis",
     "jp_audio",
 }
+NON_GLOSS_WORD_SUFFIXES = {"reading", "label", "romanized", "hanja", "pinyin", "POS"}
 
 
 class VocomipediaError(RuntimeError):
@@ -197,7 +198,7 @@ def _word_glosses(entry: Dict[str, Any]) -> Dict[str, str]:
         if not key.startswith("word_") or not isinstance(value, str):
             continue
         lang = key[5:]
-        if lang in {"reading", "label", "romanized", "hanja", "pinyin", "POS"}:
+        if lang in NON_GLOSS_WORD_SUFFIXES:
             continue
         out[lang] = value
     return out
@@ -306,7 +307,7 @@ def legacy_to_canonical(
     return item
 
 
-def canonical_to_legacy(item: Dict[str, Any], *, pack: Dict[str, Any]) -> Dict[str, Any]:
+def canonical_legacy_payload(item: Dict[str, Any], *, pack: Dict[str, Any]) -> Dict[str, Any]:
     item = normalize_japanese_item(item)
     target_key = pack.get("target_sentence_key", "jp")
     reading_key = pack.get("reading_sentence_key", "fu")
@@ -316,8 +317,16 @@ def canonical_to_legacy(item: Dict[str, Any], *, pack: Dict[str, Any]) -> Dict[s
     payload["word"] = item["headword"]
     if item.get("reading") is not None:
         payload["word_reading"] = item.get("reading", "")
+    elif "word_reading" in payload:
+        payload.pop("word_reading", None)
     if item.get("label"):
         payload["word_label"] = item["label"]
+    else:
+        payload.pop("word_label", None)
+
+    for key in list(payload):
+        if key.startswith("word_") and key[5:] not in NON_GLOSS_WORD_SUFFIXES:
+            payload.pop(key, None)
 
     for lang, gloss in (item.get("glosses") or {}).items():
         payload[f"word_{lang}"] = gloss
@@ -325,6 +334,12 @@ def canonical_to_legacy(item: Dict[str, Any], *, pack: Dict[str, Any]) -> Dict[s
     sentences = item.get("sentences") or []
     payload[target_key] = [s.get("target", "") for s in sentences]
     payload[reading_key] = [s.get("reading", "") for s in sentences]
+
+    for key, value in list(payload.items()):
+        if key in NON_TRANSLATION_LIST_KEYS or key in {target_key, reading_key}:
+            continue
+        if isinstance(value, list) and all(isinstance(x, str) for x in value):
+            payload.pop(key, None)
 
     translation_keys: List[str] = sorted(
         {
@@ -362,6 +377,16 @@ def canonical_to_legacy(item: Dict[str, Any], *, pack: Dict[str, Any]) -> Dict[s
         payload["word_POS"] = ", ".join(item["part_of_speech"])
 
     return payload
+
+
+def sync_legacy_payload_fields(item: Dict[str, Any], *, pack: Dict[str, Any]) -> Dict[str, Any]:
+    out = copy.deepcopy(item)
+    out["app_payload"] = canonical_legacy_payload(out, pack=pack)
+    return out
+
+
+def canonical_to_legacy(item: Dict[str, Any], *, pack: Dict[str, Any]) -> Dict[str, Any]:
+    return canonical_legacy_payload(item, pack=pack)
 
 
 def validate_token_sequence(sentence: Dict[str, Any]) -> List[str]:

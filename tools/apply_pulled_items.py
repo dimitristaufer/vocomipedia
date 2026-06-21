@@ -12,7 +12,7 @@ from pathlib import Path
 from typing import Dict, List
 
 from backup import create_backup
-from common import load_pack_manifest, read_json, safe_filename, validate_item, write_json
+from common import load_pack_manifest, read_json, safe_filename, sync_legacy_payload_fields, validate_item, write_json
 
 VISIBLE_GLOSS_LANGS = {
     "en",
@@ -171,6 +171,19 @@ def merge_visible_fields(current: Dict, pulled: Dict) -> Dict:
     return updated
 
 
+def pack_from_manifest(manifest: Dict) -> Dict:
+    return {
+        "pack_code": manifest["pack_code"],
+        "language": manifest["language"],
+        "lang_prefix": manifest["lang_prefix"],
+        "lang_level": manifest["lang_level"],
+        "level": manifest.get("level", manifest["lang_level"]),
+        "target_sentence_key": manifest.get("target_sentence_key", "jp"),
+        "reading_sentence_key": manifest.get("reading_sentence_key", "fu"),
+        "data_pack_code": manifest.get("data_pack_code"),
+    }
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description="Apply pulled MediaWiki canonical item JSON files into an existing Vocomipedia deck.")
     ap.add_argument("--deck-dir", "--pack-dir", dest="pack_dir", metavar="DECK_DIR", required=True, type=Path)
@@ -184,6 +197,7 @@ def main() -> int:
     args = ap.parse_args()
 
     manifest = load_pack_manifest(args.pack_dir)
+    pack = pack_from_manifest(manifest)
     refs: List[Dict] = list(manifest.get("items", []))
     by_id = {ref["id"]: ref for ref in refs}
     existing_orders = [int(ref.get("order", 0)) for ref in refs]
@@ -235,6 +249,7 @@ def main() -> int:
                 item = merge_visible_fields(current_item, item)
 
         item = mark_applied(item, args.applied_by)
+        item = sync_legacy_payload_fields(item, pack=pack)
         errors = validate_item(item)
         if errors:
             raise SystemExit(f"{pulled} after merge: " + "; ".join(errors))
