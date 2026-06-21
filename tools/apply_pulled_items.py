@@ -8,8 +8,9 @@ import copy
 import datetime as dt
 import difflib
 import json
+import unicodedata
 from pathlib import Path
-from typing import Dict, List
+from typing import Any, Dict, List
 
 from backup import create_backup
 from common import load_pack_manifest, read_json, safe_filename, sync_legacy_payload_fields, validate_item, write_json
@@ -55,6 +56,16 @@ def wiki_revision_id(item: Dict) -> int | None:
         return None
 
 
+def normalize_comparable_value(value: Any) -> Any:
+    if isinstance(value, str):
+        return unicodedata.normalize("NFC", value)
+    if isinstance(value, list):
+        return [normalize_comparable_value(child) for child in value]
+    if isinstance(value, dict):
+        return {key: normalize_comparable_value(child) for key, child in value.items()}
+    return value
+
+
 def comparable_item(item: Dict) -> Dict:
     out = copy.deepcopy(item)
     # app_payload is a derived legacy export mirror. It can legitimately drift
@@ -65,7 +76,7 @@ def comparable_item(item: Dict) -> Dict:
     wiki.pop("pulled_utc", None)
     wiki.pop("applied_utc", None)
     wiki.pop("applied_by", None)
-    return out
+    return normalize_comparable_value(out)
 
 
 def item_diff(before: Dict | None, after: Dict) -> str:
