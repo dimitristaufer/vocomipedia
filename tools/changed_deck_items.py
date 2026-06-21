@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import copy
 import json
 import subprocess
 from pathlib import Path
@@ -20,6 +21,65 @@ def run_git(root: Path, args: list[str]) -> subprocess.CompletedProcess[str]:
 def ref_has_path(root: Path, ref: str, path: Path) -> bool:
     rel = path.relative_to(root).as_posix()
     return run_git(root, ["cat-file", "-e", f"{ref}:{rel}"]).returncode == 0
+
+
+def item_at_ref(root: Path, ref: str, path: Path) -> dict[str, Any] | None:
+    rel = path.relative_to(root).as_posix()
+    result = run_git(root, ["show", f"{ref}:{rel}"])
+    if result.returncode != 0:
+        return None
+    try:
+        data = json.loads(result.stdout)
+    except json.JSONDecodeError:
+        return None
+    return data if isinstance(data, dict) else None
+
+
+def wiki_visible_projection(item: dict[str, Any] | None) -> Any:
+    if not item or item.get("schema_version") != "vocomipedia-item-2":
+        return item
+
+    sentences = []
+    for sentence in item.get("sentences") or []:
+        if not isinstance(sentence, dict):
+            continue
+        sentences.append(
+            {
+                key: copy.deepcopy(sentence[key])
+                for key in ("target", "reading", "translations", "tokens", "difficulty")
+                if key in sentence
+            }
+        )
+
+    media = item.get("media") if isinstance(item.get("media"), dict) else {}
+    review = item.get("review") if isinstance(item.get("review"), dict) else {}
+    return {
+        "id": item.get("id"),
+        "pack_code": item.get("pack_code"),
+        "entry_id": item.get("entry_id"),
+        "headword": item.get("headword"),
+        "reading": item.get("reading"),
+        "label": item.get("label"),
+        "level": item.get("level"),
+        "part_of_speech": item.get("part_of_speech"),
+        "glosses": item.get("glosses"),
+        "sentences": sentences,
+        "media": {
+            key: copy.deepcopy(media[key])
+            for key in ("image_filename", "source_image_filename", "license", "review_status", "attribution", "source_url")
+            if key in media
+        },
+        "review": {
+            "status": review.get("status"),
+            "sentence_proposals": copy.deepcopy(review.get("sentence_proposals") or []),
+        },
+    }
+
+
+def has_wiki_visible_change(root: Path, base: str, head: str, path: Path) -> bool:
+    before = wiki_visible_projection(item_at_ref(root, base, path))
+    after = wiki_visible_projection(item_at_ref(root, head, path))
+    return before != after
 
 
 def changed_item_paths(root: Path, base: str, head: str, deck_dir: Path) -> list[str]:
@@ -39,7 +99,7 @@ def changed_item_paths(root: Path, base: str, head: str, deck_dir: Path) -> list
         if not value.endswith(".json") or not value.startswith(prefix):
             continue
         rel = value[len(prefix) :]
-        if rel.startswith("items/"):
+        if rel.startswith("items/") and has_wiki_visible_change(root, base, head, root / value):
             out.append(rel)
     return sorted(set(out))
 

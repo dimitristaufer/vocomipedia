@@ -1009,6 +1009,61 @@ class VocomipediaPipelineTests(unittest.TestCase):
             paths = changed_deck_items.changed_item_paths(tmp, base, "HEAD", pack_dir)
             self.assertEqual(paths, ["items/one.json"])
 
+    def test_changed_deck_items_ignores_review_metadata_only_changes(self) -> None:
+        with tempfile.TemporaryDirectory() as td:
+            tmp = Path(td)
+            run(["git", "init"], cwd=tmp)
+            run(["git", "config", "user.email", "test@example.invalid"], cwd=tmp)
+            run(["git", "config", "user.name", "Test User"], cwd=tmp)
+            pack_dir = tmp / "data" / "languages" / "ja" / "ja_n5"
+            item_dir = pack_dir / "items"
+            item_dir.mkdir(parents=True)
+            item = {
+                "schema_version": "vocomipedia-item-2",
+                "id": "ja_n5:one",
+                "pack_code": "ja_n5",
+                "language": "ja",
+                "entry_id": "川",
+                "headword": "川",
+                "reading": "かわ",
+                "label": "",
+                "level": "N5",
+                "part_of_speech": ["Noun"],
+                "glosses": {"en": "river"},
+                "sentences": [{"target": "川です。", "translations": {"en": "It is a river."}, "tokens": []}],
+                "media": {"image_filename": "comic.png", "license": "Vocomi-created", "review_status": "approved"},
+                "review": {"status": "approved", "wiki": {"revision_id": 1, "pulled_utc": "2026-01-01T00:00:00Z"}},
+                "provenance": {},
+                "app_payload": {"word_en": "river"},
+            }
+            (pack_dir / "pack.json").write_text(
+                json.dumps(
+                    {
+                        "schema_version": "vocomipedia-pack-1",
+                        "pack_code": "ja_n5",
+                        "items": [{"id": "ja_n5:one", "entry_id": "川", "file": "items/one.json", "order": 0}],
+                    }
+                ),
+                encoding="utf-8",
+            )
+            (item_dir / "one.json").write_text(json.dumps(item, ensure_ascii=False), encoding="utf-8")
+            run(["git", "add", "."], cwd=tmp)
+            run(["git", "commit", "-m", "base"], cwd=tmp)
+            base = run(["git", "rev-parse", "HEAD"], cwd=tmp).stdout.strip()
+
+            item["review"]["wiki"]["revision_id"] = 2
+            item["review"]["wiki"]["pulled_utc"] = "2026-01-02T00:00:00Z"
+            (item_dir / "one.json").write_text(json.dumps(item, ensure_ascii=False), encoding="utf-8")
+            run(["git", "add", "."], cwd=tmp)
+            run(["git", "commit", "-m", "metadata only"], cwd=tmp)
+            self.assertEqual(changed_deck_items.changed_item_paths(tmp, base, "HEAD", pack_dir), [])
+
+            item["glosses"]["en"] = "stream"
+            (item_dir / "one.json").write_text(json.dumps(item, ensure_ascii=False), encoding="utf-8")
+            run(["git", "add", "."], cwd=tmp)
+            run(["git", "commit", "-m", "visible change"], cwd=tmp)
+            self.assertEqual(changed_deck_items.changed_item_paths(tmp, base, "HEAD", pack_dir), ["items/one.json"])
+
     def test_changed_deck_items_uses_per_deck_release_state(self) -> None:
         with tempfile.TemporaryDirectory() as td:
             tmp = Path(td)
