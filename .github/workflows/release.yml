@@ -20,6 +20,9 @@ concurrency:
 jobs:
   plan:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: read
     outputs:
       requested_deck_codes: ${{ steps.plan.outputs.requested_deck_codes }}
       requested_decks_json: ${{ steps.plan.outputs.requested_decks_json }}
@@ -63,6 +66,26 @@ jobs:
           echo "Requested decks: $REQUESTED_DECK_CODES"
           echo "Sync closure: $SYNC_DECK_CODES"
           echo "Combined data packs: $COMBINED_DATA_CODES_JSON"
+      - name: Refuse release while wiki sync PRs are open
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          open_sync_prs="$(
+            gh pr list \
+              --repo "$GITHUB_REPOSITORY" \
+              --state open \
+              --json number,headRefName,url \
+              --jq '.[] | select(.headRefName | startswith("vocomipedia/wiki-sync-")) | "#\(.number) \(.headRefName) \(.url)"'
+          )"
+          if [ -n "$open_sync_prs" ]; then
+            {
+              echo "Open Wiki Sync Back PR(s) must be merged or closed before Release and Deploy:"
+              echo "$open_sync_prs"
+              echo
+              echo "Release builds from main. Running it while a wiki-sync PR is open can publish stale pack data."
+            } >&2
+            exit 1
+          fi
 
   production-approval:
     needs: plan
