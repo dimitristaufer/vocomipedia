@@ -2477,6 +2477,79 @@ packs:
             self.assertNotEqual(result.returncode, 0)
             self.assertIn("not newer than current recorded revision", result.stdout)
 
+    def test_apply_pulled_merges_visible_non_english_sentence_translations(self) -> None:
+        with tempfile.TemporaryDirectory() as td:
+            tmp = Path(td)
+            pack_dir = tmp / "pack"
+            pulled_dir = tmp / "pulled"
+            (pack_dir / "items").mkdir(parents=True)
+            pulled_dir.mkdir()
+            item = {
+                "schema_version": "vocomipedia-item-2",
+                "id": "de_a2:test",
+                "pack_code": "de_a2",
+                "language": "de",
+                "entry_id": "Ball",
+                "headword": "Ball",
+                "reading": "",
+                "label": "",
+                "level": "A2",
+                "order": 0,
+                "part_of_speech": ["Noun"],
+                "glosses": {"en": "ball", "de": "Ball"},
+                "sentences": [
+                    {
+                        "target": "Ich suche den Ball im Garten.",
+                        "translations": {"en": "I look for the ball.", "de": "Ich suche den Ball im Garten."},
+                        "tokens": [],
+                    }
+                ],
+                "media": {"image_filename": "", "license": "Vocomi-created", "review_status": "approved"},
+                "review": {"status": "approved", "wiki": {"revision_id": 5}},
+                "provenance": {"origin": "test", "ai_generated": True, "license_status": "generated_by_vocomi"},
+                "app_payload": {},
+            }
+            (pack_dir / "items" / "item.json").write_text(json.dumps(item, ensure_ascii=False), encoding="utf-8")
+            (pack_dir / "pack.json").write_text(
+                json.dumps(
+                    {
+                        "schema_version": "vocomipedia-pack-1",
+                        "pack_code": "de_a2",
+                        "title": "German A2",
+                        "language": "de",
+                        "lang_prefix": "de",
+                        "lang_level": "a2",
+                        "items": [{"id": item["id"], "entry_id": item["entry_id"], "file": "items/item.json", "order": 0}],
+                    }
+                ),
+                encoding="utf-8",
+            )
+            pulled = json.loads(json.dumps(item))
+            pulled["sentences"][0]["translations"]["de"] = "Ich suche den Ball im Garten.#"
+            pulled["review"]["wiki"]["revision_id"] = 6
+            (pulled_dir / "item.json").write_text(json.dumps(pulled, ensure_ascii=False), encoding="utf-8")
+
+            result = subprocess.run(
+                [
+                    sys.executable,
+                    str(TOOLS / "apply_pulled_items.py"),
+                    "--deck-dir",
+                    str(pack_dir),
+                    "--pulled-dir",
+                    str(pulled_dir),
+                    "--backup-dir",
+                    str(tmp / "backups"),
+                ],
+                cwd=ROOT,
+                text=True,
+                stdout=subprocess.PIPE,
+                stderr=subprocess.STDOUT,
+            )
+            self.assertEqual(result.returncode, 0, result.stdout)
+            applied = json.loads((pack_dir / "items" / "item.json").read_text(encoding="utf-8"))
+            self.assertEqual(applied["sentences"][0]["translations"]["de"], "Ich suche den Ball im Garten.#")
+            self.assertEqual(applied["app_payload"]["de"][0], "Ich suche den Ball im Garten.#")
+
     def test_apply_pulled_skips_same_revision_with_only_derived_payload_drift(self) -> None:
         with tempfile.TemporaryDirectory() as td:
             tmp = Path(td)

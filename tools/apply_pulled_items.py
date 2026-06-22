@@ -45,6 +45,7 @@ VISIBLE_GLOSS_LANGS = {
     "fi",
     "ja",
 }
+VISIBLE_SENTENCE_TRANSLATION_LANGS = VISIBLE_GLOSS_LANGS
 
 
 def wiki_revision_id(item: Dict) -> int | None:
@@ -167,8 +168,12 @@ def merge_visible_fields(current: Dict, pulled: Dict) -> Dict:
                 current_sentence[key] = copy.deepcopy(pulled_sentence[key])
         pulled_translations = pulled_sentence.get("translations") or {}
         current_translations = current_sentence.setdefault("translations", {})
-        if "en" in pulled_translations:
-            current_translations["en"] = pulled_translations["en"]
+        for lang in VISIBLE_SENTENCE_TRANSLATION_LANGS:
+            value = pulled_translations.get(lang)
+            if isinstance(value, str) and value:
+                current_translations[lang] = value
+            elif lang in current_translations:
+                current_translations.pop(lang)
 
     pulled_payload = pulled.get("app_payload") or {}
     current_payload = updated.setdefault("app_payload", {})
