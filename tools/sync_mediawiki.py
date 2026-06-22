@@ -24,6 +24,7 @@ from pathlib import Path
 from common import iter_pack_items, load_pack_manifest, safe_filename, validate_token_sequence, write_json
 from japanese_ruby import normalize_japanese_item, parse_ruby_text, reading_from_ruby_text, ruby_from_surface_reading, sentence_reading_from_tokens
 from vocomipedia_nlp import analyze_sentence, sync_item_pos_analysis
+from wiki_visible_fields import GLOSS_LANGUAGES
 
 JSON_START = "VOCOMIPEDIA_ITEM_JSON_START"
 JSON_END = "VOCOMIPEDIA_ITEM_JSON_END"
@@ -40,36 +41,6 @@ NS_MEDIAWIKI = 8
 NS_ITEM = 3000
 NS_DECK = 3002
 NS_POLICY = 3004
-GLOSS_LANGUAGES: list[tuple[str, str]] = [
-    ("en", "English"),
-    ("es", "Spanish"),
-    ("fr", "French"),
-    ("de", "German"),
-    ("it", "Italian"),
-    ("ko", "Korean"),
-    ("zh-Hans", "Chinese (Simplified)"),
-    ("yue", "Cantonese"),
-    ("ru", "Russian"),
-    ("pt", "Portuguese"),
-    ("he", "Hebrew"),
-    ("tr", "Turkish"),
-    ("vi", "Vietnamese"),
-    ("ar", "Arabic"),
-    ("nl", "Dutch"),
-    ("uk", "Ukrainian"),
-    ("hu", "Hungarian"),
-    ("hi", "Hindi"),
-    ("pl", "Polish"),
-    ("el", "Greek"),
-    ("nb", "Norwegian Bokmal"),
-    ("id", "Indonesian"),
-    ("sv", "Swedish"),
-    ("ro", "Romanian"),
-    ("cs", "Czech"),
-    ("da", "Danish"),
-    ("fi", "Finnish"),
-    ("ja", "Japanese"),
-]
 GLOSS_LANG_BY_FIELD: dict[str, str] = {}
 TRANSLATION_LANG_BY_FIELD: dict[str, str] = {}
 
@@ -185,6 +156,11 @@ def sentence_ruby_source(item: dict, sentence: dict) -> str:
 
 GLOSS_LANG_BY_FIELD.update({gloss_field_name(lang): lang for lang, _label in GLOSS_LANGUAGES})
 TRANSLATION_LANG_BY_FIELD.update({translation_field_name(lang): lang for lang, _label in GLOSS_LANGUAGES})
+LEGACY_TRANSLATION_LANG_BY_LABEL = {
+    label.strip().lower(): lang
+    for lang, label in GLOSS_LANGUAGES
+    if label.strip().lower() != "japanese"
+}
 
 
 def entry_image_filename(item: dict) -> str:
@@ -664,18 +640,20 @@ def apply_template_page_edits(source: str, item: dict) -> dict:
     require_same(item_params, "entry_id", item.get("entry_id"), str(item.get("id", "<unknown>")))
     if "headword_ruby" in item_params:
         headword_source = item_params["headword_ruby"].strip()
-        headword_surface, _spans = parse_ruby_text(headword_source)
+        if str(updated.get("language") or "") == "ja":
+            headword_surface, _spans = parse_ruby_text(headword_source)
+        else:
+            headword_surface = headword_source
         if headword_surface:
             updated["headword"] = headword_surface
-            updated["reading"] = reading_from_ruby_text(headword_source)
+            if str(updated.get("language") or "") == "ja":
+                updated["reading"] = reading_from_ruby_text(headword_source)
     glosses = updated.setdefault("glosses", {})
     if not isinstance(glosses, dict):
         glosses = {}
         updated["glosses"] = glosses
     for field, lang in GLOSS_LANG_BY_FIELD.items():
-        if field not in item_params:
-            continue
-        value = item_params[field].strip()
+        value = item_params.get(field, "").strip()
         if value:
             glosses[lang] = value
         else:
@@ -717,9 +695,8 @@ def apply_template_page_edits(source: str, item: dict) -> dict:
             incoming_ruby_source = incoming_sentence
         incoming_translations: dict[str, str] = {}
         for field, lang in TRANSLATION_LANG_BY_FIELD.items():
-            if field in params:
-                incoming_translations[lang] = params[field].strip()
-        if "english" in params and "en" not in incoming_translations:
+            incoming_translations[lang] = params.get(field, "").strip()
+        if "english" in params and not incoming_translations.get("en"):
             incoming_translations["en"] = params["english"].strip()
         proposal_sentence = params.get("proposal_japanese", "").strip()
         proposal_english = params.get("proposal_english", "").strip()
@@ -755,7 +732,7 @@ def apply_template_page_edits(source: str, item: dict) -> dict:
             )
         elif changed_translations:
             translations = sentence.setdefault("translations", {})
-            if "english" in params and "en" not in incoming_translations:
+            if "english" in params and not incoming_translations.get("en"):
                 incoming_translations["en"] = params["english"].strip()
             for lang, value in incoming_translations.items():
                 if value:
@@ -820,11 +797,21 @@ def apply_visible_page_edits(source: str, item: dict) -> dict:
         sentence = sentences[idx]
         fields = {row[0].strip().lower(): row[1] for row in parse_table_rows(table) if len(row) >= 2}
         incoming_sentence = fields.get("sentence", fields.get("japanese", str(sentence.get("target") or "")))
-        if "english" in fields:
-            translations = dict(sentence.get("translations") or {})
-            translations["en"] = fields["english"]
-        else:
-            translations = dict(sentence.get("translations") or {})
+        translations = dict(sentence.get("translations") or {})
+        for label, lang in LEGACY_TRANSLATION_LANG_BY_LABEL.items():
+            if label in fields:
+                value = fields[label].strip()
+                if value:
+                    translations[lang] = value
+                else:
+                    translations.pop(lang, None)
+        for field, lang in TRANSLATION_LANG_BY_FIELD.items():
+            if field in fields:
+                value = fields[field].strip()
+                if value:
+                    translations[lang] = value
+                else:
+                    translations.pop(lang, None)
         if incoming_sentence != str(sentence.get("target") or ""):
             add_sentence_proposal(updated, item, idx + 1, sentence, incoming_sentence, translations, "")
         elif translations != dict(sentence.get("translations") or {}):

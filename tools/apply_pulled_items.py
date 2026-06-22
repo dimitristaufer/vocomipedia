@@ -14,38 +14,7 @@ from typing import Any, Dict, List
 
 from backup import create_backup
 from common import load_pack_manifest, read_json, safe_filename, sync_legacy_payload_fields, validate_item, write_json
-
-VISIBLE_GLOSS_LANGS = {
-    "en",
-    "es",
-    "fr",
-    "de",
-    "it",
-    "ko",
-    "zh-Hans",
-    "yue",
-    "ru",
-    "pt",
-    "he",
-    "tr",
-    "vi",
-    "ar",
-    "nl",
-    "uk",
-    "hu",
-    "hi",
-    "pl",
-    "el",
-    "nb",
-    "id",
-    "sv",
-    "ro",
-    "cs",
-    "da",
-    "fi",
-    "ja",
-}
-VISIBLE_SENTENCE_TRANSLATION_LANGS = VISIBLE_GLOSS_LANGS
+from wiki_visible_fields import VISIBLE_GLOSS_LANGS, VISIBLE_SENTENCE_TRANSLATION_LANGS
 
 
 def wiki_revision_id(item: Dict) -> int | None:
@@ -163,9 +132,6 @@ def merge_visible_fields(current: Dict, pulled: Dict) -> Dict:
             current_sentences.append(copy.deepcopy(pulled_sentence))
             continue
         current_sentence = current_sentences[idx]
-        for key in ("reading", "tokens", "difficulty"):
-            if key in pulled_sentence:
-                current_sentence[key] = copy.deepcopy(pulled_sentence[key])
         pulled_translations = pulled_sentence.get("translations") or {}
         current_translations = current_sentence.setdefault("translations", {})
         for lang in VISIBLE_SENTENCE_TRANSLATION_LANGS:
@@ -174,18 +140,6 @@ def merge_visible_fields(current: Dict, pulled: Dict) -> Dict:
                 current_translations[lang] = value
             elif lang in current_translations:
                 current_translations.pop(lang)
-
-    pulled_payload = pulled.get("app_payload") or {}
-    current_payload = updated.setdefault("app_payload", {})
-    pulled_pos = pulled_payload.get("pos_analysis")
-    current_pos = current_payload.get("pos_analysis")
-    if isinstance(pulled_pos, list) and isinstance(current_pos, list):
-        for idx, pulled_pos_item in enumerate(pulled_pos):
-            if idx < len(current_pos) and isinstance(current_pos[idx], dict) and isinstance(pulled_pos_item, dict):
-                for key in ("tokens", "difficulty_aggregated"):
-                    if key in pulled_pos_item:
-                        current_pos[idx][key] = copy.deepcopy(pulled_pos_item[key])
-                current_pos[idx]["sentence"] = current_sentences[idx].get("target", "")
 
     updated["review"] = merge_review_metadata(current, pulled)
     return updated

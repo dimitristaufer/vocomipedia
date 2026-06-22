@@ -70,6 +70,8 @@ decksearch_prebuilt_index = importlib.util.module_from_spec(DECKSEARCH_SPEC)
 sys.modules["decksearch_prebuilt_index"] = decksearch_prebuilt_index
 DECKSEARCH_SPEC.loader.exec_module(decksearch_prebuilt_index)
 import common
+import apply_pulled_items
+import wiki_visible_fields
 from vocomipedia_nlp import analyze_sentence
 import vocomipedia_nlp.base as nlp_base
 
@@ -1062,6 +1064,20 @@ class VocomipediaPipelineTests(unittest.TestCase):
             run(["git", "commit", "-m", "metadata only"], cwd=tmp)
             self.assertEqual(changed_deck_items.changed_item_paths(tmp, base, "HEAD", pack_dir), [])
 
+            item["sentences"][0]["tokens"] = [{"surface": "川", "pos": "NOUN", "difficulty": 1}]
+            item["sentences"][0]["difficulty"] = 99
+            item["app_payload"]["pos_analysis"] = [
+                {
+                    "sentence": "川です。",
+                    "tokens": [{"surface": "川", "pos": "NOUN", "difficulty": 1}],
+                    "difficulty_aggregated": 99,
+                }
+            ]
+            (item_dir / "one.json").write_text(json.dumps(item, ensure_ascii=False), encoding="utf-8")
+            run(["git", "add", "."], cwd=tmp)
+            run(["git", "commit", "-m", "analysis only"], cwd=tmp)
+            self.assertEqual(changed_deck_items.changed_item_paths(tmp, base, "HEAD", pack_dir), [])
+
             item["glosses"]["en"] = "stream"
             (item_dir / "one.json").write_text(json.dumps(item, ensure_ascii=False), encoding="utf-8")
             run(["git", "add", "."], cwd=tmp)
@@ -1756,6 +1772,8 @@ packs:
         gloss_edited = page.replace("|gloss_de=Fluss", "|gloss_de=Strom")
         gloss_pulled = sync_mediawiki.extract_item_json(gloss_edited)
         self.assertEqual(gloss_pulled["glosses"]["de"], "Strom")
+        gloss_removed = sync_mediawiki.extract_item_json(page.replace("|gloss_de=Fluss\n", ""))
+        self.assertNotIn("de", gloss_removed["glosses"])
         sentence_edited = sync_mediawiki.extract_item_json(page.replace("|ruby_source=川[かわ]を見[み]る。", "|ruby_source=山[やま]を見[み]る。"))
         self.assertEqual(sentence_edited["sentences"][0]["target"], "川を見る。")
         direct_proposal = sentence_edited["review"]["sentence_proposals"][0]
@@ -1769,6 +1787,8 @@ packs:
         translation_edited = page.replace("|translation_de=Ich sehe einen Fluss.", "|translation_de=Ich sehe den Fluss.")
         translation_pulled = sync_mediawiki.extract_item_json(translation_edited)
         self.assertEqual(translation_pulled["sentences"][0]["translations"]["de"], "Ich sehe den Fluss.")
+        translation_removed = sync_mediawiki.extract_item_json(page.replace("|translation_de=Ich sehe einen Fluss.\n", ""))
+        self.assertNotIn("de", translation_removed["sentences"][0]["translations"])
         proposal_page = page.replace(
             "|translation_en=I see a river.",
             "|translation_en=I see a river.\n"
@@ -1805,6 +1825,80 @@ packs:
         headword_pulled = sync_mediawiki.extract_item_json(headword_edited)
         self.assertEqual(headword_pulled["headword"], "川")
         self.assertEqual(headword_pulled["reading"], "がわ")
+        de_item = json.loads(json.dumps(item))
+        de_item["id"] = "de_a2:test"
+        de_item["pack_code"] = "de_a2"
+        de_item["language"] = "de"
+        de_item["entry_id"] = "Ball"
+        de_item["headword"] = "Ball"
+        de_item["reading"] = "bal"
+        de_page = sync_mediawiki.render_item_page(de_item)
+        de_headword_pulled = sync_mediawiki.extract_item_json(de_page.replace("|headword_ruby=Ball", "|headword_ruby=Ball yoo"))
+        self.assertEqual(de_headword_pulled["headword"], "Ball yoo")
+        self.assertEqual(de_headword_pulled["reading"], "bal")
+
+    def test_wiki_visible_language_definitions_are_shared(self) -> None:
+        self.assertIs(sync_mediawiki.GLOSS_LANGUAGES, wiki_visible_fields.GLOSS_LANGUAGES)
+        rendered_langs = {lang for lang, _label in sync_mediawiki.GLOSS_LANGUAGES}
+        self.assertEqual(rendered_langs, apply_pulled_items.VISIBLE_GLOSS_LANGS)
+        self.assertEqual(rendered_langs, apply_pulled_items.VISIBLE_SENTENCE_TRANSLATION_LANGS)
+
+        form_page = sync_mediawiki.render_item_form_page()
+        sentence_template = sync_mediawiki.render_sentence_template_page()
+        for lang in rendered_langs:
+            self.assertIn(f"field|{sync_mediawiki.gloss_field_name(lang)}", form_page)
+            self.assertIn(f"field|{sync_mediawiki.translation_field_name(lang)}", form_page)
+            self.assertIn(f"{{{{{{{sync_mediawiki.translation_field_name(lang)}|}}}}}}", sentence_template)
+
+    def test_legacy_visible_wiki_sentence_tables_merge_non_english_translations(self) -> None:
+        item = {
+            "schema_version": "vocomipedia-item-2",
+            "id": "ja_n5:test",
+            "pack_code": "ja_n5",
+            "language": "ja",
+            "entry_id": "川",
+            "headword": "川",
+            "reading": "かわ",
+            "label": "",
+            "level": "N5",
+            "order": 0,
+            "part_of_speech": ["Noun"],
+            "glosses": {"en": "river", "de": "Fluss"},
+            "sentences": [
+                {
+                    "target": "川を見る。",
+                    "reading": "かわをみる。",
+                    "translations": {"en": "I see a river.", "de": "Ich sehe einen Fluss."},
+                    "tokens": [],
+                }
+            ],
+            "media": {"image_filename": "", "license": "Vocomi-created", "review_status": "approved"},
+            "review": {"status": "approved"},
+            "provenance": {"origin": "test", "license_status": "test"},
+            "app_payload": {},
+        }
+        source = "\n".join(
+            [
+                '{| class="wikitable vocomipedia-sentence-fields"',
+                "! Field",
+                "! Value",
+                "|-",
+                "| Sentence",
+                "| 川を見る。",
+                "|-",
+                "| English",
+                "| I see a river.",
+                "|-",
+                "| German",
+                "| Ich sehe den Fluss.",
+                "|}",
+                f"<!-- {sync_mediawiki.JSON_START}",
+                json.dumps(item, ensure_ascii=False, indent=2),
+                f"{sync_mediawiki.JSON_END} -->",
+            ]
+        )
+        pulled = sync_mediawiki.extract_item_json(source)
+        self.assertEqual(pulled["sentences"][0]["translations"]["de"], "Ich sehe den Fluss.")
 
     def test_item_page_can_render_low_res_entry_image(self) -> None:
         with tempfile.TemporaryDirectory() as td:
@@ -2709,7 +2803,14 @@ packs:
                 "order": 0,
                 "part_of_speech": ["Noun"],
                 "glosses": {"en": "river", "de": "Fluss"},
-                "sentences": [{"target": "川です。", "translations": {"en": "It is a river."}, "tokens": []}],
+                "sentences": [
+                    {
+                        "target": "川です。",
+                        "translations": {"en": "It is a river."},
+                        "tokens": [{"surface": "川", "pos": "noun", "difficulty": 1}],
+                        "difficulty": 1,
+                    }
+                ],
                 "media": {"image_filename": "comic.png", "license": "Vocomi-created", "review_status": "approved"},
                 "review": {"status": "approved", "wiki": {"revision_id": 5}},
                 "provenance": {"origin": "test", "ai_generated": True, "license_status": "generated_by_vocomi"},
@@ -2718,6 +2819,13 @@ packs:
                     "word_de": "Fluss",
                     "en": ["It is a river."],
                     "de": ["Es ist ein Fluss."],
+                    "pos_analysis": [
+                        {
+                            "sentence": "川です。",
+                            "tokens": [{"surface": "川", "pos": "noun", "difficulty": 1}],
+                            "difficulty_aggregated": 1,
+                        }
+                    ],
                 },
             }
             (pack_dir / "items" / "item.json").write_text(json.dumps(item, ensure_ascii=False), encoding="utf-8")
@@ -2741,7 +2849,11 @@ packs:
             pulled["glosses"]["en"] = "stream"
             pulled["glosses"].pop("de")
             pulled["sentences"][0]["target"] = "山です。"
+            pulled["sentences"][0]["tokens"] = [{"surface": "川", "pos": "verb", "difficulty": 99}]
+            pulled["sentences"][0]["difficulty"] = 99
             pulled["sentences"][0]["translations"]["en"] = "This is a river."
+            pulled["app_payload"]["pos_analysis"][0]["tokens"] = [{"surface": "川", "pos": "adjective", "difficulty": 99}]
+            pulled["app_payload"]["pos_analysis"][0]["difficulty_aggregated"] = 99
             pulled["review"]["sentence_proposals"] = [
                 {
                     "id": "sentprop-test",
@@ -2777,9 +2889,13 @@ packs:
             self.assertEqual(applied["glosses"]["en"], "stream")
             self.assertNotIn("de", applied["glosses"])
             self.assertEqual(applied["sentences"][0]["target"], "川です。")
+            self.assertEqual(applied["sentences"][0]["tokens"][0]["pos"], "noun")
+            self.assertEqual(applied["sentences"][0]["difficulty"], 1)
             self.assertEqual(applied["sentences"][0]["translations"]["en"], "This is a river.")
             self.assertEqual(applied["app_payload"]["word_en"], "stream")
             self.assertEqual(applied["app_payload"]["en"], ["This is a river."])
+            self.assertEqual(applied["app_payload"]["pos_analysis"][0]["tokens"][0]["pos"], "noun")
+            self.assertEqual(applied["app_payload"]["pos_analysis"][0]["difficulty_aggregated"], 1)
             self.assertNotIn("word_de", applied["app_payload"])
             self.assertNotIn("de", applied["app_payload"])
             self.assertEqual(applied["media"]["license"], "Vocomi-created")

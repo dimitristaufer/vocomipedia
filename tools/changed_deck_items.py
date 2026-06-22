@@ -12,6 +12,7 @@ from typing import Any, Dict
 
 from common import load_pack_catalog, load_pack_manifest, repo_root_from_tool
 from prepare_release_workspace import canonical_pack_dir
+from wiki_visible_fields import VISIBLE_GLOSS_LANGS, VISIBLE_SENTENCE_TRANSLATION_LANGS
 
 
 def run_git(root: Path, args: list[str]) -> subprocess.CompletedProcess[str]:
@@ -43,16 +44,21 @@ def wiki_visible_projection(item: dict[str, Any] | None) -> Any:
     for sentence in item.get("sentences") or []:
         if not isinstance(sentence, dict):
             continue
-        sentences.append(
-            {
-                key: copy.deepcopy(sentence[key])
-                for key in ("target", "reading", "translations", "tokens", "difficulty")
-                if key in sentence
-            }
-        )
+        translations = sentence.get("translations") if isinstance(sentence.get("translations"), dict) else {}
+        projected_sentence = {
+            "target": sentence.get("target"),
+            "reading": sentence.get("reading"),
+            "translations": {
+                lang: copy.deepcopy(translations[lang])
+                for lang in VISIBLE_SENTENCE_TRANSLATION_LANGS
+                if lang in translations
+            },
+        }
+        sentences.append(projected_sentence)
 
     media = item.get("media") if isinstance(item.get("media"), dict) else {}
     review = item.get("review") if isinstance(item.get("review"), dict) else {}
+    glosses = item.get("glosses") if isinstance(item.get("glosses"), dict) else {}
     return {
         "id": item.get("id"),
         "pack_code": item.get("pack_code"),
@@ -62,7 +68,11 @@ def wiki_visible_projection(item: dict[str, Any] | None) -> Any:
         "label": item.get("label"),
         "level": item.get("level"),
         "part_of_speech": item.get("part_of_speech"),
-        "glosses": item.get("glosses"),
+        "glosses": {
+            lang: copy.deepcopy(glosses[lang])
+            for lang in VISIBLE_GLOSS_LANGS
+            if lang in glosses
+        },
         "sentences": sentences,
         "media": {
             key: copy.deepcopy(media[key])
