@@ -11,6 +11,8 @@ from typing import Dict, Iterable, List
 
 from backup import create_backup
 from common import load_pack_catalog, repo_root_from_tool
+from vocomipedia_nlp import ensure_real_analyzer_available
+from vocomipedia_nlp.base import RequiredAnalyzerUnavailable
 
 
 TOOLS = Path(__file__).resolve().parent
@@ -70,6 +72,28 @@ def affected_combined_data_codes(catalog: Dict[str, dict], codes: Iterable[str])
     return sorted(out)
 
 
+def preflight_pos_analyzers(catalog: Dict[str, dict], codes: Iterable[str]) -> bool:
+    checked: set[str] = set()
+    ok = True
+    for code in codes:
+        cfg = catalog[code]
+        language = str(cfg.get("language") or cfg.get("lang_prefix") or code.split("_", 1)[0]).lower()
+        if language in checked:
+            continue
+        checked.add(language)
+        try:
+            analyzer = ensure_real_analyzer_available(language)
+        except RequiredAnalyzerUnavailable as exc:
+            print(f"ERROR: {exc}")
+            ok = False
+            continue
+        print(f"POS analyzer ready for {language}: {analyzer.source}")
+    if not ok:
+        print("ERROR: --auto-pos-analysis preflight failed before modifying data/languages.")
+        print("Install NLP dependencies with: python3 -m pip install -r requirements.txt")
+    return ok
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description="Backup-aware sync between vocomi_pack_generation and Vocomipedia canonical deck data.")
     ap.add_argument("--catalog", default=Path("catalog/packs.yaml"), type=Path)
@@ -107,6 +131,9 @@ def main() -> int:
     codes = select_pack_codes(catalog, args.decks, args.langs, args.all)
     if not codes:
         print("ERROR: no deck codes selected")
+        return 2
+
+    if args.auto_pos_analysis and not preflight_pos_analyzers(catalog, codes):
         return 2
 
     affected = [pack_dir_for(out_root, catalog[code], code) for code in codes]

@@ -8,6 +8,7 @@ import json
 import re
 import shutil
 import copy
+import unicodedata
 from pathlib import Path
 from typing import Any, Dict, Iterable, List, Optional, Tuple
 
@@ -260,7 +261,7 @@ def legacy_to_canonical(
     source_image_filename = f"comic_{source_legacy_id}_blank.png"
     image_filename = f"comic_{legacy_id}_blank.png"
     media_status = "missing"
-    if media_root and (media_root / source_image_filename).exists():
+    if media_root and resolve_media_source(media_root, source_image_filename):
         media_status = "present"
 
     item = {
@@ -432,6 +433,52 @@ def path_exists_exact(root: Path, relative_path: str) -> bool:
     return current.is_file()
 
 
+def _loose_filename_key(name: str) -> str:
+    return unicodedata.normalize("NFC", name).casefold()
+
+
+def resolve_existing_path(root: Path, relative_path: str, *, loose_filename_match: bool = False) -> Optional[Path]:
+    current = root
+    for part in Path(relative_path).parts:
+        if part in {"", "."}:
+            continue
+        if part == "..":
+            return None
+        try:
+            children = {child.name: child for child in current.iterdir()}
+        except OSError:
+            return None
+        exact = children.get(part)
+        if exact is not None:
+            current = exact
+            continue
+        if not loose_filename_match:
+            return None
+
+        wanted = _loose_filename_key(part)
+        loose_matches = [child for name, child in children.items() if _loose_filename_key(name) == wanted]
+        if len(loose_matches) != 1:
+            return None
+        current = loose_matches[0]
+    return current if current.exists() else None
+
+
+def resolve_media_source(source_dir: Path, source_name: str) -> Optional[Path]:
+    requested = Path(source_name)
+    paletted_name = requested.with_name(requested.stem + "_pal" + requested.suffix)
+    for candidate in (str(paletted_name), source_name):
+        resolved = resolve_existing_path(source_dir, candidate, loose_filename_match=True)
+        if resolved and resolved.is_file():
+            return resolved
+    return None
+
+
+def remove_case_conflicting_destination(dest_dir: Path, dest_name: str) -> None:
+    existing = resolve_existing_path(dest_dir, dest_name, loose_filename_match=True)
+    if existing and existing.name != Path(dest_name).name:
+        existing.unlink()
+
+
 def validate_item(
     item: Dict[str, Any],
     *,
@@ -508,9 +555,9 @@ def validate_item(
         errors.append("media.review_status must be a non-empty string")
     if strict_media_root:
         media_filenames = {
-            filename
-            for filename in (media.get("image_filename"), media.get("source_image_filename"))
-            if isinstance(filename, str) and filename
+            media_filename
+            for media_filename in (media.get("image_filename") or media.get("source_image_filename"),)
+            if isinstance(media_filename, str) and media_filename
         }
         for media_filename in sorted(media_filenames):
             if not path_exists_exact(strict_media_root, media_filename):
@@ -577,12 +624,10 @@ def copy_item_media(item: Dict[str, Any], source_dirs: List[Path], dest_dir: Pat
     if not source_name or not dest_name:
         return None
     for src_dir in source_dirs:
-        src = src_dir / source_name
-        paletted = src.with_name(src.stem + "_pal" + src.suffix)
-        if paletted.exists():
-            src = paletted
-        if src.exists():
+        src = resolve_media_source(src_dir, source_name)
+        if src:
             dest_dir.mkdir(parents=True, exist_ok=True)
+            remove_case_conflicting_destination(dest_dir, dest_name)
             dest = dest_dir / dest_name
             shutil.copy2(src, dest)
             return dest

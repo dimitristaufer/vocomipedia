@@ -47,63 +47,89 @@
       "translations": {
         "en": "It can affect my sleep.",
         "es": "Puede afectar mi sueño.",
-        "ipa": "/ˈpwe.ðe a.fekˈtaɾ mi ˈswe.ɲo/"
+        "ipa": "/ˈpwe.ðe a.fekˈtaɾ mi ˈswe.ɲo/",
+        "ar": "يمكن أن يؤثر ذلك على نومي.",
+        "cs": "Může to ovlivnit můj spánek.",
+        "da": "Det kan påvirke min søvn.",
+        "de": "Das kann meinen Schlaf beeinträchtigen.",
+        "el": "Μπορεί να επηρεάσει τον ύπνο μου.",
+        "fi": "Se voi vaikuttaa uneeni.",
+        "fr": "Cela peut affecter mon sommeil.",
+        "he": "זה יכול להשפיע על השינה שלי.",
+        "hi": "इससे मेरी नींद पर असर पड़ सकता है।",
+        "hu": "Ez befolyásolhatja az alvásomat.",
+        "id": "Itu bisa memengaruhi tidur saya.",
+        "it": "Può influire sul mio sonno.",
+        "ja": "それは私の睡眠に影響するかもしれません。",
+        "ko": "그것은 내 수면에 영향을 줄 수 있다.",
+        "nb": "Det kan påvirke søvnen min.",
+        "nl": "Dat kan mijn slaap beïnvloeden.",
+        "pl": "To może wpłynąć na mój sen.",
+        "pt": "Isso pode afetar meu sono.",
+        "ro": "Asta îmi poate afecta somnul.",
+        "ru": "Это может повлиять на мой сон.",
+        "sv": "Det kan påverka min sömn.",
+        "tr": "Bu, uykumu etkileyebilir.",
+        "uk": "Це може вплинути на мій сон.",
+        "vi": "Nó có thể ảnh hưởng đến giấc ngủ của tôi.",
+        "yue": "呢樣嘢可能會影響我瞓覺。",
+        "zh-Hans": "这可能会影响我的睡眠。"
       },
       "tokens": [
         {
           "surface": "Puede",
-          "lemma": "puede",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "poder",
+          "pos": "AUX",
+          "upos": "AUX",
+          "xpos": "AUX",
           "feats": {},
           "start": 0,
           "end": 5,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "afectar",
           "lemma": "afectar",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VERB",
           "feats": {},
           "start": 6,
           "end": 13,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "mi",
           "lemma": "mi",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "DET",
           "feats": {},
           "start": 14,
           "end": 16,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "sueño",
           "lemma": "sueño",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NOUN",
           "feats": {},
           "start": 17,
           "end": 22,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": ".",
           "lemma": ".",
-          "pos": "punct",
+          "pos": "PUNCT",
           "upos": "PUNCT",
-          "xpos": "",
+          "xpos": "PUNCT",
           "feats": {},
           "start": 22,
           "end": 23,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         }
       ],
       "difficulty": null
@@ -114,85 +140,111 @@
       "translations": {
         "en": "The rain can affect the trip.",
         "es": "La lluvia puede afectar el viaje.",
-        "ipa": "/la ˈʝu.βja ˈpwe.ðe a.fekˈtaɾ el ˈbja.xe/"
+        "ipa": "/la ˈʝu.βja ˈpwe.ðe a.fekˈtaɾ el ˈbja.xe/",
+        "ar": "يمكن أن تؤثر الأمطار على الرحلة.",
+        "cs": "Déšť může ovlivnit cestu.",
+        "da": "Regnen kan påvirke turen.",
+        "de": "Der Regen kann die Reise beeinträchtigen.",
+        "el": "Η βροχή μπορεί να επηρεάσει το ταξίδι.",
+        "fi": "Sade voi vaikuttaa matkaan.",
+        "fr": "La pluie peut affecter le voyage.",
+        "he": "הגשם יכול להשפיע על הנסיעה.",
+        "hi": "बारिश यात्रा को प्रभावित कर सकती है।",
+        "hu": "Az eső befolyásolhatja az utat.",
+        "id": "Hujan bisa memengaruhi perjalanan.",
+        "it": "La pioggia può influire sul viaggio.",
+        "ja": "雨は旅行に影響するかもしれません。",
+        "ko": "비는 여행에 영향을 줄 수 있다.",
+        "nb": "Regnet kan påvirke turen.",
+        "nl": "De regen kan de reis beïnvloeden.",
+        "pl": "Deszcz może wpłynąć na podróż.",
+        "pt": "A chuva pode afetar a viagem.",
+        "ro": "Ploaia poate afecta călătoria.",
+        "ru": "Дождь может повлиять на поездку.",
+        "sv": "Regnet kan påverka resan.",
+        "tr": "Yağmur yolculuğu etkileyebilir.",
+        "uk": "Дощ може вплинути на поїздку.",
+        "vi": "Mưa có thể ảnh hưởng đến chuyến đi.",
+        "yue": "落雨可能會影響行程。",
+        "zh-Hans": "雨可能会影响旅程。"
       },
       "tokens": [
         {
           "surface": "La",
-          "lemma": "la",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "el",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "DET",
           "feats": {},
           "start": 0,
           "end": 2,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "lluvia",
           "lemma": "lluvia",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NOUN",
           "feats": {},
           "start": 3,
           "end": 9,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "puede",
-          "lemma": "puede",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "poder",
+          "pos": "AUX",
+          "upos": "AUX",
+          "xpos": "AUX",
           "feats": {},
           "start": 10,
           "end": 15,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "afectar",
           "lemma": "afectar",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VERB",
           "feats": {},
           "start": 16,
           "end": 23,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "el",
           "lemma": "el",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "DET",
           "feats": {},
           "start": 24,
           "end": 26,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "viaje",
           "lemma": "viaje",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NOUN",
           "feats": {},
           "start": 27,
           "end": 32,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": ".",
           "lemma": ".",
-          "pos": "punct",
+          "pos": "PUNCT",
           "upos": "PUNCT",
-          "xpos": "",
+          "xpos": "PUNCT",
           "feats": {},
           "start": 32,
           "end": 33,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         }
       ],
       "difficulty": null
@@ -203,96 +255,122 @@
       "translations": {
         "en": "That usually doesn't affect my family.",
         "es": "Eso no suele afectar a mi familia.",
-        "ipa": "/ˈe.so no ˈswe.le a.fekˈtaɾ a mi faˈmi.lja/"
+        "ipa": "/ˈe.so no ˈswe.le a.fekˈtaɾ a mi faˈmi.lja/",
+        "ar": "هذا لا يؤثر عادةً في عائلتي.",
+        "cs": "To se obvykle mé rodiny netýká.",
+        "da": "Det påvirker normalt ikke min familie.",
+        "de": "Das betrifft meine Familie normalerweise nicht.",
+        "el": "Αυτό συνήθως δεν επηρεάζει την οικογένειά μου.",
+        "fi": "Se ei yleensä vaikuta perheeseeni.",
+        "fr": "Cela n'affecte généralement pas ma famille.",
+        "he": "זה בדרך כלל לא משפיע על המשפחה שלי.",
+        "hi": "इसका आमतौर पर मेरे परिवार पर असर नहीं पड़ता।",
+        "hu": "Ez általában nem érinti a családomat.",
+        "id": "Itu biasanya tidak memengaruhi keluarga saya.",
+        "it": "Di solito questo non influisce sulla mia famiglia.",
+        "ja": "それは普通、私の家族には影響しません。",
+        "ko": "그것은 보통 우리 가족에게 영향을 주지 않는다.",
+        "nb": "Det påvirker vanligvis ikke familien min.",
+        "nl": "Dat heeft meestal geen invloed op mijn familie.",
+        "pl": "To zwykle nie wpływa na moją rodzinę.",
+        "pt": "Isso geralmente não afeta minha família.",
+        "ro": "De obicei, asta nu afectează familia mea.",
+        "ru": "Обычно это не влияет на мою семью.",
+        "sv": "Det påverkar vanligtvis inte min familj.",
+        "tr": "Bu genelde ailemi etkilemez.",
+        "uk": "Зазвичай це не впливає на мою родину.",
+        "vi": "Điều đó thường không ảnh hưởng đến gia đình tôi.",
+        "yue": "呢樣嘢通常唔會影響我屋企人。",
+        "zh-Hans": "这通常不会影响我的家人。"
       },
       "tokens": [
         {
           "surface": "Eso",
-          "lemma": "eso",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "ese",
+          "pos": "PRON",
+          "upos": "PRON",
+          "xpos": "PRON",
           "feats": {},
           "start": 0,
           "end": 3,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "no",
           "lemma": "no",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "ADV",
           "feats": {},
           "start": 4,
           "end": 6,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "suele",
-          "lemma": "suele",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "soler",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VERB",
           "feats": {},
           "start": 7,
           "end": 12,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "afectar",
           "lemma": "afectar",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VERB",
           "feats": {},
           "start": 13,
           "end": 20,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "a",
           "lemma": "a",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "ADP",
           "feats": {},
           "start": 21,
           "end": 22,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "mi",
           "lemma": "mi",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "DET",
           "feats": {},
           "start": 23,
           "end": 25,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "familia",
           "lemma": "familia",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NOUN",
           "feats": {},
           "start": 26,
           "end": 33,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": ".",
           "lemma": ".",
-          "pos": "punct",
+          "pos": "PUNCT",
           "upos": "PUNCT",
-          "xpos": "",
+          "xpos": "PUNCT",
           "feats": {},
           "start": 33,
           "end": 34,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         }
       ],
       "difficulty": null
@@ -303,85 +381,111 @@
       "translations": {
         "en": "His decision can affect everyone.",
         "es": "Su decisión puede afectar a todos.",
-        "ipa": "/su de.siˈsjon ˈpwe.ðe a.fekˈtaɾ a ˈto.ðos/"
+        "ipa": "/su de.siˈsjon ˈpwe.ðe a.fekˈtaɾ a ˈto.ðos/",
+        "ar": "يمكن أن يؤثر قراره في الجميع.",
+        "cs": "Jeho rozhodnutí může ovlivnit všechny.",
+        "da": "Hans beslutning kan påvirke alle.",
+        "de": "Seine Entscheidung kann alle beeinflussen.",
+        "el": "Η απόφασή του μπορεί να επηρεάσει όλους.",
+        "fi": "Hänen päätöksensä voi vaikuttaa kaikkiin.",
+        "fr": "Sa décision peut affecter tout le monde.",
+        "he": "ההחלטה שלו יכולה להשפיע על כולם.",
+        "hi": "उसका फैसला सभी को प्रभावित कर सकता है।",
+        "hu": "A döntése mindenkit érinthet.",
+        "id": "Keputusannya bisa memengaruhi semua orang.",
+        "it": "La sua decisione può influire su tutti.",
+        "ja": "彼の決断はみんなに影響するかもしれません。",
+        "ko": "그의 결정은 모두에게 영향을 줄 수 있다.",
+        "nb": "Avgjørelsen hans kan påvirke alle.",
+        "nl": "Zijn beslissing kan iedereen beïnvloeden.",
+        "pl": "Jego decyzja może wpłynąć na wszystkich.",
+        "pt": "A decisão dele pode afetar todos.",
+        "ro": "Decizia lui poate afecta pe toată lumea.",
+        "ru": "Его решение может повлиять на всех.",
+        "sv": "Hans beslut kan påverka alla.",
+        "tr": "Onun kararı herkesi etkileyebilir.",
+        "uk": "Його рішення може вплинути на всіх.",
+        "vi": "Quyết định của anh ấy có thể ảnh hưởng đến mọi người.",
+        "yue": "佢嘅決定可能會影響到所有人。",
+        "zh-Hans": "他的决定可能会影响所有人。"
       },
       "tokens": [
         {
           "surface": "Su",
           "lemma": "su",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "DET",
           "feats": {},
           "start": 0,
           "end": 2,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "decisión",
           "lemma": "decisión",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NOUN",
           "feats": {},
           "start": 3,
           "end": 11,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "puede",
-          "lemma": "puede",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "poder",
+          "pos": "AUX",
+          "upos": "AUX",
+          "xpos": "AUX",
           "feats": {},
           "start": 12,
           "end": 17,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "afectar",
           "lemma": "afectar",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VERB",
           "feats": {},
           "start": 18,
           "end": 25,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "a",
           "lemma": "a",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "ADP",
           "feats": {},
           "start": 26,
           "end": 27,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "todos",
-          "lemma": "todos",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "todo",
+          "pos": "PRON",
+          "upos": "PRON",
+          "xpos": "PRON",
           "feats": {},
           "start": 28,
           "end": 33,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": ".",
           "lemma": ".",
-          "pos": "punct",
+          "pos": "PUNCT",
           "upos": "PUNCT",
-          "xpos": "",
+          "xpos": "PUNCT",
           "feats": {},
           "start": 33,
           "end": 34,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         }
       ],
       "difficulty": null
@@ -507,64 +611,220 @@
     "word_fi": "vaikuttaa",
     "word_ja": "影響する",
     "word_es": "afectar",
+    "ar": [
+      "يمكن أن يؤثر ذلك على نومي.",
+      "يمكن أن تؤثر الأمطار على الرحلة.",
+      "هذا لا يؤثر عادةً في عائلتي.",
+      "يمكن أن يؤثر قراره في الجميع."
+    ],
+    "cs": [
+      "Může to ovlivnit můj spánek.",
+      "Déšť může ovlivnit cestu.",
+      "To se obvykle mé rodiny netýká.",
+      "Jeho rozhodnutí může ovlivnit všechny."
+    ],
+    "da": [
+      "Det kan påvirke min søvn.",
+      "Regnen kan påvirke turen.",
+      "Det påvirker normalt ikke min familie.",
+      "Hans beslutning kan påvirke alle."
+    ],
+    "de": [
+      "Das kann meinen Schlaf beeinträchtigen.",
+      "Der Regen kann die Reise beeinträchtigen.",
+      "Das betrifft meine Familie normalerweise nicht.",
+      "Seine Entscheidung kann alle beeinflussen."
+    ],
+    "el": [
+      "Μπορεί να επηρεάσει τον ύπνο μου.",
+      "Η βροχή μπορεί να επηρεάσει το ταξίδι.",
+      "Αυτό συνήθως δεν επηρεάζει την οικογένειά μου.",
+      "Η απόφασή του μπορεί να επηρεάσει όλους."
+    ],
+    "fi": [
+      "Se voi vaikuttaa uneeni.",
+      "Sade voi vaikuttaa matkaan.",
+      "Se ei yleensä vaikuta perheeseeni.",
+      "Hänen päätöksensä voi vaikuttaa kaikkiin."
+    ],
+    "fr": [
+      "Cela peut affecter mon sommeil.",
+      "La pluie peut affecter le voyage.",
+      "Cela n'affecte généralement pas ma famille.",
+      "Sa décision peut affecter tout le monde."
+    ],
+    "he": [
+      "זה יכול להשפיע על השינה שלי.",
+      "הגשם יכול להשפיע על הנסיעה.",
+      "זה בדרך כלל לא משפיע על המשפחה שלי.",
+      "ההחלטה שלו יכולה להשפיע על כולם."
+    ],
+    "hi": [
+      "इससे मेरी नींद पर असर पड़ सकता है।",
+      "बारिश यात्रा को प्रभावित कर सकती है।",
+      "इसका आमतौर पर मेरे परिवार पर असर नहीं पड़ता।",
+      "उसका फैसला सभी को प्रभावित कर सकता है।"
+    ],
+    "hu": [
+      "Ez befolyásolhatja az alvásomat.",
+      "Az eső befolyásolhatja az utat.",
+      "Ez általában nem érinti a családomat.",
+      "A döntése mindenkit érinthet."
+    ],
+    "id": [
+      "Itu bisa memengaruhi tidur saya.",
+      "Hujan bisa memengaruhi perjalanan.",
+      "Itu biasanya tidak memengaruhi keluarga saya.",
+      "Keputusannya bisa memengaruhi semua orang."
+    ],
+    "it": [
+      "Può influire sul mio sonno.",
+      "La pioggia può influire sul viaggio.",
+      "Di solito questo non influisce sulla mia famiglia.",
+      "La sua decisione può influire su tutti."
+    ],
+    "ja": [
+      "それは私の睡眠に影響するかもしれません。",
+      "雨は旅行に影響するかもしれません。",
+      "それは普通、私の家族には影響しません。",
+      "彼の決断はみんなに影響するかもしれません。"
+    ],
+    "ko": [
+      "그것은 내 수면에 영향을 줄 수 있다.",
+      "비는 여행에 영향을 줄 수 있다.",
+      "그것은 보통 우리 가족에게 영향을 주지 않는다.",
+      "그의 결정은 모두에게 영향을 줄 수 있다."
+    ],
+    "nb": [
+      "Det kan påvirke søvnen min.",
+      "Regnet kan påvirke turen.",
+      "Det påvirker vanligvis ikke familien min.",
+      "Avgjørelsen hans kan påvirke alle."
+    ],
+    "nl": [
+      "Dat kan mijn slaap beïnvloeden.",
+      "De regen kan de reis beïnvloeden.",
+      "Dat heeft meestal geen invloed op mijn familie.",
+      "Zijn beslissing kan iedereen beïnvloeden."
+    ],
+    "pl": [
+      "To może wpłynąć na mój sen.",
+      "Deszcz może wpłynąć na podróż.",
+      "To zwykle nie wpływa na moją rodzinę.",
+      "Jego decyzja może wpłynąć na wszystkich."
+    ],
+    "pt": [
+      "Isso pode afetar meu sono.",
+      "A chuva pode afetar a viagem.",
+      "Isso geralmente não afeta minha família.",
+      "A decisão dele pode afetar todos."
+    ],
+    "ro": [
+      "Asta îmi poate afecta somnul.",
+      "Ploaia poate afecta călătoria.",
+      "De obicei, asta nu afectează familia mea.",
+      "Decizia lui poate afecta pe toată lumea."
+    ],
+    "ru": [
+      "Это может повлиять на мой сон.",
+      "Дождь может повлиять на поездку.",
+      "Обычно это не влияет на мою семью.",
+      "Его решение может повлиять на всех."
+    ],
+    "sv": [
+      "Det kan påverka min sömn.",
+      "Regnet kan påverka resan.",
+      "Det påverkar vanligtvis inte min familj.",
+      "Hans beslut kan påverka alla."
+    ],
+    "tr": [
+      "Bu, uykumu etkileyebilir.",
+      "Yağmur yolculuğu etkileyebilir.",
+      "Bu genelde ailemi etkilemez.",
+      "Onun kararı herkesi etkileyebilir."
+    ],
+    "uk": [
+      "Це може вплинути на мій сон.",
+      "Дощ може вплинути на поїздку.",
+      "Зазвичай це не впливає на мою родину.",
+      "Його рішення може вплинути на всіх."
+    ],
+    "vi": [
+      "Nó có thể ảnh hưởng đến giấc ngủ của tôi.",
+      "Mưa có thể ảnh hưởng đến chuyến đi.",
+      "Điều đó thường không ảnh hưởng đến gia đình tôi.",
+      "Quyết định của anh ấy có thể ảnh hưởng đến mọi người."
+    ],
+    "yue": [
+      "呢樣嘢可能會影響我瞓覺。",
+      "落雨可能會影響行程。",
+      "呢樣嘢通常唔會影響我屋企人。",
+      "佢嘅決定可能會影響到所有人。"
+    ],
+    "zh-Hans": [
+      "这可能会影响我的睡眠。",
+      "雨可能会影响旅程。",
+      "这通常不会影响我的家人。",
+      "他的决定可能会影响所有人。"
+    ],
     "pos_analysis": [
       {
         "sentence": "Puede afectar mi sueño.",
         "tokens": [
           {
             "surface": "Puede",
-            "lemma": "puede",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "poder",
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "AUX",
             "feats": {},
             "start": 0,
             "end": 5,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "afectar",
             "lemma": "afectar",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VERB",
             "feats": {},
             "start": 6,
             "end": 13,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "mi",
             "lemma": "mi",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "DET",
             "feats": {},
             "start": 14,
             "end": 16,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "sueño",
             "lemma": "sueño",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NOUN",
             "feats": {},
             "start": 17,
             "end": 22,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": ".",
             "lemma": ".",
-            "pos": "punct",
+            "pos": "PUNCT",
             "upos": "PUNCT",
-            "xpos": "",
+            "xpos": "PUNCT",
             "feats": {},
             "start": 22,
             "end": 23,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           }
         ],
         "difficulty_aggregated": null
@@ -574,80 +834,80 @@
         "tokens": [
           {
             "surface": "La",
-            "lemma": "la",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "el",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "DET",
             "feats": {},
             "start": 0,
             "end": 2,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "lluvia",
             "lemma": "lluvia",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NOUN",
             "feats": {},
             "start": 3,
             "end": 9,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "puede",
-            "lemma": "puede",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "poder",
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "AUX",
             "feats": {},
             "start": 10,
             "end": 15,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "afectar",
             "lemma": "afectar",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VERB",
             "feats": {},
             "start": 16,
             "end": 23,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "el",
             "lemma": "el",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "DET",
             "feats": {},
             "start": 24,
             "end": 26,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "viaje",
             "lemma": "viaje",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NOUN",
             "feats": {},
             "start": 27,
             "end": 32,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": ".",
             "lemma": ".",
-            "pos": "punct",
+            "pos": "PUNCT",
             "upos": "PUNCT",
-            "xpos": "",
+            "xpos": "PUNCT",
             "feats": {},
             "start": 32,
             "end": 33,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           }
         ],
         "difficulty_aggregated": null
@@ -657,91 +917,91 @@
         "tokens": [
           {
             "surface": "Eso",
-            "lemma": "eso",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "ese",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PRON",
             "feats": {},
             "start": 0,
             "end": 3,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "no",
             "lemma": "no",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
             "feats": {},
             "start": 4,
             "end": 6,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "suele",
-            "lemma": "suele",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "soler",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VERB",
             "feats": {},
             "start": 7,
             "end": 12,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "afectar",
             "lemma": "afectar",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VERB",
             "feats": {},
             "start": 13,
             "end": 20,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "a",
             "lemma": "a",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "ADP",
             "feats": {},
             "start": 21,
             "end": 22,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "mi",
             "lemma": "mi",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "DET",
             "feats": {},
             "start": 23,
             "end": 25,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "familia",
             "lemma": "familia",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NOUN",
             "feats": {},
             "start": 26,
             "end": 33,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": ".",
             "lemma": ".",
-            "pos": "punct",
+            "pos": "PUNCT",
             "upos": "PUNCT",
-            "xpos": "",
+            "xpos": "PUNCT",
             "feats": {},
             "start": 33,
             "end": 34,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           }
         ],
         "difficulty_aggregated": null
@@ -752,79 +1012,79 @@
           {
             "surface": "Su",
             "lemma": "su",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "DET",
             "feats": {},
             "start": 0,
             "end": 2,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "decisión",
             "lemma": "decisión",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NOUN",
             "feats": {},
             "start": 3,
             "end": 11,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "puede",
-            "lemma": "puede",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "poder",
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "AUX",
             "feats": {},
             "start": 12,
             "end": 17,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "afectar",
             "lemma": "afectar",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VERB",
             "feats": {},
             "start": 18,
             "end": 25,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "a",
             "lemma": "a",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "ADP",
             "feats": {},
             "start": 26,
             "end": 27,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "todos",
-            "lemma": "todos",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "todo",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PRON",
             "feats": {},
             "start": 28,
             "end": 33,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": ".",
             "lemma": ".",
-            "pos": "punct",
+            "pos": "PUNCT",
             "upos": "PUNCT",
-            "xpos": "",
+            "xpos": "PUNCT",
             "feats": {},
             "start": 33,
             "end": 34,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           }
         ],
         "difficulty_aggregated": null

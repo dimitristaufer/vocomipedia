@@ -47,63 +47,89 @@
       "translations": {
         "en": "Poverty hurts a lot.",
         "es": "La pobreza duele mucho.",
-        "ipa": "[la poˈβɾeθa ˈdwele ˈmutʃo]"
+        "ipa": "[la poˈβɾeθa ˈdwele ˈmutʃo]",
+        "ar": "الفقر مؤلم جدًا.",
+        "cs": "Chudoba bolí hodně.",
+        "da": "Fattigdom gør meget ondt.",
+        "de": "Armut tut sehr weh.",
+        "el": "Η φτώχεια πονάει πολύ.",
+        "fi": "Köyhyys sattuu paljon.",
+        "fr": "La pauvreté fait très mal.",
+        "he": "עוני כואב מאוד.",
+        "hi": "गरीबी बहुत दुख देती है।",
+        "hu": "A szegénység nagyon fáj.",
+        "id": "Kemiskinan sangat menyakitkan.",
+        "it": "La povertà fa molto male.",
+        "ja": "貧困はとてもつらい。",
+        "ko": "가난은 정말 힘들다.",
+        "nb": "Fattigdom gjør veldig vondt.",
+        "nl": "Armoede doet veel pijn.",
+        "pl": "Bieda bardzo boli.",
+        "pt": "A pobreza dói muito.",
+        "ro": "Sărăcia doare foarte tare.",
+        "ru": "Бедность очень ранит.",
+        "sv": "Fattigdom gör väldigt ont.",
+        "tr": "Yoksulluk çok acı verir.",
+        "uk": "Бідність дуже болить.",
+        "vi": "Nghèo đói rất đau đớn.",
+        "yue": "貧窮好痛。",
+        "zh-Hans": "贫困很令人痛苦。"
       },
       "tokens": [
         {
           "surface": "La",
-          "lemma": "la",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "el",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "DET",
           "feats": {},
           "start": 0,
           "end": 2,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "pobreza",
           "lemma": "pobreza",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NOUN",
           "feats": {},
           "start": 3,
           "end": 10,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "duele",
-          "lemma": "duele",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "doler",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VERB",
           "feats": {},
           "start": 11,
           "end": 16,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "mucho",
           "lemma": "mucho",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "ADV",
           "feats": {},
           "start": 17,
           "end": 22,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": ".",
           "lemma": ".",
-          "pos": "punct",
+          "pos": "PUNCT",
           "upos": "PUNCT",
-          "xpos": "",
+          "xpos": "PUNCT",
           "feats": {},
           "start": 22,
           "end": 23,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         }
       ],
       "difficulty": null
@@ -114,85 +140,111 @@
       "translations": {
         "en": "We saw poverty in that neighborhood.",
         "es": "Vimos la pobreza en ese barrio.",
-        "ipa": "[ˈbimos la poˈβɾeθa en ˈese ˈbarjo]"
+        "ipa": "[ˈbimos la poˈβɾeθa en ˈese ˈbarjo]",
+        "ar": "رأينا الفقر في ذلك الحي.",
+        "cs": "Viděli jsme chudobu v té čtvrti.",
+        "da": "Vi så fattigdom i det kvarter.",
+        "de": "Wir sahen die Armut in diesem Viertel.",
+        "el": "Είδαμε τη φτώχεια σε εκείνη τη γειτονιά.",
+        "fi": "Näimme köyhyyttä siinä kaupunginosassa.",
+        "fr": "Nous avons vu la pauvreté dans ce quartier.",
+        "he": "ראינו את העוני בשכונה ההיא.",
+        "hi": "हमने उस मोहल्ले में गरीबी देखी।",
+        "hu": "Láttuk a szegénységet abban a negyedben.",
+        "id": "Kami melihat kemiskinan di lingkungan itu.",
+        "it": "Abbiamo visto la povertà in quel quartiere.",
+        "ja": "私たちはあの地区で貧困を見ました。",
+        "ko": "우리는 그 동네에서 가난을 보았다.",
+        "nb": "Vi så fattigdom i det nabolaget.",
+        "nl": "We zagen armoede in die buurt.",
+        "pl": "Widzieliśmy biedę w tamtej dzielnicy.",
+        "pt": "Vimos a pobreza naquele bairro.",
+        "ro": "Am văzut sărăcia în acel cartier.",
+        "ru": "Мы видели бедность в том районе.",
+        "sv": "Vi såg fattigdom i det området.",
+        "tr": "O mahallede yoksulluğu gördük.",
+        "uk": "Ми бачили бідність у тому районі.",
+        "vi": "Chúng tôi đã thấy nghèo đói ở khu phố đó.",
+        "yue": "我哋喺嗰個社區見到貧窮。",
+        "zh-Hans": "我们在那个街区看到了贫困。"
       },
       "tokens": [
         {
           "surface": "Vimos",
-          "lemma": "vimos",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "ver",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VERB",
           "feats": {},
           "start": 0,
           "end": 5,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "la",
-          "lemma": "la",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "el",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "DET",
           "feats": {},
           "start": 6,
           "end": 8,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "pobreza",
           "lemma": "pobreza",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NOUN",
           "feats": {},
           "start": 9,
           "end": 16,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "en",
           "lemma": "en",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "ADP",
           "feats": {},
           "start": 17,
           "end": 19,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "ese",
           "lemma": "ese",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "DET",
           "feats": {},
           "start": 20,
           "end": 23,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "barrio",
           "lemma": "barrio",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NOUN",
           "feats": {},
           "start": 24,
           "end": 30,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": ".",
           "lemma": ".",
-          "pos": "punct",
+          "pos": "PUNCT",
           "upos": "PUNCT",
-          "xpos": "",
+          "xpos": "PUNCT",
           "feats": {},
           "start": 30,
           "end": 31,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         }
       ],
       "difficulty": null
@@ -203,85 +255,111 @@
       "translations": {
         "en": "Poverty affects many families.",
         "es": "La pobreza afecta a muchas familias.",
-        "ipa": "[la poˈβɾeθa aˈfekta a ˈmutʃas faˈmiljas]"
+        "ipa": "[la poˈβɾeθa aˈfekta a ˈmutʃas faˈmiljas]",
+        "ar": "يؤثر الفقر في كثير من الأسر.",
+        "cs": "Chudoba zasahuje mnoho rodin.",
+        "da": "Fattigdom rammer mange familier.",
+        "de": "Armut betrifft viele Familien.",
+        "el": "Η φτώχεια επηρεάζει πολλές οικογένειες.",
+        "fi": "Köyhyys vaikuttaa moniin perheisiin.",
+        "fr": "La pauvreté touche beaucoup de familles.",
+        "he": "העוני משפיע על הרבה משפחות.",
+        "hi": "गरीबी कई परिवारों को प्रभावित करती है।",
+        "hu": "A szegénység sok családot érint.",
+        "id": "Kemiskinan memengaruhi banyak keluarga.",
+        "it": "La povertà colpisce molte famiglie.",
+        "ja": "貧困は多くの家族に影響します。",
+        "ko": "가난은 많은 가족에게 영향을 준다.",
+        "nb": "Fattigdom påvirker mange familier.",
+        "nl": "Armoede treft veel gezinnen.",
+        "pl": "Bieda dotyka wiele rodzin.",
+        "pt": "A pobreza afeta muitas famílias.",
+        "ro": "Sărăcia afectează multe familii.",
+        "ru": "Бедность затрагивает многие семьи.",
+        "sv": "Fattigdom påverkar många familjer.",
+        "tr": "Yoksulluk birçok aileyi etkiler.",
+        "uk": "Бідність впливає на багато родин.",
+        "vi": "Nghèo đói ảnh hưởng đến nhiều gia đình.",
+        "yue": "貧窮影響好多家庭。",
+        "zh-Hans": "贫困影响很多家庭。"
       },
       "tokens": [
         {
           "surface": "La",
-          "lemma": "la",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "el",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "DET",
           "feats": {},
           "start": 0,
           "end": 2,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "pobreza",
           "lemma": "pobreza",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NOUN",
           "feats": {},
           "start": 3,
           "end": 10,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "afecta",
-          "lemma": "afecta",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "afectar",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VERB",
           "feats": {},
           "start": 11,
           "end": 17,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "a",
           "lemma": "a",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "ADP",
           "feats": {},
           "start": 18,
           "end": 19,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "muchas",
-          "lemma": "muchas",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "mucho",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "DET",
           "feats": {},
           "start": 20,
           "end": 26,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "familias",
-          "lemma": "familias",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "familia",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NOUN",
           "feats": {},
           "start": 27,
           "end": 35,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": ".",
           "lemma": ".",
-          "pos": "punct",
+          "pos": "PUNCT",
           "upos": "PUNCT",
-          "xpos": "",
+          "xpos": "PUNCT",
           "feats": {},
           "start": 35,
           "end": 36,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         }
       ],
       "difficulty": null
@@ -292,74 +370,100 @@
       "translations": {
         "en": "There is poverty in my neighborhood.",
         "es": "En mi barrio hay pobreza.",
-        "ipa": "[en mi ˈbarjo aj poˈβɾeθa]"
+        "ipa": "[en mi ˈbarjo aj poˈβɾeθa]",
+        "ar": "في حيي يوجد فقر.",
+        "cs": "V mé čtvrti je chudoba.",
+        "da": "Der er fattigdom i mit kvarter.",
+        "de": "In meinem Viertel gibt es Armut.",
+        "el": "Στη γειτονιά μου υπάρχει φτώχεια.",
+        "fi": "Minun kaupunginosassani on köyhyyttä.",
+        "fr": "Il y a de la pauvreté dans mon quartier.",
+        "he": "בשכונה שלי יש עוני.",
+        "hi": "मेरे मोहल्ले में गरीबी है।",
+        "hu": "A környékemen szegénység van.",
+        "id": "Di lingkungan saya ada kemiskinan.",
+        "it": "Nel mio quartiere c'è povertà.",
+        "ja": "私の近所には貧困があります。",
+        "ko": "내 동네에는 가난이 있다.",
+        "nb": "Det er fattigdom i nabolaget mitt.",
+        "nl": "In mijn buurt is armoede.",
+        "pl": "W mojej okolicy jest bieda.",
+        "pt": "No meu bairro há pobreza.",
+        "ro": "În cartierul meu există sărăcie.",
+        "ru": "В моем районе есть бедность.",
+        "sv": "Det finns fattigdom i mitt område.",
+        "tr": "Mahallemde yoksulluk var.",
+        "uk": "У моєму районі є бідність.",
+        "vi": "Trong khu phố của tôi có nghèo đói.",
+        "yue": "我屋企附近有貧窮。",
+        "zh-Hans": "我的街区有贫困。"
       },
       "tokens": [
         {
           "surface": "En",
           "lemma": "en",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "ADP",
           "feats": {},
           "start": 0,
           "end": 2,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "mi",
           "lemma": "mi",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "DET",
           "feats": {},
           "start": 3,
           "end": 5,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "barrio",
           "lemma": "barrio",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NOUN",
           "feats": {},
           "start": 6,
           "end": 12,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "hay",
-          "lemma": "hay",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "haber",
+          "pos": "AUX",
+          "upos": "AUX",
+          "xpos": "AUX",
           "feats": {},
           "start": 13,
           "end": 16,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "pobreza",
           "lemma": "pobreza",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NOUN",
           "feats": {},
           "start": 17,
           "end": 24,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": ".",
           "lemma": ".",
-          "pos": "punct",
+          "pos": "PUNCT",
           "upos": "PUNCT",
-          "xpos": "",
+          "xpos": "PUNCT",
           "feats": {},
           "start": 24,
           "end": 25,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         }
       ],
       "difficulty": null
@@ -485,64 +589,220 @@
     "word_fi": "köyhyys",
     "word_ja": "貧困",
     "word_es": "pobreza",
+    "ar": [
+      "الفقر مؤلم جدًا.",
+      "رأينا الفقر في ذلك الحي.",
+      "يؤثر الفقر في كثير من الأسر.",
+      "في حيي يوجد فقر."
+    ],
+    "cs": [
+      "Chudoba bolí hodně.",
+      "Viděli jsme chudobu v té čtvrti.",
+      "Chudoba zasahuje mnoho rodin.",
+      "V mé čtvrti je chudoba."
+    ],
+    "da": [
+      "Fattigdom gør meget ondt.",
+      "Vi så fattigdom i det kvarter.",
+      "Fattigdom rammer mange familier.",
+      "Der er fattigdom i mit kvarter."
+    ],
+    "de": [
+      "Armut tut sehr weh.",
+      "Wir sahen die Armut in diesem Viertel.",
+      "Armut betrifft viele Familien.",
+      "In meinem Viertel gibt es Armut."
+    ],
+    "el": [
+      "Η φτώχεια πονάει πολύ.",
+      "Είδαμε τη φτώχεια σε εκείνη τη γειτονιά.",
+      "Η φτώχεια επηρεάζει πολλές οικογένειες.",
+      "Στη γειτονιά μου υπάρχει φτώχεια."
+    ],
+    "fi": [
+      "Köyhyys sattuu paljon.",
+      "Näimme köyhyyttä siinä kaupunginosassa.",
+      "Köyhyys vaikuttaa moniin perheisiin.",
+      "Minun kaupunginosassani on köyhyyttä."
+    ],
+    "fr": [
+      "La pauvreté fait très mal.",
+      "Nous avons vu la pauvreté dans ce quartier.",
+      "La pauvreté touche beaucoup de familles.",
+      "Il y a de la pauvreté dans mon quartier."
+    ],
+    "he": [
+      "עוני כואב מאוד.",
+      "ראינו את העוני בשכונה ההיא.",
+      "העוני משפיע על הרבה משפחות.",
+      "בשכונה שלי יש עוני."
+    ],
+    "hi": [
+      "गरीबी बहुत दुख देती है।",
+      "हमने उस मोहल्ले में गरीबी देखी।",
+      "गरीबी कई परिवारों को प्रभावित करती है।",
+      "मेरे मोहल्ले में गरीबी है।"
+    ],
+    "hu": [
+      "A szegénység nagyon fáj.",
+      "Láttuk a szegénységet abban a negyedben.",
+      "A szegénység sok családot érint.",
+      "A környékemen szegénység van."
+    ],
+    "id": [
+      "Kemiskinan sangat menyakitkan.",
+      "Kami melihat kemiskinan di lingkungan itu.",
+      "Kemiskinan memengaruhi banyak keluarga.",
+      "Di lingkungan saya ada kemiskinan."
+    ],
+    "it": [
+      "La povertà fa molto male.",
+      "Abbiamo visto la povertà in quel quartiere.",
+      "La povertà colpisce molte famiglie.",
+      "Nel mio quartiere c'è povertà."
+    ],
+    "ja": [
+      "貧困はとてもつらい。",
+      "私たちはあの地区で貧困を見ました。",
+      "貧困は多くの家族に影響します。",
+      "私の近所には貧困があります。"
+    ],
+    "ko": [
+      "가난은 정말 힘들다.",
+      "우리는 그 동네에서 가난을 보았다.",
+      "가난은 많은 가족에게 영향을 준다.",
+      "내 동네에는 가난이 있다."
+    ],
+    "nb": [
+      "Fattigdom gjør veldig vondt.",
+      "Vi så fattigdom i det nabolaget.",
+      "Fattigdom påvirker mange familier.",
+      "Det er fattigdom i nabolaget mitt."
+    ],
+    "nl": [
+      "Armoede doet veel pijn.",
+      "We zagen armoede in die buurt.",
+      "Armoede treft veel gezinnen.",
+      "In mijn buurt is armoede."
+    ],
+    "pl": [
+      "Bieda bardzo boli.",
+      "Widzieliśmy biedę w tamtej dzielnicy.",
+      "Bieda dotyka wiele rodzin.",
+      "W mojej okolicy jest bieda."
+    ],
+    "pt": [
+      "A pobreza dói muito.",
+      "Vimos a pobreza naquele bairro.",
+      "A pobreza afeta muitas famílias.",
+      "No meu bairro há pobreza."
+    ],
+    "ro": [
+      "Sărăcia doare foarte tare.",
+      "Am văzut sărăcia în acel cartier.",
+      "Sărăcia afectează multe familii.",
+      "În cartierul meu există sărăcie."
+    ],
+    "ru": [
+      "Бедность очень ранит.",
+      "Мы видели бедность в том районе.",
+      "Бедность затрагивает многие семьи.",
+      "В моем районе есть бедность."
+    ],
+    "sv": [
+      "Fattigdom gör väldigt ont.",
+      "Vi såg fattigdom i det området.",
+      "Fattigdom påverkar många familjer.",
+      "Det finns fattigdom i mitt område."
+    ],
+    "tr": [
+      "Yoksulluk çok acı verir.",
+      "O mahallede yoksulluğu gördük.",
+      "Yoksulluk birçok aileyi etkiler.",
+      "Mahallemde yoksulluk var."
+    ],
+    "uk": [
+      "Бідність дуже болить.",
+      "Ми бачили бідність у тому районі.",
+      "Бідність впливає на багато родин.",
+      "У моєму районі є бідність."
+    ],
+    "vi": [
+      "Nghèo đói rất đau đớn.",
+      "Chúng tôi đã thấy nghèo đói ở khu phố đó.",
+      "Nghèo đói ảnh hưởng đến nhiều gia đình.",
+      "Trong khu phố của tôi có nghèo đói."
+    ],
+    "yue": [
+      "貧窮好痛。",
+      "我哋喺嗰個社區見到貧窮。",
+      "貧窮影響好多家庭。",
+      "我屋企附近有貧窮。"
+    ],
+    "zh-Hans": [
+      "贫困很令人痛苦。",
+      "我们在那个街区看到了贫困。",
+      "贫困影响很多家庭。",
+      "我的街区有贫困。"
+    ],
     "pos_analysis": [
       {
         "sentence": "La pobreza duele mucho.",
         "tokens": [
           {
             "surface": "La",
-            "lemma": "la",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "el",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "DET",
             "feats": {},
             "start": 0,
             "end": 2,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "pobreza",
             "lemma": "pobreza",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NOUN",
             "feats": {},
             "start": 3,
             "end": 10,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "duele",
-            "lemma": "duele",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "doler",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VERB",
             "feats": {},
             "start": 11,
             "end": 16,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "mucho",
             "lemma": "mucho",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
             "feats": {},
             "start": 17,
             "end": 22,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": ".",
             "lemma": ".",
-            "pos": "punct",
+            "pos": "PUNCT",
             "upos": "PUNCT",
-            "xpos": "",
+            "xpos": "PUNCT",
             "feats": {},
             "start": 22,
             "end": 23,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           }
         ],
         "difficulty_aggregated": null
@@ -552,80 +812,80 @@
         "tokens": [
           {
             "surface": "Vimos",
-            "lemma": "vimos",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "ver",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VERB",
             "feats": {},
             "start": 0,
             "end": 5,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "la",
-            "lemma": "la",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "el",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "DET",
             "feats": {},
             "start": 6,
             "end": 8,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "pobreza",
             "lemma": "pobreza",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NOUN",
             "feats": {},
             "start": 9,
             "end": 16,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "en",
             "lemma": "en",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "ADP",
             "feats": {},
             "start": 17,
             "end": 19,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "ese",
             "lemma": "ese",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "DET",
             "feats": {},
             "start": 20,
             "end": 23,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "barrio",
             "lemma": "barrio",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NOUN",
             "feats": {},
             "start": 24,
             "end": 30,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": ".",
             "lemma": ".",
-            "pos": "punct",
+            "pos": "PUNCT",
             "upos": "PUNCT",
-            "xpos": "",
+            "xpos": "PUNCT",
             "feats": {},
             "start": 30,
             "end": 31,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           }
         ],
         "difficulty_aggregated": null
@@ -635,80 +895,80 @@
         "tokens": [
           {
             "surface": "La",
-            "lemma": "la",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "el",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "DET",
             "feats": {},
             "start": 0,
             "end": 2,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "pobreza",
             "lemma": "pobreza",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NOUN",
             "feats": {},
             "start": 3,
             "end": 10,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "afecta",
-            "lemma": "afecta",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "afectar",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VERB",
             "feats": {},
             "start": 11,
             "end": 17,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "a",
             "lemma": "a",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "ADP",
             "feats": {},
             "start": 18,
             "end": 19,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "muchas",
-            "lemma": "muchas",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "mucho",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "DET",
             "feats": {},
             "start": 20,
             "end": 26,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "familias",
-            "lemma": "familias",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "familia",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NOUN",
             "feats": {},
             "start": 27,
             "end": 35,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": ".",
             "lemma": ".",
-            "pos": "punct",
+            "pos": "PUNCT",
             "upos": "PUNCT",
-            "xpos": "",
+            "xpos": "PUNCT",
             "feats": {},
             "start": 35,
             "end": 36,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           }
         ],
         "difficulty_aggregated": null
@@ -719,68 +979,68 @@
           {
             "surface": "En",
             "lemma": "en",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "ADP",
             "feats": {},
             "start": 0,
             "end": 2,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "mi",
             "lemma": "mi",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "DET",
             "feats": {},
             "start": 3,
             "end": 5,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "barrio",
             "lemma": "barrio",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NOUN",
             "feats": {},
             "start": 6,
             "end": 12,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "hay",
-            "lemma": "hay",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "haber",
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "AUX",
             "feats": {},
             "start": 13,
             "end": 16,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "pobreza",
             "lemma": "pobreza",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NOUN",
             "feats": {},
             "start": 17,
             "end": 24,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": ".",
             "lemma": ".",
-            "pos": "punct",
+            "pos": "PUNCT",
             "upos": "PUNCT",
-            "xpos": "",
+            "xpos": "PUNCT",
             "feats": {},
             "start": 24,
             "end": 25,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           }
         ],
         "difficulty_aggregated": null

@@ -5,6 +5,7 @@ from .base import (
     AnalysisResult,
     SentenceAnalyzer,
     analyze_sentence,
+    ensure_real_analyzer_available,
     generated_pos_analysis_entry,
     sync_item_pos_analysis,
 )
@@ -13,6 +14,7 @@ __all__ = [
     "AnalysisResult",
     "SentenceAnalyzer",
     "analyze_sentence",
+    "ensure_real_analyzer_available",
     "generated_pos_analysis_entry",
     "sync_item_pos_analysis",
 ]

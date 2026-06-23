@@ -47,63 +47,89 @@
       "translations": {
         "en": "The freezer is full.",
         "es": "El congelador está lleno.",
-        "ipa": "el koŋɡelaˈðoɾ esˈta ˈʝeno"
+        "ipa": "el koŋɡelaˈðoɾ esˈta ˈʝeno",
+        "ar": "المجمد ممتلئ.",
+        "cs": "Mrazák je plný.",
+        "da": "Fryseren er fuld.",
+        "de": "Der Gefrierschrank ist voll.",
+        "el": "Η κατάψυξη είναι γεμάτη.",
+        "fi": "Pakastin on täynnä.",
+        "fr": "Le congélateur est plein.",
+        "he": "המקפיא מלא.",
+        "hi": "फ्रीज़र भरा हुआ है।",
+        "hu": "A fagyasztó tele van.",
+        "id": "Freezer itu penuh.",
+        "it": "Il congelatore è pieno.",
+        "ja": "冷凍庫がいっぱいです。",
+        "ko": "냉동고가 가득 찼어요.",
+        "nb": "Fryseren er full.",
+        "nl": "De vriezer is vol.",
+        "pl": "Zamrażarka jest pełna.",
+        "pt": "O congelador está cheio.",
+        "ro": "Congelatorul este plin.",
+        "ru": "Морозильник полон.",
+        "sv": "Frysen är full.",
+        "tr": "Dondurucu dolu.",
+        "uk": "Морозильник повний.",
+        "vi": "Tủ đông đầy rồi.",
+        "yue": "雪櫃滿咗。",
+        "zh-Hans": "冷冻柜满了。"
       },
       "tokens": [
         {
           "surface": "El",
           "lemma": "el",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "DET",
           "feats": {},
           "start": 0,
           "end": 2,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "congelador",
           "lemma": "congelador",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NOUN",
           "feats": {},
           "start": 3,
           "end": 13,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "está",
-          "lemma": "está",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "estar",
+          "pos": "AUX",
+          "upos": "AUX",
+          "xpos": "AUX",
           "feats": {},
           "start": 14,
           "end": 18,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "lleno",
           "lemma": "lleno",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "ADJ",
+          "upos": "ADJ",
+          "xpos": "ADJ",
           "feats": {},
           "start": 19,
           "end": 24,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": ".",
           "lemma": ".",
-          "pos": "punct",
+          "pos": "PUNCT",
           "upos": "PUNCT",
-          "xpos": "",
+          "xpos": "PUNCT",
           "feats": {},
           "start": 24,
           "end": 25,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         }
       ],
       "difficulty": null
@@ -114,85 +140,111 @@
       "translations": {
         "en": "I opened the freezer to get ice.",
         "es": "Abrí el congelador para coger hielo.",
-        "ipa": "aˈβɾi el koŋɡelaˈðoɾ paɾa koˈxeɾ ˈjelo"
+        "ipa": "aˈβɾi el koŋɡelaˈðoɾ paɾa koˈxeɾ ˈjelo",
+        "ar": "فتحتُ المجمد لأخذ الثلج.",
+        "cs": "Otevřel jsem mrazák, abych vzal led.",
+        "da": "Jeg åbnede fryseren for at hente is.",
+        "de": "Ich habe den Gefrierschrank geöffnet, um Eis zu holen.",
+        "el": "Άνοιξα την κατάψυξη για να πάρω πάγο.",
+        "fi": "Avasin pakastimen ottaakseni jäätä.",
+        "fr": "J'ai ouvert le congélateur pour prendre de la glace.",
+        "he": "פתחתי את המקפיא כדי לקחת קרח.",
+        "hi": "मैंने बर्फ लेने के लिए फ्रीज़र खोला।",
+        "hu": "Kinyitottam a fagyasztót, hogy jeget vegyek.",
+        "id": "Saya membuka freezer untuk mengambil es.",
+        "it": "Ho aperto il congelatore per prendere del ghiaccio.",
+        "ja": "氷を取るために冷凍庫を開けました。",
+        "ko": "얼음을 꺼내려고 냉동고를 열었어요.",
+        "nb": "Jeg åpnet fryseren for å hente is.",
+        "nl": "Ik opende de vriezer om ijs te pakken.",
+        "pl": "Otworzyłem zamrażarkę, żeby wziąć lód.",
+        "pt": "Abri o congelador para pegar gelo.",
+        "ro": "Am deschis congelatorul ca să iau gheață.",
+        "ru": "Я открыл морозильник, чтобы взять лёд.",
+        "sv": "Jag öppnade frysen för att hämta is.",
+        "tr": "Buz almak için dondurucuyu açtım.",
+        "uk": "Я відкрив морозильник, щоб взяти лід.",
+        "vi": "Tôi mở tủ đông để lấy đá.",
+        "yue": "我打開咗雪櫃攞冰。",
+        "zh-Hans": "我打开冷冻柜拿冰。"
       },
       "tokens": [
         {
           "surface": "Abrí",
-          "lemma": "abrí",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "abrir",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VERB",
           "feats": {},
           "start": 0,
           "end": 4,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "el",
           "lemma": "el",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "DET",
           "feats": {},
           "start": 5,
           "end": 7,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "congelador",
           "lemma": "congelador",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NOUN",
           "feats": {},
           "start": 8,
           "end": 18,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "para",
           "lemma": "para",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "ADP",
           "feats": {},
           "start": 19,
           "end": 23,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "coger",
           "lemma": "coger",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VERB",
           "feats": {},
           "start": 24,
           "end": 29,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "hielo",
           "lemma": "hielo",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NOUN",
           "feats": {},
           "start": 30,
           "end": 35,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": ".",
           "lemma": ".",
-          "pos": "punct",
+          "pos": "PUNCT",
           "upos": "PUNCT",
-          "xpos": "",
+          "xpos": "PUNCT",
           "feats": {},
           "start": 35,
           "end": 36,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         }
       ],
       "difficulty": null
@@ -203,85 +255,111 @@
       "translations": {
         "en": "Put the chicken in the freezer.",
         "es": "Pon el pollo en el congelador.",
-        "ipa": "pon el ˈpoʝo en el koŋɡelaˈðoɾ"
+        "ipa": "pon el ˈpoʝo en el koŋɡelaˈðoɾ",
+        "ar": "ضع الدجاج في المجمد.",
+        "cs": "Dej kuře do mrazáku.",
+        "da": "Læg kyllingen i fryseren.",
+        "de": "Leg das Huhn in den Gefrierschrank.",
+        "el": "Βάλε το κοτόπουλο στην κατάψυξη.",
+        "fi": "Laita kana pakastimeen.",
+        "fr": "Mets le poulet dans le congélateur.",
+        "he": "שים את העוף במקפיא.",
+        "hi": "मुर्गे को फ्रीज़र में रखो।",
+        "hu": "Tedd a csirkét a fagyasztóba.",
+        "id": "Masukkan ayam itu ke dalam freezer.",
+        "it": "Metti il pollo nel congelatore.",
+        "ja": "鶏肉を冷凍庫に入れて。",
+        "ko": "닭고기를 냉동고에 넣어.",
+        "nb": "Legg kyllingen i fryseren.",
+        "nl": "Doe de kip in de vriezer.",
+        "pl": "Włóż kurczaka do zamrażarki.",
+        "pt": "Coloque o frango no congelador.",
+        "ro": "Pune puiul în congelator.",
+        "ru": "Положи курицу в морозильник.",
+        "sv": "Lägg kycklingen i frysen.",
+        "tr": "Tavuğu dondurucuya koy.",
+        "uk": "Поклади курку в морозильник.",
+        "vi": "Hãy cho con gà vào tủ đông.",
+        "yue": "將隻雞放入雪櫃。",
+        "zh-Hans": "把鸡放进冷冻柜。"
       },
       "tokens": [
         {
           "surface": "Pon",
           "lemma": "pon",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VERB",
           "feats": {},
           "start": 0,
           "end": 3,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "el",
           "lemma": "el",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "DET",
           "feats": {},
           "start": 4,
           "end": 6,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "pollo",
           "lemma": "pollo",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NOUN",
           "feats": {},
           "start": 7,
           "end": 12,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "en",
           "lemma": "en",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "ADP",
           "feats": {},
           "start": 13,
           "end": 15,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "el",
           "lemma": "el",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "DET",
           "feats": {},
           "start": 16,
           "end": 18,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "congelador",
           "lemma": "congelador",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NOUN",
           "feats": {},
           "start": 19,
           "end": 29,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": ".",
           "lemma": ".",
-          "pos": "punct",
+          "pos": "PUNCT",
           "upos": "PUNCT",
-          "xpos": "",
+          "xpos": "PUNCT",
           "feats": {},
           "start": 29,
           "end": 30,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         }
       ],
       "difficulty": null
@@ -292,85 +370,111 @@
       "translations": {
         "en": "My house has a big freezer.",
         "es": "Mi casa tiene un congelador grande.",
-        "ipa": "mi ˈkasa ˈtjene un koŋɡelaˈðoɾ ˈɡɾande"
+        "ipa": "mi ˈkasa ˈtjene un koŋɡelaˈðoɾ ˈɡɾande",
+        "ar": "في بيتي مجمد كبير.",
+        "cs": "Můj dům má velký mrazák.",
+        "da": "Mit hus har en stor fryser.",
+        "de": "Mein Haus hat einen großen Gefrierschrank.",
+        "el": "Το σπίτι μου έχει μια μεγάλη κατάψυξη.",
+        "fi": "Talossani on iso pakastin.",
+        "fr": "Ma maison a un grand congélateur.",
+        "he": "בבית שלי יש מקפיא גדול.",
+        "hi": "मेरे घर में एक बड़ा फ्रीज़र है।",
+        "hu": "A házamban van egy nagy fagyasztó.",
+        "id": "Rumah saya punya freezer besar.",
+        "it": "La mia casa ha un grande congelatore.",
+        "ja": "うちには大きな冷凍庫があります。",
+        "ko": "우리 집에는 큰 냉동고가 있어요.",
+        "nb": "Huset mitt har en stor fryser.",
+        "nl": "Mijn huis heeft een grote vriezer.",
+        "pl": "Mój dom ma dużą zamrażarkę.",
+        "pt": "Minha casa tem um congelador grande.",
+        "ro": "Casa mea are un congelator mare.",
+        "ru": "В моём доме есть большой морозильник.",
+        "sv": "Mitt hus har en stor frys.",
+        "tr": "Evimde büyük bir dondurucu var.",
+        "uk": "У моєму будинку є великий морозильник.",
+        "vi": "Nhà tôi có một cái tủ đông lớn.",
+        "yue": "我屋企有個大雪櫃。",
+        "zh-Hans": "我家有一个大冷冻柜。"
       },
       "tokens": [
         {
           "surface": "Mi",
           "lemma": "mi",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "DET",
           "feats": {},
           "start": 0,
           "end": 2,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "casa",
           "lemma": "casa",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NOUN",
           "feats": {},
           "start": 3,
           "end": 7,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "tiene",
-          "lemma": "tiene",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "tener",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VERB",
           "feats": {},
           "start": 8,
           "end": 13,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "un",
-          "lemma": "un",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "uno",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "DET",
           "feats": {},
           "start": 14,
           "end": 16,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "congelador",
           "lemma": "congelador",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NOUN",
           "feats": {},
           "start": 17,
           "end": 27,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "grande",
           "lemma": "grande",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "ADJ",
+          "upos": "ADJ",
+          "xpos": "ADJ",
           "feats": {},
           "start": 28,
           "end": 34,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": ".",
           "lemma": ".",
-          "pos": "punct",
+          "pos": "PUNCT",
           "upos": "PUNCT",
-          "xpos": "",
+          "xpos": "PUNCT",
           "feats": {},
           "start": 34,
           "end": 35,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         }
       ],
       "difficulty": null
@@ -496,6 +600,162 @@
     "word_fi": "pakastin",
     "word_ja": "冷凍庫",
     "word_es": "congelador",
+    "ar": [
+      "المجمد ممتلئ.",
+      "فتحتُ المجمد لأخذ الثلج.",
+      "ضع الدجاج في المجمد.",
+      "في بيتي مجمد كبير."
+    ],
+    "cs": [
+      "Mrazák je plný.",
+      "Otevřel jsem mrazák, abych vzal led.",
+      "Dej kuře do mrazáku.",
+      "Můj dům má velký mrazák."
+    ],
+    "da": [
+      "Fryseren er fuld.",
+      "Jeg åbnede fryseren for at hente is.",
+      "Læg kyllingen i fryseren.",
+      "Mit hus har en stor fryser."
+    ],
+    "de": [
+      "Der Gefrierschrank ist voll.",
+      "Ich habe den Gefrierschrank geöffnet, um Eis zu holen.",
+      "Leg das Huhn in den Gefrierschrank.",
+      "Mein Haus hat einen großen Gefrierschrank."
+    ],
+    "el": [
+      "Η κατάψυξη είναι γεμάτη.",
+      "Άνοιξα την κατάψυξη για να πάρω πάγο.",
+      "Βάλε το κοτόπουλο στην κατάψυξη.",
+      "Το σπίτι μου έχει μια μεγάλη κατάψυξη."
+    ],
+    "fi": [
+      "Pakastin on täynnä.",
+      "Avasin pakastimen ottaakseni jäätä.",
+      "Laita kana pakastimeen.",
+      "Talossani on iso pakastin."
+    ],
+    "fr": [
+      "Le congélateur est plein.",
+      "J'ai ouvert le congélateur pour prendre de la glace.",
+      "Mets le poulet dans le congélateur.",
+      "Ma maison a un grand congélateur."
+    ],
+    "he": [
+      "המקפיא מלא.",
+      "פתחתי את המקפיא כדי לקחת קרח.",
+      "שים את העוף במקפיא.",
+      "בבית שלי יש מקפיא גדול."
+    ],
+    "hi": [
+      "फ्रीज़र भरा हुआ है।",
+      "मैंने बर्फ लेने के लिए फ्रीज़र खोला।",
+      "मुर्गे को फ्रीज़र में रखो।",
+      "मेरे घर में एक बड़ा फ्रीज़र है।"
+    ],
+    "hu": [
+      "A fagyasztó tele van.",
+      "Kinyitottam a fagyasztót, hogy jeget vegyek.",
+      "Tedd a csirkét a fagyasztóba.",
+      "A házamban van egy nagy fagyasztó."
+    ],
+    "id": [
+      "Freezer itu penuh.",
+      "Saya membuka freezer untuk mengambil es.",
+      "Masukkan ayam itu ke dalam freezer.",
+      "Rumah saya punya freezer besar."
+    ],
+    "it": [
+      "Il congelatore è pieno.",
+      "Ho aperto il congelatore per prendere del ghiaccio.",
+      "Metti il pollo nel congelatore.",
+      "La mia casa ha un grande congelatore."
+    ],
+    "ja": [
+      "冷凍庫がいっぱいです。",
+      "氷を取るために冷凍庫を開けました。",
+      "鶏肉を冷凍庫に入れて。",
+      "うちには大きな冷凍庫があります。"
+    ],
+    "ko": [
+      "냉동고가 가득 찼어요.",
+      "얼음을 꺼내려고 냉동고를 열었어요.",
+      "닭고기를 냉동고에 넣어.",
+      "우리 집에는 큰 냉동고가 있어요."
+    ],
+    "nb": [
+      "Fryseren er full.",
+      "Jeg åpnet fryseren for å hente is.",
+      "Legg kyllingen i fryseren.",
+      "Huset mitt har en stor fryser."
+    ],
+    "nl": [
+      "De vriezer is vol.",
+      "Ik opende de vriezer om ijs te pakken.",
+      "Doe de kip in de vriezer.",
+      "Mijn huis heeft een grote vriezer."
+    ],
+    "pl": [
+      "Zamrażarka jest pełna.",
+      "Otworzyłem zamrażarkę, żeby wziąć lód.",
+      "Włóż kurczaka do zamrażarki.",
+      "Mój dom ma dużą zamrażarkę."
+    ],
+    "pt": [
+      "O congelador está cheio.",
+      "Abri o congelador para pegar gelo.",
+      "Coloque o frango no congelador.",
+      "Minha casa tem um congelador grande."
+    ],
+    "ro": [
+      "Congelatorul este plin.",
+      "Am deschis congelatorul ca să iau gheață.",
+      "Pune puiul în congelator.",
+      "Casa mea are un congelator mare."
+    ],
+    "ru": [
+      "Морозильник полон.",
+      "Я открыл морозильник, чтобы взять лёд.",
+      "Положи курицу в морозильник.",
+      "В моём доме есть большой морозильник."
+    ],
+    "sv": [
+      "Frysen är full.",
+      "Jag öppnade frysen för att hämta is.",
+      "Lägg kycklingen i frysen.",
+      "Mitt hus har en stor frys."
+    ],
+    "tr": [
+      "Dondurucu dolu.",
+      "Buz almak için dondurucuyu açtım.",
+      "Tavuğu dondurucuya koy.",
+      "Evimde büyük bir dondurucu var."
+    ],
+    "uk": [
+      "Морозильник повний.",
+      "Я відкрив морозильник, щоб взяти лід.",
+      "Поклади курку в морозильник.",
+      "У моєму будинку є великий морозильник."
+    ],
+    "vi": [
+      "Tủ đông đầy rồi.",
+      "Tôi mở tủ đông để lấy đá.",
+      "Hãy cho con gà vào tủ đông.",
+      "Nhà tôi có một cái tủ đông lớn."
+    ],
+    "yue": [
+      "雪櫃滿咗。",
+      "我打開咗雪櫃攞冰。",
+      "將隻雞放入雪櫃。",
+      "我屋企有個大雪櫃。"
+    ],
+    "zh-Hans": [
+      "冷冻柜满了。",
+      "我打开冷冻柜拿冰。",
+      "把鸡放进冷冻柜。",
+      "我家有一个大冷冻柜。"
+    ],
     "pos_analysis": [
       {
         "sentence": "El congelador está lleno.",
@@ -503,57 +763,57 @@
           {
             "surface": "El",
             "lemma": "el",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "DET",
             "feats": {},
             "start": 0,
             "end": 2,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "congelador",
             "lemma": "congelador",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NOUN",
             "feats": {},
             "start": 3,
             "end": 13,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "está",
-            "lemma": "está",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "estar",
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "AUX",
             "feats": {},
             "start": 14,
             "end": 18,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "lleno",
             "lemma": "lleno",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "ADJ",
+            "upos": "ADJ",
+            "xpos": "ADJ",
             "feats": {},
             "start": 19,
             "end": 24,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": ".",
             "lemma": ".",
-            "pos": "punct",
+            "pos": "PUNCT",
             "upos": "PUNCT",
-            "xpos": "",
+            "xpos": "PUNCT",
             "feats": {},
             "start": 24,
             "end": 25,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           }
         ],
         "difficulty_aggregated": null
@@ -563,80 +823,80 @@
         "tokens": [
           {
             "surface": "Abrí",
-            "lemma": "abrí",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "abrir",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VERB",
             "feats": {},
             "start": 0,
             "end": 4,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "el",
             "lemma": "el",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "DET",
             "feats": {},
             "start": 5,
             "end": 7,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "congelador",
             "lemma": "congelador",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NOUN",
             "feats": {},
             "start": 8,
             "end": 18,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "para",
             "lemma": "para",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "ADP",
             "feats": {},
             "start": 19,
             "end": 23,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "coger",
             "lemma": "coger",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VERB",
             "feats": {},
             "start": 24,
             "end": 29,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "hielo",
             "lemma": "hielo",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NOUN",
             "feats": {},
             "start": 30,
             "end": 35,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": ".",
             "lemma": ".",
-            "pos": "punct",
+            "pos": "PUNCT",
             "upos": "PUNCT",
-            "xpos": "",
+            "xpos": "PUNCT",
             "feats": {},
             "start": 35,
             "end": 36,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           }
         ],
         "difficulty_aggregated": null
@@ -647,79 +907,79 @@
           {
             "surface": "Pon",
             "lemma": "pon",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VERB",
             "feats": {},
             "start": 0,
             "end": 3,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "el",
             "lemma": "el",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "DET",
             "feats": {},
             "start": 4,
             "end": 6,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "pollo",
             "lemma": "pollo",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NOUN",
             "feats": {},
             "start": 7,
             "end": 12,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "en",
             "lemma": "en",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "ADP",
             "feats": {},
             "start": 13,
             "end": 15,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "el",
             "lemma": "el",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "DET",
             "feats": {},
             "start": 16,
             "end": 18,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "congelador",
             "lemma": "congelador",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NOUN",
             "feats": {},
             "start": 19,
             "end": 29,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": ".",
             "lemma": ".",
-            "pos": "punct",
+            "pos": "PUNCT",
             "upos": "PUNCT",
-            "xpos": "",
+            "xpos": "PUNCT",
             "feats": {},
             "start": 29,
             "end": 30,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           }
         ],
         "difficulty_aggregated": null
@@ -730,79 +990,79 @@
           {
             "surface": "Mi",
             "lemma": "mi",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "DET",
             "feats": {},
             "start": 0,
             "end": 2,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "casa",
             "lemma": "casa",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NOUN",
             "feats": {},
             "start": 3,
             "end": 7,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "tiene",
-            "lemma": "tiene",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "tener",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VERB",
             "feats": {},
             "start": 8,
             "end": 13,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "un",
-            "lemma": "un",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "uno",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "DET",
             "feats": {},
             "start": 14,
             "end": 16,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "congelador",
             "lemma": "congelador",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NOUN",
             "feats": {},
             "start": 17,
             "end": 27,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "grande",
             "lemma": "grande",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "ADJ",
+            "upos": "ADJ",
+            "xpos": "ADJ",
             "feats": {},
             "start": 28,
             "end": 34,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": ".",
             "lemma": ".",
-            "pos": "punct",
+            "pos": "PUNCT",
             "upos": "PUNCT",
-            "xpos": "",
+            "xpos": "PUNCT",
             "feats": {},
             "start": 34,
             "end": 35,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           }
         ],
         "difficulty_aggregated": null

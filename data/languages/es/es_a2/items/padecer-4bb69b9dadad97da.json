@@ -47,63 +47,89 @@
       "translations": {
         "en": "My grandfather suffers from diabetes.",
         "es": "Mi abuelo padece diabetes.",
-        "ipa": "/mi aˈβwelo paˈðese ðjaˈβetes/"
+        "ipa": "/mi aˈβwelo paˈðese ðjaˈβetes/",
+        "ar": "يعاني جدي من السكري.",
+        "cs": "Můj dědeček trpí cukrovkou.",
+        "da": "Min bedstefar lider af diabetes.",
+        "de": "Mein Großvater hat Diabetes.",
+        "el": "Ο παππούς μου πάσχει από διαβήτη.",
+        "fi": "Isoisäni sairastaa diabetesta.",
+        "fr": "Mon grand-père est diabétique.",
+        "he": "הסבא שלי סובל מסוכרת.",
+        "hi": "मेरे दादा को मधुमेह है।",
+        "hu": "A nagyapám cukorbeteg.",
+        "id": "Kakek saya menderita diabetes.",
+        "it": "Mio nonno ha il diabete.",
+        "ja": "私の祖父は糖尿病です。",
+        "ko": "우리 할아버지는 당뇨병이 있습니다.",
+        "nb": "Bestefaren min har diabetes.",
+        "nl": "Mijn grootvader heeft diabetes.",
+        "pl": "Mój dziadek choruje na cukrzycę.",
+        "pt": "Meu avô tem diabetes.",
+        "ro": "Bunicul meu are diabet.",
+        "ru": "Мой дедушка болеет диабетом.",
+        "sv": "Min farfar har diabetes.",
+        "tr": "Dedem şeker hastası.",
+        "uk": "Мій дідусь хворіє на діабет.",
+        "vi": "Ông tôi bị tiểu đường.",
+        "yue": "我公公有糖尿病。",
+        "zh-Hans": "我爷爷有糖尿病。"
       },
       "tokens": [
         {
           "surface": "Mi",
           "lemma": "mi",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "DET",
           "feats": {},
           "start": 0,
           "end": 2,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "abuelo",
           "lemma": "abuelo",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NOUN",
           "feats": {},
           "start": 3,
           "end": 9,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "padece",
-          "lemma": "padece",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "padecer",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VERB",
           "feats": {},
           "start": 10,
           "end": 16,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "diabetes",
           "lemma": "diabetes",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NOUN",
           "feats": {},
           "start": 17,
           "end": 25,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": ".",
           "lemma": ".",
-          "pos": "punct",
+          "pos": "PUNCT",
           "upos": "PUNCT",
-          "xpos": "",
+          "xpos": "PUNCT",
           "feats": {},
           "start": 25,
           "end": 26,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         }
       ],
       "difficulty": null
@@ -114,85 +140,111 @@
       "translations": {
         "en": "I don't want to feel cold tonight.",
         "es": "No quiero padecer frío esta noche.",
-        "ipa": "/no ˈkjeɾo paðeˈseɾ ˈfɾi.o ˈesta ˈnotʃe/"
+        "ipa": "/no ˈkjeɾo paðeˈseɾ ˈfɾi.o ˈesta ˈnotʃe/",
+        "ar": "لا أريد أن أشعر بالبرد الليلة.",
+        "cs": "Nechci mít dnes v noci chladno.",
+        "da": "Jeg vil ikke fryse i nat.",
+        "de": "Ich möchte heute Nacht nicht frieren.",
+        "el": "Δεν θέλω να κρυώνω απόψε.",
+        "fi": "En halua palella tänä yönä.",
+        "fr": "Je ne veux pas avoir froid ce soir.",
+        "he": "אני לא רוצה לסבול מקור הלילה.",
+        "hi": "मैं आज रात ठंड महसूस नहीं करना चाहता।",
+        "hu": "Nem akarok fázni ma éjjel.",
+        "id": "Saya tidak mau kedinginan malam ini.",
+        "it": "Non voglio sentire freddo stasera.",
+        "ja": "今夜は寒い思いをしたくありません。",
+        "ko": "나는 오늘 밤 춥고 싶지 않다.",
+        "nb": "Jeg vil ikke fryse i natt.",
+        "nl": "Ik wil het vanavond niet koud krijgen.",
+        "pl": "Nie chcę marznąć dziś w nocy.",
+        "pt": "Não quero sentir frio esta noite.",
+        "ro": "Nu vreau să-mi fie frig în seara asta.",
+        "ru": "Я не хочу мерзнуть этой ночью.",
+        "sv": "Jag vill inte frysa i natt.",
+        "tr": "Bu gece üşümek istemiyorum.",
+        "uk": "Я не хочу мерзнути цієї ночі.",
+        "vi": "Tôi không muốn thấy lạnh tối nay.",
+        "yue": "我今晚唔想覺得凍。",
+        "zh-Hans": "我今晚不想觉得冷。"
       },
       "tokens": [
         {
           "surface": "No",
           "lemma": "no",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "ADV",
           "feats": {},
           "start": 0,
           "end": 2,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "quiero",
-          "lemma": "quiero",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "querer",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VERB",
           "feats": {},
           "start": 3,
           "end": 9,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "padecer",
           "lemma": "padecer",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VERB",
           "feats": {},
           "start": 10,
           "end": 17,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "frío",
           "lemma": "frío",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "ADJ",
+          "upos": "ADJ",
+          "xpos": "ADJ",
           "feats": {},
           "start": 18,
           "end": 22,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "esta",
-          "lemma": "esta",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "este",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "DET",
           "feats": {},
           "start": 23,
           "end": 27,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "noche",
           "lemma": "noche",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NOUN",
           "feats": {},
           "start": 28,
           "end": 33,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": ".",
           "lemma": ".",
-          "pos": "punct",
+          "pos": "PUNCT",
           "upos": "PUNCT",
-          "xpos": "",
+          "xpos": "PUNCT",
           "feats": {},
           "start": 33,
           "end": 34,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         }
       ],
       "difficulty": null
@@ -203,63 +255,89 @@
       "translations": {
         "en": "Some children suffer from asthma.",
         "es": "Algunos niños padecen asma.",
-        "ipa": "/alˈɣunos ˈniɲos paˈðesen ˈasma/"
+        "ipa": "/alˈɣunos ˈniɲos paˈðesen ˈasma/",
+        "ar": "يعاني بعض الأطفال من الربو.",
+        "cs": "Některé děti trpí astmatem.",
+        "da": "Nogle børn lider af astma.",
+        "de": "Manche Kinder haben Asthma.",
+        "el": "Κάποια παιδιά πάσχουν από άσθμα.",
+        "fi": "Jotkut lapset sairastavat astmaa.",
+        "fr": "Certains enfants souffrent d'asthme.",
+        "he": "יש ילדים שסובלים מאסתמה.",
+        "hi": "कुछ बच्चे दमे से पीड़ित हैं।",
+        "hu": "Néhány gyerek asztmás.",
+        "id": "Beberapa anak menderita asma.",
+        "it": "Alcuni bambini soffrono di asma.",
+        "ja": "何人かの子どもはぜんそくを患っています。",
+        "ko": "몇몇 아이들은 천식을 앓고 있습니다.",
+        "nb": "Noen barn har astma.",
+        "nl": "Sommige kinderen hebben astma.",
+        "pl": "Niektóre dzieci chorują na astmę.",
+        "pt": "Algumas crianças sofrem de asma.",
+        "ro": "Unii copii suferă de astm.",
+        "ru": "Некоторые дети болеют астмой.",
+        "sv": "Vissa barn har astma.",
+        "tr": "Bazı çocuklar astım hastasıdır.",
+        "uk": "Деякі діти хворіють на астму.",
+        "vi": "Một số trẻ em bị hen suyễn.",
+        "yue": "有啲小朋友有哮喘。",
+        "zh-Hans": "有些孩子患有哮喘。"
       },
       "tokens": [
         {
           "surface": "Algunos",
-          "lemma": "algunos",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "alguno",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "DET",
           "feats": {},
           "start": 0,
           "end": 7,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "niños",
-          "lemma": "niños",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "niño",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NOUN",
           "feats": {},
           "start": 8,
           "end": 13,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "padecen",
-          "lemma": "padecen",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "padecer",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VERB",
           "feats": {},
           "start": 14,
           "end": 21,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "asma",
           "lemma": "asma",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NOUN",
           "feats": {},
           "start": 22,
           "end": 26,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": ".",
           "lemma": ".",
-          "pos": "punct",
+          "pos": "PUNCT",
           "upos": "PUNCT",
-          "xpos": "",
+          "xpos": "PUNCT",
           "feats": {},
           "start": 26,
           "end": 27,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         }
       ],
       "difficulty": null
@@ -270,85 +348,111 @@
       "translations": {
         "en": "I suffer from stress when there is a lot of noise.",
         "es": "Padezco estrés cuando hay mucho ruido.",
-        "ipa": "/paˈðesko esˈtɾes ˈkwando ai ˈmutʃo ˈruiðo/"
+        "ipa": "/paˈðesko esˈtɾes ˈkwando ai ˈmutʃo ˈruiðo/",
+        "ar": "أعاني من التوتر عندما يكون هناك الكثير من الضوضاء.",
+        "cs": "Trpím stresem, když je moc hluku.",
+        "da": "Jeg får stress, når der er meget larm.",
+        "de": "Ich habe Stress, wenn es viel Lärm gibt.",
+        "el": "Έχω στρες όταν έχει πολλή φασαρία.",
+        "fi": "Minulla on stressiä, kun on paljon melua.",
+        "fr": "Je suis stressé quand il y a beaucoup de bruit.",
+        "he": "אני סובל מלחץ כשיש הרבה רעש.",
+        "hi": "जब बहुत शोर होता है, तो मुझे तनाव होता है।",
+        "hu": "Stresszes vagyok, ha nagy a zaj.",
+        "id": "Saya stres kalau terlalu berisik.",
+        "it": "Ho stress quando c'è molto rumore.",
+        "ja": "私は、うるさいとストレスを感じます。",
+        "ko": "나는 소음이 심하면 스트레스를 받는다.",
+        "nb": "Jeg blir stresset når det er mye støy.",
+        "nl": "Ik heb stress als het erg rumoerig is.",
+        "pl": "Dostaję stresu, gdy jest dużo hałasu.",
+        "pt": "Fico estressado quando há muito barulho.",
+        "ro": "Mă stresez când este mult zgomot.",
+        "ru": "Я испытываю стресс, когда слишком шумно.",
+        "sv": "Jag blir stressad när det är mycket oväsen.",
+        "tr": "Gürültü çok olunca stres oluyorum.",
+        "uk": "Я відчуваю стрес, коли дуже шумно.",
+        "vi": "Tôi bị căng thẳng khi có nhiều tiếng ồn.",
+        "yue": "當好嘈嗰陣，我會有壓力。",
+        "zh-Hans": "当噪音很大时，我会感到压力。"
       },
       "tokens": [
         {
           "surface": "Padezco",
-          "lemma": "padezco",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "padecer",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VERB",
           "feats": {},
           "start": 0,
           "end": 7,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "estrés",
           "lemma": "estrés",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NOUN",
           "feats": {},
           "start": 8,
           "end": 14,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "cuando",
           "lemma": "cuando",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "SCONJ",
+          "upos": "SCONJ",
+          "xpos": "SCONJ",
           "feats": {},
           "start": 15,
           "end": 21,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "hay",
-          "lemma": "hay",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "haber",
+          "pos": "AUX",
+          "upos": "AUX",
+          "xpos": "AUX",
           "feats": {},
           "start": 22,
           "end": 25,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "mucho",
           "lemma": "mucho",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "DET",
           "feats": {},
           "start": 26,
           "end": 31,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "ruido",
           "lemma": "ruido",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NOUN",
           "feats": {},
           "start": 32,
           "end": 37,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": ".",
           "lemma": ".",
-          "pos": "punct",
+          "pos": "PUNCT",
           "upos": "PUNCT",
-          "xpos": "",
+          "xpos": "PUNCT",
           "feats": {},
           "start": 37,
           "end": 38,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         }
       ],
       "difficulty": null
@@ -474,6 +578,162 @@
     "word_fi": "kärsiä",
     "word_ja": "苦しむ",
     "word_es": "padecer",
+    "ar": [
+      "يعاني جدي من السكري.",
+      "لا أريد أن أشعر بالبرد الليلة.",
+      "يعاني بعض الأطفال من الربو.",
+      "أعاني من التوتر عندما يكون هناك الكثير من الضوضاء."
+    ],
+    "cs": [
+      "Můj dědeček trpí cukrovkou.",
+      "Nechci mít dnes v noci chladno.",
+      "Některé děti trpí astmatem.",
+      "Trpím stresem, když je moc hluku."
+    ],
+    "da": [
+      "Min bedstefar lider af diabetes.",
+      "Jeg vil ikke fryse i nat.",
+      "Nogle børn lider af astma.",
+      "Jeg får stress, når der er meget larm."
+    ],
+    "de": [
+      "Mein Großvater hat Diabetes.",
+      "Ich möchte heute Nacht nicht frieren.",
+      "Manche Kinder haben Asthma.",
+      "Ich habe Stress, wenn es viel Lärm gibt."
+    ],
+    "el": [
+      "Ο παππούς μου πάσχει από διαβήτη.",
+      "Δεν θέλω να κρυώνω απόψε.",
+      "Κάποια παιδιά πάσχουν από άσθμα.",
+      "Έχω στρες όταν έχει πολλή φασαρία."
+    ],
+    "fi": [
+      "Isoisäni sairastaa diabetesta.",
+      "En halua palella tänä yönä.",
+      "Jotkut lapset sairastavat astmaa.",
+      "Minulla on stressiä, kun on paljon melua."
+    ],
+    "fr": [
+      "Mon grand-père est diabétique.",
+      "Je ne veux pas avoir froid ce soir.",
+      "Certains enfants souffrent d'asthme.",
+      "Je suis stressé quand il y a beaucoup de bruit."
+    ],
+    "he": [
+      "הסבא שלי סובל מסוכרת.",
+      "אני לא רוצה לסבול מקור הלילה.",
+      "יש ילדים שסובלים מאסתמה.",
+      "אני סובל מלחץ כשיש הרבה רעש."
+    ],
+    "hi": [
+      "मेरे दादा को मधुमेह है।",
+      "मैं आज रात ठंड महसूस नहीं करना चाहता।",
+      "कुछ बच्चे दमे से पीड़ित हैं।",
+      "जब बहुत शोर होता है, तो मुझे तनाव होता है।"
+    ],
+    "hu": [
+      "A nagyapám cukorbeteg.",
+      "Nem akarok fázni ma éjjel.",
+      "Néhány gyerek asztmás.",
+      "Stresszes vagyok, ha nagy a zaj."
+    ],
+    "id": [
+      "Kakek saya menderita diabetes.",
+      "Saya tidak mau kedinginan malam ini.",
+      "Beberapa anak menderita asma.",
+      "Saya stres kalau terlalu berisik."
+    ],
+    "it": [
+      "Mio nonno ha il diabete.",
+      "Non voglio sentire freddo stasera.",
+      "Alcuni bambini soffrono di asma.",
+      "Ho stress quando c'è molto rumore."
+    ],
+    "ja": [
+      "私の祖父は糖尿病です。",
+      "今夜は寒い思いをしたくありません。",
+      "何人かの子どもはぜんそくを患っています。",
+      "私は、うるさいとストレスを感じます。"
+    ],
+    "ko": [
+      "우리 할아버지는 당뇨병이 있습니다.",
+      "나는 오늘 밤 춥고 싶지 않다.",
+      "몇몇 아이들은 천식을 앓고 있습니다.",
+      "나는 소음이 심하면 스트레스를 받는다."
+    ],
+    "nb": [
+      "Bestefaren min har diabetes.",
+      "Jeg vil ikke fryse i natt.",
+      "Noen barn har astma.",
+      "Jeg blir stresset når det er mye støy."
+    ],
+    "nl": [
+      "Mijn grootvader heeft diabetes.",
+      "Ik wil het vanavond niet koud krijgen.",
+      "Sommige kinderen hebben astma.",
+      "Ik heb stress als het erg rumoerig is."
+    ],
+    "pl": [
+      "Mój dziadek choruje na cukrzycę.",
+      "Nie chcę marznąć dziś w nocy.",
+      "Niektóre dzieci chorują na astmę.",
+      "Dostaję stresu, gdy jest dużo hałasu."
+    ],
+    "pt": [
+      "Meu avô tem diabetes.",
+      "Não quero sentir frio esta noite.",
+      "Algumas crianças sofrem de asma.",
+      "Fico estressado quando há muito barulho."
+    ],
+    "ro": [
+      "Bunicul meu are diabet.",
+      "Nu vreau să-mi fie frig în seara asta.",
+      "Unii copii suferă de astm.",
+      "Mă stresez când este mult zgomot."
+    ],
+    "ru": [
+      "Мой дедушка болеет диабетом.",
+      "Я не хочу мерзнуть этой ночью.",
+      "Некоторые дети болеют астмой.",
+      "Я испытываю стресс, когда слишком шумно."
+    ],
+    "sv": [
+      "Min farfar har diabetes.",
+      "Jag vill inte frysa i natt.",
+      "Vissa barn har astma.",
+      "Jag blir stressad när det är mycket oväsen."
+    ],
+    "tr": [
+      "Dedem şeker hastası.",
+      "Bu gece üşümek istemiyorum.",
+      "Bazı çocuklar astım hastasıdır.",
+      "Gürültü çok olunca stres oluyorum."
+    ],
+    "uk": [
+      "Мій дідусь хворіє на діабет.",
+      "Я не хочу мерзнути цієї ночі.",
+      "Деякі діти хворіють на астму.",
+      "Я відчуваю стрес, коли дуже шумно."
+    ],
+    "vi": [
+      "Ông tôi bị tiểu đường.",
+      "Tôi không muốn thấy lạnh tối nay.",
+      "Một số trẻ em bị hen suyễn.",
+      "Tôi bị căng thẳng khi có nhiều tiếng ồn."
+    ],
+    "yue": [
+      "我公公有糖尿病。",
+      "我今晚唔想覺得凍。",
+      "有啲小朋友有哮喘。",
+      "當好嘈嗰陣，我會有壓力。"
+    ],
+    "zh-Hans": [
+      "我爷爷有糖尿病。",
+      "我今晚不想觉得冷。",
+      "有些孩子患有哮喘。",
+      "当噪音很大时，我会感到压力。"
+    ],
     "pos_analysis": [
       {
         "sentence": "Mi abuelo padece diabetes.",
@@ -481,57 +741,57 @@
           {
             "surface": "Mi",
             "lemma": "mi",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "DET",
             "feats": {},
             "start": 0,
             "end": 2,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "abuelo",
             "lemma": "abuelo",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NOUN",
             "feats": {},
             "start": 3,
             "end": 9,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "padece",
-            "lemma": "padece",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "padecer",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VERB",
             "feats": {},
             "start": 10,
             "end": 16,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "diabetes",
             "lemma": "diabetes",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NOUN",
             "feats": {},
             "start": 17,
             "end": 25,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": ".",
             "lemma": ".",
-            "pos": "punct",
+            "pos": "PUNCT",
             "upos": "PUNCT",
-            "xpos": "",
+            "xpos": "PUNCT",
             "feats": {},
             "start": 25,
             "end": 26,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           }
         ],
         "difficulty_aggregated": null
@@ -542,79 +802,79 @@
           {
             "surface": "No",
             "lemma": "no",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
             "feats": {},
             "start": 0,
             "end": 2,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "quiero",
-            "lemma": "quiero",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "querer",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VERB",
             "feats": {},
             "start": 3,
             "end": 9,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "padecer",
             "lemma": "padecer",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VERB",
             "feats": {},
             "start": 10,
             "end": 17,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "frío",
             "lemma": "frío",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "ADJ",
+            "upos": "ADJ",
+            "xpos": "ADJ",
             "feats": {},
             "start": 18,
             "end": 22,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "esta",
-            "lemma": "esta",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "este",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "DET",
             "feats": {},
             "start": 23,
             "end": 27,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "noche",
             "lemma": "noche",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NOUN",
             "feats": {},
             "start": 28,
             "end": 33,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": ".",
             "lemma": ".",
-            "pos": "punct",
+            "pos": "PUNCT",
             "upos": "PUNCT",
-            "xpos": "",
+            "xpos": "PUNCT",
             "feats": {},
             "start": 33,
             "end": 34,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           }
         ],
         "difficulty_aggregated": null
@@ -624,58 +884,58 @@
         "tokens": [
           {
             "surface": "Algunos",
-            "lemma": "algunos",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "alguno",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "DET",
             "feats": {},
             "start": 0,
             "end": 7,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "niños",
-            "lemma": "niños",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "niño",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NOUN",
             "feats": {},
             "start": 8,
             "end": 13,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "padecen",
-            "lemma": "padecen",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "padecer",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VERB",
             "feats": {},
             "start": 14,
             "end": 21,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "asma",
             "lemma": "asma",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NOUN",
             "feats": {},
             "start": 22,
             "end": 26,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": ".",
             "lemma": ".",
-            "pos": "punct",
+            "pos": "PUNCT",
             "upos": "PUNCT",
-            "xpos": "",
+            "xpos": "PUNCT",
             "feats": {},
             "start": 26,
             "end": 27,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           }
         ],
         "difficulty_aggregated": null
@@ -685,80 +945,80 @@
         "tokens": [
           {
             "surface": "Padezco",
-            "lemma": "padezco",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "padecer",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VERB",
             "feats": {},
             "start": 0,
             "end": 7,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "estrés",
             "lemma": "estrés",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NOUN",
             "feats": {},
             "start": 8,
             "end": 14,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "cuando",
             "lemma": "cuando",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "SCONJ",
+            "upos": "SCONJ",
+            "xpos": "SCONJ",
             "feats": {},
             "start": 15,
             "end": 21,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "hay",
-            "lemma": "hay",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "haber",
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "AUX",
             "feats": {},
             "start": 22,
             "end": 25,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "mucho",
             "lemma": "mucho",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "DET",
             "feats": {},
             "start": 26,
             "end": 31,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "ruido",
             "lemma": "ruido",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NOUN",
             "feats": {},
             "start": 32,
             "end": 37,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": ".",
             "lemma": ".",
-            "pos": "punct",
+            "pos": "PUNCT",
             "upos": "PUNCT",
-            "xpos": "",
+            "xpos": "PUNCT",
             "feats": {},
             "start": 37,
             "end": 38,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           }
         ],
         "difficulty_aggregated": null

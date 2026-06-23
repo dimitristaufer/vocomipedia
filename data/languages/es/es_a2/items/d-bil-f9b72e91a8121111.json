@@ -47,74 +47,100 @@
       "translations": {
         "en": "My brother is weak today.",
         "es": "Mi hermano está débil hoy.",
-        "ipa": "/mi eɾˈmano esˈta ˈdeβil oj/"
+        "ipa": "/mi eɾˈmano esˈta ˈdeβil oj/",
+        "ar": "أخي ضعيف اليوم.",
+        "cs": "Můj bratr je dnes slabý.",
+        "da": "Min bror er svag i dag.",
+        "de": "Mein Bruder ist heute schwach.",
+        "el": "Ο αδελφός μου είναι αδύναμος σήμερα.",
+        "fi": "Veljeni on heikko tänään.",
+        "fr": "Mon frère est faible aujourd'hui.",
+        "he": "אחי חלש היום.",
+        "hi": "मेरा भाई आज कमज़ोर है।",
+        "hu": "A testvérem ma gyenge.",
+        "id": "Saudara laki-laki saya lemah hari ini.",
+        "it": "Mio fratello è debole oggi.",
+        "ja": "兄は今日は弱っています。",
+        "ko": "내 남동생은 오늘 몸이 약해.",
+        "nb": "Broren min er svak i dag.",
+        "nl": "Mijn broer is vandaag zwak.",
+        "pl": "Mój brat jest dziś słaby.",
+        "pt": "Meu irmão está fraco hoje.",
+        "ro": "Fratele meu este slab azi.",
+        "ru": "Мой брат сегодня слабый.",
+        "sv": "Min bror är svag i dag.",
+        "tr": "Kardeşim bugün halsiz.",
+        "uk": "Мій брат сьогодні слабкий.",
+        "vi": "Anh trai tôi hôm nay yếu.",
+        "yue": "我哥哥今日好虛弱。",
+        "zh-Hans": "我哥哥今天很虚弱。"
       },
       "tokens": [
         {
           "surface": "Mi",
           "lemma": "mi",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "DET",
           "feats": {},
           "start": 0,
           "end": 2,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "hermano",
           "lemma": "hermano",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NOUN",
           "feats": {},
           "start": 3,
           "end": 10,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "está",
-          "lemma": "está",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "estar",
+          "pos": "AUX",
+          "upos": "AUX",
+          "xpos": "AUX",
           "feats": {},
           "start": 11,
           "end": 15,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "débil",
           "lemma": "débil",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "ADJ",
+          "upos": "ADJ",
+          "xpos": "ADJ",
           "feats": {},
           "start": 16,
           "end": 21,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "hoy",
           "lemma": "hoy",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "ADV",
           "feats": {},
           "start": 22,
           "end": 25,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": ".",
           "lemma": ".",
-          "pos": "punct",
+          "pos": "PUNCT",
           "upos": "PUNCT",
-          "xpos": "",
+          "xpos": "PUNCT",
           "feats": {},
           "start": 25,
           "end": 26,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         }
       ],
       "difficulty": null
@@ -125,63 +151,89 @@
       "translations": {
         "en": "The weak one needs help.",
         "es": "El débil necesita ayuda.",
-        "ipa": "/el ˈdeβil nesesiˈta aˈʝuða/"
+        "ipa": "/el ˈdeβil nesesiˈta aˈʝuða/",
+        "ar": "الضعيف يحتاج إلى مساعدة.",
+        "cs": "Slabý člověk potřebuje pomoc.",
+        "da": "Den svage har brug for hjælp.",
+        "de": "Der Schwache braucht Hilfe.",
+        "el": "Ο αδύναμος χρειάζεται βοήθεια.",
+        "fi": "Heikko tarvitsee apua.",
+        "fr": "Le faible a besoin d'aide.",
+        "he": "החלש צריך עזרה.",
+        "hi": "कमज़ोर को मदद की ज़रूरत है।",
+        "hu": "A gyengének segítségre van szüksége.",
+        "id": "Orang yang lemah butuh bantuan.",
+        "it": "Il debole ha bisogno di aiuto.",
+        "ja": "弱い人は助けが必要です。",
+        "ko": "약한 사람은 도움이 필요해.",
+        "nb": "Den svake trenger hjelp.",
+        "nl": "De zwakke heeft hulp nodig.",
+        "pl": "Słaby potrzebuje pomocy.",
+        "pt": "O fraco precisa de ajuda.",
+        "ro": "Cel slab are nevoie de ajutor.",
+        "ru": "Слабому нужна помощь.",
+        "sv": "Den svage behöver hjälp.",
+        "tr": "Zayıf olanın yardıma ihtiyacı var.",
+        "uk": "Слабкий потребує допомоги.",
+        "vi": "Người yếu cần giúp đỡ.",
+        "yue": "弱嘅人需要幫助。",
+        "zh-Hans": "弱者需要帮助。"
       },
       "tokens": [
         {
           "surface": "El",
           "lemma": "el",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "DET",
           "feats": {},
           "start": 0,
           "end": 2,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "débil",
           "lemma": "débil",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "ADJ",
+          "upos": "ADJ",
+          "xpos": "ADJ",
           "feats": {},
           "start": 3,
           "end": 8,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "necesita",
-          "lemma": "necesita",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "necesitar",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VERB",
           "feats": {},
           "start": 9,
           "end": 17,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "ayuda",
           "lemma": "ayuda",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NOUN",
           "feats": {},
           "start": 18,
           "end": 23,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": ".",
           "lemma": ".",
-          "pos": "punct",
+          "pos": "PUNCT",
           "upos": "PUNCT",
-          "xpos": "",
+          "xpos": "PUNCT",
           "feats": {},
           "start": 23,
           "end": 24,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         }
       ],
       "difficulty": null
@@ -192,63 +244,89 @@
       "translations": {
         "en": "The coffee is weak.",
         "es": "El café está débil.",
-        "ipa": "/el kaˈfe esˈta ˈdeβil/"
+        "ipa": "/el kaˈfe esˈta ˈdeβil/",
+        "ar": "القهوة خفيفة.",
+        "cs": "Káva je slabá.",
+        "da": "Kaffen er svag.",
+        "de": "Der Kaffee ist dünn.",
+        "el": "Ο καφές είναι νερουλός.",
+        "fi": "Kahvi on laihaa.",
+        "fr": "Le café est faible.",
+        "he": "הקפה חלש.",
+        "hi": "कॉफी हल्की है।",
+        "hu": "A kávé gyenge.",
+        "id": "Kopinya lemah.",
+        "it": "Il caffè è annacquato.",
+        "ja": "コーヒーが薄いです。",
+        "ko": "커피가 연해.",
+        "nb": "Kaffen er svak.",
+        "nl": "De koffie is slap.",
+        "pl": "Kawa jest słaba.",
+        "pt": "O café está fraco.",
+        "ro": "Cafeaua e slabă.",
+        "ru": "Кофе слабый.",
+        "sv": "Kaffet är svagt.",
+        "tr": "Kahve hafif.",
+        "uk": "Кава слабка.",
+        "vi": "Cà phê nhạt.",
+        "yue": "呢杯咖啡好淡。",
+        "zh-Hans": "咖啡很淡。"
       },
       "tokens": [
         {
           "surface": "El",
           "lemma": "el",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "DET",
           "feats": {},
           "start": 0,
           "end": 2,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "café",
           "lemma": "café",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NOUN",
           "feats": {},
           "start": 3,
           "end": 7,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "está",
-          "lemma": "está",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "estar",
+          "pos": "AUX",
+          "upos": "AUX",
+          "xpos": "AUX",
           "feats": {},
           "start": 8,
           "end": 12,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "débil",
           "lemma": "débil",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "ADJ",
+          "upos": "ADJ",
+          "xpos": "ADJ",
           "feats": {},
           "start": 13,
           "end": 18,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": ".",
           "lemma": ".",
-          "pos": "punct",
+          "pos": "PUNCT",
           "upos": "PUNCT",
-          "xpos": "",
+          "xpos": "PUNCT",
           "feats": {},
           "start": 18,
           "end": 19,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         }
       ],
       "difficulty": null
@@ -259,52 +337,78 @@
       "translations": {
         "en": "We help the weak person.",
         "es": "Ayudamos al débil.",
-        "ipa": "/ajuˈðamos al ˈdeβil/"
+        "ipa": "/ajuˈðamos al ˈdeβil/",
+        "ar": "نساعد الضعيف.",
+        "cs": "Pomáháme slabému.",
+        "da": "Vi hjælper den svage.",
+        "de": "Wir helfen dem Schwachen.",
+        "el": "Βοηθάμε τον αδύναμο.",
+        "fi": "Autamme heikkoa.",
+        "fr": "Nous aidons le faible.",
+        "he": "אנחנו עוזרים לחלש.",
+        "hi": "हम कमज़ोर की मदद करते हैं।",
+        "hu": "Segítünk a gyengének.",
+        "id": "Kami membantu orang yang lemah.",
+        "it": "Aiutiamo il debole.",
+        "ja": "私たちは弱い人を助けます。",
+        "ko": "우리는 약한 사람을 도와.",
+        "nb": "Vi hjelper den svake.",
+        "nl": "We helpen de zwakke.",
+        "pl": "Pomagamy słabemu.",
+        "pt": "Ajudamos o fraco.",
+        "ro": "Îl ajutăm pe cel slab.",
+        "ru": "Мы помогаем слабому.",
+        "sv": "Vi hjälper den svage.",
+        "tr": "Zayıfa yardım ediyoruz.",
+        "uk": "Ми допомагаємо слабкому.",
+        "vi": "Chúng tôi giúp người yếu.",
+        "yue": "我哋幫弱嘅人。",
+        "zh-Hans": "我们帮助弱者。"
       },
       "tokens": [
         {
           "surface": "Ayudamos",
-          "lemma": "ayudamos",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "ayudar",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VERB",
           "feats": {},
           "start": 0,
           "end": 8,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "al",
           "lemma": "al",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "ADP",
           "feats": {},
           "start": 9,
           "end": 11,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "débil",
           "lemma": "débil",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NOUN",
           "feats": {},
           "start": 12,
           "end": 17,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": ".",
           "lemma": ".",
-          "pos": "punct",
+          "pos": "PUNCT",
           "upos": "PUNCT",
-          "xpos": "",
+          "xpos": "PUNCT",
           "feats": {},
           "start": 17,
           "end": 18,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         }
       ],
       "difficulty": null
@@ -430,6 +534,162 @@
     "word_fi": "heikko; heiverö",
     "word_ja": "弱い; 弱者",
     "word_es": "débil",
+    "ar": [
+      "أخي ضعيف اليوم.",
+      "الضعيف يحتاج إلى مساعدة.",
+      "القهوة خفيفة.",
+      "نساعد الضعيف."
+    ],
+    "cs": [
+      "Můj bratr je dnes slabý.",
+      "Slabý člověk potřebuje pomoc.",
+      "Káva je slabá.",
+      "Pomáháme slabému."
+    ],
+    "da": [
+      "Min bror er svag i dag.",
+      "Den svage har brug for hjælp.",
+      "Kaffen er svag.",
+      "Vi hjælper den svage."
+    ],
+    "de": [
+      "Mein Bruder ist heute schwach.",
+      "Der Schwache braucht Hilfe.",
+      "Der Kaffee ist dünn.",
+      "Wir helfen dem Schwachen."
+    ],
+    "el": [
+      "Ο αδελφός μου είναι αδύναμος σήμερα.",
+      "Ο αδύναμος χρειάζεται βοήθεια.",
+      "Ο καφές είναι νερουλός.",
+      "Βοηθάμε τον αδύναμο."
+    ],
+    "fi": [
+      "Veljeni on heikko tänään.",
+      "Heikko tarvitsee apua.",
+      "Kahvi on laihaa.",
+      "Autamme heikkoa."
+    ],
+    "fr": [
+      "Mon frère est faible aujourd'hui.",
+      "Le faible a besoin d'aide.",
+      "Le café est faible.",
+      "Nous aidons le faible."
+    ],
+    "he": [
+      "אחי חלש היום.",
+      "החלש צריך עזרה.",
+      "הקפה חלש.",
+      "אנחנו עוזרים לחלש."
+    ],
+    "hi": [
+      "मेरा भाई आज कमज़ोर है।",
+      "कमज़ोर को मदद की ज़रूरत है।",
+      "कॉफी हल्की है।",
+      "हम कमज़ोर की मदद करते हैं।"
+    ],
+    "hu": [
+      "A testvérem ma gyenge.",
+      "A gyengének segítségre van szüksége.",
+      "A kávé gyenge.",
+      "Segítünk a gyengének."
+    ],
+    "id": [
+      "Saudara laki-laki saya lemah hari ini.",
+      "Orang yang lemah butuh bantuan.",
+      "Kopinya lemah.",
+      "Kami membantu orang yang lemah."
+    ],
+    "it": [
+      "Mio fratello è debole oggi.",
+      "Il debole ha bisogno di aiuto.",
+      "Il caffè è annacquato.",
+      "Aiutiamo il debole."
+    ],
+    "ja": [
+      "兄は今日は弱っています。",
+      "弱い人は助けが必要です。",
+      "コーヒーが薄いです。",
+      "私たちは弱い人を助けます。"
+    ],
+    "ko": [
+      "내 남동생은 오늘 몸이 약해.",
+      "약한 사람은 도움이 필요해.",
+      "커피가 연해.",
+      "우리는 약한 사람을 도와."
+    ],
+    "nb": [
+      "Broren min er svak i dag.",
+      "Den svake trenger hjelp.",
+      "Kaffen er svak.",
+      "Vi hjelper den svake."
+    ],
+    "nl": [
+      "Mijn broer is vandaag zwak.",
+      "De zwakke heeft hulp nodig.",
+      "De koffie is slap.",
+      "We helpen de zwakke."
+    ],
+    "pl": [
+      "Mój brat jest dziś słaby.",
+      "Słaby potrzebuje pomocy.",
+      "Kawa jest słaba.",
+      "Pomagamy słabemu."
+    ],
+    "pt": [
+      "Meu irmão está fraco hoje.",
+      "O fraco precisa de ajuda.",
+      "O café está fraco.",
+      "Ajudamos o fraco."
+    ],
+    "ro": [
+      "Fratele meu este slab azi.",
+      "Cel slab are nevoie de ajutor.",
+      "Cafeaua e slabă.",
+      "Îl ajutăm pe cel slab."
+    ],
+    "ru": [
+      "Мой брат сегодня слабый.",
+      "Слабому нужна помощь.",
+      "Кофе слабый.",
+      "Мы помогаем слабому."
+    ],
+    "sv": [
+      "Min bror är svag i dag.",
+      "Den svage behöver hjälp.",
+      "Kaffet är svagt.",
+      "Vi hjälper den svage."
+    ],
+    "tr": [
+      "Kardeşim bugün halsiz.",
+      "Zayıf olanın yardıma ihtiyacı var.",
+      "Kahve hafif.",
+      "Zayıfa yardım ediyoruz."
+    ],
+    "uk": [
+      "Мій брат сьогодні слабкий.",
+      "Слабкий потребує допомоги.",
+      "Кава слабка.",
+      "Ми допомагаємо слабкому."
+    ],
+    "vi": [
+      "Anh trai tôi hôm nay yếu.",
+      "Người yếu cần giúp đỡ.",
+      "Cà phê nhạt.",
+      "Chúng tôi giúp người yếu."
+    ],
+    "yue": [
+      "我哥哥今日好虛弱。",
+      "弱嘅人需要幫助。",
+      "呢杯咖啡好淡。",
+      "我哋幫弱嘅人。"
+    ],
+    "zh-Hans": [
+      "我哥哥今天很虚弱。",
+      "弱者需要帮助。",
+      "咖啡很淡。",
+      "我们帮助弱者。"
+    ],
     "pos_analysis": [
       {
         "sentence": "Mi hermano está débil hoy.",
@@ -437,68 +697,68 @@
           {
             "surface": "Mi",
             "lemma": "mi",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "DET",
             "feats": {},
             "start": 0,
             "end": 2,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "hermano",
             "lemma": "hermano",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NOUN",
             "feats": {},
             "start": 3,
             "end": 10,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "está",
-            "lemma": "está",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "estar",
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "AUX",
             "feats": {},
             "start": 11,
             "end": 15,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "débil",
             "lemma": "débil",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "ADJ",
+            "upos": "ADJ",
+            "xpos": "ADJ",
             "feats": {},
             "start": 16,
             "end": 21,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "hoy",
             "lemma": "hoy",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
             "feats": {},
             "start": 22,
             "end": 25,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": ".",
             "lemma": ".",
-            "pos": "punct",
+            "pos": "PUNCT",
             "upos": "PUNCT",
-            "xpos": "",
+            "xpos": "PUNCT",
             "feats": {},
             "start": 25,
             "end": 26,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           }
         ],
         "difficulty_aggregated": null
@@ -509,57 +769,57 @@
           {
             "surface": "El",
             "lemma": "el",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "DET",
             "feats": {},
             "start": 0,
             "end": 2,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "débil",
             "lemma": "débil",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "ADJ",
+            "upos": "ADJ",
+            "xpos": "ADJ",
             "feats": {},
             "start": 3,
             "end": 8,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "necesita",
-            "lemma": "necesita",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "necesitar",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VERB",
             "feats": {},
             "start": 9,
             "end": 17,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "ayuda",
             "lemma": "ayuda",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NOUN",
             "feats": {},
             "start": 18,
             "end": 23,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": ".",
             "lemma": ".",
-            "pos": "punct",
+            "pos": "PUNCT",
             "upos": "PUNCT",
-            "xpos": "",
+            "xpos": "PUNCT",
             "feats": {},
             "start": 23,
             "end": 24,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           }
         ],
         "difficulty_aggregated": null
@@ -570,57 +830,57 @@
           {
             "surface": "El",
             "lemma": "el",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "DET",
             "feats": {},
             "start": 0,
             "end": 2,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "café",
             "lemma": "café",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NOUN",
             "feats": {},
             "start": 3,
             "end": 7,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "está",
-            "lemma": "está",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "estar",
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "AUX",
             "feats": {},
             "start": 8,
             "end": 12,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "débil",
             "lemma": "débil",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "ADJ",
+            "upos": "ADJ",
+            "xpos": "ADJ",
             "feats": {},
             "start": 13,
             "end": 18,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": ".",
             "lemma": ".",
-            "pos": "punct",
+            "pos": "PUNCT",
             "upos": "PUNCT",
-            "xpos": "",
+            "xpos": "PUNCT",
             "feats": {},
             "start": 18,
             "end": 19,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           }
         ],
         "difficulty_aggregated": null
@@ -630,47 +890,47 @@
         "tokens": [
           {
             "surface": "Ayudamos",
-            "lemma": "ayudamos",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "ayudar",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VERB",
             "feats": {},
             "start": 0,
             "end": 8,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "al",
             "lemma": "al",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "ADP",
             "feats": {},
             "start": 9,
             "end": 11,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "débil",
             "lemma": "débil",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NOUN",
             "feats": {},
             "start": 12,
             "end": 17,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": ".",
             "lemma": ".",
-            "pos": "punct",
+            "pos": "PUNCT",
             "upos": "PUNCT",
-            "xpos": "",
+            "xpos": "PUNCT",
             "feats": {},
             "start": 17,
             "end": 18,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           }
         ],
         "difficulty_aggregated": null

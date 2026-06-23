@@ -47,52 +47,78 @@
       "translations": {
         "en": "I write down your number.",
         "es": "Apunto tu número.",
-        "ipa": "[aˈpun.to tu ˈnu.me.ɾo]"
+        "ipa": "[aˈpun.to tu ˈnu.me.ɾo]",
+        "ar": "أدوّن رقمك.",
+        "cs": "Zapisuju si tvoje číslo.",
+        "da": "Jeg skriver dit nummer ned.",
+        "de": "Ich schreibe deine Nummer auf.",
+        "el": "Σημειώνω τον αριθμό σου.",
+        "fi": "Kirjaan numerosi ylös.",
+        "fr": "Je note ton numéro.",
+        "he": "אני רושם את המספר שלך.",
+        "hi": "मैं आपका नंबर लिख रहा हूँ।",
+        "hu": "Felírom a számodat.",
+        "id": "Saya menulis nomor Anda.",
+        "it": "Segno il tuo numero.",
+        "ja": "あなたの番号を書き留めます。",
+        "ko": "당신 번호를 적어요.",
+        "nb": "Jeg skriver ned nummeret ditt.",
+        "nl": "Ik schrijf je nummer op.",
+        "pl": "Zapisuję twój numer.",
+        "pt": "Estou anotando o seu número.",
+        "ro": "Îți notez numărul.",
+        "ru": "Я записываю твой номер.",
+        "sv": "Jag skriver ner ditt nummer.",
+        "tr": "Numaranı yazıyorum.",
+        "uk": "Я записую твій номер.",
+        "vi": "Tôi ghi lại số của bạn.",
+        "yue": "我寫低你個電話號碼。",
+        "zh-Hans": "我记下你的号码。"
       },
       "tokens": [
         {
           "surface": "Apunto",
-          "lemma": "apunto",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "apuntar",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VERB",
           "feats": {},
           "start": 0,
           "end": 6,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "tu",
           "lemma": "tu",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "DET",
           "feats": {},
           "start": 7,
           "end": 9,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "número",
           "lemma": "número",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NOUN",
           "feats": {},
           "start": 10,
           "end": 16,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": ".",
           "lemma": ".",
-          "pos": "punct",
+          "pos": "PUNCT",
           "upos": "PUNCT",
-          "xpos": "",
+          "xpos": "PUNCT",
           "feats": {},
           "start": 16,
           "end": 17,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         }
       ],
       "difficulty": null
@@ -103,74 +129,100 @@
       "translations": {
         "en": "Can you write down the date?",
         "es": "¿Puedes apuntar la fecha?",
-        "ipa": "[ˈpwe.ðes aˈpun.taɾ la ˈfe.tʃa]"
+        "ipa": "[ˈpwe.ðes aˈpun.taɾ la ˈfe.tʃa]",
+        "ar": "هل يمكنك تدوين التاريخ؟",
+        "cs": "Můžeš zapsat datum?",
+        "da": "Kan du skrive datoen ned?",
+        "de": "Kannst du das Datum aufschreiben?",
+        "el": "Μπορείς να σημειώσεις την ημερομηνία;",
+        "fi": "Voitko kirjoittaa päivämäärän ylös?",
+        "fr": "Tu peux noter la date ?",
+        "he": "אתה יכול לרשום את התאריך?",
+        "hi": "क्या आप तारीख लिख सकते हैं?",
+        "hu": "Le tudod írni a dátumot?",
+        "id": "Bisakah kamu menuliskan tanggalnya?",
+        "it": "Puoi scrivere la data?",
+        "ja": "日付を書き留めてもらえますか。",
+        "ko": "날짜를 적어 줄 수 있나요?",
+        "nb": "Kan du skrive ned datoen?",
+        "nl": "Kun je de datum opschrijven?",
+        "pl": "Czy możesz zapisać datę?",
+        "pt": "Você pode anotar a data?",
+        "ro": "Poți nota data?",
+        "ru": "Можешь записать дату?",
+        "sv": "Kan du skriva ner datumet?",
+        "tr": "Tarihi yazabilir misin?",
+        "uk": "Можеш записати дату?",
+        "vi": "Bạn có thể ghi lại ngày không?",
+        "yue": "你可唔可以寫低日期？",
+        "zh-Hans": "你能写下日期吗？"
       },
       "tokens": [
         {
           "surface": "¿",
           "lemma": "¿",
-          "pos": "punct",
+          "pos": "PUNCT",
           "upos": "PUNCT",
-          "xpos": "",
+          "xpos": "PUNCT",
           "feats": {},
           "start": 0,
           "end": 1,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "Puedes",
-          "lemma": "puedes",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "poder",
+          "pos": "AUX",
+          "upos": "AUX",
+          "xpos": "AUX",
           "feats": {},
           "start": 1,
           "end": 7,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "apuntar",
           "lemma": "apuntar",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VERB",
           "feats": {},
           "start": 8,
           "end": 15,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "la",
-          "lemma": "la",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "el",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "DET",
           "feats": {},
           "start": 16,
           "end": 18,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "fecha",
           "lemma": "fecha",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NOUN",
           "feats": {},
           "start": 19,
           "end": 24,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "?",
           "lemma": "?",
-          "pos": "punct",
+          "pos": "PUNCT",
           "upos": "PUNCT",
-          "xpos": "",
+          "xpos": "PUNCT",
           "feats": {},
           "start": 24,
           "end": 25,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         }
       ],
       "difficulty": null
@@ -181,52 +233,78 @@
       "translations": {
         "en": "Aim at the ball.",
         "es": "Apunta al balón.",
-        "ipa": "[aˈpun.ta al baˈlon]"
+        "ipa": "[aˈpun.ta al baˈlon]",
+        "ar": "وجّه نحو الكرة.",
+        "cs": "Míř na míč.",
+        "da": "Sigt efter bolden.",
+        "de": "Ziel auf den Ball.",
+        "el": "Στόχευσε την μπάλα.",
+        "fi": "Tähtää palloon.",
+        "fr": "Vise le ballon.",
+        "he": "תכוון אל הכדור.",
+        "hi": "गेंद पर निशाना लगाओ।",
+        "hu": "A labdára célozz.",
+        "id": "Arahkan ke bola.",
+        "it": "Mira alla palla.",
+        "ja": "ボールをねらって。",
+        "ko": "공을 겨냥해.",
+        "nb": "Sikt på ballen.",
+        "nl": "Richt op de bal.",
+        "pl": "Celuj w piłkę.",
+        "pt": "Aponte para a bola.",
+        "ro": "Țintește spre minge.",
+        "ru": "Целься в мяч.",
+        "sv": "Sikta på bollen.",
+        "tr": "Topa nişan al.",
+        "uk": "Націлюйся на м'яч.",
+        "vi": "Nhắm vào quả bóng.",
+        "yue": "瞄準個波。",
+        "zh-Hans": "瞄准球。"
       },
       "tokens": [
         {
           "surface": "Apunta",
-          "lemma": "apunta",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "apuntar",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VERB",
           "feats": {},
           "start": 0,
           "end": 6,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "al",
           "lemma": "al",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "ADP",
           "feats": {},
           "start": 7,
           "end": 9,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "balón",
           "lemma": "balón",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NOUN",
           "feats": {},
           "start": 10,
           "end": 15,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": ".",
           "lemma": ".",
-          "pos": "punct",
+          "pos": "PUNCT",
           "upos": "PUNCT",
-          "xpos": "",
+          "xpos": "PUNCT",
           "feats": {},
           "start": 15,
           "end": 16,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         }
       ],
       "difficulty": null
@@ -237,63 +315,89 @@
       "translations": {
         "en": "She wrote down the address.",
         "es": "Ella apuntó la dirección.",
-        "ipa": "[ˈe.ʝa a.punˈto la di.ɾekˈsjon]"
+        "ipa": "[ˈe.ʝa a.punˈto la di.ɾekˈsjon]",
+        "ar": "دوّنت العنوان.",
+        "cs": "Zapsala si adresu.",
+        "da": "Hun skrev adressen ned.",
+        "de": "Sie schrieb die Adresse auf.",
+        "el": "Σημείωσε τη διεύθυνση.",
+        "fi": "Hän kirjoitti osoitteen ylös.",
+        "fr": "Elle a noté l'adresse.",
+        "he": "היא רשמה את הכתובת.",
+        "hi": "उसने पता लिख लिया।",
+        "hu": "Feljegyezte a címet.",
+        "id": "Dia menuliskan alamatnya.",
+        "it": "Ha segnato l'indirizzo.",
+        "ja": "彼女は住所を書き留めた。",
+        "ko": "그녀는 주소를 적었다.",
+        "nb": "Hun skrev ned adressen.",
+        "nl": "Ze schreef het adres op.",
+        "pl": "Zapisała adres.",
+        "pt": "Ela anotou o endereço.",
+        "ro": "Ea a notat adresa.",
+        "ru": "Она записала адрес.",
+        "sv": "Hon skrev ner adressen.",
+        "tr": "Adresi yazdı.",
+        "uk": "Вона записала адресу.",
+        "vi": "Cô ấy đã ghi lại địa chỉ.",
+        "yue": "佢寫低咗地址。",
+        "zh-Hans": "她记下了地址。"
       },
       "tokens": [
         {
           "surface": "Ella",
-          "lemma": "ella",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "él",
+          "pos": "PRON",
+          "upos": "PRON",
+          "xpos": "PRON",
           "feats": {},
           "start": 0,
           "end": 4,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "apuntó",
-          "lemma": "apuntó",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "apuntar",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VERB",
           "feats": {},
           "start": 5,
           "end": 11,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "la",
-          "lemma": "la",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "el",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "DET",
           "feats": {},
           "start": 12,
           "end": 14,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "dirección",
           "lemma": "dirección",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NOUN",
           "feats": {},
           "start": 15,
           "end": 24,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": ".",
           "lemma": ".",
-          "pos": "punct",
+          "pos": "PUNCT",
           "upos": "PUNCT",
-          "xpos": "",
+          "xpos": "PUNCT",
           "feats": {},
           "start": 24,
           "end": 25,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         }
       ],
       "difficulty": null
@@ -419,53 +523,209 @@
     "word_fi": "tähtää",
     "word_ja": "狙う",
     "word_es": "apuntar",
+    "ar": [
+      "أدوّن رقمك.",
+      "هل يمكنك تدوين التاريخ؟",
+      "وجّه نحو الكرة.",
+      "دوّنت العنوان."
+    ],
+    "cs": [
+      "Zapisuju si tvoje číslo.",
+      "Můžeš zapsat datum?",
+      "Míř na míč.",
+      "Zapsala si adresu."
+    ],
+    "da": [
+      "Jeg skriver dit nummer ned.",
+      "Kan du skrive datoen ned?",
+      "Sigt efter bolden.",
+      "Hun skrev adressen ned."
+    ],
+    "de": [
+      "Ich schreibe deine Nummer auf.",
+      "Kannst du das Datum aufschreiben?",
+      "Ziel auf den Ball.",
+      "Sie schrieb die Adresse auf."
+    ],
+    "el": [
+      "Σημειώνω τον αριθμό σου.",
+      "Μπορείς να σημειώσεις την ημερομηνία;",
+      "Στόχευσε την μπάλα.",
+      "Σημείωσε τη διεύθυνση."
+    ],
+    "fi": [
+      "Kirjaan numerosi ylös.",
+      "Voitko kirjoittaa päivämäärän ylös?",
+      "Tähtää palloon.",
+      "Hän kirjoitti osoitteen ylös."
+    ],
+    "fr": [
+      "Je note ton numéro.",
+      "Tu peux noter la date ?",
+      "Vise le ballon.",
+      "Elle a noté l'adresse."
+    ],
+    "he": [
+      "אני רושם את המספר שלך.",
+      "אתה יכול לרשום את התאריך?",
+      "תכוון אל הכדור.",
+      "היא רשמה את הכתובת."
+    ],
+    "hi": [
+      "मैं आपका नंबर लिख रहा हूँ।",
+      "क्या आप तारीख लिख सकते हैं?",
+      "गेंद पर निशाना लगाओ।",
+      "उसने पता लिख लिया।"
+    ],
+    "hu": [
+      "Felírom a számodat.",
+      "Le tudod írni a dátumot?",
+      "A labdára célozz.",
+      "Feljegyezte a címet."
+    ],
+    "id": [
+      "Saya menulis nomor Anda.",
+      "Bisakah kamu menuliskan tanggalnya?",
+      "Arahkan ke bola.",
+      "Dia menuliskan alamatnya."
+    ],
+    "it": [
+      "Segno il tuo numero.",
+      "Puoi scrivere la data?",
+      "Mira alla palla.",
+      "Ha segnato l'indirizzo."
+    ],
+    "ja": [
+      "あなたの番号を書き留めます。",
+      "日付を書き留めてもらえますか。",
+      "ボールをねらって。",
+      "彼女は住所を書き留めた。"
+    ],
+    "ko": [
+      "당신 번호를 적어요.",
+      "날짜를 적어 줄 수 있나요?",
+      "공을 겨냥해.",
+      "그녀는 주소를 적었다."
+    ],
+    "nb": [
+      "Jeg skriver ned nummeret ditt.",
+      "Kan du skrive ned datoen?",
+      "Sikt på ballen.",
+      "Hun skrev ned adressen."
+    ],
+    "nl": [
+      "Ik schrijf je nummer op.",
+      "Kun je de datum opschrijven?",
+      "Richt op de bal.",
+      "Ze schreef het adres op."
+    ],
+    "pl": [
+      "Zapisuję twój numer.",
+      "Czy możesz zapisać datę?",
+      "Celuj w piłkę.",
+      "Zapisała adres."
+    ],
+    "pt": [
+      "Estou anotando o seu número.",
+      "Você pode anotar a data?",
+      "Aponte para a bola.",
+      "Ela anotou o endereço."
+    ],
+    "ro": [
+      "Îți notez numărul.",
+      "Poți nota data?",
+      "Țintește spre minge.",
+      "Ea a notat adresa."
+    ],
+    "ru": [
+      "Я записываю твой номер.",
+      "Можешь записать дату?",
+      "Целься в мяч.",
+      "Она записала адрес."
+    ],
+    "sv": [
+      "Jag skriver ner ditt nummer.",
+      "Kan du skriva ner datumet?",
+      "Sikta på bollen.",
+      "Hon skrev ner adressen."
+    ],
+    "tr": [
+      "Numaranı yazıyorum.",
+      "Tarihi yazabilir misin?",
+      "Topa nişan al.",
+      "Adresi yazdı."
+    ],
+    "uk": [
+      "Я записую твій номер.",
+      "Можеш записати дату?",
+      "Націлюйся на м'яч.",
+      "Вона записала адресу."
+    ],
+    "vi": [
+      "Tôi ghi lại số của bạn.",
+      "Bạn có thể ghi lại ngày không?",
+      "Nhắm vào quả bóng.",
+      "Cô ấy đã ghi lại địa chỉ."
+    ],
+    "yue": [
+      "我寫低你個電話號碼。",
+      "你可唔可以寫低日期？",
+      "瞄準個波。",
+      "佢寫低咗地址。"
+    ],
+    "zh-Hans": [
+      "我记下你的号码。",
+      "你能写下日期吗？",
+      "瞄准球。",
+      "她记下了地址。"
+    ],
     "pos_analysis": [
       {
         "sentence": "Apunto tu número.",
         "tokens": [
           {
             "surface": "Apunto",
-            "lemma": "apunto",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "apuntar",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VERB",
             "feats": {},
             "start": 0,
             "end": 6,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "tu",
             "lemma": "tu",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "DET",
             "feats": {},
             "start": 7,
             "end": 9,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "número",
             "lemma": "número",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NOUN",
             "feats": {},
             "start": 10,
             "end": 16,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": ".",
             "lemma": ".",
-            "pos": "punct",
+            "pos": "PUNCT",
             "upos": "PUNCT",
-            "xpos": "",
+            "xpos": "PUNCT",
             "feats": {},
             "start": 16,
             "end": 17,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           }
         ],
         "difficulty_aggregated": null
@@ -476,68 +736,68 @@
           {
             "surface": "¿",
             "lemma": "¿",
-            "pos": "punct",
+            "pos": "PUNCT",
             "upos": "PUNCT",
-            "xpos": "",
+            "xpos": "PUNCT",
             "feats": {},
             "start": 0,
             "end": 1,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "Puedes",
-            "lemma": "puedes",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "poder",
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "AUX",
             "feats": {},
             "start": 1,
             "end": 7,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "apuntar",
             "lemma": "apuntar",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VERB",
             "feats": {},
             "start": 8,
             "end": 15,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "la",
-            "lemma": "la",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "el",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "DET",
             "feats": {},
             "start": 16,
             "end": 18,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "fecha",
             "lemma": "fecha",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NOUN",
             "feats": {},
             "start": 19,
             "end": 24,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "?",
             "lemma": "?",
-            "pos": "punct",
+            "pos": "PUNCT",
             "upos": "PUNCT",
-            "xpos": "",
+            "xpos": "PUNCT",
             "feats": {},
             "start": 24,
             "end": 25,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           }
         ],
         "difficulty_aggregated": null
@@ -547,47 +807,47 @@
         "tokens": [
           {
             "surface": "Apunta",
-            "lemma": "apunta",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "apuntar",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VERB",
             "feats": {},
             "start": 0,
             "end": 6,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "al",
             "lemma": "al",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "ADP",
             "feats": {},
             "start": 7,
             "end": 9,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "balón",
             "lemma": "balón",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NOUN",
             "feats": {},
             "start": 10,
             "end": 15,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": ".",
             "lemma": ".",
-            "pos": "punct",
+            "pos": "PUNCT",
             "upos": "PUNCT",
-            "xpos": "",
+            "xpos": "PUNCT",
             "feats": {},
             "start": 15,
             "end": 16,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           }
         ],
         "difficulty_aggregated": null
@@ -597,58 +857,58 @@
         "tokens": [
           {
             "surface": "Ella",
-            "lemma": "ella",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "él",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PRON",
             "feats": {},
             "start": 0,
             "end": 4,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "apuntó",
-            "lemma": "apuntó",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "apuntar",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VERB",
             "feats": {},
             "start": 5,
             "end": 11,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "la",
-            "lemma": "la",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "el",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "DET",
             "feats": {},
             "start": 12,
             "end": 14,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "dirección",
             "lemma": "dirección",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NOUN",
             "feats": {},
             "start": 15,
             "end": 24,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": ".",
             "lemma": ".",
-            "pos": "punct",
+            "pos": "PUNCT",
             "upos": "PUNCT",
-            "xpos": "",
+            "xpos": "PUNCT",
             "feats": {},
             "start": 24,
             "end": 25,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           }
         ],
         "difficulty_aggregated": null

@@ -47,63 +47,89 @@
       "translations": {
         "en": "My interlocutor speaks slowly.",
         "es": "Mi interlocutor habla despacio.",
-        "ipa": "/mi inteɾlokuˈtoɾ ˈaβla desˈpasjo/"
+        "ipa": "/mi inteɾlokuˈtoɾ ˈaβla desˈpasjo/",
+        "ar": "يَتَكَلَّمُ مُحاوِري بُطْئًا.",
+        "cs": "Můj partner mluví pomalu.",
+        "da": "Min samtalepartner taler langsomt.",
+        "de": "Mein Gesprächspartner spricht langsam.",
+        "el": "Ο συνομιλητής μου μιλάει αργά.",
+        "fi": "Keskustelukumppanini puhuu hitaasti.",
+        "fr": "Mon interlocuteur parle lentement.",
+        "he": "בן שיחי מדבר לאט.",
+        "hi": "मेरा वार्ताकार धीरे बोलता है।",
+        "hu": "A beszélgetőtársam lassan beszél.",
+        "id": "Lawan bicaraku berbicara pelan.",
+        "it": "Il mio interlocutore parla lentamente.",
+        "ja": "私の話し相手はゆっくり話します。",
+        "ko": "내 대화 상대는 천천히 말한다.",
+        "nb": "Samtalepartneren min snakker sakte.",
+        "nl": "Mijn gesprekspartner praat langzaam.",
+        "pl": "Mój rozmówca mówi powoli.",
+        "pt": "O meu interlocutor fala devagar.",
+        "ro": "Interlocutorul meu vorbește încet.",
+        "ru": "Мой собеседник говорит медленно.",
+        "sv": "Min samtalspartner pratar långsamt.",
+        "tr": "Muhatapım yavaş konuşuyor.",
+        "uk": "Мій співрозмовник говорить повільно.",
+        "vi": "Người đối thoại của tôi nói chậm.",
+        "yue": "我嘅談話對象講嘢好慢。",
+        "zh-Hans": "我的谈话对象说话很慢。"
       },
       "tokens": [
         {
           "surface": "Mi",
           "lemma": "mi",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "DET",
           "feats": {},
           "start": 0,
           "end": 2,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "interlocutor",
           "lemma": "interlocutor",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NOUN",
           "feats": {},
           "start": 3,
           "end": 15,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "habla",
-          "lemma": "habla",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "hablar",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VERB",
           "feats": {},
           "start": 16,
           "end": 21,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "despacio",
           "lemma": "despacio",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "ADV",
           "feats": {},
           "start": 22,
           "end": 30,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": ".",
           "lemma": ".",
-          "pos": "punct",
+          "pos": "PUNCT",
           "upos": "PUNCT",
-          "xpos": "",
+          "xpos": "PUNCT",
           "feats": {},
           "start": 30,
           "end": 31,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         }
       ],
       "difficulty": null
@@ -114,74 +140,100 @@
       "translations": {
         "en": "The interlocutor smiles and nods.",
         "es": "El interlocutor sonríe y asiente.",
-        "ipa": "/el inteɾlokuˈtoɾ sonˈɾi.e i aˈsjente/"
+        "ipa": "/el inteɾlokuˈtoɾ sonˈɾi.e i aˈsjente/",
+        "ar": "يَبتَسِمُ المُحاوِرُ وَيُومِئُ بِرَأسِهِ.",
+        "cs": "Interlokutor se usmívá a přikyvuje.",
+        "da": "Samtalepartneren smiler og nikker.",
+        "de": "Der Gesprächspartner lächelt und nickt.",
+        "el": "Ο συνομιλητής χαμογελά και νεύει.",
+        "fi": "Keskustelukumppani hymyilee ja nyökkää.",
+        "fr": "L’interlocuteur sourit et hoche la tête.",
+        "he": "בן השיח מחייך ומהנהן.",
+        "hi": "वार्ताकार मुस्कुराता है और सिर हिलाता है।",
+        "hu": "A beszélgetőtárs mosolyog és bólint.",
+        "id": "Lawan bicara itu tersenyum dan mengangguk.",
+        "it": "L’interlocutore sorride e annuisce.",
+        "ja": "相手は笑ってうなずきます。",
+        "ko": "그 대화 상대는 미소를 짓고 고개를 끄덕인다.",
+        "nb": "Samtalepartneren smiler og nikker.",
+        "nl": "De gesprekspartner glimlacht en knikt.",
+        "pl": "Rozmówca się uśmiecha i kiwa głową.",
+        "pt": "O interlocutor sorri e acena com a cabeça.",
+        "ro": "Interlocutorul zâmbește și încuviințează din cap.",
+        "ru": "Собеседник улыбается и кивает.",
+        "sv": "Samtalspartnern ler och nickar.",
+        "tr": "Muhatap gülümsüyor ve başını sallıyor.",
+        "uk": "Співрозмовник усміхається й киває.",
+        "vi": "Người đối thoại mỉm cười và gật đầu.",
+        "yue": "嗰個談話對象笑住點頭。",
+        "zh-Hans": "谈话对象微笑着点头。"
       },
       "tokens": [
         {
           "surface": "El",
           "lemma": "el",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "DET",
           "feats": {},
           "start": 0,
           "end": 2,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "interlocutor",
           "lemma": "interlocutor",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NOUN",
           "feats": {},
           "start": 3,
           "end": 15,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "sonríe",
-          "lemma": "sonríe",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "sonreír",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VERB",
           "feats": {},
           "start": 16,
           "end": 22,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "y",
           "lemma": "y",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "CCONJ",
+          "upos": "CCONJ",
+          "xpos": "CCONJ",
           "feats": {},
           "start": 23,
           "end": 24,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "asiente",
           "lemma": "asiente",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "ADJ",
+          "upos": "ADJ",
+          "xpos": "ADJ",
           "feats": {},
           "start": 25,
           "end": 32,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": ".",
           "lemma": ".",
-          "pos": "punct",
+          "pos": "PUNCT",
           "upos": "PUNCT",
-          "xpos": "",
+          "xpos": "PUNCT",
           "feats": {},
           "start": 32,
           "end": 33,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         }
       ],
       "difficulty": null
@@ -192,63 +244,89 @@
       "translations": {
         "en": "I’m looking for a calm interlocutor.",
         "es": "Busco un interlocutor tranquilo.",
-        "ipa": "/ˈbusko un inteɾlokuˈtoɾ tɾaŋˈkilo/"
+        "ipa": "/ˈbusko un inteɾlokuˈtoɾ tɾaŋˈkilo/",
+        "ar": "أَبحثُ عَنْ مُحاوِرٍ هادِئٍ.",
+        "cs": "Hledám klidného partnera k rozhovoru.",
+        "da": "Jeg leder efter en rolig samtalepartner.",
+        "de": "Ich suche einen ruhigen Gesprächspartner.",
+        "el": "Ψάχνω για έναν ήρεμο συνομιλητή.",
+        "fi": "Etsin rauhallista keskustelukumppania.",
+        "fr": "Je cherche un interlocuteur calme.",
+        "he": "אני מחפש בן שיח רגוע.",
+        "hi": "मैं एक शांत वार्ताकार ढूँढ रहा हूँ।",
+        "hu": "Egy nyugodt beszélgetőtársat keresek.",
+        "id": "Saya mencari lawan bicara yang tenang.",
+        "it": "Cerco un interlocutore tranquillo.",
+        "ja": "落ち着いた話し相手を探しています。",
+        "ko": "나는 차분한 대화 상대를 찾고 있다.",
+        "nb": "Jeg leter etter en rolig samtalepartner.",
+        "nl": "Ik zoek een rustige gesprekspartner.",
+        "pl": "Szukam spokojnego rozmówcy.",
+        "pt": "Procuro um interlocutor calmo.",
+        "ro": "Caut un interlocutor calm.",
+        "ru": "Я ищу спокойного собеседника.",
+        "sv": "Jag letar efter en lugn samtalspartner.",
+        "tr": "Sakin bir muhatap arıyorum.",
+        "uk": "Я шукаю спокійного співрозмовника.",
+        "vi": "Tôi đang tìm một người đối thoại điềm tĩnh.",
+        "yue": "我搵緊一個冷靜嘅談話對象。",
+        "zh-Hans": "我在找一个沉稳的谈话对象。"
       },
       "tokens": [
         {
           "surface": "Busco",
-          "lemma": "busco",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "buscar",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VERB",
           "feats": {},
           "start": 0,
           "end": 5,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "un",
-          "lemma": "un",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "uno",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "DET",
           "feats": {},
           "start": 6,
           "end": 8,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "interlocutor",
           "lemma": "interlocutor",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NOUN",
           "feats": {},
           "start": 9,
           "end": 21,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "tranquilo",
           "lemma": "tranquilo",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "ADJ",
+          "upos": "ADJ",
+          "xpos": "ADJ",
           "feats": {},
           "start": 22,
           "end": 31,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": ".",
           "lemma": ".",
-          "pos": "punct",
+          "pos": "PUNCT",
           "upos": "PUNCT",
-          "xpos": "",
+          "xpos": "PUNCT",
           "feats": {},
           "start": 31,
           "end": 32,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         }
       ],
       "difficulty": null
@@ -259,63 +337,89 @@
       "translations": {
         "en": "Our interlocutor is arriving late.",
         "es": "Nuestro interlocutor llega tarde.",
-        "ipa": "/ˈnwestɾo inteɾlokuˈtoɾ ˈʝeɣa ˈtaɾðe/"
+        "ipa": "/ˈnwestɾo inteɾlokuˈtoɾ ˈʝeɣa ˈtaɾðe/",
+        "ar": "يَصِلُ مُحاوِرُنا مُتَأَخِّرًا.",
+        "cs": "Náš partner přichází pozdě.",
+        "da": "Vores samtalepartner kommer for sent.",
+        "de": "Unser Gesprächspartner kommt zu spät.",
+        "el": "Ο συνομιλητής μας αργεί να έρθει.",
+        "fi": "Keskustelukumppanimme tulee myöhässä.",
+        "fr": "Notre interlocuteur arrive en retard.",
+        "he": "בן השיח שלנו מאחר.",
+        "hi": "हमारा वार्ताकार देर से आ रहा है।",
+        "hu": "A beszélgetőtársunk késik.",
+        "id": "Lawan bicara kami datang terlambat.",
+        "it": "Il nostro interlocutore arriva in ritardo.",
+        "ja": "私たちの話し相手は遅れて来ます。",
+        "ko": "우리 대화 상대는 늦게 온다.",
+        "nb": "Samtalepartneren vår kommer for sent.",
+        "nl": "Onze gesprekspartner komt te laat.",
+        "pl": "Nasz rozmówca się spóźnia.",
+        "pt": "O nosso interlocutor está atrasado.",
+        "ro": "Interlocutorul nostru întârzie.",
+        "ru": "Наш собеседник опаздывает.",
+        "sv": "Vår samtalspartner kommer sent.",
+        "tr": "Muhatapımız geç geliyor.",
+        "uk": "Наш співрозмовник запізнюється.",
+        "vi": "Người đối thoại của chúng tôi đến muộn.",
+        "yue": "我哋嘅談話對象遲到咗。",
+        "zh-Hans": "我们的谈话对象来晚了。"
       },
       "tokens": [
         {
           "surface": "Nuestro",
           "lemma": "nuestro",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "DET",
           "feats": {},
           "start": 0,
           "end": 7,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "interlocutor",
           "lemma": "interlocutor",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NOUN",
           "feats": {},
           "start": 8,
           "end": 20,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "llega",
-          "lemma": "llega",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "llegar",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VERB",
           "feats": {},
           "start": 21,
           "end": 26,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "tarde",
           "lemma": "tarde",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "ADV",
           "feats": {},
           "start": 27,
           "end": 32,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": ".",
           "lemma": ".",
-          "pos": "punct",
+          "pos": "PUNCT",
           "upos": "PUNCT",
-          "xpos": "",
+          "xpos": "PUNCT",
           "feats": {},
           "start": 32,
           "end": 33,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         }
       ],
       "difficulty": null
@@ -441,6 +545,162 @@
     "word_fi": "keskustelukumppani",
     "word_ja": "対話者",
     "word_es": "interlocutor",
+    "ar": [
+      "يَتَكَلَّمُ مُحاوِري بُطْئًا.",
+      "يَبتَسِمُ المُحاوِرُ وَيُومِئُ بِرَأسِهِ.",
+      "أَبحثُ عَنْ مُحاوِرٍ هادِئٍ.",
+      "يَصِلُ مُحاوِرُنا مُتَأَخِّرًا."
+    ],
+    "cs": [
+      "Můj partner mluví pomalu.",
+      "Interlokutor se usmívá a přikyvuje.",
+      "Hledám klidného partnera k rozhovoru.",
+      "Náš partner přichází pozdě."
+    ],
+    "da": [
+      "Min samtalepartner taler langsomt.",
+      "Samtalepartneren smiler og nikker.",
+      "Jeg leder efter en rolig samtalepartner.",
+      "Vores samtalepartner kommer for sent."
+    ],
+    "de": [
+      "Mein Gesprächspartner spricht langsam.",
+      "Der Gesprächspartner lächelt und nickt.",
+      "Ich suche einen ruhigen Gesprächspartner.",
+      "Unser Gesprächspartner kommt zu spät."
+    ],
+    "el": [
+      "Ο συνομιλητής μου μιλάει αργά.",
+      "Ο συνομιλητής χαμογελά και νεύει.",
+      "Ψάχνω για έναν ήρεμο συνομιλητή.",
+      "Ο συνομιλητής μας αργεί να έρθει."
+    ],
+    "fi": [
+      "Keskustelukumppanini puhuu hitaasti.",
+      "Keskustelukumppani hymyilee ja nyökkää.",
+      "Etsin rauhallista keskustelukumppania.",
+      "Keskustelukumppanimme tulee myöhässä."
+    ],
+    "fr": [
+      "Mon interlocuteur parle lentement.",
+      "L’interlocuteur sourit et hoche la tête.",
+      "Je cherche un interlocuteur calme.",
+      "Notre interlocuteur arrive en retard."
+    ],
+    "he": [
+      "בן שיחי מדבר לאט.",
+      "בן השיח מחייך ומהנהן.",
+      "אני מחפש בן שיח רגוע.",
+      "בן השיח שלנו מאחר."
+    ],
+    "hi": [
+      "मेरा वार्ताकार धीरे बोलता है।",
+      "वार्ताकार मुस्कुराता है और सिर हिलाता है।",
+      "मैं एक शांत वार्ताकार ढूँढ रहा हूँ।",
+      "हमारा वार्ताकार देर से आ रहा है।"
+    ],
+    "hu": [
+      "A beszélgetőtársam lassan beszél.",
+      "A beszélgetőtárs mosolyog és bólint.",
+      "Egy nyugodt beszélgetőtársat keresek.",
+      "A beszélgetőtársunk késik."
+    ],
+    "id": [
+      "Lawan bicaraku berbicara pelan.",
+      "Lawan bicara itu tersenyum dan mengangguk.",
+      "Saya mencari lawan bicara yang tenang.",
+      "Lawan bicara kami datang terlambat."
+    ],
+    "it": [
+      "Il mio interlocutore parla lentamente.",
+      "L’interlocutore sorride e annuisce.",
+      "Cerco un interlocutore tranquillo.",
+      "Il nostro interlocutore arriva in ritardo."
+    ],
+    "ja": [
+      "私の話し相手はゆっくり話します。",
+      "相手は笑ってうなずきます。",
+      "落ち着いた話し相手を探しています。",
+      "私たちの話し相手は遅れて来ます。"
+    ],
+    "ko": [
+      "내 대화 상대는 천천히 말한다.",
+      "그 대화 상대는 미소를 짓고 고개를 끄덕인다.",
+      "나는 차분한 대화 상대를 찾고 있다.",
+      "우리 대화 상대는 늦게 온다."
+    ],
+    "nb": [
+      "Samtalepartneren min snakker sakte.",
+      "Samtalepartneren smiler og nikker.",
+      "Jeg leter etter en rolig samtalepartner.",
+      "Samtalepartneren vår kommer for sent."
+    ],
+    "nl": [
+      "Mijn gesprekspartner praat langzaam.",
+      "De gesprekspartner glimlacht en knikt.",
+      "Ik zoek een rustige gesprekspartner.",
+      "Onze gesprekspartner komt te laat."
+    ],
+    "pl": [
+      "Mój rozmówca mówi powoli.",
+      "Rozmówca się uśmiecha i kiwa głową.",
+      "Szukam spokojnego rozmówcy.",
+      "Nasz rozmówca się spóźnia."
+    ],
+    "pt": [
+      "O meu interlocutor fala devagar.",
+      "O interlocutor sorri e acena com a cabeça.",
+      "Procuro um interlocutor calmo.",
+      "O nosso interlocutor está atrasado."
+    ],
+    "ro": [
+      "Interlocutorul meu vorbește încet.",
+      "Interlocutorul zâmbește și încuviințează din cap.",
+      "Caut un interlocutor calm.",
+      "Interlocutorul nostru întârzie."
+    ],
+    "ru": [
+      "Мой собеседник говорит медленно.",
+      "Собеседник улыбается и кивает.",
+      "Я ищу спокойного собеседника.",
+      "Наш собеседник опаздывает."
+    ],
+    "sv": [
+      "Min samtalspartner pratar långsamt.",
+      "Samtalspartnern ler och nickar.",
+      "Jag letar efter en lugn samtalspartner.",
+      "Vår samtalspartner kommer sent."
+    ],
+    "tr": [
+      "Muhatapım yavaş konuşuyor.",
+      "Muhatap gülümsüyor ve başını sallıyor.",
+      "Sakin bir muhatap arıyorum.",
+      "Muhatapımız geç geliyor."
+    ],
+    "uk": [
+      "Мій співрозмовник говорить повільно.",
+      "Співрозмовник усміхається й киває.",
+      "Я шукаю спокійного співрозмовника.",
+      "Наш співрозмовник запізнюється."
+    ],
+    "vi": [
+      "Người đối thoại của tôi nói chậm.",
+      "Người đối thoại mỉm cười và gật đầu.",
+      "Tôi đang tìm một người đối thoại điềm tĩnh.",
+      "Người đối thoại của chúng tôi đến muộn."
+    ],
+    "yue": [
+      "我嘅談話對象講嘢好慢。",
+      "嗰個談話對象笑住點頭。",
+      "我搵緊一個冷靜嘅談話對象。",
+      "我哋嘅談話對象遲到咗。"
+    ],
+    "zh-Hans": [
+      "我的谈话对象说话很慢。",
+      "谈话对象微笑着点头。",
+      "我在找一个沉稳的谈话对象。",
+      "我们的谈话对象来晚了。"
+    ],
     "pos_analysis": [
       {
         "sentence": "Mi interlocutor habla despacio.",
@@ -448,57 +708,57 @@
           {
             "surface": "Mi",
             "lemma": "mi",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "DET",
             "feats": {},
             "start": 0,
             "end": 2,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "interlocutor",
             "lemma": "interlocutor",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NOUN",
             "feats": {},
             "start": 3,
             "end": 15,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "habla",
-            "lemma": "habla",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "hablar",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VERB",
             "feats": {},
             "start": 16,
             "end": 21,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "despacio",
             "lemma": "despacio",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
             "feats": {},
             "start": 22,
             "end": 30,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": ".",
             "lemma": ".",
-            "pos": "punct",
+            "pos": "PUNCT",
             "upos": "PUNCT",
-            "xpos": "",
+            "xpos": "PUNCT",
             "feats": {},
             "start": 30,
             "end": 31,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           }
         ],
         "difficulty_aggregated": null
@@ -509,68 +769,68 @@
           {
             "surface": "El",
             "lemma": "el",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "DET",
             "feats": {},
             "start": 0,
             "end": 2,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "interlocutor",
             "lemma": "interlocutor",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NOUN",
             "feats": {},
             "start": 3,
             "end": 15,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "sonríe",
-            "lemma": "sonríe",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "sonreír",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VERB",
             "feats": {},
             "start": 16,
             "end": 22,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "y",
             "lemma": "y",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "CCONJ",
+            "upos": "CCONJ",
+            "xpos": "CCONJ",
             "feats": {},
             "start": 23,
             "end": 24,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "asiente",
             "lemma": "asiente",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "ADJ",
+            "upos": "ADJ",
+            "xpos": "ADJ",
             "feats": {},
             "start": 25,
             "end": 32,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": ".",
             "lemma": ".",
-            "pos": "punct",
+            "pos": "PUNCT",
             "upos": "PUNCT",
-            "xpos": "",
+            "xpos": "PUNCT",
             "feats": {},
             "start": 32,
             "end": 33,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           }
         ],
         "difficulty_aggregated": null
@@ -580,58 +840,58 @@
         "tokens": [
           {
             "surface": "Busco",
-            "lemma": "busco",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "buscar",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VERB",
             "feats": {},
             "start": 0,
             "end": 5,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "un",
-            "lemma": "un",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "uno",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "DET",
             "feats": {},
             "start": 6,
             "end": 8,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "interlocutor",
             "lemma": "interlocutor",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NOUN",
             "feats": {},
             "start": 9,
             "end": 21,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "tranquilo",
             "lemma": "tranquilo",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "ADJ",
+            "upos": "ADJ",
+            "xpos": "ADJ",
             "feats": {},
             "start": 22,
             "end": 31,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": ".",
             "lemma": ".",
-            "pos": "punct",
+            "pos": "PUNCT",
             "upos": "PUNCT",
-            "xpos": "",
+            "xpos": "PUNCT",
             "feats": {},
             "start": 31,
             "end": 32,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           }
         ],
         "difficulty_aggregated": null
@@ -642,57 +902,57 @@
           {
             "surface": "Nuestro",
             "lemma": "nuestro",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "DET",
             "feats": {},
             "start": 0,
             "end": 7,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "interlocutor",
             "lemma": "interlocutor",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NOUN",
             "feats": {},
             "start": 8,
             "end": 20,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "llega",
-            "lemma": "llega",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "llegar",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VERB",
             "feats": {},
             "start": 21,
             "end": 26,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "tarde",
             "lemma": "tarde",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
             "feats": {},
             "start": 27,
             "end": 32,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": ".",
             "lemma": ".",
-            "pos": "punct",
+            "pos": "PUNCT",
             "upos": "PUNCT",
-            "xpos": "",
+            "xpos": "PUNCT",
             "feats": {},
             "start": 32,
             "end": 33,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           }
         ],
         "difficulty_aggregated": null

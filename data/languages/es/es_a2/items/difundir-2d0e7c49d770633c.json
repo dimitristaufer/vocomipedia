@@ -47,74 +47,100 @@
       "translations": {
         "en": "I'm going to spread the news.",
         "es": "Voy a difundir la noticia.",
-        "ipa": "/boj a difunˈdiɾ la noˈtiðja/"
+        "ipa": "/boj a difunˈdiɾ la noˈtiðja/",
+        "ar": "سأذيع الخبر.",
+        "cs": "Chystám se šířit tu zprávu.",
+        "da": "Jeg vil sprede nyheden.",
+        "de": "Ich werde die Nachricht verbreiten.",
+        "el": "Θα διαδώσω την είδηση.",
+        "fi": "Aion levittää uutisen.",
+        "fr": "Je vais faire circuler la nouvelle.",
+        "he": "אני הולך להפיץ את החדשות.",
+        "hi": "मैं यह खबर फैलाने वाला हूँ।",
+        "hu": "El fogom terjeszteni a hírt.",
+        "id": "Saya akan menyebarkan berita itu.",
+        "it": "Diffonderò la notizia.",
+        "ja": "私はそのニュースを広めます。",
+        "ko": "나는 그 소식을 퍼뜨릴 거야.",
+        "nb": "Jeg skal spre nyheten.",
+        "nl": "Ik ga het nieuws verspreiden.",
+        "pl": "Zamierzam rozpowszechnić tę wiadomość.",
+        "pt": "Vou divulgar a notícia.",
+        "ro": "O să răspândesc vestea.",
+        "ru": "Я собираюсь распространить новость.",
+        "sv": "Jag ska sprida nyheten.",
+        "tr": "Haberi yayacağım.",
+        "uk": "Я збираюся поширити новину.",
+        "vi": "Tôi sẽ lan truyền tin này.",
+        "yue": "我會傳開呢個消息。",
+        "zh-Hans": "我要把这个消息传播出去。"
       },
       "tokens": [
         {
           "surface": "Voy",
-          "lemma": "voy",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "ir",
+          "pos": "AUX",
+          "upos": "AUX",
+          "xpos": "AUX",
           "feats": {},
           "start": 0,
           "end": 3,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "a",
           "lemma": "a",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "ADP",
           "feats": {},
           "start": 4,
           "end": 5,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "difundir",
           "lemma": "difundir",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VERB",
           "feats": {},
           "start": 6,
           "end": 14,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "la",
-          "lemma": "la",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "el",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "DET",
           "feats": {},
           "start": 15,
           "end": 17,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "noticia",
           "lemma": "noticia",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NOUN",
           "feats": {},
           "start": 18,
           "end": 25,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": ".",
           "lemma": ".",
-          "pos": "punct",
+          "pos": "PUNCT",
           "upos": "PUNCT",
-          "xpos": "",
+          "xpos": "PUNCT",
           "feats": {},
           "start": 25,
           "end": 26,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         }
       ],
       "difficulty": null
@@ -125,63 +151,89 @@
       "translations": {
         "en": "I don't want to spread rumors.",
         "es": "No quiero difundir rumores.",
-        "ipa": "/no ˈkjeɾo difunˈdiɾ ruˈmoɾes/"
+        "ipa": "/no ˈkjeɾo difunˈdiɾ ruˈmoɾes/",
+        "ar": "لا أريد نشر الشائعات.",
+        "cs": "Nechci šířit fámy.",
+        "da": "Jeg vil ikke sprede rygter.",
+        "de": "Ich will keine Gerüchte verbreiten.",
+        "el": "Δεν θέλω να διαδίδω φήμες.",
+        "fi": "En halua levittää huhuja.",
+        "fr": "Je ne veux pas répandre des rumeurs.",
+        "he": "אני לא רוצה להפיץ שמועות.",
+        "hi": "मैं अफ़वाहें नहीं फैलाना चाहता।",
+        "hu": "Nem akarok pletykákat terjeszteni.",
+        "id": "Saya tidak mau menyebarkan rumor.",
+        "it": "Non voglio diffondere voci.",
+        "ja": "うわさを広めたくありません。",
+        "ko": "나는 소문을 퍼뜨리고 싶지 않아.",
+        "nb": "Jeg vil ikke spre rykter.",
+        "nl": "Ik wil geen geruchten verspreiden.",
+        "pl": "Nie chcę szerzyć plotek.",
+        "pt": "Não quero espalhar boatos.",
+        "ro": "Nu vreau să răspândesc zvonuri.",
+        "ru": "Я не хочу распространять слухи.",
+        "sv": "Jag vill inte sprida rykten.",
+        "tr": "Dedikoduları yaymak istemiyorum.",
+        "uk": "Я не хочу поширювати чутки.",
+        "vi": "Tôi không muốn lan truyền tin đồn.",
+        "yue": "我唔想傳謠言。",
+        "zh-Hans": "我不想传播谣言。"
       },
       "tokens": [
         {
           "surface": "No",
           "lemma": "no",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "ADV",
           "feats": {},
           "start": 0,
           "end": 2,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "quiero",
-          "lemma": "quiero",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "querer",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VERB",
           "feats": {},
           "start": 3,
           "end": 9,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "difundir",
           "lemma": "difundir",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VERB",
           "feats": {},
           "start": 10,
           "end": 18,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "rumores",
-          "lemma": "rumores",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "rumor",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NOUN",
           "feats": {},
           "start": 19,
           "end": 26,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": ".",
           "lemma": ".",
-          "pos": "punct",
+          "pos": "PUNCT",
           "upos": "PUNCT",
-          "xpos": "",
+          "xpos": "PUNCT",
           "feats": {},
           "start": 26,
           "end": 27,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         }
       ],
       "difficulty": null
@@ -192,85 +244,111 @@
       "translations": {
         "en": "The radio can spread new music.",
         "es": "La radio puede difundir música nueva.",
-        "ipa": "/la ˈraðjo ˈpweðe difunˈdiɾ ˈmusika ˈnweβa/"
+        "ipa": "/la ˈraðjo ˈpweðe difunˈdiɾ ˈmusika ˈnweβa/",
+        "ar": "يمكن للراديو أن يبث موسيقى جديدة.",
+        "cs": "Rádio může šířit novou hudbu.",
+        "da": "Radioen kan sprede ny musik.",
+        "de": "Das Radio kann neue Musik verbreiten.",
+        "el": "Το ραδιόφωνο μπορεί να μεταδίδει νέα μουσική.",
+        "fi": "Radio voi levittää uutta musiikkia.",
+        "fr": "La radio peut diffuser de la nouvelle musique.",
+        "he": "הרדיו יכול להפיץ מוזיקה חדשה.",
+        "hi": "रेडियो नई संगीत फैला सकता है।",
+        "hu": "A rádió új zenét tud terjeszteni.",
+        "id": "Radio bisa menyebarkan musik baru.",
+        "it": "La radio può diffondere nuova musica.",
+        "ja": "ラジオは新しい音楽を広めることができます。",
+        "ko": "라디오는 새로운 음악을 퍼뜨릴 수 있어.",
+        "nb": "Radioen kan spre ny musikk.",
+        "nl": "De radio kan nieuwe muziek verspreiden.",
+        "pl": "Radio może rozpowszechniać nową muzykę.",
+        "pt": "O rádio pode divulgar música nova.",
+        "ro": "Radioul poate difuza muzică nouă.",
+        "ru": "Радио может распространять новую музыку.",
+        "sv": "Radion kan sprida ny musik.",
+        "tr": "Radyo yeni müzik yayabilir.",
+        "uk": "Радіо може поширювати нову музику.",
+        "vi": "Đài phát thanh có thể phát tán nhạc mới.",
+        "yue": "電台可以傳播新音樂。",
+        "zh-Hans": "收音机可以传播新音乐。"
       },
       "tokens": [
         {
           "surface": "La",
-          "lemma": "la",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "el",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "DET",
           "feats": {},
           "start": 0,
           "end": 2,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "radio",
           "lemma": "radio",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NOUN",
           "feats": {},
           "start": 3,
           "end": 8,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "puede",
-          "lemma": "puede",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "poder",
+          "pos": "AUX",
+          "upos": "AUX",
+          "xpos": "AUX",
           "feats": {},
           "start": 9,
           "end": 14,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "difundir",
           "lemma": "difundir",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VERB",
           "feats": {},
           "start": 15,
           "end": 23,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "música",
           "lemma": "música",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NOUN",
           "feats": {},
           "start": 24,
           "end": 30,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "nueva",
-          "lemma": "nueva",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "nuevo",
+          "pos": "ADJ",
+          "upos": "ADJ",
+          "xpos": "ADJ",
           "feats": {},
           "start": 31,
           "end": 36,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": ".",
           "lemma": ".",
-          "pos": "punct",
+          "pos": "PUNCT",
           "upos": "PUNCT",
-          "xpos": "",
+          "xpos": "PUNCT",
           "feats": {},
           "start": 36,
           "end": 37,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         }
       ],
       "difficulty": null
@@ -281,85 +359,111 @@
       "translations": {
         "en": "The school wants to spread the notice.",
         "es": "La escuela quiere difundir el aviso.",
-        "ipa": "/la esˈkwela ˈkjeɾe difunˈdiɾ el aˈβiso/"
+        "ipa": "/la esˈkwela ˈkjeɾe difunˈdiɾ el aˈβiso/",
+        "ar": "تريد المدرسة نشر الإشعار.",
+        "cs": "Škola chce rozšířit oznámení.",
+        "da": "Skolen vil sprede beskeden.",
+        "de": "Die Schule will die Mitteilung verbreiten.",
+        "el": "Το σχολείο θέλει να ανακοινώσει την ειδοποίηση.",
+        "fi": "Koulu haluaa tiedottaa ilmoituksesta.",
+        "fr": "L'école veut diffuser l'avis.",
+        "he": "בית הספר רוצה להפיץ את ההודעה.",
+        "hi": "स्कूल सूचना फैलाना चाहता है।",
+        "hu": "Az iskola szeretné terjeszteni az értesítést.",
+        "id": "Sekolah ingin menyebarkan pengumuman itu.",
+        "it": "La scuola vuole diffondere l'avviso.",
+        "ja": "学校はお知らせを広めたいです。",
+        "ko": "학교는 안내문을 퍼뜨리고 싶어 해.",
+        "nb": "Skolen vil spre beskjeden.",
+        "nl": "De school wil de mededeling verspreiden.",
+        "pl": "Szkoła chce rozpowszechnić ogłoszenie.",
+        "pt": "A escola quer divulgar o aviso.",
+        "ro": "Școala vrea să difuzeze anunțul.",
+        "ru": "Школа хочет распространить объявление.",
+        "sv": "Skolan vill sprida meddelandet.",
+        "tr": "Okul duyuruyu yaymak istiyor.",
+        "uk": "Школа хоче поширити оголошення.",
+        "vi": "Trường muốn phổ biến thông báo.",
+        "yue": "學校想傳開呢個通告。",
+        "zh-Hans": "学校想传播这个通知。"
       },
       "tokens": [
         {
           "surface": "La",
-          "lemma": "la",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "el",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "DET",
           "feats": {},
           "start": 0,
           "end": 2,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "escuela",
           "lemma": "escuela",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NOUN",
           "feats": {},
           "start": 3,
           "end": 10,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "quiere",
-          "lemma": "quiere",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "querer",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VERB",
           "feats": {},
           "start": 11,
           "end": 17,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "difundir",
           "lemma": "difundir",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VERB",
           "feats": {},
           "start": 18,
           "end": 26,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "el",
           "lemma": "el",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "DET",
           "feats": {},
           "start": 27,
           "end": 29,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "aviso",
           "lemma": "aviso",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NOUN",
           "feats": {},
           "start": 30,
           "end": 35,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": ".",
           "lemma": ".",
-          "pos": "punct",
+          "pos": "PUNCT",
           "upos": "PUNCT",
-          "xpos": "",
+          "xpos": "PUNCT",
           "feats": {},
           "start": 35,
           "end": 36,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         }
       ],
       "difficulty": null
@@ -485,75 +589,231 @@
     "word_fi": "levittää",
     "word_ja": "広める",
     "word_es": "difundir",
+    "ar": [
+      "سأذيع الخبر.",
+      "لا أريد نشر الشائعات.",
+      "يمكن للراديو أن يبث موسيقى جديدة.",
+      "تريد المدرسة نشر الإشعار."
+    ],
+    "cs": [
+      "Chystám se šířit tu zprávu.",
+      "Nechci šířit fámy.",
+      "Rádio může šířit novou hudbu.",
+      "Škola chce rozšířit oznámení."
+    ],
+    "da": [
+      "Jeg vil sprede nyheden.",
+      "Jeg vil ikke sprede rygter.",
+      "Radioen kan sprede ny musik.",
+      "Skolen vil sprede beskeden."
+    ],
+    "de": [
+      "Ich werde die Nachricht verbreiten.",
+      "Ich will keine Gerüchte verbreiten.",
+      "Das Radio kann neue Musik verbreiten.",
+      "Die Schule will die Mitteilung verbreiten."
+    ],
+    "el": [
+      "Θα διαδώσω την είδηση.",
+      "Δεν θέλω να διαδίδω φήμες.",
+      "Το ραδιόφωνο μπορεί να μεταδίδει νέα μουσική.",
+      "Το σχολείο θέλει να ανακοινώσει την ειδοποίηση."
+    ],
+    "fi": [
+      "Aion levittää uutisen.",
+      "En halua levittää huhuja.",
+      "Radio voi levittää uutta musiikkia.",
+      "Koulu haluaa tiedottaa ilmoituksesta."
+    ],
+    "fr": [
+      "Je vais faire circuler la nouvelle.",
+      "Je ne veux pas répandre des rumeurs.",
+      "La radio peut diffuser de la nouvelle musique.",
+      "L'école veut diffuser l'avis."
+    ],
+    "he": [
+      "אני הולך להפיץ את החדשות.",
+      "אני לא רוצה להפיץ שמועות.",
+      "הרדיו יכול להפיץ מוזיקה חדשה.",
+      "בית הספר רוצה להפיץ את ההודעה."
+    ],
+    "hi": [
+      "मैं यह खबर फैलाने वाला हूँ।",
+      "मैं अफ़वाहें नहीं फैलाना चाहता।",
+      "रेडियो नई संगीत फैला सकता है।",
+      "स्कूल सूचना फैलाना चाहता है।"
+    ],
+    "hu": [
+      "El fogom terjeszteni a hírt.",
+      "Nem akarok pletykákat terjeszteni.",
+      "A rádió új zenét tud terjeszteni.",
+      "Az iskola szeretné terjeszteni az értesítést."
+    ],
+    "id": [
+      "Saya akan menyebarkan berita itu.",
+      "Saya tidak mau menyebarkan rumor.",
+      "Radio bisa menyebarkan musik baru.",
+      "Sekolah ingin menyebarkan pengumuman itu."
+    ],
+    "it": [
+      "Diffonderò la notizia.",
+      "Non voglio diffondere voci.",
+      "La radio può diffondere nuova musica.",
+      "La scuola vuole diffondere l'avviso."
+    ],
+    "ja": [
+      "私はそのニュースを広めます。",
+      "うわさを広めたくありません。",
+      "ラジオは新しい音楽を広めることができます。",
+      "学校はお知らせを広めたいです。"
+    ],
+    "ko": [
+      "나는 그 소식을 퍼뜨릴 거야.",
+      "나는 소문을 퍼뜨리고 싶지 않아.",
+      "라디오는 새로운 음악을 퍼뜨릴 수 있어.",
+      "학교는 안내문을 퍼뜨리고 싶어 해."
+    ],
+    "nb": [
+      "Jeg skal spre nyheten.",
+      "Jeg vil ikke spre rykter.",
+      "Radioen kan spre ny musikk.",
+      "Skolen vil spre beskjeden."
+    ],
+    "nl": [
+      "Ik ga het nieuws verspreiden.",
+      "Ik wil geen geruchten verspreiden.",
+      "De radio kan nieuwe muziek verspreiden.",
+      "De school wil de mededeling verspreiden."
+    ],
+    "pl": [
+      "Zamierzam rozpowszechnić tę wiadomość.",
+      "Nie chcę szerzyć plotek.",
+      "Radio może rozpowszechniać nową muzykę.",
+      "Szkoła chce rozpowszechnić ogłoszenie."
+    ],
+    "pt": [
+      "Vou divulgar a notícia.",
+      "Não quero espalhar boatos.",
+      "O rádio pode divulgar música nova.",
+      "A escola quer divulgar o aviso."
+    ],
+    "ro": [
+      "O să răspândesc vestea.",
+      "Nu vreau să răspândesc zvonuri.",
+      "Radioul poate difuza muzică nouă.",
+      "Școala vrea să difuzeze anunțul."
+    ],
+    "ru": [
+      "Я собираюсь распространить новость.",
+      "Я не хочу распространять слухи.",
+      "Радио может распространять новую музыку.",
+      "Школа хочет распространить объявление."
+    ],
+    "sv": [
+      "Jag ska sprida nyheten.",
+      "Jag vill inte sprida rykten.",
+      "Radion kan sprida ny musik.",
+      "Skolan vill sprida meddelandet."
+    ],
+    "tr": [
+      "Haberi yayacağım.",
+      "Dedikoduları yaymak istemiyorum.",
+      "Radyo yeni müzik yayabilir.",
+      "Okul duyuruyu yaymak istiyor."
+    ],
+    "uk": [
+      "Я збираюся поширити новину.",
+      "Я не хочу поширювати чутки.",
+      "Радіо може поширювати нову музику.",
+      "Школа хоче поширити оголошення."
+    ],
+    "vi": [
+      "Tôi sẽ lan truyền tin này.",
+      "Tôi không muốn lan truyền tin đồn.",
+      "Đài phát thanh có thể phát tán nhạc mới.",
+      "Trường muốn phổ biến thông báo."
+    ],
+    "yue": [
+      "我會傳開呢個消息。",
+      "我唔想傳謠言。",
+      "電台可以傳播新音樂。",
+      "學校想傳開呢個通告。"
+    ],
+    "zh-Hans": [
+      "我要把这个消息传播出去。",
+      "我不想传播谣言。",
+      "收音机可以传播新音乐。",
+      "学校想传播这个通知。"
+    ],
     "pos_analysis": [
       {
         "sentence": "Voy a difundir la noticia.",
         "tokens": [
           {
             "surface": "Voy",
-            "lemma": "voy",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "ir",
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "AUX",
             "feats": {},
             "start": 0,
             "end": 3,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "a",
             "lemma": "a",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "ADP",
             "feats": {},
             "start": 4,
             "end": 5,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "difundir",
             "lemma": "difundir",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VERB",
             "feats": {},
             "start": 6,
             "end": 14,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "la",
-            "lemma": "la",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "el",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "DET",
             "feats": {},
             "start": 15,
             "end": 17,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "noticia",
             "lemma": "noticia",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NOUN",
             "feats": {},
             "start": 18,
             "end": 25,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": ".",
             "lemma": ".",
-            "pos": "punct",
+            "pos": "PUNCT",
             "upos": "PUNCT",
-            "xpos": "",
+            "xpos": "PUNCT",
             "feats": {},
             "start": 25,
             "end": 26,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           }
         ],
         "difficulty_aggregated": null
@@ -564,57 +824,57 @@
           {
             "surface": "No",
             "lemma": "no",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
             "feats": {},
             "start": 0,
             "end": 2,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "quiero",
-            "lemma": "quiero",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "querer",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VERB",
             "feats": {},
             "start": 3,
             "end": 9,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "difundir",
             "lemma": "difundir",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VERB",
             "feats": {},
             "start": 10,
             "end": 18,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "rumores",
-            "lemma": "rumores",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "rumor",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NOUN",
             "feats": {},
             "start": 19,
             "end": 26,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": ".",
             "lemma": ".",
-            "pos": "punct",
+            "pos": "PUNCT",
             "upos": "PUNCT",
-            "xpos": "",
+            "xpos": "PUNCT",
             "feats": {},
             "start": 26,
             "end": 27,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           }
         ],
         "difficulty_aggregated": null
@@ -624,80 +884,80 @@
         "tokens": [
           {
             "surface": "La",
-            "lemma": "la",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "el",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "DET",
             "feats": {},
             "start": 0,
             "end": 2,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "radio",
             "lemma": "radio",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NOUN",
             "feats": {},
             "start": 3,
             "end": 8,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "puede",
-            "lemma": "puede",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "poder",
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "AUX",
             "feats": {},
             "start": 9,
             "end": 14,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "difundir",
             "lemma": "difundir",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VERB",
             "feats": {},
             "start": 15,
             "end": 23,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "música",
             "lemma": "música",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NOUN",
             "feats": {},
             "start": 24,
             "end": 30,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "nueva",
-            "lemma": "nueva",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "nuevo",
+            "pos": "ADJ",
+            "upos": "ADJ",
+            "xpos": "ADJ",
             "feats": {},
             "start": 31,
             "end": 36,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": ".",
             "lemma": ".",
-            "pos": "punct",
+            "pos": "PUNCT",
             "upos": "PUNCT",
-            "xpos": "",
+            "xpos": "PUNCT",
             "feats": {},
             "start": 36,
             "end": 37,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           }
         ],
         "difficulty_aggregated": null
@@ -707,80 +967,80 @@
         "tokens": [
           {
             "surface": "La",
-            "lemma": "la",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "el",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "DET",
             "feats": {},
             "start": 0,
             "end": 2,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "escuela",
             "lemma": "escuela",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NOUN",
             "feats": {},
             "start": 3,
             "end": 10,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "quiere",
-            "lemma": "quiere",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "querer",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VERB",
             "feats": {},
             "start": 11,
             "end": 17,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "difundir",
             "lemma": "difundir",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VERB",
             "feats": {},
             "start": 18,
             "end": 26,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "el",
             "lemma": "el",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "DET",
             "feats": {},
             "start": 27,
             "end": 29,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "aviso",
             "lemma": "aviso",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NOUN",
             "feats": {},
             "start": 30,
             "end": 35,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": ".",
             "lemma": ".",
-            "pos": "punct",
+            "pos": "PUNCT",
             "upos": "PUNCT",
-            "xpos": "",
+            "xpos": "PUNCT",
             "feats": {},
             "start": 35,
             "end": 36,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           }
         ],
         "difficulty_aggregated": null

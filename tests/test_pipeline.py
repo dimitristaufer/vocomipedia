@@ -72,7 +72,7 @@ DECKSEARCH_SPEC.loader.exec_module(decksearch_prebuilt_index)
 import common
 import apply_pulled_items
 import wiki_visible_fields
-from vocomipedia_nlp import analyze_sentence
+from vocomipedia_nlp import analyze_sentence, ensure_real_analyzer_available, sync_item_pos_analysis
 import vocomipedia_nlp.base as nlp_base
 
 
@@ -504,6 +504,44 @@ class VocomipediaPipelineTests(unittest.TestCase):
         errors = common.validate_item(item, require_release_ready=True, release_allowed_licenses={"Vocomi-created"})
         self.assertTrue(any("fallback Korean POS analyzer" in error for error in errors), errors)
         self.assertTrue(any("unknown Korean POS X" in error for error in errors), errors)
+
+    def test_auto_pos_analysis_normalizes_known_korean_legacy_x_tokens(self) -> None:
+        item = {
+            "schema_version": "vocomipedia-item-2",
+            "id": "ko_1:test",
+            "pack_code": "ko_1",
+            "language": "ko",
+            "entry_id": "다섯째",
+            "headword": "다섯째",
+            "reading": "",
+            "sentences": [
+                {
+                    "target": "이 단어 '보내다'는 'send'라는 뜻이에요.",
+                    "translations": {"en": "This word means send."},
+                    "tokens": [
+                        {"surface": "'send'", "lemma": "send", "pos": "X", "surface_en": "send", "furigana": "[sɛnd]"}
+                    ],
+                },
+                {
+                    "target": "저는 다섯째 줄이에요.",
+                    "translations": {"en": "I am in the fifth row."},
+                    "tokens": [
+                        {"surface": "째", "lemma": "째", "pos": "X", "surface_en": "th", "explanation": "ordinal suffix"}
+                    ],
+                },
+            ],
+            "media": {"license": "Vocomi-created", "review_status": "approved"},
+            "review": {"status": "approved"},
+            "provenance": {"license_status": "generated_by_vocomi"},
+            "app_payload": {},
+        }
+        nlp_base.sync_item_pos_analysis(item, regenerate=True)
+        self.assertEqual(item["sentences"][0]["tokens"][0]["upos"], "NOUN")
+        self.assertEqual(item["sentences"][0]["tokens"][0]["xpos"], "SL")
+        self.assertEqual(item["sentences"][1]["tokens"][0]["upos"], "PART")
+        self.assertEqual(item["sentences"][1]["tokens"][0]["xpos"], "XSN")
+        errors = common.validate_item(item, require_release_ready=True, release_allowed_licenses={"Vocomi-created"})
+        self.assertFalse(any("unknown Korean POS X" in error for error in errors), errors)
 
     def test_vps_partial_pack_deploy_preserves_existing_catalog(self) -> None:
         script = deploy_packs_to_vps.remote_deploy_script("/srv/vocomi-packs", "test-release", 3)
@@ -1222,6 +1260,244 @@ packs:
             }
             errors = common.validate_item(item, strict_media_root=media_root)
             self.assertIn("missing media file: comic.png", errors)
+
+    def test_strict_media_validation_checks_app_image_not_import_source(self) -> None:
+        with tempfile.TemporaryDirectory() as td:
+            media_root = Path(td)
+            (media_root / "comic_test__v2_blank.png").write_bytes(b"not really a png")
+            item = {
+                "schema_version": "vocomipedia-item-2",
+                "id": "de_a1:test",
+                "pack_code": "de_a1",
+                "language": "de",
+                "entry_id": "Test__v2",
+                "headword": "Test",
+                "reading": "",
+                "label": "",
+                "level": "A1",
+                "part_of_speech": ["Noun"],
+                "glosses": {"en": "test"},
+                "sentences": [],
+                "media": {
+                    "image_filename": "comic_test__v2_blank.png",
+                    "source_image_filename": "comic_Test_blank.png",
+                    "license": "Vocomi-created",
+                    "review_status": "approved",
+                },
+                "review": {"status": "approved"},
+                "provenance": {},
+                "app_payload": {},
+            }
+            errors = common.validate_item(item, strict_media_root=media_root)
+            self.assertNotIn("missing media file: comic_Test_blank.png", errors)
+            self.assertNotIn("missing media file: comic_test__v2_blank.png", errors)
+
+    def test_copy_item_media_resolves_source_case_but_writes_canonical_name(self) -> None:
+        with tempfile.TemporaryDirectory() as td:
+            tmp = Path(td)
+            source_root = tmp / "source"
+            dest_root = tmp / "dest"
+            source_root.mkdir()
+            (source_root / "Comic_Test_blank.png").write_bytes(b"not really a png")
+            item = {
+                "media": {
+                    "image_filename": "comic_test_blank.png",
+                    "source_image_filename": "comic_test_blank.png",
+                }
+            }
+
+            copied = common.copy_item_media(item, [source_root], dest_root)
+
+            self.assertEqual(copied, dest_root / "comic_test_blank.png")
+            self.assertTrue(common.path_exists_exact(dest_root, "comic_test_blank.png"))
+            self.assertFalse(common.path_exists_exact(dest_root, "Comic_Test_blank.png"))
+
+    def test_auto_pos_analysis_preserves_legacy_tokens_when_only_fallback_is_available(self) -> None:
+        nlp_base.analyzer_for_language.cache_clear()
+        item = {
+            "language": "de",
+            "app_payload": {},
+            "sentences": [
+                {
+                    "target": "Heute Abend.",
+                    "reading": "/ˈhɔʏtə ˈaːbn̩t/",
+                    "tokens": [
+                        {
+                            "surface": "Heute",
+                            "surface_en": "today",
+                            "furigana": "[ˈhɔʏ̯tə]",
+                            "pos": "ADV",
+                            "lemma": "heute",
+                            "explanation": "Temporal adverb.",
+                            "difficulty": 7,
+                            "is_main_word": False,
+                        },
+                        {
+                            "surface": "Abend.",
+                            "surface_en": "evening",
+                            "furigana": "[ˈaːbn̩t]",
+                            "pos": "NOUN",
+                            "lemma": "Abend",
+                            "explanation": "Common noun.",
+                            "difficulty": 7,
+                            "is_main_word": True,
+                        },
+                    ],
+                    "difficulty": 7,
+                }
+            ],
+        }
+
+        try:
+            with mock.patch.object(nlp_base, "SpacyAnalyzer", side_effect=RuntimeError("missing spacy")):
+                sync_item_pos_analysis(item, regenerate=True)
+        finally:
+            nlp_base.analyzer_for_language.cache_clear()
+
+        tokens = item["sentences"][0]["tokens"]
+        self.assertEqual(tokens[0]["surface_en"], "today")
+        self.assertEqual(tokens[0]["furigana"], "[ˈhɔʏ̯tə]")
+        self.assertEqual(tokens[0]["pos"], "ADV")
+        self.assertNotEqual(tokens[0].get("upos"), "X")
+        self.assertEqual(item["app_payload"]["pos_analysis"][0]["tokens"][0]["surface_en"], "today")
+
+    def test_auto_pos_analysis_preserves_rich_legacy_tokens_when_surfaces_do_not_match(self) -> None:
+        nlp_base.analyzer_for_language.cache_clear()
+        item = {
+            "language": "de",
+            "app_payload": {},
+            "sentences": [
+                {
+                    "target": "Morgen Abend.",
+                    "tokens": [
+                        {
+                            "surface": "Heute",
+                            "surface_en": "today",
+                            "furigana": "[ˈhɔʏ̯tə]",
+                            "pos": "ADV",
+                        },
+                        {
+                            "surface": "Abend.",
+                            "surface_en": "evening",
+                            "furigana": "[ˈaːbn̩t]",
+                            "pos": "NOUN",
+                        },
+                    ],
+                }
+            ],
+        }
+
+        try:
+            with mock.patch.object(nlp_base, "SpacyAnalyzer", side_effect=RuntimeError("missing spacy")):
+                sync_item_pos_analysis(item, regenerate=True)
+        finally:
+            nlp_base.analyzer_for_language.cache_clear()
+
+        tokens = item["sentences"][0]["tokens"]
+        self.assertEqual(tokens[0]["surface"], "Heute")
+        self.assertEqual(tokens[0]["surface_en"], "today")
+        self.assertEqual(item["app_payload"]["pos_analysis"][0]["tokens"][0]["surface"], "Heute")
+
+    def test_auto_pos_analysis_rejects_fallback_when_no_real_supported_analyzer_is_installed(self) -> None:
+        nlp_base.analyzer_for_language.cache_clear()
+        item = {
+            "language": "de",
+            "app_payload": {},
+            "sentences": [{"target": "Heute Abend.", "tokens": []}],
+        }
+
+        try:
+            with mock.patch.object(nlp_base, "SpacyAnalyzer", side_effect=RuntimeError("missing spacy")):
+                with self.assertRaises(nlp_base.RequiredAnalyzerUnavailable):
+                    sync_item_pos_analysis(item, regenerate=True)
+        finally:
+            nlp_base.analyzer_for_language.cache_clear()
+
+    def test_auto_pos_analysis_preflight_rejects_missing_real_analyzer(self) -> None:
+        nlp_base.analyzer_for_language.cache_clear()
+        try:
+            with mock.patch.object(nlp_base, "SpacyAnalyzer", side_effect=RuntimeError("missing spacy")):
+                with self.assertRaises(nlp_base.RequiredAnalyzerUnavailable):
+                    ensure_real_analyzer_available("de")
+        finally:
+            nlp_base.analyzer_for_language.cache_clear()
+
+    def test_spacy_languages_use_large_models(self) -> None:
+        self.assertEqual(nlp_base.SPACY_MODELS["de"], "de_core_news_lg")
+        self.assertEqual(nlp_base.SPACY_MODELS["fr"], "fr_core_news_lg")
+        self.assertEqual(nlp_base.SPACY_MODELS["es"], "es_core_news_lg")
+        self.assertEqual(nlp_base.SPACY_MODELS["zh"], "zh_core_web_lg")
+
+    def test_auto_pos_analysis_preserves_rich_legacy_tokens_even_when_real_analyzer_exists(self) -> None:
+        class FakeAnalyzer(nlp_base.SentenceAnalyzer):
+            source = "fake_real_analyzer"
+
+            def analyze(self, language, text, *, existing_sentence=None, entry=None):
+                return nlp_base.AnalysisResult(
+                    language=language,
+                    sentence=text,
+                    tokens=[
+                        {
+                            "surface": "Heute",
+                            "lemma": "heute",
+                            "pos": "adv",
+                            "upos": "ADV",
+                            "analyzer": self.source,
+                        },
+                        {
+                            "surface": "Abend",
+                            "lemma": "Abend",
+                            "pos": "noun",
+                            "upos": "NOUN",
+                            "analyzer": self.source,
+                        },
+                        {
+                            "surface": ".",
+                            "lemma": ".",
+                            "pos": "punct",
+                            "upos": "PUNCT",
+                            "analyzer": self.source,
+                        },
+                    ],
+                    reading="",
+                    analyzer=self.source,
+                    warnings=[],
+                )
+
+        nlp_base.analyzer_for_language.cache_clear()
+        item = {
+            "language": "de",
+            "app_payload": {},
+            "sentences": [
+                {
+                    "target": "Heute Abend.",
+                    "tokens": [
+                        {
+                            "surface": "Heute",
+                            "surface_en": "today",
+                            "furigana": "[ˈhɔʏ̯tə]",
+                            "pos": "ADV",
+                        },
+                        {
+                            "surface": "Abend.",
+                            "surface_en": "evening",
+                            "furigana": "[ˈaːbn̩t]",
+                            "pos": "NOUN",
+                        },
+                    ],
+                }
+            ],
+        }
+
+        try:
+            with mock.patch.object(nlp_base, "analyzer_for_language", return_value=FakeAnalyzer()):
+                sync_item_pos_analysis(item, regenerate=True)
+        finally:
+            nlp_base.analyzer_for_language.cache_clear()
+
+        self.assertEqual(len(item["sentences"][0]["tokens"]), 2)
+        self.assertEqual(item["sentences"][0]["tokens"][0]["furigana"], "[ˈhɔʏ̯tə]")
+        self.assertEqual(item["app_payload"]["pos_analysis"][0]["tokens"][0]["surface_en"], "today")
 
     def test_sync_all_resolves_external_pack_generation_sources(self) -> None:
         with tempfile.TemporaryDirectory() as td:

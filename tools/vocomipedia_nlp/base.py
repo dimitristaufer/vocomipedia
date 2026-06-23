@@ -22,10 +22,10 @@ from japanese_ruby import (
 
 
 SPACY_MODELS = {
-    "de": "de_core_news_sm",
-    "fr": "fr_core_news_sm",
-    "es": "es_core_news_sm",
-    "zh": "zh_core_web_sm",
+    "de": "de_core_news_lg",
+    "fr": "fr_core_news_lg",
+    "es": "es_core_news_lg",
+    "zh": "zh_core_web_lg",
 }
 
 
@@ -480,6 +480,74 @@ def generated_pos_analysis_entry(sentence: Dict[str, Any]) -> Dict[str, Any]:
     }
 
 
+def _surface_text(value: Any) -> str:
+    return re.sub(r"\s+", "", str(value or ""))
+
+
+def tokens_align_with_text(tokens: List[Dict[str, Any]], text: str) -> bool:
+    surfaces = [str(token.get("surface") or "") for token in tokens if isinstance(token, dict)]
+    return bool(surfaces) and _surface_text("".join(surfaces)) == _surface_text(text)
+
+
+def token_has_rich_analysis(token: Dict[str, Any]) -> bool:
+    return any(token.get(key) not in (None, "", [], {}) for key in ("surface_en", "furigana", "explanation", "is_main_word"))
+
+
+def _normalize_korean_preserved_token(token: Dict[str, Any]) -> None:
+    pos = str(token.get("upos") or token.get("pos") or "").upper()
+    if pos != "X":
+        return
+
+    surface = str(token.get("surface") or "")
+    lemma = str(token.get("lemma") or "")
+    explanation = str(token.get("explanation") or "").lower()
+    bare_surface = surface.strip("'\"`‘’“”")
+    bare_lemma = lemma.strip("'\"`‘’“”")
+
+    if re.fullmatch(r"[A-Za-z][A-Za-z0-9+_.-]*", bare_surface) or re.fullmatch(r"[A-Za-z][A-Za-z0-9+_.-]*", bare_lemma):
+        token["pos"] = "NOUN"
+        token["upos"] = "NOUN"
+        if not token.get("xpos"):
+            token["xpos"] = "SL"
+        return
+
+    if surface == "째" or lemma == "째" or "suffix" in explanation:
+        token["pos"] = "PART"
+        token["upos"] = "PART"
+        if not token.get("xpos"):
+            token["xpos"] = "XSN"
+        return
+
+
+def normalize_preserved_tokens(language: str, tokens: List[Dict[str, Any]]) -> None:
+    if language == "ko":
+        for token in tokens:
+            if isinstance(token, dict):
+                _normalize_korean_preserved_token(token)
+
+
+def language_requires_real_analyzer(language: str) -> bool:
+    return language in set(SPACY_MODELS) | {"ja", "ko", "zh"}
+
+
+def ensure_real_analyzer_available(language: str) -> SentenceAnalyzer:
+    language = normalize_language(language)
+    try:
+        analyzer = analyzer_for_language(language)
+    except RequiredAnalyzerUnavailable:
+        raise
+    except Exception as exc:
+        raise RequiredAnalyzerUnavailable(
+            f"{language} POS analysis could not initialize. Install requirements-nlp.txt before running --auto-pos-analysis."
+        ) from exc
+    if language_requires_real_analyzer(language) and analyzer.source == FallbackAnalyzer.source:
+        raise RequiredAnalyzerUnavailable(
+            f"{language} POS analysis requires a real analyzer, but only {FallbackAnalyzer.source} is available. "
+            "Install requirements-nlp.txt before running --auto-pos-analysis, or import without regenerating POS."
+        )
+    return analyzer
+
+
 def sync_item_pos_analysis(item: Dict[str, Any], *, regenerate: bool = False) -> Dict[str, Any]:
     if regenerate:
         language = normalize_language(str(item.get("language") or ""))
@@ -490,7 +558,19 @@ def sync_item_pos_analysis(item: Dict[str, Any], *, regenerate: bool = False) ->
             if not text:
                 sentence["tokens"] = []
                 continue
+            existing_tokens = sentence.get("tokens")
+            if isinstance(existing_tokens, list) and existing_tokens:
+                rich_existing = [token for token in existing_tokens if isinstance(token, dict) and token_has_rich_analysis(token)]
+                if rich_existing:
+                    normalize_preserved_tokens(language, [token for token in existing_tokens if isinstance(token, dict)])
+                    continue
             result = analyze_sentence(language, text, existing_sentence=sentence, entry=item)
+            if result.analyzer == FallbackAnalyzer.source:
+                if language_requires_real_analyzer(language):
+                    raise RequiredAnalyzerUnavailable(
+                        f"{language} POS analysis requires a real analyzer, but only {FallbackAnalyzer.source} is available. "
+                        "Install requirements-nlp.txt before running --auto-pos-analysis, or import without regenerating POS."
+                    )
             sentence["tokens"] = result.tokens
             if result.reading:
                 sentence["reading"] = result.reading

@@ -47,63 +47,89 @@
       "translations": {
         "en": "I want to draft a message.",
         "es": "Quiero redactar un mensaje.",
-        "ipa": "/ˈkjeɾo reðakˈtaɾ un menˈsaxe/"
+        "ipa": "/ˈkjeɾo reðakˈtaɾ un menˈsaxe/",
+        "ar": "أريد أن أصوغ رسالة.",
+        "cs": "Chci napsat zprávu.",
+        "da": "Jeg vil skrive et udkast til en besked.",
+        "de": "Ich möchte eine Nachricht formulieren.",
+        "el": "Θέλω να συντάξω ένα μήνυμα.",
+        "fi": "Haluan luonnostella viestin.",
+        "fr": "Je veux rédiger un message.",
+        "he": "אני רוצה לנסח הודעה.",
+        "hi": "मैं एक संदेश लिखना चाहता हूँ।",
+        "hu": "Szeretnék megfogalmazni egy üzenetet.",
+        "id": "Saya ingin menyusun pesan.",
+        "it": "Voglio redigere un messaggio.",
+        "ja": "メッセージを作成したいです。",
+        "ko": "메시지를 작성하고 싶어요.",
+        "nb": "Jeg vil skrive en melding.",
+        "nl": "Ik wil een bericht opstellen.",
+        "pl": "Chcę napisać wiadomość.",
+        "pt": "Quero redigir uma mensagem.",
+        "ro": "Vreau să redactez un mesaj.",
+        "ru": "Я хочу составить сообщение.",
+        "sv": "Jag vill skriva ett meddelande.",
+        "tr": "Bir mesaj yazmak istiyorum.",
+        "uk": "Я хочу скласти повідомлення.",
+        "vi": "Tôi muốn soạn một tin nhắn.",
+        "yue": "我想寫一個訊息。",
+        "zh-Hans": "我想写一条消息。"
       },
       "tokens": [
         {
           "surface": "Quiero",
-          "lemma": "quiero",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "querer",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VERB",
           "feats": {},
           "start": 0,
           "end": 6,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "redactar",
           "lemma": "redactar",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VERB",
           "feats": {},
           "start": 7,
           "end": 15,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "un",
-          "lemma": "un",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "uno",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "DET",
           "feats": {},
           "start": 16,
           "end": 18,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "mensaje",
           "lemma": "mensaje",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NOUN",
           "feats": {},
           "start": 19,
           "end": 26,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": ".",
           "lemma": ".",
-          "pos": "punct",
+          "pos": "PUNCT",
           "upos": "PUNCT",
-          "xpos": "",
+          "xpos": "PUNCT",
           "feats": {},
           "start": 26,
           "end": 27,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         }
       ],
       "difficulty": null
@@ -114,74 +140,100 @@
       "translations": {
         "en": "Help me draft the letter.",
         "es": "Ayúdame a redactar la carta.",
-        "ipa": "/ajuˈðame a reðakˈtaɾ la ˈkaɾta/"
+        "ipa": "/ajuˈðame a reðakˈtaɾ la ˈkaɾta/",
+        "ar": "ساعدني في صياغة الرسالة.",
+        "cs": "Pomoz mi napsat ten dopis.",
+        "da": "Hjælp mig med at skrive brevet.",
+        "de": "Hilf mir, den Brief zu verfassen.",
+        "el": "Βοήθησέ με να συντάξω το γράμμα.",
+        "fi": "Auta minua kirjoittamaan kirje.",
+        "fr": "Aide-moi à rédiger la lettre.",
+        "he": "תעזור לי לנסח את המכתב.",
+        "hi": "कृपया मुझे पत्र लिखने में मदद करो।",
+        "hu": "Segíts megfogalmazni a levelet.",
+        "id": "Bantu saya menyusun surat itu.",
+        "it": "Aiutami a redigere la lettera.",
+        "ja": "手紙の下書きを手伝ってください。",
+        "ko": "편지 쓰는 것을 도와주세요.",
+        "nb": "Hjelp meg å skrive brevet.",
+        "nl": "Help me de brief te schrijven.",
+        "pl": "Pomóż mi napisać list.",
+        "pt": "Ajude-me a redigir a carta.",
+        "ro": "Ajută-mă să redactez scrisoarea.",
+        "ru": "Помоги мне составить письмо.",
+        "sv": "Hjälp mig att skriva brevet.",
+        "tr": "Mektubu yazmama yardım et.",
+        "uk": "Допоможи мені скласти лист.",
+        "vi": "Giúp tôi soạn lá thư.",
+        "yue": "幫我寫呢封信。",
+        "zh-Hans": "帮我写这封信。"
       },
       "tokens": [
         {
           "surface": "Ayúdame",
           "lemma": "ayúdame",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "AUX",
+          "upos": "AUX",
+          "xpos": "AUX",
           "feats": {},
           "start": 0,
           "end": 7,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "a",
           "lemma": "a",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "ADP",
           "feats": {},
           "start": 8,
           "end": 9,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "redactar",
           "lemma": "redactar",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VERB",
           "feats": {},
           "start": 10,
           "end": 18,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "la",
-          "lemma": "la",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "el",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "DET",
           "feats": {},
           "start": 19,
           "end": 21,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "carta",
           "lemma": "carta",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NOUN",
           "feats": {},
           "start": 22,
           "end": 27,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": ".",
           "lemma": ".",
-          "pos": "punct",
+          "pos": "PUNCT",
           "upos": "PUNCT",
-          "xpos": "",
+          "xpos": "PUNCT",
           "feats": {},
           "start": 27,
           "end": 28,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         }
       ],
       "difficulty": null
@@ -192,74 +244,100 @@
       "translations": {
         "en": "I can draft the report today.",
         "es": "Puedo redactar el informe hoy.",
-        "ipa": "/ˈpweðo reðakˈtaɾ el inˈfoɾme oi/"
+        "ipa": "/ˈpweðo reðakˈtaɾ el inˈfoɾme oi/",
+        "ar": "أستطيع صياغة التقرير اليوم.",
+        "cs": "Můžu dnes napsat zprávu.",
+        "da": "Jeg kan skrive rapporten i dag.",
+        "de": "Ich kann den Bericht heute verfassen.",
+        "el": "Μπορώ να συντάξω την αναφορά σήμερα.",
+        "fi": "Voin laatia raportin tänään.",
+        "fr": "Je peux rédiger le rapport aujourd'hui.",
+        "he": "אני יכול לנסח את הדוח היום.",
+        "hi": "मैं आज रिपोर्ट लिख सकता हूँ।",
+        "hu": "Ma el tudom készíteni a jelentést.",
+        "id": "Saya bisa menyusun laporan itu hari ini.",
+        "it": "Posso redigere il rapporto oggi.",
+        "ja": "今日、報告書を作成できます。",
+        "ko": "오늘 보고서를 작성할 수 있어요.",
+        "nb": "Jeg kan skrive rapporten i dag.",
+        "nl": "Ik kan vandaag het rapport opstellen.",
+        "pl": "Mogę dziś napisać raport.",
+        "pt": "Posso redigir o relatório hoje.",
+        "ro": "Pot redacta raportul azi.",
+        "ru": "Я могу составить отчёт сегодня.",
+        "sv": "Jag kan skriva rapporten i dag.",
+        "tr": "Raporu bugün yazabilirim.",
+        "uk": "Я можу скласти звіт сьогодні.",
+        "vi": "Tôi có thể soạn báo cáo hôm nay.",
+        "yue": "我今日可以寫份報告。",
+        "zh-Hans": "我今天可以写报告。"
       },
       "tokens": [
         {
           "surface": "Puedo",
-          "lemma": "puedo",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "poder",
+          "pos": "AUX",
+          "upos": "AUX",
+          "xpos": "AUX",
           "feats": {},
           "start": 0,
           "end": 5,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "redactar",
           "lemma": "redactar",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VERB",
           "feats": {},
           "start": 6,
           "end": 14,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "el",
           "lemma": "el",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "DET",
           "feats": {},
           "start": 15,
           "end": 17,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "informe",
           "lemma": "informe",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NOUN",
           "feats": {},
           "start": 18,
           "end": 25,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "hoy",
           "lemma": "hoy",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "ADV",
           "feats": {},
           "start": 26,
           "end": 29,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": ".",
           "lemma": ".",
-          "pos": "punct",
+          "pos": "PUNCT",
           "upos": "PUNCT",
-          "xpos": "",
+          "xpos": "PUNCT",
           "feats": {},
           "start": 29,
           "end": 30,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         }
       ],
       "difficulty": null
@@ -270,85 +348,111 @@
       "translations": {
         "en": "Let's draft the list together.",
         "es": "Vamos a redactar la lista juntos.",
-        "ipa": "/ˈbamos a reðakˈtaɾ la ˈlista ˈxuntos/"
+        "ipa": "/ˈbamos a reðakˈtaɾ la ˈlista ˈxuntos/",
+        "ar": "لنُعِدّ القائمة معًا.",
+        "cs": "Pojďme spolu sepsat seznam.",
+        "da": "Lad os lave listen sammen.",
+        "de": "Lass uns die Liste zusammen erstellen.",
+        "el": "Ας φτιάξουμε μαζί τη λίστα.",
+        "fi": "Tehdään lista yhdessä.",
+        "fr": "Faisons la liste ensemble.",
+        "he": "בואו נכין את הרשימה יחד.",
+        "hi": "चलो सूची मिलकर बनाते हैं।",
+        "hu": "Készítsük el együtt a listát.",
+        "id": "Mari kita susun daftar itu bersama-sama.",
+        "it": "Facciamo insieme la lista.",
+        "ja": "一緒にリストを作りましょう。",
+        "ko": "같이 목록을 만들어 봅시다.",
+        "nb": "La oss lage listen sammen.",
+        "nl": "Laten we samen de lijst maken.",
+        "pl": "Zróbmy listę razem.",
+        "pt": "Vamos fazer a lista juntos.",
+        "ro": "Hai să facem lista împreună.",
+        "ru": "Давай вместе составим список.",
+        "sv": "Låt oss göra listan tillsammans.",
+        "tr": "Haydi listeyi birlikte yapalım.",
+        "uk": "Давай разом складемо список.",
+        "vi": "Hãy cùng nhau lập danh sách.",
+        "yue": "我哋一齊整個清單啦。",
+        "zh-Hans": "我们一起列一下清单吧。"
       },
       "tokens": [
         {
           "surface": "Vamos",
-          "lemma": "vamos",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "ir",
+          "pos": "AUX",
+          "upos": "AUX",
+          "xpos": "AUX",
           "feats": {},
           "start": 0,
           "end": 5,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "a",
           "lemma": "a",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "ADP",
           "feats": {},
           "start": 6,
           "end": 7,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "redactar",
           "lemma": "redactar",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VERB",
           "feats": {},
           "start": 8,
           "end": 16,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "la",
-          "lemma": "la",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "el",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "DET",
           "feats": {},
           "start": 17,
           "end": 19,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "lista",
           "lemma": "lista",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NOUN",
           "feats": {},
           "start": 20,
           "end": 25,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "juntos",
-          "lemma": "juntos",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "junto",
+          "pos": "ADJ",
+          "upos": "ADJ",
+          "xpos": "ADJ",
           "feats": {},
           "start": 26,
           "end": 32,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": ".",
           "lemma": ".",
-          "pos": "punct",
+          "pos": "PUNCT",
           "upos": "PUNCT",
-          "xpos": "",
+          "xpos": "PUNCT",
           "feats": {},
           "start": 32,
           "end": 33,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         }
       ],
       "difficulty": null
@@ -474,64 +578,220 @@
     "word_fi": "laatia",
     "word_ja": "起草する",
     "word_es": "redactar",
+    "ar": [
+      "أريد أن أصوغ رسالة.",
+      "ساعدني في صياغة الرسالة.",
+      "أستطيع صياغة التقرير اليوم.",
+      "لنُعِدّ القائمة معًا."
+    ],
+    "cs": [
+      "Chci napsat zprávu.",
+      "Pomoz mi napsat ten dopis.",
+      "Můžu dnes napsat zprávu.",
+      "Pojďme spolu sepsat seznam."
+    ],
+    "da": [
+      "Jeg vil skrive et udkast til en besked.",
+      "Hjælp mig med at skrive brevet.",
+      "Jeg kan skrive rapporten i dag.",
+      "Lad os lave listen sammen."
+    ],
+    "de": [
+      "Ich möchte eine Nachricht formulieren.",
+      "Hilf mir, den Brief zu verfassen.",
+      "Ich kann den Bericht heute verfassen.",
+      "Lass uns die Liste zusammen erstellen."
+    ],
+    "el": [
+      "Θέλω να συντάξω ένα μήνυμα.",
+      "Βοήθησέ με να συντάξω το γράμμα.",
+      "Μπορώ να συντάξω την αναφορά σήμερα.",
+      "Ας φτιάξουμε μαζί τη λίστα."
+    ],
+    "fi": [
+      "Haluan luonnostella viestin.",
+      "Auta minua kirjoittamaan kirje.",
+      "Voin laatia raportin tänään.",
+      "Tehdään lista yhdessä."
+    ],
+    "fr": [
+      "Je veux rédiger un message.",
+      "Aide-moi à rédiger la lettre.",
+      "Je peux rédiger le rapport aujourd'hui.",
+      "Faisons la liste ensemble."
+    ],
+    "he": [
+      "אני רוצה לנסח הודעה.",
+      "תעזור לי לנסח את המכתב.",
+      "אני יכול לנסח את הדוח היום.",
+      "בואו נכין את הרשימה יחד."
+    ],
+    "hi": [
+      "मैं एक संदेश लिखना चाहता हूँ।",
+      "कृपया मुझे पत्र लिखने में मदद करो।",
+      "मैं आज रिपोर्ट लिख सकता हूँ।",
+      "चलो सूची मिलकर बनाते हैं।"
+    ],
+    "hu": [
+      "Szeretnék megfogalmazni egy üzenetet.",
+      "Segíts megfogalmazni a levelet.",
+      "Ma el tudom készíteni a jelentést.",
+      "Készítsük el együtt a listát."
+    ],
+    "id": [
+      "Saya ingin menyusun pesan.",
+      "Bantu saya menyusun surat itu.",
+      "Saya bisa menyusun laporan itu hari ini.",
+      "Mari kita susun daftar itu bersama-sama."
+    ],
+    "it": [
+      "Voglio redigere un messaggio.",
+      "Aiutami a redigere la lettera.",
+      "Posso redigere il rapporto oggi.",
+      "Facciamo insieme la lista."
+    ],
+    "ja": [
+      "メッセージを作成したいです。",
+      "手紙の下書きを手伝ってください。",
+      "今日、報告書を作成できます。",
+      "一緒にリストを作りましょう。"
+    ],
+    "ko": [
+      "메시지를 작성하고 싶어요.",
+      "편지 쓰는 것을 도와주세요.",
+      "오늘 보고서를 작성할 수 있어요.",
+      "같이 목록을 만들어 봅시다."
+    ],
+    "nb": [
+      "Jeg vil skrive en melding.",
+      "Hjelp meg å skrive brevet.",
+      "Jeg kan skrive rapporten i dag.",
+      "La oss lage listen sammen."
+    ],
+    "nl": [
+      "Ik wil een bericht opstellen.",
+      "Help me de brief te schrijven.",
+      "Ik kan vandaag het rapport opstellen.",
+      "Laten we samen de lijst maken."
+    ],
+    "pl": [
+      "Chcę napisać wiadomość.",
+      "Pomóż mi napisać list.",
+      "Mogę dziś napisać raport.",
+      "Zróbmy listę razem."
+    ],
+    "pt": [
+      "Quero redigir uma mensagem.",
+      "Ajude-me a redigir a carta.",
+      "Posso redigir o relatório hoje.",
+      "Vamos fazer a lista juntos."
+    ],
+    "ro": [
+      "Vreau să redactez un mesaj.",
+      "Ajută-mă să redactez scrisoarea.",
+      "Pot redacta raportul azi.",
+      "Hai să facem lista împreună."
+    ],
+    "ru": [
+      "Я хочу составить сообщение.",
+      "Помоги мне составить письмо.",
+      "Я могу составить отчёт сегодня.",
+      "Давай вместе составим список."
+    ],
+    "sv": [
+      "Jag vill skriva ett meddelande.",
+      "Hjälp mig att skriva brevet.",
+      "Jag kan skriva rapporten i dag.",
+      "Låt oss göra listan tillsammans."
+    ],
+    "tr": [
+      "Bir mesaj yazmak istiyorum.",
+      "Mektubu yazmama yardım et.",
+      "Raporu bugün yazabilirim.",
+      "Haydi listeyi birlikte yapalım."
+    ],
+    "uk": [
+      "Я хочу скласти повідомлення.",
+      "Допоможи мені скласти лист.",
+      "Я можу скласти звіт сьогодні.",
+      "Давай разом складемо список."
+    ],
+    "vi": [
+      "Tôi muốn soạn một tin nhắn.",
+      "Giúp tôi soạn lá thư.",
+      "Tôi có thể soạn báo cáo hôm nay.",
+      "Hãy cùng nhau lập danh sách."
+    ],
+    "yue": [
+      "我想寫一個訊息。",
+      "幫我寫呢封信。",
+      "我今日可以寫份報告。",
+      "我哋一齊整個清單啦。"
+    ],
+    "zh-Hans": [
+      "我想写一条消息。",
+      "帮我写这封信。",
+      "我今天可以写报告。",
+      "我们一起列一下清单吧。"
+    ],
     "pos_analysis": [
       {
         "sentence": "Quiero redactar un mensaje.",
         "tokens": [
           {
             "surface": "Quiero",
-            "lemma": "quiero",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "querer",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VERB",
             "feats": {},
             "start": 0,
             "end": 6,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "redactar",
             "lemma": "redactar",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VERB",
             "feats": {},
             "start": 7,
             "end": 15,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "un",
-            "lemma": "un",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "uno",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "DET",
             "feats": {},
             "start": 16,
             "end": 18,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "mensaje",
             "lemma": "mensaje",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NOUN",
             "feats": {},
             "start": 19,
             "end": 26,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": ".",
             "lemma": ".",
-            "pos": "punct",
+            "pos": "PUNCT",
             "upos": "PUNCT",
-            "xpos": "",
+            "xpos": "PUNCT",
             "feats": {},
             "start": 26,
             "end": 27,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           }
         ],
         "difficulty_aggregated": null
@@ -542,68 +802,68 @@
           {
             "surface": "Ayúdame",
             "lemma": "ayúdame",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "AUX",
             "feats": {},
             "start": 0,
             "end": 7,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "a",
             "lemma": "a",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "ADP",
             "feats": {},
             "start": 8,
             "end": 9,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "redactar",
             "lemma": "redactar",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VERB",
             "feats": {},
             "start": 10,
             "end": 18,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "la",
-            "lemma": "la",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "el",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "DET",
             "feats": {},
             "start": 19,
             "end": 21,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "carta",
             "lemma": "carta",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NOUN",
             "feats": {},
             "start": 22,
             "end": 27,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": ".",
             "lemma": ".",
-            "pos": "punct",
+            "pos": "PUNCT",
             "upos": "PUNCT",
-            "xpos": "",
+            "xpos": "PUNCT",
             "feats": {},
             "start": 27,
             "end": 28,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           }
         ],
         "difficulty_aggregated": null
@@ -613,69 +873,69 @@
         "tokens": [
           {
             "surface": "Puedo",
-            "lemma": "puedo",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "poder",
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "AUX",
             "feats": {},
             "start": 0,
             "end": 5,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "redactar",
             "lemma": "redactar",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VERB",
             "feats": {},
             "start": 6,
             "end": 14,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "el",
             "lemma": "el",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "DET",
             "feats": {},
             "start": 15,
             "end": 17,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "informe",
             "lemma": "informe",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NOUN",
             "feats": {},
             "start": 18,
             "end": 25,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "hoy",
             "lemma": "hoy",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
             "feats": {},
             "start": 26,
             "end": 29,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": ".",
             "lemma": ".",
-            "pos": "punct",
+            "pos": "PUNCT",
             "upos": "PUNCT",
-            "xpos": "",
+            "xpos": "PUNCT",
             "feats": {},
             "start": 29,
             "end": 30,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           }
         ],
         "difficulty_aggregated": null
@@ -685,80 +945,80 @@
         "tokens": [
           {
             "surface": "Vamos",
-            "lemma": "vamos",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "ir",
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "AUX",
             "feats": {},
             "start": 0,
             "end": 5,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "a",
             "lemma": "a",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "ADP",
             "feats": {},
             "start": 6,
             "end": 7,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "redactar",
             "lemma": "redactar",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VERB",
             "feats": {},
             "start": 8,
             "end": 16,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "la",
-            "lemma": "la",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "el",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "DET",
             "feats": {},
             "start": 17,
             "end": 19,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "lista",
             "lemma": "lista",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NOUN",
             "feats": {},
             "start": 20,
             "end": 25,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "juntos",
-            "lemma": "juntos",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "junto",
+            "pos": "ADJ",
+            "upos": "ADJ",
+            "xpos": "ADJ",
             "feats": {},
             "start": 26,
             "end": 32,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": ".",
             "lemma": ".",
-            "pos": "punct",
+            "pos": "PUNCT",
             "upos": "PUNCT",
-            "xpos": "",
+            "xpos": "PUNCT",
             "feats": {},
             "start": 32,
             "end": 33,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           }
         ],
         "difficulty_aggregated": null

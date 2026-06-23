@@ -47,74 +47,100 @@
       "translations": {
         "en": "I have a duty at home.",
         "es": "Tengo una obligación en casa.",
-        "ipa": "/ˈteŋɡo ˈuna oβliɣaˈsjon en ˈkasa/"
+        "ipa": "/ˈteŋɡo ˈuna oβliɣaˈsjon en ˈkasa/",
+        "ar": "لدي واجب في المنزل.",
+        "cs": "Mám doma povinnost.",
+        "da": "Jeg har en pligt derhjemme.",
+        "de": "Ich habe zu Hause eine Pflicht.",
+        "el": "Έχω μια υποχρέωση στο σπίτι.",
+        "fi": "Minulla on velvollisuus kotona.",
+        "fr": "J'ai une obligation à la maison.",
+        "he": "יש לי חובה בבית.",
+        "hi": "घर में मेरी एक जिम्मेदारी है।",
+        "hu": "Van egy kötelezettségem otthon.",
+        "id": "Saya punya kewajiban di rumah.",
+        "it": "Ho un obbligo a casa.",
+        "ja": "家での義務があります。",
+        "ko": "집에서 해야 할 일이 있어요.",
+        "nb": "Jeg har en plikt hjemme.",
+        "nl": "Ik heb een verplichting thuis.",
+        "pl": "Mam obowiązek w domu.",
+        "pt": "Tenho uma obrigação em casa.",
+        "ro": "Am o obligație acasă.",
+        "ru": "У меня есть обязанность дома.",
+        "sv": "Jag har en plikt hemma.",
+        "tr": "Evde bir görevim var.",
+        "uk": "У мене є обов’язок удома.",
+        "vi": "Tôi có một trách nhiệm ở nhà.",
+        "yue": "我喺屋企有個責任。",
+        "zh-Hans": "我在家里有一项责任。"
       },
       "tokens": [
         {
           "surface": "Tengo",
-          "lemma": "tengo",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "tener",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VERB",
           "feats": {},
           "start": 0,
           "end": 5,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "una",
-          "lemma": "una",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "uno",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "DET",
           "feats": {},
           "start": 6,
           "end": 9,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "obligación",
           "lemma": "obligación",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NOUN",
           "feats": {},
           "start": 10,
           "end": 20,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "en",
           "lemma": "en",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "ADP",
           "feats": {},
           "start": 21,
           "end": 23,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "casa",
           "lemma": "casa",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NOUN",
           "feats": {},
           "start": 24,
           "end": 28,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": ".",
           "lemma": ".",
-          "pos": "punct",
+          "pos": "PUNCT",
           "upos": "PUNCT",
-          "xpos": "",
+          "xpos": "PUNCT",
           "feats": {},
           "start": 28,
           "end": 29,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         }
       ],
       "difficulty": null
@@ -125,63 +151,89 @@
       "translations": {
         "en": "This duty is important.",
         "es": "Esta obligación es importante.",
-        "ipa": "/ˈesta oβliɣaˈsjon es impoɾˈtante/"
+        "ipa": "/ˈesta oβliɣaˈsjon es impoɾˈtante/",
+        "ar": "هذا الواجب مهم.",
+        "cs": "Tato povinnost je důležitá.",
+        "da": "Denne pligt er vigtig.",
+        "de": "Diese Pflicht ist wichtig.",
+        "el": "Αυτή η υποχρέωση είναι σημαντική.",
+        "fi": "Tämä velvollisuus on tärkeä.",
+        "fr": "Cette obligation est importante.",
+        "he": "החובה הזאת חשובה.",
+        "hi": "यह जिम्मेदारी महत्वपूर्ण है।",
+        "hu": "Ez a kötelezettség fontos.",
+        "id": "Kewajiban ini penting.",
+        "it": "Questo obbligo è importante.",
+        "ja": "この義務は大切です。",
+        "ko": "이 의무는 중요해요.",
+        "nb": "Denne plikten er viktig.",
+        "nl": "Deze verplichting is belangrijk.",
+        "pl": "Ten obowiązek jest ważny.",
+        "pt": "Esta obrigação é importante.",
+        "ro": "Această obligație este importantă.",
+        "ru": "Эта обязанность важна.",
+        "sv": "Den här plikten är viktig.",
+        "tr": "Bu görev önemli.",
+        "uk": "Цей обов’язок важливий.",
+        "vi": "Trách nhiệm này rất quan trọng.",
+        "yue": "呢個責任好重要。",
+        "zh-Hans": "这项责任很重要。"
       },
       "tokens": [
         {
           "surface": "Esta",
-          "lemma": "esta",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "este",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "DET",
           "feats": {},
           "start": 0,
           "end": 4,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "obligación",
           "lemma": "obligación",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NOUN",
           "feats": {},
           "start": 5,
           "end": 15,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "es",
-          "lemma": "es",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "ser",
+          "pos": "AUX",
+          "upos": "AUX",
+          "xpos": "AUX",
           "feats": {},
           "start": 16,
           "end": 18,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "importante",
           "lemma": "importante",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "ADJ",
+          "upos": "ADJ",
+          "xpos": "ADJ",
           "feats": {},
           "start": 19,
           "end": 29,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": ".",
           "lemma": ".",
-          "pos": "punct",
+          "pos": "PUNCT",
           "upos": "PUNCT",
-          "xpos": "",
+          "xpos": "PUNCT",
           "feats": {},
           "start": 29,
           "end": 30,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         }
       ],
       "difficulty": null
@@ -192,74 +244,100 @@
       "translations": {
         "en": "My duty today is to study.",
         "es": "Mi obligación hoy es estudiar.",
-        "ipa": "/mi oβliɣaˈsjon oi es es tuˈðjaɾ/"
+        "ipa": "/mi oβliɣaˈsjon oi es es tuˈðjaɾ/",
+        "ar": "واجبي اليوم هو أن أدرس.",
+        "cs": "Moje dnešní povinnost je učit se.",
+        "da": "Min pligt i dag er at studere.",
+        "de": "Meine Pflicht heute ist zu lernen.",
+        "el": "Η σημερινή μου υποχρέωση είναι να διαβάσω.",
+        "fi": "Tämän päivän velvollisuuteni on opiskella.",
+        "fr": "Mon obligation aujourd'hui est d'étudier.",
+        "he": "החובה שלי היום היא ללמוד.",
+        "hi": "आज मेरी जिम्मेदारी पढ़ाई करना है।",
+        "hu": "A mai kötelezettségem az, hogy tanuljak.",
+        "id": "Kewajiban saya hari ini adalah belajar.",
+        "it": "Il mio obbligo oggi è studiare.",
+        "ja": "今日の私の義務は勉強することです。",
+        "ko": "오늘 제 의무는 공부하는 거예요.",
+        "nb": "Min plikt i dag er å studere.",
+        "nl": "Mijn verplichting vandaag is om te studeren.",
+        "pl": "Moim obowiązkiem na dziś jest się uczyć.",
+        "pt": "Minha obrigação hoje é estudar.",
+        "ro": "Obligația mea de azi este să învăț.",
+        "ru": "Моя обязанность сегодня — учиться.",
+        "sv": "Min plikt i dag är att studera.",
+        "tr": "Bugünkü görevim ders çalışmak.",
+        "uk": "Мій обов’язок сьогодні — вчитися.",
+        "vi": "Trách nhiệm của tôi hôm nay là học.",
+        "yue": "我今日嘅責任係溫書。",
+        "zh-Hans": "我今天的责任是学习。"
       },
       "tokens": [
         {
           "surface": "Mi",
           "lemma": "mi",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "DET",
           "feats": {},
           "start": 0,
           "end": 2,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "obligación",
           "lemma": "obligación",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NOUN",
           "feats": {},
           "start": 3,
           "end": 13,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "hoy",
           "lemma": "hoy",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "ADV",
           "feats": {},
           "start": 14,
           "end": 17,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "es",
-          "lemma": "es",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "ser",
+          "pos": "AUX",
+          "upos": "AUX",
+          "xpos": "AUX",
           "feats": {},
           "start": 18,
           "end": 20,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "estudiar",
           "lemma": "estudiar",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VERB",
           "feats": {},
           "start": 21,
           "end": 29,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": ".",
           "lemma": ".",
-          "pos": "punct",
+          "pos": "PUNCT",
           "upos": "PUNCT",
-          "xpos": "",
+          "xpos": "PUNCT",
           "feats": {},
           "start": 29,
           "end": 30,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         }
       ],
       "difficulty": null
@@ -270,63 +348,89 @@
       "translations": {
         "en": "I don't want that duty.",
         "es": "No quiero esa obligación.",
-        "ipa": "/no ˈkjeɾo esa oβliɣaˈsjon/"
+        "ipa": "/no ˈkjeɾo esa oβliɣaˈsjon/",
+        "ar": "لا أريد هذا الواجب.",
+        "cs": "Nechci tu povinnost.",
+        "da": "Jeg vil ikke have den pligt.",
+        "de": "Ich will diese Pflicht nicht.",
+        "el": "Δεν θέλω αυτή την υποχρέωση.",
+        "fi": "En halua tuota velvollisuutta.",
+        "fr": "Je ne veux pas de cette obligation.",
+        "he": "אני לא רוצה את החובה הזאת.",
+        "hi": "मैं वह जिम्मेदारी नहीं चाहता हूँ।",
+        "hu": "Nem akarom ezt a kötelezettséget.",
+        "id": "Saya tidak mau kewajiban itu.",
+        "it": "Non voglio questo obbligo.",
+        "ja": "その義務はほしくありません。",
+        "ko": "저는 그 의무를 원하지 않아요.",
+        "nb": "Jeg vil ikke ha den plikten.",
+        "nl": "Ik wil die verplichting niet.",
+        "pl": "Nie chcę tego obowiązku.",
+        "pt": "Não quero essa obrigação.",
+        "ro": "Nu vreau această obligație.",
+        "ru": "Я не хочу этой обязанности.",
+        "sv": "Jag vill inte ha den plikten.",
+        "tr": "O görevi istemiyorum.",
+        "uk": "Я не хочу цього обов’язку.",
+        "vi": "Tôi không muốn trách nhiệm đó.",
+        "yue": "我唔想要嗰個責任。",
+        "zh-Hans": "我不想要那个责任。"
       },
       "tokens": [
         {
           "surface": "No",
           "lemma": "no",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "ADV",
           "feats": {},
           "start": 0,
           "end": 2,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "quiero",
-          "lemma": "quiero",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "querer",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VERB",
           "feats": {},
           "start": 3,
           "end": 9,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "esa",
-          "lemma": "esa",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "ese",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "DET",
           "feats": {},
           "start": 10,
           "end": 13,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "obligación",
           "lemma": "obligación",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NOUN",
           "feats": {},
           "start": 14,
           "end": 24,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": ".",
           "lemma": ".",
-          "pos": "punct",
+          "pos": "PUNCT",
           "upos": "PUNCT",
-          "xpos": "",
+          "xpos": "PUNCT",
           "feats": {},
           "start": 24,
           "end": 25,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         }
       ],
       "difficulty": null
@@ -452,75 +556,231 @@
     "word_fi": "velvollisuus",
     "word_ja": "義務",
     "word_es": "obligación",
+    "ar": [
+      "لدي واجب في المنزل.",
+      "هذا الواجب مهم.",
+      "واجبي اليوم هو أن أدرس.",
+      "لا أريد هذا الواجب."
+    ],
+    "cs": [
+      "Mám doma povinnost.",
+      "Tato povinnost je důležitá.",
+      "Moje dnešní povinnost je učit se.",
+      "Nechci tu povinnost."
+    ],
+    "da": [
+      "Jeg har en pligt derhjemme.",
+      "Denne pligt er vigtig.",
+      "Min pligt i dag er at studere.",
+      "Jeg vil ikke have den pligt."
+    ],
+    "de": [
+      "Ich habe zu Hause eine Pflicht.",
+      "Diese Pflicht ist wichtig.",
+      "Meine Pflicht heute ist zu lernen.",
+      "Ich will diese Pflicht nicht."
+    ],
+    "el": [
+      "Έχω μια υποχρέωση στο σπίτι.",
+      "Αυτή η υποχρέωση είναι σημαντική.",
+      "Η σημερινή μου υποχρέωση είναι να διαβάσω.",
+      "Δεν θέλω αυτή την υποχρέωση."
+    ],
+    "fi": [
+      "Minulla on velvollisuus kotona.",
+      "Tämä velvollisuus on tärkeä.",
+      "Tämän päivän velvollisuuteni on opiskella.",
+      "En halua tuota velvollisuutta."
+    ],
+    "fr": [
+      "J'ai une obligation à la maison.",
+      "Cette obligation est importante.",
+      "Mon obligation aujourd'hui est d'étudier.",
+      "Je ne veux pas de cette obligation."
+    ],
+    "he": [
+      "יש לי חובה בבית.",
+      "החובה הזאת חשובה.",
+      "החובה שלי היום היא ללמוד.",
+      "אני לא רוצה את החובה הזאת."
+    ],
+    "hi": [
+      "घर में मेरी एक जिम्मेदारी है।",
+      "यह जिम्मेदारी महत्वपूर्ण है।",
+      "आज मेरी जिम्मेदारी पढ़ाई करना है।",
+      "मैं वह जिम्मेदारी नहीं चाहता हूँ।"
+    ],
+    "hu": [
+      "Van egy kötelezettségem otthon.",
+      "Ez a kötelezettség fontos.",
+      "A mai kötelezettségem az, hogy tanuljak.",
+      "Nem akarom ezt a kötelezettséget."
+    ],
+    "id": [
+      "Saya punya kewajiban di rumah.",
+      "Kewajiban ini penting.",
+      "Kewajiban saya hari ini adalah belajar.",
+      "Saya tidak mau kewajiban itu."
+    ],
+    "it": [
+      "Ho un obbligo a casa.",
+      "Questo obbligo è importante.",
+      "Il mio obbligo oggi è studiare.",
+      "Non voglio questo obbligo."
+    ],
+    "ja": [
+      "家での義務があります。",
+      "この義務は大切です。",
+      "今日の私の義務は勉強することです。",
+      "その義務はほしくありません。"
+    ],
+    "ko": [
+      "집에서 해야 할 일이 있어요.",
+      "이 의무는 중요해요.",
+      "오늘 제 의무는 공부하는 거예요.",
+      "저는 그 의무를 원하지 않아요."
+    ],
+    "nb": [
+      "Jeg har en plikt hjemme.",
+      "Denne plikten er viktig.",
+      "Min plikt i dag er å studere.",
+      "Jeg vil ikke ha den plikten."
+    ],
+    "nl": [
+      "Ik heb een verplichting thuis.",
+      "Deze verplichting is belangrijk.",
+      "Mijn verplichting vandaag is om te studeren.",
+      "Ik wil die verplichting niet."
+    ],
+    "pl": [
+      "Mam obowiązek w domu.",
+      "Ten obowiązek jest ważny.",
+      "Moim obowiązkiem na dziś jest się uczyć.",
+      "Nie chcę tego obowiązku."
+    ],
+    "pt": [
+      "Tenho uma obrigação em casa.",
+      "Esta obrigação é importante.",
+      "Minha obrigação hoje é estudar.",
+      "Não quero essa obrigação."
+    ],
+    "ro": [
+      "Am o obligație acasă.",
+      "Această obligație este importantă.",
+      "Obligația mea de azi este să învăț.",
+      "Nu vreau această obligație."
+    ],
+    "ru": [
+      "У меня есть обязанность дома.",
+      "Эта обязанность важна.",
+      "Моя обязанность сегодня — учиться.",
+      "Я не хочу этой обязанности."
+    ],
+    "sv": [
+      "Jag har en plikt hemma.",
+      "Den här plikten är viktig.",
+      "Min plikt i dag är att studera.",
+      "Jag vill inte ha den plikten."
+    ],
+    "tr": [
+      "Evde bir görevim var.",
+      "Bu görev önemli.",
+      "Bugünkü görevim ders çalışmak.",
+      "O görevi istemiyorum."
+    ],
+    "uk": [
+      "У мене є обов’язок удома.",
+      "Цей обов’язок важливий.",
+      "Мій обов’язок сьогодні — вчитися.",
+      "Я не хочу цього обов’язку."
+    ],
+    "vi": [
+      "Tôi có một trách nhiệm ở nhà.",
+      "Trách nhiệm này rất quan trọng.",
+      "Trách nhiệm của tôi hôm nay là học.",
+      "Tôi không muốn trách nhiệm đó."
+    ],
+    "yue": [
+      "我喺屋企有個責任。",
+      "呢個責任好重要。",
+      "我今日嘅責任係溫書。",
+      "我唔想要嗰個責任。"
+    ],
+    "zh-Hans": [
+      "我在家里有一项责任。",
+      "这项责任很重要。",
+      "我今天的责任是学习。",
+      "我不想要那个责任。"
+    ],
     "pos_analysis": [
       {
         "sentence": "Tengo una obligación en casa.",
         "tokens": [
           {
             "surface": "Tengo",
-            "lemma": "tengo",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "tener",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VERB",
             "feats": {},
             "start": 0,
             "end": 5,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "una",
-            "lemma": "una",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "uno",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "DET",
             "feats": {},
             "start": 6,
             "end": 9,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "obligación",
             "lemma": "obligación",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NOUN",
             "feats": {},
             "start": 10,
             "end": 20,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "en",
             "lemma": "en",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "ADP",
             "feats": {},
             "start": 21,
             "end": 23,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "casa",
             "lemma": "casa",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NOUN",
             "feats": {},
             "start": 24,
             "end": 28,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": ".",
             "lemma": ".",
-            "pos": "punct",
+            "pos": "PUNCT",
             "upos": "PUNCT",
-            "xpos": "",
+            "xpos": "PUNCT",
             "feats": {},
             "start": 28,
             "end": 29,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           }
         ],
         "difficulty_aggregated": null
@@ -530,58 +790,58 @@
         "tokens": [
           {
             "surface": "Esta",
-            "lemma": "esta",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "este",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "DET",
             "feats": {},
             "start": 0,
             "end": 4,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "obligación",
             "lemma": "obligación",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NOUN",
             "feats": {},
             "start": 5,
             "end": 15,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "es",
-            "lemma": "es",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "ser",
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "AUX",
             "feats": {},
             "start": 16,
             "end": 18,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "importante",
             "lemma": "importante",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "ADJ",
+            "upos": "ADJ",
+            "xpos": "ADJ",
             "feats": {},
             "start": 19,
             "end": 29,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": ".",
             "lemma": ".",
-            "pos": "punct",
+            "pos": "PUNCT",
             "upos": "PUNCT",
-            "xpos": "",
+            "xpos": "PUNCT",
             "feats": {},
             "start": 29,
             "end": 30,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           }
         ],
         "difficulty_aggregated": null
@@ -592,68 +852,68 @@
           {
             "surface": "Mi",
             "lemma": "mi",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "DET",
             "feats": {},
             "start": 0,
             "end": 2,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "obligación",
             "lemma": "obligación",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NOUN",
             "feats": {},
             "start": 3,
             "end": 13,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "hoy",
             "lemma": "hoy",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
             "feats": {},
             "start": 14,
             "end": 17,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "es",
-            "lemma": "es",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "ser",
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "AUX",
             "feats": {},
             "start": 18,
             "end": 20,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "estudiar",
             "lemma": "estudiar",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VERB",
             "feats": {},
             "start": 21,
             "end": 29,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": ".",
             "lemma": ".",
-            "pos": "punct",
+            "pos": "PUNCT",
             "upos": "PUNCT",
-            "xpos": "",
+            "xpos": "PUNCT",
             "feats": {},
             "start": 29,
             "end": 30,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           }
         ],
         "difficulty_aggregated": null
@@ -664,57 +924,57 @@
           {
             "surface": "No",
             "lemma": "no",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
             "feats": {},
             "start": 0,
             "end": 2,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "quiero",
-            "lemma": "quiero",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "querer",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VERB",
             "feats": {},
             "start": 3,
             "end": 9,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "esa",
-            "lemma": "esa",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "ese",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "DET",
             "feats": {},
             "start": 10,
             "end": 13,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "obligación",
             "lemma": "obligación",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NOUN",
             "feats": {},
             "start": 14,
             "end": 24,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": ".",
             "lemma": ".",
-            "pos": "punct",
+            "pos": "PUNCT",
             "upos": "PUNCT",
-            "xpos": "",
+            "xpos": "PUNCT",
             "feats": {},
             "start": 24,
             "end": 25,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           }
         ],
         "difficulty_aggregated": null

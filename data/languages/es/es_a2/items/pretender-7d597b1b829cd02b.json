@@ -47,52 +47,78 @@
       "translations": {
         "en": "I intend to leave early.",
         "es": "Pretendo salir temprano.",
-        "ipa": "[pɾeˈtendo saˈliɾ temˈpɾano]"
+        "ipa": "[pɾeˈtendo saˈliɾ temˈpɾano]",
+        "ar": "أنوي المغادرة مبكرًا.",
+        "cs": "Mám v úmyslu odejít brzy.",
+        "da": "Jeg har tænkt mig at gå tidligt.",
+        "de": "Ich habe vor, früh zu gehen.",
+        "el": "Σκοπεύω να φύγω νωρίς.",
+        "fi": "Aion lähteä aikaisin.",
+        "fr": "J'ai l'intention de partir tôt.",
+        "he": "אני מתכוון לצאת מוקדם.",
+        "hi": "मैं जल्दी निकलने का इरादा रखता हूँ।",
+        "hu": "Korán akarok elmenni.",
+        "id": "Saya berniat pergi lebih awal.",
+        "it": "Ho intenzione di partire presto.",
+        "ja": "私は早く出るつもりです。",
+        "ko": "저는 일찍 떠날 생각입니다.",
+        "nb": "Jeg har tenkt å dra tidlig.",
+        "nl": "Ik ben van plan vroeg te vertrekken.",
+        "pl": "Mam zamiar wyjść wcześnie.",
+        "pt": "Pretendo sair cedo.",
+        "ro": "Intenționez să plec devreme.",
+        "ru": "Я собираюсь уйти рано.",
+        "sv": "Jag tänker gå tidigt.",
+        "tr": "Erken ayrılmayı planlıyorum.",
+        "uk": "Я збираюся піти рано.",
+        "vi": "Tôi định đi sớm.",
+        "yue": "我打算早啲走。",
+        "zh-Hans": "我打算早点走。"
       },
       "tokens": [
         {
           "surface": "Pretendo",
-          "lemma": "pretendo",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "pretender",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VERB",
           "feats": {},
           "start": 0,
           "end": 8,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "salir",
           "lemma": "salir",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VERB",
           "feats": {},
           "start": 9,
           "end": 14,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "temprano",
           "lemma": "temprano",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "ADV",
           "feats": {},
           "start": 15,
           "end": 23,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": ".",
           "lemma": ".",
-          "pos": "punct",
+          "pos": "PUNCT",
           "upos": "PUNCT",
-          "xpos": "",
+          "xpos": "PUNCT",
           "feats": {},
           "start": 23,
           "end": 24,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         }
       ],
       "difficulty": null
@@ -103,74 +129,100 @@
       "translations": {
         "en": "What do you intend to do today?",
         "es": "¿Qué pretendes hacer hoy?",
-        "ipa": "[ke pɾeˈtendes aˈseɾ oi]"
+        "ipa": "[ke pɾeˈtendes aˈseɾ oi]",
+        "ar": "ماذا تنوي أن تفعل اليوم؟",
+        "cs": "Co dnes hodláš dělat?",
+        "da": "Hvad har du tænkt dig at gøre i dag?",
+        "de": "Was hast du heute vor zu tun?",
+        "el": "Τι σκοπεύεις να κάνεις σήμερα;",
+        "fi": "Mitä aiot tehdä tänään?",
+        "fr": "Qu'est-ce que tu as l'intention de faire aujourd'hui ?",
+        "he": "מה אתה מתכוון לעשות היום?",
+        "hi": "तुम आज क्या करने का इरादा रखते हो?",
+        "hu": "Mit akarsz ma csinálni?",
+        "id": "Apa yang ingin kamu lakukan hari ini?",
+        "it": "Che cosa hai intenzione di fare oggi?",
+        "ja": "今日は何をするつもりですか？",
+        "ko": "오늘 뭐 할 생각이에요?",
+        "nb": "Hva har du tenkt å gjøre i dag?",
+        "nl": "Wat ben je van plan vandaag te doen?",
+        "pl": "Co zamierzasz dziś zrobić?",
+        "pt": "O que você pretende fazer hoje?",
+        "ro": "Ce intenționezi să faci azi?",
+        "ru": "Что ты собираешься делать сегодня?",
+        "sv": "Vad tänker du göra i dag?",
+        "tr": "Bugün ne yapmayı planlıyorsun?",
+        "uk": "Що ти збираєшся робити сьогодні?",
+        "vi": "Hôm nay bạn định làm gì?",
+        "yue": "你今日打算做乜？",
+        "zh-Hans": "你今天打算做什么？"
       },
       "tokens": [
         {
           "surface": "¿",
           "lemma": "¿",
-          "pos": "punct",
+          "pos": "PUNCT",
           "upos": "PUNCT",
-          "xpos": "",
+          "xpos": "PUNCT",
           "feats": {},
           "start": 0,
           "end": 1,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "Qué",
           "lemma": "qué",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "PRON",
+          "upos": "PRON",
+          "xpos": "PRON",
           "feats": {},
           "start": 1,
           "end": 4,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "pretendes",
-          "lemma": "pretendes",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "pretender",
+          "pos": "AUX",
+          "upos": "AUX",
+          "xpos": "AUX",
           "feats": {},
           "start": 5,
           "end": 14,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "hacer",
           "lemma": "hacer",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VERB",
           "feats": {},
           "start": 15,
           "end": 20,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "hoy",
           "lemma": "hoy",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "ADV",
           "feats": {},
           "start": 21,
           "end": 24,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "?",
           "lemma": "?",
-          "pos": "punct",
+          "pos": "PUNCT",
           "upos": "PUNCT",
-          "xpos": "",
+          "xpos": "PUNCT",
           "feats": {},
           "start": 24,
           "end": 25,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         }
       ],
       "difficulty": null
@@ -181,63 +233,89 @@
       "translations": {
         "en": "She intends to travel tomorrow.",
         "es": "Ella pretende viajar mañana.",
-        "ipa": "[ˈeʝa pɾeˈtende βjaˈxaɾ maˈɲana]"
+        "ipa": "[ˈeʝa pɾeˈtende βjaˈxaɾ maˈɲana]",
+        "ar": "هي تنوي السفر غدًا.",
+        "cs": "Připravuje se cestovat zítra.",
+        "da": "Hun har tænkt sig at rejse i morgen.",
+        "de": "Sie hat vor, morgen zu reisen.",
+        "el": "Εκείνη σκοπεύει να ταξιδέψει αύριο.",
+        "fi": "Hän aikoo matkustaa huomenna.",
+        "fr": "Elle a l'intention de voyager demain.",
+        "he": "היא מתכוונת לנסוע מחר.",
+        "hi": "वह कल यात्रा करने का इरादा रखती है।",
+        "hu": "Ő holnap utazni akar.",
+        "id": "Dia berniat bepergian besok.",
+        "it": "Lei ha intenzione di viaggiare domani.",
+        "ja": "彼女は明日旅行するつもりです。",
+        "ko": "그녀는 내일 여행할 생각입니다.",
+        "nb": "Hun har tenkt å reise i morgen.",
+        "nl": "Zij is van plan morgen te reizen.",
+        "pl": "Ona zamierza podróżować jutro.",
+        "pt": "Ela pretende viajar amanhã.",
+        "ro": "Ea intenționează să călătorească mâine.",
+        "ru": "Она собирается ехать завтра.",
+        "sv": "Hon tänker resa i morgon.",
+        "tr": "O, yarın seyahat etmeyi planlıyor.",
+        "uk": "Вона збирається подорожувати завтра.",
+        "vi": "Cô ấy định đi du lịch ngày mai.",
+        "yue": "佢打算聽日去旅行。",
+        "zh-Hans": "她打算明天去旅行。"
       },
       "tokens": [
         {
           "surface": "Ella",
-          "lemma": "ella",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "él",
+          "pos": "PRON",
+          "upos": "PRON",
+          "xpos": "PRON",
           "feats": {},
           "start": 0,
           "end": 4,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "pretende",
-          "lemma": "pretende",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "pretender",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VERB",
           "feats": {},
           "start": 5,
           "end": 13,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "viajar",
           "lemma": "viajar",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VERB",
           "feats": {},
           "start": 14,
           "end": 20,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "mañana",
           "lemma": "mañana",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "ADV",
           "feats": {},
           "start": 21,
           "end": 27,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": ".",
           "lemma": ".",
-          "pos": "punct",
+          "pos": "PUNCT",
           "upos": "PUNCT",
-          "xpos": "",
+          "xpos": "PUNCT",
           "feats": {},
           "start": 27,
           "end": 28,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         }
       ],
       "difficulty": null
@@ -248,52 +326,78 @@
       "translations": {
         "en": "I don't intend to argue.",
         "es": "No pretendo discutir.",
-        "ipa": "[no pɾeˈtendo diskuˈtiɾ]"
+        "ipa": "[no pɾeˈtendo diskuˈtiɾ]",
+        "ar": "لا أنوي الجدال.",
+        "cs": "Nechci se hádat.",
+        "da": "Jeg har ikke tænkt mig at skændes.",
+        "de": "Ich habe nicht vor, zu streiten.",
+        "el": "Δεν σκοπεύω να μαλώσω.",
+        "fi": "En aio riidellä.",
+        "fr": "Je n'ai pas l'intention de me disputer.",
+        "he": "אני לא מתכוון להתווכח.",
+        "hi": "मेरा झगड़ने का इरादा नहीं है।",
+        "hu": "Nem akarok veszekedni.",
+        "id": "Saya tidak berniat bertengkar.",
+        "it": "Non ho intenzione di discutere.",
+        "ja": "けんかするつもりはありません。",
+        "ko": "저는 다툴 생각이 없습니다.",
+        "nb": "Jeg har ikke tenkt å krangle.",
+        "nl": "Ik ben niet van plan ruzie te maken.",
+        "pl": "Nie zamierzam się kłócić.",
+        "pt": "Não pretendo discutir.",
+        "ro": "Nu intenționez să mă cert.",
+        "ru": "Я не собираюсь спорить.",
+        "sv": "Jag tänker inte bråka.",
+        "tr": "Tartışmayı düşünmüyorum.",
+        "uk": "Я не збираюся сперечатися.",
+        "vi": "Tôi không định cãi nhau.",
+        "yue": "我唔打算吵架。",
+        "zh-Hans": "我不打算争吵。"
       },
       "tokens": [
         {
           "surface": "No",
           "lemma": "no",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "ADV",
           "feats": {},
           "start": 0,
           "end": 2,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "pretendo",
-          "lemma": "pretendo",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "pretender",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VERB",
           "feats": {},
           "start": 3,
           "end": 11,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "discutir",
           "lemma": "discutir",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VERB",
           "feats": {},
           "start": 12,
           "end": 20,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": ".",
           "lemma": ".",
-          "pos": "punct",
+          "pos": "PUNCT",
           "upos": "PUNCT",
-          "xpos": "",
+          "xpos": "PUNCT",
           "feats": {},
           "start": 20,
           "end": 21,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         }
       ],
       "difficulty": null
@@ -419,53 +523,209 @@
     "word_fi": "aikoa",
     "word_ja": "意図する",
     "word_es": "pretender",
+    "ar": [
+      "أنوي المغادرة مبكرًا.",
+      "ماذا تنوي أن تفعل اليوم؟",
+      "هي تنوي السفر غدًا.",
+      "لا أنوي الجدال."
+    ],
+    "cs": [
+      "Mám v úmyslu odejít brzy.",
+      "Co dnes hodláš dělat?",
+      "Připravuje se cestovat zítra.",
+      "Nechci se hádat."
+    ],
+    "da": [
+      "Jeg har tænkt mig at gå tidligt.",
+      "Hvad har du tænkt dig at gøre i dag?",
+      "Hun har tænkt sig at rejse i morgen.",
+      "Jeg har ikke tænkt mig at skændes."
+    ],
+    "de": [
+      "Ich habe vor, früh zu gehen.",
+      "Was hast du heute vor zu tun?",
+      "Sie hat vor, morgen zu reisen.",
+      "Ich habe nicht vor, zu streiten."
+    ],
+    "el": [
+      "Σκοπεύω να φύγω νωρίς.",
+      "Τι σκοπεύεις να κάνεις σήμερα;",
+      "Εκείνη σκοπεύει να ταξιδέψει αύριο.",
+      "Δεν σκοπεύω να μαλώσω."
+    ],
+    "fi": [
+      "Aion lähteä aikaisin.",
+      "Mitä aiot tehdä tänään?",
+      "Hän aikoo matkustaa huomenna.",
+      "En aio riidellä."
+    ],
+    "fr": [
+      "J'ai l'intention de partir tôt.",
+      "Qu'est-ce que tu as l'intention de faire aujourd'hui ?",
+      "Elle a l'intention de voyager demain.",
+      "Je n'ai pas l'intention de me disputer."
+    ],
+    "he": [
+      "אני מתכוון לצאת מוקדם.",
+      "מה אתה מתכוון לעשות היום?",
+      "היא מתכוונת לנסוע מחר.",
+      "אני לא מתכוון להתווכח."
+    ],
+    "hi": [
+      "मैं जल्दी निकलने का इरादा रखता हूँ।",
+      "तुम आज क्या करने का इरादा रखते हो?",
+      "वह कल यात्रा करने का इरादा रखती है।",
+      "मेरा झगड़ने का इरादा नहीं है।"
+    ],
+    "hu": [
+      "Korán akarok elmenni.",
+      "Mit akarsz ma csinálni?",
+      "Ő holnap utazni akar.",
+      "Nem akarok veszekedni."
+    ],
+    "id": [
+      "Saya berniat pergi lebih awal.",
+      "Apa yang ingin kamu lakukan hari ini?",
+      "Dia berniat bepergian besok.",
+      "Saya tidak berniat bertengkar."
+    ],
+    "it": [
+      "Ho intenzione di partire presto.",
+      "Che cosa hai intenzione di fare oggi?",
+      "Lei ha intenzione di viaggiare domani.",
+      "Non ho intenzione di discutere."
+    ],
+    "ja": [
+      "私は早く出るつもりです。",
+      "今日は何をするつもりですか？",
+      "彼女は明日旅行するつもりです。",
+      "けんかするつもりはありません。"
+    ],
+    "ko": [
+      "저는 일찍 떠날 생각입니다.",
+      "오늘 뭐 할 생각이에요?",
+      "그녀는 내일 여행할 생각입니다.",
+      "저는 다툴 생각이 없습니다."
+    ],
+    "nb": [
+      "Jeg har tenkt å dra tidlig.",
+      "Hva har du tenkt å gjøre i dag?",
+      "Hun har tenkt å reise i morgen.",
+      "Jeg har ikke tenkt å krangle."
+    ],
+    "nl": [
+      "Ik ben van plan vroeg te vertrekken.",
+      "Wat ben je van plan vandaag te doen?",
+      "Zij is van plan morgen te reizen.",
+      "Ik ben niet van plan ruzie te maken."
+    ],
+    "pl": [
+      "Mam zamiar wyjść wcześnie.",
+      "Co zamierzasz dziś zrobić?",
+      "Ona zamierza podróżować jutro.",
+      "Nie zamierzam się kłócić."
+    ],
+    "pt": [
+      "Pretendo sair cedo.",
+      "O que você pretende fazer hoje?",
+      "Ela pretende viajar amanhã.",
+      "Não pretendo discutir."
+    ],
+    "ro": [
+      "Intenționez să plec devreme.",
+      "Ce intenționezi să faci azi?",
+      "Ea intenționează să călătorească mâine.",
+      "Nu intenționez să mă cert."
+    ],
+    "ru": [
+      "Я собираюсь уйти рано.",
+      "Что ты собираешься делать сегодня?",
+      "Она собирается ехать завтра.",
+      "Я не собираюсь спорить."
+    ],
+    "sv": [
+      "Jag tänker gå tidigt.",
+      "Vad tänker du göra i dag?",
+      "Hon tänker resa i morgon.",
+      "Jag tänker inte bråka."
+    ],
+    "tr": [
+      "Erken ayrılmayı planlıyorum.",
+      "Bugün ne yapmayı planlıyorsun?",
+      "O, yarın seyahat etmeyi planlıyor.",
+      "Tartışmayı düşünmüyorum."
+    ],
+    "uk": [
+      "Я збираюся піти рано.",
+      "Що ти збираєшся робити сьогодні?",
+      "Вона збирається подорожувати завтра.",
+      "Я не збираюся сперечатися."
+    ],
+    "vi": [
+      "Tôi định đi sớm.",
+      "Hôm nay bạn định làm gì?",
+      "Cô ấy định đi du lịch ngày mai.",
+      "Tôi không định cãi nhau."
+    ],
+    "yue": [
+      "我打算早啲走。",
+      "你今日打算做乜？",
+      "佢打算聽日去旅行。",
+      "我唔打算吵架。"
+    ],
+    "zh-Hans": [
+      "我打算早点走。",
+      "你今天打算做什么？",
+      "她打算明天去旅行。",
+      "我不打算争吵。"
+    ],
     "pos_analysis": [
       {
         "sentence": "Pretendo salir temprano.",
         "tokens": [
           {
             "surface": "Pretendo",
-            "lemma": "pretendo",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "pretender",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VERB",
             "feats": {},
             "start": 0,
             "end": 8,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "salir",
             "lemma": "salir",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VERB",
             "feats": {},
             "start": 9,
             "end": 14,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "temprano",
             "lemma": "temprano",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
             "feats": {},
             "start": 15,
             "end": 23,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": ".",
             "lemma": ".",
-            "pos": "punct",
+            "pos": "PUNCT",
             "upos": "PUNCT",
-            "xpos": "",
+            "xpos": "PUNCT",
             "feats": {},
             "start": 23,
             "end": 24,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           }
         ],
         "difficulty_aggregated": null
@@ -476,68 +736,68 @@
           {
             "surface": "¿",
             "lemma": "¿",
-            "pos": "punct",
+            "pos": "PUNCT",
             "upos": "PUNCT",
-            "xpos": "",
+            "xpos": "PUNCT",
             "feats": {},
             "start": 0,
             "end": 1,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "Qué",
             "lemma": "qué",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PRON",
             "feats": {},
             "start": 1,
             "end": 4,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "pretendes",
-            "lemma": "pretendes",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "pretender",
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "AUX",
             "feats": {},
             "start": 5,
             "end": 14,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "hacer",
             "lemma": "hacer",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VERB",
             "feats": {},
             "start": 15,
             "end": 20,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "hoy",
             "lemma": "hoy",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
             "feats": {},
             "start": 21,
             "end": 24,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "?",
             "lemma": "?",
-            "pos": "punct",
+            "pos": "PUNCT",
             "upos": "PUNCT",
-            "xpos": "",
+            "xpos": "PUNCT",
             "feats": {},
             "start": 24,
             "end": 25,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           }
         ],
         "difficulty_aggregated": null
@@ -547,58 +807,58 @@
         "tokens": [
           {
             "surface": "Ella",
-            "lemma": "ella",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "él",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PRON",
             "feats": {},
             "start": 0,
             "end": 4,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "pretende",
-            "lemma": "pretende",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "pretender",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VERB",
             "feats": {},
             "start": 5,
             "end": 13,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "viajar",
             "lemma": "viajar",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VERB",
             "feats": {},
             "start": 14,
             "end": 20,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "mañana",
             "lemma": "mañana",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
             "feats": {},
             "start": 21,
             "end": 27,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": ".",
             "lemma": ".",
-            "pos": "punct",
+            "pos": "PUNCT",
             "upos": "PUNCT",
-            "xpos": "",
+            "xpos": "PUNCT",
             "feats": {},
             "start": 27,
             "end": 28,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           }
         ],
         "difficulty_aggregated": null
@@ -609,46 +869,46 @@
           {
             "surface": "No",
             "lemma": "no",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
             "feats": {},
             "start": 0,
             "end": 2,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "pretendo",
-            "lemma": "pretendo",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "pretender",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VERB",
             "feats": {},
             "start": 3,
             "end": 11,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "discutir",
             "lemma": "discutir",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VERB",
             "feats": {},
             "start": 12,
             "end": 20,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": ".",
             "lemma": ".",
-            "pos": "punct",
+            "pos": "PUNCT",
             "upos": "PUNCT",
-            "xpos": "",
+            "xpos": "PUNCT",
             "feats": {},
             "start": 20,
             "end": 21,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           }
         ],
         "difficulty_aggregated": null

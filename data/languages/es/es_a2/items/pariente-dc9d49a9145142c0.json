@@ -47,63 +47,89 @@
       "translations": {
         "en": "My relative lives nearby.",
         "es": "Mi pariente vive cerca.",
-        "ipa": "[mi paˈɾjente ˈbiβe ˈseɾka]"
+        "ipa": "[mi paˈɾjente ˈbiβe ˈseɾka]",
+        "ar": "يعيش قريبي بالقرب من هنا.",
+        "cs": "Můj příbuzný bydlí nedaleko.",
+        "da": "Min slægtning bor i nærheden.",
+        "de": "Mein Verwandter wohnt in der Nähe.",
+        "el": "Ο συγγενής μου μένει κοντά.",
+        "fi": "Sukulaiseni asuu lähellä.",
+        "fr": "Mon parent habite près d'ici.",
+        "he": "הקרוב שלי גר בקרבת מקום.",
+        "hi": "मेरा रिश्तेदार पास में रहता है।",
+        "hu": "A rokonunk a közelben lakik.",
+        "id": "Kerabat saya tinggal di dekat sini.",
+        "it": "Il mio parente vive vicino.",
+        "ja": "私の親戚は近くに住んでいます。",
+        "ko": "제 친척은 가까이에 삽니다.",
+        "nb": "Min slektning bor i nærheten.",
+        "nl": "Mijn familielid woont vlakbij.",
+        "pl": "Mój krewny mieszka niedaleko.",
+        "pt": "Meu parente mora perto.",
+        "ro": "Ruda mea locuiește aproape.",
+        "ru": "Мой родственник живёт рядом.",
+        "sv": "Min släkting bor i närheten.",
+        "tr": "Yakınım burada yakınlarda oturuyor.",
+        "uk": "Мій родич живе неподалік.",
+        "vi": "Người thân của tôi sống gần đây.",
+        "yue": "我嘅親戚住喺附近。",
+        "zh-Hans": "我的亲戚住在附近。"
       },
       "tokens": [
         {
           "surface": "Mi",
           "lemma": "mi",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "DET",
           "feats": {},
           "start": 0,
           "end": 2,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "pariente",
           "lemma": "pariente",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NOUN",
           "feats": {},
           "start": 3,
           "end": 11,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "vive",
-          "lemma": "vive",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "vivir",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VERB",
           "feats": {},
           "start": 12,
           "end": 16,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "cerca",
           "lemma": "cerca",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "ADV",
           "feats": {},
           "start": 17,
           "end": 22,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": ".",
           "lemma": ".",
-          "pos": "punct",
+          "pos": "PUNCT",
           "upos": "PUNCT",
-          "xpos": "",
+          "xpos": "PUNCT",
           "feats": {},
           "start": 22,
           "end": 23,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         }
       ],
       "difficulty": null
@@ -114,85 +140,111 @@
       "translations": {
         "en": "I have a relative in another city.",
         "es": "Tengo un pariente en otra ciudad.",
-        "ipa": "[ˈteŋɡo un paˈɾjente en ˈotɾa sjuˈðað]"
+        "ipa": "[ˈteŋɡo un paˈɾjente en ˈotɾa sjuˈðað]",
+        "ar": "لدي قريب في مدينة أخرى.",
+        "cs": "Mám příbuzného v jiném městě.",
+        "da": "Jeg har en slægtning i en anden by.",
+        "de": "Ich habe einen Verwandten in einer anderen Stadt.",
+        "el": "Έχω έναν συγγενή σε άλλη πόλη.",
+        "fi": "Minulla on sukulainen toisessa kaupungissa.",
+        "fr": "J'ai un parent dans une autre ville.",
+        "he": "יש לי קרוב בעיר אחרת.",
+        "hi": "मेरा एक रिश्तेदार दूसरे शहर में है।",
+        "hu": "Van egy rokonom egy másik városban.",
+        "id": "Saya punya kerabat di kota lain.",
+        "it": "Ho un parente in un'altra città.",
+        "ja": "私は別の町に親戚がいます。",
+        "ko": "다른 도시에 친척이 있습니다.",
+        "nb": "Jeg har en slektning i en annen by.",
+        "nl": "Ik heb een familielid in een andere stad.",
+        "pl": "Mam krewnego w innym mieście.",
+        "pt": "Tenho um parente em outra cidade.",
+        "ro": "Am o rudă într-un alt oraș.",
+        "ru": "У меня есть родственник в другом городе.",
+        "sv": "Jag har en släkting i en annan stad.",
+        "tr": "Başka bir şehirde bir yakınım var.",
+        "uk": "У мене є родич в іншому місті.",
+        "vi": "Tôi có một người thân ở thành phố khác.",
+        "yue": "我喺另一個城市有個親戚。",
+        "zh-Hans": "我在另一个城市有一个亲戚。"
       },
       "tokens": [
         {
           "surface": "Tengo",
-          "lemma": "tengo",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "tener",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VERB",
           "feats": {},
           "start": 0,
           "end": 5,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "un",
-          "lemma": "un",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "uno",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "DET",
           "feats": {},
           "start": 6,
           "end": 8,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "pariente",
           "lemma": "pariente",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NOUN",
           "feats": {},
           "start": 9,
           "end": 17,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "en",
           "lemma": "en",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "ADP",
           "feats": {},
           "start": 18,
           "end": 20,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "otra",
-          "lemma": "otra",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "otro",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "DET",
           "feats": {},
           "start": 21,
           "end": 25,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "ciudad",
           "lemma": "ciudad",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NOUN",
           "feats": {},
           "start": 26,
           "end": 32,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": ".",
           "lemma": ".",
-          "pos": "punct",
+          "pos": "PUNCT",
           "upos": "PUNCT",
-          "xpos": "",
+          "xpos": "PUNCT",
           "feats": {},
           "start": 32,
           "end": 33,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         }
       ],
       "difficulty": null
@@ -203,85 +255,111 @@
       "translations": {
         "en": "That tree is related to the olive tree.",
         "es": "Ese árbol es pariente del olivo.",
-        "ipa": "[ˈese ˈaɾβol es paˈɾjente ðel oˈliβo]"
+        "ipa": "[ˈese ˈaɾβol es paˈɾjente ðel oˈliβo]",
+        "ar": "تلك الشجرة من نفس فصيلة شجرة الزيتون.",
+        "cs": "Ten strom je příbuzný olivovníku.",
+        "da": "Det træ er i familie med oliventræet.",
+        "de": "Dieser Baum ist mit dem Olivenbaum verwandt.",
+        "el": "Αυτό το δέντρο είναι συγγενικό με την ελιά.",
+        "fi": "Tuo puu on sukua oliivipuulle.",
+        "fr": "Cet arbre est de la même famille que l'olivier.",
+        "he": "העץ הזה קרוב משפחה של עץ הזית.",
+        "hi": "यह पेड़ जैतून के पेड़ से संबंधित है।",
+        "hu": "Ez a fa rokon az olajfával.",
+        "id": "Pohon itu berkerabat dengan pohon zaitun.",
+        "it": "Quest'albero è imparentato con l'olivo.",
+        "ja": "その木はオリーブの木の仲間です。",
+        "ko": "저 나무는 올리브나무와 친척입니다.",
+        "nb": "Det treet er i slekt med oliventreet.",
+        "nl": "Die boom is verwant aan de olijfboom.",
+        "pl": "To drzewo jest spokrewnione z drzewem oliwnym.",
+        "pt": "Essa árvore é da mesma família que a oliveira.",
+        "ro": "Acest copac este înrudit cu măslinul.",
+        "ru": "Это дерево родственно оливе.",
+        "sv": "Det där trädet är släkt med olivträdet.",
+        "tr": "O ağaç, zeytin ağacıyla akraba.",
+        "uk": "Це дерево споріднене з оливою.",
+        "vi": "Cây đó có họ với cây ô liu.",
+        "yue": "嗰棵樹同橄欖樹係近親。",
+        "zh-Hans": "那棵树和橄榄树是近亲。"
       },
       "tokens": [
         {
           "surface": "Ese",
           "lemma": "ese",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "DET",
           "feats": {},
           "start": 0,
           "end": 3,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "árbol",
           "lemma": "árbol",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NOUN",
           "feats": {},
           "start": 4,
           "end": 9,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "es",
-          "lemma": "es",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "ser",
+          "pos": "AUX",
+          "upos": "AUX",
+          "xpos": "AUX",
           "feats": {},
           "start": 10,
           "end": 12,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "pariente",
           "lemma": "pariente",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "ADJ",
+          "upos": "ADJ",
+          "xpos": "ADJ",
           "feats": {},
           "start": 13,
           "end": 21,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "del",
           "lemma": "del",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "ADP",
           "feats": {},
           "start": 22,
           "end": 25,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "olivo",
           "lemma": "olivo",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NOUN",
           "feats": {},
           "start": 26,
           "end": 31,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": ".",
           "lemma": ".",
-          "pos": "punct",
+          "pos": "PUNCT",
           "upos": "PUNCT",
-          "xpos": "",
+          "xpos": "PUNCT",
           "feats": {},
           "start": 31,
           "end": 32,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         }
       ],
       "difficulty": null
@@ -292,74 +370,100 @@
       "translations": {
         "en": "The two plants are related.",
         "es": "Las dos plantas son parientes.",
-        "ipa": "[las ðos ˈplantas son paˈɾjentes]"
+        "ipa": "[las ðos ˈplantas son paˈɾjentes]",
+        "ar": "النباتان من نفس الفصيلة.",
+        "cs": "Ty dvě rostliny jsou příbuzné.",
+        "da": "De to planter er i familie.",
+        "de": "Die beiden Pflanzen sind verwandt.",
+        "el": "Τα δύο φυτά είναι συγγενικά.",
+        "fi": "Kaksi kasvia ovat sukua.",
+        "fr": "Les deux plantes sont de la même famille.",
+        "he": "שני הצמחים הם קרובי משפחה.",
+        "hi": "दोनों पौधे संबंधित हैं।",
+        "hu": "A két növény rokon.",
+        "id": "Kedua tanaman itu berkerabat.",
+        "it": "Le due piante sono imparentate.",
+        "ja": "その二つの植物は仲間です。",
+        "ko": "그 두 식물은 친척입니다.",
+        "nb": "De to plantene er i slekt.",
+        "nl": "De twee planten zijn verwant.",
+        "pl": "Te dwie rośliny są spokrewnione.",
+        "pt": "As duas plantas são da mesma família.",
+        "ro": "Cele două plante sunt înrudite.",
+        "ru": "Эти два растения родственны.",
+        "sv": "De två växterna är släkt.",
+        "tr": "İki bitki akraba.",
+        "uk": "Ці дві рослини споріднені.",
+        "vi": "Hai cây này có họ với nhau.",
+        "yue": "呢兩種植物係近親。",
+        "zh-Hans": "这两种植物是近亲。"
       },
       "tokens": [
         {
           "surface": "Las",
-          "lemma": "las",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "el",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "DET",
           "feats": {},
           "start": 0,
           "end": 3,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "dos",
           "lemma": "dos",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "NUM",
+          "upos": "NUM",
+          "xpos": "NUM",
           "feats": {},
           "start": 4,
           "end": 7,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "plantas",
-          "lemma": "plantas",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "planta",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NOUN",
           "feats": {},
           "start": 8,
           "end": 15,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "son",
-          "lemma": "son",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "ser",
+          "pos": "AUX",
+          "upos": "AUX",
+          "xpos": "AUX",
           "feats": {},
           "start": 16,
           "end": 19,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "parientes",
-          "lemma": "parientes",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "pariente",
+          "pos": "ADJ",
+          "upos": "ADJ",
+          "xpos": "ADJ",
           "feats": {},
           "start": 20,
           "end": 29,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": ".",
           "lemma": ".",
-          "pos": "punct",
+          "pos": "PUNCT",
           "upos": "PUNCT",
-          "xpos": "",
+          "xpos": "PUNCT",
           "feats": {},
           "start": 29,
           "end": 30,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         }
       ],
       "difficulty": null
@@ -485,6 +589,162 @@
     "word_fi": "sukulainen; sukua",
     "word_ja": "親戚; 関連した",
     "word_es": "pariente",
+    "ar": [
+      "يعيش قريبي بالقرب من هنا.",
+      "لدي قريب في مدينة أخرى.",
+      "تلك الشجرة من نفس فصيلة شجرة الزيتون.",
+      "النباتان من نفس الفصيلة."
+    ],
+    "cs": [
+      "Můj příbuzný bydlí nedaleko.",
+      "Mám příbuzného v jiném městě.",
+      "Ten strom je příbuzný olivovníku.",
+      "Ty dvě rostliny jsou příbuzné."
+    ],
+    "da": [
+      "Min slægtning bor i nærheden.",
+      "Jeg har en slægtning i en anden by.",
+      "Det træ er i familie med oliventræet.",
+      "De to planter er i familie."
+    ],
+    "de": [
+      "Mein Verwandter wohnt in der Nähe.",
+      "Ich habe einen Verwandten in einer anderen Stadt.",
+      "Dieser Baum ist mit dem Olivenbaum verwandt.",
+      "Die beiden Pflanzen sind verwandt."
+    ],
+    "el": [
+      "Ο συγγενής μου μένει κοντά.",
+      "Έχω έναν συγγενή σε άλλη πόλη.",
+      "Αυτό το δέντρο είναι συγγενικό με την ελιά.",
+      "Τα δύο φυτά είναι συγγενικά."
+    ],
+    "fi": [
+      "Sukulaiseni asuu lähellä.",
+      "Minulla on sukulainen toisessa kaupungissa.",
+      "Tuo puu on sukua oliivipuulle.",
+      "Kaksi kasvia ovat sukua."
+    ],
+    "fr": [
+      "Mon parent habite près d'ici.",
+      "J'ai un parent dans une autre ville.",
+      "Cet arbre est de la même famille que l'olivier.",
+      "Les deux plantes sont de la même famille."
+    ],
+    "he": [
+      "הקרוב שלי גר בקרבת מקום.",
+      "יש לי קרוב בעיר אחרת.",
+      "העץ הזה קרוב משפחה של עץ הזית.",
+      "שני הצמחים הם קרובי משפחה."
+    ],
+    "hi": [
+      "मेरा रिश्तेदार पास में रहता है।",
+      "मेरा एक रिश्तेदार दूसरे शहर में है।",
+      "यह पेड़ जैतून के पेड़ से संबंधित है।",
+      "दोनों पौधे संबंधित हैं।"
+    ],
+    "hu": [
+      "A rokonunk a közelben lakik.",
+      "Van egy rokonom egy másik városban.",
+      "Ez a fa rokon az olajfával.",
+      "A két növény rokon."
+    ],
+    "id": [
+      "Kerabat saya tinggal di dekat sini.",
+      "Saya punya kerabat di kota lain.",
+      "Pohon itu berkerabat dengan pohon zaitun.",
+      "Kedua tanaman itu berkerabat."
+    ],
+    "it": [
+      "Il mio parente vive vicino.",
+      "Ho un parente in un'altra città.",
+      "Quest'albero è imparentato con l'olivo.",
+      "Le due piante sono imparentate."
+    ],
+    "ja": [
+      "私の親戚は近くに住んでいます。",
+      "私は別の町に親戚がいます。",
+      "その木はオリーブの木の仲間です。",
+      "その二つの植物は仲間です。"
+    ],
+    "ko": [
+      "제 친척은 가까이에 삽니다.",
+      "다른 도시에 친척이 있습니다.",
+      "저 나무는 올리브나무와 친척입니다.",
+      "그 두 식물은 친척입니다."
+    ],
+    "nb": [
+      "Min slektning bor i nærheten.",
+      "Jeg har en slektning i en annen by.",
+      "Det treet er i slekt med oliventreet.",
+      "De to plantene er i slekt."
+    ],
+    "nl": [
+      "Mijn familielid woont vlakbij.",
+      "Ik heb een familielid in een andere stad.",
+      "Die boom is verwant aan de olijfboom.",
+      "De twee planten zijn verwant."
+    ],
+    "pl": [
+      "Mój krewny mieszka niedaleko.",
+      "Mam krewnego w innym mieście.",
+      "To drzewo jest spokrewnione z drzewem oliwnym.",
+      "Te dwie rośliny są spokrewnione."
+    ],
+    "pt": [
+      "Meu parente mora perto.",
+      "Tenho um parente em outra cidade.",
+      "Essa árvore é da mesma família que a oliveira.",
+      "As duas plantas são da mesma família."
+    ],
+    "ro": [
+      "Ruda mea locuiește aproape.",
+      "Am o rudă într-un alt oraș.",
+      "Acest copac este înrudit cu măslinul.",
+      "Cele două plante sunt înrudite."
+    ],
+    "ru": [
+      "Мой родственник живёт рядом.",
+      "У меня есть родственник в другом городе.",
+      "Это дерево родственно оливе.",
+      "Эти два растения родственны."
+    ],
+    "sv": [
+      "Min släkting bor i närheten.",
+      "Jag har en släkting i en annan stad.",
+      "Det där trädet är släkt med olivträdet.",
+      "De två växterna är släkt."
+    ],
+    "tr": [
+      "Yakınım burada yakınlarda oturuyor.",
+      "Başka bir şehirde bir yakınım var.",
+      "O ağaç, zeytin ağacıyla akraba.",
+      "İki bitki akraba."
+    ],
+    "uk": [
+      "Мій родич живе неподалік.",
+      "У мене є родич в іншому місті.",
+      "Це дерево споріднене з оливою.",
+      "Ці дві рослини споріднені."
+    ],
+    "vi": [
+      "Người thân của tôi sống gần đây.",
+      "Tôi có một người thân ở thành phố khác.",
+      "Cây đó có họ với cây ô liu.",
+      "Hai cây này có họ với nhau."
+    ],
+    "yue": [
+      "我嘅親戚住喺附近。",
+      "我喺另一個城市有個親戚。",
+      "嗰棵樹同橄欖樹係近親。",
+      "呢兩種植物係近親。"
+    ],
+    "zh-Hans": [
+      "我的亲戚住在附近。",
+      "我在另一个城市有一个亲戚。",
+      "那棵树和橄榄树是近亲。",
+      "这两种植物是近亲。"
+    ],
     "pos_analysis": [
       {
         "sentence": "Mi pariente vive cerca.",
@@ -492,57 +752,57 @@
           {
             "surface": "Mi",
             "lemma": "mi",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "DET",
             "feats": {},
             "start": 0,
             "end": 2,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "pariente",
             "lemma": "pariente",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NOUN",
             "feats": {},
             "start": 3,
             "end": 11,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "vive",
-            "lemma": "vive",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "vivir",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VERB",
             "feats": {},
             "start": 12,
             "end": 16,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "cerca",
             "lemma": "cerca",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
             "feats": {},
             "start": 17,
             "end": 22,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": ".",
             "lemma": ".",
-            "pos": "punct",
+            "pos": "PUNCT",
             "upos": "PUNCT",
-            "xpos": "",
+            "xpos": "PUNCT",
             "feats": {},
             "start": 22,
             "end": 23,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           }
         ],
         "difficulty_aggregated": null
@@ -552,80 +812,80 @@
         "tokens": [
           {
             "surface": "Tengo",
-            "lemma": "tengo",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "tener",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VERB",
             "feats": {},
             "start": 0,
             "end": 5,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "un",
-            "lemma": "un",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "uno",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "DET",
             "feats": {},
             "start": 6,
             "end": 8,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "pariente",
             "lemma": "pariente",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NOUN",
             "feats": {},
             "start": 9,
             "end": 17,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "en",
             "lemma": "en",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "ADP",
             "feats": {},
             "start": 18,
             "end": 20,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "otra",
-            "lemma": "otra",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "otro",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "DET",
             "feats": {},
             "start": 21,
             "end": 25,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "ciudad",
             "lemma": "ciudad",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NOUN",
             "feats": {},
             "start": 26,
             "end": 32,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": ".",
             "lemma": ".",
-            "pos": "punct",
+            "pos": "PUNCT",
             "upos": "PUNCT",
-            "xpos": "",
+            "xpos": "PUNCT",
             "feats": {},
             "start": 32,
             "end": 33,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           }
         ],
         "difficulty_aggregated": null
@@ -636,79 +896,79 @@
           {
             "surface": "Ese",
             "lemma": "ese",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "DET",
             "feats": {},
             "start": 0,
             "end": 3,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "árbol",
             "lemma": "árbol",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NOUN",
             "feats": {},
             "start": 4,
             "end": 9,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "es",
-            "lemma": "es",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "ser",
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "AUX",
             "feats": {},
             "start": 10,
             "end": 12,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "pariente",
             "lemma": "pariente",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "ADJ",
+            "upos": "ADJ",
+            "xpos": "ADJ",
             "feats": {},
             "start": 13,
             "end": 21,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "del",
             "lemma": "del",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "ADP",
             "feats": {},
             "start": 22,
             "end": 25,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "olivo",
             "lemma": "olivo",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NOUN",
             "feats": {},
             "start": 26,
             "end": 31,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": ".",
             "lemma": ".",
-            "pos": "punct",
+            "pos": "PUNCT",
             "upos": "PUNCT",
-            "xpos": "",
+            "xpos": "PUNCT",
             "feats": {},
             "start": 31,
             "end": 32,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           }
         ],
         "difficulty_aggregated": null
@@ -718,69 +978,69 @@
         "tokens": [
           {
             "surface": "Las",
-            "lemma": "las",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "el",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "DET",
             "feats": {},
             "start": 0,
             "end": 3,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "dos",
             "lemma": "dos",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "NUM",
+            "upos": "NUM",
+            "xpos": "NUM",
             "feats": {},
             "start": 4,
             "end": 7,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "plantas",
-            "lemma": "plantas",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "planta",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NOUN",
             "feats": {},
             "start": 8,
             "end": 15,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "son",
-            "lemma": "son",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "ser",
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "AUX",
             "feats": {},
             "start": 16,
             "end": 19,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "parientes",
-            "lemma": "parientes",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "pariente",
+            "pos": "ADJ",
+            "upos": "ADJ",
+            "xpos": "ADJ",
             "feats": {},
             "start": 20,
             "end": 29,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": ".",
             "lemma": ".",
-            "pos": "punct",
+            "pos": "PUNCT",
             "upos": "PUNCT",
-            "xpos": "",
+            "xpos": "PUNCT",
             "feats": {},
             "start": 29,
             "end": 30,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           }
         ],
         "difficulty_aggregated": null

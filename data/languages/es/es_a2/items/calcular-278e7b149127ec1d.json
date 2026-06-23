@@ -47,63 +47,89 @@
       "translations": {
         "en": "I can calculate the price.",
         "es": "Puedo calcular el precio.",
-        "ipa": "/ˈpwe.ðo kal.kuˈlaɾ el ˈpɾe.sjo/"
+        "ipa": "/ˈpwe.ðo kal.kuˈlaɾ el ˈpɾe.sjo/",
+        "ar": "أستطيع حساب السعر.",
+        "cs": "Můžu spočítat cenu.",
+        "da": "Jeg kan beregne prisen.",
+        "de": "Ich kann den Preis berechnen.",
+        "el": "Μπορώ να υπολογίσω την τιμή.",
+        "fi": "Voin laskea hinnan.",
+        "fr": "Je peux calculer le prix.",
+        "he": "אני יכול לחשב את המחיר.",
+        "hi": "मैं कीमत का हिसाब लगा सकता हूँ।",
+        "hu": "Ki tudom számolni az árat.",
+        "id": "Saya bisa menghitung harganya.",
+        "it": "Posso calcolare il prezzo.",
+        "ja": "値段を計算できます。",
+        "ko": "가격을 계산할 수 있어요.",
+        "nb": "Jeg kan beregne prisen.",
+        "nl": "Ik kan de prijs berekenen.",
+        "pl": "Mogę obliczyć cenę.",
+        "pt": "Posso calcular o preço.",
+        "ro": "Pot calcula prețul.",
+        "ru": "Я могу рассчитать цену.",
+        "sv": "Jag kan beräkna priset.",
+        "tr": "Fiyatı hesaplayabilirim.",
+        "uk": "Я можу обчислити ціну.",
+        "vi": "Tôi có thể tính giá.",
+        "yue": "我可以計算價錢。",
+        "zh-Hans": "我可以计算价格。"
       },
       "tokens": [
         {
           "surface": "Puedo",
-          "lemma": "puedo",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "poder",
+          "pos": "AUX",
+          "upos": "AUX",
+          "xpos": "AUX",
           "feats": {},
           "start": 0,
           "end": 5,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "calcular",
           "lemma": "calcular",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VERB",
           "feats": {},
           "start": 6,
           "end": 14,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "el",
           "lemma": "el",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "DET",
           "feats": {},
           "start": 15,
           "end": 17,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "precio",
           "lemma": "precio",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NOUN",
           "feats": {},
           "start": 18,
           "end": 24,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": ".",
           "lemma": ".",
-          "pos": "punct",
+          "pos": "PUNCT",
           "upos": "PUNCT",
-          "xpos": "",
+          "xpos": "PUNCT",
           "feats": {},
           "start": 24,
           "end": 25,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         }
       ],
       "difficulty": null
@@ -114,85 +140,111 @@
       "translations": {
         "en": "My father knows how to estimate the time.",
         "es": "Mi padre sabe calcular el tiempo.",
-        "ipa": "/mi ˈpa.ðɾe ˈsa.βe kal.kuˈlaɾ el ˈtjem.po/"
+        "ipa": "/mi ˈpa.ðɾe ˈsa.βe kal.kuˈlaɾ el ˈtjem.po/",
+        "ar": "يعرف أبي كيف يقدّر الوقت.",
+        "cs": "Můj otec umí odhadnout čas.",
+        "da": "Min far ved, hvordan man estimerer tiden.",
+        "de": "Mein Vater kann die Zeit einschätzen.",
+        "el": "Ο πατέρας μου ξέρει πώς να εκτιμά τον χρόνο.",
+        "fi": "Isäni osaa arvioida ajan.",
+        "fr": "Mon père sait estimer le temps.",
+        "he": "אבא שלי יודע להעריך את הזמן.",
+        "hi": "मेरे पिता समय का अनुमान लगाना जानते हैं।",
+        "hu": "Az apám tudja, hogyan kell megbecsülni az időt.",
+        "id": "Ayah saya tahu cara memperkirakan waktunya.",
+        "it": "Mio padre sa stimare il tempo.",
+        "ja": "父は時間を見積もる方法を知っています。",
+        "ko": "아버지는 시간을 짐작하는 방법을 알아요.",
+        "nb": "Faren min kan anslå tiden.",
+        "nl": "Mijn vader weet hoe hij de tijd moet schatten.",
+        "pl": "Mój ojciec potrafi oszacować czas.",
+        "pt": "Meu pai sabe estimar o tempo.",
+        "ro": "Tatăl meu știe să estimeze timpul.",
+        "ru": "Мой отец умеет оценивать время.",
+        "sv": "Min pappa kan uppskatta tiden.",
+        "tr": "Babam zamanı tahmin etmeyi bilir.",
+        "uk": "Мій батько вміє оцінювати час.",
+        "vi": "Bố tôi biết ước tính thời gian.",
+        "yue": "我爸爸識得估時間。",
+        "zh-Hans": "我父亲知道怎么估算时间。"
       },
       "tokens": [
         {
           "surface": "Mi",
           "lemma": "mi",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "DET",
           "feats": {},
           "start": 0,
           "end": 2,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "padre",
           "lemma": "padre",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NOUN",
           "feats": {},
           "start": 3,
           "end": 8,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "sabe",
-          "lemma": "sabe",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "saber",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VERB",
           "feats": {},
           "start": 9,
           "end": 13,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "calcular",
           "lemma": "calcular",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VERB",
           "feats": {},
           "start": 14,
           "end": 22,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "el",
           "lemma": "el",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "DET",
           "feats": {},
           "start": 23,
           "end": 25,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "tiempo",
           "lemma": "tiempo",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NOUN",
           "feats": {},
           "start": 26,
           "end": 32,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": ".",
           "lemma": ".",
-          "pos": "punct",
+          "pos": "PUNCT",
           "upos": "PUNCT",
-          "xpos": "",
+          "xpos": "PUNCT",
           "feats": {},
           "start": 32,
           "end": 33,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         }
       ],
       "difficulty": null
@@ -203,74 +255,100 @@
       "translations": {
         "en": "I'm going to calculate the bill.",
         "es": "Voy a calcular la cuenta.",
-        "ipa": "/boj a kal.kuˈlaɾ la ˈkwen.ta/"
+        "ipa": "/boj a kal.kuˈlaɾ la ˈkwen.ta/",
+        "ar": "سأحسب الفاتورة.",
+        "cs": "Chystám se spočítat účet.",
+        "da": "Jeg vil beregne regningen.",
+        "de": "Ich werde die Rechnung berechnen.",
+        "el": "Θα υπολογίσω τον λογαριασμό.",
+        "fi": "Aion laskea laskun.",
+        "fr": "Je vais calculer l'addition.",
+        "he": "אני הולך לחשב את החשבון.",
+        "hi": "मैं बिल का हिसाब लगाने वाला हूँ।",
+        "hu": "Ki fogom számolni a számlát.",
+        "id": "Saya akan menghitung tagihannya.",
+        "it": "Calcolerò il conto.",
+        "ja": "会計を計算します。",
+        "ko": "계산서를 계산할 거예요.",
+        "nb": "Jeg skal beregne regningen.",
+        "nl": "Ik ga de rekening berekenen.",
+        "pl": "Zamierzam obliczyć rachunek.",
+        "pt": "Vou calcular a conta.",
+        "ro": "O să calculez nota.",
+        "ru": "Я собираюсь посчитать счёт.",
+        "sv": "Jag ska beräkna notan.",
+        "tr": "Hesabı hesaplayacağım.",
+        "uk": "Я збираюся обчислити рахунок.",
+        "vi": "Tôi sẽ tính hóa đơn.",
+        "yue": "我會計條數。",
+        "zh-Hans": "我要计算账单。"
       },
       "tokens": [
         {
           "surface": "Voy",
-          "lemma": "voy",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "ir",
+          "pos": "AUX",
+          "upos": "AUX",
+          "xpos": "AUX",
           "feats": {},
           "start": 0,
           "end": 3,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "a",
           "lemma": "a",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "ADP",
           "feats": {},
           "start": 4,
           "end": 5,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "calcular",
           "lemma": "calcular",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VERB",
           "feats": {},
           "start": 6,
           "end": 14,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "la",
-          "lemma": "la",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "el",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "DET",
           "feats": {},
           "start": 15,
           "end": 17,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "cuenta",
           "lemma": "cuenta",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NOUN",
           "feats": {},
           "start": 18,
           "end": 24,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": ".",
           "lemma": ".",
-          "pos": "punct",
+          "pos": "PUNCT",
           "upos": "PUNCT",
-          "xpos": "",
+          "xpos": "PUNCT",
           "feats": {},
           "start": 24,
           "end": 25,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         }
       ],
       "difficulty": null
@@ -281,63 +359,89 @@
       "translations": {
         "en": "I want to calculate the cost.",
         "es": "Quiero calcular el gasto.",
-        "ipa": "/ˈkje.ɾo kal.kuˈlaɾ el ˈɡas.to/"
+        "ipa": "/ˈkje.ɾo kal.kuˈlaɾ el ˈɡas.to/",
+        "ar": "أريد حساب التكلفة.",
+        "cs": "Chci spočítat náklady.",
+        "da": "Jeg vil beregne udgiften.",
+        "de": "Ich möchte die Kosten berechnen.",
+        "el": "Θέλω να υπολογίσω το κόστος.",
+        "fi": "Haluan laskea kulut.",
+        "fr": "Je veux calculer le coût.",
+        "he": "אני רוצה לחשב את העלות.",
+        "hi": "मैं खर्च का हिसाब लगाना चाहता हूँ।",
+        "hu": "Ki akarom számolni a költséget.",
+        "id": "Saya ingin menghitung biayanya.",
+        "it": "Voglio calcolare il costo.",
+        "ja": "費用を計算したいです。",
+        "ko": "비용을 계산하고 싶어요.",
+        "nb": "Jeg vil beregne kostnaden.",
+        "nl": "Ik wil de kosten berekenen.",
+        "pl": "Chcę obliczyć koszt.",
+        "pt": "Quero calcular o custo.",
+        "ro": "Vreau să calculez costul.",
+        "ru": "Я хочу рассчитать стоимость.",
+        "sv": "Jag vill beräkna kostnaden.",
+        "tr": "Masrafı hesaplamak istiyorum.",
+        "uk": "Я хочу обчислити витрати.",
+        "vi": "Tôi muốn tính chi phí.",
+        "yue": "我想計開支。",
+        "zh-Hans": "我想计算费用。"
       },
       "tokens": [
         {
           "surface": "Quiero",
-          "lemma": "quiero",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "querer",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VERB",
           "feats": {},
           "start": 0,
           "end": 6,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "calcular",
           "lemma": "calcular",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VERB",
           "feats": {},
           "start": 7,
           "end": 15,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "el",
           "lemma": "el",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "DET",
           "feats": {},
           "start": 16,
           "end": 18,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "gasto",
           "lemma": "gasto",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NOUN",
           "feats": {},
           "start": 19,
           "end": 24,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": ".",
           "lemma": ".",
-          "pos": "punct",
+          "pos": "PUNCT",
           "upos": "PUNCT",
-          "xpos": "",
+          "xpos": "PUNCT",
           "feats": {},
           "start": 24,
           "end": 25,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         }
       ],
       "difficulty": null
@@ -463,64 +567,220 @@
     "word_fi": "laskea",
     "word_ja": "計算する",
     "word_es": "calcular",
+    "ar": [
+      "أستطيع حساب السعر.",
+      "يعرف أبي كيف يقدّر الوقت.",
+      "سأحسب الفاتورة.",
+      "أريد حساب التكلفة."
+    ],
+    "cs": [
+      "Můžu spočítat cenu.",
+      "Můj otec umí odhadnout čas.",
+      "Chystám se spočítat účet.",
+      "Chci spočítat náklady."
+    ],
+    "da": [
+      "Jeg kan beregne prisen.",
+      "Min far ved, hvordan man estimerer tiden.",
+      "Jeg vil beregne regningen.",
+      "Jeg vil beregne udgiften."
+    ],
+    "de": [
+      "Ich kann den Preis berechnen.",
+      "Mein Vater kann die Zeit einschätzen.",
+      "Ich werde die Rechnung berechnen.",
+      "Ich möchte die Kosten berechnen."
+    ],
+    "el": [
+      "Μπορώ να υπολογίσω την τιμή.",
+      "Ο πατέρας μου ξέρει πώς να εκτιμά τον χρόνο.",
+      "Θα υπολογίσω τον λογαριασμό.",
+      "Θέλω να υπολογίσω το κόστος."
+    ],
+    "fi": [
+      "Voin laskea hinnan.",
+      "Isäni osaa arvioida ajan.",
+      "Aion laskea laskun.",
+      "Haluan laskea kulut."
+    ],
+    "fr": [
+      "Je peux calculer le prix.",
+      "Mon père sait estimer le temps.",
+      "Je vais calculer l'addition.",
+      "Je veux calculer le coût."
+    ],
+    "he": [
+      "אני יכול לחשב את המחיר.",
+      "אבא שלי יודע להעריך את הזמן.",
+      "אני הולך לחשב את החשבון.",
+      "אני רוצה לחשב את העלות."
+    ],
+    "hi": [
+      "मैं कीमत का हिसाब लगा सकता हूँ।",
+      "मेरे पिता समय का अनुमान लगाना जानते हैं।",
+      "मैं बिल का हिसाब लगाने वाला हूँ।",
+      "मैं खर्च का हिसाब लगाना चाहता हूँ।"
+    ],
+    "hu": [
+      "Ki tudom számolni az árat.",
+      "Az apám tudja, hogyan kell megbecsülni az időt.",
+      "Ki fogom számolni a számlát.",
+      "Ki akarom számolni a költséget."
+    ],
+    "id": [
+      "Saya bisa menghitung harganya.",
+      "Ayah saya tahu cara memperkirakan waktunya.",
+      "Saya akan menghitung tagihannya.",
+      "Saya ingin menghitung biayanya."
+    ],
+    "it": [
+      "Posso calcolare il prezzo.",
+      "Mio padre sa stimare il tempo.",
+      "Calcolerò il conto.",
+      "Voglio calcolare il costo."
+    ],
+    "ja": [
+      "値段を計算できます。",
+      "父は時間を見積もる方法を知っています。",
+      "会計を計算します。",
+      "費用を計算したいです。"
+    ],
+    "ko": [
+      "가격을 계산할 수 있어요.",
+      "아버지는 시간을 짐작하는 방법을 알아요.",
+      "계산서를 계산할 거예요.",
+      "비용을 계산하고 싶어요."
+    ],
+    "nb": [
+      "Jeg kan beregne prisen.",
+      "Faren min kan anslå tiden.",
+      "Jeg skal beregne regningen.",
+      "Jeg vil beregne kostnaden."
+    ],
+    "nl": [
+      "Ik kan de prijs berekenen.",
+      "Mijn vader weet hoe hij de tijd moet schatten.",
+      "Ik ga de rekening berekenen.",
+      "Ik wil de kosten berekenen."
+    ],
+    "pl": [
+      "Mogę obliczyć cenę.",
+      "Mój ojciec potrafi oszacować czas.",
+      "Zamierzam obliczyć rachunek.",
+      "Chcę obliczyć koszt."
+    ],
+    "pt": [
+      "Posso calcular o preço.",
+      "Meu pai sabe estimar o tempo.",
+      "Vou calcular a conta.",
+      "Quero calcular o custo."
+    ],
+    "ro": [
+      "Pot calcula prețul.",
+      "Tatăl meu știe să estimeze timpul.",
+      "O să calculez nota.",
+      "Vreau să calculez costul."
+    ],
+    "ru": [
+      "Я могу рассчитать цену.",
+      "Мой отец умеет оценивать время.",
+      "Я собираюсь посчитать счёт.",
+      "Я хочу рассчитать стоимость."
+    ],
+    "sv": [
+      "Jag kan beräkna priset.",
+      "Min pappa kan uppskatta tiden.",
+      "Jag ska beräkna notan.",
+      "Jag vill beräkna kostnaden."
+    ],
+    "tr": [
+      "Fiyatı hesaplayabilirim.",
+      "Babam zamanı tahmin etmeyi bilir.",
+      "Hesabı hesaplayacağım.",
+      "Masrafı hesaplamak istiyorum."
+    ],
+    "uk": [
+      "Я можу обчислити ціну.",
+      "Мій батько вміє оцінювати час.",
+      "Я збираюся обчислити рахунок.",
+      "Я хочу обчислити витрати."
+    ],
+    "vi": [
+      "Tôi có thể tính giá.",
+      "Bố tôi biết ước tính thời gian.",
+      "Tôi sẽ tính hóa đơn.",
+      "Tôi muốn tính chi phí."
+    ],
+    "yue": [
+      "我可以計算價錢。",
+      "我爸爸識得估時間。",
+      "我會計條數。",
+      "我想計開支。"
+    ],
+    "zh-Hans": [
+      "我可以计算价格。",
+      "我父亲知道怎么估算时间。",
+      "我要计算账单。",
+      "我想计算费用。"
+    ],
     "pos_analysis": [
       {
         "sentence": "Puedo calcular el precio.",
         "tokens": [
           {
             "surface": "Puedo",
-            "lemma": "puedo",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "poder",
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "AUX",
             "feats": {},
             "start": 0,
             "end": 5,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "calcular",
             "lemma": "calcular",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VERB",
             "feats": {},
             "start": 6,
             "end": 14,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "el",
             "lemma": "el",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "DET",
             "feats": {},
             "start": 15,
             "end": 17,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "precio",
             "lemma": "precio",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NOUN",
             "feats": {},
             "start": 18,
             "end": 24,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": ".",
             "lemma": ".",
-            "pos": "punct",
+            "pos": "PUNCT",
             "upos": "PUNCT",
-            "xpos": "",
+            "xpos": "PUNCT",
             "feats": {},
             "start": 24,
             "end": 25,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           }
         ],
         "difficulty_aggregated": null
@@ -531,79 +791,79 @@
           {
             "surface": "Mi",
             "lemma": "mi",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "DET",
             "feats": {},
             "start": 0,
             "end": 2,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "padre",
             "lemma": "padre",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NOUN",
             "feats": {},
             "start": 3,
             "end": 8,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "sabe",
-            "lemma": "sabe",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "saber",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VERB",
             "feats": {},
             "start": 9,
             "end": 13,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "calcular",
             "lemma": "calcular",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VERB",
             "feats": {},
             "start": 14,
             "end": 22,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "el",
             "lemma": "el",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "DET",
             "feats": {},
             "start": 23,
             "end": 25,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "tiempo",
             "lemma": "tiempo",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NOUN",
             "feats": {},
             "start": 26,
             "end": 32,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": ".",
             "lemma": ".",
-            "pos": "punct",
+            "pos": "PUNCT",
             "upos": "PUNCT",
-            "xpos": "",
+            "xpos": "PUNCT",
             "feats": {},
             "start": 32,
             "end": 33,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           }
         ],
         "difficulty_aggregated": null
@@ -613,69 +873,69 @@
         "tokens": [
           {
             "surface": "Voy",
-            "lemma": "voy",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "ir",
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "AUX",
             "feats": {},
             "start": 0,
             "end": 3,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "a",
             "lemma": "a",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "ADP",
             "feats": {},
             "start": 4,
             "end": 5,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "calcular",
             "lemma": "calcular",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VERB",
             "feats": {},
             "start": 6,
             "end": 14,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "la",
-            "lemma": "la",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "el",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "DET",
             "feats": {},
             "start": 15,
             "end": 17,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "cuenta",
             "lemma": "cuenta",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NOUN",
             "feats": {},
             "start": 18,
             "end": 24,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": ".",
             "lemma": ".",
-            "pos": "punct",
+            "pos": "PUNCT",
             "upos": "PUNCT",
-            "xpos": "",
+            "xpos": "PUNCT",
             "feats": {},
             "start": 24,
             "end": 25,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           }
         ],
         "difficulty_aggregated": null
@@ -685,58 +945,58 @@
         "tokens": [
           {
             "surface": "Quiero",
-            "lemma": "quiero",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "querer",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VERB",
             "feats": {},
             "start": 0,
             "end": 6,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "calcular",
             "lemma": "calcular",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VERB",
             "feats": {},
             "start": 7,
             "end": 15,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "el",
             "lemma": "el",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "DET",
             "feats": {},
             "start": 16,
             "end": 18,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "gasto",
             "lemma": "gasto",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NOUN",
             "feats": {},
             "start": 19,
             "end": 24,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": ".",
             "lemma": ".",
-            "pos": "punct",
+            "pos": "PUNCT",
             "upos": "PUNCT",
-            "xpos": "",
+            "xpos": "PUNCT",
             "feats": {},
             "start": 24,
             "end": 25,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           }
         ],
         "difficulty_aggregated": null

@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import shutil
+import unicodedata
 from pathlib import Path
 from typing import Any, Dict, List
 
@@ -19,6 +20,10 @@ from common import (
     write_json,
     entry_identifier,
 )
+
+
+def portable_identifier_key(value: str) -> str:
+    return unicodedata.normalize("NFC", value).casefold()
 
 
 def build_manifest(pack: Dict[str, Any], source_json: Path, source_asset_dir: Path, item_refs: List[Dict[str, Any]]) -> Dict[str, Any]:
@@ -56,6 +61,18 @@ def main() -> int:
     args = ap.parse_args()
 
     pack = pack_config(args.pack_code, args.catalog)
+    if args.auto_pos_analysis:
+        from vocomipedia_nlp import ensure_real_analyzer_available
+        from vocomipedia_nlp.base import RequiredAnalyzerUnavailable
+
+        language = str(pack.get("language") or pack.get("lang_prefix") or "")
+        try:
+            analyzer = ensure_real_analyzer_available(language)
+        except RequiredAnalyzerUnavailable as exc:
+            print(f"ERROR: {exc}")
+            return 2
+        print(f"POS analyzer ready for {language}: {analyzer.source}")
+
     entries = read_json(args.input_json)
     if not isinstance(entries, list):
         raise SystemExit(f"{args.input_json} must contain a JSON list")
@@ -74,8 +91,9 @@ def main() -> int:
     seen_legacy_ids: Dict[str, int] = {}
     for idx, entry in enumerate(entries):
         base_id = entry_identifier(entry)
-        seen_legacy_ids[base_id] = seen_legacy_ids.get(base_id, 0) + 1
-        unique_id = base_id if seen_legacy_ids[base_id] == 1 else f"{base_id}__v{seen_legacy_ids[base_id]}"
+        portable_key = portable_identifier_key(base_id)
+        seen_legacy_ids[portable_key] = seen_legacy_ids.get(portable_key, 0) + 1
+        unique_id = base_id if seen_legacy_ids[portable_key] == 1 else f"{base_id}__v{seen_legacy_ids[portable_key]}"
         item = legacy_to_canonical(
             entry,
             pack=pack,

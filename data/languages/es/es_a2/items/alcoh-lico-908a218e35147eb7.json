@@ -47,63 +47,89 @@
       "translations": {
         "en": "My neighbor is alcoholic.",
         "es": "Mi vecino es alcohólico.",
-        "ipa": "/mi beˈθino es alkoˈoliko/"
+        "ipa": "/mi beˈθino es alkoˈoliko/",
+        "ar": "جارِي مدمن على الكحول.",
+        "cs": "Můj soused je alkoholik.",
+        "da": "Min nabo er alkoholiker.",
+        "de": "Mein Nachbar ist alkoholkrank.",
+        "el": "Ο γείτονάς μου είναι αλκοολικός.",
+        "fi": "Naapurini on alkoholisti.",
+        "fr": "Mon voisin est alcoolique.",
+        "he": "השכן שלי אלכוהוליסט.",
+        "hi": "मेरा पड़ोसी शराबी है।",
+        "hu": "A szomszédom alkoholista.",
+        "id": "Tetangga saya seorang alkoholik.",
+        "it": "Il mio vicino è alcolizzato.",
+        "ja": "隣の人はアルコール依存症です。",
+        "ko": "내 이웃은 알코올 중독자입니다.",
+        "nb": "Naboen min er alkoholiker.",
+        "nl": "Mijn buurman is alcoholist.",
+        "pl": "Mój sąsiad jest alkoholikiem.",
+        "pt": "Meu vizinho é alcoólatra.",
+        "ro": "Vecinul meu este alcoolic.",
+        "ru": "Мой сосед — алкоголик.",
+        "sv": "Min granne är alkoholist.",
+        "tr": "Komşum alkolik.",
+        "uk": "Мій сусід — алкоголік.",
+        "vi": "Hàng xóm của tôi là người nghiện rượu.",
+        "yue": "我鄰居係酒精成癮。",
+        "zh-Hans": "我的邻居酗酒。"
       },
       "tokens": [
         {
           "surface": "Mi",
           "lemma": "mi",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "DET",
           "feats": {},
           "start": 0,
           "end": 2,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "vecino",
           "lemma": "vecino",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NOUN",
           "feats": {},
           "start": 3,
           "end": 9,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "es",
-          "lemma": "es",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "ser",
+          "pos": "AUX",
+          "upos": "AUX",
+          "xpos": "AUX",
           "feats": {},
           "start": 10,
           "end": 12,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "alcohólico",
           "lemma": "alcohólico",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "ADJ",
+          "upos": "ADJ",
+          "xpos": "ADJ",
           "feats": {},
           "start": 13,
           "end": 23,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": ".",
           "lemma": ".",
-          "pos": "punct",
+          "pos": "PUNCT",
           "upos": "PUNCT",
-          "xpos": "",
+          "xpos": "PUNCT",
           "feats": {},
           "start": 23,
           "end": 24,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         }
       ],
       "difficulty": null
@@ -114,96 +140,122 @@
       "translations": {
         "en": "My uncle is alcoholic and is looking for help.",
         "es": "Mi tío es alcohólico y busca ayuda.",
-        "ipa": "/mi ˈtio es alkoˈoliko i ˈbuska aˈʝuða/"
+        "ipa": "/mi ˈtio es alkoˈoliko i ˈbuska aˈʝuða/",
+        "ar": "عمي مدمن على الكحول ويبحث عن المساعدة.",
+        "cs": "Můj strýc je alkoholik a hledá pomoc.",
+        "da": "Min onkel er alkoholiker og søger hjælp.",
+        "de": "Mein Onkel ist alkoholkrank und sucht Hilfe.",
+        "el": "Ο θείος μου είναι αλκοολικός και ζητά βοήθεια.",
+        "fi": "Setäni on alkoholisti ja hakee apua.",
+        "fr": "Mon oncle est alcoolique et cherche de l'aide.",
+        "he": "הדוד שלי אלכוהוליסט ומחפש עזרה.",
+        "hi": "मेरे चाचा शराबी हैं और मदद ढूँढ रहे हैं।",
+        "hu": "A nagybátyám alkoholista, és segítséget keres.",
+        "id": "Paman saya seorang alkoholik dan mencari bantuan.",
+        "it": "Mio zio è alcolizzato e cerca aiuto.",
+        "ja": "おじはアルコール依存症で、助けを求めています。",
+        "ko": "삼촌은 알코올 중독자이고 도움을 찾고 있습니다.",
+        "nb": "Onkelen min er alkoholiker og søker hjelp.",
+        "nl": "Mijn oom is alcoholist en zoekt hulp.",
+        "pl": "Mój wujek jest alkoholikiem i szuka pomocy.",
+        "pt": "Meu tio é alcoólatra e procura ajuda.",
+        "ro": "Unchiul meu este alcoolic și caută ajutor.",
+        "ru": "Мой дядя — алкоголик и ищет помощь.",
+        "sv": "Min farbror är alkoholist och söker hjälp.",
+        "tr": "Amcam alkolik ve yardım arıyor.",
+        "uk": "Мій дядько — алкоголік і шукає допомоги.",
+        "vi": "Chú tôi là người nghiện rượu và đang tìm kiếm sự giúp đỡ.",
+        "yue": "我叔叔係酒精成癮，仲喺度搵幫助。",
+        "zh-Hans": "我叔叔酗酒，正在寻求帮助。"
       },
       "tokens": [
         {
           "surface": "Mi",
           "lemma": "mi",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "DET",
           "feats": {},
           "start": 0,
           "end": 2,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "tío",
           "lemma": "tío",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NOUN",
           "feats": {},
           "start": 3,
           "end": 6,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "es",
-          "lemma": "es",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "ser",
+          "pos": "AUX",
+          "upos": "AUX",
+          "xpos": "AUX",
           "feats": {},
           "start": 7,
           "end": 9,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "alcohólico",
           "lemma": "alcohólico",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "ADJ",
+          "upos": "ADJ",
+          "xpos": "ADJ",
           "feats": {},
           "start": 10,
           "end": 20,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "y",
           "lemma": "y",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "CCONJ",
+          "upos": "CCONJ",
+          "xpos": "CCONJ",
           "feats": {},
           "start": 21,
           "end": 22,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "busca",
-          "lemma": "busca",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "buscar",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VERB",
           "feats": {},
           "start": 23,
           "end": 28,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "ayuda",
           "lemma": "ayuda",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NOUN",
           "feats": {},
           "start": 29,
           "end": 34,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": ".",
           "lemma": ".",
-          "pos": "punct",
+          "pos": "PUNCT",
           "upos": "PUNCT",
-          "xpos": "",
+          "xpos": "PUNCT",
           "feats": {},
           "start": 34,
           "end": 35,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         }
       ],
       "difficulty": null
@@ -214,96 +266,122 @@
       "translations": {
         "en": "The doctor talks with an alcoholic man.",
         "es": "El médico habla con un hombre alcohólico.",
-        "ipa": "/el meˈðiko ˈabla kon un ˈombɾe alkoˈoliko/"
+        "ipa": "/el meˈðiko ˈabla kon un ˈombɾe alkoˈoliko/",
+        "ar": "يتحدث الطبيب مع رجل مدمن على الكحول.",
+        "cs": "Lékař mluví s mužem závislým na alkoholu.",
+        "da": "Lægen taler med en alkoholisk mand.",
+        "de": "Der Arzt spricht mit einem alkoholkranken Mann.",
+        "el": "Ο γιατρός μιλά με έναν αλκοολικό άντρα.",
+        "fi": "Lääkäri puhuu alkoholistimiehen kanssa.",
+        "fr": "Le médecin parle à un homme alcoolique.",
+        "he": "הרופא מדבר עם גבר אלכוהוליסט.",
+        "hi": "डॉक्टर एक शराबी आदमी से बात कर रहा है।",
+        "hu": "Az orvos egy alkoholista férfival beszél.",
+        "id": "Dokter berbicara dengan seorang pria alkoholik.",
+        "it": "Il dottore parla con un uomo alcolizzato.",
+        "ja": "医者はアルコール依存症の男性と話しています。",
+        "ko": "의사는 알코올 중독인 남자와 이야기합니다.",
+        "nb": "Legen snakker med en alkoholiker.",
+        "nl": "De dokter praat met een alcoholische man.",
+        "pl": "Lekarz rozmawia z alkoholikiem.",
+        "pt": "O médico fala com um homem alcoólatra.",
+        "ro": "Doctorul vorbește cu un bărbat alcoolic.",
+        "ru": "Врач разговаривает с мужчиной-алкоголиком.",
+        "sv": "Läkaren pratar med en alkoholist.",
+        "tr": "Doktor alkolik bir adamla konuşuyor.",
+        "uk": "Лікар розмовляє з чоловіком-алкоголіком.",
+        "vi": "Bác sĩ đang nói chuyện với một người đàn ông nghiện rượu.",
+        "yue": "醫生同一個酒精成癮嘅男人傾偈。",
+        "zh-Hans": "医生正在和一个酗酒的男人交谈。"
       },
       "tokens": [
         {
           "surface": "El",
           "lemma": "el",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "DET",
           "feats": {},
           "start": 0,
           "end": 2,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "médico",
           "lemma": "médico",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NOUN",
           "feats": {},
           "start": 3,
           "end": 9,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "habla",
-          "lemma": "habla",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "hablar",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VERB",
           "feats": {},
           "start": 10,
           "end": 15,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "con",
           "lemma": "con",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "ADP",
           "feats": {},
           "start": 16,
           "end": 19,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "un",
-          "lemma": "un",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "uno",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "DET",
           "feats": {},
           "start": 20,
           "end": 22,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "hombre",
           "lemma": "hombre",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NOUN",
           "feats": {},
           "start": 23,
           "end": 29,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "alcohólico",
           "lemma": "alcohólico",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "ADJ",
+          "upos": "ADJ",
+          "xpos": "ADJ",
           "feats": {},
           "start": 30,
           "end": 40,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": ".",
           "lemma": ".",
-          "pos": "punct",
+          "pos": "PUNCT",
           "upos": "PUNCT",
-          "xpos": "",
+          "xpos": "PUNCT",
           "feats": {},
           "start": 40,
           "end": 41,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         }
       ],
       "difficulty": null
@@ -314,107 +392,133 @@
       "translations": {
         "en": "My father is alcoholic, but he wants to change.",
         "es": "Mi padre es alcohólico, pero quiere cambiar.",
-        "ipa": "/mi paˈðɾe es alkoˈoliko ˈpeɾo ˈkjeɾe kamˈbjaɾ/"
+        "ipa": "/mi paˈðɾe es alkoˈoliko ˈpeɾo ˈkjeɾe kamˈbjaɾ/",
+        "ar": "أبي مدمن على الكحول، لكنه يريد أن يتغير.",
+        "cs": "Můj otec je alkoholik, ale chce se změnit.",
+        "da": "Min far er alkoholiker, men han vil ændre sig.",
+        "de": "Mein Vater ist alkoholkrank, aber er will sich ändern.",
+        "el": "Ο πατέρας μου είναι αλκοολικός, αλλά θέλει να αλλάξει.",
+        "fi": "Isäni on alkoholisti, mutta hän haluaa muuttua.",
+        "fr": "Mon père est alcoolique, mais il veut changer.",
+        "he": "אבא שלי אלכוהוליסט, אבל הוא רוצה להשתנות.",
+        "hi": "मेरे पिता शराबी हैं, लेकिन वे बदलना चाहते हैं।",
+        "hu": "Az apám alkoholista, de változtatni akar.",
+        "id": "Ayah saya seorang alkoholik, tetapi dia ingin berubah.",
+        "it": "Mio padre è alcolizzato, ma vuole cambiare.",
+        "ja": "父はアルコール依存症ですが、変わりたいと思っています。",
+        "ko": "아버지는 알코올 중독자지만, 바꾸고 싶어 합니다.",
+        "nb": "Faren min er alkoholiker, men han vil forandre seg.",
+        "nl": "Mijn vader is alcoholist, maar hij wil veranderen.",
+        "pl": "Mój ojciec jest alkoholikiem, ale chce się zmienić.",
+        "pt": "Meu pai é alcoólatra, mas quer mudar.",
+        "ro": "Tatăl meu este alcoolic, dar vrea să se schimbe.",
+        "ru": "Мой отец — алкоголик, но он хочет измениться.",
+        "sv": "Min pappa är alkoholist, men han vill förändras.",
+        "tr": "Babam alkolik, ama değişmek istiyor.",
+        "uk": "Мій батько — алкоголік, але він хоче змінитися.",
+        "vi": "Bố tôi là người nghiện rượu, nhưng ông ấy muốn thay đổi.",
+        "yue": "我爸爸係酒精成癮，但佢想改變。",
+        "zh-Hans": "我父亲酗酒，但他想改变。"
       },
       "tokens": [
         {
           "surface": "Mi",
           "lemma": "mi",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "DET",
           "feats": {},
           "start": 0,
           "end": 2,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "padre",
           "lemma": "padre",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NOUN",
           "feats": {},
           "start": 3,
           "end": 8,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "es",
-          "lemma": "es",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "ser",
+          "pos": "AUX",
+          "upos": "AUX",
+          "xpos": "AUX",
           "feats": {},
           "start": 9,
           "end": 11,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "alcohólico",
           "lemma": "alcohólico",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "ADJ",
+          "upos": "ADJ",
+          "xpos": "ADJ",
           "feats": {},
           "start": 12,
           "end": 22,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": ",",
           "lemma": ",",
-          "pos": "punct",
+          "pos": "PUNCT",
           "upos": "PUNCT",
-          "xpos": "",
+          "xpos": "PUNCT",
           "feats": {},
           "start": 22,
           "end": 23,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "pero",
           "lemma": "pero",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "CCONJ",
+          "upos": "CCONJ",
+          "xpos": "CCONJ",
           "feats": {},
           "start": 24,
           "end": 28,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "quiere",
-          "lemma": "quiere",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "querer",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VERB",
           "feats": {},
           "start": 29,
           "end": 35,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "cambiar",
           "lemma": "cambiar",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VERB",
           "feats": {},
           "start": 36,
           "end": 43,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": ".",
           "lemma": ".",
-          "pos": "punct",
+          "pos": "PUNCT",
           "upos": "PUNCT",
-          "xpos": "",
+          "xpos": "PUNCT",
           "feats": {},
           "start": 43,
           "end": 44,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         }
       ],
       "difficulty": null
@@ -540,6 +644,162 @@
     "word_fi": "alkoholinen",
     "word_ja": "アルコールの",
     "word_es": "alcohólico",
+    "ar": [
+      "جارِي مدمن على الكحول.",
+      "عمي مدمن على الكحول ويبحث عن المساعدة.",
+      "يتحدث الطبيب مع رجل مدمن على الكحول.",
+      "أبي مدمن على الكحول، لكنه يريد أن يتغير."
+    ],
+    "cs": [
+      "Můj soused je alkoholik.",
+      "Můj strýc je alkoholik a hledá pomoc.",
+      "Lékař mluví s mužem závislým na alkoholu.",
+      "Můj otec je alkoholik, ale chce se změnit."
+    ],
+    "da": [
+      "Min nabo er alkoholiker.",
+      "Min onkel er alkoholiker og søger hjælp.",
+      "Lægen taler med en alkoholisk mand.",
+      "Min far er alkoholiker, men han vil ændre sig."
+    ],
+    "de": [
+      "Mein Nachbar ist alkoholkrank.",
+      "Mein Onkel ist alkoholkrank und sucht Hilfe.",
+      "Der Arzt spricht mit einem alkoholkranken Mann.",
+      "Mein Vater ist alkoholkrank, aber er will sich ändern."
+    ],
+    "el": [
+      "Ο γείτονάς μου είναι αλκοολικός.",
+      "Ο θείος μου είναι αλκοολικός και ζητά βοήθεια.",
+      "Ο γιατρός μιλά με έναν αλκοολικό άντρα.",
+      "Ο πατέρας μου είναι αλκοολικός, αλλά θέλει να αλλάξει."
+    ],
+    "fi": [
+      "Naapurini on alkoholisti.",
+      "Setäni on alkoholisti ja hakee apua.",
+      "Lääkäri puhuu alkoholistimiehen kanssa.",
+      "Isäni on alkoholisti, mutta hän haluaa muuttua."
+    ],
+    "fr": [
+      "Mon voisin est alcoolique.",
+      "Mon oncle est alcoolique et cherche de l'aide.",
+      "Le médecin parle à un homme alcoolique.",
+      "Mon père est alcoolique, mais il veut changer."
+    ],
+    "he": [
+      "השכן שלי אלכוהוליסט.",
+      "הדוד שלי אלכוהוליסט ומחפש עזרה.",
+      "הרופא מדבר עם גבר אלכוהוליסט.",
+      "אבא שלי אלכוהוליסט, אבל הוא רוצה להשתנות."
+    ],
+    "hi": [
+      "मेरा पड़ोसी शराबी है।",
+      "मेरे चाचा शराबी हैं और मदद ढूँढ रहे हैं।",
+      "डॉक्टर एक शराबी आदमी से बात कर रहा है।",
+      "मेरे पिता शराबी हैं, लेकिन वे बदलना चाहते हैं।"
+    ],
+    "hu": [
+      "A szomszédom alkoholista.",
+      "A nagybátyám alkoholista, és segítséget keres.",
+      "Az orvos egy alkoholista férfival beszél.",
+      "Az apám alkoholista, de változtatni akar."
+    ],
+    "id": [
+      "Tetangga saya seorang alkoholik.",
+      "Paman saya seorang alkoholik dan mencari bantuan.",
+      "Dokter berbicara dengan seorang pria alkoholik.",
+      "Ayah saya seorang alkoholik, tetapi dia ingin berubah."
+    ],
+    "it": [
+      "Il mio vicino è alcolizzato.",
+      "Mio zio è alcolizzato e cerca aiuto.",
+      "Il dottore parla con un uomo alcolizzato.",
+      "Mio padre è alcolizzato, ma vuole cambiare."
+    ],
+    "ja": [
+      "隣の人はアルコール依存症です。",
+      "おじはアルコール依存症で、助けを求めています。",
+      "医者はアルコール依存症の男性と話しています。",
+      "父はアルコール依存症ですが、変わりたいと思っています。"
+    ],
+    "ko": [
+      "내 이웃은 알코올 중독자입니다.",
+      "삼촌은 알코올 중독자이고 도움을 찾고 있습니다.",
+      "의사는 알코올 중독인 남자와 이야기합니다.",
+      "아버지는 알코올 중독자지만, 바꾸고 싶어 합니다."
+    ],
+    "nb": [
+      "Naboen min er alkoholiker.",
+      "Onkelen min er alkoholiker og søker hjelp.",
+      "Legen snakker med en alkoholiker.",
+      "Faren min er alkoholiker, men han vil forandre seg."
+    ],
+    "nl": [
+      "Mijn buurman is alcoholist.",
+      "Mijn oom is alcoholist en zoekt hulp.",
+      "De dokter praat met een alcoholische man.",
+      "Mijn vader is alcoholist, maar hij wil veranderen."
+    ],
+    "pl": [
+      "Mój sąsiad jest alkoholikiem.",
+      "Mój wujek jest alkoholikiem i szuka pomocy.",
+      "Lekarz rozmawia z alkoholikiem.",
+      "Mój ojciec jest alkoholikiem, ale chce się zmienić."
+    ],
+    "pt": [
+      "Meu vizinho é alcoólatra.",
+      "Meu tio é alcoólatra e procura ajuda.",
+      "O médico fala com um homem alcoólatra.",
+      "Meu pai é alcoólatra, mas quer mudar."
+    ],
+    "ro": [
+      "Vecinul meu este alcoolic.",
+      "Unchiul meu este alcoolic și caută ajutor.",
+      "Doctorul vorbește cu un bărbat alcoolic.",
+      "Tatăl meu este alcoolic, dar vrea să se schimbe."
+    ],
+    "ru": [
+      "Мой сосед — алкоголик.",
+      "Мой дядя — алкоголик и ищет помощь.",
+      "Врач разговаривает с мужчиной-алкоголиком.",
+      "Мой отец — алкоголик, но он хочет измениться."
+    ],
+    "sv": [
+      "Min granne är alkoholist.",
+      "Min farbror är alkoholist och söker hjälp.",
+      "Läkaren pratar med en alkoholist.",
+      "Min pappa är alkoholist, men han vill förändras."
+    ],
+    "tr": [
+      "Komşum alkolik.",
+      "Amcam alkolik ve yardım arıyor.",
+      "Doktor alkolik bir adamla konuşuyor.",
+      "Babam alkolik, ama değişmek istiyor."
+    ],
+    "uk": [
+      "Мій сусід — алкоголік.",
+      "Мій дядько — алкоголік і шукає допомоги.",
+      "Лікар розмовляє з чоловіком-алкоголіком.",
+      "Мій батько — алкоголік, але він хоче змінитися."
+    ],
+    "vi": [
+      "Hàng xóm của tôi là người nghiện rượu.",
+      "Chú tôi là người nghiện rượu và đang tìm kiếm sự giúp đỡ.",
+      "Bác sĩ đang nói chuyện với một người đàn ông nghiện rượu.",
+      "Bố tôi là người nghiện rượu, nhưng ông ấy muốn thay đổi."
+    ],
+    "yue": [
+      "我鄰居係酒精成癮。",
+      "我叔叔係酒精成癮，仲喺度搵幫助。",
+      "醫生同一個酒精成癮嘅男人傾偈。",
+      "我爸爸係酒精成癮，但佢想改變。"
+    ],
+    "zh-Hans": [
+      "我的邻居酗酒。",
+      "我叔叔酗酒，正在寻求帮助。",
+      "医生正在和一个酗酒的男人交谈。",
+      "我父亲酗酒，但他想改变。"
+    ],
     "pos_analysis": [
       {
         "sentence": "Mi vecino es alcohólico.",
@@ -547,57 +807,57 @@
           {
             "surface": "Mi",
             "lemma": "mi",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "DET",
             "feats": {},
             "start": 0,
             "end": 2,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "vecino",
             "lemma": "vecino",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NOUN",
             "feats": {},
             "start": 3,
             "end": 9,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "es",
-            "lemma": "es",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "ser",
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "AUX",
             "feats": {},
             "start": 10,
             "end": 12,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "alcohólico",
             "lemma": "alcohólico",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "ADJ",
+            "upos": "ADJ",
+            "xpos": "ADJ",
             "feats": {},
             "start": 13,
             "end": 23,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": ".",
             "lemma": ".",
-            "pos": "punct",
+            "pos": "PUNCT",
             "upos": "PUNCT",
-            "xpos": "",
+            "xpos": "PUNCT",
             "feats": {},
             "start": 23,
             "end": 24,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           }
         ],
         "difficulty_aggregated": null
@@ -608,90 +868,90 @@
           {
             "surface": "Mi",
             "lemma": "mi",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "DET",
             "feats": {},
             "start": 0,
             "end": 2,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "tío",
             "lemma": "tío",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NOUN",
             "feats": {},
             "start": 3,
             "end": 6,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "es",
-            "lemma": "es",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "ser",
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "AUX",
             "feats": {},
             "start": 7,
             "end": 9,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "alcohólico",
             "lemma": "alcohólico",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "ADJ",
+            "upos": "ADJ",
+            "xpos": "ADJ",
             "feats": {},
             "start": 10,
             "end": 20,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "y",
             "lemma": "y",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "CCONJ",
+            "upos": "CCONJ",
+            "xpos": "CCONJ",
             "feats": {},
             "start": 21,
             "end": 22,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "busca",
-            "lemma": "busca",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "buscar",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VERB",
             "feats": {},
             "start": 23,
             "end": 28,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "ayuda",
             "lemma": "ayuda",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NOUN",
             "feats": {},
             "start": 29,
             "end": 34,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": ".",
             "lemma": ".",
-            "pos": "punct",
+            "pos": "PUNCT",
             "upos": "PUNCT",
-            "xpos": "",
+            "xpos": "PUNCT",
             "feats": {},
             "start": 34,
             "end": 35,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           }
         ],
         "difficulty_aggregated": null
@@ -702,90 +962,90 @@
           {
             "surface": "El",
             "lemma": "el",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "DET",
             "feats": {},
             "start": 0,
             "end": 2,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "médico",
             "lemma": "médico",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NOUN",
             "feats": {},
             "start": 3,
             "end": 9,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "habla",
-            "lemma": "habla",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "hablar",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VERB",
             "feats": {},
             "start": 10,
             "end": 15,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "con",
             "lemma": "con",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "ADP",
             "feats": {},
             "start": 16,
             "end": 19,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "un",
-            "lemma": "un",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "uno",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "DET",
             "feats": {},
             "start": 20,
             "end": 22,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "hombre",
             "lemma": "hombre",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NOUN",
             "feats": {},
             "start": 23,
             "end": 29,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "alcohólico",
             "lemma": "alcohólico",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "ADJ",
+            "upos": "ADJ",
+            "xpos": "ADJ",
             "feats": {},
             "start": 30,
             "end": 40,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": ".",
             "lemma": ".",
-            "pos": "punct",
+            "pos": "PUNCT",
             "upos": "PUNCT",
-            "xpos": "",
+            "xpos": "PUNCT",
             "feats": {},
             "start": 40,
             "end": 41,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           }
         ],
         "difficulty_aggregated": null
@@ -796,101 +1056,101 @@
           {
             "surface": "Mi",
             "lemma": "mi",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "DET",
             "feats": {},
             "start": 0,
             "end": 2,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "padre",
             "lemma": "padre",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NOUN",
             "feats": {},
             "start": 3,
             "end": 8,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "es",
-            "lemma": "es",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "ser",
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "AUX",
             "feats": {},
             "start": 9,
             "end": 11,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "alcohólico",
             "lemma": "alcohólico",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "ADJ",
+            "upos": "ADJ",
+            "xpos": "ADJ",
             "feats": {},
             "start": 12,
             "end": 22,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": ",",
             "lemma": ",",
-            "pos": "punct",
+            "pos": "PUNCT",
             "upos": "PUNCT",
-            "xpos": "",
+            "xpos": "PUNCT",
             "feats": {},
             "start": 22,
             "end": 23,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "pero",
             "lemma": "pero",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "CCONJ",
+            "upos": "CCONJ",
+            "xpos": "CCONJ",
             "feats": {},
             "start": 24,
             "end": 28,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "quiere",
-            "lemma": "quiere",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "querer",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VERB",
             "feats": {},
             "start": 29,
             "end": 35,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "cambiar",
             "lemma": "cambiar",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VERB",
             "feats": {},
             "start": 36,
             "end": 43,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": ".",
             "lemma": ".",
-            "pos": "punct",
+            "pos": "PUNCT",
             "upos": "PUNCT",
-            "xpos": "",
+            "xpos": "PUNCT",
             "feats": {},
             "start": 43,
             "end": 44,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           }
         ],
         "difficulty_aggregated": null

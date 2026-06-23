@@ -47,74 +47,100 @@
       "translations": {
         "en": "The assistant opens the door.",
         "es": "El asistente abre la puerta.",
-        "ipa": "/el a.sisˈten.te ˈa.βɾe la ˈpweɾ.ta/"
+        "ipa": "/el a.sisˈten.te ˈa.βɾe la ˈpweɾ.ta/",
+        "ar": "المساعد يفتح الباب.",
+        "cs": "Asistent otevírá dveře.",
+        "da": "Assistenten åbner døren.",
+        "de": "Der Assistent öffnet die Tür.",
+        "el": "Ο βοηθός ανοίγει την πόρτα.",
+        "fi": "Tarvitsen avustajan keittiöön.",
+        "fr": "L'assistant ouvre la porte.",
+        "he": "העוזר פותח את הדלת.",
+        "hi": "सहायक दरवाज़ा खोलता है।",
+        "hu": "A segéd kinyitja az ajtót.",
+        "id": "Asisten itu membuka pintu.",
+        "it": "L'assistente apre la porta.",
+        "ja": "アシスタントがドアを開けます。",
+        "ko": "조수가 문을 엽니다.",
+        "nb": "Assistenten åpner døren.",
+        "nl": "De assistent opent de deur.",
+        "pl": "Asystent otwiera drzwi.",
+        "pt": "O assistente abre a porta.",
+        "ro": "Asistentul deschide ușa.",
+        "ru": "Ассистент открывает дверь.",
+        "sv": "Assistenten öppnar dörren.",
+        "tr": "Asistan kapıyı açıyor.",
+        "uk": "Асистент відчиняє двері.",
+        "vi": "Người trợ lý mở cửa.",
+        "yue": "助理打開門。",
+        "zh-Hans": "助手打开门。"
       },
       "tokens": [
         {
           "surface": "El",
           "lemma": "el",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "DET",
           "feats": {},
           "start": 0,
           "end": 2,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "asistente",
           "lemma": "asistente",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NOUN",
           "feats": {},
           "start": 3,
           "end": 12,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "abre",
-          "lemma": "abre",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "abrir",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VERB",
           "feats": {},
           "start": 13,
           "end": 17,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "la",
-          "lemma": "la",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "el",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "DET",
           "feats": {},
           "start": 18,
           "end": 20,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "puerta",
           "lemma": "puerta",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NOUN",
           "feats": {},
           "start": 21,
           "end": 27,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": ".",
           "lemma": ".",
-          "pos": "punct",
+          "pos": "PUNCT",
           "upos": "PUNCT",
-          "xpos": "",
+          "xpos": "PUNCT",
           "feats": {},
           "start": 27,
           "end": 28,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         }
       ],
       "difficulty": null
@@ -125,85 +151,111 @@
       "translations": {
         "en": "I need an assistant in the kitchen.",
         "es": "Necesito un asistente en la cocina.",
-        "ipa": "/ne.seˈsi.to un a.sisˈten.te en la koˈsi.na/"
+        "ipa": "/ne.seˈsi.to un a.sisˈten.te en la koˈsi.na/",
+        "ar": "أحتاج إلى مساعد في المطبخ.",
+        "cs": "Potřebuji pomocníka do kuchyně.",
+        "da": "Jeg har brug for en assistent i køkkenet.",
+        "de": "Ich brauche einen Assistenten in der Küche.",
+        "el": "Χρειάζομαι έναν βοηθό στην κουζίνα.",
+        "fi": "Tarvitsen avustajan keittiöön.",
+        "fr": "J'ai besoin d'un assistant dans la cuisine.",
+        "he": "אני צריך עוזר במטבח.",
+        "hi": "मुझे रसोई में एक सहायक चाहिए।",
+        "hu": "Szükségem van egy segítőre a konyhában.",
+        "id": "Saya perlu asisten di dapur.",
+        "it": "Mi serve un assistente in cucina.",
+        "ja": "台所にアシスタントが必要です。",
+        "ko": "저는 부엌에 조수가 필요합니다.",
+        "nb": "Jeg trenger en assistent på kjøkkenet.",
+        "nl": "Ik heb een assistent in de keuken nodig.",
+        "pl": "Potrzebuję asystenta w kuchni.",
+        "pt": "Preciso de um assistente na cozinha.",
+        "ro": "Am nevoie de un asistent în bucătărie.",
+        "ru": "Мне нужен ассистент на кухне.",
+        "sv": "Jag behöver en assistent i köket.",
+        "tr": "Mutfakta bir asistana ihtiyacım var.",
+        "uk": "Мені потрібен асистент на кухні.",
+        "vi": "Tôi cần một trợ lý trong bếp.",
+        "yue": "我需要一個廚房助理。",
+        "zh-Hans": "我需要一个厨房助手。"
       },
       "tokens": [
         {
           "surface": "Necesito",
-          "lemma": "necesito",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "necesitar",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VERB",
           "feats": {},
           "start": 0,
           "end": 8,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "un",
-          "lemma": "un",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "uno",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "DET",
           "feats": {},
           "start": 9,
           "end": 11,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "asistente",
           "lemma": "asistente",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NOUN",
           "feats": {},
           "start": 12,
           "end": 21,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "en",
           "lemma": "en",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "ADP",
           "feats": {},
           "start": 22,
           "end": 24,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "la",
-          "lemma": "la",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "el",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "DET",
           "feats": {},
           "start": 25,
           "end": 27,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "cocina",
           "lemma": "cocina",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NOUN",
           "feats": {},
           "start": 28,
           "end": 34,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": ".",
           "lemma": ".",
-          "pos": "punct",
+          "pos": "PUNCT",
           "upos": "PUNCT",
-          "xpos": "",
+          "xpos": "PUNCT",
           "feats": {},
           "start": 34,
           "end": 35,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         }
       ],
       "difficulty": null
@@ -214,85 +266,111 @@
       "translations": {
         "en": "The assistant speaks with the customer.",
         "es": "La asistente habla con la clienta.",
-        "ipa": "/la a.sisˈten.te ˈa.βla kon la kliˈen.ta/"
+        "ipa": "/la a.sisˈten.te ˈa.βla kon la kliˈen.ta/",
+        "ar": "تتحدث المساعدة مع الزبونة.",
+        "cs": "Asistentka mluví se zákaznicí.",
+        "da": "Assistenten taler med kunden.",
+        "de": "Die Assistentin spricht mit der Kundin.",
+        "el": "Η βοηθός μιλάει με την πελάτισσα.",
+        "fi": "Avustaja puhuu asiakkaan kanssa.",
+        "fr": "L'assistante parle avec la cliente.",
+        "he": "העוזרת מדברת עם הלקוחה.",
+        "hi": "सहायक ग्राहक से बात कर रही है।",
+        "hu": "Az asszisztens a vásárlóval beszél.",
+        "id": "Asisten itu berbicara dengan pelanggan.",
+        "it": "L'assistente parla con la cliente.",
+        "ja": "アシスタントが客と話しています。",
+        "ko": "조수가 고객과 이야기합니다.",
+        "nb": "Assistenten snakker med kunden.",
+        "nl": "De assistente spreekt met de klant.",
+        "pl": "Asystentka rozmawia z klientką.",
+        "pt": "A assistente fala com a cliente.",
+        "ro": "Asistenta vorbește cu clienta.",
+        "ru": "Ассистентка разговаривает с клиенткой.",
+        "sv": "Assistenten pratar med kunden.",
+        "tr": "Asistan müşteriyle konuşuyor.",
+        "uk": "Асистентка розмовляє з клієнткою.",
+        "vi": "Người trợ lý nói chuyện với khách hàng.",
+        "yue": "女助理同客人傾偈。",
+        "zh-Hans": "女助手和顾客说话。"
       },
       "tokens": [
         {
           "surface": "La",
-          "lemma": "la",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "el",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "DET",
           "feats": {},
           "start": 0,
           "end": 2,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "asistente",
           "lemma": "asistente",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NOUN",
           "feats": {},
           "start": 3,
           "end": 12,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "habla",
-          "lemma": "habla",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "hablar",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VERB",
           "feats": {},
           "start": 13,
           "end": 18,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "con",
           "lemma": "con",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "ADP",
           "feats": {},
           "start": 19,
           "end": 22,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "la",
-          "lemma": "la",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "el",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "DET",
           "feats": {},
           "start": 23,
           "end": 25,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "clienta",
           "lemma": "clienta",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NOUN",
           "feats": {},
           "start": 26,
           "end": 33,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": ".",
           "lemma": ".",
-          "pos": "punct",
+          "pos": "PUNCT",
           "upos": "PUNCT",
-          "xpos": "",
+          "xpos": "PUNCT",
           "feats": {},
           "start": 33,
           "end": 34,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         }
       ],
       "difficulty": null
@@ -303,85 +381,111 @@
       "translations": {
         "en": "My assistant arrives at eight.",
         "es": "Mi asistente llega a las ocho.",
-        "ipa": "/mi a.sisˈten.te ˈʝe.ɣa a las ˈo.tʃo/"
+        "ipa": "/mi a.sisˈten.te ˈʝe.ɣa a las ˈo.tʃo/",
+        "ar": "يصل مساعدي في الثامنة.",
+        "cs": "Můj asistent přichází v osm.",
+        "da": "Min assistent kommer klokken otte.",
+        "de": "Mein Assistent kommt um acht.",
+        "el": "Ο βοηθός μου έρχεται στις οκτώ.",
+        "fi": "Avustajani tulee kahdeksalta.",
+        "fr": "Mon assistant arrive à huit heures.",
+        "he": "העוזר שלי מגיע בשמונה.",
+        "hi": "मेरा सहायक आठ बजे आता है।",
+        "hu": "A segítőm nyolckor érkezik.",
+        "id": "Asisten saya tiba pukul delapan.",
+        "it": "Il mio assistente arriva alle otto.",
+        "ja": "私のアシスタントは8時に来ます。",
+        "ko": "제 조수는 여덟 시에 도착합니다.",
+        "nb": "Assistenten min kommer klokken åtte.",
+        "nl": "Mijn assistent komt om acht uur.",
+        "pl": "Mój asystent przychodzi o ósmej.",
+        "pt": "Meu assistente chega às oito horas.",
+        "ro": "Asistentul meu ajunge la opt.",
+        "ru": "Мой ассистент приходит в восемь.",
+        "sv": "Min assistent kommer klockan åtta.",
+        "tr": "Asistanım saat sekizde geliyor.",
+        "uk": "Мій асистент приходить о восьмій.",
+        "vi": "Trợ lý của tôi đến lúc tám giờ.",
+        "yue": "我個助理八點到。",
+        "zh-Hans": "我的助手八点到。"
       },
       "tokens": [
         {
           "surface": "Mi",
           "lemma": "mi",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "DET",
           "feats": {},
           "start": 0,
           "end": 2,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "asistente",
           "lemma": "asistente",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NOUN",
           "feats": {},
           "start": 3,
           "end": 12,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "llega",
-          "lemma": "llega",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "llegar",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VERB",
           "feats": {},
           "start": 13,
           "end": 18,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "a",
           "lemma": "a",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "ADP",
           "feats": {},
           "start": 19,
           "end": 20,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "las",
-          "lemma": "las",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "el",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "DET",
           "feats": {},
           "start": 21,
           "end": 24,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "ocho",
           "lemma": "ocho",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NOUN",
           "feats": {},
           "start": 25,
           "end": 29,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": ".",
           "lemma": ".",
-          "pos": "punct",
+          "pos": "PUNCT",
           "upos": "PUNCT",
-          "xpos": "",
+          "xpos": "PUNCT",
           "feats": {},
           "start": 29,
           "end": 30,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         }
       ],
       "difficulty": null
@@ -507,6 +611,162 @@
     "word_fi": "assistentti",
     "word_ja": "助手",
     "word_es": "asistente",
+    "ar": [
+      "المساعد يفتح الباب.",
+      "أحتاج إلى مساعد في المطبخ.",
+      "تتحدث المساعدة مع الزبونة.",
+      "يصل مساعدي في الثامنة."
+    ],
+    "cs": [
+      "Asistent otevírá dveře.",
+      "Potřebuji pomocníka do kuchyně.",
+      "Asistentka mluví se zákaznicí.",
+      "Můj asistent přichází v osm."
+    ],
+    "da": [
+      "Assistenten åbner døren.",
+      "Jeg har brug for en assistent i køkkenet.",
+      "Assistenten taler med kunden.",
+      "Min assistent kommer klokken otte."
+    ],
+    "de": [
+      "Der Assistent öffnet die Tür.",
+      "Ich brauche einen Assistenten in der Küche.",
+      "Die Assistentin spricht mit der Kundin.",
+      "Mein Assistent kommt um acht."
+    ],
+    "el": [
+      "Ο βοηθός ανοίγει την πόρτα.",
+      "Χρειάζομαι έναν βοηθό στην κουζίνα.",
+      "Η βοηθός μιλάει με την πελάτισσα.",
+      "Ο βοηθός μου έρχεται στις οκτώ."
+    ],
+    "fi": [
+      "Tarvitsen avustajan keittiöön.",
+      "Tarvitsen avustajan keittiöön.",
+      "Avustaja puhuu asiakkaan kanssa.",
+      "Avustajani tulee kahdeksalta."
+    ],
+    "fr": [
+      "L'assistant ouvre la porte.",
+      "J'ai besoin d'un assistant dans la cuisine.",
+      "L'assistante parle avec la cliente.",
+      "Mon assistant arrive à huit heures."
+    ],
+    "he": [
+      "העוזר פותח את הדלת.",
+      "אני צריך עוזר במטבח.",
+      "העוזרת מדברת עם הלקוחה.",
+      "העוזר שלי מגיע בשמונה."
+    ],
+    "hi": [
+      "सहायक दरवाज़ा खोलता है।",
+      "मुझे रसोई में एक सहायक चाहिए।",
+      "सहायक ग्राहक से बात कर रही है।",
+      "मेरा सहायक आठ बजे आता है।"
+    ],
+    "hu": [
+      "A segéd kinyitja az ajtót.",
+      "Szükségem van egy segítőre a konyhában.",
+      "Az asszisztens a vásárlóval beszél.",
+      "A segítőm nyolckor érkezik."
+    ],
+    "id": [
+      "Asisten itu membuka pintu.",
+      "Saya perlu asisten di dapur.",
+      "Asisten itu berbicara dengan pelanggan.",
+      "Asisten saya tiba pukul delapan."
+    ],
+    "it": [
+      "L'assistente apre la porta.",
+      "Mi serve un assistente in cucina.",
+      "L'assistente parla con la cliente.",
+      "Il mio assistente arriva alle otto."
+    ],
+    "ja": [
+      "アシスタントがドアを開けます。",
+      "台所にアシスタントが必要です。",
+      "アシスタントが客と話しています。",
+      "私のアシスタントは8時に来ます。"
+    ],
+    "ko": [
+      "조수가 문을 엽니다.",
+      "저는 부엌에 조수가 필요합니다.",
+      "조수가 고객과 이야기합니다.",
+      "제 조수는 여덟 시에 도착합니다."
+    ],
+    "nb": [
+      "Assistenten åpner døren.",
+      "Jeg trenger en assistent på kjøkkenet.",
+      "Assistenten snakker med kunden.",
+      "Assistenten min kommer klokken åtte."
+    ],
+    "nl": [
+      "De assistent opent de deur.",
+      "Ik heb een assistent in de keuken nodig.",
+      "De assistente spreekt met de klant.",
+      "Mijn assistent komt om acht uur."
+    ],
+    "pl": [
+      "Asystent otwiera drzwi.",
+      "Potrzebuję asystenta w kuchni.",
+      "Asystentka rozmawia z klientką.",
+      "Mój asystent przychodzi o ósmej."
+    ],
+    "pt": [
+      "O assistente abre a porta.",
+      "Preciso de um assistente na cozinha.",
+      "A assistente fala com a cliente.",
+      "Meu assistente chega às oito horas."
+    ],
+    "ro": [
+      "Asistentul deschide ușa.",
+      "Am nevoie de un asistent în bucătărie.",
+      "Asistenta vorbește cu clienta.",
+      "Asistentul meu ajunge la opt."
+    ],
+    "ru": [
+      "Ассистент открывает дверь.",
+      "Мне нужен ассистент на кухне.",
+      "Ассистентка разговаривает с клиенткой.",
+      "Мой ассистент приходит в восемь."
+    ],
+    "sv": [
+      "Assistenten öppnar dörren.",
+      "Jag behöver en assistent i köket.",
+      "Assistenten pratar med kunden.",
+      "Min assistent kommer klockan åtta."
+    ],
+    "tr": [
+      "Asistan kapıyı açıyor.",
+      "Mutfakta bir asistana ihtiyacım var.",
+      "Asistan müşteriyle konuşuyor.",
+      "Asistanım saat sekizde geliyor."
+    ],
+    "uk": [
+      "Асистент відчиняє двері.",
+      "Мені потрібен асистент на кухні.",
+      "Асистентка розмовляє з клієнткою.",
+      "Мій асистент приходить о восьмій."
+    ],
+    "vi": [
+      "Người trợ lý mở cửa.",
+      "Tôi cần một trợ lý trong bếp.",
+      "Người trợ lý nói chuyện với khách hàng.",
+      "Trợ lý của tôi đến lúc tám giờ."
+    ],
+    "yue": [
+      "助理打開門。",
+      "我需要一個廚房助理。",
+      "女助理同客人傾偈。",
+      "我個助理八點到。"
+    ],
+    "zh-Hans": [
+      "助手打开门。",
+      "我需要一个厨房助手。",
+      "女助手和顾客说话。",
+      "我的助手八点到。"
+    ],
     "pos_analysis": [
       {
         "sentence": "El asistente abre la puerta.",
@@ -514,68 +774,68 @@
           {
             "surface": "El",
             "lemma": "el",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "DET",
             "feats": {},
             "start": 0,
             "end": 2,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "asistente",
             "lemma": "asistente",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NOUN",
             "feats": {},
             "start": 3,
             "end": 12,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "abre",
-            "lemma": "abre",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "abrir",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VERB",
             "feats": {},
             "start": 13,
             "end": 17,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "la",
-            "lemma": "la",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "el",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "DET",
             "feats": {},
             "start": 18,
             "end": 20,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "puerta",
             "lemma": "puerta",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NOUN",
             "feats": {},
             "start": 21,
             "end": 27,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": ".",
             "lemma": ".",
-            "pos": "punct",
+            "pos": "PUNCT",
             "upos": "PUNCT",
-            "xpos": "",
+            "xpos": "PUNCT",
             "feats": {},
             "start": 27,
             "end": 28,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           }
         ],
         "difficulty_aggregated": null
@@ -585,80 +845,80 @@
         "tokens": [
           {
             "surface": "Necesito",
-            "lemma": "necesito",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "necesitar",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VERB",
             "feats": {},
             "start": 0,
             "end": 8,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "un",
-            "lemma": "un",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "uno",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "DET",
             "feats": {},
             "start": 9,
             "end": 11,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "asistente",
             "lemma": "asistente",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NOUN",
             "feats": {},
             "start": 12,
             "end": 21,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "en",
             "lemma": "en",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "ADP",
             "feats": {},
             "start": 22,
             "end": 24,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "la",
-            "lemma": "la",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "el",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "DET",
             "feats": {},
             "start": 25,
             "end": 27,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "cocina",
             "lemma": "cocina",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NOUN",
             "feats": {},
             "start": 28,
             "end": 34,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": ".",
             "lemma": ".",
-            "pos": "punct",
+            "pos": "PUNCT",
             "upos": "PUNCT",
-            "xpos": "",
+            "xpos": "PUNCT",
             "feats": {},
             "start": 34,
             "end": 35,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           }
         ],
         "difficulty_aggregated": null
@@ -668,80 +928,80 @@
         "tokens": [
           {
             "surface": "La",
-            "lemma": "la",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "el",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "DET",
             "feats": {},
             "start": 0,
             "end": 2,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "asistente",
             "lemma": "asistente",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NOUN",
             "feats": {},
             "start": 3,
             "end": 12,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "habla",
-            "lemma": "habla",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "hablar",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VERB",
             "feats": {},
             "start": 13,
             "end": 18,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "con",
             "lemma": "con",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "ADP",
             "feats": {},
             "start": 19,
             "end": 22,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "la",
-            "lemma": "la",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "el",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "DET",
             "feats": {},
             "start": 23,
             "end": 25,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "clienta",
             "lemma": "clienta",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NOUN",
             "feats": {},
             "start": 26,
             "end": 33,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": ".",
             "lemma": ".",
-            "pos": "punct",
+            "pos": "PUNCT",
             "upos": "PUNCT",
-            "xpos": "",
+            "xpos": "PUNCT",
             "feats": {},
             "start": 33,
             "end": 34,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           }
         ],
         "difficulty_aggregated": null
@@ -752,79 +1012,79 @@
           {
             "surface": "Mi",
             "lemma": "mi",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "DET",
             "feats": {},
             "start": 0,
             "end": 2,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "asistente",
             "lemma": "asistente",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NOUN",
             "feats": {},
             "start": 3,
             "end": 12,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "llega",
-            "lemma": "llega",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "llegar",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VERB",
             "feats": {},
             "start": 13,
             "end": 18,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "a",
             "lemma": "a",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "ADP",
             "feats": {},
             "start": 19,
             "end": 20,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "las",
-            "lemma": "las",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "el",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "DET",
             "feats": {},
             "start": 21,
             "end": 24,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "ocho",
             "lemma": "ocho",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NOUN",
             "feats": {},
             "start": 25,
             "end": 29,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": ".",
             "lemma": ".",
-            "pos": "punct",
+            "pos": "PUNCT",
             "upos": "PUNCT",
-            "xpos": "",
+            "xpos": "PUNCT",
             "feats": {},
             "start": 29,
             "end": 30,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           }
         ],
         "difficulty_aggregated": null

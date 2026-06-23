@@ -47,63 +47,89 @@
       "translations": {
         "en": "I want to return the book.",
         "es": "Quiero devolver el libro.",
-        "ipa": "ˈkjeɾo ðeβolˈbeɾ el ˈliβɾo"
+        "ipa": "ˈkjeɾo ðeβolˈbeɾ el ˈliβɾo",
+        "ar": "أريد أن أعيد الكتاب.",
+        "cs": "Chci vrátit knihu.",
+        "da": "Jeg vil returnere bogen.",
+        "de": "Ich möchte das Buch zurückgeben.",
+        "el": "Θέλω να επιστρέψω το βιβλίο.",
+        "fi": "Haluan palauttaa kirjan.",
+        "fr": "Je veux rendre le livre.",
+        "he": "אני רוצה להחזיר את הספר.",
+        "hi": "मैं किताब लौटाना चाहता हूँ।",
+        "hu": "Vissza akarom vinni a könyvet.",
+        "id": "Saya ingin mengembalikan buku itu.",
+        "it": "Voglio restituire il libro.",
+        "ja": "本を返したいです。",
+        "ko": "책을 반납하고 싶어요.",
+        "nb": "Jeg vil levere tilbake boken.",
+        "nl": "Ik wil het boek terugbrengen.",
+        "pl": "Chcę oddać książkę.",
+        "pt": "Quero devolver o livro.",
+        "ro": "Vreau să returnez cartea.",
+        "ru": "Я хочу вернуть книгу.",
+        "sv": "Jag vill lämna tillbaka boken.",
+        "tr": "Kitabı iade etmek istiyorum.",
+        "uk": "Я хочу повернути книгу.",
+        "vi": "Tôi muốn trả cuốn sách.",
+        "yue": "我想還本書。",
+        "zh-Hans": "我想还这本书。"
       },
       "tokens": [
         {
           "surface": "Quiero",
-          "lemma": "quiero",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "querer",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VERB",
           "feats": {},
           "start": 0,
           "end": 6,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "devolver",
           "lemma": "devolver",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VERB",
           "feats": {},
           "start": 7,
           "end": 15,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "el",
           "lemma": "el",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "DET",
           "feats": {},
           "start": 16,
           "end": 18,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "libro",
           "lemma": "libro",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NOUN",
           "feats": {},
           "start": 19,
           "end": 24,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": ".",
           "lemma": ".",
-          "pos": "punct",
+          "pos": "PUNCT",
           "upos": "PUNCT",
-          "xpos": "",
+          "xpos": "PUNCT",
           "feats": {},
           "start": 24,
           "end": 25,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         }
       ],
       "difficulty": null
@@ -114,74 +140,100 @@
       "translations": {
         "en": "I’m going to return the jacket.",
         "es": "Voy a devolver la chaqueta.",
-        "ipa": "boj a ðeβolˈbeɾ la tʃaˈketa"
+        "ipa": "boj a ðeβolˈbeɾ la tʃaˈketa",
+        "ar": "سأعيد السترة.",
+        "cs": "Půjdu vrátit bundu.",
+        "da": "Jeg vil returnere jakken.",
+        "de": "Ich werde die Jacke zurückgeben.",
+        "el": "Θα επιστρέψω το μπουφάν.",
+        "fi": "Aion palauttaa takin.",
+        "fr": "Je vais rendre la veste.",
+        "he": "אני הולך להחזיר את המעיל.",
+        "hi": "मैं जैकेट लौटाने जा रहा हूँ।",
+        "hu": "Vissza fogom vinni a kabátot.",
+        "id": "Saya akan mengembalikan jaket itu.",
+        "it": "Vado a restituire la giacca.",
+        "ja": "ジャケットを返しに行きます。",
+        "ko": "재킷을 반납할 거예요.",
+        "nb": "Jeg skal levere tilbake jakken.",
+        "nl": "Ik ga de jas terugbrengen.",
+        "pl": "Oddam kurtkę.",
+        "pt": "Vou devolver a jaqueta.",
+        "ro": "O să returnez geaca.",
+        "ru": "Я собираюсь вернуть куртку.",
+        "sv": "Jag ska lämna tillbaka jackan.",
+        "tr": "Montu iade edeceğim.",
+        "uk": "Я збираюся повернути куртку.",
+        "vi": "Tôi sẽ trả cái áo khoác.",
+        "yue": "我會退呢件外套。",
+        "zh-Hans": "我要退这件夹克。"
       },
       "tokens": [
         {
           "surface": "Voy",
-          "lemma": "voy",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "ir",
+          "pos": "AUX",
+          "upos": "AUX",
+          "xpos": "AUX",
           "feats": {},
           "start": 0,
           "end": 3,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "a",
           "lemma": "a",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "ADP",
           "feats": {},
           "start": 4,
           "end": 5,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "devolver",
           "lemma": "devolver",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VERB",
           "feats": {},
           "start": 6,
           "end": 14,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "la",
-          "lemma": "la",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "el",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "DET",
           "feats": {},
           "start": 15,
           "end": 17,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "chaqueta",
           "lemma": "chaqueta",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NOUN",
           "feats": {},
           "start": 18,
           "end": 26,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": ".",
           "lemma": ".",
-          "pos": "punct",
+          "pos": "PUNCT",
           "upos": "PUNCT",
-          "xpos": "",
+          "xpos": "PUNCT",
           "feats": {},
           "start": 26,
           "end": 27,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         }
       ],
       "difficulty": null
@@ -192,74 +244,100 @@
       "translations": {
         "en": "Where can I return this?",
         "es": "¿Dónde puedo devolver esto?",
-        "ipa": "ˈdonde ˈpweðo ðeβolˈbeɾ ˈesto"
+        "ipa": "ˈdonde ˈpweðo ðeβolˈbeɾ ˈesto",
+        "ar": "أين يمكنني إرجاع هذا؟",
+        "cs": "Kde to můžu vrátit?",
+        "da": "Hvor kan jeg returnere det?",
+        "de": "Wo kann ich das zurückgeben?",
+        "el": "Πού μπορώ να το επιστρέψω;",
+        "fi": "Mihin voin palauttaa tämän?",
+        "fr": "Où puis-je rendre ça ?",
+        "he": "איפה אפשר להחזיר את זה?",
+        "hi": "मैं इसे कहाँ लौटा सकता हूँ?",
+        "hu": "Hol tudom ezt visszavinni?",
+        "id": "Di mana saya bisa mengembalikan ini?",
+        "it": "Dove posso restituire questo?",
+        "ja": "これはどこで返せますか。",
+        "ko": "이걸 어디에서 반납할 수 있나요?",
+        "nb": "Hvor kan jeg levere tilbake dette?",
+        "nl": "Waar kan ik dit terugbrengen?",
+        "pl": "Gdzie mogę to oddać?",
+        "pt": "Onde posso devolver isto?",
+        "ro": "Unde pot să returnez asta?",
+        "ru": "Где я могу это вернуть?",
+        "sv": "Var kan jag lämna tillbaka det här?",
+        "tr": "Bunu nerede iade edebilirim?",
+        "uk": "Де я можу це повернути?",
+        "vi": "Tôi có thể trả cái này ở đâu?",
+        "yue": "我可以喺邊度退呢樣嘢？",
+        "zh-Hans": "我可以在哪里退这个？"
       },
       "tokens": [
         {
           "surface": "¿",
           "lemma": "¿",
-          "pos": "punct",
+          "pos": "PUNCT",
           "upos": "PUNCT",
-          "xpos": "",
+          "xpos": "PUNCT",
           "feats": {},
           "start": 0,
           "end": 1,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "Dónde",
           "lemma": "dónde",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "PRON",
+          "upos": "PRON",
+          "xpos": "PRON",
           "feats": {},
           "start": 1,
           "end": 6,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "puedo",
-          "lemma": "puedo",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "poder",
+          "pos": "AUX",
+          "upos": "AUX",
+          "xpos": "AUX",
           "feats": {},
           "start": 7,
           "end": 12,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "devolver",
           "lemma": "devolver",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VERB",
           "feats": {},
           "start": 13,
           "end": 21,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "esto",
-          "lemma": "esto",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "este",
+          "pos": "PRON",
+          "upos": "PRON",
+          "xpos": "PRON",
           "feats": {},
           "start": 22,
           "end": 26,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "?",
           "lemma": "?",
-          "pos": "punct",
+          "pos": "PUNCT",
           "upos": "PUNCT",
-          "xpos": "",
+          "xpos": "PUNCT",
           "feats": {},
           "start": 26,
           "end": 27,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         }
       ],
       "difficulty": null
@@ -270,85 +348,111 @@
       "translations": {
         "en": "Tomorrow I’m going to return the car.",
         "es": "Mañana voy a devolver el coche.",
-        "ipa": "maˈɲana boj a ðeβolˈbeɾ el ˈkotʃe"
+        "ipa": "maˈɲana boj a ðeβolˈbeɾ el ˈkotʃe",
+        "ar": "غدًا سأعيد السيارة.",
+        "cs": "Zítra vrátím auto.",
+        "da": "I morgen vil jeg returnere bilen.",
+        "de": "Morgen werde ich das Auto zurückgeben.",
+        "el": "Αύριο θα επιστρέψω το αυτοκίνητο.",
+        "fi": "Huomenna aion palauttaa auton.",
+        "fr": "Demain, je vais rendre la voiture.",
+        "he": "מחר אני הולך להחזיר את המכונית.",
+        "hi": "कल मैं कार लौटाने जा रहा हूँ।",
+        "hu": "Holnap vissza fogom vinni az autót.",
+        "id": "Besok saya akan mengembalikan mobil itu.",
+        "it": "Domani restituirò la macchina.",
+        "ja": "明日車を返します。",
+        "ko": "내일 차를 반납할 거예요.",
+        "nb": "I morgen skal jeg levere tilbake bilen.",
+        "nl": "Morgen ga ik de auto terugbrengen.",
+        "pl": "Jutro oddam samochód.",
+        "pt": "Amanhã vou devolver o carro.",
+        "ro": "Mâine o să returnez mașina.",
+        "ru": "Завтра я верну машину.",
+        "sv": "I morgon ska jag lämna tillbaka bilen.",
+        "tr": "Yarın arabayı iade edeceğim.",
+        "uk": "Завтра я поверну машину.",
+        "vi": "Ngày mai tôi sẽ trả xe.",
+        "yue": "聽日我會還架車。",
+        "zh-Hans": "明天我要还车。"
       },
       "tokens": [
         {
           "surface": "Mañana",
           "lemma": "mañana",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "ADV",
           "feats": {},
           "start": 0,
           "end": 6,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "voy",
-          "lemma": "voy",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "lemma": "ir",
+          "pos": "AUX",
+          "upos": "AUX",
+          "xpos": "AUX",
           "feats": {},
           "start": 7,
           "end": 10,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "a",
           "lemma": "a",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "ADP",
           "feats": {},
           "start": 11,
           "end": 12,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "devolver",
           "lemma": "devolver",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VERB",
           "feats": {},
           "start": 13,
           "end": 21,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "el",
           "lemma": "el",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "DET",
           "feats": {},
           "start": 22,
           "end": 24,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "coche",
           "lemma": "coche",
-          "pos": "x",
-          "upos": "X",
-          "xpos": "",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NOUN",
           "feats": {},
           "start": 25,
           "end": 30,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": ".",
           "lemma": ".",
-          "pos": "punct",
+          "pos": "PUNCT",
           "upos": "PUNCT",
-          "xpos": "",
+          "xpos": "PUNCT",
           "feats": {},
           "start": 30,
           "end": 31,
-          "analyzer": "fallback_unicode_rules"
+          "analyzer": "spacy_es_core_news_lg"
         }
       ],
       "difficulty": null
@@ -474,64 +578,220 @@
     "word_fi": "palauttaa",
     "word_ja": "返す",
     "word_es": "devolver",
+    "ar": [
+      "أريد أن أعيد الكتاب.",
+      "سأعيد السترة.",
+      "أين يمكنني إرجاع هذا؟",
+      "غدًا سأعيد السيارة."
+    ],
+    "cs": [
+      "Chci vrátit knihu.",
+      "Půjdu vrátit bundu.",
+      "Kde to můžu vrátit?",
+      "Zítra vrátím auto."
+    ],
+    "da": [
+      "Jeg vil returnere bogen.",
+      "Jeg vil returnere jakken.",
+      "Hvor kan jeg returnere det?",
+      "I morgen vil jeg returnere bilen."
+    ],
+    "de": [
+      "Ich möchte das Buch zurückgeben.",
+      "Ich werde die Jacke zurückgeben.",
+      "Wo kann ich das zurückgeben?",
+      "Morgen werde ich das Auto zurückgeben."
+    ],
+    "el": [
+      "Θέλω να επιστρέψω το βιβλίο.",
+      "Θα επιστρέψω το μπουφάν.",
+      "Πού μπορώ να το επιστρέψω;",
+      "Αύριο θα επιστρέψω το αυτοκίνητο."
+    ],
+    "fi": [
+      "Haluan palauttaa kirjan.",
+      "Aion palauttaa takin.",
+      "Mihin voin palauttaa tämän?",
+      "Huomenna aion palauttaa auton."
+    ],
+    "fr": [
+      "Je veux rendre le livre.",
+      "Je vais rendre la veste.",
+      "Où puis-je rendre ça ?",
+      "Demain, je vais rendre la voiture."
+    ],
+    "he": [
+      "אני רוצה להחזיר את הספר.",
+      "אני הולך להחזיר את המעיל.",
+      "איפה אפשר להחזיר את זה?",
+      "מחר אני הולך להחזיר את המכונית."
+    ],
+    "hi": [
+      "मैं किताब लौटाना चाहता हूँ।",
+      "मैं जैकेट लौटाने जा रहा हूँ।",
+      "मैं इसे कहाँ लौटा सकता हूँ?",
+      "कल मैं कार लौटाने जा रहा हूँ।"
+    ],
+    "hu": [
+      "Vissza akarom vinni a könyvet.",
+      "Vissza fogom vinni a kabátot.",
+      "Hol tudom ezt visszavinni?",
+      "Holnap vissza fogom vinni az autót."
+    ],
+    "id": [
+      "Saya ingin mengembalikan buku itu.",
+      "Saya akan mengembalikan jaket itu.",
+      "Di mana saya bisa mengembalikan ini?",
+      "Besok saya akan mengembalikan mobil itu."
+    ],
+    "it": [
+      "Voglio restituire il libro.",
+      "Vado a restituire la giacca.",
+      "Dove posso restituire questo?",
+      "Domani restituirò la macchina."
+    ],
+    "ja": [
+      "本を返したいです。",
+      "ジャケットを返しに行きます。",
+      "これはどこで返せますか。",
+      "明日車を返します。"
+    ],
+    "ko": [
+      "책을 반납하고 싶어요.",
+      "재킷을 반납할 거예요.",
+      "이걸 어디에서 반납할 수 있나요?",
+      "내일 차를 반납할 거예요."
+    ],
+    "nb": [
+      "Jeg vil levere tilbake boken.",
+      "Jeg skal levere tilbake jakken.",
+      "Hvor kan jeg levere tilbake dette?",
+      "I morgen skal jeg levere tilbake bilen."
+    ],
+    "nl": [
+      "Ik wil het boek terugbrengen.",
+      "Ik ga de jas terugbrengen.",
+      "Waar kan ik dit terugbrengen?",
+      "Morgen ga ik de auto terugbrengen."
+    ],
+    "pl": [
+      "Chcę oddać książkę.",
+      "Oddam kurtkę.",
+      "Gdzie mogę to oddać?",
+      "Jutro oddam samochód."
+    ],
+    "pt": [
+      "Quero devolver o livro.",
+      "Vou devolver a jaqueta.",
+      "Onde posso devolver isto?",
+      "Amanhã vou devolver o carro."
+    ],
+    "ro": [
+      "Vreau să returnez cartea.",
+      "O să returnez geaca.",
+      "Unde pot să returnez asta?",
+      "Mâine o să returnez mașina."
+    ],
+    "ru": [
+      "Я хочу вернуть книгу.",
+      "Я собираюсь вернуть куртку.",
+      "Где я могу это вернуть?",
+      "Завтра я верну машину."
+    ],
+    "sv": [
+      "Jag vill lämna tillbaka boken.",
+      "Jag ska lämna tillbaka jackan.",
+      "Var kan jag lämna tillbaka det här?",
+      "I morgon ska jag lämna tillbaka bilen."
+    ],
+    "tr": [
+      "Kitabı iade etmek istiyorum.",
+      "Montu iade edeceğim.",
+      "Bunu nerede iade edebilirim?",
+      "Yarın arabayı iade edeceğim."
+    ],
+    "uk": [
+      "Я хочу повернути книгу.",
+      "Я збираюся повернути куртку.",
+      "Де я можу це повернути?",
+      "Завтра я поверну машину."
+    ],
+    "vi": [
+      "Tôi muốn trả cuốn sách.",
+      "Tôi sẽ trả cái áo khoác.",
+      "Tôi có thể trả cái này ở đâu?",
+      "Ngày mai tôi sẽ trả xe."
+    ],
+    "yue": [
+      "我想還本書。",
+      "我會退呢件外套。",
+      "我可以喺邊度退呢樣嘢？",
+      "聽日我會還架車。"
+    ],
+    "zh-Hans": [
+      "我想还这本书。",
+      "我要退这件夹克。",
+      "我可以在哪里退这个？",
+      "明天我要还车。"
+    ],
     "pos_analysis": [
       {
         "sentence": "Quiero devolver el libro.",
         "tokens": [
           {
             "surface": "Quiero",
-            "lemma": "quiero",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "querer",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VERB",
             "feats": {},
             "start": 0,
             "end": 6,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "devolver",
             "lemma": "devolver",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VERB",
             "feats": {},
             "start": 7,
             "end": 15,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "el",
             "lemma": "el",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "DET",
             "feats": {},
             "start": 16,
             "end": 18,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "libro",
             "lemma": "libro",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NOUN",
             "feats": {},
             "start": 19,
             "end": 24,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": ".",
             "lemma": ".",
-            "pos": "punct",
+            "pos": "PUNCT",
             "upos": "PUNCT",
-            "xpos": "",
+            "xpos": "PUNCT",
             "feats": {},
             "start": 24,
             "end": 25,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           }
         ],
         "difficulty_aggregated": null
@@ -541,69 +801,69 @@
         "tokens": [
           {
             "surface": "Voy",
-            "lemma": "voy",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "ir",
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "AUX",
             "feats": {},
             "start": 0,
             "end": 3,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "a",
             "lemma": "a",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "ADP",
             "feats": {},
             "start": 4,
             "end": 5,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "devolver",
             "lemma": "devolver",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VERB",
             "feats": {},
             "start": 6,
             "end": 14,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "la",
-            "lemma": "la",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "el",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "DET",
             "feats": {},
             "start": 15,
             "end": 17,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "chaqueta",
             "lemma": "chaqueta",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NOUN",
             "feats": {},
             "start": 18,
             "end": 26,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": ".",
             "lemma": ".",
-            "pos": "punct",
+            "pos": "PUNCT",
             "upos": "PUNCT",
-            "xpos": "",
+            "xpos": "PUNCT",
             "feats": {},
             "start": 26,
             "end": 27,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           }
         ],
         "difficulty_aggregated": null
@@ -614,68 +874,68 @@
           {
             "surface": "¿",
             "lemma": "¿",
-            "pos": "punct",
+            "pos": "PUNCT",
             "upos": "PUNCT",
-            "xpos": "",
+            "xpos": "PUNCT",
             "feats": {},
             "start": 0,
             "end": 1,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "Dónde",
             "lemma": "dónde",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PRON",
             "feats": {},
             "start": 1,
             "end": 6,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "puedo",
-            "lemma": "puedo",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "poder",
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "AUX",
             "feats": {},
             "start": 7,
             "end": 12,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "devolver",
             "lemma": "devolver",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VERB",
             "feats": {},
             "start": 13,
             "end": 21,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "esto",
-            "lemma": "esto",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "este",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PRON",
             "feats": {},
             "start": 22,
             "end": 26,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "?",
             "lemma": "?",
-            "pos": "punct",
+            "pos": "PUNCT",
             "upos": "PUNCT",
-            "xpos": "",
+            "xpos": "PUNCT",
             "feats": {},
             "start": 26,
             "end": 27,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           }
         ],
         "difficulty_aggregated": null
@@ -686,79 +946,79 @@
           {
             "surface": "Mañana",
             "lemma": "mañana",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
             "feats": {},
             "start": 0,
             "end": 6,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "voy",
-            "lemma": "voy",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "lemma": "ir",
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "AUX",
             "feats": {},
             "start": 7,
             "end": 10,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "a",
             "lemma": "a",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "ADP",
             "feats": {},
             "start": 11,
             "end": 12,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "devolver",
             "lemma": "devolver",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VERB",
             "feats": {},
             "start": 13,
             "end": 21,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "el",
             "lemma": "el",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "DET",
             "feats": {},
             "start": 22,
             "end": 24,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "coche",
             "lemma": "coche",
-            "pos": "x",
-            "upos": "X",
-            "xpos": "",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NOUN",
             "feats": {},
             "start": 25,
             "end": 30,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": ".",
             "lemma": ".",
-            "pos": "punct",
+            "pos": "PUNCT",
             "upos": "PUNCT",
-            "xpos": "",
+            "xpos": "PUNCT",
             "feats": {},
             "start": 30,
             "end": 31,
-            "analyzer": "fallback_unicode_rules"
+            "analyzer": "spacy_es_core_news_lg"
           }
         ],
         "difficulty_aggregated": null
