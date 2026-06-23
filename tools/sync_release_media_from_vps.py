@@ -9,7 +9,7 @@ import subprocess
 from pathlib import Path
 from typing import Any, Dict
 
-from common import load_pack_catalog, repo_root_from_tool
+from common import copy_item_media, iter_pack_items, load_pack_catalog, path_exists_exact, repo_root_from_tool
 
 
 def selected_codes(catalog: Dict[str, Dict[str, Any]], decks: list[str]) -> list[str]:
@@ -28,6 +28,24 @@ def pack_dir_for(root: Path, cfg: Dict[str, Any], code: str) -> Path:
 def run(cmd: list[str]) -> None:
     print("+ " + " ".join(shlex.quote(part) for part in cmd), flush=True)
     subprocess.run(cmd, check=True)
+
+
+def materialize_media_aliases(pack_dir: Path) -> int:
+    media_dir = pack_dir / "media"
+    materialized = 0
+    for item, _item_path in iter_pack_items(pack_dir):
+        media = item.get("media") or {}
+        source_name = media.get("source_image_filename")
+        image_name = media.get("image_filename")
+        if not isinstance(source_name, str) or not isinstance(image_name, str):
+            continue
+        if not source_name or not image_name or source_name == image_name:
+            continue
+        if path_exists_exact(media_dir, image_name):
+            continue
+        if copy_item_media(item, [media_dir], media_dir):
+            materialized += 1
+    return materialized
 
 
 def main() -> int:
@@ -70,6 +88,9 @@ def main() -> int:
                 str(local_media) + "/",
             ]
         )
+        aliases = materialize_media_aliases(local_pack)
+        if aliases:
+            print(f"{code}: materialized {aliases} canonical media alias file(s)", flush=True)
     return 0
 
 

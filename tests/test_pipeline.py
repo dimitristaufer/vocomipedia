@@ -48,6 +48,10 @@ DEPLOY_PACKS_SPEC = importlib.util.spec_from_file_location("deploy_packs_to_vps"
 assert DEPLOY_PACKS_SPEC and DEPLOY_PACKS_SPEC.loader
 deploy_packs_to_vps = importlib.util.module_from_spec(DEPLOY_PACKS_SPEC)
 DEPLOY_PACKS_SPEC.loader.exec_module(deploy_packs_to_vps)
+SYNC_RELEASE_MEDIA_SPEC = importlib.util.spec_from_file_location("sync_release_media_from_vps", TOOLS / "sync_release_media_from_vps.py")
+assert SYNC_RELEASE_MEDIA_SPEC and SYNC_RELEASE_MEDIA_SPEC.loader
+sync_release_media_from_vps = importlib.util.module_from_spec(SYNC_RELEASE_MEDIA_SPEC)
+SYNC_RELEASE_MEDIA_SPEC.loader.exec_module(sync_release_media_from_vps)
 MEDIAWIKI_BACKUP_SPEC = importlib.util.spec_from_file_location("mediawiki_backup", TOOLS / "mediawiki_backup.py")
 assert MEDIAWIKI_BACKUP_SPEC and MEDIAWIKI_BACKUP_SPEC.loader
 mediawiki_backup = importlib.util.module_from_spec(MEDIAWIKI_BACKUP_SPEC)
@@ -1311,6 +1315,52 @@ packs:
             self.assertEqual(copied, dest_root / "comic_test_blank.png")
             self.assertTrue(common.path_exists_exact(dest_root, "comic_test_blank.png"))
             self.assertFalse(common.path_exists_exact(dest_root, "Comic_Test_blank.png"))
+
+    def test_release_media_hydration_materializes_canonical_aliases(self) -> None:
+        with tempfile.TemporaryDirectory() as td:
+            pack_dir = Path(td) / "de" / "de_a1"
+            media_dir = pack_dir / "media"
+            items_dir = pack_dir / "items"
+            media_dir.mkdir(parents=True)
+            items_dir.mkdir()
+            (media_dir / "comic_bitte_blank.png").write_bytes(b"image")
+            item = {
+                "schema_version": common.ITEM_SCHEMA_VERSION,
+                "id": "de_a1:bitte-1eddbdf4ab037fea",
+                "pack_code": "de_a1",
+                "language": "de",
+                "entry_id": "bitte__v2",
+                "headword": "bitte",
+                "reading": "",
+                "sentences": [],
+                "media": {
+                    "image_filename": "comic_bitte__v2_blank.png",
+                    "source_image_filename": "comic_bitte_blank.png",
+                    "license": "Vocomi-created",
+                    "review_status": "approved",
+                },
+                "review": {"status": "approved"},
+                "provenance": {"license_status": "generated_by_vocomi"},
+                "app_payload": {},
+            }
+            (items_dir / "bitte.json").write_text(json.dumps(item), encoding="utf-8")
+            (pack_dir / "pack.json").write_text(
+                json.dumps(
+                    {
+                        "schema_version": common.PACK_SCHEMA_VERSION,
+                        "pack_code": "de_a1",
+                        "language": "de",
+                        "items": [{"entry_id": "bitte__v2", "file": "items/bitte.json", "order": 1}],
+                    }
+                ),
+                encoding="utf-8",
+            )
+
+            count = sync_release_media_from_vps.materialize_media_aliases(pack_dir)
+
+            self.assertEqual(count, 1)
+            self.assertTrue(common.path_exists_exact(media_dir, "comic_bitte__v2_blank.png"))
+            self.assertEqual((media_dir / "comic_bitte__v2_blank.png").read_bytes(), b"image")
 
     def test_auto_pos_analysis_preserves_legacy_tokens_when_only_fallback_is_available(self) -> None:
         nlp_base.analyzer_for_language.cache_clear()
