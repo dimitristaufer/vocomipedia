@@ -549,6 +549,8 @@ def ensure_real_analyzer_available(language: str) -> SentenceAnalyzer:
 
 
 def sync_item_pos_analysis(item: Dict[str, Any], *, regenerate: bool = False) -> Dict[str, Any]:
+    from common import sanitize_sentence_tokens
+
     if regenerate:
         language = normalize_language(str(item.get("language") or ""))
         for sentence in item.get("sentences") or []:
@@ -563,19 +565,27 @@ def sync_item_pos_analysis(item: Dict[str, Any], *, regenerate: bool = False) ->
                 rich_existing = [token for token in existing_tokens if isinstance(token, dict) and token_has_rich_analysis(token)]
                 if rich_existing:
                     normalize_preserved_tokens(language, [token for token in existing_tokens if isinstance(token, dict)])
+                    sentence["tokens"] = sanitize_sentence_tokens(item, existing_tokens, sentence_text=text)
                     continue
             result = analyze_sentence(language, text, existing_sentence=sentence, entry=item)
             if result.analyzer == FallbackAnalyzer.source:
                 if language_requires_real_analyzer(language):
                     raise RequiredAnalyzerUnavailable(
                         f"{language} POS analysis requires a real analyzer, but only {FallbackAnalyzer.source} is available. "
-                        "Install requirements-nlp.txt before running --auto-pos-analysis, or import without regenerating POS."
+                            "Install requirements-nlp.txt before running --auto-pos-analysis, or import without regenerating POS."
                     )
-            sentence["tokens"] = result.tokens
+            sentence["tokens"] = sanitize_sentence_tokens(item, result.tokens, sentence_text=text)
             if result.reading:
                 sentence["reading"] = result.reading
             elif language != "ja":
                 sentence["reading"] = sentence.get("reading", "")
+    else:
+        for sentence in item.get("sentences") or []:
+            if not isinstance(sentence, dict):
+                continue
+            tokens = sentence.get("tokens")
+            if isinstance(tokens, list):
+                sentence["tokens"] = sanitize_sentence_tokens(item, tokens, sentence_text=str(sentence.get("target") or ""))
     payload = item.setdefault("app_payload", {})
     payload["pos_analysis"] = [generated_pos_analysis_entry(sentence) for sentence in item.get("sentences") or []]
     return item

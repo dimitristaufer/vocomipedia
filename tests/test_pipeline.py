@@ -354,7 +354,7 @@ class VocomipediaPipelineTests(unittest.TestCase):
         }
         payload = common.canonical_to_legacy(item, pack={"target_sentence_key": "jp", "reading_sentence_key": "fu"})
         tokens = payload["pos_analysis"][0]["tokens"]
-        self.assertEqual([token["is_main_word"] for token in tokens], [False, True, False])
+        self.assertEqual([token.get("is_main_word") for token in tokens], [None, True, None])
 
     def test_release_export_rebuilds_derived_legacy_payload_fields(self) -> None:
         item = {
@@ -428,7 +428,7 @@ class VocomipediaPipelineTests(unittest.TestCase):
         }
         payload = common.canonical_to_legacy(item, pack={"target_sentence_key": "jp", "reading_sentence_key": "fu"})
         tokens = payload["pos_analysis"][0]["tokens"]
-        self.assertEqual([token["is_main_word"] for token in tokens], [False, False, True])
+        self.assertEqual([token.get("is_main_word") for token in tokens], [None, None, True])
 
     def test_release_export_annotates_split_korean_hada_compounds(self) -> None:
         item = {
@@ -466,7 +466,7 @@ class VocomipediaPipelineTests(unittest.TestCase):
         }
         payload = common.canonical_to_legacy(item, pack={"target_sentence_key": "jp", "reading_sentence_key": "fu"})
         tokens = payload["pos_analysis"][0]["tokens"]
-        self.assertEqual([token["is_main_word"] for token in tokens], [False, False, False, False, True, False, False])
+        self.assertEqual([token.get("is_main_word") for token in tokens], [None, None, None, None, True, None, None])
 
     def test_korean_auto_pos_requires_kiwi_analyzer(self) -> None:
         nlp_base.analyzer_for_language.cache_clear()
@@ -546,6 +546,173 @@ class VocomipediaPipelineTests(unittest.TestCase):
         self.assertEqual(item["sentences"][1]["tokens"][0]["xpos"], "XSN")
         errors = common.validate_item(item, require_release_ready=True, release_allowed_licenses={"Vocomi-created"})
         self.assertFalse(any("unknown Korean POS X" in error for error in errors), errors)
+
+    def test_pos_sync_marks_korean_dictionary_verb_main_tokens(self) -> None:
+        item = {
+            "schema_version": "vocomipedia-item-2",
+            "id": "ko_2:test",
+            "pack_code": "ko_2",
+            "language": "ko",
+            "entry_id": "지나다",
+            "headword": "지나다",
+            "reading": "",
+            "sentences": [
+                {
+                    "target": "시간이 지나면 마음이 조금 편해져요.",
+                    "translations": {"en": "As time passes, I feel a little more at ease."},
+                    "tokens": [
+                        {"surface": "시간", "lemma": "시간", "pos": "NNG", "upos": "NOUN"},
+                        {"surface": "이", "lemma": "이", "pos": "JKS", "upos": "PART"},
+                        {"surface": "지나", "lemma": "지나", "pos": "VV", "upos": "VERB"},
+                        {"surface": "면", "lemma": "면", "pos": "EC", "upos": "PART"},
+                    ],
+                }
+            ],
+            "media": {"license": "Vocomi-created", "review_status": "approved"},
+            "review": {"status": "approved"},
+            "provenance": {"license_status": "generated_by_vocomi"},
+            "app_payload": {},
+        }
+
+        nlp_base.sync_item_pos_analysis(item, regenerate=False)
+
+        tokens = item["sentences"][0]["tokens"]
+        self.assertEqual([token.get("is_main_word") for token in tokens], [None, None, True, None])
+        payload_tokens = item["app_payload"]["pos_analysis"][0]["tokens"]
+        self.assertEqual([token.get("is_main_word") for token in payload_tokens], [None, None, True, None])
+        errors = common.validate_item(item, require_release_ready=True, release_allowed_licenses={"Vocomi-created"})
+        self.assertFalse(errors)
+
+    def test_pos_sync_marks_korean_compound_and_split_main_tokens(self) -> None:
+        item = {
+            "schema_version": "vocomipedia-item-2",
+            "id": "ko_2:test",
+            "pack_code": "ko_2",
+            "language": "ko",
+            "entry_id": "통과하다",
+            "headword": "통과하다",
+            "reading": "",
+            "sentences": [
+                {
+                    "target": "그 버스는 긴 터널을 통과했어요.",
+                    "translations": {"en": "The bus passed through a long tunnel."},
+                    "tokens": [
+                        {"surface": "통과", "lemma": "통과", "pos": "NNG", "upos": "NOUN", "start": 12, "end": 14},
+                        {"surface": "하", "lemma": "하", "pos": "XSV", "upos": "AUX", "start": 14, "end": 15},
+                        {"surface": "었", "lemma": "었", "pos": "EP", "upos": "PART", "start": 15, "end": 16},
+                    ],
+                }
+            ],
+            "media": {"license": "Vocomi-created", "review_status": "approved"},
+            "review": {"status": "approved"},
+            "provenance": {"license_status": "generated_by_vocomi"},
+            "app_payload": {},
+        }
+
+        nlp_base.sync_item_pos_analysis(item, regenerate=False)
+
+        tokens = item["sentences"][0]["tokens"]
+        self.assertEqual([token.get("is_main_word") for token in tokens], [True, True, None])
+
+    def test_pos_sync_removes_false_flags_when_true_flag_exists(self) -> None:
+        item = {
+            "schema_version": "vocomipedia-item-2",
+            "id": "ja_n5:test",
+            "pack_code": "ja_n5",
+            "language": "ja",
+            "entry_id": "洗う",
+            "headword": "洗う",
+            "reading": "あらう",
+            "sentences": [
+                {
+                    "target": "手を洗う。",
+                    "translations": {"en": "I wash my hands."},
+                    "tokens": [
+                        {"surface": "手", "lemma": "手", "pos": "noun", "is_main_word": False},
+                        {"surface": "を", "lemma": "を", "pos": "particle", "is_main_word": False},
+                        {"surface": "洗う", "lemma": "洗う", "pos": "verb", "is_main_word": True},
+                    ],
+                }
+            ],
+            "media": {"license": "Vocomi-created", "review_status": "approved"},
+            "review": {"status": "approved"},
+            "provenance": {"license_status": "generated_by_vocomi"},
+            "app_payload": {},
+        }
+
+        nlp_base.sync_item_pos_analysis(item, regenerate=False)
+
+        tokens = item["sentences"][0]["tokens"]
+        self.assertEqual([token.get("is_main_word") for token in tokens], [None, None, True])
+        payload_tokens = item["app_payload"]["pos_analysis"][0]["tokens"]
+        self.assertEqual([token.get("is_main_word") for token in payload_tokens], [None, None, True])
+
+    def test_pos_sync_removes_japanese_whitespace_tokens(self) -> None:
+        item = {
+            "schema_version": "vocomipedia-item-2",
+            "id": "ja_n3:test",
+            "pack_code": "ja_n3",
+            "language": "ja",
+            "entry_id": "われわれ",
+            "headword": "われわれ",
+            "reading": "われわれ",
+            "sentences": [
+                {
+                    "target": "われわれは ここで まちます。",
+                    "translations": {"en": "We will wait here."},
+                    "tokens": [
+                        {"surface": "われわれ", "lemma": "われわれ", "pos": "代名詞", "upos": "PRON"},
+                        {"surface": "は", "lemma": "は", "pos": "助詞", "upos": "PART"},
+                        {"surface": " ", "lemma": " ", "pos": "空白", "upos": "X"},
+                        {"surface": "ここ", "lemma": "ここ", "pos": "代名詞", "upos": "PRON"},
+                    ],
+                }
+            ],
+            "media": {"license": "Vocomi-created", "review_status": "approved"},
+            "review": {"status": "approved"},
+            "provenance": {"license_status": "generated_by_vocomi"},
+            "app_payload": {},
+        }
+
+        nlp_base.sync_item_pos_analysis(item, regenerate=False)
+
+        tokens = item["sentences"][0]["tokens"]
+        self.assertEqual([token["surface"] for token in tokens], ["われわれ", "は", "ここ"])
+        self.assertEqual([token.get("is_main_word") for token in tokens], [True, None, None])
+        payload_tokens = item["app_payload"]["pos_analysis"][0]["tokens"]
+        self.assertEqual([token["surface"] for token in payload_tokens], ["われわれ", "は", "ここ"])
+        errors = common.validate_item(item, require_release_ready=True, release_allowed_licenses={"Vocomi-created"})
+        self.assertFalse(errors)
+
+    def test_release_ready_rejects_blank_tokens(self) -> None:
+        item = {
+            "schema_version": "vocomipedia-item-2",
+            "id": "ja_n3:test",
+            "pack_code": "ja_n3",
+            "language": "ja",
+            "entry_id": "われわれ",
+            "headword": "われわれ",
+            "reading": "われわれ",
+            "sentences": [
+                {
+                    "target": "われわれは ここで まちます。",
+                    "translations": {"en": "We will wait here."},
+                    "tokens": [
+                        {"surface": "われわれ", "lemma": "われわれ", "pos": "代名詞", "upos": "PRON"},
+                        {"surface": " ", "lemma": " ", "pos": "空白", "upos": "X"},
+                    ],
+                }
+            ],
+            "media": {"license": "Vocomi-created", "review_status": "approved"},
+            "review": {"status": "approved"},
+            "provenance": {"license_status": "generated_by_vocomi"},
+            "app_payload": {},
+        }
+
+        errors = common.validate_item(item, require_release_ready=True, release_allowed_licenses={"Vocomi-created"})
+
+        self.assertTrue(any("surface must not be blank" in error for error in errors), errors)
+        self.assertFalse(any("is_main_word=true" in error for error in errors), errors)
 
     def test_vps_partial_pack_deploy_preserves_existing_catalog(self) -> None:
         script = deploy_packs_to_vps.remote_deploy_script("/srv/vocomi-packs", "test-release", 3)
@@ -1361,6 +1528,52 @@ packs:
             self.assertEqual(count, 1)
             self.assertTrue(common.path_exists_exact(media_dir, "comic_bitte__v2_blank.png"))
             self.assertEqual((media_dir / "comic_bitte__v2_blank.png").read_bytes(), b"image")
+
+    def test_release_media_hydration_materializes_case_alias_when_source_matches_image(self) -> None:
+        with tempfile.TemporaryDirectory() as td:
+            pack_dir = Path(td) / "de" / "de_a2"
+            media_dir = pack_dir / "media"
+            items_dir = pack_dir / "items"
+            media_dir.mkdir(parents=True)
+            items_dir.mkdir()
+            (media_dir / "comic_Nächste_blank.png").write_bytes(b"image")
+            item = {
+                "schema_version": common.ITEM_SCHEMA_VERSION,
+                "id": "de_a2:Nächste-7ec70668c78d2eb7",
+                "pack_code": "de_a2",
+                "language": "de",
+                "entry_id": "Nächste",
+                "headword": "Nächste",
+                "reading": "",
+                "sentences": [],
+                "media": {
+                    "image_filename": "comic_nächste_blank.png",
+                    "source_image_filename": "comic_nächste_blank.png",
+                    "license": "Vocomi-created",
+                    "review_status": "approved",
+                },
+                "review": {"status": "approved"},
+                "provenance": {"license_status": "generated_by_vocomi"},
+                "app_payload": {},
+            }
+            (items_dir / "naechste.json").write_text(json.dumps(item), encoding="utf-8")
+            (pack_dir / "pack.json").write_text(
+                json.dumps(
+                    {
+                        "schema_version": common.PACK_SCHEMA_VERSION,
+                        "pack_code": "de_a2",
+                        "language": "de",
+                        "items": [{"entry_id": "Nächste", "file": "items/naechste.json", "order": 1}],
+                    }
+                ),
+                encoding="utf-8",
+            )
+
+            count = sync_release_media_from_vps.materialize_media_aliases(pack_dir)
+
+            self.assertEqual(count, 1)
+            self.assertTrue(common.path_exists_exact(media_dir, "comic_nächste_blank.png"))
+            self.assertEqual((media_dir / "comic_nächste_blank.png").read_bytes(), b"image")
 
     def test_auto_pos_analysis_preserves_legacy_tokens_when_only_fallback_is_available(self) -> None:
         nlp_base.analyzer_for_language.cache_clear()

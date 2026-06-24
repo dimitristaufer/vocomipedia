@@ -77,7 +77,7 @@ def _matches_main_word(token: Dict[str, Any], *, headword: str, language: str) -
         if headword.endswith("다"):
             stem = headword[:-1]
             if (upos.startswith("VERB") or upos.startswith("AUX") or upos.startswith("ADJ") or len(stem) >= 2):
-                if surface_stem.startswith(stem) or lemma_stem.startswith(stem):
+                if surface.startswith(stem) or lemma.startswith(stem) or surface_stem.startswith(stem) or lemma_stem.startswith(stem):
                     return True
                 if stem.endswith("하"):
                     base = stem[:-1]
@@ -101,17 +101,102 @@ def _matches_main_word(token: Dict[str, Any], *, headword: str, language: str) -
     return surface_norm == head or lemma_norm == head or surface_norm in parts or lemma_norm in parts
 
 
-def annotate_main_word_tokens(item: Dict[str, Any], tokens: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+def _main_word_surface_candidates(headword: str, language: str) -> List[str]:
+    candidates: List[str] = []
+
+    def add(value: str) -> None:
+        value = str(value or "").strip()
+        if value and value not in candidates:
+            candidates.append(value)
+
+    add(headword)
+    if language == "ko" or _contains_hangul(headword):
+        if headword.endswith("다") and len(headword) > 1:
+            stem = headword[:-1]
+            add(stem)
+            if stem.endswith("하"):
+                base = stem[:-1]
+                add(base)
+                add(f"{base}해")
+                add(f"{base}했")
+            if stem.endswith("해지"):
+                base = stem[:-2]
+                add(base)
+                add(f"{base}해")
+                add(f"{base}해졌")
+        return sorted(candidates, key=len, reverse=True)
+
+    if language in {"ja", "zh", "zh-hans"}:
+        base = headword.replace("～", "").replace("〜", "").replace("？", "").lstrip("ー")
+        add(base)
+        return sorted(candidates, key=len, reverse=True)
+
+    return candidates
+
+
+def _mark_main_word_by_sentence_span(
+    tokens: List[Dict[str, Any]],
+    *,
+    sentence_text: str,
+    headword: str,
+    language: str,
+) -> bool:
+    if language != "ko" and not _contains_hangul(headword):
+        return False
+    if not sentence_text or not tokens:
+        return False
+    candidates = [candidate for candidate in _main_word_surface_candidates(headword, language) if len(candidate) >= 2]
+    if not candidates:
+        return False
+
+    marked = False
+    for candidate in candidates:
+        start = sentence_text.find(candidate)
+        while start >= 0:
+            end = start + len(candidate)
+            for token in tokens:
+                try:
+                    token_start = int(token.get("start"))
+                    token_end = int(token.get("end"))
+                except (TypeError, ValueError):
+                    continue
+                if token_end > start and token_start < end:
+                    token["is_main_word"] = True
+                    marked = True
+            start = sentence_text.find(candidate, start + 1)
+        if marked:
+            return True
+    return False
+
+
+def annotate_main_word_tokens(item: Dict[str, Any], tokens: List[Dict[str, Any]], sentence_text: str = "") -> List[Dict[str, Any]]:
     headword = str(item.get("headword") or item.get("entry_id") or "")
     language = str(item.get("language") or "").lower()
     if not headword or not tokens:
         return tokens
-    if any(token.get("is_main_word") is True for token in tokens if isinstance(token, dict)):
+    has_existing_main = any(token.get("is_main_word") is True for token in tokens if isinstance(token, dict))
+    for token in tokens:
+        if isinstance(token, dict) and token.get("is_main_word") is False:
+            token.pop("is_main_word", None)
+    if has_existing_main:
         return tokens
     for token in tokens:
         if isinstance(token, dict):
-            token["is_main_word"] = _matches_main_word(token, headword=headword, language=language)
+            if _matches_main_word(token, headword=headword, language=language):
+                token["is_main_word"] = True
+    if not any(token.get("is_main_word") is True for token in tokens if isinstance(token, dict)):
+        _mark_main_word_by_sentence_span(tokens, sentence_text=sentence_text, headword=headword, language=language)
     return tokens
+
+
+def token_surface_is_blank(token: Dict[str, Any]) -> bool:
+    return not str(token.get("surface") or "").strip()
+
+
+def sanitize_sentence_tokens(item: Dict[str, Any], tokens: List[Dict[str, Any]], sentence_text: str = "") -> List[Dict[str, Any]]:
+    cleaned = [token for token in tokens if isinstance(token, dict) and not token_surface_is_blank(token)]
+    annotate_main_word_tokens(item, cleaned, sentence_text=sentence_text)
+    return cleaned
 
 
 def read_json(path: Path) -> Any:
@@ -248,12 +333,17 @@ def legacy_to_canonical(
                 translations[key] = arr[idx]
 
         pos_obj = pos_analysis[idx] if idx < len(pos_analysis) and isinstance(pos_analysis[idx], dict) else {}
+        tokens = pos_obj.get("tokens", []) if isinstance(pos_obj.get("tokens"), list) else []
         sentences.append(
             {
                 "target": targets[idx] if idx < len(targets) else str(pos_obj.get("sentence", "")),
                 "reading": readings[idx] if idx < len(readings) else "",
                 "translations": translations,
-                "tokens": pos_obj.get("tokens", []) if isinstance(pos_obj.get("tokens"), list) else [],
+                "tokens": sanitize_sentence_tokens(
+                    {"headword": entry.get("word", ""), "entry_id": entry.get("entry_id", ""), "language": pack.get("language", "")},
+                    tokens,
+                    sentence_text=targets[idx] if idx < len(targets) else str(pos_obj.get("sentence", "")),
+                ),
                 "difficulty": pos_obj.get("difficulty_aggregated"),
             }
         )
@@ -356,7 +446,7 @@ def canonical_legacy_payload(item: Dict[str, Any], *, pack: Dict[str, Any]) -> D
     for s in sentences:
         tokens = copy.deepcopy(s.get("tokens", []))
         if isinstance(tokens, list):
-            annotate_main_word_tokens(item, tokens)
+            tokens = sanitize_sentence_tokens(item, tokens, sentence_text=str(s.get("target") or ""))
         pos_analysis.append(
             {
                 "sentence": s.get("target", ""),
@@ -525,6 +615,8 @@ def validate_item(
                     if not isinstance(token, dict):
                         errors.append(f"sentences[{idx}].tokens[{token_idx}] must be an object")
                         continue
+                    if token_surface_is_blank(token):
+                        errors.append(f"sentences[{idx}].tokens[{token_idx}].surface must not be blank")
                     ruby_text = token.get("ruby_text")
                     if isinstance(ruby_text, str) and ruby_text.strip():
                         ruby_surface, spans = parse_ruby_text(ruby_text)

@@ -23,6 +23,13 @@ def run(cmd: list[str], cwd: Path | None = None) -> None:
     subprocess.run(cmd, cwd=str(cwd) if cwd else None, check=True)
 
 
+def combined_assets_builder_path(pack_generation_dir: Path) -> Path:
+    bundled = TOOLS / "pack_builder" / "ios_package_assets_combined.py"
+    if bundled.exists():
+        return bundled
+    return pack_generation_dir / "ios_package_assets_combined.py"
+
+
 def level_order(level: str) -> tuple[int, int | str]:
     value = str(level or "").lower()
     jlpt = ["n5", "n4", "n3", "n2", "n1"]
@@ -157,7 +164,7 @@ def build_combined(
 
     build_assets_cmd = [
         sys.executable,
-        str(pack_generation_dir / "ios_package_assets_combined.py"),
+        str(combined_assets_builder_path(pack_generation_dir)),
         *combined_args,
         "--parent-dir",
         str(combined_parent),

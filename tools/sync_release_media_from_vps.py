@@ -5,11 +5,12 @@ from __future__ import annotations
 
 import argparse
 import shlex
+import shutil
 import subprocess
 from pathlib import Path
 from typing import Any, Dict
 
-from common import copy_item_media, iter_pack_items, load_pack_catalog, path_exists_exact, repo_root_from_tool
+from common import copy_item_media, iter_pack_items, load_pack_catalog, path_exists_exact, repo_root_from_tool, resolve_media_source
 
 
 def selected_codes(catalog: Dict[str, Dict[str, Any]], decks: list[str]) -> list[str]:
@@ -39,11 +40,24 @@ def materialize_media_aliases(pack_dir: Path) -> int:
         image_name = media.get("image_filename")
         if not isinstance(source_name, str) or not isinstance(image_name, str):
             continue
-        if not source_name or not image_name or source_name == image_name:
+        if not source_name or not image_name:
             continue
         if path_exists_exact(media_dir, image_name):
             continue
-        if copy_item_media(item, [media_dir], media_dir):
+        if source_name == image_name:
+            source = resolve_media_source(media_dir, image_name)
+            if not source:
+                continue
+            dest = media_dir / image_name
+            dest.parent.mkdir(parents=True, exist_ok=True)
+            try:
+                shutil.copy2(source, dest)
+            except shutil.SameFileError:
+                temp_dest = dest.with_name(dest.name + ".tmp-alias")
+                source.rename(temp_dest)
+                temp_dest.rename(dest)
+            materialized += 1
+        elif copy_item_media(item, [media_dir], media_dir):
             materialized += 1
     return materialized
 
