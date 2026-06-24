@@ -12,6 +12,11 @@ on:
         description: "Space-separated deck codes, e.g. zh_1 ja_n5 ja_n4. Ignored when process_all_decks is true."
         required: false
         default: "ja_n5"
+      refresh_mediawiki_pages:
+        description: "Force-refresh selected MediaWiki item pages, including hidden canonical JSON and token-only changes."
+        type: boolean
+        required: false
+        default: false
 
 concurrency:
   group: vocomipedia-production-release
@@ -622,6 +627,20 @@ jobs:
         run: |
           cd vocomipedia
           mkdir -p tmp/changed-items
+          lang="${DECK_CODE%%_*}"
+          deck_dir="tmp/actions-data/${lang}/${DECK_CODE}"
+          if [ ! -d "$deck_dir" ]; then
+            case "$DECK_CODE" in
+              ja_*) deck_dir="tmp/actions-data/ja/${DECK_CODE}" ;;
+              zh_*) deck_dir="tmp/actions-data/zh/${DECK_CODE}" ;;
+              ko_*) deck_dir="tmp/actions-data/ko/${DECK_CODE}" ;;
+            esac
+          fi
+          if [ "${{ inputs.refresh_mediawiki_pages }}" = "true" ]; then
+            find "$deck_dir/items" -maxdepth 1 -type f -name '*.json' -printf 'items/%f\n' | sort > "tmp/changed-items/${DECK_CODE}.txt"
+            echo "Forced MediaWiki page refresh for $DECK_CODE: $(wc -l < "tmp/changed-items/${DECK_CODE}.txt") item page(s)."
+            exit 0
+          fi
           if [ -n "${RELEASE_BASE_SHA:-}" ]; then
             FALLBACK_ARGS=(--fallback-base "$RELEASE_BASE_SHA")
           else
@@ -641,15 +660,6 @@ jobs:
               --head HEAD \
               --out-dir tmp/changed-items
           else
-            lang="${DECK_CODE%%_*}"
-            deck_dir="tmp/actions-data/${lang}/${DECK_CODE}"
-            if [ ! -d "$deck_dir" ]; then
-              case "$DECK_CODE" in
-                ja_*) deck_dir="tmp/actions-data/ja/${DECK_CODE}" ;;
-                zh_*) deck_dir="tmp/actions-data/zh/${DECK_CODE}" ;;
-                ko_*) deck_dir="tmp/actions-data/ko/${DECK_CODE}" ;;
-              esac
-            fi
             find "$deck_dir/items" -maxdepth 1 -type f -name '*.json' -printf 'items/%f\n' | sort > "tmp/changed-items/${DECK_CODE}.txt"
           fi
       - name: Hydrate release media from VPS

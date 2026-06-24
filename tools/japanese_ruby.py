@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import copy
 from typing import Any, Dict, List, Tuple
 
 
@@ -148,6 +149,10 @@ def ruby_from_surface_reading(surface: str, reading: str) -> Dict[str, Any]:
 
         if next_anchor:
             anchor_idx = reading_kana.find(next_anchor, j)
+            if anchor_idx == j and len(reading_kana) > j + len(next_anchor):
+                later_anchor_idx = reading_kana.find(next_anchor, j + 1)
+                if later_anchor_idx >= 0:
+                    anchor_idx = later_anchor_idx
             if anchor_idx >= 0:
                 rb = reading_kana[j:anchor_idx]
                 j = anchor_idx
@@ -185,18 +190,24 @@ def ruby_from_surface_reading(surface: str, reading: str) -> Dict[str, Any]:
 def normalize_japanese_token(token: Dict[str, Any]) -> Dict[str, Any]:
     out = dict(token)
     surface = str(out.get("surface") or "")
+    explicit_reading = token_reading_kana(out)
     ruby_text = out.get("ruby_text")
     if isinstance(ruby_text, str) and ruby_text.strip():
         ruby_surface, spans = parse_ruby_text(ruby_text.strip())
         if ruby_surface:
             out["surface"] = ruby_surface
             surface = ruby_surface
-        out["ruby_text"] = ruby_text.strip()
-        out["ruby_spans"] = spans
-        out["reading_kana"] = reading_from_ruby_text(ruby_text.strip())
-        out.setdefault("ruby_confidence", "reviewed")
+        ruby_reading = reading_from_ruby_text(ruby_text.strip())
+        if any(is_kanji(ch) for ch in ruby_reading) and explicit_reading and not any(is_kanji(ch) for ch in explicit_reading):
+            fields = ruby_from_surface_reading(surface, explicit_reading)
+            out.update(fields)
+        else:
+            out["ruby_text"] = ruby_text.strip()
+            out["ruby_spans"] = spans
+            out["reading_kana"] = ruby_reading
+            out.setdefault("ruby_confidence", "reviewed")
     else:
-        fields = ruby_from_surface_reading(surface, token_reading_kana(out))
+        fields = ruby_from_surface_reading(surface, explicit_reading)
         out.update(fields)
     out["furigana"] = out.get("reading_kana", "")
     return out
@@ -240,7 +251,7 @@ def sentence_reading_from_tokens(target: str, tokens: List[Dict[str, Any]], fall
 def normalize_japanese_item(item: Dict[str, Any]) -> Dict[str, Any]:
     if str(item.get("language") or "") != "ja":
         return item
-    out = dict(item)
+    out = copy.deepcopy(item)
     sentences = []
     for sentence in out.get("sentences") or []:
         s2 = dict(sentence)

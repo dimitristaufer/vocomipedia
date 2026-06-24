@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import json
 import contextlib
+import copy
 import gzip
 import hashlib
 import importlib.util
@@ -52,6 +53,10 @@ SYNC_RELEASE_MEDIA_SPEC = importlib.util.spec_from_file_location("sync_release_m
 assert SYNC_RELEASE_MEDIA_SPEC and SYNC_RELEASE_MEDIA_SPEC.loader
 sync_release_media_from_vps = importlib.util.module_from_spec(SYNC_RELEASE_MEDIA_SPEC)
 SYNC_RELEASE_MEDIA_SPEC.loader.exec_module(sync_release_media_from_vps)
+NORMALIZE_JA_READINGS_SPEC = importlib.util.spec_from_file_location("normalize_japanese_sentence_readings", TOOLS / "normalize_japanese_sentence_readings.py")
+assert NORMALIZE_JA_READINGS_SPEC and NORMALIZE_JA_READINGS_SPEC.loader
+normalize_japanese_sentence_readings = importlib.util.module_from_spec(NORMALIZE_JA_READINGS_SPEC)
+NORMALIZE_JA_READINGS_SPEC.loader.exec_module(normalize_japanese_sentence_readings)
 MEDIAWIKI_BACKUP_SPEC = importlib.util.spec_from_file_location("mediawiki_backup", TOOLS / "mediawiki_backup.py")
 assert MEDIAWIKI_BACKUP_SPEC and MEDIAWIKI_BACKUP_SPEC.loader
 mediawiki_backup = importlib.util.module_from_spec(MEDIAWIKI_BACKUP_SPEC)
@@ -75,6 +80,7 @@ sys.modules["decksearch_prebuilt_index"] = decksearch_prebuilt_index
 DECKSEARCH_SPEC.loader.exec_module(decksearch_prebuilt_index)
 import common
 import apply_pulled_items
+import japanese_ruby
 import wiki_visible_fields
 from vocomipedia_nlp import analyze_sentence, ensure_real_analyzer_available, sync_item_pos_analysis
 import vocomipedia_nlp.base as nlp_base
@@ -684,6 +690,249 @@ class VocomipediaPipelineTests(unittest.TestCase):
         errors = common.validate_item(item, require_release_ready=True, release_allowed_licenses={"Vocomi-created"})
         self.assertFalse(errors)
 
+    def test_japanese_sentence_reading_normalizer_removes_kigou_artifacts(self) -> None:
+        with tempfile.TemporaryDirectory() as td:
+            pack_dir = Path(td)
+            item_dir = pack_dir / "items"
+            item_dir.mkdir()
+            item_path = item_dir / "wareware.json"
+            item = {
+                "schema_version": "vocomipedia-item-2",
+                "id": "ja_n3:wareware",
+                "pack_code": "ja_n3",
+                "language": "ja",
+                "entry_id": "われわれ",
+                "headword": "われわれ",
+                "reading": "われわれ",
+                "sentences": [
+                    {
+                        "target": "われわれはここでまちます。",
+                        "reading": "われわれはきごうここできごうまちます。",
+                        "translations": {"en": "We will wait here."},
+                        "tokens": [
+                            {"surface": "われわれ", "reading_kana": "われわれ"},
+                            {"surface": "は", "reading_kana": "は"},
+                            {"surface": "ここ", "reading_kana": "ここ"},
+                            {"surface": "で", "reading_kana": "で"},
+                            {"surface": "まちます", "reading_kana": "まちます"},
+                            {"surface": "。", "reading_kana": "。"},
+                        ],
+                    }
+                ],
+                "media": {"license": "Vocomi-created", "review_status": "approved"},
+                "review": {"status": "approved"},
+                "provenance": {"license_status": "generated_by_vocomi"},
+                "app_payload": {},
+            }
+            common.write_json(item_path, item)
+            common.write_json(
+                pack_dir / "pack.json",
+                {
+                    "schema_version": "vocomipedia-pack-1",
+                    "pack_code": "ja_n3",
+                    "language": "ja",
+                    "items": [{"entry_id": "われわれ", "file": "items/wareware.json", "order": 1}],
+                },
+            )
+
+            stats = normalize_japanese_sentence_readings.normalize_pack(pack_dir, dry_run=False)
+            updated = common.read_json(item_path)
+
+            self.assertEqual(stats["changed"], 1)
+            self.assertEqual(stats["sentences"], 1)
+            self.assertEqual(updated["sentences"][0]["reading"], "われわれはここでまちます。")
+
+    def test_japanese_token_normalizer_prefers_explicit_kana_over_bad_ruby_text(self) -> None:
+        token = japanese_ruby.normalize_japanese_token(
+            {
+                "surface": "疑う",
+                "reading_kana": "うたがう",
+                "ruby_text": "疑[疑]う",
+                "ruby_spans": [{"base": "疑", "reading": "疑", "start": 0, "length": 1}],
+                "ruby_confidence": "needs_review",
+            }
+        )
+
+        self.assertEqual(token["reading_kana"], "うたがう")
+        self.assertEqual(token["ruby_text"], "疑[うたが]う")
+        self.assertFalse(any(japanese_ruby.is_kanji(ch) for ch in token["reading_kana"]))
+
+    def test_japanese_sentence_reading_normalizer_repairs_bad_token_ruby(self) -> None:
+        with tempfile.TemporaryDirectory() as td:
+            pack_dir = Path(td)
+            item_dir = pack_dir / "items"
+            item_dir.mkdir()
+            item_path = item_dir / "utagau.json"
+            bad_token = {
+                "surface": "疑う",
+                "reading_kana": "うたがう",
+                "ruby_text": "疑[疑]う",
+                "ruby_spans": [{"base": "疑", "reading": "疑", "start": 0, "length": 1}],
+                "ruby_confidence": "needs_review",
+                "furigana": "うたがう",
+            }
+            item = {
+                "schema_version": "vocomipedia-item-2",
+                "id": "ja_n3:utagau",
+                "pack_code": "ja_n3",
+                "language": "ja",
+                "entry_id": "疑う",
+                "headword": "疑う",
+                "reading": "うたがう",
+                "sentences": [
+                    {
+                        "target": "ぼくは疑う。",
+                        "reading": "ぼくはうたがう。",
+                        "translations": {"en": "I doubt it."},
+                        "tokens": [copy.deepcopy(bad_token)],
+                    }
+                ],
+                "media": {"license": "Vocomi-created", "review_status": "approved"},
+                "review": {"status": "approved"},
+                "provenance": {"license_status": "generated_by_vocomi"},
+                "app_payload": {"pos_analysis": [{"sentence": "ぼくは疑う。", "tokens": [copy.deepcopy(bad_token)]}]},
+            }
+            common.write_json(item_path, item)
+            common.write_json(
+                pack_dir / "pack.json",
+                {
+                    "schema_version": "vocomipedia-pack-1",
+                    "pack_code": "ja_n3",
+                    "language": "ja",
+                    "items": [{"entry_id": "疑う", "file": "items/utagau.json", "order": 1}],
+                },
+            )
+
+            stats = normalize_japanese_sentence_readings.normalize_pack(pack_dir, dry_run=False)
+            updated = common.read_json(item_path)
+
+            self.assertEqual(stats["tokens"], 1)
+            self.assertEqual(stats["payload_tokens"], 1)
+            self.assertEqual(updated["sentences"][0]["tokens"][0]["ruby_text"], "疑[うたが]う")
+            self.assertEqual(updated["app_payload"]["pos_analysis"][0]["tokens"][0]["ruby_text"], "疑[うたが]う")
+
+    def test_japanese_sentence_reading_normalizer_skips_kanji_replacements(self) -> None:
+        with tempfile.TemporaryDirectory() as td:
+            pack_dir = Path(td)
+            item_dir = pack_dir / "items"
+            item_dir.mkdir()
+            item_path = item_dir / "utagau.json"
+            original_reading = "ぼくはきごうまだきごうかれをきごううたがう。"
+            item = {
+                "schema_version": "vocomipedia-item-2",
+                "id": "ja_n3:utagau",
+                "pack_code": "ja_n3",
+                "language": "ja",
+                "entry_id": "疑う",
+                "headword": "疑う",
+                "reading": "うたがう",
+                "sentences": [
+                    {
+                        "target": "ぼくはまだかれを疑う。",
+                        "reading": original_reading,
+                        "translations": {"en": "I still doubt him."},
+                        "tokens": [
+                            {"surface": "ぼく", "reading_kana": "ぼく"},
+                            {"surface": "は", "reading_kana": "は"},
+                            {"surface": "まだ", "reading_kana": "まだ"},
+                            {"surface": "かれ", "reading_kana": "かれ"},
+                            {"surface": "を", "reading_kana": "を"},
+                            {"surface": "疑う"},
+                            {"surface": "。", "reading_kana": "。"},
+                        ],
+                    }
+                ],
+                "media": {"license": "Vocomi-created", "review_status": "approved"},
+                "review": {"status": "approved"},
+                "provenance": {"license_status": "generated_by_vocomi"},
+                "app_payload": {},
+            }
+            common.write_json(item_path, item)
+            common.write_json(
+                pack_dir / "pack.json",
+                {
+                    "schema_version": "vocomipedia-pack-1",
+                    "pack_code": "ja_n3",
+                    "language": "ja",
+                    "items": [{"entry_id": "疑う", "file": "items/utagau.json", "order": 1}],
+                },
+            )
+
+            stats = normalize_japanese_sentence_readings.normalize_pack(pack_dir, dry_run=False)
+            updated = common.read_json(item_path)
+
+            self.assertEqual(stats["changed"], 0)
+            self.assertEqual(stats["sentences"], 0)
+            self.assertEqual(stats["skipped"], 1)
+            self.assertEqual(updated["sentences"][0]["reading"], original_reading)
+
+    def test_release_ready_rejects_japanese_kigou_reading_artifacts(self) -> None:
+        item = {
+            "schema_version": "vocomipedia-item-2",
+            "id": "ja_n3:test",
+            "pack_code": "ja_n3",
+            "language": "ja",
+            "entry_id": "われわれ",
+            "headword": "われわれ",
+            "reading": "われわれ",
+            "sentences": [
+                {
+                    "target": "われわれは ここで まちます。",
+                    "reading": "われわれはきごうここできごうまちます。",
+                    "translations": {"en": "We will wait here."},
+                    "tokens": [
+                        {"surface": "われわれ", "reading_kana": "われわれ"},
+                        {"surface": "は", "reading_kana": "は"},
+                        {"surface": "ここ", "reading_kana": "ここ"},
+                    ],
+                }
+            ],
+            "media": {"license": "Vocomi-created", "review_status": "approved"},
+            "review": {"status": "approved"},
+            "provenance": {"license_status": "generated_by_vocomi"},
+            "app_payload": {},
+        }
+
+        errors = common.validate_item(item, require_release_ready=True, release_allowed_licenses={"Vocomi-created"})
+
+        self.assertTrue(any("suspicious きごう artifact" in error for error in errors), errors)
+
+    def test_release_ready_rejects_japanese_bad_ruby_text_before_normalizing(self) -> None:
+        bad_token = {
+            "surface": "疑う",
+            "reading_kana": "うたがう",
+            "ruby_text": "疑[疑]う",
+            "ruby_spans": [{"base": "疑", "reading": "疑", "start": 0, "length": 1}],
+            "ruby_confidence": "needs_review",
+            "furigana": "うたがう",
+        }
+        item = {
+            "schema_version": "vocomipedia-item-2",
+            "id": "ja_n3:test",
+            "pack_code": "ja_n3",
+            "language": "ja",
+            "entry_id": "疑う",
+            "headword": "疑う",
+            "reading": "うたがう",
+            "sentences": [
+                {
+                    "target": "ぼくは疑う。",
+                    "reading": "ぼくはうたがう。",
+                    "translations": {"en": "I doubt it."},
+                    "tokens": [copy.deepcopy(bad_token)],
+                }
+            ],
+            "media": {"license": "Vocomi-created", "review_status": "approved"},
+            "review": {"status": "approved"},
+            "provenance": {"license_status": "generated_by_vocomi"},
+            "app_payload": {"pos_analysis": [{"sentence": "ぼくは疑う。", "tokens": [copy.deepcopy(bad_token)]}]},
+        }
+
+        errors = common.validate_item(item, require_release_ready=True, release_allowed_licenses={"Vocomi-created"})
+
+        self.assertTrue(any("sentences[0].tokens[0].ruby_text reading contains kanji" in error for error in errors), errors)
+        self.assertTrue(any("app_payload.pos_analysis[0].tokens[0].ruby_text reading contains kanji" in error for error in errors), errors)
+
     def test_release_ready_rejects_blank_tokens(self) -> None:
         item = {
             "schema_version": "vocomipedia-item-2",
@@ -1224,7 +1473,7 @@ class VocomipediaPipelineTests(unittest.TestCase):
             paths = changed_deck_items.changed_item_paths(tmp, base, "HEAD", pack_dir)
             self.assertEqual(paths, ["items/one.json"])
 
-    def test_changed_deck_items_ignores_review_metadata_only_changes(self) -> None:
+    def test_changed_deck_items_ignores_review_metadata_but_detects_hidden_canonical_changes(self) -> None:
         with tempfile.TemporaryDirectory() as td:
             tmp = Path(td)
             run(["git", "init"], cwd=tmp)
@@ -1285,7 +1534,7 @@ class VocomipediaPipelineTests(unittest.TestCase):
             (item_dir / "one.json").write_text(json.dumps(item, ensure_ascii=False), encoding="utf-8")
             run(["git", "add", "."], cwd=tmp)
             run(["git", "commit", "-m", "analysis only"], cwd=tmp)
-            self.assertEqual(changed_deck_items.changed_item_paths(tmp, base, "HEAD", pack_dir), [])
+            self.assertEqual(changed_deck_items.changed_item_paths(tmp, base, "HEAD", pack_dir), ["items/one.json"])
 
             item["glosses"]["en"] = "stream"
             (item_dir / "one.json").write_text(json.dumps(item, ensure_ascii=False), encoding="utf-8")

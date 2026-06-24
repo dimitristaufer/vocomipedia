@@ -48,6 +48,8 @@ def wiki_visible_projection(item: dict[str, Any] | None) -> Any:
         projected_sentence = {
             "target": sentence.get("target"),
             "reading": sentence.get("reading"),
+            "difficulty": sentence.get("difficulty"),
+            "tokens": copy.deepcopy(sentence.get("tokens") or []),
             "translations": {
                 lang: copy.deepcopy(translations[lang])
                 for lang in VISIBLE_SENTENCE_TRANSLATION_LANGS
@@ -82,6 +84,9 @@ def wiki_visible_projection(item: dict[str, Any] | None) -> Any:
         "review": {
             "status": review.get("status"),
             "sentence_proposals": copy.deepcopy(review.get("sentence_proposals") or []),
+        },
+        "app_payload": {
+            "pos_analysis": copy.deepcopy(((item.get("app_payload") or {}).get("pos_analysis") or [])),
         },
     }
 

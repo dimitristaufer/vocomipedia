@@ -14,7 +14,7 @@ from typing import Any, Dict, Iterable, List, Optional, Tuple
 
 import yaml
 
-from japanese_ruby import is_kanji, normalize_japanese_item, parse_ruby_text, token_reading_kana
+from japanese_ruby import is_kanji, normalize_japanese_item, parse_ruby_text, reading_from_ruby_text, token_reading_kana
 
 ITEM_SCHEMA_VERSION = "vocomipedia-item-2"
 PACK_SCHEMA_VERSION = "vocomipedia-pack-1"
@@ -577,6 +577,7 @@ def validate_item(
     release_allowed_licenses: Optional[set[str]] = None,
     require_release_ready: bool = False,
 ) -> List[str]:
+    raw_item = item
     item = normalize_japanese_item(item)
     errors: List[str] = []
     for key in ("schema_version", "id", "pack_code", "language", "entry_id", "headword", "sentences", "media", "review", "provenance", "app_payload"):
@@ -687,6 +688,43 @@ def validate_item(
                     if upos == "X":
                         errors.append(
                             f"sentences[{sentence_idx}].tokens[{token_idx}] has unknown Korean POS X"
+                        )
+        if str(item.get("language") or "").lower() == "ja":
+            raw_sentences = raw_item.get("sentences") if isinstance(raw_item.get("sentences"), list) else []
+            for sentence_idx, sentence in enumerate(raw_sentences):
+                if not isinstance(sentence, dict):
+                    continue
+                reading = str(sentence.get("reading") or "")
+                target = str(sentence.get("target") or "")
+                if "きごう" in reading and "記号" not in target and "きごう" not in target:
+                    errors.append(f"sentences[{sentence_idx}].reading contains suspicious きごう artifact")
+                for token_idx, token in enumerate(sentence.get("tokens") or []):
+                    if not isinstance(token, dict):
+                        continue
+                    ruby_text = token.get("ruby_text")
+                    if not isinstance(ruby_text, str) or not ruby_text.strip():
+                        continue
+                    ruby_reading = reading_from_ruby_text(ruby_text.strip())
+                    explicit_reading = token_reading_kana(token)
+                    if any(is_kanji(ch) for ch in ruby_reading) and explicit_reading and not any(is_kanji(ch) for ch in explicit_reading):
+                        errors.append(
+                            f"sentences[{sentence_idx}].tokens[{token_idx}].ruby_text reading contains kanji despite kana reading"
+                        )
+            payload = raw_item.get("app_payload") if isinstance(raw_item.get("app_payload"), dict) else {}
+            for sentence_idx, analysis in enumerate(payload.get("pos_analysis") or []):
+                if not isinstance(analysis, dict):
+                    continue
+                for token_idx, token in enumerate(analysis.get("tokens") or []):
+                    if not isinstance(token, dict):
+                        continue
+                    ruby_text = token.get("ruby_text")
+                    if not isinstance(ruby_text, str) or not ruby_text.strip():
+                        continue
+                    ruby_reading = reading_from_ruby_text(ruby_text.strip())
+                    explicit_reading = token_reading_kana(token)
+                    if any(is_kanji(ch) for ch in ruby_reading) and explicit_reading and not any(is_kanji(ch) for ch in explicit_reading):
+                        errors.append(
+                            f"app_payload.pos_analysis[{sentence_idx}].tokens[{token_idx}].ruby_text reading contains kanji despite kana reading"
                         )
 
     return errors
