@@ -515,6 +515,36 @@ class VocomipediaPipelineTests(unittest.TestCase):
         self.assertTrue(any("fallback Korean POS analyzer" in error for error in errors), errors)
         self.assertTrue(any("unknown Korean POS X" in error for error in errors), errors)
 
+    def test_release_ready_rejects_korean_overlapping_display_tokens(self) -> None:
+        item = {
+            "schema_version": "vocomipedia-item-2",
+            "id": "ko_2:test",
+            "pack_code": "ko_2",
+            "language": "ko",
+            "entry_id": "나서다",
+            "headword": "나서다",
+            "reading": "",
+            "sentences": [
+                {
+                    "target": "아이가 방에서 나서요.",
+                    "translations": {"en": "The child comes out of the room."},
+                    "tokens": [
+                        {"surface": "나", "lemma": "나", "upos": "VERB", "start": 8, "end": 9, "analyzer": "kiwipiepy"},
+                        {"surface": "어서", "lemma": "어서", "upos": "PART", "start": 8, "end": 10, "analyzer": "kiwipiepy"},
+                    ],
+                }
+            ],
+            "media": {"license": "Vocomi-created", "review_status": "approved"},
+            "review": {"status": "approved"},
+            "provenance": {"license_status": "generated_by_vocomi"},
+            "app_payload": {},
+        }
+
+        errors = common.validate_item(item, require_release_ready=True, release_allowed_licenses={"Vocomi-created"})
+
+        self.assertTrue(any("overlaps previous display token" in error for error in errors), errors)
+        self.assertTrue(any("surface does not match target span" in error for error in errors), errors)
+
     def test_auto_pos_analysis_normalizes_known_korean_legacy_x_tokens(self) -> None:
         item = {
             "schema_version": "vocomipedia-item-2",
@@ -588,6 +618,62 @@ class VocomipediaPipelineTests(unittest.TestCase):
         self.assertEqual([token.get("is_main_word") for token in payload_tokens], [None, None, True, None])
         errors = common.validate_item(item, require_release_ready=True, release_allowed_licenses={"Vocomi-created"})
         self.assertFalse(errors)
+
+    def test_pos_sync_normalizes_korean_overlapping_display_tokens(self) -> None:
+        item = {
+            "schema_version": "vocomipedia-item-2",
+            "id": "ko_2:test",
+            "pack_code": "ko_2",
+            "language": "ko",
+            "entry_id": "나서다",
+            "headword": "나서다",
+            "reading": "",
+            "sentences": [
+                {
+                    "target": "아이가 방에서 나서요.",
+                    "translations": {"en": "The child comes out of the room."},
+                    "tokens": [
+                        {"surface": "아이", "lemma": "아이", "pos": "NNG", "upos": "NOUN", "start": 0, "end": 2},
+                        {"surface": "가", "lemma": "가", "pos": "JKS", "upos": "PART", "start": 2, "end": 3},
+                        {"surface": "방", "lemma": "방", "pos": "NNG", "upos": "NOUN", "start": 4, "end": 5},
+                        {"surface": "에서", "lemma": "에서", "pos": "JKB", "upos": "PART", "start": 5, "end": 7},
+                        {"surface": "나", "lemma": "나", "pos": "VV", "upos": "VERB", "start": 8, "end": 9},
+                        {"surface": "어서", "lemma": "어서", "pos": "EC", "upos": "PART", "start": 8, "end": 10},
+                        {"surface": "요", "lemma": "요", "pos": "JX", "upos": "PART", "start": 10, "end": 11},
+                        {"surface": ".", "lemma": ".", "pos": "SF", "upos": "PUNCT", "start": 11, "end": 12},
+                    ],
+                },
+                {
+                    "target": "앞이 잘 보입니다.",
+                    "translations": {"en": "I can see well ahead."},
+                    "tokens": [
+                        {"surface": "앞", "lemma": "앞", "pos": "NNG", "upos": "NOUN", "start": 0, "end": 1},
+                        {"surface": "이", "lemma": "이", "pos": "JKS", "upos": "PART", "start": 1, "end": 2},
+                        {"surface": "잘", "lemma": "잘", "pos": "MAG", "upos": "ADV", "start": 3, "end": 4},
+                        {"surface": "보이", "lemma": "보이", "pos": "VV", "upos": "VERB", "start": 5, "end": 7},
+                        {"surface": "ᆸ니다", "lemma": "ᆸ니다", "pos": "EF", "upos": "PART", "start": 6, "end": 9},
+                        {"surface": ".", "lemma": ".", "pos": "SF", "upos": "PUNCT", "start": 9, "end": 10},
+                    ],
+                },
+            ],
+            "media": {"license": "Vocomi-created", "review_status": "approved"},
+            "review": {"status": "approved"},
+            "provenance": {"license_status": "generated_by_vocomi"},
+            "app_payload": {},
+        }
+
+        nlp_base.sync_item_pos_analysis(item, regenerate=False)
+
+        first_tokens = item["sentences"][0]["tokens"]
+        self.assertEqual([token["surface"] for token in first_tokens], ["아이", "가", "방", "에서", "나", "서", "요", "."])
+        self.assertEqual([(token["start"], token["end"]) for token in first_tokens], [(0, 2), (2, 3), (4, 5), (5, 7), (8, 9), (9, 10), (10, 11), (11, 12)])
+        self.assertEqual([token.get("is_main_word") for token in first_tokens], [None, None, None, None, True, True, None, None])
+
+        second_tokens = item["sentences"][1]["tokens"]
+        self.assertEqual([token["surface"] for token in second_tokens], ["앞", "이", "잘", "보입", "니다", "."])
+        self.assertEqual(second_tokens[3]["lemma"], "보이")
+        payload_tokens = item["app_payload"]["pos_analysis"][0]["tokens"]
+        self.assertEqual([token["surface"] for token in payload_tokens], ["아이", "가", "방", "에서", "나", "서", "요", "."])
 
     def test_pos_sync_marks_korean_compound_and_split_main_tokens(self) -> None:
         item = {
@@ -664,7 +750,7 @@ class VocomipediaPipelineTests(unittest.TestCase):
             "reading": "われわれ",
             "sentences": [
                 {
-                    "target": "われわれは ここで まちます。",
+                    "target": "われわれはここでまちます。",
                     "translations": {"en": "We will wait here."},
                     "tokens": [
                         {"surface": "われわれ", "lemma": "われわれ", "pos": "代名詞", "upos": "PRON"},

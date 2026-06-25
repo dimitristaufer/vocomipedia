@@ -83,7 +83,7 @@ def repair_token_ruby_fields(token: Dict[str, Any], normalized: Dict[str, Any]) 
 
 
 def normalize_pack(pack_dir: Path, dry_run: bool) -> Dict[str, int]:
-    stats = {"items": 0, "changed": 0, "sentences": 0, "tokens": 0, "payload_tokens": 0, "skipped": 0}
+    stats = {"items": 0, "changed": 0, "targets": 0, "sentences": 0, "tokens": 0, "payload_tokens": 0, "skipped": 0}
     for item, item_path in iter_pack_items(pack_dir):
         stats["items"] += 1
         normalized = normalize_japanese_item(copy.deepcopy(item))
@@ -91,15 +91,27 @@ def normalize_pack(pack_dir: Path, dry_run: bool) -> Dict[str, int]:
         for sentence_idx, (sentence, normalized_sentence) in enumerate(zip(item.get("sentences") or [], normalized.get("sentences") or [])):
             if not isinstance(sentence, dict) or not isinstance(normalized_sentence, dict):
                 continue
+            if sentence.get("target") != normalized_sentence.get("target"):
+                sentence["target"] = normalized_sentence.get("target", "")
+                changed = True
+                stats["targets"] += 1
             for token, normalized_token in zip(sentence.get("tokens") or [], normalized_sentence.get("tokens") or []):
                 if not isinstance(token, dict) or not isinstance(normalized_token, dict):
                     continue
-                if repair_token_ruby_fields(token, normalized_token):
+                token_changed = repair_token_ruby_fields(token, normalized_token)
+                for key in ("start", "end"):
+                    if key in normalized_token and token.get(key) != normalized_token.get(key):
+                        token[key] = normalized_token[key]
+                        token_changed = True
+                if token_changed:
                     changed = True
                     stats["tokens"] += 1
             payload = item.get("app_payload") if isinstance(item.get("app_payload"), dict) else {}
             pos_analysis = payload.get("pos_analysis") if isinstance(payload.get("pos_analysis"), list) else []
             if sentence_idx < len(pos_analysis) and isinstance(pos_analysis[sentence_idx], dict):
+                if pos_analysis[sentence_idx].get("sentence") != normalized_sentence.get("target"):
+                    pos_analysis[sentence_idx]["sentence"] = normalized_sentence.get("target", "")
+                    changed = True
                 payload_tokens = pos_analysis[sentence_idx].get("tokens")
                 normalized_payload = (normalized.get("app_payload") or {}).get("pos_analysis") or []
                 normalized_payload_tokens = []
@@ -109,7 +121,12 @@ def normalize_pack(pack_dir: Path, dry_run: bool) -> Dict[str, int]:
                     for token, normalized_token in zip(payload_tokens, normalized_payload_tokens):
                         if not isinstance(token, dict) or not isinstance(normalized_token, dict):
                             continue
-                        if repair_token_ruby_fields(token, normalized_token):
+                        token_changed = repair_token_ruby_fields(token, normalized_token)
+                        for key in ("start", "end"):
+                            if key in normalized_token and token.get(key) != normalized_token.get(key):
+                                token[key] = normalized_token[key]
+                                token_changed = True
+                        if token_changed:
                             changed = True
                             stats["payload_tokens"] += 1
             replacement = safe_reading_replacement(sentence.get("reading", ""), normalized_sentence.get("reading", ""))
@@ -143,21 +160,23 @@ def main() -> int:
         print("ERROR: no Japanese pack directories selected")
         return 2
 
-    total = {"items": 0, "changed": 0, "sentences": 0, "tokens": 0, "payload_tokens": 0, "skipped": 0}
+    total = {"items": 0, "changed": 0, "targets": 0, "sentences": 0, "tokens": 0, "payload_tokens": 0, "skipped": 0}
     for pack_dir in pack_dirs:
         stats = normalize_pack(pack_dir, args.dry_run)
         for key, value in stats.items():
             total[key] += value
         print(
             f"{pack_dir}: changed {stats['changed']} / {stats['items']} item(s), "
-            f"updated {stats['sentences']} sentence reading(s), repaired {stats['tokens']} token(s), "
+            f"updated {stats['targets']} target(s), updated {stats['sentences']} sentence reading(s), "
+            f"repaired {stats['tokens']} token(s), "
             f"repaired {stats['payload_tokens']} payload token(s), skipped {stats['skipped']} candidate(s)"
         )
 
     action = "Would normalize" if args.dry_run else "Normalized"
     print(
         f"{action} {total['changed']} / {total['items']} item(s); "
-        f"updated {total['sentences']} sentence reading(s), repaired {total['tokens']} token(s), "
+        f"updated {total['targets']} target(s), updated {total['sentences']} sentence reading(s), "
+        f"repaired {total['tokens']} token(s), "
         f"repaired {total['payload_tokens']} payload token(s), skipped {total['skipped']} candidate(s)."
     )
     return 0

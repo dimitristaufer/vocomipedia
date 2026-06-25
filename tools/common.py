@@ -14,7 +14,14 @@ from typing import Any, Dict, Iterable, List, Optional, Tuple
 
 import yaml
 
-from japanese_ruby import is_kanji, normalize_japanese_item, parse_ruby_text, reading_from_ruby_text, token_reading_kana
+from japanese_ruby import (
+    is_kanji,
+    japanese_spacing_artifact_positions,
+    normalize_japanese_item,
+    parse_ruby_text,
+    reading_from_ruby_text,
+    token_reading_kana,
+)
 
 ITEM_SCHEMA_VERSION = "vocomipedia-item-2"
 PACK_SCHEMA_VERSION = "vocomipedia-pack-1"
@@ -141,7 +148,8 @@ def _mark_main_word_by_sentence_span(
     headword: str,
     language: str,
 ) -> bool:
-    if language != "ko" and not _contains_hangul(headword):
+    cjk_language = language in {"ja", "zh", "zh-hans", "ko"} or _contains_hangul(headword)
+    if not cjk_language:
         return False
     if not sentence_text or not tokens:
         return False
@@ -189,12 +197,74 @@ def annotate_main_word_tokens(item: Dict[str, Any], tokens: List[Dict[str, Any]]
     return tokens
 
 
+def normalize_korean_display_tokens(tokens: List[Dict[str, Any]], sentence_text: str) -> List[Dict[str, Any]]:
+    if not sentence_text:
+        return tokens
+
+    normalized: List[Dict[str, Any]] = []
+    cursor = 0
+    for token in tokens:
+        if not isinstance(token, dict):
+            continue
+        try:
+            start = int(token.get("start"))
+            end = int(token.get("end"))
+        except (TypeError, ValueError):
+            normalized.append(token)
+            continue
+        if start < 0 or end <= start or start >= len(sentence_text):
+            continue
+        end = min(end, len(sentence_text))
+        if start < cursor:
+            start = cursor
+        if end <= start:
+            continue
+
+        adjusted = dict(token)
+        surface = sentence_text[start:end]
+        adjusted["surface"] = surface
+        adjusted["start"] = start
+        adjusted["end"] = end
+        if not str(adjusted.get("lemma") or "").strip():
+            adjusted["lemma"] = surface
+        normalized.append(adjusted)
+        cursor = end
+    return normalized
+
+
+def korean_display_token_span_errors(sentence: Dict[str, Any]) -> List[str]:
+    target = str(sentence.get("target") or "")
+    if not target:
+        return []
+    errors: List[str] = []
+    cursor = -1
+    for token_idx, token in enumerate(sentence.get("tokens") or []):
+        if not isinstance(token, dict):
+            continue
+        try:
+            start = int(token.get("start"))
+            end = int(token.get("end"))
+        except (TypeError, ValueError):
+            continue
+        if start < cursor:
+            errors.append(f"tokens[{token_idx}] overlaps previous display token")
+        if start < 0 or end <= start or end > len(target):
+            errors.append(f"tokens[{token_idx}] has invalid display span")
+            continue
+        if target[start:end] != str(token.get("surface") or ""):
+            errors.append(f"tokens[{token_idx}] surface does not match target span")
+        cursor = end
+    return errors
+
+
 def token_surface_is_blank(token: Dict[str, Any]) -> bool:
     return not str(token.get("surface") or "").strip()
 
 
 def sanitize_sentence_tokens(item: Dict[str, Any], tokens: List[Dict[str, Any]], sentence_text: str = "") -> List[Dict[str, Any]]:
     cleaned = [token for token in tokens if isinstance(token, dict) and not token_surface_is_blank(token)]
+    if str(item.get("language") or "").lower() == "ko":
+        cleaned = normalize_korean_display_tokens(cleaned, sentence_text)
     annotate_main_word_tokens(item, cleaned, sentence_text=sentence_text)
     return cleaned
 
@@ -676,6 +746,8 @@ def validate_item(
             for sentence_idx, sentence in enumerate(item.get("sentences") or []):
                 if not isinstance(sentence, dict):
                     continue
+                for span_error in korean_display_token_span_errors(sentence):
+                    errors.append(f"sentences[{sentence_idx}].{span_error}")
                 for token_idx, token in enumerate(sentence.get("tokens") or []):
                     if not isinstance(token, dict):
                         continue
@@ -694,6 +766,8 @@ def validate_item(
             for sentence_idx, sentence in enumerate(raw_sentences):
                 if not isinstance(sentence, dict):
                     continue
+                if japanese_spacing_artifact_positions(str(sentence.get("target") or "")):
+                    errors.append(f"sentences[{sentence_idx}].target contains Japanese spacing artifact")
                 reading = str(sentence.get("reading") or "")
                 target = str(sentence.get("target") or "")
                 if "きごう" in reading and "記号" not in target and "きごう" not in target:

@@ -27,6 +27,34 @@ def is_kana(ch: str) -> bool:
     return HIRAGANA_START <= v <= HIRAGANA_END or KATAKANA_START <= v <= KATAKANA_END or ch == "ー"
 
 
+def is_japanese_text_char(ch: str) -> bool:
+    if not ch:
+        return False
+    v = ord(ch)
+    return is_kana(ch) or is_kanji(ch) or 0x3000 <= v <= 0x303F or 0xFF00 <= v <= 0xFFEF
+
+
+def japanese_spacing_artifact_positions(text: str) -> List[int]:
+    positions: List[int] = []
+    chars = list(str(text or ""))
+    for idx, ch in enumerate(chars):
+        if not ch.isspace():
+            continue
+        prev = next((chars[j] for j in range(idx - 1, -1, -1) if not chars[j].isspace()), "")
+        nxt = next((chars[j] for j in range(idx + 1, len(chars)) if not chars[j].isspace()), "")
+        if is_japanese_text_char(prev) or is_japanese_text_char(nxt):
+            positions.append(idx)
+    return positions
+
+
+def remove_japanese_spacing_artifacts(text: str) -> str:
+    text = str(text or "")
+    drop = set(japanese_spacing_artifact_positions(text))
+    if not drop:
+        return text
+    return "".join(ch for idx, ch in enumerate(text) if idx not in drop)
+
+
 def to_hiragana(text: str) -> str:
     out: List[str] = []
     for ch in text or "":
@@ -248,6 +276,22 @@ def sentence_reading_from_tokens(target: str, tokens: List[Dict[str, Any]], fall
     return derived or clean_reading(fallback)
 
 
+def realign_token_offsets(target: str, tokens: List[Dict[str, Any]]) -> None:
+    cursor = 0
+    for token in tokens:
+        surface = str(token.get("surface") or "")
+        if not surface:
+            continue
+        found = target.find(surface, cursor)
+        if found < 0:
+            found = target.find(surface)
+        if found < 0:
+            continue
+        token["start"] = found
+        token["end"] = found + len(surface)
+        cursor = token["end"]
+
+
 def normalize_japanese_item(item: Dict[str, Any]) -> Dict[str, Any]:
     if str(item.get("language") or "") != "ja":
         return item
@@ -255,7 +299,14 @@ def normalize_japanese_item(item: Dict[str, Any]) -> Dict[str, Any]:
     sentences = []
     for sentence in out.get("sentences") or []:
         s2 = dict(sentence)
+        original_target = str(s2.get("target") or "")
+        target = remove_japanese_spacing_artifacts(original_target)
+        if target != original_target:
+            s2["target"] = target
         tokens = [normalize_japanese_token(t) for t in (s2.get("tokens") or []) if isinstance(t, dict)]
+        has_existing_offsets = any("start" in token or "end" in token for token in tokens)
+        if target and (target != original_target or has_existing_offsets):
+            realign_token_offsets(target, tokens)
         s2["tokens"] = tokens
         if tokens:
             s2["reading"] = sentence_reading_from_tokens(str(s2.get("target") or ""), tokens, str(s2.get("reading") or ""))
