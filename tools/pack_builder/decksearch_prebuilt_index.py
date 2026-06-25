@@ -91,7 +91,8 @@ def katakana_to_hiragana(s: str) -> str:
 
 
 def _remove_diacritics(s: str) -> str:
-    return "".join(ch for ch in unicodedata.normalize("NFKD", s) if not unicodedata.combining(ch))
+    stripped = "".join(ch for ch in unicodedata.normalize("NFKD", s) if not unicodedata.combining(ch))
+    return unicodedata.normalize("NFC", stripped)
 
 
 def normalize_common(s: str) -> str:

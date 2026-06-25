@@ -17,6 +17,7 @@ import subprocess
 import sys
 import tarfile
 import tempfile
+import unicodedata
 import unittest
 from unittest import mock
 from pathlib import Path
@@ -322,6 +323,71 @@ class VocomipediaPipelineTests(unittest.TestCase):
                         SELECT COUNT(1) FROM decksearch_postings
                         WHERE kind='reading_prefix' AND token='sokd' AND ui_lang_id=''
                         """
+                    ).fetchone()[0],
+                    0,
+                )
+            finally:
+                conn.close()
+
+    def test_decksearch_index_keeps_korean_hangul_precomposed(self) -> None:
+        with tempfile.TemporaryDirectory() as td:
+            tmp = Path(td)
+            source_db = tmp / "ko_1-2.db"
+            conn = sqlite3.connect(source_db)
+            try:
+                conn.execute("CREATE TABLE vocab(id TEXT PRIMARY KEY, metadata TEXT NOT NULL)")
+                conn.execute(
+                    "INSERT INTO vocab(id, metadata) VALUES (?, ?)",
+                    (
+                        "naseoda",
+                        json.dumps(
+                            {
+                                "word": "나서다",
+                                "word_reading": "naseoda",
+                                "word_en": "come out, come forth",
+                                "ko": ["아이가 방에서 나서요."],
+                                "en": ["The child comes out of the room."],
+                            },
+                            ensure_ascii=False,
+                        ),
+                    ),
+                )
+                conn.commit()
+            finally:
+                conn.close()
+
+            out_db = tmp / "decksearch.sqlite3"
+            decksearch_prebuilt_index.build_single_index(
+                source_db,
+                out_db,
+                pack_code="ko_1-2",
+                pack_version="test",
+                ui_lang_ids=["en"],
+            )
+
+            conn = sqlite3.connect(out_db)
+            try:
+                head = conn.execute(
+                    "SELECT head_norm FROM decksearch_entries WHERE entry_id='naseoda'"
+                ).fetchone()[0]
+                self.assertEqual(head, "나서다")
+                self.assertEqual(unicodedata.normalize("NFC", head), head)
+                self.assertEqual(
+                    conn.execute(
+                        """
+                        SELECT COUNT(1) FROM decksearch_postings
+                        WHERE kind='head_exact' AND token='나서다' AND ui_lang_id=''
+                        """
+                    ).fetchone()[0],
+                    1,
+                )
+                self.assertEqual(
+                    conn.execute(
+                        """
+                        SELECT COUNT(1) FROM decksearch_postings
+                        WHERE kind='head_exact' AND token=? AND ui_lang_id=''
+                        """,
+                        (unicodedata.normalize("NFD", "나서다"),),
                     ).fetchone()[0],
                     0,
                 )
