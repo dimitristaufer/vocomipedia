@@ -540,6 +540,79 @@ class VocomipediaPipelineTests(unittest.TestCase):
         tokens = payload["pos_analysis"][0]["tokens"]
         self.assertEqual([token.get("is_main_word") for token in tokens], [None, None, None, None, True, None, None])
 
+    def test_release_export_annotates_split_korean_doeda_compounds(self) -> None:
+        item = {
+            "schema_version": "vocomipedia-item-2",
+            "id": "ko_2:test-split-passive-verb",
+            "pack_code": "ko_2",
+            "language": "ko",
+            "entry_id": "적용되다",
+            "headword": "적용되다",
+            "reading": "",
+            "label": "To be applied",
+            "level": "TOPIK 2",
+            "part_of_speech": ["Verb"],
+            "glosses": {"en": "be applied", "ko": "적용되다"},
+            "sentences": [
+                {
+                    "target": "새 규칙이 오늘부터 적용돼요.",
+                    "translations": {"en": "The new rule applies from today."},
+                    "tokens": [
+                        {"surface": "새", "lemma": "새", "pos": "MM", "upos": "DET"},
+                        {"surface": "규칙", "lemma": "규칙", "pos": "NNG", "upos": "NOUN"},
+                        {"surface": "이", "lemma": "이", "pos": "JKS", "upos": "PART"},
+                        {"surface": "오늘", "lemma": "오늘", "pos": "NNG", "upos": "NOUN"},
+                        {"surface": "부터", "lemma": "부터", "pos": "JX", "upos": "PART"},
+                        {"surface": "적용", "lemma": "적용", "pos": "NNG", "upos": "NOUN"},
+                        {"surface": "돼", "lemma": "되", "pos": "XSV", "upos": "AUX"},
+                        {"surface": "요", "lemma": "어요", "pos": "EF", "upos": "PART"},
+                    ],
+                    "difficulty": 2,
+                },
+                {
+                    "target": "아직 준비 안 됐어요.",
+                    "translations": {"en": "It is not ready yet."},
+                    "tokens": [
+                        {"surface": "아직", "lemma": "아직", "pos": "MAG", "upos": "ADV"},
+                        {"surface": "준비", "lemma": "준비", "pos": "NNG", "upos": "NOUN"},
+                        {"surface": "안", "lemma": "안", "pos": "MAG", "upos": "ADV"},
+                        {"surface": "됐", "lemma": "되", "pos": "VV", "upos": "VERB"},
+                        {"surface": "어요", "lemma": "어요", "pos": "EF", "upos": "PART"},
+                    ],
+                    "difficulty": 2,
+                },
+                {
+                    "target": "계획이 못 됐어요.",
+                    "translations": {"en": "The plan did not work out."},
+                    "tokens": [
+                        {"surface": "계획", "lemma": "계획", "pos": "NNG", "upos": "NOUN"},
+                        {"surface": "이", "lemma": "이", "pos": "JKS", "upos": "PART"},
+                        {"surface": "못", "lemma": "못", "pos": "MAG", "upos": "ADV"},
+                        {"surface": "됐", "lemma": "되", "pos": "VV", "upos": "VERB"},
+                        {"surface": "어요", "lemma": "어요", "pos": "EF", "upos": "PART"},
+                    ],
+                    "difficulty": 2,
+                },
+            ],
+            "media": {},
+            "review": {},
+            "provenance": {},
+            "app_payload": {},
+        }
+        payload = common.canonical_to_legacy(item, pack={"target_sentence_key": "jp", "reading_sentence_key": "fu"})
+        first_tokens = payload["pos_analysis"][0]["tokens"]
+        second_tokens = common.canonical_to_legacy(
+            {**item, "headword": "준비되다"},
+            pack={"target_sentence_key": "jp", "reading_sentence_key": "fu"},
+        )["pos_analysis"][1]["tokens"]
+        third_tokens = common.canonical_to_legacy(
+            {**item, "headword": "못되다"},
+            pack={"target_sentence_key": "jp", "reading_sentence_key": "fu"},
+        )["pos_analysis"][2]["tokens"]
+        self.assertEqual([token.get("is_main_word") for token in first_tokens], [None, None, None, None, None, True, None, None])
+        self.assertEqual([token.get("is_main_word") for token in second_tokens], [None, True, None, None, None])
+        self.assertEqual([token.get("is_main_word") for token in third_tokens], [None, None, True, None, None])
+
     def test_korean_auto_pos_requires_kiwi_analyzer(self) -> None:
         nlp_base.analyzer_for_language.cache_clear()
         try:

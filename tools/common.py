@@ -177,6 +177,39 @@ def _mark_main_word_by_sentence_span(
     return False
 
 
+def _is_korean_doeda_token(token: Dict[str, Any]) -> bool:
+    surface = _token_text(token, "surface")
+    lemma = _token_text(token, "lemma")
+    return surface.startswith(("되", "돼", "됐", "됩")) or lemma.startswith("되")
+
+
+def _mark_split_korean_doeda_compound(tokens: List[Dict[str, Any]], *, headword: str, language: str) -> bool:
+    if not (language == "ko" or _contains_hangul(headword)):
+        return False
+    if not headword.endswith("되다"):
+        return False
+
+    stem = headword[:-2]
+    if not stem:
+        return False
+
+    marked = False
+    for index, token in enumerate(tokens):
+        if not isinstance(token, dict):
+            continue
+        surface = _token_text(token, "surface")
+        lemma = _token_text(token, "lemma")
+        if surface != stem and lemma != stem:
+            continue
+        if any(
+            isinstance(next_token, dict) and _is_korean_doeda_token(next_token)
+            for next_token in tokens[index + 1 : index + 3]
+        ):
+            token["is_main_word"] = True
+            marked = True
+    return marked
+
+
 def annotate_main_word_tokens(item: Dict[str, Any], tokens: List[Dict[str, Any]], sentence_text: str = "") -> List[Dict[str, Any]]:
     headword = str(item.get("headword") or item.get("entry_id") or "")
     language = str(item.get("language") or "").lower()
@@ -192,6 +225,8 @@ def annotate_main_word_tokens(item: Dict[str, Any], tokens: List[Dict[str, Any]]
         if isinstance(token, dict):
             if _matches_main_word(token, headword=headword, language=language):
                 token["is_main_word"] = True
+    if not any(token.get("is_main_word") is True for token in tokens if isinstance(token, dict)):
+        _mark_split_korean_doeda_compound(tokens, headword=headword, language=language)
     if not any(token.get("is_main_word") is True for token in tokens if isinstance(token, dict)):
         _mark_main_word_by_sentence_span(tokens, sentence_text=sentence_text, headword=headword, language=language)
     return tokens
