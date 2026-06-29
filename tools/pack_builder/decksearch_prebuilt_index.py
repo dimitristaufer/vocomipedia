@@ -8,7 +8,7 @@ Generated files under <source>/decksearch/:
   - decksearch.sqlite3
   - index_manifest.json
 
-Schema (v2):
+Schema (v3):
   decksearch_meta(key TEXT PRIMARY KEY, value TEXT)
   decksearch_entries(
       entry_id TEXT PRIMARY KEY,
@@ -20,6 +20,13 @@ Schema (v2):
       translation_norm TEXT,
       body_norm TEXT
   )
+  decksearch_entry_texts(
+      entry_id TEXT,
+      ui_lang_id TEXT,
+      translation_norm TEXT,
+      body_norm TEXT,
+      PRIMARY KEY(entry_id, ui_lang_id)
+  ) WITHOUT ROWID
   decksearch_postings(
       kind TEXT,
       token TEXT,
@@ -41,7 +48,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Dict, Iterable, List, Optional, Sequence, Set, Tuple
 
-SCHEMA_VERSION = 2
+SCHEMA_VERSION = 3
 
 STOPS: Dict[str, Set[str]] = {
     "en": {"to", "a", "an", "the", "and", "or", "of", "for", "in", "on", "at", "by", "with", "without", "is", "are", "be", "been", "being"},
@@ -91,8 +98,7 @@ def katakana_to_hiragana(s: str) -> str:
 
 
 def _remove_diacritics(s: str) -> str:
-    stripped = "".join(ch for ch in unicodedata.normalize("NFKD", s) if not unicodedata.combining(ch))
-    return unicodedata.normalize("NFC", stripped)
+    return "".join(ch for ch in unicodedata.normalize("NFKD", s) if not unicodedata.combining(ch))
 
 
 def normalize_common(s: str) -> str:
@@ -277,7 +283,7 @@ def build_gloss_sets(entry: Dict, ui_lang: str) -> Tuple[Set[str], Set[str]]:
     gloss_sent: Set[str] = set()
     for t in transl:
         if isinstance(t, str):
-            gloss_sent.update(gloss_tokenize(t, ui_lang=lang, min_length=4, cap=16))
+            gloss_sent.update(gloss_tokenize(t, ui_lang=lang))
 
     return set(list(gloss_head)[:96]), set(list(gloss_sent)[:96])
 
@@ -362,6 +368,7 @@ def _create_index_schema(conn: sqlite3.Connection) -> None:
         PRAGMA cache_size=-32768;
 
         DROP TABLE IF EXISTS decksearch_meta;
+        DROP TABLE IF EXISTS decksearch_entry_texts;
         DROP TABLE IF EXISTS decksearch_entries;
         DROP TABLE IF EXISTS decksearch_postings;
 
@@ -381,6 +388,14 @@ def _create_index_schema(conn: sqlite3.Connection) -> None:
             body_norm TEXT NOT NULL
         );
 
+        CREATE TABLE decksearch_entry_texts(
+            entry_id TEXT NOT NULL,
+            ui_lang_id TEXT NOT NULL,
+            translation_norm TEXT NOT NULL,
+            body_norm TEXT NOT NULL,
+            PRIMARY KEY(entry_id, ui_lang_id)
+        ) WITHOUT ROWID;
+
         CREATE TABLE decksearch_postings(
             kind TEXT NOT NULL,
             token TEXT NOT NULL,
@@ -393,6 +408,8 @@ def _create_index_schema(conn: sqlite3.Connection) -> None:
             ON decksearch_postings(kind, token, ui_lang_id);
         CREATE INDEX idx_decksearch_postings_entry_id
             ON decksearch_postings(entry_id);
+        CREATE INDEX idx_decksearch_entry_texts_lang_entry
+            ON decksearch_entry_texts(ui_lang_id, entry_id);
         """
     )
 
@@ -411,6 +428,34 @@ def _pick_wordtr(entry: Dict, ui_langs: Sequence[str]) -> str:
         if value:
             return value
     return ""
+
+
+def _all_translation_strings(entry: Dict, ui_langs: Sequence[str]) -> List[str]:
+    out: List[str] = []
+    for ui in ui_langs:
+        arr = _translation_list_for_ui(entry, ui)
+        for item in arr:
+            if isinstance(item, str):
+                out.append(item)
+    return out
+
+
+def _localized_search_text(entry: Dict, ui_lang: str) -> Tuple[str, str]:
+    word = entry.get("word") if isinstance(entry.get("word"), str) else ""
+    wordtr = _wordtr_for_ui(entry, ui_lang)
+    if not wordtr and isinstance(entry.get("word_en"), str):
+        wordtr = entry["word_en"]
+
+    jp = entry.get("jp") if isinstance(entry.get("jp"), list) else []
+    transl = _translation_list_for_ui(entry, ui_lang)
+    if not transl and ui_lang != "en":
+        transl = _translation_list_for_ui(entry, "en")
+
+    body_parts: List[str] = [word, wordtr]
+    body_parts += [s for s in jp if isinstance(s, str)]
+    body_parts += [s for s in transl if isinstance(s, str)]
+
+    return normalize_common(wordtr), normalize_common(" ".join(body_parts))
 
 
 def build_single_index(
@@ -450,6 +495,11 @@ def build_single_index(
             "(entry_id, word, word_reading, wordtr, head_norm, reading_norm, translation_norm, body_norm)"
             " VALUES (?, ?, ?, ?, ?, ?, ?, ?)"
         )
+        text_sql = (
+            "INSERT OR REPLACE INTO decksearch_entry_texts"
+            "(entry_id, ui_lang_id, translation_norm, body_norm)"
+            " VALUES (?, ?, ?, ?)"
+        )
         post_sql = (
             "INSERT OR IGNORE INTO decksearch_postings(kind, token, ui_lang_id, entry_id)"
             " VALUES (?, ?, ?, ?)"
@@ -459,13 +509,17 @@ def build_single_index(
         cur.execute("SELECT id, metadata FROM vocab")
 
         entry_rows: List[Tuple[str, str, str, str, str, str, str, str]] = []
+        text_rows: List[Tuple[str, str, str, str]] = []
         post_rows: List[Tuple[str, str, str, str]] = []
 
         def flush(force: bool = False) -> None:
-            nonlocal entry_rows, post_rows
+            nonlocal entry_rows, text_rows, post_rows
             if entry_rows and (force or len(entry_rows) >= 400):
                 dst.executemany(entry_sql, entry_rows)
                 entry_rows = []
+            if text_rows and (force or len(text_rows) >= 1600):
+                dst.executemany(text_sql, text_rows)
+                text_rows = []
             if post_rows and (force or len(post_rows) >= 6000):
                 dst.executemany(post_sql, post_rows)
                 post_rows = []
@@ -494,6 +548,8 @@ def build_single_index(
             word_reading = obj.get("word_reading") if isinstance(obj.get("word_reading"), str) else ""
 
             wordtr = _pick_wordtr(obj, ui_lang_ids)
+            transl_all = _all_translation_strings(obj, ui_lang_ids)
+
             jp = obj.get("jp") if isinstance(obj.get("jp"), list) else []
             fu = obj.get("fu") if isinstance(obj.get("fu"), list) else []
 
@@ -507,6 +563,7 @@ def build_single_index(
             # Latin query fragments inside romanized CJK sentences.
             body_parts: List[str] = [word, wordtr]
             body_parts += [s for s in jp if isinstance(s, str)]
+            body_parts += transl_all
             body_norm = normalize_common(" ".join(body_parts))
 
             entry_rows.append(
@@ -523,6 +580,10 @@ def build_single_index(
             )
 
             eid = str(entry_id)
+
+            for ui in ui_lang_ids:
+                localized_translation, localized_body = _localized_search_text(obj, ui)
+                text_rows.append((eid, ui, localized_translation, localized_body))
 
             surfaces: Set[str] = set()
             if head_norm:
@@ -562,8 +623,9 @@ def build_single_index(
                 gloss_head, gloss_sent = build_gloss_sets(obj, ui)
                 for tok in gloss_head:
                     add_post("trans_token", tok, eid, ui)
-                    if len(tok) >= 4:
-                        add_post("trans_prefix", tok[:4], eid, ui)
+                    if len(tok) >= 3:
+                        for l in range(3, min(4, len(tok)) + 1):
+                            add_post("trans_prefix", tok[:l], eid, ui)
                 for tok in gloss_sent:
                     add_post("sent_token", tok, eid, ui)
 
