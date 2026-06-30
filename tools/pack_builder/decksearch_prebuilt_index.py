@@ -98,7 +98,8 @@ def katakana_to_hiragana(s: str) -> str:
 
 
 def _remove_diacritics(s: str) -> str:
-    return "".join(ch for ch in unicodedata.normalize("NFKD", s) if not unicodedata.combining(ch))
+    stripped = "".join(ch for ch in unicodedata.normalize("NFKD", s) if not unicodedata.combining(ch))
+    return unicodedata.normalize("NFC", stripped)
 
 
 def normalize_common(s: str) -> str:
@@ -283,7 +284,7 @@ def build_gloss_sets(entry: Dict, ui_lang: str) -> Tuple[Set[str], Set[str]]:
     gloss_sent: Set[str] = set()
     for t in transl:
         if isinstance(t, str):
-            gloss_sent.update(gloss_tokenize(t, ui_lang=lang))
+            gloss_sent.update(gloss_tokenize(t, ui_lang=lang, min_length=4, cap=16))
 
     return set(list(gloss_head)[:96]), set(list(gloss_sent)[:96])
 
@@ -430,16 +431,6 @@ def _pick_wordtr(entry: Dict, ui_langs: Sequence[str]) -> str:
     return ""
 
 
-def _all_translation_strings(entry: Dict, ui_langs: Sequence[str]) -> List[str]:
-    out: List[str] = []
-    for ui in ui_langs:
-        arr = _translation_list_for_ui(entry, ui)
-        for item in arr:
-            if isinstance(item, str):
-                out.append(item)
-    return out
-
-
 def _localized_search_text(entry: Dict, ui_lang: str) -> Tuple[str, str]:
     word = entry.get("word") if isinstance(entry.get("word"), str) else ""
     wordtr = _wordtr_for_ui(entry, ui_lang)
@@ -548,7 +539,6 @@ def build_single_index(
             word_reading = obj.get("word_reading") if isinstance(obj.get("word_reading"), str) else ""
 
             wordtr = _pick_wordtr(obj, ui_lang_ids)
-            transl_all = _all_translation_strings(obj, ui_lang_ids)
 
             jp = obj.get("jp") if isinstance(obj.get("jp"), list) else []
             fu = obj.get("fu") if isinstance(obj.get("fu"), list) else []
@@ -560,10 +550,10 @@ def build_single_index(
 
             # Keep readings out of body_norm. They have dedicated reading postings,
             # while body fallback is intentionally broad and should not match
-            # Latin query fragments inside romanized CJK sentences.
+            # Latin query fragments inside romanized CJK sentences. Localized
+            # translations are stored in decksearch_entry_texts for V3 lookups.
             body_parts: List[str] = [word, wordtr]
             body_parts += [s for s in jp if isinstance(s, str)]
-            body_parts += transl_all
             body_norm = normalize_common(" ".join(body_parts))
 
             entry_rows.append(

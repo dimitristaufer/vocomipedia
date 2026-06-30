@@ -243,6 +243,14 @@ class VocomipediaPipelineTests(unittest.TestCase):
                 ).fetchone()[0]
                 self.assertNotIn("cat", body)
                 self.assertNotIn("climbed", body)
+                localized_body = conn.execute(
+                    """
+                    SELECT body_norm FROM decksearch_entry_texts
+                    WHERE entry_id='nom' AND ui_lang_id='en'
+                    """
+                ).fetchone()[0]
+                self.assertIn("cat", localized_body)
+                self.assertIn("climbed", localized_body)
                 self.assertEqual(
                     conn.execute(
                         """
