@@ -37,6 +37,11 @@ NON_TRANSLATION_LIST_KEYS = {
     "jp_audio",
 }
 NON_GLOSS_WORD_SUFFIXES = {"reading", "label", "romanized", "hanja", "pinyin", "POS"}
+INVALID_GLOSS_RE = re.compile(r"\[\s*tag\s*:", re.IGNORECASE)
+
+
+def invalid_word_gloss(value: Any) -> bool:
+    return isinstance(value, str) and bool(INVALID_GLOSS_RE.search(value))
 
 
 class VocomipediaError(RuntimeError):
@@ -742,6 +747,19 @@ def validate_item(
                 if strict_content and str(item.get("language") or "") == "ja":
                     for err in validate_token_sequence(sentence):
                         errors.append(f"sentences[{idx}]: {err}")
+
+    glosses = item.get("glosses")
+    if isinstance(glosses, dict):
+        for lang, text in glosses.items():
+            if invalid_word_gloss(text):
+                errors.append(f"glosses.{lang} contains POS tag label instead of a word gloss")
+
+    payload = item.get("app_payload")
+    if isinstance(payload, dict):
+        for key, text in payload.items():
+            if key.startswith("word_") and key[5:] not in NON_GLOSS_WORD_SUFFIXES and invalid_word_gloss(text):
+                errors.append(f"app_payload.{key} contains POS tag label instead of a word gloss")
+
     status = (item.get("review") or {}).get("status")
     if status not in REVIEW_STATUSES:
         errors.append(f"invalid review.status: {status!r}")

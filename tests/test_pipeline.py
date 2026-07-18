@@ -692,6 +692,28 @@ class VocomipediaPipelineTests(unittest.TestCase):
         self.assertTrue(any("overlaps previous display token" in error for error in errors), errors)
         self.assertTrue(any("surface does not match target span" in error for error in errors), errors)
 
+    def test_validate_item_rejects_pos_tag_labels_as_word_glosses(self) -> None:
+        item = {
+            "schema_version": "vocomipedia-item-2",
+            "id": "es_a2:ayer",
+            "pack_code": "es_a2",
+            "language": "es",
+            "entry_id": "ayer",
+            "headword": "ayer",
+            "reading": "",
+            "glosses": {"en": "1. Adverb [tag: RG]"},
+            "sentences": [{"target": "Llegué ayer.", "translations": {"en": "I arrived yesterday."}, "tokens": []}],
+            "media": {"license": "Vocomi-created", "review_status": "approved"},
+            "review": {"status": "approved"},
+            "provenance": {"license_status": "generated_by_vocomi"},
+            "app_payload": {"word_en": "1. Adverb [tag: RG]", "word_de": "gestern"},
+        }
+
+        errors = common.validate_item(item)
+
+        self.assertIn("glosses.en contains POS tag label instead of a word gloss", errors)
+        self.assertIn("app_payload.word_en contains POS tag label instead of a word gloss", errors)
+
     def test_auto_pos_analysis_normalizes_known_korean_legacy_x_tokens(self) -> None:
         item = {
             "schema_version": "vocomipedia-item-2",
