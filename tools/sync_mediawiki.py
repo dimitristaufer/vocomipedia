@@ -1189,7 +1189,24 @@ def render_deck_index(pack_code: str, items: list[dict]) -> str:
     ]
     for item in items:
         title = page_title(pack_code, item)
-        label = f"{item.get('headword', item.get('entry_id'))} ({item.get('entry_id')})"
+        entry_id = str(item.get("entry_id") or "")
+        headword = str(item.get("headword") or entry_id)
+        if re.search(r"(?:__v\d+|__to-be__v2)$", entry_id):
+            details = []
+            reading = str(item.get("reading") or "").strip()
+            if reading and reading != headword:
+                details.append(reading)
+            part_of_speech = item.get("part_of_speech") or []
+            if isinstance(part_of_speech, list):
+                details.extend(str(pos).strip() for pos in part_of_speech if str(pos).strip())
+            gloss = str((item.get("glosses") or {}).get("en") or "").strip()
+            if gloss:
+                details.append(gloss)
+            details = list(dict.fromkeys(details))
+            safe_details = "; ".join(details).replace("|", "/").replace("[", "(").replace("]", ")")
+            label = f"{headword} ({safe_details})" if safe_details else headword
+        else:
+            label = f"{headword} ({entry_id})"
         lines.append(f"* [[{title}|{label}]]")
     lines.append("")
     return "\n".join(lines)

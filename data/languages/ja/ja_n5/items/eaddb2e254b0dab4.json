@@ -16,19 +16,19 @@
     "es": "hotel",
     "fr": "hôtel",
     "de": "Hotel",
-    "it": "albergo",
+    "it": "albergo; hotel",
     "ko": "호텔",
-    "zh-Hans": "旅馆",
-    "yue": "旅館",
-    "ru": "гостиница",
+    "zh-Hans": "旅馆; 酒店",
+    "yue": "旅館; 賓館",
+    "ru": "гостиница; Отель",
     "pt": "hotel",
     "he": "מלון",
     "tr": "otel",
     "vi": "khách sạn",
-    "ar": "فندق",
+    "ar": "فندق; الفندق",
     "nl": "hotel",
     "uk": "готель",
-    "hu": "szálloda",
+    "hu": "szálloda; Hotel",
     "hi": "होटल",
     "pl": "hotel",
     "el": "ξενοδοχείο",
@@ -508,6 +508,585 @@
       ],
       "difficulty": 1,
       "ruby_source": "sudachipy_sudachidict_core_c"
+    },
+    {
+      "target": "明日、ホテルを予約したよ。",
+      "reading": "あす、ほてるをよやくしたよ。",
+      "translations": {
+        "en": "I booked a hotel for tomorrow.",
+        "es": "He reservado un hotel para mañana.",
+        "fr": "J’ai réservé un hôtel pour demain.",
+        "de": "Ich habe ein Hotel für morgen gebucht.",
+        "it": "Ho prenotato un hotel per domani.",
+        "ko": "내일 호텔 예약했어.",
+        "zh-Hans": "我订了明天的酒店。",
+        "yue": "我訂咗聽日嘅酒店。",
+        "ru": "Я забронировал отель на завтра.",
+        "pt": "Reservei um hotel para amanhã.",
+        "he": "הזמנתי מלון למחר.",
+        "tr": "Yarın için otel ayırttım.",
+        "vi": "Tôi đã đặt một khách sạn cho ngày mai.",
+        "ar": "حجزت فندقا غدا.",
+        "nl": "Ik heb een hotel geboekt voor morgen.",
+        "uk": "Я забронював готель на завтра.",
+        "hu": "Holnapra foglaltam egy hotelt.",
+        "hi": "मैंने कल के लिए एक होटल बुक किया है।",
+        "pl": "Zarezerwowałem hotel na jutro.",
+        "el": "Έκλεισα ένα ξενοδοχείο για αύριο.",
+        "nb": "Jeg har bestilt hotell for i morgen.",
+        "id": "Saya memesan hotel untuk besok.",
+        "sv": "Jag bokade hotell för imorgon.",
+        "ro": "Am rezervat un hotel pentru mâine.",
+        "cs": "Rezervoval jsem si hotel na zítřek.",
+        "da": "Jeg har booket et hotel til i morgen.",
+        "fi": "Varasin hotellin huomiseksi."
+      },
+      "tokens": [
+        {
+          "surface": "明日",
+          "surface_en": "tomorrow",
+          "furigana": "あす",
+          "pos": "noun (time expression)",
+          "lemma": "明日",
+          "explanation": "Indicates the day after today; functions as a temporal adverbial.",
+          "difficulty": 8,
+          "reading_kana": "あす",
+          "ruby_text": "明日[あす]",
+          "ruby_spans": [
+            {
+              "base": "明日",
+              "reading": "あす",
+              "start": 0,
+              "length": 2
+            }
+          ],
+          "ruby_confidence": "high",
+          "ruby_source": "sudachipy_sudachidict_core_c"
+        },
+        {
+          "surface": "ホテル",
+          "surface_en": "hotel",
+          "furigana": "ほてる",
+          "pos": "noun",
+          "lemma": "ホテル",
+          "explanation": "Loanword meaning 'hotel'; the place being reserved.",
+          "difficulty": 1,
+          "is_main_word": true,
+          "reading_kana": "ほてる",
+          "ruby_text": "ホテル",
+          "ruby_spans": [],
+          "ruby_confidence": "high",
+          "ruby_source": "sudachipy_sudachidict_core_c"
+        },
+        {
+          "surface": "を",
+          "surface_en": "(object marker)",
+          "furigana": "を",
+          "pos": "particle",
+          "lemma": "を",
+          "explanation": "Marks 「ホテル」 as the direct object of the verb.",
+          "difficulty": 1,
+          "reading_kana": "を",
+          "ruby_text": "を",
+          "ruby_spans": [],
+          "ruby_confidence": "high",
+          "ruby_source": "sudachipy_sudachidict_core_c"
+        },
+        {
+          "surface": "予約した",
+          "surface_en": "reserved",
+          "furigana": "よやくした",
+          "pos": "verb",
+          "lemma": "予約する",
+          "explanation": "Past tense form of 「予約する」 (to reserve); indicates making a reservation.",
+          "difficulty": 14,
+          "reading_kana": "よやくした",
+          "ruby_text": "予約[よやく]した",
+          "ruby_spans": [
+            {
+              "base": "予約",
+              "reading": "よやく",
+              "start": 0,
+              "length": 2
+            }
+          ],
+          "ruby_confidence": "high",
+          "ruby_source": "sudachipy_sudachidict_core_c"
+        },
+        {
+          "surface": "よ",
+          "surface_en": "(assertion particle)",
+          "furigana": "よ",
+          "pos": "particle",
+          "lemma": "よ",
+          "explanation": "Sentence-ending particle expressing assertion or informing the listener of new information.",
+          "difficulty": 1,
+          "reading_kana": "よ",
+          "ruby_text": "よ",
+          "ruby_spans": [],
+          "ruby_confidence": "high",
+          "ruby_source": "sudachipy_sudachidict_core_c"
+        }
+      ],
+      "difficulty": 5,
+      "ruby_source": "sudachipy_sudachidict_core_c"
+    },
+    {
+      "target": "このホテルの部屋は広いね。",
+      "reading": "このほてるのへやはひろいね。",
+      "translations": {
+        "en": "The rooms in this hotel are spacious, aren't they?",
+        "es": "Las habitaciones de este hotel son espaciosas, ¿verdad?",
+        "fr": "Les chambres de cet hôtel sont spacieuses, n’est-ce pas ?",
+        "de": "Die Zimmer in diesem Hotel sind geräumig, nicht wahr?",
+        "it": "Le camere di questo hotel sono spaziose, vero?",
+        "ko": "이 호텔 방 넓죠?",
+        "zh-Hans": "这家酒店的房间很宽敞，不是吗？",
+        "yue": "呢間酒店嘅房間好大，係咪？",
+        "ru": "Номера в этом отеле просторные, правда?",
+        "pt": "Os quartos deste hotel são espaçosos, não são?",
+        "he": "החדרים במלון הזה מרווחים, לא?",
+        "tr": "Bu oteldeki odalar geniş, değil mi?",
+        "vi": "Các phòng trong khách sạn này rất rộng rãi, phải không?",
+        "ar": "الغرف في هذا الفندق واسعة، أليس كذلك؟",
+        "nl": "De kamers in dit hotel zijn ruim, nietwaar?",
+        "uk": "Номери в цьому готелі просторі, чи не так?",
+        "hu": "A szobák ebben a szállodában tágasak, nem igaz?",
+        "hi": "इस होटल के कमरे बड़े हैं, है ना?",
+        "pl": "Pokoje w tym hotelu są przestronne, prawda?",
+        "el": "Τα δωμάτια σε αυτό το ξενοδοχείο είναι ευρύχωρα, έτσι δεν είναι;",
+        "nb": "Rommene på dette hotellet er romslige, ikke sant?",
+        "id": "Kamar-kamar di hotel ini luas, bukan?",
+        "sv": "Rummen på det här hotellet är rymliga, eller hur?",
+        "ro": "Camerele din acest hotel sunt spațioase, nu-i așa?",
+        "cs": "Pokoje v tomhle hotelu jsou prostorné, že?",
+        "da": "Værelserne på dette hotel er rummelige, ikke?",
+        "fi": "Tämän hotellin huoneet ovat tilavat, eikö vain?"
+      },
+      "tokens": [
+        {
+          "surface": "この",
+          "surface_en": "this",
+          "furigana": "この",
+          "pos": "demonstrative determiner",
+          "lemma": "この",
+          "explanation": "Indicates proximity to the speaker; modifies 「ホテル」.",
+          "difficulty": 1,
+          "reading_kana": "この",
+          "ruby_text": "この",
+          "ruby_spans": [],
+          "ruby_confidence": "high",
+          "ruby_source": "sudachipy_sudachidict_core_c"
+        },
+        {
+          "surface": "ホテル",
+          "surface_en": "hotel",
+          "furigana": "ほてる",
+          "pos": "noun",
+          "lemma": "ホテル",
+          "explanation": "Loanword meaning 'hotel'; the establishment being referred to.",
+          "difficulty": 1,
+          "is_main_word": true,
+          "reading_kana": "ほてる",
+          "ruby_text": "ホテル",
+          "ruby_spans": [],
+          "ruby_confidence": "high",
+          "ruby_source": "sudachipy_sudachidict_core_c"
+        },
+        {
+          "surface": "の",
+          "surface_en": "of",
+          "furigana": "の",
+          "pos": "particle",
+          "lemma": "の",
+          "explanation": "Genitive particle linking 「ホテル」 and 「部屋」 to show possession or association.",
+          "difficulty": 1,
+          "reading_kana": "の",
+          "ruby_text": "の",
+          "ruby_spans": [],
+          "ruby_confidence": "high",
+          "ruby_source": "sudachipy_sudachidict_core_c"
+        },
+        {
+          "surface": "部屋",
+          "surface_en": "room",
+          "furigana": "へや",
+          "pos": "noun",
+          "lemma": "部屋",
+          "explanation": "The specific area within the hotel being described.",
+          "difficulty": 9,
+          "reading_kana": "へや",
+          "ruby_text": "部屋[へや]",
+          "ruby_spans": [
+            {
+              "base": "部屋",
+              "reading": "へや",
+              "start": 0,
+              "length": 2
+            }
+          ],
+          "ruby_confidence": "high",
+          "ruby_source": "sudachipy_sudachidict_core_c"
+        },
+        {
+          "surface": "は",
+          "surface_en": "(topic marker)",
+          "furigana": "は",
+          "pos": "particle",
+          "lemma": "は",
+          "explanation": "Marks 「このホテルの部屋」 as the topic of the sentence.",
+          "difficulty": 1,
+          "reading_kana": "は",
+          "ruby_text": "は",
+          "ruby_spans": [],
+          "ruby_confidence": "high",
+          "ruby_source": "sudachipy_sudachidict_core_c"
+        },
+        {
+          "surface": "広い",
+          "surface_en": "spacious",
+          "furigana": "ひろい",
+          "pos": "i-adjective",
+          "lemma": "広い",
+          "explanation": "Describes the room's size; functions as the predicate.",
+          "difficulty": 3,
+          "reading_kana": "ひろい",
+          "ruby_text": "広[ひろ]い",
+          "ruby_spans": [
+            {
+              "base": "広",
+              "reading": "ひろ",
+              "start": 0,
+              "length": 1
+            }
+          ],
+          "ruby_confidence": "high",
+          "ruby_source": "sudachipy_sudachidict_core_c"
+        },
+        {
+          "surface": "ね",
+          "surface_en": "(agreement particle)",
+          "furigana": "ね",
+          "pos": "particle",
+          "lemma": "ね",
+          "explanation": "Sentence-ending particle seeking the listener's agreement or confirmation.",
+          "difficulty": 1,
+          "reading_kana": "ね",
+          "ruby_text": "ね",
+          "ruby_spans": [],
+          "ruby_confidence": "high",
+          "ruby_source": "sudachipy_sudachidict_core_c"
+        }
+      ],
+      "difficulty": 2.43,
+      "ruby_source": "sudachipy_sudachidict_core_c"
+    },
+    {
+      "target": "あそこに大きなホテルが見えるよ。",
+      "reading": "あそこにおおきなほてるがみえるよ。",
+      "translations": {
+        "en": "I can see a big hotel over there.",
+        "es": "Veo un hotel grande allí.",
+        "fr": "Je vois un grand hôtel là-bas.",
+        "de": "Ich sehe dort drüben ein großes Hotel.",
+        "it": "Vedo un grande hotel laggiù.",
+        "ko": "저기 큰 호텔이 보여.",
+        "zh-Hans": "我能看到那边有家大酒店。",
+        "yue": "我可以睇到嗰邊有間大酒店。",
+        "ru": "Вижу большой отель вон там.",
+        "pt": "Consigo ver um hotel grande ali.",
+        "he": "אני רואה מלון גדול שם.",
+        "tr": "Orada büyük bir otel görebiliyorum.",
+        "vi": "Tôi có thể thấy một khách sạn lớn ở đó.",
+        "ar": "أرى فندقا كبيرا هناك.",
+        "nl": "Ik zie daar een groot hotel.",
+        "uk": "Я бачу великий готель там.",
+        "hu": "Látok egy nagy szállodát ott.",
+        "hi": "मैं वहां पर एक बड़ा होटल देख सकता हूं।",
+        "pl": "Widzę tam duży hotel.",
+        "el": "Μπορώ να δω ένα μεγάλο ξενοδοχείο εκεί.",
+        "nb": "Jeg kan se et stort hotell der borte.",
+        "id": "Saya bisa melihat sebuah hotel besar di sana.",
+        "sv": "Jag kan se ett stort hotell där borta.",
+        "ro": "Văd un hotel mare acolo.",
+        "cs": "Vidím tam velký hotel.",
+        "da": "Jeg kan se et stort hotel derovre.",
+        "fi": "Näen tuolla ison hotellin."
+      },
+      "tokens": [
+        {
+          "surface": "あそこ",
+          "surface_en": "over there",
+          "furigana": "あそこ",
+          "pos": "demonstrative adverb",
+          "lemma": "あそこ",
+          "explanation": "Refers to a location distant from both speaker and listener.",
+          "difficulty": 1,
+          "reading_kana": "あそこ",
+          "ruby_text": "あそこ",
+          "ruby_spans": [],
+          "ruby_confidence": "high",
+          "ruby_source": "sudachipy_sudachidict_core_c"
+        },
+        {
+          "surface": "に",
+          "surface_en": "at",
+          "furigana": "に",
+          "pos": "particle",
+          "lemma": "に",
+          "explanation": "Indicates the location where the action (seeing) takes place.",
+          "difficulty": 1,
+          "reading_kana": "に",
+          "ruby_text": "に",
+          "ruby_spans": [],
+          "ruby_confidence": "high",
+          "ruby_source": "sudachipy_sudachidict_core_c"
+        },
+        {
+          "surface": "大きな",
+          "surface_en": "big",
+          "furigana": "おおきな",
+          "pos": "na-adjective",
+          "lemma": "大きな",
+          "explanation": "Describes the size of 「ホテル」; modifies the noun.",
+          "difficulty": 1,
+          "reading_kana": "おおきな",
+          "ruby_text": "大[おお]きな",
+          "ruby_spans": [
+            {
+              "base": "大",
+              "reading": "おお",
+              "start": 0,
+              "length": 1
+            }
+          ],
+          "ruby_confidence": "high",
+          "ruby_source": "sudachipy_sudachidict_core_c"
+        },
+        {
+          "surface": "ホテル",
+          "surface_en": "hotel",
+          "furigana": "ほてる",
+          "pos": "noun",
+          "lemma": "ホテル",
+          "explanation": "Loanword meaning 'hotel'; the object being seen.",
+          "difficulty": 1,
+          "is_main_word": true,
+          "reading_kana": "ほてる",
+          "ruby_text": "ホテル",
+          "ruby_spans": [],
+          "ruby_confidence": "high",
+          "ruby_source": "sudachipy_sudachidict_core_c"
+        },
+        {
+          "surface": "が",
+          "surface_en": "(subject marker)",
+          "furigana": "が",
+          "pos": "particle",
+          "lemma": "が",
+          "explanation": "Marks 「ホテル」 as the subject of 「見える」.",
+          "difficulty": 1,
+          "reading_kana": "が",
+          "ruby_text": "が",
+          "ruby_spans": [],
+          "ruby_confidence": "high",
+          "ruby_source": "sudachipy_sudachidict_core_c"
+        },
+        {
+          "surface": "見える",
+          "surface_en": "is visible",
+          "furigana": "みえる",
+          "pos": "verb",
+          "lemma": "見える",
+          "explanation": "Intransitive verb meaning 'to be visible' or 'can be seen'.",
+          "difficulty": 4,
+          "reading_kana": "みえる",
+          "ruby_text": "見[み]える",
+          "ruby_spans": [
+            {
+              "base": "見",
+              "reading": "み",
+              "start": 0,
+              "length": 1
+            }
+          ],
+          "ruby_confidence": "high",
+          "ruby_source": "sudachipy_sudachidict_core_c"
+        },
+        {
+          "surface": "よ",
+          "surface_en": "(assertion particle)",
+          "furigana": "よ",
+          "pos": "particle",
+          "lemma": "よ",
+          "explanation": "Sentence-ending particle adding emphasis or indicating new information to the listener.",
+          "difficulty": 1,
+          "reading_kana": "よ",
+          "ruby_text": "よ",
+          "ruby_spans": [],
+          "ruby_confidence": "high",
+          "ruby_source": "sudachipy_sudachidict_core_c"
+        }
+      ],
+      "difficulty": 1.43,
+      "ruby_source": "sudachipy_sudachidict_core_c"
+    },
+    {
+      "target": "旅行の後はホテルに泊まりたい。",
+      "reading": "りょこうのあとはほてるにとまりたい。",
+      "translations": {
+        "en": "After the trip, I want to stay at a hotel.",
+        "es": "Después del viaje, quiero quedarme en un hotel.",
+        "fr": "Après le voyage, je veux rester à l’hôtel.",
+        "de": "Nach der Reise möchte ich in einem Hotel übernachten.",
+        "it": "Dopo il viaggio, voglio stare in hotel.",
+        "ko": "여행 끝나면 호텔에 머물고 싶어.",
+        "zh-Hans": "旅行结束后，我想住酒店。",
+        "yue": "旅行完想住酒店",
+        "ru": "После поездки я хочу остановиться в отеле.",
+        "pt": "Depois da viagem, quero ficar em um hotel.",
+        "he": "אחרי הטיול, אני רוצה להישאר במלון.",
+        "tr": "Yolculuktan sonra bir otelde kalmak istiyorum.",
+        "vi": "Sau chuyến đi, tôi muốn ở khách sạn.",
+        "ar": "بعد الرحلة، أريد الإقامة في فندق.",
+        "nl": "Na de reis wil ik in een hotel verblijven.",
+        "uk": "Після поїздки я хочу зупинитися в готелі.",
+        "hu": "Az utazás után szállodában szeretnék megszállni.",
+        "hi": "यात्रा के बाद, मैं एक होटल में रहना चाहता हूँ।",
+        "pl": "Po wyjeździe chcę zatrzymać się w hotelu.",
+        "el": "Μετά το ταξίδι, θέλω να μείνω σε ένα ξενοδοχείο.",
+        "nb": "Etter turen vil jeg bo på hotell.",
+        "id": "Setelah perjalanan, saya ingin menginap di hotel.",
+        "sv": "Efter resan vill jag bo på hotell.",
+        "ro": "După excursie, vreau să stau la hotel.",
+        "cs": "Po výletě chci zůstat v hotelu.",
+        "da": "Efter turen vil jeg bo på hotel.",
+        "fi": "Matkan jälkeen haluan yöpyä hotellissa."
+      },
+      "tokens": [
+        {
+          "surface": "旅行",
+          "surface_en": "trip",
+          "furigana": "りょこう",
+          "pos": "noun",
+          "lemma": "旅行",
+          "explanation": "Refers to the act of traveling; the event before which the speaker plans.",
+          "difficulty": 12,
+          "reading_kana": "りょこう",
+          "ruby_text": "旅行[りょこう]",
+          "ruby_spans": [
+            {
+              "base": "旅行",
+              "reading": "りょこう",
+              "start": 0,
+              "length": 2
+            }
+          ],
+          "ruby_confidence": "high",
+          "ruby_source": "sudachipy_sudachidict_core_c"
+        },
+        {
+          "surface": "の",
+          "surface_en": "of",
+          "furigana": "の",
+          "pos": "particle",
+          "lemma": "の",
+          "explanation": "Genitive particle linking 「旅行」 and 「後」 to mean 'after the trip'.",
+          "difficulty": 1,
+          "reading_kana": "の",
+          "ruby_text": "の",
+          "ruby_spans": [],
+          "ruby_confidence": "high",
+          "ruby_source": "sudachipy_sudachidict_core_c"
+        },
+        {
+          "surface": "後",
+          "surface_en": "after",
+          "furigana": "あと",
+          "pos": "noun (time expression)",
+          "lemma": "後",
+          "explanation": "Indicates the time following the trip.",
+          "difficulty": 1,
+          "reading_kana": "あと",
+          "ruby_text": "後[あと]",
+          "ruby_spans": [
+            {
+              "base": "後",
+              "reading": "あと",
+              "start": 0,
+              "length": 1
+            }
+          ],
+          "ruby_confidence": "high",
+          "ruby_source": "sudachipy_sudachidict_core_c"
+        },
+        {
+          "surface": "は",
+          "surface_en": "(topic marker)",
+          "furigana": "は",
+          "pos": "particle",
+          "lemma": "は",
+          "explanation": "Marks 「旅行の後」 as the topic of the sentence.",
+          "difficulty": 1,
+          "reading_kana": "は",
+          "ruby_text": "は",
+          "ruby_spans": [],
+          "ruby_confidence": "high",
+          "ruby_source": "sudachipy_sudachidict_core_c"
+        },
+        {
+          "surface": "ホテル",
+          "surface_en": "hotel",
+          "furigana": "ほてる",
+          "pos": "noun",
+          "lemma": "ホテル",
+          "explanation": "Loanword meaning 'hotel'; the location where the speaker wants to stay.",
+          "difficulty": 1,
+          "is_main_word": true,
+          "reading_kana": "ほてる",
+          "ruby_text": "ホテル",
+          "ruby_spans": [],
+          "ruby_confidence": "high",
+          "ruby_source": "sudachipy_sudachidict_core_c"
+        },
+        {
+          "surface": "に",
+          "surface_en": "at/in",
+          "furigana": "に",
+          "pos": "particle",
+          "lemma": "に",
+          "explanation": "Indicates the destination or location of the action 「泊まりたい」.",
+          "difficulty": 1,
+          "reading_kana": "に",
+          "ruby_text": "に",
+          "ruby_spans": [],
+          "ruby_confidence": "high",
+          "ruby_source": "sudachipy_sudachidict_core_c"
+        },
+        {
+          "surface": "泊まりたい",
+          "surface_en": "want to stay",
+          "furigana": "とまりたい",
+          "pos": "verb (desiderative)",
+          "lemma": "泊まる",
+          "explanation": "-たい form of 「泊まる」 expressing the speaker's desire to stay.",
+          "difficulty": 42,
+          "reading_kana": "とまりたい",
+          "ruby_text": "泊[と]まりたい",
+          "ruby_spans": [
+            {
+              "base": "泊",
+              "reading": "と",
+              "start": 0,
+              "length": 1
+            }
+          ],
+          "ruby_confidence": "high",
+          "ruby_source": "sudachipy_sudachidict_core_c"
+        }
+      ],
+      "difficulty": 8.43,
+      "ruby_source": "sudachipy_sudachidict_core_c"
     }
   ],
   "media": {
@@ -552,14 +1131,14 @@
   },
   "app_payload": {
     "jp_audio": [
-      "audio_ホテル_1_100.mp3",
-      "audio_ホテル_1_70.mp3",
-      "audio_ホテル_2_100.mp3",
-      "audio_ホテル_2_70.mp3",
-      "audio_ホテル_3_100.mp3",
-      "audio_ホテル_3_70.mp3",
-      "audio_ホテル_4_100.mp3",
-      "audio_ホテル_4_70.mp3"
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
     ],
     "comic_difficulty": 1.5,
     "word": "ホテル",
@@ -567,13 +1146,21 @@
       "あしたホテルに行く。",
       "このホテルはいいね。",
       "ホテルのフロントでルームキーをもらった。",
-      "夜はホテルで寝た。"
+      "夜はホテルで寝た。",
+      "明日、ホテルを予約したよ。",
+      "このホテルの部屋は広いね。",
+      "あそこに大きなホテルが見えるよ。",
+      "旅行の後はホテルに泊まりたい。"
     ],
     "fu": [
       "あしたほてるにいく。",
       "このほてるはいいね。",
       "ほてるのふろんとでるーむきーをもらった。",
-      "よるはほてるでねた。"
+      "よるはほてるでねた。",
+      "あす、ほてるをよやくしたよ。",
+      "このほてるのへやはひろいね。",
+      "あそこにおおきなほてるがみえるよ。",
+      "りょこうのあとはほてるにとまりたい。"
     ],
     "pos_analysis": [
       {
@@ -918,6 +1505,461 @@
           }
         ],
         "difficulty_aggregated": 1
+      },
+      {
+        "sentence": "明日、ホテルを予約したよ。",
+        "tokens": [
+          {
+            "surface": "明日",
+            "surface_en": "tomorrow",
+            "furigana": "あす",
+            "pos": "noun (time expression)",
+            "lemma": "明日",
+            "explanation": "Indicates the day after today; functions as a temporal adverbial.",
+            "difficulty": 8,
+            "reading_kana": "あす",
+            "ruby_text": "明日[あす]",
+            "ruby_spans": [
+              {
+                "base": "明日",
+                "reading": "あす",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "high",
+            "ruby_source": "sudachipy_sudachidict_core_c"
+          },
+          {
+            "surface": "ホテル",
+            "surface_en": "hotel",
+            "furigana": "ほてる",
+            "pos": "noun",
+            "lemma": "ホテル",
+            "explanation": "Loanword meaning 'hotel'; the place being reserved.",
+            "difficulty": 1,
+            "is_main_word": true,
+            "reading_kana": "ほてる",
+            "ruby_text": "ホテル",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "ruby_source": "sudachipy_sudachidict_core_c"
+          },
+          {
+            "surface": "を",
+            "surface_en": "(object marker)",
+            "furigana": "を",
+            "pos": "particle",
+            "lemma": "を",
+            "explanation": "Marks 「ホテル」 as the direct object of the verb.",
+            "difficulty": 1,
+            "reading_kana": "を",
+            "ruby_text": "を",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "ruby_source": "sudachipy_sudachidict_core_c"
+          },
+          {
+            "surface": "予約した",
+            "surface_en": "reserved",
+            "furigana": "よやくした",
+            "pos": "verb",
+            "lemma": "予約する",
+            "explanation": "Past tense form of 「予約する」 (to reserve); indicates making a reservation.",
+            "difficulty": 14,
+            "reading_kana": "よやくした",
+            "ruby_text": "予約[よやく]した",
+            "ruby_spans": [
+              {
+                "base": "予約",
+                "reading": "よやく",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "high",
+            "ruby_source": "sudachipy_sudachidict_core_c"
+          },
+          {
+            "surface": "よ",
+            "surface_en": "(assertion particle)",
+            "furigana": "よ",
+            "pos": "particle",
+            "lemma": "よ",
+            "explanation": "Sentence-ending particle expressing assertion or informing the listener of new information.",
+            "difficulty": 1,
+            "reading_kana": "よ",
+            "ruby_text": "よ",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "ruby_source": "sudachipy_sudachidict_core_c"
+          }
+        ],
+        "difficulty_aggregated": 5
+      },
+      {
+        "sentence": "このホテルの部屋は広いね。",
+        "tokens": [
+          {
+            "surface": "この",
+            "surface_en": "this",
+            "furigana": "この",
+            "pos": "demonstrative determiner",
+            "lemma": "この",
+            "explanation": "Indicates proximity to the speaker; modifies 「ホテル」.",
+            "difficulty": 1,
+            "reading_kana": "この",
+            "ruby_text": "この",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "ruby_source": "sudachipy_sudachidict_core_c"
+          },
+          {
+            "surface": "ホテル",
+            "surface_en": "hotel",
+            "furigana": "ほてる",
+            "pos": "noun",
+            "lemma": "ホテル",
+            "explanation": "Loanword meaning 'hotel'; the establishment being referred to.",
+            "difficulty": 1,
+            "is_main_word": true,
+            "reading_kana": "ほてる",
+            "ruby_text": "ホテル",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "ruby_source": "sudachipy_sudachidict_core_c"
+          },
+          {
+            "surface": "の",
+            "surface_en": "of",
+            "furigana": "の",
+            "pos": "particle",
+            "lemma": "の",
+            "explanation": "Genitive particle linking 「ホテル」 and 「部屋」 to show possession or association.",
+            "difficulty": 1,
+            "reading_kana": "の",
+            "ruby_text": "の",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "ruby_source": "sudachipy_sudachidict_core_c"
+          },
+          {
+            "surface": "部屋",
+            "surface_en": "room",
+            "furigana": "へや",
+            "pos": "noun",
+            "lemma": "部屋",
+            "explanation": "The specific area within the hotel being described.",
+            "difficulty": 9,
+            "reading_kana": "へや",
+            "ruby_text": "部屋[へや]",
+            "ruby_spans": [
+              {
+                "base": "部屋",
+                "reading": "へや",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "high",
+            "ruby_source": "sudachipy_sudachidict_core_c"
+          },
+          {
+            "surface": "は",
+            "surface_en": "(topic marker)",
+            "furigana": "は",
+            "pos": "particle",
+            "lemma": "は",
+            "explanation": "Marks 「このホテルの部屋」 as the topic of the sentence.",
+            "difficulty": 1,
+            "reading_kana": "は",
+            "ruby_text": "は",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "ruby_source": "sudachipy_sudachidict_core_c"
+          },
+          {
+            "surface": "広い",
+            "surface_en": "spacious",
+            "furigana": "ひろい",
+            "pos": "i-adjective",
+            "lemma": "広い",
+            "explanation": "Describes the room's size; functions as the predicate.",
+            "difficulty": 3,
+            "reading_kana": "ひろい",
+            "ruby_text": "広[ひろ]い",
+            "ruby_spans": [
+              {
+                "base": "広",
+                "reading": "ひろ",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "high",
+            "ruby_source": "sudachipy_sudachidict_core_c"
+          },
+          {
+            "surface": "ね",
+            "surface_en": "(agreement particle)",
+            "furigana": "ね",
+            "pos": "particle",
+            "lemma": "ね",
+            "explanation": "Sentence-ending particle seeking the listener's agreement or confirmation.",
+            "difficulty": 1,
+            "reading_kana": "ね",
+            "ruby_text": "ね",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "ruby_source": "sudachipy_sudachidict_core_c"
+          }
+        ],
+        "difficulty_aggregated": 2.43
+      },
+      {
+        "sentence": "あそこに大きなホテルが見えるよ。",
+        "tokens": [
+          {
+            "surface": "あそこ",
+            "surface_en": "over there",
+            "furigana": "あそこ",
+            "pos": "demonstrative adverb",
+            "lemma": "あそこ",
+            "explanation": "Refers to a location distant from both speaker and listener.",
+            "difficulty": 1,
+            "reading_kana": "あそこ",
+            "ruby_text": "あそこ",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "ruby_source": "sudachipy_sudachidict_core_c"
+          },
+          {
+            "surface": "に",
+            "surface_en": "at",
+            "furigana": "に",
+            "pos": "particle",
+            "lemma": "に",
+            "explanation": "Indicates the location where the action (seeing) takes place.",
+            "difficulty": 1,
+            "reading_kana": "に",
+            "ruby_text": "に",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "ruby_source": "sudachipy_sudachidict_core_c"
+          },
+          {
+            "surface": "大きな",
+            "surface_en": "big",
+            "furigana": "おおきな",
+            "pos": "na-adjective",
+            "lemma": "大きな",
+            "explanation": "Describes the size of 「ホテル」; modifies the noun.",
+            "difficulty": 1,
+            "reading_kana": "おおきな",
+            "ruby_text": "大[おお]きな",
+            "ruby_spans": [
+              {
+                "base": "大",
+                "reading": "おお",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "high",
+            "ruby_source": "sudachipy_sudachidict_core_c"
+          },
+          {
+            "surface": "ホテル",
+            "surface_en": "hotel",
+            "furigana": "ほてる",
+            "pos": "noun",
+            "lemma": "ホテル",
+            "explanation": "Loanword meaning 'hotel'; the object being seen.",
+            "difficulty": 1,
+            "is_main_word": true,
+            "reading_kana": "ほてる",
+            "ruby_text": "ホテル",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "ruby_source": "sudachipy_sudachidict_core_c"
+          },
+          {
+            "surface": "が",
+            "surface_en": "(subject marker)",
+            "furigana": "が",
+            "pos": "particle",
+            "lemma": "が",
+            "explanation": "Marks 「ホテル」 as the subject of 「見える」.",
+            "difficulty": 1,
+            "reading_kana": "が",
+            "ruby_text": "が",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "ruby_source": "sudachipy_sudachidict_core_c"
+          },
+          {
+            "surface": "見える",
+            "surface_en": "is visible",
+            "furigana": "みえる",
+            "pos": "verb",
+            "lemma": "見える",
+            "explanation": "Intransitive verb meaning 'to be visible' or 'can be seen'.",
+            "difficulty": 4,
+            "reading_kana": "みえる",
+            "ruby_text": "見[み]える",
+            "ruby_spans": [
+              {
+                "base": "見",
+                "reading": "み",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "high",
+            "ruby_source": "sudachipy_sudachidict_core_c"
+          },
+          {
+            "surface": "よ",
+            "surface_en": "(assertion particle)",
+            "furigana": "よ",
+            "pos": "particle",
+            "lemma": "よ",
+            "explanation": "Sentence-ending particle adding emphasis or indicating new information to the listener.",
+            "difficulty": 1,
+            "reading_kana": "よ",
+            "ruby_text": "よ",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "ruby_source": "sudachipy_sudachidict_core_c"
+          }
+        ],
+        "difficulty_aggregated": 1.43
+      },
+      {
+        "sentence": "旅行の後はホテルに泊まりたい。",
+        "tokens": [
+          {
+            "surface": "旅行",
+            "surface_en": "trip",
+            "furigana": "りょこう",
+            "pos": "noun",
+            "lemma": "旅行",
+            "explanation": "Refers to the act of traveling; the event before which the speaker plans.",
+            "difficulty": 12,
+            "reading_kana": "りょこう",
+            "ruby_text": "旅行[りょこう]",
+            "ruby_spans": [
+              {
+                "base": "旅行",
+                "reading": "りょこう",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "high",
+            "ruby_source": "sudachipy_sudachidict_core_c"
+          },
+          {
+            "surface": "の",
+            "surface_en": "of",
+            "furigana": "の",
+            "pos": "particle",
+            "lemma": "の",
+            "explanation": "Genitive particle linking 「旅行」 and 「後」 to mean 'after the trip'.",
+            "difficulty": 1,
+            "reading_kana": "の",
+            "ruby_text": "の",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "ruby_source": "sudachipy_sudachidict_core_c"
+          },
+          {
+            "surface": "後",
+            "surface_en": "after",
+            "furigana": "あと",
+            "pos": "noun (time expression)",
+            "lemma": "後",
+            "explanation": "Indicates the time following the trip.",
+            "difficulty": 1,
+            "reading_kana": "あと",
+            "ruby_text": "後[あと]",
+            "ruby_spans": [
+              {
+                "base": "後",
+                "reading": "あと",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "high",
+            "ruby_source": "sudachipy_sudachidict_core_c"
+          },
+          {
+            "surface": "は",
+            "surface_en": "(topic marker)",
+            "furigana": "は",
+            "pos": "particle",
+            "lemma": "は",
+            "explanation": "Marks 「旅行の後」 as the topic of the sentence.",
+            "difficulty": 1,
+            "reading_kana": "は",
+            "ruby_text": "は",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "ruby_source": "sudachipy_sudachidict_core_c"
+          },
+          {
+            "surface": "ホテル",
+            "surface_en": "hotel",
+            "furigana": "ほてる",
+            "pos": "noun",
+            "lemma": "ホテル",
+            "explanation": "Loanword meaning 'hotel'; the location where the speaker wants to stay.",
+            "difficulty": 1,
+            "is_main_word": true,
+            "reading_kana": "ほてる",
+            "ruby_text": "ホテル",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "ruby_source": "sudachipy_sudachidict_core_c"
+          },
+          {
+            "surface": "に",
+            "surface_en": "at/in",
+            "furigana": "に",
+            "pos": "particle",
+            "lemma": "に",
+            "explanation": "Indicates the destination or location of the action 「泊まりたい」.",
+            "difficulty": 1,
+            "reading_kana": "に",
+            "ruby_text": "に",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "ruby_source": "sudachipy_sudachidict_core_c"
+          },
+          {
+            "surface": "泊まりたい",
+            "surface_en": "want to stay",
+            "furigana": "とまりたい",
+            "pos": "verb (desiderative)",
+            "lemma": "泊まる",
+            "explanation": "-たい form of 「泊まる」 expressing the speaker's desire to stay.",
+            "difficulty": 42,
+            "reading_kana": "とまりたい",
+            "ruby_text": "泊[と]まりたい",
+            "ruby_spans": [
+              {
+                "base": "泊",
+                "reading": "と",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "high",
+            "ruby_source": "sudachipy_sudachidict_core_c"
+          }
+        ],
+        "difficulty_aggregated": 8.43
       }
     ],
     "word_reading": "ほてる",
@@ -926,19 +1968,19 @@
     "word_es": "hotel",
     "word_fr": "hôtel",
     "word_de": "Hotel",
-    "word_it": "albergo",
+    "word_it": "albergo; hotel",
     "word_ko": "호텔",
-    "word_zh-Hans": "旅馆",
-    "word_yue": "旅館",
-    "word_ru": "гостиница",
+    "word_zh-Hans": "旅馆; 酒店",
+    "word_yue": "旅館; 賓館",
+    "word_ru": "гостиница; Отель",
     "word_pt": "hotel",
     "word_he": "מלון",
     "word_tr": "otel",
     "word_vi": "khách sạn",
-    "word_ar": "فندق",
+    "word_ar": "فندق; الفندق",
     "word_nl": "hotel",
     "word_uk": "готель",
-    "word_hu": "szálloda",
+    "word_hu": "szálloda; Hotel",
     "word_hi": "होटल",
     "word_pl": "hotel",
     "word_el": "ξενοδοχείο",
@@ -954,163 +1996,271 @@
       "سأذهب إلى فندق غدا.",
       "هذا الفندق جميل ، أليس كذلك؟",
       "تلقيت مفتاح الغرفة في مكتب الاستقبال بالفندق.",
-      "في الليل ، نمت في الفندق."
+      "في الليل ، نمت في الفندق.",
+      "حجزت فندقا غدا.",
+      "الغرف في هذا الفندق واسعة، أليس كذلك؟",
+      "أرى فندقا كبيرا هناك.",
+      "بعد الرحلة، أريد الإقامة في فندق."
     ],
     "cs": [
       "Zítra jedu do hotelu.",
       "Tento hotel je pěkný, že?",
       "Klíč od pokoje jsem obdržel na recepci hotelu.",
-      "V noci jsem spal v hotelu."
+      "V noci jsem spal v hotelu.",
+      "Rezervoval jsem si hotel na zítřek.",
+      "Pokoje v tomhle hotelu jsou prostorné, že?",
+      "Vidím tam velký hotel.",
+      "Po výletě chci zůstat v hotelu."
     ],
     "da": [
       "Jeg skal på hotel i morgen.",
       "Dette hotel er dejligt, er det ikke?",
       "Jeg modtog værelsesnøglen i hotellets reception.",
-      "Om natten sov jeg på hotellet."
+      "Om natten sov jeg på hotellet.",
+      "Jeg har booket et hotel til i morgen.",
+      "Værelserne på dette hotel er rummelige, ikke?",
+      "Jeg kan se et stort hotel derovre.",
+      "Efter turen vil jeg bo på hotel."
     ],
     "de": [
       "Ich gehe morgen in ein Hotel.",
       "Dieses Hotel ist schön, nicht wahr?",
       "Den Zimmerschlüssel habe ich an der Rezeption des Hotels erhalten.",
-      "Nachts schlief ich im Hotel."
+      "Nachts schlief ich im Hotel.",
+      "Ich habe ein Hotel für morgen gebucht.",
+      "Die Zimmer in diesem Hotel sind geräumig, nicht wahr?",
+      "Ich sehe dort drüben ein großes Hotel.",
+      "Nach der Reise möchte ich in einem Hotel übernachten."
     ],
     "el": [
       "Πάω σε ένα ξενοδοχείο αύριο.",
       "Αυτό το ξενοδοχείο είναι ωραίο, έτσι δεν είναι;",
       "Έλαβα το κλειδί του δωματίου στη ρεσεψιόν του ξενοδοχείου.",
-      "Τη νύχτα, κοιμήθηκα στο ξενοδοχείο."
+      "Τη νύχτα, κοιμήθηκα στο ξενοδοχείο.",
+      "Έκλεισα ένα ξενοδοχείο για αύριο.",
+      "Τα δωμάτια σε αυτό το ξενοδοχείο είναι ευρύχωρα, έτσι δεν είναι;",
+      "Μπορώ να δω ένα μεγάλο ξενοδοχείο εκεί.",
+      "Μετά το ταξίδι, θέλω να μείνω σε ένα ξενοδοχείο."
     ],
     "en": [
       "I'm going to a hotel tomorrow.",
       "This hotel is nice, isn't it?",
       "I received the room key at the hotel's front desk.",
-      "At night, I slept at the hotel."
+      "At night, I slept at the hotel.",
+      "I booked a hotel for tomorrow.",
+      "The rooms in this hotel are spacious, aren't they?",
+      "I can see a big hotel over there.",
+      "After the trip, I want to stay at a hotel."
     ],
     "es": [
       "Mañana me voy a un hotel.",
       "Este hotel es bonito, ¿verdad?",
       "Recibí la llave de la habitación en la recepción del hotel.",
-      "Por la noche, dormí en el hotel."
+      "Por la noche, dormí en el hotel.",
+      "He reservado un hotel para mañana.",
+      "Las habitaciones de este hotel son espaciosas, ¿verdad?",
+      "Veo un hotel grande allí.",
+      "Después del viaje, quiero quedarme en un hotel."
     ],
     "fi": [
       "Menen huomenna hotelliin.",
       "Tämä hotelli on mukava, eikö olekin?",
       "Sain huoneen avaimen hotellin vastaanotosta.",
-      "Yöllä nukuin hotellissa."
+      "Yöllä nukuin hotellissa.",
+      "Varasin hotellin huomiseksi.",
+      "Tämän hotellin huoneet ovat tilavat, eikö vain?",
+      "Näen tuolla ison hotellin.",
+      "Matkan jälkeen haluan yöpyä hotellissa."
     ],
     "fr": [
       "Je vais à l’hôtel demain.",
       "Cet hôtel est sympa, n’est-ce pas ?",
       "J’ai reçu la clé de la chambre à la réception de l’hôtel.",
-      "La nuit, je dormais à l’hôtel."
+      "La nuit, je dormais à l’hôtel.",
+      "J’ai réservé un hôtel pour demain.",
+      "Les chambres de cet hôtel sont spacieuses, n’est-ce pas ?",
+      "Je vois un grand hôtel là-bas.",
+      "Après le voyage, je veux rester à l’hôtel."
     ],
     "he": [
       "אני הולך מחר למלון.",
       "המלון הזה נחמד, לא?",
       "קיבלתי את מפתח החדר בדלפק הקבלה של המלון.",
-      "בלילה ישנתי במלון."
+      "בלילה ישנתי במלון.",
+      "הזמנתי מלון למחר.",
+      "החדרים במלון הזה מרווחים, לא?",
+      "אני רואה מלון גדול שם.",
+      "אחרי הטיול, אני רוצה להישאר במלון."
     ],
     "hi": [
       "मैं कल एक होटल जा रहा हूँ।",
       "यह होटल अच्छा है, है ना?",
       "मुझे होटल के फ्रंट डेस्क पर कमरे की चाबी मिली।",
-      "रात को मैं होटल में ही सो गया।"
+      "रात को मैं होटल में ही सो गया।",
+      "मैंने कल के लिए एक होटल बुक किया है।",
+      "इस होटल के कमरे बड़े हैं, है ना?",
+      "मैं वहां पर एक बड़ा होटल देख सकता हूं।",
+      "यात्रा के बाद, मैं एक होटल में रहना चाहता हूँ।"
     ],
     "hu": [
       "Holnap szállodába megyek.",
       "Ez a szálloda szép, nem?",
       "A szobakulcsot a szálloda recepcióján kaptam meg.",
-      "Éjjel a szállodában aludtam."
+      "Éjjel a szállodában aludtam.",
+      "Holnapra foglaltam egy hotelt.",
+      "A szobák ebben a szállodában tágasak, nem igaz?",
+      "Látok egy nagy szállodát ott.",
+      "Az utazás után szállodában szeretnék megszállni."
     ],
     "id": [
       "Saya akan pergi ke hotel besok.",
       "Hotel ini bagus, bukan?",
       "Saya menerima kunci kamar di meja depan hotel.",
-      "Pada malam hari, saya tidur di hotel."
+      "Pada malam hari, saya tidur di hotel.",
+      "Saya memesan hotel untuk besok.",
+      "Kamar-kamar di hotel ini luas, bukan?",
+      "Saya bisa melihat sebuah hotel besar di sana.",
+      "Setelah perjalanan, saya ingin menginap di hotel."
     ],
     "it": [
       "Domani andrò in un albergo.",
       "Questo hotel è carino, non è vero?",
       "Ho ricevuto la chiave della camera alla reception dell'hotel.",
-      "Di notte, dormivo in hotel."
+      "Di notte, dormivo in hotel.",
+      "Ho prenotato un hotel per domani.",
+      "Le camere di questo hotel sono spaziose, vero?",
+      "Vedo un grande hotel laggiù.",
+      "Dopo il viaggio, voglio stare in hotel."
     ],
     "ko": [
       "내일 호텔에 갈 거예요.",
       "이 호텔은 멋지죠?",
       "호텔 프론트 데스크에서 객실 열쇠를 받았습니다.",
-      "밤에는 호텔에서 잤습니다."
+      "밤에는 호텔에서 잤습니다.",
+      "내일 호텔 예약했어.",
+      "이 호텔 방 넓죠?",
+      "저기 큰 호텔이 보여.",
+      "여행 끝나면 호텔에 머물고 싶어."
     ],
     "nb": [
       "Jeg skal til et hotell i morgen.",
       "Dette hotellet er fint, ikke sant?",
       "Jeg mottok romnøkkelen i hotellets resepsjon.",
-      "Om natten sov jeg på hotellet."
+      "Om natten sov jeg på hotellet.",
+      "Jeg har bestilt hotell for i morgen.",
+      "Rommene på dette hotellet er romslige, ikke sant?",
+      "Jeg kan se et stort hotell der borte.",
+      "Etter turen vil jeg bo på hotell."
     ],
     "nl": [
       "Ik ga morgen naar een hotel.",
       "Dit hotel is leuk, nietwaar?",
       "Ik kreeg de kamersleutel bij de receptie van het hotel.",
-      "'s Nachts sliep ik in het hotel."
+      "'s Nachts sliep ik in het hotel.",
+      "Ik heb een hotel geboekt voor morgen.",
+      "De kamers in dit hotel zijn ruim, nietwaar?",
+      "Ik zie daar een groot hotel.",
+      "Na de reis wil ik in een hotel verblijven."
     ],
     "pl": [
       "Jutro jadę do hotelu.",
       "Ten hotel jest ładny, prawda?",
       "Klucz do pokoju otrzymałem w recepcji hotelu.",
-      "W nocy spałem w hotelu."
+      "W nocy spałem w hotelu.",
+      "Zarezerwowałem hotel na jutro.",
+      "Pokoje w tym hotelu są przestronne, prawda?",
+      "Widzę tam duży hotel.",
+      "Po wyjeździe chcę zatrzymać się w hotelu."
     ],
     "pt": [
       "Vou para um hotel amanhã.",
       "Este hotel é bom, não é?",
       "Recebi a chave do quarto na recepção do hotel.",
-      "À noite, dormi no hotel."
+      "À noite, dormi no hotel.",
+      "Reservei um hotel para amanhã.",
+      "Os quartos deste hotel são espaçosos, não são?",
+      "Consigo ver um hotel grande ali.",
+      "Depois da viagem, quero ficar em um hotel."
     ],
     "ro": [
       "Mă duc la un hotel mâine.",
       "Acest hotel este frumos, nu-i așa?",
       "Am primit cheia camerei de la recepția hotelului.",
-      "Noaptea, dormeam la hotel."
+      "Noaptea, dormeam la hotel.",
+      "Am rezervat un hotel pentru mâine.",
+      "Camerele din acest hotel sunt spațioase, nu-i așa?",
+      "Văd un hotel mare acolo.",
+      "După excursie, vreau să stau la hotel."
     ],
     "ru": [
       "Завтра я еду в отель.",
       "Этот отель хороший, не правда ли?",
       "Ключ от номера я получил на стойке регистрации отеля.",
-      "Ночью я спал в отеле."
+      "Ночью я спал в отеле.",
+      "Я забронировал отель на завтра.",
+      "Номера в этом отеле просторные, правда?",
+      "Вижу большой отель вон там.",
+      "После поездки я хочу остановиться в отеле."
     ],
     "sv": [
       "Jag ska in på hotell imorgon.",
       "Det här hotellet är trevligt, eller hur?",
       "Jag fick rumsnyckeln i hotellets reception.",
-      "På nätterna sov jag på hotellet."
+      "På nätterna sov jag på hotellet.",
+      "Jag bokade hotell för imorgon.",
+      "Rummen på det här hotellet är rymliga, eller hur?",
+      "Jag kan se ett stort hotell där borta.",
+      "Efter resan vill jag bo på hotell."
     ],
     "tr": [
       "Yarın bir otele gidiyorum.",
       "Bu otel güzel, değil mi?",
       "Otelin resepsiyonunda oda anahtarını aldım.",
-      "Geceleri otelde uyudum."
+      "Geceleri otelde uyudum.",
+      "Yarın için otel ayırttım.",
+      "Bu oteldeki odalar geniş, değil mi?",
+      "Orada büyük bir otel görebiliyorum.",
+      "Yolculuktan sonra bir otelde kalmak istiyorum."
     ],
     "uk": [
       "Завтра я їду в готель.",
       "Цей готель гарний, чи не так?",
       "Ключ від номера я отримав на рецепції готелю.",
-      "Вночі я спав у готелі."
+      "Вночі я спав у готелі.",
+      "Я забронював готель на завтра.",
+      "Номери в цьому готелі просторі, чи не так?",
+      "Я бачу великий готель там.",
+      "Після поїздки я хочу зупинитися в готелі."
     ],
     "vi": [
       "Tôi sẽ đến một khách sạn vào ngày mai.",
       "Khách sạn này rất đẹp, phải không?",
       "Tôi nhận chìa khóa phòng tại quầy lễ tân của khách sạn.",
-      "Vào ban đêm, tôi ngủ ở khách sạn."
+      "Vào ban đêm, tôi ngủ ở khách sạn.",
+      "Tôi đã đặt một khách sạn cho ngày mai.",
+      "Các phòng trong khách sạn này rất rộng rãi, phải không?",
+      "Tôi có thể thấy một khách sạn lớn ở đó.",
+      "Sau chuyến đi, tôi muốn ở khách sạn."
     ],
     "yue": [
       "我聽日要去一家酒店。",
       "呢間酒店唔錯，唔系吗？",
       "我喺酒店前台收到了房間鎖匙。",
-      "晚上，我瞓喺酒店度。"
+      "晚上，我瞓喺酒店度。",
+      "我訂咗聽日嘅酒店。",
+      "呢間酒店嘅房間好大，係咪？",
+      "我可以睇到嗰邊有間大酒店。",
+      "旅行完想住酒店"
     ],
     "zh-Hans": [
       "我明天要去一家酒店。",
       "这家酒店不错，不是吗？",
       "我在酒店前台收到了房间钥匙。",
-      "晚上，我睡在酒店里。"
+      "晚上，我睡在酒店里。",
+      "我订了明天的酒店。",
+      "这家酒店的房间很宽敞，不是吗？",
+      "我能看到那边有家大酒店。",
+      "旅行结束后，我想住酒店。"
     ]
   }
 }
