@@ -221,10 +221,10 @@
       "difficulty": 5.33
     },
     {
-      "target": "Wir verabreden am Freitag ein Treffen.",
+      "target": "Wir verabreden ein Treffen für Freitag.",
       "reading": "/viːɐ̯ fɛɐ̯ˈapʁeːdn̩ am ˈfʁaɪ̯taːk aɪ̯n ˈtʁɛfn̩/",
       "translations": {
-        "de": "Wir verabreden am Freitag ein Treffen.",
+        "de": "Wir verabreden ein Treffen für Freitag.",
         "ipa": "/viːɐ̯ fɛɐ̯ˈapʁeːdn̩ am ˈfʁaɪ̯taːk aɪ̯n ˈtʁɛfn̩/",
         "en": "We’re arranging a meeting for Friday.",
         "es": "Estamos organizando vernos el viernes.",
@@ -239,7 +239,7 @@
         "tr": "Cuma için bir buluşma ayarlıyoruz.",
         "vi": "Bọn mình đang hẹn gặp vào thứ Sáu.",
         "ar": "نحن نرتب لقاءً ليوم الجمعة.",
-        "nl": "We maken een afspraak pentru vrijdag.",
+        "nl": "We maken een afspraak voor vrijdag.",
         "uk": "Ми домовляємося про зустріч на п’ятницю.",
         "hu": "Péntekre egyeztetünk egy találkozót.",
         "hi": "हम शुक्रवार के लिए मिलने का समय तय कर रहे हैं.",
@@ -257,58 +257,81 @@
       "tokens": [
         {
           "surface": "Wir",
-          "surface_en": "we",
-          "furigana": "[viːɐ̯]",
-          "pos": "PRON",
           "lemma": "wir",
-          "explanation": "Personal pronoun, 1st person plural nominative; clausal subject.",
-          "difficulty": 2
+          "pos": "PRON",
+          "upos": "PRON",
+          "xpos": "PPER",
+          "feats": {},
+          "start": 0,
+          "end": 3,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "verabreden",
-          "surface_en": "arrange to meet",
-          "furigana": "[fɛɐ̯ˈʔapʁeːdn̩]",
-          "pos": "VERB",
           "lemma": "verabreden",
-          "explanation": "Finite main verb, present tense (1pl); here used transitively (non‑reflexive) with a direct object.",
-          "difficulty": 10,
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VVFIN",
+          "feats": {},
+          "start": 4,
+          "end": 14,
+          "analyzer": "spacy_de_core_news_lg",
           "is_main_word": true
         },
         {
-          "surface": "am",
-          "surface_en": "on the",
-          "furigana": "[am]",
+          "surface": "ein",
+          "lemma": "ein",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "ART",
+          "feats": {},
+          "start": 15,
+          "end": 18,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "Treffen",
+          "lemma": "Treffen",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 19,
+          "end": 26,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "für",
+          "lemma": "für",
           "pos": "ADP",
-          "lemma": "an",
-          "explanation": "Contracted preposition ('an' + 'dem'); heads a temporal prepositional phrase.",
-          "difficulty": 2
+          "upos": "ADP",
+          "xpos": "APPR",
+          "feats": {},
+          "start": 27,
+          "end": 30,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "Freitag",
-          "surface_en": "Friday",
-          "furigana": "[ˈfʁaɪ̯taːk]",
-          "pos": "PROPN",
           "lemma": "Freitag",
-          "explanation": "Proper noun; object of the preposition 'am' (dative); temporal adjunct.",
-          "difficulty": 10
-        },
-        {
-          "surface": "ein",
-          "surface_en": "a",
-          "furigana": "[aɪ̯n]",
-          "pos": "DET",
-          "lemma": "ein",
-          "explanation": "Indefinite article, accusative singular; determiner of 'Treffen'.",
-          "difficulty": 2
-        },
-        {
-          "surface": "Treffen.",
-          "surface_en": "meeting",
-          "furigana": "[ˈtʁɛfn̩]",
           "pos": "NOUN",
-          "lemma": "Treffen",
-          "explanation": "Common noun, accusative singular; direct object of 'verabreden'.",
-          "difficulty": 10
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 31,
+          "end": 38,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 38,
+          "end": 39,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 6
@@ -430,19 +453,289 @@
     "content_reviewers": [
       "mediawiki-visible-revision"
     ],
-    "last_reviewed_utc": "2026-06-12T11:53:14Z",
-    "approval_source": "mediawiki_visible_revision",
+    "last_reviewed_utc": "2026-10-14T22:07:11Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
     "wiki": {
       "title": "Item:De a2/932c98a67a3716d9",
-      "revision_id": 14828,
-      "parent_revision_id": 1364,
-      "revision_timestamp_utc": "2026-06-12T11:53:14Z",
-      "revision_user": "VocomiBot",
-      "revision_comment": "Sync de_a2 item verabreden",
-      "pulled_utc": "2026-06-22T08:19:06Z",
-      "applied_utc": "2026-06-22T08:19:14Z",
+      "revision_id": 86109,
+      "parent_revision_id": 59634,
+      "revision_timestamp_utc": "2026-10-14T22:07:11Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Content review: German and translation corrections",
+      "pulled_utc": "2026-10-17T07:00:42Z",
+      "applied_utc": "2026-10-17T07:00:50Z",
       "applied_by": "vocomipedia-apply-pulled"
-    }
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-5229ea7453ea3319",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_a2:932c98a67a3716d9",
+        "pack_code": "de_a2",
+        "entry_id": "verabreden",
+        "language": "de",
+        "sentence_index": 3,
+        "old_sentence": "Wir verabreden am Freitag ein Treffen.",
+        "old_translations": {
+          "de": "Wir verabreden am Freitag ein Treffen.",
+          "ipa": "/viːɐ̯ fɛɐ̯ˈapʁeːdn̩ am ˈfʁaɪ̯taːk aɪ̯n ˈtʁɛfn̩/",
+          "en": "We’re arranging a meeting for Friday.",
+          "es": "Estamos organizando vernos el viernes.",
+          "fr": "On organise un rendez-vous pour vendredi.",
+          "it": "Stiamo fissando un incontro per venerdì.",
+          "ko": "우리는 금요일에 만날 약속을 잡고 있어.",
+          "zh-Hans": "我们正在安排周五见面。",
+          "yue": "我哋正安排星期五見面。",
+          "ru": "Мы договариваемся о встрече на пятницу.",
+          "pt": "Estamos combinando um encontro para sexta-feira.",
+          "he": "אנחנו קובעים פגישה ליום שישי.",
+          "tr": "Cuma için bir buluşma ayarlıyoruz.",
+          "vi": "Bọn mình đang hẹn gặp vào thứ Sáu.",
+          "ar": "نحن نرتب لقاءً ليوم الجمعة.",
+          "nl": "We maken een afspraak pentru vrijdag.",
+          "uk": "Ми домовляємося про зустріч на п’ятницю.",
+          "hu": "Péntekre egyeztetünk egy találkozót.",
+          "hi": "हम शुक्रवार के लिए मिलने का समय तय कर रहे हैं.",
+          "pl": "Ustalamy spotkanie na piątek.",
+          "el": "Κανονίζουμε μια συνάντηση για την Παρασκευή.",
+          "nb": "Vi avtaler et møte til fredag.",
+          "id": "Kami sedang janjian untuk hari Jumat.",
+          "sv": "Vi bestämmer en träff till på fredag.",
+          "ro": "Stabilim o întâlnire pentru vineri.",
+          "cs": "Domlouváme si schůzku na pátek.",
+          "da": "Vi aftaler et møde til fredag.",
+          "fi": "Sovimme tapaamisen perjantaiksi.",
+          "ja": "金曜日に会う約束をしている。"
+        },
+        "proposed_sentence": "Wir verabreden ein Treffen für Freitag.",
+        "proposed_translations": {
+          "de": "Wir verabreden ein Treffen für Freitag.",
+          "ipa": "/viːɐ̯ fɛɐ̯ˈapʁeːdn̩ am ˈfʁaɪ̯taːk aɪ̯n ˈtʁɛfn̩/",
+          "en": "We’re arranging a meeting for Friday.",
+          "es": "Estamos organizando vernos el viernes.",
+          "fr": "On organise un rendez-vous pour vendredi.",
+          "it": "Stiamo fissando un incontro per venerdì.",
+          "ko": "우리는 금요일에 만날 약속을 잡고 있어.",
+          "zh-Hans": "我们正在安排周五见面。",
+          "yue": "我哋正安排星期五見面。",
+          "ru": "Мы договариваемся о встрече на пятницу.",
+          "pt": "Estamos combinando um encontro para sexta-feira.",
+          "he": "אנחנו קובעים פגישה ליום שישי.",
+          "tr": "Cuma için bir buluşma ayarlıyoruz.",
+          "vi": "Bọn mình đang hẹn gặp vào thứ Sáu.",
+          "ar": "نحن نرتب لقاءً ليوم الجمعة.",
+          "nl": "We maken een afspraak voor vrijdag.",
+          "uk": "Ми домовляємося про зустріч на п’ятницю.",
+          "hu": "Péntekre egyeztetünk egy találkozót.",
+          "hi": "हम शुक्रवार के लिए मिलने का समय तय कर रहे हैं.",
+          "pl": "Ustalamy spotkanie na piątek.",
+          "el": "Κανονίζουμε μια συνάντηση για την Παρασκευή.",
+          "nb": "Vi avtaler et møte til fredag.",
+          "id": "Kami sedang janjian untuk hari Jumat.",
+          "sv": "Vi bestämmer en träff till på fredag.",
+          "ro": "Stabilim o întâlnire pentru vineri.",
+          "cs": "Domlouváme si schůzku na pátek.",
+          "da": "Vi aftaler et møde til fredag.",
+          "fi": "Sovimme tapaamisen perjantaiksi.",
+          "ja": "金曜日に会う約束をしている。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Wir verabreden ein Treffen für Freitag.",
+        "old_japanese": "Wir verabreden am Freitag ein Treffen.",
+        "old_english": "We’re arranging a meeting for Friday.",
+        "proposed_japanese": "Wir verabreden ein Treffen für Freitag.",
+        "proposed_english": "We’re arranging a meeting for Friday.",
+        "reason": "Place the date with the meeting being arranged so the German sentence clearly means the meeting is scheduled for Friday.",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Wir verabreden ein Treffen für Freitag.",
+          "tokens": [
+            {
+              "surface": "Wir",
+              "lemma": "wir",
+              "pos": "PRON",
+              "upos": "PRON",
+              "xpos": "PPER",
+              "feats": {},
+              "start": 0,
+              "end": 3,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "verabreden",
+              "lemma": "verabreden",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVFIN",
+              "feats": {},
+              "start": 4,
+              "end": 14,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "ein",
+              "lemma": "ein",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "ART",
+              "feats": {},
+              "start": 15,
+              "end": 18,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Treffen",
+              "lemma": "Treffen",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 19,
+              "end": 26,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "für",
+              "lemma": "für",
+              "pos": "ADP",
+              "upos": "ADP",
+              "xpos": "APPR",
+              "feats": {},
+              "start": 27,
+              "end": 30,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Freitag",
+              "lemma": "Freitag",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 31,
+              "end": 38,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 38,
+              "end": 39,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Wir",
+            "lemma": "wir",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "verabreden",
+            "lemma": "verabreden",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 4,
+            "end": 14,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "ein",
+            "lemma": "ein",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 15,
+            "end": 18,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Treffen",
+            "lemma": "Treffen",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 19,
+            "end": 26,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "für",
+            "lemma": "für",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 27,
+            "end": 30,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Freitag",
+            "lemma": "Freitag",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 31,
+            "end": 38,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 38,
+            "end": 39,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:00:42Z",
+        "updated_utc": "2026-10-17T07:01:00Z",
+        "applied_utc": "2026-10-17T07:01:00Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:01:00Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -582,62 +875,85 @@
         "difficulty_aggregated": 5.33
       },
       {
-        "sentence": "Wir verabreden am Freitag ein Treffen.",
+        "sentence": "Wir verabreden ein Treffen für Freitag.",
         "tokens": [
           {
             "surface": "Wir",
-            "surface_en": "we",
-            "furigana": "[viːɐ̯]",
-            "pos": "PRON",
             "lemma": "wir",
-            "explanation": "Personal pronoun, 1st person plural nominative; clausal subject.",
-            "difficulty": 2
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "verabreden",
-            "surface_en": "arrange to meet",
-            "furigana": "[fɛɐ̯ˈʔapʁeːdn̩]",
-            "pos": "VERB",
             "lemma": "verabreden",
-            "explanation": "Finite main verb, present tense (1pl); here used transitively (non‑reflexive) with a direct object.",
-            "difficulty": 10,
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 4,
+            "end": 14,
+            "analyzer": "spacy_de_core_news_lg",
             "is_main_word": true
           },
           {
-            "surface": "am",
-            "surface_en": "on the",
-            "furigana": "[am]",
+            "surface": "ein",
+            "lemma": "ein",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 15,
+            "end": 18,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Treffen",
+            "lemma": "Treffen",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 19,
+            "end": 26,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "für",
+            "lemma": "für",
             "pos": "ADP",
-            "lemma": "an",
-            "explanation": "Contracted preposition ('an' + 'dem'); heads a temporal prepositional phrase.",
-            "difficulty": 2
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 27,
+            "end": 30,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "Freitag",
-            "surface_en": "Friday",
-            "furigana": "[ˈfʁaɪ̯taːk]",
-            "pos": "PROPN",
             "lemma": "Freitag",
-            "explanation": "Proper noun; object of the preposition 'am' (dative); temporal adjunct.",
-            "difficulty": 10
-          },
-          {
-            "surface": "ein",
-            "surface_en": "a",
-            "furigana": "[aɪ̯n]",
-            "pos": "DET",
-            "lemma": "ein",
-            "explanation": "Indefinite article, accusative singular; determiner of 'Treffen'.",
-            "difficulty": 2
-          },
-          {
-            "surface": "Treffen.",
-            "surface_en": "meeting",
-            "furigana": "[ˈtʁɛfn̩]",
             "pos": "NOUN",
-            "lemma": "Treffen",
-            "explanation": "Common noun, accusative singular; direct object of 'verabreden'.",
-            "difficulty": 10
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 31,
+            "end": 38,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 38,
+            "end": 39,
+            "analyzer": "spacy_de_core_news_lg"
           }
         ],
         "difficulty_aggregated": 6

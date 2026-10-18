@@ -44,12 +44,12 @@
   },
   "sentences": [
     {
-      "target": "Im neuen Büro ist mir heute wohl.",
+      "target": "Im neuen Büro fühle ich mich heute wohl.",
       "reading": "/ɪm ˈnɔʏən byːˈʁoː ɪst miːɐ̯ ˈhɔʏtə voːl/",
       "translations": {
-        "de": "Im neuen Büro ist mir heute wohl.",
+        "de": "Im neuen Büro fühle ich mich heute wohl.",
         "ipa": "/ɪm ˈnɔʏən byːˈʁoː ɪst miːɐ̯ ˈhɔʏtə voːl/",
-        "en": "I feel well today in the new office.",
+        "en": "I feel comfortable in the new office today.",
         "es": "Hoy me siento bien en la oficina nueva.",
         "fr": "Aujourd'hui, je me sens bien dans le nouveau bureau.",
         "it": "Oggi mi sento bene nel nuovo ufficio.",
@@ -80,67 +80,103 @@
       "tokens": [
         {
           "surface": "Im",
-          "surface_en": "in the",
-          "furigana": "[ɪm]",
-          "pos": "ADP",
           "lemma": "in",
-          "explanation": "Contracted preposition ('in dem'); heads a locative PP and governs dative.",
-          "difficulty": 2
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "APPRART",
+          "feats": {},
+          "start": 0,
+          "end": 2,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "neuen",
-          "surface_en": "new",
-          "furigana": "[ˈnɔʏ̯ən]",
-          "pos": "ADJ",
           "lemma": "neu",
-          "explanation": "Attributive adjective in dative neuter singular with weak -en after definite article; modifies 'Büro'.",
-          "difficulty": 7
+          "pos": "ADJ",
+          "upos": "ADJ",
+          "xpos": "ADJA",
+          "feats": {},
+          "start": 3,
+          "end": 8,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "Büro",
-          "surface_en": "office",
-          "furigana": "[byˈʁoː]",
-          "pos": "NOUN",
           "lemma": "Büro",
-          "explanation": "Neuter noun in dative singular as object of 'Im'; locative complement.",
-          "difficulty": 7
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 9,
+          "end": 13,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "ist",
-          "surface_en": "is",
-          "furigana": "[ɪst]",
-          "pos": "AUX",
-          "lemma": "sein",
-          "explanation": "Copula (present 3sg) linking the predicative complement 'wohl' to the clause.",
-          "difficulty": 4
+          "surface": "fühle",
+          "lemma": "fühlen",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VVFIN",
+          "feats": {},
+          "start": 14,
+          "end": 19,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "mir",
-          "surface_en": "to me",
-          "furigana": "[miːɐ̯]",
-          "pos": "PRON",
+          "surface": "ich",
           "lemma": "ich",
-          "explanation": "1st person singular pronoun in dative; experiencer of the state.",
-          "difficulty": 4
+          "pos": "PRON",
+          "upos": "PRON",
+          "xpos": "PPER",
+          "feats": {},
+          "start": 20,
+          "end": 23,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "mich",
+          "lemma": "sich",
+          "pos": "PRON",
+          "upos": "PRON",
+          "xpos": "PRF",
+          "feats": {},
+          "start": 24,
+          "end": 28,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "heute",
-          "surface_en": "today",
-          "furigana": "[ˈhɔʏ̯tə]",
-          "pos": "ADV",
           "lemma": "heute",
-          "explanation": "Temporal adverb modifying the clause.",
-          "difficulty": 7
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "ADV",
+          "feats": {},
+          "start": 29,
+          "end": 34,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "wohl.",
-          "surface_en": "well",
-          "furigana": "[voːl]",
-          "pos": "ADJ",
+          "surface": "wohl",
           "lemma": "wohl",
-          "explanation": "Predicative adjective meaning 'feels well/comfortable'; complement of 'ist'.",
-          "difficulty": 7,
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "ADV",
+          "feats": {},
+          "start": 35,
+          "end": 39,
+          "analyzer": "spacy_de_core_news_lg",
           "is_main_word": true
+        },
+        {
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 39,
+          "end": 40,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 5.43
@@ -463,8 +499,336 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-15T05:56:56Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:De b1/608276eb15de7cbb",
+      "revision_id": 84759,
+      "parent_revision_id": 18522,
+      "revision_timestamp_utc": "2026-10-15T05:56:56Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Made the first German sentence more idiomatic and clarified that wohl means feeling comfortable in the office.",
+      "pulled_utc": "2026-10-17T07:06:39Z",
+      "applied_utc": "2026-10-17T07:06:54Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-4623248e102385f0",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_b1:608276eb15de7cbb",
+        "pack_code": "de_b1",
+        "entry_id": "wohl",
+        "language": "de",
+        "sentence_index": 1,
+        "old_sentence": "Im neuen Büro ist mir heute wohl.",
+        "old_translations": {
+          "de": "Im neuen Büro ist mir heute wohl.",
+          "ipa": "/ɪm ˈnɔʏən byːˈʁoː ɪst miːɐ̯ ˈhɔʏtə voːl/",
+          "en": "I feel well today in the new office.",
+          "es": "Hoy me siento bien en la oficina nueva.",
+          "fr": "Aujourd'hui, je me sens bien dans le nouveau bureau.",
+          "it": "Oggi mi sento bene nel nuovo ufficio.",
+          "ko": "오늘 새 사무실에서 기분이 좋아요.",
+          "zh-Hans": "我今天在新办公室感觉很好。",
+          "yue": "我今日喺新辦公室覺得好舒服。",
+          "ru": "Сегодня я чувствую себя хорошо в новом офисе.",
+          "pt": "Hoje me sinto bem no novo escritório.",
+          "he": "היום טוב לי במשרד החדש.",
+          "tr": "Bugün yeni ofiste kendimi iyi hissediyorum.",
+          "vi": "Hôm nay tôi thấy thoải mái ở văn phòng mới.",
+          "ar": "اليوم أشعر بالارتياح في المكتب الجديد.",
+          "nl": "Vandaag voel ik me goed op het nieuwe kantoor.",
+          "uk": "Сьогодні я почуваюся добре в новому офісі.",
+          "hu": "Ma jól érzem magam az új irodában.",
+          "hi": "आज मुझे नए ऑफिस में अच्छा लग रहा है.",
+          "pl": "Dziś czuję się dobrze w nowym biurze.",
+          "el": "Σήμερα νιώθω καλά στο νέο γραφείο.",
+          "nb": "I dag føler jeg meg bra på det nye kontoret.",
+          "id": "Hari ini aku merasa nyaman di kantor baru.",
+          "sv": "I dag mår jag bra på det nya kontoret.",
+          "ro": "Astăzi mă simt bine la noul birou.",
+          "cs": "Dnes se cítím dobře v nové kanceláři.",
+          "da": "I dag har jeg det godt på det nye kontor.",
+          "fi": "Tänään voin hyvin uudessa toimistossa.",
+          "ja": "今日は新しいオフィスで気分がいいです。"
+        },
+        "proposed_sentence": "Im neuen Büro fühle ich mich heute wohl.",
+        "proposed_translations": {
+          "de": "Im neuen Büro fühle ich mich heute wohl.",
+          "ipa": "/ɪm ˈnɔʏən byːˈʁoː ɪst miːɐ̯ ˈhɔʏtə voːl/",
+          "en": "I feel comfortable in the new office today.",
+          "es": "Hoy me siento bien en la oficina nueva.",
+          "fr": "Aujourd'hui, je me sens bien dans le nouveau bureau.",
+          "it": "Oggi mi sento bene nel nuovo ufficio.",
+          "ko": "오늘 새 사무실에서 기분이 좋아요.",
+          "zh-Hans": "我今天在新办公室感觉很好。",
+          "yue": "我今日喺新辦公室覺得好舒服。",
+          "ru": "Сегодня я чувствую себя хорошо в новом офисе.",
+          "pt": "Hoje me sinto bem no novo escritório.",
+          "he": "היום טוב לי במשרד החדש.",
+          "tr": "Bugün yeni ofiste kendimi iyi hissediyorum.",
+          "vi": "Hôm nay tôi thấy thoải mái ở văn phòng mới.",
+          "ar": "اليوم أشعر بالارتياح في المكتب الجديد.",
+          "nl": "Vandaag voel ik me goed op het nieuwe kantoor.",
+          "uk": "Сьогодні я почуваюся добре в новому офісі.",
+          "hu": "Ma jól érzem magam az új irodában.",
+          "hi": "आज मुझे नए ऑफिस में अच्छा लग रहा है.",
+          "pl": "Dziś czuję się dobrze w nowym biurze.",
+          "el": "Σήμερα νιώθω καλά στο νέο γραφείο.",
+          "nb": "I dag føler jeg meg bra på det nye kontoret.",
+          "id": "Hari ini aku merasa nyaman di kantor baru.",
+          "sv": "I dag mår jag bra på det nya kontoret.",
+          "ro": "Astăzi mă simt bine la noul birou.",
+          "cs": "Dnes se cítím dobře v nové kanceláři.",
+          "da": "I dag har jeg det godt på det nye kontor.",
+          "fi": "Tänään voin hyvin uudessa toimistossa.",
+          "ja": "今日は新しいオフィスで気分がいいです。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Im neuen Büro fühle ich mich heute wohl.",
+        "old_japanese": "Im neuen Büro ist mir heute wohl.",
+        "old_english": "I feel well today in the new office.",
+        "proposed_japanese": "Im neuen Büro fühle ich mich heute wohl.",
+        "proposed_english": "I feel comfortable in the new office today.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Im neuen Büro fühle ich mich heute wohl.",
+          "tokens": [
+            {
+              "surface": "Im",
+              "lemma": "in",
+              "pos": "ADP",
+              "upos": "ADP",
+              "xpos": "APPRART",
+              "feats": {},
+              "start": 0,
+              "end": 2,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "neuen",
+              "lemma": "neu",
+              "pos": "ADJ",
+              "upos": "ADJ",
+              "xpos": "ADJA",
+              "feats": {},
+              "start": 3,
+              "end": 8,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Büro",
+              "lemma": "Büro",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 9,
+              "end": 13,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "fühle",
+              "lemma": "fühlen",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVFIN",
+              "feats": {},
+              "start": 14,
+              "end": 19,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "ich",
+              "lemma": "ich",
+              "pos": "PRON",
+              "upos": "PRON",
+              "xpos": "PPER",
+              "feats": {},
+              "start": 20,
+              "end": 23,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "mich",
+              "lemma": "sich",
+              "pos": "PRON",
+              "upos": "PRON",
+              "xpos": "PRF",
+              "feats": {},
+              "start": 24,
+              "end": 28,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "heute",
+              "lemma": "heute",
+              "pos": "ADV",
+              "upos": "ADV",
+              "xpos": "ADV",
+              "feats": {},
+              "start": 29,
+              "end": 34,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "wohl",
+              "lemma": "wohl",
+              "pos": "ADV",
+              "upos": "ADV",
+              "xpos": "ADV",
+              "feats": {},
+              "start": 35,
+              "end": 39,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 39,
+              "end": 40,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Im",
+            "lemma": "in",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPRART",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "neuen",
+            "lemma": "neu",
+            "pos": "ADJ",
+            "upos": "ADJ",
+            "xpos": "ADJA",
+            "feats": {},
+            "start": 3,
+            "end": 8,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Büro",
+            "lemma": "Büro",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 9,
+            "end": 13,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "fühle",
+            "lemma": "fühlen",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 14,
+            "end": 19,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "ich",
+            "lemma": "ich",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 20,
+            "end": 23,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "mich",
+            "lemma": "sich",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PRF",
+            "feats": {},
+            "start": 24,
+            "end": 28,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "heute",
+            "lemma": "heute",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 29,
+            "end": 34,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "wohl",
+            "lemma": "wohl",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 35,
+            "end": 39,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 39,
+            "end": 40,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:06:39Z",
+        "updated_utc": "2026-10-17T07:07:06Z",
+        "applied_utc": "2026-10-17T07:07:06Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:07:06Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -476,34 +840,6 @@
     "word": "wohl",
     "word_reading": "",
     "word_label": "Adjektiv",
-    "word_en": "probably; well",
-    "word_es": "probablemente; bien",
-    "word_fr": "probablement; bien",
-    "word_it": "probabilmente; bene",
-    "word_ko": "아마; 잘",
-    "word_zh-Hans": "大概; 感觉好",
-    "word_yue": "大概; 舒服",
-    "word_ru": "вероятно; хорошо",
-    "word_pt": "provavelmente; bem",
-    "word_he": "כנראה; טוב",
-    "word_tr": "muhtemelen; iyi",
-    "word_vi": "có lẽ; thoải mái",
-    "word_ar": "على الأرجح; بخير",
-    "word_nl": "waarschijnlijk; goed",
-    "word_uk": "ймовірно; добре",
-    "word_hu": "valószínűleg; jól",
-    "word_hi": "शायद; अच्छा",
-    "word_pl": "prawdopodobnie; dobrze",
-    "word_el": "μάλλον; καλά",
-    "word_nb": "sannsynligvis; bra",
-    "word_id": "mungkin; baik",
-    "word_sv": "troligen; bra",
-    "word_ro": "probabil; bine",
-    "word_cs": "pravděpodobně; dobře",
-    "word_da": "sandsynligvis; godt",
-    "word_fi": "todennäköisesti; hyvin",
-    "word_ja": "おそらく; 具合がいい",
-    "word_de": "wohl",
     "comic_difficulty": 5.1,
     "jp": [
       "Im neuen Büro ist mir heute wohl.",
@@ -517,91 +853,109 @@
       "/diː ˈkɪndɐ ˈfyːlən zɪç voːl baɪ ˈoːma/",
       "/iːɐ̯ ɪst jɛtst ʃoːn ˈviːdɐ voːl/"
     ],
-    "de": [
-      "Im neuen Büro ist mir heute wohl.",
-      "Ihm ist nicht wohl nach dem langen Flug.",
-      "Die Kinder fühlen sich wohl bei Oma.",
-      "Ihr ist jetzt schon wieder wohl."
-    ],
-    "ipa": [
-      "/ɪm ˈnɔʏən byːˈʁoː ɪst miːɐ̯ ˈhɔʏtə voːl/",
-      "/iːm ɪst nɪçt voːl naːx deːm ˈlaŋən fluːk/",
-      "/diː ˈkɪndɐ ˈfyːlən zɪç voːl baɪ ˈoːma/",
-      "/iːɐ̯ ɪst jɛtst ʃoːn ˈviːdɐ voːl/"
-    ],
-    "en": [
-      "I feel well today in the new office.",
-      "He feels unwell after the long flight.",
-      "The kids feel comfortable at Grandma’s.",
-      "She is already feeling well again."
-    ],
     "pos_analysis": [
       {
-        "sentence": "Im neuen Büro ist mir heute wohl.",
+        "sentence": "Im neuen Büro fühle ich mich heute wohl.",
         "tokens": [
           {
             "surface": "Im",
-            "surface_en": "in the",
-            "furigana": "[ɪm]",
-            "pos": "ADP",
             "lemma": "in",
-            "explanation": "Contracted preposition ('in dem'); heads a locative PP and governs dative.",
-            "difficulty": 2
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPRART",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "neuen",
-            "surface_en": "new",
-            "furigana": "[ˈnɔʏ̯ən]",
-            "pos": "ADJ",
             "lemma": "neu",
-            "explanation": "Attributive adjective in dative neuter singular with weak -en after definite article; modifies 'Büro'.",
-            "difficulty": 7
+            "pos": "ADJ",
+            "upos": "ADJ",
+            "xpos": "ADJA",
+            "feats": {},
+            "start": 3,
+            "end": 8,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "Büro",
-            "surface_en": "office",
-            "furigana": "[byˈʁoː]",
-            "pos": "NOUN",
             "lemma": "Büro",
-            "explanation": "Neuter noun in dative singular as object of 'Im'; locative complement.",
-            "difficulty": 7
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 9,
+            "end": 13,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "ist",
-            "surface_en": "is",
-            "furigana": "[ɪst]",
-            "pos": "AUX",
-            "lemma": "sein",
-            "explanation": "Copula (present 3sg) linking the predicative complement 'wohl' to the clause.",
-            "difficulty": 4
+            "surface": "fühle",
+            "lemma": "fühlen",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 14,
+            "end": 19,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "mir",
-            "surface_en": "to me",
-            "furigana": "[miːɐ̯]",
-            "pos": "PRON",
+            "surface": "ich",
             "lemma": "ich",
-            "explanation": "1st person singular pronoun in dative; experiencer of the state.",
-            "difficulty": 4
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 20,
+            "end": 23,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "mich",
+            "lemma": "sich",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PRF",
+            "feats": {},
+            "start": 24,
+            "end": 28,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "heute",
-            "surface_en": "today",
-            "furigana": "[ˈhɔʏ̯tə]",
-            "pos": "ADV",
             "lemma": "heute",
-            "explanation": "Temporal adverb modifying the clause.",
-            "difficulty": 7
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 29,
+            "end": 34,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "wohl.",
-            "surface_en": "well",
-            "furigana": "[voːl]",
-            "pos": "ADJ",
+            "surface": "wohl",
             "lemma": "wohl",
-            "explanation": "Predicative adjective meaning 'feels well/comfortable'; complement of 'ist'.",
-            "difficulty": 7,
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 35,
+            "end": 39,
+            "analyzer": "spacy_de_core_news_lg",
             "is_main_word": true
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 39,
+            "end": 40,
+            "analyzer": "spacy_de_core_news_lg"
           }
         ],
         "difficulty_aggregated": 5.43
@@ -817,137 +1171,41 @@
         "difficulty_aggregated": 4.83
       }
     ],
-    "es": [
-      "Hoy me siento bien en la oficina nueva.",
-      "Se siente mal después del vuelo largo.",
-      "Los niños están a gusto en casa de la abuela.",
-      "Ya se siente bien otra vez."
-    ],
-    "fr": [
-      "Aujourd'hui, je me sens bien dans le nouveau bureau.",
-      "Il ne se sent pas bien après le long vol.",
-      "Les enfants sont à l'aise chez leur grand-mère.",
-      "Elle va déjà mieux."
-    ],
-    "it": [
-      "Oggi mi sento bene nel nuovo ufficio.",
-      "Si sente male dopo il lungo volo.",
-      "I bambini stanno bene a casa della nonna.",
-      "Si sente già meglio."
-    ],
-    "ko": [
-      "오늘 새 사무실에서 기분이 좋아요.",
-      "긴 비행 후 그는 몸이 안 좋아요.",
-      "아이들은 할머니 집에서 편해요.",
-      "이제 다시 괜찮아졌어요."
-    ],
-    "zh-Hans": [
-      "我今天在新办公室感觉很好。",
-      "长途飞行后他觉得不舒服。",
-      "孩子们在奶奶家很自在。",
-      "她现在已经又觉得舒服了。"
-    ],
-    "yue": [
-      "我今日喺新辦公室覺得好舒服。",
-      "長途飛行之後佢覺得唔舒服。",
-      "啲細路喺阿嫲屋企覺得好舒服。",
-      "佢而家已經又覺得舒服喇。"
-    ],
-    "ru": [
-      "Сегодня я чувствую себя хорошо в новом офисе.",
-      "После долгого перелёта ему нехорошо.",
-      "Детям хорошо у бабушки.",
-      "Ей уже снова хорошо."
-    ],
-    "pt": [
-      "Hoje me sinto bem no novo escritório.",
-      "Ele está se sentindo mal após o longo voo.",
-      "As crianças se sentem à vontade na casa da avó.",
-      "Ela já está se sentindo bem de novo."
-    ],
-    "he": [
-      "היום טוב לי במשרד החדש.",
-      "אחרי הטיסה הארוכה הוא מרגיש לא טוב.",
-      "הילדים מרגישים בנוח אצל סבתא.",
-      "היא כבר שוב מרגישה טוב."
-    ],
-    "tr": [
-      "Bugün yeni ofiste kendimi iyi hissediyorum.",
-      "Uzun uçuştan sonra kendini iyi hissetmiyor.",
-      "Çocuklar büyükannelerinin evinde kendilerini rahat hissediyorlar.",
-      "O artık yine kendini iyi hissediyor."
-    ],
-    "vi": [
-      "Hôm nay tôi thấy thoải mái ở văn phòng mới.",
-      "Sau chuyến bay dài, anh ấy thấy không khỏe.",
-      "Bọn trẻ thấy thoải mái ở nhà bà.",
-      "Bây giờ cô ấy đã khỏe lại rồi."
-    ],
+    "word_POS": "Adverb",
+    "entry_id": "wohl",
+    "word_en": "probably; well",
+    "word_es": "probablemente; bien",
+    "word_fr": "probablement; bien",
+    "word_it": "probabilmente; bene",
+    "word_ko": "아마; 잘",
+    "word_zh-Hans": "大概; 感觉好",
+    "word_yue": "大概; 舒服",
+    "word_ru": "вероятно; хорошо",
+    "word_pt": "provavelmente; bem",
+    "word_he": "כנראה; טוב",
+    "word_tr": "muhtemelen; iyi",
+    "word_vi": "có lẽ; thoải mái",
+    "word_ar": "على الأرجح; بخير",
+    "word_nl": "waarschijnlijk; goed",
+    "word_uk": "ймовірно; добре",
+    "word_hu": "valószínűleg; jól",
+    "word_hi": "शायद; अच्छा",
+    "word_pl": "prawdopodobnie; dobrze",
+    "word_el": "μάλλον; καλά",
+    "word_nb": "sannsynligvis; bra",
+    "word_id": "mungkin; baik",
+    "word_sv": "troligen; bra",
+    "word_ro": "probabil; bine",
+    "word_cs": "pravděpodobně; dobře",
+    "word_da": "sandsynligvis; godt",
+    "word_fi": "todennäköisesti; hyvin",
+    "word_ja": "おそらく; 具合がいい",
+    "word_de": "wohl",
     "ar": [
       "اليوم أشعر بالارتياح في المكتب الجديد.",
       "بعد الرحلة الطويلة، لا يشعر بأنه على ما يرام.",
       "الأطفال مرتاحون في بيت الجدة.",
       "هي الآن بخير مرة أخرى."
-    ],
-    "nl": [
-      "Vandaag voel ik me goed op het nieuwe kantoor.",
-      "Na de lange vlucht voelt hij zich niet goed.",
-      "De kinderen voelen zich fijn bij oma.",
-      "Ze voelt zich nu alweer goed."
-    ],
-    "uk": [
-      "Сьогодні я почуваюся добре в новому офісі.",
-      "Після довгого перельоту йому недобре.",
-      "Дітям комфортно в бабусі.",
-      "Вона вже знову почувається добре."
-    ],
-    "hu": [
-      "Ma jól érzem magam az új irodában.",
-      "A hosszú repülőút után rosszul érzi magát.",
-      "A gyerekek jól érzik magukat a nagymamánál.",
-      "Már megint jól érzi magát."
-    ],
-    "hi": [
-      "आज मुझे नए ऑफिस में अच्छा लग रहा है.",
-      "लंबी उड़ान के बाद उसे अच्छा नहीं लग रहा है.",
-      "बच्चों को दादी के घर अच्छा लगता है.",
-      "वह अब फिर से ठीक महसूस कर रही है."
-    ],
-    "pl": [
-      "Dziś czuję się dobrze w nowym biurze.",
-      "Po długim locie źle się czuje.",
-      "Dzieci czują się dobrze u babci.",
-      "Ona już znowu czuje się dobrze."
-    ],
-    "el": [
-      "Σήμερα νιώθω καλά στο νέο γραφείο.",
-      "Μετά την πολύωρη πτήση δεν αισθάνεται καλά.",
-      "Τα παιδιά νιώθουν άνετα στο σπίτι της γιαγιάς.",
-      "Νιώθει ήδη ξανά καλά."
-    ],
-    "nb": [
-      "I dag føler jeg meg bra på det nye kontoret.",
-      "Etter den lange flyreisen føler han seg ikke bra.",
-      "Barna har det fint hos bestemor.",
-      "Hun føler seg allerede bra igjen."
-    ],
-    "id": [
-      "Hari ini aku merasa nyaman di kantor baru.",
-      "Setelah penerbangan yang panjang, dia merasa tidak enak badan.",
-      "Anak-anak merasa nyaman di rumah nenek.",
-      "Dia sudah merasa lebih baik lagi sekarang."
-    ],
-    "sv": [
-      "I dag mår jag bra på det nya kontoret.",
-      "Efter den långa flygresan mår han inte bra.",
-      "Barnen trivs hos mormor.",
-      "Hon mår redan bra igen."
-    ],
-    "ro": [
-      "Astăzi mă simt bine la noul birou.",
-      "După zborul lung, el nu se simte bine.",
-      "Copiii se simt bine la bunica.",
-      "Ea se simte deja bine din nou."
     ],
     "cs": [
       "Dnes se cítím dobře v nové kanceláři.",
@@ -961,11 +1219,77 @@
       "Børnene har det godt hos mormor.",
       "Hun har det allerede godt igen."
     ],
+    "de": [
+      "Im neuen Büro ist mir heute wohl.",
+      "Ihm ist nicht wohl nach dem langen Flug.",
+      "Die Kinder fühlen sich wohl bei Oma.",
+      "Ihr ist jetzt schon wieder wohl."
+    ],
+    "el": [
+      "Σήμερα νιώθω καλά στο νέο γραφείο.",
+      "Μετά την πολύωρη πτήση δεν αισθάνεται καλά.",
+      "Τα παιδιά νιώθουν άνετα στο σπίτι της γιαγιάς.",
+      "Νιώθει ήδη ξανά καλά."
+    ],
+    "en": [
+      "I feel well today in the new office.",
+      "He feels unwell after the long flight.",
+      "The kids feel comfortable at Grandma’s.",
+      "She is already feeling well again."
+    ],
+    "es": [
+      "Hoy me siento bien en la oficina nueva.",
+      "Se siente mal después del vuelo largo.",
+      "Los niños están a gusto en casa de la abuela.",
+      "Ya se siente bien otra vez."
+    ],
     "fi": [
       "Tänään voin hyvin uudessa toimistossa.",
       "Pitkän lennon jälkeen hän voi huonosti.",
       "Lapset viihtyvät mummolassa.",
       "Hän voi jo taas hyvin."
+    ],
+    "fr": [
+      "Aujourd'hui, je me sens bien dans le nouveau bureau.",
+      "Il ne se sent pas bien après le long vol.",
+      "Les enfants sont à l'aise chez leur grand-mère.",
+      "Elle va déjà mieux."
+    ],
+    "he": [
+      "היום טוב לי במשרד החדש.",
+      "אחרי הטיסה הארוכה הוא מרגיש לא טוב.",
+      "הילדים מרגישים בנוח אצל סבתא.",
+      "היא כבר שוב מרגישה טוב."
+    ],
+    "hi": [
+      "आज मुझे नए ऑफिस में अच्छा लग रहा है.",
+      "लंबी उड़ान के बाद उसे अच्छा नहीं लग रहा है.",
+      "बच्चों को दादी के घर अच्छा लगता है.",
+      "वह अब फिर से ठीक महसूस कर रही है."
+    ],
+    "hu": [
+      "Ma jól érzem magam az új irodában.",
+      "A hosszú repülőút után rosszul érzi magát.",
+      "A gyerekek jól érzik magukat a nagymamánál.",
+      "Már megint jól érzi magát."
+    ],
+    "id": [
+      "Hari ini aku merasa nyaman di kantor baru.",
+      "Setelah penerbangan yang panjang, dia merasa tidak enak badan.",
+      "Anak-anak merasa nyaman di rumah nenek.",
+      "Dia sudah merasa lebih baik lagi sekarang."
+    ],
+    "ipa": [
+      "/ɪm ˈnɔʏən byːˈʁoː ɪst miːɐ̯ ˈhɔʏtə voːl/",
+      "/iːm ɪst nɪçt voːl naːx deːm ˈlaŋən fluːk/",
+      "/diː ˈkɪndɐ ˈfyːlən zɪç voːl baɪ ˈoːma/",
+      "/iːɐ̯ ɪst jɛtst ʃoːn ˈviːdɐ voːl/"
+    ],
+    "it": [
+      "Oggi mi sento bene nel nuovo ufficio.",
+      "Si sente male dopo il lungo volo.",
+      "I bambini stanno bene a casa della nonna.",
+      "Si sente già meglio."
     ],
     "ja": [
       "今日は新しいオフィスで気分がいいです。",
@@ -973,6 +1297,83 @@
       "子どもたちはおばあちゃんの家で居心地がいいです。",
       "もう元気になりました。"
     ],
-    "word_POS": "Adverb"
+    "ko": [
+      "오늘 새 사무실에서 기분이 좋아요.",
+      "긴 비행 후 그는 몸이 안 좋아요.",
+      "아이들은 할머니 집에서 편해요.",
+      "이제 다시 괜찮아졌어요."
+    ],
+    "nb": [
+      "I dag føler jeg meg bra på det nye kontoret.",
+      "Etter den lange flyreisen føler han seg ikke bra.",
+      "Barna har det fint hos bestemor.",
+      "Hun føler seg allerede bra igjen."
+    ],
+    "nl": [
+      "Vandaag voel ik me goed op het nieuwe kantoor.",
+      "Na de lange vlucht voelt hij zich niet goed.",
+      "De kinderen voelen zich fijn bij oma.",
+      "Ze voelt zich nu alweer goed."
+    ],
+    "pl": [
+      "Dziś czuję się dobrze w nowym biurze.",
+      "Po długim locie źle się czuje.",
+      "Dzieci czują się dobrze u babci.",
+      "Ona już znowu czuje się dobrze."
+    ],
+    "pt": [
+      "Hoje me sinto bem no novo escritório.",
+      "Ele está se sentindo mal após o longo voo.",
+      "As crianças se sentem à vontade na casa da avó.",
+      "Ela já está se sentindo bem de novo."
+    ],
+    "ro": [
+      "Astăzi mă simt bine la noul birou.",
+      "După zborul lung, el nu se simte bine.",
+      "Copiii se simt bine la bunica.",
+      "Ea se simte deja bine din nou."
+    ],
+    "ru": [
+      "Сегодня я чувствую себя хорошо в новом офисе.",
+      "После долгого перелёта ему нехорошо.",
+      "Детям хорошо у бабушки.",
+      "Ей уже снова хорошо."
+    ],
+    "sv": [
+      "I dag mår jag bra på det nya kontoret.",
+      "Efter den långa flygresan mår han inte bra.",
+      "Barnen trivs hos mormor.",
+      "Hon mår redan bra igen."
+    ],
+    "tr": [
+      "Bugün yeni ofiste kendimi iyi hissediyorum.",
+      "Uzun uçuştan sonra kendini iyi hissetmiyor.",
+      "Çocuklar büyükannelerinin evinde kendilerini rahat hissediyorlar.",
+      "O artık yine kendini iyi hissediyor."
+    ],
+    "uk": [
+      "Сьогодні я почуваюся добре в новому офісі.",
+      "Після довгого перельоту йому недобре.",
+      "Дітям комфортно в бабусі.",
+      "Вона вже знову почувається добре."
+    ],
+    "vi": [
+      "Hôm nay tôi thấy thoải mái ở văn phòng mới.",
+      "Sau chuyến bay dài, anh ấy thấy không khỏe.",
+      "Bọn trẻ thấy thoải mái ở nhà bà.",
+      "Bây giờ cô ấy đã khỏe lại rồi."
+    ],
+    "yue": [
+      "我今日喺新辦公室覺得好舒服。",
+      "長途飛行之後佢覺得唔舒服。",
+      "啲細路喺阿嫲屋企覺得好舒服。",
+      "佢而家已經又覺得舒服喇。"
+    ],
+    "zh-Hans": [
+      "我今天在新办公室感觉很好。",
+      "长途飞行后他觉得不舒服。",
+      "孩子们在奶奶家很自在。",
+      "她现在已经又觉得舒服了。"
+    ]
   }
 }

@@ -44,12 +44,12 @@
   },
   "sentences": [
     {
-      "target": "Ich habe kaum Zeit heute.",
+      "target": "Ich habe heute kaum Zeit.",
       "reading": "/ɪç ˈhaːbə kaʊm tsaɪt ˈhɔʏtə/",
       "translations": {
-        "de": "Ich habe kaum Zeit heute.",
+        "de": "Ich habe heute kaum Zeit.",
         "ipa": "/ɪç ˈhaːbə kaʊm tsaɪt ˈhɔʏtə/",
-        "en": "I hardly have time today.",
+        "en": "I have hardly any time today.",
         "es": "Hoy casi no tengo tiempo.",
         "fr": "Je n'ai presque pas de temps aujourd'hui.",
         "it": "Oggi ho pochissimo tempo.",
@@ -80,49 +80,70 @@
       "tokens": [
         {
           "surface": "Ich",
-          "surface_en": "I",
-          "furigana": "[ɪç]",
-          "pos": "PRON",
           "lemma": "ich",
-          "explanation": "Personal pronoun, 1st person singular nominative; subject of the finite verb.",
-          "difficulty": 2
+          "pos": "PRON",
+          "upos": "PRON",
+          "xpos": "PPER",
+          "feats": {},
+          "start": 0,
+          "end": 3,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "habe",
-          "surface_en": "have",
-          "furigana": "[ˈhaːbə]",
-          "pos": "VERB",
           "lemma": "haben",
-          "explanation": "Main verb in present indicative, 1st person singular; expresses possession.",
-          "difficulty": 7
+          "pos": "AUX",
+          "upos": "AUX",
+          "xpos": "VAFIN",
+          "feats": {},
+          "start": 4,
+          "end": 8,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "heute",
+          "lemma": "heute",
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "ADV",
+          "feats": {},
+          "start": 9,
+          "end": 14,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "kaum",
-          "surface_en": "hardly",
-          "furigana": "[kaʊ̯m]",
-          "pos": "ADV",
           "lemma": "kaum",
-          "explanation": "Scalar minimizer; adverb modifying the predicate to indicate very small extent.",
-          "difficulty": 7,
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "ADV",
+          "feats": {},
+          "start": 15,
+          "end": 19,
+          "analyzer": "spacy_de_core_news_lg",
           "is_main_word": true
         },
         {
           "surface": "Zeit",
-          "surface_en": "time",
-          "furigana": "[tsaɪ̯t]",
-          "pos": "NOUN",
           "lemma": "Zeit",
-          "explanation": "Common noun, singular; direct object (accusative) of 'habe'.",
-          "difficulty": 7
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 20,
+          "end": 24,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "heute.",
-          "surface_en": "today",
-          "furigana": "[ˈhɔʏ̯tə]",
-          "pos": "ADV",
-          "lemma": "heute",
-          "explanation": "Temporal adverb; sets the time frame of the event.",
-          "difficulty": 7
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 24,
+          "end": 25,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 6
@@ -402,8 +423,270 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-15T01:15:25Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:De b1/aab42bd7abb9e109",
+      "revision_id": 85328,
+      "parent_revision_id": 16634,
+      "revision_timestamp_utc": "2026-10-15T01:15:25Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Use natural German word order and idiomatic English phrasing for the sentence about having little time.",
+      "pulled_utc": "2026-10-17T07:06:42Z",
+      "applied_utc": "2026-10-17T07:06:53Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-7b87caedf63868d3",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_b1:aab42bd7abb9e109",
+        "pack_code": "de_b1",
+        "entry_id": "kaum",
+        "language": "de",
+        "sentence_index": 1,
+        "old_sentence": "Ich habe kaum Zeit heute.",
+        "old_translations": {
+          "de": "Ich habe kaum Zeit heute.",
+          "ipa": "/ɪç ˈhaːbə kaʊm tsaɪt ˈhɔʏtə/",
+          "en": "I hardly have time today.",
+          "es": "Hoy casi no tengo tiempo.",
+          "fr": "Je n'ai presque pas de temps aujourd'hui.",
+          "it": "Oggi ho pochissimo tempo.",
+          "ko": "오늘은 시간이 거의 없어요.",
+          "zh-Hans": "我今天没什么时间。",
+          "yue": "我今日冇乜時間。",
+          "ru": "У меня сегодня почти нет времени.",
+          "pt": "Hoje quase não tenho tempo.",
+          "he": "היום כמעט אין לי זמן.",
+          "tr": "Bugün neredeyse hiç vaktim yok.",
+          "vi": "Hôm nay tôi hầu như không có thời gian.",
+          "ar": "اليوم بالكاد لدي وقت.",
+          "nl": "Ik heb vandaag bijna geen tijd.",
+          "uk": "У мене сьогодні майже немає часу.",
+          "hu": "Ma alig van időm.",
+          "hi": "आज मेरे पास मुश्किल से समय है।",
+          "pl": "Dzisiaj prawie nie mam czasu.",
+          "el": "Σήμερα σχεδόν δεν έχω χρόνο.",
+          "nb": "I dag har jeg nesten ikke tid.",
+          "id": "Hari ini saya hampir tidak punya waktu.",
+          "sv": "I dag har jag knappt tid.",
+          "ro": "Astăzi abia am timp.",
+          "cs": "Dnes mám sotva čas.",
+          "da": "I dag har jeg næsten ikke tid.",
+          "fi": "Minulla ei juuri ole tänään aikaa.",
+          "ja": "今日はほとんど時間がない。"
+        },
+        "proposed_sentence": "Ich habe heute kaum Zeit.",
+        "proposed_translations": {
+          "de": "Ich habe heute kaum Zeit.",
+          "ipa": "/ɪç ˈhaːbə kaʊm tsaɪt ˈhɔʏtə/",
+          "en": "I have hardly any time today.",
+          "es": "Hoy casi no tengo tiempo.",
+          "fr": "Je n'ai presque pas de temps aujourd'hui.",
+          "it": "Oggi ho pochissimo tempo.",
+          "ko": "오늘은 시간이 거의 없어요.",
+          "zh-Hans": "我今天没什么时间。",
+          "yue": "我今日冇乜時間。",
+          "ru": "У меня сегодня почти нет времени.",
+          "pt": "Hoje quase não tenho tempo.",
+          "he": "היום כמעט אין לי זמן.",
+          "tr": "Bugün neredeyse hiç vaktim yok.",
+          "vi": "Hôm nay tôi hầu như không có thời gian.",
+          "ar": "اليوم بالكاد لدي وقت.",
+          "nl": "Ik heb vandaag bijna geen tijd.",
+          "uk": "У мене сьогодні майже немає часу.",
+          "hu": "Ma alig van időm.",
+          "hi": "आज मेरे पास मुश्किल से समय है।",
+          "pl": "Dzisiaj prawie nie mam czasu.",
+          "el": "Σήμερα σχεδόν δεν έχω χρόνο.",
+          "nb": "I dag har jeg nesten ikke tid.",
+          "id": "Hari ini saya hampir tidak punya waktu.",
+          "sv": "I dag har jag knappt tid.",
+          "ro": "Astăzi abia am timp.",
+          "cs": "Dnes mám sotva čas.",
+          "da": "I dag har jeg næsten ikke tid.",
+          "fi": "Minulla ei juuri ole tänään aikaa.",
+          "ja": "今日はほとんど時間がない。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Ich habe heute kaum Zeit.",
+        "old_japanese": "Ich habe kaum Zeit heute.",
+        "old_english": "I hardly have time today.",
+        "proposed_japanese": "Ich habe heute kaum Zeit.",
+        "proposed_english": "I have hardly any time today.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Ich habe heute kaum Zeit.",
+          "tokens": [
+            {
+              "surface": "Ich",
+              "lemma": "ich",
+              "pos": "PRON",
+              "upos": "PRON",
+              "xpos": "PPER",
+              "feats": {},
+              "start": 0,
+              "end": 3,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "habe",
+              "lemma": "haben",
+              "pos": "AUX",
+              "upos": "AUX",
+              "xpos": "VAFIN",
+              "feats": {},
+              "start": 4,
+              "end": 8,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "heute",
+              "lemma": "heute",
+              "pos": "ADV",
+              "upos": "ADV",
+              "xpos": "ADV",
+              "feats": {},
+              "start": 9,
+              "end": 14,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "kaum",
+              "lemma": "kaum",
+              "pos": "ADV",
+              "upos": "ADV",
+              "xpos": "ADV",
+              "feats": {},
+              "start": 15,
+              "end": 19,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Zeit",
+              "lemma": "Zeit",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 20,
+              "end": 24,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 24,
+              "end": 25,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Ich",
+            "lemma": "ich",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "habe",
+            "lemma": "haben",
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "VAFIN",
+            "feats": {},
+            "start": 4,
+            "end": 8,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "heute",
+            "lemma": "heute",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 9,
+            "end": 14,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "kaum",
+            "lemma": "kaum",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 15,
+            "end": 19,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Zeit",
+            "lemma": "Zeit",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 20,
+            "end": 24,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 24,
+            "end": 25,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:06:42Z",
+        "updated_utc": "2026-10-17T07:07:05Z",
+        "applied_utc": "2026-10-17T07:07:05Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:07:05Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -415,34 +698,6 @@
     "word": "kaum",
     "word_reading": "",
     "word_label": "Adverb",
-    "word_en": "hardly; barely",
-    "word_es": "apenas; casi no",
-    "word_fr": "à peine; presque pas",
-    "word_it": "a malapena; a stento",
-    "word_ko": "거의 ~않다; 겨우",
-    "word_zh-Hans": "几乎不; 勉强",
-    "word_yue": "幾乎唔; 勉強",
-    "word_ru": "едва; почти не",
-    "word_pt": "mal; quase não",
-    "word_he": "בקושי; כמעט לא",
-    "word_tr": "zar zor; neredeyse hiç",
-    "word_vi": "hầu như không; gần như không",
-    "word_ar": "بالكاد; يكاد لا",
-    "word_nl": "nauwelijks; amper",
-    "word_uk": "ледве; майже не",
-    "word_hu": "alig; épphogy",
-    "word_hi": "मुश्किल से; लगभग नहीं",
-    "word_pl": "ledwo; prawie nie",
-    "word_el": "με το ζόρι; σχεδόν δεν",
-    "word_nb": "knapt; nesten ikke",
-    "word_id": "hampir tidak; nyaris tidak",
-    "word_sv": "knappt; nästan inte",
-    "word_ro": "abia; aproape deloc",
-    "word_cs": "sotva; stěží",
-    "word_da": "knap; næsten ikke",
-    "word_fi": "tuskin; hädin tuskin",
-    "word_ja": "ほとんど〜ない; かろうじて",
-    "word_de": "kaum",
     "comic_difficulty": 5.71,
     "jp": [
       "Ich habe kaum Zeit heute.",
@@ -456,73 +711,76 @@
       "/hiːɐ gɪpt ɛs kaʊm plats/",
       "/ziː kɔmt kaʊm nɔx fɔʁˈbaɪ/"
     ],
-    "de": [
-      "Ich habe kaum Zeit heute.",
-      "Er isst kaum etwas zum Frühstück.",
-      "Hier gibt es kaum Platz.",
-      "Sie kommt kaum noch vorbei."
-    ],
-    "ipa": [
-      "/ɪç ˈhaːbə kaʊm tsaɪt ˈhɔʏtə/",
-      "/eːɐ ɪst kaʊm ˈɛtvas tsʊm ˈfryːʃtʏk/",
-      "/hiːɐ gɪpt ɛs kaʊm plats/",
-      "/ziː kɔmt kaʊm nɔx fɔʁˈbaɪ/"
-    ],
-    "en": [
-      "I hardly have time today.",
-      "He eats hardly anything for breakfast.",
-      "There’s hardly any space here.",
-      "She hardly comes by anymore."
-    ],
     "pos_analysis": [
       {
-        "sentence": "Ich habe kaum Zeit heute.",
+        "sentence": "Ich habe heute kaum Zeit.",
         "tokens": [
           {
             "surface": "Ich",
-            "surface_en": "I",
-            "furigana": "[ɪç]",
-            "pos": "PRON",
             "lemma": "ich",
-            "explanation": "Personal pronoun, 1st person singular nominative; subject of the finite verb.",
-            "difficulty": 2
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "habe",
-            "surface_en": "have",
-            "furigana": "[ˈhaːbə]",
-            "pos": "VERB",
             "lemma": "haben",
-            "explanation": "Main verb in present indicative, 1st person singular; expresses possession.",
-            "difficulty": 7
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "VAFIN",
+            "feats": {},
+            "start": 4,
+            "end": 8,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "heute",
+            "lemma": "heute",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 9,
+            "end": 14,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "kaum",
-            "surface_en": "hardly",
-            "furigana": "[kaʊ̯m]",
-            "pos": "ADV",
             "lemma": "kaum",
-            "explanation": "Scalar minimizer; adverb modifying the predicate to indicate very small extent.",
-            "difficulty": 7,
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 15,
+            "end": 19,
+            "analyzer": "spacy_de_core_news_lg",
             "is_main_word": true
           },
           {
             "surface": "Zeit",
-            "surface_en": "time",
-            "furigana": "[tsaɪ̯t]",
-            "pos": "NOUN",
             "lemma": "Zeit",
-            "explanation": "Common noun, singular; direct object (accusative) of 'habe'.",
-            "difficulty": 7
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 20,
+            "end": 24,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "heute.",
-            "surface_en": "today",
-            "furigana": "[ˈhɔʏ̯tə]",
-            "pos": "ADV",
-            "lemma": "heute",
-            "explanation": "Temporal adverb; sets the time frame of the event.",
-            "difficulty": 7
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 24,
+            "end": 25,
+            "analyzer": "spacy_de_core_news_lg"
           }
         ],
         "difficulty_aggregated": 6
@@ -695,137 +953,41 @@
         "difficulty_aggregated": 5
       }
     ],
-    "es": [
-      "Hoy casi no tengo tiempo.",
-      "Casi no come nada en el desayuno.",
-      "Aquí casi no hay espacio.",
-      "Ya casi no pasa por aquí."
-    ],
-    "fr": [
-      "Je n'ai presque pas de temps aujourd'hui.",
-      "Il ne mange presque rien au petit-déjeuner.",
-      "Il n'y a presque pas de place ici.",
-      "Elle ne passe presque plus."
-    ],
-    "it": [
-      "Oggi ho pochissimo tempo.",
-      "Quasi non mangia nulla a colazione.",
-      "Qui c'è pochissimo spazio.",
-      "Ormai non passa quasi più."
-    ],
-    "ko": [
-      "오늘은 시간이 거의 없어요.",
-      "아침에는 거의 아무것도 먹지 않아요.",
-      "여긴 공간이 거의 없어요.",
-      "그녀는 이젠 거의 들르지 않아요."
-    ],
-    "zh-Hans": [
-      "我今天没什么时间。",
-      "他早饭几乎什么都不吃。",
-      "这里几乎没地方。",
-      "她几乎不再过来了。"
-    ],
-    "yue": [
-      "我今日冇乜時間。",
-      "佢早餐幾乎乜都唔食。",
-      "呢度幾乎冇位。",
-      "佢而家好少再過嚟。"
-    ],
-    "ru": [
-      "У меня сегодня почти нет времени.",
-      "Он на завтрак почти ничего не ест.",
-      "Здесь почти нет места.",
-      "Она почти перестала заходить."
-    ],
-    "pt": [
-      "Hoje quase não tenho tempo.",
-      "Ele quase não come nada no café da manhã.",
-      "Aqui quase não há espaço.",
-      "Ela quase não aparece mais."
-    ],
-    "he": [
-      "היום כמעט אין לי זמן.",
-      "בארוחת הבוקר הוא כמעט לא אוכל כלום.",
-      "כאן כמעט אין מקום.",
-      "היא כבר כמעט לא מגיעה."
-    ],
-    "tr": [
-      "Bugün neredeyse hiç vaktim yok.",
-      "Kahvaltıda neredeyse hiçbir şey yemiyor.",
-      "Burada neredeyse hiç yer yok.",
-      "Artık neredeyse uğramıyor."
-    ],
-    "vi": [
-      "Hôm nay tôi hầu như không có thời gian.",
-      "Anh ấy hầu như không ăn gì vào bữa sáng.",
-      "Ở đây hầu như không có chỗ.",
-      "Cô ấy hầu như không ghé qua nữa."
-    ],
+    "word_POS": "Adverb",
+    "entry_id": "kaum",
+    "word_en": "hardly; barely",
+    "word_es": "apenas; casi no",
+    "word_fr": "à peine; presque pas",
+    "word_it": "a malapena; a stento",
+    "word_ko": "거의 ~않다; 겨우",
+    "word_zh-Hans": "几乎不; 勉强",
+    "word_yue": "幾乎唔; 勉強",
+    "word_ru": "едва; почти не",
+    "word_pt": "mal; quase não",
+    "word_he": "בקושי; כמעט לא",
+    "word_tr": "zar zor; neredeyse hiç",
+    "word_vi": "hầu như không; gần như không",
+    "word_ar": "بالكاد; يكاد لا",
+    "word_nl": "nauwelijks; amper",
+    "word_uk": "ледве; майже не",
+    "word_hu": "alig; épphogy",
+    "word_hi": "मुश्किल से; लगभग नहीं",
+    "word_pl": "ledwo; prawie nie",
+    "word_el": "με το ζόρι; σχεδόν δεν",
+    "word_nb": "knapt; nesten ikke",
+    "word_id": "hampir tidak; nyaris tidak",
+    "word_sv": "knappt; nästan inte",
+    "word_ro": "abia; aproape deloc",
+    "word_cs": "sotva; stěží",
+    "word_da": "knap; næsten ikke",
+    "word_fi": "tuskin; hädin tuskin",
+    "word_ja": "ほとんど〜ない; かろうじて",
+    "word_de": "kaum",
     "ar": [
       "اليوم بالكاد لدي وقت.",
       "هو يكاد لا يأكل شيئًا على الفطور.",
       "هنا بالكاد توجد مساحة.",
       "هي بالكاد تأتي بعد الآن."
-    ],
-    "nl": [
-      "Ik heb vandaag bijna geen tijd.",
-      "Hij eet bijna niets bij het ontbijt.",
-      "Hier is bijna geen ruimte.",
-      "Ze komt bijna niet meer langs."
-    ],
-    "uk": [
-      "У мене сьогодні майже немає часу.",
-      "Він на сніданок майже нічого не їсть.",
-      "Тут майже немає місця.",
-      "Вона тепер майже не заходить."
-    ],
-    "hu": [
-      "Ma alig van időm.",
-      "Reggelire alig eszik valamit.",
-      "Itt alig van hely.",
-      "Már alig jár erre."
-    ],
-    "hi": [
-      "आज मेरे पास मुश्किल से समय है।",
-      "वह नाश्ते में मुश्किल से कुछ खाता है।",
-      "यहाँ मुश्किल से जगह है।",
-      "वह अब शायद ही आती है।"
-    ],
-    "pl": [
-      "Dzisiaj prawie nie mam czasu.",
-      "Na śniadanie prawie nic nie je.",
-      "Tutaj prawie nie ma miejsca.",
-      "Ona już prawie tu nie zagląda."
-    ],
-    "el": [
-      "Σήμερα σχεδόν δεν έχω χρόνο.",
-      "Το πρωί σχεδόν δεν τρώει τίποτα.",
-      "Εδώ σχεδόν δεν υπάρχει χώρος.",
-      "Σχεδόν δεν έρχεται πια."
-    ],
-    "nb": [
-      "I dag har jeg nesten ikke tid.",
-      "Han spiser nesten ingenting til frokost.",
-      "Her er det nesten ikke plass.",
-      "Hun kommer nesten aldri innom lenger."
-    ],
-    "id": [
-      "Hari ini saya hampir tidak punya waktu.",
-      "Dia hampir tidak makan apa-apa saat sarapan.",
-      "Di sini hampir tidak ada ruang.",
-      "Dia hampir tidak pernah mampir lagi."
-    ],
-    "sv": [
-      "I dag har jag knappt tid.",
-      "Han äter knappt något till frukost.",
-      "Här är det knappt om plats.",
-      "Hon kommer knappt förbi längre."
-    ],
-    "ro": [
-      "Astăzi abia am timp.",
-      "La micul dejun abia dacă mănâncă ceva.",
-      "Aici abia dacă este loc.",
-      "Nu mai trece pe aici aproape deloc."
     ],
     "cs": [
       "Dnes mám sotva čas.",
@@ -839,11 +1001,77 @@
       "Her er der næsten ikke plads.",
       "Hun kommer næsten aldrig forbi længere."
     ],
+    "de": [
+      "Ich habe kaum Zeit heute.",
+      "Er isst kaum etwas zum Frühstück.",
+      "Hier gibt es kaum Platz.",
+      "Sie kommt kaum noch vorbei."
+    ],
+    "el": [
+      "Σήμερα σχεδόν δεν έχω χρόνο.",
+      "Το πρωί σχεδόν δεν τρώει τίποτα.",
+      "Εδώ σχεδόν δεν υπάρχει χώρος.",
+      "Σχεδόν δεν έρχεται πια."
+    ],
+    "en": [
+      "I hardly have time today.",
+      "He eats hardly anything for breakfast.",
+      "There’s hardly any space here.",
+      "She hardly comes by anymore."
+    ],
+    "es": [
+      "Hoy casi no tengo tiempo.",
+      "Casi no come nada en el desayuno.",
+      "Aquí casi no hay espacio.",
+      "Ya casi no pasa por aquí."
+    ],
     "fi": [
       "Minulla ei juuri ole tänään aikaa.",
       "Hän syö tuskin mitään aamiaisella.",
       "Täällä ei juuri ole tilaa.",
       "Hän käy enää tuskin koskaan."
+    ],
+    "fr": [
+      "Je n'ai presque pas de temps aujourd'hui.",
+      "Il ne mange presque rien au petit-déjeuner.",
+      "Il n'y a presque pas de place ici.",
+      "Elle ne passe presque plus."
+    ],
+    "he": [
+      "היום כמעט אין לי זמן.",
+      "בארוחת הבוקר הוא כמעט לא אוכל כלום.",
+      "כאן כמעט אין מקום.",
+      "היא כבר כמעט לא מגיעה."
+    ],
+    "hi": [
+      "आज मेरे पास मुश्किल से समय है।",
+      "वह नाश्ते में मुश्किल से कुछ खाता है।",
+      "यहाँ मुश्किल से जगह है।",
+      "वह अब शायद ही आती है।"
+    ],
+    "hu": [
+      "Ma alig van időm.",
+      "Reggelire alig eszik valamit.",
+      "Itt alig van hely.",
+      "Már alig jár erre."
+    ],
+    "id": [
+      "Hari ini saya hampir tidak punya waktu.",
+      "Dia hampir tidak makan apa-apa saat sarapan.",
+      "Di sini hampir tidak ada ruang.",
+      "Dia hampir tidak pernah mampir lagi."
+    ],
+    "ipa": [
+      "/ɪç ˈhaːbə kaʊm tsaɪt ˈhɔʏtə/",
+      "/eːɐ ɪst kaʊm ˈɛtvas tsʊm ˈfryːʃtʏk/",
+      "/hiːɐ gɪpt ɛs kaʊm plats/",
+      "/ziː kɔmt kaʊm nɔx fɔʁˈbaɪ/"
+    ],
+    "it": [
+      "Oggi ho pochissimo tempo.",
+      "Quasi non mangia nulla a colazione.",
+      "Qui c'è pochissimo spazio.",
+      "Ormai non passa quasi più."
     ],
     "ja": [
       "今日はほとんど時間がない。",
@@ -851,6 +1079,83 @@
       "ここはほとんどスペースがない。",
       "彼女はもうほとんど来ない。"
     ],
-    "word_POS": "Adverb"
+    "ko": [
+      "오늘은 시간이 거의 없어요.",
+      "아침에는 거의 아무것도 먹지 않아요.",
+      "여긴 공간이 거의 없어요.",
+      "그녀는 이젠 거의 들르지 않아요."
+    ],
+    "nb": [
+      "I dag har jeg nesten ikke tid.",
+      "Han spiser nesten ingenting til frokost.",
+      "Her er det nesten ikke plass.",
+      "Hun kommer nesten aldri innom lenger."
+    ],
+    "nl": [
+      "Ik heb vandaag bijna geen tijd.",
+      "Hij eet bijna niets bij het ontbijt.",
+      "Hier is bijna geen ruimte.",
+      "Ze komt bijna niet meer langs."
+    ],
+    "pl": [
+      "Dzisiaj prawie nie mam czasu.",
+      "Na śniadanie prawie nic nie je.",
+      "Tutaj prawie nie ma miejsca.",
+      "Ona już prawie tu nie zagląda."
+    ],
+    "pt": [
+      "Hoje quase não tenho tempo.",
+      "Ele quase não come nada no café da manhã.",
+      "Aqui quase não há espaço.",
+      "Ela quase não aparece mais."
+    ],
+    "ro": [
+      "Astăzi abia am timp.",
+      "La micul dejun abia dacă mănâncă ceva.",
+      "Aici abia dacă este loc.",
+      "Nu mai trece pe aici aproape deloc."
+    ],
+    "ru": [
+      "У меня сегодня почти нет времени.",
+      "Он на завтрак почти ничего не ест.",
+      "Здесь почти нет места.",
+      "Она почти перестала заходить."
+    ],
+    "sv": [
+      "I dag har jag knappt tid.",
+      "Han äter knappt något till frukost.",
+      "Här är det knappt om plats.",
+      "Hon kommer knappt förbi längre."
+    ],
+    "tr": [
+      "Bugün neredeyse hiç vaktim yok.",
+      "Kahvaltıda neredeyse hiçbir şey yemiyor.",
+      "Burada neredeyse hiç yer yok.",
+      "Artık neredeyse uğramıyor."
+    ],
+    "uk": [
+      "У мене сьогодні майже немає часу.",
+      "Він на сніданок майже нічого не їсть.",
+      "Тут майже немає місця.",
+      "Вона тепер майже не заходить."
+    ],
+    "vi": [
+      "Hôm nay tôi hầu như không có thời gian.",
+      "Anh ấy hầu như không ăn gì vào bữa sáng.",
+      "Ở đây hầu như không có chỗ.",
+      "Cô ấy hầu như không ghé qua nữa."
+    ],
+    "yue": [
+      "我今日冇乜時間。",
+      "佢早餐幾乎乜都唔食。",
+      "呢度幾乎冇位。",
+      "佢而家好少再過嚟。"
+    ],
+    "zh-Hans": [
+      "我今天没什么时间。",
+      "他早饭几乎什么都不吃。",
+      "这里几乎没地方。",
+      "她几乎不再过来了。"
+    ]
   }
 }

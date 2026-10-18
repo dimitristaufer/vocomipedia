@@ -42,7 +42,7 @@
   },
   "sentences": [
     {
-      "target": "きょうの会議に参加します。",
+      "target": "今日の会議に参加します。",
       "reading": "きょうのかいぎにさんかします。",
       "translations": {
         "en": "I will join today’s meeting.",
@@ -75,20 +75,28 @@
       },
       "tokens": [
         {
-          "surface": "きょう",
-          "lemma": "きょう",
+          "surface": "今日",
+          "lemma": "今日",
           "pos": "名詞/普通名詞/副詞可能/*/*/*",
           "upos": "NOUN",
           "xpos": "名詞",
           "feats": {},
           "start": 0,
-          "end": 3,
+          "end": 2,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "きょう",
-          "ruby_text": "きょう",
-          "ruby_spans": [],
-          "ruby_confidence": "high",
-          "furigana": "きょう"
+          "ruby_text": "今日[きょう]",
+          "ruby_spans": [
+            {
+              "base": "今日",
+              "reading": "きょう",
+              "start": 0,
+              "length": 2
+            }
+          ],
+          "ruby_confidence": "reviewed",
+          "furigana": "きょう",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "の",
@@ -97,8 +105,8 @@
           "upos": "PART",
           "xpos": "助詞",
           "feats": {},
-          "start": 3,
-          "end": 4,
+          "start": 2,
+          "end": 3,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "の",
           "ruby_text": "の",
@@ -113,8 +121,8 @@
           "upos": "NOUN",
           "xpos": "名詞",
           "feats": {},
-          "start": 4,
-          "end": 6,
+          "start": 3,
+          "end": 5,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "かいぎ",
           "ruby_text": "会議[かいぎ]",
@@ -126,8 +134,9 @@
               "length": 2
             }
           ],
-          "ruby_confidence": "medium",
-          "furigana": "かいぎ"
+          "ruby_confidence": "reviewed",
+          "furigana": "かいぎ",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "に",
@@ -136,8 +145,8 @@
           "upos": "PART",
           "xpos": "助詞",
           "feats": {},
-          "start": 6,
-          "end": 7,
+          "start": 5,
+          "end": 6,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "に",
           "ruby_text": "に",
@@ -152,8 +161,8 @@
           "upos": "NOUN",
           "xpos": "名詞",
           "feats": {},
-          "start": 7,
-          "end": 9,
+          "start": 6,
+          "end": 8,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "さんか",
           "ruby_text": "参加[さんか]",
@@ -165,8 +174,9 @@
               "length": 2
             }
           ],
-          "ruby_confidence": "medium",
+          "ruby_confidence": "reviewed",
           "furigana": "さんか",
+          "ruby_source": "mediawiki_sentence_ruby",
           "is_main_word": true
         },
         {
@@ -176,8 +186,8 @@
           "upos": "VERB",
           "xpos": "動詞",
           "feats": {},
-          "start": 9,
-          "end": 10,
+          "start": 8,
+          "end": 9,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "し",
           "ruby_text": "し",
@@ -192,8 +202,8 @@
           "upos": "AUX",
           "xpos": "助動詞",
           "feats": {},
-          "start": 10,
-          "end": 12,
+          "start": 9,
+          "end": 11,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "ます",
           "ruby_text": "ます",
@@ -208,8 +218,8 @@
           "upos": "PUNCT",
           "xpos": "補助記号",
           "feats": {},
-          "start": 12,
-          "end": 13,
+          "start": 11,
+          "end": 12,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "。",
           "ruby_text": "。",
@@ -833,8 +843,440 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-13T01:11:43Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:Ja n3/532af864c1a7c6f8",
+      "revision_id": 81222,
+      "parent_revision_id": 67582,
+      "revision_timestamp_utc": "2026-10-13T01:11:43Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Use the standard kanji spelling 今日 in the first example.",
+      "pulled_utc": "2026-10-18T17:39:02Z",
+      "applied_utc": "2026-10-18T17:39:38Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-4c53ff984243d4bf",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "ja_n3:532af864c1a7c6f8",
+        "pack_code": "ja_n3",
+        "entry_id": "参加",
+        "language": "ja",
+        "sentence_index": 1,
+        "old_sentence": "きょうの会議に参加します。",
+        "old_translations": {
+          "en": "I will join today’s meeting.",
+          "ar": "سأشارك في اجتماع اليوم.",
+          "cs": "Zúčastním se dnešní schůzky.",
+          "da": "Jeg deltager i dagens møde.",
+          "de": "Ich nehme an der heutigen Besprechung teil.",
+          "el": "Θα συμμετάσχω στη σημερινή συνάντηση.",
+          "es": "Voy a participar en la reunión de hoy.",
+          "fi": "Osallistun tämän päivän kokoukseen.",
+          "fr": "Je vais participer à la réunion d’aujourd’hui.",
+          "he": "אני אשתתף בפגישה של היום.",
+          "hi": "मैं आज की बैठक में शामिल होऊँगा।",
+          "hu": "Részt veszek a mai megbeszélésen.",
+          "id": "Saya akan ikut rapat hari ini.",
+          "it": "Parteciperò alla riunione di oggi.",
+          "ko": "오늘 회의에 참석하겠습니다.",
+          "nb": "Jeg skal delta på møtet i dag.",
+          "nl": "Ik neem deel aan de vergadering van vandaag.",
+          "pl": "Wezmę udział w dzisiejszym spotkaniu.",
+          "pt": "Vou participar da reunião de hoje.",
+          "ro": "Voi participa la ședința de azi.",
+          "ru": "Я приму участие в сегодняшнем собрании.",
+          "sv": "Jag ska delta i dagens möte.",
+          "tr": "Bugünkü toplantıya katılacağım.",
+          "uk": "Я візьму участь у сьогоднішній нараді.",
+          "vi": "Tôi sẽ tham gia cuộc họp hôm nay.",
+          "yue": "我會參加今日嘅會議。",
+          "zh-Hans": "我会参加今天的会议。"
+        },
+        "proposed_sentence": "今日の会議に参加します。",
+        "proposed_translations": {
+          "en": "I will join today’s meeting.",
+          "ar": "سأشارك في اجتماع اليوم.",
+          "cs": "Zúčastním se dnešní schůzky.",
+          "da": "Jeg deltager i dagens møde.",
+          "de": "Ich nehme an der heutigen Besprechung teil.",
+          "el": "Θα συμμετάσχω στη σημερινή συνάντηση.",
+          "es": "Voy a participar en la reunión de hoy.",
+          "fi": "Osallistun tämän päivän kokoukseen.",
+          "fr": "Je vais participer à la réunion d’aujourd’hui.",
+          "he": "אני אשתתף בפגישה של היום.",
+          "hi": "मैं आज की बैठक में शामिल होऊँगा।",
+          "hu": "Részt veszek a mai megbeszélésen.",
+          "id": "Saya akan ikut rapat hari ini.",
+          "it": "Parteciperò alla riunione di oggi.",
+          "ko": "오늘 회의에 참석하겠습니다.",
+          "nb": "Jeg skal delta på møtet i dag.",
+          "nl": "Ik neem deel aan de vergadering van vandaag.",
+          "pl": "Wezmę udział w dzisiejszym spotkaniu.",
+          "pt": "Vou participar da reunião de hoje.",
+          "ro": "Voi participa la ședința de azi.",
+          "ru": "Я приму участие в сегодняшнем собрании.",
+          "sv": "Jag ska delta i dagens möte.",
+          "tr": "Bugünkü toplantıya katılacağım.",
+          "uk": "Я візьму участь у сьогоднішній нараді.",
+          "vi": "Tôi sẽ tham gia cuộc họp hôm nay.",
+          "yue": "我會參加今日嘅會議。",
+          "zh-Hans": "我会参加今天的会议。"
+        },
+        "old_ruby_source": "きょうの会議[かいぎ]に参加[さんか]します。",
+        "proposed_ruby_source": "今日[きょう]の会議[かいぎ]に参加[さんか]します。",
+        "old_japanese": "きょうの会議に参加します。",
+        "old_english": "I will join today’s meeting.",
+        "proposed_japanese": "今日の会議に参加します。",
+        "proposed_english": "I will join today’s meeting.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "ja",
+          "sentence": "今日の会議に参加します。",
+          "tokens": [
+            {
+              "surface": "今日",
+              "lemma": "今日",
+              "pos": "名詞/普通名詞/副詞可能/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 0,
+              "end": 2,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "きょう",
+              "ruby_text": "今日[きょう]",
+              "ruby_spans": [
+                {
+                  "base": "今日",
+                  "reading": "きょう",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "きょう",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "の",
+              "lemma": "の",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 2,
+              "end": 3,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "の",
+              "ruby_text": "の",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "の"
+            },
+            {
+              "surface": "会議",
+              "lemma": "会議",
+              "pos": "名詞/普通名詞/サ変可能/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 3,
+              "end": 5,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "かいぎ",
+              "ruby_text": "会議[かいぎ]",
+              "ruby_spans": [
+                {
+                  "base": "会議",
+                  "reading": "かいぎ",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "かいぎ",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "に",
+              "lemma": "に",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 5,
+              "end": 6,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "に",
+              "ruby_text": "に",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "に"
+            },
+            {
+              "surface": "参加",
+              "lemma": "参加",
+              "pos": "名詞/普通名詞/サ変可能/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 6,
+              "end": 8,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "さんか",
+              "ruby_text": "参加[さんか]",
+              "ruby_spans": [
+                {
+                  "base": "参加",
+                  "reading": "さんか",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "さんか",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "し",
+              "lemma": "する",
+              "pos": "動詞/非自立可能/*/*/サ行変格/連用形-一般",
+              "upos": "VERB",
+              "xpos": "動詞",
+              "feats": {},
+              "start": 8,
+              "end": 9,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "し",
+              "ruby_text": "し",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "し"
+            },
+            {
+              "surface": "ます",
+              "lemma": "ます",
+              "pos": "助動詞/*/*/*/助動詞-マス/終止形-一般",
+              "upos": "AUX",
+              "xpos": "助動詞",
+              "feats": {},
+              "start": 9,
+              "end": 11,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "ます",
+              "ruby_text": "ます",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "ます"
+            },
+            {
+              "surface": "。",
+              "lemma": "。",
+              "pos": "補助記号/句点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 11,
+              "end": 12,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "。",
+              "ruby_text": "。",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "。"
+            }
+          ],
+          "reading": "きょうのかいぎにさんかします。",
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "warnings": [
+            "mediawiki ruby hints applied"
+          ]
+        },
+        "generated_tokens": [
+          {
+            "surface": "今日",
+            "lemma": "今日",
+            "pos": "名詞/普通名詞/副詞可能/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "きょう",
+            "ruby_text": "今日[きょう]",
+            "ruby_spans": [
+              {
+                "base": "今日",
+                "reading": "きょう",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "きょう",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "の",
+            "lemma": "の",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 2,
+            "end": 3,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "の",
+            "ruby_text": "の",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "の"
+          },
+          {
+            "surface": "会議",
+            "lemma": "会議",
+            "pos": "名詞/普通名詞/サ変可能/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 3,
+            "end": 5,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "かいぎ",
+            "ruby_text": "会議[かいぎ]",
+            "ruby_spans": [
+              {
+                "base": "会議",
+                "reading": "かいぎ",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "かいぎ",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "に",
+            "lemma": "に",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 5,
+            "end": 6,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "に",
+            "ruby_text": "に",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "に"
+          },
+          {
+            "surface": "参加",
+            "lemma": "参加",
+            "pos": "名詞/普通名詞/サ変可能/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 6,
+            "end": 8,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "さんか",
+            "ruby_text": "参加[さんか]",
+            "ruby_spans": [
+              {
+                "base": "参加",
+                "reading": "さんか",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "さんか",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "し",
+            "lemma": "する",
+            "pos": "動詞/非自立可能/*/*/サ行変格/連用形-一般",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 8,
+            "end": 9,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "し",
+            "ruby_text": "し",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "し"
+          },
+          {
+            "surface": "ます",
+            "lemma": "ます",
+            "pos": "助動詞/*/*/*/助動詞-マス/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 9,
+            "end": 11,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ます",
+            "ruby_text": "ます",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "ます"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 11,
+            "end": 12,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
+          }
+        ],
+        "generated_reading": "きょうのかいぎにさんかします。",
+        "analyzer": "sudachipy_sudachidict_core_c",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-18T17:39:02Z",
+        "updated_utc": "2026-10-18T17:40:44Z",
+        "applied_utc": "2026-10-18T17:40:44Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-18T17:40:44Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -859,12 +1301,6 @@
       "ともだちのいべんとにさんかしました。",
       "このくらぶにさんかしてもいいですか。",
       "こどももぎょうじにさんかできます。"
-    ],
-    "en": [
-      "I will join today’s meeting.",
-      "I joined my friend’s event.",
-      "May I join this club?",
-      "Children can also take part in the event."
     ],
     "generation": {
       "generator": "vocomipedia_source_generator.py",
@@ -903,209 +1339,33 @@
         "parts_of_speech": "Noun; Suru verb; Intransitive verb"
       }
     },
-    "word_en": "participation; joining; entry",
-    "word_es": "participación",
-    "word_fr": "participation",
-    "word_de": "Teilnahme",
-    "word_it": "partecipazione",
-    "word_ko": "참가",
-    "word_zh-Hans": "参加",
-    "word_yue": "參加",
-    "word_ru": "участие",
-    "word_pt": "participação",
-    "word_he": "השתתפות",
-    "word_tr": "katılım",
-    "word_vi": "tham gia",
-    "word_ar": "مشاركة",
-    "word_nl": "deelname",
-    "word_uk": "участь",
-    "word_hu": "részvétel",
-    "word_hi": "भागीदारी",
-    "word_pl": "uczestnictwo",
-    "word_el": "συμμετοχή",
-    "word_nb": "deltakelse",
-    "word_id": "partisipasi",
-    "word_sv": "deltagande",
-    "word_ro": "participare",
-    "word_cs": "účast",
-    "word_da": "deltagelse",
-    "word_fi": "osallistuminen",
-    "word_ja": "参加",
-    "ar": [
-      "سأشارك في اجتماع اليوم.",
-      "شاركت في فعالية صديقي.",
-      "هل يمكنني الانضمام إلى هذا النادي؟",
-      "يمكن للأطفال أيضًا المشاركة في الفعالية."
-    ],
-    "cs": [
-      "Zúčastním se dnešní schůzky.",
-      "Zúčastnil jsem se akce mého přítele.",
-      "Smím se přidat do tohoto klubu?",
-      "Děti se mohou také zúčastnit akce."
-    ],
-    "da": [
-      "Jeg deltager i dagens møde.",
-      "Jeg deltog i min vens arrangement.",
-      "Må jeg være med i denne klub?",
-      "Børn kan også deltage i arrangementet."
-    ],
-    "de": [
-      "Ich nehme an der heutigen Besprechung teil.",
-      "Ich habe an der Veranstaltung meines Freundes teilgenommen.",
-      "Darf ich diesem Club beitreten?",
-      "Kinder können auch an der Veranstaltung teilnehmen."
-    ],
-    "el": [
-      "Θα συμμετάσχω στη σημερινή συνάντηση.",
-      "Συμμετείχα στην εκδήλωση του φίλου μου.",
-      "Μπορώ να συμμετάσχω σε αυτόν τον σύλλογο;",
-      "Τα παιδιά μπορούν επίσης να συμμετάσχουν στην εκδήλωση."
-    ],
-    "es": [
-      "Voy a participar en la reunión de hoy.",
-      "Participé en el evento de mi amigo.",
-      "¿Puedo unirme a este club?",
-      "Los niños también pueden participar en el evento."
-    ],
-    "fi": [
-      "Osallistun tämän päivän kokoukseen.",
-      "Osallistuin ystäväni tapahtumaan.",
-      "Voinko liittyä tähän kerhoon?",
-      "Myös lapset voivat osallistua tapahtumaan."
-    ],
-    "fr": [
-      "Je vais participer à la réunion d’aujourd’hui.",
-      "J’ai participé à l’événement de mon ami.",
-      "Puis-je rejoindre ce club ?",
-      "Les enfants peuvent aussi participer à l’événement."
-    ],
-    "he": [
-      "אני אשתתף בפגישה של היום.",
-      "השתתפתי באירוע של החבר שלי.",
-      "אפשר להצטרף למועדון הזה?",
-      "גם ילדים יכולים להשתתף באירוע."
-    ],
-    "hi": [
-      "मैं आज की बैठक में शामिल होऊँगा।",
-      "मैं अपने दोस्त के कार्यक्रम में शामिल हुआ।",
-      "क्या मैं इस क्लब में शामिल हो सकता हूँ?",
-      "बच्चे भी कार्यक्रम में भाग ले सकते हैं।"
-    ],
-    "hu": [
-      "Részt veszek a mai megbeszélésen.",
-      "Részt vettem a barátom eseményén.",
-      "Csatlakozhatok ehhez a klubhoz?",
-      "A gyerekek is részt vehetnek az eseményen."
-    ],
-    "id": [
-      "Saya akan ikut rapat hari ini.",
-      "Saya ikut acara teman saya.",
-      "Bolehkah saya ikut klub ini?",
-      "Anak-anak juga bisa ikut acara itu."
-    ],
-    "it": [
-      "Parteciperò alla riunione di oggi.",
-      "Ho partecipato all'evento del mio amico.",
-      "Posso unirmi a questo club?",
-      "Anche i bambini possono partecipare all'evento."
-    ],
-    "ko": [
-      "오늘 회의에 참석하겠습니다.",
-      "친구의 행사에 참가했습니다.",
-      "이 동아리에 들어가도 될까요?",
-      "아이들도 행사에 참여할 수 있습니다."
-    ],
-    "nb": [
-      "Jeg skal delta på møtet i dag.",
-      "Jeg deltok på vennens arrangement.",
-      "Kan jeg bli med i denne klubben?",
-      "Barn kan også delta på arrangementet."
-    ],
-    "nl": [
-      "Ik neem deel aan de vergadering van vandaag.",
-      "Ik heb deelgenomen aan het evenement van mijn vriend.",
-      "Mag ik lid worden van deze club?",
-      "Kinderen kunnen ook aan het evenement deelnemen."
-    ],
-    "pl": [
-      "Wezmę udział w dzisiejszym spotkaniu.",
-      "Wziąłem udział w wydarzeniu mojego przyjaciela.",
-      "Czy mogę dołączyć do tego klubu?",
-      "Dzieci też mogą wziąć udział w wydarzeniu."
-    ],
-    "pt": [
-      "Vou participar da reunião de hoje.",
-      "Participei do evento do meu amigo.",
-      "Posso entrar neste clube?",
-      "As crianças também podem participar do evento."
-    ],
-    "ro": [
-      "Voi participa la ședința de azi.",
-      "Am participat la evenimentul prietenului meu.",
-      "Pot să mă alătur acestui club?",
-      "Copiii pot participa și ei la eveniment."
-    ],
-    "ru": [
-      "Я приму участие в сегодняшнем собрании.",
-      "Я участвовал в мероприятии моего друга.",
-      "Можно мне присоединиться к этому клубу?",
-      "Дети тоже могут участвовать в мероприятии."
-    ],
-    "sv": [
-      "Jag ska delta i dagens möte.",
-      "Jag deltog i min väns evenemang.",
-      "Får jag vara med i den här klubben?",
-      "Barn kan också delta i evenemanget."
-    ],
-    "tr": [
-      "Bugünkü toplantıya katılacağım.",
-      "Arkadaşımın etkinliğine katıldım.",
-      "Bu kulübe katılabilir miyim?",
-      "Çocuklar da etkinliğe katılabilir."
-    ],
-    "uk": [
-      "Я візьму участь у сьогоднішній нараді.",
-      "Я взяв участь у заході свого друга.",
-      "Можна мені приєднатися до цього клубу?",
-      "Діти також можуть брати участь у заході."
-    ],
-    "vi": [
-      "Tôi sẽ tham gia cuộc họp hôm nay.",
-      "Tôi đã tham gia sự kiện của bạn tôi.",
-      "Tôi có thể tham gia câu lạc bộ này không?",
-      "Trẻ em cũng có thể tham gia sự kiện."
-    ],
-    "yue": [
-      "我會參加今日嘅會議。",
-      "我參加咗我朋友嘅活動。",
-      "我可以加入呢個社團嗎？",
-      "小朋友都可以參加呢個活動。"
-    ],
-    "zh-Hans": [
-      "我会参加今天的会议。",
-      "我参加了朋友的活动。",
-      "我可以参加这个社团吗？",
-      "孩子们也可以参加这个活动。"
-    ],
     "pos_analysis": [
       {
-        "sentence": "きょうの会議に参加します。",
+        "sentence": "今日の会議に参加します。",
         "tokens": [
           {
-            "surface": "きょう",
-            "lemma": "きょう",
+            "surface": "今日",
+            "lemma": "今日",
             "pos": "名詞/普通名詞/副詞可能/*/*/*",
             "upos": "NOUN",
             "xpos": "名詞",
             "feats": {},
             "start": 0,
-            "end": 3,
+            "end": 2,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "きょう",
-            "ruby_text": "きょう",
-            "ruby_spans": [],
-            "ruby_confidence": "high",
-            "furigana": "きょう"
+            "ruby_text": "今日[きょう]",
+            "ruby_spans": [
+              {
+                "base": "今日",
+                "reading": "きょう",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "きょう",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "の",
@@ -1114,8 +1374,8 @@
             "upos": "PART",
             "xpos": "助詞",
             "feats": {},
-            "start": 3,
-            "end": 4,
+            "start": 2,
+            "end": 3,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "の",
             "ruby_text": "の",
@@ -1130,8 +1390,8 @@
             "upos": "NOUN",
             "xpos": "名詞",
             "feats": {},
-            "start": 4,
-            "end": 6,
+            "start": 3,
+            "end": 5,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "かいぎ",
             "ruby_text": "会議[かいぎ]",
@@ -1143,8 +1403,9 @@
                 "length": 2
               }
             ],
-            "ruby_confidence": "medium",
-            "furigana": "かいぎ"
+            "ruby_confidence": "reviewed",
+            "furigana": "かいぎ",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "に",
@@ -1153,8 +1414,8 @@
             "upos": "PART",
             "xpos": "助詞",
             "feats": {},
-            "start": 6,
-            "end": 7,
+            "start": 5,
+            "end": 6,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "に",
             "ruby_text": "に",
@@ -1169,8 +1430,8 @@
             "upos": "NOUN",
             "xpos": "名詞",
             "feats": {},
-            "start": 7,
-            "end": 9,
+            "start": 6,
+            "end": 8,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "さんか",
             "ruby_text": "参加[さんか]",
@@ -1182,8 +1443,9 @@
                 "length": 2
               }
             ],
-            "ruby_confidence": "medium",
+            "ruby_confidence": "reviewed",
             "furigana": "さんか",
+            "ruby_source": "mediawiki_sentence_ruby",
             "is_main_word": true
           },
           {
@@ -1193,8 +1455,8 @@
             "upos": "VERB",
             "xpos": "動詞",
             "feats": {},
-            "start": 9,
-            "end": 10,
+            "start": 8,
+            "end": 9,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "し",
             "ruby_text": "し",
@@ -1209,8 +1471,8 @@
             "upos": "AUX",
             "xpos": "助動詞",
             "feats": {},
-            "start": 10,
-            "end": 12,
+            "start": 9,
+            "end": 11,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "ます",
             "ruby_text": "ます",
@@ -1225,8 +1487,8 @@
             "upos": "PUNCT",
             "xpos": "補助記号",
             "feats": {},
-            "start": 12,
-            "end": 13,
+            "start": 11,
+            "end": 12,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "。",
             "ruby_text": "。",
@@ -1748,6 +2010,196 @@
         ],
         "difficulty_aggregated": null
       }
+    ],
+    "word_en": "participation; joining; entry",
+    "word_es": "participación",
+    "word_fr": "participation",
+    "word_de": "Teilnahme",
+    "word_it": "partecipazione",
+    "word_ko": "참가",
+    "word_zh-Hans": "参加",
+    "word_yue": "參加",
+    "word_ru": "участие",
+    "word_pt": "participação",
+    "word_he": "השתתפות",
+    "word_tr": "katılım",
+    "word_vi": "tham gia",
+    "word_ar": "مشاركة",
+    "word_nl": "deelname",
+    "word_uk": "участь",
+    "word_hu": "részvétel",
+    "word_hi": "भागीदारी",
+    "word_pl": "uczestnictwo",
+    "word_el": "συμμετοχή",
+    "word_nb": "deltakelse",
+    "word_id": "partisipasi",
+    "word_sv": "deltagande",
+    "word_ro": "participare",
+    "word_cs": "účast",
+    "word_da": "deltagelse",
+    "word_fi": "osallistuminen",
+    "word_ja": "参加",
+    "ar": [
+      "سأشارك في اجتماع اليوم.",
+      "شاركت في فعالية صديقي.",
+      "هل يمكنني الانضمام إلى هذا النادي؟",
+      "يمكن للأطفال أيضًا المشاركة في الفعالية."
+    ],
+    "cs": [
+      "Zúčastním se dnešní schůzky.",
+      "Zúčastnil jsem se akce mého přítele.",
+      "Smím se přidat do tohoto klubu?",
+      "Děti se mohou také zúčastnit akce."
+    ],
+    "da": [
+      "Jeg deltager i dagens møde.",
+      "Jeg deltog i min vens arrangement.",
+      "Må jeg være med i denne klub?",
+      "Børn kan også deltage i arrangementet."
+    ],
+    "de": [
+      "Ich nehme an der heutigen Besprechung teil.",
+      "Ich habe an der Veranstaltung meines Freundes teilgenommen.",
+      "Darf ich diesem Club beitreten?",
+      "Kinder können auch an der Veranstaltung teilnehmen."
+    ],
+    "el": [
+      "Θα συμμετάσχω στη σημερινή συνάντηση.",
+      "Συμμετείχα στην εκδήλωση του φίλου μου.",
+      "Μπορώ να συμμετάσχω σε αυτόν τον σύλλογο;",
+      "Τα παιδιά μπορούν επίσης να συμμετάσχουν στην εκδήλωση."
+    ],
+    "en": [
+      "I will join today’s meeting.",
+      "I joined my friend’s event.",
+      "May I join this club?",
+      "Children can also take part in the event."
+    ],
+    "es": [
+      "Voy a participar en la reunión de hoy.",
+      "Participé en el evento de mi amigo.",
+      "¿Puedo unirme a este club?",
+      "Los niños también pueden participar en el evento."
+    ],
+    "fi": [
+      "Osallistun tämän päivän kokoukseen.",
+      "Osallistuin ystäväni tapahtumaan.",
+      "Voinko liittyä tähän kerhoon?",
+      "Myös lapset voivat osallistua tapahtumaan."
+    ],
+    "fr": [
+      "Je vais participer à la réunion d’aujourd’hui.",
+      "J’ai participé à l’événement de mon ami.",
+      "Puis-je rejoindre ce club ?",
+      "Les enfants peuvent aussi participer à l’événement."
+    ],
+    "he": [
+      "אני אשתתף בפגישה של היום.",
+      "השתתפתי באירוע של החבר שלי.",
+      "אפשר להצטרף למועדון הזה?",
+      "גם ילדים יכולים להשתתף באירוע."
+    ],
+    "hi": [
+      "मैं आज की बैठक में शामिल होऊँगा।",
+      "मैं अपने दोस्त के कार्यक्रम में शामिल हुआ।",
+      "क्या मैं इस क्लब में शामिल हो सकता हूँ?",
+      "बच्चे भी कार्यक्रम में भाग ले सकते हैं।"
+    ],
+    "hu": [
+      "Részt veszek a mai megbeszélésen.",
+      "Részt vettem a barátom eseményén.",
+      "Csatlakozhatok ehhez a klubhoz?",
+      "A gyerekek is részt vehetnek az eseményen."
+    ],
+    "id": [
+      "Saya akan ikut rapat hari ini.",
+      "Saya ikut acara teman saya.",
+      "Bolehkah saya ikut klub ini?",
+      "Anak-anak juga bisa ikut acara itu."
+    ],
+    "it": [
+      "Parteciperò alla riunione di oggi.",
+      "Ho partecipato all'evento del mio amico.",
+      "Posso unirmi a questo club?",
+      "Anche i bambini possono partecipare all'evento."
+    ],
+    "ko": [
+      "오늘 회의에 참석하겠습니다.",
+      "친구의 행사에 참가했습니다.",
+      "이 동아리에 들어가도 될까요?",
+      "아이들도 행사에 참여할 수 있습니다."
+    ],
+    "nb": [
+      "Jeg skal delta på møtet i dag.",
+      "Jeg deltok på vennens arrangement.",
+      "Kan jeg bli med i denne klubben?",
+      "Barn kan også delta på arrangementet."
+    ],
+    "nl": [
+      "Ik neem deel aan de vergadering van vandaag.",
+      "Ik heb deelgenomen aan het evenement van mijn vriend.",
+      "Mag ik lid worden van deze club?",
+      "Kinderen kunnen ook aan het evenement deelnemen."
+    ],
+    "pl": [
+      "Wezmę udział w dzisiejszym spotkaniu.",
+      "Wziąłem udział w wydarzeniu mojego przyjaciela.",
+      "Czy mogę dołączyć do tego klubu?",
+      "Dzieci też mogą wziąć udział w wydarzeniu."
+    ],
+    "pt": [
+      "Vou participar da reunião de hoje.",
+      "Participei do evento do meu amigo.",
+      "Posso entrar neste clube?",
+      "As crianças também podem participar do evento."
+    ],
+    "ro": [
+      "Voi participa la ședința de azi.",
+      "Am participat la evenimentul prietenului meu.",
+      "Pot să mă alătur acestui club?",
+      "Copiii pot participa și ei la eveniment."
+    ],
+    "ru": [
+      "Я приму участие в сегодняшнем собрании.",
+      "Я участвовал в мероприятии моего друга.",
+      "Можно мне присоединиться к этому клубу?",
+      "Дети тоже могут участвовать в мероприятии."
+    ],
+    "sv": [
+      "Jag ska delta i dagens möte.",
+      "Jag deltog i min väns evenemang.",
+      "Får jag vara med i den här klubben?",
+      "Barn kan också delta i evenemanget."
+    ],
+    "tr": [
+      "Bugünkü toplantıya katılacağım.",
+      "Arkadaşımın etkinliğine katıldım.",
+      "Bu kulübe katılabilir miyim?",
+      "Çocuklar da etkinliğe katılabilir."
+    ],
+    "uk": [
+      "Я візьму участь у сьогоднішній нараді.",
+      "Я взяв участь у заході свого друга.",
+      "Можна мені приєднатися до цього клубу?",
+      "Діти також можуть брати участь у заході."
+    ],
+    "vi": [
+      "Tôi sẽ tham gia cuộc họp hôm nay.",
+      "Tôi đã tham gia sự kiện của bạn tôi.",
+      "Tôi có thể tham gia câu lạc bộ này không?",
+      "Trẻ em cũng có thể tham gia sự kiện."
+    ],
+    "yue": [
+      "我會參加今日嘅會議。",
+      "我參加咗我朋友嘅活動。",
+      "我可以加入呢個社團嗎？",
+      "小朋友都可以參加呢個活動。"
+    ],
+    "zh-Hans": [
+      "我会参加今天的会议。",
+      "我参加了朋友的活动。",
+      "我可以参加这个社团吗？",
+      "孩子们也可以参加这个活动。"
     ]
   }
 }

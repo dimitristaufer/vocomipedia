@@ -53,7 +53,7 @@
         "it": "Questa borsa costa 10.000 yen.",
         "ko": "이 가방은 1만 엔이에요.",
         "zh-Hans": "这个包要1万日元。",
-        "yue": "呢個袋要一萬蚊",
+        "yue": "呢個袋要一萬日圓。",
         "ru": "Эта сумка стоит 10 000 йен.",
         "pt": "Essa bolsa custa 10.000 ienes.",
         "he": "התיק הזה עולה 10,000 ין.",
@@ -191,19 +191,21 @@
         "id": "Saya berjalan 10.000 langkah hari ini.",
         "sv": "Jag gick 10 000 steg idag.",
         "ro": "Astăzi am mers 10.000 de pași.",
-        "cs": "Dnes jsem ušla 10 000 kroků.",
+        "cs": "Dnes mám nachozeno 10 000 kroků.",
         "da": "Jeg gik 10.000 skridt i dag.",
         "fi": "Kävelin tänään 10 000 askelta."
       },
       "tokens": [
         {
           "surface": "今日",
-          "surface_en": "today",
-          "furigana": "きょう",
-          "pos": "noun",
           "lemma": "今日",
-          "explanation": "time expression indicating when the action took place",
-          "difficulty": 3,
+          "pos": "名詞/普通名詞/副詞可能/*/*/*",
+          "upos": "NOUN",
+          "xpos": "名詞",
+          "feats": {},
+          "start": 0,
+          "end": 2,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "きょう",
           "ruby_text": "今日[きょう]",
           "ruby_spans": [
@@ -214,61 +216,87 @@
               "length": 2
             }
           ],
-          "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "ruby_confidence": "reviewed",
+          "furigana": "きょう",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "は",
-          "surface_en": "(topic marker)",
-          "furigana": "は",
-          "pos": "particle",
           "lemma": "は",
-          "explanation": "marks 「今日は」 as the topic",
-          "difficulty": 1,
+          "pos": "助詞/係助詞/*/*/*/*",
+          "upos": "PART",
+          "xpos": "助詞",
+          "feats": {},
+          "start": 2,
+          "end": 3,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "は",
           "ruby_text": "は",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "は"
         },
         {
-          "surface": "一万歩",
-          "surface_en": "ten thousand steps",
-          "furigana": "いちまんほ",
-          "pos": "numeral+noun",
-          "lemma": "一万歩",
-          "explanation": "quantifies how many steps were taken",
-          "difficulty": 1,
-          "is_main_word": true,
-          "reading_kana": "いちまんほ",
-          "ruby_text": "一万[いちまん]歩[ほ]",
+          "surface": "一万",
+          "lemma": "一万",
+          "pos": "名詞/数詞/*/*/*/*",
+          "upos": "NOUN",
+          "xpos": "名詞",
+          "feats": {},
+          "start": 3,
+          "end": 5,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "いちまん",
+          "ruby_text": "一万[いちまん]",
           "ruby_spans": [
             {
               "base": "一万",
               "reading": "いちまん",
               "start": 0,
               "length": 2
-            },
+            }
+          ],
+          "ruby_confidence": "reviewed",
+          "furigana": "いちまん",
+          "ruby_source": "mediawiki_sentence_ruby",
+          "is_main_word": true
+        },
+        {
+          "surface": "歩",
+          "lemma": "歩",
+          "pos": "名詞/普通名詞/助数詞可能/*/*/*",
+          "upos": "NOUN",
+          "xpos": "名詞",
+          "feats": {},
+          "start": 5,
+          "end": 6,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "ほ",
+          "ruby_text": "歩[ほ]",
+          "ruby_spans": [
             {
               "base": "歩",
               "reading": "ほ",
-              "start": 2,
+              "start": 0,
               "length": 1
             }
           ],
-          "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "ruby_confidence": "reviewed",
+          "furigana": "ほ",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
-          "surface": "歩きました",
-          "surface_en": "walked",
-          "furigana": "あるきました",
-          "pos": "verb",
+          "surface": "歩き",
           "lemma": "歩く",
-          "explanation": "past polite form of 「歩く」 describing the action performed",
-          "difficulty": 6,
-          "reading_kana": "あるきました",
-          "ruby_text": "歩[ある]きました",
+          "pos": "動詞/一般/*/*/五段-カ行/連用形-一般",
+          "upos": "VERB",
+          "xpos": "動詞",
+          "feats": {},
+          "start": 6,
+          "end": 8,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "あるき",
+          "ruby_text": "歩[ある]き",
           "ruby_spans": [
             {
               "base": "歩",
@@ -277,8 +305,57 @@
               "length": 1
             }
           ],
+          "ruby_confidence": "reviewed",
+          "furigana": "あるき",
+          "ruby_source": "mediawiki_sentence_ruby"
+        },
+        {
+          "surface": "まし",
+          "lemma": "ます",
+          "pos": "助動詞/*/*/*/助動詞-マス/連用形-一般",
+          "upos": "AUX",
+          "xpos": "助動詞",
+          "feats": {},
+          "start": 8,
+          "end": 10,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "まし",
+          "ruby_text": "まし",
+          "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "まし"
+        },
+        {
+          "surface": "た",
+          "lemma": "た",
+          "pos": "助動詞/*/*/*/助動詞-タ/終止形-一般",
+          "upos": "AUX",
+          "xpos": "助動詞",
+          "feats": {},
+          "start": 10,
+          "end": 11,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "た",
+          "ruby_text": "た",
+          "ruby_spans": [],
+          "ruby_confidence": "high",
+          "furigana": "た"
+        },
+        {
+          "surface": "。",
+          "lemma": "。",
+          "pos": "補助記号/句点/*/*/*/*",
+          "upos": "PUNCT",
+          "xpos": "補助記号",
+          "feats": {},
+          "start": 11,
+          "end": 12,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "。",
+          "ruby_text": "。",
+          "ruby_spans": [],
+          "ruby_confidence": "high",
+          "furigana": "。"
         }
       ],
       "difficulty": 2.75,
@@ -304,12 +381,12 @@
         "ar": "باع المتجر 10,000 قطعة كوكيز.",
         "nl": "De winkel verkocht 10.000 koekjes.",
         "uk": "Магазин продав 10 000 печива.",
-        "hu": "Az üzlet 10 000 sütit árult el.",
+        "hu": "Az üzlet 10 000 sütit adott el.",
         "hi": "स्टोर ने 10,000 कुकीज़ बेचीं।",
         "pl": "Sklep sprzedał 10 000 ciasteczek.",
         "el": "Το κατάστημα πούλησε 10.000 μπισκότα.",
         "nb": "Butikken solgte 10 000 kjeks.",
-        "id": "Toko itu menjual 10.000 kue.",
+        "id": "Toko itu menjual 10.000 kue kering.",
         "sv": "Butiken sålde 10 000 kakor.",
         "ro": "Magazinul a vândut 10.000 de fursecuri.",
         "cs": "Obchod prodal 10 000 sušenek.",
@@ -458,7 +535,7 @@
         "it": "Ci sono 10.000 residenti in questa città.",
         "ko": "이 마을에는 1만 명의 주민이 있습니다.",
         "zh-Hans": "这个镇有1万名居民。",
-        "yue": "呢個鎮有10,000居民。",
+        "yue": "呢個鎮有10,000個居民。",
         "ru": "В этом городе проживает 10 000 человек.",
         "pt": "Há 10.000 moradores nesta cidade.",
         "he": "בעיירה הזו מתגוררים 10,000 תושבים.",
@@ -469,7 +546,7 @@
         "uk": "У цьому місті проживає 10 000 мешканців.",
         "hu": "Ebben a városban 10 000 lakos él.",
         "hi": "इस शहर में 10,000 निवासी रहते हैं।",
-        "pl": "В tym mieście mieszka 10 000 osób.",
+        "pl": "W tym mieście mieszka 10 000 osób.",
         "el": "Υπάρχουν 10.000 κάτοικοι σε αυτή την πόλη.",
         "nb": "Det bor 10 000 innbyggere i denne byen.",
         "id": "Ada 10.000 penduduk di kota ini.",
@@ -653,19 +730,452 @@
     "content_reviewers": [
       "mediawiki-visible-revision"
     ],
-    "last_reviewed_utc": "2026-06-21T18:37:05Z",
-    "approval_source": "mediawiki_visible_revision",
+    "last_reviewed_utc": "2026-10-11T12:39:13Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
     "wiki": {
       "title": "Item:Ja n5/fbf95490453c7e67",
-      "revision_id": 58571,
-      "parent_revision_id": 37015,
-      "revision_timestamp_utc": "2026-06-21T18:37:05Z",
-      "revision_user": "VocomiBot",
-      "revision_comment": "Sync ja_n5 item 一万",
-      "pulled_utc": "2026-06-21T20:53:48Z",
-      "applied_utc": "2026-06-21T20:54:01Z",
+      "revision_id": 82764,
+      "parent_revision_id": 69746,
+      "revision_timestamp_utc": "2026-10-11T12:39:13Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Suggest reviewed Japanese and translation corrections",
+      "pulled_utc": "2026-10-17T07:37:42Z",
+      "applied_utc": "2026-10-17T07:38:00Z",
       "applied_by": "vocomipedia-apply-pulled"
-    }
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-16802cef887ecb89",
+        "status": "applied",
+        "type": "ruby_update",
+        "item_id": "ja_n5:fbf95490453c7e67",
+        "pack_code": "ja_n5",
+        "entry_id": "一万",
+        "language": "ja",
+        "sentence_index": 2,
+        "old_sentence": "今日は一万歩歩きました。",
+        "old_translations": {
+          "en": "I walked 10,000 steps today.",
+          "es": "Hoy he caminado 10.000 pasos.",
+          "fr": "J’ai fait 10 000 pas aujourd’hui.",
+          "de": "Ich bin heute 10.000 Schritte gegangen.",
+          "it": "Oggi ho fatto 10.000 passi.",
+          "ko": "오늘 만 보 걸었어.",
+          "zh-Hans": "我今天走了一万步。",
+          "yue": "我今日行咗一萬步",
+          "ru": "Сегодня я прошёл 10 000 шагов.",
+          "pt": "Hoje caminhei 10.000 passos.",
+          "he": "הלכתי היום 10,000 צעדים.",
+          "tr": "Bugün 10.000 adım yürüdüm.",
+          "vi": "Hôm nay tôi đã đi bộ 10.000 bước.",
+          "ar": "مشيت 10,000 خطوة اليوم.",
+          "nl": "Ik heb vandaag 10.000 stappen gelopen.",
+          "uk": "Сьогодні я пройшов 10 000 кроків.",
+          "hu": "Ma tízezer lépést sétáltam.",
+          "hi": "मैं आज 10,000 कदम चला।",
+          "pl": "Dziś przeszedłem 10 000 kroków.",
+          "el": "Περπάτησα 10.000 βήματα σήμερα.",
+          "nb": "Jeg gikk 10 000 skritt i dag.",
+          "id": "Saya berjalan 10.000 langkah hari ini.",
+          "sv": "Jag gick 10 000 steg idag.",
+          "ro": "Astăzi am mers 10.000 de pași.",
+          "cs": "Dnes mám nachozeno 10 000 kroků.",
+          "da": "Jeg gik 10.000 skridt i dag.",
+          "fi": "Kävelin tänään 10 000 askelta."
+        },
+        "proposed_sentence": "今日は一万歩歩きました。",
+        "proposed_translations": {
+          "en": "I walked 10,000 steps today.",
+          "es": "Hoy he caminado 10.000 pasos.",
+          "fr": "J’ai fait 10 000 pas aujourd’hui.",
+          "de": "Ich bin heute 10.000 Schritte gegangen.",
+          "it": "Oggi ho fatto 10.000 passi.",
+          "ko": "오늘 만 보 걸었어.",
+          "zh-Hans": "我今天走了一万步。",
+          "yue": "我今日行咗一萬步",
+          "ru": "Сегодня я прошёл 10 000 шагов.",
+          "pt": "Hoje caminhei 10.000 passos.",
+          "he": "הלכתי היום 10,000 צעדים.",
+          "tr": "Bugün 10.000 adım yürüdüm.",
+          "vi": "Hôm nay tôi đã đi bộ 10.000 bước.",
+          "ar": "مشيت 10,000 خطوة اليوم.",
+          "nl": "Ik heb vandaag 10.000 stappen gelopen.",
+          "uk": "Сьогодні я пройшов 10 000 кроків.",
+          "hu": "Ma tízezer lépést sétáltam.",
+          "hi": "मैं आज 10,000 कदम चला।",
+          "pl": "Dziś przeszedłem 10 000 kroków.",
+          "el": "Περπάτησα 10.000 βήματα σήμερα.",
+          "nb": "Jeg gikk 10 000 skritt i dag.",
+          "id": "Saya berjalan 10.000 langkah hari ini.",
+          "sv": "Jag gick 10 000 steg idag.",
+          "ro": "Astăzi am mers 10.000 de pași.",
+          "cs": "Dnes mám nachozeno 10 000 kroků.",
+          "da": "Jeg gik 10.000 skridt i dag.",
+          "fi": "Kävelin tänään 10 000 askelta."
+        },
+        "old_ruby_source": "今日[きょう]は一万[いちまん]歩[ぽ]歩[ある]きました。",
+        "proposed_ruby_source": "今日[きょう]は一万[いちまん]歩[ほ]歩[ある]きました。",
+        "old_japanese": "今日は一万歩歩きました。",
+        "old_english": "I walked 10,000 steps today.",
+        "proposed_japanese": "今日は一万歩歩きました。",
+        "proposed_english": "I walked 10,000 steps today.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "ja",
+          "sentence": "今日は一万歩歩きました。",
+          "tokens": [
+            {
+              "surface": "今日",
+              "lemma": "今日",
+              "pos": "名詞/普通名詞/副詞可能/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 0,
+              "end": 2,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "きょう",
+              "ruby_text": "今日[きょう]",
+              "ruby_spans": [
+                {
+                  "base": "今日",
+                  "reading": "きょう",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "きょう",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "は",
+              "lemma": "は",
+              "pos": "助詞/係助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 2,
+              "end": 3,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "は",
+              "ruby_text": "は",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "は"
+            },
+            {
+              "surface": "一万",
+              "lemma": "一万",
+              "pos": "名詞/数詞/*/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 3,
+              "end": 5,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "いちまん",
+              "ruby_text": "一万[いちまん]",
+              "ruby_spans": [
+                {
+                  "base": "一万",
+                  "reading": "いちまん",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "いちまん",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "歩",
+              "lemma": "歩",
+              "pos": "名詞/普通名詞/助数詞可能/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 5,
+              "end": 6,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "ほ",
+              "ruby_text": "歩[ほ]",
+              "ruby_spans": [
+                {
+                  "base": "歩",
+                  "reading": "ほ",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "ほ",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "歩き",
+              "lemma": "歩く",
+              "pos": "動詞/一般/*/*/五段-カ行/連用形-一般",
+              "upos": "VERB",
+              "xpos": "動詞",
+              "feats": {},
+              "start": 6,
+              "end": 8,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "あるき",
+              "ruby_text": "歩[ある]き",
+              "ruby_spans": [
+                {
+                  "base": "歩",
+                  "reading": "ある",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "あるき",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "まし",
+              "lemma": "ます",
+              "pos": "助動詞/*/*/*/助動詞-マス/連用形-一般",
+              "upos": "AUX",
+              "xpos": "助動詞",
+              "feats": {},
+              "start": 8,
+              "end": 10,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "まし",
+              "ruby_text": "まし",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "まし"
+            },
+            {
+              "surface": "た",
+              "lemma": "た",
+              "pos": "助動詞/*/*/*/助動詞-タ/終止形-一般",
+              "upos": "AUX",
+              "xpos": "助動詞",
+              "feats": {},
+              "start": 10,
+              "end": 11,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "た",
+              "ruby_text": "た",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "た"
+            },
+            {
+              "surface": "。",
+              "lemma": "。",
+              "pos": "補助記号/句点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 11,
+              "end": 12,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "。",
+              "ruby_text": "。",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "。"
+            }
+          ],
+          "reading": "きょうはいちまんほあるきました。",
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "warnings": [
+            "mediawiki ruby hints applied"
+          ]
+        },
+        "generated_tokens": [
+          {
+            "surface": "今日",
+            "lemma": "今日",
+            "pos": "名詞/普通名詞/副詞可能/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "きょう",
+            "ruby_text": "今日[きょう]",
+            "ruby_spans": [
+              {
+                "base": "今日",
+                "reading": "きょう",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "きょう",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "は",
+            "lemma": "は",
+            "pos": "助詞/係助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 2,
+            "end": 3,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "は",
+            "ruby_text": "は",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "は"
+          },
+          {
+            "surface": "一万",
+            "lemma": "一万",
+            "pos": "名詞/数詞/*/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 3,
+            "end": 5,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "いちまん",
+            "ruby_text": "一万[いちまん]",
+            "ruby_spans": [
+              {
+                "base": "一万",
+                "reading": "いちまん",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "いちまん",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "歩",
+            "lemma": "歩",
+            "pos": "名詞/普通名詞/助数詞可能/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 5,
+            "end": 6,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ほ",
+            "ruby_text": "歩[ほ]",
+            "ruby_spans": [
+              {
+                "base": "歩",
+                "reading": "ほ",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "ほ",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "歩き",
+            "lemma": "歩く",
+            "pos": "動詞/一般/*/*/五段-カ行/連用形-一般",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 6,
+            "end": 8,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "あるき",
+            "ruby_text": "歩[ある]き",
+            "ruby_spans": [
+              {
+                "base": "歩",
+                "reading": "ある",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "あるき",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "まし",
+            "lemma": "ます",
+            "pos": "助動詞/*/*/*/助動詞-マス/連用形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 8,
+            "end": 10,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "まし",
+            "ruby_text": "まし",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "まし"
+          },
+          {
+            "surface": "た",
+            "lemma": "た",
+            "pos": "助動詞/*/*/*/助動詞-タ/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 10,
+            "end": 11,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "た",
+            "ruby_text": "た",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "た"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 11,
+            "end": 12,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
+          }
+        ],
+        "generated_reading": "きょうはいちまんほあるきました。",
+        "analyzer": "sudachipy_sudachidict_core_c",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:37:42Z",
+        "updated_utc": "2026-10-17T07:38:17Z",
+        "applied_utc": "2026-10-17T07:38:17Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:38:17Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -791,12 +1301,14 @@
         "tokens": [
           {
             "surface": "今日",
-            "surface_en": "today",
-            "furigana": "きょう",
-            "pos": "noun",
             "lemma": "今日",
-            "explanation": "time expression indicating when the action took place",
-            "difficulty": 3,
+            "pos": "名詞/普通名詞/副詞可能/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "きょう",
             "ruby_text": "今日[きょう]",
             "ruby_spans": [
@@ -807,61 +1319,87 @@
                 "length": 2
               }
             ],
-            "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "ruby_confidence": "reviewed",
+            "furigana": "きょう",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "は",
-            "surface_en": "(topic marker)",
-            "furigana": "は",
-            "pos": "particle",
             "lemma": "は",
-            "explanation": "marks 「今日は」 as the topic",
-            "difficulty": 1,
+            "pos": "助詞/係助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 2,
+            "end": 3,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "は",
             "ruby_text": "は",
             "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "は"
           },
           {
-            "surface": "一万歩",
-            "surface_en": "ten thousand steps",
-            "furigana": "いちまんほ",
-            "pos": "numeral+noun",
-            "lemma": "一万歩",
-            "explanation": "quantifies how many steps were taken",
-            "difficulty": 1,
-            "is_main_word": true,
-            "reading_kana": "いちまんほ",
-            "ruby_text": "一万[いちまん]歩[ほ]",
+            "surface": "一万",
+            "lemma": "一万",
+            "pos": "名詞/数詞/*/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 3,
+            "end": 5,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "いちまん",
+            "ruby_text": "一万[いちまん]",
             "ruby_spans": [
               {
                 "base": "一万",
                 "reading": "いちまん",
                 "start": 0,
                 "length": 2
-              },
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "いちまん",
+            "ruby_source": "mediawiki_sentence_ruby",
+            "is_main_word": true
+          },
+          {
+            "surface": "歩",
+            "lemma": "歩",
+            "pos": "名詞/普通名詞/助数詞可能/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 5,
+            "end": 6,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ほ",
+            "ruby_text": "歩[ほ]",
+            "ruby_spans": [
               {
                 "base": "歩",
                 "reading": "ほ",
-                "start": 2,
+                "start": 0,
                 "length": 1
               }
             ],
-            "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "ruby_confidence": "reviewed",
+            "furigana": "ほ",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
-            "surface": "歩きました",
-            "surface_en": "walked",
-            "furigana": "あるきました",
-            "pos": "verb",
+            "surface": "歩き",
             "lemma": "歩く",
-            "explanation": "past polite form of 「歩く」 describing the action performed",
-            "difficulty": 6,
-            "reading_kana": "あるきました",
-            "ruby_text": "歩[ある]きました",
+            "pos": "動詞/一般/*/*/五段-カ行/連用形-一般",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 6,
+            "end": 8,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "あるき",
+            "ruby_text": "歩[ある]き",
             "ruby_spans": [
               {
                 "base": "歩",
@@ -870,8 +1408,57 @@
                 "length": 1
               }
             ],
+            "ruby_confidence": "reviewed",
+            "furigana": "あるき",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "まし",
+            "lemma": "ます",
+            "pos": "助動詞/*/*/*/助動詞-マス/連用形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 8,
+            "end": 10,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "まし",
+            "ruby_text": "まし",
+            "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "まし"
+          },
+          {
+            "surface": "た",
+            "lemma": "た",
+            "pos": "助動詞/*/*/*/助動詞-タ/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 10,
+            "end": 11,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "た",
+            "ruby_text": "た",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "た"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 11,
+            "end": 12,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
           }
         ],
         "difficulty_aggregated": 2.75
@@ -1206,7 +1793,7 @@
     ],
     "cs": [
       "Tahle taška stojí 10 000 jenů.",
-      "Dnes jsem ušla 10 000 kroků.",
+      "Dnes mám nachozeno 10 000 kroků.",
       "Obchod prodal 10 000 sušenek.",
       "V tomto městě žije 10 000 obyvatel."
     ],
@@ -1267,13 +1854,13 @@
     "hu": [
       "Ez a táska 10 000 jenbe kerül.",
       "Ma tízezer lépést sétáltam.",
-      "Az üzlet 10 000 sütit árult el.",
+      "Az üzlet 10 000 sütit adott el.",
       "Ebben a városban 10 000 lakos él."
     ],
     "id": [
       "Tas ini berharga 10.000 yen.",
       "Saya berjalan 10.000 langkah hari ini.",
-      "Toko itu menjual 10.000 kue.",
+      "Toko itu menjual 10.000 kue kering.",
       "Ada 10.000 penduduk di kota ini."
     ],
     "it": [
@@ -1304,7 +1891,7 @@
       "Ta torba kosztuje 10 000 jenów.",
       "Dziś przeszedłem 10 000 kroków.",
       "Sklep sprzedał 10 000 ciasteczek.",
-      "В tym mieście mieszka 10 000 osób."
+      "W tym mieście mieszka 10 000 osób."
     ],
     "pt": [
       "Essa bolsa custa 10.000 ienes.",
@@ -1349,10 +1936,10 @@
       "Có 10.000 cư dân trong thị trấn này."
     ],
     "yue": [
-      "呢個袋要一萬蚊",
+      "呢個袋要一萬日圓。",
       "我今日行咗一萬步",
       "商店賣咗10,000塊餅乾。",
-      "呢個鎮有10,000居民。"
+      "呢個鎮有10,000個居民。"
     ],
     "zh-Hans": [
       "这个包要1万日元。",

@@ -46,7 +46,7 @@
       "reading": "このきのこにはどくがあります。",
       "translations": {
         "en": "This mushroom is poisonous.",
-        "ar": "هذه الفطرة سامة.",
+        "ar": "هذا الفطر سام.",
         "cs": "Tahle houba je jedovatá.",
         "da": "Den svamp er giftig.",
         "de": "Dieser Pilz ist giftig.",
@@ -668,7 +668,7 @@
       "difficulty": null
     },
     {
-      "target": "毒のある草にはさわらないでください。",
+      "target": "毒のある草には触らないでください。",
       "reading": "どくのあるくさにはさわらないでください。",
       "translations": {
         "en": "Please don't touch poisonous plants.",
@@ -688,7 +688,7 @@
         "ko": "독이 있는 풀은 만지지 마세요.",
         "nb": "Ikke rør giftige planter.",
         "nl": "Raak giftige planten niet aan.",
-        "pl": "Proszę, nie dotykaj trujących roślin.",
+        "pl": "Proszę nie dotykać trujących roślin.",
         "pt": "Por favor, não toque nas plantas venenosas.",
         "ro": "Vă rog să nu atingeți plantele otrăvitoare.",
         "ru": "Пожалуйста, не трогайте ядовитые растения.",
@@ -720,8 +720,9 @@
               "length": 1
             }
           ],
-          "ruby_confidence": "high",
+          "ruby_confidence": "reviewed",
           "furigana": "どく",
+          "ruby_source": "mediawiki_sentence_ruby",
           "is_main_word": true
         },
         {
@@ -776,8 +777,9 @@
               "length": 1
             }
           ],
-          "ruby_confidence": "high",
-          "furigana": "くさ"
+          "ruby_confidence": "reviewed",
+          "furigana": "くさ",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "に",
@@ -812,20 +814,28 @@
           "furigana": "は"
         },
         {
-          "surface": "さわら",
-          "lemma": "さわる",
+          "surface": "触ら",
+          "lemma": "触る",
           "pos": "動詞/一般/*/*/五段-ラ行/未然形-一般",
           "upos": "VERB",
           "xpos": "動詞",
           "feats": {},
           "start": 7,
-          "end": 10,
+          "end": 9,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "さわら",
-          "ruby_text": "さわら",
-          "ruby_spans": [],
-          "ruby_confidence": "high",
-          "furigana": "さわら"
+          "ruby_text": "触[さわ]ら",
+          "ruby_spans": [
+            {
+              "base": "触",
+              "reading": "さわ",
+              "start": 0,
+              "length": 1
+            }
+          ],
+          "ruby_confidence": "reviewed",
+          "furigana": "さわら",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "ない",
@@ -834,8 +844,8 @@
           "upos": "AUX",
           "xpos": "助動詞",
           "feats": {},
-          "start": 10,
-          "end": 12,
+          "start": 9,
+          "end": 11,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "ない",
           "ruby_text": "ない",
@@ -850,8 +860,8 @@
           "upos": "PART",
           "xpos": "助詞",
           "feats": {},
-          "start": 12,
-          "end": 13,
+          "start": 11,
+          "end": 12,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "で",
           "ruby_text": "で",
@@ -866,8 +876,8 @@
           "upos": "VERB",
           "xpos": "動詞",
           "feats": {},
-          "start": 13,
-          "end": 17,
+          "start": 12,
+          "end": 16,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "ください",
           "ruby_text": "ください",
@@ -882,8 +892,8 @@
           "upos": "PUNCT",
           "xpos": "補助記号",
           "feats": {},
-          "start": 17,
-          "end": 18,
+          "start": 16,
+          "end": 17,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "。",
           "ruby_text": "。",
@@ -906,8 +916,536 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-13T08:12:19Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:Ja n3/f6f6c0032c30f9eb",
+      "revision_id": 80189,
+      "parent_revision_id": 68366,
+      "revision_timestamp_utc": "2026-10-13T08:12:19Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Corrected the Arabic mushroom word, standardized the Japanese verb, and made the Polish warning consistently polite.",
+      "pulled_utc": "2026-10-18T17:39:19Z",
+      "applied_utc": "2026-10-18T17:40:00Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-a6df83ada179a7e6",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "ja_n3:f6f6c0032c30f9eb",
+        "pack_code": "ja_n3",
+        "entry_id": "毒",
+        "language": "ja",
+        "sentence_index": 4,
+        "old_sentence": "毒のある草にはさわらないでください。",
+        "old_translations": {
+          "en": "Please don't touch poisonous plants.",
+          "ar": "يرجى عدم لمس النباتات السامة.",
+          "cs": "Prosím, nedotýkejte se jedovatých rostlin.",
+          "da": "Rør ikke ved giftige planter.",
+          "de": "Bitte berühren Sie keine giftigen Pflanzen.",
+          "el": "Παρακαλώ μην αγγίζετε τα δηλητηριώδη φυτά.",
+          "es": "Por favor, no toque las plantas venenosas.",
+          "fi": "Älä koske myrkyllisiin kasveihin.",
+          "fr": "Veuillez ne pas toucher les plantes vénéneuses.",
+          "he": "אנא אל תיגעו בצמחים רעילים.",
+          "hi": "कृपया ज़हरीले पौधों को न छुएँ।",
+          "hu": "Kérlek, ne érintsd meg a mérgező növényeket.",
+          "id": "Tolong jangan sentuh tanaman beracun.",
+          "it": "Per favore, non toccare le piante velenose.",
+          "ko": "독이 있는 풀은 만지지 마세요.",
+          "nb": "Ikke rør giftige planter.",
+          "nl": "Raak giftige planten niet aan.",
+          "pl": "Proszę, nie dotykaj trujących roślin.",
+          "pt": "Por favor, não toque nas plantas venenosas.",
+          "ro": "Vă rog să nu atingeți plantele otrăvitoare.",
+          "ru": "Пожалуйста, не трогайте ядовитые растения.",
+          "sv": "Rör inte giftiga växter.",
+          "tr": "Lütfen zehirli bitkilere dokunmayın.",
+          "uk": "Будь ласка, не торкайтеся отруйних рослин.",
+          "vi": "Làm ơn đừng chạm vào những cây có độc.",
+          "yue": "請唔好掂有毒嘅植物。",
+          "zh-Hans": "请不要碰有毒的植物。"
+        },
+        "proposed_sentence": "毒のある草には触らないでください。",
+        "proposed_translations": {
+          "en": "Please don't touch poisonous plants.",
+          "ar": "يرجى عدم لمس النباتات السامة.",
+          "cs": "Prosím, nedotýkejte se jedovatých rostlin.",
+          "da": "Rør ikke ved giftige planter.",
+          "de": "Bitte berühren Sie keine giftigen Pflanzen.",
+          "el": "Παρακαλώ μην αγγίζετε τα δηλητηριώδη φυτά.",
+          "es": "Por favor, no toque las plantas venenosas.",
+          "fi": "Älä koske myrkyllisiin kasveihin.",
+          "fr": "Veuillez ne pas toucher les plantes vénéneuses.",
+          "he": "אנא אל תיגעו בצמחים רעילים.",
+          "hi": "कृपया ज़हरीले पौधों को न छुएँ।",
+          "hu": "Kérlek, ne érintsd meg a mérgező növényeket.",
+          "id": "Tolong jangan sentuh tanaman beracun.",
+          "it": "Per favore, non toccare le piante velenose.",
+          "ko": "독이 있는 풀은 만지지 마세요.",
+          "nb": "Ikke rør giftige planter.",
+          "nl": "Raak giftige planten niet aan.",
+          "pl": "Proszę nie dotykać trujących roślin.",
+          "pt": "Por favor, não toque nas plantas venenosas.",
+          "ro": "Vă rog să nu atingeți plantele otrăvitoare.",
+          "ru": "Пожалуйста, не трогайте ядовитые растения.",
+          "sv": "Rör inte giftiga växter.",
+          "tr": "Lütfen zehirli bitkilere dokunmayın.",
+          "uk": "Будь ласка, не торкайтеся отруйних рослин.",
+          "vi": "Làm ơn đừng chạm vào những cây có độc.",
+          "yue": "請唔好掂有毒嘅植物。",
+          "zh-Hans": "请不要碰有毒的植物。"
+        },
+        "old_ruby_source": "毒[どく]のある草[くさ]にはさわらないでください。",
+        "proposed_ruby_source": "毒[どく]のある草[くさ]には触[さわ]らないでください。",
+        "old_japanese": "毒のある草にはさわらないでください。",
+        "old_english": "Please don't touch poisonous plants.",
+        "proposed_japanese": "毒のある草には触らないでください。",
+        "proposed_english": "Please don't touch poisonous plants.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "ja",
+          "sentence": "毒のある草には触らないでください。",
+          "tokens": [
+            {
+              "surface": "毒",
+              "lemma": "毒",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 0,
+              "end": 1,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "どく",
+              "ruby_text": "毒[どく]",
+              "ruby_spans": [
+                {
+                  "base": "毒",
+                  "reading": "どく",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "どく",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "の",
+              "lemma": "の",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 1,
+              "end": 2,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "の",
+              "ruby_text": "の",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "の"
+            },
+            {
+              "surface": "ある",
+              "lemma": "ある",
+              "pos": "動詞/非自立可能/*/*/五段-ラ行/連体形-一般",
+              "upos": "VERB",
+              "xpos": "動詞",
+              "feats": {},
+              "start": 2,
+              "end": 4,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "ある",
+              "ruby_text": "ある",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "ある"
+            },
+            {
+              "surface": "草",
+              "lemma": "草",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 4,
+              "end": 5,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "くさ",
+              "ruby_text": "草[くさ]",
+              "ruby_spans": [
+                {
+                  "base": "草",
+                  "reading": "くさ",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "くさ",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "に",
+              "lemma": "に",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 5,
+              "end": 6,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "に",
+              "ruby_text": "に",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "に"
+            },
+            {
+              "surface": "は",
+              "lemma": "は",
+              "pos": "助詞/係助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 6,
+              "end": 7,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "は",
+              "ruby_text": "は",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "は"
+            },
+            {
+              "surface": "触ら",
+              "lemma": "触る",
+              "pos": "動詞/一般/*/*/五段-ラ行/未然形-一般",
+              "upos": "VERB",
+              "xpos": "動詞",
+              "feats": {},
+              "start": 7,
+              "end": 9,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "さわら",
+              "ruby_text": "触[さわ]ら",
+              "ruby_spans": [
+                {
+                  "base": "触",
+                  "reading": "さわ",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "さわら",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "ない",
+              "lemma": "ない",
+              "pos": "助動詞/*/*/*/助動詞-ナイ/終止形-一般",
+              "upos": "AUX",
+              "xpos": "助動詞",
+              "feats": {},
+              "start": 9,
+              "end": 11,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "ない",
+              "ruby_text": "ない",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "ない"
+            },
+            {
+              "surface": "で",
+              "lemma": "で",
+              "pos": "助詞/接続助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 11,
+              "end": 12,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "で",
+              "ruby_text": "で",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "で"
+            },
+            {
+              "surface": "ください",
+              "lemma": "くださる",
+              "pos": "動詞/非自立可能/*/*/五段-ラ行/命令形",
+              "upos": "VERB",
+              "xpos": "動詞",
+              "feats": {},
+              "start": 12,
+              "end": 16,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "ください",
+              "ruby_text": "ください",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "ください"
+            },
+            {
+              "surface": "。",
+              "lemma": "。",
+              "pos": "補助記号/句点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 16,
+              "end": 17,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "。",
+              "ruby_text": "。",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "。"
+            }
+          ],
+          "reading": "どくのあるくさにはさわらないでください。",
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "warnings": [
+            "mediawiki ruby hints applied"
+          ]
+        },
+        "generated_tokens": [
+          {
+            "surface": "毒",
+            "lemma": "毒",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 0,
+            "end": 1,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "どく",
+            "ruby_text": "毒[どく]",
+            "ruby_spans": [
+              {
+                "base": "毒",
+                "reading": "どく",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "どく",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "の",
+            "lemma": "の",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 1,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "の",
+            "ruby_text": "の",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "の"
+          },
+          {
+            "surface": "ある",
+            "lemma": "ある",
+            "pos": "動詞/非自立可能/*/*/五段-ラ行/連体形-一般",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 2,
+            "end": 4,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ある",
+            "ruby_text": "ある",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "ある"
+          },
+          {
+            "surface": "草",
+            "lemma": "草",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 4,
+            "end": 5,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "くさ",
+            "ruby_text": "草[くさ]",
+            "ruby_spans": [
+              {
+                "base": "草",
+                "reading": "くさ",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "くさ",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "に",
+            "lemma": "に",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 5,
+            "end": 6,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "に",
+            "ruby_text": "に",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "に"
+          },
+          {
+            "surface": "は",
+            "lemma": "は",
+            "pos": "助詞/係助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 6,
+            "end": 7,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "は",
+            "ruby_text": "は",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "は"
+          },
+          {
+            "surface": "触ら",
+            "lemma": "触る",
+            "pos": "動詞/一般/*/*/五段-ラ行/未然形-一般",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 7,
+            "end": 9,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "さわら",
+            "ruby_text": "触[さわ]ら",
+            "ruby_spans": [
+              {
+                "base": "触",
+                "reading": "さわ",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "さわら",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "ない",
+            "lemma": "ない",
+            "pos": "助動詞/*/*/*/助動詞-ナイ/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 9,
+            "end": 11,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ない",
+            "ruby_text": "ない",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "ない"
+          },
+          {
+            "surface": "で",
+            "lemma": "で",
+            "pos": "助詞/接続助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 11,
+            "end": 12,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "で",
+            "ruby_text": "で",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "で"
+          },
+          {
+            "surface": "ください",
+            "lemma": "くださる",
+            "pos": "動詞/非自立可能/*/*/五段-ラ行/命令形",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 12,
+            "end": 16,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ください",
+            "ruby_text": "ください",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "ください"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 16,
+            "end": 17,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
+          }
+        ],
+        "generated_reading": "どくのあるくさにはさわらないでください。",
+        "analyzer": "sudachipy_sudachidict_core_c",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-18T17:39:19Z",
+        "updated_utc": "2026-10-18T17:40:52Z",
+        "applied_utc": "2026-10-18T17:40:52Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-18T17:40:52Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -932,12 +1470,6 @@
       "どくのあるものにきをつけてください。",
       "あのさかなにはどくがあるそうです。",
       "どくのあるくさにはさわらないでください。"
-    ],
-    "en": [
-      "This mushroom is poisonous.",
-      "Please be careful of poisonous things.",
-      "I hear that fish over there is poisonous.",
-      "Please don't touch poisonous plants."
     ],
     "generation": {
       "generator": "vocomipedia_source_generator.py",
@@ -976,190 +1508,6 @@
         "parts_of_speech": "Noun"
       }
     },
-    "word_en": "poison; toxicant",
-    "word_es": "veneno",
-    "word_fr": "poison",
-    "word_de": "Gift",
-    "word_it": "veleno",
-    "word_ko": "독",
-    "word_zh-Hans": "毒",
-    "word_yue": "毒",
-    "word_ru": "яд",
-    "word_pt": "veneno",
-    "word_he": "רעל",
-    "word_tr": "zehir",
-    "word_vi": "độc",
-    "word_ar": "سم",
-    "word_nl": "vergif",
-    "word_uk": "отрута",
-    "word_hu": "méreg",
-    "word_hi": "ज़हर",
-    "word_pl": "trucizna",
-    "word_el": "δηλητήριο",
-    "word_nb": "gift",
-    "word_id": "racun",
-    "word_sv": "gift",
-    "word_ro": "otravă",
-    "word_cs": "jed",
-    "word_da": "gift",
-    "word_fi": "myrkky",
-    "word_ja": "毒",
-    "ar": [
-      "هذه الفطرة سامة.",
-      "يرجى الحذر من الأشياء السامة.",
-      "يقال إن تلك السمكة هناك سامة.",
-      "يرجى عدم لمس النباتات السامة."
-    ],
-    "cs": [
-      "Tahle houba je jedovatá.",
-      "Dávejte si pozor na jedovaté věci.",
-      "Slyšel jsem, že ta ryba tamhle je jedovatá.",
-      "Prosím, nedotýkejte se jedovatých rostlin."
-    ],
-    "da": [
-      "Den svamp er giftig.",
-      "Vær forsigtig med giftige ting.",
-      "Jeg har hørt, at den fisk derovre er giftig.",
-      "Rør ikke ved giftige planter."
-    ],
-    "de": [
-      "Dieser Pilz ist giftig.",
-      "Bitte passen Sie auf giftige Dinge auf.",
-      "Ich habe gehört, dass der Fisch da drüben giftig ist.",
-      "Bitte berühren Sie keine giftigen Pflanzen."
-    ],
-    "el": [
-      "Αυτό το μανιτάρι είναι δηλητηριώδες.",
-      "Παρακαλώ προσέξτε τα δηλητηριώδη πράγματα.",
-      "Άκουσα ότι αυτό το ψάρι εκεί είναι δηλητηριώδες.",
-      "Παρακαλώ μην αγγίζετε τα δηλητηριώδη φυτά."
-    ],
-    "es": [
-      "Esta seta es venenosa.",
-      "Por favor, tenga cuidado con las cosas venenosas.",
-      "He oído que ese pez de allí es venenoso.",
-      "Por favor, no toque las plantas venenosas."
-    ],
-    "fi": [
-      "Tämä sieni on myrkyllinen.",
-      "Ole varovainen myrkyllisten asioiden kanssa.",
-      "Kuulin, että tuo kala tuolla on myrkyllinen.",
-      "Älä koske myrkyllisiin kasveihin."
-    ],
-    "fr": [
-      "Ce champignon est vénéneux.",
-      "Faites attention aux choses vénéneuses, s'il vous plaît.",
-      "J'ai entendu dire que ce poisson là-bas est vénéneux.",
-      "Veuillez ne pas toucher les plantes vénéneuses."
-    ],
-    "he": [
-      "הפטרייה הזאת רעילה.",
-      "אנא היזהרו מחפצים רעילים.",
-      "שמעתי שהדג שם רעיל.",
-      "אנא אל תיגעו בצמחים רעילים."
-    ],
-    "hi": [
-      "यह मशरूम ज़हरीला है।",
-      "कृपया ज़हरीली चीज़ों से सावधान रहें।",
-      "सुना है कि वहाँ वाली मछली ज़हरीली है।",
-      "कृपया ज़हरीले पौधों को न छुएँ।"
-    ],
-    "hu": [
-      "Ez a gomba mérgező.",
-      "Kérlek, vigyázz a mérgező dolgokra.",
-      "Úgy hallottam, hogy az a hal ott mérgező.",
-      "Kérlek, ne érintsd meg a mérgező növényeket."
-    ],
-    "id": [
-      "Jamur ini beracun.",
-      "Tolong hati-hati dengan benda-benda beracun.",
-      "Saya dengar ikan di sana beracun.",
-      "Tolong jangan sentuh tanaman beracun."
-    ],
-    "it": [
-      "Questo fungo è velenoso.",
-      "Fate attenzione alle cose velenose.",
-      "Ho sentito che quel pesce là è velenoso.",
-      "Per favore, non toccare le piante velenose."
-    ],
-    "ko": [
-      "이 버섯에는 독이 있습니다.",
-      "독이 있는 것에 조심하세요.",
-      "저기 있는 물고기에 독이 있다고 들었습니다.",
-      "독이 있는 풀은 만지지 마세요."
-    ],
-    "nb": [
-      "Denne soppen er giftig.",
-      "Vær forsiktig med giftige ting.",
-      "Jeg har hørt at den fisken der borte er giftig.",
-      "Ikke rør giftige planter."
-    ],
-    "nl": [
-      "Deze paddenstoel is giftig.",
-      "Pas op voor giftige dingen.",
-      "Ik heb gehoord dat die vis daar giftig is.",
-      "Raak giftige planten niet aan."
-    ],
-    "pl": [
-      "Ten grzyb jest trujący.",
-      "Uważaj na trujące rzeczy.",
-      "Słyszałem, że ta ryba tam jest trująca.",
-      "Proszę, nie dotykaj trujących roślin."
-    ],
-    "pt": [
-      "Este cogumelo é venenoso.",
-      "Por favor, tome cuidado com coisas venenosas.",
-      "Ouvi dizer que aquele peixe ali é venenoso.",
-      "Por favor, não toque nas plantas venenosas."
-    ],
-    "ro": [
-      "Această ciupercă este otrăvitoare.",
-      "Vă rog să aveți grijă la lucrurile otrăvitoare.",
-      "Am auzit că peștele acela de acolo este otrăvitor.",
-      "Vă rog să nu atingeți plantele otrăvitoare."
-    ],
-    "ru": [
-      "Этот гриб ядовитый.",
-      "Пожалуйста, будьте осторожны с ядовитыми вещами.",
-      "Я слышал, что та рыба там ядовитая.",
-      "Пожалуйста, не трогайте ядовитые растения."
-    ],
-    "sv": [
-      "Den här svampen är giftig.",
-      "Var försiktig med giftiga saker.",
-      "Jag har hört att den där fisken är giftig.",
-      "Rör inte giftiga växter."
-    ],
-    "tr": [
-      "Bu mantar zehirli.",
-      "Lütfen zehirli şeylere dikkat edin.",
-      "Şu oradaki balığın zehirli olduğunu duydum.",
-      "Lütfen zehirli bitkilere dokunmayın."
-    ],
-    "uk": [
-      "Цей гриб отруйний.",
-      "Будь ласка, будьте обережні з отруйними речами.",
-      "Я чув, що та риба там отруйна.",
-      "Будь ласка, не торкайтеся отруйних рослин."
-    ],
-    "vi": [
-      "Nấm này có độc.",
-      "Hãy cẩn thận với những thứ có độc.",
-      "Tôi nghe nói con cá ở đằng kia có độc.",
-      "Làm ơn đừng chạm vào những cây có độc."
-    ],
-    "yue": [
-      "呢個菇有毒。",
-      "請小心有毒嘅嘢。",
-      "聽講嗰邊條魚有毒。",
-      "請唔好掂有毒嘅植物。"
-    ],
-    "zh-Hans": [
-      "这个蘑菇有毒。",
-      "请小心有毒的东西。",
-      "听说那边那条鱼有毒。",
-      "请不要碰有毒的植物。"
-    ],
     "pos_analysis": [
       {
         "sentence": "このきのこには毒があります。",
@@ -1698,7 +2046,7 @@
         "difficulty_aggregated": null
       },
       {
-        "sentence": "毒のある草にはさわらないでください。",
+        "sentence": "毒のある草には触らないでください。",
         "tokens": [
           {
             "surface": "毒",
@@ -1720,8 +2068,9 @@
                 "length": 1
               }
             ],
-            "ruby_confidence": "high",
+            "ruby_confidence": "reviewed",
             "furigana": "どく",
+            "ruby_source": "mediawiki_sentence_ruby",
             "is_main_word": true
           },
           {
@@ -1776,8 +2125,9 @@
                 "length": 1
               }
             ],
-            "ruby_confidence": "high",
-            "furigana": "くさ"
+            "ruby_confidence": "reviewed",
+            "furigana": "くさ",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "に",
@@ -1812,20 +2162,28 @@
             "furigana": "は"
           },
           {
-            "surface": "さわら",
-            "lemma": "さわる",
+            "surface": "触ら",
+            "lemma": "触る",
             "pos": "動詞/一般/*/*/五段-ラ行/未然形-一般",
             "upos": "VERB",
             "xpos": "動詞",
             "feats": {},
             "start": 7,
-            "end": 10,
+            "end": 9,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "さわら",
-            "ruby_text": "さわら",
-            "ruby_spans": [],
-            "ruby_confidence": "high",
-            "furigana": "さわら"
+            "ruby_text": "触[さわ]ら",
+            "ruby_spans": [
+              {
+                "base": "触",
+                "reading": "さわ",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "さわら",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "ない",
@@ -1834,8 +2192,8 @@
             "upos": "AUX",
             "xpos": "助動詞",
             "feats": {},
-            "start": 10,
-            "end": 12,
+            "start": 9,
+            "end": 11,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "ない",
             "ruby_text": "ない",
@@ -1850,8 +2208,8 @@
             "upos": "PART",
             "xpos": "助詞",
             "feats": {},
-            "start": 12,
-            "end": 13,
+            "start": 11,
+            "end": 12,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "で",
             "ruby_text": "で",
@@ -1866,8 +2224,8 @@
             "upos": "VERB",
             "xpos": "動詞",
             "feats": {},
-            "start": 13,
-            "end": 17,
+            "start": 12,
+            "end": 16,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "ください",
             "ruby_text": "ください",
@@ -1882,8 +2240,8 @@
             "upos": "PUNCT",
             "xpos": "補助記号",
             "feats": {},
-            "start": 17,
-            "end": 18,
+            "start": 16,
+            "end": 17,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "。",
             "ruby_text": "。",
@@ -1894,6 +2252,196 @@
         ],
         "difficulty_aggregated": null
       }
+    ],
+    "word_en": "poison; toxicant",
+    "word_es": "veneno",
+    "word_fr": "poison",
+    "word_de": "Gift",
+    "word_it": "veleno",
+    "word_ko": "독",
+    "word_zh-Hans": "毒",
+    "word_yue": "毒",
+    "word_ru": "яд",
+    "word_pt": "veneno",
+    "word_he": "רעל",
+    "word_tr": "zehir",
+    "word_vi": "độc",
+    "word_ar": "سم",
+    "word_nl": "vergif",
+    "word_uk": "отрута",
+    "word_hu": "méreg",
+    "word_hi": "ज़हर",
+    "word_pl": "trucizna",
+    "word_el": "δηλητήριο",
+    "word_nb": "gift",
+    "word_id": "racun",
+    "word_sv": "gift",
+    "word_ro": "otravă",
+    "word_cs": "jed",
+    "word_da": "gift",
+    "word_fi": "myrkky",
+    "word_ja": "毒",
+    "ar": [
+      "هذا الفطر سام.",
+      "يرجى الحذر من الأشياء السامة.",
+      "يقال إن تلك السمكة هناك سامة.",
+      "يرجى عدم لمس النباتات السامة."
+    ],
+    "cs": [
+      "Tahle houba je jedovatá.",
+      "Dávejte si pozor na jedovaté věci.",
+      "Slyšel jsem, že ta ryba tamhle je jedovatá.",
+      "Prosím, nedotýkejte se jedovatých rostlin."
+    ],
+    "da": [
+      "Den svamp er giftig.",
+      "Vær forsigtig med giftige ting.",
+      "Jeg har hørt, at den fisk derovre er giftig.",
+      "Rør ikke ved giftige planter."
+    ],
+    "de": [
+      "Dieser Pilz ist giftig.",
+      "Bitte passen Sie auf giftige Dinge auf.",
+      "Ich habe gehört, dass der Fisch da drüben giftig ist.",
+      "Bitte berühren Sie keine giftigen Pflanzen."
+    ],
+    "el": [
+      "Αυτό το μανιτάρι είναι δηλητηριώδες.",
+      "Παρακαλώ προσέξτε τα δηλητηριώδη πράγματα.",
+      "Άκουσα ότι αυτό το ψάρι εκεί είναι δηλητηριώδες.",
+      "Παρακαλώ μην αγγίζετε τα δηλητηριώδη φυτά."
+    ],
+    "en": [
+      "This mushroom is poisonous.",
+      "Please be careful of poisonous things.",
+      "I hear that fish over there is poisonous.",
+      "Please don't touch poisonous plants."
+    ],
+    "es": [
+      "Esta seta es venenosa.",
+      "Por favor, tenga cuidado con las cosas venenosas.",
+      "He oído que ese pez de allí es venenoso.",
+      "Por favor, no toque las plantas venenosas."
+    ],
+    "fi": [
+      "Tämä sieni on myrkyllinen.",
+      "Ole varovainen myrkyllisten asioiden kanssa.",
+      "Kuulin, että tuo kala tuolla on myrkyllinen.",
+      "Älä koske myrkyllisiin kasveihin."
+    ],
+    "fr": [
+      "Ce champignon est vénéneux.",
+      "Faites attention aux choses vénéneuses, s'il vous plaît.",
+      "J'ai entendu dire que ce poisson là-bas est vénéneux.",
+      "Veuillez ne pas toucher les plantes vénéneuses."
+    ],
+    "he": [
+      "הפטרייה הזאת רעילה.",
+      "אנא היזהרו מחפצים רעילים.",
+      "שמעתי שהדג שם רעיל.",
+      "אנא אל תיגעו בצמחים רעילים."
+    ],
+    "hi": [
+      "यह मशरूम ज़हरीला है।",
+      "कृपया ज़हरीली चीज़ों से सावधान रहें।",
+      "सुना है कि वहाँ वाली मछली ज़हरीली है।",
+      "कृपया ज़हरीले पौधों को न छुएँ।"
+    ],
+    "hu": [
+      "Ez a gomba mérgező.",
+      "Kérlek, vigyázz a mérgező dolgokra.",
+      "Úgy hallottam, hogy az a hal ott mérgező.",
+      "Kérlek, ne érintsd meg a mérgező növényeket."
+    ],
+    "id": [
+      "Jamur ini beracun.",
+      "Tolong hati-hati dengan benda-benda beracun.",
+      "Saya dengar ikan di sana beracun.",
+      "Tolong jangan sentuh tanaman beracun."
+    ],
+    "it": [
+      "Questo fungo è velenoso.",
+      "Fate attenzione alle cose velenose.",
+      "Ho sentito che quel pesce là è velenoso.",
+      "Per favore, non toccare le piante velenose."
+    ],
+    "ko": [
+      "이 버섯에는 독이 있습니다.",
+      "독이 있는 것에 조심하세요.",
+      "저기 있는 물고기에 독이 있다고 들었습니다.",
+      "독이 있는 풀은 만지지 마세요."
+    ],
+    "nb": [
+      "Denne soppen er giftig.",
+      "Vær forsiktig med giftige ting.",
+      "Jeg har hørt at den fisken der borte er giftig.",
+      "Ikke rør giftige planter."
+    ],
+    "nl": [
+      "Deze paddenstoel is giftig.",
+      "Pas op voor giftige dingen.",
+      "Ik heb gehoord dat die vis daar giftig is.",
+      "Raak giftige planten niet aan."
+    ],
+    "pl": [
+      "Ten grzyb jest trujący.",
+      "Uważaj na trujące rzeczy.",
+      "Słyszałem, że ta ryba tam jest trująca.",
+      "Proszę, nie dotykaj trujących roślin."
+    ],
+    "pt": [
+      "Este cogumelo é venenoso.",
+      "Por favor, tome cuidado com coisas venenosas.",
+      "Ouvi dizer que aquele peixe ali é venenoso.",
+      "Por favor, não toque nas plantas venenosas."
+    ],
+    "ro": [
+      "Această ciupercă este otrăvitoare.",
+      "Vă rog să aveți grijă la lucrurile otrăvitoare.",
+      "Am auzit că peștele acela de acolo este otrăvitor.",
+      "Vă rog să nu atingeți plantele otrăvitoare."
+    ],
+    "ru": [
+      "Этот гриб ядовитый.",
+      "Пожалуйста, будьте осторожны с ядовитыми вещами.",
+      "Я слышал, что та рыба там ядовитая.",
+      "Пожалуйста, не трогайте ядовитые растения."
+    ],
+    "sv": [
+      "Den här svampen är giftig.",
+      "Var försiktig med giftiga saker.",
+      "Jag har hört att den där fisken är giftig.",
+      "Rör inte giftiga växter."
+    ],
+    "tr": [
+      "Bu mantar zehirli.",
+      "Lütfen zehirli şeylere dikkat edin.",
+      "Şu oradaki balığın zehirli olduğunu duydum.",
+      "Lütfen zehirli bitkilere dokunmayın."
+    ],
+    "uk": [
+      "Цей гриб отруйний.",
+      "Будь ласка, будьте обережні з отруйними речами.",
+      "Я чув, що та риба там отруйна.",
+      "Будь ласка, не торкайтеся отруйних рослин."
+    ],
+    "vi": [
+      "Nấm này có độc.",
+      "Hãy cẩn thận với những thứ có độc.",
+      "Tôi nghe nói con cá ở đằng kia có độc.",
+      "Làm ơn đừng chạm vào những cây có độc."
+    ],
+    "yue": [
+      "呢個菇有毒。",
+      "請小心有毒嘅嘢。",
+      "聽講嗰邊條魚有毒。",
+      "請唔好掂有毒嘅植物。"
+    ],
+    "zh-Hans": [
+      "这个蘑菇有毒。",
+      "请小心有毒的东西。",
+      "听说那边那条鱼有毒。",
+      "请不要碰有毒的植物。"
     ]
   }
 }

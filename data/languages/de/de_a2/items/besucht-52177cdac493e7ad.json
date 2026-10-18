@@ -230,12 +230,12 @@
       "difficulty": 5.67
     },
     {
-      "target": "Der Kurs bleibt leider wenig besucht.",
+      "target": "Der Kurs bleibt leider schlecht besucht.",
       "reading": "/deːɐ̯ kʊʁs blaɪ̯pt ˈlaɪ̯dɐ ˈveːnɪç bəˈzuːxt/",
       "translations": {
-        "de": "Der Kurs bleibt leider wenig besucht.",
+        "de": "Der Kurs bleibt leider schlecht besucht.",
         "ipa": "/deːɐ̯ kʊʁs blaɪ̯pt ˈlaɪ̯dɐ ˈveːnɪç bəˈzuːxt/",
-        "en": "The class still has few people.",
+        "en": "Unfortunately, the course is still poorly attended.",
         "es": "Por desgracia, el curso sigue teniendo poca gente.",
         "fr": "Malheureusement, le cours reste peu fréquenté.",
         "it": "Purtroppo, il corso è ancora poco frequentato.",
@@ -256,7 +256,7 @@
         "el": "Δυστυχώς, το μάθημα εξακολουθεί να έχει λίγους συμμετέχοντες.",
         "nb": "Dessverre er det fortsatt få deltakere på kurset.",
         "id": "Sayangnya kelas ini masih sepi.",
-        "sv": "Tyvärr eίvai kursen fortfarande glest besökt.",
+        "sv": "Tyvärr är kursen fortfarande glest besökt.",
         "ro": "Din păcate, cursul are în continuare puțini participanți.",
         "cs": "Bohužel je kurz stále málo navštěvovaný.",
         "da": "Desværre er kurset stadig dårligt besøgt.",
@@ -266,58 +266,81 @@
       "tokens": [
         {
           "surface": "Der",
-          "surface_en": "the",
-          "furigana": "[deːɐ̯]",
-          "pos": "DET",
           "lemma": "der",
-          "explanation": "Definite article, nominative masculine singular; determiner of the subject noun.",
-          "difficulty": 2
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "ART",
+          "feats": {},
+          "start": 0,
+          "end": 3,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "Kurs",
-          "surface_en": "course",
-          "furigana": "[kʊʁs]",
-          "pos": "NOUN",
           "lemma": "Kurs",
-          "explanation": "Common noun, masculine; head of the subject NP.",
-          "difficulty": 7
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 4,
+          "end": 8,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "bleibt",
-          "surface_en": "remains",
-          "furigana": "[blaɪ̯pt]",
-          "pos": "VERB",
           "lemma": "bleiben",
-          "explanation": "Lexical verb, 3rd person singular present; used copularly to link the subject to a predicative complement ('remain' + predicate).",
-          "difficulty": 7
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VVFIN",
+          "feats": {},
+          "start": 9,
+          "end": 15,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "leider",
-          "surface_en": "unfortunately",
-          "furigana": "[ˈlaɪ̯dɐ]",
-          "pos": "ADV",
           "lemma": "leider",
-          "explanation": "Sentence-level stance adverb; expresses speaker attitude toward the proposition.",
-          "difficulty": 7
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "ADV",
+          "feats": {},
+          "start": 16,
+          "end": 22,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "wenig",
-          "surface_en": "little",
-          "furigana": "[ˈveːnɪç]",
+          "surface": "schlecht",
+          "lemma": "schlecht",
           "pos": "ADV",
-          "lemma": "wenig",
-          "explanation": "Degree adverb modifying the predicative participle; indicates low degree/extent.",
-          "difficulty": 7
+          "upos": "ADV",
+          "xpos": "ADJD",
+          "feats": {},
+          "start": 23,
+          "end": 31,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "besucht",
-          "surface_en": "visited",
-          "furigana": "[bəˈzuːxt]",
-          "pos": "ADJ",
           "lemma": "besuchen",
-          "explanation": "Past participle used as predicative adjective after a copular verb; denotes the state of being visited to a small extent.",
-          "difficulty": 10,
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VVPP",
+          "feats": {},
+          "start": 32,
+          "end": 39,
+          "analyzer": "spacy_de_core_news_lg",
           "is_main_word": true
+        },
+        {
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 39,
+          "end": 40,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 6.67
@@ -328,7 +351,7 @@
       "translations": {
         "de": "Die Ausstellung war gestern kaum besucht.",
         "ipa": "/diː ˈaʊ̯sʃtɛlʊŋ vaːʁ ˈɡɛstɐn kaʊ̯m bəˈzuːxt/",
-        "en": "The exhibition was hardly visited yesterday.",
+        "en": "The exhibition had very few visitors yesterday.",
         "es": "Ayer la exposición tuvo muy pocos visitantes.",
         "fr": "Hier, l'exposition a eu très peu de visiteurs.",
         "it": "Ieri la mostra ha avuto pochissimi visitatori.",
@@ -430,19 +453,289 @@
     "content_reviewers": [
       "mediawiki-visible-revision"
     ],
-    "last_reviewed_utc": "2026-06-12T11:43:19Z",
-    "approval_source": "mediawiki_visible_revision",
+    "last_reviewed_utc": "2026-10-14T21:44:13Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
     "wiki": {
       "title": "Item:De a2/52177cdac493e7ad",
-      "revision_id": 13886,
-      "parent_revision_id": 893,
-      "revision_timestamp_utc": "2026-06-12T11:43:19Z",
-      "revision_user": "VocomiBot",
-      "revision_comment": "Sync de_a2 item besucht",
-      "pulled_utc": "2026-06-22T08:19:05Z",
-      "applied_utc": "2026-06-22T08:19:13Z",
+      "revision_id": 86270,
+      "parent_revision_id": 59163,
+      "revision_timestamp_utc": "2026-10-14T21:44:13Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Content review: German and translation corrections",
+      "pulled_utc": "2026-10-17T07:00:40Z",
+      "applied_utc": "2026-10-17T07:00:48Z",
       "applied_by": "vocomipedia-apply-pulled"
-    }
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-0a47e361c08bd2c7",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_a2:52177cdac493e7ad",
+        "pack_code": "de_a2",
+        "entry_id": "besucht",
+        "language": "de",
+        "sentence_index": 3,
+        "old_sentence": "Der Kurs bleibt leider wenig besucht.",
+        "old_translations": {
+          "de": "Der Kurs bleibt leider wenig besucht.",
+          "ipa": "/deːɐ̯ kʊʁs blaɪ̯pt ˈlaɪ̯dɐ ˈveːnɪç bəˈzuːxt/",
+          "en": "The class still has few people.",
+          "es": "Por desgracia, el curso sigue teniendo poca gente.",
+          "fr": "Malheureusement, le cours reste peu fréquenté.",
+          "it": "Purtroppo, il corso è ancora poco frequentato.",
+          "ko": "아쉽게도 수업에 아직 사람이 적어요.",
+          "zh-Hans": "可惜这门课现在还是人数很少。",
+          "yue": "可惜呢個課程而家都係好少人。",
+          "ru": "К сожалению, на курсе по-прежнему мало людей.",
+          "pt": "Infelizmente, o curso ainda tem pouca gente.",
+          "he": "לצערנו, בקורס עדיין יש מעט משתתפים.",
+          "tr": "Ne yazık ki derste hâlâ az kişi var.",
+          "vi": "Tiếc là lớp học vẫn ít người.",
+          "ar": "للأسف، الدورة ما زالت فيها عدد قليل من المشاركين.",
+          "nl": "Helaas heeft de cursus nog steeds weinig deelnemers.",
+          "uk": "На жаль, на курсі й досі мало людей.",
+          "hu": "Sajnos a kurzuson még mindig kevesen vannak.",
+          "hi": "अफसोस है कि क्लास में अभी भी लोग कम हैं.",
+          "pl": "Niestety, na kursie wciąż jest mało osób.",
+          "el": "Δυστυχώς, το μάθημα εξακολουθεί να έχει λίγους συμμετέχοντες.",
+          "nb": "Dessverre er det fortsatt få deltakere på kurset.",
+          "id": "Sayangnya kelas ini masih sepi.",
+          "sv": "Tyvärr eίvai kursen fortfarande glest besökt.",
+          "ro": "Din păcate, cursul are în continuare puțini participanți.",
+          "cs": "Bohužel je kurz stále málo navštěvovaný.",
+          "da": "Desværre er kurset stadig dårligt besøgt.",
+          "fi": "Valitettavasti kurssilla on yhä vähän osallistujia.",
+          "ja": "残念ながら、この講座はまだ受講者が少ない。"
+        },
+        "proposed_sentence": "Der Kurs bleibt leider schlecht besucht.",
+        "proposed_translations": {
+          "de": "Der Kurs bleibt leider schlecht besucht.",
+          "ipa": "/deːɐ̯ kʊʁs blaɪ̯pt ˈlaɪ̯dɐ ˈveːnɪç bəˈzuːxt/",
+          "en": "Unfortunately, the course is still poorly attended.",
+          "es": "Por desgracia, el curso sigue teniendo poca gente.",
+          "fr": "Malheureusement, le cours reste peu fréquenté.",
+          "it": "Purtroppo, il corso è ancora poco frequentato.",
+          "ko": "아쉽게도 수업에 아직 사람이 적어요.",
+          "zh-Hans": "可惜这门课现在还是人数很少。",
+          "yue": "可惜呢個課程而家都係好少人。",
+          "ru": "К сожалению, на курсе по-прежнему мало людей.",
+          "pt": "Infelizmente, o curso ainda tem pouca gente.",
+          "he": "לצערנו, בקורס עדיין יש מעט משתתפים.",
+          "tr": "Ne yazık ki derste hâlâ az kişi var.",
+          "vi": "Tiếc là lớp học vẫn ít người.",
+          "ar": "للأسف، الدورة ما زالت فيها عدد قليل من المشاركين.",
+          "nl": "Helaas heeft de cursus nog steeds weinig deelnemers.",
+          "uk": "На жаль, на курсі й досі мало людей.",
+          "hu": "Sajnos a kurzuson még mindig kevesen vannak.",
+          "hi": "अफसोस है कि क्लास में अभी भी लोग कम हैं.",
+          "pl": "Niestety, na kursie wciąż jest mało osób.",
+          "el": "Δυστυχώς, το μάθημα εξακολουθεί να έχει λίγους συμμετέχοντες.",
+          "nb": "Dessverre er det fortsatt få deltakere på kurset.",
+          "id": "Sayangnya kelas ini masih sepi.",
+          "sv": "Tyvärr är kursen fortfarande glest besökt.",
+          "ro": "Din păcate, cursul are în continuare puțini participanți.",
+          "cs": "Bohužel je kurz stále málo navštěvovaný.",
+          "da": "Desværre er kurset stadig dårligt besøgt.",
+          "fi": "Valitettavasti kurssilla on yhä vähän osallistujia.",
+          "ja": "残念ながら、この講座はまだ受講者が少ない。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Der Kurs bleibt leider schlecht besucht.",
+        "old_japanese": "Der Kurs bleibt leider wenig besucht.",
+        "old_english": "The class still has few people.",
+        "proposed_japanese": "Der Kurs bleibt leider schlecht besucht.",
+        "proposed_english": "Unfortunately, the course is still poorly attended.",
+        "reason": "Use the more idiomatic German phrase for a course with low attendance while preserving the continuing state.",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Der Kurs bleibt leider schlecht besucht.",
+          "tokens": [
+            {
+              "surface": "Der",
+              "lemma": "der",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "ART",
+              "feats": {},
+              "start": 0,
+              "end": 3,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Kurs",
+              "lemma": "Kurs",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 4,
+              "end": 8,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "bleibt",
+              "lemma": "bleiben",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVFIN",
+              "feats": {},
+              "start": 9,
+              "end": 15,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "leider",
+              "lemma": "leider",
+              "pos": "ADV",
+              "upos": "ADV",
+              "xpos": "ADV",
+              "feats": {},
+              "start": 16,
+              "end": 22,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "schlecht",
+              "lemma": "schlecht",
+              "pos": "ADV",
+              "upos": "ADV",
+              "xpos": "ADJD",
+              "feats": {},
+              "start": 23,
+              "end": 31,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "besucht",
+              "lemma": "besuchen",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVPP",
+              "feats": {},
+              "start": 32,
+              "end": 39,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 39,
+              "end": 40,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Der",
+            "lemma": "der",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Kurs",
+            "lemma": "Kurs",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 4,
+            "end": 8,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "bleibt",
+            "lemma": "bleiben",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 9,
+            "end": 15,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "leider",
+            "lemma": "leider",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 16,
+            "end": 22,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "schlecht",
+            "lemma": "schlecht",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADJD",
+            "feats": {},
+            "start": 23,
+            "end": 31,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "besucht",
+            "lemma": "besuchen",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVPP",
+            "feats": {},
+            "start": 32,
+            "end": 39,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 39,
+            "end": 40,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:00:40Z",
+        "updated_utc": "2026-10-17T07:00:59Z",
+        "applied_utc": "2026-10-17T07:00:59Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:00:59Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -591,62 +884,85 @@
         "difficulty_aggregated": 5.67
       },
       {
-        "sentence": "Der Kurs bleibt leider wenig besucht.",
+        "sentence": "Der Kurs bleibt leider schlecht besucht.",
         "tokens": [
           {
             "surface": "Der",
-            "surface_en": "the",
-            "furigana": "[deːɐ̯]",
-            "pos": "DET",
             "lemma": "der",
-            "explanation": "Definite article, nominative masculine singular; determiner of the subject noun.",
-            "difficulty": 2
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "Kurs",
-            "surface_en": "course",
-            "furigana": "[kʊʁs]",
-            "pos": "NOUN",
             "lemma": "Kurs",
-            "explanation": "Common noun, masculine; head of the subject NP.",
-            "difficulty": 7
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 4,
+            "end": 8,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "bleibt",
-            "surface_en": "remains",
-            "furigana": "[blaɪ̯pt]",
-            "pos": "VERB",
             "lemma": "bleiben",
-            "explanation": "Lexical verb, 3rd person singular present; used copularly to link the subject to a predicative complement ('remain' + predicate).",
-            "difficulty": 7
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 9,
+            "end": 15,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "leider",
-            "surface_en": "unfortunately",
-            "furigana": "[ˈlaɪ̯dɐ]",
-            "pos": "ADV",
             "lemma": "leider",
-            "explanation": "Sentence-level stance adverb; expresses speaker attitude toward the proposition.",
-            "difficulty": 7
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 16,
+            "end": 22,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "wenig",
-            "surface_en": "little",
-            "furigana": "[ˈveːnɪç]",
+            "surface": "schlecht",
+            "lemma": "schlecht",
             "pos": "ADV",
-            "lemma": "wenig",
-            "explanation": "Degree adverb modifying the predicative participle; indicates low degree/extent.",
-            "difficulty": 7
+            "upos": "ADV",
+            "xpos": "ADJD",
+            "feats": {},
+            "start": 23,
+            "end": 31,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "besucht",
-            "surface_en": "visited",
-            "furigana": "[bəˈzuːxt]",
-            "pos": "ADJ",
             "lemma": "besuchen",
-            "explanation": "Past participle used as predicative adjective after a copular verb; denotes the state of being visited to a small extent.",
-            "difficulty": 10,
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVPP",
+            "feats": {},
+            "start": 32,
+            "end": 39,
+            "analyzer": "spacy_de_core_news_lg",
             "is_main_word": true
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 39,
+            "end": 40,
+            "analyzer": "spacy_de_core_news_lg"
           }
         ],
         "difficulty_aggregated": 6.67
@@ -777,7 +1093,7 @@
       "The park is busy today.",
       "The café is always busy.",
       "The class still has few people.",
-      "The exhibition was hardly visited yesterday."
+      "The exhibition had very few visitors yesterday."
     ],
     "es": [
       "Hoy el parque está muy concurrido.",

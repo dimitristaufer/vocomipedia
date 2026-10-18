@@ -42,7 +42,7 @@
   },
   "sentences": [
     {
-      "target": "現在、雨がふっています。",
+      "target": "現在、雨が降っています。",
       "reading": "げんざい、あめがふっています。",
       "translations": {
         "en": "It is raining now.",
@@ -94,8 +94,9 @@
               "length": 2
             }
           ],
-          "ruby_confidence": "medium",
+          "ruby_confidence": "reviewed",
           "furigana": "げんざい",
+          "ruby_source": "mediawiki_sentence_ruby",
           "is_main_word": true
         },
         {
@@ -134,8 +135,9 @@
               "length": 1
             }
           ],
-          "ruby_confidence": "high",
-          "furigana": "あめ"
+          "ruby_confidence": "reviewed",
+          "furigana": "あめ",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "が",
@@ -154,8 +156,8 @@
           "furigana": "が"
         },
         {
-          "surface": "ふっ",
-          "lemma": "ふる",
+          "surface": "降っ",
+          "lemma": "降る",
           "pos": "動詞/一般/*/*/五段-ラ行/連用形-促音便",
           "upos": "VERB",
           "xpos": "動詞",
@@ -164,10 +166,18 @@
           "end": 7,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "ふっ",
-          "ruby_text": "ふっ",
-          "ruby_spans": [],
-          "ruby_confidence": "high",
-          "furigana": "ふっ"
+          "ruby_text": "降[ふ]っ",
+          "ruby_spans": [
+            {
+              "base": "降",
+              "reading": "ふ",
+              "start": 0,
+              "length": 1
+            }
+          ],
+          "ruby_confidence": "reviewed",
+          "furigana": "ふっ",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "て",
@@ -238,7 +248,7 @@
     },
     {
       "target": "現在、私は東京にいます。",
-      "reading": "げんざい、わたくしはとうきょうにいます。",
+      "reading": "げんざい、わたしはとうきょうにいます。",
       "translations": {
         "en": "I am in Tokyo now.",
         "ar": "أنا في طوكيو الآن.",
@@ -289,8 +299,9 @@
               "length": 2
             }
           ],
-          "ruby_confidence": "medium",
+          "ruby_confidence": "reviewed",
           "furigana": "げんざい",
+          "ruby_source": "mediawiki_sentence_ruby",
           "is_main_word": true
         },
         {
@@ -319,18 +330,19 @@
           "start": 3,
           "end": 4,
           "analyzer": "sudachipy_sudachidict_core_c",
-          "reading_kana": "わたくし",
-          "ruby_text": "私[わたくし]",
+          "reading_kana": "わたし",
+          "ruby_text": "私[わたし]",
           "ruby_spans": [
             {
               "base": "私",
-              "reading": "わたくし",
+              "reading": "わたし",
               "start": 0,
               "length": 1
             }
           ],
-          "ruby_confidence": "high",
-          "furigana": "わたくし"
+          "ruby_confidence": "reviewed",
+          "furigana": "わたし",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "は",
@@ -368,8 +380,9 @@
               "length": 2
             }
           ],
-          "ruby_confidence": "medium",
-          "furigana": "とうきょう"
+          "ruby_confidence": "reviewed",
+          "furigana": "とうきょう",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "に",
@@ -893,8 +906,918 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-13T00:16:46Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:Ja n3/36e0a85c4328605e",
+      "revision_id": 81363,
+      "parent_revision_id": 67491,
+      "revision_timestamp_utc": "2026-10-13T00:16:46Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Use standard kanji for 降る and the usual reading わたし in this polite sentence.",
+      "pulled_utc": "2026-10-18T17:38:58Z",
+      "applied_utc": "2026-10-18T17:39:34Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-c866c2f63a7d1fef",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "ja_n3:36e0a85c4328605e",
+        "pack_code": "ja_n3",
+        "entry_id": "現在",
+        "language": "ja",
+        "sentence_index": 1,
+        "old_sentence": "現在、雨がふっています。",
+        "old_translations": {
+          "en": "It is raining now.",
+          "ar": "تمطر الآن.",
+          "cs": "Právě teď prší.",
+          "da": "Det regner nu.",
+          "de": "Es regnet jetzt.",
+          "el": "Βρέχει τώρα.",
+          "es": "Está lloviendo ahora.",
+          "fi": "Sataa nyt.",
+          "fr": "Il pleut maintenant.",
+          "he": "עכשיו יורד גשם.",
+          "hi": "अभी बारिश हो रही है।",
+          "hu": "Most esik.",
+          "id": "Sekarang sedang hujan.",
+          "it": "Piove adesso.",
+          "ko": "지금 비가 오고 있어요.",
+          "nb": "Det regner nå.",
+          "nl": "Het regent nu.",
+          "pl": "Teraz pada deszcz.",
+          "pt": "Está chovendo agora.",
+          "ro": "Plouă acum.",
+          "ru": "Сейчас идет дождь.",
+          "sv": "Det regnar nu.",
+          "tr": "Şu anda yağmur yağıyor.",
+          "uk": "Зараз іде дощ.",
+          "vi": "Bây giờ trời đang mưa.",
+          "yue": "而家落雨。",
+          "zh-Hans": "现在在下雨。"
+        },
+        "proposed_sentence": "現在、雨が降っています。",
+        "proposed_translations": {
+          "en": "It is raining now.",
+          "ar": "تمطر الآن.",
+          "cs": "Právě teď prší.",
+          "da": "Det regner nu.",
+          "de": "Es regnet jetzt.",
+          "el": "Βρέχει τώρα.",
+          "es": "Está lloviendo ahora.",
+          "fi": "Sataa nyt.",
+          "fr": "Il pleut maintenant.",
+          "he": "עכשיו יורד גשם.",
+          "hi": "अभी बारिश हो रही है।",
+          "hu": "Most esik.",
+          "id": "Sekarang sedang hujan.",
+          "it": "Piove adesso.",
+          "ko": "지금 비가 오고 있어요.",
+          "nb": "Det regner nå.",
+          "nl": "Het regent nu.",
+          "pl": "Teraz pada deszcz.",
+          "pt": "Está chovendo agora.",
+          "ro": "Plouă acum.",
+          "ru": "Сейчас идет дождь.",
+          "sv": "Det regnar nu.",
+          "tr": "Şu anda yağmur yağıyor.",
+          "uk": "Зараз іде дощ.",
+          "vi": "Bây giờ trời đang mưa.",
+          "yue": "而家落雨。",
+          "zh-Hans": "现在在下雨。"
+        },
+        "old_ruby_source": "現在[げんざい]、雨[あめ]がふっています。",
+        "proposed_ruby_source": "現在[げんざい]、雨[あめ]が降[ふ]っています。",
+        "old_japanese": "現在、雨がふっています。",
+        "old_english": "It is raining now.",
+        "proposed_japanese": "現在、雨が降っています。",
+        "proposed_english": "It is raining now.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "ja",
+          "sentence": "現在、雨が降っています。",
+          "tokens": [
+            {
+              "surface": "現在",
+              "lemma": "現在",
+              "pos": "名詞/普通名詞/副詞可能/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 0,
+              "end": 2,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "げんざい",
+              "ruby_text": "現在[げんざい]",
+              "ruby_spans": [
+                {
+                  "base": "現在",
+                  "reading": "げんざい",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "げんざい",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "、",
+              "lemma": "、",
+              "pos": "補助記号/読点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 2,
+              "end": 3,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "、",
+              "ruby_text": "、",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "、"
+            },
+            {
+              "surface": "雨",
+              "lemma": "雨",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 3,
+              "end": 4,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "あめ",
+              "ruby_text": "雨[あめ]",
+              "ruby_spans": [
+                {
+                  "base": "雨",
+                  "reading": "あめ",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "あめ",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "が",
+              "lemma": "が",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 4,
+              "end": 5,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "が",
+              "ruby_text": "が",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "が"
+            },
+            {
+              "surface": "降っ",
+              "lemma": "降る",
+              "pos": "動詞/一般/*/*/五段-ラ行/連用形-促音便",
+              "upos": "VERB",
+              "xpos": "動詞",
+              "feats": {},
+              "start": 5,
+              "end": 7,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "ふっ",
+              "ruby_text": "降[ふ]っ",
+              "ruby_spans": [
+                {
+                  "base": "降",
+                  "reading": "ふ",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "ふっ",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "て",
+              "lemma": "て",
+              "pos": "助詞/接続助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 7,
+              "end": 8,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "て",
+              "ruby_text": "て",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "て"
+            },
+            {
+              "surface": "い",
+              "lemma": "いる",
+              "pos": "動詞/非自立可能/*/*/上一段-ア行/連用形-一般",
+              "upos": "VERB",
+              "xpos": "動詞",
+              "feats": {},
+              "start": 8,
+              "end": 9,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "い",
+              "ruby_text": "い",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "い"
+            },
+            {
+              "surface": "ます",
+              "lemma": "ます",
+              "pos": "助動詞/*/*/*/助動詞-マス/終止形-一般",
+              "upos": "AUX",
+              "xpos": "助動詞",
+              "feats": {},
+              "start": 9,
+              "end": 11,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "ます",
+              "ruby_text": "ます",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "ます"
+            },
+            {
+              "surface": "。",
+              "lemma": "。",
+              "pos": "補助記号/句点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 11,
+              "end": 12,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "。",
+              "ruby_text": "。",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "。"
+            }
+          ],
+          "reading": "げんざい、あめがふっています。",
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "warnings": [
+            "mediawiki ruby hints applied"
+          ]
+        },
+        "generated_tokens": [
+          {
+            "surface": "現在",
+            "lemma": "現在",
+            "pos": "名詞/普通名詞/副詞可能/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "げんざい",
+            "ruby_text": "現在[げんざい]",
+            "ruby_spans": [
+              {
+                "base": "現在",
+                "reading": "げんざい",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "げんざい",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "、",
+            "lemma": "、",
+            "pos": "補助記号/読点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 2,
+            "end": 3,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "、",
+            "ruby_text": "、",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "、"
+          },
+          {
+            "surface": "雨",
+            "lemma": "雨",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 3,
+            "end": 4,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "あめ",
+            "ruby_text": "雨[あめ]",
+            "ruby_spans": [
+              {
+                "base": "雨",
+                "reading": "あめ",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "あめ",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "が",
+            "lemma": "が",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 4,
+            "end": 5,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "が",
+            "ruby_text": "が",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "が"
+          },
+          {
+            "surface": "降っ",
+            "lemma": "降る",
+            "pos": "動詞/一般/*/*/五段-ラ行/連用形-促音便",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 5,
+            "end": 7,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ふっ",
+            "ruby_text": "降[ふ]っ",
+            "ruby_spans": [
+              {
+                "base": "降",
+                "reading": "ふ",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "ふっ",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "て",
+            "lemma": "て",
+            "pos": "助詞/接続助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 7,
+            "end": 8,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "て",
+            "ruby_text": "て",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "て"
+          },
+          {
+            "surface": "い",
+            "lemma": "いる",
+            "pos": "動詞/非自立可能/*/*/上一段-ア行/連用形-一般",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 8,
+            "end": 9,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "い",
+            "ruby_text": "い",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "い"
+          },
+          {
+            "surface": "ます",
+            "lemma": "ます",
+            "pos": "助動詞/*/*/*/助動詞-マス/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 9,
+            "end": 11,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ます",
+            "ruby_text": "ます",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "ます"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 11,
+            "end": 12,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
+          }
+        ],
+        "generated_reading": "げんざい、あめがふっています。",
+        "analyzer": "sudachipy_sudachidict_core_c",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-18T17:38:58Z",
+        "updated_utc": "2026-10-18T17:40:41Z",
+        "applied_utc": "2026-10-18T17:40:41Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      },
+      {
+        "id": "sentprop-0f10e576adc7a177",
+        "status": "applied",
+        "type": "ruby_update",
+        "item_id": "ja_n3:36e0a85c4328605e",
+        "pack_code": "ja_n3",
+        "entry_id": "現在",
+        "language": "ja",
+        "sentence_index": 2,
+        "old_sentence": "現在、私は東京にいます。",
+        "old_translations": {
+          "en": "I am in Tokyo now.",
+          "ar": "أنا في طوكيو الآن.",
+          "cs": "Právě teď jsem v Tokiu.",
+          "da": "Jeg er i Tokyo nu.",
+          "de": "Ich bin jetzt in Tokio.",
+          "el": "Είμαι τώρα στο Τόκιο.",
+          "es": "Estoy en Tokio ahora.",
+          "fi": "Olen nyt Tokiossa.",
+          "fr": "Je suis à Tokyo maintenant.",
+          "he": "אני עכשיו בטוקיו.",
+          "hi": "मैं अभी टोक्यो में हूँ।",
+          "hu": "Most Tokióban vagyok.",
+          "id": "Saya sekarang ada di Tokyo.",
+          "it": "Sono a Tokyo adesso.",
+          "ko": "저는 지금 도쿄에 있어요.",
+          "nb": "Jeg er i Tokyo nå.",
+          "nl": "Ik ben nu in Tokio.",
+          "pl": "Jestem teraz w Tokio.",
+          "pt": "Estou em Tóquio agora.",
+          "ro": "Sunt în Tokyo acum.",
+          "ru": "Сейчас я в Токио.",
+          "sv": "Jag är i Tokyo nu.",
+          "tr": "Şu anda Tokyo'dayım.",
+          "uk": "Зараз я в Токіо.",
+          "vi": "Bây giờ tôi đang ở Tokyo.",
+          "yue": "而家我喺東京。",
+          "zh-Hans": "我现在在东京。"
+        },
+        "proposed_sentence": "現在、私は東京にいます。",
+        "proposed_translations": {
+          "en": "I am in Tokyo now.",
+          "ar": "أنا في طوكيو الآن.",
+          "cs": "Právě teď jsem v Tokiu.",
+          "da": "Jeg er i Tokyo nu.",
+          "de": "Ich bin jetzt in Tokio.",
+          "el": "Είμαι τώρα στο Τόκιο.",
+          "es": "Estoy en Tokio ahora.",
+          "fi": "Olen nyt Tokiossa.",
+          "fr": "Je suis à Tokyo maintenant.",
+          "he": "אני עכשיו בטוקיו.",
+          "hi": "मैं अभी टोक्यो में हूँ।",
+          "hu": "Most Tokióban vagyok.",
+          "id": "Saya sekarang ada di Tokyo.",
+          "it": "Sono a Tokyo adesso.",
+          "ko": "저는 지금 도쿄에 있어요.",
+          "nb": "Jeg er i Tokyo nå.",
+          "nl": "Ik ben nu in Tokio.",
+          "pl": "Jestem teraz w Tokio.",
+          "pt": "Estou em Tóquio agora.",
+          "ro": "Sunt în Tokyo acum.",
+          "ru": "Сейчас я в Токио.",
+          "sv": "Jag är i Tokyo nu.",
+          "tr": "Şu anda Tokyo'dayım.",
+          "uk": "Зараз я в Токіо.",
+          "vi": "Bây giờ tôi đang ở Tokyo.",
+          "yue": "而家我喺東京。",
+          "zh-Hans": "我现在在东京。"
+        },
+        "old_ruby_source": "現在[げんざい]、私[わたくし]は東京[とうきょう]にいます。",
+        "proposed_ruby_source": "現在[げんざい]、私[わたし]は東京[とうきょう]にいます。",
+        "old_japanese": "現在、私は東京にいます。",
+        "old_english": "I am in Tokyo now.",
+        "proposed_japanese": "現在、私は東京にいます。",
+        "proposed_english": "I am in Tokyo now.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "ja",
+          "sentence": "現在、私は東京にいます。",
+          "tokens": [
+            {
+              "surface": "現在",
+              "lemma": "現在",
+              "pos": "名詞/普通名詞/副詞可能/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 0,
+              "end": 2,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "げんざい",
+              "ruby_text": "現在[げんざい]",
+              "ruby_spans": [
+                {
+                  "base": "現在",
+                  "reading": "げんざい",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "げんざい",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "、",
+              "lemma": "、",
+              "pos": "補助記号/読点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 2,
+              "end": 3,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "、",
+              "ruby_text": "、",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "、"
+            },
+            {
+              "surface": "私",
+              "lemma": "私",
+              "pos": "代名詞/*/*/*/*/*",
+              "upos": "PRON",
+              "xpos": "代名詞",
+              "feats": {},
+              "start": 3,
+              "end": 4,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "わたし",
+              "ruby_text": "私[わたし]",
+              "ruby_spans": [
+                {
+                  "base": "私",
+                  "reading": "わたし",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "わたし",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "は",
+              "lemma": "は",
+              "pos": "助詞/係助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 4,
+              "end": 5,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "は",
+              "ruby_text": "は",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "は"
+            },
+            {
+              "surface": "東京",
+              "lemma": "東京",
+              "pos": "名詞/固有名詞/地名/一般/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 5,
+              "end": 7,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "とうきょう",
+              "ruby_text": "東京[とうきょう]",
+              "ruby_spans": [
+                {
+                  "base": "東京",
+                  "reading": "とうきょう",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "とうきょう",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "に",
+              "lemma": "に",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 7,
+              "end": 8,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "に",
+              "ruby_text": "に",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "に"
+            },
+            {
+              "surface": "い",
+              "lemma": "いる",
+              "pos": "動詞/非自立可能/*/*/上一段-ア行/連用形-一般",
+              "upos": "VERB",
+              "xpos": "動詞",
+              "feats": {},
+              "start": 8,
+              "end": 9,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "い",
+              "ruby_text": "い",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "い"
+            },
+            {
+              "surface": "ます",
+              "lemma": "ます",
+              "pos": "助動詞/*/*/*/助動詞-マス/終止形-一般",
+              "upos": "AUX",
+              "xpos": "助動詞",
+              "feats": {},
+              "start": 9,
+              "end": 11,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "ます",
+              "ruby_text": "ます",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "ます"
+            },
+            {
+              "surface": "。",
+              "lemma": "。",
+              "pos": "補助記号/句点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 11,
+              "end": 12,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "。",
+              "ruby_text": "。",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "。"
+            }
+          ],
+          "reading": "げんざい、わたしはとうきょうにいます。",
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "warnings": [
+            "mediawiki ruby hints applied"
+          ]
+        },
+        "generated_tokens": [
+          {
+            "surface": "現在",
+            "lemma": "現在",
+            "pos": "名詞/普通名詞/副詞可能/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "げんざい",
+            "ruby_text": "現在[げんざい]",
+            "ruby_spans": [
+              {
+                "base": "現在",
+                "reading": "げんざい",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "げんざい",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "、",
+            "lemma": "、",
+            "pos": "補助記号/読点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 2,
+            "end": 3,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "、",
+            "ruby_text": "、",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "、"
+          },
+          {
+            "surface": "私",
+            "lemma": "私",
+            "pos": "代名詞/*/*/*/*/*",
+            "upos": "PRON",
+            "xpos": "代名詞",
+            "feats": {},
+            "start": 3,
+            "end": 4,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "わたし",
+            "ruby_text": "私[わたし]",
+            "ruby_spans": [
+              {
+                "base": "私",
+                "reading": "わたし",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "わたし",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "は",
+            "lemma": "は",
+            "pos": "助詞/係助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 4,
+            "end": 5,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "は",
+            "ruby_text": "は",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "は"
+          },
+          {
+            "surface": "東京",
+            "lemma": "東京",
+            "pos": "名詞/固有名詞/地名/一般/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 5,
+            "end": 7,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "とうきょう",
+            "ruby_text": "東京[とうきょう]",
+            "ruby_spans": [
+              {
+                "base": "東京",
+                "reading": "とうきょう",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "とうきょう",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "に",
+            "lemma": "に",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 7,
+            "end": 8,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "に",
+            "ruby_text": "に",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "に"
+          },
+          {
+            "surface": "い",
+            "lemma": "いる",
+            "pos": "動詞/非自立可能/*/*/上一段-ア行/連用形-一般",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 8,
+            "end": 9,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "い",
+            "ruby_text": "い",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "い"
+          },
+          {
+            "surface": "ます",
+            "lemma": "ます",
+            "pos": "助動詞/*/*/*/助動詞-マス/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 9,
+            "end": 11,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ます",
+            "ruby_text": "ます",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "ます"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 11,
+            "end": 12,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
+          }
+        ],
+        "generated_reading": "げんざい、わたしはとうきょうにいます。",
+        "analyzer": "sudachipy_sudachidict_core_c",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-18T17:38:58Z",
+        "updated_utc": "2026-10-18T17:40:41Z",
+        "applied_utc": "2026-10-18T17:40:41Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-18T17:40:41Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -916,15 +1839,9 @@
     ],
     "fu": [
       "げんざい、あめがふっています。",
-      "げんざい、わたしはとうきょうにいます。",
+      "げんざい、わたくしはとうきょうにいます。",
       "このみせはげんざい、やすみです。",
-      "かれはげんざい、にほんでべんきょうしています。"
-    ],
-    "en": [
-      "It is raining now.",
-      "I am in Tokyo now.",
-      "This shop is currently closed.",
-      "He is studying in Japan right now."
+      "かれはげんざい、にっぽんでべんきょうしています。"
     ],
     "generation": {
       "generator": "vocomipedia_source_generator.py",
@@ -963,193 +1880,9 @@
         "parts_of_speech": "Noun; Adverb (fukushi); Noun which may take the genitive case particle 'no'; Noun, used as a suffix; Suru verb; Intransitive verb"
       }
     },
-    "word_en": "the present; present time; now; as of; present tense; this world; this life; to actually exist; to exist right now; to exist right in front of one",
-    "word_es": "presente",
-    "word_fr": "présent",
-    "word_de": "Gegenwart",
-    "word_it": "presente",
-    "word_ko": "현재",
-    "word_zh-Hans": "现在",
-    "word_yue": "現在",
-    "word_ru": "настоящее",
-    "word_pt": "presente",
-    "word_he": "הווה",
-    "word_tr": "şimdi",
-    "word_vi": "hiện tại",
-    "word_ar": "الحاضر",
-    "word_nl": "heden",
-    "word_uk": "теперішнє",
-    "word_hu": "jelen",
-    "word_hi": "वर्तमान",
-    "word_pl": "teraźniejszość",
-    "word_el": "παρόν",
-    "word_nb": "nåtid",
-    "word_id": "sekarang",
-    "word_sv": "nutid",
-    "word_ro": "prezent",
-    "word_cs": "přítomnost",
-    "word_da": "nutid",
-    "word_fi": "nykyhetki",
-    "word_ja": "現在",
-    "ar": [
-      "تمطر الآن.",
-      "أنا في طوكيو الآن.",
-      "هذا المتجر مغلق حاليا.",
-      "إنه يدرس في اليابان الآن."
-    ],
-    "cs": [
-      "Právě teď prší.",
-      "Právě teď jsem v Tokiu.",
-      "Tento obchod je nyní zavřený.",
-      "Právě teď studuje v Japonsku."
-    ],
-    "da": [
-      "Det regner nu.",
-      "Jeg er i Tokyo nu.",
-      "Denne butik er lukket nu.",
-      "Han studerer i Japan lige nu."
-    ],
-    "de": [
-      "Es regnet jetzt.",
-      "Ich bin jetzt in Tokio.",
-      "Dieses Geschäft ist derzeit geschlossen.",
-      "Er studiert gerade in Japan."
-    ],
-    "el": [
-      "Βρέχει τώρα.",
-      "Είμαι τώρα στο Τόκιο.",
-      "Αυτό το μαγαζί είναι κλειστό προς το παρόν.",
-      "Σπουδάζει τώρα στην Ιαπωνία."
-    ],
-    "es": [
-      "Está lloviendo ahora.",
-      "Estoy en Tokio ahora.",
-      "Esta tienda está cerrada actualmente.",
-      "Está estudiando en Japón ahora mismo."
-    ],
-    "fi": [
-      "Sataa nyt.",
-      "Olen nyt Tokiossa.",
-      "Tämä liike on nyt suljettu.",
-      "Hän opiskelee juuri nyt Japanissa."
-    ],
-    "fr": [
-      "Il pleut maintenant.",
-      "Je suis à Tokyo maintenant.",
-      "Cette boutique est fermée actuellement.",
-      "Il étudie au Japon en ce moment."
-    ],
-    "he": [
-      "עכשיו יורד גשם.",
-      "אני עכשיו בטוקיו.",
-      "החנות הזאת סגורה כרגע.",
-      "הוא לומד עכשיו ביפן."
-    ],
-    "hi": [
-      "अभी बारिश हो रही है।",
-      "मैं अभी टोक्यो में हूँ।",
-      "यह दुकान अभी बंद है।",
-      "वह अभी जापान में पढ़ रहा है।"
-    ],
-    "hu": [
-      "Most esik.",
-      "Most Tokióban vagyok.",
-      "Ez az üzlet jelenleg zárva van.",
-      "Most Japánban tanul."
-    ],
-    "id": [
-      "Sekarang sedang hujan.",
-      "Saya sekarang ada di Tokyo.",
-      "Toko ini sedang tutup.",
-      "Dia sedang belajar di Jepang sekarang."
-    ],
-    "it": [
-      "Piove adesso.",
-      "Sono a Tokyo adesso.",
-      "Questo negozio è chiuso al momento.",
-      "Sta studiando in Giappone adesso."
-    ],
-    "ko": [
-      "지금 비가 오고 있어요.",
-      "저는 지금 도쿄에 있어요.",
-      "이 가게는 지금 문을 닫았어요.",
-      "그는 지금 일본에서 공부하고 있어요."
-    ],
-    "nb": [
-      "Det regner nå.",
-      "Jeg er i Tokyo nå.",
-      "Denne butikken er stengt nå.",
-      "Han studerer i Japan nå."
-    ],
-    "nl": [
-      "Het regent nu.",
-      "Ik ben nu in Tokio.",
-      "Deze winkel is nu gesloten.",
-      "Hij studeert nu in Japan."
-    ],
-    "pl": [
-      "Teraz pada deszcz.",
-      "Jestem teraz w Tokio.",
-      "Ten sklep jest teraz zamknięty.",
-      "On teraz studiuje w Japonii."
-    ],
-    "pt": [
-      "Está chovendo agora.",
-      "Estou em Tóquio agora.",
-      "Esta loja está fechada agora.",
-      "Ele está estudando no Japão agora."
-    ],
-    "ro": [
-      "Plouă acum.",
-      "Sunt în Tokyo acum.",
-      "Acest magazin este închis acum.",
-      "El studiază acum în Japonia."
-    ],
-    "ru": [
-      "Сейчас идет дождь.",
-      "Сейчас я в Токио.",
-      "Этот магазин сейчас закрыт.",
-      "Он сейчас учится в Японии."
-    ],
-    "sv": [
-      "Det regnar nu.",
-      "Jag är i Tokyo nu.",
-      "Den här butiken är stängd nu.",
-      "Han studerar i Japan just nu."
-    ],
-    "tr": [
-      "Şu anda yağmur yağıyor.",
-      "Şu anda Tokyo'dayım.",
-      "Bu mağaza şu anda kapalı.",
-      "Şu anda Japonya'da okuyor."
-    ],
-    "uk": [
-      "Зараз іде дощ.",
-      "Зараз я в Токіо.",
-      "Цей магазин зараз зачинений.",
-      "Він зараз навчається в Японії."
-    ],
-    "vi": [
-      "Bây giờ trời đang mưa.",
-      "Bây giờ tôi đang ở Tokyo.",
-      "Cửa hàng này hiện đang đóng cửa.",
-      "Anh ấy đang học ở Nhật Bản bây giờ."
-    ],
-    "yue": [
-      "而家落雨。",
-      "而家我喺東京。",
-      "呢間舖頭而家關咗。",
-      "佢而家喺日本讀書。"
-    ],
-    "zh-Hans": [
-      "现在在下雨。",
-      "我现在在东京。",
-      "这家店现在关门了。",
-      "他现在在日本学习。"
-    ],
     "pos_analysis": [
       {
-        "sentence": "現在、雨がふっています。",
+        "sentence": "現在、雨が降っています。",
         "tokens": [
           {
             "surface": "現在",
@@ -1171,8 +1904,9 @@
                 "length": 2
               }
             ],
-            "ruby_confidence": "medium",
+            "ruby_confidence": "reviewed",
             "furigana": "げんざい",
+            "ruby_source": "mediawiki_sentence_ruby",
             "is_main_word": true
           },
           {
@@ -1211,8 +1945,9 @@
                 "length": 1
               }
             ],
-            "ruby_confidence": "high",
-            "furigana": "あめ"
+            "ruby_confidence": "reviewed",
+            "furigana": "あめ",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "が",
@@ -1231,8 +1966,8 @@
             "furigana": "が"
           },
           {
-            "surface": "ふっ",
-            "lemma": "ふる",
+            "surface": "降っ",
+            "lemma": "降る",
             "pos": "動詞/一般/*/*/五段-ラ行/連用形-促音便",
             "upos": "VERB",
             "xpos": "動詞",
@@ -1241,10 +1976,18 @@
             "end": 7,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "ふっ",
-            "ruby_text": "ふっ",
-            "ruby_spans": [],
-            "ruby_confidence": "high",
-            "furigana": "ふっ"
+            "ruby_text": "降[ふ]っ",
+            "ruby_spans": [
+              {
+                "base": "降",
+                "reading": "ふ",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "ふっ",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "て",
@@ -1336,8 +2079,9 @@
                 "length": 2
               }
             ],
-            "ruby_confidence": "medium",
+            "ruby_confidence": "reviewed",
             "furigana": "げんざい",
+            "ruby_source": "mediawiki_sentence_ruby",
             "is_main_word": true
           },
           {
@@ -1366,18 +2110,19 @@
             "start": 3,
             "end": 4,
             "analyzer": "sudachipy_sudachidict_core_c",
-            "reading_kana": "わたくし",
-            "ruby_text": "私[わたくし]",
+            "reading_kana": "わたし",
+            "ruby_text": "私[わたし]",
             "ruby_spans": [
               {
                 "base": "私",
-                "reading": "わたくし",
+                "reading": "わたし",
                 "start": 0,
                 "length": 1
               }
             ],
-            "ruby_confidence": "high",
-            "furigana": "わたくし"
+            "ruby_confidence": "reviewed",
+            "furigana": "わたし",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "は",
@@ -1415,8 +2160,9 @@
                 "length": 2
               }
             ],
-            "ruby_confidence": "medium",
-            "furigana": "とうきょう"
+            "ruby_confidence": "reviewed",
+            "furigana": "とうきょう",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "に",
@@ -1868,6 +2614,196 @@
         ],
         "difficulty_aggregated": null
       }
+    ],
+    "word_en": "the present; present time; now; as of; present tense; this world; this life; to actually exist; to exist right now; to exist right in front of one",
+    "word_es": "presente",
+    "word_fr": "présent",
+    "word_de": "Gegenwart",
+    "word_it": "presente",
+    "word_ko": "현재",
+    "word_zh-Hans": "现在",
+    "word_yue": "現在",
+    "word_ru": "настоящее",
+    "word_pt": "presente",
+    "word_he": "הווה",
+    "word_tr": "şimdi",
+    "word_vi": "hiện tại",
+    "word_ar": "الحاضر",
+    "word_nl": "heden",
+    "word_uk": "теперішнє",
+    "word_hu": "jelen",
+    "word_hi": "वर्तमान",
+    "word_pl": "teraźniejszość",
+    "word_el": "παρόν",
+    "word_nb": "nåtid",
+    "word_id": "sekarang",
+    "word_sv": "nutid",
+    "word_ro": "prezent",
+    "word_cs": "přítomnost",
+    "word_da": "nutid",
+    "word_fi": "nykyhetki",
+    "word_ja": "現在",
+    "ar": [
+      "تمطر الآن.",
+      "أنا في طوكيو الآن.",
+      "هذا المتجر مغلق حاليا.",
+      "إنه يدرس في اليابان الآن."
+    ],
+    "cs": [
+      "Právě teď prší.",
+      "Právě teď jsem v Tokiu.",
+      "Tento obchod je nyní zavřený.",
+      "Právě teď studuje v Japonsku."
+    ],
+    "da": [
+      "Det regner nu.",
+      "Jeg er i Tokyo nu.",
+      "Denne butik er lukket nu.",
+      "Han studerer i Japan lige nu."
+    ],
+    "de": [
+      "Es regnet jetzt.",
+      "Ich bin jetzt in Tokio.",
+      "Dieses Geschäft ist derzeit geschlossen.",
+      "Er studiert gerade in Japan."
+    ],
+    "el": [
+      "Βρέχει τώρα.",
+      "Είμαι τώρα στο Τόκιο.",
+      "Αυτό το μαγαζί είναι κλειστό προς το παρόν.",
+      "Σπουδάζει τώρα στην Ιαπωνία."
+    ],
+    "en": [
+      "It is raining now.",
+      "I am in Tokyo now.",
+      "This shop is currently closed.",
+      "He is studying in Japan right now."
+    ],
+    "es": [
+      "Está lloviendo ahora.",
+      "Estoy en Tokio ahora.",
+      "Esta tienda está cerrada actualmente.",
+      "Está estudiando en Japón ahora mismo."
+    ],
+    "fi": [
+      "Sataa nyt.",
+      "Olen nyt Tokiossa.",
+      "Tämä liike on nyt suljettu.",
+      "Hän opiskelee juuri nyt Japanissa."
+    ],
+    "fr": [
+      "Il pleut maintenant.",
+      "Je suis à Tokyo maintenant.",
+      "Cette boutique est fermée actuellement.",
+      "Il étudie au Japon en ce moment."
+    ],
+    "he": [
+      "עכשיו יורד גשם.",
+      "אני עכשיו בטוקיו.",
+      "החנות הזאת סגורה כרגע.",
+      "הוא לומד עכשיו ביפן."
+    ],
+    "hi": [
+      "अभी बारिश हो रही है।",
+      "मैं अभी टोक्यो में हूँ।",
+      "यह दुकान अभी बंद है।",
+      "वह अभी जापान में पढ़ रहा है।"
+    ],
+    "hu": [
+      "Most esik.",
+      "Most Tokióban vagyok.",
+      "Ez az üzlet jelenleg zárva van.",
+      "Most Japánban tanul."
+    ],
+    "id": [
+      "Sekarang sedang hujan.",
+      "Saya sekarang ada di Tokyo.",
+      "Toko ini sedang tutup.",
+      "Dia sedang belajar di Jepang sekarang."
+    ],
+    "it": [
+      "Piove adesso.",
+      "Sono a Tokyo adesso.",
+      "Questo negozio è chiuso al momento.",
+      "Sta studiando in Giappone adesso."
+    ],
+    "ko": [
+      "지금 비가 오고 있어요.",
+      "저는 지금 도쿄에 있어요.",
+      "이 가게는 지금 문을 닫았어요.",
+      "그는 지금 일본에서 공부하고 있어요."
+    ],
+    "nb": [
+      "Det regner nå.",
+      "Jeg er i Tokyo nå.",
+      "Denne butikken er stengt nå.",
+      "Han studerer i Japan nå."
+    ],
+    "nl": [
+      "Het regent nu.",
+      "Ik ben nu in Tokio.",
+      "Deze winkel is nu gesloten.",
+      "Hij studeert nu in Japan."
+    ],
+    "pl": [
+      "Teraz pada deszcz.",
+      "Jestem teraz w Tokio.",
+      "Ten sklep jest teraz zamknięty.",
+      "On teraz studiuje w Japonii."
+    ],
+    "pt": [
+      "Está chovendo agora.",
+      "Estou em Tóquio agora.",
+      "Esta loja está fechada agora.",
+      "Ele está estudando no Japão agora."
+    ],
+    "ro": [
+      "Plouă acum.",
+      "Sunt în Tokyo acum.",
+      "Acest magazin este închis acum.",
+      "El studiază acum în Japonia."
+    ],
+    "ru": [
+      "Сейчас идет дождь.",
+      "Сейчас я в Токио.",
+      "Этот магазин сейчас закрыт.",
+      "Он сейчас учится в Японии."
+    ],
+    "sv": [
+      "Det regnar nu.",
+      "Jag är i Tokyo nu.",
+      "Den här butiken är stängd nu.",
+      "Han studerar i Japan just nu."
+    ],
+    "tr": [
+      "Şu anda yağmur yağıyor.",
+      "Şu anda Tokyo'dayım.",
+      "Bu mağaza şu anda kapalı.",
+      "Şu anda Japonya'da okuyor."
+    ],
+    "uk": [
+      "Зараз іде дощ.",
+      "Зараз я в Токіо.",
+      "Цей магазин зараз зачинений.",
+      "Він зараз навчається в Японії."
+    ],
+    "vi": [
+      "Bây giờ trời đang mưa.",
+      "Bây giờ tôi đang ở Tokyo.",
+      "Cửa hàng này hiện đang đóng cửa.",
+      "Anh ấy đang học ở Nhật Bản bây giờ."
+    ],
+    "yue": [
+      "而家落雨。",
+      "而家我喺東京。",
+      "呢間舖頭而家關咗。",
+      "佢而家喺日本讀書。"
+    ],
+    "zh-Hans": [
+      "现在在下雨。",
+      "我现在在东京。",
+      "这家店现在关门了。",
+      "他现在在日本学习。"
     ]
   }
 }

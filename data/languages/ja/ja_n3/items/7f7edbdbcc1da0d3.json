@@ -42,31 +42,31 @@
   },
   "sentences": [
     {
-      "target": "わたしは楽器をならいます。",
+      "target": "私は楽器を習います。",
       "reading": "わたしはがっきをならいます。",
       "translations": {
-        "en": "I take lessons on an instrument.",
+        "en": "I’m learning to play an instrument.",
         "ar": "أنا أتعلّم العزف على آلة موسيقية.",
         "cs": "Beru lekce hry na hudební nástroj.",
-        "da": "Jeg går til undervisning på et instrument.",
-        "de": "Ich nehme Unterricht auf einem Instrument.",
-        "el": "Παρακολουθώ μαθήματα σε ένα μουσικό όργανο.",
-        "es": "Tomo clases de un instrumento.",
+        "da": "Jeg går til undervisning i at spille et instrument.",
+        "de": "Ich lerne, ein Instrument zu spielen.",
+        "el": "Κάνω μαθήματα μουσικού οργάνου.",
+        "es": "Tomo clases para aprender a tocar un instrumento.",
         "fi": "Käyn soittotunneilla.",
-        "fr": "Je prends des cours d'instrument.",
+        "fr": "Je prends des cours pour apprendre à jouer d'un instrument.",
         "he": "אני לומד לנגן בכלי נגינה.",
-        "hi": "मैं एक वाद्ययंत्र सीख रहा हूँ।",
+        "hi": "मैं वाद्ययंत्र बजाना सीख रहा हूँ।",
         "hu": "Hangszeren tanulok.",
         "id": "Saya ikut les alat musik.",
         "it": "Prendo lezioni di strumento.",
         "ko": "저는 악기를 배웁니다.",
-        "nb": "Jeg tar timer på et instrument.",
-        "nl": "Ik neem les op een instrument.",
+        "nb": "Jeg tar instrumenttimer.",
+        "nl": "Ik neem muziekles om een instrument te leren spelen.",
         "pl": "Biorę lekcje gry na instrumencie.",
-        "pt": "Eu tenho aulas de um instrumento.",
-        "ro": "Fac lecții la un instrument.",
+        "pt": "Tenho aulas para aprender a tocar um instrumento.",
+        "ro": "Iau lecții pentru a învăța să cânt la un instrument.",
         "ru": "Я учусь играть на инструменте.",
-        "sv": "Jag tar lektioner i ett instrument.",
+        "sv": "Jag går på instrumentlektioner.",
         "tr": "Bir enstrüman dersi alıyorum.",
         "uk": "Я беру уроки гри на інструменті.",
         "vi": "Tôi học nhạc cụ.",
@@ -75,20 +75,28 @@
       },
       "tokens": [
         {
-          "surface": "わたし",
-          "lemma": "わたし",
+          "surface": "私",
+          "lemma": "私",
           "pos": "代名詞/*/*/*/*/*",
           "upos": "PRON",
           "xpos": "代名詞",
           "feats": {},
           "start": 0,
-          "end": 3,
+          "end": 1,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "わたし",
-          "ruby_text": "わたし",
-          "ruby_spans": [],
-          "ruby_confidence": "high",
-          "furigana": "わたし"
+          "ruby_text": "私[わたし]",
+          "ruby_spans": [
+            {
+              "base": "私",
+              "reading": "わたし",
+              "start": 0,
+              "length": 1
+            }
+          ],
+          "ruby_confidence": "reviewed",
+          "furigana": "わたし",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "は",
@@ -97,8 +105,8 @@
           "upos": "PART",
           "xpos": "助詞",
           "feats": {},
-          "start": 3,
-          "end": 4,
+          "start": 1,
+          "end": 2,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "は",
           "ruby_text": "は",
@@ -113,8 +121,8 @@
           "upos": "NOUN",
           "xpos": "名詞",
           "feats": {},
-          "start": 4,
-          "end": 6,
+          "start": 2,
+          "end": 4,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "がっき",
           "ruby_text": "楽器[がっき]",
@@ -126,8 +134,9 @@
               "length": 2
             }
           ],
-          "ruby_confidence": "medium",
+          "ruby_confidence": "reviewed",
           "furigana": "がっき",
+          "ruby_source": "mediawiki_sentence_ruby",
           "is_main_word": true
         },
         {
@@ -137,8 +146,8 @@
           "upos": "PART",
           "xpos": "助詞",
           "feats": {},
-          "start": 6,
-          "end": 7,
+          "start": 4,
+          "end": 5,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "を",
           "ruby_text": "を",
@@ -147,20 +156,28 @@
           "furigana": "を"
         },
         {
-          "surface": "ならい",
-          "lemma": "ならう",
+          "surface": "習い",
+          "lemma": "習う",
           "pos": "動詞/一般/*/*/五段-ワア行/連用形-一般",
           "upos": "VERB",
           "xpos": "動詞",
           "feats": {},
-          "start": 7,
-          "end": 10,
+          "start": 5,
+          "end": 7,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "ならい",
-          "ruby_text": "ならい",
-          "ruby_spans": [],
-          "ruby_confidence": "high",
-          "furigana": "ならい"
+          "ruby_text": "習[なら]い",
+          "ruby_spans": [
+            {
+              "base": "習",
+              "reading": "なら",
+              "start": 0,
+              "length": 1
+            }
+          ],
+          "ruby_confidence": "reviewed",
+          "furigana": "ならい",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "ます",
@@ -169,8 +186,8 @@
           "upos": "AUX",
           "xpos": "助動詞",
           "feats": {},
-          "start": 10,
-          "end": 12,
+          "start": 7,
+          "end": 9,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "ます",
           "ruby_text": "ます",
@@ -185,8 +202,8 @@
           "upos": "PUNCT",
           "xpos": "補助記号",
           "feats": {},
-          "start": 12,
-          "end": 13,
+          "start": 9,
+          "end": 10,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "。",
           "ruby_text": "。",
@@ -198,7 +215,7 @@
       "difficulty": null
     },
     {
-      "target": "かれは楽器がじょうずです。",
+      "target": "彼は楽器が上手です。",
       "reading": "かれはがっきがじょうずです。",
       "translations": {
         "en": "He is good at playing instruments.",
@@ -231,20 +248,28 @@
       },
       "tokens": [
         {
-          "surface": "かれ",
-          "lemma": "かれ",
+          "surface": "彼",
+          "lemma": "彼",
           "pos": "代名詞/*/*/*/*/*",
           "upos": "PRON",
           "xpos": "代名詞",
           "feats": {},
           "start": 0,
-          "end": 2,
+          "end": 1,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "かれ",
-          "ruby_text": "かれ",
-          "ruby_spans": [],
-          "ruby_confidence": "high",
-          "furigana": "かれ"
+          "ruby_text": "彼[かれ]",
+          "ruby_spans": [
+            {
+              "base": "彼",
+              "reading": "かれ",
+              "start": 0,
+              "length": 1
+            }
+          ],
+          "ruby_confidence": "reviewed",
+          "furigana": "かれ",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "は",
@@ -253,8 +278,8 @@
           "upos": "PART",
           "xpos": "助詞",
           "feats": {},
-          "start": 2,
-          "end": 3,
+          "start": 1,
+          "end": 2,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "は",
           "ruby_text": "は",
@@ -269,8 +294,8 @@
           "upos": "NOUN",
           "xpos": "名詞",
           "feats": {},
-          "start": 3,
-          "end": 5,
+          "start": 2,
+          "end": 4,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "がっき",
           "ruby_text": "楽器[がっき]",
@@ -282,8 +307,9 @@
               "length": 2
             }
           ],
-          "ruby_confidence": "medium",
+          "ruby_confidence": "reviewed",
           "furigana": "がっき",
+          "ruby_source": "mediawiki_sentence_ruby",
           "is_main_word": true
         },
         {
@@ -293,8 +319,8 @@
           "upos": "PART",
           "xpos": "助詞",
           "feats": {},
-          "start": 5,
-          "end": 6,
+          "start": 4,
+          "end": 5,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "が",
           "ruby_text": "が",
@@ -303,20 +329,28 @@
           "furigana": "が"
         },
         {
-          "surface": "じょうず",
-          "lemma": "じょうず",
+          "surface": "上手",
+          "lemma": "上手",
           "pos": "形状詞/一般/*/*/*/*",
           "upos": "ADJ",
           "xpos": "形状詞",
           "feats": {},
-          "start": 6,
-          "end": 10,
+          "start": 5,
+          "end": 7,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "じょうず",
-          "ruby_text": "じょうず",
-          "ruby_spans": [],
-          "ruby_confidence": "high",
-          "furigana": "じょうず"
+          "ruby_text": "上手[じょうず]",
+          "ruby_spans": [
+            {
+              "base": "上手",
+              "reading": "じょうず",
+              "start": 0,
+              "length": 2
+            }
+          ],
+          "ruby_confidence": "reviewed",
+          "furigana": "じょうず",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "です",
@@ -325,8 +359,8 @@
           "upos": "AUX",
           "xpos": "助動詞",
           "feats": {},
-          "start": 10,
-          "end": 12,
+          "start": 7,
+          "end": 9,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "です",
           "ruby_text": "です",
@@ -341,8 +375,8 @@
           "upos": "PUNCT",
           "xpos": "補助記号",
           "feats": {},
-          "start": 12,
-          "end": 13,
+          "start": 9,
+          "end": 10,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "。",
           "ruby_text": "。",
@@ -510,7 +544,7 @@
       "difficulty": null
     },
     {
-      "target": "こどもたちは楽器をならべています。",
+      "target": "子どもたちは楽器を並べています。",
       "reading": "こどもたちはがっきをならべています。",
       "translations": {
         "en": "The children are lining up the instruments.",
@@ -521,7 +555,7 @@
         "el": "Τα παιδιά βάζουν τα μουσικά όργανα στη σειρά.",
         "es": "Los niños están colocando los instrumentos en fila.",
         "fi": "Lapset asettelevat soittimet riviin.",
-        "fr": "Les enfants rangent les instruments en ligne.",
+        "fr": "Les enfants alignent les instruments.",
         "he": "הילדים מסדרים את כלי הנגינה בשורה.",
         "hi": "बच्चे वाद्ययंत्रों को लाइन में लगा रहे हैं।",
         "hu": "A gyerekek sorba rakják a hangszereket.",
@@ -543,36 +577,28 @@
       },
       "tokens": [
         {
-          "surface": "こども",
-          "lemma": "こども",
+          "surface": "子どもたち",
+          "lemma": "子どもたち",
           "pos": "名詞/普通名詞/一般/*/*/*",
           "upos": "NOUN",
           "xpos": "名詞",
           "feats": {},
           "start": 0,
-          "end": 3,
-          "analyzer": "sudachipy_sudachidict_core_c",
-          "reading_kana": "こども",
-          "ruby_text": "こども",
-          "ruby_spans": [],
-          "ruby_confidence": "high",
-          "furigana": "こども"
-        },
-        {
-          "surface": "たち",
-          "lemma": "たち",
-          "pos": "接尾辞/名詞的/一般/*/*/*",
-          "upos": "SUFFIX",
-          "xpos": "接尾辞",
-          "feats": {},
-          "start": 3,
           "end": 5,
           "analyzer": "sudachipy_sudachidict_core_c",
-          "reading_kana": "たち",
-          "ruby_text": "たち",
-          "ruby_spans": [],
-          "ruby_confidence": "high",
-          "furigana": "たち"
+          "reading_kana": "こどもたち",
+          "ruby_text": "子[こ]どもたち",
+          "ruby_spans": [
+            {
+              "base": "子",
+              "reading": "こ",
+              "start": 0,
+              "length": 1
+            }
+          ],
+          "ruby_confidence": "reviewed",
+          "furigana": "こどもたち",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "は",
@@ -610,8 +636,9 @@
               "length": 2
             }
           ],
-          "ruby_confidence": "medium",
+          "ruby_confidence": "reviewed",
           "furigana": "がっき",
+          "ruby_source": "mediawiki_sentence_ruby",
           "is_main_word": true
         },
         {
@@ -631,20 +658,28 @@
           "furigana": "を"
         },
         {
-          "surface": "ならべ",
-          "lemma": "ならべる",
+          "surface": "並べ",
+          "lemma": "並べる",
           "pos": "動詞/一般/*/*/下一段-バ行/連用形-一般",
           "upos": "VERB",
           "xpos": "動詞",
           "feats": {},
           "start": 9,
-          "end": 12,
+          "end": 11,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "ならべ",
-          "ruby_text": "ならべ",
-          "ruby_spans": [],
-          "ruby_confidence": "high",
-          "furigana": "ならべ"
+          "ruby_text": "並[なら]べ",
+          "ruby_spans": [
+            {
+              "base": "並",
+              "reading": "なら",
+              "start": 0,
+              "length": 1
+            }
+          ],
+          "ruby_confidence": "reviewed",
+          "furigana": "ならべ",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "て",
@@ -653,8 +688,8 @@
           "upos": "PART",
           "xpos": "助詞",
           "feats": {},
-          "start": 12,
-          "end": 13,
+          "start": 11,
+          "end": 12,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "て",
           "ruby_text": "て",
@@ -669,8 +704,8 @@
           "upos": "VERB",
           "xpos": "動詞",
           "feats": {},
-          "start": 13,
-          "end": 14,
+          "start": 12,
+          "end": 13,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "い",
           "ruby_text": "い",
@@ -685,8 +720,8 @@
           "upos": "AUX",
           "xpos": "助動詞",
           "feats": {},
-          "start": 14,
-          "end": 16,
+          "start": 13,
+          "end": 15,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "ます",
           "ruby_text": "ます",
@@ -701,8 +736,8 @@
           "upos": "PUNCT",
           "xpos": "補助記号",
           "feats": {},
-          "start": 16,
-          "end": 17,
+          "start": 15,
+          "end": 16,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "。",
           "ruby_text": "。",
@@ -725,8 +760,1238 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-12T23:11:51Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:Ja n3/7f7edbdbcc1da0d3",
+      "revision_id": 81553,
+      "parent_revision_id": 67353,
+      "revision_timestamp_utc": "2026-10-12T23:11:51Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Use standard Japanese spelling and make the instrument-lesson and arranging translations natural.",
+      "pulled_utc": "2026-10-18T17:39:06Z",
+      "applied_utc": "2026-10-18T17:39:44Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-31130dd1127d4a01",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "ja_n3:7f7edbdbcc1da0d3",
+        "pack_code": "ja_n3",
+        "entry_id": "楽器",
+        "language": "ja",
+        "sentence_index": 1,
+        "old_sentence": "わたしは楽器をならいます。",
+        "old_translations": {
+          "en": "I take lessons on an instrument.",
+          "ar": "أنا أتعلّم العزف على آلة موسيقية.",
+          "cs": "Beru lekce hry na hudební nástroj.",
+          "da": "Jeg går til undervisning på et instrument.",
+          "de": "Ich nehme Unterricht auf einem Instrument.",
+          "el": "Παρακολουθώ μαθήματα σε ένα μουσικό όργανο.",
+          "es": "Tomo clases de un instrumento.",
+          "fi": "Käyn soittotunneilla.",
+          "fr": "Je prends des cours d'instrument.",
+          "he": "אני לומד לנגן בכלי נגינה.",
+          "hi": "मैं एक वाद्ययंत्र सीख रहा हूँ।",
+          "hu": "Hangszeren tanulok.",
+          "id": "Saya ikut les alat musik.",
+          "it": "Prendo lezioni di strumento.",
+          "ko": "저는 악기를 배웁니다.",
+          "nb": "Jeg tar timer på et instrument.",
+          "nl": "Ik neem les op een instrument.",
+          "pl": "Biorę lekcje gry na instrumencie.",
+          "pt": "Eu tenho aulas de um instrumento.",
+          "ro": "Fac lecții la un instrument.",
+          "ru": "Я учусь играть на инструменте.",
+          "sv": "Jag tar lektioner i ett instrument.",
+          "tr": "Bir enstrüman dersi alıyorum.",
+          "uk": "Я беру уроки гри на інструменті.",
+          "vi": "Tôi học nhạc cụ.",
+          "yue": "我學樂器。",
+          "zh-Hans": "我学乐器。"
+        },
+        "proposed_sentence": "私は楽器を習います。",
+        "proposed_translations": {
+          "en": "I’m learning to play an instrument.",
+          "ar": "أنا أتعلّم العزف على آلة موسيقية.",
+          "cs": "Beru lekce hry na hudební nástroj.",
+          "da": "Jeg går til undervisning i at spille et instrument.",
+          "de": "Ich lerne, ein Instrument zu spielen.",
+          "el": "Κάνω μαθήματα μουσικού οργάνου.",
+          "es": "Tomo clases para aprender a tocar un instrumento.",
+          "fi": "Käyn soittotunneilla.",
+          "fr": "Je prends des cours pour apprendre à jouer d'un instrument.",
+          "he": "אני לומד לנגן בכלי נגינה.",
+          "hi": "मैं वाद्ययंत्र बजाना सीख रहा हूँ।",
+          "hu": "Hangszeren tanulok.",
+          "id": "Saya ikut les alat musik.",
+          "it": "Prendo lezioni di strumento.",
+          "ko": "저는 악기를 배웁니다.",
+          "nb": "Jeg tar instrumenttimer.",
+          "nl": "Ik neem muziekles om een instrument te leren spelen.",
+          "pl": "Biorę lekcje gry na instrumencie.",
+          "pt": "Tenho aulas para aprender a tocar um instrumento.",
+          "ro": "Iau lecții pentru a învăța să cânt la un instrument.",
+          "ru": "Я учусь играть на инструменте.",
+          "sv": "Jag går på instrumentlektioner.",
+          "tr": "Bir enstrüman dersi alıyorum.",
+          "uk": "Я беру уроки гри на інструменті.",
+          "vi": "Tôi học nhạc cụ.",
+          "yue": "我學樂器。",
+          "zh-Hans": "我学乐器。"
+        },
+        "old_ruby_source": "わたしは楽器[がっき]をならいます。",
+        "proposed_ruby_source": "私[わたし]は楽器[がっき]を習[なら]います。",
+        "old_japanese": "わたしは楽器をならいます。",
+        "old_english": "I take lessons on an instrument.",
+        "proposed_japanese": "私は楽器を習います。",
+        "proposed_english": "I’m learning to play an instrument.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "ja",
+          "sentence": "私は楽器を習います。",
+          "tokens": [
+            {
+              "surface": "私",
+              "lemma": "私",
+              "pos": "代名詞/*/*/*/*/*",
+              "upos": "PRON",
+              "xpos": "代名詞",
+              "feats": {},
+              "start": 0,
+              "end": 1,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "わたし",
+              "ruby_text": "私[わたし]",
+              "ruby_spans": [
+                {
+                  "base": "私",
+                  "reading": "わたし",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "わたし",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "は",
+              "lemma": "は",
+              "pos": "助詞/係助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 1,
+              "end": 2,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "は",
+              "ruby_text": "は",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "は"
+            },
+            {
+              "surface": "楽器",
+              "lemma": "楽器",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 2,
+              "end": 4,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "がっき",
+              "ruby_text": "楽器[がっき]",
+              "ruby_spans": [
+                {
+                  "base": "楽器",
+                  "reading": "がっき",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "がっき",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "を",
+              "lemma": "を",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 4,
+              "end": 5,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "を",
+              "ruby_text": "を",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "を"
+            },
+            {
+              "surface": "習い",
+              "lemma": "習う",
+              "pos": "動詞/一般/*/*/五段-ワア行/連用形-一般",
+              "upos": "VERB",
+              "xpos": "動詞",
+              "feats": {},
+              "start": 5,
+              "end": 7,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "ならい",
+              "ruby_text": "習[なら]い",
+              "ruby_spans": [
+                {
+                  "base": "習",
+                  "reading": "なら",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "ならい",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "ます",
+              "lemma": "ます",
+              "pos": "助動詞/*/*/*/助動詞-マス/終止形-一般",
+              "upos": "AUX",
+              "xpos": "助動詞",
+              "feats": {},
+              "start": 7,
+              "end": 9,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "ます",
+              "ruby_text": "ます",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "ます"
+            },
+            {
+              "surface": "。",
+              "lemma": "。",
+              "pos": "補助記号/句点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 9,
+              "end": 10,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "。",
+              "ruby_text": "。",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "。"
+            }
+          ],
+          "reading": "わたしはがっきをならいます。",
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "warnings": [
+            "mediawiki ruby hints applied"
+          ]
+        },
+        "generated_tokens": [
+          {
+            "surface": "私",
+            "lemma": "私",
+            "pos": "代名詞/*/*/*/*/*",
+            "upos": "PRON",
+            "xpos": "代名詞",
+            "feats": {},
+            "start": 0,
+            "end": 1,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "わたし",
+            "ruby_text": "私[わたし]",
+            "ruby_spans": [
+              {
+                "base": "私",
+                "reading": "わたし",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "わたし",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "は",
+            "lemma": "は",
+            "pos": "助詞/係助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 1,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "は",
+            "ruby_text": "は",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "は"
+          },
+          {
+            "surface": "楽器",
+            "lemma": "楽器",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 2,
+            "end": 4,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "がっき",
+            "ruby_text": "楽器[がっき]",
+            "ruby_spans": [
+              {
+                "base": "楽器",
+                "reading": "がっき",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "がっき",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "を",
+            "lemma": "を",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 4,
+            "end": 5,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "を",
+            "ruby_text": "を",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "を"
+          },
+          {
+            "surface": "習い",
+            "lemma": "習う",
+            "pos": "動詞/一般/*/*/五段-ワア行/連用形-一般",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 5,
+            "end": 7,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ならい",
+            "ruby_text": "習[なら]い",
+            "ruby_spans": [
+              {
+                "base": "習",
+                "reading": "なら",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "ならい",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "ます",
+            "lemma": "ます",
+            "pos": "助動詞/*/*/*/助動詞-マス/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 7,
+            "end": 9,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ます",
+            "ruby_text": "ます",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "ます"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 9,
+            "end": 10,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
+          }
+        ],
+        "generated_reading": "わたしはがっきをならいます。",
+        "analyzer": "sudachipy_sudachidict_core_c",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-18T17:39:06Z",
+        "updated_utc": "2026-10-18T17:40:38Z",
+        "applied_utc": "2026-10-18T17:40:38Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      },
+      {
+        "id": "sentprop-7d8e5463e8c07344",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "ja_n3:7f7edbdbcc1da0d3",
+        "pack_code": "ja_n3",
+        "entry_id": "楽器",
+        "language": "ja",
+        "sentence_index": 2,
+        "old_sentence": "かれは楽器がじょうずです。",
+        "old_translations": {
+          "en": "He is good at playing instruments.",
+          "ar": "هو يجيد العزف على الآلات الموسيقية.",
+          "cs": "Dobře hraje na hudební nástroje.",
+          "da": "Han er god til at spille instrumenter.",
+          "de": "Er spielt gut Instrumente.",
+          "el": "Είναι καλός στο να παίζει μουσικά όργανα.",
+          "es": "Él toca bien los instrumentos.",
+          "fi": "Hän soittaa instrumentteja hyvin.",
+          "fr": "Il joue bien des instruments.",
+          "he": "הוא מנגן היטב בכלי נגינה.",
+          "hi": "वह वाद्ययंत्र बजाने में अच्छा है।",
+          "hu": "Jól játszik hangszereken.",
+          "id": "Dia pandai memainkan alat musik.",
+          "it": "Lui è bravo a suonare gli strumenti.",
+          "ko": "그는 악기를 잘 연주합니다.",
+          "nb": "Han er flink til å spille instrumenter.",
+          "nl": "Hij speelt goed instrumenten.",
+          "pl": "On dobrze gra na instrumentach.",
+          "pt": "Ele é bom em tocar instrumentos.",
+          "ro": "El cântă bine la instrumente.",
+          "ru": "Он хорошо играет на инструментах.",
+          "sv": "Han är bra på att spela instrument.",
+          "tr": "O, enstrüman çalmada iyidir.",
+          "uk": "Він добре грає на інструментах.",
+          "vi": "Anh ấy chơi nhạc cụ rất giỏi.",
+          "yue": "佢好識彈樂器。",
+          "zh-Hans": "他很擅长演奏乐器。"
+        },
+        "proposed_sentence": "彼は楽器が上手です。",
+        "proposed_translations": {
+          "en": "He is good at playing instruments.",
+          "ar": "هو يجيد العزف على الآلات الموسيقية.",
+          "cs": "Dobře hraje na hudební nástroje.",
+          "da": "Han er god til at spille instrumenter.",
+          "de": "Er spielt gut Instrumente.",
+          "el": "Είναι καλός στο να παίζει μουσικά όργανα.",
+          "es": "Él toca bien los instrumentos.",
+          "fi": "Hän soittaa instrumentteja hyvin.",
+          "fr": "Il joue bien des instruments.",
+          "he": "הוא מנגן היטב בכלי נגינה.",
+          "hi": "वह वाद्ययंत्र बजाने में अच्छा है।",
+          "hu": "Jól játszik hangszereken.",
+          "id": "Dia pandai memainkan alat musik.",
+          "it": "Lui è bravo a suonare gli strumenti.",
+          "ko": "그는 악기를 잘 연주합니다.",
+          "nb": "Han er flink til å spille instrumenter.",
+          "nl": "Hij speelt goed instrumenten.",
+          "pl": "On dobrze gra na instrumentach.",
+          "pt": "Ele é bom em tocar instrumentos.",
+          "ro": "El cântă bine la instrumente.",
+          "ru": "Он хорошо играет на инструментах.",
+          "sv": "Han är bra på att spela instrument.",
+          "tr": "O, enstrüman çalmada iyidir.",
+          "uk": "Він добре грає на інструментах.",
+          "vi": "Anh ấy chơi nhạc cụ rất giỏi.",
+          "yue": "佢好識彈樂器。",
+          "zh-Hans": "他很擅长演奏乐器。"
+        },
+        "old_ruby_source": "かれは楽器[がっき]がじょうずです。",
+        "proposed_ruby_source": "彼[かれ]は楽器[がっき]が上手[じょうず]です。",
+        "old_japanese": "かれは楽器がじょうずです。",
+        "old_english": "He is good at playing instruments.",
+        "proposed_japanese": "彼は楽器が上手です。",
+        "proposed_english": "He is good at playing instruments.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "ja",
+          "sentence": "彼は楽器が上手です。",
+          "tokens": [
+            {
+              "surface": "彼",
+              "lemma": "彼",
+              "pos": "代名詞/*/*/*/*/*",
+              "upos": "PRON",
+              "xpos": "代名詞",
+              "feats": {},
+              "start": 0,
+              "end": 1,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "かれ",
+              "ruby_text": "彼[かれ]",
+              "ruby_spans": [
+                {
+                  "base": "彼",
+                  "reading": "かれ",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "かれ",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "は",
+              "lemma": "は",
+              "pos": "助詞/係助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 1,
+              "end": 2,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "は",
+              "ruby_text": "は",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "は"
+            },
+            {
+              "surface": "楽器",
+              "lemma": "楽器",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 2,
+              "end": 4,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "がっき",
+              "ruby_text": "楽器[がっき]",
+              "ruby_spans": [
+                {
+                  "base": "楽器",
+                  "reading": "がっき",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "がっき",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "が",
+              "lemma": "が",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 4,
+              "end": 5,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "が",
+              "ruby_text": "が",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "が"
+            },
+            {
+              "surface": "上手",
+              "lemma": "上手",
+              "pos": "形状詞/一般/*/*/*/*",
+              "upos": "ADJ",
+              "xpos": "形状詞",
+              "feats": {},
+              "start": 5,
+              "end": 7,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "じょうず",
+              "ruby_text": "上手[じょうず]",
+              "ruby_spans": [
+                {
+                  "base": "上手",
+                  "reading": "じょうず",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "じょうず",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "です",
+              "lemma": "です",
+              "pos": "助動詞/*/*/*/助動詞-デス/終止形-一般",
+              "upos": "AUX",
+              "xpos": "助動詞",
+              "feats": {},
+              "start": 7,
+              "end": 9,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "です",
+              "ruby_text": "です",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "です"
+            },
+            {
+              "surface": "。",
+              "lemma": "。",
+              "pos": "補助記号/句点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 9,
+              "end": 10,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "。",
+              "ruby_text": "。",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "。"
+            }
+          ],
+          "reading": "かれはがっきがじょうずです。",
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "warnings": [
+            "mediawiki ruby hints applied"
+          ]
+        },
+        "generated_tokens": [
+          {
+            "surface": "彼",
+            "lemma": "彼",
+            "pos": "代名詞/*/*/*/*/*",
+            "upos": "PRON",
+            "xpos": "代名詞",
+            "feats": {},
+            "start": 0,
+            "end": 1,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "かれ",
+            "ruby_text": "彼[かれ]",
+            "ruby_spans": [
+              {
+                "base": "彼",
+                "reading": "かれ",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "かれ",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "は",
+            "lemma": "は",
+            "pos": "助詞/係助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 1,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "は",
+            "ruby_text": "は",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "は"
+          },
+          {
+            "surface": "楽器",
+            "lemma": "楽器",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 2,
+            "end": 4,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "がっき",
+            "ruby_text": "楽器[がっき]",
+            "ruby_spans": [
+              {
+                "base": "楽器",
+                "reading": "がっき",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "がっき",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "が",
+            "lemma": "が",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 4,
+            "end": 5,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "が",
+            "ruby_text": "が",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "が"
+          },
+          {
+            "surface": "上手",
+            "lemma": "上手",
+            "pos": "形状詞/一般/*/*/*/*",
+            "upos": "ADJ",
+            "xpos": "形状詞",
+            "feats": {},
+            "start": 5,
+            "end": 7,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "じょうず",
+            "ruby_text": "上手[じょうず]",
+            "ruby_spans": [
+              {
+                "base": "上手",
+                "reading": "じょうず",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "じょうず",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "です",
+            "lemma": "です",
+            "pos": "助動詞/*/*/*/助動詞-デス/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 7,
+            "end": 9,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "です",
+            "ruby_text": "です",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "です"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 9,
+            "end": 10,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
+          }
+        ],
+        "generated_reading": "かれはがっきがじょうずです。",
+        "analyzer": "sudachipy_sudachidict_core_c",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-18T17:39:06Z",
+        "updated_utc": "2026-10-18T17:40:38Z",
+        "applied_utc": "2026-10-18T17:40:38Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      },
+      {
+        "id": "sentprop-7407019446a334b7",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "ja_n3:7f7edbdbcc1da0d3",
+        "pack_code": "ja_n3",
+        "entry_id": "楽器",
+        "language": "ja",
+        "sentence_index": 4,
+        "old_sentence": "こどもたちは楽器をならべています。",
+        "old_translations": {
+          "en": "The children are lining up the instruments.",
+          "ar": "يرتب الأطفال الآلات الموسيقية.",
+          "cs": "Děti řadí hudební nástroje vedle sebe.",
+          "da": "Børnene stiller instrumenterne på række.",
+          "de": "Die Kinder stellen die Instrumente in eine Reihe.",
+          "el": "Τα παιδιά βάζουν τα μουσικά όργανα στη σειρά.",
+          "es": "Los niños están colocando los instrumentos en fila.",
+          "fi": "Lapset asettelevat soittimet riviin.",
+          "fr": "Les enfants rangent les instruments en ligne.",
+          "he": "הילדים מסדרים את כלי הנגינה בשורה.",
+          "hi": "बच्चे वाद्ययंत्रों को लाइन में लगा रहे हैं।",
+          "hu": "A gyerekek sorba rakják a hangszereket.",
+          "id": "Anak-anak sedang menata alat musik berjajar.",
+          "it": "I bambini stanno mettendo in fila gli strumenti.",
+          "ko": "아이들이 악기를 줄 세우고 있습니다.",
+          "nb": "Barna stiller opp instrumentene på rekke.",
+          "nl": "De kinderen zetten de instrumenten op een rij.",
+          "pl": "Dzieci ustawiają instrumenty w rzędzie.",
+          "pt": "As crianças estão alinhando os instrumentos.",
+          "ro": "Copiii aliniază instrumentele.",
+          "ru": "Дети выстраивают инструменты в ряд.",
+          "sv": "Barnen ställer instrumenten i rad.",
+          "tr": "Çocuklar enstrümanları sıraya diziyor.",
+          "uk": "Діти ставлять інструменти в ряд.",
+          "vi": "Bọn trẻ đang xếp các nhạc cụ thành hàng.",
+          "yue": "小朋友正將樂器排成一行。",
+          "zh-Hans": "孩子们正在把乐器排成一排。"
+        },
+        "proposed_sentence": "子どもたちは楽器を並べています。",
+        "proposed_translations": {
+          "en": "The children are lining up the instruments.",
+          "ar": "يرتب الأطفال الآلات الموسيقية.",
+          "cs": "Děti řadí hudební nástroje vedle sebe.",
+          "da": "Børnene stiller instrumenterne på række.",
+          "de": "Die Kinder stellen die Instrumente in eine Reihe.",
+          "el": "Τα παιδιά βάζουν τα μουσικά όργανα στη σειρά.",
+          "es": "Los niños están colocando los instrumentos en fila.",
+          "fi": "Lapset asettelevat soittimet riviin.",
+          "fr": "Les enfants alignent les instruments.",
+          "he": "הילדים מסדרים את כלי הנגינה בשורה.",
+          "hi": "बच्चे वाद्ययंत्रों को लाइन में लगा रहे हैं।",
+          "hu": "A gyerekek sorba rakják a hangszereket.",
+          "id": "Anak-anak sedang menata alat musik berjajar.",
+          "it": "I bambini stanno mettendo in fila gli strumenti.",
+          "ko": "아이들이 악기를 줄 세우고 있습니다.",
+          "nb": "Barna stiller opp instrumentene på rekke.",
+          "nl": "De kinderen zetten de instrumenten op een rij.",
+          "pl": "Dzieci ustawiają instrumenty w rzędzie.",
+          "pt": "As crianças estão alinhando os instrumentos.",
+          "ro": "Copiii aliniază instrumentele.",
+          "ru": "Дети выстраивают инструменты в ряд.",
+          "sv": "Barnen ställer instrumenten i rad.",
+          "tr": "Çocuklar enstrümanları sıraya diziyor.",
+          "uk": "Діти ставлять інструменти в ряд.",
+          "vi": "Bọn trẻ đang xếp các nhạc cụ thành hàng.",
+          "yue": "小朋友正將樂器排成一行。",
+          "zh-Hans": "孩子们正在把乐器排成一排。"
+        },
+        "old_ruby_source": "こどもたちは楽器[がっき]をならべています。",
+        "proposed_ruby_source": "子[こ]どもたちは楽器[がっき]を並[なら]べています。",
+        "old_japanese": "こどもたちは楽器をならべています。",
+        "old_english": "The children are lining up the instruments.",
+        "proposed_japanese": "子どもたちは楽器を並べています。",
+        "proposed_english": "The children are lining up the instruments.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "ja",
+          "sentence": "子どもたちは楽器を並べています。",
+          "tokens": [
+            {
+              "surface": "子どもたち",
+              "lemma": "子どもたち",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 0,
+              "end": 5,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "こどもたち",
+              "ruby_text": "子[こ]どもたち",
+              "ruby_spans": [
+                {
+                  "base": "子",
+                  "reading": "こ",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "こどもたち",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "は",
+              "lemma": "は",
+              "pos": "助詞/係助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 5,
+              "end": 6,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "は",
+              "ruby_text": "は",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "は"
+            },
+            {
+              "surface": "楽器",
+              "lemma": "楽器",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 6,
+              "end": 8,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "がっき",
+              "ruby_text": "楽器[がっき]",
+              "ruby_spans": [
+                {
+                  "base": "楽器",
+                  "reading": "がっき",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "がっき",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "を",
+              "lemma": "を",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 8,
+              "end": 9,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "を",
+              "ruby_text": "を",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "を"
+            },
+            {
+              "surface": "並べ",
+              "lemma": "並べる",
+              "pos": "動詞/一般/*/*/下一段-バ行/連用形-一般",
+              "upos": "VERB",
+              "xpos": "動詞",
+              "feats": {},
+              "start": 9,
+              "end": 11,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "ならべ",
+              "ruby_text": "並[なら]べ",
+              "ruby_spans": [
+                {
+                  "base": "並",
+                  "reading": "なら",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "ならべ",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "て",
+              "lemma": "て",
+              "pos": "助詞/接続助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 11,
+              "end": 12,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "て",
+              "ruby_text": "て",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "て"
+            },
+            {
+              "surface": "い",
+              "lemma": "いる",
+              "pos": "動詞/非自立可能/*/*/上一段-ア行/連用形-一般",
+              "upos": "VERB",
+              "xpos": "動詞",
+              "feats": {},
+              "start": 12,
+              "end": 13,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "い",
+              "ruby_text": "い",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "い"
+            },
+            {
+              "surface": "ます",
+              "lemma": "ます",
+              "pos": "助動詞/*/*/*/助動詞-マス/終止形-一般",
+              "upos": "AUX",
+              "xpos": "助動詞",
+              "feats": {},
+              "start": 13,
+              "end": 15,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "ます",
+              "ruby_text": "ます",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "ます"
+            },
+            {
+              "surface": "。",
+              "lemma": "。",
+              "pos": "補助記号/句点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 15,
+              "end": 16,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "。",
+              "ruby_text": "。",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "。"
+            }
+          ],
+          "reading": "こどもたちはがっきをならべています。",
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "warnings": [
+            "mediawiki ruby hints applied"
+          ]
+        },
+        "generated_tokens": [
+          {
+            "surface": "子どもたち",
+            "lemma": "子どもたち",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 0,
+            "end": 5,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "こどもたち",
+            "ruby_text": "子[こ]どもたち",
+            "ruby_spans": [
+              {
+                "base": "子",
+                "reading": "こ",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "こどもたち",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "は",
+            "lemma": "は",
+            "pos": "助詞/係助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 5,
+            "end": 6,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "は",
+            "ruby_text": "は",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "は"
+          },
+          {
+            "surface": "楽器",
+            "lemma": "楽器",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 6,
+            "end": 8,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "がっき",
+            "ruby_text": "楽器[がっき]",
+            "ruby_spans": [
+              {
+                "base": "楽器",
+                "reading": "がっき",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "がっき",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "を",
+            "lemma": "を",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 8,
+            "end": 9,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "を",
+            "ruby_text": "を",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "を"
+          },
+          {
+            "surface": "並べ",
+            "lemma": "並べる",
+            "pos": "動詞/一般/*/*/下一段-バ行/連用形-一般",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 9,
+            "end": 11,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ならべ",
+            "ruby_text": "並[なら]べ",
+            "ruby_spans": [
+              {
+                "base": "並",
+                "reading": "なら",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "ならべ",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "て",
+            "lemma": "て",
+            "pos": "助詞/接続助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 11,
+            "end": 12,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "て",
+            "ruby_text": "て",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "て"
+          },
+          {
+            "surface": "い",
+            "lemma": "いる",
+            "pos": "動詞/非自立可能/*/*/上一段-ア行/連用形-一般",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 12,
+            "end": 13,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "い",
+            "ruby_text": "い",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "い"
+          },
+          {
+            "surface": "ます",
+            "lemma": "ます",
+            "pos": "助動詞/*/*/*/助動詞-マス/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 13,
+            "end": 15,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ます",
+            "ruby_text": "ます",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "ます"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 15,
+            "end": 16,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
+          }
+        ],
+        "generated_reading": "こどもたちはがっきをならべています。",
+        "analyzer": "sudachipy_sudachidict_core_c",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-18T17:39:06Z",
+        "updated_utc": "2026-10-18T17:40:38Z",
+        "applied_utc": "2026-10-18T17:40:38Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-18T17:40:38Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -751,12 +2016,6 @@
       "かれはがっきがじょうずです。",
       "ここにがっきがあります。",
       "こどもたちはがっきをならべています。"
-    ],
-    "en": [
-      "I take lessons on an instrument.",
-      "He is good at playing instruments.",
-      "There are instruments here.",
-      "The children are lining up the instruments."
     ],
     "generation": {
       "generator": "vocomipedia_source_generator.py",
@@ -795,209 +2054,33 @@
         "parts_of_speech": "Noun; Noun which may take the genitive case particle 'no'"
       }
     },
-    "word_en": "musical instrument",
-    "word_es": "instrumento musical",
-    "word_fr": "instrument de musique",
-    "word_de": "Musikinstrument",
-    "word_it": "strumento musicale",
-    "word_ko": "악기",
-    "word_zh-Hans": "乐器",
-    "word_yue": "樂器",
-    "word_ru": "музыкальный инструмент",
-    "word_pt": "instrumento musical",
-    "word_he": "כלי נגינה",
-    "word_tr": "müzik aleti",
-    "word_vi": "nhạc cụ",
-    "word_ar": "آلة موسيقية",
-    "word_nl": "muziekinstrument",
-    "word_uk": "музичний інструмент",
-    "word_hu": "hangszer",
-    "word_hi": "संगीत वाद्य",
-    "word_pl": "instrument muzyczny",
-    "word_el": "μουσικό όργανο",
-    "word_nb": "musikkinstrument",
-    "word_id": "alat musik",
-    "word_sv": "musikinstrument",
-    "word_ro": "instrument muzical",
-    "word_cs": "hudební nástroj",
-    "word_da": "musikinstrument",
-    "word_fi": "soitin",
-    "word_ja": "楽器",
-    "ar": [
-      "أنا أتعلّم العزف على آلة موسيقية.",
-      "هو يجيد العزف على الآلات الموسيقية.",
-      "توجد آلات موسيقية هنا.",
-      "يرتب الأطفال الآلات الموسيقية."
-    ],
-    "cs": [
-      "Beru lekce hry na hudební nástroj.",
-      "Dobře hraje na hudební nástroje.",
-      "Jsou tu hudební nástroje.",
-      "Děti řadí hudební nástroje vedle sebe."
-    ],
-    "da": [
-      "Jeg går til undervisning på et instrument.",
-      "Han er god til at spille instrumenter.",
-      "Der er instrumenter her.",
-      "Børnene stiller instrumenterne på række."
-    ],
-    "de": [
-      "Ich nehme Unterricht auf einem Instrument.",
-      "Er spielt gut Instrumente.",
-      "Hier sind Instrumente.",
-      "Die Kinder stellen die Instrumente in eine Reihe."
-    ],
-    "el": [
-      "Παρακολουθώ μαθήματα σε ένα μουσικό όργανο.",
-      "Είναι καλός στο να παίζει μουσικά όργανα.",
-      "Υπάρχουν μουσικά όργανα εδώ.",
-      "Τα παιδιά βάζουν τα μουσικά όργανα στη σειρά."
-    ],
-    "es": [
-      "Tomo clases de un instrumento.",
-      "Él toca bien los instrumentos.",
-      "Hay instrumentos aquí.",
-      "Los niños están colocando los instrumentos en fila."
-    ],
-    "fi": [
-      "Käyn soittotunneilla.",
-      "Hän soittaa instrumentteja hyvin.",
-      "Täällä on soittimia.",
-      "Lapset asettelevat soittimet riviin."
-    ],
-    "fr": [
-      "Je prends des cours d'instrument.",
-      "Il joue bien des instruments.",
-      "Il y a des instruments ici.",
-      "Les enfants rangent les instruments en ligne."
-    ],
-    "he": [
-      "אני לומד לנגן בכלי נגינה.",
-      "הוא מנגן היטב בכלי נגינה.",
-      "יש כאן כלי נגינה.",
-      "הילדים מסדרים את כלי הנגינה בשורה."
-    ],
-    "hi": [
-      "मैं एक वाद्ययंत्र सीख रहा हूँ।",
-      "वह वाद्ययंत्र बजाने में अच्छा है।",
-      "यहाँ वाद्ययंत्र हैं।",
-      "बच्चे वाद्ययंत्रों को लाइन में लगा रहे हैं।"
-    ],
-    "hu": [
-      "Hangszeren tanulok.",
-      "Jól játszik hangszereken.",
-      "Itt vannak hangszerek.",
-      "A gyerekek sorba rakják a hangszereket."
-    ],
-    "id": [
-      "Saya ikut les alat musik.",
-      "Dia pandai memainkan alat musik.",
-      "Ada alat musik di sini.",
-      "Anak-anak sedang menata alat musik berjajar."
-    ],
-    "it": [
-      "Prendo lezioni di strumento.",
-      "Lui è bravo a suonare gli strumenti.",
-      "Ci sono strumenti qui.",
-      "I bambini stanno mettendo in fila gli strumenti."
-    ],
-    "ko": [
-      "저는 악기를 배웁니다.",
-      "그는 악기를 잘 연주합니다.",
-      "여기에 악기가 있습니다.",
-      "아이들이 악기를 줄 세우고 있습니다."
-    ],
-    "nb": [
-      "Jeg tar timer på et instrument.",
-      "Han er flink til å spille instrumenter.",
-      "Det er instrumenter her.",
-      "Barna stiller opp instrumentene på rekke."
-    ],
-    "nl": [
-      "Ik neem les op een instrument.",
-      "Hij speelt goed instrumenten.",
-      "Er zijn hier instrumenten.",
-      "De kinderen zetten de instrumenten op een rij."
-    ],
-    "pl": [
-      "Biorę lekcje gry na instrumencie.",
-      "On dobrze gra na instrumentach.",
-      "Tutaj są instrumenty.",
-      "Dzieci ustawiają instrumenty w rzędzie."
-    ],
-    "pt": [
-      "Eu tenho aulas de um instrumento.",
-      "Ele é bom em tocar instrumentos.",
-      "Há instrumentos aqui.",
-      "As crianças estão alinhando os instrumentos."
-    ],
-    "ro": [
-      "Fac lecții la un instrument.",
-      "El cântă bine la instrumente.",
-      "Aici sunt instrumente.",
-      "Copiii aliniază instrumentele."
-    ],
-    "ru": [
-      "Я учусь играть на инструменте.",
-      "Он хорошо играет на инструментах.",
-      "Здесь есть музыкальные инструменты.",
-      "Дети выстраивают инструменты в ряд."
-    ],
-    "sv": [
-      "Jag tar lektioner i ett instrument.",
-      "Han är bra på att spela instrument.",
-      "Det finns instrument här.",
-      "Barnen ställer instrumenten i rad."
-    ],
-    "tr": [
-      "Bir enstrüman dersi alıyorum.",
-      "O, enstrüman çalmada iyidir.",
-      "Burada enstrümanlar var.",
-      "Çocuklar enstrümanları sıraya diziyor."
-    ],
-    "uk": [
-      "Я беру уроки гри на інструменті.",
-      "Він добре грає на інструментах.",
-      "Тут є музичні інструменти.",
-      "Діти ставлять інструменти в ряд."
-    ],
-    "vi": [
-      "Tôi học nhạc cụ.",
-      "Anh ấy chơi nhạc cụ rất giỏi.",
-      "Ở đây có các nhạc cụ.",
-      "Bọn trẻ đang xếp các nhạc cụ thành hàng."
-    ],
-    "yue": [
-      "我學樂器。",
-      "佢好識彈樂器。",
-      "呢度有樂器。",
-      "小朋友正將樂器排成一行。"
-    ],
-    "zh-Hans": [
-      "我学乐器。",
-      "他很擅长演奏乐器。",
-      "这里有乐器。",
-      "孩子们正在把乐器排成一排。"
-    ],
     "pos_analysis": [
       {
-        "sentence": "わたしは楽器をならいます。",
+        "sentence": "私は楽器を習います。",
         "tokens": [
           {
-            "surface": "わたし",
-            "lemma": "わたし",
+            "surface": "私",
+            "lemma": "私",
             "pos": "代名詞/*/*/*/*/*",
             "upos": "PRON",
             "xpos": "代名詞",
             "feats": {},
             "start": 0,
-            "end": 3,
+            "end": 1,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "わたし",
-            "ruby_text": "わたし",
-            "ruby_spans": [],
-            "ruby_confidence": "high",
-            "furigana": "わたし"
+            "ruby_text": "私[わたし]",
+            "ruby_spans": [
+              {
+                "base": "私",
+                "reading": "わたし",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "わたし",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "は",
@@ -1006,8 +2089,8 @@
             "upos": "PART",
             "xpos": "助詞",
             "feats": {},
-            "start": 3,
-            "end": 4,
+            "start": 1,
+            "end": 2,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "は",
             "ruby_text": "は",
@@ -1022,8 +2105,8 @@
             "upos": "NOUN",
             "xpos": "名詞",
             "feats": {},
-            "start": 4,
-            "end": 6,
+            "start": 2,
+            "end": 4,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "がっき",
             "ruby_text": "楽器[がっき]",
@@ -1035,8 +2118,9 @@
                 "length": 2
               }
             ],
-            "ruby_confidence": "medium",
+            "ruby_confidence": "reviewed",
             "furigana": "がっき",
+            "ruby_source": "mediawiki_sentence_ruby",
             "is_main_word": true
           },
           {
@@ -1046,8 +2130,8 @@
             "upos": "PART",
             "xpos": "助詞",
             "feats": {},
-            "start": 6,
-            "end": 7,
+            "start": 4,
+            "end": 5,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "を",
             "ruby_text": "を",
@@ -1056,20 +2140,28 @@
             "furigana": "を"
           },
           {
-            "surface": "ならい",
-            "lemma": "ならう",
+            "surface": "習い",
+            "lemma": "習う",
             "pos": "動詞/一般/*/*/五段-ワア行/連用形-一般",
             "upos": "VERB",
             "xpos": "動詞",
             "feats": {},
-            "start": 7,
-            "end": 10,
+            "start": 5,
+            "end": 7,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "ならい",
-            "ruby_text": "ならい",
-            "ruby_spans": [],
-            "ruby_confidence": "high",
-            "furigana": "ならい"
+            "ruby_text": "習[なら]い",
+            "ruby_spans": [
+              {
+                "base": "習",
+                "reading": "なら",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "ならい",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "ます",
@@ -1078,8 +2170,8 @@
             "upos": "AUX",
             "xpos": "助動詞",
             "feats": {},
-            "start": 10,
-            "end": 12,
+            "start": 7,
+            "end": 9,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "ます",
             "ruby_text": "ます",
@@ -1094,8 +2186,8 @@
             "upos": "PUNCT",
             "xpos": "補助記号",
             "feats": {},
-            "start": 12,
-            "end": 13,
+            "start": 9,
+            "end": 10,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "。",
             "ruby_text": "。",
@@ -1107,23 +2199,31 @@
         "difficulty_aggregated": null
       },
       {
-        "sentence": "かれは楽器がじょうずです。",
+        "sentence": "彼は楽器が上手です。",
         "tokens": [
           {
-            "surface": "かれ",
-            "lemma": "かれ",
+            "surface": "彼",
+            "lemma": "彼",
             "pos": "代名詞/*/*/*/*/*",
             "upos": "PRON",
             "xpos": "代名詞",
             "feats": {},
             "start": 0,
-            "end": 2,
+            "end": 1,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "かれ",
-            "ruby_text": "かれ",
-            "ruby_spans": [],
-            "ruby_confidence": "high",
-            "furigana": "かれ"
+            "ruby_text": "彼[かれ]",
+            "ruby_spans": [
+              {
+                "base": "彼",
+                "reading": "かれ",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "かれ",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "は",
@@ -1132,8 +2232,8 @@
             "upos": "PART",
             "xpos": "助詞",
             "feats": {},
-            "start": 2,
-            "end": 3,
+            "start": 1,
+            "end": 2,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "は",
             "ruby_text": "は",
@@ -1148,8 +2248,8 @@
             "upos": "NOUN",
             "xpos": "名詞",
             "feats": {},
-            "start": 3,
-            "end": 5,
+            "start": 2,
+            "end": 4,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "がっき",
             "ruby_text": "楽器[がっき]",
@@ -1161,8 +2261,9 @@
                 "length": 2
               }
             ],
-            "ruby_confidence": "medium",
+            "ruby_confidence": "reviewed",
             "furigana": "がっき",
+            "ruby_source": "mediawiki_sentence_ruby",
             "is_main_word": true
           },
           {
@@ -1172,8 +2273,8 @@
             "upos": "PART",
             "xpos": "助詞",
             "feats": {},
-            "start": 5,
-            "end": 6,
+            "start": 4,
+            "end": 5,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "が",
             "ruby_text": "が",
@@ -1182,20 +2283,28 @@
             "furigana": "が"
           },
           {
-            "surface": "じょうず",
-            "lemma": "じょうず",
+            "surface": "上手",
+            "lemma": "上手",
             "pos": "形状詞/一般/*/*/*/*",
             "upos": "ADJ",
             "xpos": "形状詞",
             "feats": {},
-            "start": 6,
-            "end": 10,
+            "start": 5,
+            "end": 7,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "じょうず",
-            "ruby_text": "じょうず",
-            "ruby_spans": [],
-            "ruby_confidence": "high",
-            "furigana": "じょうず"
+            "ruby_text": "上手[じょうず]",
+            "ruby_spans": [
+              {
+                "base": "上手",
+                "reading": "じょうず",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "じょうず",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "です",
@@ -1204,8 +2313,8 @@
             "upos": "AUX",
             "xpos": "助動詞",
             "feats": {},
-            "start": 10,
-            "end": 12,
+            "start": 7,
+            "end": 9,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "です",
             "ruby_text": "です",
@@ -1220,8 +2329,8 @@
             "upos": "PUNCT",
             "xpos": "補助記号",
             "feats": {},
-            "start": 12,
-            "end": 13,
+            "start": 9,
+            "end": 10,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "。",
             "ruby_text": "。",
@@ -1359,39 +2468,31 @@
         "difficulty_aggregated": null
       },
       {
-        "sentence": "こどもたちは楽器をならべています。",
+        "sentence": "子どもたちは楽器を並べています。",
         "tokens": [
           {
-            "surface": "こども",
-            "lemma": "こども",
+            "surface": "子どもたち",
+            "lemma": "子どもたち",
             "pos": "名詞/普通名詞/一般/*/*/*",
             "upos": "NOUN",
             "xpos": "名詞",
             "feats": {},
             "start": 0,
-            "end": 3,
-            "analyzer": "sudachipy_sudachidict_core_c",
-            "reading_kana": "こども",
-            "ruby_text": "こども",
-            "ruby_spans": [],
-            "ruby_confidence": "high",
-            "furigana": "こども"
-          },
-          {
-            "surface": "たち",
-            "lemma": "たち",
-            "pos": "接尾辞/名詞的/一般/*/*/*",
-            "upos": "SUFFIX",
-            "xpos": "接尾辞",
-            "feats": {},
-            "start": 3,
             "end": 5,
             "analyzer": "sudachipy_sudachidict_core_c",
-            "reading_kana": "たち",
-            "ruby_text": "たち",
-            "ruby_spans": [],
-            "ruby_confidence": "high",
-            "furigana": "たち"
+            "reading_kana": "こどもたち",
+            "ruby_text": "子[こ]どもたち",
+            "ruby_spans": [
+              {
+                "base": "子",
+                "reading": "こ",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "こどもたち",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "は",
@@ -1429,8 +2530,9 @@
                 "length": 2
               }
             ],
-            "ruby_confidence": "medium",
+            "ruby_confidence": "reviewed",
             "furigana": "がっき",
+            "ruby_source": "mediawiki_sentence_ruby",
             "is_main_word": true
           },
           {
@@ -1450,20 +2552,28 @@
             "furigana": "を"
           },
           {
-            "surface": "ならべ",
-            "lemma": "ならべる",
+            "surface": "並べ",
+            "lemma": "並べる",
             "pos": "動詞/一般/*/*/下一段-バ行/連用形-一般",
             "upos": "VERB",
             "xpos": "動詞",
             "feats": {},
             "start": 9,
-            "end": 12,
+            "end": 11,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "ならべ",
-            "ruby_text": "ならべ",
-            "ruby_spans": [],
-            "ruby_confidence": "high",
-            "furigana": "ならべ"
+            "ruby_text": "並[なら]べ",
+            "ruby_spans": [
+              {
+                "base": "並",
+                "reading": "なら",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "ならべ",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "て",
@@ -1472,8 +2582,8 @@
             "upos": "PART",
             "xpos": "助詞",
             "feats": {},
-            "start": 12,
-            "end": 13,
+            "start": 11,
+            "end": 12,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "て",
             "ruby_text": "て",
@@ -1488,8 +2598,8 @@
             "upos": "VERB",
             "xpos": "動詞",
             "feats": {},
-            "start": 13,
-            "end": 14,
+            "start": 12,
+            "end": 13,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "い",
             "ruby_text": "い",
@@ -1504,8 +2614,8 @@
             "upos": "AUX",
             "xpos": "助動詞",
             "feats": {},
-            "start": 14,
-            "end": 16,
+            "start": 13,
+            "end": 15,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "ます",
             "ruby_text": "ます",
@@ -1520,8 +2630,8 @@
             "upos": "PUNCT",
             "xpos": "補助記号",
             "feats": {},
-            "start": 16,
-            "end": 17,
+            "start": 15,
+            "end": 16,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "。",
             "ruby_text": "。",
@@ -1532,6 +2642,196 @@
         ],
         "difficulty_aggregated": null
       }
+    ],
+    "word_en": "musical instrument",
+    "word_es": "instrumento musical",
+    "word_fr": "instrument de musique",
+    "word_de": "Musikinstrument",
+    "word_it": "strumento musicale",
+    "word_ko": "악기",
+    "word_zh-Hans": "乐器",
+    "word_yue": "樂器",
+    "word_ru": "музыкальный инструмент",
+    "word_pt": "instrumento musical",
+    "word_he": "כלי נגינה",
+    "word_tr": "müzik aleti",
+    "word_vi": "nhạc cụ",
+    "word_ar": "آلة موسيقية",
+    "word_nl": "muziekinstrument",
+    "word_uk": "музичний інструмент",
+    "word_hu": "hangszer",
+    "word_hi": "संगीत वाद्य",
+    "word_pl": "instrument muzyczny",
+    "word_el": "μουσικό όργανο",
+    "word_nb": "musikkinstrument",
+    "word_id": "alat musik",
+    "word_sv": "musikinstrument",
+    "word_ro": "instrument muzical",
+    "word_cs": "hudební nástroj",
+    "word_da": "musikinstrument",
+    "word_fi": "soitin",
+    "word_ja": "楽器",
+    "ar": [
+      "أنا أتعلّم العزف على آلة موسيقية.",
+      "هو يجيد العزف على الآلات الموسيقية.",
+      "توجد آلات موسيقية هنا.",
+      "يرتب الأطفال الآلات الموسيقية."
+    ],
+    "cs": [
+      "Beru lekce hry na hudební nástroj.",
+      "Dobře hraje na hudební nástroje.",
+      "Jsou tu hudební nástroje.",
+      "Děti řadí hudební nástroje vedle sebe."
+    ],
+    "da": [
+      "Jeg går til undervisning på et instrument.",
+      "Han er god til at spille instrumenter.",
+      "Der er instrumenter her.",
+      "Børnene stiller instrumenterne på række."
+    ],
+    "de": [
+      "Ich nehme Unterricht auf einem Instrument.",
+      "Er spielt gut Instrumente.",
+      "Hier sind Instrumente.",
+      "Die Kinder stellen die Instrumente in eine Reihe."
+    ],
+    "el": [
+      "Παρακολουθώ μαθήματα σε ένα μουσικό όργανο.",
+      "Είναι καλός στο να παίζει μουσικά όργανα.",
+      "Υπάρχουν μουσικά όργανα εδώ.",
+      "Τα παιδιά βάζουν τα μουσικά όργανα στη σειρά."
+    ],
+    "en": [
+      "I take lessons on an instrument.",
+      "He is good at playing instruments.",
+      "There are instruments here.",
+      "The children are lining up the instruments."
+    ],
+    "es": [
+      "Tomo clases de un instrumento.",
+      "Él toca bien los instrumentos.",
+      "Hay instrumentos aquí.",
+      "Los niños están colocando los instrumentos en fila."
+    ],
+    "fi": [
+      "Käyn soittotunneilla.",
+      "Hän soittaa instrumentteja hyvin.",
+      "Täällä on soittimia.",
+      "Lapset asettelevat soittimet riviin."
+    ],
+    "fr": [
+      "Je prends des cours d'instrument.",
+      "Il joue bien des instruments.",
+      "Il y a des instruments ici.",
+      "Les enfants rangent les instruments en ligne."
+    ],
+    "he": [
+      "אני לומד לנגן בכלי נגינה.",
+      "הוא מנגן היטב בכלי נגינה.",
+      "יש כאן כלי נגינה.",
+      "הילדים מסדרים את כלי הנגינה בשורה."
+    ],
+    "hi": [
+      "मैं एक वाद्ययंत्र सीख रहा हूँ।",
+      "वह वाद्ययंत्र बजाने में अच्छा है।",
+      "यहाँ वाद्ययंत्र हैं।",
+      "बच्चे वाद्ययंत्रों को लाइन में लगा रहे हैं।"
+    ],
+    "hu": [
+      "Hangszeren tanulok.",
+      "Jól játszik hangszereken.",
+      "Itt vannak hangszerek.",
+      "A gyerekek sorba rakják a hangszereket."
+    ],
+    "id": [
+      "Saya ikut les alat musik.",
+      "Dia pandai memainkan alat musik.",
+      "Ada alat musik di sini.",
+      "Anak-anak sedang menata alat musik berjajar."
+    ],
+    "it": [
+      "Prendo lezioni di strumento.",
+      "Lui è bravo a suonare gli strumenti.",
+      "Ci sono strumenti qui.",
+      "I bambini stanno mettendo in fila gli strumenti."
+    ],
+    "ko": [
+      "저는 악기를 배웁니다.",
+      "그는 악기를 잘 연주합니다.",
+      "여기에 악기가 있습니다.",
+      "아이들이 악기를 줄 세우고 있습니다."
+    ],
+    "nb": [
+      "Jeg tar timer på et instrument.",
+      "Han er flink til å spille instrumenter.",
+      "Det er instrumenter her.",
+      "Barna stiller opp instrumentene på rekke."
+    ],
+    "nl": [
+      "Ik neem les op een instrument.",
+      "Hij speelt goed instrumenten.",
+      "Er zijn hier instrumenten.",
+      "De kinderen zetten de instrumenten op een rij."
+    ],
+    "pl": [
+      "Biorę lekcje gry na instrumencie.",
+      "On dobrze gra na instrumentach.",
+      "Tutaj są instrumenty.",
+      "Dzieci ustawiają instrumenty w rzędzie."
+    ],
+    "pt": [
+      "Eu tenho aulas de um instrumento.",
+      "Ele é bom em tocar instrumentos.",
+      "Há instrumentos aqui.",
+      "As crianças estão alinhando os instrumentos."
+    ],
+    "ro": [
+      "Fac lecții la un instrument.",
+      "El cântă bine la instrumente.",
+      "Aici sunt instrumente.",
+      "Copiii aliniază instrumentele."
+    ],
+    "ru": [
+      "Я учусь играть на инструменте.",
+      "Он хорошо играет на инструментах.",
+      "Здесь есть музыкальные инструменты.",
+      "Дети выстраивают инструменты в ряд."
+    ],
+    "sv": [
+      "Jag tar lektioner i ett instrument.",
+      "Han är bra på att spela instrument.",
+      "Det finns instrument här.",
+      "Barnen ställer instrumenten i rad."
+    ],
+    "tr": [
+      "Bir enstrüman dersi alıyorum.",
+      "O, enstrüman çalmada iyidir.",
+      "Burada enstrümanlar var.",
+      "Çocuklar enstrümanları sıraya diziyor."
+    ],
+    "uk": [
+      "Я беру уроки гри на інструменті.",
+      "Він добре грає на інструментах.",
+      "Тут є музичні інструменти.",
+      "Діти ставлять інструменти в ряд."
+    ],
+    "vi": [
+      "Tôi học nhạc cụ.",
+      "Anh ấy chơi nhạc cụ rất giỏi.",
+      "Ở đây có các nhạc cụ.",
+      "Bọn trẻ đang xếp các nhạc cụ thành hàng."
+    ],
+    "yue": [
+      "我學樂器。",
+      "佢好識彈樂器。",
+      "呢度有樂器。",
+      "小朋友正將樂器排成一行。"
+    ],
+    "zh-Hans": [
+      "我学乐器。",
+      "他很擅长演奏乐器。",
+      "这里有乐器。",
+      "孩子们正在把乐器排成一排。"
     ]
   }
 }

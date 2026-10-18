@@ -203,10 +203,10 @@
       "difficulty": 7.25
     },
     {
-      "target": "Die Chefin ist flexibel mit den Arbeitszeiten.",
+      "target": "Die Chefin ist bei den Arbeitszeiten flexibel.",
       "reading": "/diː ˈʃɛfɪn ɪst flɛkˈziːbəl mɪt deːn ˈaʁbaɪ̯tsˌtsaɪ̯tən/",
       "translations": {
-        "de": "Die Chefin ist flexibel mit den Arbeitszeiten.",
+        "de": "Die Chefin ist bei den Arbeitszeiten flexibel.",
         "ipa": "/diː ˈʃɛfɪn ɪst flɛkˈziːbəl mɪt deːn ˈaʁbaɪ̯tsˌtsaɪ̯tən/",
         "en": "The boss is flexible with work hours.",
         "es": "La jefa es flexible con los horarios de trabajo.",
@@ -239,67 +239,92 @@
       "tokens": [
         {
           "surface": "Die",
-          "surface_en": "the",
-          "furigana": "[diː]",
-          "pos": "DET",
           "lemma": "der",
-          "explanation": "Definite article, nominative feminine singular; determines ‘Chefin’.",
-          "difficulty": 2
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "ART",
+          "feats": {},
+          "start": 0,
+          "end": 3,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "Chefin",
-          "surface_en": "boss (female)",
-          "furigana": "[ˈʃeːfɪn]",
-          "pos": "NOUN",
           "lemma": "Chefin",
-          "explanation": "Common noun, feminine nominative singular; subject of the clause.",
-          "difficulty": 7
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 4,
+          "end": 10,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "ist",
-          "surface_en": "is",
-          "furigana": "[ɪst]",
-          "pos": "AUX",
           "lemma": "sein",
-          "explanation": "Finite auxiliary (copula) in present tense, 3rd person singular; links subject to the predicative complement.",
-          "difficulty": 4
+          "pos": "AUX",
+          "upos": "AUX",
+          "xpos": "VAFIN",
+          "feats": {},
+          "start": 11,
+          "end": 14,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "flexibel",
-          "surface_en": "flexible",
-          "furigana": "[flɛkˈziːbəl]",
-          "pos": "ADJ",
-          "lemma": "flexibel",
-          "explanation": "Predicative adjective functioning as subject complement.",
-          "difficulty": 10,
-          "is_main_word": true
-        },
-        {
-          "surface": "mit",
-          "surface_en": "with",
-          "furigana": "[mɪt]",
+          "surface": "bei",
+          "lemma": "bei",
           "pos": "ADP",
-          "lemma": "mit",
-          "explanation": "Preposition governing the dative; introduces a prepositional phrase specifying the scope/context of flexibility.",
-          "difficulty": 2
+          "upos": "ADP",
+          "xpos": "APPR",
+          "feats": {},
+          "start": 15,
+          "end": 18,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "den",
-          "surface_en": "the",
-          "furigana": "[deːn]",
-          "pos": "DET",
           "lemma": "der",
-          "explanation": "Definite article, dative plural; agrees with ‘Arbeitszeiten’ after ‘mit’.",
-          "difficulty": 2
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "ART",
+          "feats": {},
+          "start": 19,
+          "end": 22,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "Arbeitszeiten.",
-          "surface_en": "working hours",
-          "furigana": "[ˈaʁbaɪ̯tsˌtsaɪ̯tən]",
-          "pos": "NOUN",
+          "surface": "Arbeitszeiten",
           "lemma": "Arbeitszeit",
-          "explanation": "Common noun, plural dative; object of the preposition ‘mit’ (prepositional complement).",
-          "difficulty": 10
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 23,
+          "end": 36,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "flexibel",
+          "lemma": "flexibel",
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "ADJD",
+          "feats": {},
+          "start": 37,
+          "end": 45,
+          "analyzer": "spacy_de_core_news_lg",
+          "is_main_word": true
+        },
+        {
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 45,
+          "end": 46,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 5.29
@@ -391,8 +416,314 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-14T23:54:35Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:De b1/905b5477c8528a6e",
+      "revision_id": 85520,
+      "parent_revision_id": 16080,
+      "revision_timestamp_utc": "2026-10-14T23:54:35Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Naturalize German preposition with Arbeitszeiten",
+      "pulled_utc": "2026-10-17T07:06:40Z",
+      "applied_utc": "2026-10-17T07:06:53Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-6bba50bdfa0db1c5",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_b1:905b5477c8528a6e",
+        "pack_code": "de_b1",
+        "entry_id": "flexibel",
+        "language": "de",
+        "sentence_index": 3,
+        "old_sentence": "Die Chefin ist flexibel mit den Arbeitszeiten.",
+        "old_translations": {
+          "de": "Die Chefin ist flexibel mit den Arbeitszeiten.",
+          "ipa": "/diː ˈʃɛfɪn ɪst flɛkˈziːbəl mɪt deːn ˈaʁbaɪ̯tsˌtsaɪ̯tən/",
+          "en": "The boss is flexible with work hours.",
+          "es": "La jefa es flexible con los horarios de trabajo.",
+          "fr": "La patronne est flexible sur les horaires.",
+          "it": "La responsabile è flessibile con gli orari di lavoro.",
+          "ko": "상사는 근무 시간에 융통성이 있어요.",
+          "zh-Hans": "女老板对工作时间很灵活。",
+          "yue": "女上司對工作時間好有彈性。",
+          "ru": "Начальница гибко относится к рабочему времени.",
+          "pt": "A chefe é flexível com os horários de trabalho.",
+          "he": "המנהלת גמישה בשעות העבודה.",
+          "tr": "Patron çalışma saatlerinde esnek.",
+          "vi": "Sếp linh hoạt về giờ làm.",
+          "ar": "المديرة مرنة في مواعيد العمل.",
+          "nl": "De baas is flexibel met werktijden.",
+          "uk": "Керівниця гнучко ставиться до робочого часу.",
+          "hu": "A főnöknő rugalmas a munkaidővel.",
+          "hi": "बॉस काम के घंटों में लचीली हैं.",
+          "pl": "Szefowa jest elastyczna w kwestii godzin pracy.",
+          "el": "Η διευθύντρια είναι ευέλικτη με το ωράριο εργασίας.",
+          "nb": "Sjefen er fleksibel med arbeidstidene.",
+          "id": "Atasan bersikap fleksibel soal jam kerja.",
+          "sv": "Chefen är flexibel med arbetstiderna.",
+          "ro": "Șefa este flexibilă la programul de lucru.",
+          "cs": "Šéfka je flexibilní ohledně pracovní doby.",
+          "da": "Chefen er fleksibel med arbejdstiderne.",
+          "fi": "Esihenkilö on joustava työaikojen suhteen.",
+          "ja": "上司は勤務時間に柔軟です。"
+        },
+        "proposed_sentence": "Die Chefin ist bei den Arbeitszeiten flexibel.",
+        "proposed_translations": {
+          "de": "Die Chefin ist bei den Arbeitszeiten flexibel.",
+          "ipa": "/diː ˈʃɛfɪn ɪst flɛkˈziːbəl mɪt deːn ˈaʁbaɪ̯tsˌtsaɪ̯tən/",
+          "en": "The boss is flexible with work hours.",
+          "es": "La jefa es flexible con los horarios de trabajo.",
+          "fr": "La patronne est flexible sur les horaires.",
+          "it": "La responsabile è flessibile con gli orari di lavoro.",
+          "ko": "상사는 근무 시간에 융통성이 있어요.",
+          "zh-Hans": "女老板对工作时间很灵活。",
+          "yue": "女上司對工作時間好有彈性。",
+          "ru": "Начальница гибко относится к рабочему времени.",
+          "pt": "A chefe é flexível com os horários de trabalho.",
+          "he": "המנהלת גמישה בשעות העבודה.",
+          "tr": "Patron çalışma saatlerinde esnek.",
+          "vi": "Sếp linh hoạt về giờ làm.",
+          "ar": "المديرة مرنة في مواعيد العمل.",
+          "nl": "De baas is flexibel met werktijden.",
+          "uk": "Керівниця гнучко ставиться до робочого часу.",
+          "hu": "A főnöknő rugalmas a munkaidővel.",
+          "hi": "बॉस काम के घंटों में लचीली हैं.",
+          "pl": "Szefowa jest elastyczna w kwestii godzin pracy.",
+          "el": "Η διευθύντρια είναι ευέλικτη με το ωράριο εργασίας.",
+          "nb": "Sjefen er fleksibel med arbeidstidene.",
+          "id": "Atasan bersikap fleksibel soal jam kerja.",
+          "sv": "Chefen är flexibel med arbetstiderna.",
+          "ro": "Șefa este flexibilă la programul de lucru.",
+          "cs": "Šéfka je flexibilní ohledně pracovní doby.",
+          "da": "Chefen er fleksibel med arbejdstiderne.",
+          "fi": "Esihenkilö on joustava työaikojen suhteen.",
+          "ja": "上司は勤務時間に柔軟です。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Die Chefin ist bei den Arbeitszeiten flexibel.",
+        "old_japanese": "Die Chefin ist flexibel mit den Arbeitszeiten.",
+        "old_english": "The boss is flexible with work hours.",
+        "proposed_japanese": "Die Chefin ist bei den Arbeitszeiten flexibel.",
+        "proposed_english": "The boss is flexible with work hours.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Die Chefin ist bei den Arbeitszeiten flexibel.",
+          "tokens": [
+            {
+              "surface": "Die",
+              "lemma": "der",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "ART",
+              "feats": {},
+              "start": 0,
+              "end": 3,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Chefin",
+              "lemma": "Chefin",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 4,
+              "end": 10,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "ist",
+              "lemma": "sein",
+              "pos": "AUX",
+              "upos": "AUX",
+              "xpos": "VAFIN",
+              "feats": {},
+              "start": 11,
+              "end": 14,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "bei",
+              "lemma": "bei",
+              "pos": "ADP",
+              "upos": "ADP",
+              "xpos": "APPR",
+              "feats": {},
+              "start": 15,
+              "end": 18,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "den",
+              "lemma": "der",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "ART",
+              "feats": {},
+              "start": 19,
+              "end": 22,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Arbeitszeiten",
+              "lemma": "Arbeitszeit",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 23,
+              "end": 36,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "flexibel",
+              "lemma": "flexibel",
+              "pos": "ADV",
+              "upos": "ADV",
+              "xpos": "ADJD",
+              "feats": {},
+              "start": 37,
+              "end": 45,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 45,
+              "end": 46,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Die",
+            "lemma": "der",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Chefin",
+            "lemma": "Chefin",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 4,
+            "end": 10,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "ist",
+            "lemma": "sein",
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "VAFIN",
+            "feats": {},
+            "start": 11,
+            "end": 14,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "bei",
+            "lemma": "bei",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 15,
+            "end": 18,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "den",
+            "lemma": "der",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 19,
+            "end": 22,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Arbeitszeiten",
+            "lemma": "Arbeitszeit",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 23,
+            "end": 36,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "flexibel",
+            "lemma": "flexibel",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADJD",
+            "feats": {},
+            "start": 37,
+            "end": 45,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 45,
+            "end": 46,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:06:40Z",
+        "updated_utc": "2026-10-17T07:07:05Z",
+        "applied_utc": "2026-10-17T07:07:05Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:07:05Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -404,34 +735,6 @@
     "word": "flexibel",
     "word_reading": "",
     "word_label": "Adjektiv",
-    "word_en": "flexible; adaptable",
-    "word_es": "flexible; adaptable",
-    "word_fr": "souple; flexible",
-    "word_it": "flessibile; adattabile",
-    "word_ko": "유연한; 융통성 있는",
-    "word_zh-Hans": "灵活的; 柔韧的",
-    "word_yue": "有彈性; 靈活嘅",
-    "word_ru": "гибкий",
-    "word_pt": "flexível; adaptável",
-    "word_he": "גמיש; מסתגל",
-    "word_tr": "esnek; uyumlu",
-    "word_vi": "linh hoạt; dẻo",
-    "word_ar": "مرن; قابل للتكيف",
-    "word_nl": "flexibel; soepel",
-    "word_uk": "гнучкий; пристосовний",
-    "word_hu": "rugalmas; alkalmazkodó",
-    "word_hi": "लचीला; अनुकूलनीय",
-    "word_pl": "elastyczny; giętki",
-    "word_el": "ευέλικτος; εύκαμπτος",
-    "word_nb": "fleksibel; smidig",
-    "word_id": "fleksibel; lentur",
-    "word_sv": "flexibel; smidig",
-    "word_ro": "flexibil; adaptabil",
-    "word_cs": "pružný; přizpůsobivý",
-    "word_da": "fleksibel; smidig",
-    "word_fi": "joustava; taipuisa",
-    "word_ja": "柔軟な; 融通が利く",
-    "word_de": "flexibel",
     "comic_difficulty": 6.41,
     "jp": [
       "Ich bin heute zeitlich flexibel.",
@@ -444,24 +747,6 @@
       "/viːɐ ˈblaɪ̯bən ˈhɔʏtə flɛkˈziːbəl/",
       "/diː ˈʃɛfɪn ɪst flɛkˈziːbəl mɪt deːn ˈaʁbaɪ̯tsˌtsaɪ̯tən/",
       "/eːɐ blaɪ̯pt ˈhɔʏtə flɛkˈziːbəl/"
-    ],
-    "de": [
-      "Ich bin heute zeitlich flexibel.",
-      "Wir bleiben heute flexibel.",
-      "Die Chefin ist flexibel mit den Arbeitszeiten.",
-      "Er bleibt heute flexibel."
-    ],
-    "ipa": [
-      "/ɪç bɪn ˈhɔʏtə ˈtsaɪ̯tlɪç flɛkˈziːbəl/",
-      "/viːɐ ˈblaɪ̯bən ˈhɔʏtə flɛkˈziːbəl/",
-      "/diː ˈʃɛfɪn ɪst flɛkˈziːbəl mɪt deːn ˈaʁbaɪ̯tsˌtsaɪ̯tən/",
-      "/eːɐ blaɪ̯pt ˈhɔʏtə flɛkˈziːbəl/"
-    ],
-    "en": [
-      "I’m flexible with my schedule today.",
-      "We’re staying flexible today.",
-      "The boss is flexible with work hours.",
-      "He’s staying flexible today."
     ],
     "pos_analysis": [
       {
@@ -560,71 +845,96 @@
         "difficulty_aggregated": 7.25
       },
       {
-        "sentence": "Die Chefin ist flexibel mit den Arbeitszeiten.",
+        "sentence": "Die Chefin ist bei den Arbeitszeiten flexibel.",
         "tokens": [
           {
             "surface": "Die",
-            "surface_en": "the",
-            "furigana": "[diː]",
-            "pos": "DET",
             "lemma": "der",
-            "explanation": "Definite article, nominative feminine singular; determines ‘Chefin’.",
-            "difficulty": 2
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "Chefin",
-            "surface_en": "boss (female)",
-            "furigana": "[ˈʃeːfɪn]",
-            "pos": "NOUN",
             "lemma": "Chefin",
-            "explanation": "Common noun, feminine nominative singular; subject of the clause.",
-            "difficulty": 7
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 4,
+            "end": 10,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "ist",
-            "surface_en": "is",
-            "furigana": "[ɪst]",
-            "pos": "AUX",
             "lemma": "sein",
-            "explanation": "Finite auxiliary (copula) in present tense, 3rd person singular; links subject to the predicative complement.",
-            "difficulty": 4
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "VAFIN",
+            "feats": {},
+            "start": 11,
+            "end": 14,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "flexibel",
-            "surface_en": "flexible",
-            "furigana": "[flɛkˈziːbəl]",
-            "pos": "ADJ",
-            "lemma": "flexibel",
-            "explanation": "Predicative adjective functioning as subject complement.",
-            "difficulty": 10,
-            "is_main_word": true
-          },
-          {
-            "surface": "mit",
-            "surface_en": "with",
-            "furigana": "[mɪt]",
+            "surface": "bei",
+            "lemma": "bei",
             "pos": "ADP",
-            "lemma": "mit",
-            "explanation": "Preposition governing the dative; introduces a prepositional phrase specifying the scope/context of flexibility.",
-            "difficulty": 2
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 15,
+            "end": 18,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "den",
-            "surface_en": "the",
-            "furigana": "[deːn]",
-            "pos": "DET",
             "lemma": "der",
-            "explanation": "Definite article, dative plural; agrees with ‘Arbeitszeiten’ after ‘mit’.",
-            "difficulty": 2
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 19,
+            "end": 22,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "Arbeitszeiten.",
-            "surface_en": "working hours",
-            "furigana": "[ˈaʁbaɪ̯tsˌtsaɪ̯tən]",
-            "pos": "NOUN",
+            "surface": "Arbeitszeiten",
             "lemma": "Arbeitszeit",
-            "explanation": "Common noun, plural dative; object of the preposition ‘mit’ (prepositional complement).",
-            "difficulty": 10
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 23,
+            "end": 36,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "flexibel",
+            "lemma": "flexibel",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADJD",
+            "feats": {},
+            "start": 37,
+            "end": 45,
+            "analyzer": "spacy_de_core_news_lg",
+            "is_main_word": true
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 45,
+            "end": 46,
+            "analyzer": "spacy_de_core_news_lg"
           }
         ],
         "difficulty_aggregated": 5.29
@@ -673,137 +983,41 @@
         "difficulty_aggregated": 6.5
       }
     ],
-    "es": [
-      "Hoy tengo un horario flexible.",
-      "Hoy nos mantenemos flexibles.",
-      "La jefa es flexible con los horarios de trabajo.",
-      "Hoy se mantiene flexible."
-    ],
-    "fr": [
-      "Aujourd'hui, je suis flexible sur mon emploi du temps.",
-      "Aujourd'hui, on reste flexibles.",
-      "La patronne est flexible sur les horaires.",
-      "Aujourd'hui, il reste flexible."
-    ],
-    "it": [
-      "Oggi sono flessibile con gli orari.",
-      "Oggi restiamo flessibili.",
-      "La responsabile è flessibile con gli orari di lavoro.",
-      "Oggi rimane flessibile."
-    ],
-    "ko": [
-      "오늘은 일정이 유연해요.",
-      "오늘은 융통성 있게 지내요.",
-      "상사는 근무 시간에 융통성이 있어요.",
-      "오늘은 그는 유연하게 지내요."
-    ],
-    "zh-Hans": [
-      "我今天时间很灵活。",
-      "我们今天保持灵活。",
-      "女老板对工作时间很灵活。",
-      "他今天保持灵活。"
-    ],
-    "yue": [
-      "我今日時間好彈性。",
-      "我哋今日保持彈性。",
-      "女上司對工作時間好有彈性。",
-      "佢今日保持彈性。"
-    ],
-    "ru": [
-      "Сегодня у меня гибкий график.",
-      "Сегодня мы остаёмся гибкими.",
-      "Начальница гибко относится к рабочему времени.",
-      "Сегодня он остаётся гибким."
-    ],
-    "pt": [
-      "Hoje tenho horários flexíveis.",
-      "Hoje ficamos flexíveis.",
-      "A chefe é flexível com os horários de trabalho.",
-      "Hoje ele permanece flexível."
-    ],
-    "he": [
-      "היום יש לי גמישות בלוח הזמנים.",
-      "היום אנחנו נשארים גמישים.",
-      "המנהלת גמישה בשעות העבודה.",
-      "היום הוא נשאר גמיש."
-    ],
-    "tr": [
-      "Bugün programım esnek.",
-      "Bugün esnek kalıyoruz.",
-      "Patron çalışma saatlerinde esnek.",
-      "Bugün esnek kalıyor."
-    ],
-    "vi": [
-      "Hôm nay lịch của tôi linh hoạt.",
-      "Hôm nay chúng ta linh hoạt.",
-      "Sếp linh hoạt về giờ làm.",
-      "Hôm nay anh ấy vẫn linh hoạt."
-    ],
+    "word_POS": "Adjective",
+    "entry_id": "flexibel",
+    "word_en": "flexible; adaptable",
+    "word_es": "flexible; adaptable",
+    "word_fr": "souple; flexible",
+    "word_it": "flessibile; adattabile",
+    "word_ko": "유연한; 융통성 있는",
+    "word_zh-Hans": "灵活的; 柔韧的",
+    "word_yue": "有彈性; 靈活嘅",
+    "word_ru": "гибкий",
+    "word_pt": "flexível; adaptável",
+    "word_he": "גמיש; מסתגל",
+    "word_tr": "esnek; uyumlu",
+    "word_vi": "linh hoạt; dẻo",
+    "word_ar": "مرن; قابل للتكيف",
+    "word_nl": "flexibel; soepel",
+    "word_uk": "гнучкий; пристосовний",
+    "word_hu": "rugalmas; alkalmazkodó",
+    "word_hi": "लचीला; अनुकूलनीय",
+    "word_pl": "elastyczny; giętki",
+    "word_el": "ευέλικτος; εύκαμπτος",
+    "word_nb": "fleksibel; smidig",
+    "word_id": "fleksibel; lentur",
+    "word_sv": "flexibel; smidig",
+    "word_ro": "flexibil; adaptabil",
+    "word_cs": "pružný; přizpůsobivý",
+    "word_da": "fleksibel; smidig",
+    "word_fi": "joustava; taipuisa",
+    "word_ja": "柔軟な; 融通が利く",
+    "word_de": "flexibel",
     "ar": [
       "جدولي اليوم مرن.",
       "اليوم سنبقى مرنين.",
       "المديرة مرنة في مواعيد العمل.",
       "اليوم يبقى مرنًا."
-    ],
-    "nl": [
-      "Vandaag ben ik flexibel met mijn planning.",
-      "Vandaag blijven we flexibel.",
-      "De baas is flexibel met werktijden.",
-      "Vandaag blijft hij flexibel."
-    ],
-    "uk": [
-      "Сьогодні в мене гнучкий графік.",
-      "Сьогодні ми залишаємося гнучкими.",
-      "Керівниця гнучко ставиться до робочого часу.",
-      "Сьогодні він залишається гнучким."
-    ],
-    "hu": [
-      "Ma rugalmas az időbeosztásom.",
-      "Ma rugalmasak maradunk.",
-      "A főnöknő rugalmas a munkaidővel.",
-      "Ma ő rugalmas marad."
-    ],
-    "hi": [
-      "आज मेरा शेड्यूल लचीला है.",
-      "आज हम लचीले रहेंगे.",
-      "बॉस काम के घंटों में लचीली हैं.",
-      "आज वह लचीला रहता है."
-    ],
-    "pl": [
-      "Dziś mam elastyczny grafik.",
-      "Dziś pozostajemy elastyczni.",
-      "Szefowa jest elastyczna w kwestii godzin pracy.",
-      "Dziś pozostaje elastyczny."
-    ],
-    "el": [
-      "Σήμερα έχω ευέλικτο πρόγραμμα.",
-      "Σήμερα παραμένουμε ευέλικτοι.",
-      "Η διευθύντρια είναι ευέλικτη με το ωράριο εργασίας.",
-      "Σήμερα παραμένει ευέλικτος."
-    ],
-    "nb": [
-      "I dag er jeg fleksibel med tidsplanen.",
-      "I dag holder vi oss fleksible.",
-      "Sjefen er fleksibel med arbeidstidene.",
-      "I dag holder han seg fleksibel."
-    ],
-    "id": [
-      "Hari ini jadwal saya fleksibel.",
-      "Hari ini kita tetap fleksibel.",
-      "Atasan bersikap fleksibel soal jam kerja.",
-      "Hari ini dia tetap fleksibel."
-    ],
-    "sv": [
-      "I dag har jag ett flexibelt schema.",
-      "I dag håller vi oss flexibla.",
-      "Chefen är flexibel med arbetstiderna.",
-      "I dag håller han sig flexibel."
-    ],
-    "ro": [
-      "Astăzi am un program flexibil.",
-      "Astăzi rămânem flexibili.",
-      "Șefa este flexibilă la programul de lucru.",
-      "Astăzi el rămâne flexibil."
     ],
     "cs": [
       "Dnes mám flexibilní program.",
@@ -817,11 +1031,77 @@
       "Chefen er fleksibel med arbejdstiderne.",
       "I dag forbliver han fleksibel."
     ],
+    "de": [
+      "Ich bin heute zeitlich flexibel.",
+      "Wir bleiben heute flexibel.",
+      "Die Chefin ist flexibel mit den Arbeitszeiten.",
+      "Er bleibt heute flexibel."
+    ],
+    "el": [
+      "Σήμερα έχω ευέλικτο πρόγραμμα.",
+      "Σήμερα παραμένουμε ευέλικτοι.",
+      "Η διευθύντρια είναι ευέλικτη με το ωράριο εργασίας.",
+      "Σήμερα παραμένει ευέλικτος."
+    ],
+    "en": [
+      "I’m flexible with my schedule today.",
+      "We’re staying flexible today.",
+      "The boss is flexible with work hours.",
+      "He’s staying flexible today."
+    ],
+    "es": [
+      "Hoy tengo un horario flexible.",
+      "Hoy nos mantenemos flexibles.",
+      "La jefa es flexible con los horarios de trabajo.",
+      "Hoy se mantiene flexible."
+    ],
     "fi": [
       "Tänään aikatauluni on joustava.",
       "Tänään pysymme joustavina.",
       "Esihenkilö on joustava työaikojen suhteen.",
       "Tänään hän pysyy joustavana."
+    ],
+    "fr": [
+      "Aujourd'hui, je suis flexible sur mon emploi du temps.",
+      "Aujourd'hui, on reste flexibles.",
+      "La patronne est flexible sur les horaires.",
+      "Aujourd'hui, il reste flexible."
+    ],
+    "he": [
+      "היום יש לי גמישות בלוח הזמנים.",
+      "היום אנחנו נשארים גמישים.",
+      "המנהלת גמישה בשעות העבודה.",
+      "היום הוא נשאר גמיש."
+    ],
+    "hi": [
+      "आज मेरा शेड्यूल लचीला है.",
+      "आज हम लचीले रहेंगे.",
+      "बॉस काम के घंटों में लचीली हैं.",
+      "आज वह लचीला रहता है."
+    ],
+    "hu": [
+      "Ma rugalmas az időbeosztásom.",
+      "Ma rugalmasak maradunk.",
+      "A főnöknő rugalmas a munkaidővel.",
+      "Ma ő rugalmas marad."
+    ],
+    "id": [
+      "Hari ini jadwal saya fleksibel.",
+      "Hari ini kita tetap fleksibel.",
+      "Atasan bersikap fleksibel soal jam kerja.",
+      "Hari ini dia tetap fleksibel."
+    ],
+    "ipa": [
+      "/ɪç bɪn ˈhɔʏtə ˈtsaɪ̯tlɪç flɛkˈziːbəl/",
+      "/viːɐ ˈblaɪ̯bən ˈhɔʏtə flɛkˈziːbəl/",
+      "/diː ˈʃɛfɪn ɪst flɛkˈziːbəl mɪt deːn ˈaʁbaɪ̯tsˌtsaɪ̯tən/",
+      "/eːɐ blaɪ̯pt ˈhɔʏtə flɛkˈziːbəl/"
+    ],
+    "it": [
+      "Oggi sono flessibile con gli orari.",
+      "Oggi restiamo flessibili.",
+      "La responsabile è flessibile con gli orari di lavoro.",
+      "Oggi rimane flessibile."
     ],
     "ja": [
       "今日はスケジュールに融通が利きます。",
@@ -829,6 +1109,83 @@
       "上司は勤務時間に柔軟です。",
       "今日は彼は柔軟に過ごします。"
     ],
-    "word_POS": "Adjective"
+    "ko": [
+      "오늘은 일정이 유연해요.",
+      "오늘은 융통성 있게 지내요.",
+      "상사는 근무 시간에 융통성이 있어요.",
+      "오늘은 그는 유연하게 지내요."
+    ],
+    "nb": [
+      "I dag er jeg fleksibel med tidsplanen.",
+      "I dag holder vi oss fleksible.",
+      "Sjefen er fleksibel med arbeidstidene.",
+      "I dag holder han seg fleksibel."
+    ],
+    "nl": [
+      "Vandaag ben ik flexibel met mijn planning.",
+      "Vandaag blijven we flexibel.",
+      "De baas is flexibel met werktijden.",
+      "Vandaag blijft hij flexibel."
+    ],
+    "pl": [
+      "Dziś mam elastyczny grafik.",
+      "Dziś pozostajemy elastyczni.",
+      "Szefowa jest elastyczna w kwestii godzin pracy.",
+      "Dziś pozostaje elastyczny."
+    ],
+    "pt": [
+      "Hoje tenho horários flexíveis.",
+      "Hoje ficamos flexíveis.",
+      "A chefe é flexível com os horários de trabalho.",
+      "Hoje ele permanece flexível."
+    ],
+    "ro": [
+      "Astăzi am un program flexibil.",
+      "Astăzi rămânem flexibili.",
+      "Șefa este flexibilă la programul de lucru.",
+      "Astăzi el rămâne flexibil."
+    ],
+    "ru": [
+      "Сегодня у меня гибкий график.",
+      "Сегодня мы остаёмся гибкими.",
+      "Начальница гибко относится к рабочему времени.",
+      "Сегодня он остаётся гибким."
+    ],
+    "sv": [
+      "I dag har jag ett flexibelt schema.",
+      "I dag håller vi oss flexibla.",
+      "Chefen är flexibel med arbetstiderna.",
+      "I dag håller han sig flexibel."
+    ],
+    "tr": [
+      "Bugün programım esnek.",
+      "Bugün esnek kalıyoruz.",
+      "Patron çalışma saatlerinde esnek.",
+      "Bugün esnek kalıyor."
+    ],
+    "uk": [
+      "Сьогодні в мене гнучкий графік.",
+      "Сьогодні ми залишаємося гнучкими.",
+      "Керівниця гнучко ставиться до робочого часу.",
+      "Сьогодні він залишається гнучким."
+    ],
+    "vi": [
+      "Hôm nay lịch của tôi linh hoạt.",
+      "Hôm nay chúng ta linh hoạt.",
+      "Sếp linh hoạt về giờ làm.",
+      "Hôm nay anh ấy vẫn linh hoạt."
+    ],
+    "yue": [
+      "我今日時間好彈性。",
+      "我哋今日保持彈性。",
+      "女上司對工作時間好有彈性。",
+      "佢今日保持彈性。"
+    ],
+    "zh-Hans": [
+      "我今天时间很灵活。",
+      "我们今天保持灵活。",
+      "女老板对工作时间很灵活。",
+      "他今天保持灵活。"
+    ]
   }
 }

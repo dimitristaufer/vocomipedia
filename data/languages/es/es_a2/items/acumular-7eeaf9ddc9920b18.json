@@ -140,7 +140,7 @@
         "fr": "Je vais économiser des pièces.",
         "he": "אני הולך לחסוך מטבעות.",
         "hi": "मैं सिक्के बचाने वाला हूँ।",
-        "hu": "Össze akarok takarítani pénzérméket.",
+        "hu": "Érméket fogok gyűjteni.",
         "id": "Aku akan menabung koin.",
         "it": "Voglio risparmiare monete.",
         "ja": "硬貨を貯めるつもりです。",
@@ -219,33 +219,33 @@
       "difficulty": null
     },
     {
-      "target": "La calle puede acumular agua.",
+      "target": "En la calle puede acumularse agua.",
       "reading": "/la ˈka.ʝe ˈpwe.ðe a.ku.muˈlaɾ ˈa.ɣwa/",
       "translations": {
-        "en": "The street can collect water.",
+        "en": "Water can accumulate on the street.",
         "es": "La calle puede acumular agua.",
         "ipa": "/la ˈka.ʝe ˈpwe.ðe a.ku.muˈlaɾ ˈa.ɣwa/",
         "ar": "يمكن أن تتجمع المياه في الشارع.",
-        "cs": "Ulice může zadržovat vodu.",
-        "da": "Gaden kan samle vand.",
-        "de": "Die Straße kann Wasser sammeln.",
-        "el": "Ο δρόμος μπορεί να μαζεύει νερό.",
-        "fi": "Katu voi kerätä vettä.",
+        "cs": "Na ulici se může hromadit voda.",
+        "da": "Der kan samle sig vand på gaden.",
+        "de": "Auf der Straße kann sich Wasser ansammeln.",
+        "el": "Στον δρόμο μπορεί να συσσωρεύεται νερό.",
+        "fi": "Kadulle voi kertyä vettä.",
         "fr": "La rue peut accumuler de l'eau.",
-        "he": "הרחוב יכול לצבור מים.",
+        "he": "מים יכולים להצטבר ברחוב.",
         "hi": "सड़क में पानी जमा हो सकता है।",
-        "hu": "Az utca vizet gyűjthet össze.",
+        "hu": "Az utcán felgyűlhet a víz.",
         "id": "Jalan itu bisa menampung air.",
-        "it": "La strada può accumulare acqua.",
+        "it": "Sulla strada può accumularsi dell'acqua.",
         "ja": "通りに水がたまることがあります。",
         "ko": "거리에 물이 고일 수 있어요.",
-        "nb": "Gaten kan samle vann.",
-        "nl": "De straat kan water verzamelen.",
-        "pl": "Ulica może zbierać wodę.",
-        "pt": "A rua pode acumular água.",
+        "nb": "Vann kan samle seg i gata.",
+        "nl": "Op straat kan zich water ophopen.",
+        "pl": "Na ulicy może gromadzić się woda.",
+        "pt": "Pode se acumular água na rua.",
         "ro": "Strada poate aduna apă.",
         "ru": "На улице может скапливаться вода.",
-        "sv": "Gatan kan samla vatten.",
+        "sv": "Vatten kan samlas på gatan.",
         "tr": "Sokakta su birikebilir.",
         "uk": "На вулиці може збиратися вода.",
         "vi": "Con đường có thể đọng nước.",
@@ -254,14 +254,25 @@
       },
       "tokens": [
         {
-          "surface": "La",
+          "surface": "En",
+          "lemma": "en",
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "ADP",
+          "feats": {},
+          "start": 0,
+          "end": 2,
+          "analyzer": "spacy_es_core_news_lg"
+        },
+        {
+          "surface": "la",
           "lemma": "el",
           "pos": "DET",
           "upos": "DET",
           "xpos": "DET",
           "feats": {},
-          "start": 0,
-          "end": 2,
+          "start": 3,
+          "end": 5,
           "analyzer": "spacy_es_core_news_lg"
         },
         {
@@ -271,8 +282,8 @@
           "upos": "NOUN",
           "xpos": "NOUN",
           "feats": {},
-          "start": 3,
-          "end": 8,
+          "start": 6,
+          "end": 11,
           "analyzer": "spacy_es_core_news_lg"
         },
         {
@@ -282,21 +293,20 @@
           "upos": "AUX",
           "xpos": "AUX",
           "feats": {},
-          "start": 9,
-          "end": 14,
+          "start": 12,
+          "end": 17,
           "analyzer": "spacy_es_core_news_lg"
         },
         {
-          "surface": "acumular",
-          "lemma": "acumular",
+          "surface": "acumularse",
+          "lemma": "acumular él",
           "pos": "VERB",
           "upos": "VERB",
           "xpos": "VERB",
           "feats": {},
-          "start": 15,
-          "end": 23,
-          "analyzer": "spacy_es_core_news_lg",
-          "is_main_word": true
+          "start": 18,
+          "end": 28,
+          "analyzer": "spacy_es_core_news_lg"
         },
         {
           "surface": "agua",
@@ -305,8 +315,8 @@
           "upos": "NOUN",
           "xpos": "NOUN",
           "feats": {},
-          "start": 24,
-          "end": 28,
+          "start": 29,
+          "end": 33,
           "analyzer": "spacy_es_core_news_lg"
         },
         {
@@ -316,8 +326,8 @@
           "upos": "PUNCT",
           "xpos": "PUNCT",
           "feats": {},
-          "start": 28,
-          "end": 29,
+          "start": 33,
+          "end": 34,
           "analyzer": "spacy_es_core_news_lg"
         }
       ],
@@ -440,8 +450,292 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-15T20:44:30Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:Es a2/7eeaf9ddc9920b18",
+      "revision_id": 86754,
+      "parent_revision_id": 79029,
+      "revision_timestamp_utc": "2026-10-15T20:44:30Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Content review: improve Spanish entry text and translations",
+      "pulled_utc": "2026-10-17T07:18:26Z",
+      "applied_utc": "2026-10-17T07:18:31Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-646e5dd613d14f94",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "es_a2:7eeaf9ddc9920b18",
+        "pack_code": "es_a2",
+        "entry_id": "acumular",
+        "language": "es",
+        "sentence_index": 3,
+        "old_sentence": "La calle puede acumular agua.",
+        "old_translations": {
+          "en": "The street can collect water.",
+          "es": "La calle puede acumular agua.",
+          "ipa": "/la ˈka.ʝe ˈpwe.ðe a.ku.muˈlaɾ ˈa.ɣwa/",
+          "ar": "يمكن أن تتجمع المياه في الشارع.",
+          "cs": "Ulice může zadržovat vodu.",
+          "da": "Gaden kan samle vand.",
+          "de": "Die Straße kann Wasser sammeln.",
+          "el": "Ο δρόμος μπορεί να μαζεύει νερό.",
+          "fi": "Katu voi kerätä vettä.",
+          "fr": "La rue peut accumuler de l'eau.",
+          "he": "הרחוב יכול לצבור מים.",
+          "hi": "सड़क में पानी जमा हो सकता है।",
+          "hu": "Az utca vizet gyűjthet össze.",
+          "id": "Jalan itu bisa menampung air.",
+          "it": "La strada può accumulare acqua.",
+          "ja": "通りに水がたまることがあります。",
+          "ko": "거리에 물이 고일 수 있어요.",
+          "nb": "Gaten kan samle vann.",
+          "nl": "De straat kan water verzamelen.",
+          "pl": "Ulica może zbierać wodę.",
+          "pt": "A rua pode acumular água.",
+          "ro": "Strada poate aduna apă.",
+          "ru": "На улице может скапливаться вода.",
+          "sv": "Gatan kan samla vatten.",
+          "tr": "Sokakta su birikebilir.",
+          "uk": "На вулиці може збиратися вода.",
+          "vi": "Con đường có thể đọng nước.",
+          "yue": "條街可以積水。",
+          "zh-Hans": "街道可能会积水。"
+        },
+        "proposed_sentence": "En la calle puede acumularse agua.",
+        "proposed_translations": {
+          "en": "Water can accumulate on the street.",
+          "es": "La calle puede acumular agua.",
+          "ipa": "/la ˈka.ʝe ˈpwe.ðe a.ku.muˈlaɾ ˈa.ɣwa/",
+          "ar": "يمكن أن تتجمع المياه في الشارع.",
+          "cs": "Na ulici se může hromadit voda.",
+          "da": "Der kan samle sig vand på gaden.",
+          "de": "Auf der Straße kann sich Wasser ansammeln.",
+          "el": "Στον δρόμο μπορεί να συσσωρεύεται νερό.",
+          "fi": "Kadulle voi kertyä vettä.",
+          "fr": "La rue peut accumuler de l'eau.",
+          "he": "מים יכולים להצטבר ברחוב.",
+          "hi": "सड़क में पानी जमा हो सकता है।",
+          "hu": "Az utcán felgyűlhet a víz.",
+          "id": "Jalan itu bisa menampung air.",
+          "it": "Sulla strada può accumularsi dell'acqua.",
+          "ja": "通りに水がたまることがあります。",
+          "ko": "거리에 물이 고일 수 있어요.",
+          "nb": "Vann kan samle seg i gata.",
+          "nl": "Op straat kan zich water ophopen.",
+          "pl": "Na ulicy może gromadzić się woda.",
+          "pt": "Pode se acumular água na rua.",
+          "ro": "Strada poate aduna apă.",
+          "ru": "На улице может скапливаться вода.",
+          "sv": "Vatten kan samlas på gatan.",
+          "tr": "Sokakta su birikebilir.",
+          "uk": "На вулиці може збиратися вода.",
+          "vi": "Con đường có thể đọng nước.",
+          "yue": "條街可以積水。",
+          "zh-Hans": "街道可能会积水。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "",
+        "old_japanese": "La calle puede acumular agua.",
+        "old_english": "The street can collect water.",
+        "proposed_japanese": "En la calle puede acumularse agua.",
+        "proposed_english": "Water can accumulate on the street.",
+        "reason": "Correct the Spanish while preserving its meaning.",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "es",
+          "sentence": "En la calle puede acumularse agua.",
+          "tokens": [
+            {
+              "surface": "En",
+              "lemma": "en",
+              "pos": "ADP",
+              "upos": "ADP",
+              "xpos": "ADP",
+              "feats": {},
+              "start": 0,
+              "end": 2,
+              "analyzer": "spacy_es_core_news_lg"
+            },
+            {
+              "surface": "la",
+              "lemma": "el",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "DET",
+              "feats": {},
+              "start": 3,
+              "end": 5,
+              "analyzer": "spacy_es_core_news_lg"
+            },
+            {
+              "surface": "calle",
+              "lemma": "calle",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NOUN",
+              "feats": {},
+              "start": 6,
+              "end": 11,
+              "analyzer": "spacy_es_core_news_lg"
+            },
+            {
+              "surface": "puede",
+              "lemma": "poder",
+              "pos": "AUX",
+              "upos": "AUX",
+              "xpos": "AUX",
+              "feats": {},
+              "start": 12,
+              "end": 17,
+              "analyzer": "spacy_es_core_news_lg"
+            },
+            {
+              "surface": "acumularse",
+              "lemma": "acumular él",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VERB",
+              "feats": {},
+              "start": 18,
+              "end": 28,
+              "analyzer": "spacy_es_core_news_lg"
+            },
+            {
+              "surface": "agua",
+              "lemma": "agua",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NOUN",
+              "feats": {},
+              "start": 29,
+              "end": 33,
+              "analyzer": "spacy_es_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": ".",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "PUNCT",
+              "feats": {},
+              "start": 33,
+              "end": 34,
+              "analyzer": "spacy_es_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_es_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "En",
+            "lemma": "en",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "ADP",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "spacy_es_core_news_lg"
+          },
+          {
+            "surface": "la",
+            "lemma": "el",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "DET",
+            "feats": {},
+            "start": 3,
+            "end": 5,
+            "analyzer": "spacy_es_core_news_lg"
+          },
+          {
+            "surface": "calle",
+            "lemma": "calle",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NOUN",
+            "feats": {},
+            "start": 6,
+            "end": 11,
+            "analyzer": "spacy_es_core_news_lg"
+          },
+          {
+            "surface": "puede",
+            "lemma": "poder",
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "AUX",
+            "feats": {},
+            "start": 12,
+            "end": 17,
+            "analyzer": "spacy_es_core_news_lg"
+          },
+          {
+            "surface": "acumularse",
+            "lemma": "acumular él",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VERB",
+            "feats": {},
+            "start": 18,
+            "end": 28,
+            "analyzer": "spacy_es_core_news_lg"
+          },
+          {
+            "surface": "agua",
+            "lemma": "agua",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NOUN",
+            "feats": {},
+            "start": 29,
+            "end": 33,
+            "analyzer": "spacy_es_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": ".",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "PUNCT",
+            "feats": {},
+            "start": 33,
+            "end": 34,
+            "analyzer": "spacy_es_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_es_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:18:26Z",
+        "updated_utc": "2026-10-17T07:18:46Z",
+        "applied_utc": "2026-10-17T07:18:46Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:18:46Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -466,12 +760,6 @@
       "/boj a a.ku.muˈlaɾ moˈne.ðas/",
       "/la ˈka.ʝe ˈpwe.ðe a.ku.muˈlaɾ ˈa.ɣwa/",
       "/mi ˈme.sa ˈswe.le a.ku.muˈlaɾ ˈpol.βo/"
-    ],
-    "en": [
-      "I want to collect points.",
-      "I'm going to save up coins.",
-      "The street can collect water.",
-      "My table tends to collect dust."
     ],
     "generation": {
       "generator": "vocomipedia_source_generator.py",
@@ -509,202 +797,6 @@
         "Frequency": "1"
       }
     },
-    "es": [
-      "Quiero acumular puntos.",
-      "Voy a acumular monedas.",
-      "La calle puede acumular agua.",
-      "Mi mesa suele acumular polvo."
-    ],
-    "ipa": [
-      "/ˈkje.ɾo a.ku.muˈlaɾ ˈpun.tos/",
-      "/boj a a.ku.muˈlaɾ moˈne.ðas/",
-      "/la ˈka.ʝe ˈpwe.ðe a.ku.muˈlaɾ ˈa.ɣwa/",
-      "/mi ˈme.sa ˈswe.le a.ku.muˈlaɾ ˈpol.βo/"
-    ],
-    "word_en": "to accumulate",
-    "word_fr": "accumuler",
-    "word_de": "anhäufen",
-    "word_it": "accumulare",
-    "word_ko": "축적하다",
-    "word_zh-Hans": "积累",
-    "word_yue": "累積",
-    "word_ru": "накапливать",
-    "word_pt": "acumular",
-    "word_he": "לצבור",
-    "word_tr": "biriktirmek",
-    "word_vi": "tích lũy",
-    "word_ar": "تراكم",
-    "word_nl": "ophopen",
-    "word_uk": "накопичувати",
-    "word_hu": "felhalmoz",
-    "word_hi": "जमा करना",
-    "word_pl": "gromadzić",
-    "word_el": "συσσωρεύω",
-    "word_nb": "opphope",
-    "word_id": "menumpuk",
-    "word_sv": "ackumulera",
-    "word_ro": "acumula",
-    "word_cs": "hromadit",
-    "word_da": "akkumulere",
-    "word_fi": "kerryttää",
-    "word_ja": "蓄積する",
-    "word_es": "acumular",
-    "ar": [
-      "أريد أن أجمع النقاط.",
-      "سأدخر العملات.",
-      "يمكن أن تتجمع المياه في الشارع.",
-      "طاولتي عادةً ما يتجمع عليها الغبار."
-    ],
-    "cs": [
-      "Chci sbírat body.",
-      "Chci si našetřit mince.",
-      "Ulice může zadržovat vodu.",
-      "Můj stůl se obvykle zapráší."
-    ],
-    "da": [
-      "Jeg vil samle point.",
-      "Jeg vil spare mønter op.",
-      "Gaden kan samle vand.",
-      "Mit bord samler ofte støv."
-    ],
-    "de": [
-      "Ich will Punkte sammeln.",
-      "Ich will Münzen sparen.",
-      "Die Straße kann Wasser sammeln.",
-      "Mein Tisch sammelt oft Staub."
-    ],
-    "el": [
-      "Θέλω να μαζέψω πόντους.",
-      "Θα μαζέψω νομίσματα.",
-      "Ο δρόμος μπορεί να μαζεύει νερό.",
-      "Το τραπέζι μου μαζεύει συνήθως σκόνη."
-    ],
-    "fi": [
-      "Haluan kerätä pisteitä.",
-      "Aion säästää kolikoita.",
-      "Katu voi kerätä vettä.",
-      "Pöytäni kerää yleensä pölyä."
-    ],
-    "fr": [
-      "Je veux accumuler des points.",
-      "Je vais économiser des pièces.",
-      "La rue peut accumuler de l'eau.",
-      "Ma table a tendance à accumuler de la poussière."
-    ],
-    "he": [
-      "אני רוצה לצבור נקודות.",
-      "אני הולך לחסוך מטבעות.",
-      "הרחוב יכול לצבור מים.",
-      "השולחן שלי נוטה לצבור אבק."
-    ],
-    "hi": [
-      "मैं अंक जमा करना चाहता हूँ।",
-      "मैं सिक्के बचाने वाला हूँ।",
-      "सड़क में पानी जमा हो सकता है।",
-      "मेरी मेज़ पर अक्सर धूल जमा हो जाती है।"
-    ],
-    "hu": [
-      "Pontokat akarok gyűjteni.",
-      "Össze akarok takarítani pénzérméket.",
-      "Az utca vizet gyűjthet össze.",
-      "Az asztalomon gyakran összegyűlik a por."
-    ],
-    "id": [
-      "Aku ingin mengumpulkan poin.",
-      "Aku akan menabung koin.",
-      "Jalan itu bisa menampung air.",
-      "Mejaku biasanya menumpuk debu."
-    ],
-    "it": [
-      "Voglio accumulare punti.",
-      "Voglio risparmiare monete.",
-      "La strada può accumulare acqua.",
-      "Il mio tavolo tende ad accumulare polvere."
-    ],
-    "ja": [
-      "ポイントを貯めたい。",
-      "硬貨を貯めるつもりです。",
-      "通りに水がたまることがあります。",
-      "私の机にはたいていほこりがたまります。"
-    ],
-    "ko": [
-      "포인트를 모으고 싶어요.",
-      "동전을 모을 거예요.",
-      "거리에 물이 고일 수 있어요.",
-      "내 책상에는 보통 먼지가 쌓여요."
-    ],
-    "nb": [
-      "Jeg vil samle poeng.",
-      "Jeg skal spare mynter.",
-      "Gaten kan samle vann.",
-      "Bordet mitt samler ofte støv."
-    ],
-    "nl": [
-      "Ik wil punten verzamelen.",
-      "Ik ga munten sparen.",
-      "De straat kan water verzamelen.",
-      "Mijn tafel verzamelt vaak stof."
-    ],
-    "pl": [
-      "Chcę zbierać punkty.",
-      "Chcę oszczędzać monety.",
-      "Ulica może zbierać wodę.",
-      "Mój stół zwykle zbiera kurz."
-    ],
-    "pt": [
-      "Quero acumular pontos.",
-      "Vou guardar moedas.",
-      "A rua pode acumular água.",
-      "Minha mesa costuma acumular poeira."
-    ],
-    "ro": [
-      "Vreau să strâng puncte.",
-      "O să strâng monede.",
-      "Strada poate aduna apă.",
-      "Masa mea adună de obicei praf."
-    ],
-    "ru": [
-      "Я хочу копить очки.",
-      "Я буду копить монеты.",
-      "На улице может скапливаться вода.",
-      "Мой стол обычно собирает пыль."
-    ],
-    "sv": [
-      "Jag vill samla poäng.",
-      "Jag ska spara mynt.",
-      "Gatan kan samla vatten.",
-      "Mitt bord samlar ofta damm."
-    ],
-    "tr": [
-      "Puan biriktirmek istiyorum.",
-      "Bozuk para biriktireceğim.",
-      "Sokakta su birikebilir.",
-      "Masamda genellikle toz birikir."
-    ],
-    "uk": [
-      "Я хочу збирати бали.",
-      "Я збираюся накопичувати монети.",
-      "На вулиці може збиратися вода.",
-      "Мій стіл зазвичай збирає пил."
-    ],
-    "vi": [
-      "Tôi muốn tích điểm.",
-      "Tôi sẽ tiết kiệm tiền xu.",
-      "Con đường có thể đọng nước.",
-      "Bàn của tôi thường bám bụi."
-    ],
-    "yue": [
-      "我想儲分。",
-      "我會儲硬幣。",
-      "條街可以積水。",
-      "我張枱通常會積塵。"
-    ],
-    "zh-Hans": [
-      "我想攒积分。",
-      "我要攒硬币。",
-      "街道可能会积水。",
-      "我的桌子通常会积灰。"
-    ],
     "pos_analysis": [
       {
         "sentence": "Quiero acumular puntos.",
@@ -820,17 +912,28 @@
         "difficulty_aggregated": null
       },
       {
-        "sentence": "La calle puede acumular agua.",
+        "sentence": "En la calle puede acumularse agua.",
         "tokens": [
           {
-            "surface": "La",
+            "surface": "En",
+            "lemma": "en",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "ADP",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "spacy_es_core_news_lg"
+          },
+          {
+            "surface": "la",
             "lemma": "el",
             "pos": "DET",
             "upos": "DET",
             "xpos": "DET",
             "feats": {},
-            "start": 0,
-            "end": 2,
+            "start": 3,
+            "end": 5,
             "analyzer": "spacy_es_core_news_lg"
           },
           {
@@ -840,8 +943,8 @@
             "upos": "NOUN",
             "xpos": "NOUN",
             "feats": {},
-            "start": 3,
-            "end": 8,
+            "start": 6,
+            "end": 11,
             "analyzer": "spacy_es_core_news_lg"
           },
           {
@@ -851,21 +954,20 @@
             "upos": "AUX",
             "xpos": "AUX",
             "feats": {},
-            "start": 9,
-            "end": 14,
+            "start": 12,
+            "end": 17,
             "analyzer": "spacy_es_core_news_lg"
           },
           {
-            "surface": "acumular",
-            "lemma": "acumular",
+            "surface": "acumularse",
+            "lemma": "acumular él",
             "pos": "VERB",
             "upos": "VERB",
             "xpos": "VERB",
             "feats": {},
-            "start": 15,
-            "end": 23,
-            "analyzer": "spacy_es_core_news_lg",
-            "is_main_word": true
+            "start": 18,
+            "end": 28,
+            "analyzer": "spacy_es_core_news_lg"
           },
           {
             "surface": "agua",
@@ -874,8 +976,8 @@
             "upos": "NOUN",
             "xpos": "NOUN",
             "feats": {},
-            "start": 24,
-            "end": 28,
+            "start": 29,
+            "end": 33,
             "analyzer": "spacy_es_core_news_lg"
           },
           {
@@ -885,8 +987,8 @@
             "upos": "PUNCT",
             "xpos": "PUNCT",
             "feats": {},
-            "start": 28,
-            "end": 29,
+            "start": 33,
+            "end": 34,
             "analyzer": "spacy_es_core_news_lg"
           }
         ],
@@ -965,6 +1067,208 @@
         ],
         "difficulty_aggregated": null
       }
+    ],
+    "word_en": "to accumulate",
+    "word_fr": "accumuler",
+    "word_de": "anhäufen",
+    "word_it": "accumulare",
+    "word_ko": "축적하다",
+    "word_zh-Hans": "积累",
+    "word_yue": "累積",
+    "word_ru": "накапливать",
+    "word_pt": "acumular",
+    "word_he": "לצבור",
+    "word_tr": "biriktirmek",
+    "word_vi": "tích lũy",
+    "word_ar": "تراكم",
+    "word_nl": "ophopen",
+    "word_uk": "накопичувати",
+    "word_hu": "felhalmoz",
+    "word_hi": "जमा करना",
+    "word_pl": "gromadzić",
+    "word_el": "συσσωρεύω",
+    "word_nb": "opphope",
+    "word_id": "menumpuk",
+    "word_sv": "ackumulera",
+    "word_ro": "acumula",
+    "word_cs": "hromadit",
+    "word_da": "akkumulere",
+    "word_fi": "kerryttää",
+    "word_ja": "蓄積する",
+    "word_es": "acumular",
+    "ar": [
+      "أريد أن أجمع النقاط.",
+      "سأدخر العملات.",
+      "يمكن أن تتجمع المياه في الشارع.",
+      "طاولتي عادةً ما يتجمع عليها الغبار."
+    ],
+    "cs": [
+      "Chci sbírat body.",
+      "Chci si našetřit mince.",
+      "Ulice může zadržovat vodu.",
+      "Můj stůl se obvykle zapráší."
+    ],
+    "da": [
+      "Jeg vil samle point.",
+      "Jeg vil spare mønter op.",
+      "Gaden kan samle vand.",
+      "Mit bord samler ofte støv."
+    ],
+    "de": [
+      "Ich will Punkte sammeln.",
+      "Ich will Münzen sparen.",
+      "Die Straße kann Wasser sammeln.",
+      "Mein Tisch sammelt oft Staub."
+    ],
+    "el": [
+      "Θέλω να μαζέψω πόντους.",
+      "Θα μαζέψω νομίσματα.",
+      "Ο δρόμος μπορεί να μαζεύει νερό.",
+      "Το τραπέζι μου μαζεύει συνήθως σκόνη."
+    ],
+    "en": [
+      "I want to collect points.",
+      "I'm going to save up coins.",
+      "The street can collect water.",
+      "My table tends to collect dust."
+    ],
+    "es": [
+      "Quiero acumular puntos.",
+      "Voy a acumular monedas.",
+      "La calle puede acumular agua.",
+      "Mi mesa suele acumular polvo."
+    ],
+    "fi": [
+      "Haluan kerätä pisteitä.",
+      "Aion säästää kolikoita.",
+      "Katu voi kerätä vettä.",
+      "Pöytäni kerää yleensä pölyä."
+    ],
+    "fr": [
+      "Je veux accumuler des points.",
+      "Je vais économiser des pièces.",
+      "La rue peut accumuler de l'eau.",
+      "Ma table a tendance à accumuler de la poussière."
+    ],
+    "he": [
+      "אני רוצה לצבור נקודות.",
+      "אני הולך לחסוך מטבעות.",
+      "הרחוב יכול לצבור מים.",
+      "השולחן שלי נוטה לצבור אבק."
+    ],
+    "hi": [
+      "मैं अंक जमा करना चाहता हूँ।",
+      "मैं सिक्के बचाने वाला हूँ।",
+      "सड़क में पानी जमा हो सकता है।",
+      "मेरी मेज़ पर अक्सर धूल जमा हो जाती है।"
+    ],
+    "hu": [
+      "Pontokat akarok gyűjteni.",
+      "Érméket fogok gyűjteni.",
+      "Az utca vizet gyűjthet össze.",
+      "Az asztalomon gyakran összegyűlik a por."
+    ],
+    "id": [
+      "Aku ingin mengumpulkan poin.",
+      "Aku akan menabung koin.",
+      "Jalan itu bisa menampung air.",
+      "Mejaku biasanya menumpuk debu."
+    ],
+    "ipa": [
+      "/ˈkje.ɾo a.ku.muˈlaɾ ˈpun.tos/",
+      "/boj a a.ku.muˈlaɾ moˈne.ðas/",
+      "/la ˈka.ʝe ˈpwe.ðe a.ku.muˈlaɾ ˈa.ɣwa/",
+      "/mi ˈme.sa ˈswe.le a.ku.muˈlaɾ ˈpol.βo/"
+    ],
+    "it": [
+      "Voglio accumulare punti.",
+      "Voglio risparmiare monete.",
+      "La strada può accumulare acqua.",
+      "Il mio tavolo tende ad accumulare polvere."
+    ],
+    "ja": [
+      "ポイントを貯めたい。",
+      "硬貨を貯めるつもりです。",
+      "通りに水がたまることがあります。",
+      "私の机にはたいていほこりがたまります。"
+    ],
+    "ko": [
+      "포인트를 모으고 싶어요.",
+      "동전을 모을 거예요.",
+      "거리에 물이 고일 수 있어요.",
+      "내 책상에는 보통 먼지가 쌓여요."
+    ],
+    "nb": [
+      "Jeg vil samle poeng.",
+      "Jeg skal spare mynter.",
+      "Gaten kan samle vann.",
+      "Bordet mitt samler ofte støv."
+    ],
+    "nl": [
+      "Ik wil punten verzamelen.",
+      "Ik ga munten sparen.",
+      "De straat kan water verzamelen.",
+      "Mijn tafel verzamelt vaak stof."
+    ],
+    "pl": [
+      "Chcę zbierać punkty.",
+      "Chcę oszczędzać monety.",
+      "Ulica może zbierać wodę.",
+      "Mój stół zwykle zbiera kurz."
+    ],
+    "pt": [
+      "Quero acumular pontos.",
+      "Vou guardar moedas.",
+      "A rua pode acumular água.",
+      "Minha mesa costuma acumular poeira."
+    ],
+    "ro": [
+      "Vreau să strâng puncte.",
+      "O să strâng monede.",
+      "Strada poate aduna apă.",
+      "Masa mea adună de obicei praf."
+    ],
+    "ru": [
+      "Я хочу копить очки.",
+      "Я буду копить монеты.",
+      "На улице может скапливаться вода.",
+      "Мой стол обычно собирает пыль."
+    ],
+    "sv": [
+      "Jag vill samla poäng.",
+      "Jag ska spara mynt.",
+      "Gatan kan samla vatten.",
+      "Mitt bord samlar ofta damm."
+    ],
+    "tr": [
+      "Puan biriktirmek istiyorum.",
+      "Bozuk para biriktireceğim.",
+      "Sokakta su birikebilir.",
+      "Masamda genellikle toz birikir."
+    ],
+    "uk": [
+      "Я хочу збирати бали.",
+      "Я збираюся накопичувати монети.",
+      "На вулиці може збиратися вода.",
+      "Мій стіл зазвичай збирає пил."
+    ],
+    "vi": [
+      "Tôi muốn tích điểm.",
+      "Tôi sẽ tiết kiệm tiền xu.",
+      "Con đường có thể đọng nước.",
+      "Bàn của tôi thường bám bụi."
+    ],
+    "yue": [
+      "我想儲分。",
+      "我會儲硬幣。",
+      "條街可以積水。",
+      "我張枱通常會積塵。"
+    ],
+    "zh-Hans": [
+      "我想攒积分。",
+      "我要攒硬币。",
+      "街道可能会积水。",
+      "我的桌子通常会积灰。"
     ]
   }
 }

@@ -44,10 +44,10 @@
   },
   "sentences": [
     {
-      "target": "Das ist verständlich für mich.",
+      "target": "Das ist für mich verständlich.",
       "reading": "/das ɪst fɛɐ̯ˈʃtɛntlɪç fyːɐ̯ mɪç/",
       "translations": {
-        "de": "Das ist verständlich für mich.",
+        "de": "Das ist für mich verständlich.",
         "ipa": "/das ɪst fɛɐ̯ˈʃtɛntlɪç fyːɐ̯ mɪç/",
         "en": "That is understandable to me.",
         "es": "Lo entiendo.",
@@ -80,49 +80,70 @@
       "tokens": [
         {
           "surface": "Das",
-          "surface_en": "That",
-          "furigana": "[das]",
+          "lemma": "der",
           "pos": "PRON",
-          "lemma": "das",
-          "explanation": "Demonstrative pronoun functioning as the subject of a copular clause (nominative, neuter singular).",
-          "difficulty": 2
+          "upos": "PRON",
+          "xpos": "PDS",
+          "feats": {},
+          "start": 0,
+          "end": 3,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "ist",
-          "surface_en": "is",
-          "furigana": "[ɪst]",
-          "pos": "AUX",
           "lemma": "sein",
-          "explanation": "Copular auxiliary (3rd person singular present) linking the subject to the predicative complement.",
-          "difficulty": 4
-        },
-        {
-          "surface": "verständlich",
-          "surface_en": "understandable",
-          "furigana": "[fɛɐ̯ˈʃtɛntlɪç]",
-          "pos": "ADJ",
-          "lemma": "verständlich",
-          "explanation": "Predicative adjective serving as subject complement with the copula.",
-          "difficulty": 10,
-          "is_main_word": true
+          "pos": "AUX",
+          "upos": "AUX",
+          "xpos": "VAFIN",
+          "feats": {},
+          "start": 4,
+          "end": 7,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "für",
-          "surface_en": "for",
-          "furigana": "[fyːɐ]",
-          "pos": "ADP",
           "lemma": "für",
-          "explanation": "Preposition governing the accusative, introducing a beneficiary/experiencer phrase.",
-          "difficulty": 2
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "APPR",
+          "feats": {},
+          "start": 8,
+          "end": 11,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "mich.",
-          "surface_en": "me",
-          "furigana": "[mɪç]",
+          "surface": "mich",
+          "lemma": "mich",
           "pos": "PRON",
-          "lemma": "ich",
-          "explanation": "Personal pronoun in accusative singular as the object of the preposition 'für'.",
-          "difficulty": 7
+          "upos": "PRON",
+          "xpos": "PPER",
+          "feats": {},
+          "start": 12,
+          "end": 16,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "verständlich",
+          "lemma": "verständlich",
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "ADJD",
+          "feats": {},
+          "start": 17,
+          "end": 29,
+          "analyzer": "spacy_de_core_news_lg",
+          "is_main_word": true
+        },
+        {
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 29,
+          "end": 30,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 5
@@ -323,12 +344,12 @@
       "difficulty": 5.71
     },
     {
-      "target": "Du erklärst das verständlich für Kinder.",
+      "target": "Du erklärst das für Kinder verständlich.",
       "reading": "/duː ɛʁˈklɛːʁst das fɛɐ̯ˈʃtɛntlɪç fyːɐ̯ ˈkɪndɐ/",
       "translations": {
-        "de": "Du erklärst das verständlich für Kinder.",
+        "de": "Du erklärst das für Kinder verständlich.",
         "ipa": "/duː ɛʁˈklɛːʁst das fɛɐ̯ˈʃtɛntlɪç fyːɐ̯ ˈkɪndɐ/",
-        "en": "You explain it clearly for children.",
+        "en": "You explain it in a way children can understand.",
         "es": "Lo explicas de forma clara para los niños.",
         "fr": "Tu l'expliques clairement aux enfants.",
         "it": "Lo spieghi in modo chiaro ai bambini.",
@@ -359,58 +380,81 @@
       "tokens": [
         {
           "surface": "Du",
-          "surface_en": "You",
-          "furigana": "[duː]",
-          "pos": "PRON",
           "lemma": "du",
-          "explanation": "Personal pronoun serving as the subject (2nd person singular, nominative).",
-          "difficulty": 2
+          "pos": "PRON",
+          "upos": "PRON",
+          "xpos": "PPER",
+          "feats": {},
+          "start": 0,
+          "end": 2,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "erklärst",
-          "surface_en": "explain",
-          "furigana": "[ɛʁˈklɛːʁst]",
-          "pos": "VERB",
           "lemma": "erklären",
-          "explanation": "Main verb (2nd person singular present).",
-          "difficulty": 10
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VVFIN",
+          "feats": {},
+          "start": 3,
+          "end": 11,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "das",
-          "surface_en": "it",
-          "furigana": "[das]",
+          "lemma": "der",
           "pos": "PRON",
-          "lemma": "das",
-          "explanation": "Demonstrative/personal pronoun functioning as a direct object (accusative neuter singular).",
-          "difficulty": 2
-        },
-        {
-          "surface": "verständlich",
-          "surface_en": "clearly",
-          "furigana": "[fɛɐ̯ˈʃtɛntlɪç]",
-          "pos": "ADV",
-          "lemma": "verständlich",
-          "explanation": "Adverb of manner modifying 'erklärst' (in an understandable way).",
-          "difficulty": 10,
-          "is_main_word": true
+          "upos": "PRON",
+          "xpos": "PDS",
+          "feats": {},
+          "start": 12,
+          "end": 15,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "für",
-          "surface_en": "for",
-          "furigana": "[fyːɐ]",
-          "pos": "ADP",
           "lemma": "für",
-          "explanation": "Preposition governing the accusative, introducing a beneficiary group.",
-          "difficulty": 2
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "APPR",
+          "feats": {},
+          "start": 16,
+          "end": 19,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "Kinder.",
-          "surface_en": "children",
-          "furigana": "[ˈkɪndɐ]",
+          "surface": "Kinder",
+          "lemma": "Kind",
           "pos": "NOUN",
-          "lemma": "kind",
-          "explanation": "Plural noun (accusative plural) as the object of 'für'.",
-          "difficulty": 7
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 20,
+          "end": 26,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "verständlich",
+          "lemma": "verständlich",
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "ADJD",
+          "feats": {},
+          "start": 27,
+          "end": 39,
+          "analyzer": "spacy_de_core_news_lg",
+          "is_main_word": true
+        },
+        {
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 39,
+          "end": 40,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 5.5
@@ -427,8 +471,537 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-15T04:47:53Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:De b1/f2ae48ab5741824c",
+      "revision_id": 84834,
+      "parent_revision_id": 18316,
+      "revision_timestamp_utc": "2026-10-15T04:47:53Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Adjust the word order in two German sentences and make the English version of the children example more idiomatic.",
+      "pulled_utc": "2026-10-17T07:06:44Z",
+      "applied_utc": "2026-10-17T07:06:54Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-5f80a9daabdfb50f",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_b1:f2ae48ab5741824c",
+        "pack_code": "de_b1",
+        "entry_id": "verständlich",
+        "language": "de",
+        "sentence_index": 1,
+        "old_sentence": "Das ist verständlich für mich.",
+        "old_translations": {
+          "de": "Das ist verständlich für mich.",
+          "ipa": "/das ɪst fɛɐ̯ˈʃtɛntlɪç fyːɐ̯ mɪç/",
+          "en": "That is understandable to me.",
+          "es": "Lo entiendo.",
+          "fr": "Je comprends.",
+          "it": "Capisco.",
+          "ko": "이해돼요.",
+          "zh-Hans": "我明白了。",
+          "yue": "我明白。",
+          "ru": "Мне это понятно.",
+          "pt": "Eu entendo.",
+          "he": "זה ברור לי.",
+          "tr": "Anlıyorum.",
+          "vi": "Tôi hiểu.",
+          "ar": "أنا أفهم.",
+          "nl": "Ik begrijp het.",
+          "uk": "Мені це зрозуміло.",
+          "hu": "Értem.",
+          "hi": "मुझे समझ में आ गया।",
+          "pl": "Rozumiem.",
+          "el": "Το καταλαβαίνω.",
+          "nb": "Jeg forstår.",
+          "id": "Saya paham.",
+          "sv": "Jag förstår.",
+          "ro": "Înțeleg.",
+          "cs": "Rozumím.",
+          "da": "Jeg forstår det.",
+          "fi": "Ymmärrän.",
+          "ja": "わかります。"
+        },
+        "proposed_sentence": "Das ist für mich verständlich.",
+        "proposed_translations": {
+          "de": "Das ist für mich verständlich.",
+          "ipa": "/das ɪst fɛɐ̯ˈʃtɛntlɪç fyːɐ̯ mɪç/",
+          "en": "That is understandable to me.",
+          "es": "Lo entiendo.",
+          "fr": "Je comprends.",
+          "it": "Capisco.",
+          "ko": "이해돼요.",
+          "zh-Hans": "我明白了。",
+          "yue": "我明白。",
+          "ru": "Мне это понятно.",
+          "pt": "Eu entendo.",
+          "he": "זה ברור לי.",
+          "tr": "Anlıyorum.",
+          "vi": "Tôi hiểu.",
+          "ar": "أنا أفهم.",
+          "nl": "Ik begrijp het.",
+          "uk": "Мені це зрозуміло.",
+          "hu": "Értem.",
+          "hi": "मुझे समझ में आ गया।",
+          "pl": "Rozumiem.",
+          "el": "Το καταλαβαίνω.",
+          "nb": "Jeg forstår.",
+          "id": "Saya paham.",
+          "sv": "Jag förstår.",
+          "ro": "Înțeleg.",
+          "cs": "Rozumím.",
+          "da": "Jeg forstår det.",
+          "fi": "Ymmärrän.",
+          "ja": "わかります。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Das ist für mich verständlich.",
+        "old_japanese": "Das ist verständlich für mich.",
+        "old_english": "That is understandable to me.",
+        "proposed_japanese": "Das ist für mich verständlich.",
+        "proposed_english": "That is understandable to me.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Das ist für mich verständlich.",
+          "tokens": [
+            {
+              "surface": "Das",
+              "lemma": "der",
+              "pos": "PRON",
+              "upos": "PRON",
+              "xpos": "PDS",
+              "feats": {},
+              "start": 0,
+              "end": 3,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "ist",
+              "lemma": "sein",
+              "pos": "AUX",
+              "upos": "AUX",
+              "xpos": "VAFIN",
+              "feats": {},
+              "start": 4,
+              "end": 7,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "für",
+              "lemma": "für",
+              "pos": "ADP",
+              "upos": "ADP",
+              "xpos": "APPR",
+              "feats": {},
+              "start": 8,
+              "end": 11,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "mich",
+              "lemma": "mich",
+              "pos": "PRON",
+              "upos": "PRON",
+              "xpos": "PPER",
+              "feats": {},
+              "start": 12,
+              "end": 16,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "verständlich",
+              "lemma": "verständlich",
+              "pos": "ADV",
+              "upos": "ADV",
+              "xpos": "ADJD",
+              "feats": {},
+              "start": 17,
+              "end": 29,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 29,
+              "end": 30,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Das",
+            "lemma": "der",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PDS",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "ist",
+            "lemma": "sein",
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "VAFIN",
+            "feats": {},
+            "start": 4,
+            "end": 7,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "für",
+            "lemma": "für",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 8,
+            "end": 11,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "mich",
+            "lemma": "mich",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 12,
+            "end": 16,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "verständlich",
+            "lemma": "verständlich",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADJD",
+            "feats": {},
+            "start": 17,
+            "end": 29,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 29,
+            "end": 30,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:06:44Z",
+        "updated_utc": "2026-10-17T07:07:06Z",
+        "applied_utc": "2026-10-17T07:07:06Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      },
+      {
+        "id": "sentprop-439048f1a4de51a0",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_b1:f2ae48ab5741824c",
+        "pack_code": "de_b1",
+        "entry_id": "verständlich",
+        "language": "de",
+        "sentence_index": 4,
+        "old_sentence": "Du erklärst das verständlich für Kinder.",
+        "old_translations": {
+          "de": "Du erklärst das verständlich für Kinder.",
+          "ipa": "/duː ɛʁˈklɛːʁst das fɛɐ̯ˈʃtɛntlɪç fyːɐ̯ ˈkɪndɐ/",
+          "en": "You explain it clearly for children.",
+          "es": "Lo explicas de forma clara para los niños.",
+          "fr": "Tu l'expliques clairement aux enfants.",
+          "it": "Lo spieghi in modo chiaro ai bambini.",
+          "ko": "아이들이 이해하기 쉽게 설명해요.",
+          "zh-Hans": "你讲得孩子也听得懂。",
+          "yue": "你講到連細路都聽得明。",
+          "ru": "Ты объясняешь это понятно для детей.",
+          "pt": "Você explica isso de forma clara para crianças.",
+          "he": "אתה מסביר את זה לילדים בצורה ברורה.",
+          "tr": "Bunu çocukların anlayacağı şekilde anlatıyorsun.",
+          "vi": "Bạn giải thích sao cho trẻ em cũng hiểu.",
+          "ar": "تشرح ذلك بوضوح للأطفال.",
+          "nl": "Je legt het duidelijk uit voor kinderen.",
+          "uk": "Ти пояснюєш це зрозуміло для дітей.",
+          "hu": "Ezt gyerekek számára érthetően magyarázod.",
+          "hi": "तुम इसे बच्चों के लिए साफ़ तरीके से समझाते हो।",
+          "pl": "Tłumaczysz to w sposób zrozumiały dla dzieci.",
+          "el": "Το εξηγείς με τρόπο κατανοητό για τα παιδιά.",
+          "nb": "Du forklarer det tydelig for barn.",
+          "id": "Kamu menjelaskannya dengan jelas untuk anak-anak.",
+          "sv": "Du förklarar det tydligt för barn.",
+          "ro": "Îl explici pe înțelesul copiilor.",
+          "cs": "Vysvětluješ to srozumitelně pro děti.",
+          "da": "Du forklarer det tydeligt for børn.",
+          "fi": "Selität sen lapsille ymmärrettävästi.",
+          "ja": "子どもにもわかるように説明します。"
+        },
+        "proposed_sentence": "Du erklärst das für Kinder verständlich.",
+        "proposed_translations": {
+          "de": "Du erklärst das für Kinder verständlich.",
+          "ipa": "/duː ɛʁˈklɛːʁst das fɛɐ̯ˈʃtɛntlɪç fyːɐ̯ ˈkɪndɐ/",
+          "en": "You explain it in a way children can understand.",
+          "es": "Lo explicas de forma clara para los niños.",
+          "fr": "Tu l'expliques clairement aux enfants.",
+          "it": "Lo spieghi in modo chiaro ai bambini.",
+          "ko": "아이들이 이해하기 쉽게 설명해요.",
+          "zh-Hans": "你讲得孩子也听得懂。",
+          "yue": "你講到連細路都聽得明。",
+          "ru": "Ты объясняешь это понятно для детей.",
+          "pt": "Você explica isso de forma clara para crianças.",
+          "he": "אתה מסביר את זה לילדים בצורה ברורה.",
+          "tr": "Bunu çocukların anlayacağı şekilde anlatıyorsun.",
+          "vi": "Bạn giải thích sao cho trẻ em cũng hiểu.",
+          "ar": "تشرح ذلك بوضوح للأطفال.",
+          "nl": "Je legt het duidelijk uit voor kinderen.",
+          "uk": "Ти пояснюєш це зрозуміло для дітей.",
+          "hu": "Ezt gyerekek számára érthetően magyarázod.",
+          "hi": "तुम इसे बच्चों के लिए साफ़ तरीके से समझाते हो।",
+          "pl": "Tłumaczysz to w sposób zrozumiały dla dzieci.",
+          "el": "Το εξηγείς με τρόπο κατανοητό για τα παιδιά.",
+          "nb": "Du forklarer det tydelig for barn.",
+          "id": "Kamu menjelaskannya dengan jelas untuk anak-anak.",
+          "sv": "Du förklarar det tydligt för barn.",
+          "ro": "Îl explici pe înțelesul copiilor.",
+          "cs": "Vysvětluješ to srozumitelně pro děti.",
+          "da": "Du forklarer det tydeligt for børn.",
+          "fi": "Selität sen lapsille ymmärrettävästi.",
+          "ja": "子どもにもわかるように説明します。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Du erklärst das für Kinder verständlich.",
+        "old_japanese": "Du erklärst das verständlich für Kinder.",
+        "old_english": "You explain it clearly for children.",
+        "proposed_japanese": "Du erklärst das für Kinder verständlich.",
+        "proposed_english": "You explain it in a way children can understand.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Du erklärst das für Kinder verständlich.",
+          "tokens": [
+            {
+              "surface": "Du",
+              "lemma": "du",
+              "pos": "PRON",
+              "upos": "PRON",
+              "xpos": "PPER",
+              "feats": {},
+              "start": 0,
+              "end": 2,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "erklärst",
+              "lemma": "erklären",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVFIN",
+              "feats": {},
+              "start": 3,
+              "end": 11,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "das",
+              "lemma": "der",
+              "pos": "PRON",
+              "upos": "PRON",
+              "xpos": "PDS",
+              "feats": {},
+              "start": 12,
+              "end": 15,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "für",
+              "lemma": "für",
+              "pos": "ADP",
+              "upos": "ADP",
+              "xpos": "APPR",
+              "feats": {},
+              "start": 16,
+              "end": 19,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Kinder",
+              "lemma": "Kind",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 20,
+              "end": 26,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "verständlich",
+              "lemma": "verständlich",
+              "pos": "ADV",
+              "upos": "ADV",
+              "xpos": "ADJD",
+              "feats": {},
+              "start": 27,
+              "end": 39,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 39,
+              "end": 40,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Du",
+            "lemma": "du",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "erklärst",
+            "lemma": "erklären",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 3,
+            "end": 11,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "das",
+            "lemma": "der",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PDS",
+            "feats": {},
+            "start": 12,
+            "end": 15,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "für",
+            "lemma": "für",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 16,
+            "end": 19,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Kinder",
+            "lemma": "Kind",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 20,
+            "end": 26,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "verständlich",
+            "lemma": "verständlich",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADJD",
+            "feats": {},
+            "start": 27,
+            "end": 39,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 39,
+            "end": 40,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:06:44Z",
+        "updated_utc": "2026-10-17T07:07:06Z",
+        "applied_utc": "2026-10-17T07:07:06Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:07:06Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -440,34 +1013,6 @@
     "word": "verständlich",
     "word_reading": "",
     "word_label": "Adjektiv",
-    "word_en": "understandable; clear",
-    "word_es": "comprensible; entendible",
-    "word_fr": "compréhensible",
-    "word_it": "comprensibile",
-    "word_ko": "이해하기 쉬운; 이해할 수 있는",
-    "word_zh-Hans": "可理解的; 容易理解的",
-    "word_yue": "容易明白; 可理解",
-    "word_ru": "понятный; легко понимаемый",
-    "word_pt": "compreensível; entendível",
-    "word_he": "מובן; ניתן להבנה",
-    "word_tr": "anlaşılır; anlaşılabilir",
-    "word_vi": "dễ hiểu; có thể hiểu được",
-    "word_ar": "مفهوم; قابل للفهم",
-    "word_nl": "begrijpelijk",
-    "word_uk": "зрозумілий; легкий для розуміння",
-    "word_hu": "érthető",
-    "word_hi": "समझ में आने वाला; समझने योग्य",
-    "word_pl": "zrozumiały; łatwy do zrozumienia",
-    "word_el": "κατανοητός; ευκολονόητος",
-    "word_nb": "forståelig",
-    "word_id": "mudah dipahami; dapat dipahami",
-    "word_sv": "begriplig",
-    "word_ro": "de înțeles; ușor de înțeles",
-    "word_cs": "pochopitelný; srozumitelný",
-    "word_da": "forståelig",
-    "word_fi": "ymmärrettävä",
-    "word_ja": "理解できる; わかりやすい",
-    "word_de": "verständlich",
     "comic_difficulty": 5.93,
     "jp": [
       "Das ist verständlich für mich.",
@@ -481,73 +1026,76 @@
       "/ziː ʃpʁɪçt fɛɐ̯ˈʃtɛntlɪç ɪn deːɐ̯ ˈlaʊ̯tən ˈkʏçə/",
       "/duː ɛʁˈklɛːʁst das fɛɐ̯ˈʃtɛntlɪç fyːɐ̯ ˈkɪndɐ/"
     ],
-    "de": [
-      "Das ist verständlich für mich.",
-      "Dein Text ist verständlich ohne Fachwörter.",
-      "Sie spricht verständlich in der lauten Küche.",
-      "Du erklärst das verständlich für Kinder."
-    ],
-    "ipa": [
-      "/das ɪst fɛɐ̯ˈʃtɛntlɪç fyːɐ̯ mɪç/",
-      "/daɪ̯n tɛkst ɪst fɛɐ̯ˈʃtɛntlɪç ˈoːnə ˈfaxvœʁtɐ/",
-      "/ziː ʃpʁɪçt fɛɐ̯ˈʃtɛntlɪç ɪn deːɐ̯ ˈlaʊ̯tən ˈkʏçə/",
-      "/duː ɛʁˈklɛːʁst das fɛɐ̯ˈʃtɛntlɪç fyːɐ̯ ˈkɪndɐ/"
-    ],
-    "en": [
-      "That is understandable to me.",
-      "Your text is understandable without technical terms.",
-      "She speaks clearly in the noisy kitchen.",
-      "You explain it clearly for children."
-    ],
     "pos_analysis": [
       {
-        "sentence": "Das ist verständlich für mich.",
+        "sentence": "Das ist für mich verständlich.",
         "tokens": [
           {
             "surface": "Das",
-            "surface_en": "That",
-            "furigana": "[das]",
+            "lemma": "der",
             "pos": "PRON",
-            "lemma": "das",
-            "explanation": "Demonstrative pronoun functioning as the subject of a copular clause (nominative, neuter singular).",
-            "difficulty": 2
+            "upos": "PRON",
+            "xpos": "PDS",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "ist",
-            "surface_en": "is",
-            "furigana": "[ɪst]",
-            "pos": "AUX",
             "lemma": "sein",
-            "explanation": "Copular auxiliary (3rd person singular present) linking the subject to the predicative complement.",
-            "difficulty": 4
-          },
-          {
-            "surface": "verständlich",
-            "surface_en": "understandable",
-            "furigana": "[fɛɐ̯ˈʃtɛntlɪç]",
-            "pos": "ADJ",
-            "lemma": "verständlich",
-            "explanation": "Predicative adjective serving as subject complement with the copula.",
-            "difficulty": 10,
-            "is_main_word": true
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "VAFIN",
+            "feats": {},
+            "start": 4,
+            "end": 7,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "für",
-            "surface_en": "for",
-            "furigana": "[fyːɐ]",
-            "pos": "ADP",
             "lemma": "für",
-            "explanation": "Preposition governing the accusative, introducing a beneficiary/experiencer phrase.",
-            "difficulty": 2
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 8,
+            "end": 11,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "mich.",
-            "surface_en": "me",
-            "furigana": "[mɪç]",
+            "surface": "mich",
+            "lemma": "mich",
             "pos": "PRON",
-            "lemma": "ich",
-            "explanation": "Personal pronoun in accusative singular as the object of the preposition 'für'.",
-            "difficulty": 7
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 12,
+            "end": 16,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "verständlich",
+            "lemma": "verständlich",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADJD",
+            "feats": {},
+            "start": 17,
+            "end": 29,
+            "analyzer": "spacy_de_core_news_lg",
+            "is_main_word": true
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 29,
+            "end": 30,
+            "analyzer": "spacy_de_core_news_lg"
           }
         ],
         "difficulty_aggregated": 5
@@ -684,198 +1232,125 @@
         "difficulty_aggregated": 5.71
       },
       {
-        "sentence": "Du erklärst das verständlich für Kinder.",
+        "sentence": "Du erklärst das für Kinder verständlich.",
         "tokens": [
           {
             "surface": "Du",
-            "surface_en": "You",
-            "furigana": "[duː]",
-            "pos": "PRON",
             "lemma": "du",
-            "explanation": "Personal pronoun serving as the subject (2nd person singular, nominative).",
-            "difficulty": 2
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "erklärst",
-            "surface_en": "explain",
-            "furigana": "[ɛʁˈklɛːʁst]",
-            "pos": "VERB",
             "lemma": "erklären",
-            "explanation": "Main verb (2nd person singular present).",
-            "difficulty": 10
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 3,
+            "end": 11,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "das",
-            "surface_en": "it",
-            "furigana": "[das]",
+            "lemma": "der",
             "pos": "PRON",
-            "lemma": "das",
-            "explanation": "Demonstrative/personal pronoun functioning as a direct object (accusative neuter singular).",
-            "difficulty": 2
-          },
-          {
-            "surface": "verständlich",
-            "surface_en": "clearly",
-            "furigana": "[fɛɐ̯ˈʃtɛntlɪç]",
-            "pos": "ADV",
-            "lemma": "verständlich",
-            "explanation": "Adverb of manner modifying 'erklärst' (in an understandable way).",
-            "difficulty": 10,
-            "is_main_word": true
+            "upos": "PRON",
+            "xpos": "PDS",
+            "feats": {},
+            "start": 12,
+            "end": 15,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "für",
-            "surface_en": "for",
-            "furigana": "[fyːɐ]",
-            "pos": "ADP",
             "lemma": "für",
-            "explanation": "Preposition governing the accusative, introducing a beneficiary group.",
-            "difficulty": 2
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 16,
+            "end": 19,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "Kinder.",
-            "surface_en": "children",
-            "furigana": "[ˈkɪndɐ]",
+            "surface": "Kinder",
+            "lemma": "Kind",
             "pos": "NOUN",
-            "lemma": "kind",
-            "explanation": "Plural noun (accusative plural) as the object of 'für'.",
-            "difficulty": 7
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 20,
+            "end": 26,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "verständlich",
+            "lemma": "verständlich",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADJD",
+            "feats": {},
+            "start": 27,
+            "end": 39,
+            "analyzer": "spacy_de_core_news_lg",
+            "is_main_word": true
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 39,
+            "end": 40,
+            "analyzer": "spacy_de_core_news_lg"
           }
         ],
         "difficulty_aggregated": 5.5
       }
     ],
-    "es": [
-      "Lo entiendo.",
-      "Tu texto se entiende sin tecnicismos.",
-      "Habla claro en la cocina ruidosa.",
-      "Lo explicas de forma clara para los niños."
-    ],
-    "fr": [
-      "Je comprends.",
-      "Ton texte est compréhensible sans termes techniques.",
-      "Elle parle clairement dans la cuisine bruyante.",
-      "Tu l'expliques clairement aux enfants."
-    ],
-    "it": [
-      "Capisco.",
-      "Il tuo testo si capisce senza termini tecnici.",
-      "Parla chiaramente nella cucina rumorosa.",
-      "Lo spieghi in modo chiaro ai bambini."
-    ],
-    "ko": [
-      "이해돼요.",
-      "네 글은 전문 용어 없이도 이해돼요.",
-      "시끄러운 부엌에서도 또렷하게 말해요.",
-      "아이들이 이해하기 쉽게 설명해요."
-    ],
-    "zh-Hans": [
-      "我明白了。",
-      "你的文章不用专业术语也能看懂。",
-      "在嘈杂的厨房里，她说话很清楚。",
-      "你讲得孩子也听得懂。"
-    ],
-    "yue": [
-      "我明白。",
-      "你嘅文章唔使專業術語都睇得明。",
-      "喺嘈吵嘅廚房入面佢講嘢好清楚。",
-      "你講到連細路都聽得明。"
-    ],
-    "ru": [
-      "Мне это понятно.",
-      "Твой текст понятен без профессиональных терминов.",
-      "На шумной кухне она говорит чётко.",
-      "Ты объясняешь это понятно для детей."
-    ],
-    "pt": [
-      "Eu entendo.",
-      "Seu texto dá para entender sem termos técnicos.",
-      "Ela fala claramente na cozinha barulhenta.",
-      "Você explica isso de forma clara para crianças."
-    ],
-    "he": [
-      "זה ברור לי.",
-      "הטקסט שלך מובן גם בלי מונחים מקצועיים.",
-      "היא מדברת ברור במטבח הרועש.",
-      "אתה מסביר את זה לילדים בצורה ברורה."
-    ],
-    "tr": [
-      "Anlıyorum.",
-      "Metnin teknik terimler olmadan da anlaşılır.",
-      "Gürültülü mutfakta net konuşuyor.",
-      "Bunu çocukların anlayacağı şekilde anlatıyorsun."
-    ],
-    "vi": [
-      "Tôi hiểu.",
-      "Bài viết của bạn dễ hiểu mà không cần thuật ngữ chuyên môn.",
-      "Cô ấy nói rõ ràng trong căn bếp ồn ào.",
-      "Bạn giải thích sao cho trẻ em cũng hiểu."
-    ],
+    "word_POS": "Adjective",
+    "entry_id": "verständlich",
+    "word_en": "understandable; clear",
+    "word_es": "comprensible; entendible",
+    "word_fr": "compréhensible",
+    "word_it": "comprensibile",
+    "word_ko": "이해하기 쉬운; 이해할 수 있는",
+    "word_zh-Hans": "可理解的; 容易理解的",
+    "word_yue": "容易明白; 可理解",
+    "word_ru": "понятный; легко понимаемый",
+    "word_pt": "compreensível; entendível",
+    "word_he": "מובן; ניתן להבנה",
+    "word_tr": "anlaşılır; anlaşılabilir",
+    "word_vi": "dễ hiểu; có thể hiểu được",
+    "word_ar": "مفهوم; قابل للفهم",
+    "word_nl": "begrijpelijk",
+    "word_uk": "зрозумілий; легкий для розуміння",
+    "word_hu": "érthető",
+    "word_hi": "समझ में आने वाला; समझने योग्य",
+    "word_pl": "zrozumiały; łatwy do zrozumienia",
+    "word_el": "κατανοητός; ευκολονόητος",
+    "word_nb": "forståelig",
+    "word_id": "mudah dipahami; dapat dipahami",
+    "word_sv": "begriplig",
+    "word_ro": "de înțeles; ușor de înțeles",
+    "word_cs": "pochopitelný; srozumitelný",
+    "word_da": "forståelig",
+    "word_fi": "ymmärrettävä",
+    "word_ja": "理解できる; わかりやすい",
+    "word_de": "verständlich",
     "ar": [
       "أنا أفهم.",
       "نصك مفهوم حتى بدون مصطلحات تقنية.",
       "هي تتحدث بوضوح في المطبخ الصاخب.",
       "تشرح ذلك بوضوح للأطفال."
-    ],
-    "nl": [
-      "Ik begrijp het.",
-      "Je tekst is begrijpelijk zonder vaktermen.",
-      "In de rumoerige keuken spreekt ze duidelijk.",
-      "Je legt het duidelijk uit voor kinderen."
-    ],
-    "uk": [
-      "Мені це зрозуміло.",
-      "Твій текст зрозумілий і без спеціальних термінів.",
-      "На гучній кухні вона говорить чітко.",
-      "Ти пояснюєш це зрозуміло для дітей."
-    ],
-    "hu": [
-      "Értem.",
-      "A szöveged szakmai kifejezések nélkül is érthető.",
-      "A zajos konyhában érthetően beszél.",
-      "Ezt gyerekek számára érthetően magyarázod."
-    ],
-    "hi": [
-      "मुझे समझ में आ गया।",
-      "तुम्हारा पाठ बिना तकनीकी शब्दों के भी समझ में आता है।",
-      "शोरगुल वाली रसोई में वह साफ़-साफ़ बोलती है।",
-      "तुम इसे बच्चों के लिए साफ़ तरीके से समझाते हो।"
-    ],
-    "pl": [
-      "Rozumiem.",
-      "Twój tekst jest zrozumiały bez terminów technicznych.",
-      "W głośnej kuchni mówi wyraźnie.",
-      "Tłumaczysz to w sposób zrozumiały dla dzieci."
-    ],
-    "el": [
-      "Το καταλαβαίνω.",
-      "Το κείμενό σου είναι κατανοητό χωρίς τεχνικούς όρους.",
-      "Στη θορυβώδη κουζίνα μιλάει καθαρά.",
-      "Το εξηγείς με τρόπο κατανοητό για τα παιδιά."
-    ],
-    "nb": [
-      "Jeg forstår.",
-      "Teksten din er forståelig uten fagbegreper.",
-      "På det bråkete kjøkkenet snakker hun tydelig.",
-      "Du forklarer det tydelig for barn."
-    ],
-    "id": [
-      "Saya paham.",
-      "Teks kamu tetap mudah dipahami tanpa istilah teknis.",
-      "Di dapur yang bising, dia berbicara dengan jelas.",
-      "Kamu menjelaskannya dengan jelas untuk anak-anak."
-    ],
-    "sv": [
-      "Jag förstår.",
-      "Din text är begriplig utan facktermer.",
-      "I det bullriga köket pratar hon tydligt.",
-      "Du förklarar det tydligt för barn."
-    ],
-    "ro": [
-      "Înțeleg.",
-      "Textul tău se înțelege fără termeni tehnici.",
-      "În bucătăria zgomotoasă vorbește clar.",
-      "Îl explici pe înțelesul copiilor."
     ],
     "cs": [
       "Rozumím.",
@@ -889,11 +1364,77 @@
       "I det larmende køkken taler hun tydeligt.",
       "Du forklarer det tydeligt for børn."
     ],
+    "de": [
+      "Das ist verständlich für mich.",
+      "Dein Text ist verständlich ohne Fachwörter.",
+      "Sie spricht verständlich in der lauten Küche.",
+      "Du erklärst das verständlich für Kinder."
+    ],
+    "el": [
+      "Το καταλαβαίνω.",
+      "Το κείμενό σου είναι κατανοητό χωρίς τεχνικούς όρους.",
+      "Στη θορυβώδη κουζίνα μιλάει καθαρά.",
+      "Το εξηγείς με τρόπο κατανοητό για τα παιδιά."
+    ],
+    "en": [
+      "That is understandable to me.",
+      "Your text is understandable without technical terms.",
+      "She speaks clearly in the noisy kitchen.",
+      "You explain it clearly for children."
+    ],
+    "es": [
+      "Lo entiendo.",
+      "Tu texto se entiende sin tecnicismos.",
+      "Habla claro en la cocina ruidosa.",
+      "Lo explicas de forma clara para los niños."
+    ],
     "fi": [
       "Ymmärrän.",
       "Tekstisi on ymmärrettävä ilman erikoistermejä.",
       "Meluisassa keittiössä hän puhuu selkeästi.",
       "Selität sen lapsille ymmärrettävästi."
+    ],
+    "fr": [
+      "Je comprends.",
+      "Ton texte est compréhensible sans termes techniques.",
+      "Elle parle clairement dans la cuisine bruyante.",
+      "Tu l'expliques clairement aux enfants."
+    ],
+    "he": [
+      "זה ברור לי.",
+      "הטקסט שלך מובן גם בלי מונחים מקצועיים.",
+      "היא מדברת ברור במטבח הרועש.",
+      "אתה מסביר את זה לילדים בצורה ברורה."
+    ],
+    "hi": [
+      "मुझे समझ में आ गया।",
+      "तुम्हारा पाठ बिना तकनीकी शब्दों के भी समझ में आता है।",
+      "शोरगुल वाली रसोई में वह साफ़-साफ़ बोलती है।",
+      "तुम इसे बच्चों के लिए साफ़ तरीके से समझाते हो।"
+    ],
+    "hu": [
+      "Értem.",
+      "A szöveged szakmai kifejezések nélkül is érthető.",
+      "A zajos konyhában érthetően beszél.",
+      "Ezt gyerekek számára érthetően magyarázod."
+    ],
+    "id": [
+      "Saya paham.",
+      "Teks kamu tetap mudah dipahami tanpa istilah teknis.",
+      "Di dapur yang bising, dia berbicara dengan jelas.",
+      "Kamu menjelaskannya dengan jelas untuk anak-anak."
+    ],
+    "ipa": [
+      "/das ɪst fɛɐ̯ˈʃtɛntlɪç fyːɐ̯ mɪç/",
+      "/daɪ̯n tɛkst ɪst fɛɐ̯ˈʃtɛntlɪç ˈoːnə ˈfaxvœʁtɐ/",
+      "/ziː ʃpʁɪçt fɛɐ̯ˈʃtɛntlɪç ɪn deːɐ̯ ˈlaʊ̯tən ˈkʏçə/",
+      "/duː ɛʁˈklɛːʁst das fɛɐ̯ˈʃtɛntlɪç fyːɐ̯ ˈkɪndɐ/"
+    ],
+    "it": [
+      "Capisco.",
+      "Il tuo testo si capisce senza termini tecnici.",
+      "Parla chiaramente nella cucina rumorosa.",
+      "Lo spieghi in modo chiaro ai bambini."
     ],
     "ja": [
       "わかります。",
@@ -901,6 +1442,83 @@
       "うるさい台所でも彼女ははっきり話します。",
       "子どもにもわかるように説明します。"
     ],
-    "word_POS": "Adjective"
+    "ko": [
+      "이해돼요.",
+      "네 글은 전문 용어 없이도 이해돼요.",
+      "시끄러운 부엌에서도 또렷하게 말해요.",
+      "아이들이 이해하기 쉽게 설명해요."
+    ],
+    "nb": [
+      "Jeg forstår.",
+      "Teksten din er forståelig uten fagbegreper.",
+      "På det bråkete kjøkkenet snakker hun tydelig.",
+      "Du forklarer det tydelig for barn."
+    ],
+    "nl": [
+      "Ik begrijp het.",
+      "Je tekst is begrijpelijk zonder vaktermen.",
+      "In de rumoerige keuken spreekt ze duidelijk.",
+      "Je legt het duidelijk uit voor kinderen."
+    ],
+    "pl": [
+      "Rozumiem.",
+      "Twój tekst jest zrozumiały bez terminów technicznych.",
+      "W głośnej kuchni mówi wyraźnie.",
+      "Tłumaczysz to w sposób zrozumiały dla dzieci."
+    ],
+    "pt": [
+      "Eu entendo.",
+      "Seu texto dá para entender sem termos técnicos.",
+      "Ela fala claramente na cozinha barulhenta.",
+      "Você explica isso de forma clara para crianças."
+    ],
+    "ro": [
+      "Înțeleg.",
+      "Textul tău se înțelege fără termeni tehnici.",
+      "În bucătăria zgomotoasă vorbește clar.",
+      "Îl explici pe înțelesul copiilor."
+    ],
+    "ru": [
+      "Мне это понятно.",
+      "Твой текст понятен без профессиональных терминов.",
+      "На шумной кухне она говорит чётко.",
+      "Ты объясняешь это понятно для детей."
+    ],
+    "sv": [
+      "Jag förstår.",
+      "Din text är begriplig utan facktermer.",
+      "I det bullriga köket pratar hon tydligt.",
+      "Du förklarar det tydligt för barn."
+    ],
+    "tr": [
+      "Anlıyorum.",
+      "Metnin teknik terimler olmadan da anlaşılır.",
+      "Gürültülü mutfakta net konuşuyor.",
+      "Bunu çocukların anlayacağı şekilde anlatıyorsun."
+    ],
+    "uk": [
+      "Мені це зрозуміло.",
+      "Твій текст зрозумілий і без спеціальних термінів.",
+      "На гучній кухні вона говорить чітко.",
+      "Ти пояснюєш це зрозуміло для дітей."
+    ],
+    "vi": [
+      "Tôi hiểu.",
+      "Bài viết của bạn dễ hiểu mà không cần thuật ngữ chuyên môn.",
+      "Cô ấy nói rõ ràng trong căn bếp ồn ào.",
+      "Bạn giải thích sao cho trẻ em cũng hiểu."
+    ],
+    "yue": [
+      "我明白。",
+      "你嘅文章唔使專業術語都睇得明。",
+      "喺嘈吵嘅廚房入面佢講嘢好清楚。",
+      "你講到連細路都聽得明。"
+    ],
+    "zh-Hans": [
+      "我明白了。",
+      "你的文章不用专业术语也能看懂。",
+      "在嘈杂的厨房里，她说话很清楚。",
+      "你讲得孩子也听得懂。"
+    ]
   }
 }

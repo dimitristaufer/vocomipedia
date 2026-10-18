@@ -173,7 +173,7 @@
       "difficulty": null
     },
     {
-      "target": "朝、体温をはかりました。",
+      "target": "朝、体温を測りました。",
       "reading": "あさ、たいおんをはかりました。",
       "translations": {
         "en": "I took my temperature this morning.",
@@ -225,8 +225,9 @@
               "length": 1
             }
           ],
-          "ruby_confidence": "high",
-          "furigana": "あさ"
+          "ruby_confidence": "reviewed",
+          "furigana": "あさ",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "、",
@@ -264,8 +265,9 @@
               "length": 2
             }
           ],
-          "ruby_confidence": "medium",
+          "ruby_confidence": "reviewed",
           "furigana": "たいおん",
+          "ruby_source": "mediawiki_sentence_ruby",
           "is_main_word": true
         },
         {
@@ -285,20 +287,28 @@
           "furigana": "を"
         },
         {
-          "surface": "はかり",
-          "lemma": "はかる",
+          "surface": "測り",
+          "lemma": "測る",
           "pos": "動詞/一般/*/*/五段-ラ行/連用形-一般",
           "upos": "VERB",
           "xpos": "動詞",
           "feats": {},
           "start": 5,
-          "end": 8,
+          "end": 7,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "はかり",
-          "ruby_text": "はかり",
-          "ruby_spans": [],
-          "ruby_confidence": "high",
-          "furigana": "はかり"
+          "ruby_text": "測[はか]り",
+          "ruby_spans": [
+            {
+              "base": "測",
+              "reading": "はか",
+              "start": 0,
+              "length": 1
+            }
+          ],
+          "ruby_confidence": "reviewed",
+          "furigana": "はかり",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "まし",
@@ -307,8 +317,8 @@
           "upos": "AUX",
           "xpos": "助動詞",
           "feats": {},
-          "start": 8,
-          "end": 10,
+          "start": 7,
+          "end": 9,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "まし",
           "ruby_text": "まし",
@@ -323,8 +333,8 @@
           "upos": "AUX",
           "xpos": "助動詞",
           "feats": {},
-          "start": 10,
-          "end": 11,
+          "start": 9,
+          "end": 10,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "た",
           "ruby_text": "た",
@@ -339,8 +349,8 @@
           "upos": "PUNCT",
           "xpos": "補助記号",
           "feats": {},
-          "start": 11,
-          "end": 12,
+          "start": 10,
+          "end": 11,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "。",
           "ruby_text": "。",
@@ -758,8 +768,440 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-13T08:19:25Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:Ja n3/b44c0eacefb73484",
+      "revision_id": 80168,
+      "parent_revision_id": 68381,
+      "revision_timestamp_utc": "2026-10-13T08:19:25Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Use the standard kanji 測る for taking a body temperature, while preserving the sentence meaning.",
+      "pulled_utc": "2026-10-18T17:39:12Z",
+      "applied_utc": "2026-10-18T17:39:50Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-bcf55ffc9c678b49",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "ja_n3:b44c0eacefb73484",
+        "pack_code": "ja_n3",
+        "entry_id": "体温",
+        "language": "ja",
+        "sentence_index": 2,
+        "old_sentence": "朝、体温をはかりました。",
+        "old_translations": {
+          "en": "I took my temperature this morning.",
+          "ar": "قست حرارتي صباحا.",
+          "cs": "Ráno jsem si změřil teplotu.",
+          "da": "Jeg målte min temperatur i morges.",
+          "de": "Ich habe heute Morgen meine Temperatur gemessen.",
+          "el": "Το πρωί μέτρησα τη θερμοκρασία μου.",
+          "es": "Me tomé la temperatura por la mañana.",
+          "fi": "Mittasin lämpöni aamulla.",
+          "fr": "J'ai pris ma température ce matin.",
+          "he": "מדדתי חום בבוקר.",
+          "hi": "मैंने सुबह अपना तापमान मापा।",
+          "hu": "Reggel megmértem a lázam.",
+          "id": "Saya mengukur suhu tubuh saya pagi ini.",
+          "it": "Mi sono misurato la febbre stamattina.",
+          "ko": "아침에 체온을 쟀어요.",
+          "nb": "Jeg målte temperaturen min i morges.",
+          "nl": "Ik heb vanmorgen mijn temperatuur gemeten.",
+          "pl": "Rano zmierzyłem sobie temperaturę.",
+          "pt": "Me medi a temperatura de manhã.",
+          "ro": "Mi-am măsurat temperatura dimineață.",
+          "ru": "Утром я измерил температуру.",
+          "sv": "Jag mätte min temperatur i morse.",
+          "tr": "Sabah ateşimi ölçtüm.",
+          "uk": "Вранці я поміряв температуру.",
+          "vi": "Sáng nay tôi đã đo nhiệt độ.",
+          "yue": "我朝早量咗體溫。",
+          "zh-Hans": "我早上量了体温。"
+        },
+        "proposed_sentence": "朝、体温を測りました。",
+        "proposed_translations": {
+          "en": "I took my temperature this morning.",
+          "ar": "قست حرارتي صباحا.",
+          "cs": "Ráno jsem si změřil teplotu.",
+          "da": "Jeg målte min temperatur i morges.",
+          "de": "Ich habe heute Morgen meine Temperatur gemessen.",
+          "el": "Το πρωί μέτρησα τη θερμοκρασία μου.",
+          "es": "Me tomé la temperatura por la mañana.",
+          "fi": "Mittasin lämpöni aamulla.",
+          "fr": "J'ai pris ma température ce matin.",
+          "he": "מדדתי חום בבוקר.",
+          "hi": "मैंने सुबह अपना तापमान मापा।",
+          "hu": "Reggel megmértem a lázam.",
+          "id": "Saya mengukur suhu tubuh saya pagi ini.",
+          "it": "Mi sono misurato la febbre stamattina.",
+          "ko": "아침에 체온을 쟀어요.",
+          "nb": "Jeg målte temperaturen min i morges.",
+          "nl": "Ik heb vanmorgen mijn temperatuur gemeten.",
+          "pl": "Rano zmierzyłem sobie temperaturę.",
+          "pt": "Me medi a temperatura de manhã.",
+          "ro": "Mi-am măsurat temperatura dimineață.",
+          "ru": "Утром я измерил температуру.",
+          "sv": "Jag mätte min temperatur i morse.",
+          "tr": "Sabah ateşimi ölçtüm.",
+          "uk": "Вранці я поміряв температуру.",
+          "vi": "Sáng nay tôi đã đo nhiệt độ.",
+          "yue": "我朝早量咗體溫。",
+          "zh-Hans": "我早上量了体温。"
+        },
+        "old_ruby_source": "朝[あさ]、体温[たいおん]をはかりました。",
+        "proposed_ruby_source": "朝[あさ]、体温[たいおん]を測[はか]りました。",
+        "old_japanese": "朝、体温をはかりました。",
+        "old_english": "I took my temperature this morning.",
+        "proposed_japanese": "朝、体温を測りました。",
+        "proposed_english": "I took my temperature this morning.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "ja",
+          "sentence": "朝、体温を測りました。",
+          "tokens": [
+            {
+              "surface": "朝",
+              "lemma": "朝",
+              "pos": "名詞/普通名詞/副詞可能/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 0,
+              "end": 1,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "あさ",
+              "ruby_text": "朝[あさ]",
+              "ruby_spans": [
+                {
+                  "base": "朝",
+                  "reading": "あさ",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "あさ",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "、",
+              "lemma": "、",
+              "pos": "補助記号/読点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 1,
+              "end": 2,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "、",
+              "ruby_text": "、",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "、"
+            },
+            {
+              "surface": "体温",
+              "lemma": "体温",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 2,
+              "end": 4,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "たいおん",
+              "ruby_text": "体温[たいおん]",
+              "ruby_spans": [
+                {
+                  "base": "体温",
+                  "reading": "たいおん",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "たいおん",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "を",
+              "lemma": "を",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 4,
+              "end": 5,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "を",
+              "ruby_text": "を",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "を"
+            },
+            {
+              "surface": "測り",
+              "lemma": "測る",
+              "pos": "動詞/一般/*/*/五段-ラ行/連用形-一般",
+              "upos": "VERB",
+              "xpos": "動詞",
+              "feats": {},
+              "start": 5,
+              "end": 7,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "はかり",
+              "ruby_text": "測[はか]り",
+              "ruby_spans": [
+                {
+                  "base": "測",
+                  "reading": "はか",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "はかり",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "まし",
+              "lemma": "ます",
+              "pos": "助動詞/*/*/*/助動詞-マス/連用形-一般",
+              "upos": "AUX",
+              "xpos": "助動詞",
+              "feats": {},
+              "start": 7,
+              "end": 9,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "まし",
+              "ruby_text": "まし",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "まし"
+            },
+            {
+              "surface": "た",
+              "lemma": "た",
+              "pos": "助動詞/*/*/*/助動詞-タ/終止形-一般",
+              "upos": "AUX",
+              "xpos": "助動詞",
+              "feats": {},
+              "start": 9,
+              "end": 10,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "た",
+              "ruby_text": "た",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "た"
+            },
+            {
+              "surface": "。",
+              "lemma": "。",
+              "pos": "補助記号/句点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 10,
+              "end": 11,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "。",
+              "ruby_text": "。",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "。"
+            }
+          ],
+          "reading": "あさ、たいおんをはかりました。",
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "warnings": [
+            "mediawiki ruby hints applied"
+          ]
+        },
+        "generated_tokens": [
+          {
+            "surface": "朝",
+            "lemma": "朝",
+            "pos": "名詞/普通名詞/副詞可能/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 0,
+            "end": 1,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "あさ",
+            "ruby_text": "朝[あさ]",
+            "ruby_spans": [
+              {
+                "base": "朝",
+                "reading": "あさ",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "あさ",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "、",
+            "lemma": "、",
+            "pos": "補助記号/読点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 1,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "、",
+            "ruby_text": "、",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "、"
+          },
+          {
+            "surface": "体温",
+            "lemma": "体温",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 2,
+            "end": 4,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "たいおん",
+            "ruby_text": "体温[たいおん]",
+            "ruby_spans": [
+              {
+                "base": "体温",
+                "reading": "たいおん",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "たいおん",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "を",
+            "lemma": "を",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 4,
+            "end": 5,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "を",
+            "ruby_text": "を",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "を"
+          },
+          {
+            "surface": "測り",
+            "lemma": "測る",
+            "pos": "動詞/一般/*/*/五段-ラ行/連用形-一般",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 5,
+            "end": 7,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "はかり",
+            "ruby_text": "測[はか]り",
+            "ruby_spans": [
+              {
+                "base": "測",
+                "reading": "はか",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "はかり",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "まし",
+            "lemma": "ます",
+            "pos": "助動詞/*/*/*/助動詞-マス/連用形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 7,
+            "end": 9,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "まし",
+            "ruby_text": "まし",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "まし"
+          },
+          {
+            "surface": "た",
+            "lemma": "た",
+            "pos": "助動詞/*/*/*/助動詞-タ/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 9,
+            "end": 10,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "た",
+            "ruby_text": "た",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "た"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 10,
+            "end": 11,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
+          }
+        ],
+        "generated_reading": "あさ、たいおんをはかりました。",
+        "analyzer": "sudachipy_sudachidict_core_c",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-18T17:39:12Z",
+        "updated_utc": "2026-10-18T17:40:52Z",
+        "applied_utc": "2026-10-18T17:40:52Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-18T17:40:52Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -784,12 +1226,6 @@
       "あさ、たいおんをはかりました。",
       "こどものたいおんがすこしさがりました。",
       "たいおんがあがると、やすみます。"
-    ],
-    "en": [
-      "My temperature is high.",
-      "I took my temperature this morning.",
-      "The child's temperature went down a little.",
-      "When my temperature goes up, I rest."
     ],
     "generation": {
       "generator": "vocomipedia_source_generator.py",
@@ -828,190 +1264,6 @@
         "parts_of_speech": "Noun"
       }
     },
-    "word_en": "body temperature",
-    "word_es": "temperatura corporal",
-    "word_fr": "température corporelle",
-    "word_de": "Körpertemperatur",
-    "word_it": "temperatura corporea",
-    "word_ko": "체온",
-    "word_zh-Hans": "体温",
-    "word_yue": "體溫",
-    "word_ru": "температура тела",
-    "word_pt": "temperatura corporal",
-    "word_he": "טמפרטורת גוף",
-    "word_tr": "vücut ısısı",
-    "word_vi": "thân nhiệt",
-    "word_ar": "درجة حرارة الجسم",
-    "word_nl": "lichaamstemperatuur",
-    "word_uk": "температура тіла",
-    "word_hu": "testhőmérséklet",
-    "word_hi": "शरीर का तापमान",
-    "word_pl": "temperatura ciała",
-    "word_el": "θερμοκρασία σώματος",
-    "word_nb": "kroppstemperatur",
-    "word_id": "suhu tubuh",
-    "word_sv": "kroppstemperatur",
-    "word_ro": "temperatura corpului",
-    "word_cs": "tělesná teplota",
-    "word_da": "kropstemperatur",
-    "word_fi": "ruumiinlämpö",
-    "word_ja": "体温",
-    "ar": [
-      "حرارتي مرتفعة.",
-      "قست حرارتي صباحا.",
-      "انخفضت درجة حرارة الطفل قليلا.",
-      "عندما ترتفع حرارتي، أرتاح."
-    ],
-    "cs": [
-      "Mám vysokou teplotu.",
-      "Ráno jsem si změřil teplotu.",
-      "Teplota dítěte trochu klesla.",
-      "Když mi stoupne teplota, odpočívám."
-    ],
-    "da": [
-      "Jeg har høj temperatur.",
-      "Jeg målte min temperatur i morges.",
-      "Barnets temperatur er faldet lidt.",
-      "Når min temperatur stiger, hviler jeg mig."
-    ],
-    "de": [
-      "Ich habe hohes Fieber.",
-      "Ich habe heute Morgen meine Temperatur gemessen.",
-      "Die Temperatur des Kindes ist etwas gesunken.",
-      "Wenn meine Temperatur steigt, ruhe ich mich aus."
-    ],
-    "el": [
-      "Έχω υψηλό πυρετό.",
-      "Το πρωί μέτρησα τη θερμοκρασία μου.",
-      "Η θερμοκρασία του παιδιού έπεσε λίγο.",
-      "Όταν ανεβαίνει η θερμοκρασία μου, ξεκουράζομαι."
-    ],
-    "es": [
-      "Tengo fiebre alta.",
-      "Me tomé la temperatura por la mañana.",
-      "La temperatura del niño bajó un poco.",
-      "Cuando me sube la temperatura, descanso."
-    ],
-    "fi": [
-      "Minulla on korkea kuume.",
-      "Mittasin lämpöni aamulla.",
-      "Lapsen lämpö laski hieman.",
-      "Kun lämpöni nousee, lepään."
-    ],
-    "fr": [
-      "J'ai une forte fièvre.",
-      "J'ai pris ma température ce matin.",
-      "La température de l'enfant a un peu baissé.",
-      "Quand ma température monte, je me repose."
-    ],
-    "he": [
-      "יש לי חום גבוה.",
-      "מדדתי חום בבוקר.",
-      "החום של הילד ירד קצת.",
-      "כשהחום שלי עולה, אני נח."
-    ],
-    "hi": [
-      "मेरा तापमान ज़्यादा है।",
-      "मैंने सुबह अपना तापमान मापा।",
-      "बच्चे का तापमान थोड़ा कम हो गया।",
-      "जब मेरा तापमान बढ़ता है, तो मैं आराम करता हूँ।"
-    ],
-    "hu": [
-      "Magas a lázam.",
-      "Reggel megmértem a lázam.",
-      "A gyerek láza kicsit csökkent.",
-      "Amikor felmegy a lázam, pihenek."
-    ],
-    "id": [
-      "Suhu tubuh saya tinggi.",
-      "Saya mengukur suhu tubuh saya pagi ini.",
-      "Suhu tubuh anak itu sedikit turun.",
-      "Kalau suhu tubuh saya naik, saya istirahat."
-    ],
-    "it": [
-      "Ho la febbre alta.",
-      "Mi sono misurato la febbre stamattina.",
-      "La temperatura del bambino è scesa un po'.",
-      "Quando mi sale la febbre, mi riposo."
-    ],
-    "ko": [
-      "열이 높아요.",
-      "아침에 체온을 쟀어요.",
-      "아이의 체온이 조금 내려갔어요.",
-      "체온이 올라가면 쉬어요."
-    ],
-    "nb": [
-      "Jeg har høy feber.",
-      "Jeg målte temperaturen min i morges.",
-      "Barnets temperatur har sunket litt.",
-      "Når temperaturen min stiger, hviler jeg."
-    ],
-    "nl": [
-      "Ik heb hoge koorts.",
-      "Ik heb vanmorgen mijn temperatuur gemeten.",
-      "De temperatuur van het kind is een beetje gedaald.",
-      "Als mijn temperatuur stijgt, rust ik uit."
-    ],
-    "pl": [
-      "Mam wysoką gorączkę.",
-      "Rano zmierzyłem sobie temperaturę.",
-      "Temperatura dziecka trochę spadła.",
-      "Kiedy mam wyższą temperaturę, odpoczywam."
-    ],
-    "pt": [
-      "Estou com febre alta.",
-      "Me medi a temperatura de manhã.",
-      "A temperatura da criança baixou um pouco.",
-      "Quando minha temperatura sobe, eu descanso."
-    ],
-    "ro": [
-      "Am febră mare.",
-      "Mi-am măsurat temperatura dimineață.",
-      "Temperatura copilului a scăzut puțin.",
-      "Când temperatura îmi crește, mă odihnesc."
-    ],
-    "ru": [
-      "У меня высокая температура.",
-      "Утром я измерил температуру.",
-      "Температура у ребёнка немного снизилась.",
-      "Когда у меня повышается температура, я отдыхаю."
-    ],
-    "sv": [
-      "Jag har hög feber.",
-      "Jag mätte min temperatur i morse.",
-      "Barnets temperatur sjönk lite.",
-      "När min temperatur stiger vilar jag."
-    ],
-    "tr": [
-      "Ateşim yüksek.",
-      "Sabah ateşimi ölçtüm.",
-      "Çocuğun ateşi biraz düştü.",
-      "Ateşim çıkınca dinlenirim."
-    ],
-    "uk": [
-      "У мене висока температура.",
-      "Вранці я поміряв температуру.",
-      "У дитини температура трохи знизилася.",
-      "Коли в мене підвищується температура, я відпочиваю."
-    ],
-    "vi": [
-      "Tôi bị sốt cao.",
-      "Sáng nay tôi đã đo nhiệt độ.",
-      "Nhiệt độ của đứa trẻ đã giảm một chút.",
-      "Khi nhiệt độ của tôi tăng lên, tôi nghỉ ngơi."
-    ],
-    "yue": [
-      "我發燒。",
-      "我朝早量咗體溫。",
-      "個細路嘅體溫低咗少少。",
-      "當我發燒，我就休息。"
-    ],
-    "zh-Hans": [
-      "我发高烧。",
-      "我早上量了体温。",
-      "孩子的体温稍微降了一点。",
-      "当我体温升高时，我会休息。"
-    ],
     "pos_analysis": [
       {
         "sentence": "体温が高いです。",
@@ -1115,7 +1367,7 @@
         "difficulty_aggregated": null
       },
       {
-        "sentence": "朝、体温をはかりました。",
+        "sentence": "朝、体温を測りました。",
         "tokens": [
           {
             "surface": "朝",
@@ -1137,8 +1389,9 @@
                 "length": 1
               }
             ],
-            "ruby_confidence": "high",
-            "furigana": "あさ"
+            "ruby_confidence": "reviewed",
+            "furigana": "あさ",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "、",
@@ -1176,8 +1429,9 @@
                 "length": 2
               }
             ],
-            "ruby_confidence": "medium",
+            "ruby_confidence": "reviewed",
             "furigana": "たいおん",
+            "ruby_source": "mediawiki_sentence_ruby",
             "is_main_word": true
           },
           {
@@ -1197,20 +1451,28 @@
             "furigana": "を"
           },
           {
-            "surface": "はかり",
-            "lemma": "はかる",
+            "surface": "測り",
+            "lemma": "測る",
             "pos": "動詞/一般/*/*/五段-ラ行/連用形-一般",
             "upos": "VERB",
             "xpos": "動詞",
             "feats": {},
             "start": 5,
-            "end": 8,
+            "end": 7,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "はかり",
-            "ruby_text": "はかり",
-            "ruby_spans": [],
-            "ruby_confidence": "high",
-            "furigana": "はかり"
+            "ruby_text": "測[はか]り",
+            "ruby_spans": [
+              {
+                "base": "測",
+                "reading": "はか",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "はかり",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "まし",
@@ -1219,8 +1481,8 @@
             "upos": "AUX",
             "xpos": "助動詞",
             "feats": {},
-            "start": 8,
-            "end": 10,
+            "start": 7,
+            "end": 9,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "まし",
             "ruby_text": "まし",
@@ -1235,8 +1497,8 @@
             "upos": "AUX",
             "xpos": "助動詞",
             "feats": {},
-            "start": 10,
-            "end": 11,
+            "start": 9,
+            "end": 10,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "た",
             "ruby_text": "た",
@@ -1251,8 +1513,8 @@
             "upos": "PUNCT",
             "xpos": "補助記号",
             "feats": {},
-            "start": 11,
-            "end": 12,
+            "start": 10,
+            "end": 11,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "。",
             "ruby_text": "。",
@@ -1598,6 +1860,196 @@
         ],
         "difficulty_aggregated": null
       }
+    ],
+    "word_en": "body temperature",
+    "word_es": "temperatura corporal",
+    "word_fr": "température corporelle",
+    "word_de": "Körpertemperatur",
+    "word_it": "temperatura corporea",
+    "word_ko": "체온",
+    "word_zh-Hans": "体温",
+    "word_yue": "體溫",
+    "word_ru": "температура тела",
+    "word_pt": "temperatura corporal",
+    "word_he": "טמפרטורת גוף",
+    "word_tr": "vücut ısısı",
+    "word_vi": "thân nhiệt",
+    "word_ar": "درجة حرارة الجسم",
+    "word_nl": "lichaamstemperatuur",
+    "word_uk": "температура тіла",
+    "word_hu": "testhőmérséklet",
+    "word_hi": "शरीर का तापमान",
+    "word_pl": "temperatura ciała",
+    "word_el": "θερμοκρασία σώματος",
+    "word_nb": "kroppstemperatur",
+    "word_id": "suhu tubuh",
+    "word_sv": "kroppstemperatur",
+    "word_ro": "temperatura corpului",
+    "word_cs": "tělesná teplota",
+    "word_da": "kropstemperatur",
+    "word_fi": "ruumiinlämpö",
+    "word_ja": "体温",
+    "ar": [
+      "حرارتي مرتفعة.",
+      "قست حرارتي صباحا.",
+      "انخفضت درجة حرارة الطفل قليلا.",
+      "عندما ترتفع حرارتي، أرتاح."
+    ],
+    "cs": [
+      "Mám vysokou teplotu.",
+      "Ráno jsem si změřil teplotu.",
+      "Teplota dítěte trochu klesla.",
+      "Když mi stoupne teplota, odpočívám."
+    ],
+    "da": [
+      "Jeg har høj temperatur.",
+      "Jeg målte min temperatur i morges.",
+      "Barnets temperatur er faldet lidt.",
+      "Når min temperatur stiger, hviler jeg mig."
+    ],
+    "de": [
+      "Ich habe hohes Fieber.",
+      "Ich habe heute Morgen meine Temperatur gemessen.",
+      "Die Temperatur des Kindes ist etwas gesunken.",
+      "Wenn meine Temperatur steigt, ruhe ich mich aus."
+    ],
+    "el": [
+      "Έχω υψηλό πυρετό.",
+      "Το πρωί μέτρησα τη θερμοκρασία μου.",
+      "Η θερμοκρασία του παιδιού έπεσε λίγο.",
+      "Όταν ανεβαίνει η θερμοκρασία μου, ξεκουράζομαι."
+    ],
+    "en": [
+      "My temperature is high.",
+      "I took my temperature this morning.",
+      "The child's temperature went down a little.",
+      "When my temperature goes up, I rest."
+    ],
+    "es": [
+      "Tengo fiebre alta.",
+      "Me tomé la temperatura por la mañana.",
+      "La temperatura del niño bajó un poco.",
+      "Cuando me sube la temperatura, descanso."
+    ],
+    "fi": [
+      "Minulla on korkea kuume.",
+      "Mittasin lämpöni aamulla.",
+      "Lapsen lämpö laski hieman.",
+      "Kun lämpöni nousee, lepään."
+    ],
+    "fr": [
+      "J'ai une forte fièvre.",
+      "J'ai pris ma température ce matin.",
+      "La température de l'enfant a un peu baissé.",
+      "Quand ma température monte, je me repose."
+    ],
+    "he": [
+      "יש לי חום גבוה.",
+      "מדדתי חום בבוקר.",
+      "החום של הילד ירד קצת.",
+      "כשהחום שלי עולה, אני נח."
+    ],
+    "hi": [
+      "मेरा तापमान ज़्यादा है।",
+      "मैंने सुबह अपना तापमान मापा।",
+      "बच्चे का तापमान थोड़ा कम हो गया।",
+      "जब मेरा तापमान बढ़ता है, तो मैं आराम करता हूँ।"
+    ],
+    "hu": [
+      "Magas a lázam.",
+      "Reggel megmértem a lázam.",
+      "A gyerek láza kicsit csökkent.",
+      "Amikor felmegy a lázam, pihenek."
+    ],
+    "id": [
+      "Suhu tubuh saya tinggi.",
+      "Saya mengukur suhu tubuh saya pagi ini.",
+      "Suhu tubuh anak itu sedikit turun.",
+      "Kalau suhu tubuh saya naik, saya istirahat."
+    ],
+    "it": [
+      "Ho la febbre alta.",
+      "Mi sono misurato la febbre stamattina.",
+      "La temperatura del bambino è scesa un po'.",
+      "Quando mi sale la febbre, mi riposo."
+    ],
+    "ko": [
+      "열이 높아요.",
+      "아침에 체온을 쟀어요.",
+      "아이의 체온이 조금 내려갔어요.",
+      "체온이 올라가면 쉬어요."
+    ],
+    "nb": [
+      "Jeg har høy feber.",
+      "Jeg målte temperaturen min i morges.",
+      "Barnets temperatur har sunket litt.",
+      "Når temperaturen min stiger, hviler jeg."
+    ],
+    "nl": [
+      "Ik heb hoge koorts.",
+      "Ik heb vanmorgen mijn temperatuur gemeten.",
+      "De temperatuur van het kind is een beetje gedaald.",
+      "Als mijn temperatuur stijgt, rust ik uit."
+    ],
+    "pl": [
+      "Mam wysoką gorączkę.",
+      "Rano zmierzyłem sobie temperaturę.",
+      "Temperatura dziecka trochę spadła.",
+      "Kiedy mam wyższą temperaturę, odpoczywam."
+    ],
+    "pt": [
+      "Estou com febre alta.",
+      "Me medi a temperatura de manhã.",
+      "A temperatura da criança baixou um pouco.",
+      "Quando minha temperatura sobe, eu descanso."
+    ],
+    "ro": [
+      "Am febră mare.",
+      "Mi-am măsurat temperatura dimineață.",
+      "Temperatura copilului a scăzut puțin.",
+      "Când temperatura îmi crește, mă odihnesc."
+    ],
+    "ru": [
+      "У меня высокая температура.",
+      "Утром я измерил температуру.",
+      "Температура у ребёнка немного снизилась.",
+      "Когда у меня повышается температура, я отдыхаю."
+    ],
+    "sv": [
+      "Jag har hög feber.",
+      "Jag mätte min temperatur i morse.",
+      "Barnets temperatur sjönk lite.",
+      "När min temperatur stiger vilar jag."
+    ],
+    "tr": [
+      "Ateşim yüksek.",
+      "Sabah ateşimi ölçtüm.",
+      "Çocuğun ateşi biraz düştü.",
+      "Ateşim çıkınca dinlenirim."
+    ],
+    "uk": [
+      "У мене висока температура.",
+      "Вранці я поміряв температуру.",
+      "У дитини температура трохи знизилася.",
+      "Коли в мене підвищується температура, я відпочиваю."
+    ],
+    "vi": [
+      "Tôi bị sốt cao.",
+      "Sáng nay tôi đã đo nhiệt độ.",
+      "Nhiệt độ của đứa trẻ đã giảm một chút.",
+      "Khi nhiệt độ của tôi tăng lên, tôi nghỉ ngơi."
+    ],
+    "yue": [
+      "我發燒。",
+      "我朝早量咗體溫。",
+      "個細路嘅體溫低咗少少。",
+      "當我發燒，我就休息。"
+    ],
+    "zh-Hans": [
+      "我发高烧。",
+      "我早上量了体温。",
+      "孩子的体温稍微降了一点。",
+      "当我体温升高时，我会休息。"
     ]
   }
 }

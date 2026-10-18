@@ -44,12 +44,12 @@
   },
   "sentences": [
     {
-      "target": "Ich muss wohl einen Fehler vermuten.",
+      "target": "Ich vermute, dass wohl ein Fehler vorliegt.",
       "reading": "/ɪç mʊs voːl ˈaɪ̯nən ˈfeːlɐ fɛɐ̯ˈmuːtən/",
       "translations": {
-        "de": "Ich muss wohl einen Fehler vermuten.",
+        "de": "Ich vermute, dass wohl ein Fehler vorliegt.",
         "ipa": "/ɪç mʊs voːl ˈaɪ̯nən ˈfeːlɐ fɛɐ̯ˈmuːtən/",
-        "en": "I probably have to suspect a mistake.",
+        "en": "I suspect there must be an error.",
         "es": "Supongo que debe de haber un error.",
         "fr": "Je suppose qu'il doit y avoir une erreur.",
         "it": "Immagino che ci debba essere un errore.",
@@ -80,58 +80,103 @@
       "tokens": [
         {
           "surface": "Ich",
-          "surface_en": "I",
-          "furigana": "[ɪç]",
-          "pos": "PRON",
           "lemma": "ich",
-          "explanation": "Personal pronoun, 1st person singular nominative; clausal subject.",
-          "difficulty": 2
+          "pos": "PRON",
+          "upos": "PRON",
+          "xpos": "PPER",
+          "feats": {},
+          "start": 0,
+          "end": 3,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "muss",
-          "surface_en": "must",
-          "furigana": "[mʊs]",
-          "pos": "AUX",
-          "lemma": "müssen",
-          "explanation": "Finite modal auxiliary, present tense, 1st person singular; selects bare infinitive 'vermuten'.",
-          "difficulty": 7
+          "surface": "vermute",
+          "lemma": "vermuten",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VVFIN",
+          "feats": {},
+          "start": 4,
+          "end": 11,
+          "analyzer": "spacy_de_core_news_lg",
+          "is_main_word": true
+        },
+        {
+          "surface": ",",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$,",
+          "feats": {},
+          "start": 11,
+          "end": 12,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "dass",
+          "lemma": "dass",
+          "pos": "SCONJ",
+          "upos": "SCONJ",
+          "xpos": "KOUS",
+          "feats": {},
+          "start": 13,
+          "end": 17,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "wohl",
-          "surface_en": "probably",
-          "furigana": "[voːl]",
-          "pos": "PART",
           "lemma": "wohl",
-          "explanation": "Modal particle indicating assumption/probability; scope over the clause.",
-          "difficulty": 7
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "ADV",
+          "feats": {},
+          "start": 18,
+          "end": 22,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "einen",
-          "surface_en": "an",
-          "furigana": "[ˈaɪ̯nən]",
-          "pos": "DET",
+          "surface": "ein",
           "lemma": "ein",
-          "explanation": "Indefinite article, accusative masculine singular; determiner of 'Fehler'.",
-          "difficulty": 2
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "ART",
+          "feats": {},
+          "start": 23,
+          "end": 26,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "Fehler",
-          "surface_en": "mistake",
-          "furigana": "[ˈfeːlɐ]",
-          "pos": "NOUN",
           "lemma": "Fehler",
-          "explanation": "Common noun, masculine singular accusative; direct object of 'vermuten'.",
-          "difficulty": 7
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 27,
+          "end": 33,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "vermuten.",
-          "surface_en": "suspect",
-          "furigana": "[fɛɐ̯ˈmuːtən]",
+          "surface": "vorliegt",
+          "lemma": "vorliegen",
           "pos": "VERB",
-          "lemma": "vermuten",
-          "explanation": "Lexical verb in bare infinitive governed by the modal 'muss'; expresses the action.",
-          "difficulty": 10,
-          "is_main_word": true
+          "upos": "VERB",
+          "xpos": "VVFIN",
+          "feats": {},
+          "start": 34,
+          "end": 42,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 42,
+          "end": 43,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 5.83
@@ -155,13 +200,13 @@
         "tr": "Birçok kişi burada bir hata olduğunu düşünüyor.",
         "vi": "Nhiều người cho rằng ở đây có lỗi.",
         "ar": "الكثيرون يعتقدون أن هناك خطأ هنا.",
-        "nl": "Veel mensen denken dass hier een fout is.",
+        "nl": "Veel mensen denken dat hier een fout is.",
         "uk": "Багато хто вважає, що тут є помилка.",
         "hu": "Sokan úgy gondolják, hogy itt hiba van.",
         "hi": "कई लोग मानते हैं कि यहाँ कोई गलती है.",
         "pl": "Wielu uważa, że tu jest błąd.",
         "el": "Πολλοί πιστεύουν ότι εδώ υπάρχει λάθος.",
-        "nb": "Mange mener at det er en feil här.",
+        "nb": "Mange mener at det er en feil her.",
         "id": "Banyak orang mengira ada kesalahan di sini.",
         "sv": "Många tror att det är ett fel här.",
         "ro": "Mulți cred că aici e o greșeală.",
@@ -226,7 +271,7 @@
       "translations": {
         "de": "Die Leute vermuten alle das Falsche.",
         "ipa": "/diː ˈlɔʏ̯tə fɛɐ̯ˈmuːtən ˈalə das ˈfalʃə/",
-        "en": "People are all guessing the wrong thing.",
+        "en": "Everyone is making the wrong assumption.",
         "es": "Todos están pensando en lo que no es.",
         "fr": "Tout le monde se trompe.",
         "it": "Tutti si stanno sbagliando.",
@@ -409,8 +454,336 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-15T04:43:40Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:De b1/b131f908a1615672",
+      "revision_id": 84846,
+      "parent_revision_id": 18282,
+      "revision_timestamp_utc": "2026-10-15T04:43:40Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Make the first German sentence idiomatic while retaining its tentative meaning; improve the English translation and fix German-influenced typos in Dutch and Norwegian.",
+      "pulled_utc": "2026-10-17T07:06:42Z",
+      "applied_utc": "2026-10-17T07:06:54Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-b30f69a1bed58c75",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_b1:b131f908a1615672",
+        "pack_code": "de_b1",
+        "entry_id": "vermuten",
+        "language": "de",
+        "sentence_index": 1,
+        "old_sentence": "Ich muss wohl einen Fehler vermuten.",
+        "old_translations": {
+          "de": "Ich muss wohl einen Fehler vermuten.",
+          "ipa": "/ɪç mʊs voːl ˈaɪ̯nən ˈfeːlɐ fɛɐ̯ˈmuːtən/",
+          "en": "I probably have to suspect a mistake.",
+          "es": "Supongo que debe de haber un error.",
+          "fr": "Je suppose qu'il doit y avoir une erreur.",
+          "it": "Immagino che ci debba essere un errore.",
+          "ko": "아마 오류가 있는 것 같아요.",
+          "zh-Hans": "我想应该是出了个错误。",
+          "yue": "我估應該出咗錯。",
+          "ru": "Похоже, произошла ошибка.",
+          "pt": "Acho que deve haver um erro.",
+          "he": "כנראה שיש פה טעות.",
+          "tr": "Galiba bir hata var.",
+          "vi": "Chắc là có lỗi nào đó.",
+          "ar": "يبدو أن هناك خطأ.",
+          "nl": "Waarschijnlijk is er een fout.",
+          "uk": "Схоже, сталася помилка.",
+          "hu": "Valószínűleg hiba történt.",
+          "hi": "शायद कोई गलती हो गई है.",
+          "pl": "Chyba jest jakiś błąd.",
+          "el": "Μάλλον υπάρχει κάποιο λάθος.",
+          "nb": "Det er nok en feil.",
+          "id": "Sepertinya ada kesalahan.",
+          "sv": "Det är nog ett fel.",
+          "ro": "Probabil e o greșeală.",
+          "cs": "Asi došlo k chybě.",
+          "da": "Der er nok sket en fejl.",
+          "fi": "Taitaa olla jokin virhe.",
+          "ja": "たぶん何かの間違いだと思う。"
+        },
+        "proposed_sentence": "Ich vermute, dass wohl ein Fehler vorliegt.",
+        "proposed_translations": {
+          "de": "Ich vermute, dass wohl ein Fehler vorliegt.",
+          "ipa": "/ɪç mʊs voːl ˈaɪ̯nən ˈfeːlɐ fɛɐ̯ˈmuːtən/",
+          "en": "I suspect there must be an error.",
+          "es": "Supongo que debe de haber un error.",
+          "fr": "Je suppose qu'il doit y avoir une erreur.",
+          "it": "Immagino che ci debba essere un errore.",
+          "ko": "아마 오류가 있는 것 같아요.",
+          "zh-Hans": "我想应该是出了个错误。",
+          "yue": "我估應該出咗錯。",
+          "ru": "Похоже, произошла ошибка.",
+          "pt": "Acho que deve haver um erro.",
+          "he": "כנראה שיש פה טעות.",
+          "tr": "Galiba bir hata var.",
+          "vi": "Chắc là có lỗi nào đó.",
+          "ar": "يبدو أن هناك خطأ.",
+          "nl": "Waarschijnlijk is er een fout.",
+          "uk": "Схоже, сталася помилка.",
+          "hu": "Valószínűleg hiba történt.",
+          "hi": "शायद कोई गलती हो गई है.",
+          "pl": "Chyba jest jakiś błąd.",
+          "el": "Μάλλον υπάρχει κάποιο λάθος.",
+          "nb": "Det er nok en feil.",
+          "id": "Sepertinya ada kesalahan.",
+          "sv": "Det är nog ett fel.",
+          "ro": "Probabil e o greșeală.",
+          "cs": "Asi došlo k chybě.",
+          "da": "Der er nok sket en fejl.",
+          "fi": "Taitaa olla jokin virhe.",
+          "ja": "たぶん何かの間違いだと思う。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Ich vermute, dass wohl ein Fehler vorliegt.",
+        "old_japanese": "Ich muss wohl einen Fehler vermuten.",
+        "old_english": "I probably have to suspect a mistake.",
+        "proposed_japanese": "Ich vermute, dass wohl ein Fehler vorliegt.",
+        "proposed_english": "I suspect there must be an error.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Ich vermute, dass wohl ein Fehler vorliegt.",
+          "tokens": [
+            {
+              "surface": "Ich",
+              "lemma": "ich",
+              "pos": "PRON",
+              "upos": "PRON",
+              "xpos": "PPER",
+              "feats": {},
+              "start": 0,
+              "end": 3,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "vermute",
+              "lemma": "vermuten",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVFIN",
+              "feats": {},
+              "start": 4,
+              "end": 11,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ",",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$,",
+              "feats": {},
+              "start": 11,
+              "end": 12,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "dass",
+              "lemma": "dass",
+              "pos": "SCONJ",
+              "upos": "SCONJ",
+              "xpos": "KOUS",
+              "feats": {},
+              "start": 13,
+              "end": 17,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "wohl",
+              "lemma": "wohl",
+              "pos": "ADV",
+              "upos": "ADV",
+              "xpos": "ADV",
+              "feats": {},
+              "start": 18,
+              "end": 22,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "ein",
+              "lemma": "ein",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "ART",
+              "feats": {},
+              "start": 23,
+              "end": 26,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Fehler",
+              "lemma": "Fehler",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 27,
+              "end": 33,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "vorliegt",
+              "lemma": "vorliegen",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVFIN",
+              "feats": {},
+              "start": 34,
+              "end": 42,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 42,
+              "end": 43,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Ich",
+            "lemma": "ich",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "vermute",
+            "lemma": "vermuten",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 4,
+            "end": 11,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ",",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$,",
+            "feats": {},
+            "start": 11,
+            "end": 12,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "dass",
+            "lemma": "dass",
+            "pos": "SCONJ",
+            "upos": "SCONJ",
+            "xpos": "KOUS",
+            "feats": {},
+            "start": 13,
+            "end": 17,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "wohl",
+            "lemma": "wohl",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 18,
+            "end": 22,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "ein",
+            "lemma": "ein",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 23,
+            "end": 26,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Fehler",
+            "lemma": "Fehler",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 27,
+            "end": 33,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "vorliegt",
+            "lemma": "vorliegen",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 34,
+            "end": 42,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 42,
+            "end": 43,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:06:42Z",
+        "updated_utc": "2026-10-17T07:07:06Z",
+        "applied_utc": "2026-10-17T07:07:06Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:07:06Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -422,34 +795,6 @@
     "word": "vermuten",
     "word_reading": "",
     "word_label": "Verb",
-    "word_en": "suspect; assume",
-    "word_es": "suponer; sospechar",
-    "word_fr": "supposer; soupçonner",
-    "word_it": "supporre; sospettare",
-    "word_ko": "추측하다; 의심하다",
-    "word_zh-Hans": "猜想; 怀疑",
-    "word_yue": "估計; 懷疑",
-    "word_ru": "предполагать; подозревать",
-    "word_pt": "supor; suspeitar",
-    "word_he": "להניח; לחשוד",
-    "word_tr": "varsaymak; şüphelenmek",
-    "word_vi": "cho rằng; nghi ngờ",
-    "word_ar": "يَظُنّ؛ يَشُكّ",
-    "word_nl": "vermoeden; aannemen",
-    "word_uk": "припускати; підозрювати",
-    "word_hu": "feltételezni; gyanítani",
-    "word_hi": "मान लेना; संदेह करना",
-    "word_pl": "przypuszczać; podejrzewać",
-    "word_el": "υποθέτω; υποψιάζομαι",
-    "word_nb": "anta; mistenke",
-    "word_id": "mengira; mencurigai",
-    "word_sv": "anta; misstänka",
-    "word_ro": "a presupune; a bănui",
-    "word_cs": "předpokládat; podezírat",
-    "word_da": "anta; mistænke",
-    "word_fi": "olettaa; epäillä",
-    "word_ja": "推測する; 疑う",
-    "word_de": "vermuten",
     "comic_difficulty": 5.84,
     "jp": [
       "Ich muss wohl einen Fehler vermuten.",
@@ -463,82 +808,109 @@
       "/diː ˈlɔʏ̯tə fɛɐ̯ˈmuːtən ˈalə das ˈfalʃə/",
       "/man kan das nuːɐ̯ fɛɐ̯ˈmuːtən/"
     ],
-    "de": [
-      "Ich muss wohl einen Fehler vermuten.",
-      "Viele vermuten hier einen Fehler.",
-      "Die Leute vermuten alle das Falsche.",
-      "Man kann das nur vermuten."
-    ],
-    "ipa": [
-      "/ɪç mʊs voːl ˈaɪ̯nən ˈfeːlɐ fɛɐ̯ˈmuːtən/",
-      "/ˈfiːlə fɛɐ̯ˈmuːtən hiːɐ̯ ˈaɪ̯nən ˈfeːlɐ/",
-      "/diː ˈlɔʏ̯tə fɛɐ̯ˈmuːtən ˈalə das ˈfalʃə/",
-      "/man kan das nuːɐ̯ fɛɐ̯ˈmuːtən/"
-    ],
-    "en": [
-      "I probably have to suspect a mistake.",
-      "Many people suspect a mistake here.",
-      "People are all guessing the wrong thing.",
-      "You can only assume."
-    ],
     "pos_analysis": [
       {
-        "sentence": "Ich muss wohl einen Fehler vermuten.",
+        "sentence": "Ich vermute, dass wohl ein Fehler vorliegt.",
         "tokens": [
           {
             "surface": "Ich",
-            "surface_en": "I",
-            "furigana": "[ɪç]",
-            "pos": "PRON",
             "lemma": "ich",
-            "explanation": "Personal pronoun, 1st person singular nominative; clausal subject.",
-            "difficulty": 2
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "muss",
-            "surface_en": "must",
-            "furigana": "[mʊs]",
-            "pos": "AUX",
-            "lemma": "müssen",
-            "explanation": "Finite modal auxiliary, present tense, 1st person singular; selects bare infinitive 'vermuten'.",
-            "difficulty": 7
+            "surface": "vermute",
+            "lemma": "vermuten",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 4,
+            "end": 11,
+            "analyzer": "spacy_de_core_news_lg",
+            "is_main_word": true
+          },
+          {
+            "surface": ",",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$,",
+            "feats": {},
+            "start": 11,
+            "end": 12,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "dass",
+            "lemma": "dass",
+            "pos": "SCONJ",
+            "upos": "SCONJ",
+            "xpos": "KOUS",
+            "feats": {},
+            "start": 13,
+            "end": 17,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "wohl",
-            "surface_en": "probably",
-            "furigana": "[voːl]",
-            "pos": "PART",
             "lemma": "wohl",
-            "explanation": "Modal particle indicating assumption/probability; scope over the clause.",
-            "difficulty": 7
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 18,
+            "end": 22,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "einen",
-            "surface_en": "an",
-            "furigana": "[ˈaɪ̯nən]",
-            "pos": "DET",
+            "surface": "ein",
             "lemma": "ein",
-            "explanation": "Indefinite article, accusative masculine singular; determiner of 'Fehler'.",
-            "difficulty": 2
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 23,
+            "end": 26,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "Fehler",
-            "surface_en": "mistake",
-            "furigana": "[ˈfeːlɐ]",
-            "pos": "NOUN",
             "lemma": "Fehler",
-            "explanation": "Common noun, masculine singular accusative; direct object of 'vermuten'.",
-            "difficulty": 7
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 27,
+            "end": 33,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "vermuten.",
-            "surface_en": "suspect",
-            "furigana": "[fɛɐ̯ˈmuːtən]",
+            "surface": "vorliegt",
+            "lemma": "vorliegen",
             "pos": "VERB",
-            "lemma": "vermuten",
-            "explanation": "Lexical verb in bare infinitive governed by the modal 'muss'; expresses the action.",
-            "difficulty": 10,
-            "is_main_word": true
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 34,
+            "end": 42,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 42,
+            "end": 43,
+            "analyzer": "spacy_de_core_news_lg"
           }
         ],
         "difficulty_aggregated": 5.83
@@ -709,137 +1081,41 @@
         "difficulty_aggregated": 4.6
       }
     ],
-    "es": [
-      "Supongo que debe de haber un error.",
-      "Mucha gente cree que aquí hay un error.",
-      "Todos están pensando en lo que no es.",
-      "Solo podemos suponer."
-    ],
-    "fr": [
-      "Je suppose qu'il doit y avoir une erreur.",
-      "Beaucoup de gens pensent qu'il y a une erreur ici.",
-      "Tout le monde se trompe.",
-      "On ne peut que supposer."
-    ],
-    "it": [
-      "Immagino che ci debba essere un errore.",
-      "Molti pensano che qui ci sia un errore.",
-      "Tutti si stanno sbagliando.",
-      "Si può solo supporre."
-    ],
-    "ko": [
-      "아마 오류가 있는 것 같아요.",
-      "많은 사람들이 여기 오류가 있다고 생각해요.",
-      "사람들이 다 엉뚱한 추측을 하고 있어요.",
-      "그건 추측할 수밖에 없어요."
-    ],
-    "zh-Hans": [
-      "我想应该是出了个错误。",
-      "很多人觉得这里有个错误。",
-      "大家都猜错了。",
-      "这只能靠猜测。"
-    ],
-    "yue": [
-      "我估應該出咗錯。",
-      "好多人覺得呢度有錯。",
-      "大家都估錯咗。",
-      "呢樣嘢只可以估。"
-    ],
-    "ru": [
-      "Похоже, произошла ошибка.",
-      "Многие считают, что здесь ошибка.",
-      "Все предполагают не то.",
-      "Это можно только предполагать."
-    ],
-    "pt": [
-      "Acho que deve haver um erro.",
-      "Muita gente acha que há um erro aqui.",
-      "Todo mundo está tirando a conclusão errada.",
-      "Só dá para supor."
-    ],
-    "he": [
-      "כנראה שיש פה טעות.",
-      "הרבה אנשים חושבים שיש כאן טעות.",
-      "כולם מסיקים את המסקנה הלא נכונה.",
-      "אפשר רק להניח."
-    ],
-    "tr": [
-      "Galiba bir hata var.",
-      "Birçok kişi burada bir hata olduğunu düşünüyor.",
-      "Herkes yanlış sonuca varıyor.",
-      "Bunu ancak tahmin edebiliriz."
-    ],
-    "vi": [
-      "Chắc là có lỗi nào đó.",
-      "Nhiều người cho rằng ở đây có lỗi.",
-      "Mọi người đều đoán sai.",
-      "Chỉ có thể đoán thôi."
-    ],
+    "word_POS": "Verb",
+    "entry_id": "vermuten",
+    "word_en": "suspect; assume",
+    "word_es": "suponer; sospechar",
+    "word_fr": "supposer; soupçonner",
+    "word_it": "supporre; sospettare",
+    "word_ko": "추측하다; 의심하다",
+    "word_zh-Hans": "猜想; 怀疑",
+    "word_yue": "估計; 懷疑",
+    "word_ru": "предполагать; подозревать",
+    "word_pt": "supor; suspeitar",
+    "word_he": "להניח; לחשוד",
+    "word_tr": "varsaymak; şüphelenmek",
+    "word_vi": "cho rằng; nghi ngờ",
+    "word_ar": "يَظُنّ؛ يَشُكّ",
+    "word_nl": "vermoeden; aannemen",
+    "word_uk": "припускати; підозрювати",
+    "word_hu": "feltételezni; gyanítani",
+    "word_hi": "मान लेना; संदेह करना",
+    "word_pl": "przypuszczać; podejrzewać",
+    "word_el": "υποθέτω; υποψιάζομαι",
+    "word_nb": "anta; mistenke",
+    "word_id": "mengira; mencurigai",
+    "word_sv": "anta; misstänka",
+    "word_ro": "a presupune; a bănui",
+    "word_cs": "předpokládat; podezírat",
+    "word_da": "anta; mistænke",
+    "word_fi": "olettaa; epäillä",
+    "word_ja": "推測する; 疑う",
+    "word_de": "vermuten",
     "ar": [
       "يبدو أن هناك خطأ.",
       "الكثيرون يعتقدون أن هناك خطأ هنا.",
       "الجميع يخمّنون خطأ.",
       "لا يمكن إلا أن نفترض."
-    ],
-    "nl": [
-      "Waarschijnlijk is er een fout.",
-      "Veel mensen denken dass hier een fout is.",
-      "Iedereen gaat van het verkeerde uit.",
-      "Dat kun je alleen maar vermoeden."
-    ],
-    "uk": [
-      "Схоже, сталася помилка.",
-      "Багато хто вважає, що тут є помилка.",
-      "Усі роблять хибні припущення.",
-      "Це можна лише припускати."
-    ],
-    "hu": [
-      "Valószínűleg hiba történt.",
-      "Sokan úgy gondolják, hogy itt hiba van.",
-      "Mindenki rosszul tippel.",
-      "Ezt csak feltételezni lehet."
-    ],
-    "hi": [
-      "शायद कोई गलती हो गई है.",
-      "कई लोग मानते हैं कि यहाँ कोई गलती है.",
-      "सब लोग गलत अंदाज़ा लगा रहे हैं.",
-      "इसके बारे में हम बस अनुमान ही लगा सकते हैं."
-    ],
-    "pl": [
-      "Chyba jest jakiś błąd.",
-      "Wielu uważa, że tu jest błąd.",
-      "Wszyscy zakładają nie to, co trzeba.",
-      "Można to tylko przypuszczać."
-    ],
-    "el": [
-      "Μάλλον υπάρχει κάποιο λάθος.",
-      "Πολλοί πιστεύουν ότι εδώ υπάρχει λάθος.",
-      "Όλοι βγάζουν λάθος συμπεράσματα.",
-      "Μπορούμε μόνο να το υποθέσουμε."
-    ],
-    "nb": [
-      "Det er nok en feil.",
-      "Mange mener at det er en feil här.",
-      "Alle antar feil.",
-      "Det kan vi bare anta."
-    ],
-    "id": [
-      "Sepertinya ada kesalahan.",
-      "Banyak orang mengira ada kesalahan di sini.",
-      "Semua orang menebak yang salah.",
-      "Ini cuma bisa kita duga."
-    ],
-    "sv": [
-      "Det är nog ett fel.",
-      "Många tror att det är ett fel här.",
-      "Alla gissar fel.",
-      "Det går bara att anta."
-    ],
-    "ro": [
-      "Probabil e o greșeală.",
-      "Mulți cred că aici e o greșeală.",
-      "Toată lumea trage concluzia greșită.",
-      "Nu putem decât să presupunem."
     ],
     "cs": [
       "Asi došlo k chybě.",
@@ -853,11 +1129,77 @@
       "Alle gætter forkert.",
       "Det kan man kun formode."
     ],
+    "de": [
+      "Ich muss wohl einen Fehler vermuten.",
+      "Viele vermuten hier einen Fehler.",
+      "Die Leute vermuten alle das Falsche.",
+      "Man kann das nur vermuten."
+    ],
+    "el": [
+      "Μάλλον υπάρχει κάποιο λάθος.",
+      "Πολλοί πιστεύουν ότι εδώ υπάρχει λάθος.",
+      "Όλοι βγάζουν λάθος συμπεράσματα.",
+      "Μπορούμε μόνο να το υποθέσουμε."
+    ],
+    "en": [
+      "I probably have to suspect a mistake.",
+      "Many people suspect a mistake here.",
+      "Everyone is making the wrong assumption.",
+      "You can only assume."
+    ],
+    "es": [
+      "Supongo que debe de haber un error.",
+      "Mucha gente cree que aquí hay un error.",
+      "Todos están pensando en lo que no es.",
+      "Solo podemos suponer."
+    ],
     "fi": [
       "Taitaa olla jokin virhe.",
       "Moni uskoo, että tässä on virhe.",
       "Kaikki olettavat väärin.",
       "Sitä voi vain olettaa."
+    ],
+    "fr": [
+      "Je suppose qu'il doit y avoir une erreur.",
+      "Beaucoup de gens pensent qu'il y a une erreur ici.",
+      "Tout le monde se trompe.",
+      "On ne peut que supposer."
+    ],
+    "he": [
+      "כנראה שיש פה טעות.",
+      "הרבה אנשים חושבים שיש כאן טעות.",
+      "כולם מסיקים את המסקנה הלא נכונה.",
+      "אפשר רק להניח."
+    ],
+    "hi": [
+      "शायद कोई गलती हो गई है.",
+      "कई लोग मानते हैं कि यहाँ कोई गलती है.",
+      "सब लोग गलत अंदाज़ा लगा रहे हैं.",
+      "इसके बारे में हम बस अनुमान ही लगा सकते हैं."
+    ],
+    "hu": [
+      "Valószínűleg hiba történt.",
+      "Sokan úgy gondolják, hogy itt hiba van.",
+      "Mindenki rosszul tippel.",
+      "Ezt csak feltételezni lehet."
+    ],
+    "id": [
+      "Sepertinya ada kesalahan.",
+      "Banyak orang mengira ada kesalahan di sini.",
+      "Semua orang menebak yang salah.",
+      "Ini cuma bisa kita duga."
+    ],
+    "ipa": [
+      "/ɪç mʊs voːl ˈaɪ̯nən ˈfeːlɐ fɛɐ̯ˈmuːtən/",
+      "/ˈfiːlə fɛɐ̯ˈmuːtən hiːɐ̯ ˈaɪ̯nən ˈfeːlɐ/",
+      "/diː ˈlɔʏ̯tə fɛɐ̯ˈmuːtən ˈalə das ˈfalʃə/",
+      "/man kan das nuːɐ̯ fɛɐ̯ˈmuːtən/"
+    ],
+    "it": [
+      "Immagino che ci debba essere un errore.",
+      "Molti pensano che qui ci sia un errore.",
+      "Tutti si stanno sbagliando.",
+      "Si può solo supporre."
     ],
     "ja": [
       "たぶん何かの間違いだと思う。",
@@ -865,6 +1207,83 @@
       "みんな勘違いしている。",
       "それは推測するしかない。"
     ],
-    "word_POS": "Verb"
+    "ko": [
+      "아마 오류가 있는 것 같아요.",
+      "많은 사람들이 여기 오류가 있다고 생각해요.",
+      "사람들이 다 엉뚱한 추측을 하고 있어요.",
+      "그건 추측할 수밖에 없어요."
+    ],
+    "nb": [
+      "Det er nok en feil.",
+      "Mange mener at det er en feil her.",
+      "Alle antar feil.",
+      "Det kan vi bare anta."
+    ],
+    "nl": [
+      "Waarschijnlijk is er een fout.",
+      "Veel mensen denken dat hier een fout is.",
+      "Iedereen gaat van het verkeerde uit.",
+      "Dat kun je alleen maar vermoeden."
+    ],
+    "pl": [
+      "Chyba jest jakiś błąd.",
+      "Wielu uważa, że tu jest błąd.",
+      "Wszyscy zakładają nie to, co trzeba.",
+      "Można to tylko przypuszczać."
+    ],
+    "pt": [
+      "Acho que deve haver um erro.",
+      "Muita gente acha que há um erro aqui.",
+      "Todo mundo está tirando a conclusão errada.",
+      "Só dá para supor."
+    ],
+    "ro": [
+      "Probabil e o greșeală.",
+      "Mulți cred că aici e o greșeală.",
+      "Toată lumea trage concluzia greșită.",
+      "Nu putem decât să presupunem."
+    ],
+    "ru": [
+      "Похоже, произошла ошибка.",
+      "Многие считают, что здесь ошибка.",
+      "Все предполагают не то.",
+      "Это можно только предполагать."
+    ],
+    "sv": [
+      "Det är nog ett fel.",
+      "Många tror att det är ett fel här.",
+      "Alla gissar fel.",
+      "Det går bara att anta."
+    ],
+    "tr": [
+      "Galiba bir hata var.",
+      "Birçok kişi burada bir hata olduğunu düşünüyor.",
+      "Herkes yanlış sonuca varıyor.",
+      "Bunu ancak tahmin edebiliriz."
+    ],
+    "uk": [
+      "Схоже, сталася помилка.",
+      "Багато хто вважає, що тут є помилка.",
+      "Усі роблять хибні припущення.",
+      "Це можна лише припускати."
+    ],
+    "vi": [
+      "Chắc là có lỗi nào đó.",
+      "Nhiều người cho rằng ở đây có lỗi.",
+      "Mọi người đều đoán sai.",
+      "Chỉ có thể đoán thôi."
+    ],
+    "yue": [
+      "我估應該出咗錯。",
+      "好多人覺得呢度有錯。",
+      "大家都估錯咗。",
+      "呢樣嘢只可以估。"
+    ],
+    "zh-Hans": [
+      "我想应该是出了个错误。",
+      "很多人觉得这里有个错误。",
+      "大家都猜错了。",
+      "这只能靠猜测。"
+    ]
   }
 }

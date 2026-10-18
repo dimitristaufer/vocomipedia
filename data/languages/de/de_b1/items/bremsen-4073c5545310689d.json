@@ -133,7 +133,7 @@
         "yue": "佢喺斑馬線前唔記得踩煞掣。",
         "ru": "Он забывает затормозить у пешеходного перехода.",
         "pt": "Ele esquece de frear na faixa de pedestre.",
-        "he": "هوא شוכח לבלום במעבר חציה.",
+        "he": "הוא שוכח לבלום במעבר חציה.",
         "tr": "Yaya geçidinde fren yapmayı unutuyor.",
         "vi": "Anh ấy quên phanh ở vạch dành cho người đi bộ.",
         "ar": "ينسى أن يضغط على الفرامل عند ممر المشاة.",
@@ -212,10 +212,10 @@
       "difficulty": 6
     },
     {
-      "target": "Wir sollten jetzt bremsen vor der Kurve.",
+      "target": "Wir sollten jetzt vor der Kurve bremsen.",
       "reading": "/viːɐ̯ ˈzɔltn̩ jɛtst ˈbʁɛmsn̩ foːɐ̯ deːɐ̯ ˈkʊʁvə/",
       "translations": {
-        "de": "Wir sollten jetzt bremsen vor der Kurve.",
+        "de": "Wir sollten jetzt vor der Kurve bremsen.",
         "ipa": "/viːɐ̯ ˈzɔltn̩ jɛtst ˈbʁɛmsn̩ foːɐ̯ deːɐ̯ ˈkʊʁvə/",
         "en": "We should brake now before the bend.",
         "es": "Deberíamos frenar ahora antes de la curva.",
@@ -248,76 +248,101 @@
       "tokens": [
         {
           "surface": "Wir",
-          "surface_en": "we",
-          "furigana": "[viːɐ̯]",
-          "pos": "PRON",
           "lemma": "wir",
-          "explanation": "Personal pronoun, 1st person plural nominative; subject.",
-          "difficulty": 2
+          "pos": "PRON",
+          "upos": "PRON",
+          "xpos": "PPER",
+          "feats": {},
+          "start": 0,
+          "end": 3,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "sollten",
-          "surface_en": "should",
-          "furigana": "[ˈzɔltən]",
-          "pos": "AUX",
           "lemma": "sollen",
-          "explanation": "Finite modal auxiliary, preterite/Konjunktiv II (1pl); expresses recommendation/obligation and licenses a bare infinitive.",
-          "difficulty": 10
+          "pos": "AUX",
+          "upos": "AUX",
+          "xpos": "VMFIN",
+          "feats": {},
+          "start": 4,
+          "end": 11,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "jetzt",
-          "surface_en": "now",
-          "furigana": "[jɛt͡st]",
-          "pos": "ADV",
           "lemma": "jetzt",
-          "explanation": "Temporal adverb modifying the predicate.",
-          "difficulty": 7
-        },
-        {
-          "surface": "bremsen",
-          "surface_en": "brake",
-          "furigana": "[ˈbʁɛmzən]",
-          "pos": "VERB",
-          "lemma": "bremsen",
-          "explanation": "Bare infinitive main verb; complement of the modal 'sollten'.",
-          "difficulty": 10,
-          "is_main_word": true
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "ADV",
+          "feats": {},
+          "start": 12,
+          "end": 17,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "vor",
-          "surface_en": "before",
-          "furigana": "[foːɐ̯]",
-          "pos": "ADP",
           "lemma": "vor",
-          "explanation": "Preposition meaning 'before/in front of'; governs dative.",
-          "difficulty": 2
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "APPR",
+          "feats": {},
+          "start": 18,
+          "end": 21,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "der",
-          "surface_en": "the",
-          "furigana": "[deːɐ̯]",
-          "pos": "DET",
           "lemma": "der",
-          "explanation": "Definite article, dative singular feminine; determiner for 'Kurve'.",
-          "difficulty": 2
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "ART",
+          "feats": {},
+          "start": 22,
+          "end": 25,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "Kurve.",
-          "surface_en": "curve",
-          "furigana": "[ˈkʊʁvə]",
-          "pos": "NOUN",
+          "surface": "Kurve",
           "lemma": "Kurve",
-          "explanation": "Noun; dative singular as the complement of 'vor'.",
-          "difficulty": 7
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 26,
+          "end": 31,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "bremsen",
+          "lemma": "bremsen",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VVINF",
+          "feats": {},
+          "start": 32,
+          "end": 39,
+          "analyzer": "spacy_de_core_news_lg",
+          "is_main_word": true
+        },
+        {
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 39,
+          "end": 40,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 5.71
     },
     {
-      "target": "Wir mussten hart bremsen wegen des Hundes.",
+      "target": "Wir mussten wegen des Hundes hart bremsen.",
       "reading": "/viːɐ̯ ˈmʊstn̩ haʁt ˈbʁɛmsn̩ ˈveːgən dɛs ˈhʊndəs/",
       "translations": {
-        "de": "Wir mussten hart bremsen wegen des Hundes.",
+        "de": "Wir mussten wegen des Hundes hart bremsen.",
         "ipa": "/viːɐ̯ ˈmʊstn̩ haʁt ˈbʁɛmsn̩ ˈveːgən dɛs ˈhʊndəs/",
         "en": "We had to brake hard because of the dog.",
         "es": "Tuvimos que frenar fuerte por el perro.",
@@ -350,67 +375,92 @@
       "tokens": [
         {
           "surface": "Wir",
-          "surface_en": "we",
-          "furigana": "[viːɐ̯]",
-          "pos": "PRON",
           "lemma": "wir",
-          "explanation": "Personal pronoun, 1st person plural nominative; subject.",
-          "difficulty": 2
+          "pos": "PRON",
+          "upos": "PRON",
+          "xpos": "PPER",
+          "feats": {},
+          "start": 0,
+          "end": 3,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "mussten",
-          "surface_en": "had to",
-          "furigana": "[ˈmʊstən]",
+          "lemma": "mussen",
           "pos": "AUX",
-          "lemma": "müssen",
-          "explanation": "Finite modal auxiliary, preterite (1pl); expresses necessity in the past and selects a bare infinitive complement.",
-          "difficulty": 10
-        },
-        {
-          "surface": "hart",
-          "surface_en": "hard",
-          "furigana": "[haʁt]",
-          "pos": "ADV",
-          "lemma": "hart",
-          "explanation": "Adverb of manner modifying the verb 'bremsen'.",
-          "difficulty": 7
-        },
-        {
-          "surface": "bremsen",
-          "surface_en": "brake",
-          "furigana": "[ˈbʁɛmzən]",
-          "pos": "VERB",
-          "lemma": "bremsen",
-          "explanation": "Bare infinitive main verb; complement of the modal 'mussten'.",
-          "difficulty": 10,
-          "is_main_word": true
+          "upos": "AUX",
+          "xpos": "VMFIN",
+          "feats": {},
+          "start": 4,
+          "end": 11,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "wegen",
-          "surface_en": "because of",
-          "furigana": "[ˈveːɡən]",
-          "pos": "ADP",
           "lemma": "wegen",
-          "explanation": "Preposition meaning 'because of'; governs genitive.",
-          "difficulty": 7
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "APPR",
+          "feats": {},
+          "start": 12,
+          "end": 17,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "des",
-          "surface_en": "of the",
-          "furigana": "[dɛs]",
-          "pos": "DET",
           "lemma": "der",
-          "explanation": "Definite article, genitive singular masculine; determiner for 'Hundes'.",
-          "difficulty": 2
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "ART",
+          "feats": {},
+          "start": 18,
+          "end": 21,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "Hundes.",
-          "surface_en": "dog's",
-          "furigana": "[ˈhʊndəs]",
-          "pos": "NOUN",
+          "surface": "Hundes",
           "lemma": "Hund",
-          "explanation": "Noun; genitive singular as the complement of 'wegen'.",
-          "difficulty": 7
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 22,
+          "end": 28,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "hart",
+          "lemma": "hart",
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "ADJD",
+          "feats": {},
+          "start": 29,
+          "end": 33,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "bremsen",
+          "lemma": "bremsen",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VVINF",
+          "feats": {},
+          "start": 34,
+          "end": 41,
+          "analyzer": "spacy_de_core_news_lg",
+          "is_main_word": true
+        },
+        {
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 41,
+          "end": 42,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 6.43
@@ -427,8 +477,603 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-14T22:20:04Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:De b1/4073c5545310689d",
+      "revision_id": 86017,
+      "parent_revision_id": 15536,
+      "revision_timestamp_utc": "2026-10-14T22:20:04Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Suggest content corrections",
+      "pulled_utc": "2026-10-17T07:06:37Z",
+      "applied_utc": "2026-10-17T07:06:52Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-7b690cf5a1004e98",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_b1:4073c5545310689d",
+        "pack_code": "de_b1",
+        "entry_id": "bremsen",
+        "language": "de",
+        "sentence_index": 3,
+        "old_sentence": "Wir sollten jetzt bremsen vor der Kurve.",
+        "old_translations": {
+          "de": "Wir sollten jetzt bremsen vor der Kurve.",
+          "ipa": "/viːɐ̯ ˈzɔltn̩ jɛtst ˈbʁɛmsn̩ foːɐ̯ deːɐ̯ ˈkʊʁvə/",
+          "en": "We should brake now before the bend.",
+          "es": "Deberíamos frenar ahora antes de la curva.",
+          "fr": "On devrait freiner maintenant avant le virage.",
+          "it": "Dovremmo frenare adesso prima della curva.",
+          "ko": "지금 커브 전에 브레이크를 밟는 게 좋겠어.",
+          "zh-Hans": "现在应该在弯道前刹车。",
+          "yue": "我哋而家喺個彎之前應該踩煞掣。",
+          "ru": "Нам стоит сейчас притормозить перед поворотом.",
+          "pt": "Deveríamos frear agora antes da curva.",
+          "he": "כדאי שנבלום עכשיו לפני הסיבוב.",
+          "tr": "Şimdi virajdan önce fren yapmalıyız.",
+          "vi": "Chúng ta nên phanh ngay bây giờ trước khúc cua.",
+          "ar": "ينبغي أن نضغط على الفرامل الآن قبل المنعطف.",
+          "nl": "We zouden nu moeten remmen voor de bocht.",
+          "uk": "Нам слід зараз загальмувати перед поворотом.",
+          "hu": "Most kellene fékeznünk a kanyar előtt.",
+          "hi": "हमें अब मोड़ से पहले ब्रेक लगाना चाहिए.",
+          "pl": "Powinniśmy teraz zahamować przed zakrętem.",
+          "el": "Πρέπει τώρα να φρενάρουμε πριν τη στροφή.",
+          "nb": "Vi bør bremse nå før svingen.",
+          "id": "Kita harus mengerem sekarang sebelum tikungan.",
+          "sv": "Vi borde bromsa nu före kurvan.",
+          "ro": "Ar trebui să frânăm acum înainte de curbă.",
+          "cs": "Teď bychom měli zabrzdit před zatáčkou.",
+          "da": "Vi bør bremse nu før kurven.",
+          "fi": "Meidän pitäisi jarruttaa nyt ennen mutkaa.",
+          "ja": "今、カーブの手前でブレーキを踏んだほうがいい。"
+        },
+        "proposed_sentence": "Wir sollten jetzt vor der Kurve bremsen.",
+        "proposed_translations": {
+          "de": "Wir sollten jetzt vor der Kurve bremsen.",
+          "ipa": "/viːɐ̯ ˈzɔltn̩ jɛtst ˈbʁɛmsn̩ foːɐ̯ deːɐ̯ ˈkʊʁvə/",
+          "en": "We should brake now before the bend.",
+          "es": "Deberíamos frenar ahora antes de la curva.",
+          "fr": "On devrait freiner maintenant avant le virage.",
+          "it": "Dovremmo frenare adesso prima della curva.",
+          "ko": "지금 커브 전에 브레이크를 밟는 게 좋겠어.",
+          "zh-Hans": "现在应该在弯道前刹车。",
+          "yue": "我哋而家喺個彎之前應該踩煞掣。",
+          "ru": "Нам стоит сейчас притормозить перед поворотом.",
+          "pt": "Deveríamos frear agora antes da curva.",
+          "he": "כדאי שנבלום עכשיו לפני הסיבוב.",
+          "tr": "Şimdi virajdan önce fren yapmalıyız.",
+          "vi": "Chúng ta nên phanh ngay bây giờ trước khúc cua.",
+          "ar": "ينبغي أن نضغط على الفرامل الآن قبل المنعطف.",
+          "nl": "We zouden nu moeten remmen voor de bocht.",
+          "uk": "Нам слід зараз загальмувати перед поворотом.",
+          "hu": "Most kellene fékeznünk a kanyar előtt.",
+          "hi": "हमें अब मोड़ से पहले ब्रेक लगाना चाहिए.",
+          "pl": "Powinniśmy teraz zahamować przed zakrętem.",
+          "el": "Πρέπει τώρα να φρενάρουμε πριν τη στροφή.",
+          "nb": "Vi bør bremse nå før svingen.",
+          "id": "Kita harus mengerem sekarang sebelum tikungan.",
+          "sv": "Vi borde bromsa nu före kurvan.",
+          "ro": "Ar trebui să frânăm acum înainte de curbă.",
+          "cs": "Teď bychom měli zabrzdit před zatáčkou.",
+          "da": "Vi bør bremse nu før kurven.",
+          "fi": "Meidän pitäisi jarruttaa nyt ennen mutkaa.",
+          "ja": "今、カーブの手前でブレーキを踏んだほうがいい。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Wir sollten jetzt vor der Kurve bremsen.",
+        "old_japanese": "Wir sollten jetzt bremsen vor der Kurve.",
+        "old_english": "We should brake now before the bend.",
+        "proposed_japanese": "Wir sollten jetzt vor der Kurve bremsen.",
+        "proposed_english": "We should brake now before the bend.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Wir sollten jetzt vor der Kurve bremsen.",
+          "tokens": [
+            {
+              "surface": "Wir",
+              "lemma": "wir",
+              "pos": "PRON",
+              "upos": "PRON",
+              "xpos": "PPER",
+              "feats": {},
+              "start": 0,
+              "end": 3,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "sollten",
+              "lemma": "sollen",
+              "pos": "AUX",
+              "upos": "AUX",
+              "xpos": "VMFIN",
+              "feats": {},
+              "start": 4,
+              "end": 11,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "jetzt",
+              "lemma": "jetzt",
+              "pos": "ADV",
+              "upos": "ADV",
+              "xpos": "ADV",
+              "feats": {},
+              "start": 12,
+              "end": 17,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "vor",
+              "lemma": "vor",
+              "pos": "ADP",
+              "upos": "ADP",
+              "xpos": "APPR",
+              "feats": {},
+              "start": 18,
+              "end": 21,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "der",
+              "lemma": "der",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "ART",
+              "feats": {},
+              "start": 22,
+              "end": 25,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Kurve",
+              "lemma": "Kurve",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 26,
+              "end": 31,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "bremsen",
+              "lemma": "bremsen",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVINF",
+              "feats": {},
+              "start": 32,
+              "end": 39,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 39,
+              "end": 40,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Wir",
+            "lemma": "wir",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "sollten",
+            "lemma": "sollen",
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "VMFIN",
+            "feats": {},
+            "start": 4,
+            "end": 11,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "jetzt",
+            "lemma": "jetzt",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 12,
+            "end": 17,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "vor",
+            "lemma": "vor",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 18,
+            "end": 21,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "der",
+            "lemma": "der",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 22,
+            "end": 25,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Kurve",
+            "lemma": "Kurve",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 26,
+            "end": 31,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "bremsen",
+            "lemma": "bremsen",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVINF",
+            "feats": {},
+            "start": 32,
+            "end": 39,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 39,
+            "end": 40,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:06:37Z",
+        "updated_utc": "2026-10-17T07:07:05Z",
+        "applied_utc": "2026-10-17T07:07:05Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      },
+      {
+        "id": "sentprop-f156b45a64d5392a",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_b1:4073c5545310689d",
+        "pack_code": "de_b1",
+        "entry_id": "bremsen",
+        "language": "de",
+        "sentence_index": 4,
+        "old_sentence": "Wir mussten hart bremsen wegen des Hundes.",
+        "old_translations": {
+          "de": "Wir mussten hart bremsen wegen des Hundes.",
+          "ipa": "/viːɐ̯ ˈmʊstn̩ haʁt ˈbʁɛmsn̩ ˈveːgən dɛs ˈhʊndəs/",
+          "en": "We had to brake hard because of the dog.",
+          "es": "Tuvimos que frenar fuerte por el perro.",
+          "fr": "On a dû freiner brusquement à cause du chien.",
+          "it": "Abbiamo dovuto frenare bruscamente a causa del cane.",
+          "ko": "개 때문에 급브레이크를 밟아야 했다.",
+          "zh-Hans": "我们因为那只狗不得不猛踩刹车。",
+          "yue": "因為嗰隻狗我哋要猛撳煞掣。",
+          "ru": "Нам пришлось резко затормозить из-за собаки.",
+          "pt": "Tivemos que frear forte por causa do cachorro.",
+          "he": "היינו חייבים לבלום בפתאומיות בגלל הכלב.",
+          "tr": "Köpek yüzünden sert fren yapmak zorunda kaldık.",
+          "vi": "Vì con chó, chúng tôi phải phanh gấp.",
+          "ar": "اضطررنا إلى الفرملة بقوة بسبب الكلب.",
+          "nl": "We moesten hard remmen vanwege de hond.",
+          "uk": "Через собаку нам довелося різко загальмувати.",
+          "hu": "A kutya miatt erősen kellett fékeznünk.",
+          "hi": "कुत्ते की वजह से हमें ज़ोर से ब्रेक लगाना पड़ा.",
+          "pl": "Musieliśmy mocno zahamować z powodu psa.",
+          "el": "Αναγκαστήκαμε να φρενάρουμε απότομα λόγω του σκύλου.",
+          "nb": "Vi måtte bremse hardt på grunn av hunden.",
+          "id": "Kami harus mengerem mendadak karena anjing itu.",
+          "sv": "Vi var tvungna att bromsa kraftigt på grund av hunden.",
+          "ro": "A trebuit să frânăm brusc din cauza câinelui.",
+          "cs": "Kvůli psovi jsme museli prudce zabrzdit.",
+          "da": "Vi var nødt til at bremse hårdt på grund av hunden.",
+          "fi": "Jouduimme jarruttamaan voimakkaasti koiran takia.",
+          "ja": "犬のせいで急ブレーキをかけなければならなかった。"
+        },
+        "proposed_sentence": "Wir mussten wegen des Hundes hart bremsen.",
+        "proposed_translations": {
+          "de": "Wir mussten wegen des Hundes hart bremsen.",
+          "ipa": "/viːɐ̯ ˈmʊstn̩ haʁt ˈbʁɛmsn̩ ˈveːgən dɛs ˈhʊndəs/",
+          "en": "We had to brake hard because of the dog.",
+          "es": "Tuvimos que frenar fuerte por el perro.",
+          "fr": "On a dû freiner brusquement à cause du chien.",
+          "it": "Abbiamo dovuto frenare bruscamente a causa del cane.",
+          "ko": "개 때문에 급브레이크를 밟아야 했다.",
+          "zh-Hans": "我们因为那只狗不得不猛踩刹车。",
+          "yue": "因為嗰隻狗我哋要猛撳煞掣。",
+          "ru": "Нам пришлось резко затормозить из-за собаки.",
+          "pt": "Tivemos que frear forte por causa do cachorro.",
+          "he": "היינו חייבים לבלום בפתאומיות בגלל הכלב.",
+          "tr": "Köpek yüzünden sert fren yapmak zorunda kaldık.",
+          "vi": "Vì con chó, chúng tôi phải phanh gấp.",
+          "ar": "اضطررنا إلى الفرملة بقوة بسبب الكلب.",
+          "nl": "We moesten hard remmen vanwege de hond.",
+          "uk": "Через собаку нам довелося різко загальмувати.",
+          "hu": "A kutya miatt erősen kellett fékeznünk.",
+          "hi": "कुत्ते की वजह से हमें ज़ोर से ब्रेक लगाना पड़ा.",
+          "pl": "Musieliśmy mocno zahamować z powodu psa.",
+          "el": "Αναγκαστήκαμε να φρενάρουμε απότομα λόγω του σκύλου.",
+          "nb": "Vi måtte bremse hardt på grunn av hunden.",
+          "id": "Kami harus mengerem mendadak karena anjing itu.",
+          "sv": "Vi var tvungna att bromsa kraftigt på grund av hunden.",
+          "ro": "A trebuit să frânăm brusc din cauza câinelui.",
+          "cs": "Kvůli psovi jsme museli prudce zabrzdit.",
+          "da": "Vi var nødt til at bremse hårdt på grund av hunden.",
+          "fi": "Jouduimme jarruttamaan voimakkaasti koiran takia.",
+          "ja": "犬のせいで急ブレーキをかけなければならなかった。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Wir mussten wegen des Hundes hart bremsen.",
+        "old_japanese": "Wir mussten hart bremsen wegen des Hundes.",
+        "old_english": "We had to brake hard because of the dog.",
+        "proposed_japanese": "Wir mussten wegen des Hundes hart bremsen.",
+        "proposed_english": "We had to brake hard because of the dog.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Wir mussten wegen des Hundes hart bremsen.",
+          "tokens": [
+            {
+              "surface": "Wir",
+              "lemma": "wir",
+              "pos": "PRON",
+              "upos": "PRON",
+              "xpos": "PPER",
+              "feats": {},
+              "start": 0,
+              "end": 3,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "mussten",
+              "lemma": "mussen",
+              "pos": "AUX",
+              "upos": "AUX",
+              "xpos": "VMFIN",
+              "feats": {},
+              "start": 4,
+              "end": 11,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "wegen",
+              "lemma": "wegen",
+              "pos": "ADP",
+              "upos": "ADP",
+              "xpos": "APPR",
+              "feats": {},
+              "start": 12,
+              "end": 17,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "des",
+              "lemma": "der",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "ART",
+              "feats": {},
+              "start": 18,
+              "end": 21,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Hundes",
+              "lemma": "Hund",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 22,
+              "end": 28,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "hart",
+              "lemma": "hart",
+              "pos": "ADV",
+              "upos": "ADV",
+              "xpos": "ADJD",
+              "feats": {},
+              "start": 29,
+              "end": 33,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "bremsen",
+              "lemma": "bremsen",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVINF",
+              "feats": {},
+              "start": 34,
+              "end": 41,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 41,
+              "end": 42,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Wir",
+            "lemma": "wir",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "mussten",
+            "lemma": "mussen",
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "VMFIN",
+            "feats": {},
+            "start": 4,
+            "end": 11,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "wegen",
+            "lemma": "wegen",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 12,
+            "end": 17,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "des",
+            "lemma": "der",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 18,
+            "end": 21,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Hundes",
+            "lemma": "Hund",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 22,
+            "end": 28,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "hart",
+            "lemma": "hart",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADJD",
+            "feats": {},
+            "start": 29,
+            "end": 33,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "bremsen",
+            "lemma": "bremsen",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVINF",
+            "feats": {},
+            "start": 34,
+            "end": 41,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 41,
+            "end": 42,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:06:37Z",
+        "updated_utc": "2026-10-17T07:07:05Z",
+        "applied_utc": "2026-10-17T07:07:05Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:07:05Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -440,34 +1085,6 @@
     "word": "bremsen",
     "word_reading": "",
     "word_label": "Verb",
-    "word_en": "brake; slow down",
-    "word_es": "frenar; reducir la velocidad",
-    "word_fr": "freiner; ralentir",
-    "word_it": "frenare; rallentare",
-    "word_ko": "브레이크를 밟다; 속도를 늦추다",
-    "word_zh-Hans": "刹车; 减速",
-    "word_yue": "煞車; 減速",
-    "word_ru": "тормозить; замедляться",
-    "word_pt": "frear; reduzir a velocidade",
-    "word_he": "לבלום; להאט",
-    "word_tr": "fren yapmak; yavaşlamak",
-    "word_vi": "phanh; chậm lại",
-    "word_ar": "يفرمل; يبطئ",
-    "word_nl": "remmen; langzamer gaan",
-    "word_uk": "гальмувати; уповільнюватися",
-    "word_hu": "fékez; lassít",
-    "word_hi": "ब्रेक लगाना; गति धीमी करना",
-    "word_pl": "hamować; zwalniać",
-    "word_el": "φρενάρω; επιβραδύνω",
-    "word_nb": "bremse; senke farten",
-    "word_id": "mengerem; melambat",
-    "word_sv": "bromsa; sakta ner",
-    "word_ro": "a frâna; a încetini",
-    "word_cs": "brzdit; zpomalit",
-    "word_da": "bremse; sænke farten",
-    "word_fi": "jarruttaa; hidastaa",
-    "word_ja": "ブレーキをかける; 速度を落とす",
-    "word_de": "bremsen",
     "comic_difficulty": 6.16,
     "jp": [
       "Ich muss jetzt bremsen.",
@@ -480,24 +1097,6 @@
       "/eːɐ̯ fɛɐˈgɪst am ˈt͡seːbʁaˌʃtʁaɪfn̩ tsuː ˈbʁɛmsn̩/",
       "/viːɐ̯ ˈzɔltn̩ jɛtst ˈbʁɛmsn̩ foːɐ̯ deːɐ̯ ˈkʊʁvə/",
       "/viːɐ̯ ˈmʊstn̩ haʁt ˈbʁɛmsn̩ ˈveːgən dɛs ˈhʊndəs/"
-    ],
-    "de": [
-      "Ich muss jetzt bremsen.",
-      "Er vergisst am Zebrastreifen zu bremsen.",
-      "Wir sollten jetzt bremsen vor der Kurve.",
-      "Wir mussten hart bremsen wegen des Hundes."
-    ],
-    "ipa": [
-      "/ɪç mʊs jɛtst ˈbʁɛmsn̩/",
-      "/eːɐ̯ fɛɐˈgɪst am ˈt͡seːbʁaˌʃtʁaɪfn̩ tsuː ˈbʁɛmsn̩/",
-      "/viːɐ̯ ˈzɔltn̩ jɛtst ˈbʁɛmsn̩ foːɐ̯ deːɐ̯ ˈkʊʁvə/",
-      "/viːɐ̯ ˈmʊstn̩ haʁt ˈbʁɛmsn̩ ˈveːgən dɛs ˈhʊndəs/"
-    ],
-    "en": [
-      "I have to brake now.",
-      "He forgets to brake at the crosswalk.",
-      "We should brake now before the bend.",
-      "We had to brake hard because of the dog."
     ],
     "pos_analysis": [
       {
@@ -605,277 +1204,231 @@
         "difficulty_aggregated": 6
       },
       {
-        "sentence": "Wir sollten jetzt bremsen vor der Kurve.",
+        "sentence": "Wir sollten jetzt vor der Kurve bremsen.",
         "tokens": [
           {
             "surface": "Wir",
-            "surface_en": "we",
-            "furigana": "[viːɐ̯]",
-            "pos": "PRON",
             "lemma": "wir",
-            "explanation": "Personal pronoun, 1st person plural nominative; subject.",
-            "difficulty": 2
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "sollten",
-            "surface_en": "should",
-            "furigana": "[ˈzɔltən]",
-            "pos": "AUX",
             "lemma": "sollen",
-            "explanation": "Finite modal auxiliary, preterite/Konjunktiv II (1pl); expresses recommendation/obligation and licenses a bare infinitive.",
-            "difficulty": 10
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "VMFIN",
+            "feats": {},
+            "start": 4,
+            "end": 11,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "jetzt",
-            "surface_en": "now",
-            "furigana": "[jɛt͡st]",
-            "pos": "ADV",
             "lemma": "jetzt",
-            "explanation": "Temporal adverb modifying the predicate.",
-            "difficulty": 7
-          },
-          {
-            "surface": "bremsen",
-            "surface_en": "brake",
-            "furigana": "[ˈbʁɛmzən]",
-            "pos": "VERB",
-            "lemma": "bremsen",
-            "explanation": "Bare infinitive main verb; complement of the modal 'sollten'.",
-            "difficulty": 10,
-            "is_main_word": true
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 12,
+            "end": 17,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "vor",
-            "surface_en": "before",
-            "furigana": "[foːɐ̯]",
-            "pos": "ADP",
             "lemma": "vor",
-            "explanation": "Preposition meaning 'before/in front of'; governs dative.",
-            "difficulty": 2
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 18,
+            "end": 21,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "der",
-            "surface_en": "the",
-            "furigana": "[deːɐ̯]",
-            "pos": "DET",
             "lemma": "der",
-            "explanation": "Definite article, dative singular feminine; determiner for 'Kurve'.",
-            "difficulty": 2
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 22,
+            "end": 25,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "Kurve.",
-            "surface_en": "curve",
-            "furigana": "[ˈkʊʁvə]",
-            "pos": "NOUN",
+            "surface": "Kurve",
             "lemma": "Kurve",
-            "explanation": "Noun; dative singular as the complement of 'vor'.",
-            "difficulty": 7
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 26,
+            "end": 31,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "bremsen",
+            "lemma": "bremsen",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVINF",
+            "feats": {},
+            "start": 32,
+            "end": 39,
+            "analyzer": "spacy_de_core_news_lg",
+            "is_main_word": true
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 39,
+            "end": 40,
+            "analyzer": "spacy_de_core_news_lg"
           }
         ],
         "difficulty_aggregated": 5.71
       },
       {
-        "sentence": "Wir mussten hart bremsen wegen des Hundes.",
+        "sentence": "Wir mussten wegen des Hundes hart bremsen.",
         "tokens": [
           {
             "surface": "Wir",
-            "surface_en": "we",
-            "furigana": "[viːɐ̯]",
-            "pos": "PRON",
             "lemma": "wir",
-            "explanation": "Personal pronoun, 1st person plural nominative; subject.",
-            "difficulty": 2
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "mussten",
-            "surface_en": "had to",
-            "furigana": "[ˈmʊstən]",
+            "lemma": "mussen",
             "pos": "AUX",
-            "lemma": "müssen",
-            "explanation": "Finite modal auxiliary, preterite (1pl); expresses necessity in the past and selects a bare infinitive complement.",
-            "difficulty": 10
-          },
-          {
-            "surface": "hart",
-            "surface_en": "hard",
-            "furigana": "[haʁt]",
-            "pos": "ADV",
-            "lemma": "hart",
-            "explanation": "Adverb of manner modifying the verb 'bremsen'.",
-            "difficulty": 7
-          },
-          {
-            "surface": "bremsen",
-            "surface_en": "brake",
-            "furigana": "[ˈbʁɛmzən]",
-            "pos": "VERB",
-            "lemma": "bremsen",
-            "explanation": "Bare infinitive main verb; complement of the modal 'mussten'.",
-            "difficulty": 10,
-            "is_main_word": true
+            "upos": "AUX",
+            "xpos": "VMFIN",
+            "feats": {},
+            "start": 4,
+            "end": 11,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "wegen",
-            "surface_en": "because of",
-            "furigana": "[ˈveːɡən]",
-            "pos": "ADP",
             "lemma": "wegen",
-            "explanation": "Preposition meaning 'because of'; governs genitive.",
-            "difficulty": 7
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 12,
+            "end": 17,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "des",
-            "surface_en": "of the",
-            "furigana": "[dɛs]",
-            "pos": "DET",
             "lemma": "der",
-            "explanation": "Definite article, genitive singular masculine; determiner for 'Hundes'.",
-            "difficulty": 2
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 18,
+            "end": 21,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "Hundes.",
-            "surface_en": "dog's",
-            "furigana": "[ˈhʊndəs]",
-            "pos": "NOUN",
+            "surface": "Hundes",
             "lemma": "Hund",
-            "explanation": "Noun; genitive singular as the complement of 'wegen'.",
-            "difficulty": 7
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 22,
+            "end": 28,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "hart",
+            "lemma": "hart",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADJD",
+            "feats": {},
+            "start": 29,
+            "end": 33,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "bremsen",
+            "lemma": "bremsen",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVINF",
+            "feats": {},
+            "start": 34,
+            "end": 41,
+            "analyzer": "spacy_de_core_news_lg",
+            "is_main_word": true
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 41,
+            "end": 42,
+            "analyzer": "spacy_de_core_news_lg"
           }
         ],
         "difficulty_aggregated": 6.43
       }
     ],
-    "es": [
-      "Tengo que frenar ahora.",
-      "Se le olvida frenar en el paso de peatones.",
-      "Deberíamos frenar ahora antes de la curva.",
-      "Tuvimos que frenar fuerte por el perro."
-    ],
-    "fr": [
-      "Je dois freiner maintenant.",
-      "Il oublie de freiner au passage piéton.",
-      "On devrait freiner maintenant avant le virage.",
-      "On a dû freiner brusquement à cause du chien."
-    ],
-    "it": [
-      "Devo frenare adesso.",
-      "Si dimentica di frenare sulle strisce.",
-      "Dovremmo frenare adesso prima della curva.",
-      "Abbiamo dovuto frenare bruscamente a causa del cane."
-    ],
-    "ko": [
-      "지금 브레이크를 밟아야 해.",
-      "그는 횡단보도에서 브레이크를 밟는 걸 깜빡한다.",
-      "지금 커브 전에 브레이크를 밟는 게 좋겠어.",
-      "개 때문에 급브레이크를 밟아야 했다."
-    ],
-    "zh-Hans": [
-      "我现在得刹车。",
-      "他在斑马线前忘了刹车。",
-      "现在应该在弯道前刹车。",
-      "我们因为那只狗不得不猛踩刹车。"
-    ],
-    "yue": [
-      "我而家要踩煞掣。",
-      "佢喺斑馬線前唔記得踩煞掣。",
-      "我哋而家喺個彎之前應該踩煞掣。",
-      "因為嗰隻狗我哋要猛撳煞掣。"
-    ],
-    "ru": [
-      "Мне сейчас нужно тормозить.",
-      "Он забывает затормозить у пешеходного перехода.",
-      "Нам стоит сейчас притормозить перед поворотом.",
-      "Нам пришлось резко затормозить из-за собаки."
-    ],
-    "pt": [
-      "Eu tenho que frear agora.",
-      "Ele esquece de frear na faixa de pedestre.",
-      "Deveríamos frear agora antes da curva.",
-      "Tivemos que frear forte por causa do cachorro."
-    ],
-    "he": [
-      "אני צריך לבלום עכשיו.",
-      "هوא شוכח לבלום במעבר חציה.",
-      "כדאי שנבלום עכשיו לפני הסיבוב.",
-      "היינו חייבים לבלום בפתאומיות בגלל הכלב."
-    ],
-    "tr": [
-      "Şimdi fren yapmam lazım.",
-      "Yaya geçidinde fren yapmayı unutuyor.",
-      "Şimdi virajdan önce fren yapmalıyız.",
-      "Köpek yüzünden sert fren yapmak zorunda kaldık."
-    ],
-    "vi": [
-      "Giờ tôi phải phanh.",
-      "Anh ấy quên phanh ở vạch dành cho người đi bộ.",
-      "Chúng ta nên phanh ngay bây giờ trước khúc cua.",
-      "Vì con chó, chúng tôi phải phanh gấp."
-    ],
+    "word_POS": "Verb",
+    "entry_id": "bremsen",
+    "word_en": "brake; slow down",
+    "word_es": "frenar; reducir la velocidad",
+    "word_fr": "freiner; ralentir",
+    "word_it": "frenare; rallentare",
+    "word_ko": "브레이크를 밟다; 속도를 늦추다",
+    "word_zh-Hans": "刹车; 减速",
+    "word_yue": "煞車; 減速",
+    "word_ru": "тормозить; замедляться",
+    "word_pt": "frear; reduzir a velocidade",
+    "word_he": "לבלום; להאט",
+    "word_tr": "fren yapmak; yavaşlamak",
+    "word_vi": "phanh; chậm lại",
+    "word_ar": "يفرمل; يبطئ",
+    "word_nl": "remmen; langzamer gaan",
+    "word_uk": "гальмувати; уповільнюватися",
+    "word_hu": "fékez; lassít",
+    "word_hi": "ब्रेक लगाना; गति धीमी करना",
+    "word_pl": "hamować; zwalniać",
+    "word_el": "φρενάρω; επιβραδύνω",
+    "word_nb": "bremse; senke farten",
+    "word_id": "mengerem; melambat",
+    "word_sv": "bromsa; sakta ner",
+    "word_ro": "a frâna; a încetini",
+    "word_cs": "brzdit; zpomalit",
+    "word_da": "bremse; sænke farten",
+    "word_fi": "jarruttaa; hidastaa",
+    "word_ja": "ブレーキをかける; 速度を落とす",
+    "word_de": "bremsen",
     "ar": [
       "يجب أن أضغط على الفرامل الآن.",
       "ينسى أن يضغط على الفرامل عند ممر المشاة.",
       "ينبغي أن نضغط على الفرامل الآن قبل المنعطف.",
       "اضطررنا إلى الفرملة بقوة بسبب الكلب."
-    ],
-    "nl": [
-      "Ik moet nu remmen.",
-      "Hij vergeet te remmen bij het zebrapad.",
-      "We zouden nu moeten remmen voor de bocht.",
-      "We moesten hard remmen vanwege de hond."
-    ],
-    "uk": [
-      "Мені зараз треба гальмувати.",
-      "Він забуває загальмувати на пішохідному переході.",
-      "Нам слід зараз загальмувати перед поворотом.",
-      "Через собаку нам довелося різко загальмувати."
-    ],
-    "hu": [
-      "Most fékeznem kell.",
-      "Elfelejti, hogy fékezzen a zebránál.",
-      "Most kellene fékeznünk a kanyar előtt.",
-      "A kutya miatt erősen kellett fékeznünk."
-    ],
-    "hi": [
-      "मुझे अभी ब्रेक लगाना है.",
-      "वह ज़ेब्रा क्रॉसिंग पर ब्रेक लगाना भूल जाता है.",
-      "हमें अब मोड़ से पहले ब्रेक लगाना चाहिए.",
-      "कुत्ते की वजह से हमें ज़ोर से ब्रेक लगाना पड़ा."
-    ],
-    "pl": [
-      "Muszę teraz zahamować.",
-      "Zapomina zahamować na przejściu dla pieszych.",
-      "Powinniśmy teraz zahamować przed zakrętem.",
-      "Musieliśmy mocno zahamować z powodu psa."
-    ],
-    "el": [
-      "Πρέπει να φρενάρω τώρα.",
-      "Ξεχνά να φρενάρει στη διάβαση πεζών.",
-      "Πρέπει τώρα να φρενάρουμε πριν τη στροφή.",
-      "Αναγκαστήκαμε να φρενάρουμε απότομα λόγω του σκύλου."
-    ],
-    "nb": [
-      "Jeg må bremse nå.",
-      "Han glemmer å bremse ved fotgjengerfeltet.",
-      "Vi bør bremse nå før svingen.",
-      "Vi måtte bremse hardt på grunn av hunden."
-    ],
-    "id": [
-      "Saya harus mengerem sekarang.",
-      "Dia lupa mengerem di zebra cross.",
-      "Kita harus mengerem sekarang sebelum tikungan.",
-      "Kami harus mengerem mendadak karena anjing itu."
-    ],
-    "sv": [
-      "Jag måste bromsa nu.",
-      "Han glömmer att bromsa vid övergångsstället.",
-      "Vi borde bromsa nu före kurvan.",
-      "Vi var tvungna att bromsa kraftigt på grund av hunden."
-    ],
-    "ro": [
-      "Trebuie să frânez acum.",
-      "El uită să frâneze la trecerea de pietoni.",
-      "Ar trebui să frânăm acum înainte de curbă.",
-      "A trebuit să frânăm brusc din cauza câinelui."
     ],
     "cs": [
       "Musím teď brzdit.",
@@ -889,11 +1442,77 @@
       "Vi bør bremse nu før kurven.",
       "Vi var nødt til at bremse hårdt på grund av hunden."
     ],
+    "de": [
+      "Ich muss jetzt bremsen.",
+      "Er vergisst am Zebrastreifen zu bremsen.",
+      "Wir sollten jetzt bremsen vor der Kurve.",
+      "Wir mussten hart bremsen wegen des Hundes."
+    ],
+    "el": [
+      "Πρέπει να φρενάρω τώρα.",
+      "Ξεχνά να φρενάρει στη διάβαση πεζών.",
+      "Πρέπει τώρα να φρενάρουμε πριν τη στροφή.",
+      "Αναγκαστήκαμε να φρενάρουμε απότομα λόγω του σκύλου."
+    ],
+    "en": [
+      "I have to brake now.",
+      "He forgets to brake at the crosswalk.",
+      "We should brake now before the bend.",
+      "We had to brake hard because of the dog."
+    ],
+    "es": [
+      "Tengo que frenar ahora.",
+      "Se le olvida frenar en el paso de peatones.",
+      "Deberíamos frenar ahora antes de la curva.",
+      "Tuvimos que frenar fuerte por el perro."
+    ],
     "fi": [
       "Minun pitää jarruttaa nyt.",
       "Hän unohtaa jarruttaa suojatiellä.",
       "Meidän pitäisi jarruttaa nyt ennen mutkaa.",
       "Jouduimme jarruttamaan voimakkaasti koiran takia."
+    ],
+    "fr": [
+      "Je dois freiner maintenant.",
+      "Il oublie de freiner au passage piéton.",
+      "On devrait freiner maintenant avant le virage.",
+      "On a dû freiner brusquement à cause du chien."
+    ],
+    "he": [
+      "אני צריך לבלום עכשיו.",
+      "הוא שוכח לבלום במעבר חציה.",
+      "כדאי שנבלום עכשיו לפני הסיבוב.",
+      "היינו חייבים לבלום בפתאומיות בגלל הכלב."
+    ],
+    "hi": [
+      "मुझे अभी ब्रेक लगाना है.",
+      "वह ज़ेब्रा क्रॉसिंग पर ब्रेक लगाना भूल जाता है.",
+      "हमें अब मोड़ से पहले ब्रेक लगाना चाहिए.",
+      "कुत्ते की वजह से हमें ज़ोर से ब्रेक लगाना पड़ा."
+    ],
+    "hu": [
+      "Most fékeznem kell.",
+      "Elfelejti, hogy fékezzen a zebránál.",
+      "Most kellene fékeznünk a kanyar előtt.",
+      "A kutya miatt erősen kellett fékeznünk."
+    ],
+    "id": [
+      "Saya harus mengerem sekarang.",
+      "Dia lupa mengerem di zebra cross.",
+      "Kita harus mengerem sekarang sebelum tikungan.",
+      "Kami harus mengerem mendadak karena anjing itu."
+    ],
+    "ipa": [
+      "/ɪç mʊs jɛtst ˈbʁɛmsn̩/",
+      "/eːɐ̯ fɛɐˈgɪst am ˈt͡seːbʁaˌʃtʁaɪfn̩ tsuː ˈbʁɛmsn̩/",
+      "/viːɐ̯ ˈzɔltn̩ jɛtst ˈbʁɛmsn̩ foːɐ̯ deːɐ̯ ˈkʊʁvə/",
+      "/viːɐ̯ ˈmʊstn̩ haʁt ˈbʁɛmsn̩ ˈveːgən dɛs ˈhʊndəs/"
+    ],
+    "it": [
+      "Devo frenare adesso.",
+      "Si dimentica di frenare sulle strisce.",
+      "Dovremmo frenare adesso prima della curva.",
+      "Abbiamo dovuto frenare bruscamente a causa del cane."
     ],
     "ja": [
       "今ブレーキを踏まなきゃいけない。",
@@ -901,6 +1520,83 @@
       "今、カーブの手前でブレーキを踏んだほうがいい。",
       "犬のせいで急ブレーキをかけなければならなかった。"
     ],
-    "word_POS": "Verb"
+    "ko": [
+      "지금 브레이크를 밟아야 해.",
+      "그는 횡단보도에서 브레이크를 밟는 걸 깜빡한다.",
+      "지금 커브 전에 브레이크를 밟는 게 좋겠어.",
+      "개 때문에 급브레이크를 밟아야 했다."
+    ],
+    "nb": [
+      "Jeg må bremse nå.",
+      "Han glemmer å bremse ved fotgjengerfeltet.",
+      "Vi bør bremse nå før svingen.",
+      "Vi måtte bremse hardt på grunn av hunden."
+    ],
+    "nl": [
+      "Ik moet nu remmen.",
+      "Hij vergeet te remmen bij het zebrapad.",
+      "We zouden nu moeten remmen voor de bocht.",
+      "We moesten hard remmen vanwege de hond."
+    ],
+    "pl": [
+      "Muszę teraz zahamować.",
+      "Zapomina zahamować na przejściu dla pieszych.",
+      "Powinniśmy teraz zahamować przed zakrętem.",
+      "Musieliśmy mocno zahamować z powodu psa."
+    ],
+    "pt": [
+      "Eu tenho que frear agora.",
+      "Ele esquece de frear na faixa de pedestre.",
+      "Deveríamos frear agora antes da curva.",
+      "Tivemos que frear forte por causa do cachorro."
+    ],
+    "ro": [
+      "Trebuie să frânez acum.",
+      "El uită să frâneze la trecerea de pietoni.",
+      "Ar trebui să frânăm acum înainte de curbă.",
+      "A trebuit să frânăm brusc din cauza câinelui."
+    ],
+    "ru": [
+      "Мне сейчас нужно тормозить.",
+      "Он забывает затормозить у пешеходного перехода.",
+      "Нам стоит сейчас притормозить перед поворотом.",
+      "Нам пришлось резко затормозить из-за собаки."
+    ],
+    "sv": [
+      "Jag måste bromsa nu.",
+      "Han glömmer att bromsa vid övergångsstället.",
+      "Vi borde bromsa nu före kurvan.",
+      "Vi var tvungna att bromsa kraftigt på grund av hunden."
+    ],
+    "tr": [
+      "Şimdi fren yapmam lazım.",
+      "Yaya geçidinde fren yapmayı unutuyor.",
+      "Şimdi virajdan önce fren yapmalıyız.",
+      "Köpek yüzünden sert fren yapmak zorunda kaldık."
+    ],
+    "uk": [
+      "Мені зараз треба гальмувати.",
+      "Він забуває загальмувати на пішохідному переході.",
+      "Нам слід зараз загальмувати перед поворотом.",
+      "Через собаку нам довелося різко загальмувати."
+    ],
+    "vi": [
+      "Giờ tôi phải phanh.",
+      "Anh ấy quên phanh ở vạch dành cho người đi bộ.",
+      "Chúng ta nên phanh ngay bây giờ trước khúc cua.",
+      "Vì con chó, chúng tôi phải phanh gấp."
+    ],
+    "yue": [
+      "我而家要踩煞掣。",
+      "佢喺斑馬線前唔記得踩煞掣。",
+      "我哋而家喺個彎之前應該踩煞掣。",
+      "因為嗰隻狗我哋要猛撳煞掣。"
+    ],
+    "zh-Hans": [
+      "我现在得刹车。",
+      "他在斑马线前忘了刹车。",
+      "现在应该在弯道前刹车。",
+      "我们因为那只狗不得不猛踩刹车。"
+    ]
   }
 }

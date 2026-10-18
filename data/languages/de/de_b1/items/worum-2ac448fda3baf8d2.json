@@ -67,7 +67,7 @@
         "hu": "Miről szól a tanfolyam?",
         "hi": "यह पाठ्यक्रम किस बारे में है?",
         "pl": "O czym jest ten kurs?",
-        "el": "Για τι είναι το μάθημα;",
+        "el": "Τι θέμα έχει το μάθημα;",
         "nb": "Hva handler kurset om?",
         "id": "Kursus ini tentang apa?",
         "sv": "Vad handlar kursen om?",
@@ -144,13 +144,13 @@
         "ipa": "/voˈʁʊm ˈʃtʁaɪtət iːɐ̯ ʃoːn ˈviːdɐ/",
         "en": "What are you arguing about again?",
         "es": "¿De qué discuten otra vez?",
-        "fr": "Vous vous disputez encore pour quoi ?",
+        "fr": "Vous vous disputez encore à propos de quoi ?",
         "it": "Di cosa state litigando di nuovo?",
         "ko": "또 뭐 가지고 싸우는 거예요?",
         "zh-Hans": "你们又在吵什么？",
         "yue": "你哋又為乜嘢嘈交？",
         "ru": "О чём вы снова спорите?",
-        "pt": "Vocês estão discutindo de novo sobre o quê?",
+        "pt": "Sobre o que vocês estão discutindo de novo?",
         "he": "על מה אתם שוב רבים?",
         "tr": "Yine ne hakkında tartışıyorsunuz?",
         "vi": "Các bạn lại đang cãi nhau về chuyện gì vậy?",
@@ -221,10 +221,10 @@
       "difficulty": 5.6
     },
     {
-      "target": "Worum handelt der Film heute Abend?",
+      "target": "Worum geht es in dem Film heute Abend?",
       "reading": "/voˈʁʊm ˈhandəlt deːɐ̯ fɪlm ˈhɔʏtə ˈaːbənt/",
       "translations": {
-        "de": "Worum handelt der Film heute Abend?",
+        "de": "Worum geht es in dem Film heute Abend?",
         "ipa": "/voˈʁʊm ˈhandəlt deːɐ̯ fɪlm ˈhɔʏtə ˈaːbənt/",
         "en": "What is the film about tonight?",
         "es": "¿De qué trata la película de esta noche?",
@@ -244,7 +244,7 @@
         "hu": "Miről szól a ma esti film?",
         "hi": "आज रात की फ़िल्म किस बारे में है?",
         "pl": "O czym jest dzisiejszy film?",
-        "el": "Για τι είναι η αποψινή ταινία;",
+        "el": "Τι θέμα έχει η αποψινή ταινία;",
         "nb": "Hva handler filmen i kveld om?",
         "id": "Film malam ini tentang apa?",
         "sv": "Vad handlar kvällens film om?",
@@ -257,67 +257,112 @@
       "tokens": [
         {
           "surface": "Worum",
-          "surface_en": "about what",
-          "furigana": "[ˈvoːʁʊm]",
-          "pos": "ADV",
           "lemma": "worum",
-          "explanation": "Pronominal adverb meaning 'about what'; here standing in for a PP with 'von' commonly used with 'handeln (von)'.",
-          "difficulty": 7,
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "PWAV",
+          "feats": {},
+          "start": 0,
+          "end": 5,
+          "analyzer": "spacy_de_core_news_lg",
           "is_main_word": true
         },
         {
-          "surface": "handelt",
-          "surface_en": "is about",
-          "furigana": "[ˈhandəlt]",
+          "surface": "geht",
+          "lemma": "gehen",
           "pos": "VERB",
-          "lemma": "handeln",
-          "explanation": "Finite verb, 3rd person singular present; intransitive use meaning 'to be about' (often with 'von'), content questioned by 'Worum'.",
-          "difficulty": 10
+          "upos": "VERB",
+          "xpos": "VVFIN",
+          "feats": {},
+          "start": 6,
+          "end": 10,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "der",
-          "surface_en": "the",
-          "furigana": "[deːɐ̯]",
-          "pos": "DET",
+          "surface": "es",
+          "lemma": "es",
+          "pos": "PRON",
+          "upos": "PRON",
+          "xpos": "PPER",
+          "feats": {},
+          "start": 11,
+          "end": 13,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "in",
+          "lemma": "in",
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "APPR",
+          "feats": {},
+          "start": 14,
+          "end": 16,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "dem",
           "lemma": "der",
-          "explanation": "Definite article, nominative singular masculine; determiner of the subject noun 'Film'.",
-          "difficulty": 2
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "ART",
+          "feats": {},
+          "start": 17,
+          "end": 20,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "Film",
-          "surface_en": "film",
-          "furigana": "[fɪlm]",
-          "pos": "NOUN",
           "lemma": "Film",
-          "explanation": "Common noun; subject of 'handelt'.",
-          "difficulty": 7
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 21,
+          "end": 25,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "heute",
-          "surface_en": "today",
-          "furigana": "[ˈhɔʏtə]",
-          "pos": "ADV",
           "lemma": "heute",
-          "explanation": "Temporal adverb; modifies the clause, part of the time expression 'heute Abend'.",
-          "difficulty": 7
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "ADV",
+          "feats": {},
+          "start": 26,
+          "end": 31,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "Abend",
-          "surface_en": "evening",
-          "furigana": "[ˈaːbənt]",
-          "pos": "NOUN",
           "lemma": "Abend",
-          "explanation": "Common noun used in a temporal expression ('heute Abend') indicating time.",
-          "difficulty": 7
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 32,
+          "end": 37,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "?",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 37,
+          "end": 38,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 6.67
     },
     {
-      "target": "Worum geht's bei dem Meeting morgen?",
+      "target": "Worum geht's beim Meeting morgen?",
       "reading": "/voˈʁʊm ɡeːts baɪ deːm ˈmiːtɪŋ ˈmɔʁɡn̩/",
       "translations": {
-        "de": "Worum geht's bei dem Meeting morgen?",
+        "de": "Worum geht's beim Meeting morgen?",
         "ipa": "/voˈʁʊm ɡeːts baɪ deːm ˈmiːtɪŋ ˈmɔʁɡn̩/",
         "en": "What’s the meeting about tomorrow?",
         "es": "¿De qué va la reunión de mañana?",
@@ -337,7 +382,7 @@
         "hu": "Miről lesz a holnapi megbeszélés?",
         "hi": "कल की मीटिंग किस बारे में है?",
         "pl": "O czym będzie jutrzejsze spotkanie?",
-        "el": "Για τι είναι η αυριανή συνάντηση;",
+        "el": "Τι θέμα έχει η αυριανή συνάντηση;",
         "nb": "Hva handler møtet i morgen om?",
         "id": "Rapat besok tentang apa?",
         "sv": "Vad handlar mötet i morgon om?",
@@ -350,58 +395,70 @@
       "tokens": [
         {
           "surface": "Worum",
-          "surface_en": "about what",
-          "furigana": "[ˈvoːʁʊm]",
-          "pos": "ADV",
           "lemma": "worum",
-          "explanation": "Pronominal adverb meaning 'about what'; targets the topic of discussion.",
-          "difficulty": 7,
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "PWAV",
+          "feats": {},
+          "start": 0,
+          "end": 5,
+          "analyzer": "spacy_de_core_news_lg",
           "is_main_word": true
         },
         {
           "surface": "geht's",
-          "surface_en": "is about",
-          "furigana": "[ɡeːts]",
+          "lemma": "geht's",
           "pos": "VERB",
-          "lemma": "gehen",
-          "explanation": "Finite verb form with enclitic '’s' representing 'es'; contraction of 'geht es' in the impersonal construction 'es geht (um …)'.",
-          "difficulty": 7
+          "upos": "VERB",
+          "xpos": "VVFIN",
+          "feats": {},
+          "start": 6,
+          "end": 12,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "bei",
-          "surface_en": "at",
-          "furigana": "[baɪ]",
-          "pos": "ADP",
+          "surface": "beim",
           "lemma": "bei",
-          "explanation": "Preposition selecting dative; introduces the setting/context ('bei dem Meeting').",
-          "difficulty": 2
-        },
-        {
-          "surface": "dem",
-          "surface_en": "the",
-          "furigana": "[deːm]",
-          "pos": "DET",
-          "lemma": "der",
-          "explanation": "Definite article, dative singular; determiner of 'Meeting' as the complement of 'bei'.",
-          "difficulty": 2
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "APPRART",
+          "feats": {},
+          "start": 13,
+          "end": 17,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "Meeting",
-          "surface_en": "meeting",
-          "furigana": "[ˈmiːtɪŋ]",
-          "pos": "NOUN",
           "lemma": "Meeting",
-          "explanation": "Loanword noun; object of the preposition 'bei'.",
-          "difficulty": 10
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 18,
+          "end": 25,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "morgen",
-          "surface_en": "tomorrow",
-          "furigana": "[ˈmɔʁɡən]",
-          "pos": "ADV",
           "lemma": "morgen",
-          "explanation": "Temporal adverb; modifies the clause to indicate time.",
-          "difficulty": 7
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "ADV",
+          "feats": {},
+          "start": 26,
+          "end": 32,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "?",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 32,
+          "end": 33,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 5.83
@@ -418,8 +475,581 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-15T05:58:16Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:De b1/2ac448fda3baf8d2",
+      "revision_id": 84792,
+      "parent_revision_id": 18530,
+      "revision_timestamp_utc": "2026-10-15T05:58:16Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Corrected two awkward German question forms and improved the Greek, French, and Portuguese questions about a topic.",
+      "pulled_utc": "2026-10-17T07:06:37Z",
+      "applied_utc": "2026-10-17T07:06:54Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-2f97051e7e5757fc",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_b1:2ac448fda3baf8d2",
+        "pack_code": "de_b1",
+        "entry_id": "worum",
+        "language": "de",
+        "sentence_index": 3,
+        "old_sentence": "Worum handelt der Film heute Abend?",
+        "old_translations": {
+          "de": "Worum handelt der Film heute Abend?",
+          "ipa": "/voˈʁʊm ˈhandəlt deːɐ̯ fɪlm ˈhɔʏtə ˈaːbənt/",
+          "en": "What is the film about tonight?",
+          "es": "¿De qué trata la película de esta noche?",
+          "fr": "De quoi parle le film de ce soir ?",
+          "it": "Di cosa parla il film di stasera?",
+          "ko": "오늘 밤 영화는 뭐에 관한 거예요?",
+          "zh-Hans": "今晚的电影是讲什么的？",
+          "yue": "今晚嗰套電影係講乜嘢？",
+          "ru": "О чём фильм сегодня вечером?",
+          "pt": "Sobre o que é o filme de hoje à noite?",
+          "he": "על מה הסרט הערב?",
+          "tr": "Bu akşamki film ne hakkında?",
+          "vi": "Bộ phim tối nay nói về gì?",
+          "ar": "عن ماذا يدور فيلم الليلة؟",
+          "nl": "Waar gaat de film van vanavond over?",
+          "uk": "Про що сьогоднішній фільм?",
+          "hu": "Miről szól a ma esti film?",
+          "hi": "आज रात की फ़िल्म किस बारे में है?",
+          "pl": "O czym jest dzisiejszy film?",
+          "el": "Για τι είναι η αποψινή ταινία;",
+          "nb": "Hva handler filmen i kveld om?",
+          "id": "Film malam ini tentang apa?",
+          "sv": "Vad handlar kvällens film om?",
+          "ro": "Despre ce este filmul din seara asta?",
+          "cs": "O čem je film dnes večer?",
+          "da": "Hvad handler filmen i aften om?",
+          "fi": "Mistä tämän illan elokuva kertoo?",
+          "ja": "今夜の映画は何についてですか？"
+        },
+        "proposed_sentence": "Worum geht es in dem Film heute Abend?",
+        "proposed_translations": {
+          "de": "Worum geht es in dem Film heute Abend?",
+          "ipa": "/voˈʁʊm ˈhandəlt deːɐ̯ fɪlm ˈhɔʏtə ˈaːbənt/",
+          "en": "What is the film about tonight?",
+          "es": "¿De qué trata la película de esta noche?",
+          "fr": "De quoi parle le film de ce soir ?",
+          "it": "Di cosa parla il film di stasera?",
+          "ko": "오늘 밤 영화는 뭐에 관한 거예요?",
+          "zh-Hans": "今晚的电影是讲什么的？",
+          "yue": "今晚嗰套電影係講乜嘢？",
+          "ru": "О чём фильм сегодня вечером?",
+          "pt": "Sobre o que é o filme de hoje à noite?",
+          "he": "על מה הסרט הערב?",
+          "tr": "Bu akşamki film ne hakkında?",
+          "vi": "Bộ phim tối nay nói về gì?",
+          "ar": "عن ماذا يدور فيلم الليلة؟",
+          "nl": "Waar gaat de film van vanavond over?",
+          "uk": "Про що сьогоднішній фільм?",
+          "hu": "Miről szól a ma esti film?",
+          "hi": "आज रात की फ़िल्म किस बारे में है?",
+          "pl": "O czym jest dzisiejszy film?",
+          "el": "Τι θέμα έχει η αποψινή ταινία;",
+          "nb": "Hva handler filmen i kveld om?",
+          "id": "Film malam ini tentang apa?",
+          "sv": "Vad handlar kvällens film om?",
+          "ro": "Despre ce este filmul din seara asta?",
+          "cs": "O čem je film dnes večer?",
+          "da": "Hvad handler filmen i aften om?",
+          "fi": "Mistä tämän illan elokuva kertoo?",
+          "ja": "今夜の映画は何についてですか？"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Worum geht es in dem Film heute Abend?",
+        "old_japanese": "Worum handelt der Film heute Abend?",
+        "old_english": "What is the film about tonight?",
+        "proposed_japanese": "Worum geht es in dem Film heute Abend?",
+        "proposed_english": "What is the film about tonight?",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Worum geht es in dem Film heute Abend?",
+          "tokens": [
+            {
+              "surface": "Worum",
+              "lemma": "worum",
+              "pos": "ADV",
+              "upos": "ADV",
+              "xpos": "PWAV",
+              "feats": {},
+              "start": 0,
+              "end": 5,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "geht",
+              "lemma": "gehen",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVFIN",
+              "feats": {},
+              "start": 6,
+              "end": 10,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "es",
+              "lemma": "es",
+              "pos": "PRON",
+              "upos": "PRON",
+              "xpos": "PPER",
+              "feats": {},
+              "start": 11,
+              "end": 13,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "in",
+              "lemma": "in",
+              "pos": "ADP",
+              "upos": "ADP",
+              "xpos": "APPR",
+              "feats": {},
+              "start": 14,
+              "end": 16,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "dem",
+              "lemma": "der",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "ART",
+              "feats": {},
+              "start": 17,
+              "end": 20,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Film",
+              "lemma": "Film",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 21,
+              "end": 25,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "heute",
+              "lemma": "heute",
+              "pos": "ADV",
+              "upos": "ADV",
+              "xpos": "ADV",
+              "feats": {},
+              "start": 26,
+              "end": 31,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Abend",
+              "lemma": "Abend",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 32,
+              "end": 37,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "?",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 37,
+              "end": 38,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Worum",
+            "lemma": "worum",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "PWAV",
+            "feats": {},
+            "start": 0,
+            "end": 5,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "geht",
+            "lemma": "gehen",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 6,
+            "end": 10,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "es",
+            "lemma": "es",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 11,
+            "end": 13,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "in",
+            "lemma": "in",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 14,
+            "end": 16,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "dem",
+            "lemma": "der",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 17,
+            "end": 20,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Film",
+            "lemma": "Film",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 21,
+            "end": 25,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "heute",
+            "lemma": "heute",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 26,
+            "end": 31,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Abend",
+            "lemma": "Abend",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 32,
+            "end": 37,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "?",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 37,
+            "end": 38,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:06:37Z",
+        "updated_utc": "2026-10-17T07:07:06Z",
+        "applied_utc": "2026-10-17T07:07:06Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      },
+      {
+        "id": "sentprop-821898f6dc3078fe",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_b1:2ac448fda3baf8d2",
+        "pack_code": "de_b1",
+        "entry_id": "worum",
+        "language": "de",
+        "sentence_index": 4,
+        "old_sentence": "Worum geht's bei dem Meeting morgen?",
+        "old_translations": {
+          "de": "Worum geht's bei dem Meeting morgen?",
+          "ipa": "/voˈʁʊm ɡeːts baɪ deːm ˈmiːtɪŋ ˈmɔʁɡn̩/",
+          "en": "What’s the meeting about tomorrow?",
+          "es": "¿De qué va la reunión de mañana?",
+          "fr": "De quoi parle la réunion de demain ?",
+          "it": "Di cosa parla la riunione di domani?",
+          "ko": "내일 회의는 뭐에 관한 거예요?",
+          "zh-Hans": "明天的会议是讨论什么？",
+          "yue": "聽日個會係講乜嘢？",
+          "ru": "О чём будет завтрашняя встреча?",
+          "pt": "Sobre o que é a reunião de amanhã?",
+          "he": "על מה הפגישה מחר?",
+          "tr": "Yarınki toplantı ne hakkında?",
+          "vi": "Cuộc họp ngày mai nói về gì?",
+          "ar": "ما موضوع اجتماع الغد؟",
+          "nl": "Waar gaat de vergadering morgen over?",
+          "uk": "Про що буде завтрашня нарада?",
+          "hu": "Miről lesz a holnapi megbeszélés?",
+          "hi": "कल की मीटिंग किस बारे में है?",
+          "pl": "O czym będzie jutrzejsze spotkanie?",
+          "el": "Για τι είναι η αυριανή συνάντηση;",
+          "nb": "Hva handler møtet i morgen om?",
+          "id": "Rapat besok tentang apa?",
+          "sv": "Vad handlar mötet i morgon om?",
+          "ro": "Despre ce este întâlnirea de mâine?",
+          "cs": "O čem bude zítřejší schůzka?",
+          "da": "Hvad handler mødet i morgen om?",
+          "fi": "Mistä on kyse huomisen kokouksessa?",
+          "ja": "明日の会議は何についてですか？"
+        },
+        "proposed_sentence": "Worum geht's beim Meeting morgen?",
+        "proposed_translations": {
+          "de": "Worum geht's beim Meeting morgen?",
+          "ipa": "/voˈʁʊm ɡeːts baɪ deːm ˈmiːtɪŋ ˈmɔʁɡn̩/",
+          "en": "What’s the meeting about tomorrow?",
+          "es": "¿De qué va la reunión de mañana?",
+          "fr": "De quoi parle la réunion de demain ?",
+          "it": "Di cosa parla la riunione di domani?",
+          "ko": "내일 회의는 뭐에 관한 거예요?",
+          "zh-Hans": "明天的会议是讨论什么？",
+          "yue": "聽日個會係講乜嘢？",
+          "ru": "О чём будет завтрашняя встреча?",
+          "pt": "Sobre o que é a reunião de amanhã?",
+          "he": "על מה הפגישה מחר?",
+          "tr": "Yarınki toplantı ne hakkında?",
+          "vi": "Cuộc họp ngày mai nói về gì?",
+          "ar": "ما موضوع اجتماع الغد؟",
+          "nl": "Waar gaat de vergadering morgen over?",
+          "uk": "Про що буде завтрашня нарада?",
+          "hu": "Miről lesz a holnapi megbeszélés?",
+          "hi": "कल की मीटिंग किस बारे में है?",
+          "pl": "O czym będzie jutrzejsze spotkanie?",
+          "el": "Τι θέμα έχει η αυριανή συνάντηση;",
+          "nb": "Hva handler møtet i morgen om?",
+          "id": "Rapat besok tentang apa?",
+          "sv": "Vad handlar mötet i morgon om?",
+          "ro": "Despre ce este întâlnirea de mâine?",
+          "cs": "O čem bude zítřejší schůzka?",
+          "da": "Hvad handler mødet i morgen om?",
+          "fi": "Mistä on kyse huomisen kokouksessa?",
+          "ja": "明日の会議は何についてですか？"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Worum geht's beim Meeting morgen?",
+        "old_japanese": "Worum geht's bei dem Meeting morgen?",
+        "old_english": "What’s the meeting about tomorrow?",
+        "proposed_japanese": "Worum geht's beim Meeting morgen?",
+        "proposed_english": "What’s the meeting about tomorrow?",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Worum geht's beim Meeting morgen?",
+          "tokens": [
+            {
+              "surface": "Worum",
+              "lemma": "worum",
+              "pos": "ADV",
+              "upos": "ADV",
+              "xpos": "PWAV",
+              "feats": {},
+              "start": 0,
+              "end": 5,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "geht's",
+              "lemma": "geht's",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVFIN",
+              "feats": {},
+              "start": 6,
+              "end": 12,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "beim",
+              "lemma": "bei",
+              "pos": "ADP",
+              "upos": "ADP",
+              "xpos": "APPRART",
+              "feats": {},
+              "start": 13,
+              "end": 17,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Meeting",
+              "lemma": "Meeting",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 18,
+              "end": 25,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "morgen",
+              "lemma": "morgen",
+              "pos": "ADV",
+              "upos": "ADV",
+              "xpos": "ADV",
+              "feats": {},
+              "start": 26,
+              "end": 32,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "?",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 32,
+              "end": 33,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Worum",
+            "lemma": "worum",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "PWAV",
+            "feats": {},
+            "start": 0,
+            "end": 5,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "geht's",
+            "lemma": "geht's",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 6,
+            "end": 12,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "beim",
+            "lemma": "bei",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPRART",
+            "feats": {},
+            "start": 13,
+            "end": 17,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Meeting",
+            "lemma": "Meeting",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 18,
+            "end": 25,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "morgen",
+            "lemma": "morgen",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 26,
+            "end": 32,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "?",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 32,
+            "end": 33,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:06:37Z",
+        "updated_utc": "2026-10-17T07:07:06Z",
+        "applied_utc": "2026-10-17T07:07:06Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:07:06Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -431,34 +1061,6 @@
     "word": "worum",
     "word_reading": "",
     "word_label": "Pronominaladverb",
-    "word_en": "what about; about what",
-    "word_es": "de qué; sobre qué",
-    "word_fr": "de quoi; sur quoi",
-    "word_it": "di cosa; su cosa",
-    "word_ko": "무엇에 대해; 무엇에 관해",
-    "word_zh-Hans": "关于什么",
-    "word_yue": "關於乜嘢",
-    "word_ru": "о чём",
-    "word_pt": "sobre o que; de que",
-    "word_he": "על מה; לגבי מה",
-    "word_tr": "ne hakkında; neyle ilgili",
-    "word_vi": "về gì",
-    "word_ar": "عن ماذا; عمّ",
-    "word_nl": "waarover; waar het over gaat",
-    "word_uk": "про що",
-    "word_hu": "miről; miről van szó",
-    "word_hi": "किस बारे में; किस विषय में",
-    "word_pl": "o czym",
-    "word_el": "για ποιο πράγμα; σχετικά με τι",
-    "word_nb": "hva handler det om",
-    "word_id": "tentang apa",
-    "word_sv": "vad handlar det om",
-    "word_ro": "despre ce",
-    "word_cs": "o čem",
-    "word_da": "hvad handler det om",
-    "word_fi": "mistä; mistä on kyse",
-    "word_ja": "何について; 何に関して",
-    "word_de": "worum",
     "comic_difficulty": 5.65,
     "jp": [
       "Worum geht es in dem Kurs?",
@@ -471,24 +1073,6 @@
       "/voˈʁʊm ˈʃtʁaɪtət iːɐ̯ ʃoːn ˈviːdɐ/",
       "/voˈʁʊm ˈhandəlt deːɐ̯ fɪlm ˈhɔʏtə ˈaːbənt/",
       "/voˈʁʊm ɡeːts baɪ deːm ˈmiːtɪŋ ˈmɔʁɡn̩/"
-    ],
-    "de": [
-      "Worum geht es in dem Kurs?",
-      "Worum streitet ihr schon wieder?",
-      "Worum handelt der Film heute Abend?",
-      "Worum geht's bei dem Meeting morgen?"
-    ],
-    "ipa": [
-      "/voˈʁʊm ɡeːt ʔɛs ɪn deːm kʊʁs/",
-      "/voˈʁʊm ˈʃtʁaɪtət iːɐ̯ ʃoːn ˈviːdɐ/",
-      "/voˈʁʊm ˈhandəlt deːɐ̯ fɪlm ˈhɔʏtə ˈaːbənt/",
-      "/voˈʁʊm ɡeːts baɪ deːm ˈmiːtɪŋ ˈmɔʁɡn̩/"
-    ],
-    "en": [
-      "What is the course about?",
-      "What are you arguing about again?",
-      "What is the film about tonight?",
-      "What’s the meeting about tomorrow?"
     ],
     "pos_analysis": [
       {
@@ -605,259 +1189,220 @@
         "difficulty_aggregated": 5.6
       },
       {
-        "sentence": "Worum handelt der Film heute Abend?",
+        "sentence": "Worum geht es in dem Film heute Abend?",
         "tokens": [
           {
             "surface": "Worum",
-            "surface_en": "about what",
-            "furigana": "[ˈvoːʁʊm]",
-            "pos": "ADV",
             "lemma": "worum",
-            "explanation": "Pronominal adverb meaning 'about what'; here standing in for a PP with 'von' commonly used with 'handeln (von)'.",
-            "difficulty": 7,
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "PWAV",
+            "feats": {},
+            "start": 0,
+            "end": 5,
+            "analyzer": "spacy_de_core_news_lg",
             "is_main_word": true
           },
           {
-            "surface": "handelt",
-            "surface_en": "is about",
-            "furigana": "[ˈhandəlt]",
+            "surface": "geht",
+            "lemma": "gehen",
             "pos": "VERB",
-            "lemma": "handeln",
-            "explanation": "Finite verb, 3rd person singular present; intransitive use meaning 'to be about' (often with 'von'), content questioned by 'Worum'.",
-            "difficulty": 10
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 6,
+            "end": 10,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "der",
-            "surface_en": "the",
-            "furigana": "[deːɐ̯]",
-            "pos": "DET",
+            "surface": "es",
+            "lemma": "es",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 11,
+            "end": 13,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "in",
+            "lemma": "in",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 14,
+            "end": 16,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "dem",
             "lemma": "der",
-            "explanation": "Definite article, nominative singular masculine; determiner of the subject noun 'Film'.",
-            "difficulty": 2
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 17,
+            "end": 20,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "Film",
-            "surface_en": "film",
-            "furigana": "[fɪlm]",
-            "pos": "NOUN",
             "lemma": "Film",
-            "explanation": "Common noun; subject of 'handelt'.",
-            "difficulty": 7
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 21,
+            "end": 25,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "heute",
-            "surface_en": "today",
-            "furigana": "[ˈhɔʏtə]",
-            "pos": "ADV",
             "lemma": "heute",
-            "explanation": "Temporal adverb; modifies the clause, part of the time expression 'heute Abend'.",
-            "difficulty": 7
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 26,
+            "end": 31,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "Abend",
-            "surface_en": "evening",
-            "furigana": "[ˈaːbənt]",
-            "pos": "NOUN",
             "lemma": "Abend",
-            "explanation": "Common noun used in a temporal expression ('heute Abend') indicating time.",
-            "difficulty": 7
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 32,
+            "end": 37,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "?",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 37,
+            "end": 38,
+            "analyzer": "spacy_de_core_news_lg"
           }
         ],
         "difficulty_aggregated": 6.67
       },
       {
-        "sentence": "Worum geht's bei dem Meeting morgen?",
+        "sentence": "Worum geht's beim Meeting morgen?",
         "tokens": [
           {
             "surface": "Worum",
-            "surface_en": "about what",
-            "furigana": "[ˈvoːʁʊm]",
-            "pos": "ADV",
             "lemma": "worum",
-            "explanation": "Pronominal adverb meaning 'about what'; targets the topic of discussion.",
-            "difficulty": 7,
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "PWAV",
+            "feats": {},
+            "start": 0,
+            "end": 5,
+            "analyzer": "spacy_de_core_news_lg",
             "is_main_word": true
           },
           {
             "surface": "geht's",
-            "surface_en": "is about",
-            "furigana": "[ɡeːts]",
+            "lemma": "geht's",
             "pos": "VERB",
-            "lemma": "gehen",
-            "explanation": "Finite verb form with enclitic '’s' representing 'es'; contraction of 'geht es' in the impersonal construction 'es geht (um …)'.",
-            "difficulty": 7
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 6,
+            "end": 12,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "bei",
-            "surface_en": "at",
-            "furigana": "[baɪ]",
-            "pos": "ADP",
+            "surface": "beim",
             "lemma": "bei",
-            "explanation": "Preposition selecting dative; introduces the setting/context ('bei dem Meeting').",
-            "difficulty": 2
-          },
-          {
-            "surface": "dem",
-            "surface_en": "the",
-            "furigana": "[deːm]",
-            "pos": "DET",
-            "lemma": "der",
-            "explanation": "Definite article, dative singular; determiner of 'Meeting' as the complement of 'bei'.",
-            "difficulty": 2
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPRART",
+            "feats": {},
+            "start": 13,
+            "end": 17,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "Meeting",
-            "surface_en": "meeting",
-            "furigana": "[ˈmiːtɪŋ]",
-            "pos": "NOUN",
             "lemma": "Meeting",
-            "explanation": "Loanword noun; object of the preposition 'bei'.",
-            "difficulty": 10
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 18,
+            "end": 25,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "morgen",
-            "surface_en": "tomorrow",
-            "furigana": "[ˈmɔʁɡən]",
-            "pos": "ADV",
             "lemma": "morgen",
-            "explanation": "Temporal adverb; modifies the clause to indicate time.",
-            "difficulty": 7
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 26,
+            "end": 32,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "?",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 32,
+            "end": 33,
+            "analyzer": "spacy_de_core_news_lg"
           }
         ],
         "difficulty_aggregated": 5.83
       }
     ],
-    "es": [
-      "¿De qué trata el curso?",
-      "¿De qué discuten otra vez?",
-      "¿De qué trata la película de esta noche?",
-      "¿De qué va la reunión de mañana?"
-    ],
-    "fr": [
-      "De quoi parle le cours ?",
-      "Vous vous disputez encore pour quoi ?",
-      "De quoi parle le film de ce soir ?",
-      "De quoi parle la réunion de demain ?"
-    ],
-    "it": [
-      "Di cosa parla il corso?",
-      "Di cosa state litigando di nuovo?",
-      "Di cosa parla il film di stasera?",
-      "Di cosa parla la riunione di domani?"
-    ],
-    "ko": [
-      "그 수업은 뭐에 관한 거예요?",
-      "또 뭐 가지고 싸우는 거예요?",
-      "오늘 밤 영화는 뭐에 관한 거예요?",
-      "내일 회의는 뭐에 관한 거예요?"
-    ],
-    "zh-Hans": [
-      "这门课是讲什么的？",
-      "你们又在吵什么？",
-      "今晚的电影是讲什么的？",
-      "明天的会议是讨论什么？"
-    ],
-    "yue": [
-      "呢個課程係講乜嘢？",
-      "你哋又為乜嘢嘈交？",
-      "今晚嗰套電影係講乜嘢？",
-      "聽日個會係講乜嘢？"
-    ],
-    "ru": [
-      "О чём этот курс?",
-      "О чём вы снова спорите?",
-      "О чём фильм сегодня вечером?",
-      "О чём будет завтрашняя встреча?"
-    ],
-    "pt": [
-      "Sobre o que é o curso?",
-      "Vocês estão discutindo de novo sobre o quê?",
-      "Sobre o que é o filme de hoje à noite?",
-      "Sobre o que é a reunião de amanhã?"
-    ],
-    "he": [
-      "על מה הקורס?",
-      "על מה אתם שוב רבים?",
-      "על מה הסרט הערב?",
-      "על מה הפגישה מחר?"
-    ],
-    "tr": [
-      "Kurs ne hakkında?",
-      "Yine ne hakkında tartışıyorsunuz?",
-      "Bu akşamki film ne hakkında?",
-      "Yarınki toplantı ne hakkında?"
-    ],
-    "vi": [
-      "Khóa học này nói về gì?",
-      "Các bạn lại đang cãi nhau về chuyện gì vậy?",
-      "Bộ phim tối nay nói về gì?",
-      "Cuộc họp ngày mai nói về gì?"
-    ],
+    "word_POS": "Adverb",
+    "entry_id": "worum",
+    "word_en": "what about; about what",
+    "word_es": "de qué; sobre qué",
+    "word_fr": "de quoi; sur quoi",
+    "word_it": "di cosa; su cosa",
+    "word_ko": "무엇에 대해; 무엇에 관해",
+    "word_zh-Hans": "关于什么",
+    "word_yue": "關於乜嘢",
+    "word_ru": "о чём",
+    "word_pt": "sobre o que; de que",
+    "word_he": "על מה; לגבי מה",
+    "word_tr": "ne hakkında; neyle ilgili",
+    "word_vi": "về gì",
+    "word_ar": "عن ماذا; عمّ",
+    "word_nl": "waarover; waar het over gaat",
+    "word_uk": "про що",
+    "word_hu": "miről; miről van szó",
+    "word_hi": "किस बारे में; किस विषय में",
+    "word_pl": "o czym",
+    "word_el": "για ποιο πράγμα; σχετικά με τι",
+    "word_nb": "hva handler det om",
+    "word_id": "tentang apa",
+    "word_sv": "vad handlar det om",
+    "word_ro": "despre ce",
+    "word_cs": "o čem",
+    "word_da": "hvad handler det om",
+    "word_fi": "mistä; mistä on kyse",
+    "word_ja": "何について; 何に関して",
+    "word_de": "worum",
     "ar": [
       "ما موضوع الدورة؟",
       "عن ماذا تتشاجرون مرة أخرى؟",
       "عن ماذا يدور فيلم الليلة؟",
       "ما موضوع اجتماع الغد؟"
-    ],
-    "nl": [
-      "Waar gaat de cursus over?",
-      "Waarover hebben jullie nu weer ruzie?",
-      "Waar gaat de film van vanavond over?",
-      "Waar gaat de vergadering morgen over?"
-    ],
-    "uk": [
-      "Про що цей курс?",
-      "Про що ви знову сперечаєтесь?",
-      "Про що сьогоднішній фільм?",
-      "Про що буде завтрашня нарада?"
-    ],
-    "hu": [
-      "Miről szól a tanfolyam?",
-      "Min vitatkoztok megint?",
-      "Miről szól a ma esti film?",
-      "Miről lesz a holnapi megbeszélés?"
-    ],
-    "hi": [
-      "यह पाठ्यक्रम किस बारे में है?",
-      "तुम लोग फिर किस बात पर झगड़ रहे हो?",
-      "आज रात की फ़िल्म किस बारे में है?",
-      "कल की मीटिंग किस बारे में है?"
-    ],
-    "pl": [
-      "O czym jest ten kurs?",
-      "O co znowu się kłócicie?",
-      "O czym jest dzisiejszy film?",
-      "O czym będzie jutrzejsze spotkanie?"
-    ],
-    "el": [
-      "Για τι είναι το μάθημα;",
-      "Για τι τσακώνεστε πάλι;",
-      "Για τι είναι η αποψινή ταινία;",
-      "Για τι είναι η αυριανή συνάντηση;"
-    ],
-    "nb": [
-      "Hva handler kurset om?",
-      "Hva krangler dere om nå igjen?",
-      "Hva handler filmen i kveld om?",
-      "Hva handler møtet i morgen om?"
-    ],
-    "id": [
-      "Kursus ini tentang apa?",
-      "Kalian lagi ribut soal apa lagi?",
-      "Film malam ini tentang apa?",
-      "Rapat besok tentang apa?"
-    ],
-    "sv": [
-      "Vad handlar kursen om?",
-      "Vad bråkar ni om nu igen?",
-      "Vad handlar kvällens film om?",
-      "Vad handlar mötet i morgon om?"
-    ],
-    "ro": [
-      "Despre ce este cursul?",
-      "Despre ce vă certați iar?",
-      "Despre ce este filmul din seara asta?",
-      "Despre ce este întâlnirea de mâine?"
     ],
     "cs": [
       "O čem je ten kurz?",
@@ -871,11 +1416,77 @@
       "Hvad handler filmen i aften om?",
       "Hvad handler mødet i morgen om?"
     ],
+    "de": [
+      "Worum geht es in dem Kurs?",
+      "Worum streitet ihr schon wieder?",
+      "Worum handelt der Film heute Abend?",
+      "Worum geht's bei dem Meeting morgen?"
+    ],
+    "el": [
+      "Τι θέμα έχει το μάθημα;",
+      "Για τι τσακώνεστε πάλι;",
+      "Για τι είναι η αποψινή ταινία;",
+      "Για τι είναι η αυριανή συνάντηση;"
+    ],
+    "en": [
+      "What is the course about?",
+      "What are you arguing about again?",
+      "What is the film about tonight?",
+      "What’s the meeting about tomorrow?"
+    ],
+    "es": [
+      "¿De qué trata el curso?",
+      "¿De qué discuten otra vez?",
+      "¿De qué trata la película de esta noche?",
+      "¿De qué va la reunión de mañana?"
+    ],
     "fi": [
       "Mistä kurssissa on kyse?",
       "Mistä te oikein riitelette taas?",
       "Mistä tämän illan elokuva kertoo?",
       "Mistä on kyse huomisen kokouksessa?"
+    ],
+    "fr": [
+      "De quoi parle le cours ?",
+      "Vous vous disputez encore à propos de quoi ?",
+      "De quoi parle le film de ce soir ?",
+      "De quoi parle la réunion de demain ?"
+    ],
+    "he": [
+      "על מה הקורס?",
+      "על מה אתם שוב רבים?",
+      "על מה הסרט הערב?",
+      "על מה הפגישה מחר?"
+    ],
+    "hi": [
+      "यह पाठ्यक्रम किस बारे में है?",
+      "तुम लोग फिर किस बात पर झगड़ रहे हो?",
+      "आज रात की फ़िल्म किस बारे में है?",
+      "कल की मीटिंग किस बारे में है?"
+    ],
+    "hu": [
+      "Miről szól a tanfolyam?",
+      "Min vitatkoztok megint?",
+      "Miről szól a ma esti film?",
+      "Miről lesz a holnapi megbeszélés?"
+    ],
+    "id": [
+      "Kursus ini tentang apa?",
+      "Kalian lagi ribut soal apa lagi?",
+      "Film malam ini tentang apa?",
+      "Rapat besok tentang apa?"
+    ],
+    "ipa": [
+      "/voˈʁʊm ɡeːt ʔɛs ɪn deːm kʊʁs/",
+      "/voˈʁʊm ˈʃtʁaɪtət iːɐ̯ ʃoːn ˈviːdɐ/",
+      "/voˈʁʊm ˈhandəlt deːɐ̯ fɪlm ˈhɔʏtə ˈaːbənt/",
+      "/voˈʁʊm ɡeːts baɪ deːm ˈmiːtɪŋ ˈmɔʁɡn̩/"
+    ],
+    "it": [
+      "Di cosa parla il corso?",
+      "Di cosa state litigando di nuovo?",
+      "Di cosa parla il film di stasera?",
+      "Di cosa parla la riunione di domani?"
     ],
     "ja": [
       "この講座は何についてですか？",
@@ -883,6 +1494,83 @@
       "今夜の映画は何についてですか？",
       "明日の会議は何についてですか？"
     ],
-    "word_POS": "Adverb"
+    "ko": [
+      "그 수업은 뭐에 관한 거예요?",
+      "또 뭐 가지고 싸우는 거예요?",
+      "오늘 밤 영화는 뭐에 관한 거예요?",
+      "내일 회의는 뭐에 관한 거예요?"
+    ],
+    "nb": [
+      "Hva handler kurset om?",
+      "Hva krangler dere om nå igjen?",
+      "Hva handler filmen i kveld om?",
+      "Hva handler møtet i morgen om?"
+    ],
+    "nl": [
+      "Waar gaat de cursus over?",
+      "Waarover hebben jullie nu weer ruzie?",
+      "Waar gaat de film van vanavond over?",
+      "Waar gaat de vergadering morgen over?"
+    ],
+    "pl": [
+      "O czym jest ten kurs?",
+      "O co znowu się kłócicie?",
+      "O czym jest dzisiejszy film?",
+      "O czym będzie jutrzejsze spotkanie?"
+    ],
+    "pt": [
+      "Sobre o que é o curso?",
+      "Sobre o que vocês estão discutindo de novo?",
+      "Sobre o que é o filme de hoje à noite?",
+      "Sobre o que é a reunião de amanhã?"
+    ],
+    "ro": [
+      "Despre ce este cursul?",
+      "Despre ce vă certați iar?",
+      "Despre ce este filmul din seara asta?",
+      "Despre ce este întâlnirea de mâine?"
+    ],
+    "ru": [
+      "О чём этот курс?",
+      "О чём вы снова спорите?",
+      "О чём фильм сегодня вечером?",
+      "О чём будет завтрашняя встреча?"
+    ],
+    "sv": [
+      "Vad handlar kursen om?",
+      "Vad bråkar ni om nu igen?",
+      "Vad handlar kvällens film om?",
+      "Vad handlar mötet i morgon om?"
+    ],
+    "tr": [
+      "Kurs ne hakkında?",
+      "Yine ne hakkında tartışıyorsunuz?",
+      "Bu akşamki film ne hakkında?",
+      "Yarınki toplantı ne hakkında?"
+    ],
+    "uk": [
+      "Про що цей курс?",
+      "Про що ви знову сперечаєтесь?",
+      "Про що сьогоднішній фільм?",
+      "Про що буде завтрашня нарада?"
+    ],
+    "vi": [
+      "Khóa học này nói về gì?",
+      "Các bạn lại đang cãi nhau về chuyện gì vậy?",
+      "Bộ phim tối nay nói về gì?",
+      "Cuộc họp ngày mai nói về gì?"
+    ],
+    "yue": [
+      "呢個課程係講乜嘢？",
+      "你哋又為乜嘢嘈交？",
+      "今晚嗰套電影係講乜嘢？",
+      "聽日個會係講乜嘢？"
+    ],
+    "zh-Hans": [
+      "这门课是讲什么的？",
+      "你们又在吵什么？",
+      "今晚的电影是讲什么的？",
+      "明天的会议是讨论什么？"
+    ]
   }
 }

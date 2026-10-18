@@ -47,7 +47,7 @@
       "target": "Ich bin seit drei Jahren Nichtraucher.",
       "reading": "/ɪç bɪn ˈnɪçtʁaʊ̯xɐ zaɪ̯t dʁaɪ̯ ˈjaːʁən/",
       "translations": {
-        "de": "Ich bin Nichtraucher seit drei Jahren.",
+        "de": "Ich bin seit drei Jahren Nichtraucher.",
         "ipa": "/ɪç bɪn ˈnɪçtʁaʊ̯xɐ zaɪ̯t dʁaɪ̯ ˈjaːʁən/",
         "en": "I’ve been a non-smoker for three years.",
         "es": "Llevo tres años sin fumar.",
@@ -212,10 +212,10 @@
       "difficulty": 5.25
     },
     {
-      "target": "Mein Bruder bleibt Nichtraucher trotz Stress.",
+      "target": "Mein Bruder bleibt trotz Stress Nichtraucher.",
       "reading": "/maɪ̯n ˈbʁuːdɐ blaɪ̯pt ˈnɪçtʁaʊ̯xɐ tʁɔts ʃtʁɛs/",
       "translations": {
-        "de": "Mein Bruder bleibt Nichtraucher trotz Stress.",
+        "de": "Mein Bruder bleibt trotz Stress Nichtraucher.",
         "ipa": "/maɪ̯n ˈbʁuːdɐ blaɪ̯pt ˈnɪçtʁaʊ̯xɐ tʁɔts ʃtʁɛs/",
         "en": "My brother remains a non-smoker despite stress.",
         "es": "Mi hermano sigue sin fumar a pesar del estrés.",
@@ -248,58 +248,81 @@
       "tokens": [
         {
           "surface": "Mein",
-          "surface_en": "my",
-          "furigana": "[maɪ̯n]",
-          "pos": "DET",
           "lemma": "mein",
-          "explanation": "Possessive determiner agreeing with 'Bruder'.",
-          "difficulty": 7
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "PPOSAT",
+          "feats": {},
+          "start": 0,
+          "end": 4,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "Bruder",
-          "surface_en": "brother",
-          "furigana": "[ˈbʁuːdɐ]",
-          "pos": "NOUN",
           "lemma": "Bruder",
-          "explanation": "Head noun, nominative singular; subject.",
-          "difficulty": 7
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 5,
+          "end": 11,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "bleibt",
-          "surface_en": "remains",
-          "furigana": "[blaɪ̯pt]",
-          "pos": "VERB",
           "lemma": "bleiben",
-          "explanation": "Finite verb linking subject to predicate nominal.",
-          "difficulty": 7
-        },
-        {
-          "surface": "Nichtraucher",
-          "surface_en": "non-smoker",
-          "furigana": "[ˈnɪçtʁaʊ̯xɐ]",
-          "pos": "NOUN",
-          "lemma": "Nichtraucher",
-          "explanation": "Predicate nominal complement of 'bleibt'.",
-          "difficulty": 10,
-          "is_main_word": true
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VVFIN",
+          "feats": {},
+          "start": 12,
+          "end": 18,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "trotz",
-          "surface_en": "despite",
-          "furigana": "[tʁɔt͡s]",
-          "pos": "ADP",
           "lemma": "trotz",
-          "explanation": "Preposition governing genitive; adversative meaning 'despite'.",
-          "difficulty": 7
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "APPR",
+          "feats": {},
+          "start": 19,
+          "end": 24,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "Stress.",
-          "surface_en": "stress",
-          "furigana": "[ʃtʁɛs]",
-          "pos": "NOUN",
+          "surface": "Stress",
           "lemma": "Stress",
-          "explanation": "Noun complement to 'trotz'.",
-          "difficulty": 7
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 25,
+          "end": 31,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "Nichtraucher",
+          "lemma": "Nichtraucher",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 32,
+          "end": 44,
+          "analyzer": "spacy_de_core_news_lg",
+          "is_main_word": true
+        },
+        {
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 44,
+          "end": 45,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 7.5
@@ -409,8 +432,292 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-15T02:19:23Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:De b1/6b4204eccaef03ca",
+      "revision_id": 85187,
+      "parent_revision_id": 17146,
+      "revision_timestamp_utc": "2026-10-15T02:19:23Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Aligned the duplicated German translation with its target and improved German word order around the concessive phrase.",
+      "pulled_utc": "2026-10-17T07:06:39Z",
+      "applied_utc": "2026-10-17T07:06:50Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-d2055d7a83ed0f82",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_b1:6b4204eccaef03ca",
+        "pack_code": "de_b1",
+        "entry_id": "Nichtraucher",
+        "language": "de",
+        "sentence_index": 3,
+        "old_sentence": "Mein Bruder bleibt Nichtraucher trotz Stress.",
+        "old_translations": {
+          "de": "Mein Bruder bleibt Nichtraucher trotz Stress.",
+          "ipa": "/maɪ̯n ˈbʁuːdɐ blaɪ̯pt ˈnɪçtʁaʊ̯xɐ tʁɔts ʃtʁɛs/",
+          "en": "My brother remains a non-smoker despite stress.",
+          "es": "Mi hermano sigue sin fumar a pesar del estrés.",
+          "fr": "Mon frère reste non-fumeur malgré le stress.",
+          "it": "Mio fratello continua a non fumare nonostante lo stress.",
+          "ko": "제 남동생은 스트레스를 받아도 담배를 안 피워요.",
+          "zh-Hans": "我哥哥即使压力很大也坚持不抽烟。",
+          "yue": "我阿哥即使有壓力都唔抽煙。",
+          "ru": "Мой брат остаётся некурящим, несмотря на стресс.",
+          "pt": "Meu irmão continua sem fumar apesar do estresse.",
+          "he": "אחי ממשיך לא לעשן למרות הלחץ.",
+          "tr": "Erkek kardeşim strese rağmen sigara içmiyor.",
+          "vi": "Anh trai tôi vẫn không hút thuốc dù căng thẳng.",
+          "ar": "أخي يظل ممتنعًا عن التدخين رغم الضغط.",
+          "nl": "Mijn broer blijft rookvrij ondanks stress.",
+          "uk": "Мій брат залишається некурцем попри стрес.",
+          "hu": "A bátyám a stressz ellenére sem dohányzik.",
+          "hi": "मेरे भाई तनाव के बावजूद धूम्रपान नहीं करते.",
+          "pl": "Mój brat mimo stresu wciąż nie pali.",
+          "el": "Ο αδελφός μου παραμένει μη καπνιστής παρά το άγχος.",
+          "nb": "Broren min forblir røykfri til tross for stress.",
+          "id": "Kakak saya tetap tidak merokok meski stres.",
+          "sv": "Min bror förblir rökfri trots stress.",
+          "ro": "Fratele meu rămâne nefumător în ciuda stresului.",
+          "cs": "Můj bratr zůstává nekuřákem i přes stres.",
+          "da": "Min bror er stadig røgfri trods stress.",
+          "fi": "Veljeni pysyy savuttomana stressistä huolimatta.",
+          "ja": "兄はストレスがあっても吸いません。"
+        },
+        "proposed_sentence": "Mein Bruder bleibt trotz Stress Nichtraucher.",
+        "proposed_translations": {
+          "de": "Mein Bruder bleibt trotz Stress Nichtraucher.",
+          "ipa": "/maɪ̯n ˈbʁuːdɐ blaɪ̯pt ˈnɪçtʁaʊ̯xɐ tʁɔts ʃtʁɛs/",
+          "en": "My brother remains a non-smoker despite stress.",
+          "es": "Mi hermano sigue sin fumar a pesar del estrés.",
+          "fr": "Mon frère reste non-fumeur malgré le stress.",
+          "it": "Mio fratello continua a non fumare nonostante lo stress.",
+          "ko": "제 남동생은 스트레스를 받아도 담배를 안 피워요.",
+          "zh-Hans": "我哥哥即使压力很大也坚持不抽烟。",
+          "yue": "我阿哥即使有壓力都唔抽煙。",
+          "ru": "Мой брат остаётся некурящим, несмотря на стресс.",
+          "pt": "Meu irmão continua sem fumar apesar do estresse.",
+          "he": "אחי ממשיך לא לעשן למרות הלחץ.",
+          "tr": "Erkek kardeşim strese rağmen sigara içmiyor.",
+          "vi": "Anh trai tôi vẫn không hút thuốc dù căng thẳng.",
+          "ar": "أخي يظل ممتنعًا عن التدخين رغم الضغط.",
+          "nl": "Mijn broer blijft rookvrij ondanks stress.",
+          "uk": "Мій брат залишається некурцем попри стрес.",
+          "hu": "A bátyám a stressz ellenére sem dohányzik.",
+          "hi": "मेरे भाई तनाव के बावजूद धूम्रपान नहीं करते.",
+          "pl": "Mój brat mimo stresu wciąż nie pali.",
+          "el": "Ο αδελφός μου παραμένει μη καπνιστής παρά το άγχος.",
+          "nb": "Broren min forblir røykfri til tross for stress.",
+          "id": "Kakak saya tetap tidak merokok meski stres.",
+          "sv": "Min bror förblir rökfri trots stress.",
+          "ro": "Fratele meu rămâne nefumător în ciuda stresului.",
+          "cs": "Můj bratr zůstává nekuřákem i přes stres.",
+          "da": "Min bror er stadig røgfri trods stress.",
+          "fi": "Veljeni pysyy savuttomana stressistä huolimatta.",
+          "ja": "兄はストレスがあっても吸いません。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Mein Bruder bleibt trotz Stress Nichtraucher.",
+        "old_japanese": "Mein Bruder bleibt Nichtraucher trotz Stress.",
+        "old_english": "My brother remains a non-smoker despite stress.",
+        "proposed_japanese": "Mein Bruder bleibt trotz Stress Nichtraucher.",
+        "proposed_english": "My brother remains a non-smoker despite stress.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Mein Bruder bleibt trotz Stress Nichtraucher.",
+          "tokens": [
+            {
+              "surface": "Mein",
+              "lemma": "mein",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "PPOSAT",
+              "feats": {},
+              "start": 0,
+              "end": 4,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Bruder",
+              "lemma": "Bruder",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 5,
+              "end": 11,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "bleibt",
+              "lemma": "bleiben",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVFIN",
+              "feats": {},
+              "start": 12,
+              "end": 18,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "trotz",
+              "lemma": "trotz",
+              "pos": "ADP",
+              "upos": "ADP",
+              "xpos": "APPR",
+              "feats": {},
+              "start": 19,
+              "end": 24,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Stress",
+              "lemma": "Stress",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 25,
+              "end": 31,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Nichtraucher",
+              "lemma": "Nichtraucher",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 32,
+              "end": 44,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 44,
+              "end": 45,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Mein",
+            "lemma": "mein",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "PPOSAT",
+            "feats": {},
+            "start": 0,
+            "end": 4,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Bruder",
+            "lemma": "Bruder",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 5,
+            "end": 11,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "bleibt",
+            "lemma": "bleiben",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 12,
+            "end": 18,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "trotz",
+            "lemma": "trotz",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 19,
+            "end": 24,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Stress",
+            "lemma": "Stress",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 25,
+            "end": 31,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Nichtraucher",
+            "lemma": "Nichtraucher",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 32,
+            "end": 44,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 44,
+            "end": 45,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:06:39Z",
+        "updated_utc": "2026-10-17T07:07:06Z",
+        "applied_utc": "2026-10-17T07:07:06Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:07:06Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -422,34 +729,6 @@
     "word": "Nichtraucher",
     "word_reading": "",
     "word_label": "Substantiv (der, das mask., neutr.)",
-    "word_en": "non-smoker",
-    "word_es": "no fumador",
-    "word_fr": "non-fumeur",
-    "word_it": "non fumatore",
-    "word_ko": "비흡연자",
-    "word_zh-Hans": "不吸烟者",
-    "word_yue": "不吸煙者",
-    "word_ru": "некурящий",
-    "word_pt": "não fumante",
-    "word_he": "לא מעשן",
-    "word_tr": "sigara içmeyen",
-    "word_vi": "người không hút thuốc",
-    "word_ar": "غير مدخن",
-    "word_nl": "niet-roker",
-    "word_uk": "некурець",
-    "word_hu": "nem dohányzó",
-    "word_hi": "धूम्रपान न करने वाला",
-    "word_pl": "niepalący",
-    "word_el": "μη καπνιστής",
-    "word_nb": "ikke-røyker",
-    "word_id": "bukan perokok",
-    "word_sv": "icke-rökare",
-    "word_ro": "nefumător",
-    "word_cs": "nekuřák",
-    "word_da": "ikke-ryger",
-    "word_fi": "tupakoimaton",
-    "word_ja": "非喫煙者",
-    "word_de": "Nichtraucher",
     "comic_difficulty": 5.86,
     "jp": [
       "Ich bin seit drei Jahren Nichtraucher.",
@@ -462,24 +741,6 @@
       "/viːɐ̯ ˈzɪtsn ɪm ˈnɪçtʁaʊ̯xɐbəˌʁaɪ̯ç/",
       "/maɪ̯n ˈbʁuːdɐ blaɪ̯pt ˈnɪçtʁaʊ̯xɐ tʁɔts ʃtʁɛs/",
       "/ɪm tsuːk ˈvɛːlə ɪç deːn ˈnɪçtʁaʊ̯xɐbəˌʁaɪ̯ç/"
-    ],
-    "de": [
-      "Ich bin Nichtraucher seit drei Jahren.",
-      "Wir sitzen im Nichtraucherbereich.",
-      "Mein Bruder bleibt Nichtraucher trotz Stress.",
-      "Im Zug wähle ich den Nichtraucherbereich."
-    ],
-    "ipa": [
-      "/ɪç bɪn ˈnɪçtʁaʊ̯xɐ zaɪ̯t dʁaɪ̯ ˈjaːʁən/",
-      "/viːɐ̯ ˈzɪtsn ɪm ˈnɪçtʁaʊ̯xɐbəˌʁaɪ̯ç/",
-      "/maɪ̯n ˈbʁuːdɐ blaɪ̯pt ˈnɪçtʁaʊ̯xɐ tʁɔts ʃtʁɛs/",
-      "/ɪm tsuːk ˈvɛːlə ɪç deːn ˈnɪçtʁaʊ̯xɐbəˌʁaɪ̯ç/"
-    ],
-    "en": [
-      "I’ve been a non-smoker for three years.",
-      "We’re sitting in the non-smoking section.",
-      "My brother remains a non-smoker despite stress.",
-      "On the train I choose the non-smoking section."
     ],
     "pos_analysis": [
       {
@@ -587,62 +848,85 @@
         "difficulty_aggregated": 5.25
       },
       {
-        "sentence": "Mein Bruder bleibt Nichtraucher trotz Stress.",
+        "sentence": "Mein Bruder bleibt trotz Stress Nichtraucher.",
         "tokens": [
           {
             "surface": "Mein",
-            "surface_en": "my",
-            "furigana": "[maɪ̯n]",
-            "pos": "DET",
             "lemma": "mein",
-            "explanation": "Possessive determiner agreeing with 'Bruder'.",
-            "difficulty": 7
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "PPOSAT",
+            "feats": {},
+            "start": 0,
+            "end": 4,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "Bruder",
-            "surface_en": "brother",
-            "furigana": "[ˈbʁuːdɐ]",
-            "pos": "NOUN",
             "lemma": "Bruder",
-            "explanation": "Head noun, nominative singular; subject.",
-            "difficulty": 7
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 5,
+            "end": 11,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "bleibt",
-            "surface_en": "remains",
-            "furigana": "[blaɪ̯pt]",
-            "pos": "VERB",
             "lemma": "bleiben",
-            "explanation": "Finite verb linking subject to predicate nominal.",
-            "difficulty": 7
-          },
-          {
-            "surface": "Nichtraucher",
-            "surface_en": "non-smoker",
-            "furigana": "[ˈnɪçtʁaʊ̯xɐ]",
-            "pos": "NOUN",
-            "lemma": "Nichtraucher",
-            "explanation": "Predicate nominal complement of 'bleibt'.",
-            "difficulty": 10,
-            "is_main_word": true
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 12,
+            "end": 18,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "trotz",
-            "surface_en": "despite",
-            "furigana": "[tʁɔt͡s]",
-            "pos": "ADP",
             "lemma": "trotz",
-            "explanation": "Preposition governing genitive; adversative meaning 'despite'.",
-            "difficulty": 7
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 19,
+            "end": 24,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "Stress.",
-            "surface_en": "stress",
-            "furigana": "[ʃtʁɛs]",
-            "pos": "NOUN",
+            "surface": "Stress",
             "lemma": "Stress",
-            "explanation": "Noun complement to 'trotz'.",
-            "difficulty": 7
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 25,
+            "end": 31,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Nichtraucher",
+            "lemma": "Nichtraucher",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 32,
+            "end": 44,
+            "analyzer": "spacy_de_core_news_lg",
+            "is_main_word": true
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 44,
+            "end": 45,
+            "analyzer": "spacy_de_core_news_lg"
           }
         ],
         "difficulty_aggregated": 7.5
@@ -709,137 +993,41 @@
         "difficulty_aggregated": 4.5
       }
     ],
-    "es": [
-      "Llevo tres años sin fumar.",
-      "Estamos sentados en la zona de no fumadores.",
-      "Mi hermano sigue sin fumar a pesar del estrés.",
-      "En el tren elijo la zona de no fumadores."
-    ],
-    "fr": [
-      "Je ne fume plus depuis trois ans.",
-      "Nous sommes assis dans la zone non-fumeurs.",
-      "Mon frère reste non-fumeur malgré le stress.",
-      "Dans le train, je choisis la voiture non-fumeur."
-    ],
-    "it": [
-      "Non fumo da tre anni.",
-      "Siamo seduti nella zona non fumatori.",
-      "Mio fratello continua a non fumare nonostante lo stress.",
-      "In treno scelgo la carrozza per non fumatori."
-    ],
-    "ko": [
-      "담배를 끊은 지 3년 됐어요.",
-      "우리는 금연 구역에 앉아 있어요.",
-      "제 남동생은 스트레스를 받아도 담배를 안 피워요.",
-      "기차에서는 금연 칸을 선택해요."
-    ],
-    "zh-Hans": [
-      "我已经三年不抽烟了。",
-      "我们坐在无烟区。",
-      "我哥哥即使压力很大也坚持不抽烟。",
-      "在火车上我选择无烟车厢。"
-    ],
-    "yue": [
-      "我已經三年冇抽煙啦。",
-      "我哋坐喺禁煙區。",
-      "我阿哥即使有壓力都唔抽煙。",
-      "喺火車上我會揀禁煙車廂。"
-    ],
-    "ru": [
-      "Я не курю уже три года.",
-      "Мы сидим в зоне для некурящих.",
-      "Мой брат остаётся некурящим, несмотря на стресс.",
-      "В поезде я выбираю вагон для некурящих."
-    ],
-    "pt": [
-      "Não fumo há três anos.",
-      "Estamos sentados na área para não fumantes.",
-      "Meu irmão continua sem fumar apesar do estresse.",
-      "No trem eu escolho a área para não fumantes."
-    ],
-    "he": [
-      "אני לא מעשן כבר שלוש שנים.",
-      "אנחנו יושבים באזור ללא עישון.",
-      "אחי ממשיך לא לעשן למרות הלחץ.",
-      "ברכבת אני בוחר לשבת באזור ללא עישון."
-    ],
-    "tr": [
-      "Üç yıldır sigara içmiyorum.",
-      "Sigara içilmeyen bölümde oturuyoruz.",
-      "Erkek kardeşim strese rağmen sigara içmiyor.",
-      "Trende sigara içilmeyen bölümü seçiyorum."
-    ],
-    "vi": [
-      "Tôi đã bỏ thuốc được ba năm rồi.",
-      "Chúng tôi ngồi ở khu vực không hút thuốc.",
-      "Anh trai tôi vẫn không hút thuốc dù căng thẳng.",
-      "Trên tàu tôi chọn khoang không hút thuốc."
-    ],
+    "word_POS": "Noun",
+    "entry_id": "Nichtraucher",
+    "word_en": "non-smoker",
+    "word_es": "no fumador",
+    "word_fr": "non-fumeur",
+    "word_it": "non fumatore",
+    "word_ko": "비흡연자",
+    "word_zh-Hans": "不吸烟者",
+    "word_yue": "不吸煙者",
+    "word_ru": "некурящий",
+    "word_pt": "não fumante",
+    "word_he": "לא מעשן",
+    "word_tr": "sigara içmeyen",
+    "word_vi": "người không hút thuốc",
+    "word_ar": "غير مدخن",
+    "word_nl": "niet-roker",
+    "word_uk": "некурець",
+    "word_hu": "nem dohányzó",
+    "word_hi": "धूम्रपान न करने वाला",
+    "word_pl": "niepalący",
+    "word_el": "μη καπνιστής",
+    "word_nb": "ikke-røyker",
+    "word_id": "bukan perokok",
+    "word_sv": "icke-rökare",
+    "word_ro": "nefumător",
+    "word_cs": "nekuřák",
+    "word_da": "ikke-ryger",
+    "word_fi": "tupakoimaton",
+    "word_ja": "非喫煙者",
+    "word_de": "Nichtraucher",
     "ar": [
       "لم أدخن منذ ثلاث سنوات.",
       "نحن نجلس في قسم غير المدخنين.",
       "أخي يظل ممتنعًا عن التدخين رغم الضغط.",
       "في القطار أختار عربة غير المدخنين."
-    ],
-    "nl": [
-      "Ik rook al drie jaar niet.",
-      "We zitten in het niet-rokersgedeelte.",
-      "Mijn broer blijft rookvrij ondanks stress.",
-      "In de trein kies ik het niet-rokersgedeelte."
-    ],
-    "uk": [
-      "Я не курю вже три роки.",
-      "Ми сидимо в зоні для некурців.",
-      "Мій брат залишається некурцем попри стрес.",
-      "У поїзді я обираю вагон для некурців."
-    ],
-    "hu": [
-      "Három éve nem dohányzom.",
-      "A nemdohányzó részen ülünk.",
-      "A bátyám a stressz ellenére sem dohányzik.",
-      "A vonaton a nemdohányzó kocsit választom."
-    ],
-    "hi": [
-      "मुझे धूम्रपान छोड़े तीन साल हो गए हैं.",
-      "हम धूम्रपान रहित क्षेत्र में बैठे हैं.",
-      "मेरे भाई तनाव के बावजूद धूम्रपान नहीं करते.",
-      "ट्रेन में मैं धूम्रपान रहित डिब्बा चुनता हूँ."
-    ],
-    "pl": [
-      "Nie palę od trzech lat.",
-      "Siedzimy w strefie dla niepalących.",
-      "Mój brat mimo stresu wciąż nie pali.",
-      "W pociągu wybieram wagon dla niepalących."
-    ],
-    "el": [
-      "Δεν καπνίζω εδώ και τρία χρόνια.",
-      "Καθόμαστε στον χώρο μη καπνιστών.",
-      "Ο αδελφός μου παραμένει μη καπνιστής παρά το άγχος.",
-      "Στο τρένο διαλέγω το βαγόνι μη καπνιστών."
-    ],
-    "nb": [
-      "Jeg har vært røykfri i tre år.",
-      "Vi sitter i den røykfrie delen.",
-      "Broren min forblir røykfri til tross for stress.",
-      "På toget velger jeg den røykfrie vognen."
-    ],
-    "id": [
-      "Saya sudah tidak merokok selama tiga tahun.",
-      "Kami duduk di area bebas rokok.",
-      "Kakak saya tetap tidak merokok meski stres.",
-      "Di kereta saya memilih gerbong bebas rokok."
-    ],
-    "sv": [
-      "Jag har varit rökfri i tre år.",
-      "Vi sitter i den rökfria delen.",
-      "Min bror förblir rökfri trots stress.",
-      "På tåget väljer jag den rökfria vagnen."
-    ],
-    "ro": [
-      "Nu fumez de trei ani.",
-      "Stăm în zona pentru nefumători.",
-      "Fratele meu rămâne nefumător în ciuda stresului.",
-      "În tren aleg vagonul pentru nefumători."
     ],
     "cs": [
       "Už tři roky nekouřím.",
@@ -853,11 +1041,77 @@
       "Min bror er stadig røgfri trods stress.",
       "I toget vælger jeg den røgfrie sektion."
     ],
+    "de": [
+      "Ich bin seit drei Jahren Nichtraucher.",
+      "Wir sitzen im Nichtraucherbereich.",
+      "Mein Bruder bleibt Nichtraucher trotz Stress.",
+      "Im Zug wähle ich den Nichtraucherbereich."
+    ],
+    "el": [
+      "Δεν καπνίζω εδώ και τρία χρόνια.",
+      "Καθόμαστε στον χώρο μη καπνιστών.",
+      "Ο αδελφός μου παραμένει μη καπνιστής παρά το άγχος.",
+      "Στο τρένο διαλέγω το βαγόνι μη καπνιστών."
+    ],
+    "en": [
+      "I’ve been a non-smoker for three years.",
+      "We’re sitting in the non-smoking section.",
+      "My brother remains a non-smoker despite stress.",
+      "On the train I choose the non-smoking section."
+    ],
+    "es": [
+      "Llevo tres años sin fumar.",
+      "Estamos sentados en la zona de no fumadores.",
+      "Mi hermano sigue sin fumar a pesar del estrés.",
+      "En el tren elijo la zona de no fumadores."
+    ],
     "fi": [
       "En ole polttanut kolmeen vuoteen.",
       "Istumme savuttomalla alueella.",
       "Veljeni pysyy savuttomana stressistä huolimatta.",
       "Junassa valitsen savuttoman osaston."
+    ],
+    "fr": [
+      "Je ne fume plus depuis trois ans.",
+      "Nous sommes assis dans la zone non-fumeurs.",
+      "Mon frère reste non-fumeur malgré le stress.",
+      "Dans le train, je choisis la voiture non-fumeur."
+    ],
+    "he": [
+      "אני לא מעשן כבר שלוש שנים.",
+      "אנחנו יושבים באזור ללא עישון.",
+      "אחי ממשיך לא לעשן למרות הלחץ.",
+      "ברכבת אני בוחר לשבת באזור ללא עישון."
+    ],
+    "hi": [
+      "मुझे धूम्रपान छोड़े तीन साल हो गए हैं.",
+      "हम धूम्रपान रहित क्षेत्र में बैठे हैं.",
+      "मेरे भाई तनाव के बावजूद धूम्रपान नहीं करते.",
+      "ट्रेन में मैं धूम्रपान रहित डिब्बा चुनता हूँ."
+    ],
+    "hu": [
+      "Három éve nem dohányzom.",
+      "A nemdohányzó részen ülünk.",
+      "A bátyám a stressz ellenére sem dohányzik.",
+      "A vonaton a nemdohányzó kocsit választom."
+    ],
+    "id": [
+      "Saya sudah tidak merokok selama tiga tahun.",
+      "Kami duduk di area bebas rokok.",
+      "Kakak saya tetap tidak merokok meski stres.",
+      "Di kereta saya memilih gerbong bebas rokok."
+    ],
+    "ipa": [
+      "/ɪç bɪn ˈnɪçtʁaʊ̯xɐ zaɪ̯t dʁaɪ̯ ˈjaːʁən/",
+      "/viːɐ̯ ˈzɪtsn ɪm ˈnɪçtʁaʊ̯xɐbəˌʁaɪ̯ç/",
+      "/maɪ̯n ˈbʁuːdɐ blaɪ̯pt ˈnɪçtʁaʊ̯xɐ tʁɔts ʃtʁɛs/",
+      "/ɪm tsuːk ˈvɛːlə ɪç deːn ˈnɪçtʁaʊ̯xɐbəˌʁaɪ̯ç/"
+    ],
+    "it": [
+      "Non fumo da tre anni.",
+      "Siamo seduti nella zona non fumatori.",
+      "Mio fratello continua a non fumare nonostante lo stress.",
+      "In treno scelgo la carrozza per non fumatori."
     ],
     "ja": [
       "タバコをやめて3年になります。",
@@ -865,6 +1119,83 @@
       "兄はストレスがあっても吸いません。",
       "電車では禁煙車両を選びます。"
     ],
-    "word_POS": "Noun"
+    "ko": [
+      "담배를 끊은 지 3년 됐어요.",
+      "우리는 금연 구역에 앉아 있어요.",
+      "제 남동생은 스트레스를 받아도 담배를 안 피워요.",
+      "기차에서는 금연 칸을 선택해요."
+    ],
+    "nb": [
+      "Jeg har vært røykfri i tre år.",
+      "Vi sitter i den røykfrie delen.",
+      "Broren min forblir røykfri til tross for stress.",
+      "På toget velger jeg den røykfrie vognen."
+    ],
+    "nl": [
+      "Ik rook al drie jaar niet.",
+      "We zitten in het niet-rokersgedeelte.",
+      "Mijn broer blijft rookvrij ondanks stress.",
+      "In de trein kies ik het niet-rokersgedeelte."
+    ],
+    "pl": [
+      "Nie palę od trzech lat.",
+      "Siedzimy w strefie dla niepalących.",
+      "Mój brat mimo stresu wciąż nie pali.",
+      "W pociągu wybieram wagon dla niepalących."
+    ],
+    "pt": [
+      "Não fumo há três anos.",
+      "Estamos sentados na área para não fumantes.",
+      "Meu irmão continua sem fumar apesar do estresse.",
+      "No trem eu escolho a área para não fumantes."
+    ],
+    "ro": [
+      "Nu fumez de trei ani.",
+      "Stăm în zona pentru nefumători.",
+      "Fratele meu rămâne nefumător în ciuda stresului.",
+      "În tren aleg vagonul pentru nefumători."
+    ],
+    "ru": [
+      "Я не курю уже три года.",
+      "Мы сидим в зоне для некурящих.",
+      "Мой брат остаётся некурящим, несмотря на стресс.",
+      "В поезде я выбираю вагон для некурящих."
+    ],
+    "sv": [
+      "Jag har varit rökfri i tre år.",
+      "Vi sitter i den rökfria delen.",
+      "Min bror förblir rökfri trots stress.",
+      "På tåget väljer jag den rökfria vagnen."
+    ],
+    "tr": [
+      "Üç yıldır sigara içmiyorum.",
+      "Sigara içilmeyen bölümde oturuyoruz.",
+      "Erkek kardeşim strese rağmen sigara içmiyor.",
+      "Trende sigara içilmeyen bölümü seçiyorum."
+    ],
+    "uk": [
+      "Я не курю вже три роки.",
+      "Ми сидимо в зоні для некурців.",
+      "Мій брат залишається некурцем попри стрес.",
+      "У поїзді я обираю вагон для некурців."
+    ],
+    "vi": [
+      "Tôi đã bỏ thuốc được ba năm rồi.",
+      "Chúng tôi ngồi ở khu vực không hút thuốc.",
+      "Anh trai tôi vẫn không hút thuốc dù căng thẳng.",
+      "Trên tàu tôi chọn khoang không hút thuốc."
+    ],
+    "yue": [
+      "我已經三年冇抽煙啦。",
+      "我哋坐喺禁煙區。",
+      "我阿哥即使有壓力都唔抽煙。",
+      "喺火車上我會揀禁煙車廂。"
+    ],
+    "zh-Hans": [
+      "我已经三年不抽烟了。",
+      "我们坐在无烟区。",
+      "我哥哥即使压力很大也坚持不抽烟。",
+      "在火车上我选择无烟车厢。"
+    ]
   }
 }

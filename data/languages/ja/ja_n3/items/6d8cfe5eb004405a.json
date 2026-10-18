@@ -31,7 +31,7 @@
     "hi": "आस्तीन",
     "pl": "rękaw",
     "el": "μανίκι",
-    "nb": "र्म?",
+    "nb": "erme",
     "id": "lengan",
     "sv": "ärm",
     "ro": "mânecă",
@@ -173,12 +173,12 @@
       "difficulty": null
     },
     {
-      "target": "雨で袖がぬれた。",
+      "target": "雨で袖が濡れた。",
       "reading": "あめでそでがぬれた。",
       "translations": {
         "en": "My sleeve got wet in the rain.",
         "ar": "ابتلت كمي في المطر.",
-        "cs": "Mokrý rukáv mi v dešti zmokl.",
+        "cs": "V dešti mi zmokl rukáv.",
         "da": "Min ærme blev vådt i regnen.",
         "de": "Mein Ärmel wurde vom Regen nass.",
         "el": "Το μανίκι μου βράχηκε στη βροχή.",
@@ -225,8 +225,9 @@
               "length": 1
             }
           ],
-          "ruby_confidence": "high",
-          "furigana": "あめ"
+          "ruby_confidence": "reviewed",
+          "furigana": "あめ",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "で",
@@ -264,8 +265,9 @@
               "length": 1
             }
           ],
-          "ruby_confidence": "high",
+          "ruby_confidence": "reviewed",
           "furigana": "そで",
+          "ruby_source": "mediawiki_sentence_ruby",
           "is_main_word": true
         },
         {
@@ -285,8 +287,8 @@
           "furigana": "が"
         },
         {
-          "surface": "ぬれ",
-          "lemma": "ぬれる",
+          "surface": "濡れ",
+          "lemma": "濡れる",
           "pos": "動詞/一般/*/*/下一段-ラ行/連用形-一般",
           "upos": "VERB",
           "xpos": "動詞",
@@ -295,10 +297,18 @@
           "end": 6,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "ぬれ",
-          "ruby_text": "ぬれ",
-          "ruby_spans": [],
-          "ruby_confidence": "high",
-          "furigana": "ぬれ"
+          "ruby_text": "濡[ぬ]れ",
+          "ruby_spans": [
+            {
+              "base": "濡",
+              "reading": "ぬ",
+              "start": 0,
+              "length": 1
+            }
+          ],
+          "ruby_confidence": "reviewed",
+          "furigana": "ぬれ",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "た",
@@ -337,7 +347,7 @@
     },
     {
       "target": "私は袖をまくった。",
-      "reading": "わたくしはそでをまくった。",
+      "reading": "わたしはそでをまくった。",
       "translations": {
         "en": "I rolled up my sleeve.",
         "ar": "رفعت كمي.",
@@ -378,18 +388,19 @@
           "start": 0,
           "end": 1,
           "analyzer": "sudachipy_sudachidict_core_c",
-          "reading_kana": "わたくし",
-          "ruby_text": "私[わたくし]",
+          "reading_kana": "わたし",
+          "ruby_text": "私[わたし]",
           "ruby_spans": [
             {
               "base": "私",
-              "reading": "わたくし",
+              "reading": "わたし",
               "start": 0,
               "length": 1
             }
           ],
-          "ruby_confidence": "high",
-          "furigana": "わたくし"
+          "ruby_confidence": "reviewed",
+          "furigana": "わたし",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "は",
@@ -427,8 +438,9 @@
               "length": 1
             }
           ],
-          "ruby_confidence": "high",
+          "ruby_confidence": "reviewed",
           "furigana": "そで",
+          "ruby_source": "mediawiki_sentence_ruby",
           "is_main_word": true
         },
         {
@@ -513,8 +525,8 @@
         "fr": "L'enfant a attrapé la manche de sa mère.",
         "he": "הילד תפס את השרוול של אמו.",
         "hi": "बच्चे ने अपनी माँ की आस्तीन पकड़ ली।",
-        "hu": "A gyerek megfogta az anyja ujját.",
-        "id": "Anak itu memegang lengan ibunya.",
+        "hu": "A gyerek megfogta az anyja ruhaujját.",
+        "id": "Anak itu memegang lengan baju ibunya.",
         "it": "Il bambino ha afferrato la manica della madre.",
         "ko": "아이가 엄마 소매를 잡았어요.",
         "nb": "Barnet grep tak i morens erme.",
@@ -712,8 +724,774 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-13T08:29:40Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:Ja n3/6d8cfe5eb004405a",
+      "revision_id": 80136,
+      "parent_revision_id": 68409,
+      "revision_timestamp_utc": "2026-10-13T08:29:40Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Repair the corrupted Norwegian gloss, standardize common Japanese spellings/readings, and clarify sleeve references in Czech, Hungarian, and Indonesian.",
+      "pulled_utc": "2026-10-18T17:39:04Z",
+      "applied_utc": "2026-10-18T17:39:41Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-4e6b4718b155ce65",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "ja_n3:6d8cfe5eb004405a",
+        "pack_code": "ja_n3",
+        "entry_id": "袖",
+        "language": "ja",
+        "sentence_index": 2,
+        "old_sentence": "雨で袖がぬれた。",
+        "old_translations": {
+          "en": "My sleeve got wet in the rain.",
+          "ar": "ابتلت كمي في المطر.",
+          "cs": "Mokrý rukáv mi v dešti zmokl.",
+          "da": "Min ærme blev vådt i regnen.",
+          "de": "Mein Ärmel wurde vom Regen nass.",
+          "el": "Το μανίκι μου βράχηκε στη βροχή.",
+          "es": "Se me mojó la manga con la lluvia.",
+          "fi": "Hihani kastui sateessa.",
+          "fr": "Ma manche a été mouillée par la pluie.",
+          "he": "השרוול שלי נרטב בגשם.",
+          "hi": "बारिश में मेरी आस्तीन गीली हो गई।",
+          "hu": "Az esőben vizes lett az ujjam.",
+          "id": "Lengan bajuku basah karena hujan.",
+          "it": "Mi si è bagnata la manica con la pioggia.",
+          "ko": "비에 소매가 젖었어요.",
+          "nb": "Ermet mitt ble vått i regnet.",
+          "nl": "Mijn mouw werd nat in de regen.",
+          "pl": "Mój rękaw zamókł na deszczu.",
+          "pt": "Minha manga ficou molhada na chuva.",
+          "ro": "Mi s-a udat mâneca în ploaie.",
+          "ru": "Мой рукав промок под дождём.",
+          "sv": "Min ärm blev våt i regnet.",
+          "tr": "Kolum yağmurda ıslandı.",
+          "uk": "Мій рукав намок під дощем.",
+          "vi": "Tay áo tôi bị ướt vì mưa.",
+          "yue": "我個袖畀雨淋濕咗。",
+          "zh-Hans": "我的袖子被雨淋湿了。"
+        },
+        "proposed_sentence": "雨で袖が濡れた。",
+        "proposed_translations": {
+          "en": "My sleeve got wet in the rain.",
+          "ar": "ابتلت كمي في المطر.",
+          "cs": "V dešti mi zmokl rukáv.",
+          "da": "Min ærme blev vådt i regnen.",
+          "de": "Mein Ärmel wurde vom Regen nass.",
+          "el": "Το μανίκι μου βράχηκε στη βροχή.",
+          "es": "Se me mojó la manga con la lluvia.",
+          "fi": "Hihani kastui sateessa.",
+          "fr": "Ma manche a été mouillée par la pluie.",
+          "he": "השרוול שלי נרטב בגשם.",
+          "hi": "बारिश में मेरी आस्तीन गीली हो गई।",
+          "hu": "Az esőben vizes lett az ujjam.",
+          "id": "Lengan bajuku basah karena hujan.",
+          "it": "Mi si è bagnata la manica con la pioggia.",
+          "ko": "비에 소매가 젖었어요.",
+          "nb": "Ermet mitt ble vått i regnet.",
+          "nl": "Mijn mouw werd nat in de regen.",
+          "pl": "Mój rękaw zamókł na deszczu.",
+          "pt": "Minha manga ficou molhada na chuva.",
+          "ro": "Mi s-a udat mâneca în ploaie.",
+          "ru": "Мой рукав промок под дождём.",
+          "sv": "Min ärm blev våt i regnet.",
+          "tr": "Kolum yağmurda ıslandı.",
+          "uk": "Мій рукав намок під дощем.",
+          "vi": "Tay áo tôi bị ướt vì mưa.",
+          "yue": "我個袖畀雨淋濕咗。",
+          "zh-Hans": "我的袖子被雨淋湿了。"
+        },
+        "old_ruby_source": "雨[あめ]で袖[そで]がぬれた。",
+        "proposed_ruby_source": "雨[あめ]で袖[そで]が濡[ぬ]れた。",
+        "old_japanese": "雨で袖がぬれた。",
+        "old_english": "My sleeve got wet in the rain.",
+        "proposed_japanese": "雨で袖が濡れた。",
+        "proposed_english": "My sleeve got wet in the rain.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "ja",
+          "sentence": "雨で袖が濡れた。",
+          "tokens": [
+            {
+              "surface": "雨",
+              "lemma": "雨",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 0,
+              "end": 1,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "あめ",
+              "ruby_text": "雨[あめ]",
+              "ruby_spans": [
+                {
+                  "base": "雨",
+                  "reading": "あめ",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "あめ",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "で",
+              "lemma": "で",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 1,
+              "end": 2,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "で",
+              "ruby_text": "で",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "で"
+            },
+            {
+              "surface": "袖",
+              "lemma": "袖",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 2,
+              "end": 3,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "そで",
+              "ruby_text": "袖[そで]",
+              "ruby_spans": [
+                {
+                  "base": "袖",
+                  "reading": "そで",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "そで",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "が",
+              "lemma": "が",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 3,
+              "end": 4,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "が",
+              "ruby_text": "が",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "が"
+            },
+            {
+              "surface": "濡れ",
+              "lemma": "濡れる",
+              "pos": "動詞/一般/*/*/下一段-ラ行/連用形-一般",
+              "upos": "VERB",
+              "xpos": "動詞",
+              "feats": {},
+              "start": 4,
+              "end": 6,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "ぬれ",
+              "ruby_text": "濡[ぬ]れ",
+              "ruby_spans": [
+                {
+                  "base": "濡",
+                  "reading": "ぬ",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "ぬれ",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "た",
+              "lemma": "た",
+              "pos": "助動詞/*/*/*/助動詞-タ/終止形-一般",
+              "upos": "AUX",
+              "xpos": "助動詞",
+              "feats": {},
+              "start": 6,
+              "end": 7,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "た",
+              "ruby_text": "た",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "た"
+            },
+            {
+              "surface": "。",
+              "lemma": "。",
+              "pos": "補助記号/句点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 7,
+              "end": 8,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "。",
+              "ruby_text": "。",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "。"
+            }
+          ],
+          "reading": "あめでそでがぬれた。",
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "warnings": [
+            "mediawiki ruby hints applied"
+          ]
+        },
+        "generated_tokens": [
+          {
+            "surface": "雨",
+            "lemma": "雨",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 0,
+            "end": 1,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "あめ",
+            "ruby_text": "雨[あめ]",
+            "ruby_spans": [
+              {
+                "base": "雨",
+                "reading": "あめ",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "あめ",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "で",
+            "lemma": "で",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 1,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "で",
+            "ruby_text": "で",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "で"
+          },
+          {
+            "surface": "袖",
+            "lemma": "袖",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 2,
+            "end": 3,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "そで",
+            "ruby_text": "袖[そで]",
+            "ruby_spans": [
+              {
+                "base": "袖",
+                "reading": "そで",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "そで",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "が",
+            "lemma": "が",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 3,
+            "end": 4,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "が",
+            "ruby_text": "が",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "が"
+          },
+          {
+            "surface": "濡れ",
+            "lemma": "濡れる",
+            "pos": "動詞/一般/*/*/下一段-ラ行/連用形-一般",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 4,
+            "end": 6,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ぬれ",
+            "ruby_text": "濡[ぬ]れ",
+            "ruby_spans": [
+              {
+                "base": "濡",
+                "reading": "ぬ",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "ぬれ",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "た",
+            "lemma": "た",
+            "pos": "助動詞/*/*/*/助動詞-タ/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 6,
+            "end": 7,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "た",
+            "ruby_text": "た",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "た"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 7,
+            "end": 8,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
+          }
+        ],
+        "generated_reading": "あめでそでがぬれた。",
+        "analyzer": "sudachipy_sudachidict_core_c",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-18T17:39:04Z",
+        "updated_utc": "2026-10-18T17:40:52Z",
+        "applied_utc": "2026-10-18T17:40:52Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      },
+      {
+        "id": "sentprop-f7cf1414df7da201",
+        "status": "applied",
+        "type": "ruby_update",
+        "item_id": "ja_n3:6d8cfe5eb004405a",
+        "pack_code": "ja_n3",
+        "entry_id": "袖",
+        "language": "ja",
+        "sentence_index": 3,
+        "old_sentence": "私は袖をまくった。",
+        "old_translations": {
+          "en": "I rolled up my sleeve.",
+          "ar": "رفعت كمي.",
+          "cs": "Vyhrnul jsem si rukáv.",
+          "da": "Jeg smøg ærmet op.",
+          "de": "Ich habe meinen Ärmel hochgekrempelt.",
+          "el": "Σήκωσα το μανίκι μου.",
+          "es": "Me arremangué.",
+          "fi": "Käärin hihani.",
+          "fr": "J'ai retroussé ma manche.",
+          "he": "קיפלתי את השרוול שלי.",
+          "hi": "मैंने अपनी आस्तीन चढ़ाई।",
+          "hu": "Feltűrtem az ujjam.",
+          "id": "Saya menyingsingkan lengan baju saya.",
+          "it": "Mi sono rimboccato la manica.",
+          "ko": "소매를 걷었어요.",
+          "nb": "Jeg brettet opp ermet.",
+          "nl": "Ik heb mijn mouw opgestroopt.",
+          "pl": "Podwinąłem rękaw.",
+          "pt": "Arregacei a manga.",
+          "ro": "Mi-am suflecat mâneca.",
+          "ru": "Я закатал рукав.",
+          "sv": "Jag kavlade upp ärmen.",
+          "tr": "Kolumu sıvadım.",
+          "uk": "Я засукав рукав.",
+          "vi": "Tôi xắn tay áo lên.",
+          "yue": "我摺起咗條袖。",
+          "zh-Hans": "我把袖子卷起来了。"
+        },
+        "proposed_sentence": "私は袖をまくった。",
+        "proposed_translations": {
+          "en": "I rolled up my sleeve.",
+          "ar": "رفعت كمي.",
+          "cs": "Vyhrnul jsem si rukáv.",
+          "da": "Jeg smøg ærmet op.",
+          "de": "Ich habe meinen Ärmel hochgekrempelt.",
+          "el": "Σήκωσα το μανίκι μου.",
+          "es": "Me arremangué.",
+          "fi": "Käärin hihani.",
+          "fr": "J'ai retroussé ma manche.",
+          "he": "קיפלתי את השרוול שלי.",
+          "hi": "मैंने अपनी आस्तीन चढ़ाई।",
+          "hu": "Feltűrtem az ujjam.",
+          "id": "Saya menyingsingkan lengan baju saya.",
+          "it": "Mi sono rimboccato la manica.",
+          "ko": "소매를 걷었어요.",
+          "nb": "Jeg brettet opp ermet.",
+          "nl": "Ik heb mijn mouw opgestroopt.",
+          "pl": "Podwinąłem rękaw.",
+          "pt": "Arregacei a manga.",
+          "ro": "Mi-am suflecat mâneca.",
+          "ru": "Я закатал рукав.",
+          "sv": "Jag kavlade upp ärmen.",
+          "tr": "Kolumu sıvadım.",
+          "uk": "Я засукав рукав.",
+          "vi": "Tôi xắn tay áo lên.",
+          "yue": "我摺起咗條袖。",
+          "zh-Hans": "我把袖子卷起来了。"
+        },
+        "old_ruby_source": "私[わたくし]は袖[そで]をまくった。",
+        "proposed_ruby_source": "私[わたし]は袖[そで]をまくった。",
+        "old_japanese": "私は袖をまくった。",
+        "old_english": "I rolled up my sleeve.",
+        "proposed_japanese": "私は袖をまくった。",
+        "proposed_english": "I rolled up my sleeve.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "ja",
+          "sentence": "私は袖をまくった。",
+          "tokens": [
+            {
+              "surface": "私",
+              "lemma": "私",
+              "pos": "代名詞/*/*/*/*/*",
+              "upos": "PRON",
+              "xpos": "代名詞",
+              "feats": {},
+              "start": 0,
+              "end": 1,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "わたし",
+              "ruby_text": "私[わたし]",
+              "ruby_spans": [
+                {
+                  "base": "私",
+                  "reading": "わたし",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "わたし",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "は",
+              "lemma": "は",
+              "pos": "助詞/係助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 1,
+              "end": 2,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "は",
+              "ruby_text": "は",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "は"
+            },
+            {
+              "surface": "袖",
+              "lemma": "袖",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 2,
+              "end": 3,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "そで",
+              "ruby_text": "袖[そで]",
+              "ruby_spans": [
+                {
+                  "base": "袖",
+                  "reading": "そで",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "そで",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "を",
+              "lemma": "を",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 3,
+              "end": 4,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "を",
+              "ruby_text": "を",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "を"
+            },
+            {
+              "surface": "まくっ",
+              "lemma": "まくる",
+              "pos": "動詞/非自立可能/*/*/五段-ラ行/連用形-促音便",
+              "upos": "VERB",
+              "xpos": "動詞",
+              "feats": {},
+              "start": 4,
+              "end": 7,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "まくっ",
+              "ruby_text": "まくっ",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "まくっ"
+            },
+            {
+              "surface": "た",
+              "lemma": "た",
+              "pos": "助動詞/*/*/*/助動詞-タ/終止形-一般",
+              "upos": "AUX",
+              "xpos": "助動詞",
+              "feats": {},
+              "start": 7,
+              "end": 8,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "た",
+              "ruby_text": "た",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "た"
+            },
+            {
+              "surface": "。",
+              "lemma": "。",
+              "pos": "補助記号/句点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 8,
+              "end": 9,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "。",
+              "ruby_text": "。",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "。"
+            }
+          ],
+          "reading": "わたしはそでをまくった。",
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "warnings": [
+            "mediawiki ruby hints applied"
+          ]
+        },
+        "generated_tokens": [
+          {
+            "surface": "私",
+            "lemma": "私",
+            "pos": "代名詞/*/*/*/*/*",
+            "upos": "PRON",
+            "xpos": "代名詞",
+            "feats": {},
+            "start": 0,
+            "end": 1,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "わたし",
+            "ruby_text": "私[わたし]",
+            "ruby_spans": [
+              {
+                "base": "私",
+                "reading": "わたし",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "わたし",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "は",
+            "lemma": "は",
+            "pos": "助詞/係助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 1,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "は",
+            "ruby_text": "は",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "は"
+          },
+          {
+            "surface": "袖",
+            "lemma": "袖",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 2,
+            "end": 3,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "そで",
+            "ruby_text": "袖[そで]",
+            "ruby_spans": [
+              {
+                "base": "袖",
+                "reading": "そで",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "そで",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "を",
+            "lemma": "を",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 3,
+            "end": 4,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "を",
+            "ruby_text": "を",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "を"
+          },
+          {
+            "surface": "まくっ",
+            "lemma": "まくる",
+            "pos": "動詞/非自立可能/*/*/五段-ラ行/連用形-促音便",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 4,
+            "end": 7,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "まくっ",
+            "ruby_text": "まくっ",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "まくっ"
+          },
+          {
+            "surface": "た",
+            "lemma": "た",
+            "pos": "助動詞/*/*/*/助動詞-タ/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 7,
+            "end": 8,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "た",
+            "ruby_text": "た",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "た"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 8,
+            "end": 9,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
+          }
+        ],
+        "generated_reading": "わたしはそでをまくった。",
+        "analyzer": "sudachipy_sudachidict_core_c",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-18T17:39:04Z",
+        "updated_utc": "2026-10-18T17:40:52Z",
+        "applied_utc": "2026-10-18T17:40:52Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-18T17:40:52Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -736,14 +1514,8 @@
     "fu": [
       "そでがながいです。",
       "あめでそでがぬれた。",
-      "わたしはそでをまくった。",
+      "わたくしはそでをまくった。",
       "こどもがははのそでをつかんだ。"
-    ],
-    "en": [
-      "The sleeves are long.",
-      "My sleeve got wet in the rain.",
-      "I rolled up my sleeve.",
-      "The child grabbed their mother's sleeve."
     ],
     "generation": {
       "generator": "vocomipedia_source_generator.py",
@@ -782,190 +1554,6 @@
         "parts_of_speech": "Noun"
       }
     },
-    "word_en": "sleeve",
-    "word_es": "manga",
-    "word_fr": "manche",
-    "word_de": "Ärmel",
-    "word_it": "manica",
-    "word_ko": "소매",
-    "word_zh-Hans": "袖子",
-    "word_yue": "袖子",
-    "word_ru": "рукав",
-    "word_pt": "manga",
-    "word_he": "שרוול",
-    "word_tr": "kol",
-    "word_vi": "tay áo",
-    "word_ar": "كمّ",
-    "word_nl": "mouw",
-    "word_uk": "рукав",
-    "word_hu": "ujj",
-    "word_hi": "आस्तीन",
-    "word_pl": "rękaw",
-    "word_el": "μανίκι",
-    "word_nb": "र्म?",
-    "word_id": "lengan",
-    "word_sv": "ärm",
-    "word_ro": "mânecă",
-    "word_cs": "rukáv",
-    "word_da": "ærme",
-    "word_fi": "hiha",
-    "word_ja": "袖",
-    "ar": [
-      "أكمامي طويلة.",
-      "ابتلت كمي في المطر.",
-      "رفعت كمي.",
-      "أمسك الطفل كم أمه."
-    ],
-    "cs": [
-      "Rukávy jsou dlouhé.",
-      "Mokrý rukáv mi v dešti zmokl.",
-      "Vyhrnul jsem si rukáv.",
-      "Dítě chytilo maminku za rukáv."
-    ],
-    "da": [
-      "Ærmerne er lange.",
-      "Min ærme blev vådt i regnen.",
-      "Jeg smøg ærmet op.",
-      "Barnet greb fat i sin mors ærme."
-    ],
-    "de": [
-      "Die Ärmel sind lang.",
-      "Mein Ärmel wurde vom Regen nass.",
-      "Ich habe meinen Ärmel hochgekrempelt.",
-      "Das Kind packte seine Mutter am Ärmel."
-    ],
-    "el": [
-      "Τα μανίκια είναι μακριά.",
-      "Το μανίκι μου βράχηκε στη βροχή.",
-      "Σήκωσα το μανίκι μου.",
-      "Το παιδί άρπαξε το μανίκι της μητέρας του."
-    ],
-    "es": [
-      "Las mangas son largas.",
-      "Se me mojó la manga con la lluvia.",
-      "Me arremangué.",
-      "El niño agarró la manga de su madre."
-    ],
-    "fi": [
-      "Hihat ovat pitkät.",
-      "Hihani kastui sateessa.",
-      "Käärin hihani.",
-      "Lapsi tarttui äitinsä hihaan."
-    ],
-    "fr": [
-      "Les manches sont longues.",
-      "Ma manche a été mouillée par la pluie.",
-      "J'ai retroussé ma manche.",
-      "L'enfant a attrapé la manche de sa mère."
-    ],
-    "he": [
-      "השרוולים ארוכים.",
-      "השרוול שלי נרטב בגשם.",
-      "קיפלתי את השרוול שלי.",
-      "הילד תפס את השרוול של אמו."
-    ],
-    "hi": [
-      "आस्तीनें लंबी हैं।",
-      "बारिश में मेरी आस्तीन गीली हो गई।",
-      "मैंने अपनी आस्तीन चढ़ाई।",
-      "बच्चे ने अपनी माँ की आस्तीन पकड़ ली।"
-    ],
-    "hu": [
-      "Hosszú az ujja.",
-      "Az esőben vizes lett az ujjam.",
-      "Feltűrtem az ujjam.",
-      "A gyerek megfogta az anyja ujját."
-    ],
-    "id": [
-      "Lengan baju itu panjang.",
-      "Lengan bajuku basah karena hujan.",
-      "Saya menyingsingkan lengan baju saya.",
-      "Anak itu memegang lengan ibunya."
-    ],
-    "it": [
-      "Le maniche sono lunghe.",
-      "Mi si è bagnata la manica con la pioggia.",
-      "Mi sono rimboccato la manica.",
-      "Il bambino ha afferrato la manica della madre."
-    ],
-    "ko": [
-      "소매가 길어요.",
-      "비에 소매가 젖었어요.",
-      "소매를 걷었어요.",
-      "아이가 엄마 소매를 잡았어요."
-    ],
-    "nb": [
-      "Ermene er lange.",
-      "Ermet mitt ble vått i regnet.",
-      "Jeg brettet opp ermet.",
-      "Barnet grep tak i morens erme."
-    ],
-    "nl": [
-      "De mouwen zijn lang.",
-      "Mijn mouw werd nat in de regen.",
-      "Ik heb mijn mouw opgestroopt.",
-      "Het kind pakte de mouw van zijn moeder vast."
-    ],
-    "pl": [
-      "Rękawy są długie.",
-      "Mój rękaw zamókł na deszczu.",
-      "Podwinąłem rękaw.",
-      "Dziecko złapało mamę za rękaw."
-    ],
-    "pt": [
-      "As mangas são compridas.",
-      "Minha manga ficou molhada na chuva.",
-      "Arregacei a manga.",
-      "A criança agarrou a manga da mãe."
-    ],
-    "ro": [
-      "Mânecile sunt lungi.",
-      "Mi s-a udat mâneca în ploaie.",
-      "Mi-am suflecat mâneca.",
-      "Copilul a apucat mâneca mamei."
-    ],
-    "ru": [
-      "Рукава длинные.",
-      "Мой рукав промок под дождём.",
-      "Я закатал рукав.",
-      "Ребёнок схватил маму за рукав."
-    ],
-    "sv": [
-      "Ärmarna är långa.",
-      "Min ärm blev våt i regnet.",
-      "Jag kavlade upp ärmen.",
-      "Barnet tog tag i sin mammas ärm."
-    ],
-    "tr": [
-      "Kolları uzun.",
-      "Kolum yağmurda ıslandı.",
-      "Kolumu sıvadım.",
-      "Çocuk annesinin kolunu tuttu."
-    ],
-    "uk": [
-      "Рукави довгі.",
-      "Мій рукав намок під дощем.",
-      "Я засукав рукав.",
-      "Дитина схопила маму за рукав."
-    ],
-    "vi": [
-      "Tay áo dài.",
-      "Tay áo tôi bị ướt vì mưa.",
-      "Tôi xắn tay áo lên.",
-      "Đứa trẻ nắm lấy tay áo của mẹ."
-    ],
-    "yue": [
-      "袖長。",
-      "我個袖畀雨淋濕咗。",
-      "我摺起咗條袖。",
-      "個細路捉住咗媽媽嘅袖。"
-    ],
-    "zh-Hans": [
-      "袖子很长。",
-      "我的袖子被雨淋湿了。",
-      "我把袖子卷起来了。",
-      "孩子抓住了妈妈的袖子。"
-    ],
     "pos_analysis": [
       {
         "sentence": "袖が長いです。",
@@ -1069,7 +1657,7 @@
         "difficulty_aggregated": null
       },
       {
-        "sentence": "雨で袖がぬれた。",
+        "sentence": "雨で袖が濡れた。",
         "tokens": [
           {
             "surface": "雨",
@@ -1091,8 +1679,9 @@
                 "length": 1
               }
             ],
-            "ruby_confidence": "high",
-            "furigana": "あめ"
+            "ruby_confidence": "reviewed",
+            "furigana": "あめ",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "で",
@@ -1130,8 +1719,9 @@
                 "length": 1
               }
             ],
-            "ruby_confidence": "high",
+            "ruby_confidence": "reviewed",
             "furigana": "そで",
+            "ruby_source": "mediawiki_sentence_ruby",
             "is_main_word": true
           },
           {
@@ -1151,8 +1741,8 @@
             "furigana": "が"
           },
           {
-            "surface": "ぬれ",
-            "lemma": "ぬれる",
+            "surface": "濡れ",
+            "lemma": "濡れる",
             "pos": "動詞/一般/*/*/下一段-ラ行/連用形-一般",
             "upos": "VERB",
             "xpos": "動詞",
@@ -1161,10 +1751,18 @@
             "end": 6,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "ぬれ",
-            "ruby_text": "ぬれ",
-            "ruby_spans": [],
-            "ruby_confidence": "high",
-            "furigana": "ぬれ"
+            "ruby_text": "濡[ぬ]れ",
+            "ruby_spans": [
+              {
+                "base": "濡",
+                "reading": "ぬ",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "ぬれ",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "た",
@@ -1214,18 +1812,19 @@
             "start": 0,
             "end": 1,
             "analyzer": "sudachipy_sudachidict_core_c",
-            "reading_kana": "わたくし",
-            "ruby_text": "私[わたくし]",
+            "reading_kana": "わたし",
+            "ruby_text": "私[わたし]",
             "ruby_spans": [
               {
                 "base": "私",
-                "reading": "わたくし",
+                "reading": "わたし",
                 "start": 0,
                 "length": 1
               }
             ],
-            "ruby_confidence": "high",
-            "furigana": "わたくし"
+            "ruby_confidence": "reviewed",
+            "furigana": "わたし",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "は",
@@ -1263,8 +1862,9 @@
                 "length": 1
               }
             ],
-            "ruby_confidence": "high",
+            "ruby_confidence": "reviewed",
             "furigana": "そで",
+            "ruby_source": "mediawiki_sentence_ruby",
             "is_main_word": true
           },
           {
@@ -1506,6 +2106,196 @@
         ],
         "difficulty_aggregated": null
       }
+    ],
+    "word_en": "sleeve",
+    "word_es": "manga",
+    "word_fr": "manche",
+    "word_de": "Ärmel",
+    "word_it": "manica",
+    "word_ko": "소매",
+    "word_zh-Hans": "袖子",
+    "word_yue": "袖子",
+    "word_ru": "рукав",
+    "word_pt": "manga",
+    "word_he": "שרוול",
+    "word_tr": "kol",
+    "word_vi": "tay áo",
+    "word_ar": "كمّ",
+    "word_nl": "mouw",
+    "word_uk": "рукав",
+    "word_hu": "ujj",
+    "word_hi": "आस्तीन",
+    "word_pl": "rękaw",
+    "word_el": "μανίκι",
+    "word_nb": "erme",
+    "word_id": "lengan",
+    "word_sv": "ärm",
+    "word_ro": "mânecă",
+    "word_cs": "rukáv",
+    "word_da": "ærme",
+    "word_fi": "hiha",
+    "word_ja": "袖",
+    "ar": [
+      "أكمامي طويلة.",
+      "ابتلت كمي في المطر.",
+      "رفعت كمي.",
+      "أمسك الطفل كم أمه."
+    ],
+    "cs": [
+      "Rukávy jsou dlouhé.",
+      "Mokrý rukáv mi v dešti zmokl.",
+      "Vyhrnul jsem si rukáv.",
+      "Dítě chytilo maminku za rukáv."
+    ],
+    "da": [
+      "Ærmerne er lange.",
+      "Min ærme blev vådt i regnen.",
+      "Jeg smøg ærmet op.",
+      "Barnet greb fat i sin mors ærme."
+    ],
+    "de": [
+      "Die Ärmel sind lang.",
+      "Mein Ärmel wurde vom Regen nass.",
+      "Ich habe meinen Ärmel hochgekrempelt.",
+      "Das Kind packte seine Mutter am Ärmel."
+    ],
+    "el": [
+      "Τα μανίκια είναι μακριά.",
+      "Το μανίκι μου βράχηκε στη βροχή.",
+      "Σήκωσα το μανίκι μου.",
+      "Το παιδί άρπαξε το μανίκι της μητέρας του."
+    ],
+    "en": [
+      "The sleeves are long.",
+      "My sleeve got wet in the rain.",
+      "I rolled up my sleeve.",
+      "The child grabbed their mother's sleeve."
+    ],
+    "es": [
+      "Las mangas son largas.",
+      "Se me mojó la manga con la lluvia.",
+      "Me arremangué.",
+      "El niño agarró la manga de su madre."
+    ],
+    "fi": [
+      "Hihat ovat pitkät.",
+      "Hihani kastui sateessa.",
+      "Käärin hihani.",
+      "Lapsi tarttui äitinsä hihaan."
+    ],
+    "fr": [
+      "Les manches sont longues.",
+      "Ma manche a été mouillée par la pluie.",
+      "J'ai retroussé ma manche.",
+      "L'enfant a attrapé la manche de sa mère."
+    ],
+    "he": [
+      "השרוולים ארוכים.",
+      "השרוול שלי נרטב בגשם.",
+      "קיפלתי את השרוול שלי.",
+      "הילד תפס את השרוול של אמו."
+    ],
+    "hi": [
+      "आस्तीनें लंबी हैं।",
+      "बारिश में मेरी आस्तीन गीली हो गई।",
+      "मैंने अपनी आस्तीन चढ़ाई।",
+      "बच्चे ने अपनी माँ की आस्तीन पकड़ ली।"
+    ],
+    "hu": [
+      "Hosszú az ujja.",
+      "Az esőben vizes lett az ujjam.",
+      "Feltűrtem az ujjam.",
+      "A gyerek megfogta az anyja ruhaujját."
+    ],
+    "id": [
+      "Lengan baju itu panjang.",
+      "Lengan bajuku basah karena hujan.",
+      "Saya menyingsingkan lengan baju saya.",
+      "Anak itu memegang lengan baju ibunya."
+    ],
+    "it": [
+      "Le maniche sono lunghe.",
+      "Mi si è bagnata la manica con la pioggia.",
+      "Mi sono rimboccato la manica.",
+      "Il bambino ha afferrato la manica della madre."
+    ],
+    "ko": [
+      "소매가 길어요.",
+      "비에 소매가 젖었어요.",
+      "소매를 걷었어요.",
+      "아이가 엄마 소매를 잡았어요."
+    ],
+    "nb": [
+      "Ermene er lange.",
+      "Ermet mitt ble vått i regnet.",
+      "Jeg brettet opp ermet.",
+      "Barnet grep tak i morens erme."
+    ],
+    "nl": [
+      "De mouwen zijn lang.",
+      "Mijn mouw werd nat in de regen.",
+      "Ik heb mijn mouw opgestroopt.",
+      "Het kind pakte de mouw van zijn moeder vast."
+    ],
+    "pl": [
+      "Rękawy są długie.",
+      "Mój rękaw zamókł na deszczu.",
+      "Podwinąłem rękaw.",
+      "Dziecko złapało mamę za rękaw."
+    ],
+    "pt": [
+      "As mangas são compridas.",
+      "Minha manga ficou molhada na chuva.",
+      "Arregacei a manga.",
+      "A criança agarrou a manga da mãe."
+    ],
+    "ro": [
+      "Mânecile sunt lungi.",
+      "Mi s-a udat mâneca în ploaie.",
+      "Mi-am suflecat mâneca.",
+      "Copilul a apucat mâneca mamei."
+    ],
+    "ru": [
+      "Рукава длинные.",
+      "Мой рукав промок под дождём.",
+      "Я закатал рукав.",
+      "Ребёнок схватил маму за рукав."
+    ],
+    "sv": [
+      "Ärmarna är långa.",
+      "Min ärm blev våt i regnet.",
+      "Jag kavlade upp ärmen.",
+      "Barnet tog tag i sin mammas ärm."
+    ],
+    "tr": [
+      "Kolları uzun.",
+      "Kolum yağmurda ıslandı.",
+      "Kolumu sıvadım.",
+      "Çocuk annesinin kolunu tuttu."
+    ],
+    "uk": [
+      "Рукави довгі.",
+      "Мій рукав намок під дощем.",
+      "Я засукав рукав.",
+      "Дитина схопила маму за рукав."
+    ],
+    "vi": [
+      "Tay áo dài.",
+      "Tay áo tôi bị ướt vì mưa.",
+      "Tôi xắn tay áo lên.",
+      "Đứa trẻ nắm lấy tay áo của mẹ."
+    ],
+    "yue": [
+      "袖長。",
+      "我個袖畀雨淋濕咗。",
+      "我摺起咗條袖。",
+      "個細路捉住咗媽媽嘅袖。"
+    ],
+    "zh-Hans": [
+      "袖子很长。",
+      "我的袖子被雨淋湿了。",
+      "我把袖子卷起来了。",
+      "孩子抓住了妈妈的袖子。"
     ]
   }
 }

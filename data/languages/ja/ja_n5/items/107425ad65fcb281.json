@@ -431,7 +431,7 @@
     },
     {
       "target": "本屋を出た.",
-      "reading": "ほんやをでた.",
+      "reading": "ほんやをでた．",
       "translations": {
         "en": "I left the bookstore.",
         "es": "Salí de la librería.",
@@ -464,13 +464,14 @@
       "tokens": [
         {
           "surface": "本屋",
-          "surface_en": "bookstore",
-          "furigana": "ほんや",
-          "pos": "noun",
           "lemma": "本屋",
-          "explanation": "the place that was exited",
-          "difficulty": 9,
-          "is_main_word": true,
+          "pos": "名詞/普通名詞/一般/*/*/*",
+          "upos": "NOUN",
+          "xpos": "名詞",
+          "feats": {},
+          "start": 0,
+          "end": 2,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "ほんや",
           "ruby_text": "本屋[ほんや]",
           "ruby_spans": [
@@ -481,33 +482,39 @@
               "length": 2
             }
           ],
-          "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "ruby_confidence": "reviewed",
+          "furigana": "ほんや",
+          "ruby_source": "mediawiki_sentence_ruby",
+          "is_main_word": true
         },
         {
           "surface": "を",
-          "surface_en": "object marker",
-          "furigana": "を",
-          "pos": "particle",
           "lemma": "を",
-          "explanation": "marks 'bookstore' as the direct object of the motion verb",
-          "difficulty": 1,
+          "pos": "助詞/格助詞/*/*/*/*",
+          "upos": "PART",
+          "xpos": "助詞",
+          "feats": {},
+          "start": 2,
+          "end": 3,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "を",
           "ruby_text": "を",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "を"
         },
         {
-          "surface": "出た",
-          "surface_en": "left",
-          "furigana": "でた",
-          "pos": "verb (past)",
+          "surface": "出",
           "lemma": "出る",
-          "explanation": "past tense of 'exit', indicates completion of the action of leaving",
-          "difficulty": 1,
-          "reading_kana": "でた",
-          "ruby_text": "出[で]た",
+          "pos": "動詞/一般/*/*/下一段-ダ行/連用形-一般",
+          "upos": "VERB",
+          "xpos": "動詞",
+          "feats": {},
+          "start": 3,
+          "end": 4,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "で",
+          "ruby_text": "出[で]",
           "ruby_spans": [
             {
               "base": "出",
@@ -516,8 +523,41 @@
               "length": 1
             }
           ],
+          "ruby_confidence": "reviewed",
+          "furigana": "で",
+          "ruby_source": "mediawiki_sentence_ruby"
+        },
+        {
+          "surface": "た",
+          "lemma": "た",
+          "pos": "助動詞/*/*/*/助動詞-タ/終止形-一般",
+          "upos": "AUX",
+          "xpos": "助動詞",
+          "feats": {},
+          "start": 4,
+          "end": 5,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "た",
+          "ruby_text": "た",
+          "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "た"
+        },
+        {
+          "surface": ".",
+          "lemma": ".",
+          "pos": "補助記号/句点/*/*/*/*",
+          "upos": "PUNCT",
+          "xpos": "補助記号",
+          "feats": {},
+          "start": 5,
+          "end": 6,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "．",
+          "ruby_text": ".",
+          "ruby_spans": [],
+          "ruby_confidence": "high",
+          "furigana": "．"
         }
       ],
       "difficulty": 3.67,
@@ -538,19 +578,325 @@
     "content_reviewers": [
       "mediawiki-visible-revision"
     ],
-    "last_reviewed_utc": "2026-06-21T18:38:17Z",
-    "approval_source": "mediawiki_visible_revision",
+    "last_reviewed_utc": "2026-10-10T22:06:17Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
     "wiki": {
       "title": "Item:Ja n5/107425ad65fcb281",
-      "revision_id": 58631,
-      "parent_revision_id": 37075,
-      "revision_timestamp_utc": "2026-06-21T18:38:17Z",
-      "revision_user": "VocomiBot",
-      "revision_comment": "Sync ja_n5 item 本屋",
-      "pulled_utc": "2026-06-21T20:53:37Z",
-      "applied_utc": "2026-06-21T20:53:52Z",
+      "revision_id": 83897,
+      "parent_revision_id": 69806,
+      "revision_timestamp_utc": "2026-10-10T22:06:17Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Suggest reviewed Japanese and translation corrections",
+      "pulled_utc": "2026-10-17T07:37:30Z",
+      "applied_utc": "2026-10-17T07:37:46Z",
       "applied_by": "vocomipedia-apply-pulled"
-    }
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-c5e901abf5bb21fe",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "ja_n5:107425ad65fcb281",
+        "pack_code": "ja_n5",
+        "entry_id": "本屋",
+        "language": "ja",
+        "sentence_index": 4,
+        "old_sentence": "本屋を出た。",
+        "old_translations": {
+          "en": "I left the bookstore.",
+          "es": "Salí de la librería.",
+          "fr": "J’ai quitté la librairie.",
+          "de": "Ich habe die Buchhandlung verlassen.",
+          "it": "Sono uscito dalla libreria.",
+          "ko": "서점을 떠났어.",
+          "zh-Hans": "我离开了书店。",
+          "yue": "我離開咗書店。",
+          "ru": "Я ушёл из книжного магазина.",
+          "pt": "Saí da livraria.",
+          "he": "עזבתי את חנות הספרים.",
+          "tr": "Kitapçıdan çıktım.",
+          "vi": "Tôi rời khỏi hiệu sách.",
+          "ar": "غادرت متجر الكتب.",
+          "nl": "Ik ben uit de boekwinkel gegaan.",
+          "uk": "Я вийшов із книгарні.",
+          "hu": "Elhagytam a könyvesboltot.",
+          "hi": "मैं किताबों की दुकान से बाहर निकल गया।",
+          "pl": "Wyszedłem z księgarni.",
+          "el": "Έφυγα από το βιβλιοπωλείο.",
+          "nb": "Jeg forlot bokhandelen.",
+          "id": "Saya meninggalkan toko buku.",
+          "sv": "Jag lämnade bokhandeln.",
+          "ro": "Am plecat din librărie.",
+          "cs": "Odešel jsem z knihkupectví.",
+          "da": "Jeg forlod boghandlen.",
+          "fi": "Lähdin kirjakaupasta."
+        },
+        "proposed_sentence": "本屋を出た.",
+        "proposed_translations": {
+          "en": "I left the bookstore.",
+          "es": "Salí de la librería.",
+          "fr": "J’ai quitté la librairie.",
+          "de": "Ich habe die Buchhandlung verlassen.",
+          "it": "Sono uscito dalla libreria.",
+          "ko": "서점을 떠났어.",
+          "zh-Hans": "我离开了书店。",
+          "yue": "我離開咗書店。",
+          "ru": "Я ушёл из книжного магазина.",
+          "pt": "Saí da livraria.",
+          "he": "עזבתי את חנות הספרים.",
+          "tr": "Kitapçıdan çıktım.",
+          "vi": "Tôi rời khỏi hiệu sách.",
+          "ar": "غادرت المكتبة.",
+          "nl": "Ik ben uit de boekwinkel gegaan.",
+          "uk": "Я вийшов із книгарні.",
+          "hu": "Elhagytam a könyvesboltot.",
+          "hi": "मैं किताबों की दुकान से बाहर निकल गया।",
+          "pl": "Wyszedłem z księgarni.",
+          "el": "Έφυγα από το βιβλιοπωλείο.",
+          "nb": "Jeg forlot bokhandelen.",
+          "id": "Saya meninggalkan toko buku.",
+          "sv": "Jag lämnade bokhandeln.",
+          "ro": "Am plecat din librărie.",
+          "cs": "Odešel jsem z knihkupectví.",
+          "da": "Jeg forlod boghandlen.",
+          "fi": "Lähdin kirjakaupasta."
+        },
+        "old_ruby_source": "本屋[ほんや]を出[で]た。",
+        "proposed_ruby_source": "本屋[ほんや]を出[で]た.",
+        "old_japanese": "本屋を出た。",
+        "old_english": "I left the bookstore.",
+        "proposed_japanese": "本屋を出た.",
+        "proposed_english": "I left the bookstore.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "ja",
+          "sentence": "本屋を出た.",
+          "tokens": [
+            {
+              "surface": "本屋",
+              "lemma": "本屋",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 0,
+              "end": 2,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "ほんや",
+              "ruby_text": "本屋[ほんや]",
+              "ruby_spans": [
+                {
+                  "base": "本屋",
+                  "reading": "ほんや",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "ほんや",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "を",
+              "lemma": "を",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 2,
+              "end": 3,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "を",
+              "ruby_text": "を",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "を"
+            },
+            {
+              "surface": "出",
+              "lemma": "出る",
+              "pos": "動詞/一般/*/*/下一段-ダ行/連用形-一般",
+              "upos": "VERB",
+              "xpos": "動詞",
+              "feats": {},
+              "start": 3,
+              "end": 4,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "で",
+              "ruby_text": "出[で]",
+              "ruby_spans": [
+                {
+                  "base": "出",
+                  "reading": "で",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "で",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "た",
+              "lemma": "た",
+              "pos": "助動詞/*/*/*/助動詞-タ/終止形-一般",
+              "upos": "AUX",
+              "xpos": "助動詞",
+              "feats": {},
+              "start": 4,
+              "end": 5,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "た",
+              "ruby_text": "た",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "た"
+            },
+            {
+              "surface": ".",
+              "lemma": ".",
+              "pos": "補助記号/句点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 5,
+              "end": 6,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "．",
+              "ruby_text": ".",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "．"
+            }
+          ],
+          "reading": "ほんやをでた．",
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "warnings": [
+            "mediawiki ruby hints applied"
+          ]
+        },
+        "generated_tokens": [
+          {
+            "surface": "本屋",
+            "lemma": "本屋",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ほんや",
+            "ruby_text": "本屋[ほんや]",
+            "ruby_spans": [
+              {
+                "base": "本屋",
+                "reading": "ほんや",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "ほんや",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "を",
+            "lemma": "を",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 2,
+            "end": 3,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "を",
+            "ruby_text": "を",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "を"
+          },
+          {
+            "surface": "出",
+            "lemma": "出る",
+            "pos": "動詞/一般/*/*/下一段-ダ行/連用形-一般",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 3,
+            "end": 4,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "で",
+            "ruby_text": "出[で]",
+            "ruby_spans": [
+              {
+                "base": "出",
+                "reading": "で",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "で",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "た",
+            "lemma": "た",
+            "pos": "助動詞/*/*/*/助動詞-タ/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 4,
+            "end": 5,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "た",
+            "ruby_text": "た",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "た"
+          },
+          {
+            "surface": ".",
+            "lemma": ".",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 5,
+            "end": 6,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "．",
+            "ruby_text": ".",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "．"
+          }
+        ],
+        "generated_reading": "ほんやをでた．",
+        "analyzer": "sudachipy_sudachidict_core_c",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:37:30Z",
+        "updated_utc": "2026-10-17T07:38:17Z",
+        "applied_utc": "2026-10-17T07:38:17Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:38:17Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -880,13 +1226,14 @@
         "tokens": [
           {
             "surface": "本屋",
-            "surface_en": "bookstore",
-            "furigana": "ほんや",
-            "pos": "noun",
             "lemma": "本屋",
-            "explanation": "the place that was exited",
-            "difficulty": 9,
-            "is_main_word": true,
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "ほんや",
             "ruby_text": "本屋[ほんや]",
             "ruby_spans": [
@@ -897,33 +1244,39 @@
                 "length": 2
               }
             ],
-            "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "ruby_confidence": "reviewed",
+            "furigana": "ほんや",
+            "ruby_source": "mediawiki_sentence_ruby",
+            "is_main_word": true
           },
           {
             "surface": "を",
-            "surface_en": "object marker",
-            "furigana": "を",
-            "pos": "particle",
             "lemma": "を",
-            "explanation": "marks 'bookstore' as the direct object of the motion verb",
-            "difficulty": 1,
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 2,
+            "end": 3,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "を",
             "ruby_text": "を",
             "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "を"
           },
           {
-            "surface": "出た",
-            "surface_en": "left",
-            "furigana": "でた",
-            "pos": "verb (past)",
+            "surface": "出",
             "lemma": "出る",
-            "explanation": "past tense of 'exit', indicates completion of the action of leaving",
-            "difficulty": 1,
-            "reading_kana": "でた",
-            "ruby_text": "出[で]た",
+            "pos": "動詞/一般/*/*/下一段-ダ行/連用形-一般",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 3,
+            "end": 4,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "で",
+            "ruby_text": "出[で]",
             "ruby_spans": [
               {
                 "base": "出",
@@ -932,8 +1285,41 @@
                 "length": 1
               }
             ],
+            "ruby_confidence": "reviewed",
+            "furigana": "で",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "た",
+            "lemma": "た",
+            "pos": "助動詞/*/*/*/助動詞-タ/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 4,
+            "end": 5,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "た",
+            "ruby_text": "た",
+            "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "た"
+          },
+          {
+            "surface": ".",
+            "lemma": ".",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 5,
+            "end": 6,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "．",
+            "ruby_text": ".",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "．"
           }
         ],
         "difficulty_aggregated": 3.67
@@ -972,7 +1358,7 @@
       "لنذهب إلى المكتبة!",
       "وجدت كتابا جيدا في المكتبة.",
       "هناك العديد من الكتب في المكتبة.",
-      "غادرت المكتبة."
+      "غادرت متجر الكتب."
     ],
     "cs": [
       "Pojďme do knihkupectví!",

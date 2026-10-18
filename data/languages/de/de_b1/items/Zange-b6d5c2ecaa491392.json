@@ -137,12 +137,12 @@
       "difficulty": 5.33
     },
     {
-      "target": "Er zieht den Nagel mit der Zange.",
+      "target": "Er zieht den Nagel mit der Zange heraus.",
       "reading": "/eːɐ tsiːt deːn ˈnaːɡl̩ mɪt deːɐ ˈtsaŋə/",
       "translations": {
-        "de": "Er zieht den Nagel mit der Zange.",
+        "de": "Er zieht den Nagel mit der Zange heraus.",
         "ipa": "/eːɐ tsiːt deːn ˈnaːɡl̩ mɪt deːɐ ˈtsaŋə/",
-        "en": "He pulls the nail with the pliers.",
+        "en": "He pulls the nail out with the pliers.",
         "es": "Saca el clavo con los alicates.",
         "fr": "Il arrache le clou avec une pince.",
         "it": "Tira fuori il chiodo con le pinze.",
@@ -173,67 +173,103 @@
       "tokens": [
         {
           "surface": "Er",
-          "surface_en": "he",
-          "furigana": "[eːɐ̯]",
-          "pos": "PRON",
           "lemma": "er",
-          "explanation": "Personal pronoun, 3rd person singular nominative; subject of 'zieht'.",
-          "difficulty": 2
+          "pos": "PRON",
+          "upos": "PRON",
+          "xpos": "PPER",
+          "feats": {},
+          "start": 0,
+          "end": 2,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "zieht",
-          "surface_en": "pulls",
-          "furigana": "[tsiːt]",
-          "pos": "VERB",
           "lemma": "ziehen",
-          "explanation": "Finite verb, present indicative 3rd person singular; transitive, takes 'den Nagel' as accusative object; instrument expressed by PP 'mit der Zange'.",
-          "difficulty": 7
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VVFIN",
+          "feats": {},
+          "start": 3,
+          "end": 8,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "den",
-          "surface_en": "the",
-          "furigana": "[deːn]",
-          "pos": "DET",
           "lemma": "der",
-          "explanation": "Definite article, accusative masculine singular; determiner of 'Nagel'.",
-          "difficulty": 2
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "ART",
+          "feats": {},
+          "start": 9,
+          "end": 12,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "Nagel",
-          "surface_en": "nail",
-          "furigana": "[ˈnaːɡəl]",
-          "pos": "NOUN",
           "lemma": "Nagel",
-          "explanation": "Common noun, masculine; accusative singular as direct object of 'zieht'.",
-          "difficulty": 7
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 13,
+          "end": 18,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "mit",
-          "surface_en": "with",
-          "furigana": "[mɪt]",
-          "pos": "ADP",
           "lemma": "mit",
-          "explanation": "Preposition selecting dative; introduces an instrumental phrase.",
-          "difficulty": 2
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "APPR",
+          "feats": {},
+          "start": 19,
+          "end": 22,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "der",
-          "surface_en": "the",
-          "furigana": "[deːɐ̯]",
-          "pos": "DET",
           "lemma": "der",
-          "explanation": "Definite article, dative feminine singular; determiner of 'Zange' after the preposition 'mit'.",
-          "difficulty": 2
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "ART",
+          "feats": {},
+          "start": 23,
+          "end": 26,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "Zange.",
-          "surface_en": "pliers",
-          "furigana": "[ˈtsaŋə]",
-          "pos": "NOUN",
+          "surface": "Zange",
           "lemma": "Zange",
-          "explanation": "Common noun, feminine; dative singular as the object of the preposition 'mit' (instrument).",
-          "difficulty": 7,
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 27,
+          "end": 32,
+          "analyzer": "spacy_de_core_news_lg",
           "is_main_word": true
+        },
+        {
+          "surface": "heraus",
+          "lemma": "heraus",
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "PTKVZ",
+          "feats": {},
+          "start": 33,
+          "end": 39,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 39,
+          "end": 40,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 4.14
@@ -454,8 +490,336 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-15T06:03:51Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:De b1/b6d5c2ecaa491392",
+      "revision_id": 86366,
+      "parent_revision_id": 18562,
+      "revision_timestamp_utc": "2026-10-15T06:03:51Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Made the nail-removal sentence idiomatic in German and clarified the “pull out” action in English.",
+      "pulled_utc": "2026-10-17T07:06:42Z",
+      "applied_utc": "2026-10-17T07:06:51Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-f3cabbc195881606",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_b1:b6d5c2ecaa491392",
+        "pack_code": "de_b1",
+        "entry_id": "Zange",
+        "language": "de",
+        "sentence_index": 2,
+        "old_sentence": "Er zieht den Nagel mit der Zange.",
+        "old_translations": {
+          "de": "Er zieht den Nagel mit der Zange.",
+          "ipa": "/eːɐ tsiːt deːn ˈnaːɡl̩ mɪt deːɐ ˈtsaŋə/",
+          "en": "He pulls the nail with the pliers.",
+          "es": "Saca el clavo con los alicates.",
+          "fr": "Il arrache le clou avec une pince.",
+          "it": "Tira fuori il chiodo con le pinze.",
+          "ko": "그는 펜치로 못을 뽑는다.",
+          "zh-Hans": "他用钳子把钉子拔出来。",
+          "yue": "佢用鉗拔出個釘。",
+          "ru": "Он вытаскивает гвоздь пассатижами.",
+          "pt": "Ele arranca o prego com o alicate.",
+          "he": "הוא שולף את המסמר עם הצבת.",
+          "tr": "Çiviyi penseyle çıkarıyor.",
+          "vi": "Anh ấy dùng kìm nhổ cái đinh ra.",
+          "ar": "ينزع المسمار بالزرادية.",
+          "nl": "Hij trekt de spijker eruit met de tang.",
+          "uk": "Він витягує цвях плоскогубцями.",
+          "hu": "Kihúzza a szöget a fogóval.",
+          "hi": "वह प्लायर से कील निकाल रहा है.",
+          "pl": "Wyciąga gwóźdź kombinerkami.",
+          "el": "Βγάζει το καρφί με την πένσα.",
+          "nb": "Han drar ut spikeren med tangen.",
+          "id": "Dia mencabut paku dengan tang.",
+          "sv": "Han drar ut spiken med tången.",
+          "ro": "Scoate cuiul cu cleștele.",
+          "cs": "Vytahuje hřebík kleštěmi.",
+          "da": "Han trækker sømmet ud med tangen.",
+          "fi": "Hän vetää naulan ulos pihdeillä.",
+          "ja": "彼はペンチで釘を抜いている。"
+        },
+        "proposed_sentence": "Er zieht den Nagel mit der Zange heraus.",
+        "proposed_translations": {
+          "de": "Er zieht den Nagel mit der Zange heraus.",
+          "ipa": "/eːɐ tsiːt deːn ˈnaːɡl̩ mɪt deːɐ ˈtsaŋə/",
+          "en": "He pulls the nail out with the pliers.",
+          "es": "Saca el clavo con los alicates.",
+          "fr": "Il arrache le clou avec une pince.",
+          "it": "Tira fuori il chiodo con le pinze.",
+          "ko": "그는 펜치로 못을 뽑는다.",
+          "zh-Hans": "他用钳子把钉子拔出来。",
+          "yue": "佢用鉗拔出個釘。",
+          "ru": "Он вытаскивает гвоздь пассатижами.",
+          "pt": "Ele arranca o prego com o alicate.",
+          "he": "הוא שולף את המסמר עם הצבת.",
+          "tr": "Çiviyi penseyle çıkarıyor.",
+          "vi": "Anh ấy dùng kìm nhổ cái đinh ra.",
+          "ar": "ينزع المسمار بالزرادية.",
+          "nl": "Hij trekt de spijker eruit met de tang.",
+          "uk": "Він витягує цвях плоскогубцями.",
+          "hu": "Kihúzza a szöget a fogóval.",
+          "hi": "वह प्लायर से कील निकाल रहा है.",
+          "pl": "Wyciąga gwóźdź kombinerkami.",
+          "el": "Βγάζει το καρφί με την πένσα.",
+          "nb": "Han drar ut spikeren med tangen.",
+          "id": "Dia mencabut paku dengan tang.",
+          "sv": "Han drar ut spiken med tången.",
+          "ro": "Scoate cuiul cu cleștele.",
+          "cs": "Vytahuje hřebík kleštěmi.",
+          "da": "Han trækker sømmet ud med tangen.",
+          "fi": "Hän vetää naulan ulos pihdeillä.",
+          "ja": "彼はペンチで釘を抜いている。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Er zieht den Nagel mit der Zange heraus.",
+        "old_japanese": "Er zieht den Nagel mit der Zange.",
+        "old_english": "He pulls the nail with the pliers.",
+        "proposed_japanese": "Er zieht den Nagel mit der Zange heraus.",
+        "proposed_english": "He pulls the nail out with the pliers.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Er zieht den Nagel mit der Zange heraus.",
+          "tokens": [
+            {
+              "surface": "Er",
+              "lemma": "er",
+              "pos": "PRON",
+              "upos": "PRON",
+              "xpos": "PPER",
+              "feats": {},
+              "start": 0,
+              "end": 2,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "zieht",
+              "lemma": "ziehen",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVFIN",
+              "feats": {},
+              "start": 3,
+              "end": 8,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "den",
+              "lemma": "der",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "ART",
+              "feats": {},
+              "start": 9,
+              "end": 12,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Nagel",
+              "lemma": "Nagel",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 13,
+              "end": 18,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "mit",
+              "lemma": "mit",
+              "pos": "ADP",
+              "upos": "ADP",
+              "xpos": "APPR",
+              "feats": {},
+              "start": 19,
+              "end": 22,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "der",
+              "lemma": "der",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "ART",
+              "feats": {},
+              "start": 23,
+              "end": 26,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Zange",
+              "lemma": "Zange",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 27,
+              "end": 32,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "heraus",
+              "lemma": "heraus",
+              "pos": "ADV",
+              "upos": "ADV",
+              "xpos": "PTKVZ",
+              "feats": {},
+              "start": 33,
+              "end": 39,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 39,
+              "end": 40,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Er",
+            "lemma": "er",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "zieht",
+            "lemma": "ziehen",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 3,
+            "end": 8,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "den",
+            "lemma": "der",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 9,
+            "end": 12,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Nagel",
+            "lemma": "Nagel",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 13,
+            "end": 18,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "mit",
+            "lemma": "mit",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 19,
+            "end": 22,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "der",
+            "lemma": "der",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 23,
+            "end": 26,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Zange",
+            "lemma": "Zange",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 27,
+            "end": 32,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "heraus",
+            "lemma": "heraus",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "PTKVZ",
+            "feats": {},
+            "start": 33,
+            "end": 39,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 39,
+            "end": 40,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:06:42Z",
+        "updated_utc": "2026-10-17T07:07:06Z",
+        "applied_utc": "2026-10-17T07:07:06Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:07:06Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -467,34 +831,6 @@
     "word": "Zange",
     "word_reading": "",
     "word_label": "Substantiv (die fem.)",
-    "word_en": "pliers; tongs",
-    "word_es": "alicates; tenazas",
-    "word_fr": "pince; tenailles",
-    "word_it": "pinza; tenaglia",
-    "word_ko": "펜치; 집게",
-    "word_zh-Hans": "钳子; 夹钳",
-    "word_yue": "鉗; 夾鉗",
-    "word_ru": "плоскогубцы; щипцы",
-    "word_pt": "alicate; tenazes",
-    "word_he": "פלייר; מלקחיים",
-    "word_tr": "pense; maşa",
-    "word_vi": "kìm; kẹp gắp",
-    "word_ar": "كماشة; ملقط",
-    "word_nl": "tang",
-    "word_uk": "плоскогубці; щипці",
-    "word_hu": "fogó; harapófogó",
-    "word_hi": "प्लायर; चिमटा",
-    "word_pl": "szczypce; kombinerki",
-    "word_el": "πένσα; λαβίδα",
-    "word_nb": "tang",
-    "word_id": "tang; penjepit",
-    "word_sv": "tång",
-    "word_ro": "clește; patent",
-    "word_cs": "kleště",
-    "word_da": "tang; tænger",
-    "word_fi": "pihdit; ottimet",
-    "word_ja": "ペンチ; トング",
-    "word_de": "Zange",
     "comic_difficulty": 4.89,
     "jp": [
       "Ich finde die Zange gerade nicht.",
@@ -507,24 +843,6 @@
       "/eːɐ tsiːt deːn ˈnaːɡl̩ mɪt deːɐ ˈtsaŋə/",
       "/diː ˈtsaŋə liːkt ˈneːbən deːm ˈvɛʁktsɔʏkˌkastn̩/",
       "/viːɐ ˈbʁaʊxən nɔx ˈaɪ̯nə ˈtsaŋə fyːɐ deːn ɡʁɪl/"
-    ],
-    "de": [
-      "Ich finde die Zange gerade nicht.",
-      "Er zieht den Nagel mit der Zange.",
-      "Die Zange liegt neben dem Werkzeugkasten.",
-      "Wir brauchen noch eine Zange für den Grill."
-    ],
-    "ipa": [
-      "/ɪç ˈfɪndə diː ˈtsaŋə ɡəˈʁaːdə nɪçt/",
-      "/eːɐ tsiːt deːn ˈnaːɡl̩ mɪt deːɐ ˈtsaŋə/",
-      "/diː ˈtsaŋə liːkt ˈneːbən deːm ˈvɛʁktsɔʏkˌkastn̩/",
-      "/viːɐ ˈbʁaʊxən nɔx ˈaɪ̯nə ˈtsaŋə fyːɐ deːn ɡʁɪl/"
-    ],
-    "en": [
-      "I can't find the pliers right now.",
-      "He pulls the nail with the pliers.",
-      "The pliers are lying next to the toolbox.",
-      "We still need tongs for the grill."
     ],
     "pos_analysis": [
       {
@@ -589,71 +907,107 @@
         "difficulty_aggregated": 5.33
       },
       {
-        "sentence": "Er zieht den Nagel mit der Zange.",
+        "sentence": "Er zieht den Nagel mit der Zange heraus.",
         "tokens": [
           {
             "surface": "Er",
-            "surface_en": "he",
-            "furigana": "[eːɐ̯]",
-            "pos": "PRON",
             "lemma": "er",
-            "explanation": "Personal pronoun, 3rd person singular nominative; subject of 'zieht'.",
-            "difficulty": 2
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "zieht",
-            "surface_en": "pulls",
-            "furigana": "[tsiːt]",
-            "pos": "VERB",
             "lemma": "ziehen",
-            "explanation": "Finite verb, present indicative 3rd person singular; transitive, takes 'den Nagel' as accusative object; instrument expressed by PP 'mit der Zange'.",
-            "difficulty": 7
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 3,
+            "end": 8,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "den",
-            "surface_en": "the",
-            "furigana": "[deːn]",
-            "pos": "DET",
             "lemma": "der",
-            "explanation": "Definite article, accusative masculine singular; determiner of 'Nagel'.",
-            "difficulty": 2
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 9,
+            "end": 12,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "Nagel",
-            "surface_en": "nail",
-            "furigana": "[ˈnaːɡəl]",
-            "pos": "NOUN",
             "lemma": "Nagel",
-            "explanation": "Common noun, masculine; accusative singular as direct object of 'zieht'.",
-            "difficulty": 7
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 13,
+            "end": 18,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "mit",
-            "surface_en": "with",
-            "furigana": "[mɪt]",
-            "pos": "ADP",
             "lemma": "mit",
-            "explanation": "Preposition selecting dative; introduces an instrumental phrase.",
-            "difficulty": 2
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 19,
+            "end": 22,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "der",
-            "surface_en": "the",
-            "furigana": "[deːɐ̯]",
-            "pos": "DET",
             "lemma": "der",
-            "explanation": "Definite article, dative feminine singular; determiner of 'Zange' after the preposition 'mit'.",
-            "difficulty": 2
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 23,
+            "end": 26,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "Zange.",
-            "surface_en": "pliers",
-            "furigana": "[ˈtsaŋə]",
-            "pos": "NOUN",
+            "surface": "Zange",
             "lemma": "Zange",
-            "explanation": "Common noun, feminine; dative singular as the object of the preposition 'mit' (instrument).",
-            "difficulty": 7,
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 27,
+            "end": 32,
+            "analyzer": "spacy_de_core_news_lg",
             "is_main_word": true
+          },
+          {
+            "surface": "heraus",
+            "lemma": "heraus",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "PTKVZ",
+            "feats": {},
+            "start": 33,
+            "end": 39,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 39,
+            "end": 40,
+            "analyzer": "spacy_de_core_news_lg"
           }
         ],
         "difficulty_aggregated": 4.14
@@ -799,137 +1153,41 @@
         "difficulty_aggregated": 4.25
       }
     ],
-    "es": [
-      "Ahora mismo no encuentro los alicates.",
-      "Saca el clavo con los alicates.",
-      "Los alicates están al lado de la caja de herramientas.",
-      "Todavía necesitamos unas pinzas para la parrilla."
-    ],
-    "fr": [
-      "Je ne trouve pas les pinces pour l’instant.",
-      "Il arrache le clou avec une pince.",
-      "Les pinces sont à côté de la boîte à outils.",
-      "Il nous faut encore des pinces pour le barbecue."
-    ],
-    "it": [
-      "Non riesco a trovare le pinze adesso.",
-      "Tira fuori il chiodo con le pinze.",
-      "Le pinze sono accanto alla cassetta degli attrezzi.",
-      "Ci servono ancora delle pinze per la griglia."
-    ],
-    "ko": [
-      "지금 펜치를 못 찾겠어.",
-      "그는 펜치로 못을 뽑는다.",
-      "펜치가 공구함 옆에 놓여 있다.",
-      "그릴용 집게가 아직 필요해."
-    ],
-    "zh-Hans": [
-      "我现在找不到钳子。",
-      "他用钳子把钉子拔出来。",
-      "钳子放在工具箱旁边。",
-      "我们还需要一个烧烤夹。"
-    ],
-    "yue": [
-      "我而家搵唔到鉗。",
-      "佢用鉗拔出個釘。",
-      "鉗擺喺工具箱旁邊。",
-      "我哋仲需要一把燒烤夾。"
-    ],
-    "ru": [
-      "Я сейчас не могу найти плоскогубцы.",
-      "Он вытаскивает гвоздь пассатижами.",
-      "Плоскогубцы лежат рядом с ящиком для инструментов.",
-      "Нам всё ещё нужны щипцы для гриля."
-    ],
-    "pt": [
-      "Não consigo encontrar o alicate agora.",
-      "Ele arranca o prego com o alicate.",
-      "O alicate está ao lado da caixa de ferramentas.",
-      "Ainda precisamos de um pegador para o churrasco."
-    ],
-    "he": [
-      "אני לא מוצא את הצבת עכשיו.",
-      "הוא שולף את המסמר עם הצבת.",
-      "הצבת מונחת ליד ארגז הכלים.",
-      "אנחנו עדיין צריכים מלקחיים לגריל."
-    ],
-    "tr": [
-      "Şu anda penseyi bulamıyorum.",
-      "Çiviyi penseyle çıkarıyor.",
-      "Pense alet çantasının yanında duruyor.",
-      "Hâlâ ızgara için bir maşa lazım."
-    ],
-    "vi": [
-      "Bây giờ tôi không tìm thấy cái kìm.",
-      "Anh ấy dùng kìm nhổ cái đinh ra.",
-      "Cái kìm nằm cạnh hộp dụng cụ.",
-      "Chúng ta vẫn cần một cái kẹp cho bếp nướng."
-    ],
+    "word_POS": "Noun",
+    "entry_id": "Zange",
+    "word_en": "pliers; tongs",
+    "word_es": "alicates; tenazas",
+    "word_fr": "pince; tenailles",
+    "word_it": "pinza; tenaglia",
+    "word_ko": "펜치; 집게",
+    "word_zh-Hans": "钳子; 夹钳",
+    "word_yue": "鉗; 夾鉗",
+    "word_ru": "плоскогубцы; щипцы",
+    "word_pt": "alicate; tenazes",
+    "word_he": "פלייר; מלקחיים",
+    "word_tr": "pense; maşa",
+    "word_vi": "kìm; kẹp gắp",
+    "word_ar": "كماشة; ملقط",
+    "word_nl": "tang",
+    "word_uk": "плоскогубці; щипці",
+    "word_hu": "fogó; harapófogó",
+    "word_hi": "प्लायर; चिमटा",
+    "word_pl": "szczypce; kombinerki",
+    "word_el": "πένσα; λαβίδα",
+    "word_nb": "tang",
+    "word_id": "tang; penjepit",
+    "word_sv": "tång",
+    "word_ro": "clește; patent",
+    "word_cs": "kleště",
+    "word_da": "tang; tænger",
+    "word_fi": "pihdit; ottimet",
+    "word_ja": "ペンチ; トング",
+    "word_de": "Zange",
     "ar": [
       "لا أجد الزرادية الآن.",
       "ينزع المسمار بالزرادية.",
       "الزرادية موضوعة بجانب صندوق الأدوات.",
       "ما زلنا بحاجة إلى ملقط للشواية."
-    ],
-    "nl": [
-      "Ik kan de tang nu niet vinden.",
-      "Hij trekt de spijker eruit met de tang.",
-      "De tang ligt naast de gereedschapskist.",
-      "We hebben nog een tang voor de barbecue nodig."
-    ],
-    "uk": [
-      "Я зараз не можу знайти плоскогубці.",
-      "Він витягує цвях плоскогубцями.",
-      "Плоскогубці лежать поруч із ящиком для інструментів.",
-      "Нам ще потрібні щипці для грилю."
-    ],
-    "hu": [
-      "Most nem találom a fogót.",
-      "Kihúzza a szöget a fogóval.",
-      "A fogó a szerszámosláda mellett van.",
-      "Szükségünk van még egy grillcsipeszre."
-    ],
-    "hi": [
-      "मैं अभी प्लायर नहीं ढूँढ पा रहा हूँ.",
-      "वह प्लायर से कील निकाल रहा है.",
-      "प्लायर औज़ारों के बक्से के पास रखा है.",
-      "हमें ग्रिल के लिए अभी भी चिमटा चाहिए."
-    ],
-    "pl": [
-      "Nie mogę teraz znaleźć kombinerek.",
-      "Wyciąga gwóźdź kombinerkami.",
-      "Kombinerki leżą obok skrzynki z narzędziami.",
-      "Jeszcze potrzebujemy szczypiec do grilla."
-    ],
-    "el": [
-      "Δεν μπορώ να βρω την πένσα τώρα.",
-      "Βγάζει το καρφί με την πένσα.",
-      "Η πένσα είναι δίπλα στην εργαλειοθήκη.",
-      "Χρειαζόμαστε ακόμα μια λαβίδα για την ψησταριά."
-    ],
-    "nb": [
-      "Jeg finner ikke tangen akkurat nå.",
-      "Han drar ut spikeren med tangen.",
-      "Tangen ligger ved siden av verktøykassen.",
-      "Vi trenger fortsatt en grilltang."
-    ],
-    "id": [
-      "Aku tidak bisa menemukan tang sekarang.",
-      "Dia mencabut paku dengan tang.",
-      "Tang tergeletak di sebelah kotak alat.",
-      "Kita masih perlu penjepit untuk panggangan."
-    ],
-    "sv": [
-      "Jag kan inte hitta tången just nu.",
-      "Han drar ut spiken med tången.",
-      "Tången ligger bredvid verktygslådan.",
-      "Vi behöver fortfarande en grilltång."
-    ],
-    "ro": [
-      "Nu găsesc cleștele acum.",
-      "Scoate cuiul cu cleștele.",
-      "Cleștele e lângă cutia cu scule.",
-      "Mai avem nevoie de un clește pentru grătar."
     ],
     "cs": [
       "Teď nemůžu najít kleště.",
@@ -943,11 +1201,77 @@
       "Tangen ligger ved siden af værktøjskassen.",
       "Vi mangler stadig en grilltang."
     ],
+    "de": [
+      "Ich finde die Zange gerade nicht.",
+      "Er zieht den Nagel mit der Zange.",
+      "Die Zange liegt neben dem Werkzeugkasten.",
+      "Wir brauchen noch eine Zange für den Grill."
+    ],
+    "el": [
+      "Δεν μπορώ να βρω την πένσα τώρα.",
+      "Βγάζει το καρφί με την πένσα.",
+      "Η πένσα είναι δίπλα στην εργαλειοθήκη.",
+      "Χρειαζόμαστε ακόμα μια λαβίδα για την ψησταριά."
+    ],
+    "en": [
+      "I can't find the pliers right now.",
+      "He pulls the nail with the pliers.",
+      "The pliers are lying next to the toolbox.",
+      "We still need tongs for the grill."
+    ],
+    "es": [
+      "Ahora mismo no encuentro los alicates.",
+      "Saca el clavo con los alicates.",
+      "Los alicates están al lado de la caja de herramientas.",
+      "Todavía necesitamos unas pinzas para la parrilla."
+    ],
     "fi": [
       "En löydä pihtejä nyt.",
       "Hän vetää naulan ulos pihdeillä.",
       "Pihdit ovat työkalupakin vieressä.",
       "Tarvitsemme vielä grillipihdit."
+    ],
+    "fr": [
+      "Je ne trouve pas les pinces pour l’instant.",
+      "Il arrache le clou avec une pince.",
+      "Les pinces sont à côté de la boîte à outils.",
+      "Il nous faut encore des pinces pour le barbecue."
+    ],
+    "he": [
+      "אני לא מוצא את הצבת עכשיו.",
+      "הוא שולף את המסמר עם הצבת.",
+      "הצבת מונחת ליד ארגז הכלים.",
+      "אנחנו עדיין צריכים מלקחיים לגריל."
+    ],
+    "hi": [
+      "मैं अभी प्लायर नहीं ढूँढ पा रहा हूँ.",
+      "वह प्लायर से कील निकाल रहा है.",
+      "प्लायर औज़ारों के बक्से के पास रखा है.",
+      "हमें ग्रिल के लिए अभी भी चिमटा चाहिए."
+    ],
+    "hu": [
+      "Most nem találom a fogót.",
+      "Kihúzza a szöget a fogóval.",
+      "A fogó a szerszámosláda mellett van.",
+      "Szükségünk van még egy grillcsipeszre."
+    ],
+    "id": [
+      "Aku tidak bisa menemukan tang sekarang.",
+      "Dia mencabut paku dengan tang.",
+      "Tang tergeletak di sebelah kotak alat.",
+      "Kita masih perlu penjepit untuk panggangan."
+    ],
+    "ipa": [
+      "/ɪç ˈfɪndə diː ˈtsaŋə ɡəˈʁaːdə nɪçt/",
+      "/eːɐ tsiːt deːn ˈnaːɡl̩ mɪt deːɐ ˈtsaŋə/",
+      "/diː ˈtsaŋə liːkt ˈneːbən deːm ˈvɛʁktsɔʏkˌkastn̩/",
+      "/viːɐ ˈbʁaʊxən nɔx ˈaɪ̯nə ˈtsaŋə fyːɐ deːn ɡʁɪl/"
+    ],
+    "it": [
+      "Non riesco a trovare le pinze adesso.",
+      "Tira fuori il chiodo con le pinze.",
+      "Le pinze sono accanto alla cassetta degli attrezzi.",
+      "Ci servono ancora delle pinze per la griglia."
     ],
     "ja": [
       "今ペンチが見つからない。",
@@ -955,6 +1279,83 @@
       "ペンチは工具箱の隣に置いてある。",
       "バーベキュー用のトングがまだ必要だ。"
     ],
-    "word_POS": "Noun"
+    "ko": [
+      "지금 펜치를 못 찾겠어.",
+      "그는 펜치로 못을 뽑는다.",
+      "펜치가 공구함 옆에 놓여 있다.",
+      "그릴용 집게가 아직 필요해."
+    ],
+    "nb": [
+      "Jeg finner ikke tangen akkurat nå.",
+      "Han drar ut spikeren med tangen.",
+      "Tangen ligger ved siden av verktøykassen.",
+      "Vi trenger fortsatt en grilltang."
+    ],
+    "nl": [
+      "Ik kan de tang nu niet vinden.",
+      "Hij trekt de spijker eruit met de tang.",
+      "De tang ligt naast de gereedschapskist.",
+      "We hebben nog een tang voor de barbecue nodig."
+    ],
+    "pl": [
+      "Nie mogę teraz znaleźć kombinerek.",
+      "Wyciąga gwóźdź kombinerkami.",
+      "Kombinerki leżą obok skrzynki z narzędziami.",
+      "Jeszcze potrzebujemy szczypiec do grilla."
+    ],
+    "pt": [
+      "Não consigo encontrar o alicate agora.",
+      "Ele arranca o prego com o alicate.",
+      "O alicate está ao lado da caixa de ferramentas.",
+      "Ainda precisamos de um pegador para o churrasco."
+    ],
+    "ro": [
+      "Nu găsesc cleștele acum.",
+      "Scoate cuiul cu cleștele.",
+      "Cleștele e lângă cutia cu scule.",
+      "Mai avem nevoie de un clește pentru grătar."
+    ],
+    "ru": [
+      "Я сейчас не могу найти плоскогубцы.",
+      "Он вытаскивает гвоздь пассатижами.",
+      "Плоскогубцы лежат рядом с ящиком для инструментов.",
+      "Нам всё ещё нужны щипцы для гриля."
+    ],
+    "sv": [
+      "Jag kan inte hitta tången just nu.",
+      "Han drar ut spiken med tången.",
+      "Tången ligger bredvid verktygslådan.",
+      "Vi behöver fortfarande en grilltång."
+    ],
+    "tr": [
+      "Şu anda penseyi bulamıyorum.",
+      "Çiviyi penseyle çıkarıyor.",
+      "Pense alet çantasının yanında duruyor.",
+      "Hâlâ ızgara için bir maşa lazım."
+    ],
+    "uk": [
+      "Я зараз не можу знайти плоскогубці.",
+      "Він витягує цвях плоскогубцями.",
+      "Плоскогубці лежать поруч із ящиком для інструментів.",
+      "Нам ще потрібні щипці для грилю."
+    ],
+    "vi": [
+      "Bây giờ tôi không tìm thấy cái kìm.",
+      "Anh ấy dùng kìm nhổ cái đinh ra.",
+      "Cái kìm nằm cạnh hộp dụng cụ.",
+      "Chúng ta vẫn cần một cái kẹp cho bếp nướng."
+    ],
+    "yue": [
+      "我而家搵唔到鉗。",
+      "佢用鉗拔出個釘。",
+      "鉗擺喺工具箱旁邊。",
+      "我哋仲需要一把燒烤夾。"
+    ],
+    "zh-Hans": [
+      "我现在找不到钳子。",
+      "他用钳子把钉子拔出来。",
+      "钳子放在工具箱旁边。",
+      "我们还需要一个烧烤夹。"
+    ]
   }
 }

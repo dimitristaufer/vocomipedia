@@ -296,10 +296,10 @@
       "difficulty": 4.5
     },
     {
-      "target": "Du siehst die Grenze von hier.",
+      "target": "Von hier aus siehst du die Grenze.",
       "reading": "/duː ziːst diː ˈɡʁɛnt͡sə fɔn hiːɐ̯/",
       "translations": {
-        "de": "Du siehst die Grenze von hier.",
+        "de": "Von hier aus siehst du die Grenze.",
         "ipa": "/duː ziːst diː ˈɡʁɛnt͡sə fɔn hiːɐ̯/",
         "en": "You can see the border from here.",
         "es": "Desde aquí se ve la frontera.",
@@ -331,59 +331,93 @@
       },
       "tokens": [
         {
-          "surface": "Du",
-          "surface_en": "you",
-          "furigana": "[duː]",
-          "pos": "PRON",
-          "lemma": "du",
-          "explanation": "Personal pronoun, nominative singular; subject (2nd person singular).",
-          "difficulty": 2
+          "surface": "Von",
+          "lemma": "von",
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "APPR",
+          "feats": {},
+          "start": 0,
+          "end": 3,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "hier",
+          "lemma": "hier",
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "ADV",
+          "feats": {},
+          "start": 4,
+          "end": 8,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "aus",
+          "lemma": "aus",
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "APZR",
+          "feats": {},
+          "start": 9,
+          "end": 12,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "siehst",
-          "surface_en": "see",
-          "furigana": "[ziːst]",
+          "lemma": "siehen",
           "pos": "VERB",
-          "lemma": "sehen",
-          "explanation": "Finite main verb, present indicative, 2nd person singular; verb of perception taking a direct object.",
-          "difficulty": 7
+          "upos": "VERB",
+          "xpos": "VVFIN",
+          "feats": {},
+          "start": 13,
+          "end": 19,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "du",
+          "lemma": "du",
+          "pos": "PRON",
+          "upos": "PRON",
+          "xpos": "PPER",
+          "feats": {},
+          "start": 20,
+          "end": 22,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "die",
-          "surface_en": "the",
-          "furigana": "[diː]",
-          "pos": "DET",
           "lemma": "der",
-          "explanation": "Definite article, accusative feminine singular; agrees with 'Grenze' as direct object.",
-          "difficulty": 2
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "ART",
+          "feats": {},
+          "start": 23,
+          "end": 26,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "Grenze",
-          "surface_en": "border",
-          "furigana": "[ˈɡʁɛnt͡sə]",
-          "pos": "NOUN",
           "lemma": "Grenze",
-          "explanation": "Common noun, feminine; accusative singular functioning as direct object of 'siehst'.",
-          "difficulty": 7,
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 27,
+          "end": 33,
+          "analyzer": "spacy_de_core_news_lg",
           "is_main_word": true
         },
         {
-          "surface": "von",
-          "surface_en": "from",
-          "furigana": "[fɔn]",
-          "pos": "ADP",
-          "lemma": "von",
-          "explanation": "Preposition expressing source/origin; here forms a PP with the locative adverb 'hier' ('von hier' = from here).",
-          "difficulty": 2
-        },
-        {
-          "surface": "hier.",
-          "surface_en": "here",
-          "furigana": "[hiːɐ]",
-          "pos": "ADV",
-          "lemma": "hier",
-          "explanation": "Locative adverb specifying vantage point; complement of the preposition 'von' in the PP 'von hier'.",
-          "difficulty": 7
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 33,
+          "end": 34,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 4.5
@@ -400,8 +434,314 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-15T00:38:16Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:De b1/ff3d98776f96a238",
+      "revision_id": 85418,
+      "parent_revision_id": 16356,
+      "revision_timestamp_utc": "2026-10-15T00:38:16Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Use natural German word order for saying the border is visible from here.",
+      "pulled_utc": "2026-10-17T07:06:45Z",
+      "applied_utc": "2026-10-17T07:06:49Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-525882d4a587e024",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_b1:ff3d98776f96a238",
+        "pack_code": "de_b1",
+        "entry_id": "Grenze",
+        "language": "de",
+        "sentence_index": 4,
+        "old_sentence": "Du siehst die Grenze von hier.",
+        "old_translations": {
+          "de": "Du siehst die Grenze von hier.",
+          "ipa": "/duː ziːst diː ˈɡʁɛnt͡sə fɔn hiːɐ̯/",
+          "en": "You can see the border from here.",
+          "es": "Desde aquí se ve la frontera.",
+          "fr": "D’ici, on voit la frontière.",
+          "it": "Da qui si vede il confine.",
+          "ko": "여기서 국경이 보여.",
+          "zh-Hans": "从这里能看见边境。",
+          "yue": "喺呢度睇到邊境。",
+          "ru": "Отсюда видно границу.",
+          "pt": "Daqui dá para ver a fronteira.",
+          "he": "מכאן רואים את הגבול.",
+          "tr": "Buradan sınır görünüyor.",
+          "vi": "Từ đây có thể nhìn thấy biên giới.",
+          "ar": "من هنا يمكنك رؤية الحدود.",
+          "nl": "Vanaf hier kun je de grens zien.",
+          "uk": "Звідси видно кордон.",
+          "hu": "Innen látszik a határ.",
+          "hi": "यहां से सीमा दिखती है.",
+          "pl": "Stąd widać granicę.",
+          "el": "Από εδώ φαίνονται τα σύνορα.",
+          "nb": "Herfra kan du se grensen.",
+          "id": "Dari sini terlihat perbatasan.",
+          "sv": "Härifrån kan du se gränsen.",
+          "ro": "De aici se vede granița.",
+          "cs": "Odsud je vidět hranice.",
+          "da": "Herfra kan du se grænsen.",
+          "fi": "Täältä näkee rajan.",
+          "ja": "ここから国境が見える。"
+        },
+        "proposed_sentence": "Von hier aus siehst du die Grenze.",
+        "proposed_translations": {
+          "de": "Von hier aus siehst du die Grenze.",
+          "ipa": "/duː ziːst diː ˈɡʁɛnt͡sə fɔn hiːɐ̯/",
+          "en": "You can see the border from here.",
+          "es": "Desde aquí se ve la frontera.",
+          "fr": "D’ici, on voit la frontière.",
+          "it": "Da qui si vede il confine.",
+          "ko": "여기서 국경이 보여.",
+          "zh-Hans": "从这里能看见边境。",
+          "yue": "喺呢度睇到邊境。",
+          "ru": "Отсюда видно границу.",
+          "pt": "Daqui dá para ver a fronteira.",
+          "he": "מכאן רואים את הגבול.",
+          "tr": "Buradan sınır görünüyor.",
+          "vi": "Từ đây có thể nhìn thấy biên giới.",
+          "ar": "من هنا يمكنك رؤية الحدود.",
+          "nl": "Vanaf hier kun je de grens zien.",
+          "uk": "Звідси видно кордон.",
+          "hu": "Innen látszik a határ.",
+          "hi": "यहां से सीमा दिखती है.",
+          "pl": "Stąd widać granicę.",
+          "el": "Από εδώ φαίνονται τα σύνορα.",
+          "nb": "Herfra kan du se grensen.",
+          "id": "Dari sini terlihat perbatasan.",
+          "sv": "Härifrån kan du se gränsen.",
+          "ro": "De aici se vede granița.",
+          "cs": "Odsud je vidět hranice.",
+          "da": "Herfra kan du se grænsen.",
+          "fi": "Täältä näkee rajan.",
+          "ja": "ここから国境が見える。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Von hier aus siehst du die Grenze.",
+        "old_japanese": "Du siehst die Grenze von hier.",
+        "old_english": "You can see the border from here.",
+        "proposed_japanese": "Von hier aus siehst du die Grenze.",
+        "proposed_english": "You can see the border from here.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Von hier aus siehst du die Grenze.",
+          "tokens": [
+            {
+              "surface": "Von",
+              "lemma": "von",
+              "pos": "ADP",
+              "upos": "ADP",
+              "xpos": "APPR",
+              "feats": {},
+              "start": 0,
+              "end": 3,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "hier",
+              "lemma": "hier",
+              "pos": "ADV",
+              "upos": "ADV",
+              "xpos": "ADV",
+              "feats": {},
+              "start": 4,
+              "end": 8,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "aus",
+              "lemma": "aus",
+              "pos": "ADP",
+              "upos": "ADP",
+              "xpos": "APZR",
+              "feats": {},
+              "start": 9,
+              "end": 12,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "siehst",
+              "lemma": "siehen",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVFIN",
+              "feats": {},
+              "start": 13,
+              "end": 19,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "du",
+              "lemma": "du",
+              "pos": "PRON",
+              "upos": "PRON",
+              "xpos": "PPER",
+              "feats": {},
+              "start": 20,
+              "end": 22,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "die",
+              "lemma": "der",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "ART",
+              "feats": {},
+              "start": 23,
+              "end": 26,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Grenze",
+              "lemma": "Grenze",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 27,
+              "end": 33,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 33,
+              "end": 34,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Von",
+            "lemma": "von",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "hier",
+            "lemma": "hier",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 4,
+            "end": 8,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "aus",
+            "lemma": "aus",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APZR",
+            "feats": {},
+            "start": 9,
+            "end": 12,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "siehst",
+            "lemma": "siehen",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 13,
+            "end": 19,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "du",
+            "lemma": "du",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 20,
+            "end": 22,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "die",
+            "lemma": "der",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 23,
+            "end": 26,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Grenze",
+            "lemma": "Grenze",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 27,
+            "end": 33,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 33,
+            "end": 34,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:06:45Z",
+        "updated_utc": "2026-10-17T07:07:05Z",
+        "applied_utc": "2026-10-17T07:07:05Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:07:05Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -413,34 +753,6 @@
     "word": "Grenze",
     "word_reading": "",
     "word_label": "Substantiv (die fem.)",
-    "word_en": "border; limit",
-    "word_es": "frontera; límite",
-    "word_fr": "frontière; limite",
-    "word_it": "confine; limite",
-    "word_ko": "국경; 한계",
-    "word_zh-Hans": "边界; 限度",
-    "word_yue": "邊界; 界限",
-    "word_ru": "граница; предел",
-    "word_pt": "fronteira; limite",
-    "word_he": "גבול; מגבלה",
-    "word_tr": "sınır; limit",
-    "word_vi": "biên giới; giới hạn",
-    "word_ar": "حدود; حدّ",
-    "word_nl": "grens; limiet",
-    "word_uk": "кордон; межа",
-    "word_hu": "határ; korlát",
-    "word_hi": "सीमा; हद",
-    "word_pl": "granica; ograniczenie",
-    "word_el": "σύνορο; όριο",
-    "word_nb": "grense",
-    "word_id": "perbatasan; batas",
-    "word_sv": "gräns",
-    "word_ro": "graniță; limită",
-    "word_cs": "hranice; mez",
-    "word_da": "grænse",
-    "word_fi": "raja",
-    "word_ja": "国境; 限界",
-    "word_de": "Grenze",
     "comic_difficulty": 4.5,
     "jp": [
       "Wir warten an der Grenze.",
@@ -453,24 +765,6 @@
       "/das ɪst ˈmaɪ̯nə ˈɡʁɛnt͡sə/",
       "/eːɐ̯ fɛːɐ̯t ˈhɔɪ̯tə ˈyːbɐ diː ˈɡʁɛnt͡sə/",
       "/duː ziːst diː ˈɡʁɛnt͡sə fɔn hiːɐ̯/"
-    ],
-    "de": [
-      "Wir warten an der Grenze.",
-      "Das ist meine Grenze.",
-      "Er fährt heute über die Grenze.",
-      "Du siehst die Grenze von hier."
-    ],
-    "ipa": [
-      "/viːɐ̯ ˈvaʁtən an deːɐ̯ ˈɡʁɛnt͡sə/",
-      "/das ɪst ˈmaɪ̯nə ˈɡʁɛnt͡sə/",
-      "/eːɐ̯ fɛːɐ̯t ˈhɔɪ̯tə ˈyːbɐ diː ˈɡʁɛnt͡sə/",
-      "/duː ziːst diː ˈɡʁɛnt͡sə fɔn hiːɐ̯/"
-    ],
-    "en": [
-      "We’re waiting at the border.",
-      "That’s my limit.",
-      "He’s driving across the border today.",
-      "You can see the border from here."
     ],
     "pos_analysis": [
       {
@@ -630,198 +924,136 @@
         "difficulty_aggregated": 4.5
       },
       {
-        "sentence": "Du siehst die Grenze von hier.",
+        "sentence": "Von hier aus siehst du die Grenze.",
         "tokens": [
           {
-            "surface": "Du",
-            "surface_en": "you",
-            "furigana": "[duː]",
-            "pos": "PRON",
-            "lemma": "du",
-            "explanation": "Personal pronoun, nominative singular; subject (2nd person singular).",
-            "difficulty": 2
+            "surface": "Von",
+            "lemma": "von",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "hier",
+            "lemma": "hier",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 4,
+            "end": 8,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "aus",
+            "lemma": "aus",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APZR",
+            "feats": {},
+            "start": 9,
+            "end": 12,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "siehst",
-            "surface_en": "see",
-            "furigana": "[ziːst]",
+            "lemma": "siehen",
             "pos": "VERB",
-            "lemma": "sehen",
-            "explanation": "Finite main verb, present indicative, 2nd person singular; verb of perception taking a direct object.",
-            "difficulty": 7
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 13,
+            "end": 19,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "du",
+            "lemma": "du",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 20,
+            "end": 22,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "die",
-            "surface_en": "the",
-            "furigana": "[diː]",
-            "pos": "DET",
             "lemma": "der",
-            "explanation": "Definite article, accusative feminine singular; agrees with 'Grenze' as direct object.",
-            "difficulty": 2
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 23,
+            "end": 26,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "Grenze",
-            "surface_en": "border",
-            "furigana": "[ˈɡʁɛnt͡sə]",
-            "pos": "NOUN",
             "lemma": "Grenze",
-            "explanation": "Common noun, feminine; accusative singular functioning as direct object of 'siehst'.",
-            "difficulty": 7,
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 27,
+            "end": 33,
+            "analyzer": "spacy_de_core_news_lg",
             "is_main_word": true
           },
           {
-            "surface": "von",
-            "surface_en": "from",
-            "furigana": "[fɔn]",
-            "pos": "ADP",
-            "lemma": "von",
-            "explanation": "Preposition expressing source/origin; here forms a PP with the locative adverb 'hier' ('von hier' = from here).",
-            "difficulty": 2
-          },
-          {
-            "surface": "hier.",
-            "surface_en": "here",
-            "furigana": "[hiːɐ]",
-            "pos": "ADV",
-            "lemma": "hier",
-            "explanation": "Locative adverb specifying vantage point; complement of the preposition 'von' in the PP 'von hier'.",
-            "difficulty": 7
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 33,
+            "end": 34,
+            "analyzer": "spacy_de_core_news_lg"
           }
         ],
         "difficulty_aggregated": 4.5
       }
     ],
-    "es": [
-      "Estamos esperando en la frontera.",
-      "Ese es mi límite.",
-      "Hoy cruza la frontera en coche.",
-      "Desde aquí se ve la frontera."
-    ],
-    "fr": [
-      "On attend à la frontière.",
-      "C’est ma limite.",
-      "Il traverse la frontière en voiture aujourd’hui.",
-      "D’ici, on voit la frontière."
-    ],
-    "it": [
-      "Stiamo aspettando al confine.",
-      "È il mio limite.",
-      "Oggi attraversa il confine in macchina.",
-      "Da qui si vede il confine."
-    ],
-    "ko": [
-      "우리는 국경에서 기다리고 있어.",
-      "그건 내 한계야.",
-      "그는 오늘 차로 국경을 넘는다.",
-      "여기서 국경이 보여."
-    ],
-    "zh-Hans": [
-      "我们在边境等着。",
-      "这是我的底线。",
-      "他今天开车过境。",
-      "从这里能看见边境。"
-    ],
-    "yue": [
-      "我哋喺邊境等緊。",
-      "呢個係我嘅底線。",
-      "佢今日揸車過關。",
-      "喺呢度睇到邊境。"
-    ],
-    "ru": [
-      "Мы ждём на границе.",
-      "Это мой предел.",
-      "Сегодня он пересекает границу на машине.",
-      "Отсюда видно границу."
-    ],
-    "pt": [
-      "Estamos esperando na fronteira.",
-      "Esse é meu limite.",
-      "Hoje ele atravessa a fronteira de carro.",
-      "Daqui dá para ver a fronteira."
-    ],
-    "he": [
-      "אנחנו מחכים בגבול.",
-      "זה הגבול שלי.",
-      "היום הוא חוצה את הגבול במכונית.",
-      "מכאן רואים את הגבול."
-    ],
-    "tr": [
-      "Sınırda bekliyoruz.",
-      "Bu benim sınırım.",
-      "Bugün sınırı arabayla geçiyor.",
-      "Buradan sınır görünüyor."
-    ],
-    "vi": [
-      "Chúng tôi đang chờ ở biên giới.",
-      "Đó là giới hạn của tôi.",
-      "Hôm nay anh ấy lái xe qua biên giới.",
-      "Từ đây có thể nhìn thấy biên giới."
-    ],
+    "word_POS": "Noun",
+    "entry_id": "Grenze",
+    "word_en": "border; limit",
+    "word_es": "frontera; límite",
+    "word_fr": "frontière; limite",
+    "word_it": "confine; limite",
+    "word_ko": "국경; 한계",
+    "word_zh-Hans": "边界; 限度",
+    "word_yue": "邊界; 界限",
+    "word_ru": "граница; предел",
+    "word_pt": "fronteira; limite",
+    "word_he": "גבול; מגבלה",
+    "word_tr": "sınır; limit",
+    "word_vi": "biên giới; giới hạn",
+    "word_ar": "حدود; حدّ",
+    "word_nl": "grens; limiet",
+    "word_uk": "кордон; межа",
+    "word_hu": "határ; korlát",
+    "word_hi": "सीमा; हद",
+    "word_pl": "granica; ograniczenie",
+    "word_el": "σύνορο; όριο",
+    "word_nb": "grense",
+    "word_id": "perbatasan; batas",
+    "word_sv": "gräns",
+    "word_ro": "graniță; limită",
+    "word_cs": "hranice; mez",
+    "word_da": "grænse",
+    "word_fi": "raja",
+    "word_ja": "国境; 限界",
+    "word_de": "Grenze",
     "ar": [
       "نحن ننتظر عند الحدود.",
       "هذا حدّي.",
       "اليوم يعبر الحدود بالسيارة.",
       "من هنا يمكنك رؤية الحدود."
-    ],
-    "nl": [
-      "We wachten bij de grens.",
-      "Dat is mijn grens.",
-      "Vandaag rijdt hij over de grens.",
-      "Vanaf hier kun je de grens zien."
-    ],
-    "uk": [
-      "Ми чекаємо на кордоні.",
-      "Це моя межа.",
-      "Сьогодні він перетинає кордон автомобілем.",
-      "Звідси видно кордон."
-    ],
-    "hu": [
-      "A határon várunk.",
-      "Ez a határom.",
-      "Ma áthajt a határon.",
-      "Innen látszik a határ."
-    ],
-    "hi": [
-      "हम सीमा पर इंतज़ार कर रहे हैं.",
-      "यह मेरी हद है.",
-      "वह आज कार से सीमा पार कर रहा है.",
-      "यहां से सीमा दिखती है."
-    ],
-    "pl": [
-      "Czekamy na granicy.",
-      "To moja granica.",
-      "Dziś przejeżdża przez granicę.",
-      "Stąd widać granicę."
-    ],
-    "el": [
-      "Περιμένουμε στα σύνορα.",
-      "Αυτό είναι το όριό μου.",
-      "Σήμερα περνάει τα σύνορα με το αυτοκίνητο.",
-      "Από εδώ φαίνονται τα σύνορα."
-    ],
-    "nb": [
-      "Vi venter ved grensen.",
-      "Det er min grense.",
-      "I dag kjører han over grensen.",
-      "Herfra kan du se grensen."
-    ],
-    "id": [
-      "Kami sedang menunggu di perbatasan.",
-      "Itu batas saya.",
-      "Hari ini dia berkendara melintasi perbatasan.",
-      "Dari sini terlihat perbatasan."
-    ],
-    "sv": [
-      "Vi väntar vid gränsen.",
-      "Det är min gräns.",
-      "I dag kör han över gränsen.",
-      "Härifrån kan du se gränsen."
-    ],
-    "ro": [
-      "Așteptăm la graniță.",
-      "Asta e limita mea.",
-      "Astăzi trece granița cu mașina.",
-      "De aici se vede granița."
     ],
     "cs": [
       "Čekáme na hranici.",
@@ -835,11 +1067,77 @@
       "I dag kører han over grænsen.",
       "Herfra kan du se grænsen."
     ],
+    "de": [
+      "Wir warten an der Grenze.",
+      "Das ist meine Grenze.",
+      "Er fährt heute über die Grenze.",
+      "Du siehst die Grenze von hier."
+    ],
+    "el": [
+      "Περιμένουμε στα σύνορα.",
+      "Αυτό είναι το όριό μου.",
+      "Σήμερα περνάει τα σύνορα με το αυτοκίνητο.",
+      "Από εδώ φαίνονται τα σύνορα."
+    ],
+    "en": [
+      "We’re waiting at the border.",
+      "That’s my limit.",
+      "He’s driving across the border today.",
+      "You can see the border from here."
+    ],
+    "es": [
+      "Estamos esperando en la frontera.",
+      "Ese es mi límite.",
+      "Hoy cruza la frontera en coche.",
+      "Desde aquí se ve la frontera."
+    ],
     "fi": [
       "Odotamme rajalla.",
       "Tämä on rajani.",
       "Tänään hän ajaa yli rajan.",
       "Täältä näkee rajan."
+    ],
+    "fr": [
+      "On attend à la frontière.",
+      "C’est ma limite.",
+      "Il traverse la frontière en voiture aujourd’hui.",
+      "D’ici, on voit la frontière."
+    ],
+    "he": [
+      "אנחנו מחכים בגבול.",
+      "זה הגבול שלי.",
+      "היום הוא חוצה את הגבול במכונית.",
+      "מכאן רואים את הגבול."
+    ],
+    "hi": [
+      "हम सीमा पर इंतज़ार कर रहे हैं.",
+      "यह मेरी हद है.",
+      "वह आज कार से सीमा पार कर रहा है.",
+      "यहां से सीमा दिखती है."
+    ],
+    "hu": [
+      "A határon várunk.",
+      "Ez a határom.",
+      "Ma áthajt a határon.",
+      "Innen látszik a határ."
+    ],
+    "id": [
+      "Kami sedang menunggu di perbatasan.",
+      "Itu batas saya.",
+      "Hari ini dia berkendara melintasi perbatasan.",
+      "Dari sini terlihat perbatasan."
+    ],
+    "ipa": [
+      "/viːɐ̯ ˈvaʁtən an deːɐ̯ ˈɡʁɛnt͡sə/",
+      "/das ɪst ˈmaɪ̯nə ˈɡʁɛnt͡sə/",
+      "/eːɐ̯ fɛːɐ̯t ˈhɔɪ̯tə ˈyːbɐ diː ˈɡʁɛnt͡sə/",
+      "/duː ziːst diː ˈɡʁɛnt͡sə fɔn hiːɐ̯/"
+    ],
+    "it": [
+      "Stiamo aspettando al confine.",
+      "È il mio limite.",
+      "Oggi attraversa il confine in macchina.",
+      "Da qui si vede il confine."
     ],
     "ja": [
       "国境で待ってる。",
@@ -847,6 +1145,83 @@
       "彼は今日、車で国境を越える。",
       "ここから国境が見える。"
     ],
-    "word_POS": "Noun"
+    "ko": [
+      "우리는 국경에서 기다리고 있어.",
+      "그건 내 한계야.",
+      "그는 오늘 차로 국경을 넘는다.",
+      "여기서 국경이 보여."
+    ],
+    "nb": [
+      "Vi venter ved grensen.",
+      "Det er min grense.",
+      "I dag kjører han over grensen.",
+      "Herfra kan du se grensen."
+    ],
+    "nl": [
+      "We wachten bij de grens.",
+      "Dat is mijn grens.",
+      "Vandaag rijdt hij over de grens.",
+      "Vanaf hier kun je de grens zien."
+    ],
+    "pl": [
+      "Czekamy na granicy.",
+      "To moja granica.",
+      "Dziś przejeżdża przez granicę.",
+      "Stąd widać granicę."
+    ],
+    "pt": [
+      "Estamos esperando na fronteira.",
+      "Esse é meu limite.",
+      "Hoje ele atravessa a fronteira de carro.",
+      "Daqui dá para ver a fronteira."
+    ],
+    "ro": [
+      "Așteptăm la graniță.",
+      "Asta e limita mea.",
+      "Astăzi trece granița cu mașina.",
+      "De aici se vede granița."
+    ],
+    "ru": [
+      "Мы ждём на границе.",
+      "Это мой предел.",
+      "Сегодня он пересекает границу на машине.",
+      "Отсюда видно границу."
+    ],
+    "sv": [
+      "Vi väntar vid gränsen.",
+      "Det är min gräns.",
+      "I dag kör han över gränsen.",
+      "Härifrån kan du se gränsen."
+    ],
+    "tr": [
+      "Sınırda bekliyoruz.",
+      "Bu benim sınırım.",
+      "Bugün sınırı arabayla geçiyor.",
+      "Buradan sınır görünüyor."
+    ],
+    "uk": [
+      "Ми чекаємо на кордоні.",
+      "Це моя межа.",
+      "Сьогодні він перетинає кордон автомобілем.",
+      "Звідси видно кордон."
+    ],
+    "vi": [
+      "Chúng tôi đang chờ ở biên giới.",
+      "Đó là giới hạn của tôi.",
+      "Hôm nay anh ấy lái xe qua biên giới.",
+      "Từ đây có thể nhìn thấy biên giới."
+    ],
+    "yue": [
+      "我哋喺邊境等緊。",
+      "呢個係我嘅底線。",
+      "佢今日揸車過關。",
+      "喺呢度睇到邊境。"
+    ],
+    "zh-Hans": [
+      "我们在边境等着。",
+      "这是我的底线。",
+      "他今天开车过境。",
+      "从这里能看见边境。"
+    ]
   }
 }

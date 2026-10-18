@@ -59,7 +59,7 @@
         "he": "אכלתי שבעה תפוחים.",
         "tr": "Yedi elma yedim.",
         "vi": "Tôi đã ăn bảy quả táo.",
-        "ar": "أكلت سبع تفاح.",
+        "ar": "أكلت سبع تفاحات.",
         "nl": "Ik at zeven appels.",
         "uk": "Я з'їв сім яблук.",
         "hu": "Hét almát ettem.",
@@ -452,7 +452,7 @@
     },
     {
       "target": "その伝説は七つの山に伝わる.",
-      "reading": "そのでんせつはななつのやまにつたわる.",
+      "reading": "そのでんせつはななつのやまにつたわる．",
       "translations": {
         "en": "That legend is told across seven mountains.",
         "es": "Esa leyenda se cuenta a través de siete montañas.",
@@ -472,7 +472,7 @@
         "uk": "Ця легенда розповідається в семи горах.",
         "hu": "Ezt a legendát hét hegyen mesélik el.",
         "hi": "यह कथा सात पर्वतों के पार बताई जाती है।",
-        "pl": "Legenda ta opowiadana jest в siedmiu górach.",
+        "pl": "Legenda ta opowiadana jest w siedmiu górach.",
         "el": "Αυτός ο θρύλος λέγεται σε επτά βουνά.",
         "nb": "Den legenden fortelles over syv fjell.",
         "id": "Legenda itu diceritakan di tujuh gunung.",
@@ -485,26 +485,30 @@
       "tokens": [
         {
           "surface": "その",
-          "surface_en": "that",
-          "furigana": "その",
-          "pos": "demonstrative adjective",
-          "difficulty": 1,
-          "explanation": "refers to a specific legend (‘that legend’).",
           "lemma": "その",
+          "pos": "連体詞/*/*/*/*/*",
+          "upos": "DET",
+          "xpos": "連体詞",
+          "feats": {},
+          "start": 0,
+          "end": 2,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "その",
           "ruby_text": "その",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "その"
         },
         {
           "surface": "伝説",
-          "surface_en": "legend",
-          "furigana": "でんせつ",
-          "pos": "noun",
-          "difficulty": 17,
-          "explanation": "the topic being discussed (‘legend’).",
           "lemma": "伝説",
+          "pos": "名詞/普通名詞/一般/*/*/*",
+          "upos": "NOUN",
+          "xpos": "名詞",
+          "feats": {},
+          "start": 2,
+          "end": 4,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "でんせつ",
           "ruby_text": "伝説[でんせつ]",
           "ruby_spans": [
@@ -515,34 +519,38 @@
               "length": 2
             }
           ],
-          "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "ruby_confidence": "reviewed",
+          "furigana": "でんせつ",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "は",
-          "surface_en": "topic marker",
-          "furigana": "は",
-          "pos": "particle",
-          "difficulty": 1,
-          "explanation": "marks ‘その伝説’ as the topic of the sentence.",
           "lemma": "は",
+          "pos": "助詞/係助詞/*/*/*/*",
+          "upos": "PART",
+          "xpos": "助詞",
+          "feats": {},
+          "start": 4,
+          "end": 5,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "は",
           "ruby_text": "は",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "は"
         },
         {
-          "surface": "七つ",
-          "surface_en": "seven",
-          "furigana": "ななつ",
-          "pos": "numeral",
-          "difficulty": 1,
-          "explanation": "indicates the number (‘seven’) of mountains.",
-          "lemma": "七つ",
-          "is_main_word": true,
-          "reading_kana": "ななつ",
-          "ruby_text": "七[なな]つ",
+          "surface": "七",
+          "lemma": "七",
+          "pos": "名詞/数詞/*/*/*/*",
+          "upos": "NOUN",
+          "xpos": "名詞",
+          "feats": {},
+          "start": 5,
+          "end": 6,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "なな",
+          "ruby_text": "七[なな]",
           "ruby_spans": [
             {
               "base": "七",
@@ -551,31 +559,54 @@
               "length": 1
             }
           ],
+          "ruby_confidence": "reviewed",
+          "furigana": "なな",
+          "ruby_source": "mediawiki_sentence_ruby",
+          "is_main_word": true
+        },
+        {
+          "surface": "つ",
+          "lemma": "つ",
+          "pos": "接尾辞/名詞的/助数詞/*/*/*",
+          "upos": "SUFFIX",
+          "xpos": "接尾辞",
+          "feats": {},
+          "start": 6,
+          "end": 7,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "つ",
+          "ruby_text": "つ",
+          "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "つ",
+          "is_main_word": true
         },
         {
           "surface": "の",
-          "surface_en": "of",
-          "furigana": "の",
-          "pos": "particle",
-          "difficulty": 1,
-          "explanation": "links the numeral ‘七つ’ to ‘山’.",
           "lemma": "の",
+          "pos": "助詞/格助詞/*/*/*/*",
+          "upos": "PART",
+          "xpos": "助詞",
+          "feats": {},
+          "start": 7,
+          "end": 8,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "の",
           "ruby_text": "の",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "の"
         },
         {
           "surface": "山",
-          "surface_en": "mountains",
-          "furigana": "やま",
-          "pos": "noun",
-          "difficulty": 1,
-          "explanation": "the location or group (‘mountains’).",
           "lemma": "山",
+          "pos": "名詞/普通名詞/一般/*/*/*",
+          "upos": "NOUN",
+          "xpos": "名詞",
+          "feats": {},
+          "start": 8,
+          "end": 9,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "やま",
           "ruby_text": "山[やま]",
           "ruby_spans": [
@@ -586,31 +617,36 @@
               "length": 1
             }
           ],
-          "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "ruby_confidence": "reviewed",
+          "furigana": "やま",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "に",
-          "surface_en": "in",
-          "furigana": "に",
-          "pos": "particle",
-          "difficulty": 1,
-          "explanation": "marks ‘山’ as the location where the legend is passed down.",
           "lemma": "に",
+          "pos": "助詞/格助詞/*/*/*/*",
+          "upos": "PART",
+          "xpos": "助詞",
+          "feats": {},
+          "start": 9,
+          "end": 10,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "に",
           "ruby_text": "に",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "に"
         },
         {
           "surface": "伝わる",
-          "surface_en": "is passed down",
-          "furigana": "つたわる",
-          "pos": "verb",
-          "difficulty": 11,
-          "explanation": "describes the action of being handed down or transmitted.",
           "lemma": "伝わる",
+          "pos": "動詞/一般/*/*/五段-ラ行/終止形-一般",
+          "upos": "VERB",
+          "xpos": "動詞",
+          "feats": {},
+          "start": 10,
+          "end": 13,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "つたわる",
           "ruby_text": "伝[つた]わる",
           "ruby_spans": [
@@ -621,8 +657,25 @@
               "length": 1
             }
           ],
+          "ruby_confidence": "reviewed",
+          "furigana": "つたわる",
+          "ruby_source": "mediawiki_sentence_ruby"
+        },
+        {
+          "surface": ".",
+          "lemma": ".",
+          "pos": "補助記号/句点/*/*/*/*",
+          "upos": "PUNCT",
+          "xpos": "補助記号",
+          "feats": {},
+          "start": 13,
+          "end": 14,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "．",
+          "ruby_text": ".",
+          "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "．"
         }
       ],
       "difficulty": 9,
@@ -643,19 +696,517 @@
     "content_reviewers": [
       "mediawiki-visible-revision"
     ],
-    "last_reviewed_utc": "2026-06-21T18:30:46Z",
-    "approval_source": "mediawiki_visible_revision",
+    "last_reviewed_utc": "2026-10-11T12:06:54Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
     "wiki": {
       "title": "Item:Ja n5/f3979b2459b310af",
-      "revision_id": 58252,
-      "parent_revision_id": 36696,
-      "revision_timestamp_utc": "2026-06-21T18:30:46Z",
-      "revision_user": "VocomiBot",
-      "revision_comment": "Sync ja_n5 item 七つ",
-      "pulled_utc": "2026-06-21T20:53:47Z",
-      "applied_utc": "2026-06-21T20:54:01Z",
+      "revision_id": 82805,
+      "parent_revision_id": 69129,
+      "revision_timestamp_utc": "2026-10-11T12:06:54Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Suggest reviewed Japanese and translation corrections",
+      "pulled_utc": "2026-10-17T07:37:41Z",
+      "applied_utc": "2026-10-17T07:37:59Z",
       "applied_by": "vocomipedia-apply-pulled"
-    }
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-67c2ad12db225b26",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "ja_n5:f3979b2459b310af",
+        "pack_code": "ja_n5",
+        "entry_id": "七つ",
+        "language": "ja",
+        "sentence_index": 4,
+        "old_sentence": "その伝説は七つの山に伝わる。",
+        "old_translations": {
+          "en": "That legend is told across seven mountains.",
+          "es": "Esa leyenda se cuenta a través de siete montañas.",
+          "fr": "Cette légende est racontée à travers sept montagnes.",
+          "de": "Diese Legende wird über sieben Berge erzählt.",
+          "it": "Questa leggenda è raccontata attraverso sette montagne.",
+          "ko": "이 전설은 일곱 개의 산에 걸쳐 전해집니다.",
+          "zh-Hans": "这个传说在七座山上流传。",
+          "yue": "呢個傳說喺七座山上流傳。",
+          "ru": "Эта легенда рассказывается на семи горах.",
+          "pt": "Essa lenda é contada através de sete montanhas.",
+          "he": "האגדה הזו מסופרת על פני שבעה הרים.",
+          "tr": "Bu efsane yedi dağda anlatılır.",
+          "vi": "Truyền thuyết đó được kể trên bảy ngọn núi.",
+          "ar": "تروى هذه الأسطورة عبر سبعة جبال.",
+          "nl": "Die legende wordt verteld over zeven bergen.",
+          "uk": "Ця легенда розповідається в семи горах.",
+          "hu": "Ezt a legendát hét hegyen mesélik el.",
+          "hi": "यह कथा सात पर्वतों के पार बताई जाती है।",
+          "pl": "Legenda ta opowiadana jest w siedmiu górach.",
+          "el": "Αυτός ο θρύλος λέγεται σε επτά βουνά.",
+          "nb": "Den legenden fortelles over syv fjell.",
+          "id": "Legenda itu diceritakan di tujuh gunung.",
+          "sv": "Den legenden berättas över sju berg.",
+          "ro": "Această legendă este spusă pe șapte munți.",
+          "cs": "Tato legenda se vypráví přes sedm hor.",
+          "da": "Den legende fortælles over syv bjerge.",
+          "fi": "Tätä legendaa kerrotaan seitsemällä vuorella."
+        },
+        "proposed_sentence": "その伝説は七つの山に伝わる.",
+        "proposed_translations": {
+          "en": "That legend is told across seven mountains.",
+          "es": "Esa leyenda se cuenta a través de siete montañas.",
+          "fr": "Cette légende est racontée à travers sept montagnes.",
+          "de": "Diese Legende wird über sieben Berge erzählt.",
+          "it": "Questa leggenda è raccontata attraverso sette montagne.",
+          "ko": "이 전설은 일곱 개의 산에 걸쳐 전해집니다.",
+          "zh-Hans": "这个传说在七座山上流传。",
+          "yue": "呢個傳說喺七座山上流傳。",
+          "ru": "Эта легенда рассказывается на семи горах.",
+          "pt": "Essa lenda é contada através de sete montanhas.",
+          "he": "האגדה הזו מסופרת על פני שבעה הרים.",
+          "tr": "Bu efsane yedi dağda anlatılır.",
+          "vi": "Truyền thuyết đó được kể trên bảy ngọn núi.",
+          "ar": "تروى هذه الأسطورة عبر سبعة جبال.",
+          "nl": "Die legende wordt verteld over zeven bergen.",
+          "uk": "Ця легенда розповідається в семи горах.",
+          "hu": "Ezt a legendát hét hegyen mesélik el.",
+          "hi": "यह कथा सात पर्वतों के पार बताई जाती है।",
+          "pl": "Legenda ta opowiadana jest w siedmiu górach.",
+          "el": "Αυτός ο θρύλος λέγεται σε επτά βουνά.",
+          "nb": "Den legenden fortelles over syv fjell.",
+          "id": "Legenda itu diceritakan di tujuh gunung.",
+          "sv": "Den legenden berättas över sju berg.",
+          "ro": "Această legendă este spusă pe șapte munți.",
+          "cs": "Tato legenda se vypráví přes sedm hor.",
+          "da": "Den legende fortælles over syv bjerge.",
+          "fi": "Tätä legendaa kerrotaan seitsemällä vuorella."
+        },
+        "old_ruby_source": "その伝説[でんせつ]は七[なな]つの山[やま]に伝[つた]わる。",
+        "proposed_ruby_source": "その伝説[でんせつ]は七[なな]つの山[やま]に伝[つた]わる.",
+        "old_japanese": "その伝説は七つの山に伝わる。",
+        "old_english": "That legend is told across seven mountains.",
+        "proposed_japanese": "その伝説は七つの山に伝わる.",
+        "proposed_english": "That legend is told across seven mountains.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "ja",
+          "sentence": "その伝説は七つの山に伝わる.",
+          "tokens": [
+            {
+              "surface": "その",
+              "lemma": "その",
+              "pos": "連体詞/*/*/*/*/*",
+              "upos": "DET",
+              "xpos": "連体詞",
+              "feats": {},
+              "start": 0,
+              "end": 2,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "その",
+              "ruby_text": "その",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "その"
+            },
+            {
+              "surface": "伝説",
+              "lemma": "伝説",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 2,
+              "end": 4,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "でんせつ",
+              "ruby_text": "伝説[でんせつ]",
+              "ruby_spans": [
+                {
+                  "base": "伝説",
+                  "reading": "でんせつ",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "でんせつ",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "は",
+              "lemma": "は",
+              "pos": "助詞/係助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 4,
+              "end": 5,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "は",
+              "ruby_text": "は",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "は"
+            },
+            {
+              "surface": "七",
+              "lemma": "七",
+              "pos": "名詞/数詞/*/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 5,
+              "end": 6,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "なな",
+              "ruby_text": "七[なな]",
+              "ruby_spans": [
+                {
+                  "base": "七",
+                  "reading": "なな",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "なな",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "つ",
+              "lemma": "つ",
+              "pos": "接尾辞/名詞的/助数詞/*/*/*",
+              "upos": "SUFFIX",
+              "xpos": "接尾辞",
+              "feats": {},
+              "start": 6,
+              "end": 7,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "つ",
+              "ruby_text": "つ",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "つ"
+            },
+            {
+              "surface": "の",
+              "lemma": "の",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 7,
+              "end": 8,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "の",
+              "ruby_text": "の",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "の"
+            },
+            {
+              "surface": "山",
+              "lemma": "山",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 8,
+              "end": 9,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "やま",
+              "ruby_text": "山[やま]",
+              "ruby_spans": [
+                {
+                  "base": "山",
+                  "reading": "やま",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "やま",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "に",
+              "lemma": "に",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 9,
+              "end": 10,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "に",
+              "ruby_text": "に",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "に"
+            },
+            {
+              "surface": "伝わる",
+              "lemma": "伝わる",
+              "pos": "動詞/一般/*/*/五段-ラ行/終止形-一般",
+              "upos": "VERB",
+              "xpos": "動詞",
+              "feats": {},
+              "start": 10,
+              "end": 13,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "つたわる",
+              "ruby_text": "伝[つた]わる",
+              "ruby_spans": [
+                {
+                  "base": "伝",
+                  "reading": "つた",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "つたわる",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": ".",
+              "lemma": ".",
+              "pos": "補助記号/句点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 13,
+              "end": 14,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "．",
+              "ruby_text": ".",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "．"
+            }
+          ],
+          "reading": "そのでんせつはななつのやまにつたわる．",
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "warnings": [
+            "mediawiki ruby hints applied"
+          ]
+        },
+        "generated_tokens": [
+          {
+            "surface": "その",
+            "lemma": "その",
+            "pos": "連体詞/*/*/*/*/*",
+            "upos": "DET",
+            "xpos": "連体詞",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "その",
+            "ruby_text": "その",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "その"
+          },
+          {
+            "surface": "伝説",
+            "lemma": "伝説",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 2,
+            "end": 4,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "でんせつ",
+            "ruby_text": "伝説[でんせつ]",
+            "ruby_spans": [
+              {
+                "base": "伝説",
+                "reading": "でんせつ",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "でんせつ",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "は",
+            "lemma": "は",
+            "pos": "助詞/係助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 4,
+            "end": 5,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "は",
+            "ruby_text": "は",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "は"
+          },
+          {
+            "surface": "七",
+            "lemma": "七",
+            "pos": "名詞/数詞/*/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 5,
+            "end": 6,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "なな",
+            "ruby_text": "七[なな]",
+            "ruby_spans": [
+              {
+                "base": "七",
+                "reading": "なな",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "なな",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "つ",
+            "lemma": "つ",
+            "pos": "接尾辞/名詞的/助数詞/*/*/*",
+            "upos": "SUFFIX",
+            "xpos": "接尾辞",
+            "feats": {},
+            "start": 6,
+            "end": 7,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "つ",
+            "ruby_text": "つ",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "つ"
+          },
+          {
+            "surface": "の",
+            "lemma": "の",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 7,
+            "end": 8,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "の",
+            "ruby_text": "の",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "の"
+          },
+          {
+            "surface": "山",
+            "lemma": "山",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 8,
+            "end": 9,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "やま",
+            "ruby_text": "山[やま]",
+            "ruby_spans": [
+              {
+                "base": "山",
+                "reading": "やま",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "やま",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "に",
+            "lemma": "に",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 9,
+            "end": 10,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "に",
+            "ruby_text": "に",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "に"
+          },
+          {
+            "surface": "伝わる",
+            "lemma": "伝わる",
+            "pos": "動詞/一般/*/*/五段-ラ行/終止形-一般",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 10,
+            "end": 13,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "つたわる",
+            "ruby_text": "伝[つた]わる",
+            "ruby_spans": [
+              {
+                "base": "伝",
+                "reading": "つた",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "つたわる",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": ".",
+            "lemma": ".",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 13,
+            "end": 14,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "．",
+            "ruby_text": ".",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "．"
+          }
+        ],
+        "generated_reading": "そのでんせつはななつのやまにつたわる．",
+        "analyzer": "sudachipy_sudachidict_core_c",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:37:41Z",
+        "updated_utc": "2026-10-17T07:38:15Z",
+        "applied_utc": "2026-10-17T07:38:15Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:38:15Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -1015,26 +1566,30 @@
         "tokens": [
           {
             "surface": "その",
-            "surface_en": "that",
-            "furigana": "その",
-            "pos": "demonstrative adjective",
-            "difficulty": 1,
-            "explanation": "refers to a specific legend (‘that legend’).",
             "lemma": "その",
+            "pos": "連体詞/*/*/*/*/*",
+            "upos": "DET",
+            "xpos": "連体詞",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "その",
             "ruby_text": "その",
             "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "その"
           },
           {
             "surface": "伝説",
-            "surface_en": "legend",
-            "furigana": "でんせつ",
-            "pos": "noun",
-            "difficulty": 17,
-            "explanation": "the topic being discussed (‘legend’).",
             "lemma": "伝説",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 2,
+            "end": 4,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "でんせつ",
             "ruby_text": "伝説[でんせつ]",
             "ruby_spans": [
@@ -1045,34 +1600,38 @@
                 "length": 2
               }
             ],
-            "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "ruby_confidence": "reviewed",
+            "furigana": "でんせつ",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "は",
-            "surface_en": "topic marker",
-            "furigana": "は",
-            "pos": "particle",
-            "difficulty": 1,
-            "explanation": "marks ‘その伝説’ as the topic of the sentence.",
             "lemma": "は",
+            "pos": "助詞/係助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 4,
+            "end": 5,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "は",
             "ruby_text": "は",
             "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "は"
           },
           {
-            "surface": "七つ",
-            "surface_en": "seven",
-            "furigana": "ななつ",
-            "pos": "numeral",
-            "difficulty": 1,
-            "explanation": "indicates the number (‘seven’) of mountains.",
-            "lemma": "七つ",
-            "is_main_word": true,
-            "reading_kana": "ななつ",
-            "ruby_text": "七[なな]つ",
+            "surface": "七",
+            "lemma": "七",
+            "pos": "名詞/数詞/*/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 5,
+            "end": 6,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "なな",
+            "ruby_text": "七[なな]",
             "ruby_spans": [
               {
                 "base": "七",
@@ -1081,31 +1640,54 @@
                 "length": 1
               }
             ],
+            "ruby_confidence": "reviewed",
+            "furigana": "なな",
+            "ruby_source": "mediawiki_sentence_ruby",
+            "is_main_word": true
+          },
+          {
+            "surface": "つ",
+            "lemma": "つ",
+            "pos": "接尾辞/名詞的/助数詞/*/*/*",
+            "upos": "SUFFIX",
+            "xpos": "接尾辞",
+            "feats": {},
+            "start": 6,
+            "end": 7,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "つ",
+            "ruby_text": "つ",
+            "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "つ",
+            "is_main_word": true
           },
           {
             "surface": "の",
-            "surface_en": "of",
-            "furigana": "の",
-            "pos": "particle",
-            "difficulty": 1,
-            "explanation": "links the numeral ‘七つ’ to ‘山’.",
             "lemma": "の",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 7,
+            "end": 8,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "の",
             "ruby_text": "の",
             "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "の"
           },
           {
             "surface": "山",
-            "surface_en": "mountains",
-            "furigana": "やま",
-            "pos": "noun",
-            "difficulty": 1,
-            "explanation": "the location or group (‘mountains’).",
             "lemma": "山",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 8,
+            "end": 9,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "やま",
             "ruby_text": "山[やま]",
             "ruby_spans": [
@@ -1116,31 +1698,36 @@
                 "length": 1
               }
             ],
-            "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "ruby_confidence": "reviewed",
+            "furigana": "やま",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "に",
-            "surface_en": "in",
-            "furigana": "に",
-            "pos": "particle",
-            "difficulty": 1,
-            "explanation": "marks ‘山’ as the location where the legend is passed down.",
             "lemma": "に",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 9,
+            "end": 10,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "に",
             "ruby_text": "に",
             "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "に"
           },
           {
             "surface": "伝わる",
-            "surface_en": "is passed down",
-            "furigana": "つたわる",
-            "pos": "verb",
-            "difficulty": 11,
-            "explanation": "describes the action of being handed down or transmitted.",
             "lemma": "伝わる",
+            "pos": "動詞/一般/*/*/五段-ラ行/終止形-一般",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 10,
+            "end": 13,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "つたわる",
             "ruby_text": "伝[つた]わる",
             "ruby_spans": [
@@ -1151,8 +1738,25 @@
                 "length": 1
               }
             ],
+            "ruby_confidence": "reviewed",
+            "furigana": "つたわる",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": ".",
+            "lemma": ".",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 13,
+            "end": 14,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "．",
+            "ruby_text": ".",
+            "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "．"
           }
         ],
         "difficulty_aggregated": 9
@@ -1189,7 +1793,7 @@
     "word_fi": "seitsemän",
     "word_en": "seven",
     "ar": [
-      "أكلت سبع تفاح.",
+      "أكلت سبع تفاحات.",
       "سبعة نجوم مشرقة.",
       "لديها سبعة أسرار.",
       "تروى هذه الأسطورة عبر سبعة جبال."
@@ -1294,7 +1898,7 @@
       "Zjadłem siedem jabłek.",
       "Świeci siedem gwiazd.",
       "Skrywa siedem sekretów.",
-      "Legenda ta opowiadana jest в siedmiu górach."
+      "Legenda ta opowiadana jest w siedmiu górach."
     ],
     "pt": [
       "Eu comi sete maçãs.",

@@ -42,12 +42,12 @@
   },
   "sentences": [
     {
-      "target": "きょうはくたびれるほどあるいた。",
+      "target": "今日はくたびれるほど歩いた。",
       "reading": "きょうはくたびれるほどあるいた。",
       "translations": {
         "en": "I walked so much today that I’m exhausted.",
         "ar": "مشيت كثيرًا اليوم حتى تعبت.",
-        "cs": "Dnes jsem šel tak moc, že jsem úplně unavený.",
+        "cs": "Dnes jsem toho tolik nachodil, že jsem úplně vyčerpaný.",
         "da": "Jeg gik så meget i dag, at jeg er helt udmattet.",
         "de": "Ich bin heute so viel gelaufen, dass ich ganz erschöpft bin.",
         "el": "Περπάτησα τόσο πολύ σήμερα που έχω εξαντληθεί.",
@@ -64,7 +64,7 @@
         "nl": "Ik heb vandaag zo veel gelopen dat ik uitgeput ben.",
         "pl": "Dziś chodziłem tak dużo, że jestem wykończony.",
         "pt": "Andei tanto hoje que estou exausto.",
-        "ro": "Am mers atât de mult azi, că sunt epuizat.",
+        "ro": "Am mers atât de mult azi, încât sunt epuizat.",
         "ru": "Я сегодня так много ходил, что совсем устал.",
         "sv": "Jag gick så mycket i dag att jag är helt utmattad.",
         "tr": "Bugün o kadar çok yürüdüm ki çok yoruldum.",
@@ -75,20 +75,28 @@
       },
       "tokens": [
         {
-          "surface": "きょう",
-          "lemma": "きょう",
+          "surface": "今日",
+          "lemma": "今日",
           "pos": "名詞/普通名詞/副詞可能/*/*/*",
           "upos": "NOUN",
           "xpos": "名詞",
           "feats": {},
           "start": 0,
-          "end": 3,
+          "end": 2,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "きょう",
-          "ruby_text": "きょう",
-          "ruby_spans": [],
-          "ruby_confidence": "high",
-          "furigana": "きょう"
+          "ruby_text": "今日[きょう]",
+          "ruby_spans": [
+            {
+              "base": "今日",
+              "reading": "きょう",
+              "start": 0,
+              "length": 2
+            }
+          ],
+          "ruby_confidence": "reviewed",
+          "furigana": "きょう",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "は",
@@ -97,8 +105,8 @@
           "upos": "PART",
           "xpos": "助詞",
           "feats": {},
-          "start": 3,
-          "end": 4,
+          "start": 2,
+          "end": 3,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "は",
           "ruby_text": "は",
@@ -113,8 +121,8 @@
           "upos": "VERB",
           "xpos": "動詞",
           "feats": {},
-          "start": 4,
-          "end": 9,
+          "start": 3,
+          "end": 8,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "くたびれる",
           "ruby_text": "くたびれる",
@@ -130,8 +138,8 @@
           "upos": "PART",
           "xpos": "助詞",
           "feats": {},
-          "start": 9,
-          "end": 11,
+          "start": 8,
+          "end": 10,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "ほど",
           "ruby_text": "ほど",
@@ -140,36 +148,28 @@
           "furigana": "ほど"
         },
         {
-          "surface": "ある",
-          "lemma": "ある",
-          "pos": "連体詞/*/*/*/*/*",
-          "upos": "DET",
-          "xpos": "連体詞",
-          "feats": {},
-          "start": 11,
-          "end": 13,
-          "analyzer": "sudachipy_sudachidict_core_c",
-          "reading_kana": "ある",
-          "ruby_text": "ある",
-          "ruby_spans": [],
-          "ruby_confidence": "high",
-          "furigana": "ある"
-        },
-        {
-          "surface": "い",
-          "lemma": "いる",
-          "pos": "動詞/非自立可能/*/*/上一段-ア行/連用形-一般",
+          "surface": "歩い",
+          "lemma": "歩く",
+          "pos": "動詞/一般/*/*/五段-カ行/連用形-イ音便",
           "upos": "VERB",
           "xpos": "動詞",
           "feats": {},
-          "start": 13,
-          "end": 14,
+          "start": 10,
+          "end": 12,
           "analyzer": "sudachipy_sudachidict_core_c",
-          "reading_kana": "い",
-          "ruby_text": "い",
-          "ruby_spans": [],
-          "ruby_confidence": "high",
-          "furigana": "い"
+          "reading_kana": "あるい",
+          "ruby_text": "歩[ある]い",
+          "ruby_spans": [
+            {
+              "base": "歩",
+              "reading": "ある",
+              "start": 0,
+              "length": 1
+            }
+          ],
+          "ruby_confidence": "reviewed",
+          "furigana": "あるい",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "た",
@@ -178,8 +178,8 @@
           "upos": "AUX",
           "xpos": "助動詞",
           "feats": {},
-          "start": 14,
-          "end": 15,
+          "start": 12,
+          "end": 13,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "た",
           "ruby_text": "た",
@@ -194,8 +194,8 @@
           "upos": "PUNCT",
           "xpos": "補助記号",
           "feats": {},
-          "start": 15,
-          "end": 16,
+          "start": 13,
+          "end": 14,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "。",
           "ruby_text": "。",
@@ -207,7 +207,7 @@
       "difficulty": null
     },
     {
-      "target": "まいにちおなじしごとでくたびれる。",
+      "target": "毎日同じ仕事でくたびれる。",
       "reading": "まいにちおなじしごとでくたびれる。",
       "translations": {
         "en": "Doing the same work every day wears me out.",
@@ -219,9 +219,9 @@
         "es": "Hacer el mismo trabajo todos los días me agota.",
         "fi": "Sama työ joka päivä väsyttää minua.",
         "fr": "Faire le même travail tous les jours m'épuise.",
-        "he": "אותה העבודה כל יום מתישה אותי.",
+        "he": "אותה עבודה כל יום מתישה אותי.",
         "hi": "हर दिन वही काम करने से मैं थक जाता हूँ।",
-        "hu": "A mindennapi ugyanaz a munka kimerít.",
+        "hu": "Minden nap ugyanaz a munka fáraszt ki.",
         "id": "Pekerjaan yang sama setiap hari membuat saya lelah.",
         "it": "Lo stesso lavoro ogni giorno mi sfianca.",
         "ko": "매일 같은 일을 해서 지쳐요.",
@@ -229,63 +229,87 @@
         "nl": "Elke dag hetzelfde werk doen put me uit.",
         "pl": "Ta sama praca codziennie mnie wykańcza.",
         "pt": "Fazer o mesmo trabalho todos os dias me cansa.",
-        "ro": "Munca aceeași în fiecare zi mă obosește.",
+        "ro": "Aceeași muncă în fiecare zi mă obosește.",
         "ru": "Одна и та же работа каждый день меня выматывает.",
         "sv": "Samma jobb varje dag gör mig trött.",
         "tr": "Her gün aynı işi yapmak beni yoruyor.",
         "uk": "Одна й та сама робота щодня мене вимотує.",
-        "vi": "Làm cùng một công việc mỗi ngày làm tôi mệt mỏi.",
+        "vi": "Ngày nào cũng làm cùng một công việc khiến tôi mệt mỏi.",
         "yue": "每日都做同樣嘅工作令我好攰。",
         "zh-Hans": "每天做同样的工作让我很累。"
       },
       "tokens": [
         {
-          "surface": "まいにち",
-          "lemma": "まいにち",
+          "surface": "毎日",
+          "lemma": "毎日",
           "pos": "名詞/普通名詞/副詞可能/*/*/*",
           "upos": "NOUN",
           "xpos": "名詞",
           "feats": {},
           "start": 0,
-          "end": 4,
+          "end": 2,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "まいにち",
-          "ruby_text": "まいにち",
-          "ruby_spans": [],
-          "ruby_confidence": "high",
-          "furigana": "まいにち"
+          "ruby_text": "毎日[まいにち]",
+          "ruby_spans": [
+            {
+              "base": "毎日",
+              "reading": "まいにち",
+              "start": 0,
+              "length": 2
+            }
+          ],
+          "ruby_confidence": "reviewed",
+          "furigana": "まいにち",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
-          "surface": "おなじ",
-          "lemma": "おなじ",
+          "surface": "同じ",
+          "lemma": "同じ",
           "pos": "連体詞/*/*/*/*/*",
           "upos": "DET",
           "xpos": "連体詞",
           "feats": {},
-          "start": 4,
-          "end": 7,
+          "start": 2,
+          "end": 4,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "おなじ",
-          "ruby_text": "おなじ",
-          "ruby_spans": [],
-          "ruby_confidence": "high",
-          "furigana": "おなじ"
+          "ruby_text": "同[おな]じ",
+          "ruby_spans": [
+            {
+              "base": "同",
+              "reading": "おな",
+              "start": 0,
+              "length": 1
+            }
+          ],
+          "ruby_confidence": "reviewed",
+          "furigana": "おなじ",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
-          "surface": "しごと",
-          "lemma": "しごと",
+          "surface": "仕事",
+          "lemma": "仕事",
           "pos": "名詞/普通名詞/サ変可能/*/*/*",
           "upos": "NOUN",
           "xpos": "名詞",
           "feats": {},
-          "start": 7,
-          "end": 10,
+          "start": 4,
+          "end": 6,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "しごと",
-          "ruby_text": "しごと",
-          "ruby_spans": [],
-          "ruby_confidence": "high",
-          "furigana": "しごと"
+          "ruby_text": "仕事[しごと]",
+          "ruby_spans": [
+            {
+              "base": "仕事",
+              "reading": "しごと",
+              "start": 0,
+              "length": 2
+            }
+          ],
+          "ruby_confidence": "reviewed",
+          "furigana": "しごと",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "で",
@@ -294,8 +318,8 @@
           "upos": "PART",
           "xpos": "助詞",
           "feats": {},
-          "start": 10,
-          "end": 11,
+          "start": 6,
+          "end": 7,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "で",
           "ruby_text": "で",
@@ -310,8 +334,8 @@
           "upos": "VERB",
           "xpos": "動詞",
           "feats": {},
-          "start": 11,
-          "end": 16,
+          "start": 7,
+          "end": 12,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "くたびれる",
           "ruby_text": "くたびれる",
@@ -327,8 +351,8 @@
           "upos": "PUNCT",
           "xpos": "補助記号",
           "feats": {},
-          "start": 16,
-          "end": 17,
+          "start": 12,
+          "end": 13,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "。",
           "ruby_text": "。",
@@ -367,7 +391,7 @@
         "sv": "Den här väskan är redan sliten.",
         "tr": "Bu çanta artık yıpranmış.",
         "uk": "Ця сумка вже зношена.",
-        "vi": "Chiếc túi này đã cũ rồi.",
+        "vi": "Chiếc túi này đã sờn cũ rồi.",
         "yue": "呢個袋已經殘舊喇。",
         "zh-Hans": "这个包已经旧了。"
       },
@@ -505,7 +529,7 @@
       "difficulty": null
     },
     {
-      "target": "そのはなしにはもうくたびれた。",
+      "target": "その話にはもうくたびれた。",
       "reading": "そのはなしにはもうくたびれた。",
       "translations": {
         "en": "I’m already fed up with that story.",
@@ -554,20 +578,28 @@
           "furigana": "その"
         },
         {
-          "surface": "はなし",
-          "lemma": "はなし",
+          "surface": "話",
+          "lemma": "話",
           "pos": "名詞/普通名詞/サ変可能/*/*/*",
           "upos": "NOUN",
           "xpos": "名詞",
           "feats": {},
           "start": 2,
-          "end": 5,
+          "end": 3,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "はなし",
-          "ruby_text": "はなし",
-          "ruby_spans": [],
-          "ruby_confidence": "high",
-          "furigana": "はなし"
+          "ruby_text": "話[はなし]",
+          "ruby_spans": [
+            {
+              "base": "話",
+              "reading": "はなし",
+              "start": 0,
+              "length": 1
+            }
+          ],
+          "ruby_confidence": "reviewed",
+          "furigana": "はなし",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "に",
@@ -576,8 +608,8 @@
           "upos": "PART",
           "xpos": "助詞",
           "feats": {},
-          "start": 5,
-          "end": 6,
+          "start": 3,
+          "end": 4,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "に",
           "ruby_text": "に",
@@ -592,8 +624,8 @@
           "upos": "PART",
           "xpos": "助詞",
           "feats": {},
-          "start": 6,
-          "end": 7,
+          "start": 4,
+          "end": 5,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "は",
           "ruby_text": "は",
@@ -608,8 +640,8 @@
           "upos": "ADV",
           "xpos": "副詞",
           "feats": {},
-          "start": 7,
-          "end": 9,
+          "start": 5,
+          "end": 7,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "もう",
           "ruby_text": "もう",
@@ -624,8 +656,8 @@
           "upos": "VERB",
           "xpos": "動詞",
           "feats": {},
-          "start": 9,
-          "end": 13,
+          "start": 7,
+          "end": 11,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "くたびれ",
           "ruby_text": "くたびれ",
@@ -641,8 +673,8 @@
           "upos": "AUX",
           "xpos": "助動詞",
           "feats": {},
-          "start": 13,
-          "end": 14,
+          "start": 11,
+          "end": 12,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "た",
           "ruby_text": "た",
@@ -657,8 +689,8 @@
           "upos": "PUNCT",
           "xpos": "補助記号",
           "feats": {},
-          "start": 14,
-          "end": 15,
+          "start": 12,
+          "end": 13,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "。",
           "ruby_text": "。",
@@ -681,8 +713,1126 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-12T23:51:20Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:Ja n3/b09d24a46faabd22",
+      "revision_id": 81429,
+      "parent_revision_id": 69379,
+      "revision_timestamp_utc": "2026-10-12T23:51:20Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Standardize Japanese spelling and correct awkward or incomplete translations.",
+      "pulled_utc": "2026-10-18T17:39:11Z",
+      "applied_utc": "2026-10-18T17:39:50Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-0babace82bb86638",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "ja_n3:b09d24a46faabd22",
+        "pack_code": "ja_n3",
+        "entry_id": "くたびれる",
+        "language": "ja",
+        "sentence_index": 1,
+        "old_sentence": "きょうはくたびれるほどあるいた。",
+        "old_translations": {
+          "en": "I walked so much today that I’m exhausted.",
+          "ar": "مشيت كثيرًا اليوم حتى تعبت.",
+          "cs": "Dnes jsem šel tak moc, že jsem úplně unavený.",
+          "da": "Jeg gik så meget i dag, at jeg er helt udmattet.",
+          "de": "Ich bin heute so viel gelaufen, dass ich ganz erschöpft bin.",
+          "el": "Περπάτησα τόσο πολύ σήμερα που έχω εξαντληθεί.",
+          "es": "Caminé tanto hoy que estoy agotado.",
+          "fi": "Kävelin tänään niin paljon, että olen aivan uupunut.",
+          "fr": "J'ai tellement marché aujourd'hui que je suis épuisé.",
+          "he": "הלכתי היום כל כך הרבה שאני גמור.",
+          "hi": "मैंने आज इतना चला कि मैं थक गया हूँ।",
+          "hu": "Ma olyan sokat gyalogoltam, hogy teljesen kimerültem.",
+          "id": "Saya berjalan begitu banyak hari ini sampai saya sangat lelah.",
+          "it": "Oggi ho camminato così tanto che sono sfinito.",
+          "ko": "오늘은 너무 많이 걸어서 지쳤어요.",
+          "nb": "Jeg gikk så mye i dag at jeg er helt utslitt.",
+          "nl": "Ik heb vandaag zo veel gelopen dat ik uitgeput ben.",
+          "pl": "Dziś chodziłem tak dużo, że jestem wykończony.",
+          "pt": "Andei tanto hoje que estou exausto.",
+          "ro": "Am mers atât de mult azi, că sunt epuizat.",
+          "ru": "Я сегодня так много ходил, что совсем устал.",
+          "sv": "Jag gick så mycket i dag att jag är helt utmattad.",
+          "tr": "Bugün o kadar çok yürüdüm ki çok yoruldum.",
+          "uk": "Сьогодні я стільки ходив, що зовсім втомився.",
+          "vi": "Hôm nay tôi đi bộ nhiều đến mức kiệt sức rồi.",
+          "yue": "今日我行咗咁多，攰到不得了。",
+          "zh-Hans": "我今天走了很多路，累坏了。"
+        },
+        "proposed_sentence": "今日はくたびれるほど歩いた。",
+        "proposed_translations": {
+          "en": "I walked so much today that I’m exhausted.",
+          "ar": "مشيت كثيرًا اليوم حتى تعبت.",
+          "cs": "Dnes jsem toho tolik nachodil, že jsem úplně vyčerpaný.",
+          "da": "Jeg gik så meget i dag, at jeg er helt udmattet.",
+          "de": "Ich bin heute so viel gelaufen, dass ich ganz erschöpft bin.",
+          "el": "Περπάτησα τόσο πολύ σήμερα που έχω εξαντληθεί.",
+          "es": "Caminé tanto hoy que estoy agotado.",
+          "fi": "Kävelin tänään niin paljon, että olen aivan uupunut.",
+          "fr": "J'ai tellement marché aujourd'hui que je suis épuisé.",
+          "he": "הלכתי היום כל כך הרבה שאני גמור.",
+          "hi": "मैंने आज इतना चला कि मैं थक गया हूँ।",
+          "hu": "Ma olyan sokat gyalogoltam, hogy teljesen kimerültem.",
+          "id": "Saya berjalan begitu banyak hari ini sampai saya sangat lelah.",
+          "it": "Oggi ho camminato così tanto che sono sfinito.",
+          "ko": "오늘은 너무 많이 걸어서 지쳤어요.",
+          "nb": "Jeg gikk så mye i dag at jeg er helt utslitt.",
+          "nl": "Ik heb vandaag zo veel gelopen dat ik uitgeput ben.",
+          "pl": "Dziś chodziłem tak dużo, że jestem wykończony.",
+          "pt": "Andei tanto hoje que estou exausto.",
+          "ro": "Am mers atât de mult azi, încât sunt epuizat.",
+          "ru": "Я сегодня так много ходил, что совсем устал.",
+          "sv": "Jag gick så mycket i dag att jag är helt utmattad.",
+          "tr": "Bugün o kadar çok yürüdüm ki çok yoruldum.",
+          "uk": "Сьогодні я стільки ходив, що зовсім втомився.",
+          "vi": "Hôm nay tôi đi bộ nhiều đến mức kiệt sức rồi.",
+          "yue": "今日我行咗咁多，攰到不得了。",
+          "zh-Hans": "我今天走了很多路，累坏了。"
+        },
+        "old_ruby_source": "きょうはくたびれるほどあるいた。",
+        "proposed_ruby_source": "今日[きょう]はくたびれるほど歩[ある]いた。",
+        "old_japanese": "きょうはくたびれるほどあるいた。",
+        "old_english": "I walked so much today that I’m exhausted.",
+        "proposed_japanese": "今日はくたびれるほど歩いた。",
+        "proposed_english": "I walked so much today that I’m exhausted.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "ja",
+          "sentence": "今日はくたびれるほど歩いた。",
+          "tokens": [
+            {
+              "surface": "今日",
+              "lemma": "今日",
+              "pos": "名詞/普通名詞/副詞可能/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 0,
+              "end": 2,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "きょう",
+              "ruby_text": "今日[きょう]",
+              "ruby_spans": [
+                {
+                  "base": "今日",
+                  "reading": "きょう",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "きょう",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "は",
+              "lemma": "は",
+              "pos": "助詞/係助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 2,
+              "end": 3,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "は",
+              "ruby_text": "は",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "は"
+            },
+            {
+              "surface": "くたびれる",
+              "lemma": "くたびれる",
+              "pos": "動詞/一般/*/*/下一段-ラ行/連体形-一般",
+              "upos": "VERB",
+              "xpos": "動詞",
+              "feats": {},
+              "start": 3,
+              "end": 8,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "くたびれる",
+              "ruby_text": "くたびれる",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "くたびれる"
+            },
+            {
+              "surface": "ほど",
+              "lemma": "ほど",
+              "pos": "助詞/副助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 8,
+              "end": 10,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "ほど",
+              "ruby_text": "ほど",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "ほど"
+            },
+            {
+              "surface": "歩い",
+              "lemma": "歩く",
+              "pos": "動詞/一般/*/*/五段-カ行/連用形-イ音便",
+              "upos": "VERB",
+              "xpos": "動詞",
+              "feats": {},
+              "start": 10,
+              "end": 12,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "あるい",
+              "ruby_text": "歩[ある]い",
+              "ruby_spans": [
+                {
+                  "base": "歩",
+                  "reading": "ある",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "あるい",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "た",
+              "lemma": "た",
+              "pos": "助動詞/*/*/*/助動詞-タ/終止形-一般",
+              "upos": "AUX",
+              "xpos": "助動詞",
+              "feats": {},
+              "start": 12,
+              "end": 13,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "た",
+              "ruby_text": "た",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "た"
+            },
+            {
+              "surface": "。",
+              "lemma": "。",
+              "pos": "補助記号/句点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 13,
+              "end": 14,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "。",
+              "ruby_text": "。",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "。"
+            }
+          ],
+          "reading": "きょうはくたびれるほどあるいた。",
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "warnings": [
+            "mediawiki ruby hints applied"
+          ]
+        },
+        "generated_tokens": [
+          {
+            "surface": "今日",
+            "lemma": "今日",
+            "pos": "名詞/普通名詞/副詞可能/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "きょう",
+            "ruby_text": "今日[きょう]",
+            "ruby_spans": [
+              {
+                "base": "今日",
+                "reading": "きょう",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "きょう",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "は",
+            "lemma": "は",
+            "pos": "助詞/係助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 2,
+            "end": 3,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "は",
+            "ruby_text": "は",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "は"
+          },
+          {
+            "surface": "くたびれる",
+            "lemma": "くたびれる",
+            "pos": "動詞/一般/*/*/下一段-ラ行/連体形-一般",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 3,
+            "end": 8,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "くたびれる",
+            "ruby_text": "くたびれる",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "くたびれる"
+          },
+          {
+            "surface": "ほど",
+            "lemma": "ほど",
+            "pos": "助詞/副助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 8,
+            "end": 10,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ほど",
+            "ruby_text": "ほど",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "ほど"
+          },
+          {
+            "surface": "歩い",
+            "lemma": "歩く",
+            "pos": "動詞/一般/*/*/五段-カ行/連用形-イ音便",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 10,
+            "end": 12,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "あるい",
+            "ruby_text": "歩[ある]い",
+            "ruby_spans": [
+              {
+                "base": "歩",
+                "reading": "ある",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "あるい",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "た",
+            "lemma": "た",
+            "pos": "助動詞/*/*/*/助動詞-タ/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 12,
+            "end": 13,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "た",
+            "ruby_text": "た",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "た"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 13,
+            "end": 14,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
+          }
+        ],
+        "generated_reading": "きょうはくたびれるほどあるいた。",
+        "analyzer": "sudachipy_sudachidict_core_c",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-18T17:39:11Z",
+        "updated_utc": "2026-10-18T17:40:39Z",
+        "applied_utc": "2026-10-18T17:40:39Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      },
+      {
+        "id": "sentprop-940705b80fded8f6",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "ja_n3:b09d24a46faabd22",
+        "pack_code": "ja_n3",
+        "entry_id": "くたびれる",
+        "language": "ja",
+        "sentence_index": 2,
+        "old_sentence": "まいにちおなじしごとでくたびれる。",
+        "old_translations": {
+          "en": "Doing the same work every day wears me out.",
+          "ar": "أنا أتعب من نفس العمل كل يوم.",
+          "cs": "Stejná práce mě každý den vyčerpává.",
+          "da": "Det samme arbejde hver dag gør mig træt.",
+          "de": "Die gleiche Arbeit jeden Tag macht mich müde.",
+          "el": "Η ίδια δουλειά κάθε μέρα με κουράζει.",
+          "es": "Hacer el mismo trabajo todos los días me agota.",
+          "fi": "Sama työ joka päivä väsyttää minua.",
+          "fr": "Faire le même travail tous les jours m'épuise.",
+          "he": "אותה העבודה כל יום מתישה אותי.",
+          "hi": "हर दिन वही काम करने से मैं थक जाता हूँ।",
+          "hu": "A mindennapi ugyanaz a munka kimerít.",
+          "id": "Pekerjaan yang sama setiap hari membuat saya lelah.",
+          "it": "Lo stesso lavoro ogni giorno mi sfianca.",
+          "ko": "매일 같은 일을 해서 지쳐요.",
+          "nb": "Den samme jobben hver dag gjør meg sliten.",
+          "nl": "Elke dag hetzelfde werk doen put me uit.",
+          "pl": "Ta sama praca codziennie mnie wykańcza.",
+          "pt": "Fazer o mesmo trabalho todos os dias me cansa.",
+          "ro": "Munca aceeași în fiecare zi mă obosește.",
+          "ru": "Одна и та же работа каждый день меня выматывает.",
+          "sv": "Samma jobb varje dag gör mig trött.",
+          "tr": "Her gün aynı işi yapmak beni yoruyor.",
+          "uk": "Одна й та сама робота щодня мене вимотує.",
+          "vi": "Làm cùng một công việc mỗi ngày làm tôi mệt mỏi.",
+          "yue": "每日都做同樣嘅工作令我好攰。",
+          "zh-Hans": "每天做同样的工作让我很累。"
+        },
+        "proposed_sentence": "毎日同じ仕事でくたびれる。",
+        "proposed_translations": {
+          "en": "Doing the same work every day wears me out.",
+          "ar": "أنا أتعب من نفس العمل كل يوم.",
+          "cs": "Stejná práce mě každý den vyčerpává.",
+          "da": "Det samme arbejde hver dag gør mig træt.",
+          "de": "Die gleiche Arbeit jeden Tag macht mich müde.",
+          "el": "Η ίδια δουλειά κάθε μέρα με κουράζει.",
+          "es": "Hacer el mismo trabajo todos los días me agota.",
+          "fi": "Sama työ joka päivä väsyttää minua.",
+          "fr": "Faire le même travail tous les jours m'épuise.",
+          "he": "אותה עבודה כל יום מתישה אותי.",
+          "hi": "हर दिन वही काम करने से मैं थक जाता हूँ।",
+          "hu": "Minden nap ugyanaz a munka fáraszt ki.",
+          "id": "Pekerjaan yang sama setiap hari membuat saya lelah.",
+          "it": "Lo stesso lavoro ogni giorno mi sfianca.",
+          "ko": "매일 같은 일을 해서 지쳐요.",
+          "nb": "Den samme jobben hver dag gjør meg sliten.",
+          "nl": "Elke dag hetzelfde werk doen put me uit.",
+          "pl": "Ta sama praca codziennie mnie wykańcza.",
+          "pt": "Fazer o mesmo trabalho todos os dias me cansa.",
+          "ro": "Aceeași muncă în fiecare zi mă obosește.",
+          "ru": "Одна и та же работа каждый день меня выматывает.",
+          "sv": "Samma jobb varje dag gör mig trött.",
+          "tr": "Her gün aynı işi yapmak beni yoruyor.",
+          "uk": "Одна й та сама робота щодня мене вимотує.",
+          "vi": "Ngày nào cũng làm cùng một công việc khiến tôi mệt mỏi.",
+          "yue": "每日都做同樣嘅工作令我好攰。",
+          "zh-Hans": "每天做同样的工作让我很累。"
+        },
+        "old_ruby_source": "まいにちおなじしごとでくたびれる。",
+        "proposed_ruby_source": "毎日[まいにち]同[おな]じ仕事[しごと]でくたびれる。",
+        "old_japanese": "まいにちおなじしごとでくたびれる。",
+        "old_english": "Doing the same work every day wears me out.",
+        "proposed_japanese": "毎日同じ仕事でくたびれる。",
+        "proposed_english": "Doing the same work every day wears me out.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "ja",
+          "sentence": "毎日同じ仕事でくたびれる。",
+          "tokens": [
+            {
+              "surface": "毎日",
+              "lemma": "毎日",
+              "pos": "名詞/普通名詞/副詞可能/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 0,
+              "end": 2,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "まいにち",
+              "ruby_text": "毎日[まいにち]",
+              "ruby_spans": [
+                {
+                  "base": "毎日",
+                  "reading": "まいにち",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "まいにち",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "同じ",
+              "lemma": "同じ",
+              "pos": "連体詞/*/*/*/*/*",
+              "upos": "DET",
+              "xpos": "連体詞",
+              "feats": {},
+              "start": 2,
+              "end": 4,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "おなじ",
+              "ruby_text": "同[おな]じ",
+              "ruby_spans": [
+                {
+                  "base": "同",
+                  "reading": "おな",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "おなじ",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "仕事",
+              "lemma": "仕事",
+              "pos": "名詞/普通名詞/サ変可能/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 4,
+              "end": 6,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "しごと",
+              "ruby_text": "仕事[しごと]",
+              "ruby_spans": [
+                {
+                  "base": "仕事",
+                  "reading": "しごと",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "しごと",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "で",
+              "lemma": "で",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 6,
+              "end": 7,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "で",
+              "ruby_text": "で",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "で"
+            },
+            {
+              "surface": "くたびれる",
+              "lemma": "くたびれる",
+              "pos": "動詞/一般/*/*/下一段-ラ行/終止形-一般",
+              "upos": "VERB",
+              "xpos": "動詞",
+              "feats": {},
+              "start": 7,
+              "end": 12,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "くたびれる",
+              "ruby_text": "くたびれる",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "くたびれる"
+            },
+            {
+              "surface": "。",
+              "lemma": "。",
+              "pos": "補助記号/句点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 12,
+              "end": 13,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "。",
+              "ruby_text": "。",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "。"
+            }
+          ],
+          "reading": "まいにちおなじしごとでくたびれる。",
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "warnings": [
+            "mediawiki ruby hints applied"
+          ]
+        },
+        "generated_tokens": [
+          {
+            "surface": "毎日",
+            "lemma": "毎日",
+            "pos": "名詞/普通名詞/副詞可能/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "まいにち",
+            "ruby_text": "毎日[まいにち]",
+            "ruby_spans": [
+              {
+                "base": "毎日",
+                "reading": "まいにち",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "まいにち",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "同じ",
+            "lemma": "同じ",
+            "pos": "連体詞/*/*/*/*/*",
+            "upos": "DET",
+            "xpos": "連体詞",
+            "feats": {},
+            "start": 2,
+            "end": 4,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "おなじ",
+            "ruby_text": "同[おな]じ",
+            "ruby_spans": [
+              {
+                "base": "同",
+                "reading": "おな",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "おなじ",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "仕事",
+            "lemma": "仕事",
+            "pos": "名詞/普通名詞/サ変可能/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 4,
+            "end": 6,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "しごと",
+            "ruby_text": "仕事[しごと]",
+            "ruby_spans": [
+              {
+                "base": "仕事",
+                "reading": "しごと",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "しごと",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "で",
+            "lemma": "で",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 6,
+            "end": 7,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "で",
+            "ruby_text": "で",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "で"
+          },
+          {
+            "surface": "くたびれる",
+            "lemma": "くたびれる",
+            "pos": "動詞/一般/*/*/下一段-ラ行/終止形-一般",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 7,
+            "end": 12,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "くたびれる",
+            "ruby_text": "くたびれる",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "くたびれる"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 12,
+            "end": 13,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
+          }
+        ],
+        "generated_reading": "まいにちおなじしごとでくたびれる。",
+        "analyzer": "sudachipy_sudachidict_core_c",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-18T17:39:11Z",
+        "updated_utc": "2026-10-18T17:40:39Z",
+        "applied_utc": "2026-10-18T17:40:39Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      },
+      {
+        "id": "sentprop-70fd8b764e832c5d",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "ja_n3:b09d24a46faabd22",
+        "pack_code": "ja_n3",
+        "entry_id": "くたびれる",
+        "language": "ja",
+        "sentence_index": 4,
+        "old_sentence": "そのはなしにはもうくたびれた。",
+        "old_translations": {
+          "en": "I’m already fed up with that story.",
+          "ar": "لقد سئمت من تلك القصة بالفعل.",
+          "cs": "Už mě ten příběh nebaví.",
+          "da": "Jeg er allerede træt af den historie.",
+          "de": "Ich habe diese Geschichte schon satt.",
+          "el": "Έχω βαρεθεί ήδη αυτή την ιστορία.",
+          "es": "Ya estoy harto de esa historia.",
+          "fi": "Olen jo kyllästynyt tuohon tarinaan.",
+          "fr": "Je suis déjà fatigué de cette histoire.",
+          "he": "נמאס לי כבר מהסיפור הזה.",
+          "hi": "मैं उस कहानी से अब तंग आ गया हूँ।",
+          "hu": "Már elegem van abból a történetből.",
+          "id": "Saya sudah bosan dengan cerita itu.",
+          "it": "Sono già stufo di quella storia.",
+          "ko": "그 이야기는 이미 지겹다.",
+          "nb": "Jeg er allerede lei av den historien.",
+          "nl": "Ik ben al moe van dat verhaal.",
+          "pl": "Mam już dość tej historii.",
+          "pt": "Já estou farto dessa história.",
+          "ro": "M-am săturat deja de povestea asta.",
+          "ru": "Я уже устал от этой истории.",
+          "sv": "Jag är redan trött på den där historien.",
+          "tr": "O hikayeden artık bıktım.",
+          "uk": "Я вже втомився від цієї історії.",
+          "vi": "Tôi chán câu chuyện đó lắm rồi.",
+          "yue": "我已經聽厭咗嗰個故事。",
+          "zh-Hans": "我已经听腻那个故事了。"
+        },
+        "proposed_sentence": "その話にはもうくたびれた。",
+        "proposed_translations": {
+          "en": "I’m already fed up with that story.",
+          "ar": "لقد سئمت من تلك القصة بالفعل.",
+          "cs": "Už mě ten příběh nebaví.",
+          "da": "Jeg er allerede træt af den historie.",
+          "de": "Ich habe diese Geschichte schon satt.",
+          "el": "Έχω βαρεθεί ήδη αυτή την ιστορία.",
+          "es": "Ya estoy harto de esa historia.",
+          "fi": "Olen jo kyllästynyt tuohon tarinaan.",
+          "fr": "Je suis déjà fatigué de cette histoire.",
+          "he": "נמאס לי כבר מהסיפור הזה.",
+          "hi": "मैं उस कहानी से अब तंग आ गया हूँ।",
+          "hu": "Már elegem van abból a történetből.",
+          "id": "Saya sudah bosan dengan cerita itu.",
+          "it": "Sono già stufo di quella storia.",
+          "ko": "그 이야기는 이미 지겹다.",
+          "nb": "Jeg er allerede lei av den historien.",
+          "nl": "Ik ben al moe van dat verhaal.",
+          "pl": "Mam już dość tej historii.",
+          "pt": "Já estou farto dessa história.",
+          "ro": "M-am săturat deja de povestea asta.",
+          "ru": "Я уже устал от этой истории.",
+          "sv": "Jag är redan trött på den där historien.",
+          "tr": "O hikayeden artık bıktım.",
+          "uk": "Я вже втомився від цієї історії.",
+          "vi": "Tôi chán câu chuyện đó lắm rồi.",
+          "yue": "我已經聽厭咗嗰個故事。",
+          "zh-Hans": "我已经听腻那个故事了。"
+        },
+        "old_ruby_source": "そのはなしにはもうくたびれた。",
+        "proposed_ruby_source": "その話[はなし]にはもうくたびれた。",
+        "old_japanese": "そのはなしにはもうくたびれた。",
+        "old_english": "I’m already fed up with that story.",
+        "proposed_japanese": "その話にはもうくたびれた。",
+        "proposed_english": "I’m already fed up with that story.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "ja",
+          "sentence": "その話にはもうくたびれた。",
+          "tokens": [
+            {
+              "surface": "その",
+              "lemma": "その",
+              "pos": "連体詞/*/*/*/*/*",
+              "upos": "DET",
+              "xpos": "連体詞",
+              "feats": {},
+              "start": 0,
+              "end": 2,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "その",
+              "ruby_text": "その",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "その"
+            },
+            {
+              "surface": "話",
+              "lemma": "話",
+              "pos": "名詞/普通名詞/サ変可能/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 2,
+              "end": 3,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "はなし",
+              "ruby_text": "話[はなし]",
+              "ruby_spans": [
+                {
+                  "base": "話",
+                  "reading": "はなし",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "はなし",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "に",
+              "lemma": "に",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 3,
+              "end": 4,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "に",
+              "ruby_text": "に",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "に"
+            },
+            {
+              "surface": "は",
+              "lemma": "は",
+              "pos": "助詞/係助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 4,
+              "end": 5,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "は",
+              "ruby_text": "は",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "は"
+            },
+            {
+              "surface": "もう",
+              "lemma": "もう",
+              "pos": "副詞/*/*/*/*/*",
+              "upos": "ADV",
+              "xpos": "副詞",
+              "feats": {},
+              "start": 5,
+              "end": 7,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "もう",
+              "ruby_text": "もう",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "もう"
+            },
+            {
+              "surface": "くたびれ",
+              "lemma": "くたびれる",
+              "pos": "動詞/一般/*/*/下一段-ラ行/連用形-一般",
+              "upos": "VERB",
+              "xpos": "動詞",
+              "feats": {},
+              "start": 7,
+              "end": 11,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "くたびれ",
+              "ruby_text": "くたびれ",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "くたびれ"
+            },
+            {
+              "surface": "た",
+              "lemma": "た",
+              "pos": "助動詞/*/*/*/助動詞-タ/終止形-一般",
+              "upos": "AUX",
+              "xpos": "助動詞",
+              "feats": {},
+              "start": 11,
+              "end": 12,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "た",
+              "ruby_text": "た",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "た"
+            },
+            {
+              "surface": "。",
+              "lemma": "。",
+              "pos": "補助記号/句点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 12,
+              "end": 13,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "。",
+              "ruby_text": "。",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "。"
+            }
+          ],
+          "reading": "そのはなしにはもうくたびれた。",
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "warnings": [
+            "mediawiki ruby hints applied"
+          ]
+        },
+        "generated_tokens": [
+          {
+            "surface": "その",
+            "lemma": "その",
+            "pos": "連体詞/*/*/*/*/*",
+            "upos": "DET",
+            "xpos": "連体詞",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "その",
+            "ruby_text": "その",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "その"
+          },
+          {
+            "surface": "話",
+            "lemma": "話",
+            "pos": "名詞/普通名詞/サ変可能/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 2,
+            "end": 3,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "はなし",
+            "ruby_text": "話[はなし]",
+            "ruby_spans": [
+              {
+                "base": "話",
+                "reading": "はなし",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "はなし",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "に",
+            "lemma": "に",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 3,
+            "end": 4,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "に",
+            "ruby_text": "に",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "に"
+          },
+          {
+            "surface": "は",
+            "lemma": "は",
+            "pos": "助詞/係助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 4,
+            "end": 5,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "は",
+            "ruby_text": "は",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "は"
+          },
+          {
+            "surface": "もう",
+            "lemma": "もう",
+            "pos": "副詞/*/*/*/*/*",
+            "upos": "ADV",
+            "xpos": "副詞",
+            "feats": {},
+            "start": 5,
+            "end": 7,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "もう",
+            "ruby_text": "もう",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "もう"
+          },
+          {
+            "surface": "くたびれ",
+            "lemma": "くたびれる",
+            "pos": "動詞/一般/*/*/下一段-ラ行/連用形-一般",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 7,
+            "end": 11,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "くたびれ",
+            "ruby_text": "くたびれ",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "くたびれ"
+          },
+          {
+            "surface": "た",
+            "lemma": "た",
+            "pos": "助動詞/*/*/*/助動詞-タ/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 11,
+            "end": 12,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "た",
+            "ruby_text": "た",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "た"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 12,
+            "end": 13,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
+          }
+        ],
+        "generated_reading": "そのはなしにはもうくたびれた。",
+        "analyzer": "sudachipy_sudachidict_core_c",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-18T17:39:11Z",
+        "updated_utc": "2026-10-18T17:40:39Z",
+        "applied_utc": "2026-10-18T17:40:39Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-18T17:40:39Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -697,22 +1847,16 @@
     "word_label": "to get tired; to become exhausted; to grow weary; to become worn out; to become battered (from long use); to get tired of (doing); to get fed up with",
     "comic_difficulty": 0.0,
     "jp": [
-      "きょうは くたびれるほど あるいた。",
-      "まいにち おなじ しごとで くたびれる。",
-      "この かばんは もう くたびれている。",
-      "その はなしには もう くたびれた。"
+      "きょうはくたびれるほどあるいた。",
+      "まいにちおなじしごとでくたびれる。",
+      "このかばんはもうくたびれている。",
+      "そのはなしにはもうくたびれた。"
     ],
     "fu": [
-      "きょうは くたびれるほど あるいた。",
-      "まいにち おなじ しごとで くたびれる。",
-      "この かばんは もう くたびれている。",
-      "その はなしには もう くたびれた。"
-    ],
-    "en": [
-      "I walked so much today that I’m exhausted.",
-      "Doing the same work every day wears me out.",
-      "This bag is already worn out.",
-      "I’m already fed up with that story."
+      "きょうはくたびれるほどあるいた。",
+      "まいにちおなじしごとでくたびれる。",
+      "このかばんはもうくたびれている。",
+      "そのはなしにはもうくたびれた。"
     ],
     "generation": {
       "generator": "vocomipedia_source_generator.py",
@@ -751,209 +1895,33 @@
         "parts_of_speech": "Ichidan verb; Intransitive verb; Auxiliary verb"
       }
     },
-    "word_en": "to get tired; to become exhausted; to grow weary; to become worn out; to become battered (from long use); to get tired of (doing); to get fed up with",
-    "word_es": "cansarse",
-    "word_fr": "se fatiguer",
-    "word_de": "ermüden",
-    "word_it": "stancarsi",
-    "word_ko": "지치다",
-    "word_zh-Hans": "疲倦；磨损",
-    "word_yue": "攰",
-    "word_ru": "уставать",
-    "word_pt": "cansar-se",
-    "word_he": "להתעייף",
-    "word_tr": "yorulmak",
-    "word_vi": "mệt mỏi",
-    "word_ar": "يتعب",
-    "word_nl": "vermoeien",
-    "word_uk": "втомлюватися",
-    "word_hu": "elfáradni",
-    "word_hi": "थक जाना",
-    "word_pl": "męczyć się",
-    "word_el": "κουράζομαι",
-    "word_nb": "bli sliten",
-    "word_id": "lelah",
-    "word_sv": "bli trött",
-    "word_ro": "obosi",
-    "word_cs": "unavit se",
-    "word_da": "blive træt",
-    "word_fi": "väsyä",
-    "word_ja": "くたびれる",
-    "ar": [
-      "مشيت كثيرًا اليوم حتى تعبت.",
-      "أنا أتعب من نفس العمل كل يوم.",
-      "هذه الحقيبة بالية بالفعل.",
-      "لقد سئمت من تلك القصة بالفعل."
-    ],
-    "cs": [
-      "Dnes jsem šel tak moc, že jsem úplně unavený.",
-      "Stejná práce mě každý den vyčerpává.",
-      "Ta taška je už ošoupaná.",
-      "Už mě ten příběh nebaví."
-    ],
-    "da": [
-      "Jeg gik så meget i dag, at jeg er helt udmattet.",
-      "Det samme arbejde hver dag gør mig træt.",
-      "Den taske er allerede slidt op.",
-      "Jeg er allerede træt af den historie."
-    ],
-    "de": [
-      "Ich bin heute so viel gelaufen, dass ich ganz erschöpft bin.",
-      "Die gleiche Arbeit jeden Tag macht mich müde.",
-      "Diese Tasche ist schon abgenutzt.",
-      "Ich habe diese Geschichte schon satt."
-    ],
-    "el": [
-      "Περπάτησα τόσο πολύ σήμερα που έχω εξαντληθεί.",
-      "Η ίδια δουλειά κάθε μέρα με κουράζει.",
-      "Αυτή η τσάντα είναι ήδη φθαρμένη.",
-      "Έχω βαρεθεί ήδη αυτή την ιστορία."
-    ],
-    "es": [
-      "Caminé tanto hoy que estoy agotado.",
-      "Hacer el mismo trabajo todos los días me agota.",
-      "Este bolso ya está gastado.",
-      "Ya estoy harto de esa historia."
-    ],
-    "fi": [
-      "Kävelin tänään niin paljon, että olen aivan uupunut.",
-      "Sama työ joka päivä väsyttää minua.",
-      "Tämä laukku on jo kulunut.",
-      "Olen jo kyllästynyt tuohon tarinaan."
-    ],
-    "fr": [
-      "J'ai tellement marché aujourd'hui que je suis épuisé.",
-      "Faire le même travail tous les jours m'épuise.",
-      "Ce sac est déjà usé.",
-      "Je suis déjà fatigué de cette histoire."
-    ],
-    "he": [
-      "הלכתי היום כל כך הרבה שאני גמור.",
-      "אותה העבודה כל יום מתישה אותי.",
-      "התיק הזה כבר בלוי.",
-      "נמאס לי כבר מהסיפור הזה."
-    ],
-    "hi": [
-      "मैंने आज इतना चला कि मैं थक गया हूँ।",
-      "हर दिन वही काम करने से मैं थक जाता हूँ।",
-      "यह बैग अब घिस गया है।",
-      "मैं उस कहानी से अब तंग आ गया हूँ।"
-    ],
-    "hu": [
-      "Ma olyan sokat gyalogoltam, hogy teljesen kimerültem.",
-      "A mindennapi ugyanaz a munka kimerít.",
-      "Ez a táska már elhasználódott.",
-      "Már elegem van abból a történetből."
-    ],
-    "id": [
-      "Saya berjalan begitu banyak hari ini sampai saya sangat lelah.",
-      "Pekerjaan yang sama setiap hari membuat saya lelah.",
-      "Tas ini sudah usang.",
-      "Saya sudah bosan dengan cerita itu."
-    ],
-    "it": [
-      "Oggi ho camminato così tanto che sono sfinito.",
-      "Lo stesso lavoro ogni giorno mi sfianca.",
-      "Questa borsa è già consumata.",
-      "Sono già stufo di quella storia."
-    ],
-    "ko": [
-      "오늘은 너무 많이 걸어서 지쳤어요.",
-      "매일 같은 일을 해서 지쳐요.",
-      "이 가방은 이미 낡았다.",
-      "그 이야기는 이미 지겹다."
-    ],
-    "nb": [
-      "Jeg gikk så mye i dag at jeg er helt utslitt.",
-      "Den samme jobben hver dag gjør meg sliten.",
-      "Denne vesken er allerede slitt.",
-      "Jeg er allerede lei av den historien."
-    ],
-    "nl": [
-      "Ik heb vandaag zo veel gelopen dat ik uitgeput ben.",
-      "Elke dag hetzelfde werk doen put me uit.",
-      "Deze tas is al versleten.",
-      "Ik ben al moe van dat verhaal."
-    ],
-    "pl": [
-      "Dziś chodziłem tak dużo, że jestem wykończony.",
-      "Ta sama praca codziennie mnie wykańcza.",
-      "Ta torba jest już zniszczona.",
-      "Mam już dość tej historii."
-    ],
-    "pt": [
-      "Andei tanto hoje que estou exausto.",
-      "Fazer o mesmo trabalho todos os dias me cansa.",
-      "Esta bolsa já está gasta.",
-      "Já estou farto dessa história."
-    ],
-    "ro": [
-      "Am mers atât de mult azi, că sunt epuizat.",
-      "Munca aceeași în fiecare zi mă obosește.",
-      "Geanta asta este deja uzată.",
-      "M-am săturat deja de povestea asta."
-    ],
-    "ru": [
-      "Я сегодня так много ходил, что совсем устал.",
-      "Одна и та же работа каждый день меня выматывает.",
-      "Эта сумка уже изношена.",
-      "Я уже устал от этой истории."
-    ],
-    "sv": [
-      "Jag gick så mycket i dag att jag är helt utmattad.",
-      "Samma jobb varje dag gör mig trött.",
-      "Den här väskan är redan sliten.",
-      "Jag är redan trött på den där historien."
-    ],
-    "tr": [
-      "Bugün o kadar çok yürüdüm ki çok yoruldum.",
-      "Her gün aynı işi yapmak beni yoruyor.",
-      "Bu çanta artık yıpranmış.",
-      "O hikayeden artık bıktım."
-    ],
-    "uk": [
-      "Сьогодні я стільки ходив, що зовсім втомився.",
-      "Одна й та сама робота щодня мене вимотує.",
-      "Ця сумка вже зношена.",
-      "Я вже втомився від цієї історії."
-    ],
-    "vi": [
-      "Hôm nay tôi đi bộ nhiều đến mức kiệt sức rồi.",
-      "Làm cùng một công việc mỗi ngày làm tôi mệt mỏi.",
-      "Chiếc túi này đã cũ rồi.",
-      "Tôi chán câu chuyện đó lắm rồi."
-    ],
-    "yue": [
-      "今日我行咗咁多，攰到不得了。",
-      "每日都做同樣嘅工作令我好攰。",
-      "呢個袋已經殘舊喇。",
-      "我已經聽厭咗嗰個故事。"
-    ],
-    "zh-Hans": [
-      "我今天走了很多路，累坏了。",
-      "每天做同样的工作让我很累。",
-      "这个包已经旧了。",
-      "我已经听腻那个故事了。"
-    ],
     "pos_analysis": [
       {
-        "sentence": "きょうはくたびれるほどあるいた。",
+        "sentence": "今日はくたびれるほど歩いた。",
         "tokens": [
           {
-            "surface": "きょう",
-            "lemma": "きょう",
+            "surface": "今日",
+            "lemma": "今日",
             "pos": "名詞/普通名詞/副詞可能/*/*/*",
             "upos": "NOUN",
             "xpos": "名詞",
             "feats": {},
             "start": 0,
-            "end": 3,
+            "end": 2,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "きょう",
-            "ruby_text": "きょう",
-            "ruby_spans": [],
-            "ruby_confidence": "high",
-            "furigana": "きょう"
+            "ruby_text": "今日[きょう]",
+            "ruby_spans": [
+              {
+                "base": "今日",
+                "reading": "きょう",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "きょう",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "は",
@@ -962,8 +1930,8 @@
             "upos": "PART",
             "xpos": "助詞",
             "feats": {},
-            "start": 3,
-            "end": 4,
+            "start": 2,
+            "end": 3,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "は",
             "ruby_text": "は",
@@ -978,8 +1946,8 @@
             "upos": "VERB",
             "xpos": "動詞",
             "feats": {},
-            "start": 4,
-            "end": 9,
+            "start": 3,
+            "end": 8,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "くたびれる",
             "ruby_text": "くたびれる",
@@ -995,8 +1963,8 @@
             "upos": "PART",
             "xpos": "助詞",
             "feats": {},
-            "start": 9,
-            "end": 11,
+            "start": 8,
+            "end": 10,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "ほど",
             "ruby_text": "ほど",
@@ -1005,36 +1973,28 @@
             "furigana": "ほど"
           },
           {
-            "surface": "ある",
-            "lemma": "ある",
-            "pos": "連体詞/*/*/*/*/*",
-            "upos": "DET",
-            "xpos": "連体詞",
-            "feats": {},
-            "start": 11,
-            "end": 13,
-            "analyzer": "sudachipy_sudachidict_core_c",
-            "reading_kana": "ある",
-            "ruby_text": "ある",
-            "ruby_spans": [],
-            "ruby_confidence": "high",
-            "furigana": "ある"
-          },
-          {
-            "surface": "い",
-            "lemma": "いる",
-            "pos": "動詞/非自立可能/*/*/上一段-ア行/連用形-一般",
+            "surface": "歩い",
+            "lemma": "歩く",
+            "pos": "動詞/一般/*/*/五段-カ行/連用形-イ音便",
             "upos": "VERB",
             "xpos": "動詞",
             "feats": {},
-            "start": 13,
-            "end": 14,
+            "start": 10,
+            "end": 12,
             "analyzer": "sudachipy_sudachidict_core_c",
-            "reading_kana": "い",
-            "ruby_text": "い",
-            "ruby_spans": [],
-            "ruby_confidence": "high",
-            "furigana": "い"
+            "reading_kana": "あるい",
+            "ruby_text": "歩[ある]い",
+            "ruby_spans": [
+              {
+                "base": "歩",
+                "reading": "ある",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "あるい",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "た",
@@ -1043,8 +2003,8 @@
             "upos": "AUX",
             "xpos": "助動詞",
             "feats": {},
-            "start": 14,
-            "end": 15,
+            "start": 12,
+            "end": 13,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "た",
             "ruby_text": "た",
@@ -1059,8 +2019,8 @@
             "upos": "PUNCT",
             "xpos": "補助記号",
             "feats": {},
-            "start": 15,
-            "end": 16,
+            "start": 13,
+            "end": 14,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "。",
             "ruby_text": "。",
@@ -1072,55 +2032,79 @@
         "difficulty_aggregated": null
       },
       {
-        "sentence": "まいにちおなじしごとでくたびれる。",
+        "sentence": "毎日同じ仕事でくたびれる。",
         "tokens": [
           {
-            "surface": "まいにち",
-            "lemma": "まいにち",
+            "surface": "毎日",
+            "lemma": "毎日",
             "pos": "名詞/普通名詞/副詞可能/*/*/*",
             "upos": "NOUN",
             "xpos": "名詞",
             "feats": {},
             "start": 0,
-            "end": 4,
+            "end": 2,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "まいにち",
-            "ruby_text": "まいにち",
-            "ruby_spans": [],
-            "ruby_confidence": "high",
-            "furigana": "まいにち"
+            "ruby_text": "毎日[まいにち]",
+            "ruby_spans": [
+              {
+                "base": "毎日",
+                "reading": "まいにち",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "まいにち",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
-            "surface": "おなじ",
-            "lemma": "おなじ",
+            "surface": "同じ",
+            "lemma": "同じ",
             "pos": "連体詞/*/*/*/*/*",
             "upos": "DET",
             "xpos": "連体詞",
             "feats": {},
-            "start": 4,
-            "end": 7,
+            "start": 2,
+            "end": 4,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "おなじ",
-            "ruby_text": "おなじ",
-            "ruby_spans": [],
-            "ruby_confidence": "high",
-            "furigana": "おなじ"
+            "ruby_text": "同[おな]じ",
+            "ruby_spans": [
+              {
+                "base": "同",
+                "reading": "おな",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "おなじ",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
-            "surface": "しごと",
-            "lemma": "しごと",
+            "surface": "仕事",
+            "lemma": "仕事",
             "pos": "名詞/普通名詞/サ変可能/*/*/*",
             "upos": "NOUN",
             "xpos": "名詞",
             "feats": {},
-            "start": 7,
-            "end": 10,
+            "start": 4,
+            "end": 6,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "しごと",
-            "ruby_text": "しごと",
-            "ruby_spans": [],
-            "ruby_confidence": "high",
-            "furigana": "しごと"
+            "ruby_text": "仕事[しごと]",
+            "ruby_spans": [
+              {
+                "base": "仕事",
+                "reading": "しごと",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "しごと",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "で",
@@ -1129,8 +2113,8 @@
             "upos": "PART",
             "xpos": "助詞",
             "feats": {},
-            "start": 10,
-            "end": 11,
+            "start": 6,
+            "end": 7,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "で",
             "ruby_text": "で",
@@ -1145,8 +2129,8 @@
             "upos": "VERB",
             "xpos": "動詞",
             "feats": {},
-            "start": 11,
-            "end": 16,
+            "start": 7,
+            "end": 12,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "くたびれる",
             "ruby_text": "くたびれる",
@@ -1162,8 +2146,8 @@
             "upos": "PUNCT",
             "xpos": "補助記号",
             "feats": {},
-            "start": 16,
-            "end": 17,
+            "start": 12,
+            "end": 13,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "。",
             "ruby_text": "。",
@@ -1310,7 +2294,7 @@
         "difficulty_aggregated": null
       },
       {
-        "sentence": "そのはなしにはもうくたびれた。",
+        "sentence": "その話にはもうくたびれた。",
         "tokens": [
           {
             "surface": "その",
@@ -1329,20 +2313,28 @@
             "furigana": "その"
           },
           {
-            "surface": "はなし",
-            "lemma": "はなし",
+            "surface": "話",
+            "lemma": "話",
             "pos": "名詞/普通名詞/サ変可能/*/*/*",
             "upos": "NOUN",
             "xpos": "名詞",
             "feats": {},
             "start": 2,
-            "end": 5,
+            "end": 3,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "はなし",
-            "ruby_text": "はなし",
-            "ruby_spans": [],
-            "ruby_confidence": "high",
-            "furigana": "はなし"
+            "ruby_text": "話[はなし]",
+            "ruby_spans": [
+              {
+                "base": "話",
+                "reading": "はなし",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "はなし",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "に",
@@ -1351,8 +2343,8 @@
             "upos": "PART",
             "xpos": "助詞",
             "feats": {},
-            "start": 5,
-            "end": 6,
+            "start": 3,
+            "end": 4,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "に",
             "ruby_text": "に",
@@ -1367,8 +2359,8 @@
             "upos": "PART",
             "xpos": "助詞",
             "feats": {},
-            "start": 6,
-            "end": 7,
+            "start": 4,
+            "end": 5,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "は",
             "ruby_text": "は",
@@ -1383,8 +2375,8 @@
             "upos": "ADV",
             "xpos": "副詞",
             "feats": {},
-            "start": 7,
-            "end": 9,
+            "start": 5,
+            "end": 7,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "もう",
             "ruby_text": "もう",
@@ -1399,8 +2391,8 @@
             "upos": "VERB",
             "xpos": "動詞",
             "feats": {},
-            "start": 9,
-            "end": 13,
+            "start": 7,
+            "end": 11,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "くたびれ",
             "ruby_text": "くたびれ",
@@ -1416,8 +2408,8 @@
             "upos": "AUX",
             "xpos": "助動詞",
             "feats": {},
-            "start": 13,
-            "end": 14,
+            "start": 11,
+            "end": 12,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "た",
             "ruby_text": "た",
@@ -1432,8 +2424,8 @@
             "upos": "PUNCT",
             "xpos": "補助記号",
             "feats": {},
-            "start": 14,
-            "end": 15,
+            "start": 12,
+            "end": 13,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "。",
             "ruby_text": "。",
@@ -1444,6 +2436,196 @@
         ],
         "difficulty_aggregated": null
       }
+    ],
+    "word_en": "to get tired; to become exhausted; to grow weary; to become worn out; to become battered (from long use); to get tired of (doing); to get fed up with",
+    "word_es": "cansarse",
+    "word_fr": "se fatiguer",
+    "word_de": "ermüden",
+    "word_it": "stancarsi",
+    "word_ko": "지치다",
+    "word_zh-Hans": "疲倦；磨损",
+    "word_yue": "攰",
+    "word_ru": "уставать",
+    "word_pt": "cansar-se",
+    "word_he": "להתעייף",
+    "word_tr": "yorulmak",
+    "word_vi": "mệt mỏi",
+    "word_ar": "يتعب",
+    "word_nl": "vermoeien",
+    "word_uk": "втомлюватися",
+    "word_hu": "elfáradni",
+    "word_hi": "थक जाना",
+    "word_pl": "męczyć się",
+    "word_el": "κουράζομαι",
+    "word_nb": "bli sliten",
+    "word_id": "lelah",
+    "word_sv": "bli trött",
+    "word_ro": "obosi",
+    "word_cs": "unavit se",
+    "word_da": "blive træt",
+    "word_fi": "väsyä",
+    "word_ja": "くたびれる",
+    "ar": [
+      "مشيت كثيرًا اليوم حتى تعبت.",
+      "أنا أتعب من نفس العمل كل يوم.",
+      "هذه الحقيبة بالية بالفعل.",
+      "لقد سئمت من تلك القصة بالفعل."
+    ],
+    "cs": [
+      "Dnes jsem šel tak moc, že jsem úplně unavený.",
+      "Stejná práce mě každý den vyčerpává.",
+      "Ta taška je už ošoupaná.",
+      "Už mě ten příběh nebaví."
+    ],
+    "da": [
+      "Jeg gik så meget i dag, at jeg er helt udmattet.",
+      "Det samme arbejde hver dag gør mig træt.",
+      "Den taske er allerede slidt op.",
+      "Jeg er allerede træt af den historie."
+    ],
+    "de": [
+      "Ich bin heute so viel gelaufen, dass ich ganz erschöpft bin.",
+      "Die gleiche Arbeit jeden Tag macht mich müde.",
+      "Diese Tasche ist schon abgenutzt.",
+      "Ich habe diese Geschichte schon satt."
+    ],
+    "el": [
+      "Περπάτησα τόσο πολύ σήμερα που έχω εξαντληθεί.",
+      "Η ίδια δουλειά κάθε μέρα με κουράζει.",
+      "Αυτή η τσάντα είναι ήδη φθαρμένη.",
+      "Έχω βαρεθεί ήδη αυτή την ιστορία."
+    ],
+    "en": [
+      "I walked so much today that I’m exhausted.",
+      "Doing the same work every day wears me out.",
+      "This bag is already worn out.",
+      "I’m already fed up with that story."
+    ],
+    "es": [
+      "Caminé tanto hoy que estoy agotado.",
+      "Hacer el mismo trabajo todos los días me agota.",
+      "Este bolso ya está gastado.",
+      "Ya estoy harto de esa historia."
+    ],
+    "fi": [
+      "Kävelin tänään niin paljon, että olen aivan uupunut.",
+      "Sama työ joka päivä väsyttää minua.",
+      "Tämä laukku on jo kulunut.",
+      "Olen jo kyllästynyt tuohon tarinaan."
+    ],
+    "fr": [
+      "J'ai tellement marché aujourd'hui que je suis épuisé.",
+      "Faire le même travail tous les jours m'épuise.",
+      "Ce sac est déjà usé.",
+      "Je suis déjà fatigué de cette histoire."
+    ],
+    "he": [
+      "הלכתי היום כל כך הרבה שאני גמור.",
+      "אותה העבודה כל יום מתישה אותי.",
+      "התיק הזה כבר בלוי.",
+      "נמאס לי כבר מהסיפור הזה."
+    ],
+    "hi": [
+      "मैंने आज इतना चला कि मैं थक गया हूँ।",
+      "हर दिन वही काम करने से मैं थक जाता हूँ।",
+      "यह बैग अब घिस गया है।",
+      "मैं उस कहानी से अब तंग आ गया हूँ।"
+    ],
+    "hu": [
+      "Ma olyan sokat gyalogoltam, hogy teljesen kimerültem.",
+      "A mindennapi ugyanaz a munka kimerít.",
+      "Ez a táska már elhasználódott.",
+      "Már elegem van abból a történetből."
+    ],
+    "id": [
+      "Saya berjalan begitu banyak hari ini sampai saya sangat lelah.",
+      "Pekerjaan yang sama setiap hari membuat saya lelah.",
+      "Tas ini sudah usang.",
+      "Saya sudah bosan dengan cerita itu."
+    ],
+    "it": [
+      "Oggi ho camminato così tanto che sono sfinito.",
+      "Lo stesso lavoro ogni giorno mi sfianca.",
+      "Questa borsa è già consumata.",
+      "Sono già stufo di quella storia."
+    ],
+    "ko": [
+      "오늘은 너무 많이 걸어서 지쳤어요.",
+      "매일 같은 일을 해서 지쳐요.",
+      "이 가방은 이미 낡았다.",
+      "그 이야기는 이미 지겹다."
+    ],
+    "nb": [
+      "Jeg gikk så mye i dag at jeg er helt utslitt.",
+      "Den samme jobben hver dag gjør meg sliten.",
+      "Denne vesken er allerede slitt.",
+      "Jeg er allerede lei av den historien."
+    ],
+    "nl": [
+      "Ik heb vandaag zo veel gelopen dat ik uitgeput ben.",
+      "Elke dag hetzelfde werk doen put me uit.",
+      "Deze tas is al versleten.",
+      "Ik ben al moe van dat verhaal."
+    ],
+    "pl": [
+      "Dziś chodziłem tak dużo, że jestem wykończony.",
+      "Ta sama praca codziennie mnie wykańcza.",
+      "Ta torba jest już zniszczona.",
+      "Mam już dość tej historii."
+    ],
+    "pt": [
+      "Andei tanto hoje que estou exausto.",
+      "Fazer o mesmo trabalho todos os dias me cansa.",
+      "Esta bolsa já está gasta.",
+      "Já estou farto dessa história."
+    ],
+    "ro": [
+      "Am mers atât de mult azi, că sunt epuizat.",
+      "Munca aceeași în fiecare zi mă obosește.",
+      "Geanta asta este deja uzată.",
+      "M-am săturat deja de povestea asta."
+    ],
+    "ru": [
+      "Я сегодня так много ходил, что совсем устал.",
+      "Одна и та же работа каждый день меня выматывает.",
+      "Эта сумка уже изношена.",
+      "Я уже устал от этой истории."
+    ],
+    "sv": [
+      "Jag gick så mycket i dag att jag är helt utmattad.",
+      "Samma jobb varje dag gör mig trött.",
+      "Den här väskan är redan sliten.",
+      "Jag är redan trött på den där historien."
+    ],
+    "tr": [
+      "Bugün o kadar çok yürüdüm ki çok yoruldum.",
+      "Her gün aynı işi yapmak beni yoruyor.",
+      "Bu çanta artık yıpranmış.",
+      "O hikayeden artık bıktım."
+    ],
+    "uk": [
+      "Сьогодні я стільки ходив, що зовсім втомився.",
+      "Одна й та сама робота щодня мене вимотує.",
+      "Ця сумка вже зношена.",
+      "Я вже втомився від цієї історії."
+    ],
+    "vi": [
+      "Hôm nay tôi đi bộ nhiều đến mức kiệt sức rồi.",
+      "Làm cùng một công việc mỗi ngày làm tôi mệt mỏi.",
+      "Chiếc túi này đã sờn cũ rồi.",
+      "Tôi chán câu chuyện đó lắm rồi."
+    ],
+    "yue": [
+      "今日我行咗咁多，攰到不得了。",
+      "每日都做同樣嘅工作令我好攰。",
+      "呢個袋已經殘舊喇。",
+      "我已經聽厭咗嗰個故事。"
+    ],
+    "zh-Hans": [
+      "我今天走了很多路，累坏了。",
+      "每天做同样的工作让我很累。",
+      "这个包已经旧了。",
+      "我已经听腻那个故事了。"
     ]
   }
 }

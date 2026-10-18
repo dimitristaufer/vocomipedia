@@ -42,7 +42,7 @@
   },
   "sentences": [
     {
-      "target": "かぜの症状があります。",
+      "target": "風邪の症状があります。",
       "reading": "かぜのしょうじょうがあります。",
       "translations": {
         "en": "I have cold symptoms.",
@@ -63,7 +63,7 @@
         "nb": "Jeg har forkjølelsessymptomer.",
         "nl": "Ik heb verkoudheidsklachten.",
         "pl": "Mam objawy przeziębienia.",
-        "pt": "Tenho sintomas de gripe.",
+        "pt": "Tenho sintomas de resfriado.",
         "ro": "Am simptome de răceală.",
         "ru": "У меня симптомы простуды.",
         "sv": "Jag har förkylningssymtom.",
@@ -75,8 +75,8 @@
       },
       "tokens": [
         {
-          "surface": "かぜ",
-          "lemma": "かぜ",
+          "surface": "風邪",
+          "lemma": "風邪",
           "pos": "名詞/普通名詞/一般/*/*/*",
           "upos": "NOUN",
           "xpos": "名詞",
@@ -85,10 +85,18 @@
           "end": 2,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "かぜ",
-          "ruby_text": "かぜ",
-          "ruby_spans": [],
-          "ruby_confidence": "high",
-          "furigana": "かぜ"
+          "ruby_text": "風邪[かぜ]",
+          "ruby_spans": [
+            {
+              "base": "風邪",
+              "reading": "かぜ",
+              "start": 0,
+              "length": 2
+            }
+          ],
+          "ruby_confidence": "reviewed",
+          "furigana": "かぜ",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "の",
@@ -126,8 +134,9 @@
               "length": 2
             }
           ],
-          "ruby_confidence": "medium",
-          "furigana": "しょうじょう"
+          "ruby_confidence": "reviewed",
+          "furigana": "しょうじょう",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "が",
@@ -398,10 +407,10 @@
       "difficulty": null
     },
     {
-      "target": "彼の症状は、少しよくなった。",
+      "target": "彼の症状は、少し良くなった。",
       "reading": "かれのしょうじょうは、すこしよくなった。",
       "translations": {
-        "en": "His condition has improved a little.",
+        "en": "His symptoms have improved a little.",
         "ar": "تحسنت حالته قليلًا.",
         "cs": "Jeho stav se trochu zlepšil.",
         "da": "Hans tilstand er blevet lidt bedre.",
@@ -450,8 +459,9 @@
               "length": 1
             }
           ],
-          "ruby_confidence": "high",
-          "furigana": "かれ"
+          "ruby_confidence": "reviewed",
+          "furigana": "かれ",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "の",
@@ -489,8 +499,9 @@
               "length": 2
             }
           ],
-          "ruby_confidence": "medium",
-          "furigana": "しょうじょう"
+          "ruby_confidence": "reviewed",
+          "furigana": "しょうじょう",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "は",
@@ -544,12 +555,13 @@
               "length": 1
             }
           ],
-          "ruby_confidence": "high",
-          "furigana": "すこし"
+          "ruby_confidence": "reviewed",
+          "furigana": "すこし",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
-          "surface": "よく",
-          "lemma": "よい",
+          "surface": "良く",
+          "lemma": "良い",
           "pos": "形容詞/非自立可能/*/*/形容詞/連用形-一般",
           "upos": "ADJ",
           "xpos": "形容詞",
@@ -558,10 +570,18 @@
           "end": 10,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "よく",
-          "ruby_text": "よく",
-          "ruby_spans": [],
-          "ruby_confidence": "high",
-          "furigana": "よく"
+          "ruby_text": "良[よ]く",
+          "ruby_spans": [
+            {
+              "base": "良",
+              "reading": "よ",
+              "start": 0,
+              "length": 1
+            }
+          ],
+          "ruby_confidence": "reviewed",
+          "furigana": "よく",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "なっ",
@@ -827,8 +847,887 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-13T01:56:29Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:Ja n3/b7f3580ae454ed66",
+      "revision_id": 81086,
+      "parent_revision_id": 61249,
+      "revision_timestamp_utc": "2026-10-13T01:56:29Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Corrected the Portuguese cold/flu distinction and aligned the Japanese spelling and English translation with the source.",
+      "pulled_utc": "2026-10-18T17:39:12Z",
+      "applied_utc": "2026-10-18T17:39:51Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-f042a00ca3058055",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "ja_n3:b7f3580ae454ed66",
+        "pack_code": "ja_n3",
+        "entry_id": "しょうじょう",
+        "language": "ja",
+        "sentence_index": 1,
+        "old_sentence": "かぜの症状があります。",
+        "old_translations": {
+          "en": "I have cold symptoms.",
+          "ar": "لدي أعراض الزكام.",
+          "cs": "Mám příznaky nachlazení.",
+          "da": "Jeg har forkølelsessymptomer.",
+          "de": "Ich habe Erkältungssymptome.",
+          "el": "Έχω συμπτώματα κρυολογήματος.",
+          "es": "Tengo síntomas de resfriado.",
+          "fi": "Minulla on flunssan oireita.",
+          "fr": "J'ai des symptômes de rhume.",
+          "he": "יש לי תסמיני הצטננות.",
+          "hi": "मुझे सर्दी के लक्षण हैं।",
+          "hu": "Megfázásos tüneteim vannak.",
+          "id": "Saya punya gejala pilek.",
+          "it": "Ho i sintomi del raffreddore.",
+          "ko": "감기 증상이 있어요.",
+          "nb": "Jeg har forkjølelsessymptomer.",
+          "nl": "Ik heb verkoudheidsklachten.",
+          "pl": "Mam objawy przeziębienia.",
+          "pt": "Tenho sintomas de gripe.",
+          "ro": "Am simptome de răceală.",
+          "ru": "У меня симптомы простуды.",
+          "sv": "Jag har förkylningssymtom.",
+          "tr": "Soğuk algınlığı belirtilerim var.",
+          "uk": "У мене симптоми застуди.",
+          "vi": "Tôi có các triệu chứng cảm lạnh.",
+          "yue": "我有感冒症狀。",
+          "zh-Hans": "我有感冒症状。"
+        },
+        "proposed_sentence": "風邪の症状があります。",
+        "proposed_translations": {
+          "en": "I have cold symptoms.",
+          "ar": "لدي أعراض الزكام.",
+          "cs": "Mám příznaky nachlazení.",
+          "da": "Jeg har forkølelsessymptomer.",
+          "de": "Ich habe Erkältungssymptome.",
+          "el": "Έχω συμπτώματα κρυολογήματος.",
+          "es": "Tengo síntomas de resfriado.",
+          "fi": "Minulla on flunssan oireita.",
+          "fr": "J'ai des symptômes de rhume.",
+          "he": "יש לי תסמיני הצטננות.",
+          "hi": "मुझे सर्दी के लक्षण हैं।",
+          "hu": "Megfázásos tüneteim vannak.",
+          "id": "Saya punya gejala pilek.",
+          "it": "Ho i sintomi del raffreddore.",
+          "ko": "감기 증상이 있어요.",
+          "nb": "Jeg har forkjølelsessymptomer.",
+          "nl": "Ik heb verkoudheidsklachten.",
+          "pl": "Mam objawy przeziębienia.",
+          "pt": "Tenho sintomas de resfriado.",
+          "ro": "Am simptome de răceală.",
+          "ru": "У меня симптомы простуды.",
+          "sv": "Jag har förkylningssymtom.",
+          "tr": "Soğuk algınlığı belirtilerim var.",
+          "uk": "У мене симптоми застуди.",
+          "vi": "Tôi có các triệu chứng cảm lạnh.",
+          "yue": "我有感冒症狀。",
+          "zh-Hans": "我有感冒症状。"
+        },
+        "old_ruby_source": "かぜの症状[しょうじょう]があります。",
+        "proposed_ruby_source": "風邪[かぜ]の症状[しょうじょう]があります。",
+        "old_japanese": "かぜの症状があります。",
+        "old_english": "I have cold symptoms.",
+        "proposed_japanese": "風邪の症状があります。",
+        "proposed_english": "I have cold symptoms.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "ja",
+          "sentence": "風邪の症状があります。",
+          "tokens": [
+            {
+              "surface": "風邪",
+              "lemma": "風邪",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 0,
+              "end": 2,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "かぜ",
+              "ruby_text": "風邪[かぜ]",
+              "ruby_spans": [
+                {
+                  "base": "風邪",
+                  "reading": "かぜ",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "かぜ",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "の",
+              "lemma": "の",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 2,
+              "end": 3,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "の",
+              "ruby_text": "の",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "の"
+            },
+            {
+              "surface": "症状",
+              "lemma": "症状",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 3,
+              "end": 5,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "しょうじょう",
+              "ruby_text": "症状[しょうじょう]",
+              "ruby_spans": [
+                {
+                  "base": "症状",
+                  "reading": "しょうじょう",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "しょうじょう",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "が",
+              "lemma": "が",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 5,
+              "end": 6,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "が",
+              "ruby_text": "が",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "が"
+            },
+            {
+              "surface": "あり",
+              "lemma": "ある",
+              "pos": "動詞/非自立可能/*/*/五段-ラ行/連用形-一般",
+              "upos": "VERB",
+              "xpos": "動詞",
+              "feats": {},
+              "start": 6,
+              "end": 8,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "あり",
+              "ruby_text": "あり",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "あり"
+            },
+            {
+              "surface": "ます",
+              "lemma": "ます",
+              "pos": "助動詞/*/*/*/助動詞-マス/終止形-一般",
+              "upos": "AUX",
+              "xpos": "助動詞",
+              "feats": {},
+              "start": 8,
+              "end": 10,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "ます",
+              "ruby_text": "ます",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "ます"
+            },
+            {
+              "surface": "。",
+              "lemma": "。",
+              "pos": "補助記号/句点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 10,
+              "end": 11,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "。",
+              "ruby_text": "。",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "。"
+            }
+          ],
+          "reading": "かぜのしょうじょうがあります。",
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "warnings": [
+            "mediawiki ruby hints applied"
+          ]
+        },
+        "generated_tokens": [
+          {
+            "surface": "風邪",
+            "lemma": "風邪",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "かぜ",
+            "ruby_text": "風邪[かぜ]",
+            "ruby_spans": [
+              {
+                "base": "風邪",
+                "reading": "かぜ",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "かぜ",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "の",
+            "lemma": "の",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 2,
+            "end": 3,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "の",
+            "ruby_text": "の",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "の"
+          },
+          {
+            "surface": "症状",
+            "lemma": "症状",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 3,
+            "end": 5,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "しょうじょう",
+            "ruby_text": "症状[しょうじょう]",
+            "ruby_spans": [
+              {
+                "base": "症状",
+                "reading": "しょうじょう",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "しょうじょう",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "が",
+            "lemma": "が",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 5,
+            "end": 6,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "が",
+            "ruby_text": "が",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "が"
+          },
+          {
+            "surface": "あり",
+            "lemma": "ある",
+            "pos": "動詞/非自立可能/*/*/五段-ラ行/連用形-一般",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 6,
+            "end": 8,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "あり",
+            "ruby_text": "あり",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "あり"
+          },
+          {
+            "surface": "ます",
+            "lemma": "ます",
+            "pos": "助動詞/*/*/*/助動詞-マス/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 8,
+            "end": 10,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ます",
+            "ruby_text": "ます",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "ます"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 10,
+            "end": 11,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
+          }
+        ],
+        "generated_reading": "かぜのしょうじょうがあります。",
+        "analyzer": "sudachipy_sudachidict_core_c",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-18T17:39:12Z",
+        "updated_utc": "2026-10-18T17:40:47Z",
+        "applied_utc": "2026-10-18T17:40:47Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      },
+      {
+        "id": "sentprop-1afbb8e4ff570976",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "ja_n3:b7f3580ae454ed66",
+        "pack_code": "ja_n3",
+        "entry_id": "しょうじょう",
+        "language": "ja",
+        "sentence_index": 3,
+        "old_sentence": "彼の症状は、少しよくなった。",
+        "old_translations": {
+          "en": "His condition has improved a little.",
+          "ar": "تحسنت حالته قليلًا.",
+          "cs": "Jeho stav se trochu zlepšil.",
+          "da": "Hans tilstand er blevet lidt bedre.",
+          "de": "Sein Zustand hat sich ein wenig gebessert.",
+          "el": "Η κατάστασή του βελτιώθηκε λίγο.",
+          "es": "Su estado ha mejorado un poco.",
+          "fi": "Hänen vointinsa on hieman parantunut.",
+          "fr": "Son état s'est un peu amélioré.",
+          "he": "מצבו השתפר קצת.",
+          "hi": "उसकी हालत थोड़ी बेहतर हुई है।",
+          "hu": "Az állapota egy kicsit javult.",
+          "id": "Kondisinya sedikit membaik.",
+          "it": "Le sue condizioni sono migliorate un po'.",
+          "ko": "그의 상태는 조금 좋아졌어요.",
+          "nb": "Tilstanden hans har blitt litt bedre.",
+          "nl": "Zijn toestand is een beetje verbeterd.",
+          "pl": "Jego stan trochę się poprawił.",
+          "pt": "O estado dele melhorou um pouco.",
+          "ro": "Starea lui s-a îmbunătățit puțin.",
+          "ru": "Его состояние немного улучшилось.",
+          "sv": "Hans tillstånd har blivit lite bättre.",
+          "tr": "Onun durumu biraz daha iyi.",
+          "uk": "Його стан трохи покращився.",
+          "vi": "Tình trạng của anh ấy đã khá hơn một chút.",
+          "yue": "佢嘅情況好咗少少。",
+          "zh-Hans": "他的症状稍微好了一点。"
+        },
+        "proposed_sentence": "彼の症状は、少し良くなった。",
+        "proposed_translations": {
+          "en": "His symptoms have improved a little.",
+          "ar": "تحسنت حالته قليلًا.",
+          "cs": "Jeho stav se trochu zlepšil.",
+          "da": "Hans tilstand er blevet lidt bedre.",
+          "de": "Sein Zustand hat sich ein wenig gebessert.",
+          "el": "Η κατάστασή του βελτιώθηκε λίγο.",
+          "es": "Su estado ha mejorado un poco.",
+          "fi": "Hänen vointinsa on hieman parantunut.",
+          "fr": "Son état s'est un peu amélioré.",
+          "he": "מצבו השתפר קצת.",
+          "hi": "उसकी हालत थोड़ी बेहतर हुई है।",
+          "hu": "Az állapota egy kicsit javult.",
+          "id": "Kondisinya sedikit membaik.",
+          "it": "Le sue condizioni sono migliorate un po'.",
+          "ko": "그의 상태는 조금 좋아졌어요.",
+          "nb": "Tilstanden hans har blitt litt bedre.",
+          "nl": "Zijn toestand is een beetje verbeterd.",
+          "pl": "Jego stan trochę się poprawił.",
+          "pt": "O estado dele melhorou um pouco.",
+          "ro": "Starea lui s-a îmbunătățit puțin.",
+          "ru": "Его состояние немного улучшилось.",
+          "sv": "Hans tillstånd har blivit lite bättre.",
+          "tr": "Onun durumu biraz daha iyi.",
+          "uk": "Його стан трохи покращився.",
+          "vi": "Tình trạng của anh ấy đã khá hơn một chút.",
+          "yue": "佢嘅情況好咗少少。",
+          "zh-Hans": "他的症状稍微好了一点。"
+        },
+        "old_ruby_source": "彼[かれ]の症状[しょうじょう]は、少[すこ]しよくなった。",
+        "proposed_ruby_source": "彼[かれ]の症状[しょうじょう]は、少[すこ]し良[よ]くなった。",
+        "old_japanese": "彼の症状は、少しよくなった。",
+        "old_english": "His condition has improved a little.",
+        "proposed_japanese": "彼の症状は、少し良くなった。",
+        "proposed_english": "His symptoms have improved a little.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "ja",
+          "sentence": "彼の症状は、少し良くなった。",
+          "tokens": [
+            {
+              "surface": "彼",
+              "lemma": "彼",
+              "pos": "代名詞/*/*/*/*/*",
+              "upos": "PRON",
+              "xpos": "代名詞",
+              "feats": {},
+              "start": 0,
+              "end": 1,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "かれ",
+              "ruby_text": "彼[かれ]",
+              "ruby_spans": [
+                {
+                  "base": "彼",
+                  "reading": "かれ",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "かれ",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "の",
+              "lemma": "の",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 1,
+              "end": 2,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "の",
+              "ruby_text": "の",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "の"
+            },
+            {
+              "surface": "症状",
+              "lemma": "症状",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 2,
+              "end": 4,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "しょうじょう",
+              "ruby_text": "症状[しょうじょう]",
+              "ruby_spans": [
+                {
+                  "base": "症状",
+                  "reading": "しょうじょう",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "しょうじょう",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "は",
+              "lemma": "は",
+              "pos": "助詞/係助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 4,
+              "end": 5,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "は",
+              "ruby_text": "は",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "は"
+            },
+            {
+              "surface": "、",
+              "lemma": "、",
+              "pos": "補助記号/読点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 5,
+              "end": 6,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "、",
+              "ruby_text": "、",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "、"
+            },
+            {
+              "surface": "少し",
+              "lemma": "少し",
+              "pos": "副詞/*/*/*/*/*",
+              "upos": "ADV",
+              "xpos": "副詞",
+              "feats": {},
+              "start": 6,
+              "end": 8,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "すこし",
+              "ruby_text": "少[すこ]し",
+              "ruby_spans": [
+                {
+                  "base": "少",
+                  "reading": "すこ",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "すこし",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "良く",
+              "lemma": "良い",
+              "pos": "形容詞/非自立可能/*/*/形容詞/連用形-一般",
+              "upos": "ADJ",
+              "xpos": "形容詞",
+              "feats": {},
+              "start": 8,
+              "end": 10,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "よく",
+              "ruby_text": "良[よ]く",
+              "ruby_spans": [
+                {
+                  "base": "良",
+                  "reading": "よ",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "よく",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "なっ",
+              "lemma": "なる",
+              "pos": "動詞/非自立可能/*/*/五段-ラ行/連用形-促音便",
+              "upos": "VERB",
+              "xpos": "動詞",
+              "feats": {},
+              "start": 10,
+              "end": 12,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "なっ",
+              "ruby_text": "なっ",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "なっ"
+            },
+            {
+              "surface": "た",
+              "lemma": "た",
+              "pos": "助動詞/*/*/*/助動詞-タ/終止形-一般",
+              "upos": "AUX",
+              "xpos": "助動詞",
+              "feats": {},
+              "start": 12,
+              "end": 13,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "た",
+              "ruby_text": "た",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "た"
+            },
+            {
+              "surface": "。",
+              "lemma": "。",
+              "pos": "補助記号/句点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 13,
+              "end": 14,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "。",
+              "ruby_text": "。",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "。"
+            }
+          ],
+          "reading": "かれのしょうじょうは、すこしよくなった。",
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "warnings": [
+            "mediawiki ruby hints applied"
+          ]
+        },
+        "generated_tokens": [
+          {
+            "surface": "彼",
+            "lemma": "彼",
+            "pos": "代名詞/*/*/*/*/*",
+            "upos": "PRON",
+            "xpos": "代名詞",
+            "feats": {},
+            "start": 0,
+            "end": 1,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "かれ",
+            "ruby_text": "彼[かれ]",
+            "ruby_spans": [
+              {
+                "base": "彼",
+                "reading": "かれ",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "かれ",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "の",
+            "lemma": "の",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 1,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "の",
+            "ruby_text": "の",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "の"
+          },
+          {
+            "surface": "症状",
+            "lemma": "症状",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 2,
+            "end": 4,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "しょうじょう",
+            "ruby_text": "症状[しょうじょう]",
+            "ruby_spans": [
+              {
+                "base": "症状",
+                "reading": "しょうじょう",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "しょうじょう",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "は",
+            "lemma": "は",
+            "pos": "助詞/係助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 4,
+            "end": 5,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "は",
+            "ruby_text": "は",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "は"
+          },
+          {
+            "surface": "、",
+            "lemma": "、",
+            "pos": "補助記号/読点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 5,
+            "end": 6,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "、",
+            "ruby_text": "、",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "、"
+          },
+          {
+            "surface": "少し",
+            "lemma": "少し",
+            "pos": "副詞/*/*/*/*/*",
+            "upos": "ADV",
+            "xpos": "副詞",
+            "feats": {},
+            "start": 6,
+            "end": 8,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "すこし",
+            "ruby_text": "少[すこ]し",
+            "ruby_spans": [
+              {
+                "base": "少",
+                "reading": "すこ",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "すこし",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "良く",
+            "lemma": "良い",
+            "pos": "形容詞/非自立可能/*/*/形容詞/連用形-一般",
+            "upos": "ADJ",
+            "xpos": "形容詞",
+            "feats": {},
+            "start": 8,
+            "end": 10,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "よく",
+            "ruby_text": "良[よ]く",
+            "ruby_spans": [
+              {
+                "base": "良",
+                "reading": "よ",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "よく",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "なっ",
+            "lemma": "なる",
+            "pos": "動詞/非自立可能/*/*/五段-ラ行/連用形-促音便",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 10,
+            "end": 12,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "なっ",
+            "ruby_text": "なっ",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "なっ"
+          },
+          {
+            "surface": "た",
+            "lemma": "た",
+            "pos": "助動詞/*/*/*/助動詞-タ/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 12,
+            "end": 13,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "た",
+            "ruby_text": "た",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "た"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 13,
+            "end": 14,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
+          }
+        ],
+        "generated_reading": "かれのしょうじょうは、すこしよくなった。",
+        "analyzer": "sudachipy_sudachidict_core_c",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-18T17:39:12Z",
+        "updated_utc": "2026-10-18T17:40:47Z",
+        "applied_utc": "2026-10-18T17:40:47Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-18T17:40:47Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -853,12 +1752,6 @@
       "いまのしょうじょうは、まだかるいです。",
       "かれのしょうじょうは、すこしよくなった。",
       "はつねつは、しょうじょうのひとつです。"
-    ],
-    "en": [
-      "I have cold symptoms.",
-      "The symptoms are still mild.",
-      "His condition has improved a little.",
-      "A fever is one symptom."
     ],
     "generation": {
       "generator": "vocomipedia_source_generator.py",
@@ -897,197 +1790,13 @@
         "parts_of_speech": "Noun"
       }
     },
-    "word_en": "symptoms; condition (of a patient)",
-    "word_es": "síntoma",
-    "word_fr": "symptôme",
-    "word_de": "Symptom",
-    "word_it": "sintomo",
-    "word_ko": "증상",
-    "word_zh-Hans": "症状",
-    "word_yue": "症狀",
-    "word_ru": "симптом",
-    "word_pt": "sintoma",
-    "word_he": "סימפטום",
-    "word_tr": "belirti",
-    "word_vi": "triệu chứng",
-    "word_ar": "عَرَض",
-    "word_nl": "symptoom",
-    "word_uk": "симптом",
-    "word_hu": "tünet",
-    "word_hi": "लक्षण",
-    "word_pl": "objaw",
-    "word_el": "σύμπτωμα",
-    "word_nb": "symptom",
-    "word_id": "gejala",
-    "word_sv": "symptom",
-    "word_ro": "simptom",
-    "word_cs": "příznak",
-    "word_da": "symptom",
-    "word_fi": "oire",
-    "word_ja": "しょうじょう",
-    "ar": [
-      "لدي أعراض الزكام.",
-      "الأعراض ما زالت خفيفة.",
-      "تحسنت حالته قليلًا.",
-      "الحمى أحد الأعراض."
-    ],
-    "cs": [
-      "Mám příznaky nachlazení.",
-      "Příznaky jsou zatím mírné.",
-      "Jeho stav se trochu zlepšil.",
-      "Horečka je jeden z příznaků."
-    ],
-    "da": [
-      "Jeg har forkølelsessymptomer.",
-      "Symptomerne er stadig milde.",
-      "Hans tilstand er blevet lidt bedre.",
-      "Feber er et af symptomerne."
-    ],
-    "de": [
-      "Ich habe Erkältungssymptome.",
-      "Die Symptome sind noch leicht.",
-      "Sein Zustand hat sich ein wenig gebessert.",
-      "Fieber ist ein Symptom."
-    ],
-    "el": [
-      "Έχω συμπτώματα κρυολογήματος.",
-      "Τα συμπτώματα είναι ακόμα ήπια.",
-      "Η κατάστασή του βελτιώθηκε λίγο.",
-      "Ο πυρετός είναι ένα σύμπτωμα."
-    ],
-    "es": [
-      "Tengo síntomas de resfriado.",
-      "Los síntomas siguen siendo leves.",
-      "Su estado ha mejorado un poco.",
-      "La fiebre es un síntoma."
-    ],
-    "fi": [
-      "Minulla on flunssan oireita.",
-      "Oireet ovat vielä lieviä.",
-      "Hänen vointinsa on hieman parantunut.",
-      "Kuume on yksi oire."
-    ],
-    "fr": [
-      "J'ai des symptômes de rhume.",
-      "Les symptômes sont encore légers.",
-      "Son état s'est un peu amélioré.",
-      "La fièvre est un symptôme."
-    ],
-    "he": [
-      "יש לי תסמיני הצטננות.",
-      "התסמינים עדיין קלים.",
-      "מצבו השתפר קצת.",
-      "חום הוא אחד התסמינים."
-    ],
-    "hi": [
-      "मुझे सर्दी के लक्षण हैं।",
-      "लक्षण अभी भी हल्के हैं।",
-      "उसकी हालत थोड़ी बेहतर हुई है।",
-      "बुखार एक लक्षण है।"
-    ],
-    "hu": [
-      "Megfázásos tüneteim vannak.",
-      "A tünetek még enyhék.",
-      "Az állapota egy kicsit javult.",
-      "A láz egy tünet."
-    ],
-    "id": [
-      "Saya punya gejala pilek.",
-      "Gejalanya masih ringan.",
-      "Kondisinya sedikit membaik.",
-      "Demam adalah salah satu gejala."
-    ],
-    "it": [
-      "Ho i sintomi del raffreddore.",
-      "I sintomi sono ancora lievi.",
-      "Le sue condizioni sono migliorate un po'.",
-      "La febbre è un sintomo."
-    ],
-    "ko": [
-      "감기 증상이 있어요.",
-      "지금 증상은 아직 가벼워요.",
-      "그의 상태는 조금 좋아졌어요.",
-      "열은 증상 중 하나예요."
-    ],
-    "nb": [
-      "Jeg har forkjølelsessymptomer.",
-      "Symptomene er fortsatt milde.",
-      "Tilstanden hans har blitt litt bedre.",
-      "Feber er et av symptomene."
-    ],
-    "nl": [
-      "Ik heb verkoudheidsklachten.",
-      "De klachten zijn nog steeds mild.",
-      "Zijn toestand is een beetje verbeterd.",
-      "Koorts is een van de symptomen."
-    ],
-    "pl": [
-      "Mam objawy przeziębienia.",
-      "Objawy są jeszcze łagodne.",
-      "Jego stan trochę się poprawił.",
-      "Gorączka jest jednym z objawów."
-    ],
-    "pt": [
-      "Tenho sintomas de gripe.",
-      "Os sintomas ainda são leves.",
-      "O estado dele melhorou um pouco.",
-      "A febre é um sintoma."
-    ],
-    "ro": [
-      "Am simptome de răceală.",
-      "Simptomele sunt încă ușoare.",
-      "Starea lui s-a îmbunătățit puțin.",
-      "Febra este un simptom."
-    ],
-    "ru": [
-      "У меня симптомы простуды.",
-      "Симптомы пока ещё лёгкие.",
-      "Его состояние немного улучшилось.",
-      "Температура — один из симптомов."
-    ],
-    "sv": [
-      "Jag har förkylningssymtom.",
-      "Symtomen är fortfarande milda.",
-      "Hans tillstånd har blivit lite bättre.",
-      "Feber är ett symptom."
-    ],
-    "tr": [
-      "Soğuk algınlığı belirtilerim var.",
-      "Belirtiler hâlâ hafif.",
-      "Onun durumu biraz daha iyi.",
-      "Ateş bir belirtidir."
-    ],
-    "uk": [
-      "У мене симптоми застуди.",
-      "Симптоми поки що легкі.",
-      "Його стан трохи покращився.",
-      "Лихоманка — один із симптомів."
-    ],
-    "vi": [
-      "Tôi có các triệu chứng cảm lạnh.",
-      "Các triệu chứng vẫn còn nhẹ.",
-      "Tình trạng của anh ấy đã khá hơn một chút.",
-      "Sốt là một triệu chứng."
-    ],
-    "yue": [
-      "我有感冒症狀。",
-      "而家嘅症狀仲係輕微。",
-      "佢嘅情況好咗少少。",
-      "發燒係其中一種症狀。"
-    ],
-    "zh-Hans": [
-      "我有感冒症状。",
-      "现在的症状还很轻。",
-      "他的症状稍微好了一点。",
-      "发烧是症状之一。"
-    ],
     "pos_analysis": [
       {
-        "sentence": "かぜの症状があります。",
+        "sentence": "風邪の症状があります。",
         "tokens": [
           {
-            "surface": "かぜ",
-            "lemma": "かぜ",
+            "surface": "風邪",
+            "lemma": "風邪",
             "pos": "名詞/普通名詞/一般/*/*/*",
             "upos": "NOUN",
             "xpos": "名詞",
@@ -1096,10 +1805,18 @@
             "end": 2,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "かぜ",
-            "ruby_text": "かぜ",
-            "ruby_spans": [],
-            "ruby_confidence": "high",
-            "furigana": "かぜ"
+            "ruby_text": "風邪[かぜ]",
+            "ruby_spans": [
+              {
+                "base": "風邪",
+                "reading": "かぜ",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "かぜ",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "の",
@@ -1137,8 +1854,9 @@
                 "length": 2
               }
             ],
-            "ruby_confidence": "medium",
-            "furigana": "しょうじょう"
+            "ruby_confidence": "reviewed",
+            "furigana": "しょうじょう",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "が",
@@ -1379,7 +2097,7 @@
         "difficulty_aggregated": null
       },
       {
-        "sentence": "彼の症状は、少しよくなった。",
+        "sentence": "彼の症状は、少し良くなった。",
         "tokens": [
           {
             "surface": "彼",
@@ -1401,8 +2119,9 @@
                 "length": 1
               }
             ],
-            "ruby_confidence": "high",
-            "furigana": "かれ"
+            "ruby_confidence": "reviewed",
+            "furigana": "かれ",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "の",
@@ -1440,8 +2159,9 @@
                 "length": 2
               }
             ],
-            "ruby_confidence": "medium",
-            "furigana": "しょうじょう"
+            "ruby_confidence": "reviewed",
+            "furigana": "しょうじょう",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "は",
@@ -1495,12 +2215,13 @@
                 "length": 1
               }
             ],
-            "ruby_confidence": "high",
-            "furigana": "すこし"
+            "ruby_confidence": "reviewed",
+            "furigana": "すこし",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
-            "surface": "よく",
-            "lemma": "よい",
+            "surface": "良く",
+            "lemma": "良い",
             "pos": "形容詞/非自立可能/*/*/形容詞/連用形-一般",
             "upos": "ADJ",
             "xpos": "形容詞",
@@ -1509,10 +2230,18 @@
             "end": 10,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "よく",
-            "ruby_text": "よく",
-            "ruby_spans": [],
-            "ruby_confidence": "high",
-            "furigana": "よく"
+            "ruby_text": "良[よ]く",
+            "ruby_spans": [
+              {
+                "base": "良",
+                "reading": "よ",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "よく",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "なっ",
@@ -1736,6 +2465,196 @@
         ],
         "difficulty_aggregated": null
       }
+    ],
+    "word_en": "symptoms; condition (of a patient)",
+    "word_es": "síntoma",
+    "word_fr": "symptôme",
+    "word_de": "Symptom",
+    "word_it": "sintomo",
+    "word_ko": "증상",
+    "word_zh-Hans": "症状",
+    "word_yue": "症狀",
+    "word_ru": "симптом",
+    "word_pt": "sintoma",
+    "word_he": "סימפטום",
+    "word_tr": "belirti",
+    "word_vi": "triệu chứng",
+    "word_ar": "عَرَض",
+    "word_nl": "symptoom",
+    "word_uk": "симптом",
+    "word_hu": "tünet",
+    "word_hi": "लक्षण",
+    "word_pl": "objaw",
+    "word_el": "σύμπτωμα",
+    "word_nb": "symptom",
+    "word_id": "gejala",
+    "word_sv": "symptom",
+    "word_ro": "simptom",
+    "word_cs": "příznak",
+    "word_da": "symptom",
+    "word_fi": "oire",
+    "word_ja": "しょうじょう",
+    "ar": [
+      "لدي أعراض الزكام.",
+      "الأعراض ما زالت خفيفة.",
+      "تحسنت حالته قليلًا.",
+      "الحمى أحد الأعراض."
+    ],
+    "cs": [
+      "Mám příznaky nachlazení.",
+      "Příznaky jsou zatím mírné.",
+      "Jeho stav se trochu zlepšil.",
+      "Horečka je jeden z příznaků."
+    ],
+    "da": [
+      "Jeg har forkølelsessymptomer.",
+      "Symptomerne er stadig milde.",
+      "Hans tilstand er blevet lidt bedre.",
+      "Feber er et af symptomerne."
+    ],
+    "de": [
+      "Ich habe Erkältungssymptome.",
+      "Die Symptome sind noch leicht.",
+      "Sein Zustand hat sich ein wenig gebessert.",
+      "Fieber ist ein Symptom."
+    ],
+    "el": [
+      "Έχω συμπτώματα κρυολογήματος.",
+      "Τα συμπτώματα είναι ακόμα ήπια.",
+      "Η κατάστασή του βελτιώθηκε λίγο.",
+      "Ο πυρετός είναι ένα σύμπτωμα."
+    ],
+    "en": [
+      "I have cold symptoms.",
+      "The symptoms are still mild.",
+      "His condition has improved a little.",
+      "A fever is one symptom."
+    ],
+    "es": [
+      "Tengo síntomas de resfriado.",
+      "Los síntomas siguen siendo leves.",
+      "Su estado ha mejorado un poco.",
+      "La fiebre es un síntoma."
+    ],
+    "fi": [
+      "Minulla on flunssan oireita.",
+      "Oireet ovat vielä lieviä.",
+      "Hänen vointinsa on hieman parantunut.",
+      "Kuume on yksi oire."
+    ],
+    "fr": [
+      "J'ai des symptômes de rhume.",
+      "Les symptômes sont encore légers.",
+      "Son état s'est un peu amélioré.",
+      "La fièvre est un symptôme."
+    ],
+    "he": [
+      "יש לי תסמיני הצטננות.",
+      "התסמינים עדיין קלים.",
+      "מצבו השתפר קצת.",
+      "חום הוא אחד התסמינים."
+    ],
+    "hi": [
+      "मुझे सर्दी के लक्षण हैं।",
+      "लक्षण अभी भी हल्के हैं।",
+      "उसकी हालत थोड़ी बेहतर हुई है।",
+      "बुखार एक लक्षण है।"
+    ],
+    "hu": [
+      "Megfázásos tüneteim vannak.",
+      "A tünetek még enyhék.",
+      "Az állapota egy kicsit javult.",
+      "A láz egy tünet."
+    ],
+    "id": [
+      "Saya punya gejala pilek.",
+      "Gejalanya masih ringan.",
+      "Kondisinya sedikit membaik.",
+      "Demam adalah salah satu gejala."
+    ],
+    "it": [
+      "Ho i sintomi del raffreddore.",
+      "I sintomi sono ancora lievi.",
+      "Le sue condizioni sono migliorate un po'.",
+      "La febbre è un sintomo."
+    ],
+    "ko": [
+      "감기 증상이 있어요.",
+      "지금 증상은 아직 가벼워요.",
+      "그의 상태는 조금 좋아졌어요.",
+      "열은 증상 중 하나예요."
+    ],
+    "nb": [
+      "Jeg har forkjølelsessymptomer.",
+      "Symptomene er fortsatt milde.",
+      "Tilstanden hans har blitt litt bedre.",
+      "Feber er et av symptomene."
+    ],
+    "nl": [
+      "Ik heb verkoudheidsklachten.",
+      "De klachten zijn nog steeds mild.",
+      "Zijn toestand is een beetje verbeterd.",
+      "Koorts is een van de symptomen."
+    ],
+    "pl": [
+      "Mam objawy przeziębienia.",
+      "Objawy są jeszcze łagodne.",
+      "Jego stan trochę się poprawił.",
+      "Gorączka jest jednym z objawów."
+    ],
+    "pt": [
+      "Tenho sintomas de gripe.",
+      "Os sintomas ainda são leves.",
+      "O estado dele melhorou um pouco.",
+      "A febre é um sintoma."
+    ],
+    "ro": [
+      "Am simptome de răceală.",
+      "Simptomele sunt încă ușoare.",
+      "Starea lui s-a îmbunătățit puțin.",
+      "Febra este un simptom."
+    ],
+    "ru": [
+      "У меня симптомы простуды.",
+      "Симптомы пока ещё лёгкие.",
+      "Его состояние немного улучшилось.",
+      "Температура — один из симптомов."
+    ],
+    "sv": [
+      "Jag har förkylningssymtom.",
+      "Symtomen är fortfarande milda.",
+      "Hans tillstånd har blivit lite bättre.",
+      "Feber är ett symptom."
+    ],
+    "tr": [
+      "Soğuk algınlığı belirtilerim var.",
+      "Belirtiler hâlâ hafif.",
+      "Onun durumu biraz daha iyi.",
+      "Ateş bir belirtidir."
+    ],
+    "uk": [
+      "У мене симптоми застуди.",
+      "Симптоми поки що легкі.",
+      "Його стан трохи покращився.",
+      "Лихоманка — один із симптомів."
+    ],
+    "vi": [
+      "Tôi có các triệu chứng cảm lạnh.",
+      "Các triệu chứng vẫn còn nhẹ.",
+      "Tình trạng của anh ấy đã khá hơn một chút.",
+      "Sốt là một triệu chứng."
+    ],
+    "yue": [
+      "我有感冒症狀。",
+      "而家嘅症狀仲係輕微。",
+      "佢嘅情況好咗少少。",
+      "發燒係其中一種症狀。"
+    ],
+    "zh-Hans": [
+      "我有感冒症状。",
+      "现在的症状还很轻。",
+      "他的症状稍微好了一点。",
+      "发烧是症状之一。"
     ]
   }
 }

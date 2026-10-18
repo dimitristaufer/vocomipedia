@@ -15,12 +15,12 @@
   "glosses": {
     "en": "main gate",
     "es": "Puerta principal",
-    "fr": "Porte principale",
+    "fr": "portail principal",
     "de": "Haupttor",
     "it": "Porta principale",
     "ko": "정문",
-    "zh-Hans": "主门",
-    "yue": "大門",
+    "zh-Hans": "正门",
+    "yue": "正門",
     "ru": "Главные ворота",
     "pt": "Portão principal",
     "he": "השער הראשי",
@@ -48,11 +48,11 @@
       "translations": {
         "en": "I arrived at the main gate early.",
         "es": "Llegué temprano a la puerta principal.",
-        "fr": "Je suis arrivé tôt à la porte principale.",
+        "fr": "Je suis arrivé tôt au portail principal.",
         "de": "Ich kam früh am Haupttor an.",
         "it": "Sono arrivato presto al cancello principale.",
         "ko": "정문에 일찍 도착했어.",
-        "zh-Hans": "我提前到了主门口。",
+        "zh-Hans": "我早早就到了正门。",
         "yue": "早早嚟到正門",
         "ru": "Я пришёл к главным воротам пораньше.",
         "pt": "Cheguei cedo ao portão principal.",
@@ -77,12 +77,14 @@
       "tokens": [
         {
           "surface": "私",
-          "surface_en": "I",
-          "furigana": "わたくし",
-          "pos": "noun (pronoun)",
           "lemma": "私",
-          "explanation": "The speaker, acting as the topic of the sentence.",
-          "difficulty": 6,
+          "pos": "代名詞/*/*/*/*/*",
+          "upos": "PRON",
+          "xpos": "代名詞",
+          "feats": {},
+          "start": 0,
+          "end": 1,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "わたくし",
           "ruby_text": "私[わたくし]",
           "ruby_spans": [
@@ -93,31 +95,36 @@
               "length": 1
             }
           ],
-          "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "ruby_confidence": "reviewed",
+          "furigana": "わたくし",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "は",
-          "surface_en": "topic particle",
-          "furigana": "は",
-          "pos": "particle",
           "lemma": "は",
-          "explanation": "Marks '私' as the topic of the sentence.",
-          "difficulty": 1,
+          "pos": "助詞/係助詞/*/*/*/*",
+          "upos": "PART",
+          "xpos": "助詞",
+          "feats": {},
+          "start": 1,
+          "end": 2,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "は",
           "ruby_text": "は",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "は"
         },
         {
           "surface": "早く",
-          "surface_en": "quickly",
-          "furigana": "はやく",
-          "pos": "adverb",
-          "lemma": "早く",
-          "explanation": "Indicates the speed at which the action '着いた' occurs.",
-          "difficulty": 6,
+          "lemma": "早い",
+          "pos": "形容詞/一般/*/*/形容詞/連用形-一般",
+          "upos": "ADJ",
+          "xpos": "形容詞",
+          "feats": {},
+          "start": 2,
+          "end": 4,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "はやく",
           "ruby_text": "早[はや]く",
           "ruby_spans": [
@@ -128,18 +135,20 @@
               "length": 1
             }
           ],
-          "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "ruby_confidence": "reviewed",
+          "furigana": "はやく",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "正門",
-          "surface_en": "main gate",
-          "furigana": "せいもん",
-          "pos": "noun",
           "lemma": "正門",
-          "explanation": "The location where the action '着いた' happens.",
-          "difficulty": 1,
-          "is_main_word": true,
+          "pos": "名詞/普通名詞/一般/*/*/*",
+          "upos": "NOUN",
+          "xpos": "名詞",
+          "feats": {},
+          "start": 4,
+          "end": 6,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "せいもん",
           "ruby_text": "正門[せいもん]",
           "ruby_spans": [
@@ -150,33 +159,39 @@
               "length": 2
             }
           ],
-          "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "ruby_confidence": "reviewed",
+          "furigana": "せいもん",
+          "ruby_source": "mediawiki_sentence_ruby",
+          "is_main_word": true
         },
         {
           "surface": "に",
-          "surface_en": "to",
-          "furigana": "に",
-          "pos": "particle",
           "lemma": "に",
-          "explanation": "Marks '正門' as the destination of the movement '着いた'.",
-          "difficulty": 1,
+          "pos": "助詞/格助詞/*/*/*/*",
+          "upos": "PART",
+          "xpos": "助詞",
+          "feats": {},
+          "start": 6,
+          "end": 7,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "に",
           "ruby_text": "に",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "に"
         },
         {
-          "surface": "着いた",
-          "surface_en": "arrived",
-          "furigana": "ついた",
-          "pos": "verb (past tense)",
+          "surface": "着い",
           "lemma": "着く",
-          "explanation": "Expresses the action of arriving at the main gate.",
-          "difficulty": 12,
-          "reading_kana": "ついた",
-          "ruby_text": "着[つ]いた",
+          "pos": "動詞/一般/*/*/五段-カ行/連用形-イ音便",
+          "upos": "VERB",
+          "xpos": "動詞",
+          "feats": {},
+          "start": 7,
+          "end": 9,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "つい",
+          "ruby_text": "着[つ]い",
           "ruby_spans": [
             {
               "base": "着",
@@ -185,8 +200,41 @@
               "length": 1
             }
           ],
+          "ruby_confidence": "reviewed",
+          "furigana": "つい",
+          "ruby_source": "mediawiki_sentence_ruby"
+        },
+        {
+          "surface": "た",
+          "lemma": "た",
+          "pos": "助動詞/*/*/*/助動詞-タ/終止形-一般",
+          "upos": "AUX",
+          "xpos": "助動詞",
+          "feats": {},
+          "start": 9,
+          "end": 10,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "た",
+          "ruby_text": "た",
+          "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "た"
+        },
+        {
+          "surface": "。",
+          "lemma": "。",
+          "pos": "補助記号/句点/*/*/*/*",
+          "upos": "PUNCT",
+          "xpos": "補助記号",
+          "feats": {},
+          "start": 10,
+          "end": 11,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "。",
+          "ruby_text": "。",
+          "ruby_spans": [],
+          "ruby_confidence": "high",
+          "furigana": "。"
         }
       ],
       "difficulty": 4.5,
@@ -198,12 +246,12 @@
       "translations": {
         "en": "The security guard opened the main gate.",
         "es": "El guardia de seguridad abrió la puerta principal.",
-        "fr": "Le garde de sécurité a ouvert la porte principale.",
+        "fr": "Le garde de sécurité a ouvert le portail principal.",
         "de": "Der Sicherheitsmann öffnete das Haupttor.",
         "it": "La guardia di sicurezza ha aperto il cancello principale.",
         "ko": "경비원이 정문을 열었다.",
-        "zh-Hans": "保安打开了主门。",
-        "yue": "保安打開大門。",
+        "zh-Hans": "保安打开了正门。",
+        "yue": "保安打開正門。",
         "ru": "Охранник открыл главные ворота.",
         "pt": "O segurança abriu o portão principal.",
         "he": "השומר פתח את השער הראשי.",
@@ -220,7 +268,7 @@
         "id": "Penjaga keamanan membuka gerbang utama.",
         "sv": "Säkerhetsvakten öppnade huvudporten.",
         "ro": "Paznicul a deschis poarta principală.",
-        "cs": "Bezpečnostní stráž otevřel hlavní bránu.",
+        "cs": "Strážný otevřel hlavní bránu.",
         "da": "Sikkerhedsvagten åbnede hovedporten.",
         "fi": "Vartija avasi pääportin."
       },
@@ -327,11 +375,11 @@
       "translations": {
         "en": "The main gate is decorated with flowers.",
         "es": "La puerta principal está decorada con flores.",
-        "fr": "La porte principale est décorée de fleurs.",
+        "fr": "Le portail principal est décoré de fleurs.",
         "de": "Das Haupttor ist mit Blumen geschmückt.",
         "it": "Il cancello principale è decorato con fiori.",
         "ko": "정문은 꽃으로 장식되어 있습니다.",
-        "zh-Hans": "主门装饰着鲜花。",
+        "zh-Hans": "正门装饰着鲜花。",
         "yue": "正門擺滿鮮花",
         "ru": "Главные ворота украшены цветами.",
         "pt": "O portão principal é decorado com flores.",
@@ -341,7 +389,7 @@
         "ar": "البوابة الرئيسية مزينة بالزهور.",
         "nl": "De hoofdpoort is versierd met bloemen.",
         "uk": "Головні ворота прикрашені квітами.",
-        "hu": "A főkaput virágokkal díszítik.",
+        "hu": "A főkapu virágokkal van feldíszítve.",
         "hi": "मुख्य द्वार को फूलों से सजाया गया है।",
         "pl": "Główna brama jest ozdobiona kwiatami.",
         "el": "Η κεντρική πύλη είναι διακοσμημένη με λουλούδια.",
@@ -456,12 +504,12 @@
       "translations": {
         "en": "This main gate is very heavy.",
         "es": "Esta puerta principal es muy pesada.",
-        "fr": "Cette porte principale est très lourde.",
+        "fr": "Ce portail principal est très lourd.",
         "de": "Dieses Haupttor ist sehr schwer.",
         "it": "Questo cancello principale è molto pesante.",
         "ko": "이 정문은 매우 무겁습니다.",
-        "zh-Hans": "这个主门很重。",
-        "yue": "呢個大門好重",
+        "zh-Hans": "这个正门很重。",
+        "yue": "呢道正門好重。",
         "ru": "Эти главные ворота очень тяжёлые.",
         "pt": "Esse portão principal é muito pesado.",
         "he": "השער הראשי הזה כבד מאוד.",
@@ -587,19 +635,452 @@
     "content_reviewers": [
       "mediawiki-visible-revision"
     ],
-    "last_reviewed_utc": "2026-06-21T18:39:14Z",
-    "approval_source": "mediawiki_visible_revision",
+    "last_reviewed_utc": "2026-10-11T12:06:14Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
     "wiki": {
       "title": "Item:Ja n5/f368d66114bcce10",
-      "revision_id": 58679,
-      "parent_revision_id": 37123,
-      "revision_timestamp_utc": "2026-06-21T18:39:14Z",
-      "revision_user": "VocomiBot",
-      "revision_comment": "Sync ja_n5 item 正門",
-      "pulled_utc": "2026-06-21T20:53:47Z",
-      "applied_utc": "2026-06-21T20:54:01Z",
+      "revision_id": 82806,
+      "parent_revision_id": 69854,
+      "revision_timestamp_utc": "2026-10-11T12:06:14Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Suggest reviewed Japanese and translation corrections",
+      "pulled_utc": "2026-10-17T07:37:41Z",
+      "applied_utc": "2026-10-17T07:37:59Z",
       "applied_by": "vocomipedia-apply-pulled"
-    }
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-f025809bd4920ffe",
+        "status": "applied",
+        "type": "ruby_update",
+        "item_id": "ja_n5:f368d66114bcce10",
+        "pack_code": "ja_n5",
+        "entry_id": "正門",
+        "language": "ja",
+        "sentence_index": 1,
+        "old_sentence": "私は早く正門に着いた。",
+        "old_translations": {
+          "en": "I arrived at the main gate early.",
+          "es": "Llegué temprano a la puerta principal.",
+          "fr": "Je suis arrivé tôt au portail principal.",
+          "de": "Ich kam früh am Haupttor an.",
+          "it": "Sono arrivato presto al cancello principale.",
+          "ko": "정문에 일찍 도착했어.",
+          "zh-Hans": "我早早就到了正门。",
+          "yue": "早早嚟到正門",
+          "ru": "Я пришёл к главным воротам пораньше.",
+          "pt": "Cheguei cedo ao portão principal.",
+          "he": "הגעתי לשער הראשי מוקדם.",
+          "tr": "Ana kapıya erken vardım.",
+          "vi": "Tôi đến cổng chính sớm.",
+          "ar": "وصلت إلى البوابة الرئيسية مبكرا.",
+          "nl": "Ik kwam vroeg bij de hoofdingang aan.",
+          "uk": "Я прийшов до головних воріт раніше.",
+          "hu": "Korán érkeztem meg a főkapuhoz.",
+          "hi": "मैं मुख्य द्वार पर जल्दी पहुंच गया।",
+          "pl": "Przyszedłem do głównej bramy wcześniej.",
+          "el": "Έφτασα νωρίς στην κεντρική πύλη.",
+          "nb": "Jeg ankom hovedporten tidlig.",
+          "id": "Saya tiba di gerbang utama lebih awal.",
+          "sv": "Jag kom fram till huvudingången tidigt.",
+          "ro": "Am ajuns devreme la poarta principală.",
+          "cs": "K hlavní bráně jsem dorazil brzy.",
+          "da": "Jeg ankom tidligt til hovedporten.",
+          "fi": "Saavuin pääportille aikaisin."
+        },
+        "proposed_sentence": "私は早く正門に着いた。",
+        "proposed_translations": {
+          "en": "I arrived at the main gate early.",
+          "es": "Llegué temprano a la puerta principal.",
+          "fr": "Je suis arrivé tôt au portail principal.",
+          "de": "Ich kam früh am Haupttor an.",
+          "it": "Sono arrivato presto al cancello principale.",
+          "ko": "정문에 일찍 도착했어.",
+          "zh-Hans": "我早早就到了正门。",
+          "yue": "早早嚟到正門",
+          "ru": "Я пришёл к главным воротам пораньше.",
+          "pt": "Cheguei cedo ao portão principal.",
+          "he": "הגעתי לשער הראשי מוקדם.",
+          "tr": "Ana kapıya erken vardım.",
+          "vi": "Tôi đến cổng chính sớm.",
+          "ar": "وصلت إلى البوابة الرئيسية مبكرا.",
+          "nl": "Ik kwam vroeg bij de hoofdingang aan.",
+          "uk": "Я прийшов до головних воріт раніше.",
+          "hu": "Korán érkeztem meg a főkapuhoz.",
+          "hi": "मैं मुख्य द्वार पर जल्दी पहुंच गया।",
+          "pl": "Przyszedłem do głównej bramy wcześniej.",
+          "el": "Έφτασα νωρίς στην κεντρική πύλη.",
+          "nb": "Jeg ankom hovedporten tidlig.",
+          "id": "Saya tiba di gerbang utama lebih awal.",
+          "sv": "Jag kom fram till huvudingången tidigt.",
+          "ro": "Am ajuns devreme la poarta principală.",
+          "cs": "K hlavní bráně jsem dorazil brzy.",
+          "da": "Jeg ankom tidligt til hovedporten.",
+          "fi": "Saavuin pääportille aikaisin."
+        },
+        "old_ruby_source": "私[わたし]は早[はや]く正門[せいもん]に着[つ]いた。",
+        "proposed_ruby_source": "私[わたくし]は早[はや]く正門[せいもん]に着[つ]いた。",
+        "old_japanese": "私は早く正門に着いた。",
+        "old_english": "I arrived at the main gate early.",
+        "proposed_japanese": "私は早く正門に着いた。",
+        "proposed_english": "I arrived at the main gate early.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "ja",
+          "sentence": "私は早く正門に着いた。",
+          "tokens": [
+            {
+              "surface": "私",
+              "lemma": "私",
+              "pos": "代名詞/*/*/*/*/*",
+              "upos": "PRON",
+              "xpos": "代名詞",
+              "feats": {},
+              "start": 0,
+              "end": 1,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "わたくし",
+              "ruby_text": "私[わたくし]",
+              "ruby_spans": [
+                {
+                  "base": "私",
+                  "reading": "わたくし",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "わたくし",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "は",
+              "lemma": "は",
+              "pos": "助詞/係助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 1,
+              "end": 2,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "は",
+              "ruby_text": "は",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "は"
+            },
+            {
+              "surface": "早く",
+              "lemma": "早い",
+              "pos": "形容詞/一般/*/*/形容詞/連用形-一般",
+              "upos": "ADJ",
+              "xpos": "形容詞",
+              "feats": {},
+              "start": 2,
+              "end": 4,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "はやく",
+              "ruby_text": "早[はや]く",
+              "ruby_spans": [
+                {
+                  "base": "早",
+                  "reading": "はや",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "はやく",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "正門",
+              "lemma": "正門",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 4,
+              "end": 6,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "せいもん",
+              "ruby_text": "正門[せいもん]",
+              "ruby_spans": [
+                {
+                  "base": "正門",
+                  "reading": "せいもん",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "せいもん",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "に",
+              "lemma": "に",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 6,
+              "end": 7,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "に",
+              "ruby_text": "に",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "に"
+            },
+            {
+              "surface": "着い",
+              "lemma": "着く",
+              "pos": "動詞/一般/*/*/五段-カ行/連用形-イ音便",
+              "upos": "VERB",
+              "xpos": "動詞",
+              "feats": {},
+              "start": 7,
+              "end": 9,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "つい",
+              "ruby_text": "着[つ]い",
+              "ruby_spans": [
+                {
+                  "base": "着",
+                  "reading": "つ",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "つい",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "た",
+              "lemma": "た",
+              "pos": "助動詞/*/*/*/助動詞-タ/終止形-一般",
+              "upos": "AUX",
+              "xpos": "助動詞",
+              "feats": {},
+              "start": 9,
+              "end": 10,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "た",
+              "ruby_text": "た",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "た"
+            },
+            {
+              "surface": "。",
+              "lemma": "。",
+              "pos": "補助記号/句点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 10,
+              "end": 11,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "。",
+              "ruby_text": "。",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "。"
+            }
+          ],
+          "reading": "わたくしははやくせいもんについた。",
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "warnings": [
+            "mediawiki ruby hints applied"
+          ]
+        },
+        "generated_tokens": [
+          {
+            "surface": "私",
+            "lemma": "私",
+            "pos": "代名詞/*/*/*/*/*",
+            "upos": "PRON",
+            "xpos": "代名詞",
+            "feats": {},
+            "start": 0,
+            "end": 1,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "わたくし",
+            "ruby_text": "私[わたくし]",
+            "ruby_spans": [
+              {
+                "base": "私",
+                "reading": "わたくし",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "わたくし",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "は",
+            "lemma": "は",
+            "pos": "助詞/係助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 1,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "は",
+            "ruby_text": "は",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "は"
+          },
+          {
+            "surface": "早く",
+            "lemma": "早い",
+            "pos": "形容詞/一般/*/*/形容詞/連用形-一般",
+            "upos": "ADJ",
+            "xpos": "形容詞",
+            "feats": {},
+            "start": 2,
+            "end": 4,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "はやく",
+            "ruby_text": "早[はや]く",
+            "ruby_spans": [
+              {
+                "base": "早",
+                "reading": "はや",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "はやく",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "正門",
+            "lemma": "正門",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 4,
+            "end": 6,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "せいもん",
+            "ruby_text": "正門[せいもん]",
+            "ruby_spans": [
+              {
+                "base": "正門",
+                "reading": "せいもん",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "せいもん",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "に",
+            "lemma": "に",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 6,
+            "end": 7,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "に",
+            "ruby_text": "に",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "に"
+          },
+          {
+            "surface": "着い",
+            "lemma": "着く",
+            "pos": "動詞/一般/*/*/五段-カ行/連用形-イ音便",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 7,
+            "end": 9,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "つい",
+            "ruby_text": "着[つ]い",
+            "ruby_spans": [
+              {
+                "base": "着",
+                "reading": "つ",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "つい",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "た",
+            "lemma": "た",
+            "pos": "助動詞/*/*/*/助動詞-タ/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 9,
+            "end": 10,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "た",
+            "ruby_text": "た",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "た"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 10,
+            "end": 11,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
+          }
+        ],
+        "generated_reading": "わたくしははやくせいもんについた。",
+        "analyzer": "sudachipy_sudachidict_core_c",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:37:41Z",
+        "updated_utc": "2026-10-17T07:38:17Z",
+        "applied_utc": "2026-10-17T07:38:17Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:38:17Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -635,12 +1116,14 @@
         "tokens": [
           {
             "surface": "私",
-            "surface_en": "I",
-            "furigana": "わたくし",
-            "pos": "noun (pronoun)",
             "lemma": "私",
-            "explanation": "The speaker, acting as the topic of the sentence.",
-            "difficulty": 6,
+            "pos": "代名詞/*/*/*/*/*",
+            "upos": "PRON",
+            "xpos": "代名詞",
+            "feats": {},
+            "start": 0,
+            "end": 1,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "わたくし",
             "ruby_text": "私[わたくし]",
             "ruby_spans": [
@@ -651,31 +1134,36 @@
                 "length": 1
               }
             ],
-            "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "ruby_confidence": "reviewed",
+            "furigana": "わたくし",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "は",
-            "surface_en": "topic particle",
-            "furigana": "は",
-            "pos": "particle",
             "lemma": "は",
-            "explanation": "Marks '私' as the topic of the sentence.",
-            "difficulty": 1,
+            "pos": "助詞/係助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 1,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "は",
             "ruby_text": "は",
             "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "は"
           },
           {
             "surface": "早く",
-            "surface_en": "quickly",
-            "furigana": "はやく",
-            "pos": "adverb",
-            "lemma": "早く",
-            "explanation": "Indicates the speed at which the action '着いた' occurs.",
-            "difficulty": 6,
+            "lemma": "早い",
+            "pos": "形容詞/一般/*/*/形容詞/連用形-一般",
+            "upos": "ADJ",
+            "xpos": "形容詞",
+            "feats": {},
+            "start": 2,
+            "end": 4,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "はやく",
             "ruby_text": "早[はや]く",
             "ruby_spans": [
@@ -686,18 +1174,20 @@
                 "length": 1
               }
             ],
-            "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "ruby_confidence": "reviewed",
+            "furigana": "はやく",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "正門",
-            "surface_en": "main gate",
-            "furigana": "せいもん",
-            "pos": "noun",
             "lemma": "正門",
-            "explanation": "The location where the action '着いた' happens.",
-            "difficulty": 1,
-            "is_main_word": true,
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 4,
+            "end": 6,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "せいもん",
             "ruby_text": "正門[せいもん]",
             "ruby_spans": [
@@ -708,33 +1198,39 @@
                 "length": 2
               }
             ],
-            "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "ruby_confidence": "reviewed",
+            "furigana": "せいもん",
+            "ruby_source": "mediawiki_sentence_ruby",
+            "is_main_word": true
           },
           {
             "surface": "に",
-            "surface_en": "to",
-            "furigana": "に",
-            "pos": "particle",
             "lemma": "に",
-            "explanation": "Marks '正門' as the destination of the movement '着いた'.",
-            "difficulty": 1,
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 6,
+            "end": 7,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "に",
             "ruby_text": "に",
             "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "に"
           },
           {
-            "surface": "着いた",
-            "surface_en": "arrived",
-            "furigana": "ついた",
-            "pos": "verb (past tense)",
+            "surface": "着い",
             "lemma": "着く",
-            "explanation": "Expresses the action of arriving at the main gate.",
-            "difficulty": 12,
-            "reading_kana": "ついた",
-            "ruby_text": "着[つ]いた",
+            "pos": "動詞/一般/*/*/五段-カ行/連用形-イ音便",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 7,
+            "end": 9,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "つい",
+            "ruby_text": "着[つ]い",
             "ruby_spans": [
               {
                 "base": "着",
@@ -743,8 +1239,41 @@
                 "length": 1
               }
             ],
+            "ruby_confidence": "reviewed",
+            "furigana": "つい",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "た",
+            "lemma": "た",
+            "pos": "助動詞/*/*/*/助動詞-タ/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 9,
+            "end": 10,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "た",
+            "ruby_text": "た",
+            "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "た"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 10,
+            "end": 11,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
           }
         ],
         "difficulty_aggregated": 4.5
@@ -1041,12 +1570,12 @@
     "entry_id": "正門",
     "word_en": "main gate",
     "word_es": "Puerta principal",
-    "word_fr": "Porte principale",
+    "word_fr": "portail principal",
     "word_de": "Haupttor",
     "word_it": "Porta principale",
     "word_ko": "정문",
-    "word_zh-Hans": "主门",
-    "word_yue": "大門",
+    "word_zh-Hans": "正门",
+    "word_yue": "正門",
     "word_ru": "Главные ворота",
     "word_pt": "Portão principal",
     "word_he": "השער הראשי",
@@ -1074,7 +1603,7 @@
     ],
     "cs": [
       "K hlavní bráně jsem dorazil brzy.",
-      "Bezpečnostní stráž otevřel hlavní bránu.",
+      "Strážný otevřel hlavní bránu.",
       "Hlavní brána je zdobena květinami.",
       "Tato hlavní brána je velmi těžká."
     ],
@@ -1115,10 +1644,10 @@
       "Tämä pääportti on todella painava."
     ],
     "fr": [
-      "Je suis arrivé tôt à la porte principale.",
-      "Le garde de sécurité a ouvert la porte principale.",
-      "La porte principale est décorée de fleurs.",
-      "Cette porte principale est très lourde."
+      "Je suis arrivé tôt au portail principal.",
+      "Le garde de sécurité a ouvert le portail principal.",
+      "Le portail principal est décoré de fleurs.",
+      "Ce portail principal est très lourd."
     ],
     "he": [
       "הגעתי לשער הראשי מוקדם.",
@@ -1135,7 +1664,7 @@
     "hu": [
       "Korán érkeztem meg a főkapuhoz.",
       "A biztonsági őr kinyitotta a főkaput.",
-      "A főkaput virágokkal díszítik.",
+      "A főkapu virágokkal van feldíszítve.",
       "Ez a főkapu nagyon nehéz."
     ],
     "id": [
@@ -1218,15 +1747,15 @@
     ],
     "yue": [
       "早早嚟到正門",
-      "保安打開大門。",
+      "保安打開正門。",
       "正門擺滿鮮花",
-      "呢個大門好重"
+      "呢道正門好重。"
     ],
     "zh-Hans": [
-      "我提前到了主门口。",
-      "保安打开了主门。",
-      "主门装饰着鲜花。",
-      "这个主门很重。"
+      "我早早就到了正门。",
+      "保安打开了正门。",
+      "正门装饰着鲜花。",
+      "这个正门很重。"
     ]
   }
 }

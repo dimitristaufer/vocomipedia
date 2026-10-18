@@ -239,10 +239,10 @@
       "difficulty": 6.43
     },
     {
-      "target": "Die Bedeutung vom Wort ist unklar.",
+      "target": "Die Bedeutung des Wortes ist unklar.",
       "reading": "/diː bəˈdɔɪ̯tʊŋ fɔm vɔʁt ɪst ˈʊnklaːɐ̯/",
       "translations": {
-        "de": "Die Bedeutung vom Wort ist unklar.",
+        "de": "Die Bedeutung des Wortes ist unklar.",
         "ipa": "/diː bəˈdɔɪ̯tʊŋ fɔm vɔʁt ɪst ˈʊnklaːɐ̯/",
         "en": "The meaning of the word is unclear.",
         "es": "El significado de la palabra no está claro.",
@@ -256,7 +256,7 @@
         "he": "המשמעות של המילה לא ברורה.",
         "tr": "Kelimenin anlamı belirsiz.",
         "vi": "Ý nghĩa của từ này không rõ ràng.",
-        "ar": "معنى הקلمة غير واضح.",
+        "ar": "معنى الكلمة غير واضح.",
         "nl": "De betekenis van het woord is onduidelijk.",
         "uk": "Значення цього слова незрозуміле.",
         "hu": "A szó jelentése nem egyértelmű.",
@@ -275,58 +275,81 @@
       "tokens": [
         {
           "surface": "Die",
-          "surface_en": "the",
-          "furigana": "[diː]",
-          "pos": "DET",
           "lemma": "der",
-          "explanation": "Definite article, feminine singular nominative; determiner of the subject 'Bedeutung'.",
-          "difficulty": 2
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "ART",
+          "feats": {},
+          "start": 0,
+          "end": 3,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "Bedeutung",
-          "surface_en": "meaning",
-          "furigana": "[bəˈdɔʏtʊŋ]",
-          "pos": "NOUN",
           "lemma": "Bedeutung",
-          "explanation": "Common noun, feminine singular nominative; grammatical subject.",
-          "difficulty": 10,
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 4,
+          "end": 13,
+          "analyzer": "spacy_de_core_news_lg",
           "is_main_word": true
         },
         {
-          "surface": "vom",
-          "surface_en": "of the",
-          "furigana": "[fɔm]",
-          "pos": "ADP",
-          "lemma": "von",
-          "explanation": "Preposition (contraction of 'von dem') governing the dative; introduces a noun phrase expressing 'of/from'.",
-          "difficulty": 2
+          "surface": "des",
+          "lemma": "der",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "ART",
+          "feats": {},
+          "start": 14,
+          "end": 17,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "Wort",
-          "surface_en": "word",
-          "furigana": "[vɔʁt]",
-          "pos": "NOUN",
+          "surface": "Wortes",
           "lemma": "Wort",
-          "explanation": "Common noun, neuter singular dative; object of the preposition 'vom'.",
-          "difficulty": 7
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 18,
+          "end": 24,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "ist",
-          "surface_en": "is",
-          "furigana": "[ɪst]",
-          "pos": "AUX",
           "lemma": "sein",
-          "explanation": "Copular auxiliary, 3rd person singular present; links the subject to the predicate adjective.",
-          "difficulty": 4
+          "pos": "AUX",
+          "upos": "AUX",
+          "xpos": "VAFIN",
+          "feats": {},
+          "start": 25,
+          "end": 28,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "unklar.",
-          "surface_en": "unclear",
-          "furigana": "[ʊnˈklaːʁ]",
-          "pos": "ADJ",
+          "surface": "unklar",
           "lemma": "unklar",
-          "explanation": "Predicative adjective functioning as subject complement with 'ist'.",
-          "difficulty": 7
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "ADJD",
+          "feats": {},
+          "start": 29,
+          "end": 35,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 35,
+          "end": 36,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 5.33
@@ -436,8 +459,292 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-14T21:52:35Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:De b1/5324e4d120773002",
+      "revision_id": 86216,
+      "parent_revision_id": 15342,
+      "revision_timestamp_utc": "2026-10-14T21:52:35Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Standardize one German phrase and correct a mixed-script Arabic typo.",
+      "pulled_utc": "2026-10-17T07:06:38Z",
+      "applied_utc": "2026-10-17T07:06:48Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-637e15591f1f2efb",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_b1:5324e4d120773002",
+        "pack_code": "de_b1",
+        "entry_id": "Bedeutung",
+        "language": "de",
+        "sentence_index": 3,
+        "old_sentence": "Die Bedeutung vom Wort ist unklar.",
+        "old_translations": {
+          "de": "Die Bedeutung vom Wort ist unklar.",
+          "ipa": "/diː bəˈdɔɪ̯tʊŋ fɔm vɔʁt ɪst ˈʊnklaːɐ̯/",
+          "en": "The meaning of the word is unclear.",
+          "es": "El significado de la palabra no está claro.",
+          "fr": "Le sens du mot n'est pas clair.",
+          "it": "Il significato della parola non è chiaro.",
+          "ko": "그 단어의 의미가 불분명해요.",
+          "zh-Hans": "这个词的意思不清楚。",
+          "yue": "呢個詞嘅意思唔清楚。",
+          "ru": "Значение этого слова неясно.",
+          "pt": "O significado da palavra não está claro.",
+          "he": "המשמעות של המילה לא ברורה.",
+          "tr": "Kelimenin anlamı belirsiz.",
+          "vi": "Ý nghĩa của từ này không rõ ràng.",
+          "ar": "معنى הקلمة غير واضح.",
+          "nl": "De betekenis van het woord is onduidelijk.",
+          "uk": "Значення цього слова незрозуміле.",
+          "hu": "A szó jelentése nem egyértelmű.",
+          "hi": "उस शब्द का अर्थ स्पष्ट नहीं है.",
+          "pl": "Znaczenie tego słowa jest niejasne.",
+          "el": "Η σημασία της λέξης δεν είναι ξεκάθαρη.",
+          "nb": "Betydningen av ordet er uklar.",
+          "id": "Arti kata itu tidak jelas.",
+          "sv": "Betydelsen av ordet är oklar.",
+          "ro": "Sensul cuvântului nu este clar.",
+          "cs": "Význam toho slova není jasný.",
+          "da": "Betydningen af ordet er uklar.",
+          "fi": "Sanan merkitys on epäselvä.",
+          "ja": "その単語の意味ははっきりしません。"
+        },
+        "proposed_sentence": "Die Bedeutung des Wortes ist unklar.",
+        "proposed_translations": {
+          "de": "Die Bedeutung des Wortes ist unklar.",
+          "ipa": "/diː bəˈdɔɪ̯tʊŋ fɔm vɔʁt ɪst ˈʊnklaːɐ̯/",
+          "en": "The meaning of the word is unclear.",
+          "es": "El significado de la palabra no está claro.",
+          "fr": "Le sens du mot n'est pas clair.",
+          "it": "Il significato della parola non è chiaro.",
+          "ko": "그 단어의 의미가 불분명해요.",
+          "zh-Hans": "这个词的意思不清楚。",
+          "yue": "呢個詞嘅意思唔清楚。",
+          "ru": "Значение этого слова неясно.",
+          "pt": "O significado da palavra não está claro.",
+          "he": "המשמעות של המילה לא ברורה.",
+          "tr": "Kelimenin anlamı belirsiz.",
+          "vi": "Ý nghĩa của từ này không rõ ràng.",
+          "ar": "معنى الكلمة غير واضح.",
+          "nl": "De betekenis van het woord is onduidelijk.",
+          "uk": "Значення цього слова незрозуміле.",
+          "hu": "A szó jelentése nem egyértelmű.",
+          "hi": "उस शब्द का अर्थ स्पष्ट नहीं है.",
+          "pl": "Znaczenie tego słowa jest niejasne.",
+          "el": "Η σημασία της λέξης δεν είναι ξεκάθαρη.",
+          "nb": "Betydningen av ordet er uklar.",
+          "id": "Arti kata itu tidak jelas.",
+          "sv": "Betydelsen av ordet är oklar.",
+          "ro": "Sensul cuvântului nu este clar.",
+          "cs": "Význam toho slova není jasný.",
+          "da": "Betydningen af ordet er uklar.",
+          "fi": "Sanan merkitys on epäselvä.",
+          "ja": "その単語の意味ははっきりしません。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Die Bedeutung des Wortes ist unklar.",
+        "old_japanese": "Die Bedeutung vom Wort ist unklar.",
+        "old_english": "The meaning of the word is unclear.",
+        "proposed_japanese": "Die Bedeutung des Wortes ist unklar.",
+        "proposed_english": "The meaning of the word is unclear.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Die Bedeutung des Wortes ist unklar.",
+          "tokens": [
+            {
+              "surface": "Die",
+              "lemma": "der",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "ART",
+              "feats": {},
+              "start": 0,
+              "end": 3,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Bedeutung",
+              "lemma": "Bedeutung",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 4,
+              "end": 13,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "des",
+              "lemma": "der",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "ART",
+              "feats": {},
+              "start": 14,
+              "end": 17,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Wortes",
+              "lemma": "Wort",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 18,
+              "end": 24,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "ist",
+              "lemma": "sein",
+              "pos": "AUX",
+              "upos": "AUX",
+              "xpos": "VAFIN",
+              "feats": {},
+              "start": 25,
+              "end": 28,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "unklar",
+              "lemma": "unklar",
+              "pos": "ADV",
+              "upos": "ADV",
+              "xpos": "ADJD",
+              "feats": {},
+              "start": 29,
+              "end": 35,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 35,
+              "end": 36,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Die",
+            "lemma": "der",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Bedeutung",
+            "lemma": "Bedeutung",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 4,
+            "end": 13,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "des",
+            "lemma": "der",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 14,
+            "end": 17,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Wortes",
+            "lemma": "Wort",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 18,
+            "end": 24,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "ist",
+            "lemma": "sein",
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "VAFIN",
+            "feats": {},
+            "start": 25,
+            "end": 28,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "unklar",
+            "lemma": "unklar",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADJD",
+            "feats": {},
+            "start": 29,
+            "end": 35,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 35,
+            "end": 36,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:06:38Z",
+        "updated_utc": "2026-10-17T07:07:05Z",
+        "applied_utc": "2026-10-17T07:07:05Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:07:05Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -449,34 +756,6 @@
     "word": "Bedeutung",
     "word_reading": "",
     "word_label": "Substantiv (die fem.)",
-    "word_en": "meaning; importance",
-    "word_es": "significado; importancia",
-    "word_fr": "sens; importance",
-    "word_it": "significato; importanza",
-    "word_ko": "의미; 중요성",
-    "word_zh-Hans": "意义; 重要性",
-    "word_yue": "意思; 重要性",
-    "word_ru": "значение; важность",
-    "word_pt": "significado; importância",
-    "word_he": "משמעות; חשיבות",
-    "word_tr": "anlam; önem",
-    "word_vi": "ý nghĩa; tầm quan trọng",
-    "word_ar": "معنى; أهمية",
-    "word_nl": "betekenis; belang",
-    "word_uk": "значення; важливість",
-    "word_hu": "jelentés; fontosság",
-    "word_hi": "अर्थ; महत्व",
-    "word_pl": "znaczenie",
-    "word_el": "νόημα; σημασία",
-    "word_nb": "betydning; viktighet",
-    "word_id": "makna; kepentingan",
-    "word_sv": "betydelse; vikt",
-    "word_ro": "semnificație; importanță",
-    "word_cs": "význam; důležitost",
-    "word_da": "betydning; vigtighed",
-    "word_fi": "merkitys; tärkeys",
-    "word_ja": "意味; 重要性",
-    "word_de": "Bedeutung",
     "comic_difficulty": 5.19,
     "jp": [
       "Das hat für mich große Bedeutung.",
@@ -489,24 +768,6 @@
       "/ɪç ˈkɛnə diː bəˈdɔɪ̯tʊŋ ˈdiːzəs ˈtsaɪ̯çəns nɪçt/",
       "/diː bəˈdɔɪ̯tʊŋ fɔm vɔʁt ɪst ˈʊnklaːɐ̯/",
       "/fyːɐ̯ ziː hat das ˈkaɪ̯nə bəˈdɔɪ̯tʊŋ/"
-    ],
-    "de": [
-      "Das hat für mich große Bedeutung.",
-      "Ich kenne die Bedeutung dieses Zeichens nicht.",
-      "Die Bedeutung vom Wort ist unklar.",
-      "Für sie hat das keine Bedeutung."
-    ],
-    "ipa": [
-      "/das hat fyːɐ̯ mɪç ˈɡʁoːsə bəˈdɔɪ̯tʊŋ/",
-      "/ɪç ˈkɛnə diː bəˈdɔɪ̯tʊŋ ˈdiːzəs ˈtsaɪ̯çəns nɪçt/",
-      "/diː bəˈdɔɪ̯tʊŋ fɔm vɔʁt ɪst ˈʊnklaːɐ̯/",
-      "/fyːɐ̯ ziː hat das ˈkaɪ̯nə bəˈdɔɪ̯tʊŋ/"
-    ],
-    "en": [
-      "That means a lot to me.",
-      "I don't know the meaning of this symbol.",
-      "The meaning of the word is unclear.",
-      "It doesn't mean anything to her."
     ],
     "pos_analysis": [
       {
@@ -641,62 +902,85 @@
         "difficulty_aggregated": 6.43
       },
       {
-        "sentence": "Die Bedeutung vom Wort ist unklar.",
+        "sentence": "Die Bedeutung des Wortes ist unklar.",
         "tokens": [
           {
             "surface": "Die",
-            "surface_en": "the",
-            "furigana": "[diː]",
-            "pos": "DET",
             "lemma": "der",
-            "explanation": "Definite article, feminine singular nominative; determiner of the subject 'Bedeutung'.",
-            "difficulty": 2
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "Bedeutung",
-            "surface_en": "meaning",
-            "furigana": "[bəˈdɔʏtʊŋ]",
-            "pos": "NOUN",
             "lemma": "Bedeutung",
-            "explanation": "Common noun, feminine singular nominative; grammatical subject.",
-            "difficulty": 10,
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 4,
+            "end": 13,
+            "analyzer": "spacy_de_core_news_lg",
             "is_main_word": true
           },
           {
-            "surface": "vom",
-            "surface_en": "of the",
-            "furigana": "[fɔm]",
-            "pos": "ADP",
-            "lemma": "von",
-            "explanation": "Preposition (contraction of 'von dem') governing the dative; introduces a noun phrase expressing 'of/from'.",
-            "difficulty": 2
+            "surface": "des",
+            "lemma": "der",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 14,
+            "end": 17,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "Wort",
-            "surface_en": "word",
-            "furigana": "[vɔʁt]",
-            "pos": "NOUN",
+            "surface": "Wortes",
             "lemma": "Wort",
-            "explanation": "Common noun, neuter singular dative; object of the preposition 'vom'.",
-            "difficulty": 7
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 18,
+            "end": 24,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "ist",
-            "surface_en": "is",
-            "furigana": "[ɪst]",
-            "pos": "AUX",
             "lemma": "sein",
-            "explanation": "Copular auxiliary, 3rd person singular present; links the subject to the predicate adjective.",
-            "difficulty": 4
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "VAFIN",
+            "feats": {},
+            "start": 25,
+            "end": 28,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "unklar.",
-            "surface_en": "unclear",
-            "furigana": "[ʊnˈklaːʁ]",
-            "pos": "ADJ",
+            "surface": "unklar",
             "lemma": "unklar",
-            "explanation": "Predicative adjective functioning as subject complement with 'ist'.",
-            "difficulty": 7
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADJD",
+            "feats": {},
+            "start": 29,
+            "end": 35,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 35,
+            "end": 36,
+            "analyzer": "spacy_de_core_news_lg"
           }
         ],
         "difficulty_aggregated": 5.33
@@ -763,137 +1047,41 @@
         "difficulty_aggregated": 3.67
       }
     ],
-    "es": [
-      "Eso significa mucho para mí.",
-      "No conozco el significado de este símbolo.",
-      "El significado de la palabra no está claro.",
-      "Eso no significa nada para ella."
-    ],
-    "fr": [
-      "Ça compte beaucoup pour moi.",
-      "Je ne connais pas la signification de ce symbole.",
-      "Le sens du mot n'est pas clair.",
-      "Pour elle, ça ne veut rien dire."
-    ],
-    "it": [
-      "Per me vuol dire molto.",
-      "Non conosco il significato di questo simbolo.",
-      "Il significato della parola non è chiaro.",
-      "Per lei non vuol dire nulla."
-    ],
-    "ko": [
-      "그건 나에게 큰 의미가 있어요.",
-      "이 기호의 의미를 모르겠어요.",
-      "그 단어의 의미가 불분명해요.",
-      "그녀에게는 아무 의미도 없어요."
-    ],
-    "zh-Hans": [
-      "这对我来说很重要。",
-      "我不知道这个符号的意思。",
-      "这个词的意思不清楚。",
-      "对她来说这没什么意义。"
-    ],
-    "yue": [
-      "對我嚟講好重要。",
-      "我唔知呢個符號嘅意思。",
-      "呢個詞嘅意思唔清楚。",
-      "對佢嚟講冇乜意思。"
-    ],
-    "ru": [
-      "Это очень важно для меня.",
-      "Я не знаю, что означает этот символ.",
-      "Значение этого слова неясно.",
-      "Для неё это ничего не значит."
-    ],
-    "pt": [
-      "Isso significa muito para mim.",
-      "Eu não sei o significado deste símbolo.",
-      "O significado da palavra não está claro.",
-      "Isso não significa nada para ela."
-    ],
-    "he": [
-      "זה חשוב לי מאוד.",
-      "אני לא יודע מה המשמעות של הסמל הזה.",
-      "המשמעות של המילה לא ברורה.",
-      "זה לא אומר לה כלום."
-    ],
-    "tr": [
-      "Bu benim için çok şey ifade ediyor.",
-      "Bu sembolün ne anlama geldiğini bilmiyorum.",
-      "Kelimenin anlamı belirsiz.",
-      "Bu onun için hiçbir şey ifade etmiyor."
-    ],
-    "vi": [
-      "Điều đó có ý nghĩa rất lớn đối với tôi.",
-      "Tôi không biết ý nghĩa của ký hiệu này.",
-      "Ý nghĩa của từ này không rõ ràng.",
-      "Điều đó không có ý nghĩa gì với cô ấy."
-    ],
+    "word_POS": "Noun",
+    "entry_id": "Bedeutung",
+    "word_en": "meaning; importance",
+    "word_es": "significado; importancia",
+    "word_fr": "sens; importance",
+    "word_it": "significato; importanza",
+    "word_ko": "의미; 중요성",
+    "word_zh-Hans": "意义; 重要性",
+    "word_yue": "意思; 重要性",
+    "word_ru": "значение; важность",
+    "word_pt": "significado; importância",
+    "word_he": "משמעות; חשיבות",
+    "word_tr": "anlam; önem",
+    "word_vi": "ý nghĩa; tầm quan trọng",
+    "word_ar": "معنى; أهمية",
+    "word_nl": "betekenis; belang",
+    "word_uk": "значення; важливість",
+    "word_hu": "jelentés; fontosság",
+    "word_hi": "अर्थ; महत्व",
+    "word_pl": "znaczenie",
+    "word_el": "νόημα; σημασία",
+    "word_nb": "betydning; viktighet",
+    "word_id": "makna; kepentingan",
+    "word_sv": "betydelse; vikt",
+    "word_ro": "semnificație; importanță",
+    "word_cs": "význam; důležitost",
+    "word_da": "betydning; vigtighed",
+    "word_fi": "merkitys; tärkeys",
+    "word_ja": "意味; 重要性",
+    "word_de": "Bedeutung",
     "ar": [
       "هذا يعني لي الكثير.",
       "لا أعرف معنى هذا الرمز.",
       "معنى הקلمة غير واضح.",
       "هذا لا يعني لها شيئًا."
-    ],
-    "nl": [
-      "Dat betekent veel voor mij.",
-      "Ik weet niet wat dit symbool betekent.",
-      "De betekenis van het woord is onduidelijk.",
-      "Dat betekent niets voor haar."
-    ],
-    "uk": [
-      "Це дуже важливо для мене.",
-      "Я не знаю значення цього символу.",
-      "Значення цього слова незрозуміле.",
-      "Для неї це нічого не означає."
-    ],
-    "hu": [
-      "Ez nagyon sokat jelent nekem.",
-      "Nem tudom, mit jelent ez a szimbólum.",
-      "A szó jelentése nem egyértelmű.",
-      "Ez neki semmit sem jelent."
-    ],
-    "hi": [
-      "यह मेरे लिए बहुत मायने रखता है.",
-      "मुझे इस निशान का मतलब नहीं पता.",
-      "उस शब्द का अर्थ स्पष्ट नहीं है.",
-      "उसके लिए इसका कोई मतलब नहीं है."
-    ],
-    "pl": [
-      "To wiele dla mnie znaczy.",
-      "Nie wiem, co oznacza ten symbol.",
-      "Znaczenie tego słowa jest niejasne.",
-      "Dla niej to nic nie znaczy."
-    ],
-    "el": [
-      "Αυτό σημαίνει πολλά για μένα.",
-      "Δεν ξέρω τι σημαίνει αυτό το σύμβολο.",
-      "Η σημασία της λέξης δεν είναι ξεκάθαρη.",
-      "Για εκείνη αυτό δεν σημαίνει τίποτα."
-    ],
-    "nb": [
-      "Det betyr mye for meg.",
-      "Jeg vet ikke hva dette symbolet betyr.",
-      "Betydningen av ordet er uklar.",
-      "Det betyr ingenting for henne."
-    ],
-    "id": [
-      "Itu sangat berarti bagi saya.",
-      "Saya tidak tahu arti simbol ini.",
-      "Arti kata itu tidak jelas.",
-      "Itu tidak berarti apa-apa baginya."
-    ],
-    "sv": [
-      "Det betyder mycket för mig.",
-      "Jag vet inte vad den här symbolen betyder.",
-      "Betydelsen av ordet är oklar.",
-      "Det betyder ingenting för henne."
-    ],
-    "ro": [
-      "Asta înseamnă foarte mult pentru mine.",
-      "Nu știu ce înseamnă acest simbol.",
-      "Sensul cuvântului nu este clar.",
-      "Pentru ea nu înseamnă nimic."
     ],
     "cs": [
       "To pro mě hodně znamená.",
@@ -907,11 +1095,77 @@
       "Betydningen af ordet er uklar.",
       "Det betyder ikke noget for hende."
     ],
+    "de": [
+      "Das hat für mich große Bedeutung.",
+      "Ich kenne die Bedeutung dieses Zeichens nicht.",
+      "Die Bedeutung vom Wort ist unklar.",
+      "Für sie hat das keine Bedeutung."
+    ],
+    "el": [
+      "Αυτό σημαίνει πολλά για μένα.",
+      "Δεν ξέρω τι σημαίνει αυτό το σύμβολο.",
+      "Η σημασία της λέξης δεν είναι ξεκάθαρη.",
+      "Για εκείνη αυτό δεν σημαίνει τίποτα."
+    ],
+    "en": [
+      "That means a lot to me.",
+      "I don't know the meaning of this symbol.",
+      "The meaning of the word is unclear.",
+      "It doesn't mean anything to her."
+    ],
+    "es": [
+      "Eso significa mucho para mí.",
+      "No conozco el significado de este símbolo.",
+      "El significado de la palabra no está claro.",
+      "Eso no significa nada para ella."
+    ],
     "fi": [
       "Se merkitsee minulle paljon.",
       "En tiedä, mitä tämä symboli tarkoittaa.",
       "Sanan merkitys on epäselvä.",
       "Se ei merkitse hänelle mitään."
+    ],
+    "fr": [
+      "Ça compte beaucoup pour moi.",
+      "Je ne connais pas la signification de ce symbole.",
+      "Le sens du mot n'est pas clair.",
+      "Pour elle, ça ne veut rien dire."
+    ],
+    "he": [
+      "זה חשוב לי מאוד.",
+      "אני לא יודע מה המשמעות של הסמל הזה.",
+      "המשמעות של המילה לא ברורה.",
+      "זה לא אומר לה כלום."
+    ],
+    "hi": [
+      "यह मेरे लिए बहुत मायने रखता है.",
+      "मुझे इस निशान का मतलब नहीं पता.",
+      "उस शब्द का अर्थ स्पष्ट नहीं है.",
+      "उसके लिए इसका कोई मतलब नहीं है."
+    ],
+    "hu": [
+      "Ez nagyon sokat jelent nekem.",
+      "Nem tudom, mit jelent ez a szimbólum.",
+      "A szó jelentése nem egyértelmű.",
+      "Ez neki semmit sem jelent."
+    ],
+    "id": [
+      "Itu sangat berarti bagi saya.",
+      "Saya tidak tahu arti simbol ini.",
+      "Arti kata itu tidak jelas.",
+      "Itu tidak berarti apa-apa baginya."
+    ],
+    "ipa": [
+      "/das hat fyːɐ̯ mɪç ˈɡʁoːsə bəˈdɔɪ̯tʊŋ/",
+      "/ɪç ˈkɛnə diː bəˈdɔɪ̯tʊŋ ˈdiːzəs ˈtsaɪ̯çəns nɪçt/",
+      "/diː bəˈdɔɪ̯tʊŋ fɔm vɔʁt ɪst ˈʊnklaːɐ̯/",
+      "/fyːɐ̯ ziː hat das ˈkaɪ̯nə bəˈdɔɪ̯tʊŋ/"
+    ],
+    "it": [
+      "Per me vuol dire molto.",
+      "Non conosco il significato di questo simbolo.",
+      "Il significato della parola non è chiaro.",
+      "Per lei non vuol dire nulla."
     ],
     "ja": [
       "私にとってとても大切です。",
@@ -919,6 +1173,83 @@
       "その単語の意味ははっきりしません。",
       "彼女にとっては何の意味もありません。"
     ],
-    "word_POS": "Noun"
+    "ko": [
+      "그건 나에게 큰 의미가 있어요.",
+      "이 기호의 의미를 모르겠어요.",
+      "그 단어의 의미가 불분명해요.",
+      "그녀에게는 아무 의미도 없어요."
+    ],
+    "nb": [
+      "Det betyr mye for meg.",
+      "Jeg vet ikke hva dette symbolet betyr.",
+      "Betydningen av ordet er uklar.",
+      "Det betyr ingenting for henne."
+    ],
+    "nl": [
+      "Dat betekent veel voor mij.",
+      "Ik weet niet wat dit symbool betekent.",
+      "De betekenis van het woord is onduidelijk.",
+      "Dat betekent niets voor haar."
+    ],
+    "pl": [
+      "To wiele dla mnie znaczy.",
+      "Nie wiem, co oznacza ten symbol.",
+      "Znaczenie tego słowa jest niejasne.",
+      "Dla niej to nic nie znaczy."
+    ],
+    "pt": [
+      "Isso significa muito para mim.",
+      "Eu não sei o significado deste símbolo.",
+      "O significado da palavra não está claro.",
+      "Isso não significa nada para ela."
+    ],
+    "ro": [
+      "Asta înseamnă foarte mult pentru mine.",
+      "Nu știu ce înseamnă acest simbol.",
+      "Sensul cuvântului nu este clar.",
+      "Pentru ea nu înseamnă nimic."
+    ],
+    "ru": [
+      "Это очень важно для меня.",
+      "Я не знаю, что означает этот символ.",
+      "Значение этого слова неясно.",
+      "Для неё это ничего не значит."
+    ],
+    "sv": [
+      "Det betyder mycket för mig.",
+      "Jag vet inte vad den här symbolen betyder.",
+      "Betydelsen av ordet är oklar.",
+      "Det betyder ingenting för henne."
+    ],
+    "tr": [
+      "Bu benim için çok şey ifade ediyor.",
+      "Bu sembolün ne anlama geldiğini bilmiyorum.",
+      "Kelimenin anlamı belirsiz.",
+      "Bu onun için hiçbir şey ifade etmiyor."
+    ],
+    "uk": [
+      "Це дуже важливо для мене.",
+      "Я не знаю значення цього символу.",
+      "Значення цього слова незрозуміле.",
+      "Для неї це нічого не означає."
+    ],
+    "vi": [
+      "Điều đó có ý nghĩa rất lớn đối với tôi.",
+      "Tôi không biết ý nghĩa của ký hiệu này.",
+      "Ý nghĩa của từ này không rõ ràng.",
+      "Điều đó không có ý nghĩa gì với cô ấy."
+    ],
+    "yue": [
+      "對我嚟講好重要。",
+      "我唔知呢個符號嘅意思。",
+      "呢個詞嘅意思唔清楚。",
+      "對佢嚟講冇乜意思。"
+    ],
+    "zh-Hans": [
+      "这对我来说很重要。",
+      "我不知道这个符号的意思。",
+      "这个词的意思不清楚。",
+      "对她来说这没什么意义。"
+    ]
   }
 }

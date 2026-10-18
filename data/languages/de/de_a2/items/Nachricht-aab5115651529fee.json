@@ -137,10 +137,10 @@
       "difficulty": 5.83
     },
     {
-      "target": "Ich warte auf deine Nachricht am Abend.",
+      "target": "Ich warte heute Abend auf deine Nachricht.",
       "reading": "/ɪç ˈvaʁtə aʊ̯f ˈdaɪ̯nə ˈnaːxʁɪçt am ˈaːbənt/",
       "translations": {
-        "de": "Ich warte auf deine Nachricht am Abend.",
+        "de": "Ich warte heute Abend auf deine Nachricht.",
         "ipa": "/ɪç ˈvaʁtə aʊ̯f ˈdaɪ̯nə ˈnaːxʁɪçt am ˈaːbənt/",
         "en": "I’m waiting for your message this evening.",
         "es": "Espero tu mensaje esta noche.",
@@ -173,67 +173,92 @@
       "tokens": [
         {
           "surface": "Ich",
-          "surface_en": "I",
-          "furigana": "[ɪç]",
-          "pos": "PRON",
           "lemma": "ich",
-          "explanation": "1st person singular nominative personal pronoun; subject of the finite verb.",
-          "difficulty": 2
+          "pos": "PRON",
+          "upos": "PRON",
+          "xpos": "PPER",
+          "feats": {},
+          "start": 0,
+          "end": 3,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "warte",
-          "surface_en": "wait",
-          "furigana": "[ˈvaʁtə]",
-          "pos": "VERB",
           "lemma": "warten",
-          "explanation": "Finite main verb, present tense, 1st person singular; denotes waiting.",
-          "difficulty": 7
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VVFIN",
+          "feats": {},
+          "start": 4,
+          "end": 9,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "heute",
+          "lemma": "heute",
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "ADV",
+          "feats": {},
+          "start": 10,
+          "end": 15,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "Abend",
+          "lemma": "Abend",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 16,
+          "end": 21,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "auf",
-          "surface_en": "for",
-          "furigana": "[aʊ̯f]",
-          "pos": "ADP",
           "lemma": "auf",
-          "explanation": "Preposition that combines with 'warten' to form a prepositional verb; governs accusative object.",
-          "difficulty": 2
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "APPR",
+          "feats": {},
+          "start": 22,
+          "end": 25,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "deine",
-          "surface_en": "your",
-          "furigana": "[ˈdaɪ̯nə]",
-          "pos": "DET",
           "lemma": "dein",
-          "explanation": "Possessive determiner, 2nd person singular, feminine accusative singular; modifies 'Nachricht'.",
-          "difficulty": 7
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "PPOSAT",
+          "feats": {},
+          "start": 26,
+          "end": 31,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "Nachricht",
-          "surface_en": "message",
-          "furigana": "[ˈnaːxʁɪçt]",
-          "pos": "NOUN",
           "lemma": "Nachricht",
-          "explanation": "Common noun, feminine accusative singular; complement of 'auf' (object of the prepositional verb 'auf ... warten').",
-          "difficulty": 10,
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 32,
+          "end": 41,
+          "analyzer": "spacy_de_core_news_lg",
           "is_main_word": true
         },
         {
-          "surface": "am",
-          "surface_en": "in_the",
-          "furigana": "[am]",
-          "pos": "ADP",
-          "lemma": "an",
-          "explanation": "Contracted preposition ('an' + 'dem'); introduces a temporal prepositional phrase and assigns dative case.",
-          "difficulty": 2
-        },
-        {
-          "surface": "Abend.",
-          "surface_en": "evening",
-          "furigana": "[ˈaːbn̩t]",
-          "pos": "NOUN",
-          "lemma": "Abend",
-          "explanation": "Common noun, masculine dative singular; object of 'am', temporal adjunct.",
-          "difficulty": 7
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 41,
+          "end": 42,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 5.29
@@ -252,7 +277,7 @@
         "zh-Hans": "她很快就会发来消息。",
         "yue": "佢好快就有訊息嚟。",
         "ru": "Скоро придёт сообщение от неё.",
-        "pt": "Vai chegar uma mensagem dela en breve.",
+        "pt": "Vai chegar uma mensagem dela em breve.",
         "he": "עוד מעט תגיע ממנה הודעה.",
         "tr": "Yakında ondan bir mesaj gelecek.",
         "vi": "Sắp có tin nhắn từ cô ấy.",
@@ -448,19 +473,311 @@
     "content_reviewers": [
       "mediawiki-visible-revision"
     ],
-    "last_reviewed_utc": "2026-06-12T11:46:23Z",
-    "approval_source": "mediawiki_visible_revision",
+    "last_reviewed_utc": "2026-10-14T22:26:51Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
     "wiki": {
       "title": "Item:De a2/aab5115651529fee",
-      "revision_id": 14390,
-      "parent_revision_id": 1145,
-      "revision_timestamp_utc": "2026-06-12T11:46:23Z",
-      "revision_user": "VocomiBot",
-      "revision_comment": "Sync de_a2 item Nachricht",
-      "pulled_utc": "2026-06-22T08:19:06Z",
-      "applied_utc": "2026-06-22T08:19:11Z",
+      "revision_id": 85969,
+      "parent_revision_id": 59415,
+      "revision_timestamp_utc": "2026-10-14T22:26:51Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Content review: German and translation corrections",
+      "pulled_utc": "2026-10-17T07:00:42Z",
+      "applied_utc": "2026-10-17T07:00:47Z",
       "applied_by": "vocomipedia-apply-pulled"
-    }
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-5b80fc5a17be757f",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_a2:aab5115651529fee",
+        "pack_code": "de_a2",
+        "entry_id": "Nachricht",
+        "language": "de",
+        "sentence_index": 2,
+        "old_sentence": "Ich warte auf deine Nachricht am Abend.",
+        "old_translations": {
+          "de": "Ich warte auf deine Nachricht am Abend.",
+          "ipa": "/ɪç ˈvaʁtə aʊ̯f ˈdaɪ̯nə ˈnaːxʁɪçt am ˈaːbənt/",
+          "en": "I’m waiting for your message this evening.",
+          "es": "Espero tu mensaje esta noche.",
+          "fr": "J’attends ton message ce soir.",
+          "it": "Aspetto il tuo messaggio stasera.",
+          "ko": "오늘 저녁에 네 메시지를 기다리고 있어.",
+          "zh-Hans": "我今晚在等你的消息。",
+          "yue": "我今晚等你嘅訊息。",
+          "ru": "Я жду твоё сообщение сегодня вечером.",
+          "pt": "Estou esperando sua mensagem hoje à noite.",
+          "he": "אני מחכה להודעה שלך הערב.",
+          "tr": "Bu akşam mesajını bekliyorum.",
+          "vi": "Tối nay tôi đang đợi tin nhắn của bạn.",
+          "ar": "أنا بانتظار رسالتك هذا المساء.",
+          "nl": "Ik wacht vanavond op je bericht.",
+          "uk": "Я чекаю на твоє повідомлення сьогодні ввечері.",
+          "hu": "Ma este várom az üzeneted.",
+          "hi": "आज शाम तुम्हारे मैसेज का इंतजार है।",
+          "pl": "Czekam na twoją wiadomość dziś wieczorem.",
+          "el": "Περιμένω το μήνυμά σου απόψε.",
+          "nb": "I kveld venter jeg på meldingen din.",
+          "id": "Malam ini aku menunggu pesanmu.",
+          "sv": "I kväll väntar jag på ditt meddelande.",
+          "ro": "Aștept mesajul tău diseară.",
+          "cs": "Dnes večer čekám na tvoji zprávu.",
+          "da": "I aften venter jeg på din besked.",
+          "fi": "Tänä iltana odotan viestiäsi.",
+          "ja": "今夜あなたのメッセージを待っている。"
+        },
+        "proposed_sentence": "Ich warte heute Abend auf deine Nachricht.",
+        "proposed_translations": {
+          "de": "Ich warte heute Abend auf deine Nachricht.",
+          "ipa": "/ɪç ˈvaʁtə aʊ̯f ˈdaɪ̯nə ˈnaːxʁɪçt am ˈaːbənt/",
+          "en": "I’m waiting for your message this evening.",
+          "es": "Espero tu mensaje esta noche.",
+          "fr": "J’attends ton message ce soir.",
+          "it": "Aspetto il tuo messaggio stasera.",
+          "ko": "오늘 저녁에 네 메시지를 기다리고 있어.",
+          "zh-Hans": "我今晚在等你的消息。",
+          "yue": "我今晚等你嘅訊息。",
+          "ru": "Я жду твоё сообщение сегодня вечером.",
+          "pt": "Estou esperando sua mensagem hoje à noite.",
+          "he": "אני מחכה להודעה שלך הערב.",
+          "tr": "Bu akşam mesajını bekliyorum.",
+          "vi": "Tối nay tôi đang đợi tin nhắn của bạn.",
+          "ar": "أنا بانتظار رسالتك هذا المساء.",
+          "nl": "Ik wacht vanavond op je bericht.",
+          "uk": "Я чекаю на твоє повідомлення сьогодні ввечері.",
+          "hu": "Ma este várom az üzeneted.",
+          "hi": "आज शाम तुम्हारे मैसेज का इंतजार है।",
+          "pl": "Czekam na twoją wiadomość dziś wieczorem.",
+          "el": "Περιμένω το μήνυμά σου απόψε.",
+          "nb": "I kveld venter jeg på meldingen din.",
+          "id": "Malam ini aku menunggu pesanmu.",
+          "sv": "I kväll väntar jag på ditt meddelande.",
+          "ro": "Aștept mesajul tău diseară.",
+          "cs": "Dnes večer čekám na tvoji zprávu.",
+          "da": "I aften venter jeg på din besked.",
+          "fi": "Tänä iltana odotan viestiäsi.",
+          "ja": "今夜あなたのメッセージを待っている。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Ich warte heute Abend auf deine Nachricht.",
+        "old_japanese": "Ich warte auf deine Nachricht am Abend.",
+        "old_english": "I’m waiting for your message this evening.",
+        "proposed_japanese": "Ich warte heute Abend auf deine Nachricht.",
+        "proposed_english": "I’m waiting for your message this evening.",
+        "reason": "Move the time phrase to the usual German position for a more natural sentence, preserving that the speaker is waiting for the message in the evening.",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Ich warte heute Abend auf deine Nachricht.",
+          "tokens": [
+            {
+              "surface": "Ich",
+              "lemma": "ich",
+              "pos": "PRON",
+              "upos": "PRON",
+              "xpos": "PPER",
+              "feats": {},
+              "start": 0,
+              "end": 3,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "warte",
+              "lemma": "warten",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVFIN",
+              "feats": {},
+              "start": 4,
+              "end": 9,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "heute",
+              "lemma": "heute",
+              "pos": "ADV",
+              "upos": "ADV",
+              "xpos": "ADV",
+              "feats": {},
+              "start": 10,
+              "end": 15,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Abend",
+              "lemma": "Abend",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 16,
+              "end": 21,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "auf",
+              "lemma": "auf",
+              "pos": "ADP",
+              "upos": "ADP",
+              "xpos": "APPR",
+              "feats": {},
+              "start": 22,
+              "end": 25,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "deine",
+              "lemma": "dein",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "PPOSAT",
+              "feats": {},
+              "start": 26,
+              "end": 31,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Nachricht",
+              "lemma": "Nachricht",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 32,
+              "end": 41,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 41,
+              "end": 42,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Ich",
+            "lemma": "ich",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "warte",
+            "lemma": "warten",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 4,
+            "end": 9,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "heute",
+            "lemma": "heute",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 10,
+            "end": 15,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Abend",
+            "lemma": "Abend",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 16,
+            "end": 21,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "auf",
+            "lemma": "auf",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 22,
+            "end": 25,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "deine",
+            "lemma": "dein",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "PPOSAT",
+            "feats": {},
+            "start": 26,
+            "end": 31,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Nachricht",
+            "lemma": "Nachricht",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 32,
+            "end": 41,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 41,
+            "end": 42,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:00:42Z",
+        "updated_utc": "2026-10-17T07:00:59Z",
+        "applied_utc": "2026-10-17T07:00:59Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:00:59Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -548,71 +865,96 @@
         "difficulty_aggregated": 5.83
       },
       {
-        "sentence": "Ich warte auf deine Nachricht am Abend.",
+        "sentence": "Ich warte heute Abend auf deine Nachricht.",
         "tokens": [
           {
             "surface": "Ich",
-            "surface_en": "I",
-            "furigana": "[ɪç]",
-            "pos": "PRON",
             "lemma": "ich",
-            "explanation": "1st person singular nominative personal pronoun; subject of the finite verb.",
-            "difficulty": 2
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "warte",
-            "surface_en": "wait",
-            "furigana": "[ˈvaʁtə]",
-            "pos": "VERB",
             "lemma": "warten",
-            "explanation": "Finite main verb, present tense, 1st person singular; denotes waiting.",
-            "difficulty": 7
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 4,
+            "end": 9,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "heute",
+            "lemma": "heute",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 10,
+            "end": 15,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Abend",
+            "lemma": "Abend",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 16,
+            "end": 21,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "auf",
-            "surface_en": "for",
-            "furigana": "[aʊ̯f]",
-            "pos": "ADP",
             "lemma": "auf",
-            "explanation": "Preposition that combines with 'warten' to form a prepositional verb; governs accusative object.",
-            "difficulty": 2
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 22,
+            "end": 25,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "deine",
-            "surface_en": "your",
-            "furigana": "[ˈdaɪ̯nə]",
-            "pos": "DET",
             "lemma": "dein",
-            "explanation": "Possessive determiner, 2nd person singular, feminine accusative singular; modifies 'Nachricht'.",
-            "difficulty": 7
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "PPOSAT",
+            "feats": {},
+            "start": 26,
+            "end": 31,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "Nachricht",
-            "surface_en": "message",
-            "furigana": "[ˈnaːxʁɪçt]",
-            "pos": "NOUN",
             "lemma": "Nachricht",
-            "explanation": "Common noun, feminine accusative singular; complement of 'auf' (object of the prepositional verb 'auf ... warten').",
-            "difficulty": 10,
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 32,
+            "end": 41,
+            "analyzer": "spacy_de_core_news_lg",
             "is_main_word": true
           },
           {
-            "surface": "am",
-            "surface_en": "in_the",
-            "furigana": "[am]",
-            "pos": "ADP",
-            "lemma": "an",
-            "explanation": "Contracted preposition ('an' + 'dem'); introduces a temporal prepositional phrase and assigns dative case.",
-            "difficulty": 2
-          },
-          {
-            "surface": "Abend.",
-            "surface_en": "evening",
-            "furigana": "[ˈaːbn̩t]",
-            "pos": "NOUN",
-            "lemma": "Abend",
-            "explanation": "Common noun, masculine dative singular; object of 'am', temporal adjunct.",
-            "difficulty": 7
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 41,
+            "end": 42,
+            "analyzer": "spacy_de_core_news_lg"
           }
         ],
         "difficulty_aggregated": 5.29
@@ -902,7 +1244,7 @@
     "pt": [
       "Você vai me mandar uma mensagem mais tarde.",
       "Estou esperando sua mensagem hoje à noite.",
-      "Vai chegar uma mensagem dela en breve.",
+      "Vai chegar uma mensagem dela em breve.",
       "Ele lê minha mensagem e sorri."
     ],
     "ro": [

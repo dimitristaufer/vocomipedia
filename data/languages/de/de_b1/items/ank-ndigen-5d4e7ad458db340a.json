@@ -239,12 +239,12 @@
       "difficulty": 6.33
     },
     {
-      "target": "Die Nachbarn werden einen Besuch für morgen ankündigen.",
+      "target": "Die Nachbarn werden ihren Besuch für morgen ankündigen.",
       "reading": "/diː ˈnaχbaʁn ˈvɛʁdən ˈaɪ̯nən bəˈzuːx fyːɐ̯ ˈmɔʁɡən ˈankʏndɪɡən/",
       "translations": {
-        "de": "Die Nachbarn werden einen Besuch für morgen ankündigen.",
+        "de": "Die Nachbarn werden ihren Besuch für morgen ankündigen.",
         "ipa": "/diː ˈnaχbaʁn ˈvɛʁdən ˈaɪ̯nən bəˈzuːx fyːɐ̯ ˈmɔʁɡən ˈankʏndɪɡən/",
-        "en": "The neighbors will announce a visit for tomorrow.",
+        "en": "The neighbors will announce that they’re coming tomorrow.",
         "es": "Los vecinos avisarán que vendrán mañana.",
         "fr": "Les voisins vont prévenir qu’ils viendront demain.",
         "it": "I vicini faranno sapere che verranno domani.",
@@ -264,87 +264,114 @@
         "pl": "Sąsiedzi dadzą znać, że przyjdą jutro.",
         "el": "Οι γείτονες θα μας ενημερώσουν ότι θα έρθουν αύριο.",
         "nb": "Naboene gir beskjed om at de kommer i morgen.",
-        "id": "Tetangga akan memberi tahu rằng mereka akan datang besok.",
+        "id": "Tetangga akan memberi tahu bahwa mereka akan datang besok.",
         "sv": "Grannarna kommer att meddela att de kommer i morgon.",
         "ro": "Vecinii vor anunța că vor veni mâine.",
         "cs": "Sousedé dají vědět, že zítra přijdou.",
         "da": "Naboerne giver besked om, at de kommer i morgen.",
-        "fi": "Naapurit ilmoittavat, όti he tulevat huomenna.",
+        "fi": "Naapurit ilmoittavat, että he tulevat huomenna.",
         "ja": "近所の人たちは、明日来ると連絡してくるでしょう。"
       },
       "tokens": [
         {
           "surface": "Die",
-          "surface_en": "the",
-          "furigana": "[diː]",
-          "pos": "DET",
           "lemma": "der",
-          "explanation": "Definite article, nominative plural; determiner of the subject 'Nachbarn'.",
-          "difficulty": 2
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "ART",
+          "feats": {},
+          "start": 0,
+          "end": 3,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "Nachbarn",
-          "surface_en": "neighbors",
-          "furigana": "[ˈnaχbaʁn]",
-          "pos": "NOUN",
           "lemma": "Nachbar",
-          "explanation": "Common noun, plural; subject of the clause.",
-          "difficulty": 10
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 4,
+          "end": 12,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "werden",
-          "surface_en": "will",
-          "furigana": "[ˈveːɐ̯dn̩]",
-          "pos": "AUX",
           "lemma": "werden",
-          "explanation": "Finite auxiliary (future construction), 3rd person plural; selects an infinitive main verb.",
-          "difficulty": 7
+          "pos": "AUX",
+          "upos": "AUX",
+          "xpos": "VAFIN",
+          "feats": {},
+          "start": 13,
+          "end": 19,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "einen",
-          "surface_en": "a",
-          "furigana": "[ˈaɪ̯nən]",
+          "surface": "ihren",
+          "lemma": "ihr",
           "pos": "DET",
-          "lemma": "ein",
-          "explanation": "Indefinite article, accusative masculine singular; determiner of 'Besuch'.",
-          "difficulty": 2
+          "upos": "DET",
+          "xpos": "PPOSAT",
+          "feats": {},
+          "start": 20,
+          "end": 25,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "Besuch",
-          "surface_en": "visit",
-          "furigana": "[bəˈzuːx]",
-          "pos": "NOUN",
           "lemma": "Besuch",
-          "explanation": "Common noun, masculine; direct object announced.",
-          "difficulty": 7
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 26,
+          "end": 32,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "für",
-          "surface_en": "for",
-          "furigana": "[fyːɐ̯]",
-          "pos": "ADP",
           "lemma": "für",
-          "explanation": "Preposition governing accusative; introduces a temporal PP.",
-          "difficulty": 2
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "APPR",
+          "feats": {},
+          "start": 33,
+          "end": 36,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "morgen",
-          "surface_en": "tomorrow",
-          "furigana": "[ˈmɔʁɡn̩]",
-          "pos": "ADV",
           "lemma": "morgen",
-          "explanation": "Temporal adverb specifying the day; here used as the complement of 'für' in a PP.",
-          "difficulty": 7
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "ADV",
+          "feats": {},
+          "start": 37,
+          "end": 43,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "ankündigen.",
-          "surface_en": "announce",
-          "furigana": "[anˈkʏndɪɡən]",
-          "pos": "VERB",
+          "surface": "ankündigen",
           "lemma": "ankündigen",
-          "explanation": "Main verb in infinitive form; separable verb with prefix 'an-' (not split here because it is an infinitive with an auxiliary).",
-          "difficulty": 10,
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VVINF",
+          "feats": {},
+          "start": 44,
+          "end": 54,
+          "analyzer": "spacy_de_core_news_lg",
           "is_main_word": true
+        },
+        {
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 54,
+          "end": 55,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 5.88
@@ -454,8 +481,336 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-14T21:12:21Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:De b1/5d4e7ad458db340a",
+      "revision_id": 86523,
+      "parent_revision_id": 15148,
+      "revision_timestamp_utc": "2026-10-14T21:12:21Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Improve German phrasing and correct sentence translations",
+      "pulled_utc": "2026-10-17T07:06:38Z",
+      "applied_utc": "2026-10-17T07:06:52Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-c54c8cbeb3391114",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_b1:5d4e7ad458db340a",
+        "pack_code": "de_b1",
+        "entry_id": "ankündigen",
+        "language": "de",
+        "sentence_index": 3,
+        "old_sentence": "Die Nachbarn werden einen Besuch für morgen ankündigen.",
+        "old_translations": {
+          "de": "Die Nachbarn werden einen Besuch für morgen ankündigen.",
+          "ipa": "/diː ˈnaχbaʁn ˈvɛʁdən ˈaɪ̯nən bəˈzuːx fyːɐ̯ ˈmɔʁɡən ˈankʏndɪɡən/",
+          "en": "The neighbors will announce a visit for tomorrow.",
+          "es": "Los vecinos avisarán que vendrán mañana.",
+          "fr": "Les voisins vont prévenir qu’ils viendront demain.",
+          "it": "I vicini faranno sapere che verranno domani.",
+          "ko": "이웃들이 내일 방문하겠다고 알려줄 거예요.",
+          "zh-Hans": "邻居们会通知他们明天要来拜访。",
+          "yue": "鄰居會話畀我哋知佢哋聽日會嚟拜訪。",
+          "ru": "Соседи сообщат, что придут завтра.",
+          "pt": "Os vizinhos vão avisar que virão amanhã.",
+          "he": "השכנים יודיעו שהם יבואו מחר.",
+          "tr": "Komşular yarın geleceklerini haber verecekler.",
+          "vi": "Hàng xóm sẽ báo là ngày mai họ sẽ đến.",
+          "ar": "سيبلغنا الجيران أنهم سيأتون غدًا.",
+          "nl": "De buren laten weten dat ze morgen langskomen.",
+          "uk": "Сусіди повідомлять, що прийдуть завтра.",
+          "hu": "A szomszédok jelezni fogják, hogy holnap jönnek.",
+          "hi": "पड़ोसी बताएँगे कि वे कल आएँगे.",
+          "pl": "Sąsiedzi dadzą znać, że przyjdą jutro.",
+          "el": "Οι γείτονες θα μας ενημερώσουν ότι θα έρθουν αύριο.",
+          "nb": "Naboene gir beskjed om at de kommer i morgen.",
+          "id": "Tetangga akan memberi tahu rằng mereka akan datang besok.",
+          "sv": "Grannarna kommer att meddela att de kommer i morgon.",
+          "ro": "Vecinii vor anunța că vor veni mâine.",
+          "cs": "Sousedé dají vědět, že zítra přijdou.",
+          "da": "Naboerne giver besked om, at de kommer i morgen.",
+          "fi": "Naapurit ilmoittavat, όti he tulevat huomenna.",
+          "ja": "近所の人たちは、明日来ると連絡してくるでしょう。"
+        },
+        "proposed_sentence": "Die Nachbarn werden ihren Besuch für morgen ankündigen.",
+        "proposed_translations": {
+          "de": "Die Nachbarn werden ihren Besuch für morgen ankündigen.",
+          "ipa": "/diː ˈnaχbaʁn ˈvɛʁdən ˈaɪ̯nən bəˈzuːx fyːɐ̯ ˈmɔʁɡən ˈankʏndɪɡən/",
+          "en": "The neighbors will announce that they’re coming tomorrow.",
+          "es": "Los vecinos avisarán que vendrán mañana.",
+          "fr": "Les voisins vont prévenir qu’ils viendront demain.",
+          "it": "I vicini faranno sapere che verranno domani.",
+          "ko": "이웃들이 내일 방문하겠다고 알려줄 거예요.",
+          "zh-Hans": "邻居们会通知他们明天要来拜访。",
+          "yue": "鄰居會話畀我哋知佢哋聽日會嚟拜訪。",
+          "ru": "Соседи сообщат, что придут завтра.",
+          "pt": "Os vizinhos vão avisar que virão amanhã.",
+          "he": "השכנים יודיעו שהם יבואו מחר.",
+          "tr": "Komşular yarın geleceklerini haber verecekler.",
+          "vi": "Hàng xóm sẽ báo là ngày mai họ sẽ đến.",
+          "ar": "سيبلغنا الجيران أنهم سيأتون غدًا.",
+          "nl": "De buren laten weten dat ze morgen langskomen.",
+          "uk": "Сусіди повідомлять, що прийдуть завтра.",
+          "hu": "A szomszédok jelezni fogják, hogy holnap jönnek.",
+          "hi": "पड़ोसी बताएँगे कि वे कल आएँगे.",
+          "pl": "Sąsiedzi dadzą znać, że przyjdą jutro.",
+          "el": "Οι γείτονες θα μας ενημερώσουν ότι θα έρθουν αύριο.",
+          "nb": "Naboene gir beskjed om at de kommer i morgen.",
+          "id": "Tetangga akan memberi tahu bahwa mereka akan datang besok.",
+          "sv": "Grannarna kommer att meddela att de kommer i morgon.",
+          "ro": "Vecinii vor anunța că vor veni mâine.",
+          "cs": "Sousedé dají vědět, že zítra přijdou.",
+          "da": "Naboerne giver besked om, at de kommer i morgen.",
+          "fi": "Naapurit ilmoittavat, että he tulevat huomenna.",
+          "ja": "近所の人たちは、明日来ると連絡してくるでしょう。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Die Nachbarn werden ihren Besuch für morgen ankündigen.",
+        "old_japanese": "Die Nachbarn werden einen Besuch für morgen ankündigen.",
+        "old_english": "The neighbors will announce a visit for tomorrow.",
+        "proposed_japanese": "Die Nachbarn werden ihren Besuch für morgen ankündigen.",
+        "proposed_english": "The neighbors will announce that they’re coming tomorrow.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Die Nachbarn werden ihren Besuch für morgen ankündigen.",
+          "tokens": [
+            {
+              "surface": "Die",
+              "lemma": "der",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "ART",
+              "feats": {},
+              "start": 0,
+              "end": 3,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Nachbarn",
+              "lemma": "Nachbar",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 4,
+              "end": 12,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "werden",
+              "lemma": "werden",
+              "pos": "AUX",
+              "upos": "AUX",
+              "xpos": "VAFIN",
+              "feats": {},
+              "start": 13,
+              "end": 19,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "ihren",
+              "lemma": "ihr",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "PPOSAT",
+              "feats": {},
+              "start": 20,
+              "end": 25,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Besuch",
+              "lemma": "Besuch",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 26,
+              "end": 32,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "für",
+              "lemma": "für",
+              "pos": "ADP",
+              "upos": "ADP",
+              "xpos": "APPR",
+              "feats": {},
+              "start": 33,
+              "end": 36,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "morgen",
+              "lemma": "morgen",
+              "pos": "ADV",
+              "upos": "ADV",
+              "xpos": "ADV",
+              "feats": {},
+              "start": 37,
+              "end": 43,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "ankündigen",
+              "lemma": "ankündigen",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVINF",
+              "feats": {},
+              "start": 44,
+              "end": 54,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 54,
+              "end": 55,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Die",
+            "lemma": "der",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Nachbarn",
+            "lemma": "Nachbar",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 4,
+            "end": 12,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "werden",
+            "lemma": "werden",
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "VAFIN",
+            "feats": {},
+            "start": 13,
+            "end": 19,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "ihren",
+            "lemma": "ihr",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "PPOSAT",
+            "feats": {},
+            "start": 20,
+            "end": 25,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Besuch",
+            "lemma": "Besuch",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 26,
+            "end": 32,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "für",
+            "lemma": "für",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 33,
+            "end": 36,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "morgen",
+            "lemma": "morgen",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 37,
+            "end": 43,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "ankündigen",
+            "lemma": "ankündigen",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVINF",
+            "feats": {},
+            "start": 44,
+            "end": 54,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 54,
+            "end": 55,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:06:38Z",
+        "updated_utc": "2026-10-17T07:07:05Z",
+        "applied_utc": "2026-10-17T07:07:05Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:07:05Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -467,34 +822,6 @@
     "word": "ankündigen",
     "word_reading": "",
     "word_label": "Verb",
-    "word_en": "announce; notify",
-    "word_es": "anunciar; avisar",
-    "word_fr": "annoncer; prévenir",
-    "word_it": "annunciare; comunicare",
-    "word_ko": "발표하다; 예고하다",
-    "word_zh-Hans": "宣布; 预告",
-    "word_yue": "宣佈; 預告",
-    "word_ru": "объявить; анонсировать",
-    "word_pt": "anunciar; avisar",
-    "word_he": "להכריז; להודיע",
-    "word_tr": "duyurmak; ilan etmek",
-    "word_vi": "thông báo; tuyên bố",
-    "word_ar": "أعلن; أخبر",
-    "word_nl": "aankondigen; bekendmaken",
-    "word_uk": "оголосити; анонсувати",
-    "word_hu": "bejelent; beharangoz",
-    "word_hi": "घोषणा करना; सूचित करना",
-    "word_pl": "zapowiedzieć; ogłosić",
-    "word_el": "ανακοινώνω; αναγγέλλω",
-    "word_nb": "kunngjøre; varsle",
-    "word_id": "mengumumkan; memberitahu",
-    "word_sv": "tillkännage; meddela",
-    "word_ro": "a anunța; a comunica",
-    "word_cs": "oznámit; ohlásit",
-    "word_da": "bekendtgøre; meddele",
-    "word_fi": "ilmoittaa; julkistaa",
-    "word_ja": "発表する; 予告する",
-    "word_de": "ankündigen",
     "comic_difficulty": 6.33,
     "jp": [
       "Wir werden das neue Projekt heute ankündigen.",
@@ -507,24 +834,6 @@
       "/ɪç vɪl diː ˈpaʁti ɔfitsiˈɛl ˈankʏndɪɡən/",
       "/diː ˈnaχbaʁn ˈvɛʁdən ˈaɪ̯nən bəˈzuːx fyːɐ̯ ˈmɔʁɡən ˈankʏndɪɡən/",
       "/diː ˈʃuːlə vɪʁt ˈnɔʏ̯ə ˈʁeːɡlən ˈankʏndɪɡən/"
-    ],
-    "de": [
-      "Wir werden das neue Projekt heute ankündigen.",
-      "Ich will die Party offiziell ankündigen.",
-      "Die Nachbarn werden einen Besuch für morgen ankündigen.",
-      "Die Schule wird neue Regeln ankündigen."
-    ],
-    "ipa": [
-      "/viːɐ̯ ˈvɛʁdən das ˈnɔʏ̯ə pʁoˈjɛkt ˈhɔʏ̯tə ˈankʏndɪɡən/",
-      "/ɪç vɪl diː ˈpaʁti ɔfitsiˈɛl ˈankʏndɪɡən/",
-      "/diː ˈnaχbaʁn ˈvɛʁdən ˈaɪ̯nən bəˈzuːx fyːɐ̯ ˈmɔʁɡən ˈankʏndɪɡən/",
-      "/diː ˈʃuːlə vɪʁt ˈnɔʏ̯ə ˈʁeːɡlən ˈankʏndɪɡən/"
-    ],
-    "en": [
-      "We will announce the new project today.",
-      "I want to officially announce the party.",
-      "The neighbors will announce a visit for tomorrow.",
-      "The school will announce new rules."
     ],
     "pos_analysis": [
       {
@@ -659,80 +968,107 @@
         "difficulty_aggregated": 6.33
       },
       {
-        "sentence": "Die Nachbarn werden einen Besuch für morgen ankündigen.",
+        "sentence": "Die Nachbarn werden ihren Besuch für morgen ankündigen.",
         "tokens": [
           {
             "surface": "Die",
-            "surface_en": "the",
-            "furigana": "[diː]",
-            "pos": "DET",
             "lemma": "der",
-            "explanation": "Definite article, nominative plural; determiner of the subject 'Nachbarn'.",
-            "difficulty": 2
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "Nachbarn",
-            "surface_en": "neighbors",
-            "furigana": "[ˈnaχbaʁn]",
-            "pos": "NOUN",
             "lemma": "Nachbar",
-            "explanation": "Common noun, plural; subject of the clause.",
-            "difficulty": 10
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 4,
+            "end": 12,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "werden",
-            "surface_en": "will",
-            "furigana": "[ˈveːɐ̯dn̩]",
-            "pos": "AUX",
             "lemma": "werden",
-            "explanation": "Finite auxiliary (future construction), 3rd person plural; selects an infinitive main verb.",
-            "difficulty": 7
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "VAFIN",
+            "feats": {},
+            "start": 13,
+            "end": 19,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "einen",
-            "surface_en": "a",
-            "furigana": "[ˈaɪ̯nən]",
+            "surface": "ihren",
+            "lemma": "ihr",
             "pos": "DET",
-            "lemma": "ein",
-            "explanation": "Indefinite article, accusative masculine singular; determiner of 'Besuch'.",
-            "difficulty": 2
+            "upos": "DET",
+            "xpos": "PPOSAT",
+            "feats": {},
+            "start": 20,
+            "end": 25,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "Besuch",
-            "surface_en": "visit",
-            "furigana": "[bəˈzuːx]",
-            "pos": "NOUN",
             "lemma": "Besuch",
-            "explanation": "Common noun, masculine; direct object announced.",
-            "difficulty": 7
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 26,
+            "end": 32,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "für",
-            "surface_en": "for",
-            "furigana": "[fyːɐ̯]",
-            "pos": "ADP",
             "lemma": "für",
-            "explanation": "Preposition governing accusative; introduces a temporal PP.",
-            "difficulty": 2
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 33,
+            "end": 36,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "morgen",
-            "surface_en": "tomorrow",
-            "furigana": "[ˈmɔʁɡn̩]",
-            "pos": "ADV",
             "lemma": "morgen",
-            "explanation": "Temporal adverb specifying the day; here used as the complement of 'für' in a PP.",
-            "difficulty": 7
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 37,
+            "end": 43,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "ankündigen.",
-            "surface_en": "announce",
-            "furigana": "[anˈkʏndɪɡən]",
-            "pos": "VERB",
+            "surface": "ankündigen",
             "lemma": "ankündigen",
-            "explanation": "Main verb in infinitive form; separable verb with prefix 'an-' (not split here because it is an infinitive with an auxiliary).",
-            "difficulty": 10,
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVINF",
+            "feats": {},
+            "start": 44,
+            "end": 54,
+            "analyzer": "spacy_de_core_news_lg",
             "is_main_word": true
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 54,
+            "end": 55,
+            "analyzer": "spacy_de_core_news_lg"
           }
         ],
         "difficulty_aggregated": 5.88
@@ -799,137 +1135,41 @@
         "difficulty_aggregated": 6.67
       }
     ],
-    "es": [
-      "Hoy anunciaremos el nuevo proyecto.",
-      "Quiero anunciar oficialmente la fiesta.",
-      "Los vecinos avisarán que vendrán mañana.",
-      "La escuela anunciará nuevas normas."
-    ],
-    "fr": [
-      "Nous annoncerons le nouveau projet aujourd'hui.",
-      "Je veux annoncer officiellement la fête.",
-      "Les voisins vont prévenir qu’ils viendront demain.",
-      "L'école va annoncer de nouvelles règles."
-    ],
-    "it": [
-      "Oggi annunceremo il nuovo progetto.",
-      "Voglio annunciare ufficialmente la festa.",
-      "I vicini faranno sapere che verranno domani.",
-      "La scuola annuncerà nuove regole."
-    ],
-    "ko": [
-      "오늘 새 프로젝트를 발표할 거예요.",
-      "파티를 공식적으로 알리고 싶어요.",
-      "이웃들이 내일 방문하겠다고 알려줄 거예요.",
-      "학교에서 새 규정을 발표할 거예요."
-    ],
-    "zh-Hans": [
-      "我们今天会宣布新项目。",
-      "我想正式宣布要举办这场聚会。",
-      "邻居们会通知他们明天要来拜访。",
-      "学校将公布新规定。"
-    ],
-    "yue": [
-      "我哋今日會公布新項目。",
-      "我想正式宣布會搞呢個派對。",
-      "鄰居會話畀我哋知佢哋聽日會嚟拜訪。",
-      "學校會公布新規定。"
-    ],
-    "ru": [
-      "Сегодня мы объявим о новом проекте.",
-      "Я хочу официально объявить о вечеринке.",
-      "Соседи сообщат, что придут завтра.",
-      "Школа объявит новые правила."
-    ],
-    "pt": [
-      "Hoje vamos anunciar o novo projeto.",
-      "Quero anunciar oficialmente a festa.",
-      "Os vizinhos vão avisar que virão amanhã.",
-      "A escola vai anunciar novas regras."
-    ],
-    "he": [
-      "היום נכריז על הפרויקט החדש.",
-      "אני רוצה להכריז רשמית על המסיבה.",
-      "השכנים יודיעו שהם יבואו מחר.",
-      "בית הספר יכריז על כללים חדשים."
-    ],
-    "tr": [
-      "Bugün yeni projeyi duyuracağız.",
-      "Partiyi resmen duyurmak istiyorum.",
-      "Komşular yarın geleceklerini haber verecekler.",
-      "Okul yeni kuralları duyuracak."
-    ],
-    "vi": [
-      "Hôm nay chúng tôi sẽ công bố dự án mới.",
-      "Tôi muốn chính thức thông báo về bữa tiệc.",
-      "Hàng xóm sẽ báo là ngày mai họ sẽ đến.",
-      "Nhà trường sẽ công bố các quy định mới."
-    ],
+    "word_POS": "Verb",
+    "entry_id": "ankündigen",
+    "word_en": "announce; notify",
+    "word_es": "anunciar; avisar",
+    "word_fr": "annoncer; prévenir",
+    "word_it": "annunciare; comunicare",
+    "word_ko": "발표하다; 예고하다",
+    "word_zh-Hans": "宣布; 预告",
+    "word_yue": "宣佈; 預告",
+    "word_ru": "объявить; анонсировать",
+    "word_pt": "anunciar; avisar",
+    "word_he": "להכריז; להודיע",
+    "word_tr": "duyurmak; ilan etmek",
+    "word_vi": "thông báo; tuyên bố",
+    "word_ar": "أعلن; أخبر",
+    "word_nl": "aankondigen; bekendmaken",
+    "word_uk": "оголосити; анонсувати",
+    "word_hu": "bejelent; beharangoz",
+    "word_hi": "घोषणा करना; सूचित करना",
+    "word_pl": "zapowiedzieć; ogłosić",
+    "word_el": "ανακοινώνω; αναγγέλλω",
+    "word_nb": "kunngjøre; varsle",
+    "word_id": "mengumumkan; memberitahu",
+    "word_sv": "tillkännage; meddela",
+    "word_ro": "a anunța; a comunica",
+    "word_cs": "oznámit; ohlásit",
+    "word_da": "bekendtgøre; meddele",
+    "word_fi": "ilmoittaa; julkistaa",
+    "word_ja": "発表する; 予告する",
+    "word_de": "ankündigen",
     "ar": [
       "سنعلن اليوم عن المشروع الجديد.",
       "أريد أن أعلن رسميًا عن الحفلة.",
       "سيبلغنا الجيران أنهم سيأتون غدًا.",
       "ستعلن المدرسة قواعد جديدة."
-    ],
-    "nl": [
-      "We kondigen vandaag het nieuwe project aan.",
-      "Ik wil het feest officieel aankondigen.",
-      "De buren laten weten dat ze morgen langskomen.",
-      "De school zal nieuwe regels aankondigen."
-    ],
-    "uk": [
-      "Сьогодні ми оголосимо про новий проєкт.",
-      "Я хочу офіційно оголосити про вечірку.",
-      "Сусіди повідомлять, що прийдуть завтра.",
-      "Школа оголосить нові правила."
-    ],
-    "hu": [
-      "Ma bejelentjük az új projektet.",
-      "Hivatalosan be akarom jelenteni a bulit.",
-      "A szomszédok jelezni fogják, hogy holnap jönnek.",
-      "Az iskola bejelenti az új szabályokat."
-    ],
-    "hi": [
-      "हम आज नए प्रोजेक्ट की घोषणा करेंगे.",
-      "मैं पार्टी की आधिकारिक घोषणा करना चाहता हूँ.",
-      "पड़ोसी बताएँगे कि वे कल आएँगे.",
-      "स्कूल नए नियमों की घोषणा करेगा."
-    ],
-    "pl": [
-      "Dziś ogłosimy nowy projekt.",
-      "Chcę oficjalnie ogłosić imprezę.",
-      "Sąsiedzi dadzą znać, że przyjdą jutro.",
-      "Szkoła ogłosi nowe zasady."
-    ],
-    "el": [
-      "Σήμερα θα ανακοινώσουμε το νέο έργο.",
-      "Θέλω να ανακοινώσω επίσημα το πάρτι.",
-      "Οι γείτονες θα μας ενημερώσουν ότι θα έρθουν αύριο.",
-      "Το σχολείο θα ανακοινώσει νέους κανόνες."
-    ],
-    "nb": [
-      "I dag skal vi kunngjøre det nye prosjektet.",
-      "Jeg vil offisielt kunngjøre festen.",
-      "Naboene gir beskjed om at de kommer i morgen.",
-      "Skolen vil kunngjøre nye regler."
-    ],
-    "id": [
-      "Hari ini kami akan mengumumkan proyek baru.",
-      "Saya ingin mengumumkan pesta ini secara resmi.",
-      "Tetangga akan memberi tahu rằng mereka akan datang besok.",
-      "Sekolah akan mengumumkan peraturan baru."
-    ],
-    "sv": [
-      "I dag kommer vi att tillkännage det nya projektet.",
-      "Jag vill officiellt tillkännage festen.",
-      "Grannarna kommer att meddela att de kommer i morgon.",
-      "Skolan kommer att tillkännage nya regler."
-    ],
-    "ro": [
-      "Astăzi vom anunța noul proiect.",
-      "Vreau să anunț oficial petrecerea.",
-      "Vecinii vor anunța că vor veni mâine.",
-      "Școala va anunța reguli noi."
     ],
     "cs": [
       "Dnes oznámíme nový projekt.",
@@ -943,11 +1183,77 @@
       "Naboerne giver besked om, at de kommer i morgen.",
       "Skolen vil offentliggøre nye regler."
     ],
+    "de": [
+      "Wir werden das neue Projekt heute ankündigen.",
+      "Ich will die Party offiziell ankündigen.",
+      "Die Nachbarn werden einen Besuch für morgen ankündigen.",
+      "Die Schule wird neue Regeln ankündigen."
+    ],
+    "el": [
+      "Σήμερα θα ανακοινώσουμε το νέο έργο.",
+      "Θέλω να ανακοινώσω επίσημα το πάρτι.",
+      "Οι γείτονες θα μας ενημερώσουν ότι θα έρθουν αύριο.",
+      "Το σχολείο θα ανακοινώσει νέους κανόνες."
+    ],
+    "en": [
+      "We will announce the new project today.",
+      "I want to officially announce the party.",
+      "The neighbors will announce a visit for tomorrow.",
+      "The school will announce new rules."
+    ],
+    "es": [
+      "Hoy anunciaremos el nuevo proyecto.",
+      "Quiero anunciar oficialmente la fiesta.",
+      "Los vecinos avisarán que vendrán mañana.",
+      "La escuela anunciará nuevas normas."
+    ],
     "fi": [
       "Tänään julkistamme uuden projektin.",
       "Haluan ilmoittaa juhlasta virallisesti.",
       "Naapurit ilmoittavat, όti he tulevat huomenna.",
       "Koulu julkistaa uudet säännöt."
+    ],
+    "fr": [
+      "Nous annoncerons le nouveau projet aujourd'hui.",
+      "Je veux annoncer officiellement la fête.",
+      "Les voisins vont prévenir qu’ils viendront demain.",
+      "L'école va annoncer de nouvelles règles."
+    ],
+    "he": [
+      "היום נכריז על הפרויקט החדש.",
+      "אני רוצה להכריז רשמית על המסיבה.",
+      "השכנים יודיעו שהם יבואו מחר.",
+      "בית הספר יכריז על כללים חדשים."
+    ],
+    "hi": [
+      "हम आज नए प्रोजेक्ट की घोषणा करेंगे.",
+      "मैं पार्टी की आधिकारिक घोषणा करना चाहता हूँ.",
+      "पड़ोसी बताएँगे कि वे कल आएँगे.",
+      "स्कूल नए नियमों की घोषणा करेगा."
+    ],
+    "hu": [
+      "Ma bejelentjük az új projektet.",
+      "Hivatalosan be akarom jelenteni a bulit.",
+      "A szomszédok jelezni fogják, hogy holnap jönnek.",
+      "Az iskola bejelenti az új szabályokat."
+    ],
+    "id": [
+      "Hari ini kami akan mengumumkan proyek baru.",
+      "Saya ingin mengumumkan pesta ini secara resmi.",
+      "Tetangga akan memberi tahu rằng mereka akan datang besok.",
+      "Sekolah akan mengumumkan peraturan baru."
+    ],
+    "ipa": [
+      "/viːɐ̯ ˈvɛʁdən das ˈnɔʏ̯ə pʁoˈjɛkt ˈhɔʏ̯tə ˈankʏndɪɡən/",
+      "/ɪç vɪl diː ˈpaʁti ɔfitsiˈɛl ˈankʏndɪɡən/",
+      "/diː ˈnaχbaʁn ˈvɛʁdən ˈaɪ̯nən bəˈzuːx fyːɐ̯ ˈmɔʁɡən ˈankʏndɪɡən/",
+      "/diː ˈʃuːlə vɪʁt ˈnɔʏ̯ə ˈʁeːɡlən ˈankʏndɪɡən/"
+    ],
+    "it": [
+      "Oggi annunceremo il nuovo progetto.",
+      "Voglio annunciare ufficialmente la festa.",
+      "I vicini faranno sapere che verranno domani.",
+      "La scuola annuncerà nuove regole."
     ],
     "ja": [
       "今日、新プロジェクトを発表します。",
@@ -955,6 +1261,83 @@
       "近所の人たちは、明日来ると連絡してくるでしょう。",
       "学校は新しい規則を発表します。"
     ],
-    "word_POS": "Verb"
+    "ko": [
+      "오늘 새 프로젝트를 발표할 거예요.",
+      "파티를 공식적으로 알리고 싶어요.",
+      "이웃들이 내일 방문하겠다고 알려줄 거예요.",
+      "학교에서 새 규정을 발표할 거예요."
+    ],
+    "nb": [
+      "I dag skal vi kunngjøre det nye prosjektet.",
+      "Jeg vil offisielt kunngjøre festen.",
+      "Naboene gir beskjed om at de kommer i morgen.",
+      "Skolen vil kunngjøre nye regler."
+    ],
+    "nl": [
+      "We kondigen vandaag het nieuwe project aan.",
+      "Ik wil het feest officieel aankondigen.",
+      "De buren laten weten dat ze morgen langskomen.",
+      "De school zal nieuwe regels aankondigen."
+    ],
+    "pl": [
+      "Dziś ogłosimy nowy projekt.",
+      "Chcę oficjalnie ogłosić imprezę.",
+      "Sąsiedzi dadzą znać, że przyjdą jutro.",
+      "Szkoła ogłosi nowe zasady."
+    ],
+    "pt": [
+      "Hoje vamos anunciar o novo projeto.",
+      "Quero anunciar oficialmente a festa.",
+      "Os vizinhos vão avisar que virão amanhã.",
+      "A escola vai anunciar novas regras."
+    ],
+    "ro": [
+      "Astăzi vom anunța noul proiect.",
+      "Vreau să anunț oficial petrecerea.",
+      "Vecinii vor anunța că vor veni mâine.",
+      "Școala va anunța reguli noi."
+    ],
+    "ru": [
+      "Сегодня мы объявим о новом проекте.",
+      "Я хочу официально объявить о вечеринке.",
+      "Соседи сообщат, что придут завтра.",
+      "Школа объявит новые правила."
+    ],
+    "sv": [
+      "I dag kommer vi att tillkännage det nya projektet.",
+      "Jag vill officiellt tillkännage festen.",
+      "Grannarna kommer att meddela att de kommer i morgon.",
+      "Skolan kommer att tillkännage nya regler."
+    ],
+    "tr": [
+      "Bugün yeni projeyi duyuracağız.",
+      "Partiyi resmen duyurmak istiyorum.",
+      "Komşular yarın geleceklerini haber verecekler.",
+      "Okul yeni kuralları duyuracak."
+    ],
+    "uk": [
+      "Сьогодні ми оголосимо про новий проєкт.",
+      "Я хочу офіційно оголосити про вечірку.",
+      "Сусіди повідомлять, що прийдуть завтра.",
+      "Школа оголосить нові правила."
+    ],
+    "vi": [
+      "Hôm nay chúng tôi sẽ công bố dự án mới.",
+      "Tôi muốn chính thức thông báo về bữa tiệc.",
+      "Hàng xóm sẽ báo là ngày mai họ sẽ đến.",
+      "Nhà trường sẽ công bố các quy định mới."
+    ],
+    "yue": [
+      "我哋今日會公布新項目。",
+      "我想正式宣布會搞呢個派對。",
+      "鄰居會話畀我哋知佢哋聽日會嚟拜訪。",
+      "學校會公布新規定。"
+    ],
+    "zh-Hans": [
+      "我们今天会宣布新项目。",
+      "我想正式宣布要举办这场聚会。",
+      "邻居们会通知他们明天要来拜访。",
+      "学校将公布新规定。"
+    ]
   }
 }

@@ -57,7 +57,7 @@
         "he": "קיבלתי פרס בבית הספר.",
         "hi": "मुझे स्कूल में एक पुरस्कार मिला।",
         "hu": "Kaptam egy díjat az iskolában.",
-        "id": "Saya mendapat hadiah di sekolah.",
+        "id": "Saya menerima penghargaan di sekolah.",
         "it": "Ho ricevuto un premio a scuola.",
         "ko": "나는 학교에서 상을 받았다.",
         "nb": "Jeg fikk en pris på skolen.",
@@ -237,7 +237,7 @@
       "difficulty": null
     },
     {
-      "target": "父は写真で賞をとった。",
+      "target": "父は写真で賞を取った。",
       "reading": "ちちはしゃしんでしょうをとった。",
       "translations": {
         "en": "My father won an award for his photo.",
@@ -289,8 +289,9 @@
               "length": 1
             }
           ],
-          "ruby_confidence": "high",
-          "furigana": "ちち"
+          "ruby_confidence": "reviewed",
+          "furigana": "ちち",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "は",
@@ -328,8 +329,9 @@
               "length": 2
             }
           ],
-          "ruby_confidence": "medium",
-          "furigana": "しゃしん"
+          "ruby_confidence": "reviewed",
+          "furigana": "しゃしん",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "で",
@@ -367,8 +369,9 @@
               "length": 1
             }
           ],
-          "ruby_confidence": "high",
+          "ruby_confidence": "reviewed",
           "furigana": "しょう",
+          "ruby_source": "mediawiki_sentence_ruby",
           "is_main_word": true
         },
         {
@@ -388,8 +391,8 @@
           "furigana": "を"
         },
         {
-          "surface": "とっ",
-          "lemma": "とる",
+          "surface": "取っ",
+          "lemma": "取る",
           "pos": "動詞/一般/*/*/五段-ラ行/連用形-促音便",
           "upos": "VERB",
           "xpos": "動詞",
@@ -398,10 +401,18 @@
           "end": 9,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "とっ",
-          "ruby_text": "とっ",
-          "ruby_spans": [],
-          "ruby_confidence": "high",
-          "furigana": "とっ"
+          "ruby_text": "取[と]っ",
+          "ruby_spans": [
+            {
+              "base": "取",
+              "reading": "と",
+              "start": 0,
+              "length": 1
+            }
+          ],
+          "ruby_confidence": "reviewed",
+          "furigana": "とっ",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "た",
@@ -592,7 +603,7 @@
         "en": "That invention received an award.",
         "ar": "حصل ذلك الاختراع على جائزة.",
         "cs": "Ten vynález dostal cenu.",
-        "da": "Den opfindelse fik en pris.",
+        "da": "Den opfindelse modtog en pris.",
         "de": "Diese Erfindung hat einen Preis bekommen.",
         "el": "Αυτή η εφεύρεση πήρε ένα βραβείο.",
         "es": "Ese invento recibió un premio.",
@@ -783,8 +794,488 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-13T08:02:56Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:Ja n3/0bcf9baa9417707f",
+      "revision_id": 80210,
+      "parent_revision_id": 68348,
+      "revision_timestamp_utc": "2026-10-13T08:02:56Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Corrected an Indonesian translation that read as a gift rather than an award, and standardized the Japanese spelling of the verb “win.”",
+      "pulled_utc": "2026-10-18T17:38:53Z",
+      "applied_utc": "2026-10-18T17:39:28Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-3e93579b69ea60a0",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "ja_n3:0bcf9baa9417707f",
+        "pack_code": "ja_n3",
+        "entry_id": "賞",
+        "language": "ja",
+        "sentence_index": 2,
+        "old_sentence": "父は写真で賞をとった。",
+        "old_translations": {
+          "en": "My father won an award for his photo.",
+          "ar": "فاز أبي بجائزة عن صورته.",
+          "cs": "Můj otec vyhrál cenu za svou fotografii.",
+          "da": "Min far vandt en pris for sit foto.",
+          "de": "Mein Vater hat mit seinem Foto einen Preis gewonnen.",
+          "el": "Ο πατέρας μου κέρδισε ένα βραβείο για τη φωτογραφία του.",
+          "es": "Mi padre ganó un premio por su foto.",
+          "fi": "Isäni voitti palkinnon valokuvallaan.",
+          "fr": "Mon père a gagné un prix pour sa photo.",
+          "he": "אבא שלי זכה בפרס על התמונה שלו.",
+          "hi": "मेरे पिता ने अपनी तस्वीर के लिए पुरस्कार जीता।",
+          "hu": "Az apám díjat nyert a fotójával.",
+          "id": "Ayah saya memenangkan penghargaan untuk fotonya.",
+          "it": "Mio padre ha vinto un premio per la sua foto.",
+          "ko": "아버지는 사진으로 상을 탔다.",
+          "nb": "Pappa vant en pris for bildet sitt.",
+          "nl": "Mijn vader won een prijs voor zijn foto.",
+          "pl": "Mój ojciec wygrał nagrodę za swoje zdjęcie.",
+          "pt": "Meu pai ganhou um prêmio pela foto dele.",
+          "ro": "Tatăl meu a câștigat un premiu pentru fotografia lui.",
+          "ru": "Мой отец получил приз за свою фотографию.",
+          "sv": "Min pappa vann ett pris för sin bild.",
+          "tr": "Babam fotoğrafıyla ödül kazandı.",
+          "uk": "Мій батько отримав приз за своє фото.",
+          "vi": "Bố tôi đã giành được giải thưởng cho bức ảnh của ông ấy.",
+          "yue": "我爸爸憑張相攞咗個獎。",
+          "zh-Hans": "我父亲的照片得了奖。"
+        },
+        "proposed_sentence": "父は写真で賞を取った。",
+        "proposed_translations": {
+          "en": "My father won an award for his photo.",
+          "ar": "فاز أبي بجائزة عن صورته.",
+          "cs": "Můj otec vyhrál cenu za svou fotografii.",
+          "da": "Min far vandt en pris for sit foto.",
+          "de": "Mein Vater hat mit seinem Foto einen Preis gewonnen.",
+          "el": "Ο πατέρας μου κέρδισε ένα βραβείο για τη φωτογραφία του.",
+          "es": "Mi padre ganó un premio por su foto.",
+          "fi": "Isäni voitti palkinnon valokuvallaan.",
+          "fr": "Mon père a gagné un prix pour sa photo.",
+          "he": "אבא שלי זכה בפרס על התמונה שלו.",
+          "hi": "मेरे पिता ने अपनी तस्वीर के लिए पुरस्कार जीता।",
+          "hu": "Az apám díjat nyert a fotójával.",
+          "id": "Ayah saya memenangkan penghargaan untuk fotonya.",
+          "it": "Mio padre ha vinto un premio per la sua foto.",
+          "ko": "아버지는 사진으로 상을 탔다.",
+          "nb": "Pappa vant en pris for bildet sitt.",
+          "nl": "Mijn vader won een prijs voor zijn foto.",
+          "pl": "Mój ojciec wygrał nagrodę za swoje zdjęcie.",
+          "pt": "Meu pai ganhou um prêmio pela foto dele.",
+          "ro": "Tatăl meu a câștigat un premiu pentru fotografia lui.",
+          "ru": "Мой отец получил приз за свою фотографию.",
+          "sv": "Min pappa vann ett pris för sin bild.",
+          "tr": "Babam fotoğrafıyla ödül kazandı.",
+          "uk": "Мій батько отримав приз за своє фото.",
+          "vi": "Bố tôi đã giành được giải thưởng cho bức ảnh của ông ấy.",
+          "yue": "我爸爸憑張相攞咗個獎。",
+          "zh-Hans": "我父亲的照片得了奖。"
+        },
+        "old_ruby_source": "父[ちち]は写真[しゃしん]で賞[しょう]をとった。",
+        "proposed_ruby_source": "父[ちち]は写真[しゃしん]で賞[しょう]を取[と]った。",
+        "old_japanese": "父は写真で賞をとった。",
+        "old_english": "My father won an award for his photo.",
+        "proposed_japanese": "父は写真で賞を取った。",
+        "proposed_english": "My father won an award for his photo.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "ja",
+          "sentence": "父は写真で賞を取った。",
+          "tokens": [
+            {
+              "surface": "父",
+              "lemma": "父",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 0,
+              "end": 1,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "ちち",
+              "ruby_text": "父[ちち]",
+              "ruby_spans": [
+                {
+                  "base": "父",
+                  "reading": "ちち",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "ちち",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "は",
+              "lemma": "は",
+              "pos": "助詞/係助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 1,
+              "end": 2,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "は",
+              "ruby_text": "は",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "は"
+            },
+            {
+              "surface": "写真",
+              "lemma": "写真",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 2,
+              "end": 4,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "しゃしん",
+              "ruby_text": "写真[しゃしん]",
+              "ruby_spans": [
+                {
+                  "base": "写真",
+                  "reading": "しゃしん",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "しゃしん",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "で",
+              "lemma": "で",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 4,
+              "end": 5,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "で",
+              "ruby_text": "で",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "で"
+            },
+            {
+              "surface": "賞",
+              "lemma": "賞",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 5,
+              "end": 6,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "しょう",
+              "ruby_text": "賞[しょう]",
+              "ruby_spans": [
+                {
+                  "base": "賞",
+                  "reading": "しょう",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "しょう",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "を",
+              "lemma": "を",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 6,
+              "end": 7,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "を",
+              "ruby_text": "を",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "を"
+            },
+            {
+              "surface": "取っ",
+              "lemma": "取る",
+              "pos": "動詞/一般/*/*/五段-ラ行/連用形-促音便",
+              "upos": "VERB",
+              "xpos": "動詞",
+              "feats": {},
+              "start": 7,
+              "end": 9,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "とっ",
+              "ruby_text": "取[と]っ",
+              "ruby_spans": [
+                {
+                  "base": "取",
+                  "reading": "と",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "とっ",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "た",
+              "lemma": "た",
+              "pos": "助動詞/*/*/*/助動詞-タ/終止形-一般",
+              "upos": "AUX",
+              "xpos": "助動詞",
+              "feats": {},
+              "start": 9,
+              "end": 10,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "た",
+              "ruby_text": "た",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "た"
+            },
+            {
+              "surface": "。",
+              "lemma": "。",
+              "pos": "補助記号/句点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 10,
+              "end": 11,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "。",
+              "ruby_text": "。",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "。"
+            }
+          ],
+          "reading": "ちちはしゃしんでしょうをとった。",
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "warnings": [
+            "mediawiki ruby hints applied"
+          ]
+        },
+        "generated_tokens": [
+          {
+            "surface": "父",
+            "lemma": "父",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 0,
+            "end": 1,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ちち",
+            "ruby_text": "父[ちち]",
+            "ruby_spans": [
+              {
+                "base": "父",
+                "reading": "ちち",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "ちち",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "は",
+            "lemma": "は",
+            "pos": "助詞/係助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 1,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "は",
+            "ruby_text": "は",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "は"
+          },
+          {
+            "surface": "写真",
+            "lemma": "写真",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 2,
+            "end": 4,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "しゃしん",
+            "ruby_text": "写真[しゃしん]",
+            "ruby_spans": [
+              {
+                "base": "写真",
+                "reading": "しゃしん",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "しゃしん",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "で",
+            "lemma": "で",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 4,
+            "end": 5,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "で",
+            "ruby_text": "で",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "で"
+          },
+          {
+            "surface": "賞",
+            "lemma": "賞",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 5,
+            "end": 6,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "しょう",
+            "ruby_text": "賞[しょう]",
+            "ruby_spans": [
+              {
+                "base": "賞",
+                "reading": "しょう",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "しょう",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "を",
+            "lemma": "を",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 6,
+            "end": 7,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "を",
+            "ruby_text": "を",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "を"
+          },
+          {
+            "surface": "取っ",
+            "lemma": "取る",
+            "pos": "動詞/一般/*/*/五段-ラ行/連用形-促音便",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 7,
+            "end": 9,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "とっ",
+            "ruby_text": "取[と]っ",
+            "ruby_spans": [
+              {
+                "base": "取",
+                "reading": "と",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "とっ",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "た",
+            "lemma": "た",
+            "pos": "助動詞/*/*/*/助動詞-タ/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 9,
+            "end": 10,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "た",
+            "ruby_text": "た",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "た"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 10,
+            "end": 11,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
+          }
+        ],
+        "generated_reading": "ちちはしゃしんでしょうをとった。",
+        "analyzer": "sudachipy_sudachidict_core_c",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-18T17:38:53Z",
+        "updated_utc": "2026-10-18T17:40:51Z",
+        "applied_utc": "2026-10-18T17:40:51Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-18T17:40:51Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -809,12 +1300,6 @@
       "ちちはしゃしんでしょうをとった。",
       "かのじょはしょうがほしい。",
       "そのはつめいはしょうをうけた。"
-    ],
-    "en": [
-      "I got an award at school.",
-      "My father won an award for his photo.",
-      "She wants a prize.",
-      "That invention received an award."
     ],
     "generation": {
       "generator": "vocomipedia_source_generator.py",
@@ -853,190 +1338,6 @@
         "parts_of_speech": "Noun; Noun, used as a suffix"
       }
     },
-    "word_en": "prize; award",
-    "word_es": "premio",
-    "word_fr": "prix",
-    "word_de": "Preis",
-    "word_it": "premio",
-    "word_ko": "상",
-    "word_zh-Hans": "奖",
-    "word_yue": "獎",
-    "word_ru": "приз",
-    "word_pt": "prêmio",
-    "word_he": "פרס",
-    "word_tr": "ödül",
-    "word_vi": "giải",
-    "word_ar": "جائزة",
-    "word_nl": "prijs",
-    "word_uk": "приз",
-    "word_hu": "díj",
-    "word_hi": "पुरस्कार",
-    "word_pl": "nagroda",
-    "word_el": "βραβείο",
-    "word_nb": "pris",
-    "word_id": "hadiah",
-    "word_sv": "pris",
-    "word_ro": "premiu",
-    "word_cs": "cena",
-    "word_da": "pris",
-    "word_fi": "palkinto",
-    "word_ja": "賞",
-    "ar": [
-      "حصلتُ على جائزة في المدرسة.",
-      "فاز أبي بجائزة عن صورته.",
-      "هي تريد جائزة.",
-      "حصل ذلك الاختراع على جائزة."
-    ],
-    "cs": [
-      "Ve škole jsem dostal cenu.",
-      "Můj otec vyhrál cenu za svou fotografii.",
-      "Ona chce cenu.",
-      "Ten vynález dostal cenu."
-    ],
-    "da": [
-      "Jeg fik en pris i skolen.",
-      "Min far vandt en pris for sit foto.",
-      "Hun vil gerne have en præmie.",
-      "Den opfindelse fik en pris."
-    ],
-    "de": [
-      "Ich habe in der Schule einen Preis bekommen.",
-      "Mein Vater hat mit seinem Foto einen Preis gewonnen.",
-      "Sie will einen Preis.",
-      "Diese Erfindung hat einen Preis bekommen."
-    ],
-    "el": [
-      "Πήρα ένα βραβείο στο σχολείο.",
-      "Ο πατέρας μου κέρδισε ένα βραβείο για τη φωτογραφία του.",
-      "Εκείνη θέλει ένα βραβείο.",
-      "Αυτή η εφεύρεση πήρε ένα βραβείο."
-    ],
-    "es": [
-      "Recibí un premio en la escuela.",
-      "Mi padre ganó un premio por su foto.",
-      "Ella quiere un premio.",
-      "Ese invento recibió un premio."
-    ],
-    "fi": [
-      "Sain koulussa palkinnon.",
-      "Isäni voitti palkinnon valokuvallaan.",
-      "Hän haluaa palkinnon.",
-      "Tuo keksintö sai palkinnon."
-    ],
-    "fr": [
-      "J'ai reçu un prix à l'école.",
-      "Mon père a gagné un prix pour sa photo.",
-      "Elle veut un prix.",
-      "Cette invention a reçu un prix."
-    ],
-    "he": [
-      "קיבלתי פרס בבית הספר.",
-      "אבא שלי זכה בפרס על התמונה שלו.",
-      "היא רוצה פרס.",
-      "ההמצאה הזאת קיבלה פרס."
-    ],
-    "hi": [
-      "मुझे स्कूल में एक पुरस्कार मिला।",
-      "मेरे पिता ने अपनी तस्वीर के लिए पुरस्कार जीता।",
-      "वह एक पुरस्कार चाहती है।",
-      "उस आविष्कार को पुरस्कार मिला।"
-    ],
-    "hu": [
-      "Kaptam egy díjat az iskolában.",
-      "Az apám díjat nyert a fotójával.",
-      "Ő szeretne egy díjat.",
-      "Az a találmány díjat kapott."
-    ],
-    "id": [
-      "Saya mendapat hadiah di sekolah.",
-      "Ayah saya memenangkan penghargaan untuk fotonya.",
-      "Dia ingin sebuah hadiah.",
-      "Penemuan itu mendapat penghargaan."
-    ],
-    "it": [
-      "Ho ricevuto un premio a scuola.",
-      "Mio padre ha vinto un premio per la sua foto.",
-      "Lei vuole un premio.",
-      "Quell'invenzione ha ricevuto un premio."
-    ],
-    "ko": [
-      "나는 학교에서 상을 받았다.",
-      "아버지는 사진으로 상을 탔다.",
-      "그녀는 상을 원한다.",
-      "그 발명은 상을 받았다."
-    ],
-    "nb": [
-      "Jeg fikk en pris på skolen.",
-      "Pappa vant en pris for bildet sitt.",
-      "Hun vil ha en premie.",
-      "Den oppfinnelsen fikk en pris."
-    ],
-    "nl": [
-      "Ik kreeg een prijs op school.",
-      "Mijn vader won een prijs voor zijn foto.",
-      "Zij wil een prijs.",
-      "Die uitvinding kreeg een prijs."
-    ],
-    "pl": [
-      "Dostałem nagrodę w szkole.",
-      "Mój ojciec wygrał nagrodę za swoje zdjęcie.",
-      "Ona chce nagrodę.",
-      "Ten wynalazek dostał nagrodę."
-    ],
-    "pt": [
-      "Recebi um prêmio na escola.",
-      "Meu pai ganhou um prêmio pela foto dele.",
-      "Ela quer um prêmio.",
-      "Essa invenção recebeu um prêmio."
-    ],
-    "ro": [
-      "Am primit un premiu la școală.",
-      "Tatăl meu a câștigat un premiu pentru fotografia lui.",
-      "Ea vrea un premiu.",
-      "Acea invenție a primit un premiu."
-    ],
-    "ru": [
-      "Я получил приз в школе.",
-      "Мой отец получил приз за свою фотографию.",
-      "Она хочет приз.",
-      "Это изобретение получило приз."
-    ],
-    "sv": [
-      "Jag fick ett pris i skolan.",
-      "Min pappa vann ett pris för sin bild.",
-      "Hon vill ha ett pris.",
-      "Den uppfinningen fick ett pris."
-    ],
-    "tr": [
-      "Okulda bir ödül aldım.",
-      "Babam fotoğrafıyla ödül kazandı.",
-      "O bir ödül istiyor.",
-      "O icat bir ödül aldı."
-    ],
-    "uk": [
-      "Я отримав приз у школі.",
-      "Мій батько отримав приз за своє фото.",
-      "Вона хоче приз.",
-      "Цей винахід отримав приз."
-    ],
-    "vi": [
-      "Tôi đã nhận được một giải thưởng ở trường.",
-      "Bố tôi đã giành được giải thưởng cho bức ảnh của ông ấy.",
-      "Cô ấy muốn một giải thưởng.",
-      "Phát minh đó đã nhận được một giải thưởng."
-    ],
-    "yue": [
-      "我喺學校攞咗個獎。",
-      "我爸爸憑張相攞咗個獎。",
-      "佢想攞個獎。",
-      "嗰個發明攞咗個獎。"
-    ],
-    "zh-Hans": [
-      "我在学校得了奖。",
-      "我父亲的照片得了奖。",
-      "她想要一个奖。",
-      "那个发明获得了奖。"
-    ],
     "pos_analysis": [
       {
         "sentence": "ぼくは学校で賞をもらった。",
@@ -1204,7 +1505,7 @@
         "difficulty_aggregated": null
       },
       {
-        "sentence": "父は写真で賞をとった。",
+        "sentence": "父は写真で賞を取った。",
         "tokens": [
           {
             "surface": "父",
@@ -1226,8 +1527,9 @@
                 "length": 1
               }
             ],
-            "ruby_confidence": "high",
-            "furigana": "ちち"
+            "ruby_confidence": "reviewed",
+            "furigana": "ちち",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "は",
@@ -1265,8 +1567,9 @@
                 "length": 2
               }
             ],
-            "ruby_confidence": "medium",
-            "furigana": "しゃしん"
+            "ruby_confidence": "reviewed",
+            "furigana": "しゃしん",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "で",
@@ -1304,8 +1607,9 @@
                 "length": 1
               }
             ],
-            "ruby_confidence": "high",
+            "ruby_confidence": "reviewed",
             "furigana": "しょう",
+            "ruby_source": "mediawiki_sentence_ruby",
             "is_main_word": true
           },
           {
@@ -1325,8 +1629,8 @@
             "furigana": "を"
           },
           {
-            "surface": "とっ",
-            "lemma": "とる",
+            "surface": "取っ",
+            "lemma": "取る",
             "pos": "動詞/一般/*/*/五段-ラ行/連用形-促音便",
             "upos": "VERB",
             "xpos": "動詞",
@@ -1335,10 +1639,18 @@
             "end": 9,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "とっ",
-            "ruby_text": "とっ",
-            "ruby_spans": [],
-            "ruby_confidence": "high",
-            "furigana": "とっ"
+            "ruby_text": "取[と]っ",
+            "ruby_spans": [
+              {
+                "base": "取",
+                "reading": "と",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "とっ",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "た",
@@ -1648,6 +1960,196 @@
         ],
         "difficulty_aggregated": null
       }
+    ],
+    "word_en": "prize; award",
+    "word_es": "premio",
+    "word_fr": "prix",
+    "word_de": "Preis",
+    "word_it": "premio",
+    "word_ko": "상",
+    "word_zh-Hans": "奖",
+    "word_yue": "獎",
+    "word_ru": "приз",
+    "word_pt": "prêmio",
+    "word_he": "פרס",
+    "word_tr": "ödül",
+    "word_vi": "giải",
+    "word_ar": "جائزة",
+    "word_nl": "prijs",
+    "word_uk": "приз",
+    "word_hu": "díj",
+    "word_hi": "पुरस्कार",
+    "word_pl": "nagroda",
+    "word_el": "βραβείο",
+    "word_nb": "pris",
+    "word_id": "hadiah",
+    "word_sv": "pris",
+    "word_ro": "premiu",
+    "word_cs": "cena",
+    "word_da": "pris",
+    "word_fi": "palkinto",
+    "word_ja": "賞",
+    "ar": [
+      "حصلتُ على جائزة في المدرسة.",
+      "فاز أبي بجائزة عن صورته.",
+      "هي تريد جائزة.",
+      "حصل ذلك الاختراع على جائزة."
+    ],
+    "cs": [
+      "Ve škole jsem dostal cenu.",
+      "Můj otec vyhrál cenu za svou fotografii.",
+      "Ona chce cenu.",
+      "Ten vynález dostal cenu."
+    ],
+    "da": [
+      "Jeg fik en pris i skolen.",
+      "Min far vandt en pris for sit foto.",
+      "Hun vil gerne have en præmie.",
+      "Den opfindelse modtog en pris."
+    ],
+    "de": [
+      "Ich habe in der Schule einen Preis bekommen.",
+      "Mein Vater hat mit seinem Foto einen Preis gewonnen.",
+      "Sie will einen Preis.",
+      "Diese Erfindung hat einen Preis bekommen."
+    ],
+    "el": [
+      "Πήρα ένα βραβείο στο σχολείο.",
+      "Ο πατέρας μου κέρδισε ένα βραβείο για τη φωτογραφία του.",
+      "Εκείνη θέλει ένα βραβείο.",
+      "Αυτή η εφεύρεση πήρε ένα βραβείο."
+    ],
+    "en": [
+      "I got an award at school.",
+      "My father won an award for his photo.",
+      "She wants a prize.",
+      "That invention received an award."
+    ],
+    "es": [
+      "Recibí un premio en la escuela.",
+      "Mi padre ganó un premio por su foto.",
+      "Ella quiere un premio.",
+      "Ese invento recibió un premio."
+    ],
+    "fi": [
+      "Sain koulussa palkinnon.",
+      "Isäni voitti palkinnon valokuvallaan.",
+      "Hän haluaa palkinnon.",
+      "Tuo keksintö sai palkinnon."
+    ],
+    "fr": [
+      "J'ai reçu un prix à l'école.",
+      "Mon père a gagné un prix pour sa photo.",
+      "Elle veut un prix.",
+      "Cette invention a reçu un prix."
+    ],
+    "he": [
+      "קיבלתי פרס בבית הספר.",
+      "אבא שלי זכה בפרס על התמונה שלו.",
+      "היא רוצה פרס.",
+      "ההמצאה הזאת קיבלה פרס."
+    ],
+    "hi": [
+      "मुझे स्कूल में एक पुरस्कार मिला।",
+      "मेरे पिता ने अपनी तस्वीर के लिए पुरस्कार जीता।",
+      "वह एक पुरस्कार चाहती है।",
+      "उस आविष्कार को पुरस्कार मिला।"
+    ],
+    "hu": [
+      "Kaptam egy díjat az iskolában.",
+      "Az apám díjat nyert a fotójával.",
+      "Ő szeretne egy díjat.",
+      "Az a találmány díjat kapott."
+    ],
+    "id": [
+      "Saya menerima penghargaan di sekolah.",
+      "Ayah saya memenangkan penghargaan untuk fotonya.",
+      "Dia ingin sebuah hadiah.",
+      "Penemuan itu mendapat penghargaan."
+    ],
+    "it": [
+      "Ho ricevuto un premio a scuola.",
+      "Mio padre ha vinto un premio per la sua foto.",
+      "Lei vuole un premio.",
+      "Quell'invenzione ha ricevuto un premio."
+    ],
+    "ko": [
+      "나는 학교에서 상을 받았다.",
+      "아버지는 사진으로 상을 탔다.",
+      "그녀는 상을 원한다.",
+      "그 발명은 상을 받았다."
+    ],
+    "nb": [
+      "Jeg fikk en pris på skolen.",
+      "Pappa vant en pris for bildet sitt.",
+      "Hun vil ha en premie.",
+      "Den oppfinnelsen fikk en pris."
+    ],
+    "nl": [
+      "Ik kreeg een prijs op school.",
+      "Mijn vader won een prijs voor zijn foto.",
+      "Zij wil een prijs.",
+      "Die uitvinding kreeg een prijs."
+    ],
+    "pl": [
+      "Dostałem nagrodę w szkole.",
+      "Mój ojciec wygrał nagrodę za swoje zdjęcie.",
+      "Ona chce nagrodę.",
+      "Ten wynalazek dostał nagrodę."
+    ],
+    "pt": [
+      "Recebi um prêmio na escola.",
+      "Meu pai ganhou um prêmio pela foto dele.",
+      "Ela quer um prêmio.",
+      "Essa invenção recebeu um prêmio."
+    ],
+    "ro": [
+      "Am primit un premiu la școală.",
+      "Tatăl meu a câștigat un premiu pentru fotografia lui.",
+      "Ea vrea un premiu.",
+      "Acea invenție a primit un premiu."
+    ],
+    "ru": [
+      "Я получил приз в школе.",
+      "Мой отец получил приз за свою фотографию.",
+      "Она хочет приз.",
+      "Это изобретение получило приз."
+    ],
+    "sv": [
+      "Jag fick ett pris i skolan.",
+      "Min pappa vann ett pris för sin bild.",
+      "Hon vill ha ett pris.",
+      "Den uppfinningen fick ett pris."
+    ],
+    "tr": [
+      "Okulda bir ödül aldım.",
+      "Babam fotoğrafıyla ödül kazandı.",
+      "O bir ödül istiyor.",
+      "O icat bir ödül aldı."
+    ],
+    "uk": [
+      "Я отримав приз у школі.",
+      "Мій батько отримав приз за своє фото.",
+      "Вона хоче приз.",
+      "Цей винахід отримав приз."
+    ],
+    "vi": [
+      "Tôi đã nhận được một giải thưởng ở trường.",
+      "Bố tôi đã giành được giải thưởng cho bức ảnh của ông ấy.",
+      "Cô ấy muốn một giải thưởng.",
+      "Phát minh đó đã nhận được một giải thưởng."
+    ],
+    "yue": [
+      "我喺學校攞咗個獎。",
+      "我爸爸憑張相攞咗個獎。",
+      "佢想攞個獎。",
+      "嗰個發明攞咗個獎。"
+    ],
+    "zh-Hans": [
+      "我在学校得了奖。",
+      "我父亲的照片得了奖。",
+      "她想要一个奖。",
+      "那个发明获得了奖。"
     ]
   }
 }

@@ -30,7 +30,7 @@
     "nl": "vlucht; vluchtnummer",
     "uk": "польот; Номер польоту",
     "hu": "repülés; Járatszám",
-    "hi": "पलायन; उड़ान संख्या",
+    "hi": "उड़ान; उड़ान संख्या",
     "pl": "lot; Numer lotu",
     "el": "πτήση; αριθμός πτήσης",
     "nb": "flyvning; Flynummer",
@@ -38,8 +38,8 @@
     "sv": "flygning; Flygnummer",
     "ro": "zbor; Numărul zborului",
     "cs": "let; Číslo letu",
-    "da": "flyvning; Flyvningsnummer",
-    "fi": "lentäminen; Lentonumero"
+    "da": "flyvning; flynummer",
+    "fi": "lento; lentonumero"
   },
   "sentences": [
     {
@@ -51,7 +51,7 @@
         "fr": "J’ai réservé le vol JAL123.",
         "de": "Ich habe Flug JAL123 gebucht.",
         "it": "Ho prenotato il volo JAL123.",
-        "ko": "저는 JAL123편 비행기를 예약했습니다.",
+        "ko": "저는 JAL123편을 예약했습니다.",
         "zh-Hans": "我订的是JAL123航班。",
         "yue": "我訂咗JAL123航班。",
         "ru": "Я забронировал рейс JAL123.",
@@ -196,7 +196,7 @@
         "it": "Il volo di domani parte alle 8 del mattino.",
         "ko": "내일 비행기는 오전 8시에 출발합니다.",
         "zh-Hans": "明天的航班是早上8点起飞。",
-        "yue": "听日嘅航班朝早8点起飞。",
+        "yue": "聽日嘅航班朝早8點起飛。",
         "ru": "Завтрашний рейс вылетает в 8 утра.",
         "pt": "O voo de amanhã parte às 8h.",
         "he": "הטיסה של מחר יוצאת בשעה 8:00 בבוקר.",
@@ -214,7 +214,7 @@
         "sv": "Morgondagens flyg avgår klockan 8 på morgonen.",
         "ro": "Zborul de mâine pleacă la ora 8 dimineața.",
         "cs": "Zítřejší let odlétá v 8 ráno.",
-        "da": "Morgendagens fly afgår kl. 8.",
+        "da": "Morgendagens fly afgår kl. 8 om morgenen.",
         "fi": "Huomisen lento lähtee klo 8 aamulla."
       },
       "tokens": [
@@ -399,13 +399,13 @@
         "fr": "Ce vol arrivera bientôt.",
         "de": "Dieser Flug wird bald ankommen.",
         "it": "Questo volo arriverà presto.",
-        "ko": "이 비행기가 곧 도착할 거야.",
+        "ko": "이 비행기가 곧 도착할 거예요.",
         "zh-Hans": "这班飞机很快就会到达。",
         "yue": "呢班機就快到啦",
         "ru": "Этот рейс скоро прибудет.",
         "pt": "Este voo chegará em breve.",
         "he": "הטיסה הזו תגיע בקרוב.",
-        "tr": "Bu uçuş yakında gelecek.",
+        "tr": "Bu uçuş yakında varacak.",
         "vi": "Chuyến bay này sẽ sớm đến.",
         "ar": "هذه الرحلة ستصل قريبا.",
         "nl": "Deze vlucht arriveert binnenkort.",
@@ -414,9 +414,9 @@
         "hi": "यह फ्लाइट जल्द ही आ जाएगी।",
         "pl": "Ten lot wkrótce przyleci.",
         "el": "Αυτή η πτήση θα φτάσει σύντομα.",
-        "nb": "Dette flyet kommer snart.",
+        "nb": "Dette flyet ankommer snart.",
         "id": "Penerbangan ini akan segera tiba.",
-        "sv": "Det här flyget kommer snart.",
+        "sv": "Det här flyget anländer snart.",
         "ro": "Acest zbor va sosi în curând.",
         "cs": "Tento let brzy dorazí.",
         "da": "Dette fly ankommer snart.",
@@ -530,14 +530,14 @@
       "target": "国際便の案内所はどこですか？",
       "reading": "こくさいびんのあんないしょはどこですか？",
       "translations": {
-        "en": "Where is the international flights information desk?",
+        "en": "Where is the information desk for international flights?",
         "es": "¿Dónde está el mostrador de información de vuelos internacionales?",
         "fr": "Où se trouve le comptoir d’information des vols internationaux ?",
         "de": "Wo befindet sich der Informationsschalter für internationale Flüge?",
         "it": "Dov'è il banco informazioni sui voli internazionali?",
         "ko": "국제선 안내 데스크는 어디에 있나요?",
         "zh-Hans": "国际航班信息台在哪里？",
-        "yue": "国际航班问讯处喺边度？",
+        "yue": "國際航班問訊處喺邊度？",
         "ru": "Где находится информационная стойка международных рейсов?",
         "pt": "Onde fica o balcão de informações de voos internacionais?",
         "he": "איפה דלפק המידע לטיסות בינלאומיות?",
@@ -546,7 +546,7 @@
         "ar": "أين مكتب معلومات الرحلات الدولية؟",
         "nl": "Waar is de informatiebalie voor internationale vluchten?",
         "uk": "Де знаходиться інформаційна стійка міжнародних рейсів?",
-        "hu": "Hol van a nemzetközi repülőjegy-információs pult?",
+        "hu": "Hol van a nemzetközi járatok információs pultja?",
         "hi": "अंतर्राष्ट्रीय उड़ान सूचना डेस्क कहां है?",
         "pl": "Gdzie znajduje się punkt informacji lotów międzynarodowych?",
         "el": "Πού είναι το γραφείο πληροφοριών διεθνών πτήσεων;",
@@ -700,8 +700,22 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-13T01:26:55Z",
+    "approval_source": "mediawiki_visible_revision",
+    "wiki": {
+      "title": "Item:Ja n4/9b92d47957460219",
+      "revision_id": 81172,
+      "parent_revision_id": 31298,
+      "revision_timestamp_utc": "2026-10-13T01:26:55Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Corrected an inaccurate Hindi gloss and improved flight booking, arrival, timing, and information-desk wording.",
+      "pulled_utc": "2026-10-18T17:47:24Z",
+      "applied_utc": "2026-10-18T17:47:56Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    }
   },
   "provenance": {
     "origin": "legacy_import",
@@ -718,33 +732,6 @@
   "app_payload": {
     "word": "便",
     "word_reading": "びん",
-    "word_en": "flight; flight number",
-    "word_es": "vuelo; Número de vuelo",
-    "word_fr": "vol; Numéro de vol",
-    "word_de": "Flug; Flugnummer",
-    "word_it": "il volo; Numero di volo",
-    "word_ko": "비행; 항공편 번호",
-    "word_zh-Hans": "飞行;航班号",
-    "word_yue": "飛行;航班號",
-    "word_ru": "полёт; Номер рейса",
-    "word_pt": "voo; Número do voo",
-    "word_he": "טיסה; מספר טיסה",
-    "word_tr": "uçuş; Uçuş numarası",
-    "word_vi": "chuyến bay; Số hiệu chuyến bay",
-    "word_ar": "الطيران؛ رقم الرحلة",
-    "word_nl": "vlucht; vluchtnummer",
-    "word_uk": "польот; Номер польоту",
-    "word_hu": "repülés; Járatszám",
-    "word_hi": "पलायन; उड़ान संख्या",
-    "word_pl": "lot; Numer lotu",
-    "word_el": "πτήση; αριθμός πτήσης",
-    "word_nb": "flyvning; Flynummer",
-    "word_id": "penerbangan; Nomor penerbangan",
-    "word_sv": "flygning; Flygnummer",
-    "word_ro": "zbor; Numărul zborului",
-    "word_cs": "let; Číslo letu",
-    "word_da": "flyvning; Flyvningsnummer",
-    "word_fi": "lentäminen; Lentonumero",
     "comic_difficulty": 4.07,
     "jp": [
       "私はJAL123便を予約しました。",
@@ -753,16 +740,10 @@
       "国際便の案内所はどこですか？"
     ],
     "fu": [
-      "わたしはJAL123びんをよやくしました。",
-      "あしたのびんはあさはちじにしゅっぱつします。",
+      "わたくしはJAL123びんをよやくしました。",
+      "あすのびんはあさはちじにしゅっぱつします。",
       "このびんはもうすぐとうちゃくします。",
-      "こくさいびんのあんないじょはどこですか？"
-    ],
-    "en": [
-      "I booked flight JAL123.",
-      "Tomorrow's flight departs at 8 AM.",
-      "This flight will arrive soon.",
-      "Where is the international flights information desk?"
+      "こくさいびんのあんないしょはどこですか？"
     ],
     "pos_analysis": [
       {
@@ -1288,143 +1269,40 @@
         "difficulty_aggregated": 1
       }
     ],
-    "es": [
-      "Reservé el vuelo JAL123.",
-      "El vuelo de mañana sale a las 8 de la mañana.",
-      "Este vuelo llegará pronto.",
-      "¿Dónde está el mostrador de información de vuelos internacionales?"
-    ],
-    "fr": [
-      "J’ai réservé le vol JAL123.",
-      "Le vol de demain part à 8h.",
-      "Ce vol arrivera bientôt.",
-      "Où se trouve le comptoir d’information des vols internationaux ?"
-    ],
-    "de": [
-      "Ich habe Flug JAL123 gebucht.",
-      "Der morgige Flug startet um 8 Uhr morgens.",
-      "Dieser Flug wird bald ankommen.",
-      "Wo befindet sich der Informationsschalter für internationale Flüge?"
-    ],
-    "it": [
-      "Ho prenotato il volo JAL123.",
-      "Il volo di domani parte alle 8 del mattino.",
-      "Questo volo arriverà presto.",
-      "Dov'è il banco informazioni sui voli internazionali?"
-    ],
-    "ko": [
-      "저는 JAL123편 비행기를 예약했습니다.",
-      "내일 비행기는 오전 8시에 출발합니다.",
-      "이 비행기가 곧 도착할 거야.",
-      "국제선 안내 데스크는 어디에 있나요?"
-    ],
-    "zh-Hans": [
-      "我订的是JAL123航班。",
-      "明天的航班是早上8点起飞。",
-      "这班飞机很快就会到达。",
-      "国际航班信息台在哪里？"
-    ],
-    "yue": [
-      "我訂咗JAL123航班。",
-      "听日嘅航班朝早8点起飞。",
-      "呢班機就快到啦",
-      "国际航班问讯处喺边度？"
-    ],
-    "ru": [
-      "Я забронировал рейс JAL123.",
-      "Завтрашний рейс вылетает в 8 утра.",
-      "Этот рейс скоро прибудет.",
-      "Где находится информационная стойка международных рейсов?"
-    ],
-    "pt": [
-      "Reservei o voo JAL123.",
-      "O voo de amanhã parte às 8h.",
-      "Este voo chegará em breve.",
-      "Onde fica o balcão de informações de voos internacionais?"
-    ],
-    "he": [
-      "הזמנתי טיסה JAL123.",
-      "הטיסה של מחר יוצאת בשעה 8:00 בבוקר.",
-      "הטיסה הזו תגיע בקרוב.",
-      "איפה דלפק המידע לטיסות בינלאומיות?"
-    ],
-    "tr": [
-      "JAL123 uçuşunu rezerve ettim.",
-      "Yarınki uçuş sabah 8'de kalkıyor.",
-      "Bu uçuş yakında gelecek.",
-      "Uluslararası uçuş bilgi masası nerede?"
-    ],
-    "vi": [
-      "Tôi đã đặt chuyến bay JAL123.",
-      "Chuyến bay ngày mai khởi hành lúc 8 giờ sáng.",
-      "Chuyến bay này sẽ sớm đến.",
-      "Quầy thông tin chuyến bay quốc tế ở đâu?"
-    ],
+    "word_POS": "Noun",
+    "entry_id": "便",
+    "word_en": "flight; flight number",
+    "word_es": "vuelo; Número de vuelo",
+    "word_fr": "vol; Numéro de vol",
+    "word_de": "Flug; Flugnummer",
+    "word_it": "il volo; Numero di volo",
+    "word_ko": "비행; 항공편 번호",
+    "word_zh-Hans": "飞行;航班号",
+    "word_yue": "飛行;航班號",
+    "word_ru": "полёт; Номер рейса",
+    "word_pt": "voo; Número do voo",
+    "word_he": "טיסה; מספר טיסה",
+    "word_tr": "uçuş; Uçuş numarası",
+    "word_vi": "chuyến bay; Số hiệu chuyến bay",
+    "word_ar": "الطيران؛ رقم الرحلة",
+    "word_nl": "vlucht; vluchtnummer",
+    "word_uk": "польот; Номер польоту",
+    "word_hu": "repülés; Járatszám",
+    "word_hi": "उड़ान; उड़ान संख्या",
+    "word_pl": "lot; Numer lotu",
+    "word_el": "πτήση; αριθμός πτήσης",
+    "word_nb": "flyvning; Flynummer",
+    "word_id": "penerbangan; Nomor penerbangan",
+    "word_sv": "flygning; Flygnummer",
+    "word_ro": "zbor; Numărul zborului",
+    "word_cs": "let; Číslo letu",
+    "word_da": "flyvning; flynummer",
+    "word_fi": "lento; lentonumero",
     "ar": [
       "حجزت رحلة JAL123.",
       "رحلة الغد تغادر الساعة 8 صباحا.",
       "هذه الرحلة ستصل قريبا.",
       "أين مكتب معلومات الرحلات الدولية؟"
-    ],
-    "nl": [
-      "Ik heb vlucht JAL123 geboekt.",
-      "De vlucht van morgen vertrekt om 8 uur 's ochtends.",
-      "Deze vlucht arriveert binnenkort.",
-      "Waar is de informatiebalie voor internationale vluchten?"
-    ],
-    "uk": [
-      "Я забронював рейс JAL123.",
-      "Завтрашній рейс вилітає о 8 ранку.",
-      "Цей рейс скоро прибуде.",
-      "Де знаходиться інформаційна стійка міжнародних рейсів?"
-    ],
-    "hu": [
-      "Lefoglaltam a JAL123-as járatot.",
-      "A holnapi járat reggel 8-kor indul.",
-      "Ez a járat hamarosan megérkezik.",
-      "Hol van a nemzetközi repülőjegy-információs pult?"
-    ],
-    "hi": [
-      "मैंने उड़ान JAL123 बुक की।",
-      "कल की फ्लाइट सुबह 8 बजे रवाना होती है।",
-      "यह फ्लाइट जल्द ही आ जाएगी।",
-      "अंतर्राष्ट्रीय उड़ान सूचना डेस्क कहां है?"
-    ],
-    "pl": [
-      "Zarezerwowałem lot JAL123.",
-      "Jutrzejszy lot odlatuje o 8 rano.",
-      "Ten lot wkrótce przyleci.",
-      "Gdzie znajduje się punkt informacji lotów międzynarodowych?"
-    ],
-    "el": [
-      "Έκλεισα την πτήση JAL123.",
-      "Η αυριανή πτήση αναχωρεί στις 8 το πρωί.",
-      "Αυτή η πτήση θα φτάσει σύντομα.",
-      "Πού είναι το γραφείο πληροφοριών διεθνών πτήσεων;"
-    ],
-    "nb": [
-      "Jeg bestilte fly JAL123.",
-      "Morgendagens fly går klokken 08.00.",
-      "Dette flyet kommer snart.",
-      "Hvor er informasjonsdisken for internasjonale flyvninger?"
-    ],
-    "id": [
-      "Saya memesan penerbangan JAL123.",
-      "Penerbangan besok berangkat pukul 8 pagi.",
-      "Penerbangan ini akan segera tiba.",
-      "Di mana meja informasi penerbangan internasional?"
-    ],
-    "sv": [
-      "Jag bokade flyg JAL123.",
-      "Morgondagens flyg avgår klockan 8 på morgonen.",
-      "Det här flyget kommer snart.",
-      "Var finns informationsdisken för internationella flyg?"
-    ],
-    "ro": [
-      "Am rezervat zborul JAL123.",
-      "Zborul de mâine pleacă la ora 8 dimineața.",
-      "Acest zbor va sosi în curând.",
-      "Unde este biroul de informații pentru zboruri internaționale?"
     ],
     "cs": [
       "Rezervoval jsem let JAL123.",
@@ -1434,9 +1312,33 @@
     ],
     "da": [
       "Jeg har booket fly JAL123.",
-      "Morgendagens fly afgår kl. 8.",
+      "Morgendagens fly afgår kl. 8 om morgenen.",
       "Dette fly ankommer snart.",
       "Hvor er informationsskranken for internationale flyvninger?"
+    ],
+    "de": [
+      "Ich habe Flug JAL123 gebucht.",
+      "Der morgige Flug startet um 8 Uhr morgens.",
+      "Dieser Flug wird bald ankommen.",
+      "Wo befindet sich der Informationsschalter für internationale Flüge?"
+    ],
+    "el": [
+      "Έκλεισα την πτήση JAL123.",
+      "Η αυριανή πτήση αναχωρεί στις 8 το πρωί.",
+      "Αυτή η πτήση θα φτάσει σύντομα.",
+      "Πού είναι το γραφείο πληροφοριών διεθνών πτήσεων;"
+    ],
+    "en": [
+      "I booked flight JAL123.",
+      "Tomorrow's flight departs at 8 AM.",
+      "This flight will arrive soon.",
+      "Where is the information desk for international flights?"
+    ],
+    "es": [
+      "Reservé el vuelo JAL123.",
+      "El vuelo de mañana sale a las 8 de la mañana.",
+      "Este vuelo llegará pronto.",
+      "¿Dónde está el mostrador de información de vuelos internacionales?"
     ],
     "fi": [
       "Varasin lennon JAL123.",
@@ -1444,6 +1346,119 @@
       "Tämä lento saapuu pian.",
       "Missä on kansainvälisten lentojen tiedotuspiste?"
     ],
-    "word_POS": "Noun"
+    "fr": [
+      "J’ai réservé le vol JAL123.",
+      "Le vol de demain part à 8h.",
+      "Ce vol arrivera bientôt.",
+      "Où se trouve le comptoir d’information des vols internationaux ?"
+    ],
+    "he": [
+      "הזמנתי טיסה JAL123.",
+      "הטיסה של מחר יוצאת בשעה 8:00 בבוקר.",
+      "הטיסה הזו תגיע בקרוב.",
+      "איפה דלפק המידע לטיסות בינלאומיות?"
+    ],
+    "hi": [
+      "मैंने उड़ान JAL123 बुक की।",
+      "कल की फ्लाइट सुबह 8 बजे रवाना होती है।",
+      "यह फ्लाइट जल्द ही आ जाएगी।",
+      "अंतर्राष्ट्रीय उड़ान सूचना डेस्क कहां है?"
+    ],
+    "hu": [
+      "Lefoglaltam a JAL123-as járatot.",
+      "A holnapi járat reggel 8-kor indul.",
+      "Ez a járat hamarosan megérkezik.",
+      "Hol van a nemzetközi járatok információs pultja?"
+    ],
+    "id": [
+      "Saya memesan penerbangan JAL123.",
+      "Penerbangan besok berangkat pukul 8 pagi.",
+      "Penerbangan ini akan segera tiba.",
+      "Di mana meja informasi penerbangan internasional?"
+    ],
+    "it": [
+      "Ho prenotato il volo JAL123.",
+      "Il volo di domani parte alle 8 del mattino.",
+      "Questo volo arriverà presto.",
+      "Dov'è il banco informazioni sui voli internazionali?"
+    ],
+    "ko": [
+      "저는 JAL123편을 예약했습니다.",
+      "내일 비행기는 오전 8시에 출발합니다.",
+      "이 비행기가 곧 도착할 거예요.",
+      "국제선 안내 데스크는 어디에 있나요?"
+    ],
+    "nb": [
+      "Jeg bestilte fly JAL123.",
+      "Morgendagens fly går klokken 08.00.",
+      "Dette flyet ankommer snart.",
+      "Hvor er informasjonsdisken for internasjonale flyvninger?"
+    ],
+    "nl": [
+      "Ik heb vlucht JAL123 geboekt.",
+      "De vlucht van morgen vertrekt om 8 uur 's ochtends.",
+      "Deze vlucht arriveert binnenkort.",
+      "Waar is de informatiebalie voor internationale vluchten?"
+    ],
+    "pl": [
+      "Zarezerwowałem lot JAL123.",
+      "Jutrzejszy lot odlatuje o 8 rano.",
+      "Ten lot wkrótce przyleci.",
+      "Gdzie znajduje się punkt informacji lotów międzynarodowych?"
+    ],
+    "pt": [
+      "Reservei o voo JAL123.",
+      "O voo de amanhã parte às 8h.",
+      "Este voo chegará em breve.",
+      "Onde fica o balcão de informações de voos internacionais?"
+    ],
+    "ro": [
+      "Am rezervat zborul JAL123.",
+      "Zborul de mâine pleacă la ora 8 dimineața.",
+      "Acest zbor va sosi în curând.",
+      "Unde este biroul de informații pentru zboruri internaționale?"
+    ],
+    "ru": [
+      "Я забронировал рейс JAL123.",
+      "Завтрашний рейс вылетает в 8 утра.",
+      "Этот рейс скоро прибудет.",
+      "Где находится информационная стойка международных рейсов?"
+    ],
+    "sv": [
+      "Jag bokade flyg JAL123.",
+      "Morgondagens flyg avgår klockan 8 på morgonen.",
+      "Det här flyget anländer snart.",
+      "Var finns informationsdisken för internationella flyg?"
+    ],
+    "tr": [
+      "JAL123 uçuşunu rezerve ettim.",
+      "Yarınki uçuş sabah 8'de kalkıyor.",
+      "Bu uçuş yakında varacak.",
+      "Uluslararası uçuş bilgi masası nerede?"
+    ],
+    "uk": [
+      "Я забронював рейс JAL123.",
+      "Завтрашній рейс вилітає о 8 ранку.",
+      "Цей рейс скоро прибуде.",
+      "Де знаходиться інформаційна стійка міжнародних рейсів?"
+    ],
+    "vi": [
+      "Tôi đã đặt chuyến bay JAL123.",
+      "Chuyến bay ngày mai khởi hành lúc 8 giờ sáng.",
+      "Chuyến bay này sẽ sớm đến.",
+      "Quầy thông tin chuyến bay quốc tế ở đâu?"
+    ],
+    "yue": [
+      "我訂咗JAL123航班。",
+      "聽日嘅航班朝早8點起飛。",
+      "呢班機就快到啦",
+      "國際航班問訊處喺邊度？"
+    ],
+    "zh-Hans": [
+      "我订的是JAL123航班。",
+      "明天的航班是早上8点起飞。",
+      "这班飞机很快就会到达。",
+      "国际航班信息台在哪里？"
+    ]
   }
 }

@@ -44,10 +44,10 @@
   },
   "sentences": [
     {
-      "target": "Wohin gehst du heute?",
+      "target": "Wo bist du gerade?",
       "reading": "/voːˈhɪn ɡeːst duː ˈhɔʏ̯tə/",
       "translations": {
-        "de": "Wohin gehst du heute.",
+        "de": "Wo bist du gerade?",
         "ipa": "/voːˈhɪn ɡeːst duː ˈhɔʏ̯tə/",
         "en": "Where are you going today.",
         "es": "¿Adónde vas hoy?",
@@ -79,41 +79,59 @@
       },
       "tokens": [
         {
-          "surface": "Wohin",
-          "surface_en": "where to",
-          "furigana": "[voːˈhɪn]",
+          "surface": "Wo",
+          "lemma": "wo",
           "pos": "ADV",
-          "lemma": "wohin",
-          "explanation": "Interrogative directional adverb asking about destination; initiates a wh-question.",
-          "difficulty": 7,
-          "is_main_word": true
+          "upos": "ADV",
+          "xpos": "PWAV",
+          "feats": {},
+          "start": 0,
+          "end": 2,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "gehst",
-          "surface_en": "go (2sg)",
-          "furigana": "[ɡeːst]",
-          "pos": "VERB",
-          "lemma": "gehen",
-          "explanation": "Finite main verb, present indicative, 2nd person singular; expresses motion.",
-          "difficulty": 7
+          "surface": "bist",
+          "lemma": "sein",
+          "pos": "AUX",
+          "upos": "AUX",
+          "xpos": "VAFIN",
+          "feats": {},
+          "start": 3,
+          "end": 7,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "du",
-          "surface_en": "you",
-          "furigana": "[duː]",
-          "pos": "PRON",
           "lemma": "du",
-          "explanation": "Personal pronoun, nominative, 2nd person singular; subject of the clause.",
-          "difficulty": 2
+          "pos": "PRON",
+          "upos": "PRON",
+          "xpos": "PPER",
+          "feats": {},
+          "start": 8,
+          "end": 10,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "heute?",
-          "surface_en": "today",
-          "furigana": "[ˈhɔʏ̯tə]",
+          "surface": "gerade",
+          "lemma": "gerade",
           "pos": "ADV",
-          "lemma": "heute",
-          "explanation": "Temporal adverb specifying the time frame.",
-          "difficulty": 7
+          "upos": "ADV",
+          "xpos": "ADV",
+          "feats": {},
+          "start": 11,
+          "end": 17,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "?",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 17,
+          "end": 18,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 5.75
@@ -122,9 +140,9 @@
       "target": "Wohin fährt der Bus bitte?",
       "reading": "/voːˈhɪn fɛːɐ̯t deːɐ̯ bʊs ˈbɪtə/",
       "translations": {
-        "de": "Wohin fährt der Bus bitte.",
+        "de": "Wohin fährt der Bus bitte?",
         "ipa": "/voːˈhɪn fɛːɐ̯t deːɐ̯ bʊs ˈbɪtə/",
-        "en": "Where does the bus go, please.",
+        "en": "Where does the bus go, please?",
         "es": "¿Adónde va el autobús, por favor?",
         "fr": "Le bus va où, s’il vous plaît ?",
         "it": "Dove va il bus, per favore?",
@@ -206,9 +224,9 @@
       "target": "Wohin soll ich die Tasche stellen?",
       "reading": "/voːˈhɪn zɔl ɪç diː ˈtaʃə ˈʃtɛlən/",
       "translations": {
-        "de": "Wohin soll ich die Tasche stellen.",
+        "de": "Wohin soll ich die Tasche stellen?",
         "ipa": "/voːˈhɪn zɔl ɪç diː ˈtaʃə ˈʃtɛlən/",
-        "en": "Where should I put the bag.",
+        "en": "Where should I put the bag?",
         "es": "¿Dónde dejo la bolsa?",
         "fr": "Je pose le sac où ?",
         "it": "Dove metto la borsa?",
@@ -299,9 +317,9 @@
       "target": "Wohin will sie nach der Arbeit gehen?",
       "reading": "/voːˈhɪn vɪl ziː naːx deːɐ̯ ˈaʁbaɪ̯t ˈɡeːən/",
       "translations": {
-        "de": "Wohin will sie nach der Arbeit gehen.",
+        "de": "Wohin will sie nach der Arbeit gehen?",
         "ipa": "/voːˈhɪn vɪl ziː naːx deːɐ̯ ˈaʁbaɪ̯t ˈɡeːən/",
-        "en": "Where does she want to go after work.",
+        "en": "Where does she want to go after work?",
         "es": "¿Adónde quiere ir después del trabajo?",
         "fr": "Elle veut aller où après le travail ?",
         "it": "Dove vuole andare dopo il lavoro?",
@@ -409,8 +427,248 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-14T21:47:56Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:De a1/779b4a49bad313e0",
+      "revision_id": 86250,
+      "parent_revision_id": 13704,
+      "revision_timestamp_utc": "2026-10-14T21:47:56Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Content suggestion: improve German or translation wording",
+      "pulled_utc": "2026-10-18T17:32:04Z",
+      "applied_utc": "2026-10-18T17:32:15Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-8369baee18119010",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_a1:779b4a49bad313e0",
+        "pack_code": "de_a1",
+        "entry_id": "wohin",
+        "language": "de",
+        "sentence_index": 1,
+        "old_sentence": "Wohin gehst du heute?",
+        "old_translations": {
+          "de": "Wohin gehst du heute.",
+          "ipa": "/voːˈhɪn ɡeːst duː ˈhɔʏ̯tə/",
+          "en": "Where are you going today.",
+          "es": "¿Adónde vas hoy?",
+          "fr": "Tu vas où aujourd'hui ?",
+          "it": "Dove vai oggi?",
+          "ko": "오늘 어디 가요?",
+          "zh-Hans": "你今天要去哪里？",
+          "yue": "你今日去邊度？",
+          "ru": "Куда ты сегодня идёшь?",
+          "pt": "Para onde vais hoje?",
+          "he": "לאן אתה הולך היום?",
+          "tr": "Bugün nereye gidiyorsun?",
+          "vi": "Hôm nay bạn đi đâu?",
+          "ar": "إلى أين تذهب اليوم؟",
+          "nl": "Waar ga je vandaag heen?",
+          "uk": "Куди ти сьогодні йдеш?",
+          "hu": "Hová mész ma?",
+          "hi": "आज तुम कहाँ जा रहे हो?",
+          "pl": "Dokąd dziś idziesz?",
+          "el": "Πού πας σήμερα;",
+          "nb": "Hvor skal du i dag?",
+          "id": "Kamu mau ke mana hari ini?",
+          "sv": "Vart ska du i dag?",
+          "ro": "Unde mergi azi?",
+          "cs": "Kam dnes jdeš?",
+          "da": "Hvor skal du hen i dag?",
+          "fi": "Minne menet tänään?",
+          "ja": "今日はどこに行くの？"
+        },
+        "proposed_sentence": "Wo bist du gerade?",
+        "proposed_translations": {
+          "de": "Wo bist du gerade?",
+          "ipa": "/voːˈhɪn ɡeːst duː ˈhɔʏ̯tə/",
+          "en": "Where are you going today.",
+          "es": "¿Adónde vas hoy?",
+          "fr": "Tu vas où aujourd'hui ?",
+          "it": "Dove vai oggi?",
+          "ko": "오늘 어디 가요?",
+          "zh-Hans": "你今天要去哪里？",
+          "yue": "你今日去邊度？",
+          "ru": "Куда ты сегодня идёшь?",
+          "pt": "Para onde vais hoje?",
+          "he": "לאן אתה הולך היום?",
+          "tr": "Bugün nereye gidiyorsun?",
+          "vi": "Hôm nay bạn đi đâu?",
+          "ar": "إلى أين تذهب اليوم؟",
+          "nl": "Waar ga je vandaag heen?",
+          "uk": "Куди ти сьогодні йдеш?",
+          "hu": "Hová mész ma?",
+          "hi": "आज तुम कहाँ जा रहे हो?",
+          "pl": "Dokąd dziś idziesz?",
+          "el": "Πού πας σήμερα;",
+          "nb": "Hvor skal du i dag?",
+          "id": "Kamu mau ke mana hari ini?",
+          "sv": "Vart ska du i dag?",
+          "ro": "Unde mergi azi?",
+          "cs": "Kam dnes jdeš?",
+          "da": "Hvor skal du hen i dag?",
+          "fi": "Minne menet tänään?",
+          "ja": "今日はどこに行くの？"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Wo bist du gerade?",
+        "old_japanese": "Wohin gehst du heute?",
+        "old_english": "Where are you going today.",
+        "proposed_japanese": "Wo bist du gerade?",
+        "proposed_english": "Where are you going today.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Wo bist du gerade?",
+          "tokens": [
+            {
+              "surface": "Wo",
+              "lemma": "wo",
+              "pos": "ADV",
+              "upos": "ADV",
+              "xpos": "PWAV",
+              "feats": {},
+              "start": 0,
+              "end": 2,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "bist",
+              "lemma": "sein",
+              "pos": "AUX",
+              "upos": "AUX",
+              "xpos": "VAFIN",
+              "feats": {},
+              "start": 3,
+              "end": 7,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "du",
+              "lemma": "du",
+              "pos": "PRON",
+              "upos": "PRON",
+              "xpos": "PPER",
+              "feats": {},
+              "start": 8,
+              "end": 10,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "gerade",
+              "lemma": "gerade",
+              "pos": "ADV",
+              "upos": "ADV",
+              "xpos": "ADV",
+              "feats": {},
+              "start": 11,
+              "end": 17,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "?",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 17,
+              "end": 18,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Wo",
+            "lemma": "wo",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "PWAV",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "bist",
+            "lemma": "sein",
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "VAFIN",
+            "feats": {},
+            "start": 3,
+            "end": 7,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "du",
+            "lemma": "du",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 8,
+            "end": 10,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "gerade",
+            "lemma": "gerade",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 11,
+            "end": 17,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "?",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 17,
+            "end": 18,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-18T17:32:04Z",
+        "updated_utc": "2026-10-18T17:32:26Z",
+        "applied_utc": "2026-10-18T17:32:26Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-18T17:32:26Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -422,34 +680,6 @@
     "word": "wohin",
     "word_reading": "",
     "word_label": "Pronominaladverb",
-    "word_en": "where to",
-    "word_es": "adónde; a dónde",
-    "word_fr": "où",
-    "word_it": "dove",
-    "word_ko": "어디로",
-    "word_zh-Hans": "去哪儿; 去哪里",
-    "word_yue": "去邊度; 去邊",
-    "word_ru": "куда",
-    "word_pt": "para onde; aonde",
-    "word_he": "לאן",
-    "word_tr": "nereye",
-    "word_vi": "đi đâu; đến đâu",
-    "word_ar": "إلى أين",
-    "word_nl": "waar naartoe; waarheen",
-    "word_uk": "куди",
-    "word_hu": "hova; hová",
-    "word_hi": "कहाँ; किधर",
-    "word_pl": "dokąd",
-    "word_el": "πού",
-    "word_nb": "hvor",
-    "word_id": "ke mana",
-    "word_sv": "vart",
-    "word_ro": "încotro; unde",
-    "word_cs": "kam",
-    "word_da": "hvor",
-    "word_fi": "minne; mihin",
-    "word_ja": "どこへ; どこに",
-    "word_de": "wohin",
     "comic_difficulty": 5.46,
     "jp": [
       "Wohin gehst du heute?",
@@ -463,64 +693,64 @@
       "/voːˈhɪn zɔl ɪç diː ˈtaʃə ˈʃtɛlən/",
       "/voːˈhɪn vɪl ziː naːx deːɐ̯ ˈaʁbaɪ̯t ˈɡeːən/"
     ],
-    "de": [
-      "Wohin gehst du heute.",
-      "Wohin fährt der Bus bitte.",
-      "Wohin soll ich die Tasche stellen.",
-      "Wohin will sie nach der Arbeit gehen."
-    ],
-    "ipa": [
-      "/voːˈhɪn ɡeːst duː ˈhɔʏ̯tə/",
-      "/voːˈhɪn fɛːɐ̯t deːɐ̯ bʊs ˈbɪtə/",
-      "/voːˈhɪn zɔl ɪç diː ˈtaʃə ˈʃtɛlən/",
-      "/voːˈhɪn vɪl ziː naːx deːɐ̯ ˈaʁbaɪ̯t ˈɡeːən/"
-    ],
-    "en": [
-      "Where are you going today.",
-      "Where does the bus go, please.",
-      "Where should I put the bag.",
-      "Where does she want to go after work."
-    ],
     "pos_analysis": [
       {
-        "sentence": "Wohin gehst du heute?",
+        "sentence": "Wo bist du gerade?",
         "tokens": [
           {
-            "surface": "Wohin",
-            "surface_en": "where to",
-            "furigana": "[voːˈhɪn]",
+            "surface": "Wo",
+            "lemma": "wo",
             "pos": "ADV",
-            "lemma": "wohin",
-            "explanation": "Interrogative directional adverb asking about destination; initiates a wh-question.",
-            "difficulty": 7,
-            "is_main_word": true
+            "upos": "ADV",
+            "xpos": "PWAV",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "gehst",
-            "surface_en": "go (2sg)",
-            "furigana": "[ɡeːst]",
-            "pos": "VERB",
-            "lemma": "gehen",
-            "explanation": "Finite main verb, present indicative, 2nd person singular; expresses motion.",
-            "difficulty": 7
+            "surface": "bist",
+            "lemma": "sein",
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "VAFIN",
+            "feats": {},
+            "start": 3,
+            "end": 7,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "du",
-            "surface_en": "you",
-            "furigana": "[duː]",
-            "pos": "PRON",
             "lemma": "du",
-            "explanation": "Personal pronoun, nominative, 2nd person singular; subject of the clause.",
-            "difficulty": 2
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 8,
+            "end": 10,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "heute?",
-            "surface_en": "today",
-            "furigana": "[ˈhɔʏ̯tə]",
+            "surface": "gerade",
+            "lemma": "gerade",
             "pos": "ADV",
-            "lemma": "heute",
-            "explanation": "Temporal adverb specifying the time frame.",
-            "difficulty": 7
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 11,
+            "end": 17,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "?",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 17,
+            "end": 18,
+            "analyzer": "spacy_de_core_news_lg"
           }
         ],
         "difficulty_aggregated": 5.75
@@ -709,137 +939,41 @@
         "difficulty_aggregated": 4.86
       }
     ],
-    "es": [
-      "¿Adónde vas hoy?",
-      "¿Adónde va el autobús, por favor?",
-      "¿Dónde dejo la bolsa?",
-      "¿Adónde quiere ir después del trabajo?"
-    ],
-    "fr": [
-      "Tu vas où aujourd'hui ?",
-      "Le bus va où, s’il vous plaît ?",
-      "Je pose le sac où ?",
-      "Elle veut aller où après le travail ?"
-    ],
-    "it": [
-      "Dove vai oggi?",
-      "Dove va il bus, per favore?",
-      "Dove metto la borsa?",
-      "Dove vuole andare dopo il lavoro?"
-    ],
-    "ko": [
-      "오늘 어디 가요?",
-      "버스가 어디로 가요?",
-      "가방을 어디에 놓으면 돼요?",
-      "그녀는 퇴근 후 어디로 가고 싶어해요?"
-    ],
-    "zh-Hans": [
-      "你今天要去哪里？",
-      "请问这辆公交车去哪里？",
-      "我把包放在哪里？",
-      "她下班后想去哪里？"
-    ],
-    "yue": [
-      "你今日去邊度？",
-      "唔該，呢架巴士去邊度呀？",
-      "個袋擺喺邊度？",
-      "佢收工後想去邊度？"
-    ],
-    "ru": [
-      "Куда ты сегодня идёшь?",
-      "Скажите, пожалуйста, куда едет этот автобус?",
-      "Куда мне поставить сумку?",
-      "Куда она хочет пойти после работы?"
-    ],
-    "pt": [
-      "Para onde vais hoje?",
-      "Para onde vai o autocarro, por favor?",
-      "Onde eu coloco a bolsa?",
-      "Para onde ela quer ir depois do trabalho?"
-    ],
-    "he": [
-      "לאן אתה הולך היום?",
-      "לאן האוטובוס נוסע, בבקשה?",
-      "איפה לשים את התיק?",
-      "לאן היא רוצה ללכת אחרי העבודה?"
-    ],
-    "tr": [
-      "Bugün nereye gidiyorsun?",
-      "Lütfen, otobüs nereye gidiyor?",
-      "Çantayı nereye koyayım?",
-      "O işten sonra nereye gitmek istiyor?"
-    ],
-    "vi": [
-      "Hôm nay bạn đi đâu?",
-      "Xin hỏi, xe buýt này đi đâu?",
-      "Tôi để cái túi ở đâu?",
-      "Cô ấy muốn đi đâu sau giờ làm?"
-    ],
+    "word_POS": "Adverb",
+    "entry_id": "wohin",
+    "word_en": "where to",
+    "word_es": "adónde; a dónde",
+    "word_fr": "où",
+    "word_it": "dove",
+    "word_ko": "어디로",
+    "word_zh-Hans": "去哪儿; 去哪里",
+    "word_yue": "去邊度; 去邊",
+    "word_ru": "куда",
+    "word_pt": "para onde; aonde",
+    "word_he": "לאן",
+    "word_tr": "nereye",
+    "word_vi": "đi đâu; đến đâu",
+    "word_ar": "إلى أين",
+    "word_nl": "waar naartoe; waarheen",
+    "word_uk": "куди",
+    "word_hu": "hova; hová",
+    "word_hi": "कहाँ; किधर",
+    "word_pl": "dokąd",
+    "word_el": "πού",
+    "word_nb": "hvor",
+    "word_id": "ke mana",
+    "word_sv": "vart",
+    "word_ro": "încotro; unde",
+    "word_cs": "kam",
+    "word_da": "hvor",
+    "word_fi": "minne; mihin",
+    "word_ja": "どこへ; どこに",
+    "word_de": "wohin",
     "ar": [
       "إلى أين تذهب اليوم؟",
       "إلى أين تذهب الحافلة، من فضلك؟",
       "أين أضع الحقيبة؟",
       "إلى أين تريد أن تذهب بعد العمل؟"
-    ],
-    "nl": [
-      "Waar ga je vandaag heen?",
-      "Waar gaat deze bus naartoe, alstublieft?",
-      "Waar moet ik de tas neerzetten?",
-      "Waar wil zij na het werk naartoe?"
-    ],
-    "uk": [
-      "Куди ти сьогодні йдеш?",
-      "Скажіть, будь ласка, куди їде цей автобус?",
-      "Куди мені поставити сумку?",
-      "Куди вона хоче піти після роботи?"
-    ],
-    "hu": [
-      "Hová mész ma?",
-      "Kérem, ez a busz hová megy?",
-      "Hová tegyem a táskát?",
-      "Hová akar menni munka után?"
-    ],
-    "hi": [
-      "आज तुम कहाँ जा रहे हो?",
-      "कृपया यह बस कहाँ जाती है?",
-      "मैं बैग कहाँ रखूँ?",
-      "वह काम के बाद कहाँ जाना चाहती है?"
-    ],
-    "pl": [
-      "Dokąd dziś idziesz?",
-      "Dokąd jedzie ten autobus, proszę?",
-      "Gdzie mam położyć torbę?",
-      "Dokąd ona chce iść po pracy?"
-    ],
-    "el": [
-      "Πού πας σήμερα;",
-      "Πού πάει το λεωφορείο, παρακαλώ;",
-      "Πού να βάλω την τσάντα;",
-      "Πού θέλει να πάει μετά τη δουλειά;"
-    ],
-    "nb": [
-      "Hvor skal du i dag?",
-      "Hvor går denne bussen, takk?",
-      "Hvor skal jeg sette vesken?",
-      "Hvor vil hun gå etter jobb?"
-    ],
-    "id": [
-      "Kamu mau ke mana hari ini?",
-      "Permisi, bus ini ke mana?",
-      "Aku taruh tas di mana?",
-      "Dia mau pergi ke mana setelah kerja?"
-    ],
-    "sv": [
-      "Vart ska du i dag?",
-      "Vart går bussen, tack?",
-      "Var ska jag ställa väskan?",
-      "Vart vill hon gå efter jobbet?"
-    ],
-    "ro": [
-      "Unde mergi azi?",
-      "Unde merge autobuzul, vă rog?",
-      "Unde pun geanta?",
-      "Unde vrea să meargă după serviciu?"
     ],
     "cs": [
       "Kam dnes jdeš?",
@@ -853,11 +987,77 @@
       "Hvor skal jeg stille tasken?",
       "Hvor vil hun hen efter arbejde?"
     ],
+    "de": [
+      "Wohin gehst du heute.",
+      "Wohin fährt der Bus bitte?",
+      "Wohin soll ich die Tasche stellen?",
+      "Wohin will sie nach der Arbeit gehen?"
+    ],
+    "el": [
+      "Πού πας σήμερα;",
+      "Πού πάει το λεωφορείο, παρακαλώ;",
+      "Πού να βάλω την τσάντα;",
+      "Πού θέλει να πάει μετά τη δουλειά;"
+    ],
+    "en": [
+      "Where are you going today.",
+      "Where does the bus go, please?",
+      "Where should I put the bag?",
+      "Where does she want to go after work?"
+    ],
+    "es": [
+      "¿Adónde vas hoy?",
+      "¿Adónde va el autobús, por favor?",
+      "¿Dónde dejo la bolsa?",
+      "¿Adónde quiere ir después del trabajo?"
+    ],
     "fi": [
       "Minne menet tänään?",
       "Minne tämä bussi menee, kiitos?",
       "Mihin laitan laukun?",
       "Minne hän haluaa mennä töiden jälkeen?"
+    ],
+    "fr": [
+      "Tu vas où aujourd'hui ?",
+      "Le bus va où, s’il vous plaît ?",
+      "Je pose le sac où ?",
+      "Elle veut aller où après le travail ?"
+    ],
+    "he": [
+      "לאן אתה הולך היום?",
+      "לאן האוטובוס נוסע, בבקשה?",
+      "איפה לשים את התיק?",
+      "לאן היא רוצה ללכת אחרי העבודה?"
+    ],
+    "hi": [
+      "आज तुम कहाँ जा रहे हो?",
+      "कृपया यह बस कहाँ जाती है?",
+      "मैं बैग कहाँ रखूँ?",
+      "वह काम के बाद कहाँ जाना चाहती है?"
+    ],
+    "hu": [
+      "Hová mész ma?",
+      "Kérem, ez a busz hová megy?",
+      "Hová tegyem a táskát?",
+      "Hová akar menni munka után?"
+    ],
+    "id": [
+      "Kamu mau ke mana hari ini?",
+      "Permisi, bus ini ke mana?",
+      "Aku taruh tas di mana?",
+      "Dia mau pergi ke mana setelah kerja?"
+    ],
+    "ipa": [
+      "/voːˈhɪn ɡeːst duː ˈhɔʏ̯tə/",
+      "/voːˈhɪn fɛːɐ̯t deːɐ̯ bʊs ˈbɪtə/",
+      "/voːˈhɪn zɔl ɪç diː ˈtaʃə ˈʃtɛlən/",
+      "/voːˈhɪn vɪl ziː naːx deːɐ̯ ˈaʁbaɪ̯t ˈɡeːən/"
+    ],
+    "it": [
+      "Dove vai oggi?",
+      "Dove va il bus, per favore?",
+      "Dove metto la borsa?",
+      "Dove vuole andare dopo il lavoro?"
     ],
     "ja": [
       "今日はどこに行くの？",
@@ -865,6 +1065,83 @@
       "バッグはどこに置けばいいですか？",
       "彼女は仕事のあとどこへ行きたいですか？"
     ],
-    "word_POS": "Adverb"
+    "ko": [
+      "오늘 어디 가요?",
+      "버스가 어디로 가요?",
+      "가방을 어디에 놓으면 돼요?",
+      "그녀는 퇴근 후 어디로 가고 싶어해요?"
+    ],
+    "nb": [
+      "Hvor skal du i dag?",
+      "Hvor går denne bussen, takk?",
+      "Hvor skal jeg sette vesken?",
+      "Hvor vil hun gå etter jobb?"
+    ],
+    "nl": [
+      "Waar ga je vandaag heen?",
+      "Waar gaat deze bus naartoe, alstublieft?",
+      "Waar moet ik de tas neerzetten?",
+      "Waar wil zij na het werk naartoe?"
+    ],
+    "pl": [
+      "Dokąd dziś idziesz?",
+      "Dokąd jedzie ten autobus, proszę?",
+      "Gdzie mam położyć torbę?",
+      "Dokąd ona chce iść po pracy?"
+    ],
+    "pt": [
+      "Para onde vais hoje?",
+      "Para onde vai o autocarro, por favor?",
+      "Onde eu coloco a bolsa?",
+      "Para onde ela quer ir depois do trabalho?"
+    ],
+    "ro": [
+      "Unde mergi azi?",
+      "Unde merge autobuzul, vă rog?",
+      "Unde pun geanta?",
+      "Unde vrea să meargă după serviciu?"
+    ],
+    "ru": [
+      "Куда ты сегодня идёшь?",
+      "Скажите, пожалуйста, куда едет этот автобус?",
+      "Куда мне поставить сумку?",
+      "Куда она хочет пойти после работы?"
+    ],
+    "sv": [
+      "Vart ska du i dag?",
+      "Vart går bussen, tack?",
+      "Var ska jag ställa väskan?",
+      "Vart vill hon gå efter jobbet?"
+    ],
+    "tr": [
+      "Bugün nereye gidiyorsun?",
+      "Lütfen, otobüs nereye gidiyor?",
+      "Çantayı nereye koyayım?",
+      "O işten sonra nereye gitmek istiyor?"
+    ],
+    "uk": [
+      "Куди ти сьогодні йдеш?",
+      "Скажіть, будь ласка, куди їде цей автобус?",
+      "Куди мені поставити сумку?",
+      "Куди вона хоче піти після роботи?"
+    ],
+    "vi": [
+      "Hôm nay bạn đi đâu?",
+      "Xin hỏi, xe buýt này đi đâu?",
+      "Tôi để cái túi ở đâu?",
+      "Cô ấy muốn đi đâu sau giờ làm?"
+    ],
+    "yue": [
+      "你今日去邊度？",
+      "唔該，呢架巴士去邊度呀？",
+      "個袋擺喺邊度？",
+      "佢收工後想去邊度？"
+    ],
+    "zh-Hans": [
+      "你今天要去哪里？",
+      "请问这辆公交车去哪里？",
+      "我把包放在哪里？",
+      "她下班后想去哪里？"
+    ]
   }
 }

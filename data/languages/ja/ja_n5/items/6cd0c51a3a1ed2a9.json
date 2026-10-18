@@ -220,13 +220,14 @@
       "tokens": [
         {
           "surface": "体",
-          "surface_en": "body",
-          "furigana": "からだ",
-          "pos": "noun",
           "lemma": "体",
-          "explanation": "Refers to the physical body",
-          "difficulty": 2,
-          "is_main_word": true,
+          "pos": "名詞/普通名詞/一般/*/*/*",
+          "upos": "NOUN",
+          "xpos": "名詞",
+          "feats": {},
+          "start": 0,
+          "end": 1,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "からだ",
           "ruby_text": "体[からだ]",
           "ruby_spans": [
@@ -237,31 +238,37 @@
               "length": 1
             }
           ],
-          "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "ruby_confidence": "reviewed",
+          "furigana": "からだ",
+          "ruby_source": "mediawiki_sentence_ruby",
+          "is_main_word": true
         },
         {
           "surface": "が",
-          "surface_en": "(subject marker)",
-          "furigana": "が",
-          "pos": "particle",
           "lemma": "が",
-          "explanation": "Subject-marking particle indicating the experiencer of the pain",
-          "difficulty": 1,
+          "pos": "助詞/格助詞/*/*/*/*",
+          "upos": "PART",
+          "xpos": "助詞",
+          "feats": {},
+          "start": 1,
+          "end": 2,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "が",
           "ruby_text": "が",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "が"
         },
         {
           "surface": "痛い",
-          "surface_en": "hurts",
-          "furigana": "痛い",
-          "pos": "i-adjective",
           "lemma": "痛い",
-          "explanation": "Describes the state of being in pain",
-          "difficulty": 2,
+          "pos": "形容詞/一般/*/*/形容詞/終止形-一般",
+          "upos": "ADJ",
+          "xpos": "形容詞",
+          "feats": {},
+          "start": 2,
+          "end": 4,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "痛い",
           "ruby_text": "痛[痛]い",
           "ruby_spans": [
@@ -272,8 +279,25 @@
               "length": 1
             }
           ],
+          "ruby_confidence": "reviewed",
+          "furigana": "痛い",
+          "ruby_source": "mediawiki_sentence_ruby"
+        },
+        {
+          "surface": "。",
+          "lemma": "。",
+          "pos": "補助記号/句点/*/*/*/*",
+          "upos": "PUNCT",
+          "xpos": "補助記号",
+          "feats": {},
+          "start": 4,
+          "end": 5,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "。",
+          "ruby_text": "。",
+          "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "。"
         }
       ],
       "difficulty": 2,
@@ -552,19 +576,292 @@
     "content_reviewers": [
       "mediawiki-visible-revision"
     ],
-    "last_reviewed_utc": "2026-06-21T18:27:57Z",
-    "approval_source": "mediawiki_visible_revision",
+    "last_reviewed_utc": "2026-10-11T03:28:35Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
     "wiki": {
       "title": "Item:Ja n5/6cd0c51a3a1ed2a9",
-      "revision_id": 58110,
-      "parent_revision_id": 36554,
-      "revision_timestamp_utc": "2026-06-21T18:27:57Z",
-      "revision_user": "VocomiBot",
-      "revision_comment": "Sync ja_n5 item 体",
-      "pulled_utc": "2026-06-21T20:53:41Z",
-      "applied_utc": "2026-06-21T20:53:55Z",
+      "revision_id": 83424,
+      "parent_revision_id": 68987,
+      "revision_timestamp_utc": "2026-10-11T03:28:35Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Suggest reviewed Japanese and translation corrections",
+      "pulled_utc": "2026-10-17T07:37:34Z",
+      "applied_utc": "2026-10-17T07:37:51Z",
       "applied_by": "vocomipedia-apply-pulled"
-    }
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-5c08fab9add4f19e",
+        "status": "applied",
+        "type": "ruby_update",
+        "item_id": "ja_n5:6cd0c51a3a1ed2a9",
+        "pack_code": "ja_n5",
+        "entry_id": "体",
+        "language": "ja",
+        "sentence_index": 2,
+        "old_sentence": "体が痛い。",
+        "old_translations": {
+          "en": "My body hurts.",
+          "es": "Me duele el cuerpo.",
+          "fr": "J’ai mal au corps.",
+          "de": "Mein Körper tut weh.",
+          "it": "Il mio corpo fa male.",
+          "ko": "몸이 아파요.",
+          "zh-Hans": "我的身体很痛。",
+          "yue": "我的身體好痛。",
+          "ru": "Мое тело болит.",
+          "pt": "Meu corpo dói.",
+          "he": "כואב לי הגוף.",
+          "tr": "Vücudum ağrıyor.",
+          "vi": "Cơ thể tôi đau.",
+          "ar": "جسدي يؤلمني.",
+          "nl": "Mijn lichaam doet pijn.",
+          "uk": "У мене болить тіло.",
+          "hu": "Fáj a testem.",
+          "hi": "मेरे शरीर में दर्द होता है।",
+          "pl": "Boli mnie ciało.",
+          "el": "Το σώμα μου πονάει.",
+          "nb": "Kroppen min gjør vondt.",
+          "id": "Tubuh saya sakit.",
+          "sv": "Jag har ont i kroppen.",
+          "ro": "Mă doare corpul.",
+          "cs": "Bolí mě tělo.",
+          "da": "Min krop gør ondt.",
+          "fi": "Kehooni sattuu."
+        },
+        "proposed_sentence": "体が痛い。",
+        "proposed_translations": {
+          "en": "My body hurts.",
+          "es": "Me duele el cuerpo.",
+          "fr": "J’ai mal au corps.",
+          "de": "Mein Körper tut weh.",
+          "it": "Il mio corpo fa male.",
+          "ko": "몸이 아파요.",
+          "zh-Hans": "我的身体很痛。",
+          "yue": "我的身體好痛。",
+          "ru": "Мое тело болит.",
+          "pt": "Meu corpo dói.",
+          "he": "כואב לי הגוף.",
+          "tr": "Vücudum ağrıyor.",
+          "vi": "Cơ thể tôi đau.",
+          "ar": "جسدي يؤلمني.",
+          "nl": "Mijn lichaam doet pijn.",
+          "uk": "У мене болить тіло.",
+          "hu": "Fáj a testem.",
+          "hi": "मेरे शरीर में दर्द होता है।",
+          "pl": "Boli mnie ciało.",
+          "el": "Το σώμα μου πονάει.",
+          "nb": "Kroppen min gjør vondt.",
+          "id": "Tubuh saya sakit.",
+          "sv": "Jag har ont i kroppen.",
+          "ro": "Mă doare corpul.",
+          "cs": "Bolí mě tělo.",
+          "da": "Min krop gør ondt.",
+          "fi": "Kehooni sattuu."
+        },
+        "old_ruby_source": "体[からだ]が痛[いた]い。",
+        "proposed_ruby_source": "体[からだ]が痛[痛]い。",
+        "old_japanese": "体が痛い。",
+        "old_english": "My body hurts.",
+        "proposed_japanese": "体が痛い。",
+        "proposed_english": "My body hurts.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "ja",
+          "sentence": "体が痛い。",
+          "tokens": [
+            {
+              "surface": "体",
+              "lemma": "体",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 0,
+              "end": 1,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "からだ",
+              "ruby_text": "体[からだ]",
+              "ruby_spans": [
+                {
+                  "base": "体",
+                  "reading": "からだ",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "からだ",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "が",
+              "lemma": "が",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 1,
+              "end": 2,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "が",
+              "ruby_text": "が",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "が"
+            },
+            {
+              "surface": "痛い",
+              "lemma": "痛い",
+              "pos": "形容詞/一般/*/*/形容詞/終止形-一般",
+              "upos": "ADJ",
+              "xpos": "形容詞",
+              "feats": {},
+              "start": 2,
+              "end": 4,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "痛い",
+              "ruby_text": "痛[痛]い",
+              "ruby_spans": [
+                {
+                  "base": "痛",
+                  "reading": "痛",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "痛い",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "。",
+              "lemma": "。",
+              "pos": "補助記号/句点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 4,
+              "end": 5,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "。",
+              "ruby_text": "。",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "。"
+            }
+          ],
+          "reading": "からだが痛い。",
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "warnings": [
+            "mediawiki ruby hints applied"
+          ]
+        },
+        "generated_tokens": [
+          {
+            "surface": "体",
+            "lemma": "体",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 0,
+            "end": 1,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "からだ",
+            "ruby_text": "体[からだ]",
+            "ruby_spans": [
+              {
+                "base": "体",
+                "reading": "からだ",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "からだ",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "が",
+            "lemma": "が",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 1,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "が",
+            "ruby_text": "が",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "が"
+          },
+          {
+            "surface": "痛い",
+            "lemma": "痛い",
+            "pos": "形容詞/一般/*/*/形容詞/終止形-一般",
+            "upos": "ADJ",
+            "xpos": "形容詞",
+            "feats": {},
+            "start": 2,
+            "end": 4,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "痛い",
+            "ruby_text": "痛[痛]い",
+            "ruby_spans": [
+              {
+                "base": "痛",
+                "reading": "痛",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "痛い",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 4,
+            "end": 5,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
+          }
+        ],
+        "generated_reading": "からだが痛い。",
+        "analyzer": "sudachipy_sudachidict_core_c",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:37:34Z",
+        "updated_utc": "2026-10-17T07:38:15Z",
+        "applied_utc": "2026-10-17T07:38:15Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:38:15Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -721,13 +1018,14 @@
         "tokens": [
           {
             "surface": "体",
-            "surface_en": "body",
-            "furigana": "からだ",
-            "pos": "noun",
             "lemma": "体",
-            "explanation": "Refers to the physical body",
-            "difficulty": 2,
-            "is_main_word": true,
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 0,
+            "end": 1,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "からだ",
             "ruby_text": "体[からだ]",
             "ruby_spans": [
@@ -738,31 +1036,37 @@
                 "length": 1
               }
             ],
-            "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "ruby_confidence": "reviewed",
+            "furigana": "からだ",
+            "ruby_source": "mediawiki_sentence_ruby",
+            "is_main_word": true
           },
           {
             "surface": "が",
-            "surface_en": "(subject marker)",
-            "furigana": "が",
-            "pos": "particle",
             "lemma": "が",
-            "explanation": "Subject-marking particle indicating the experiencer of the pain",
-            "difficulty": 1,
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 1,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "が",
             "ruby_text": "が",
             "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "が"
           },
           {
             "surface": "痛い",
-            "surface_en": "hurts",
-            "furigana": "痛い",
-            "pos": "i-adjective",
             "lemma": "痛い",
-            "explanation": "Describes the state of being in pain",
-            "difficulty": 2,
+            "pos": "形容詞/一般/*/*/形容詞/終止形-一般",
+            "upos": "ADJ",
+            "xpos": "形容詞",
+            "feats": {},
+            "start": 2,
+            "end": 4,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "痛い",
             "ruby_text": "痛[痛]い",
             "ruby_spans": [
@@ -773,8 +1077,25 @@
                 "length": 1
               }
             ],
+            "ruby_confidence": "reviewed",
+            "furigana": "痛い",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 4,
+            "end": 5,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "。"
           }
         ],
         "difficulty_aggregated": 2

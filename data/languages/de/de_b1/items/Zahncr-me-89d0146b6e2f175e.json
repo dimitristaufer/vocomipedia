@@ -341,12 +341,12 @@
       "difficulty": 6.25
     },
     {
-      "target": "Er vergisst die Zahncrème beim Zähneputzen.",
+      "target": "Er vergisst, beim Zähneputzen Zahncrème zu benutzen.",
       "reading": "/eːɐ fɛɐˈɡɪst diː ˈtsaːnkrɛm baɪ̯m ˈtsɛːnəˌpʊt͡sən/",
       "translations": {
-        "de": "Er vergisst die Zahncrème beim Zähneputzen.",
+        "de": "Er vergisst, beim Zähneputzen Zahncrème zu benutzen.",
         "ipa": "/eːɐ fɛɐˈɡɪst diː ˈtsaːnkrɛm baɪ̯m ˈtsɛːnəˌpʊt͡sən/",
-        "en": "He forgets the toothpaste while brushing his teeth.",
+        "en": "He forgets to use toothpaste when brushing his teeth.",
         "es": "Se olvida de la pasta de dientes mientras se cepilla los dientes.",
         "fr": "Il oublie le dentifrice en se brossant les dents.",
         "it": "Si dimentica il dentifricio mentre si lava i denti.",
@@ -377,58 +377,103 @@
       "tokens": [
         {
           "surface": "Er",
-          "surface_en": "he",
-          "furigana": "[eːɐ̯]",
-          "pos": "PRON",
           "lemma": "er",
-          "explanation": "Personal pronoun, nominative singular (3rd person masculine); subject of the sentence.",
-          "difficulty": 2
+          "pos": "PRON",
+          "upos": "PRON",
+          "xpos": "PPER",
+          "feats": {},
+          "start": 0,
+          "end": 2,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "vergisst",
-          "surface_en": "forgets",
-          "furigana": "[fɛɐ̯ˈɡɪst]",
+          "lemma": "vergissen",
           "pos": "VERB",
-          "lemma": "vergessen",
-          "explanation": "Finite main verb, present indicative 3rd person singular; transitive verb selecting an accusative object.",
-          "difficulty": 10
+          "upos": "VERB",
+          "xpos": "VVFIN",
+          "feats": {},
+          "start": 3,
+          "end": 11,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "die",
-          "surface_en": "the",
-          "furigana": "[diː]",
-          "pos": "DET",
-          "lemma": "der",
-          "explanation": "Definite article, accusative feminine singular; determiner for 'Zahncrème' as direct object.",
-          "difficulty": 2
-        },
-        {
-          "surface": "Zahncrème",
-          "surface_en": "toothpaste",
-          "furigana": "[ˈtsaːnkʁeːmə]",
-          "pos": "NOUN",
-          "lemma": "Zahncrème",
-          "explanation": "Common noun, feminine; direct accusative object of 'vergisst'.",
-          "difficulty": 10,
-          "is_main_word": true
+          "surface": ",",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$,",
+          "feats": {},
+          "start": 11,
+          "end": 12,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "beim",
-          "surface_en": "at the",
-          "furigana": "[baɪ̯m]",
-          "pos": "ADP",
           "lemma": "bei",
-          "explanation": "Fused form of 'bei dem'; preposition 'bei' governing dative; marks context/time ('during/at').",
-          "difficulty": 2
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "APPRART",
+          "feats": {},
+          "start": 13,
+          "end": 17,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "Zähneputzen.",
-          "surface_en": "toothbrushing",
-          "furigana": "[ˈtsɛːnəˌpʊt͡sn̩]",
+          "surface": "Zähneputzen",
+          "lemma": "zähneputzen",
           "pos": "NOUN",
-          "lemma": "Zähneputzen",
-          "explanation": "Nominalized verb phrase functioning as a noun; dative singular; object of 'beim'.",
-          "difficulty": 10
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 18,
+          "end": 29,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "Zahncrème",
+          "lemma": "Zahncrème",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 30,
+          "end": 39,
+          "analyzer": "spacy_de_core_news_lg",
+          "is_main_word": true
+        },
+        {
+          "surface": "zu",
+          "lemma": "zu",
+          "pos": "PART",
+          "upos": "PART",
+          "xpos": "PTKZU",
+          "feats": {},
+          "start": 40,
+          "end": 42,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "benutzen",
+          "lemma": "benutzen",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VVINF",
+          "feats": {},
+          "start": 43,
+          "end": 51,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 51,
+          "end": 52,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 6
@@ -445,8 +490,336 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-15T06:03:10Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:De b1/89d0146b6e2f175e",
+      "revision_id": 86368,
+      "parent_revision_id": 18558,
+      "revision_timestamp_utc": "2026-10-15T06:03:10Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Clarified in German and English that he forgets to use toothpaste while brushing, rather than forgetting the object itself.",
+      "pulled_utc": "2026-10-17T07:06:40Z",
+      "applied_utc": "2026-10-17T07:06:51Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-4eb13b5aeae8dd57",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_b1:89d0146b6e2f175e",
+        "pack_code": "de_b1",
+        "entry_id": "Zahncrème",
+        "language": "de",
+        "sentence_index": 4,
+        "old_sentence": "Er vergisst die Zahncrème beim Zähneputzen.",
+        "old_translations": {
+          "de": "Er vergisst die Zahncrème beim Zähneputzen.",
+          "ipa": "/eːɐ fɛɐˈɡɪst diː ˈtsaːnkrɛm baɪ̯m ˈtsɛːnəˌpʊt͡sən/",
+          "en": "He forgets the toothpaste while brushing his teeth.",
+          "es": "Se olvida de la pasta de dientes mientras se cepilla los dientes.",
+          "fr": "Il oublie le dentifrice en se brossant les dents.",
+          "it": "Si dimentica il dentifricio mentre si lava i denti.",
+          "ko": "그는 이를 닦다가 치약을 잊어버려요.",
+          "zh-Hans": "他刷牙时忘了用牙膏。",
+          "yue": "佢刷牙嗰陣唔記得用牙膏。",
+          "ru": "Он забывает пользоваться зубной пастой, когда чистит зубы.",
+          "pt": "Ele se esquece da pasta de dentes enquanto escova os dentes.",
+          "he": "הוא שוכח את משחת השיניים כשהוא מצחצח שיניים.",
+          "tr": "Dişlerini fırçalarken diş macununu unutuyor.",
+          "vi": "Anh ấy quên dùng kem đánh răng khi đánh răng.",
+          "ar": "ينسى معجون الأسنان وهو يغسل أسنانه.",
+          "nl": "Hij vergeet de tandpasta terwijl hij zijn tanden poetst.",
+          "uk": "Він забуває про зубну пасту, коли чистить зуби.",
+          "hu": "Elfelejti a fogkrémet, amikor fogat mos.",
+          "hi": "वह दाँत ब्रश करते समय टूथपेस्ट भूल जाता है.",
+          "pl": "Zapomina o paście do zębów, gdy myje zęby.",
+          "el": "Ξεχνά την οδοντόκρεμα όταν βουρτσίζει τα δόντια του.",
+          "nb": "Han glemmer tannkremen når han pusser tennene.",
+          "id": "Dia lupa memakai pasta gigi saat menyikat giginya.",
+          "sv": "Han glömmer tandkrämen när han borstar tänderna.",
+          "ro": "El uită de pasta de dinți când își spală dinții.",
+          "cs": "Zapomene na zubní pastu, když si čistí zuby.",
+          "da": "Han glemmer tandpastaen, når han børster tænder.",
+          "fi": "Hän unohtaa hammastahnan, kun hän harjaa hampaitaan.",
+          "ja": "彼は歯を磨いているときに歯磨き粉を忘れる。"
+        },
+        "proposed_sentence": "Er vergisst, beim Zähneputzen Zahncrème zu benutzen.",
+        "proposed_translations": {
+          "de": "Er vergisst, beim Zähneputzen Zahncrème zu benutzen.",
+          "ipa": "/eːɐ fɛɐˈɡɪst diː ˈtsaːnkrɛm baɪ̯m ˈtsɛːnəˌpʊt͡sən/",
+          "en": "He forgets to use toothpaste when brushing his teeth.",
+          "es": "Se olvida de la pasta de dientes mientras se cepilla los dientes.",
+          "fr": "Il oublie le dentifrice en se brossant les dents.",
+          "it": "Si dimentica il dentifricio mentre si lava i denti.",
+          "ko": "그는 이를 닦다가 치약을 잊어버려요.",
+          "zh-Hans": "他刷牙时忘了用牙膏。",
+          "yue": "佢刷牙嗰陣唔記得用牙膏。",
+          "ru": "Он забывает пользоваться зубной пастой, когда чистит зубы.",
+          "pt": "Ele se esquece da pasta de dentes enquanto escova os dentes.",
+          "he": "הוא שוכח את משחת השיניים כשהוא מצחצח שיניים.",
+          "tr": "Dişlerini fırçalarken diş macununu unutuyor.",
+          "vi": "Anh ấy quên dùng kem đánh răng khi đánh răng.",
+          "ar": "ينسى معجون الأسنان وهو يغسل أسنانه.",
+          "nl": "Hij vergeet de tandpasta terwijl hij zijn tanden poetst.",
+          "uk": "Він забуває про зубну пасту, коли чистить зуби.",
+          "hu": "Elfelejti a fogkrémet, amikor fogat mos.",
+          "hi": "वह दाँत ब्रश करते समय टूथपेस्ट भूल जाता है.",
+          "pl": "Zapomina o paście do zębów, gdy myje zęby.",
+          "el": "Ξεχνά την οδοντόκρεμα όταν βουρτσίζει τα δόντια του.",
+          "nb": "Han glemmer tannkremen når han pusser tennene.",
+          "id": "Dia lupa memakai pasta gigi saat menyikat giginya.",
+          "sv": "Han glömmer tandkrämen när han borstar tänderna.",
+          "ro": "El uită de pasta de dinți când își spală dinții.",
+          "cs": "Zapomene na zubní pastu, když si čistí zuby.",
+          "da": "Han glemmer tandpastaen, når han børster tænder.",
+          "fi": "Hän unohtaa hammastahnan, kun hän harjaa hampaitaan.",
+          "ja": "彼は歯を磨いているときに歯磨き粉を忘れる。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Er vergisst, beim Zähneputzen Zahncrème zu benutzen.",
+        "old_japanese": "Er vergisst die Zahncrème beim Zähneputzen.",
+        "old_english": "He forgets the toothpaste while brushing his teeth.",
+        "proposed_japanese": "Er vergisst, beim Zähneputzen Zahncrème zu benutzen.",
+        "proposed_english": "He forgets to use toothpaste when brushing his teeth.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Er vergisst, beim Zähneputzen Zahncrème zu benutzen.",
+          "tokens": [
+            {
+              "surface": "Er",
+              "lemma": "er",
+              "pos": "PRON",
+              "upos": "PRON",
+              "xpos": "PPER",
+              "feats": {},
+              "start": 0,
+              "end": 2,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "vergisst",
+              "lemma": "vergissen",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVFIN",
+              "feats": {},
+              "start": 3,
+              "end": 11,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ",",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$,",
+              "feats": {},
+              "start": 11,
+              "end": 12,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "beim",
+              "lemma": "bei",
+              "pos": "ADP",
+              "upos": "ADP",
+              "xpos": "APPRART",
+              "feats": {},
+              "start": 13,
+              "end": 17,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Zähneputzen",
+              "lemma": "zähneputzen",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 18,
+              "end": 29,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Zahncrème",
+              "lemma": "Zahncrème",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 30,
+              "end": 39,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "zu",
+              "lemma": "zu",
+              "pos": "PART",
+              "upos": "PART",
+              "xpos": "PTKZU",
+              "feats": {},
+              "start": 40,
+              "end": 42,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "benutzen",
+              "lemma": "benutzen",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVINF",
+              "feats": {},
+              "start": 43,
+              "end": 51,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 51,
+              "end": 52,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Er",
+            "lemma": "er",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "vergisst",
+            "lemma": "vergissen",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 3,
+            "end": 11,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ",",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$,",
+            "feats": {},
+            "start": 11,
+            "end": 12,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "beim",
+            "lemma": "bei",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPRART",
+            "feats": {},
+            "start": 13,
+            "end": 17,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Zähneputzen",
+            "lemma": "zähneputzen",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 18,
+            "end": 29,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Zahncrème",
+            "lemma": "Zahncrème",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 30,
+            "end": 39,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "zu",
+            "lemma": "zu",
+            "pos": "PART",
+            "upos": "PART",
+            "xpos": "PTKZU",
+            "feats": {},
+            "start": 40,
+            "end": 42,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "benutzen",
+            "lemma": "benutzen",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVINF",
+            "feats": {},
+            "start": 43,
+            "end": 51,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 51,
+            "end": 52,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:06:40Z",
+        "updated_utc": "2026-10-17T07:07:06Z",
+        "applied_utc": "2026-10-17T07:07:06Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:07:06Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -458,34 +831,6 @@
     "word": "Zahncrème",
     "word_reading": "",
     "word_label": "Substantiv (die fem.)",
-    "word_en": "toothpaste",
-    "word_es": "pasta de dientes",
-    "word_fr": "dentifrice",
-    "word_it": "dentifricio",
-    "word_ko": "치약",
-    "word_zh-Hans": "牙膏",
-    "word_yue": "牙膏",
-    "word_ru": "зубная паста",
-    "word_pt": "pasta de dentes; creme dental",
-    "word_he": "משחת שיניים",
-    "word_tr": "diş macunu",
-    "word_vi": "kem đánh răng",
-    "word_ar": "معجون أسنان",
-    "word_nl": "tandpasta",
-    "word_uk": "зубна паста",
-    "word_hu": "fogkrém",
-    "word_hi": "टूथपेस्ट",
-    "word_pl": "pasta do zębów",
-    "word_el": "οδοντόκρεμα",
-    "word_nb": "tannkrem",
-    "word_id": "pasta gigi",
-    "word_sv": "tandkräm",
-    "word_ro": "pastă de dinți",
-    "word_cs": "zubní pasta",
-    "word_da": "tandpasta",
-    "word_fi": "hammastahna",
-    "word_ja": "歯磨き粉",
-    "word_de": "Zahncrème",
     "comic_difficulty": 6.15,
     "jp": [
       "Ich brauche neue Zahncrème aus der Drogerie.",
@@ -498,24 +843,6 @@
       "/diː ˈtsaːnkrɛm ʃmɛkt nax ˈmɪnt͡sə/",
       "/diː ˈtsaːnkrɛm liːkt ɪm ʃʁaŋk ˈneːbən deːn ˈhantˌtyːçɐn/",
       "/eːɐ fɛɐˈɡɪst diː ˈtsaːnkrɛm baɪ̯m ˈtsɛːnəˌpʊt͡sən/"
-    ],
-    "de": [
-      "Ich brauche neue Zahncrème aus der Drogerie.",
-      "Die Zahncrème schmeckt nach Minze.",
-      "Die Zahncrème liegt im Schrank neben den Handtüchern.",
-      "Er vergisst die Zahncrème beim Zähneputzen."
-    ],
-    "ipa": [
-      "/ɪç ˈbʁaʊ̯xə ˈnɔʏ̯ə ˈtsaːnkrɛm aʊ̯s deːɐ dʁoɡeˈʁiː/",
-      "/diː ˈtsaːnkrɛm ʃmɛkt nax ˈmɪnt͡sə/",
-      "/diː ˈtsaːnkrɛm liːkt ɪm ʃʁaŋk ˈneːbən deːn ˈhantˌtyːçɐn/",
-      "/eːɐ fɛɐˈɡɪst diː ˈtsaːnkrɛm baɪ̯m ˈtsɛːnəˌpʊt͡sən/"
-    ],
-    "en": [
-      "I need new toothpaste from the drugstore.",
-      "The toothpaste tastes like mint.",
-      "The toothpaste is in the cupboard next to the towels.",
-      "He forgets the toothpaste while brushing his teeth."
     ],
     "pos_analysis": [
       {
@@ -720,198 +1047,147 @@
         "difficulty_aggregated": 6.25
       },
       {
-        "sentence": "Er vergisst die Zahncrème beim Zähneputzen.",
+        "sentence": "Er vergisst, beim Zähneputzen Zahncrème zu benutzen.",
         "tokens": [
           {
             "surface": "Er",
-            "surface_en": "he",
-            "furigana": "[eːɐ̯]",
-            "pos": "PRON",
             "lemma": "er",
-            "explanation": "Personal pronoun, nominative singular (3rd person masculine); subject of the sentence.",
-            "difficulty": 2
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "vergisst",
-            "surface_en": "forgets",
-            "furigana": "[fɛɐ̯ˈɡɪst]",
+            "lemma": "vergissen",
             "pos": "VERB",
-            "lemma": "vergessen",
-            "explanation": "Finite main verb, present indicative 3rd person singular; transitive verb selecting an accusative object.",
-            "difficulty": 10
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 3,
+            "end": 11,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "die",
-            "surface_en": "the",
-            "furigana": "[diː]",
-            "pos": "DET",
-            "lemma": "der",
-            "explanation": "Definite article, accusative feminine singular; determiner for 'Zahncrème' as direct object.",
-            "difficulty": 2
-          },
-          {
-            "surface": "Zahncrème",
-            "surface_en": "toothpaste",
-            "furigana": "[ˈtsaːnkʁeːmə]",
-            "pos": "NOUN",
-            "lemma": "Zahncrème",
-            "explanation": "Common noun, feminine; direct accusative object of 'vergisst'.",
-            "difficulty": 10,
-            "is_main_word": true
+            "surface": ",",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$,",
+            "feats": {},
+            "start": 11,
+            "end": 12,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "beim",
-            "surface_en": "at the",
-            "furigana": "[baɪ̯m]",
-            "pos": "ADP",
             "lemma": "bei",
-            "explanation": "Fused form of 'bei dem'; preposition 'bei' governing dative; marks context/time ('during/at').",
-            "difficulty": 2
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPRART",
+            "feats": {},
+            "start": 13,
+            "end": 17,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "Zähneputzen.",
-            "surface_en": "toothbrushing",
-            "furigana": "[ˈtsɛːnəˌpʊt͡sn̩]",
+            "surface": "Zähneputzen",
+            "lemma": "zähneputzen",
             "pos": "NOUN",
-            "lemma": "Zähneputzen",
-            "explanation": "Nominalized verb phrase functioning as a noun; dative singular; object of 'beim'.",
-            "difficulty": 10
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 18,
+            "end": 29,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Zahncrème",
+            "lemma": "Zahncrème",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 30,
+            "end": 39,
+            "analyzer": "spacy_de_core_news_lg",
+            "is_main_word": true
+          },
+          {
+            "surface": "zu",
+            "lemma": "zu",
+            "pos": "PART",
+            "upos": "PART",
+            "xpos": "PTKZU",
+            "feats": {},
+            "start": 40,
+            "end": 42,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "benutzen",
+            "lemma": "benutzen",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVINF",
+            "feats": {},
+            "start": 43,
+            "end": 51,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 51,
+            "end": 52,
+            "analyzer": "spacy_de_core_news_lg"
           }
         ],
         "difficulty_aggregated": 6
       }
     ],
-    "es": [
-      "Necesito una pasta de dientes nueva en la farmacia.",
-      "La pasta de dientes tiene sabor a menta.",
-      "La pasta de dientes está en el armario, junto a las toallas.",
-      "Se olvida de la pasta de dientes mientras se cepilla los dientes."
-    ],
-    "fr": [
-      "J’ai besoin d’un nouveau dentifrice à la pharmacie.",
-      "Le dentifrice a un goût de menthe.",
-      "Le dentifrice est dans le placard, à côté des serviettes.",
-      "Il oublie le dentifrice en se brossant les dents."
-    ],
-    "it": [
-      "Devo comprare un dentifricio nuovo in farmacia.",
-      "Il dentifricio sa di menta.",
-      "Il dentifricio è nell’armadietto, accanto agli asciugamani.",
-      "Si dimentica il dentifricio mentre si lava i denti."
-    ],
-    "ko": [
-      "약국에서 새 치약을 사야 해요.",
-      "치약은 민트 맛이 나요.",
-      "치약은 수건 옆에 있는 수납장에 있어요.",
-      "그는 이를 닦다가 치약을 잊어버려요."
-    ],
-    "zh-Hans": [
-      "我需要在药店买新的牙膏。",
-      "牙膏有薄荷味。",
-      "牙膏在柜子里，放在毛巾旁边。",
-      "他刷牙时忘了用牙膏。"
-    ],
-    "yue": [
-      "我需要去藥房買支新牙膏。",
-      "牙膏有薄荷味。",
-      "牙膏喺櫃入面，喺毛巾旁邊。",
-      "佢刷牙嗰陣唔記得用牙膏。"
-    ],
-    "ru": [
-      "Мне нужна новая зубная паста из аптеки.",
-      "У зубной пасты мятный вкус.",
-      "Зубная паста в шкафчике, рядом с полотенцами.",
-      "Он забывает пользоваться зубной пастой, когда чистит зубы."
-    ],
-    "pt": [
-      "Preciso comprar uma pasta de dentes nova na farmácia.",
-      "A pasta de dentes tem sabor a menta.",
-      "A pasta de dentes está no armário, ao lado das toalhas.",
-      "Ele se esquece da pasta de dentes enquanto escova os dentes."
-    ],
-    "he": [
-      "אני צריך לקנות משחת שיניים חדשה בבית המרקחת.",
-      "משחת השיניים בטעם מנטה.",
-      "משחת השיניים בארון, ליד המגבות.",
-      "הוא שוכח את משחת השיניים כשהוא מצחצח שיניים."
-    ],
-    "tr": [
-      "Eczaneden yeni diş macunu almam lazım.",
-      "Diş macunu nane tadında.",
-      "Diş macunu dolapta, havluların yanında.",
-      "Dişlerini fırçalarken diş macununu unutuyor."
-    ],
-    "vi": [
-      "Tôi cần mua kem đánh răng mới ở hiệu thuốc.",
-      "Kem đánh răng có vị bạc hà.",
-      "Kem đánh răng ở trong tủ, bên cạnh khăn tắm.",
-      "Anh ấy quên dùng kem đánh răng khi đánh răng."
-    ],
+    "word_POS": "Noun",
+    "entry_id": "Zahncrème",
+    "word_en": "toothpaste",
+    "word_es": "pasta de dientes",
+    "word_fr": "dentifrice",
+    "word_it": "dentifricio",
+    "word_ko": "치약",
+    "word_zh-Hans": "牙膏",
+    "word_yue": "牙膏",
+    "word_ru": "зубная паста",
+    "word_pt": "pasta de dentes; creme dental",
+    "word_he": "משחת שיניים",
+    "word_tr": "diş macunu",
+    "word_vi": "kem đánh răng",
+    "word_ar": "معجون أسنان",
+    "word_nl": "tandpasta",
+    "word_uk": "зубна паста",
+    "word_hu": "fogkrém",
+    "word_hi": "टूथपेस्ट",
+    "word_pl": "pasta do zębów",
+    "word_el": "οδοντόκρεμα",
+    "word_nb": "tannkrem",
+    "word_id": "pasta gigi",
+    "word_sv": "tandkräm",
+    "word_ro": "pastă de dinți",
+    "word_cs": "zubní pasta",
+    "word_da": "tandpasta",
+    "word_fi": "hammastahna",
+    "word_ja": "歯磨き粉",
+    "word_de": "Zahncrème",
     "ar": [
       "أحتاج إلى معجون أسنان جديد من الصيدلية.",
       "معجون الأسنان بطعم النعناع.",
       "معجون الأسنان في الخزانة، بجانب المناشف.",
       "ينسى معجون الأسنان وهو يغسل أسنانه."
-    ],
-    "nl": [
-      "Ik moet nieuwe tandpasta bij de drogist kopen.",
-      "De tandpasta smaakt naar munt.",
-      "De tandpasta ligt in de kast, naast de handdoeken.",
-      "Hij vergeet de tandpasta terwijl hij zijn tanden poetst."
-    ],
-    "uk": [
-      "Мені потрібна нова зубна паста з аптеки.",
-      "Зубна паста має м’ятний смак.",
-      "Зубна паста в шафці, поруч із рушниками.",
-      "Він забуває про зубну пасту, коли чистить зуби."
-    ],
-    "hu": [
-      "Új fogkrémet kell vennem a drogériában.",
-      "A fogkrémnek mentolos íze van.",
-      "A fogkrém a szekrényben van, a törölközők mellett.",
-      "Elfelejti a fogkrémet, amikor fogat mos."
-    ],
-    "hi": [
-      "मुझे दवा की दुकान से नया टूथपेस्ट चाहिए.",
-      "टूथपेस्ट में पुदीने का स्वाद है.",
-      "टूथपेस्ट अलमारी में तौलियों के पास है.",
-      "वह दाँत ब्रश करते समय टूथपेस्ट भूल जाता है."
-    ],
-    "pl": [
-      "Potrzebuję nowej pasty do zębów z drogerii.",
-      "Pasta do zębów ma miętowy smak.",
-      "Pasta do zębów leży v szafce, obok ręczników.",
-      "Zapomina o paście do zębów, gdy myje zęby."
-    ],
-    "el": [
-      "Χρειάζομαι καινούρια οδοντόκρεμα από το φαρμακείο.",
-      "Η οδοντόκρεμα έχει γεύση μέντας.",
-      "Η οδοντόκρεμα είναι στο ντουλάπι, δίπλα στις πετσέτες.",
-      "Ξεχνά την οδοντόκρεμα όταν βουρτσίζει τα δόντια του."
-    ],
-    "nb": [
-      "Jeg trenger ny tannkrem fra apoteket.",
-      "Tannkremen smaker mynte.",
-      "Tannkremen ligger i skapet, ved siden av håndklærne.",
-      "Han glemmer tannkremen når han pusser tennene."
-    ],
-    "id": [
-      "Saya perlu pasta gigi baru dari apotek.",
-      "Pasta gigi berasa mint.",
-      "Pasta gigi ada di lemari, di sebelah handuk.",
-      "Dia lupa memakai pasta gigi saat menyikat giginya."
-    ],
-    "sv": [
-      "Jag behöver ny tandkräm från apoteket.",
-      "Tandkrämen smakar mint.",
-      "Tandkrämen ligger i skåpet, bredvid handdukarna.",
-      "Han glömmer tandkrämen när han borstar tänderna."
-    ],
-    "ro": [
-      "Am nevoie de o pastă de dinți nouă de la farmacie.",
-      "Pasta de dinți are gust de mentă.",
-      "Pasta de dinți e în dulap, lângă prosoape.",
-      "El uită de pasta de dinți când își spală dinții."
     ],
     "cs": [
       "Potřebuji novou zubní pastu z lékárny.",
@@ -925,11 +1201,77 @@
       "Tandpastaen ligger i skabet, ved siden af håndklæderne.",
       "Han glemmer tandpastaen, når han børster tænder."
     ],
+    "de": [
+      "Ich brauche neue Zahncrème aus der Drogerie.",
+      "Die Zahncrème schmeckt nach Minze.",
+      "Die Zahncrème liegt im Schrank neben den Handtüchern.",
+      "Er vergisst die Zahncrème beim Zähneputzen."
+    ],
+    "el": [
+      "Χρειάζομαι καινούρια οδοντόκρεμα από το φαρμακείο.",
+      "Η οδοντόκρεμα έχει γεύση μέντας.",
+      "Η οδοντόκρεμα είναι στο ντουλάπι, δίπλα στις πετσέτες.",
+      "Ξεχνά την οδοντόκρεμα όταν βουρτσίζει τα δόντια του."
+    ],
+    "en": [
+      "I need new toothpaste from the drugstore.",
+      "The toothpaste tastes like mint.",
+      "The toothpaste is in the cupboard next to the towels.",
+      "He forgets the toothpaste while brushing his teeth."
+    ],
+    "es": [
+      "Necesito una pasta de dientes nueva en la farmacia.",
+      "La pasta de dientes tiene sabor a menta.",
+      "La pasta de dientes está en el armario, junto a las toallas.",
+      "Se olvida de la pasta de dientes mientras se cepilla los dientes."
+    ],
     "fi": [
       "Tarvitsen uutta hammastahnaa apteekista.",
       "Hammastahna maistuu mintulta.",
       "Hammastahna on kaapissa, pyyhkeiden vieressä.",
       "Hän unohtaa hammastahnan, kun hän harjaa hampaitaan."
+    ],
+    "fr": [
+      "J’ai besoin d’un nouveau dentifrice à la pharmacie.",
+      "Le dentifrice a un goût de menthe.",
+      "Le dentifrice est dans le placard, à côté des serviettes.",
+      "Il oublie le dentifrice en se brossant les dents."
+    ],
+    "he": [
+      "אני צריך לקנות משחת שיניים חדשה בבית המרקחת.",
+      "משחת השיניים בטעם מנטה.",
+      "משחת השיניים בארון, ליד המגבות.",
+      "הוא שוכח את משחת השיניים כשהוא מצחצח שיניים."
+    ],
+    "hi": [
+      "मुझे दवा की दुकान से नया टूथपेस्ट चाहिए.",
+      "टूथपेस्ट में पुदीने का स्वाद है.",
+      "टूथपेस्ट अलमारी में तौलियों के पास है.",
+      "वह दाँत ब्रश करते समय टूथपेस्ट भूल जाता है."
+    ],
+    "hu": [
+      "Új fogkrémet kell vennem a drogériában.",
+      "A fogkrémnek mentolos íze van.",
+      "A fogkrém a szekrényben van, a törölközők mellett.",
+      "Elfelejti a fogkrémet, amikor fogat mos."
+    ],
+    "id": [
+      "Saya perlu pasta gigi baru dari apotek.",
+      "Pasta gigi berasa mint.",
+      "Pasta gigi ada di lemari, di sebelah handuk.",
+      "Dia lupa memakai pasta gigi saat menyikat giginya."
+    ],
+    "ipa": [
+      "/ɪç ˈbʁaʊ̯xə ˈnɔʏ̯ə ˈtsaːnkrɛm aʊ̯s deːɐ dʁoɡeˈʁiː/",
+      "/diː ˈtsaːnkrɛm ʃmɛkt nax ˈmɪnt͡sə/",
+      "/diː ˈtsaːnkrɛm liːkt ɪm ʃʁaŋk ˈneːbən deːn ˈhantˌtyːçɐn/",
+      "/eːɐ fɛɐˈɡɪst diː ˈtsaːnkrɛm baɪ̯m ˈtsɛːnəˌpʊt͡sən/"
+    ],
+    "it": [
+      "Devo comprare un dentifricio nuovo in farmacia.",
+      "Il dentifricio sa di menta.",
+      "Il dentifricio è nell’armadietto, accanto agli asciugamani.",
+      "Si dimentica il dentifricio mentre si lava i denti."
     ],
     "ja": [
       "ドラッグストアで新しい歯磨き粉を買う必要がある。",
@@ -937,6 +1279,83 @@
       "歯磨き粉は戸棚の中で、タオルの隣にある。",
       "彼は歯を磨いているときに歯磨き粉を忘れる。"
     ],
-    "word_POS": "Noun"
+    "ko": [
+      "약국에서 새 치약을 사야 해요.",
+      "치약은 민트 맛이 나요.",
+      "치약은 수건 옆에 있는 수납장에 있어요.",
+      "그는 이를 닦다가 치약을 잊어버려요."
+    ],
+    "nb": [
+      "Jeg trenger ny tannkrem fra apoteket.",
+      "Tannkremen smaker mynte.",
+      "Tannkremen ligger i skapet, ved siden av håndklærne.",
+      "Han glemmer tannkremen når han pusser tennene."
+    ],
+    "nl": [
+      "Ik moet nieuwe tandpasta bij de drogist kopen.",
+      "De tandpasta smaakt naar munt.",
+      "De tandpasta ligt in de kast, naast de handdoeken.",
+      "Hij vergeet de tandpasta terwijl hij zijn tanden poetst."
+    ],
+    "pl": [
+      "Potrzebuję nowej pasty do zębów z drogerii.",
+      "Pasta do zębów ma miętowy smak.",
+      "Pasta do zębów leży v szafce, obok ręczników.",
+      "Zapomina o paście do zębów, gdy myje zęby."
+    ],
+    "pt": [
+      "Preciso comprar uma pasta de dentes nova na farmácia.",
+      "A pasta de dentes tem sabor a menta.",
+      "A pasta de dentes está no armário, ao lado das toalhas.",
+      "Ele se esquece da pasta de dentes enquanto escova os dentes."
+    ],
+    "ro": [
+      "Am nevoie de o pastă de dinți nouă de la farmacie.",
+      "Pasta de dinți are gust de mentă.",
+      "Pasta de dinți e în dulap, lângă prosoape.",
+      "El uită de pasta de dinți când își spală dinții."
+    ],
+    "ru": [
+      "Мне нужна новая зубная паста из аптеки.",
+      "У зубной пасты мятный вкус.",
+      "Зубная паста в шкафчике, рядом с полотенцами.",
+      "Он забывает пользоваться зубной пастой, когда чистит зубы."
+    ],
+    "sv": [
+      "Jag behöver ny tandkräm från apoteket.",
+      "Tandkrämen smakar mint.",
+      "Tandkrämen ligger i skåpet, bredvid handdukarna.",
+      "Han glömmer tandkrämen när han borstar tänderna."
+    ],
+    "tr": [
+      "Eczaneden yeni diş macunu almam lazım.",
+      "Diş macunu nane tadında.",
+      "Diş macunu dolapta, havluların yanında.",
+      "Dişlerini fırçalarken diş macununu unutuyor."
+    ],
+    "uk": [
+      "Мені потрібна нова зубна паста з аптеки.",
+      "Зубна паста має м’ятний смак.",
+      "Зубна паста в шафці, поруч із рушниками.",
+      "Він забуває про зубну пасту, коли чистить зуби."
+    ],
+    "vi": [
+      "Tôi cần mua kem đánh răng mới ở hiệu thuốc.",
+      "Kem đánh răng có vị bạc hà.",
+      "Kem đánh răng ở trong tủ, bên cạnh khăn tắm.",
+      "Anh ấy quên dùng kem đánh răng khi đánh răng."
+    ],
+    "yue": [
+      "我需要去藥房買支新牙膏。",
+      "牙膏有薄荷味。",
+      "牙膏喺櫃入面，喺毛巾旁邊。",
+      "佢刷牙嗰陣唔記得用牙膏。"
+    ],
+    "zh-Hans": [
+      "我需要在药店买新的牙膏。",
+      "牙膏有薄荷味。",
+      "牙膏在柜子里，放在毛巾旁边。",
+      "他刷牙时忘了用牙膏。"
+    ]
   }
 }

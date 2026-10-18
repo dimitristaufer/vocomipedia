@@ -47,13 +47,13 @@
       "reading": "わたくしのうではまだよわい。",
       "translations": {
         "en": "My arms are still weak.",
-        "es": "Todavía me duelen los brazos.",
+        "es": "Mis brazos aún están débiles.",
         "fr": "Mes bras sont encore faibles.",
         "de": "Meine Arme sind noch schwach.",
         "it": "Le mie braccia sono ancora deboli.",
         "ko": "팔은 아직 약합니다.",
-        "zh-Hans": "我的手臂仍然很虚弱。",
-        "yue": "我嘅手臂仍然好虛弱。",
+        "zh-Hans": "我的手臂仍然很弱。",
+        "yue": "我嘅手臂仲係好弱。",
         "ru": "Мои руки до сих пор слабы.",
         "pt": "Meus braços ainda estão fracos.",
         "he": "זרועותיי עדיין חלשות.",
@@ -63,7 +63,7 @@
         "nl": "Mijn armen zijn nog zwak.",
         "uk": "Мої руки ще слабкі.",
         "hu": "A karjaim még mindig gyengék.",
-        "hi": "मेरे हाथ अभी भी कमजोर हैं।",
+        "hi": "मेरी बाँहें अभी भी कमजोर हैं।",
         "pl": "Moje ramiona są nadal słabe.",
         "el": "Τα χέρια μου είναι ακόμα αδύναμα.",
         "nb": "Armene mine er fortsatt svake.",
@@ -77,12 +77,14 @@
       "tokens": [
         {
           "surface": "私",
-          "surface_en": "I",
-          "furigana": "わたくし",
-          "pos": "pronoun",
           "lemma": "私",
-          "difficulty": 6,
-          "explanation": "First-person pronoun referring to the speaker.",
+          "pos": "代名詞/*/*/*/*/*",
+          "upos": "PRON",
+          "xpos": "代名詞",
+          "feats": {},
+          "start": 0,
+          "end": 1,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "わたくし",
           "ruby_text": "私[わたくし]",
           "ruby_spans": [
@@ -93,31 +95,36 @@
               "length": 1
             }
           ],
-          "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "ruby_confidence": "reviewed",
+          "furigana": "わたくし",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "の",
-          "surface_en": "of",
-          "furigana": "の",
-          "pos": "particle",
           "lemma": "の",
-          "difficulty": 1,
-          "explanation": "Possessive particle linking '私' and '腕'.",
+          "pos": "助詞/格助詞/*/*/*/*",
+          "upos": "PART",
+          "xpos": "助詞",
+          "feats": {},
+          "start": 1,
+          "end": 2,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "の",
           "ruby_text": "の",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "の"
         },
         {
           "surface": "腕",
-          "surface_en": "arm",
-          "furigana": "うで",
-          "pos": "noun",
           "lemma": "腕",
-          "difficulty": 24,
-          "explanation": "Refers to the speaker's arm, denoting physical strength or ability.",
+          "pos": "名詞/普通名詞/一般/*/*/*",
+          "upos": "NOUN",
+          "xpos": "名詞",
+          "feats": {},
+          "start": 2,
+          "end": 3,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "うで",
           "ruby_text": "腕[うで]",
           "ruby_spans": [
@@ -128,46 +135,52 @@
               "length": 1
             }
           ],
-          "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "ruby_confidence": "reviewed",
+          "furigana": "うで",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "は",
-          "surface_en": "topic marker",
-          "furigana": "は",
-          "pos": "particle",
           "lemma": "は",
-          "difficulty": 1,
-          "explanation": "Marks '腕' as the topic of the sentence.",
+          "pos": "助詞/係助詞/*/*/*/*",
+          "upos": "PART",
+          "xpos": "助詞",
+          "feats": {},
+          "start": 3,
+          "end": 4,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "は",
           "ruby_text": "は",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "は"
         },
         {
           "surface": "まだ",
-          "surface_en": "still",
-          "furigana": "まだ",
-          "pos": "adverb",
           "lemma": "まだ",
-          "difficulty": 1,
-          "explanation": "Indicates that the state of weakness continues.",
+          "pos": "副詞/*/*/*/*/*",
+          "upos": "ADV",
+          "xpos": "副詞",
+          "feats": {},
+          "start": 4,
+          "end": 6,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "まだ",
           "ruby_text": "まだ",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "まだ"
         },
         {
           "surface": "弱い",
-          "surface_en": "weak",
-          "furigana": "よわい",
-          "pos": "adjective",
           "lemma": "弱い",
-          "difficulty": 7,
-          "explanation": "Describes the current lack of strength of the arm.",
-          "is_main_word": true,
+          "pos": "形容詞/一般/*/*/形容詞/終止形-一般",
+          "upos": "ADJ",
+          "xpos": "形容詞",
+          "feats": {},
+          "start": 6,
+          "end": 8,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "よわい",
           "ruby_text": "弱[よわ]い",
           "ruby_spans": [
@@ -178,8 +191,26 @@
               "length": 1
             }
           ],
+          "ruby_confidence": "reviewed",
+          "furigana": "よわい",
+          "ruby_source": "mediawiki_sentence_ruby",
+          "is_main_word": true
+        },
+        {
+          "surface": "。",
+          "lemma": "。",
+          "pos": "補助記号/句点/*/*/*/*",
+          "upos": "PUNCT",
+          "xpos": "補助記号",
+          "feats": {},
+          "start": 8,
+          "end": 9,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "。",
+          "ruby_text": "。",
+          "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "。"
         }
       ],
       "difficulty": 6.67,
@@ -305,30 +336,30 @@
       "reading": "かれはげーむがよわい。",
       "translations": {
         "en": "He is bad at games.",
-        "es": "Es malo en los juegos.",
-        "fr": "Il est mauvais aux jeux.",
-        "de": "Er ist schlecht in Spielen.",
+        "es": "No se le dan bien los juegos.",
+        "fr": "Il n’est pas doué pour les jeux.",
+        "de": "Er ist nicht gut im Spielen.",
         "it": "Non è bravo nei giochi.",
         "ko": "그는 게임을 잘 못해요.",
-        "zh-Hans": "他不擅长比赛。",
-        "yue": "佢唔擅長比賽。",
+        "zh-Hans": "他不擅长玩游戏。",
+        "yue": "佢唔擅長玩遊戲。",
         "ru": "Он плохо играет в игры.",
-        "pt": "Ele é ruim em jogos.",
+        "pt": "Ele não é bom em jogos.",
         "he": "הוא גרוע במשחקים.",
         "tr": "Oyunlarda kötüdür.",
-        "vi": "Anh ấy rất tệ trong các trận đấu.",
-        "ar": "إنه سيء في المباريات.",
+        "vi": "Anh ấy chơi game không giỏi.",
+        "ar": "إنه سيئ في الألعاب.",
         "nl": "Hij is slecht in games.",
         "uk": "Він погано грає в ігри.",
-        "hu": "Rossz a játékokban.",
+        "hu": "Nem valami jó a játékokban.",
         "hi": "वह खेलों में खराब है।",
         "pl": "Jest kiepski w grach.",
         "el": "Είναι κακός στα παιχνίδια.",
         "nb": "Han er dårlig i spill.",
-        "id": "Dia buruk dalam pertandingan.",
+        "id": "Dia tidak pandai bermain gim.",
         "sv": "Han är dålig på spel.",
-        "ro": "Este prost la jocuri.",
-        "cs": "Je špatný v zápasech.",
+        "ro": "Nu se pricepe la jocuri.",
+        "cs": "Hry mu moc nejdou.",
         "da": "Han er dårlig til spil.",
         "fi": "Hän on huono peleissä."
       },
@@ -427,29 +458,29 @@
       "reading": "このわいんはあじがよわい。",
       "translations": {
         "en": "This wine has a weak flavor.",
-        "es": "Este vino tiene un sabor débil.",
-        "fr": "Ce vin a une saveur faible.",
+        "es": "Este vino tiene un sabor poco intenso.",
+        "fr": "Ce vin a une saveur peu prononcée.",
         "de": "Dieser Wein hat einen schwachen Geschmack.",
-        "it": "Questo vino ha un sapore debole.",
+        "it": "Questo vino ha un sapore poco intenso.",
         "ko": "이 와인은 맛이 약합니다.",
-        "zh-Hans": "这款酒味道淡淡。",
-        "yue": "這款酒味道淡淡。",
+        "zh-Hans": "这款酒的味道很淡。",
+        "yue": "呢款酒味道好淡。",
         "ru": "Это вино обладает слабым вкусом.",
-        "pt": "Este vinho tem um sabor fraco.",
-        "he": "ליין זה יש טעם חלש.",
+        "pt": "Este vinho tem um sabor pouco intenso.",
+        "he": "ליין הזה יש טעם חלש.",
         "tr": "Bu şarabın zayıf bir tadı var.",
-        "vi": "Loại rượu này có hương vị yếu.",
-        "ar": "هذا النبيذ له نكهة ضعيفة.",
+        "vi": "Loại rượu này có vị nhạt.",
+        "ar": "نكهة هذا النبيذ خفيفة.",
         "nl": "Deze wijn heeft een zwakke smaak.",
-        "uk": "Це вино має слабкий аромат.",
+        "uk": "У цього вина слабкий смак.",
         "hu": "Ennek a bornak gyenge íze van.",
-        "hi": "इस वाइन का स्वाद कमज़ोर है।",
+        "hi": "इस वाइन का स्वाद हल्का है।",
         "pl": "To wino ma słaby smak.",
         "el": "Αυτό το κρασί έχει αδύναμη γεύση.",
         "nb": "Denne vinen har en svak smak.",
-        "id": "Anggur ini memiliki rasa yang lemah.",
+        "id": "Rasa anggur ini tidak terlalu kuat.",
         "sv": "Detta vin har en svag smak.",
-        "ro": "Acest vin are o aromă slabă.",
+        "ro": "Acest vin are un gust puțin pronunțat.",
         "cs": "Toto víno má slabou chuť.",
         "da": "Denne vin har en svag smag.",
         "fi": "Tällä viinillä on heikko maku."
@@ -573,19 +604,404 @@
     "content_reviewers": [
       "mediawiki-visible-revision"
     ],
-    "last_reviewed_utc": "2026-06-21T18:29:21Z",
-    "approval_source": "mediawiki_visible_revision",
+    "last_reviewed_utc": "2026-10-11T12:38:40Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
     "wiki": {
       "title": "Item:Ja n5/fb90df370ee28ec2",
-      "revision_id": 58180,
-      "parent_revision_id": 36624,
-      "revision_timestamp_utc": "2026-06-21T18:29:21Z",
-      "revision_user": "VocomiBot",
-      "revision_comment": "Sync ja_n5 item 弱い",
-      "pulled_utc": "2026-06-21T20:53:47Z",
-      "applied_utc": "2026-06-21T20:54:01Z",
+      "revision_id": 82765,
+      "parent_revision_id": 69057,
+      "revision_timestamp_utc": "2026-10-11T12:38:40Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Suggest reviewed Japanese and translation corrections",
+      "pulled_utc": "2026-10-17T07:37:42Z",
+      "applied_utc": "2026-10-17T07:38:00Z",
       "applied_by": "vocomipedia-apply-pulled"
-    }
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-bd97fc051dda1076",
+        "status": "applied",
+        "type": "ruby_update",
+        "item_id": "ja_n5:fb90df370ee28ec2",
+        "pack_code": "ja_n5",
+        "entry_id": "弱い",
+        "language": "ja",
+        "sentence_index": 1,
+        "old_sentence": "私の腕はまだ弱い。",
+        "old_translations": {
+          "en": "My arms are still weak.",
+          "es": "Mis brazos aún están débiles.",
+          "fr": "Mes bras sont encore faibles.",
+          "de": "Meine Arme sind noch schwach.",
+          "it": "Le mie braccia sono ancora deboli.",
+          "ko": "팔은 아직 약합니다.",
+          "zh-Hans": "我的手臂仍然很弱。",
+          "yue": "我嘅手臂仲係好弱。",
+          "ru": "Мои руки до сих пор слабы.",
+          "pt": "Meus braços ainda estão fracos.",
+          "he": "זרועותיי עדיין חלשות.",
+          "tr": "Kollarım hala güçsüz.",
+          "vi": "Cánh tay của tôi vẫn còn yếu.",
+          "ar": "ذراعي لا تزالان ضعيفتين.",
+          "nl": "Mijn armen zijn nog zwak.",
+          "uk": "Мої руки ще слабкі.",
+          "hu": "A karjaim még mindig gyengék.",
+          "hi": "मेरी बाँहें अभी भी कमजोर हैं।",
+          "pl": "Moje ramiona są nadal słabe.",
+          "el": "Τα χέρια μου είναι ακόμα αδύναμα.",
+          "nb": "Armene mine er fortsatt svake.",
+          "id": "Lengan saya masih lemah.",
+          "sv": "Mina armar är fortfarande svaga.",
+          "ro": "Brațele mele sunt încă slabe.",
+          "cs": "Moje paže jsou stále slabé.",
+          "da": "Mine arme er stadig svage.",
+          "fi": "Käteni ovat edelleen heikot."
+        },
+        "proposed_sentence": "私の腕はまだ弱い。",
+        "proposed_translations": {
+          "en": "My arms are still weak.",
+          "es": "Mis brazos aún están débiles.",
+          "fr": "Mes bras sont encore faibles.",
+          "de": "Meine Arme sind noch schwach.",
+          "it": "Le mie braccia sono ancora deboli.",
+          "ko": "팔은 아직 약합니다.",
+          "zh-Hans": "我的手臂仍然很弱。",
+          "yue": "我嘅手臂仲係好弱。",
+          "ru": "Мои руки до сих пор слабы.",
+          "pt": "Meus braços ainda estão fracos.",
+          "he": "זרועותיי עדיין חלשות.",
+          "tr": "Kollarım hala güçsüz.",
+          "vi": "Cánh tay của tôi vẫn còn yếu.",
+          "ar": "ذراعي لا تزالان ضعيفتين.",
+          "nl": "Mijn armen zijn nog zwak.",
+          "uk": "Мої руки ще слабкі.",
+          "hu": "A karjaim még mindig gyengék.",
+          "hi": "मेरी बाँहें अभी भी कमजोर हैं।",
+          "pl": "Moje ramiona są nadal słabe.",
+          "el": "Τα χέρια μου είναι ακόμα αδύναμα.",
+          "nb": "Armene mine er fortsatt svake.",
+          "id": "Lengan saya masih lemah.",
+          "sv": "Mina armar är fortfarande svaga.",
+          "ro": "Brațele mele sunt încă slabe.",
+          "cs": "Moje paže jsou stále slabé.",
+          "da": "Mine arme er stadig svage.",
+          "fi": "Käteni ovat edelleen heikot."
+        },
+        "old_ruby_source": "私[わたし]の腕[うで]はまだ弱[よわ]い。",
+        "proposed_ruby_source": "私[わたくし]の腕[うで]はまだ弱[よわ]い。",
+        "old_japanese": "私の腕はまだ弱い。",
+        "old_english": "My arms are still weak.",
+        "proposed_japanese": "私の腕はまだ弱い。",
+        "proposed_english": "My arms are still weak.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "ja",
+          "sentence": "私の腕はまだ弱い。",
+          "tokens": [
+            {
+              "surface": "私",
+              "lemma": "私",
+              "pos": "代名詞/*/*/*/*/*",
+              "upos": "PRON",
+              "xpos": "代名詞",
+              "feats": {},
+              "start": 0,
+              "end": 1,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "わたくし",
+              "ruby_text": "私[わたくし]",
+              "ruby_spans": [
+                {
+                  "base": "私",
+                  "reading": "わたくし",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "わたくし",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "の",
+              "lemma": "の",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 1,
+              "end": 2,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "の",
+              "ruby_text": "の",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "の"
+            },
+            {
+              "surface": "腕",
+              "lemma": "腕",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 2,
+              "end": 3,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "うで",
+              "ruby_text": "腕[うで]",
+              "ruby_spans": [
+                {
+                  "base": "腕",
+                  "reading": "うで",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "うで",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "は",
+              "lemma": "は",
+              "pos": "助詞/係助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 3,
+              "end": 4,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "は",
+              "ruby_text": "は",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "は"
+            },
+            {
+              "surface": "まだ",
+              "lemma": "まだ",
+              "pos": "副詞/*/*/*/*/*",
+              "upos": "ADV",
+              "xpos": "副詞",
+              "feats": {},
+              "start": 4,
+              "end": 6,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "まだ",
+              "ruby_text": "まだ",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "まだ"
+            },
+            {
+              "surface": "弱い",
+              "lemma": "弱い",
+              "pos": "形容詞/一般/*/*/形容詞/終止形-一般",
+              "upos": "ADJ",
+              "xpos": "形容詞",
+              "feats": {},
+              "start": 6,
+              "end": 8,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "よわい",
+              "ruby_text": "弱[よわ]い",
+              "ruby_spans": [
+                {
+                  "base": "弱",
+                  "reading": "よわ",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "よわい",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "。",
+              "lemma": "。",
+              "pos": "補助記号/句点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 8,
+              "end": 9,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "。",
+              "ruby_text": "。",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "。"
+            }
+          ],
+          "reading": "わたくしのうではまだよわい。",
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "warnings": [
+            "mediawiki ruby hints applied"
+          ]
+        },
+        "generated_tokens": [
+          {
+            "surface": "私",
+            "lemma": "私",
+            "pos": "代名詞/*/*/*/*/*",
+            "upos": "PRON",
+            "xpos": "代名詞",
+            "feats": {},
+            "start": 0,
+            "end": 1,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "わたくし",
+            "ruby_text": "私[わたくし]",
+            "ruby_spans": [
+              {
+                "base": "私",
+                "reading": "わたくし",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "わたくし",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "の",
+            "lemma": "の",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 1,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "の",
+            "ruby_text": "の",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "の"
+          },
+          {
+            "surface": "腕",
+            "lemma": "腕",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 2,
+            "end": 3,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "うで",
+            "ruby_text": "腕[うで]",
+            "ruby_spans": [
+              {
+                "base": "腕",
+                "reading": "うで",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "うで",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "は",
+            "lemma": "は",
+            "pos": "助詞/係助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 3,
+            "end": 4,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "は",
+            "ruby_text": "は",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "は"
+          },
+          {
+            "surface": "まだ",
+            "lemma": "まだ",
+            "pos": "副詞/*/*/*/*/*",
+            "upos": "ADV",
+            "xpos": "副詞",
+            "feats": {},
+            "start": 4,
+            "end": 6,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "まだ",
+            "ruby_text": "まだ",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "まだ"
+          },
+          {
+            "surface": "弱い",
+            "lemma": "弱い",
+            "pos": "形容詞/一般/*/*/形容詞/終止形-一般",
+            "upos": "ADJ",
+            "xpos": "形容詞",
+            "feats": {},
+            "start": 6,
+            "end": 8,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "よわい",
+            "ruby_text": "弱[よわ]い",
+            "ruby_spans": [
+              {
+                "base": "弱",
+                "reading": "よわ",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "よわい",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 8,
+            "end": 9,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
+          }
+        ],
+        "generated_reading": "わたくしのうではまだよわい。",
+        "analyzer": "sudachipy_sudachidict_core_c",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:37:42Z",
+        "updated_utc": "2026-10-17T07:38:15Z",
+        "applied_utc": "2026-10-17T07:38:15Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:38:15Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -630,12 +1046,14 @@
         "tokens": [
           {
             "surface": "私",
-            "surface_en": "I",
-            "furigana": "わたくし",
-            "pos": "pronoun",
             "lemma": "私",
-            "difficulty": 6,
-            "explanation": "First-person pronoun referring to the speaker.",
+            "pos": "代名詞/*/*/*/*/*",
+            "upos": "PRON",
+            "xpos": "代名詞",
+            "feats": {},
+            "start": 0,
+            "end": 1,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "わたくし",
             "ruby_text": "私[わたくし]",
             "ruby_spans": [
@@ -646,31 +1064,36 @@
                 "length": 1
               }
             ],
-            "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "ruby_confidence": "reviewed",
+            "furigana": "わたくし",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "の",
-            "surface_en": "of",
-            "furigana": "の",
-            "pos": "particle",
             "lemma": "の",
-            "difficulty": 1,
-            "explanation": "Possessive particle linking '私' and '腕'.",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 1,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "の",
             "ruby_text": "の",
             "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "の"
           },
           {
             "surface": "腕",
-            "surface_en": "arm",
-            "furigana": "うで",
-            "pos": "noun",
             "lemma": "腕",
-            "difficulty": 24,
-            "explanation": "Refers to the speaker's arm, denoting physical strength or ability.",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 2,
+            "end": 3,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "うで",
             "ruby_text": "腕[うで]",
             "ruby_spans": [
@@ -681,46 +1104,52 @@
                 "length": 1
               }
             ],
-            "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "ruby_confidence": "reviewed",
+            "furigana": "うで",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "は",
-            "surface_en": "topic marker",
-            "furigana": "は",
-            "pos": "particle",
             "lemma": "は",
-            "difficulty": 1,
-            "explanation": "Marks '腕' as the topic of the sentence.",
+            "pos": "助詞/係助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 3,
+            "end": 4,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "は",
             "ruby_text": "は",
             "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "は"
           },
           {
             "surface": "まだ",
-            "surface_en": "still",
-            "furigana": "まだ",
-            "pos": "adverb",
             "lemma": "まだ",
-            "difficulty": 1,
-            "explanation": "Indicates that the state of weakness continues.",
+            "pos": "副詞/*/*/*/*/*",
+            "upos": "ADV",
+            "xpos": "副詞",
+            "feats": {},
+            "start": 4,
+            "end": 6,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "まだ",
             "ruby_text": "まだ",
             "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "まだ"
           },
           {
             "surface": "弱い",
-            "surface_en": "weak",
-            "furigana": "よわい",
-            "pos": "adjective",
             "lemma": "弱い",
-            "difficulty": 7,
-            "explanation": "Describes the current lack of strength of the arm.",
-            "is_main_word": true,
+            "pos": "形容詞/一般/*/*/形容詞/終止形-一般",
+            "upos": "ADJ",
+            "xpos": "形容詞",
+            "feats": {},
+            "start": 6,
+            "end": 8,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "よわい",
             "ruby_text": "弱[よわ]い",
             "ruby_spans": [
@@ -731,8 +1160,26 @@
                 "length": 1
               }
             ],
+            "ruby_confidence": "reviewed",
+            "furigana": "よわい",
+            "ruby_source": "mediawiki_sentence_ruby",
+            "is_main_word": true
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 8,
+            "end": 9,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "。"
           }
         ],
         "difficulty_aggregated": 6.67
@@ -1051,13 +1498,13 @@
     "ar": [
       "ذراعي لا تزالان ضعيفتين.",
       "هذا الزجاج هش للغاية.",
-      "إنه سيء في المباريات.",
-      "هذا النبيذ له نكهة ضعيفة."
+      "إنه سيئ في الألعاب.",
+      "نكهة هذا النبيذ خفيفة."
     ],
     "cs": [
       "Moje paže jsou stále slabé.",
       "Toto sklo je velmi křehké.",
-      "Je špatný v zápasech.",
+      "Hry mu moc nejdou.",
       "Toto víno má slabou chuť."
     ],
     "da": [
@@ -1069,7 +1516,7 @@
     "de": [
       "Meine Arme sind noch schwach.",
       "Dieses Glas ist sehr zerbrechlich.",
-      "Er ist schlecht in Spielen.",
+      "Er ist nicht gut im Spielen.",
       "Dieser Wein hat einen schwachen Geschmack."
     ],
     "el": [
@@ -1085,10 +1532,10 @@
       "This wine has a weak flavor."
     ],
     "es": [
-      "Todavía me duelen los brazos.",
+      "Mis brazos aún están débiles.",
       "Este vidrio es muy frágil.",
-      "Es malo en los juegos.",
-      "Este vino tiene un sabor débil."
+      "No se le dan bien los juegos.",
+      "Este vino tiene un sabor poco intenso."
     ],
     "fi": [
       "Käteni ovat edelleen heikot.",
@@ -1099,38 +1546,38 @@
     "fr": [
       "Mes bras sont encore faibles.",
       "Ce verre est très fragile.",
-      "Il est mauvais aux jeux.",
-      "Ce vin a une saveur faible."
+      "Il n’est pas doué pour les jeux.",
+      "Ce vin a une saveur peu prononcée."
     ],
     "he": [
       "זרועותיי עדיין חלשות.",
       "זכוכית זו שבירה מאוד.",
       "הוא גרוע במשחקים.",
-      "ליין זה יש טעם חלש."
+      "ליין הזה יש טעם חלש."
     ],
     "hi": [
-      "मेरे हाथ अभी भी कमजोर हैं।",
+      "मेरी बाँहें अभी भी कमजोर हैं।",
       "यह कांच बहुत नाजुक है।",
       "वह खेलों में खराब है।",
-      "इस वाइन का स्वाद कमज़ोर है।"
+      "इस वाइन का स्वाद हल्का है।"
     ],
     "hu": [
       "A karjaim még mindig gyengék.",
       "Ez az üveg nagyon törékeny.",
-      "Rossz a játékokban.",
+      "Nem valami jó a játékokban.",
       "Ennek a bornak gyenge íze van."
     ],
     "id": [
       "Lengan saya masih lemah.",
       "Kaca ini sangat rapuh.",
-      "Dia buruk dalam pertandingan.",
-      "Anggur ini memiliki rasa yang lemah."
+      "Dia tidak pandai bermain gim.",
+      "Rasa anggur ini tidak terlalu kuat."
     ],
     "it": [
       "Le mie braccia sono ancora deboli.",
       "Questo vetro è molto fragile.",
       "Non è bravo nei giochi.",
-      "Questo vino ha un sapore debole."
+      "Questo vino ha un sapore poco intenso."
     ],
     "ko": [
       "팔은 아직 약합니다.",
@@ -1159,14 +1606,14 @@
     "pt": [
       "Meus braços ainda estão fracos.",
       "Este vidro é muito frágil.",
-      "Ele é ruim em jogos.",
-      "Este vinho tem um sabor fraco."
+      "Ele não é bom em jogos.",
+      "Este vinho tem um sabor pouco intenso."
     ],
     "ro": [
       "Brațele mele sunt încă slabe.",
       "Acest pahar este foarte fragil.",
-      "Este prost la jocuri.",
-      "Acest vin are o aromă slabă."
+      "Nu se pricepe la jocuri.",
+      "Acest vin are un gust puțin pronunțat."
     ],
     "ru": [
       "Мои руки до сих пор слабы.",
@@ -1190,25 +1637,25 @@
       "Мої руки ще слабкі.",
       "Таке скло дуже крихке.",
       "Він погано грає в ігри.",
-      "Це вино має слабкий аромат."
+      "У цього вина слабкий смак."
     ],
     "vi": [
       "Cánh tay của tôi vẫn còn yếu.",
       "Ly này rất mỏng manh.",
-      "Anh ấy rất tệ trong các trận đấu.",
-      "Loại rượu này có hương vị yếu."
+      "Anh ấy chơi game không giỏi.",
+      "Loại rượu này có vị nhạt."
     ],
     "yue": [
-      "我嘅手臂仍然好虛弱。",
+      "我嘅手臂仲係好弱。",
       "呢種玻璃非常脆弱。",
-      "佢唔擅長比賽。",
-      "這款酒味道淡淡。"
+      "佢唔擅長玩遊戲。",
+      "呢款酒味道好淡。"
     ],
     "zh-Hans": [
-      "我的手臂仍然很虚弱。",
+      "我的手臂仍然很弱。",
       "这种玻璃非常脆弱。",
-      "他不擅长比赛。",
-      "这款酒味道淡淡。"
+      "他不擅长玩游戏。",
+      "这款酒的味道很淡。"
     ]
   }
 }

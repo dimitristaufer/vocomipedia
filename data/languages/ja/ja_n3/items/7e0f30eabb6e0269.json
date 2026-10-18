@@ -4,7 +4,7 @@
   "pack_code": "ja_n3",
   "language": "ja",
   "entry_id": "しゃこ",
-  "headword": "しゃこ",
+  "headword": "車庫",
   "reading": "しゃこ",
   "label": "garage; carport; depot (for trains, buses, etc.); shed; carbarn",
   "level": "N3",
@@ -38,7 +38,7 @@
     "cs": "garáž",
     "da": "garage",
     "fi": "autotalli",
-    "ja": "しゃこ"
+    "ja": "車庫"
   },
   "sentences": [
     {
@@ -95,7 +95,8 @@
             }
           ],
           "ruby_confidence": "medium",
-          "furigana": "しゃこ"
+          "furigana": "しゃこ",
+          "is_main_word": true
         },
         {
           "surface": "に",
@@ -211,11 +212,11 @@
       "difficulty": null
     },
     {
-      "target": "バスは車庫にもどりました。",
+      "target": "バスは車庫に戻りました。",
       "reading": "ばすはしゃこにもどりました。",
       "translations": {
         "en": "The bus returned to the depot.",
-        "ar": "عاد الحافلة إلى المرآب.",
+        "ar": "عادت الحافلة إلى المرآب.",
         "cs": "Autobus se vrátil do vozovny.",
         "da": "Bussen vendte tilbage til garagen.",
         "de": "Der Bus kam ins Depot zurück.",
@@ -295,8 +296,10 @@
               "length": 2
             }
           ],
-          "ruby_confidence": "medium",
-          "furigana": "しゃこ"
+          "ruby_confidence": "reviewed",
+          "furigana": "しゃこ",
+          "ruby_source": "mediawiki_sentence_ruby",
+          "is_main_word": true
         },
         {
           "surface": "に",
@@ -315,20 +318,28 @@
           "furigana": "に"
         },
         {
-          "surface": "もどり",
-          "lemma": "もどる",
+          "surface": "戻り",
+          "lemma": "戻る",
           "pos": "動詞/一般/*/*/五段-ラ行/連用形-一般",
           "upos": "VERB",
           "xpos": "動詞",
           "feats": {},
           "start": 6,
-          "end": 9,
+          "end": 8,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "もどり",
-          "ruby_text": "もどり",
-          "ruby_spans": [],
-          "ruby_confidence": "high",
-          "furigana": "もどり"
+          "ruby_text": "戻[もど]り",
+          "ruby_spans": [
+            {
+              "base": "戻",
+              "reading": "もど",
+              "start": 0,
+              "length": 1
+            }
+          ],
+          "ruby_confidence": "reviewed",
+          "furigana": "もどり",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "まし",
@@ -337,8 +348,8 @@
           "upos": "AUX",
           "xpos": "助動詞",
           "feats": {},
-          "start": 9,
-          "end": 11,
+          "start": 8,
+          "end": 10,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "まし",
           "ruby_text": "まし",
@@ -353,8 +364,8 @@
           "upos": "AUX",
           "xpos": "助動詞",
           "feats": {},
-          "start": 11,
-          "end": 12,
+          "start": 10,
+          "end": 11,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "た",
           "ruby_text": "た",
@@ -369,8 +380,8 @@
           "upos": "PUNCT",
           "xpos": "補助記号",
           "feats": {},
-          "start": 12,
-          "end": 13,
+          "start": 11,
+          "end": 12,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "。",
           "ruby_text": "。",
@@ -529,7 +540,8 @@
             }
           ],
           "ruby_confidence": "medium",
-          "furigana": "しゃこ"
+          "furigana": "しゃこ",
+          "is_main_word": true
         },
         {
           "surface": "が",
@@ -613,7 +625,7 @@
         "fr": "Les jours de pluie, je mets mon vélo dans le cabanon.",
         "he": "בימים גשומים אני מכניס את האופניים שלי למחסן.",
         "hi": "बरसात के दिनों में मैं अपनी साइकिल शेड में रखता हूँ।",
-        "hu": "Esős napokon a biciklimet a szerszámoskamrába teszem.",
+        "hu": "Esős napokon a biciklimet a garázsba teszem.",
         "id": "Pada hari hujan, saya menyimpan sepeda saya di gudang.",
         "it": "Nei giorni di pioggia metto la mia bicicletta nel capanno.",
         "ko": "비 오는 날에는 자전거를 차고에 넣습니다.",
@@ -769,7 +781,8 @@
             }
           ],
           "ruby_confidence": "medium",
-          "furigana": "しゃこ"
+          "furigana": "しゃこ",
+          "is_main_word": true
         },
         {
           "surface": "に",
@@ -850,8 +863,424 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-13T01:32:36Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:Ja n3/7e0f30eabb6e0269",
+      "revision_id": 81153,
+      "parent_revision_id": 61187,
+      "revision_timestamp_utc": "2026-10-13T01:32:36Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Standardized 車庫 and corrected the Arabic agreement and Hungarian location.",
+      "pulled_utc": "2026-10-18T17:39:06Z",
+      "applied_utc": "2026-10-18T17:39:43Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-35374d4efc4e013b",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "ja_n3:7e0f30eabb6e0269",
+        "pack_code": "ja_n3",
+        "entry_id": "しゃこ",
+        "language": "ja",
+        "sentence_index": 2,
+        "old_sentence": "バスは車庫にもどりました。",
+        "old_translations": {
+          "en": "The bus returned to the depot.",
+          "ar": "عاد الحافلة إلى المرآب.",
+          "cs": "Autobus se vrátil do vozovny.",
+          "da": "Bussen vendte tilbage til garagen.",
+          "de": "Der Bus kam ins Depot zurück.",
+          "el": "Το λεωφορείο γύρισε στο αμαξοστάσιο.",
+          "es": "El autobús volvió a la cochera.",
+          "fi": "Bussi palasi varikolle.",
+          "fr": "L'autobus est retourné au dépôt.",
+          "he": "האוטובוס חזר למחסן.",
+          "hi": "बस डिपो लौट आई।",
+          "hu": "A busz visszatért a garázsba.",
+          "id": "Bus itu kembali ke depo.",
+          "it": "L'autobus è tornato al deposito.",
+          "ko": "버스가 차고로 돌아왔습니다.",
+          "nb": "Bussen kom tilbake til depotet.",
+          "nl": "De bus is teruggekeerd naar de remise.",
+          "pl": "Autobus wrócił do zajezdni.",
+          "pt": "O ônibus voltou para a garagem.",
+          "ro": "Autobuzul s-a întors la depou.",
+          "ru": "Автобус вернулся в депо.",
+          "sv": "Bussen kom tillbaka till depån.",
+          "tr": "Otobüs depoya döndü.",
+          "uk": "Автобус повернувся в депо.",
+          "vi": "Xe buýt đã trở về bến.",
+          "yue": "巴士返咗車廠。",
+          "zh-Hans": "公交车回到了车库。"
+        },
+        "proposed_sentence": "バスは車庫に戻りました。",
+        "proposed_translations": {
+          "en": "The bus returned to the depot.",
+          "ar": "عادت الحافلة إلى المرآب.",
+          "cs": "Autobus se vrátil do vozovny.",
+          "da": "Bussen vendte tilbage til garagen.",
+          "de": "Der Bus kam ins Depot zurück.",
+          "el": "Το λεωφορείο γύρισε στο αμαξοστάσιο.",
+          "es": "El autobús volvió a la cochera.",
+          "fi": "Bussi palasi varikolle.",
+          "fr": "L'autobus est retourné au dépôt.",
+          "he": "האוטובוס חזר למחסן.",
+          "hi": "बस डिपो लौट आई।",
+          "hu": "A busz visszatért a garázsba.",
+          "id": "Bus itu kembali ke depo.",
+          "it": "L'autobus è tornato al deposito.",
+          "ko": "버스가 차고로 돌아왔습니다.",
+          "nb": "Bussen kom tilbake til depotet.",
+          "nl": "De bus is teruggekeerd naar de remise.",
+          "pl": "Autobus wrócił do zajezdni.",
+          "pt": "O ônibus voltou para a garagem.",
+          "ro": "Autobuzul s-a întors la depou.",
+          "ru": "Автобус вернулся в депо.",
+          "sv": "Bussen kom tillbaka till depån.",
+          "tr": "Otobüs depoya döndü.",
+          "uk": "Автобус повернувся в депо.",
+          "vi": "Xe buýt đã trở về bến.",
+          "yue": "巴士返咗車廠。",
+          "zh-Hans": "公交车回到了车库。"
+        },
+        "old_ruby_source": "バスは車庫[しゃこ]にもどりました。",
+        "proposed_ruby_source": "バスは車庫[しゃこ]に戻[もど]りました。",
+        "old_japanese": "バスは車庫にもどりました。",
+        "old_english": "The bus returned to the depot.",
+        "proposed_japanese": "バスは車庫に戻りました。",
+        "proposed_english": "The bus returned to the depot.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "ja",
+          "sentence": "バスは車庫に戻りました。",
+          "tokens": [
+            {
+              "surface": "バス",
+              "lemma": "バス",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 0,
+              "end": 2,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "ばす",
+              "ruby_text": "バス",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "ばす"
+            },
+            {
+              "surface": "は",
+              "lemma": "は",
+              "pos": "助詞/係助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 2,
+              "end": 3,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "は",
+              "ruby_text": "は",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "は"
+            },
+            {
+              "surface": "車庫",
+              "lemma": "車庫",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 3,
+              "end": 5,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "しゃこ",
+              "ruby_text": "車庫[しゃこ]",
+              "ruby_spans": [
+                {
+                  "base": "車庫",
+                  "reading": "しゃこ",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "しゃこ",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "に",
+              "lemma": "に",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 5,
+              "end": 6,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "に",
+              "ruby_text": "に",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "に"
+            },
+            {
+              "surface": "戻り",
+              "lemma": "戻る",
+              "pos": "動詞/一般/*/*/五段-ラ行/連用形-一般",
+              "upos": "VERB",
+              "xpos": "動詞",
+              "feats": {},
+              "start": 6,
+              "end": 8,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "もどり",
+              "ruby_text": "戻[もど]り",
+              "ruby_spans": [
+                {
+                  "base": "戻",
+                  "reading": "もど",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "もどり",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "まし",
+              "lemma": "ます",
+              "pos": "助動詞/*/*/*/助動詞-マス/連用形-一般",
+              "upos": "AUX",
+              "xpos": "助動詞",
+              "feats": {},
+              "start": 8,
+              "end": 10,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "まし",
+              "ruby_text": "まし",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "まし"
+            },
+            {
+              "surface": "た",
+              "lemma": "た",
+              "pos": "助動詞/*/*/*/助動詞-タ/終止形-一般",
+              "upos": "AUX",
+              "xpos": "助動詞",
+              "feats": {},
+              "start": 10,
+              "end": 11,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "た",
+              "ruby_text": "た",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "た"
+            },
+            {
+              "surface": "。",
+              "lemma": "。",
+              "pos": "補助記号/句点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 11,
+              "end": 12,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "。",
+              "ruby_text": "。",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "。"
+            }
+          ],
+          "reading": "ばすはしゃこにもどりました。",
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "warnings": [
+            "mediawiki ruby hints applied"
+          ]
+        },
+        "generated_tokens": [
+          {
+            "surface": "バス",
+            "lemma": "バス",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ばす",
+            "ruby_text": "バス",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "ばす"
+          },
+          {
+            "surface": "は",
+            "lemma": "は",
+            "pos": "助詞/係助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 2,
+            "end": 3,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "は",
+            "ruby_text": "は",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "は"
+          },
+          {
+            "surface": "車庫",
+            "lemma": "車庫",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 3,
+            "end": 5,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "しゃこ",
+            "ruby_text": "車庫[しゃこ]",
+            "ruby_spans": [
+              {
+                "base": "車庫",
+                "reading": "しゃこ",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "しゃこ",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "に",
+            "lemma": "に",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 5,
+            "end": 6,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "に",
+            "ruby_text": "に",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "に"
+          },
+          {
+            "surface": "戻り",
+            "lemma": "戻る",
+            "pos": "動詞/一般/*/*/五段-ラ行/連用形-一般",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 6,
+            "end": 8,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "もどり",
+            "ruby_text": "戻[もど]り",
+            "ruby_spans": [
+              {
+                "base": "戻",
+                "reading": "もど",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "もどり",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "まし",
+            "lemma": "ます",
+            "pos": "助動詞/*/*/*/助動詞-マス/連用形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 8,
+            "end": 10,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "まし",
+            "ruby_text": "まし",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "まし"
+          },
+          {
+            "surface": "た",
+            "lemma": "た",
+            "pos": "助動詞/*/*/*/助動詞-タ/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 10,
+            "end": 11,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "た",
+            "ruby_text": "た",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "た"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 11,
+            "end": 12,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
+          }
+        ],
+        "generated_reading": "ばすはしゃこにもどりました。",
+        "analyzer": "sudachipy_sudachidict_core_c",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-18T17:39:06Z",
+        "updated_utc": "2026-10-18T17:40:45Z",
+        "applied_utc": "2026-10-18T17:40:45Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-18T17:40:45Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -861,7 +1290,7 @@
   },
   "app_payload": {
     "entry_id": "しゃこ",
-    "word": "しゃこ",
+    "word": "車庫",
     "word_reading": "しゃこ",
     "word_label": "garage; carport; depot (for trains, buses, etc.); shed; carbarn",
     "comic_difficulty": 0.0,
@@ -876,12 +1305,6 @@
       "ばすはしゃこにもどりました。",
       "このいえにはちいさいしゃこがあります。",
       "あめのひはじてんしゃをしゃこにしまいます。"
-    ],
-    "en": [
-      "I put the car in the garage.",
-      "The bus returned to the depot.",
-      "This house has a small garage.",
-      "On rainy days, I put my bicycle in the shed."
     ],
     "generation": {
       "generator": "vocomipedia_source_generator.py",
@@ -920,190 +1343,6 @@
         "parts_of_speech": "Noun"
       }
     },
-    "word_en": "garage; carport; depot (for trains, buses, etc.); shed; carbarn",
-    "word_es": "garaje",
-    "word_fr": "garage",
-    "word_de": "Garage",
-    "word_it": "autorimessa",
-    "word_ko": "차고",
-    "word_zh-Hans": "车库",
-    "word_yue": "車庫",
-    "word_ru": "гараж",
-    "word_pt": "garagem",
-    "word_he": "מוסך",
-    "word_tr": "garaj",
-    "word_vi": "nhà để xe",
-    "word_ar": "مرآب",
-    "word_nl": "garage",
-    "word_uk": "гараж",
-    "word_hu": "garázs",
-    "word_hi": "गैराज",
-    "word_pl": "garaż",
-    "word_el": "γκαράζ",
-    "word_nb": "garasje",
-    "word_id": "garasi",
-    "word_sv": "garage",
-    "word_ro": "garaj",
-    "word_cs": "garáž",
-    "word_da": "garage",
-    "word_fi": "autotalli",
-    "word_ja": "しゃこ",
-    "ar": [
-      "أدخل السيارة إلى المرآب.",
-      "عاد الحافلة إلى المرآب.",
-      "هذا البيت فيه مرآب صغير.",
-      "في الأيام الممطرة، أضع دراجتي في السقيفة."
-    ],
-    "cs": [
-      "Dám auto do garáže.",
-      "Autobus se vrátil do vozovny.",
-      "Tento dům má malou garáž.",
-      "V deštivých dnech dávám kolo do kůlny."
-    ],
-    "da": [
-      "Jeg sætter bilen i garagen.",
-      "Bussen vendte tilbage til garagen.",
-      "Dette hus har en lille garage.",
-      "På regnvejrsdage stiller jeg min cykel i skuret."
-    ],
-    "de": [
-      "Ich stelle das Auto in die Garage.",
-      "Der Bus kam ins Depot zurück.",
-      "Dieses Haus hat eine kleine Garage.",
-      "An Regentagen stelle ich mein Fahrrad in den Schuppen."
-    ],
-    "el": [
-      "Βάζω το αυτοκίνητο στο γκαράζ.",
-      "Το λεωφορείο γύρισε στο αμαξοστάσιο.",
-      "Αυτό το σπίτι έχει ένα μικρό γκαράζ.",
-      "Τις βροχερές μέρες βάζω το ποδήλατό μου στο υπόστεγο."
-    ],
-    "es": [
-      "Pongo el coche en el garaje.",
-      "El autobús volvió a la cochera.",
-      "Esta casa tiene un garaje pequeño.",
-      "Los días de lluvia guardo mi bicicleta en el cobertizo."
-    ],
-    "fi": [
-      "Laitan auton talliin.",
-      "Bussi palasi varikolle.",
-      "Tässä talossa on pieni autotalli.",
-      "Sateisina päivinä vien polkupyöräni vajaan."
-    ],
-    "fr": [
-      "Je mets la voiture dans le garage.",
-      "L'autobus est retourné au dépôt.",
-      "Cette maison a un petit garage.",
-      "Les jours de pluie, je mets mon vélo dans le cabanon."
-    ],
-    "he": [
-      "אני מכניס את המכונית למוסך.",
-      "האוטובוס חזר למחסן.",
-      "לבית הזה יש מוסך קטן.",
-      "בימים גשומים אני מכניס את האופניים שלי למחסן."
-    ],
-    "hi": [
-      "मैं कार को गैराज में खड़ा करता हूँ।",
-      "बस डिपो लौट आई।",
-      "इस घर में एक छोटा गैराज है।",
-      "बरसात के दिनों में मैं अपनी साइकिल शेड में रखता हूँ।"
-    ],
-    "hu": [
-      "Beállítom az autót a garázsba.",
-      "A busz visszatért a garázsba.",
-      "Ennek a háznak van egy kis garázsa.",
-      "Esős napokon a biciklimet a szerszámoskamrába teszem."
-    ],
-    "id": [
-      "Saya memasukkan mobil ke garasi.",
-      "Bus itu kembali ke depo.",
-      "Rumah ini punya garasi kecil.",
-      "Pada hari hujan, saya menyimpan sepeda saya di gudang."
-    ],
-    "it": [
-      "Metto l'auto in garage.",
-      "L'autobus è tornato al deposito.",
-      "Questa casa ha un piccolo garage.",
-      "Nei giorni di pioggia metto la mia bicicletta nel capanno."
-    ],
-    "ko": [
-      "차를 차고에 넣습니다.",
-      "버스가 차고로 돌아왔습니다.",
-      "이 집에는 작은 차고가 있습니다.",
-      "비 오는 날에는 자전거를 차고에 넣습니다."
-    ],
-    "nb": [
-      "Jeg setter bilen i garasjen.",
-      "Bussen kom tilbake til depotet.",
-      "Dette huset har en liten garasje.",
-      "På regnværsdager setter jeg sykkelen i skjulet."
-    ],
-    "nl": [
-      "Ik zet de auto in de garage.",
-      "De bus is teruggekeerd naar de remise.",
-      "Dit huis heeft een kleine garage.",
-      "Op regenachtige dagen zet ik mijn fiets in het schuurtje."
-    ],
-    "pl": [
-      "Wstawiam samochód do garażu.",
-      "Autobus wrócił do zajezdni.",
-      "Ten dom ma mały garaż.",
-      "W deszczowe dni chowam rower do szopy."
-    ],
-    "pt": [
-      "Eu ponho o carro na garagem.",
-      "O ônibus voltou para a garagem.",
-      "Esta casa tem uma garagem pequena.",
-      "Nos dias de chuva, guardo minha bicicleta no galpão."
-    ],
-    "ro": [
-      "Pun mașina în garaj.",
-      "Autobuzul s-a întors la depou.",
-      "Casa asta are un garaj mic.",
-      "În zilele ploioase îmi pun bicicleta în șopron."
-    ],
-    "ru": [
-      "Я ставлю машину в гараж.",
-      "Автобус вернулся в депо.",
-      "У этого дома есть маленький гараж.",
-      "В дождливые дни я ставлю велосипед в сарай."
-    ],
-    "sv": [
-      "Jag ställer bilen i garaget.",
-      "Bussen kom tillbaka till depån.",
-      "Det här huset har ett litet garage.",
-      "På regniga dagar ställer jag cykeln i skjulet."
-    ],
-    "tr": [
-      "Arabayı garaja koyuyorum.",
-      "Otobüs depoya döndü.",
-      "Bu evin küçük bir garajı var.",
-      "Yağmurlu günlerde bisikletimi kulübeye koyarım."
-    ],
-    "uk": [
-      "Я ставлю машину в гараж.",
-      "Автобус повернувся в депо.",
-      "У цього будинку є маленький гараж.",
-      "У дощові дні я ставлю велосипед у сарай."
-    ],
-    "vi": [
-      "Tôi cho xe vào gara.",
-      "Xe buýt đã trở về bến.",
-      "Ngôi nhà này có một gara nhỏ.",
-      "Vào những ngày mưa, tôi để xe đạp trong nhà kho."
-    ],
-    "yue": [
-      "我將架車入車房。",
-      "巴士返咗車廠。",
-      "呢間屋有一個細車房。",
-      "落雨嘅日子，我會將單車放入棚。"
-    ],
-    "zh-Hans": [
-      "我把车开进车库。",
-      "公交车回到了车库。",
-      "这所房子有一个小车库。",
-      "下雨天我把自行车放进车棚。"
-    ],
     "pos_analysis": [
       {
         "sentence": "車庫に車を入れます。",
@@ -1129,7 +1368,8 @@
               }
             ],
             "ruby_confidence": "medium",
-            "furigana": "しゃこ"
+            "furigana": "しゃこ",
+            "is_main_word": true
           },
           {
             "surface": "に",
@@ -1245,7 +1485,7 @@
         "difficulty_aggregated": null
       },
       {
-        "sentence": "バスは車庫にもどりました。",
+        "sentence": "バスは車庫に戻りました。",
         "tokens": [
           {
             "surface": "バス",
@@ -1299,8 +1539,10 @@
                 "length": 2
               }
             ],
-            "ruby_confidence": "medium",
-            "furigana": "しゃこ"
+            "ruby_confidence": "reviewed",
+            "furigana": "しゃこ",
+            "ruby_source": "mediawiki_sentence_ruby",
+            "is_main_word": true
           },
           {
             "surface": "に",
@@ -1319,20 +1561,28 @@
             "furigana": "に"
           },
           {
-            "surface": "もどり",
-            "lemma": "もどる",
+            "surface": "戻り",
+            "lemma": "戻る",
             "pos": "動詞/一般/*/*/五段-ラ行/連用形-一般",
             "upos": "VERB",
             "xpos": "動詞",
             "feats": {},
             "start": 6,
-            "end": 9,
+            "end": 8,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "もどり",
-            "ruby_text": "もどり",
-            "ruby_spans": [],
-            "ruby_confidence": "high",
-            "furigana": "もどり"
+            "ruby_text": "戻[もど]り",
+            "ruby_spans": [
+              {
+                "base": "戻",
+                "reading": "もど",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "もどり",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "まし",
@@ -1341,8 +1591,8 @@
             "upos": "AUX",
             "xpos": "助動詞",
             "feats": {},
-            "start": 9,
-            "end": 11,
+            "start": 8,
+            "end": 10,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "まし",
             "ruby_text": "まし",
@@ -1357,8 +1607,8 @@
             "upos": "AUX",
             "xpos": "助動詞",
             "feats": {},
-            "start": 11,
-            "end": 12,
+            "start": 10,
+            "end": 11,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "た",
             "ruby_text": "た",
@@ -1373,8 +1623,8 @@
             "upos": "PUNCT",
             "xpos": "補助記号",
             "feats": {},
-            "start": 12,
-            "end": 13,
+            "start": 11,
+            "end": 12,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "。",
             "ruby_text": "。",
@@ -1503,7 +1753,8 @@
               }
             ],
             "ruby_confidence": "medium",
-            "furigana": "しゃこ"
+            "furigana": "しゃこ",
+            "is_main_word": true
           },
           {
             "surface": "が",
@@ -1713,7 +1964,8 @@
               }
             ],
             "ruby_confidence": "medium",
-            "furigana": "しゃこ"
+            "furigana": "しゃこ",
+            "is_main_word": true
           },
           {
             "surface": "に",
@@ -1782,6 +2034,196 @@
         ],
         "difficulty_aggregated": null
       }
+    ],
+    "word_en": "garage; carport; depot (for trains, buses, etc.); shed; carbarn",
+    "word_es": "garaje",
+    "word_fr": "garage",
+    "word_de": "Garage",
+    "word_it": "autorimessa",
+    "word_ko": "차고",
+    "word_zh-Hans": "车库",
+    "word_yue": "車庫",
+    "word_ru": "гараж",
+    "word_pt": "garagem",
+    "word_he": "מוסך",
+    "word_tr": "garaj",
+    "word_vi": "nhà để xe",
+    "word_ar": "مرآب",
+    "word_nl": "garage",
+    "word_uk": "гараж",
+    "word_hu": "garázs",
+    "word_hi": "गैराज",
+    "word_pl": "garaż",
+    "word_el": "γκαράζ",
+    "word_nb": "garasje",
+    "word_id": "garasi",
+    "word_sv": "garage",
+    "word_ro": "garaj",
+    "word_cs": "garáž",
+    "word_da": "garage",
+    "word_fi": "autotalli",
+    "word_ja": "車庫",
+    "ar": [
+      "أدخل السيارة إلى المرآب.",
+      "عاد الحافلة إلى المرآب.",
+      "هذا البيت فيه مرآب صغير.",
+      "في الأيام الممطرة، أضع دراجتي في السقيفة."
+    ],
+    "cs": [
+      "Dám auto do garáže.",
+      "Autobus se vrátil do vozovny.",
+      "Tento dům má malou garáž.",
+      "V deštivých dnech dávám kolo do kůlny."
+    ],
+    "da": [
+      "Jeg sætter bilen i garagen.",
+      "Bussen vendte tilbage til garagen.",
+      "Dette hus har en lille garage.",
+      "På regnvejrsdage stiller jeg min cykel i skuret."
+    ],
+    "de": [
+      "Ich stelle das Auto in die Garage.",
+      "Der Bus kam ins Depot zurück.",
+      "Dieses Haus hat eine kleine Garage.",
+      "An Regentagen stelle ich mein Fahrrad in den Schuppen."
+    ],
+    "el": [
+      "Βάζω το αυτοκίνητο στο γκαράζ.",
+      "Το λεωφορείο γύρισε στο αμαξοστάσιο.",
+      "Αυτό το σπίτι έχει ένα μικρό γκαράζ.",
+      "Τις βροχερές μέρες βάζω το ποδήλατό μου στο υπόστεγο."
+    ],
+    "en": [
+      "I put the car in the garage.",
+      "The bus returned to the depot.",
+      "This house has a small garage.",
+      "On rainy days, I put my bicycle in the shed."
+    ],
+    "es": [
+      "Pongo el coche en el garaje.",
+      "El autobús volvió a la cochera.",
+      "Esta casa tiene un garaje pequeño.",
+      "Los días de lluvia guardo mi bicicleta en el cobertizo."
+    ],
+    "fi": [
+      "Laitan auton talliin.",
+      "Bussi palasi varikolle.",
+      "Tässä talossa on pieni autotalli.",
+      "Sateisina päivinä vien polkupyöräni vajaan."
+    ],
+    "fr": [
+      "Je mets la voiture dans le garage.",
+      "L'autobus est retourné au dépôt.",
+      "Cette maison a un petit garage.",
+      "Les jours de pluie, je mets mon vélo dans le cabanon."
+    ],
+    "he": [
+      "אני מכניס את המכונית למוסך.",
+      "האוטובוס חזר למחסן.",
+      "לבית הזה יש מוסך קטן.",
+      "בימים גשומים אני מכניס את האופניים שלי למחסן."
+    ],
+    "hi": [
+      "मैं कार को गैराज में खड़ा करता हूँ।",
+      "बस डिपो लौट आई।",
+      "इस घर में एक छोटा गैराज है।",
+      "बरसात के दिनों में मैं अपनी साइकिल शेड में रखता हूँ।"
+    ],
+    "hu": [
+      "Beállítom az autót a garázsba.",
+      "A busz visszatért a garázsba.",
+      "Ennek a háznak van egy kis garázsa.",
+      "Esős napokon a biciklimet a garázsba teszem."
+    ],
+    "id": [
+      "Saya memasukkan mobil ke garasi.",
+      "Bus itu kembali ke depo.",
+      "Rumah ini punya garasi kecil.",
+      "Pada hari hujan, saya menyimpan sepeda saya di gudang."
+    ],
+    "it": [
+      "Metto l'auto in garage.",
+      "L'autobus è tornato al deposito.",
+      "Questa casa ha un piccolo garage.",
+      "Nei giorni di pioggia metto la mia bicicletta nel capanno."
+    ],
+    "ko": [
+      "차를 차고에 넣습니다.",
+      "버스가 차고로 돌아왔습니다.",
+      "이 집에는 작은 차고가 있습니다.",
+      "비 오는 날에는 자전거를 차고에 넣습니다."
+    ],
+    "nb": [
+      "Jeg setter bilen i garasjen.",
+      "Bussen kom tilbake til depotet.",
+      "Dette huset har en liten garasje.",
+      "På regnværsdager setter jeg sykkelen i skjulet."
+    ],
+    "nl": [
+      "Ik zet de auto in de garage.",
+      "De bus is teruggekeerd naar de remise.",
+      "Dit huis heeft een kleine garage.",
+      "Op regenachtige dagen zet ik mijn fiets in het schuurtje."
+    ],
+    "pl": [
+      "Wstawiam samochód do garażu.",
+      "Autobus wrócił do zajezdni.",
+      "Ten dom ma mały garaż.",
+      "W deszczowe dni chowam rower do szopy."
+    ],
+    "pt": [
+      "Eu ponho o carro na garagem.",
+      "O ônibus voltou para a garagem.",
+      "Esta casa tem uma garagem pequena.",
+      "Nos dias de chuva, guardo minha bicicleta no galpão."
+    ],
+    "ro": [
+      "Pun mașina în garaj.",
+      "Autobuzul s-a întors la depou.",
+      "Casa asta are un garaj mic.",
+      "În zilele ploioase îmi pun bicicleta în șopron."
+    ],
+    "ru": [
+      "Я ставлю машину в гараж.",
+      "Автобус вернулся в депо.",
+      "У этого дома есть маленький гараж.",
+      "В дождливые дни я ставлю велосипед в сарай."
+    ],
+    "sv": [
+      "Jag ställer bilen i garaget.",
+      "Bussen kom tillbaka till depån.",
+      "Det här huset har ett litet garage.",
+      "På regniga dagar ställer jag cykeln i skjulet."
+    ],
+    "tr": [
+      "Arabayı garaja koyuyorum.",
+      "Otobüs depoya döndü.",
+      "Bu evin küçük bir garajı var.",
+      "Yağmurlu günlerde bisikletimi kulübeye koyarım."
+    ],
+    "uk": [
+      "Я ставлю машину в гараж.",
+      "Автобус повернувся в депо.",
+      "У цього будинку є маленький гараж.",
+      "У дощові дні я ставлю велосипед у сарай."
+    ],
+    "vi": [
+      "Tôi cho xe vào gara.",
+      "Xe buýt đã trở về bến.",
+      "Ngôi nhà này có một gara nhỏ.",
+      "Vào những ngày mưa, tôi để xe đạp trong nhà kho."
+    ],
+    "yue": [
+      "我將架車入車房。",
+      "巴士返咗車廠。",
+      "呢間屋有一個細車房。",
+      "落雨嘅日子，我會將單車放入棚。"
+    ],
+    "zh-Hans": [
+      "我把车开进车库。",
+      "公交车回到了车库。",
+      "这所房子有一个小车库。",
+      "下雨天我把自行车放进车棚。"
     ]
   }
 }

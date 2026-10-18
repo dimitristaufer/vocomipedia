@@ -247,7 +247,7 @@
         "he": "היום לנה וטום משפצים את החדר.",
         "tr": "Bugün Lena ve Tom odayı yeniliyor.",
         "vi": "Hôm nay Lena và Tom đang sửa sang lại căn phòng.",
-        "ar": "اليوم لينا وتوم يجددान الغرفة.",
+        "ar": "اليوم لينا وتوم يجددان الغرفة.",
         "nl": "Vandaag verbouwen Lena en Tom de kamer.",
         "uk": "Сьогодні Лена і Том ремонтують кімнату.",
         "hu": "Ma Lena és Tom felújítják a szobát.",
@@ -332,10 +332,10 @@
       "difficulty": 5.57
     },
     {
-      "target": "Ich muss renovieren wegen der kaputten Wand.",
+      "target": "Ich muss wegen der kaputten Wand renovieren.",
       "reading": "/ɪç mʊs ʁenoˈviːʁən ˈveːɡn̩ deːɐ̯ kaˈpʊtn̩ vant./",
       "translations": {
-        "de": "Ich muss renovieren wegen der kaputten Wand.",
+        "de": "Ich muss wegen der kaputten Wand renovieren.",
         "ipa": "/ɪç mʊs ʁenoˈviːʁən ˈveːɡn̩ deːɐ̯ kaˈpʊtn̩ vant./",
         "en": "I have to renovate because of the broken wall",
         "es": "Tengo que renovar porque la pared está dañada.",
@@ -368,67 +368,92 @@
       "tokens": [
         {
           "surface": "Ich",
-          "surface_en": "I",
-          "furigana": "[ɪç]",
-          "pos": "PRON",
           "lemma": "ich",
-          "explanation": "Personal pronoun, 1st person singular, nominative; subject.",
-          "difficulty": 2
+          "pos": "PRON",
+          "upos": "PRON",
+          "xpos": "PPER",
+          "feats": {},
+          "start": 0,
+          "end": 3,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "muss",
-          "surface_en": "must",
-          "furigana": "[mʊs]",
+          "lemma": "mussen",
           "pos": "AUX",
-          "lemma": "müssen",
-          "explanation": "Modal auxiliary, present indicative, 1st person singular; selects an infinitive complement.",
-          "difficulty": 7
-        },
-        {
-          "surface": "renovieren",
-          "surface_en": "renovate",
-          "furigana": "[ʁenoˈviːʁən]",
-          "pos": "VERB",
-          "lemma": "renovieren",
-          "explanation": "Bare infinitive lexical verb; complement of the modal auxiliary.",
-          "difficulty": 10,
-          "is_main_word": true
+          "upos": "AUX",
+          "xpos": "VMFIN",
+          "feats": {},
+          "start": 4,
+          "end": 8,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "wegen",
-          "surface_en": "because of",
-          "furigana": "[ˈveːɡn̩]",
-          "pos": "ADP",
           "lemma": "wegen",
-          "explanation": "Preposition governing genitive; introduces a reason/motive PP.",
-          "difficulty": 7
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "APPR",
+          "feats": {},
+          "start": 9,
+          "end": 14,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "der",
-          "surface_en": "the",
-          "furigana": "[deːɐ̯]",
-          "pos": "DET",
           "lemma": "der",
-          "explanation": "Definite article, genitive feminine singular; determiner of 'Wand' after 'wegen'.",
-          "difficulty": 2
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "ART",
+          "feats": {},
+          "start": 15,
+          "end": 18,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "kaputten",
-          "surface_en": "broken",
-          "furigana": "[kaˈpʊtən]",
-          "pos": "ADJ",
           "lemma": "kaputt",
-          "explanation": "Attributive adjective, genitive feminine singular; modifies 'Wand'.",
-          "difficulty": 10
+          "pos": "ADJ",
+          "upos": "ADJ",
+          "xpos": "ADJA",
+          "feats": {},
+          "start": 19,
+          "end": 27,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "Wand.",
-          "surface_en": "wall",
-          "furigana": "[vant]",
-          "pos": "NOUN",
+          "surface": "Wand",
           "lemma": "Wand",
-          "explanation": "Common noun, feminine singular, genitive as object of 'wegen'; expresses the cause.",
-          "difficulty": 7
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 28,
+          "end": 32,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "renovieren",
+          "lemma": "renovieren",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VVINF",
+          "feats": {},
+          "start": 33,
+          "end": 43,
+          "analyzer": "spacy_de_core_news_lg",
+          "is_main_word": true
+        },
+        {
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 43,
+          "end": 44,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 6.43
@@ -448,19 +473,311 @@
     "content_reviewers": [
       "mediawiki-visible-revision"
     ],
-    "last_reviewed_utc": "2026-06-12T11:51:30Z",
-    "approval_source": "mediawiki_visible_revision",
+    "last_reviewed_utc": "2026-10-14T21:37:56Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
     "wiki": {
       "title": "Item:De a2/3d0849c1fd9bd60f",
-      "revision_id": 14544,
-      "parent_revision_id": 1222,
-      "revision_timestamp_utc": "2026-06-12T11:51:30Z",
-      "revision_user": "VocomiBot",
-      "revision_comment": "Sync de_a2 item renovieren",
-      "pulled_utc": "2026-06-22T08:19:04Z",
-      "applied_utc": "2026-06-22T08:19:14Z",
+      "revision_id": 86301,
+      "parent_revision_id": 59492,
+      "revision_timestamp_utc": "2026-10-14T21:37:56Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Content review: German and translation corrections",
+      "pulled_utc": "2026-10-17T07:00:40Z",
+      "applied_utc": "2026-10-17T07:00:49Z",
       "applied_by": "vocomipedia-apply-pulled"
-    }
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-6180be06ea95e799",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_a2:3d0849c1fd9bd60f",
+        "pack_code": "de_a2",
+        "entry_id": "renovieren",
+        "language": "de",
+        "sentence_index": 4,
+        "old_sentence": "Ich muss renovieren wegen der kaputten Wand.",
+        "old_translations": {
+          "de": "Ich muss renovieren wegen der kaputten Wand.",
+          "ipa": "/ɪç mʊs ʁenoˈviːʁən ˈveːɡn̩ deːɐ̯ kaˈpʊtn̩ vant./",
+          "en": "I have to renovate because of the broken wall",
+          "es": "Tengo que renovar porque la pared está dañada.",
+          "fr": "Je dois faire des travaux à cause du mur abîmé.",
+          "it": "Devo ristrutturare perché il muro è danneggiato.",
+          "ko": "벽이 망가져서 리모델링을 해야 해요.",
+          "zh-Hans": "墙坏了，所以我得装修。",
+          "yue": "因為幅牆爛咗，我要裝修。",
+          "ru": "Мне нужно делать ремонт из-за повреждённой стены.",
+          "pt": "Preciso reformar porque a parede está danificada.",
+          "he": "אני צריך לשפץ כי הקיר פגום.",
+          "tr": "Duvar hasarlı olduğu için tadilat yapmak zorundayım.",
+          "vi": "Tôi phải sửa sang lại vì bức tường bị hỏng.",
+          "ar": "عليّ أن أرمم لأن الجدار متضرر.",
+          "nl": "Ik moet renoveren omdat de muur beschadigd is.",
+          "uk": "Мені треба робити ремонт, бо стіна пошкоджена.",
+          "hu": "Fel kell újítanom, mert a fal sérült.",
+          "hi": "दीवार खराब है, इसलिए मुझे नवीनीकरण करना है.",
+          "pl": "Muszę zrobić remont, bo ściana jest uszkodzona.",
+          "el": "Πρέπει να κάνω ανακαίνιση επειδή ο τοίχος είναι ραγισμένος.",
+          "nb": "Jeg må pusse opp fordi veggen er skadet.",
+          "id": "Saya harus merenovasi karena dindingnya rusak.",
+          "sv": "Jag måste renovera eftersom väggen är skadad.",
+          "ro": "Trebuie să renovez pentru că peretele este deteriorat.",
+          "cs": "Musím rekonstruovat, protože je zeď poškozená.",
+          "da": "Jeg er nødt til at renovere, fordi væggen er beskadiget.",
+          "fi": "Minun pitää remontoida, koska seinä on rikki.",
+          "ja": "壁が壊れているのでリフォームしなければなりません。"
+        },
+        "proposed_sentence": "Ich muss wegen der kaputten Wand renovieren.",
+        "proposed_translations": {
+          "de": "Ich muss wegen der kaputten Wand renovieren.",
+          "ipa": "/ɪç mʊs ʁenoˈviːʁən ˈveːɡn̩ deːɐ̯ kaˈpʊtn̩ vant./",
+          "en": "I have to renovate because of the broken wall",
+          "es": "Tengo que renovar porque la pared está dañada.",
+          "fr": "Je dois faire des travaux à cause du mur abîmé.",
+          "it": "Devo ristrutturare perché il muro è danneggiato.",
+          "ko": "벽이 망가져서 리모델링을 해야 해요.",
+          "zh-Hans": "墙坏了，所以我得装修。",
+          "yue": "因為幅牆爛咗，我要裝修。",
+          "ru": "Мне нужно делать ремонт из-за повреждённой стены.",
+          "pt": "Preciso reformar porque a parede está danificada.",
+          "he": "אני צריך לשפץ כי הקיר פגום.",
+          "tr": "Duvar hasarlı olduğu için tadilat yapmak zorundayım.",
+          "vi": "Tôi phải sửa sang lại vì bức tường bị hỏng.",
+          "ar": "عليّ أن أرمم لأن الجدار متضرر.",
+          "nl": "Ik moet renoveren omdat de muur beschadigd is.",
+          "uk": "Мені треба робити ремонт, бо стіна пошкоджена.",
+          "hu": "Fel kell újítanom, mert a fal sérült.",
+          "hi": "दीवार खराब है, इसलिए मुझे नवीनीकरण करना है.",
+          "pl": "Muszę zrobić remont, bo ściana jest uszkodzona.",
+          "el": "Πρέπει να κάνω ανακαίνιση επειδή ο τοίχος είναι ραγισμένος.",
+          "nb": "Jeg må pusse opp fordi veggen er skadet.",
+          "id": "Saya harus merenovasi karena dindingnya rusak.",
+          "sv": "Jag måste renovera eftersom väggen är skadad.",
+          "ro": "Trebuie să renovez pentru că peretele este deteriorat.",
+          "cs": "Musím rekonstruovat, protože je zeď poškozená.",
+          "da": "Jeg er nødt til at renovere, fordi væggen er beskadiget.",
+          "fi": "Minun pitää remontoida, koska seinä on rikki.",
+          "ja": "壁が壊れているのでリフォームしなければなりません。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Ich muss wegen der kaputten Wand renovieren.",
+        "old_japanese": "Ich muss renovieren wegen der kaputten Wand.",
+        "old_english": "I have to renovate because of the broken wall",
+        "proposed_japanese": "Ich muss wegen der kaputten Wand renovieren.",
+        "proposed_english": "I have to renovate because of the broken wall",
+        "reason": "Move the reason phrase before the infinitive for natural German word order.",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Ich muss wegen der kaputten Wand renovieren.",
+          "tokens": [
+            {
+              "surface": "Ich",
+              "lemma": "ich",
+              "pos": "PRON",
+              "upos": "PRON",
+              "xpos": "PPER",
+              "feats": {},
+              "start": 0,
+              "end": 3,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "muss",
+              "lemma": "mussen",
+              "pos": "AUX",
+              "upos": "AUX",
+              "xpos": "VMFIN",
+              "feats": {},
+              "start": 4,
+              "end": 8,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "wegen",
+              "lemma": "wegen",
+              "pos": "ADP",
+              "upos": "ADP",
+              "xpos": "APPR",
+              "feats": {},
+              "start": 9,
+              "end": 14,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "der",
+              "lemma": "der",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "ART",
+              "feats": {},
+              "start": 15,
+              "end": 18,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "kaputten",
+              "lemma": "kaputt",
+              "pos": "ADJ",
+              "upos": "ADJ",
+              "xpos": "ADJA",
+              "feats": {},
+              "start": 19,
+              "end": 27,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Wand",
+              "lemma": "Wand",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 28,
+              "end": 32,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "renovieren",
+              "lemma": "renovieren",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVINF",
+              "feats": {},
+              "start": 33,
+              "end": 43,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 43,
+              "end": 44,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Ich",
+            "lemma": "ich",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "muss",
+            "lemma": "mussen",
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "VMFIN",
+            "feats": {},
+            "start": 4,
+            "end": 8,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "wegen",
+            "lemma": "wegen",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 9,
+            "end": 14,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "der",
+            "lemma": "der",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 15,
+            "end": 18,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "kaputten",
+            "lemma": "kaputt",
+            "pos": "ADJ",
+            "upos": "ADJ",
+            "xpos": "ADJA",
+            "feats": {},
+            "start": 19,
+            "end": 27,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Wand",
+            "lemma": "Wand",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 28,
+            "end": 32,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "renovieren",
+            "lemma": "renovieren",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVINF",
+            "feats": {},
+            "start": 33,
+            "end": 43,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 43,
+            "end": 44,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:00:40Z",
+        "updated_utc": "2026-10-17T07:00:59Z",
+        "applied_utc": "2026-10-17T07:00:59Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:00:59Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -679,71 +996,96 @@
         "difficulty_aggregated": 5.57
       },
       {
-        "sentence": "Ich muss renovieren wegen der kaputten Wand.",
+        "sentence": "Ich muss wegen der kaputten Wand renovieren.",
         "tokens": [
           {
             "surface": "Ich",
-            "surface_en": "I",
-            "furigana": "[ɪç]",
-            "pos": "PRON",
             "lemma": "ich",
-            "explanation": "Personal pronoun, 1st person singular, nominative; subject.",
-            "difficulty": 2
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "muss",
-            "surface_en": "must",
-            "furigana": "[mʊs]",
+            "lemma": "mussen",
             "pos": "AUX",
-            "lemma": "müssen",
-            "explanation": "Modal auxiliary, present indicative, 1st person singular; selects an infinitive complement.",
-            "difficulty": 7
-          },
-          {
-            "surface": "renovieren",
-            "surface_en": "renovate",
-            "furigana": "[ʁenoˈviːʁən]",
-            "pos": "VERB",
-            "lemma": "renovieren",
-            "explanation": "Bare infinitive lexical verb; complement of the modal auxiliary.",
-            "difficulty": 10,
-            "is_main_word": true
+            "upos": "AUX",
+            "xpos": "VMFIN",
+            "feats": {},
+            "start": 4,
+            "end": 8,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "wegen",
-            "surface_en": "because of",
-            "furigana": "[ˈveːɡn̩]",
-            "pos": "ADP",
             "lemma": "wegen",
-            "explanation": "Preposition governing genitive; introduces a reason/motive PP.",
-            "difficulty": 7
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 9,
+            "end": 14,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "der",
-            "surface_en": "the",
-            "furigana": "[deːɐ̯]",
-            "pos": "DET",
             "lemma": "der",
-            "explanation": "Definite article, genitive feminine singular; determiner of 'Wand' after 'wegen'.",
-            "difficulty": 2
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 15,
+            "end": 18,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "kaputten",
-            "surface_en": "broken",
-            "furigana": "[kaˈpʊtən]",
-            "pos": "ADJ",
             "lemma": "kaputt",
-            "explanation": "Attributive adjective, genitive feminine singular; modifies 'Wand'.",
-            "difficulty": 10
+            "pos": "ADJ",
+            "upos": "ADJ",
+            "xpos": "ADJA",
+            "feats": {},
+            "start": 19,
+            "end": 27,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "Wand.",
-            "surface_en": "wall",
-            "furigana": "[vant]",
-            "pos": "NOUN",
+            "surface": "Wand",
             "lemma": "Wand",
-            "explanation": "Common noun, feminine singular, genitive as object of 'wegen'; expresses the cause.",
-            "difficulty": 7
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 28,
+            "end": 32,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "renovieren",
+            "lemma": "renovieren",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVINF",
+            "feats": {},
+            "start": 33,
+            "end": 43,
+            "analyzer": "spacy_de_core_news_lg",
+            "is_main_word": true
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 43,
+            "end": 44,
+            "analyzer": "spacy_de_core_news_lg"
           }
         ],
         "difficulty_aggregated": 6.43
@@ -782,7 +1124,7 @@
     "ar": [
       "غدًا سنجدد المطبخ.",
       "في عطلة نهاية الأسبوع سيجدد والداي الحمام.",
-      "اليوم لينا وتوم يجددान الغرفة.",
+      "اليوم لينا وتوم يجددان الغرفة.",
       "عليّ أن أرمم لأن الجدار متضرر."
     ],
     "cs": [

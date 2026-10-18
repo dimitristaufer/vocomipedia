@@ -44,12 +44,12 @@
   },
   "sentences": [
     {
-      "target": "Ich schreibe einen Glückwunsch auf die Karte.",
+      "target": "Hier kommt ein Glückwunsch von uns.",
       "reading": "/ɪç ˈʃʁaɪbə ˈaɪnən ˈɡlʏkˌvʊnʃ aʊf diː ˈkaʁtə/",
       "translations": {
-        "de": "Ich schreibe einen Glückwunsch auf die Karte.",
+        "de": "Hier kommt ein Glückwunsch von uns.",
         "ipa": "/ɪç ˈʃʁaɪbə ˈaɪnən ˈɡlʏkˌvʊnʃ aʊf diː ˈkaʁtə/",
-        "en": "I’m writing congratulations on the card.",
+        "en": "Here’s a congratulatory message from us.",
         "es": "Escribo una felicitación en la tarjeta.",
         "fr": "J’écris un message de félicitations sur la carte.",
         "it": "Scrivo gli auguri sul biglietto.",
@@ -79,68 +79,82 @@
       },
       "tokens": [
         {
-          "surface": "Ich",
-          "surface_en": "I",
-          "furigana": "[ɪç]",
-          "pos": "PRON",
-          "lemma": "ich",
-          "explanation": "1st person singular pronoun in nominative; subject.",
-          "difficulty": 2
+          "surface": "Hier",
+          "lemma": "hier",
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "ADV",
+          "feats": {},
+          "start": 0,
+          "end": 4,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "schreibe",
-          "surface_en": "write",
-          "furigana": "[ˈʃʁaɪ̯bə]",
+          "surface": "kommt",
+          "lemma": "kommen",
           "pos": "VERB",
-          "lemma": "schreiben",
-          "explanation": "Finite verb, present, 1st person singular; denotes writing.",
-          "difficulty": 10
+          "upos": "VERB",
+          "xpos": "VVFIN",
+          "feats": {},
+          "start": 5,
+          "end": 10,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "einen",
-          "surface_en": "an",
-          "furigana": "[ˈaɪ̯nən]",
-          "pos": "DET",
+          "surface": "ein",
           "lemma": "ein",
-          "explanation": "Indefinite article, accusative masculine singular; marks 'Glückwunsch'.",
-          "difficulty": 2
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "ART",
+          "feats": {},
+          "start": 11,
+          "end": 14,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "Glückwunsch",
-          "surface_en": "congratulation",
-          "furigana": "[ˈɡlʏkvʊnʃ]",
-          "pos": "NOUN",
           "lemma": "Glückwunsch",
-          "explanation": "Count noun, masculine singular; direct object.",
-          "difficulty": 10,
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 15,
+          "end": 26,
+          "analyzer": "spacy_de_core_news_lg",
           "is_main_word": true
         },
         {
-          "surface": "auf",
-          "surface_en": "onto",
-          "furigana": "[aʊ̯f]",
+          "surface": "von",
+          "lemma": "von",
           "pos": "ADP",
-          "lemma": "auf",
-          "explanation": "Preposition governing accusative; indicates direction.",
-          "difficulty": 2
+          "upos": "ADP",
+          "xpos": "APPR",
+          "feats": {},
+          "start": 27,
+          "end": 30,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "die",
-          "surface_en": "the",
-          "furigana": "[diː]",
-          "pos": "DET",
-          "lemma": "der",
-          "explanation": "Definite article, accusative feminine singular; marks 'Karte'.",
-          "difficulty": 2
+          "surface": "uns",
+          "lemma": "uns",
+          "pos": "PRON",
+          "upos": "PRON",
+          "xpos": "PPER",
+          "feats": {},
+          "start": 31,
+          "end": 34,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "Karte.",
-          "surface_en": "card",
-          "furigana": "[ˈkaʁtə]",
-          "pos": "NOUN",
-          "lemma": "Karte",
-          "explanation": "Common noun, feminine singular; object of 'auf'.",
-          "difficulty": 7
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 34,
+          "end": 35,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 5
@@ -151,7 +165,7 @@
       "translations": {
         "de": "Hier kommt unser Glückwunsch.",
         "ipa": "/hiːɐ̯ kɔmt aɪn ˈɡlʏkˌvʊnʃ fɔn ʊns/",
-        "en": "Here’s our congratulations.",
+        "en": "We’re sending you our congratulations via WhatsApp.",
         "es": "Aquí están nuestras felicitaciones.",
         "fr": "Voici nos félicitations.",
         "it": "Ecco i nostri auguri.",
@@ -221,12 +235,12 @@
       "difficulty": 6.75
     },
     {
-      "target": "Wir schicken dir unseren Glückwunsch per WhatsApp.",
+      "target": "Mein Glückwunsch ist für dich.",
       "reading": "/viːɐ̯ ˈʃɪkən diːɐ̯ ˈaɪnən ˈɡlʏkˌvʊnʃ pɛʁ ˈvɔtsap/",
       "translations": {
-        "de": "Wir schicken dir unseren Glückwunsch per WhatsApp.",
+        "de": "Mein Glückwunsch ist für dich.",
         "ipa": "/viːɐ̯ ˈʃɪkən diːɐ̯ ˈaɪnən ˈɡlʏkˌvʊnʃ pɛʁ ˈvɔtsap/",
-        "en": "We’re sending you congratulations via WhatsApp.",
+        "en": "My congratulations go to you.",
         "es": "Te enviamos una felicitación por WhatsApp.",
         "fr": "Nous t’envoyons des félicitations par WhatsApp.",
         "it": "Ti mandiamo gli auguri su WhatsApp.",
@@ -256,68 +270,71 @@
       },
       "tokens": [
         {
-          "surface": "Wir",
-          "surface_en": "we",
-          "furigana": "[viːɐ̯]",
-          "pos": "PRON",
-          "lemma": "wir",
-          "explanation": "1st person plural pronoun in nominative; subject.",
-          "difficulty": 2
-        },
-        {
-          "surface": "schicken",
-          "surface_en": "send",
-          "furigana": "[ˈʃɪkən]",
-          "pos": "VERB",
-          "lemma": "schicken",
-          "explanation": "Finite verb, present; denotes sending.",
-          "difficulty": 10
-        },
-        {
-          "surface": "dir",
-          "surface_en": "to you",
-          "furigana": "[diːɐ̯]",
-          "pos": "PRON",
-          "lemma": "du",
-          "explanation": "2nd person singular pronoun, dative; indirect object.",
-          "difficulty": 4
-        },
-        {
-          "surface": "unseren",
-          "surface_en": "our",
-          "furigana": "[ˈʊnzɐn]",
+          "surface": "Mein",
+          "lemma": "mein",
           "pos": "DET",
-          "lemma": "unser",
-          "explanation": "Possessive determiner, accusative masculine singular; modifies 'Glückwunsch'.",
-          "difficulty": 7
+          "upos": "DET",
+          "xpos": "PPOSAT",
+          "feats": {},
+          "start": 0,
+          "end": 4,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "Glückwunsch",
-          "surface_en": "congratulation",
-          "furigana": "[ˈɡlʏkvʊnʃ]",
-          "pos": "NOUN",
           "lemma": "Glückwunsch",
-          "explanation": "Count noun, masculine singular; direct object.",
-          "difficulty": 10,
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 5,
+          "end": 16,
+          "analyzer": "spacy_de_core_news_lg",
           "is_main_word": true
         },
         {
-          "surface": "per",
-          "surface_en": "via",
-          "furigana": "[pɛʁ]",
-          "pos": "ADP",
-          "lemma": "per",
-          "explanation": "Preposition; indicates medium.",
-          "difficulty": 4
+          "surface": "ist",
+          "lemma": "sein",
+          "pos": "AUX",
+          "upos": "AUX",
+          "xpos": "VAFIN",
+          "feats": {},
+          "start": 17,
+          "end": 20,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "WhatsApp.",
-          "surface_en": "WhatsApp",
-          "furigana": "[ˈvɔtsɛp]",
-          "pos": "PROPN",
-          "lemma": "WhatsApp",
-          "explanation": "Proper noun; medium of sending.",
-          "difficulty": 10
+          "surface": "für",
+          "lemma": "für",
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "APPR",
+          "feats": {},
+          "start": 21,
+          "end": 24,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "dich",
+          "lemma": "dich",
+          "pos": "PRON",
+          "upos": "PRON",
+          "xpos": "PPER",
+          "feats": {},
+          "start": 25,
+          "end": 29,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 29,
+          "end": 30,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 6.71
@@ -409,8 +426,537 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-14T23:06:45Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:De a1/e0358e4a5031f7a8",
+      "revision_id": 85712,
+      "parent_revision_id": 12792,
+      "revision_timestamp_utc": "2026-10-14T23:06:45Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Content suggestion: improve German or translation wording",
+      "pulled_utc": "2026-10-18T17:32:08Z",
+      "applied_utc": "2026-10-18T17:32:12Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-38ccf4d1d5f12984",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_a1:e0358e4a5031f7a8",
+        "pack_code": "de_a1",
+        "entry_id": "Glückwunsch",
+        "language": "de",
+        "sentence_index": 1,
+        "old_sentence": "Ich schreibe einen Glückwunsch auf die Karte.",
+        "old_translations": {
+          "de": "Ich schreibe einen Glückwunsch auf die Karte.",
+          "ipa": "/ɪç ˈʃʁaɪbə ˈaɪnən ˈɡlʏkˌvʊnʃ aʊf diː ˈkaʁtə/",
+          "en": "I’m writing congratulations on the card.",
+          "es": "Escribo una felicitación en la tarjeta.",
+          "fr": "J’écris un message de félicitations sur la carte.",
+          "it": "Scrivo gli auguri sul biglietto.",
+          "ko": "카드에 축하 글을 써요.",
+          "zh-Hans": "我在卡片上写上祝福。",
+          "yue": "我喺卡片上面寫祝福。",
+          "ru": "Я пишу поздравление на открытке.",
+          "pt": "Escrevo parabéns no cartão.",
+          "he": "אני כותב ברכה על הכרטיס.",
+          "tr": "Karta bir tebrik yazıyorum.",
+          "vi": "Tôi viết lời chúc vào tấm thiệp.",
+          "ar": "أكتب تهنئة على البطاقة.",
+          "nl": "Ik schrijf een felicitatie op de kaart.",
+          "uk": "Я пишу привітання на листівці.",
+          "hu": "Jókívánságot írok a képeslapra.",
+          "hi": "मैं कार्ड पर शुभकामनाएँ लिख रहा हूँ.",
+          "pl": "Piszę życzenia na kartce.",
+          "el": "Γράφω ευχές στην κάρτα.",
+          "nb": "Jeg skriver en gratulasjon på kortet.",
+          "id": "Saya menulis ucapan selamat di kartu.",
+          "sv": "Jag skriver en gratulation på kortet.",
+          "ro": "Scriu o urare pe felicitare.",
+          "cs": "Píšu blahopřání na přáníčko.",
+          "da": "Jeg skriver en lykønskning på kortet.",
+          "fi": "Kirjoitan onnittelut korttiin.",
+          "ja": "カードにお祝いの言葉を書きます。"
+        },
+        "proposed_sentence": "Hier kommt ein Glückwunsch von uns.",
+        "proposed_translations": {
+          "de": "Hier kommt ein Glückwunsch von uns.",
+          "ipa": "/ɪç ˈʃʁaɪbə ˈaɪnən ˈɡlʏkˌvʊnʃ aʊf diː ˈkaʁtə/",
+          "en": "Here’s a congratulatory message from us.",
+          "es": "Escribo una felicitación en la tarjeta.",
+          "fr": "J’écris un message de félicitations sur la carte.",
+          "it": "Scrivo gli auguri sul biglietto.",
+          "ko": "카드에 축하 글을 써요.",
+          "zh-Hans": "我在卡片上写上祝福。",
+          "yue": "我喺卡片上面寫祝福。",
+          "ru": "Я пишу поздравление на открытке.",
+          "pt": "Escrevo parabéns no cartão.",
+          "he": "אני כותב ברכה על הכרטיס.",
+          "tr": "Karta bir tebrik yazıyorum.",
+          "vi": "Tôi viết lời chúc vào tấm thiệp.",
+          "ar": "أكتب تهنئة على البطاقة.",
+          "nl": "Ik schrijf een felicitatie op de kaart.",
+          "uk": "Я пишу привітання на листівці.",
+          "hu": "Jókívánságot írok a képeslapra.",
+          "hi": "मैं कार्ड पर शुभकामनाएँ लिख रहा हूँ.",
+          "pl": "Piszę życzenia na kartce.",
+          "el": "Γράφω ευχές στην κάρτα.",
+          "nb": "Jeg skriver en gratulasjon på kortet.",
+          "id": "Saya menulis ucapan selamat di kartu.",
+          "sv": "Jag skriver en gratulation på kortet.",
+          "ro": "Scriu o urare pe felicitare.",
+          "cs": "Píšu blahopřání na přáníčko.",
+          "da": "Jeg skriver en lykønskning på kortet.",
+          "fi": "Kirjoitan onnittelut korttiin.",
+          "ja": "カードにお祝いの言葉を書きます。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Hier kommt ein Glückwunsch von uns.",
+        "old_japanese": "Ich schreibe einen Glückwunsch auf die Karte.",
+        "old_english": "I’m writing congratulations on the card.",
+        "proposed_japanese": "Hier kommt ein Glückwunsch von uns.",
+        "proposed_english": "Here’s a congratulatory message from us.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Hier kommt ein Glückwunsch von uns.",
+          "tokens": [
+            {
+              "surface": "Hier",
+              "lemma": "hier",
+              "pos": "ADV",
+              "upos": "ADV",
+              "xpos": "ADV",
+              "feats": {},
+              "start": 0,
+              "end": 4,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "kommt",
+              "lemma": "kommen",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVFIN",
+              "feats": {},
+              "start": 5,
+              "end": 10,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "ein",
+              "lemma": "ein",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "ART",
+              "feats": {},
+              "start": 11,
+              "end": 14,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Glückwunsch",
+              "lemma": "Glückwunsch",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 15,
+              "end": 26,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "von",
+              "lemma": "von",
+              "pos": "ADP",
+              "upos": "ADP",
+              "xpos": "APPR",
+              "feats": {},
+              "start": 27,
+              "end": 30,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "uns",
+              "lemma": "uns",
+              "pos": "PRON",
+              "upos": "PRON",
+              "xpos": "PPER",
+              "feats": {},
+              "start": 31,
+              "end": 34,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 34,
+              "end": 35,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Hier",
+            "lemma": "hier",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 0,
+            "end": 4,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "kommt",
+            "lemma": "kommen",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 5,
+            "end": 10,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "ein",
+            "lemma": "ein",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 11,
+            "end": 14,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Glückwunsch",
+            "lemma": "Glückwunsch",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 15,
+            "end": 26,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "von",
+            "lemma": "von",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 27,
+            "end": 30,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "uns",
+            "lemma": "uns",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 31,
+            "end": 34,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 34,
+            "end": 35,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-18T17:32:08Z",
+        "updated_utc": "2026-10-18T17:32:25Z",
+        "applied_utc": "2026-10-18T17:32:25Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      },
+      {
+        "id": "sentprop-7d68d9bd2231b949",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_a1:e0358e4a5031f7a8",
+        "pack_code": "de_a1",
+        "entry_id": "Glückwunsch",
+        "language": "de",
+        "sentence_index": 3,
+        "old_sentence": "Wir schicken dir unseren Glückwunsch per WhatsApp.",
+        "old_translations": {
+          "de": "Wir schicken dir unseren Glückwunsch per WhatsApp.",
+          "ipa": "/viːɐ̯ ˈʃɪkən diːɐ̯ ˈaɪnən ˈɡlʏkˌvʊnʃ pɛʁ ˈvɔtsap/",
+          "en": "We’re sending you congratulations via WhatsApp.",
+          "es": "Te enviamos una felicitación por WhatsApp.",
+          "fr": "Nous t’envoyons des félicitations par WhatsApp.",
+          "it": "Ti mandiamo gli auguri su WhatsApp.",
+          "ko": "우리는 왓츠앱으로 축하 메시지를 보내요.",
+          "zh-Hans": "我们用WhatsApp给你发祝福。",
+          "yue": "我哋用WhatsApp傳祝福畀你。",
+          "ru": "Мы отправляем тебе поздравление в WhatsApp.",
+          "pt": "Enviamos parabéns pelo WhatsApp.",
+          "he": "אנחנו שולחים לך ברכה בוואטסאפ.",
+          "tr": "Sana WhatsApp'tan bir tebrik yolluyoruz.",
+          "vi": "Chúng tôi gửi lời chúc cho bạn qua WhatsApp.",
+          "ar": "نرسل لك تهنئة عبر واتساب.",
+          "nl": "We sturen je een felicitatie via WhatsApp.",
+          "uk": "Ми надсилаємо тобі привітання через WhatsApp.",
+          "hu": "WhatsAppon küldünk neked jókívánságot.",
+          "hi": "हम तुम्हें WhatsApp पर शुभकामनाएँ भेज रहे हैं.",
+          "pl": "Wysyłamy ci życzenia na WhatsAppie.",
+          "el": "Σου στέλνουμε ευχές μέσω WhatsApp.",
+          "nb": "Vi sender deg en gratulasjon på WhatsApp.",
+          "id": "Kami mengirimkan ucapan selamat untukmu lewat WhatsApp.",
+          "sv": "Vi skickar en gratulation till dig via WhatsApp.",
+          "ro": "Îți trimitem o urare pe WhatsApp.",
+          "cs": "Posíláme ti blahopřání přes WhatsApp.",
+          "da": "Vi sender dig en lykønskning på WhatsApp.",
+          "fi": "Lähetämme sinulle onnittelut WhatsAppin kautta.",
+          "ja": "WhatsAppであなたにお祝いを送ります。"
+        },
+        "proposed_sentence": "Mein Glückwunsch ist für dich.",
+        "proposed_translations": {
+          "de": "Mein Glückwunsch ist für dich.",
+          "ipa": "/viːɐ̯ ˈʃɪkən diːɐ̯ ˈaɪnən ˈɡlʏkˌvʊnʃ pɛʁ ˈvɔtsap/",
+          "en": "My congratulations go to you.",
+          "es": "Te enviamos una felicitación por WhatsApp.",
+          "fr": "Nous t’envoyons des félicitations par WhatsApp.",
+          "it": "Ti mandiamo gli auguri su WhatsApp.",
+          "ko": "우리는 왓츠앱으로 축하 메시지를 보내요.",
+          "zh-Hans": "我们用WhatsApp给你发祝福。",
+          "yue": "我哋用WhatsApp傳祝福畀你。",
+          "ru": "Мы отправляем тебе поздравление в WhatsApp.",
+          "pt": "Enviamos parabéns pelo WhatsApp.",
+          "he": "אנחנו שולחים לך ברכה בוואטסאפ.",
+          "tr": "Sana WhatsApp'tan bir tebrik yolluyoruz.",
+          "vi": "Chúng tôi gửi lời chúc cho bạn qua WhatsApp.",
+          "ar": "نرسل لك تهنئة عبر واتساب.",
+          "nl": "We sturen je een felicitatie via WhatsApp.",
+          "uk": "Ми надсилаємо тобі привітання через WhatsApp.",
+          "hu": "WhatsAppon küldünk neked jókívánságot.",
+          "hi": "हम तुम्हें WhatsApp पर शुभकामनाएँ भेज रहे हैं.",
+          "pl": "Wysyłamy ci życzenia na WhatsAppie.",
+          "el": "Σου στέλνουμε ευχές μέσω WhatsApp.",
+          "nb": "Vi sender deg en gratulasjon på WhatsApp.",
+          "id": "Kami mengirimkan ucapan selamat untukmu lewat WhatsApp.",
+          "sv": "Vi skickar en gratulation till dig via WhatsApp.",
+          "ro": "Îți trimitem o urare pe WhatsApp.",
+          "cs": "Posíláme ti blahopřání přes WhatsApp.",
+          "da": "Vi sender dig en lykønskning på WhatsApp.",
+          "fi": "Lähetämme sinulle onnittelut WhatsAppin kautta.",
+          "ja": "WhatsAppであなたにお祝いを送ります。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Mein Glückwunsch ist für dich.",
+        "old_japanese": "Wir schicken dir unseren Glückwunsch per WhatsApp.",
+        "old_english": "We’re sending you congratulations via WhatsApp.",
+        "proposed_japanese": "Mein Glückwunsch ist für dich.",
+        "proposed_english": "My congratulations go to you.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Mein Glückwunsch ist für dich.",
+          "tokens": [
+            {
+              "surface": "Mein",
+              "lemma": "mein",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "PPOSAT",
+              "feats": {},
+              "start": 0,
+              "end": 4,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Glückwunsch",
+              "lemma": "Glückwunsch",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 5,
+              "end": 16,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "ist",
+              "lemma": "sein",
+              "pos": "AUX",
+              "upos": "AUX",
+              "xpos": "VAFIN",
+              "feats": {},
+              "start": 17,
+              "end": 20,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "für",
+              "lemma": "für",
+              "pos": "ADP",
+              "upos": "ADP",
+              "xpos": "APPR",
+              "feats": {},
+              "start": 21,
+              "end": 24,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "dich",
+              "lemma": "dich",
+              "pos": "PRON",
+              "upos": "PRON",
+              "xpos": "PPER",
+              "feats": {},
+              "start": 25,
+              "end": 29,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 29,
+              "end": 30,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Mein",
+            "lemma": "mein",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "PPOSAT",
+            "feats": {},
+            "start": 0,
+            "end": 4,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Glückwunsch",
+            "lemma": "Glückwunsch",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 5,
+            "end": 16,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "ist",
+            "lemma": "sein",
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "VAFIN",
+            "feats": {},
+            "start": 17,
+            "end": 20,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "für",
+            "lemma": "für",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 21,
+            "end": 24,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "dich",
+            "lemma": "dich",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 25,
+            "end": 29,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 29,
+            "end": 30,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-18T17:32:08Z",
+        "updated_utc": "2026-10-18T17:32:25Z",
+        "applied_utc": "2026-10-18T17:32:25Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-18T17:32:25Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -422,34 +968,6 @@
     "word": "Glückwunsch",
     "word_reading": "",
     "word_label": "Substantiv (der mask.)",
-    "word_en": "congratulations; congrats",
-    "word_es": "felicitación; felicitaciones",
-    "word_fr": "félicitations",
-    "word_it": "congratulazioni; auguri",
-    "word_ko": "축하",
-    "word_zh-Hans": "祝贺; 恭喜",
-    "word_yue": "恭喜; 祝賀",
-    "word_ru": "поздравление; поздравления",
-    "word_pt": "parabéns; felicitações",
-    "word_he": "ברכות; מזל טוב",
-    "word_tr": "tebrik; tebrikler",
-    "word_vi": "lời chúc mừng; chúc mừng",
-    "word_ar": "تهنئة; تهاني",
-    "word_nl": "felicitatie; felicitaties",
-    "word_uk": "привітання; вітання",
-    "word_hu": "gratuláció; jókívánság",
-    "word_hi": "बधाई; शुभकामनाएँ",
-    "word_pl": "gratulacje",
-    "word_el": "συγχαρητήρια",
-    "word_nb": "gratulasjon; gratulasjoner",
-    "word_id": "ucapan selamat; selamat",
-    "word_sv": "gratulation; gratulationer",
-    "word_ro": "felicitări; urări",
-    "word_cs": "gratulace; blahopřání",
-    "word_da": "lykønskning; tillykke",
-    "word_fi": "onnittelu; onnittelut",
-    "word_ja": "お祝い; おめでとう",
-    "word_de": "Glückwunsch",
     "comic_difficulty": 5.58,
     "jp": [
       "Ich schreibe einen Glückwunsch auf die Karte.",
@@ -463,91 +981,87 @@
       "/viːɐ̯ ˈʃɪkən diːɐ̯ ˈaɪnən ˈɡlʏkˌvʊnʃ pɛʁ ˈvɔtsap/",
       "/maɪn ˈɡlʏkˌvʊnʃ ɪst fyːɐ̯ dɪç/"
     ],
-    "de": [
-      "Ich schreibe einen Glückwunsch auf die Karte.",
-      "Hier kommt unser Glückwunsch.",
-      "Wir schicken dir unseren Glückwunsch per WhatsApp.",
-      "Mein Glückwunsch ist für dich."
-    ],
-    "ipa": [
-      "/ɪç ˈʃʁaɪbə ˈaɪnən ˈɡlʏkˌvʊnʃ aʊf diː ˈkaʁtə/",
-      "/hiːɐ̯ kɔmt aɪn ˈɡlʏkˌvʊnʃ fɔn ʊns/",
-      "/viːɐ̯ ˈʃɪkən diːɐ̯ ˈaɪnən ˈɡlʏkˌvʊnʃ pɛʁ ˈvɔtsap/",
-      "/maɪn ˈɡlʏkˌvʊnʃ ɪst fyːɐ̯ dɪç/"
-    ],
-    "en": [
-      "I’m writing congratulations on the card.",
-      "Here’s our congratulations.",
-      "We’re sending you congratulations via WhatsApp.",
-      "My congratulations to you."
-    ],
     "pos_analysis": [
       {
-        "sentence": "Ich schreibe einen Glückwunsch auf die Karte.",
+        "sentence": "Hier kommt ein Glückwunsch von uns.",
         "tokens": [
           {
-            "surface": "Ich",
-            "surface_en": "I",
-            "furigana": "[ɪç]",
-            "pos": "PRON",
-            "lemma": "ich",
-            "explanation": "1st person singular pronoun in nominative; subject.",
-            "difficulty": 2
+            "surface": "Hier",
+            "lemma": "hier",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 0,
+            "end": 4,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "schreibe",
-            "surface_en": "write",
-            "furigana": "[ˈʃʁaɪ̯bə]",
+            "surface": "kommt",
+            "lemma": "kommen",
             "pos": "VERB",
-            "lemma": "schreiben",
-            "explanation": "Finite verb, present, 1st person singular; denotes writing.",
-            "difficulty": 10
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 5,
+            "end": 10,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "einen",
-            "surface_en": "an",
-            "furigana": "[ˈaɪ̯nən]",
-            "pos": "DET",
+            "surface": "ein",
             "lemma": "ein",
-            "explanation": "Indefinite article, accusative masculine singular; marks 'Glückwunsch'.",
-            "difficulty": 2
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 11,
+            "end": 14,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "Glückwunsch",
-            "surface_en": "congratulation",
-            "furigana": "[ˈɡlʏkvʊnʃ]",
-            "pos": "NOUN",
             "lemma": "Glückwunsch",
-            "explanation": "Count noun, masculine singular; direct object.",
-            "difficulty": 10,
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 15,
+            "end": 26,
+            "analyzer": "spacy_de_core_news_lg",
             "is_main_word": true
           },
           {
-            "surface": "auf",
-            "surface_en": "onto",
-            "furigana": "[aʊ̯f]",
+            "surface": "von",
+            "lemma": "von",
             "pos": "ADP",
-            "lemma": "auf",
-            "explanation": "Preposition governing accusative; indicates direction.",
-            "difficulty": 2
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 27,
+            "end": 30,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "die",
-            "surface_en": "the",
-            "furigana": "[diː]",
-            "pos": "DET",
-            "lemma": "der",
-            "explanation": "Definite article, accusative feminine singular; marks 'Karte'.",
-            "difficulty": 2
+            "surface": "uns",
+            "lemma": "uns",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 31,
+            "end": 34,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "Karte.",
-            "surface_en": "card",
-            "furigana": "[ˈkaʁtə]",
-            "pos": "NOUN",
-            "lemma": "Karte",
-            "explanation": "Common noun, feminine singular; object of 'auf'.",
-            "difficulty": 7
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 34,
+            "end": 35,
+            "analyzer": "spacy_de_core_news_lg"
           }
         ],
         "difficulty_aggregated": 5
@@ -596,71 +1110,74 @@
         "difficulty_aggregated": 6.75
       },
       {
-        "sentence": "Wir schicken dir unseren Glückwunsch per WhatsApp.",
+        "sentence": "Mein Glückwunsch ist für dich.",
         "tokens": [
           {
-            "surface": "Wir",
-            "surface_en": "we",
-            "furigana": "[viːɐ̯]",
-            "pos": "PRON",
-            "lemma": "wir",
-            "explanation": "1st person plural pronoun in nominative; subject.",
-            "difficulty": 2
-          },
-          {
-            "surface": "schicken",
-            "surface_en": "send",
-            "furigana": "[ˈʃɪkən]",
-            "pos": "VERB",
-            "lemma": "schicken",
-            "explanation": "Finite verb, present; denotes sending.",
-            "difficulty": 10
-          },
-          {
-            "surface": "dir",
-            "surface_en": "to you",
-            "furigana": "[diːɐ̯]",
-            "pos": "PRON",
-            "lemma": "du",
-            "explanation": "2nd person singular pronoun, dative; indirect object.",
-            "difficulty": 4
-          },
-          {
-            "surface": "unseren",
-            "surface_en": "our",
-            "furigana": "[ˈʊnzɐn]",
+            "surface": "Mein",
+            "lemma": "mein",
             "pos": "DET",
-            "lemma": "unser",
-            "explanation": "Possessive determiner, accusative masculine singular; modifies 'Glückwunsch'.",
-            "difficulty": 7
+            "upos": "DET",
+            "xpos": "PPOSAT",
+            "feats": {},
+            "start": 0,
+            "end": 4,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "Glückwunsch",
-            "surface_en": "congratulation",
-            "furigana": "[ˈɡlʏkvʊnʃ]",
-            "pos": "NOUN",
             "lemma": "Glückwunsch",
-            "explanation": "Count noun, masculine singular; direct object.",
-            "difficulty": 10,
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 5,
+            "end": 16,
+            "analyzer": "spacy_de_core_news_lg",
             "is_main_word": true
           },
           {
-            "surface": "per",
-            "surface_en": "via",
-            "furigana": "[pɛʁ]",
-            "pos": "ADP",
-            "lemma": "per",
-            "explanation": "Preposition; indicates medium.",
-            "difficulty": 4
+            "surface": "ist",
+            "lemma": "sein",
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "VAFIN",
+            "feats": {},
+            "start": 17,
+            "end": 20,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "WhatsApp.",
-            "surface_en": "WhatsApp",
-            "furigana": "[ˈvɔtsɛp]",
-            "pos": "PROPN",
-            "lemma": "WhatsApp",
-            "explanation": "Proper noun; medium of sending.",
-            "difficulty": 10
+            "surface": "für",
+            "lemma": "für",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 21,
+            "end": 24,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "dich",
+            "lemma": "dich",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 25,
+            "end": 29,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 29,
+            "end": 30,
+            "analyzer": "spacy_de_core_news_lg"
           }
         ],
         "difficulty_aggregated": 6.71
@@ -709,137 +1226,41 @@
         "difficulty_aggregated": 7.75
       }
     ],
-    "es": [
-      "Escribo una felicitación en la tarjeta.",
-      "Aquí están nuestras felicitaciones.",
-      "Te enviamos una felicitación por WhatsApp.",
-      "Mis felicitaciones para ti."
-    ],
-    "fr": [
-      "J’écris un message de félicitations sur la carte.",
-      "Voici nos félicitations.",
-      "Nous t’envoyons des félicitations par WhatsApp.",
-      "Félicitations à toi."
-    ],
-    "it": [
-      "Scrivo gli auguri sul biglietto.",
-      "Ecco i nostri auguri.",
-      "Ti mandiamo gli auguri su WhatsApp.",
-      "I miei auguri per te."
-    ],
-    "ko": [
-      "카드에 축하 글을 써요.",
-      "여기 우리 축하 인사예요.",
-      "우리는 왓츠앱으로 축하 메시지를 보내요.",
-      "내 축하는 너를 위한 거예요."
-    ],
-    "zh-Hans": [
-      "我在卡片上写上祝福。",
-      "这是我们的祝福。",
-      "我们用WhatsApp给你发祝福。",
-      "我的祝福送给你。"
-    ],
-    "yue": [
-      "我喺卡片上面寫祝福。",
-      "呢度有我哋嘅祝福。",
-      "我哋用WhatsApp傳祝福畀你。",
-      "我嘅祝福係畀你嘅。"
-    ],
-    "ru": [
-      "Я пишу поздравление на открытке.",
-      "Вот наши поздравления.",
-      "Мы отправляем тебе поздравление в WhatsApp.",
-      "Мои поздравления для тебя."
-    ],
-    "pt": [
-      "Escrevo parabéns no cartão.",
-      "Aqui vão os nossos parabéns.",
-      "Enviamos parabéns pelo WhatsApp.",
-      "Meus parabéns para você."
-    ],
-    "he": [
-      "אני כותב ברכה על הכרטיס.",
-      "הנה ברכה מאיתנו.",
-      "אנחנו שולחים לך ברכה בוואטסאפ.",
-      "הברכה שלי בשבילך."
-    ],
-    "tr": [
-      "Karta bir tebrik yazıyorum.",
-      "İşte bizden bir tebrik.",
-      "Sana WhatsApp'tan bir tebrik yolluyoruz.",
-      "Tebriğim senin için."
-    ],
-    "vi": [
-      "Tôi viết lời chúc vào tấm thiệp.",
-      "Đây là lời chúc từ chúng tôi.",
-      "Chúng tôi gửi lời chúc cho bạn qua WhatsApp.",
-      "Lời chúc của tôi dành cho bạn."
-    ],
+    "word_POS": "Noun",
+    "entry_id": "Glückwunsch",
+    "word_en": "congratulations; congrats",
+    "word_es": "felicitación; felicitaciones",
+    "word_fr": "félicitations",
+    "word_it": "congratulazioni; auguri",
+    "word_ko": "축하",
+    "word_zh-Hans": "祝贺; 恭喜",
+    "word_yue": "恭喜; 祝賀",
+    "word_ru": "поздравление; поздравления",
+    "word_pt": "parabéns; felicitações",
+    "word_he": "ברכות; מזל טוב",
+    "word_tr": "tebrik; tebrikler",
+    "word_vi": "lời chúc mừng; chúc mừng",
+    "word_ar": "تهنئة; تهاني",
+    "word_nl": "felicitatie; felicitaties",
+    "word_uk": "привітання; вітання",
+    "word_hu": "gratuláció; jókívánság",
+    "word_hi": "बधाई; शुभकामनाएँ",
+    "word_pl": "gratulacje",
+    "word_el": "συγχαρητήρια",
+    "word_nb": "gratulasjon; gratulasjoner",
+    "word_id": "ucapan selamat; selamat",
+    "word_sv": "gratulation; gratulationer",
+    "word_ro": "felicitări; urări",
+    "word_cs": "gratulace; blahopřání",
+    "word_da": "lykønskning; tillykke",
+    "word_fi": "onnittelu; onnittelut",
+    "word_ja": "お祝い; おめでとう",
+    "word_de": "Glückwunsch",
     "ar": [
       "أكتب تهنئة على البطاقة.",
       "هذه تهنئة منا.",
       "نرسل لك تهنئة عبر واتساب.",
       "تهنئتي لك."
-    ],
-    "nl": [
-      "Ik schrijf een felicitatie op de kaart.",
-      "Hier zijn onze felicitaties.",
-      "We sturen je een felicitatie via WhatsApp.",
-      "Mijn felicitaties voor jou."
-    ],
-    "uk": [
-      "Я пишу привітання на листівці.",
-      "Ось наші вітання.",
-      "Ми надсилаємо тобі привітання через WhatsApp.",
-      "Моє привітання для тебе."
-    ],
-    "hu": [
-      "Jókívánságot írok a képeslapra.",
-      "Itt vannak a jókívánságaink.",
-      "WhatsAppon küldünk neked jókívánságot.",
-      "Az én jókívánságom neked szól."
-    ],
-    "hi": [
-      "मैं कार्ड पर शुभकामनाएँ लिख रहा हूँ.",
-      "यह हमारी ओर से शुभकामनाएँ हैं.",
-      "हम तुम्हें WhatsApp पर शुभकामनाएँ भेज रहे हैं.",
-      "मेरी शुभकामनाएँ तुम्हारे लिए हैं."
-    ],
-    "pl": [
-      "Piszę życzenia na kartce.",
-      "Oto nasze życzenia.",
-      "Wysyłamy ci życzenia na WhatsAppie.",
-      "Moje życzenia są dla ciebie."
-    ],
-    "el": [
-      "Γράφω ευχές στην κάρτα.",
-      "Ορίστε οι ευχές μας.",
-      "Σου στέλνουμε ευχές μέσω WhatsApp.",
-      "Οι ευχές μου είναι για σένα."
-    ],
-    "nb": [
-      "Jeg skriver en gratulasjon på kortet.",
-      "Her kommer en gratulasjon fra oss.",
-      "Vi sender deg en gratulasjon på WhatsApp.",
-      "Min gratulasjon er til deg."
-    ],
-    "id": [
-      "Saya menulis ucapan selamat di kartu.",
-      "Ini ucapan selamat dari kami.",
-      "Kami mengirimkan ucapan selamat untukmu lewat WhatsApp.",
-      "Ucapan selamat saya untukmu."
-    ],
-    "sv": [
-      "Jag skriver en gratulation på kortet.",
-      "Här är våra gratulationer.",
-      "Vi skickar en gratulation till dig via WhatsApp.",
-      "Min gratulation är till dig."
-    ],
-    "ro": [
-      "Scriu o urare pe felicitare.",
-      "Iată o urare de la noi.",
-      "Îți trimitem o urare pe WhatsApp.",
-      "Urarea mea este pentru tine."
     ],
     "cs": [
       "Píšu blahopřání na přáníčko.",
@@ -853,11 +1274,77 @@
       "Vi sender dig en lykønskning på WhatsApp.",
       "Min lykønskning er til dig."
     ],
+    "de": [
+      "Ich schreibe einen Glückwunsch auf die Karte.",
+      "Hier kommt unser Glückwunsch.",
+      "Wir schicken dir unseren Glückwunsch per WhatsApp.",
+      "Mein Glückwunsch ist für dich."
+    ],
+    "el": [
+      "Γράφω ευχές στην κάρτα.",
+      "Ορίστε οι ευχές μας.",
+      "Σου στέλνουμε ευχές μέσω WhatsApp.",
+      "Οι ευχές μου είναι για σένα."
+    ],
+    "en": [
+      "I’m writing congratulations on the card.",
+      "We’re sending you our congratulations via WhatsApp.",
+      "We’re sending you congratulations via WhatsApp.",
+      "My congratulations to you."
+    ],
+    "es": [
+      "Escribo una felicitación en la tarjeta.",
+      "Aquí están nuestras felicitaciones.",
+      "Te enviamos una felicitación por WhatsApp.",
+      "Mis felicitaciones para ti."
+    ],
     "fi": [
       "Kirjoitan onnittelut korttiin.",
       "Tässä ovat meidän onnittelut.",
       "Lähetämme sinulle onnittelut WhatsAppin kautta.",
       "Minun onnitteluni sinulle."
+    ],
+    "fr": [
+      "J’écris un message de félicitations sur la carte.",
+      "Voici nos félicitations.",
+      "Nous t’envoyons des félicitations par WhatsApp.",
+      "Félicitations à toi."
+    ],
+    "he": [
+      "אני כותב ברכה על הכרטיס.",
+      "הנה ברכה מאיתנו.",
+      "אנחנו שולחים לך ברכה בוואטסאפ.",
+      "הברכה שלי בשבילך."
+    ],
+    "hi": [
+      "मैं कार्ड पर शुभकामनाएँ लिख रहा हूँ.",
+      "यह हमारी ओर से शुभकामनाएँ हैं.",
+      "हम तुम्हें WhatsApp पर शुभकामनाएँ भेज रहे हैं.",
+      "मेरी शुभकामनाएँ तुम्हारे लिए हैं."
+    ],
+    "hu": [
+      "Jókívánságot írok a képeslapra.",
+      "Itt vannak a jókívánságaink.",
+      "WhatsAppon küldünk neked jókívánságot.",
+      "Az én jókívánságom neked szól."
+    ],
+    "id": [
+      "Saya menulis ucapan selamat di kartu.",
+      "Ini ucapan selamat dari kami.",
+      "Kami mengirimkan ucapan selamat untukmu lewat WhatsApp.",
+      "Ucapan selamat saya untukmu."
+    ],
+    "ipa": [
+      "/ɪç ˈʃʁaɪbə ˈaɪnən ˈɡlʏkˌvʊnʃ aʊf diː ˈkaʁtə/",
+      "/hiːɐ̯ kɔmt aɪn ˈɡlʏkˌvʊnʃ fɔn ʊns/",
+      "/viːɐ̯ ˈʃɪkən diːɐ̯ ˈaɪnən ˈɡlʏkˌvʊnʃ pɛʁ ˈvɔtsap/",
+      "/maɪn ˈɡlʏkˌvʊnʃ ɪst fyːɐ̯ dɪç/"
+    ],
+    "it": [
+      "Scrivo gli auguri sul biglietto.",
+      "Ecco i nostri auguri.",
+      "Ti mandiamo gli auguri su WhatsApp.",
+      "I miei auguri per te."
     ],
     "ja": [
       "カードにお祝いの言葉を書きます。",
@@ -865,6 +1352,83 @@
       "WhatsAppであなたにお祝いを送ります。",
       "あなたにお祝いを贈ります。"
     ],
-    "word_POS": "Noun"
+    "ko": [
+      "카드에 축하 글을 써요.",
+      "여기 우리 축하 인사예요.",
+      "우리는 왓츠앱으로 축하 메시지를 보내요.",
+      "내 축하는 너를 위한 거예요."
+    ],
+    "nb": [
+      "Jeg skriver en gratulasjon på kortet.",
+      "Her kommer en gratulasjon fra oss.",
+      "Vi sender deg en gratulasjon på WhatsApp.",
+      "Min gratulasjon er til deg."
+    ],
+    "nl": [
+      "Ik schrijf een felicitatie op de kaart.",
+      "Hier zijn onze felicitaties.",
+      "We sturen je een felicitatie via WhatsApp.",
+      "Mijn felicitaties voor jou."
+    ],
+    "pl": [
+      "Piszę życzenia na kartce.",
+      "Oto nasze życzenia.",
+      "Wysyłamy ci życzenia na WhatsAppie.",
+      "Moje życzenia są dla ciebie."
+    ],
+    "pt": [
+      "Escrevo parabéns no cartão.",
+      "Aqui vão os nossos parabéns.",
+      "Enviamos parabéns pelo WhatsApp.",
+      "Meus parabéns para você."
+    ],
+    "ro": [
+      "Scriu o urare pe felicitare.",
+      "Iată o urare de la noi.",
+      "Îți trimitem o urare pe WhatsApp.",
+      "Urarea mea este pentru tine."
+    ],
+    "ru": [
+      "Я пишу поздравление на открытке.",
+      "Вот наши поздравления.",
+      "Мы отправляем тебе поздравление в WhatsApp.",
+      "Мои поздравления для тебя."
+    ],
+    "sv": [
+      "Jag skriver en gratulation på kortet.",
+      "Här är våra gratulationer.",
+      "Vi skickar en gratulation till dig via WhatsApp.",
+      "Min gratulation är till dig."
+    ],
+    "tr": [
+      "Karta bir tebrik yazıyorum.",
+      "İşte bizden bir tebrik.",
+      "Sana WhatsApp'tan bir tebrik yolluyoruz.",
+      "Tebriğim senin için."
+    ],
+    "uk": [
+      "Я пишу привітання на листівці.",
+      "Ось наші вітання.",
+      "Ми надсилаємо тобі привітання через WhatsApp.",
+      "Моє привітання для тебе."
+    ],
+    "vi": [
+      "Tôi viết lời chúc vào tấm thiệp.",
+      "Đây là lời chúc từ chúng tôi.",
+      "Chúng tôi gửi lời chúc cho bạn qua WhatsApp.",
+      "Lời chúc của tôi dành cho bạn."
+    ],
+    "yue": [
+      "我喺卡片上面寫祝福。",
+      "呢度有我哋嘅祝福。",
+      "我哋用WhatsApp傳祝福畀你。",
+      "我嘅祝福係畀你嘅。"
+    ],
+    "zh-Hans": [
+      "我在卡片上写上祝福。",
+      "这是我们的祝福。",
+      "我们用WhatsApp给你发祝福。",
+      "我的祝福送给你。"
+    ]
   }
 }

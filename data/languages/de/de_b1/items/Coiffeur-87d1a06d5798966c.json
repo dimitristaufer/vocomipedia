@@ -119,10 +119,10 @@
       "difficulty": 5.25
     },
     {
-      "target": "Sie wartet beim Coiffeur draußen.",
+      "target": "Sie wartet draußen beim Coiffeur.",
       "reading": "/ziː ˈvaʁtət baɪ̯m ko̯aˈføːɐ̯ ˈdʁaʊ̯sən/",
       "translations": {
-        "de": "Sie wartet beim Coiffeur draußen.",
+        "de": "Sie wartet draußen beim Coiffeur.",
         "ipa": "/ziː ˈvaʁtət baɪ̯m ko̯aˈføːɐ̯ ˈdʁaʊ̯sən/",
         "en": "She's waiting outside at the hairdresser's.",
         "es": "Está esperando afuera de la peluquería.",
@@ -155,49 +155,70 @@
       "tokens": [
         {
           "surface": "Sie",
-          "surface_en": "she/You (formal)",
-          "furigana": "[ziː]",
-          "pos": "PRON",
           "lemma": "sie",
-          "explanation": "Personal pronoun; subject of the clause (3rd person singular feminine or formal 'you').",
-          "difficulty": 2
+          "pos": "PRON",
+          "upos": "PRON",
+          "xpos": "PPER",
+          "feats": {},
+          "start": 0,
+          "end": 3,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "wartet",
-          "surface_en": "waits",
-          "furigana": "[ˈvaʁtət]",
-          "pos": "VERB",
           "lemma": "warten",
-          "explanation": "Finite verb, 3rd person singular present; intransitive, takes a locative PP and an adverbial.",
-          "difficulty": 7
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VVFIN",
+          "feats": {},
+          "start": 4,
+          "end": 10,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "draußen",
+          "lemma": "draußen",
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "ADV",
+          "feats": {},
+          "start": 11,
+          "end": 18,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "beim",
-          "surface_en": "at the",
-          "furigana": "[baɪ̯m]",
-          "pos": "ADP",
           "lemma": "bei",
-          "explanation": "Preposition (contraction of 'bei' + 'dem'); indicates location and governs dative.",
-          "difficulty": 2
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "APPRART",
+          "feats": {},
+          "start": 19,
+          "end": 23,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "Coiffeur",
-          "surface_en": "hairdresser",
-          "furigana": "[kwaˈføːɐ̯]",
-          "pos": "NOUN",
           "lemma": "Coiffeur",
-          "explanation": "Common noun; object of the preposition 'beim' in dative; denotes location.",
-          "difficulty": 10,
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 24,
+          "end": 32,
+          "analyzer": "spacy_de_core_news_lg",
           "is_main_word": true
         },
         {
-          "surface": "draußen.",
-          "surface_en": "outside",
-          "furigana": "[ˈdʁaʊ̯sən]",
-          "pos": "ADV",
-          "lemma": "draußen",
-          "explanation": "Adverb modifying 'wartet'; specifies place (outside).",
-          "difficulty": 10
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 32,
+          "end": 33,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 6.2
@@ -411,8 +432,270 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-14T22:26:05Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:De b1/87d1a06d5798966c",
+      "revision_id": 85973,
+      "parent_revision_id": 15582,
+      "revision_timestamp_utc": "2026-10-14T22:26:05Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Suggest content corrections",
+      "pulled_utc": "2026-10-17T07:06:40Z",
+      "applied_utc": "2026-10-17T07:06:48Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-48e34b877d67df41",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_b1:87d1a06d5798966c",
+        "pack_code": "de_b1",
+        "entry_id": "Coiffeur",
+        "language": "de",
+        "sentence_index": 2,
+        "old_sentence": "Sie wartet beim Coiffeur draußen.",
+        "old_translations": {
+          "de": "Sie wartet beim Coiffeur draußen.",
+          "ipa": "/ziː ˈvaʁtət baɪ̯m ko̯aˈføːɐ̯ ˈdʁaʊ̯sən/",
+          "en": "She's waiting outside at the hairdresser's.",
+          "es": "Está esperando afuera de la peluquería.",
+          "fr": "Elle attend dehors chez le coiffeur.",
+          "it": "Sta aspettando fuori dal parrucchiere.",
+          "ko": "그녀는 미용실 밖에서 기다리고 있어요.",
+          "zh-Hans": "她在理发店外等着。",
+          "yue": "佢喺髮型屋門口等。",
+          "ru": "Она ждёт снаружи у парикмахерской.",
+          "pt": "Ela está esperando do lado de fora do cabeleireiro.",
+          "he": "היא מחכה מחוץ למספרה.",
+          "tr": "Kuaförün dışında bekliyor.",
+          "vi": "Cô ấy đang đợi bên ngoài tiệm cắt tóc.",
+          "ar": "هي تنتظر خارج صالون الحلاقة.",
+          "nl": "Ze wacht buiten bij de kapper.",
+          "uk": "Вона чекає зовні біля перукарні.",
+          "hu": "Kint vár a fodrásznál.",
+          "hi": "वह सैलून के बाहर इंतज़ार कर रही है.",
+          "pl": "Ona czeka na zewnątrz przed salonem fryzjerskim.",
+          "el": "Περιμένει έξω από το κομμωτήριο.",
+          "nb": "Hun venter utenfor hos frisøren.",
+          "id": "Dia menunggu di luar salon.",
+          "sv": "Hon väntar utanför hos frisören.",
+          "ro": "Ea așteaptă afară la coafor.",
+          "cs": "Čeká venku u kadeřnictví.",
+          "da": "Hun venter udenfor ved frisøren.",
+          "fi": "Hän odottaa kampaamon ulkopuolella.",
+          "ja": "彼女は美容院の外で待っています。"
+        },
+        "proposed_sentence": "Sie wartet draußen beim Coiffeur.",
+        "proposed_translations": {
+          "de": "Sie wartet draußen beim Coiffeur.",
+          "ipa": "/ziː ˈvaʁtət baɪ̯m ko̯aˈføːɐ̯ ˈdʁaʊ̯sən/",
+          "en": "She's waiting outside at the hairdresser's.",
+          "es": "Está esperando afuera de la peluquería.",
+          "fr": "Elle attend dehors chez le coiffeur.",
+          "it": "Sta aspettando fuori dal parrucchiere.",
+          "ko": "그녀는 미용실 밖에서 기다리고 있어요.",
+          "zh-Hans": "她在理发店外等着。",
+          "yue": "佢喺髮型屋門口等。",
+          "ru": "Она ждёт снаружи у парикмахерской.",
+          "pt": "Ela está esperando do lado de fora do cabeleireiro.",
+          "he": "היא מחכה מחוץ למספרה.",
+          "tr": "Kuaförün dışında bekliyor.",
+          "vi": "Cô ấy đang đợi bên ngoài tiệm cắt tóc.",
+          "ar": "هي تنتظر خارج صالون الحلاقة.",
+          "nl": "Ze wacht buiten bij de kapper.",
+          "uk": "Вона чекає зовні біля перукарні.",
+          "hu": "Kint vár a fodrásznál.",
+          "hi": "वह सैलून के बाहर इंतज़ार कर रही है.",
+          "pl": "Ona czeka na zewnątrz przed salonem fryzjerskim.",
+          "el": "Περιμένει έξω από το κομμωτήριο.",
+          "nb": "Hun venter utenfor hos frisøren.",
+          "id": "Dia menunggu di luar salon.",
+          "sv": "Hon väntar utanför hos frisören.",
+          "ro": "Ea așteaptă afară la coafor.",
+          "cs": "Čeká venku u kadeřnictví.",
+          "da": "Hun venter udenfor ved frisøren.",
+          "fi": "Hän odottaa kampaamon ulkopuolella.",
+          "ja": "彼女は美容院の外で待っています。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Sie wartet draußen beim Coiffeur.",
+        "old_japanese": "Sie wartet beim Coiffeur draußen.",
+        "old_english": "She's waiting outside at the hairdresser's.",
+        "proposed_japanese": "Sie wartet draußen beim Coiffeur.",
+        "proposed_english": "She's waiting outside at the hairdresser's.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Sie wartet draußen beim Coiffeur.",
+          "tokens": [
+            {
+              "surface": "Sie",
+              "lemma": "sie",
+              "pos": "PRON",
+              "upos": "PRON",
+              "xpos": "PPER",
+              "feats": {},
+              "start": 0,
+              "end": 3,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "wartet",
+              "lemma": "warten",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVFIN",
+              "feats": {},
+              "start": 4,
+              "end": 10,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "draußen",
+              "lemma": "draußen",
+              "pos": "ADV",
+              "upos": "ADV",
+              "xpos": "ADV",
+              "feats": {},
+              "start": 11,
+              "end": 18,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "beim",
+              "lemma": "bei",
+              "pos": "ADP",
+              "upos": "ADP",
+              "xpos": "APPRART",
+              "feats": {},
+              "start": 19,
+              "end": 23,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Coiffeur",
+              "lemma": "Coiffeur",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 24,
+              "end": 32,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 32,
+              "end": 33,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Sie",
+            "lemma": "sie",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "wartet",
+            "lemma": "warten",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 4,
+            "end": 10,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "draußen",
+            "lemma": "draußen",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 11,
+            "end": 18,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "beim",
+            "lemma": "bei",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPRART",
+            "feats": {},
+            "start": 19,
+            "end": 23,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Coiffeur",
+            "lemma": "Coiffeur",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 24,
+            "end": 32,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 32,
+            "end": 33,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:06:40Z",
+        "updated_utc": "2026-10-17T07:07:05Z",
+        "applied_utc": "2026-10-17T07:07:05Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:07:05Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -424,34 +707,6 @@
     "word": "Coiffeur",
     "word_reading": "",
     "word_label": "Substantiv (der mask.)",
-    "word_en": "hairdresser; barber",
-    "word_es": "peluquero",
-    "word_fr": "coiffeur",
-    "word_it": "parrucchiere",
-    "word_ko": "미용사",
-    "word_zh-Hans": "理发师",
-    "word_yue": "髮型師",
-    "word_ru": "парикмахер",
-    "word_pt": "cabeleireiro",
-    "word_he": "ספר",
-    "word_tr": "kuaför",
-    "word_vi": "thợ cắt tóc",
-    "word_ar": "مصفف شعر",
-    "word_nl": "kapper",
-    "word_uk": "перукар",
-    "word_hu": "fodrász",
-    "word_hi": "हेयरड्रेसर",
-    "word_pl": "fryzjer",
-    "word_el": "κομμωτής",
-    "word_nb": "frisør",
-    "word_id": "penata rambut",
-    "word_sv": "frisör",
-    "word_ro": "frizer",
-    "word_cs": "kadeřník",
-    "word_da": "frisør",
-    "word_fi": "kampaaja",
-    "word_ja": "美容師",
-    "word_de": "Coiffeur",
     "comic_difficulty": 5.99,
     "jp": [
       "Ich gehe zum Coiffeur.",
@@ -464,24 +719,6 @@
       "/ziː ˈvaʁtət baɪ̯m ko̯aˈføːɐ̯ ˈdʁaʊ̯sən/",
       "/ˈmɔʁɡən ʁuːft deːɐ̯ ko̯aˈføːɐ̯ ˈveːɡən ˈaɪ̯nɐ tɛʁˈmiːnˌɛndəʁʊŋ an/",
       "/maɪ̯n ko̯aˈføːɐ̯ hat ˈhɔʏ̯tə tsuː/"
-    ],
-    "de": [
-      "Ich gehe zum Coiffeur.",
-      "Sie wartet beim Coiffeur draußen.",
-      "Morgen ruft der Coiffeur wegen einer Terminänderung an.",
-      "Mein Coiffeur hat heute zu."
-    ],
-    "ipa": [
-      "/ɪç ˈɡeːə tsʊm ko̯aˈføːɐ̯/",
-      "/ziː ˈvaʁtət baɪ̯m ko̯aˈføːɐ̯ ˈdʁaʊ̯sən/",
-      "/ˈmɔʁɡən ʁuːft deːɐ̯ ko̯aˈføːɐ̯ ˈveːɡən ˈaɪ̯nɐ tɛʁˈmiːnˌɛndəʁʊŋ an/",
-      "/maɪ̯n ko̯aˈføːɐ̯ hat ˈhɔʏ̯tə tsuː/"
-    ],
-    "en": [
-      "I'm going to the hairdresser.",
-      "She's waiting outside at the hairdresser's.",
-      "Tomorrow the hairdresser will call about a schedule change.",
-      "My hairdresser is closed today."
     ],
     "pos_analysis": [
       {
@@ -528,53 +765,74 @@
         "difficulty_aggregated": 5.25
       },
       {
-        "sentence": "Sie wartet beim Coiffeur draußen.",
+        "sentence": "Sie wartet draußen beim Coiffeur.",
         "tokens": [
           {
             "surface": "Sie",
-            "surface_en": "she/You (formal)",
-            "furigana": "[ziː]",
-            "pos": "PRON",
             "lemma": "sie",
-            "explanation": "Personal pronoun; subject of the clause (3rd person singular feminine or formal 'you').",
-            "difficulty": 2
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "wartet",
-            "surface_en": "waits",
-            "furigana": "[ˈvaʁtət]",
-            "pos": "VERB",
             "lemma": "warten",
-            "explanation": "Finite verb, 3rd person singular present; intransitive, takes a locative PP and an adverbial.",
-            "difficulty": 7
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 4,
+            "end": 10,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "draußen",
+            "lemma": "draußen",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 11,
+            "end": 18,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "beim",
-            "surface_en": "at the",
-            "furigana": "[baɪ̯m]",
-            "pos": "ADP",
             "lemma": "bei",
-            "explanation": "Preposition (contraction of 'bei' + 'dem'); indicates location and governs dative.",
-            "difficulty": 2
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPRART",
+            "feats": {},
+            "start": 19,
+            "end": 23,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "Coiffeur",
-            "surface_en": "hairdresser",
-            "furigana": "[kwaˈføːɐ̯]",
-            "pos": "NOUN",
             "lemma": "Coiffeur",
-            "explanation": "Common noun; object of the preposition 'beim' in dative; denotes location.",
-            "difficulty": 10,
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 24,
+            "end": 32,
+            "analyzer": "spacy_de_core_news_lg",
             "is_main_word": true
           },
           {
-            "surface": "draußen.",
-            "surface_en": "outside",
-            "furigana": "[ˈdʁaʊ̯sən]",
-            "pos": "ADV",
-            "lemma": "draußen",
-            "explanation": "Adverb modifying 'wartet'; specifies place (outside).",
-            "difficulty": 10
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 32,
+            "end": 33,
+            "analyzer": "spacy_de_core_news_lg"
           }
         ],
         "difficulty_aggregated": 6.2
@@ -713,137 +971,41 @@
         "difficulty_aggregated": 6
       }
     ],
-    "es": [
-      "Voy a la peluquería.",
-      "Está esperando afuera de la peluquería.",
-      "Mañana llamarán de la peluquería para cambiar la cita.",
-      "Mi peluquería está cerrada hoy."
-    ],
-    "fr": [
-      "Je vais chez le coiffeur.",
-      "Elle attend dehors chez le coiffeur.",
-      "Demain le coiffeur appellera pour modifier le rendez-vous.",
-      "Mon salon de coiffure est fermé aujourd'hui."
-    ],
-    "it": [
-      "Vado dal parrucchiere.",
-      "Sta aspettando fuori dal parrucchiere.",
-      "Domani il parrucchiere chiamerà per cambiare l'appuntamento.",
-      "Il mio parrucchiere oggi è chiuso."
-    ],
-    "ko": [
-      "미용실에 가고 있어요.",
-      "그녀는 미용실 밖에서 기다리고 있어요.",
-      "내일 미용실에서 예약 변경 때문에 전화가 올 거예요.",
-      "내 미용실은 오늘 문을 닫았어요."
-    ],
-    "zh-Hans": [
-      "我去理发店。",
-      "她在理发店外等着。",
-      "明天理发店会打电话更改预约时间。",
-      "我的理发店今天关门了。"
-    ],
-    "yue": [
-      "我去剪頭髮。",
-      "佢喺髮型屋門口等。",
-      "聽日髮型師會打嚟講改預約時間。",
-      "我間髮型屋今日唔開門。"
-    ],
-    "ru": [
-      "Я иду к парикмахеру.",
-      "Она ждёт снаружи у парикмахерской.",
-      "Завтра парикмахер позвонит насчёт изменения записи.",
-      "Моя парикмахерская сегодня закрыта."
-    ],
-    "pt": [
-      "Vou ao cabeleireiro.",
-      "Ela está esperando do lado de fora do cabeleireiro.",
-      "Amanhã o cabeleireiro vai ligar para mudar o horário.",
-      "Meu cabeleireiro está fechado hoje."
-    ],
-    "he": [
-      "אני הולך למספרה.",
-      "היא מחכה מחוץ למספרה.",
-      "מחר הספר יתקשר כדי לשנות את התור.",
-      "המספרה שלי סגורה היום."
-    ],
-    "tr": [
-      "Kuaföre gidiyorum.",
-      "Kuaförün dışında bekliyor.",
-      "Yarın kuaför randevu değişikliği için arayacak.",
-      "Kuaförüm bugün kapalı."
-    ],
-    "vi": [
-      "Tôi đi cắt tóc.",
-      "Cô ấy đang đợi bên ngoài tiệm cắt tóc.",
-      "Ngày mai thợ cắt tóc sẽ gọi để đổi lịch hẹn.",
-      "Tiệm cắt tóc của tôi hôm nay đóng cửa."
-    ],
+    "word_POS": "Noun",
+    "entry_id": "Coiffeur",
+    "word_en": "hairdresser; barber",
+    "word_es": "peluquero",
+    "word_fr": "coiffeur",
+    "word_it": "parrucchiere",
+    "word_ko": "미용사",
+    "word_zh-Hans": "理发师",
+    "word_yue": "髮型師",
+    "word_ru": "парикмахер",
+    "word_pt": "cabeleireiro",
+    "word_he": "ספר",
+    "word_tr": "kuaför",
+    "word_vi": "thợ cắt tóc",
+    "word_ar": "مصفف شعر",
+    "word_nl": "kapper",
+    "word_uk": "перукар",
+    "word_hu": "fodrász",
+    "word_hi": "हेयरड्रेसर",
+    "word_pl": "fryzjer",
+    "word_el": "κομμωτής",
+    "word_nb": "frisør",
+    "word_id": "penata rambut",
+    "word_sv": "frisör",
+    "word_ro": "frizer",
+    "word_cs": "kadeřník",
+    "word_da": "frisør",
+    "word_fi": "kampaaja",
+    "word_ja": "美容師",
+    "word_de": "Coiffeur",
     "ar": [
       "أنا ذاهب إلى صالون الحلاقة.",
       "هي تنتظر خارج صالون الحلاقة.",
       "غداً سيتصل الحلاق لتغيير الموعد.",
       "صالون الحلاقة الخاص بي مغلق اليوم."
-    ],
-    "nl": [
-      "Ik ga naar de kapper.",
-      "Ze wacht buiten bij de kapper.",
-      "Morgen belt de kapper over een wijziging van de afspraak.",
-      "Mijn kapper is vandaag gesloten."
-    ],
-    "uk": [
-      "Я йду до перукаря.",
-      "Вона чекає зовні біля перукарні.",
-      "Завтра перукар зателефонує щодо зміни запису.",
-      "Моя перукарня сьогодні зачинена."
-    ],
-    "hu": [
-      "Megyek a fodrászhoz.",
-      "Kint vár a fodrásznál.",
-      "Holnap a fodrász felhív az időpontváltozás miatt.",
-      "A fodrászom ma zárva van."
-    ],
-    "hi": [
-      "मैं सैलून जा रहा हूँ.",
-      "वह सैलून के बाहर इंतज़ार कर रही है.",
-      "कल हेयरड्रेसर समय बदलने के बारे में कॉल करेगा.",
-      "मेरा सैलून आज बंद है."
-    ],
-    "pl": [
-      "Idę do fryzjera.",
-      "Ona czeka na zewnątrz przed salonem fryzjerskim.",
-      "Jutro fryzjer zadzwoni w sprawie zmiany terminu.",
-      "Mój fryzjer jest dziś zamknięty."
-    ],
-    "el": [
-      "Πάω στο κομμωτήριο.",
-      "Περιμένει έξω από το κομμωτήριο.",
-      "Αύριο ο κομμωτής θα τηλεφωνήσει για αλλαγή ραντεβού.",
-      "Το κομμωτήριο μου είναι κλειστό σήμερα."
-    ],
-    "nb": [
-      "Jeg skal til frisøren.",
-      "Hun venter utenfor hos frisøren.",
-      "I morgen ringer frisøren for å endre timen.",
-      "Frisøren min er stengt i dag."
-    ],
-    "id": [
-      "Saya pergi ke salon.",
-      "Dia menunggu di luar salon.",
-      "Besok penata rambut akan menelepon soal perubahan jadwal.",
-      "Salon saya tutup hari ini."
-    ],
-    "sv": [
-      "Jag ska till frisören.",
-      "Hon väntar utanför hos frisören.",
-      "I morgon ringer frisören om att ändra tiden.",
-      "Min frisör är stängd i dag."
-    ],
-    "ro": [
-      "Merg la coafor.",
-      "Ea așteaptă afară la coafor.",
-      "Mâine coaforul va suna pentru schimbarea programării.",
-      "Coaforul meu este închis astăzi."
     ],
     "cs": [
       "Jdu ke kadeřníkovi.",
@@ -857,11 +1019,77 @@
       "I morgen ringer frisøren om at ændre tiden.",
       "Min frisør er lukket i dag."
     ],
+    "de": [
+      "Ich gehe zum Coiffeur.",
+      "Sie wartet beim Coiffeur draußen.",
+      "Morgen ruft der Coiffeur wegen einer Terminänderung an.",
+      "Mein Coiffeur hat heute zu."
+    ],
+    "el": [
+      "Πάω στο κομμωτήριο.",
+      "Περιμένει έξω από το κομμωτήριο.",
+      "Αύριο ο κομμωτής θα τηλεφωνήσει για αλλαγή ραντεβού.",
+      "Το κομμωτήριο μου είναι κλειστό σήμερα."
+    ],
+    "en": [
+      "I'm going to the hairdresser.",
+      "She's waiting outside at the hairdresser's.",
+      "Tomorrow the hairdresser will call about a schedule change.",
+      "My hairdresser is closed today."
+    ],
+    "es": [
+      "Voy a la peluquería.",
+      "Está esperando afuera de la peluquería.",
+      "Mañana llamarán de la peluquería para cambiar la cita.",
+      "Mi peluquería está cerrada hoy."
+    ],
     "fi": [
       "Olen menossa kampaajalle.",
       "Hän odottaa kampaamon ulkopuolella.",
       "Huomenna kampaaja soittaa ajan muutoksesta.",
       "Kampaamoni on tänään kiinni."
+    ],
+    "fr": [
+      "Je vais chez le coiffeur.",
+      "Elle attend dehors chez le coiffeur.",
+      "Demain le coiffeur appellera pour modifier le rendez-vous.",
+      "Mon salon de coiffure est fermé aujourd'hui."
+    ],
+    "he": [
+      "אני הולך למספרה.",
+      "היא מחכה מחוץ למספרה.",
+      "מחר הספר יתקשר כדי לשנות את התור.",
+      "המספרה שלי סגורה היום."
+    ],
+    "hi": [
+      "मैं सैलून जा रहा हूँ.",
+      "वह सैलून के बाहर इंतज़ार कर रही है.",
+      "कल हेयरड्रेसर समय बदलने के बारे में कॉल करेगा.",
+      "मेरा सैलून आज बंद है."
+    ],
+    "hu": [
+      "Megyek a fodrászhoz.",
+      "Kint vár a fodrásznál.",
+      "Holnap a fodrász felhív az időpontváltozás miatt.",
+      "A fodrászom ma zárva van."
+    ],
+    "id": [
+      "Saya pergi ke salon.",
+      "Dia menunggu di luar salon.",
+      "Besok penata rambut akan menelepon soal perubahan jadwal.",
+      "Salon saya tutup hari ini."
+    ],
+    "ipa": [
+      "/ɪç ˈɡeːə tsʊm ko̯aˈføːɐ̯/",
+      "/ziː ˈvaʁtət baɪ̯m ko̯aˈføːɐ̯ ˈdʁaʊ̯sən/",
+      "/ˈmɔʁɡən ʁuːft deːɐ̯ ko̯aˈføːɐ̯ ˈveːɡən ˈaɪ̯nɐ tɛʁˈmiːnˌɛndəʁʊŋ an/",
+      "/maɪ̯n ko̯aˈføːɐ̯ hat ˈhɔʏ̯tə tsuː/"
+    ],
+    "it": [
+      "Vado dal parrucchiere.",
+      "Sta aspettando fuori dal parrucchiere.",
+      "Domani il parrucchiere chiamerà per cambiare l'appuntamento.",
+      "Il mio parrucchiere oggi è chiuso."
     ],
     "ja": [
       "美容院に行きます。",
@@ -869,6 +1097,83 @@
       "明日、美容師が予約変更の件で電話します。",
       "私の美容院は今日は休みです。"
     ],
-    "word_POS": "Noun"
+    "ko": [
+      "미용실에 가고 있어요.",
+      "그녀는 미용실 밖에서 기다리고 있어요.",
+      "내일 미용실에서 예약 변경 때문에 전화가 올 거예요.",
+      "내 미용실은 오늘 문을 닫았어요."
+    ],
+    "nb": [
+      "Jeg skal til frisøren.",
+      "Hun venter utenfor hos frisøren.",
+      "I morgen ringer frisøren for å endre timen.",
+      "Frisøren min er stengt i dag."
+    ],
+    "nl": [
+      "Ik ga naar de kapper.",
+      "Ze wacht buiten bij de kapper.",
+      "Morgen belt de kapper over een wijziging van de afspraak.",
+      "Mijn kapper is vandaag gesloten."
+    ],
+    "pl": [
+      "Idę do fryzjera.",
+      "Ona czeka na zewnątrz przed salonem fryzjerskim.",
+      "Jutro fryzjer zadzwoni w sprawie zmiany terminu.",
+      "Mój fryzjer jest dziś zamknięty."
+    ],
+    "pt": [
+      "Vou ao cabeleireiro.",
+      "Ela está esperando do lado de fora do cabeleireiro.",
+      "Amanhã o cabeleireiro vai ligar para mudar o horário.",
+      "Meu cabeleireiro está fechado hoje."
+    ],
+    "ro": [
+      "Merg la coafor.",
+      "Ea așteaptă afară la coafor.",
+      "Mâine coaforul va suna pentru schimbarea programării.",
+      "Coaforul meu este închis astăzi."
+    ],
+    "ru": [
+      "Я иду к парикмахеру.",
+      "Она ждёт снаружи у парикмахерской.",
+      "Завтра парикмахер позвонит насчёт изменения записи.",
+      "Моя парикмахерская сегодня закрыта."
+    ],
+    "sv": [
+      "Jag ska till frisören.",
+      "Hon väntar utanför hos frisören.",
+      "I morgon ringer frisören om att ändra tiden.",
+      "Min frisör är stängd i dag."
+    ],
+    "tr": [
+      "Kuaföre gidiyorum.",
+      "Kuaförün dışında bekliyor.",
+      "Yarın kuaför randevu değişikliği için arayacak.",
+      "Kuaförüm bugün kapalı."
+    ],
+    "uk": [
+      "Я йду до перукаря.",
+      "Вона чекає зовні біля перукарні.",
+      "Завтра перукар зателефонує щодо зміни запису.",
+      "Моя перукарня сьогодні зачинена."
+    ],
+    "vi": [
+      "Tôi đi cắt tóc.",
+      "Cô ấy đang đợi bên ngoài tiệm cắt tóc.",
+      "Ngày mai thợ cắt tóc sẽ gọi để đổi lịch hẹn.",
+      "Tiệm cắt tóc của tôi hôm nay đóng cửa."
+    ],
+    "yue": [
+      "我去剪頭髮。",
+      "佢喺髮型屋門口等。",
+      "聽日髮型師會打嚟講改預約時間。",
+      "我間髮型屋今日唔開門。"
+    ],
+    "zh-Hans": [
+      "我去理发店。",
+      "她在理发店外等着。",
+      "明天理发店会打电话更改预约时间。",
+      "我的理发店今天关门了。"
+    ]
   }
 }

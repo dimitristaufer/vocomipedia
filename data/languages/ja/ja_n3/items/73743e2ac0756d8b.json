@@ -42,8 +42,8 @@
   },
   "sentences": [
     {
-      "target": "ええと、きょうは月よう日です。",
-      "reading": "ええと、きょうはげつようひです。",
+      "target": "ええと、今日は月曜日です。",
+      "reading": "ええと、きょうはげつようびです。",
       "translations": {
         "en": "Let me see, today is Monday.",
         "ar": "دعني أرى، اليوم هو يوم الاثنين.",
@@ -125,20 +125,28 @@
           "furigana": "、"
         },
         {
-          "surface": "きょう",
-          "lemma": "きょう",
+          "surface": "今日",
+          "lemma": "今日",
           "pos": "名詞/普通名詞/副詞可能/*/*/*",
           "upos": "NOUN",
           "xpos": "名詞",
           "feats": {},
           "start": 4,
-          "end": 7,
+          "end": 6,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "きょう",
-          "ruby_text": "きょう",
-          "ruby_spans": [],
-          "ruby_confidence": "high",
-          "furigana": "きょう"
+          "ruby_text": "今日[きょう]",
+          "ruby_spans": [
+            {
+              "base": "今日",
+              "reading": "きょう",
+              "start": 0,
+              "length": 2
+            }
+          ],
+          "ruby_confidence": "reviewed",
+          "furigana": "きょう",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "は",
@@ -147,8 +155,8 @@
           "upos": "PART",
           "xpos": "助詞",
           "feats": {},
-          "start": 7,
-          "end": 8,
+          "start": 6,
+          "end": 7,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "は",
           "ruby_text": "は",
@@ -157,50 +165,28 @@
           "furigana": "は"
         },
         {
-          "surface": "月よう",
-          "lemma": "月よう",
+          "surface": "月曜日",
+          "lemma": "月曜日",
           "pos": "名詞/普通名詞/副詞可能/*/*/*",
           "upos": "NOUN",
           "xpos": "名詞",
           "feats": {},
-          "start": 8,
-          "end": 11,
+          "start": 7,
+          "end": 10,
           "analyzer": "sudachipy_sudachidict_core_c",
-          "reading_kana": "げつよう",
-          "ruby_text": "月[げつ]よう",
+          "reading_kana": "げつようび",
+          "ruby_text": "月曜日[げつようび]",
           "ruby_spans": [
             {
-              "base": "月",
-              "reading": "げつ",
+              "base": "月曜日",
+              "reading": "げつようび",
               "start": 0,
-              "length": 1
+              "length": 3
             }
           ],
-          "ruby_confidence": "high",
-          "furigana": "げつよう"
-        },
-        {
-          "surface": "日",
-          "lemma": "日",
-          "pos": "名詞/普通名詞/副詞可能/*/*/*",
-          "upos": "NOUN",
-          "xpos": "名詞",
-          "feats": {},
-          "start": 11,
-          "end": 12,
-          "analyzer": "sudachipy_sudachidict_core_c",
-          "reading_kana": "ひ",
-          "ruby_text": "日[ひ]",
-          "ruby_spans": [
-            {
-              "base": "日",
-              "reading": "ひ",
-              "start": 0,
-              "length": 1
-            }
-          ],
-          "ruby_confidence": "high",
-          "furigana": "ひ"
+          "ruby_confidence": "reviewed",
+          "furigana": "げつようび",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "です",
@@ -209,8 +195,8 @@
           "upos": "AUX",
           "xpos": "助動詞",
           "feats": {},
-          "start": 12,
-          "end": 14,
+          "start": 10,
+          "end": 12,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "です",
           "ruby_text": "です",
@@ -225,8 +211,8 @@
           "upos": "PUNCT",
           "xpos": "補助記号",
           "feats": {},
-          "start": 14,
-          "end": 15,
+          "start": 12,
+          "end": 13,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "。",
           "ruby_text": "。",
@@ -258,14 +244,14 @@
         "ko": "죄송하지만, 이름을 한 번 더 말씀해 주세요.",
         "nb": "Kan du si navnet ditt en gang til, takk?",
         "nl": "Kunt u uw naam nog eens zeggen, alstublieft?",
-        "pl": "Proszę, proszę jeszcze raz powiedzieć swoje imię.",
+        "pl": "Proszę jeszcze raz powiedzieć swoje imię.",
         "pt": "Por favor, diga seu nome mais uma vez.",
         "ro": "Te rog, spune-mi încă o dată numele tău.",
         "ru": "Пожалуйста, скажите ваше имя ещё раз.",
         "sv": "Kan du säga ditt namn en gång till, tack?",
         "tr": "Lütfen adınızı bir kez daha söyler misiniz?",
         "uk": "Будь ласка, скажіть своє ім'я ще раз.",
-        "vi": "Làm ơn nói lại tên của bạn một lần nữa.",
+        "vi": "Vui lòng nhắc lại tên của bạn.",
         "yue": "麻煩你再講一次你嘅名。",
         "zh-Hans": "请再说一遍你的名字。"
       },
@@ -919,8 +905,424 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-12T22:19:11Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:Ja n3/73743e2ac0756d8b",
+      "revision_id": 81678,
+      "parent_revision_id": 69332,
+      "revision_timestamp_utc": "2026-10-12T22:19:11Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Review ja_n3 item: correct Japanese orthography and remove redundant translation wording.",
+      "pulled_utc": "2026-10-18T17:39:04Z",
+      "applied_utc": "2026-10-18T17:39:42Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-2f70cc12dbe6cabb",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "ja_n3:73743e2ac0756d8b",
+        "pack_code": "ja_n3",
+        "entry_id": "ええと",
+        "language": "ja",
+        "sentence_index": 1,
+        "old_sentence": "ええと、きょうは月よう日です。",
+        "old_translations": {
+          "en": "Let me see, today is Monday.",
+          "ar": "دعني أرى، اليوم هو يوم الاثنين.",
+          "cs": "Podívejme se, dnes je pondělí.",
+          "da": "Lad mig se, i dag er det mandag.",
+          "de": "Mal sehen, heute ist Montag.",
+          "el": "Για να δούμε, σήμερα είναι Δευτέρα.",
+          "es": "A ver, hoy es lunes.",
+          "fi": "Katsotaanpa, tänään on maanantai.",
+          "fr": "Voyons, aujourd'hui, c'est lundi.",
+          "he": "בוא נראה, היום יום שני.",
+          "hi": "देखते हैं, आज सोमवार है।",
+          "hu": "Nézzük csak, ma hétfő van.",
+          "id": "Coba lihat, hari ini Senin.",
+          "it": "Vediamo, oggi è lunedì.",
+          "ko": "음, 오늘은 월요일입니다.",
+          "nb": "La meg se, i dag er det mandag.",
+          "nl": "Even kijken, vandaag is het maandag.",
+          "pl": "Zobaczmy, dziś jest poniedziałek.",
+          "pt": "Deixa eu ver, hoje é segunda-feira.",
+          "ro": "Să vedem, azi este luni.",
+          "ru": "Давайте посмотрим, сегодня понедельник.",
+          "sv": "Låt mig se, i dag är det måndag.",
+          "tr": "Bir bakalım, bugün pazartesi.",
+          "uk": "Давайте подивимося, сьогодні понеділок.",
+          "vi": "Để xem nào, hôm nay là thứ Hai.",
+          "yue": "等我睇吓，今日係星期一。",
+          "zh-Hans": "让我想想，今天是星期一。"
+        },
+        "proposed_sentence": "ええと、今日は月曜日です。",
+        "proposed_translations": {
+          "en": "Let me see, today is Monday.",
+          "ar": "دعني أرى، اليوم هو يوم الاثنين.",
+          "cs": "Podívejme se, dnes je pondělí.",
+          "da": "Lad mig se, i dag er det mandag.",
+          "de": "Mal sehen, heute ist Montag.",
+          "el": "Για να δούμε, σήμερα είναι Δευτέρα.",
+          "es": "A ver, hoy es lunes.",
+          "fi": "Katsotaanpa, tänään on maanantai.",
+          "fr": "Voyons, aujourd'hui, c'est lundi.",
+          "he": "בוא נראה, היום יום שני.",
+          "hi": "देखते हैं, आज सोमवार है।",
+          "hu": "Nézzük csak, ma hétfő van.",
+          "id": "Coba lihat, hari ini Senin.",
+          "it": "Vediamo, oggi è lunedì.",
+          "ko": "음, 오늘은 월요일입니다.",
+          "nb": "La meg se, i dag er det mandag.",
+          "nl": "Even kijken, vandaag is het maandag.",
+          "pl": "Zobaczmy, dziś jest poniedziałek.",
+          "pt": "Deixa eu ver, hoje é segunda-feira.",
+          "ro": "Să vedem, azi este luni.",
+          "ru": "Давайте посмотрим, сегодня понедельник.",
+          "sv": "Låt mig se, i dag är det måndag.",
+          "tr": "Bir bakalım, bugün pazartesi.",
+          "uk": "Давайте подивимося, сьогодні понеділок.",
+          "vi": "Để xem nào, hôm nay là thứ Hai.",
+          "yue": "等我睇吓，今日係星期一。",
+          "zh-Hans": "让我想想，今天是星期一。"
+        },
+        "old_ruby_source": "ええと、きょうは月[げつ]よう日[ひ]です。",
+        "proposed_ruby_source": "ええと、今日[きょう]は月曜日[げつようび]です。",
+        "old_japanese": "ええと、きょうは月よう日です。",
+        "old_english": "Let me see, today is Monday.",
+        "proposed_japanese": "ええと、今日は月曜日です。",
+        "proposed_english": "Let me see, today is Monday.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "ja",
+          "sentence": "ええと、今日は月曜日です。",
+          "tokens": [
+            {
+              "surface": "ええ",
+              "lemma": "ええ",
+              "pos": "感動詞/一般/*/*/*/*",
+              "upos": "INTJ",
+              "xpos": "感動詞",
+              "feats": {},
+              "start": 0,
+              "end": 2,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "ええ",
+              "ruby_text": "ええ",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "ええ"
+            },
+            {
+              "surface": "と",
+              "lemma": "と",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 2,
+              "end": 3,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "と",
+              "ruby_text": "と",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "と"
+            },
+            {
+              "surface": "、",
+              "lemma": "、",
+              "pos": "補助記号/読点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 3,
+              "end": 4,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "、",
+              "ruby_text": "、",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "、"
+            },
+            {
+              "surface": "今日",
+              "lemma": "今日",
+              "pos": "名詞/普通名詞/副詞可能/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 4,
+              "end": 6,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "きょう",
+              "ruby_text": "今日[きょう]",
+              "ruby_spans": [
+                {
+                  "base": "今日",
+                  "reading": "きょう",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "きょう",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "は",
+              "lemma": "は",
+              "pos": "助詞/係助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 6,
+              "end": 7,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "は",
+              "ruby_text": "は",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "は"
+            },
+            {
+              "surface": "月曜日",
+              "lemma": "月曜日",
+              "pos": "名詞/普通名詞/副詞可能/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 7,
+              "end": 10,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "げつようび",
+              "ruby_text": "月曜日[げつようび]",
+              "ruby_spans": [
+                {
+                  "base": "月曜日",
+                  "reading": "げつようび",
+                  "start": 0,
+                  "length": 3
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "げつようび",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "です",
+              "lemma": "です",
+              "pos": "助動詞/*/*/*/助動詞-デス/終止形-一般",
+              "upos": "AUX",
+              "xpos": "助動詞",
+              "feats": {},
+              "start": 10,
+              "end": 12,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "です",
+              "ruby_text": "です",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "です"
+            },
+            {
+              "surface": "。",
+              "lemma": "。",
+              "pos": "補助記号/句点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 12,
+              "end": 13,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "。",
+              "ruby_text": "。",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "。"
+            }
+          ],
+          "reading": "ええと、きょうはげつようびです。",
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "warnings": [
+            "mediawiki ruby hints applied"
+          ]
+        },
+        "generated_tokens": [
+          {
+            "surface": "ええ",
+            "lemma": "ええ",
+            "pos": "感動詞/一般/*/*/*/*",
+            "upos": "INTJ",
+            "xpos": "感動詞",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ええ",
+            "ruby_text": "ええ",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "ええ"
+          },
+          {
+            "surface": "と",
+            "lemma": "と",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 2,
+            "end": 3,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "と",
+            "ruby_text": "と",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "と"
+          },
+          {
+            "surface": "、",
+            "lemma": "、",
+            "pos": "補助記号/読点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 3,
+            "end": 4,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "、",
+            "ruby_text": "、",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "、"
+          },
+          {
+            "surface": "今日",
+            "lemma": "今日",
+            "pos": "名詞/普通名詞/副詞可能/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 4,
+            "end": 6,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "きょう",
+            "ruby_text": "今日[きょう]",
+            "ruby_spans": [
+              {
+                "base": "今日",
+                "reading": "きょう",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "きょう",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "は",
+            "lemma": "は",
+            "pos": "助詞/係助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 6,
+            "end": 7,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "は",
+            "ruby_text": "は",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "は"
+          },
+          {
+            "surface": "月曜日",
+            "lemma": "月曜日",
+            "pos": "名詞/普通名詞/副詞可能/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 7,
+            "end": 10,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "げつようび",
+            "ruby_text": "月曜日[げつようび]",
+            "ruby_spans": [
+              {
+                "base": "月曜日",
+                "reading": "げつようび",
+                "start": 0,
+                "length": 3
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "げつようび",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "です",
+            "lemma": "です",
+            "pos": "助動詞/*/*/*/助動詞-デス/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 10,
+            "end": 12,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "です",
+            "ruby_text": "です",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "です"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 12,
+            "end": 13,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
+          }
+        ],
+        "generated_reading": "ええと、きょうはげつようびです。",
+        "analyzer": "sudachipy_sudachidict_core_c",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-18T17:39:04Z",
+        "updated_utc": "2026-10-18T17:40:35Z",
+        "applied_utc": "2026-10-18T17:40:35Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-18T17:40:35Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -941,16 +1343,10 @@
       "ええと、あの店はどこですか。"
     ],
     "fu": [
-      "ええと、きょうはげつようびです。",
+      "ええと、きょうはげつようひです。",
       "ええと、なまえをもういちどおねがいします。",
       "ええと、どこにいけばいいですか。",
       "ええと、あのみせはどこですか。"
-    ],
-    "en": [
-      "Let me see, today is Monday.",
-      "Let me see, please say your name one more time.",
-      "Um, where should I go?",
-      "Well, where is that store?"
     ],
     "generation": {
       "generator": "vocomipedia_source_generator.py",
@@ -988,193 +1384,9 @@
         "definitions": "let me see, well, errr ..."
       }
     },
-    "word_en": "let me see, well, errr ...",
-    "word_es": "eh",
-    "word_fr": "euh",
-    "word_de": "äh",
-    "word_it": "ehm",
-    "word_ko": "어",
-    "word_zh-Hans": "呃",
-    "word_yue": "呃",
-    "word_ru": "э-э",
-    "word_pt": "eh",
-    "word_he": "אה",
-    "word_tr": "ee",
-    "word_vi": "ừm",
-    "word_ar": "آه",
-    "word_nl": "eh",
-    "word_uk": "е-е",
-    "word_hu": "öö",
-    "word_hi": "अम्",
-    "word_pl": "eee",
-    "word_el": "εε",
-    "word_nb": "eh",
-    "word_id": "eh",
-    "word_sv": "eh",
-    "word_ro": "ăă",
-    "word_cs": "ehm",
-    "word_da": "øh",
-    "word_fi": "öö",
-    "word_ja": "ええと",
-    "ar": [
-      "دعني أرى، اليوم هو يوم الاثنين.",
-      "من فضلك قل اسمك مرة أخرى.",
-      "أم، إلى أين يجب أن أذهب؟",
-      "أم، أين ذلك المتجر؟"
-    ],
-    "cs": [
-      "Podívejme se, dnes je pondělí.",
-      "Prosím, řekněte ještě jednou své jméno.",
-      "Ehm, kam mám jít?",
-      "Ehm, kde je ten obchod?"
-    ],
-    "da": [
-      "Lad mig se, i dag er det mandag.",
-      "Vil du sige dit navn en gang til, tak?",
-      "Øh, hvor skal jeg gå hen?",
-      "Øh, hvor er den butik?"
-    ],
-    "de": [
-      "Mal sehen, heute ist Montag.",
-      "Bitte sagen Sie Ihren Namen noch einmal.",
-      "Äh, wohin soll ich gehen?",
-      "Äh, wo ist das Geschäft?"
-    ],
-    "el": [
-      "Για να δούμε, σήμερα είναι Δευτέρα.",
-      "Πείτε μου, παρακαλώ, το όνομά σας άλλη μία φορά.",
-      "Εε, πού πρέπει να πάω;",
-      "Εε, πού είναι εκείνο το μαγαζί;"
-    ],
-    "es": [
-      "A ver, hoy es lunes.",
-      "Por favor, diga su nombre otra vez.",
-      "Eh, ¿a dónde debo ir?",
-      "Eh, ¿dónde está esa tienda?"
-    ],
-    "fi": [
-      "Katsotaanpa, tänään on maanantai.",
-      "Sano nimesi vielä kerran, kiitos.",
-      "Öh, minne minun pitäisi mennä?",
-      "Öh, missä se kauppa on?"
-    ],
-    "fr": [
-      "Voyons, aujourd'hui, c'est lundi.",
-      "Pouvez-vous me redire votre nom, s'il vous plaît ?",
-      "Euh, où dois-je aller ?",
-      "Euh, où est ce magasin ?"
-    ],
-    "he": [
-      "בוא נראה, היום יום שני.",
-      "אפשר לומר שוב את שמך, בבקשה?",
-      "אממ, לאן אני צריך ללכת?",
-      "אממ, איפה החנות הזאת?"
-    ],
-    "hi": [
-      "देखते हैं, आज सोमवार है।",
-      "कृपया अपना नाम एक बार फिर बताइए।",
-      "उम्, मुझे कहाँ जाना चाहिए?",
-      "उम्, वह दुकान कहाँ है?"
-    ],
-    "hu": [
-      "Nézzük csak, ma hétfő van.",
-      "Kérem, mondja el még egyszer a nevét.",
-      "Öö, hova menjek?",
-      "Öö, hol van az az üzlet?"
-    ],
-    "id": [
-      "Coba lihat, hari ini Senin.",
-      "Tolong sebutkan nama Anda sekali lagi.",
-      "Ehm, saya harus pergi ke mana?",
-      "Ehm, toko itu di mana?"
-    ],
-    "it": [
-      "Vediamo, oggi è lunedì.",
-      "Mi dica un'altra volta il suo nome, per favore.",
-      "Ehm, dove devo andare?",
-      "Ehm, dov'è quel negozio?"
-    ],
-    "ko": [
-      "음, 오늘은 월요일입니다.",
-      "죄송하지만, 이름을 한 번 더 말씀해 주세요.",
-      "음, 어디로 가야 하나요?",
-      "음, 그 가게가 어디에 있나요?"
-    ],
-    "nb": [
-      "La meg se, i dag er det mandag.",
-      "Kan du si navnet ditt en gang til, takk?",
-      "Eh, hvor skal jeg gå?",
-      "Eh, hvor er den butikken?"
-    ],
-    "nl": [
-      "Even kijken, vandaag is het maandag.",
-      "Kunt u uw naam nog eens zeggen, alstublieft?",
-      "Eh, waar moet ik heen?",
-      "Eh, waar is die winkel?"
-    ],
-    "pl": [
-      "Zobaczmy, dziś jest poniedziałek.",
-      "Proszę, proszę jeszcze raz powiedzieć swoje imię.",
-      "Eee, gdzie mam iść?",
-      "Eee, gdzie jest ten sklep?"
-    ],
-    "pt": [
-      "Deixa eu ver, hoje é segunda-feira.",
-      "Por favor, diga seu nome mais uma vez.",
-      "Hum, para onde devo ir?",
-      "Hum, onde fica aquela loja?"
-    ],
-    "ro": [
-      "Să vedem, azi este luni.",
-      "Te rog, spune-mi încă o dată numele tău.",
-      "Ăă, unde ar trebui să merg?",
-      "Ăă, unde este magazinul acela?"
-    ],
-    "ru": [
-      "Давайте посмотрим, сегодня понедельник.",
-      "Пожалуйста, скажите ваше имя ещё раз.",
-      "Эм, куда мне идти?",
-      "Эм, где тот магазин?"
-    ],
-    "sv": [
-      "Låt mig se, i dag är det måndag.",
-      "Kan du säga ditt namn en gång till, tack?",
-      "Öh, vart ska jag gå?",
-      "Öh, var ligger den där butiken?"
-    ],
-    "tr": [
-      "Bir bakalım, bugün pazartesi.",
-      "Lütfen adınızı bir kez daha söyler misiniz?",
-      "Ee, nereye gitmeliyim?",
-      "Ee, o dükkân nerede?"
-    ],
-    "uk": [
-      "Давайте подивимося, сьогодні понеділок.",
-      "Будь ласка, скажіть своє ім'я ще раз.",
-      "Ем, куди мені йти?",
-      "Ем, де той магазин?"
-    ],
-    "vi": [
-      "Để xem nào, hôm nay là thứ Hai.",
-      "Làm ơn nói lại tên của bạn một lần nữa.",
-      "Ừm, tôi nên đi đâu?",
-      "Ừm, cửa hàng đó ở đâu?"
-    ],
-    "yue": [
-      "等我睇吓，今日係星期一。",
-      "麻煩你再講一次你嘅名。",
-      "呃，我應該去邊度？",
-      "呃，嗰間舖頭喺邊？"
-    ],
-    "zh-Hans": [
-      "让我想想，今天是星期一。",
-      "请再说一遍你的名字。",
-      "呃，我该去哪里？",
-      "呃，那家店在哪里？"
-    ],
     "pos_analysis": [
       {
-        "sentence": "ええと、きょうは月よう日です。",
+        "sentence": "ええと、今日は月曜日です。",
         "tokens": [
           {
             "surface": "ええ",
@@ -1227,20 +1439,28 @@
             "furigana": "、"
           },
           {
-            "surface": "きょう",
-            "lemma": "きょう",
+            "surface": "今日",
+            "lemma": "今日",
             "pos": "名詞/普通名詞/副詞可能/*/*/*",
             "upos": "NOUN",
             "xpos": "名詞",
             "feats": {},
             "start": 4,
-            "end": 7,
+            "end": 6,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "きょう",
-            "ruby_text": "きょう",
-            "ruby_spans": [],
-            "ruby_confidence": "high",
-            "furigana": "きょう"
+            "ruby_text": "今日[きょう]",
+            "ruby_spans": [
+              {
+                "base": "今日",
+                "reading": "きょう",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "きょう",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "は",
@@ -1249,8 +1469,8 @@
             "upos": "PART",
             "xpos": "助詞",
             "feats": {},
-            "start": 7,
-            "end": 8,
+            "start": 6,
+            "end": 7,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "は",
             "ruby_text": "は",
@@ -1259,50 +1479,28 @@
             "furigana": "は"
           },
           {
-            "surface": "月よう",
-            "lemma": "月よう",
+            "surface": "月曜日",
+            "lemma": "月曜日",
             "pos": "名詞/普通名詞/副詞可能/*/*/*",
             "upos": "NOUN",
             "xpos": "名詞",
             "feats": {},
-            "start": 8,
-            "end": 11,
+            "start": 7,
+            "end": 10,
             "analyzer": "sudachipy_sudachidict_core_c",
-            "reading_kana": "げつよう",
-            "ruby_text": "月[げつ]よう",
+            "reading_kana": "げつようび",
+            "ruby_text": "月曜日[げつようび]",
             "ruby_spans": [
               {
-                "base": "月",
-                "reading": "げつ",
+                "base": "月曜日",
+                "reading": "げつようび",
                 "start": 0,
-                "length": 1
+                "length": 3
               }
             ],
-            "ruby_confidence": "high",
-            "furigana": "げつよう"
-          },
-          {
-            "surface": "日",
-            "lemma": "日",
-            "pos": "名詞/普通名詞/副詞可能/*/*/*",
-            "upos": "NOUN",
-            "xpos": "名詞",
-            "feats": {},
-            "start": 11,
-            "end": 12,
-            "analyzer": "sudachipy_sudachidict_core_c",
-            "reading_kana": "ひ",
-            "ruby_text": "日[ひ]",
-            "ruby_spans": [
-              {
-                "base": "日",
-                "reading": "ひ",
-                "start": 0,
-                "length": 1
-              }
-            ],
-            "ruby_confidence": "high",
-            "furigana": "ひ"
+            "ruby_confidence": "reviewed",
+            "furigana": "げつようび",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "です",
@@ -1311,8 +1509,8 @@
             "upos": "AUX",
             "xpos": "助動詞",
             "feats": {},
-            "start": 12,
-            "end": 14,
+            "start": 10,
+            "end": 12,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "です",
             "ruby_text": "です",
@@ -1327,8 +1525,8 @@
             "upos": "PUNCT",
             "xpos": "補助記号",
             "feats": {},
-            "start": 14,
-            "end": 15,
+            "start": 12,
+            "end": 13,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "。",
             "ruby_text": "。",
@@ -1919,6 +2117,196 @@
         ],
         "difficulty_aggregated": null
       }
+    ],
+    "word_en": "let me see, well, errr ...",
+    "word_es": "eh",
+    "word_fr": "euh",
+    "word_de": "äh",
+    "word_it": "ehm",
+    "word_ko": "어",
+    "word_zh-Hans": "呃",
+    "word_yue": "呃",
+    "word_ru": "э-э",
+    "word_pt": "eh",
+    "word_he": "אה",
+    "word_tr": "ee",
+    "word_vi": "ừm",
+    "word_ar": "آه",
+    "word_nl": "eh",
+    "word_uk": "е-е",
+    "word_hu": "öö",
+    "word_hi": "अम्",
+    "word_pl": "eee",
+    "word_el": "εε",
+    "word_nb": "eh",
+    "word_id": "eh",
+    "word_sv": "eh",
+    "word_ro": "ăă",
+    "word_cs": "ehm",
+    "word_da": "øh",
+    "word_fi": "öö",
+    "word_ja": "ええと",
+    "ar": [
+      "دعني أرى، اليوم هو يوم الاثنين.",
+      "من فضلك قل اسمك مرة أخرى.",
+      "أم، إلى أين يجب أن أذهب؟",
+      "أم، أين ذلك المتجر؟"
+    ],
+    "cs": [
+      "Podívejme se, dnes je pondělí.",
+      "Prosím, řekněte ještě jednou své jméno.",
+      "Ehm, kam mám jít?",
+      "Ehm, kde je ten obchod?"
+    ],
+    "da": [
+      "Lad mig se, i dag er det mandag.",
+      "Vil du sige dit navn en gang til, tak?",
+      "Øh, hvor skal jeg gå hen?",
+      "Øh, hvor er den butik?"
+    ],
+    "de": [
+      "Mal sehen, heute ist Montag.",
+      "Bitte sagen Sie Ihren Namen noch einmal.",
+      "Äh, wohin soll ich gehen?",
+      "Äh, wo ist das Geschäft?"
+    ],
+    "el": [
+      "Για να δούμε, σήμερα είναι Δευτέρα.",
+      "Πείτε μου, παρακαλώ, το όνομά σας άλλη μία φορά.",
+      "Εε, πού πρέπει να πάω;",
+      "Εε, πού είναι εκείνο το μαγαζί;"
+    ],
+    "en": [
+      "Let me see, today is Monday.",
+      "Let me see, please say your name one more time.",
+      "Um, where should I go?",
+      "Well, where is that store?"
+    ],
+    "es": [
+      "A ver, hoy es lunes.",
+      "Por favor, diga su nombre otra vez.",
+      "Eh, ¿a dónde debo ir?",
+      "Eh, ¿dónde está esa tienda?"
+    ],
+    "fi": [
+      "Katsotaanpa, tänään on maanantai.",
+      "Sano nimesi vielä kerran, kiitos.",
+      "Öh, minne minun pitäisi mennä?",
+      "Öh, missä se kauppa on?"
+    ],
+    "fr": [
+      "Voyons, aujourd'hui, c'est lundi.",
+      "Pouvez-vous me redire votre nom, s'il vous plaît ?",
+      "Euh, où dois-je aller ?",
+      "Euh, où est ce magasin ?"
+    ],
+    "he": [
+      "בוא נראה, היום יום שני.",
+      "אפשר לומר שוב את שמך, בבקשה?",
+      "אממ, לאן אני צריך ללכת?",
+      "אממ, איפה החנות הזאת?"
+    ],
+    "hi": [
+      "देखते हैं, आज सोमवार है।",
+      "कृपया अपना नाम एक बार फिर बताइए।",
+      "उम्, मुझे कहाँ जाना चाहिए?",
+      "उम्, वह दुकान कहाँ है?"
+    ],
+    "hu": [
+      "Nézzük csak, ma hétfő van.",
+      "Kérem, mondja el még egyszer a nevét.",
+      "Öö, hova menjek?",
+      "Öö, hol van az az üzlet?"
+    ],
+    "id": [
+      "Coba lihat, hari ini Senin.",
+      "Tolong sebutkan nama Anda sekali lagi.",
+      "Ehm, saya harus pergi ke mana?",
+      "Ehm, toko itu di mana?"
+    ],
+    "it": [
+      "Vediamo, oggi è lunedì.",
+      "Mi dica un'altra volta il suo nome, per favore.",
+      "Ehm, dove devo andare?",
+      "Ehm, dov'è quel negozio?"
+    ],
+    "ko": [
+      "음, 오늘은 월요일입니다.",
+      "죄송하지만, 이름을 한 번 더 말씀해 주세요.",
+      "음, 어디로 가야 하나요?",
+      "음, 그 가게가 어디에 있나요?"
+    ],
+    "nb": [
+      "La meg se, i dag er det mandag.",
+      "Kan du si navnet ditt en gang til, takk?",
+      "Eh, hvor skal jeg gå?",
+      "Eh, hvor er den butikken?"
+    ],
+    "nl": [
+      "Even kijken, vandaag is het maandag.",
+      "Kunt u uw naam nog eens zeggen, alstublieft?",
+      "Eh, waar moet ik heen?",
+      "Eh, waar is die winkel?"
+    ],
+    "pl": [
+      "Zobaczmy, dziś jest poniedziałek.",
+      "Proszę jeszcze raz powiedzieć swoje imię.",
+      "Eee, gdzie mam iść?",
+      "Eee, gdzie jest ten sklep?"
+    ],
+    "pt": [
+      "Deixa eu ver, hoje é segunda-feira.",
+      "Por favor, diga seu nome mais uma vez.",
+      "Hum, para onde devo ir?",
+      "Hum, onde fica aquela loja?"
+    ],
+    "ro": [
+      "Să vedem, azi este luni.",
+      "Te rog, spune-mi încă o dată numele tău.",
+      "Ăă, unde ar trebui să merg?",
+      "Ăă, unde este magazinul acela?"
+    ],
+    "ru": [
+      "Давайте посмотрим, сегодня понедельник.",
+      "Пожалуйста, скажите ваше имя ещё раз.",
+      "Эм, куда мне идти?",
+      "Эм, где тот магазин?"
+    ],
+    "sv": [
+      "Låt mig se, i dag är det måndag.",
+      "Kan du säga ditt namn en gång till, tack?",
+      "Öh, vart ska jag gå?",
+      "Öh, var ligger den där butiken?"
+    ],
+    "tr": [
+      "Bir bakalım, bugün pazartesi.",
+      "Lütfen adınızı bir kez daha söyler misiniz?",
+      "Ee, nereye gitmeliyim?",
+      "Ee, o dükkân nerede?"
+    ],
+    "uk": [
+      "Давайте подивимося, сьогодні понеділок.",
+      "Будь ласка, скажіть своє ім'я ще раз.",
+      "Ем, куди мені йти?",
+      "Ем, де той магазин?"
+    ],
+    "vi": [
+      "Để xem nào, hôm nay là thứ Hai.",
+      "Vui lòng nhắc lại tên của bạn.",
+      "Ừm, tôi nên đi đâu?",
+      "Ừm, cửa hàng đó ở đâu?"
+    ],
+    "yue": [
+      "等我睇吓，今日係星期一。",
+      "麻煩你再講一次你嘅名。",
+      "呃，我應該去邊度？",
+      "呃，嗰間舖頭喺邊？"
+    ],
+    "zh-Hans": [
+      "让我想想，今天是星期一。",
+      "请再说一遍你的名字。",
+      "呃，我该去哪里？",
+      "呃，那家店在哪里？"
     ]
   }
 }

@@ -38,7 +38,7 @@
     "cs": "vada",
     "da": "defekt",
     "fi": "vika",
-    "ja": "けっかん"
+    "ja": "欠陥"
   },
   "sentences": [
     {
@@ -434,7 +434,7 @@
         "sv": "Jag hittade ett fel under kontrollen.",
         "tr": "Kontrol sırasında bir kusur buldum.",
         "uk": "Під час перевірки я знайшов дефект.",
-        "vi": "Tôi đã tìm ra một lỗi trong lúc kiểm tra.",
+        "vi": "Tôi đã phát hiện một khuyết điểm trong lúc kiểm tra.",
         "yue": "我喺檢查期間發現咗缺陷。",
         "zh-Hans": "我在检查时发现了缺陷。"
       },
@@ -576,8 +576,8 @@
       "difficulty": null
     },
     {
-      "target": "小さな欠陥でも、売れません。",
-      "reading": "ちいさなけっかんでも、うれません。",
+      "target": "小さな欠陥でもあれば、売れません。",
+      "reading": "ちいさなけっかんでもあれば、うれません。",
       "translations": {
         "en": "Even a small defect means it won't sell.",
         "ar": "حتى العيب الصغير يعني أنه لن يُباع.",
@@ -585,7 +585,7 @@
         "da": "Selv en lille fejl betyder, at det ikke kan sælges.",
         "de": "Schon ein kleiner Fehler bedeutet, dass es sich nicht verkauft.",
         "el": "Ακόμα και ένα μικρό ελάττωμα σημαίνει ότι δεν θα πουληθεί.",
-        "es": "Aunque sea un pequeño defecto, no se vende.",
+        "es": "Incluso un pequeño defecto basta para que no se venda.",
         "fi": "Pienikin vika tarkoittaa, ettei se mene kaupaksi.",
         "fr": "Même un petit défaut veut dire que ça ne se vend pas.",
         "he": "אפילו פגם קטן אומר שזה לא יימכר.",
@@ -595,14 +595,14 @@
         "it": "Anche un piccolo difetto significa che non si vende.",
         "ko": "작은 결함이라도 있으면 안 팔려요.",
         "nb": "Selv en liten feil betyr at den ikke selges.",
-        "nl": "Zelfs een klein gebrek betekent dat het niet verkoopt.",
+        "nl": "Zelfs een klein gebrek betekent dat het product niet wordt verkocht.",
         "pl": "Nawet mała wada oznacza, że się nie sprzeda.",
-        "pt": "Até um pequeno defeito faz com que não venda.",
+        "pt": "Até um pequeno defeito faz com que o produto não seja vendido.",
         "ro": "Chiar și un defect mic înseamnă că nu se vinde.",
-        "ru": "Даже маленький дефект значит, что это не продастся.",
+        "ru": "Даже небольшой дефект означает, что товар не продадут.",
         "sv": "Även ett litet fel betyder att den inte säljs.",
         "tr": "Küçük bir kusur bile onun satılmaması demektir.",
-        "uk": "Навіть маленький дефект означає, що це не продасться.",
+        "uk": "Навіть невеликий дефект означає, що виріб не продадуть.",
         "vi": "Chỉ một lỗi nhỏ thôi cũng khiến nó không bán được.",
         "yue": "就算係一個細小缺陷，都賣唔出。",
         "zh-Hans": "即使是小缺陷，也卖不出去。"
@@ -628,8 +628,9 @@
               "length": 1
             }
           ],
-          "ruby_confidence": "high",
-          "furigana": "ちいさな"
+          "ruby_confidence": "reviewed",
+          "furigana": "ちいさな",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "欠陥",
@@ -651,8 +652,9 @@
               "length": 2
             }
           ],
-          "ruby_confidence": "medium",
-          "furigana": "けっかん"
+          "ruby_confidence": "reviewed",
+          "furigana": "けっかん",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "で",
@@ -687,14 +689,46 @@
           "furigana": "も"
         },
         {
+          "surface": "あれ",
+          "lemma": "ある",
+          "pos": "動詞/非自立可能/*/*/五段-ラ行/仮定形-一般",
+          "upos": "VERB",
+          "xpos": "動詞",
+          "feats": {},
+          "start": 7,
+          "end": 9,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "あれ",
+          "ruby_text": "あれ",
+          "ruby_spans": [],
+          "ruby_confidence": "high",
+          "furigana": "あれ"
+        },
+        {
+          "surface": "ば",
+          "lemma": "ば",
+          "pos": "助詞/接続助詞/*/*/*/*",
+          "upos": "PART",
+          "xpos": "助詞",
+          "feats": {},
+          "start": 9,
+          "end": 10,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "ば",
+          "ruby_text": "ば",
+          "ruby_spans": [],
+          "ruby_confidence": "high",
+          "furigana": "ば"
+        },
+        {
           "surface": "、",
           "lemma": "、",
           "pos": "補助記号/読点/*/*/*/*",
           "upos": "PUNCT",
           "xpos": "補助記号",
           "feats": {},
-          "start": 7,
-          "end": 8,
+          "start": 10,
+          "end": 11,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "、",
           "ruby_text": "、",
@@ -709,8 +743,8 @@
           "upos": "VERB",
           "xpos": "動詞",
           "feats": {},
-          "start": 8,
-          "end": 10,
+          "start": 11,
+          "end": 13,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "うれ",
           "ruby_text": "売[う]れ",
@@ -722,8 +756,9 @@
               "length": 1
             }
           ],
-          "ruby_confidence": "high",
-          "furigana": "うれ"
+          "ruby_confidence": "reviewed",
+          "furigana": "うれ",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "ませ",
@@ -732,8 +767,8 @@
           "upos": "AUX",
           "xpos": "助動詞",
           "feats": {},
-          "start": 10,
-          "end": 12,
+          "start": 13,
+          "end": 15,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "ませ",
           "ruby_text": "ませ",
@@ -748,8 +783,8 @@
           "upos": "AUX",
           "xpos": "助動詞",
           "feats": {},
-          "start": 12,
-          "end": 13,
+          "start": 15,
+          "end": 16,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "ん",
           "ruby_text": "ん",
@@ -764,8 +799,8 @@
           "upos": "PUNCT",
           "xpos": "補助記号",
           "feats": {},
-          "start": 13,
-          "end": 14,
+          "start": 16,
+          "end": 17,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "。",
           "ruby_text": "。",
@@ -788,8 +823,536 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-13T00:12:46Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:Ja n3/2379e9ffb4f0a06f",
+      "revision_id": 81375,
+      "parent_revision_id": 60991,
+      "revision_timestamp_utc": "2026-10-13T00:12:46Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Make the defect example explicitly conditional and smooth the affected translations.",
+      "pulled_utc": "2026-10-18T17:38:56Z",
+      "applied_utc": "2026-10-18T17:39:32Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-d61cbbbb9a7b71bd",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "ja_n3:2379e9ffb4f0a06f",
+        "pack_code": "ja_n3",
+        "entry_id": "けっかん",
+        "language": "ja",
+        "sentence_index": 4,
+        "old_sentence": "小さな欠陥でも、売れません。",
+        "old_translations": {
+          "en": "Even a small defect means it won't sell.",
+          "ar": "حتى العيب الصغير يعني أنه لن يُباع.",
+          "cs": "I malá vada znamená, že se to neprodá.",
+          "da": "Selv en lille fejl betyder, at det ikke kan sælges.",
+          "de": "Schon ein kleiner Fehler bedeutet, dass es sich nicht verkauft.",
+          "el": "Ακόμα και ένα μικρό ελάττωμα σημαίνει ότι δεν θα πουληθεί.",
+          "es": "Aunque sea un pequeño defecto, no se vende.",
+          "fi": "Pienikin vika tarkoittaa, ettei se mene kaupaksi.",
+          "fr": "Même un petit défaut veut dire que ça ne se vend pas.",
+          "he": "אפילו פגם קטן אומר שזה לא יימכר.",
+          "hi": "एक छोटी-सी खराबी भी हो, तो वह नहीं बिकेगा।",
+          "hu": "Még egy kis hiba is azt jelenti, hogy nem kel el.",
+          "id": "Bahkan cacat kecil berarti barang itu tidak akan laku.",
+          "it": "Anche un piccolo difetto significa che non si vende.",
+          "ko": "작은 결함이라도 있으면 안 팔려요.",
+          "nb": "Selv en liten feil betyr at den ikke selges.",
+          "nl": "Zelfs een klein gebrek betekent dat het niet verkoopt.",
+          "pl": "Nawet mała wada oznacza, że się nie sprzeda.",
+          "pt": "Até um pequeno defeito faz com que não venda.",
+          "ro": "Chiar și un defect mic înseamnă că nu se vinde.",
+          "ru": "Даже маленький дефект значит, что это не продастся.",
+          "sv": "Även ett litet fel betyder att den inte säljs.",
+          "tr": "Küçük bir kusur bile onun satılmaması demektir.",
+          "uk": "Навіть маленький дефект означає, що це не продасться.",
+          "vi": "Chỉ một lỗi nhỏ thôi cũng khiến nó không bán được.",
+          "yue": "就算係一個細小缺陷，都賣唔出。",
+          "zh-Hans": "即使是小缺陷，也卖不出去。"
+        },
+        "proposed_sentence": "小さな欠陥でもあれば、売れません。",
+        "proposed_translations": {
+          "en": "Even a small defect means it won't sell.",
+          "ar": "حتى العيب الصغير يعني أنه لن يُباع.",
+          "cs": "I malá vada znamená, že se to neprodá.",
+          "da": "Selv en lille fejl betyder, at det ikke kan sælges.",
+          "de": "Schon ein kleiner Fehler bedeutet, dass es sich nicht verkauft.",
+          "el": "Ακόμα και ένα μικρό ελάττωμα σημαίνει ότι δεν θα πουληθεί.",
+          "es": "Incluso un pequeño defecto basta para que no se venda.",
+          "fi": "Pienikin vika tarkoittaa, ettei se mene kaupaksi.",
+          "fr": "Même un petit défaut veut dire que ça ne se vend pas.",
+          "he": "אפילו פגם קטן אומר שזה לא יימכר.",
+          "hi": "एक छोटी-सी खराबी भी हो, तो वह नहीं बिकेगा।",
+          "hu": "Még egy kis hiba is azt jelenti, hogy nem kel el.",
+          "id": "Bahkan cacat kecil berarti barang itu tidak akan laku.",
+          "it": "Anche un piccolo difetto significa che non si vende.",
+          "ko": "작은 결함이라도 있으면 안 팔려요.",
+          "nb": "Selv en liten feil betyr at den ikke selges.",
+          "nl": "Zelfs een klein gebrek betekent dat het product niet wordt verkocht.",
+          "pl": "Nawet mała wada oznacza, że się nie sprzeda.",
+          "pt": "Até um pequeno defeito faz com que o produto não seja vendido.",
+          "ro": "Chiar și un defect mic înseamnă că nu se vinde.",
+          "ru": "Даже небольшой дефект означает, что товар не продадут.",
+          "sv": "Även ett litet fel betyder att den inte säljs.",
+          "tr": "Küçük bir kusur bile onun satılmaması demektir.",
+          "uk": "Навіть невеликий дефект означає, що виріб не продадуть.",
+          "vi": "Chỉ một lỗi nhỏ thôi cũng khiến nó không bán được.",
+          "yue": "就算係一個細小缺陷，都賣唔出。",
+          "zh-Hans": "即使是小缺陷，也卖不出去。"
+        },
+        "old_ruby_source": "小[ちい]さな欠陥[けっかん]でも、売[う]れません。",
+        "proposed_ruby_source": "小[ちい]さな欠陥[けっかん]でもあれば、売[う]れません。",
+        "old_japanese": "小さな欠陥でも、売れません。",
+        "old_english": "Even a small defect means it won't sell.",
+        "proposed_japanese": "小さな欠陥でもあれば、売れません。",
+        "proposed_english": "Even a small defect means it won't sell.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "ja",
+          "sentence": "小さな欠陥でもあれば、売れません。",
+          "tokens": [
+            {
+              "surface": "小さな",
+              "lemma": "小さな",
+              "pos": "連体詞/*/*/*/*/*",
+              "upos": "DET",
+              "xpos": "連体詞",
+              "feats": {},
+              "start": 0,
+              "end": 3,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "ちいさな",
+              "ruby_text": "小[ちい]さな",
+              "ruby_spans": [
+                {
+                  "base": "小",
+                  "reading": "ちい",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "ちいさな",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "欠陥",
+              "lemma": "欠陥",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 3,
+              "end": 5,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "けっかん",
+              "ruby_text": "欠陥[けっかん]",
+              "ruby_spans": [
+                {
+                  "base": "欠陥",
+                  "reading": "けっかん",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "けっかん",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "で",
+              "lemma": "で",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 5,
+              "end": 6,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "で",
+              "ruby_text": "で",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "で"
+            },
+            {
+              "surface": "も",
+              "lemma": "も",
+              "pos": "助詞/係助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 6,
+              "end": 7,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "も",
+              "ruby_text": "も",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "も"
+            },
+            {
+              "surface": "あれ",
+              "lemma": "ある",
+              "pos": "動詞/非自立可能/*/*/五段-ラ行/仮定形-一般",
+              "upos": "VERB",
+              "xpos": "動詞",
+              "feats": {},
+              "start": 7,
+              "end": 9,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "あれ",
+              "ruby_text": "あれ",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "あれ"
+            },
+            {
+              "surface": "ば",
+              "lemma": "ば",
+              "pos": "助詞/接続助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 9,
+              "end": 10,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "ば",
+              "ruby_text": "ば",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "ば"
+            },
+            {
+              "surface": "、",
+              "lemma": "、",
+              "pos": "補助記号/読点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 10,
+              "end": 11,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "、",
+              "ruby_text": "、",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "、"
+            },
+            {
+              "surface": "売れ",
+              "lemma": "売れる",
+              "pos": "動詞/一般/*/*/下一段-ラ行/連用形-一般",
+              "upos": "VERB",
+              "xpos": "動詞",
+              "feats": {},
+              "start": 11,
+              "end": 13,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "うれ",
+              "ruby_text": "売[う]れ",
+              "ruby_spans": [
+                {
+                  "base": "売",
+                  "reading": "う",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "うれ",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "ませ",
+              "lemma": "ます",
+              "pos": "助動詞/*/*/*/助動詞-マス/未然形-一般",
+              "upos": "AUX",
+              "xpos": "助動詞",
+              "feats": {},
+              "start": 13,
+              "end": 15,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "ませ",
+              "ruby_text": "ませ",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "ませ"
+            },
+            {
+              "surface": "ん",
+              "lemma": "ぬ",
+              "pos": "助動詞/*/*/*/助動詞-ヌ/終止形-撥音便",
+              "upos": "AUX",
+              "xpos": "助動詞",
+              "feats": {},
+              "start": 15,
+              "end": 16,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "ん",
+              "ruby_text": "ん",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "ん"
+            },
+            {
+              "surface": "。",
+              "lemma": "。",
+              "pos": "補助記号/句点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 16,
+              "end": 17,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "。",
+              "ruby_text": "。",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "。"
+            }
+          ],
+          "reading": "ちいさなけっかんでもあれば、うれません。",
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "warnings": [
+            "mediawiki ruby hints applied"
+          ]
+        },
+        "generated_tokens": [
+          {
+            "surface": "小さな",
+            "lemma": "小さな",
+            "pos": "連体詞/*/*/*/*/*",
+            "upos": "DET",
+            "xpos": "連体詞",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ちいさな",
+            "ruby_text": "小[ちい]さな",
+            "ruby_spans": [
+              {
+                "base": "小",
+                "reading": "ちい",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "ちいさな",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "欠陥",
+            "lemma": "欠陥",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 3,
+            "end": 5,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "けっかん",
+            "ruby_text": "欠陥[けっかん]",
+            "ruby_spans": [
+              {
+                "base": "欠陥",
+                "reading": "けっかん",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "けっかん",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "で",
+            "lemma": "で",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 5,
+            "end": 6,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "で",
+            "ruby_text": "で",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "で"
+          },
+          {
+            "surface": "も",
+            "lemma": "も",
+            "pos": "助詞/係助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 6,
+            "end": 7,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "も",
+            "ruby_text": "も",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "も"
+          },
+          {
+            "surface": "あれ",
+            "lemma": "ある",
+            "pos": "動詞/非自立可能/*/*/五段-ラ行/仮定形-一般",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 7,
+            "end": 9,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "あれ",
+            "ruby_text": "あれ",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "あれ"
+          },
+          {
+            "surface": "ば",
+            "lemma": "ば",
+            "pos": "助詞/接続助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 9,
+            "end": 10,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ば",
+            "ruby_text": "ば",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "ば"
+          },
+          {
+            "surface": "、",
+            "lemma": "、",
+            "pos": "補助記号/読点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 10,
+            "end": 11,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "、",
+            "ruby_text": "、",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "、"
+          },
+          {
+            "surface": "売れ",
+            "lemma": "売れる",
+            "pos": "動詞/一般/*/*/下一段-ラ行/連用形-一般",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 11,
+            "end": 13,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "うれ",
+            "ruby_text": "売[う]れ",
+            "ruby_spans": [
+              {
+                "base": "売",
+                "reading": "う",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "うれ",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "ませ",
+            "lemma": "ます",
+            "pos": "助動詞/*/*/*/助動詞-マス/未然形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 13,
+            "end": 15,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ませ",
+            "ruby_text": "ませ",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "ませ"
+          },
+          {
+            "surface": "ん",
+            "lemma": "ぬ",
+            "pos": "助動詞/*/*/*/助動詞-ヌ/終止形-撥音便",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 15,
+            "end": 16,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ん",
+            "ruby_text": "ん",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "ん"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 16,
+            "end": 17,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
+          }
+        ],
+        "generated_reading": "ちいさなけっかんでもあれば、うれません。",
+        "analyzer": "sudachipy_sudachidict_core_c",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-18T17:38:56Z",
+        "updated_utc": "2026-10-18T17:40:40Z",
+        "applied_utc": "2026-10-18T17:40:40Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-18T17:40:40Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -814,12 +1377,6 @@
       "そのあんにはけっかんがある。",
       "てんけんでけっかんをみつけた。",
       "ちいさなけっかんでも、うれません。"
-    ],
-    "en": [
-      "This toy has a defect.",
-      "That plan has a flaw.",
-      "I found a defect during the inspection.",
-      "Even a small defect means it won't sell."
     ],
     "generation": {
       "generator": "vocomipedia_source_generator.py",
@@ -858,190 +1415,6 @@
         "parts_of_speech": "Noun"
       }
     },
-    "word_en": "defect; fault; flaw; deformity; deficiency; shortage; gap",
-    "word_es": "defecto",
-    "word_fr": "défaut",
-    "word_de": "Defekt",
-    "word_it": "difetto",
-    "word_ko": "결함",
-    "word_zh-Hans": "缺陷",
-    "word_yue": "缺陷",
-    "word_ru": "дефект",
-    "word_pt": "defeito",
-    "word_he": "פגם",
-    "word_tr": "kusur",
-    "word_vi": "khuyết tật",
-    "word_ar": "عيب",
-    "word_nl": "defect",
-    "word_uk": "дефект",
-    "word_hu": "hiba",
-    "word_hi": "दोष",
-    "word_pl": "wada",
-    "word_el": "ελάττωμα",
-    "word_nb": "defekt",
-    "word_id": "cacat",
-    "word_sv": "defekt",
-    "word_ro": "defect",
-    "word_cs": "vada",
-    "word_da": "defekt",
-    "word_fi": "vika",
-    "word_ja": "けっかん",
-    "ar": [
-      "هذه اللعبة بها عيب.",
-      "تلك الخطة بها خلل.",
-      "وجدت عيبًا أثناء الفحص.",
-      "حتى العيب الصغير يعني أنه لن يُباع."
-    ],
-    "cs": [
-      "Tato hračka má vadu.",
-      "Ten plán má chybu.",
-      "Při kontrole jsem našel závadu.",
-      "I malá vada znamená, že se to neprodá."
-    ],
-    "da": [
-      "Det her legetøj har en fejl.",
-      "Den plan har en fejl.",
-      "Jeg fandt en fejl under kontrollen.",
-      "Selv en lille fejl betyder, at det ikke kan sælges."
-    ],
-    "de": [
-      "Dieses Spielzeug hat einen Fehler.",
-      "Der Plan hat einen Fehler.",
-      "Ich habe bei der Kontrolle einen Mangel gefunden.",
-      "Schon ein kleiner Fehler bedeutet, dass es sich nicht verkauft."
-    ],
-    "el": [
-      "Αυτό το παιχνίδι έχει ελάττωμα.",
-      "Αυτό το σχέδιο έχει ένα ελάττωμα.",
-      "Βρήκα ένα ελάττωμα κατά τον έλεγχο.",
-      "Ακόμα και ένα μικρό ελάττωμα σημαίνει ότι δεν θα πουληθεί."
-    ],
-    "es": [
-      "Este juguete tiene un defecto.",
-      "Ese plan tiene un fallo.",
-      "Encontré un defecto durante la inspección.",
-      "Aunque sea un pequeño defecto, no se vende."
-    ],
-    "fi": [
-      "Tässä lelussa on vika.",
-      "Tuossa suunnitelmassa on vika.",
-      "Löysin vian tarkastuksessa.",
-      "Pienikin vika tarkoittaa, ettei se mene kaupaksi."
-    ],
-    "fr": [
-      "Ce jouet a un défaut.",
-      "Ce plan a un défaut.",
-      "J'ai trouvé un défaut pendant l'inspection.",
-      "Même un petit défaut veut dire que ça ne se vend pas."
-    ],
-    "he": [
-      "יש פגם בצעצוע הזה.",
-      "בתוכנית הזאת יש פגם.",
-      "מצאתי פגם במהלך הבדיקה.",
-      "אפילו פגם קטן אומר שזה לא יימכר."
-    ],
-    "hi": [
-      "इस खिलौने में एक खराबी है।",
-      "उस योजना में एक खामी है।",
-      "मुझे जांच के दौरान एक खराबी मिली।",
-      "एक छोटी-सी खराबी भी हो, तो वह नहीं बिकेगा।"
-    ],
-    "hu": [
-      "Ennek a játéknak hibája van.",
-      "Ennek a tervnek van egy hibája.",
-      "Az ellenőrzés során találtam egy hibát.",
-      "Még egy kis hiba is azt jelenti, hogy nem kel el."
-    ],
-    "id": [
-      "Mainan ini ada cacat.",
-      "Rencana itu ada kekurangan.",
-      "Saya menemukan cacat saat pemeriksaan.",
-      "Bahkan cacat kecil berarti barang itu tidak akan laku."
-    ],
-    "it": [
-      "Questo giocattolo ha un difetto.",
-      "Quel piano ha un difetto.",
-      "Ho trovato un difetto durante il controllo.",
-      "Anche un piccolo difetto significa che non si vende."
-    ],
-    "ko": [
-      "이 장난감에는 결함이 있어요.",
-      "그 계획에는 결함이 있어요.",
-      "점검 중에 결함을 발견했어요.",
-      "작은 결함이라도 있으면 안 팔려요."
-    ],
-    "nb": [
-      "Denne leken har en feil.",
-      "Den planen har en svakhet.",
-      "Jeg fant en feil under kontrollen.",
-      "Selv en liten feil betyr at den ikke selges."
-    ],
-    "nl": [
-      "Dit speelgoed heeft een gebrek.",
-      "Dat plan heeft een fout.",
-      "Ik heb tijdens de inspectie een gebrek gevonden.",
-      "Zelfs een klein gebrek betekent dat het niet verkoopt."
-    ],
-    "pl": [
-      "Ta zabawka ma wadę.",
-      "Ten plan ma wadę.",
-      "Znalazłem wadę podczas kontroli.",
-      "Nawet mała wada oznacza, że się nie sprzeda."
-    ],
-    "pt": [
-      "Este brinquedo tem um defeito.",
-      "Esse plano tem um defeito.",
-      "Encontrei um defeito durante a inspeção.",
-      "Até um pequeno defeito faz com que não venda."
-    ],
-    "ro": [
-      "Această jucărie are un defect.",
-      "Planul acela are un defect.",
-      "Am găsit un defect în timpul inspecției.",
-      "Chiar și un defect mic înseamnă că nu se vinde."
-    ],
-    "ru": [
-      "В этой игрушке есть дефект.",
-      "В этом плане есть недостаток.",
-      "Я нашёл дефект во время проверки.",
-      "Даже маленький дефект значит, что это не продастся."
-    ],
-    "sv": [
-      "Den här leksaken har ett fel.",
-      "Den där planen har en brist.",
-      "Jag hittade ett fel under kontrollen.",
-      "Även ett litet fel betyder att den inte säljs."
-    ],
-    "tr": [
-      "Bu oyuncakta bir kusur var.",
-      "Şu planda bir kusur var.",
-      "Kontrol sırasında bir kusur buldum.",
-      "Küçük bir kusur bile onun satılmaması demektir."
-    ],
-    "uk": [
-      "У цій іграшці є дефект.",
-      "У тому плані є вада.",
-      "Під час перевірки я знайшов дефект.",
-      "Навіть маленький дефект означає, що це не продасться."
-    ],
-    "vi": [
-      "Món đồ chơi này có lỗi.",
-      "Kế hoạch đó có một khuyết điểm.",
-      "Tôi đã tìm ra một lỗi trong lúc kiểm tra.",
-      "Chỉ một lỗi nhỏ thôi cũng khiến nó không bán được."
-    ],
-    "yue": [
-      "呢個玩具有缺陷。",
-      "嗰個計劃有缺陷。",
-      "我喺檢查期間發現咗缺陷。",
-      "就算係一個細小缺陷，都賣唔出。"
-    ],
-    "zh-Hans": [
-      "这个玩具有缺陷。",
-      "那个方案有缺陷。",
-      "我在检查时发现了缺陷。",
-      "即使是小缺陷，也卖不出去。"
-    ],
     "pos_analysis": [
       {
         "sentence": "このおもちゃには欠陥があります。",
@@ -1488,7 +1861,7 @@
         "difficulty_aggregated": null
       },
       {
-        "sentence": "小さな欠陥でも、売れません。",
+        "sentence": "小さな欠陥でもあれば、売れません。",
         "tokens": [
           {
             "surface": "小さな",
@@ -1510,8 +1883,9 @@
                 "length": 1
               }
             ],
-            "ruby_confidence": "high",
-            "furigana": "ちいさな"
+            "ruby_confidence": "reviewed",
+            "furigana": "ちいさな",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "欠陥",
@@ -1533,8 +1907,9 @@
                 "length": 2
               }
             ],
-            "ruby_confidence": "medium",
-            "furigana": "けっかん"
+            "ruby_confidence": "reviewed",
+            "furigana": "けっかん",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "で",
@@ -1569,14 +1944,46 @@
             "furigana": "も"
           },
           {
+            "surface": "あれ",
+            "lemma": "ある",
+            "pos": "動詞/非自立可能/*/*/五段-ラ行/仮定形-一般",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 7,
+            "end": 9,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "あれ",
+            "ruby_text": "あれ",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "あれ"
+          },
+          {
+            "surface": "ば",
+            "lemma": "ば",
+            "pos": "助詞/接続助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 9,
+            "end": 10,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ば",
+            "ruby_text": "ば",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "ば"
+          },
+          {
             "surface": "、",
             "lemma": "、",
             "pos": "補助記号/読点/*/*/*/*",
             "upos": "PUNCT",
             "xpos": "補助記号",
             "feats": {},
-            "start": 7,
-            "end": 8,
+            "start": 10,
+            "end": 11,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "、",
             "ruby_text": "、",
@@ -1591,8 +1998,8 @@
             "upos": "VERB",
             "xpos": "動詞",
             "feats": {},
-            "start": 8,
-            "end": 10,
+            "start": 11,
+            "end": 13,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "うれ",
             "ruby_text": "売[う]れ",
@@ -1604,8 +2011,9 @@
                 "length": 1
               }
             ],
-            "ruby_confidence": "high",
-            "furigana": "うれ"
+            "ruby_confidence": "reviewed",
+            "furigana": "うれ",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "ませ",
@@ -1614,8 +2022,8 @@
             "upos": "AUX",
             "xpos": "助動詞",
             "feats": {},
-            "start": 10,
-            "end": 12,
+            "start": 13,
+            "end": 15,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "ませ",
             "ruby_text": "ませ",
@@ -1630,8 +2038,8 @@
             "upos": "AUX",
             "xpos": "助動詞",
             "feats": {},
-            "start": 12,
-            "end": 13,
+            "start": 15,
+            "end": 16,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "ん",
             "ruby_text": "ん",
@@ -1646,8 +2054,8 @@
             "upos": "PUNCT",
             "xpos": "補助記号",
             "feats": {},
-            "start": 13,
-            "end": 14,
+            "start": 16,
+            "end": 17,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "。",
             "ruby_text": "。",
@@ -1658,6 +2066,196 @@
         ],
         "difficulty_aggregated": null
       }
+    ],
+    "word_en": "defect; fault; flaw; deformity; deficiency; shortage; gap",
+    "word_es": "defecto",
+    "word_fr": "défaut",
+    "word_de": "Defekt",
+    "word_it": "difetto",
+    "word_ko": "결함",
+    "word_zh-Hans": "缺陷",
+    "word_yue": "缺陷",
+    "word_ru": "дефект",
+    "word_pt": "defeito",
+    "word_he": "פגם",
+    "word_tr": "kusur",
+    "word_vi": "khuyết tật",
+    "word_ar": "عيب",
+    "word_nl": "defect",
+    "word_uk": "дефект",
+    "word_hu": "hiba",
+    "word_hi": "दोष",
+    "word_pl": "wada",
+    "word_el": "ελάττωμα",
+    "word_nb": "defekt",
+    "word_id": "cacat",
+    "word_sv": "defekt",
+    "word_ro": "defect",
+    "word_cs": "vada",
+    "word_da": "defekt",
+    "word_fi": "vika",
+    "word_ja": "欠陥",
+    "ar": [
+      "هذه اللعبة بها عيب.",
+      "تلك الخطة بها خلل.",
+      "وجدت عيبًا أثناء الفحص.",
+      "حتى العيب الصغير يعني أنه لن يُباع."
+    ],
+    "cs": [
+      "Tato hračka má vadu.",
+      "Ten plán má chybu.",
+      "Při kontrole jsem našel závadu.",
+      "I malá vada znamená, že se to neprodá."
+    ],
+    "da": [
+      "Det her legetøj har en fejl.",
+      "Den plan har en fejl.",
+      "Jeg fandt en fejl under kontrollen.",
+      "Selv en lille fejl betyder, at det ikke kan sælges."
+    ],
+    "de": [
+      "Dieses Spielzeug hat einen Fehler.",
+      "Der Plan hat einen Fehler.",
+      "Ich habe bei der Kontrolle einen Mangel gefunden.",
+      "Schon ein kleiner Fehler bedeutet, dass es sich nicht verkauft."
+    ],
+    "el": [
+      "Αυτό το παιχνίδι έχει ελάττωμα.",
+      "Αυτό το σχέδιο έχει ένα ελάττωμα.",
+      "Βρήκα ένα ελάττωμα κατά τον έλεγχο.",
+      "Ακόμα και ένα μικρό ελάττωμα σημαίνει ότι δεν θα πουληθεί."
+    ],
+    "en": [
+      "This toy has a defect.",
+      "That plan has a flaw.",
+      "I found a defect during the inspection.",
+      "Even a small defect means it won't sell."
+    ],
+    "es": [
+      "Este juguete tiene un defecto.",
+      "Ese plan tiene un fallo.",
+      "Encontré un defecto durante la inspección.",
+      "Aunque sea un pequeño defecto, no se vende."
+    ],
+    "fi": [
+      "Tässä lelussa on vika.",
+      "Tuossa suunnitelmassa on vika.",
+      "Löysin vian tarkastuksessa.",
+      "Pienikin vika tarkoittaa, ettei se mene kaupaksi."
+    ],
+    "fr": [
+      "Ce jouet a un défaut.",
+      "Ce plan a un défaut.",
+      "J'ai trouvé un défaut pendant l'inspection.",
+      "Même un petit défaut veut dire que ça ne se vend pas."
+    ],
+    "he": [
+      "יש פגם בצעצוע הזה.",
+      "בתוכנית הזאת יש פגם.",
+      "מצאתי פגם במהלך הבדיקה.",
+      "אפילו פגם קטן אומר שזה לא יימכר."
+    ],
+    "hi": [
+      "इस खिलौने में एक खराबी है।",
+      "उस योजना में एक खामी है।",
+      "मुझे जांच के दौरान एक खराबी मिली।",
+      "एक छोटी-सी खराबी भी हो, तो वह नहीं बिकेगा।"
+    ],
+    "hu": [
+      "Ennek a játéknak hibája van.",
+      "Ennek a tervnek van egy hibája.",
+      "Az ellenőrzés során találtam egy hibát.",
+      "Még egy kis hiba is azt jelenti, hogy nem kel el."
+    ],
+    "id": [
+      "Mainan ini ada cacat.",
+      "Rencana itu ada kekurangan.",
+      "Saya menemukan cacat saat pemeriksaan.",
+      "Bahkan cacat kecil berarti barang itu tidak akan laku."
+    ],
+    "it": [
+      "Questo giocattolo ha un difetto.",
+      "Quel piano ha un difetto.",
+      "Ho trovato un difetto durante il controllo.",
+      "Anche un piccolo difetto significa che non si vende."
+    ],
+    "ko": [
+      "이 장난감에는 결함이 있어요.",
+      "그 계획에는 결함이 있어요.",
+      "점검 중에 결함을 발견했어요.",
+      "작은 결함이라도 있으면 안 팔려요."
+    ],
+    "nb": [
+      "Denne leken har en feil.",
+      "Den planen har en svakhet.",
+      "Jeg fant en feil under kontrollen.",
+      "Selv en liten feil betyr at den ikke selges."
+    ],
+    "nl": [
+      "Dit speelgoed heeft een gebrek.",
+      "Dat plan heeft een fout.",
+      "Ik heb tijdens de inspectie een gebrek gevonden.",
+      "Zelfs een klein gebrek betekent dat het niet verkoopt."
+    ],
+    "pl": [
+      "Ta zabawka ma wadę.",
+      "Ten plan ma wadę.",
+      "Znalazłem wadę podczas kontroli.",
+      "Nawet mała wada oznacza, że się nie sprzeda."
+    ],
+    "pt": [
+      "Este brinquedo tem um defeito.",
+      "Esse plano tem um defeito.",
+      "Encontrei um defeito durante a inspeção.",
+      "Até um pequeno defeito faz com que não venda."
+    ],
+    "ro": [
+      "Această jucărie are un defect.",
+      "Planul acela are un defect.",
+      "Am găsit un defect în timpul inspecției.",
+      "Chiar și un defect mic înseamnă că nu se vinde."
+    ],
+    "ru": [
+      "В этой игрушке есть дефект.",
+      "В этом плане есть недостаток.",
+      "Я нашёл дефект во время проверки.",
+      "Даже маленький дефект значит, что это не продастся."
+    ],
+    "sv": [
+      "Den här leksaken har ett fel.",
+      "Den där planen har en brist.",
+      "Jag hittade ett fel under kontrollen.",
+      "Även ett litet fel betyder att den inte säljs."
+    ],
+    "tr": [
+      "Bu oyuncakta bir kusur var.",
+      "Şu planda bir kusur var.",
+      "Kontrol sırasında bir kusur buldum.",
+      "Küçük bir kusur bile onun satılmaması demektir."
+    ],
+    "uk": [
+      "У цій іграшці є дефект.",
+      "У тому плані є вада.",
+      "Під час перевірки я знайшов дефект.",
+      "Навіть маленький дефект означає, що це не продасться."
+    ],
+    "vi": [
+      "Món đồ chơi này có lỗi.",
+      "Kế hoạch đó có một khuyết điểm.",
+      "Tôi đã phát hiện một khuyết điểm trong lúc kiểm tra.",
+      "Chỉ một lỗi nhỏ thôi cũng khiến nó không bán được."
+    ],
+    "yue": [
+      "呢個玩具有缺陷。",
+      "嗰個計劃有缺陷。",
+      "我喺檢查期間發現咗缺陷。",
+      "就算係一個細小缺陷，都賣唔出。"
+    ],
+    "zh-Hans": [
+      "这个玩具有缺陷。",
+      "那个方案有缺陷。",
+      "我在检查时发现了缺陷。",
+      "即使是小缺陷，也卖不出去。"
     ]
   }
 }

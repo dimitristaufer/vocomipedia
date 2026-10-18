@@ -248,10 +248,10 @@
       "difficulty": 5.25
     },
     {
-      "target": "Meine Uhr ist digital und mit Licht.",
+      "target": "Meine Uhr ist digital und hat eine Beleuchtung.",
       "reading": "/ˈmaɪ̯nə uːɐ̯ ɪst diɡiˈtaːl ʊnt mɪt lɪçt./",
       "translations": {
-        "de": "Meine Uhr ist digital und mit Licht.",
+        "de": "Meine Uhr ist digital und hat eine Beleuchtung.",
         "ipa": "/ˈmaɪ̯nə uːɐ̯ ɪst diɡiˈtaːl ʊnt mɪt lɪçt./",
         "en": "My watch is digital and has a light.",
         "es": "Mi reloj es digital y tiene luz.",
@@ -276,7 +276,7 @@
         "id": "Jam saya digital dan punya lampu.",
         "sv": "Min klocka är digital och har ljus.",
         "ro": "Ceasul meu este digital și are lumină.",
-        "cs": "Moje hodinky jsou digitální и mají světлo.",
+        "cs": "Moje hodinky jsou digitální a mají světlo.",
         "da": "Mit ur er digitalt og har lys.",
         "fi": "Kelloni on digitaalinen ja siinä on valo.",
         "ja": "私の時計はデジタルで、ライトがついています。"
@@ -284,76 +284,112 @@
       "tokens": [
         {
           "surface": "Meine",
-          "surface_en": "my",
-          "furigana": "[ˈmaɪ̯nə]",
-          "pos": "DET",
           "lemma": "mein",
-          "explanation": "Possessive determiner, nominative singular feminine; modifies 'Uhr'.",
-          "difficulty": 7
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "PPOSAT",
+          "feats": {},
+          "start": 0,
+          "end": 5,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "Uhr",
-          "surface_en": "watch",
-          "furigana": "[uːɐ̯]",
-          "pos": "NOUN",
           "lemma": "Uhr",
-          "explanation": "Common noun, feminine; subject of the copular verb 'ist'.",
-          "difficulty": 4
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 6,
+          "end": 9,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "ist",
-          "surface_en": "is",
-          "furigana": "[ɪst]",
-          "pos": "AUX",
           "lemma": "sein",
-          "explanation": "Copular auxiliary, present indicative, 3rd person singular; links the subject to predicate complements.",
-          "difficulty": 4
+          "pos": "AUX",
+          "upos": "AUX",
+          "xpos": "VAFIN",
+          "feats": {},
+          "start": 10,
+          "end": 13,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "digital",
-          "surface_en": "digital",
-          "furigana": "[diɡiˈtaːl]",
-          "pos": "ADJ",
           "lemma": "digital",
-          "explanation": "Predicative adjective complement to 'ist', describing the subject 'Uhr'.",
-          "difficulty": 10,
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "ADJD",
+          "feats": {},
+          "start": 14,
+          "end": 21,
+          "analyzer": "spacy_de_core_news_lg",
           "is_main_word": true
         },
         {
           "surface": "und",
-          "surface_en": "and",
-          "furigana": "[ʊnt]",
-          "pos": "CCONJ",
           "lemma": "und",
-          "explanation": "Coordinating conjunction; links the predicative adjective with the PP 'mit Licht'.",
-          "difficulty": 2
+          "pos": "CCONJ",
+          "upos": "CCONJ",
+          "xpos": "KON",
+          "feats": {},
+          "start": 22,
+          "end": 25,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "mit",
-          "surface_en": "with",
-          "furigana": "[mɪt]",
-          "pos": "ADP",
-          "lemma": "mit",
-          "explanation": "Preposition governing dative; introduces a PP indicating an accompanying feature.",
-          "difficulty": 2
+          "surface": "hat",
+          "lemma": "haben",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VAFIN",
+          "feats": {},
+          "start": 26,
+          "end": 29,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "Licht.",
-          "surface_en": "light",
-          "furigana": "[lɪçt]",
+          "surface": "eine",
+          "lemma": "ein",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "ART",
+          "feats": {},
+          "start": 30,
+          "end": 34,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "Beleuchtung",
+          "lemma": "Beleuchtung",
           "pos": "NOUN",
-          "lemma": "Licht",
-          "explanation": "Common noun, neuter, dative singular (form identical to nominative); object of 'mit', indicating the feature.",
-          "difficulty": 7
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 35,
+          "end": 46,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 46,
+          "end": 47,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 5.14
     },
     {
-      "target": "Der Unterricht läuft digital seit letzter Woche.",
+      "target": "Der Unterricht läuft seit letzter Woche digital.",
       "reading": "/deːɐ̯ ˈʊntɐʁɪçt lɔɪ̯ft diɡiˈtaːl zaɪ̯t ˈlɛtstɐ ˈvɔxə./",
       "translations": {
-        "de": "Der Unterricht läuft digital seit letzter Woche.",
+        "de": "Der Unterricht läuft seit letzter Woche digital.",
         "ipa": "/deːɐ̯ ˈʊntɐʁɪçt lɔɪ̯ft diɡiˈtaːl zaɪ̯t ˈlɛtstɐ ˈvɔxə./",
         "en": "Classes have been digital since last week.",
         "es": "Desde la semana pasada, las clases son online.",
@@ -386,67 +422,92 @@
       "tokens": [
         {
           "surface": "Der",
-          "surface_en": "the",
-          "furigana": "[deːɐ̯]",
-          "pos": "DET",
           "lemma": "der",
-          "explanation": "Definite article, nominative singular masculine; determiner of 'Unterricht'.",
-          "difficulty": 2
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "ART",
+          "feats": {},
+          "start": 0,
+          "end": 3,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "Unterricht",
-          "surface_en": "instruction",
-          "furigana": "[ˈʊntɐʁɪçt]",
-          "pos": "NOUN",
           "lemma": "Unterricht",
-          "explanation": "Common noun, masculine; subject of the intransitive verb 'läuft'.",
-          "difficulty": 10
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 4,
+          "end": 14,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "läuft",
-          "surface_en": "runs",
-          "furigana": "[lɔʏft]",
-          "pos": "VERB",
           "lemma": "laufen",
-          "explanation": "Finite main verb, present indicative, 3rd person singular; predicate meaning 'operates/runs'.",
-          "difficulty": 7
-        },
-        {
-          "surface": "digital",
-          "surface_en": "digitally",
-          "furigana": "[diɡiˈtaːl]",
-          "pos": "ADV",
-          "lemma": "digital",
-          "explanation": "Adverb of manner modifying 'läuft'; indicates the mode of instruction.",
-          "difficulty": 10,
-          "is_main_word": true
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VVFIN",
+          "feats": {},
+          "start": 15,
+          "end": 20,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "seit",
-          "surface_en": "since",
-          "furigana": "[zaɪ̯t]",
-          "pos": "ADP",
           "lemma": "seit",
-          "explanation": "Preposition governing dative; introduces a temporal PP marking the starting point.",
-          "difficulty": 7
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "APPR",
+          "feats": {},
+          "start": 21,
+          "end": 25,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "letzter",
-          "surface_en": "last",
-          "furigana": "[ˈlɛtstɐ]",
+          "lemma": "letzter",
           "pos": "ADJ",
-          "lemma": "letzt",
-          "explanation": "Attributive adjective, dative singular feminine (strong inflection); modifies 'Woche'.",
-          "difficulty": 10
+          "upos": "ADJ",
+          "xpos": "ADJA",
+          "feats": {},
+          "start": 26,
+          "end": 33,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "Woche.",
-          "surface_en": "week",
-          "furigana": "[ˈvɔxə]",
-          "pos": "NOUN",
+          "surface": "Woche",
           "lemma": "Woche",
-          "explanation": "Common noun, feminine, dative singular; object of the preposition 'seit', expressing the time frame.",
-          "difficulty": 7
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 34,
+          "end": 39,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "digital",
+          "lemma": "digital",
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "ADJD",
+          "feats": {},
+          "start": 40,
+          "end": 47,
+          "analyzer": "spacy_de_core_news_lg",
+          "is_main_word": true
+        },
+        {
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 47,
+          "end": 48,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 7.57
@@ -463,8 +524,625 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-14T22:38:37Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:De b1/31fd5f5f0ebe7fdb",
+      "revision_id": 85876,
+      "parent_revision_id": 15662,
+      "revision_timestamp_utc": "2026-10-14T22:38:37Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Suggest content corrections",
+      "pulled_utc": "2026-10-17T07:06:37Z",
+      "applied_utc": "2026-10-17T07:06:52Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-7ea3b98e1d5e7b2c",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_b1:31fd5f5f0ebe7fdb",
+        "pack_code": "de_b1",
+        "entry_id": "digital",
+        "language": "de",
+        "sentence_index": 3,
+        "old_sentence": "Meine Uhr ist digital und mit Licht.",
+        "old_translations": {
+          "de": "Meine Uhr ist digital und mit Licht.",
+          "ipa": "/ˈmaɪ̯nə uːɐ̯ ɪst diɡiˈtaːl ʊnt mɪt lɪçt./",
+          "en": "My watch is digital and has a light.",
+          "es": "Mi reloj es digital y tiene luz.",
+          "fr": "Ma montre est numérique et elle s’éclaire.",
+          "it": "Il mio orologio è digitale e ha la luce.",
+          "ko": "제 시계는 디지털이고 불빛이 있어요.",
+          "zh-Hans": "我的手表是数码的，而且有灯光。",
+          "yue": "我隻錶係數碼嘅，仲有燈。",
+          "ru": "Мои часы цифровые и с подсветкой.",
+          "pt": "Meu relógio é digital e tem luz.",
+          "he": "השעון שלי דיגיטלי ויש בו תאורה.",
+          "tr": "Saatim dijital ve ışığı var.",
+          "vi": "Đồng hồ của tôi là điện tử và có đèn.",
+          "ar": "ساعتي رقمية وبها ضوء.",
+          "nl": "Mijn horloge is digitaal en heeft verlichting.",
+          "uk": "Мій годинник цифровий і з підсвіткою.",
+          "hu": "Az órám digitális és van benne világítás.",
+          "hi": "मेरी घड़ी डिजिटल है और इसमें लाइट है.",
+          "pl": "Mój zegarek jest cyfrowy i ma podświetlenie.",
+          "el": "Το ρολόι μου είναι ψηφιακό και έχει φωτισμό.",
+          "nb": "Klokka mi er digital og har lys.",
+          "id": "Jam saya digital dan punya lampu.",
+          "sv": "Min klocka är digital och har ljus.",
+          "ro": "Ceasul meu este digital și are lumină.",
+          "cs": "Moje hodinky jsou digitální и mají světлo.",
+          "da": "Mit ur er digitalt og har lys.",
+          "fi": "Kelloni on digitaalinen ja siinä on valo.",
+          "ja": "私の時計はデジタルで、ライトがついています。"
+        },
+        "proposed_sentence": "Meine Uhr ist digital und hat eine Beleuchtung.",
+        "proposed_translations": {
+          "de": "Meine Uhr ist digital und hat eine Beleuchtung.",
+          "ipa": "/ˈmaɪ̯nə uːɐ̯ ɪst diɡiˈtaːl ʊnt mɪt lɪçt./",
+          "en": "My watch is digital and has a light.",
+          "es": "Mi reloj es digital y tiene luz.",
+          "fr": "Ma montre est numérique et elle s’éclaire.",
+          "it": "Il mio orologio è digitale e ha la luce.",
+          "ko": "제 시계는 디지털이고 불빛이 있어요.",
+          "zh-Hans": "我的手表是数码的，而且有灯光。",
+          "yue": "我隻錶係數碼嘅，仲有燈。",
+          "ru": "Мои часы цифровые и с подсветкой.",
+          "pt": "Meu relógio é digital e tem luz.",
+          "he": "השעון שלי דיגיטלי ויש בו תאורה.",
+          "tr": "Saatim dijital ve ışığı var.",
+          "vi": "Đồng hồ của tôi là điện tử và có đèn.",
+          "ar": "ساعتي رقمية وبها ضوء.",
+          "nl": "Mijn horloge is digitaal en heeft verlichting.",
+          "uk": "Мій годинник цифровий і з підсвіткою.",
+          "hu": "Az órám digitális és van benne világítás.",
+          "hi": "मेरी घड़ी डिजिटल है और इसमें लाइट है.",
+          "pl": "Mój zegarek jest cyfrowy i ma podświetlenie.",
+          "el": "Το ρολόι μου είναι ψηφιακό και έχει φωτισμό.",
+          "nb": "Klokka mi er digital og har lys.",
+          "id": "Jam saya digital dan punya lampu.",
+          "sv": "Min klocka är digital och har ljus.",
+          "ro": "Ceasul meu este digital și are lumină.",
+          "cs": "Moje hodinky jsou digitální a mají světlo.",
+          "da": "Mit ur er digitalt og har lys.",
+          "fi": "Kelloni on digitaalinen ja siinä on valo.",
+          "ja": "私の時計はデジタルで、ライトがついています。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Meine Uhr ist digital und hat eine Beleuchtung.",
+        "old_japanese": "Meine Uhr ist digital und mit Licht.",
+        "old_english": "My watch is digital and has a light.",
+        "proposed_japanese": "Meine Uhr ist digital und hat eine Beleuchtung.",
+        "proposed_english": "My watch is digital and has a light.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Meine Uhr ist digital und hat eine Beleuchtung.",
+          "tokens": [
+            {
+              "surface": "Meine",
+              "lemma": "mein",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "PPOSAT",
+              "feats": {},
+              "start": 0,
+              "end": 5,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Uhr",
+              "lemma": "Uhr",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 6,
+              "end": 9,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "ist",
+              "lemma": "sein",
+              "pos": "AUX",
+              "upos": "AUX",
+              "xpos": "VAFIN",
+              "feats": {},
+              "start": 10,
+              "end": 13,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "digital",
+              "lemma": "digital",
+              "pos": "ADV",
+              "upos": "ADV",
+              "xpos": "ADJD",
+              "feats": {},
+              "start": 14,
+              "end": 21,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "und",
+              "lemma": "und",
+              "pos": "CCONJ",
+              "upos": "CCONJ",
+              "xpos": "KON",
+              "feats": {},
+              "start": 22,
+              "end": 25,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "hat",
+              "lemma": "haben",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VAFIN",
+              "feats": {},
+              "start": 26,
+              "end": 29,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "eine",
+              "lemma": "ein",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "ART",
+              "feats": {},
+              "start": 30,
+              "end": 34,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Beleuchtung",
+              "lemma": "Beleuchtung",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 35,
+              "end": 46,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 46,
+              "end": 47,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Meine",
+            "lemma": "mein",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "PPOSAT",
+            "feats": {},
+            "start": 0,
+            "end": 5,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Uhr",
+            "lemma": "Uhr",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 6,
+            "end": 9,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "ist",
+            "lemma": "sein",
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "VAFIN",
+            "feats": {},
+            "start": 10,
+            "end": 13,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "digital",
+            "lemma": "digital",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADJD",
+            "feats": {},
+            "start": 14,
+            "end": 21,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "und",
+            "lemma": "und",
+            "pos": "CCONJ",
+            "upos": "CCONJ",
+            "xpos": "KON",
+            "feats": {},
+            "start": 22,
+            "end": 25,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "hat",
+            "lemma": "haben",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VAFIN",
+            "feats": {},
+            "start": 26,
+            "end": 29,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "eine",
+            "lemma": "ein",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 30,
+            "end": 34,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Beleuchtung",
+            "lemma": "Beleuchtung",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 35,
+            "end": 46,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 46,
+            "end": 47,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:06:37Z",
+        "updated_utc": "2026-10-17T07:07:05Z",
+        "applied_utc": "2026-10-17T07:07:05Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      },
+      {
+        "id": "sentprop-89fe4c9920ef313a",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_b1:31fd5f5f0ebe7fdb",
+        "pack_code": "de_b1",
+        "entry_id": "digital",
+        "language": "de",
+        "sentence_index": 4,
+        "old_sentence": "Der Unterricht läuft digital seit letzter Woche.",
+        "old_translations": {
+          "de": "Der Unterricht läuft digital seit letzter Woche.",
+          "ipa": "/deːɐ̯ ˈʊntɐʁɪçt lɔɪ̯ft diɡiˈtaːl zaɪ̯t ˈlɛtstɐ ˈvɔxə./",
+          "en": "Classes have been digital since last week.",
+          "es": "Desde la semana pasada, las clases son online.",
+          "fr": "Depuis la semaine dernière, les cours sont en ligne.",
+          "it": "Dalla settimana scorsa le lezioni sono online.",
+          "ko": "지난주부터 수업은 온라인으로 진행돼요.",
+          "zh-Hans": "从上周开始，课程改为线上进行。",
+          "yue": "由上星期開始，課堂轉做網上進行。",
+          "ru": "С прошлой недели занятия проходят онлайн.",
+          "pt": "Desde a semana passada, as aulas são online.",
+          "he": "מאז השבוע שעבר השיעורים מתקיימים אונליין.",
+          "tr": "Geçen haftadan beri dersler çevrim içi yapılıyor.",
+          "vi": "Từ tuần trước, các lớp học diễn ra trực tuyến.",
+          "ar": "منذ الأسبوع الماضي تُقام الدروس عبر الإنترنت.",
+          "nl": "Sinds vorige week zijn de lessen online.",
+          "uk": "З минулого тижня заняття проходять онлайн.",
+          "hu": "Múlt hét óta az órák online zajlanak.",
+          "hi": "पिछले हफ्ते से कक्षाएँ ऑनलाइन हो रही हैं.",
+          "pl": "Od zeszłego tygodnia zajęcia odbywają się online.",
+          "el": "Από την περασμένη εβδομάδα τα μαθήματα γίνονται διαδικτυακά.",
+          "nb": "Siden forrige uke foregår undervisningen på nett.",
+          "id": "Sejak minggu lalu, kelas berlangsung secara online.",
+          "sv": "Sedan förra veckan sker undervisningen online.",
+          "ro": "De săptămâna trecută, cursurile se desfășoară online.",
+          "cs": "Od minulého týdne probíhá výuka online.",
+          "da": "Siden sidste uge foregår undervisningen online.",
+          "fi": "Viime viikosta lähtien opetus on verkossa.",
+          "ja": "先週から授業はオンラインになりました。"
+        },
+        "proposed_sentence": "Der Unterricht läuft seit letzter Woche digital.",
+        "proposed_translations": {
+          "de": "Der Unterricht läuft seit letzter Woche digital.",
+          "ipa": "/deːɐ̯ ˈʊntɐʁɪçt lɔɪ̯ft diɡiˈtaːl zaɪ̯t ˈlɛtstɐ ˈvɔxə./",
+          "en": "Classes have been digital since last week.",
+          "es": "Desde la semana pasada, las clases son online.",
+          "fr": "Depuis la semaine dernière, les cours sont en ligne.",
+          "it": "Dalla settimana scorsa le lezioni sono online.",
+          "ko": "지난주부터 수업은 온라인으로 진행돼요.",
+          "zh-Hans": "从上周开始，课程改为线上进行。",
+          "yue": "由上星期開始，課堂轉做網上進行。",
+          "ru": "С прошлой недели занятия проходят онлайн.",
+          "pt": "Desde a semana passada, as aulas são online.",
+          "he": "מאז השבוע שעבר השיעורים מתקיימים אונליין.",
+          "tr": "Geçen haftadan beri dersler çevrim içi yapılıyor.",
+          "vi": "Từ tuần trước, các lớp học diễn ra trực tuyến.",
+          "ar": "منذ الأسبوع الماضي تُقام الدروس عبر الإنترنت.",
+          "nl": "Sinds vorige week zijn de lessen online.",
+          "uk": "З минулого тижня заняття проходять онлайн.",
+          "hu": "Múlt hét óta az órák online zajlanak.",
+          "hi": "पिछले हफ्ते से कक्षाएँ ऑनलाइन हो रही हैं.",
+          "pl": "Od zeszłego tygodnia zajęcia odbywają się online.",
+          "el": "Από την περασμένη εβδομάδα τα μαθήματα γίνονται διαδικτυακά.",
+          "nb": "Siden forrige uke foregår undervisningen på nett.",
+          "id": "Sejak minggu lalu, kelas berlangsung secara online.",
+          "sv": "Sedan förra veckan sker undervisningen online.",
+          "ro": "De săptămâna trecută, cursurile se desfășoară online.",
+          "cs": "Od minulého týdne probíhá výuka online.",
+          "da": "Siden sidste uge foregår undervisningen online.",
+          "fi": "Viime viikosta lähtien opetus on verkossa.",
+          "ja": "先週から授業はオンラインになりました。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Der Unterricht läuft seit letzter Woche digital.",
+        "old_japanese": "Der Unterricht läuft digital seit letzter Woche.",
+        "old_english": "Classes have been digital since last week.",
+        "proposed_japanese": "Der Unterricht läuft seit letzter Woche digital.",
+        "proposed_english": "Classes have been digital since last week.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Der Unterricht läuft seit letzter Woche digital.",
+          "tokens": [
+            {
+              "surface": "Der",
+              "lemma": "der",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "ART",
+              "feats": {},
+              "start": 0,
+              "end": 3,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Unterricht",
+              "lemma": "Unterricht",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 4,
+              "end": 14,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "läuft",
+              "lemma": "laufen",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVFIN",
+              "feats": {},
+              "start": 15,
+              "end": 20,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "seit",
+              "lemma": "seit",
+              "pos": "ADP",
+              "upos": "ADP",
+              "xpos": "APPR",
+              "feats": {},
+              "start": 21,
+              "end": 25,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "letzter",
+              "lemma": "letzter",
+              "pos": "ADJ",
+              "upos": "ADJ",
+              "xpos": "ADJA",
+              "feats": {},
+              "start": 26,
+              "end": 33,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Woche",
+              "lemma": "Woche",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 34,
+              "end": 39,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "digital",
+              "lemma": "digital",
+              "pos": "ADV",
+              "upos": "ADV",
+              "xpos": "ADJD",
+              "feats": {},
+              "start": 40,
+              "end": 47,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 47,
+              "end": 48,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Der",
+            "lemma": "der",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Unterricht",
+            "lemma": "Unterricht",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 4,
+            "end": 14,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "läuft",
+            "lemma": "laufen",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 15,
+            "end": 20,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "seit",
+            "lemma": "seit",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 21,
+            "end": 25,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "letzter",
+            "lemma": "letzter",
+            "pos": "ADJ",
+            "upos": "ADJ",
+            "xpos": "ADJA",
+            "feats": {},
+            "start": 26,
+            "end": 33,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Woche",
+            "lemma": "Woche",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 34,
+            "end": 39,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "digital",
+            "lemma": "digital",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADJD",
+            "feats": {},
+            "start": 40,
+            "end": 47,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 47,
+            "end": 48,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:06:37Z",
+        "updated_utc": "2026-10-17T07:07:05Z",
+        "applied_utc": "2026-10-17T07:07:05Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:07:05Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -476,34 +1154,6 @@
     "word": "digital",
     "word_reading": "",
     "word_label": "Adjektiv",
-    "word_en": "digital",
-    "word_es": "digital",
-    "word_fr": "numérique",
-    "word_it": "digitale",
-    "word_ko": "디지털",
-    "word_zh-Hans": "数字的",
-    "word_yue": "數碼的",
-    "word_ru": "цифровой",
-    "word_pt": "digital",
-    "word_he": "דיגיטלי",
-    "word_tr": "dijital",
-    "word_vi": "kỹ thuật số",
-    "word_ar": "رقمي",
-    "word_nl": "digitaal",
-    "word_uk": "цифровий",
-    "word_hu": "digitális",
-    "word_hi": "डिजिटल",
-    "word_pl": "cyfrowy",
-    "word_el": "ψηφιακός",
-    "word_nb": "digital",
-    "word_id": "digital",
-    "word_sv": "digital",
-    "word_ro": "digital",
-    "word_cs": "digitální",
-    "word_da": "digital",
-    "word_fi": "digitaalinen",
-    "word_ja": "デジタル",
-    "word_de": "digital",
     "comic_difficulty": 5.87,
     "jp": [
       "Ich bezahle digital mit dem Handy.",
@@ -516,24 +1166,6 @@
       "/diː ˈfoːtoːs zɪnt diɡiˈtaːl ʊnt aʊ̯f deːm uːɛsˈbeː ʃtɪk./",
       "/ˈmaɪ̯nə uːɐ̯ ɪst diɡiˈtaːl ʊnt mɪt lɪçt./",
       "/deːɐ̯ ˈʊntɐʁɪçt lɔɪ̯ft diɡiˈtaːl zaɪ̯t ˈlɛtstɐ ˈvɔxə./"
-    ],
-    "de": [
-      "Ich bezahle digital mit dem Handy.",
-      "Die Fotos sind digital und auf dem USB-Stick.",
-      "Meine Uhr ist digital und mit Licht.",
-      "Der Unterricht läuft digital seit letzter Woche."
-    ],
-    "ipa": [
-      "/ɪç bəˈtsaːlə diɡiˈtaːl mɪt deːm ˈhɛndi./",
-      "/diː ˈfoːtoːs zɪnt diɡiˈtaːl ʊnt aʊ̯f deːm uːɛsˈbeː ʃtɪk./",
-      "/ˈmaɪ̯nə uːɐ̯ ɪst diɡiˈtaːl ʊnt mɪt lɪçt./",
-      "/deːɐ̯ ˈʊntɐʁɪçt lɔɪ̯ft diɡiˈtaːl zaɪ̯t ˈlɛtstɐ ˈvɔxə./"
-    ],
-    "en": [
-      "I pay digitally with my phone.",
-      "The photos are digital and on the USB stick.",
-      "My watch is digital and has a light.",
-      "Classes have been digital since last week."
     ],
     "pos_analysis": [
       {
@@ -677,277 +1309,242 @@
         "difficulty_aggregated": 5.25
       },
       {
-        "sentence": "Meine Uhr ist digital und mit Licht.",
+        "sentence": "Meine Uhr ist digital und hat eine Beleuchtung.",
         "tokens": [
           {
             "surface": "Meine",
-            "surface_en": "my",
-            "furigana": "[ˈmaɪ̯nə]",
-            "pos": "DET",
             "lemma": "mein",
-            "explanation": "Possessive determiner, nominative singular feminine; modifies 'Uhr'.",
-            "difficulty": 7
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "PPOSAT",
+            "feats": {},
+            "start": 0,
+            "end": 5,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "Uhr",
-            "surface_en": "watch",
-            "furigana": "[uːɐ̯]",
-            "pos": "NOUN",
             "lemma": "Uhr",
-            "explanation": "Common noun, feminine; subject of the copular verb 'ist'.",
-            "difficulty": 4
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 6,
+            "end": 9,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "ist",
-            "surface_en": "is",
-            "furigana": "[ɪst]",
-            "pos": "AUX",
             "lemma": "sein",
-            "explanation": "Copular auxiliary, present indicative, 3rd person singular; links the subject to predicate complements.",
-            "difficulty": 4
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "VAFIN",
+            "feats": {},
+            "start": 10,
+            "end": 13,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "digital",
-            "surface_en": "digital",
-            "furigana": "[diɡiˈtaːl]",
-            "pos": "ADJ",
             "lemma": "digital",
-            "explanation": "Predicative adjective complement to 'ist', describing the subject 'Uhr'.",
-            "difficulty": 10,
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADJD",
+            "feats": {},
+            "start": 14,
+            "end": 21,
+            "analyzer": "spacy_de_core_news_lg",
             "is_main_word": true
           },
           {
             "surface": "und",
-            "surface_en": "and",
-            "furigana": "[ʊnt]",
-            "pos": "CCONJ",
             "lemma": "und",
-            "explanation": "Coordinating conjunction; links the predicative adjective with the PP 'mit Licht'.",
-            "difficulty": 2
+            "pos": "CCONJ",
+            "upos": "CCONJ",
+            "xpos": "KON",
+            "feats": {},
+            "start": 22,
+            "end": 25,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "mit",
-            "surface_en": "with",
-            "furigana": "[mɪt]",
-            "pos": "ADP",
-            "lemma": "mit",
-            "explanation": "Preposition governing dative; introduces a PP indicating an accompanying feature.",
-            "difficulty": 2
+            "surface": "hat",
+            "lemma": "haben",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VAFIN",
+            "feats": {},
+            "start": 26,
+            "end": 29,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "Licht.",
-            "surface_en": "light",
-            "furigana": "[lɪçt]",
+            "surface": "eine",
+            "lemma": "ein",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 30,
+            "end": 34,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Beleuchtung",
+            "lemma": "Beleuchtung",
             "pos": "NOUN",
-            "lemma": "Licht",
-            "explanation": "Common noun, neuter, dative singular (form identical to nominative); object of 'mit', indicating the feature.",
-            "difficulty": 7
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 35,
+            "end": 46,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 46,
+            "end": 47,
+            "analyzer": "spacy_de_core_news_lg"
           }
         ],
         "difficulty_aggregated": 5.14
       },
       {
-        "sentence": "Der Unterricht läuft digital seit letzter Woche.",
+        "sentence": "Der Unterricht läuft seit letzter Woche digital.",
         "tokens": [
           {
             "surface": "Der",
-            "surface_en": "the",
-            "furigana": "[deːɐ̯]",
-            "pos": "DET",
             "lemma": "der",
-            "explanation": "Definite article, nominative singular masculine; determiner of 'Unterricht'.",
-            "difficulty": 2
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "Unterricht",
-            "surface_en": "instruction",
-            "furigana": "[ˈʊntɐʁɪçt]",
-            "pos": "NOUN",
             "lemma": "Unterricht",
-            "explanation": "Common noun, masculine; subject of the intransitive verb 'läuft'.",
-            "difficulty": 10
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 4,
+            "end": 14,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "läuft",
-            "surface_en": "runs",
-            "furigana": "[lɔʏft]",
-            "pos": "VERB",
             "lemma": "laufen",
-            "explanation": "Finite main verb, present indicative, 3rd person singular; predicate meaning 'operates/runs'.",
-            "difficulty": 7
-          },
-          {
-            "surface": "digital",
-            "surface_en": "digitally",
-            "furigana": "[diɡiˈtaːl]",
-            "pos": "ADV",
-            "lemma": "digital",
-            "explanation": "Adverb of manner modifying 'läuft'; indicates the mode of instruction.",
-            "difficulty": 10,
-            "is_main_word": true
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 15,
+            "end": 20,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "seit",
-            "surface_en": "since",
-            "furigana": "[zaɪ̯t]",
-            "pos": "ADP",
             "lemma": "seit",
-            "explanation": "Preposition governing dative; introduces a temporal PP marking the starting point.",
-            "difficulty": 7
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 21,
+            "end": 25,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "letzter",
-            "surface_en": "last",
-            "furigana": "[ˈlɛtstɐ]",
+            "lemma": "letzter",
             "pos": "ADJ",
-            "lemma": "letzt",
-            "explanation": "Attributive adjective, dative singular feminine (strong inflection); modifies 'Woche'.",
-            "difficulty": 10
+            "upos": "ADJ",
+            "xpos": "ADJA",
+            "feats": {},
+            "start": 26,
+            "end": 33,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "Woche.",
-            "surface_en": "week",
-            "furigana": "[ˈvɔxə]",
-            "pos": "NOUN",
+            "surface": "Woche",
             "lemma": "Woche",
-            "explanation": "Common noun, feminine, dative singular; object of the preposition 'seit', expressing the time frame.",
-            "difficulty": 7
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 34,
+            "end": 39,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "digital",
+            "lemma": "digital",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADJD",
+            "feats": {},
+            "start": 40,
+            "end": 47,
+            "analyzer": "spacy_de_core_news_lg",
+            "is_main_word": true
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 47,
+            "end": 48,
+            "analyzer": "spacy_de_core_news_lg"
           }
         ],
         "difficulty_aggregated": 7.57
       }
     ],
-    "es": [
-      "Pago con el móvil.",
-      "Las fotos son digitales y están en la memoria USB.",
-      "Mi reloj es digital y tiene luz.",
-      "Desde la semana pasada, las clases son online."
-    ],
-    "fr": [
-      "Je paie avec mon téléphone.",
-      "Les photos sont numériques et sur la clé USB.",
-      "Ma montre est numérique et elle s’éclaire.",
-      "Depuis la semaine dernière, les cours sont en ligne."
-    ],
-    "it": [
-      "Pago con il telefono.",
-      "Le foto sono digitali e sono sulla chiavetta USB.",
-      "Il mio orologio è digitale e ha la luce.",
-      "Dalla settimana scorsa le lezioni sono online."
-    ],
-    "ko": [
-      "휴대폰으로 결제해요.",
-      "사진은 디지털이고 USB에 있어요.",
-      "제 시계는 디지털이고 불빛이 있어요.",
-      "지난주부터 수업은 온라인으로 진행돼요."
-    ],
-    "zh-Hans": [
-      "我用手机付款。",
-      "照片是数码的，保存在U盘里。",
-      "我的手表是数码的，而且有灯光。",
-      "从上周开始，课程改为线上进行。"
-    ],
-    "yue": [
-      "我用手機畀錢。",
-      "啲相係數碼嘅，喺USB手指度。",
-      "我隻錶係數碼嘅，仲有燈。",
-      "由上星期開始，課堂轉做網上進行。"
-    ],
-    "ru": [
-      "Я плачу телефоном.",
-      "Фото цифровые и на флешке.",
-      "Мои часы цифровые и с подсветкой.",
-      "С прошлой недели занятия проходят онлайн."
-    ],
-    "pt": [
-      "Pago com o telefone.",
-      "As fotos são digitais e estão no pen drive.",
-      "Meu relógio é digital e tem luz.",
-      "Desde a semana passada, as aulas são online."
-    ],
-    "he": [
-      "אני משלם בטלפון.",
-      "התמונות דיגיטליות ונמצאות בכונן USB.",
-      "השעון שלי דיגיטלי ויש בו תאורה.",
-      "מאז השבוע שעבר השיעורים מתקיימים אונליין."
-    ],
-    "tr": [
-      "Telefonla ödeme yapıyorum.",
-      "Fotoğraflar dijital ve USB bellekte.",
-      "Saatim dijital ve ışığı var.",
-      "Geçen haftadan beri dersler çevrim içi yapılıyor."
-    ],
-    "vi": [
-      "Tôi thanh toán bằng điện thoại.",
-      "Ảnh là ảnh số và nằm trên ổ USB.",
-      "Đồng hồ của tôi là điện tử và có đèn.",
-      "Từ tuần trước, các lớp học diễn ra trực tuyến."
-    ],
+    "word_POS": "Adjective",
+    "entry_id": "digital",
+    "word_en": "digital",
+    "word_es": "digital",
+    "word_fr": "numérique",
+    "word_it": "digitale",
+    "word_ko": "디지털",
+    "word_zh-Hans": "数字的",
+    "word_yue": "數碼的",
+    "word_ru": "цифровой",
+    "word_pt": "digital",
+    "word_he": "דיגיטלי",
+    "word_tr": "dijital",
+    "word_vi": "kỹ thuật số",
+    "word_ar": "رقمي",
+    "word_nl": "digitaal",
+    "word_uk": "цифровий",
+    "word_hu": "digitális",
+    "word_hi": "डिजिटल",
+    "word_pl": "cyfrowy",
+    "word_el": "ψηφιακός",
+    "word_nb": "digital",
+    "word_id": "digital",
+    "word_sv": "digital",
+    "word_ro": "digital",
+    "word_cs": "digitální",
+    "word_da": "digital",
+    "word_fi": "digitaalinen",
+    "word_ja": "デジタル",
+    "word_de": "digital",
     "ar": [
       "أدفع بهاتفي.",
       "الصور رقمية وعلى ذاكرة USB.",
       "ساعتي رقمية وبها ضوء.",
       "منذ الأسبوع الماضي تُقام الدروس عبر الإنترنت."
-    ],
-    "nl": [
-      "Ik betaal met mijn telefoon.",
-      "De foto’s zijn digitaal en staan op de USB-stick.",
-      "Mijn horloge is digitaal en heeft verlichting.",
-      "Sinds vorige week zijn de lessen online."
-    ],
-    "uk": [
-      "Я плачу телефоном.",
-      "Фото цифрові й на флешці.",
-      "Мій годинник цифровий і з підсвіткою.",
-      "З минулого тижня заняття проходять онлайн."
-    ],
-    "hu": [
-      "Telefonnal fizetek.",
-      "A fotók digitálisak és a pendrive-on vannak.",
-      "Az órám digitális és van benne világítás.",
-      "Múlt hét óta az órák online zajlanak."
-    ],
-    "hi": [
-      "मैं फोन से भुगतान करता हूँ.",
-      "तस्वीरें डिजिटल हैं और यूएसबी ड्राइव पर हैं.",
-      "मेरी घड़ी डिजिटल है और इसमें लाइट है.",
-      "पिछले हफ्ते से कक्षाएँ ऑनलाइन हो रही हैं."
-    ],
-    "pl": [
-      "Płacę telefonem.",
-      "Zdjęcia są cyfrowe i na pendrive’ie.",
-      "Mój zegarek jest cyfrowy i ma podświetlenie.",
-      "Od zeszłego tygodnia zajęcia odbywają się online."
-    ],
-    "el": [
-      "Πληρώνω με το κινητό.",
-      "Οι φωτογραφίες είναι ψηφιακές και βρίσκονται στο στικάκι USB.",
-      "Το ρολόι μου είναι ψηφιακό και έχει φωτισμό.",
-      "Από την περασμένη εβδομάδα τα μαθήματα γίνονται διαδικτυακά."
-    ],
-    "nb": [
-      "Jeg betaler med mobilen.",
-      "Bildene er digitale og ligger på minnepinnen.",
-      "Klokka mi er digital og har lys.",
-      "Siden forrige uke foregår undervisningen på nett."
-    ],
-    "id": [
-      "Saya bayar dengan ponsel.",
-      "Foto-foto itu digital dan ada di flashdisk.",
-      "Jam saya digital dan punya lampu.",
-      "Sejak minggu lalu, kelas berlangsung secara online."
-    ],
-    "sv": [
-      "Jag betalar med mobilen.",
-      "Bilderna är digitala och finns på USB-minnet.",
-      "Min klocka är digital och har ljus.",
-      "Sedan förra veckan sker undervisningen online."
-    ],
-    "ro": [
-      "Plătesc cu telefonul.",
-      "Fotografiile sunt digitale și sunt pe stickul USB.",
-      "Ceasul meu este digital și are lumină.",
-      "De săptămâna trecută, cursurile se desfășoară online."
     ],
     "cs": [
       "Platím telefonem.",
@@ -961,11 +1558,77 @@
       "Mit ur er digitalt og har lys.",
       "Siden sidste uge foregår undervisningen online."
     ],
+    "de": [
+      "Ich bezahle digital mit dem Handy.",
+      "Die Fotos sind digital und auf dem USB-Stick.",
+      "Meine Uhr ist digital und mit Licht.",
+      "Der Unterricht läuft digital seit letzter Woche."
+    ],
+    "el": [
+      "Πληρώνω με το κινητό.",
+      "Οι φωτογραφίες είναι ψηφιακές και βρίσκονται στο στικάκι USB.",
+      "Το ρολόι μου είναι ψηφιακό και έχει φωτισμό.",
+      "Από την περασμένη εβδομάδα τα μαθήματα γίνονται διαδικτυακά."
+    ],
+    "en": [
+      "I pay digitally with my phone.",
+      "The photos are digital and on the USB stick.",
+      "My watch is digital and has a light.",
+      "Classes have been digital since last week."
+    ],
+    "es": [
+      "Pago con el móvil.",
+      "Las fotos son digitales y están en la memoria USB.",
+      "Mi reloj es digital y tiene luz.",
+      "Desde la semana pasada, las clases son online."
+    ],
     "fi": [
       "Maksan puhelimella.",
       "Kuvat ovat digitaalisia ja USB-tikulla.",
       "Kelloni on digitaalinen ja siinä on valo.",
       "Viime viikosta lähtien opetus on verkossa."
+    ],
+    "fr": [
+      "Je paie avec mon téléphone.",
+      "Les photos sont numériques et sur la clé USB.",
+      "Ma montre est numérique et elle s’éclaire.",
+      "Depuis la semaine dernière, les cours sont en ligne."
+    ],
+    "he": [
+      "אני משלם בטלפון.",
+      "התמונות דיגיטליות ונמצאות בכונן USB.",
+      "השעון שלי דיגיטלי ויש בו תאורה.",
+      "מאז השבוע שעבר השיעורים מתקיימים אונליין."
+    ],
+    "hi": [
+      "मैं फोन से भुगतान करता हूँ.",
+      "तस्वीरें डिजिटल हैं और यूएसबी ड्राइव पर हैं.",
+      "मेरी घड़ी डिजिटल है और इसमें लाइट है.",
+      "पिछले हफ्ते से कक्षाएँ ऑनलाइन हो रही हैं."
+    ],
+    "hu": [
+      "Telefonnal fizetek.",
+      "A fotók digitálisak és a pendrive-on vannak.",
+      "Az órám digitális és van benne világítás.",
+      "Múlt hét óta az órák online zajlanak."
+    ],
+    "id": [
+      "Saya bayar dengan ponsel.",
+      "Foto-foto itu digital dan ada di flashdisk.",
+      "Jam saya digital dan punya lampu.",
+      "Sejak minggu lalu, kelas berlangsung secara online."
+    ],
+    "ipa": [
+      "/ɪç bəˈtsaːlə diɡiˈtaːl mɪt deːm ˈhɛndi./",
+      "/diː ˈfoːtoːs zɪnt diɡiˈtaːl ʊnt aʊ̯f deːm uːɛsˈbeː ʃtɪk./",
+      "/ˈmaɪ̯nə uːɐ̯ ɪst diɡiˈtaːl ʊnt mɪt lɪçt./",
+      "/deːɐ̯ ˈʊntɐʁɪçt lɔɪ̯ft diɡiˈtaːl zaɪ̯t ˈlɛtstɐ ˈvɔxə./"
+    ],
+    "it": [
+      "Pago con il telefono.",
+      "Le foto sono digitali e sono sulla chiavetta USB.",
+      "Il mio orologio è digitale e ha la luce.",
+      "Dalla settimana scorsa le lezioni sono online."
     ],
     "ja": [
       "スマホで払います。",
@@ -973,6 +1636,83 @@
       "私の時計はデジタルで、ライトがついています。",
       "先週から授業はオンラインになりました。"
     ],
-    "word_POS": "Adjective"
+    "ko": [
+      "휴대폰으로 결제해요.",
+      "사진은 디지털이고 USB에 있어요.",
+      "제 시계는 디지털이고 불빛이 있어요.",
+      "지난주부터 수업은 온라인으로 진행돼요."
+    ],
+    "nb": [
+      "Jeg betaler med mobilen.",
+      "Bildene er digitale og ligger på minnepinnen.",
+      "Klokka mi er digital og har lys.",
+      "Siden forrige uke foregår undervisningen på nett."
+    ],
+    "nl": [
+      "Ik betaal met mijn telefoon.",
+      "De foto’s zijn digitaal en staan op de USB-stick.",
+      "Mijn horloge is digitaal en heeft verlichting.",
+      "Sinds vorige week zijn de lessen online."
+    ],
+    "pl": [
+      "Płacę telefonem.",
+      "Zdjęcia są cyfrowe i na pendrive’ie.",
+      "Mój zegarek jest cyfrowy i ma podświetlenie.",
+      "Od zeszłego tygodnia zajęcia odbywają się online."
+    ],
+    "pt": [
+      "Pago com o telefone.",
+      "As fotos são digitais e estão no pen drive.",
+      "Meu relógio é digital e tem luz.",
+      "Desde a semana passada, as aulas são online."
+    ],
+    "ro": [
+      "Plătesc cu telefonul.",
+      "Fotografiile sunt digitale și sunt pe stickul USB.",
+      "Ceasul meu este digital și are lumină.",
+      "De săptămâna trecută, cursurile se desfășoară online."
+    ],
+    "ru": [
+      "Я плачу телефоном.",
+      "Фото цифровые и на флешке.",
+      "Мои часы цифровые и с подсветкой.",
+      "С прошлой недели занятия проходят онлайн."
+    ],
+    "sv": [
+      "Jag betalar med mobilen.",
+      "Bilderna är digitala och finns på USB-minnet.",
+      "Min klocka är digital och har ljus.",
+      "Sedan förra veckan sker undervisningen online."
+    ],
+    "tr": [
+      "Telefonla ödeme yapıyorum.",
+      "Fotoğraflar dijital ve USB bellekte.",
+      "Saatim dijital ve ışığı var.",
+      "Geçen haftadan beri dersler çevrim içi yapılıyor."
+    ],
+    "uk": [
+      "Я плачу телефоном.",
+      "Фото цифрові й на флешці.",
+      "Мій годинник цифровий і з підсвіткою.",
+      "З минулого тижня заняття проходять онлайн."
+    ],
+    "vi": [
+      "Tôi thanh toán bằng điện thoại.",
+      "Ảnh là ảnh số và nằm trên ổ USB.",
+      "Đồng hồ của tôi là điện tử và có đèn.",
+      "Từ tuần trước, các lớp học diễn ra trực tuyến."
+    ],
+    "yue": [
+      "我用手機畀錢。",
+      "啲相係數碼嘅，喺USB手指度。",
+      "我隻錶係數碼嘅，仲有燈。",
+      "由上星期開始，課堂轉做網上進行。"
+    ],
+    "zh-Hans": [
+      "我用手机付款。",
+      "照片是数码的，保存在U盘里。",
+      "我的手表是数码的，而且有灯光。",
+      "从上周开始，课程改为线上进行。"
+    ]
   }
 }

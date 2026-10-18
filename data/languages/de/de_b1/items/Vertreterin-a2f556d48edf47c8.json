@@ -316,10 +316,10 @@
       "difficulty": 5.5
     },
     {
-      "target": "Meine Schwester arbeitet als Vertreterin hier.",
+      "target": "Meine Schwester arbeitet hier als Vertreterin.",
       "reading": "/ˈmaɪ̯nə ˈʃvɛstɐ ˈaʁbaɪ̯tət als fɛɐ̯ˈtʁeːtəʁɪn hiːɐ/",
       "translations": {
-        "de": "Meine Schwester arbeitet als Vertreterin hier.",
+        "de": "Meine Schwester arbeitet hier als Vertreterin.",
         "ipa": "/ˈmaɪ̯nə ˈʃvɛstɐ ˈaʁbaɪ̯tət als fɛɐ̯ˈtʁeːtəʁɪn hiːɐ/",
         "en": "My sister works here as a rep.",
         "es": "Mi hermana trabaja aquí como representante.",
@@ -340,7 +340,7 @@
         "hi": "मेरी बहन यहाँ प्रतिनिधि के रूप में काम करती है.",
         "pl": "Moja siostra pracuje tutaj jako przedstawicielka.",
         "el": "Η αδελφή μου δουλεύει εδώ ως εκπρόσωπος.",
-        "nb": "Søsteren min jobber här som representant.",
+        "nb": "Søsteren min jobber her som representant.",
         "id": "Saudara perempuan saya bekerja di sini sebagai perwakilan.",
         "sv": "Min syster jobbar här som representant.",
         "ro": "Sora mea lucrează aici ca reprezentantă.",
@@ -352,58 +352,81 @@
       "tokens": [
         {
           "surface": "Meine",
-          "surface_en": "my",
-          "furigana": "[ˈmaɪ̯nə]",
-          "pos": "DET",
           "lemma": "mein",
-          "explanation": "Possessive determiner; feminine singular nominative; modifies 'Schwester'.",
-          "difficulty": 7
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "PPOSAT",
+          "feats": {},
+          "start": 0,
+          "end": 5,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "Schwester",
-          "surface_en": "sister",
-          "furigana": "[ˈʃvɛstɐ]",
-          "pos": "NOUN",
           "lemma": "Schwester",
-          "explanation": "Feminine noun; nominative singular; subject.",
-          "difficulty": 10
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 6,
+          "end": 15,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "arbeitet",
-          "surface_en": "works",
-          "furigana": "[ˈaʁbaɪ̯tət]",
-          "pos": "VERB",
           "lemma": "arbeiten",
-          "explanation": "Finite main verb; 3rd person singular, present.",
-          "difficulty": 10
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VVFIN",
+          "feats": {},
+          "start": 16,
+          "end": 24,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "hier",
+          "lemma": "hier",
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "ADV",
+          "feats": {},
+          "start": 25,
+          "end": 29,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "als",
-          "surface_en": "as",
-          "furigana": "[als]",
-          "pos": "ADP",
           "lemma": "als",
-          "explanation": "Preposition introducing a role/capacity phrase ('as ...'); takes a predicative nominal complement.",
-          "difficulty": 2
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "APPR",
+          "feats": {},
+          "start": 30,
+          "end": 33,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "Vertreterin",
-          "surface_en": "representative (female)",
-          "furigana": "[fɛɐ̯ˈtʁeːtəʁɪn]",
-          "pos": "NOUN",
           "lemma": "Vertreterin",
-          "explanation": "Predicative noun in the 'als'-phrase; feminine singular; denotes the role/occupation.",
-          "difficulty": 10,
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 34,
+          "end": 45,
+          "analyzer": "spacy_de_core_news_lg",
           "is_main_word": true
         },
         {
-          "surface": "hier.",
-          "surface_en": "here",
-          "furigana": "[hiːɐ̯]",
-          "pos": "ADV",
-          "lemma": "hier",
-          "explanation": "Locative adverb; modifies 'arbeitet', indicating place.",
-          "difficulty": 7
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 45,
+          "end": 46,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 7.67
@@ -420,8 +443,292 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-15T04:49:45Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:De b1/a2f556d48edf47c8",
+      "revision_id": 84829,
+      "parent_revision_id": 18334,
+      "revision_timestamp_utc": "2026-10-15T04:49:45Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Move the location adverb to natural position in the German sentence and replace the Swedish word in Norwegian.",
+      "pulled_utc": "2026-10-17T07:06:41Z",
+      "applied_utc": "2026-10-17T07:06:51Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-ef2701b247ddbd9a",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_b1:a2f556d48edf47c8",
+        "pack_code": "de_b1",
+        "entry_id": "Vertreterin",
+        "language": "de",
+        "sentence_index": 4,
+        "old_sentence": "Meine Schwester arbeitet als Vertreterin hier.",
+        "old_translations": {
+          "de": "Meine Schwester arbeitet als Vertreterin hier.",
+          "ipa": "/ˈmaɪ̯nə ˈʃvɛstɐ ˈaʁbaɪ̯tət als fɛɐ̯ˈtʁeːtəʁɪn hiːɐ/",
+          "en": "My sister works here as a rep.",
+          "es": "Mi hermana trabaja aquí como representante.",
+          "fr": "Ma sœur travaille ici comme représentante.",
+          "it": "Mia sorella lavora qui come rappresentante.",
+          "ko": "제 여동생은 여기서 영업사원으로 일해요.",
+          "zh-Hans": "我妹妹在这里做业务员。",
+          "yue": "我個妹喺呢度做業務代表。",
+          "ru": "Моя сестра здесь работает представительницей.",
+          "pt": "Minha irmã trabalha aqui como representante.",
+          "he": "אחותי עובדת כאן כנציגה.",
+          "tr": "Kız kardeşim burada temsilci olarak çalışıyor.",
+          "vi": "Em gái tôi làm đại diện ở đây.",
+          "ar": "أختي تعمل هنا كمندوبة.",
+          "nl": "Mijn zus werkt hier als vertegenwoordiger.",
+          "uk": "Моя сестра працює тут представницею.",
+          "hu": "A nővérem itt képviselőnőként dolgozik.",
+          "hi": "मेरी बहन यहाँ प्रतिनिधि के रूप में काम करती है.",
+          "pl": "Moja siostra pracuje tutaj jako przedstawicielka.",
+          "el": "Η αδελφή μου δουλεύει εδώ ως εκπρόσωπος.",
+          "nb": "Søsteren min jobber här som representant.",
+          "id": "Saudara perempuan saya bekerja di sini sebagai perwakilan.",
+          "sv": "Min syster jobbar här som representant.",
+          "ro": "Sora mea lucrează aici ca reprezentantă.",
+          "cs": "Moje sestra tady pracuje jako zástupkyně.",
+          "da": "Min søster arbejder her som repræsentant.",
+          "fi": "Siskoni työskentelee täällä edustajana.",
+          "ja": "私の姉はここで営業として働いています。"
+        },
+        "proposed_sentence": "Meine Schwester arbeitet hier als Vertreterin.",
+        "proposed_translations": {
+          "de": "Meine Schwester arbeitet hier als Vertreterin.",
+          "ipa": "/ˈmaɪ̯nə ˈʃvɛstɐ ˈaʁbaɪ̯tət als fɛɐ̯ˈtʁeːtəʁɪn hiːɐ/",
+          "en": "My sister works here as a rep.",
+          "es": "Mi hermana trabaja aquí como representante.",
+          "fr": "Ma sœur travaille ici comme représentante.",
+          "it": "Mia sorella lavora qui come rappresentante.",
+          "ko": "제 여동생은 여기서 영업사원으로 일해요.",
+          "zh-Hans": "我妹妹在这里做业务员。",
+          "yue": "我個妹喺呢度做業務代表。",
+          "ru": "Моя сестра здесь работает представительницей.",
+          "pt": "Minha irmã trabalha aqui como representante.",
+          "he": "אחותי עובדת כאן כנציגה.",
+          "tr": "Kız kardeşim burada temsilci olarak çalışıyor.",
+          "vi": "Em gái tôi làm đại diện ở đây.",
+          "ar": "أختي تعمل هنا كمندوبة.",
+          "nl": "Mijn zus werkt hier als vertegenwoordiger.",
+          "uk": "Моя сестра працює тут представницею.",
+          "hu": "A nővérem itt képviselőnőként dolgozik.",
+          "hi": "मेरी बहन यहाँ प्रतिनिधि के रूप में काम करती है.",
+          "pl": "Moja siostra pracuje tutaj jako przedstawicielka.",
+          "el": "Η αδελφή μου δουλεύει εδώ ως εκπρόσωπος.",
+          "nb": "Søsteren min jobber her som representant.",
+          "id": "Saudara perempuan saya bekerja di sini sebagai perwakilan.",
+          "sv": "Min syster jobbar här som representant.",
+          "ro": "Sora mea lucrează aici ca reprezentantă.",
+          "cs": "Moje sestra tady pracuje jako zástupkyně.",
+          "da": "Min søster arbejder her som repræsentant.",
+          "fi": "Siskoni työskentelee täällä edustajana.",
+          "ja": "私の姉はここで営業として働いています。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Meine Schwester arbeitet hier als Vertreterin.",
+        "old_japanese": "Meine Schwester arbeitet als Vertreterin hier.",
+        "old_english": "My sister works here as a rep.",
+        "proposed_japanese": "Meine Schwester arbeitet hier als Vertreterin.",
+        "proposed_english": "My sister works here as a rep.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Meine Schwester arbeitet hier als Vertreterin.",
+          "tokens": [
+            {
+              "surface": "Meine",
+              "lemma": "mein",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "PPOSAT",
+              "feats": {},
+              "start": 0,
+              "end": 5,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Schwester",
+              "lemma": "Schwester",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 6,
+              "end": 15,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "arbeitet",
+              "lemma": "arbeiten",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVFIN",
+              "feats": {},
+              "start": 16,
+              "end": 24,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "hier",
+              "lemma": "hier",
+              "pos": "ADV",
+              "upos": "ADV",
+              "xpos": "ADV",
+              "feats": {},
+              "start": 25,
+              "end": 29,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "als",
+              "lemma": "als",
+              "pos": "ADP",
+              "upos": "ADP",
+              "xpos": "APPR",
+              "feats": {},
+              "start": 30,
+              "end": 33,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Vertreterin",
+              "lemma": "Vertreterin",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 34,
+              "end": 45,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 45,
+              "end": 46,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Meine",
+            "lemma": "mein",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "PPOSAT",
+            "feats": {},
+            "start": 0,
+            "end": 5,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Schwester",
+            "lemma": "Schwester",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 6,
+            "end": 15,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "arbeitet",
+            "lemma": "arbeiten",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 16,
+            "end": 24,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "hier",
+            "lemma": "hier",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 25,
+            "end": 29,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "als",
+            "lemma": "als",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 30,
+            "end": 33,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Vertreterin",
+            "lemma": "Vertreterin",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 34,
+            "end": 45,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 45,
+            "end": 46,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:06:41Z",
+        "updated_utc": "2026-10-17T07:07:06Z",
+        "applied_utc": "2026-10-17T07:07:06Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:07:06Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -433,34 +740,6 @@
     "word": "Vertreterin",
     "word_reading": "",
     "word_label": "Substantiv (die fem.)",
-    "word_en": "representative; substitute",
-    "word_es": "representante; agente de ventas",
-    "word_fr": "représentante; commerciale",
-    "word_it": "rappresentante; agente di commercio",
-    "word_ko": "대표; 영업사원",
-    "word_zh-Hans": "代表; 销售代表",
-    "word_yue": "代表; 銷售代表",
-    "word_ru": "представительница; торговый представитель",
-    "word_pt": "representante; representante de vendas",
-    "word_he": "נציגה; נציגת מכירות",
-    "word_tr": "temsilci; satış temsilcisi",
-    "word_vi": "đại diện; nhân viên kinh doanh",
-    "word_ar": "ممثلة; مندوبة مبيعات",
-    "word_nl": "vertegenwoordiger; verkoopvertegenwoordiger",
-    "word_uk": "представниця; торговий представник",
-    "word_hu": "képviselő; értékesítési képviselő",
-    "word_hi": "प्रतिनिधि; बिक्री प्रतिनिधि",
-    "word_pl": "przedstawicielka; przedstawicielka handlowa",
-    "word_el": "εκπρόσωπος; αντιπρόσωπος πωλήσεων",
-    "word_nb": "representant; salgsrepresentant",
-    "word_id": "perwakilan; tenaga penjualan",
-    "word_sv": "representant; försäljningsrepresentant",
-    "word_ro": "reprezentantă; reprezentantă de vânzări",
-    "word_cs": "zástupkyně; obchodní zástupkyně",
-    "word_da": "repræsentant; salgsrepræsentant",
-    "word_fi": "edustaja; myyntiedustaja",
-    "word_ja": "代表; 営業担当者",
-    "word_de": "Vertreterin",
     "comic_difficulty": 6.32,
     "jp": [
       "Die Vertreterin kommt gleich vorbei.",
@@ -473,24 +752,6 @@
       "/ɪç ˈvaʁtə aʊ̯f diː fɛɐ̯ˈtʁeːtəʁɪn ˈdʁaʊ̯sən/",
       "/eːɐ ʃpʁɪçt kʊʁts mɪt deːɐ fɛɐ̯ˈtʁeːtəʁɪn/",
       "/ˈmaɪ̯nə ˈʃvɛstɐ ˈaʁbaɪ̯tət als fɛɐ̯ˈtʁeːtəʁɪn hiːɐ/"
-    ],
-    "de": [
-      "Die Vertreterin kommt gleich vorbei.",
-      "Ich warte auf die Vertreterin draußen.",
-      "Er spricht kurz mit der Vertreterin.",
-      "Meine Schwester arbeitet als Vertreterin hier."
-    ],
-    "ipa": [
-      "/diː fɛɐ̯ˈtʁeːtəʁɪn kɔmt ɡlaɪ̯ç fɔʁˈbaɪ̯/",
-      "/ɪç ˈvaʁtə aʊ̯f diː fɛɐ̯ˈtʁeːtəʁɪn ˈdʁaʊ̯sən/",
-      "/eːɐ ʃpʁɪçt kʊʁts mɪt deːɐ fɛɐ̯ˈtʁeːtəʁɪn/",
-      "/ˈmaɪ̯nə ˈʃvɛstɐ ˈaʁbaɪ̯tət als fɛɐ̯ˈtʁeːtəʁɪn hiːɐ/"
-    ],
-    "en": [
-      "The rep is coming by soon.",
-      "I’m waiting for the rep outside.",
-      "He’s talking briefly with the rep.",
-      "My sister works here as a rep."
     ],
     "pos_analysis": [
       {
@@ -670,198 +931,125 @@
         "difficulty_aggregated": 5.5
       },
       {
-        "sentence": "Meine Schwester arbeitet als Vertreterin hier.",
+        "sentence": "Meine Schwester arbeitet hier als Vertreterin.",
         "tokens": [
           {
             "surface": "Meine",
-            "surface_en": "my",
-            "furigana": "[ˈmaɪ̯nə]",
-            "pos": "DET",
             "lemma": "mein",
-            "explanation": "Possessive determiner; feminine singular nominative; modifies 'Schwester'.",
-            "difficulty": 7
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "PPOSAT",
+            "feats": {},
+            "start": 0,
+            "end": 5,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "Schwester",
-            "surface_en": "sister",
-            "furigana": "[ˈʃvɛstɐ]",
-            "pos": "NOUN",
             "lemma": "Schwester",
-            "explanation": "Feminine noun; nominative singular; subject.",
-            "difficulty": 10
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 6,
+            "end": 15,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "arbeitet",
-            "surface_en": "works",
-            "furigana": "[ˈaʁbaɪ̯tət]",
-            "pos": "VERB",
             "lemma": "arbeiten",
-            "explanation": "Finite main verb; 3rd person singular, present.",
-            "difficulty": 10
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 16,
+            "end": 24,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "hier",
+            "lemma": "hier",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 25,
+            "end": 29,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "als",
-            "surface_en": "as",
-            "furigana": "[als]",
-            "pos": "ADP",
             "lemma": "als",
-            "explanation": "Preposition introducing a role/capacity phrase ('as ...'); takes a predicative nominal complement.",
-            "difficulty": 2
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 30,
+            "end": 33,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "Vertreterin",
-            "surface_en": "representative (female)",
-            "furigana": "[fɛɐ̯ˈtʁeːtəʁɪn]",
-            "pos": "NOUN",
             "lemma": "Vertreterin",
-            "explanation": "Predicative noun in the 'als'-phrase; feminine singular; denotes the role/occupation.",
-            "difficulty": 10,
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 34,
+            "end": 45,
+            "analyzer": "spacy_de_core_news_lg",
             "is_main_word": true
           },
           {
-            "surface": "hier.",
-            "surface_en": "here",
-            "furigana": "[hiːɐ̯]",
-            "pos": "ADV",
-            "lemma": "hier",
-            "explanation": "Locative adverb; modifies 'arbeitet', indicating place.",
-            "difficulty": 7
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 45,
+            "end": 46,
+            "analyzer": "spacy_de_core_news_lg"
           }
         ],
         "difficulty_aggregated": 7.67
       }
     ],
-    "es": [
-      "La representante llega enseguida.",
-      "Estoy esperando a la representante afuera.",
-      "Habla un momento con la representante.",
-      "Mi hermana trabaja aquí como representante."
-    ],
-    "fr": [
-      "La représentante arrive bientôt.",
-      "J'attends la représentante dehors.",
-      "Il parle brièvement avec la représentante.",
-      "Ma sœur travaille ici comme représentante."
-    ],
-    "it": [
-      "La rappresentante arriva tra poco.",
-      "Aspetto la rappresentante fuori.",
-      "Sta parlando un attimo con la rappresentante.",
-      "Mia sorella lavora qui come rappresentante."
-    ],
-    "ko": [
-      "영업사원이 곧 들를 거예요.",
-      "밖에서 영업사원을 기다리고 있어요.",
-      "그는 영업사원과 잠깐 이야기하고 있어요.",
-      "제 여동생은 여기서 영업사원으로 일해요."
-    ],
-    "zh-Hans": [
-      "业务员马上就会过来。",
-      "我在外面等业务员。",
-      "他正和业务员简单聊几句。",
-      "我妹妹在这里做业务员。"
-    ],
-    "yue": [
-      "嗰位業務代表好快就會過嚟。",
-      "我喺出面等個業務代表。",
-      "佢同個業務代表傾兩句。",
-      "我個妹喺呢度做業務代表。"
-    ],
-    "ru": [
-      "Представительница скоро зайдет.",
-      "Я жду представительницу на улице.",
-      "Он недолго разговаривает с представительницей.",
-      "Моя сестра здесь работает представительницей."
-    ],
-    "pt": [
-      "A representante chega em breve.",
-      "Estou esperando a representante lá fora.",
-      "Ele conversa um pouco com a representante.",
-      "Minha irmã trabalha aqui como representante."
-    ],
-    "he": [
-      "הנציגה תגיע בקרוב.",
-      "אני מחכה לנציגה בחוץ.",
-      "הוא מדבר בקצרה עם הנציגה.",
-      "אחותי עובדת כאן כנציגה."
-    ],
-    "tr": [
-      "Temsilci az sonra uğrayacak.",
-      "Temsilciyi dışarıda bekliyorum.",
-      "Temsilciyle kısa bir süre konuşuyor.",
-      "Kız kardeşim burada temsilci olarak çalışıyor."
-    ],
-    "vi": [
-      "Người đại diện sắp ghé qua.",
-      "Tôi đang đợi đại diện ở ngoài.",
-      "Anh ấy đang nói chuyện một lát với đại diện.",
-      "Em gái tôi làm đại diện ở đây."
-    ],
+    "word_POS": "Noun",
+    "entry_id": "Vertreterin",
+    "word_en": "representative; substitute",
+    "word_es": "representante; agente de ventas",
+    "word_fr": "représentante; commerciale",
+    "word_it": "rappresentante; agente di commercio",
+    "word_ko": "대표; 영업사원",
+    "word_zh-Hans": "代表; 销售代表",
+    "word_yue": "代表; 銷售代表",
+    "word_ru": "представительница; торговый представитель",
+    "word_pt": "representante; representante de vendas",
+    "word_he": "נציגה; נציגת מכירות",
+    "word_tr": "temsilci; satış temsilcisi",
+    "word_vi": "đại diện; nhân viên kinh doanh",
+    "word_ar": "ممثلة; مندوبة مبيعات",
+    "word_nl": "vertegenwoordiger; verkoopvertegenwoordiger",
+    "word_uk": "представниця; торговий представник",
+    "word_hu": "képviselő; értékesítési képviselő",
+    "word_hi": "प्रतिनिधि; बिक्री प्रतिनिधि",
+    "word_pl": "przedstawicielka; przedstawicielka handlowa",
+    "word_el": "εκπρόσωπος; αντιπρόσωπος πωλήσεων",
+    "word_nb": "representant; salgsrepresentant",
+    "word_id": "perwakilan; tenaga penjualan",
+    "word_sv": "representant; försäljningsrepresentant",
+    "word_ro": "reprezentantă; reprezentantă de vânzări",
+    "word_cs": "zástupkyně; obchodní zástupkyně",
+    "word_da": "repræsentant; salgsrepræsentant",
+    "word_fi": "edustaja; myyntiedustaja",
+    "word_ja": "代表; 営業担当者",
+    "word_de": "Vertreterin",
     "ar": [
       "المندوبة ستأتي قريبًا.",
       "أنا أنتظر المندوبة في الخارج.",
       "هو يتحدث قليلًا مع المندوبة.",
       "أختي تعمل هنا كمندوبة."
-    ],
-    "nl": [
-      "De vertegenwoordiger komt zo langs.",
-      "Ik wacht buiten op de vertegenwoordiger.",
-      "Hij praat even met de vertegenwoordiger.",
-      "Mijn zus werkt hier als vertegenwoordiger."
-    ],
-    "uk": [
-      "Представниця скоро зайде.",
-      "Я чекаю представницю на вулиці.",
-      "Він коротко розмовляє з представницею.",
-      "Моя сестра працює тут представницею."
-    ],
-    "hu": [
-      "A képviselőnő mindjárt ideér.",
-      "Kint várom a képviselőnőt.",
-      "Röviden beszél a képviselőnővel.",
-      "A nővérem itt képviselőnőként dolgozik."
-    ],
-    "hi": [
-      "प्रतिनिधि जल्द ही आने वाली है.",
-      "मैं बाहर प्रतिनिधि का इंतज़ार कर रहा हूँ.",
-      "वह प्रतिनिधि से थोड़ी देर बात कर रहा है.",
-      "मेरी बहन यहाँ प्रतिनिधि के रूप में काम करती है."
-    ],
-    "pl": [
-      "Przedstawicielka zaraz przyjdzie.",
-      "Czekam na przedstawicielkę na zewnątrz.",
-      "On krótko rozmawia z przedstawicielką.",
-      "Moja siostra pracuje tutaj jako przedstawicielka."
-    ],
-    "el": [
-      "Η εκπρόσωπος θα περάσει σύντομα.",
-      "Περιμένω την εκπρόσωπο έξω.",
-      "Μιλάει για λίγο με την εκπρόσωπο.",
-      "Η αδελφή μου δουλεύει εδώ ως εκπρόσωπος."
-    ],
-    "nb": [
-      "Representanten kommer snart innom.",
-      "Jeg venter på representanten ute.",
-      "Han snakker kort med representanten.",
-      "Søsteren min jobber här som representant."
-    ],
-    "id": [
-      "Perwakilan akan segera mampir.",
-      "Saya menunggu perwakilan di luar.",
-      "Dia sedang berbicara sebentar dengan perwakilan.",
-      "Saudara perempuan saya bekerja di sini sebagai perwakilan."
-    ],
-    "sv": [
-      "Representanten kommer snart förbi.",
-      "Jag väntar på representanten utanför.",
-      "Han pratar en kort stund med representanten.",
-      "Min syster jobbar här som representant."
-    ],
-    "ro": [
-      "Reprezentanta vine în curând.",
-      "O aștept pe reprezentantă afară.",
-      "El vorbește pe scurt cu reprezentanta.",
-      "Sora mea lucrează aici ca reprezentantă."
     ],
     "cs": [
       "Zástupkyně se brzy zastaví.",
@@ -875,11 +1063,77 @@
       "Han taler kort med repræsentanten.",
       "Min søster arbejder her som repræsentant."
     ],
+    "de": [
+      "Die Vertreterin kommt gleich vorbei.",
+      "Ich warte auf die Vertreterin draußen.",
+      "Er spricht kurz mit der Vertreterin.",
+      "Meine Schwester arbeitet als Vertreterin hier."
+    ],
+    "el": [
+      "Η εκπρόσωπος θα περάσει σύντομα.",
+      "Περιμένω την εκπρόσωπο έξω.",
+      "Μιλάει για λίγο με την εκπρόσωπο.",
+      "Η αδελφή μου δουλεύει εδώ ως εκπρόσωπος."
+    ],
+    "en": [
+      "The rep is coming by soon.",
+      "I’m waiting for the rep outside.",
+      "He’s talking briefly with the rep.",
+      "My sister works here as a rep."
+    ],
+    "es": [
+      "La representante llega enseguida.",
+      "Estoy esperando a la representante afuera.",
+      "Habla un momento con la representante.",
+      "Mi hermana trabaja aquí como representante."
+    ],
     "fi": [
       "Edustaja tulee pian käymään.",
       "Odotan edustajaa ulkona.",
       "Hän juttelee hetken edustajan kanssa.",
       "Siskoni työskentelee täällä edustajana."
+    ],
+    "fr": [
+      "La représentante arrive bientôt.",
+      "J'attends la représentante dehors.",
+      "Il parle brièvement avec la représentante.",
+      "Ma sœur travaille ici comme représentante."
+    ],
+    "he": [
+      "הנציגה תגיע בקרוב.",
+      "אני מחכה לנציגה בחוץ.",
+      "הוא מדבר בקצרה עם הנציגה.",
+      "אחותי עובדת כאן כנציגה."
+    ],
+    "hi": [
+      "प्रतिनिधि जल्द ही आने वाली है.",
+      "मैं बाहर प्रतिनिधि का इंतज़ार कर रहा हूँ.",
+      "वह प्रतिनिधि से थोड़ी देर बात कर रहा है.",
+      "मेरी बहन यहाँ प्रतिनिधि के रूप में काम करती है."
+    ],
+    "hu": [
+      "A képviselőnő mindjárt ideér.",
+      "Kint várom a képviselőnőt.",
+      "Röviden beszél a képviselőnővel.",
+      "A nővérem itt képviselőnőként dolgozik."
+    ],
+    "id": [
+      "Perwakilan akan segera mampir.",
+      "Saya menunggu perwakilan di luar.",
+      "Dia sedang berbicara sebentar dengan perwakilan.",
+      "Saudara perempuan saya bekerja di sini sebagai perwakilan."
+    ],
+    "ipa": [
+      "/diː fɛɐ̯ˈtʁeːtəʁɪn kɔmt ɡlaɪ̯ç fɔʁˈbaɪ̯/",
+      "/ɪç ˈvaʁtə aʊ̯f diː fɛɐ̯ˈtʁeːtəʁɪn ˈdʁaʊ̯sən/",
+      "/eːɐ ʃpʁɪçt kʊʁts mɪt deːɐ fɛɐ̯ˈtʁeːtəʁɪn/",
+      "/ˈmaɪ̯nə ˈʃvɛstɐ ˈaʁbaɪ̯tət als fɛɐ̯ˈtʁeːtəʁɪn hiːɐ/"
+    ],
+    "it": [
+      "La rappresentante arriva tra poco.",
+      "Aspetto la rappresentante fuori.",
+      "Sta parlando un attimo con la rappresentante.",
+      "Mia sorella lavora qui come rappresentante."
     ],
     "ja": [
       "担当者がもうすぐ来ます。",
@@ -887,6 +1141,83 @@
       "彼は担当者と少し話しています。",
       "私の姉はここで営業として働いています。"
     ],
-    "word_POS": "Noun"
+    "ko": [
+      "영업사원이 곧 들를 거예요.",
+      "밖에서 영업사원을 기다리고 있어요.",
+      "그는 영업사원과 잠깐 이야기하고 있어요.",
+      "제 여동생은 여기서 영업사원으로 일해요."
+    ],
+    "nb": [
+      "Representanten kommer snart innom.",
+      "Jeg venter på representanten ute.",
+      "Han snakker kort med representanten.",
+      "Søsteren min jobber här som representant."
+    ],
+    "nl": [
+      "De vertegenwoordiger komt zo langs.",
+      "Ik wacht buiten op de vertegenwoordiger.",
+      "Hij praat even met de vertegenwoordiger.",
+      "Mijn zus werkt hier als vertegenwoordiger."
+    ],
+    "pl": [
+      "Przedstawicielka zaraz przyjdzie.",
+      "Czekam na przedstawicielkę na zewnątrz.",
+      "On krótko rozmawia z przedstawicielką.",
+      "Moja siostra pracuje tutaj jako przedstawicielka."
+    ],
+    "pt": [
+      "A representante chega em breve.",
+      "Estou esperando a representante lá fora.",
+      "Ele conversa um pouco com a representante.",
+      "Minha irmã trabalha aqui como representante."
+    ],
+    "ro": [
+      "Reprezentanta vine în curând.",
+      "O aștept pe reprezentantă afară.",
+      "El vorbește pe scurt cu reprezentanta.",
+      "Sora mea lucrează aici ca reprezentantă."
+    ],
+    "ru": [
+      "Представительница скоро зайдет.",
+      "Я жду представительницу на улице.",
+      "Он недолго разговаривает с представительницей.",
+      "Моя сестра здесь работает представительницей."
+    ],
+    "sv": [
+      "Representanten kommer snart förbi.",
+      "Jag väntar på representanten utanför.",
+      "Han pratar en kort stund med representanten.",
+      "Min syster jobbar här som representant."
+    ],
+    "tr": [
+      "Temsilci az sonra uğrayacak.",
+      "Temsilciyi dışarıda bekliyorum.",
+      "Temsilciyle kısa bir süre konuşuyor.",
+      "Kız kardeşim burada temsilci olarak çalışıyor."
+    ],
+    "uk": [
+      "Представниця скоро зайде.",
+      "Я чекаю представницю на вулиці.",
+      "Він коротко розмовляє з представницею.",
+      "Моя сестра працює тут представницею."
+    ],
+    "vi": [
+      "Người đại diện sắp ghé qua.",
+      "Tôi đang đợi đại diện ở ngoài.",
+      "Anh ấy đang nói chuyện một lát với đại diện.",
+      "Em gái tôi làm đại diện ở đây."
+    ],
+    "yue": [
+      "嗰位業務代表好快就會過嚟。",
+      "我喺出面等個業務代表。",
+      "佢同個業務代表傾兩句。",
+      "我個妹喺呢度做業務代表。"
+    ],
+    "zh-Hans": [
+      "业务员马上就会过来。",
+      "我在外面等业务员。",
+      "他正和业务员简单聊几句。",
+      "我妹妹在这里做业务员。"
+    ]
   }
 }

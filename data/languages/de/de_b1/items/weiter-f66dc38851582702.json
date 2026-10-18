@@ -44,10 +44,10 @@
   },
   "sentences": [
     {
-      "target": "Wir sprechen über weiter- im Unterricht.",
+      "target": "Wir sprechen im Unterricht über „weiter-“.",
       "reading": "/viːɐ̯ ˈʃpʁɛçən ˈyːbɐ ˈvaɪ̯tɐ ɪm ˈʊntɐʁɪçt/",
       "translations": {
-        "de": "Wir sprechen über weiter- im Unterricht.",
+        "de": "Wir sprechen im Unterricht über „weiter-“.",
         "ipa": "/viːɐ̯ ˈʃpʁɛçən ˈyːbɐ ˈvaɪ̯tɐ ɪm ˈʊntɐʁɪçt/",
         "en": "We talk about weiter- in class.",
         "es": "Hablamos sobre weiter- en clase.",
@@ -80,67 +80,112 @@
       "tokens": [
         {
           "surface": "Wir",
-          "surface_en": "we",
-          "furigana": "[viːɐ̯]",
-          "pos": "PRON",
           "lemma": "wir",
-          "explanation": "Personal pronoun, 1st person plural, nominative; subject of the clause.",
-          "difficulty": 2
+          "pos": "PRON",
+          "upos": "PRON",
+          "xpos": "PPER",
+          "feats": {},
+          "start": 0,
+          "end": 3,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "sprechen",
-          "surface_en": "speak",
-          "furigana": "[ˈʃpʁɛçən]",
-          "pos": "VERB",
           "lemma": "sprechen",
-          "explanation": "Main verb, finite present indicative, 1st person plural; predicates the act of speaking.",
-          "difficulty": 10
-        },
-        {
-          "surface": "über",
-          "surface_en": "about",
-          "furigana": "[ˈyːbɐ]",
-          "pos": "ADP",
-          "lemma": "über",
-          "explanation": "Preposition governing accusative; introduces the topic of conversation.",
-          "difficulty": 2
-        },
-        {
-          "surface": "weiter-",
-          "surface_en": "further-",
-          "furigana": "[ˈvaɪ̯tɐ]",
-          "pos": "PART",
-          "lemma": "weiter",
-          "explanation": "Separable verbal particle/prefix used metalinguistically; here the prepositional object of 'über'.",
-          "difficulty": 10,
-          "is_main_word": true
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VVFIN",
+          "feats": {},
+          "start": 4,
+          "end": 12,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "im",
-          "surface_en": "in the",
-          "furigana": "[ɪm]",
-          "pos": "ADP",
           "lemma": "in",
-          "explanation": "Fused preposition+article (in+dem); marks location (dative) for the PP.",
-          "difficulty": 2
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "APPRART",
+          "feats": {},
+          "start": 13,
+          "end": 15,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "Unterricht.",
-          "surface_en": "class",
-          "furigana": "[ˈʊntɐʁɪçt]",
-          "pos": "NOUN",
+          "surface": "Unterricht",
           "lemma": "Unterricht",
-          "explanation": "Common noun; object of the preposition 'im', indicating the setting.",
-          "difficulty": 10
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 16,
+          "end": 26,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "über",
+          "lemma": "über",
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "APPR",
+          "feats": {},
+          "start": 27,
+          "end": 31,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "„",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$(",
+          "feats": {},
+          "start": 32,
+          "end": 33,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "weiter-",
+          "lemma": "weiter-",
+          "pos": "X",
+          "upos": "X",
+          "xpos": "TRUNC",
+          "feats": {},
+          "start": 33,
+          "end": 40,
+          "analyzer": "spacy_de_core_news_lg",
+          "is_main_word": true
+        },
+        {
+          "surface": "“",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$(",
+          "feats": {},
+          "start": 40,
+          "end": 41,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 41,
+          "end": 42,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 6
     },
     {
-      "target": "Du setzt weiter- vor das Verb.",
+      "target": "Du setzt „weiter-“ vor das Verb.",
       "reading": "/duː zɛtst ˈvaɪ̯tɐ foːɐ̯ das vɛʁp/",
       "translations": {
-        "de": "Du setzt weiter- vor das Verb.",
+        "de": "Du setzt „weiter-“ vor das Verb.",
         "ipa": "/duː zɛtst ˈvaɪ̯tɐ foːɐ̯ das vɛʁp/",
         "en": "You put weiter- before the verb.",
         "es": "Pones weiter- antes del verbo.",
@@ -173,67 +218,112 @@
       "tokens": [
         {
           "surface": "Du",
-          "surface_en": "you",
-          "furigana": "[duː]",
-          "pos": "PRON",
           "lemma": "du",
-          "explanation": "Personal pronoun, 2nd person singular, nominative; subject.",
-          "difficulty": 2
+          "pos": "PRON",
+          "upos": "PRON",
+          "xpos": "PPER",
+          "feats": {},
+          "start": 0,
+          "end": 2,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "setzt",
-          "surface_en": "put",
-          "furigana": "[zɛt͡st]",
-          "pos": "VERB",
           "lemma": "setzen",
-          "explanation": "Main verb, finite present indicative, 2nd person singular; denotes placing.",
-          "difficulty": 7
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VVFIN",
+          "feats": {},
+          "start": 3,
+          "end": 8,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "„",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$(",
+          "feats": {},
+          "start": 9,
+          "end": 10,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "weiter-",
-          "surface_en": "further-",
-          "furigana": "[ˈvaɪ̯tɐ]",
-          "pos": "PART",
-          "lemma": "weiter",
-          "explanation": "Separable verbal particle/prefix named as the item being placed; direct object of 'setzt'.",
-          "difficulty": 10,
+          "lemma": "weiter-",
+          "pos": "X",
+          "upos": "X",
+          "xpos": "TRUNC",
+          "feats": {},
+          "start": 10,
+          "end": 17,
+          "analyzer": "spacy_de_core_news_lg",
           "is_main_word": true
         },
         {
+          "surface": "“",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$(",
+          "feats": {},
+          "start": 17,
+          "end": 18,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
           "surface": "vor",
-          "surface_en": "before",
-          "furigana": "[foːɐ̯]",
-          "pos": "ADP",
           "lemma": "vor",
-          "explanation": "Preposition (here with accusative, directional); indicates position relative to the verb.",
-          "difficulty": 2
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "APPR",
+          "feats": {},
+          "start": 19,
+          "end": 22,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "das",
-          "surface_en": "the",
-          "furigana": "[das]",
-          "pos": "DET",
           "lemma": "der",
-          "explanation": "Definite article, accusative singular neuter; determines 'Verb'.",
-          "difficulty": 2
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "ART",
+          "feats": {},
+          "start": 23,
+          "end": 26,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "Verb.",
-          "surface_en": "verb",
-          "furigana": "[vɛʁp]",
-          "pos": "NOUN",
+          "surface": "Verb",
           "lemma": "Verb",
-          "explanation": "Common noun; object of the preposition 'vor'.",
-          "difficulty": 7
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 27,
+          "end": 31,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 31,
+          "end": 32,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 5
     },
     {
-      "target": "Im Heft markiere ich weiter- rot.",
+      "target": "Im Heft markiere ich „weiter-“ rot.",
       "reading": "/ɪm hɛft maʁˈkiːʁə ɪç ˈvaɪ̯tɐ ʁoːt/",
       "translations": {
-        "de": "Im Heft markiere ich weiter- rot.",
+        "de": "Im Heft markiere ich „weiter-“ rot.",
         "ipa": "/ɪm hɛft maʁˈkiːʁə ɪç ˈvaɪ̯tɐ ʁoːt/",
         "en": "In the notebook, I mark weiter- in red.",
         "es": "En el cuaderno marco weiter- en rojo.",
@@ -245,7 +335,7 @@
         "ru": "В тетради я выделяю weiter- красным.",
         "pt": "No caderno, eu destaco weiter- em vermelho.",
         "he": "במחברת אני מסמן את weiter- באדום.",
-        "tr": "Defterde weiter-ı kırmızıyla işaretliyorum.",
+        "tr": "Defterimde „weiter-“ ifadesini kırmızıyla işaretliyorum.",
         "vi": "Trong vở, tôi đánh dấu weiter- bằng màu đỏ.",
         "ar": "في الدفتر، أُبرز weiter- باللون الأحمر.",
         "nl": "In het schrift markeer ik weiter- in het rood.",
@@ -266,67 +356,112 @@
       "tokens": [
         {
           "surface": "Im",
-          "surface_en": "in the",
-          "furigana": "[ɪm]",
-          "pos": "ADP",
           "lemma": "in",
-          "explanation": "Fused preposition+article (in+dem); introduces a locative PP (dative).",
-          "difficulty": 2
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "APPRART",
+          "feats": {},
+          "start": 0,
+          "end": 2,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "Heft",
-          "surface_en": "notebook",
-          "furigana": "[hɛft]",
-          "pos": "NOUN",
           "lemma": "Heft",
-          "explanation": "Common noun; object of the preposition 'Im'.",
-          "difficulty": 7
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 3,
+          "end": 7,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "markiere",
-          "surface_en": "mark",
-          "furigana": "[maʁˈkiːʁə]",
-          "pos": "VERB",
           "lemma": "markieren",
-          "explanation": "Main verb, finite present indicative, 1st person singular; action performed by the speaker.",
-          "difficulty": 10
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VVFIN",
+          "feats": {},
+          "start": 8,
+          "end": 16,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "ich",
-          "surface_en": "I",
-          "furigana": "[ɪç]",
-          "pos": "PRON",
           "lemma": "ich",
-          "explanation": "Personal pronoun, 1st person singular, nominative; subject.",
-          "difficulty": 2
+          "pos": "PRON",
+          "upos": "PRON",
+          "xpos": "PPER",
+          "feats": {},
+          "start": 17,
+          "end": 20,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "„",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$(",
+          "feats": {},
+          "start": 21,
+          "end": 22,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "weiter-",
-          "surface_en": "further-",
-          "furigana": "[ˈvaɪ̯tɐ]",
-          "pos": "PART",
-          "lemma": "weiter",
-          "explanation": "Separable verbal particle/prefix referred to metalinguistically; direct object of 'markiere'.",
-          "difficulty": 10,
+          "lemma": "weiter-",
+          "pos": "X",
+          "upos": "X",
+          "xpos": "TRUNC",
+          "feats": {},
+          "start": 22,
+          "end": 29,
+          "analyzer": "spacy_de_core_news_lg",
           "is_main_word": true
         },
         {
-          "surface": "rot.",
-          "surface_en": "red",
-          "furigana": "[ʁoːt]",
-          "pos": "ADJ",
+          "surface": "“",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$(",
+          "feats": {},
+          "start": 29,
+          "end": 30,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "rot",
           "lemma": "rot",
-          "explanation": "Adjective (color); predicative complement specifying how the object is marked.",
-          "difficulty": 4
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "ADJD",
+          "feats": {},
+          "start": 31,
+          "end": 34,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 34,
+          "end": 35,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 5.83
     },
     {
-      "target": "Die Lehrerin erklärt weiter- am Beispiel.",
+      "target": "Die Lehrerin erklärt „weiter-“ anhand eines Beispiels.",
       "reading": "/diː ˈleːʁəʁɪn ɛʁˈklɛːʁt ˈvaɪ̯tɐ am ˈbaɪ̯ʃpiːl/",
       "translations": {
-        "de": "Die Lehrerin erklärt weiter- am Beispiel.",
+        "de": "Die Lehrerin erklärt „weiter-“ anhand eines Beispiels.",
         "ipa": "/diː ˈleːʁəʁɪn ɛʁˈklɛːʁt ˈvaɪ̯tɐ am ˈbaɪ̯ʃpiːl/",
         "en": "The teacher explains weiter- with an example.",
         "es": "La profesora explica weiter- con un ejemplo.",
@@ -338,7 +473,7 @@
         "ru": "Учительница объясняет weiter- на примере.",
         "pt": "A professora explica weiter- com um exemplo.",
         "he": "המורה מסבירה את weiter- בעזרת דוגמה.",
-        "tr": "Öğretmen weiter-ı örnekle açıklıyor.",
+        "tr": "Öğretmen „weiter-“ ifadesini bir örnekle açıklıyor.",
         "vi": "Cô giáo giải thích weiter- bằng một ví dụ.",
         "ar": "المعلمة تشرح weiter- بمثال.",
         "nl": "De lerares legt weiter- uit met een voorbeeld.",
@@ -359,58 +494,114 @@
       "tokens": [
         {
           "surface": "Die",
-          "surface_en": "the",
-          "furigana": "[diː]",
-          "pos": "DET",
           "lemma": "der",
-          "explanation": "Definite article, nominative singular feminine; determines 'Lehrerin'.",
-          "difficulty": 2
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "ART",
+          "feats": {},
+          "start": 0,
+          "end": 3,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "Lehrerin",
-          "surface_en": "teacher (female)",
-          "furigana": "[ˈleːʁəʁɪn]",
-          "pos": "NOUN",
           "lemma": "Lehrerin",
-          "explanation": "Common noun; subject of the clause.",
-          "difficulty": 10
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 4,
+          "end": 12,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "erklärt",
-          "surface_en": "explains",
-          "furigana": "[ɛʁˈklɛːɐ̯t]",
-          "pos": "VERB",
           "lemma": "erklären",
-          "explanation": "Main verb, finite present indicative, 3rd person singular; expresses the act of explaining.",
-          "difficulty": 10
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VVFIN",
+          "feats": {},
+          "start": 13,
+          "end": 20,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "„",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$(",
+          "feats": {},
+          "start": 21,
+          "end": 22,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "weiter-",
-          "surface_en": "further-",
-          "furigana": "[ˈvaɪ̯tɐ]",
-          "pos": "PART",
-          "lemma": "weiter",
-          "explanation": "Separable verbal particle/prefix mentioned as the thing being explained; direct object of 'erklärt'.",
-          "difficulty": 10,
+          "lemma": "weiter-",
+          "pos": "X",
+          "upos": "X",
+          "xpos": "TRUNC",
+          "feats": {},
+          "start": 22,
+          "end": 29,
+          "analyzer": "spacy_de_core_news_lg",
           "is_main_word": true
         },
         {
-          "surface": "am",
-          "surface_en": "at the",
-          "furigana": "[am]",
-          "pos": "ADP",
-          "lemma": "an",
-          "explanation": "Fused preposition+article (an+dem); introduces an instrumental/locative PP (dative).",
-          "difficulty": 2
+          "surface": "“",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$(",
+          "feats": {},
+          "start": 29,
+          "end": 30,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "Beispiel.",
-          "surface_en": "example",
-          "furigana": "[ˈbaɪ̯ʃpiːl]",
-          "pos": "NOUN",
+          "surface": "anhand",
+          "lemma": "anhand",
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "APPR",
+          "feats": {},
+          "start": 31,
+          "end": 37,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "eines",
+          "lemma": "ein",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "ART",
+          "feats": {},
+          "start": 38,
+          "end": 43,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "Beispiels",
           "lemma": "Beispiel",
-          "explanation": "Common noun; object of the preposition 'am', indicating the illustrative means.",
-          "difficulty": 10
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 44,
+          "end": 53,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 53,
+          "end": 54,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 7.33
@@ -427,8 +618,1291 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-15T05:39:27Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:De b1/f66dc38851582702",
+      "revision_id": 84787,
+      "parent_revision_id": 18454,
+      "revision_timestamp_utc": "2026-10-15T05:39:27Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Marked the prefix as a quoted form, improved German word order and phrasing, and made the Turkish references idiomatic.",
+      "pulled_utc": "2026-10-17T07:06:45Z",
+      "applied_utc": "2026-10-17T07:06:54Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-a4dcd2ee15d9aaad",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_b1:f66dc38851582702",
+        "pack_code": "de_b1",
+        "entry_id": "weiter-",
+        "language": "de",
+        "sentence_index": 1,
+        "old_sentence": "Wir sprechen über weiter- im Unterricht.",
+        "old_translations": {
+          "de": "Wir sprechen über weiter- im Unterricht.",
+          "ipa": "/viːɐ̯ ˈʃpʁɛçən ˈyːbɐ ˈvaɪ̯tɐ ɪm ˈʊntɐʁɪçt/",
+          "en": "We talk about weiter- in class.",
+          "es": "Hablamos sobre weiter- en clase.",
+          "fr": "On parle de weiter- en cours.",
+          "it": "In classe parliamo di weiter-.",
+          "ko": "수업에서 weiter-에 대해 이야기해요.",
+          "zh-Hans": "我们在课堂上讨论weiter-。",
+          "yue": "我哋喺課堂上講weiter-。",
+          "ru": "На уроке мы говорим о weiter-.",
+          "pt": "Na aula falamos sobre weiter-.",
+          "he": "אנחנו מדברים על weiter- בכיתה.",
+          "tr": "Derste weiter- hakkında konuşuyoruz.",
+          "vi": "Trong lớp, chúng tôi nói về weiter-.",
+          "ar": "نتحدث عن weiter- في الصف.",
+          "nl": "We praten over weiter- in de les.",
+          "uk": "На уроці ми говоримо про weiter-.",
+          "hu": "Az órán a weiter- témáról beszélünk.",
+          "hi": "कक्षा में हम weiter- के बारे में बात करते हैं.",
+          "pl": "Na lekcji rozmawiamy o weiter-.",
+          "el": "Στο μάθημα μιλάμε για το weiter-.",
+          "nb": "Vi snakker om weiter- i timen.",
+          "id": "Di kelas kami membicarakan weiter-.",
+          "sv": "Vi pratar om weiter- på lektionen.",
+          "ro": "La clasă vorbim despre weiter-.",
+          "cs": "Ve třídě mluvíme o weiter-.",
+          "da": "Vi taler om weiter- i timen.",
+          "fi": "Tunnilla puhumme weiter-ista.",
+          "ja": "授業でweiter-について話します。"
+        },
+        "proposed_sentence": "Wir sprechen im Unterricht über „weiter-“.",
+        "proposed_translations": {
+          "de": "Wir sprechen im Unterricht über „weiter-“.",
+          "ipa": "/viːɐ̯ ˈʃpʁɛçən ˈyːbɐ ˈvaɪ̯tɐ ɪm ˈʊntɐʁɪçt/",
+          "en": "We talk about weiter- in class.",
+          "es": "Hablamos sobre weiter- en clase.",
+          "fr": "On parle de weiter- en cours.",
+          "it": "In classe parliamo di weiter-.",
+          "ko": "수업에서 weiter-에 대해 이야기해요.",
+          "zh-Hans": "我们在课堂上讨论weiter-。",
+          "yue": "我哋喺課堂上講weiter-。",
+          "ru": "На уроке мы говорим о weiter-.",
+          "pt": "Na aula falamos sobre weiter-.",
+          "he": "אנחנו מדברים על weiter- בכיתה.",
+          "tr": "Derste weiter- hakkında konuşuyoruz.",
+          "vi": "Trong lớp, chúng tôi nói về weiter-.",
+          "ar": "نتحدث عن weiter- في الصف.",
+          "nl": "We praten over weiter- in de les.",
+          "uk": "На уроці ми говоримо про weiter-.",
+          "hu": "Az órán a weiter- témáról beszélünk.",
+          "hi": "कक्षा में हम weiter- के बारे में बात करते हैं.",
+          "pl": "Na lekcji rozmawiamy o weiter-.",
+          "el": "Στο μάθημα μιλάμε για το weiter-.",
+          "nb": "Vi snakker om weiter- i timen.",
+          "id": "Di kelas kami membicarakan weiter-.",
+          "sv": "Vi pratar om weiter- på lektionen.",
+          "ro": "La clasă vorbim despre weiter-.",
+          "cs": "Ve třídě mluvíme o weiter-.",
+          "da": "Vi taler om weiter- i timen.",
+          "fi": "Tunnilla puhumme weiter-ista.",
+          "ja": "授業でweiter-について話します。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Wir sprechen im Unterricht über „weiter-“.",
+        "old_japanese": "Wir sprechen über weiter- im Unterricht.",
+        "old_english": "We talk about weiter- in class.",
+        "proposed_japanese": "Wir sprechen im Unterricht über „weiter-“.",
+        "proposed_english": "We talk about weiter- in class.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Wir sprechen im Unterricht über „weiter-“.",
+          "tokens": [
+            {
+              "surface": "Wir",
+              "lemma": "wir",
+              "pos": "PRON",
+              "upos": "PRON",
+              "xpos": "PPER",
+              "feats": {},
+              "start": 0,
+              "end": 3,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "sprechen",
+              "lemma": "sprechen",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVFIN",
+              "feats": {},
+              "start": 4,
+              "end": 12,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "im",
+              "lemma": "in",
+              "pos": "ADP",
+              "upos": "ADP",
+              "xpos": "APPRART",
+              "feats": {},
+              "start": 13,
+              "end": 15,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Unterricht",
+              "lemma": "Unterricht",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 16,
+              "end": 26,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "über",
+              "lemma": "über",
+              "pos": "ADP",
+              "upos": "ADP",
+              "xpos": "APPR",
+              "feats": {},
+              "start": 27,
+              "end": 31,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "„",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$(",
+              "feats": {},
+              "start": 32,
+              "end": 33,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "weiter-",
+              "lemma": "weiter-",
+              "pos": "X",
+              "upos": "X",
+              "xpos": "TRUNC",
+              "feats": {},
+              "start": 33,
+              "end": 40,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "“",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$(",
+              "feats": {},
+              "start": 40,
+              "end": 41,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 41,
+              "end": 42,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Wir",
+            "lemma": "wir",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "sprechen",
+            "lemma": "sprechen",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 4,
+            "end": 12,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "im",
+            "lemma": "in",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPRART",
+            "feats": {},
+            "start": 13,
+            "end": 15,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Unterricht",
+            "lemma": "Unterricht",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 16,
+            "end": 26,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "über",
+            "lemma": "über",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 27,
+            "end": 31,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "„",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$(",
+            "feats": {},
+            "start": 32,
+            "end": 33,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "weiter-",
+            "lemma": "weiter-",
+            "pos": "X",
+            "upos": "X",
+            "xpos": "TRUNC",
+            "feats": {},
+            "start": 33,
+            "end": 40,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "“",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$(",
+            "feats": {},
+            "start": 40,
+            "end": 41,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 41,
+            "end": 42,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:06:45Z",
+        "updated_utc": "2026-10-17T07:07:06Z",
+        "applied_utc": "2026-10-17T07:07:06Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      },
+      {
+        "id": "sentprop-e46ee814a6bdd596",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_b1:f66dc38851582702",
+        "pack_code": "de_b1",
+        "entry_id": "weiter-",
+        "language": "de",
+        "sentence_index": 2,
+        "old_sentence": "Du setzt weiter- vor das Verb.",
+        "old_translations": {
+          "de": "Du setzt weiter- vor das Verb.",
+          "ipa": "/duː zɛtst ˈvaɪ̯tɐ foːɐ̯ das vɛʁp/",
+          "en": "You put weiter- before the verb.",
+          "es": "Pones weiter- antes del verbo.",
+          "fr": "Tu mets weiter- avant le verbe.",
+          "it": "Metti weiter- prima del verbo.",
+          "ko": "동사 앞에 weiter-를 붙여.",
+          "zh-Hans": "你把weiter-加在动词前面。",
+          "yue": "你喺動詞前面加weiter-。",
+          "ru": "Ты ставишь weiter- перед глаголом.",
+          "pt": "Você coloca weiter- antes do verbo.",
+          "he": "אתה שם את weiter- לפני הפועל.",
+          "tr": "Fiilin önüne weiter- koyarsın.",
+          "vi": "Bạn đặt weiter- trước động từ.",
+          "ar": "تضع weiter- قبل الفعل.",
+          "nl": "Je zet weiter- voor het werkwoord.",
+          "uk": "Ти ставиш weiter- перед дієсловом.",
+          "hu": "A weiter-t az ige elé teszed.",
+          "hi": "तुम क्रिया से पहले weiter- लगाते हो.",
+          "pl": "Stawiasz weiter- przed czasownikiem.",
+          "el": "Βάζεις το weiter- πριν από το ρήμα.",
+          "nb": "Du setter weiter- foran verbet.",
+          "id": "Kamu menaruh weiter- sebelum kata kerja.",
+          "sv": "Du sätter weiter- före verbet.",
+          "ro": "Pui weiter- înaintea verbului.",
+          "cs": "Dáváš weiter- před sloveso.",
+          "da": "Du sætter weiter- foran verbet.",
+          "fi": "Laitat weiter- ennen verbiä.",
+          "ja": "動詞の前にweiter-を付ける。"
+        },
+        "proposed_sentence": "Du setzt „weiter-“ vor das Verb.",
+        "proposed_translations": {
+          "de": "Du setzt „weiter-“ vor das Verb.",
+          "ipa": "/duː zɛtst ˈvaɪ̯tɐ foːɐ̯ das vɛʁp/",
+          "en": "You put weiter- before the verb.",
+          "es": "Pones weiter- antes del verbo.",
+          "fr": "Tu mets weiter- avant le verbe.",
+          "it": "Metti weiter- prima del verbo.",
+          "ko": "동사 앞에 weiter-를 붙여.",
+          "zh-Hans": "你把weiter-加在动词前面。",
+          "yue": "你喺動詞前面加weiter-。",
+          "ru": "Ты ставишь weiter- перед глаголом.",
+          "pt": "Você coloca weiter- antes do verbo.",
+          "he": "אתה שם את weiter- לפני הפועל.",
+          "tr": "Fiilin önüne weiter- koyarsın.",
+          "vi": "Bạn đặt weiter- trước động từ.",
+          "ar": "تضع weiter- قبل الفعل.",
+          "nl": "Je zet weiter- voor het werkwoord.",
+          "uk": "Ти ставиш weiter- перед дієсловом.",
+          "hu": "A weiter-t az ige elé teszed.",
+          "hi": "तुम क्रिया से पहले weiter- लगाते हो.",
+          "pl": "Stawiasz weiter- przed czasownikiem.",
+          "el": "Βάζεις το weiter- πριν από το ρήμα.",
+          "nb": "Du setter weiter- foran verbet.",
+          "id": "Kamu menaruh weiter- sebelum kata kerja.",
+          "sv": "Du sätter weiter- före verbet.",
+          "ro": "Pui weiter- înaintea verbului.",
+          "cs": "Dáváš weiter- před sloveso.",
+          "da": "Du sætter weiter- foran verbet.",
+          "fi": "Laitat weiter- ennen verbiä.",
+          "ja": "動詞の前にweiter-を付ける。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Du setzt „weiter-“ vor das Verb.",
+        "old_japanese": "Du setzt weiter- vor das Verb.",
+        "old_english": "You put weiter- before the verb.",
+        "proposed_japanese": "Du setzt „weiter-“ vor das Verb.",
+        "proposed_english": "You put weiter- before the verb.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Du setzt „weiter-“ vor das Verb.",
+          "tokens": [
+            {
+              "surface": "Du",
+              "lemma": "du",
+              "pos": "PRON",
+              "upos": "PRON",
+              "xpos": "PPER",
+              "feats": {},
+              "start": 0,
+              "end": 2,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "setzt",
+              "lemma": "setzen",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVFIN",
+              "feats": {},
+              "start": 3,
+              "end": 8,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "„",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$(",
+              "feats": {},
+              "start": 9,
+              "end": 10,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "weiter-",
+              "lemma": "weiter-",
+              "pos": "X",
+              "upos": "X",
+              "xpos": "TRUNC",
+              "feats": {},
+              "start": 10,
+              "end": 17,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "“",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$(",
+              "feats": {},
+              "start": 17,
+              "end": 18,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "vor",
+              "lemma": "vor",
+              "pos": "ADP",
+              "upos": "ADP",
+              "xpos": "APPR",
+              "feats": {},
+              "start": 19,
+              "end": 22,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "das",
+              "lemma": "der",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "ART",
+              "feats": {},
+              "start": 23,
+              "end": 26,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Verb",
+              "lemma": "Verb",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 27,
+              "end": 31,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 31,
+              "end": 32,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Du",
+            "lemma": "du",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "setzt",
+            "lemma": "setzen",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 3,
+            "end": 8,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "„",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$(",
+            "feats": {},
+            "start": 9,
+            "end": 10,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "weiter-",
+            "lemma": "weiter-",
+            "pos": "X",
+            "upos": "X",
+            "xpos": "TRUNC",
+            "feats": {},
+            "start": 10,
+            "end": 17,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "“",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$(",
+            "feats": {},
+            "start": 17,
+            "end": 18,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "vor",
+            "lemma": "vor",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 19,
+            "end": 22,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "das",
+            "lemma": "der",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 23,
+            "end": 26,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Verb",
+            "lemma": "Verb",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 27,
+            "end": 31,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 31,
+            "end": 32,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:06:45Z",
+        "updated_utc": "2026-10-17T07:07:06Z",
+        "applied_utc": "2026-10-17T07:07:06Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      },
+      {
+        "id": "sentprop-0cfe30a01534c394",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_b1:f66dc38851582702",
+        "pack_code": "de_b1",
+        "entry_id": "weiter-",
+        "language": "de",
+        "sentence_index": 3,
+        "old_sentence": "Im Heft markiere ich weiter- rot.",
+        "old_translations": {
+          "de": "Im Heft markiere ich weiter- rot.",
+          "ipa": "/ɪm hɛft maʁˈkiːʁə ɪç ˈvaɪ̯tɐ ʁoːt/",
+          "en": "In the notebook, I mark weiter- in red.",
+          "es": "En el cuaderno marco weiter- en rojo.",
+          "fr": "Dans le cahier, je surligne weiter- en rouge.",
+          "it": "Sul quaderno evidenzio weiter- in rosso.",
+          "ko": "공책에 weiter-를 빨간색으로 표시해요.",
+          "zh-Hans": "我在本子里把weiter-用红色标出来。",
+          "yue": "我喺筆記本用紅色標示weiter-。",
+          "ru": "В тетради я выделяю weiter- красным.",
+          "pt": "No caderno, eu destaco weiter- em vermelho.",
+          "he": "במחברת אני מסמן את weiter- באדום.",
+          "tr": "Defterde weiter-ı kırmızıyla işaretliyorum.",
+          "vi": "Trong vở, tôi đánh dấu weiter- bằng màu đỏ.",
+          "ar": "في الدفتر، أُبرز weiter- باللون الأحمر.",
+          "nl": "In het schrift markeer ik weiter- in het rood.",
+          "uk": "У зошиті я виділяю weiter- червоним.",
+          "hu": "A füzetben pirossal megjelölöm a weiter-t.",
+          "hi": "कापी में मैं weiter- को लाल रंग से चिन्हित करता हूँ.",
+          "pl": "W zeszycie zaznaczam weiter- na czerwono.",
+          "el": "Στο τετράδιο σημειώνω το weiter- με κόκκινο.",
+          "nb": "I kladdeboka markerer jeg weiter- i rødt.",
+          "id": "Di buku catatan, saya menandai weiter- dengan warna merah.",
+          "sv": "I häftet markerar jag weiter- med rött.",
+          "ro": "În caiet, evidențiez weiter- cu roșu.",
+          "cs": "V sešitě zvýrazňuji weiter- červeně.",
+          "da": "I hæftet markerer jeg weiter- med rødt.",
+          "fi": "Vihkoon merkitsen weiter- punaisella.",
+          "ja": "ノートにweiter-を赤でマークします。"
+        },
+        "proposed_sentence": "Im Heft markiere ich „weiter-“ rot.",
+        "proposed_translations": {
+          "de": "Im Heft markiere ich „weiter-“ rot.",
+          "ipa": "/ɪm hɛft maʁˈkiːʁə ɪç ˈvaɪ̯tɐ ʁoːt/",
+          "en": "In the notebook, I mark weiter- in red.",
+          "es": "En el cuaderno marco weiter- en rojo.",
+          "fr": "Dans le cahier, je surligne weiter- en rouge.",
+          "it": "Sul quaderno evidenzio weiter- in rosso.",
+          "ko": "공책에 weiter-를 빨간색으로 표시해요.",
+          "zh-Hans": "我在本子里把weiter-用红色标出来。",
+          "yue": "我喺筆記本用紅色標示weiter-。",
+          "ru": "В тетради я выделяю weiter- красным.",
+          "pt": "No caderno, eu destaco weiter- em vermelho.",
+          "he": "במחברת אני מסמן את weiter- באדום.",
+          "tr": "Defterimde „weiter-“ ifadesini kırmızıyla işaretliyorum.",
+          "vi": "Trong vở, tôi đánh dấu weiter- bằng màu đỏ.",
+          "ar": "في الدفتر، أُبرز weiter- باللون الأحمر.",
+          "nl": "In het schrift markeer ik weiter- in het rood.",
+          "uk": "У зошиті я виділяю weiter- червоним.",
+          "hu": "A füzetben pirossal megjelölöm a weiter-t.",
+          "hi": "कापी में मैं weiter- को लाल रंग से चिन्हित करता हूँ.",
+          "pl": "W zeszycie zaznaczam weiter- na czerwono.",
+          "el": "Στο τετράδιο σημειώνω το weiter- με κόκκινο.",
+          "nb": "I kladdeboka markerer jeg weiter- i rødt.",
+          "id": "Di buku catatan, saya menandai weiter- dengan warna merah.",
+          "sv": "I häftet markerar jag weiter- med rött.",
+          "ro": "În caiet, evidențiez weiter- cu roșu.",
+          "cs": "V sešitě zvýrazňuji weiter- červeně.",
+          "da": "I hæftet markerer jeg weiter- med rødt.",
+          "fi": "Vihkoon merkitsen weiter- punaisella.",
+          "ja": "ノートにweiter-を赤でマークします。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Im Heft markiere ich „weiter-“ rot.",
+        "old_japanese": "Im Heft markiere ich weiter- rot.",
+        "old_english": "In the notebook, I mark weiter- in red.",
+        "proposed_japanese": "Im Heft markiere ich „weiter-“ rot.",
+        "proposed_english": "In the notebook, I mark weiter- in red.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Im Heft markiere ich „weiter-“ rot.",
+          "tokens": [
+            {
+              "surface": "Im",
+              "lemma": "in",
+              "pos": "ADP",
+              "upos": "ADP",
+              "xpos": "APPRART",
+              "feats": {},
+              "start": 0,
+              "end": 2,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Heft",
+              "lemma": "Heft",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 3,
+              "end": 7,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "markiere",
+              "lemma": "markieren",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVFIN",
+              "feats": {},
+              "start": 8,
+              "end": 16,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "ich",
+              "lemma": "ich",
+              "pos": "PRON",
+              "upos": "PRON",
+              "xpos": "PPER",
+              "feats": {},
+              "start": 17,
+              "end": 20,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "„",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$(",
+              "feats": {},
+              "start": 21,
+              "end": 22,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "weiter-",
+              "lemma": "weiter-",
+              "pos": "X",
+              "upos": "X",
+              "xpos": "TRUNC",
+              "feats": {},
+              "start": 22,
+              "end": 29,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "“",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$(",
+              "feats": {},
+              "start": 29,
+              "end": 30,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "rot",
+              "lemma": "rot",
+              "pos": "ADV",
+              "upos": "ADV",
+              "xpos": "ADJD",
+              "feats": {},
+              "start": 31,
+              "end": 34,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 34,
+              "end": 35,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Im",
+            "lemma": "in",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPRART",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Heft",
+            "lemma": "Heft",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 3,
+            "end": 7,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "markiere",
+            "lemma": "markieren",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 8,
+            "end": 16,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "ich",
+            "lemma": "ich",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 17,
+            "end": 20,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "„",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$(",
+            "feats": {},
+            "start": 21,
+            "end": 22,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "weiter-",
+            "lemma": "weiter-",
+            "pos": "X",
+            "upos": "X",
+            "xpos": "TRUNC",
+            "feats": {},
+            "start": 22,
+            "end": 29,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "“",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$(",
+            "feats": {},
+            "start": 29,
+            "end": 30,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "rot",
+            "lemma": "rot",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADJD",
+            "feats": {},
+            "start": 31,
+            "end": 34,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 34,
+            "end": 35,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:06:45Z",
+        "updated_utc": "2026-10-17T07:07:06Z",
+        "applied_utc": "2026-10-17T07:07:06Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      },
+      {
+        "id": "sentprop-7a3788e897c0e35a",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_b1:f66dc38851582702",
+        "pack_code": "de_b1",
+        "entry_id": "weiter-",
+        "language": "de",
+        "sentence_index": 4,
+        "old_sentence": "Die Lehrerin erklärt weiter- am Beispiel.",
+        "old_translations": {
+          "de": "Die Lehrerin erklärt weiter- am Beispiel.",
+          "ipa": "/diː ˈleːʁəʁɪn ɛʁˈklɛːʁt ˈvaɪ̯tɐ am ˈbaɪ̯ʃpiːl/",
+          "en": "The teacher explains weiter- with an example.",
+          "es": "La profesora explica weiter- con un ejemplo.",
+          "fr": "La professeure explique weiter- avec un exemple.",
+          "it": "L'insegnante spiega weiter- con un esempio.",
+          "ko": "선생님이 예를 들어 weiter-를 설명해요.",
+          "zh-Hans": "老师用例子讲解weiter-。",
+          "yue": "老師用例子解釋weiter-。",
+          "ru": "Учительница объясняет weiter- на примере.",
+          "pt": "A professora explica weiter- com um exemplo.",
+          "he": "המורה מסבירה את weiter- בעזרת דוגמה.",
+          "tr": "Öğretmen weiter-ı örnekle açıklıyor.",
+          "vi": "Cô giáo giải thích weiter- bằng một ví dụ.",
+          "ar": "المعلمة تشرح weiter- بمثال.",
+          "nl": "De lerares legt weiter- uit met een voorbeeld.",
+          "uk": "Вчителька пояснює weiter- на прикладі.",
+          "hu": "A tanárnő példával magyarázza a weiter-t.",
+          "hi": "अध्यापिका उदाहरण से weiter- समझाती है.",
+          "pl": "Nauczycielka wyjaśnia weiter- na przykładzie.",
+          "el": "Η δασκάλα εξηγεί το weiter- με ένα παράδειγμα.",
+          "nb": "Læreren forklarer weiter- med et eksempel.",
+          "id": "Guru menjelaskan weiter- dengan contoh.",
+          "sv": "Läraren förklarar weiter- med ett exempel.",
+          "ro": "Profesoara explică weiter- cu un exemplu.",
+          "cs": "Učitelka vysvětluje weiter- na příkladu.",
+          "da": "Læreren forklarer weiter- med et eksempel.",
+          "fi": "Opettaja selittää weiter- esimerkin avulla.",
+          "ja": "先生は例を使ってweiter-を説明します。"
+        },
+        "proposed_sentence": "Die Lehrerin erklärt „weiter-“ anhand eines Beispiels.",
+        "proposed_translations": {
+          "de": "Die Lehrerin erklärt „weiter-“ anhand eines Beispiels.",
+          "ipa": "/diː ˈleːʁəʁɪn ɛʁˈklɛːʁt ˈvaɪ̯tɐ am ˈbaɪ̯ʃpiːl/",
+          "en": "The teacher explains weiter- with an example.",
+          "es": "La profesora explica weiter- con un ejemplo.",
+          "fr": "La professeure explique weiter- avec un exemple.",
+          "it": "L'insegnante spiega weiter- con un esempio.",
+          "ko": "선생님이 예를 들어 weiter-를 설명해요.",
+          "zh-Hans": "老师用例子讲解weiter-。",
+          "yue": "老師用例子解釋weiter-。",
+          "ru": "Учительница объясняет weiter- на примере.",
+          "pt": "A professora explica weiter- com um exemplo.",
+          "he": "המורה מסבירה את weiter- בעזרת דוגמה.",
+          "tr": "Öğretmen „weiter-“ ifadesini bir örnekle açıklıyor.",
+          "vi": "Cô giáo giải thích weiter- bằng một ví dụ.",
+          "ar": "المعلمة تشرح weiter- بمثال.",
+          "nl": "De lerares legt weiter- uit met een voorbeeld.",
+          "uk": "Вчителька пояснює weiter- на прикладі.",
+          "hu": "A tanárnő példával magyarázza a weiter-t.",
+          "hi": "अध्यापिका उदाहरण से weiter- समझाती है.",
+          "pl": "Nauczycielka wyjaśnia weiter- na przykładzie.",
+          "el": "Η δασκάλα εξηγεί το weiter- με ένα παράδειγμα.",
+          "nb": "Læreren forklarer weiter- med et eksempel.",
+          "id": "Guru menjelaskan weiter- dengan contoh.",
+          "sv": "Läraren förklarar weiter- med ett exempel.",
+          "ro": "Profesoara explică weiter- cu un exemplu.",
+          "cs": "Učitelka vysvětluje weiter- na příkladu.",
+          "da": "Læreren forklarer weiter- med et eksempel.",
+          "fi": "Opettaja selittää weiter- esimerkin avulla.",
+          "ja": "先生は例を使ってweiter-を説明します。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Die Lehrerin erklärt „weiter-“ anhand eines Beispiels.",
+        "old_japanese": "Die Lehrerin erklärt weiter- am Beispiel.",
+        "old_english": "The teacher explains weiter- with an example.",
+        "proposed_japanese": "Die Lehrerin erklärt „weiter-“ anhand eines Beispiels.",
+        "proposed_english": "The teacher explains weiter- with an example.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Die Lehrerin erklärt „weiter-“ anhand eines Beispiels.",
+          "tokens": [
+            {
+              "surface": "Die",
+              "lemma": "der",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "ART",
+              "feats": {},
+              "start": 0,
+              "end": 3,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Lehrerin",
+              "lemma": "Lehrerin",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 4,
+              "end": 12,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "erklärt",
+              "lemma": "erklären",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVFIN",
+              "feats": {},
+              "start": 13,
+              "end": 20,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "„",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$(",
+              "feats": {},
+              "start": 21,
+              "end": 22,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "weiter-",
+              "lemma": "weiter-",
+              "pos": "X",
+              "upos": "X",
+              "xpos": "TRUNC",
+              "feats": {},
+              "start": 22,
+              "end": 29,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "“",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$(",
+              "feats": {},
+              "start": 29,
+              "end": 30,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "anhand",
+              "lemma": "anhand",
+              "pos": "ADP",
+              "upos": "ADP",
+              "xpos": "APPR",
+              "feats": {},
+              "start": 31,
+              "end": 37,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "eines",
+              "lemma": "ein",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "ART",
+              "feats": {},
+              "start": 38,
+              "end": 43,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Beispiels",
+              "lemma": "Beispiel",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 44,
+              "end": 53,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 53,
+              "end": 54,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Die",
+            "lemma": "der",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Lehrerin",
+            "lemma": "Lehrerin",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 4,
+            "end": 12,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "erklärt",
+            "lemma": "erklären",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 13,
+            "end": 20,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "„",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$(",
+            "feats": {},
+            "start": 21,
+            "end": 22,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "weiter-",
+            "lemma": "weiter-",
+            "pos": "X",
+            "upos": "X",
+            "xpos": "TRUNC",
+            "feats": {},
+            "start": 22,
+            "end": 29,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "“",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$(",
+            "feats": {},
+            "start": 29,
+            "end": 30,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "anhand",
+            "lemma": "anhand",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 31,
+            "end": 37,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "eines",
+            "lemma": "ein",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 38,
+            "end": 43,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Beispiels",
+            "lemma": "Beispiel",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 44,
+            "end": 53,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 53,
+            "end": 54,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:06:45Z",
+        "updated_utc": "2026-10-17T07:07:06Z",
+        "applied_utc": "2026-10-17T07:07:06Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:07:06Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -440,6 +1914,458 @@
     "word": "weiter-",
     "word_reading": "",
     "word_label": "Affix",
+    "comic_difficulty": 6.04,
+    "jp": [
+      "Wir sprechen über weiter- im Unterricht.",
+      "Du setzt weiter- vor das Verb.",
+      "Im Heft markiere ich weiter- rot.",
+      "Die Lehrerin erklärt weiter- am Beispiel."
+    ],
+    "fu": [
+      "/viːɐ̯ ˈʃpʁɛçən ˈyːbɐ ˈvaɪ̯tɐ ɪm ˈʊntɐʁɪçt/",
+      "/duː zɛtst ˈvaɪ̯tɐ foːɐ̯ das vɛʁp/",
+      "/ɪm hɛft maʁˈkiːʁə ɪç ˈvaɪ̯tɐ ʁoːt/",
+      "/diː ˈleːʁəʁɪn ɛʁˈklɛːʁt ˈvaɪ̯tɐ am ˈbaɪ̯ʃpiːl/"
+    ],
+    "pos_analysis": [
+      {
+        "sentence": "Wir sprechen im Unterricht über „weiter-“.",
+        "tokens": [
+          {
+            "surface": "Wir",
+            "lemma": "wir",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "sprechen",
+            "lemma": "sprechen",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 4,
+            "end": 12,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "im",
+            "lemma": "in",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPRART",
+            "feats": {},
+            "start": 13,
+            "end": 15,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Unterricht",
+            "lemma": "Unterricht",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 16,
+            "end": 26,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "über",
+            "lemma": "über",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 27,
+            "end": 31,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "„",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$(",
+            "feats": {},
+            "start": 32,
+            "end": 33,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "weiter-",
+            "lemma": "weiter-",
+            "pos": "X",
+            "upos": "X",
+            "xpos": "TRUNC",
+            "feats": {},
+            "start": 33,
+            "end": 40,
+            "analyzer": "spacy_de_core_news_lg",
+            "is_main_word": true
+          },
+          {
+            "surface": "“",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$(",
+            "feats": {},
+            "start": 40,
+            "end": 41,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 41,
+            "end": 42,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "difficulty_aggregated": 6
+      },
+      {
+        "sentence": "Du setzt „weiter-“ vor das Verb.",
+        "tokens": [
+          {
+            "surface": "Du",
+            "lemma": "du",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "setzt",
+            "lemma": "setzen",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 3,
+            "end": 8,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "„",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$(",
+            "feats": {},
+            "start": 9,
+            "end": 10,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "weiter-",
+            "lemma": "weiter-",
+            "pos": "X",
+            "upos": "X",
+            "xpos": "TRUNC",
+            "feats": {},
+            "start": 10,
+            "end": 17,
+            "analyzer": "spacy_de_core_news_lg",
+            "is_main_word": true
+          },
+          {
+            "surface": "“",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$(",
+            "feats": {},
+            "start": 17,
+            "end": 18,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "vor",
+            "lemma": "vor",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 19,
+            "end": 22,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "das",
+            "lemma": "der",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 23,
+            "end": 26,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Verb",
+            "lemma": "Verb",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 27,
+            "end": 31,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 31,
+            "end": 32,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "difficulty_aggregated": 5
+      },
+      {
+        "sentence": "Im Heft markiere ich „weiter-“ rot.",
+        "tokens": [
+          {
+            "surface": "Im",
+            "lemma": "in",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPRART",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Heft",
+            "lemma": "Heft",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 3,
+            "end": 7,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "markiere",
+            "lemma": "markieren",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 8,
+            "end": 16,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "ich",
+            "lemma": "ich",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 17,
+            "end": 20,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "„",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$(",
+            "feats": {},
+            "start": 21,
+            "end": 22,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "weiter-",
+            "lemma": "weiter-",
+            "pos": "X",
+            "upos": "X",
+            "xpos": "TRUNC",
+            "feats": {},
+            "start": 22,
+            "end": 29,
+            "analyzer": "spacy_de_core_news_lg",
+            "is_main_word": true
+          },
+          {
+            "surface": "“",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$(",
+            "feats": {},
+            "start": 29,
+            "end": 30,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "rot",
+            "lemma": "rot",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADJD",
+            "feats": {},
+            "start": 31,
+            "end": 34,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 34,
+            "end": 35,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "difficulty_aggregated": 5.83
+      },
+      {
+        "sentence": "Die Lehrerin erklärt „weiter-“ anhand eines Beispiels.",
+        "tokens": [
+          {
+            "surface": "Die",
+            "lemma": "der",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Lehrerin",
+            "lemma": "Lehrerin",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 4,
+            "end": 12,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "erklärt",
+            "lemma": "erklären",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 13,
+            "end": 20,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "„",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$(",
+            "feats": {},
+            "start": 21,
+            "end": 22,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "weiter-",
+            "lemma": "weiter-",
+            "pos": "X",
+            "upos": "X",
+            "xpos": "TRUNC",
+            "feats": {},
+            "start": 22,
+            "end": 29,
+            "analyzer": "spacy_de_core_news_lg",
+            "is_main_word": true
+          },
+          {
+            "surface": "“",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$(",
+            "feats": {},
+            "start": 29,
+            "end": 30,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "anhand",
+            "lemma": "anhand",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 31,
+            "end": 37,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "eines",
+            "lemma": "ein",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 38,
+            "end": 43,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Beispiels",
+            "lemma": "Beispiel",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 44,
+            "end": 53,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 53,
+            "end": 54,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "difficulty_aggregated": 7.33
+      }
+    ],
+    "word_POS": "Other",
+    "entry_id": "weiter-",
     "word_en": "continue-; further-",
     "word_es": "continuar; adicional",
     "word_fr": "continuer; supplémentaire",
@@ -468,414 +2394,11 @@
     "word_fi": "jatkaa; lisä",
     "word_ja": "続ける; 追加の",
     "word_de": "weiter-",
-    "comic_difficulty": 6.04,
-    "jp": [
-      "Wir sprechen über weiter- im Unterricht.",
-      "Du setzt weiter- vor das Verb.",
-      "Im Heft markiere ich weiter- rot.",
-      "Die Lehrerin erklärt weiter- am Beispiel."
-    ],
-    "fu": [
-      "/viːɐ̯ ˈʃpʁɛçən ˈyːbɐ ˈvaɪ̯tɐ ɪm ˈʊntɐʁɪçt/",
-      "/duː zɛtst ˈvaɪ̯tɐ foːɐ̯ das vɛʁp/",
-      "/ɪm hɛft maʁˈkiːʁə ɪç ˈvaɪ̯tɐ ʁoːt/",
-      "/diː ˈleːʁəʁɪn ɛʁˈklɛːʁt ˈvaɪ̯tɐ am ˈbaɪ̯ʃpiːl/"
-    ],
-    "de": [
-      "Wir sprechen über weiter- im Unterricht.",
-      "Du setzt weiter- vor das Verb.",
-      "Im Heft markiere ich weiter- rot.",
-      "Die Lehrerin erklärt weiter- am Beispiel."
-    ],
-    "ipa": [
-      "/viːɐ̯ ˈʃpʁɛçən ˈyːbɐ ˈvaɪ̯tɐ ɪm ˈʊntɐʁɪçt/",
-      "/duː zɛtst ˈvaɪ̯tɐ foːɐ̯ das vɛʁp/",
-      "/ɪm hɛft maʁˈkiːʁə ɪç ˈvaɪ̯tɐ ʁoːt/",
-      "/diː ˈleːʁəʁɪn ɛʁˈklɛːʁt ˈvaɪ̯tɐ am ˈbaɪ̯ʃpiːl/"
-    ],
-    "en": [
-      "We talk about weiter- in class.",
-      "You put weiter- before the verb.",
-      "In the notebook, I mark weiter- in red.",
-      "The teacher explains weiter- with an example."
-    ],
-    "pos_analysis": [
-      {
-        "sentence": "Wir sprechen über weiter- im Unterricht.",
-        "tokens": [
-          {
-            "surface": "Wir",
-            "surface_en": "we",
-            "furigana": "[viːɐ̯]",
-            "pos": "PRON",
-            "lemma": "wir",
-            "explanation": "Personal pronoun, 1st person plural, nominative; subject of the clause.",
-            "difficulty": 2
-          },
-          {
-            "surface": "sprechen",
-            "surface_en": "speak",
-            "furigana": "[ˈʃpʁɛçən]",
-            "pos": "VERB",
-            "lemma": "sprechen",
-            "explanation": "Main verb, finite present indicative, 1st person plural; predicates the act of speaking.",
-            "difficulty": 10
-          },
-          {
-            "surface": "über",
-            "surface_en": "about",
-            "furigana": "[ˈyːbɐ]",
-            "pos": "ADP",
-            "lemma": "über",
-            "explanation": "Preposition governing accusative; introduces the topic of conversation.",
-            "difficulty": 2
-          },
-          {
-            "surface": "weiter-",
-            "surface_en": "further-",
-            "furigana": "[ˈvaɪ̯tɐ]",
-            "pos": "PART",
-            "lemma": "weiter",
-            "explanation": "Separable verbal particle/prefix used metalinguistically; here the prepositional object of 'über'.",
-            "difficulty": 10,
-            "is_main_word": true
-          },
-          {
-            "surface": "im",
-            "surface_en": "in the",
-            "furigana": "[ɪm]",
-            "pos": "ADP",
-            "lemma": "in",
-            "explanation": "Fused preposition+article (in+dem); marks location (dative) for the PP.",
-            "difficulty": 2
-          },
-          {
-            "surface": "Unterricht.",
-            "surface_en": "class",
-            "furigana": "[ˈʊntɐʁɪçt]",
-            "pos": "NOUN",
-            "lemma": "Unterricht",
-            "explanation": "Common noun; object of the preposition 'im', indicating the setting.",
-            "difficulty": 10
-          }
-        ],
-        "difficulty_aggregated": 6
-      },
-      {
-        "sentence": "Du setzt weiter- vor das Verb.",
-        "tokens": [
-          {
-            "surface": "Du",
-            "surface_en": "you",
-            "furigana": "[duː]",
-            "pos": "PRON",
-            "lemma": "du",
-            "explanation": "Personal pronoun, 2nd person singular, nominative; subject.",
-            "difficulty": 2
-          },
-          {
-            "surface": "setzt",
-            "surface_en": "put",
-            "furigana": "[zɛt͡st]",
-            "pos": "VERB",
-            "lemma": "setzen",
-            "explanation": "Main verb, finite present indicative, 2nd person singular; denotes placing.",
-            "difficulty": 7
-          },
-          {
-            "surface": "weiter-",
-            "surface_en": "further-",
-            "furigana": "[ˈvaɪ̯tɐ]",
-            "pos": "PART",
-            "lemma": "weiter",
-            "explanation": "Separable verbal particle/prefix named as the item being placed; direct object of 'setzt'.",
-            "difficulty": 10,
-            "is_main_word": true
-          },
-          {
-            "surface": "vor",
-            "surface_en": "before",
-            "furigana": "[foːɐ̯]",
-            "pos": "ADP",
-            "lemma": "vor",
-            "explanation": "Preposition (here with accusative, directional); indicates position relative to the verb.",
-            "difficulty": 2
-          },
-          {
-            "surface": "das",
-            "surface_en": "the",
-            "furigana": "[das]",
-            "pos": "DET",
-            "lemma": "der",
-            "explanation": "Definite article, accusative singular neuter; determines 'Verb'.",
-            "difficulty": 2
-          },
-          {
-            "surface": "Verb.",
-            "surface_en": "verb",
-            "furigana": "[vɛʁp]",
-            "pos": "NOUN",
-            "lemma": "Verb",
-            "explanation": "Common noun; object of the preposition 'vor'.",
-            "difficulty": 7
-          }
-        ],
-        "difficulty_aggregated": 5
-      },
-      {
-        "sentence": "Im Heft markiere ich weiter- rot.",
-        "tokens": [
-          {
-            "surface": "Im",
-            "surface_en": "in the",
-            "furigana": "[ɪm]",
-            "pos": "ADP",
-            "lemma": "in",
-            "explanation": "Fused preposition+article (in+dem); introduces a locative PP (dative).",
-            "difficulty": 2
-          },
-          {
-            "surface": "Heft",
-            "surface_en": "notebook",
-            "furigana": "[hɛft]",
-            "pos": "NOUN",
-            "lemma": "Heft",
-            "explanation": "Common noun; object of the preposition 'Im'.",
-            "difficulty": 7
-          },
-          {
-            "surface": "markiere",
-            "surface_en": "mark",
-            "furigana": "[maʁˈkiːʁə]",
-            "pos": "VERB",
-            "lemma": "markieren",
-            "explanation": "Main verb, finite present indicative, 1st person singular; action performed by the speaker.",
-            "difficulty": 10
-          },
-          {
-            "surface": "ich",
-            "surface_en": "I",
-            "furigana": "[ɪç]",
-            "pos": "PRON",
-            "lemma": "ich",
-            "explanation": "Personal pronoun, 1st person singular, nominative; subject.",
-            "difficulty": 2
-          },
-          {
-            "surface": "weiter-",
-            "surface_en": "further-",
-            "furigana": "[ˈvaɪ̯tɐ]",
-            "pos": "PART",
-            "lemma": "weiter",
-            "explanation": "Separable verbal particle/prefix referred to metalinguistically; direct object of 'markiere'.",
-            "difficulty": 10,
-            "is_main_word": true
-          },
-          {
-            "surface": "rot.",
-            "surface_en": "red",
-            "furigana": "[ʁoːt]",
-            "pos": "ADJ",
-            "lemma": "rot",
-            "explanation": "Adjective (color); predicative complement specifying how the object is marked.",
-            "difficulty": 4
-          }
-        ],
-        "difficulty_aggregated": 5.83
-      },
-      {
-        "sentence": "Die Lehrerin erklärt weiter- am Beispiel.",
-        "tokens": [
-          {
-            "surface": "Die",
-            "surface_en": "the",
-            "furigana": "[diː]",
-            "pos": "DET",
-            "lemma": "der",
-            "explanation": "Definite article, nominative singular feminine; determines 'Lehrerin'.",
-            "difficulty": 2
-          },
-          {
-            "surface": "Lehrerin",
-            "surface_en": "teacher (female)",
-            "furigana": "[ˈleːʁəʁɪn]",
-            "pos": "NOUN",
-            "lemma": "Lehrerin",
-            "explanation": "Common noun; subject of the clause.",
-            "difficulty": 10
-          },
-          {
-            "surface": "erklärt",
-            "surface_en": "explains",
-            "furigana": "[ɛʁˈklɛːɐ̯t]",
-            "pos": "VERB",
-            "lemma": "erklären",
-            "explanation": "Main verb, finite present indicative, 3rd person singular; expresses the act of explaining.",
-            "difficulty": 10
-          },
-          {
-            "surface": "weiter-",
-            "surface_en": "further-",
-            "furigana": "[ˈvaɪ̯tɐ]",
-            "pos": "PART",
-            "lemma": "weiter",
-            "explanation": "Separable verbal particle/prefix mentioned as the thing being explained; direct object of 'erklärt'.",
-            "difficulty": 10,
-            "is_main_word": true
-          },
-          {
-            "surface": "am",
-            "surface_en": "at the",
-            "furigana": "[am]",
-            "pos": "ADP",
-            "lemma": "an",
-            "explanation": "Fused preposition+article (an+dem); introduces an instrumental/locative PP (dative).",
-            "difficulty": 2
-          },
-          {
-            "surface": "Beispiel.",
-            "surface_en": "example",
-            "furigana": "[ˈbaɪ̯ʃpiːl]",
-            "pos": "NOUN",
-            "lemma": "Beispiel",
-            "explanation": "Common noun; object of the preposition 'am', indicating the illustrative means.",
-            "difficulty": 10
-          }
-        ],
-        "difficulty_aggregated": 7.33
-      }
-    ],
-    "es": [
-      "Hablamos sobre weiter- en clase.",
-      "Pones weiter- antes del verbo.",
-      "En el cuaderno marco weiter- en rojo.",
-      "La profesora explica weiter- con un ejemplo."
-    ],
-    "fr": [
-      "On parle de weiter- en cours.",
-      "Tu mets weiter- avant le verbe.",
-      "Dans le cahier, je surligne weiter- en rouge.",
-      "La professeure explique weiter- avec un exemple."
-    ],
-    "it": [
-      "In classe parliamo di weiter-.",
-      "Metti weiter- prima del verbo.",
-      "Sul quaderno evidenzio weiter- in rosso.",
-      "L'insegnante spiega weiter- con un esempio."
-    ],
-    "ko": [
-      "수업에서 weiter-에 대해 이야기해요.",
-      "동사 앞에 weiter-를 붙여.",
-      "공책에 weiter-를 빨간색으로 표시해요.",
-      "선생님이 예를 들어 weiter-를 설명해요."
-    ],
-    "zh-Hans": [
-      "我们在课堂上讨论weiter-。",
-      "你把weiter-加在动词前面。",
-      "我在本子里把weiter-用红色标出来。",
-      "老师用例子讲解weiter-。"
-    ],
-    "yue": [
-      "我哋喺課堂上講weiter-。",
-      "你喺動詞前面加weiter-。",
-      "我喺筆記本用紅色標示weiter-。",
-      "老師用例子解釋weiter-。"
-    ],
-    "ru": [
-      "На уроке мы говорим о weiter-.",
-      "Ты ставишь weiter- перед глаголом.",
-      "В тетради я выделяю weiter- красным.",
-      "Учительница объясняет weiter- на примере."
-    ],
-    "pt": [
-      "Na aula falamos sobre weiter-.",
-      "Você coloca weiter- antes do verbo.",
-      "No caderno, eu destaco weiter- em vermelho.",
-      "A professora explica weiter- com um exemplo."
-    ],
-    "he": [
-      "אנחנו מדברים על weiter- בכיתה.",
-      "אתה שם את weiter- לפני הפועל.",
-      "במחברת אני מסמן את weiter- באדום.",
-      "המורה מסבירה את weiter- בעזרת דוגמה."
-    ],
-    "tr": [
-      "Derste weiter- hakkında konuşuyoruz.",
-      "Fiilin önüne weiter- koyarsın.",
-      "Defterde weiter-ı kırmızıyla işaretliyorum.",
-      "Öğretmen weiter-ı örnekle açıklıyor."
-    ],
-    "vi": [
-      "Trong lớp, chúng tôi nói về weiter-.",
-      "Bạn đặt weiter- trước động từ.",
-      "Trong vở, tôi đánh dấu weiter- bằng màu đỏ.",
-      "Cô giáo giải thích weiter- bằng một ví dụ."
-    ],
     "ar": [
       "نتحدث عن weiter- في الصف.",
       "تضع weiter- قبل الفعل.",
       "في الدفتر، أُبرز weiter- باللون الأحمر.",
       "المعلمة تشرح weiter- بمثال."
-    ],
-    "nl": [
-      "We praten over weiter- in de les.",
-      "Je zet weiter- voor het werkwoord.",
-      "In het schrift markeer ik weiter- in het rood.",
-      "De lerares legt weiter- uit met een voorbeeld."
-    ],
-    "uk": [
-      "На уроці ми говоримо про weiter-.",
-      "Ти ставиш weiter- перед дієсловом.",
-      "У зошиті я виділяю weiter- червоним.",
-      "Вчителька пояснює weiter- на прикладі."
-    ],
-    "hu": [
-      "Az órán a weiter- témáról beszélünk.",
-      "A weiter-t az ige elé teszed.",
-      "A füzetben pirossal megjelölöm a weiter-t.",
-      "A tanárnő példával magyarázza a weiter-t."
-    ],
-    "hi": [
-      "कक्षा में हम weiter- के बारे में बात करते हैं.",
-      "तुम क्रिया से पहले weiter- लगाते हो.",
-      "कापी में मैं weiter- को लाल रंग से चिन्हित करता हूँ.",
-      "अध्यापिका उदाहरण से weiter- समझाती है."
-    ],
-    "pl": [
-      "Na lekcji rozmawiamy o weiter-.",
-      "Stawiasz weiter- przed czasownikiem.",
-      "W zeszycie zaznaczam weiter- na czerwono.",
-      "Nauczycielka wyjaśnia weiter- na przykładzie."
-    ],
-    "el": [
-      "Στο μάθημα μιλάμε για το weiter-.",
-      "Βάζεις το weiter- πριν από το ρήμα.",
-      "Στο τετράδιο σημειώνω το weiter- με κόκκινο.",
-      "Η δασκάλα εξηγεί το weiter- με ένα παράδειγμα."
-    ],
-    "nb": [
-      "Vi snakker om weiter- i timen.",
-      "Du setter weiter- foran verbet.",
-      "I kladdeboka markerer jeg weiter- i rødt.",
-      "Læreren forklarer weiter- med et eksempel."
-    ],
-    "id": [
-      "Di kelas kami membicarakan weiter-.",
-      "Kamu menaruh weiter- sebelum kata kerja.",
-      "Di buku catatan, saya menandai weiter- dengan warna merah.",
-      "Guru menjelaskan weiter- dengan contoh."
-    ],
-    "sv": [
-      "Vi pratar om weiter- på lektionen.",
-      "Du sätter weiter- före verbet.",
-      "I häftet markerar jag weiter- med rött.",
-      "Läraren förklarar weiter- med ett exempel."
-    ],
-    "ro": [
-      "La clasă vorbim despre weiter-.",
-      "Pui weiter- înaintea verbului.",
-      "În caiet, evidențiez weiter- cu roșu.",
-      "Profesoara explică weiter- cu un exemplu."
     ],
     "cs": [
       "Ve třídě mluvíme o weiter-.",
@@ -889,11 +2412,77 @@
       "I hæftet markerer jeg weiter- med rødt.",
       "Læreren forklarer weiter- med et eksempel."
     ],
+    "de": [
+      "Wir sprechen über weiter- im Unterricht.",
+      "Du setzt weiter- vor das Verb.",
+      "Im Heft markiere ich weiter- rot.",
+      "Die Lehrerin erklärt weiter- am Beispiel."
+    ],
+    "el": [
+      "Στο μάθημα μιλάμε για το weiter-.",
+      "Βάζεις το weiter- πριν από το ρήμα.",
+      "Στο τετράδιο σημειώνω το weiter- με κόκκινο.",
+      "Η δασκάλα εξηγεί το weiter- με ένα παράδειγμα."
+    ],
+    "en": [
+      "We talk about weiter- in class.",
+      "You put weiter- before the verb.",
+      "In the notebook, I mark weiter- in red.",
+      "The teacher explains weiter- with an example."
+    ],
+    "es": [
+      "Hablamos sobre weiter- en clase.",
+      "Pones weiter- antes del verbo.",
+      "En el cuaderno marco weiter- en rojo.",
+      "La profesora explica weiter- con un ejemplo."
+    ],
     "fi": [
       "Tunnilla puhumme weiter-ista.",
       "Laitat weiter- ennen verbiä.",
       "Vihkoon merkitsen weiter- punaisella.",
       "Opettaja selittää weiter- esimerkin avulla."
+    ],
+    "fr": [
+      "On parle de weiter- en cours.",
+      "Tu mets weiter- avant le verbe.",
+      "Dans le cahier, je surligne weiter- en rouge.",
+      "La professeure explique weiter- avec un exemple."
+    ],
+    "he": [
+      "אנחנו מדברים על weiter- בכיתה.",
+      "אתה שם את weiter- לפני הפועל.",
+      "במחברת אני מסמן את weiter- באדום.",
+      "המורה מסבירה את weiter- בעזרת דוגמה."
+    ],
+    "hi": [
+      "कक्षा में हम weiter- के बारे में बात करते हैं.",
+      "तुम क्रिया से पहले weiter- लगाते हो.",
+      "कापी में मैं weiter- को लाल रंग से चिन्हित करता हूँ.",
+      "अध्यापिका उदाहरण से weiter- समझाती है."
+    ],
+    "hu": [
+      "Az órán a weiter- témáról beszélünk.",
+      "A weiter-t az ige elé teszed.",
+      "A füzetben pirossal megjelölöm a weiter-t.",
+      "A tanárnő példával magyarázza a weiter-t."
+    ],
+    "id": [
+      "Di kelas kami membicarakan weiter-.",
+      "Kamu menaruh weiter- sebelum kata kerja.",
+      "Di buku catatan, saya menandai weiter- dengan warna merah.",
+      "Guru menjelaskan weiter- dengan contoh."
+    ],
+    "ipa": [
+      "/viːɐ̯ ˈʃpʁɛçən ˈyːbɐ ˈvaɪ̯tɐ ɪm ˈʊntɐʁɪçt/",
+      "/duː zɛtst ˈvaɪ̯tɐ foːɐ̯ das vɛʁp/",
+      "/ɪm hɛft maʁˈkiːʁə ɪç ˈvaɪ̯tɐ ʁoːt/",
+      "/diː ˈleːʁəʁɪn ɛʁˈklɛːʁt ˈvaɪ̯tɐ am ˈbaɪ̯ʃpiːl/"
+    ],
+    "it": [
+      "In classe parliamo di weiter-.",
+      "Metti weiter- prima del verbo.",
+      "Sul quaderno evidenzio weiter- in rosso.",
+      "L'insegnante spiega weiter- con un esempio."
     ],
     "ja": [
       "授業でweiter-について話します。",
@@ -901,6 +2490,83 @@
       "ノートにweiter-を赤でマークします。",
       "先生は例を使ってweiter-を説明します。"
     ],
-    "word_POS": "Other"
+    "ko": [
+      "수업에서 weiter-에 대해 이야기해요.",
+      "동사 앞에 weiter-를 붙여.",
+      "공책에 weiter-를 빨간색으로 표시해요.",
+      "선생님이 예를 들어 weiter-를 설명해요."
+    ],
+    "nb": [
+      "Vi snakker om weiter- i timen.",
+      "Du setter weiter- foran verbet.",
+      "I kladdeboka markerer jeg weiter- i rødt.",
+      "Læreren forklarer weiter- med et eksempel."
+    ],
+    "nl": [
+      "We praten over weiter- in de les.",
+      "Je zet weiter- voor het werkwoord.",
+      "In het schrift markeer ik weiter- in het rood.",
+      "De lerares legt weiter- uit met een voorbeeld."
+    ],
+    "pl": [
+      "Na lekcji rozmawiamy o weiter-.",
+      "Stawiasz weiter- przed czasownikiem.",
+      "W zeszycie zaznaczam weiter- na czerwono.",
+      "Nauczycielka wyjaśnia weiter- na przykładzie."
+    ],
+    "pt": [
+      "Na aula falamos sobre weiter-.",
+      "Você coloca weiter- antes do verbo.",
+      "No caderno, eu destaco weiter- em vermelho.",
+      "A professora explica weiter- com um exemplo."
+    ],
+    "ro": [
+      "La clasă vorbim despre weiter-.",
+      "Pui weiter- înaintea verbului.",
+      "În caiet, evidențiez weiter- cu roșu.",
+      "Profesoara explică weiter- cu un exemplu."
+    ],
+    "ru": [
+      "На уроке мы говорим о weiter-.",
+      "Ты ставишь weiter- перед глаголом.",
+      "В тетради я выделяю weiter- красным.",
+      "Учительница объясняет weiter- на примере."
+    ],
+    "sv": [
+      "Vi pratar om weiter- på lektionen.",
+      "Du sätter weiter- före verbet.",
+      "I häftet markerar jag weiter- med rött.",
+      "Läraren förklarar weiter- med ett exempel."
+    ],
+    "tr": [
+      "Derste weiter- hakkında konuşuyoruz.",
+      "Fiilin önüne weiter- koyarsın.",
+      "Defterde weiter-ı kırmızıyla işaretliyorum.",
+      "Öğretmen weiter-ı örnekle açıklıyor."
+    ],
+    "uk": [
+      "На уроці ми говоримо про weiter-.",
+      "Ти ставиш weiter- перед дієсловом.",
+      "У зошиті я виділяю weiter- червоним.",
+      "Вчителька пояснює weiter- на прикладі."
+    ],
+    "vi": [
+      "Trong lớp, chúng tôi nói về weiter-.",
+      "Bạn đặt weiter- trước động từ.",
+      "Trong vở, tôi đánh dấu weiter- bằng màu đỏ.",
+      "Cô giáo giải thích weiter- bằng một ví dụ."
+    ],
+    "yue": [
+      "我哋喺課堂上講weiter-。",
+      "你喺動詞前面加weiter-。",
+      "我喺筆記本用紅色標示weiter-。",
+      "老師用例子解釋weiter-。"
+    ],
+    "zh-Hans": [
+      "我们在课堂上讨论weiter-。",
+      "你把weiter-加在动词前面。",
+      "我在本子里把weiter-用红色标出来。",
+      "老师用例子讲解weiter-。"
+    ]
   }
 }

@@ -298,12 +298,12 @@
       "difficulty": 7.83
     },
     {
-      "target": "Die Straße ist glatt vom Eis.",
+      "target": "Die Straße ist wegen des Eises glatt.",
       "reading": "/diː ˈʃtʁaːsə ɪst ɡlat fɔm aɪ̯s/",
       "translations": {
-        "de": "Die Straße ist glatt vom Eis.",
+        "de": "Die Straße ist wegen des Eises glatt.",
         "ipa": "/diː ˈʃtʁaːsə ɪst ɡlat fɔm aɪ̯s/",
-        "en": "The road is slippery from the ice.",
+        "en": "The road is slippery because of the ice.",
         "es": "La carretera está resbaladiza por el hielo.",
         "fr": "La route est glissante à cause du verglas.",
         "it": "La strada è scivolosa per il ghiaccio.",
@@ -334,58 +334,92 @@
       "tokens": [
         {
           "surface": "Die",
-          "surface_en": "the",
-          "furigana": "[diː]",
-          "pos": "DET",
           "lemma": "der",
-          "explanation": "Definite article; nominative singular feminine; determiner of 'Straße' (subject).",
-          "difficulty": 2
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "ART",
+          "feats": {},
+          "start": 0,
+          "end": 3,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "Straße",
-          "surface_en": "street",
-          "furigana": "[ˈʃtʁaːsə]",
-          "pos": "NOUN",
           "lemma": "Straße",
-          "explanation": "Feminine noun; nominative singular; subject.",
-          "difficulty": 7
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 4,
+          "end": 10,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "ist",
-          "surface_en": "is",
-          "furigana": "[ɪst]",
-          "pos": "AUX",
           "lemma": "sein",
-          "explanation": "Copula (sein); 3rd person singular present; links subject to predicate.",
-          "difficulty": 4
+          "pos": "AUX",
+          "upos": "AUX",
+          "xpos": "VAFIN",
+          "feats": {},
+          "start": 11,
+          "end": 14,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "wegen",
+          "lemma": "wegen",
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "APPR",
+          "feats": {},
+          "start": 15,
+          "end": 20,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "des",
+          "lemma": "der",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "ART",
+          "feats": {},
+          "start": 21,
+          "end": 24,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "Eises",
+          "lemma": "Eis",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 25,
+          "end": 30,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "glatt",
-          "surface_en": "smooth",
-          "furigana": "[ɡlat]",
-          "pos": "ADJ",
           "lemma": "glatt",
-          "explanation": "Predicative adjective; predicate complement describing 'Straße'.",
-          "difficulty": 19,
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "ADV",
+          "feats": {},
+          "start": 31,
+          "end": 36,
+          "analyzer": "spacy_de_core_news_lg",
           "is_main_word": true
         },
         {
-          "surface": "vom",
-          "surface_en": "from the",
-          "furigana": "[fɔm]",
-          "pos": "ADP",
-          "lemma": "von",
-          "explanation": "Preposition 'von' contracted with 'dem'; introduces a dative PP indicating source/cause.",
-          "difficulty": 2
-        },
-        {
-          "surface": "Eis.",
-          "surface_en": "ice",
-          "furigana": "[aɪ̯s]",
-          "pos": "NOUN",
-          "lemma": "Eis",
-          "explanation": "Neuter noun; dative singular (governed by 'von'); object of the preposition.",
-          "difficulty": 4
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 36,
+          "end": 37,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 6.33
@@ -402,8 +436,314 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-15T00:32:56Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:De b1/6078de69f0dccefa",
+      "revision_id": 85429,
+      "parent_revision_id": 16330,
+      "revision_timestamp_utc": "2026-10-15T00:32:56Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Naturalize the German cause phrase and its English equivalent for an icy road.",
+      "pulled_utc": "2026-10-17T07:06:38Z",
+      "applied_utc": "2026-10-17T07:06:53Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-628ca19fbcf996ff",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_b1:6078de69f0dccefa",
+        "pack_code": "de_b1",
+        "entry_id": "glatt",
+        "language": "de",
+        "sentence_index": 4,
+        "old_sentence": "Die Straße ist glatt vom Eis.",
+        "old_translations": {
+          "de": "Die Straße ist glatt vom Eis.",
+          "ipa": "/diː ˈʃtʁaːsə ɪst ɡlat fɔm aɪ̯s/",
+          "en": "The road is slippery from the ice.",
+          "es": "La carretera está resbaladiza por el hielo.",
+          "fr": "La route est glissante à cause du verglas.",
+          "it": "La strada è scivolosa per il ghiaccio.",
+          "ko": "얼음 때문에 도로가 미끄러워요.",
+          "zh-Hans": "路面因结冰而很滑。",
+          "yue": "條路因為結冰好跣。",
+          "ru": "Дорога скользкая из-за льда.",
+          "pt": "A estrada está escorregadia por causa do gelo.",
+          "he": "הכביש חלקלק בגלל הקרח.",
+          "tr": "Buz yüzünden yol kaygan.",
+          "vi": "Đường trơn vì băng.",
+          "ar": "الطريق زلق بسبب الجليد.",
+          "nl": "De weg is glad door het ijs.",
+          "uk": "Дорога слизька через лід.",
+          "hu": "Az út a jég miatt csúszós.",
+          "hi": "बर्फ की वजह से सड़क फिसलन भरी है.",
+          "pl": "Droga jest śliska z powodu lodu.",
+          "el": "Ο δρόμος είναι γλιστερός λόγω του πάγου.",
+          "nb": "Veien er glatt på grunn av isen.",
+          "id": "Jalan licin karena es.",
+          "sv": "Vägen är hal på grund av isen.",
+          "ro": "Drumul este alunecos din cauza gheții.",
+          "cs": "Silnice je kluzká kvůli ledu.",
+          "da": "Vejen er glat på grund af isen.",
+          "fi": "Tie on liukas jään takia.",
+          "ja": "道路は氷で滑りやすいです。"
+        },
+        "proposed_sentence": "Die Straße ist wegen des Eises glatt.",
+        "proposed_translations": {
+          "de": "Die Straße ist wegen des Eises glatt.",
+          "ipa": "/diː ˈʃtʁaːsə ɪst ɡlat fɔm aɪ̯s/",
+          "en": "The road is slippery because of the ice.",
+          "es": "La carretera está resbaladiza por el hielo.",
+          "fr": "La route est glissante à cause du verglas.",
+          "it": "La strada è scivolosa per il ghiaccio.",
+          "ko": "얼음 때문에 도로가 미끄러워요.",
+          "zh-Hans": "路面因结冰而很滑。",
+          "yue": "條路因為結冰好跣。",
+          "ru": "Дорога скользкая из-за льда.",
+          "pt": "A estrada está escorregadia por causa do gelo.",
+          "he": "הכביש חלקלק בגלל הקרח.",
+          "tr": "Buz yüzünden yol kaygan.",
+          "vi": "Đường trơn vì băng.",
+          "ar": "الطريق زلق بسبب الجليد.",
+          "nl": "De weg is glad door het ijs.",
+          "uk": "Дорога слизька через лід.",
+          "hu": "Az út a jég miatt csúszós.",
+          "hi": "बर्फ की वजह से सड़क फिसलन भरी है.",
+          "pl": "Droga jest śliska z powodu lodu.",
+          "el": "Ο δρόμος είναι γλιστερός λόγω του πάγου.",
+          "nb": "Veien er glatt på grunn av isen.",
+          "id": "Jalan licin karena es.",
+          "sv": "Vägen är hal på grund av isen.",
+          "ro": "Drumul este alunecos din cauza gheții.",
+          "cs": "Silnice je kluzká kvůli ledu.",
+          "da": "Vejen er glat på grund af isen.",
+          "fi": "Tie on liukas jään takia.",
+          "ja": "道路は氷で滑りやすいです。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Die Straße ist wegen des Eises glatt.",
+        "old_japanese": "Die Straße ist glatt vom Eis.",
+        "old_english": "The road is slippery from the ice.",
+        "proposed_japanese": "Die Straße ist wegen des Eises glatt.",
+        "proposed_english": "The road is slippery because of the ice.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Die Straße ist wegen des Eises glatt.",
+          "tokens": [
+            {
+              "surface": "Die",
+              "lemma": "der",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "ART",
+              "feats": {},
+              "start": 0,
+              "end": 3,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Straße",
+              "lemma": "Straße",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 4,
+              "end": 10,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "ist",
+              "lemma": "sein",
+              "pos": "AUX",
+              "upos": "AUX",
+              "xpos": "VAFIN",
+              "feats": {},
+              "start": 11,
+              "end": 14,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "wegen",
+              "lemma": "wegen",
+              "pos": "ADP",
+              "upos": "ADP",
+              "xpos": "APPR",
+              "feats": {},
+              "start": 15,
+              "end": 20,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "des",
+              "lemma": "der",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "ART",
+              "feats": {},
+              "start": 21,
+              "end": 24,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Eises",
+              "lemma": "Eis",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 25,
+              "end": 30,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "glatt",
+              "lemma": "glatt",
+              "pos": "ADV",
+              "upos": "ADV",
+              "xpos": "ADV",
+              "feats": {},
+              "start": 31,
+              "end": 36,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 36,
+              "end": 37,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Die",
+            "lemma": "der",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Straße",
+            "lemma": "Straße",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 4,
+            "end": 10,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "ist",
+            "lemma": "sein",
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "VAFIN",
+            "feats": {},
+            "start": 11,
+            "end": 14,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "wegen",
+            "lemma": "wegen",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 15,
+            "end": 20,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "des",
+            "lemma": "der",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 21,
+            "end": 24,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Eises",
+            "lemma": "Eis",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 25,
+            "end": 30,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "glatt",
+            "lemma": "glatt",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 31,
+            "end": 36,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 36,
+            "end": 37,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:06:38Z",
+        "updated_utc": "2026-10-17T07:07:05Z",
+        "applied_utc": "2026-10-17T07:07:05Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:07:05Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -415,34 +755,6 @@
     "word": "glatt",
     "word_reading": "",
     "word_label": "Adjektiv",
-    "word_en": "smooth; slippery",
-    "word_es": "liso; resbaladizo (con hielo)",
-    "word_fr": "lisse; glissant (verglacé)",
-    "word_it": "liscio; scivoloso (ghiacciato)",
-    "word_ko": "매끈한; 미끄러운(얼어 있음)",
-    "word_zh-Hans": "光滑; 滑（结冰）",
-    "word_yue": "光滑; 好滑（結冰）",
-    "word_ru": "гладкий; скользкий (из-за льда)",
-    "word_pt": "liso; escorregadio (com gelo)",
-    "word_he": "חלק; חלקלק (מכוסה קרח)",
-    "word_tr": "pürüzsüz; kaygan (buzlu)",
-    "word_vi": "nhẵn; trơn (do băng)",
-    "word_ar": "أملس; زلق (جليدي)",
-    "word_nl": "glad",
-    "word_uk": "гладкий; слизький (обледенілий)",
-    "word_hu": "sima; csúszós (jeges)",
-    "word_hi": "चिकना; फिसलन भरा (बर्फ़ से)",
-    "word_pl": "gładki; śliski (oblodzony)",
-    "word_el": "λείο; ολισθηρό (παγωμένο)",
-    "word_nb": "glatt",
-    "word_id": "halus; licin (karena es)",
-    "word_sv": "slät; hal (isigt)",
-    "word_ro": "neted; alunecos (înghețat)",
-    "word_cs": "hladký; kluzký (namrzlý)",
-    "word_da": "glat; isglat",
-    "word_fi": "sileä; liukas (jäässä)",
-    "word_ja": "滑らか; 滑りやすい（凍結）",
-    "word_de": "glatt",
     "comic_difficulty": 7.7,
     "jp": [
       "Der Weg ist glatt.",
@@ -455,24 +767,6 @@
       "/ˈmaɪ̯nə ˈhaːʁə zɪnt ˈhɔʏ̯tə ɡlat/",
       "/diː ˈoːbɐˌflɛçə fyːlt zɪç ɡlat an/",
       "/diː ˈʃtʁaːsə ɪst ɡlat fɔm aɪ̯s/"
-    ],
-    "de": [
-      "Der Weg ist glatt.",
-      "Meine Haare sind heute glatt.",
-      "Die Oberfläche fühlt sich glatt an.",
-      "Die Straße ist glatt vom Eis."
-    ],
-    "ipa": [
-      "/deːɐ̯ veːk ɪst ɡlat/",
-      "/ˈmaɪ̯nə ˈhaːʁə zɪnt ˈhɔʏ̯tə ɡlat/",
-      "/diː ˈoːbɐˌflɛçə fyːlt zɪç ɡlat an/",
-      "/diː ˈʃtʁaːsə ɪst ɡlat fɔm aɪ̯s/"
-    ],
-    "en": [
-      "The path is slippery.",
-      "My hair is straight today.",
-      "The surface feels smooth.",
-      "The road is slippery from the ice."
     ],
     "pos_analysis": [
       {
@@ -634,198 +928,136 @@
         "difficulty_aggregated": 7.83
       },
       {
-        "sentence": "Die Straße ist glatt vom Eis.",
+        "sentence": "Die Straße ist wegen des Eises glatt.",
         "tokens": [
           {
             "surface": "Die",
-            "surface_en": "the",
-            "furigana": "[diː]",
-            "pos": "DET",
             "lemma": "der",
-            "explanation": "Definite article; nominative singular feminine; determiner of 'Straße' (subject).",
-            "difficulty": 2
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "Straße",
-            "surface_en": "street",
-            "furigana": "[ˈʃtʁaːsə]",
-            "pos": "NOUN",
             "lemma": "Straße",
-            "explanation": "Feminine noun; nominative singular; subject.",
-            "difficulty": 7
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 4,
+            "end": 10,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "ist",
-            "surface_en": "is",
-            "furigana": "[ɪst]",
-            "pos": "AUX",
             "lemma": "sein",
-            "explanation": "Copula (sein); 3rd person singular present; links subject to predicate.",
-            "difficulty": 4
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "VAFIN",
+            "feats": {},
+            "start": 11,
+            "end": 14,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "wegen",
+            "lemma": "wegen",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 15,
+            "end": 20,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "des",
+            "lemma": "der",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 21,
+            "end": 24,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Eises",
+            "lemma": "Eis",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 25,
+            "end": 30,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "glatt",
-            "surface_en": "smooth",
-            "furigana": "[ɡlat]",
-            "pos": "ADJ",
             "lemma": "glatt",
-            "explanation": "Predicative adjective; predicate complement describing 'Straße'.",
-            "difficulty": 19,
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 31,
+            "end": 36,
+            "analyzer": "spacy_de_core_news_lg",
             "is_main_word": true
           },
           {
-            "surface": "vom",
-            "surface_en": "from the",
-            "furigana": "[fɔm]",
-            "pos": "ADP",
-            "lemma": "von",
-            "explanation": "Preposition 'von' contracted with 'dem'; introduces a dative PP indicating source/cause.",
-            "difficulty": 2
-          },
-          {
-            "surface": "Eis.",
-            "surface_en": "ice",
-            "furigana": "[aɪ̯s]",
-            "pos": "NOUN",
-            "lemma": "Eis",
-            "explanation": "Neuter noun; dative singular (governed by 'von'); object of the preposition.",
-            "difficulty": 4
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 36,
+            "end": 37,
+            "analyzer": "spacy_de_core_news_lg"
           }
         ],
         "difficulty_aggregated": 6.33
       }
     ],
-    "es": [
-      "El camino está resbaladizo.",
-      "Hoy tengo el pelo liso.",
-      "La superficie se siente lisa.",
-      "La carretera está resbaladiza por el hielo."
-    ],
-    "fr": [
-      "Le chemin est glissant.",
-      "Aujourd'hui, j'ai les cheveux lisses.",
-      "La surface est lisse au toucher.",
-      "La route est glissante à cause du verglas."
-    ],
-    "it": [
-      "Il sentiero è scivoloso.",
-      "Oggi ho i capelli lisci.",
-      "La superficie è liscia al tatto.",
-      "La strada è scivolosa per il ghiaccio."
-    ],
-    "ko": [
-      "길이 미끄러워요.",
-      "오늘은 머리가 곧게 펴졌어요.",
-      "표면이 매끄럽게 느껴져요.",
-      "얼음 때문에 도로가 미끄러워요."
-    ],
-    "zh-Hans": [
-      "路很滑。",
-      "我今天头发很直。",
-      "表面摸起来很光滑。",
-      "路面因结冰而很滑。"
-    ],
-    "yue": [
-      "條路好跣。",
-      "我今日啲頭髮好直。",
-      "表面摸起嚟好滑。",
-      "條路因為結冰好跣。"
-    ],
-    "ru": [
-      "Дорожка скользкая.",
-      "Сегодня у меня прямые волосы.",
-      "Поверхность на ощупь гладкая.",
-      "Дорога скользкая из-за льда."
-    ],
-    "pt": [
-      "O caminho está escorregadio.",
-      "Hoje meu cabelo está liso.",
-      "A superfície é lisa ao toque.",
-      "A estrada está escorregadia por causa do gelo."
-    ],
-    "he": [
-      "השביל חלקלק.",
-      "היום השיער שלי חלק.",
-      "המשטח מרגיש חלק.",
-      "הכביש חלקלק בגלל הקרח."
-    ],
-    "tr": [
-      "Yol kaygan.",
-      "Bugün saçlarım düz.",
-      "Yüzey dokununca pürüzsüz geliyor.",
-      "Buz yüzünden yol kaygan."
-    ],
-    "vi": [
-      "Đường trơn.",
-      "Hôm nay tóc tôi thẳng.",
-      "Bề mặt sờ vào thấy mịn.",
-      "Đường trơn vì băng."
-    ],
+    "word_POS": "Adjective",
+    "entry_id": "glatt",
+    "word_en": "smooth; slippery",
+    "word_es": "liso; resbaladizo (con hielo)",
+    "word_fr": "lisse; glissant (verglacé)",
+    "word_it": "liscio; scivoloso (ghiacciato)",
+    "word_ko": "매끈한; 미끄러운(얼어 있음)",
+    "word_zh-Hans": "光滑; 滑（结冰）",
+    "word_yue": "光滑; 好滑（結冰）",
+    "word_ru": "гладкий; скользкий (из-за льда)",
+    "word_pt": "liso; escorregadio (com gelo)",
+    "word_he": "חלק; חלקלק (מכוסה קרח)",
+    "word_tr": "pürüzsüz; kaygan (buzlu)",
+    "word_vi": "nhẵn; trơn (do băng)",
+    "word_ar": "أملس; زلق (جليدي)",
+    "word_nl": "glad",
+    "word_uk": "гладкий; слизький (обледенілий)",
+    "word_hu": "sima; csúszós (jeges)",
+    "word_hi": "चिकना; फिसलन भरा (बर्फ़ से)",
+    "word_pl": "gładki; śliski (oblodzony)",
+    "word_el": "λείο; ολισθηρό (παγωμένο)",
+    "word_nb": "glatt",
+    "word_id": "halus; licin (karena es)",
+    "word_sv": "slät; hal (isigt)",
+    "word_ro": "neted; alunecos (înghețat)",
+    "word_cs": "hladký; kluzký (namrzlý)",
+    "word_da": "glat; isglat",
+    "word_fi": "sileä; liukas (jäässä)",
+    "word_ja": "滑らか; 滑りやすい（凍結）",
+    "word_de": "glatt",
     "ar": [
       "الطريق زلق.",
       "اليوم شعري مفرود.",
       "السطح ناعم الملمس.",
       "الطريق زلق بسبب الجليد."
-    ],
-    "nl": [
-      "Het pad is glad.",
-      "Mijn haar is vandaag steil.",
-      "Het oppervlak voelt glad aan.",
-      "De weg is glad door het ijs."
-    ],
-    "uk": [
-      "Доріжка слизька.",
-      "Сьогодні в мене пряме волосся.",
-      "Поверхня на дотик гладка.",
-      "Дорога слизька через лід."
-    ],
-    "hu": [
-      "Az út csúszós.",
-      "Ma egyenes a hajam.",
-      "A felület tapintásra sima.",
-      "Az út a jég miatt csúszós."
-    ],
-    "hi": [
-      "रास्ता फिसलन भरा है.",
-      "आज मेरे बाल सीधे हैं.",
-      "सतह छूने में चिकनी लगती है.",
-      "बर्फ की वजह से सड़क फिसलन भरी है."
-    ],
-    "pl": [
-      "Ścieżka jest śliska.",
-      "Dziś moje włosy są proste.",
-      "Powierzchnia w dotyku jest gładka.",
-      "Droga jest śliska z powodu lodu."
-    ],
-    "el": [
-      "Το μονοπάτι είναι γλιστερό.",
-      "Σήμερα τα μαλλιά μου είναι ίσια.",
-      "Η επιφάνεια είναι λεία στην αφή.",
-      "Ο δρόμος είναι γλιστερός λόγω του πάγου."
-    ],
-    "nb": [
-      "Stien er glatt.",
-      "I dag er håret mitt rett.",
-      "Overflaten føles glatt.",
-      "Veien er glatt på grunn av isen."
-    ],
-    "id": [
-      "Jalannya licin.",
-      "Hari ini rambutku lurus.",
-      "Permukaannya terasa halus.",
-      "Jalan licin karena es."
-    ],
-    "sv": [
-      "Stigen är hal.",
-      "Idag är mitt hår rakt.",
-      "Ytan känns slät.",
-      "Vägen är hal på grund av isen."
-    ],
-    "ro": [
-      "Poteca este alunecoasă.",
-      "Astăzi am părul drept.",
-      "Suprafața se simte netedă.",
-      "Drumul este alunecos din cauza gheții."
     ],
     "cs": [
       "Cesta je kluzká.",
@@ -839,11 +1071,77 @@
       "Overfladen føles glat.",
       "Vejen er glat på grund af isen."
     ],
+    "de": [
+      "Der Weg ist glatt.",
+      "Meine Haare sind heute glatt.",
+      "Die Oberfläche fühlt sich glatt an.",
+      "Die Straße ist glatt vom Eis."
+    ],
+    "el": [
+      "Το μονοπάτι είναι γλιστερό.",
+      "Σήμερα τα μαλλιά μου είναι ίσια.",
+      "Η επιφάνεια είναι λεία στην αφή.",
+      "Ο δρόμος είναι γλιστερός λόγω του πάγου."
+    ],
+    "en": [
+      "The path is slippery.",
+      "My hair is straight today.",
+      "The surface feels smooth.",
+      "The road is slippery from the ice."
+    ],
+    "es": [
+      "El camino está resbaladizo.",
+      "Hoy tengo el pelo liso.",
+      "La superficie se siente lisa.",
+      "La carretera está resbaladiza por el hielo."
+    ],
     "fi": [
       "Polku on liukas.",
       "Tänään hiukseni ovat suorat.",
       "Pinta tuntuu sileältä.",
       "Tie on liukas jään takia."
+    ],
+    "fr": [
+      "Le chemin est glissant.",
+      "Aujourd'hui, j'ai les cheveux lisses.",
+      "La surface est lisse au toucher.",
+      "La route est glissante à cause du verglas."
+    ],
+    "he": [
+      "השביל חלקלק.",
+      "היום השיער שלי חלק.",
+      "המשטח מרגיש חלק.",
+      "הכביש חלקלק בגלל הקרח."
+    ],
+    "hi": [
+      "रास्ता फिसलन भरा है.",
+      "आज मेरे बाल सीधे हैं.",
+      "सतह छूने में चिकनी लगती है.",
+      "बर्फ की वजह से सड़क फिसलन भरी है."
+    ],
+    "hu": [
+      "Az út csúszós.",
+      "Ma egyenes a hajam.",
+      "A felület tapintásra sima.",
+      "Az út a jég miatt csúszós."
+    ],
+    "id": [
+      "Jalannya licin.",
+      "Hari ini rambutku lurus.",
+      "Permukaannya terasa halus.",
+      "Jalan licin karena es."
+    ],
+    "ipa": [
+      "/deːɐ̯ veːk ɪst ɡlat/",
+      "/ˈmaɪ̯nə ˈhaːʁə zɪnt ˈhɔʏ̯tə ɡlat/",
+      "/diː ˈoːbɐˌflɛçə fyːlt zɪç ɡlat an/",
+      "/diː ˈʃtʁaːsə ɪst ɡlat fɔm aɪ̯s/"
+    ],
+    "it": [
+      "Il sentiero è scivoloso.",
+      "Oggi ho i capelli lisci.",
+      "La superficie è liscia al tatto.",
+      "La strada è scivolosa per il ghiaccio."
     ],
     "ja": [
       "道が滑りやすいです。",
@@ -851,6 +1149,83 @@
       "表面は触ると滑らかです。",
       "道路は氷で滑りやすいです。"
     ],
-    "word_POS": "Adjective"
+    "ko": [
+      "길이 미끄러워요.",
+      "오늘은 머리가 곧게 펴졌어요.",
+      "표면이 매끄럽게 느껴져요.",
+      "얼음 때문에 도로가 미끄러워요."
+    ],
+    "nb": [
+      "Stien er glatt.",
+      "I dag er håret mitt rett.",
+      "Overflaten føles glatt.",
+      "Veien er glatt på grunn av isen."
+    ],
+    "nl": [
+      "Het pad is glad.",
+      "Mijn haar is vandaag steil.",
+      "Het oppervlak voelt glad aan.",
+      "De weg is glad door het ijs."
+    ],
+    "pl": [
+      "Ścieżka jest śliska.",
+      "Dziś moje włosy są proste.",
+      "Powierzchnia w dotyku jest gładka.",
+      "Droga jest śliska z powodu lodu."
+    ],
+    "pt": [
+      "O caminho está escorregadio.",
+      "Hoje meu cabelo está liso.",
+      "A superfície é lisa ao toque.",
+      "A estrada está escorregadia por causa do gelo."
+    ],
+    "ro": [
+      "Poteca este alunecoasă.",
+      "Astăzi am părul drept.",
+      "Suprafața se simte netedă.",
+      "Drumul este alunecos din cauza gheții."
+    ],
+    "ru": [
+      "Дорожка скользкая.",
+      "Сегодня у меня прямые волосы.",
+      "Поверхность на ощупь гладкая.",
+      "Дорога скользкая из-за льда."
+    ],
+    "sv": [
+      "Stigen är hal.",
+      "Idag är mitt hår rakt.",
+      "Ytan känns slät.",
+      "Vägen är hal på grund av isen."
+    ],
+    "tr": [
+      "Yol kaygan.",
+      "Bugün saçlarım düz.",
+      "Yüzey dokununca pürüzsüz geliyor.",
+      "Buz yüzünden yol kaygan."
+    ],
+    "uk": [
+      "Доріжка слизька.",
+      "Сьогодні в мене пряме волосся.",
+      "Поверхня на дотик гладка.",
+      "Дорога слизька через лід."
+    ],
+    "vi": [
+      "Đường trơn.",
+      "Hôm nay tóc tôi thẳng.",
+      "Bề mặt sờ vào thấy mịn.",
+      "Đường trơn vì băng."
+    ],
+    "yue": [
+      "條路好跣。",
+      "我今日啲頭髮好直。",
+      "表面摸起嚟好滑。",
+      "條路因為結冰好跣。"
+    ],
+    "zh-Hans": [
+      "路很滑。",
+      "我今天头发很直。",
+      "表面摸起来很光滑。",
+      "路面因结冰而很滑。"
+    ]
   }
 }

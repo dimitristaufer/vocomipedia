@@ -42,7 +42,7 @@
   },
   "sentences": [
     {
-      "target": "正午にひるごはんを食べます。",
+      "target": "正午に昼ご飯を食べます。",
       "reading": "しょうごにひるごはんをたべます。",
       "translations": {
         "en": "I eat lunch at noon.",
@@ -51,7 +51,7 @@
         "da": "Jeg spiser frokost ved middagstid.",
         "de": "Ich esse mittags zu Mittag.",
         "el": "Τρώω μεσημεριανό το μεσημέρι.",
-        "es": "Como el almuerzo al mediodía.",
+        "es": "Almuerzo al mediodía.",
         "fi": "Syön lounasta keskipäivällä.",
         "fr": "Je déjeune à midi.",
         "he": "אני אוכל ארוחת צהריים בצהריים.",
@@ -94,8 +94,9 @@
               "length": 2
             }
           ],
-          "ruby_confidence": "medium",
+          "ruby_confidence": "reviewed",
           "furigana": "しょうご",
+          "ruby_source": "mediawiki_sentence_ruby",
           "is_main_word": true
         },
         {
@@ -115,36 +116,34 @@
           "furigana": "に"
         },
         {
-          "surface": "ひる",
-          "lemma": "ひる",
-          "pos": "動詞/一般/*/*/五段-ラ行/連体形-一般",
-          "upos": "VERB",
-          "xpos": "動詞",
-          "feats": {},
-          "start": 3,
-          "end": 5,
-          "analyzer": "sudachipy_sudachidict_core_c",
-          "reading_kana": "ひる",
-          "ruby_text": "ひる",
-          "ruby_spans": [],
-          "ruby_confidence": "high",
-          "furigana": "ひる"
-        },
-        {
-          "surface": "ごはん",
-          "lemma": "ごはん",
+          "surface": "昼ご飯",
+          "lemma": "昼ご飯",
           "pos": "名詞/普通名詞/一般/*/*/*",
           "upos": "NOUN",
           "xpos": "名詞",
           "feats": {},
-          "start": 5,
-          "end": 8,
+          "start": 3,
+          "end": 6,
           "analyzer": "sudachipy_sudachidict_core_c",
-          "reading_kana": "ごはん",
-          "ruby_text": "ごはん",
-          "ruby_spans": [],
-          "ruby_confidence": "high",
-          "furigana": "ごはん"
+          "reading_kana": "ひるごはん",
+          "ruby_text": "昼[ひる]ご飯[はん]",
+          "ruby_spans": [
+            {
+              "base": "昼",
+              "reading": "ひる",
+              "start": 0,
+              "length": 1
+            },
+            {
+              "base": "飯",
+              "reading": "はん",
+              "start": 2,
+              "length": 1
+            }
+          ],
+          "ruby_confidence": "reviewed",
+          "furigana": "ひるごはん",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "を",
@@ -153,8 +152,8 @@
           "upos": "PART",
           "xpos": "助詞",
           "feats": {},
-          "start": 8,
-          "end": 9,
+          "start": 6,
+          "end": 7,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "を",
           "ruby_text": "を",
@@ -169,8 +168,8 @@
           "upos": "VERB",
           "xpos": "動詞",
           "feats": {},
-          "start": 9,
-          "end": 11,
+          "start": 7,
+          "end": 9,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "たべ",
           "ruby_text": "食[た]べ",
@@ -182,8 +181,9 @@
               "length": 1
             }
           ],
-          "ruby_confidence": "high",
-          "furigana": "たべ"
+          "ruby_confidence": "reviewed",
+          "furigana": "たべ",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "ます",
@@ -192,8 +192,8 @@
           "upos": "AUX",
           "xpos": "助動詞",
           "feats": {},
-          "start": 11,
-          "end": 13,
+          "start": 9,
+          "end": 11,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "ます",
           "ruby_text": "ます",
@@ -208,8 +208,8 @@
           "upos": "PUNCT",
           "xpos": "補助記号",
           "feats": {},
-          "start": 13,
-          "end": 14,
+          "start": 11,
+          "end": 12,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "。",
           "ruby_text": "。",
@@ -221,7 +221,7 @@
       "difficulty": null
     },
     {
-      "target": "正午すぎに、ひとが少なくなりました。",
+      "target": "正午過ぎに、人が少なくなりました。",
       "reading": "しょうごすぎに、ひとがすくなくなりました。",
       "translations": {
         "en": "After noon, fewer people were around.",
@@ -232,14 +232,14 @@
         "el": "Μετά το μεσημέρι, ο κόσμος μειώθηκε.",
         "es": "Después del mediodía, había menos gente.",
         "fi": "Keskipäivän jälkeen ihmisiä oli vähemmän.",
-        "fr": "Après midi, il y avait moins de monde.",
+        "fr": "Peu après midi, il y avait moins de monde.",
         "he": "אחרי הצהריים, היו פחות אנשים.",
         "hi": "दोपहर के बाद, लोग कम हो गए।",
         "hu": "Dél után kevesebb ember volt.",
         "id": "Setelah tengah hari, orang-orang jadi lebih sedikit.",
         "it": "Dopo mezzogiorno c'era meno gente.",
         "ko": "정오가 지나자 사람들이 줄었습니다.",
-        "nb": "Etter middag var det færre folk.",
+        "nb": "Etter middagstid var det færre folk.",
         "nl": "Na twaalf uur waren er minder mensen.",
         "pl": "Po południu było mniej ludzi.",
         "pt": "Depois do meio-dia, havia menos pessoas.",
@@ -273,14 +273,15 @@
               "length": 2
             }
           ],
-          "ruby_confidence": "medium",
+          "ruby_confidence": "reviewed",
           "furigana": "しょうご",
+          "ruby_source": "mediawiki_sentence_ruby",
           "is_main_word": true
         },
         {
-          "surface": "すぎ",
-          "lemma": "すぎ",
-          "pos": "接尾辞/形状詞的/*/*/*/*",
+          "surface": "過ぎ",
+          "lemma": "過ぎ",
+          "pos": "接尾辞/名詞的/副詞可能/*/*/*",
           "upos": "SUFFIX",
           "xpos": "接尾辞",
           "feats": {},
@@ -288,17 +289,25 @@
           "end": 4,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "すぎ",
-          "ruby_text": "すぎ",
-          "ruby_spans": [],
-          "ruby_confidence": "high",
-          "furigana": "すぎ"
+          "ruby_text": "過[す]ぎ",
+          "ruby_spans": [
+            {
+              "base": "過",
+              "reading": "す",
+              "start": 0,
+              "length": 1
+            }
+          ],
+          "ruby_confidence": "reviewed",
+          "furigana": "すぎ",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "に",
-          "lemma": "だ",
-          "pos": "助動詞/*/*/*/助動詞-ダ/連用形-ニ",
-          "upos": "AUX",
-          "xpos": "助動詞",
+          "lemma": "に",
+          "pos": "助詞/格助詞/*/*/*/*",
+          "upos": "PART",
+          "xpos": "助詞",
           "feats": {},
           "start": 4,
           "end": 5,
@@ -326,20 +335,28 @@
           "furigana": "、"
         },
         {
-          "surface": "ひと",
-          "lemma": "ひと",
+          "surface": "人",
+          "lemma": "人",
           "pos": "名詞/普通名詞/一般/*/*/*",
           "upos": "NOUN",
           "xpos": "名詞",
           "feats": {},
           "start": 6,
-          "end": 8,
+          "end": 7,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "ひと",
-          "ruby_text": "ひと",
-          "ruby_spans": [],
-          "ruby_confidence": "high",
-          "furigana": "ひと"
+          "ruby_text": "人[ひと]",
+          "ruby_spans": [
+            {
+              "base": "人",
+              "reading": "ひと",
+              "start": 0,
+              "length": 1
+            }
+          ],
+          "ruby_confidence": "reviewed",
+          "furigana": "ひと",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "が",
@@ -348,8 +365,8 @@
           "upos": "PART",
           "xpos": "助詞",
           "feats": {},
-          "start": 8,
-          "end": 9,
+          "start": 7,
+          "end": 8,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "が",
           "ruby_text": "が",
@@ -364,8 +381,8 @@
           "upos": "ADJ",
           "xpos": "形容詞",
           "feats": {},
-          "start": 9,
-          "end": 12,
+          "start": 8,
+          "end": 11,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "すくなく",
           "ruby_text": "少[すく]なく",
@@ -377,8 +394,9 @@
               "length": 1
             }
           ],
-          "ruby_confidence": "high",
-          "furigana": "すくなく"
+          "ruby_confidence": "reviewed",
+          "furigana": "すくなく",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "なり",
@@ -387,8 +405,8 @@
           "upos": "VERB",
           "xpos": "動詞",
           "feats": {},
-          "start": 12,
-          "end": 14,
+          "start": 11,
+          "end": 13,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "なり",
           "ruby_text": "なり",
@@ -403,8 +421,8 @@
           "upos": "AUX",
           "xpos": "助動詞",
           "feats": {},
-          "start": 14,
-          "end": 16,
+          "start": 13,
+          "end": 15,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "まし",
           "ruby_text": "まし",
@@ -419,8 +437,8 @@
           "upos": "AUX",
           "xpos": "助動詞",
           "feats": {},
-          "start": 16,
-          "end": 17,
+          "start": 15,
+          "end": 16,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "た",
           "ruby_text": "た",
@@ -435,8 +453,8 @@
           "upos": "PUNCT",
           "xpos": "補助記号",
           "feats": {},
-          "start": 17,
-          "end": 18,
+          "start": 16,
+          "end": 17,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "。",
           "ruby_text": "。",
@@ -451,13 +469,13 @@
       "target": "待ち合わせは正午です。",
       "reading": "まちあわせはしょうごです。",
       "translations": {
-        "en": "The meeting is at noon.",
+        "en": "We’re meeting at noon.",
         "ar": "الموعد عند الظهر.",
         "cs": "Sraz je v poledne.",
         "da": "Vi mødes ved middagstid.",
-        "de": "Das Treffen ist um Mittag.",
+        "de": "Das Treffen ist um zwölf Uhr mittags.",
         "el": "Το ραντεβού είναι το μεσημέρι.",
-        "es": "La reunión es al mediodía.",
+        "es": "La cita es al mediodía.",
         "fi": "Tapaaminen on keskipäivällä.",
         "fr": "Le rendez-vous est à midi.",
         "he": "הפגישה היא בצהריים.",
@@ -585,7 +603,7 @@
       "difficulty": null
     },
     {
-      "target": "正午までにかえります。",
+      "target": "正午までに帰ります。",
       "reading": "しょうごまでにかえります。",
       "translations": {
         "en": "I’ll be back by noon.",
@@ -637,8 +655,9 @@
               "length": 2
             }
           ],
-          "ruby_confidence": "medium",
+          "ruby_confidence": "reviewed",
           "furigana": "しょうご",
+          "ruby_source": "mediawiki_sentence_ruby",
           "is_main_word": true
         },
         {
@@ -674,20 +693,28 @@
           "furigana": "に"
         },
         {
-          "surface": "かえり",
-          "lemma": "かえる",
+          "surface": "帰り",
+          "lemma": "帰る",
           "pos": "動詞/一般/*/*/五段-ラ行/連用形-一般",
           "upos": "VERB",
           "xpos": "動詞",
           "feats": {},
           "start": 5,
-          "end": 8,
+          "end": 7,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "かえり",
-          "ruby_text": "かえり",
-          "ruby_spans": [],
-          "ruby_confidence": "high",
-          "furigana": "かえり"
+          "ruby_text": "帰[かえ]り",
+          "ruby_spans": [
+            {
+              "base": "帰",
+              "reading": "かえ",
+              "start": 0,
+              "length": 1
+            }
+          ],
+          "ruby_confidence": "reviewed",
+          "furigana": "かえり",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "ます",
@@ -696,8 +723,8 @@
           "upos": "AUX",
           "xpos": "助動詞",
           "feats": {},
-          "start": 8,
-          "end": 10,
+          "start": 7,
+          "end": 9,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "ます",
           "ruby_text": "ます",
@@ -712,8 +739,8 @@
           "upos": "PUNCT",
           "xpos": "補助記号",
           "feats": {},
-          "start": 10,
-          "end": 11,
+          "start": 9,
+          "end": 10,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "。",
           "ruby_text": "。",
@@ -736,8 +763,1282 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-13T01:54:46Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:Ja n3/7f096c63e2db121f",
+      "revision_id": 81092,
+      "parent_revision_id": 67662,
+      "revision_timestamp_utc": "2026-10-13T01:54:46Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Use standard Japanese spelling and distinguish noon from the afternoon in French and Norwegian; make the meetup translations natural.",
+      "pulled_utc": "2026-10-18T17:39:06Z",
+      "applied_utc": "2026-10-18T17:39:44Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-c13f1fa818b26df4",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "ja_n3:7f096c63e2db121f",
+        "pack_code": "ja_n3",
+        "entry_id": "正午",
+        "language": "ja",
+        "sentence_index": 1,
+        "old_sentence": "正午にひるごはんを食べます。",
+        "old_translations": {
+          "en": "I eat lunch at noon.",
+          "ar": "أتناول الغداء عند الظهر.",
+          "cs": "Obědvám v poledne.",
+          "da": "Jeg spiser frokost ved middagstid.",
+          "de": "Ich esse mittags zu Mittag.",
+          "el": "Τρώω μεσημεριανό το μεσημέρι.",
+          "es": "Como el almuerzo al mediodía.",
+          "fi": "Syön lounasta keskipäivällä.",
+          "fr": "Je déjeune à midi.",
+          "he": "אני אוכל ארוחת צהריים בצהריים.",
+          "hi": "मैं दोपहर में लंच करता हूँ।",
+          "hu": "Délben ebédelek.",
+          "id": "Saya makan siang saat tengah hari.",
+          "it": "Pranzo a mezzogiorno.",
+          "ko": "정오에 점심을 먹습니다.",
+          "nb": "Jeg spiser lunsj ved middagstid.",
+          "nl": "Ik eet lunch om twaalf uur 's middags.",
+          "pl": "Jem obiad w południe.",
+          "pt": "Eu almoço ao meio-dia.",
+          "ro": "Mănânc prânzul la prânz.",
+          "ru": "Я обедаю в полдень.",
+          "sv": "Jag äter lunch vid middagstid.",
+          "tr": "Öğlen öğle yemeği yerim.",
+          "uk": "Я обідаю опівдні.",
+          "vi": "Tôi ăn trưa vào buổi trưa.",
+          "yue": "我喺正午食午飯。",
+          "zh-Hans": "我在正午吃午饭。"
+        },
+        "proposed_sentence": "正午に昼ご飯を食べます。",
+        "proposed_translations": {
+          "en": "I eat lunch at noon.",
+          "ar": "أتناول الغداء عند الظهر.",
+          "cs": "Obědvám v poledne.",
+          "da": "Jeg spiser frokost ved middagstid.",
+          "de": "Ich esse mittags zu Mittag.",
+          "el": "Τρώω μεσημεριανό το μεσημέρι.",
+          "es": "Almuerzo al mediodía.",
+          "fi": "Syön lounasta keskipäivällä.",
+          "fr": "Je déjeune à midi.",
+          "he": "אני אוכל ארוחת צהריים בצהריים.",
+          "hi": "मैं दोपहर में लंच करता हूँ।",
+          "hu": "Délben ebédelek.",
+          "id": "Saya makan siang saat tengah hari.",
+          "it": "Pranzo a mezzogiorno.",
+          "ko": "정오에 점심을 먹습니다.",
+          "nb": "Jeg spiser lunsj ved middagstid.",
+          "nl": "Ik eet lunch om twaalf uur 's middags.",
+          "pl": "Jem obiad w południe.",
+          "pt": "Eu almoço ao meio-dia.",
+          "ro": "Mănânc prânzul la prânz.",
+          "ru": "Я обедаю в полдень.",
+          "sv": "Jag äter lunch vid middagstid.",
+          "tr": "Öğlen öğle yemeği yerim.",
+          "uk": "Я обідаю опівдні.",
+          "vi": "Tôi ăn trưa vào buổi trưa.",
+          "yue": "我喺正午食午飯。",
+          "zh-Hans": "我在正午吃午饭。"
+        },
+        "old_ruby_source": "正午[しょうご]にひるごはんを食[た]べます。",
+        "proposed_ruby_source": "正午[しょうご]に昼[ひる]ご飯[はん]を食[た]べます。",
+        "old_japanese": "正午にひるごはんを食べます。",
+        "old_english": "I eat lunch at noon.",
+        "proposed_japanese": "正午に昼ご飯を食べます。",
+        "proposed_english": "I eat lunch at noon.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "ja",
+          "sentence": "正午に昼ご飯を食べます。",
+          "tokens": [
+            {
+              "surface": "正午",
+              "lemma": "正午",
+              "pos": "名詞/普通名詞/副詞可能/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 0,
+              "end": 2,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "しょうご",
+              "ruby_text": "正午[しょうご]",
+              "ruby_spans": [
+                {
+                  "base": "正午",
+                  "reading": "しょうご",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "しょうご",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "に",
+              "lemma": "に",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 2,
+              "end": 3,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "に",
+              "ruby_text": "に",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "に"
+            },
+            {
+              "surface": "昼ご飯",
+              "lemma": "昼ご飯",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 3,
+              "end": 6,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "ひるごはん",
+              "ruby_text": "昼[ひる]ご飯[はん]",
+              "ruby_spans": [
+                {
+                  "base": "昼",
+                  "reading": "ひる",
+                  "start": 0,
+                  "length": 1
+                },
+                {
+                  "base": "飯",
+                  "reading": "はん",
+                  "start": 2,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "ひるごはん",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "を",
+              "lemma": "を",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 6,
+              "end": 7,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "を",
+              "ruby_text": "を",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "を"
+            },
+            {
+              "surface": "食べ",
+              "lemma": "食べる",
+              "pos": "動詞/一般/*/*/下一段-バ行/連用形-一般",
+              "upos": "VERB",
+              "xpos": "動詞",
+              "feats": {},
+              "start": 7,
+              "end": 9,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "たべ",
+              "ruby_text": "食[た]べ",
+              "ruby_spans": [
+                {
+                  "base": "食",
+                  "reading": "た",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "たべ",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "ます",
+              "lemma": "ます",
+              "pos": "助動詞/*/*/*/助動詞-マス/終止形-一般",
+              "upos": "AUX",
+              "xpos": "助動詞",
+              "feats": {},
+              "start": 9,
+              "end": 11,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "ます",
+              "ruby_text": "ます",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "ます"
+            },
+            {
+              "surface": "。",
+              "lemma": "。",
+              "pos": "補助記号/句点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 11,
+              "end": 12,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "。",
+              "ruby_text": "。",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "。"
+            }
+          ],
+          "reading": "しょうごにひるごはんをたべます。",
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "warnings": [
+            "mediawiki ruby hints applied"
+          ]
+        },
+        "generated_tokens": [
+          {
+            "surface": "正午",
+            "lemma": "正午",
+            "pos": "名詞/普通名詞/副詞可能/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "しょうご",
+            "ruby_text": "正午[しょうご]",
+            "ruby_spans": [
+              {
+                "base": "正午",
+                "reading": "しょうご",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "しょうご",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "に",
+            "lemma": "に",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 2,
+            "end": 3,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "に",
+            "ruby_text": "に",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "に"
+          },
+          {
+            "surface": "昼ご飯",
+            "lemma": "昼ご飯",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 3,
+            "end": 6,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ひるごはん",
+            "ruby_text": "昼[ひる]ご飯[はん]",
+            "ruby_spans": [
+              {
+                "base": "昼",
+                "reading": "ひる",
+                "start": 0,
+                "length": 1
+              },
+              {
+                "base": "飯",
+                "reading": "はん",
+                "start": 2,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "ひるごはん",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "を",
+            "lemma": "を",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 6,
+            "end": 7,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "を",
+            "ruby_text": "を",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "を"
+          },
+          {
+            "surface": "食べ",
+            "lemma": "食べる",
+            "pos": "動詞/一般/*/*/下一段-バ行/連用形-一般",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 7,
+            "end": 9,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "たべ",
+            "ruby_text": "食[た]べ",
+            "ruby_spans": [
+              {
+                "base": "食",
+                "reading": "た",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "たべ",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "ます",
+            "lemma": "ます",
+            "pos": "助動詞/*/*/*/助動詞-マス/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 9,
+            "end": 11,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ます",
+            "ruby_text": "ます",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "ます"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 11,
+            "end": 12,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
+          }
+        ],
+        "generated_reading": "しょうごにひるごはんをたべます。",
+        "analyzer": "sudachipy_sudachidict_core_c",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-18T17:39:06Z",
+        "updated_utc": "2026-10-18T17:40:47Z",
+        "applied_utc": "2026-10-18T17:40:47Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      },
+      {
+        "id": "sentprop-0bc1ca20b2ed36b6",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "ja_n3:7f096c63e2db121f",
+        "pack_code": "ja_n3",
+        "entry_id": "正午",
+        "language": "ja",
+        "sentence_index": 2,
+        "old_sentence": "正午すぎに、ひとが少なくなりました。",
+        "old_translations": {
+          "en": "After noon, fewer people were around.",
+          "ar": "بعد الظهر، قلّ عدد الناس.",
+          "cs": "Po poledni bylo méně lidí.",
+          "da": "Efter middagstid var der færre mennesker.",
+          "de": "Nach Mittag waren weniger Leute unterwegs.",
+          "el": "Μετά το μεσημέρι, ο κόσμος μειώθηκε.",
+          "es": "Después del mediodía, había menos gente.",
+          "fi": "Keskipäivän jälkeen ihmisiä oli vähemmän.",
+          "fr": "Après midi, il y avait moins de monde.",
+          "he": "אחרי הצהריים, היו פחות אנשים.",
+          "hi": "दोपहर के बाद, लोग कम हो गए।",
+          "hu": "Dél után kevesebb ember volt.",
+          "id": "Setelah tengah hari, orang-orang jadi lebih sedikit.",
+          "it": "Dopo mezzogiorno c'era meno gente.",
+          "ko": "정오가 지나자 사람들이 줄었습니다.",
+          "nb": "Etter middag var det færre folk.",
+          "nl": "Na twaalf uur waren er minder mensen.",
+          "pl": "Po południu było mniej ludzi.",
+          "pt": "Depois do meio-dia, havia menos pessoas.",
+          "ro": "După prânz, erau mai puțini oameni.",
+          "ru": "После полудня людей стало меньше.",
+          "sv": "Efter middagstid var det färre människor.",
+          "tr": "Öğleden sonra daha az insan vardı.",
+          "uk": "Після полудня людей стало менше.",
+          "vi": "Sau buổi trưa, ít người hơn.",
+          "yue": "正午之後，人少咗。",
+          "zh-Hans": "正午过后，人变少了。"
+        },
+        "proposed_sentence": "正午過ぎに、人が少なくなりました。",
+        "proposed_translations": {
+          "en": "After noon, fewer people were around.",
+          "ar": "بعد الظهر، قلّ عدد الناس.",
+          "cs": "Po poledni bylo méně lidí.",
+          "da": "Efter middagstid var der færre mennesker.",
+          "de": "Nach Mittag waren weniger Leute unterwegs.",
+          "el": "Μετά το μεσημέρι, ο κόσμος μειώθηκε.",
+          "es": "Después del mediodía, había menos gente.",
+          "fi": "Keskipäivän jälkeen ihmisiä oli vähemmän.",
+          "fr": "Peu après midi, il y avait moins de monde.",
+          "he": "אחרי הצהריים, היו פחות אנשים.",
+          "hi": "दोपहर के बाद, लोग कम हो गए।",
+          "hu": "Dél után kevesebb ember volt.",
+          "id": "Setelah tengah hari, orang-orang jadi lebih sedikit.",
+          "it": "Dopo mezzogiorno c'era meno gente.",
+          "ko": "정오가 지나자 사람들이 줄었습니다.",
+          "nb": "Etter middagstid var det færre folk.",
+          "nl": "Na twaalf uur waren er minder mensen.",
+          "pl": "Po południu było mniej ludzi.",
+          "pt": "Depois do meio-dia, havia menos pessoas.",
+          "ro": "După prânz, erau mai puțini oameni.",
+          "ru": "После полудня людей стало меньше.",
+          "sv": "Efter middagstid var det färre människor.",
+          "tr": "Öğleden sonra daha az insan vardı.",
+          "uk": "Після полудня людей стало менше.",
+          "vi": "Sau buổi trưa, ít người hơn.",
+          "yue": "正午之後，人少咗。",
+          "zh-Hans": "正午过后，人变少了。"
+        },
+        "old_ruby_source": "正午[しょうご]すぎに、ひとが少[すく]なくなりました。",
+        "proposed_ruby_source": "正午[しょうご]過[す]ぎに、人[ひと]が少[すく]なくなりました。",
+        "old_japanese": "正午すぎに、ひとが少なくなりました。",
+        "old_english": "After noon, fewer people were around.",
+        "proposed_japanese": "正午過ぎに、人が少なくなりました。",
+        "proposed_english": "After noon, fewer people were around.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "ja",
+          "sentence": "正午過ぎに、人が少なくなりました。",
+          "tokens": [
+            {
+              "surface": "正午",
+              "lemma": "正午",
+              "pos": "名詞/普通名詞/副詞可能/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 0,
+              "end": 2,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "しょうご",
+              "ruby_text": "正午[しょうご]",
+              "ruby_spans": [
+                {
+                  "base": "正午",
+                  "reading": "しょうご",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "しょうご",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "過ぎ",
+              "lemma": "過ぎ",
+              "pos": "接尾辞/名詞的/副詞可能/*/*/*",
+              "upos": "SUFFIX",
+              "xpos": "接尾辞",
+              "feats": {},
+              "start": 2,
+              "end": 4,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "すぎ",
+              "ruby_text": "過[す]ぎ",
+              "ruby_spans": [
+                {
+                  "base": "過",
+                  "reading": "す",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "すぎ",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "に",
+              "lemma": "に",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 4,
+              "end": 5,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "に",
+              "ruby_text": "に",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "に"
+            },
+            {
+              "surface": "、",
+              "lemma": "、",
+              "pos": "補助記号/読点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 5,
+              "end": 6,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "、",
+              "ruby_text": "、",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "、"
+            },
+            {
+              "surface": "人",
+              "lemma": "人",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 6,
+              "end": 7,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "ひと",
+              "ruby_text": "人[ひと]",
+              "ruby_spans": [
+                {
+                  "base": "人",
+                  "reading": "ひと",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "ひと",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "が",
+              "lemma": "が",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 7,
+              "end": 8,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "が",
+              "ruby_text": "が",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "が"
+            },
+            {
+              "surface": "少なく",
+              "lemma": "少ない",
+              "pos": "形容詞/一般/*/*/形容詞/連用形-一般",
+              "upos": "ADJ",
+              "xpos": "形容詞",
+              "feats": {},
+              "start": 8,
+              "end": 11,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "すくなく",
+              "ruby_text": "少[すく]なく",
+              "ruby_spans": [
+                {
+                  "base": "少",
+                  "reading": "すく",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "すくなく",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "なり",
+              "lemma": "なる",
+              "pos": "動詞/非自立可能/*/*/五段-ラ行/連用形-一般",
+              "upos": "VERB",
+              "xpos": "動詞",
+              "feats": {},
+              "start": 11,
+              "end": 13,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "なり",
+              "ruby_text": "なり",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "なり"
+            },
+            {
+              "surface": "まし",
+              "lemma": "ます",
+              "pos": "助動詞/*/*/*/助動詞-マス/連用形-一般",
+              "upos": "AUX",
+              "xpos": "助動詞",
+              "feats": {},
+              "start": 13,
+              "end": 15,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "まし",
+              "ruby_text": "まし",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "まし"
+            },
+            {
+              "surface": "た",
+              "lemma": "た",
+              "pos": "助動詞/*/*/*/助動詞-タ/終止形-一般",
+              "upos": "AUX",
+              "xpos": "助動詞",
+              "feats": {},
+              "start": 15,
+              "end": 16,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "た",
+              "ruby_text": "た",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "た"
+            },
+            {
+              "surface": "。",
+              "lemma": "。",
+              "pos": "補助記号/句点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 16,
+              "end": 17,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "。",
+              "ruby_text": "。",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "。"
+            }
+          ],
+          "reading": "しょうごすぎに、ひとがすくなくなりました。",
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "warnings": [
+            "mediawiki ruby hints applied"
+          ]
+        },
+        "generated_tokens": [
+          {
+            "surface": "正午",
+            "lemma": "正午",
+            "pos": "名詞/普通名詞/副詞可能/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "しょうご",
+            "ruby_text": "正午[しょうご]",
+            "ruby_spans": [
+              {
+                "base": "正午",
+                "reading": "しょうご",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "しょうご",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "過ぎ",
+            "lemma": "過ぎ",
+            "pos": "接尾辞/名詞的/副詞可能/*/*/*",
+            "upos": "SUFFIX",
+            "xpos": "接尾辞",
+            "feats": {},
+            "start": 2,
+            "end": 4,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "すぎ",
+            "ruby_text": "過[す]ぎ",
+            "ruby_spans": [
+              {
+                "base": "過",
+                "reading": "す",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "すぎ",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "に",
+            "lemma": "に",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 4,
+            "end": 5,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "に",
+            "ruby_text": "に",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "に"
+          },
+          {
+            "surface": "、",
+            "lemma": "、",
+            "pos": "補助記号/読点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 5,
+            "end": 6,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "、",
+            "ruby_text": "、",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "、"
+          },
+          {
+            "surface": "人",
+            "lemma": "人",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 6,
+            "end": 7,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ひと",
+            "ruby_text": "人[ひと]",
+            "ruby_spans": [
+              {
+                "base": "人",
+                "reading": "ひと",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "ひと",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "が",
+            "lemma": "が",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 7,
+            "end": 8,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "が",
+            "ruby_text": "が",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "が"
+          },
+          {
+            "surface": "少なく",
+            "lemma": "少ない",
+            "pos": "形容詞/一般/*/*/形容詞/連用形-一般",
+            "upos": "ADJ",
+            "xpos": "形容詞",
+            "feats": {},
+            "start": 8,
+            "end": 11,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "すくなく",
+            "ruby_text": "少[すく]なく",
+            "ruby_spans": [
+              {
+                "base": "少",
+                "reading": "すく",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "すくなく",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "なり",
+            "lemma": "なる",
+            "pos": "動詞/非自立可能/*/*/五段-ラ行/連用形-一般",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 11,
+            "end": 13,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "なり",
+            "ruby_text": "なり",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "なり"
+          },
+          {
+            "surface": "まし",
+            "lemma": "ます",
+            "pos": "助動詞/*/*/*/助動詞-マス/連用形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 13,
+            "end": 15,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "まし",
+            "ruby_text": "まし",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "まし"
+          },
+          {
+            "surface": "た",
+            "lemma": "た",
+            "pos": "助動詞/*/*/*/助動詞-タ/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 15,
+            "end": 16,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "た",
+            "ruby_text": "た",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "た"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 16,
+            "end": 17,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
+          }
+        ],
+        "generated_reading": "しょうごすぎに、ひとがすくなくなりました。",
+        "analyzer": "sudachipy_sudachidict_core_c",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-18T17:39:06Z",
+        "updated_utc": "2026-10-18T17:40:47Z",
+        "applied_utc": "2026-10-18T17:40:47Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      },
+      {
+        "id": "sentprop-4306dfa3e9d15e98",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "ja_n3:7f096c63e2db121f",
+        "pack_code": "ja_n3",
+        "entry_id": "正午",
+        "language": "ja",
+        "sentence_index": 4,
+        "old_sentence": "正午までにかえります。",
+        "old_translations": {
+          "en": "I’ll be back by noon.",
+          "ar": "سأعود قبل الظهر.",
+          "cs": "Vrátím se do poledne.",
+          "da": "Jeg er tilbage inden middag.",
+          "de": "Ich bin bis Mittag zurück.",
+          "el": "Θα επιστρέψω μέχρι το μεσημέρι.",
+          "es": "Volveré para el mediodía.",
+          "fi": "Palaan viimeistään keskipäivällä.",
+          "fr": "Je serai de retour avant midi.",
+          "he": "אחזור עד הצהריים.",
+          "hi": "मैं दोपहर तक वापस आ जाऊँगा।",
+          "hu": "Délre visszaérek.",
+          "id": "Saya akan kembali sebelum tengah hari.",
+          "it": "Tornerò entro mezzogiorno.",
+          "ko": "정오까지 돌아오겠습니다.",
+          "nb": "Jeg er tilbake innen middag.",
+          "nl": "Ik ben voor twaalf uur terug.",
+          "pl": "Wrócę do południa.",
+          "pt": "Vou voltar até ao meio-dia.",
+          "ro": "Mă întorc până la prânz.",
+          "ru": "Я вернусь к полудню.",
+          "sv": "Jag är tillbaka före middag.",
+          "tr": "Öğlene kadar döneceğim.",
+          "uk": "Я повернуся до полудня.",
+          "vi": "Tôi sẽ về trước buổi trưa.",
+          "yue": "我會喺正午前返嚟。",
+          "zh-Hans": "我会在正午前回来。"
+        },
+        "proposed_sentence": "正午までに帰ります。",
+        "proposed_translations": {
+          "en": "I’ll be back by noon.",
+          "ar": "سأعود قبل الظهر.",
+          "cs": "Vrátím se do poledne.",
+          "da": "Jeg er tilbage inden middag.",
+          "de": "Ich bin bis Mittag zurück.",
+          "el": "Θα επιστρέψω μέχρι το μεσημέρι.",
+          "es": "Volveré para el mediodía.",
+          "fi": "Palaan viimeistään keskipäivällä.",
+          "fr": "Je serai de retour avant midi.",
+          "he": "אחזור עד הצהריים.",
+          "hi": "मैं दोपहर तक वापस आ जाऊँगा।",
+          "hu": "Délre visszaérek.",
+          "id": "Saya akan kembali sebelum tengah hari.",
+          "it": "Tornerò entro mezzogiorno.",
+          "ko": "정오까지 돌아오겠습니다.",
+          "nb": "Jeg er tilbake innen middag.",
+          "nl": "Ik ben voor twaalf uur terug.",
+          "pl": "Wrócę do południa.",
+          "pt": "Vou voltar até ao meio-dia.",
+          "ro": "Mă întorc până la prânz.",
+          "ru": "Я вернусь к полудню.",
+          "sv": "Jag är tillbaka före middag.",
+          "tr": "Öğlene kadar döneceğim.",
+          "uk": "Я повернуся до полудня.",
+          "vi": "Tôi sẽ về trước buổi trưa.",
+          "yue": "我會喺正午前返嚟。",
+          "zh-Hans": "我会在正午前回来。"
+        },
+        "old_ruby_source": "正午[しょうご]までにかえります。",
+        "proposed_ruby_source": "正午[しょうご]までに帰[かえ]ります。",
+        "old_japanese": "正午までにかえります。",
+        "old_english": "I’ll be back by noon.",
+        "proposed_japanese": "正午までに帰ります。",
+        "proposed_english": "I’ll be back by noon.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "ja",
+          "sentence": "正午までに帰ります。",
+          "tokens": [
+            {
+              "surface": "正午",
+              "lemma": "正午",
+              "pos": "名詞/普通名詞/副詞可能/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 0,
+              "end": 2,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "しょうご",
+              "ruby_text": "正午[しょうご]",
+              "ruby_spans": [
+                {
+                  "base": "正午",
+                  "reading": "しょうご",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "しょうご",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "まで",
+              "lemma": "まで",
+              "pos": "助詞/副助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 2,
+              "end": 4,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "まで",
+              "ruby_text": "まで",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "まで"
+            },
+            {
+              "surface": "に",
+              "lemma": "に",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 4,
+              "end": 5,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "に",
+              "ruby_text": "に",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "に"
+            },
+            {
+              "surface": "帰り",
+              "lemma": "帰る",
+              "pos": "動詞/一般/*/*/五段-ラ行/連用形-一般",
+              "upos": "VERB",
+              "xpos": "動詞",
+              "feats": {},
+              "start": 5,
+              "end": 7,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "かえり",
+              "ruby_text": "帰[かえ]り",
+              "ruby_spans": [
+                {
+                  "base": "帰",
+                  "reading": "かえ",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "かえり",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "ます",
+              "lemma": "ます",
+              "pos": "助動詞/*/*/*/助動詞-マス/終止形-一般",
+              "upos": "AUX",
+              "xpos": "助動詞",
+              "feats": {},
+              "start": 7,
+              "end": 9,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "ます",
+              "ruby_text": "ます",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "ます"
+            },
+            {
+              "surface": "。",
+              "lemma": "。",
+              "pos": "補助記号/句点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 9,
+              "end": 10,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "。",
+              "ruby_text": "。",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "。"
+            }
+          ],
+          "reading": "しょうごまでにかえります。",
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "warnings": [
+            "mediawiki ruby hints applied"
+          ]
+        },
+        "generated_tokens": [
+          {
+            "surface": "正午",
+            "lemma": "正午",
+            "pos": "名詞/普通名詞/副詞可能/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "しょうご",
+            "ruby_text": "正午[しょうご]",
+            "ruby_spans": [
+              {
+                "base": "正午",
+                "reading": "しょうご",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "しょうご",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "まで",
+            "lemma": "まで",
+            "pos": "助詞/副助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 2,
+            "end": 4,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "まで",
+            "ruby_text": "まで",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "まで"
+          },
+          {
+            "surface": "に",
+            "lemma": "に",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 4,
+            "end": 5,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "に",
+            "ruby_text": "に",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "に"
+          },
+          {
+            "surface": "帰り",
+            "lemma": "帰る",
+            "pos": "動詞/一般/*/*/五段-ラ行/連用形-一般",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 5,
+            "end": 7,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "かえり",
+            "ruby_text": "帰[かえ]り",
+            "ruby_spans": [
+              {
+                "base": "帰",
+                "reading": "かえ",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "かえり",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "ます",
+            "lemma": "ます",
+            "pos": "助動詞/*/*/*/助動詞-マス/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 7,
+            "end": 9,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ます",
+            "ruby_text": "ます",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "ます"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 9,
+            "end": 10,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
+          }
+        ],
+        "generated_reading": "しょうごまでにかえります。",
+        "analyzer": "sudachipy_sudachidict_core_c",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-18T17:39:06Z",
+        "updated_utc": "2026-10-18T17:40:47Z",
+        "applied_utc": "2026-10-18T17:40:47Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-18T17:40:47Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -762,12 +2063,6 @@
       "しょうごすぎに、ひとがすくなくなりました。",
       "まちあわせはしょうごです。",
       "しょうごまでにかえります。"
-    ],
-    "en": [
-      "I eat lunch at noon.",
-      "After noon, fewer people were around.",
-      "The meeting is at noon.",
-      "I’ll be back by noon."
     ],
     "generation": {
       "generator": "vocomipedia_source_generator.py",
@@ -806,6 +2101,598 @@
         "parts_of_speech": "Noun; Adverb (fukushi)"
       }
     },
+    "pos_analysis": [
+      {
+        "sentence": "正午に昼ご飯を食べます。",
+        "tokens": [
+          {
+            "surface": "正午",
+            "lemma": "正午",
+            "pos": "名詞/普通名詞/副詞可能/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "しょうご",
+            "ruby_text": "正午[しょうご]",
+            "ruby_spans": [
+              {
+                "base": "正午",
+                "reading": "しょうご",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "しょうご",
+            "ruby_source": "mediawiki_sentence_ruby",
+            "is_main_word": true
+          },
+          {
+            "surface": "に",
+            "lemma": "に",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 2,
+            "end": 3,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "に",
+            "ruby_text": "に",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "に"
+          },
+          {
+            "surface": "昼ご飯",
+            "lemma": "昼ご飯",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 3,
+            "end": 6,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ひるごはん",
+            "ruby_text": "昼[ひる]ご飯[はん]",
+            "ruby_spans": [
+              {
+                "base": "昼",
+                "reading": "ひる",
+                "start": 0,
+                "length": 1
+              },
+              {
+                "base": "飯",
+                "reading": "はん",
+                "start": 2,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "ひるごはん",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "を",
+            "lemma": "を",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 6,
+            "end": 7,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "を",
+            "ruby_text": "を",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "を"
+          },
+          {
+            "surface": "食べ",
+            "lemma": "食べる",
+            "pos": "動詞/一般/*/*/下一段-バ行/連用形-一般",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 7,
+            "end": 9,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "たべ",
+            "ruby_text": "食[た]べ",
+            "ruby_spans": [
+              {
+                "base": "食",
+                "reading": "た",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "たべ",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "ます",
+            "lemma": "ます",
+            "pos": "助動詞/*/*/*/助動詞-マス/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 9,
+            "end": 11,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ます",
+            "ruby_text": "ます",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "ます"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 11,
+            "end": 12,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
+          }
+        ],
+        "difficulty_aggregated": null
+      },
+      {
+        "sentence": "正午過ぎに、人が少なくなりました。",
+        "tokens": [
+          {
+            "surface": "正午",
+            "lemma": "正午",
+            "pos": "名詞/普通名詞/副詞可能/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "しょうご",
+            "ruby_text": "正午[しょうご]",
+            "ruby_spans": [
+              {
+                "base": "正午",
+                "reading": "しょうご",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "しょうご",
+            "ruby_source": "mediawiki_sentence_ruby",
+            "is_main_word": true
+          },
+          {
+            "surface": "過ぎ",
+            "lemma": "過ぎ",
+            "pos": "接尾辞/名詞的/副詞可能/*/*/*",
+            "upos": "SUFFIX",
+            "xpos": "接尾辞",
+            "feats": {},
+            "start": 2,
+            "end": 4,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "すぎ",
+            "ruby_text": "過[す]ぎ",
+            "ruby_spans": [
+              {
+                "base": "過",
+                "reading": "す",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "すぎ",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "に",
+            "lemma": "に",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 4,
+            "end": 5,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "に",
+            "ruby_text": "に",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "に"
+          },
+          {
+            "surface": "、",
+            "lemma": "、",
+            "pos": "補助記号/読点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 5,
+            "end": 6,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "、",
+            "ruby_text": "、",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "、"
+          },
+          {
+            "surface": "人",
+            "lemma": "人",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 6,
+            "end": 7,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ひと",
+            "ruby_text": "人[ひと]",
+            "ruby_spans": [
+              {
+                "base": "人",
+                "reading": "ひと",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "ひと",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "が",
+            "lemma": "が",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 7,
+            "end": 8,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "が",
+            "ruby_text": "が",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "が"
+          },
+          {
+            "surface": "少なく",
+            "lemma": "少ない",
+            "pos": "形容詞/一般/*/*/形容詞/連用形-一般",
+            "upos": "ADJ",
+            "xpos": "形容詞",
+            "feats": {},
+            "start": 8,
+            "end": 11,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "すくなく",
+            "ruby_text": "少[すく]なく",
+            "ruby_spans": [
+              {
+                "base": "少",
+                "reading": "すく",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "すくなく",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "なり",
+            "lemma": "なる",
+            "pos": "動詞/非自立可能/*/*/五段-ラ行/連用形-一般",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 11,
+            "end": 13,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "なり",
+            "ruby_text": "なり",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "なり"
+          },
+          {
+            "surface": "まし",
+            "lemma": "ます",
+            "pos": "助動詞/*/*/*/助動詞-マス/連用形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 13,
+            "end": 15,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "まし",
+            "ruby_text": "まし",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "まし"
+          },
+          {
+            "surface": "た",
+            "lemma": "た",
+            "pos": "助動詞/*/*/*/助動詞-タ/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 15,
+            "end": 16,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "た",
+            "ruby_text": "た",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "た"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 16,
+            "end": 17,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
+          }
+        ],
+        "difficulty_aggregated": null
+      },
+      {
+        "sentence": "待ち合わせは正午です。",
+        "tokens": [
+          {
+            "surface": "待ち合わせ",
+            "lemma": "待ち合わせ",
+            "pos": "名詞/普通名詞/サ変可能/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 0,
+            "end": 5,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "まちあわせ",
+            "ruby_text": "待[ま]ち合[あ]わせ",
+            "ruby_spans": [
+              {
+                "base": "待",
+                "reading": "ま",
+                "start": 0,
+                "length": 1
+              },
+              {
+                "base": "合",
+                "reading": "あ",
+                "start": 2,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "high",
+            "furigana": "まちあわせ"
+          },
+          {
+            "surface": "は",
+            "lemma": "は",
+            "pos": "助詞/係助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 5,
+            "end": 6,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "は",
+            "ruby_text": "は",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "は"
+          },
+          {
+            "surface": "正午",
+            "lemma": "正午",
+            "pos": "名詞/普通名詞/副詞可能/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 6,
+            "end": 8,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "しょうご",
+            "ruby_text": "正午[しょうご]",
+            "ruby_spans": [
+              {
+                "base": "正午",
+                "reading": "しょうご",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "medium",
+            "furigana": "しょうご",
+            "is_main_word": true
+          },
+          {
+            "surface": "です",
+            "lemma": "です",
+            "pos": "助動詞/*/*/*/助動詞-デス/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 8,
+            "end": 10,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "です",
+            "ruby_text": "です",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "です"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 10,
+            "end": 11,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
+          }
+        ],
+        "difficulty_aggregated": null
+      },
+      {
+        "sentence": "正午までに帰ります。",
+        "tokens": [
+          {
+            "surface": "正午",
+            "lemma": "正午",
+            "pos": "名詞/普通名詞/副詞可能/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "しょうご",
+            "ruby_text": "正午[しょうご]",
+            "ruby_spans": [
+              {
+                "base": "正午",
+                "reading": "しょうご",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "しょうご",
+            "ruby_source": "mediawiki_sentence_ruby",
+            "is_main_word": true
+          },
+          {
+            "surface": "まで",
+            "lemma": "まで",
+            "pos": "助詞/副助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 2,
+            "end": 4,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "まで",
+            "ruby_text": "まで",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "まで"
+          },
+          {
+            "surface": "に",
+            "lemma": "に",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 4,
+            "end": 5,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "に",
+            "ruby_text": "に",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "に"
+          },
+          {
+            "surface": "帰り",
+            "lemma": "帰る",
+            "pos": "動詞/一般/*/*/五段-ラ行/連用形-一般",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 5,
+            "end": 7,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "かえり",
+            "ruby_text": "帰[かえ]り",
+            "ruby_spans": [
+              {
+                "base": "帰",
+                "reading": "かえ",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "かえり",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "ます",
+            "lemma": "ます",
+            "pos": "助動詞/*/*/*/助動詞-マス/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 7,
+            "end": 9,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ます",
+            "ruby_text": "ます",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "ます"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 9,
+            "end": 10,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
+          }
+        ],
+        "difficulty_aggregated": null
+      }
+    ],
     "word_en": "noon; midday",
     "word_es": "mediodía",
     "word_fr": "midi",
@@ -855,7 +2742,7 @@
     "de": [
       "Ich esse mittags zu Mittag.",
       "Nach Mittag waren weniger Leute unterwegs.",
-      "Das Treffen ist um Mittag.",
+      "Das Treffen ist um zwölf Uhr mittags.",
       "Ich bin bis Mittag zurück."
     ],
     "el": [
@@ -864,10 +2751,16 @@
       "Το ραντεβού είναι το μεσημέρι.",
       "Θα επιστρέψω μέχρι το μεσημέρι."
     ],
+    "en": [
+      "I eat lunch at noon.",
+      "After noon, fewer people were around.",
+      "We’re meeting at noon.",
+      "I’ll be back by noon."
+    ],
     "es": [
       "Como el almuerzo al mediodía.",
       "Después del mediodía, había menos gente.",
-      "La reunión es al mediodía.",
+      "La cita es al mediodía.",
       "Volveré para el mediodía."
     ],
     "fi": [
@@ -989,571 +2882,6 @@
       "正午过后，人变少了。",
       "碰面时间是正午。",
       "我会在正午前回来。"
-    ],
-    "pos_analysis": [
-      {
-        "sentence": "正午にひるごはんを食べます。",
-        "tokens": [
-          {
-            "surface": "正午",
-            "lemma": "正午",
-            "pos": "名詞/普通名詞/副詞可能/*/*/*",
-            "upos": "NOUN",
-            "xpos": "名詞",
-            "feats": {},
-            "start": 0,
-            "end": 2,
-            "analyzer": "sudachipy_sudachidict_core_c",
-            "reading_kana": "しょうご",
-            "ruby_text": "正午[しょうご]",
-            "ruby_spans": [
-              {
-                "base": "正午",
-                "reading": "しょうご",
-                "start": 0,
-                "length": 2
-              }
-            ],
-            "ruby_confidence": "medium",
-            "furigana": "しょうご",
-            "is_main_word": true
-          },
-          {
-            "surface": "に",
-            "lemma": "に",
-            "pos": "助詞/格助詞/*/*/*/*",
-            "upos": "PART",
-            "xpos": "助詞",
-            "feats": {},
-            "start": 2,
-            "end": 3,
-            "analyzer": "sudachipy_sudachidict_core_c",
-            "reading_kana": "に",
-            "ruby_text": "に",
-            "ruby_spans": [],
-            "ruby_confidence": "high",
-            "furigana": "に"
-          },
-          {
-            "surface": "ひる",
-            "lemma": "ひる",
-            "pos": "動詞/一般/*/*/五段-ラ行/連体形-一般",
-            "upos": "VERB",
-            "xpos": "動詞",
-            "feats": {},
-            "start": 3,
-            "end": 5,
-            "analyzer": "sudachipy_sudachidict_core_c",
-            "reading_kana": "ひる",
-            "ruby_text": "ひる",
-            "ruby_spans": [],
-            "ruby_confidence": "high",
-            "furigana": "ひる"
-          },
-          {
-            "surface": "ごはん",
-            "lemma": "ごはん",
-            "pos": "名詞/普通名詞/一般/*/*/*",
-            "upos": "NOUN",
-            "xpos": "名詞",
-            "feats": {},
-            "start": 5,
-            "end": 8,
-            "analyzer": "sudachipy_sudachidict_core_c",
-            "reading_kana": "ごはん",
-            "ruby_text": "ごはん",
-            "ruby_spans": [],
-            "ruby_confidence": "high",
-            "furigana": "ごはん"
-          },
-          {
-            "surface": "を",
-            "lemma": "を",
-            "pos": "助詞/格助詞/*/*/*/*",
-            "upos": "PART",
-            "xpos": "助詞",
-            "feats": {},
-            "start": 8,
-            "end": 9,
-            "analyzer": "sudachipy_sudachidict_core_c",
-            "reading_kana": "を",
-            "ruby_text": "を",
-            "ruby_spans": [],
-            "ruby_confidence": "high",
-            "furigana": "を"
-          },
-          {
-            "surface": "食べ",
-            "lemma": "食べる",
-            "pos": "動詞/一般/*/*/下一段-バ行/連用形-一般",
-            "upos": "VERB",
-            "xpos": "動詞",
-            "feats": {},
-            "start": 9,
-            "end": 11,
-            "analyzer": "sudachipy_sudachidict_core_c",
-            "reading_kana": "たべ",
-            "ruby_text": "食[た]べ",
-            "ruby_spans": [
-              {
-                "base": "食",
-                "reading": "た",
-                "start": 0,
-                "length": 1
-              }
-            ],
-            "ruby_confidence": "high",
-            "furigana": "たべ"
-          },
-          {
-            "surface": "ます",
-            "lemma": "ます",
-            "pos": "助動詞/*/*/*/助動詞-マス/終止形-一般",
-            "upos": "AUX",
-            "xpos": "助動詞",
-            "feats": {},
-            "start": 11,
-            "end": 13,
-            "analyzer": "sudachipy_sudachidict_core_c",
-            "reading_kana": "ます",
-            "ruby_text": "ます",
-            "ruby_spans": [],
-            "ruby_confidence": "high",
-            "furigana": "ます"
-          },
-          {
-            "surface": "。",
-            "lemma": "。",
-            "pos": "補助記号/句点/*/*/*/*",
-            "upos": "PUNCT",
-            "xpos": "補助記号",
-            "feats": {},
-            "start": 13,
-            "end": 14,
-            "analyzer": "sudachipy_sudachidict_core_c",
-            "reading_kana": "。",
-            "ruby_text": "。",
-            "ruby_spans": [],
-            "ruby_confidence": "high",
-            "furigana": "。"
-          }
-        ],
-        "difficulty_aggregated": null
-      },
-      {
-        "sentence": "正午すぎに、ひとが少なくなりました。",
-        "tokens": [
-          {
-            "surface": "正午",
-            "lemma": "正午",
-            "pos": "名詞/普通名詞/副詞可能/*/*/*",
-            "upos": "NOUN",
-            "xpos": "名詞",
-            "feats": {},
-            "start": 0,
-            "end": 2,
-            "analyzer": "sudachipy_sudachidict_core_c",
-            "reading_kana": "しょうご",
-            "ruby_text": "正午[しょうご]",
-            "ruby_spans": [
-              {
-                "base": "正午",
-                "reading": "しょうご",
-                "start": 0,
-                "length": 2
-              }
-            ],
-            "ruby_confidence": "medium",
-            "furigana": "しょうご",
-            "is_main_word": true
-          },
-          {
-            "surface": "すぎ",
-            "lemma": "すぎ",
-            "pos": "接尾辞/形状詞的/*/*/*/*",
-            "upos": "SUFFIX",
-            "xpos": "接尾辞",
-            "feats": {},
-            "start": 2,
-            "end": 4,
-            "analyzer": "sudachipy_sudachidict_core_c",
-            "reading_kana": "すぎ",
-            "ruby_text": "すぎ",
-            "ruby_spans": [],
-            "ruby_confidence": "high",
-            "furigana": "すぎ"
-          },
-          {
-            "surface": "に",
-            "lemma": "だ",
-            "pos": "助動詞/*/*/*/助動詞-ダ/連用形-ニ",
-            "upos": "AUX",
-            "xpos": "助動詞",
-            "feats": {},
-            "start": 4,
-            "end": 5,
-            "analyzer": "sudachipy_sudachidict_core_c",
-            "reading_kana": "に",
-            "ruby_text": "に",
-            "ruby_spans": [],
-            "ruby_confidence": "high",
-            "furigana": "に"
-          },
-          {
-            "surface": "、",
-            "lemma": "、",
-            "pos": "補助記号/読点/*/*/*/*",
-            "upos": "PUNCT",
-            "xpos": "補助記号",
-            "feats": {},
-            "start": 5,
-            "end": 6,
-            "analyzer": "sudachipy_sudachidict_core_c",
-            "reading_kana": "、",
-            "ruby_text": "、",
-            "ruby_spans": [],
-            "ruby_confidence": "high",
-            "furigana": "、"
-          },
-          {
-            "surface": "ひと",
-            "lemma": "ひと",
-            "pos": "名詞/普通名詞/一般/*/*/*",
-            "upos": "NOUN",
-            "xpos": "名詞",
-            "feats": {},
-            "start": 6,
-            "end": 8,
-            "analyzer": "sudachipy_sudachidict_core_c",
-            "reading_kana": "ひと",
-            "ruby_text": "ひと",
-            "ruby_spans": [],
-            "ruby_confidence": "high",
-            "furigana": "ひと"
-          },
-          {
-            "surface": "が",
-            "lemma": "が",
-            "pos": "助詞/格助詞/*/*/*/*",
-            "upos": "PART",
-            "xpos": "助詞",
-            "feats": {},
-            "start": 8,
-            "end": 9,
-            "analyzer": "sudachipy_sudachidict_core_c",
-            "reading_kana": "が",
-            "ruby_text": "が",
-            "ruby_spans": [],
-            "ruby_confidence": "high",
-            "furigana": "が"
-          },
-          {
-            "surface": "少なく",
-            "lemma": "少ない",
-            "pos": "形容詞/一般/*/*/形容詞/連用形-一般",
-            "upos": "ADJ",
-            "xpos": "形容詞",
-            "feats": {},
-            "start": 9,
-            "end": 12,
-            "analyzer": "sudachipy_sudachidict_core_c",
-            "reading_kana": "すくなく",
-            "ruby_text": "少[すく]なく",
-            "ruby_spans": [
-              {
-                "base": "少",
-                "reading": "すく",
-                "start": 0,
-                "length": 1
-              }
-            ],
-            "ruby_confidence": "high",
-            "furigana": "すくなく"
-          },
-          {
-            "surface": "なり",
-            "lemma": "なる",
-            "pos": "動詞/非自立可能/*/*/五段-ラ行/連用形-一般",
-            "upos": "VERB",
-            "xpos": "動詞",
-            "feats": {},
-            "start": 12,
-            "end": 14,
-            "analyzer": "sudachipy_sudachidict_core_c",
-            "reading_kana": "なり",
-            "ruby_text": "なり",
-            "ruby_spans": [],
-            "ruby_confidence": "high",
-            "furigana": "なり"
-          },
-          {
-            "surface": "まし",
-            "lemma": "ます",
-            "pos": "助動詞/*/*/*/助動詞-マス/連用形-一般",
-            "upos": "AUX",
-            "xpos": "助動詞",
-            "feats": {},
-            "start": 14,
-            "end": 16,
-            "analyzer": "sudachipy_sudachidict_core_c",
-            "reading_kana": "まし",
-            "ruby_text": "まし",
-            "ruby_spans": [],
-            "ruby_confidence": "high",
-            "furigana": "まし"
-          },
-          {
-            "surface": "た",
-            "lemma": "た",
-            "pos": "助動詞/*/*/*/助動詞-タ/終止形-一般",
-            "upos": "AUX",
-            "xpos": "助動詞",
-            "feats": {},
-            "start": 16,
-            "end": 17,
-            "analyzer": "sudachipy_sudachidict_core_c",
-            "reading_kana": "た",
-            "ruby_text": "た",
-            "ruby_spans": [],
-            "ruby_confidence": "high",
-            "furigana": "た"
-          },
-          {
-            "surface": "。",
-            "lemma": "。",
-            "pos": "補助記号/句点/*/*/*/*",
-            "upos": "PUNCT",
-            "xpos": "補助記号",
-            "feats": {},
-            "start": 17,
-            "end": 18,
-            "analyzer": "sudachipy_sudachidict_core_c",
-            "reading_kana": "。",
-            "ruby_text": "。",
-            "ruby_spans": [],
-            "ruby_confidence": "high",
-            "furigana": "。"
-          }
-        ],
-        "difficulty_aggregated": null
-      },
-      {
-        "sentence": "待ち合わせは正午です。",
-        "tokens": [
-          {
-            "surface": "待ち合わせ",
-            "lemma": "待ち合わせ",
-            "pos": "名詞/普通名詞/サ変可能/*/*/*",
-            "upos": "NOUN",
-            "xpos": "名詞",
-            "feats": {},
-            "start": 0,
-            "end": 5,
-            "analyzer": "sudachipy_sudachidict_core_c",
-            "reading_kana": "まちあわせ",
-            "ruby_text": "待[ま]ち合[あ]わせ",
-            "ruby_spans": [
-              {
-                "base": "待",
-                "reading": "ま",
-                "start": 0,
-                "length": 1
-              },
-              {
-                "base": "合",
-                "reading": "あ",
-                "start": 2,
-                "length": 1
-              }
-            ],
-            "ruby_confidence": "high",
-            "furigana": "まちあわせ"
-          },
-          {
-            "surface": "は",
-            "lemma": "は",
-            "pos": "助詞/係助詞/*/*/*/*",
-            "upos": "PART",
-            "xpos": "助詞",
-            "feats": {},
-            "start": 5,
-            "end": 6,
-            "analyzer": "sudachipy_sudachidict_core_c",
-            "reading_kana": "は",
-            "ruby_text": "は",
-            "ruby_spans": [],
-            "ruby_confidence": "high",
-            "furigana": "は"
-          },
-          {
-            "surface": "正午",
-            "lemma": "正午",
-            "pos": "名詞/普通名詞/副詞可能/*/*/*",
-            "upos": "NOUN",
-            "xpos": "名詞",
-            "feats": {},
-            "start": 6,
-            "end": 8,
-            "analyzer": "sudachipy_sudachidict_core_c",
-            "reading_kana": "しょうご",
-            "ruby_text": "正午[しょうご]",
-            "ruby_spans": [
-              {
-                "base": "正午",
-                "reading": "しょうご",
-                "start": 0,
-                "length": 2
-              }
-            ],
-            "ruby_confidence": "medium",
-            "furigana": "しょうご",
-            "is_main_word": true
-          },
-          {
-            "surface": "です",
-            "lemma": "です",
-            "pos": "助動詞/*/*/*/助動詞-デス/終止形-一般",
-            "upos": "AUX",
-            "xpos": "助動詞",
-            "feats": {},
-            "start": 8,
-            "end": 10,
-            "analyzer": "sudachipy_sudachidict_core_c",
-            "reading_kana": "です",
-            "ruby_text": "です",
-            "ruby_spans": [],
-            "ruby_confidence": "high",
-            "furigana": "です"
-          },
-          {
-            "surface": "。",
-            "lemma": "。",
-            "pos": "補助記号/句点/*/*/*/*",
-            "upos": "PUNCT",
-            "xpos": "補助記号",
-            "feats": {},
-            "start": 10,
-            "end": 11,
-            "analyzer": "sudachipy_sudachidict_core_c",
-            "reading_kana": "。",
-            "ruby_text": "。",
-            "ruby_spans": [],
-            "ruby_confidence": "high",
-            "furigana": "。"
-          }
-        ],
-        "difficulty_aggregated": null
-      },
-      {
-        "sentence": "正午までにかえります。",
-        "tokens": [
-          {
-            "surface": "正午",
-            "lemma": "正午",
-            "pos": "名詞/普通名詞/副詞可能/*/*/*",
-            "upos": "NOUN",
-            "xpos": "名詞",
-            "feats": {},
-            "start": 0,
-            "end": 2,
-            "analyzer": "sudachipy_sudachidict_core_c",
-            "reading_kana": "しょうご",
-            "ruby_text": "正午[しょうご]",
-            "ruby_spans": [
-              {
-                "base": "正午",
-                "reading": "しょうご",
-                "start": 0,
-                "length": 2
-              }
-            ],
-            "ruby_confidence": "medium",
-            "furigana": "しょうご",
-            "is_main_word": true
-          },
-          {
-            "surface": "まで",
-            "lemma": "まで",
-            "pos": "助詞/副助詞/*/*/*/*",
-            "upos": "PART",
-            "xpos": "助詞",
-            "feats": {},
-            "start": 2,
-            "end": 4,
-            "analyzer": "sudachipy_sudachidict_core_c",
-            "reading_kana": "まで",
-            "ruby_text": "まで",
-            "ruby_spans": [],
-            "ruby_confidence": "high",
-            "furigana": "まで"
-          },
-          {
-            "surface": "に",
-            "lemma": "に",
-            "pos": "助詞/格助詞/*/*/*/*",
-            "upos": "PART",
-            "xpos": "助詞",
-            "feats": {},
-            "start": 4,
-            "end": 5,
-            "analyzer": "sudachipy_sudachidict_core_c",
-            "reading_kana": "に",
-            "ruby_text": "に",
-            "ruby_spans": [],
-            "ruby_confidence": "high",
-            "furigana": "に"
-          },
-          {
-            "surface": "かえり",
-            "lemma": "かえる",
-            "pos": "動詞/一般/*/*/五段-ラ行/連用形-一般",
-            "upos": "VERB",
-            "xpos": "動詞",
-            "feats": {},
-            "start": 5,
-            "end": 8,
-            "analyzer": "sudachipy_sudachidict_core_c",
-            "reading_kana": "かえり",
-            "ruby_text": "かえり",
-            "ruby_spans": [],
-            "ruby_confidence": "high",
-            "furigana": "かえり"
-          },
-          {
-            "surface": "ます",
-            "lemma": "ます",
-            "pos": "助動詞/*/*/*/助動詞-マス/終止形-一般",
-            "upos": "AUX",
-            "xpos": "助動詞",
-            "feats": {},
-            "start": 8,
-            "end": 10,
-            "analyzer": "sudachipy_sudachidict_core_c",
-            "reading_kana": "ます",
-            "ruby_text": "ます",
-            "ruby_spans": [],
-            "ruby_confidence": "high",
-            "furigana": "ます"
-          },
-          {
-            "surface": "。",
-            "lemma": "。",
-            "pos": "補助記号/句点/*/*/*/*",
-            "upos": "PUNCT",
-            "xpos": "補助記号",
-            "feats": {},
-            "start": 10,
-            "end": 11,
-            "analyzer": "sudachipy_sudachidict_core_c",
-            "reading_kana": "。",
-            "ruby_text": "。",
-            "ruby_spans": [],
-            "ruby_confidence": "high",
-            "furigana": "。"
-          }
-        ],
-        "difficulty_aggregated": null
-      }
     ]
   }
 }

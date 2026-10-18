@@ -77,12 +77,14 @@
       "tokens": [
         {
           "surface": "私",
-          "surface_en": "I",
-          "furigana": "わたくし",
-          "pos": "pronoun",
           "lemma": "私",
-          "explanation": "first-person pronoun referring to the speaker",
-          "difficulty": 6,
+          "pos": "代名詞/*/*/*/*/*",
+          "upos": "PRON",
+          "xpos": "代名詞",
+          "feats": {},
+          "start": 0,
+          "end": 1,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "わたくし",
           "ruby_text": "私[わたくし]",
           "ruby_spans": [
@@ -93,31 +95,36 @@
               "length": 1
             }
           ],
-          "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "ruby_confidence": "reviewed",
+          "furigana": "わたくし",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "は",
-          "surface_en": "(topic marker)",
-          "furigana": "は",
-          "pos": "particle",
           "lemma": "は",
-          "explanation": "marks the topic of the sentence",
-          "difficulty": 1,
+          "pos": "助詞/係助詞/*/*/*/*",
+          "upos": "PART",
+          "xpos": "助詞",
+          "feats": {},
+          "start": 1,
+          "end": 2,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "は",
           "ruby_text": "は",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "は"
         },
         {
           "surface": "公園",
-          "surface_en": "park",
-          "furigana": "こうえん",
-          "pos": "noun",
           "lemma": "公園",
-          "explanation": "place where the action takes place",
-          "difficulty": 16,
+          "pos": "名詞/普通名詞/一般/*/*/*",
+          "upos": "NOUN",
+          "xpos": "名詞",
+          "feats": {},
+          "start": 2,
+          "end": 4,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "こうえん",
           "ruby_text": "公園[こうえん]",
           "ruby_spans": [
@@ -128,34 +135,38 @@
               "length": 2
             }
           ],
-          "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "ruby_confidence": "reviewed",
+          "furigana": "こうえん",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "を",
-          "surface_en": "(object marker)",
-          "furigana": "を",
-          "pos": "particle",
           "lemma": "を",
-          "explanation": "marks the direct object of the verb",
-          "difficulty": 1,
+          "pos": "助詞/格助詞/*/*/*/*",
+          "upos": "PART",
+          "xpos": "助詞",
+          "feats": {},
+          "start": 4,
+          "end": 5,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "を",
           "ruby_text": "を",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "を"
         },
         {
-          "surface": "歩きます",
-          "surface_en": "walk",
-          "furigana": "あるきます",
-          "pos": "verb",
+          "surface": "歩き",
           "lemma": "歩く",
-          "explanation": "polite non-past form of '歩く' meaning 'to walk'",
-          "difficulty": 6,
-          "is_main_word": true,
-          "reading_kana": "あるきます",
-          "ruby_text": "歩[ある]きます",
+          "pos": "動詞/一般/*/*/五段-カ行/連用形-一般",
+          "upos": "VERB",
+          "xpos": "動詞",
+          "feats": {},
+          "start": 5,
+          "end": 7,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "あるき",
+          "ruby_text": "歩[ある]き",
           "ruby_spans": [
             {
               "base": "歩",
@@ -164,8 +175,42 @@
               "length": 1
             }
           ],
+          "ruby_confidence": "reviewed",
+          "furigana": "あるき",
+          "ruby_source": "mediawiki_sentence_ruby",
+          "is_main_word": true
+        },
+        {
+          "surface": "ます",
+          "lemma": "ます",
+          "pos": "助動詞/*/*/*/助動詞-マス/終止形-一般",
+          "upos": "AUX",
+          "xpos": "助動詞",
+          "feats": {},
+          "start": 7,
+          "end": 9,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "ます",
+          "ruby_text": "ます",
+          "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "ます"
+        },
+        {
+          "surface": "。",
+          "lemma": "。",
+          "pos": "補助記号/句点/*/*/*/*",
+          "upos": "PUNCT",
+          "xpos": "補助記号",
+          "feats": {},
+          "start": 9,
+          "end": 10,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "。",
+          "ruby_text": "。",
+          "ruby_spans": [],
+          "ruby_confidence": "high",
+          "furigana": "。"
         }
       ],
       "difficulty": 6,
@@ -622,19 +667,403 @@
     "content_reviewers": [
       "mediawiki-visible-revision"
     ],
-    "last_reviewed_utc": "2026-06-12T20:11:59Z",
-    "approval_source": "mediawiki_visible_revision",
+    "last_reviewed_utc": "2026-10-10T22:25:59Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
     "wiki": {
       "title": "Item:Ja n5/14e444a06bc15b8c",
-      "revision_id": 37641,
-      "parent_revision_id": 34476,
-      "revision_timestamp_utc": "2026-06-12T20:11:59Z",
-      "revision_user": "VocomiBot",
-      "revision_comment": "Sync ja_n5 item 歩く__v3",
-      "pulled_utc": "2026-06-21T16:29:25Z",
-      "applied_utc": "2026-06-21T16:29:43Z",
+      "revision_id": 83872,
+      "parent_revision_id": 70372,
+      "revision_timestamp_utc": "2026-10-10T22:25:59Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Suggest reviewed Japanese and translation corrections",
+      "pulled_utc": "2026-10-17T07:37:31Z",
+      "applied_utc": "2026-10-17T07:37:46Z",
       "applied_by": "vocomipedia-apply-pulled"
-    }
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-075f8bca31916e70",
+        "status": "applied",
+        "type": "translation_update",
+        "item_id": "ja_n5:14e444a06bc15b8c",
+        "pack_code": "ja_n5",
+        "entry_id": "歩く__v3",
+        "language": "ja",
+        "sentence_index": 1,
+        "old_sentence": "私は公園を歩きます。",
+        "old_translations": {
+          "en": "I walk through the park.",
+          "es": "Camino por el parque.",
+          "fr": "Je marche dans le parc.",
+          "de": "Ich gehe durch den Park.",
+          "it": "Cammino per il parco.",
+          "ko": "공원을 걸어가요.",
+          "zh-Hans": "我走过公园。",
+          "yue": "我行過公園。",
+          "ru": "Я иду по парку.",
+          "pt": "Eu caminho pelo parque.",
+          "he": "אני הולך בפארק.",
+          "tr": "Parkta yürüyorum.",
+          "vi": "Tôi đi bộ qua công viên.",
+          "ar": "أمشي في الحديقة.",
+          "nl": "Ik loop door het park.",
+          "uk": "Я йду парком.",
+          "hu": "Átsétálok a parkon.",
+          "hi": "मैं पार्क में चलता हूँ।",
+          "pl": "Idę przez park.",
+          "el": "Περπατάω μέσα στο πάρκο.",
+          "nb": "Jeg går gjennom parken.",
+          "id": "Saya berjalan melalui taman.",
+          "sv": "Jag går genom parken.",
+          "ro": "Mă plimb prin parc.",
+          "cs": "Procházím parkem.",
+          "da": "Jeg går gennem parken.",
+          "fi": "Kävelen puiston läpi."
+        },
+        "proposed_sentence": "私は公園を歩きます。",
+        "proposed_translations": {
+          "en": "I walk through the park.",
+          "es": "Camino por el parque.",
+          "fr": "Je marche dans le parc.",
+          "de": "Ich gehe durch den Park.",
+          "it": "Cammino per il parco.",
+          "ko": "공원을 걸어가요.",
+          "zh-Hans": "我走过公园。",
+          "yue": "我行過公園。",
+          "ru": "Я иду по парку.",
+          "pt": "Eu caminho pelo parque.",
+          "he": "אני הולך בפארק.",
+          "tr": "Parkta yürüyorum.",
+          "vi": "Tôi đi bộ qua công viên.",
+          "ar": "أمشي في الحديقة.",
+          "nl": "Ik loop door het park.",
+          "uk": "Я йду парком.",
+          "hu": "Átsétálok a parkon.",
+          "hi": "मैं पार्क के माध्यम से चलता हूं।",
+          "pl": "Idę przez park.",
+          "el": "Περπατάω μέσα στο πάρκο.",
+          "nb": "Jeg går gjennom parken.",
+          "id": "Saya berjalan melalui taman.",
+          "sv": "Jag går genom parken.",
+          "ro": "Mă plimb prin parc.",
+          "cs": "Procházím parkem.",
+          "da": "Jeg går gennem parken.",
+          "fi": "Kävelen puiston läpi."
+        },
+        "old_ruby_source": "私[わたし]は公園[こうえん]を歩[ある]きます。",
+        "proposed_ruby_source": "私[わたくし]は公園[こうえん]を歩[ある]きます。",
+        "old_japanese": "私は公園を歩きます。",
+        "old_english": "I walk through the park.",
+        "proposed_japanese": "私は公園を歩きます。",
+        "proposed_english": "I walk through the park.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "ja",
+          "sentence": "私は公園を歩きます。",
+          "tokens": [
+            {
+              "surface": "私",
+              "lemma": "私",
+              "pos": "代名詞/*/*/*/*/*",
+              "upos": "PRON",
+              "xpos": "代名詞",
+              "feats": {},
+              "start": 0,
+              "end": 1,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "わたくし",
+              "ruby_text": "私[わたくし]",
+              "ruby_spans": [
+                {
+                  "base": "私",
+                  "reading": "わたくし",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "わたくし",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "は",
+              "lemma": "は",
+              "pos": "助詞/係助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 1,
+              "end": 2,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "は",
+              "ruby_text": "は",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "は"
+            },
+            {
+              "surface": "公園",
+              "lemma": "公園",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 2,
+              "end": 4,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "こうえん",
+              "ruby_text": "公園[こうえん]",
+              "ruby_spans": [
+                {
+                  "base": "公園",
+                  "reading": "こうえん",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "こうえん",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "を",
+              "lemma": "を",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 4,
+              "end": 5,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "を",
+              "ruby_text": "を",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "を"
+            },
+            {
+              "surface": "歩き",
+              "lemma": "歩く",
+              "pos": "動詞/一般/*/*/五段-カ行/連用形-一般",
+              "upos": "VERB",
+              "xpos": "動詞",
+              "feats": {},
+              "start": 5,
+              "end": 7,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "あるき",
+              "ruby_text": "歩[ある]き",
+              "ruby_spans": [
+                {
+                  "base": "歩",
+                  "reading": "ある",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "あるき",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "ます",
+              "lemma": "ます",
+              "pos": "助動詞/*/*/*/助動詞-マス/終止形-一般",
+              "upos": "AUX",
+              "xpos": "助動詞",
+              "feats": {},
+              "start": 7,
+              "end": 9,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "ます",
+              "ruby_text": "ます",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "ます"
+            },
+            {
+              "surface": "。",
+              "lemma": "。",
+              "pos": "補助記号/句点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 9,
+              "end": 10,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "。",
+              "ruby_text": "。",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "。"
+            }
+          ],
+          "reading": "わたくしはこうえんをあるきます。",
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "warnings": [
+            "mediawiki ruby hints applied"
+          ]
+        },
+        "generated_tokens": [
+          {
+            "surface": "私",
+            "lemma": "私",
+            "pos": "代名詞/*/*/*/*/*",
+            "upos": "PRON",
+            "xpos": "代名詞",
+            "feats": {},
+            "start": 0,
+            "end": 1,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "わたくし",
+            "ruby_text": "私[わたくし]",
+            "ruby_spans": [
+              {
+                "base": "私",
+                "reading": "わたくし",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "わたくし",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "は",
+            "lemma": "は",
+            "pos": "助詞/係助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 1,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "は",
+            "ruby_text": "は",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "は"
+          },
+          {
+            "surface": "公園",
+            "lemma": "公園",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 2,
+            "end": 4,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "こうえん",
+            "ruby_text": "公園[こうえん]",
+            "ruby_spans": [
+              {
+                "base": "公園",
+                "reading": "こうえん",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "こうえん",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "を",
+            "lemma": "を",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 4,
+            "end": 5,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "を",
+            "ruby_text": "を",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "を"
+          },
+          {
+            "surface": "歩き",
+            "lemma": "歩く",
+            "pos": "動詞/一般/*/*/五段-カ行/連用形-一般",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 5,
+            "end": 7,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "あるき",
+            "ruby_text": "歩[ある]き",
+            "ruby_spans": [
+              {
+                "base": "歩",
+                "reading": "ある",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "あるき",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "ます",
+            "lemma": "ます",
+            "pos": "助動詞/*/*/*/助動詞-マス/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 7,
+            "end": 9,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ます",
+            "ruby_text": "ます",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "ます"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 9,
+            "end": 10,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
+          }
+        ],
+        "generated_reading": "わたくしはこうえんをあるきます。",
+        "analyzer": "sudachipy_sudachidict_core_c",
+        "requires": [
+          "human_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:37:31Z",
+        "updated_utc": "2026-10-17T07:38:18Z",
+        "applied_utc": "2026-10-17T07:38:18Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:38:18Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -651,33 +1080,6 @@
   "app_payload": {
     "word": "歩く",
     "word_reading": "あるく",
-    "word_en": "to walk",
-    "word_es": "Caminar",
-    "word_fr": "marcher",
-    "word_de": "Zu gehen",
-    "word_it": "camminare",
-    "word_ko": "걷기 위해",
-    "word_zh-Hans": "步行",
-    "word_yue": "行",
-    "word_ru": "Идти",
-    "word_pt": "para andar",
-    "word_he": "ללכת",
-    "word_tr": "yürümek",
-    "word_vi": "đi bộ",
-    "word_ar": "للمشي",
-    "word_nl": "Wandelen",
-    "word_uk": "йти",
-    "word_hu": "sétálni",
-    "word_hi": "चलना",
-    "word_pl": "Iść",
-    "word_el": "να περπατήσω",
-    "word_nb": "å gå",
-    "word_id": "untuk berbalik",
-    "word_sv": "att gå",
-    "word_ro": "Să mergi pe jos",
-    "word_cs": "chodit",
-    "word_da": "at gå",
-    "word_fi": "kävellä",
     "comic_difficulty": 7.32,
     "jp": [
       "私は公園を歩きます。",
@@ -686,16 +1088,10 @@
       "ゴールまでゆっくり歩きます。"
     ],
     "fu": [
-      "わたしはこうえんをあるきます。",
+      "わたくしはこうえんをあるきます。",
       "とうきょうのえきでは、たくさんのひとがあるいています。",
       "つかれてもかれはあるきます。",
       "ごーるまでゆっくりあるきます。"
-    ],
-    "en": [
-      "I walk through the park.",
-      "Many people are walking at the Tokyo station.",
-      "Even when he gets tired, he walks.",
-      "I will walk slowly to the finish line."
     ],
     "pos_analysis": [
       {
@@ -703,12 +1099,14 @@
         "tokens": [
           {
             "surface": "私",
-            "surface_en": "I",
-            "furigana": "わたくし",
-            "pos": "pronoun",
             "lemma": "私",
-            "explanation": "first-person pronoun referring to the speaker",
-            "difficulty": 6,
+            "pos": "代名詞/*/*/*/*/*",
+            "upos": "PRON",
+            "xpos": "代名詞",
+            "feats": {},
+            "start": 0,
+            "end": 1,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "わたくし",
             "ruby_text": "私[わたくし]",
             "ruby_spans": [
@@ -719,31 +1117,36 @@
                 "length": 1
               }
             ],
-            "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "ruby_confidence": "reviewed",
+            "furigana": "わたくし",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "は",
-            "surface_en": "(topic marker)",
-            "furigana": "は",
-            "pos": "particle",
             "lemma": "は",
-            "explanation": "marks the topic of the sentence",
-            "difficulty": 1,
+            "pos": "助詞/係助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 1,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "は",
             "ruby_text": "は",
             "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "は"
           },
           {
             "surface": "公園",
-            "surface_en": "park",
-            "furigana": "こうえん",
-            "pos": "noun",
             "lemma": "公園",
-            "explanation": "place where the action takes place",
-            "difficulty": 16,
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 2,
+            "end": 4,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "こうえん",
             "ruby_text": "公園[こうえん]",
             "ruby_spans": [
@@ -754,34 +1157,38 @@
                 "length": 2
               }
             ],
-            "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "ruby_confidence": "reviewed",
+            "furigana": "こうえん",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "を",
-            "surface_en": "(object marker)",
-            "furigana": "を",
-            "pos": "particle",
             "lemma": "を",
-            "explanation": "marks the direct object of the verb",
-            "difficulty": 1,
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 4,
+            "end": 5,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "を",
             "ruby_text": "を",
             "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "を"
           },
           {
-            "surface": "歩きます",
-            "surface_en": "walk",
-            "furigana": "あるきます",
-            "pos": "verb",
+            "surface": "歩き",
             "lemma": "歩く",
-            "explanation": "polite non-past form of '歩く' meaning 'to walk'",
-            "difficulty": 6,
-            "is_main_word": true,
-            "reading_kana": "あるきます",
-            "ruby_text": "歩[ある]きます",
+            "pos": "動詞/一般/*/*/五段-カ行/連用形-一般",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 5,
+            "end": 7,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "あるき",
+            "ruby_text": "歩[ある]き",
             "ruby_spans": [
               {
                 "base": "歩",
@@ -790,8 +1197,42 @@
                 "length": 1
               }
             ],
+            "ruby_confidence": "reviewed",
+            "furigana": "あるき",
+            "ruby_source": "mediawiki_sentence_ruby",
+            "is_main_word": true
+          },
+          {
+            "surface": "ます",
+            "lemma": "ます",
+            "pos": "助動詞/*/*/*/助動詞-マス/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 7,
+            "end": 9,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ます",
+            "ruby_text": "ます",
+            "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "ます"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 9,
+            "end": 10,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
           }
         ],
         "difficulty_aggregated": 6
@@ -1140,143 +1581,40 @@
         "difficulty_aggregated": 2.25
       }
     ],
-    "es": [
-      "Camino por el parque.",
-      "Mucha gente camina por la estación de Tokio.",
-      "Incluso cuando se cansa, camina.",
-      "Caminaré despacio hasta la meta."
-    ],
-    "fr": [
-      "Je marche dans le parc.",
-      "Beaucoup de gens marchent à la gare de Tokyo.",
-      "Même quand il est fatigué, il marche.",
-      "Je marcherai lentement jusqu’à la ligne d’arrivée."
-    ],
-    "de": [
-      "Ich gehe durch den Park.",
-      "Viele Menschen laufen am Bahnhof Tokio.",
-      "Selbst wenn er müde ist, geht er weiter.",
-      "Ich werde langsam zur Ziellinie gehen."
-    ],
-    "it": [
-      "Cammino per il parco.",
-      "Molte persone stanno camminando alla stazione di Tokyo.",
-      "Anche quando si stanca, cammina.",
-      "Camminerò lentamente fino al traguardo."
-    ],
-    "ko": [
-      "공원을 걸어가요.",
-      "도쿄역에서는 많은 사람들이 걷고 있습니다.",
-      "피곤해도 걷는다.",
-      "나는 천천히 결승선까지 걸어갈 것이다."
-    ],
-    "zh-Hans": [
-      "我走过公园。",
-      "东京站有很多人在散步。",
-      "即使累了，他也会走路。",
-      "我会慢慢走到终点。"
-    ],
-    "yue": [
-      "我行過公園。",
-      "好多人都行喺東京車站。",
-      "即使佢攰咗，佢都會行路。",
-      "我會慢慢行去終點。"
-    ],
-    "ru": [
-      "Я иду по парку.",
-      "Многие люди идут пешком у токийского вокзала.",
-      "Даже когда устает, он ходит пешком.",
-      "Я буду медленно идти к финишу."
-    ],
-    "pt": [
-      "Eu caminho pelo parque.",
-      "Muitas pessoas estão caminhando na estação de Tóquio.",
-      "Mesmo quando fica cansado, ele anda.",
-      "Vou andar devagar até a linha de chegada."
-    ],
-    "he": [
-      "אני הולך בפארק.",
-      "הרבה אנשים הולכים בתחנת טוקיו.",
-      "גם כשהוא מתעייף, הוא הולך.",
-      "אני אלך לאט לקו הסיום."
-    ],
-    "tr": [
-      "Parkta yürüyorum.",
-      "Tokyo istasyonunda birçok kişi yürüyor.",
-      "Yorulsa bile yürür.",
-      "Yavaşça bitiş çizgisine yürüyeceğim."
-    ],
-    "vi": [
-      "Tôi đi bộ qua công viên.",
-      "Nhiều người đang đi bộ tại ga Tokyo.",
-      "Ngay cả khi mệt mỏi, anh ấy vẫn đi bộ.",
-      "Tôi sẽ chậm rãi đi về đích."
-    ],
+    "word_POS": "Verb",
+    "entry_id": "歩く__v3",
+    "word_en": "to walk",
+    "word_es": "Caminar",
+    "word_fr": "marcher",
+    "word_de": "Zu gehen",
+    "word_it": "camminare",
+    "word_ko": "걷기 위해",
+    "word_zh-Hans": "步行",
+    "word_yue": "行",
+    "word_ru": "Идти",
+    "word_pt": "para andar",
+    "word_he": "ללכת",
+    "word_tr": "yürümek",
+    "word_vi": "đi bộ",
+    "word_ar": "للمشي",
+    "word_nl": "Wandelen",
+    "word_uk": "йти",
+    "word_hu": "sétálni",
+    "word_hi": "चलना",
+    "word_pl": "Iść",
+    "word_el": "να περπατήσω",
+    "word_nb": "å gå",
+    "word_id": "untuk berbalik",
+    "word_sv": "att gå",
+    "word_ro": "Să mergi pe jos",
+    "word_cs": "chodit",
+    "word_da": "at gå",
+    "word_fi": "kävellä",
     "ar": [
       "أمشي في الحديقة.",
       "الكثير من الناس يمشون في محطة طوكيو.",
       "حتى عندما يتعب، يمشي.",
       "سأمشي ببطء إلى خط النهاية."
-    ],
-    "nl": [
-      "Ik loop door het park.",
-      "Veel mensen lopen op het station van Tokio.",
-      "Zelfs als hij moe is, loopt hij.",
-      "Ik zal langzaam naar de finish lopen."
-    ],
-    "uk": [
-      "Я йду парком.",
-      "Багато людей йдуть пішки біля токійського вокзалу.",
-      "Навіть коли він втомлюється, він іде пішки.",
-      "Я повільно йду до фінішу."
-    ],
-    "hu": [
-      "Átsétálok a parkon.",
-      "Sokan sétálnak a tokiói állomáson.",
-      "Még akkor is, ha elfárad, sétál.",
-      "Lassan sétálok a célvonalig."
-    ],
-    "hi": [
-      "मैं पार्क के माध्यम से चलता हूं।",
-      "टोक्यो स्टेशन पर कई लोग पैदल चल रहे हैं।",
-      "थक जाने पर भी चलता है।",
-      "मैं फिनिश लाइन तक धीरे-धीरे चलूंगा।"
-    ],
-    "pl": [
-      "Idę przez park.",
-      "Wiele osób spaceruje na stacji w Tokio.",
-      "Nawet gdy się zmęczy, idzie.",
-      "Będę szedł powoli do mety."
-    ],
-    "el": [
-      "Περπατάω μέσα στο πάρκο.",
-      "Πολλοί άνθρωποι περπατούν στο σταθμό του Τόκιο.",
-      "Ακόμα και όταν κουράζεται, περπατάει.",
-      "Θα περπατήσω αργά μέχρι τη γραμμή τερματισμού."
-    ],
-    "nb": [
-      "Jeg går gjennom parken.",
-      "Mange mennesker går på Tokyo stasjon.",
-      "Selv når han blir sliten, går han.",
-      "Jeg vil gå sakte mot målstreken."
-    ],
-    "id": [
-      "Saya berjalan melalui taman.",
-      "Banyak orang berjalan di stasiun Tokyo.",
-      "Bahkan ketika dia lelah, dia berjalan.",
-      "Saya akan berjalan perlahan ke garis finis."
-    ],
-    "sv": [
-      "Jag går genom parken.",
-      "Många människor promenerar vid Tokyo station.",
-      "Även när han blir trött går han.",
-      "Jag kommer att gå långsamt mot mållinjen."
-    ],
-    "ro": [
-      "Mă plimb prin parc.",
-      "Mulți oameni merg pe jos la stația Tokyo.",
-      "Chiar și când obosește, merge pe jos.",
-      "Voi merge încet până la linia de sosire."
     ],
     "cs": [
       "Procházím parkem.",
@@ -1290,12 +1628,149 @@
       "Selv når han bliver træt, går han.",
       "Jeg vil gå langsomt mod målstregen."
     ],
+    "de": [
+      "Ich gehe durch den Park.",
+      "Viele Menschen laufen am Bahnhof Tokio.",
+      "Selbst wenn er müde ist, geht er weiter.",
+      "Ich werde langsam zur Ziellinie gehen."
+    ],
+    "el": [
+      "Περπατάω μέσα στο πάρκο.",
+      "Πολλοί άνθρωποι περπατούν στο σταθμό του Τόκιο.",
+      "Ακόμα και όταν κουράζεται, περπατάει.",
+      "Θα περπατήσω αργά μέχρι τη γραμμή τερματισμού."
+    ],
+    "en": [
+      "I walk through the park.",
+      "Many people are walking at the Tokyo station.",
+      "Even when he gets tired, he walks.",
+      "I will walk slowly to the finish line."
+    ],
+    "es": [
+      "Camino por el parque.",
+      "Mucha gente camina por la estación de Tokio.",
+      "Incluso cuando se cansa, camina.",
+      "Caminaré despacio hasta la meta."
+    ],
     "fi": [
       "Kävelen puiston läpi.",
       "Monet ihmiset kävelevät Tokion asemalla.",
       "Vaikka hän väsyy, hän kävelee.",
       "Kävelen hitaasti maaliviivalle."
     ],
-    "word_POS": "Verb"
+    "fr": [
+      "Je marche dans le parc.",
+      "Beaucoup de gens marchent à la gare de Tokyo.",
+      "Même quand il est fatigué, il marche.",
+      "Je marcherai lentement jusqu’à la ligne d’arrivée."
+    ],
+    "he": [
+      "אני הולך בפארק.",
+      "הרבה אנשים הולכים בתחנת טוקיו.",
+      "גם כשהוא מתעייף, הוא הולך.",
+      "אני אלך לאט לקו הסיום."
+    ],
+    "hi": [
+      "मैं पार्क में चलता हूँ।",
+      "टोक्यो स्टेशन पर कई लोग पैदल चल रहे हैं।",
+      "थक जाने पर भी चलता है।",
+      "मैं फिनिश लाइन तक धीरे-धीरे चलूंगा।"
+    ],
+    "hu": [
+      "Átsétálok a parkon.",
+      "Sokan sétálnak a tokiói állomáson.",
+      "Még akkor is, ha elfárad, sétál.",
+      "Lassan sétálok a célvonalig."
+    ],
+    "id": [
+      "Saya berjalan melalui taman.",
+      "Banyak orang berjalan di stasiun Tokyo.",
+      "Bahkan ketika dia lelah, dia berjalan.",
+      "Saya akan berjalan perlahan ke garis finis."
+    ],
+    "it": [
+      "Cammino per il parco.",
+      "Molte persone stanno camminando alla stazione di Tokyo.",
+      "Anche quando si stanca, cammina.",
+      "Camminerò lentamente fino al traguardo."
+    ],
+    "ko": [
+      "공원을 걸어가요.",
+      "도쿄역에서는 많은 사람들이 걷고 있습니다.",
+      "피곤해도 걷는다.",
+      "나는 천천히 결승선까지 걸어갈 것이다."
+    ],
+    "nb": [
+      "Jeg går gjennom parken.",
+      "Mange mennesker går på Tokyo stasjon.",
+      "Selv når han blir sliten, går han.",
+      "Jeg vil gå sakte mot målstreken."
+    ],
+    "nl": [
+      "Ik loop door het park.",
+      "Veel mensen lopen op het station van Tokio.",
+      "Zelfs als hij moe is, loopt hij.",
+      "Ik zal langzaam naar de finish lopen."
+    ],
+    "pl": [
+      "Idę przez park.",
+      "Wiele osób spaceruje na stacji w Tokio.",
+      "Nawet gdy się zmęczy, idzie.",
+      "Będę szedł powoli do mety."
+    ],
+    "pt": [
+      "Eu caminho pelo parque.",
+      "Muitas pessoas estão caminhando na estação de Tóquio.",
+      "Mesmo quando fica cansado, ele anda.",
+      "Vou andar devagar até a linha de chegada."
+    ],
+    "ro": [
+      "Mă plimb prin parc.",
+      "Mulți oameni merg pe jos la stația Tokyo.",
+      "Chiar și când obosește, merge pe jos.",
+      "Voi merge încet până la linia de sosire."
+    ],
+    "ru": [
+      "Я иду по парку.",
+      "Многие люди идут пешком у токийского вокзала.",
+      "Даже когда устает, он ходит пешком.",
+      "Я буду медленно идти к финишу."
+    ],
+    "sv": [
+      "Jag går genom parken.",
+      "Många människor promenerar vid Tokyo station.",
+      "Även när han blir trött går han.",
+      "Jag kommer att gå långsamt mot mållinjen."
+    ],
+    "tr": [
+      "Parkta yürüyorum.",
+      "Tokyo istasyonunda birçok kişi yürüyor.",
+      "Yorulsa bile yürür.",
+      "Yavaşça bitiş çizgisine yürüyeceğim."
+    ],
+    "uk": [
+      "Я йду парком.",
+      "Багато людей йдуть пішки біля токійського вокзалу.",
+      "Навіть коли він втомлюється, він іде пішки.",
+      "Я повільно йду до фінішу."
+    ],
+    "vi": [
+      "Tôi đi bộ qua công viên.",
+      "Nhiều người đang đi bộ tại ga Tokyo.",
+      "Ngay cả khi mệt mỏi, anh ấy vẫn đi bộ.",
+      "Tôi sẽ chậm rãi đi về đích."
+    ],
+    "yue": [
+      "我行過公園。",
+      "好多人都行喺東京車站。",
+      "即使佢攰咗，佢都會行路。",
+      "我會慢慢行去終點。"
+    ],
+    "zh-Hans": [
+      "我走过公园。",
+      "东京站有很多人在散步。",
+      "即使累了，他也会走路。",
+      "我会慢慢走到终点。"
+    ]
   }
 }

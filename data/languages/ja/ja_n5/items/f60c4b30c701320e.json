@@ -46,20 +46,20 @@
       "target": "今日は十月です。",
       "reading": "きょうはじゅうがつです。",
       "translations": {
-        "en": "Today is October.",
-        "es": "Hoy es octubre.",
-        "fr": "Aujourd’hui, c’est octobre.",
+        "en": "It's October.",
+        "es": "Estamos en octubre.",
+        "fr": "Nous sommes en octobre.",
         "de": "Heute ist Oktober.",
-        "it": "Oggi è ottobre.",
+        "it": "Siamo a ottobre.",
         "ko": "오늘은 10월입니다.",
         "zh-Hans": "今天是十月。",
         "yue": "今日系十月。",
         "ru": "Сегодня октябрь.",
-        "pt": "Hoje é outubro.",
-        "he": "היום הוא אוקטובר.",
+        "pt": "Estamos em outubro.",
+        "he": "אנחנו באוקטובר.",
         "tr": "Bugün Ekim.",
         "vi": "Hôm nay là tháng Mười.",
-        "ar": "اليوم هو أكتوبر.",
+        "ar": "نحن في شهر أكتوبر.",
         "nl": "Vandaag is het oktober.",
         "uk": "Сьогодні жовтень.",
         "hu": "Ma október van.",
@@ -173,12 +173,12 @@
         "he": "בבית הספר יש יום ספורט באוקטובר.",
         "tr": "Okulda Ekim ayında spor günü düzenlenir.",
         "vi": "Trường có một ngày thể thao vào tháng Mười.",
-        "ar": "تقام المدرسة ليوم رياضي في شهر أكتوبر.",
+        "ar": "تُقام في المدرسة فعالية رياضية في شهر أكتوبر.",
         "nl": "De school organiseert een sportdag in oktober.",
         "uk": "У жовтні у школі є спортивний день.",
         "hu": "Az iskolának októberben sportnapja van.",
         "hi": "स्कूल में अक्टूबर में एक खेल दिवस होता है।",
-        "pl": "Szkoła организuje dzień sportowy w паździerniku.",
+        "pl": "W październiku w szkole odbywa się dzień sportu.",
         "el": "Το σχολείο έχει αθλητική ημέρα τον Οκτώβριο.",
         "nb": "Skolen har en idrettsdag i oktober.",
         "id": "Sekolah mengadakan hari olahraga di bulan Oktober.",
@@ -334,12 +334,12 @@
         "ru": "Погода в октябре прохладная.",
         "pt": "O tempo em outubro é fresco.",
         "he": "המזג אוויר באוקטובר קריר.",
-        "tr": "Ekim ayında hava serин.",
+        "tr": "Ekim ayında hava serin.",
         "vi": "Thời tiết tháng Mười mát mẻ.",
-        "ar": "الطقس في أكتوبر بارد.",
+        "ar": "الطقس في أكتوبر معتدل البرودة.",
         "nl": "Het weer in oktober is koel.",
         "uk": "Погода в жовтні прохолодна.",
-        "hu": "Októberben hűवös az idő.",
+        "hu": "Októberben hűvös az idő.",
         "hi": "अक्टूबर में मौसम ठंडा होता है।",
         "pl": "Pogoda w październiku jest chłodna.",
         "el": "Ο καιρός τον Οκτώβριο είναι δροσερός.",
@@ -503,12 +503,14 @@
       "tokens": [
         {
           "surface": "毎年",
-          "surface_en": "every year",
-          "furigana": "まいとし",
-          "pos": "noun",
           "lemma": "毎年",
-          "explanation": "Temporal noun indicating frequency, 'every year' used adverbially.",
-          "difficulty": 5,
+          "pos": "名詞/普通名詞/副詞可能/*/*/*",
+          "upos": "NOUN",
+          "xpos": "名詞",
+          "feats": {},
+          "start": 0,
+          "end": 2,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "まいとし",
           "ruby_text": "毎年[まいとし]",
           "ruby_spans": [
@@ -519,89 +521,120 @@
               "length": 2
             }
           ],
-          "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "ruby_confidence": "reviewed",
+          "furigana": "まいとし",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
-          "surface": "十月",
-          "surface_en": "October",
-          "furigana": "じゅうがつ",
-          "pos": "noun",
-          "lemma": "十月",
-          "explanation": "Temporal noun indicating the month.",
-          "difficulty": 2,
-          "is_main_word": true,
-          "reading_kana": "じゅうがつ",
-          "ruby_text": "十[じゅう]月[がつ]",
+          "surface": "十",
+          "lemma": "十",
+          "pos": "名詞/数詞/*/*/*/*",
+          "upos": "NOUN",
+          "xpos": "名詞",
+          "feats": {},
+          "start": 2,
+          "end": 3,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "じゅう",
+          "ruby_text": "十[じゅう]",
           "ruby_spans": [
             {
               "base": "十",
               "reading": "じゅう",
               "start": 0,
               "length": 1
-            },
+            }
+          ],
+          "ruby_confidence": "reviewed",
+          "furigana": "じゅう",
+          "ruby_source": "mediawiki_sentence_ruby",
+          "is_main_word": true
+        },
+        {
+          "surface": "月",
+          "lemma": "月",
+          "pos": "名詞/普通名詞/助数詞可能/*/*/*",
+          "upos": "NOUN",
+          "xpos": "名詞",
+          "feats": {},
+          "start": 3,
+          "end": 4,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "がつ",
+          "ruby_text": "月[がつ]",
+          "ruby_spans": [
             {
               "base": "月",
               "reading": "がつ",
-              "start": 1,
+              "start": 0,
               "length": 1
             }
           ],
-          "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "ruby_confidence": "reviewed",
+          "furigana": "がつ",
+          "ruby_source": "mediawiki_sentence_ruby",
+          "is_main_word": true
         },
         {
           "surface": "に",
-          "surface_en": "in",
-          "furigana": "に",
-          "pos": "particle",
           "lemma": "に",
-          "explanation": "Time particle marking when the action takes place.",
-          "difficulty": 1,
+          "pos": "助詞/格助詞/*/*/*/*",
+          "upos": "PART",
+          "xpos": "助詞",
+          "feats": {},
+          "start": 4,
+          "end": 5,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "に",
           "ruby_text": "に",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "に"
         },
         {
           "surface": "ハロウィン",
-          "surface_en": "Halloween",
-          "furigana": "はろうぃん",
-          "pos": "noun",
           "lemma": "ハロウィン",
-          "explanation": "Loanword noun referring to the event 'Halloween'.",
-          "difficulty": 1,
+          "pos": "名詞/普通名詞/一般/*/*/*",
+          "upos": "NOUN",
+          "xpos": "名詞",
+          "feats": {},
+          "start": 5,
+          "end": 10,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "はろうぃん",
           "ruby_text": "ハロウィン",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "はろうぃん"
         },
         {
           "surface": "を",
-          "surface_en": "object marker",
-          "furigana": "を",
-          "pos": "particle",
           "lemma": "を",
-          "explanation": "Object-markingparticle,marking'ハロウィン'astheobjectof'祝います'.",
-          "difficulty": 1,
+          "pos": "助詞/格助詞/*/*/*/*",
+          "upos": "PART",
+          "xpos": "助詞",
+          "feats": {},
+          "start": 10,
+          "end": 11,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "を",
           "ruby_text": "を",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "を"
         },
         {
-          "surface": "祝います",
-          "surface_en": "celebrate",
-          "furigana": "祝います",
-          "pos": "verb",
+          "surface": "祝い",
           "lemma": "祝う",
-          "explanation": "Verb meaning 'to celebrate', the main action of the sentence.",
-          "difficulty": 24,
-          "reading_kana": "祝います",
-          "ruby_text": "祝[祝]います",
+          "pos": "動詞/一般/*/*/五段-ワア行/連用形-一般",
+          "upos": "VERB",
+          "xpos": "動詞",
+          "feats": {},
+          "start": 11,
+          "end": 13,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "祝い",
+          "ruby_text": "祝[祝]い",
           "ruby_spans": [
             {
               "base": "祝",
@@ -610,8 +643,41 @@
               "length": 1
             }
           ],
+          "ruby_confidence": "reviewed",
+          "furigana": "祝い",
+          "ruby_source": "mediawiki_sentence_ruby"
+        },
+        {
+          "surface": "ます",
+          "lemma": "ます",
+          "pos": "助動詞/*/*/*/助動詞-マス/終止形-一般",
+          "upos": "AUX",
+          "xpos": "助動詞",
+          "feats": {},
+          "start": 13,
+          "end": 15,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "ます",
+          "ruby_text": "ます",
+          "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "ます"
+        },
+        {
+          "surface": "。",
+          "lemma": "。",
+          "pos": "補助記号/句点/*/*/*/*",
+          "upos": "PUNCT",
+          "xpos": "補助記号",
+          "feats": {},
+          "start": 15,
+          "end": 16,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "。",
+          "ruby_text": "。",
+          "ruby_spans": [],
+          "ruby_confidence": "high",
+          "furigana": "。"
         }
       ],
       "difficulty": 5.67,
@@ -632,19 +698,484 @@
     "content_reviewers": [
       "mediawiki-visible-revision"
     ],
-    "last_reviewed_utc": "2026-06-21T18:36:56Z",
-    "approval_source": "mediawiki_visible_revision",
+    "last_reviewed_utc": "2026-10-11T12:18:38Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
     "wiki": {
       "title": "Item:Ja n5/f60c4b30c701320e",
-      "revision_id": 58563,
-      "parent_revision_id": 37007,
-      "revision_timestamp_utc": "2026-06-21T18:36:56Z",
-      "revision_user": "VocomiBot",
-      "revision_comment": "Sync ja_n5 item 十月",
-      "pulled_utc": "2026-06-21T20:53:47Z",
-      "applied_utc": "2026-06-21T20:54:01Z",
+      "revision_id": 82792,
+      "parent_revision_id": 69738,
+      "revision_timestamp_utc": "2026-10-11T12:18:38Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Suggest reviewed Japanese and translation corrections",
+      "pulled_utc": "2026-10-17T07:37:41Z",
+      "applied_utc": "2026-10-17T07:37:59Z",
       "applied_by": "vocomipedia-apply-pulled"
-    }
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-91e7ce562e41716e",
+        "status": "applied",
+        "type": "ruby_update",
+        "item_id": "ja_n5:f60c4b30c701320e",
+        "pack_code": "ja_n5",
+        "entry_id": "十月",
+        "language": "ja",
+        "sentence_index": 4,
+        "old_sentence": "毎年十月にハロウィンを祝います。",
+        "old_translations": {
+          "en": "Every year we celebrate Halloween in October.",
+          "es": "Cada año celebramos Halloween en octubre.",
+          "fr": "Chaque année, nous célébrons Halloween en octobre.",
+          "de": "Jedes Jahr feiern wir Halloween im Oktober.",
+          "it": "Ogni anno festeggiamo Halloween in ottobre.",
+          "ko": "매년 10월에 할로윈을 기념합니다.",
+          "zh-Hans": "每年我们都在十月庆祝万圣节。",
+          "yue": "每年10月我哋都會慶祝萬聖節。",
+          "ru": "Каждый год мы отмечаем Хэллоуин в октябре.",
+          "pt": "Todo ano celebramos o Halloween em outubro.",
+          "he": "כל שנה אנחנו חוגגים את ליל כל הקדושים באוקטובר.",
+          "tr": "Her yıl Ekim ayında Cadılar Bayramı'nı kutluyoruz.",
+          "vi": "Hàng năm chúng tôi tổ chức lễ Halloween vào tháng Mười.",
+          "ar": "كل عام نحتفل بالهالوين في أكتوبر.",
+          "nl": "Elk jaar vieren we Halloween in oktober.",
+          "uk": "Щороку ми святкуємо Гелловін у жовтні.",
+          "hu": "Minden évben októberben ünnepeljük a Halloweent.",
+          "hi": "हर साल हम अक्टूबर में हैलोवीन मनाते हैं।",
+          "pl": "Co roku obchodzimy Halloween w październiku.",
+          "el": "Κάθε χρόνο γιορτάζουμε το Halloween τον Οκτώβριο.",
+          "nb": "Hvert år feirer vi Halloween i oktober.",
+          "id": "Setiap tahun kami merayakan Halloween di bulan Oktober.",
+          "sv": "Varje år firar vi Halloween i oktober.",
+          "ro": "În fiecare an sărbătorim Halloween-ul în octombrie.",
+          "cs": "Každý rok slavíme Halloween v říjnu.",
+          "da": "Hvert år fejrer vi Halloween i oktober.",
+          "fi": "Joka vuosi juhlimme Halloweenia lokakuussa."
+        },
+        "proposed_sentence": "毎年十月にハロウィンを祝います。",
+        "proposed_translations": {
+          "en": "Every year we celebrate Halloween in October.",
+          "es": "Cada año celebramos Halloween en octubre.",
+          "fr": "Chaque année, nous célébrons Halloween en octobre.",
+          "de": "Jedes Jahr feiern wir Halloween im Oktober.",
+          "it": "Ogni anno festeggiamo Halloween in ottobre.",
+          "ko": "매년 10월에 할로윈을 기념합니다.",
+          "zh-Hans": "每年我们都在十月庆祝万圣节。",
+          "yue": "每年10月我哋都會慶祝萬聖節。",
+          "ru": "Каждый год мы отмечаем Хэллоуин в октябре.",
+          "pt": "Todo ano celebramos o Halloween em outubro.",
+          "he": "כל שנה אנחנו חוגגים את ליל כל הקדושים באוקטובר.",
+          "tr": "Her yıl Ekim ayında Cadılar Bayramı'nı kutluyoruz.",
+          "vi": "Hàng năm chúng tôi tổ chức lễ Halloween vào tháng Mười.",
+          "ar": "كل عام نحتفل بالهالوين في أكتوبر.",
+          "nl": "Elk jaar vieren we Halloween in oktober.",
+          "uk": "Щороку ми святкуємо Гелловін у жовтні.",
+          "hu": "Minden évben októberben ünnepeljük a Halloweent.",
+          "hi": "हर साल हम अक्टूबर में हैलोवीन मनाते हैं।",
+          "pl": "Co roku obchodzimy Halloween w październiku.",
+          "el": "Κάθε χρόνο γιορτάζουμε το Halloween τον Οκτώβριο.",
+          "nb": "Hvert år feirer vi Halloween i oktober.",
+          "id": "Setiap tahun kami merayakan Halloween di bulan Oktober.",
+          "sv": "Varje år firar vi Halloween i oktober.",
+          "ro": "În fiecare an sărbătorim Halloween-ul în octombrie.",
+          "cs": "Každý rok slavíme Halloween v říjnu.",
+          "da": "Hvert år fejrer vi Halloween i oktober.",
+          "fi": "Joka vuosi juhlimme Halloweenia lokakuussa."
+        },
+        "old_ruby_source": "毎年[まいとし]十[じゅう]月[がつ]にハロウィンを祝[いわ]います。",
+        "proposed_ruby_source": "毎年[まいとし]十[じゅう]月[がつ]にハロウィンを祝[祝]います。",
+        "old_japanese": "毎年十月にハロウィンを祝います。",
+        "old_english": "Every year we celebrate Halloween in October.",
+        "proposed_japanese": "毎年十月にハロウィンを祝います。",
+        "proposed_english": "Every year we celebrate Halloween in October.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "ja",
+          "sentence": "毎年十月にハロウィンを祝います。",
+          "tokens": [
+            {
+              "surface": "毎年",
+              "lemma": "毎年",
+              "pos": "名詞/普通名詞/副詞可能/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 0,
+              "end": 2,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "まいとし",
+              "ruby_text": "毎年[まいとし]",
+              "ruby_spans": [
+                {
+                  "base": "毎年",
+                  "reading": "まいとし",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "まいとし",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "十",
+              "lemma": "十",
+              "pos": "名詞/数詞/*/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 2,
+              "end": 3,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "じゅう",
+              "ruby_text": "十[じゅう]",
+              "ruby_spans": [
+                {
+                  "base": "十",
+                  "reading": "じゅう",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "じゅう",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "月",
+              "lemma": "月",
+              "pos": "名詞/普通名詞/助数詞可能/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 3,
+              "end": 4,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "がつ",
+              "ruby_text": "月[がつ]",
+              "ruby_spans": [
+                {
+                  "base": "月",
+                  "reading": "がつ",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "がつ",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "に",
+              "lemma": "に",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 4,
+              "end": 5,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "に",
+              "ruby_text": "に",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "に"
+            },
+            {
+              "surface": "ハロウィン",
+              "lemma": "ハロウィン",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 5,
+              "end": 10,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "はろうぃん",
+              "ruby_text": "ハロウィン",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "はろうぃん"
+            },
+            {
+              "surface": "を",
+              "lemma": "を",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 10,
+              "end": 11,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "を",
+              "ruby_text": "を",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "を"
+            },
+            {
+              "surface": "祝い",
+              "lemma": "祝う",
+              "pos": "動詞/一般/*/*/五段-ワア行/連用形-一般",
+              "upos": "VERB",
+              "xpos": "動詞",
+              "feats": {},
+              "start": 11,
+              "end": 13,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "祝い",
+              "ruby_text": "祝[祝]い",
+              "ruby_spans": [
+                {
+                  "base": "祝",
+                  "reading": "祝",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "祝い",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "ます",
+              "lemma": "ます",
+              "pos": "助動詞/*/*/*/助動詞-マス/終止形-一般",
+              "upos": "AUX",
+              "xpos": "助動詞",
+              "feats": {},
+              "start": 13,
+              "end": 15,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "ます",
+              "ruby_text": "ます",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "ます"
+            },
+            {
+              "surface": "。",
+              "lemma": "。",
+              "pos": "補助記号/句点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 15,
+              "end": 16,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "。",
+              "ruby_text": "。",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "。"
+            }
+          ],
+          "reading": "まいとしじゅうがつにはろうぃんを祝います。",
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "warnings": [
+            "mediawiki ruby hints applied"
+          ]
+        },
+        "generated_tokens": [
+          {
+            "surface": "毎年",
+            "lemma": "毎年",
+            "pos": "名詞/普通名詞/副詞可能/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "まいとし",
+            "ruby_text": "毎年[まいとし]",
+            "ruby_spans": [
+              {
+                "base": "毎年",
+                "reading": "まいとし",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "まいとし",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "十",
+            "lemma": "十",
+            "pos": "名詞/数詞/*/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 2,
+            "end": 3,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "じゅう",
+            "ruby_text": "十[じゅう]",
+            "ruby_spans": [
+              {
+                "base": "十",
+                "reading": "じゅう",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "じゅう",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "月",
+            "lemma": "月",
+            "pos": "名詞/普通名詞/助数詞可能/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 3,
+            "end": 4,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "がつ",
+            "ruby_text": "月[がつ]",
+            "ruby_spans": [
+              {
+                "base": "月",
+                "reading": "がつ",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "がつ",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "に",
+            "lemma": "に",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 4,
+            "end": 5,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "に",
+            "ruby_text": "に",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "に"
+          },
+          {
+            "surface": "ハロウィン",
+            "lemma": "ハロウィン",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 5,
+            "end": 10,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "はろうぃん",
+            "ruby_text": "ハロウィン",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "はろうぃん"
+          },
+          {
+            "surface": "を",
+            "lemma": "を",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 10,
+            "end": 11,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "を",
+            "ruby_text": "を",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "を"
+          },
+          {
+            "surface": "祝い",
+            "lemma": "祝う",
+            "pos": "動詞/一般/*/*/五段-ワア行/連用形-一般",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 11,
+            "end": 13,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "祝い",
+            "ruby_text": "祝[祝]い",
+            "ruby_spans": [
+              {
+                "base": "祝",
+                "reading": "祝",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "祝い",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "ます",
+            "lemma": "ます",
+            "pos": "助動詞/*/*/*/助動詞-マス/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 13,
+            "end": 15,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ます",
+            "ruby_text": "ます",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "ます"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 15,
+            "end": 16,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
+          }
+        ],
+        "generated_reading": "まいとしじゅうがつにはろうぃんを祝います。",
+        "analyzer": "sudachipy_sudachidict_core_c",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:37:41Z",
+        "updated_utc": "2026-10-17T07:38:16Z",
+        "applied_utc": "2026-10-17T07:38:16Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:38:16Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -1013,12 +1544,14 @@
         "tokens": [
           {
             "surface": "毎年",
-            "surface_en": "every year",
-            "furigana": "まいとし",
-            "pos": "noun",
             "lemma": "毎年",
-            "explanation": "Temporal noun indicating frequency, 'every year' used adverbially.",
-            "difficulty": 5,
+            "pos": "名詞/普通名詞/副詞可能/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "まいとし",
             "ruby_text": "毎年[まいとし]",
             "ruby_spans": [
@@ -1029,89 +1562,120 @@
                 "length": 2
               }
             ],
-            "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "ruby_confidence": "reviewed",
+            "furigana": "まいとし",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
-            "surface": "十月",
-            "surface_en": "October",
-            "furigana": "じゅうがつ",
-            "pos": "noun",
-            "lemma": "十月",
-            "explanation": "Temporal noun indicating the month.",
-            "difficulty": 2,
-            "is_main_word": true,
-            "reading_kana": "じゅうがつ",
-            "ruby_text": "十[じゅう]月[がつ]",
+            "surface": "十",
+            "lemma": "十",
+            "pos": "名詞/数詞/*/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 2,
+            "end": 3,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "じゅう",
+            "ruby_text": "十[じゅう]",
             "ruby_spans": [
               {
                 "base": "十",
                 "reading": "じゅう",
                 "start": 0,
                 "length": 1
-              },
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "じゅう",
+            "ruby_source": "mediawiki_sentence_ruby",
+            "is_main_word": true
+          },
+          {
+            "surface": "月",
+            "lemma": "月",
+            "pos": "名詞/普通名詞/助数詞可能/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 3,
+            "end": 4,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "がつ",
+            "ruby_text": "月[がつ]",
+            "ruby_spans": [
               {
                 "base": "月",
                 "reading": "がつ",
-                "start": 1,
+                "start": 0,
                 "length": 1
               }
             ],
-            "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "ruby_confidence": "reviewed",
+            "furigana": "がつ",
+            "ruby_source": "mediawiki_sentence_ruby",
+            "is_main_word": true
           },
           {
             "surface": "に",
-            "surface_en": "in",
-            "furigana": "に",
-            "pos": "particle",
             "lemma": "に",
-            "explanation": "Time particle marking when the action takes place.",
-            "difficulty": 1,
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 4,
+            "end": 5,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "に",
             "ruby_text": "に",
             "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "に"
           },
           {
             "surface": "ハロウィン",
-            "surface_en": "Halloween",
-            "furigana": "はろうぃん",
-            "pos": "noun",
             "lemma": "ハロウィン",
-            "explanation": "Loanword noun referring to the event 'Halloween'.",
-            "difficulty": 1,
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 5,
+            "end": 10,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "はろうぃん",
             "ruby_text": "ハロウィン",
             "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "はろうぃん"
           },
           {
             "surface": "を",
-            "surface_en": "object marker",
-            "furigana": "を",
-            "pos": "particle",
             "lemma": "を",
-            "explanation": "Object-markingparticle,marking'ハロウィン'astheobjectof'祝います'.",
-            "difficulty": 1,
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 10,
+            "end": 11,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "を",
             "ruby_text": "を",
             "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "を"
           },
           {
-            "surface": "祝います",
-            "surface_en": "celebrate",
-            "furigana": "祝います",
-            "pos": "verb",
+            "surface": "祝い",
             "lemma": "祝う",
-            "explanation": "Verb meaning 'to celebrate', the main action of the sentence.",
-            "difficulty": 24,
-            "reading_kana": "祝います",
-            "ruby_text": "祝[祝]います",
+            "pos": "動詞/一般/*/*/五段-ワア行/連用形-一般",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 11,
+            "end": 13,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "祝い",
+            "ruby_text": "祝[祝]い",
             "ruby_spans": [
               {
                 "base": "祝",
@@ -1120,8 +1684,41 @@
                 "length": 1
               }
             ],
+            "ruby_confidence": "reviewed",
+            "furigana": "祝い",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "ます",
+            "lemma": "ます",
+            "pos": "助動詞/*/*/*/助動詞-マス/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 13,
+            "end": 15,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ます",
+            "ruby_text": "ます",
+            "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "ます"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 15,
+            "end": 16,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
           }
         ],
         "difficulty_aggregated": 5.67
@@ -1157,9 +1754,9 @@
     "word_da": "Oktober",
     "word_fi": "Lokakuu",
     "ar": [
-      "اليوم هو أكتوبر.",
-      "تقام المدرسة ليوم رياضي في شهر أكتوبر.",
-      "الطقس في أكتوبر بارد.",
+      "نحن في شهر أكتوبر.",
+      "تُقام في المدرسة فعالية رياضية في شهر أكتوبر.",
+      "الطقس في أكتوبر معتدل البرودة.",
       "كل عام نحتفل بالهالوين في أكتوبر."
     ],
     "cs": [
@@ -1187,13 +1784,13 @@
       "Κάθε χρόνο γιορτάζουμε το Halloween τον Οκτώβριο."
     ],
     "en": [
-      "Today is October.",
+      "It's October.",
       "The school has a sports day in October.",
       "The weather in October is cool.",
       "Every year we celebrate Halloween in October."
     ],
     "es": [
-      "Hoy es octubre.",
+      "Estamos en octubre.",
       "El colegio celebra un día deportivo en octubre.",
       "El tiempo en octubre es fresco.",
       "Cada año celebramos Halloween en octubre."
@@ -1205,13 +1802,13 @@
       "Joka vuosi juhlimme Halloweenia lokakuussa."
     ],
     "fr": [
-      "Aujourd’hui, c’est octobre.",
+      "Nous sommes en octobre.",
       "L’école organise une journée sportive en octobre.",
       "Le temps en octobre est frais.",
       "Chaque année, nous célébrons Halloween en octobre."
     ],
     "he": [
-      "היום הוא אוקטובר.",
+      "אנחנו באוקטובר.",
       "בבית הספר יש יום ספורט באוקטובר.",
       "המזג אוויר באוקטובר קריר.",
       "כל שנה אנחנו חוגגים את ליל כל הקדושים באוקטובר."
@@ -1225,7 +1822,7 @@
     "hu": [
       "Ma október van.",
       "Az iskolának októberben sportnapja van.",
-      "Októberben hűवös az idő.",
+      "Októberben hűvös az idő.",
       "Minden évben októberben ünnepeljük a Halloweent."
     ],
     "id": [
@@ -1235,7 +1832,7 @@
       "Setiap tahun kami merayakan Halloween di bulan Oktober."
     ],
     "it": [
-      "Oggi è ottobre.",
+      "Siamo a ottobre.",
       "La scuola organizza una giornata sportiva a ottobre.",
       "Il tempo a ottobre è fresco.",
       "Ogni anno festeggiamo Halloween in ottobre."
@@ -1260,12 +1857,12 @@
     ],
     "pl": [
       "Dziś jest październik.",
-      "Szkoła организuje dzień sportowy w паździerniku.",
+      "W październiku w szkole odbywa się dzień sportu.",
       "Pogoda w październiku jest chłodna.",
       "Co roku obchodzimy Halloween w październiku."
     ],
     "pt": [
-      "Hoje é outubro.",
+      "Estamos em outubro.",
       "A escola realiza um dia esportivo em outubro.",
       "O tempo em outubro é fresco.",
       "Todo ano celebramos o Halloween em outubro."
@@ -1291,7 +1888,7 @@
     "tr": [
       "Bugün Ekim.",
       "Okulda Ekim ayında spor günü düzenlenir.",
-      "Ekim ayında hava serин.",
+      "Ekim ayında hava serin.",
       "Her yıl Ekim ayında Cadılar Bayramı'nı kutluyoruz."
     ],
     "uk": [

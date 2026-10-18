@@ -241,10 +241,10 @@
       "difficulty": 5
     },
     {
-      "target": "Die Toilette ist für jedes Geschlecht.",
+      "target": "Die Toilette ist für alle Geschlechter.",
       "reading": "/diː to̯aˈlɛtə ɪst fyːɐ̯ ˈjeːdəs ɡəˈʃlɛçt/",
       "translations": {
-        "de": "Die Toilette ist für jedes Geschlecht.",
+        "de": "Die Toilette ist für alle Geschlechter.",
         "ipa": "/diː to̯aˈlɛtə ɪst fyːɐ̯ ˈjeːdəs ɡəˈʃlɛçt/",
         "en": "The restroom is for every gender.",
         "es": "El baño es unisex.",
@@ -277,58 +277,81 @@
       "tokens": [
         {
           "surface": "Die",
-          "surface_en": "the",
-          "furigana": "[diː]",
-          "pos": "DET",
           "lemma": "der",
-          "explanation": "Definite article (feminine, nominative singular) modifying ‘Toilette’.",
-          "difficulty": 2
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "ART",
+          "feats": {},
+          "start": 0,
+          "end": 3,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "Toilette",
-          "surface_en": "toilet",
-          "furigana": "[toɪ̯ˈlɛtə]",
-          "pos": "NOUN",
           "lemma": "Toilette",
-          "explanation": "Common noun (feminine); subject of the copular clause.",
-          "difficulty": 10
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 4,
+          "end": 12,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "ist",
-          "surface_en": "is",
-          "furigana": "[ɪst]",
-          "pos": "AUX",
           "lemma": "sein",
-          "explanation": "Copular auxiliary linking the subject with the predicate PP.",
-          "difficulty": 4
+          "pos": "AUX",
+          "upos": "AUX",
+          "xpos": "VAFIN",
+          "feats": {},
+          "start": 13,
+          "end": 16,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "für",
-          "surface_en": "for",
-          "furigana": "[fyːɐ̯]",
-          "pos": "ADP",
           "lemma": "für",
-          "explanation": "Preposition governing the accusative; introduces the predicate PP.",
-          "difficulty": 2
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "APPR",
+          "feats": {},
+          "start": 17,
+          "end": 20,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "jedes",
-          "surface_en": "each",
-          "furigana": "[ˈjeːdəs]",
+          "surface": "alle",
+          "lemma": "aller",
           "pos": "DET",
-          "lemma": "jeder",
-          "explanation": "Indefinite determiner (neuter, accusative singular) modifying ‘Geschlecht’.",
-          "difficulty": 7
+          "upos": "DET",
+          "xpos": "PIAT",
+          "feats": {},
+          "start": 21,
+          "end": 25,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "Geschlecht.",
-          "surface_en": "gender",
-          "furigana": "[ɡəˈʃlɛçt]",
-          "pos": "NOUN",
+          "surface": "Geschlechter",
           "lemma": "Geschlecht",
-          "explanation": "Common noun (neuter); object of the preposition ‘für’.",
-          "difficulty": 10,
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 26,
+          "end": 38,
+          "analyzer": "spacy_de_core_news_lg",
           "is_main_word": true
+        },
+        {
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 38,
+          "end": 39,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 5.83
@@ -339,7 +362,7 @@
       "translations": {
         "de": "In Bio besprechen wir heute das Geschlecht.",
         "ipa": "/ɪn ˈbiːo bəˈʃpʁɛçən viːɐ̯ ˈhɔʏtə das ɡəˈʃlɛçt/",
-        "en": "In biology we discuss gender today.",
+        "en": "In biology class, we’re discussing sex today.",
         "es": "Hoy en biología hablamos sobre el sexo.",
         "fr": "En biologie, on parle du sexe aujourd'hui.",
         "it": "Oggi a biologia parliamo del sesso.",
@@ -447,8 +470,292 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-15T00:25:44Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:De b1/28dd295d0b39eb36",
+      "revision_id": 85446,
+      "parent_revision_id": 16282,
+      "revision_timestamp_utc": "2026-10-15T00:25:44Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Use idiomatic German for an all-gender restroom and clarify the biology-class sense in English.",
+      "pulled_utc": "2026-10-17T07:06:36Z",
+      "applied_utc": "2026-10-17T07:06:49Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-00cca227aceb326e",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_b1:28dd295d0b39eb36",
+        "pack_code": "de_b1",
+        "entry_id": "Geschlecht",
+        "language": "de",
+        "sentence_index": 3,
+        "old_sentence": "Die Toilette ist für jedes Geschlecht.",
+        "old_translations": {
+          "de": "Die Toilette ist für jedes Geschlecht.",
+          "ipa": "/diː to̯aˈlɛtə ɪst fyːɐ̯ ˈjeːdəs ɡəˈʃlɛçt/",
+          "en": "The restroom is for every gender.",
+          "es": "El baño es unisex.",
+          "fr": "Les toilettes sont unisexes.",
+          "it": "Il bagno è unisex.",
+          "ko": "이 화장실은 남녀 공용이에요.",
+          "zh-Hans": "这是全性别卫生间。",
+          "yue": "呢間洗手間係男女共用。",
+          "ru": "Туалет унисекс.",
+          "pt": "O banheiro é unissex.",
+          "he": "השירותים הם יוניסקס.",
+          "tr": "Tuvalet her cinsiyet için uygundur.",
+          "vi": "Nhà vệ sinh dùng cho mọi giới.",
+          "ar": "الحمّام للجميع.",
+          "nl": "Het toilet is unisex.",
+          "uk": "Туалет унісекс.",
+          "hu": "A mosdó uniszex.",
+          "hi": "यह शौचालय सभी के लिए है।",
+          "pl": "Toaleta jest dla wszystkich.",
+          "el": "Η τουαλέτα είναι για όλα τα φύλα.",
+          "nb": "Toalettet er for alle kjønn.",
+          "id": "Toilet ini untuk semua gender.",
+          "sv": "Toaletten är för alla kön.",
+          "ro": "Toaleta este unisex.",
+          "cs": "Toaleta je unisex.",
+          "da": "Toilettet er unisex.",
+          "fi": "Vessa on sukupuolineutraali.",
+          "ja": "このトイレは誰でも使えます。"
+        },
+        "proposed_sentence": "Die Toilette ist für alle Geschlechter.",
+        "proposed_translations": {
+          "de": "Die Toilette ist für alle Geschlechter.",
+          "ipa": "/diː to̯aˈlɛtə ɪst fyːɐ̯ ˈjeːdəs ɡəˈʃlɛçt/",
+          "en": "The restroom is for every gender.",
+          "es": "El baño es unisex.",
+          "fr": "Les toilettes sont unisexes.",
+          "it": "Il bagno è unisex.",
+          "ko": "이 화장실은 남녀 공용이에요.",
+          "zh-Hans": "这是全性别卫生间。",
+          "yue": "呢間洗手間係男女共用。",
+          "ru": "Туалет унисекс.",
+          "pt": "O banheiro é unissex.",
+          "he": "השירותים הם יוניסקס.",
+          "tr": "Tuvalet her cinsiyet için uygundur.",
+          "vi": "Nhà vệ sinh dùng cho mọi giới.",
+          "ar": "الحمّام للجميع.",
+          "nl": "Het toilet is unisex.",
+          "uk": "Туалет унісекс.",
+          "hu": "A mosdó uniszex.",
+          "hi": "यह शौचालय सभी के लिए है।",
+          "pl": "Toaleta jest dla wszystkich.",
+          "el": "Η τουαλέτα είναι για όλα τα φύλα.",
+          "nb": "Toalettet er for alle kjønn.",
+          "id": "Toilet ini untuk semua gender.",
+          "sv": "Toaletten är för alla kön.",
+          "ro": "Toaleta este unisex.",
+          "cs": "Toaleta je unisex.",
+          "da": "Toilettet er unisex.",
+          "fi": "Vessa on sukupuolineutraali.",
+          "ja": "このトイレは誰でも使えます。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Die Toilette ist für alle Geschlechter.",
+        "old_japanese": "Die Toilette ist für jedes Geschlecht.",
+        "old_english": "The restroom is for every gender.",
+        "proposed_japanese": "Die Toilette ist für alle Geschlechter.",
+        "proposed_english": "The restroom is for every gender.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Die Toilette ist für alle Geschlechter.",
+          "tokens": [
+            {
+              "surface": "Die",
+              "lemma": "der",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "ART",
+              "feats": {},
+              "start": 0,
+              "end": 3,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Toilette",
+              "lemma": "Toilette",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 4,
+              "end": 12,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "ist",
+              "lemma": "sein",
+              "pos": "AUX",
+              "upos": "AUX",
+              "xpos": "VAFIN",
+              "feats": {},
+              "start": 13,
+              "end": 16,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "für",
+              "lemma": "für",
+              "pos": "ADP",
+              "upos": "ADP",
+              "xpos": "APPR",
+              "feats": {},
+              "start": 17,
+              "end": 20,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "alle",
+              "lemma": "aller",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "PIAT",
+              "feats": {},
+              "start": 21,
+              "end": 25,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Geschlechter",
+              "lemma": "Geschlecht",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 26,
+              "end": 38,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 38,
+              "end": 39,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Die",
+            "lemma": "der",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Toilette",
+            "lemma": "Toilette",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 4,
+            "end": 12,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "ist",
+            "lemma": "sein",
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "VAFIN",
+            "feats": {},
+            "start": 13,
+            "end": 16,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "für",
+            "lemma": "für",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 17,
+            "end": 20,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "alle",
+            "lemma": "aller",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "PIAT",
+            "feats": {},
+            "start": 21,
+            "end": 25,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Geschlechter",
+            "lemma": "Geschlecht",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 26,
+            "end": 38,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 38,
+            "end": 39,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:06:36Z",
+        "updated_utc": "2026-10-17T07:07:05Z",
+        "applied_utc": "2026-10-17T07:07:05Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:07:05Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -460,34 +767,6 @@
     "word": "Geschlecht",
     "word_reading": "",
     "word_label": "Substantiv (das neutr.)",
-    "word_en": "gender; sex",
-    "word_es": "género; sexo",
-    "word_fr": "genre; sexe",
-    "word_it": "genere; sesso",
-    "word_ko": "성별; 성",
-    "word_zh-Hans": "性别; 性",
-    "word_yue": "性別; 性",
-    "word_ru": "пол; гендер",
-    "word_pt": "gênero; sexo",
-    "word_he": "מגדר; מין",
-    "word_tr": "toplumsal cinsiyet; biyolojik cinsiyet",
-    "word_vi": "giới tính; phái",
-    "word_ar": "النوع الاجتماعي; الجنس",
-    "word_nl": "gender; geslacht",
-    "word_uk": "стать; гендер",
-    "word_hu": "társadalmi nem; biológiai nem",
-    "word_hi": "लिंग; जेंडर",
-    "word_pl": "płeć; gender",
-    "word_el": "κοινωνικό φύλο; φύλο",
-    "word_nb": "sosialt kjønn; biologisk kjønn",
-    "word_id": "gender; jenis kelamin",
-    "word_sv": "genus; kön",
-    "word_ro": "gen; sex",
-    "word_cs": "gender; pohlaví",
-    "word_da": "socialt køn; biologisk køn",
-    "word_fi": "sosiaalinen sukupuoli; biologinen sukupuoli",
-    "word_ja": "ジェンダー; 性別",
-    "word_de": "Geschlecht",
     "comic_difficulty": 5.28,
     "jp": [
       "Wir kennen das Geschlecht noch nicht.",
@@ -500,24 +779,6 @@
       "/ɪç ˈɡeːbə ɪm fɔʁmuˈlaːɐ̯ kaɪn ɡəˈʃlɛçt an/",
       "/diː to̯aˈlɛtə ɪst fyːɐ̯ ˈjeːdəs ɡəˈʃlɛçt/",
       "/ɪn ˈbiːo bəˈʃpʁɛçən viːɐ̯ ˈhɔʏtə das ɡəˈʃlɛçt/"
-    ],
-    "de": [
-      "Wir kennen das Geschlecht noch nicht.",
-      "Ich gebe im Formular kein Geschlecht an.",
-      "Die Toilette ist für jedes Geschlecht.",
-      "In Bio besprechen wir heute das Geschlecht."
-    ],
-    "ipa": [
-      "/viːɐ̯ ˈkɛnən das ɡəˈʃlɛçt nɔx nɪçt/",
-      "/ɪç ˈɡeːbə ɪm fɔʁmuˈlaːɐ̯ kaɪn ɡəˈʃlɛçt an/",
-      "/diː to̯aˈlɛtə ɪst fyːɐ̯ ˈjeːdəs ɡəˈʃlɛçt/",
-      "/ɪn ˈbiːo bəˈʃpʁɛçən viːɐ̯ ˈhɔʏtə das ɡəˈʃlɛçt/"
-    ],
-    "en": [
-      "We don't know the gender yet.",
-      "I don't enter a gender on the form.",
-      "The restroom is for every gender.",
-      "In biology we discuss gender today."
     ],
     "pos_analysis": [
       {
@@ -654,62 +915,85 @@
         "difficulty_aggregated": 5
       },
       {
-        "sentence": "Die Toilette ist für jedes Geschlecht.",
+        "sentence": "Die Toilette ist für alle Geschlechter.",
         "tokens": [
           {
             "surface": "Die",
-            "surface_en": "the",
-            "furigana": "[diː]",
-            "pos": "DET",
             "lemma": "der",
-            "explanation": "Definite article (feminine, nominative singular) modifying ‘Toilette’.",
-            "difficulty": 2
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "Toilette",
-            "surface_en": "toilet",
-            "furigana": "[toɪ̯ˈlɛtə]",
-            "pos": "NOUN",
             "lemma": "Toilette",
-            "explanation": "Common noun (feminine); subject of the copular clause.",
-            "difficulty": 10
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 4,
+            "end": 12,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "ist",
-            "surface_en": "is",
-            "furigana": "[ɪst]",
-            "pos": "AUX",
             "lemma": "sein",
-            "explanation": "Copular auxiliary linking the subject with the predicate PP.",
-            "difficulty": 4
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "VAFIN",
+            "feats": {},
+            "start": 13,
+            "end": 16,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "für",
-            "surface_en": "for",
-            "furigana": "[fyːɐ̯]",
-            "pos": "ADP",
             "lemma": "für",
-            "explanation": "Preposition governing the accusative; introduces the predicate PP.",
-            "difficulty": 2
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 17,
+            "end": 20,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "jedes",
-            "surface_en": "each",
-            "furigana": "[ˈjeːdəs]",
+            "surface": "alle",
+            "lemma": "aller",
             "pos": "DET",
-            "lemma": "jeder",
-            "explanation": "Indefinite determiner (neuter, accusative singular) modifying ‘Geschlecht’.",
-            "difficulty": 7
+            "upos": "DET",
+            "xpos": "PIAT",
+            "feats": {},
+            "start": 21,
+            "end": 25,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "Geschlecht.",
-            "surface_en": "gender",
-            "furigana": "[ɡəˈʃlɛçt]",
-            "pos": "NOUN",
+            "surface": "Geschlechter",
             "lemma": "Geschlecht",
-            "explanation": "Common noun (neuter); object of the preposition ‘für’.",
-            "difficulty": 10,
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 26,
+            "end": 38,
+            "analyzer": "spacy_de_core_news_lg",
             "is_main_word": true
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 38,
+            "end": 39,
+            "analyzer": "spacy_de_core_news_lg"
           }
         ],
         "difficulty_aggregated": 5.83
@@ -785,137 +1069,41 @@
         "difficulty_aggregated": 5.29
       }
     ],
-    "es": [
-      "Aún no sabemos si es niño o niña.",
-      "No indico el género en el formulario.",
-      "El baño es unisex.",
-      "Hoy en biología hablamos sobre el sexo."
-    ],
-    "fr": [
-      "On ne connaît pas encore le sexe.",
-      "Je n'indique pas de genre dans le formulaire.",
-      "Les toilettes sont unisexes.",
-      "En biologie, on parle du sexe aujourd'hui."
-    ],
-    "it": [
-      "Non sappiamo ancora il sesso.",
-      "Nel modulo non indico il genere.",
-      "Il bagno è unisex.",
-      "Oggi a biologia parliamo del sesso."
-    ],
-    "ko": [
-      "아직 성별을 몰라요.",
-      "양식에 성별을 입력하지 않아요.",
-      "이 화장실은 남녀 공용이에요.",
-      "오늘 생물 시간에 성별에 대해 이야기해요."
-    ],
-    "zh-Hans": [
-      "我们还不知道是男孩还是女孩。",
-      "我在表格里不填写性别。",
-      "这是全性别卫生间。",
-      "今天在生物课上我们讨论性别。"
-    ],
-    "yue": [
-      "我哋仲未知道佢係男定女。",
-      "我喺表格度唔填性別。",
-      "呢間洗手間係男女共用。",
-      "今日喺生物堂我哋會講性別。"
-    ],
-    "ru": [
-      "Мы пока не знаем пол ребёнка.",
-      "В анкете я не указываю пол.",
-      "Туалет унисекс.",
-      "Сегодня на биологии мы обсуждаем пол."
-    ],
-    "pt": [
-      "Ainda não sabemos o sexo.",
-      "No formulário não informo o gênero.",
-      "O banheiro é unissex.",
-      "Hoje na aula de biologia vamos falar sobre sexo."
-    ],
-    "he": [
-      "אנחנו עדיין לא יודעים את המין.",
-      "אני לא מציין מגדר בטופס.",
-      "השירותים הם יוניסקס.",
-      "היום בשיעור ביולוגיה אנחנו מדברים על מין."
-    ],
-    "tr": [
-      "Henüz cinsiyetini bilmiyoruz.",
-      "Formda cinsiyet belirtmiyorum.",
-      "Tuvalet her cinsiyet için uygundur.",
-      "Bugün biyoloji dersinde cinsiyeti konuşuyoruz."
-    ],
-    "vi": [
-      "Chúng tôi vẫn chưa biết là trai hay gái.",
-      "Tôi không điền giới tính vào biểu mẫu.",
-      "Nhà vệ sinh dùng cho mọi giới.",
-      "Hôm nay trong giờ sinh học chúng tôi bàn về giới tính."
-    ],
+    "word_POS": "Noun",
+    "entry_id": "Geschlecht",
+    "word_en": "gender; sex",
+    "word_es": "género; sexo",
+    "word_fr": "genre; sexe",
+    "word_it": "genere; sesso",
+    "word_ko": "성별; 성",
+    "word_zh-Hans": "性别; 性",
+    "word_yue": "性別; 性",
+    "word_ru": "пол; гендер",
+    "word_pt": "gênero; sexo",
+    "word_he": "מגדר; מין",
+    "word_tr": "toplumsal cinsiyet; biyolojik cinsiyet",
+    "word_vi": "giới tính; phái",
+    "word_ar": "النوع الاجتماعي; الجنس",
+    "word_nl": "gender; geslacht",
+    "word_uk": "стать; гендер",
+    "word_hu": "társadalmi nem; biológiai nem",
+    "word_hi": "लिंग; जेंडर",
+    "word_pl": "płeć; gender",
+    "word_el": "κοινωνικό φύλο; φύλο",
+    "word_nb": "sosialt kjønn; biologisk kjønn",
+    "word_id": "gender; jenis kelamin",
+    "word_sv": "genus; kön",
+    "word_ro": "gen; sex",
+    "word_cs": "gender; pohlaví",
+    "word_da": "socialt køn; biologisk køn",
+    "word_fi": "sosiaalinen sukupuoli; biologinen sukupuoli",
+    "word_ja": "ジェンダー; 性別",
+    "word_de": "Geschlecht",
     "ar": [
       "لا نعرف جنس الجنين بعد.",
       "لا أحدد الجنس في الاستمارة.",
       "الحمّام للجميع.",
       "اليوم في درس الأحياء نناقش الجنس."
-    ],
-    "nl": [
-      "We weten het geslacht nog niet.",
-      "Ik vul op het formulier geen geslacht in.",
-      "Het toilet is unisex.",
-      "Vandaag bespreken we in biologie het geslacht."
-    ],
-    "uk": [
-      "Ми ще не знаємо статі.",
-      "У формі я не вказую стать.",
-      "Туалет унісекс.",
-      "Сьогодні на біології ми обговорюємо стать."
-    ],
-    "hu": [
-      "Még nem tudjuk a nemét.",
-      "Nem adok meg nemet az űrlapon.",
-      "A mosdó uniszex.",
-      "Ma biológián a nemről beszélünk."
-    ],
-    "hi": [
-      "हमें अभी लिंग नहीं पता है।",
-      "मैं फॉर्म में लिंग नहीं भरता हूँ।",
-      "यह शौचालय सभी के लिए है।",
-      "आज जीवविज्ञान में हम लिंग पर चर्चा कर रहे हैं।"
-    ],
-    "pl": [
-      "Jeszcze nie znamy płci.",
-      "W formularzu nie podaję płci.",
-      "Toaleta jest dla wszystkich.",
-      "Dziś na biologii omawiamy płeć."
-    ],
-    "el": [
-      "Δεν ξέρουμε ακόμα το φύλο.",
-      "Στη φόρμα δεν δηλώνω φύλο.",
-      "Η τουαλέτα είναι για όλα τα φύλα.",
-      "Σήμερα στη βιολογία συζητάμε για το φύλο."
-    ],
-    "nb": [
-      "Vi vet ikke kjønnet ennå.",
-      "Jeg oppgir ikke kjønn i skjemaet.",
-      "Toalettet er for alle kjønn.",
-      "I dag i biologien snakker vi om kjønn."
-    ],
-    "id": [
-      "Kami belum tahu jenis kelaminnya.",
-      "Saya tidak mengisi jenis kelamin di formulir.",
-      "Toilet ini untuk semua gender.",
-      "Hari ini di pelajaran biologi kami membahas tentang jenis kelamin."
-    ],
-    "sv": [
-      "Vi vet inte könet än.",
-      "Jag anger inget kön i formuläret.",
-      "Toaletten är för alla kön.",
-      "Idag på biologin pratar vi om kön."
-    ],
-    "ro": [
-      "Încă nu știm sexul.",
-      "Nu trec genul în formular.",
-      "Toaleta este unisex.",
-      "Astăzi la biologie discutăm despre sex."
     ],
     "cs": [
       "Ještě nevíme pohlaví.",
@@ -929,11 +1117,77 @@
       "Toilettet er unisex.",
       "I dag i biologi taler vi om køn."
     ],
+    "de": [
+      "Wir kennen das Geschlecht noch nicht.",
+      "Ich gebe im Formular kein Geschlecht an.",
+      "Die Toilette ist für jedes Geschlecht.",
+      "In Bio besprechen wir heute das Geschlecht."
+    ],
+    "el": [
+      "Δεν ξέρουμε ακόμα το φύλο.",
+      "Στη φόρμα δεν δηλώνω φύλο.",
+      "Η τουαλέτα είναι για όλα τα φύλα.",
+      "Σήμερα στη βιολογία συζητάμε για το φύλο."
+    ],
+    "en": [
+      "We don't know the gender yet.",
+      "I don't enter a gender on the form.",
+      "The restroom is for every gender.",
+      "In biology class, we’re discussing sex today."
+    ],
+    "es": [
+      "Aún no sabemos si es niño o niña.",
+      "No indico el género en el formulario.",
+      "El baño es unisex.",
+      "Hoy en biología hablamos sobre el sexo."
+    ],
     "fi": [
       "Emme vielä tiedä sukupuolta.",
       "En merkitse lomakkeeseen sukupuolta.",
       "Vessa on sukupuolineutraali.",
       "Tänään biologian tunnilla puhumme sukupuolesta."
+    ],
+    "fr": [
+      "On ne connaît pas encore le sexe.",
+      "Je n'indique pas de genre dans le formulaire.",
+      "Les toilettes sont unisexes.",
+      "En biologie, on parle du sexe aujourd'hui."
+    ],
+    "he": [
+      "אנחנו עדיין לא יודעים את המין.",
+      "אני לא מציין מגדר בטופס.",
+      "השירותים הם יוניסקס.",
+      "היום בשיעור ביולוגיה אנחנו מדברים על מין."
+    ],
+    "hi": [
+      "हमें अभी लिंग नहीं पता है।",
+      "मैं फॉर्म में लिंग नहीं भरता हूँ।",
+      "यह शौचालय सभी के लिए है।",
+      "आज जीवविज्ञान में हम लिंग पर चर्चा कर रहे हैं।"
+    ],
+    "hu": [
+      "Még nem tudjuk a nemét.",
+      "Nem adok meg nemet az űrlapon.",
+      "A mosdó uniszex.",
+      "Ma biológián a nemről beszélünk."
+    ],
+    "id": [
+      "Kami belum tahu jenis kelaminnya.",
+      "Saya tidak mengisi jenis kelamin di formulir.",
+      "Toilet ini untuk semua gender.",
+      "Hari ini di pelajaran biologi kami membahas tentang jenis kelamin."
+    ],
+    "ipa": [
+      "/viːɐ̯ ˈkɛnən das ɡəˈʃlɛçt nɔx nɪçt/",
+      "/ɪç ˈɡeːbə ɪm fɔʁmuˈlaːɐ̯ kaɪn ɡəˈʃlɛçt an/",
+      "/diː to̯aˈlɛtə ɪst fyːɐ̯ ˈjeːdəs ɡəˈʃlɛçt/",
+      "/ɪn ˈbiːo bəˈʃpʁɛçən viːɐ̯ ˈhɔʏtə das ɡəˈʃlɛçt/"
+    ],
+    "it": [
+      "Non sappiamo ancora il sesso.",
+      "Nel modulo non indico il genere.",
+      "Il bagno è unisex.",
+      "Oggi a biologia parliamo del sesso."
     ],
     "ja": [
       "まだ性別が分かりません。",
@@ -941,6 +1195,83 @@
       "このトイレは誰でも使えます。",
       "今日は生物の授業で性別について話します。"
     ],
-    "word_POS": "Noun"
+    "ko": [
+      "아직 성별을 몰라요.",
+      "양식에 성별을 입력하지 않아요.",
+      "이 화장실은 남녀 공용이에요.",
+      "오늘 생물 시간에 성별에 대해 이야기해요."
+    ],
+    "nb": [
+      "Vi vet ikke kjønnet ennå.",
+      "Jeg oppgir ikke kjønn i skjemaet.",
+      "Toalettet er for alle kjønn.",
+      "I dag i biologien snakker vi om kjønn."
+    ],
+    "nl": [
+      "We weten het geslacht nog niet.",
+      "Ik vul op het formulier geen geslacht in.",
+      "Het toilet is unisex.",
+      "Vandaag bespreken we in biologie het geslacht."
+    ],
+    "pl": [
+      "Jeszcze nie znamy płci.",
+      "W formularzu nie podaję płci.",
+      "Toaleta jest dla wszystkich.",
+      "Dziś na biologii omawiamy płeć."
+    ],
+    "pt": [
+      "Ainda não sabemos o sexo.",
+      "No formulário não informo o gênero.",
+      "O banheiro é unissex.",
+      "Hoje na aula de biologia vamos falar sobre sexo."
+    ],
+    "ro": [
+      "Încă nu știm sexul.",
+      "Nu trec genul în formular.",
+      "Toaleta este unisex.",
+      "Astăzi la biologie discutăm despre sex."
+    ],
+    "ru": [
+      "Мы пока не знаем пол ребёнка.",
+      "В анкете я не указываю пол.",
+      "Туалет унисекс.",
+      "Сегодня на биологии мы обсуждаем пол."
+    ],
+    "sv": [
+      "Vi vet inte könet än.",
+      "Jag anger inget kön i formuläret.",
+      "Toaletten är för alla kön.",
+      "Idag på biologin pratar vi om kön."
+    ],
+    "tr": [
+      "Henüz cinsiyetini bilmiyoruz.",
+      "Formda cinsiyet belirtmiyorum.",
+      "Tuvalet her cinsiyet için uygundur.",
+      "Bugün biyoloji dersinde cinsiyeti konuşuyoruz."
+    ],
+    "uk": [
+      "Ми ще не знаємо статі.",
+      "У формі я не вказую стать.",
+      "Туалет унісекс.",
+      "Сьогодні на біології ми обговорюємо стать."
+    ],
+    "vi": [
+      "Chúng tôi vẫn chưa biết là trai hay gái.",
+      "Tôi không điền giới tính vào biểu mẫu.",
+      "Nhà vệ sinh dùng cho mọi giới.",
+      "Hôm nay trong giờ sinh học chúng tôi bàn về giới tính."
+    ],
+    "yue": [
+      "我哋仲未知道佢係男定女。",
+      "我喺表格度唔填性別。",
+      "呢間洗手間係男女共用。",
+      "今日喺生物堂我哋會講性別。"
+    ],
+    "zh-Hans": [
+      "我们还不知道是男孩还是女孩。",
+      "我在表格里不填写性别。",
+      "这是全性别卫生间。",
+      "今天在生物课上我们讨论性别。"
+    ]
   }
 }

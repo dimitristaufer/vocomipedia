@@ -250,11 +250,11 @@
         "ar": "في النهاية، سنذهب لنأكل آيس كريم.",
         "nl": "Als afslutning gaan we nog een ijsje eten.",
         "uk": "На завершення ми підемо їсти морозиво.",
-        "hu": "Befejezésképp elmegyünk fagyизhи.",
+        "hu": "Befejezésképp elmegyünk fagyizni.",
         "hi": "अंत में हम आइसक्रीम खाने जा रहे हैं।",
         "pl": "Na koniec idziemy na lody.",
         "el": "Στο τέλος πάμε για παγωτό.",
-        "nb": "Som avslutning går vi og cпiser is.",
+        "nb": "Som avslutning går vi og spiser is.",
         "id": "Sebagai penutup, kita pergi makan es krim.",
         "sv": "Som avslutning går vi och äter glass.",
         "ro": "Ca să încheiem, mergem să mâncăm înghețată.",
@@ -341,10 +341,10 @@
       "difficulty": 4.5
     },
     {
-      "target": "Mein Abschluss ist nächstes Jahr.",
+      "target": "Ich mache nächstes Jahr meinen Abschluss.",
       "reading": "/maɪ̯n ˈapʃlʊs ɪst ˈnɛːçstəs jaːɐ̯/",
       "translations": {
-        "de": "Mein Abschluss ist nächstes Jahr.",
+        "de": "Ich mache nächstes Jahr meinen Abschluss.",
         "ipa": "/maɪ̯n ˈapʃlʊs ɪst ˈnɛːçstəs jaːɐ̯/",
         "en": "My graduation is next year.",
         "es": "Mi graduación es el próximo año.",
@@ -376,50 +376,82 @@
       },
       "tokens": [
         {
-          "surface": "Mein",
-          "surface_en": "my",
-          "furigana": "[maɪ̯n]",
-          "pos": "DET",
-          "lemma": "mein",
-          "explanation": "Possessive determiner; masculine nominative singular agreeing with 'Abschluss'; marks 1st person singular possession.",
-          "difficulty": 7
+          "surface": "Ich",
+          "lemma": "ich",
+          "pos": "PRON",
+          "upos": "PRON",
+          "xpos": "PPER",
+          "feats": {},
+          "start": 0,
+          "end": 3,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "Abschluss",
-          "surface_en": "degree",
-          "furigana": "[ˈapʃlʊs]",
-          "pos": "NOUN",
-          "lemma": "Abschluss",
-          "explanation": "Common noun; masculine nominative singular; grammatical subject in a copular clause.",
-          "difficulty": 10,
-          "is_main_word": true
-        },
-        {
-          "surface": "ist",
-          "surface_en": "is",
-          "furigana": "[ɪst]",
-          "pos": "AUX",
-          "lemma": "sein",
-          "explanation": "Finite copula auxiliary (3rd person singular, present) linking the subject to the predicate nominal.",
-          "difficulty": 4
+          "surface": "mache",
+          "lemma": "machen",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VVFIN",
+          "feats": {},
+          "start": 4,
+          "end": 9,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "nächstes",
-          "surface_en": "next",
-          "furigana": "[ˈnɛːçstəs]",
+          "lemma": "nächster",
           "pos": "ADJ",
-          "lemma": "nächst",
-          "explanation": "Attributive adjective; nominative neuter singular (strong inflection) modifying 'Jahr' within the predicate NP.",
-          "difficulty": 10
+          "upos": "ADJ",
+          "xpos": "ADJA",
+          "feats": {},
+          "start": 10,
+          "end": 18,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "Jahr.",
-          "surface_en": "year",
-          "furigana": "[jaːɐ̯]",
-          "pos": "NOUN",
+          "surface": "Jahr",
           "lemma": "Jahr",
-          "explanation": "Common noun; neuter nominative singular; predicate nominal in the copular construction indicating time.",
-          "difficulty": 7
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 19,
+          "end": 23,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "meinen",
+          "lemma": "meinen",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "PPOSAT",
+          "feats": {},
+          "start": 24,
+          "end": 30,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "Abschluss",
+          "lemma": "Abschluss",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 31,
+          "end": 40,
+          "analyzer": "spacy_de_core_news_lg",
+          "is_main_word": true
+        },
+        {
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 40,
+          "end": 41,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 7.6
@@ -436,8 +468,292 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-14T20:53:30Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:De b1/ea42a0fb19c457e8",
+      "revision_id": 86622,
+      "parent_revision_id": 15056,
+      "revision_timestamp_utc": "2026-10-14T20:53:30Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Correct Abschluss sentence and corrupted translations",
+      "pulled_utc": "2026-10-17T07:06:44Z",
+      "applied_utc": "2026-10-17T07:06:48Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-0ef6ad21203b39b2",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_b1:ea42a0fb19c457e8",
+        "pack_code": "de_b1",
+        "entry_id": "Abschluss",
+        "language": "de",
+        "sentence_index": 4,
+        "old_sentence": "Mein Abschluss ist nächstes Jahr.",
+        "old_translations": {
+          "de": "Mein Abschluss ist nächstes Jahr.",
+          "ipa": "/maɪ̯n ˈapʃlʊs ɪst ˈnɛːçstəs jaːɐ̯/",
+          "en": "My graduation is next year.",
+          "es": "Mi graduación es el próximo año.",
+          "fr": "Ma remise de diplôme est l'année prochaine.",
+          "it": "Mi laureo l'anno prossimo.",
+          "ko": "저는 내년에 졸업해요.",
+          "zh-Hans": "我明年毕业。",
+          "yue": "我下年畢業。",
+          "ru": "Я закончу учёбу в следующем году.",
+          "pt": "Minha formatura é no ano que vem.",
+          "he": "טקס הסיום שלי בשנה הבאה.",
+          "tr": "Mezuniyetim gelecek yıl.",
+          "vi": "Tôi sẽ tốt nghiệp vào năm sau.",
+          "ar": "حفل تخرجي العام القادم.",
+          "nl": "Mijn diploma-uitreiking is volgend jaar.",
+          "uk": "Мій випуск наступного року.",
+          "hu": "A diplomaosztóm jövőre lesz.",
+          "hi": "मेरा स्नातक समारोह अगले साल है।",
+          "pl": "Skończę studia w przyszłym roku.",
+          "el": "Η αποφοίτησή μου είναι του χρόνου.",
+          "nb": "Jeg blir ferdig neste år.",
+          "id": "Wisuda saya tahun depan.",
+          "sv": "Jag tar examen nästa år.",
+          "ro": "Voi absolvi anul viitor.",
+          "cs": "Moje promoce je příští rok.",
+          "da": "Jeg bliver færdig næste år.",
+          "fi": "Valmistun ensi vuonna.",
+          "ja": "来年卒業します。"
+        },
+        "proposed_sentence": "Ich mache nächstes Jahr meinen Abschluss.",
+        "proposed_translations": {
+          "de": "Ich mache nächstes Jahr meinen Abschluss.",
+          "ipa": "/maɪ̯n ˈapʃlʊs ɪst ˈnɛːçstəs jaːɐ̯/",
+          "en": "My graduation is next year.",
+          "es": "Mi graduación es el próximo año.",
+          "fr": "Ma remise de diplôme est l'année prochaine.",
+          "it": "Mi laureo l'anno prossimo.",
+          "ko": "저는 내년에 졸업해요.",
+          "zh-Hans": "我明年毕业。",
+          "yue": "我下年畢業。",
+          "ru": "Я закончу учёбу в следующем году.",
+          "pt": "Minha formatura é no ano que vem.",
+          "he": "טקס הסיום שלי בשנה הבאה.",
+          "tr": "Mezuniyetim gelecek yıl.",
+          "vi": "Tôi sẽ tốt nghiệp vào năm sau.",
+          "ar": "حفل تخرجي العام القادم.",
+          "nl": "Mijn diploma-uitreiking is volgend jaar.",
+          "uk": "Мій випуск наступного року.",
+          "hu": "A diplomaosztóm jövőre lesz.",
+          "hi": "मेरा स्नातक समारोह अगले साल है।",
+          "pl": "Skończę studia w przyszłym roku.",
+          "el": "Η αποφοίτησή μου είναι του χρόνου.",
+          "nb": "Jeg blir ferdig neste år.",
+          "id": "Wisuda saya tahun depan.",
+          "sv": "Jag tar examen nästa år.",
+          "ro": "Voi absolvi anul viitor.",
+          "cs": "Moje promoce je příští rok.",
+          "da": "Jeg bliver færdig næste år.",
+          "fi": "Valmistun ensi vuonna.",
+          "ja": "来年卒業します。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Ich mache nächstes Jahr meinen Abschluss.",
+        "old_japanese": "Mein Abschluss ist nächstes Jahr.",
+        "old_english": "My graduation is next year.",
+        "proposed_japanese": "Ich mache nächstes Jahr meinen Abschluss.",
+        "proposed_english": "My graduation is next year.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Ich mache nächstes Jahr meinen Abschluss.",
+          "tokens": [
+            {
+              "surface": "Ich",
+              "lemma": "ich",
+              "pos": "PRON",
+              "upos": "PRON",
+              "xpos": "PPER",
+              "feats": {},
+              "start": 0,
+              "end": 3,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "mache",
+              "lemma": "machen",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVFIN",
+              "feats": {},
+              "start": 4,
+              "end": 9,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "nächstes",
+              "lemma": "nächster",
+              "pos": "ADJ",
+              "upos": "ADJ",
+              "xpos": "ADJA",
+              "feats": {},
+              "start": 10,
+              "end": 18,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Jahr",
+              "lemma": "Jahr",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 19,
+              "end": 23,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "meinen",
+              "lemma": "meinen",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "PPOSAT",
+              "feats": {},
+              "start": 24,
+              "end": 30,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Abschluss",
+              "lemma": "Abschluss",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 31,
+              "end": 40,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 40,
+              "end": 41,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Ich",
+            "lemma": "ich",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "mache",
+            "lemma": "machen",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 4,
+            "end": 9,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "nächstes",
+            "lemma": "nächster",
+            "pos": "ADJ",
+            "upos": "ADJ",
+            "xpos": "ADJA",
+            "feats": {},
+            "start": 10,
+            "end": 18,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Jahr",
+            "lemma": "Jahr",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 19,
+            "end": 23,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "meinen",
+            "lemma": "meinen",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "PPOSAT",
+            "feats": {},
+            "start": 24,
+            "end": 30,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Abschluss",
+            "lemma": "Abschluss",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 31,
+            "end": 40,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 40,
+            "end": 41,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:06:44Z",
+        "updated_utc": "2026-10-17T07:07:05Z",
+        "applied_utc": "2026-10-17T07:07:05Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:07:05Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -449,34 +765,6 @@
     "word": "Abschluss",
     "word_reading": "",
     "word_label": "Substantiv (der mask.)",
-    "word_en": "completion; degree",
-    "word_es": "finalización; graduación",
-    "word_fr": "fin; diplôme",
-    "word_it": "conclusione; diploma",
-    "word_ko": "완료; 졸업",
-    "word_zh-Hans": "完成; 毕业",
-    "word_yue": "完成; 畢業",
-    "word_ru": "завершение; выпуск",
-    "word_pt": "conclusão; formatura",
-    "word_he": "סיום; סיום לימודים",
-    "word_tr": "tamamlama; mezuniyet",
-    "word_vi": "hoàn thành; tốt nghiệp",
-    "word_ar": "إنهاء؛ تخرج",
-    "word_nl": "afsluiting; afstuderen",
-    "word_uk": "завершення; випуск",
-    "word_hu": "befejezés; végzés",
-    "word_hi": "समापन; ग्रेजुएशन",
-    "word_pl": "zakończenie; ukończenie studiów",
-    "word_el": "ολοκλήρωση; αποφοίτηση",
-    "word_nb": "avslutning; uteksaminering",
-    "word_id": "penyelesaian; kelulusan",
-    "word_sv": "slutförande; examen",
-    "word_ro": "finalizare; absolvire",
-    "word_cs": "ukončení; absolvování",
-    "word_da": "afslutning; dimission",
-    "word_fi": "päättäminen; valmistuminen",
-    "word_ja": "終了; 卒業",
-    "word_de": "Abschluss",
     "comic_difficulty": 6.21,
     "jp": [
       "Er hat seinen Abschluss gemacht.",
@@ -489,24 +777,6 @@
       "/ɪç ˈbʁaʊ̯xə ˈmaɪ̯nən ˈapʃlʊs fyːɐ̯ diː bəˈvɛʁbʊŋ/",
       "/tsʊm ˈapʃlʊs ˈɡeːən viːɐ̯ nɔx aɪ̯n aɪ̯s ˈɛsən/",
       "/maɪ̯n ˈapʃlʊs ɪst ˈnɛːçstəs jaːɐ̯/"
-    ],
-    "de": [
-      "Er hat seinen Abschluss gemacht.",
-      "Ich brauche meinen Abschluss für die Bewerbung.",
-      "Zum Abschluss gehen wir noch ein Eis essen.",
-      "Mein Abschluss ist nächstes Jahr."
-    ],
-    "ipa": [
-      "/eːɐ̯ hat ˈzaɪ̯nən ˈapʃlʊs ɡəˈmaxt/",
-      "/ɪç ˈbʁaʊ̯xə ˈmaɪ̯nən ˈapʃlʊs fyːɐ̯ diː bəˈvɛʁbʊŋ/",
-      "/tsʊm ˈapʃlʊs ˈɡeːən viːɐ̯ nɔx aɪ̯n aɪ̯s ˈɛsən/",
-      "/maɪ̯n ˈapʃlʊs ɪst ˈnɛːçstəs jaːɐ̯/"
-    ],
-    "en": [
-      "He finished his degree.",
-      "I need my degree for the application.",
-      "To wrap up, we’re going for ice cream.",
-      "My graduation is next year."
     ],
     "pos_analysis": [
       {
@@ -711,189 +981,125 @@
         "difficulty_aggregated": 4.5
       },
       {
-        "sentence": "Mein Abschluss ist nächstes Jahr.",
+        "sentence": "Ich mache nächstes Jahr meinen Abschluss.",
         "tokens": [
           {
-            "surface": "Mein",
-            "surface_en": "my",
-            "furigana": "[maɪ̯n]",
-            "pos": "DET",
-            "lemma": "mein",
-            "explanation": "Possessive determiner; masculine nominative singular agreeing with 'Abschluss'; marks 1st person singular possession.",
-            "difficulty": 7
+            "surface": "Ich",
+            "lemma": "ich",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "Abschluss",
-            "surface_en": "degree",
-            "furigana": "[ˈapʃlʊs]",
-            "pos": "NOUN",
-            "lemma": "Abschluss",
-            "explanation": "Common noun; masculine nominative singular; grammatical subject in a copular clause.",
-            "difficulty": 10,
-            "is_main_word": true
-          },
-          {
-            "surface": "ist",
-            "surface_en": "is",
-            "furigana": "[ɪst]",
-            "pos": "AUX",
-            "lemma": "sein",
-            "explanation": "Finite copula auxiliary (3rd person singular, present) linking the subject to the predicate nominal.",
-            "difficulty": 4
+            "surface": "mache",
+            "lemma": "machen",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 4,
+            "end": 9,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "nächstes",
-            "surface_en": "next",
-            "furigana": "[ˈnɛːçstəs]",
+            "lemma": "nächster",
             "pos": "ADJ",
-            "lemma": "nächst",
-            "explanation": "Attributive adjective; nominative neuter singular (strong inflection) modifying 'Jahr' within the predicate NP.",
-            "difficulty": 10
+            "upos": "ADJ",
+            "xpos": "ADJA",
+            "feats": {},
+            "start": 10,
+            "end": 18,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "Jahr.",
-            "surface_en": "year",
-            "furigana": "[jaːɐ̯]",
-            "pos": "NOUN",
+            "surface": "Jahr",
             "lemma": "Jahr",
-            "explanation": "Common noun; neuter nominative singular; predicate nominal in the copular construction indicating time.",
-            "difficulty": 7
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 19,
+            "end": 23,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "meinen",
+            "lemma": "meinen",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "PPOSAT",
+            "feats": {},
+            "start": 24,
+            "end": 30,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Abschluss",
+            "lemma": "Abschluss",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 31,
+            "end": 40,
+            "analyzer": "spacy_de_core_news_lg",
+            "is_main_word": true
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 40,
+            "end": 41,
+            "analyzer": "spacy_de_core_news_lg"
           }
         ],
         "difficulty_aggregated": 7.6
       }
     ],
-    "es": [
-      "Se graduó.",
-      "Necesito mi título para la solicitud.",
-      "Para terminar, vamos a tomar un helado.",
-      "Mi graduación es el próximo año."
-    ],
-    "fr": [
-      "Il a obtenu son diplôme.",
-      "J'ai besoin de mon diplôme pour postuler.",
-      "Pour finir, on va manger une glace.",
-      "Ma remise de diplôme est l'année prochaine."
-    ],
-    "it": [
-      "Si è laureato.",
-      "Mi serve la laurea per candidarmi.",
-      "Per finire, andiamo a prendere un gelato.",
-      "Mi laureo l'anno prossimo."
-    ],
-    "ko": [
-      "그는 졸업했어요.",
-      "지원하려면 학위가 필요해요.",
-      "마무리로 아이스크림 먹으러 갈 거예요.",
-      "저는 내년에 졸업해요."
-    ],
-    "zh-Hans": [
-      "他毕业了。",
-      "申请时需要我的学位证。",
-      "最后我们去吃个冰淇淋。",
-      "我明年毕业。"
-    ],
-    "yue": [
-      "佢畢業咗。",
-      "申請要我嘅學位證。",
-      "最後我哋去食雪糕。",
-      "我下年畢業。"
-    ],
-    "ru": [
-      "Он получил диплом.",
-      "Для подачи заявки мне нужен диплом.",
-      "Напоследок мы пойдём за мороженым.",
-      "Я закончу учёбу в следующем году."
-    ],
-    "pt": [
-      "Ele se formou.",
-      "Preciso do meu diploma para a candidatura.",
-      "Para terminar, vamos tomar um sorvete.",
-      "Minha formatura é no ano que vem."
-    ],
-    "he": [
-      "הוא סיים את התואר.",
-      "אני צריכה את התואר בשביל להגיש.",
-      "לסיום, נלך לאכול גלידה.",
-      "טקס הסיום שלי בשנה הבאה."
-    ],
-    "tr": [
-      "Mezun oldu.",
-      "Başvuru için diplomaya ihtiyacım var.",
-      "Son olarak dondurma yemeye gidiyoruz.",
-      "Mezuniyetim gelecek yıl."
-    ],
-    "vi": [
-      "Anh ấy đã tốt nghiệp.",
-      "Tôi cần bằng cấp cho hồ sơ ứng tuyển.",
-      "Kết thúc, chúng ta đi ăn kem.",
-      "Tôi sẽ tốt nghiệp vào năm sau."
-    ],
+    "word_POS": "Noun",
+    "entry_id": "Abschluss",
+    "word_en": "completion; degree",
+    "word_es": "finalización; graduación",
+    "word_fr": "fin; diplôme",
+    "word_it": "conclusione; diploma",
+    "word_ko": "완료; 졸업",
+    "word_zh-Hans": "完成; 毕业",
+    "word_yue": "完成; 畢業",
+    "word_ru": "завершение; выпуск",
+    "word_pt": "conclusão; formatura",
+    "word_he": "סיום; סיום לימודים",
+    "word_tr": "tamamlama; mezuniyet",
+    "word_vi": "hoàn thành; tốt nghiệp",
+    "word_ar": "إنهاء؛ تخرج",
+    "word_nl": "afsluiting; afstuderen",
+    "word_uk": "завершення; випуск",
+    "word_hu": "befejezés; végzés",
+    "word_hi": "समापन; ग्रेजुएशन",
+    "word_pl": "zakończenie; ukończenie studiów",
+    "word_el": "ολοκλήρωση; αποφοίτηση",
+    "word_nb": "avslutning; uteksaminering",
+    "word_id": "penyelesaian; kelulusan",
+    "word_sv": "slutförande; examen",
+    "word_ro": "finalizare; absolvire",
+    "word_cs": "ukončení; absolvování",
+    "word_da": "afslutning; dimission",
+    "word_fi": "päättäminen; valmistuminen",
+    "word_ja": "終了; 卒業",
+    "word_de": "Abschluss",
     "ar": [
       "تخرّج.",
       "أحتاج إلى شهادتي من أجل التقديم.",
       "في النهاية، سنذهب لنأكل آيس كريم.",
       "حفل تخرجي العام القادم."
-    ],
-    "nl": [
-      "Hij is afgestudeerd.",
-      "Voor de sollicitatie heb ik mijn diploma nodig.",
-      "Als afslutning gaan we nog een ijsje eten.",
-      "Mijn diploma-uitreiking is volgend jaar."
-    ],
-    "uk": [
-      "Він закінчив університет.",
-      "Для подання заявки мені потрібен диплом.",
-      "На завершення ми підемо їсти морозиво.",
-      "Мій випуск наступного року."
-    ],
-    "hu": [
-      "Lediplomázott.",
-      "A jelentkezéshez szükségem van a diplomámra.",
-      "Befejezésképp elmegyünk fagyизhи.",
-      "A diplomaosztóm jövőre lesz."
-    ],
-    "hi": [
-      "उसने अपनी डिग्री पूरी कर ली।",
-      "आवेदन के लिए मुझे अपनी डिग्री चाहिए।",
-      "अंत में हम आइसक्रीम खाने जा रहे हैं।",
-      "मेरा स्नातक समारोह अगले साल है।"
-    ],
-    "pl": [
-      "Skończył studia.",
-      "Do podania potrzebuję dyplomu.",
-      "Na koniec idziemy na lody.",
-      "Skończę studia w przyszłym roku."
-    ],
-    "el": [
-      "Πήρε το πτυχίο του.",
-      "Χρειάζομαι το πτυχίο μου για την αίτηση.",
-      "Στο τέλος πάμε για παγωτό.",
-      "Η αποφοίτησή μου είναι του χρόνου."
-    ],
-    "nb": [
-      "Han ble ferdig med studiene.",
-      "Jeg trenger vitnemålet mitt til søknaden.",
-      "Som avslutning går vi og cпiser is.",
-      "Jeg blir ferdig neste år."
-    ],
-    "id": [
-      "Dia lulus kuliah.",
-      "Saya butuh ijazah untuk lamaran.",
-      "Sebagai penutup, kita pergi makan es krim.",
-      "Wisuda saya tahun depan."
-    ],
-    "sv": [
-      "Han tog examen.",
-      "Jag behöver mitt examensbevis till ansökan.",
-      "Som avslutning går vi och äter glass.",
-      "Jag tar examen nästa år."
-    ],
-    "ro": [
-      "A absolvit.",
-      "Am nevoie de diplomă pentru înscriere.",
-      "Ca să încheiem, mergem să mâncăm înghețată.",
-      "Voi absolvi anul viitor."
     ],
     "cs": [
       "Ukončil studium.",
@@ -907,11 +1113,77 @@
       "Som afslutning går vi ud og spiser is.",
       "Jeg bliver færdig næste år."
     ],
+    "de": [
+      "Er hat seinen Abschluss gemacht.",
+      "Ich brauche meinen Abschluss für die Bewerbung.",
+      "Zum Abschluss gehen wir noch ein Eis essen.",
+      "Mein Abschluss ist nächstes Jahr."
+    ],
+    "el": [
+      "Πήρε το πτυχίο του.",
+      "Χρειάζομαι το πτυχίο μου για την αίτηση.",
+      "Στο τέλος πάμε για παγωτό.",
+      "Η αποφοίτησή μου είναι του χρόνου."
+    ],
+    "en": [
+      "He finished his degree.",
+      "I need my degree for the application.",
+      "To wrap up, we’re going for ice cream.",
+      "My graduation is next year."
+    ],
+    "es": [
+      "Se graduó.",
+      "Necesito mi título para la solicitud.",
+      "Para terminar, vamos a tomar un helado.",
+      "Mi graduación es el próximo año."
+    ],
     "fi": [
       "Hän valmistui.",
       "Tarvitsen tutkintotodistukseni hakemukseen.",
       "Lopuksi menemme syömään jäätelöä.",
       "Valmistun ensi vuonna."
+    ],
+    "fr": [
+      "Il a obtenu son diplôme.",
+      "J'ai besoin de mon diplôme pour postuler.",
+      "Pour finir, on va manger une glace.",
+      "Ma remise de diplôme est l'année prochaine."
+    ],
+    "he": [
+      "הוא סיים את התואר.",
+      "אני צריכה את התואר בשביל להגיש.",
+      "לסיום, נלך לאכול גלידה.",
+      "טקס הסיום שלי בשנה הבאה."
+    ],
+    "hi": [
+      "उसने अपनी डिग्री पूरी कर ली।",
+      "आवेदन के लिए मुझे अपनी डिग्री चाहिए।",
+      "अंत में हम आइसक्रीम खाने जा रहे हैं।",
+      "मेरा स्नातक समारोह अगले साल है।"
+    ],
+    "hu": [
+      "Lediplomázott.",
+      "A jelentkezéshez szükségem van a diplomámra.",
+      "Befejezésképp elmegyünk fagyizni.",
+      "A diplomaosztóm jövőre lesz."
+    ],
+    "id": [
+      "Dia lulus kuliah.",
+      "Saya butuh ijazah untuk lamaran.",
+      "Sebagai penutup, kita pergi makan es krim.",
+      "Wisuda saya tahun depan."
+    ],
+    "ipa": [
+      "/eːɐ̯ hat ˈzaɪ̯nən ˈapʃlʊs ɡəˈmaxt/",
+      "/ɪç ˈbʁaʊ̯xə ˈmaɪ̯nən ˈapʃlʊs fyːɐ̯ diː bəˈvɛʁbʊŋ/",
+      "/tsʊm ˈapʃlʊs ˈɡeːən viːɐ̯ nɔx aɪ̯n aɪ̯s ˈɛsən/",
+      "/maɪ̯n ˈapʃlʊs ɪst ˈnɛːçstəs jaːɐ̯/"
+    ],
+    "it": [
+      "Si è laureato.",
+      "Mi serve la laurea per candidarmi.",
+      "Per finire, andiamo a prendere un gelato.",
+      "Mi laureo l'anno prossimo."
     ],
     "ja": [
       "彼は卒業した。",
@@ -919,6 +1191,83 @@
       "最後にアイスを食べに行きます。",
       "来年卒業します。"
     ],
-    "word_POS": "Noun"
+    "ko": [
+      "그는 졸업했어요.",
+      "지원하려면 학위가 필요해요.",
+      "마무리로 아이스크림 먹으러 갈 거예요.",
+      "저는 내년에 졸업해요."
+    ],
+    "nb": [
+      "Han ble ferdig med studiene.",
+      "Jeg trenger vitnemålet mitt til søknaden.",
+      "Som avslutning går vi og spiser is.",
+      "Jeg blir ferdig neste år."
+    ],
+    "nl": [
+      "Hij is afgestudeerd.",
+      "Voor de sollicitatie heb ik mijn diploma nodig.",
+      "Als afslutning gaan we nog een ijsje eten.",
+      "Mijn diploma-uitreiking is volgend jaar."
+    ],
+    "pl": [
+      "Skończył studia.",
+      "Do podania potrzebuję dyplomu.",
+      "Na koniec idziemy na lody.",
+      "Skończę studia w przyszłym roku."
+    ],
+    "pt": [
+      "Ele se formou.",
+      "Preciso do meu diploma para a candidatura.",
+      "Para terminar, vamos tomar um sorvete.",
+      "Minha formatura é no ano que vem."
+    ],
+    "ro": [
+      "A absolvit.",
+      "Am nevoie de diplomă pentru înscriere.",
+      "Ca să încheiem, mergem să mâncăm înghețată.",
+      "Voi absolvi anul viitor."
+    ],
+    "ru": [
+      "Он получил диплом.",
+      "Для подачи заявки мне нужен диплом.",
+      "Напоследок мы пойдём за мороженым.",
+      "Я закончу учёбу в следующем году."
+    ],
+    "sv": [
+      "Han tog examen.",
+      "Jag behöver mitt examensbevis till ansökan.",
+      "Som avslutning går vi och äter glass.",
+      "Jag tar examen nästa år."
+    ],
+    "tr": [
+      "Mezun oldu.",
+      "Başvuru için diplomaya ihtiyacım var.",
+      "Son olarak dondurma yemeye gidiyoruz.",
+      "Mezuniyetim gelecek yıl."
+    ],
+    "uk": [
+      "Він закінчив університет.",
+      "Для подання заявки мені потрібен диплом.",
+      "На завершення ми підемо їсти морозиво.",
+      "Мій випуск наступного року."
+    ],
+    "vi": [
+      "Anh ấy đã tốt nghiệp.",
+      "Tôi cần bằng cấp cho hồ sơ ứng tuyển.",
+      "Kết thúc, chúng ta đi ăn kem.",
+      "Tôi sẽ tốt nghiệp vào năm sau."
+    ],
+    "yue": [
+      "佢畢業咗。",
+      "申請要我嘅學位證。",
+      "最後我哋去食雪糕。",
+      "我下年畢業。"
+    ],
+    "zh-Hans": [
+      "他毕业了。",
+      "申请时需要我的学位证。",
+      "最后我们去吃个冰淇淋。",
+      "我明年毕业。"
+    ]
   }
 }

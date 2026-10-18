@@ -348,7 +348,7 @@
       "translations": {
         "en": "I won by luck.",
         "ar": "فزت بالحظ.",
-        "cs": "Vyhrál jsem náhodou.",
+        "cs": "Díky štěstí se mi podařilo vyhrát.",
         "da": "Jeg vandt med held.",
         "de": "Ich habe durch Glück gewonnen.",
         "el": "Κέρδισα από τύχη.",
@@ -356,20 +356,20 @@
         "fi": "Voitin tuurilla.",
         "fr": "J'ai gagné par chance.",
         "he": "ניצחתי במזל.",
-        "hi": "मैं किस्मत से जीत गया।",
+        "hi": "किस्मत के चलते जीत हासिल हुई।",
         "hu": "Szerencsével nyertem.",
         "id": "Aku menang karena keberuntungan.",
         "it": "Ho vinto per fortuna.",
         "ko": "운으로 이겼어.",
         "nb": "Jeg vant på flaks.",
         "nl": "Ik won door geluk.",
-        "pl": "Wygrałem dzięki szczęściu.",
+        "pl": "Udało mi się wygrać dzięki szczęściu.",
         "pt": "Ganhei por sorte.",
-        "ro": "Am câștigat din noroc.",
-        "ru": "Я выиграл случайно.",
+        "ro": "Am câștigat datorită norocului.",
+        "ru": "Мне повезло выиграть.",
         "sv": "Jag vann på tur.",
         "tr": "Şansla kazandım.",
-        "uk": "Я виграв випадково.",
+        "uk": "Мені пощастило виграти.",
         "vi": "Tôi thắng nhờ may mắn.",
         "yue": "我靠運氣贏咗。",
         "zh-Hans": "我靠运气赢了。"
@@ -474,12 +474,12 @@
       "difficulty": null
     },
     {
-      "target": "このゲームは運しだいだ。",
+      "target": "このゲームは運次第だ。",
       "reading": "このげーむはうんしだいだ。",
       "translations": {
         "en": "This game depends on luck.",
         "ar": "هذه اللعبة تعتمد على الحظ.",
-        "cs": "Tahra závisí na štěstí.",
+        "cs": "Tahle hra závisí na štěstí.",
         "da": "Det her spil afhænger af held.",
         "de": "Dieses Spiel hängt vom Glück ab.",
         "el": "Αυτό το παιχνίδι εξαρτάται από την τύχη.",
@@ -574,25 +574,34 @@
               "length": 1
             }
           ],
-          "ruby_confidence": "high",
+          "ruby_confidence": "reviewed",
           "furigana": "うん",
+          "ruby_source": "mediawiki_sentence_ruby",
           "is_main_word": true
         },
         {
-          "surface": "しだい",
-          "lemma": "しだい",
+          "surface": "次第",
+          "lemma": "次第",
           "pos": "名詞/普通名詞/副詞可能/*/*/*",
           "upos": "NOUN",
           "xpos": "名詞",
           "feats": {},
           "start": 7,
-          "end": 10,
+          "end": 9,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "しだい",
-          "ruby_text": "しだい",
-          "ruby_spans": [],
-          "ruby_confidence": "high",
-          "furigana": "しだい"
+          "ruby_text": "次第[しだい]",
+          "ruby_spans": [
+            {
+              "base": "次第",
+              "reading": "しだい",
+              "start": 0,
+              "length": 2
+            }
+          ],
+          "ruby_confidence": "reviewed",
+          "furigana": "しだい",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "だ",
@@ -601,8 +610,8 @@
           "upos": "AUX",
           "xpos": "助動詞",
           "feats": {},
-          "start": 10,
-          "end": 11,
+          "start": 9,
+          "end": 10,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "だ",
           "ruby_text": "だ",
@@ -617,8 +626,8 @@
           "upos": "PUNCT",
           "xpos": "補助記号",
           "feats": {},
-          "start": 11,
-          "end": 12,
+          "start": 10,
+          "end": 11,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "。",
           "ruby_text": "。",
@@ -641,8 +650,392 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-13T08:12:40Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:Ja n3/644f6c2c11f9f608",
+      "revision_id": 80188,
+      "parent_revision_id": 68367,
+      "revision_timestamp_utc": "2026-10-13T08:12:40Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Corrected Czech wording and translations that implied an accidental win instead of winning through luck; standardized 次第.",
+      "pulled_utc": "2026-10-18T17:39:03Z",
+      "applied_utc": "2026-10-18T17:39:40Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-73166936197394d7",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "ja_n3:644f6c2c11f9f608",
+        "pack_code": "ja_n3",
+        "entry_id": "運",
+        "language": "ja",
+        "sentence_index": 4,
+        "old_sentence": "このゲームは運しだいだ。",
+        "old_translations": {
+          "en": "This game depends on luck.",
+          "ar": "هذه اللعبة تعتمد على الحظ.",
+          "cs": "Tahra závisí na štěstí.",
+          "da": "Det her spil afhænger af held.",
+          "de": "Dieses Spiel hängt vom Glück ab.",
+          "el": "Αυτό το παιχνίδι εξαρτάται από την τύχη.",
+          "es": "Este juego depende de la suerte.",
+          "fi": "Tämä peli riippuu tuurista.",
+          "fr": "Ce jeu dépend de la chance.",
+          "he": "המשחק הזה תלוי במזל.",
+          "hi": "यह खेल किस्मत पर निर्भर है।",
+          "hu": "Ez a játék a szerencsén múlik.",
+          "id": "Permainan ini tergantung pada keberuntungan.",
+          "it": "Questo gioco dipende dalla fortuna.",
+          "ko": "이 게임은 운에 달려 있어.",
+          "nb": "Dette spillet er avhengig av flaks.",
+          "nl": "Dit spel hangt af van geluk.",
+          "pl": "Ta gra zależy od szczęścia.",
+          "pt": "Este jogo depende da sorte.",
+          "ro": "Jocul ăsta depinde de noroc.",
+          "ru": "Эта игра зависит от удачи.",
+          "sv": "Det här spelet beror på tur.",
+          "tr": "Bu oyun şansa bağlı.",
+          "uk": "Ця гра залежить від удачі.",
+          "vi": "Trò chơi này phụ thuộc vào may mắn.",
+          "yue": "呢個遊戲睇運氣。",
+          "zh-Hans": "这个游戏看运气。"
+        },
+        "proposed_sentence": "このゲームは運次第だ。",
+        "proposed_translations": {
+          "en": "This game depends on luck.",
+          "ar": "هذه اللعبة تعتمد على الحظ.",
+          "cs": "Tahle hra závisí na štěstí.",
+          "da": "Det her spil afhænger af held.",
+          "de": "Dieses Spiel hängt vom Glück ab.",
+          "el": "Αυτό το παιχνίδι εξαρτάται από την τύχη.",
+          "es": "Este juego depende de la suerte.",
+          "fi": "Tämä peli riippuu tuurista.",
+          "fr": "Ce jeu dépend de la chance.",
+          "he": "המשחק הזה תלוי במזל.",
+          "hi": "यह खेल किस्मत पर निर्भर है।",
+          "hu": "Ez a játék a szerencsén múlik.",
+          "id": "Permainan ini tergantung pada keberuntungan.",
+          "it": "Questo gioco dipende dalla fortuna.",
+          "ko": "이 게임은 운에 달려 있어.",
+          "nb": "Dette spillet er avhengig av flaks.",
+          "nl": "Dit spel hangt af van geluk.",
+          "pl": "Ta gra zależy od szczęścia.",
+          "pt": "Este jogo depende da sorte.",
+          "ro": "Jocul ăsta depinde de noroc.",
+          "ru": "Эта игра зависит от удачи.",
+          "sv": "Det här spelet beror på tur.",
+          "tr": "Bu oyun şansa bağlı.",
+          "uk": "Ця гра залежить від удачі.",
+          "vi": "Trò chơi này phụ thuộc vào may mắn.",
+          "yue": "呢個遊戲睇運氣。",
+          "zh-Hans": "这个游戏看运气。"
+        },
+        "old_ruby_source": "このゲームは運[うん]しだいだ。",
+        "proposed_ruby_source": "このゲームは運[うん]次第[しだい]だ。",
+        "old_japanese": "このゲームは運しだいだ。",
+        "old_english": "This game depends on luck.",
+        "proposed_japanese": "このゲームは運次第だ。",
+        "proposed_english": "This game depends on luck.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "ja",
+          "sentence": "このゲームは運次第だ。",
+          "tokens": [
+            {
+              "surface": "この",
+              "lemma": "この",
+              "pos": "連体詞/*/*/*/*/*",
+              "upos": "DET",
+              "xpos": "連体詞",
+              "feats": {},
+              "start": 0,
+              "end": 2,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "この",
+              "ruby_text": "この",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "この"
+            },
+            {
+              "surface": "ゲーム",
+              "lemma": "ゲーム",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 2,
+              "end": 5,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "げーむ",
+              "ruby_text": "ゲーム",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "げーむ"
+            },
+            {
+              "surface": "は",
+              "lemma": "は",
+              "pos": "助詞/係助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 5,
+              "end": 6,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "は",
+              "ruby_text": "は",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "は"
+            },
+            {
+              "surface": "運",
+              "lemma": "運",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 6,
+              "end": 7,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "うん",
+              "ruby_text": "運[うん]",
+              "ruby_spans": [
+                {
+                  "base": "運",
+                  "reading": "うん",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "うん",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "次第",
+              "lemma": "次第",
+              "pos": "名詞/普通名詞/副詞可能/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 7,
+              "end": 9,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "しだい",
+              "ruby_text": "次第[しだい]",
+              "ruby_spans": [
+                {
+                  "base": "次第",
+                  "reading": "しだい",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "しだい",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "だ",
+              "lemma": "だ",
+              "pos": "助動詞/*/*/*/助動詞-ダ/終止形-一般",
+              "upos": "AUX",
+              "xpos": "助動詞",
+              "feats": {},
+              "start": 9,
+              "end": 10,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "だ",
+              "ruby_text": "だ",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "だ"
+            },
+            {
+              "surface": "。",
+              "lemma": "。",
+              "pos": "補助記号/句点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 10,
+              "end": 11,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "。",
+              "ruby_text": "。",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "。"
+            }
+          ],
+          "reading": "このげーむはうんしだいだ。",
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "warnings": [
+            "mediawiki ruby hints applied"
+          ]
+        },
+        "generated_tokens": [
+          {
+            "surface": "この",
+            "lemma": "この",
+            "pos": "連体詞/*/*/*/*/*",
+            "upos": "DET",
+            "xpos": "連体詞",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "この",
+            "ruby_text": "この",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "この"
+          },
+          {
+            "surface": "ゲーム",
+            "lemma": "ゲーム",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 2,
+            "end": 5,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "げーむ",
+            "ruby_text": "ゲーム",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "げーむ"
+          },
+          {
+            "surface": "は",
+            "lemma": "は",
+            "pos": "助詞/係助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 5,
+            "end": 6,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "は",
+            "ruby_text": "は",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "は"
+          },
+          {
+            "surface": "運",
+            "lemma": "運",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 6,
+            "end": 7,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "うん",
+            "ruby_text": "運[うん]",
+            "ruby_spans": [
+              {
+                "base": "運",
+                "reading": "うん",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "うん",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "次第",
+            "lemma": "次第",
+            "pos": "名詞/普通名詞/副詞可能/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 7,
+            "end": 9,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "しだい",
+            "ruby_text": "次第[しだい]",
+            "ruby_spans": [
+              {
+                "base": "次第",
+                "reading": "しだい",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "しだい",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "だ",
+            "lemma": "だ",
+            "pos": "助動詞/*/*/*/助動詞-ダ/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 9,
+            "end": 10,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "だ",
+            "ruby_text": "だ",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "だ"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 10,
+            "end": 11,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
+          }
+        ],
+        "generated_reading": "このげーむはうんしだいだ。",
+        "analyzer": "sudachipy_sudachidict_core_c",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-18T17:39:03Z",
+        "updated_utc": "2026-10-18T17:40:52Z",
+        "applied_utc": "2026-10-18T17:40:52Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-18T17:40:52Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -667,12 +1060,6 @@
       "かれはうんがつよい。",
       "うんでかった。",
       "このげーむはうんしだいだ。"
-    ],
-    "en": [
-      "I'm lucky today.",
-      "He has good luck.",
-      "I won by luck.",
-      "This game depends on luck."
     ],
     "generation": {
       "generator": "vocomipedia_source_generator.py",
@@ -711,190 +1098,6 @@
         "parts_of_speech": "Noun"
       }
     },
-    "word_en": "fortune; luck; chance",
-    "word_es": "fortuna",
-    "word_fr": "chance",
-    "word_de": "Glück",
-    "word_it": "fortuna",
-    "word_ko": "운",
-    "word_zh-Hans": "运气",
-    "word_yue": "運氣",
-    "word_ru": "удача",
-    "word_pt": "sorte",
-    "word_he": "מזל",
-    "word_tr": "şans",
-    "word_vi": "vận may",
-    "word_ar": "حظ",
-    "word_nl": "geluk",
-    "word_uk": "удача",
-    "word_hu": "szerencse",
-    "word_hi": "किस्मत",
-    "word_pl": "szczęście",
-    "word_el": "τύχη",
-    "word_nb": "lykke",
-    "word_id": "keberuntungan",
-    "word_sv": "lycka",
-    "word_ro": "noroc",
-    "word_cs": "štěstí",
-    "word_da": "held",
-    "word_fi": "onni",
-    "word_ja": "運",
-    "ar": [
-      "أنا محظوظ اليوم.",
-      "حظه جيد.",
-      "فزت بالحظ.",
-      "هذه اللعبة تعتمد على الحظ."
-    ],
-    "cs": [
-      "Dnes mám štěstí.",
-      "Má štěstí.",
-      "Vyhrál jsem náhodou.",
-      "Tahra závisí na štěstí."
-    ],
-    "da": [
-      "Jeg er heldig i dag.",
-      "Han er heldig.",
-      "Jeg vandt med held.",
-      "Det her spil afhænger af held."
-    ],
-    "de": [
-      "Ich habe heute Glück.",
-      "Er hat Glück.",
-      "Ich habe durch Glück gewonnen.",
-      "Dieses Spiel hängt vom Glück ab."
-    ],
-    "el": [
-      "Σήμερα είμαι τυχερός.",
-      "Έχει καλή τύχη.",
-      "Κέρδισα από τύχη.",
-      "Αυτό το παιχνίδι εξαρτάται από την τύχη."
-    ],
-    "es": [
-      "Tengo suerte hoy.",
-      "Él tiene suerte.",
-      "Gané por suerte.",
-      "Este juego depende de la suerte."
-    ],
-    "fi": [
-      "Minulla on tänään hyvä tuuri.",
-      "Hänellä on hyvä tuuri.",
-      "Voitin tuurilla.",
-      "Tämä peli riippuu tuurista."
-    ],
-    "fr": [
-      "J'ai de la chance aujourd'hui.",
-      "Il a de la chance.",
-      "J'ai gagné par chance.",
-      "Ce jeu dépend de la chance."
-    ],
-    "he": [
-      "יש לי מזל היום.",
-      "יש לו מזל.",
-      "ניצחתי במזל.",
-      "המשחק הזה תלוי במזל."
-    ],
-    "hi": [
-      "आज मेरी किस्मत अच्छी है।",
-      "उसका भाग्य अच्छा है।",
-      "मैं किस्मत से जीत गया।",
-      "यह खेल किस्मत पर निर्भर है।"
-    ],
-    "hu": [
-      "Ma szerencsém van.",
-      "Neki jó szerencséje van.",
-      "Szerencsével nyertem.",
-      "Ez a játék a szerencsén múlik."
-    ],
-    "id": [
-      "Aku beruntung hari ini.",
-      "Dia beruntung.",
-      "Aku menang karena keberuntungan.",
-      "Permainan ini tergantung pada keberuntungan."
-    ],
-    "it": [
-      "Oggi sono fortunato.",
-      "Lui è fortunato.",
-      "Ho vinto per fortuna.",
-      "Questo gioco dipende dalla fortuna."
-    ],
-    "ko": [
-      "오늘은 운이 좋아.",
-      "그는 운이 좋아.",
-      "운으로 이겼어.",
-      "이 게임은 운에 달려 있어."
-    ],
-    "nb": [
-      "Jeg er heldig i dag.",
-      "Han har flaks.",
-      "Jeg vant på flaks.",
-      "Dette spillet er avhengig av flaks."
-    ],
-    "nl": [
-      "Ik heb vandaag geluk.",
-      "Hij heeft geluk.",
-      "Ik won door geluk.",
-      "Dit spel hangt af van geluk."
-    ],
-    "pl": [
-      "Mam dziś szczęście.",
-      "On ma szczęście.",
-      "Wygrałem dzięki szczęściu.",
-      "Ta gra zależy od szczęścia."
-    ],
-    "pt": [
-      "Estou com sorte hoje.",
-      "Ele tem sorte.",
-      "Ganhei por sorte.",
-      "Este jogo depende da sorte."
-    ],
-    "ro": [
-      "Am noroc astăzi.",
-      "Are noroc.",
-      "Am câștigat din noroc.",
-      "Jocul ăsta depinde de noroc."
-    ],
-    "ru": [
-      "Сегодня мне везет.",
-      "Ему везет.",
-      "Я выиграл случайно.",
-      "Эта игра зависит от удачи."
-    ],
-    "sv": [
-      "Jag har tur i dag.",
-      "Han har tur.",
-      "Jag vann på tur.",
-      "Det här spelet beror på tur."
-    ],
-    "tr": [
-      "Bugün şanslıyım.",
-      "Onun şansı yaver gidiyor.",
-      "Şansla kazandım.",
-      "Bu oyun şansa bağlı."
-    ],
-    "uk": [
-      "Сьогодні мені щастить.",
-      "Йому щастить.",
-      "Я виграв випадково.",
-      "Ця гра залежить від удачі."
-    ],
-    "vi": [
-      "Hôm nay tôi gặp may.",
-      "Anh ấy gặp may.",
-      "Tôi thắng nhờ may mắn.",
-      "Trò chơi này phụ thuộc vào may mắn."
-    ],
-    "yue": [
-      "今日我好好運。",
-      "佢運氣好。",
-      "我靠運氣贏咗。",
-      "呢個遊戲睇運氣。"
-    ],
-    "zh-Hans": [
-      "我今天运气很好。",
-      "他运气很好。",
-      "我靠运气赢了。",
-      "这个游戏看运气。"
-    ],
     "pos_analysis": [
       {
         "sentence": "今日は運がいい。",
@@ -1239,7 +1442,7 @@
         "difficulty_aggregated": null
       },
       {
-        "sentence": "このゲームは運しだいだ。",
+        "sentence": "このゲームは運次第だ。",
         "tokens": [
           {
             "surface": "この",
@@ -1309,25 +1512,34 @@
                 "length": 1
               }
             ],
-            "ruby_confidence": "high",
+            "ruby_confidence": "reviewed",
             "furigana": "うん",
+            "ruby_source": "mediawiki_sentence_ruby",
             "is_main_word": true
           },
           {
-            "surface": "しだい",
-            "lemma": "しだい",
+            "surface": "次第",
+            "lemma": "次第",
             "pos": "名詞/普通名詞/副詞可能/*/*/*",
             "upos": "NOUN",
             "xpos": "名詞",
             "feats": {},
             "start": 7,
-            "end": 10,
+            "end": 9,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "しだい",
-            "ruby_text": "しだい",
-            "ruby_spans": [],
-            "ruby_confidence": "high",
-            "furigana": "しだい"
+            "ruby_text": "次第[しだい]",
+            "ruby_spans": [
+              {
+                "base": "次第",
+                "reading": "しだい",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "しだい",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "だ",
@@ -1336,8 +1548,8 @@
             "upos": "AUX",
             "xpos": "助動詞",
             "feats": {},
-            "start": 10,
-            "end": 11,
+            "start": 9,
+            "end": 10,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "だ",
             "ruby_text": "だ",
@@ -1352,8 +1564,8 @@
             "upos": "PUNCT",
             "xpos": "補助記号",
             "feats": {},
-            "start": 11,
-            "end": 12,
+            "start": 10,
+            "end": 11,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "。",
             "ruby_text": "。",
@@ -1364,6 +1576,196 @@
         ],
         "difficulty_aggregated": null
       }
+    ],
+    "word_en": "fortune; luck; chance",
+    "word_es": "fortuna",
+    "word_fr": "chance",
+    "word_de": "Glück",
+    "word_it": "fortuna",
+    "word_ko": "운",
+    "word_zh-Hans": "运气",
+    "word_yue": "運氣",
+    "word_ru": "удача",
+    "word_pt": "sorte",
+    "word_he": "מזל",
+    "word_tr": "şans",
+    "word_vi": "vận may",
+    "word_ar": "حظ",
+    "word_nl": "geluk",
+    "word_uk": "удача",
+    "word_hu": "szerencse",
+    "word_hi": "किस्मत",
+    "word_pl": "szczęście",
+    "word_el": "τύχη",
+    "word_nb": "lykke",
+    "word_id": "keberuntungan",
+    "word_sv": "lycka",
+    "word_ro": "noroc",
+    "word_cs": "štěstí",
+    "word_da": "held",
+    "word_fi": "onni",
+    "word_ja": "運",
+    "ar": [
+      "أنا محظوظ اليوم.",
+      "حظه جيد.",
+      "فزت بالحظ.",
+      "هذه اللعبة تعتمد على الحظ."
+    ],
+    "cs": [
+      "Dnes mám štěstí.",
+      "Má štěstí.",
+      "Díky štěstí se mi podařilo vyhrát.",
+      "Tahra závisí na štěstí."
+    ],
+    "da": [
+      "Jeg er heldig i dag.",
+      "Han er heldig.",
+      "Jeg vandt med held.",
+      "Det her spil afhænger af held."
+    ],
+    "de": [
+      "Ich habe heute Glück.",
+      "Er hat Glück.",
+      "Ich habe durch Glück gewonnen.",
+      "Dieses Spiel hängt vom Glück ab."
+    ],
+    "el": [
+      "Σήμερα είμαι τυχερός.",
+      "Έχει καλή τύχη.",
+      "Κέρδισα από τύχη.",
+      "Αυτό το παιχνίδι εξαρτάται από την τύχη."
+    ],
+    "en": [
+      "I'm lucky today.",
+      "He has good luck.",
+      "I won by luck.",
+      "This game depends on luck."
+    ],
+    "es": [
+      "Tengo suerte hoy.",
+      "Él tiene suerte.",
+      "Gané por suerte.",
+      "Este juego depende de la suerte."
+    ],
+    "fi": [
+      "Minulla on tänään hyvä tuuri.",
+      "Hänellä on hyvä tuuri.",
+      "Voitin tuurilla.",
+      "Tämä peli riippuu tuurista."
+    ],
+    "fr": [
+      "J'ai de la chance aujourd'hui.",
+      "Il a de la chance.",
+      "J'ai gagné par chance.",
+      "Ce jeu dépend de la chance."
+    ],
+    "he": [
+      "יש לי מזל היום.",
+      "יש לו מזל.",
+      "ניצחתי במזל.",
+      "המשחק הזה תלוי במזל."
+    ],
+    "hi": [
+      "आज मेरी किस्मत अच्छी है।",
+      "उसका भाग्य अच्छा है।",
+      "किस्मत के चलते जीत हासिल हुई।",
+      "यह खेल किस्मत पर निर्भर है।"
+    ],
+    "hu": [
+      "Ma szerencsém van.",
+      "Neki jó szerencséje van.",
+      "Szerencsével nyertem.",
+      "Ez a játék a szerencsén múlik."
+    ],
+    "id": [
+      "Aku beruntung hari ini.",
+      "Dia beruntung.",
+      "Aku menang karena keberuntungan.",
+      "Permainan ini tergantung pada keberuntungan."
+    ],
+    "it": [
+      "Oggi sono fortunato.",
+      "Lui è fortunato.",
+      "Ho vinto per fortuna.",
+      "Questo gioco dipende dalla fortuna."
+    ],
+    "ko": [
+      "오늘은 운이 좋아.",
+      "그는 운이 좋아.",
+      "운으로 이겼어.",
+      "이 게임은 운에 달려 있어."
+    ],
+    "nb": [
+      "Jeg er heldig i dag.",
+      "Han har flaks.",
+      "Jeg vant på flaks.",
+      "Dette spillet er avhengig av flaks."
+    ],
+    "nl": [
+      "Ik heb vandaag geluk.",
+      "Hij heeft geluk.",
+      "Ik won door geluk.",
+      "Dit spel hangt af van geluk."
+    ],
+    "pl": [
+      "Mam dziś szczęście.",
+      "On ma szczęście.",
+      "Udało mi się wygrać dzięki szczęściu.",
+      "Ta gra zależy od szczęścia."
+    ],
+    "pt": [
+      "Estou com sorte hoje.",
+      "Ele tem sorte.",
+      "Ganhei por sorte.",
+      "Este jogo depende da sorte."
+    ],
+    "ro": [
+      "Am noroc astăzi.",
+      "Are noroc.",
+      "Am câștigat datorită norocului.",
+      "Jocul ăsta depinde de noroc."
+    ],
+    "ru": [
+      "Сегодня мне везет.",
+      "Ему везет.",
+      "Мне повезло выиграть.",
+      "Эта игра зависит от удачи."
+    ],
+    "sv": [
+      "Jag har tur i dag.",
+      "Han har tur.",
+      "Jag vann på tur.",
+      "Det här spelet beror på tur."
+    ],
+    "tr": [
+      "Bugün şanslıyım.",
+      "Onun şansı yaver gidiyor.",
+      "Şansla kazandım.",
+      "Bu oyun şansa bağlı."
+    ],
+    "uk": [
+      "Сьогодні мені щастить.",
+      "Йому щастить.",
+      "Мені пощастило виграти.",
+      "Ця гра залежить від удачі."
+    ],
+    "vi": [
+      "Hôm nay tôi gặp may.",
+      "Anh ấy gặp may.",
+      "Tôi thắng nhờ may mắn.",
+      "Trò chơi này phụ thuộc vào may mắn."
+    ],
+    "yue": [
+      "今日我好好運。",
+      "佢運氣好。",
+      "我靠運氣贏咗。",
+      "呢個遊戲睇運氣。"
+    ],
+    "zh-Hans": [
+      "我今天运气很好。",
+      "他运气很好。",
+      "我靠运气赢了。",
+      "这个游戏看运气。"
     ]
   }
 }

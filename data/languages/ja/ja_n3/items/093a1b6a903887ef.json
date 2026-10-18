@@ -42,26 +42,26 @@
   },
   "sentences": [
     {
-      "target": "このドアは自動です。",
-      "reading": "このどあはじどうです。",
+      "target": "このドアは自動ドアです。",
+      "reading": "このどあはじどうどあです。",
       "translations": {
-        "en": "This door is automatic.",
+        "en": "This is an automatic door.",
         "ar": "هذا الباب آلي.",
         "cs": "Tyto dveře jsou automatické.",
-        "da": "Denne dør er automatisk.",
-        "de": "Diese Tür ist automatisch.",
+        "da": "Denne dør åbner automatisk.",
+        "de": "Diese Tür öffnet sich automatisch.",
         "el": "Αυτή η πόρτα είναι αυτόματη.",
         "es": "Esta puerta es automática.",
-        "fi": "Tämä ovi on automaattinen.",
+        "fi": "Tämä ovi avautuu automaattisesti.",
         "fr": "Cette porte est automatique.",
         "he": "הדלת הזאת אוטומטית.",
         "hi": "यह दरवाज़ा स्वचालित है।",
-        "hu": "Ez az ajtó automatikus.",
+        "hu": "Ez az ajtó automatikusan nyílik.",
         "id": "Pintu ini otomatis.",
         "it": "Questa porta è automatica.",
         "ko": "이 문은 자동입니다.",
         "nb": "Denne døren er automatisk.",
-        "nl": "Deze deur is automatisch.",
+        "nl": "Deze deur gaat automatisch open.",
         "pl": "Te drzwi są automatyczne.",
         "pt": "Esta porta é automática.",
         "ro": "Această ușă este automată.",
@@ -69,7 +69,7 @@
         "sv": "Den här dörren är automatisk.",
         "tr": "Bu kapı otomatik.",
         "uk": "Ці двері автоматичні.",
-        "vi": "Cánh cửa này tự động.",
+        "vi": "Cánh cửa này mở tự động.",
         "yue": "呢道門係自動嘅。",
         "zh-Hans": "这扇门是自动的。"
       },
@@ -142,9 +142,26 @@
               "length": 2
             }
           ],
-          "ruby_confidence": "medium",
+          "ruby_confidence": "reviewed",
           "furigana": "じどう",
+          "ruby_source": "mediawiki_sentence_ruby",
           "is_main_word": true
+        },
+        {
+          "surface": "ドア",
+          "lemma": "ドア",
+          "pos": "名詞/普通名詞/一般/*/*/*",
+          "upos": "NOUN",
+          "xpos": "名詞",
+          "feats": {},
+          "start": 7,
+          "end": 9,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "どあ",
+          "ruby_text": "ドア",
+          "ruby_spans": [],
+          "ruby_confidence": "high",
+          "furigana": "どあ"
         },
         {
           "surface": "です",
@@ -153,8 +170,8 @@
           "upos": "AUX",
           "xpos": "助動詞",
           "feats": {},
-          "start": 7,
-          "end": 9,
+          "start": 9,
+          "end": 11,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "です",
           "ruby_text": "です",
@@ -169,8 +186,8 @@
           "upos": "PUNCT",
           "xpos": "補助記号",
           "feats": {},
-          "start": 9,
-          "end": 10,
+          "start": 11,
+          "end": 12,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "。",
           "ruby_text": "。",
@@ -373,7 +390,7 @@
       "translations": {
         "en": "This car stops with automatic braking.",
         "ar": "هذه السيارة تتوقف بالفرملة الآلية.",
-        "cs": "Toto auto zastaví automatické brzdění.",
+        "cs": "Toto auto zastaví díky automatickému brzdění.",
         "da": "Denne bil stopper med automatisk bremsning.",
         "de": "Dieses Auto hält mit automatischer Bremsung an.",
         "el": "Αυτό το αυτοκίνητο σταματά με αυτόματο φρενάρισμα.",
@@ -597,7 +614,7 @@
         "sv": "Den här maskinen tappar upp varmt vatten automatiskt.",
         "tr": "Bu makine sıcak suyu otomatik olarak verir.",
         "uk": "Цей апарат автоматично подає гарячу воду.",
-        "vi": "Máy này tự động lấy nước nóng.",
+        "vi": "Máy này tự động cung cấp nước nóng.",
         "yue": "呢部機會自動出熱水。",
         "zh-Hans": "这台机器会自动出热水。"
       },
@@ -822,8 +839,376 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-13T01:25:30Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:Ja n3/093a1b6a903887ef",
+      "revision_id": 81176,
+      "parent_revision_id": 67611,
+      "revision_timestamp_utc": "2026-10-13T01:25:30Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Made the automatic door example natural and corrected a few translations.",
+      "pulled_utc": "2026-10-18T17:38:53Z",
+      "applied_utc": "2026-10-18T17:39:27Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-2c0c6d900a2acf81",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "ja_n3:093a1b6a903887ef",
+        "pack_code": "ja_n3",
+        "entry_id": "自動",
+        "language": "ja",
+        "sentence_index": 1,
+        "old_sentence": "このドアは自動です。",
+        "old_translations": {
+          "en": "This door is automatic.",
+          "ar": "هذا الباب آلي.",
+          "cs": "Tyto dveře jsou automatické.",
+          "da": "Denne dør er automatisk.",
+          "de": "Diese Tür ist automatisch.",
+          "el": "Αυτή η πόρτα είναι αυτόματη.",
+          "es": "Esta puerta es automática.",
+          "fi": "Tämä ovi on automaattinen.",
+          "fr": "Cette porte est automatique.",
+          "he": "הדלת הזאת אוטומטית.",
+          "hi": "यह दरवाज़ा स्वचालित है।",
+          "hu": "Ez az ajtó automatikus.",
+          "id": "Pintu ini otomatis.",
+          "it": "Questa porta è automatica.",
+          "ko": "이 문은 자동입니다.",
+          "nb": "Denne døren er automatisk.",
+          "nl": "Deze deur is automatisch.",
+          "pl": "Te drzwi są automatyczne.",
+          "pt": "Esta porta é automática.",
+          "ro": "Această ușă este automată.",
+          "ru": "Эта дверь автоматическая.",
+          "sv": "Den här dörren är automatisk.",
+          "tr": "Bu kapı otomatik.",
+          "uk": "Ці двері автоматичні.",
+          "vi": "Cánh cửa này tự động.",
+          "yue": "呢道門係自動嘅。",
+          "zh-Hans": "这扇门是自动的。"
+        },
+        "proposed_sentence": "このドアは自動ドアです。",
+        "proposed_translations": {
+          "en": "This is an automatic door.",
+          "ar": "هذا الباب آلي.",
+          "cs": "Tyto dveře jsou automatické.",
+          "da": "Denne dør åbner automatisk.",
+          "de": "Diese Tür öffnet sich automatisch.",
+          "el": "Αυτή η πόρτα είναι αυτόματη.",
+          "es": "Esta puerta es automática.",
+          "fi": "Tämä ovi avautuu automaattisesti.",
+          "fr": "Cette porte est automatique.",
+          "he": "הדלת הזאת אוטומטית.",
+          "hi": "यह दरवाज़ा स्वचालित है।",
+          "hu": "Ez az ajtó automatikusan nyílik.",
+          "id": "Pintu ini otomatis.",
+          "it": "Questa porta è automatica.",
+          "ko": "이 문은 자동입니다.",
+          "nb": "Denne døren er automatisk.",
+          "nl": "Deze deur gaat automatisch open.",
+          "pl": "Te drzwi są automatyczne.",
+          "pt": "Esta porta é automática.",
+          "ro": "Această ușă este automată.",
+          "ru": "Эта дверь автоматическая.",
+          "sv": "Den här dörren är automatisk.",
+          "tr": "Bu kapı otomatik.",
+          "uk": "Ці двері автоматичні.",
+          "vi": "Cánh cửa này mở tự động.",
+          "yue": "呢道門係自動嘅。",
+          "zh-Hans": "这扇门是自动的。"
+        },
+        "old_ruby_source": "このドアは自動[じどう]です。",
+        "proposed_ruby_source": "このドアは自動[じどう]ドアです。",
+        "old_japanese": "このドアは自動です。",
+        "old_english": "This door is automatic.",
+        "proposed_japanese": "このドアは自動ドアです。",
+        "proposed_english": "This is an automatic door.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "ja",
+          "sentence": "このドアは自動ドアです。",
+          "tokens": [
+            {
+              "surface": "この",
+              "lemma": "この",
+              "pos": "連体詞/*/*/*/*/*",
+              "upos": "DET",
+              "xpos": "連体詞",
+              "feats": {},
+              "start": 0,
+              "end": 2,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "この",
+              "ruby_text": "この",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "この"
+            },
+            {
+              "surface": "ドア",
+              "lemma": "ドア",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 2,
+              "end": 4,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "どあ",
+              "ruby_text": "ドア",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "どあ"
+            },
+            {
+              "surface": "は",
+              "lemma": "は",
+              "pos": "助詞/係助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 4,
+              "end": 5,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "は",
+              "ruby_text": "は",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "は"
+            },
+            {
+              "surface": "自動",
+              "lemma": "自動",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 5,
+              "end": 7,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "じどう",
+              "ruby_text": "自動[じどう]",
+              "ruby_spans": [
+                {
+                  "base": "自動",
+                  "reading": "じどう",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "じどう",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "ドア",
+              "lemma": "ドア",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 7,
+              "end": 9,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "どあ",
+              "ruby_text": "ドア",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "どあ"
+            },
+            {
+              "surface": "です",
+              "lemma": "です",
+              "pos": "助動詞/*/*/*/助動詞-デス/終止形-一般",
+              "upos": "AUX",
+              "xpos": "助動詞",
+              "feats": {},
+              "start": 9,
+              "end": 11,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "です",
+              "ruby_text": "です",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "です"
+            },
+            {
+              "surface": "。",
+              "lemma": "。",
+              "pos": "補助記号/句点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 11,
+              "end": 12,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "。",
+              "ruby_text": "。",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "。"
+            }
+          ],
+          "reading": "このどあはじどうどあです。",
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "warnings": [
+            "mediawiki ruby hints applied"
+          ]
+        },
+        "generated_tokens": [
+          {
+            "surface": "この",
+            "lemma": "この",
+            "pos": "連体詞/*/*/*/*/*",
+            "upos": "DET",
+            "xpos": "連体詞",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "この",
+            "ruby_text": "この",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "この"
+          },
+          {
+            "surface": "ドア",
+            "lemma": "ドア",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 2,
+            "end": 4,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "どあ",
+            "ruby_text": "ドア",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "どあ"
+          },
+          {
+            "surface": "は",
+            "lemma": "は",
+            "pos": "助詞/係助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 4,
+            "end": 5,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "は",
+            "ruby_text": "は",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "は"
+          },
+          {
+            "surface": "自動",
+            "lemma": "自動",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 5,
+            "end": 7,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "じどう",
+            "ruby_text": "自動[じどう]",
+            "ruby_spans": [
+              {
+                "base": "自動",
+                "reading": "じどう",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "じどう",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "ドア",
+            "lemma": "ドア",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 7,
+            "end": 9,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "どあ",
+            "ruby_text": "ドア",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "どあ"
+          },
+          {
+            "surface": "です",
+            "lemma": "です",
+            "pos": "助動詞/*/*/*/助動詞-デス/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 9,
+            "end": 11,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "です",
+            "ruby_text": "です",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "です"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 11,
+            "end": 12,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
+          }
+        ],
+        "generated_reading": "このどあはじどうどあです。",
+        "analyzer": "sudachipy_sudachidict_core_c",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-18T17:38:53Z",
+        "updated_utc": "2026-10-18T17:40:45Z",
+        "applied_utc": "2026-10-18T17:40:45Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-18T17:40:45Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -848,12 +1233,6 @@
       "えきのじどうかいさつをとおりました。",
       "このくるまはじどうぶれーきでとまります。",
       "このきかいはじどうでおゆをだします。"
-    ],
-    "en": [
-      "This door is automatic.",
-      "I went through the automatic ticket gate at the station.",
-      "This car stops with automatic braking.",
-      "This machine dispenses hot water automatically."
     ],
     "generation": {
       "generator": "vocomipedia_source_generator.py",
@@ -892,193 +1271,9 @@
         "parts_of_speech": "Noun which may take the genitive case particle 'no'; Noun"
       }
     },
-    "word_en": "automatic",
-    "word_es": "automático",
-    "word_fr": "automatique",
-    "word_de": "automatisch",
-    "word_it": "automatico",
-    "word_ko": "자동",
-    "word_zh-Hans": "自动",
-    "word_yue": "自動",
-    "word_ru": "автоматический",
-    "word_pt": "automático",
-    "word_he": "אוטומטי",
-    "word_tr": "otomatik",
-    "word_vi": "tự động",
-    "word_ar": "تلقائي",
-    "word_nl": "automatisch",
-    "word_uk": "автоматичний",
-    "word_hu": "automatikus",
-    "word_hi": "स्वचालित",
-    "word_pl": "automatyczny",
-    "word_el": "αυτόματος",
-    "word_nb": "automatisk",
-    "word_id": "otomatis",
-    "word_sv": "automatisk",
-    "word_ro": "automat",
-    "word_cs": "automatický",
-    "word_da": "automatisk",
-    "word_fi": "automaattinen",
-    "word_ja": "自動",
-    "ar": [
-      "هذا الباب آلي.",
-      "مررت من بوابة التذاكر الآلية في المحطة.",
-      "هذه السيارة تتوقف بالفرملة الآلية.",
-      "هذه الآلة تصب الماء الساخن تلقائيًا."
-    ],
-    "cs": [
-      "Tyto dveře jsou automatické.",
-      "Prošel jsem automatickou jízdenkovou bránou na nádraží.",
-      "Toto auto zastaví automatické brzdění.",
-      "Tenhle přístroj automaticky vydává horkou vodu."
-    ],
-    "da": [
-      "Denne dør er automatisk.",
-      "Jeg gik gennem stationens automatiske billetspærring.",
-      "Denne bil stopper med automatisk bremsning.",
-      "Denne maskine tapper varmt vand automatisk."
-    ],
-    "de": [
-      "Diese Tür ist automatisch.",
-      "Ich bin durch die automatische Fahrkartensperre am Bahnhof gegangen.",
-      "Dieses Auto hält mit automatischer Bremsung an.",
-      "Diese Maschine gibt automatisch heißes Wasser aus."
-    ],
-    "el": [
-      "Αυτή η πόρτα είναι αυτόματη.",
-      "Πέρασα από την αυτόματη πύλη εισιτηρίων στον σταθμό.",
-      "Αυτό το αυτοκίνητο σταματά με αυτόματο φρενάρισμα.",
-      "Αυτό το μηχάνημα βγάζει ζεστό νερό αυτόματα."
-    ],
-    "es": [
-      "Esta puerta es automática.",
-      "Pasé por el torniquete automático de la estación.",
-      "Este coche se detiene con frenado automático.",
-      "Esta máquina dispensa agua caliente automáticamente."
-    ],
-    "fi": [
-      "Tämä ovi on automaattinen.",
-      "Kuljin aseman automaattisen lipuntarkastuksen läpi.",
-      "Tämä auto pysähtyy automaattisella jarrutuksella.",
-      "Tämä laite annostelee kuumaa vettä automaattisesti."
-    ],
-    "fr": [
-      "Cette porte est automatique.",
-      "Je suis passé par le portique automatique de la gare.",
-      "Cette voiture s'arrête avec le freinage automatique.",
-      "Cette machine distribue automatiquement de l'eau chaude."
-    ],
-    "he": [
-      "הדלת הזאת אוטומטית.",
-      "עברתי דרך שער הכרטיסים האוטומטי בתחנה.",
-      "המכונית הזאת עוצרת עם בלימה אוטומטית.",
-      "המכונה הזאת מוציאה מים חמים אוטומטית."
-    ],
-    "hi": [
-      "यह दरवाज़ा स्वचालित है।",
-      "मैं स्टेशन के स्वचालित टिकट गेट से गुज़रा।",
-      "यह कार स्वचालित ब्रेकिंग से रुकती है।",
-      "यह मशीन अपने आप गर्म पानी देती है।"
-    ],
-    "hu": [
-      "Ez az ajtó automatikus.",
-      "Átmentem az állomás automata jegykapuján.",
-      "Ez az autó automatikus fékezéssel áll meg.",
-      "Ez a gép automatikusan forró vizet adagol."
-    ],
-    "id": [
-      "Pintu ini otomatis.",
-      "Saya melewati pintu tiket otomatis di stasiun.",
-      "Mobil ini berhenti dengan pengereman otomatis.",
-      "Mesin ini mengeluarkan air panas secara otomatis."
-    ],
-    "it": [
-      "Questa porta è automatica.",
-      "Sono passato dal tornello automatico della stazione.",
-      "Questa auto si ferma con la frenata automatica.",
-      "Questa macchina eroga acqua calda automaticamente."
-    ],
-    "ko": [
-      "이 문은 자동입니다.",
-      "역의 자동 개찰구를 통과했습니다.",
-      "이 차는 자동 브레이크로 멈춥니다.",
-      "이 기계는 자동으로 뜨거운 물을 내줍니다."
-    ],
-    "nb": [
-      "Denne døren er automatisk.",
-      "Jeg gikk gjennom den automatiske billettkontrollen på stasjonen.",
-      "Denne bilen stopper med automatisk bremsing.",
-      "Denne maskinen tapper varmt vann automatisk."
-    ],
-    "nl": [
-      "Deze deur is automatisch.",
-      "Ik ging door de automatische kaartcontrole op het station.",
-      "Deze auto stopt met automatisch remmen.",
-      "Dit apparaat geeft automatisch heet water."
-    ],
-    "pl": [
-      "Te drzwi są automatyczne.",
-      "Przeszedłem przez automatyczną bramkę na stacji.",
-      "Ten samochód zatrzymuje się dzięki automatycznemu hamowaniu.",
-      "Ta maszyna automatycznie wydaje gorącą wodę."
-    ],
-    "pt": [
-      "Esta porta é automática.",
-      "Passei pela catraca automática da estação.",
-      "Este carro para com a frenagem automática.",
-      "Esta máquina despeja água quente automaticamente."
-    ],
-    "ro": [
-      "Această ușă este automată.",
-      "Am trecut prin poarta automată de bilete din gară.",
-      "Această mașină se oprește cu frânare automată.",
-      "Acest aparat dă apă fierbinte automat."
-    ],
-    "ru": [
-      "Эта дверь автоматическая.",
-      "Я прошёл через автоматический турникет на станции.",
-      "Эта машина останавливается с помощью автоматического торможения.",
-      "Этот аппарат автоматически подаёт горячую воду."
-    ],
-    "sv": [
-      "Den här dörren är automatisk.",
-      "Jag gick genom den automatiska biljettspärren på stationen.",
-      "Den här bilen stannar med automatisk bromsning.",
-      "Den här maskinen tappar upp varmt vatten automatiskt."
-    ],
-    "tr": [
-      "Bu kapı otomatik.",
-      "İstasyondaki otomatik bilet kapısından geçtim.",
-      "Bu araba otomatik frenleme ile durur.",
-      "Bu makine sıcak suyu otomatik olarak verir."
-    ],
-    "uk": [
-      "Ці двері автоматичні.",
-      "Я пройшов через автоматичний турнікет на станції.",
-      "Ця машина зупиняється за допомогою автоматичного гальмування.",
-      "Цей апарат автоматично подає гарячу воду."
-    ],
-    "vi": [
-      "Cánh cửa này tự động.",
-      "Tôi đã đi qua cổng soát vé tự động ở ga.",
-      "Chiếc xe này dừng lại bằng phanh tự động.",
-      "Máy này tự động lấy nước nóng."
-    ],
-    "yue": [
-      "呢道門係自動嘅。",
-      "我喺車站行過自動閘機。",
-      "呢架車會用自動煞車停低。",
-      "呢部機會自動出熱水。"
-    ],
-    "zh-Hans": [
-      "这扇门是自动的。",
-      "我通过了车站的自动检票口。",
-      "这辆车会自动刹车停下。",
-      "这台机器会自动出热水。"
-    ],
     "pos_analysis": [
       {
-        "sentence": "このドアは自動です。",
+        "sentence": "このドアは自動ドアです。",
         "tokens": [
           {
             "surface": "この",
@@ -1148,9 +1343,26 @@
                 "length": 2
               }
             ],
-            "ruby_confidence": "medium",
+            "ruby_confidence": "reviewed",
             "furigana": "じどう",
+            "ruby_source": "mediawiki_sentence_ruby",
             "is_main_word": true
+          },
+          {
+            "surface": "ドア",
+            "lemma": "ドア",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 7,
+            "end": 9,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "どあ",
+            "ruby_text": "ドア",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "どあ"
           },
           {
             "surface": "です",
@@ -1159,8 +1371,8 @@
             "upos": "AUX",
             "xpos": "助動詞",
             "feats": {},
-            "start": 7,
-            "end": 9,
+            "start": 9,
+            "end": 11,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "です",
             "ruby_text": "です",
@@ -1175,8 +1387,8 @@
             "upos": "PUNCT",
             "xpos": "補助記号",
             "feats": {},
-            "start": 9,
-            "end": 10,
+            "start": 11,
+            "end": 12,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "。",
             "ruby_text": "。",
@@ -1726,6 +1938,196 @@
         ],
         "difficulty_aggregated": null
       }
+    ],
+    "word_en": "automatic",
+    "word_es": "automático",
+    "word_fr": "automatique",
+    "word_de": "automatisch",
+    "word_it": "automatico",
+    "word_ko": "자동",
+    "word_zh-Hans": "自动",
+    "word_yue": "自動",
+    "word_ru": "автоматический",
+    "word_pt": "automático",
+    "word_he": "אוטומטי",
+    "word_tr": "otomatik",
+    "word_vi": "tự động",
+    "word_ar": "تلقائي",
+    "word_nl": "automatisch",
+    "word_uk": "автоматичний",
+    "word_hu": "automatikus",
+    "word_hi": "स्वचालित",
+    "word_pl": "automatyczny",
+    "word_el": "αυτόματος",
+    "word_nb": "automatisk",
+    "word_id": "otomatis",
+    "word_sv": "automatisk",
+    "word_ro": "automat",
+    "word_cs": "automatický",
+    "word_da": "automatisk",
+    "word_fi": "automaattinen",
+    "word_ja": "自動",
+    "ar": [
+      "هذا الباب آلي.",
+      "مررت من بوابة التذاكر الآلية في المحطة.",
+      "هذه السيارة تتوقف بالفرملة الآلية.",
+      "هذه الآلة تصب الماء الساخن تلقائيًا."
+    ],
+    "cs": [
+      "Tyto dveře jsou automatické.",
+      "Prošel jsem automatickou jízdenkovou bránou na nádraží.",
+      "Toto auto zastaví díky automatickému brzdění.",
+      "Tenhle přístroj automaticky vydává horkou vodu."
+    ],
+    "da": [
+      "Denne dør er automatisk.",
+      "Jeg gik gennem stationens automatiske billetspærring.",
+      "Denne bil stopper med automatisk bremsning.",
+      "Denne maskine tapper varmt vand automatisk."
+    ],
+    "de": [
+      "Diese Tür ist automatisch.",
+      "Ich bin durch die automatische Fahrkartensperre am Bahnhof gegangen.",
+      "Dieses Auto hält mit automatischer Bremsung an.",
+      "Diese Maschine gibt automatisch heißes Wasser aus."
+    ],
+    "el": [
+      "Αυτή η πόρτα είναι αυτόματη.",
+      "Πέρασα από την αυτόματη πύλη εισιτηρίων στον σταθμό.",
+      "Αυτό το αυτοκίνητο σταματά με αυτόματο φρενάρισμα.",
+      "Αυτό το μηχάνημα βγάζει ζεστό νερό αυτόματα."
+    ],
+    "en": [
+      "This door is automatic.",
+      "I went through the automatic ticket gate at the station.",
+      "This car stops with automatic braking.",
+      "This machine dispenses hot water automatically."
+    ],
+    "es": [
+      "Esta puerta es automática.",
+      "Pasé por el torniquete automático de la estación.",
+      "Este coche se detiene con frenado automático.",
+      "Esta máquina dispensa agua caliente automáticamente."
+    ],
+    "fi": [
+      "Tämä ovi on automaattinen.",
+      "Kuljin aseman automaattisen lipuntarkastuksen läpi.",
+      "Tämä auto pysähtyy automaattisella jarrutuksella.",
+      "Tämä laite annostelee kuumaa vettä automaattisesti."
+    ],
+    "fr": [
+      "Cette porte est automatique.",
+      "Je suis passé par le portique automatique de la gare.",
+      "Cette voiture s'arrête avec le freinage automatique.",
+      "Cette machine distribue automatiquement de l'eau chaude."
+    ],
+    "he": [
+      "הדלת הזאת אוטומטית.",
+      "עברתי דרך שער הכרטיסים האוטומטי בתחנה.",
+      "המכונית הזאת עוצרת עם בלימה אוטומטית.",
+      "המכונה הזאת מוציאה מים חמים אוטומטית."
+    ],
+    "hi": [
+      "यह दरवाज़ा स्वचालित है।",
+      "मैं स्टेशन के स्वचालित टिकट गेट से गुज़रा।",
+      "यह कार स्वचालित ब्रेकिंग से रुकती है।",
+      "यह मशीन अपने आप गर्म पानी देती है।"
+    ],
+    "hu": [
+      "Ez az ajtó automatikus.",
+      "Átmentem az állomás automata jegykapuján.",
+      "Ez az autó automatikus fékezéssel áll meg.",
+      "Ez a gép automatikusan forró vizet adagol."
+    ],
+    "id": [
+      "Pintu ini otomatis.",
+      "Saya melewati pintu tiket otomatis di stasiun.",
+      "Mobil ini berhenti dengan pengereman otomatis.",
+      "Mesin ini mengeluarkan air panas secara otomatis."
+    ],
+    "it": [
+      "Questa porta è automatica.",
+      "Sono passato dal tornello automatico della stazione.",
+      "Questa auto si ferma con la frenata automatica.",
+      "Questa macchina eroga acqua calda automaticamente."
+    ],
+    "ko": [
+      "이 문은 자동입니다.",
+      "역의 자동 개찰구를 통과했습니다.",
+      "이 차는 자동 브레이크로 멈춥니다.",
+      "이 기계는 자동으로 뜨거운 물을 내줍니다."
+    ],
+    "nb": [
+      "Denne døren er automatisk.",
+      "Jeg gikk gjennom den automatiske billettkontrollen på stasjonen.",
+      "Denne bilen stopper med automatisk bremsing.",
+      "Denne maskinen tapper varmt vann automatisk."
+    ],
+    "nl": [
+      "Deze deur is automatisch.",
+      "Ik ging door de automatische kaartcontrole op het station.",
+      "Deze auto stopt met automatisch remmen.",
+      "Dit apparaat geeft automatisch heet water."
+    ],
+    "pl": [
+      "Te drzwi są automatyczne.",
+      "Przeszedłem przez automatyczną bramkę na stacji.",
+      "Ten samochód zatrzymuje się dzięki automatycznemu hamowaniu.",
+      "Ta maszyna automatycznie wydaje gorącą wodę."
+    ],
+    "pt": [
+      "Esta porta é automática.",
+      "Passei pela catraca automática da estação.",
+      "Este carro para com a frenagem automática.",
+      "Esta máquina despeja água quente automaticamente."
+    ],
+    "ro": [
+      "Această ușă este automată.",
+      "Am trecut prin poarta automată de bilete din gară.",
+      "Această mașină se oprește cu frânare automată.",
+      "Acest aparat dă apă fierbinte automat."
+    ],
+    "ru": [
+      "Эта дверь автоматическая.",
+      "Я прошёл через автоматический турникет на станции.",
+      "Эта машина останавливается с помощью автоматического торможения.",
+      "Этот аппарат автоматически подаёт горячую воду."
+    ],
+    "sv": [
+      "Den här dörren är automatisk.",
+      "Jag gick genom den automatiska biljettspärren på stationen.",
+      "Den här bilen stannar med automatisk bromsning.",
+      "Den här maskinen tappar upp varmt vatten automatiskt."
+    ],
+    "tr": [
+      "Bu kapı otomatik.",
+      "İstasyondaki otomatik bilet kapısından geçtim.",
+      "Bu araba otomatik frenleme ile durur.",
+      "Bu makine sıcak suyu otomatik olarak verir."
+    ],
+    "uk": [
+      "Ці двері автоматичні.",
+      "Я пройшов через автоматичний турнікет на станції.",
+      "Ця машина зупиняється за допомогою автоматичного гальмування.",
+      "Цей апарат автоматично подає гарячу воду."
+    ],
+    "vi": [
+      "Cánh cửa này tự động.",
+      "Tôi đã đi qua cổng soát vé tự động ở ga.",
+      "Chiếc xe này dừng lại bằng phanh tự động.",
+      "Máy này tự động cung cấp nước nóng."
+    ],
+    "yue": [
+      "呢道門係自動嘅。",
+      "我喺車站行過自動閘機。",
+      "呢架車會用自動煞車停低。",
+      "呢部機會自動出熱水。"
+    ],
+    "zh-Hans": [
+      "这扇门是自动的。",
+      "我通过了车站的自动检票口。",
+      "这辆车会自动刹车停下。",
+      "这台机器会自动出热水。"
     ]
   }
 }

@@ -11,7 +11,7 @@
   "order": 1574,
   "part_of_speech": [],
   "glosses": {
-    "en": "Mr; Mrs; Ms; Miss",
+    "en": "honorific title after a surname; Mr./Ms.",
     "es": "Sr./Sra.",
     "fr": "M./Mme",
     "de": "Herr/Frau",
@@ -408,32 +408,32 @@
       "target": "佐藤氏が先に帰った。",
       "reading": "さとうしがさきにかえった。",
       "translations": {
-        "en": "Ms. Sato left early.",
-        "ar": "غادرت السيدة ساتو مبكرًا.",
-        "cs": "Paní Sato odešla dřív.",
-        "da": "Fru Sato gik tidligt.",
-        "de": "Frau Sato ging früh nach Hause.",
-        "el": "Η κα. Σάτο έφυγε νωρίς.",
-        "es": "La señora Sato se fue temprano.",
-        "fi": "Rouva Sato lähti aikaisin.",
-        "fr": "Mme Sato est partie tôt.",
-        "he": "גברת סאטו יצאה מוקדם.",
-        "hi": "सुश्री सातो जल्दी चली गईं।",
-        "hu": "Sato asszony korán ment haza.",
-        "id": "Bu Sato pulang lebih awal.",
-        "it": "La signora Sato è andata via presto.",
+        "en": "Ms. Sato went home first.",
+        "ar": "عادت السيدة ساتو إلى المنزل أولاً.",
+        "cs": "Paní Sato odešla jako první.",
+        "da": "Fru Sato gik hjem først.",
+        "de": "Frau Sato ging zuerst nach Hause.",
+        "el": "Η κυρία Σάτο έφυγε πρώτη.",
+        "es": "La señora Sato fue la primera en irse.",
+        "fi": "Rouva Sato lähti ensin.",
+        "fr": "Mme Sato est partie la première.",
+        "he": "גברת סאטו הלכה הביתה ראשונה.",
+        "hi": "सुश्री सातो सबसे पहले घर गईं।",
+        "hu": "Sato asszony ment haza először.",
+        "id": "Bu Sato pulang lebih dulu.",
+        "it": "La signora Sato è stata la prima ad andarsene.",
         "ko": "사토 씨가 먼저 돌아갔다.",
-        "nb": "Fru Sato gikk hjem tidlig.",
-        "nl": "Mevrouw Sato ging vroeg weg.",
-        "pl": "Pani Sato wyszła wcześniej.",
-        "pt": "A senhora Sato foi embora cedo.",
-        "ro": "Doamna Sato a plecat devreme.",
-        "ru": "Госпожа Сато ушла рано.",
-        "sv": "Fru Sato gick hem tidigt.",
-        "tr": "Bayan Sato erken ayrıldı.",
-        "uk": "Пані Сато пішла раніше.",
-        "vi": "Bà Sato đã về sớm.",
-        "yue": "佐藤小姐早咗走。",
+        "nb": "Fru Sato gikk hjem først.",
+        "nl": "Mevrouw Sato ging als eerste weg.",
+        "pl": "Pani Sato wyszła jako pierwsza.",
+        "pt": "A senhora Sato foi a primeira a ir embora.",
+        "ro": "Doamna Sato a plecat prima.",
+        "ru": "Госпожа Сато ушла первой.",
+        "sv": "Fru Sato gick hem först.",
+        "tr": "Bayan Sato ilk ayrıldı.",
+        "uk": "Пані Сато пішла першою.",
+        "vi": "Bà Sato về trước.",
+        "yue": "佐藤小姐先走咗。",
         "zh-Hans": "佐藤女士先走了。"
       },
       "tokens": [
@@ -599,7 +599,7 @@
     },
     {
       "target": "私は鈴木氏を知っている。",
-      "reading": "わたくしはすずきしをしっている。",
+      "reading": "わたしはすずきしをしっている。",
       "translations": {
         "en": "I know Mr. Suzuki.",
         "ar": "أنا أعرف السيد سوزوكي.",
@@ -640,18 +640,19 @@
           "start": 0,
           "end": 1,
           "analyzer": "sudachipy_sudachidict_core_c",
-          "reading_kana": "わたくし",
-          "ruby_text": "私[わたくし]",
+          "reading_kana": "わたし",
+          "ruby_text": "私[わたし]",
           "ruby_spans": [
             {
               "base": "私",
-              "reading": "わたくし",
+              "reading": "わたし",
               "start": 0,
               "length": 1
             }
           ],
-          "ruby_confidence": "high",
-          "furigana": "わたくし"
+          "ruby_confidence": "reviewed",
+          "furigana": "わたし",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "は",
@@ -689,8 +690,9 @@
               "length": 2
             }
           ],
-          "ruby_confidence": "medium",
-          "furigana": "すずき"
+          "ruby_confidence": "reviewed",
+          "furigana": "すずき",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "氏",
@@ -712,8 +714,9 @@
               "length": 1
             }
           ],
-          "ruby_confidence": "high",
+          "ruby_confidence": "reviewed",
           "furigana": "し",
+          "ruby_source": "mediawiki_sentence_ruby",
           "is_main_word": true
         },
         {
@@ -752,8 +755,9 @@
               "length": 1
             }
           ],
-          "ruby_confidence": "high",
-          "furigana": "しっ"
+          "ruby_confidence": "reviewed",
+          "furigana": "しっ",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "て",
@@ -818,8 +822,487 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-13T08:34:54Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:Ja n3/e69a16e9ea7ffbd2",
+      "revision_id": 80122,
+      "parent_revision_id": 68418,
+      "revision_timestamp_utc": "2026-10-13T08:34:54Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Describe 氏 as a gender-neutral honorific suffix, preserve 先に as “first,” and use the ordinary reading of 私.",
+      "pulled_utc": "2026-10-18T17:39:18Z",
+      "applied_utc": "2026-10-18T17:39:57Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-b5974131c8bdfd63",
+        "status": "applied",
+        "type": "ruby_update",
+        "item_id": "ja_n3:e69a16e9ea7ffbd2",
+        "pack_code": "ja_n3",
+        "entry_id": "氏",
+        "language": "ja",
+        "sentence_index": 4,
+        "old_sentence": "私は鈴木氏を知っている。",
+        "old_translations": {
+          "en": "I know Mr. Suzuki.",
+          "ar": "أنا أعرف السيد سوزوكي.",
+          "cs": "Znám pana Suzukiho.",
+          "da": "Jeg kender hr. Suzuki.",
+          "de": "Ich kenne Herrn Suzuki.",
+          "el": "Γνωρίζω τον κ. Σουζούκι.",
+          "es": "Conozco al señor Suzuki.",
+          "fi": "Tunnen herra Suzukin.",
+          "fr": "Je connais M. Suzuki.",
+          "he": "אני מכיר את מר סוזוקי.",
+          "hi": "मैं श्री सुज़ुकी को जानता हूँ।",
+          "hu": "Ismerem Suzuki urat.",
+          "id": "Saya kenal Tn. Suzuki.",
+          "it": "Conosco il signor Suzuki.",
+          "ko": "나는 스즈키 씨를 알고 있다.",
+          "nb": "Jeg kjenner herr Suzuki.",
+          "nl": "Ik ken meneer Suzuki.",
+          "pl": "Znam pana Suzuki.",
+          "pt": "Conheço o senhor Suzuki.",
+          "ro": "Îl cunosc pe domnul Suzuki.",
+          "ru": "Я знаю господина Судзуки.",
+          "sv": "Jag känner herr Suzuki.",
+          "tr": "Bay Suzuki'yi tanıyorum.",
+          "uk": "Я знаю пана Судзукі.",
+          "vi": "Tôi biết ông Suzuki.",
+          "yue": "我識得鈴木先生。",
+          "zh-Hans": "我认识铃木先生。"
+        },
+        "proposed_sentence": "私は鈴木氏を知っている。",
+        "proposed_translations": {
+          "en": "I know Mr. Suzuki.",
+          "ar": "أنا أعرف السيد سوزوكي.",
+          "cs": "Znám pana Suzukiho.",
+          "da": "Jeg kender hr. Suzuki.",
+          "de": "Ich kenne Herrn Suzuki.",
+          "el": "Γνωρίζω τον κ. Σουζούκι.",
+          "es": "Conozco al señor Suzuki.",
+          "fi": "Tunnen herra Suzukin.",
+          "fr": "Je connais M. Suzuki.",
+          "he": "אני מכיר את מר סוזוקי.",
+          "hi": "मैं श्री सुज़ुकी को जानता हूँ।",
+          "hu": "Ismerem Suzuki urat.",
+          "id": "Saya kenal Tn. Suzuki.",
+          "it": "Conosco il signor Suzuki.",
+          "ko": "나는 스즈키 씨를 알고 있다.",
+          "nb": "Jeg kjenner herr Suzuki.",
+          "nl": "Ik ken meneer Suzuki.",
+          "pl": "Znam pana Suzuki.",
+          "pt": "Conheço o senhor Suzuki.",
+          "ro": "Îl cunosc pe domnul Suzuki.",
+          "ru": "Я знаю господина Судзуки.",
+          "sv": "Jag känner herr Suzuki.",
+          "tr": "Bay Suzuki'yi tanıyorum.",
+          "uk": "Я знаю пана Судзукі.",
+          "vi": "Tôi biết ông Suzuki.",
+          "yue": "我識得鈴木先生。",
+          "zh-Hans": "我认识铃木先生。"
+        },
+        "old_ruby_source": "私[わたくし]は鈴木[すずき]氏[し]を知[し]っている。",
+        "proposed_ruby_source": "私[わたし]は鈴木[すずき]氏[し]を知[し]っている。",
+        "old_japanese": "私は鈴木氏を知っている。",
+        "old_english": "I know Mr. Suzuki.",
+        "proposed_japanese": "私は鈴木氏を知っている。",
+        "proposed_english": "I know Mr. Suzuki.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "ja",
+          "sentence": "私は鈴木氏を知っている。",
+          "tokens": [
+            {
+              "surface": "私",
+              "lemma": "私",
+              "pos": "代名詞/*/*/*/*/*",
+              "upos": "PRON",
+              "xpos": "代名詞",
+              "feats": {},
+              "start": 0,
+              "end": 1,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "わたし",
+              "ruby_text": "私[わたし]",
+              "ruby_spans": [
+                {
+                  "base": "私",
+                  "reading": "わたし",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "わたし",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "は",
+              "lemma": "は",
+              "pos": "助詞/係助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 1,
+              "end": 2,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "は",
+              "ruby_text": "は",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "は"
+            },
+            {
+              "surface": "鈴木",
+              "lemma": "鈴木",
+              "pos": "名詞/固有名詞/人名/姓/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 2,
+              "end": 4,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "すずき",
+              "ruby_text": "鈴木[すずき]",
+              "ruby_spans": [
+                {
+                  "base": "鈴木",
+                  "reading": "すずき",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "すずき",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "氏",
+              "lemma": "氏",
+              "pos": "接尾辞/名詞的/一般/*/*/*",
+              "upos": "SUFFIX",
+              "xpos": "接尾辞",
+              "feats": {},
+              "start": 4,
+              "end": 5,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "し",
+              "ruby_text": "氏[し]",
+              "ruby_spans": [
+                {
+                  "base": "氏",
+                  "reading": "し",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "し",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "を",
+              "lemma": "を",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 5,
+              "end": 6,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "を",
+              "ruby_text": "を",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "を"
+            },
+            {
+              "surface": "知っ",
+              "lemma": "知る",
+              "pos": "動詞/一般/*/*/五段-ラ行/連用形-促音便",
+              "upos": "VERB",
+              "xpos": "動詞",
+              "feats": {},
+              "start": 6,
+              "end": 8,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "しっ",
+              "ruby_text": "知[し]っ",
+              "ruby_spans": [
+                {
+                  "base": "知",
+                  "reading": "し",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "しっ",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "て",
+              "lemma": "て",
+              "pos": "助詞/接続助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 8,
+              "end": 9,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "て",
+              "ruby_text": "て",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "て"
+            },
+            {
+              "surface": "いる",
+              "lemma": "いる",
+              "pos": "動詞/非自立可能/*/*/上一段-ア行/終止形-一般",
+              "upos": "VERB",
+              "xpos": "動詞",
+              "feats": {},
+              "start": 9,
+              "end": 11,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "いる",
+              "ruby_text": "いる",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "いる"
+            },
+            {
+              "surface": "。",
+              "lemma": "。",
+              "pos": "補助記号/句点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 11,
+              "end": 12,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "。",
+              "ruby_text": "。",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "。"
+            }
+          ],
+          "reading": "わたしはすずきしをしっている。",
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "warnings": [
+            "mediawiki ruby hints applied"
+          ]
+        },
+        "generated_tokens": [
+          {
+            "surface": "私",
+            "lemma": "私",
+            "pos": "代名詞/*/*/*/*/*",
+            "upos": "PRON",
+            "xpos": "代名詞",
+            "feats": {},
+            "start": 0,
+            "end": 1,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "わたし",
+            "ruby_text": "私[わたし]",
+            "ruby_spans": [
+              {
+                "base": "私",
+                "reading": "わたし",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "わたし",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "は",
+            "lemma": "は",
+            "pos": "助詞/係助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 1,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "は",
+            "ruby_text": "は",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "は"
+          },
+          {
+            "surface": "鈴木",
+            "lemma": "鈴木",
+            "pos": "名詞/固有名詞/人名/姓/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 2,
+            "end": 4,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "すずき",
+            "ruby_text": "鈴木[すずき]",
+            "ruby_spans": [
+              {
+                "base": "鈴木",
+                "reading": "すずき",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "すずき",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "氏",
+            "lemma": "氏",
+            "pos": "接尾辞/名詞的/一般/*/*/*",
+            "upos": "SUFFIX",
+            "xpos": "接尾辞",
+            "feats": {},
+            "start": 4,
+            "end": 5,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "し",
+            "ruby_text": "氏[し]",
+            "ruby_spans": [
+              {
+                "base": "氏",
+                "reading": "し",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "し",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "を",
+            "lemma": "を",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 5,
+            "end": 6,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "を",
+            "ruby_text": "を",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "を"
+          },
+          {
+            "surface": "知っ",
+            "lemma": "知る",
+            "pos": "動詞/一般/*/*/五段-ラ行/連用形-促音便",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 6,
+            "end": 8,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "しっ",
+            "ruby_text": "知[し]っ",
+            "ruby_spans": [
+              {
+                "base": "知",
+                "reading": "し",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "しっ",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "て",
+            "lemma": "て",
+            "pos": "助詞/接続助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 8,
+            "end": 9,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "て",
+            "ruby_text": "て",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "て"
+          },
+          {
+            "surface": "いる",
+            "lemma": "いる",
+            "pos": "動詞/非自立可能/*/*/上一段-ア行/終止形-一般",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 9,
+            "end": 11,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "いる",
+            "ruby_text": "いる",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "いる"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 11,
+            "end": 12,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
+          }
+        ],
+        "generated_reading": "わたしはすずきしをしっている。",
+        "analyzer": "sudachipy_sudachidict_core_c",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-18T17:39:18Z",
+        "updated_utc": "2026-10-18T17:40:52Z",
+        "applied_utc": "2026-10-18T17:40:52Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-18T17:40:52Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -843,13 +1326,7 @@
       "たなかしはかいぎにきた。",
       "やまだしにでんわした。",
       "さとうしがさきにかえった。",
-      "わたしはすずきしをしっている。"
-    ],
-    "en": [
-      "Mr. Tanaka came to the meeting.",
-      "I called Mr. Yamada.",
-      "Ms. Sato left early.",
-      "I know Mr. Suzuki."
+      "わたくしはすずきしをしっている。"
     ],
     "generation": {
       "generator": "vocomipedia_source_generator.py",
@@ -888,190 +1365,6 @@
         "parts_of_speech": "Suffix"
       }
     },
-    "word_en": "Mr; Mrs; Ms; Miss",
-    "word_es": "Sr./Sra.",
-    "word_fr": "M./Mme",
-    "word_de": "Herr/Frau",
-    "word_it": "Sig./Sig.ra",
-    "word_ko": "씨",
-    "word_zh-Hans": "先生/女士",
-    "word_yue": "先生/女士",
-    "word_ru": "г-н/г-жа",
-    "word_pt": "Sr./Sra.",
-    "word_he": "מר/גב׳",
-    "word_tr": "Bay/Bayan",
-    "word_vi": "ông/bà",
-    "word_ar": "السيد/السيدة",
-    "word_nl": "dhr./mevr.",
-    "word_uk": "пан/пані",
-    "word_hu": "úr/hölgy",
-    "word_hi": "श्री/श्रीमती",
-    "word_pl": "pan/pani",
-    "word_el": "κ./κα",
-    "word_nb": "herr/fru",
-    "word_id": "Tn./Ny.",
-    "word_sv": "herr/fru",
-    "word_ro": "dl./dna.",
-    "word_cs": "p./pí",
-    "word_da": "hr./fru",
-    "word_fi": "herra/rouva",
-    "word_ja": "氏",
-    "ar": [
-      "جاء السيد تانكا إلى الاجتماع.",
-      "اتصلت بالسيد يامادا.",
-      "غادرت السيدة ساتو مبكرًا.",
-      "أنا أعرف السيد سوزوكي."
-    ],
-    "cs": [
-      "Pan Tanaka přišel na schůzku.",
-      "Zavolal jsem panu Yamadovi.",
-      "Paní Sato odešla dřív.",
-      "Znám pana Suzukiho."
-    ],
-    "da": [
-      "Hr. Tanaka kom til mødet.",
-      "Jeg ringede til hr. Yamada.",
-      "Fru Sato gik tidligt.",
-      "Jeg kender hr. Suzuki."
-    ],
-    "de": [
-      "Herr Tanaka kam zum Meeting.",
-      "Ich habe Herrn Yamada angerufen.",
-      "Frau Sato ging früh nach Hause.",
-      "Ich kenne Herrn Suzuki."
-    ],
-    "el": [
-      "Ο κ. Τανακα ήρθε στη συνάντηση.",
-      "Τηλεφώνησα στον κ. Γιαμαντά.",
-      "Η κα. Σάτο έφυγε νωρίς.",
-      "Γνωρίζω τον κ. Σουζούκι."
-    ],
-    "es": [
-      "El señor Tanaka vino a la reunión.",
-      "Llamé al señor Yamada.",
-      "La señora Sato se fue temprano.",
-      "Conozco al señor Suzuki."
-    ],
-    "fi": [
-      "Herra Tanaka tuli kokoukseen.",
-      "Soitin herra Yamadalle.",
-      "Rouva Sato lähti aikaisin.",
-      "Tunnen herra Suzukin."
-    ],
-    "fr": [
-      "M. Tanaka est venu à la réunion.",
-      "J'ai appelé M. Yamada.",
-      "Mme Sato est partie tôt.",
-      "Je connais M. Suzuki."
-    ],
-    "he": [
-      "מר טנקה הגיע לפגישה.",
-      "התקשרתי למר ימאדה.",
-      "גברת סאטו יצאה מוקדם.",
-      "אני מכיר את מר סוזוקי."
-    ],
-    "hi": [
-      "श्री तनाका बैठक में आए।",
-      "मैंने श्री यामादा को फोन किया।",
-      "सुश्री सातो जल्दी चली गईं।",
-      "मैं श्री सुज़ुकी को जानता हूँ।"
-    ],
-    "hu": [
-      "Tanaka úr eljött a megbeszélésre.",
-      "Felhívtam Yamada urat.",
-      "Sato asszony korán ment haza.",
-      "Ismerem Suzuki urat."
-    ],
-    "id": [
-      "Tn. Tanaka datang ke rapat.",
-      "Saya menelepon Tn. Yamada.",
-      "Bu Sato pulang lebih awal.",
-      "Saya kenal Tn. Suzuki."
-    ],
-    "it": [
-      "Il signor Tanaka è venuto alla riunione.",
-      "Ho chiamato il signor Yamada.",
-      "La signora Sato è andata via presto.",
-      "Conosco il signor Suzuki."
-    ],
-    "ko": [
-      "다나카 씨가 회의에 왔다.",
-      "야마다 씨에게 전화했다.",
-      "사토 씨가 먼저 돌아갔다.",
-      "나는 스즈키 씨를 알고 있다."
-    ],
-    "nb": [
-      "Herr Tanaka kom til møtet.",
-      "Jeg ringte herr Yamada.",
-      "Fru Sato gikk hjem tidlig.",
-      "Jeg kjenner herr Suzuki."
-    ],
-    "nl": [
-      "De heer Tanaka kwam naar de vergadering.",
-      "Ik heb meneer Yamada gebeld.",
-      "Mevrouw Sato ging vroeg weg.",
-      "Ik ken meneer Suzuki."
-    ],
-    "pl": [
-      "Pan Tanaka przyszedł na spotkanie.",
-      "Zadzwoniłem do pana Yamada.",
-      "Pani Sato wyszła wcześniej.",
-      "Znam pana Suzuki."
-    ],
-    "pt": [
-      "O senhor Tanaka veio à reunião.",
-      "Liguei para o senhor Yamada.",
-      "A senhora Sato foi embora cedo.",
-      "Conheço o senhor Suzuki."
-    ],
-    "ro": [
-      "Domnul Tanaka a venit la ședință.",
-      "L-am sunat pe domnul Yamada.",
-      "Doamna Sato a plecat devreme.",
-      "Îl cunosc pe domnul Suzuki."
-    ],
-    "ru": [
-      "Господин Танака пришёл на собрание.",
-      "Я позвонил господину Ямаде.",
-      "Госпожа Сато ушла рано.",
-      "Я знаю господина Судзуки."
-    ],
-    "sv": [
-      "Herr Tanaka kom till mötet.",
-      "Jag ringde herr Yamada.",
-      "Fru Sato gick hem tidigt.",
-      "Jag känner herr Suzuki."
-    ],
-    "tr": [
-      "Bay Tanaka toplantıya geldi.",
-      "Bay Yamada'yı aradım.",
-      "Bayan Sato erken ayrıldı.",
-      "Bay Suzuki'yi tanıyorum."
-    ],
-    "uk": [
-      "Пан Танака прийшов на зустріч.",
-      "Я подзвонив пану Ямаді.",
-      "Пані Сато пішла раніше.",
-      "Я знаю пана Судзукі."
-    ],
-    "vi": [
-      "Ông Tanaka đã đến cuộc họp.",
-      "Tôi đã gọi cho ông Yamada.",
-      "Bà Sato đã về sớm.",
-      "Tôi biết ông Suzuki."
-    ],
-    "yue": [
-      "田中先生嚟咗開會。",
-      "我打咗電話畀山田先生。",
-      "佐藤小姐早咗走。",
-      "我識得鈴木先生。"
-    ],
-    "zh-Hans": [
-      "田中先生来开会了。",
-      "我给山田先生打了电话。",
-      "佐藤女士先走了。",
-      "我认识铃木先生。"
-    ],
     "pos_analysis": [
       {
         "sentence": "田中氏は会議に来た。",
@@ -1552,18 +1845,19 @@
             "start": 0,
             "end": 1,
             "analyzer": "sudachipy_sudachidict_core_c",
-            "reading_kana": "わたくし",
-            "ruby_text": "私[わたくし]",
+            "reading_kana": "わたし",
+            "ruby_text": "私[わたし]",
             "ruby_spans": [
               {
                 "base": "私",
-                "reading": "わたくし",
+                "reading": "わたし",
                 "start": 0,
                 "length": 1
               }
             ],
-            "ruby_confidence": "high",
-            "furigana": "わたくし"
+            "ruby_confidence": "reviewed",
+            "furigana": "わたし",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "は",
@@ -1601,8 +1895,9 @@
                 "length": 2
               }
             ],
-            "ruby_confidence": "medium",
-            "furigana": "すずき"
+            "ruby_confidence": "reviewed",
+            "furigana": "すずき",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "氏",
@@ -1624,8 +1919,9 @@
                 "length": 1
               }
             ],
-            "ruby_confidence": "high",
+            "ruby_confidence": "reviewed",
             "furigana": "し",
+            "ruby_source": "mediawiki_sentence_ruby",
             "is_main_word": true
           },
           {
@@ -1664,8 +1960,9 @@
                 "length": 1
               }
             ],
-            "ruby_confidence": "high",
-            "furigana": "しっ"
+            "ruby_confidence": "reviewed",
+            "furigana": "しっ",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "て",
@@ -1718,6 +2015,196 @@
         ],
         "difficulty_aggregated": null
       }
+    ],
+    "word_en": "honorific title after a surname; Mr./Ms.",
+    "word_es": "Sr./Sra.",
+    "word_fr": "M./Mme",
+    "word_de": "Herr/Frau",
+    "word_it": "Sig./Sig.ra",
+    "word_ko": "씨",
+    "word_zh-Hans": "先生/女士",
+    "word_yue": "先生/女士",
+    "word_ru": "г-н/г-жа",
+    "word_pt": "Sr./Sra.",
+    "word_he": "מר/גב׳",
+    "word_tr": "Bay/Bayan",
+    "word_vi": "ông/bà",
+    "word_ar": "السيد/السيدة",
+    "word_nl": "dhr./mevr.",
+    "word_uk": "пан/пані",
+    "word_hu": "úr/hölgy",
+    "word_hi": "श्री/श्रीमती",
+    "word_pl": "pan/pani",
+    "word_el": "κ./κα",
+    "word_nb": "herr/fru",
+    "word_id": "Tn./Ny.",
+    "word_sv": "herr/fru",
+    "word_ro": "dl./dna.",
+    "word_cs": "p./pí",
+    "word_da": "hr./fru",
+    "word_fi": "herra/rouva",
+    "word_ja": "氏",
+    "ar": [
+      "جاء السيد تانكا إلى الاجتماع.",
+      "اتصلت بالسيد يامادا.",
+      "عادت السيدة ساتو إلى المنزل أولاً.",
+      "أنا أعرف السيد سوزوكي."
+    ],
+    "cs": [
+      "Pan Tanaka přišel na schůzku.",
+      "Zavolal jsem panu Yamadovi.",
+      "Paní Sato odešla jako první.",
+      "Znám pana Suzukiho."
+    ],
+    "da": [
+      "Hr. Tanaka kom til mødet.",
+      "Jeg ringede til hr. Yamada.",
+      "Fru Sato gik hjem først.",
+      "Jeg kender hr. Suzuki."
+    ],
+    "de": [
+      "Herr Tanaka kam zum Meeting.",
+      "Ich habe Herrn Yamada angerufen.",
+      "Frau Sato ging zuerst nach Hause.",
+      "Ich kenne Herrn Suzuki."
+    ],
+    "el": [
+      "Ο κ. Τανακα ήρθε στη συνάντηση.",
+      "Τηλεφώνησα στον κ. Γιαμαντά.",
+      "Η κυρία Σάτο έφυγε πρώτη.",
+      "Γνωρίζω τον κ. Σουζούκι."
+    ],
+    "en": [
+      "Mr. Tanaka came to the meeting.",
+      "I called Mr. Yamada.",
+      "Ms. Sato went home first.",
+      "I know Mr. Suzuki."
+    ],
+    "es": [
+      "El señor Tanaka vino a la reunión.",
+      "Llamé al señor Yamada.",
+      "La señora Sato fue la primera en irse.",
+      "Conozco al señor Suzuki."
+    ],
+    "fi": [
+      "Herra Tanaka tuli kokoukseen.",
+      "Soitin herra Yamadalle.",
+      "Rouva Sato lähti ensin.",
+      "Tunnen herra Suzukin."
+    ],
+    "fr": [
+      "M. Tanaka est venu à la réunion.",
+      "J'ai appelé M. Yamada.",
+      "Mme Sato est partie la première.",
+      "Je connais M. Suzuki."
+    ],
+    "he": [
+      "מר טנקה הגיע לפגישה.",
+      "התקשרתי למר ימאדה.",
+      "גברת סאטו הלכה הביתה ראשונה.",
+      "אני מכיר את מר סוזוקי."
+    ],
+    "hi": [
+      "श्री तनाका बैठक में आए।",
+      "मैंने श्री यामादा को फोन किया।",
+      "सुश्री सातो सबसे पहले घर गईं।",
+      "मैं श्री सुज़ुकी को जानता हूँ।"
+    ],
+    "hu": [
+      "Tanaka úr eljött a megbeszélésre.",
+      "Felhívtam Yamada urat.",
+      "Sato asszony ment haza először.",
+      "Ismerem Suzuki urat."
+    ],
+    "id": [
+      "Tn. Tanaka datang ke rapat.",
+      "Saya menelepon Tn. Yamada.",
+      "Bu Sato pulang lebih dulu.",
+      "Saya kenal Tn. Suzuki."
+    ],
+    "it": [
+      "Il signor Tanaka è venuto alla riunione.",
+      "Ho chiamato il signor Yamada.",
+      "La signora Sato è stata la prima ad andarsene.",
+      "Conosco il signor Suzuki."
+    ],
+    "ko": [
+      "다나카 씨가 회의에 왔다.",
+      "야마다 씨에게 전화했다.",
+      "사토 씨가 먼저 돌아갔다.",
+      "나는 스즈키 씨를 알고 있다."
+    ],
+    "nb": [
+      "Herr Tanaka kom til møtet.",
+      "Jeg ringte herr Yamada.",
+      "Fru Sato gikk hjem først.",
+      "Jeg kjenner herr Suzuki."
+    ],
+    "nl": [
+      "De heer Tanaka kwam naar de vergadering.",
+      "Ik heb meneer Yamada gebeld.",
+      "Mevrouw Sato ging als eerste weg.",
+      "Ik ken meneer Suzuki."
+    ],
+    "pl": [
+      "Pan Tanaka przyszedł na spotkanie.",
+      "Zadzwoniłem do pana Yamada.",
+      "Pani Sato wyszła jako pierwsza.",
+      "Znam pana Suzuki."
+    ],
+    "pt": [
+      "O senhor Tanaka veio à reunião.",
+      "Liguei para o senhor Yamada.",
+      "A senhora Sato foi a primeira a ir embora.",
+      "Conheço o senhor Suzuki."
+    ],
+    "ro": [
+      "Domnul Tanaka a venit la ședință.",
+      "L-am sunat pe domnul Yamada.",
+      "Doamna Sato a plecat prima.",
+      "Îl cunosc pe domnul Suzuki."
+    ],
+    "ru": [
+      "Господин Танака пришёл на собрание.",
+      "Я позвонил господину Ямаде.",
+      "Госпожа Сато ушла первой.",
+      "Я знаю господина Судзуки."
+    ],
+    "sv": [
+      "Herr Tanaka kom till mötet.",
+      "Jag ringde herr Yamada.",
+      "Fru Sato gick hem först.",
+      "Jag känner herr Suzuki."
+    ],
+    "tr": [
+      "Bay Tanaka toplantıya geldi.",
+      "Bay Yamada'yı aradım.",
+      "Bayan Sato ilk ayrıldı.",
+      "Bay Suzuki'yi tanıyorum."
+    ],
+    "uk": [
+      "Пан Танака прийшов на зустріч.",
+      "Я подзвонив пану Ямаді.",
+      "Пані Сато пішла першою.",
+      "Я знаю пана Судзукі."
+    ],
+    "vi": [
+      "Ông Tanaka đã đến cuộc họp.",
+      "Tôi đã gọi cho ông Yamada.",
+      "Bà Sato về trước.",
+      "Tôi biết ông Suzuki."
+    ],
+    "yue": [
+      "田中先生嚟咗開會。",
+      "我打咗電話畀山田先生。",
+      "佐藤小姐先走咗。",
+      "我識得鈴木先生。"
+    ],
+    "zh-Hans": [
+      "田中先生来开会了。",
+      "我给山田先生打了电话。",
+      "佐藤女士先走了。",
+      "我认识铃木先生。"
     ]
   }
 }

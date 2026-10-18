@@ -212,10 +212,10 @@
       "difficulty": 4.83
     },
     {
-      "target": "Der Laden bleibt offen bis acht.",
+      "target": "Der Laden bleibt bis acht Uhr offen.",
       "reading": "/deːɐ̯ ˈlaːdn̩ blaɪpt ˈɔfn̩ bɪs axt/",
       "translations": {
-        "de": "Der Laden bleibt offen bis acht.",
+        "de": "Der Laden bleibt bis acht Uhr offen.",
         "ipa": "/deːɐ̯ ˈlaːdn̩ blaɪpt ˈɔfn̩ bɪs axt/",
         "en": "The shop stays open until eight.",
         "es": "La tienda está abierta hasta las ocho.",
@@ -248,58 +248,92 @@
       "tokens": [
         {
           "surface": "Der",
-          "surface_en": "the",
-          "furigana": "[deːɐ]",
-          "pos": "DET",
           "lemma": "der",
-          "explanation": "Definite article, masculine singular nominative, determines the subject noun 'Laden'.",
-          "difficulty": 2
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "ART",
+          "feats": {},
+          "start": 0,
+          "end": 3,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "Laden",
-          "surface_en": "store",
-          "furigana": "[ˈlaːdən]",
-          "pos": "NOUN",
           "lemma": "Laden",
-          "explanation": "Noun, masculine singular; head of the subject noun phrase.",
-          "difficulty": 7
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 4,
+          "end": 9,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "bleibt",
-          "surface_en": "remains",
-          "furigana": "[blaɪ̯pt]",
-          "pos": "VERB",
           "lemma": "bleiben",
-          "explanation": "Finite main verb (3rd person singular present) expressing continued state; takes a predicative complement.",
-          "difficulty": 7
-        },
-        {
-          "surface": "offen",
-          "surface_en": "open",
-          "furigana": "[ˈɔfən]",
-          "pos": "ADJ",
-          "lemma": "offen",
-          "explanation": "Predicative adjective complement to 'bleibt', indicating the store's state.",
-          "difficulty": 7,
-          "is_main_word": true
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VVFIN",
+          "feats": {},
+          "start": 10,
+          "end": 16,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "bis",
-          "surface_en": "until",
-          "furigana": "[bɪs]",
-          "pos": "ADP",
           "lemma": "bis",
-          "explanation": "Preposition introducing a temporal limit.",
-          "difficulty": 4
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "APPR",
+          "feats": {},
+          "start": 17,
+          "end": 20,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "acht.",
-          "surface_en": "eight",
-          "furigana": "[axt]",
-          "pos": "NUM",
+          "surface": "acht",
           "lemma": "acht",
-          "explanation": "Cardinal number functioning as a time expression; complement of 'bis'.",
-          "difficulty": 7
+          "pos": "NUM",
+          "upos": "NUM",
+          "xpos": "CARD",
+          "feats": {},
+          "start": 21,
+          "end": 25,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "Uhr",
+          "lemma": "Uhr",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 26,
+          "end": 29,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "offen",
+          "lemma": "offen",
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "PTKVZ",
+          "feats": {},
+          "start": 30,
+          "end": 35,
+          "analyzer": "spacy_de_core_news_lg",
+          "is_main_word": true
+        },
+        {
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 35,
+          "end": 36,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 5.67
@@ -403,19 +437,311 @@
     "content_reviewers": [
       "mediawiki-visible-revision"
     ],
-    "last_reviewed_utc": "2026-06-12T11:46:39Z",
-    "approval_source": "mediawiki_visible_revision",
+    "last_reviewed_utc": "2026-10-14T22:57:06Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
     "wiki": {
       "title": "Item:De a2/e2e6f0aec6057d86",
-      "revision_id": 14436,
-      "parent_revision_id": 1168,
-      "revision_timestamp_utc": "2026-06-12T11:46:39Z",
-      "revision_user": "VocomiBot",
-      "revision_comment": "Sync de_a2 item offen",
-      "pulled_utc": "2026-06-22T08:19:07Z",
-      "applied_utc": "2026-06-22T08:19:14Z",
+      "revision_id": 85752,
+      "parent_revision_id": 59438,
+      "revision_timestamp_utc": "2026-10-14T22:57:06Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Content review: German and translation corrections",
+      "pulled_utc": "2026-10-17T07:00:43Z",
+      "applied_utc": "2026-10-17T07:00:49Z",
       "applied_by": "vocomipedia-apply-pulled"
-    }
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-074683c6420c2fad",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_a2:e2e6f0aec6057d86",
+        "pack_code": "de_a2",
+        "entry_id": "offen",
+        "language": "de",
+        "sentence_index": 3,
+        "old_sentence": "Der Laden bleibt offen bis acht.",
+        "old_translations": {
+          "de": "Der Laden bleibt offen bis acht.",
+          "ipa": "/deːɐ̯ ˈlaːdn̩ blaɪpt ˈɔfn̩ bɪs axt/",
+          "en": "The shop stays open until eight.",
+          "es": "La tienda está abierta hasta las ocho.",
+          "fr": "Le magasin reste ouvert jusqu’à huit heures.",
+          "it": "Il negozio resta aperto fino alle otto.",
+          "ko": "가게는 여덟 시까지 영업해요.",
+          "zh-Hans": "商店营业到八点。",
+          "yue": "舖頭開到八點。",
+          "ru": "Магазин открыт до восьми.",
+          "pt": "A loja fica aberta até às oito.",
+          "he": "החנות פתוחה עד שמונה.",
+          "tr": "Dükkan sekize kadar açık.",
+          "vi": "Cửa hàng mở đến tám giờ.",
+          "ar": "المتجر مفتوح حتى الساعة الثامنة.",
+          "nl": "De winkel is open tot acht uur.",
+          "uk": "Магазин працює до восьмої.",
+          "hu": "A bolt nyolcig nyitva van.",
+          "hi": "दुकान आठ बजे तक खुली रहती है.",
+          "pl": "Sklep jest czynny do ósmej.",
+          "el": "Το μαγαζί μένει ανοιχτό μέχρι τις οκτώ.",
+          "nb": "Butikken er åpen til klokka åtte.",
+          "id": "Toko buka sampai jam delapan.",
+          "sv": "Butiken har öppet till klockan åtta.",
+          "ro": "Magazinul este deschis până la ora opt.",
+          "cs": "Obchod má otevřeno do osmi.",
+          "da": "Butikken har åbent til klokken otte.",
+          "fi": "Kauppa on auki kahdeksaan asti.",
+          "ja": "お店は八時まで開いています。"
+        },
+        "proposed_sentence": "Der Laden bleibt bis acht Uhr offen.",
+        "proposed_translations": {
+          "de": "Der Laden bleibt bis acht Uhr offen.",
+          "ipa": "/deːɐ̯ ˈlaːdn̩ blaɪpt ˈɔfn̩ bɪs axt/",
+          "en": "The shop stays open until eight.",
+          "es": "La tienda está abierta hasta las ocho.",
+          "fr": "Le magasin reste ouvert jusqu’à huit heures.",
+          "it": "Il negozio resta aperto fino alle otto.",
+          "ko": "가게는 여덟 시까지 영업해요.",
+          "zh-Hans": "商店营业到八点。",
+          "yue": "舖頭開到八點。",
+          "ru": "Магазин открыт до восьми.",
+          "pt": "A loja fica aberta até às oito.",
+          "he": "החנות פתוחה עד שמונה.",
+          "tr": "Dükkan sekize kadar açık.",
+          "vi": "Cửa hàng mở đến tám giờ.",
+          "ar": "المتجر مفتوح حتى الساعة الثامنة.",
+          "nl": "De winkel is open tot acht uur.",
+          "uk": "Магазин працює до восьмої.",
+          "hu": "A bolt nyolcig nyitva van.",
+          "hi": "दुकान आठ बजे तक खुली रहती है.",
+          "pl": "Sklep jest czynny do ósmej.",
+          "el": "Το μαγαζί μένει ανοιχτό μέχρι τις οκτώ.",
+          "nb": "Butikken er åpen til klokka åtte.",
+          "id": "Toko buka sampai jam delapan.",
+          "sv": "Butiken har öppet till klockan åtta.",
+          "ro": "Magazinul este deschis până la ora opt.",
+          "cs": "Obchod má otevřeno do osmi.",
+          "da": "Butikken har åbent til klokken otte.",
+          "fi": "Kauppa on auki kahdeksaan asti.",
+          "ja": "お店は八時まで開いています。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Der Laden bleibt bis acht Uhr offen.",
+        "old_japanese": "Der Laden bleibt offen bis acht.",
+        "old_english": "The shop stays open until eight.",
+        "proposed_japanese": "Der Laden bleibt bis acht Uhr offen.",
+        "proposed_english": "The shop stays open until eight.",
+        "reason": "Use natural German word order and include ‘Uhr’ in the time expression.",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Der Laden bleibt bis acht Uhr offen.",
+          "tokens": [
+            {
+              "surface": "Der",
+              "lemma": "der",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "ART",
+              "feats": {},
+              "start": 0,
+              "end": 3,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Laden",
+              "lemma": "Laden",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 4,
+              "end": 9,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "bleibt",
+              "lemma": "bleiben",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVFIN",
+              "feats": {},
+              "start": 10,
+              "end": 16,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "bis",
+              "lemma": "bis",
+              "pos": "ADP",
+              "upos": "ADP",
+              "xpos": "APPR",
+              "feats": {},
+              "start": 17,
+              "end": 20,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "acht",
+              "lemma": "acht",
+              "pos": "NUM",
+              "upos": "NUM",
+              "xpos": "CARD",
+              "feats": {},
+              "start": 21,
+              "end": 25,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Uhr",
+              "lemma": "Uhr",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 26,
+              "end": 29,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "offen",
+              "lemma": "offen",
+              "pos": "ADV",
+              "upos": "ADV",
+              "xpos": "PTKVZ",
+              "feats": {},
+              "start": 30,
+              "end": 35,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 35,
+              "end": 36,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Der",
+            "lemma": "der",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Laden",
+            "lemma": "Laden",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 4,
+            "end": 9,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "bleibt",
+            "lemma": "bleiben",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 10,
+            "end": 16,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "bis",
+            "lemma": "bis",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 17,
+            "end": 20,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "acht",
+            "lemma": "acht",
+            "pos": "NUM",
+            "upos": "NUM",
+            "xpos": "CARD",
+            "feats": {},
+            "start": 21,
+            "end": 25,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Uhr",
+            "lemma": "Uhr",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 26,
+            "end": 29,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "offen",
+            "lemma": "offen",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "PTKVZ",
+            "feats": {},
+            "start": 30,
+            "end": 35,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 35,
+            "end": 36,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:00:43Z",
+        "updated_utc": "2026-10-17T07:00:59Z",
+        "applied_utc": "2026-10-17T07:00:59Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:00:59Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -546,62 +872,96 @@
         "difficulty_aggregated": 4.83
       },
       {
-        "sentence": "Der Laden bleibt offen bis acht.",
+        "sentence": "Der Laden bleibt bis acht Uhr offen.",
         "tokens": [
           {
             "surface": "Der",
-            "surface_en": "the",
-            "furigana": "[deːɐ]",
-            "pos": "DET",
             "lemma": "der",
-            "explanation": "Definite article, masculine singular nominative, determines the subject noun 'Laden'.",
-            "difficulty": 2
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "Laden",
-            "surface_en": "store",
-            "furigana": "[ˈlaːdən]",
-            "pos": "NOUN",
             "lemma": "Laden",
-            "explanation": "Noun, masculine singular; head of the subject noun phrase.",
-            "difficulty": 7
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 4,
+            "end": 9,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "bleibt",
-            "surface_en": "remains",
-            "furigana": "[blaɪ̯pt]",
-            "pos": "VERB",
             "lemma": "bleiben",
-            "explanation": "Finite main verb (3rd person singular present) expressing continued state; takes a predicative complement.",
-            "difficulty": 7
-          },
-          {
-            "surface": "offen",
-            "surface_en": "open",
-            "furigana": "[ˈɔfən]",
-            "pos": "ADJ",
-            "lemma": "offen",
-            "explanation": "Predicative adjective complement to 'bleibt', indicating the store's state.",
-            "difficulty": 7,
-            "is_main_word": true
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 10,
+            "end": 16,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "bis",
-            "surface_en": "until",
-            "furigana": "[bɪs]",
-            "pos": "ADP",
             "lemma": "bis",
-            "explanation": "Preposition introducing a temporal limit.",
-            "difficulty": 4
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 17,
+            "end": 20,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "acht.",
-            "surface_en": "eight",
-            "furigana": "[axt]",
-            "pos": "NUM",
+            "surface": "acht",
             "lemma": "acht",
-            "explanation": "Cardinal number functioning as a time expression; complement of 'bis'.",
-            "difficulty": 7
+            "pos": "NUM",
+            "upos": "NUM",
+            "xpos": "CARD",
+            "feats": {},
+            "start": 21,
+            "end": 25,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Uhr",
+            "lemma": "Uhr",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 26,
+            "end": 29,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "offen",
+            "lemma": "offen",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "PTKVZ",
+            "feats": {},
+            "start": 30,
+            "end": 35,
+            "analyzer": "spacy_de_core_news_lg",
+            "is_main_word": true
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 35,
+            "end": 36,
+            "analyzer": "spacy_de_core_news_lg"
           }
         ],
         "difficulty_aggregated": 5.67

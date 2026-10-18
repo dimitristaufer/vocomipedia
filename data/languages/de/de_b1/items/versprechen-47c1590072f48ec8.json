@@ -13,7 +13,7 @@
     "Verb"
   ],
   "glosses": {
-    "en": "to promise; to misspeak",
+    "en": "to promise; to misspeak (reflexive)",
     "es": "prometer",
     "fr": "promettre",
     "it": "promettere",
@@ -305,12 +305,12 @@
       "difficulty": 6
     },
     {
-      "target": "Das Angebot kann viel versprechen.",
+      "target": "Das Angebot verspricht viel.",
       "reading": "/das ˈanɡəboːt kan fiːl fɛɐ̯ˈʃpʁɛçən/",
       "translations": {
-        "de": "Das Angebot kann viel versprechen.",
+        "de": "Das Angebot verspricht viel.",
         "ipa": "/das ˈanɡəboːt kan fiːl fɛɐ̯ˈʃpʁɛçən/",
-        "en": "The offer can promise a lot.",
+        "en": "The offer promises a lot.",
         "es": "Esta oferta promete mucho.",
         "fr": "Cette offre promet beaucoup.",
         "it": "Quest'offerta promette molto.",
@@ -341,49 +341,59 @@
       "tokens": [
         {
           "surface": "Das",
-          "surface_en": "the",
-          "furigana": "[das]",
-          "pos": "DET",
           "lemma": "der",
-          "explanation": "Definite article, nominative singular neuter; determiner of the subject noun 'Angebot'.",
-          "difficulty": 2
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "ART",
+          "feats": {},
+          "start": 0,
+          "end": 3,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "Angebot",
-          "surface_en": "offer",
-          "furigana": "[ˈaŋɡəboːt]",
-          "pos": "NOUN",
           "lemma": "Angebot",
-          "explanation": "Common noun, neuter nominative singular; head of the subject NP.",
-          "difficulty": 10
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 4,
+          "end": 11,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "kann",
-          "surface_en": "can",
-          "furigana": "[kan]",
-          "pos": "AUX",
-          "lemma": "können",
-          "explanation": "Finite present modal auxiliary; selects infinitive 'versprechen'.",
-          "difficulty": 7
+          "surface": "verspricht",
+          "lemma": "versprechen",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VVFIN",
+          "feats": {},
+          "start": 12,
+          "end": 22,
+          "analyzer": "spacy_de_core_news_lg",
+          "is_main_word": true
         },
         {
           "surface": "viel",
-          "surface_en": "much",
-          "furigana": "[fiːl]",
-          "pos": "ADV",
           "lemma": "viel",
-          "explanation": "Degree adverb modifying the verb ('versprechen'); indicates a high amount/extent.",
-          "difficulty": 7
+          "pos": "PRON",
+          "upos": "PRON",
+          "xpos": "PIS",
+          "feats": {},
+          "start": 23,
+          "end": 27,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "versprechen",
-          "surface_en": "promise",
-          "furigana": "[fɛɐ̯ˈʃpʁɛçn̩]",
-          "pos": "VERB",
-          "lemma": "versprechen",
-          "explanation": "Bare infinitive lexical verb complement of the modal 'kann'; here used with an intransitive/idiomatic reading ('promise a lot').",
-          "difficulty": 10,
-          "is_main_word": true
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 27,
+          "end": 28,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 7.2
@@ -400,8 +410,248 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-15T04:47:21Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:De b1/47c1590072f48ec8",
+      "revision_id": 84836,
+      "parent_revision_id": 18312,
+      "revision_timestamp_utc": "2026-10-15T04:47:21Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Correct the awkward German construction, naturalize its English translation, and mark the reflexive form in the English gloss.",
+      "pulled_utc": "2026-10-17T07:06:38Z",
+      "applied_utc": "2026-10-17T07:06:54Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-b85addf9cb6e4007",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_b1:47c1590072f48ec8",
+        "pack_code": "de_b1",
+        "entry_id": "versprechen",
+        "language": "de",
+        "sentence_index": 4,
+        "old_sentence": "Das Angebot kann viel versprechen.",
+        "old_translations": {
+          "de": "Das Angebot kann viel versprechen.",
+          "ipa": "/das ˈanɡəboːt kan fiːl fɛɐ̯ˈʃpʁɛçən/",
+          "en": "The offer can promise a lot.",
+          "es": "Esta oferta promete mucho.",
+          "fr": "Cette offre promet beaucoup.",
+          "it": "Quest'offerta promette molto.",
+          "ko": "그 제안은 기대가 돼.",
+          "zh-Hans": "这个优惠看起来很有看头。",
+          "yue": "呢個優惠好有睇頭。",
+          "ru": "Это предложение многообещающее.",
+          "pt": "Esta oferta promete muito.",
+          "he": "ההצעה נראית מבטיחה.",
+          "tr": "Bu teklif çok şey vadediyor.",
+          "vi": "Ưu đãi này rất hứa hẹn.",
+          "ar": "هذا العرض يبدو واعدًا.",
+          "nl": "Dit aanbod belooft veel.",
+          "uk": "Ця пропозиція багатообіцяльна.",
+          "hu": "Ez az ajánlat sokat ígér.",
+          "hi": "यह ऑफर बहुत कुछ वादा करता है।",
+          "pl": "Ta oferta wiele obiecuje.",
+          "el": "Αυτή η προσφορά υπόσχεται πολλά.",
+          "nb": "Dette tilbudet lover mye.",
+          "id": "Penawaran ini menjanjikan banyak.",
+          "sv": "Det här erbjudandet lovar mycket.",
+          "ro": "Această ofertă promite mult.",
+          "cs": "Tato nabídka vypadá slibně.",
+          "da": "Dette tilbud ser lovende ud.",
+          "fi": "Tämä tarjous vaikuttaa lupaavalta.",
+          "ja": "この提案は期待できそうだ。"
+        },
+        "proposed_sentence": "Das Angebot verspricht viel.",
+        "proposed_translations": {
+          "de": "Das Angebot verspricht viel.",
+          "ipa": "/das ˈanɡəboːt kan fiːl fɛɐ̯ˈʃpʁɛçən/",
+          "en": "The offer promises a lot.",
+          "es": "Esta oferta promete mucho.",
+          "fr": "Cette offre promet beaucoup.",
+          "it": "Quest'offerta promette molto.",
+          "ko": "그 제안은 기대가 돼.",
+          "zh-Hans": "这个优惠看起来很有看头。",
+          "yue": "呢個優惠好有睇頭。",
+          "ru": "Это предложение многообещающее.",
+          "pt": "Esta oferta promete muito.",
+          "he": "ההצעה נראית מבטיחה.",
+          "tr": "Bu teklif çok şey vadediyor.",
+          "vi": "Ưu đãi này rất hứa hẹn.",
+          "ar": "هذا العرض يبدو واعدًا.",
+          "nl": "Dit aanbod belooft veel.",
+          "uk": "Ця пропозиція багатообіцяльна.",
+          "hu": "Ez az ajánlat sokat ígér.",
+          "hi": "यह ऑफर बहुत कुछ वादा करता है।",
+          "pl": "Ta oferta wiele obiecuje.",
+          "el": "Αυτή η προσφορά υπόσχεται πολλά.",
+          "nb": "Dette tilbudet lover mye.",
+          "id": "Penawaran ini menjanjikan banyak.",
+          "sv": "Det här erbjudandet lovar mycket.",
+          "ro": "Această ofertă promite mult.",
+          "cs": "Tato nabídka vypadá slibně.",
+          "da": "Dette tilbud ser lovende ud.",
+          "fi": "Tämä tarjous vaikuttaa lupaavalta.",
+          "ja": "この提案は期待できそうだ。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Das Angebot verspricht viel.",
+        "old_japanese": "Das Angebot kann viel versprechen.",
+        "old_english": "The offer can promise a lot.",
+        "proposed_japanese": "Das Angebot verspricht viel.",
+        "proposed_english": "The offer promises a lot.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Das Angebot verspricht viel.",
+          "tokens": [
+            {
+              "surface": "Das",
+              "lemma": "der",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "ART",
+              "feats": {},
+              "start": 0,
+              "end": 3,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Angebot",
+              "lemma": "Angebot",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 4,
+              "end": 11,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "verspricht",
+              "lemma": "versprechen",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVFIN",
+              "feats": {},
+              "start": 12,
+              "end": 22,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "viel",
+              "lemma": "viel",
+              "pos": "PRON",
+              "upos": "PRON",
+              "xpos": "PIS",
+              "feats": {},
+              "start": 23,
+              "end": 27,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 27,
+              "end": 28,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Das",
+            "lemma": "der",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Angebot",
+            "lemma": "Angebot",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 4,
+            "end": 11,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "verspricht",
+            "lemma": "versprechen",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 12,
+            "end": 22,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "viel",
+            "lemma": "viel",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PIS",
+            "feats": {},
+            "start": 23,
+            "end": 27,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 27,
+            "end": 28,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:06:38Z",
+        "updated_utc": "2026-10-17T07:07:06Z",
+        "applied_utc": "2026-10-17T07:07:06Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:07:06Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -413,34 +663,6 @@
     "word": "versprechen",
     "word_reading": "",
     "word_label": "Verb",
-    "word_en": "to promise; to misspeak",
-    "word_es": "prometer",
-    "word_fr": "promettre",
-    "word_it": "promettere",
-    "word_ko": "약속하다",
-    "word_zh-Hans": "答应",
-    "word_yue": "應承",
-    "word_ru": "обещать",
-    "word_pt": "prometer",
-    "word_he": "להבטיח",
-    "word_tr": "söz vermek",
-    "word_vi": "hứa",
-    "word_ar": "وَعَدَ",
-    "word_nl": "beloven",
-    "word_uk": "обіцяти",
-    "word_hu": "ígér",
-    "word_hi": "वादा करना",
-    "word_pl": "obiecać",
-    "word_el": "υπόσχομαι",
-    "word_nb": "love",
-    "word_id": "berjanji",
-    "word_sv": "lova",
-    "word_ro": "promite",
-    "word_cs": "slíbit",
-    "word_da": "love",
-    "word_fi": "luvata",
-    "word_ja": "約束する",
-    "word_de": "versprechen",
     "comic_difficulty": 6.26,
     "jp": [
       "Ich kann dir etwas versprechen.",
@@ -453,24 +675,6 @@
       "/eːɐ̯ vɪl nɪçt tsuː fiːl fɛɐ̯ˈʃpʁɛçən/",
       "/duː mʊst miːɐ̯ ˈɛtvas fɛɐ̯ˈʃpʁɛçən/",
       "/das ˈanɡəboːt kan fiːl fɛɐ̯ˈʃpʁɛçən/"
-    ],
-    "de": [
-      "Ich kann dir etwas versprechen.",
-      "Er will nicht zu viel versprechen.",
-      "Du musst mir etwas versprechen.",
-      "Das Angebot kann viel versprechen."
-    ],
-    "ipa": [
-      "/ɪç kan diːɐ̯ ˈɛtvas fɛɐ̯ˈʃpʁɛçən/",
-      "/eːɐ̯ vɪl nɪçt tsuː fiːl fɛɐ̯ˈʃpʁɛçən/",
-      "/duː mʊst miːɐ̯ ˈɛtvas fɛɐ̯ˈʃpʁɛçən/",
-      "/das ˈanɡəboːt kan fiːl fɛɐ̯ˈʃpʁɛçən/"
-    ],
-    "en": [
-      "I can promise you something.",
-      "He doesn't want to promise too much.",
-      "You have to promise me something.",
-      "The offer can promise a lot."
     ],
     "pos_analysis": [
       {
@@ -639,189 +843,103 @@
         "difficulty_aggregated": 6
       },
       {
-        "sentence": "Das Angebot kann viel versprechen.",
+        "sentence": "Das Angebot verspricht viel.",
         "tokens": [
           {
             "surface": "Das",
-            "surface_en": "the",
-            "furigana": "[das]",
-            "pos": "DET",
             "lemma": "der",
-            "explanation": "Definite article, nominative singular neuter; determiner of the subject noun 'Angebot'.",
-            "difficulty": 2
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "Angebot",
-            "surface_en": "offer",
-            "furigana": "[ˈaŋɡəboːt]",
-            "pos": "NOUN",
             "lemma": "Angebot",
-            "explanation": "Common noun, neuter nominative singular; head of the subject NP.",
-            "difficulty": 10
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 4,
+            "end": 11,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "kann",
-            "surface_en": "can",
-            "furigana": "[kan]",
-            "pos": "AUX",
-            "lemma": "können",
-            "explanation": "Finite present modal auxiliary; selects infinitive 'versprechen'.",
-            "difficulty": 7
+            "surface": "verspricht",
+            "lemma": "versprechen",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 12,
+            "end": 22,
+            "analyzer": "spacy_de_core_news_lg",
+            "is_main_word": true
           },
           {
             "surface": "viel",
-            "surface_en": "much",
-            "furigana": "[fiːl]",
-            "pos": "ADV",
             "lemma": "viel",
-            "explanation": "Degree adverb modifying the verb ('versprechen'); indicates a high amount/extent.",
-            "difficulty": 7
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PIS",
+            "feats": {},
+            "start": 23,
+            "end": 27,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "versprechen",
-            "surface_en": "promise",
-            "furigana": "[fɛɐ̯ˈʃpʁɛçn̩]",
-            "pos": "VERB",
-            "lemma": "versprechen",
-            "explanation": "Bare infinitive lexical verb complement of the modal 'kann'; here used with an intransitive/idiomatic reading ('promise a lot').",
-            "difficulty": 10,
-            "is_main_word": true
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 27,
+            "end": 28,
+            "analyzer": "spacy_de_core_news_lg"
           }
         ],
         "difficulty_aggregated": 7.2
       }
     ],
-    "es": [
-      "Puedo prometerte algo.",
-      "No quiere prometer demasiado.",
-      "Tienes que prometerme algo.",
-      "Esta oferta promete mucho."
-    ],
-    "fr": [
-      "Je peux te promettre quelque chose.",
-      "Il ne veut pas trop promettre.",
-      "Tu dois me promettre quelque chose.",
-      "Cette offre promet beaucoup."
-    ],
-    "it": [
-      "Posso prometterti qualcosa.",
-      "Non vuole promettere troppo.",
-      "Devi promettermi una cosa.",
-      "Quest'offerta promette molto."
-    ],
-    "ko": [
-      "너한테 한 가지 약속할 수 있어.",
-      "그는 너무 많은 것을 약속하고 싶지 않아.",
-      "나한테 한 가지 약속해야 해.",
-      "그 제안은 기대가 돼."
-    ],
-    "zh-Hans": [
-      "我可以答应你一件事。",
-      "他不想承诺太多。",
-      "你得答应我一件事。",
-      "这个优惠看起来很有看头。"
-    ],
-    "yue": [
-      "我可以答應你一件事。",
-      "佢唔想應承太多。",
-      "你要應承我一件事。",
-      "呢個優惠好有睇頭。"
-    ],
-    "ru": [
-      "Я могу пообещать тебе кое-что.",
-      "Он не хочет слишком много обещать.",
-      "Ты должен пообещать мне кое-что.",
-      "Это предложение многообещающее."
-    ],
-    "pt": [
-      "Posso te prometer uma coisa.",
-      "Ele não quer prometer demais.",
-      "Você tem que me prometer uma coisa.",
-      "Esta oferta promete muito."
-    ],
-    "he": [
-      "אני יכול להבטיח לך משהו.",
-      "הוא לא רוצה להבטיח יותר מדי.",
-      "אתה צריך להבטיח לי משהו.",
-      "ההצעה נראית מבטיחה."
-    ],
-    "tr": [
-      "Sana bir şey vaat edebilirim.",
-      "Çok fazla söz vermek istemiyor.",
-      "Bana bir söz vermek zorundasın.",
-      "Bu teklif çok şey vadediyor."
-    ],
-    "vi": [
-      "Tôi có thể hứa với bạn một điều.",
-      "Anh ấy không muốn hứa quá nhiều.",
-      "Bạn phải hứa với tôi một điều.",
-      "Ưu đãi này rất hứa hẹn."
-    ],
+    "word_POS": "Verb",
+    "entry_id": "versprechen",
+    "word_en": "to promise; to misspeak (reflexive)",
+    "word_es": "prometer",
+    "word_fr": "promettre",
+    "word_it": "promettere",
+    "word_ko": "약속하다",
+    "word_zh-Hans": "答应",
+    "word_yue": "應承",
+    "word_ru": "обещать",
+    "word_pt": "prometer",
+    "word_he": "להבטיח",
+    "word_tr": "söz vermek",
+    "word_vi": "hứa",
+    "word_ar": "وَعَدَ",
+    "word_nl": "beloven",
+    "word_uk": "обіцяти",
+    "word_hu": "ígér",
+    "word_hi": "वादा करना",
+    "word_pl": "obiecać",
+    "word_el": "υπόσχομαι",
+    "word_nb": "love",
+    "word_id": "berjanji",
+    "word_sv": "lova",
+    "word_ro": "promite",
+    "word_cs": "slíbit",
+    "word_da": "love",
+    "word_fi": "luvata",
+    "word_ja": "約束する",
+    "word_de": "versprechen",
     "ar": [
       "أستطيع أن أعدك بشيء.",
       "لا يريد أن يعد بالكثير.",
       "عليك أن تعدني بشيء.",
       "هذا العرض يبدو واعدًا."
-    ],
-    "nl": [
-      "Ik kan je iets beloven.",
-      "Hij wil niet te veel beloven.",
-      "Je moet me iets beloven.",
-      "Dit aanbod belooft veel."
-    ],
-    "uk": [
-      "Я можу пообіцяти тобі дещо.",
-      "Він не хоче обіцяти занадто багато.",
-      "Ти маєш пообіцяти мені дещо.",
-      "Ця пропозиція багатообіцяльна."
-    ],
-    "hu": [
-      "Ígérhetek neked valamit.",
-      "Nem akar túl sokat ígérni.",
-      "Meg kell ígérned nekem valamit.",
-      "Ez az ajánlat sokat ígér."
-    ],
-    "hi": [
-      "मैं तुम्हें कुछ वादा कर सकता हूँ।",
-      "वह बहुत ज़्यादा वादे नहीं करना चाहता.",
-      "तुम्हें मुझसे एक बात का वादा करना होगा।",
-      "यह ऑफर बहुत कुछ वादा करता है।"
-    ],
-    "pl": [
-      "Mogę ci coś obiecać.",
-      "On nie chce za dużo obiecywać.",
-      "Musisz mi coś obiecać.",
-      "Ta oferta wiele obiecuje."
-    ],
-    "el": [
-      "Μπορώ να σου υποσχεθώ κάτι.",
-      "Δεν θέλει να υπόσχεται πάρα πολλά.",
-      "Πρέπει να μου υποσχεθείς κάτι.",
-      "Αυτή η προσφορά υπόσχεται πολλά."
-    ],
-    "nb": [
-      "Jeg kan love deg noe.",
-      "Han vil ikke love for mye.",
-      "Du må love meg noe.",
-      "Dette tilbudet lover mye."
-    ],
-    "id": [
-      "Aku bisa berjanji sesuatu padamu.",
-      "Dia tidak ingin berjanji terlalu banyak.",
-      "Kamu harus berjanji sesuatu kepadaku.",
-      "Penawaran ini menjanjikan banyak."
-    ],
-    "sv": [
-      "Jag kan lova dig något.",
-      "Han vill inte lova för mycket.",
-      "Du måste lova mig något.",
-      "Det här erbjudandet lovar mycket."
-    ],
-    "ro": [
-      "Îți pot promite ceva.",
-      "Nu vrea să promită prea mult.",
-      "Trebuie să-mi promiți ceva.",
-      "Această ofertă promite mult."
     ],
     "cs": [
       "Můžu ti něco slíbit.",
@@ -835,11 +953,77 @@
       "Du skal love mig noget.",
       "Dette tilbud ser lovende ud."
     ],
+    "de": [
+      "Ich kann dir etwas versprechen.",
+      "Er will nicht zu viel versprechen.",
+      "Du musst mir etwas versprechen.",
+      "Das Angebot kann viel versprechen."
+    ],
+    "el": [
+      "Μπορώ να σου υποσχεθώ κάτι.",
+      "Δεν θέλει να υπόσχεται πάρα πολλά.",
+      "Πρέπει να μου υποσχεθείς κάτι.",
+      "Αυτή η προσφορά υπόσχεται πολλά."
+    ],
+    "en": [
+      "I can promise you something.",
+      "He doesn't want to promise too much.",
+      "You have to promise me something.",
+      "The offer can promise a lot."
+    ],
+    "es": [
+      "Puedo prometerte algo.",
+      "No quiere prometer demasiado.",
+      "Tienes que prometerme algo.",
+      "Esta oferta promete mucho."
+    ],
     "fi": [
       "Voin luvata sinulle jotakin.",
       "Hän ei halua luvata liikoja.",
       "Sinun täytyy luvata minulle jotakin.",
       "Tämä tarjous vaikuttaa lupaavalta."
+    ],
+    "fr": [
+      "Je peux te promettre quelque chose.",
+      "Il ne veut pas trop promettre.",
+      "Tu dois me promettre quelque chose.",
+      "Cette offre promet beaucoup."
+    ],
+    "he": [
+      "אני יכול להבטיח לך משהו.",
+      "הוא לא רוצה להבטיח יותר מדי.",
+      "אתה צריך להבטיח לי משהו.",
+      "ההצעה נראית מבטיחה."
+    ],
+    "hi": [
+      "मैं तुम्हें कुछ वादा कर सकता हूँ।",
+      "वह बहुत ज़्यादा वादे नहीं करना चाहता.",
+      "तुम्हें मुझसे एक बात का वादा करना होगा।",
+      "यह ऑफर बहुत कुछ वादा करता है।"
+    ],
+    "hu": [
+      "Ígérhetek neked valamit.",
+      "Nem akar túl sokat ígérni.",
+      "Meg kell ígérned nekem valamit.",
+      "Ez az ajánlat sokat ígér."
+    ],
+    "id": [
+      "Aku bisa berjanji sesuatu padamu.",
+      "Dia tidak ingin berjanji terlalu banyak.",
+      "Kamu harus berjanji sesuatu kepadaku.",
+      "Penawaran ini menjanjikan banyak."
+    ],
+    "ipa": [
+      "/ɪç kan diːɐ̯ ˈɛtvas fɛɐ̯ˈʃpʁɛçən/",
+      "/eːɐ̯ vɪl nɪçt tsuː fiːl fɛɐ̯ˈʃpʁɛçən/",
+      "/duː mʊst miːɐ̯ ˈɛtvas fɛɐ̯ˈʃpʁɛçən/",
+      "/das ˈanɡəboːt kan fiːl fɛɐ̯ˈʃpʁɛçən/"
+    ],
+    "it": [
+      "Posso prometterti qualcosa.",
+      "Non vuole promettere troppo.",
+      "Devi promettermi una cosa.",
+      "Quest'offerta promette molto."
     ],
     "ja": [
       "君に一つ約束できるよ。",
@@ -847,6 +1031,83 @@
       "君は私に一つ約束しなきゃいけない。",
       "この提案は期待できそうだ。"
     ],
-    "word_POS": "Verb"
+    "ko": [
+      "너한테 한 가지 약속할 수 있어.",
+      "그는 너무 많은 것을 약속하고 싶지 않아.",
+      "나한테 한 가지 약속해야 해.",
+      "그 제안은 기대가 돼."
+    ],
+    "nb": [
+      "Jeg kan love deg noe.",
+      "Han vil ikke love for mye.",
+      "Du må love meg noe.",
+      "Dette tilbudet lover mye."
+    ],
+    "nl": [
+      "Ik kan je iets beloven.",
+      "Hij wil niet te veel beloven.",
+      "Je moet me iets beloven.",
+      "Dit aanbod belooft veel."
+    ],
+    "pl": [
+      "Mogę ci coś obiecać.",
+      "On nie chce za dużo obiecywać.",
+      "Musisz mi coś obiecać.",
+      "Ta oferta wiele obiecuje."
+    ],
+    "pt": [
+      "Posso te prometer uma coisa.",
+      "Ele não quer prometer demais.",
+      "Você tem que me prometer uma coisa.",
+      "Esta oferta promete muito."
+    ],
+    "ro": [
+      "Îți pot promite ceva.",
+      "Nu vrea să promită prea mult.",
+      "Trebuie să-mi promiți ceva.",
+      "Această ofertă promite mult."
+    ],
+    "ru": [
+      "Я могу пообещать тебе кое-что.",
+      "Он не хочет слишком много обещать.",
+      "Ты должен пообещать мне кое-что.",
+      "Это предложение многообещающее."
+    ],
+    "sv": [
+      "Jag kan lova dig något.",
+      "Han vill inte lova för mycket.",
+      "Du måste lova mig något.",
+      "Det här erbjudandet lovar mycket."
+    ],
+    "tr": [
+      "Sana bir şey vaat edebilirim.",
+      "Çok fazla söz vermek istemiyor.",
+      "Bana bir söz vermek zorundasın.",
+      "Bu teklif çok şey vadediyor."
+    ],
+    "uk": [
+      "Я можу пообіцяти тобі дещо.",
+      "Він не хоче обіцяти занадто багато.",
+      "Ти маєш пообіцяти мені дещо.",
+      "Ця пропозиція багатообіцяльна."
+    ],
+    "vi": [
+      "Tôi có thể hứa với bạn một điều.",
+      "Anh ấy không muốn hứa quá nhiều.",
+      "Bạn phải hứa với tôi một điều.",
+      "Ưu đãi này rất hứa hẹn."
+    ],
+    "yue": [
+      "我可以答應你一件事。",
+      "佢唔想應承太多。",
+      "你要應承我一件事。",
+      "呢個優惠好有睇頭。"
+    ],
+    "zh-Hans": [
+      "我可以答应你一件事。",
+      "他不想承诺太多。",
+      "你得答应我一件事。",
+      "这个优惠看起来很有看头。"
+    ]
   }
 }

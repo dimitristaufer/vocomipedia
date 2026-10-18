@@ -146,10 +146,10 @@
       "difficulty": 5.29
     },
     {
-      "target": "Eine Anmeldung ist Voraussetzung im Fitnessstudio.",
+      "target": "Im Fitnessstudio ist eine Anmeldung Voraussetzung.",
       "reading": "/ˈaɪ̯nə ˈanmɛldʊŋ ɪst foˈʁaʊ̯sˌzɛt͡sʊŋ ɪm ˈfɪtnɛsʃtuːdi̯o/",
       "translations": {
-        "de": "Eine Anmeldung ist Voraussetzung im Fitnessstudio.",
+        "de": "Im Fitnessstudio ist eine Anmeldung Voraussetzung.",
         "ipa": "/ˈaɪ̯nə ˈanmɛldʊŋ ɪst foˈʁaʊ̯sˌzɛt͡sʊŋ ɪm ˈfɪtnɛsʃtuːdi̯o/",
         "en": "Registration is a requirement at the gym.",
         "es": "En el gimnasio hay que registrarse.",
@@ -181,59 +181,82 @@
       },
       "tokens": [
         {
-          "surface": "Eine",
-          "surface_en": "a",
-          "furigana": "[ˈaɪ̯nə]",
-          "pos": "DET",
-          "lemma": "ein",
-          "explanation": "Indefinite article; nominative feminine singular; determiner of the subject 'Anmeldung'.",
-          "difficulty": 2
+          "surface": "Im",
+          "lemma": "in",
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "APPRART",
+          "feats": {},
+          "start": 0,
+          "end": 2,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "Anmeldung",
-          "surface_en": "registration",
-          "furigana": "[ˈanmɛldʊŋ]",
+          "surface": "Fitnessstudio",
+          "lemma": "Fitnessstudio",
           "pos": "NOUN",
-          "lemma": "Anmeldung",
-          "explanation": "Common noun; head of the subject NP; nominative feminine singular.",
-          "difficulty": 10
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 3,
+          "end": 16,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "ist",
-          "surface_en": "is",
-          "furigana": "[ɪst]",
-          "pos": "AUX",
           "lemma": "sein",
-          "explanation": "Finite present 3rd person singular copula; links subject to predicate noun.",
-          "difficulty": 4
+          "pos": "AUX",
+          "upos": "AUX",
+          "xpos": "VAFIN",
+          "feats": {},
+          "start": 17,
+          "end": 20,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "eine",
+          "lemma": "ein",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "ART",
+          "feats": {},
+          "start": 21,
+          "end": 25,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "Anmeldung",
+          "lemma": "Anmeldung",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 26,
+          "end": 35,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "Voraussetzung",
-          "surface_en": "requirement",
-          "furigana": "[foˈʁaʊ̯sˌzɛt͡sʊŋ]",
-          "pos": "NOUN",
           "lemma": "Voraussetzung",
-          "explanation": "Predicate noun (predicative complement) after the copula; nominative feminine singular; generic (no article).",
-          "difficulty": 10,
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 36,
+          "end": 49,
+          "analyzer": "spacy_de_core_news_lg",
           "is_main_word": true
         },
         {
-          "surface": "im",
-          "surface_en": "in the",
-          "furigana": "[ɪm]",
-          "pos": "ADP",
-          "lemma": "in",
-          "explanation": "Contraction of 'in dem'; preposition of location selecting the dative; introduces a PP.",
-          "difficulty": 2
-        },
-        {
-          "surface": "Fitnessstudio.",
-          "surface_en": "fitness studio",
-          "furigana": "[ˈfɪtnɛsʃtuːdio]",
-          "pos": "NOUN",
-          "lemma": "Fitnessstudio",
-          "explanation": "Common noun; object of 'im'; dative neuter singular; denotes the location.",
-          "difficulty": 10
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 49,
+          "end": 50,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 6.33
@@ -445,8 +468,292 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-15T04:55:12Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:De b1/bbc73bc46eddcf14",
+      "revision_id": 84817,
+      "parent_revision_id": 18380,
+      "revision_timestamp_utc": "2026-10-15T04:55:12Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Improved the German word order in the gym registration sentence.",
+      "pulled_utc": "2026-10-17T07:06:42Z",
+      "applied_utc": "2026-10-17T07:06:51Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-49d0255fb1c5e1f4",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_b1:bbc73bc46eddcf14",
+        "pack_code": "de_b1",
+        "entry_id": "Voraussetzung",
+        "language": "de",
+        "sentence_index": 2,
+        "old_sentence": "Eine Anmeldung ist Voraussetzung im Fitnessstudio.",
+        "old_translations": {
+          "de": "Eine Anmeldung ist Voraussetzung im Fitnessstudio.",
+          "ipa": "/ˈaɪ̯nə ˈanmɛldʊŋ ɪst foˈʁaʊ̯sˌzɛt͡sʊŋ ɪm ˈfɪtnɛsʃtuːdi̯o/",
+          "en": "Registration is a requirement at the gym.",
+          "es": "En el gimnasio hay que registrarse.",
+          "fr": "Il faut s’inscrire à la salle de sport.",
+          "it": "In palestra è obbligatoria l’iscrizione.",
+          "ko": "헬스장을 이용하려면 등록해야 합니다.",
+          "zh-Hans": "健身房需要先注册。",
+          "yue": "健身室要先登記。",
+          "ru": "В спортзале требуется регистрация.",
+          "pt": "É preciso se cadastrar na academia.",
+          "he": "במכון הכושר צריך להירשם.",
+          "tr": "Spor salonunda kayıt olmak zorunlu.",
+          "vi": "Muốn vào phòng gym phải đăng ký.",
+          "ar": "التسجيل مطلوب في النادي الرياضي.",
+          "nl": "In de sportschool is inschrijven verplicht.",
+          "uk": "У спортзалі потрібна реєстрація.",
+          "hu": "Az edzőteremben kötelező a regisztráció.",
+          "hi": "जिम में पहले रजिस्ट्रेशन करना होता है।",
+          "pl": "Na siłowni trzeba się zarejestrować.",
+          "el": "Στο γυμναστήριο απαιτείται εγγραφή.",
+          "nb": "På treningssenteret må du registrere deg.",
+          "id": "Di gym harus daftar dulu.",
+          "sv": "Det krävs registrering på gymmet.",
+          "ro": "La sală trebuie să te înregistrezi.",
+          "cs": "V posilovně je nutná registrace.",
+          "da": "Man skal registrere sig i fitnesscentret.",
+          "fi": "Kuntosalilla on rekisteröidyttävä.",
+          "ja": "ジムを利用するには登録が必要です。"
+        },
+        "proposed_sentence": "Im Fitnessstudio ist eine Anmeldung Voraussetzung.",
+        "proposed_translations": {
+          "de": "Im Fitnessstudio ist eine Anmeldung Voraussetzung.",
+          "ipa": "/ˈaɪ̯nə ˈanmɛldʊŋ ɪst foˈʁaʊ̯sˌzɛt͡sʊŋ ɪm ˈfɪtnɛsʃtuːdi̯o/",
+          "en": "Registration is a requirement at the gym.",
+          "es": "En el gimnasio hay que registrarse.",
+          "fr": "Il faut s’inscrire à la salle de sport.",
+          "it": "In palestra è obbligatoria l’iscrizione.",
+          "ko": "헬스장을 이용하려면 등록해야 합니다.",
+          "zh-Hans": "健身房需要先注册。",
+          "yue": "健身室要先登記。",
+          "ru": "В спортзале требуется регистрация.",
+          "pt": "É preciso se cadastrar na academia.",
+          "he": "במכון הכושר צריך להירשם.",
+          "tr": "Spor salonunda kayıt olmak zorunlu.",
+          "vi": "Muốn vào phòng gym phải đăng ký.",
+          "ar": "التسجيل مطلوب في النادي الرياضي.",
+          "nl": "In de sportschool is inschrijven verplicht.",
+          "uk": "У спортзалі потрібна реєстрація.",
+          "hu": "Az edzőteremben kötelező a regisztráció.",
+          "hi": "जिम में पहले रजिस्ट्रेशन करना होता है।",
+          "pl": "Na siłowni trzeba się zarejestrować.",
+          "el": "Στο γυμναστήριο απαιτείται εγγραφή.",
+          "nb": "På treningssenteret må du registrere deg.",
+          "id": "Di gym harus daftar dulu.",
+          "sv": "Det krävs registrering på gymmet.",
+          "ro": "La sală trebuie să te înregistrezi.",
+          "cs": "V posilovně je nutná registrace.",
+          "da": "Man skal registrere sig i fitnesscentret.",
+          "fi": "Kuntosalilla on rekisteröidyttävä.",
+          "ja": "ジムを利用するには登録が必要です。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Im Fitnessstudio ist eine Anmeldung Voraussetzung.",
+        "old_japanese": "Eine Anmeldung ist Voraussetzung im Fitnessstudio.",
+        "old_english": "Registration is a requirement at the gym.",
+        "proposed_japanese": "Im Fitnessstudio ist eine Anmeldung Voraussetzung.",
+        "proposed_english": "Registration is a requirement at the gym.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Im Fitnessstudio ist eine Anmeldung Voraussetzung.",
+          "tokens": [
+            {
+              "surface": "Im",
+              "lemma": "in",
+              "pos": "ADP",
+              "upos": "ADP",
+              "xpos": "APPRART",
+              "feats": {},
+              "start": 0,
+              "end": 2,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Fitnessstudio",
+              "lemma": "Fitnessstudio",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 3,
+              "end": 16,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "ist",
+              "lemma": "sein",
+              "pos": "AUX",
+              "upos": "AUX",
+              "xpos": "VAFIN",
+              "feats": {},
+              "start": 17,
+              "end": 20,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "eine",
+              "lemma": "ein",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "ART",
+              "feats": {},
+              "start": 21,
+              "end": 25,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Anmeldung",
+              "lemma": "Anmeldung",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 26,
+              "end": 35,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Voraussetzung",
+              "lemma": "Voraussetzung",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 36,
+              "end": 49,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 49,
+              "end": 50,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Im",
+            "lemma": "in",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPRART",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Fitnessstudio",
+            "lemma": "Fitnessstudio",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 3,
+            "end": 16,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "ist",
+            "lemma": "sein",
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "VAFIN",
+            "feats": {},
+            "start": 17,
+            "end": 20,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "eine",
+            "lemma": "ein",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 21,
+            "end": 25,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Anmeldung",
+            "lemma": "Anmeldung",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 26,
+            "end": 35,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Voraussetzung",
+            "lemma": "Voraussetzung",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 36,
+            "end": 49,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 49,
+            "end": 50,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:06:42Z",
+        "updated_utc": "2026-10-17T07:07:06Z",
+        "applied_utc": "2026-10-17T07:07:06Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:07:06Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -458,34 +765,6 @@
     "word": "Voraussetzung",
     "word_reading": "",
     "word_label": "Substantiv (die fem.)",
-    "word_en": "requirement; prerequisite",
-    "word_es": "requisito; condición",
-    "word_fr": "condition; prérequis",
-    "word_it": "requisito; condizione",
-    "word_ko": "요건; 전제조건",
-    "word_zh-Hans": "条件; 前提",
-    "word_yue": "條件; 前提",
-    "word_ru": "условие; требование",
-    "word_pt": "requisito; condição",
-    "word_he": "תנאי; דרישה",
-    "word_tr": "koşul; gereklilik",
-    "word_vi": "điều kiện; yêu cầu",
-    "word_ar": "شرط؛ متطلب",
-    "word_nl": "voorwaarde; vereiste",
-    "word_uk": "умова; вимога",
-    "word_hu": "feltétel; követelmény",
-    "word_hi": "शर्त; आवश्यकता",
-    "word_pl": "warunek; wymóg",
-    "word_el": "προϋπόθεση; όρος",
-    "word_nb": "forutsetning; krav",
-    "word_id": "syarat; persyaratan",
-    "word_sv": "förutsättning; krav",
-    "word_ro": "condiție; cerință",
-    "word_cs": "podmínka; požadavek",
-    "word_da": "forudsætning; betingelse",
-    "word_fi": "edellytys; vaatimus",
-    "word_ja": "条件; 前提",
-    "word_de": "Voraussetzung",
     "comic_difficulty": 5.74,
     "jp": [
       "Deutschkenntnisse sind die Voraussetzung für den Job.",
@@ -498,24 +777,6 @@
       "/ˈaɪ̯nə ˈanmɛldʊŋ ɪst foˈʁaʊ̯sˌzɛt͡sʊŋ ɪm ˈfɪtnɛsʃtuːdi̯o/",
       "/viːɐ ˈpʁyːfən diː foˈʁaʊ̯sˌzɛt͡sʊŋən ˈnɛçstə ˈvɔxə/",
       "/ɪç ɛʁˈfʏlə diː foˈʁaʊ̯sˌzɛt͡sʊŋ fyːɐ das ˈviːzʊm/"
-    ],
-    "de": [
-      "Deutschkenntnisse sind die Voraussetzung für den Job.",
-      "Eine Anmeldung ist Voraussetzung im Fitnessstudio.",
-      "Wir prüfen die Voraussetzungen nächste Woche.",
-      "Ich erfülle die Voraussetzung für das Visum."
-    ],
-    "ipa": [
-      "/ˈdɔʏ̯t͡ʃkɛntnɪsə zɪnt diː foˈʁaʊ̯sˌzɛt͡sʊŋ fyːɐ deːn dʒɔp/",
-      "/ˈaɪ̯nə ˈanmɛldʊŋ ɪst foˈʁaʊ̯sˌzɛt͡sʊŋ ɪm ˈfɪtnɛsʃtuːdi̯o/",
-      "/viːɐ ˈpʁyːfən diː foˈʁaʊ̯sˌzɛt͡sʊŋən ˈnɛçstə ˈvɔxə/",
-      "/ɪç ɛʁˈfʏlə diː foˈʁaʊ̯sˌzɛt͡sʊŋ fyːɐ das ˈviːzʊm/"
-    ],
-    "en": [
-      "German skills are the prerequisite for the job.",
-      "Registration is a requirement at the gym.",
-      "We check the requirements next week.",
-      "I meet the requirement for the visa."
     ],
     "pos_analysis": [
       {
@@ -589,62 +850,85 @@
         "difficulty_aggregated": 5.29
       },
       {
-        "sentence": "Eine Anmeldung ist Voraussetzung im Fitnessstudio.",
+        "sentence": "Im Fitnessstudio ist eine Anmeldung Voraussetzung.",
         "tokens": [
           {
-            "surface": "Eine",
-            "surface_en": "a",
-            "furigana": "[ˈaɪ̯nə]",
-            "pos": "DET",
-            "lemma": "ein",
-            "explanation": "Indefinite article; nominative feminine singular; determiner of the subject 'Anmeldung'.",
-            "difficulty": 2
+            "surface": "Im",
+            "lemma": "in",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPRART",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "Anmeldung",
-            "surface_en": "registration",
-            "furigana": "[ˈanmɛldʊŋ]",
+            "surface": "Fitnessstudio",
+            "lemma": "Fitnessstudio",
             "pos": "NOUN",
-            "lemma": "Anmeldung",
-            "explanation": "Common noun; head of the subject NP; nominative feminine singular.",
-            "difficulty": 10
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 3,
+            "end": 16,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "ist",
-            "surface_en": "is",
-            "furigana": "[ɪst]",
-            "pos": "AUX",
             "lemma": "sein",
-            "explanation": "Finite present 3rd person singular copula; links subject to predicate noun.",
-            "difficulty": 4
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "VAFIN",
+            "feats": {},
+            "start": 17,
+            "end": 20,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "eine",
+            "lemma": "ein",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 21,
+            "end": 25,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Anmeldung",
+            "lemma": "Anmeldung",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 26,
+            "end": 35,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "Voraussetzung",
-            "surface_en": "requirement",
-            "furigana": "[foˈʁaʊ̯sˌzɛt͡sʊŋ]",
-            "pos": "NOUN",
             "lemma": "Voraussetzung",
-            "explanation": "Predicate noun (predicative complement) after the copula; nominative feminine singular; generic (no article).",
-            "difficulty": 10,
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 36,
+            "end": 49,
+            "analyzer": "spacy_de_core_news_lg",
             "is_main_word": true
           },
           {
-            "surface": "im",
-            "surface_en": "in the",
-            "furigana": "[ɪm]",
-            "pos": "ADP",
-            "lemma": "in",
-            "explanation": "Contraction of 'in dem'; preposition of location selecting the dative; introduces a PP.",
-            "difficulty": 2
-          },
-          {
-            "surface": "Fitnessstudio.",
-            "surface_en": "fitness studio",
-            "furigana": "[ˈfɪtnɛsʃtuːdio]",
-            "pos": "NOUN",
-            "lemma": "Fitnessstudio",
-            "explanation": "Common noun; object of 'im'; dative neuter singular; denotes the location.",
-            "difficulty": 10
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 49,
+            "end": 50,
+            "analyzer": "spacy_de_core_news_lg"
           }
         ],
         "difficulty_aggregated": 6.33
@@ -781,137 +1065,41 @@
         "difficulty_aggregated": 5
       }
     ],
-    "es": [
-      "El puesto requiere conocimientos de alemán.",
-      "En el gimnasio hay que registrarse.",
-      "Revisamos los requisitos la próxima semana.",
-      "Cumplo con los requisitos de la visa."
-    ],
-    "fr": [
-      "Le poste exige des compétences en allemand.",
-      "Il faut s’inscrire à la salle de sport.",
-      "Nous vérifierons les exigences la semaine prochaine.",
-      "Je satisfais aux exigences du visa."
-    ],
-    "it": [
-      "Per il lavoro servono conoscenze di tedesco.",
-      "In palestra è obbligatoria l’iscrizione.",
-      "Controlliamo i requisiti la prossima settimana.",
-      "Soddisfo i requisiti per il visto."
-    ],
-    "ko": [
-      "이 직무에는 독일어 실력이 필요합니다.",
-      "헬스장을 이용하려면 등록해야 합니다.",
-      "우리는 다음 주에 요건을 검토합니다.",
-      "저는 비자 요건을 충족합니다."
-    ],
-    "zh-Hans": [
-      "这份工作需要德语能力。",
-      "健身房需要先注册。",
-      "我们下周会查看这些要求。",
-      "我符合签证要求。"
-    ],
-    "yue": [
-      "呢份工要求識德文。",
-      "健身室要先登記。",
-      "我哋下星期會檢查要求。",
-      "我符合簽證要求。"
-    ],
-    "ru": [
-      "Для этой работы требуется знание немецкого.",
-      "В спортзале требуется регистрация.",
-      "Мы проверим требования на следующей неделе.",
-      "Я соответствую требованиям для получения визы."
-    ],
-    "pt": [
-      "O cargo exige conhecimentos de alemão.",
-      "É preciso se cadastrar na academia.",
-      "Vamos verificar os requisitos na próxima semana.",
-      "Eu atendo aos requisitos para o visto."
-    ],
-    "he": [
-      "העבודה דורשת ידע בגרמנית.",
-      "במכון הכושר צריך להירשם.",
-      "אנחנו נבדוק את הדרישות בשבוע הבא.",
-      "אני עומד בדרישות לקבלת הוויזה."
-    ],
-    "tr": [
-      "Bu iş için Almanca bilgisi gerekiyor.",
-      "Spor salonunda kayıt olmak zorunlu.",
-      "Şartları gelecek hafta gözden geçireceğiz.",
-      "Vize şartlarını karşılıyorum."
-    ],
-    "vi": [
-      "Công việc này yêu cầu biết tiếng Đức.",
-      "Muốn vào phòng gym phải đăng ký.",
-      "Chúng tôi sẽ xem xét các yêu cầu vào tuần tới.",
-      "Tôi đáp ứng các yêu cầu để xin visa."
-    ],
+    "word_POS": "Noun",
+    "entry_id": "Voraussetzung",
+    "word_en": "requirement; prerequisite",
+    "word_es": "requisito; condición",
+    "word_fr": "condition; prérequis",
+    "word_it": "requisito; condizione",
+    "word_ko": "요건; 전제조건",
+    "word_zh-Hans": "条件; 前提",
+    "word_yue": "條件; 前提",
+    "word_ru": "условие; требование",
+    "word_pt": "requisito; condição",
+    "word_he": "תנאי; דרישה",
+    "word_tr": "koşul; gereklilik",
+    "word_vi": "điều kiện; yêu cầu",
+    "word_ar": "شرط؛ متطلب",
+    "word_nl": "voorwaarde; vereiste",
+    "word_uk": "умова; вимога",
+    "word_hu": "feltétel; követelmény",
+    "word_hi": "शर्त; आवश्यकता",
+    "word_pl": "warunek; wymóg",
+    "word_el": "προϋπόθεση; όρος",
+    "word_nb": "forutsetning; krav",
+    "word_id": "syarat; persyaratan",
+    "word_sv": "förutsättning; krav",
+    "word_ro": "condiție; cerință",
+    "word_cs": "podmínka; požadavek",
+    "word_da": "forudsætning; betingelse",
+    "word_fi": "edellytys; vaatimus",
+    "word_ja": "条件; 前提",
+    "word_de": "Voraussetzung",
     "ar": [
       "إجادة الألمانية مطلوبة لهذه الوظيفة.",
       "التسجيل مطلوب في النادي الرياضي.",
       "سوف نراجع المتطلبات الأسبوع القادم.",
       "أستوفي متطلبات التأشيرة."
-    ],
-    "nl": [
-      "De functie vereist kennis van Duits.",
-      "In de sportschool is inschrijven verplicht.",
-      "We controleren de vereisten volgende week.",
-      "Ik voldoe aan de eisen voor het visum."
-    ],
-    "uk": [
-      "Для цієї роботи потрібне знання німецької.",
-      "У спортзалі потрібна реєстрація.",
-      "Ми перевіримо вимоги наступного тижня.",
-      "Я відповідаю вимогам для візи."
-    ],
-    "hu": [
-      "A munkához német nyelvtudás szükséges.",
-      "Az edzőteremben kötelező a regisztráció.",
-      "Jövő héten átnézzük a követelményeket.",
-      "Megfelelek a vízum követelményeinek."
-    ],
-    "hi": [
-      "इस नौकरी के लिए जर्मन भाषा का ज्ञान ज़रूरी है।",
-      "जिम में पहले रजिस्ट्रेशन करना होता है।",
-      "हम अगले हफ्ते आवश्यकताएँ जाँचेंगे।",
-      "मैं वीज़ा की आवश्यकताओं को पूरा करता हूँ।"
-    ],
-    "pl": [
-      "Do tej pracy potrzebna jest znajomość niemieckiego.",
-      "Na siłowni trzeba się zarejestrować.",
-      "Sprawdzimy wymagania w przyszłym tygodniu.",
-      "Spełniam wymagania wizowe."
-    ],
-    "el": [
-      "Για τη δουλειά απαιτούνται γνώσεις γερμανικών.",
-      "Στο γυμναστήριο απαιτείται εγγραφή.",
-      "Θα ελέγξουμε τις προϋποθέσεις την επόμενη εβδομάδα.",
-      "Καλύπτω τις προϋποθέσεις για τη βίζα."
-    ],
-    "nb": [
-      "Jobben krever tyskkunnskaper.",
-      "På treningssenteret må du registrere deg.",
-      "Vi sjekker kravene neste uke.",
-      "Jeg oppfyller kravene for visum."
-    ],
-    "id": [
-      "Pekerjaan ini membutuhkan kemampuan bahasa Jerman.",
-      "Di gym harus daftar dulu.",
-      "Kami akan meninjau persyaratan minggu depan.",
-      "Saya memenuhi persyaratan untuk visa."
-    ],
-    "sv": [
-      "Tjänsten kräver kunskaper i tyska.",
-      "Det krävs registrering på gymmet.",
-      "Vi går igenom kraven nästa vecka.",
-      "Jag uppfyller kraven för visum."
-    ],
-    "ro": [
-      "Postul cere cunoștințe de germană.",
-      "La sală trebuie să te înregistrezi.",
-      "Verificăm cerințele săptămâna viitoare.",
-      "Îndeplinesc cerințele pentru viză."
     ],
     "cs": [
       "Na tuto práci je potřeba znalost němčiny.",
@@ -925,11 +1113,77 @@
       "Vi gennemgår kravene i næste uge.",
       "Jeg opfylder kravene til visum."
     ],
+    "de": [
+      "Deutschkenntnisse sind die Voraussetzung für den Job.",
+      "Eine Anmeldung ist Voraussetzung im Fitnessstudio.",
+      "Wir prüfen die Voraussetzungen nächste Woche.",
+      "Ich erfülle die Voraussetzung für das Visum."
+    ],
+    "el": [
+      "Για τη δουλειά απαιτούνται γνώσεις γερμανικών.",
+      "Στο γυμναστήριο απαιτείται εγγραφή.",
+      "Θα ελέγξουμε τις προϋποθέσεις την επόμενη εβδομάδα.",
+      "Καλύπτω τις προϋποθέσεις για τη βίζα."
+    ],
+    "en": [
+      "German skills are the prerequisite for the job.",
+      "Registration is a requirement at the gym.",
+      "We check the requirements next week.",
+      "I meet the requirement for the visa."
+    ],
+    "es": [
+      "El puesto requiere conocimientos de alemán.",
+      "En el gimnasio hay que registrarse.",
+      "Revisamos los requisitos la próxima semana.",
+      "Cumplo con los requisitos de la visa."
+    ],
     "fi": [
       "Työhön vaaditaan saksan kielen taito.",
       "Kuntosalilla on rekisteröidyttävä.",
       "Tarkistamme vaatimukset ensi viikolla.",
       "Täytän viisumin vaatimukset."
+    ],
+    "fr": [
+      "Le poste exige des compétences en allemand.",
+      "Il faut s’inscrire à la salle de sport.",
+      "Nous vérifierons les exigences la semaine prochaine.",
+      "Je satisfais aux exigences du visa."
+    ],
+    "he": [
+      "העבודה דורשת ידע בגרמנית.",
+      "במכון הכושר צריך להירשם.",
+      "אנחנו נבדוק את הדרישות בשבוע הבא.",
+      "אני עומד בדרישות לקבלת הוויזה."
+    ],
+    "hi": [
+      "इस नौकरी के लिए जर्मन भाषा का ज्ञान ज़रूरी है।",
+      "जिम में पहले रजिस्ट्रेशन करना होता है।",
+      "हम अगले हफ्ते आवश्यकताएँ जाँचेंगे।",
+      "मैं वीज़ा की आवश्यकताओं को पूरा करता हूँ।"
+    ],
+    "hu": [
+      "A munkához német nyelvtudás szükséges.",
+      "Az edzőteremben kötelező a regisztráció.",
+      "Jövő héten átnézzük a követelményeket.",
+      "Megfelelek a vízum követelményeinek."
+    ],
+    "id": [
+      "Pekerjaan ini membutuhkan kemampuan bahasa Jerman.",
+      "Di gym harus daftar dulu.",
+      "Kami akan meninjau persyaratan minggu depan.",
+      "Saya memenuhi persyaratan untuk visa."
+    ],
+    "ipa": [
+      "/ˈdɔʏ̯t͡ʃkɛntnɪsə zɪnt diː foˈʁaʊ̯sˌzɛt͡sʊŋ fyːɐ deːn dʒɔp/",
+      "/ˈaɪ̯nə ˈanmɛldʊŋ ɪst foˈʁaʊ̯sˌzɛt͡sʊŋ ɪm ˈfɪtnɛsʃtuːdi̯o/",
+      "/viːɐ ˈpʁyːfən diː foˈʁaʊ̯sˌzɛt͡sʊŋən ˈnɛçstə ˈvɔxə/",
+      "/ɪç ɛʁˈfʏlə diː foˈʁaʊ̯sˌzɛt͡sʊŋ fyːɐ das ˈviːzʊm/"
+    ],
+    "it": [
+      "Per il lavoro servono conoscenze di tedesco.",
+      "In palestra è obbligatoria l’iscrizione.",
+      "Controlliamo i requisiti la prossima settimana.",
+      "Soddisfo i requisiti per il visto."
     ],
     "ja": [
       "この仕事にはドイツ語の能力が必要です。",
@@ -937,6 +1191,83 @@
       "来週、要件を確認します。",
       "私はビザの要件を満たしています。"
     ],
-    "word_POS": "Noun"
+    "ko": [
+      "이 직무에는 독일어 실력이 필요합니다.",
+      "헬스장을 이용하려면 등록해야 합니다.",
+      "우리는 다음 주에 요건을 검토합니다.",
+      "저는 비자 요건을 충족합니다."
+    ],
+    "nb": [
+      "Jobben krever tyskkunnskaper.",
+      "På treningssenteret må du registrere deg.",
+      "Vi sjekker kravene neste uke.",
+      "Jeg oppfyller kravene for visum."
+    ],
+    "nl": [
+      "De functie vereist kennis van Duits.",
+      "In de sportschool is inschrijven verplicht.",
+      "We controleren de vereisten volgende week.",
+      "Ik voldoe aan de eisen voor het visum."
+    ],
+    "pl": [
+      "Do tej pracy potrzebna jest znajomość niemieckiego.",
+      "Na siłowni trzeba się zarejestrować.",
+      "Sprawdzimy wymagania w przyszłym tygodniu.",
+      "Spełniam wymagania wizowe."
+    ],
+    "pt": [
+      "O cargo exige conhecimentos de alemão.",
+      "É preciso se cadastrar na academia.",
+      "Vamos verificar os requisitos na próxima semana.",
+      "Eu atendo aos requisitos para o visto."
+    ],
+    "ro": [
+      "Postul cere cunoștințe de germană.",
+      "La sală trebuie să te înregistrezi.",
+      "Verificăm cerințele săptămâna viitoare.",
+      "Îndeplinesc cerințele pentru viză."
+    ],
+    "ru": [
+      "Для этой работы требуется знание немецкого.",
+      "В спортзале требуется регистрация.",
+      "Мы проверим требования на следующей неделе.",
+      "Я соответствую требованиям для получения визы."
+    ],
+    "sv": [
+      "Tjänsten kräver kunskaper i tyska.",
+      "Det krävs registrering på gymmet.",
+      "Vi går igenom kraven nästa vecka.",
+      "Jag uppfyller kraven för visum."
+    ],
+    "tr": [
+      "Bu iş için Almanca bilgisi gerekiyor.",
+      "Spor salonunda kayıt olmak zorunlu.",
+      "Şartları gelecek hafta gözden geçireceğiz.",
+      "Vize şartlarını karşılıyorum."
+    ],
+    "uk": [
+      "Для цієї роботи потрібне знання німецької.",
+      "У спортзалі потрібна реєстрація.",
+      "Ми перевіримо вимоги наступного тижня.",
+      "Я відповідаю вимогам для візи."
+    ],
+    "vi": [
+      "Công việc này yêu cầu biết tiếng Đức.",
+      "Muốn vào phòng gym phải đăng ký.",
+      "Chúng tôi sẽ xem xét các yêu cầu vào tuần tới.",
+      "Tôi đáp ứng các yêu cầu để xin visa."
+    ],
+    "yue": [
+      "呢份工要求識德文。",
+      "健身室要先登記。",
+      "我哋下星期會檢查要求。",
+      "我符合簽證要求。"
+    ],
+    "zh-Hans": [
+      "这份工作需要德语能力。",
+      "健身房需要先注册。",
+      "我们下周会查看这些要求。",
+      "我符合签证要求。"
+    ]
   }
 }

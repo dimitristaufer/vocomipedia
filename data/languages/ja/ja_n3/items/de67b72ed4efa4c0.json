@@ -136,7 +136,7 @@
         "cs": "Promiňte, narazil jsem do vás.",
         "da": "Undskyld, jeg stødte ind i dig.",
         "de": "Entschuldigung, ich bin gegen Sie gestoßen.",
-        "el": "Συγγνώμη, σε έσπρωξα κατά λάθος.",
+        "el": "Συγγνώμη, έπεσα πάνω σου.",
         "es": "Perdón, choqué contigo.",
         "fi": "Anteeksi, törmäsin sinuun.",
         "fr": "Pardon, je vous ai bousculé.",
@@ -150,11 +150,11 @@
         "nl": "Sorry, ik botste tegen je aan.",
         "pl": "Przepraszam, wpadłem na ciebie.",
         "pt": "Desculpe, esbarrei em você.",
-        "ro": "Scuze, te-am lovit.",
+        "ro": "Scuze, m-am ciocnit de tine.",
         "ru": "Извините, я вас задел.",
         "sv": "Förlåt, jag råkade stöta till dig.",
         "tr": "Affedersiniz, size çarptım.",
-        "uk": "Пробачте, я вас штовхнув.",
+        "uk": "Перепрошую, я випадково зіткнувся з вами.",
         "vi": "Xin lỗi, tôi đã va vào bạn.",
         "yue": "唔好意思，我撞到你。",
         "zh-Hans": "对不起，我撞到你了。"
@@ -310,7 +310,7 @@
       "difficulty": null
     },
     {
-      "target": "ごめんなさい、ドアをしめました。",
+      "target": "ごめんなさい、ドアを閉めました。",
       "reading": "ごめんなさい、どあをしめました。",
       "translations": {
         "en": "I'm sorry, I closed the door.",
@@ -425,8 +425,8 @@
           "furigana": "を"
         },
         {
-          "surface": "しめ",
-          "lemma": "しめる",
+          "surface": "閉め",
+          "lemma": "閉める",
           "pos": "動詞/一般/*/*/下一段-マ行/連用形-一般",
           "upos": "VERB",
           "xpos": "動詞",
@@ -435,10 +435,18 @@
           "end": 12,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "しめ",
-          "ruby_text": "しめ",
-          "ruby_spans": [],
-          "ruby_confidence": "high",
-          "furigana": "しめ"
+          "ruby_text": "閉[し]め",
+          "ruby_spans": [
+            {
+              "base": "閉",
+              "reading": "し",
+              "start": 0,
+              "length": 1
+            }
+          ],
+          "ruby_confidence": "reviewed",
+          "furigana": "しめ",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "まし",
@@ -492,7 +500,7 @@
       "difficulty": null
     },
     {
-      "target": "ほんとうにごめんなさい。",
+      "target": "本当にごめんなさい。",
       "reading": "ほんとうにごめんなさい。",
       "translations": {
         "en": "I'm truly sorry.",
@@ -525,20 +533,28 @@
       },
       "tokens": [
         {
-          "surface": "ほんとう",
-          "lemma": "ほんとう",
+          "surface": "本当",
+          "lemma": "本当",
           "pos": "名詞/普通名詞/一般/*/*/*",
           "upos": "NOUN",
           "xpos": "名詞",
           "feats": {},
           "start": 0,
-          "end": 4,
+          "end": 2,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "ほんとう",
-          "ruby_text": "ほんとう",
-          "ruby_spans": [],
-          "ruby_confidence": "high",
-          "furigana": "ほんとう"
+          "ruby_text": "本当[ほんとう]",
+          "ruby_spans": [
+            {
+              "base": "本当",
+              "reading": "ほんとう",
+              "start": 0,
+              "length": 2
+            }
+          ],
+          "ruby_confidence": "reviewed",
+          "furigana": "ほんとう",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "に",
@@ -547,8 +563,8 @@
           "upos": "PART",
           "xpos": "助詞",
           "feats": {},
-          "start": 4,
-          "end": 5,
+          "start": 2,
+          "end": 3,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "に",
           "ruby_text": "に",
@@ -563,8 +579,8 @@
           "upos": "NOUN",
           "xpos": "名詞",
           "feats": {},
-          "start": 5,
-          "end": 8,
+          "start": 3,
+          "end": 6,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "ごめん",
           "ruby_text": "ごめん",
@@ -580,8 +596,8 @@
           "upos": "VERB",
           "xpos": "動詞",
           "feats": {},
-          "start": 8,
-          "end": 11,
+          "start": 6,
+          "end": 9,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "なさい",
           "ruby_text": "なさい",
@@ -597,8 +613,8 @@
           "upos": "PUNCT",
           "xpos": "補助記号",
           "feats": {},
-          "start": 11,
-          "end": 12,
+          "start": 9,
+          "end": 10,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "。",
           "ruby_text": "。",
@@ -621,8 +637,727 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-13T00:49:37Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:Ja n3/de67b72ed4efa4c0",
+      "revision_id": 81279,
+      "parent_revision_id": 69415,
+      "revision_timestamp_utc": "2026-10-13T00:49:37Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Use standard Japanese spellings and avoid making the accidental bump sound like a push or hit.",
+      "pulled_utc": "2026-10-18T17:39:16Z",
+      "applied_utc": "2026-10-18T17:39:56Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-b52b2eeb7ca2d7b4",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "ja_n3:de67b72ed4efa4c0",
+        "pack_code": "ja_n3",
+        "entry_id": "ごめんなさい",
+        "language": "ja",
+        "sentence_index": 3,
+        "old_sentence": "ごめんなさい、ドアをしめました。",
+        "old_translations": {
+          "en": "I'm sorry, I closed the door.",
+          "ar": "آسف، أغلقت الباب.",
+          "cs": "Promiňte, zavřel jsem dveře.",
+          "da": "Undskyld, jeg lukkede døren.",
+          "de": "Entschuldigung, ich habe die Tür zugemacht.",
+          "el": "Συγγνώμη, έκλεισα την πόρτα.",
+          "es": "Perdón, cerré la puerta.",
+          "fi": "Anteeksi, suljin oven.",
+          "fr": "Pardon, j'ai fermé la porte.",
+          "he": "סליחה, סגרתי את הדלת.",
+          "hi": "माफ़ कीजिए, मैंने दरवाज़ा बंद कर दिया।",
+          "hu": "Elnézést, becsuktam az ajtót.",
+          "id": "Maaf, saya menutup pintunya.",
+          "it": "Mi dispiace, ho chiuso la porta.",
+          "ko": "죄송합니다, 문을 닫았습니다.",
+          "nb": "Unnskyld, jeg lukket døren.",
+          "nl": "Sorry, ik deed de deur dicht.",
+          "pl": "Przepraszam, zamknąłem drzwi.",
+          "pt": "Desculpe, fechei a porta.",
+          "ro": "Scuze, am închis ușa.",
+          "ru": "Извините, я закрыл дверь.",
+          "sv": "Förlåt, jag stängde dörren.",
+          "tr": "Affedersiniz, kapıyı kapattım.",
+          "uk": "Пробачте, я зачинив двері.",
+          "vi": "Xin lỗi, tôi đã đóng cửa.",
+          "yue": "唔好意思，我閂咗道門。",
+          "zh-Hans": "对不起，我把门关上了。"
+        },
+        "proposed_sentence": "ごめんなさい、ドアを閉めました。",
+        "proposed_translations": {
+          "en": "I'm sorry, I closed the door.",
+          "ar": "آسف، أغلقت الباب.",
+          "cs": "Promiňte, zavřel jsem dveře.",
+          "da": "Undskyld, jeg lukkede døren.",
+          "de": "Entschuldigung, ich habe die Tür zugemacht.",
+          "el": "Συγγνώμη, έκλεισα την πόρτα.",
+          "es": "Perdón, cerré la puerta.",
+          "fi": "Anteeksi, suljin oven.",
+          "fr": "Pardon, j'ai fermé la porte.",
+          "he": "סליחה, סגרתי את הדלת.",
+          "hi": "माफ़ कीजिए, मैंने दरवाज़ा बंद कर दिया।",
+          "hu": "Elnézést, becsuktam az ajtót.",
+          "id": "Maaf, saya menutup pintunya.",
+          "it": "Mi dispiace, ho chiuso la porta.",
+          "ko": "죄송합니다, 문을 닫았습니다.",
+          "nb": "Unnskyld, jeg lukket døren.",
+          "nl": "Sorry, ik deed de deur dicht.",
+          "pl": "Przepraszam, zamknąłem drzwi.",
+          "pt": "Desculpe, fechei a porta.",
+          "ro": "Scuze, am închis ușa.",
+          "ru": "Извините, я закрыл дверь.",
+          "sv": "Förlåt, jag stängde dörren.",
+          "tr": "Affedersiniz, kapıyı kapattım.",
+          "uk": "Пробачте, я зачинив двері.",
+          "vi": "Xin lỗi, tôi đã đóng cửa.",
+          "yue": "唔好意思，我閂咗道門。",
+          "zh-Hans": "对不起，我把门关上了。"
+        },
+        "old_ruby_source": "ごめんなさい、ドアをしめました。",
+        "proposed_ruby_source": "ごめんなさい、ドアを閉[し]めました。",
+        "old_japanese": "ごめんなさい、ドアをしめました。",
+        "old_english": "I'm sorry, I closed the door.",
+        "proposed_japanese": "ごめんなさい、ドアを閉めました。",
+        "proposed_english": "I'm sorry, I closed the door.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "ja",
+          "sentence": "ごめんなさい、ドアを閉めました。",
+          "tokens": [
+            {
+              "surface": "ごめん",
+              "lemma": "ごめん",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 0,
+              "end": 3,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "ごめん",
+              "ruby_text": "ごめん",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "ごめん"
+            },
+            {
+              "surface": "なさい",
+              "lemma": "なさる",
+              "pos": "動詞/非自立可能/*/*/五段-ラ行/命令形",
+              "upos": "VERB",
+              "xpos": "動詞",
+              "feats": {},
+              "start": 3,
+              "end": 6,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "なさい",
+              "ruby_text": "なさい",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "なさい"
+            },
+            {
+              "surface": "、",
+              "lemma": "、",
+              "pos": "補助記号/読点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 6,
+              "end": 7,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "、",
+              "ruby_text": "、",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "、"
+            },
+            {
+              "surface": "ドア",
+              "lemma": "ドア",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 7,
+              "end": 9,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "どあ",
+              "ruby_text": "ドア",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "どあ"
+            },
+            {
+              "surface": "を",
+              "lemma": "を",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 9,
+              "end": 10,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "を",
+              "ruby_text": "を",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "を"
+            },
+            {
+              "surface": "閉め",
+              "lemma": "閉める",
+              "pos": "動詞/一般/*/*/下一段-マ行/連用形-一般",
+              "upos": "VERB",
+              "xpos": "動詞",
+              "feats": {},
+              "start": 10,
+              "end": 12,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "しめ",
+              "ruby_text": "閉[し]め",
+              "ruby_spans": [
+                {
+                  "base": "閉",
+                  "reading": "し",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "しめ",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "まし",
+              "lemma": "ます",
+              "pos": "助動詞/*/*/*/助動詞-マス/連用形-一般",
+              "upos": "AUX",
+              "xpos": "助動詞",
+              "feats": {},
+              "start": 12,
+              "end": 14,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "まし",
+              "ruby_text": "まし",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "まし"
+            },
+            {
+              "surface": "た",
+              "lemma": "た",
+              "pos": "助動詞/*/*/*/助動詞-タ/終止形-一般",
+              "upos": "AUX",
+              "xpos": "助動詞",
+              "feats": {},
+              "start": 14,
+              "end": 15,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "た",
+              "ruby_text": "た",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "た"
+            },
+            {
+              "surface": "。",
+              "lemma": "。",
+              "pos": "補助記号/句点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 15,
+              "end": 16,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "。",
+              "ruby_text": "。",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "。"
+            }
+          ],
+          "reading": "ごめんなさい、どあをしめました。",
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "warnings": [
+            "mediawiki ruby hints applied"
+          ]
+        },
+        "generated_tokens": [
+          {
+            "surface": "ごめん",
+            "lemma": "ごめん",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ごめん",
+            "ruby_text": "ごめん",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "ごめん"
+          },
+          {
+            "surface": "なさい",
+            "lemma": "なさる",
+            "pos": "動詞/非自立可能/*/*/五段-ラ行/命令形",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 3,
+            "end": 6,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "なさい",
+            "ruby_text": "なさい",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "なさい"
+          },
+          {
+            "surface": "、",
+            "lemma": "、",
+            "pos": "補助記号/読点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 6,
+            "end": 7,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "、",
+            "ruby_text": "、",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "、"
+          },
+          {
+            "surface": "ドア",
+            "lemma": "ドア",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 7,
+            "end": 9,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "どあ",
+            "ruby_text": "ドア",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "どあ"
+          },
+          {
+            "surface": "を",
+            "lemma": "を",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 9,
+            "end": 10,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "を",
+            "ruby_text": "を",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "を"
+          },
+          {
+            "surface": "閉め",
+            "lemma": "閉める",
+            "pos": "動詞/一般/*/*/下一段-マ行/連用形-一般",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 10,
+            "end": 12,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "しめ",
+            "ruby_text": "閉[し]め",
+            "ruby_spans": [
+              {
+                "base": "閉",
+                "reading": "し",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "しめ",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "まし",
+            "lemma": "ます",
+            "pos": "助動詞/*/*/*/助動詞-マス/連用形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 12,
+            "end": 14,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "まし",
+            "ruby_text": "まし",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "まし"
+          },
+          {
+            "surface": "た",
+            "lemma": "た",
+            "pos": "助動詞/*/*/*/助動詞-タ/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 14,
+            "end": 15,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "た",
+            "ruby_text": "た",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "た"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 15,
+            "end": 16,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
+          }
+        ],
+        "generated_reading": "ごめんなさい、どあをしめました。",
+        "analyzer": "sudachipy_sudachidict_core_c",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-18T17:39:16Z",
+        "updated_utc": "2026-10-18T17:40:42Z",
+        "applied_utc": "2026-10-18T17:40:42Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      },
+      {
+        "id": "sentprop-0437f68fd300df17",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "ja_n3:de67b72ed4efa4c0",
+        "pack_code": "ja_n3",
+        "entry_id": "ごめんなさい",
+        "language": "ja",
+        "sentence_index": 4,
+        "old_sentence": "ほんとうにごめんなさい。",
+        "old_translations": {
+          "en": "I'm truly sorry.",
+          "ar": "أنا آسف حقًا.",
+          "cs": "Opravdu se omlouvám.",
+          "da": "Jeg er virkelig ked af det.",
+          "de": "Es tut mir wirklich leid.",
+          "el": "Λυπάμαι πολύ.",
+          "es": "Lo siento mucho.",
+          "fi": "Olen todella pahoillani.",
+          "fr": "Je suis vraiment désolé.",
+          "he": "אני ממש מצטער.",
+          "hi": "मुझे बहुत खेद है।",
+          "hu": "Nagyon sajnálom.",
+          "id": "Saya benar-benar minta maaf.",
+          "it": "Mi dispiace davvero molto.",
+          "ko": "정말 죄송합니다.",
+          "nb": "Jeg er veldig lei meg.",
+          "nl": "Het spijt me heel erg.",
+          "pl": "Naprawdę przepraszam.",
+          "pt": "Desculpe muito.",
+          "ro": "Îmi pare foarte rău.",
+          "ru": "Мне очень жаль.",
+          "sv": "Jag är verkligen ledsen.",
+          "tr": "Gerçekten üzgünüm.",
+          "uk": "Мені дуже шкода.",
+          "vi": "Tôi thật sự xin lỗi.",
+          "yue": "我真係好對唔住。",
+          "zh-Hans": "我真的很抱歉。"
+        },
+        "proposed_sentence": "本当にごめんなさい。",
+        "proposed_translations": {
+          "en": "I'm truly sorry.",
+          "ar": "أنا آسف حقًا.",
+          "cs": "Opravdu se omlouvám.",
+          "da": "Jeg er virkelig ked af det.",
+          "de": "Es tut mir wirklich leid.",
+          "el": "Λυπάμαι πολύ.",
+          "es": "Lo siento mucho.",
+          "fi": "Olen todella pahoillani.",
+          "fr": "Je suis vraiment désolé.",
+          "he": "אני ממש מצטער.",
+          "hi": "मुझे बहुत खेद है।",
+          "hu": "Nagyon sajnálom.",
+          "id": "Saya benar-benar minta maaf.",
+          "it": "Mi dispiace davvero molto.",
+          "ko": "정말 죄송합니다.",
+          "nb": "Jeg er veldig lei meg.",
+          "nl": "Het spijt me heel erg.",
+          "pl": "Naprawdę przepraszam.",
+          "pt": "Desculpe muito.",
+          "ro": "Îmi pare foarte rău.",
+          "ru": "Мне очень жаль.",
+          "sv": "Jag är verkligen ledsen.",
+          "tr": "Gerçekten üzgünüm.",
+          "uk": "Мені дуже шкода.",
+          "vi": "Tôi thật sự xin lỗi.",
+          "yue": "我真係好對唔住。",
+          "zh-Hans": "我真的很抱歉。"
+        },
+        "old_ruby_source": "ほんとうにごめんなさい。",
+        "proposed_ruby_source": "本当[ほんとう]にごめんなさい。",
+        "old_japanese": "ほんとうにごめんなさい。",
+        "old_english": "I'm truly sorry.",
+        "proposed_japanese": "本当にごめんなさい。",
+        "proposed_english": "I'm truly sorry.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "ja",
+          "sentence": "本当にごめんなさい。",
+          "tokens": [
+            {
+              "surface": "本当",
+              "lemma": "本当",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 0,
+              "end": 2,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "ほんとう",
+              "ruby_text": "本当[ほんとう]",
+              "ruby_spans": [
+                {
+                  "base": "本当",
+                  "reading": "ほんとう",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "ほんとう",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "に",
+              "lemma": "に",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 2,
+              "end": 3,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "に",
+              "ruby_text": "に",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "に"
+            },
+            {
+              "surface": "ごめん",
+              "lemma": "ごめん",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 3,
+              "end": 6,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "ごめん",
+              "ruby_text": "ごめん",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "ごめん"
+            },
+            {
+              "surface": "なさい",
+              "lemma": "なさる",
+              "pos": "動詞/非自立可能/*/*/五段-ラ行/命令形",
+              "upos": "VERB",
+              "xpos": "動詞",
+              "feats": {},
+              "start": 6,
+              "end": 9,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "なさい",
+              "ruby_text": "なさい",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "なさい"
+            },
+            {
+              "surface": "。",
+              "lemma": "。",
+              "pos": "補助記号/句点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 9,
+              "end": 10,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "。",
+              "ruby_text": "。",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "。"
+            }
+          ],
+          "reading": "ほんとうにごめんなさい。",
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "warnings": [
+            "mediawiki ruby hints applied"
+          ]
+        },
+        "generated_tokens": [
+          {
+            "surface": "本当",
+            "lemma": "本当",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ほんとう",
+            "ruby_text": "本当[ほんとう]",
+            "ruby_spans": [
+              {
+                "base": "本当",
+                "reading": "ほんとう",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "ほんとう",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "に",
+            "lemma": "に",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 2,
+            "end": 3,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "に",
+            "ruby_text": "に",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "に"
+          },
+          {
+            "surface": "ごめん",
+            "lemma": "ごめん",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 3,
+            "end": 6,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ごめん",
+            "ruby_text": "ごめん",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "ごめん"
+          },
+          {
+            "surface": "なさい",
+            "lemma": "なさる",
+            "pos": "動詞/非自立可能/*/*/五段-ラ行/命令形",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 6,
+            "end": 9,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "なさい",
+            "ruby_text": "なさい",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "なさい"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 9,
+            "end": 10,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
+          }
+        ],
+        "generated_reading": "ほんとうにごめんなさい。",
+        "analyzer": "sudachipy_sudachidict_core_c",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-18T17:39:16Z",
+        "updated_utc": "2026-10-18T17:40:42Z",
+        "applied_utc": "2026-10-18T17:40:42Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-18T17:40:42Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -647,12 +1382,6 @@
       "ごめんなさい、ぶつかってしまいました。",
       "ごめんなさい、どあをしめました。",
       "ほんとうにごめんなさい。"
-    ],
-    "en": [
-      "I'm sorry.",
-      "I'm sorry, I bumped into you.",
-      "I'm sorry, I closed the door.",
-      "I'm truly sorry."
     ],
     "generation": {
       "generator": "vocomipedia_source_generator.py",
@@ -691,190 +1420,6 @@
         "parts_of_speech": "Expressions (phrases, clauses, etc.)"
       }
     },
-    "word_en": "I'm sorry; my apologies; excuse me; pardon me",
-    "word_es": "perdón",
-    "word_fr": "pardon",
-    "word_de": "Entschuldigung",
-    "word_it": "scusa",
-    "word_ko": "미안합니다",
-    "word_zh-Hans": "对不起",
-    "word_yue": "對唔住",
-    "word_ru": "извините",
-    "word_pt": "desculpa",
-    "word_he": "סליחה",
-    "word_tr": "özür dilerim",
-    "word_vi": "xin lỗi",
-    "word_ar": "آسف",
-    "word_nl": "sorry",
-    "word_uk": "вибачте",
-    "word_hu": "bocsánat",
-    "word_hi": "माफ़ कीजिए",
-    "word_pl": "przepraszam",
-    "word_el": "συγγνώμη",
-    "word_nb": "unnskyld",
-    "word_id": "maaf",
-    "word_sv": "förlåt",
-    "word_ro": "scuze",
-    "word_cs": "promiňte",
-    "word_da": "undskyld",
-    "word_fi": "anteeksi",
-    "word_ja": "ごめんなさい",
-    "ar": [
-      "أنا آسف.",
-      "آسف، اصطدمت بك.",
-      "آسف، أغلقت الباب.",
-      "أنا آسف حقًا."
-    ],
-    "cs": [
-      "Promiňte.",
-      "Promiňte, narazil jsem do vás.",
-      "Promiňte, zavřel jsem dveře.",
-      "Opravdu se omlouvám."
-    ],
-    "da": [
-      "Undskyld.",
-      "Undskyld, jeg stødte ind i dig.",
-      "Undskyld, jeg lukkede døren.",
-      "Jeg er virkelig ked af det."
-    ],
-    "de": [
-      "Entschuldigung.",
-      "Entschuldigung, ich bin gegen Sie gestoßen.",
-      "Entschuldigung, ich habe die Tür zugemacht.",
-      "Es tut mir wirklich leid."
-    ],
-    "el": [
-      "Συγγνώμη.",
-      "Συγγνώμη, σε έσπρωξα κατά λάθος.",
-      "Συγγνώμη, έκλεισα την πόρτα.",
-      "Λυπάμαι πολύ."
-    ],
-    "es": [
-      "Perdón.",
-      "Perdón, choqué contigo.",
-      "Perdón, cerré la puerta.",
-      "Lo siento mucho."
-    ],
-    "fi": [
-      "Anteeksi.",
-      "Anteeksi, törmäsin sinuun.",
-      "Anteeksi, suljin oven.",
-      "Olen todella pahoillani."
-    ],
-    "fr": [
-      "Pardon.",
-      "Pardon, je vous ai bousculé.",
-      "Pardon, j'ai fermé la porte.",
-      "Je suis vraiment désolé."
-    ],
-    "he": [
-      "סליחה.",
-      "סליחה, התנגשתי בך.",
-      "סליחה, סגרתי את הדלת.",
-      "אני ממש מצטער."
-    ],
-    "hi": [
-      "माफ़ कीजिए।",
-      "माफ़ कीजिए, मैं आपसे टकरा गया।",
-      "माफ़ कीजिए, मैंने दरवाज़ा बंद कर दिया।",
-      "मुझे बहुत खेद है।"
-    ],
-    "hu": [
-      "Elnézést.",
-      "Elnézést, nekimentem.",
-      "Elnézést, becsuktam az ajtót.",
-      "Nagyon sajnálom."
-    ],
-    "id": [
-      "Maaf.",
-      "Maaf, saya menabrak Anda.",
-      "Maaf, saya menutup pintunya.",
-      "Saya benar-benar minta maaf."
-    ],
-    "it": [
-      "Mi dispiace.",
-      "Mi dispiace, ti ho urtato.",
-      "Mi dispiace, ho chiuso la porta.",
-      "Mi dispiace davvero molto."
-    ],
-    "ko": [
-      "죄송합니다.",
-      "죄송합니다, 부딪쳤습니다.",
-      "죄송합니다, 문을 닫았습니다.",
-      "정말 죄송합니다."
-    ],
-    "nb": [
-      "Unnskyld.",
-      "Unnskyld, jeg støtte borti deg.",
-      "Unnskyld, jeg lukket døren.",
-      "Jeg er veldig lei meg."
-    ],
-    "nl": [
-      "Sorry.",
-      "Sorry, ik botste tegen je aan.",
-      "Sorry, ik deed de deur dicht.",
-      "Het spijt me heel erg."
-    ],
-    "pl": [
-      "Przepraszam.",
-      "Przepraszam, wpadłem na ciebie.",
-      "Przepraszam, zamknąłem drzwi.",
-      "Naprawdę przepraszam."
-    ],
-    "pt": [
-      "Desculpe.",
-      "Desculpe, esbarrei em você.",
-      "Desculpe, fechei a porta.",
-      "Desculpe muito."
-    ],
-    "ro": [
-      "Scuze.",
-      "Scuze, te-am lovit.",
-      "Scuze, am închis ușa.",
-      "Îmi pare foarte rău."
-    ],
-    "ru": [
-      "Извините.",
-      "Извините, я вас задел.",
-      "Извините, я закрыл дверь.",
-      "Мне очень жаль."
-    ],
-    "sv": [
-      "Förlåt.",
-      "Förlåt, jag råkade stöta till dig.",
-      "Förlåt, jag stängde dörren.",
-      "Jag är verkligen ledsen."
-    ],
-    "tr": [
-      "Affedersiniz.",
-      "Affedersiniz, size çarptım.",
-      "Affedersiniz, kapıyı kapattım.",
-      "Gerçekten üzgünüm."
-    ],
-    "uk": [
-      "Пробачте.",
-      "Пробачте, я вас штовхнув.",
-      "Пробачте, я зачинив двері.",
-      "Мені дуже шкода."
-    ],
-    "vi": [
-      "Xin lỗi.",
-      "Xin lỗi, tôi đã va vào bạn.",
-      "Xin lỗi, tôi đã đóng cửa.",
-      "Tôi thật sự xin lỗi."
-    ],
-    "yue": [
-      "唔好意思。",
-      "唔好意思，我撞到你。",
-      "唔好意思，我閂咗道門。",
-      "我真係好對唔住。"
-    ],
-    "zh-Hans": [
-      "对不起。",
-      "对不起，我撞到你了。",
-      "对不起，我把门关上了。",
-      "我真的很抱歉。"
-    ],
     "pos_analysis": [
       {
         "sentence": "ごめんなさい。",
@@ -1085,7 +1630,7 @@
         "difficulty_aggregated": null
       },
       {
-        "sentence": "ごめんなさい、ドアをしめました。",
+        "sentence": "ごめんなさい、ドアを閉めました。",
         "tokens": [
           {
             "surface": "ごめん",
@@ -1170,8 +1715,8 @@
             "furigana": "を"
           },
           {
-            "surface": "しめ",
-            "lemma": "しめる",
+            "surface": "閉め",
+            "lemma": "閉める",
             "pos": "動詞/一般/*/*/下一段-マ行/連用形-一般",
             "upos": "VERB",
             "xpos": "動詞",
@@ -1180,10 +1725,18 @@
             "end": 12,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "しめ",
-            "ruby_text": "しめ",
-            "ruby_spans": [],
-            "ruby_confidence": "high",
-            "furigana": "しめ"
+            "ruby_text": "閉[し]め",
+            "ruby_spans": [
+              {
+                "base": "閉",
+                "reading": "し",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "しめ",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "まし",
@@ -1237,23 +1790,31 @@
         "difficulty_aggregated": null
       },
       {
-        "sentence": "ほんとうにごめんなさい。",
+        "sentence": "本当にごめんなさい。",
         "tokens": [
           {
-            "surface": "ほんとう",
-            "lemma": "ほんとう",
+            "surface": "本当",
+            "lemma": "本当",
             "pos": "名詞/普通名詞/一般/*/*/*",
             "upos": "NOUN",
             "xpos": "名詞",
             "feats": {},
             "start": 0,
-            "end": 4,
+            "end": 2,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "ほんとう",
-            "ruby_text": "ほんとう",
-            "ruby_spans": [],
-            "ruby_confidence": "high",
-            "furigana": "ほんとう"
+            "ruby_text": "本当[ほんとう]",
+            "ruby_spans": [
+              {
+                "base": "本当",
+                "reading": "ほんとう",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "ほんとう",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "に",
@@ -1262,8 +1823,8 @@
             "upos": "PART",
             "xpos": "助詞",
             "feats": {},
-            "start": 4,
-            "end": 5,
+            "start": 2,
+            "end": 3,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "に",
             "ruby_text": "に",
@@ -1278,8 +1839,8 @@
             "upos": "NOUN",
             "xpos": "名詞",
             "feats": {},
-            "start": 5,
-            "end": 8,
+            "start": 3,
+            "end": 6,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "ごめん",
             "ruby_text": "ごめん",
@@ -1295,8 +1856,8 @@
             "upos": "VERB",
             "xpos": "動詞",
             "feats": {},
-            "start": 8,
-            "end": 11,
+            "start": 6,
+            "end": 9,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "なさい",
             "ruby_text": "なさい",
@@ -1312,8 +1873,8 @@
             "upos": "PUNCT",
             "xpos": "補助記号",
             "feats": {},
-            "start": 11,
-            "end": 12,
+            "start": 9,
+            "end": 10,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "。",
             "ruby_text": "。",
@@ -1324,6 +1885,196 @@
         ],
         "difficulty_aggregated": null
       }
+    ],
+    "word_en": "I'm sorry; my apologies; excuse me; pardon me",
+    "word_es": "perdón",
+    "word_fr": "pardon",
+    "word_de": "Entschuldigung",
+    "word_it": "scusa",
+    "word_ko": "미안합니다",
+    "word_zh-Hans": "对不起",
+    "word_yue": "對唔住",
+    "word_ru": "извините",
+    "word_pt": "desculpa",
+    "word_he": "סליחה",
+    "word_tr": "özür dilerim",
+    "word_vi": "xin lỗi",
+    "word_ar": "آسف",
+    "word_nl": "sorry",
+    "word_uk": "вибачте",
+    "word_hu": "bocsánat",
+    "word_hi": "माफ़ कीजिए",
+    "word_pl": "przepraszam",
+    "word_el": "συγγνώμη",
+    "word_nb": "unnskyld",
+    "word_id": "maaf",
+    "word_sv": "förlåt",
+    "word_ro": "scuze",
+    "word_cs": "promiňte",
+    "word_da": "undskyld",
+    "word_fi": "anteeksi",
+    "word_ja": "ごめんなさい",
+    "ar": [
+      "أنا آسف.",
+      "آسف، اصطدمت بك.",
+      "آسف، أغلقت الباب.",
+      "أنا آسف حقًا."
+    ],
+    "cs": [
+      "Promiňte.",
+      "Promiňte, narazil jsem do vás.",
+      "Promiňte, zavřel jsem dveře.",
+      "Opravdu se omlouvám."
+    ],
+    "da": [
+      "Undskyld.",
+      "Undskyld, jeg stødte ind i dig.",
+      "Undskyld, jeg lukkede døren.",
+      "Jeg er virkelig ked af det."
+    ],
+    "de": [
+      "Entschuldigung.",
+      "Entschuldigung, ich bin gegen Sie gestoßen.",
+      "Entschuldigung, ich habe die Tür zugemacht.",
+      "Es tut mir wirklich leid."
+    ],
+    "el": [
+      "Συγγνώμη.",
+      "Συγγνώμη, έπεσα πάνω σου.",
+      "Συγγνώμη, έκλεισα την πόρτα.",
+      "Λυπάμαι πολύ."
+    ],
+    "en": [
+      "I'm sorry.",
+      "I'm sorry, I bumped into you.",
+      "I'm sorry, I closed the door.",
+      "I'm truly sorry."
+    ],
+    "es": [
+      "Perdón.",
+      "Perdón, choqué contigo.",
+      "Perdón, cerré la puerta.",
+      "Lo siento mucho."
+    ],
+    "fi": [
+      "Anteeksi.",
+      "Anteeksi, törmäsin sinuun.",
+      "Anteeksi, suljin oven.",
+      "Olen todella pahoillani."
+    ],
+    "fr": [
+      "Pardon.",
+      "Pardon, je vous ai bousculé.",
+      "Pardon, j'ai fermé la porte.",
+      "Je suis vraiment désolé."
+    ],
+    "he": [
+      "סליחה.",
+      "סליחה, התנגשתי בך.",
+      "סליחה, סגרתי את הדלת.",
+      "אני ממש מצטער."
+    ],
+    "hi": [
+      "माफ़ कीजिए।",
+      "माफ़ कीजिए, मैं आपसे टकरा गया।",
+      "माफ़ कीजिए, मैंने दरवाज़ा बंद कर दिया।",
+      "मुझे बहुत खेद है।"
+    ],
+    "hu": [
+      "Elnézést.",
+      "Elnézést, nekimentem.",
+      "Elnézést, becsuktam az ajtót.",
+      "Nagyon sajnálom."
+    ],
+    "id": [
+      "Maaf.",
+      "Maaf, saya menabrak Anda.",
+      "Maaf, saya menutup pintunya.",
+      "Saya benar-benar minta maaf."
+    ],
+    "it": [
+      "Mi dispiace.",
+      "Mi dispiace, ti ho urtato.",
+      "Mi dispiace, ho chiuso la porta.",
+      "Mi dispiace davvero molto."
+    ],
+    "ko": [
+      "죄송합니다.",
+      "죄송합니다, 부딪쳤습니다.",
+      "죄송합니다, 문을 닫았습니다.",
+      "정말 죄송합니다."
+    ],
+    "nb": [
+      "Unnskyld.",
+      "Unnskyld, jeg støtte borti deg.",
+      "Unnskyld, jeg lukket døren.",
+      "Jeg er veldig lei meg."
+    ],
+    "nl": [
+      "Sorry.",
+      "Sorry, ik botste tegen je aan.",
+      "Sorry, ik deed de deur dicht.",
+      "Het spijt me heel erg."
+    ],
+    "pl": [
+      "Przepraszam.",
+      "Przepraszam, wpadłem na ciebie.",
+      "Przepraszam, zamknąłem drzwi.",
+      "Naprawdę przepraszam."
+    ],
+    "pt": [
+      "Desculpe.",
+      "Desculpe, esbarrei em você.",
+      "Desculpe, fechei a porta.",
+      "Desculpe muito."
+    ],
+    "ro": [
+      "Scuze.",
+      "Scuze, m-am ciocnit de tine.",
+      "Scuze, am închis ușa.",
+      "Îmi pare foarte rău."
+    ],
+    "ru": [
+      "Извините.",
+      "Извините, я вас задел.",
+      "Извините, я закрыл дверь.",
+      "Мне очень жаль."
+    ],
+    "sv": [
+      "Förlåt.",
+      "Förlåt, jag råkade stöta till dig.",
+      "Förlåt, jag stängde dörren.",
+      "Jag är verkligen ledsen."
+    ],
+    "tr": [
+      "Affedersiniz.",
+      "Affedersiniz, size çarptım.",
+      "Affedersiniz, kapıyı kapattım.",
+      "Gerçekten üzgünüm."
+    ],
+    "uk": [
+      "Пробачте.",
+      "Перепрошую, я випадково зіткнувся з вами.",
+      "Пробачте, я зачинив двері.",
+      "Мені дуже шкода."
+    ],
+    "vi": [
+      "Xin lỗi.",
+      "Xin lỗi, tôi đã va vào bạn.",
+      "Xin lỗi, tôi đã đóng cửa.",
+      "Tôi thật sự xin lỗi."
+    ],
+    "yue": [
+      "唔好意思。",
+      "唔好意思，我撞到你。",
+      "唔好意思，我閂咗道門。",
+      "我真係好對唔住。"
+    ],
+    "zh-Hans": [
+      "对不起。",
+      "对不起，我撞到你了。",
+      "对不起，我把门关上了。",
+      "我真的很抱歉。"
     ]
   }
 }

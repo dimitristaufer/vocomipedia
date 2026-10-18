@@ -53,13 +53,13 @@
         "it": "La ragazza sta giocando con il cane.",
         "ko": "소녀는 개와 놀고 있습니다.",
         "zh-Hans": "女孩正在和狗玩耍。",
-        "yue": "女孩正在和狗玩耍。",
+        "yue": "個女仔同隻狗玩緊。",
         "ru": "Девочка играет с собакой.",
         "pt": "A menina está brincando com o cachorro.",
         "he": "הילדה משחקת עם הכלב.",
         "tr": "Kız köpekle oynuyor.",
-        "vi": "Cô gái đang chơi với.",
-        "ar": "الفتاة تلعب مع.",
+        "vi": "Cô bé đang chơi với con chó.",
+        "ar": "الفتاة تلعب مع الكلب.",
         "nl": "Het meisje speelt met de hond.",
         "uk": "Дівчинка грає з собакою.",
         "hu": "A lány a kutyával játszik.",
@@ -192,81 +192,88 @@
       "ruby_source": "sudachipy_sudachidict_core_c"
     },
     {
-      "target": "私の妹はまだ赤ちゃんの女の子だ。",
-      "reading": "わたくしのいもうとはまだあかちゃんのおんなのこだ。",
+      "target": "私の妹はまだ赤ちゃんだ。",
+      "reading": "わたしのいもうとはまだあかちゃんだ。",
       "translations": {
-        "en": "My younger sister is still a baby girl.",
-        "es": "Mi hermana menor todavía es una niña.",
-        "fr": "Ma petite sœur est encore une petite fille.",
-        "de": "Meine jüngere Schwester ist noch ein kleines Mädchen.",
+        "en": "My little sister is still just a baby.",
+        "es": "Mi hermana pequeña todavía es un bebé.",
+        "fr": "Ma petite sœur est encore un bébé.",
+        "de": "Meine kleine Schwester ist noch ein Baby.",
         "it": "Mia sorella minore è ancora una bambina.",
-        "ko": "제 여동생은 아직 딸입니다.",
+        "ko": "제 여동생은 아직 아기예요.",
         "zh-Hans": "我的妹妹还是个女婴。",
         "yue": "我嘅妹還是個女嬰。",
-        "ru": "Моя младшая сестра еще маленькая девочка.",
-        "pt": "Minha irmã mais nova ainda é uma menina.",
+        "ru": "Моя младшая сестра ещё совсем малышка.",
+        "pt": "Minha irmã mais nova ainda é um bebê.",
         "he": "אחותי הצעירה עדיין תינוקת.",
-        "tr": "Küçük kız kardeşim hala bir kız çocuğu.",
-        "vi": "Em gái tôi vẫn còn là một bé gái.",
-        "ar": "أختي الصغرى لا تزال طفلة.",
-        "nl": "Mijn jongere zus is nog een meisje.",
-        "uk": "Моя молодша сестра ще маленька дівчинка.",
-        "hu": "A húgom még kislány.",
-        "hi": "मेरी छोटी बहन अभी भी एक बच्ची है।",
-        "pl": "Moja młodsza siostra jest jeszcze córeczką.",
-        "el": "Η μικρότερη αδερφή μου είναι ακόμα κοριτσάκι.",
-        "nb": "Min yngre søster er fortsatt en liten jente.",
+        "tr": "Küçük kız kardeşim hâlâ bir bebek.",
+        "vi": "Em gái tôi vẫn còn là một em bé.",
+        "ar": "أختي الصغيرة ما زالت طفلة رضيعة.",
+        "nl": "Mijn zusje is nog een baby.",
+        "uk": "Моя молодша сестра ще зовсім немовля.",
+        "hu": "A húgom még csecsemő.",
+        "hi": "मेरी छोटी बहन अभी भी एक शिशु है।",
+        "pl": "Moja młodsza siostra jest jeszcze niemowlęciem.",
+        "el": "Η μικρότερη αδερφή μου είναι ακόμα μωρό.",
+        "nb": "Min lillesøster er fortsatt bare en baby.",
         "id": "Adik perempuan saya masih bayi perempuan.",
-        "sv": "Min lillasyster är fortfarande en liten flicka.",
-        "ro": "Sora mea mai mică este încă o fetiță.",
-        "cs": "Moje mladší sestra je ještě holčička.",
-        "da": "Min lillesøster er stadig en lille pige.",
+        "sv": "Min lillasyster är fortfarande en bebis.",
+        "ro": "Sora mea mai mică este încă un bebeluș.",
+        "cs": "Moje mladší sestra je ještě miminko.",
+        "da": "Min lillesøster er stadig en baby.",
         "fi": "Pikkusiskoni on vielä tyttövauva."
       },
       "tokens": [
         {
           "surface": "私",
-          "surface_en": "I",
-          "furigana": "わたくし",
-          "pos": "pronoun",
           "lemma": "私",
-          "difficulty": 6,
-          "explanation": "Refers to the speaker, showing possession.",
-          "reading_kana": "わたくし",
-          "ruby_text": "私[わたくし]",
+          "pos": "代名詞/*/*/*/*/*",
+          "upos": "PRON",
+          "xpos": "代名詞",
+          "feats": {},
+          "start": 0,
+          "end": 1,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "わたし",
+          "ruby_text": "私[わたし]",
           "ruby_spans": [
             {
               "base": "私",
-              "reading": "わたくし",
+              "reading": "わたし",
               "start": 0,
               "length": 1
             }
           ],
-          "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "ruby_confidence": "reviewed",
+          "furigana": "わたし",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "の",
-          "surface_en": "of",
-          "furigana": "の",
-          "pos": "particle",
           "lemma": "の",
-          "difficulty": 1,
-          "explanation": "Possessive particle linking '私' and '妹'.",
+          "pos": "助詞/格助詞/*/*/*/*",
+          "upos": "PART",
+          "xpos": "助詞",
+          "feats": {},
+          "start": 1,
+          "end": 2,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "の",
           "ruby_text": "の",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "の"
         },
         {
           "surface": "妹",
-          "surface_en": "younger sister",
-          "furigana": "いもうと",
-          "pos": "noun",
           "lemma": "妹",
-          "difficulty": 6,
-          "explanation": "The person possessed by the speaker, serving as the topic.",
+          "pos": "名詞/普通名詞/一般/*/*/*",
+          "upos": "NOUN",
+          "xpos": "名詞",
+          "feats": {},
+          "start": 2,
+          "end": 3,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "いもうと",
           "ruby_text": "妹[いもうと]",
           "ruby_spans": [
@@ -277,45 +284,52 @@
               "length": 1
             }
           ],
-          "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "ruby_confidence": "reviewed",
+          "furigana": "いもうと",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "は",
-          "surface_en": "topic marker",
-          "furigana": "は",
-          "pos": "particle",
           "lemma": "は",
-          "difficulty": 1,
-          "explanation": "Marks '妹' as the topic of the sentence.",
+          "pos": "助詞/係助詞/*/*/*/*",
+          "upos": "PART",
+          "xpos": "助詞",
+          "feats": {},
+          "start": 3,
+          "end": 4,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "は",
           "ruby_text": "は",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "は"
         },
         {
           "surface": "まだ",
-          "surface_en": "still",
-          "furigana": "まだ",
-          "pos": "adverb",
           "lemma": "まだ",
-          "difficulty": 1,
-          "explanation": "Indicates that the state has not changed; she remains a baby girl.",
+          "pos": "副詞/*/*/*/*/*",
+          "upos": "ADV",
+          "xpos": "副詞",
+          "feats": {},
+          "start": 4,
+          "end": 6,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "まだ",
           "ruby_text": "まだ",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "まだ"
         },
         {
           "surface": "赤ちゃん",
-          "surface_en": "baby",
-          "furigana": "あかちゃん",
-          "pos": "noun",
           "lemma": "赤ちゃん",
-          "difficulty": 4,
-          "explanation": "Describes the stage of life relevant to the subject.",
+          "pos": "名詞/普通名詞/一般/*/*/*",
+          "upos": "NOUN",
+          "xpos": "名詞",
+          "feats": {},
+          "start": 6,
+          "end": 10,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "あかちゃん",
           "ruby_text": "赤[あか]ちゃん",
           "ruby_spans": [
@@ -326,64 +340,41 @@
               "length": 1
             }
           ],
-          "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
-        },
-        {
-          "surface": "の",
-          "surface_en": "of",
-          "furigana": "の",
-          "pos": "particle",
-          "lemma": "の",
-          "difficulty": 1,
-          "explanation": "Links '赤ちゃん' and '女の子' to form 'baby girl.'",
-          "reading_kana": "の",
-          "ruby_text": "の",
-          "ruby_spans": [],
-          "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
-        },
-        {
-          "surface": "女の子",
-          "surface_en": "girl",
-          "furigana": "おんなのこ",
-          "pos": "noun",
-          "lemma": "女の子",
-          "difficulty": 2,
-          "explanation": "The noun being predicated about the topic.",
-          "is_main_word": true,
-          "reading_kana": "おんなのこ",
-          "ruby_text": "女[おんな]の子[こ]",
-          "ruby_spans": [
-            {
-              "base": "女",
-              "reading": "おんな",
-              "start": 0,
-              "length": 1
-            },
-            {
-              "base": "子",
-              "reading": "こ",
-              "start": 2,
-              "length": 1
-            }
-          ],
-          "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "ruby_confidence": "reviewed",
+          "furigana": "あかちゃん",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "だ",
-          "surface_en": "is",
-          "furigana": "だ",
-          "pos": "copula",
           "lemma": "だ",
-          "difficulty": 1,
-          "explanation": "Copula asserting that the topic is a baby girl.",
+          "pos": "助動詞/*/*/*/助動詞-ダ/終止形-一般",
+          "upos": "AUX",
+          "xpos": "助動詞",
+          "feats": {},
+          "start": 10,
+          "end": 11,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "だ",
           "ruby_text": "だ",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "だ"
+        },
+        {
+          "surface": "。",
+          "lemma": "。",
+          "pos": "補助記号/句点/*/*/*/*",
+          "upos": "PUNCT",
+          "xpos": "補助記号",
+          "feats": {},
+          "start": 11,
+          "end": 12,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "。",
+          "ruby_text": "。",
+          "ruby_spans": [],
+          "ruby_confidence": "high",
+          "furigana": "。"
         }
       ],
       "difficulty": 0,
@@ -406,7 +397,7 @@
         "he": "בדרך הביתה מבית הספר ראיתי ילדה קטנה.",
         "tr": "Okuldan eve dönerken küçük bir kız çocuğu gördüm.",
         "vi": "Trên đường đi học về, tôi nhìn thấy một bé gái.",
-        "ar": "في طريق العودة إلى المنزل من المدرسة ، رأيت فتاة صغيرة.",
+        "ar": "في طريق العودة إلى المنزل من المدرسة، رأيت فتاة صغيرة.",
         "nl": "Op weg naar huis van school zag ik een klein meisje.",
         "uk": "По дорозі додому зі школи я побачила маленьку дівчинку.",
         "hu": "Az iskolából hazafelé menet megláttam egy kislányt.",
@@ -591,7 +582,7 @@
         "it": "Le ragazze giocano a nascondino nel parco.",
         "ko": "소녀들은 공원에서 숨바꼭질을 하고 있습니다.",
         "zh-Hans": "女孩们在公园里玩捉迷藏。",
-        "yue": "女們喺公園度玩捉迷藏。",
+        "yue": "啲女仔喺公園玩捉迷藏。",
         "ru": "Девочки играют в прятки в парке.",
         "pt": "As meninas estão brincando de esconde-esconde no parque.",
         "he": "בנות משחקות מחבואים בפארק.",
@@ -602,7 +593,7 @@
         "uk": "Дівчата грають у хованки в парку.",
         "hu": "Lányok bújócskáznak a parkban.",
         "hi": "लड़कियां पार्क में लुका-छिपी खेल रही हैं।",
-        "pl": "Dziewczyny bawią się в chowanego w parku.",
+        "pl": "Dziewczyny bawią się w chowanego w parku.",
         "el": "Τα κορίτσια παίζουν κρυφτό στο πάρκο.",
         "nb": "Jenter leker gjemsel i parken.",
         "id": "Gadis-gadis bermain petak umpet di taman.",
@@ -751,19 +742,436 @@
     "content_reviewers": [
       "mediawiki-visible-revision"
     ],
-    "last_reviewed_utc": "2026-06-21T18:27:44Z",
-    "approval_source": "mediawiki_visible_revision",
+    "last_reviewed_utc": "2026-10-11T08:27:47Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
     "wiki": {
       "title": "Item:Ja n5/bb9ff5327b88baca",
-      "revision_id": 58099,
-      "parent_revision_id": 36543,
-      "revision_timestamp_utc": "2026-06-21T18:27:44Z",
-      "revision_user": "VocomiBot",
-      "revision_comment": "Sync ja_n5 item 女の子",
-      "pulled_utc": "2026-06-21T20:53:44Z",
-      "applied_utc": "2026-06-21T20:53:59Z",
+      "revision_id": 83044,
+      "parent_revision_id": 68976,
+      "revision_timestamp_utc": "2026-10-11T08:27:47Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Suggest reviewed Japanese and translation corrections",
+      "pulled_utc": "2026-10-17T07:37:38Z",
+      "applied_utc": "2026-10-17T07:37:56Z",
       "applied_by": "vocomipedia-apply-pulled"
-    }
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-2df16eceb42f4b95",
+        "status": "applied",
+        "type": "ruby_update",
+        "item_id": "ja_n5:bb9ff5327b88baca",
+        "pack_code": "ja_n5",
+        "entry_id": "女の子",
+        "language": "ja",
+        "sentence_index": 2,
+        "old_sentence": "私の妹はまだ赤ちゃんだ。",
+        "old_translations": {
+          "en": "My little sister is still just a baby.",
+          "es": "Mi hermana pequeña todavía es un bebé.",
+          "fr": "Ma petite sœur est encore un bébé.",
+          "de": "Meine kleine Schwester ist noch ein Baby.",
+          "it": "Mia sorella minore è ancora una bambina.",
+          "ko": "제 여동생은 아직 아기예요.",
+          "zh-Hans": "我的妹妹还是个女婴。",
+          "yue": "我嘅妹還是個女嬰。",
+          "ru": "Моя младшая сестра ещё совсем малышка.",
+          "pt": "Minha irmã mais nova ainda é um bebê.",
+          "he": "אחותי הצעירה עדיין תינוקת.",
+          "tr": "Küçük kız kardeşim hâlâ bir bebek.",
+          "vi": "Em gái tôi vẫn còn là một em bé.",
+          "ar": "أختي الصغيرة ما زالت طفلة رضيعة.",
+          "nl": "Mijn zusje is nog een baby.",
+          "uk": "Моя молодша сестра ще зовсім немовля.",
+          "hu": "A húgom még csecsemő.",
+          "hi": "मेरी छोटी बहन अभी भी एक शिशु है।",
+          "pl": "Moja młodsza siostra jest jeszcze niemowlęciem.",
+          "el": "Η μικρότερη αδερφή μου είναι ακόμα μωρό.",
+          "nb": "Min lillesøster er fortsatt bare en baby.",
+          "id": "Adik perempuan saya masih bayi perempuan.",
+          "sv": "Min lillasyster är fortfarande en bebis.",
+          "ro": "Sora mea mai mică este încă un bebeluș.",
+          "cs": "Moje mladší sestra je ještě miminko.",
+          "da": "Min lillesøster er stadig en baby.",
+          "fi": "Pikkusiskoni on vielä tyttövauva."
+        },
+        "proposed_sentence": "私の妹はまだ赤ちゃんだ。",
+        "proposed_translations": {
+          "en": "My little sister is still just a baby.",
+          "es": "Mi hermana pequeña todavía es un bebé.",
+          "fr": "Ma petite sœur est encore un bébé.",
+          "de": "Meine kleine Schwester ist noch ein Baby.",
+          "it": "Mia sorella minore è ancora una bambina.",
+          "ko": "제 여동생은 아직 아기예요.",
+          "zh-Hans": "我的妹妹还是个女婴。",
+          "yue": "我嘅妹還是個女嬰。",
+          "ru": "Моя младшая сестра ещё совсем малышка.",
+          "pt": "Minha irmã mais nova ainda é um bebê.",
+          "he": "אחותי הצעירה עדיין תינוקת.",
+          "tr": "Küçük kız kardeşim hâlâ bir bebek.",
+          "vi": "Em gái tôi vẫn còn là một em bé.",
+          "ar": "أختي الصغيرة ما زالت طفلة رضيعة.",
+          "nl": "Mijn zusje is nog een baby.",
+          "uk": "Моя молодша сестра ще зовсім немовля.",
+          "hu": "A húgom még csecsemő.",
+          "hi": "मेरी छोटी बहन अभी भी एक शिशु है।",
+          "pl": "Moja młodsza siostra jest jeszcze niemowlęciem.",
+          "el": "Η μικρότερη αδερφή μου είναι ακόμα μωρό.",
+          "nb": "Min lillesøster er fortsatt bare en baby.",
+          "id": "Adik perempuan saya masih bayi perempuan.",
+          "sv": "Min lillasyster är fortfarande en bebis.",
+          "ro": "Sora mea mai mică este încă un bebeluș.",
+          "cs": "Moje mladší sestra je ještě miminko.",
+          "da": "Min lillesøster er stadig en baby.",
+          "fi": "Pikkusiskoni on vielä tyttövauva."
+        },
+        "old_ruby_source": "私[わたし]の妹[いもうと]はまだ赤ちゃんだ。",
+        "proposed_ruby_source": "私[わたし]の妹[いもうと]はまだ赤[あか]ちゃんだ。",
+        "old_japanese": "私の妹はまだ赤ちゃんだ。",
+        "old_english": "My little sister is still just a baby.",
+        "proposed_japanese": "私の妹はまだ赤ちゃんだ。",
+        "proposed_english": "My little sister is still just a baby.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "ja",
+          "sentence": "私の妹はまだ赤ちゃんだ。",
+          "tokens": [
+            {
+              "surface": "私",
+              "lemma": "私",
+              "pos": "代名詞/*/*/*/*/*",
+              "upos": "PRON",
+              "xpos": "代名詞",
+              "feats": {},
+              "start": 0,
+              "end": 1,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "わたし",
+              "ruby_text": "私[わたし]",
+              "ruby_spans": [
+                {
+                  "base": "私",
+                  "reading": "わたし",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "わたし",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "の",
+              "lemma": "の",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 1,
+              "end": 2,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "の",
+              "ruby_text": "の",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "の"
+            },
+            {
+              "surface": "妹",
+              "lemma": "妹",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 2,
+              "end": 3,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "いもうと",
+              "ruby_text": "妹[いもうと]",
+              "ruby_spans": [
+                {
+                  "base": "妹",
+                  "reading": "いもうと",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "いもうと",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "は",
+              "lemma": "は",
+              "pos": "助詞/係助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 3,
+              "end": 4,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "は",
+              "ruby_text": "は",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "は"
+            },
+            {
+              "surface": "まだ",
+              "lemma": "まだ",
+              "pos": "副詞/*/*/*/*/*",
+              "upos": "ADV",
+              "xpos": "副詞",
+              "feats": {},
+              "start": 4,
+              "end": 6,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "まだ",
+              "ruby_text": "まだ",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "まだ"
+            },
+            {
+              "surface": "赤ちゃん",
+              "lemma": "赤ちゃん",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 6,
+              "end": 10,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "あかちゃん",
+              "ruby_text": "赤[あか]ちゃん",
+              "ruby_spans": [
+                {
+                  "base": "赤",
+                  "reading": "あか",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "あかちゃん",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "だ",
+              "lemma": "だ",
+              "pos": "助動詞/*/*/*/助動詞-ダ/終止形-一般",
+              "upos": "AUX",
+              "xpos": "助動詞",
+              "feats": {},
+              "start": 10,
+              "end": 11,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "だ",
+              "ruby_text": "だ",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "だ"
+            },
+            {
+              "surface": "。",
+              "lemma": "。",
+              "pos": "補助記号/句点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 11,
+              "end": 12,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "。",
+              "ruby_text": "。",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "。"
+            }
+          ],
+          "reading": "わたしのいもうとはまだあかちゃんだ。",
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "warnings": [
+            "mediawiki ruby hints applied"
+          ]
+        },
+        "generated_tokens": [
+          {
+            "surface": "私",
+            "lemma": "私",
+            "pos": "代名詞/*/*/*/*/*",
+            "upos": "PRON",
+            "xpos": "代名詞",
+            "feats": {},
+            "start": 0,
+            "end": 1,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "わたし",
+            "ruby_text": "私[わたし]",
+            "ruby_spans": [
+              {
+                "base": "私",
+                "reading": "わたし",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "わたし",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "の",
+            "lemma": "の",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 1,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "の",
+            "ruby_text": "の",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "の"
+          },
+          {
+            "surface": "妹",
+            "lemma": "妹",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 2,
+            "end": 3,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "いもうと",
+            "ruby_text": "妹[いもうと]",
+            "ruby_spans": [
+              {
+                "base": "妹",
+                "reading": "いもうと",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "いもうと",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "は",
+            "lemma": "は",
+            "pos": "助詞/係助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 3,
+            "end": 4,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "は",
+            "ruby_text": "は",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "は"
+          },
+          {
+            "surface": "まだ",
+            "lemma": "まだ",
+            "pos": "副詞/*/*/*/*/*",
+            "upos": "ADV",
+            "xpos": "副詞",
+            "feats": {},
+            "start": 4,
+            "end": 6,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "まだ",
+            "ruby_text": "まだ",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "まだ"
+          },
+          {
+            "surface": "赤ちゃん",
+            "lemma": "赤ちゃん",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 6,
+            "end": 10,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "あかちゃん",
+            "ruby_text": "赤[あか]ちゃん",
+            "ruby_spans": [
+              {
+                "base": "赤",
+                "reading": "あか",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "あかちゃん",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "だ",
+            "lemma": "だ",
+            "pos": "助動詞/*/*/*/助動詞-ダ/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 10,
+            "end": 11,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "だ",
+            "ruby_text": "だ",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "だ"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 11,
+            "end": 12,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
+          }
+        ],
+        "generated_reading": "わたしのいもうとはまだあかちゃんだ。",
+        "analyzer": "sudachipy_sudachidict_core_c",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:37:38Z",
+        "updated_utc": "2026-10-17T07:38:15Z",
+        "applied_utc": "2026-10-17T07:38:15Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:38:15Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -922,51 +1330,58 @@
         "difficulty_aggregated": 0
       },
       {
-        "sentence": "私の妹はまだ赤ちゃんの女の子だ。",
+        "sentence": "私の妹はまだ赤ちゃんだ。",
         "tokens": [
           {
             "surface": "私",
-            "surface_en": "I",
-            "furigana": "わたくし",
-            "pos": "pronoun",
             "lemma": "私",
-            "difficulty": 6,
-            "explanation": "Refers to the speaker, showing possession.",
-            "reading_kana": "わたくし",
-            "ruby_text": "私[わたくし]",
+            "pos": "代名詞/*/*/*/*/*",
+            "upos": "PRON",
+            "xpos": "代名詞",
+            "feats": {},
+            "start": 0,
+            "end": 1,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "わたし",
+            "ruby_text": "私[わたし]",
             "ruby_spans": [
               {
                 "base": "私",
-                "reading": "わたくし",
+                "reading": "わたし",
                 "start": 0,
                 "length": 1
               }
             ],
-            "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "ruby_confidence": "reviewed",
+            "furigana": "わたし",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "の",
-            "surface_en": "of",
-            "furigana": "の",
-            "pos": "particle",
             "lemma": "の",
-            "difficulty": 1,
-            "explanation": "Possessive particle linking '私' and '妹'.",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 1,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "の",
             "ruby_text": "の",
             "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "の"
           },
           {
             "surface": "妹",
-            "surface_en": "younger sister",
-            "furigana": "いもうと",
-            "pos": "noun",
             "lemma": "妹",
-            "difficulty": 6,
-            "explanation": "The person possessed by the speaker, serving as the topic.",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 2,
+            "end": 3,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "いもうと",
             "ruby_text": "妹[いもうと]",
             "ruby_spans": [
@@ -977,45 +1392,52 @@
                 "length": 1
               }
             ],
-            "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "ruby_confidence": "reviewed",
+            "furigana": "いもうと",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "は",
-            "surface_en": "topic marker",
-            "furigana": "は",
-            "pos": "particle",
             "lemma": "は",
-            "difficulty": 1,
-            "explanation": "Marks '妹' as the topic of the sentence.",
+            "pos": "助詞/係助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 3,
+            "end": 4,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "は",
             "ruby_text": "は",
             "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "は"
           },
           {
             "surface": "まだ",
-            "surface_en": "still",
-            "furigana": "まだ",
-            "pos": "adverb",
             "lemma": "まだ",
-            "difficulty": 1,
-            "explanation": "Indicates that the state has not changed; she remains a baby girl.",
+            "pos": "副詞/*/*/*/*/*",
+            "upos": "ADV",
+            "xpos": "副詞",
+            "feats": {},
+            "start": 4,
+            "end": 6,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "まだ",
             "ruby_text": "まだ",
             "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "まだ"
           },
           {
             "surface": "赤ちゃん",
-            "surface_en": "baby",
-            "furigana": "あかちゃん",
-            "pos": "noun",
             "lemma": "赤ちゃん",
-            "difficulty": 4,
-            "explanation": "Describes the stage of life relevant to the subject.",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 6,
+            "end": 10,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "あかちゃん",
             "ruby_text": "赤[あか]ちゃん",
             "ruby_spans": [
@@ -1026,64 +1448,41 @@
                 "length": 1
               }
             ],
-            "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
-          },
-          {
-            "surface": "の",
-            "surface_en": "of",
-            "furigana": "の",
-            "pos": "particle",
-            "lemma": "の",
-            "difficulty": 1,
-            "explanation": "Links '赤ちゃん' and '女の子' to form 'baby girl.'",
-            "reading_kana": "の",
-            "ruby_text": "の",
-            "ruby_spans": [],
-            "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
-          },
-          {
-            "surface": "女の子",
-            "surface_en": "girl",
-            "furigana": "おんなのこ",
-            "pos": "noun",
-            "lemma": "女の子",
-            "difficulty": 2,
-            "explanation": "The noun being predicated about the topic.",
-            "is_main_word": true,
-            "reading_kana": "おんなのこ",
-            "ruby_text": "女[おんな]の子[こ]",
-            "ruby_spans": [
-              {
-                "base": "女",
-                "reading": "おんな",
-                "start": 0,
-                "length": 1
-              },
-              {
-                "base": "子",
-                "reading": "こ",
-                "start": 2,
-                "length": 1
-              }
-            ],
-            "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "ruby_confidence": "reviewed",
+            "furigana": "あかちゃん",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "だ",
-            "surface_en": "is",
-            "furigana": "だ",
-            "pos": "copula",
             "lemma": "だ",
-            "difficulty": 1,
-            "explanation": "Copula asserting that the topic is a baby girl.",
+            "pos": "助動詞/*/*/*/助動詞-ダ/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 10,
+            "end": 11,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "だ",
             "ruby_text": "だ",
             "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "だ"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 11,
+            "end": 12,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
           }
         ],
         "difficulty_aggregated": 0
@@ -1405,44 +1804,44 @@
     "word_fi": "tyttö",
     "word_en": "girl / daughter / baby girl",
     "ar": [
-      "الفتاة تلعب مع.",
-      "أختي الصغرى لا تزال طفلة.",
-      "في طريق العودة إلى المنزل من المدرسة ، رأيت فتاة صغيرة.",
+      "الفتاة تلعب مع الكلب.",
+      "أختي الصغيرة ما زالت طفلة رضيعة.",
+      "في طريق العودة إلى المنزل من المدرسة، رأيت فتاة صغيرة.",
       "الفتيات يلعبن الغميضة في الحديقة."
     ],
     "cs": [
       "Dívka si hraje se psem.",
-      "Moje mladší sestra je ještě holčička.",
+      "Moje mladší sestra je ještě miminko.",
       "Na cestě domů ze školy jsem uviděla malou holčičku.",
       "Dívky si hrají v parku na schovávanou."
     ],
     "da": [
       "Pigen leger med hunden.",
-      "Min lillesøster er stadig en lille pige.",
+      "Min lillesøster er stadig en baby.",
       "På vej hjem fra skole så jeg en lille pige.",
       "Piger leger gemmeleg i parken."
     ],
     "de": [
       "Das Mädchen spielt mit dem Hund.",
-      "Meine jüngere Schwester ist noch ein kleines Mädchen.",
+      "Meine kleine Schwester ist noch ein Baby.",
       "Auf dem Heimweg von der Schule sah ich ein kleines Mädchen.",
       "Mädchen spielen Verstecken im Park."
     ],
     "el": [
       "Το κορίτσι παίζει με το σκυλί.",
-      "Η μικρότερη αδερφή μου είναι ακόμα κοριτσάκι.",
+      "Η μικρότερη αδερφή μου είναι ακόμα μωρό.",
       "Στο δρόμο για το σπίτι από το σχολείο, είδα ένα κοριτσάκι.",
       "Τα κορίτσια παίζουν κρυφτό στο πάρκο."
     ],
     "en": [
       "The girl is playing with the dog.",
-      "My younger sister is still a baby girl.",
+      "My little sister is still just a baby.",
       "On the way home from school, I saw a little girl.",
       "Girls are playing hide-and-seek in the park."
     ],
     "es": [
       "La niña está jugando con el perro.",
-      "Mi hermana menor todavía es una niña.",
+      "Mi hermana pequeña todavía es un bebé.",
       "En el camino a casa de la escuela, vi a una niña.",
       "Las niñas juegan al escondite en el parque."
     ],
@@ -1454,7 +1853,7 @@
     ],
     "fr": [
       "La fille joue avec le chien.",
-      "Ma petite sœur est encore une petite fille.",
+      "Ma petite sœur est encore un bébé.",
       "En rentrant de l’école, j’ai vu une petite fille.",
       "Les filles jouent à cache-cache dans le parc."
     ],
@@ -1466,13 +1865,13 @@
     ],
     "hi": [
       "लड़की कुत्ते के साथ खेल रही है।",
-      "मेरी छोटी बहन अभी भी एक बच्ची है।",
+      "मेरी छोटी बहन अभी भी एक शिशु है।",
       "स्कूल से घर लौटते समय मैंने एक छोटी लड़की को देखा।",
       "लड़कियां पार्क में लुका-छिपी खेल रही हैं।"
     ],
     "hu": [
       "A lány a kutyával játszik.",
-      "A húgom még kislány.",
+      "A húgom még csecsemő.",
       "Az iskolából hazafelé menet megláttam egy kislányt.",
       "Lányok bújócskáznak a parkban."
     ],
@@ -1490,75 +1889,75 @@
     ],
     "ko": [
       "소녀는 개와 놀고 있습니다.",
-      "제 여동생은 아직 딸입니다.",
+      "제 여동생은 아직 아기예요.",
       "학교에서 집으로 돌아오는 길에 한 어린 여자아이를 보았습니다.",
       "소녀들은 공원에서 숨바꼭질을 하고 있습니다."
     ],
     "nb": [
       "Jenta leker med hunden.",
-      "Min yngre søster er fortsatt en liten jente.",
+      "Min lillesøster er fortsatt bare en baby.",
       "På vei hjem fra skolen så jeg en liten jente.",
       "Jenter leker gjemsel i parken."
     ],
     "nl": [
       "Het meisje speelt met de hond.",
-      "Mijn jongere zus is nog een meisje.",
+      "Mijn zusje is nog een baby.",
       "Op weg naar huis van school zag ik een klein meisje.",
       "Meisjes spelen verstoppertje in het park."
     ],
     "pl": [
       "Dziewczynka bawi się z psem.",
-      "Moja młodsza siostra jest jeszcze córeczką.",
+      "Moja młodsza siostra jest jeszcze niemowlęciem.",
       "W drodze ze szkoły do domu zobaczyłam małą dziewczynkę.",
-      "Dziewczyny bawią się в chowanego w parku."
+      "Dziewczyny bawią się w chowanego w parku."
     ],
     "pt": [
       "A menina está brincando com o cachorro.",
-      "Minha irmã mais nova ainda é uma menina.",
+      "Minha irmã mais nova ainda é um bebê.",
       "No caminho da escola para casa, vi uma garotinha.",
       "As meninas estão brincando de esconde-esconde no parque."
     ],
     "ro": [
       "Fata se joacă cu câinele.",
-      "Sora mea mai mică este încă o fetiță.",
+      "Sora mea mai mică este încă un bebeluș.",
       "În drum spre casă de la școală, am văzut o fetiță.",
       "Fetele se joacă de-a v-ați ascunselea în parc."
     ],
     "ru": [
       "Девочка играет с собакой.",
-      "Моя младшая сестра еще маленькая девочка.",
+      "Моя младшая сестра ещё совсем малышка.",
       "По дороге домой из школы я увидела маленькую девочку.",
       "Девочки играют в прятки в парке."
     ],
     "sv": [
       "Flickan leker med hunden.",
-      "Min lillasyster är fortfarande en liten flicka.",
+      "Min lillasyster är fortfarande en bebis.",
       "På vägen hem från skolan såg jag en liten flicka.",
       "Flickor leker kurragömma i parken."
     ],
     "tr": [
       "Kız köpekle oynuyor.",
-      "Küçük kız kardeşim hala bir kız çocuğu.",
+      "Küçük kız kardeşim hâlâ bir bebek.",
       "Okuldan eve dönerken küçük bir kız çocuğu gördüm.",
       "Kızlar parkta saklambaç oynuyor."
     ],
     "uk": [
       "Дівчинка грає з собакою.",
-      "Моя молодша сестра ще маленька дівчинка.",
+      "Моя молодша сестра ще зовсім немовля.",
       "По дорозі додому зі школи я побачила маленьку дівчинку.",
       "Дівчата грають у хованки в парку."
     ],
     "vi": [
-      "Cô gái đang chơi với.",
-      "Em gái tôi vẫn còn là một bé gái.",
+      "Cô bé đang chơi với con chó.",
+      "Em gái tôi vẫn còn là một em bé.",
       "Trên đường đi học về, tôi nhìn thấy một bé gái.",
       "Các cô gái đang chơi trốn tìm trong công viên."
     ],
     "yue": [
-      "女孩正在和狗玩耍。",
+      "個女仔同隻狗玩緊。",
       "我嘅妹還是個女嬰。",
       "喺放學回家的路上，我看到了一個細路女。",
-      "女們喺公園度玩捉迷藏。"
+      "啲女仔喺公園玩捉迷藏。"
     ],
     "zh-Hans": [
       "女孩正在和狗玩耍。",

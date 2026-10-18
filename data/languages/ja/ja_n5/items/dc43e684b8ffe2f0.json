@@ -51,7 +51,7 @@
         "fr": "Je bois du thé noir.",
         "de": "Ich trinke schwarzen Tee.",
         "it": "Bevo tè nero.",
-        "ko": "나는 홍차를 마신다.",
+        "ko": "저는 홍차를 마셔요.",
         "zh-Hans": "我喝红茶。",
         "yue": "我飲紅茶。",
         "ru": "Я пью черный чай.",
@@ -77,12 +77,14 @@
       "tokens": [
         {
           "surface": "私",
-          "surface_en": "I",
-          "furigana": "わたくし",
-          "pos": "pronoun",
           "lemma": "私",
-          "difficulty": 6,
-          "explanation": "first-person pronoun indicating the speaker",
+          "pos": "代名詞/*/*/*/*/*",
+          "upos": "PRON",
+          "xpos": "代名詞",
+          "feats": {},
+          "start": 0,
+          "end": 1,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "わたくし",
           "ruby_text": "私[わたくし]",
           "ruby_spans": [
@@ -93,32 +95,36 @@
               "length": 1
             }
           ],
-          "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "ruby_confidence": "reviewed",
+          "furigana": "わたくし",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "は",
-          "surface_en": "(topic marker)",
-          "furigana": "は",
-          "pos": "particle",
           "lemma": "は",
-          "difficulty": 1,
-          "explanation": "topic particle marking '私' as the topic of the sentence",
+          "pos": "助詞/係助詞/*/*/*/*",
+          "upos": "PART",
+          "xpos": "助詞",
+          "feats": {},
+          "start": 1,
+          "end": 2,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "は",
           "ruby_text": "は",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "は"
         },
         {
           "surface": "紅茶",
-          "surface_en": "black tea",
-          "furigana": "こうちゃ",
-          "pos": "noun",
           "lemma": "紅茶",
-          "difficulty": 34,
-          "explanation": "the direct object referring to 'black tea'",
-          "is_main_word": true,
+          "pos": "名詞/普通名詞/一般/*/*/*",
+          "upos": "NOUN",
+          "xpos": "名詞",
+          "feats": {},
+          "start": 2,
+          "end": 4,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "こうちゃ",
           "ruby_text": "紅茶[こうちゃ]",
           "ruby_spans": [
@@ -129,33 +135,39 @@
               "length": 2
             }
           ],
-          "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "ruby_confidence": "reviewed",
+          "furigana": "こうちゃ",
+          "ruby_source": "mediawiki_sentence_ruby",
+          "is_main_word": true
         },
         {
           "surface": "を",
-          "surface_en": "(object marker)",
-          "furigana": "を",
-          "pos": "particle",
           "lemma": "を",
-          "difficulty": 1,
-          "explanation": "object particle marking '紅茶' as the object of the verb",
+          "pos": "助詞/格助詞/*/*/*/*",
+          "upos": "PART",
+          "xpos": "助詞",
+          "feats": {},
+          "start": 4,
+          "end": 5,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "を",
           "ruby_text": "を",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "を"
         },
         {
-          "surface": "飲みます",
-          "surface_en": "drink(s)",
-          "furigana": "のみます",
-          "pos": "verb",
+          "surface": "飲み",
           "lemma": "飲む",
-          "difficulty": 10,
-          "explanation": "polite present tense of '飲む' ('to drink') describing the action",
-          "reading_kana": "のみます",
-          "ruby_text": "飲[の]みます",
+          "pos": "動詞/一般/*/*/五段-マ行/連用形-一般",
+          "upos": "VERB",
+          "xpos": "動詞",
+          "feats": {},
+          "start": 5,
+          "end": 7,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "のみ",
+          "ruby_text": "飲[の]み",
           "ruby_spans": [
             {
               "base": "飲",
@@ -164,8 +176,41 @@
               "length": 1
             }
           ],
+          "ruby_confidence": "reviewed",
+          "furigana": "のみ",
+          "ruby_source": "mediawiki_sentence_ruby"
+        },
+        {
+          "surface": "ます",
+          "lemma": "ます",
+          "pos": "助動詞/*/*/*/助動詞-マス/終止形-一般",
+          "upos": "AUX",
+          "xpos": "助動詞",
+          "feats": {},
+          "start": 7,
+          "end": 9,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "ます",
+          "ruby_text": "ます",
+          "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "ます"
+        },
+        {
+          "surface": "。",
+          "lemma": "。",
+          "pos": "補助記号/句点/*/*/*/*",
+          "upos": "PUNCT",
+          "xpos": "補助記号",
+          "feats": {},
+          "start": 9,
+          "end": 10,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "。",
+          "ruby_text": "。",
+          "ruby_spans": [],
+          "ruby_confidence": "high",
+          "furigana": "。"
         }
       ],
       "difficulty": 5,
@@ -181,18 +226,18 @@
         "de": "Schwarzer Tee ist warm.",
         "it": "Il tè nero è caldo.",
         "ko": "홍차는 따뜻합니다.",
-        "zh-Hans": "红茶是温暖的。",
-        "yue": "紅茶係温暖嘅。",
+        "zh-Hans": "红茶是温的。",
+        "yue": "紅茶好暖。",
         "ru": "Черный чай теплый.",
-        "pt": "O chá preto é quente.",
-        "he": "תה שחור חם.",
-        "tr": "Siyah çay sıcaktır.",
-        "vi": "Trà đen ấm áp.",
+        "pt": "O chá preto está morno.",
+        "he": "תה שחור חמים.",
+        "tr": "Siyah çay ılıktır.",
+        "vi": "Trà đen ấm.",
         "ar": "الشاي الأسود دافئ.",
         "nl": "Zwarte thee is warm.",
         "uk": "Чорний чай теплий.",
         "hu": "A fekete tea meleg.",
-        "hi": "काली चाय गर्म होती है।",
+        "hi": "काली चाय गुनगुनी है।",
         "pl": "Czarna herbata jest ciepła.",
         "el": "Το μαύρο τσάι είναι ζεστό.",
         "nb": "Svart te er varm.",
@@ -286,28 +331,28 @@
         "en": "My friend made black tea.",
         "es": "Mi amigo hizo té negro.",
         "fr": "Mon ami a fait du thé noir.",
-        "de": "Meine Freundin hat schwarzen Tee gemacht.",
+        "de": "Jemand aus meinem Freundeskreis hat schwarzen Tee zubereitet.",
         "it": "Il mio amico ha preparato il tè nero.",
-        "ko": "내 친구는 홍차를 만들었다.",
+        "ko": "제 친구가 홍차를 우렸어요.",
         "zh-Hans": "我的朋友泡了红茶。",
-        "yue": "我嘅朋友浸咗紅茶。",
+        "yue": "我嘅朋友沖咗紅茶。",
         "ru": "Мой друг приготовил черный чай.",
-        "pt": "Meu amigo fez chá preto.",
+        "pt": "O meu amigo preparou chá preto.",
         "he": "חבר שלי הכין תה שחור.",
-        "tr": "Arkadaşım siyah çay yaptı.",
+        "tr": "Arkadaşım siyah çay demledi.",
         "vi": "Bạn tôi pha trà đen.",
-        "ar": "صديقي صنع الشاي الأسود.",
+        "ar": "أعدّ صديقي الشاي الأسود.",
         "nl": "Mijn vriend maakte zwarte thee.",
-        "uk": "Моя подруга заварила чорний чай.",
+        "uk": "Хтось із моїх друзів заварив чорний чай.",
         "hu": "A barátom fekete teát készített.",
         "hi": "मेरे दोस्त ने काली चाय बनाई।",
-        "pl": "Moja koleżanka zrobiła czarną herbatę.",
+        "pl": "Ktoś z moich przyjaciół zaparzył czarną herbatę.",
         "el": "Ο φίλος μου έφτιαξε μαύρο τσάι.",
         "nb": "Vennen min laget svart te.",
         "id": "Teman saya membuat teh hitam.",
         "sv": "Min vän gjorde svart te.",
         "ro": "Prietenul meu a făcut ceai negru.",
-        "cs": "Moje kamarádka udělala černý čaj.",
+        "cs": "Někdo z mých přátel připravil černý čaj.",
         "da": "Min ven lavede sort te.",
         "fi": "Ystäväni keitti mustaa teetä."
       },
@@ -405,33 +450,33 @@
       "target": "紅茶にミルクを入れます。",
       "reading": "こうちゃにみるくをいれます。",
       "translations": {
-        "en": "I put milk into my black tea.",
-        "es": "Puse leche en mi té negro.",
-        "fr": "J’ai mis du lait dans mon thé noir.",
+        "en": "I add milk to my black tea.",
+        "es": "Le pongo leche al té negro.",
+        "fr": "Je mets du lait dans mon thé noir.",
         "de": "Ich gebe Milch in meinen schwarzen Tee.",
-        "it": "Ho messo il latte nel mio tè nero.",
-        "ko": "나는 홍차에 우유를 넣었다.",
-        "zh-Hans": "我在红茶里放了牛奶。",
-        "yue": "我喺紅茶度放咗牛奶。",
+        "it": "Aggiungo il latte al mio tè nero.",
+        "ko": "저는 홍차에 우유를 넣어요.",
+        "zh-Hans": "我在红茶里加牛奶。",
+        "yue": "我喺紅茶入面加牛奶。",
         "ru": "Я добавляю молоко в черный чай.",
-        "pt": "Eu coloquei leite no meu chá preto.",
-        "he": "הכנסתי חלב לתה השחור שלי.",
-        "tr": "Siyah çayımın içine süt koydum.",
+        "pt": "Eu coloco leite no meu chá preto.",
+        "he": "אני מוסיף חלב לתה השחור שלי.",
+        "tr": "Siyah çayıma süt eklerim.",
         "vi": "Tôi cho sữa vào trà đen của mình.",
         "ar": "أضع الحليب في الشاي الأسود.",
         "nl": "Ik doe melk in mijn zwarte thee.",
         "uk": "Я додаю молоко в свій чорний чай.",
-        "hu": "Tejet tettem a fekete teámba.",
-        "hi": "मैंने अपनी काली चाय में दूध डाला।",
+        "hu": "Tejet teszek a fekete teámba.",
+        "hi": "मैं अपनी काली चाय में दूध डालता हूँ।",
         "pl": "Do mojej czarnej herbaty dodaję mleko.",
-        "el": "Έβαλα γάλα στο μαύρο τσάι μου.",
+        "el": "Βάζω γάλα στο μαύρο τσάι μου.",
         "nb": "Jeg putter melk i den svarte teen min.",
         "id": "Saya memasukkan susu ke dalam teh hitam saya.",
         "sv": "Jag häller mjölk i mitt svarta te.",
-        "ro": "Am pus lapte în ceaiul meu negru.",
+        "ro": "Pun lapte în ceaiul meu negru.",
         "cs": "Do černého čaje si dávám mléko.",
-        "da": "Jeg puttede mælk i min sorte te.",
-        "fi": "Laitoin maitoa mustaan teehen."
+        "da": "Jeg putter mælk i min sorte te.",
+        "fi": "Laitan maitoa mustaan teehen."
       },
       "tokens": [
         {
@@ -538,19 +583,404 @@
     "content_reviewers": [
       "mediawiki-visible-revision"
     ],
-    "last_reviewed_utc": "2026-06-21T18:25:22Z",
-    "approval_source": "mediawiki_visible_revision",
+    "last_reviewed_utc": "2026-10-11T10:31:19Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
     "wiki": {
       "title": "Item:Ja n5/dc43e684b8ffe2f0",
-      "revision_id": 57979,
-      "parent_revision_id": 36423,
-      "revision_timestamp_utc": "2026-06-21T18:25:22Z",
-      "revision_user": "VocomiBot",
-      "revision_comment": "Sync ja_n5 item 紅茶",
-      "pulled_utc": "2026-06-21T20:53:46Z",
-      "applied_utc": "2026-06-21T20:54:00Z",
+      "revision_id": 82919,
+      "parent_revision_id": 68856,
+      "revision_timestamp_utc": "2026-10-11T10:31:19Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Suggest reviewed Japanese and translation corrections",
+      "pulled_utc": "2026-10-17T07:37:40Z",
+      "applied_utc": "2026-10-17T07:37:58Z",
       "applied_by": "vocomipedia-apply-pulled"
-    }
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-54d53225f5ffa3e1",
+        "status": "applied",
+        "type": "ruby_update",
+        "item_id": "ja_n5:dc43e684b8ffe2f0",
+        "pack_code": "ja_n5",
+        "entry_id": "紅茶",
+        "language": "ja",
+        "sentence_index": 1,
+        "old_sentence": "私は紅茶を飲みます。",
+        "old_translations": {
+          "en": "I drink black tea.",
+          "es": "Bebo té negro.",
+          "fr": "Je bois du thé noir.",
+          "de": "Ich trinke schwarzen Tee.",
+          "it": "Bevo tè nero.",
+          "ko": "저는 홍차를 마셔요.",
+          "zh-Hans": "我喝红茶。",
+          "yue": "我飲紅茶。",
+          "ru": "Я пью черный чай.",
+          "pt": "Eu bebo chá preto.",
+          "he": "אני שותה תה שחור.",
+          "tr": "Siyah çay içerim.",
+          "vi": "Tôi uống trà đen.",
+          "ar": "أشرب الشاي الأسود.",
+          "nl": "Ik drink zwarte thee.",
+          "uk": "Я п'ю чорний чай.",
+          "hu": "Fekete teát iszom.",
+          "hi": "मैं काली चाय पीता हूँ।",
+          "pl": "Piję czarną herbatę.",
+          "el": "Πίνω μαύρο τσάι.",
+          "nb": "Jeg drikker svart te.",
+          "id": "Saya minum teh hitam.",
+          "sv": "Jag dricker svart te.",
+          "ro": "Beau ceai negru.",
+          "cs": "Piju černý čaj.",
+          "da": "Jeg drikker sort te.",
+          "fi": "Juon mustaa teetä."
+        },
+        "proposed_sentence": "私は紅茶を飲みます。",
+        "proposed_translations": {
+          "en": "I drink black tea.",
+          "es": "Bebo té negro.",
+          "fr": "Je bois du thé noir.",
+          "de": "Ich trinke schwarzen Tee.",
+          "it": "Bevo tè nero.",
+          "ko": "저는 홍차를 마셔요.",
+          "zh-Hans": "我喝红茶。",
+          "yue": "我飲紅茶。",
+          "ru": "Я пью черный чай.",
+          "pt": "Eu bebo chá preto.",
+          "he": "אני שותה תה שחור.",
+          "tr": "Siyah çay içerim.",
+          "vi": "Tôi uống trà đen.",
+          "ar": "أشرب الشاي الأسود.",
+          "nl": "Ik drink zwarte thee.",
+          "uk": "Я п'ю чорний чай.",
+          "hu": "Fekete teát iszom.",
+          "hi": "मैं काली चाय पीता हूँ।",
+          "pl": "Piję czarną herbatę.",
+          "el": "Πίνω μαύρο τσάι.",
+          "nb": "Jeg drikker svart te.",
+          "id": "Saya minum teh hitam.",
+          "sv": "Jag dricker svart te.",
+          "ro": "Beau ceai negru.",
+          "cs": "Piju černý čaj.",
+          "da": "Jeg drikker sort te.",
+          "fi": "Juon mustaa teetä."
+        },
+        "old_ruby_source": "私[わたし]は紅茶[こうちゃ]を飲[の]みます。",
+        "proposed_ruby_source": "私[わたくし]は紅茶[こうちゃ]を飲[の]みます。",
+        "old_japanese": "私は紅茶を飲みます。",
+        "old_english": "I drink black tea.",
+        "proposed_japanese": "私は紅茶を飲みます。",
+        "proposed_english": "I drink black tea.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "ja",
+          "sentence": "私は紅茶を飲みます。",
+          "tokens": [
+            {
+              "surface": "私",
+              "lemma": "私",
+              "pos": "代名詞/*/*/*/*/*",
+              "upos": "PRON",
+              "xpos": "代名詞",
+              "feats": {},
+              "start": 0,
+              "end": 1,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "わたくし",
+              "ruby_text": "私[わたくし]",
+              "ruby_spans": [
+                {
+                  "base": "私",
+                  "reading": "わたくし",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "わたくし",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "は",
+              "lemma": "は",
+              "pos": "助詞/係助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 1,
+              "end": 2,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "は",
+              "ruby_text": "は",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "は"
+            },
+            {
+              "surface": "紅茶",
+              "lemma": "紅茶",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 2,
+              "end": 4,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "こうちゃ",
+              "ruby_text": "紅茶[こうちゃ]",
+              "ruby_spans": [
+                {
+                  "base": "紅茶",
+                  "reading": "こうちゃ",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "こうちゃ",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "を",
+              "lemma": "を",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 4,
+              "end": 5,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "を",
+              "ruby_text": "を",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "を"
+            },
+            {
+              "surface": "飲み",
+              "lemma": "飲む",
+              "pos": "動詞/一般/*/*/五段-マ行/連用形-一般",
+              "upos": "VERB",
+              "xpos": "動詞",
+              "feats": {},
+              "start": 5,
+              "end": 7,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "のみ",
+              "ruby_text": "飲[の]み",
+              "ruby_spans": [
+                {
+                  "base": "飲",
+                  "reading": "の",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "のみ",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "ます",
+              "lemma": "ます",
+              "pos": "助動詞/*/*/*/助動詞-マス/終止形-一般",
+              "upos": "AUX",
+              "xpos": "助動詞",
+              "feats": {},
+              "start": 7,
+              "end": 9,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "ます",
+              "ruby_text": "ます",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "ます"
+            },
+            {
+              "surface": "。",
+              "lemma": "。",
+              "pos": "補助記号/句点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 9,
+              "end": 10,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "。",
+              "ruby_text": "。",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "。"
+            }
+          ],
+          "reading": "わたくしはこうちゃをのみます。",
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "warnings": [
+            "mediawiki ruby hints applied"
+          ]
+        },
+        "generated_tokens": [
+          {
+            "surface": "私",
+            "lemma": "私",
+            "pos": "代名詞/*/*/*/*/*",
+            "upos": "PRON",
+            "xpos": "代名詞",
+            "feats": {},
+            "start": 0,
+            "end": 1,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "わたくし",
+            "ruby_text": "私[わたくし]",
+            "ruby_spans": [
+              {
+                "base": "私",
+                "reading": "わたくし",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "わたくし",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "は",
+            "lemma": "は",
+            "pos": "助詞/係助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 1,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "は",
+            "ruby_text": "は",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "は"
+          },
+          {
+            "surface": "紅茶",
+            "lemma": "紅茶",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 2,
+            "end": 4,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "こうちゃ",
+            "ruby_text": "紅茶[こうちゃ]",
+            "ruby_spans": [
+              {
+                "base": "紅茶",
+                "reading": "こうちゃ",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "こうちゃ",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "を",
+            "lemma": "を",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 4,
+            "end": 5,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "を",
+            "ruby_text": "を",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "を"
+          },
+          {
+            "surface": "飲み",
+            "lemma": "飲む",
+            "pos": "動詞/一般/*/*/五段-マ行/連用形-一般",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 5,
+            "end": 7,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "のみ",
+            "ruby_text": "飲[の]み",
+            "ruby_spans": [
+              {
+                "base": "飲",
+                "reading": "の",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "のみ",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "ます",
+            "lemma": "ます",
+            "pos": "助動詞/*/*/*/助動詞-マス/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 7,
+            "end": 9,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ます",
+            "ruby_text": "ます",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "ます"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 9,
+            "end": 10,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
+          }
+        ],
+        "generated_reading": "わたくしはこうちゃをのみます。",
+        "analyzer": "sudachipy_sudachidict_core_c",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:37:40Z",
+        "updated_utc": "2026-10-17T07:38:14Z",
+        "applied_utc": "2026-10-17T07:38:14Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:38:14Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -595,12 +1025,14 @@
         "tokens": [
           {
             "surface": "私",
-            "surface_en": "I",
-            "furigana": "わたくし",
-            "pos": "pronoun",
             "lemma": "私",
-            "difficulty": 6,
-            "explanation": "first-person pronoun indicating the speaker",
+            "pos": "代名詞/*/*/*/*/*",
+            "upos": "PRON",
+            "xpos": "代名詞",
+            "feats": {},
+            "start": 0,
+            "end": 1,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "わたくし",
             "ruby_text": "私[わたくし]",
             "ruby_spans": [
@@ -611,32 +1043,36 @@
                 "length": 1
               }
             ],
-            "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "ruby_confidence": "reviewed",
+            "furigana": "わたくし",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "は",
-            "surface_en": "(topic marker)",
-            "furigana": "は",
-            "pos": "particle",
             "lemma": "は",
-            "difficulty": 1,
-            "explanation": "topic particle marking '私' as the topic of the sentence",
+            "pos": "助詞/係助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 1,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "は",
             "ruby_text": "は",
             "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "は"
           },
           {
             "surface": "紅茶",
-            "surface_en": "black tea",
-            "furigana": "こうちゃ",
-            "pos": "noun",
             "lemma": "紅茶",
-            "difficulty": 34,
-            "explanation": "the direct object referring to 'black tea'",
-            "is_main_word": true,
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 2,
+            "end": 4,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "こうちゃ",
             "ruby_text": "紅茶[こうちゃ]",
             "ruby_spans": [
@@ -647,33 +1083,39 @@
                 "length": 2
               }
             ],
-            "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "ruby_confidence": "reviewed",
+            "furigana": "こうちゃ",
+            "ruby_source": "mediawiki_sentence_ruby",
+            "is_main_word": true
           },
           {
             "surface": "を",
-            "surface_en": "(object marker)",
-            "furigana": "を",
-            "pos": "particle",
             "lemma": "を",
-            "difficulty": 1,
-            "explanation": "object particle marking '紅茶' as the object of the verb",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 4,
+            "end": 5,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "を",
             "ruby_text": "を",
             "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "を"
           },
           {
-            "surface": "飲みます",
-            "surface_en": "drink(s)",
-            "furigana": "のみます",
-            "pos": "verb",
+            "surface": "飲み",
             "lemma": "飲む",
-            "difficulty": 10,
-            "explanation": "polite present tense of '飲む' ('to drink') describing the action",
-            "reading_kana": "のみます",
-            "ruby_text": "飲[の]みます",
+            "pos": "動詞/一般/*/*/五段-マ行/連用形-一般",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 5,
+            "end": 7,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "のみ",
+            "ruby_text": "飲[の]み",
             "ruby_spans": [
               {
                 "base": "飲",
@@ -682,8 +1124,41 @@
                 "length": 1
               }
             ],
+            "ruby_confidence": "reviewed",
+            "furigana": "のみ",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "ます",
+            "lemma": "ます",
+            "pos": "助動詞/*/*/*/助動詞-マス/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 7,
+            "end": 9,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ます",
+            "ruby_text": "ます",
+            "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "ます"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 9,
+            "end": 10,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
           }
         ],
         "difficulty_aggregated": 5
@@ -981,74 +1456,74 @@
     "ar": [
       "أشرب الشاي الأسود.",
       "الشاي الأسود دافئ.",
-      "صديقي صنع الشاي الأسود.",
+      "أعدّ صديقي الشاي الأسود.",
       "أضع الحليب في الشاي الأسود."
     ],
     "cs": [
       "Piju černý čaj.",
       "Černý čaj je teplý.",
-      "Moje kamarádka udělala černý čaj.",
+      "Někdo z mých přátel připravil černý čaj.",
       "Do černého čaje si dávám mléko."
     ],
     "da": [
       "Jeg drikker sort te.",
       "Sort te er varm.",
       "Min ven lavede sort te.",
-      "Jeg puttede mælk i min sorte te."
+      "Jeg putter mælk i min sorte te."
     ],
     "de": [
       "Ich trinke schwarzen Tee.",
       "Schwarzer Tee ist warm.",
-      "Meine Freundin hat schwarzen Tee gemacht.",
+      "Jemand aus meinem Freundeskreis hat schwarzen Tee zubereitet.",
       "Ich gebe Milch in meinen schwarzen Tee."
     ],
     "el": [
       "Πίνω μαύρο τσάι.",
       "Το μαύρο τσάι είναι ζεστό.",
       "Ο φίλος μου έφτιαξε μαύρο τσάι.",
-      "Έβαλα γάλα στο μαύρο τσάι μου."
+      "Βάζω γάλα στο μαύρο τσάι μου."
     ],
     "en": [
       "I drink black tea.",
       "Black tea is warm.",
       "My friend made black tea.",
-      "I put milk into my black tea."
+      "I add milk to my black tea."
     ],
     "es": [
       "Bebo té negro.",
       "El té negro es tibio.",
       "Mi amigo hizo té negro.",
-      "Puse leche en mi té negro."
+      "Le pongo leche al té negro."
     ],
     "fi": [
       "Juon mustaa teetä.",
       "Musta tee on lämmintä.",
       "Ystäväni keitti mustaa teetä.",
-      "Laitoin maitoa mustaan teehen."
+      "Laitan maitoa mustaan teehen."
     ],
     "fr": [
       "Je bois du thé noir.",
       "Le thé noir est chaud.",
       "Mon ami a fait du thé noir.",
-      "J’ai mis du lait dans mon thé noir."
+      "Je mets du lait dans mon thé noir."
     ],
     "he": [
       "אני שותה תה שחור.",
-      "תה שחור חם.",
+      "תה שחור חמים.",
       "חבר שלי הכין תה שחור.",
-      "הכנסתי חלב לתה השחור שלי."
+      "אני מוסיף חלב לתה השחור שלי."
     ],
     "hi": [
       "मैं काली चाय पीता हूँ।",
-      "काली चाय गर्म होती है।",
+      "काली चाय गुनगुनी है।",
       "मेरे दोस्त ने काली चाय बनाई।",
-      "मैंने अपनी काली चाय में दूध डाला।"
+      "मैं अपनी काली चाय में दूध डालता हूँ।"
     ],
     "hu": [
       "Fekete teát iszom.",
       "A fekete tea meleg.",
       "A barátom fekete teát készített.",
-      "Tejet tettem a fekete teámba."
+      "Tejet teszek a fekete teámba."
     ],
     "id": [
       "Saya minum teh hitam.",
@@ -1060,13 +1535,13 @@
       "Bevo tè nero.",
       "Il tè nero è caldo.",
       "Il mio amico ha preparato il tè nero.",
-      "Ho messo il latte nel mio tè nero."
+      "Aggiungo il latte al mio tè nero."
     ],
     "ko": [
-      "나는 홍차를 마신다.",
+      "저는 홍차를 마셔요.",
       "홍차는 따뜻합니다.",
-      "내 친구는 홍차를 만들었다.",
-      "나는 홍차에 우유를 넣었다."
+      "제 친구가 홍차를 우렸어요.",
+      "저는 홍차에 우유를 넣어요."
     ],
     "nb": [
       "Jeg drikker svart te.",
@@ -1083,20 +1558,20 @@
     "pl": [
       "Piję czarną herbatę.",
       "Czarna herbata jest ciepła.",
-      "Moja koleżanka zrobiła czarną herbatę.",
+      "Ktoś z moich przyjaciół zaparzył czarną herbatę.",
       "Do mojej czarnej herbaty dodaję mleko."
     ],
     "pt": [
       "Eu bebo chá preto.",
-      "O chá preto é quente.",
-      "Meu amigo fez chá preto.",
-      "Eu coloquei leite no meu chá preto."
+      "O chá preto está morno.",
+      "O meu amigo preparou chá preto.",
+      "Eu coloco leite no meu chá preto."
     ],
     "ro": [
       "Beau ceai negru.",
       "Ceaiul negru este cald.",
       "Prietenul meu a făcut ceai negru.",
-      "Am pus lapte în ceaiul meu negru."
+      "Pun lapte în ceaiul meu negru."
     ],
     "ru": [
       "Я пью черный чай.",
@@ -1112,33 +1587,33 @@
     ],
     "tr": [
       "Siyah çay içerim.",
-      "Siyah çay sıcaktır.",
-      "Arkadaşım siyah çay yaptı.",
-      "Siyah çayımın içine süt koydum."
+      "Siyah çay ılıktır.",
+      "Arkadaşım siyah çay demledi.",
+      "Siyah çayıma süt eklerim."
     ],
     "uk": [
       "Я п'ю чорний чай.",
       "Чорний чай теплий.",
-      "Моя подруга заварила чорний чай.",
+      "Хтось із моїх друзів заварив чорний чай.",
       "Я додаю молоко в свій чорний чай."
     ],
     "vi": [
       "Tôi uống trà đen.",
-      "Trà đen ấm áp.",
+      "Trà đen ấm.",
       "Bạn tôi pha trà đen.",
       "Tôi cho sữa vào trà đen của mình."
     ],
     "yue": [
       "我飲紅茶。",
-      "紅茶係温暖嘅。",
-      "我嘅朋友浸咗紅茶。",
-      "我喺紅茶度放咗牛奶。"
+      "紅茶好暖。",
+      "我嘅朋友沖咗紅茶。",
+      "我喺紅茶入面加牛奶。"
     ],
     "zh-Hans": [
       "我喝红茶。",
-      "红茶是温暖的。",
+      "红茶是温的。",
       "我的朋友泡了红茶。",
-      "我在红茶里放了牛奶。"
+      "我在红茶里加牛奶。"
     ]
   }
 }

@@ -302,8 +302,8 @@
       "difficulty": null
     },
     {
-      "target": "お金がたりない。そこで、バスで行った。",
-      "reading": "おかねがたりない。そこで、ばすでおこなった。",
+      "target": "お金が足りなかった。そこで、バスで行った。",
+      "reading": "おかねがたりなかった。そこで、ばすでいった。",
       "translations": {
         "en": "I didn’t have enough money, so I went by bus.",
         "ar": "لم يكن لديّ ما يكفي من المال، لذلك ذهبتُ بالحافلة.",
@@ -354,8 +354,9 @@
               "length": 1
             }
           ],
-          "ruby_confidence": "high",
-          "furigana": "おかね"
+          "ruby_confidence": "reviewed",
+          "furigana": "おかね",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "が",
@@ -374,8 +375,8 @@
           "furigana": "が"
         },
         {
-          "surface": "たり",
-          "lemma": "たりる",
+          "surface": "足り",
+          "lemma": "足りる",
           "pos": "動詞/一般/*/*/上一段-ラ行/未然形-一般",
           "upos": "VERB",
           "xpos": "動詞",
@@ -384,26 +385,50 @@
           "end": 5,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "たり",
-          "ruby_text": "たり",
-          "ruby_spans": [],
-          "ruby_confidence": "high",
-          "furigana": "たり"
+          "ruby_text": "足[た]り",
+          "ruby_spans": [
+            {
+              "base": "足",
+              "reading": "た",
+              "start": 0,
+              "length": 1
+            }
+          ],
+          "ruby_confidence": "reviewed",
+          "furigana": "たり",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
-          "surface": "ない",
+          "surface": "なかっ",
           "lemma": "ない",
-          "pos": "助動詞/*/*/*/助動詞-ナイ/終止形-一般",
+          "pos": "助動詞/*/*/*/助動詞-ナイ/連用形-促音便",
           "upos": "AUX",
           "xpos": "助動詞",
           "feats": {},
           "start": 5,
-          "end": 7,
+          "end": 8,
           "analyzer": "sudachipy_sudachidict_core_c",
-          "reading_kana": "ない",
-          "ruby_text": "ない",
+          "reading_kana": "なかっ",
+          "ruby_text": "なかっ",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "furigana": "ない"
+          "furigana": "なかっ"
+        },
+        {
+          "surface": "た",
+          "lemma": "た",
+          "pos": "助動詞/*/*/*/助動詞-タ/終止形-一般",
+          "upos": "AUX",
+          "xpos": "助動詞",
+          "feats": {},
+          "start": 8,
+          "end": 9,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "た",
+          "ruby_text": "た",
+          "ruby_spans": [],
+          "ruby_confidence": "high",
+          "furigana": "た"
         },
         {
           "surface": "。",
@@ -412,8 +437,8 @@
           "upos": "PUNCT",
           "xpos": "補助記号",
           "feats": {},
-          "start": 7,
-          "end": 8,
+          "start": 9,
+          "end": 10,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "。",
           "ruby_text": "。",
@@ -428,8 +453,8 @@
           "upos": "PRON",
           "xpos": "代名詞",
           "feats": {},
-          "start": 8,
-          "end": 10,
+          "start": 10,
+          "end": 12,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "そこ",
           "ruby_text": "そこ",
@@ -445,8 +470,8 @@
           "upos": "PART",
           "xpos": "助詞",
           "feats": {},
-          "start": 10,
-          "end": 11,
+          "start": 12,
+          "end": 13,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "で",
           "ruby_text": "で",
@@ -462,8 +487,8 @@
           "upos": "PUNCT",
           "xpos": "補助記号",
           "feats": {},
-          "start": 11,
-          "end": 12,
+          "start": 13,
+          "end": 14,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "、",
           "ruby_text": "、",
@@ -478,8 +503,8 @@
           "upos": "NOUN",
           "xpos": "名詞",
           "feats": {},
-          "start": 12,
-          "end": 14,
+          "start": 14,
+          "end": 16,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "ばす",
           "ruby_text": "バス",
@@ -494,8 +519,8 @@
           "upos": "PART",
           "xpos": "助詞",
           "feats": {},
-          "start": 14,
-          "end": 15,
+          "start": 16,
+          "end": 17,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "で",
           "ruby_text": "で",
@@ -510,21 +535,22 @@
           "upos": "VERB",
           "xpos": "動詞",
           "feats": {},
-          "start": 15,
-          "end": 17,
+          "start": 17,
+          "end": 19,
           "analyzer": "sudachipy_sudachidict_core_c",
-          "reading_kana": "おこなっ",
-          "ruby_text": "行[おこな]っ",
+          "reading_kana": "いっ",
+          "ruby_text": "行[い]っ",
           "ruby_spans": [
             {
               "base": "行",
-              "reading": "おこな",
+              "reading": "い",
               "start": 0,
               "length": 1
             }
           ],
-          "ruby_confidence": "high",
-          "furigana": "おこなっ"
+          "ruby_confidence": "reviewed",
+          "furigana": "いっ",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "た",
@@ -533,8 +559,8 @@
           "upos": "AUX",
           "xpos": "助動詞",
           "feats": {},
-          "start": 17,
-          "end": 18,
+          "start": 19,
+          "end": 20,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "た",
           "ruby_text": "た",
@@ -549,8 +575,8 @@
           "upos": "PUNCT",
           "xpos": "補助記号",
           "feats": {},
-          "start": 18,
-          "end": 19,
+          "start": 20,
+          "end": 21,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "。",
           "ruby_text": "。",
@@ -577,7 +603,7 @@
         "he": "היה שקט, אז סגרתי את החלון.",
         "hi": "शांति थी, इसलिए मैंने खिड़की बंद कर दी।",
         "hu": "Csend volt, ezért becsuktam az ablakot.",
-        "id": "Suaranya tenang, jadi saya menutup jendela.",
+        "id": "Suasana tenang, jadi saya menutup jendela.",
         "it": "Era tranquillo, così ho chiuso la finestra.",
         "ko": "조용해서 창문을 닫았다.",
         "nb": "Det var stille, så jeg lukket vinduet.",
@@ -589,7 +615,7 @@
         "sv": "Det var tyst, så jag stängde fönstret.",
         "tr": "Sessizdi, bu yüzden pencereyi kapattım.",
         "uk": "Було тихо, тому я зачинив вікно.",
-        "vi": "Trời yên tĩnh, nên tôi đã đóng cửa sổ.",
+        "vi": "Không gian yên tĩnh, nên tôi đã đóng cửa sổ.",
         "yue": "好靜，所以我閂咗窗。",
         "zh-Hans": "很安静，所以我关上了窗户。"
       },
@@ -811,7 +837,7 @@
         "it": "Avevano tutti fame, così abbiamo cenato presto.",
         "ko": "모두 배가 고파서 저녁을 일찍 먹었다.",
         "nb": "Alle var sultne, så vi spiste middag tidlig.",
-        "nl": "Iedereen had honger, dus we aten vroeg avondeten.",
+        "nl": "Iedereen had honger, dus aten we vroeg.",
         "pl": "Wszyscy byli głodni, więc zjedliśmy kolację wcześnie.",
         "pt": "Todos estavam com fome, então jantamos cedo.",
         "ro": "Toți erau flămânzi, așa că am luat cina devreme.",
@@ -1120,8 +1146,632 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-13T03:03:33Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:Ja n3/32dc5df3820efc33",
+      "revision_id": 80908,
+      "parent_revision_id": 69476,
+      "revision_timestamp_utc": "2026-10-13T03:03:33Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Aligned the Japanese money-shortage clause with the past-tense action, corrected 行った’s ruby reading, and smoothed three translations.",
+      "pulled_utc": "2026-10-18T17:38:58Z",
+      "applied_utc": "2026-10-18T17:39:34Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-9fca06c8f8ee16cf",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "ja_n3:32dc5df3820efc33",
+        "pack_code": "ja_n3",
+        "entry_id": "そこで",
+        "language": "ja",
+        "sentence_index": 2,
+        "old_sentence": "お金がたりない。そこで、バスで行った。",
+        "old_translations": {
+          "en": "I didn’t have enough money, so I went by bus.",
+          "ar": "لم يكن لديّ ما يكفي من المال، لذلك ذهبتُ بالحافلة.",
+          "cs": "Neměl jsem dost peněz, a tak jsem jel autobusem.",
+          "da": "Jeg havde ikke nok penge, så jeg tog bussen.",
+          "de": "Ich hatte nicht genug Geld, also fuhr ich mit dem Bus.",
+          "el": "Δεν είχα αρκετά χρήματα, οπότε πήγα με το λεωφορείο.",
+          "es": "No tenía suficiente dinero, así que fui en autobús.",
+          "fi": "Minulla ei ollut tarpeeksi rahaa, joten menin bussilla.",
+          "fr": "Je n'avais pas assez d'argent, alors je suis allé en bus.",
+          "he": "לא היה לי מספיק כסף, אז נסעתי באוטובוס.",
+          "hi": "मेरे पास पर्याप्त पैसे नहीं थे, इसलिए मैं बस से गया।",
+          "hu": "Nem volt elég pénzem, ezért busszal mentem.",
+          "id": "Uang saya tidak cukup, jadi saya naik bus.",
+          "it": "Non avevo abbastanza soldi, così sono andato in autobus.",
+          "ko": "돈이 부족해서 버스를 타고 갔다.",
+          "nb": "Jeg hadde ikke nok penger, så jeg tok bussen.",
+          "nl": "Ik had niet genoeg geld, dus ging ik met de bus.",
+          "pl": "Nie miałem dość pieniędzy, więc pojechałem autobusem.",
+          "pt": "Não tinha dinheiro suficiente, então fui de ônibus.",
+          "ro": "Nu aveam destui bani, așa că am mers cu autobuzul.",
+          "ru": "У меня не хватало денег, поэтому я поехал на автобусе.",
+          "sv": "Jag hade inte tillräckligt med pengar, så jag åkte buss.",
+          "tr": "Yeterince param yoktu, bu yüzden otobüsle gittim.",
+          "uk": "У мене не вистачало грошей, тому я поїхав автобусом.",
+          "vi": "Tôi không có đủ tiền, nên tôi đi xe buýt.",
+          "yue": "我唔夠錢，所以我搭巴士去。",
+          "zh-Hans": "我没有足够的钱，所以我坐公交车去了。"
+        },
+        "proposed_sentence": "お金が足りなかった。そこで、バスで行った。",
+        "proposed_translations": {
+          "en": "I didn’t have enough money, so I went by bus.",
+          "ar": "لم يكن لديّ ما يكفي من المال، لذلك ذهبتُ بالحافلة.",
+          "cs": "Neměl jsem dost peněz, a tak jsem jel autobusem.",
+          "da": "Jeg havde ikke nok penge, så jeg tog bussen.",
+          "de": "Ich hatte nicht genug Geld, also fuhr ich mit dem Bus.",
+          "el": "Δεν είχα αρκετά χρήματα, οπότε πήγα με το λεωφορείο.",
+          "es": "No tenía suficiente dinero, así que fui en autobús.",
+          "fi": "Minulla ei ollut tarpeeksi rahaa, joten menin bussilla.",
+          "fr": "Je n'avais pas assez d'argent, alors je suis allé en bus.",
+          "he": "לא היה לי מספיק כסף, אז נסעתי באוטובוס.",
+          "hi": "मेरे पास पर्याप्त पैसे नहीं थे, इसलिए मैं बस से गया।",
+          "hu": "Nem volt elég pénzem, ezért busszal mentem.",
+          "id": "Uang saya tidak cukup, jadi saya naik bus.",
+          "it": "Non avevo abbastanza soldi, così sono andato in autobus.",
+          "ko": "돈이 부족해서 버스를 타고 갔다.",
+          "nb": "Jeg hadde ikke nok penger, så jeg tok bussen.",
+          "nl": "Ik had niet genoeg geld, dus ging ik met de bus.",
+          "pl": "Nie miałem dość pieniędzy, więc pojechałem autobusem.",
+          "pt": "Não tinha dinheiro suficiente, então fui de ônibus.",
+          "ro": "Nu aveam destui bani, așa că am mers cu autobuzul.",
+          "ru": "У меня не хватало денег, поэтому я поехал на автобусе.",
+          "sv": "Jag hade inte tillräckligt med pengar, så jag åkte buss.",
+          "tr": "Yeterince param yoktu, bu yüzden otobüsle gittim.",
+          "uk": "У мене не вистачало грошей, тому я поїхав автобусом.",
+          "vi": "Tôi không có đủ tiền, nên tôi đi xe buýt.",
+          "yue": "我唔夠錢，所以我搭巴士去。",
+          "zh-Hans": "我没有足够的钱，所以我坐公交车去了。"
+        },
+        "old_ruby_source": "お金[かね]がたりない。そこで、バスで行[おこな]った。",
+        "proposed_ruby_source": "お金[かね]が足[た]りなかった。そこで、バスで行[い]った。",
+        "old_japanese": "お金がたりない。そこで、バスで行った。",
+        "old_english": "I didn’t have enough money, so I went by bus.",
+        "proposed_japanese": "お金が足りなかった。そこで、バスで行った。",
+        "proposed_english": "I didn’t have enough money, so I went by bus.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "ja",
+          "sentence": "お金が足りなかった。そこで、バスで行った。",
+          "tokens": [
+            {
+              "surface": "お金",
+              "lemma": "お金",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 0,
+              "end": 2,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "おかね",
+              "ruby_text": "お金[かね]",
+              "ruby_spans": [
+                {
+                  "base": "金",
+                  "reading": "かね",
+                  "start": 1,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "おかね",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "が",
+              "lemma": "が",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 2,
+              "end": 3,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "が",
+              "ruby_text": "が",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "が"
+            },
+            {
+              "surface": "足り",
+              "lemma": "足りる",
+              "pos": "動詞/一般/*/*/上一段-ラ行/未然形-一般",
+              "upos": "VERB",
+              "xpos": "動詞",
+              "feats": {},
+              "start": 3,
+              "end": 5,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "たり",
+              "ruby_text": "足[た]り",
+              "ruby_spans": [
+                {
+                  "base": "足",
+                  "reading": "た",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "たり",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "なかっ",
+              "lemma": "ない",
+              "pos": "助動詞/*/*/*/助動詞-ナイ/連用形-促音便",
+              "upos": "AUX",
+              "xpos": "助動詞",
+              "feats": {},
+              "start": 5,
+              "end": 8,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "なかっ",
+              "ruby_text": "なかっ",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "なかっ"
+            },
+            {
+              "surface": "た",
+              "lemma": "た",
+              "pos": "助動詞/*/*/*/助動詞-タ/終止形-一般",
+              "upos": "AUX",
+              "xpos": "助動詞",
+              "feats": {},
+              "start": 8,
+              "end": 9,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "た",
+              "ruby_text": "た",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "た"
+            },
+            {
+              "surface": "。",
+              "lemma": "。",
+              "pos": "補助記号/句点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 9,
+              "end": 10,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "。",
+              "ruby_text": "。",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "。"
+            },
+            {
+              "surface": "そこ",
+              "lemma": "そこ",
+              "pos": "代名詞/*/*/*/*/*",
+              "upos": "PRON",
+              "xpos": "代名詞",
+              "feats": {},
+              "start": 10,
+              "end": 12,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "そこ",
+              "ruby_text": "そこ",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "そこ"
+            },
+            {
+              "surface": "で",
+              "lemma": "で",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 12,
+              "end": 13,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "で",
+              "ruby_text": "で",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "で"
+            },
+            {
+              "surface": "、",
+              "lemma": "、",
+              "pos": "補助記号/読点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 13,
+              "end": 14,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "、",
+              "ruby_text": "、",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "、"
+            },
+            {
+              "surface": "バス",
+              "lemma": "バス",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 14,
+              "end": 16,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "ばす",
+              "ruby_text": "バス",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "ばす"
+            },
+            {
+              "surface": "で",
+              "lemma": "で",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 16,
+              "end": 17,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "で",
+              "ruby_text": "で",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "で"
+            },
+            {
+              "surface": "行っ",
+              "lemma": "行う",
+              "pos": "動詞/一般/*/*/五段-ワア行/連用形-促音便",
+              "upos": "VERB",
+              "xpos": "動詞",
+              "feats": {},
+              "start": 17,
+              "end": 19,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "いっ",
+              "ruby_text": "行[い]っ",
+              "ruby_spans": [
+                {
+                  "base": "行",
+                  "reading": "い",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "いっ",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "た",
+              "lemma": "た",
+              "pos": "助動詞/*/*/*/助動詞-タ/終止形-一般",
+              "upos": "AUX",
+              "xpos": "助動詞",
+              "feats": {},
+              "start": 19,
+              "end": 20,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "た",
+              "ruby_text": "た",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "た"
+            },
+            {
+              "surface": "。",
+              "lemma": "。",
+              "pos": "補助記号/句点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 20,
+              "end": 21,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "。",
+              "ruby_text": "。",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "。"
+            }
+          ],
+          "reading": "おかねがたりなかった。そこで、ばすでいった。",
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "warnings": [
+            "mediawiki ruby hints applied"
+          ]
+        },
+        "generated_tokens": [
+          {
+            "surface": "お金",
+            "lemma": "お金",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "おかね",
+            "ruby_text": "お金[かね]",
+            "ruby_spans": [
+              {
+                "base": "金",
+                "reading": "かね",
+                "start": 1,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "おかね",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "が",
+            "lemma": "が",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 2,
+            "end": 3,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "が",
+            "ruby_text": "が",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "が"
+          },
+          {
+            "surface": "足り",
+            "lemma": "足りる",
+            "pos": "動詞/一般/*/*/上一段-ラ行/未然形-一般",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 3,
+            "end": 5,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "たり",
+            "ruby_text": "足[た]り",
+            "ruby_spans": [
+              {
+                "base": "足",
+                "reading": "た",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "たり",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "なかっ",
+            "lemma": "ない",
+            "pos": "助動詞/*/*/*/助動詞-ナイ/連用形-促音便",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 5,
+            "end": 8,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "なかっ",
+            "ruby_text": "なかっ",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "なかっ"
+          },
+          {
+            "surface": "た",
+            "lemma": "た",
+            "pos": "助動詞/*/*/*/助動詞-タ/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 8,
+            "end": 9,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "た",
+            "ruby_text": "た",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "た"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 9,
+            "end": 10,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
+          },
+          {
+            "surface": "そこ",
+            "lemma": "そこ",
+            "pos": "代名詞/*/*/*/*/*",
+            "upos": "PRON",
+            "xpos": "代名詞",
+            "feats": {},
+            "start": 10,
+            "end": 12,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "そこ",
+            "ruby_text": "そこ",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "そこ"
+          },
+          {
+            "surface": "で",
+            "lemma": "で",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 12,
+            "end": 13,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "で",
+            "ruby_text": "で",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "で"
+          },
+          {
+            "surface": "、",
+            "lemma": "、",
+            "pos": "補助記号/読点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 13,
+            "end": 14,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "、",
+            "ruby_text": "、",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "、"
+          },
+          {
+            "surface": "バス",
+            "lemma": "バス",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 14,
+            "end": 16,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ばす",
+            "ruby_text": "バス",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "ばす"
+          },
+          {
+            "surface": "で",
+            "lemma": "で",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 16,
+            "end": 17,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "で",
+            "ruby_text": "で",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "で"
+          },
+          {
+            "surface": "行っ",
+            "lemma": "行う",
+            "pos": "動詞/一般/*/*/五段-ワア行/連用形-促音便",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 17,
+            "end": 19,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "いっ",
+            "ruby_text": "行[い]っ",
+            "ruby_spans": [
+              {
+                "base": "行",
+                "reading": "い",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "いっ",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "た",
+            "lemma": "た",
+            "pos": "助動詞/*/*/*/助動詞-タ/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 19,
+            "end": 20,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "た",
+            "ruby_text": "た",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "た"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 20,
+            "end": 21,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
+          }
+        ],
+        "generated_reading": "おかねがたりなかった。そこで、ばすでいった。",
+        "analyzer": "sudachipy_sudachidict_core_c",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-18T17:38:58Z",
+        "updated_utc": "2026-10-18T17:40:49Z",
+        "applied_utc": "2026-10-18T17:40:49Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-18T17:40:49Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -1143,15 +1793,9 @@
     ],
     "fu": [
       "あめがふった。そこで、かさをかった。",
-      "おかねがたりない。そこで、ばすでいった。",
+      "おかねがたりない。そこで、ばすでおこなった。",
       "しずかだった。そこで、まどをしめた。",
       "みんなおなかがすいた。そこで、はやめにばんごはんをたべた。"
-    ],
-    "en": [
-      "It rained, so I bought an umbrella.",
-      "I didn’t have enough money, so I went by bus.",
-      "It was quiet, so I closed the window.",
-      "Everyone was hungry, so we ate dinner early."
     ],
     "generation": {
       "generator": "vocomipedia_source_generator.py",
@@ -1190,190 +1834,6 @@
         "parts_of_speech": "Conjunction"
       }
     },
-    "word_en": "so; accordingly; now; then; thereupon; therefore",
-    "word_es": "entonces",
-    "word_fr": "alors",
-    "word_de": "also",
-    "word_it": "quindi",
-    "word_ko": "그래서",
-    "word_zh-Hans": "于是",
-    "word_yue": "於是",
-    "word_ru": "поэтому",
-    "word_pt": "então",
-    "word_he": "אז",
-    "word_tr": "böylece",
-    "word_vi": "vì vậy",
-    "word_ar": "لذلك",
-    "word_nl": "dus",
-    "word_uk": "тому",
-    "word_hu": "ezért",
-    "word_hi": "इसलिए",
-    "word_pl": "więc",
-    "word_el": "λοιπόν",
-    "word_nb": "så",
-    "word_id": "jadi",
-    "word_sv": "så",
-    "word_ro": "deci",
-    "word_cs": "tedy",
-    "word_da": "så",
-    "word_fi": "siis",
-    "word_ja": "そこで",
-    "ar": [
-      "مَطَرَ، لذلك اشتريتُ مظلّة.",
-      "لم يكن لديّ ما يكفي من المال، لذلك ذهبتُ بالحافلة.",
-      "كان هادئًا، لذلك أغلقتُ النافذة.",
-      "كان الجميع جائعين، لذلك تناولنا العشاء مبكرًا."
-    ],
-    "cs": [
-      "Pršelo, a tak jsem si koupil deštník.",
-      "Neměl jsem dost peněz, a tak jsem jel autobusem.",
-      "Bylo ticho, a tak jsem zavřel okno.",
-      "Všichni měli hlad, a tak jsme večeřeli brzy."
-    ],
-    "da": [
-      "Det regnede, så jeg købte en paraply.",
-      "Jeg havde ikke nok penge, så jeg tog bussen.",
-      "Der var stille, så jeg lukkede vinduet.",
-      "Alle var sultne, så vi spiste aftensmad tidligt."
-    ],
-    "de": [
-      "Es regnete, also kaufte ich einen Regenschirm.",
-      "Ich hatte nicht genug Geld, also fuhr ich mit dem Bus.",
-      "Es war still, also schloss ich das Fenster.",
-      "Alle hatten Hunger, also aßen wir früh zu Abend."
-    ],
-    "el": [
-      "Έβρεχε, οπότε αγόρασα μια ομπρέλα.",
-      "Δεν είχα αρκετά χρήματα, οπότε πήγα με το λεωφορείο.",
-      "Επικρατούσε ησυχία, οπότε έκλεισα το παράθυρο.",
-      "Όλοι πεινούσαν, οπότε φάγαμε νωρίς βραδινό."
-    ],
-    "es": [
-      "Llovía, así que compré un paraguas.",
-      "No tenía suficiente dinero, así que fui en autobús.",
-      "Estaba en silencio, así que cerré la ventana.",
-      "Todos tenían hambre, así que cenamos temprano."
-    ],
-    "fi": [
-      "Satoi, joten ostin sateenvarjon.",
-      "Minulla ei ollut tarpeeksi rahaa, joten menin bussilla.",
-      "Oli hiljaista, joten suljin ikkunan.",
-      "Kaikilla oli nälkä, joten söimme päivällistä aikaisin."
-    ],
-    "fr": [
-      "Il pleuvait, alors j'ai acheté un parapluie.",
-      "Je n'avais pas assez d'argent, alors je suis allé en bus.",
-      "C'était calme, alors j'ai fermé la fenêtre.",
-      "Tout le monde avait faim, alors nous avons dîné tôt."
-    ],
-    "he": [
-      "ירד גשם, אז קניתי מטרייה.",
-      "לא היה לי מספיק כסף, אז נסעתי באוטובוס.",
-      "היה שקט, אז סגרתי את החלון.",
-      "כולם היו רעבים, אז אכלנו ארוחת ערב מוקדם."
-    ],
-    "hi": [
-      "बारिश हो रही थी, इसलिए मैंने एक छाता खरीदा।",
-      "मेरे पास पर्याप्त पैसे नहीं थे, इसलिए मैं बस से गया।",
-      "शांति थी, इसलिए मैंने खिड़की बंद कर दी।",
-      "सभी को भूख लगी थी, इसलिए हमने जल्दी रात का खाना खाया।"
-    ],
-    "hu": [
-      "Esett az eső, ezért vettem egy esernyőt.",
-      "Nem volt elég pénzem, ezért busszal mentem.",
-      "Csend volt, ezért becsuktam az ablakot.",
-      "Mindenki éhes volt, ezért korán vacsoráztunk."
-    ],
-    "id": [
-      "Hujan turun, jadi saya membeli payung.",
-      "Uang saya tidak cukup, jadi saya naik bus.",
-      "Suaranya tenang, jadi saya menutup jendela.",
-      "Semua orang lapar, jadi kami makan malam lebih awal."
-    ],
-    "it": [
-      "Pioveva, così ho comprato un ombrello.",
-      "Non avevo abbastanza soldi, così sono andato in autobus.",
-      "Era tranquillo, così ho chiuso la finestra.",
-      "Avevano tutti fame, così abbiamo cenato presto."
-    ],
-    "ko": [
-      "비가 와서 우산을 샀다.",
-      "돈이 부족해서 버스를 타고 갔다.",
-      "조용해서 창문을 닫았다.",
-      "모두 배가 고파서 저녁을 일찍 먹었다."
-    ],
-    "nb": [
-      "Det regnet, så jeg kjøpte en paraply.",
-      "Jeg hadde ikke nok penger, så jeg tok bussen.",
-      "Det var stille, så jeg lukket vinduet.",
-      "Alle var sultne, så vi spiste middag tidlig."
-    ],
-    "nl": [
-      "Het regende, dus ik kocht een paraplu.",
-      "Ik had niet genoeg geld, dus ging ik met de bus.",
-      "Het was stil, dus ik deed het raam dicht.",
-      "Iedereen had honger, dus we aten vroeg avondeten."
-    ],
-    "pl": [
-      "Padało, więc kupiłem parasol.",
-      "Nie miałem dość pieniędzy, więc pojechałem autobusem.",
-      "Było cicho, więc zamknąłem okno.",
-      "Wszyscy byli głodni, więc zjedliśmy kolację wcześnie."
-    ],
-    "pt": [
-      "Estava chovendo, então comprei um guarda-chuva.",
-      "Não tinha dinheiro suficiente, então fui de ônibus.",
-      "Estava silencioso, então fechei a janela.",
-      "Todos estavam com fome, então jantamos cedo."
-    ],
-    "ro": [
-      "Ploua, așa că am cumpărat o umbrelă.",
-      "Nu aveam destui bani, așa că am mers cu autobuzul.",
-      "Era liniște, așa că am închis fereastra.",
-      "Toți erau flămânzi, așa că am luat cina devreme."
-    ],
-    "ru": [
-      "Шёл дождь, поэтому я купил зонтик.",
-      "У меня не хватало денег, поэтому я поехал на автобусе.",
-      "Было тихо, поэтому я закрыл окно.",
-      "Все проголодались, поэтому мы поужинали рано."
-    ],
-    "sv": [
-      "Det regnade, så jag köpte ett paraply.",
-      "Jag hade inte tillräckligt med pengar, så jag åkte buss.",
-      "Det var tyst, så jag stängde fönstret.",
-      "Alla var hungriga, så vi åt middag tidigt."
-    ],
-    "tr": [
-      "Yağmur yağıyordu, bu yüzden bir şemsiye aldım.",
-      "Yeterince param yoktu, bu yüzden otobüsle gittim.",
-      "Sessizdi, bu yüzden pencereyi kapattım.",
-      "Herkes acıkmıştı, bu yüzden akşam yemeğini erken yedik."
-    ],
-    "uk": [
-      "Йшов дощ, тому я купив парасольку.",
-      "У мене не вистачало грошей, тому я поїхав автобусом.",
-      "Було тихо, тому я зачинив вікно.",
-      "Усі зголодніли, тому ми повечеряли рано."
-    ],
-    "vi": [
-      "Trời mưa, nên tôi đã mua một cái ô.",
-      "Tôi không có đủ tiền, nên tôi đi xe buýt.",
-      "Trời yên tĩnh, nên tôi đã đóng cửa sổ.",
-      "Mọi người đều đói, nên chúng tôi ăn tối sớm."
-    ],
-    "yue": [
-      "落雨，所以我買咗把遮。",
-      "我唔夠錢，所以我搭巴士去。",
-      "好靜，所以我閂咗窗。",
-      "大家都肚餓，所以我哋提早食晚飯。"
-    ],
-    "zh-Hans": [
-      "下雨了，所以我买了一把伞。",
-      "我没有足够的钱，所以我坐公交车去了。",
-      "很安静，所以我关上了窗户。",
-      "大家都饿了，所以我们早点吃了晚饭。"
-    ],
     "pos_analysis": [
       {
         "sentence": "雨がふった。そこで、かさを買った。",
@@ -1606,7 +2066,7 @@
         "difficulty_aggregated": null
       },
       {
-        "sentence": "お金がたりない。そこで、バスで行った。",
+        "sentence": "お金が足りなかった。そこで、バスで行った。",
         "tokens": [
           {
             "surface": "お金",
@@ -1628,8 +2088,9 @@
                 "length": 1
               }
             ],
-            "ruby_confidence": "high",
-            "furigana": "おかね"
+            "ruby_confidence": "reviewed",
+            "furigana": "おかね",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "が",
@@ -1648,8 +2109,8 @@
             "furigana": "が"
           },
           {
-            "surface": "たり",
-            "lemma": "たりる",
+            "surface": "足り",
+            "lemma": "足りる",
             "pos": "動詞/一般/*/*/上一段-ラ行/未然形-一般",
             "upos": "VERB",
             "xpos": "動詞",
@@ -1658,26 +2119,50 @@
             "end": 5,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "たり",
-            "ruby_text": "たり",
-            "ruby_spans": [],
-            "ruby_confidence": "high",
-            "furigana": "たり"
+            "ruby_text": "足[た]り",
+            "ruby_spans": [
+              {
+                "base": "足",
+                "reading": "た",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "たり",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
-            "surface": "ない",
+            "surface": "なかっ",
             "lemma": "ない",
-            "pos": "助動詞/*/*/*/助動詞-ナイ/終止形-一般",
+            "pos": "助動詞/*/*/*/助動詞-ナイ/連用形-促音便",
             "upos": "AUX",
             "xpos": "助動詞",
             "feats": {},
             "start": 5,
-            "end": 7,
+            "end": 8,
             "analyzer": "sudachipy_sudachidict_core_c",
-            "reading_kana": "ない",
-            "ruby_text": "ない",
+            "reading_kana": "なかっ",
+            "ruby_text": "なかっ",
             "ruby_spans": [],
             "ruby_confidence": "high",
-            "furigana": "ない"
+            "furigana": "なかっ"
+          },
+          {
+            "surface": "た",
+            "lemma": "た",
+            "pos": "助動詞/*/*/*/助動詞-タ/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 8,
+            "end": 9,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "た",
+            "ruby_text": "た",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "た"
           },
           {
             "surface": "。",
@@ -1686,8 +2171,8 @@
             "upos": "PUNCT",
             "xpos": "補助記号",
             "feats": {},
-            "start": 7,
-            "end": 8,
+            "start": 9,
+            "end": 10,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "。",
             "ruby_text": "。",
@@ -1702,8 +2187,8 @@
             "upos": "PRON",
             "xpos": "代名詞",
             "feats": {},
-            "start": 8,
-            "end": 10,
+            "start": 10,
+            "end": 12,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "そこ",
             "ruby_text": "そこ",
@@ -1719,8 +2204,8 @@
             "upos": "PART",
             "xpos": "助詞",
             "feats": {},
-            "start": 10,
-            "end": 11,
+            "start": 12,
+            "end": 13,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "で",
             "ruby_text": "で",
@@ -1736,8 +2221,8 @@
             "upos": "PUNCT",
             "xpos": "補助記号",
             "feats": {},
-            "start": 11,
-            "end": 12,
+            "start": 13,
+            "end": 14,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "、",
             "ruby_text": "、",
@@ -1752,8 +2237,8 @@
             "upos": "NOUN",
             "xpos": "名詞",
             "feats": {},
-            "start": 12,
-            "end": 14,
+            "start": 14,
+            "end": 16,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "ばす",
             "ruby_text": "バス",
@@ -1768,8 +2253,8 @@
             "upos": "PART",
             "xpos": "助詞",
             "feats": {},
-            "start": 14,
-            "end": 15,
+            "start": 16,
+            "end": 17,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "で",
             "ruby_text": "で",
@@ -1784,21 +2269,22 @@
             "upos": "VERB",
             "xpos": "動詞",
             "feats": {},
-            "start": 15,
-            "end": 17,
+            "start": 17,
+            "end": 19,
             "analyzer": "sudachipy_sudachidict_core_c",
-            "reading_kana": "おこなっ",
-            "ruby_text": "行[おこな]っ",
+            "reading_kana": "いっ",
+            "ruby_text": "行[い]っ",
             "ruby_spans": [
               {
                 "base": "行",
-                "reading": "おこな",
+                "reading": "い",
                 "start": 0,
                 "length": 1
               }
             ],
-            "ruby_confidence": "high",
-            "furigana": "おこなっ"
+            "ruby_confidence": "reviewed",
+            "furigana": "いっ",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "た",
@@ -1807,8 +2293,8 @@
             "upos": "AUX",
             "xpos": "助動詞",
             "feats": {},
-            "start": 17,
-            "end": 18,
+            "start": 19,
+            "end": 20,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "た",
             "ruby_text": "た",
@@ -1823,8 +2309,8 @@
             "upos": "PUNCT",
             "xpos": "補助記号",
             "feats": {},
-            "start": 18,
-            "end": 19,
+            "start": 20,
+            "end": 21,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "。",
             "ruby_text": "。",
@@ -2322,6 +2808,196 @@
         ],
         "difficulty_aggregated": null
       }
+    ],
+    "word_en": "so; accordingly; now; then; thereupon; therefore",
+    "word_es": "entonces",
+    "word_fr": "alors",
+    "word_de": "also",
+    "word_it": "quindi",
+    "word_ko": "그래서",
+    "word_zh-Hans": "于是",
+    "word_yue": "於是",
+    "word_ru": "поэтому",
+    "word_pt": "então",
+    "word_he": "אז",
+    "word_tr": "böylece",
+    "word_vi": "vì vậy",
+    "word_ar": "لذلك",
+    "word_nl": "dus",
+    "word_uk": "тому",
+    "word_hu": "ezért",
+    "word_hi": "इसलिए",
+    "word_pl": "więc",
+    "word_el": "λοιπόν",
+    "word_nb": "så",
+    "word_id": "jadi",
+    "word_sv": "så",
+    "word_ro": "deci",
+    "word_cs": "tedy",
+    "word_da": "så",
+    "word_fi": "siis",
+    "word_ja": "そこで",
+    "ar": [
+      "مَطَرَ، لذلك اشتريتُ مظلّة.",
+      "لم يكن لديّ ما يكفي من المال، لذلك ذهبتُ بالحافلة.",
+      "كان هادئًا، لذلك أغلقتُ النافذة.",
+      "كان الجميع جائعين، لذلك تناولنا العشاء مبكرًا."
+    ],
+    "cs": [
+      "Pršelo, a tak jsem si koupil deštník.",
+      "Neměl jsem dost peněz, a tak jsem jel autobusem.",
+      "Bylo ticho, a tak jsem zavřel okno.",
+      "Všichni měli hlad, a tak jsme večeřeli brzy."
+    ],
+    "da": [
+      "Det regnede, så jeg købte en paraply.",
+      "Jeg havde ikke nok penge, så jeg tog bussen.",
+      "Der var stille, så jeg lukkede vinduet.",
+      "Alle var sultne, så vi spiste aftensmad tidligt."
+    ],
+    "de": [
+      "Es regnete, also kaufte ich einen Regenschirm.",
+      "Ich hatte nicht genug Geld, also fuhr ich mit dem Bus.",
+      "Es war still, also schloss ich das Fenster.",
+      "Alle hatten Hunger, also aßen wir früh zu Abend."
+    ],
+    "el": [
+      "Έβρεχε, οπότε αγόρασα μια ομπρέλα.",
+      "Δεν είχα αρκετά χρήματα, οπότε πήγα με το λεωφορείο.",
+      "Επικρατούσε ησυχία, οπότε έκλεισα το παράθυρο.",
+      "Όλοι πεινούσαν, οπότε φάγαμε νωρίς βραδινό."
+    ],
+    "en": [
+      "It rained, so I bought an umbrella.",
+      "I didn’t have enough money, so I went by bus.",
+      "It was quiet, so I closed the window.",
+      "Everyone was hungry, so we ate dinner early."
+    ],
+    "es": [
+      "Llovía, así que compré un paraguas.",
+      "No tenía suficiente dinero, así que fui en autobús.",
+      "Estaba en silencio, así que cerré la ventana.",
+      "Todos tenían hambre, así que cenamos temprano."
+    ],
+    "fi": [
+      "Satoi, joten ostin sateenvarjon.",
+      "Minulla ei ollut tarpeeksi rahaa, joten menin bussilla.",
+      "Oli hiljaista, joten suljin ikkunan.",
+      "Kaikilla oli nälkä, joten söimme päivällistä aikaisin."
+    ],
+    "fr": [
+      "Il pleuvait, alors j'ai acheté un parapluie.",
+      "Je n'avais pas assez d'argent, alors je suis allé en bus.",
+      "C'était calme, alors j'ai fermé la fenêtre.",
+      "Tout le monde avait faim, alors nous avons dîné tôt."
+    ],
+    "he": [
+      "ירד גשם, אז קניתי מטרייה.",
+      "לא היה לי מספיק כסף, אז נסעתי באוטובוס.",
+      "היה שקט, אז סגרתי את החלון.",
+      "כולם היו רעבים, אז אכלנו ארוחת ערב מוקדם."
+    ],
+    "hi": [
+      "बारिश हो रही थी, इसलिए मैंने एक छाता खरीदा।",
+      "मेरे पास पर्याप्त पैसे नहीं थे, इसलिए मैं बस से गया।",
+      "शांति थी, इसलिए मैंने खिड़की बंद कर दी।",
+      "सभी को भूख लगी थी, इसलिए हमने जल्दी रात का खाना खाया।"
+    ],
+    "hu": [
+      "Esett az eső, ezért vettem egy esernyőt.",
+      "Nem volt elég pénzem, ezért busszal mentem.",
+      "Csend volt, ezért becsuktam az ablakot.",
+      "Mindenki éhes volt, ezért korán vacsoráztunk."
+    ],
+    "id": [
+      "Hujan turun, jadi saya membeli payung.",
+      "Uang saya tidak cukup, jadi saya naik bus.",
+      "Suasana tenang, jadi saya menutup jendela.",
+      "Semua orang lapar, jadi kami makan malam lebih awal."
+    ],
+    "it": [
+      "Pioveva, così ho comprato un ombrello.",
+      "Non avevo abbastanza soldi, così sono andato in autobus.",
+      "Era tranquillo, così ho chiuso la finestra.",
+      "Avevano tutti fame, così abbiamo cenato presto."
+    ],
+    "ko": [
+      "비가 와서 우산을 샀다.",
+      "돈이 부족해서 버스를 타고 갔다.",
+      "조용해서 창문을 닫았다.",
+      "모두 배가 고파서 저녁을 일찍 먹었다."
+    ],
+    "nb": [
+      "Det regnet, så jeg kjøpte en paraply.",
+      "Jeg hadde ikke nok penger, så jeg tok bussen.",
+      "Det var stille, så jeg lukket vinduet.",
+      "Alle var sultne, så vi spiste middag tidlig."
+    ],
+    "nl": [
+      "Het regende, dus ik kocht een paraplu.",
+      "Ik had niet genoeg geld, dus ging ik met de bus.",
+      "Het was stil, dus ik deed het raam dicht.",
+      "Iedereen had honger, dus aten we vroeg."
+    ],
+    "pl": [
+      "Padało, więc kupiłem parasol.",
+      "Nie miałem dość pieniędzy, więc pojechałem autobusem.",
+      "Było cicho, więc zamknąłem okno.",
+      "Wszyscy byli głodni, więc zjedliśmy kolację wcześnie."
+    ],
+    "pt": [
+      "Estava chovendo, então comprei um guarda-chuva.",
+      "Não tinha dinheiro suficiente, então fui de ônibus.",
+      "Estava silencioso, então fechei a janela.",
+      "Todos estavam com fome, então jantamos cedo."
+    ],
+    "ro": [
+      "Ploua, așa că am cumpărat o umbrelă.",
+      "Nu aveam destui bani, așa că am mers cu autobuzul.",
+      "Era liniște, așa că am închis fereastra.",
+      "Toți erau flămânzi, așa că am luat cina devreme."
+    ],
+    "ru": [
+      "Шёл дождь, поэтому я купил зонтик.",
+      "У меня не хватало денег, поэтому я поехал на автобусе.",
+      "Было тихо, поэтому я закрыл окно.",
+      "Все проголодались, поэтому мы поужинали рано."
+    ],
+    "sv": [
+      "Det regnade, så jag köpte ett paraply.",
+      "Jag hade inte tillräckligt med pengar, så jag åkte buss.",
+      "Det var tyst, så jag stängde fönstret.",
+      "Alla var hungriga, så vi åt middag tidigt."
+    ],
+    "tr": [
+      "Yağmur yağıyordu, bu yüzden bir şemsiye aldım.",
+      "Yeterince param yoktu, bu yüzden otobüsle gittim.",
+      "Sessizdi, bu yüzden pencereyi kapattım.",
+      "Herkes acıkmıştı, bu yüzden akşam yemeğini erken yedik."
+    ],
+    "uk": [
+      "Йшов дощ, тому я купив парасольку.",
+      "У мене не вистачало грошей, тому я поїхав автобусом.",
+      "Було тихо, тому я зачинив вікно.",
+      "Усі зголодніли, тому ми повечеряли рано."
+    ],
+    "vi": [
+      "Trời mưa, nên tôi đã mua một cái ô.",
+      "Tôi không có đủ tiền, nên tôi đi xe buýt.",
+      "Không gian yên tĩnh, nên tôi đã đóng cửa sổ.",
+      "Mọi người đều đói, nên chúng tôi ăn tối sớm."
+    ],
+    "yue": [
+      "落雨，所以我買咗把遮。",
+      "我唔夠錢，所以我搭巴士去。",
+      "好靜，所以我閂咗窗。",
+      "大家都肚餓，所以我哋提早食晚飯。"
+    ],
+    "zh-Hans": [
+      "下雨了，所以我买了一把伞。",
+      "我没有足够的钱，所以我坐公交车去了。",
+      "很安静，所以我关上了窗户。",
+      "大家都饿了，所以我们早点吃了晚饭。"
     ]
   }
 }

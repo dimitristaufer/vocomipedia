@@ -169,8 +169,8 @@
         "ro": "Prognoza spune că azi va ploua.",
         "cs": "Předpověď říká, že dnes bude pršet.",
         "da": "Vejrudsigten siger, at det bliver regn i dag.",
-        "fi": "Sääennuste kertoo, όti tänään sataa.",
-        "ja": "天気予報では،今日は雨が降る。"
+        "fi": "Sääennuste kertoo, että tänään sataa.",
+        "ja": "天気予報では、今日は雨が降るそうだ。"
       },
       "tokens": [
         {
@@ -234,12 +234,12 @@
       "difficulty": 6.67
     },
     {
-      "target": "Ich packe nach der Wettervorhersage meine Tasche.",
+      "target": "Ich packe meine Tasche passend zur Wettervorhersage.",
       "reading": "/ɪç ˈpakə naːx deːɐ̯ ˈvɛtɐfoːɐ̯ˌheːʁzaːɡə ˈmaɪ̯nə ˈtaʃə/",
       "translations": {
-        "de": "Ich packe nach der Wettervorhersage meine Tasche.",
+        "de": "Ich packe meine Tasche passend zur Wettervorhersage.",
         "ipa": "/ɪç ˈpakə naːx deːɐ̯ ˈvɛtɐfoːɐ̯ˌheːʁzaːɡə ˈmaɪ̯nə ˈtaʃə/",
-        "en": "I pack my bag according to the weather forecast.",
+        "en": "I pack my bag based on the weather forecast.",
         "es": "Preparo mi mochila según el pronóstico del tiempo.",
         "fr": "Je prépare mon sac en fonction de la météo.",
         "it": "Preparo la borsa in base alle previsioni del tempo.",
@@ -270,67 +270,92 @@
       "tokens": [
         {
           "surface": "Ich",
-          "surface_en": "I",
-          "furigana": "[ɪç]",
-          "pos": "PRON",
           "lemma": "ich",
-          "explanation": "1st person singular nominative personal pronoun; subject of ‘packe’.",
-          "difficulty": 2
+          "pos": "PRON",
+          "upos": "PRON",
+          "xpos": "PPER",
+          "feats": {},
+          "start": 0,
+          "end": 3,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "packe",
-          "surface_en": "pack",
-          "furigana": "[ˈpakə]",
-          "pos": "VERB",
           "lemma": "packen",
-          "explanation": "Finite verb, 1st person singular present indicative; transitive, taking ‘meine Tasche’ as direct object.",
-          "difficulty": 7
-        },
-        {
-          "surface": "nach",
-          "surface_en": "according to",
-          "furigana": "[naːx]",
-          "pos": "ADP",
-          "lemma": "nach",
-          "explanation": "Preposition governing dative; introduces a PP meaning ‘according to/after’.",
-          "difficulty": 2
-        },
-        {
-          "surface": "der",
-          "surface_en": "the",
-          "furigana": "[deːɐ̯]",
-          "pos": "DET",
-          "lemma": "der",
-          "explanation": "Definite article, dative singular feminine with ‘Wettervorhersage’, as object of the preposition ‘nach’.",
-          "difficulty": 2
-        },
-        {
-          "surface": "Wettervorhersage",
-          "surface_en": "weather forecast",
-          "furigana": "[ˈvɛtɐfoːɐ̯ˈheːɐ̯zaːɡə]",
-          "pos": "NOUN",
-          "lemma": "Wettervorhersage",
-          "explanation": "Feminine noun in dative; complement of the preposition ‘nach’.",
-          "difficulty": 10,
-          "is_main_word": true
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VVFIN",
+          "feats": {},
+          "start": 4,
+          "end": 9,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "meine",
-          "surface_en": "my",
-          "furigana": "[ˈmaɪ̯nə]",
-          "pos": "DET",
           "lemma": "mein",
-          "explanation": "Possessive determiner, accusative singular feminine agreeing with ‘Tasche’; determiner of the direct object.",
-          "difficulty": 7
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "PPOSAT",
+          "feats": {},
+          "start": 10,
+          "end": 15,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "Tasche.",
-          "surface_en": "bag",
-          "furigana": "[ˈtaʃə]",
-          "pos": "NOUN",
+          "surface": "Tasche",
           "lemma": "Tasche",
-          "explanation": "Feminine noun; accusative direct object of ‘packe’.",
-          "difficulty": 7
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 16,
+          "end": 22,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "passend",
+          "lemma": "passend",
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "ADJD",
+          "feats": {},
+          "start": 23,
+          "end": 30,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "zur",
+          "lemma": "zu",
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "APPRART",
+          "feats": {},
+          "start": 31,
+          "end": 34,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "Wettervorhersage",
+          "lemma": "Wettervorhersage",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 35,
+          "end": 51,
+          "analyzer": "spacy_de_core_news_lg",
+          "is_main_word": true
+        },
+        {
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 51,
+          "end": 52,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 5.29
@@ -351,12 +376,12 @@
         "ru": "Сейчас по радио идёт новый прогноз погоды.",
         "pt": "A nova previsão do tempo está passando no rádio agora.",
         "he": "התחזית החדשה משודרת עכשיו ברדיו.",
-        "tr": "Yeni hava durumu şu anda radyoda.",
+        "tr": "Yeni hava durumu tahmini şu anda radyoda yayınlanıyor.",
         "vi": "Radio hiện đang phát dự báo thời tiết mới.",
         "ar": "نشرة الطقس الجديدة تُبث الآن على الراديو.",
         "nl": "De nieuwe weersverwachting is nu op de radio.",
         "uk": "Зараз по радіо звучить новий прогноз погоди.",
-        "hu": "Az új időjárás-előrejelzés éppen עוד szól a rádióban.",
+        "hu": "Az új időjárás-előrejelzés éppen most szól a rádióban.",
         "hi": "नया मौसम पूर्वानुमान अभी रेडियो पर चल रहा है।",
         "pl": "Nowa prognoza pogody właśnie leci w radiu.",
         "el": "Η νέα πρόγνωση του καιρού παίζει τώρα στο ραδιόφωνο.",
@@ -364,9 +389,9 @@
         "id": "Prakiraan cuaca terbaru sedang disiarkan di radio sekarang.",
         "sv": "Den nya väderprognosen är på radion nu.",
         "ro": "Noua prognoză meteo este la radio chiar acum.",
-        "cs": "V rádiu teď běží vέa předpověď počasí.",
+        "cs": "V rádiu teď běží nová předpověď počasí.",
         "da": "Den nye vejrmelding er i radioen lige nu.",
-        "fi": "Uusi sääennuste tulee radiosta juuri tώpa.",
+        "fi": "Uusi sääennuste tulee radiosta juuri nyt.",
         "ja": "最新の天気予報が今ラジオで流れている。"
       },
       "tokens": [
@@ -449,8 +474,314 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-15T05:50:58Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:De b1/693f402fbf841458",
+      "revision_id": 84773,
+      "parent_revision_id": 18486,
+      "revision_timestamp_utc": "2026-10-15T05:50:58Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Clarified the German sentence about packing according to the forecast, corrected mixed-script text and punctuation, and improved a few translations.",
+      "pulled_utc": "2026-10-17T07:06:39Z",
+      "applied_utc": "2026-10-17T07:06:51Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-47149c7603a33559",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_b1:693f402fbf841458",
+        "pack_code": "de_b1",
+        "entry_id": "Wettervorhersage",
+        "language": "de",
+        "sentence_index": 3,
+        "old_sentence": "Ich packe nach der Wettervorhersage meine Tasche.",
+        "old_translations": {
+          "de": "Ich packe nach der Wettervorhersage meine Tasche.",
+          "ipa": "/ɪç ˈpakə naːx deːɐ̯ ˈvɛtɐfoːɐ̯ˌheːʁzaːɡə ˈmaɪ̯nə ˈtaʃə/",
+          "en": "I pack my bag according to the weather forecast.",
+          "es": "Preparo mi mochila según el pronóstico del tiempo.",
+          "fr": "Je prépare mon sac en fonction de la météo.",
+          "it": "Preparo la borsa in base alle previsioni del tempo.",
+          "ko": "날씨 예보에 맞춰 가방을 챙겨요.",
+          "zh-Hans": "我根据天气预报收拾背包。",
+          "yue": "我跟住天氣預報嚟執個袋。",
+          "ru": "Я собираю сумку с учётом прогноза погоды.",
+          "pt": "Eu arrumo a minha mochila de acordo com a previsão do tempo.",
+          "he": "אני אורז את התיק לפי התחזית.",
+          "tr": "Çantamı hava durumuna göre hazırlıyorum.",
+          "vi": "Tôi chuẩn bị túi theo dự báo thời tiết.",
+          "ar": "أجهز حقيبتي وفقًا لتوقعات الطقس.",
+          "nl": "Ik pak mijn tas in op basis van de weersverwachting.",
+          "uk": "Я пакую сумку з огляду на прогноз погоди.",
+          "hu": "Az időjárás-előrejelzés szerint pakolom a táskámat.",
+          "hi": "मैं मौसम के पूर्वानुमान के अनुसार अपना बैग पैक करता हूँ।",
+          "pl": "Pakuję torbę zgodnie z prognozą pogody.",
+          "el": "Ετοιμάζω την τσάντα μου σύμφωνα με την πρόγνωση του καιρού.",
+          "nb": "Jeg pakker sekken etter værmeldingen.",
+          "id": "Saya menyiapkan tas sesuai dengan prakiraan cuaca.",
+          "sv": "Jag packar väskan efter väderprognosen.",
+          "ro": "Îmi pregătesc geanta în funcție de prognoza meteo.",
+          "cs": "Balím si tašku podle předpovědi počasí.",
+          "da": "Jeg pakker tasken efter vejrudsigten.",
+          "fi": "Pakkaan laukun sääennusteen mukaan.",
+          "ja": "天気予報に合わせてバッグを準備する。"
+        },
+        "proposed_sentence": "Ich packe meine Tasche passend zur Wettervorhersage.",
+        "proposed_translations": {
+          "de": "Ich packe meine Tasche passend zur Wettervorhersage.",
+          "ipa": "/ɪç ˈpakə naːx deːɐ̯ ˈvɛtɐfoːɐ̯ˌheːʁzaːɡə ˈmaɪ̯nə ˈtaʃə/",
+          "en": "I pack my bag based on the weather forecast.",
+          "es": "Preparo mi mochila según el pronóstico del tiempo.",
+          "fr": "Je prépare mon sac en fonction de la météo.",
+          "it": "Preparo la borsa in base alle previsioni del tempo.",
+          "ko": "날씨 예보에 맞춰 가방을 챙겨요.",
+          "zh-Hans": "我根据天气预报收拾背包。",
+          "yue": "我跟住天氣預報嚟執個袋。",
+          "ru": "Я собираю сумку с учётом прогноза погоды.",
+          "pt": "Eu arrumo a minha mochila de acordo com a previsão do tempo.",
+          "he": "אני אורז את התיק לפי התחזית.",
+          "tr": "Çantamı hava durumuna göre hazırlıyorum.",
+          "vi": "Tôi chuẩn bị túi theo dự báo thời tiết.",
+          "ar": "أجهز حقيبتي وفقًا لتوقعات الطقس.",
+          "nl": "Ik pak mijn tas in op basis van de weersverwachting.",
+          "uk": "Я пакую сумку з огляду на прогноз погоди.",
+          "hu": "Az időjárás-előrejelzés szerint pakolom a táskámat.",
+          "hi": "मैं मौसम के पूर्वानुमान के अनुसार अपना बैग पैक करता हूँ।",
+          "pl": "Pakuję torbę zgodnie z prognozą pogody.",
+          "el": "Ετοιμάζω την τσάντα μου σύμφωνα με την πρόγνωση του καιρού.",
+          "nb": "Jeg pakker sekken etter værmeldingen.",
+          "id": "Saya menyiapkan tas sesuai dengan prakiraan cuaca.",
+          "sv": "Jag packar väskan efter väderprognosen.",
+          "ro": "Îmi pregătesc geanta în funcție de prognoza meteo.",
+          "cs": "Balím si tašku podle předpovědi počasí.",
+          "da": "Jeg pakker tasken efter vejrudsigten.",
+          "fi": "Pakkaan laukun sääennusteen mukaan.",
+          "ja": "天気予報に合わせてバッグを準備する。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Ich packe meine Tasche passend zur Wettervorhersage.",
+        "old_japanese": "Ich packe nach der Wettervorhersage meine Tasche.",
+        "old_english": "I pack my bag according to the weather forecast.",
+        "proposed_japanese": "Ich packe meine Tasche passend zur Wettervorhersage.",
+        "proposed_english": "I pack my bag based on the weather forecast.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Ich packe meine Tasche passend zur Wettervorhersage.",
+          "tokens": [
+            {
+              "surface": "Ich",
+              "lemma": "ich",
+              "pos": "PRON",
+              "upos": "PRON",
+              "xpos": "PPER",
+              "feats": {},
+              "start": 0,
+              "end": 3,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "packe",
+              "lemma": "packen",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVFIN",
+              "feats": {},
+              "start": 4,
+              "end": 9,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "meine",
+              "lemma": "mein",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "PPOSAT",
+              "feats": {},
+              "start": 10,
+              "end": 15,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Tasche",
+              "lemma": "Tasche",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 16,
+              "end": 22,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "passend",
+              "lemma": "passend",
+              "pos": "ADV",
+              "upos": "ADV",
+              "xpos": "ADJD",
+              "feats": {},
+              "start": 23,
+              "end": 30,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "zur",
+              "lemma": "zu",
+              "pos": "ADP",
+              "upos": "ADP",
+              "xpos": "APPRART",
+              "feats": {},
+              "start": 31,
+              "end": 34,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Wettervorhersage",
+              "lemma": "Wettervorhersage",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 35,
+              "end": 51,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 51,
+              "end": 52,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Ich",
+            "lemma": "ich",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "packe",
+            "lemma": "packen",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 4,
+            "end": 9,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "meine",
+            "lemma": "mein",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "PPOSAT",
+            "feats": {},
+            "start": 10,
+            "end": 15,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Tasche",
+            "lemma": "Tasche",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 16,
+            "end": 22,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "passend",
+            "lemma": "passend",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADJD",
+            "feats": {},
+            "start": 23,
+            "end": 30,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "zur",
+            "lemma": "zu",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPRART",
+            "feats": {},
+            "start": 31,
+            "end": 34,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Wettervorhersage",
+            "lemma": "Wettervorhersage",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 35,
+            "end": 51,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 51,
+            "end": 52,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:06:39Z",
+        "updated_utc": "2026-10-17T07:07:06Z",
+        "applied_utc": "2026-10-17T07:07:06Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:07:06Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -462,34 +793,6 @@
     "word": "Wettervorhersage",
     "word_reading": "",
     "word_label": "Substantiv (die fem.)",
-    "word_en": "weather forecast; weather prediction",
-    "word_es": "pronóstico del tiempo; previsión del tiempo",
-    "word_fr": "prévisions météo; prévision météorologique",
-    "word_it": "previsioni del tempo; previsione meteorologica",
-    "word_ko": "일기예보; 날씨 예보",
-    "word_zh-Hans": "天气预报; 气象预报",
-    "word_yue": "天氣預報; 天氣預測",
-    "word_ru": "прогноз погоды; метеопрогноз",
-    "word_pt": "previsão do tempo; previsão meteorológica",
-    "word_he": "תחזית מזג האוויר; תחזית מזג אוויר",
-    "word_tr": "hava durumu tahmini; hava tahmini",
-    "word_vi": "dự báo thời tiết; dự báo khí tượng",
-    "word_ar": "توقعات الطقس; التنبؤات الجوية",
-    "word_nl": "weersverwachting; weersvoorspelling",
-    "word_uk": "прогноз погоди; метеопрогноз",
-    "word_hu": "időjárás-előrejelzés; időjárás-prognózis",
-    "word_hi": "मौसम का पूर्वानुमान; मौसम पूर्वानुमान",
-    "word_pl": "prognoza pogody; prognoza meteorologiczna",
-    "word_el": "πρόγνωση καιρού; μετεωρολογική πρόγνωση",
-    "word_nb": "værvarsel; værmelding",
-    "word_id": "prakiraan cuaca; ramalan cuaca",
-    "word_sv": "väderprognos; väderleksprognos",
-    "word_ro": "prognoza meteo; prognoza vremii",
-    "word_cs": "předpověď počasí; meteorologická předpověď",
-    "word_da": "vejrudsigt; vejrprognose",
-    "word_fi": "sääennuste; sääennustus",
-    "word_ja": "天気予報; 気象予報",
-    "word_de": "Wettervorhersage",
     "comic_difficulty": 5.62,
     "jp": [
       "Ich sehe mir die Wettervorhersage an.",
@@ -502,24 +805,6 @@
       "/diː ˈvɛtɐfoːɐ̯ˌheːʁzaːɡə zaːkt ˈhɔʏtə ˈʁeːɡn̩ foːˈʁaʊ̯s/",
       "/ɪç ˈpakə naːx deːɐ̯ ˈvɛtɐfoːɐ̯ˌheːʁzaːɡə ˈmaɪ̯nə ˈtaʃə/",
       "/diː ˈnɔʏə ˈvɛtɐfoːɐ̯ˌheːʁzaːɡə kɔmt ɡəˈʁaːdə ɪm ˈʁaːdi̯o/"
-    ],
-    "de": [
-      "Ich sehe mir die Wettervorhersage an.",
-      "Die Wettervorhersage sagt heute Regen voraus.",
-      "Ich packe nach der Wettervorhersage meine Tasche.",
-      "Die neue Wettervorhersage kommt gerade im Radio."
-    ],
-    "ipa": [
-      "/ɪç ˈzeːə mɪʁ diː ˈvɛtɐfoːɐ̯ˌheːʁzaːɡə an/",
-      "/diː ˈvɛtɐfoːɐ̯ˌheːʁzaːɡə zaːkt ˈhɔʏtə ˈʁeːɡn̩ foːˈʁaʊ̯s/",
-      "/ɪç ˈpakə naːx deːɐ̯ ˈvɛtɐfoːɐ̯ˌheːʁzaːɡə ˈmaɪ̯nə ˈtaʃə/",
-      "/diː ˈnɔʏə ˈvɛtɐfoːɐ̯ˌheːʁzaːɡə kɔmt ɡəˈʁaːdə ɪm ˈʁaːdi̯o/"
-    ],
-    "en": [
-      "I’m looking at the weather forecast.",
-      "The weather forecast predicts rain today.",
-      "I pack my bag according to the weather forecast.",
-      "The new weather forecast is on the radio right now."
     ],
     "pos_analysis": [
       {
@@ -649,71 +934,96 @@
         "difficulty_aggregated": 6.67
       },
       {
-        "sentence": "Ich packe nach der Wettervorhersage meine Tasche.",
+        "sentence": "Ich packe meine Tasche passend zur Wettervorhersage.",
         "tokens": [
           {
             "surface": "Ich",
-            "surface_en": "I",
-            "furigana": "[ɪç]",
-            "pos": "PRON",
             "lemma": "ich",
-            "explanation": "1st person singular nominative personal pronoun; subject of ‘packe’.",
-            "difficulty": 2
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "packe",
-            "surface_en": "pack",
-            "furigana": "[ˈpakə]",
-            "pos": "VERB",
             "lemma": "packen",
-            "explanation": "Finite verb, 1st person singular present indicative; transitive, taking ‘meine Tasche’ as direct object.",
-            "difficulty": 7
-          },
-          {
-            "surface": "nach",
-            "surface_en": "according to",
-            "furigana": "[naːx]",
-            "pos": "ADP",
-            "lemma": "nach",
-            "explanation": "Preposition governing dative; introduces a PP meaning ‘according to/after’.",
-            "difficulty": 2
-          },
-          {
-            "surface": "der",
-            "surface_en": "the",
-            "furigana": "[deːɐ̯]",
-            "pos": "DET",
-            "lemma": "der",
-            "explanation": "Definite article, dative singular feminine with ‘Wettervorhersage’, as object of the preposition ‘nach’.",
-            "difficulty": 2
-          },
-          {
-            "surface": "Wettervorhersage",
-            "surface_en": "weather forecast",
-            "furigana": "[ˈvɛtɐfoːɐ̯ˈheːɐ̯zaːɡə]",
-            "pos": "NOUN",
-            "lemma": "Wettervorhersage",
-            "explanation": "Feminine noun in dative; complement of the preposition ‘nach’.",
-            "difficulty": 10,
-            "is_main_word": true
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 4,
+            "end": 9,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "meine",
-            "surface_en": "my",
-            "furigana": "[ˈmaɪ̯nə]",
-            "pos": "DET",
             "lemma": "mein",
-            "explanation": "Possessive determiner, accusative singular feminine agreeing with ‘Tasche’; determiner of the direct object.",
-            "difficulty": 7
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "PPOSAT",
+            "feats": {},
+            "start": 10,
+            "end": 15,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "Tasche.",
-            "surface_en": "bag",
-            "furigana": "[ˈtaʃə]",
-            "pos": "NOUN",
+            "surface": "Tasche",
             "lemma": "Tasche",
-            "explanation": "Feminine noun; accusative direct object of ‘packe’.",
-            "difficulty": 7
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 16,
+            "end": 22,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "passend",
+            "lemma": "passend",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADJD",
+            "feats": {},
+            "start": 23,
+            "end": 30,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "zur",
+            "lemma": "zu",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPRART",
+            "feats": {},
+            "start": 31,
+            "end": 34,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Wettervorhersage",
+            "lemma": "Wettervorhersage",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 35,
+            "end": 51,
+            "analyzer": "spacy_de_core_news_lg",
+            "is_main_word": true
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 51,
+            "end": 52,
+            "analyzer": "spacy_de_core_news_lg"
           }
         ],
         "difficulty_aggregated": 5.29
@@ -789,143 +1099,47 @@
         "difficulty_aggregated": 6
       }
     ],
-    "es": [
-      "Estoy viendo el pronóstico del tiempo.",
-      "El pronóstico dice que hoy va a llover.",
-      "Preparo mi mochila según el pronóstico del tiempo.",
-      "Ahora están dando el nuevo pronóstico del tiempo en la radio."
-    ],
-    "fr": [
-      "Je regarde la météo.",
-      "La météo annonce de la pluie pour aujourd’hui.",
-      "Je prépare mon sac en fonction de la météo.",
-      "Les nouvelles prévisions météo passent à la radio en ce moment."
-    ],
-    "it": [
-      "Sto guardando le previsioni del tempo.",
-      "Le previsioni dicono che oggi pioverà.",
-      "Preparo la borsa in base alle previsioni del tempo.",
-      "Stanno dando le nuove previsioni meteo alla radio in questo momento."
-    ],
-    "ko": [
-      "날씨 예보를 보고 있어요.",
-      "날씨 예보에서 오늘 비가 올 거라고 해요.",
-      "날씨 예보에 맞춰 가방을 챙겨요.",
-      "지금 라디오에서 새로운 날씨 예보가 나오고 있어요."
-    ],
-    "zh-Hans": [
-      "我在看天气预报。",
-      "天气预报说今天会下雨。",
-      "我根据天气预报收拾背包。",
-      "广播里现在正在播最新的天气预报。"
-    ],
-    "yue": [
-      "我喺度睇天氣預報。",
-      "天氣預報話今日會落雨。",
-      "我跟住天氣預報嚟執個袋。",
-      "而家收音機喺度播緊最新嘅天氣預報。"
-    ],
-    "ru": [
-      "Я смотрю прогноз погоды.",
-      "По прогнозу сегодня дождь.",
-      "Я собираю сумку с учётом прогноза погоды.",
-      "Сейчас по радио идёт новый прогноз погоды."
-    ],
-    "pt": [
-      "Estou vendo a previsão do tempo.",
-      "A previsão diz que hoje vai chover.",
-      "Eu arrumo a minha mochila de acordo com a previsão do tempo.",
-      "A nova previsão do tempo está passando no rádio agora."
-    ],
-    "he": [
-      "אני מסתכל על תחזית מזג האוויר.",
-      "התחזית אומרת שיהיה גשם היום.",
-      "אני אורז את התיק לפי התחזית.",
-      "התחזית החדשה משודרת עכשיו ברדיו."
-    ],
-    "tr": [
-      "Hava durumuna bakıyorum.",
-      "Hava durumu bugün yağmur gösteriyor.",
-      "Çantamı hava durumuna göre hazırlıyorum.",
-      "Yeni hava durumu şu anda radyoda."
-    ],
-    "vi": [
-      "Tôi đang xem dự báo thời tiết.",
-      "Dự báo nói hôm nay sẽ mưa.",
-      "Tôi chuẩn bị túi theo dự báo thời tiết.",
-      "Radio hiện đang phát dự báo thời tiết mới."
-    ],
+    "word_POS": "Noun",
+    "entry_id": "Wettervorhersage",
+    "word_en": "weather forecast; weather prediction",
+    "word_es": "pronóstico del tiempo; previsión del tiempo",
+    "word_fr": "prévisions météo; prévision météorologique",
+    "word_it": "previsioni del tempo; previsione meteorologica",
+    "word_ko": "일기예보; 날씨 예보",
+    "word_zh-Hans": "天气预报; 气象预报",
+    "word_yue": "天氣預報; 天氣預測",
+    "word_ru": "прогноз погоды; метеопрогноз",
+    "word_pt": "previsão do tempo; previsão meteorológica",
+    "word_he": "תחזית מזג האוויר; תחזית מזג אוויר",
+    "word_tr": "hava durumu tahmini; hava tahmini",
+    "word_vi": "dự báo thời tiết; dự báo khí tượng",
+    "word_ar": "توقعات الطقس; التنبؤات الجوية",
+    "word_nl": "weersverwachting; weersvoorspelling",
+    "word_uk": "прогноз погоди; метеопрогноз",
+    "word_hu": "időjárás-előrejelzés; időjárás-prognózis",
+    "word_hi": "मौसम का पूर्वानुमान; मौसम पूर्वानुमान",
+    "word_pl": "prognoza pogody; prognoza meteorologiczna",
+    "word_el": "πρόγνωση καιρού; μετεωρολογική πρόγνωση",
+    "word_nb": "værvarsel; værmelding",
+    "word_id": "prakiraan cuaca; ramalan cuaca",
+    "word_sv": "väderprognos; väderleksprognos",
+    "word_ro": "prognoza meteo; prognoza vremii",
+    "word_cs": "předpověď počasí; meteorologická předpověď",
+    "word_da": "vejrudsigt; vejrprognose",
+    "word_fi": "sääennuste; sääennustus",
+    "word_ja": "天気予報; 気象予報",
+    "word_de": "Wettervorhersage",
     "ar": [
       "أتفقد توقعات الطقس.",
       "توقعات الطقس تقول إن اليوم سيهطل المطر.",
       "أجهز حقيبتي وفقًا لتوقعات الطقس.",
       "نشرة الطقس الجديدة تُبث الآن على الراديو."
     ],
-    "nl": [
-      "Ik kijk naar de weersverwachting.",
-      "De voorspelling zegt dat het vandaag gaat regenen.",
-      "Ik pak mijn tas in op basis van de weersverwachting.",
-      "De nieuwe weersverwachting is nu op de radio."
-    ],
-    "uk": [
-      "Я дивлюся прогноз погоди.",
-      "За прогнозом сьогодні дощ.",
-      "Я пакую сумку з огляду на прогноз погоди.",
-      "Зараз по радіо звучить новий прогноз погоди."
-    ],
-    "hu": [
-      "Nézem az időjárás-előrejelzést.",
-      "Az előrejelzés szerint ma esni fog.",
-      "Az időjárás-előrejelzés szerint pakolom a táskámat.",
-      "Az új időjárás-előrejelzés éppen עוד szól a rádióban."
-    ],
-    "hi": [
-      "मैं मौसम का पूर्वानुमान देख रहा हूँ।",
-      "पूर्वानुमान कहता है कि आज बारिश होगी।",
-      "मैं मौसम के पूर्वानुमान के अनुसार अपना बैग पैक करता हूँ।",
-      "नया मौसम पूर्वानुमान अभी रेडियो पर चल रहा है।"
-    ],
-    "pl": [
-      "Sprawdzam prognozę pogody.",
-      "Prognoza pogody zapowiada dziś deszcz.",
-      "Pakuję torbę zgodnie z prognozą pogody.",
-      "Nowa prognoza pogody właśnie leci w radiu."
-    ],
-    "el": [
-      "Κοιτάζω την πρόγνωση του καιρού.",
-      "Η πρόγνωση λέει ότι σήμερα θα βρέξει.",
-      "Ετοιμάζω την τσάντα μου σύμφωνα με την πρόγνωση του καιρού.",
-      "Η νέα πρόγνωση του καιρού παίζει τώρα στο ραδιόφωνο."
-    ],
-    "nb": [
-      "Jeg ser på værmeldingen.",
-      "Værmeldingen sier at det blir regn i dag.",
-      "Jeg pakker sekken etter værmeldingen.",
-      "Den nye værmeldingen er på radioen nå."
-    ],
-    "id": [
-      "Saya sedang melihat prakiraan cuaca.",
-      "Prakiraan cuaca bilang hari ini akan turun hujan.",
-      "Saya menyiapkan tas sesuai dengan prakiraan cuaca.",
-      "Prakiraan cuaca terbaru sedang disiarkan di radio sekarang."
-    ],
-    "sv": [
-      "Jag kollar väderprognosen.",
-      "Prognosen säger att det blir regn idag.",
-      "Jag packar väskan efter väderprognosen.",
-      "Den nya väderprognosen är på radion nu."
-    ],
-    "ro": [
-      "Mă uit la prognoza meteo.",
-      "Prognoza spune că azi va ploua.",
-      "Îmi pregătesc geanta în funcție de prognoza meteo.",
-      "Noua prognoză meteo este la radio chiar acum."
-    ],
     "cs": [
       "Dívám se na předpověď počasí.",
       "Předpověď říká, že dnes bude pršet.",
       "Balím si tašku podle předpovědi počasí.",
-      "V rádiu teď běží vέa předpověď počasí."
+      "V rádiu teď běží nová předpověď počasí."
     ],
     "da": [
       "Jeg kigger på vejrudsigten.",
@@ -933,18 +1147,161 @@
       "Jeg pakker tasken efter vejrudsigten.",
       "Den nye vejrmelding er i radioen lige nu."
     ],
+    "de": [
+      "Ich sehe mir die Wettervorhersage an.",
+      "Die Wettervorhersage sagt heute Regen voraus.",
+      "Ich packe nach der Wettervorhersage meine Tasche.",
+      "Die neue Wettervorhersage kommt gerade im Radio."
+    ],
+    "el": [
+      "Κοιτάζω την πρόγνωση του καιρού.",
+      "Η πρόγνωση λέει ότι σήμερα θα βρέξει.",
+      "Ετοιμάζω την τσάντα μου σύμφωνα με την πρόγνωση του καιρού.",
+      "Η νέα πρόγνωση του καιρού παίζει τώρα στο ραδιόφωνο."
+    ],
+    "en": [
+      "I’m looking at the weather forecast.",
+      "The weather forecast predicts rain today.",
+      "I pack my bag according to the weather forecast.",
+      "The new weather forecast is on the radio right now."
+    ],
+    "es": [
+      "Estoy viendo el pronóstico del tiempo.",
+      "El pronóstico dice que hoy va a llover.",
+      "Preparo mi mochila según el pronóstico del tiempo.",
+      "Ahora están dando el nuevo pronóstico del tiempo en la radio."
+    ],
     "fi": [
       "Katson sääennustetta.",
-      "Sääennuste kertoo, όti tänään sataa.",
+      "Sääennuste kertoo, että tänään sataa.",
       "Pakkaan laukun sääennusteen mukaan.",
-      "Uusi sääennuste tulee radiosta juuri tώpa."
+      "Uusi sääennuste tulee radiosta juuri nyt."
+    ],
+    "fr": [
+      "Je regarde la météo.",
+      "La météo annonce de la pluie pour aujourd’hui.",
+      "Je prépare mon sac en fonction de la météo.",
+      "Les nouvelles prévisions météo passent à la radio en ce moment."
+    ],
+    "he": [
+      "אני מסתכל על תחזית מזג האוויר.",
+      "התחזית אומרת שיהיה גשם היום.",
+      "אני אורז את התיק לפי התחזית.",
+      "התחזית החדשה משודרת עכשיו ברדיו."
+    ],
+    "hi": [
+      "मैं मौसम का पूर्वानुमान देख रहा हूँ।",
+      "पूर्वानुमान कहता है कि आज बारिश होगी।",
+      "मैं मौसम के पूर्वानुमान के अनुसार अपना बैग पैक करता हूँ।",
+      "नया मौसम पूर्वानुमान अभी रेडियो पर चल रहा है।"
+    ],
+    "hu": [
+      "Nézem az időjárás-előrejelzést.",
+      "Az előrejelzés szerint ma esni fog.",
+      "Az időjárás-előrejelzés szerint pakolom a táskámat.",
+      "Az új időjárás-előrejelzés éppen most szól a rádióban."
+    ],
+    "id": [
+      "Saya sedang melihat prakiraan cuaca.",
+      "Prakiraan cuaca bilang hari ini akan turun hujan.",
+      "Saya menyiapkan tas sesuai dengan prakiraan cuaca.",
+      "Prakiraan cuaca terbaru sedang disiarkan di radio sekarang."
+    ],
+    "ipa": [
+      "/ɪç ˈzeːə mɪʁ diː ˈvɛtɐfoːɐ̯ˌheːʁzaːɡə an/",
+      "/diː ˈvɛtɐfoːɐ̯ˌheːʁzaːɡə zaːkt ˈhɔʏtə ˈʁeːɡn̩ foːˈʁaʊ̯s/",
+      "/ɪç ˈpakə naːx deːɐ̯ ˈvɛtɐfoːɐ̯ˌheːʁzaːɡə ˈmaɪ̯nə ˈtaʃə/",
+      "/diː ˈnɔʏə ˈvɛtɐfoːɐ̯ˌheːʁzaːɡə kɔmt ɡəˈʁaːdə ɪm ˈʁaːdi̯o/"
+    ],
+    "it": [
+      "Sto guardando le previsioni del tempo.",
+      "Le previsioni dicono che oggi pioverà.",
+      "Preparo la borsa in base alle previsioni del tempo.",
+      "Stanno dando le nuove previsioni meteo alla radio in questo momento."
     ],
     "ja": [
       "天気予報を見ている。",
-      "天気予報では،今日は雨が降る。",
+      "天気予報では、今日は雨が降るそうだ。",
       "天気予報に合わせてバッグを準備する。",
       "最新の天気予報が今ラジオで流れている。"
     ],
-    "word_POS": "Noun"
+    "ko": [
+      "날씨 예보를 보고 있어요.",
+      "날씨 예보에서 오늘 비가 올 거라고 해요.",
+      "날씨 예보에 맞춰 가방을 챙겨요.",
+      "지금 라디오에서 새로운 날씨 예보가 나오고 있어요."
+    ],
+    "nb": [
+      "Jeg ser på værmeldingen.",
+      "Værmeldingen sier at det blir regn i dag.",
+      "Jeg pakker sekken etter værmeldingen.",
+      "Den nye værmeldingen er på radioen nå."
+    ],
+    "nl": [
+      "Ik kijk naar de weersverwachting.",
+      "De voorspelling zegt dat het vandaag gaat regenen.",
+      "Ik pak mijn tas in op basis van de weersverwachting.",
+      "De nieuwe weersverwachting is nu op de radio."
+    ],
+    "pl": [
+      "Sprawdzam prognozę pogody.",
+      "Prognoza pogody zapowiada dziś deszcz.",
+      "Pakuję torbę zgodnie z prognozą pogody.",
+      "Nowa prognoza pogody właśnie leci w radiu."
+    ],
+    "pt": [
+      "Estou vendo a previsão do tempo.",
+      "A previsão diz que hoje vai chover.",
+      "Eu arrumo a minha mochila de acordo com a previsão do tempo.",
+      "A nova previsão do tempo está passando no rádio agora."
+    ],
+    "ro": [
+      "Mă uit la prognoza meteo.",
+      "Prognoza spune că azi va ploua.",
+      "Îmi pregătesc geanta în funcție de prognoza meteo.",
+      "Noua prognoză meteo este la radio chiar acum."
+    ],
+    "ru": [
+      "Я смотрю прогноз погоды.",
+      "По прогнозу сегодня дождь.",
+      "Я собираю сумку с учётом прогноза погоды.",
+      "Сейчас по радио идёт новый прогноз погоды."
+    ],
+    "sv": [
+      "Jag kollar väderprognosen.",
+      "Prognosen säger att det blir regn idag.",
+      "Jag packar väskan efter väderprognosen.",
+      "Den nya väderprognosen är på radion nu."
+    ],
+    "tr": [
+      "Hava durumuna bakıyorum.",
+      "Hava durumu bugün yağmur gösteriyor.",
+      "Çantamı hava durumuna göre hazırlıyorum.",
+      "Yeni hava durumu tahmini şu anda radyoda yayınlanıyor."
+    ],
+    "uk": [
+      "Я дивлюся прогноз погоди.",
+      "За прогнозом сьогодні дощ.",
+      "Я пакую сумку з огляду на прогноз погоди.",
+      "Зараз по радіо звучить новий прогноз погоди."
+    ],
+    "vi": [
+      "Tôi đang xem dự báo thời tiết.",
+      "Dự báo nói hôm nay sẽ mưa.",
+      "Tôi chuẩn bị túi theo dự báo thời tiết.",
+      "Radio hiện đang phát dự báo thời tiết mới."
+    ],
+    "yue": [
+      "我喺度睇天氣預報。",
+      "天氣預報話今日會落雨。",
+      "我跟住天氣預報嚟執個袋。",
+      "而家收音機喺度播緊最新嘅天氣預報。"
+    ],
+    "zh-Hans": [
+      "我在看天气预报。",
+      "天气预报说今天会下雨。",
+      "我根据天气预报收拾背包。",
+      "广播里现在正在播最新的天气预报。"
+    ]
   }
 }

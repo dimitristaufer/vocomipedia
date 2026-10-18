@@ -124,7 +124,7 @@
       "translations": {
         "de": "Es ist allgemein bekannt.",
         "ipa": "/ɛs ɪst ˈalɡəmaɪ̯n bəˈkant/",
-        "en": "It’s generally known.",
+        "en": "It’s widely known.",
         "es": "Es bien sabido.",
         "fr": "C’est bien connu.",
         "it": "È risaputo.",
@@ -278,10 +278,10 @@
       "difficulty": 6.6
     },
     {
-      "target": "Man zahlt allgemein mit Karte.",
+      "target": "Im Allgemeinen zahlt man mit Karte.",
       "reading": "/man tsaːlt ˈalɡəmaɪ̯n mɪt ˈkaʁtə/",
       "translations": {
-        "de": "Man zahlt allgemein mit Karte.",
+        "de": "Im Allgemeinen zahlt man mit Karte.",
         "ipa": "/man tsaːlt ˈalɡəmaɪ̯n mɪt ˈkaʁtə/",
         "en": "People generally pay by card.",
         "es": "Por lo general, se paga con tarjeta.",
@@ -298,7 +298,7 @@
         "ar": "عادةً ما يدفع الناس بالبطاقة.",
         "nl": "Meestal betaalt men met kaart.",
         "uk": "Зазвичай платять карткою.",
-        "hu": "Általában कártyával fizetnek.",
+        "hu": "Általában kártyával fizetnek.",
         "hi": "लोग आम तौर पर कार्ड से भुगतान करते हैं.",
         "pl": "Zazwyczaj płaci się kartą.",
         "el": "Γενικά πληρώνεις με κάρτα.",
@@ -313,50 +313,81 @@
       },
       "tokens": [
         {
-          "surface": "Man",
-          "surface_en": "one/people",
-          "furigana": "[man]",
-          "pos": "PRON",
-          "lemma": "man",
-          "explanation": "Indefinite personal pronoun used as generic subject, nominative singular.",
-          "difficulty": 2
+          "surface": "Im",
+          "lemma": "in",
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "APPRART",
+          "feats": {},
+          "start": 0,
+          "end": 2,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "Allgemeinen",
+          "lemma": "allgemeinen",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 3,
+          "end": 14,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "zahlt",
-          "surface_en": "pays",
-          "furigana": "[tsaːlt]",
-          "pos": "VERB",
           "lemma": "zahlen",
-          "explanation": "Finite main verb, present tense 3rd singular (agreeing with 'man'); denotes the action.",
-          "difficulty": 7
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VVFIN",
+          "feats": {},
+          "start": 15,
+          "end": 20,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "allgemein",
-          "surface_en": "generally",
-          "furigana": "[ˈalɡəmaɪ̯n]",
-          "pos": "ADV",
-          "lemma": "allgemein",
-          "explanation": "Adverb indicating typical frequency/regularity of the action; adverbial modifier.",
-          "difficulty": 10,
-          "is_main_word": true
+          "surface": "man",
+          "lemma": "man",
+          "pos": "PRON",
+          "upos": "PRON",
+          "xpos": "PIS",
+          "feats": {},
+          "start": 21,
+          "end": 24,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "mit",
-          "surface_en": "with",
-          "furigana": "[mɪt]",
-          "pos": "ADP",
           "lemma": "mit",
-          "explanation": "Preposition 'with', governing the dative case of its complement.",
-          "difficulty": 2
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "APPR",
+          "feats": {},
+          "start": 25,
+          "end": 28,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "Karte.",
-          "surface_en": "card",
-          "furigana": "[ˈkaʁtə]",
-          "pos": "NOUN",
+          "surface": "Karte",
           "lemma": "Karte",
-          "explanation": "Common noun; complement of the preposition 'mit' (prepositional object/oblique), understood in dative; no article present.",
-          "difficulty": 7
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 29,
+          "end": 34,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 34,
+          "end": 35,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 5.6
@@ -373,8 +404,292 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-14T21:07:21Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:De b1/71cfea8b9ba07dd8",
+      "revision_id": 86557,
+      "parent_revision_id": 15102,
+      "revision_timestamp_utc": "2026-10-14T21:07:21Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Improve German and repair example translations",
+      "pulled_utc": "2026-10-17T07:06:39Z",
+      "applied_utc": "2026-10-17T07:06:52Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-59377abc6be6ded1",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_b1:71cfea8b9ba07dd8",
+        "pack_code": "de_b1",
+        "entry_id": "allgemein",
+        "language": "de",
+        "sentence_index": 4,
+        "old_sentence": "Man zahlt allgemein mit Karte.",
+        "old_translations": {
+          "de": "Man zahlt allgemein mit Karte.",
+          "ipa": "/man tsaːlt ˈalɡəmaɪ̯n mɪt ˈkaʁtə/",
+          "en": "People generally pay by card.",
+          "es": "Por lo general, se paga con tarjeta.",
+          "fr": "En général, on paie par carte.",
+          "it": "In genere si paga con carta.",
+          "ko": "보통 카드로 결제해요.",
+          "zh-Hans": "一般都用卡付款。",
+          "yue": "一般都用卡付款。",
+          "ru": "Обычно платят картой.",
+          "pt": "Em geral, paga-se com cartão.",
+          "he": "בדרך כלל משלמים בכרטיס.",
+          "tr": "Genelde kartla ödenir.",
+          "vi": "Mọi người thường trả bằng thẻ.",
+          "ar": "عادةً ما يدفع الناس بالبطاقة.",
+          "nl": "Meestal betaalt men met kaart.",
+          "uk": "Зазвичай платять карткою.",
+          "hu": "Általában कártyával fizetnek.",
+          "hi": "लोग आम तौर पर कार्ड से भुगतान करते हैं.",
+          "pl": "Zazwyczaj płaci się kartą.",
+          "el": "Γενικά πληρώνεις με κάρτα.",
+          "nb": "Som regel betaler man med kort.",
+          "id": "Biasanya orang membayar dengan kartu.",
+          "sv": "I allmänhet betalar man med kort.",
+          "ro": "În general se plătește cu cardul.",
+          "cs": "Obvykle se platí kartou.",
+          "da": "Man betaler som regel med kort.",
+          "fi": "Yleensä maksetaan kortilla.",
+          "ja": "普通はカードで支払います。"
+        },
+        "proposed_sentence": "Im Allgemeinen zahlt man mit Karte.",
+        "proposed_translations": {
+          "de": "Im Allgemeinen zahlt man mit Karte.",
+          "ipa": "/man tsaːlt ˈalɡəmaɪ̯n mɪt ˈkaʁtə/",
+          "en": "People generally pay by card.",
+          "es": "Por lo general, se paga con tarjeta.",
+          "fr": "En général, on paie par carte.",
+          "it": "In genere si paga con carta.",
+          "ko": "보통 카드로 결제해요.",
+          "zh-Hans": "一般都用卡付款。",
+          "yue": "一般都用卡付款。",
+          "ru": "Обычно платят картой.",
+          "pt": "Em geral, paga-se com cartão.",
+          "he": "בדרך כלל משלמים בכרטיס.",
+          "tr": "Genelde kartla ödenir.",
+          "vi": "Mọi người thường trả bằng thẻ.",
+          "ar": "عادةً ما يدفع الناس بالبطاقة.",
+          "nl": "Meestal betaalt men met kaart.",
+          "uk": "Зазвичай платять карткою.",
+          "hu": "Általában kártyával fizetnek.",
+          "hi": "लोग आम तौर पर कार्ड से भुगतान करते हैं.",
+          "pl": "Zazwyczaj płaci się kartą.",
+          "el": "Γενικά πληρώνεις με κάρτα.",
+          "nb": "Som regel betaler man med kort.",
+          "id": "Biasanya orang membayar dengan kartu.",
+          "sv": "I allmänhet betalar man med kort.",
+          "ro": "În general se plătește cu cardul.",
+          "cs": "Obvykle se platí kartou.",
+          "da": "Man betaler som regel med kort.",
+          "fi": "Yleensä maksetaan kortilla.",
+          "ja": "普通はカードで支払います。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Im Allgemeinen zahlt man mit Karte.",
+        "old_japanese": "Man zahlt allgemein mit Karte.",
+        "old_english": "People generally pay by card.",
+        "proposed_japanese": "Im Allgemeinen zahlt man mit Karte.",
+        "proposed_english": "People generally pay by card.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Im Allgemeinen zahlt man mit Karte.",
+          "tokens": [
+            {
+              "surface": "Im",
+              "lemma": "in",
+              "pos": "ADP",
+              "upos": "ADP",
+              "xpos": "APPRART",
+              "feats": {},
+              "start": 0,
+              "end": 2,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Allgemeinen",
+              "lemma": "allgemeinen",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 3,
+              "end": 14,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "zahlt",
+              "lemma": "zahlen",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVFIN",
+              "feats": {},
+              "start": 15,
+              "end": 20,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "man",
+              "lemma": "man",
+              "pos": "PRON",
+              "upos": "PRON",
+              "xpos": "PIS",
+              "feats": {},
+              "start": 21,
+              "end": 24,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "mit",
+              "lemma": "mit",
+              "pos": "ADP",
+              "upos": "ADP",
+              "xpos": "APPR",
+              "feats": {},
+              "start": 25,
+              "end": 28,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Karte",
+              "lemma": "Karte",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 29,
+              "end": 34,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 34,
+              "end": 35,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Im",
+            "lemma": "in",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPRART",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Allgemeinen",
+            "lemma": "allgemeinen",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 3,
+            "end": 14,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "zahlt",
+            "lemma": "zahlen",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 15,
+            "end": 20,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "man",
+            "lemma": "man",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PIS",
+            "feats": {},
+            "start": 21,
+            "end": 24,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "mit",
+            "lemma": "mit",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 25,
+            "end": 28,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Karte",
+            "lemma": "Karte",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 29,
+            "end": 34,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 34,
+            "end": 35,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:06:39Z",
+        "updated_utc": "2026-10-17T07:07:05Z",
+        "applied_utc": "2026-10-17T07:07:05Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:07:05Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -386,34 +701,6 @@
     "word": "allgemein",
     "word_reading": "",
     "word_label": "Adjektiv",
-    "word_en": "general; common",
-    "word_es": "general; generalmente",
-    "word_fr": "général; généralement",
-    "word_it": "generale; generalmente",
-    "word_ko": "일반적인; 일반적으로",
-    "word_zh-Hans": "一般的; 通常",
-    "word_yue": "普遍嘅; 一般嚟講",
-    "word_ru": "общий; в целом",
-    "word_pt": "geral; geralmente",
-    "word_he": "כללי; באופן כללי",
-    "word_tr": "genel; genellikle",
-    "word_vi": "chung; nói chung",
-    "word_ar": "عام؛ بشكل عام",
-    "word_nl": "algemeen; over het algemeen",
-    "word_uk": "загальний; загалом",
-    "word_hu": "általános; általában",
-    "word_hi": "सामान्य; आम तौर पर",
-    "word_pl": "ogólny; ogólnie",
-    "word_el": "γενικός; γενικά",
-    "word_nb": "generell; generelt",
-    "word_id": "umum; secara umum",
-    "word_sv": "allmän; generellt",
-    "word_ro": "general; în general",
-    "word_cs": "obecný; obecně",
-    "word_da": "generel; generelt",
-    "word_fi": "yleinen; yleisesti",
-    "word_ja": "一般的な; 一般的に",
-    "word_de": "allgemein",
     "comic_difficulty": 6.3,
     "jp": [
       "Ich bin allgemein zufrieden.",
@@ -426,24 +713,6 @@
       "/ɛs ɪst ˈalɡəmaɪ̯n bəˈkant/",
       "/diː ˈpʁaɪ̯zə zɪnt ˈalɡəmaɪ̯n hoːx/",
       "/man tsaːlt ˈalɡəmaɪ̯n mɪt ˈkaʁtə/"
-    ],
-    "de": [
-      "Ich bin allgemein zufrieden.",
-      "Es ist allgemein bekannt.",
-      "Die Preise sind allgemein hoch.",
-      "Man zahlt allgemein mit Karte."
-    ],
-    "ipa": [
-      "/ɪç bɪn ˈalɡəmaɪ̯n tsuˈfʁiːdn̩/",
-      "/ɛs ɪst ˈalɡəmaɪ̯n bəˈkant/",
-      "/diː ˈpʁaɪ̯zə zɪnt ˈalɡəmaɪ̯n hoːx/",
-      "/man tsaːlt ˈalɡəmaɪ̯n mɪt ˈkaʁtə/"
-    ],
-    "en": [
-      "I’m generally satisfied.",
-      "It’s generally known.",
-      "The prices are generally high.",
-      "People generally pay by card."
     ],
     "pos_analysis": [
       {
@@ -585,189 +854,124 @@
         "difficulty_aggregated": 6.6
       },
       {
-        "sentence": "Man zahlt allgemein mit Karte.",
+        "sentence": "Im Allgemeinen zahlt man mit Karte.",
         "tokens": [
           {
-            "surface": "Man",
-            "surface_en": "one/people",
-            "furigana": "[man]",
-            "pos": "PRON",
-            "lemma": "man",
-            "explanation": "Indefinite personal pronoun used as generic subject, nominative singular.",
-            "difficulty": 2
+            "surface": "Im",
+            "lemma": "in",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPRART",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Allgemeinen",
+            "lemma": "allgemeinen",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 3,
+            "end": 14,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "zahlt",
-            "surface_en": "pays",
-            "furigana": "[tsaːlt]",
-            "pos": "VERB",
             "lemma": "zahlen",
-            "explanation": "Finite main verb, present tense 3rd singular (agreeing with 'man'); denotes the action.",
-            "difficulty": 7
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 15,
+            "end": 20,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "allgemein",
-            "surface_en": "generally",
-            "furigana": "[ˈalɡəmaɪ̯n]",
-            "pos": "ADV",
-            "lemma": "allgemein",
-            "explanation": "Adverb indicating typical frequency/regularity of the action; adverbial modifier.",
-            "difficulty": 10,
-            "is_main_word": true
+            "surface": "man",
+            "lemma": "man",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PIS",
+            "feats": {},
+            "start": 21,
+            "end": 24,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "mit",
-            "surface_en": "with",
-            "furigana": "[mɪt]",
-            "pos": "ADP",
             "lemma": "mit",
-            "explanation": "Preposition 'with', governing the dative case of its complement.",
-            "difficulty": 2
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 25,
+            "end": 28,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "Karte.",
-            "surface_en": "card",
-            "furigana": "[ˈkaʁtə]",
-            "pos": "NOUN",
+            "surface": "Karte",
             "lemma": "Karte",
-            "explanation": "Common noun; complement of the preposition 'mit' (prepositional object/oblique), understood in dative; no article present.",
-            "difficulty": 7
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 29,
+            "end": 34,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 34,
+            "end": 35,
+            "analyzer": "spacy_de_core_news_lg"
           }
         ],
         "difficulty_aggregated": 5.6
       }
     ],
-    "es": [
-      "En general, estoy satisfecho.",
-      "Es bien sabido.",
-      "En general, los precios son altos.",
-      "Por lo general, se paga con tarjeta."
-    ],
-    "fr": [
-      "En général, je suis satisfait.",
-      "C’est bien connu.",
-      "Les prix sont généralement élevés.",
-      "En général, on paie par carte."
-    ],
-    "it": [
-      "In generale, sono soddisfatto.",
-      "È risaputo.",
-      "In generale, i prezzi sono alti.",
-      "In genere si paga con carta."
-    ],
-    "ko": [
-      "전반적으로 만족해요.",
-      "잘 알려져 있어요.",
-      "전반적으로 가격이 비싸요.",
-      "보통 카드로 결제해요."
-    ],
-    "zh-Hans": [
-      "我总体上很满意。",
-      "这是众所周知的。",
-      "价格总体偏高。",
-      "一般都用卡付款。"
-    ],
-    "yue": [
-      "我整體嚟講都滿意。",
-      "大家都知。",
-      "價錢普遍偏高。",
-      "一般都用卡付款。"
-    ],
-    "ru": [
-      "В целом я доволен.",
-      "Это всем известно.",
-      "Цены в целом высокие.",
-      "Обычно платят картой."
-    ],
-    "pt": [
-      "Em geral, estou satisfeito.",
-      "É de conhecimento geral.",
-      "Em geral, os preços são altos.",
-      "Em geral, paga-se com cartão."
-    ],
-    "he": [
-      "בגדול אני מרוצה.",
-      "זה ידוע לכולם.",
-      "בגדול המחירים גבוהים.",
-      "בדרך כלל משלמים בכרטיס."
-    ],
-    "tr": [
-      "Genel olarak memnunum.",
-      "Bunu herkes bilir.",
-      "Genel olarak fiyatlar yüksek.",
-      "Genelde kartla ödenir."
-    ],
-    "vi": [
-      "Nói chung tôi hài lòng.",
-      "Ai cũng biết.",
-      "Giá nói chung là cao.",
-      "Mọi người thường trả bằng thẻ."
-    ],
+    "word_POS": "Adverb",
+    "entry_id": "allgemein",
+    "word_en": "general; common",
+    "word_es": "general; generalmente",
+    "word_fr": "général; généralement",
+    "word_it": "generale; generalmente",
+    "word_ko": "일반적인; 일반적으로",
+    "word_zh-Hans": "一般的; 通常",
+    "word_yue": "普遍嘅; 一般嚟講",
+    "word_ru": "общий; в целом",
+    "word_pt": "geral; geralmente",
+    "word_he": "כללי; באופן כללי",
+    "word_tr": "genel; genellikle",
+    "word_vi": "chung; nói chung",
+    "word_ar": "عام؛ بشكل عام",
+    "word_nl": "algemeen; over het algemeen",
+    "word_uk": "загальний; загалом",
+    "word_hu": "általános; általában",
+    "word_hi": "सामान्य; आम तौर पर",
+    "word_pl": "ogólny; ogólnie",
+    "word_el": "γενικός; γενικά",
+    "word_nb": "generell; generelt",
+    "word_id": "umum; secara umum",
+    "word_sv": "allmän; generellt",
+    "word_ro": "general; în general",
+    "word_cs": "obecný; obecně",
+    "word_da": "generel; generelt",
+    "word_fi": "yleinen; yleisesti",
+    "word_ja": "一般的な; 一般的に",
+    "word_de": "allgemein",
     "ar": [
       "بشكل عام أنا راضٍ.",
       "الجميع يعرف ذلك.",
       "الأسعار مرتفعة بشكل عام.",
       "عادةً ما يدفع الناس بالبطاقة."
-    ],
-    "nl": [
-      "Over het algemeen ben ik tevreden.",
-      "Dat is algemeen bekend.",
-      "De prijzen zijn over het algemeen hoog.",
-      "Meestal betaalt men met kaart."
-    ],
-    "uk": [
-      "Загалом я задоволений.",
-      "Це загальновідомо.",
-      "Ціни загалом високі.",
-      "Зазвичай платять карткою."
-    ],
-    "hu": [
-      "Általában elégedett vagyok.",
-      "Ez közismert.",
-      "Az árak általában magasak.",
-      "Általában कártyával fizetnek."
-    ],
-    "hi": [
-      "मैं आम तौर पर संतुष्ट हूँ.",
-      "यह सबको पता है.",
-      "कीमतें आम तौर पर ऊँची हैं.",
-      "लोग आम तौर पर कार्ड से भुगतान करते हैं."
-    ],
-    "pl": [
-      "Ogólnie jestem zadowolony.",
-      "To jest powszechnie znane.",
-      "Ceny są ogólnie wysokie.",
-      "Zazwyczaj płaci się kartą."
-    ],
-    "el": [
-      "Γενικά είμαι ικανοποιημένος.",
-      "Αυτό είναι κοινώς γνωστό.",
-      "Οι τιμές είναι γενικά υψηλές.",
-      "Γενικά πληρώνεις με κάρτα."
-    ],
-    "nb": [
-      "Jeg er generelt fornøyd.",
-      "Det er allment kjent.",
-      "Prisene er generelt høye.",
-      "Som regel betaler man med kort."
-    ],
-    "id": [
-      "Secara umum saya puas.",
-      "Itu sudah diketahui umum.",
-      "Harga umumnya tinggi.",
-      "Biasanya orang membayar dengan kartu."
-    ],
-    "sv": [
-      "Jag är i allmänhet nöjd.",
-      "Det är allmänt känt.",
-      "Priserna är i allmänhet höga.",
-      "I allmänhet betalar man med kort."
-    ],
-    "ro": [
-      "În general, sunt mulțumit.",
-      "Este bine cunoscut.",
-      "Prețurile sunt în general mari.",
-      "În general se plătește cu cardul."
     ],
     "cs": [
       "Celkově jsem spokojený.",
@@ -781,11 +985,77 @@
       "Priserne er generelt høje.",
       "Man betaler som regel med kort."
     ],
+    "de": [
+      "Ich bin allgemein zufrieden.",
+      "Es ist allgemein bekannt.",
+      "Die Preise sind allgemein hoch.",
+      "Man zahlt allgemein mit Karte."
+    ],
+    "el": [
+      "Γενικά είμαι ικανοποιημένος.",
+      "Αυτό είναι κοινώς γνωστό.",
+      "Οι τιμές είναι γενικά υψηλές.",
+      "Γενικά πληρώνεις με κάρτα."
+    ],
+    "en": [
+      "I’m generally satisfied.",
+      "It’s widely known.",
+      "The prices are generally high.",
+      "People generally pay by card."
+    ],
+    "es": [
+      "En general, estoy satisfecho.",
+      "Es bien sabido.",
+      "En general, los precios son altos.",
+      "Por lo general, se paga con tarjeta."
+    ],
     "fi": [
       "Olen yleensä tyytyväinen.",
       "Se on yleisesti tiedossa.",
       "Hinnat ovat yleensä korkeita.",
       "Yleensä maksetaan kortilla."
+    ],
+    "fr": [
+      "En général, je suis satisfait.",
+      "C’est bien connu.",
+      "Les prix sont généralement élevés.",
+      "En général, on paie par carte."
+    ],
+    "he": [
+      "בגדול אני מרוצה.",
+      "זה ידוע לכולם.",
+      "בגדול המחירים גבוהים.",
+      "בדרך כלל משלמים בכרטיס."
+    ],
+    "hi": [
+      "मैं आम तौर पर संतुष्ट हूँ.",
+      "यह सबको पता है.",
+      "कीमतें आम तौर पर ऊँची हैं.",
+      "लोग आम तौर पर कार्ड से भुगतान करते हैं."
+    ],
+    "hu": [
+      "Általában elégedett vagyok.",
+      "Ez közismert.",
+      "Az árak általában magasak.",
+      "Általában कártyával fizetnek."
+    ],
+    "id": [
+      "Secara umum saya puas.",
+      "Itu sudah diketahui umum.",
+      "Harga umumnya tinggi.",
+      "Biasanya orang membayar dengan kartu."
+    ],
+    "ipa": [
+      "/ɪç bɪn ˈalɡəmaɪ̯n tsuˈfʁiːdn̩/",
+      "/ɛs ɪst ˈalɡəmaɪ̯n bəˈkant/",
+      "/diː ˈpʁaɪ̯zə zɪnt ˈalɡəmaɪ̯n hoːx/",
+      "/man tsaːlt ˈalɡəmaɪ̯n mɪt ˈkaʁtə/"
+    ],
+    "it": [
+      "In generale, sono soddisfatto.",
+      "È risaputo.",
+      "In generale, i prezzi sono alti.",
+      "In genere si paga con carta."
     ],
     "ja": [
       "だいたい満足しています。",
@@ -793,6 +1063,83 @@
       "値段は全体的に高いです。",
       "普通はカードで支払います。"
     ],
-    "word_POS": "Adverb"
+    "ko": [
+      "전반적으로 만족해요.",
+      "잘 알려져 있어요.",
+      "전반적으로 가격이 비싸요.",
+      "보통 카드로 결제해요."
+    ],
+    "nb": [
+      "Jeg er generelt fornøyd.",
+      "Det er allment kjent.",
+      "Prisene er generelt høye.",
+      "Som regel betaler man med kort."
+    ],
+    "nl": [
+      "Over het algemeen ben ik tevreden.",
+      "Dat is algemeen bekend.",
+      "De prijzen zijn over het algemeen hoog.",
+      "Meestal betaalt men met kaart."
+    ],
+    "pl": [
+      "Ogólnie jestem zadowolony.",
+      "To jest powszechnie znane.",
+      "Ceny są ogólnie wysokie.",
+      "Zazwyczaj płaci się kartą."
+    ],
+    "pt": [
+      "Em geral, estou satisfeito.",
+      "É de conhecimento geral.",
+      "Em geral, os preços são altos.",
+      "Em geral, paga-se com cartão."
+    ],
+    "ro": [
+      "În general, sunt mulțumit.",
+      "Este bine cunoscut.",
+      "Prețurile sunt în general mari.",
+      "În general se plătește cu cardul."
+    ],
+    "ru": [
+      "В целом я доволен.",
+      "Это всем известно.",
+      "Цены в целом высокие.",
+      "Обычно платят картой."
+    ],
+    "sv": [
+      "Jag är i allmänhet nöjd.",
+      "Det är allmänt känt.",
+      "Priserna är i allmänhet höga.",
+      "I allmänhet betalar man med kort."
+    ],
+    "tr": [
+      "Genel olarak memnunum.",
+      "Bunu herkes bilir.",
+      "Genel olarak fiyatlar yüksek.",
+      "Genelde kartla ödenir."
+    ],
+    "uk": [
+      "Загалом я задоволений.",
+      "Це загальновідомо.",
+      "Ціни загалом високі.",
+      "Зазвичай платять карткою."
+    ],
+    "vi": [
+      "Nói chung tôi hài lòng.",
+      "Ai cũng biết.",
+      "Giá nói chung là cao.",
+      "Mọi người thường trả bằng thẻ."
+    ],
+    "yue": [
+      "我整體嚟講都滿意。",
+      "大家都知。",
+      "價錢普遍偏高。",
+      "一般都用卡付款。"
+    ],
+    "zh-Hans": [
+      "我总体上很满意。",
+      "这是众所周知的。",
+      "价格总体偏高。",
+      "一般都用卡付款。"
+    ]
   }
 }

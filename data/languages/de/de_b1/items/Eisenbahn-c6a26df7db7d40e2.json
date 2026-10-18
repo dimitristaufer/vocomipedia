@@ -44,12 +44,12 @@
   },
   "sentences": [
     {
-      "target": "Mit der Eisenbahn gibt es heute Verspätung.",
+      "target": "Bei der Eisenbahn gibt es heute Verspätungen.",
       "reading": "/mɪt deːɐ̯ ˈaɪ̯zn̩ˌbaːn gɪpt ɛs ˈhɔɪ̯tə fɛɐ̯ˈʃpɛːtʊŋ/",
       "translations": {
-        "de": "Mit der Eisenbahn gibt es heute Verspätung.",
+        "de": "Bei der Eisenbahn gibt es heute Verspätungen.",
         "ipa": "/mɪt deːɐ̯ ˈaɪ̯zn̩ˌbaːn gɪpt ɛs ˈhɔɪ̯tə fɛɐ̯ˈʃpɛːtʊŋ/",
-        "en": "There are delays on the railway today.",
+        "en": "There are train delays today.",
         "es": "Hoy hay retrasos en los trenes.",
         "fr": "Les trains ont du retard aujourd’hui.",
         "it": "Oggi i treni sono in ritardo.",
@@ -79,68 +79,93 @@
       },
       "tokens": [
         {
-          "surface": "Mit",
-          "surface_en": "with",
-          "furigana": "[mɪt]",
+          "surface": "Bei",
+          "lemma": "bei",
           "pos": "ADP",
-          "lemma": "mit",
-          "explanation": "Preposition indicating instrument/means; governs dative; heads the PP 'mit der Eisenbahn'.",
-          "difficulty": 2
+          "upos": "ADP",
+          "xpos": "APPR",
+          "feats": {},
+          "start": 0,
+          "end": 3,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "der",
-          "surface_en": "the",
-          "furigana": "[deːɐ̯]",
-          "pos": "DET",
           "lemma": "der",
-          "explanation": "Definite article, dative singular feminine; agrees with 'Eisenbahn' as object of 'mit'.",
-          "difficulty": 2
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "ART",
+          "feats": {},
+          "start": 4,
+          "end": 7,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "Eisenbahn",
-          "surface_en": "railway",
-          "furigana": "[ˈaɪ̯zənbaːn]",
-          "pos": "NOUN",
           "lemma": "Eisenbahn",
-          "explanation": "Common noun, feminine singular; object of the preposition 'mit' (means of transport).",
-          "difficulty": 10,
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 8,
+          "end": 17,
+          "analyzer": "spacy_de_core_news_lg",
           "is_main_word": true
         },
         {
           "surface": "gibt",
-          "surface_en": "gives",
-          "furigana": "[gɪpt]",
-          "pos": "VERB",
           "lemma": "geben",
-          "explanation": "Finite verb, 3rd person singular present; part of existential construction 'es gibt' expressing existence.",
-          "difficulty": 7
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VVFIN",
+          "feats": {},
+          "start": 18,
+          "end": 22,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "es",
-          "surface_en": "it",
-          "furigana": "[ʔɛs]",
-          "pos": "PRON",
           "lemma": "es",
-          "explanation": "Impersonal pronoun functioning as syntactic subject in 'es gibt'.",
-          "difficulty": 2
+          "pos": "PRON",
+          "upos": "PRON",
+          "xpos": "PPER",
+          "feats": {},
+          "start": 23,
+          "end": 25,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "heute",
-          "surface_en": "today",
-          "furigana": "[ˈhɔʏ̯tə]",
-          "pos": "ADV",
           "lemma": "heute",
-          "explanation": "Temporal adverb modifying the clause, indicating the time frame.",
-          "difficulty": 7
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "ADV",
+          "feats": {},
+          "start": 26,
+          "end": 31,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "Verspätung.",
-          "surface_en": "delay",
-          "furigana": "[fɛɐ̯ˈʃpɛːtʊŋ]",
-          "pos": "NOUN",
+          "surface": "Verspätungen",
           "lemma": "Verspätung",
-          "explanation": "Common noun, feminine singular in accusative as the object of 'es gibt' (the thing that exists).",
-          "difficulty": 10
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 32,
+          "end": 44,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 44,
+          "end": 45,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 5.71
@@ -435,8 +460,314 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-14T23:10:13Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:De b1/c6a26df7db7d40e2",
+      "revision_id": 85694,
+      "parent_revision_id": 15814,
+      "revision_timestamp_utc": "2026-10-14T23:10:13Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Use natural German and English wording for today’s rail delays.",
+      "pulled_utc": "2026-10-17T07:06:43Z",
+      "applied_utc": "2026-10-17T07:06:48Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-f24be1169bafd347",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_b1:c6a26df7db7d40e2",
+        "pack_code": "de_b1",
+        "entry_id": "Eisenbahn",
+        "language": "de",
+        "sentence_index": 1,
+        "old_sentence": "Mit der Eisenbahn gibt es heute Verspätung.",
+        "old_translations": {
+          "de": "Mit der Eisenbahn gibt es heute Verspätung.",
+          "ipa": "/mɪt deːɐ̯ ˈaɪ̯zn̩ˌbaːn gɪpt ɛs ˈhɔɪ̯tə fɛɐ̯ˈʃpɛːtʊŋ/",
+          "en": "There are delays on the railway today.",
+          "es": "Hoy hay retrasos en los trenes.",
+          "fr": "Les trains ont du retard aujourd’hui.",
+          "it": "Oggi i treni sono in ritardo.",
+          "ko": "오늘 열차가 지연돼요.",
+          "zh-Hans": "今天火车晚点了。",
+          "yue": "今日啲火車延誤。",
+          "ru": "Сегодня поезда задерживаются.",
+          "pt": "Hoje há atrasos nos trens.",
+          "he": "היום יש עיכובים ברכבות.",
+          "tr": "Bugün trenlerde gecikmeler var.",
+          "vi": "Hôm nay tàu bị trễ.",
+          "ar": "اليوم القطارات متأخرة.",
+          "nl": "Vandaag hebben de treinen vertraging.",
+          "uk": "Сьогодні потяги затримуються.",
+          "hu": "Ma a vonatok késnek.",
+          "hi": "आज ट्रेनें देर से चल रही हैं.",
+          "pl": "Dziś pociągi mają opóźnienia.",
+          "el": "Σήμερα τα τρένα έχουν καθυστερήσεις.",
+          "nb": "I dag er det forsinkelser på togene.",
+          "id": "Hari ini kereta terlambat.",
+          "sv": "Det är förseningar på tågen i dag.",
+          "ro": "Astăzi trenurile au întârzieri.",
+          "cs": "Dnes mají vlaky zpoždění.",
+          "da": "I dag er der forsinkelser på togene.",
+          "fi": "Tänään junat ovat myöhässä.",
+          "ja": "今日は電車が遅れています。"
+        },
+        "proposed_sentence": "Bei der Eisenbahn gibt es heute Verspätungen.",
+        "proposed_translations": {
+          "de": "Bei der Eisenbahn gibt es heute Verspätungen.",
+          "ipa": "/mɪt deːɐ̯ ˈaɪ̯zn̩ˌbaːn gɪpt ɛs ˈhɔɪ̯tə fɛɐ̯ˈʃpɛːtʊŋ/",
+          "en": "There are train delays today.",
+          "es": "Hoy hay retrasos en los trenes.",
+          "fr": "Les trains ont du retard aujourd’hui.",
+          "it": "Oggi i treni sono in ritardo.",
+          "ko": "오늘 열차가 지연돼요.",
+          "zh-Hans": "今天火车晚点了。",
+          "yue": "今日啲火車延誤。",
+          "ru": "Сегодня поезда задерживаются.",
+          "pt": "Hoje há atrasos nos trens.",
+          "he": "היום יש עיכובים ברכבות.",
+          "tr": "Bugün trenlerde gecikmeler var.",
+          "vi": "Hôm nay tàu bị trễ.",
+          "ar": "اليوم القطارات متأخرة.",
+          "nl": "Vandaag hebben de treinen vertraging.",
+          "uk": "Сьогодні потяги затримуються.",
+          "hu": "Ma a vonatok késnek.",
+          "hi": "आज ट्रेनें देर से चल रही हैं.",
+          "pl": "Dziś pociągi mają opóźnienia.",
+          "el": "Σήμερα τα τρένα έχουν καθυστερήσεις.",
+          "nb": "I dag er det forsinkelser på togene.",
+          "id": "Hari ini kereta terlambat.",
+          "sv": "Det är förseningar på tågen i dag.",
+          "ro": "Astăzi trenurile au întârzieri.",
+          "cs": "Dnes mají vlaky zpoždění.",
+          "da": "I dag er der forsinkelser på togene.",
+          "fi": "Tänään junat ovat myöhässä.",
+          "ja": "今日は電車が遅れています。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Bei der Eisenbahn gibt es heute Verspätungen.",
+        "old_japanese": "Mit der Eisenbahn gibt es heute Verspätung.",
+        "old_english": "There are delays on the railway today.",
+        "proposed_japanese": "Bei der Eisenbahn gibt es heute Verspätungen.",
+        "proposed_english": "There are train delays today.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Bei der Eisenbahn gibt es heute Verspätungen.",
+          "tokens": [
+            {
+              "surface": "Bei",
+              "lemma": "bei",
+              "pos": "ADP",
+              "upos": "ADP",
+              "xpos": "APPR",
+              "feats": {},
+              "start": 0,
+              "end": 3,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "der",
+              "lemma": "der",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "ART",
+              "feats": {},
+              "start": 4,
+              "end": 7,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Eisenbahn",
+              "lemma": "Eisenbahn",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 8,
+              "end": 17,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "gibt",
+              "lemma": "geben",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVFIN",
+              "feats": {},
+              "start": 18,
+              "end": 22,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "es",
+              "lemma": "es",
+              "pos": "PRON",
+              "upos": "PRON",
+              "xpos": "PPER",
+              "feats": {},
+              "start": 23,
+              "end": 25,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "heute",
+              "lemma": "heute",
+              "pos": "ADV",
+              "upos": "ADV",
+              "xpos": "ADV",
+              "feats": {},
+              "start": 26,
+              "end": 31,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Verspätungen",
+              "lemma": "Verspätung",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 32,
+              "end": 44,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 44,
+              "end": 45,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Bei",
+            "lemma": "bei",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "der",
+            "lemma": "der",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 4,
+            "end": 7,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Eisenbahn",
+            "lemma": "Eisenbahn",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 8,
+            "end": 17,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "gibt",
+            "lemma": "geben",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 18,
+            "end": 22,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "es",
+            "lemma": "es",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 23,
+            "end": 25,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "heute",
+            "lemma": "heute",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 26,
+            "end": 31,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Verspätungen",
+            "lemma": "Verspätung",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 32,
+            "end": 44,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 44,
+            "end": 45,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:06:43Z",
+        "updated_utc": "2026-10-17T07:07:05Z",
+        "applied_utc": "2026-10-17T07:07:05Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:07:05Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -448,34 +779,6 @@
     "word": "Eisenbahn",
     "word_reading": "",
     "word_label": "Substantiv (die fem.)",
-    "word_en": "railway; railroad",
-    "word_es": "ferrocarril",
-    "word_fr": "chemin de fer",
-    "word_it": "ferrovia",
-    "word_ko": "철도",
-    "word_zh-Hans": "铁路",
-    "word_yue": "鐵路",
-    "word_ru": "железная дорога",
-    "word_pt": "ferrovia",
-    "word_he": "רכבת",
-    "word_tr": "demiryolu",
-    "word_vi": "đường sắt",
-    "word_ar": "سكة حديدية",
-    "word_nl": "spoorweg",
-    "word_uk": "залізниця",
-    "word_hu": "vasút",
-    "word_hi": "रेलवे",
-    "word_pl": "kolej",
-    "word_el": "σιδηρόδρομος",
-    "word_nb": "jernbane",
-    "word_id": "kereta api",
-    "word_sv": "järnväg",
-    "word_ro": "cale ferată",
-    "word_cs": "železnice",
-    "word_da": "jernbane",
-    "word_fi": "rautatie",
-    "word_ja": "鉄道",
-    "word_de": "Eisenbahn",
     "comic_difficulty": 5.63,
     "jp": [
       "Mit der Eisenbahn gibt es heute Verspätung.",
@@ -489,91 +792,98 @@
       "/ˈneːbən deːm paʁk fɛɐ̯ˈlɔɪ̯ft ˈaɪ̯nə ˈaɪ̯zn̩baːnˌliːni̯ə/",
       "/ɪç ˈaʁbaɪ̯tə baɪ deːɐ̯ ˈaɪ̯zn̩ˌbaːn/"
     ],
-    "de": [
-      "Mit der Eisenbahn gibt es heute Verspätung.",
-      "Wir fahren mit der Eisenbahn aufs Land.",
-      "Neben dem Park verläuft eine Eisenbahnlinie.",
-      "Ich arbeite bei der Eisenbahn."
-    ],
-    "ipa": [
-      "/mɪt deːɐ̯ ˈaɪ̯zn̩ˌbaːn gɪpt ɛs ˈhɔɪ̯tə fɛɐ̯ˈʃpɛːtʊŋ/",
-      "/viːɐ̯ ˈfaːʁən mɪt deːɐ̯ ˈaɪ̯zn̩ˌbaːn aʊfs lant/",
-      "/ˈneːbən deːm paʁk fɛɐ̯ˈlɔɪ̯ft ˈaɪ̯nə ˈaɪ̯zn̩baːnˌliːni̯ə/",
-      "/ɪç ˈaʁbaɪ̯tə baɪ deːɐ̯ ˈaɪ̯zn̩ˌbaːn/"
-    ],
-    "en": [
-      "There are delays on the railway today.",
-      "We’re going to the countryside by train.",
-      "A railway line runs next to the park.",
-      "I work for the railway."
-    ],
     "pos_analysis": [
       {
-        "sentence": "Mit der Eisenbahn gibt es heute Verspätung.",
+        "sentence": "Bei der Eisenbahn gibt es heute Verspätungen.",
         "tokens": [
           {
-            "surface": "Mit",
-            "surface_en": "with",
-            "furigana": "[mɪt]",
+            "surface": "Bei",
+            "lemma": "bei",
             "pos": "ADP",
-            "lemma": "mit",
-            "explanation": "Preposition indicating instrument/means; governs dative; heads the PP 'mit der Eisenbahn'.",
-            "difficulty": 2
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "der",
-            "surface_en": "the",
-            "furigana": "[deːɐ̯]",
-            "pos": "DET",
             "lemma": "der",
-            "explanation": "Definite article, dative singular feminine; agrees with 'Eisenbahn' as object of 'mit'.",
-            "difficulty": 2
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 4,
+            "end": 7,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "Eisenbahn",
-            "surface_en": "railway",
-            "furigana": "[ˈaɪ̯zənbaːn]",
-            "pos": "NOUN",
             "lemma": "Eisenbahn",
-            "explanation": "Common noun, feminine singular; object of the preposition 'mit' (means of transport).",
-            "difficulty": 10,
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 8,
+            "end": 17,
+            "analyzer": "spacy_de_core_news_lg",
             "is_main_word": true
           },
           {
             "surface": "gibt",
-            "surface_en": "gives",
-            "furigana": "[gɪpt]",
-            "pos": "VERB",
             "lemma": "geben",
-            "explanation": "Finite verb, 3rd person singular present; part of existential construction 'es gibt' expressing existence.",
-            "difficulty": 7
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 18,
+            "end": 22,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "es",
-            "surface_en": "it",
-            "furigana": "[ʔɛs]",
-            "pos": "PRON",
             "lemma": "es",
-            "explanation": "Impersonal pronoun functioning as syntactic subject in 'es gibt'.",
-            "difficulty": 2
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 23,
+            "end": 25,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "heute",
-            "surface_en": "today",
-            "furigana": "[ˈhɔʏ̯tə]",
-            "pos": "ADV",
             "lemma": "heute",
-            "explanation": "Temporal adverb modifying the clause, indicating the time frame.",
-            "difficulty": 7
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 26,
+            "end": 31,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "Verspätung.",
-            "surface_en": "delay",
-            "furigana": "[fɛɐ̯ˈʃpɛːtʊŋ]",
-            "pos": "NOUN",
+            "surface": "Verspätungen",
             "lemma": "Verspätung",
-            "explanation": "Common noun, feminine singular in accusative as the object of 'es gibt' (the thing that exists).",
-            "difficulty": 10
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 32,
+            "end": 44,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 44,
+            "end": 45,
+            "analyzer": "spacy_de_core_news_lg"
           }
         ],
         "difficulty_aggregated": 5.71
@@ -761,137 +1071,41 @@
         "difficulty_aggregated": 5.2
       }
     ],
-    "es": [
-      "Hoy hay retrasos en los trenes.",
-      "Vamos al campo en tren.",
-      "Una línea de tren pasa junto al parque.",
-      "Trabajo en el ferrocarril."
-    ],
-    "fr": [
-      "Les trains ont du retard aujourd’hui.",
-      "On va à la campagne en train.",
-      "Une ligne de chemin de fer longe le parc.",
-      "Je travaille pour le chemin de fer."
-    ],
-    "it": [
-      "Oggi i treni sono in ritardo.",
-      "Andiamo in campagna in treno.",
-      "Una linea ferroviaria costeggia il parco.",
-      "Lavoro nelle ferrovie."
-    ],
-    "ko": [
-      "오늘 열차가 지연돼요.",
-      "기차 타고 시골에 가요.",
-      "공원 옆으로 철도가 지나가요.",
-      "철도 회사에서 일해요."
-    ],
-    "zh-Hans": [
-      "今天火车晚点了。",
-      "我们坐火车去乡下。",
-      "公园旁边有一条铁路。",
-      "我在铁路工作。"
-    ],
-    "yue": [
-      "今日啲火車延誤。",
-      "我哋搭火車去鄉下。",
-      "公園旁邊有條鐵路。",
-      "我喺鐵路公司做嘢。"
-    ],
-    "ru": [
-      "Сегодня поезда задерживаются.",
-      "Мы едем в деревню на поезде.",
-      "Рядом с парком проходит железнодорожная линия.",
-      "Я работаю на железной дороге."
-    ],
-    "pt": [
-      "Hoje há atrasos nos trens.",
-      "Vamos para o interior de trem.",
-      "Uma linha de trem passa ao lado do parque.",
-      "Eu trabalho na ferrovia."
-    ],
-    "he": [
-      "היום יש עיכובים ברכבות.",
-      "אנחנו נוסעים לכפר ברכבת.",
-      "מסילת רכבת עוברת ליד הפארק.",
-      "אני עובד ברכבת."
-    ],
-    "tr": [
-      "Bugün trenlerde gecikmeler var.",
-      "Köye trenle gidiyoruz.",
-      "Parkın yanında bir demiryolu hattı geçiyor.",
-      "Demiryolunda çalışıyorum."
-    ],
-    "vi": [
-      "Hôm nay tàu bị trễ.",
-      "Chúng tôi đi về quê bằng tàu.",
-      "Có một tuyến đường sắt chạy bên cạnh công viên.",
-      "Tôi làm việc cho ngành đường sắt."
-    ],
+    "word_POS": "Noun",
+    "entry_id": "Eisenbahn",
+    "word_en": "railway; railroad",
+    "word_es": "ferrocarril",
+    "word_fr": "chemin de fer",
+    "word_it": "ferrovia",
+    "word_ko": "철도",
+    "word_zh-Hans": "铁路",
+    "word_yue": "鐵路",
+    "word_ru": "железная дорога",
+    "word_pt": "ferrovia",
+    "word_he": "רכבת",
+    "word_tr": "demiryolu",
+    "word_vi": "đường sắt",
+    "word_ar": "سكة حديدية",
+    "word_nl": "spoorweg",
+    "word_uk": "залізниця",
+    "word_hu": "vasút",
+    "word_hi": "रेलवे",
+    "word_pl": "kolej",
+    "word_el": "σιδηρόδρομος",
+    "word_nb": "jernbane",
+    "word_id": "kereta api",
+    "word_sv": "järnväg",
+    "word_ro": "cale ferată",
+    "word_cs": "železnice",
+    "word_da": "jernbane",
+    "word_fi": "rautatie",
+    "word_ja": "鉄道",
+    "word_de": "Eisenbahn",
     "ar": [
       "اليوم القطارات متأخرة.",
       "نحن ذاهبون إلى الريف بالقطار.",
       "يمر خط سكة حديد بجانب الحديقة.",
       "أنا أعمل في السكك الحديدية."
-    ],
-    "nl": [
-      "Vandaag hebben de treinen vertraging.",
-      "We gaan met de trein naar het platteland.",
-      "Naast het park loopt een spoorlijn.",
-      "Ik werk bij de spoorwegen."
-    ],
-    "uk": [
-      "Сьогодні потяги затримуються.",
-      "Ми їдемо в село потягом.",
-      "Поряд із парком проходить залізнична лінія.",
-      "Я працюю на залізниці."
-    ],
-    "hu": [
-      "Ma a vonatok késnek.",
-      "Vonattal megyünk vidékre.",
-      "A park mellett fut egy vasútvonal.",
-      "A vasútnál dolgozom."
-    ],
-    "hi": [
-      "आज ट्रेनें देर से चल रही हैं.",
-      "हम ट्रेन से गाँव जा रहे हैं.",
-      "पार्क के पास से एक रेलवे लाइन गुजरती है.",
-      "मैं रेलवे में काम करता हूँ."
-    ],
-    "pl": [
-      "Dziś pociągi mają opóźnienia.",
-      "Jedziemy na wieś pociągiem.",
-      "Obok parku przebiega linia kolejowa.",
-      "Pracuję na kolei."
-    ],
-    "el": [
-      "Σήμερα τα τρένα έχουν καθυστερήσεις.",
-      "Πάμε στην εξοχή με το τρένο.",
-      "Δίπλα στο πάρκο περνάει μια σιδηροδρομική γραμμή.",
-      "Δουλεύω στον σιδηρόδρομο."
-    ],
-    "nb": [
-      "I dag er det forsinkelser på togene.",
-      "Vi drar på landet med tog.",
-      "Ved siden av parken går det en jernbanelinje.",
-      "Jeg jobber i jernbanen."
-    ],
-    "id": [
-      "Hari ini kereta terlambat.",
-      "Kami pergi ke desa naik kereta.",
-      "Di sebelah taman ada jalur kereta api.",
-      "Saya bekerja di perusahaan kereta api."
-    ],
-    "sv": [
-      "Det är förseningar på tågen i dag.",
-      "Vi åker till landet med tåg.",
-      "Bredvid parken går en järnvägslinje.",
-      "Jag jobbar på järnvägen."
-    ],
-    "ro": [
-      "Astăzi trenurile au întârzieri.",
-      "Mergem la țară cu trenul.",
-      "Lângă parc trece o linie ferată.",
-      "Lucrez la compania feroviară."
     ],
     "cs": [
       "Dnes mají vlaky zpoždění.",
@@ -905,11 +1119,77 @@
       "Ved siden af parken går der en jernbanelinje.",
       "Jeg arbejder ved jernbanen."
     ],
+    "de": [
+      "Mit der Eisenbahn gibt es heute Verspätung.",
+      "Wir fahren mit der Eisenbahn aufs Land.",
+      "Neben dem Park verläuft eine Eisenbahnlinie.",
+      "Ich arbeite bei der Eisenbahn."
+    ],
+    "el": [
+      "Σήμερα τα τρένα έχουν καθυστερήσεις.",
+      "Πάμε στην εξοχή με το τρένο.",
+      "Δίπλα στο πάρκο περνάει μια σιδηροδρομική γραμμή.",
+      "Δουλεύω στον σιδηρόδρομο."
+    ],
+    "en": [
+      "There are delays on the railway today.",
+      "We’re going to the countryside by train.",
+      "A railway line runs next to the park.",
+      "I work for the railway."
+    ],
+    "es": [
+      "Hoy hay retrasos en los trenes.",
+      "Vamos al campo en tren.",
+      "Una línea de tren pasa junto al parque.",
+      "Trabajo en el ferrocarril."
+    ],
     "fi": [
       "Tänään junat ovat myöhässä.",
       "Menemme maaseudulle junalla.",
       "Puiston vieressä kulkee rautatie.",
       "Työskentelen rautateillä."
+    ],
+    "fr": [
+      "Les trains ont du retard aujourd’hui.",
+      "On va à la campagne en train.",
+      "Une ligne de chemin de fer longe le parc.",
+      "Je travaille pour le chemin de fer."
+    ],
+    "he": [
+      "היום יש עיכובים ברכבות.",
+      "אנחנו נוסעים לכפר ברכבת.",
+      "מסילת רכבת עוברת ליד הפארק.",
+      "אני עובד ברכבת."
+    ],
+    "hi": [
+      "आज ट्रेनें देर से चल रही हैं.",
+      "हम ट्रेन से गाँव जा रहे हैं.",
+      "पार्क के पास से एक रेलवे लाइन गुजरती है.",
+      "मैं रेलवे में काम करता हूँ."
+    ],
+    "hu": [
+      "Ma a vonatok késnek.",
+      "Vonattal megyünk vidékre.",
+      "A park mellett fut egy vasútvonal.",
+      "A vasútnál dolgozom."
+    ],
+    "id": [
+      "Hari ini kereta terlambat.",
+      "Kami pergi ke desa naik kereta.",
+      "Di sebelah taman ada jalur kereta api.",
+      "Saya bekerja di perusahaan kereta api."
+    ],
+    "ipa": [
+      "/mɪt deːɐ̯ ˈaɪ̯zn̩ˌbaːn gɪpt ɛs ˈhɔɪ̯tə fɛɐ̯ˈʃpɛːtʊŋ/",
+      "/viːɐ̯ ˈfaːʁən mɪt deːɐ̯ ˈaɪ̯zn̩ˌbaːn aʊfs lant/",
+      "/ˈneːbən deːm paʁk fɛɐ̯ˈlɔɪ̯ft ˈaɪ̯nə ˈaɪ̯zn̩baːnˌliːni̯ə/",
+      "/ɪç ˈaʁbaɪ̯tə baɪ deːɐ̯ ˈaɪ̯zn̩ˌbaːn/"
+    ],
+    "it": [
+      "Oggi i treni sono in ritardo.",
+      "Andiamo in campagna in treno.",
+      "Una linea ferroviaria costeggia il parco.",
+      "Lavoro nelle ferrovie."
     ],
     "ja": [
       "今日は電車が遅れています。",
@@ -917,6 +1197,83 @@
       "公園の横を鉄道が通っています。",
       "鉄道会社で働いています。"
     ],
-    "word_POS": "Noun"
+    "ko": [
+      "오늘 열차가 지연돼요.",
+      "기차 타고 시골에 가요.",
+      "공원 옆으로 철도가 지나가요.",
+      "철도 회사에서 일해요."
+    ],
+    "nb": [
+      "I dag er det forsinkelser på togene.",
+      "Vi drar på landet med tog.",
+      "Ved siden av parken går det en jernbanelinje.",
+      "Jeg jobber i jernbanen."
+    ],
+    "nl": [
+      "Vandaag hebben de treinen vertraging.",
+      "We gaan met de trein naar het platteland.",
+      "Naast het park loopt een spoorlijn.",
+      "Ik werk bij de spoorwegen."
+    ],
+    "pl": [
+      "Dziś pociągi mają opóźnienia.",
+      "Jedziemy na wieś pociągiem.",
+      "Obok parku przebiega linia kolejowa.",
+      "Pracuję na kolei."
+    ],
+    "pt": [
+      "Hoje há atrasos nos trens.",
+      "Vamos para o interior de trem.",
+      "Uma linha de trem passa ao lado do parque.",
+      "Eu trabalho na ferrovia."
+    ],
+    "ro": [
+      "Astăzi trenurile au întârzieri.",
+      "Mergem la țară cu trenul.",
+      "Lângă parc trece o linie ferată.",
+      "Lucrez la compania feroviară."
+    ],
+    "ru": [
+      "Сегодня поезда задерживаются.",
+      "Мы едем в деревню на поезде.",
+      "Рядом с парком проходит железнодорожная линия.",
+      "Я работаю на железной дороге."
+    ],
+    "sv": [
+      "Det är förseningar på tågen i dag.",
+      "Vi åker till landet med tåg.",
+      "Bredvid parken går en järnvägslinje.",
+      "Jag jobbar på järnvägen."
+    ],
+    "tr": [
+      "Bugün trenlerde gecikmeler var.",
+      "Köye trenle gidiyoruz.",
+      "Parkın yanında bir demiryolu hattı geçiyor.",
+      "Demiryolunda çalışıyorum."
+    ],
+    "uk": [
+      "Сьогодні потяги затримуються.",
+      "Ми їдемо в село потягом.",
+      "Поряд із парком проходить залізнична лінія.",
+      "Я працюю на залізниці."
+    ],
+    "vi": [
+      "Hôm nay tàu bị trễ.",
+      "Chúng tôi đi về quê bằng tàu.",
+      "Có một tuyến đường sắt chạy bên cạnh công viên.",
+      "Tôi làm việc cho ngành đường sắt."
+    ],
+    "yue": [
+      "今日啲火車延誤。",
+      "我哋搭火車去鄉下。",
+      "公園旁邊有條鐵路。",
+      "我喺鐵路公司做嘢。"
+    ],
+    "zh-Hans": [
+      "今天火车晚点了。",
+      "我们坐火车去乡下。",
+      "公园旁边有一条铁路。",
+      "我在铁路工作。"
+    ]
   }
 }

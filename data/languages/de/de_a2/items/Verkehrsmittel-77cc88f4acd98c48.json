@@ -44,12 +44,12 @@
   },
   "sentences": [
     {
-      "target": "In Berlin sind Verkehrsmittel oft pünktlich.",
+      "target": "In Berlin sind die öffentlichen Verkehrsmittel oft pünktlich.",
       "reading": "/ɪn bɛʁˈliːn zɪnt fɛɐ̯ˈkeːɐ̯sˌmɪtl̩ ɔft ˈpʏŋktlɪç/",
       "translations": {
-        "de": "In Berlin sind Verkehrsmittel oft pünktlich.",
+        "de": "In Berlin sind die öffentlichen Verkehrsmittel oft pünktlich.",
         "ipa": "/ɪn bɛʁˈliːn zɪnt fɛɐ̯ˈkeːɐ̯sˌmɪtl̩ ɔft ˈpʏŋktlɪç/",
-        "en": "In Berlin, transport is often on time.",
+        "en": "In Berlin, public transport is often on time.",
         "es": "En Berlín, el transporte público suele ser puntual.",
         "fr": "À Berlin, les transports en commun sont souvent à l'heure.",
         "it": "A Berlino, i mezzi pubblici sono spesso puntuali.",
@@ -80,58 +80,103 @@
       "tokens": [
         {
           "surface": "In",
-          "surface_en": "in",
-          "furigana": "[ɪn]",
-          "pos": "ADP",
           "lemma": "in",
-          "explanation": "Preposition introducing a locative prepositional phrase; marks location without movement.",
-          "difficulty": 2
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "APPR",
+          "feats": {},
+          "start": 0,
+          "end": 2,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "Berlin",
-          "surface_en": "Berlin",
-          "furigana": "[bɛʁˈliːn]",
-          "pos": "PROPN",
           "lemma": "Berlin",
-          "explanation": "Proper name of a city; object of the preposition 'in' in a locative PP.",
-          "difficulty": 7
+          "pos": "PROPN",
+          "upos": "PROPN",
+          "xpos": "NE",
+          "feats": {},
+          "start": 3,
+          "end": 9,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "sind",
-          "surface_en": "are",
-          "furigana": "[zɪnt]",
-          "pos": "AUX",
           "lemma": "sein",
-          "explanation": "Finite auxiliary (copula) linking the subject to the predicative complement; 3rd person plural present.",
-          "difficulty": 7
+          "pos": "AUX",
+          "upos": "AUX",
+          "xpos": "VAFIN",
+          "feats": {},
+          "start": 10,
+          "end": 14,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "die",
+          "lemma": "der",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "ART",
+          "feats": {},
+          "start": 15,
+          "end": 18,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "öffentlichen",
+          "lemma": "öffentlich",
+          "pos": "ADJ",
+          "upos": "ADJ",
+          "xpos": "ADJA",
+          "feats": {},
+          "start": 19,
+          "end": 31,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "Verkehrsmittel",
-          "surface_en": "means of transport",
-          "furigana": "[fɛɐ̯ˈkeːɐ̯sˌmɪtl̩]",
-          "pos": "NOUN",
           "lemma": "Verkehrsmittel",
-          "explanation": "Common noun functioning as the plural subject of the clause.",
-          "difficulty": 10,
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 32,
+          "end": 46,
+          "analyzer": "spacy_de_core_news_lg",
           "is_main_word": true
         },
         {
           "surface": "oft",
-          "surface_en": "often",
-          "furigana": "[ɔft]",
-          "pos": "ADV",
           "lemma": "oft",
-          "explanation": "Adverb of frequency modifying the predicate.",
-          "difficulty": 4
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "ADV",
+          "feats": {},
+          "start": 47,
+          "end": 50,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "pünktlich.",
-          "surface_en": "punctual",
-          "furigana": "[ˈpʏŋktlɪç]",
-          "pos": "ADJ",
+          "surface": "pünktlich",
           "lemma": "pünktlich",
-          "explanation": "Predicative adjective serving as the complement of the copula 'sind'.",
-          "difficulty": 10
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "ADJD",
+          "feats": {},
+          "start": 51,
+          "end": 60,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 60,
+          "end": 61,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 6.67
@@ -157,7 +202,7 @@
         "ar": "هو يبحث عن طريقة رخيصة للوصول إلى المطار.",
         "nl": "Hij zoekt een goedkope manier om naar de luchthaven te gaan.",
         "uk": "Він шукає недорогий спосіб дістатися до аеропорту.",
-        "hu": "Olcsó módot keres, कि eljusson a repülőtérre.",
+        "hu": "Olcsó módot keres, hogy eljusson a repülőtérre.",
         "hi": "वह हवाई अड्डे तक पहुँचने का सस्ता तरीका ढूंढ रहा है.",
         "pl": "Szuka taniego sposobu, żeby dostać się na lotnisko.",
         "el": "Ψάχνει έναν φθηνό τρόπο να πάει στο αεροδρόμιο.",
@@ -337,7 +382,7 @@
       "translations": {
         "de": "Wir sparen Zeit mit diesem Verkehrsmittel.",
         "ipa": "/viːɐ̯ ˈʃpaːʁən tsaɪt mɪt ˈdiːzəm fɛɐ̯ˈkeːɐ̯sˌmɪtl̩/",
-        "en": "We save time with this means of transport.",
+        "en": "We save time using this mode of transport.",
         "es": "Con este medio de transporte ahorramos tiempo.",
         "fr": "Avec ce moyen de transport, nous gagnons du temps.",
         "it": "Con questo mezzo di trasporto risparmiamo tempo.",
@@ -349,7 +394,7 @@
         "he": "עם אמצעי התחבורה הזה אנחנו חוסכים זמן.",
         "tr": "Bu ulaşım aracıyla zaman kazanıyoruz.",
         "vi": "Với phương tiện này, chúng tôi tiết kiệm thời gian.",
-        "ar": "بهذه وسيلة النقل نوفر الوقت.",
+        "ar": "بهذه الوسيلة نوفر الوقت.",
         "nl": "Met dit vervoermiddel besparen we tijd.",
         "uk": "З цим видом транспорту ми економимо час.",
         "hu": "Ezzel a közlekedési eszközzel időt spórolunk.",
@@ -439,19 +484,333 @@
     "content_reviewers": [
       "mediawiki-visible-revision"
     ],
-    "last_reviewed_utc": "2026-06-12T11:53:19Z",
-    "approval_source": "mediawiki_visible_revision",
+    "last_reviewed_utc": "2026-10-14T21:54:48Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
     "wiki": {
       "title": "Item:De a2/77cc88f4acd98c48",
-      "revision_id": 14842,
-      "parent_revision_id": 1371,
-      "revision_timestamp_utc": "2026-06-12T11:53:19Z",
-      "revision_user": "VocomiBot",
-      "revision_comment": "Sync de_a2 item Verkehrsmittel",
-      "pulled_utc": "2026-06-22T08:19:05Z",
-      "applied_utc": "2026-06-22T08:19:12Z",
+      "revision_id": 86200,
+      "parent_revision_id": 59641,
+      "revision_timestamp_utc": "2026-10-14T21:54:48Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Content review: German and translation corrections",
+      "pulled_utc": "2026-10-17T07:00:41Z",
+      "applied_utc": "2026-10-17T07:00:48Z",
       "applied_by": "vocomipedia-apply-pulled"
-    }
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-1176055825e7a793",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_a2:77cc88f4acd98c48",
+        "pack_code": "de_a2",
+        "entry_id": "Verkehrsmittel",
+        "language": "de",
+        "sentence_index": 1,
+        "old_sentence": "In Berlin sind Verkehrsmittel oft pünktlich.",
+        "old_translations": {
+          "de": "In Berlin sind Verkehrsmittel oft pünktlich.",
+          "ipa": "/ɪn bɛʁˈliːn zɪnt fɛɐ̯ˈkeːɐ̯sˌmɪtl̩ ɔft ˈpʏŋktlɪç/",
+          "en": "In Berlin, transport is often on time.",
+          "es": "En Berlín, el transporte público suele ser puntual.",
+          "fr": "À Berlin, les transports en commun sont souvent à l'heure.",
+          "it": "A Berlino, i mezzi pubblici sono spesso puntuali.",
+          "ko": "베를린에서는 대중교통이 보통 제시간에 와요.",
+          "zh-Hans": "在柏林，公共交通通常很准时。",
+          "yue": "喺柏林，公共交通通常都準時。",
+          "ru": "В Берлине общественный транспорт часто ходит по расписанию.",
+          "pt": "Em Berlim, o transporte público costuma ser pontual.",
+          "he": "בברלין התחבורה הציבורית בדרך כלל מגיעה בזמן.",
+          "tr": "Berlin'de toplu taşıma genellikle dakiktir.",
+          "vi": "Ở Berlin, phương tiện công cộng thường đúng giờ.",
+          "ar": "في برلين، المواصلات العامة غالبًا ما تكون في الموعد.",
+          "nl": "In Berlijn is het openbaar vervoer vaak op tijd.",
+          "uk": "У Берліні громадський транспорт зазвичай ходить за розкладом.",
+          "hu": "Berlinben a tömegközlekedés gyakran pontos.",
+          "hi": "बर्लिन में सार्वजनिक परिवहन अक्सर समय पर होता है.",
+          "pl": "W Berlinie komunikacja miejska zwykle jest punktualna.",
+          "el": "Στο Βερολίνο, τα μέσα μαζικής μεταφοράς είναι συχνά στην ώρα τους.",
+          "nb": "I Berlin er kollektivtransporten ofte presis.",
+          "id": "Di Berlin, transportasi umum sering tepat waktu.",
+          "sv": "I Berlin är kollektivtrafiken ofta i tid.",
+          "ro": "La Berlin, transportul public este adesea punctual.",
+          "cs": "V Berlíně jezdí veřejná doprava často včas.",
+          "da": "I Berlin er den offentlige transport ofte til tiden.",
+          "fi": "Berliinissä joukkoliikenne on usein ajoissa.",
+          "ja": "ベルリンでは公共交通機関はたいてい時間どおりです。"
+        },
+        "proposed_sentence": "In Berlin sind die öffentlichen Verkehrsmittel oft pünktlich.",
+        "proposed_translations": {
+          "de": "In Berlin sind die öffentlichen Verkehrsmittel oft pünktlich.",
+          "ipa": "/ɪn bɛʁˈliːn zɪnt fɛɐ̯ˈkeːɐ̯sˌmɪtl̩ ɔft ˈpʏŋktlɪç/",
+          "en": "In Berlin, public transport is often on time.",
+          "es": "En Berlín, el transporte público suele ser puntual.",
+          "fr": "À Berlin, les transports en commun sont souvent à l'heure.",
+          "it": "A Berlino, i mezzi pubblici sono spesso puntuali.",
+          "ko": "베를린에서는 대중교통이 보통 제시간에 와요.",
+          "zh-Hans": "在柏林，公共交通通常很准时。",
+          "yue": "喺柏林，公共交通通常都準時。",
+          "ru": "В Берлине общественный транспорт часто ходит по расписанию.",
+          "pt": "Em Berlim, o transporte público costuma ser pontual.",
+          "he": "בברלין התחבורה הציבורית בדרך כלל מגיעה בזמן.",
+          "tr": "Berlin'de toplu taşıma genellikle dakiktir.",
+          "vi": "Ở Berlin, phương tiện công cộng thường đúng giờ.",
+          "ar": "في برلين، المواصلات العامة غالبًا ما تكون في الموعد.",
+          "nl": "In Berlijn is het openbaar vervoer vaak op tijd.",
+          "uk": "У Берліні громадський транспорт зазвичай ходить за розкладом.",
+          "hu": "Berlinben a tömegközlekedés gyakran pontos.",
+          "hi": "बर्लिन में सार्वजनिक परिवहन अक्सर समय पर होता है.",
+          "pl": "W Berlinie komunikacja miejska zwykle jest punktualna.",
+          "el": "Στο Βερολίνο, τα μέσα μαζικής μεταφοράς είναι συχνά στην ώρα τους.",
+          "nb": "I Berlin er kollektivtransporten ofte presis.",
+          "id": "Di Berlin, transportasi umum sering tepat waktu.",
+          "sv": "I Berlin är kollektivtrafiken ofta i tid.",
+          "ro": "La Berlin, transportul public este adesea punctual.",
+          "cs": "V Berlíně jezdí veřejná doprava často včas.",
+          "da": "I Berlin er den offentlige transport ofte til tiden.",
+          "fi": "Berliinissä joukkoliikenne on usein ajoissa.",
+          "ja": "ベルリンでは公共交通機関はたいてい時間どおりです。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "In Berlin sind die öffentlichen Verkehrsmittel oft pünktlich.",
+        "old_japanese": "In Berlin sind Verkehrsmittel oft pünktlich.",
+        "old_english": "In Berlin, transport is often on time.",
+        "proposed_japanese": "In Berlin sind die öffentlichen Verkehrsmittel oft pünktlich.",
+        "proposed_english": "In Berlin, public transport is often on time.",
+        "reason": "Specify public transport, which is the sense used across the translations, for a natural and precise German sentence.",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "In Berlin sind die öffentlichen Verkehrsmittel oft pünktlich.",
+          "tokens": [
+            {
+              "surface": "In",
+              "lemma": "in",
+              "pos": "ADP",
+              "upos": "ADP",
+              "xpos": "APPR",
+              "feats": {},
+              "start": 0,
+              "end": 2,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Berlin",
+              "lemma": "Berlin",
+              "pos": "PROPN",
+              "upos": "PROPN",
+              "xpos": "NE",
+              "feats": {},
+              "start": 3,
+              "end": 9,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "sind",
+              "lemma": "sein",
+              "pos": "AUX",
+              "upos": "AUX",
+              "xpos": "VAFIN",
+              "feats": {},
+              "start": 10,
+              "end": 14,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "die",
+              "lemma": "der",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "ART",
+              "feats": {},
+              "start": 15,
+              "end": 18,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "öffentlichen",
+              "lemma": "öffentlich",
+              "pos": "ADJ",
+              "upos": "ADJ",
+              "xpos": "ADJA",
+              "feats": {},
+              "start": 19,
+              "end": 31,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Verkehrsmittel",
+              "lemma": "Verkehrsmittel",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 32,
+              "end": 46,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "oft",
+              "lemma": "oft",
+              "pos": "ADV",
+              "upos": "ADV",
+              "xpos": "ADV",
+              "feats": {},
+              "start": 47,
+              "end": 50,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "pünktlich",
+              "lemma": "pünktlich",
+              "pos": "ADV",
+              "upos": "ADV",
+              "xpos": "ADJD",
+              "feats": {},
+              "start": 51,
+              "end": 60,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 60,
+              "end": 61,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "In",
+            "lemma": "in",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Berlin",
+            "lemma": "Berlin",
+            "pos": "PROPN",
+            "upos": "PROPN",
+            "xpos": "NE",
+            "feats": {},
+            "start": 3,
+            "end": 9,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "sind",
+            "lemma": "sein",
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "VAFIN",
+            "feats": {},
+            "start": 10,
+            "end": 14,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "die",
+            "lemma": "der",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 15,
+            "end": 18,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "öffentlichen",
+            "lemma": "öffentlich",
+            "pos": "ADJ",
+            "upos": "ADJ",
+            "xpos": "ADJA",
+            "feats": {},
+            "start": 19,
+            "end": 31,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Verkehrsmittel",
+            "lemma": "Verkehrsmittel",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 32,
+            "end": 46,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "oft",
+            "lemma": "oft",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 47,
+            "end": 50,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "pünktlich",
+            "lemma": "pünktlich",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADJD",
+            "feats": {},
+            "start": 51,
+            "end": 60,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 60,
+            "end": 61,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:00:41Z",
+        "updated_utc": "2026-10-17T07:01:00Z",
+        "applied_utc": "2026-10-17T07:01:00Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:01:00Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -478,62 +837,107 @@
     ],
     "pos_analysis": [
       {
-        "sentence": "In Berlin sind Verkehrsmittel oft pünktlich.",
+        "sentence": "In Berlin sind die öffentlichen Verkehrsmittel oft pünktlich.",
         "tokens": [
           {
             "surface": "In",
-            "surface_en": "in",
-            "furigana": "[ɪn]",
-            "pos": "ADP",
             "lemma": "in",
-            "explanation": "Preposition introducing a locative prepositional phrase; marks location without movement.",
-            "difficulty": 2
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "Berlin",
-            "surface_en": "Berlin",
-            "furigana": "[bɛʁˈliːn]",
-            "pos": "PROPN",
             "lemma": "Berlin",
-            "explanation": "Proper name of a city; object of the preposition 'in' in a locative PP.",
-            "difficulty": 7
+            "pos": "PROPN",
+            "upos": "PROPN",
+            "xpos": "NE",
+            "feats": {},
+            "start": 3,
+            "end": 9,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "sind",
-            "surface_en": "are",
-            "furigana": "[zɪnt]",
-            "pos": "AUX",
             "lemma": "sein",
-            "explanation": "Finite auxiliary (copula) linking the subject to the predicative complement; 3rd person plural present.",
-            "difficulty": 7
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "VAFIN",
+            "feats": {},
+            "start": 10,
+            "end": 14,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "die",
+            "lemma": "der",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 15,
+            "end": 18,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "öffentlichen",
+            "lemma": "öffentlich",
+            "pos": "ADJ",
+            "upos": "ADJ",
+            "xpos": "ADJA",
+            "feats": {},
+            "start": 19,
+            "end": 31,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "Verkehrsmittel",
-            "surface_en": "means of transport",
-            "furigana": "[fɛɐ̯ˈkeːɐ̯sˌmɪtl̩]",
-            "pos": "NOUN",
             "lemma": "Verkehrsmittel",
-            "explanation": "Common noun functioning as the plural subject of the clause.",
-            "difficulty": 10,
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 32,
+            "end": 46,
+            "analyzer": "spacy_de_core_news_lg",
             "is_main_word": true
           },
           {
             "surface": "oft",
-            "surface_en": "often",
-            "furigana": "[ɔft]",
-            "pos": "ADV",
             "lemma": "oft",
-            "explanation": "Adverb of frequency modifying the predicate.",
-            "difficulty": 4
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 47,
+            "end": 50,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "pünktlich.",
-            "surface_en": "punctual",
-            "furigana": "[ˈpʏŋktlɪç]",
-            "pos": "ADJ",
+            "surface": "pünktlich",
             "lemma": "pünktlich",
-            "explanation": "Predicative adjective serving as the complement of the copula 'sind'.",
-            "difficulty": 10
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADJD",
+            "feats": {},
+            "start": 51,
+            "end": 60,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 60,
+            "end": 61,
+            "analyzer": "spacy_de_core_news_lg"
           }
         ],
         "difficulty_aggregated": 6.67
@@ -765,7 +1169,7 @@
       "في برلين، المواصلات العامة غالبًا ما تكون في الموعد.",
       "هو يبحث عن طريقة رخيصة للوصول إلى المطار.",
       "وسيلة النقل هذه اليوم مزدحمة جدًا.",
-      "بهذه وسيلة النقل نوفر الوقت."
+      "بهذه الوسيلة نوفر الوقت."
     ],
     "cs": [
       "V Berlíně jezdí veřejná doprava často včas.",
@@ -795,7 +1199,7 @@
       "In Berlin, transport is often on time.",
       "He is looking for a cheap way to the airport.",
       "This means of transport is totally crowded today.",
-      "We save time with this means of transport."
+      "We save time using this mode of transport."
     ],
     "es": [
       "En Berlín, el transporte público suele ser puntual.",
@@ -829,7 +1233,7 @@
     ],
     "hu": [
       "Berlinben a tömegközlekedés gyakran pontos.",
-      "Olcsó módot keres, कि eljusson a repülőtérre.",
+      "Olcsó módot keres, hogy eljusson a repülőtérre.",
       "Ez a közlekedési eszköz ma teljesen zsúfolt.",
       "Ezzel a közlekedési eszközzel időt spórolunk."
     ],

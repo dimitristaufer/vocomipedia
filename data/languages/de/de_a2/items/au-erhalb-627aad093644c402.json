@@ -208,7 +208,7 @@
       "translations": {
         "de": "Heute parken wir weit außerhalb.",
         "ipa": "/ˈhɔʏ̯tə ˈpaʁkən viːɐ̯ vaɪ̯t ˈaʊ̯sɐhalp/",
-        "en": "Today we’re parking far outside.",
+        "en": "Today we’re parking far out of town.",
         "es": "Hoy aparcamos muy a las afueras.",
         "fr": "Aujourd’hui, on se gare loin, en périphérie.",
         "it": "Oggi parcheggiamo lontano, in periferia.",
@@ -287,12 +287,12 @@
       "difficulty": 6.6
     },
     {
-      "target": "Es ist sehr ruhig außerhalb.",
+      "target": "Außerhalb der Stadt ist es sehr ruhig.",
       "reading": "/ɛs ɪst zeːɐ̯ ˈʁuːɪç ˈaʊ̯sɐhalp/",
       "translations": {
-        "de": "Es ist sehr ruhig außerhalb.",
+        "de": "Außerhalb der Stadt ist es sehr ruhig.",
         "ipa": "/ɛs ɪst zeːɐ̯ ˈʁuːɪç ˈaʊ̯sɐhalp/",
-        "en": "It’s very quiet outside.",
+        "en": "It’s very quiet outside the city.",
         "es": "En las afueras está muy tranquilo.",
         "fr": "C’est très calme en dehors de la ville.",
         "it": "Fuori città è molto tranquillo.",
@@ -322,50 +322,93 @@
       },
       "tokens": [
         {
-          "surface": "Es",
-          "surface_en": "it",
-          "furigana": "[ɛs]",
-          "pos": "PRON",
-          "lemma": "es",
-          "explanation": "Personal/expletive pronoun, 3rd person singular neuter nominative; subject of a copular clause.",
-          "difficulty": 2
+          "surface": "Außerhalb",
+          "lemma": "außerhalb",
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "APPR",
+          "feats": {},
+          "start": 0,
+          "end": 9,
+          "analyzer": "spacy_de_core_news_lg",
+          "is_main_word": true
+        },
+        {
+          "surface": "der",
+          "lemma": "der",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "ART",
+          "feats": {},
+          "start": 10,
+          "end": 13,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "Stadt",
+          "lemma": "Stadt",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 14,
+          "end": 19,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "ist",
-          "surface_en": "is",
-          "furigana": "[ɪst]",
-          "pos": "AUX",
           "lemma": "sein",
-          "explanation": "Copula auxiliary, present tense 3rd person singular; links subject to predicate.",
-          "difficulty": 4
+          "pos": "AUX",
+          "upos": "AUX",
+          "xpos": "VAFIN",
+          "feats": {},
+          "start": 20,
+          "end": 23,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "es",
+          "lemma": "es",
+          "pos": "PRON",
+          "upos": "PRON",
+          "xpos": "PPER",
+          "feats": {},
+          "start": 24,
+          "end": 26,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "sehr",
-          "surface_en": "very",
-          "furigana": "[zeːɐ]",
-          "pos": "ADV",
           "lemma": "sehr",
-          "explanation": "Degree adverb intensifying the predicate adjective.",
-          "difficulty": 7
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "ADV",
+          "feats": {},
+          "start": 27,
+          "end": 31,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "ruhig",
-          "surface_en": "quiet",
-          "furigana": "[ˈʁuːɪç]",
-          "pos": "ADJ",
           "lemma": "ruhig",
-          "explanation": "Predicate adjective in positive degree; complements the copula.",
-          "difficulty": 7
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "ADJD",
+          "feats": {},
+          "start": 32,
+          "end": 37,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "außerhalb.",
-          "surface_en": "outside",
-          "furigana": "[ˈaʊ̯sɐhalp]",
-          "pos": "ADV",
-          "lemma": "außerhalb",
-          "explanation": "Locative adverb modifying the clause; indicates the place where it is quiet.",
-          "difficulty": 10,
-          "is_main_word": true
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 37,
+          "end": 38,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 6
@@ -385,19 +428,311 @@
     "content_reviewers": [
       "mediawiki-visible-revision"
     ],
-    "last_reviewed_utc": "2026-06-12T11:42:59Z",
-    "approval_source": "mediawiki_visible_revision",
+    "last_reviewed_utc": "2026-10-14T21:47:57Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
     "wiki": {
       "title": "Item:De a2/627aad093644c402",
-      "revision_id": 13832,
-      "parent_revision_id": 866,
-      "revision_timestamp_utc": "2026-06-12T11:42:59Z",
-      "revision_user": "VocomiBot",
-      "revision_comment": "Sync de_a2 item außerhalb",
-      "pulled_utc": "2026-06-22T08:19:04Z",
-      "applied_utc": "2026-06-22T08:19:12Z",
+      "revision_id": 86249,
+      "parent_revision_id": 59136,
+      "revision_timestamp_utc": "2026-10-14T21:47:57Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Content review: German and translation corrections",
+      "pulled_utc": "2026-10-17T07:00:40Z",
+      "applied_utc": "2026-10-17T07:00:48Z",
       "applied_by": "vocomipedia-apply-pulled"
-    }
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-68e07d1357253632",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_a2:627aad093644c402",
+        "pack_code": "de_a2",
+        "entry_id": "außerhalb",
+        "language": "de",
+        "sentence_index": 4,
+        "old_sentence": "Es ist sehr ruhig außerhalb.",
+        "old_translations": {
+          "de": "Es ist sehr ruhig außerhalb.",
+          "ipa": "/ɛs ɪst zeːɐ̯ ˈʁuːɪç ˈaʊ̯sɐhalp/",
+          "en": "It’s very quiet outside.",
+          "es": "En las afueras está muy tranquilo.",
+          "fr": "C’est très calme en dehors de la ville.",
+          "it": "Fuori città è molto tranquillo.",
+          "ko": "도심 밖은 아주 조용해요.",
+          "zh-Hans": "城外很安静。",
+          "yue": "城外好靜。",
+          "ru": "За городом очень спокойно.",
+          "pt": "Fora da cidade é bem tranquilo.",
+          "he": "מחוץ לעיר שקט מאוד.",
+          "tr": "Şehir dışında çok sakin.",
+          "vi": "Ngoài thành phố rất yên tĩnh.",
+          "ar": "خارج المدينة هادئ جدًا.",
+          "nl": "Buiten de stad is het heel rustig.",
+          "uk": "За містом дуже тихо.",
+          "hu": "A városon kívül nagyon csend van.",
+          "hi": "शहर के बाहर बहुत शांति है.",
+          "pl": "Poza miastem jest bardzo spokojnie.",
+          "el": "Εκτός πόλης είναι πολύ ήσυχα.",
+          "nb": "Utenfor byen er det veldig rolig.",
+          "id": "Di luar kota sangat tenang.",
+          "sv": "Utanför stan är det väldigt lugnt.",
+          "ro": "În afara orașului e foarte liniște.",
+          "cs": "Za městem je hodně klidu.",
+          "da": "Uden for byen er der meget stille.",
+          "fi": "Kaupungin ulkopuolella on hyvin rauhallista.",
+          "ja": "街の外はとても静かです。"
+        },
+        "proposed_sentence": "Außerhalb der Stadt ist es sehr ruhig.",
+        "proposed_translations": {
+          "de": "Außerhalb der Stadt ist es sehr ruhig.",
+          "ipa": "/ɛs ɪst zeːɐ̯ ˈʁuːɪç ˈaʊ̯sɐhalp/",
+          "en": "It’s very quiet outside the city.",
+          "es": "En las afueras está muy tranquilo.",
+          "fr": "C’est très calme en dehors de la ville.",
+          "it": "Fuori città è molto tranquillo.",
+          "ko": "도심 밖은 아주 조용해요.",
+          "zh-Hans": "城外很安静。",
+          "yue": "城外好靜。",
+          "ru": "За городом очень спокойно.",
+          "pt": "Fora da cidade é bem tranquilo.",
+          "he": "מחוץ לעיר שקט מאוד.",
+          "tr": "Şehir dışında çok sakin.",
+          "vi": "Ngoài thành phố rất yên tĩnh.",
+          "ar": "خارج المدينة هادئ جدًا.",
+          "nl": "Buiten de stad is het heel rustig.",
+          "uk": "За містом дуже тихо.",
+          "hu": "A városon kívül nagyon csend van.",
+          "hi": "शहर के बाहर बहुत शांति है.",
+          "pl": "Poza miastem jest bardzo spokojnie.",
+          "el": "Εκτός πόλης είναι πολύ ήσυχα.",
+          "nb": "Utenfor byen er det veldig rolig.",
+          "id": "Di luar kota sangat tenang.",
+          "sv": "Utanför stan är det väldigt lugnt.",
+          "ro": "În afara orașului e foarte liniște.",
+          "cs": "Za městem je hodně klidu.",
+          "da": "Uden for byen er der meget stille.",
+          "fi": "Kaupungin ulkopuolella on hyvin rauhallista.",
+          "ja": "街の外はとても静かです。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Außerhalb der Stadt ist es sehr ruhig.",
+        "old_japanese": "Es ist sehr ruhig außerhalb.",
+        "old_english": "It’s very quiet outside.",
+        "proposed_japanese": "Außerhalb der Stadt ist es sehr ruhig.",
+        "proposed_english": "It’s very quiet outside the city.",
+        "reason": "Add the city boundary implied by the translations so the German sentence is complete and natural.",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Außerhalb der Stadt ist es sehr ruhig.",
+          "tokens": [
+            {
+              "surface": "Außerhalb",
+              "lemma": "außerhalb",
+              "pos": "ADP",
+              "upos": "ADP",
+              "xpos": "APPR",
+              "feats": {},
+              "start": 0,
+              "end": 9,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "der",
+              "lemma": "der",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "ART",
+              "feats": {},
+              "start": 10,
+              "end": 13,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Stadt",
+              "lemma": "Stadt",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 14,
+              "end": 19,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "ist",
+              "lemma": "sein",
+              "pos": "AUX",
+              "upos": "AUX",
+              "xpos": "VAFIN",
+              "feats": {},
+              "start": 20,
+              "end": 23,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "es",
+              "lemma": "es",
+              "pos": "PRON",
+              "upos": "PRON",
+              "xpos": "PPER",
+              "feats": {},
+              "start": 24,
+              "end": 26,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "sehr",
+              "lemma": "sehr",
+              "pos": "ADV",
+              "upos": "ADV",
+              "xpos": "ADV",
+              "feats": {},
+              "start": 27,
+              "end": 31,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "ruhig",
+              "lemma": "ruhig",
+              "pos": "ADV",
+              "upos": "ADV",
+              "xpos": "ADJD",
+              "feats": {},
+              "start": 32,
+              "end": 37,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 37,
+              "end": 38,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Außerhalb",
+            "lemma": "außerhalb",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 0,
+            "end": 9,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "der",
+            "lemma": "der",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 10,
+            "end": 13,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Stadt",
+            "lemma": "Stadt",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 14,
+            "end": 19,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "ist",
+            "lemma": "sein",
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "VAFIN",
+            "feats": {},
+            "start": 20,
+            "end": 23,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "es",
+            "lemma": "es",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 24,
+            "end": 26,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "sehr",
+            "lemma": "sehr",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 27,
+            "end": 31,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "ruhig",
+            "lemma": "ruhig",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADJD",
+            "feats": {},
+            "start": 32,
+            "end": 37,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 37,
+            "end": 38,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:00:40Z",
+        "updated_utc": "2026-10-17T07:00:59Z",
+        "applied_utc": "2026-10-17T07:00:59Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:00:59Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -571,53 +906,96 @@
         "difficulty_aggregated": 6.6
       },
       {
-        "sentence": "Es ist sehr ruhig außerhalb.",
+        "sentence": "Außerhalb der Stadt ist es sehr ruhig.",
         "tokens": [
           {
-            "surface": "Es",
-            "surface_en": "it",
-            "furigana": "[ɛs]",
-            "pos": "PRON",
-            "lemma": "es",
-            "explanation": "Personal/expletive pronoun, 3rd person singular neuter nominative; subject of a copular clause.",
-            "difficulty": 2
+            "surface": "Außerhalb",
+            "lemma": "außerhalb",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 0,
+            "end": 9,
+            "analyzer": "spacy_de_core_news_lg",
+            "is_main_word": true
+          },
+          {
+            "surface": "der",
+            "lemma": "der",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 10,
+            "end": 13,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Stadt",
+            "lemma": "Stadt",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 14,
+            "end": 19,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "ist",
-            "surface_en": "is",
-            "furigana": "[ɪst]",
-            "pos": "AUX",
             "lemma": "sein",
-            "explanation": "Copula auxiliary, present tense 3rd person singular; links subject to predicate.",
-            "difficulty": 4
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "VAFIN",
+            "feats": {},
+            "start": 20,
+            "end": 23,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "es",
+            "lemma": "es",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 24,
+            "end": 26,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "sehr",
-            "surface_en": "very",
-            "furigana": "[zeːɐ]",
-            "pos": "ADV",
             "lemma": "sehr",
-            "explanation": "Degree adverb intensifying the predicate adjective.",
-            "difficulty": 7
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 27,
+            "end": 31,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "ruhig",
-            "surface_en": "quiet",
-            "furigana": "[ˈʁuːɪç]",
-            "pos": "ADJ",
             "lemma": "ruhig",
-            "explanation": "Predicate adjective in positive degree; complements the copula.",
-            "difficulty": 7
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADJD",
+            "feats": {},
+            "start": 32,
+            "end": 37,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "außerhalb.",
-            "surface_en": "outside",
-            "furigana": "[ˈaʊ̯sɐhalp]",
-            "pos": "ADV",
-            "lemma": "außerhalb",
-            "explanation": "Locative adverb modifying the clause; indicates the place where it is quiet.",
-            "difficulty": 10,
-            "is_main_word": true
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 37,
+            "end": 38,
+            "analyzer": "spacy_de_core_news_lg"
           }
         ],
         "difficulty_aggregated": 6
@@ -686,7 +1064,7 @@
     "en": [
       "I live out of town now.",
       "The playground is unfortunately out of town.",
-      "Today we’re parking far outside.",
+      "Today we’re parking far out of town.",
       "It’s very quiet outside."
     ],
     "es": [

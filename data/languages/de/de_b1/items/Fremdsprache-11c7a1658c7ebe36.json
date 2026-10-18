@@ -151,7 +151,7 @@
       "translations": {
         "de": "Am Arbeitsplatz brauche ich oft eine Fremdsprache.",
         "ipa": "/am ˈaʁbaɪ̯t͡sˌplats ˈbʁaʊ̯xə ɪç ɔft ˈaɪ̯nə ˈfʁɛmtˌʃpʁaːxə/",
-        "en": "At work I often need a foreign language.",
+        "en": "At work, I often need to use a foreign language.",
         "es": "En el trabajo a menudo necesito usar un idioma extranjero.",
         "fr": "Au travail, j'ai souvent besoin d'une langue étrangère.",
         "it": "Al lavoro ho spesso bisogno di usare una lingua straniera.",
@@ -248,12 +248,12 @@
       "difficulty": 5.71
     },
     {
-      "target": "Wir sprechen heute in der Klasse nur in der Fremdsprache.",
+      "target": "Wir sprechen heute in der Klasse nur die Fremdsprache.",
       "reading": "/viːɐ̯ ˈʃpʁɛçn̩ ˈhɔʏ̯tə ɪn deːɐ̯ ˈklasə nuːɐ̯ ɪn deːɐ̯ ˈfʁɛmtˌʃpʁaːxə/",
       "translations": {
-        "de": "Wir sprechen heute in der Klasse nur in der Fremdsprache.",
+        "de": "Wir sprechen heute in der Klasse nur die Fremdsprache.",
         "ipa": "/viːɐ̯ ˈʃpʁɛçn̩ ˈhɔʏ̯tə ɪn deːɐ̯ ˈklasə nuːɐ̯ ɪn deːɐ̯ ˈfʁɛmtˌʃpʁaːxə/",
-        "en": "We are speaking only in the foreign language in class today.",
+        "en": "In class today, we’re speaking only in the foreign language.",
         "es": "Hoy en clase solo hablamos en la lengua extranjera.",
         "fr": "Aujourd'hui, en cours, nous parlons uniquement dans la langue étrangère.",
         "it": "Oggi in classe parliamo solo nella lingua straniera.",
@@ -273,7 +273,7 @@
         "pl": "Dziś na lekcji mówimy tylko w języku obcym.",
         "el": "Σήμερα στην τάξη μιλάμε μόνο στην ξένη γλώσσα.",
         "nb": "I dag snakker vi bare på fremmedspråk i timen.",
-        "id": "Hari ini di kelas kami chỉ berbicara dalam bahasa asing.",
+        "id": "Hari ini di kelas kami hanya berbicara dalam bahasa asing.",
         "sv": "Idag pratar vi bara det främmande språket i klassen.",
         "ro": "Astăzi la clasă vorbim doar în limba străină.",
         "cs": "Dnes ve třídě mluvíme jen cizím jazykem.",
@@ -284,94 +284,114 @@
       "tokens": [
         {
           "surface": "Wir",
-          "surface_en": "we",
-          "furigana": "[viːɐ̯]",
-          "pos": "PRON",
           "lemma": "wir",
-          "explanation": "Personal pronoun; first person plural subject.",
-          "difficulty": 2
+          "pos": "PRON",
+          "upos": "PRON",
+          "xpos": "PPER",
+          "feats": {},
+          "start": 0,
+          "end": 3,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "sprechen",
-          "surface_en": "speak",
-          "furigana": "[ˈʃpʁɛçən]",
-          "pos": "VERB",
           "lemma": "sprechen",
-          "explanation": "Finite verb, 1st person plural present; main verb.",
-          "difficulty": 10
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VVFIN",
+          "feats": {},
+          "start": 4,
+          "end": 12,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "heute",
-          "surface_en": "today",
-          "furigana": "[ˈhɔʏ̯tə]",
-          "pos": "ADV",
           "lemma": "heute",
-          "explanation": "Temporal adverb; sets the time frame.",
-          "difficulty": 7
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "ADV",
+          "feats": {},
+          "start": 13,
+          "end": 18,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "in",
-          "surface_en": "in",
-          "furigana": "[ɪn]",
-          "pos": "ADP",
           "lemma": "in",
-          "explanation": "Preposition; introduces the dative PP 'in der Klasse' (location).",
-          "difficulty": 2
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "APPR",
+          "feats": {},
+          "start": 19,
+          "end": 21,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "der",
-          "surface_en": "the",
-          "furigana": "[deːɐ̯]",
-          "pos": "DET",
           "lemma": "der",
-          "explanation": "Definite article; feminine dative singular with 'Klasse'.",
-          "difficulty": 2
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "ART",
+          "feats": {},
+          "start": 22,
+          "end": 25,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "Klasse",
-          "surface_en": "class",
-          "furigana": "[ˈklasə]",
-          "pos": "NOUN",
           "lemma": "Klasse",
-          "explanation": "Noun; object of the preposition 'in' (dative).",
-          "difficulty": 7
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 26,
+          "end": 32,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "nur",
-          "surface_en": "only",
-          "furigana": "[nuːʁ]",
-          "pos": "ADV",
           "lemma": "nur",
-          "explanation": "Focus adverb; limits the scope to the following phrase.",
-          "difficulty": 2
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "ADV",
+          "feats": {},
+          "start": 33,
+          "end": 36,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "in",
-          "surface_en": "in",
-          "furigana": "[ɪn]",
-          "pos": "ADP",
-          "lemma": "in",
-          "explanation": "Preposition; introduces the dative PP indicating medium.",
-          "difficulty": 2
-        },
-        {
-          "surface": "der",
-          "surface_en": "the",
-          "furigana": "[deːɐ̯]",
-          "pos": "DET",
+          "surface": "die",
           "lemma": "der",
-          "explanation": "Definite article; feminine dative singular with 'Fremdsprache'.",
-          "difficulty": 2
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "ART",
+          "feats": {},
+          "start": 37,
+          "end": 40,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "Fremdsprache.",
-          "surface_en": "foreign language",
-          "furigana": "[ˈfʁɛmdˌʃpʁaːxə]",
-          "pos": "NOUN",
+          "surface": "Fremdsprache",
           "lemma": "Fremdsprache",
-          "explanation": "Noun; object of the preposition 'in' (dative), indicating the language used.",
-          "difficulty": 10,
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 41,
+          "end": 53,
+          "analyzer": "spacy_de_core_news_lg",
           "is_main_word": true
+        },
+        {
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 53,
+          "end": 54,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 4.6
@@ -481,8 +501,358 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-15T00:03:04Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:De b1/11c7a1658c7ebe36",
+      "revision_id": 85502,
+      "parent_revision_id": 16130,
+      "revision_timestamp_utc": "2026-10-15T00:03:04Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Naturalize German and English phrasing and remove Indonesian language contamination",
+      "pulled_utc": "2026-10-17T07:06:35Z",
+      "applied_utc": "2026-10-17T07:06:49Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-728cd1156e7f9048",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_b1:11c7a1658c7ebe36",
+        "pack_code": "de_b1",
+        "entry_id": "Fremdsprache",
+        "language": "de",
+        "sentence_index": 3,
+        "old_sentence": "Wir sprechen heute in der Klasse nur in der Fremdsprache.",
+        "old_translations": {
+          "de": "Wir sprechen heute in der Klasse nur in der Fremdsprache.",
+          "ipa": "/viːɐ̯ ˈʃpʁɛçn̩ ˈhɔʏ̯tə ɪn deːɐ̯ ˈklasə nuːɐ̯ ɪn deːɐ̯ ˈfʁɛmtˌʃpʁaːxə/",
+          "en": "We are speaking only in the foreign language in class today.",
+          "es": "Hoy en clase solo hablamos en la lengua extranjera.",
+          "fr": "Aujourd'hui, en cours, nous parlons uniquement dans la langue étrangère.",
+          "it": "Oggi in classe parliamo solo nella lingua straniera.",
+          "ko": "오늘 수업에서는 외국어로만 말해요.",
+          "zh-Hans": "今天在课堂上我们只说外语。",
+          "yue": "我哋今日喺課堂上淨係講外語。",
+          "ru": "Сегодня на уроке мы говорим только на иностранном языке.",
+          "pt": "Hoje, na aula, falamos apenas em língua estrangeira.",
+          "he": "היום בכיתה אנחנו מדברים רק בשפה הזרה.",
+          "tr": "Bugün derste sadece yabancı dilde konuşuyoruz.",
+          "vi": "Hôm nay trong lớp chúng tôi chỉ nói bằng ngoại ngữ.",
+          "ar": "اليوم في الصف نتحدث فقط باللغة الأجنبية.",
+          "nl": "Vandaag praten we in de klas alleen in de vreemde taal.",
+          "uk": "Сьогодні на уроці ми говоримо тільки іноземною мовою.",
+          "hu": "Ma az órán csak idegen nyelven beszélünk.",
+          "hi": "आज कक्षा में हम केवल विदेशी भाषा में बात करते हैं.",
+          "pl": "Dziś na lekcji mówimy tylko w języku obcym.",
+          "el": "Σήμερα στην τάξη μιλάμε μόνο στην ξένη γλώσσα.",
+          "nb": "I dag snakker vi bare på fremmedspråk i timen.",
+          "id": "Hari ini di kelas kami chỉ berbicara dalam bahasa asing.",
+          "sv": "Idag pratar vi bara det främmande språket i klassen.",
+          "ro": "Astăzi la clasă vorbim doar în limba străină.",
+          "cs": "Dnes ve třídě mluvíme jen cizím jazykem.",
+          "da": "I dag taler vi kun på fremmedsprog i klassen.",
+          "fi": "Tänään tunnilla puhumme vain vieraalla kielellä.",
+          "ja": "今日は授業で外国語だけで話します。"
+        },
+        "proposed_sentence": "Wir sprechen heute in der Klasse nur die Fremdsprache.",
+        "proposed_translations": {
+          "de": "Wir sprechen heute in der Klasse nur die Fremdsprache.",
+          "ipa": "/viːɐ̯ ˈʃpʁɛçn̩ ˈhɔʏ̯tə ɪn deːɐ̯ ˈklasə nuːɐ̯ ɪn deːɐ̯ ˈfʁɛmtˌʃpʁaːxə/",
+          "en": "In class today, we’re speaking only in the foreign language.",
+          "es": "Hoy en clase solo hablamos en la lengua extranjera.",
+          "fr": "Aujourd'hui, en cours, nous parlons uniquement dans la langue étrangère.",
+          "it": "Oggi in classe parliamo solo nella lingua straniera.",
+          "ko": "오늘 수업에서는 외국어로만 말해요.",
+          "zh-Hans": "今天在课堂上我们只说外语。",
+          "yue": "我哋今日喺課堂上淨係講外語。",
+          "ru": "Сегодня на уроке мы говорим только на иностранном языке.",
+          "pt": "Hoje, na aula, falamos apenas em língua estrangeira.",
+          "he": "היום בכיתה אנחנו מדברים רק בשפה הזרה.",
+          "tr": "Bugün derste sadece yabancı dilde konuşuyoruz.",
+          "vi": "Hôm nay trong lớp chúng tôi chỉ nói bằng ngoại ngữ.",
+          "ar": "اليوم في الصف نتحدث فقط باللغة الأجنبية.",
+          "nl": "Vandaag praten we in de klas alleen in de vreemde taal.",
+          "uk": "Сьогодні на уроці ми говоримо тільки іноземною мовою.",
+          "hu": "Ma az órán csak idegen nyelven beszélünk.",
+          "hi": "आज कक्षा में हम केवल विदेशी भाषा में बात करते हैं.",
+          "pl": "Dziś na lekcji mówimy tylko w języku obcym.",
+          "el": "Σήμερα στην τάξη μιλάμε μόνο στην ξένη γλώσσα.",
+          "nb": "I dag snakker vi bare på fremmedspråk i timen.",
+          "id": "Hari ini di kelas kami hanya berbicara dalam bahasa asing.",
+          "sv": "Idag pratar vi bara det främmande språket i klassen.",
+          "ro": "Astăzi la clasă vorbim doar în limba străină.",
+          "cs": "Dnes ve třídě mluvíme jen cizím jazykem.",
+          "da": "I dag taler vi kun på fremmedsprog i klassen.",
+          "fi": "Tänään tunnilla puhumme vain vieraalla kielellä.",
+          "ja": "今日は授業で外国語だけで話します。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Wir sprechen heute in der Klasse nur die Fremdsprache.",
+        "old_japanese": "Wir sprechen heute in der Klasse nur in der Fremdsprache.",
+        "old_english": "We are speaking only in the foreign language in class today.",
+        "proposed_japanese": "Wir sprechen heute in der Klasse nur die Fremdsprache.",
+        "proposed_english": "In class today, we’re speaking only in the foreign language.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Wir sprechen heute in der Klasse nur die Fremdsprache.",
+          "tokens": [
+            {
+              "surface": "Wir",
+              "lemma": "wir",
+              "pos": "PRON",
+              "upos": "PRON",
+              "xpos": "PPER",
+              "feats": {},
+              "start": 0,
+              "end": 3,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "sprechen",
+              "lemma": "sprechen",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVFIN",
+              "feats": {},
+              "start": 4,
+              "end": 12,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "heute",
+              "lemma": "heute",
+              "pos": "ADV",
+              "upos": "ADV",
+              "xpos": "ADV",
+              "feats": {},
+              "start": 13,
+              "end": 18,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "in",
+              "lemma": "in",
+              "pos": "ADP",
+              "upos": "ADP",
+              "xpos": "APPR",
+              "feats": {},
+              "start": 19,
+              "end": 21,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "der",
+              "lemma": "der",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "ART",
+              "feats": {},
+              "start": 22,
+              "end": 25,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Klasse",
+              "lemma": "Klasse",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 26,
+              "end": 32,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "nur",
+              "lemma": "nur",
+              "pos": "ADV",
+              "upos": "ADV",
+              "xpos": "ADV",
+              "feats": {},
+              "start": 33,
+              "end": 36,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "die",
+              "lemma": "der",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "ART",
+              "feats": {},
+              "start": 37,
+              "end": 40,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Fremdsprache",
+              "lemma": "Fremdsprache",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 41,
+              "end": 53,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 53,
+              "end": 54,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Wir",
+            "lemma": "wir",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "sprechen",
+            "lemma": "sprechen",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 4,
+            "end": 12,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "heute",
+            "lemma": "heute",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 13,
+            "end": 18,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "in",
+            "lemma": "in",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 19,
+            "end": 21,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "der",
+            "lemma": "der",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 22,
+            "end": 25,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Klasse",
+            "lemma": "Klasse",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 26,
+            "end": 32,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "nur",
+            "lemma": "nur",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 33,
+            "end": 36,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "die",
+            "lemma": "der",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 37,
+            "end": 40,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Fremdsprache",
+            "lemma": "Fremdsprache",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 41,
+            "end": 53,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 53,
+            "end": 54,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:06:35Z",
+        "updated_utc": "2026-10-17T07:07:05Z",
+        "applied_utc": "2026-10-17T07:07:05Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:07:05Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -494,34 +864,6 @@
     "word": "Fremdsprache",
     "word_reading": "",
     "word_label": "Substantiv (die fem.)",
-    "word_en": "foreign language; non-native language",
-    "word_es": "idioma extranjero",
-    "word_fr": "langue étrangère",
-    "word_it": "lingua straniera",
-    "word_ko": "외국어",
-    "word_zh-Hans": "外语",
-    "word_yue": "外語",
-    "word_ru": "иностранный язык",
-    "word_pt": "língua estrangeira",
-    "word_he": "שפה זרה",
-    "word_tr": "yabancı dil",
-    "word_vi": "ngoại ngữ",
-    "word_ar": "لغة أجنبية",
-    "word_nl": "vreemde taal",
-    "word_uk": "іноземна мова",
-    "word_hu": "idegen nyelv",
-    "word_hi": "विदेशी भाषा",
-    "word_pl": "język obcy",
-    "word_el": "ξένη γλώσσα",
-    "word_nb": "fremmedspråk",
-    "word_id": "bahasa asing",
-    "word_sv": "främmande språk",
-    "word_ro": "limbă străină",
-    "word_cs": "cizí jazyk",
-    "word_da": "fremmedsprog",
-    "word_fi": "vieras kieli",
-    "word_ja": "外国語",
-    "word_de": "Fremdsprache",
     "comic_difficulty": 6,
     "jp": [
       "Ich lerne gerade eine neue Fremdsprache online.",
@@ -534,24 +876,6 @@
       "/am ˈaʁbaɪ̯t͡sˌplats ˈbʁaʊ̯xə ɪç ɔft ˈaɪ̯nə ˈfʁɛmtˌʃpʁaːxə/",
       "/viːɐ̯ ˈʃpʁɛçn̩ ˈhɔʏ̯tə ɪn deːɐ̯ ˈklasə nuːɐ̯ ɪn deːɐ̯ ˈfʁɛmtˌʃpʁaːxə/",
       "/ˈmaɪ̯nə ˈnaχbaːʁɪn ʊntəˈʁɪçtət ˈaːbənts ˈaɪ̯nə ˈfʁɛmtˌʃpʁaːxə/"
-    ],
-    "de": [
-      "Ich lerne gerade eine neue Fremdsprache online.",
-      "Am Arbeitsplatz brauche ich oft eine Fremdsprache.",
-      "Wir sprechen heute in der Klasse nur in der Fremdsprache.",
-      "Meine Nachbarin unterrichtet abends eine Fremdsprache."
-    ],
-    "ipa": [
-      "/ɪç ˈlɛʁnə ɡəˈʁaːdə ˈaɪ̯nə ˈnɔɪ̯ə ˈfʁɛmtˌʃpʁaːxə ˈɔnlaɪ̯n/",
-      "/am ˈaʁbaɪ̯t͡sˌplats ˈbʁaʊ̯xə ɪç ɔft ˈaɪ̯nə ˈfʁɛmtˌʃpʁaːxə/",
-      "/viːɐ̯ ˈʃpʁɛçn̩ ˈhɔʏ̯tə ɪn deːɐ̯ ˈklasə nuːɐ̯ ɪn deːɐ̯ ˈfʁɛmtˌʃpʁaːxə/",
-      "/ˈmaɪ̯nə ˈnaχbaːʁɪn ʊntəˈʁɪçtət ˈaːbənts ˈaɪ̯nə ˈfʁɛmtˌʃpʁaːxə/"
-    ],
-    "en": [
-      "I'm currently learning a new foreign language online.",
-      "At work I often need a foreign language.",
-      "We are speaking only in the foreign language in class today.",
-      "My neighbor teaches a foreign language in the evenings."
     ],
     "pos_analysis": [
       {
@@ -695,98 +1019,118 @@
         "difficulty_aggregated": 5.71
       },
       {
-        "sentence": "Wir sprechen heute in der Klasse nur in der Fremdsprache.",
+        "sentence": "Wir sprechen heute in der Klasse nur die Fremdsprache.",
         "tokens": [
           {
             "surface": "Wir",
-            "surface_en": "we",
-            "furigana": "[viːɐ̯]",
-            "pos": "PRON",
             "lemma": "wir",
-            "explanation": "Personal pronoun; first person plural subject.",
-            "difficulty": 2
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "sprechen",
-            "surface_en": "speak",
-            "furigana": "[ˈʃpʁɛçən]",
-            "pos": "VERB",
             "lemma": "sprechen",
-            "explanation": "Finite verb, 1st person plural present; main verb.",
-            "difficulty": 10
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 4,
+            "end": 12,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "heute",
-            "surface_en": "today",
-            "furigana": "[ˈhɔʏ̯tə]",
-            "pos": "ADV",
             "lemma": "heute",
-            "explanation": "Temporal adverb; sets the time frame.",
-            "difficulty": 7
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 13,
+            "end": 18,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "in",
-            "surface_en": "in",
-            "furigana": "[ɪn]",
-            "pos": "ADP",
             "lemma": "in",
-            "explanation": "Preposition; introduces the dative PP 'in der Klasse' (location).",
-            "difficulty": 2
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 19,
+            "end": 21,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "der",
-            "surface_en": "the",
-            "furigana": "[deːɐ̯]",
-            "pos": "DET",
             "lemma": "der",
-            "explanation": "Definite article; feminine dative singular with 'Klasse'.",
-            "difficulty": 2
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 22,
+            "end": 25,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "Klasse",
-            "surface_en": "class",
-            "furigana": "[ˈklasə]",
-            "pos": "NOUN",
             "lemma": "Klasse",
-            "explanation": "Noun; object of the preposition 'in' (dative).",
-            "difficulty": 7
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 26,
+            "end": 32,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "nur",
-            "surface_en": "only",
-            "furigana": "[nuːʁ]",
-            "pos": "ADV",
             "lemma": "nur",
-            "explanation": "Focus adverb; limits the scope to the following phrase.",
-            "difficulty": 2
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 33,
+            "end": 36,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "in",
-            "surface_en": "in",
-            "furigana": "[ɪn]",
-            "pos": "ADP",
-            "lemma": "in",
-            "explanation": "Preposition; introduces the dative PP indicating medium.",
-            "difficulty": 2
-          },
-          {
-            "surface": "der",
-            "surface_en": "the",
-            "furigana": "[deːɐ̯]",
-            "pos": "DET",
+            "surface": "die",
             "lemma": "der",
-            "explanation": "Definite article; feminine dative singular with 'Fremdsprache'.",
-            "difficulty": 2
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 37,
+            "end": 40,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "Fremdsprache.",
-            "surface_en": "foreign language",
-            "furigana": "[ˈfʁɛmdˌʃpʁaːxə]",
-            "pos": "NOUN",
+            "surface": "Fremdsprache",
             "lemma": "Fremdsprache",
-            "explanation": "Noun; object of the preposition 'in' (dative), indicating the language used.",
-            "difficulty": 10,
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 41,
+            "end": 53,
+            "analyzer": "spacy_de_core_news_lg",
             "is_main_word": true
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 53,
+            "end": 54,
+            "analyzer": "spacy_de_core_news_lg"
           }
         ],
         "difficulty_aggregated": 4.6
@@ -853,137 +1197,41 @@
         "difficulty_aggregated": 7.67
       }
     ],
-    "es": [
-      "Ahora estoy aprendiendo un idioma nuevo en línea.",
-      "En el trabajo a menudo necesito usar un idioma extranjero.",
-      "Hoy en clase solo hablamos en la lengua extranjera.",
-      "Mi vecina enseña una lengua extranjera por las noches."
-    ],
-    "fr": [
-      "En ce moment, j'apprends une nouvelle langue en ligne.",
-      "Au travail, j'ai souvent besoin d'une langue étrangère.",
-      "Aujourd'hui, en cours, nous parlons uniquement dans la langue étrangère.",
-      "Ma voisine enseigne une langue étrangère le soir."
-    ],
-    "it": [
-      "In questo momento sto imparando una nuova lingua online.",
-      "Al lavoro ho spesso bisogno di usare una lingua straniera.",
-      "Oggi in classe parliamo solo nella lingua straniera.",
-      "La mia vicina insegna una lingua straniera la sera."
-    ],
-    "ko": [
-      "요즘 온라인으로 새로운 외국어를 배우고 있어요.",
-      "직장에서 외국어가 자주 필요해요.",
-      "오늘 수업에서는 외국어로만 말해요.",
-      "제 이웃은 저녁에 외국어를 가르쳐요."
-    ],
-    "zh-Hans": [
-      "我现在在网上学习一门新的外语。",
-      "在工作中我经常需要用外语。",
-      "今天在课堂上我们只说外语。",
-      "我的邻居晚上教外语。"
-    ],
-    "yue": [
-      "我而家喺網上學一門新嘅外語。",
-      "喺工作上我成日要用外語。",
-      "我哋今日喺課堂上淨係講外語。",
-      "我嗰位女鄰居夜晚教外語。"
-    ],
-    "ru": [
-      "Сейчас я учу новый иностранный язык онлайн.",
-      "На работе мне часто нужен иностранный язык.",
-      "Сегодня на уроке мы говорим только на иностранном языке.",
-      "Моя соседка по вечерам преподаёт иностранный язык."
-    ],
-    "pt": [
-      "Atualmente estou aprendendo um novo idioma online.",
-      "No trabalho muitas vezes preciso usar um idioma estrangeiro.",
-      "Hoje, na aula, falamos apenas em língua estrangeira.",
-      "Minha vizinha ensina um idioma estrangeiro à noite."
-    ],
-    "he": [
-      "אני לומד כרגע שפה זרה חדשה באינטרנט.",
-      "בעבודה אני לעיתים קרובות צריך להשתמש בשפה זרה.",
-      "היום בכיתה אנחנו מדברים רק בשפה הזרה.",
-      "השכנה שלי מלמדת בערבים שפה זרה."
-    ],
-    "tr": [
-      "Şu anda çevrimiçi yeni bir yabancı dil öğreniyorum.",
-      "İş yerinde sık sık yabancı dil kullanmam gerekiyor.",
-      "Bugün derste sadece yabancı dilde konuşuyoruz.",
-      "Komşum akşamları yabancı dil öğretiyor."
-    ],
-    "vi": [
-      "Hiện tại tôi đang học một ngoại ngữ mới trực tuyến.",
-      "Ở nơi làm việc tôi thường cần dùng ngoại ngữ.",
-      "Hôm nay trong lớp chúng tôi chỉ nói bằng ngoại ngữ.",
-      "Hàng xóm của tôi dạy ngoại ngữ vào buổi tối."
-    ],
+    "word_POS": "Noun",
+    "entry_id": "Fremdsprache",
+    "word_en": "foreign language; non-native language",
+    "word_es": "idioma extranjero",
+    "word_fr": "langue étrangère",
+    "word_it": "lingua straniera",
+    "word_ko": "외국어",
+    "word_zh-Hans": "外语",
+    "word_yue": "外語",
+    "word_ru": "иностранный язык",
+    "word_pt": "língua estrangeira",
+    "word_he": "שפה זרה",
+    "word_tr": "yabancı dil",
+    "word_vi": "ngoại ngữ",
+    "word_ar": "لغة أجنبية",
+    "word_nl": "vreemde taal",
+    "word_uk": "іноземна мова",
+    "word_hu": "idegen nyelv",
+    "word_hi": "विदेशी भाषा",
+    "word_pl": "język obcy",
+    "word_el": "ξένη γλώσσα",
+    "word_nb": "fremmedspråk",
+    "word_id": "bahasa asing",
+    "word_sv": "främmande språk",
+    "word_ro": "limbă străină",
+    "word_cs": "cizí jazyk",
+    "word_da": "fremmedsprog",
+    "word_fi": "vieras kieli",
+    "word_ja": "外国語",
+    "word_de": "Fremdsprache",
     "ar": [
       "أتعلم حالياً لغة أجنبية جديدة عبر الإنترنت.",
       "في العمل كثيراً ما أحتاج إلى استخدام لغة أجنبية.",
       "اليوم في الصف نتحدث فقط باللغة الأجنبية.",
       "جارتي تُدرّس لغة أجنبية في المساء."
-    ],
-    "nl": [
-      "Ik leer momenteel online een nieuwe vreemde taal.",
-      "Op het werk moet ik vaak een vreemde taal gebruiken.",
-      "Vandaag praten we in de klas alleen in de vreemde taal.",
-      "Mijn buurvrouw geeft 's avonds les in een vreemde taal."
-    ],
-    "uk": [
-      "Зараз я вивчаю нову іноземну мову онлайн.",
-      "На роботі мені часто доводиться користуватися іноземною мовою.",
-      "Сьогодні на уроці ми говоримо тільки іноземною мовою.",
-      "Моя сусідка ввечері викладає іноземну мову."
-    ],
-    "hu": [
-      "Jelenleg online tanulok egy új idegen nyelvet.",
-      "A munkahelyemen gyakran kell idegen nyelvet használnom.",
-      "Ma az órán csak idegen nyelven beszélünk.",
-      "A szomszédnőm esténként idegen nyelvet tanít."
-    ],
-    "hi": [
-      "मैं अभी ऑनलाइन एक नई विदेशी भाषा सीख रहा हूँ.",
-      "काम पर मुझे अक्सर किसी विदेशी भाषा का उपयोग करना पड़ता है.",
-      "आज कक्षा में हम केवल विदेशी भाषा में बात करते हैं.",
-      "मेरी पड़ोसन शाम को एक विदेशी भाषा पढ़ाती है."
-    ],
-    "pl": [
-      "Obecnie uczę się nowego języka obcego online.",
-      "W pracy często muszę używać języka obcego.",
-      "Dziś na lekcji mówimy tylko w języku obcym.",
-      "Moja sąsiadka wieczorami uczy języka obcego."
-    ],
-    "el": [
-      "Αυτήν την περίοδο μαθαίνω μια νέα ξένη γλώσσα διαδικτυακά.",
-      "Στη δουλειά χρειάζομαι συχνά μια ξένη γλώσσα.",
-      "Σήμερα στην τάξη μιλάμε μόνο στην ξένη γλώσσα.",
-      "Η γειτόνισσά μου διδάσκει ξένη γλώσσα τα βράδια."
-    ],
-    "nb": [
-      "Jeg lærer for tiden et nytt fremmedspråk på nett.",
-      "På jobben trenger jeg ofte å bruke et fremmedspråk.",
-      "I dag snakker vi bare på fremmedspråk i timen.",
-      "Naboen min underviser i et fremmedspråk om kvelden."
-    ],
-    "id": [
-      "Saat ini saya sedang belajar bahasa asing baru secara online.",
-      "Di tempat kerja saya sering perlu menggunakan bahasa asing.",
-      "Hari ini di kelas kami chỉ berbicara dalam bahasa asing.",
-      "Tetangga saya mengajar bahasa asing pada malam hari."
-    ],
-    "sv": [
-      "Just nu lär jag mig ett nytt språk online.",
-      "På jobbet behöver jag ofta använda ett främmande språk.",
-      "Idag pratar vi bara det främmande språket i klassen.",
-      "Min granne undervisar i ett främmande språk på kvällarna."
-    ],
-    "ro": [
-      "În prezent învăț o limbă străină nouă online.",
-      "La serviciu am adesea nevoie să folosesc o limbă străină.",
-      "Astăzi la clasă vorbim doar în limba străină.",
-      "Vecina mea predă o limbă străină seara."
     ],
     "cs": [
       "Momentálně se učím nový cizí jazyk online.",
@@ -997,11 +1245,77 @@
       "I dag taler vi kun på fremmedsprog i klassen.",
       "Min nabo underviser i et fremmedsprog om aftenen."
     ],
+    "de": [
+      "Ich lerne gerade eine neue Fremdsprache online.",
+      "Am Arbeitsplatz brauche ich oft eine Fremdsprache.",
+      "Wir sprechen heute in der Klasse nur in der Fremdsprache.",
+      "Meine Nachbarin unterrichtet abends eine Fremdsprache."
+    ],
+    "el": [
+      "Αυτήν την περίοδο μαθαίνω μια νέα ξένη γλώσσα διαδικτυακά.",
+      "Στη δουλειά χρειάζομαι συχνά μια ξένη γλώσσα.",
+      "Σήμερα στην τάξη μιλάμε μόνο στην ξένη γλώσσα.",
+      "Η γειτόνισσά μου διδάσκει ξένη γλώσσα τα βράδια."
+    ],
+    "en": [
+      "I'm currently learning a new foreign language online.",
+      "At work, I often need to use a foreign language.",
+      "We are speaking only in the foreign language in class today.",
+      "My neighbor teaches a foreign language in the evenings."
+    ],
+    "es": [
+      "Ahora estoy aprendiendo un idioma nuevo en línea.",
+      "En el trabajo a menudo necesito usar un idioma extranjero.",
+      "Hoy en clase solo hablamos en la lengua extranjera.",
+      "Mi vecina enseña una lengua extranjera por las noches."
+    ],
     "fi": [
       "Opettelen parhaillaan uutta vierasta kieltä verkossa.",
       "Töissä joudun usein käyttämään vierasta kieltä.",
       "Tänään tunnilla puhumme vain vieraalla kielellä.",
       "Naapurini opettaa iltaisin vierasta kieltä."
+    ],
+    "fr": [
+      "En ce moment, j'apprends une nouvelle langue en ligne.",
+      "Au travail, j'ai souvent besoin d'une langue étrangère.",
+      "Aujourd'hui, en cours, nous parlons uniquement dans la langue étrangère.",
+      "Ma voisine enseigne une langue étrangère le soir."
+    ],
+    "he": [
+      "אני לומד כרגע שפה זרה חדשה באינטרנט.",
+      "בעבודה אני לעיתים קרובות צריך להשתמש בשפה זרה.",
+      "היום בכיתה אנחנו מדברים רק בשפה הזרה.",
+      "השכנה שלי מלמדת בערבים שפה זרה."
+    ],
+    "hi": [
+      "मैं अभी ऑनलाइन एक नई विदेशी भाषा सीख रहा हूँ.",
+      "काम पर मुझे अक्सर किसी विदेशी भाषा का उपयोग करना पड़ता है.",
+      "आज कक्षा में हम केवल विदेशी भाषा में बात करते हैं.",
+      "मेरी पड़ोसन शाम को एक विदेशी भाषा पढ़ाती है."
+    ],
+    "hu": [
+      "Jelenleg online tanulok egy új idegen nyelvet.",
+      "A munkahelyemen gyakran kell idegen nyelvet használnom.",
+      "Ma az órán csak idegen nyelven beszélünk.",
+      "A szomszédnőm esténként idegen nyelvet tanít."
+    ],
+    "id": [
+      "Saat ini saya sedang belajar bahasa asing baru secara online.",
+      "Di tempat kerja saya sering perlu menggunakan bahasa asing.",
+      "Hari ini di kelas kami chỉ berbicara dalam bahasa asing.",
+      "Tetangga saya mengajar bahasa asing pada malam hari."
+    ],
+    "ipa": [
+      "/ɪç ˈlɛʁnə ɡəˈʁaːdə ˈaɪ̯nə ˈnɔɪ̯ə ˈfʁɛmtˌʃpʁaːxə ˈɔnlaɪ̯n/",
+      "/am ˈaʁbaɪ̯t͡sˌplats ˈbʁaʊ̯xə ɪç ɔft ˈaɪ̯nə ˈfʁɛmtˌʃpʁaːxə/",
+      "/viːɐ̯ ˈʃpʁɛçn̩ ˈhɔʏ̯tə ɪn deːɐ̯ ˈklasə nuːɐ̯ ɪn deːɐ̯ ˈfʁɛmtˌʃpʁaːxə/",
+      "/ˈmaɪ̯nə ˈnaχbaːʁɪn ʊntəˈʁɪçtət ˈaːbənts ˈaɪ̯nə ˈfʁɛmtˌʃpʁaːxə/"
+    ],
+    "it": [
+      "In questo momento sto imparando una nuova lingua online.",
+      "Al lavoro ho spesso bisogno di usare una lingua straniera.",
+      "Oggi in classe parliamo solo nella lingua straniera.",
+      "La mia vicina insegna una lingua straniera la sera."
     ],
     "ja": [
       "今、オンラインで新しい外国語を学んでいます。",
@@ -1009,6 +1323,83 @@
       "今日は授業で外国語だけで話します。",
       "近所の人は夜に外国語を教えています。"
     ],
-    "word_POS": "Noun"
+    "ko": [
+      "요즘 온라인으로 새로운 외국어를 배우고 있어요.",
+      "직장에서 외국어가 자주 필요해요.",
+      "오늘 수업에서는 외국어로만 말해요.",
+      "제 이웃은 저녁에 외국어를 가르쳐요."
+    ],
+    "nb": [
+      "Jeg lærer for tiden et nytt fremmedspråk på nett.",
+      "På jobben trenger jeg ofte å bruke et fremmedspråk.",
+      "I dag snakker vi bare på fremmedspråk i timen.",
+      "Naboen min underviser i et fremmedspråk om kvelden."
+    ],
+    "nl": [
+      "Ik leer momenteel online een nieuwe vreemde taal.",
+      "Op het werk moet ik vaak een vreemde taal gebruiken.",
+      "Vandaag praten we in de klas alleen in de vreemde taal.",
+      "Mijn buurvrouw geeft 's avonds les in een vreemde taal."
+    ],
+    "pl": [
+      "Obecnie uczę się nowego języka obcego online.",
+      "W pracy często muszę używać języka obcego.",
+      "Dziś na lekcji mówimy tylko w języku obcym.",
+      "Moja sąsiadka wieczorami uczy języka obcego."
+    ],
+    "pt": [
+      "Atualmente estou aprendendo um novo idioma online.",
+      "No trabalho muitas vezes preciso usar um idioma estrangeiro.",
+      "Hoje, na aula, falamos apenas em língua estrangeira.",
+      "Minha vizinha ensina um idioma estrangeiro à noite."
+    ],
+    "ro": [
+      "În prezent învăț o limbă străină nouă online.",
+      "La serviciu am adesea nevoie să folosesc o limbă străină.",
+      "Astăzi la clasă vorbim doar în limba străină.",
+      "Vecina mea predă o limbă străină seara."
+    ],
+    "ru": [
+      "Сейчас я учу новый иностранный язык онлайн.",
+      "На работе мне часто нужен иностранный язык.",
+      "Сегодня на уроке мы говорим только на иностранном языке.",
+      "Моя соседка по вечерам преподаёт иностранный язык."
+    ],
+    "sv": [
+      "Just nu lär jag mig ett nytt språk online.",
+      "På jobbet behöver jag ofta använda ett främmande språk.",
+      "Idag pratar vi bara det främmande språket i klassen.",
+      "Min granne undervisar i ett främmande språk på kvällarna."
+    ],
+    "tr": [
+      "Şu anda çevrimiçi yeni bir yabancı dil öğreniyorum.",
+      "İş yerinde sık sık yabancı dil kullanmam gerekiyor.",
+      "Bugün derste sadece yabancı dilde konuşuyoruz.",
+      "Komşum akşamları yabancı dil öğretiyor."
+    ],
+    "uk": [
+      "Зараз я вивчаю нову іноземну мову онлайн.",
+      "На роботі мені часто доводиться користуватися іноземною мовою.",
+      "Сьогодні на уроці ми говоримо тільки іноземною мовою.",
+      "Моя сусідка ввечері викладає іноземну мову."
+    ],
+    "vi": [
+      "Hiện tại tôi đang học một ngoại ngữ mới trực tuyến.",
+      "Ở nơi làm việc tôi thường cần dùng ngoại ngữ.",
+      "Hôm nay trong lớp chúng tôi chỉ nói bằng ngoại ngữ.",
+      "Hàng xóm của tôi dạy ngoại ngữ vào buổi tối."
+    ],
+    "yue": [
+      "我而家喺網上學一門新嘅外語。",
+      "喺工作上我成日要用外語。",
+      "我哋今日喺課堂上淨係講外語。",
+      "我嗰位女鄰居夜晚教外語。"
+    ],
+    "zh-Hans": [
+      "我现在在网上学习一门新的外语。",
+      "在工作中我经常需要用外语。",
+      "今天在课堂上我们只说外语。",
+      "我的邻居晚上教外语。"
+    ]
   }
 }
