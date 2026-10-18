@@ -22,7 +22,16 @@ import urllib.request
 from pathlib import Path
 
 from common import iter_pack_items, load_pack_manifest, safe_filename, validate_token_sequence, write_json
-from japanese_ruby import normalize_japanese_item, parse_ruby_text, reading_from_ruby_text, ruby_from_surface_reading, sentence_reading_from_tokens
+from japanese_ruby import (
+    is_kanji,
+    is_kana,
+    normalize_japanese_item,
+    parse_ruby_text,
+    reading_from_ruby_text,
+    ruby_from_surface_reading,
+    sentence_reading_from_tokens,
+    to_hiragana,
+)
 from vocomipedia_nlp import analyze_sentence, sync_item_pos_analysis
 from wiki_visible_fields import GLOSS_LANGUAGES
 
@@ -221,6 +230,19 @@ def render_template_call(name: str, fields: list[tuple[str, object]], raw_fields
             lines.append(f"|{key}={wiki_template_value(value)}")
     lines.append("}}")
     return lines
+
+
+def normalize_redundant_vocomipedia_template_braces(source: str) -> str:
+    """Recover generated templates accidentally wrapped in doubled braces.
+
+    Normalize only complete, line-oriented Vocomipedia templates so ordinary
+    wikitext and the embedded canonical JSON remain untouched.
+    """
+    pattern = re.compile(
+        r"(?ms)^\{\{\{\{(?P<name>VocomipediaItem|VocomipediaSentence|VocomipediaToken)(?=\n|\|)"
+        r"(?P<body>.*?)^\}\}\}\}\s*$"
+    )
+    return pattern.sub(lambda match: "{{" + match.group("name") + match.group("body") + "}}", source)
 
 
 def find_template_calls(source: str, names: set[str] | None = None) -> list[tuple[str, str]]:
@@ -590,6 +612,7 @@ def render_item_page(item: dict, entry_image: str | None = None) -> str:
 
 
 def extract_item_json(source: str) -> dict | None:
+    source = normalize_redundant_vocomipedia_template_braces(source)
     pattern = rf"<!--\s*{re.escape(JSON_START)}\s*(.*?)\s*{re.escape(JSON_END)}\s*-->"
     match = re.search(pattern, source, flags=re.S)
     if not match:
@@ -637,17 +660,78 @@ def apply_template_page_edits(source: str, item: dict) -> dict:
     item_params = by_name[ITEM_TEMPLATE][0]
     require_same(item_params, "id", item.get("id"), str(item.get("id", "<unknown>")))
     require_same(item_params, "pack_code", item.get("pack_code"), str(item.get("id", "<unknown>")))
-    require_same(item_params, "entry_id", item.get("entry_id"), str(item.get("id", "<unknown>")))
+    item_entry_id = str(item.get("entry_id") or "")
+    page_entry_id = str(item_params.get("entry_id") or "")
+    language = str(updated.get("language") or "")
+    headword_source = item_params.get("headword_ruby", "").strip()
+    if language == "ja":
+        ruby_headword_surface, _spans = parse_ruby_text(headword_source)
+    else:
+        ruby_headword_surface = headword_source
+    explicit_headword = item_params.get("headword", "").strip()
+    kana_punctuation = "。、！？・「」『』（）…"
+
+    def kana_reading(value: str) -> str:
+        normalized = to_hiragana(value)
+        if normalized and all(is_kana(char) or char in kana_punctuation for char in normalized):
+            return normalized
+        return ""
+
+    kana_entry_reading = kana_reading(page_entry_id)
+    explicit_headword_reading = kana_reading(explicit_headword)
+    is_kana_entry_reading = bool(kana_entry_reading)
+
+    # Older approved Japanese form edits sometimes copied an updated headword
+    # into the hidden entry_id field. The item id is hash-based and remains
+    # canonical; accept the headword edit only when the changed entry_id matches
+    # a visible headword or is a kana-only reading, and never copy it into the
+    # canonical entry_id.
+    entry_id_is_japanese_headword_alias = (
+        language == "ja"
+        and page_entry_id != item_entry_id
+        and bool(page_entry_id)
+        and (
+            (bool(ruby_headword_surface) and page_entry_id == ruby_headword_surface)
+            or (bool(explicit_headword) and page_entry_id == explicit_headword)
+            or (is_kana_entry_reading and any(is_kanji(char) for char in explicit_headword))
+        )
+    )
+    if not entry_id_is_japanese_headword_alias:
+        require_same(item_params, "entry_id", item_entry_id, str(item.get("id", "<unknown>")))
+
     if "headword_ruby" in item_params:
-        headword_source = item_params["headword_ruby"].strip()
-        if str(updated.get("language") or "") == "ja":
-            headword_surface, _spans = parse_ruby_text(headword_source)
-        else:
-            headword_surface = headword_source
+        headword_surface = ruby_headword_surface
+        headword_reading = reading_from_ruby_text(headword_source)
+        if entry_id_is_japanese_headword_alias and explicit_headword:
+            if explicit_headword_reading:
+                headword_surface = explicit_headword
+                headword_reading = explicit_headword_reading
+            elif is_kana_entry_reading and any(is_kanji(char) for char in explicit_headword):
+                headword_surface = explicit_headword
+                headword_reading = kana_entry_reading
+            elif (
+                ruby_headword_surface
+                and len(ruby_headword_surface) == len(explicit_headword)
+                and all(
+                    old_char == new_char or (is_kanji(old_char) and is_kanji(new_char))
+                    for old_char, new_char in zip(ruby_headword_surface, explicit_headword)
+                )
+            ):
+                headword_surface = explicit_headword
+            elif explicit_headword != ruby_headword_surface:
+                analysis = analyze_sentence(language, explicit_headword)
+                confidence_values = {
+                    str(token.get("ruby_confidence") or "")
+                    for token in analysis.tokens
+                    if isinstance(token, dict)
+                }
+                if analysis.reading and confidence_values and confidence_values <= {"high", "medium"}:
+                    headword_surface = explicit_headword
+                    headword_reading = analysis.reading
         if headword_surface:
             updated["headword"] = headword_surface
-            if str(updated.get("language") or "") == "ja":
-                updated["reading"] = reading_from_ruby_text(headword_source)
+            if language == "ja":
+                updated["reading"] = headword_reading
     glosses = updated.setdefault("glosses", {})
     if not isinstance(glosses, dict):
         glosses = {}
