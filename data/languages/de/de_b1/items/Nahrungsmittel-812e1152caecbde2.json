@@ -61,7 +61,7 @@
         "he": "אני קונה מצרכים בסופר.",
         "tr": "Süpermarkette alışveriş yapıyorum.",
         "vi": "Tôi đang mua đồ ăn ở siêu thị.",
-        "ar": "أنا أشتري البقالة من السوبرमारكت.",
+        "ar": "أنا أشتري البقالة من السوبرماركت.",
         "nl": "Ik koop boodschappen in de supermarkt.",
         "uk": "Я купую продукти в супермаркеті.",
         "hu": "Élelmiszert veszek a szupermarketben.",
@@ -240,8 +240,8 @@
         "he": "המצרכים די יקרים היום.",
         "tr": "Bugün market alışverişi epey pahalı.",
         "vi": "Hôm nay đồ ăn khá đắt.",
-        "ar": "المواد الغذائية היום غالية نوعًا ما.",
-        "nl": "Boodschappen jsou vandaag best duur.",
+        "ar": "المواد الغذائية غالية نوعًا ما اليوم.",
+        "nl": "De boodschappen zijn vandaag best duur.",
         "uk": "Продукти сьогодні досить дорогі.",
         "hu": "Ma elég drágák az élelmiszerek.",
         "hi": "आज किराना काफ़ी महंगा है.",
@@ -316,12 +316,12 @@
       "difficulty": 7.17
     },
     {
-      "target": "Beim Kochen fehlen mir einige Nahrungsmittel.",
+      "target": "Beim Kochen fehlen mir einige Zutaten.",
       "reading": "/baɪ̯m ˈkɔxn̩ ˈfeːlən miːɐ̯ ˈaɪ̯nɪɡə ˈnaːʁʊŋsˌmɪtl̩/",
       "translations": {
-        "de": "Beim Kochen fehlen mir einige Nahrungsmittel.",
+        "de": "Beim Kochen fehlen mir einige Zutaten.",
         "ipa": "/baɪ̯m ˈkɔxn̩ ˈfeːlən miːɐ̯ ˈaɪ̯nɪɡə ˈnaːʁʊŋsˌmɪtl̩/",
-        "en": "While cooking, I’m missing some food.",
+        "en": "I’m missing some ingredients while cooking.",
         "es": "Mientras cocino, me faltan algunos ingredientes.",
         "fr": "Pendant que je cuisine, il me manque quelques ingrédients.",
         "it": "Mentre cucino, mi mancano alcuni ingredienti.",
@@ -334,7 +334,7 @@
         "tr": "Yemek yaparken bazı malzemelerim eksik.",
         "vi": "Khi nấu ăn, tôi thiếu vài nguyên liệu.",
         "ar": "أثناء الطهي، تنقصني بعض المكونات.",
-        "nl": "Tijdens het koken mis ich een paar ingrediënten.",
+        "nl": "Tijdens het koken mis ik een paar ingrediënten.",
         "uk": "Під час готування мені бракує кількох інгредієнтів.",
         "hu": "Főzés közben hiányzik néhány hozzávaló.",
         "hi": "खाना बनाते समय कुछ सामग्री कम पड़ रही है.",
@@ -352,58 +352,80 @@
       "tokens": [
         {
           "surface": "Beim",
-          "surface_en": "at the",
-          "furigana": "[baɪ̯m]",
-          "pos": "ADP",
           "lemma": "bei",
-          "explanation": "Fused preposition + article ('bei dem'); introduces a dative prepositional phrase (temporal/locative).",
-          "difficulty": 2
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "APPRART",
+          "feats": {},
+          "start": 0,
+          "end": 4,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "Kochen",
-          "surface_en": "cooking",
-          "furigana": "[ˈkɔxn̩]",
+          "lemma": "kochen",
           "pos": "NOUN",
-          "lemma": "Kochen",
-          "explanation": "Deverbal noun; head of the PP governed by 'beim', in dative singular.",
-          "difficulty": 7
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 5,
+          "end": 11,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "fehlen",
-          "surface_en": "are missing",
-          "furigana": "[ˈfeːlən]",
-          "pos": "VERB",
           "lemma": "fehlen",
-          "explanation": "Finite verb, present 3pl; impersonal/intransitive usage taking a nominative subject and a dative experiencer.",
-          "difficulty": 7
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VVFIN",
+          "feats": {},
+          "start": 12,
+          "end": 18,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "mir",
-          "surface_en": "to me",
-          "furigana": "[miːɐ̯]",
+          "lemma": "mir",
           "pos": "PRON",
-          "lemma": "ich",
-          "explanation": "Personal pronoun, 1st person singular dative; indirect object/experiencer.",
-          "difficulty": 4
+          "upos": "PRON",
+          "xpos": "PPER",
+          "feats": {},
+          "start": 19,
+          "end": 22,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "einige",
-          "surface_en": "some",
-          "furigana": "[ˈaɪnɪɡə]",
+          "lemma": "einiger",
           "pos": "DET",
-          "lemma": "einige",
-          "explanation": "Determiner; nominative plural modifying the subject noun.",
-          "difficulty": 7
+          "upos": "DET",
+          "xpos": "PIAT",
+          "feats": {},
+          "start": 23,
+          "end": 29,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "Nahrungsmittel.",
-          "surface_en": "foodstuffs",
-          "furigana": "[ˈnaːʁʊŋsˌmɪtl̩]",
+          "surface": "Zutaten",
+          "lemma": "Zutat",
           "pos": "NOUN",
-          "lemma": "Nahrungsmittel",
-          "explanation": "Plural noun; subject (nominative) of 'fehlen'.",
-          "difficulty": 10,
-          "is_main_word": true
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 30,
+          "end": 37,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 37,
+          "end": 38,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 6.17
@@ -420,8 +442,292 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-15T02:15:54Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:De b1/812e1152caecbde2",
+      "revision_id": 85195,
+      "parent_revision_id": 17120,
+      "revision_timestamp_utc": "2026-10-15T02:15:54Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Removed mixed-script fragments, corrected two Dutch typos, and used the natural German term for ingredients in the cooking sentence.",
+      "pulled_utc": "2026-10-17T07:06:40Z",
+      "applied_utc": "2026-10-17T07:06:50Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-b7b04c6d9cebb20d",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_b1:812e1152caecbde2",
+        "pack_code": "de_b1",
+        "entry_id": "Nahrungsmittel",
+        "language": "de",
+        "sentence_index": 4,
+        "old_sentence": "Beim Kochen fehlen mir einige Nahrungsmittel.",
+        "old_translations": {
+          "de": "Beim Kochen fehlen mir einige Nahrungsmittel.",
+          "ipa": "/baɪ̯m ˈkɔxn̩ ˈfeːlən miːɐ̯ ˈaɪ̯nɪɡə ˈnaːʁʊŋsˌmɪtl̩/",
+          "en": "While cooking, I’m missing some food.",
+          "es": "Mientras cocino, me faltan algunos ingredientes.",
+          "fr": "Pendant que je cuisine, il me manque quelques ingrédients.",
+          "it": "Mentre cucino, mi mancano alcuni ingredienti.",
+          "ko": "요리하는 중에 재료가 몇 가지 부족해요.",
+          "zh-Hans": "做饭时我缺了些食材。",
+          "yue": "煮嘢食嗰陣我缺咗幾樣材料。",
+          "ru": "Когда готовлю, мне не хватает некоторых ингредиентов.",
+          "pt": "Enquanto cozinho, faltam alguns ingredientes.",
+          "he": "כשאני מבשל, חסרים לי כמה מצרכים.",
+          "tr": "Yemek yaparken bazı malzemelerim eksik.",
+          "vi": "Khi nấu ăn, tôi thiếu vài nguyên liệu.",
+          "ar": "أثناء الطهي، تنقصني بعض المكونات.",
+          "nl": "Tijdens het koken mis ich een paar ingrediënten.",
+          "uk": "Під час готування мені бракує кількох інгредієнтів.",
+          "hu": "Főzés közben hiányzik néhány hozzávaló.",
+          "hi": "खाना बनाते समय कुछ सामग्री कम पड़ रही है.",
+          "pl": "Podczas gotowania brakuje mi kilku składników.",
+          "el": "Την ώρα που μαγειρεύω, μου λείπουν μερικά υλικά.",
+          "nb": "Når jeg lager mat, mangler jeg noen ingredienser.",
+          "id": "Saat memasak, saya kekurangan beberapa bahan.",
+          "sv": "När jag lagar mat saknar jag några ingredienser.",
+          "ro": "Când gătesc, îmi lipsesc câteva ingrediente.",
+          "cs": "Při vaření mi chybí některé suroviny.",
+          "da": "Når jeg laver mad, mangler jeg nogle ingredienser.",
+          "fi": "Kun laitan ruokaa, minulta puuttuu joitakin aineksia.",
+          "ja": "料理中にいくつかの材料が足りません。"
+        },
+        "proposed_sentence": "Beim Kochen fehlen mir einige Zutaten.",
+        "proposed_translations": {
+          "de": "Beim Kochen fehlen mir einige Zutaten.",
+          "ipa": "/baɪ̯m ˈkɔxn̩ ˈfeːlən miːɐ̯ ˈaɪ̯nɪɡə ˈnaːʁʊŋsˌmɪtl̩/",
+          "en": "I’m missing some ingredients while cooking.",
+          "es": "Mientras cocino, me faltan algunos ingredientes.",
+          "fr": "Pendant que je cuisine, il me manque quelques ingrédients.",
+          "it": "Mentre cucino, mi mancano alcuni ingredienti.",
+          "ko": "요리하는 중에 재료가 몇 가지 부족해요.",
+          "zh-Hans": "做饭时我缺了些食材。",
+          "yue": "煮嘢食嗰陣我缺咗幾樣材料。",
+          "ru": "Когда готовлю, мне не хватает некоторых ингредиентов.",
+          "pt": "Enquanto cozinho, faltam alguns ingredientes.",
+          "he": "כשאני מבשל, חסרים לי כמה מצרכים.",
+          "tr": "Yemek yaparken bazı malzemelerim eksik.",
+          "vi": "Khi nấu ăn, tôi thiếu vài nguyên liệu.",
+          "ar": "أثناء الطهي، تنقصني بعض المكونات.",
+          "nl": "Tijdens het koken mis ik een paar ingrediënten.",
+          "uk": "Під час готування мені бракує кількох інгредієнтів.",
+          "hu": "Főzés közben hiányzik néhány hozzávaló.",
+          "hi": "खाना बनाते समय कुछ सामग्री कम पड़ रही है.",
+          "pl": "Podczas gotowania brakuje mi kilku składników.",
+          "el": "Την ώρα που μαγειρεύω, μου λείπουν μερικά υλικά.",
+          "nb": "Når jeg lager mat, mangler jeg noen ingredienser.",
+          "id": "Saat memasak, saya kekurangan beberapa bahan.",
+          "sv": "När jag lagar mat saknar jag några ingredienser.",
+          "ro": "Când gătesc, îmi lipsesc câteva ingrediente.",
+          "cs": "Při vaření mi chybí některé suroviny.",
+          "da": "Når jeg laver mad, mangler jeg nogle ingredienser.",
+          "fi": "Kun laitan ruokaa, minulta puuttuu joitakin aineksia.",
+          "ja": "料理中にいくつかの材料が足りません。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Beim Kochen fehlen mir einige Zutaten.",
+        "old_japanese": "Beim Kochen fehlen mir einige Nahrungsmittel.",
+        "old_english": "While cooking, I’m missing some food.",
+        "proposed_japanese": "Beim Kochen fehlen mir einige Zutaten.",
+        "proposed_english": "I’m missing some ingredients while cooking.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Beim Kochen fehlen mir einige Zutaten.",
+          "tokens": [
+            {
+              "surface": "Beim",
+              "lemma": "bei",
+              "pos": "ADP",
+              "upos": "ADP",
+              "xpos": "APPRART",
+              "feats": {},
+              "start": 0,
+              "end": 4,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Kochen",
+              "lemma": "kochen",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 5,
+              "end": 11,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "fehlen",
+              "lemma": "fehlen",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVFIN",
+              "feats": {},
+              "start": 12,
+              "end": 18,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "mir",
+              "lemma": "mir",
+              "pos": "PRON",
+              "upos": "PRON",
+              "xpos": "PPER",
+              "feats": {},
+              "start": 19,
+              "end": 22,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "einige",
+              "lemma": "einiger",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "PIAT",
+              "feats": {},
+              "start": 23,
+              "end": 29,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Zutaten",
+              "lemma": "Zutat",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 30,
+              "end": 37,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 37,
+              "end": 38,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Beim",
+            "lemma": "bei",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPRART",
+            "feats": {},
+            "start": 0,
+            "end": 4,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Kochen",
+            "lemma": "kochen",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 5,
+            "end": 11,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "fehlen",
+            "lemma": "fehlen",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 12,
+            "end": 18,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "mir",
+            "lemma": "mir",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 19,
+            "end": 22,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "einige",
+            "lemma": "einiger",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "PIAT",
+            "feats": {},
+            "start": 23,
+            "end": 29,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Zutaten",
+            "lemma": "Zutat",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 30,
+            "end": 37,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 37,
+            "end": 38,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:06:40Z",
+        "updated_utc": "2026-10-17T07:07:06Z",
+        "applied_utc": "2026-10-17T07:07:06Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:07:06Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -433,34 +739,6 @@
     "word": "Nahrungsmittel",
     "word_reading": "",
     "word_label": "Substantiv (das neutr.)",
-    "word_en": "food; foodstuffs",
-    "word_es": "alimento; comida",
-    "word_fr": "aliment; nourriture",
-    "word_it": "alimento; cibo",
-    "word_ko": "식품; 음식",
-    "word_zh-Hans": "食品; 食物",
-    "word_yue": "食物; 食品",
-    "word_ru": "продукты питания; пища",
-    "word_pt": "alimento; comida",
-    "word_he": "מזון; אוכל",
-    "word_tr": "gıda; yiyecek",
-    "word_vi": "thực phẩm; đồ ăn",
-    "word_ar": "غذاء; طعام",
-    "word_nl": "voedsel; levensmiddelen",
-    "word_uk": "їжа; харчі",
-    "word_hu": "élelmiszer; étel",
-    "word_hi": "खाद्य पदार्थ; खाना",
-    "word_pl": "żywność; pokarm",
-    "word_el": "τρόφιμα; τροφή",
-    "word_nb": "mat; næringsmidler",
-    "word_id": "makanan; bahan makanan",
-    "word_sv": "livsmedel; mat",
-    "word_ro": "alimente; hrană",
-    "word_cs": "potraviny; jídlo",
-    "word_da": "fødevarer; mad",
-    "word_fi": "elintarvike; ruoka",
-    "word_ja": "食品; 食べ物",
-    "word_de": "Nahrungsmittel",
     "comic_difficulty": 6.51,
     "jp": [
       "Ich kaufe Nahrungsmittel im Supermarkt ein.",
@@ -473,24 +751,6 @@
       "/eːɐ̯ fɛɐ̯ˈtʁɛːkt ˈaɪ̯nɪɡə ˈnaːʁʊŋsˌmɪtl̩ nɪçt/",
       "/diː ˈnaːʁʊŋsˌmɪtl̩ zɪnt ˈhɔʏ̯tə ˈtsiːmlɪç ˈtɔɪ̯ɐ/",
       "/baɪ̯m ˈkɔxn̩ ˈfeːlən miːɐ̯ ˈaɪ̯nɪɡə ˈnaːʁʊŋsˌmɪtl̩/"
-    ],
-    "de": [
-      "Ich kaufe Nahrungsmittel im Supermarkt ein.",
-      "Er verträgt einige Nahrungsmittel nicht.",
-      "Die Nahrungsmittel sind heute ziemlich teuer.",
-      "Beim Kochen fehlen mir einige Nahrungsmittel."
-    ],
-    "ipa": [
-      "/ɪç ˈkaʊ̯fə ˈnaːʁʊŋsˌmɪtl̩ ɪm ˈzuːpɐmaʁkt aɪ̯n/",
-      "/eːɐ̯ fɛɐ̯ˈtʁɛːkt ˈaɪ̯nɪɡə ˈnaːʁʊŋsˌmɪtl̩ nɪçt/",
-      "/diː ˈnaːʁʊŋsˌmɪtl̩ zɪnt ˈhɔʏ̯tə ˈtsiːmlɪç ˈtɔɪ̯ɐ/",
-      "/baɪ̯m ˈkɔxn̩ ˈfeːlən miːɐ̯ ˈaɪ̯nɪɡə ˈnaːʁʊŋsˌmɪtl̩/"
-    ],
-    "en": [
-      "I’m buying groceries at the supermarket.",
-      "He can’t tolerate some foods.",
-      "The groceries are quite expensive today.",
-      "While cooking, I’m missing some food."
     ],
     "pos_analysis": [
       {
@@ -670,198 +930,124 @@
         "difficulty_aggregated": 7.17
       },
       {
-        "sentence": "Beim Kochen fehlen mir einige Nahrungsmittel.",
+        "sentence": "Beim Kochen fehlen mir einige Zutaten.",
         "tokens": [
           {
             "surface": "Beim",
-            "surface_en": "at the",
-            "furigana": "[baɪ̯m]",
-            "pos": "ADP",
             "lemma": "bei",
-            "explanation": "Fused preposition + article ('bei dem'); introduces a dative prepositional phrase (temporal/locative).",
-            "difficulty": 2
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPRART",
+            "feats": {},
+            "start": 0,
+            "end": 4,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "Kochen",
-            "surface_en": "cooking",
-            "furigana": "[ˈkɔxn̩]",
+            "lemma": "kochen",
             "pos": "NOUN",
-            "lemma": "Kochen",
-            "explanation": "Deverbal noun; head of the PP governed by 'beim', in dative singular.",
-            "difficulty": 7
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 5,
+            "end": 11,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "fehlen",
-            "surface_en": "are missing",
-            "furigana": "[ˈfeːlən]",
-            "pos": "VERB",
             "lemma": "fehlen",
-            "explanation": "Finite verb, present 3pl; impersonal/intransitive usage taking a nominative subject and a dative experiencer.",
-            "difficulty": 7
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 12,
+            "end": 18,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "mir",
-            "surface_en": "to me",
-            "furigana": "[miːɐ̯]",
+            "lemma": "mir",
             "pos": "PRON",
-            "lemma": "ich",
-            "explanation": "Personal pronoun, 1st person singular dative; indirect object/experiencer.",
-            "difficulty": 4
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 19,
+            "end": 22,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "einige",
-            "surface_en": "some",
-            "furigana": "[ˈaɪnɪɡə]",
+            "lemma": "einiger",
             "pos": "DET",
-            "lemma": "einige",
-            "explanation": "Determiner; nominative plural modifying the subject noun.",
-            "difficulty": 7
+            "upos": "DET",
+            "xpos": "PIAT",
+            "feats": {},
+            "start": 23,
+            "end": 29,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "Nahrungsmittel.",
-            "surface_en": "foodstuffs",
-            "furigana": "[ˈnaːʁʊŋsˌmɪtl̩]",
+            "surface": "Zutaten",
+            "lemma": "Zutat",
             "pos": "NOUN",
-            "lemma": "Nahrungsmittel",
-            "explanation": "Plural noun; subject (nominative) of 'fehlen'.",
-            "difficulty": 10,
-            "is_main_word": true
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 30,
+            "end": 37,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 37,
+            "end": 38,
+            "analyzer": "spacy_de_core_news_lg"
           }
         ],
         "difficulty_aggregated": 6.17
       }
     ],
-    "es": [
-      "Estoy haciendo la compra en el supermercado.",
-      "No tolera ciertos alimentos.",
-      "La comida está bastante cara hoy.",
-      "Mientras cocino, me faltan algunos ingredientes."
-    ],
-    "fr": [
-      "Je fais les courses au supermarché.",
-      "Il ne supporte pas certains aliments.",
-      "Les courses sont assez chères aujourd’hui.",
-      "Pendant que je cuisine, il me manque quelques ingrédients."
-    ],
-    "it": [
-      "Sto facendo la spesa al supermercato.",
-      "Non tollera alcuni cibi.",
-      "La spesa è piuttosto cara oggi.",
-      "Mentre cucino, mi mancano alcuni ingredienti."
-    ],
-    "ko": [
-      "마트에서 장을 보고 있어요.",
-      "그는 어떤 음식은 잘 못 먹어요.",
-      "오늘 식료품이 꽤 비싸요.",
-      "요리하는 중에 재료가 몇 가지 부족해요."
-    ],
-    "zh-Hans": [
-      "我在超市买菜。",
-      "他有些食物吃不了。",
-      "今天买菜挺贵的。",
-      "做饭时我缺了些食材。"
-    ],
-    "yue": [
-      "我喺超市買餸。",
-      "佢有啲食物食唔到。",
-      "今日買餸幾貴。",
-      "煮嘢食嗰陣我缺咗幾樣材料。"
-    ],
-    "ru": [
-      "Я покупаю продукты в супермаркете.",
-      "Он не переносит некоторые продукты.",
-      "Продукты сегодня довольно дорогие.",
-      "Когда готовлю, мне не хватает некоторых ингредиентов."
-    ],
-    "pt": [
-      "Estou comprando comida no supermercado.",
-      "Ele não tolera alguns alimentos.",
-      "As compras estão bem caras hoje.",
-      "Enquanto cozinho, faltam alguns ingredientes."
-    ],
-    "he": [
-      "אני קונה מצרכים בסופר.",
-      "הוא לא יכול לאכול כמה מאכלים.",
-      "המצרכים די יקרים היום.",
-      "כשאני מבשל, חסרים לי כמה מצרכים."
-    ],
-    "tr": [
-      "Süpermarkette alışveriş yapıyorum.",
-      "Bazı yiyecekleri yiyemiyor.",
-      "Bugün market alışverişi epey pahalı.",
-      "Yemek yaparken bazı malzemelerim eksik."
-    ],
-    "vi": [
-      "Tôi đang mua đồ ăn ở siêu thị.",
-      "Anh ấy không chịu được một số loại thực phẩm.",
-      "Hôm nay đồ ăn khá đắt.",
-      "Khi nấu ăn, tôi thiếu vài nguyên liệu."
-    ],
+    "word_POS": "Noun",
+    "entry_id": "Nahrungsmittel",
+    "word_en": "food; foodstuffs",
+    "word_es": "alimento; comida",
+    "word_fr": "aliment; nourriture",
+    "word_it": "alimento; cibo",
+    "word_ko": "식품; 음식",
+    "word_zh-Hans": "食品; 食物",
+    "word_yue": "食物; 食品",
+    "word_ru": "продукты питания; пища",
+    "word_pt": "alimento; comida",
+    "word_he": "מזון; אוכל",
+    "word_tr": "gıda; yiyecek",
+    "word_vi": "thực phẩm; đồ ăn",
+    "word_ar": "غذاء; طعام",
+    "word_nl": "voedsel; levensmiddelen",
+    "word_uk": "їжа; харчі",
+    "word_hu": "élelmiszer; étel",
+    "word_hi": "खाद्य पदार्थ; खाना",
+    "word_pl": "żywność; pokarm",
+    "word_el": "τρόφιμα; τροφή",
+    "word_nb": "mat; næringsmidler",
+    "word_id": "makanan; bahan makanan",
+    "word_sv": "livsmedel; mat",
+    "word_ro": "alimente; hrană",
+    "word_cs": "potraviny; jídlo",
+    "word_da": "fødevarer; mad",
+    "word_fi": "elintarvike; ruoka",
+    "word_ja": "食品; 食べ物",
+    "word_de": "Nahrungsmittel",
     "ar": [
-      "أنا أشتري البقالة من السوبرमारكت.",
+      "أنا أشتري البقالة من السوبرماركت.",
       "هو لا يتحمل بعض الأطعمة.",
-      "المواد الغذائية היום غالية نوعًا ما.",
+      "المواد الغذائية غالية نوعًا ما اليوم.",
       "أثناء الطهي، تنقصني بعض المكونات."
-    ],
-    "nl": [
-      "Ik koop boodschappen in de supermarkt.",
-      "Hij verdraagt sommige etenswaren niet.",
-      "Boodschappen jsou vandaag best duur.",
-      "Tijdens het koken mis ich een paar ingrediënten."
-    ],
-    "uk": [
-      "Я купую продукти в супермаркеті.",
-      "Він не переносить деякі продукти.",
-      "Продукти сьогодні досить дорогі.",
-      "Під час готування мені бракує кількох інгредієнтів."
-    ],
-    "hu": [
-      "Élelmiszert veszek a szupermarketben.",
-      "Nem bírja egyes ételeket.",
-      "Ma elég drágák az élelmiszerek.",
-      "Főzés közben hiányzik néhány hozzávaló."
-    ],
-    "hi": [
-      "मैं सुपरमार्केट में किराना खरीद रहा हूँ.",
-      "वह कुछ खाद्य पदार्थों को सहन नहीं कर पाता.",
-      "आज किराना काफ़ी महंगा है.",
-      "खाना बनाते समय कुछ सामग्री कम पड़ रही है."
-    ],
-    "pl": [
-      "Robię zakupy w supermarkecie.",
-      "Nie toleruje niektórych produktów.",
-      "Dziś zakupy są dość drogie.",
-      "Podczas gotowania brakuje mi kilku składników."
-    ],
-    "el": [
-      "Ψωνίζω στο σούπερ μάρκετ.",
-      "Δεν ανέχεται ορισμένα τρόφιμα.",
-      "Τα ψώνια είναι αρκετά ακριβά σήμερα.",
-      "Την ώρα που μαγειρεύω, μου λείπουν μερικά υλικά."
-    ],
-    "nb": [
-      "Jeg handler dagligvarer i supermarkedet.",
-      "Han tåler ikke enkelte matvarer.",
-      "Dagligvarene er ganske dyre i dag.",
-      "Når jeg lager mat, mangler jeg noen ingredienser."
-    ],
-    "id": [
-      "Saya sedang belanja bahan makanan di supermarket.",
-      "Dia tidak bisa makan beberapa makanan.",
-      "Hari ini bahan makanan cukup mahal.",
-      "Saat memasak, saya kekurangan beberapa bahan."
-    ],
-    "sv": [
-      "Jag handlar mat i mataffären.",
-      "Han tål inte vissa livsmedel.",
-      "Matvarorna är ganska dyra i dag.",
-      "När jag lagar mat saknar jag några ingredienser."
-    ],
-    "ro": [
-      "Cumpăr alimente de la supermarket.",
-      "El nu tolerează unele alimente.",
-      "Alimentele sunt destul de scumpe astăzi.",
-      "Când gătesc, îmi lipsesc câteva ingrediente."
     ],
     "cs": [
       "Nakupuji potraviny v supermarketu.",
@@ -875,11 +1061,77 @@
       "Dagligvarerne er ret dyre i dag.",
       "Når jeg laver mad, mangler jeg nogle ingredienser."
     ],
+    "de": [
+      "Ich kaufe Nahrungsmittel im Supermarkt ein.",
+      "Er verträgt einige Nahrungsmittel nicht.",
+      "Die Nahrungsmittel sind heute ziemlich teuer.",
+      "Beim Kochen fehlen mir einige Nahrungsmittel."
+    ],
+    "el": [
+      "Ψωνίζω στο σούπερ μάρκετ.",
+      "Δεν ανέχεται ορισμένα τρόφιμα.",
+      "Τα ψώνια είναι αρκετά ακριβά σήμερα.",
+      "Την ώρα που μαγειρεύω, μου λείπουν μερικά υλικά."
+    ],
+    "en": [
+      "I’m buying groceries at the supermarket.",
+      "He can’t tolerate some foods.",
+      "The groceries are quite expensive today.",
+      "While cooking, I’m missing some food."
+    ],
+    "es": [
+      "Estoy haciendo la compra en el supermercado.",
+      "No tolera ciertos alimentos.",
+      "La comida está bastante cara hoy.",
+      "Mientras cocino, me faltan algunos ingredientes."
+    ],
     "fi": [
       "Ostan ruokaa supermarketissa.",
       "Hän ei siedä joitakin ruokia.",
       "Ruoka on tänään aika kallista.",
       "Kun laitan ruokaa, minulta puuttuu joitakin aineksia."
+    ],
+    "fr": [
+      "Je fais les courses au supermarché.",
+      "Il ne supporte pas certains aliments.",
+      "Les courses sont assez chères aujourd’hui.",
+      "Pendant que je cuisine, il me manque quelques ingrédients."
+    ],
+    "he": [
+      "אני קונה מצרכים בסופר.",
+      "הוא לא יכול לאכול כמה מאכלים.",
+      "המצרכים די יקרים היום.",
+      "כשאני מבשל, חסרים לי כמה מצרכים."
+    ],
+    "hi": [
+      "मैं सुपरमार्केट में किराना खरीद रहा हूँ.",
+      "वह कुछ खाद्य पदार्थों को सहन नहीं कर पाता.",
+      "आज किराना काफ़ी महंगा है.",
+      "खाना बनाते समय कुछ सामग्री कम पड़ रही है."
+    ],
+    "hu": [
+      "Élelmiszert veszek a szupermarketben.",
+      "Nem bírja egyes ételeket.",
+      "Ma elég drágák az élelmiszerek.",
+      "Főzés közben hiányzik néhány hozzávaló."
+    ],
+    "id": [
+      "Saya sedang belanja bahan makanan di supermarket.",
+      "Dia tidak bisa makan beberapa makanan.",
+      "Hari ini bahan makanan cukup mahal.",
+      "Saat memasak, saya kekurangan beberapa bahan."
+    ],
+    "ipa": [
+      "/ɪç ˈkaʊ̯fə ˈnaːʁʊŋsˌmɪtl̩ ɪm ˈzuːpɐmaʁkt aɪ̯n/",
+      "/eːɐ̯ fɛɐ̯ˈtʁɛːkt ˈaɪ̯nɪɡə ˈnaːʁʊŋsˌmɪtl̩ nɪçt/",
+      "/diː ˈnaːʁʊŋsˌmɪtl̩ zɪnt ˈhɔʏ̯tə ˈtsiːmlɪç ˈtɔɪ̯ɐ/",
+      "/baɪ̯m ˈkɔxn̩ ˈfeːlən miːɐ̯ ˈaɪ̯nɪɡə ˈnaːʁʊŋsˌmɪtl̩/"
+    ],
+    "it": [
+      "Sto facendo la spesa al supermercato.",
+      "Non tollera alcuni cibi.",
+      "La spesa è piuttosto cara oggi.",
+      "Mentre cucino, mi mancano alcuni ingredienti."
     ],
     "ja": [
       "スーパーで食料品を買っています。",
@@ -887,6 +1139,83 @@
       "今日は食料品がけっこう高いです。",
       "料理中にいくつかの材料が足りません。"
     ],
-    "word_POS": "Noun"
+    "ko": [
+      "마트에서 장을 보고 있어요.",
+      "그는 어떤 음식은 잘 못 먹어요.",
+      "오늘 식료품이 꽤 비싸요.",
+      "요리하는 중에 재료가 몇 가지 부족해요."
+    ],
+    "nb": [
+      "Jeg handler dagligvarer i supermarkedet.",
+      "Han tåler ikke enkelte matvarer.",
+      "Dagligvarene er ganske dyre i dag.",
+      "Når jeg lager mat, mangler jeg noen ingredienser."
+    ],
+    "nl": [
+      "Ik koop boodschappen in de supermarkt.",
+      "Hij verdraagt sommige etenswaren niet.",
+      "De boodschappen zijn vandaag best duur.",
+      "Tijdens het koken mis ich een paar ingrediënten."
+    ],
+    "pl": [
+      "Robię zakupy w supermarkecie.",
+      "Nie toleruje niektórych produktów.",
+      "Dziś zakupy są dość drogie.",
+      "Podczas gotowania brakuje mi kilku składników."
+    ],
+    "pt": [
+      "Estou comprando comida no supermercado.",
+      "Ele não tolera alguns alimentos.",
+      "As compras estão bem caras hoje.",
+      "Enquanto cozinho, faltam alguns ingredientes."
+    ],
+    "ro": [
+      "Cumpăr alimente de la supermarket.",
+      "El nu tolerează unele alimente.",
+      "Alimentele sunt destul de scumpe astăzi.",
+      "Când gătesc, îmi lipsesc câteva ingrediente."
+    ],
+    "ru": [
+      "Я покупаю продукты в супермаркете.",
+      "Он не переносит некоторые продукты.",
+      "Продукты сегодня довольно дорогие.",
+      "Когда готовлю, мне не хватает некоторых ингредиентов."
+    ],
+    "sv": [
+      "Jag handlar mat i mataffären.",
+      "Han tål inte vissa livsmedel.",
+      "Matvarorna är ganska dyra i dag.",
+      "När jag lagar mat saknar jag några ingredienser."
+    ],
+    "tr": [
+      "Süpermarkette alışveriş yapıyorum.",
+      "Bazı yiyecekleri yiyemiyor.",
+      "Bugün market alışverişi epey pahalı.",
+      "Yemek yaparken bazı malzemelerim eksik."
+    ],
+    "uk": [
+      "Я купую продукти в супермаркеті.",
+      "Він не переносить деякі продукти.",
+      "Продукти сьогодні досить дорогі.",
+      "Під час готування мені бракує кількох інгредієнтів."
+    ],
+    "vi": [
+      "Tôi đang mua đồ ăn ở siêu thị.",
+      "Anh ấy không chịu được một số loại thực phẩm.",
+      "Hôm nay đồ ăn khá đắt.",
+      "Khi nấu ăn, tôi thiếu vài nguyên liệu."
+    ],
+    "yue": [
+      "我喺超市買餸。",
+      "佢有啲食物食唔到。",
+      "今日買餸幾貴。",
+      "煮嘢食嗰陣我缺咗幾樣材料。"
+    ],
+    "zh-Hans": [
+      "我在超市买菜。",
+      "他有些食物吃不了。",
+      "今天买菜挺贵的。",
+      "做饭时我缺了些食材。"
+    ]
   }
 }

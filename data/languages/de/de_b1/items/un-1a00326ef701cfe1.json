@@ -230,12 +230,12 @@
       "difficulty": 5.57
     },
     {
-      "target": "Man nutzt „un-“ als Vorsilbe für Gegenteile.",
+      "target": "Man nutzt „un-“ als Vorsilbe, um das Gegenteil auszudrücken.",
       "reading": "/man nʊtst ʊn als ˈfoːɐ̯ˌzɪlbə fyːɐ ˈɡeːɡn̩taɪlə./",
       "translations": {
-        "de": "Man nutzt „un-“ als Vorsilbe für Gegenteile.",
+        "de": "Man nutzt „un-“ als Vorsilbe, um das Gegenteil auszudrücken.",
         "ipa": "/man nʊtst ʊn als ˈfoːɐ̯ˌzɪlbə fyːɐ ˈɡeːɡn̩taɪlə./",
-        "en": "People use 'un-' as a prefix for opposites.",
+        "en": "People use 'un-' as a prefix to express the opposite.",
         "es": "Se usa un- como prefijo para formar antónimos.",
         "fr": "On utilise un- comme préfixe pour former des contraires.",
         "it": "Si usa un- come prefisso per formare i contrari.",
@@ -266,67 +266,147 @@
       "tokens": [
         {
           "surface": "Man",
-          "surface_en": "one",
-          "furigana": "[man]",
-          "pos": "PRON",
           "lemma": "man",
-          "explanation": "Impersonal pronoun; generic subject.",
-          "difficulty": 2
+          "pos": "PRON",
+          "upos": "PRON",
+          "xpos": "PIS",
+          "feats": {},
+          "start": 0,
+          "end": 3,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "nutzt",
-          "surface_en": "uses",
-          "furigana": "[nʊtst]",
-          "pos": "VERB",
           "lemma": "nutzen",
-          "explanation": "Finite main verb, 3rd person singular, present.",
-          "difficulty": 7
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VVFIN",
+          "feats": {},
+          "start": 4,
+          "end": 9,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "„",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$(",
+          "feats": {},
+          "start": 10,
+          "end": 11,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "un-",
-          "surface_en": "un-",
-          "furigana": "[ʊn]",
-          "pos": "NOUN",
-          "lemma": "un-",
-          "explanation": "Quoted bound morpheme; thing being used (object of 'nutzt').",
-          "difficulty": 4,
+          "lemma": "un",
+          "pos": "X",
+          "upos": "X",
+          "xpos": "TRUNC",
+          "feats": {},
+          "start": 11,
+          "end": 14,
+          "analyzer": "spacy_de_core_news_lg",
           "is_main_word": true
         },
         {
+          "surface": "“",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$(",
+          "feats": {},
+          "start": 14,
+          "end": 15,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
           "surface": "als",
-          "surface_en": "as",
-          "furigana": "[als]",
-          "pos": "SCONJ",
           "lemma": "als",
-          "explanation": "Linker 'as' introducing a predicative classification.",
-          "difficulty": 2
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "APPR",
+          "feats": {},
+          "start": 16,
+          "end": 19,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "Vorsilbe",
-          "surface_en": "prefix",
-          "furigana": "[ˈfoːɐ̯zɪlbə]",
-          "pos": "NOUN",
           "lemma": "Vorsilbe",
-          "explanation": "Common noun; predicative complement with 'als' specifying the role of 'un-'.",
-          "difficulty": 10
-        },
-        {
-          "surface": "für",
-          "surface_en": "for",
-          "furigana": "[fyːɐ̯]",
-          "pos": "ADP",
-          "lemma": "für",
-          "explanation": "Preposition governing accusative; introduces purpose/target.",
-          "difficulty": 2
-        },
-        {
-          "surface": "Gegenteile.",
-          "surface_en": "opposites",
-          "furigana": "[ˈɡeːɡn̩ˌtaɪ̯lə]",
           "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 20,
+          "end": 28,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": ",",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$,",
+          "feats": {},
+          "start": 28,
+          "end": 29,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "um",
+          "lemma": "um",
+          "pos": "SCONJ",
+          "upos": "SCONJ",
+          "xpos": "KOUI",
+          "feats": {},
+          "start": 30,
+          "end": 32,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "das",
+          "lemma": "der",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "ART",
+          "feats": {},
+          "start": 33,
+          "end": 36,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "Gegenteil",
           "lemma": "Gegenteil",
-          "explanation": "Common noun, plural accusative; object of 'für'.",
-          "difficulty": 10
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 37,
+          "end": 46,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "auszudrücken",
+          "lemma": "ausdrücken",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VVIZU",
+          "feats": {},
+          "start": 47,
+          "end": 59,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 59,
+          "end": 60,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 5.29
@@ -427,8 +507,424 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-15T04:20:50Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:De b1/1a00326ef701cfe1",
+      "revision_id": 84895,
+      "parent_revision_id": 18136,
+      "revision_timestamp_utc": "2026-10-15T04:20:50Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Make the German and English explanation of the prefix more idiomatic.",
+      "pulled_utc": "2026-10-17T07:06:36Z",
+      "applied_utc": "2026-10-17T07:06:54Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-48021b65025a0d1e",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_b1:1a00326ef701cfe1",
+        "pack_code": "de_b1",
+        "entry_id": "un-",
+        "language": "de",
+        "sentence_index": 3,
+        "old_sentence": "Man nutzt „un-“ als Vorsilbe für Gegenteile.",
+        "old_translations": {
+          "de": "Man nutzt „un-“ als Vorsilbe für Gegenteile.",
+          "ipa": "/man nʊtst ʊn als ˈfoːɐ̯ˌzɪlbə fyːɐ ˈɡeːɡn̩taɪlə./",
+          "en": "People use 'un-' as a prefix for opposites.",
+          "es": "Se usa un- como prefijo para formar antónimos.",
+          "fr": "On utilise un- comme préfixe pour former des contraires.",
+          "it": "Si usa un- come prefisso per formare i contrari.",
+          "ko": "un- 접두사는 반대 의미를 만들 때 사용해요.",
+          "zh-Hans": "人们用前缀 un- 来构成反义词。",
+          "yue": "人會用前綴 un- 嚟構成相反意思嘅詞。",
+          "ru": "Приставку un- используют для образования противоположных слов.",
+          "pt": "Usa-se o prefixo un- para formar antônimos.",
+          "he": "משתמשים בקידומת un- כדי ליצור מילים מנוגדות.",
+          "tr": "un- ön eki zıt anlamlı kelimeler oluşturmak için kullanılır.",
+          "vi": "Tiền tố un- được dùng để tạo từ trái nghĩa.",
+          "ar": "تُستخدم البادئة un- لتكوين كلمات متضادة.",
+          "nl": "Het voorvoegsel un- wordt gebruikt om tegengestelde woorden te vormen.",
+          "uk": "Префікс un- використовують, щоб утворювати протилежні за значенням слова.",
+          "hu": "Az un- előtagot ellentétes jelentésű szavak képzésére használják.",
+          "hi": "un- उपसर्ग का इस्तेमाल विलोम शब्द बनाने के लिए किया जाता है.",
+          "pl": "Przedrostka un- używa się do tworzenia antonimów.",
+          "el": "Το πρόθημα un- χρησιμοποιείται για τον σχηματισμό αντίθετων λέξεων.",
+          "nb": "Prefikset un- brukes for å danne motsatte ord.",
+          "id": "Prefiks un- digunakan untuk membentuk kata yang berlawanan makna.",
+          "sv": "Prefixet un- används för att bilda motsatsord.",
+          "ro": "Prefixul un- este folosit pentru a forma antonime.",
+          "cs": "Předpona un- se používá k tvoření protikladných slov.",
+          "da": "Forstavelsen un- bruges til at danne modsætningsord.",
+          "fi": "Etuliitettä un- käytetään vastakohtaisten sanojen muodostamiseen.",
+          "ja": "接頭辞un-は反対の意味の語を作るために使われます。"
+        },
+        "proposed_sentence": "Man nutzt „un-“ als Vorsilbe, um das Gegenteil auszudrücken.",
+        "proposed_translations": {
+          "de": "Man nutzt „un-“ als Vorsilbe, um das Gegenteil auszudrücken.",
+          "ipa": "/man nʊtst ʊn als ˈfoːɐ̯ˌzɪlbə fyːɐ ˈɡeːɡn̩taɪlə./",
+          "en": "People use 'un-' as a prefix to express the opposite.",
+          "es": "Se usa un- como prefijo para formar antónimos.",
+          "fr": "On utilise un- comme préfixe pour former des contraires.",
+          "it": "Si usa un- come prefisso per formare i contrari.",
+          "ko": "un- 접두사는 반대 의미를 만들 때 사용해요.",
+          "zh-Hans": "人们用前缀 un- 来构成反义词。",
+          "yue": "人會用前綴 un- 嚟構成相反意思嘅詞。",
+          "ru": "Приставку un- используют для образования противоположных слов.",
+          "pt": "Usa-se o prefixo un- para formar antônimos.",
+          "he": "משתמשים בקידומת un- כדי ליצור מילים מנוגדות.",
+          "tr": "un- ön eki zıt anlamlı kelimeler oluşturmak için kullanılır.",
+          "vi": "Tiền tố un- được dùng để tạo từ trái nghĩa.",
+          "ar": "تُستخدم البادئة un- لتكوين كلمات متضادة.",
+          "nl": "Het voorvoegsel un- wordt gebruikt om tegengestelde woorden te vormen.",
+          "uk": "Префікс un- використовують, щоб утворювати протилежні за значенням слова.",
+          "hu": "Az un- előtagot ellentétes jelentésű szavak képzésére használják.",
+          "hi": "un- उपसर्ग का इस्तेमाल विलोम शब्द बनाने के लिए किया जाता है.",
+          "pl": "Przedrostka un- używa się do tworzenia antonimów.",
+          "el": "Το πρόθημα un- χρησιμοποιείται για τον σχηματισμό αντίθετων λέξεων.",
+          "nb": "Prefikset un- brukes for å danne motsatte ord.",
+          "id": "Prefiks un- digunakan untuk membentuk kata yang berlawanan makna.",
+          "sv": "Prefixet un- används för att bilda motsatsord.",
+          "ro": "Prefixul un- este folosit pentru a forma antonime.",
+          "cs": "Předpona un- se používá k tvoření protikladných slov.",
+          "da": "Forstavelsen un- bruges til at danne modsætningsord.",
+          "fi": "Etuliitettä un- käytetään vastakohtaisten sanojen muodostamiseen.",
+          "ja": "接頭辞un-は反対の意味の語を作るために使われます。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Man nutzt „un-“ als Vorsilbe, um das Gegenteil auszudrücken.",
+        "old_japanese": "Man nutzt „un-“ als Vorsilbe für Gegenteile.",
+        "old_english": "People use 'un-' as a prefix for opposites.",
+        "proposed_japanese": "Man nutzt „un-“ als Vorsilbe, um das Gegenteil auszudrücken.",
+        "proposed_english": "People use 'un-' as a prefix to express the opposite.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Man nutzt „un-“ als Vorsilbe, um das Gegenteil auszudrücken.",
+          "tokens": [
+            {
+              "surface": "Man",
+              "lemma": "man",
+              "pos": "PRON",
+              "upos": "PRON",
+              "xpos": "PIS",
+              "feats": {},
+              "start": 0,
+              "end": 3,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "nutzt",
+              "lemma": "nutzen",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVFIN",
+              "feats": {},
+              "start": 4,
+              "end": 9,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "„",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$(",
+              "feats": {},
+              "start": 10,
+              "end": 11,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "un-",
+              "lemma": "un",
+              "pos": "X",
+              "upos": "X",
+              "xpos": "TRUNC",
+              "feats": {},
+              "start": 11,
+              "end": 14,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "“",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$(",
+              "feats": {},
+              "start": 14,
+              "end": 15,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "als",
+              "lemma": "als",
+              "pos": "ADP",
+              "upos": "ADP",
+              "xpos": "APPR",
+              "feats": {},
+              "start": 16,
+              "end": 19,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Vorsilbe",
+              "lemma": "Vorsilbe",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 20,
+              "end": 28,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ",",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$,",
+              "feats": {},
+              "start": 28,
+              "end": 29,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "um",
+              "lemma": "um",
+              "pos": "SCONJ",
+              "upos": "SCONJ",
+              "xpos": "KOUI",
+              "feats": {},
+              "start": 30,
+              "end": 32,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "das",
+              "lemma": "der",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "ART",
+              "feats": {},
+              "start": 33,
+              "end": 36,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Gegenteil",
+              "lemma": "Gegenteil",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 37,
+              "end": 46,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "auszudrücken",
+              "lemma": "ausdrücken",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVIZU",
+              "feats": {},
+              "start": 47,
+              "end": 59,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 59,
+              "end": 60,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Man",
+            "lemma": "man",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PIS",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "nutzt",
+            "lemma": "nutzen",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 4,
+            "end": 9,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "„",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$(",
+            "feats": {},
+            "start": 10,
+            "end": 11,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "un-",
+            "lemma": "un",
+            "pos": "X",
+            "upos": "X",
+            "xpos": "TRUNC",
+            "feats": {},
+            "start": 11,
+            "end": 14,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "“",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$(",
+            "feats": {},
+            "start": 14,
+            "end": 15,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "als",
+            "lemma": "als",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 16,
+            "end": 19,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Vorsilbe",
+            "lemma": "Vorsilbe",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 20,
+            "end": 28,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ",",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$,",
+            "feats": {},
+            "start": 28,
+            "end": 29,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "um",
+            "lemma": "um",
+            "pos": "SCONJ",
+            "upos": "SCONJ",
+            "xpos": "KOUI",
+            "feats": {},
+            "start": 30,
+            "end": 32,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "das",
+            "lemma": "der",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 33,
+            "end": 36,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Gegenteil",
+            "lemma": "Gegenteil",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 37,
+            "end": 46,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "auszudrücken",
+            "lemma": "ausdrücken",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVIZU",
+            "feats": {},
+            "start": 47,
+            "end": 59,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 59,
+            "end": 60,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:06:36Z",
+        "updated_utc": "2026-10-17T07:07:06Z",
+        "applied_utc": "2026-10-17T07:07:06Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:07:06Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -440,34 +936,6 @@
     "word": "un-",
     "word_reading": "",
     "word_label": "Affix",
-    "word_en": "un-; in-/im-/ir-/il-",
-    "word_es": "in-/im-/i-; des-",
-    "word_fr": "in-/im-/il-/ir-; dé-/dés-",
-    "word_it": "in-/im-/ir-/il-; dis-",
-    "word_ko": "비-; 불-",
-    "word_zh-Hans": "不-; 非-",
-    "word_yue": "不-; 非-",
-    "word_ru": "не-; без-/бес-",
-    "word_pt": "in-/im-/i-; des-",
-    "word_he": "בלתי־; אי־",
-    "word_tr": "gayri-; -sız/-siz",
-    "word_vi": "bất-; vô-",
-    "word_ar": "غير-; لا-",
-    "word_nl": "on-; in-",
-    "word_uk": "не-; без-",
-    "word_hu": "-talan/-telen; -atlan/-etlen",
-    "word_hi": "अ-/अन-; बे-",
-    "word_pl": "nie-; bez-",
-    "word_el": "α-/αν-; μη-",
-    "word_nb": "u-; in-/im-",
-    "word_id": "tak-; non-",
-    "word_sv": "o-; in-/im-",
-    "word_ro": "ne-; dez-",
-    "word_cs": "ne-; bez-",
-    "word_da": "u-; in-/im-",
-    "word_fi": "epä-; -ton/-tön",
-    "word_ja": "不-; 非-",
-    "word_de": "un-",
     "comic_difficulty": 5.31,
     "jp": [
       "Der Lehrer erklärt „un-“ heute.",
@@ -480,24 +948,6 @@
       "/ɪç fɛʁˈʃteːə ʊn ɪn ˈdiːzəm vɔʁt nɪçt./",
       "/man nʊtst ʊn als ˈfoːɐ̯ˌzɪlbə fyːɐ ˈɡeːɡn̩taɪlə./",
       "/ɛs ʃteːt ʊn ɪm ˈtiːtl̩./"
-    ],
-    "de": [
-      "Der Lehrer erklärt „un-“ heute.",
-      "Ich verstehe „un-“ in diesem Wort nicht.",
-      "Man nutzt „un-“ als Vorsilbe für Gegenteile.",
-      "Es steht „un-“ im Titel."
-    ],
-    "ipa": [
-      "/deːɐ̯ ˈleːʁɐ ɛʁˈklɛːʁt ʊn ˈhɔʏtə./",
-      "/ɪç fɛʁˈʃteːə ʊn ɪn ˈdiːzəm vɔʁt nɪçt./",
-      "/man nʊtst ʊn als ˈfoːɐ̯ˌzɪlbə fyːɐ ˈɡeːɡn̩taɪlə./",
-      "/ɛs ʃteːt ʊn ɪm ˈtiːtl̩./"
-    ],
-    "en": [
-      "The teacher explains 'un-' today.",
-      "I don’t understand 'un-' in this word.",
-      "People use 'un-' as a prefix for opposites.",
-      "It says 'un-' in the title."
     ],
     "pos_analysis": [
       {
@@ -623,71 +1073,151 @@
         "difficulty_aggregated": 5.57
       },
       {
-        "sentence": "Man nutzt „un-“ als Vorsilbe für Gegenteile.",
+        "sentence": "Man nutzt „un-“ als Vorsilbe, um das Gegenteil auszudrücken.",
         "tokens": [
           {
             "surface": "Man",
-            "surface_en": "one",
-            "furigana": "[man]",
-            "pos": "PRON",
             "lemma": "man",
-            "explanation": "Impersonal pronoun; generic subject.",
-            "difficulty": 2
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PIS",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "nutzt",
-            "surface_en": "uses",
-            "furigana": "[nʊtst]",
-            "pos": "VERB",
             "lemma": "nutzen",
-            "explanation": "Finite main verb, 3rd person singular, present.",
-            "difficulty": 7
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 4,
+            "end": 9,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "„",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$(",
+            "feats": {},
+            "start": 10,
+            "end": 11,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "un-",
-            "surface_en": "un-",
-            "furigana": "[ʊn]",
-            "pos": "NOUN",
-            "lemma": "un-",
-            "explanation": "Quoted bound morpheme; thing being used (object of 'nutzt').",
-            "difficulty": 4,
+            "lemma": "un",
+            "pos": "X",
+            "upos": "X",
+            "xpos": "TRUNC",
+            "feats": {},
+            "start": 11,
+            "end": 14,
+            "analyzer": "spacy_de_core_news_lg",
             "is_main_word": true
           },
           {
+            "surface": "“",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$(",
+            "feats": {},
+            "start": 14,
+            "end": 15,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
             "surface": "als",
-            "surface_en": "as",
-            "furigana": "[als]",
-            "pos": "SCONJ",
             "lemma": "als",
-            "explanation": "Linker 'as' introducing a predicative classification.",
-            "difficulty": 2
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 16,
+            "end": 19,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "Vorsilbe",
-            "surface_en": "prefix",
-            "furigana": "[ˈfoːɐ̯zɪlbə]",
-            "pos": "NOUN",
             "lemma": "Vorsilbe",
-            "explanation": "Common noun; predicative complement with 'als' specifying the role of 'un-'.",
-            "difficulty": 10
-          },
-          {
-            "surface": "für",
-            "surface_en": "for",
-            "furigana": "[fyːɐ̯]",
-            "pos": "ADP",
-            "lemma": "für",
-            "explanation": "Preposition governing accusative; introduces purpose/target.",
-            "difficulty": 2
-          },
-          {
-            "surface": "Gegenteile.",
-            "surface_en": "opposites",
-            "furigana": "[ˈɡeːɡn̩ˌtaɪ̯lə]",
             "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 20,
+            "end": 28,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ",",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$,",
+            "feats": {},
+            "start": 28,
+            "end": 29,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "um",
+            "lemma": "um",
+            "pos": "SCONJ",
+            "upos": "SCONJ",
+            "xpos": "KOUI",
+            "feats": {},
+            "start": 30,
+            "end": 32,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "das",
+            "lemma": "der",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 33,
+            "end": 36,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Gegenteil",
             "lemma": "Gegenteil",
-            "explanation": "Common noun, plural accusative; object of 'für'.",
-            "difficulty": 10
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 37,
+            "end": 46,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "auszudrücken",
+            "lemma": "ausdrücken",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVIZU",
+            "feats": {},
+            "start": 47,
+            "end": 59,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 59,
+            "end": 60,
+            "analyzer": "spacy_de_core_news_lg"
           }
         ],
         "difficulty_aggregated": 5.29
@@ -745,137 +1275,41 @@
         "difficulty_aggregated": 4.4
       }
     ],
-    "es": [
-      "Hoy el profesor explica el prefijo un-.",
-      "No entiendo el prefijo un- en esta palabra.",
-      "Se usa un- como prefijo para formar antónimos.",
-      "En el título aparece un-."
-    ],
-    "fr": [
-      "Aujourd'hui, le professeur explique le préfixe un-.",
-      "Je ne comprends pas le préfixe un- dans ce mot.",
-      "On utilise un- comme préfixe pour former des contraires.",
-      "Le titre contient un-."
-    ],
-    "it": [
-      "Oggi l'insegnante spiega il prefisso un-.",
-      "Non capisco il prefisso un- in questa parola.",
-      "Si usa un- come prefisso per formare i contrari.",
-      "Il titolo contiene un-."
-    ],
-    "ko": [
-      "선생님이 오늘 un- 접두사를 설명해요.",
-      "이 단어의 un- 접두사를 이해하지 못해요.",
-      "un- 접두사는 반대 의미를 만들 때 사용해요.",
-      "제목에 un- 표기가 있어요."
-    ],
-    "zh-Hans": [
-      "老师今天讲解前缀 un-。",
-      "我不理解这个词里的前缀 un-。",
-      "人们用前缀 un- 来构成反义词。",
-      "标题里有 un-。"
-    ],
-    "yue": [
-      "老師今日講解前綴 un-。",
-      "我唔明呢個詞入面嘅前綴 un-。",
-      "人會用前綴 un- 嚟構成相反意思嘅詞。",
-      "標題入面有 un-。"
-    ],
-    "ru": [
-      "Сегодня учитель объясняет приставку un-.",
-      "Я не понимаю приставку un- в этом слове.",
-      "Приставку un- используют для образования противоположных слов.",
-      "В заголовке стоит un-."
-    ],
-    "pt": [
-      "Hoje o professor explica o prefixo un-.",
-      "Não entendo o prefixo un- nesta palavra.",
-      "Usa-se o prefixo un- para formar antônimos.",
-      "No título aparece un-."
-    ],
-    "he": [
-      "המורה מסביר היום את הקידומת un-.",
-      "הקידומת un- במילה הזאת לא ברורה לי.",
-      "משתמשים בקידומת un- כדי ליצור מילים מנוגדות.",
-      "בכותרת מופיע un-."
-    ],
-    "tr": [
-      "Öğretmen bugün un- ön ekini anlatıyor.",
-      "Bu kelimedeki un- ön ekini anlamıyorum.",
-      "un- ön eki zıt anlamlı kelimeler oluşturmak için kullanılır.",
-      "Başlıkta un- yazıyor."
-    ],
-    "vi": [
-      "Hôm nay giáo viên giải thích tiền tố un-.",
-      "Tôi không hiểu tiền tố un- trong từ này.",
-      "Tiền tố un- được dùng để tạo từ trái nghĩa.",
-      "Trong tiêu đề có un-."
-    ],
+    "word_POS": "Other",
+    "entry_id": "un-",
+    "word_en": "un-; in-/im-/ir-/il-",
+    "word_es": "in-/im-/i-; des-",
+    "word_fr": "in-/im-/il-/ir-; dé-/dés-",
+    "word_it": "in-/im-/ir-/il-; dis-",
+    "word_ko": "비-; 불-",
+    "word_zh-Hans": "不-; 非-",
+    "word_yue": "不-; 非-",
+    "word_ru": "не-; без-/бес-",
+    "word_pt": "in-/im-/i-; des-",
+    "word_he": "בלתי־; אי־",
+    "word_tr": "gayri-; -sız/-siz",
+    "word_vi": "bất-; vô-",
+    "word_ar": "غير-; لا-",
+    "word_nl": "on-; in-",
+    "word_uk": "не-; без-",
+    "word_hu": "-talan/-telen; -atlan/-etlen",
+    "word_hi": "अ-/अन-; बे-",
+    "word_pl": "nie-; bez-",
+    "word_el": "α-/αν-; μη-",
+    "word_nb": "u-; in-/im-",
+    "word_id": "tak-; non-",
+    "word_sv": "o-; in-/im-",
+    "word_ro": "ne-; dez-",
+    "word_cs": "ne-; bez-",
+    "word_da": "u-; in-/im-",
+    "word_fi": "epä-; -ton/-tön",
+    "word_ja": "不-; 非-",
+    "word_de": "un-",
     "ar": [
       "يشرح المعلم اليوم البادئة un-.",
       "لا أفهم البادئة un- في هذه الكلمة.",
       "تُستخدم البادئة un- لتكوين كلمات متضادة.",
       "العنوان يحتوي على un-."
-    ],
-    "nl": [
-      "Vandaag legt de leraar het voorvoegsel un- uit.",
-      "Ik begrijp het voorvoegsel un- in dit woord niet.",
-      "Het voorvoegsel un- wordt gebruikt om tegengestelde woorden te vormen.",
-      "In de titel staat un-."
-    ],
-    "uk": [
-      "Сьогодні вчитель пояснює префікс un-.",
-      "Я не розумію префікс un- у цьому слові.",
-      "Префікс un- використовують, щоб утворювати протилежні за значенням слова.",
-      "У заголовку є un-."
-    ],
-    "hu": [
-      "A tanár ma elmagyarázza az un- előtagot.",
-      "Nem értem az un- előtagot ebben a szóban.",
-      "Az un- előtagot ellentétes jelentésű szavak képzésére használják.",
-      "A címben szerepel az un-."
-    ],
-    "hi": [
-      "आज शिक्षक un- उपसर्ग समझा रहे हैं.",
-      "मुझे इस शब्द में un- उपसर्ग समझ नहीं आता.",
-      "un- उपसर्ग का इस्तेमाल विलोम शब्द बनाने के लिए किया जाता है.",
-      "शीर्षक में un- लिखा है."
-    ],
-    "pl": [
-      "Dziś nauczyciel wyjaśnia przedrostek un-.",
-      "Nie rozumiem przedrostka un- w tym słowie.",
-      "Przedrostka un- używa się do tworzenia antonimów.",
-      "W tytule jest un-."
-    ],
-    "el": [
-      "Σήμερα ο δάσκαλος εξηγεί το πρόθημα un-.",
-      "Δεν καταλαβαίνω το πρόθημα un- σε αυτή τη λέξη.",
-      "Το πρόθημα un- χρησιμοποιείται για τον σχηματισμό αντίθετων λέξεων.",
-      "Στον τίτλο υπάρχει un-."
-    ],
-    "nb": [
-      "Læreren forklarer i dag prefikset un-.",
-      "Jeg forstår ikke prefikset un- i dette ordet.",
-      "Prefikset un- brukes for å danne motsatte ord.",
-      "Det står un- i tittelen."
-    ],
-    "id": [
-      "Guru menjelaskan prefiks un- hari ini.",
-      "Saya tidak mengerti prefiks un- dalam kata ini.",
-      "Prefiks un- digunakan untuk membentuk kata yang berlawanan makna.",
-      "Di judul tertulis un-."
-    ],
-    "sv": [
-      "Läraren förklarar i dag prefixet un-.",
-      "Jag förstår inte prefixet un- i det här ordet.",
-      "Prefixet un- används för att bilda motsatsord.",
-      "I titeln står det un-."
-    ],
-    "ro": [
-      "Profesorul explică astăzi prefixul un-.",
-      "Nu înțeleg prefixul un- din acest cuvânt.",
-      "Prefixul un- este folosit pentru a forma antonime.",
-      "În titlu apare un-."
     ],
     "cs": [
       "Učitel dnes vysvětluje předponu un-.",
@@ -889,11 +1323,77 @@
       "Forstavelsen un- bruges til at danne modsætningsord.",
       "Der står un- i titlen."
     ],
+    "de": [
+      "Der Lehrer erklärt „un-“ heute.",
+      "Ich verstehe „un-“ in diesem Wort nicht.",
+      "Man nutzt „un-“ als Vorsilbe für Gegenteile.",
+      "Es steht „un-“ im Titel."
+    ],
+    "el": [
+      "Σήμερα ο δάσκαλος εξηγεί το πρόθημα un-.",
+      "Δεν καταλαβαίνω το πρόθημα un- σε αυτή τη λέξη.",
+      "Το πρόθημα un- χρησιμοποιείται για τον σχηματισμό αντίθετων λέξεων.",
+      "Στον τίτλο υπάρχει un-."
+    ],
+    "en": [
+      "The teacher explains 'un-' today.",
+      "I don’t understand 'un-' in this word.",
+      "People use 'un-' as a prefix for opposites.",
+      "It says 'un-' in the title."
+    ],
+    "es": [
+      "Hoy el profesor explica el prefijo un-.",
+      "No entiendo el prefijo un- en esta palabra.",
+      "Se usa un- como prefijo para formar antónimos.",
+      "En el título aparece un-."
+    ],
     "fi": [
       "Opettaja selittää tänään etuliitteen un-.",
       "En ymmärrä etuliitettä un- tässä sanassa.",
       "Etuliitettä un- käytetään vastakohtaisten sanojen muodostamiseen.",
       "Otsikossa lukee un-."
+    ],
+    "fr": [
+      "Aujourd'hui, le professeur explique le préfixe un-.",
+      "Je ne comprends pas le préfixe un- dans ce mot.",
+      "On utilise un- comme préfixe pour former des contraires.",
+      "Le titre contient un-."
+    ],
+    "he": [
+      "המורה מסביר היום את הקידומת un-.",
+      "הקידומת un- במילה הזאת לא ברורה לי.",
+      "משתמשים בקידומת un- כדי ליצור מילים מנוגדות.",
+      "בכותרת מופיע un-."
+    ],
+    "hi": [
+      "आज शिक्षक un- उपसर्ग समझा रहे हैं.",
+      "मुझे इस शब्द में un- उपसर्ग समझ नहीं आता.",
+      "un- उपसर्ग का इस्तेमाल विलोम शब्द बनाने के लिए किया जाता है.",
+      "शीर्षक में un- लिखा है."
+    ],
+    "hu": [
+      "A tanár ma elmagyarázza az un- előtagot.",
+      "Nem értem az un- előtagot ebben a szóban.",
+      "Az un- előtagot ellentétes jelentésű szavak képzésére használják.",
+      "A címben szerepel az un-."
+    ],
+    "id": [
+      "Guru menjelaskan prefiks un- hari ini.",
+      "Saya tidak mengerti prefiks un- dalam kata ini.",
+      "Prefiks un- digunakan untuk membentuk kata yang berlawanan makna.",
+      "Di judul tertulis un-."
+    ],
+    "ipa": [
+      "/deːɐ̯ ˈleːʁɐ ɛʁˈklɛːʁt ʊn ˈhɔʏtə./",
+      "/ɪç fɛʁˈʃteːə ʊn ɪn ˈdiːzəm vɔʁt nɪçt./",
+      "/man nʊtst ʊn als ˈfoːɐ̯ˌzɪlbə fyːɐ ˈɡeːɡn̩taɪlə./",
+      "/ɛs ʃteːt ʊn ɪm ˈtiːtl̩./"
+    ],
+    "it": [
+      "Oggi l'insegnante spiega il prefisso un-.",
+      "Non capisco il prefisso un- in questa parola.",
+      "Si usa un- come prefisso per formare i contrari.",
+      "Il titolo contiene un-."
     ],
     "ja": [
       "先生は今日、接頭辞un-を説明します。",
@@ -901,6 +1401,83 @@
       "接頭辞un-は反対の意味の語を作るために使われます。",
       "タイトルにun-がある。"
     ],
-    "word_POS": "Other"
+    "ko": [
+      "선생님이 오늘 un- 접두사를 설명해요.",
+      "이 단어의 un- 접두사를 이해하지 못해요.",
+      "un- 접두사는 반대 의미를 만들 때 사용해요.",
+      "제목에 un- 표기가 있어요."
+    ],
+    "nb": [
+      "Læreren forklarer i dag prefikset un-.",
+      "Jeg forstår ikke prefikset un- i dette ordet.",
+      "Prefikset un- brukes for å danne motsatte ord.",
+      "Det står un- i tittelen."
+    ],
+    "nl": [
+      "Vandaag legt de leraar het voorvoegsel un- uit.",
+      "Ik begrijp het voorvoegsel un- in dit woord niet.",
+      "Het voorvoegsel un- wordt gebruikt om tegengestelde woorden te vormen.",
+      "In de titel staat un-."
+    ],
+    "pl": [
+      "Dziś nauczyciel wyjaśnia przedrostek un-.",
+      "Nie rozumiem przedrostka un- w tym słowie.",
+      "Przedrostka un- używa się do tworzenia antonimów.",
+      "W tytule jest un-."
+    ],
+    "pt": [
+      "Hoje o professor explica o prefixo un-.",
+      "Não entendo o prefixo un- nesta palavra.",
+      "Usa-se o prefixo un- para formar antônimos.",
+      "No título aparece un-."
+    ],
+    "ro": [
+      "Profesorul explică astăzi prefixul un-.",
+      "Nu înțeleg prefixul un- din acest cuvânt.",
+      "Prefixul un- este folosit pentru a forma antonime.",
+      "În titlu apare un-."
+    ],
+    "ru": [
+      "Сегодня учитель объясняет приставку un-.",
+      "Я не понимаю приставку un- в этом слове.",
+      "Приставку un- используют для образования противоположных слов.",
+      "В заголовке стоит un-."
+    ],
+    "sv": [
+      "Läraren förklarar i dag prefixet un-.",
+      "Jag förstår inte prefixet un- i det här ordet.",
+      "Prefixet un- används för att bilda motsatsord.",
+      "I titeln står det un-."
+    ],
+    "tr": [
+      "Öğretmen bugün un- ön ekini anlatıyor.",
+      "Bu kelimedeki un- ön ekini anlamıyorum.",
+      "un- ön eki zıt anlamlı kelimeler oluşturmak için kullanılır.",
+      "Başlıkta un- yazıyor."
+    ],
+    "uk": [
+      "Сьогодні вчитель пояснює префікс un-.",
+      "Я не розумію префікс un- у цьому слові.",
+      "Префікс un- використовують, щоб утворювати протилежні за значенням слова.",
+      "У заголовку є un-."
+    ],
+    "vi": [
+      "Hôm nay giáo viên giải thích tiền tố un-.",
+      "Tôi không hiểu tiền tố un- trong từ này.",
+      "Tiền tố un- được dùng để tạo từ trái nghĩa.",
+      "Trong tiêu đề có un-."
+    ],
+    "yue": [
+      "老師今日講解前綴 un-。",
+      "我唔明呢個詞入面嘅前綴 un-。",
+      "人會用前綴 un- 嚟構成相反意思嘅詞。",
+      "標題入面有 un-。"
+    ],
+    "zh-Hans": [
+      "老师今天讲解前缀 un-。",
+      "我不理解这个词里的前缀 un-。",
+      "人们用前缀 un- 来构成反义词。",
+      "标题里有 un-。"
+    ]
   }
 }

@@ -62,7 +62,7 @@
         "ar": "أنا الآن في روبونجي.",
         "nl": "Ik ben nu in Roppongi.",
         "uk": "Я зараз у Роппонгі.",
-        "hu": "Most Roppongi városában vagyok.",
+        "hu": "Most Roppongiban vagyok.",
         "hi": "मैं अभी रोपोंगी में हूं।",
         "pl": "Jestem teraz w Roppongi.",
         "el": "Είμαι στο Roppongi αυτή τη στιγμή.",
@@ -305,7 +305,7 @@
         "ko": "롯폰기의 바는 활기차다.",
         "zh-Hans": "六本木的酒吧热闹非凡。",
         "yue": "六本木嘅酒吧好熱鬧。",
-        "ru": "Бары в Роппонги оживлены.",
+        "ru": "Бары в Роппонги оживлённые.",
         "pt": "Os bares em Roppongi são animados.",
         "he": "הברים ברופונגי תוססים.",
         "tr": "Roppongi'deki barlar canlı.",
@@ -313,9 +313,9 @@
         "ar": "الحانات في روبونجي نابضة بالحياة.",
         "nl": "De bars in Roppongi zijn levendig.",
         "uk": "Бари в Роппонгі жваві.",
-        "hu": "A roppongi bárok élénkek a helyek.",
+        "hu": "A roppongi bárok élénkek.",
         "hi": "रोपोंगी में बार जीवंत हैं।",
-        "pl": "Bary w Roppongi są tętniące życiem.",
+        "pl": "Bary w Roppongi tętnią życiem.",
         "el": "Τα μπαρ στο Roppongi είναι ζωντανά.",
         "nb": "Barene i Roppongi er livlige.",
         "id": "Bar di Roppongi ramai.",
@@ -424,7 +424,7 @@
     },
     {
       "target": "昨日、六本木で友達と映画を見ました.",
-      "reading": "きのう、ろっぽんぎでともだちとえいがをみました.",
+      "reading": "きのう、ろっぽんぎでともだちとえいがをみました．",
       "translations": {
         "en": "Yesterday, I watched a movie with my friend in Roppongi.",
         "es": "Ayer vi una película con mi amigo en Roppongi.",
@@ -457,12 +457,14 @@
       "tokens": [
         {
           "surface": "昨日",
-          "surface_en": "yesterday",
-          "furigana": "きのう",
-          "pos": "noun",
           "lemma": "昨日",
-          "explanation": "Temporal noun indicating when the action took place.",
-          "difficulty": 15,
+          "pos": "名詞/普通名詞/副詞可能/*/*/*",
+          "upos": "NOUN",
+          "xpos": "名詞",
+          "feats": {},
+          "start": 0,
+          "end": 2,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "きのう",
           "ruby_text": "昨日[きのう]",
           "ruby_spans": [
@@ -473,18 +475,36 @@
               "length": 2
             }
           ],
+          "ruby_confidence": "reviewed",
+          "furigana": "きのう",
+          "ruby_source": "mediawiki_sentence_ruby"
+        },
+        {
+          "surface": "、",
+          "lemma": "、",
+          "pos": "補助記号/読点/*/*/*/*",
+          "upos": "PUNCT",
+          "xpos": "補助記号",
+          "feats": {},
+          "start": 2,
+          "end": 3,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "、",
+          "ruby_text": "、",
+          "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "、"
         },
         {
           "surface": "六本木",
-          "surface_en": "Roppongi",
-          "furigana": "ろっぽんぎ",
-          "pos": "proper noun",
           "lemma": "六本木",
-          "explanation": "Place name of a district in Tokyo.",
-          "difficulty": 1,
-          "is_main_word": true,
+          "pos": "名詞/固有名詞/地名/一般/*/*",
+          "upos": "NOUN",
+          "xpos": "名詞",
+          "feats": {},
+          "start": 3,
+          "end": 6,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "ろっぽんぎ",
           "ruby_text": "六本木[ろっぽんぎ]",
           "ruby_spans": [
@@ -495,31 +515,37 @@
               "length": 3
             }
           ],
-          "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "ruby_confidence": "reviewed",
+          "furigana": "ろっぽんぎ",
+          "ruby_source": "mediawiki_sentence_ruby",
+          "is_main_word": true
         },
         {
           "surface": "で",
-          "surface_en": "at",
-          "furigana": "で",
-          "pos": "particle",
           "lemma": "で",
-          "explanation": "Location particle indicating where the action occurred.",
-          "difficulty": 1,
+          "pos": "助詞/格助詞/*/*/*/*",
+          "upos": "PART",
+          "xpos": "助詞",
+          "feats": {},
+          "start": 6,
+          "end": 7,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "で",
           "ruby_text": "で",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "で"
         },
         {
           "surface": "友達",
-          "surface_en": "friend",
-          "furigana": "ともだち",
-          "pos": "noun",
           "lemma": "友達",
-          "explanation": "Common noun referring to a friend.",
-          "difficulty": 18,
+          "pos": "名詞/普通名詞/一般/*/*/*",
+          "upos": "NOUN",
+          "xpos": "名詞",
+          "feats": {},
+          "start": 7,
+          "end": 9,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "ともだち",
           "ruby_text": "友達[ともだち]",
           "ruby_spans": [
@@ -530,31 +556,36 @@
               "length": 2
             }
           ],
-          "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "ruby_confidence": "reviewed",
+          "furigana": "ともだち",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "と",
-          "surface_en": "with",
-          "furigana": "と",
-          "pos": "particle",
           "lemma": "と",
-          "explanation": "Particle indicating accompaniment.",
-          "difficulty": 1,
+          "pos": "助詞/格助詞/*/*/*/*",
+          "upos": "PART",
+          "xpos": "助詞",
+          "feats": {},
+          "start": 9,
+          "end": 10,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "と",
           "ruby_text": "と",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "と"
         },
         {
           "surface": "映画",
-          "surface_en": "movie",
-          "furigana": "えいが",
-          "pos": "noun",
           "lemma": "映画",
-          "explanation": "Common noun for 'movie' or 'film', the object of the verb '見る'.",
-          "difficulty": 13,
+          "pos": "名詞/普通名詞/一般/*/*/*",
+          "upos": "NOUN",
+          "xpos": "名詞",
+          "feats": {},
+          "start": 10,
+          "end": 12,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "えいが",
           "ruby_text": "映画[えいが]",
           "ruby_spans": [
@@ -565,33 +596,38 @@
               "length": 2
             }
           ],
-          "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "ruby_confidence": "reviewed",
+          "furigana": "えいが",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "を",
-          "surface_en": "object marker",
-          "furigana": "を",
-          "pos": "particle",
           "lemma": "を",
-          "explanation": "Object-marking particle indicating '映画' is the direct object.",
-          "difficulty": 1,
+          "pos": "助詞/格助詞/*/*/*/*",
+          "upos": "PART",
+          "xpos": "助詞",
+          "feats": {},
+          "start": 12,
+          "end": 13,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "を",
           "ruby_text": "を",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "を"
         },
         {
-          "surface": "見ました",
-          "surface_en": "watched",
-          "furigana": "みました",
-          "pos": "verb",
+          "surface": "見",
           "lemma": "見る",
-          "explanation": "Polite past form of '見る', meaning 'watched.'",
-          "difficulty": 4,
-          "reading_kana": "みました",
-          "ruby_text": "見[み]ました",
+          "pos": "動詞/非自立可能/*/*/上一段-マ行/連用形-一般",
+          "upos": "VERB",
+          "xpos": "動詞",
+          "feats": {},
+          "start": 13,
+          "end": 14,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "み",
+          "ruby_text": "見[み]",
           "ruby_spans": [
             {
               "base": "見",
@@ -600,8 +636,57 @@
               "length": 1
             }
           ],
+          "ruby_confidence": "reviewed",
+          "furigana": "み",
+          "ruby_source": "mediawiki_sentence_ruby"
+        },
+        {
+          "surface": "まし",
+          "lemma": "ます",
+          "pos": "助動詞/*/*/*/助動詞-マス/連用形-一般",
+          "upos": "AUX",
+          "xpos": "助動詞",
+          "feats": {},
+          "start": 14,
+          "end": 16,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "まし",
+          "ruby_text": "まし",
+          "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "まし"
+        },
+        {
+          "surface": "た",
+          "lemma": "た",
+          "pos": "助動詞/*/*/*/助動詞-タ/終止形-一般",
+          "upos": "AUX",
+          "xpos": "助動詞",
+          "feats": {},
+          "start": 16,
+          "end": 17,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "た",
+          "ruby_text": "た",
+          "ruby_spans": [],
+          "ruby_confidence": "high",
+          "furigana": "た"
+        },
+        {
+          "surface": ".",
+          "lemma": ".",
+          "pos": "補助記号/句点/*/*/*/*",
+          "upos": "PUNCT",
+          "xpos": "補助記号",
+          "feats": {},
+          "start": 17,
+          "end": 18,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "．",
+          "ruby_text": ".",
+          "ruby_spans": [],
+          "ruby_confidence": "high",
+          "furigana": "．"
         }
       ],
       "difficulty": 6.75,
@@ -622,19 +707,597 @@
     "content_reviewers": [
       "mediawiki-visible-revision"
     ],
-    "last_reviewed_utc": "2026-06-21T18:36:50Z",
-    "approval_source": "mediawiki_visible_revision",
+    "last_reviewed_utc": "2026-10-11T11:18:11Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
     "wiki": {
       "title": "Item:Ja n5/e827841c61af2db8",
-      "revision_id": 58558,
-      "parent_revision_id": 37002,
-      "revision_timestamp_utc": "2026-06-21T18:36:50Z",
-      "revision_user": "VocomiBot",
-      "revision_comment": "Sync ja_n5 item 六本木",
-      "pulled_utc": "2026-06-21T20:53:47Z",
-      "applied_utc": "2026-06-21T20:54:00Z",
+      "revision_id": 82859,
+      "parent_revision_id": 69733,
+      "revision_timestamp_utc": "2026-10-11T11:18:11Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Suggest reviewed Japanese and translation corrections",
+      "pulled_utc": "2026-10-17T07:37:41Z",
+      "applied_utc": "2026-10-17T07:37:59Z",
       "applied_by": "vocomipedia-apply-pulled"
-    }
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-a2adeeeae128a29e",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "ja_n5:e827841c61af2db8",
+        "pack_code": "ja_n5",
+        "entry_id": "六本木",
+        "language": "ja",
+        "sentence_index": 4,
+        "old_sentence": "昨日、六本木で友達と映画を見ました。",
+        "old_translations": {
+          "en": "Yesterday, I watched a movie with my friend in Roppongi.",
+          "es": "Ayer vi una película con mi amigo en Roppongi.",
+          "fr": "Hier, j’ai regardé un film avec mon ami à Roppongi.",
+          "de": "Gestern habe ich mit meinem Freund in Roppongi einen Film geschaut.",
+          "it": "Ieri ho visto un film con un mio amico a Roppongi.",
+          "ko": "어제 롯폰기에서 친구와 영화를 봤어요.",
+          "zh-Hans": "昨天，我和朋友在六本木看了一部电影。",
+          "yue": "尋日，我同朋友喺六本木睇電影。",
+          "ru": "Вчера я смотрел фильм с другом в Роппонги.",
+          "pt": "Ontem, assisti a um filme com meu amigo em Roppongi.",
+          "he": "אתמול צפיתי בסרט עם חבר שלי ברופונגי.",
+          "tr": "Dün, Roppongi'de arkadaşımla bir film izledim.",
+          "vi": "Hôm qua, tôi đã xem một bộ phim với bạn tôi ở Roppongi.",
+          "ar": "بالأمس، شاهدت فيلما مع صديقي في روبونجي.",
+          "nl": "Gisteren keek ik een film met mijn vriend in Roppongi.",
+          "uk": "Вчора я дивився фільм із другом у Роппонгі.",
+          "hu": "Tegnap a barátommal Roppongiban néztem egy filmet.",
+          "hi": "कल, मैंने रोपोंगी में अपने दोस्त के साथ एक फिल्म देखी।",
+          "pl": "Wczoraj oglądałem film z moim przyjacielem w Roppongi.",
+          "el": "Χθες, είδα μια ταινία με τον φίλο μου στο Roppongi.",
+          "nb": "I går så jeg en film med vennen min i Roppongi.",
+          "id": "Kemarin, saya menonton film dengan teman saya di Roppongi.",
+          "sv": "Igår såg jag en film med min vän i Roppongi.",
+          "ro": "Ieri am văzut un film cu prietenul meu în Roppongi.",
+          "cs": "Včera jsem se s kamarádem díval na film v Roppongi.",
+          "da": "I går så jeg en film med min ven i Roppongi.",
+          "fi": "Eilen katsoin elokuvan ystäväni kanssa Roppongissa."
+        },
+        "proposed_sentence": "昨日、六本木で友達と映画を見ました.",
+        "proposed_translations": {
+          "en": "Yesterday, I watched a movie with my friend in Roppongi.",
+          "es": "Ayer vi una película con mi amigo en Roppongi.",
+          "fr": "Hier, j’ai regardé un film avec mon ami à Roppongi.",
+          "de": "Gestern habe ich mit meinem Freund in Roppongi einen Film geschaut.",
+          "it": "Ieri ho visto un film con un mio amico a Roppongi.",
+          "ko": "어제 롯폰기에서 친구와 영화를 봤어요.",
+          "zh-Hans": "昨天，我和朋友在六本木看了一部电影。",
+          "yue": "尋日，我同朋友喺六本木睇電影。",
+          "ru": "Вчера я смотрел фильм с другом в Роппонги.",
+          "pt": "Ontem, assisti a um filme com meu amigo em Roppongi.",
+          "he": "אתמול צפיתי בסרט עם חבר שלי ברופונגי.",
+          "tr": "Dün, Roppongi'de arkadaşımla bir film izledim.",
+          "vi": "Hôm qua, tôi đã xem một bộ phim với bạn tôi ở Roppongi.",
+          "ar": "بالأمس، شاهدت فيلما مع صديقي في روبونجي.",
+          "nl": "Gisteren keek ik een film met mijn vriend in Roppongi.",
+          "uk": "Вчора я дивився фільм із другом у Роппонгі.",
+          "hu": "Tegnap a barátommal Roppongiban néztem egy filmet.",
+          "hi": "कल, मैंने रोपोंगी में अपने दोस्त के साथ एक फिल्म देखी।",
+          "pl": "Wczoraj oglądałem film z moim przyjacielem w Roppongi.",
+          "el": "Χθες, είδα μια ταινία με τον φίλο μου στο Roppongi.",
+          "nb": "I går så jeg en film med vennen min i Roppongi.",
+          "id": "Kemarin, saya menonton film dengan teman saya di Roppongi.",
+          "sv": "Igår såg jag en film med min vän i Roppongi.",
+          "ro": "Ieri am văzut un film cu prietenul meu în Roppongi.",
+          "cs": "Včera jsem se s kamarádem díval na film v Roppongi.",
+          "da": "I går så jeg en film med min ven i Roppongi.",
+          "fi": "Eilen katsoin elokuvan ystäväni kanssa Roppongissa."
+        },
+        "old_ruby_source": "昨日[きのう]、六本木[ろっぽんぎ]で友達[ともだち]と映画[えいが]を見[み]ました。",
+        "proposed_ruby_source": "昨日[きのう]、六本木[ろっぽんぎ]で友達[ともだち]と映画[えいが]を見[み]ました.",
+        "old_japanese": "昨日、六本木で友達と映画を見ました。",
+        "old_english": "Yesterday, I watched a movie with my friend in Roppongi.",
+        "proposed_japanese": "昨日、六本木で友達と映画を見ました.",
+        "proposed_english": "Yesterday, I watched a movie with my friend in Roppongi.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "ja",
+          "sentence": "昨日、六本木で友達と映画を見ました.",
+          "tokens": [
+            {
+              "surface": "昨日",
+              "lemma": "昨日",
+              "pos": "名詞/普通名詞/副詞可能/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 0,
+              "end": 2,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "きのう",
+              "ruby_text": "昨日[きのう]",
+              "ruby_spans": [
+                {
+                  "base": "昨日",
+                  "reading": "きのう",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "きのう",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "、",
+              "lemma": "、",
+              "pos": "補助記号/読点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 2,
+              "end": 3,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "、",
+              "ruby_text": "、",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "、"
+            },
+            {
+              "surface": "六本木",
+              "lemma": "六本木",
+              "pos": "名詞/固有名詞/地名/一般/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 3,
+              "end": 6,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "ろっぽんぎ",
+              "ruby_text": "六本木[ろっぽんぎ]",
+              "ruby_spans": [
+                {
+                  "base": "六本木",
+                  "reading": "ろっぽんぎ",
+                  "start": 0,
+                  "length": 3
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "ろっぽんぎ",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "で",
+              "lemma": "で",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 6,
+              "end": 7,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "で",
+              "ruby_text": "で",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "で"
+            },
+            {
+              "surface": "友達",
+              "lemma": "友達",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 7,
+              "end": 9,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "ともだち",
+              "ruby_text": "友達[ともだち]",
+              "ruby_spans": [
+                {
+                  "base": "友達",
+                  "reading": "ともだち",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "ともだち",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "と",
+              "lemma": "と",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 9,
+              "end": 10,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "と",
+              "ruby_text": "と",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "と"
+            },
+            {
+              "surface": "映画",
+              "lemma": "映画",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 10,
+              "end": 12,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "えいが",
+              "ruby_text": "映画[えいが]",
+              "ruby_spans": [
+                {
+                  "base": "映画",
+                  "reading": "えいが",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "えいが",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "を",
+              "lemma": "を",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 12,
+              "end": 13,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "を",
+              "ruby_text": "を",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "を"
+            },
+            {
+              "surface": "見",
+              "lemma": "見る",
+              "pos": "動詞/非自立可能/*/*/上一段-マ行/連用形-一般",
+              "upos": "VERB",
+              "xpos": "動詞",
+              "feats": {},
+              "start": 13,
+              "end": 14,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "み",
+              "ruby_text": "見[み]",
+              "ruby_spans": [
+                {
+                  "base": "見",
+                  "reading": "み",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "み",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "まし",
+              "lemma": "ます",
+              "pos": "助動詞/*/*/*/助動詞-マス/連用形-一般",
+              "upos": "AUX",
+              "xpos": "助動詞",
+              "feats": {},
+              "start": 14,
+              "end": 16,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "まし",
+              "ruby_text": "まし",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "まし"
+            },
+            {
+              "surface": "た",
+              "lemma": "た",
+              "pos": "助動詞/*/*/*/助動詞-タ/終止形-一般",
+              "upos": "AUX",
+              "xpos": "助動詞",
+              "feats": {},
+              "start": 16,
+              "end": 17,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "た",
+              "ruby_text": "た",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "た"
+            },
+            {
+              "surface": ".",
+              "lemma": ".",
+              "pos": "補助記号/句点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 17,
+              "end": 18,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "．",
+              "ruby_text": ".",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "．"
+            }
+          ],
+          "reading": "きのう、ろっぽんぎでともだちとえいがをみました．",
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "warnings": [
+            "mediawiki ruby hints applied"
+          ]
+        },
+        "generated_tokens": [
+          {
+            "surface": "昨日",
+            "lemma": "昨日",
+            "pos": "名詞/普通名詞/副詞可能/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "きのう",
+            "ruby_text": "昨日[きのう]",
+            "ruby_spans": [
+              {
+                "base": "昨日",
+                "reading": "きのう",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "きのう",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "、",
+            "lemma": "、",
+            "pos": "補助記号/読点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 2,
+            "end": 3,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "、",
+            "ruby_text": "、",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "、"
+          },
+          {
+            "surface": "六本木",
+            "lemma": "六本木",
+            "pos": "名詞/固有名詞/地名/一般/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 3,
+            "end": 6,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ろっぽんぎ",
+            "ruby_text": "六本木[ろっぽんぎ]",
+            "ruby_spans": [
+              {
+                "base": "六本木",
+                "reading": "ろっぽんぎ",
+                "start": 0,
+                "length": 3
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "ろっぽんぎ",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "で",
+            "lemma": "で",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 6,
+            "end": 7,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "で",
+            "ruby_text": "で",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "で"
+          },
+          {
+            "surface": "友達",
+            "lemma": "友達",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 7,
+            "end": 9,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ともだち",
+            "ruby_text": "友達[ともだち]",
+            "ruby_spans": [
+              {
+                "base": "友達",
+                "reading": "ともだち",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "ともだち",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "と",
+            "lemma": "と",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 9,
+            "end": 10,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "と",
+            "ruby_text": "と",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "と"
+          },
+          {
+            "surface": "映画",
+            "lemma": "映画",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 10,
+            "end": 12,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "えいが",
+            "ruby_text": "映画[えいが]",
+            "ruby_spans": [
+              {
+                "base": "映画",
+                "reading": "えいが",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "えいが",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "を",
+            "lemma": "を",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 12,
+            "end": 13,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "を",
+            "ruby_text": "を",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "を"
+          },
+          {
+            "surface": "見",
+            "lemma": "見る",
+            "pos": "動詞/非自立可能/*/*/上一段-マ行/連用形-一般",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 13,
+            "end": 14,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "み",
+            "ruby_text": "見[み]",
+            "ruby_spans": [
+              {
+                "base": "見",
+                "reading": "み",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "み",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "まし",
+            "lemma": "ます",
+            "pos": "助動詞/*/*/*/助動詞-マス/連用形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 14,
+            "end": 16,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "まし",
+            "ruby_text": "まし",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "まし"
+          },
+          {
+            "surface": "た",
+            "lemma": "た",
+            "pos": "助動詞/*/*/*/助動詞-タ/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 16,
+            "end": 17,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "た",
+            "ruby_text": "た",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "た"
+          },
+          {
+            "surface": ".",
+            "lemma": ".",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 17,
+            "end": 18,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "．",
+            "ruby_text": ".",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "．"
+          }
+        ],
+        "generated_reading": "きのう、ろっぽんぎでともだちとえいがをみました．",
+        "analyzer": "sudachipy_sudachidict_core_c",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:37:41Z",
+        "updated_utc": "2026-10-17T07:38:16Z",
+        "applied_utc": "2026-10-17T07:38:16Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:38:16Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -957,12 +1620,14 @@
         "tokens": [
           {
             "surface": "昨日",
-            "surface_en": "yesterday",
-            "furigana": "きのう",
-            "pos": "noun",
             "lemma": "昨日",
-            "explanation": "Temporal noun indicating when the action took place.",
-            "difficulty": 15,
+            "pos": "名詞/普通名詞/副詞可能/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "きのう",
             "ruby_text": "昨日[きのう]",
             "ruby_spans": [
@@ -973,18 +1638,36 @@
                 "length": 2
               }
             ],
+            "ruby_confidence": "reviewed",
+            "furigana": "きのう",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "、",
+            "lemma": "、",
+            "pos": "補助記号/読点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 2,
+            "end": 3,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "、",
+            "ruby_text": "、",
+            "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "、"
           },
           {
             "surface": "六本木",
-            "surface_en": "Roppongi",
-            "furigana": "ろっぽんぎ",
-            "pos": "proper noun",
             "lemma": "六本木",
-            "explanation": "Place name of a district in Tokyo.",
-            "difficulty": 1,
-            "is_main_word": true,
+            "pos": "名詞/固有名詞/地名/一般/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 3,
+            "end": 6,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "ろっぽんぎ",
             "ruby_text": "六本木[ろっぽんぎ]",
             "ruby_spans": [
@@ -995,31 +1678,37 @@
                 "length": 3
               }
             ],
-            "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "ruby_confidence": "reviewed",
+            "furigana": "ろっぽんぎ",
+            "ruby_source": "mediawiki_sentence_ruby",
+            "is_main_word": true
           },
           {
             "surface": "で",
-            "surface_en": "at",
-            "furigana": "で",
-            "pos": "particle",
             "lemma": "で",
-            "explanation": "Location particle indicating where the action occurred.",
-            "difficulty": 1,
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 6,
+            "end": 7,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "で",
             "ruby_text": "で",
             "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "で"
           },
           {
             "surface": "友達",
-            "surface_en": "friend",
-            "furigana": "ともだち",
-            "pos": "noun",
             "lemma": "友達",
-            "explanation": "Common noun referring to a friend.",
-            "difficulty": 18,
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 7,
+            "end": 9,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "ともだち",
             "ruby_text": "友達[ともだち]",
             "ruby_spans": [
@@ -1030,31 +1719,36 @@
                 "length": 2
               }
             ],
-            "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "ruby_confidence": "reviewed",
+            "furigana": "ともだち",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "と",
-            "surface_en": "with",
-            "furigana": "と",
-            "pos": "particle",
             "lemma": "と",
-            "explanation": "Particle indicating accompaniment.",
-            "difficulty": 1,
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 9,
+            "end": 10,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "と",
             "ruby_text": "と",
             "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "と"
           },
           {
             "surface": "映画",
-            "surface_en": "movie",
-            "furigana": "えいが",
-            "pos": "noun",
             "lemma": "映画",
-            "explanation": "Common noun for 'movie' or 'film', the object of the verb '見る'.",
-            "difficulty": 13,
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 10,
+            "end": 12,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "えいが",
             "ruby_text": "映画[えいが]",
             "ruby_spans": [
@@ -1065,33 +1759,38 @@
                 "length": 2
               }
             ],
-            "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "ruby_confidence": "reviewed",
+            "furigana": "えいが",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "を",
-            "surface_en": "object marker",
-            "furigana": "を",
-            "pos": "particle",
             "lemma": "を",
-            "explanation": "Object-marking particle indicating '映画' is the direct object.",
-            "difficulty": 1,
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 12,
+            "end": 13,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "を",
             "ruby_text": "を",
             "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "を"
           },
           {
-            "surface": "見ました",
-            "surface_en": "watched",
-            "furigana": "みました",
-            "pos": "verb",
+            "surface": "見",
             "lemma": "見る",
-            "explanation": "Polite past form of '見る', meaning 'watched.'",
-            "difficulty": 4,
-            "reading_kana": "みました",
-            "ruby_text": "見[み]ました",
+            "pos": "動詞/非自立可能/*/*/上一段-マ行/連用形-一般",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 13,
+            "end": 14,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "み",
+            "ruby_text": "見[み]",
             "ruby_spans": [
               {
                 "base": "見",
@@ -1100,8 +1799,57 @@
                 "length": 1
               }
             ],
+            "ruby_confidence": "reviewed",
+            "furigana": "み",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "まし",
+            "lemma": "ます",
+            "pos": "助動詞/*/*/*/助動詞-マス/連用形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 14,
+            "end": 16,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "まし",
+            "ruby_text": "まし",
+            "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "まし"
+          },
+          {
+            "surface": "た",
+            "lemma": "た",
+            "pos": "助動詞/*/*/*/助動詞-タ/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 16,
+            "end": 17,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "た",
+            "ruby_text": "た",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "た"
+          },
+          {
+            "surface": ".",
+            "lemma": ".",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 17,
+            "end": 18,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "．",
+            "ruby_text": ".",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "．"
           }
         ],
         "difficulty_aggregated": 6.75
@@ -1203,9 +1951,9 @@
       "कल, मैंने रोपोंगी में अपने दोस्त के साथ एक फिल्म देखी।"
     ],
     "hu": [
-      "Most Roppongi városában vagyok.",
+      "Most Roppongiban vagyok.",
       "El akarok menni Roppongiba.",
-      "A roppongi bárok élénkek a helyek.",
+      "A roppongi bárok élénkek.",
       "Tegnap a barátommal Roppongiban néztem egy filmet."
     ],
     "id": [
@@ -1241,7 +1989,7 @@
     "pl": [
       "Jestem teraz w Roppongi.",
       "Chcę jechać do Roppongi.",
-      "Bary w Roppongi są tętniące życiem.",
+      "Bary w Roppongi tętnią życiem.",
       "Wczoraj oglądałem film z moim przyjacielem w Roppongi."
     ],
     "pt": [
@@ -1259,7 +2007,7 @@
     "ru": [
       "Я сейчас в Роппонги.",
       "Я хочу поехать в Роппонги.",
-      "Бары в Роппонги оживлены.",
+      "Бары в Роппонги оживлённые.",
       "Вчера я смотрел фильм с другом в Роппонги."
     ],
     "sv": [

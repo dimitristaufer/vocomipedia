@@ -4,7 +4,7 @@
   "pack_code": "de_b1",
   "language": "de",
   "entry_id": "soviel__v2",
-  "headword": "soviel",
+  "headword": "so viel",
   "reading": "",
   "label": "Indefinitpronomen",
   "level": "B1",
@@ -40,14 +40,14 @@
     "da": "så meget; lige så meget",
     "fi": "niin paljon; yhtä paljon",
     "ja": "それほど多く; 同じくらい",
-    "de": "soviel"
+    "de": "so viel"
   },
   "sentences": [
     {
-      "target": "Ich habe nicht soviel Zeit.",
+      "target": "Ich habe nicht so viel Zeit.",
       "reading": "/ɪç ˈhaːbə nɪçt zoːˈfiːl tsaɪ̯t/",
       "translations": {
-        "de": "Ich habe nicht soviel Zeit.",
+        "de": "Ich habe nicht so viel Zeit.",
         "ipa": "/ɪç ˈhaːbə nɪçt zoːˈfiːl tsaɪ̯t/",
         "en": "I don't have that much time.",
         "es": "No tengo tanto tiempo.",
@@ -80,62 +80,91 @@
       "tokens": [
         {
           "surface": "Ich",
-          "surface_en": "I",
-          "furigana": "[ɪç]",
-          "pos": "PRON",
           "lemma": "ich",
-          "explanation": "Personal pronoun, 1st person singular nominative; subject of the clause.",
-          "difficulty": 2,
-          "is_main_word": false
+          "pos": "PRON",
+          "upos": "PRON",
+          "xpos": "PPER",
+          "feats": {},
+          "start": 0,
+          "end": 3,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "habe",
-          "surface_en": "have",
-          "furigana": "[ˈhaːbə]",
-          "pos": "VERB",
           "lemma": "haben",
-          "explanation": "Finite lexical verb, present tense (1st sg); heads the predicate meaning possession.",
-          "difficulty": 7,
-          "is_main_word": false
+          "pos": "AUX",
+          "upos": "AUX",
+          "xpos": "VAFIN",
+          "feats": {},
+          "start": 4,
+          "end": 8,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "nicht",
-          "surface_en": "not",
-          "furigana": "[nɪçt]",
-          "pos": "PART",
           "lemma": "nicht",
-          "explanation": "Negation particle; negates the predicate, scoping over the following quantified NP.",
-          "difficulty": 7,
-          "is_main_word": false
+          "pos": "PART",
+          "upos": "PART",
+          "xpos": "PTKNEG",
+          "feats": {},
+          "start": 9,
+          "end": 14,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "soviel",
-          "surface_en": "so much",
-          "furigana": "[zoːˈfiːl]",
-          "pos": "DET",
-          "lemma": "soviel",
-          "explanation": "Quantifying determiner modifying the noun 'Zeit'; expresses degree/amount.",
-          "difficulty": 7,
+          "surface": "so",
+          "lemma": "so",
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "ADV",
+          "feats": {},
+          "start": 15,
+          "end": 17,
+          "analyzer": "spacy_de_core_news_lg",
           "is_main_word": true
         },
         {
-          "surface": "Zeit.",
-          "surface_en": "time",
-          "furigana": "[tsaɪ̯t]",
-          "pos": "NOUN",
+          "surface": "viel",
+          "lemma": "viel",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "PIAT",
+          "feats": {},
+          "start": 18,
+          "end": 22,
+          "analyzer": "spacy_de_core_news_lg",
+          "is_main_word": true
+        },
+        {
+          "surface": "Zeit",
           "lemma": "Zeit",
-          "explanation": "Head noun of the object NP; mass noun in accusative as direct object of 'haben'.",
-          "difficulty": 7,
-          "is_main_word": false
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 23,
+          "end": 27,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 27,
+          "end": 28,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 6
     },
     {
-      "target": "Das kostet nicht soviel.",
+      "target": "Das kostet nicht so viel.",
       "reading": "/das ˈkɔstət nɪçt zoːˈfiːl/",
       "translations": {
-        "de": "Das kostet nicht soviel.",
+        "de": "Das kostet nicht so viel.",
         "ipa": "/das ˈkɔstət nɪçt zoːˈfiːl/",
         "en": "That doesn't cost that much.",
         "es": "Eso no cuesta tanto.",
@@ -168,52 +197,80 @@
       "tokens": [
         {
           "surface": "Das",
-          "surface_en": "that",
-          "furigana": "[das]",
+          "lemma": "der",
           "pos": "PRON",
-          "lemma": "das",
-          "explanation": "Demonstrative pronoun functioning as the subject; refers to a previously mentioned entity.",
-          "difficulty": 2,
-          "is_main_word": false
+          "upos": "PRON",
+          "xpos": "PDS",
+          "feats": {},
+          "start": 0,
+          "end": 3,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "kostet",
-          "surface_en": "costs",
-          "furigana": "[ˈkɔstət]",
-          "pos": "VERB",
           "lemma": "kosten",
-          "explanation": "Finite lexical verb, present tense (3rd sg); expresses price/expense.",
-          "difficulty": 7,
-          "is_main_word": false
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VVFIN",
+          "feats": {},
+          "start": 4,
+          "end": 10,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "nicht",
-          "surface_en": "not",
-          "furigana": "[nɪçt]",
-          "pos": "PART",
           "lemma": "nicht",
-          "explanation": "Negation particle; negates the degree/amount expressed by the following quantifier.",
-          "difficulty": 7,
-          "is_main_word": false
+          "pos": "PART",
+          "upos": "PART",
+          "xpos": "PTKNEG",
+          "feats": {},
+          "start": 11,
+          "end": 16,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "soviel.",
-          "surface_en": "so much",
-          "furigana": "[zoːˈfiːl]",
-          "pos": "PRON",
-          "lemma": "soviel",
-          "explanation": "Quantifying pronoun standing alone; measure complement specifying amount/price.",
-          "difficulty": 7,
+          "surface": "so",
+          "lemma": "so",
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "ADV",
+          "feats": {},
+          "start": 17,
+          "end": 19,
+          "analyzer": "spacy_de_core_news_lg",
           "is_main_word": true
+        },
+        {
+          "surface": "viel",
+          "lemma": "viel",
+          "pos": "PRON",
+          "upos": "PRON",
+          "xpos": "PIS",
+          "feats": {},
+          "start": 20,
+          "end": 24,
+          "analyzer": "spacy_de_core_news_lg",
+          "is_main_word": true
+        },
+        {
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 24,
+          "end": 25,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 5.75
     },
     {
-      "target": "Wir brauchen heute soviel Wasser.",
+      "target": "Wir brauchen heute so viel Wasser.",
       "reading": "/viːɐ̯ ˈbʁaʊ̯xən ˈhɔʏ̯tə zoːˈfiːl ˈvasɐ/",
       "translations": {
-        "de": "Wir brauchen heute soviel Wasser.",
+        "de": "Wir brauchen heute so viel Wasser.",
         "ipa": "/viːɐ̯ ˈbʁaʊ̯xən ˈhɔʏ̯tə zoːˈfiːl ˈvasɐ/",
         "en": "We need that much water today.",
         "es": "Hoy necesitamos tanta agua.",
@@ -246,62 +303,91 @@
       "tokens": [
         {
           "surface": "Wir",
-          "surface_en": "we",
-          "furigana": "[viːɐ̯]",
-          "pos": "PRON",
           "lemma": "wir",
-          "explanation": "Personal pronoun, 1st person plural nominative; subject of the clause.",
-          "difficulty": 2,
-          "is_main_word": false
+          "pos": "PRON",
+          "upos": "PRON",
+          "xpos": "PPER",
+          "feats": {},
+          "start": 0,
+          "end": 3,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "brauchen",
-          "surface_en": "need",
-          "furigana": "[ˈbʁaʊ̯xən]",
-          "pos": "VERB",
           "lemma": "brauchen",
-          "explanation": "Finite lexical verb, present tense (1st pl form); heads the predicate meaning necessity.",
-          "difficulty": 10,
-          "is_main_word": false
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VVFIN",
+          "feats": {},
+          "start": 4,
+          "end": 12,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "heute",
-          "surface_en": "today",
-          "furigana": "[ˈhɔʏ̯tə]",
-          "pos": "ADV",
           "lemma": "heute",
-          "explanation": "Temporal adverb; modifies the predicate by specifying time.",
-          "difficulty": 7,
-          "is_main_word": false
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "ADV",
+          "feats": {},
+          "start": 13,
+          "end": 18,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "soviel",
-          "surface_en": "so much",
-          "furigana": "[zoːˈfiːl]",
-          "pos": "DET",
-          "lemma": "soviel",
-          "explanation": "Quantifying determiner modifying 'Wasser'; indicates amount.",
-          "difficulty": 7,
+          "surface": "so",
+          "lemma": "so",
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "ADV",
+          "feats": {},
+          "start": 19,
+          "end": 21,
+          "analyzer": "spacy_de_core_news_lg",
           "is_main_word": true
         },
         {
-          "surface": "Wasser.",
-          "surface_en": "water",
-          "furigana": "[ˈvasɐ]",
-          "pos": "NOUN",
+          "surface": "viel",
+          "lemma": "viel",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "PIAT",
+          "feats": {},
+          "start": 22,
+          "end": 26,
+          "analyzer": "spacy_de_core_news_lg",
+          "is_main_word": true
+        },
+        {
+          "surface": "Wasser",
           "lemma": "Wasser",
-          "explanation": "Head noun of the object NP; mass noun in accusative as direct object of 'brauchen'.",
-          "difficulty": 7,
-          "is_main_word": false
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 27,
+          "end": 33,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 33,
+          "end": 34,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 6.6
     },
     {
-      "target": "Er redet wieder soviel.",
+      "target": "Er redet wieder so viel.",
       "reading": "/eːɐ̯ ˈʁeːdət ˈviːdɐ zoːˈfiːl/",
       "translations": {
-        "de": "Er redet wieder soviel.",
+        "de": "Er redet wieder so viel.",
         "ipa": "/eːɐ̯ ˈʁeːdət ˈviːdɐ zoːˈfiːl/",
         "en": "He's talking so much again.",
         "es": "Otra vez está hablando tanto.",
@@ -334,43 +420,71 @@
       "tokens": [
         {
           "surface": "Er",
-          "surface_en": "he",
-          "furigana": "[eːɐ̯]",
-          "pos": "PRON",
           "lemma": "er",
-          "explanation": "Personal pronoun, 3rd person singular nominative; subject of the clause.",
-          "difficulty": 2,
-          "is_main_word": false
+          "pos": "PRON",
+          "upos": "PRON",
+          "xpos": "PPER",
+          "feats": {},
+          "start": 0,
+          "end": 2,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "redet",
-          "surface_en": "talks",
-          "furigana": "[ˈʁeːdət]",
-          "pos": "VERB",
           "lemma": "reden",
-          "explanation": "Finite lexical verb, present tense (3rd sg); heads the predicate.",
-          "difficulty": 7,
-          "is_main_word": false
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VVFIN",
+          "feats": {},
+          "start": 3,
+          "end": 8,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "wieder",
-          "surface_en": "again",
-          "furigana": "[ˈviːdɐ]",
-          "pos": "ADV",
           "lemma": "wieder",
-          "explanation": "Adverb expressing repetition/iteration; modifies the verb phrase.",
-          "difficulty": 7,
-          "is_main_word": false
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "ADV",
+          "feats": {},
+          "start": 9,
+          "end": 15,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "soviel.",
-          "surface_en": "so much",
-          "furigana": "[zoːˈfiːl]",
+          "surface": "so",
+          "lemma": "so",
           "pos": "ADV",
-          "lemma": "soviel",
-          "explanation": "Degree adverb quantifying the extent/amount of talking; modifies 'redet'.",
-          "difficulty": 7,
+          "upos": "ADV",
+          "xpos": "ADV",
+          "feats": {},
+          "start": 16,
+          "end": 18,
+          "analyzer": "spacy_de_core_news_lg",
           "is_main_word": true
+        },
+        {
+          "surface": "viel",
+          "lemma": "viel",
+          "pos": "PRON",
+          "upos": "PRON",
+          "xpos": "PIS",
+          "feats": {},
+          "start": 19,
+          "end": 23,
+          "analyzer": "spacy_de_core_news_lg",
+          "is_main_word": true
+        },
+        {
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 23,
+          "end": 24,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 5.75
@@ -387,8 +501,1049 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-15T03:35:31Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:De b1/c8733c071577d463",
+      "revision_id": 85007,
+      "parent_revision_id": 17760,
+      "revision_timestamp_utc": "2026-10-15T03:35:31Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Correct the German spelling of quantitative ‘so viel’ throughout the item",
+      "pulled_utc": "2026-10-17T07:06:43Z",
+      "applied_utc": "2026-10-17T07:06:54Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-59b970363202e844",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_b1:c8733c071577d463",
+        "pack_code": "de_b1",
+        "entry_id": "soviel__v2",
+        "language": "de",
+        "sentence_index": 1,
+        "old_sentence": "Ich habe nicht soviel Zeit.",
+        "old_translations": {
+          "de": "Ich habe nicht soviel Zeit.",
+          "ipa": "/ɪç ˈhaːbə nɪçt zoːˈfiːl tsaɪ̯t/",
+          "en": "I don't have that much time.",
+          "es": "No tengo tanto tiempo.",
+          "fr": "Je n'ai pas autant de temps.",
+          "it": "Non ho così tanto tempo.",
+          "ko": "저는 시간이 그렇게 많지 않아요.",
+          "zh-Hans": "我没有那么多时间。",
+          "yue": "我冇咁多時間。",
+          "ru": "У меня нет столько времени.",
+          "pt": "Não tenho tanto tempo.",
+          "he": "אין לי כל כך הרבה זמן.",
+          "tr": "O kadar vaktim yok.",
+          "vi": "Tôi không có nhiều thời gian như vậy.",
+          "ar": "ليس لدي هذا القدر من الوقت.",
+          "nl": "Ik heb niet zoveel tijd.",
+          "uk": "У мене немає стільки часу.",
+          "hu": "Nincs ennyi időm.",
+          "hi": "मेरे पास इतना समय नहीं है.",
+          "pl": "Nie mam aż tyle czasu.",
+          "el": "Δεν έχω τόσο πολύ χρόνο.",
+          "nb": "Jeg har ikke så mye tid.",
+          "id": "Saya tidak punya waktu sebanyak itu.",
+          "sv": "Jag har inte så mycket tid.",
+          "ro": "Nu am atât de mult timp.",
+          "cs": "Nemám tolik času.",
+          "da": "Jeg har ikke så meget tid.",
+          "fi": "Minulla ei ole niin paljon aikaa.",
+          "ja": "そんなに時間はありません。"
+        },
+        "proposed_sentence": "Ich habe nicht so viel Zeit.",
+        "proposed_translations": {
+          "de": "Ich habe nicht so viel Zeit.",
+          "ipa": "/ɪç ˈhaːbə nɪçt zoːˈfiːl tsaɪ̯t/",
+          "en": "I don't have that much time.",
+          "es": "No tengo tanto tiempo.",
+          "fr": "Je n'ai pas autant de temps.",
+          "it": "Non ho così tanto tempo.",
+          "ko": "저는 시간이 그렇게 많지 않아요.",
+          "zh-Hans": "我没有那么多时间。",
+          "yue": "我冇咁多時間。",
+          "ru": "У меня нет столько времени.",
+          "pt": "Não tenho tanto tempo.",
+          "he": "אין לי כל כך הרבה זמן.",
+          "tr": "O kadar vaktim yok.",
+          "vi": "Tôi không có nhiều thời gian như vậy.",
+          "ar": "ليس لدي هذا القدر من الوقت.",
+          "nl": "Ik heb niet zoveel tijd.",
+          "uk": "У мене немає стільки часу.",
+          "hu": "Nincs ennyi időm.",
+          "hi": "मेरे पास इतना समय नहीं है.",
+          "pl": "Nie mam aż tyle czasu.",
+          "el": "Δεν έχω τόσο πολύ χρόνο.",
+          "nb": "Jeg har ikke så mye tid.",
+          "id": "Saya tidak punya waktu sebanyak itu.",
+          "sv": "Jag har inte så mycket tid.",
+          "ro": "Nu am atât de mult timp.",
+          "cs": "Nemám tolik času.",
+          "da": "Jeg har ikke så meget tid.",
+          "fi": "Minulla ei ole niin paljon aikaa.",
+          "ja": "そんなに時間はありません。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Ich habe nicht so viel Zeit.",
+        "old_japanese": "Ich habe nicht soviel Zeit.",
+        "old_english": "I don't have that much time.",
+        "proposed_japanese": "Ich habe nicht so viel Zeit.",
+        "proposed_english": "I don't have that much time.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Ich habe nicht so viel Zeit.",
+          "tokens": [
+            {
+              "surface": "Ich",
+              "lemma": "ich",
+              "pos": "PRON",
+              "upos": "PRON",
+              "xpos": "PPER",
+              "feats": {},
+              "start": 0,
+              "end": 3,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "habe",
+              "lemma": "haben",
+              "pos": "AUX",
+              "upos": "AUX",
+              "xpos": "VAFIN",
+              "feats": {},
+              "start": 4,
+              "end": 8,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "nicht",
+              "lemma": "nicht",
+              "pos": "PART",
+              "upos": "PART",
+              "xpos": "PTKNEG",
+              "feats": {},
+              "start": 9,
+              "end": 14,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "so",
+              "lemma": "so",
+              "pos": "ADV",
+              "upos": "ADV",
+              "xpos": "ADV",
+              "feats": {},
+              "start": 15,
+              "end": 17,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "viel",
+              "lemma": "viel",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "PIAT",
+              "feats": {},
+              "start": 18,
+              "end": 22,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Zeit",
+              "lemma": "Zeit",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 23,
+              "end": 27,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 27,
+              "end": 28,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Ich",
+            "lemma": "ich",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "habe",
+            "lemma": "haben",
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "VAFIN",
+            "feats": {},
+            "start": 4,
+            "end": 8,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "nicht",
+            "lemma": "nicht",
+            "pos": "PART",
+            "upos": "PART",
+            "xpos": "PTKNEG",
+            "feats": {},
+            "start": 9,
+            "end": 14,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "so",
+            "lemma": "so",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 15,
+            "end": 17,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "viel",
+            "lemma": "viel",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "PIAT",
+            "feats": {},
+            "start": 18,
+            "end": 22,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Zeit",
+            "lemma": "Zeit",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 23,
+            "end": 27,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 27,
+            "end": 28,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:06:43Z",
+        "updated_utc": "2026-10-17T07:07:06Z",
+        "applied_utc": "2026-10-17T07:07:06Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      },
+      {
+        "id": "sentprop-49fcfda6331fd016",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_b1:c8733c071577d463",
+        "pack_code": "de_b1",
+        "entry_id": "soviel__v2",
+        "language": "de",
+        "sentence_index": 2,
+        "old_sentence": "Das kostet nicht soviel.",
+        "old_translations": {
+          "de": "Das kostet nicht soviel.",
+          "ipa": "/das ˈkɔstət nɪçt zoːˈfiːl/",
+          "en": "That doesn't cost that much.",
+          "es": "Eso no cuesta tanto.",
+          "fr": "Ça ne coûte pas si cher.",
+          "it": "Non costa così tanto.",
+          "ko": "그건 그렇게 비싸지 않아요.",
+          "zh-Hans": "没那么贵。",
+          "yue": "冇咁貴。",
+          "ru": "Это стоит не так дорого.",
+          "pt": "Isso não custa tanto.",
+          "he": "זה לא עולה כל כך הרבה.",
+          "tr": "Bu kadar pahalı değil.",
+          "vi": "Nó không đắt đến vậy.",
+          "ar": "هذا لا يكلف هذا القدر.",
+          "nl": "Dat kost niet zoveel.",
+          "uk": "Це коштує не так дорого.",
+          "hu": "Ez nem kerül olyan sokba.",
+          "hi": "यह इतना महंगा नहीं है.",
+          "pl": "To nie kosztuje aż tyle.",
+          "el": "Δεν κοστίζει τόσο πολύ.",
+          "nb": "Det koster ikke så mye.",
+          "id": "Itu tidak semahal itu.",
+          "sv": "Det kostar inte så mycket.",
+          "ro": "Nu costă atât de mult.",
+          "cs": "To nestojí tolik.",
+          "da": "Det koster ikke så meget.",
+          "fi": "Se ei maksa niin paljon.",
+          "ja": "そんなに高くないです。"
+        },
+        "proposed_sentence": "Das kostet nicht so viel.",
+        "proposed_translations": {
+          "de": "Das kostet nicht so viel.",
+          "ipa": "/das ˈkɔstət nɪçt zoːˈfiːl/",
+          "en": "That doesn't cost that much.",
+          "es": "Eso no cuesta tanto.",
+          "fr": "Ça ne coûte pas si cher.",
+          "it": "Non costa così tanto.",
+          "ko": "그건 그렇게 비싸지 않아요.",
+          "zh-Hans": "没那么贵。",
+          "yue": "冇咁貴。",
+          "ru": "Это стоит не так дорого.",
+          "pt": "Isso não custa tanto.",
+          "he": "זה לא עולה כל כך הרבה.",
+          "tr": "Bu kadar pahalı değil.",
+          "vi": "Nó không đắt đến vậy.",
+          "ar": "هذا لا يكلف هذا القدر.",
+          "nl": "Dat kost niet zoveel.",
+          "uk": "Це коштує не так дорого.",
+          "hu": "Ez nem kerül olyan sokba.",
+          "hi": "यह इतना महंगा नहीं है.",
+          "pl": "To nie kosztuje aż tyle.",
+          "el": "Δεν κοστίζει τόσο πολύ.",
+          "nb": "Det koster ikke så mye.",
+          "id": "Itu tidak semahal itu.",
+          "sv": "Det kostar inte så mycket.",
+          "ro": "Nu costă atât de mult.",
+          "cs": "To nestojí tolik.",
+          "da": "Det koster ikke så meget.",
+          "fi": "Se ei maksa niin paljon.",
+          "ja": "そんなに高くないです。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Das kostet nicht so viel.",
+        "old_japanese": "Das kostet nicht soviel.",
+        "old_english": "That doesn't cost that much.",
+        "proposed_japanese": "Das kostet nicht so viel.",
+        "proposed_english": "That doesn't cost that much.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Das kostet nicht so viel.",
+          "tokens": [
+            {
+              "surface": "Das",
+              "lemma": "der",
+              "pos": "PRON",
+              "upos": "PRON",
+              "xpos": "PDS",
+              "feats": {},
+              "start": 0,
+              "end": 3,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "kostet",
+              "lemma": "kosten",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVFIN",
+              "feats": {},
+              "start": 4,
+              "end": 10,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "nicht",
+              "lemma": "nicht",
+              "pos": "PART",
+              "upos": "PART",
+              "xpos": "PTKNEG",
+              "feats": {},
+              "start": 11,
+              "end": 16,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "so",
+              "lemma": "so",
+              "pos": "ADV",
+              "upos": "ADV",
+              "xpos": "ADV",
+              "feats": {},
+              "start": 17,
+              "end": 19,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "viel",
+              "lemma": "viel",
+              "pos": "PRON",
+              "upos": "PRON",
+              "xpos": "PIS",
+              "feats": {},
+              "start": 20,
+              "end": 24,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 24,
+              "end": 25,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Das",
+            "lemma": "der",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PDS",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "kostet",
+            "lemma": "kosten",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 4,
+            "end": 10,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "nicht",
+            "lemma": "nicht",
+            "pos": "PART",
+            "upos": "PART",
+            "xpos": "PTKNEG",
+            "feats": {},
+            "start": 11,
+            "end": 16,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "so",
+            "lemma": "so",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 17,
+            "end": 19,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "viel",
+            "lemma": "viel",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PIS",
+            "feats": {},
+            "start": 20,
+            "end": 24,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 24,
+            "end": 25,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:06:43Z",
+        "updated_utc": "2026-10-17T07:07:06Z",
+        "applied_utc": "2026-10-17T07:07:06Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      },
+      {
+        "id": "sentprop-4f717b90ddae9963",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_b1:c8733c071577d463",
+        "pack_code": "de_b1",
+        "entry_id": "soviel__v2",
+        "language": "de",
+        "sentence_index": 3,
+        "old_sentence": "Wir brauchen heute soviel Wasser.",
+        "old_translations": {
+          "de": "Wir brauchen heute soviel Wasser.",
+          "ipa": "/viːɐ̯ ˈbʁaʊ̯xən ˈhɔʏ̯tə zoːˈfiːl ˈvasɐ/",
+          "en": "We need that much water today.",
+          "es": "Hoy necesitamos tanta agua.",
+          "fr": "On a besoin d'autant d'eau aujourd'hui.",
+          "it": "Oggi ci serve così tanta acqua.",
+          "ko": "오늘은 물이 그렇게 많이 필요해요.",
+          "zh-Hans": "我们今天需要这么多水。",
+          "yue": "我哋今日要咁多水。",
+          "ru": "Нам сегодня нужно столько воды.",
+          "pt": "Hoje precisamos de tanta água.",
+          "he": "היום אנחנו צריכים כל כך הרבה מים.",
+          "tr": "Bugün bu kadar suya ihtiyacımız var.",
+          "vi": "Hôm nay chúng ta cần nhiều nước đến vậy.",
+          "ar": "نحن بحاجة إلى هذا القدر من الماء اليوم.",
+          "nl": "We hebben vandaag zoveel water nodig.",
+          "uk": "Нам сьогодні потрібно стільки води.",
+          "hu": "Ma ennyi vízre van szükségünk.",
+          "hi": "आज हमें इतना पानी चाहिए.",
+          "pl": "Dziś potrzebujemy aż tyle wody.",
+          "el": "Σήμερα χρειαζόμαστε τόσο πολύ νερό.",
+          "nb": "I dag trenger vi så mye vann.",
+          "id": "Hari ini kita butuh air sebanyak itu.",
+          "sv": "I dag behöver vi så mycket vatten.",
+          "ro": "Astăzi avem nevoie de atâta apă.",
+          "cs": "Dnes potřebujeme tolik vody.",
+          "da": "I dag har vi brug for så meget vand.",
+          "fi": "Tänään tarvitsemme niin paljon vettä.",
+          "ja": "今日はそれだけの水が必要です。"
+        },
+        "proposed_sentence": "Wir brauchen heute so viel Wasser.",
+        "proposed_translations": {
+          "de": "Wir brauchen heute so viel Wasser.",
+          "ipa": "/viːɐ̯ ˈbʁaʊ̯xən ˈhɔʏ̯tə zoːˈfiːl ˈvasɐ/",
+          "en": "We need that much water today.",
+          "es": "Hoy necesitamos tanta agua.",
+          "fr": "On a besoin d'autant d'eau aujourd'hui.",
+          "it": "Oggi ci serve così tanta acqua.",
+          "ko": "오늘은 물이 그렇게 많이 필요해요.",
+          "zh-Hans": "我们今天需要这么多水。",
+          "yue": "我哋今日要咁多水。",
+          "ru": "Нам сегодня нужно столько воды.",
+          "pt": "Hoje precisamos de tanta água.",
+          "he": "היום אנחנו צריכים כל כך הרבה מים.",
+          "tr": "Bugün bu kadar suya ihtiyacımız var.",
+          "vi": "Hôm nay chúng ta cần nhiều nước đến vậy.",
+          "ar": "نحن بحاجة إلى هذا القدر من الماء اليوم.",
+          "nl": "We hebben vandaag zoveel water nodig.",
+          "uk": "Нам сьогодні потрібно стільки води.",
+          "hu": "Ma ennyi vízre van szükségünk.",
+          "hi": "आज हमें इतना पानी चाहिए.",
+          "pl": "Dziś potrzebujemy aż tyle wody.",
+          "el": "Σήμερα χρειαζόμαστε τόσο πολύ νερό.",
+          "nb": "I dag trenger vi så mye vann.",
+          "id": "Hari ini kita butuh air sebanyak itu.",
+          "sv": "I dag behöver vi så mycket vatten.",
+          "ro": "Astăzi avem nevoie de atâta apă.",
+          "cs": "Dnes potřebujeme tolik vody.",
+          "da": "I dag har vi brug for så meget vand.",
+          "fi": "Tänään tarvitsemme niin paljon vettä.",
+          "ja": "今日はそれだけの水が必要です。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Wir brauchen heute so viel Wasser.",
+        "old_japanese": "Wir brauchen heute soviel Wasser.",
+        "old_english": "We need that much water today.",
+        "proposed_japanese": "Wir brauchen heute so viel Wasser.",
+        "proposed_english": "We need that much water today.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Wir brauchen heute so viel Wasser.",
+          "tokens": [
+            {
+              "surface": "Wir",
+              "lemma": "wir",
+              "pos": "PRON",
+              "upos": "PRON",
+              "xpos": "PPER",
+              "feats": {},
+              "start": 0,
+              "end": 3,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "brauchen",
+              "lemma": "brauchen",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVFIN",
+              "feats": {},
+              "start": 4,
+              "end": 12,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "heute",
+              "lemma": "heute",
+              "pos": "ADV",
+              "upos": "ADV",
+              "xpos": "ADV",
+              "feats": {},
+              "start": 13,
+              "end": 18,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "so",
+              "lemma": "so",
+              "pos": "ADV",
+              "upos": "ADV",
+              "xpos": "ADV",
+              "feats": {},
+              "start": 19,
+              "end": 21,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "viel",
+              "lemma": "viel",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "PIAT",
+              "feats": {},
+              "start": 22,
+              "end": 26,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Wasser",
+              "lemma": "Wasser",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 27,
+              "end": 33,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 33,
+              "end": 34,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Wir",
+            "lemma": "wir",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "brauchen",
+            "lemma": "brauchen",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 4,
+            "end": 12,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "heute",
+            "lemma": "heute",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 13,
+            "end": 18,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "so",
+            "lemma": "so",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 19,
+            "end": 21,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "viel",
+            "lemma": "viel",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "PIAT",
+            "feats": {},
+            "start": 22,
+            "end": 26,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Wasser",
+            "lemma": "Wasser",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 27,
+            "end": 33,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 33,
+            "end": 34,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:06:43Z",
+        "updated_utc": "2026-10-17T07:07:06Z",
+        "applied_utc": "2026-10-17T07:07:06Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      },
+      {
+        "id": "sentprop-be7e15bb81aafa8e",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_b1:c8733c071577d463",
+        "pack_code": "de_b1",
+        "entry_id": "soviel__v2",
+        "language": "de",
+        "sentence_index": 4,
+        "old_sentence": "Er redet wieder soviel.",
+        "old_translations": {
+          "de": "Er redet wieder soviel.",
+          "ipa": "/eːɐ̯ ˈʁeːdət ˈviːdɐ zoːˈfiːl/",
+          "en": "He's talking so much again.",
+          "es": "Otra vez está hablando tanto.",
+          "fr": "Il parle encore beaucoup.",
+          "it": "Parla di nuovo così tanto.",
+          "ko": "또 그렇게 말을 많이 하네요.",
+          "zh-Hans": "他又说这么多。",
+          "yue": "佢又講咁多嘢。",
+          "ru": "Он снова так много говорит.",
+          "pt": "Ele está falando tanto de novo.",
+          "he": "הוא שוב מדבר כל כך הרבה.",
+          "tr": "Yine çok konuşuyor.",
+          "vi": "Anh ấy lại nói nhiều quá.",
+          "ar": "هو يتحدث كثيرا مرة أخرى.",
+          "nl": "Hij praat weer zoveel.",
+          "uk": "Він знову так багато говорить.",
+          "hu": "Már megint annyit beszél.",
+          "hi": "वह फिर से इतना बोल रहा है.",
+          "pl": "On znowu tyle mówi.",
+          "el": "Πάλι μιλάει τόσο πολύ.",
+          "nb": "Han snakker så mye igjen.",
+          "id": "Dia banyak bicara lagi.",
+          "sv": "Han pratar så mycket igen.",
+          "ro": "Iar vorbește atât de mult.",
+          "cs": "Zase tolik mluví.",
+          "da": "Han snakker så meget igen.",
+          "fi": "Hän puhuu taas niin paljon.",
+          "ja": "また彼はたくさん話しています。"
+        },
+        "proposed_sentence": "Er redet wieder so viel.",
+        "proposed_translations": {
+          "de": "Er redet wieder so viel.",
+          "ipa": "/eːɐ̯ ˈʁeːdət ˈviːdɐ zoːˈfiːl/",
+          "en": "He's talking so much again.",
+          "es": "Otra vez está hablando tanto.",
+          "fr": "Il parle encore beaucoup.",
+          "it": "Parla di nuovo così tanto.",
+          "ko": "또 그렇게 말을 많이 하네요.",
+          "zh-Hans": "他又说这么多。",
+          "yue": "佢又講咁多嘢。",
+          "ru": "Он снова так много говорит.",
+          "pt": "Ele está falando tanto de novo.",
+          "he": "הוא שוב מדבר כל כך הרבה.",
+          "tr": "Yine çok konuşuyor.",
+          "vi": "Anh ấy lại nói nhiều quá.",
+          "ar": "هو يتحدث كثيرا مرة أخرى.",
+          "nl": "Hij praat weer zoveel.",
+          "uk": "Він знову так багато говорить.",
+          "hu": "Már megint annyit beszél.",
+          "hi": "वह फिर से इतना बोल रहा है.",
+          "pl": "On znowu tyle mówi.",
+          "el": "Πάλι μιλάει τόσο πολύ.",
+          "nb": "Han snakker så mye igjen.",
+          "id": "Dia banyak bicara lagi.",
+          "sv": "Han pratar så mycket igen.",
+          "ro": "Iar vorbește atât de mult.",
+          "cs": "Zase tolik mluví.",
+          "da": "Han snakker så meget igen.",
+          "fi": "Hän puhuu taas niin paljon.",
+          "ja": "また彼はたくさん話しています。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Er redet wieder so viel.",
+        "old_japanese": "Er redet wieder soviel.",
+        "old_english": "He's talking so much again.",
+        "proposed_japanese": "Er redet wieder so viel.",
+        "proposed_english": "He's talking so much again.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Er redet wieder so viel.",
+          "tokens": [
+            {
+              "surface": "Er",
+              "lemma": "er",
+              "pos": "PRON",
+              "upos": "PRON",
+              "xpos": "PPER",
+              "feats": {},
+              "start": 0,
+              "end": 2,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "redet",
+              "lemma": "reden",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVFIN",
+              "feats": {},
+              "start": 3,
+              "end": 8,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "wieder",
+              "lemma": "wieder",
+              "pos": "ADV",
+              "upos": "ADV",
+              "xpos": "ADV",
+              "feats": {},
+              "start": 9,
+              "end": 15,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "so",
+              "lemma": "so",
+              "pos": "ADV",
+              "upos": "ADV",
+              "xpos": "ADV",
+              "feats": {},
+              "start": 16,
+              "end": 18,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "viel",
+              "lemma": "viel",
+              "pos": "PRON",
+              "upos": "PRON",
+              "xpos": "PIS",
+              "feats": {},
+              "start": 19,
+              "end": 23,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 23,
+              "end": 24,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Er",
+            "lemma": "er",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "redet",
+            "lemma": "reden",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 3,
+            "end": 8,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "wieder",
+            "lemma": "wieder",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 9,
+            "end": 15,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "so",
+            "lemma": "so",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 16,
+            "end": 18,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "viel",
+            "lemma": "viel",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PIS",
+            "feats": {},
+            "start": 19,
+            "end": 23,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 23,
+            "end": 24,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:06:43Z",
+        "updated_utc": "2026-10-17T07:07:06Z",
+        "applied_utc": "2026-10-17T07:07:06Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:07:06Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -397,9 +1552,344 @@
     "source_urls": []
   },
   "app_payload": {
-    "word": "soviel",
+    "word": "so viel",
     "word_reading": "",
     "word_label": "Indefinitpronomen",
+    "comic_difficulty": 6.03,
+    "jp": [
+      "Ich habe nicht soviel Zeit.",
+      "Das kostet nicht soviel.",
+      "Wir brauchen heute soviel Wasser.",
+      "Er redet wieder soviel."
+    ],
+    "fu": [
+      "/ɪç ˈhaːbə nɪçt zoːˈfiːl tsaɪ̯t/",
+      "/das ˈkɔstət nɪçt zoːˈfiːl/",
+      "/viːɐ̯ ˈbʁaʊ̯xən ˈhɔʏ̯tə zoːˈfiːl ˈvasɐ/",
+      "/eːɐ̯ ˈʁeːdət ˈviːdɐ zoːˈfiːl/"
+    ],
+    "pos_analysis": [
+      {
+        "sentence": "Ich habe nicht so viel Zeit.",
+        "tokens": [
+          {
+            "surface": "Ich",
+            "lemma": "ich",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "habe",
+            "lemma": "haben",
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "VAFIN",
+            "feats": {},
+            "start": 4,
+            "end": 8,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "nicht",
+            "lemma": "nicht",
+            "pos": "PART",
+            "upos": "PART",
+            "xpos": "PTKNEG",
+            "feats": {},
+            "start": 9,
+            "end": 14,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "so",
+            "lemma": "so",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 15,
+            "end": 17,
+            "analyzer": "spacy_de_core_news_lg",
+            "is_main_word": true
+          },
+          {
+            "surface": "viel",
+            "lemma": "viel",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "PIAT",
+            "feats": {},
+            "start": 18,
+            "end": 22,
+            "analyzer": "spacy_de_core_news_lg",
+            "is_main_word": true
+          },
+          {
+            "surface": "Zeit",
+            "lemma": "Zeit",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 23,
+            "end": 27,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 27,
+            "end": 28,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "difficulty_aggregated": 6
+      },
+      {
+        "sentence": "Das kostet nicht so viel.",
+        "tokens": [
+          {
+            "surface": "Das",
+            "lemma": "der",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PDS",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "kostet",
+            "lemma": "kosten",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 4,
+            "end": 10,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "nicht",
+            "lemma": "nicht",
+            "pos": "PART",
+            "upos": "PART",
+            "xpos": "PTKNEG",
+            "feats": {},
+            "start": 11,
+            "end": 16,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "so",
+            "lemma": "so",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 17,
+            "end": 19,
+            "analyzer": "spacy_de_core_news_lg",
+            "is_main_word": true
+          },
+          {
+            "surface": "viel",
+            "lemma": "viel",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PIS",
+            "feats": {},
+            "start": 20,
+            "end": 24,
+            "analyzer": "spacy_de_core_news_lg",
+            "is_main_word": true
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 24,
+            "end": 25,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "difficulty_aggregated": 5.75
+      },
+      {
+        "sentence": "Wir brauchen heute so viel Wasser.",
+        "tokens": [
+          {
+            "surface": "Wir",
+            "lemma": "wir",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "brauchen",
+            "lemma": "brauchen",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 4,
+            "end": 12,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "heute",
+            "lemma": "heute",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 13,
+            "end": 18,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "so",
+            "lemma": "so",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 19,
+            "end": 21,
+            "analyzer": "spacy_de_core_news_lg",
+            "is_main_word": true
+          },
+          {
+            "surface": "viel",
+            "lemma": "viel",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "PIAT",
+            "feats": {},
+            "start": 22,
+            "end": 26,
+            "analyzer": "spacy_de_core_news_lg",
+            "is_main_word": true
+          },
+          {
+            "surface": "Wasser",
+            "lemma": "Wasser",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 27,
+            "end": 33,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 33,
+            "end": 34,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "difficulty_aggregated": 6.6
+      },
+      {
+        "sentence": "Er redet wieder so viel.",
+        "tokens": [
+          {
+            "surface": "Er",
+            "lemma": "er",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "redet",
+            "lemma": "reden",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 3,
+            "end": 8,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "wieder",
+            "lemma": "wieder",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 9,
+            "end": 15,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "so",
+            "lemma": "so",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 16,
+            "end": 18,
+            "analyzer": "spacy_de_core_news_lg",
+            "is_main_word": true
+          },
+          {
+            "surface": "viel",
+            "lemma": "viel",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PIS",
+            "feats": {},
+            "start": 19,
+            "end": 23,
+            "analyzer": "spacy_de_core_news_lg",
+            "is_main_word": true
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 23,
+            "end": 24,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "difficulty_aggregated": 5.75
+      }
+    ],
+    "word_POS": "Other",
+    "entry_id": "soviel__v2",
     "word_en": "so much; as much",
     "word_es": "tanto; tanto como",
     "word_fr": "tant; autant",
@@ -427,375 +1917,12 @@
     "word_da": "så meget; lige så meget",
     "word_fi": "niin paljon; yhtä paljon",
     "word_ja": "それほど多く; 同じくらい",
-    "word_de": "soviel",
-    "comic_difficulty": 6.03,
-    "jp": [
-      "Ich habe nicht soviel Zeit.",
-      "Das kostet nicht soviel.",
-      "Wir brauchen heute soviel Wasser.",
-      "Er redet wieder soviel."
-    ],
-    "fu": [
-      "/ɪç ˈhaːbə nɪçt zoːˈfiːl tsaɪ̯t/",
-      "/das ˈkɔstət nɪçt zoːˈfiːl/",
-      "/viːɐ̯ ˈbʁaʊ̯xən ˈhɔʏ̯tə zoːˈfiːl ˈvasɐ/",
-      "/eːɐ̯ ˈʁeːdət ˈviːdɐ zoːˈfiːl/"
-    ],
-    "de": [
-      "Ich habe nicht soviel Zeit.",
-      "Das kostet nicht soviel.",
-      "Wir brauchen heute soviel Wasser.",
-      "Er redet wieder soviel."
-    ],
-    "ipa": [
-      "/ɪç ˈhaːbə nɪçt zoːˈfiːl tsaɪ̯t/",
-      "/das ˈkɔstət nɪçt zoːˈfiːl/",
-      "/viːɐ̯ ˈbʁaʊ̯xən ˈhɔʏ̯tə zoːˈfiːl ˈvasɐ/",
-      "/eːɐ̯ ˈʁeːdət ˈviːdɐ zoːˈfiːl/"
-    ],
-    "en": [
-      "I don't have that much time.",
-      "That doesn't cost that much.",
-      "We need that much water today.",
-      "He's talking so much again."
-    ],
-    "pos_analysis": [
-      {
-        "sentence": "Ich habe nicht soviel Zeit.",
-        "tokens": [
-          {
-            "surface": "Ich",
-            "surface_en": "I",
-            "furigana": "[ɪç]",
-            "pos": "PRON",
-            "lemma": "ich",
-            "explanation": "Personal pronoun, 1st person singular nominative; subject of the clause.",
-            "difficulty": 2,
-            "is_main_word": false
-          },
-          {
-            "surface": "habe",
-            "surface_en": "have",
-            "furigana": "[ˈhaːbə]",
-            "pos": "VERB",
-            "lemma": "haben",
-            "explanation": "Finite lexical verb, present tense (1st sg); heads the predicate meaning possession.",
-            "difficulty": 7,
-            "is_main_word": false
-          },
-          {
-            "surface": "nicht",
-            "surface_en": "not",
-            "furigana": "[nɪçt]",
-            "pos": "PART",
-            "lemma": "nicht",
-            "explanation": "Negation particle; negates the predicate, scoping over the following quantified NP.",
-            "difficulty": 7,
-            "is_main_word": false
-          },
-          {
-            "surface": "soviel",
-            "surface_en": "so much",
-            "furigana": "[zoːˈfiːl]",
-            "pos": "DET",
-            "lemma": "soviel",
-            "explanation": "Quantifying determiner modifying the noun 'Zeit'; expresses degree/amount.",
-            "difficulty": 7,
-            "is_main_word": true
-          },
-          {
-            "surface": "Zeit.",
-            "surface_en": "time",
-            "furigana": "[tsaɪ̯t]",
-            "pos": "NOUN",
-            "lemma": "Zeit",
-            "explanation": "Head noun of the object NP; mass noun in accusative as direct object of 'haben'.",
-            "difficulty": 7,
-            "is_main_word": false
-          }
-        ],
-        "difficulty_aggregated": 6
-      },
-      {
-        "sentence": "Das kostet nicht soviel.",
-        "tokens": [
-          {
-            "surface": "Das",
-            "surface_en": "that",
-            "furigana": "[das]",
-            "pos": "PRON",
-            "lemma": "das",
-            "explanation": "Demonstrative pronoun functioning as the subject; refers to a previously mentioned entity.",
-            "difficulty": 2,
-            "is_main_word": false
-          },
-          {
-            "surface": "kostet",
-            "surface_en": "costs",
-            "furigana": "[ˈkɔstət]",
-            "pos": "VERB",
-            "lemma": "kosten",
-            "explanation": "Finite lexical verb, present tense (3rd sg); expresses price/expense.",
-            "difficulty": 7,
-            "is_main_word": false
-          },
-          {
-            "surface": "nicht",
-            "surface_en": "not",
-            "furigana": "[nɪçt]",
-            "pos": "PART",
-            "lemma": "nicht",
-            "explanation": "Negation particle; negates the degree/amount expressed by the following quantifier.",
-            "difficulty": 7,
-            "is_main_word": false
-          },
-          {
-            "surface": "soviel.",
-            "surface_en": "so much",
-            "furigana": "[zoːˈfiːl]",
-            "pos": "PRON",
-            "lemma": "soviel",
-            "explanation": "Quantifying pronoun standing alone; measure complement specifying amount/price.",
-            "difficulty": 7,
-            "is_main_word": true
-          }
-        ],
-        "difficulty_aggregated": 5.75
-      },
-      {
-        "sentence": "Wir brauchen heute soviel Wasser.",
-        "tokens": [
-          {
-            "surface": "Wir",
-            "surface_en": "we",
-            "furigana": "[viːɐ̯]",
-            "pos": "PRON",
-            "lemma": "wir",
-            "explanation": "Personal pronoun, 1st person plural nominative; subject of the clause.",
-            "difficulty": 2,
-            "is_main_word": false
-          },
-          {
-            "surface": "brauchen",
-            "surface_en": "need",
-            "furigana": "[ˈbʁaʊ̯xən]",
-            "pos": "VERB",
-            "lemma": "brauchen",
-            "explanation": "Finite lexical verb, present tense (1st pl form); heads the predicate meaning necessity.",
-            "difficulty": 10,
-            "is_main_word": false
-          },
-          {
-            "surface": "heute",
-            "surface_en": "today",
-            "furigana": "[ˈhɔʏ̯tə]",
-            "pos": "ADV",
-            "lemma": "heute",
-            "explanation": "Temporal adverb; modifies the predicate by specifying time.",
-            "difficulty": 7,
-            "is_main_word": false
-          },
-          {
-            "surface": "soviel",
-            "surface_en": "so much",
-            "furigana": "[zoːˈfiːl]",
-            "pos": "DET",
-            "lemma": "soviel",
-            "explanation": "Quantifying determiner modifying 'Wasser'; indicates amount.",
-            "difficulty": 7,
-            "is_main_word": true
-          },
-          {
-            "surface": "Wasser.",
-            "surface_en": "water",
-            "furigana": "[ˈvasɐ]",
-            "pos": "NOUN",
-            "lemma": "Wasser",
-            "explanation": "Head noun of the object NP; mass noun in accusative as direct object of 'brauchen'.",
-            "difficulty": 7,
-            "is_main_word": false
-          }
-        ],
-        "difficulty_aggregated": 6.6
-      },
-      {
-        "sentence": "Er redet wieder soviel.",
-        "tokens": [
-          {
-            "surface": "Er",
-            "surface_en": "he",
-            "furigana": "[eːɐ̯]",
-            "pos": "PRON",
-            "lemma": "er",
-            "explanation": "Personal pronoun, 3rd person singular nominative; subject of the clause.",
-            "difficulty": 2,
-            "is_main_word": false
-          },
-          {
-            "surface": "redet",
-            "surface_en": "talks",
-            "furigana": "[ˈʁeːdət]",
-            "pos": "VERB",
-            "lemma": "reden",
-            "explanation": "Finite lexical verb, present tense (3rd sg); heads the predicate.",
-            "difficulty": 7,
-            "is_main_word": false
-          },
-          {
-            "surface": "wieder",
-            "surface_en": "again",
-            "furigana": "[ˈviːdɐ]",
-            "pos": "ADV",
-            "lemma": "wieder",
-            "explanation": "Adverb expressing repetition/iteration; modifies the verb phrase.",
-            "difficulty": 7,
-            "is_main_word": false
-          },
-          {
-            "surface": "soviel.",
-            "surface_en": "so much",
-            "furigana": "[zoːˈfiːl]",
-            "pos": "ADV",
-            "lemma": "soviel",
-            "explanation": "Degree adverb quantifying the extent/amount of talking; modifies 'redet'.",
-            "difficulty": 7,
-            "is_main_word": true
-          }
-        ],
-        "difficulty_aggregated": 5.75
-      }
-    ],
-    "es": [
-      "No tengo tanto tiempo.",
-      "Eso no cuesta tanto.",
-      "Hoy necesitamos tanta agua.",
-      "Otra vez está hablando tanto."
-    ],
-    "fr": [
-      "Je n'ai pas autant de temps.",
-      "Ça ne coûte pas si cher.",
-      "On a besoin d'autant d'eau aujourd'hui.",
-      "Il parle encore beaucoup."
-    ],
-    "it": [
-      "Non ho così tanto tempo.",
-      "Non costa così tanto.",
-      "Oggi ci serve così tanta acqua.",
-      "Parla di nuovo così tanto."
-    ],
-    "ko": [
-      "저는 시간이 그렇게 많지 않아요.",
-      "그건 그렇게 비싸지 않아요.",
-      "오늘은 물이 그렇게 많이 필요해요.",
-      "또 그렇게 말을 많이 하네요."
-    ],
-    "zh-Hans": [
-      "我没有那么多时间。",
-      "没那么贵。",
-      "我们今天需要这么多水。",
-      "他又说这么多。"
-    ],
-    "yue": [
-      "我冇咁多時間。",
-      "冇咁貴。",
-      "我哋今日要咁多水。",
-      "佢又講咁多嘢。"
-    ],
-    "ru": [
-      "У меня нет столько времени.",
-      "Это стоит не так дорого.",
-      "Нам сегодня нужно столько воды.",
-      "Он снова так много говорит."
-    ],
-    "pt": [
-      "Não tenho tanto tempo.",
-      "Isso não custa tanto.",
-      "Hoje precisamos de tanta água.",
-      "Ele está falando tanto de novo."
-    ],
-    "he": [
-      "אין לי כל כך הרבה זמן.",
-      "זה לא עולה כל כך הרבה.",
-      "היום אנחנו צריכים כל כך הרבה מים.",
-      "הוא שוב מדבר כל כך הרבה."
-    ],
-    "tr": [
-      "O kadar vaktim yok.",
-      "Bu kadar pahalı değil.",
-      "Bugün bu kadar suya ihtiyacımız var.",
-      "Yine çok konuşuyor."
-    ],
-    "vi": [
-      "Tôi không có nhiều thời gian như vậy.",
-      "Nó không đắt đến vậy.",
-      "Hôm nay chúng ta cần nhiều nước đến vậy.",
-      "Anh ấy lại nói nhiều quá."
-    ],
+    "word_de": "so viel",
     "ar": [
       "ليس لدي هذا القدر من الوقت.",
       "هذا لا يكلف هذا القدر.",
       "نحن بحاجة إلى هذا القدر من الماء اليوم.",
       "هو يتحدث كثيرا مرة أخرى."
-    ],
-    "nl": [
-      "Ik heb niet zoveel tijd.",
-      "Dat kost niet zoveel.",
-      "We hebben vandaag zoveel water nodig.",
-      "Hij praat weer zoveel."
-    ],
-    "uk": [
-      "У мене немає стільки часу.",
-      "Це коштує не так дорого.",
-      "Нам сьогодні потрібно стільки води.",
-      "Він знову так багато говорить."
-    ],
-    "hu": [
-      "Nincs ennyi időm.",
-      "Ez nem kerül olyan sokba.",
-      "Ma ennyi vízre van szükségünk.",
-      "Már megint annyit beszél."
-    ],
-    "hi": [
-      "मेरे पास इतना समय नहीं है.",
-      "यह इतना महंगा नहीं है.",
-      "आज हमें इतना पानी चाहिए.",
-      "वह फिर से इतना बोल रहा है."
-    ],
-    "pl": [
-      "Nie mam aż tyle czasu.",
-      "To nie kosztuje aż tyle.",
-      "Dziś potrzebujemy aż tyle wody.",
-      "On znowu tyle mówi."
-    ],
-    "el": [
-      "Δεν έχω τόσο πολύ χρόνο.",
-      "Δεν κοστίζει τόσο πολύ.",
-      "Σήμερα χρειαζόμαστε τόσο πολύ νερό.",
-      "Πάλι μιλάει τόσο πολύ."
-    ],
-    "nb": [
-      "Jeg har ikke så mye tid.",
-      "Det koster ikke så mye.",
-      "I dag trenger vi så mye vann.",
-      "Han snakker så mye igjen."
-    ],
-    "id": [
-      "Saya tidak punya waktu sebanyak itu.",
-      "Itu tidak semahal itu.",
-      "Hari ini kita butuh air sebanyak itu.",
-      "Dia banyak bicara lagi."
-    ],
-    "sv": [
-      "Jag har inte så mycket tid.",
-      "Det kostar inte så mycket.",
-      "I dag behöver vi så mycket vatten.",
-      "Han pratar så mycket igen."
-    ],
-    "ro": [
-      "Nu am atât de mult timp.",
-      "Nu costă atât de mult.",
-      "Astăzi avem nevoie de atâta apă.",
-      "Iar vorbește atât de mult."
     ],
     "cs": [
       "Nemám tolik času.",
@@ -809,11 +1936,77 @@
       "I dag har vi brug for så meget vand.",
       "Han snakker så meget igen."
     ],
+    "de": [
+      "Ich habe nicht soviel Zeit.",
+      "Das kostet nicht soviel.",
+      "Wir brauchen heute soviel Wasser.",
+      "Er redet wieder soviel."
+    ],
+    "el": [
+      "Δεν έχω τόσο πολύ χρόνο.",
+      "Δεν κοστίζει τόσο πολύ.",
+      "Σήμερα χρειαζόμαστε τόσο πολύ νερό.",
+      "Πάλι μιλάει τόσο πολύ."
+    ],
+    "en": [
+      "I don't have that much time.",
+      "That doesn't cost that much.",
+      "We need that much water today.",
+      "He's talking so much again."
+    ],
+    "es": [
+      "No tengo tanto tiempo.",
+      "Eso no cuesta tanto.",
+      "Hoy necesitamos tanta agua.",
+      "Otra vez está hablando tanto."
+    ],
     "fi": [
       "Minulla ei ole niin paljon aikaa.",
       "Se ei maksa niin paljon.",
       "Tänään tarvitsemme niin paljon vettä.",
       "Hän puhuu taas niin paljon."
+    ],
+    "fr": [
+      "Je n'ai pas autant de temps.",
+      "Ça ne coûte pas si cher.",
+      "On a besoin d'autant d'eau aujourd'hui.",
+      "Il parle encore beaucoup."
+    ],
+    "he": [
+      "אין לי כל כך הרבה זמן.",
+      "זה לא עולה כל כך הרבה.",
+      "היום אנחנו צריכים כל כך הרבה מים.",
+      "הוא שוב מדבר כל כך הרבה."
+    ],
+    "hi": [
+      "मेरे पास इतना समय नहीं है.",
+      "यह इतना महंगा नहीं है.",
+      "आज हमें इतना पानी चाहिए.",
+      "वह फिर से इतना बोल रहा है."
+    ],
+    "hu": [
+      "Nincs ennyi időm.",
+      "Ez nem kerül olyan sokba.",
+      "Ma ennyi vízre van szükségünk.",
+      "Már megint annyit beszél."
+    ],
+    "id": [
+      "Saya tidak punya waktu sebanyak itu.",
+      "Itu tidak semahal itu.",
+      "Hari ini kita butuh air sebanyak itu.",
+      "Dia banyak bicara lagi."
+    ],
+    "ipa": [
+      "/ɪç ˈhaːbə nɪçt zoːˈfiːl tsaɪ̯t/",
+      "/das ˈkɔstət nɪçt zoːˈfiːl/",
+      "/viːɐ̯ ˈbʁaʊ̯xən ˈhɔʏ̯tə zoːˈfiːl ˈvasɐ/",
+      "/eːɐ̯ ˈʁeːdət ˈviːdɐ zoːˈfiːl/"
+    ],
+    "it": [
+      "Non ho così tanto tempo.",
+      "Non costa così tanto.",
+      "Oggi ci serve così tanta acqua.",
+      "Parla di nuovo così tanto."
     ],
     "ja": [
       "そんなに時間はありません。",
@@ -821,6 +2014,83 @@
       "今日はそれだけの水が必要です。",
       "また彼はたくさん話しています。"
     ],
-    "word_POS": "Other"
+    "ko": [
+      "저는 시간이 그렇게 많지 않아요.",
+      "그건 그렇게 비싸지 않아요.",
+      "오늘은 물이 그렇게 많이 필요해요.",
+      "또 그렇게 말을 많이 하네요."
+    ],
+    "nb": [
+      "Jeg har ikke så mye tid.",
+      "Det koster ikke så mye.",
+      "I dag trenger vi så mye vann.",
+      "Han snakker så mye igjen."
+    ],
+    "nl": [
+      "Ik heb niet zoveel tijd.",
+      "Dat kost niet zoveel.",
+      "We hebben vandaag zoveel water nodig.",
+      "Hij praat weer zoveel."
+    ],
+    "pl": [
+      "Nie mam aż tyle czasu.",
+      "To nie kosztuje aż tyle.",
+      "Dziś potrzebujemy aż tyle wody.",
+      "On znowu tyle mówi."
+    ],
+    "pt": [
+      "Não tenho tanto tempo.",
+      "Isso não custa tanto.",
+      "Hoje precisamos de tanta água.",
+      "Ele está falando tanto de novo."
+    ],
+    "ro": [
+      "Nu am atât de mult timp.",
+      "Nu costă atât de mult.",
+      "Astăzi avem nevoie de atâta apă.",
+      "Iar vorbește atât de mult."
+    ],
+    "ru": [
+      "У меня нет столько времени.",
+      "Это стоит не так дорого.",
+      "Нам сегодня нужно столько воды.",
+      "Он снова так много говорит."
+    ],
+    "sv": [
+      "Jag har inte så mycket tid.",
+      "Det kostar inte så mycket.",
+      "I dag behöver vi så mycket vatten.",
+      "Han pratar så mycket igen."
+    ],
+    "tr": [
+      "O kadar vaktim yok.",
+      "Bu kadar pahalı değil.",
+      "Bugün bu kadar suya ihtiyacımız var.",
+      "Yine çok konuşuyor."
+    ],
+    "uk": [
+      "У мене немає стільки часу.",
+      "Це коштує не так дорого.",
+      "Нам сьогодні потрібно стільки води.",
+      "Він знову так багато говорить."
+    ],
+    "vi": [
+      "Tôi không có nhiều thời gian như vậy.",
+      "Nó không đắt đến vậy.",
+      "Hôm nay chúng ta cần nhiều nước đến vậy.",
+      "Anh ấy lại nói nhiều quá."
+    ],
+    "yue": [
+      "我冇咁多時間。",
+      "冇咁貴。",
+      "我哋今日要咁多水。",
+      "佢又講咁多嘢。"
+    ],
+    "zh-Hans": [
+      "我没有那么多时间。",
+      "没那么贵。",
+      "我们今天需要这么多水。",
+      "他又说这么多。"
+    ]
   }
 }

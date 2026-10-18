@@ -239,10 +239,10 @@
       "difficulty": 5.83
     },
     {
-      "target": "Wir haben gestern einen Verlust gemacht.",
+      "target": "Wir haben gestern einen Verlust erlitten.",
       "reading": "/viːɐ̯ ˈhaːbən ˈɡɛstɐn fɛɐ̯ˈlʊst ɡəˈmaxt/",
       "translations": {
-        "de": "Wir haben gestern einen Verlust gemacht.",
+        "de": "Wir haben gestern einen Verlust erlitten.",
         "ipa": "/viːɐ̯ ˈhaːbən ˈɡɛstɐn fɛɐ̯ˈlʊst ɡəˈmaxt/",
         "en": "We made a loss yesterday.",
         "es": "Ayer tuvimos pérdidas.",
@@ -266,7 +266,7 @@
         "nb": "I går gikk vi med tap.",
         "id": "Kemarin kami rugi.",
         "sv": "Igår gick vi med förlust.",
-        "ro": "Ieri am avut pierdere.",
+        "ro": "Ieri am înregistrat o pierdere.",
         "cs": "Včera jsme měli ztrátu.",
         "da": "I går havde vi underskud.",
         "fi": "Eilen teimme tappiota.",
@@ -275,58 +275,81 @@
       "tokens": [
         {
           "surface": "Wir",
-          "surface_en": "we",
-          "furigana": "[viːɐ̯]",
-          "pos": "PRON",
           "lemma": "wir",
-          "explanation": "Personal pronoun; nominative plural; subject.",
-          "difficulty": 2
+          "pos": "PRON",
+          "upos": "PRON",
+          "xpos": "PPER",
+          "feats": {},
+          "start": 0,
+          "end": 3,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "haben",
-          "surface_en": "have",
-          "furigana": "[ˈhaːbən]",
-          "pos": "AUX",
           "lemma": "haben",
-          "explanation": "Auxiliary; forms perfect tense.",
-          "difficulty": 7
+          "pos": "AUX",
+          "upos": "AUX",
+          "xpos": "VAFIN",
+          "feats": {},
+          "start": 4,
+          "end": 9,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "gestern",
-          "surface_en": "yesterday",
-          "furigana": "[ˈɡɛstɐn]",
-          "pos": "ADV",
           "lemma": "gestern",
-          "explanation": "Temporal adverb; clause-level modifier.",
-          "difficulty": 10
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "ADV",
+          "feats": {},
+          "start": 10,
+          "end": 17,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "einen",
-          "surface_en": "a",
-          "furigana": "[ˈaɪ̯nən]",
-          "pos": "DET",
           "lemma": "ein",
-          "explanation": "Indefinite article; accusative masculine singular; marks 'Verlust'.",
-          "difficulty": 7
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "ART",
+          "feats": {},
+          "start": 18,
+          "end": 23,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "Verlust",
-          "surface_en": "loss",
-          "furigana": "[fɛɐˈlʊst]",
-          "pos": "NOUN",
           "lemma": "Verlust",
-          "explanation": "Noun; masculine singular; object in 'Verlust machen'.",
-          "difficulty": 10,
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 24,
+          "end": 31,
+          "analyzer": "spacy_de_core_news_lg",
           "is_main_word": true
         },
         {
-          "surface": "gemacht.",
-          "surface_en": "made",
-          "furigana": "[ɡəˈmaxt]",
+          "surface": "erlitten",
+          "lemma": "erleiden",
           "pos": "VERB",
-          "lemma": "machen",
-          "explanation": "Past participle; main verb of perfect.",
-          "difficulty": 10
+          "upos": "VERB",
+          "xpos": "VVPP",
+          "feats": {},
+          "start": 32,
+          "end": 40,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 40,
+          "end": 41,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 7.67
@@ -445,8 +468,292 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-15T04:37:37Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:De b1/5eba9764be1173c2",
+      "revision_id": 84849,
+      "parent_revision_id": 18270,
+      "revision_timestamp_utc": "2026-10-15T04:37:37Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Use the standard German collocation for suffering a financial loss and complete the Romanian sentence grammatically.",
+      "pulled_utc": "2026-10-17T07:06:39Z",
+      "applied_utc": "2026-10-17T07:06:51Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-54c5607962519db4",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_b1:5eba9764be1173c2",
+        "pack_code": "de_b1",
+        "entry_id": "Verlust",
+        "language": "de",
+        "sentence_index": 3,
+        "old_sentence": "Wir haben gestern einen Verlust gemacht.",
+        "old_translations": {
+          "de": "Wir haben gestern einen Verlust gemacht.",
+          "ipa": "/viːɐ̯ ˈhaːbən ˈɡɛstɐn fɛɐ̯ˈlʊst ɡəˈmaxt/",
+          "en": "We made a loss yesterday.",
+          "es": "Ayer tuvimos pérdidas.",
+          "fr": "Hier, nous avons perdu de l'argent.",
+          "it": "Ieri abbiamo avuto una perdita.",
+          "ko": "어제 우리는 손해를 봤어요.",
+          "zh-Hans": "昨天我们亏了。",
+          "yue": "我哋尋日蝕咗。",
+          "ru": "Вчера мы понесли убыток.",
+          "pt": "Ontem tivemos prejuízo.",
+          "he": "אתמול הפסדנו כסף.",
+          "tr": "Dün zarar ettik.",
+          "vi": "Hôm qua chúng tôi bị lỗ.",
+          "ar": "أمس تكبدنا خسارة.",
+          "nl": "Gisteren draaiden we verlies.",
+          "uk": "Учора ми зазнали збитків.",
+          "hu": "Tegnap veszteségünk volt.",
+          "hi": "कल हमें घाटा हुआ.",
+          "pl": "Wczoraj ponieśliśmy stratę.",
+          "el": "Χθες είχαμε ζημιά.",
+          "nb": "I går gikk vi med tap.",
+          "id": "Kemarin kami rugi.",
+          "sv": "Igår gick vi med förlust.",
+          "ro": "Ieri am avut pierdere.",
+          "cs": "Včera jsme měli ztrátu.",
+          "da": "I går havde vi underskud.",
+          "fi": "Eilen teimme tappiota.",
+          "ja": "昨日は赤字でした。"
+        },
+        "proposed_sentence": "Wir haben gestern einen Verlust erlitten.",
+        "proposed_translations": {
+          "de": "Wir haben gestern einen Verlust erlitten.",
+          "ipa": "/viːɐ̯ ˈhaːbən ˈɡɛstɐn fɛɐ̯ˈlʊst ɡəˈmaxt/",
+          "en": "We made a loss yesterday.",
+          "es": "Ayer tuvimos pérdidas.",
+          "fr": "Hier, nous avons perdu de l'argent.",
+          "it": "Ieri abbiamo avuto una perdita.",
+          "ko": "어제 우리는 손해를 봤어요.",
+          "zh-Hans": "昨天我们亏了。",
+          "yue": "我哋尋日蝕咗。",
+          "ru": "Вчера мы понесли убыток.",
+          "pt": "Ontem tivemos prejuízo.",
+          "he": "אתמול הפסדנו כסף.",
+          "tr": "Dün zarar ettik.",
+          "vi": "Hôm qua chúng tôi bị lỗ.",
+          "ar": "أمس تكبدنا خسارة.",
+          "nl": "Gisteren draaiden we verlies.",
+          "uk": "Учора ми зазнали збитків.",
+          "hu": "Tegnap veszteségünk volt.",
+          "hi": "कल हमें घाटा हुआ.",
+          "pl": "Wczoraj ponieśliśmy stratę.",
+          "el": "Χθες είχαμε ζημιά.",
+          "nb": "I går gikk vi med tap.",
+          "id": "Kemarin kami rugi.",
+          "sv": "Igår gick vi med förlust.",
+          "ro": "Ieri am înregistrat o pierdere.",
+          "cs": "Včera jsme měli ztrátu.",
+          "da": "I går havde vi underskud.",
+          "fi": "Eilen teimme tappiota.",
+          "ja": "昨日は赤字でした。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Wir haben gestern einen Verlust erlitten.",
+        "old_japanese": "Wir haben gestern einen Verlust gemacht.",
+        "old_english": "We made a loss yesterday.",
+        "proposed_japanese": "Wir haben gestern einen Verlust erlitten.",
+        "proposed_english": "We made a loss yesterday.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Wir haben gestern einen Verlust erlitten.",
+          "tokens": [
+            {
+              "surface": "Wir",
+              "lemma": "wir",
+              "pos": "PRON",
+              "upos": "PRON",
+              "xpos": "PPER",
+              "feats": {},
+              "start": 0,
+              "end": 3,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "haben",
+              "lemma": "haben",
+              "pos": "AUX",
+              "upos": "AUX",
+              "xpos": "VAFIN",
+              "feats": {},
+              "start": 4,
+              "end": 9,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "gestern",
+              "lemma": "gestern",
+              "pos": "ADV",
+              "upos": "ADV",
+              "xpos": "ADV",
+              "feats": {},
+              "start": 10,
+              "end": 17,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "einen",
+              "lemma": "ein",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "ART",
+              "feats": {},
+              "start": 18,
+              "end": 23,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Verlust",
+              "lemma": "Verlust",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 24,
+              "end": 31,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "erlitten",
+              "lemma": "erleiden",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVPP",
+              "feats": {},
+              "start": 32,
+              "end": 40,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 40,
+              "end": 41,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Wir",
+            "lemma": "wir",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "haben",
+            "lemma": "haben",
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "VAFIN",
+            "feats": {},
+            "start": 4,
+            "end": 9,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "gestern",
+            "lemma": "gestern",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 10,
+            "end": 17,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "einen",
+            "lemma": "ein",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 18,
+            "end": 23,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Verlust",
+            "lemma": "Verlust",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 24,
+            "end": 31,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "erlitten",
+            "lemma": "erleiden",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVPP",
+            "feats": {},
+            "start": 32,
+            "end": 40,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 40,
+            "end": 41,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:06:39Z",
+        "updated_utc": "2026-10-17T07:07:06Z",
+        "applied_utc": "2026-10-17T07:07:06Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:07:06Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -458,34 +765,6 @@
     "word": "Verlust",
     "word_reading": "",
     "word_label": "Substantiv (der mask.)",
-    "word_en": "loss; casualty",
-    "word_es": "pérdida; bajas",
-    "word_fr": "perte; pertes humaines",
-    "word_it": "perdita; perdite umane",
-    "word_ko": "손실; 인명 피해",
-    "word_zh-Hans": "损失; 人员伤亡",
-    "word_yue": "損失; 人員傷亡",
-    "word_ru": "потеря; людские потери",
-    "word_pt": "perda; baixas",
-    "word_he": "אובדן; אבדות בנפש",
-    "word_tr": "kayıp; zayiat",
-    "word_vi": "tổn thất; thương vong",
-    "word_ar": "خسارة; خسائر بشرية",
-    "word_nl": "verlies; menselijke verliezen",
-    "word_uk": "втрата; людські втрати",
-    "word_hu": "veszteség; emberveszteség",
-    "word_hi": "हानि; जनहानि",
-    "word_pl": "strata; straty ludzkie",
-    "word_el": "απώλεια; ανθρώπινες απώλειες",
-    "word_nb": "tap; menneskelige tap",
-    "word_id": "kerugian; korban jiwa",
-    "word_sv": "förlust; mänskliga förluster",
-    "word_ro": "pierdere; pierderi umane",
-    "word_cs": "ztráta; lidské ztráty",
-    "word_da": "tab; menneskelige tab",
-    "word_fi": "menetys; henkilötappiot",
-    "word_ja": "損失; 人的被害",
-    "word_de": "Verlust",
     "comic_difficulty": 6.8,
     "jp": [
       "Der Verlust macht mich immer noch traurig.",
@@ -498,24 +777,6 @@
       "/ɪç ˈmɛldə deːn fɛɐ̯ˈlʊst ˈmaɪ̯nɐ ˈkaʁtə/",
       "/viːɐ̯ ˈhaːbən ˈɡɛstɐn fɛɐ̯ˈlʊst ɡəˈmaxt/",
       "/zaɪ̯n fɛɐ̯ˈlʊst tʁɪft diː faˈmiːli̯ə zeːɐ̯ haʁt/"
-    ],
-    "de": [
-      "Der Verlust macht mich immer noch traurig.",
-      "Ich melde den Verlust meiner Karte.",
-      "Wir haben gestern einen Verlust gemacht.",
-      "Sein Verlust trifft die Familie sehr hart."
-    ],
-    "ipa": [
-      "/deːɐ̯ fɛɐ̯ˈlʊst maxt mɪç ˈɪmɐ nɔx ˈtʁaʊ̯ʁɪç/",
-      "/ɪç ˈmɛldə deːn fɛɐ̯ˈlʊst ˈmaɪ̯nɐ ˈkaʁtə/",
-      "/viːɐ̯ ˈhaːbən ˈɡɛstɐn fɛɐ̯ˈlʊst ɡəˈmaxt/",
-      "/zaɪ̯n fɛɐ̯ˈlʊst tʁɪft diː faˈmiːli̯ə zeːɐ̯ haʁt/"
-    ],
-    "en": [
-      "The loss still makes me sad.",
-      "I'm reporting the loss of my card.",
-      "We made a loss yesterday.",
-      "His loss hits the family very hard."
     ],
     "pos_analysis": [
       {
@@ -650,62 +911,85 @@
         "difficulty_aggregated": 5.83
       },
       {
-        "sentence": "Wir haben gestern einen Verlust gemacht.",
+        "sentence": "Wir haben gestern einen Verlust erlitten.",
         "tokens": [
           {
             "surface": "Wir",
-            "surface_en": "we",
-            "furigana": "[viːɐ̯]",
-            "pos": "PRON",
             "lemma": "wir",
-            "explanation": "Personal pronoun; nominative plural; subject.",
-            "difficulty": 2
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "haben",
-            "surface_en": "have",
-            "furigana": "[ˈhaːbən]",
-            "pos": "AUX",
             "lemma": "haben",
-            "explanation": "Auxiliary; forms perfect tense.",
-            "difficulty": 7
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "VAFIN",
+            "feats": {},
+            "start": 4,
+            "end": 9,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "gestern",
-            "surface_en": "yesterday",
-            "furigana": "[ˈɡɛstɐn]",
-            "pos": "ADV",
             "lemma": "gestern",
-            "explanation": "Temporal adverb; clause-level modifier.",
-            "difficulty": 10
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 10,
+            "end": 17,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "einen",
-            "surface_en": "a",
-            "furigana": "[ˈaɪ̯nən]",
-            "pos": "DET",
             "lemma": "ein",
-            "explanation": "Indefinite article; accusative masculine singular; marks 'Verlust'.",
-            "difficulty": 7
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 18,
+            "end": 23,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "Verlust",
-            "surface_en": "loss",
-            "furigana": "[fɛɐˈlʊst]",
-            "pos": "NOUN",
             "lemma": "Verlust",
-            "explanation": "Noun; masculine singular; object in 'Verlust machen'.",
-            "difficulty": 10,
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 24,
+            "end": 31,
+            "analyzer": "spacy_de_core_news_lg",
             "is_main_word": true
           },
           {
-            "surface": "gemacht.",
-            "surface_en": "made",
-            "furigana": "[ɡəˈmaxt]",
+            "surface": "erlitten",
+            "lemma": "erleiden",
             "pos": "VERB",
-            "lemma": "machen",
-            "explanation": "Past participle; main verb of perfect.",
-            "difficulty": 10
+            "upos": "VERB",
+            "xpos": "VVPP",
+            "feats": {},
+            "start": 32,
+            "end": 40,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 40,
+            "end": 41,
+            "analyzer": "spacy_de_core_news_lg"
           }
         ],
         "difficulty_aggregated": 7.67
@@ -781,137 +1065,41 @@
         "difficulty_aggregated": 7.14
       }
     ],
-    "es": [
-      "La pérdida aún me entristece.",
-      "Quiero reportar la pérdida de mi tarjeta.",
-      "Ayer tuvimos pérdidas.",
-      "Su pérdida ha sido un golpe muy duro para la familia."
-    ],
-    "fr": [
-      "Cette perte me rend encore triste.",
-      "Je viens déclarer la perte de ma carte.",
-      "Hier, nous avons perdu de l'argent.",
-      "Sa disparition touche la famille très durement."
-    ],
-    "it": [
-      "La perdita mi rende ancora triste.",
-      "Voglio segnalare lo smarrimento della mia carta.",
-      "Ieri abbiamo avuto una perdita.",
-      "La sua perdita colpisce duramente la famiglia."
-    ],
-    "ko": [
-      "그 상실이 아직도 나를 슬프게 해.",
-      "제 카드 분실 신고를 하려고 합니다.",
-      "어제 우리는 손해를 봤어요.",
-      "그의 상실은 가족에게 큰 타격이 된다."
-    ],
-    "zh-Hans": [
-      "这次失去至今仍让我难过。",
-      "我来挂失我的卡。",
-      "昨天我们亏了。",
-      "他的离去让这个家庭深受打击。"
-    ],
-    "yue": [
-      "呢個失去到而家仲令我難過。",
-      "我嚟報失我張卡。",
-      "我哋尋日蝕咗。",
-      "佢嘅離開令屋企受到好大打擊。"
-    ],
-    "ru": [
-      "Эта утрата до сих пор меня огорчает.",
-      "Я хочу сообщить о потере моей карты.",
-      "Вчера мы понесли убыток.",
-      "Его утрата тяжело ударила по семье."
-    ],
-    "pt": [
-      "A perda ainda me deixa triste.",
-      "Quero comunicar a perda do meu cartão.",
-      "Ontem tivemos prejuízo.",
-      "A perda dele é um golpe muito duro para a família."
-    ],
-    "he": [
-      "האובדן עדיין מעציב אותי.",
-      "אני רוצה לדווח על אובדן הכרטיס שלי.",
-      "אתמול הפסדנו כסף.",
-      "האובדן שלו הוא מכה קשה למשפחה."
-    ],
-    "tr": [
-      "Kayıp hâlâ beni üzüyor.",
-      "Kartımın kaybolduğunu bildirmek istiyorum.",
-      "Dün zarar ettik.",
-      "Onun kaybı aileyi çok ağır etkiliyor."
-    ],
-    "vi": [
-      "Nỗi mất mát ấy vẫn khiến tôi buồn.",
-      "Tôi muốn báo mất thẻ của mình.",
-      "Hôm qua chúng tôi bị lỗ.",
-      "Sự mất mát của anh ấy khiến gia đình bị ảnh hưởng nặng nề."
-    ],
+    "word_POS": "Noun",
+    "entry_id": "Verlust",
+    "word_en": "loss; casualty",
+    "word_es": "pérdida; bajas",
+    "word_fr": "perte; pertes humaines",
+    "word_it": "perdita; perdite umane",
+    "word_ko": "손실; 인명 피해",
+    "word_zh-Hans": "损失; 人员伤亡",
+    "word_yue": "損失; 人員傷亡",
+    "word_ru": "потеря; людские потери",
+    "word_pt": "perda; baixas",
+    "word_he": "אובדן; אבדות בנפש",
+    "word_tr": "kayıp; zayiat",
+    "word_vi": "tổn thất; thương vong",
+    "word_ar": "خسارة; خسائر بشرية",
+    "word_nl": "verlies; menselijke verliezen",
+    "word_uk": "втрата; людські втрати",
+    "word_hu": "veszteség; emberveszteség",
+    "word_hi": "हानि; जनहानि",
+    "word_pl": "strata; straty ludzkie",
+    "word_el": "απώλεια; ανθρώπινες απώλειες",
+    "word_nb": "tap; menneskelige tap",
+    "word_id": "kerugian; korban jiwa",
+    "word_sv": "förlust; mänskliga förluster",
+    "word_ro": "pierdere; pierderi umane",
+    "word_cs": "ztráta; lidské ztráty",
+    "word_da": "tab; menneskelige tab",
+    "word_fi": "menetys; henkilötappiot",
+    "word_ja": "損失; 人的被害",
+    "word_de": "Verlust",
     "ar": [
       "الخسارة ما زالت تحزنني.",
       "أريد الإبلاغ عن فقدان بطاقتي.",
       "أمس تكبدنا خسارة.",
       "فقدانه يشكل ضربة قاسية للعائلة."
-    ],
-    "nl": [
-      "Het verlies maakt me nog steeds verdrietig.",
-      "Ik wil melden dat ik mijn kaart ben kwijtgeraakt.",
-      "Gisteren draaiden we verlies.",
-      "Zijn verlies treft de familie heel hard."
-    ],
-    "uk": [
-      "Ця втрата досі засмучує мене.",
-      "Хочу повідомити про втрату своєї картки.",
-      "Учора ми зазнали збитків.",
-      "Його втрата дуже боляче вдарила по родині."
-    ],
-    "hu": [
-      "A veszteség még mindig elszomorít.",
-      "Szeretném bejelenteni, hogy elvesztettem a kártyámat.",
-      "Tegnap veszteségünk volt.",
-      "Az ő elvesztése nagyon súlyosan érinti a családot."
-    ],
-    "hi": [
-      "यह हानि अब भी मुझे दुखी करती है.",
-      "मैं अपने कार्ड के खो जाने की रिपोर्ट करना चाहता हूँ.",
-      "कल हमें घाटा हुआ.",
-      "उसका खोना परिवार को बहुत बुरी तरह प्रभावित करता है."
-    ],
-    "pl": [
-      "Ta strata wciąż mnie zasmuca.",
-      "Chcę zgłosić utratę mojej karty.",
-      "Wczoraj ponieśliśmy stratę.",
-      "Jego strata bardzo mocno uderzyła w rodzinę."
-    ],
-    "el": [
-      "Η απώλεια με στενοχωρεί ακόμα.",
-      "Θέλω να δηλώσω την απώλεια της κάρτας μου.",
-      "Χθες είχαμε ζημιά.",
-      "Η απώλεια του είναι βαρύ πλήγμα για την οικογένεια."
-    ],
-    "nb": [
-      "Tapet gjør meg fortsatt trist.",
-      "Jeg vil melde tapet av kortet mitt.",
-      "I går gikk vi med tap.",
-      "Hans bortgang rammer familien veldig hardt."
-    ],
-    "id": [
-      "Kehilangan itu masih membuatku sedih.",
-      "Saya ingin melaporkan kartu saya yang hilang.",
-      "Kemarin kami rugi.",
-      "Kepergiannya sangat memukul keluarga."
-    ],
-    "sv": [
-      "Förlusten gör mig fortfarande ledsen.",
-      "Jag vill anmäla förlusten av mitt kort.",
-      "Igår gick vi med förlust.",
-      "Hans bortgång drabbar familjen väldigt hårt."
-    ],
-    "ro": [
-      "Pierderea încă mă întristează.",
-      "Vreau să anunț pierderea cardului meu.",
-      "Ieri am avut pierdere.",
-      "Pierderea lui lovește familia foarte puternic."
     ],
     "cs": [
       "Ta ztráta mě stále zarmucuje.",
@@ -925,11 +1113,77 @@
       "I går havde vi underskud.",
       "Hans bortgang rammer familien meget hårdt."
     ],
+    "de": [
+      "Der Verlust macht mich immer noch traurig.",
+      "Ich melde den Verlust meiner Karte.",
+      "Wir haben gestern einen Verlust gemacht.",
+      "Sein Verlust trifft die Familie sehr hart."
+    ],
+    "el": [
+      "Η απώλεια με στενοχωρεί ακόμα.",
+      "Θέλω να δηλώσω την απώλεια της κάρτας μου.",
+      "Χθες είχαμε ζημιά.",
+      "Η απώλεια του είναι βαρύ πλήγμα για την οικογένεια."
+    ],
+    "en": [
+      "The loss still makes me sad.",
+      "I'm reporting the loss of my card.",
+      "We made a loss yesterday.",
+      "His loss hits the family very hard."
+    ],
+    "es": [
+      "La pérdida aún me entristece.",
+      "Quiero reportar la pérdida de mi tarjeta.",
+      "Ayer tuvimos pérdidas.",
+      "Su pérdida ha sido un golpe muy duro para la familia."
+    ],
     "fi": [
       "Menetys tekee minut yhä surulliseksi.",
       "Haluan ilmoittaa korttini katoamisesta.",
       "Eilen teimme tappiota.",
       "Hänen poismenonsa on perheelle kova isku."
+    ],
+    "fr": [
+      "Cette perte me rend encore triste.",
+      "Je viens déclarer la perte de ma carte.",
+      "Hier, nous avons perdu de l'argent.",
+      "Sa disparition touche la famille très durement."
+    ],
+    "he": [
+      "האובדן עדיין מעציב אותי.",
+      "אני רוצה לדווח על אובדן הכרטיס שלי.",
+      "אתמול הפסדנו כסף.",
+      "האובדן שלו הוא מכה קשה למשפחה."
+    ],
+    "hi": [
+      "यह हानि अब भी मुझे दुखी करती है.",
+      "मैं अपने कार्ड के खो जाने की रिपोर्ट करना चाहता हूँ.",
+      "कल हमें घाटा हुआ.",
+      "उसका खोना परिवार को बहुत बुरी तरह प्रभावित करता है."
+    ],
+    "hu": [
+      "A veszteség még mindig elszomorít.",
+      "Szeretném bejelenteni, hogy elvesztettem a kártyámat.",
+      "Tegnap veszteségünk volt.",
+      "Az ő elvesztése nagyon súlyosan érinti a családot."
+    ],
+    "id": [
+      "Kehilangan itu masih membuatku sedih.",
+      "Saya ingin melaporkan kartu saya yang hilang.",
+      "Kemarin kami rugi.",
+      "Kepergiannya sangat memukul keluarga."
+    ],
+    "ipa": [
+      "/deːɐ̯ fɛɐ̯ˈlʊst maxt mɪç ˈɪmɐ nɔx ˈtʁaʊ̯ʁɪç/",
+      "/ɪç ˈmɛldə deːn fɛɐ̯ˈlʊst ˈmaɪ̯nɐ ˈkaʁtə/",
+      "/viːɐ̯ ˈhaːbən ˈɡɛstɐn fɛɐ̯ˈlʊst ɡəˈmaxt/",
+      "/zaɪ̯n fɛɐ̯ˈlʊst tʁɪft diː faˈmiːli̯ə zeːɐ̯ haʁt/"
+    ],
+    "it": [
+      "La perdita mi rende ancora triste.",
+      "Voglio segnalare lo smarrimento della mia carta.",
+      "Ieri abbiamo avuto una perdita.",
+      "La sua perdita colpisce duramente la famiglia."
     ],
     "ja": [
       "その喪失は今も私を悲しくさせる。",
@@ -937,6 +1191,83 @@
       "昨日は赤字でした。",
       "彼の喪失は家族に大きな打撃だ。"
     ],
-    "word_POS": "Noun"
+    "ko": [
+      "그 상실이 아직도 나를 슬프게 해.",
+      "제 카드 분실 신고를 하려고 합니다.",
+      "어제 우리는 손해를 봤어요.",
+      "그의 상실은 가족에게 큰 타격이 된다."
+    ],
+    "nb": [
+      "Tapet gjør meg fortsatt trist.",
+      "Jeg vil melde tapet av kortet mitt.",
+      "I går gikk vi med tap.",
+      "Hans bortgang rammer familien veldig hardt."
+    ],
+    "nl": [
+      "Het verlies maakt me nog steeds verdrietig.",
+      "Ik wil melden dat ik mijn kaart ben kwijtgeraakt.",
+      "Gisteren draaiden we verlies.",
+      "Zijn verlies treft de familie heel hard."
+    ],
+    "pl": [
+      "Ta strata wciąż mnie zasmuca.",
+      "Chcę zgłosić utratę mojej karty.",
+      "Wczoraj ponieśliśmy stratę.",
+      "Jego strata bardzo mocno uderzyła w rodzinę."
+    ],
+    "pt": [
+      "A perda ainda me deixa triste.",
+      "Quero comunicar a perda do meu cartão.",
+      "Ontem tivemos prejuízo.",
+      "A perda dele é um golpe muito duro para a família."
+    ],
+    "ro": [
+      "Pierderea încă mă întristează.",
+      "Vreau să anunț pierderea cardului meu.",
+      "Ieri am avut pierdere.",
+      "Pierderea lui lovește familia foarte puternic."
+    ],
+    "ru": [
+      "Эта утрата до сих пор меня огорчает.",
+      "Я хочу сообщить о потере моей карты.",
+      "Вчера мы понесли убыток.",
+      "Его утрата тяжело ударила по семье."
+    ],
+    "sv": [
+      "Förlusten gör mig fortfarande ledsen.",
+      "Jag vill anmäla förlusten av mitt kort.",
+      "Igår gick vi med förlust.",
+      "Hans bortgång drabbar familjen väldigt hårt."
+    ],
+    "tr": [
+      "Kayıp hâlâ beni üzüyor.",
+      "Kartımın kaybolduğunu bildirmek istiyorum.",
+      "Dün zarar ettik.",
+      "Onun kaybı aileyi çok ağır etkiliyor."
+    ],
+    "uk": [
+      "Ця втрата досі засмучує мене.",
+      "Хочу повідомити про втрату своєї картки.",
+      "Учора ми зазнали збитків.",
+      "Його втрата дуже боляче вдарила по родині."
+    ],
+    "vi": [
+      "Nỗi mất mát ấy vẫn khiến tôi buồn.",
+      "Tôi muốn báo mất thẻ của mình.",
+      "Hôm qua chúng tôi bị lỗ.",
+      "Sự mất mát của anh ấy khiến gia đình bị ảnh hưởng nặng nề."
+    ],
+    "yue": [
+      "呢個失去到而家仲令我難過。",
+      "我嚟報失我張卡。",
+      "我哋尋日蝕咗。",
+      "佢嘅離開令屋企受到好大打擊。"
+    ],
+    "zh-Hans": [
+      "这次失去至今仍让我难过。",
+      "我来挂失我的卡。",
+      "昨天我们亏了。",
+      "他的离去让这个家庭深受打击。"
+    ]
   }
 }

@@ -124,7 +124,7 @@
       "translations": {
         "de": "Der Lehrer wirkt abwesend.",
         "ipa": "/deːɐ̯ ˈleːʁɐ vɪʁkt ˈapveːzənt/",
-        "en": "The teacher seems absent.",
+        "en": "The teacher seems absent-minded.",
         "es": "El profesor parece distraído.",
         "fr": "Le professeur a l’air absent.",
         "it": "L’insegnante sembra assente.",
@@ -141,12 +141,12 @@
         "uk": "Учитель виглядає розсіяним.",
         "hu": "A tanár szétszórtnak tűnik.",
         "hi": "शिक्षक अनमना लग रहा है.",
-        "pl": "Nauczyciel wydaje się nieobecny.",
+        "pl": "Nauczyciel wydaje się roztargniony.",
         "el": "Ο δάσκαλος φαίνεται αφηρημένος.",
         "nb": "Læreren virker fraværende.",
         "id": "Guru itu terlihat melamun.",
         "sv": "Läraren verkar frånvarande.",
-        "ro": "Profesorul pare absent.",
+        "ro": "Profesorul pare distrat.",
         "cs": "Učitel působí nepřítomně.",
         "da": "Læreren virker fraværende.",
         "fi": "Opettaja vaikuttaa poissaolevalta.",
@@ -287,10 +287,10 @@
       "difficulty": 5.5
     },
     {
-      "target": "Sie ist mit den Gedanken abwesend.",
+      "target": "Sie ist mit den Gedanken woanders.",
       "reading": "/ziː ɪst mɪt deːn ɡəˈdaŋkən ˈapveːzənt/",
       "translations": {
-        "de": "Sie ist mit den Gedanken abwesend.",
+        "de": "Sie ist mit den Gedanken woanders.",
         "ipa": "/ziː ɪst mɪt deːn ɡəˈdaŋkən ˈapveːzənt/",
         "en": "She’s lost in thought.",
         "es": "Está con la cabeza en otra parte.",
@@ -323,58 +323,80 @@
       "tokens": [
         {
           "surface": "Sie",
-          "surface_en": "she",
-          "furigana": "[ziː]",
-          "pos": "PRON",
           "lemma": "sie",
-          "explanation": "Personal pronoun, 3rd person singular feminine nominative; subject.",
-          "difficulty": 2
+          "pos": "PRON",
+          "upos": "PRON",
+          "xpos": "PPER",
+          "feats": {},
+          "start": 0,
+          "end": 3,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "ist",
-          "surface_en": "is",
-          "furigana": "[ɪst]",
-          "pos": "AUX",
           "lemma": "sein",
-          "explanation": "Copular auxiliary, 3rd person singular present indicative; links the subject to the predicate.",
-          "difficulty": 4
+          "pos": "AUX",
+          "upos": "AUX",
+          "xpos": "VAFIN",
+          "feats": {},
+          "start": 4,
+          "end": 7,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "mit",
-          "surface_en": "with",
-          "furigana": "[mɪt]",
-          "pos": "ADP",
           "lemma": "mit",
-          "explanation": "Preposition governing the dative; introduces a prepositional phrase indicating accompaniment/content.",
-          "difficulty": 2
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "APPR",
+          "feats": {},
+          "start": 8,
+          "end": 11,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "den",
-          "surface_en": "the",
-          "furigana": "[deːn]",
-          "pos": "DET",
           "lemma": "der",
-          "explanation": "Definite article, dative plural; determines 'Gedanken' within the prepositional phrase.",
-          "difficulty": 2
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "ART",
+          "feats": {},
+          "start": 12,
+          "end": 15,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "Gedanken",
-          "surface_en": "thoughts",
-          "furigana": "[ɡəˈdaŋkən]",
-          "pos": "NOUN",
           "lemma": "Gedanke",
-          "explanation": "Common noun, plural dative; object of the preposition 'mit', expressing mental content.",
-          "difficulty": 10
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 16,
+          "end": 24,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "abwesend.",
-          "surface_en": "absent",
-          "furigana": "[ˈapveːzənt]",
-          "pos": "ADJ",
-          "lemma": "abwesend",
-          "explanation": "Predicate adjective complement after the copula; denotes the subject’s (mental) state.",
-          "difficulty": 10,
-          "is_main_word": true
+          "surface": "woanders",
+          "lemma": "woanders",
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "ADV",
+          "feats": {},
+          "start": 25,
+          "end": 33,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 33,
+          "end": 34,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 5
@@ -391,8 +413,292 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-14T20:56:19Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:De b1/9458d646eb662758",
+      "revision_id": 86609,
+      "parent_revision_id": 15078,
+      "revision_timestamp_utc": "2026-10-14T20:56:19Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Improve German abwesend sentence and translations",
+      "pulled_utc": "2026-10-17T07:06:41Z",
+      "applied_utc": "2026-10-17T07:06:52Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-8ceb5205c8742cb1",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_b1:9458d646eb662758",
+        "pack_code": "de_b1",
+        "entry_id": "abwesend",
+        "language": "de",
+        "sentence_index": 4,
+        "old_sentence": "Sie ist mit den Gedanken abwesend.",
+        "old_translations": {
+          "de": "Sie ist mit den Gedanken abwesend.",
+          "ipa": "/ziː ɪst mɪt deːn ɡəˈdaŋkən ˈapveːzənt/",
+          "en": "She’s lost in thought.",
+          "es": "Está con la cabeza en otra parte.",
+          "fr": "Elle est dans la lune.",
+          "it": "È persa nei suoi pensieri.",
+          "ko": "그녀는 생각에 잠겨 있다.",
+          "zh-Hans": "她走神了。",
+          "yue": "佢出咗神。",
+          "ru": "Она погружена в свои мысли.",
+          "pt": "Ela está com a cabeça em outro lugar.",
+          "he": "היא שקועה במחשבות.",
+          "tr": "Aklı başka yerde.",
+          "vi": "Cô ấy đang mải suy nghĩ.",
+          "ar": "هي شاردة الذهن.",
+          "nl": "Ze is in gedachten verzonken.",
+          "uk": "Вона заглиблена у свої думки.",
+          "hu": "Gondolataiba merült.",
+          "hi": "वह खयालों में खोई हुई है।",
+          "pl": "Jest zamyślona.",
+          "el": "Είναι χαμένη στις σκέψεις της.",
+          "nb": "Hun er helt borte i sine egne tanker.",
+          "id": "Dia sedang melamun.",
+          "sv": "Hon är försjunken i sina tankar.",
+          "ro": "Este pierdută în gânduri.",
+          "cs": "Je zamyšlená.",
+          "da": "Hun er helt væk i sine egne tanker.",
+          "fi": "Hän on ajatuksissaan.",
+          "ja": "彼女は物思いにふけっている。"
+        },
+        "proposed_sentence": "Sie ist mit den Gedanken woanders.",
+        "proposed_translations": {
+          "de": "Sie ist mit den Gedanken woanders.",
+          "ipa": "/ziː ɪst mɪt deːn ɡəˈdaŋkən ˈapveːzənt/",
+          "en": "She’s lost in thought.",
+          "es": "Está con la cabeza en otra parte.",
+          "fr": "Elle est dans la lune.",
+          "it": "È persa nei suoi pensieri.",
+          "ko": "그녀는 생각에 잠겨 있다.",
+          "zh-Hans": "她走神了。",
+          "yue": "佢出咗神。",
+          "ru": "Она погружена в свои мысли.",
+          "pt": "Ela está com a cabeça em outro lugar.",
+          "he": "היא שקועה במחשבות.",
+          "tr": "Aklı başka yerde.",
+          "vi": "Cô ấy đang mải suy nghĩ.",
+          "ar": "هي شاردة الذهن.",
+          "nl": "Ze is in gedachten verzonken.",
+          "uk": "Вона заглиблена у свої думки.",
+          "hu": "Gondolataiba merült.",
+          "hi": "वह खयालों में खोई हुई है।",
+          "pl": "Jest zamyślona.",
+          "el": "Είναι χαμένη στις σκέψεις της.",
+          "nb": "Hun er helt borte i sine egne tanker.",
+          "id": "Dia sedang melamun.",
+          "sv": "Hon är försjunken i sina tankar.",
+          "ro": "Este pierdută în gânduri.",
+          "cs": "Je zamyšlená.",
+          "da": "Hun er helt væk i sine egne tanker.",
+          "fi": "Hän on ajatuksissaan.",
+          "ja": "彼女は物思いにふけっている。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Sie ist mit den Gedanken woanders.",
+        "old_japanese": "Sie ist mit den Gedanken abwesend.",
+        "old_english": "She’s lost in thought.",
+        "proposed_japanese": "Sie ist mit den Gedanken woanders.",
+        "proposed_english": "She’s lost in thought.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Sie ist mit den Gedanken woanders.",
+          "tokens": [
+            {
+              "surface": "Sie",
+              "lemma": "sie",
+              "pos": "PRON",
+              "upos": "PRON",
+              "xpos": "PPER",
+              "feats": {},
+              "start": 0,
+              "end": 3,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "ist",
+              "lemma": "sein",
+              "pos": "AUX",
+              "upos": "AUX",
+              "xpos": "VAFIN",
+              "feats": {},
+              "start": 4,
+              "end": 7,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "mit",
+              "lemma": "mit",
+              "pos": "ADP",
+              "upos": "ADP",
+              "xpos": "APPR",
+              "feats": {},
+              "start": 8,
+              "end": 11,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "den",
+              "lemma": "der",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "ART",
+              "feats": {},
+              "start": 12,
+              "end": 15,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Gedanken",
+              "lemma": "Gedanke",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 16,
+              "end": 24,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "woanders",
+              "lemma": "woanders",
+              "pos": "ADV",
+              "upos": "ADV",
+              "xpos": "ADV",
+              "feats": {},
+              "start": 25,
+              "end": 33,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 33,
+              "end": 34,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Sie",
+            "lemma": "sie",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "ist",
+            "lemma": "sein",
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "VAFIN",
+            "feats": {},
+            "start": 4,
+            "end": 7,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "mit",
+            "lemma": "mit",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 8,
+            "end": 11,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "den",
+            "lemma": "der",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 12,
+            "end": 15,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Gedanken",
+            "lemma": "Gedanke",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 16,
+            "end": 24,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "woanders",
+            "lemma": "woanders",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 25,
+            "end": 33,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 33,
+            "end": 34,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:06:41Z",
+        "updated_utc": "2026-10-17T07:07:05Z",
+        "applied_utc": "2026-10-17T07:07:05Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:07:05Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -404,34 +710,6 @@
     "word": "abwesend",
     "word_reading": "",
     "word_label": "Adjektiv",
-    "word_en": "absent; absent-minded",
-    "word_es": "ausente; distraído",
-    "word_fr": "absent; distrait",
-    "word_it": "assente; distratto",
-    "word_ko": "부재중인; 멍한",
-    "word_zh-Hans": "缺席的; 心不在焉的",
-    "word_yue": "缺席嘅; 心不在焉嘅",
-    "word_ru": "отсутствующий; рассеянный",
-    "word_pt": "ausente; distraído",
-    "word_he": "נעדר; מפוזר",
-    "word_tr": "bulunmayan; dalgın",
-    "word_vi": "vắng mặt; lơ đãng",
-    "word_ar": "غائب; شارد الذهن",
-    "word_nl": "afwezig; verstrooid",
-    "word_uk": "відсутній; розсіяний",
-    "word_hu": "távollevő; szórakozott",
-    "word_hi": "अनुपस्थित; अनमना",
-    "word_pl": "nieobecny; roztargniony",
-    "word_el": "απών; αφηρημένος",
-    "word_nb": "fraværende; distré",
-    "word_id": "tidak hadir; melamun",
-    "word_sv": "frånvarande; disträ",
-    "word_ro": "absent; distrat",
-    "word_cs": "nepřítomný; roztržitý",
-    "word_da": "fraværende; distræt",
-    "word_fi": "poissaoleva; hajamielinen",
-    "word_ja": "不在の; 上の空の",
-    "word_de": "abwesend",
     "comic_difficulty": 5.69,
     "jp": [
       "Ich bin heute abwesend.",
@@ -444,24 +722,6 @@
       "/deːɐ̯ ˈleːʁɐ vɪʁkt ˈapveːzənt/",
       "/eːɐ̯ ʃaʊ̯t ˈapveːzənt aʊ̯s deːm ˈfɛnstɐ/",
       "/ziː ɪst mɪt deːn ɡəˈdaŋkən ˈapveːzənt/"
-    ],
-    "de": [
-      "Ich bin heute abwesend.",
-      "Der Lehrer wirkt abwesend.",
-      "Er schaut abwesend aus dem Fenster.",
-      "Sie ist mit den Gedanken abwesend."
-    ],
-    "ipa": [
-      "/ɪç bɪn ˈhɔʏtə ˈapveːzənt/",
-      "/deːɐ̯ ˈleːʁɐ vɪʁkt ˈapveːzənt/",
-      "/eːɐ̯ ʃaʊ̯t ˈapveːzənt aʊ̯s deːm ˈfɛnstɐ/",
-      "/ziː ɪst mɪt deːn ɡəˈdaŋkən ˈapveːzənt/"
-    ],
-    "en": [
-      "I’m absent today.",
-      "The teacher seems absent.",
-      "He stares absent-mindedly out the window.",
-      "She’s lost in thought."
     ],
     "pos_analysis": [
       {
@@ -612,198 +872,124 @@
         "difficulty_aggregated": 5.5
       },
       {
-        "sentence": "Sie ist mit den Gedanken abwesend.",
+        "sentence": "Sie ist mit den Gedanken woanders.",
         "tokens": [
           {
             "surface": "Sie",
-            "surface_en": "she",
-            "furigana": "[ziː]",
-            "pos": "PRON",
             "lemma": "sie",
-            "explanation": "Personal pronoun, 3rd person singular feminine nominative; subject.",
-            "difficulty": 2
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "ist",
-            "surface_en": "is",
-            "furigana": "[ɪst]",
-            "pos": "AUX",
             "lemma": "sein",
-            "explanation": "Copular auxiliary, 3rd person singular present indicative; links the subject to the predicate.",
-            "difficulty": 4
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "VAFIN",
+            "feats": {},
+            "start": 4,
+            "end": 7,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "mit",
-            "surface_en": "with",
-            "furigana": "[mɪt]",
-            "pos": "ADP",
             "lemma": "mit",
-            "explanation": "Preposition governing the dative; introduces a prepositional phrase indicating accompaniment/content.",
-            "difficulty": 2
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 8,
+            "end": 11,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "den",
-            "surface_en": "the",
-            "furigana": "[deːn]",
-            "pos": "DET",
             "lemma": "der",
-            "explanation": "Definite article, dative plural; determines 'Gedanken' within the prepositional phrase.",
-            "difficulty": 2
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 12,
+            "end": 15,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "Gedanken",
-            "surface_en": "thoughts",
-            "furigana": "[ɡəˈdaŋkən]",
-            "pos": "NOUN",
             "lemma": "Gedanke",
-            "explanation": "Common noun, plural dative; object of the preposition 'mit', expressing mental content.",
-            "difficulty": 10
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 16,
+            "end": 24,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "abwesend.",
-            "surface_en": "absent",
-            "furigana": "[ˈapveːzənt]",
-            "pos": "ADJ",
-            "lemma": "abwesend",
-            "explanation": "Predicate adjective complement after the copula; denotes the subject’s (mental) state.",
-            "difficulty": 10,
-            "is_main_word": true
+            "surface": "woanders",
+            "lemma": "woanders",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 25,
+            "end": 33,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 33,
+            "end": 34,
+            "analyzer": "spacy_de_core_news_lg"
           }
         ],
         "difficulty_aggregated": 5
       }
     ],
-    "es": [
-      "Hoy no estoy en la oficina.",
-      "El profesor parece distraído.",
-      "Mira por la ventana distraído.",
-      "Está con la cabeza en otra parte."
-    ],
-    "fr": [
-      "Je ne suis pas là aujourd’hui.",
-      "Le professeur a l’air absent.",
-      "Il regarde par la fenêtre d’un air absent.",
-      "Elle est dans la lune."
-    ],
-    "it": [
-      "Oggi non ci sono.",
-      "L’insegnante sembra assente.",
-      "Guarda fuori dalla finestra con lo sguardo assente.",
-      "È persa nei suoi pensieri."
-    ],
-    "ko": [
-      "오늘은 자리에 없습니다.",
-      "선생님이 멍해 보인다.",
-      "그는 창밖을 멍하니 바라본다.",
-      "그녀는 생각에 잠겨 있다."
-    ],
-    "zh-Hans": [
-      "我今天不在办公室。",
-      "老师看起来心不在焉。",
-      "他心不在焉地望着窗外。",
-      "她走神了。"
-    ],
-    "yue": [
-      "我今日唔喺度。",
-      "老師好似心不在焉。",
-      "佢心不在焉咁望住窗外。",
-      "佢出咗神。"
-    ],
-    "ru": [
-      "Меня сегодня нет на работе.",
-      "Учитель выглядит рассеянным.",
-      "Он рассеянно смотрит в окно.",
-      "Она погружена в свои мысли."
-    ],
-    "pt": [
-      "Hoje não estou no escritório.",
-      "O professor parece distraído.",
-      "Ele olha pela janela, distraído.",
-      "Ela está com a cabeça em outro lugar."
-    ],
-    "he": [
-      "אני לא במשרד היום.",
-      "המורה נראה מנותק.",
-      "הוא מביט החוצה מהחלון בהיסח דעת.",
-      "היא שקועה במחשבות."
-    ],
-    "tr": [
-      "Bugün ofiste değilim.",
-      "Öğretmen dalgın görünüyor.",
-      "Pencereden dalgın dalgın bakıyor.",
-      "Aklı başka yerde."
-    ],
-    "vi": [
-      "Hôm nay tôi vắng mặt.",
-      "Giáo viên có vẻ lơ đãng.",
-      "Anh ấy nhìn ra ngoài cửa sổ một cách lơ đãng.",
-      "Cô ấy đang mải suy nghĩ."
-    ],
+    "word_POS": "Adjective",
+    "entry_id": "abwesend",
+    "word_en": "absent; absent-minded",
+    "word_es": "ausente; distraído",
+    "word_fr": "absent; distrait",
+    "word_it": "assente; distratto",
+    "word_ko": "부재중인; 멍한",
+    "word_zh-Hans": "缺席的; 心不在焉的",
+    "word_yue": "缺席嘅; 心不在焉嘅",
+    "word_ru": "отсутствующий; рассеянный",
+    "word_pt": "ausente; distraído",
+    "word_he": "נעדר; מפוזר",
+    "word_tr": "bulunmayan; dalgın",
+    "word_vi": "vắng mặt; lơ đãng",
+    "word_ar": "غائب; شارد الذهن",
+    "word_nl": "afwezig; verstrooid",
+    "word_uk": "відсутній; розсіяний",
+    "word_hu": "távollevő; szórakozott",
+    "word_hi": "अनुपस्थित; अनमना",
+    "word_pl": "nieobecny; roztargniony",
+    "word_el": "απών; αφηρημένος",
+    "word_nb": "fraværende; distré",
+    "word_id": "tidak hadir; melamun",
+    "word_sv": "frånvarande; disträ",
+    "word_ro": "absent; distrat",
+    "word_cs": "nepřítomný; roztržitý",
+    "word_da": "fraværende; distræt",
+    "word_fi": "poissaoleva; hajamielinen",
+    "word_ja": "不在の; 上の空の",
+    "word_de": "abwesend",
     "ar": [
       "أنا غائب اليوم.",
       "يبدو المعلم شارد الذهن.",
       "ينظر من النافذة شارد الذهن.",
       "هي شاردة الذهن."
-    ],
-    "nl": [
-      "Ik ben er vandaag niet.",
-      "De leraar lijkt afwezig.",
-      "Hij staart afwezig uit het raam.",
-      "Ze is in gedachten verzonken."
-    ],
-    "uk": [
-      "Мене сьогодні немає на роботі.",
-      "Учитель виглядає розсіяним.",
-      "Він задумливо дивиться у вікно.",
-      "Вона заглиблена у свої думки."
-    ],
-    "hu": [
-      "Ma nem vagyok bent.",
-      "A tanár szétszórtnak tűnik.",
-      "Szórakozottan bámul kifelé az ablakon.",
-      "Gondolataiba merült."
-    ],
-    "hi": [
-      "मैं आज दफ़्तर में नहीं हूँ.",
-      "शिक्षक अनमना लग रहा है.",
-      "वह खिड़की से बाहर खोए-खोए देखता है।",
-      "वह खयालों में खोई हुई है।"
-    ],
-    "pl": [
-      "Dziś mnie nie ma w pracy.",
-      "Nauczyciel wydaje się nieobecny.",
-      "Patrzy przez okno nieobecnym wzrokiem.",
-      "Jest zamyślona."
-    ],
-    "el": [
-      "Σήμερα δεν είμαι στο γραφείο.",
-      "Ο δάσκαλος φαίνεται αφηρημένος.",
-      "Κοιτάζει έξω από το παράθυρο αφηρημένα.",
-      "Είναι χαμένη στις σκέψεις της."
-    ],
-    "nb": [
-      "Jeg er borte i dag.",
-      "Læreren virker fraværende.",
-      "Han ser ut av vinduet med tomt blikk.",
-      "Hun er helt borte i sine egne tanker."
-    ],
-    "id": [
-      "Hari ini saya tidak di kantor.",
-      "Guru itu terlihat melamun.",
-      "Dia menatap ke luar jendela dengan pikiran melayang.",
-      "Dia sedang melamun."
-    ],
-    "sv": [
-      "Jag är borta i dag.",
-      "Läraren verkar frånvarande.",
-      "Han tittar ut genom fönstret med tom blick.",
-      "Hon är försjunken i sina tankar."
-    ],
-    "ro": [
-      "Astăzi lipsesc.",
-      "Profesorul pare absent.",
-      "Se uită pe fereastră absent.",
-      "Este pierdută în gânduri."
     ],
     "cs": [
       "Dnes nejsem v kanceláři.",
@@ -817,11 +1003,77 @@
       "Han kigger ud ad vinduet med tomt blik.",
       "Hun er helt væk i sine egne tanker."
     ],
+    "de": [
+      "Ich bin heute abwesend.",
+      "Der Lehrer wirkt abwesend.",
+      "Er schaut abwesend aus dem Fenster.",
+      "Sie ist mit den Gedanken abwesend."
+    ],
+    "el": [
+      "Σήμερα δεν είμαι στο γραφείο.",
+      "Ο δάσκαλος φαίνεται αφηρημένος.",
+      "Κοιτάζει έξω από το παράθυρο αφηρημένα.",
+      "Είναι χαμένη στις σκέψεις της."
+    ],
+    "en": [
+      "I’m absent today.",
+      "The teacher seems absent-minded.",
+      "He stares absent-mindedly out the window.",
+      "She’s lost in thought."
+    ],
+    "es": [
+      "Hoy no estoy en la oficina.",
+      "El profesor parece distraído.",
+      "Mira por la ventana distraído.",
+      "Está con la cabeza en otra parte."
+    ],
     "fi": [
       "Olen tänään poissa.",
       "Opettaja vaikuttaa poissaolevalta.",
       "Hän tuijottaa ikkunasta ulos poissaolevana.",
       "Hän on ajatuksissaan."
+    ],
+    "fr": [
+      "Je ne suis pas là aujourd’hui.",
+      "Le professeur a l’air absent.",
+      "Il regarde par la fenêtre d’un air absent.",
+      "Elle est dans la lune."
+    ],
+    "he": [
+      "אני לא במשרד היום.",
+      "המורה נראה מנותק.",
+      "הוא מביט החוצה מהחלון בהיסח דעת.",
+      "היא שקועה במחשבות."
+    ],
+    "hi": [
+      "मैं आज दफ़्तर में नहीं हूँ.",
+      "शिक्षक अनमना लग रहा है.",
+      "वह खिड़की से बाहर खोए-खोए देखता है।",
+      "वह खयालों में खोई हुई है।"
+    ],
+    "hu": [
+      "Ma nem vagyok bent.",
+      "A tanár szétszórtnak tűnik.",
+      "Szórakozottan bámul kifelé az ablakon.",
+      "Gondolataiba merült."
+    ],
+    "id": [
+      "Hari ini saya tidak di kantor.",
+      "Guru itu terlihat melamun.",
+      "Dia menatap ke luar jendela dengan pikiran melayang.",
+      "Dia sedang melamun."
+    ],
+    "ipa": [
+      "/ɪç bɪn ˈhɔʏtə ˈapveːzənt/",
+      "/deːɐ̯ ˈleːʁɐ vɪʁkt ˈapveːzənt/",
+      "/eːɐ̯ ʃaʊ̯t ˈapveːzənt aʊ̯s deːm ˈfɛnstɐ/",
+      "/ziː ɪst mɪt deːn ɡəˈdaŋkən ˈapveːzənt/"
+    ],
+    "it": [
+      "Oggi non ci sono.",
+      "L’insegnante sembra assente.",
+      "Guarda fuori dalla finestra con lo sguardo assente.",
+      "È persa nei suoi pensieri."
     ],
     "ja": [
       "今日は不在です。",
@@ -829,6 +1081,83 @@
       "彼はぼんやりと窓の外を見つめている。",
       "彼女は物思いにふけっている。"
     ],
-    "word_POS": "Adjective"
+    "ko": [
+      "오늘은 자리에 없습니다.",
+      "선생님이 멍해 보인다.",
+      "그는 창밖을 멍하니 바라본다.",
+      "그녀는 생각에 잠겨 있다."
+    ],
+    "nb": [
+      "Jeg er borte i dag.",
+      "Læreren virker fraværende.",
+      "Han ser ut av vinduet med tomt blikk.",
+      "Hun er helt borte i sine egne tanker."
+    ],
+    "nl": [
+      "Ik ben er vandaag niet.",
+      "De leraar lijkt afwezig.",
+      "Hij staart afwezig uit het raam.",
+      "Ze is in gedachten verzonken."
+    ],
+    "pl": [
+      "Dziś mnie nie ma w pracy.",
+      "Nauczyciel wydaje się roztargniony.",
+      "Patrzy przez okno nieobecnym wzrokiem.",
+      "Jest zamyślona."
+    ],
+    "pt": [
+      "Hoje não estou no escritório.",
+      "O professor parece distraído.",
+      "Ele olha pela janela, distraído.",
+      "Ela está com a cabeça em outro lugar."
+    ],
+    "ro": [
+      "Astăzi lipsesc.",
+      "Profesorul pare distrat.",
+      "Se uită pe fereastră absent.",
+      "Este pierdută în gânduri."
+    ],
+    "ru": [
+      "Меня сегодня нет на работе.",
+      "Учитель выглядит рассеянным.",
+      "Он рассеянно смотрит в окно.",
+      "Она погружена в свои мысли."
+    ],
+    "sv": [
+      "Jag är borta i dag.",
+      "Läraren verkar frånvarande.",
+      "Han tittar ut genom fönstret med tom blick.",
+      "Hon är försjunken i sina tankar."
+    ],
+    "tr": [
+      "Bugün ofiste değilim.",
+      "Öğretmen dalgın görünüyor.",
+      "Pencereden dalgın dalgın bakıyor.",
+      "Aklı başka yerde."
+    ],
+    "uk": [
+      "Мене сьогодні немає на роботі.",
+      "Учитель виглядає розсіяним.",
+      "Він задумливо дивиться у вікно.",
+      "Вона заглиблена у свої думки."
+    ],
+    "vi": [
+      "Hôm nay tôi vắng mặt.",
+      "Giáo viên có vẻ lơ đãng.",
+      "Anh ấy nhìn ra ngoài cửa sổ một cách lơ đãng.",
+      "Cô ấy đang mải suy nghĩ."
+    ],
+    "yue": [
+      "我今日唔喺度。",
+      "老師好似心不在焉。",
+      "佢心不在焉咁望住窗外。",
+      "佢出咗神。"
+    ],
+    "zh-Hans": [
+      "我今天不在办公室。",
+      "老师看起来心不在焉。",
+      "他心不在焉地望着窗外。",
+      "她走神了。"
+    ]
   }
 }

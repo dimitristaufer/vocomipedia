@@ -128,12 +128,12 @@
       "difficulty": 6
     },
     {
-      "target": "Wir sagen jetzt Gott sei Dank.",
+      "target": "Wir sagen jetzt: Gott sei Dank.",
       "reading": "/viːɐ̯ ˈzaːɡən jɛtst ɡɔt zaɪ daŋk/",
       "translations": {
-        "de": "Wir sagen jetzt Gott sei Dank.",
+        "de": "Wir sagen jetzt: Gott sei Dank.",
         "ipa": "/viːɐ̯ ˈzaːɡən jɛtst ɡɔt zaɪ daŋk/",
-        "en": "We say thank God now.",
+        "en": "Now we say, “Thank God.”",
         "es": "Ahora decimos gracias a Dios.",
         "fr": "Maintenant, on dit Dieu merci.",
         "it": "Ora diciamo grazie a Dio.",
@@ -159,63 +159,97 @@
         "cs": "Teď říkáme díky Bohu.",
         "da": "Nu siger vi gudskelov.",
         "fi": "Nyt sanomme luojan kiitos.",
-        "ja": "今は神様に感謝します。"
+        "ja": "今は「神様に感謝」と言っています。"
       },
       "tokens": [
         {
           "surface": "Wir",
-          "surface_en": "we",
-          "furigana": "[viːɐ̯]",
-          "pos": "PRON",
           "lemma": "wir",
-          "explanation": "1st-person plural nominative personal pronoun; subject of the clause.",
-          "difficulty": 2
+          "pos": "PRON",
+          "upos": "PRON",
+          "xpos": "PPER",
+          "feats": {},
+          "start": 0,
+          "end": 3,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "sagen",
-          "surface_en": "say",
-          "furigana": "[ˈzaːɡən]",
-          "pos": "VERB",
           "lemma": "sagen",
-          "explanation": "Finite verb, present indicative, 1st person plural; introduces reported/quoted content.",
-          "difficulty": 7
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VVFIN",
+          "feats": {},
+          "start": 4,
+          "end": 9,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "jetzt",
-          "surface_en": "now",
-          "furigana": "[jɛtst]",
-          "pos": "ADV",
           "lemma": "jetzt",
-          "explanation": "Temporal adverb modifying 'sagen'.",
-          "difficulty": 7
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "ADV",
+          "feats": {},
+          "start": 10,
+          "end": 15,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": ":",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 15,
+          "end": 16,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "Gott",
-          "surface_en": "God",
-          "furigana": "[ɡɔt]",
-          "pos": "PROPN",
           "lemma": "Gott",
-          "explanation": "Proper noun; first element of the fixed idiom 'Gott sei Dank' ('thank God'), functioning as quoted content.",
-          "difficulty": 7,
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 17,
+          "end": 21,
+          "analyzer": "spacy_de_core_news_lg",
           "is_main_word": true
         },
         {
           "surface": "sei",
-          "surface_en": "be",
-          "furigana": "[zaɪ̯]",
-          "pos": "VERB",
           "lemma": "sein",
-          "explanation": "Verb 'sein' in Konjunktiv I, present, 3rd person singular; part of the idiomatic clause 'Gott sei Dank'.",
-          "difficulty": 4
+          "pos": "AUX",
+          "upos": "AUX",
+          "xpos": "VAFIN",
+          "feats": {},
+          "start": 22,
+          "end": 25,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "Dank",
-          "surface_en": "thanks",
-          "furigana": "[daŋk]",
-          "pos": "NOUN",
           "lemma": "Dank",
-          "explanation": "Noun; predicate noun in the idiom 'Gott sei Dank' (literally 'God be thanks'), serving as quoted content.",
-          "difficulty": 7
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 26,
+          "end": 30,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 30,
+          "end": 31,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 5.67
@@ -400,8 +434,314 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-15T00:35:50Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:De b1/9625c8fb5750bcdf",
+      "revision_id": 85425,
+      "parent_revision_id": 16342,
+      "revision_timestamp_utc": "2026-10-15T00:35:50Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Mark “Gott sei Dank” as the quoted expression and correct the English and Japanese renderings.",
+      "pulled_utc": "2026-10-17T07:06:41Z",
+      "applied_utc": "2026-10-17T07:06:49Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-ac7e2e15dcb76fe9",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_b1:9625c8fb5750bcdf",
+        "pack_code": "de_b1",
+        "entry_id": "Gott",
+        "language": "de",
+        "sentence_index": 2,
+        "old_sentence": "Wir sagen jetzt Gott sei Dank.",
+        "old_translations": {
+          "de": "Wir sagen jetzt Gott sei Dank.",
+          "ipa": "/viːɐ̯ ˈzaːɡən jɛtst ɡɔt zaɪ daŋk/",
+          "en": "We say thank God now.",
+          "es": "Ahora decimos gracias a Dios.",
+          "fr": "Maintenant, on dit Dieu merci.",
+          "it": "Ora diciamo grazie a Dio.",
+          "ko": "이제 하나님께 감사하다고 말해요.",
+          "zh-Hans": "我们现在说谢天谢地。",
+          "yue": "我哋而家話謝天謝地。",
+          "ru": "Сейчас мы благодарим Бога.",
+          "pt": "Agora dizemos graças a Deus.",
+          "he": "עכשיו אנחנו אומרים תודה לאל.",
+          "tr": "Şimdi Tanrı'ya şükrediyoruz.",
+          "vi": "Bây giờ chúng ta nói tạ ơn Chúa.",
+          "ar": "الآن نقول الحمد لله.",
+          "nl": "Nu zeggen we Godzijdank.",
+          "uk": "Зараз ми кажемо слава Богу.",
+          "hu": "Most azt mondjuk, hála Istennek.",
+          "hi": "अब हम कहते हैं भगवान का शुक्र है.",
+          "pl": "Teraz mówimy dzięki Bogu.",
+          "el": "Τώρα λέμε δόξα τω Θεώ.",
+          "nb": "Nå sier vi gudskjelov.",
+          "id": "Sekarang kami bilang syukurlah.",
+          "sv": "Nu säger vi tack och lov.",
+          "ro": "Acum spunem slavă Domnului.",
+          "cs": "Teď říkáme díky Bohu.",
+          "da": "Nu siger vi gudskelov.",
+          "fi": "Nyt sanomme luojan kiitos.",
+          "ja": "今は神様に感謝します。"
+        },
+        "proposed_sentence": "Wir sagen jetzt: Gott sei Dank.",
+        "proposed_translations": {
+          "de": "Wir sagen jetzt: Gott sei Dank.",
+          "ipa": "/viːɐ̯ ˈzaːɡən jɛtst ɡɔt zaɪ daŋk/",
+          "en": "Now we say, “Thank God.”",
+          "es": "Ahora decimos gracias a Dios.",
+          "fr": "Maintenant, on dit Dieu merci.",
+          "it": "Ora diciamo grazie a Dio.",
+          "ko": "이제 하나님께 감사하다고 말해요.",
+          "zh-Hans": "我们现在说谢天谢地。",
+          "yue": "我哋而家話謝天謝地。",
+          "ru": "Сейчас мы благодарим Бога.",
+          "pt": "Agora dizemos graças a Deus.",
+          "he": "עכשיו אנחנו אומרים תודה לאל.",
+          "tr": "Şimdi Tanrı'ya şükrediyoruz.",
+          "vi": "Bây giờ chúng ta nói tạ ơn Chúa.",
+          "ar": "الآن نقول الحمد لله.",
+          "nl": "Nu zeggen we Godzijdank.",
+          "uk": "Зараз ми кажемо слава Богу.",
+          "hu": "Most azt mondjuk, hála Istennek.",
+          "hi": "अब हम कहते हैं भगवान का शुक्र है.",
+          "pl": "Teraz mówimy dzięki Bogu.",
+          "el": "Τώρα λέμε δόξα τω Θεώ.",
+          "nb": "Nå sier vi gudskjelov.",
+          "id": "Sekarang kami bilang syukurlah.",
+          "sv": "Nu säger vi tack och lov.",
+          "ro": "Acum spunem slavă Domnului.",
+          "cs": "Teď říkáme díky Bohu.",
+          "da": "Nu siger vi gudskelov.",
+          "fi": "Nyt sanomme luojan kiitos.",
+          "ja": "今は「神様に感謝」と言っています。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Wir sagen jetzt: Gott sei Dank.",
+        "old_japanese": "Wir sagen jetzt Gott sei Dank.",
+        "old_english": "We say thank God now.",
+        "proposed_japanese": "Wir sagen jetzt: Gott sei Dank.",
+        "proposed_english": "Now we say, “Thank God.”",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Wir sagen jetzt: Gott sei Dank.",
+          "tokens": [
+            {
+              "surface": "Wir",
+              "lemma": "wir",
+              "pos": "PRON",
+              "upos": "PRON",
+              "xpos": "PPER",
+              "feats": {},
+              "start": 0,
+              "end": 3,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "sagen",
+              "lemma": "sagen",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVFIN",
+              "feats": {},
+              "start": 4,
+              "end": 9,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "jetzt",
+              "lemma": "jetzt",
+              "pos": "ADV",
+              "upos": "ADV",
+              "xpos": "ADV",
+              "feats": {},
+              "start": 10,
+              "end": 15,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ":",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 15,
+              "end": 16,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Gott",
+              "lemma": "Gott",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 17,
+              "end": 21,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "sei",
+              "lemma": "sein",
+              "pos": "AUX",
+              "upos": "AUX",
+              "xpos": "VAFIN",
+              "feats": {},
+              "start": 22,
+              "end": 25,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Dank",
+              "lemma": "Dank",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 26,
+              "end": 30,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 30,
+              "end": 31,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Wir",
+            "lemma": "wir",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "sagen",
+            "lemma": "sagen",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 4,
+            "end": 9,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "jetzt",
+            "lemma": "jetzt",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 10,
+            "end": 15,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ":",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 15,
+            "end": 16,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Gott",
+            "lemma": "Gott",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 17,
+            "end": 21,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "sei",
+            "lemma": "sein",
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "VAFIN",
+            "feats": {},
+            "start": 22,
+            "end": 25,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Dank",
+            "lemma": "Dank",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 26,
+            "end": 30,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 30,
+            "end": 31,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:06:41Z",
+        "updated_utc": "2026-10-17T07:07:05Z",
+        "applied_utc": "2026-10-17T07:07:05Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:07:05Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -413,34 +753,6 @@
     "word": "Gott",
     "word_reading": "",
     "word_label": "Substantiv (der mask.)",
-    "word_en": "God; god",
-    "word_es": "Dios",
-    "word_fr": "Dieu",
-    "word_it": "Dio",
-    "word_ko": "하느님; 신",
-    "word_zh-Hans": "上帝; 神",
-    "word_yue": "上帝; 神",
-    "word_ru": "Бог",
-    "word_pt": "Deus",
-    "word_he": "אלוהים; אל",
-    "word_tr": "Tanrı",
-    "word_vi": "Thượng đế; thần",
-    "word_ar": "الله; إله",
-    "word_nl": "God",
-    "word_uk": "Бог",
-    "word_hu": "Isten",
-    "word_hi": "भगवान; देवता",
-    "word_pl": "Bóg",
-    "word_el": "Θεός",
-    "word_nb": "Gud",
-    "word_id": "Tuhan; dewa",
-    "word_sv": "Gud",
-    "word_ro": "Dumnezeu; zeu",
-    "word_cs": "Bůh",
-    "word_da": "Gud",
-    "word_fi": "Jumala",
-    "word_ja": "神（唯一の神）; 神（神々の一柱）",
-    "word_de": "Gott",
     "comic_difficulty": 5.72,
     "jp": [
       "Ich danke Gott jeden Abend.",
@@ -453,24 +765,6 @@
       "/viːɐ̯ ˈzaːɡən jɛtst ɡɔt zaɪ daŋk/",
       "/ziː fɛɐ̯ˈtʁaʊ̯t ɡɔt ɪm ˈkʁaŋkənhaʊ̯s/",
       "/eːɐ̯ ɡlaʊ̯pt nɪçt an ɡɔt/"
-    ],
-    "de": [
-      "Ich danke Gott jeden Abend.",
-      "Wir sagen jetzt Gott sei Dank.",
-      "Sie vertraut Gott im Krankenhaus.",
-      "Er glaubt nicht an Gott."
-    ],
-    "ipa": [
-      "/ɪç ˈdaŋkə ɡɔt ˈjeːdən ˈaːbənt/",
-      "/viːɐ̯ ˈzaːɡən jɛtst ɡɔt zaɪ daŋk/",
-      "/ziː fɛɐ̯ˈtʁaʊ̯t ɡɔt ɪm ˈkʁaŋkənhaʊ̯s/",
-      "/eːɐ̯ ɡlaʊ̯pt nɪçt an ɡɔt/"
-    ],
-    "en": [
-      "I thank God every evening.",
-      "We say thank God now.",
-      "She trusts God in the hospital.",
-      "He doesn't believe in God."
     ],
     "pos_analysis": [
       {
@@ -526,62 +820,96 @@
         "difficulty_aggregated": 6
       },
       {
-        "sentence": "Wir sagen jetzt Gott sei Dank.",
+        "sentence": "Wir sagen jetzt: Gott sei Dank.",
         "tokens": [
           {
             "surface": "Wir",
-            "surface_en": "we",
-            "furigana": "[viːɐ̯]",
-            "pos": "PRON",
             "lemma": "wir",
-            "explanation": "1st-person plural nominative personal pronoun; subject of the clause.",
-            "difficulty": 2
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "sagen",
-            "surface_en": "say",
-            "furigana": "[ˈzaːɡən]",
-            "pos": "VERB",
             "lemma": "sagen",
-            "explanation": "Finite verb, present indicative, 1st person plural; introduces reported/quoted content.",
-            "difficulty": 7
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 4,
+            "end": 9,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "jetzt",
-            "surface_en": "now",
-            "furigana": "[jɛtst]",
-            "pos": "ADV",
             "lemma": "jetzt",
-            "explanation": "Temporal adverb modifying 'sagen'.",
-            "difficulty": 7
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 10,
+            "end": 15,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ":",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 15,
+            "end": 16,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "Gott",
-            "surface_en": "God",
-            "furigana": "[ɡɔt]",
-            "pos": "PROPN",
             "lemma": "Gott",
-            "explanation": "Proper noun; first element of the fixed idiom 'Gott sei Dank' ('thank God'), functioning as quoted content.",
-            "difficulty": 7,
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 17,
+            "end": 21,
+            "analyzer": "spacy_de_core_news_lg",
             "is_main_word": true
           },
           {
             "surface": "sei",
-            "surface_en": "be",
-            "furigana": "[zaɪ̯]",
-            "pos": "VERB",
             "lemma": "sein",
-            "explanation": "Verb 'sein' in Konjunktiv I, present, 3rd person singular; part of the idiomatic clause 'Gott sei Dank'.",
-            "difficulty": 4
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "VAFIN",
+            "feats": {},
+            "start": 22,
+            "end": 25,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "Dank",
-            "surface_en": "thanks",
-            "furigana": "[daŋk]",
-            "pos": "NOUN",
             "lemma": "Dank",
-            "explanation": "Noun; predicate noun in the idiom 'Gott sei Dank' (literally 'God be thanks'), serving as quoted content.",
-            "difficulty": 7
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 26,
+            "end": 30,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 30,
+            "end": 31,
+            "analyzer": "spacy_de_core_news_lg"
           }
         ],
         "difficulty_aggregated": 5.67
@@ -691,137 +1019,41 @@
         "difficulty_aggregated": 5
       }
     ],
-    "es": [
-      "Doy gracias a Dios cada noche.",
-      "Ahora decimos gracias a Dios.",
-      "En el hospital, ella confía en Dios.",
-      "Él no cree en Dios."
-    ],
-    "fr": [
-      "Je remercie Dieu chaque soir.",
-      "Maintenant, on dit Dieu merci.",
-      "À l'hôpital, elle fait confiance à Dieu.",
-      "Il ne croit pas en Dieu."
-    ],
-    "it": [
-      "Ringrazio Dio ogni sera.",
-      "Ora diciamo grazie a Dio.",
-      "In ospedale, si affida a Dio.",
-      "Non crede in Dio."
-    ],
-    "ko": [
-      "저는 매일 저녁 하나님께 감사해요.",
-      "이제 하나님께 감사하다고 말해요.",
-      "병원에서 그녀는 하나님을 믿어요.",
-      "그는 하나님을 믿지 않아요."
-    ],
-    "zh-Hans": [
-      "我每晚都感谢上帝。",
-      "我们现在说谢天谢地。",
-      "她在医院里信靠上帝。",
-      "他不相信上帝。"
-    ],
-    "yue": [
-      "我每晚都多謝上帝。",
-      "我哋而家話謝天謝地。",
-      "佢喺醫院度信靠上帝。",
-      "佢唔信上帝。"
-    ],
-    "ru": [
-      "Я благодарю Бога каждый вечер.",
-      "Сейчас мы благодарим Бога.",
-      "В больнице она доверяет Богу.",
-      "Он не верит в Бога."
-    ],
-    "pt": [
-      "Agradeço a Deus todas as noites.",
-      "Agora dizemos graças a Deus.",
-      "No hospital, ela confia em Deus.",
-      "Ele não acredita em Deus."
-    ],
-    "he": [
-      "אני מודה לאלוהים כל ערב.",
-      "עכשיו אנחנו אומרים תודה לאל.",
-      "בבית החולים היא בוטחת באלוהים.",
-      "הוא לא מאמין באלוהים."
-    ],
-    "tr": [
-      "Her akşam Tanrı'ya şükrediyorum.",
-      "Şimdi Tanrı'ya şükrediyoruz.",
-      "Hastanede Tanrı'ya güveniyor.",
-      "Tanrı'ya inanmıyor."
-    ],
-    "vi": [
-      "Tối nào tôi cũng tạ ơn Chúa.",
-      "Bây giờ chúng ta nói tạ ơn Chúa.",
-      "Ở bệnh viện, cô ấy tin cậy nơi Chúa.",
-      "Anh ấy không tin vào Chúa."
-    ],
+    "word_POS": "Noun",
+    "entry_id": "Gott",
+    "word_en": "God; god",
+    "word_es": "Dios",
+    "word_fr": "Dieu",
+    "word_it": "Dio",
+    "word_ko": "하느님; 신",
+    "word_zh-Hans": "上帝; 神",
+    "word_yue": "上帝; 神",
+    "word_ru": "Бог",
+    "word_pt": "Deus",
+    "word_he": "אלוהים; אל",
+    "word_tr": "Tanrı",
+    "word_vi": "Thượng đế; thần",
+    "word_ar": "الله; إله",
+    "word_nl": "God",
+    "word_uk": "Бог",
+    "word_hu": "Isten",
+    "word_hi": "भगवान; देवता",
+    "word_pl": "Bóg",
+    "word_el": "Θεός",
+    "word_nb": "Gud",
+    "word_id": "Tuhan; dewa",
+    "word_sv": "Gud",
+    "word_ro": "Dumnezeu; zeu",
+    "word_cs": "Bůh",
+    "word_da": "Gud",
+    "word_fi": "Jumala",
+    "word_ja": "神（唯一の神）; 神（神々の一柱）",
+    "word_de": "Gott",
     "ar": [
       "أشكر الله كل مساء.",
       "الآن نقول الحمد لله.",
       "في المستشفى، هي تثق بالله.",
       "هو لا يؤمن بالله."
-    ],
-    "nl": [
-      "Ik dank God elke avond.",
-      "Nu zeggen we Godzijdank.",
-      "In het ziekenhuis vertrouwt ze op God.",
-      "Hij gelooft niet in God."
-    ],
-    "uk": [
-      "Я дякую Богові кожного вечора.",
-      "Зараз ми кажемо слава Богу.",
-      "У лікарні вона довіряє Богові.",
-      "Він не вірить у Бога."
-    ],
-    "hu": [
-      "Minden este hálát adok Istennek.",
-      "Most azt mondjuk, hála Istennek.",
-      "A kórházban Istenben bízik.",
-      "Nem hisz Istenben."
-    ],
-    "hi": [
-      "मैं हर शाम भगवान को धन्यवाद देता हूँ.",
-      "अब हम कहते हैं भगवान का शुक्र है.",
-      "अस्पताल में वह भगवान पर भरोसा करती है.",
-      "वह भगवान में विश्वास नहीं करता।"
-    ],
-    "pl": [
-      "Każdego wieczoru dziękuję Bogu.",
-      "Teraz mówimy dzięki Bogu.",
-      "W szpitalu ufa Bogu.",
-      "On nie wierzy w Boga."
-    ],
-    "el": [
-      "Κάθε βράδυ ευχαριστώ τον Θεό.",
-      "Τώρα λέμε δόξα τω Θεώ.",
-      "Στο νοσοκομείο εμπιστεύεται τον Θεό.",
-      "Δεν πιστεύει στον Θεό."
-    ],
-    "nb": [
-      "Jeg takker Gud hver kveld.",
-      "Nå sier vi gudskjelov.",
-      "På sykehuset stoler hun på Gud.",
-      "Han tror ikke på Gud."
-    ],
-    "id": [
-      "Setiap malam aku bersyukur kepada Tuhan.",
-      "Sekarang kami bilang syukurlah.",
-      "Di rumah sakit, dia percaya kepada Tuhan.",
-      "Dia tidak percaya kepada Tuhan."
-    ],
-    "sv": [
-      "Jag tackar Gud varje kväll.",
-      "Nu säger vi tack och lov.",
-      "På sjukhuset litar hon på Gud.",
-      "Han tror inte på Gud."
-    ],
-    "ro": [
-      "Îi mulțumesc lui Dumnezeu în fiecare seară.",
-      "Acum spunem slavă Domnului.",
-      "La spital, ea se încrede în Dumnezeu.",
-      "El nu crede în Dumnezeu."
     ],
     "cs": [
       "Každý večer děkuji Bohu.",
@@ -835,11 +1067,77 @@
       "På hospitalet stoler hun på Gud.",
       "Han tror ikke på Gud."
     ],
+    "de": [
+      "Ich danke Gott jeden Abend.",
+      "Wir sagen jetzt Gott sei Dank.",
+      "Sie vertraut Gott im Krankenhaus.",
+      "Er glaubt nicht an Gott."
+    ],
+    "el": [
+      "Κάθε βράδυ ευχαριστώ τον Θεό.",
+      "Τώρα λέμε δόξα τω Θεώ.",
+      "Στο νοσοκομείο εμπιστεύεται τον Θεό.",
+      "Δεν πιστεύει στον Θεό."
+    ],
+    "en": [
+      "I thank God every evening.",
+      "We say thank God now.",
+      "She trusts God in the hospital.",
+      "He doesn't believe in God."
+    ],
+    "es": [
+      "Doy gracias a Dios cada noche.",
+      "Ahora decimos gracias a Dios.",
+      "En el hospital, ella confía en Dios.",
+      "Él no cree en Dios."
+    ],
     "fi": [
       "Kiitän Jumalaa joka ilta.",
       "Nyt sanomme luojan kiitos.",
       "Sairaalassa hän luottaa Jumalaan.",
       "Hän ei usko Jumalaan."
+    ],
+    "fr": [
+      "Je remercie Dieu chaque soir.",
+      "Maintenant, on dit Dieu merci.",
+      "À l'hôpital, elle fait confiance à Dieu.",
+      "Il ne croit pas en Dieu."
+    ],
+    "he": [
+      "אני מודה לאלוהים כל ערב.",
+      "עכשיו אנחנו אומרים תודה לאל.",
+      "בבית החולים היא בוטחת באלוהים.",
+      "הוא לא מאמין באלוהים."
+    ],
+    "hi": [
+      "मैं हर शाम भगवान को धन्यवाद देता हूँ.",
+      "अब हम कहते हैं भगवान का शुक्र है.",
+      "अस्पताल में वह भगवान पर भरोसा करती है.",
+      "वह भगवान में विश्वास नहीं करता।"
+    ],
+    "hu": [
+      "Minden este hálát adok Istennek.",
+      "Most azt mondjuk, hála Istennek.",
+      "A kórházban Istenben bízik.",
+      "Nem hisz Istenben."
+    ],
+    "id": [
+      "Setiap malam aku bersyukur kepada Tuhan.",
+      "Sekarang kami bilang syukurlah.",
+      "Di rumah sakit, dia percaya kepada Tuhan.",
+      "Dia tidak percaya kepada Tuhan."
+    ],
+    "ipa": [
+      "/ɪç ˈdaŋkə ɡɔt ˈjeːdən ˈaːbənt/",
+      "/viːɐ̯ ˈzaːɡən jɛtst ɡɔt zaɪ daŋk/",
+      "/ziː fɛɐ̯ˈtʁaʊ̯t ɡɔt ɪm ˈkʁaŋkənhaʊ̯s/",
+      "/eːɐ̯ ɡlaʊ̯pt nɪçt an ɡɔt/"
+    ],
+    "it": [
+      "Ringrazio Dio ogni sera.",
+      "Ora diciamo grazie a Dio.",
+      "In ospedale, si affida a Dio.",
+      "Non crede in Dio."
     ],
     "ja": [
       "毎晩、神様に感謝します。",
@@ -847,6 +1145,83 @@
       "病院で彼女は神様を信じています。",
       "彼は神様を信じていません。"
     ],
-    "word_POS": "Noun"
+    "ko": [
+      "저는 매일 저녁 하나님께 감사해요.",
+      "이제 하나님께 감사하다고 말해요.",
+      "병원에서 그녀는 하나님을 믿어요.",
+      "그는 하나님을 믿지 않아요."
+    ],
+    "nb": [
+      "Jeg takker Gud hver kveld.",
+      "Nå sier vi gudskjelov.",
+      "På sykehuset stoler hun på Gud.",
+      "Han tror ikke på Gud."
+    ],
+    "nl": [
+      "Ik dank God elke avond.",
+      "Nu zeggen we Godzijdank.",
+      "In het ziekenhuis vertrouwt ze op God.",
+      "Hij gelooft niet in God."
+    ],
+    "pl": [
+      "Każdego wieczoru dziękuję Bogu.",
+      "Teraz mówimy dzięki Bogu.",
+      "W szpitalu ufa Bogu.",
+      "On nie wierzy w Boga."
+    ],
+    "pt": [
+      "Agradeço a Deus todas as noites.",
+      "Agora dizemos graças a Deus.",
+      "No hospital, ela confia em Deus.",
+      "Ele não acredita em Deus."
+    ],
+    "ro": [
+      "Îi mulțumesc lui Dumnezeu în fiecare seară.",
+      "Acum spunem slavă Domnului.",
+      "La spital, ea se încrede în Dumnezeu.",
+      "El nu crede în Dumnezeu."
+    ],
+    "ru": [
+      "Я благодарю Бога каждый вечер.",
+      "Сейчас мы благодарим Бога.",
+      "В больнице она доверяет Богу.",
+      "Он не верит в Бога."
+    ],
+    "sv": [
+      "Jag tackar Gud varje kväll.",
+      "Nu säger vi tack och lov.",
+      "På sjukhuset litar hon på Gud.",
+      "Han tror inte på Gud."
+    ],
+    "tr": [
+      "Her akşam Tanrı'ya şükrediyorum.",
+      "Şimdi Tanrı'ya şükrediyoruz.",
+      "Hastanede Tanrı'ya güveniyor.",
+      "Tanrı'ya inanmıyor."
+    ],
+    "uk": [
+      "Я дякую Богові кожного вечора.",
+      "Зараз ми кажемо слава Богу.",
+      "У лікарні вона довіряє Богові.",
+      "Він не вірить у Бога."
+    ],
+    "vi": [
+      "Tối nào tôi cũng tạ ơn Chúa.",
+      "Bây giờ chúng ta nói tạ ơn Chúa.",
+      "Ở bệnh viện, cô ấy tin cậy nơi Chúa.",
+      "Anh ấy không tin vào Chúa."
+    ],
+    "yue": [
+      "我每晚都多謝上帝。",
+      "我哋而家話謝天謝地。",
+      "佢喺醫院度信靠上帝。",
+      "佢唔信上帝。"
+    ],
+    "zh-Hans": [
+      "我每晚都感谢上帝。",
+      "我们现在说谢天谢地。",
+      "她在医院里信靠上帝。",
+      "他不相信上帝。"
+    ]
   }
 }

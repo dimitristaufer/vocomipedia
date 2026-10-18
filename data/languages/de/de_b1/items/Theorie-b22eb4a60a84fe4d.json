@@ -350,10 +350,10 @@
       "difficulty": 6.43
     },
     {
-      "target": "Nach der Theorie brauchen wir zwei Stunden.",
+      "target": "Der Theorie nach brauchen wir zwei Stunden.",
       "reading": "/naːx deːɐ̯ teoˈʁiː ˈbʁaʊ̯xən viːɐ̯ tsvaɪ̯ ˈʃtʊndn̩/",
       "translations": {
-        "de": "Nach der Theorie brauchen wir zwei Stunden.",
+        "de": "Der Theorie nach brauchen wir zwei Stunden.",
         "ipa": "/naːx deːɐ̯ teoˈʁiː ˈbʁaʊ̯xən viːɐ̯ tsvaɪ̯ ˈʃtʊndn̩/",
         "en": "According to the theory, we need two hours.",
         "es": "Según la teoría, necesitamos dos horas.",
@@ -368,7 +368,7 @@
         "tr": "Teoriye göre iki saate ihtiyacımız var.",
         "vi": "Theo lý thuyết, chúng tôi cần hai tiếng.",
         "ar": "بحسب النظرية، نحتاج إلى ساعتين.",
-        "nl": "Volgens de théorie hebben we twee uur nodig.",
+        "nl": "Volgens de theorie hebben we twee uur nodig.",
         "uk": "Згідно з теорією нам потрібно дві години.",
         "hu": "Az elmélet szerint két órára van szükségünk.",
         "hi": "सिद्धांत के अनुसार हमें दो घंटे चाहिए.",
@@ -385,68 +385,93 @@
       },
       "tokens": [
         {
-          "surface": "Nach",
-          "surface_en": "according to",
-          "furigana": "[naːx]",
-          "pos": "ADP",
-          "lemma": "nach",
-          "explanation": "Preposition meaning 'according to'; governs dative.",
-          "difficulty": 2
-        },
-        {
-          "surface": "der",
-          "surface_en": "the",
-          "furigana": "[deːɐ]",
-          "pos": "DET",
+          "surface": "Der",
           "lemma": "der",
-          "explanation": "Definite article; feminine dative singular with 'Theorie'.",
-          "difficulty": 2
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "ART",
+          "feats": {},
+          "start": 0,
+          "end": 3,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "Theorie",
-          "surface_en": "theory",
-          "furigana": "[teoˈʁiː]",
-          "pos": "NOUN",
           "lemma": "Theorie",
-          "explanation": "Complement of 'Nach'; feminine, dative singular.",
-          "difficulty": 10,
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 4,
+          "end": 11,
+          "analyzer": "spacy_de_core_news_lg",
           "is_main_word": true
         },
         {
+          "surface": "nach",
+          "lemma": "nach",
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "APPO",
+          "feats": {},
+          "start": 12,
+          "end": 16,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
           "surface": "brauchen",
-          "surface_en": "need",
-          "furigana": "[ˈbʁaʊ̯xən]",
-          "pos": "VERB",
           "lemma": "brauchen",
-          "explanation": "Finite main verb; present indicative, 1st person plural with 'wir'.",
-          "difficulty": 10
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VVFIN",
+          "feats": {},
+          "start": 17,
+          "end": 25,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "wir",
-          "surface_en": "we",
-          "furigana": "[viːɐ]",
-          "pos": "PRON",
           "lemma": "wir",
-          "explanation": "Personal pronoun; nominative plural; subject.",
-          "difficulty": 2
+          "pos": "PRON",
+          "upos": "PRON",
+          "xpos": "PPER",
+          "feats": {},
+          "start": 26,
+          "end": 29,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "zwei",
-          "surface_en": "two",
-          "furigana": "[tsvaɪ̯]",
-          "pos": "NUM",
           "lemma": "zwei",
-          "explanation": "Cardinal numeral; modifies 'Stunden'.",
-          "difficulty": 7
+          "pos": "NUM",
+          "upos": "NUM",
+          "xpos": "CARD",
+          "feats": {},
+          "start": 30,
+          "end": 34,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "Stunden.",
-          "surface_en": "hours",
-          "furigana": "[ˈʃtʊndən]",
-          "pos": "NOUN",
+          "surface": "Stunden",
           "lemma": "Stunde",
-          "explanation": "Accusative plural; direct object expressing duration.",
-          "difficulty": 10
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 35,
+          "end": 42,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 42,
+          "end": 43,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 6.14
@@ -463,8 +488,314 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-15T04:09:06Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:De b1/b22eb4a60a84fe4d",
+      "revision_id": 84926,
+      "parent_revision_id": 18024,
+      "revision_timestamp_utc": "2026-10-15T04:09:06Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Clarify the intended ‘according to the theory’ meaning in German and correct the Dutch spelling.",
+      "pulled_utc": "2026-10-17T07:06:42Z",
+      "applied_utc": "2026-10-17T07:06:51Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-3801c2d9de1de75a",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_b1:b22eb4a60a84fe4d",
+        "pack_code": "de_b1",
+        "entry_id": "Theorie",
+        "language": "de",
+        "sentence_index": 4,
+        "old_sentence": "Nach der Theorie brauchen wir zwei Stunden.",
+        "old_translations": {
+          "de": "Nach der Theorie brauchen wir zwei Stunden.",
+          "ipa": "/naːx deːɐ̯ teoˈʁiː ˈbʁaʊ̯xən viːɐ̯ tsvaɪ̯ ˈʃtʊndn̩/",
+          "en": "According to the theory, we need two hours.",
+          "es": "Según la teoría, necesitamos dos horas.",
+          "fr": "Selon la théorie, nous avons besoin de deux heures.",
+          "it": "Secondo la teoria, ci servono due ore.",
+          "ko": "이론에 따르면 두 시간이 필요해.",
+          "zh-Hans": "根据理论，我们需要两个小时。",
+          "yue": "按照理論，我哋需要兩個鐘。",
+          "ru": "Согласно теории, нам нужно два часа.",
+          "pt": "Segundo a teoria, precisamos de duas horas.",
+          "he": "לפי התיאוריה, אנחנו צריכים שעתיים.",
+          "tr": "Teoriye göre iki saate ihtiyacımız var.",
+          "vi": "Theo lý thuyết, chúng tôi cần hai tiếng.",
+          "ar": "بحسب النظرية، نحتاج إلى ساعتين.",
+          "nl": "Volgens de théorie hebben we twee uur nodig.",
+          "uk": "Згідно з теорією нам потрібно дві години.",
+          "hu": "Az elmélet szerint két órára van szükségünk.",
+          "hi": "सिद्धांत के अनुसार हमें दो घंटे चाहिए.",
+          "pl": "Według teorii potrzebujemy dwóch godzin.",
+          "el": "Σύμφωνα με τη θεωρία, χρειαζόμαστε δύο ώρες.",
+          "nb": "Ifølge teorien trenger vi to timer.",
+          "id": "Menurut teori, kita butuh dua jam.",
+          "sv": "Enligt teorin behöver vi två timmar.",
+          "ro": "Conform teoriei, avem nevoie de două ore.",
+          "cs": "Podle teorie potřebujeme dvě hodiny.",
+          "da": "Ifølge teorien har vi brug for to timer.",
+          "fi": "Teorian mukaan tarvitsemme kaksi tuntia.",
+          "ja": "理論によれば、二時間必要だ。"
+        },
+        "proposed_sentence": "Der Theorie nach brauchen wir zwei Stunden.",
+        "proposed_translations": {
+          "de": "Der Theorie nach brauchen wir zwei Stunden.",
+          "ipa": "/naːx deːɐ̯ teoˈʁiː ˈbʁaʊ̯xən viːɐ̯ tsvaɪ̯ ˈʃtʊndn̩/",
+          "en": "According to the theory, we need two hours.",
+          "es": "Según la teoría, necesitamos dos horas.",
+          "fr": "Selon la théorie, nous avons besoin de deux heures.",
+          "it": "Secondo la teoria, ci servono due ore.",
+          "ko": "이론에 따르면 두 시간이 필요해.",
+          "zh-Hans": "根据理论，我们需要两个小时。",
+          "yue": "按照理論，我哋需要兩個鐘。",
+          "ru": "Согласно теории, нам нужно два часа.",
+          "pt": "Segundo a teoria, precisamos de duas horas.",
+          "he": "לפי התיאוריה, אנחנו צריכים שעתיים.",
+          "tr": "Teoriye göre iki saate ihtiyacımız var.",
+          "vi": "Theo lý thuyết, chúng tôi cần hai tiếng.",
+          "ar": "بحسب النظرية، نحتاج إلى ساعتين.",
+          "nl": "Volgens de theorie hebben we twee uur nodig.",
+          "uk": "Згідно з теорією нам потрібно дві години.",
+          "hu": "Az elmélet szerint két órára van szükségünk.",
+          "hi": "सिद्धांत के अनुसार हमें दो घंटे चाहिए.",
+          "pl": "Według teorii potrzebujemy dwóch godzin.",
+          "el": "Σύμφωνα με τη θεωρία, χρειαζόμαστε δύο ώρες.",
+          "nb": "Ifølge teorien trenger vi to timer.",
+          "id": "Menurut teori, kita butuh dua jam.",
+          "sv": "Enligt teorin behöver vi två timmar.",
+          "ro": "Conform teoriei, avem nevoie de două ore.",
+          "cs": "Podle teorie potřebujeme dvě hodiny.",
+          "da": "Ifølge teorien har vi brug for to timer.",
+          "fi": "Teorian mukaan tarvitsemme kaksi tuntia.",
+          "ja": "理論によれば、二時間必要だ。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Der Theorie nach brauchen wir zwei Stunden.",
+        "old_japanese": "Nach der Theorie brauchen wir zwei Stunden.",
+        "old_english": "According to the theory, we need two hours.",
+        "proposed_japanese": "Der Theorie nach brauchen wir zwei Stunden.",
+        "proposed_english": "According to the theory, we need two hours.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Der Theorie nach brauchen wir zwei Stunden.",
+          "tokens": [
+            {
+              "surface": "Der",
+              "lemma": "der",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "ART",
+              "feats": {},
+              "start": 0,
+              "end": 3,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Theorie",
+              "lemma": "Theorie",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 4,
+              "end": 11,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "nach",
+              "lemma": "nach",
+              "pos": "ADP",
+              "upos": "ADP",
+              "xpos": "APPO",
+              "feats": {},
+              "start": 12,
+              "end": 16,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "brauchen",
+              "lemma": "brauchen",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVFIN",
+              "feats": {},
+              "start": 17,
+              "end": 25,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "wir",
+              "lemma": "wir",
+              "pos": "PRON",
+              "upos": "PRON",
+              "xpos": "PPER",
+              "feats": {},
+              "start": 26,
+              "end": 29,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "zwei",
+              "lemma": "zwei",
+              "pos": "NUM",
+              "upos": "NUM",
+              "xpos": "CARD",
+              "feats": {},
+              "start": 30,
+              "end": 34,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Stunden",
+              "lemma": "Stunde",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 35,
+              "end": 42,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 42,
+              "end": 43,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Der",
+            "lemma": "der",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Theorie",
+            "lemma": "Theorie",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 4,
+            "end": 11,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "nach",
+            "lemma": "nach",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPO",
+            "feats": {},
+            "start": 12,
+            "end": 16,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "brauchen",
+            "lemma": "brauchen",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 17,
+            "end": 25,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "wir",
+            "lemma": "wir",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 26,
+            "end": 29,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "zwei",
+            "lemma": "zwei",
+            "pos": "NUM",
+            "upos": "NUM",
+            "xpos": "CARD",
+            "feats": {},
+            "start": 30,
+            "end": 34,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Stunden",
+            "lemma": "Stunde",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 35,
+            "end": 42,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 42,
+            "end": 43,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:06:42Z",
+        "updated_utc": "2026-10-17T07:07:06Z",
+        "applied_utc": "2026-10-17T07:07:06Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:07:06Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -476,34 +807,6 @@
     "word": "Theorie",
     "word_reading": "",
     "word_label": "Substantiv (die fem.)",
-    "word_en": "theory",
-    "word_es": "teoría",
-    "word_fr": "théorie",
-    "word_it": "teoria",
-    "word_ko": "이론",
-    "word_zh-Hans": "理论",
-    "word_yue": "理論",
-    "word_ru": "теория",
-    "word_pt": "teoria",
-    "word_he": "תיאוריה",
-    "word_tr": "teori",
-    "word_vi": "lý thuyết",
-    "word_ar": "نظرية",
-    "word_nl": "theorie",
-    "word_uk": "теорія",
-    "word_hu": "elmélet",
-    "word_hi": "सिद्धांत",
-    "word_pl": "teoria",
-    "word_el": "θεωρία",
-    "word_nb": "teori",
-    "word_id": "teori",
-    "word_sv": "teori",
-    "word_ro": "teorie",
-    "word_cs": "teorie",
-    "word_da": "teori",
-    "word_fi": "teoria",
-    "word_ja": "理論",
-    "word_de": "Theorie",
     "comic_difficulty": 6.07,
     "jp": [
       "In der Theorie klingt das ganz einfach.",
@@ -516,24 +819,6 @@
       "/ˈʊnzəʁə teoˈʁiː past nɪçt tsuː deːn ˈtsaːlən/",
       "/eːɐ̯ ɛɐ̯ˈklɛːɐ̯t miːɐ̯ diː teoˈʁiː ɡants ɡəˈdʊldɪç/",
       "/naːx deːɐ̯ teoˈʁiː ˈbʁaʊ̯xən viːɐ̯ tsvaɪ̯ ˈʃtʊndn̩/"
-    ],
-    "de": [
-      "In der Theorie klingt das ganz einfach.",
-      "Unsere Theorie passt nicht zu den Zahlen.",
-      "Er erklärt mir die Theorie ganz geduldig.",
-      "Nach der Theorie brauchen wir zwei Stunden."
-    ],
-    "ipa": [
-      "/ɪn deːɐ̯ teoˈʁiː klɪŋt das ɡants ˈaɪ̯nfaχ/",
-      "/ˈʊnzəʁə teoˈʁiː past nɪçt tsuː deːn ˈtsaːlən/",
-      "/eːɐ̯ ɛɐ̯ˈklɛːɐ̯t miːɐ̯ diː teoˈʁiː ɡants ɡəˈdʊldɪç/",
-      "/naːx deːɐ̯ teoˈʁiː ˈbʁaʊ̯xən viːɐ̯ tsvaɪ̯ ˈʃtʊndn̩/"
-    ],
-    "en": [
-      "In theory, that sounds quite easy.",
-      "Our theory doesn't match the numbers.",
-      "He explains the theory to me very patiently.",
-      "According to the theory, we need two hours."
     ],
     "pos_analysis": [
       {
@@ -747,207 +1032,136 @@
         "difficulty_aggregated": 6.43
       },
       {
-        "sentence": "Nach der Theorie brauchen wir zwei Stunden.",
+        "sentence": "Der Theorie nach brauchen wir zwei Stunden.",
         "tokens": [
           {
-            "surface": "Nach",
-            "surface_en": "according to",
-            "furigana": "[naːx]",
-            "pos": "ADP",
-            "lemma": "nach",
-            "explanation": "Preposition meaning 'according to'; governs dative.",
-            "difficulty": 2
-          },
-          {
-            "surface": "der",
-            "surface_en": "the",
-            "furigana": "[deːɐ]",
-            "pos": "DET",
+            "surface": "Der",
             "lemma": "der",
-            "explanation": "Definite article; feminine dative singular with 'Theorie'.",
-            "difficulty": 2
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "Theorie",
-            "surface_en": "theory",
-            "furigana": "[teoˈʁiː]",
-            "pos": "NOUN",
             "lemma": "Theorie",
-            "explanation": "Complement of 'Nach'; feminine, dative singular.",
-            "difficulty": 10,
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 4,
+            "end": 11,
+            "analyzer": "spacy_de_core_news_lg",
             "is_main_word": true
           },
           {
+            "surface": "nach",
+            "lemma": "nach",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPO",
+            "feats": {},
+            "start": 12,
+            "end": 16,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
             "surface": "brauchen",
-            "surface_en": "need",
-            "furigana": "[ˈbʁaʊ̯xən]",
-            "pos": "VERB",
             "lemma": "brauchen",
-            "explanation": "Finite main verb; present indicative, 1st person plural with 'wir'.",
-            "difficulty": 10
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 17,
+            "end": 25,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "wir",
-            "surface_en": "we",
-            "furigana": "[viːɐ]",
-            "pos": "PRON",
             "lemma": "wir",
-            "explanation": "Personal pronoun; nominative plural; subject.",
-            "difficulty": 2
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 26,
+            "end": 29,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "zwei",
-            "surface_en": "two",
-            "furigana": "[tsvaɪ̯]",
-            "pos": "NUM",
             "lemma": "zwei",
-            "explanation": "Cardinal numeral; modifies 'Stunden'.",
-            "difficulty": 7
+            "pos": "NUM",
+            "upos": "NUM",
+            "xpos": "CARD",
+            "feats": {},
+            "start": 30,
+            "end": 34,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "Stunden.",
-            "surface_en": "hours",
-            "furigana": "[ˈʃtʊndən]",
-            "pos": "NOUN",
+            "surface": "Stunden",
             "lemma": "Stunde",
-            "explanation": "Accusative plural; direct object expressing duration.",
-            "difficulty": 10
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 35,
+            "end": 42,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 42,
+            "end": 43,
+            "analyzer": "spacy_de_core_news_lg"
           }
         ],
         "difficulty_aggregated": 6.14
       }
     ],
-    "es": [
-      "En teoría, eso suena bastante fácil.",
-      "Nuestra teoría no coincide con los números.",
-      "Él me explica la teoría con mucha paciencia.",
-      "Según la teoría, necesitamos dos horas."
-    ],
-    "fr": [
-      "En théorie, ça a l'air assez facile.",
-      "Notre théorie ne correspond pas aux chiffres.",
-      "Il m'explique la théorie avec beaucoup de patience.",
-      "Selon la théorie, nous avons besoin de deux heures."
-    ],
-    "it": [
-      "In teoria, sembra abbastanza facile.",
-      "La nostra teoria non coincide con i numeri.",
-      "Mi spiega la teoria con molta pazienza.",
-      "Secondo la teoria, ci servono due ore."
-    ],
-    "ko": [
-      "이론상으로는 그게 꽤 쉬워 보인다.",
-      "우리 이론은 숫자랑 안 맞아.",
-      "그가 나에게 이론을 아주 차근차근 설명해 준다.",
-      "이론에 따르면 두 시간이 필요해."
-    ],
-    "zh-Hans": [
-      "理论上这听起来很简单。",
-      "我们的理论和数字对不上。",
-      "他很耐心地向我解释这套理论。",
-      "根据理论，我们需要两个小时。"
-    ],
-    "yue": [
-      "理論上聽落去幾容易。",
-      "我哋嘅理論同啲數字唔夾。",
-      "佢好有耐性咁同我解釋個理論。",
-      "按照理論，我哋需要兩個鐘。"
-    ],
-    "ru": [
-      "В теории это кажется довольно простым.",
-      "Наша теория не сходится с цифрами.",
-      "Он очень терпеливо объясняет мне теорию.",
-      "Согласно теории, нам нужно два часа."
-    ],
-    "pt": [
-      "Em teoria, isso parece bem fácil.",
-      "Nossa teoria não bate com os números.",
-      "Ele me explica a teoria com muita paciência.",
-      "Segundo a teoria, precisamos de duas horas."
-    ],
-    "he": [
-      "בתיאוריה זה נשמע די פשוט.",
-      "התיאוריה שלנו לא מתאימה למספרים.",
-      "הוא מסביר לי את התיאוריה בסבלנות רבה.",
-      "לפי התיאוריה, אנחנו צריכים שעתיים."
-    ],
-    "tr": [
-      "Teoride kulağa oldukça kolay geliyor.",
-      "Teorimiz sayılarla uyuşmuyor.",
-      "Bana teoriyi büyük bir sabırla açıklıyor.",
-      "Teoriye göre iki saate ihtiyacımız var."
-    ],
-    "vi": [
-      "Về lý thuyết thì nghe có vẻ khá dễ.",
-      "Lý thuyết của chúng tôi không khớp với các con số.",
-      "Anh ấy giải thích lý thuyết cho tôi rất kiên nhẫn.",
-      "Theo lý thuyết, chúng tôi cần hai tiếng."
-    ],
+    "word_POS": "Noun",
+    "entry_id": "Theorie",
+    "word_en": "theory",
+    "word_es": "teoría",
+    "word_fr": "théorie",
+    "word_it": "teoria",
+    "word_ko": "이론",
+    "word_zh-Hans": "理论",
+    "word_yue": "理論",
+    "word_ru": "теория",
+    "word_pt": "teoria",
+    "word_he": "תיאוריה",
+    "word_tr": "teori",
+    "word_vi": "lý thuyết",
+    "word_ar": "نظرية",
+    "word_nl": "theorie",
+    "word_uk": "теорія",
+    "word_hu": "elmélet",
+    "word_hi": "सिद्धांत",
+    "word_pl": "teoria",
+    "word_el": "θεωρία",
+    "word_nb": "teori",
+    "word_id": "teori",
+    "word_sv": "teori",
+    "word_ro": "teorie",
+    "word_cs": "teorie",
+    "word_da": "teori",
+    "word_fi": "teoria",
+    "word_ja": "理論",
+    "word_de": "Theorie",
     "ar": [
       "نظريًا، يبدو هذا سهلًا إلى حد ما.",
       "نظريتنا لا تتوافق مع الأرقام.",
       "هو يشرح لي النظرية بصبر شديد.",
       "بحسب النظرية، نحتاج إلى ساعتين."
-    ],
-    "nl": [
-      "In theorie klinkt dat best makkelijk.",
-      "Onze theorie klopt niet met de cijfers.",
-      "Hij legt me de theorie heel geduldig uit.",
-      "Volgens de théorie hebben we twee uur nodig."
-    ],
-    "uk": [
-      "У теорії це звучить досить просто.",
-      "Наша теорія не збігається з цифрами.",
-      "Він дуже терпляче пояснює мені теорію.",
-      "Згідно з теорією нам потрібно дві години."
-    ],
-    "hu": [
-      "Elméletben ez elég egyszerűnek hangzik.",
-      "Az elméletünk nem egyezik a számokkal.",
-      "Nagyon türelmesen elmagyarázza nekem az elméletet.",
-      "Az elmélet szerint két órára van szükségünk."
-    ],
-    "hi": [
-      "सिद्धांत रूप से यह काफी आसान लगता है.",
-      "हमारी थ्योरी संख्याओं से मेल नहीं खाती.",
-      "वह मुझे बहुत धैर्य से सिद्धांत समझाता है.",
-      "सिद्धांत के अनुसार हमें दो घंटे चाहिए."
-    ],
-    "pl": [
-      "W teorii brzmi to całkiem łatwo.",
-      "Nasza teoria nie zgadza się z liczbami.",
-      "On bardzo cierpliwie tłumaczy mi teorię.",
-      "Według teorii potrzebujemy dwóch godzin."
-    ],
-    "el": [
-      "Θεωρητικά, αυτό ακούγεται αρκετά εύκολο.",
-      "Η θεωρία μας δεν ταιριάζει με τους αριθμούς.",
-      "Μου εξηγεί τη θεωρία με πολλή υπομονή.",
-      "Σύμφωνα με τη θεωρία, χρειαζόμαστε δύο ώρες."
-    ],
-    "nb": [
-      "I teorien høres det ganske enkelt ut.",
-      "Teorien vår stemmer ikke med tallene.",
-      "Han forklarer teorien for meg veldig tålmodig.",
-      "Ifølge teorien trenger vi to timer."
-    ],
-    "id": [
-      "Secara teori, itu terdengar cukup mudah.",
-      "Teori kami tidak cocok dengan angka.",
-      "Dia menjelaskan teori itu kepada saya dengan sangat sabar.",
-      "Menurut teori, kita butuh dua jam."
-    ],
-    "sv": [
-      "I teorin låter det ganska enkelt.",
-      "Vår teori stämmer inte med siffrorna.",
-      "Han förklarar teorin för mig med stort tålamod.",
-      "Enligt teorin behöver vi två timmar."
-    ],
-    "ro": [
-      "În teorie, asta pare destul de ușor.",
-      "Teoria noastră nu se potrivește cu cifrele.",
-      "Îmi explică teoria cu multă răbdare.",
-      "Conform teoriei, avem nevoie de două ore."
     ],
     "cs": [
       "Teoreticky to zní docela snadno.",
@@ -961,11 +1175,77 @@
       "Han forklarer teorien for mig meget tålmodigt.",
       "Ifølge teorien har vi brug for to timer."
     ],
+    "de": [
+      "In der Theorie klingt das ganz einfach.",
+      "Unsere Theorie passt nicht zu den Zahlen.",
+      "Er erklärt mir die Theorie ganz geduldig.",
+      "Nach der Theorie brauchen wir zwei Stunden."
+    ],
+    "el": [
+      "Θεωρητικά, αυτό ακούγεται αρκετά εύκολο.",
+      "Η θεωρία μας δεν ταιριάζει με τους αριθμούς.",
+      "Μου εξηγεί τη θεωρία με πολλή υπομονή.",
+      "Σύμφωνα με τη θεωρία, χρειαζόμαστε δύο ώρες."
+    ],
+    "en": [
+      "In theory, that sounds quite easy.",
+      "Our theory doesn't match the numbers.",
+      "He explains the theory to me very patiently.",
+      "According to the theory, we need two hours."
+    ],
+    "es": [
+      "En teoría, eso suena bastante fácil.",
+      "Nuestra teoría no coincide con los números.",
+      "Él me explica la teoría con mucha paciencia.",
+      "Según la teoría, necesitamos dos horas."
+    ],
     "fi": [
       "Teoriassa se kuulostaa aika helpolta.",
       "Teoriamme ei täsmää lukujen kanssa.",
       "Hän selittää minulle teorian hyvin kärsivällisesti.",
       "Teorian mukaan tarvitsemme kaksi tuntia."
+    ],
+    "fr": [
+      "En théorie, ça a l'air assez facile.",
+      "Notre théorie ne correspond pas aux chiffres.",
+      "Il m'explique la théorie avec beaucoup de patience.",
+      "Selon la théorie, nous avons besoin de deux heures."
+    ],
+    "he": [
+      "בתיאוריה זה נשמע די פשוט.",
+      "התיאוריה שלנו לא מתאימה למספרים.",
+      "הוא מסביר לי את התיאוריה בסבלנות רבה.",
+      "לפי התיאוריה, אנחנו צריכים שעתיים."
+    ],
+    "hi": [
+      "सिद्धांत रूप से यह काफी आसान लगता है.",
+      "हमारी थ्योरी संख्याओं से मेल नहीं खाती.",
+      "वह मुझे बहुत धैर्य से सिद्धांत समझाता है.",
+      "सिद्धांत के अनुसार हमें दो घंटे चाहिए."
+    ],
+    "hu": [
+      "Elméletben ez elég egyszerűnek hangzik.",
+      "Az elméletünk nem egyezik a számokkal.",
+      "Nagyon türelmesen elmagyarázza nekem az elméletet.",
+      "Az elmélet szerint két órára van szükségünk."
+    ],
+    "id": [
+      "Secara teori, itu terdengar cukup mudah.",
+      "Teori kami tidak cocok dengan angka.",
+      "Dia menjelaskan teori itu kepada saya dengan sangat sabar.",
+      "Menurut teori, kita butuh dua jam."
+    ],
+    "ipa": [
+      "/ɪn deːɐ̯ teoˈʁiː klɪŋt das ɡants ˈaɪ̯nfaχ/",
+      "/ˈʊnzəʁə teoˈʁiː past nɪçt tsuː deːn ˈtsaːlən/",
+      "/eːɐ̯ ɛɐ̯ˈklɛːɐ̯t miːɐ̯ diː teoˈʁiː ɡants ɡəˈdʊldɪç/",
+      "/naːx deːɐ̯ teoˈʁiː ˈbʁaʊ̯xən viːɐ̯ tsvaɪ̯ ˈʃtʊndn̩/"
+    ],
+    "it": [
+      "In teoria, sembra abbastanza facile.",
+      "La nostra teoria non coincide con i numeri.",
+      "Mi spiega la teoria con molta pazienza.",
+      "Secondo la teoria, ci servono due ore."
     ],
     "ja": [
       "理論上はけっこう簡単そうだ。",
@@ -973,6 +1253,83 @@
       "彼は私に理論をとても辛抱強く説明してくれる。",
       "理論によれば、二時間必要だ。"
     ],
-    "word_POS": "Noun"
+    "ko": [
+      "이론상으로는 그게 꽤 쉬워 보인다.",
+      "우리 이론은 숫자랑 안 맞아.",
+      "그가 나에게 이론을 아주 차근차근 설명해 준다.",
+      "이론에 따르면 두 시간이 필요해."
+    ],
+    "nb": [
+      "I teorien høres det ganske enkelt ut.",
+      "Teorien vår stemmer ikke med tallene.",
+      "Han forklarer teorien for meg veldig tålmodig.",
+      "Ifølge teorien trenger vi to timer."
+    ],
+    "nl": [
+      "In theorie klinkt dat best makkelijk.",
+      "Onze theorie klopt niet met de cijfers.",
+      "Hij legt me de theorie heel geduldig uit.",
+      "Volgens de théorie hebben we twee uur nodig."
+    ],
+    "pl": [
+      "W teorii brzmi to całkiem łatwo.",
+      "Nasza teoria nie zgadza się z liczbami.",
+      "On bardzo cierpliwie tłumaczy mi teorię.",
+      "Według teorii potrzebujemy dwóch godzin."
+    ],
+    "pt": [
+      "Em teoria, isso parece bem fácil.",
+      "Nossa teoria não bate com os números.",
+      "Ele me explica a teoria com muita paciência.",
+      "Segundo a teoria, precisamos de duas horas."
+    ],
+    "ro": [
+      "În teorie, asta pare destul de ușor.",
+      "Teoria noastră nu se potrivește cu cifrele.",
+      "Îmi explică teoria cu multă răbdare.",
+      "Conform teoriei, avem nevoie de două ore."
+    ],
+    "ru": [
+      "В теории это кажется довольно простым.",
+      "Наша теория не сходится с цифрами.",
+      "Он очень терпеливо объясняет мне теорию.",
+      "Согласно теории, нам нужно два часа."
+    ],
+    "sv": [
+      "I teorin låter det ganska enkelt.",
+      "Vår teori stämmer inte med siffrorna.",
+      "Han förklarar teorin för mig med stort tålamod.",
+      "Enligt teorin behöver vi två timmar."
+    ],
+    "tr": [
+      "Teoride kulağa oldukça kolay geliyor.",
+      "Teorimiz sayılarla uyuşmuyor.",
+      "Bana teoriyi büyük bir sabırla açıklıyor.",
+      "Teoriye göre iki saate ihtiyacımız var."
+    ],
+    "uk": [
+      "У теорії це звучить досить просто.",
+      "Наша теорія не збігається з цифрами.",
+      "Він дуже терпляче пояснює мені теорію.",
+      "Згідно з теорією нам потрібно дві години."
+    ],
+    "vi": [
+      "Về lý thuyết thì nghe có vẻ khá dễ.",
+      "Lý thuyết của chúng tôi không khớp với các con số.",
+      "Anh ấy giải thích lý thuyết cho tôi rất kiên nhẫn.",
+      "Theo lý thuyết, chúng tôi cần hai tiếng."
+    ],
+    "yue": [
+      "理論上聽落去幾容易。",
+      "我哋嘅理論同啲數字唔夾。",
+      "佢好有耐性咁同我解釋個理論。",
+      "按照理論，我哋需要兩個鐘。"
+    ],
+    "zh-Hans": [
+      "理论上这听起来很简单。",
+      "我们的理论和数字对不上。",
+      "他很耐心地向我解释这套理论。",
+      "根据理论，我们需要两个小时。"
+    ]
   }
 }

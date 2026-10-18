@@ -317,7 +317,7 @@
         "he": "צינור המים הישן החליד ונוצר בו חור.",
         "tr": "Eski su borusu paslandı ve bir delik oluştu.",
         "vi": "Ống nước cũ bị rỉ sét và xuất hiện một lỗ thủng.",
-        "ar": "أنبوب المياه القديم صدئ وتكوَّن فيه ثقب.",
+        "ar": "أنبوب المياه القديم صدئ وتكوَّن فيه ثقب.",
         "nl": "De oude waterleiding is verroest en er is een gat ontstaan.",
         "uk": "Стара водопровідна труба заіржавіла й утворився отвір.",
         "hu": "A régi vízvezeték berozsdásodott, és lyuk keletkezett rajta.",
@@ -335,12 +335,14 @@
       "tokens": [
         {
           "surface": "古い",
-          "surface_en": "old",
-          "furigana": "ふるい",
-          "pos": "adjective",
           "lemma": "古い",
-          "explanation": "I-adjective modifying '水道管' to indicate age.",
-          "difficulty": 3,
+          "pos": "形容詞/一般/*/*/形容詞/連体形-一般",
+          "upos": "ADJ",
+          "xpos": "形容詞",
+          "feats": {},
+          "start": 0,
+          "end": 2,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "ふるい",
           "ruby_text": "古[ふる]い",
           "ruby_spans": [
@@ -351,73 +353,118 @@
               "length": 1
             }
           ],
-          "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "ruby_confidence": "reviewed",
+          "furigana": "ふるい",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
-          "surface": "水道管",
-          "surface_en": "water pipe",
-          "furigana": "みずどうかん",
-          "pos": "noun",
-          "lemma": "水道管",
-          "explanation": "Refers to a water pipe.",
-          "difficulty": 1,
-          "reading_kana": "みずどうかん",
-          "ruby_text": "水[みず]道管[どうかん]",
+          "surface": "水",
+          "lemma": "水",
+          "pos": "名詞/普通名詞/一般/*/*/*",
+          "upos": "NOUN",
+          "xpos": "名詞",
+          "feats": {},
+          "start": 2,
+          "end": 3,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "みず",
+          "ruby_text": "水[みず]",
           "ruby_spans": [
             {
               "base": "水",
               "reading": "みず",
               "start": 0,
               "length": 1
-            },
+            }
+          ],
+          "ruby_confidence": "reviewed",
+          "furigana": "みず",
+          "ruby_source": "mediawiki_sentence_ruby",
+          "is_main_word": true
+        },
+        {
+          "surface": "道管",
+          "lemma": "道管",
+          "pos": "名詞/普通名詞/一般/*/*/*",
+          "upos": "NOUN",
+          "xpos": "名詞",
+          "feats": {},
+          "start": 3,
+          "end": 5,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "どうかん",
+          "ruby_text": "道管[どうかん]",
+          "ruby_spans": [
             {
               "base": "道管",
               "reading": "どうかん",
-              "start": 1,
+              "start": 0,
               "length": 2
             }
           ],
-          "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c",
+          "ruby_confidence": "reviewed",
+          "furigana": "どうかん",
+          "ruby_source": "mediawiki_sentence_ruby",
           "is_main_word": true
         },
         {
           "surface": "が",
-          "surface_en": "(subject marker)",
-          "furigana": "が",
-          "pos": "particle",
           "lemma": "が",
-          "explanation": "Subject marker for '水道管' as the subject of 'さびて'.",
-          "difficulty": 1,
+          "pos": "助詞/格助詞/*/*/*/*",
+          "upos": "PART",
+          "xpos": "助詞",
+          "feats": {},
+          "start": 5,
+          "end": 6,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "が",
           "ruby_text": "が",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "が"
         },
         {
-          "surface": "さびて",
-          "surface_en": "rusted (and...)",
-          "furigana": "さびて",
-          "pos": "verb",
+          "surface": "さび",
           "lemma": "さびる",
-          "explanation": "Te-form of さびる, used to connect to the next clause.",
-          "difficulty": 1,
-          "reading_kana": "さびて",
-          "ruby_text": "さびて",
+          "pos": "動詞/一般/*/*/上一段-バ行/連用形-一般",
+          "upos": "VERB",
+          "xpos": "動詞",
+          "feats": {},
+          "start": 6,
+          "end": 8,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "さび",
+          "ruby_text": "さび",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "さび"
+        },
+        {
+          "surface": "て",
+          "lemma": "て",
+          "pos": "助詞/接続助詞/*/*/*/*",
+          "upos": "PART",
+          "xpos": "助詞",
+          "feats": {},
+          "start": 8,
+          "end": 9,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "て",
+          "ruby_text": "て",
+          "ruby_spans": [],
+          "ruby_confidence": "high",
+          "furigana": "て"
         },
         {
           "surface": "穴",
-          "surface_en": "hole",
-          "furigana": "あな",
-          "pos": "noun",
           "lemma": "穴",
-          "explanation": "Denotes a hole created by rust.",
-          "difficulty": 20,
+          "pos": "名詞/普通名詞/一般/*/*/*",
+          "upos": "NOUN",
+          "xpos": "名詞",
+          "feats": {},
+          "start": 9,
+          "end": 10,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "あな",
           "ruby_text": "穴[あな]",
           "ruby_spans": [
@@ -428,36 +475,73 @@
               "length": 1
             }
           ],
-          "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "ruby_confidence": "reviewed",
+          "furigana": "あな",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "が",
-          "surface_en": "(subject marker)",
-          "furigana": "が",
-          "pos": "particle",
           "lemma": "が",
-          "explanation": "Subject marker for '穴' as the subject of 'あいた'.",
-          "difficulty": 1,
+          "pos": "助詞/格助詞/*/*/*/*",
+          "upos": "PART",
+          "xpos": "助詞",
+          "feats": {},
+          "start": 10,
+          "end": 11,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "が",
           "ruby_text": "が",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "が"
         },
         {
-          "surface": "あいた",
-          "surface_en": "opened / formed",
-          "furigana": "あいた",
-          "pos": "verb (past)",
-          "lemma": "開く",
-          "explanation": "Past form of 開く, indicating that a hole opened or formed.",
-          "difficulty": 1,
-          "reading_kana": "あいた",
-          "ruby_text": "あいた",
+          "surface": "あい",
+          "lemma": "あく",
+          "pos": "動詞/一般/*/*/五段-カ行/連用形-イ音便",
+          "upos": "VERB",
+          "xpos": "動詞",
+          "feats": {},
+          "start": 11,
+          "end": 13,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "あい",
+          "ruby_text": "あい",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "あい"
+        },
+        {
+          "surface": "た",
+          "lemma": "た",
+          "pos": "助動詞/*/*/*/助動詞-タ/終止形-一般",
+          "upos": "AUX",
+          "xpos": "助動詞",
+          "feats": {},
+          "start": 13,
+          "end": 14,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "た",
+          "ruby_text": "た",
+          "ruby_spans": [],
+          "ruby_confidence": "high",
+          "furigana": "た"
+        },
+        {
+          "surface": "。",
+          "lemma": "。",
+          "pos": "補助記号/句点/*/*/*/*",
+          "upos": "PUNCT",
+          "xpos": "補助記号",
+          "feats": {},
+          "start": 14,
+          "end": 15,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "。",
+          "ruby_text": "。",
+          "ruby_spans": [],
+          "ruby_confidence": "high",
+          "furigana": "。"
         }
       ],
       "difficulty": 4,
@@ -465,7 +549,7 @@
     },
     {
       "target": "新しい水道管に交換したら水がよく出た！",
-      "reading": "あたらしいみずどうかんにこうかんしたらみずがよくでた！",
+      "reading": "あたらしいみずどうかんにこうかんしたらみずがよくでた!",
       "translations": {
         "en": "After replacing it with a new water pipe, the water flows well!",
         "es": "Después de cambiarla por una tubería nueva, ¡el agua del grifo fluye bien!",
@@ -498,12 +582,14 @@
       "tokens": [
         {
           "surface": "新しい",
-          "surface_en": "new",
-          "furigana": "あたらしい",
-          "pos": "adjective",
           "lemma": "新しい",
-          "explanation": "I-adjective modifying '水道管' to indicate it is new.",
-          "difficulty": 9,
+          "pos": "形容詞/一般/*/*/形容詞/連体形-一般",
+          "upos": "ADJ",
+          "xpos": "形容詞",
+          "feats": {},
+          "start": 0,
+          "end": 3,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "あたらしい",
           "ruby_text": "新[あたら]しい",
           "ruby_spans": [
@@ -514,80 +600,20 @@
               "length": 1
             }
           ],
-          "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
-        },
-        {
-          "surface": "水道管",
-          "surface_en": "water pipe",
-          "furigana": "みずどうかん",
-          "pos": "noun",
-          "lemma": "水道管",
-          "explanation": "Refers to the water pipe being discussed.",
-          "difficulty": 1,
-          "reading_kana": "みずどうかん",
-          "ruby_text": "水[みず]道管[どうかん]",
-          "ruby_spans": [
-            {
-              "base": "水",
-              "reading": "みず",
-              "start": 0,
-              "length": 1
-            },
-            {
-              "base": "道管",
-              "reading": "どうかん",
-              "start": 1,
-              "length": 2
-            }
-          ],
-          "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c",
-          "is_main_word": true
-        },
-        {
-          "surface": "に",
-          "surface_en": "to",
-          "furigana": "に",
-          "pos": "particle",
-          "lemma": "に",
-          "explanation": "Indicates the target or goal of the action '交換したら'.",
-          "difficulty": 1,
-          "reading_kana": "に",
-          "ruby_text": "に",
-          "ruby_spans": [],
-          "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
-        },
-        {
-          "surface": "交換したら",
-          "surface_en": "when/if replaced",
-          "furigana": "こうかんしたら",
-          "pos": "verb (conditional)",
-          "lemma": "交換する",
-          "explanation": "Conditional form of 交換する, meaning 'if/when [it] was replaced'.",
-          "difficulty": 1,
-          "reading_kana": "こうかんしたら",
-          "ruby_text": "交換[こうかん]したら",
-          "ruby_spans": [
-            {
-              "base": "交換",
-              "reading": "こうかん",
-              "start": 0,
-              "length": 2
-            }
-          ],
-          "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "ruby_confidence": "reviewed",
+          "furigana": "あたらしい",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "水",
-          "surface_en": "water",
-          "furigana": "みず",
-          "pos": "noun",
           "lemma": "水",
-          "explanation": "Refers to water as the subject of the clause '出た'.",
-          "difficulty": 2,
+          "pos": "名詞/普通名詞/一般/*/*/*",
+          "upos": "NOUN",
+          "xpos": "名詞",
+          "feats": {},
+          "start": 3,
+          "end": 4,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "みず",
           "ruby_text": "水[みず]",
           "ruby_spans": [
@@ -598,47 +624,176 @@
               "length": 1
             }
           ],
+          "ruby_confidence": "reviewed",
+          "furigana": "みず",
+          "ruby_source": "mediawiki_sentence_ruby",
+          "is_main_word": true
+        },
+        {
+          "surface": "道管",
+          "lemma": "道管",
+          "pos": "名詞/普通名詞/一般/*/*/*",
+          "upos": "NOUN",
+          "xpos": "名詞",
+          "feats": {},
+          "start": 4,
+          "end": 6,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "どうかん",
+          "ruby_text": "道管[どうかん]",
+          "ruby_spans": [
+            {
+              "base": "道管",
+              "reading": "どうかん",
+              "start": 0,
+              "length": 2
+            }
+          ],
+          "ruby_confidence": "reviewed",
+          "furigana": "どうかん",
+          "ruby_source": "mediawiki_sentence_ruby",
+          "is_main_word": true
+        },
+        {
+          "surface": "に",
+          "lemma": "に",
+          "pos": "助詞/格助詞/*/*/*/*",
+          "upos": "PART",
+          "xpos": "助詞",
+          "feats": {},
+          "start": 6,
+          "end": 7,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "に",
+          "ruby_text": "に",
+          "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "に"
+        },
+        {
+          "surface": "交換",
+          "lemma": "交換",
+          "pos": "名詞/普通名詞/サ変可能/*/*/*",
+          "upos": "NOUN",
+          "xpos": "名詞",
+          "feats": {},
+          "start": 7,
+          "end": 9,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "こうかん",
+          "ruby_text": "交換[こうかん]",
+          "ruby_spans": [
+            {
+              "base": "交換",
+              "reading": "こうかん",
+              "start": 0,
+              "length": 2
+            }
+          ],
+          "ruby_confidence": "reviewed",
+          "furigana": "こうかん",
+          "ruby_source": "mediawiki_sentence_ruby"
+        },
+        {
+          "surface": "し",
+          "lemma": "する",
+          "pos": "動詞/非自立可能/*/*/サ行変格/連用形-一般",
+          "upos": "VERB",
+          "xpos": "動詞",
+          "feats": {},
+          "start": 9,
+          "end": 10,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "し",
+          "ruby_text": "し",
+          "ruby_spans": [],
+          "ruby_confidence": "high",
+          "furigana": "し"
+        },
+        {
+          "surface": "たら",
+          "lemma": "た",
+          "pos": "助動詞/*/*/*/助動詞-タ/仮定形-一般",
+          "upos": "AUX",
+          "xpos": "助動詞",
+          "feats": {},
+          "start": 10,
+          "end": 12,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "たら",
+          "ruby_text": "たら",
+          "ruby_spans": [],
+          "ruby_confidence": "high",
+          "furigana": "たら"
+        },
+        {
+          "surface": "水",
+          "lemma": "水",
+          "pos": "名詞/普通名詞/一般/*/*/*",
+          "upos": "NOUN",
+          "xpos": "名詞",
+          "feats": {},
+          "start": 12,
+          "end": 13,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "みず",
+          "ruby_text": "水[みず]",
+          "ruby_spans": [
+            {
+              "base": "水",
+              "reading": "みず",
+              "start": 0,
+              "length": 1
+            }
+          ],
+          "ruby_confidence": "reviewed",
+          "furigana": "みず",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "が",
-          "surface_en": "(subject marker)",
-          "furigana": "が",
-          "pos": "particle",
           "lemma": "が",
-          "explanation": "Subject marker marking '水' as the subject of '出た'.",
-          "difficulty": 1,
+          "pos": "助詞/格助詞/*/*/*/*",
+          "upos": "PART",
+          "xpos": "助詞",
+          "feats": {},
+          "start": 13,
+          "end": 14,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "が",
           "ruby_text": "が",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "が"
         },
         {
           "surface": "よく",
-          "surface_en": "well",
-          "furigana": "よく",
-          "pos": "adverb",
           "lemma": "よく",
-          "explanation": "Adverb modifying '出た', indicating degree.",
-          "difficulty": 1,
+          "pos": "副詞/*/*/*/*/*",
+          "upos": "ADV",
+          "xpos": "副詞",
+          "feats": {},
+          "start": 14,
+          "end": 16,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "よく",
           "ruby_text": "よく",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "よく"
         },
         {
-          "surface": "出た",
-          "surface_en": "came out",
-          "furigana": "でた",
-          "pos": "verb (past)",
+          "surface": "出",
           "lemma": "出る",
-          "explanation": "Past form of 出る, meaning 'to come out', describing water flow.",
-          "difficulty": 1,
-          "reading_kana": "でた",
-          "ruby_text": "出[で]た",
+          "pos": "動詞/一般/*/*/下一段-ダ行/連用形-一般",
+          "upos": "VERB",
+          "xpos": "動詞",
+          "feats": {},
+          "start": 16,
+          "end": 17,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "で",
+          "ruby_text": "出[で]",
           "ruby_spans": [
             {
               "base": "出",
@@ -647,8 +802,41 @@
               "length": 1
             }
           ],
+          "ruby_confidence": "reviewed",
+          "furigana": "で",
+          "ruby_source": "mediawiki_sentence_ruby"
+        },
+        {
+          "surface": "た",
+          "lemma": "た",
+          "pos": "助動詞/*/*/*/助動詞-タ/終止形-一般",
+          "upos": "AUX",
+          "xpos": "助動詞",
+          "feats": {},
+          "start": 17,
+          "end": 18,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "た",
+          "ruby_text": "た",
+          "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "た"
+        },
+        {
+          "surface": "！",
+          "lemma": "!",
+          "pos": "補助記号/句点/*/*/*/*",
+          "upos": "PUNCT",
+          "xpos": "補助記号",
+          "feats": {},
+          "start": 18,
+          "end": 19,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "!",
+          "ruby_text": "！",
+          "ruby_spans": [],
+          "ruby_confidence": "high",
+          "furigana": "!"
         }
       ],
       "difficulty": 2.12,
@@ -669,19 +857,1169 @@
     "content_reviewers": [
       "mediawiki-visible-revision"
     ],
-    "last_reviewed_utc": "2026-06-21T18:36:37Z",
-    "approval_source": "mediawiki_visible_revision",
+    "last_reviewed_utc": "2026-10-10T23:27:54Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
     "wiki": {
       "title": "Item:Ja n5/27a3ad8a4b69db63",
-      "revision_id": 58547,
-      "parent_revision_id": 36991,
-      "revision_timestamp_utc": "2026-06-21T18:36:37Z",
-      "revision_user": "VocomiBot",
-      "revision_comment": "Sync ja_n5 item 水道",
-      "pulled_utc": "2026-06-21T20:53:38Z",
-      "applied_utc": "2026-06-21T20:53:53Z",
+      "revision_id": 83785,
+      "parent_revision_id": 69722,
+      "revision_timestamp_utc": "2026-10-10T23:27:54Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Suggest reviewed Japanese and translation corrections",
+      "pulled_utc": "2026-10-17T07:37:31Z",
+      "applied_utc": "2026-10-17T07:37:47Z",
       "applied_by": "vocomipedia-apply-pulled"
-    }
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-fbff369157f2123a",
+        "status": "applied",
+        "type": "translation_update",
+        "item_id": "ja_n5:27a3ad8a4b69db63",
+        "pack_code": "ja_n5",
+        "entry_id": "水道",
+        "language": "ja",
+        "sentence_index": 3,
+        "old_sentence": "古い水道管がさびて穴があいた。",
+        "old_translations": {
+          "en": "The old water pipe rusted and developed a hole.",
+          "es": "La vieja tubería de agua se oxidó y se le hizo un agujero.",
+          "fr": "Le vieux tuyau d’eau a rouillé et un trou s’y est formé.",
+          "de": "Das alte Wasserrohr rostete und bekam ein Loch.",
+          "it": "Il vecchio tubo dell'acqua si è arrugginito e si è bucato.",
+          "ko": "오래된 수도관이 녹슬면서 구멍이 났습니다.",
+          "zh-Hans": "旧水管生锈并出现了一个洞。",
+          "yue": "舊水管生鏽，生咗個窿。",
+          "ru": "Старая водопроводная труба заржавела, и в ней образовалась дыра.",
+          "pt": "O cano de água velho enferrujou e ficou com um buraco.",
+          "he": "צינור המים הישן החליד ונוצר בו חור.",
+          "tr": "Eski su borusu paslandı ve delindi.",
+          "vi": "Ống nước cũ bị rỉ sét và xuất hiện một lỗ thủng.",
+          "ar": "صدأ أنبوب المياه القديم وظهر فيه ثقب.",
+          "nl": "De oude waterleiding is verroest en er is een gat ontstaan.",
+          "uk": "Стара водопровідна труба заіржавіла, і в ній утворився отвір.",
+          "hu": "A régi vízvezeték berozsdásodott, és lyuk keletkezett rajta.",
+          "hi": "पुराने पानी के पाइप में जंग लग गया और एक छेद हो गया।",
+          "pl": "Stara rura wodna zardzewiała i powstała w niej dziura.",
+          "el": "Ο παλιός σωλήνας νερού σκούριασε και τρύπησε.",
+          "nb": "Det gamle vannrøret rustet og fikk et hull.",
+          "id": "Pipa air tua berkarat dan berlubang.",
+          "sv": "Det gamla vattenröret rostade och fick ett hål.",
+          "ro": "Vechea țeavă de apă a ruginit, iar în ea a apărut o gaură.",
+          "cs": "Staré vodovodní potrubí zrezivělo a vytvořila se v něm díra.",
+          "da": "Det gamle vandrør rustede og fik et hul.",
+          "fi": "Vanha vesiputki ruostui ja siihen tuli reikä."
+        },
+        "proposed_sentence": "古い水道管がさびて穴があいた。",
+        "proposed_translations": {
+          "en": "The old water pipe rusted and developed a hole.",
+          "es": "La vieja tubería de agua se oxidó y formó un agujero.",
+          "fr": "Le vieux tuyau d’eau a rouillé et a fait un trou.",
+          "de": "Das alte Wasserrohr rostete und bekam ein Loch.",
+          "it": "Il vecchio tubo dell'acqua si è arrugginito e si è formato un buco.",
+          "ko": "오래된 수도관이 녹슬면서 구멍이 났습니다.",
+          "zh-Hans": "旧水管生锈并出现了一个洞。",
+          "yue": "舊水管生鏽，生咗個窿。",
+          "ru": "Старая водопроводная труба заржавела, и в ней образовалась дыра.",
+          "pt": "O velho cano de água enferrujou e formou um buraco.",
+          "he": "צינור המים הישן החליד ונוצר בו חור.",
+          "tr": "Eski su borusu paslandı ve bir delik oluştu.",
+          "vi": "Ống nước cũ bị rỉ sét và xuất hiện một lỗ thủng.",
+          "ar": "أنبوب المياه القديم صدئ وتكوَّن فيه ثقب.",
+          "nl": "De oude waterleiding is verroest en er is een gat ontstaan.",
+          "uk": "Стара водопровідна труба заіржавіла й утворився отвір.",
+          "hu": "A régi vízvezeték berozsdásodott, és lyuk keletkezett rajta.",
+          "hi": "पुराने पानी के पाइप में जंग लग गया और एक छेद हो गया।",
+          "pl": "Stara rura wodna zardzewiała i powstała w niej dziura.",
+          "el": "Ο παλιός σωλήνας νερού σκουριάστηκε και άνοιξε μια τρύπα.",
+          "nb": "Det gamle vannrøret rustet og fikk et hull.",
+          "id": "Pipa air tua berkarat dan berlubang.",
+          "sv": "Det gamla vattenröret rostade och fick ett hål.",
+          "ro": "Vechea țeavă de apă a ruginit și a făcut o gaură.",
+          "cs": "Staré vodovodní potrubí zrezivělo a vytvořila se díra.",
+          "da": "Det gamle vandrør rustede og fik et hul.",
+          "fi": "Vanha vesiputki ruostui ja siihen tuli reikä."
+        },
+        "old_ruby_source": "古[ふる]い水道管[すいどうかん]がさびて穴[あな]があいた。",
+        "proposed_ruby_source": "古[ふる]い水[みず]道管[どうかん]がさびて穴[あな]があいた。",
+        "old_japanese": "古い水道管がさびて穴があいた。",
+        "old_english": "The old water pipe rusted and developed a hole.",
+        "proposed_japanese": "古い水道管がさびて穴があいた。",
+        "proposed_english": "The old water pipe rusted and developed a hole.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "ja",
+          "sentence": "古い水道管がさびて穴があいた。",
+          "tokens": [
+            {
+              "surface": "古い",
+              "lemma": "古い",
+              "pos": "形容詞/一般/*/*/形容詞/連体形-一般",
+              "upos": "ADJ",
+              "xpos": "形容詞",
+              "feats": {},
+              "start": 0,
+              "end": 2,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "ふるい",
+              "ruby_text": "古[ふる]い",
+              "ruby_spans": [
+                {
+                  "base": "古",
+                  "reading": "ふる",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "ふるい",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "水",
+              "lemma": "水",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 2,
+              "end": 3,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "みず",
+              "ruby_text": "水[みず]",
+              "ruby_spans": [
+                {
+                  "base": "水",
+                  "reading": "みず",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "みず",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "道管",
+              "lemma": "道管",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 3,
+              "end": 5,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "どうかん",
+              "ruby_text": "道管[どうかん]",
+              "ruby_spans": [
+                {
+                  "base": "道管",
+                  "reading": "どうかん",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "どうかん",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "が",
+              "lemma": "が",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 5,
+              "end": 6,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "が",
+              "ruby_text": "が",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "が"
+            },
+            {
+              "surface": "さび",
+              "lemma": "さびる",
+              "pos": "動詞/一般/*/*/上一段-バ行/連用形-一般",
+              "upos": "VERB",
+              "xpos": "動詞",
+              "feats": {},
+              "start": 6,
+              "end": 8,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "さび",
+              "ruby_text": "さび",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "さび"
+            },
+            {
+              "surface": "て",
+              "lemma": "て",
+              "pos": "助詞/接続助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 8,
+              "end": 9,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "て",
+              "ruby_text": "て",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "て"
+            },
+            {
+              "surface": "穴",
+              "lemma": "穴",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 9,
+              "end": 10,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "あな",
+              "ruby_text": "穴[あな]",
+              "ruby_spans": [
+                {
+                  "base": "穴",
+                  "reading": "あな",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "あな",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "が",
+              "lemma": "が",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 10,
+              "end": 11,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "が",
+              "ruby_text": "が",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "が"
+            },
+            {
+              "surface": "あい",
+              "lemma": "あく",
+              "pos": "動詞/一般/*/*/五段-カ行/連用形-イ音便",
+              "upos": "VERB",
+              "xpos": "動詞",
+              "feats": {},
+              "start": 11,
+              "end": 13,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "あい",
+              "ruby_text": "あい",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "あい"
+            },
+            {
+              "surface": "た",
+              "lemma": "た",
+              "pos": "助動詞/*/*/*/助動詞-タ/終止形-一般",
+              "upos": "AUX",
+              "xpos": "助動詞",
+              "feats": {},
+              "start": 13,
+              "end": 14,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "た",
+              "ruby_text": "た",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "た"
+            },
+            {
+              "surface": "。",
+              "lemma": "。",
+              "pos": "補助記号/句点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 14,
+              "end": 15,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "。",
+              "ruby_text": "。",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "。"
+            }
+          ],
+          "reading": "ふるいみずどうかんがさびてあながあいた。",
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "warnings": [
+            "mediawiki ruby hints applied"
+          ]
+        },
+        "generated_tokens": [
+          {
+            "surface": "古い",
+            "lemma": "古い",
+            "pos": "形容詞/一般/*/*/形容詞/連体形-一般",
+            "upos": "ADJ",
+            "xpos": "形容詞",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ふるい",
+            "ruby_text": "古[ふる]い",
+            "ruby_spans": [
+              {
+                "base": "古",
+                "reading": "ふる",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "ふるい",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "水",
+            "lemma": "水",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 2,
+            "end": 3,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "みず",
+            "ruby_text": "水[みず]",
+            "ruby_spans": [
+              {
+                "base": "水",
+                "reading": "みず",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "みず",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "道管",
+            "lemma": "道管",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 3,
+            "end": 5,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "どうかん",
+            "ruby_text": "道管[どうかん]",
+            "ruby_spans": [
+              {
+                "base": "道管",
+                "reading": "どうかん",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "どうかん",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "が",
+            "lemma": "が",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 5,
+            "end": 6,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "が",
+            "ruby_text": "が",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "が"
+          },
+          {
+            "surface": "さび",
+            "lemma": "さびる",
+            "pos": "動詞/一般/*/*/上一段-バ行/連用形-一般",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 6,
+            "end": 8,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "さび",
+            "ruby_text": "さび",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "さび"
+          },
+          {
+            "surface": "て",
+            "lemma": "て",
+            "pos": "助詞/接続助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 8,
+            "end": 9,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "て",
+            "ruby_text": "て",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "て"
+          },
+          {
+            "surface": "穴",
+            "lemma": "穴",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 9,
+            "end": 10,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "あな",
+            "ruby_text": "穴[あな]",
+            "ruby_spans": [
+              {
+                "base": "穴",
+                "reading": "あな",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "あな",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "が",
+            "lemma": "が",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 10,
+            "end": 11,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "が",
+            "ruby_text": "が",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "が"
+          },
+          {
+            "surface": "あい",
+            "lemma": "あく",
+            "pos": "動詞/一般/*/*/五段-カ行/連用形-イ音便",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 11,
+            "end": 13,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "あい",
+            "ruby_text": "あい",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "あい"
+          },
+          {
+            "surface": "た",
+            "lemma": "た",
+            "pos": "助動詞/*/*/*/助動詞-タ/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 13,
+            "end": 14,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "た",
+            "ruby_text": "た",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "た"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 14,
+            "end": 15,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
+          }
+        ],
+        "generated_reading": "ふるいみずどうかんがさびてあながあいた。",
+        "analyzer": "sudachipy_sudachidict_core_c",
+        "requires": [
+          "human_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:37:31Z",
+        "updated_utc": "2026-10-17T07:38:16Z",
+        "applied_utc": "2026-10-17T07:38:16Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      },
+      {
+        "id": "sentprop-15056c56ec6bf791",
+        "status": "applied",
+        "type": "ruby_update",
+        "item_id": "ja_n5:27a3ad8a4b69db63",
+        "pack_code": "ja_n5",
+        "entry_id": "水道",
+        "language": "ja",
+        "sentence_index": 4,
+        "old_sentence": "新しい水道管に交換したら水がよく出た！",
+        "old_translations": {
+          "en": "After replacing it with a new water pipe, the water flows well!",
+          "es": "Después de cambiarla por una tubería nueva, ¡el agua del grifo fluye bien!",
+          "fr": "Après l’avoir remplacé par un nouveau tuyau d’eau, l’eau coule bien !",
+          "de": "Nachdem ich es durch ein neues Wasserrohr ersetzt habe, fließt das Wasser gut!",
+          "it": "Dopo averlo sostituito con un nuovo tubo dell'acqua, l'acqua scorre bene!",
+          "ko": "새 수도관으로 교체하니 물이 잘 나와요!",
+          "zh-Hans": "换上新的水管后，自来水流得很好！",
+          "yue": "換咗新水喉之後，自來水流得好好！",
+          "ru": "После замены на новую водопроводную трубу вода течёт хорошо!",
+          "pt": "Depois de trocar por um novo cano, a água da torneira corre bem!",
+          "he": "אחרי שהחלפתם לצינור מים חדש, המים זורמים היטב!",
+          "tr": "Yeni bir su borusuyla değiştirdikten sonra su iyi akıyor!",
+          "vi": "Sau khi thay bằng đường ống nước mới, nước máy chảy rất tốt!",
+          "ar": "بعد استبداله بأنبوب ماء جديد، تتدفق مياه الصنبور بشكل جيد!",
+          "nl": "Na het vervangen door een nieuwe waterleiding stroomt het kraanwater goed!",
+          "uk": "Після заміни на нову водопровідну трубу вода тече добре!",
+          "hu": "Miután kicserélte egy új vízcsőre, a vezetékes víz jól folyik!",
+          "hi": "इसे नए पानी के पाइप से बदलने के बाद, नल का पानी अच्छी तरह से बहता है!",
+          "pl": "Po wymianie na nową rurę wodociągową woda płynie dobrze!",
+          "el": "Μετά την αντικατάστασή του με νέο σωλήνα νερού, το νερό ρέει καλά!",
+          "nb": "Etter at vi byttet det ut med et nytt vannrør, renner vannet godt!",
+          "id": "Setelah menggantinya dengan pipa air baru, air keran mengalir dengan baik!",
+          "sv": "Efter att ha bytt ut det mot ett nytt vattenrör rinner kranvattnet bra!",
+          "ro": "După ce o înlocuiești cu o țeavă nouă de apă, apa de la robinet curge bine!",
+          "cs": "Po výměně za novou vodovodní trubku voda teče dobře!",
+          "da": "Efter at have udskiftet det med et nyt vandrør, løber vandet fra hanen godt!",
+          "fi": "Kun se on vaihdettu uuteen vesiputkeen, hanavesi virtaa hyvin!"
+        },
+        "proposed_sentence": "新しい水道管に交換したら水がよく出た！",
+        "proposed_translations": {
+          "en": "After replacing it with a new water pipe, the water flows well!",
+          "es": "Después de cambiarla por una tubería nueva, ¡el agua del grifo fluye bien!",
+          "fr": "Après l’avoir remplacé par un nouveau tuyau d’eau, l’eau coule bien !",
+          "de": "Nachdem ich es durch ein neues Wasserrohr ersetzt habe, fließt das Wasser gut!",
+          "it": "Dopo averlo sostituito con un nuovo tubo dell'acqua, l'acqua scorre bene!",
+          "ko": "새 수도관으로 교체하니 물이 잘 나와요!",
+          "zh-Hans": "换上新的水管后，自来水流得很好！",
+          "yue": "換咗新水喉之後，自來水流得好好！",
+          "ru": "После замены на новую водопроводную трубу вода течёт хорошо!",
+          "pt": "Depois de trocar por um novo cano, a água da torneira corre bem!",
+          "he": "אחרי שהחלפתם לצינור מים חדש, המים זורמים היטב!",
+          "tr": "Yeni bir su borusuyla değiştirdikten sonra su iyi akıyor!",
+          "vi": "Sau khi thay bằng đường ống nước mới, nước máy chảy rất tốt!",
+          "ar": "بعد استبداله بأنبوب ماء جديد، تتدفق مياه الصنبور بشكل جيد!",
+          "nl": "Na het vervangen door een nieuwe waterleiding stroomt het kraanwater goed!",
+          "uk": "Після заміни на нову водопровідну трубу вода тече добре!",
+          "hu": "Miután kicserélte egy új vízcsőre, a vezetékes víz jól folyik!",
+          "hi": "इसे नए पानी के पाइप से बदलने के बाद, नल का पानी अच्छी तरह से बहता है!",
+          "pl": "Po wymianie na nową rurę wodociągową woda płynie dobrze!",
+          "el": "Μετά την αντικατάστασή του με νέο σωλήνα νερού, το νερό ρέει καλά!",
+          "nb": "Etter at vi byttet det ut med et nytt vannrør, renner vannet godt!",
+          "id": "Setelah menggantinya dengan pipa air baru, air keran mengalir dengan baik!",
+          "sv": "Efter att ha bytt ut det mot ett nytt vattenrör rinner kranvattnet bra!",
+          "ro": "După ce o înlocuiești cu o țeavă nouă de apă, apa de la robinet curge bine!",
+          "cs": "Po výměně za novou vodovodní trubku voda teče dobře!",
+          "da": "Efter at have udskiftet det med et nyt vandrør, løber vandet fra hanen godt!",
+          "fi": "Kun se on vaihdettu uuteen vesiputkeen, hanavesi virtaa hyvin!"
+        },
+        "old_ruby_source": "新[あたら]しい水道管[すいどうかん]に交換[こうかん]したら水[みず]がよく出[で]た！",
+        "proposed_ruby_source": "新[あたら]しい水[みず]道管[どうかん]に交換[こうかん]したら水[みず]がよく出[で]た！",
+        "old_japanese": "新しい水道管に交換したら水がよく出た！",
+        "old_english": "After replacing it with a new water pipe, the water flows well!",
+        "proposed_japanese": "新しい水道管に交換したら水がよく出た！",
+        "proposed_english": "After replacing it with a new water pipe, the water flows well!",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "ja",
+          "sentence": "新しい水道管に交換したら水がよく出た！",
+          "tokens": [
+            {
+              "surface": "新しい",
+              "lemma": "新しい",
+              "pos": "形容詞/一般/*/*/形容詞/連体形-一般",
+              "upos": "ADJ",
+              "xpos": "形容詞",
+              "feats": {},
+              "start": 0,
+              "end": 3,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "あたらしい",
+              "ruby_text": "新[あたら]しい",
+              "ruby_spans": [
+                {
+                  "base": "新",
+                  "reading": "あたら",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "あたらしい",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "水",
+              "lemma": "水",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 3,
+              "end": 4,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "みず",
+              "ruby_text": "水[みず]",
+              "ruby_spans": [
+                {
+                  "base": "水",
+                  "reading": "みず",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "みず",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "道管",
+              "lemma": "道管",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 4,
+              "end": 6,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "どうかん",
+              "ruby_text": "道管[どうかん]",
+              "ruby_spans": [
+                {
+                  "base": "道管",
+                  "reading": "どうかん",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "どうかん",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "に",
+              "lemma": "に",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 6,
+              "end": 7,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "に",
+              "ruby_text": "に",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "に"
+            },
+            {
+              "surface": "交換",
+              "lemma": "交換",
+              "pos": "名詞/普通名詞/サ変可能/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 7,
+              "end": 9,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "こうかん",
+              "ruby_text": "交換[こうかん]",
+              "ruby_spans": [
+                {
+                  "base": "交換",
+                  "reading": "こうかん",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "こうかん",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "し",
+              "lemma": "する",
+              "pos": "動詞/非自立可能/*/*/サ行変格/連用形-一般",
+              "upos": "VERB",
+              "xpos": "動詞",
+              "feats": {},
+              "start": 9,
+              "end": 10,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "し",
+              "ruby_text": "し",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "し"
+            },
+            {
+              "surface": "たら",
+              "lemma": "た",
+              "pos": "助動詞/*/*/*/助動詞-タ/仮定形-一般",
+              "upos": "AUX",
+              "xpos": "助動詞",
+              "feats": {},
+              "start": 10,
+              "end": 12,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "たら",
+              "ruby_text": "たら",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "たら"
+            },
+            {
+              "surface": "水",
+              "lemma": "水",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 12,
+              "end": 13,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "みず",
+              "ruby_text": "水[みず]",
+              "ruby_spans": [
+                {
+                  "base": "水",
+                  "reading": "みず",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "みず",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "が",
+              "lemma": "が",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 13,
+              "end": 14,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "が",
+              "ruby_text": "が",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "が"
+            },
+            {
+              "surface": "よく",
+              "lemma": "よく",
+              "pos": "副詞/*/*/*/*/*",
+              "upos": "ADV",
+              "xpos": "副詞",
+              "feats": {},
+              "start": 14,
+              "end": 16,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "よく",
+              "ruby_text": "よく",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "よく"
+            },
+            {
+              "surface": "出",
+              "lemma": "出る",
+              "pos": "動詞/一般/*/*/下一段-ダ行/連用形-一般",
+              "upos": "VERB",
+              "xpos": "動詞",
+              "feats": {},
+              "start": 16,
+              "end": 17,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "で",
+              "ruby_text": "出[で]",
+              "ruby_spans": [
+                {
+                  "base": "出",
+                  "reading": "で",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "で",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "た",
+              "lemma": "た",
+              "pos": "助動詞/*/*/*/助動詞-タ/終止形-一般",
+              "upos": "AUX",
+              "xpos": "助動詞",
+              "feats": {},
+              "start": 17,
+              "end": 18,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "た",
+              "ruby_text": "た",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "た"
+            },
+            {
+              "surface": "！",
+              "lemma": "!",
+              "pos": "補助記号/句点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 18,
+              "end": 19,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "!",
+              "ruby_text": "！",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "!"
+            }
+          ],
+          "reading": "あたらしいみずどうかんにこうかんしたらみずがよくでた!",
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "warnings": [
+            "mediawiki ruby hints applied"
+          ]
+        },
+        "generated_tokens": [
+          {
+            "surface": "新しい",
+            "lemma": "新しい",
+            "pos": "形容詞/一般/*/*/形容詞/連体形-一般",
+            "upos": "ADJ",
+            "xpos": "形容詞",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "あたらしい",
+            "ruby_text": "新[あたら]しい",
+            "ruby_spans": [
+              {
+                "base": "新",
+                "reading": "あたら",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "あたらしい",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "水",
+            "lemma": "水",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 3,
+            "end": 4,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "みず",
+            "ruby_text": "水[みず]",
+            "ruby_spans": [
+              {
+                "base": "水",
+                "reading": "みず",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "みず",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "道管",
+            "lemma": "道管",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 4,
+            "end": 6,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "どうかん",
+            "ruby_text": "道管[どうかん]",
+            "ruby_spans": [
+              {
+                "base": "道管",
+                "reading": "どうかん",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "どうかん",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "に",
+            "lemma": "に",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 6,
+            "end": 7,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "に",
+            "ruby_text": "に",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "に"
+          },
+          {
+            "surface": "交換",
+            "lemma": "交換",
+            "pos": "名詞/普通名詞/サ変可能/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 7,
+            "end": 9,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "こうかん",
+            "ruby_text": "交換[こうかん]",
+            "ruby_spans": [
+              {
+                "base": "交換",
+                "reading": "こうかん",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "こうかん",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "し",
+            "lemma": "する",
+            "pos": "動詞/非自立可能/*/*/サ行変格/連用形-一般",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 9,
+            "end": 10,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "し",
+            "ruby_text": "し",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "し"
+          },
+          {
+            "surface": "たら",
+            "lemma": "た",
+            "pos": "助動詞/*/*/*/助動詞-タ/仮定形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 10,
+            "end": 12,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "たら",
+            "ruby_text": "たら",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "たら"
+          },
+          {
+            "surface": "水",
+            "lemma": "水",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 12,
+            "end": 13,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "みず",
+            "ruby_text": "水[みず]",
+            "ruby_spans": [
+              {
+                "base": "水",
+                "reading": "みず",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "みず",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "が",
+            "lemma": "が",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 13,
+            "end": 14,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "が",
+            "ruby_text": "が",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "が"
+          },
+          {
+            "surface": "よく",
+            "lemma": "よく",
+            "pos": "副詞/*/*/*/*/*",
+            "upos": "ADV",
+            "xpos": "副詞",
+            "feats": {},
+            "start": 14,
+            "end": 16,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "よく",
+            "ruby_text": "よく",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "よく"
+          },
+          {
+            "surface": "出",
+            "lemma": "出る",
+            "pos": "動詞/一般/*/*/下一段-ダ行/連用形-一般",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 16,
+            "end": 17,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "で",
+            "ruby_text": "出[で]",
+            "ruby_spans": [
+              {
+                "base": "出",
+                "reading": "で",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "で",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "た",
+            "lemma": "た",
+            "pos": "助動詞/*/*/*/助動詞-タ/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 17,
+            "end": 18,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "た",
+            "ruby_text": "た",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "た"
+          },
+          {
+            "surface": "！",
+            "lemma": "!",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 18,
+            "end": 19,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "!",
+            "ruby_text": "！",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "!"
+          }
+        ],
+        "generated_reading": "あたらしいみずどうかんにこうかんしたらみずがよくでた!",
+        "analyzer": "sudachipy_sudachidict_core_c",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:37:31Z",
+        "updated_utc": "2026-10-17T07:38:16Z",
+        "applied_utc": "2026-10-17T07:38:16Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:38:16Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -913,12 +2251,14 @@
         "tokens": [
           {
             "surface": "古い",
-            "surface_en": "old",
-            "furigana": "ふるい",
-            "pos": "adjective",
             "lemma": "古い",
-            "explanation": "I-adjective modifying '水道管' to indicate age.",
-            "difficulty": 3,
+            "pos": "形容詞/一般/*/*/形容詞/連体形-一般",
+            "upos": "ADJ",
+            "xpos": "形容詞",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "ふるい",
             "ruby_text": "古[ふる]い",
             "ruby_spans": [
@@ -929,212 +2269,20 @@
                 "length": 1
               }
             ],
-            "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
-          },
-          {
-            "surface": "水道管",
-            "surface_en": "water pipe",
-            "furigana": "みずどうかん",
-            "pos": "noun",
-            "lemma": "水道管",
-            "explanation": "Refers to a water pipe.",
-            "difficulty": 1,
-            "reading_kana": "みずどうかん",
-            "ruby_text": "水[みず]道管[どうかん]",
-            "ruby_spans": [
-              {
-                "base": "水",
-                "reading": "みず",
-                "start": 0,
-                "length": 1
-              },
-              {
-                "base": "道管",
-                "reading": "どうかん",
-                "start": 1,
-                "length": 2
-              }
-            ],
-            "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c",
-            "is_main_word": true
-          },
-          {
-            "surface": "が",
-            "surface_en": "(subject marker)",
-            "furigana": "が",
-            "pos": "particle",
-            "lemma": "が",
-            "explanation": "Subject marker for '水道管' as the subject of 'さびて'.",
-            "difficulty": 1,
-            "reading_kana": "が",
-            "ruby_text": "が",
-            "ruby_spans": [],
-            "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
-          },
-          {
-            "surface": "さびて",
-            "surface_en": "rusted (and...)",
-            "furigana": "さびて",
-            "pos": "verb",
-            "lemma": "さびる",
-            "explanation": "Te-form of さびる, used to connect to the next clause.",
-            "difficulty": 1,
-            "reading_kana": "さびて",
-            "ruby_text": "さびて",
-            "ruby_spans": [],
-            "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
-          },
-          {
-            "surface": "穴",
-            "surface_en": "hole",
-            "furigana": "あな",
-            "pos": "noun",
-            "lemma": "穴",
-            "explanation": "Denotes a hole created by rust.",
-            "difficulty": 20,
-            "reading_kana": "あな",
-            "ruby_text": "穴[あな]",
-            "ruby_spans": [
-              {
-                "base": "穴",
-                "reading": "あな",
-                "start": 0,
-                "length": 1
-              }
-            ],
-            "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
-          },
-          {
-            "surface": "が",
-            "surface_en": "(subject marker)",
-            "furigana": "が",
-            "pos": "particle",
-            "lemma": "が",
-            "explanation": "Subject marker for '穴' as the subject of 'あいた'.",
-            "difficulty": 1,
-            "reading_kana": "が",
-            "ruby_text": "が",
-            "ruby_spans": [],
-            "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
-          },
-          {
-            "surface": "あいた",
-            "surface_en": "opened / formed",
-            "furigana": "あいた",
-            "pos": "verb (past)",
-            "lemma": "開く",
-            "explanation": "Past form of 開く, indicating that a hole opened or formed.",
-            "difficulty": 1,
-            "reading_kana": "あいた",
-            "ruby_text": "あいた",
-            "ruby_spans": [],
-            "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
-          }
-        ],
-        "difficulty_aggregated": 4
-      },
-      {
-        "sentence": "新しい水道管に交換したら水がよく出た！",
-        "tokens": [
-          {
-            "surface": "新しい",
-            "surface_en": "new",
-            "furigana": "あたらしい",
-            "pos": "adjective",
-            "lemma": "新しい",
-            "explanation": "I-adjective modifying '水道管' to indicate it is new.",
-            "difficulty": 9,
-            "reading_kana": "あたらしい",
-            "ruby_text": "新[あたら]しい",
-            "ruby_spans": [
-              {
-                "base": "新",
-                "reading": "あたら",
-                "start": 0,
-                "length": 1
-              }
-            ],
-            "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
-          },
-          {
-            "surface": "水道管",
-            "surface_en": "water pipe",
-            "furigana": "みずどうかん",
-            "pos": "noun",
-            "lemma": "水道管",
-            "explanation": "Refers to the water pipe being discussed.",
-            "difficulty": 1,
-            "reading_kana": "みずどうかん",
-            "ruby_text": "水[みず]道管[どうかん]",
-            "ruby_spans": [
-              {
-                "base": "水",
-                "reading": "みず",
-                "start": 0,
-                "length": 1
-              },
-              {
-                "base": "道管",
-                "reading": "どうかん",
-                "start": 1,
-                "length": 2
-              }
-            ],
-            "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c",
-            "is_main_word": true
-          },
-          {
-            "surface": "に",
-            "surface_en": "to",
-            "furigana": "に",
-            "pos": "particle",
-            "lemma": "に",
-            "explanation": "Indicates the target or goal of the action '交換したら'.",
-            "difficulty": 1,
-            "reading_kana": "に",
-            "ruby_text": "に",
-            "ruby_spans": [],
-            "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
-          },
-          {
-            "surface": "交換したら",
-            "surface_en": "when/if replaced",
-            "furigana": "こうかんしたら",
-            "pos": "verb (conditional)",
-            "lemma": "交換する",
-            "explanation": "Conditional form of 交換する, meaning 'if/when [it] was replaced'.",
-            "difficulty": 1,
-            "reading_kana": "こうかんしたら",
-            "ruby_text": "交換[こうかん]したら",
-            "ruby_spans": [
-              {
-                "base": "交換",
-                "reading": "こうかん",
-                "start": 0,
-                "length": 2
-              }
-            ],
-            "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "ruby_confidence": "reviewed",
+            "furigana": "ふるい",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "水",
-            "surface_en": "water",
-            "furigana": "みず",
-            "pos": "noun",
             "lemma": "水",
-            "explanation": "Refers to water as the subject of the clause '出た'.",
-            "difficulty": 2,
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 2,
+            "end": 3,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "みず",
             "ruby_text": "水[みず]",
             "ruby_spans": [
@@ -1145,47 +2293,392 @@
                 "length": 1
               }
             ],
-            "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "ruby_confidence": "reviewed",
+            "furigana": "みず",
+            "ruby_source": "mediawiki_sentence_ruby",
+            "is_main_word": true
+          },
+          {
+            "surface": "道管",
+            "lemma": "道管",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 3,
+            "end": 5,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "どうかん",
+            "ruby_text": "道管[どうかん]",
+            "ruby_spans": [
+              {
+                "base": "道管",
+                "reading": "どうかん",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "どうかん",
+            "ruby_source": "mediawiki_sentence_ruby",
+            "is_main_word": true
           },
           {
             "surface": "が",
-            "surface_en": "(subject marker)",
-            "furigana": "が",
-            "pos": "particle",
             "lemma": "が",
-            "explanation": "Subject marker marking '水' as the subject of '出た'.",
-            "difficulty": 1,
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 5,
+            "end": 6,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "が",
             "ruby_text": "が",
             "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "が"
+          },
+          {
+            "surface": "さび",
+            "lemma": "さびる",
+            "pos": "動詞/一般/*/*/上一段-バ行/連用形-一般",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 6,
+            "end": 8,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "さび",
+            "ruby_text": "さび",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "さび"
+          },
+          {
+            "surface": "て",
+            "lemma": "て",
+            "pos": "助詞/接続助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 8,
+            "end": 9,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "て",
+            "ruby_text": "て",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "て"
+          },
+          {
+            "surface": "穴",
+            "lemma": "穴",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 9,
+            "end": 10,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "あな",
+            "ruby_text": "穴[あな]",
+            "ruby_spans": [
+              {
+                "base": "穴",
+                "reading": "あな",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "あな",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "が",
+            "lemma": "が",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 10,
+            "end": 11,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "が",
+            "ruby_text": "が",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "が"
+          },
+          {
+            "surface": "あい",
+            "lemma": "あく",
+            "pos": "動詞/一般/*/*/五段-カ行/連用形-イ音便",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 11,
+            "end": 13,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "あい",
+            "ruby_text": "あい",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "あい"
+          },
+          {
+            "surface": "た",
+            "lemma": "た",
+            "pos": "助動詞/*/*/*/助動詞-タ/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 13,
+            "end": 14,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "た",
+            "ruby_text": "た",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "た"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 14,
+            "end": 15,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
+          }
+        ],
+        "difficulty_aggregated": 4
+      },
+      {
+        "sentence": "新しい水道管に交換したら水がよく出た！",
+        "tokens": [
+          {
+            "surface": "新しい",
+            "lemma": "新しい",
+            "pos": "形容詞/一般/*/*/形容詞/連体形-一般",
+            "upos": "ADJ",
+            "xpos": "形容詞",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "あたらしい",
+            "ruby_text": "新[あたら]しい",
+            "ruby_spans": [
+              {
+                "base": "新",
+                "reading": "あたら",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "あたらしい",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "水",
+            "lemma": "水",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 3,
+            "end": 4,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "みず",
+            "ruby_text": "水[みず]",
+            "ruby_spans": [
+              {
+                "base": "水",
+                "reading": "みず",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "みず",
+            "ruby_source": "mediawiki_sentence_ruby",
+            "is_main_word": true
+          },
+          {
+            "surface": "道管",
+            "lemma": "道管",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 4,
+            "end": 6,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "どうかん",
+            "ruby_text": "道管[どうかん]",
+            "ruby_spans": [
+              {
+                "base": "道管",
+                "reading": "どうかん",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "どうかん",
+            "ruby_source": "mediawiki_sentence_ruby",
+            "is_main_word": true
+          },
+          {
+            "surface": "に",
+            "lemma": "に",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 6,
+            "end": 7,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "に",
+            "ruby_text": "に",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "に"
+          },
+          {
+            "surface": "交換",
+            "lemma": "交換",
+            "pos": "名詞/普通名詞/サ変可能/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 7,
+            "end": 9,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "こうかん",
+            "ruby_text": "交換[こうかん]",
+            "ruby_spans": [
+              {
+                "base": "交換",
+                "reading": "こうかん",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "こうかん",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "し",
+            "lemma": "する",
+            "pos": "動詞/非自立可能/*/*/サ行変格/連用形-一般",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 9,
+            "end": 10,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "し",
+            "ruby_text": "し",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "し"
+          },
+          {
+            "surface": "たら",
+            "lemma": "た",
+            "pos": "助動詞/*/*/*/助動詞-タ/仮定形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 10,
+            "end": 12,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "たら",
+            "ruby_text": "たら",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "たら"
+          },
+          {
+            "surface": "水",
+            "lemma": "水",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 12,
+            "end": 13,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "みず",
+            "ruby_text": "水[みず]",
+            "ruby_spans": [
+              {
+                "base": "水",
+                "reading": "みず",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "みず",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "が",
+            "lemma": "が",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 13,
+            "end": 14,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "が",
+            "ruby_text": "が",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "が"
           },
           {
             "surface": "よく",
-            "surface_en": "well",
-            "furigana": "よく",
-            "pos": "adverb",
             "lemma": "よく",
-            "explanation": "Adverb modifying '出た', indicating degree.",
-            "difficulty": 1,
+            "pos": "副詞/*/*/*/*/*",
+            "upos": "ADV",
+            "xpos": "副詞",
+            "feats": {},
+            "start": 14,
+            "end": 16,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "よく",
             "ruby_text": "よく",
             "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "よく"
           },
           {
-            "surface": "出た",
-            "surface_en": "came out",
-            "furigana": "でた",
-            "pos": "verb (past)",
+            "surface": "出",
             "lemma": "出る",
-            "explanation": "Past form of 出る, meaning 'to come out', describing water flow.",
-            "difficulty": 1,
-            "reading_kana": "でた",
-            "ruby_text": "出[で]た",
+            "pos": "動詞/一般/*/*/下一段-ダ行/連用形-一般",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 16,
+            "end": 17,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "で",
+            "ruby_text": "出[で]",
             "ruby_spans": [
               {
                 "base": "出",
@@ -1194,8 +2687,41 @@
                 "length": 1
               }
             ],
+            "ruby_confidence": "reviewed",
+            "furigana": "で",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "た",
+            "lemma": "た",
+            "pos": "助動詞/*/*/*/助動詞-タ/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 17,
+            "end": 18,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "た",
+            "ruby_text": "た",
+            "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "た"
+          },
+          {
+            "surface": "！",
+            "lemma": "!",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 18,
+            "end": 19,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "!",
+            "ruby_text": "！",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "!"
           }
         ],
         "difficulty_aggregated": 2.12
@@ -1233,13 +2759,13 @@
     "ar": [
       "مياه الصنبور في المنزل توقفت!",
       "يرجى إصلاح إمدادات المياه.",
-      "أنبوب المياه القديم صدئ وتكوَّن فيه ثقب.",
+      "صدأ أنبوب المياه القديم وظهر فيه ثقب.",
       "بعد استبداله بأنبوب ماء جديد، تتدفق مياه الصنبور بشكل جيد!"
     ],
     "cs": [
       "Doma se rozbila dodávka vody!",
       "Prosím, opravte přívod vody.",
-      "Staré vodovodní potrubí zrezivělo a vytvořila se díra.",
+      "Staré vodovodní potrubí zrezivělo a vytvořila se v něm díra.",
       "Po výměně za novou vodovodní trubku voda teče dobře!"
     ],
     "da": [
@@ -1257,7 +2783,7 @@
     "el": [
       "Η παροχή νερού στο σπίτι χάλασε!",
       "Παρακαλώ επισκευάστε την παροχή νερού.",
-      "Ο παλιός σωλήνας νερού σκουριάστηκε και άνοιξε μια τρύπα.",
+      "Ο παλιός σωλήνας νερού σκούριασε και τρύπησε.",
       "Μετά την αντικατάστασή του με νέο σωλήνα νερού, το νερό ρέει καλά!"
     ],
     "en": [
@@ -1269,7 +2795,7 @@
     "es": [
       "¡Se ha roto el suministro de agua en casa!",
       "Por favor, reparen el suministro de agua.",
-      "La vieja tubería de agua se oxidó y formó un agujero.",
+      "La vieja tubería de agua se oxidó y se le hizo un agujero.",
       "Después de cambiarla por una tubería nueva, ¡el agua del grifo fluye bien!"
     ],
     "fi": [
@@ -1281,7 +2807,7 @@
     "fr": [
       "L’eau courante à la maison est en panne !",
       "Veuillez réparer l’approvisionnement en eau.",
-      "Le vieux tuyau d’eau a rouillé et a fait un trou.",
+      "Le vieux tuyau d’eau a rouillé et un trou s’y est formé.",
       "Après l’avoir remplacé par un nouveau tuyau d’eau, l’eau coule bien !"
     ],
     "he": [
@@ -1311,7 +2837,7 @@
     "it": [
       "L'approvvigionamento idrico a casa si è rotto!",
       "Per favore, ripara l'approvvigionamento idrico.",
-      "Il vecchio tubo dell'acqua si è arrugginito e si è formato un buco.",
+      "Il vecchio tubo dell'acqua si è arrugginito e si è bucato.",
       "Dopo averlo sostituito con un nuovo tubo dell'acqua, l'acqua scorre bene!"
     ],
     "ko": [
@@ -1341,13 +2867,13 @@
     "pt": [
       "O abastecimento de água em casa quebrou!",
       "Por favor, repare o abastecimento de água.",
-      "O velho cano de água enferrujou e formou um buraco.",
+      "O cano de água velho enferrujou e ficou com um buraco.",
       "Depois de trocar por um novo cano, a água da torneira corre bem!"
     ],
     "ro": [
       "Alimentarea cu apă de acasă s-a stricat!",
       "Vă rog să reparați alimentarea cu apă.",
-      "Vechea țeavă de apă a ruginit și a făcut o gaură.",
+      "Vechea țeavă de apă a ruginit, iar în ea a apărut o gaură.",
       "După ce o înlocuiești cu o țeavă nouă de apă, apa de la robinet curge bine!"
     ],
     "ru": [
@@ -1365,13 +2891,13 @@
     "tr": [
       "Evdeki su kesildi!",
       "Lütfen su tesisatını tamir edin.",
-      "Eski su borusu paslandı ve bir delik oluştu.",
+      "Eski su borusu paslandı ve delindi.",
       "Yeni bir su borusuyla değiştirdikten sonra su iyi akıyor!"
     ],
     "uk": [
       "Водопровідна вода вдома перестала текти!",
       "Будь ласка, відремонтуйте водопостачання.",
-      "Стара водопровідна труба заіржавіла й утворився отвір.",
+      "Стара водопровідна труба заіржавіла, і в ній утворився отвір.",
       "Після заміни на нову водопровідну трубу вода тече добре!"
     ],
     "vi": [

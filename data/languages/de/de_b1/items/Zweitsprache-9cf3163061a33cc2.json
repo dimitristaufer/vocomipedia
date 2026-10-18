@@ -53,7 +53,7 @@
         "es": "Estoy aprendiendo alemán como segundo idioma en un curso nocturno.",
         "fr": "J’apprends l’allemand comme deuxième langue dans un cours du soir.",
         "it": "Sto imparando il tedesco come seconda lingua in un corso serale.",
-        "ko": "저는 저녁 수업에서 독일어를 제2외국어로 배우고 있어요.",
+        "ko": "저녁 수업에서 독일어를 제2언어로 배우고 있어요.",
         "zh-Hans": "我在晚间课程上把德语当作第二语言来学。",
         "yue": "我喺夜校學德文，當係第二語言。",
         "ru": "Я изучаю немецкий как второй язык на вечерних курсах.",
@@ -368,12 +368,12 @@
       "difficulty": 5.25
     },
     {
-      "target": "Für meine Zweitsprache übe ich jeden Tag.",
+      "target": "Ich übe meine Zweitsprache jeden Tag.",
       "reading": "/fyːɐ̯ ˈmaɪ̯nə ˈtsvaɪ̯tʃpʁaːxə ˈyːbə ɪç ˈjeːdən taːk/",
       "translations": {
-        "de": "Für meine Zweitsprache übe ich jeden Tag.",
+        "de": "Ich übe meine Zweitsprache jeden Tag.",
         "ipa": "/fyːɐ̯ ˈmaɪ̯nə ˈtsvaɪ̯tʃpʁaːxə ˈyːbə ɪç ˈjeːdən taːk/",
-        "en": "For my second language, I practice every day.",
+        "en": "I practice my second language every day.",
         "es": "Practico mi segundo idioma todos los días.",
         "fr": "Je pratique ma deuxième langue tous les jours.",
         "it": "Pratico la mia seconda lingua ogni giorno.",
@@ -403,68 +403,82 @@
       },
       "tokens": [
         {
-          "surface": "Für",
-          "surface_en": "for",
-          "furigana": "[fyːɐ]",
-          "pos": "ADP",
-          "lemma": "für",
-          "explanation": "Preposition governing accusative; marks purpose/beneficiary of the action.",
-          "difficulty": 2
-        },
-        {
-          "surface": "meine",
-          "surface_en": "my",
-          "furigana": "[ˈmaɪ̯nə]",
-          "pos": "DET",
-          "lemma": "mein",
-          "explanation": "Possessive determiner (1st person), attributive; accusative feminine singular agreeing with 'Zweitsprache'.",
-          "difficulty": 7
-        },
-        {
-          "surface": "Zweitsprache",
-          "surface_en": "second language",
-          "furigana": "[ˈtsvaɪ̯tˌʃpʁaːxə]",
-          "pos": "NOUN",
-          "lemma": "Zweitsprache",
-          "explanation": "Common noun, feminine accusative singular; object of 'Für'.",
-          "difficulty": 10,
-          "is_main_word": true
+          "surface": "Ich",
+          "lemma": "ich",
+          "pos": "PRON",
+          "upos": "PRON",
+          "xpos": "PPER",
+          "feats": {},
+          "start": 0,
+          "end": 3,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "übe",
-          "surface_en": "practice",
-          "furigana": "[ˈyːbə]",
-          "pos": "VERB",
           "lemma": "üben",
-          "explanation": "Finite main verb, present tense, 1st person singular; verb-second after fronted PP.",
-          "difficulty": 4
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VVFIN",
+          "feats": {},
+          "start": 4,
+          "end": 7,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "ich",
-          "surface_en": "I",
-          "furigana": "[ɪç]",
-          "pos": "PRON",
-          "lemma": "ich",
-          "explanation": "Personal pronoun, 1st person singular nominative; subject following the verb due to V2.",
-          "difficulty": 2
+          "surface": "meine",
+          "lemma": "mein",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "PPOSAT",
+          "feats": {},
+          "start": 8,
+          "end": 13,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "Zweitsprache",
+          "lemma": "Zweitsprache",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 14,
+          "end": 26,
+          "analyzer": "spacy_de_core_news_lg",
+          "is_main_word": true
         },
         {
           "surface": "jeden",
-          "surface_en": "every",
-          "furigana": "[ˈjeːdən]",
-          "pos": "DET",
           "lemma": "jeder",
-          "explanation": "Quantifier determiner, accusative masculine singular; modifies 'Tag' in a temporal adverbial.",
-          "difficulty": 7
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "PIAT",
+          "feats": {},
+          "start": 27,
+          "end": 32,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "Tag.",
-          "surface_en": "day",
-          "furigana": "[taːk]",
-          "pos": "NOUN",
+          "surface": "Tag",
           "lemma": "Tag",
-          "explanation": "Common noun, masculine accusative singular; time expression ('jeden Tag').",
-          "difficulty": 4
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 33,
+          "end": 36,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 36,
+          "end": 37,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 5.14
@@ -481,8 +495,292 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-15T06:22:34Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:De b1/9cf3163061a33cc2",
+      "revision_id": 86326,
+      "parent_revision_id": 18670,
+      "revision_timestamp_utc": "2026-10-15T06:22:34Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Corrected an unnatural German prepositional phrase, aligned its English translation, and removed an unsupported 'foreign language' nuance from Korean.",
+      "pulled_utc": "2026-10-17T07:06:41Z",
+      "applied_utc": "2026-10-17T07:06:51Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-1c3bfe36b9f9290e",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_b1:9cf3163061a33cc2",
+        "pack_code": "de_b1",
+        "entry_id": "Zweitsprache",
+        "language": "de",
+        "sentence_index": 4,
+        "old_sentence": "Für meine Zweitsprache übe ich jeden Tag.",
+        "old_translations": {
+          "de": "Für meine Zweitsprache übe ich jeden Tag.",
+          "ipa": "/fyːɐ̯ ˈmaɪ̯nə ˈtsvaɪ̯tʃpʁaːxə ˈyːbə ɪç ˈjeːdən taːk/",
+          "en": "For my second language, I practice every day.",
+          "es": "Practico mi segundo idioma todos los días.",
+          "fr": "Je pratique ma deuxième langue tous les jours.",
+          "it": "Pratico la mia seconda lingua ogni giorno.",
+          "ko": "저는 제2언어를 매일 연습해요.",
+          "zh-Hans": "我每天练习我的第二语言。",
+          "yue": "我每日練習我嘅第二語言。",
+          "ru": "Я каждый день практикую свой второй язык.",
+          "pt": "Eu pratico meu segundo idioma todos os dias.",
+          "he": "אני מתרגל את השפה השנייה שלי כל יום.",
+          "tr": "Her gün ikinci dilimi çalışıyorum.",
+          "vi": "Tôi luyện ngôn ngữ thứ hai của mình mỗi ngày.",
+          "ar": "أتمرن على لغتي الثانية كل يوم.",
+          "nl": "Ik oefen mijn tweede taal elke dag.",
+          "uk": "Я щодня практикую свою другу мову.",
+          "hu": "Minden nap gyakorlom a második nyelvemet.",
+          "hi": "मैं अपनी दूसरी भाषा का रोज़ अभ्यास करता हूँ.",
+          "pl": "Codziennie ćwiczę swój drugi język.",
+          "el": "Κάνω εξάσκηση στη δεύτερη γλώσσα μου κάθε μέρα.",
+          "nb": "Jeg øver på andrespråket mitt hver dag.",
+          "id": "Saya berlatih bahasa kedua saya setiap hari.",
+          "sv": "Jag övar på mitt andraspråk varje dag.",
+          "ro": "Îmi exersez a doua limbă în fiecare dzień.",
+          "cs": "Každý den si procvičuji svůj druhý jazyk.",
+          "da": "Jeg øver mit andetsprog hver dag.",
+          "fi": "Harjoittelen toista kieltäni joka päivä.",
+          "ja": "毎日第二言語を練習しています。"
+        },
+        "proposed_sentence": "Ich übe meine Zweitsprache jeden Tag.",
+        "proposed_translations": {
+          "de": "Ich übe meine Zweitsprache jeden Tag.",
+          "ipa": "/fyːɐ̯ ˈmaɪ̯nə ˈtsvaɪ̯tʃpʁaːxə ˈyːbə ɪç ˈjeːdən taːk/",
+          "en": "I practice my second language every day.",
+          "es": "Practico mi segundo idioma todos los días.",
+          "fr": "Je pratique ma deuxième langue tous les jours.",
+          "it": "Pratico la mia seconda lingua ogni giorno.",
+          "ko": "저는 제2언어를 매일 연습해요.",
+          "zh-Hans": "我每天练习我的第二语言。",
+          "yue": "我每日練習我嘅第二語言。",
+          "ru": "Я каждый день практикую свой второй язык.",
+          "pt": "Eu pratico meu segundo idioma todos os dias.",
+          "he": "אני מתרגל את השפה השנייה שלי כל יום.",
+          "tr": "Her gün ikinci dilimi çalışıyorum.",
+          "vi": "Tôi luyện ngôn ngữ thứ hai của mình mỗi ngày.",
+          "ar": "أتمرن على لغتي الثانية كل يوم.",
+          "nl": "Ik oefen mijn tweede taal elke dag.",
+          "uk": "Я щодня практикую свою другу мову.",
+          "hu": "Minden nap gyakorlom a második nyelvemet.",
+          "hi": "मैं अपनी दूसरी भाषा का रोज़ अभ्यास करता हूँ.",
+          "pl": "Codziennie ćwiczę swój drugi język.",
+          "el": "Κάνω εξάσκηση στη δεύτερη γλώσσα μου κάθε μέρα.",
+          "nb": "Jeg øver på andrespråket mitt hver dag.",
+          "id": "Saya berlatih bahasa kedua saya setiap hari.",
+          "sv": "Jag övar på mitt andraspråk varje dag.",
+          "ro": "Îmi exersez a doua limbă în fiecare dzień.",
+          "cs": "Každý den si procvičuji svůj druhý jazyk.",
+          "da": "Jeg øver mit andetsprog hver dag.",
+          "fi": "Harjoittelen toista kieltäni joka päivä.",
+          "ja": "毎日第二言語を練習しています。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Ich übe meine Zweitsprache jeden Tag.",
+        "old_japanese": "Für meine Zweitsprache übe ich jeden Tag.",
+        "old_english": "For my second language, I practice every day.",
+        "proposed_japanese": "Ich übe meine Zweitsprache jeden Tag.",
+        "proposed_english": "I practice my second language every day.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Ich übe meine Zweitsprache jeden Tag.",
+          "tokens": [
+            {
+              "surface": "Ich",
+              "lemma": "ich",
+              "pos": "PRON",
+              "upos": "PRON",
+              "xpos": "PPER",
+              "feats": {},
+              "start": 0,
+              "end": 3,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "übe",
+              "lemma": "üben",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVFIN",
+              "feats": {},
+              "start": 4,
+              "end": 7,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "meine",
+              "lemma": "mein",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "PPOSAT",
+              "feats": {},
+              "start": 8,
+              "end": 13,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Zweitsprache",
+              "lemma": "Zweitsprache",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 14,
+              "end": 26,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "jeden",
+              "lemma": "jeder",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "PIAT",
+              "feats": {},
+              "start": 27,
+              "end": 32,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Tag",
+              "lemma": "Tag",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 33,
+              "end": 36,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 36,
+              "end": 37,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Ich",
+            "lemma": "ich",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "übe",
+            "lemma": "üben",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 4,
+            "end": 7,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "meine",
+            "lemma": "mein",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "PPOSAT",
+            "feats": {},
+            "start": 8,
+            "end": 13,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Zweitsprache",
+            "lemma": "Zweitsprache",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 14,
+            "end": 26,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "jeden",
+            "lemma": "jeder",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "PIAT",
+            "feats": {},
+            "start": 27,
+            "end": 32,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Tag",
+            "lemma": "Tag",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 33,
+            "end": 36,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 36,
+            "end": 37,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:06:41Z",
+        "updated_utc": "2026-10-17T07:07:06Z",
+        "applied_utc": "2026-10-17T07:07:06Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:07:06Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -494,34 +792,6 @@
     "word": "Zweitsprache",
     "word_reading": "",
     "word_label": "Substantiv (die fem.)",
-    "word_en": "second language",
-    "word_es": "segundo idioma",
-    "word_fr": "deuxième langue",
-    "word_it": "seconda lingua",
-    "word_ko": "제2언어",
-    "word_zh-Hans": "第二语言",
-    "word_yue": "第二語言",
-    "word_ru": "второй язык",
-    "word_pt": "segunda língua",
-    "word_he": "שפה שנייה",
-    "word_tr": "ikinci dil",
-    "word_vi": "ngôn ngữ thứ hai",
-    "word_ar": "اللغة الثانية",
-    "word_nl": "tweede taal",
-    "word_uk": "друга мова",
-    "word_hu": "második nyelv",
-    "word_hi": "दूसरी भाषा",
-    "word_pl": "drugi język",
-    "word_el": "δεύτερη γλώσσα",
-    "word_nb": "andrespråk",
-    "word_id": "bahasa kedua",
-    "word_sv": "andraspråk",
-    "word_ro": "a doua limbă",
-    "word_cs": "druhý jazyk",
-    "word_da": "andet sprog",
-    "word_fi": "toinen kieli",
-    "word_ja": "第二言語",
-    "word_de": "Zweitsprache",
     "comic_difficulty": 5.85,
     "jp": [
       "Ich lerne Deutsch als Zweitsprache im Abendkurs.",
@@ -534,24 +804,6 @@
       "/ˈmaɪ̯nə ˈkɪndɐ ˈʃpʁɛçən ˈtʏʁkɪʃ als ˈtsvaɪ̯tʃpʁaːxə tsuː ˈhaʊ̯zə/",
       "/ɪn deːɐ̯ ˈfɪʁma ˈnʊtsə ɪç ˈɛŋlɪʃ als ˈtsvaɪ̯tʃpʁaːxə/",
       "/fyːɐ̯ ˈmaɪ̯nə ˈtsvaɪ̯tʃpʁaːxə ˈyːbə ɪç ˈjeːdən taːk/"
-    ],
-    "de": [
-      "Ich lerne Deutsch als Zweitsprache im Abendkurs.",
-      "Meine Kinder sprechen Türkisch als Zweitsprache zu Hause.",
-      "In der Firma nutze ich Englisch als Zweitsprache.",
-      "Für meine Zweitsprache übe ich jeden Tag."
-    ],
-    "ipa": [
-      "/ɪç ˈlɛʁnə dɔʏ̯tʃ als ˈtsvaɪ̯tʃpʁaːxə ɪm ˈaːbəntkʊʁs/",
-      "/ˈmaɪ̯nə ˈkɪndɐ ˈʃpʁɛçən ˈtʏʁkɪʃ als ˈtsvaɪ̯tʃpʁaːxə tsuː ˈhaʊ̯zə/",
-      "/ɪn deːɐ̯ ˈfɪʁma ˈnʊtsə ɪç ˈɛŋlɪʃ als ˈtsvaɪ̯tʃpʁaːxə/",
-      "/fyːɐ̯ ˈmaɪ̯nə ˈtsvaɪ̯tʃpʁaːxə ˈyːbə ɪç ˈjeːdən taːk/"
-    ],
-    "en": [
-      "I’m learning German as a second language in an evening course.",
-      "My kids speak Turkish as a second language at home.",
-      "At the company, I use English as a second language.",
-      "For my second language, I practice every day."
     ],
     "pos_analysis": [
       {
@@ -783,207 +1035,125 @@
         "difficulty_aggregated": 5.25
       },
       {
-        "sentence": "Für meine Zweitsprache übe ich jeden Tag.",
+        "sentence": "Ich übe meine Zweitsprache jeden Tag.",
         "tokens": [
           {
-            "surface": "Für",
-            "surface_en": "for",
-            "furigana": "[fyːɐ]",
-            "pos": "ADP",
-            "lemma": "für",
-            "explanation": "Preposition governing accusative; marks purpose/beneficiary of the action.",
-            "difficulty": 2
-          },
-          {
-            "surface": "meine",
-            "surface_en": "my",
-            "furigana": "[ˈmaɪ̯nə]",
-            "pos": "DET",
-            "lemma": "mein",
-            "explanation": "Possessive determiner (1st person), attributive; accusative feminine singular agreeing with 'Zweitsprache'.",
-            "difficulty": 7
-          },
-          {
-            "surface": "Zweitsprache",
-            "surface_en": "second language",
-            "furigana": "[ˈtsvaɪ̯tˌʃpʁaːxə]",
-            "pos": "NOUN",
-            "lemma": "Zweitsprache",
-            "explanation": "Common noun, feminine accusative singular; object of 'Für'.",
-            "difficulty": 10,
-            "is_main_word": true
+            "surface": "Ich",
+            "lemma": "ich",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "übe",
-            "surface_en": "practice",
-            "furigana": "[ˈyːbə]",
-            "pos": "VERB",
             "lemma": "üben",
-            "explanation": "Finite main verb, present tense, 1st person singular; verb-second after fronted PP.",
-            "difficulty": 4
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 4,
+            "end": 7,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "ich",
-            "surface_en": "I",
-            "furigana": "[ɪç]",
-            "pos": "PRON",
-            "lemma": "ich",
-            "explanation": "Personal pronoun, 1st person singular nominative; subject following the verb due to V2.",
-            "difficulty": 2
+            "surface": "meine",
+            "lemma": "mein",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "PPOSAT",
+            "feats": {},
+            "start": 8,
+            "end": 13,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Zweitsprache",
+            "lemma": "Zweitsprache",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 14,
+            "end": 26,
+            "analyzer": "spacy_de_core_news_lg",
+            "is_main_word": true
           },
           {
             "surface": "jeden",
-            "surface_en": "every",
-            "furigana": "[ˈjeːdən]",
-            "pos": "DET",
             "lemma": "jeder",
-            "explanation": "Quantifier determiner, accusative masculine singular; modifies 'Tag' in a temporal adverbial.",
-            "difficulty": 7
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "PIAT",
+            "feats": {},
+            "start": 27,
+            "end": 32,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "Tag.",
-            "surface_en": "day",
-            "furigana": "[taːk]",
-            "pos": "NOUN",
+            "surface": "Tag",
             "lemma": "Tag",
-            "explanation": "Common noun, masculine accusative singular; time expression ('jeden Tag').",
-            "difficulty": 4
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 33,
+            "end": 36,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 36,
+            "end": 37,
+            "analyzer": "spacy_de_core_news_lg"
           }
         ],
         "difficulty_aggregated": 5.14
       }
     ],
-    "es": [
-      "Estoy aprendiendo alemán como segundo idioma en un curso nocturno.",
-      "Mis hijos hablan turco como segundo idioma en casa.",
-      "En la empresa uso el inglés como segundo idioma.",
-      "Practico mi segundo idioma todos los días."
-    ],
-    "fr": [
-      "J’apprends l’allemand comme deuxième langue dans un cours du soir.",
-      "Mes enfants parlent le turc comme deuxième langue à la maison.",
-      "Au travail j’utilise l’anglais comme deuxième langue.",
-      "Je pratique ma deuxième langue tous les jours."
-    ],
-    "it": [
-      "Sto imparando il tedesco come seconda lingua in un corso serale.",
-      "I miei figli parlano il turco come seconda lingua a casa.",
-      "Al lavoro uso l’inglese come seconda lingua.",
-      "Pratico la mia seconda lingua ogni giorno."
-    ],
-    "ko": [
-      "저는 저녁 수업에서 독일어를 제2외국어로 배우고 있어요.",
-      "우리 아이들은 집에서 터키어를 제2언어로 말해요.",
-      "회사에서 저는 영어를 제2언어로 사용해요.",
-      "저는 제2언어를 매일 연습해요."
-    ],
-    "zh-Hans": [
-      "我在晚间课程上把德语当作第二语言来学。",
-      "我的孩子们在家把土耳其语当作第二语言来讲。",
-      "在公司我把英语当作第二语言使用。",
-      "我每天练习我的第二语言。"
-    ],
-    "yue": [
-      "我喺夜校學德文，當係第二語言。",
-      "我啲小朋友喺屋企講土耳其語，當係第二語言。",
-      "我喺公司用英文當第二語言。",
-      "我每日練習我嘅第二語言。"
-    ],
-    "ru": [
-      "Я изучаю немецкий как второй язык на вечерних курсах.",
-      "Мои дети дома говорят на турецком как на втором языке.",
-      "В компании я использую английский как второй язык.",
-      "Я каждый день практикую свой второй язык."
-    ],
-    "pt": [
-      "Estou aprendendo alemão como segundo idioma em um curso noturno.",
-      "Meus filhos falam turco como segundo idioma em casa.",
-      "Na empresa eu uso o inglês como segundo idioma.",
-      "Eu pratico meu segundo idioma todos os dias."
-    ],
-    "he": [
-      "אני לומד גרמנית כשפה שנייה בקורס ערב.",
-      "הילדים שלי מדברים טורקית כשפה שנייה בבית.",
-      "בעבודה אני משתמש באנגלית כשפה שנייה.",
-      "אני מתרגל את השפה השנייה שלי כל יום."
-    ],
-    "tr": [
-      "Akşam kursunda Almancayı ikinci dil olarak öğreniyorum.",
-      "Çocuklarım evde Türkçeyi ikinci dil olarak konuşuyor.",
-      "Şirkette İngilizceyi ikinci dil olarak kullanıyorum.",
-      "Her gün ikinci dilimi çalışıyorum."
-    ],
-    "vi": [
-      "Tôi học tiếng Đức như ngôn ngữ thứ hai trong một lớp buổi tối.",
-      "Con tôi nói tiếng Thổ Nhĩ Kỳ như ngôn ngữ thứ hai ở nhà.",
-      "Ở công ty tôi dùng tiếng Anh như ngôn ngữ thứ hai.",
-      "Tôi luyện ngôn ngữ thứ hai của mình mỗi ngày."
-    ],
+    "word_POS": "Noun",
+    "entry_id": "Zweitsprache",
+    "word_en": "second language",
+    "word_es": "segundo idioma",
+    "word_fr": "deuxième langue",
+    "word_it": "seconda lingua",
+    "word_ko": "제2언어",
+    "word_zh-Hans": "第二语言",
+    "word_yue": "第二語言",
+    "word_ru": "второй язык",
+    "word_pt": "segunda língua",
+    "word_he": "שפה שנייה",
+    "word_tr": "ikinci dil",
+    "word_vi": "ngôn ngữ thứ hai",
+    "word_ar": "اللغة الثانية",
+    "word_nl": "tweede taal",
+    "word_uk": "друга мова",
+    "word_hu": "második nyelv",
+    "word_hi": "दूसरी भाषा",
+    "word_pl": "drugi język",
+    "word_el": "δεύτερη γλώσσα",
+    "word_nb": "andrespråk",
+    "word_id": "bahasa kedua",
+    "word_sv": "andraspråk",
+    "word_ro": "a doua limbă",
+    "word_cs": "druhý jazyk",
+    "word_da": "andet sprog",
+    "word_fi": "toinen kieli",
+    "word_ja": "第二言語",
+    "word_de": "Zweitsprache",
     "ar": [
       "أتعلم الألمانية كلغة ثانية في دورة مسائية.",
       "أطفالي يتحدثون التركية كلغة ثانية في البيت.",
       "في الشركة أستخدم الإنجليزية كلغة ثانية.",
       "أتمرن على لغتي الثانية كل يوم."
-    ],
-    "nl": [
-      "Ik leer Duits als tweede taal in een avondcursus.",
-      "Mijn kinderen spreken thuis Turks als tweede taal.",
-      "Op het werk gebruik ik Engels als tweede taal.",
-      "Ik oefen mijn tweede taal elke dag."
-    ],
-    "uk": [
-      "Я вивчаю німецьку як другу мову на вечірніх курсах.",
-      "Мої діти вдома говорять турецькою як другою мовою.",
-      "На роботі я використовую англійську як другу мову.",
-      "Я щодня практикую свою другу мову."
-    ],
-    "hu": [
-      "Egy esti tanfolyamon második nyelvként tanulok németül.",
-      "A gyerekeim otthon második nyelvként törökül beszélnek.",
-      "A munkahelyen az angolt használom második nyelvként.",
-      "Minden nap gyakorlom a második nyelvemet."
-    ],
-    "hi": [
-      "मैं शाम के कोर्स में जर्मन दूसरी भाषा के तौर पर सीख रहा हूँ.",
-      "मेरे बच्चे घर पर तुर्की दूसरी भाषा के रूप में बोलते हैं.",
-      "कंपनी में मैं अंग्रेज़ी को दूसरी भाषा के रूप में इस्तेमाल करता हूँ.",
-      "मैं अपनी दूसरी भाषा का रोज़ अभ्यास करता हूँ."
-    ],
-    "pl": [
-      "Uczę się niemieckiego jako drugiego języka na kursie wieczorowym.",
-      "W domu moje dzieci używają tureckiego jako drugiego języka.",
-      "W pracy używam angielskiego jako drugiego języka.",
-      "Codziennie ćwiczę swój drugi język."
-    ],
-    "el": [
-      "Μαθαίνω γερμανικά ως δεύτερη γλώσσα σε βραδινό μάθημα.",
-      "Τα παιδιά μου μιλούν τουρκικά στο σπίτι ως δεύτερη γλώσσα.",
-      "Στη δουλειά χρησιμοποιώ τα αγγλικά ως δεύτερη γλώσσα.",
-      "Κάνω εξάσκηση στη δεύτερη γλώσσα μου κάθε μέρα."
-    ],
-    "nb": [
-      "Jeg lærer tysk som andrespråk på et kveldskurs.",
-      "Barna mine snakker tyrkisk som andrespråk hjemme.",
-      "På jobben bruker jeg engelsk som andrespråk.",
-      "Jeg øver på andrespråket mitt hver dag."
-    ],
-    "id": [
-      "Saya belajar bahasa Jerman sebagai bahasa kedua di kursus malam.",
-      "Anak-anak saya berbicara bahasa Turki sebagai bahasa kedua di rumah.",
-      "Di kantor saya menggunakan bahasa Inggris sebagai bahasa kedua.",
-      "Saya berlatih bahasa kedua saya setiap hari."
-    ],
-    "sv": [
-      "Jag lär mig tyska som andraspråk på en kvällskurs.",
-      "Mina barn pratar turkiska som andraspråk hemma.",
-      "På jobbet använder jag engelska som andraspråk.",
-      "Jag övar på mitt andraspråk varje dag."
-    ],
-    "ro": [
-      "Învăț germană ca a doua limbă la un curs de seară.",
-      "Copiii mei vorbesc turcă acasă ca a doua limbă.",
-      "La serviciu folosesc engleza ca a doua limbă.",
-      "Îmi exersez a doua limbă în fiecare dzień."
     ],
     "cs": [
       "Učím se němčinu jako druhý jazyk na večerním kurzu.",
@@ -997,11 +1167,77 @@
       "På arbejdet bruger jeg engelsk som andetsprog.",
       "Jeg øver mit andetsprog hver dag."
     ],
+    "de": [
+      "Ich lerne Deutsch als Zweitsprache im Abendkurs.",
+      "Meine Kinder sprechen Türkisch als Zweitsprache zu Hause.",
+      "In der Firma nutze ich Englisch als Zweitsprache.",
+      "Für meine Zweitsprache übe ich jeden Tag."
+    ],
+    "el": [
+      "Μαθαίνω γερμανικά ως δεύτερη γλώσσα σε βραδινό μάθημα.",
+      "Τα παιδιά μου μιλούν τουρκικά στο σπίτι ως δεύτερη γλώσσα.",
+      "Στη δουλειά χρησιμοποιώ τα αγγλικά ως δεύτερη γλώσσα.",
+      "Κάνω εξάσκηση στη δεύτερη γλώσσα μου κάθε μέρα."
+    ],
+    "en": [
+      "I’m learning German as a second language in an evening course.",
+      "My kids speak Turkish as a second language at home.",
+      "At the company, I use English as a second language.",
+      "For my second language, I practice every day."
+    ],
+    "es": [
+      "Estoy aprendiendo alemán como segundo idioma en un curso nocturno.",
+      "Mis hijos hablan turco como segundo idioma en casa.",
+      "En la empresa uso el inglés como segundo idioma.",
+      "Practico mi segundo idioma todos los días."
+    ],
     "fi": [
       "Opiskelen saksaa toisena kielenä iltakurssilla.",
       "Lapseni puhuvat kotona turkkia toisena kielenä.",
       "Töissä käytän englantia toisena kielenä.",
       "Harjoittelen toista kieltäni joka päivä."
+    ],
+    "fr": [
+      "J’apprends l’allemand comme deuxième langue dans un cours du soir.",
+      "Mes enfants parlent le turc comme deuxième langue à la maison.",
+      "Au travail j’utilise l’anglais comme deuxième langue.",
+      "Je pratique ma deuxième langue tous les jours."
+    ],
+    "he": [
+      "אני לומד גרמנית כשפה שנייה בקורס ערב.",
+      "הילדים שלי מדברים טורקית כשפה שנייה בבית.",
+      "בעבודה אני משתמש באנגלית כשפה שנייה.",
+      "אני מתרגל את השפה השנייה שלי כל יום."
+    ],
+    "hi": [
+      "मैं शाम के कोर्स में जर्मन दूसरी भाषा के तौर पर सीख रहा हूँ.",
+      "मेरे बच्चे घर पर तुर्की दूसरी भाषा के रूप में बोलते हैं.",
+      "कंपनी में मैं अंग्रेज़ी को दूसरी भाषा के रूप में इस्तेमाल करता हूँ.",
+      "मैं अपनी दूसरी भाषा का रोज़ अभ्यास करता हूँ."
+    ],
+    "hu": [
+      "Egy esti tanfolyamon második nyelvként tanulok németül.",
+      "A gyerekeim otthon második nyelvként törökül beszélnek.",
+      "A munkahelyen az angolt használom második nyelvként.",
+      "Minden nap gyakorlom a második nyelvemet."
+    ],
+    "id": [
+      "Saya belajar bahasa Jerman sebagai bahasa kedua di kursus malam.",
+      "Anak-anak saya berbicara bahasa Turki sebagai bahasa kedua di rumah.",
+      "Di kantor saya menggunakan bahasa Inggris sebagai bahasa kedua.",
+      "Saya berlatih bahasa kedua saya setiap hari."
+    ],
+    "ipa": [
+      "/ɪç ˈlɛʁnə dɔʏ̯tʃ als ˈtsvaɪ̯tʃpʁaːxə ɪm ˈaːbəntkʊʁs/",
+      "/ˈmaɪ̯nə ˈkɪndɐ ˈʃpʁɛçən ˈtʏʁkɪʃ als ˈtsvaɪ̯tʃpʁaːxə tsuː ˈhaʊ̯zə/",
+      "/ɪn deːɐ̯ ˈfɪʁma ˈnʊtsə ɪç ˈɛŋlɪʃ als ˈtsvaɪ̯tʃpʁaːxə/",
+      "/fyːɐ̯ ˈmaɪ̯nə ˈtsvaɪ̯tʃpʁaːxə ˈyːbə ɪç ˈjeːdən taːk/"
+    ],
+    "it": [
+      "Sto imparando il tedesco come seconda lingua in un corso serale.",
+      "I miei figli parlano il turco come seconda lingua a casa.",
+      "Al lavoro uso l’inglese come seconda lingua.",
+      "Pratico la mia seconda lingua ogni giorno."
     ],
     "ja": [
       "夜の講座でドイツ語を第二言語として学んでいます。",
@@ -1009,6 +1245,83 @@
       "会社では英語を第二言語として使っています。",
       "毎日第二言語を練習しています。"
     ],
-    "word_POS": "Noun"
+    "ko": [
+      "저녁 수업에서 독일어를 제2언어로 배우고 있어요.",
+      "우리 아이들은 집에서 터키어를 제2언어로 말해요.",
+      "회사에서 저는 영어를 제2언어로 사용해요.",
+      "저는 제2언어를 매일 연습해요."
+    ],
+    "nb": [
+      "Jeg lærer tysk som andrespråk på et kveldskurs.",
+      "Barna mine snakker tyrkisk som andrespråk hjemme.",
+      "På jobben bruker jeg engelsk som andrespråk.",
+      "Jeg øver på andrespråket mitt hver dag."
+    ],
+    "nl": [
+      "Ik leer Duits als tweede taal in een avondcursus.",
+      "Mijn kinderen spreken thuis Turks als tweede taal.",
+      "Op het werk gebruik ik Engels als tweede taal.",
+      "Ik oefen mijn tweede taal elke dag."
+    ],
+    "pl": [
+      "Uczę się niemieckiego jako drugiego języka na kursie wieczorowym.",
+      "W domu moje dzieci używają tureckiego jako drugiego języka.",
+      "W pracy używam angielskiego jako drugiego języka.",
+      "Codziennie ćwiczę swój drugi język."
+    ],
+    "pt": [
+      "Estou aprendendo alemão como segundo idioma em um curso noturno.",
+      "Meus filhos falam turco como segundo idioma em casa.",
+      "Na empresa eu uso o inglês como segundo idioma.",
+      "Eu pratico meu segundo idioma todos os dias."
+    ],
+    "ro": [
+      "Învăț germană ca a doua limbă la un curs de seară.",
+      "Copiii mei vorbesc turcă acasă ca a doua limbă.",
+      "La serviciu folosesc engleza ca a doua limbă.",
+      "Îmi exersez a doua limbă în fiecare dzień."
+    ],
+    "ru": [
+      "Я изучаю немецкий как второй язык на вечерних курсах.",
+      "Мои дети дома говорят на турецком как на втором языке.",
+      "В компании я использую английский как второй язык.",
+      "Я каждый день практикую свой второй язык."
+    ],
+    "sv": [
+      "Jag lär mig tyska som andraspråk på en kvällskurs.",
+      "Mina barn pratar turkiska som andraspråk hemma.",
+      "På jobbet använder jag engelska som andraspråk.",
+      "Jag övar på mitt andraspråk varje dag."
+    ],
+    "tr": [
+      "Akşam kursunda Almancayı ikinci dil olarak öğreniyorum.",
+      "Çocuklarım evde Türkçeyi ikinci dil olarak konuşuyor.",
+      "Şirkette İngilizceyi ikinci dil olarak kullanıyorum.",
+      "Her gün ikinci dilimi çalışıyorum."
+    ],
+    "uk": [
+      "Я вивчаю німецьку як другу мову на вечірніх курсах.",
+      "Мої діти вдома говорять турецькою як другою мовою.",
+      "На роботі я використовую англійську як другу мову.",
+      "Я щодня практикую свою другу мову."
+    ],
+    "vi": [
+      "Tôi học tiếng Đức như ngôn ngữ thứ hai trong một lớp buổi tối.",
+      "Con tôi nói tiếng Thổ Nhĩ Kỳ như ngôn ngữ thứ hai ở nhà.",
+      "Ở công ty tôi dùng tiếng Anh như ngôn ngữ thứ hai.",
+      "Tôi luyện ngôn ngữ thứ hai của mình mỗi ngày."
+    ],
+    "yue": [
+      "我喺夜校學德文，當係第二語言。",
+      "我啲小朋友喺屋企講土耳其語，當係第二語言。",
+      "我喺公司用英文當第二語言。",
+      "我每日練習我嘅第二語言。"
+    ],
+    "zh-Hans": [
+      "我在晚间课程上把德语当作第二语言来学。",
+      "我的孩子们在家把土耳其语当作第二语言来讲。",
+      "在公司我把英语当作第二语言使用。",
+      "我每天练习我的第二语言。"
+    ]
   }
 }

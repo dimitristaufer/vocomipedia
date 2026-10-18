@@ -128,7 +128,7 @@
       "difficulty": 7.8
     },
     {
-      "target": "Die Firma want Fahrräder herstellen.",
+      "target": "Die Firma will Fahrräder herstellen.",
       "reading": "/diː ˈfɪʁma vɪl ˈfaːʁʁɛːdɐ ˈheːɐ̯ʃtɛlən/",
       "translations": {
         "de": "Die Firma will Fahrräder herstellen.",
@@ -164,49 +164,70 @@
       "tokens": [
         {
           "surface": "Die",
-          "surface_en": "the",
-          "furigana": "[diː]",
-          "pos": "DET",
           "lemma": "der",
-          "explanation": "Definite article (fem. nom. sing.) marking the subject.",
-          "difficulty": 2
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "ART",
+          "feats": {},
+          "start": 0,
+          "end": 3,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "Firma",
-          "surface_en": "company",
-          "furigana": "[ˈfɪʁma]",
-          "pos": "NOUN",
           "lemma": "Firma",
-          "explanation": "Feminine noun, nominative singular; grammatical subject.",
-          "difficulty": 7
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 4,
+          "end": 9,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "will",
-          "surface_en": "wants to",
-          "furigana": "[vɪl]",
-          "pos": "AUX",
           "lemma": "wollen",
-          "explanation": "Modal auxiliary, present tense (3rd sg), selecting 'herstellen'.",
-          "difficulty": 7
+          "pos": "AUX",
+          "upos": "AUX",
+          "xpos": "VMFIN",
+          "feats": {},
+          "start": 10,
+          "end": 14,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "Fahrräder",
-          "surface_en": "bicycles",
-          "furigana": "[ˈfaːʁˌʁɛːdɐ]",
-          "pos": "NOUN",
           "lemma": "Fahrrad",
-          "explanation": "Neuter noun, accusative plural; direct object.",
-          "difficulty": 10
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 15,
+          "end": 24,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "herstellen.",
-          "surface_en": "produce",
-          "furigana": "[ˈheːɐ̯ʃtɛlən]",
-          "pos": "VERB",
+          "surface": "herstellen",
           "lemma": "herstellen",
-          "explanation": "Main verb in bare infinitive; complement of the modal 'will'.",
-          "difficulty": 10,
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VVINF",
+          "feats": {},
+          "start": 25,
+          "end": 35,
+          "analyzer": "spacy_de_core_news_lg",
           "is_main_word": true
+        },
+        {
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 35,
+          "end": 36,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 7.2
@@ -310,7 +331,7 @@
         "yue": "技術員要建立連線。",
         "ru": "Технику нужно установить соединение.",
         "pt": "O técnico precisa estabelecer a conexão.",
-        "he": "הטכנאי צריך לחבר את הרשת.",
+        "he": "הטכנאי צריך ליצור את החיבור.",
         "tr": "Teknisyen bağlantıyı kurmak zorunda.",
         "vi": "Kỹ thuật viên phải thiết lập kết nối.",
         "ar": "على الفني أن يُنشئ الاتصال.",
@@ -321,12 +342,12 @@
         "pl": "Technik musi nawiązać połączenie.",
         "el": "Ο τεχνικός πρέπει να δημιουργήσει τη σύνδεση.",
         "nb": "Teknikeren må etablere forbindelsen.",
-        "id": "Teknisi harus menyambungkan jaringan.",
+        "id": "Teknisi harus membuat koneksi.",
         "sv": "Teknikern måste upprätta anslutningen.",
         "ro": "Tehnicianul trebuie să stabilească conexiunea.",
         "cs": "Technik musí navázat spojení.",
         "da": "Teknikeren skal etablere forbindelsen.",
-        "fi": "Teknikon täytyy muodostaa yhteς.",
+        "fi": "Teknikon täytyy muodostaa yhteys.",
         "ja": "技術者は接続を確立しなければなりません。"
       },
       "tokens": [
@@ -403,19 +424,267 @@
     "content_reviewers": [
       "mediawiki-visible-revision"
     ],
-    "last_reviewed_utc": "2026-06-12T11:45:03Z",
-    "approval_source": "mediawiki_visible_revision",
+    "last_reviewed_utc": "2026-10-14T21:59:48Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
     "wiki": {
       "title": "Item:De a2/84e4492f2c76ebc6",
-      "revision_id": 14170,
-      "parent_revision_id": 1035,
-      "revision_timestamp_utc": "2026-06-12T11:45:03Z",
-      "revision_user": "VocomiBot",
-      "revision_comment": "Sync de_a2 item herstellen",
-      "pulled_utc": "2026-06-22T08:19:05Z",
-      "applied_utc": "2026-06-22T08:19:13Z",
+      "revision_id": 86165,
+      "parent_revision_id": 59305,
+      "revision_timestamp_utc": "2026-10-14T21:59:48Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Content review: German and translation corrections",
+      "pulled_utc": "2026-10-17T07:00:41Z",
+      "applied_utc": "2026-10-17T07:00:49Z",
       "applied_by": "vocomipedia-apply-pulled"
-    }
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-b1867ebdd0057dfc",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_a2:84e4492f2c76ebc6",
+        "pack_code": "de_a2",
+        "entry_id": "herstellen",
+        "language": "de",
+        "sentence_index": 2,
+        "old_sentence": "Die Firma want Fahrräder herstellen.",
+        "old_translations": {
+          "de": "Die Firma will Fahrräder herstellen.",
+          "ipa": "/diː ˈfɪʁma vɪl ˈfaːʁʁɛːdɐ ˈheːɐ̯ʃtɛlən/",
+          "en": "The company wants to produce bicycles.",
+          "es": "La empresa quiere fabricar bicicletas.",
+          "fr": "L’entreprise veut fabriquer des vélos.",
+          "it": "L'azienda vuole produrre biciclette.",
+          "ko": "회사는 자전거를 생산하고 싶어 한다.",
+          "zh-Hans": "公司想生产自行车。",
+          "yue": "公司想生產單車。",
+          "ru": "Компания хочет производить велосипеды.",
+          "pt": "A empresa quer fabricar bicicletas.",
+          "he": "החברה רוצה לייצר אופניים.",
+          "tr": "Şirket bisiklet üretmek istiyor.",
+          "vi": "Công ty muốn sản xuất xe đạp.",
+          "ar": "الشركة تريد تصنيع دراجات.",
+          "nl": "Het bedrijf wil fietsen produceren.",
+          "uk": "Компанія хоче виробляти велосипеди.",
+          "hu": "A cég kerékpárokat akar gyártani.",
+          "hi": "कंपनी साइकिल बनाना चाहती है.",
+          "pl": "Firma chce produkować rowery.",
+          "el": "Η εταιρεία θέλει να παράγει ποδήλατα.",
+          "nb": "Selskapet vil produsere sykler.",
+          "id": "Perusahaan ingin memproduksi sepeda.",
+          "sv": "Företaget vill tillverka cyklar.",
+          "ro": "Compania vrea să producă biciclete.",
+          "cs": "Firma chce vyrábět jízdní kola.",
+          "da": "Virksomheden vil producere cykler.",
+          "fi": "Yritys haluaa valmistaa polkupyöriä.",
+          "ja": "その会社は自転車を製造したい。"
+        },
+        "proposed_sentence": "Die Firma will Fahrräder herstellen.",
+        "proposed_translations": {
+          "de": "Die Firma will Fahrräder herstellen.",
+          "ipa": "/diː ˈfɪʁma vɪl ˈfaːʁʁɛːdɐ ˈheːɐ̯ʃtɛlən/",
+          "en": "The company wants to produce bicycles.",
+          "es": "La empresa quiere fabricar bicicletas.",
+          "fr": "L’entreprise veut fabriquer des vélos.",
+          "it": "L'azienda vuole produrre biciclette.",
+          "ko": "회사는 자전거를 생산하고 싶어 한다.",
+          "zh-Hans": "公司想生产自行车。",
+          "yue": "公司想生產單車。",
+          "ru": "Компания хочет производить велосипеды.",
+          "pt": "A empresa quer fabricar bicicletas.",
+          "he": "החברה רוצה לייצר אופניים.",
+          "tr": "Şirket bisiklet üretmek istiyor.",
+          "vi": "Công ty muốn sản xuất xe đạp.",
+          "ar": "الشركة تريد تصنيع دراجات.",
+          "nl": "Het bedrijf wil fietsen produceren.",
+          "uk": "Компанія хоче виробляти велосипеди.",
+          "hu": "A cég kerékpárokat akar gyártani.",
+          "hi": "कंपनी साइकिल बनाना चाहती है.",
+          "pl": "Firma chce produkować rowery.",
+          "el": "Η εταιρεία θέλει να παράγει ποδήλατα.",
+          "nb": "Selskapet vil produsere sykler.",
+          "id": "Perusahaan ingin memproduksi sepeda.",
+          "sv": "Företaget vill tillverka cyklar.",
+          "ro": "Compania vrea să producă biciclete.",
+          "cs": "Firma chce vyrábět jízdní kola.",
+          "da": "Virksomheden vil producere cykler.",
+          "fi": "Yritys haluaa valmistaa polkupyöriä.",
+          "ja": "その会社は自転車を製造したい。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Die Firma will Fahrräder herstellen.",
+        "old_japanese": "Die Firma want Fahrräder herstellen.",
+        "old_english": "The company wants to produce bicycles.",
+        "proposed_japanese": "Die Firma will Fahrräder herstellen.",
+        "proposed_english": "The company wants to produce bicycles.",
+        "reason": "Replace the accidentally inserted English word with the correct German verb form.",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Die Firma will Fahrräder herstellen.",
+          "tokens": [
+            {
+              "surface": "Die",
+              "lemma": "der",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "ART",
+              "feats": {},
+              "start": 0,
+              "end": 3,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Firma",
+              "lemma": "Firma",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 4,
+              "end": 9,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "will",
+              "lemma": "wollen",
+              "pos": "AUX",
+              "upos": "AUX",
+              "xpos": "VMFIN",
+              "feats": {},
+              "start": 10,
+              "end": 14,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Fahrräder",
+              "lemma": "Fahrrad",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 15,
+              "end": 24,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "herstellen",
+              "lemma": "herstellen",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVINF",
+              "feats": {},
+              "start": 25,
+              "end": 35,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 35,
+              "end": 36,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Die",
+            "lemma": "der",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Firma",
+            "lemma": "Firma",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 4,
+            "end": 9,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "will",
+            "lemma": "wollen",
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "VMFIN",
+            "feats": {},
+            "start": 10,
+            "end": 14,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Fahrräder",
+            "lemma": "Fahrrad",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 15,
+            "end": 24,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "herstellen",
+            "lemma": "herstellen",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVINF",
+            "feats": {},
+            "start": 25,
+            "end": 35,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 35,
+            "end": 36,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:00:41Z",
+        "updated_utc": "2026-10-17T07:00:59Z",
+        "applied_utc": "2026-10-17T07:00:59Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:00:59Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -494,53 +763,74 @@
         "difficulty_aggregated": 7.8
       },
       {
-        "sentence": "Die Firma want Fahrräder herstellen.",
+        "sentence": "Die Firma will Fahrräder herstellen.",
         "tokens": [
           {
             "surface": "Die",
-            "surface_en": "the",
-            "furigana": "[diː]",
-            "pos": "DET",
             "lemma": "der",
-            "explanation": "Definite article (fem. nom. sing.) marking the subject.",
-            "difficulty": 2
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "Firma",
-            "surface_en": "company",
-            "furigana": "[ˈfɪʁma]",
-            "pos": "NOUN",
             "lemma": "Firma",
-            "explanation": "Feminine noun, nominative singular; grammatical subject.",
-            "difficulty": 7
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 4,
+            "end": 9,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "will",
-            "surface_en": "wants to",
-            "furigana": "[vɪl]",
-            "pos": "AUX",
             "lemma": "wollen",
-            "explanation": "Modal auxiliary, present tense (3rd sg), selecting 'herstellen'.",
-            "difficulty": 7
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "VMFIN",
+            "feats": {},
+            "start": 10,
+            "end": 14,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "Fahrräder",
-            "surface_en": "bicycles",
-            "furigana": "[ˈfaːʁˌʁɛːdɐ]",
-            "pos": "NOUN",
             "lemma": "Fahrrad",
-            "explanation": "Neuter noun, accusative plural; direct object.",
-            "difficulty": 10
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 15,
+            "end": 24,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "herstellen.",
-            "surface_en": "produce",
-            "furigana": "[ˈheːɐ̯ʃtɛlən]",
-            "pos": "VERB",
+            "surface": "herstellen",
             "lemma": "herstellen",
-            "explanation": "Main verb in bare infinitive; complement of the modal 'will'.",
-            "difficulty": 10,
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVINF",
+            "feats": {},
+            "start": 25,
+            "end": 35,
+            "analyzer": "spacy_de_core_news_lg",
             "is_main_word": true
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 35,
+            "end": 36,
+            "analyzer": "spacy_de_core_news_lg"
           }
         ],
         "difficulty_aggregated": 7.2
@@ -735,7 +1025,7 @@
       "Voin ottaa nopeasti yhteyttä.",
       "Yritys haluaa valmistaa polkupyöriä.",
       "Opettelemme tekemään hilloa.",
-      "Teknikon täytyy muodostaa yhteς."
+      "Teknikon täytyy muodostaa yhteys."
     ],
     "fr": [
       "Je peux prendre contact rapidement.",
@@ -747,7 +1037,7 @@
       "אני יכולה ליצור קשר מהר.",
       "החברה רוצה לייצר אופניים.",
       "אנחנו לומדים להכין ריבה.",
-      "הטכנאי צריך לחבר את הרשת."
+      "הטכנאי צריך ליצור את החיבור."
     ],
     "hi": [
       "मैं जल्दी संपर्क कर सकती हूँ.",
@@ -765,7 +1055,7 @@
       "Saya bisa menghubungi dengan cepat.",
       "Perusahaan ingin memproduksi sepeda.",
       "Kami sedang belajar membuat selai.",
-      "Teknisi harus menyambungkan jaringan."
+      "Teknisi harus membuat koneksi."
     ],
     "ipa": [
       "/ɪç kan ʃnɛl kɔnˈtakt ˈheːɐ̯ʃtɛlən/",

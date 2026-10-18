@@ -128,10 +128,10 @@
       "difficulty": 6
     },
     {
-      "target": "Es gibt heute viel Nachfrage.",
+      "target": "Es gibt heute eine hohe Nachfrage.",
       "reading": "/ɛs ɡɪpt ˈhɔʏtə fiːl ˈnaːxˌfʁaːɡə/",
       "translations": {
-        "de": "Es gibt heute viel Nachfrage.",
+        "de": "Es gibt heute eine hohe Nachfrage.",
         "ipa": "/ɛs ɡɪpt ˈhɔʏtə fiːl ˈnaːxˌfʁaːɡə/",
         "en": "There is a lot of demand today.",
         "es": "Hoy hay mucha demanda.",
@@ -164,49 +164,81 @@
       "tokens": [
         {
           "surface": "Es",
-          "surface_en": "it",
-          "furigana": "[ɛs]",
-          "pos": "PRON",
           "lemma": "es",
-          "explanation": "Expletive pronoun in an existential construction; fills subject position without concrete referent.",
-          "difficulty": 2
+          "pos": "PRON",
+          "upos": "PRON",
+          "xpos": "PPER",
+          "feats": {},
+          "start": 0,
+          "end": 2,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "gibt",
-          "surface_en": "there is",
-          "furigana": "[ɡɪpt]",
-          "pos": "VERB",
           "lemma": "geben",
-          "explanation": "Main verb; 3rd person singular present; existential 'geben' taking an object.",
-          "difficulty": 7
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VVFIN",
+          "feats": {},
+          "start": 3,
+          "end": 7,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "heute",
-          "surface_en": "today",
-          "furigana": "[ˈhɔʏtə]",
-          "pos": "ADV",
           "lemma": "heute",
-          "explanation": "Temporal adverb; sets the time frame of the clause.",
-          "difficulty": 7
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "ADV",
+          "feats": {},
+          "start": 8,
+          "end": 13,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "viel",
-          "surface_en": "a lot of",
-          "furigana": "[fiːl]",
+          "surface": "eine",
+          "lemma": "ein",
           "pos": "DET",
-          "lemma": "viel",
-          "explanation": "Quantifier determiner; modifies the mass noun 'Nachfrage', indicating a large amount; uninflected here.",
-          "difficulty": 7
+          "upos": "DET",
+          "xpos": "ART",
+          "feats": {},
+          "start": 14,
+          "end": 18,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "Nachfrage.",
-          "surface_en": "demand",
-          "furigana": "[ˈnaːxfʁaːɡə]",
-          "pos": "NOUN",
+          "surface": "hohe",
+          "lemma": "hoch",
+          "pos": "ADJ",
+          "upos": "ADJ",
+          "xpos": "ADJA",
+          "feats": {},
+          "start": 19,
+          "end": 23,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "Nachfrage",
           "lemma": "Nachfrage",
-          "explanation": "Feminine mass noun; direct object (accusative) of the existential verb 'gibt'.",
-          "difficulty": 10,
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 24,
+          "end": 33,
+          "analyzer": "spacy_de_core_news_lg",
           "is_main_word": true
+        },
+        {
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 33,
+          "end": 34,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 6.6
@@ -418,8 +450,292 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-15T02:12:11Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:De b1/f9da980b60d6d93f",
+      "revision_id": 85205,
+      "parent_revision_id": 17094,
+      "revision_timestamp_utc": "2026-10-15T02:12:11Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Made the German sentence use the standard collocation for high demand.",
+      "pulled_utc": "2026-10-17T07:06:45Z",
+      "applied_utc": "2026-10-17T07:06:50Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-c3e6ab3f1803cc5a",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_b1:f9da980b60d6d93f",
+        "pack_code": "de_b1",
+        "entry_id": "Nachfrage",
+        "language": "de",
+        "sentence_index": 2,
+        "old_sentence": "Es gibt heute viel Nachfrage.",
+        "old_translations": {
+          "de": "Es gibt heute viel Nachfrage.",
+          "ipa": "/ɛs ɡɪpt ˈhɔʏtə fiːl ˈnaːxˌfʁaːɡə/",
+          "en": "There is a lot of demand today.",
+          "es": "Hoy hay mucha demanda.",
+          "fr": "Aujourd'hui, la demande est forte.",
+          "it": "Oggi c'è molta richiesta.",
+          "ko": "오늘은 수요가 많아요.",
+          "zh-Hans": "今天需求很大。",
+          "yue": "今日需求好大。",
+          "ru": "Сегодня большой спрос.",
+          "pt": "Hoje há muita procura.",
+          "he": "היום יש הרבה ביקוש.",
+          "tr": "Bugün talep yüksek.",
+          "vi": "Hôm nay nhu cầu rất cao.",
+          "ar": "هناك طلب كبير اليوم.",
+          "nl": "Vandaag is er veel vraag.",
+          "uk": "Сьогодні великий попит.",
+          "hu": "Ma nagy a kereslet.",
+          "hi": "आज मांग ज़्यादा है.",
+          "pl": "Dziś jest duży popyt.",
+          "el": "Σήμερα υπάρχει μεγάλη ζήτηση.",
+          "nb": "I dag er det stor etterspørsel.",
+          "id": "Hari ini permintaan tinggi.",
+          "sv": "Det är stor efterfrågan i dag.",
+          "ro": "Astăzi cererea este mare.",
+          "cs": "Dnes je velká poptávka.",
+          "da": "I dag er der stor efterspørgsel.",
+          "fi": "Tänään on paljon kysyntää.",
+          "ja": "今日は需要が高いです。"
+        },
+        "proposed_sentence": "Es gibt heute eine hohe Nachfrage.",
+        "proposed_translations": {
+          "de": "Es gibt heute eine hohe Nachfrage.",
+          "ipa": "/ɛs ɡɪpt ˈhɔʏtə fiːl ˈnaːxˌfʁaːɡə/",
+          "en": "There is a lot of demand today.",
+          "es": "Hoy hay mucha demanda.",
+          "fr": "Aujourd'hui, la demande est forte.",
+          "it": "Oggi c'è molta richiesta.",
+          "ko": "오늘은 수요가 많아요.",
+          "zh-Hans": "今天需求很大。",
+          "yue": "今日需求好大。",
+          "ru": "Сегодня большой спрос.",
+          "pt": "Hoje há muita procura.",
+          "he": "היום יש הרבה ביקוש.",
+          "tr": "Bugün talep yüksek.",
+          "vi": "Hôm nay nhu cầu rất cao.",
+          "ar": "هناك طلب كبير اليوم.",
+          "nl": "Vandaag is er veel vraag.",
+          "uk": "Сьогодні великий попит.",
+          "hu": "Ma nagy a kereslet.",
+          "hi": "आज मांग ज़्यादा है.",
+          "pl": "Dziś jest duży popyt.",
+          "el": "Σήμερα υπάρχει μεγάλη ζήτηση.",
+          "nb": "I dag er det stor etterspørsel.",
+          "id": "Hari ini permintaan tinggi.",
+          "sv": "Det är stor efterfrågan i dag.",
+          "ro": "Astăzi cererea este mare.",
+          "cs": "Dnes je velká poptávka.",
+          "da": "I dag er der stor efterspørgsel.",
+          "fi": "Tänään on paljon kysyntää.",
+          "ja": "今日は需要が高いです。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Es gibt heute eine hohe Nachfrage.",
+        "old_japanese": "Es gibt heute viel Nachfrage.",
+        "old_english": "There is a lot of demand today.",
+        "proposed_japanese": "Es gibt heute eine hohe Nachfrage.",
+        "proposed_english": "There is a lot of demand today.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Es gibt heute eine hohe Nachfrage.",
+          "tokens": [
+            {
+              "surface": "Es",
+              "lemma": "es",
+              "pos": "PRON",
+              "upos": "PRON",
+              "xpos": "PPER",
+              "feats": {},
+              "start": 0,
+              "end": 2,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "gibt",
+              "lemma": "geben",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVFIN",
+              "feats": {},
+              "start": 3,
+              "end": 7,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "heute",
+              "lemma": "heute",
+              "pos": "ADV",
+              "upos": "ADV",
+              "xpos": "ADV",
+              "feats": {},
+              "start": 8,
+              "end": 13,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "eine",
+              "lemma": "ein",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "ART",
+              "feats": {},
+              "start": 14,
+              "end": 18,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "hohe",
+              "lemma": "hoch",
+              "pos": "ADJ",
+              "upos": "ADJ",
+              "xpos": "ADJA",
+              "feats": {},
+              "start": 19,
+              "end": 23,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Nachfrage",
+              "lemma": "Nachfrage",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 24,
+              "end": 33,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 33,
+              "end": 34,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Es",
+            "lemma": "es",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "gibt",
+            "lemma": "geben",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 3,
+            "end": 7,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "heute",
+            "lemma": "heute",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 8,
+            "end": 13,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "eine",
+            "lemma": "ein",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 14,
+            "end": 18,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "hohe",
+            "lemma": "hoch",
+            "pos": "ADJ",
+            "upos": "ADJ",
+            "xpos": "ADJA",
+            "feats": {},
+            "start": 19,
+            "end": 23,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Nachfrage",
+            "lemma": "Nachfrage",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 24,
+            "end": 33,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 33,
+            "end": 34,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:06:45Z",
+        "updated_utc": "2026-10-17T07:07:06Z",
+        "applied_utc": "2026-10-17T07:07:06Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:07:06Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -431,34 +747,6 @@
     "word": "Nachfrage",
     "word_reading": "",
     "word_label": "Substantiv (die fem.)",
-    "word_en": "demand; inquiry",
-    "word_es": "demanda; consulta",
-    "word_fr": "demande; demande d'information",
-    "word_it": "domanda; richiesta di informazioni",
-    "word_ko": "수요; 문의",
-    "word_zh-Hans": "需求; 询问",
-    "word_yue": "需求; 查詢",
-    "word_ru": "спрос; запрос",
-    "word_pt": "procura; consulta",
-    "word_he": "ביקוש; בירור",
-    "word_tr": "talep; bilgi talebi",
-    "word_vi": "nhu cầu; yêu cầu thông tin",
-    "word_ar": "الطلب; استفسار",
-    "word_nl": "vraag; navraag",
-    "word_uk": "попит; запит",
-    "word_hu": "kereslet; megkeresés",
-    "word_hi": "मांग; पूछताछ",
-    "word_pl": "popyt; zapytanie",
-    "word_el": "ζήτηση; ερώτημα",
-    "word_nb": "etterspørsel; forespørsel",
-    "word_id": "permintaan; pertanyaan",
-    "word_sv": "efterfrågan; förfrågan",
-    "word_ro": "cerere; întrebare",
-    "word_cs": "poptávka; dotaz",
-    "word_da": "efterspørgsel; forespørgsel",
-    "word_fi": "kysyntä; tiedustelu",
-    "word_ja": "需要; 問い合わせ",
-    "word_de": "Nachfrage",
     "comic_difficulty": 6.75,
     "jp": [
       "Die Nachfrage ist gerade groß.",
@@ -471,24 +759,6 @@
       "/ɛs ɡɪpt ˈhɔʏtə fiːl ˈnaːxˌfʁaːɡə/",
       "/ˈveːɡən ˈhoːɐ̯ ˈnaːxˌfʁaːɡə zɪnt diː tiːʃɪʁts ˈaʊsfɛʁˌkaʊft/",
       "/foːɐ̯ ˈvaɪ̯naχtn̩ ʃtaɪ̯kt diː ˈnaːxˌfʁaːɡə ˈyːbəʁal/"
-    ],
-    "de": [
-      "Die Nachfrage ist gerade groß.",
-      "Es gibt heute viel Nachfrage.",
-      "Wegen hoher Nachfrage sind die T-Shirts ausverkauft.",
-      "Vor Weihnachten steigt die Nachfrage überall."
-    ],
-    "ipa": [
-      "/diː ˈnaːxˌfʁaːɡə ɪst ɡəˈʁaːdə ɡʁoːs/",
-      "/ɛs ɡɪpt ˈhɔʏtə fiːl ˈnaːxˌfʁaːɡə/",
-      "/ˈveːɡən ˈhoːɐ̯ ˈnaːxˌfʁaːɡə zɪnt diː tiːʃɪʁts ˈaʊsfɛʁˌkaʊft/",
-      "/foːɐ̯ ˈvaɪ̯naχtn̩ ʃtaɪ̯kt diː ˈnaːxˌfʁaːɡə ˈyːbəʁal/"
-    ],
-    "en": [
-      "Demand is high right now.",
-      "There is a lot of demand today.",
-      "Due to high demand, the T-shirts are sold out.",
-      "Before Christmas, demand goes up everywhere."
     ],
     "pos_analysis": [
       {
@@ -544,53 +814,85 @@
         "difficulty_aggregated": 6
       },
       {
-        "sentence": "Es gibt heute viel Nachfrage.",
+        "sentence": "Es gibt heute eine hohe Nachfrage.",
         "tokens": [
           {
             "surface": "Es",
-            "surface_en": "it",
-            "furigana": "[ɛs]",
-            "pos": "PRON",
             "lemma": "es",
-            "explanation": "Expletive pronoun in an existential construction; fills subject position without concrete referent.",
-            "difficulty": 2
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "gibt",
-            "surface_en": "there is",
-            "furigana": "[ɡɪpt]",
-            "pos": "VERB",
             "lemma": "geben",
-            "explanation": "Main verb; 3rd person singular present; existential 'geben' taking an object.",
-            "difficulty": 7
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 3,
+            "end": 7,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "heute",
-            "surface_en": "today",
-            "furigana": "[ˈhɔʏtə]",
-            "pos": "ADV",
             "lemma": "heute",
-            "explanation": "Temporal adverb; sets the time frame of the clause.",
-            "difficulty": 7
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 8,
+            "end": 13,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "viel",
-            "surface_en": "a lot of",
-            "furigana": "[fiːl]",
+            "surface": "eine",
+            "lemma": "ein",
             "pos": "DET",
-            "lemma": "viel",
-            "explanation": "Quantifier determiner; modifies the mass noun 'Nachfrage', indicating a large amount; uninflected here.",
-            "difficulty": 7
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 14,
+            "end": 18,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "Nachfrage.",
-            "surface_en": "demand",
-            "furigana": "[ˈnaːxfʁaːɡə]",
-            "pos": "NOUN",
+            "surface": "hohe",
+            "lemma": "hoch",
+            "pos": "ADJ",
+            "upos": "ADJ",
+            "xpos": "ADJA",
+            "feats": {},
+            "start": 19,
+            "end": 23,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Nachfrage",
             "lemma": "Nachfrage",
-            "explanation": "Feminine mass noun; direct object (accusative) of the existential verb 'gibt'.",
-            "difficulty": 10,
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 24,
+            "end": 33,
+            "analyzer": "spacy_de_core_news_lg",
             "is_main_word": true
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 33,
+            "end": 34,
+            "analyzer": "spacy_de_core_news_lg"
           }
         ],
         "difficulty_aggregated": 6.6
@@ -727,137 +1029,41 @@
         "difficulty_aggregated": 6.83
       }
     ],
-    "es": [
-      "Ahora hay mucha demanda.",
-      "Hoy hay mucha demanda.",
-      "Debido a la alta demanda, las camisetas están agotadas.",
-      "Antes de Navidad, la demanda sube en todas partes."
-    ],
-    "fr": [
-      "La demande est forte en ce moment.",
-      "Aujourd'hui, la demande est forte.",
-      "En raison de la forte demande, les T-shirts sont en rupture de stock.",
-      "Avant Noël, la demande augmente partout."
-    ],
-    "it": [
-      "Adesso c'è molta richiesta.",
-      "Oggi c'è molta richiesta.",
-      "A causa dell'alta richiesta, le magliette sono esaurite.",
-      "Prima di Natale la domanda aumenta ovunque."
-    ],
-    "ko": [
-      "지금 수요가 많아요.",
-      "오늘은 수요가 많아요.",
-      "수요가 많아서 티셔츠가 품절됐어요.",
-      "크리스마스 전에 수요가 곳곳에서 늘어요."
-    ],
-    "zh-Hans": [
-      "现在需求很高。",
-      "今天需求很大。",
-      "由于需求旺盛，T恤已售罄。",
-      "圣诞节前，需求到处都在上涨。"
-    ],
-    "yue": [
-      "而家需求好大。",
-      "今日需求好大。",
-      "因為需求好高，T恤已經賣晒。",
-      "聖誕節前，周圍嘅需求都會上升。"
-    ],
-    "ru": [
-      "Сейчас высокий спрос.",
-      "Сегодня большой спрос.",
-      "Из-за высокого спроса футболки распроданы.",
-      "Перед Рождеством спрос растет повсюду."
-    ],
-    "pt": [
-      "Agora a procura está alta.",
-      "Hoje há muita procura.",
-      "Devido à alta procura, as camisetas estão esgotadas.",
-      "Antes do Natal, a procura aumenta por toda parte."
-    ],
-    "he": [
-      "הביקוש גבוה עכשיו.",
-      "היום יש הרבה ביקוש.",
-      "בגלל ביקוש גבוה החולצות אזלו מהמלאי.",
-      "לפני חג המולד הביקוש עולה בכל מקום."
-    ],
-    "tr": [
-      "Şu anda talep yüksek.",
-      "Bugün talep yüksek.",
-      "Yüksek talep nedeniyle tişörtler tükendi.",
-      "Noel öncesinde her yerde talep artıyor."
-    ],
-    "vi": [
-      "Hiện tại nhu cầu rất cao.",
-      "Hôm nay nhu cầu rất cao.",
-      "Do nhu cầu cao nên áo thun đã bán hết.",
-      "Trước Giáng Sinh, nhu cầu tăng khắp nơi."
-    ],
+    "word_POS": "Noun",
+    "entry_id": "Nachfrage",
+    "word_en": "demand; inquiry",
+    "word_es": "demanda; consulta",
+    "word_fr": "demande; demande d'information",
+    "word_it": "domanda; richiesta di informazioni",
+    "word_ko": "수요; 문의",
+    "word_zh-Hans": "需求; 询问",
+    "word_yue": "需求; 查詢",
+    "word_ru": "спрос; запрос",
+    "word_pt": "procura; consulta",
+    "word_he": "ביקוש; בירור",
+    "word_tr": "talep; bilgi talebi",
+    "word_vi": "nhu cầu; yêu cầu thông tin",
+    "word_ar": "الطلب; استفسار",
+    "word_nl": "vraag; navraag",
+    "word_uk": "попит; запит",
+    "word_hu": "kereslet; megkeresés",
+    "word_hi": "मांग; पूछताछ",
+    "word_pl": "popyt; zapytanie",
+    "word_el": "ζήτηση; ερώτημα",
+    "word_nb": "etterspørsel; forespørsel",
+    "word_id": "permintaan; pertanyaan",
+    "word_sv": "efterfrågan; förfrågan",
+    "word_ro": "cerere; întrebare",
+    "word_cs": "poptávka; dotaz",
+    "word_da": "efterspørgsel; forespørgsel",
+    "word_fi": "kysyntä; tiedustelu",
+    "word_ja": "需要; 問い合わせ",
+    "word_de": "Nachfrage",
     "ar": [
       "الطلب مرتفع الآن.",
       "هناك طلب كبير اليوم.",
       "بسبب الطلب المرتفع نفدت القمصان.",
       "قبل عيد الميلاد يرتفع الطلب في كل مكان."
-    ],
-    "nl": [
-      "Er is nu veel vraag.",
-      "Vandaag is er veel vraag.",
-      "Door de hoge vraag zijn de T-shirts uitverkocht.",
-      "Voor Kerst stijgt de vraag overal."
-    ],
-    "uk": [
-      "Зараз високий попит.",
-      "Сьогодні великий попит.",
-      "Через високий попит футболки розпродані.",
-      "Перед Різдвом попит зростає всюди."
-    ],
-    "hu": [
-      "Most nagy a kereslet.",
-      "Ma nagy a kereslet.",
-      "A nagy kereslet miatt a pólók elfogytak.",
-      "Karácsony előtt mindenhol nő a kereslet."
-    ],
-    "hi": [
-      "अभी मांग ज़्यादा है.",
-      "आज मांग ज़्यादा है.",
-      "ज़्यादा मांग के कारण टी-शर्टें बिक गई हैं.",
-      "क्रिसमस से पहले हर जगह मांग बढ़ जाती है."
-    ],
-    "pl": [
-      "Teraz jest duży popyt.",
-      "Dziś jest duży popyt.",
-      "Z powodu dużego popytu koszulki są wyprzedane.",
-      "Przed Bożym Narodzeniem popyt rośnie wszędzie."
-    ],
-    "el": [
-      "Τώρα η ζήτηση είναι υψηλή.",
-      "Σήμερα υπάρχει μεγάλη ζήτηση.",
-      "Λόγω της υψηλής ζήτησης, τα μπλουζάκια έχουν εξαντληθεί.",
-      "Πριν τα Χριστούγεννα, η ζήτηση αυξάνεται παντού."
-    ],
-    "nb": [
-      "Etterspørselen er høy nå.",
-      "I dag er det stor etterspørsel.",
-      "På grunn av høy etterspørsel er T-skjortene utsolgt.",
-      "Før jul øker etterspørselen overalt."
-    ],
-    "id": [
-      "Sekarang permintaan tinggi.",
-      "Hari ini permintaan tinggi.",
-      "Karena permintaan tinggi, kaos sudah habis.",
-      "Menjelang Natal, permintaan naik di mana-mana."
-    ],
-    "sv": [
-      "Efterfrågan är hög just nu.",
-      "Det är stor efterfrågan i dag.",
-      "På grund av hög efterfrågan är T-tröjorna slut.",
-      "Inför jul ökar efterfrågan överallt."
-    ],
-    "ro": [
-      "Cererea este mare acum.",
-      "Astăzi cererea este mare.",
-      "Din cauza cererii mari, tricourile sunt epuizate.",
-      "Înainte de Crăciun, cererea crește peste tot."
     ],
     "cs": [
       "Teď je velká poptávka.",
@@ -871,11 +1077,77 @@
       "På grund af høj efterspørgsel er T-shirtsene udsolgt.",
       "Op til jul stiger efterspørgslen overalt."
     ],
+    "de": [
+      "Die Nachfrage ist gerade groß.",
+      "Es gibt heute viel Nachfrage.",
+      "Wegen hoher Nachfrage sind die T-Shirts ausverkauft.",
+      "Vor Weihnachten steigt die Nachfrage überall."
+    ],
+    "el": [
+      "Τώρα η ζήτηση είναι υψηλή.",
+      "Σήμερα υπάρχει μεγάλη ζήτηση.",
+      "Λόγω της υψηλής ζήτησης, τα μπλουζάκια έχουν εξαντληθεί.",
+      "Πριν τα Χριστούγεννα, η ζήτηση αυξάνεται παντού."
+    ],
+    "en": [
+      "Demand is high right now.",
+      "There is a lot of demand today.",
+      "Due to high demand, the T-shirts are sold out.",
+      "Before Christmas, demand goes up everywhere."
+    ],
+    "es": [
+      "Ahora hay mucha demanda.",
+      "Hoy hay mucha demanda.",
+      "Debido a la alta demanda, las camisetas están agotadas.",
+      "Antes de Navidad, la demanda sube en todas partes."
+    ],
     "fi": [
       "Kysyntä on nyt suurta.",
       "Tänään on paljon kysyntää.",
       "Kovan kysynnän vuoksi T-paidat ovat loppu.",
       "Ennen joulua kysyntä kasvaa kaikkialla."
+    ],
+    "fr": [
+      "La demande est forte en ce moment.",
+      "Aujourd'hui, la demande est forte.",
+      "En raison de la forte demande, les T-shirts sont en rupture de stock.",
+      "Avant Noël, la demande augmente partout."
+    ],
+    "he": [
+      "הביקוש גבוה עכשיו.",
+      "היום יש הרבה ביקוש.",
+      "בגלל ביקוש גבוה החולצות אזלו מהמלאי.",
+      "לפני חג המולד הביקוש עולה בכל מקום."
+    ],
+    "hi": [
+      "अभी मांग ज़्यादा है.",
+      "आज मांग ज़्यादा है.",
+      "ज़्यादा मांग के कारण टी-शर्टें बिक गई हैं.",
+      "क्रिसमस से पहले हर जगह मांग बढ़ जाती है."
+    ],
+    "hu": [
+      "Most nagy a kereslet.",
+      "Ma nagy a kereslet.",
+      "A nagy kereslet miatt a pólók elfogytak.",
+      "Karácsony előtt mindenhol nő a kereslet."
+    ],
+    "id": [
+      "Sekarang permintaan tinggi.",
+      "Hari ini permintaan tinggi.",
+      "Karena permintaan tinggi, kaos sudah habis.",
+      "Menjelang Natal, permintaan naik di mana-mana."
+    ],
+    "ipa": [
+      "/diː ˈnaːxˌfʁaːɡə ɪst ɡəˈʁaːdə ɡʁoːs/",
+      "/ɛs ɡɪpt ˈhɔʏtə fiːl ˈnaːxˌfʁaːɡə/",
+      "/ˈveːɡən ˈhoːɐ̯ ˈnaːxˌfʁaːɡə zɪnt diː tiːʃɪʁts ˈaʊsfɛʁˌkaʊft/",
+      "/foːɐ̯ ˈvaɪ̯naχtn̩ ʃtaɪ̯kt diː ˈnaːxˌfʁaːɡə ˈyːbəʁal/"
+    ],
+    "it": [
+      "Adesso c'è molta richiesta.",
+      "Oggi c'è molta richiesta.",
+      "A causa dell'alta richiesta, le magliette sono esaurite.",
+      "Prima di Natale la domanda aumenta ovunque."
     ],
     "ja": [
       "今、需要が高いです。",
@@ -883,6 +1155,83 @@
       "需要が高いため、Tシャツは売り切れです。",
       "クリスマス前はどこでも需要が高まります。"
     ],
-    "word_POS": "Noun"
+    "ko": [
+      "지금 수요가 많아요.",
+      "오늘은 수요가 많아요.",
+      "수요가 많아서 티셔츠가 품절됐어요.",
+      "크리스마스 전에 수요가 곳곳에서 늘어요."
+    ],
+    "nb": [
+      "Etterspørselen er høy nå.",
+      "I dag er det stor etterspørsel.",
+      "På grunn av høy etterspørsel er T-skjortene utsolgt.",
+      "Før jul øker etterspørselen overalt."
+    ],
+    "nl": [
+      "Er is nu veel vraag.",
+      "Vandaag is er veel vraag.",
+      "Door de hoge vraag zijn de T-shirts uitverkocht.",
+      "Voor Kerst stijgt de vraag overal."
+    ],
+    "pl": [
+      "Teraz jest duży popyt.",
+      "Dziś jest duży popyt.",
+      "Z powodu dużego popytu koszulki są wyprzedane.",
+      "Przed Bożym Narodzeniem popyt rośnie wszędzie."
+    ],
+    "pt": [
+      "Agora a procura está alta.",
+      "Hoje há muita procura.",
+      "Devido à alta procura, as camisetas estão esgotadas.",
+      "Antes do Natal, a procura aumenta por toda parte."
+    ],
+    "ro": [
+      "Cererea este mare acum.",
+      "Astăzi cererea este mare.",
+      "Din cauza cererii mari, tricourile sunt epuizate.",
+      "Înainte de Crăciun, cererea crește peste tot."
+    ],
+    "ru": [
+      "Сейчас высокий спрос.",
+      "Сегодня большой спрос.",
+      "Из-за высокого спроса футболки распроданы.",
+      "Перед Рождеством спрос растет повсюду."
+    ],
+    "sv": [
+      "Efterfrågan är hög just nu.",
+      "Det är stor efterfrågan i dag.",
+      "På grund av hög efterfrågan är T-tröjorna slut.",
+      "Inför jul ökar efterfrågan överallt."
+    ],
+    "tr": [
+      "Şu anda talep yüksek.",
+      "Bugün talep yüksek.",
+      "Yüksek talep nedeniyle tişörtler tükendi.",
+      "Noel öncesinde her yerde talep artıyor."
+    ],
+    "uk": [
+      "Зараз високий попит.",
+      "Сьогодні великий попит.",
+      "Через високий попит футболки розпродані.",
+      "Перед Різдвом попит зростає всюди."
+    ],
+    "vi": [
+      "Hiện tại nhu cầu rất cao.",
+      "Hôm nay nhu cầu rất cao.",
+      "Do nhu cầu cao nên áo thun đã bán hết.",
+      "Trước Giáng Sinh, nhu cầu tăng khắp nơi."
+    ],
+    "yue": [
+      "而家需求好大。",
+      "今日需求好大。",
+      "因為需求好高，T恤已經賣晒。",
+      "聖誕節前，周圍嘅需求都會上升。"
+    ],
+    "zh-Hans": [
+      "现在需求很高。",
+      "今天需求很大。",
+      "由于需求旺盛，T恤已售罄。",
+      "圣诞节前，需求到处都在上涨。"
+    ]
   }
 }

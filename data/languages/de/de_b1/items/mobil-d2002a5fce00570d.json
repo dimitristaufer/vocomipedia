@@ -137,10 +137,10 @@
       "difficulty": 5
     },
     {
-      "target": "Er ist wieder mobil nach der Operation.",
+      "target": "Nach der Operation ist er wieder mobil.",
       "reading": "/eːɐ̯ ɪst ˈviːdɐ moˈbiːl naːx deːɐ̯ ɔpəʁaˈtsioːn/",
       "translations": {
-        "de": "Er ist wieder mobil nach der Operation.",
+        "de": "Nach der Operation ist er wieder mobil.",
         "ipa": "/eːɐ̯ ɪst ˈviːdɐ moˈbiːl naːx deːɐ̯ ɔpəʁaˈtsioːn/",
         "en": "He's mobile again after the operation.",
         "es": "Después de la operación, ya puede moverse otra vez.",
@@ -172,68 +172,93 @@
       },
       "tokens": [
         {
-          "surface": "Er",
-          "surface_en": "he",
-          "furigana": "[eːɐ̯]",
-          "pos": "PRON",
-          "lemma": "er",
-          "explanation": "Personal pronoun, 3rd person singular nominative; subject of the clause.",
-          "difficulty": 2
-        },
-        {
-          "surface": "ist",
-          "surface_en": "is",
-          "furigana": "[ɪst]",
-          "pos": "AUX",
-          "lemma": "sein",
-          "explanation": "Finite auxiliary 'sein' (3rd sg, present); copula linking subject and predicate adjective.",
-          "difficulty": 4
-        },
-        {
-          "surface": "wieder",
-          "surface_en": "again",
-          "furigana": "[ˈviːdɐ]",
-          "pos": "ADV",
-          "lemma": "wieder",
-          "explanation": "Adverb of repetition; modifies the predicate, indicating a return to a prior state.",
-          "difficulty": 7
-        },
-        {
-          "surface": "mobil",
-          "surface_en": "mobile",
-          "furigana": "[moˈbiːl]",
-          "pos": "ADJ",
-          "lemma": "mobil",
-          "explanation": "Predicate adjective (subject complement) after the copula 'ist'.",
-          "difficulty": 7,
-          "is_main_word": true
-        },
-        {
-          "surface": "nach",
-          "surface_en": "after",
-          "furigana": "[naːx]",
-          "pos": "ADP",
+          "surface": "Nach",
           "lemma": "nach",
-          "explanation": "Preposition governing dative; introduces a temporal PP.",
-          "difficulty": 2
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "APPR",
+          "feats": {},
+          "start": 0,
+          "end": 4,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "der",
-          "surface_en": "the",
-          "furigana": "[deːɐ̯]",
-          "pos": "DET",
           "lemma": "der",
-          "explanation": "Definite article, dative singular feminine; determiner of 'Operation' after 'nach'.",
-          "difficulty": 2
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "ART",
+          "feats": {},
+          "start": 5,
+          "end": 8,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "Operation.",
-          "surface_en": "surgery",
-          "furigana": "[ɔpeʁaˈtsi̯oːn]",
-          "pos": "NOUN",
+          "surface": "Operation",
           "lemma": "Operation",
-          "explanation": "Common noun, feminine, dative singular; object of the preposition 'nach'.",
-          "difficulty": 10
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 9,
+          "end": 18,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "ist",
+          "lemma": "sein",
+          "pos": "AUX",
+          "upos": "AUX",
+          "xpos": "VAFIN",
+          "feats": {},
+          "start": 19,
+          "end": 22,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "er",
+          "lemma": "er",
+          "pos": "PRON",
+          "upos": "PRON",
+          "xpos": "PPER",
+          "feats": {},
+          "start": 23,
+          "end": 25,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "wieder",
+          "lemma": "wieder",
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "ADV",
+          "feats": {},
+          "start": 26,
+          "end": 32,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "mobil",
+          "lemma": "mobil",
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "ADJD",
+          "feats": {},
+          "start": 33,
+          "end": 38,
+          "analyzer": "spacy_de_core_news_lg",
+          "is_main_word": true
+        },
+        {
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 38,
+          "end": 39,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 4.86
@@ -244,7 +269,7 @@
       "translations": {
         "de": "Ich arbeite mobil im Zug.",
         "ipa": "/ɪç ˈaʁbaɪ̯tə moˈbiːl ɪm tsuːk/",
-        "en": "I work on the go on the train.",
+        "en": "I work on the go while traveling by train.",
         "es": "Trabajo mientras voy en tren.",
         "fr": "Je travaille dans le train.",
         "it": "Lavoro in treno.",
@@ -427,8 +452,314 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-15T02:06:38Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:De b1/d2002a5fce00570d",
+      "revision_id": 85218,
+      "parent_revision_id": 17034,
+      "revision_timestamp_utc": "2026-10-15T02:06:38Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Improve the German word order and make the English mobile-work sentence more natural.",
+      "pulled_utc": "2026-10-17T07:06:43Z",
+      "applied_utc": "2026-10-17T07:06:53Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-d4334edf84a5033e",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_b1:d2002a5fce00570d",
+        "pack_code": "de_b1",
+        "entry_id": "mobil",
+        "language": "de",
+        "sentence_index": 2,
+        "old_sentence": "Er ist wieder mobil nach der Operation.",
+        "old_translations": {
+          "de": "Er ist wieder mobil nach der Operation.",
+          "ipa": "/eːɐ̯ ɪst ˈviːdɐ moˈbiːl naːx deːɐ̯ ɔpəʁaˈtsioːn/",
+          "en": "He's mobile again after the operation.",
+          "es": "Después de la operación, ya puede moverse otra vez.",
+          "fr": "Après l'opération, il peut à nouveau se déplacer.",
+          "it": "Dopo l'operazione, può di nuovo muoversi.",
+          "ko": "수술 후 다시 움직일 수 있어요.",
+          "zh-Hans": "手术后他又能活动了。",
+          "yue": "做完手術之後佢又可以走動啦。",
+          "ru": "После операции он снова может двигаться.",
+          "pt": "Depois da cirurgia, ele voltou a se movimentar.",
+          "he": "אחרי הניתוח הוא שוב יכול לזוז.",
+          "tr": "Ameliyattan sonra tekrar hareket edebiliyor.",
+          "vi": "Sau ca phẫu thuật, anh ấy lại có thể đi lại.",
+          "ar": "بعد العملية أصبح يستطيع الحركة مرة أخرى.",
+          "nl": "Na de operatie kan hij zich weer bewegen.",
+          "uk": "Після операції він знову може рухатися.",
+          "hu": "A műtét után újra tud mozogni.",
+          "hi": "ऑपरेशन के बाद वह फिर से चल-फिर सकता है।",
+          "pl": "Po operacji znów może się poruszać.",
+          "el": "Μετά την επέμβαση μπορεί ξανά να κινηθεί.",
+          "nb": "Etter operasjonen kan han bevege seg igjen.",
+          "id": "Setelah operasi, dia bisa bergerak lagi.",
+          "sv": "Efter operationen kan han röra sig igen.",
+          "ro": "După operație, el poate din nou să se miște.",
+          "cs": "Po operaci se zase může pohybovat.",
+          "da": "Efter operationen kan han bevæge sig igen.",
+          "fi": "Leikkauksen jälkeen hän voi taas liikkua.",
+          "ja": "手術後、彼はまた動けるようになった。"
+        },
+        "proposed_sentence": "Nach der Operation ist er wieder mobil.",
+        "proposed_translations": {
+          "de": "Nach der Operation ist er wieder mobil.",
+          "ipa": "/eːɐ̯ ɪst ˈviːdɐ moˈbiːl naːx deːɐ̯ ɔpəʁaˈtsioːn/",
+          "en": "He's mobile again after the operation.",
+          "es": "Después de la operación, ya puede moverse otra vez.",
+          "fr": "Après l'opération, il peut à nouveau se déplacer.",
+          "it": "Dopo l'operazione, può di nuovo muoversi.",
+          "ko": "수술 후 다시 움직일 수 있어요.",
+          "zh-Hans": "手术后他又能活动了。",
+          "yue": "做完手術之後佢又可以走動啦。",
+          "ru": "После операции он снова может двигаться.",
+          "pt": "Depois da cirurgia, ele voltou a se movimentar.",
+          "he": "אחרי הניתוח הוא שוב יכול לזוז.",
+          "tr": "Ameliyattan sonra tekrar hareket edebiliyor.",
+          "vi": "Sau ca phẫu thuật, anh ấy lại có thể đi lại.",
+          "ar": "بعد العملية أصبح يستطيع الحركة مرة أخرى.",
+          "nl": "Na de operatie kan hij zich weer bewegen.",
+          "uk": "Після операції він знову може рухатися.",
+          "hu": "A műtét után újra tud mozogni.",
+          "hi": "ऑपरेशन के बाद वह फिर से चल-फिर सकता है।",
+          "pl": "Po operacji znów może się poruszać.",
+          "el": "Μετά την επέμβαση μπορεί ξανά να κινηθεί.",
+          "nb": "Etter operasjonen kan han bevege seg igjen.",
+          "id": "Setelah operasi, dia bisa bergerak lagi.",
+          "sv": "Efter operationen kan han röra sig igen.",
+          "ro": "După operație, el poate din nou să se miște.",
+          "cs": "Po operaci se zase může pohybovat.",
+          "da": "Efter operationen kan han bevæge sig igen.",
+          "fi": "Leikkauksen jälkeen hän voi taas liikkua.",
+          "ja": "手術後、彼はまた動けるようになった。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Nach der Operation ist er wieder mobil.",
+        "old_japanese": "Er ist wieder mobil nach der Operation.",
+        "old_english": "He's mobile again after the operation.",
+        "proposed_japanese": "Nach der Operation ist er wieder mobil.",
+        "proposed_english": "He's mobile again after the operation.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Nach der Operation ist er wieder mobil.",
+          "tokens": [
+            {
+              "surface": "Nach",
+              "lemma": "nach",
+              "pos": "ADP",
+              "upos": "ADP",
+              "xpos": "APPR",
+              "feats": {},
+              "start": 0,
+              "end": 4,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "der",
+              "lemma": "der",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "ART",
+              "feats": {},
+              "start": 5,
+              "end": 8,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Operation",
+              "lemma": "Operation",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 9,
+              "end": 18,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "ist",
+              "lemma": "sein",
+              "pos": "AUX",
+              "upos": "AUX",
+              "xpos": "VAFIN",
+              "feats": {},
+              "start": 19,
+              "end": 22,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "er",
+              "lemma": "er",
+              "pos": "PRON",
+              "upos": "PRON",
+              "xpos": "PPER",
+              "feats": {},
+              "start": 23,
+              "end": 25,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "wieder",
+              "lemma": "wieder",
+              "pos": "ADV",
+              "upos": "ADV",
+              "xpos": "ADV",
+              "feats": {},
+              "start": 26,
+              "end": 32,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "mobil",
+              "lemma": "mobil",
+              "pos": "ADV",
+              "upos": "ADV",
+              "xpos": "ADJD",
+              "feats": {},
+              "start": 33,
+              "end": 38,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 38,
+              "end": 39,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Nach",
+            "lemma": "nach",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 0,
+            "end": 4,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "der",
+            "lemma": "der",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 5,
+            "end": 8,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Operation",
+            "lemma": "Operation",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 9,
+            "end": 18,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "ist",
+            "lemma": "sein",
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "VAFIN",
+            "feats": {},
+            "start": 19,
+            "end": 22,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "er",
+            "lemma": "er",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 23,
+            "end": 25,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "wieder",
+            "lemma": "wieder",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 26,
+            "end": 32,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "mobil",
+            "lemma": "mobil",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADJD",
+            "feats": {},
+            "start": 33,
+            "end": 38,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 38,
+            "end": 39,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:06:43Z",
+        "updated_utc": "2026-10-17T07:07:06Z",
+        "applied_utc": "2026-10-17T07:07:06Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:07:06Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -440,34 +771,6 @@
     "word": "mobil",
     "word_reading": "",
     "word_label": "Adjektiv",
-    "word_en": "mobile; able to get around",
-    "word_es": "móvil; portátil",
-    "word_fr": "mobile; portable",
-    "word_it": "mobile; portatile",
-    "word_ko": "이동식; 휴대용",
-    "word_zh-Hans": "移动的; 便携的",
-    "word_yue": "移動嘅; 便攜嘅",
-    "word_ru": "мобильный; переносной",
-    "word_pt": "móvel; portátil",
-    "word_he": "נייד; נישא",
-    "word_tr": "hareketli; taşınabilir",
-    "word_vi": "di động; xách tay",
-    "word_ar": "متحرك; محمول",
-    "word_nl": "mobiel; draagbaar",
-    "word_uk": "мобільний; переносний",
-    "word_hu": "mozgatható; hordozható",
-    "word_hi": "चलायमान; पोर्टेबल",
-    "word_pl": "mobilny; przenośny",
-    "word_el": "κινητός; φορητός",
-    "word_nb": "mobil; bærbar",
-    "word_id": "bergerak; portabel",
-    "word_sv": "mobil; bärbar",
-    "word_ro": "mobil; portabil",
-    "word_cs": "mobilní; přenosný",
-    "word_da": "mobil; bærbar",
-    "word_fi": "liikkuva; kannettava",
-    "word_ja": "移動可能な; 携帯型",
-    "word_de": "mobil",
     "comic_difficulty": 5.26,
     "jp": [
       "Ich bleibe mit dem Fahrrad mobil.",
@@ -480,24 +783,6 @@
       "/eːɐ̯ ɪst ˈviːdɐ moˈbiːl naːx deːɐ̯ ɔpəʁaˈtsioːn/",
       "/ɪç ˈaʁbaɪ̯tə moˈbiːl ɪm tsuːk/",
       "/ˈoːnə ˈaʊ̯toː zɪnt viːɐ̯ nɪçt moˈbiːl/"
-    ],
-    "de": [
-      "Ich bleibe mit dem Fahrrad mobil.",
-      "Er ist wieder mobil nach der Operation.",
-      "Ich arbeite mobil im Zug.",
-      "Ohne Auto sind wir nicht mobil."
-    ],
-    "ipa": [
-      "/ɪç ˈblaɪ̯bə mɪt deːm ˈfaːʁaːt moˈbiːl/",
-      "/eːɐ̯ ɪst ˈviːdɐ moˈbiːl naːx deːɐ̯ ɔpəʁaˈtsioːn/",
-      "/ɪç ˈaʁbaɪ̯tə moˈbiːl ɪm tsuːk/",
-      "/ˈoːnə ˈaʊ̯toː zɪnt viːɐ̯ nɪçt moˈbiːl/"
-    ],
-    "en": [
-      "I stay mobile with my bike.",
-      "He's mobile again after the operation.",
-      "I work on the go on the train.",
-      "Without a car, we can't get around."
     ],
     "pos_analysis": [
       {
@@ -562,71 +847,96 @@
         "difficulty_aggregated": 5
       },
       {
-        "sentence": "Er ist wieder mobil nach der Operation.",
+        "sentence": "Nach der Operation ist er wieder mobil.",
         "tokens": [
           {
-            "surface": "Er",
-            "surface_en": "he",
-            "furigana": "[eːɐ̯]",
-            "pos": "PRON",
-            "lemma": "er",
-            "explanation": "Personal pronoun, 3rd person singular nominative; subject of the clause.",
-            "difficulty": 2
-          },
-          {
-            "surface": "ist",
-            "surface_en": "is",
-            "furigana": "[ɪst]",
-            "pos": "AUX",
-            "lemma": "sein",
-            "explanation": "Finite auxiliary 'sein' (3rd sg, present); copula linking subject and predicate adjective.",
-            "difficulty": 4
-          },
-          {
-            "surface": "wieder",
-            "surface_en": "again",
-            "furigana": "[ˈviːdɐ]",
-            "pos": "ADV",
-            "lemma": "wieder",
-            "explanation": "Adverb of repetition; modifies the predicate, indicating a return to a prior state.",
-            "difficulty": 7
-          },
-          {
-            "surface": "mobil",
-            "surface_en": "mobile",
-            "furigana": "[moˈbiːl]",
-            "pos": "ADJ",
-            "lemma": "mobil",
-            "explanation": "Predicate adjective (subject complement) after the copula 'ist'.",
-            "difficulty": 7,
-            "is_main_word": true
-          },
-          {
-            "surface": "nach",
-            "surface_en": "after",
-            "furigana": "[naːx]",
-            "pos": "ADP",
+            "surface": "Nach",
             "lemma": "nach",
-            "explanation": "Preposition governing dative; introduces a temporal PP.",
-            "difficulty": 2
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 0,
+            "end": 4,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "der",
-            "surface_en": "the",
-            "furigana": "[deːɐ̯]",
-            "pos": "DET",
             "lemma": "der",
-            "explanation": "Definite article, dative singular feminine; determiner of 'Operation' after 'nach'.",
-            "difficulty": 2
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 5,
+            "end": 8,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "Operation.",
-            "surface_en": "surgery",
-            "furigana": "[ɔpeʁaˈtsi̯oːn]",
-            "pos": "NOUN",
+            "surface": "Operation",
             "lemma": "Operation",
-            "explanation": "Common noun, feminine, dative singular; object of the preposition 'nach'.",
-            "difficulty": 10
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 9,
+            "end": 18,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "ist",
+            "lemma": "sein",
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "VAFIN",
+            "feats": {},
+            "start": 19,
+            "end": 22,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "er",
+            "lemma": "er",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 23,
+            "end": 25,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "wieder",
+            "lemma": "wieder",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 26,
+            "end": 32,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "mobil",
+            "lemma": "mobil",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADJD",
+            "feats": {},
+            "start": 33,
+            "end": 38,
+            "analyzer": "spacy_de_core_news_lg",
+            "is_main_word": true
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 38,
+            "end": 39,
+            "analyzer": "spacy_de_core_news_lg"
           }
         ],
         "difficulty_aggregated": 4.86
@@ -745,137 +1055,41 @@
         "difficulty_aggregated": 6.17
       }
     ],
-    "es": [
-      "Me desplazo en bicicleta.",
-      "Después de la operación, ya puede moverse otra vez.",
-      "Trabajo mientras voy en tren.",
-      "Sin coche, no podemos movernos."
-    ],
-    "fr": [
-      "Je me déplace à vélo.",
-      "Après l'opération, il peut à nouveau se déplacer.",
-      "Je travaille dans le train.",
-      "Sans voiture, on ne peut pas se déplacer."
-    ],
-    "it": [
-      "Mi sposto in bici.",
-      "Dopo l'operazione, può di nuovo muoversi.",
-      "Lavoro in treno.",
-      "Senza auto non riusciamo a muoverci."
-    ],
-    "ko": [
-      "자전거로 다녀요.",
-      "수술 후 다시 움직일 수 있어요.",
-      "기차에서 일해요.",
-      "차가 없으면 우리는 이동할 수 없어요."
-    ],
-    "zh-Hans": [
-      "我骑自行车出行。",
-      "手术后他又能活动了。",
-      "我在火车上工作。",
-      "没有车我们就不方便出行。"
-    ],
-    "yue": [
-      "我用單車代步。",
-      "做完手術之後佢又可以走動啦。",
-      "我喺火車上做嘢。",
-      "冇車我哋就唔方便出入。"
-    ],
-    "ru": [
-      "Я передвигаюсь на велосипеде.",
-      "После операции он снова может двигаться.",
-      "Я работаю в поезде.",
-      "Без машины мы никуда не доберёмся."
-    ],
-    "pt": [
-      "Eu me desloco de bicicleta.",
-      "Depois da cirurgia, ele voltou a se movimentar.",
-      "Eu trabalho no trem.",
-      "Sem carro, não conseguimos nos deslocar."
-    ],
-    "he": [
-      "אני מתנייד באופניים.",
-      "אחרי הניתוח הוא שוב יכול לזוז.",
-      "אני עובד ברכבת.",
-      "בלי רכב אנחנו לא יכולים להתנייד."
-    ],
-    "tr": [
-      "Bisikletle gidip geliyorum.",
-      "Ameliyattan sonra tekrar hareket edebiliyor.",
-      "Trende çalışıyorum.",
-      "Araba olmadan bir yere gidemiyoruz."
-    ],
-    "vi": [
-      "Tôi đi lại bằng xe đạp.",
-      "Sau ca phẫu thuật, anh ấy lại có thể đi lại.",
-      "Tôi làm việc trên tàu.",
-      "Không có ô tô, chúng tôi không đi lại được."
-    ],
+    "word_POS": "Adjective",
+    "entry_id": "mobil",
+    "word_en": "mobile; able to get around",
+    "word_es": "móvil; portátil",
+    "word_fr": "mobile; portable",
+    "word_it": "mobile; portatile",
+    "word_ko": "이동식; 휴대용",
+    "word_zh-Hans": "移动的; 便携的",
+    "word_yue": "移動嘅; 便攜嘅",
+    "word_ru": "мобильный; переносной",
+    "word_pt": "móvel; portátil",
+    "word_he": "נייד; נישא",
+    "word_tr": "hareketli; taşınabilir",
+    "word_vi": "di động; xách tay",
+    "word_ar": "متحرك; محمول",
+    "word_nl": "mobiel; draagbaar",
+    "word_uk": "мобільний; переносний",
+    "word_hu": "mozgatható; hordozható",
+    "word_hi": "चलायमान; पोर्टेबल",
+    "word_pl": "mobilny; przenośny",
+    "word_el": "κινητός; φορητός",
+    "word_nb": "mobil; bærbar",
+    "word_id": "bergerak; portabel",
+    "word_sv": "mobil; bärbar",
+    "word_ro": "mobil; portabil",
+    "word_cs": "mobilní; přenosný",
+    "word_da": "mobil; bærbar",
+    "word_fi": "liikkuva; kannettava",
+    "word_ja": "移動可能な; 携帯型",
+    "word_de": "mobil",
     "ar": [
       "أتنقّل بالدراجة.",
       "بعد العملية أصبح يستطيع الحركة مرة أخرى.",
       "أعمل في القطار.",
       "بدون سيارة لا نستطيع التحرك."
-    ],
-    "nl": [
-      "Ik verplaats me met de fiets.",
-      "Na de operatie kan hij zich weer bewegen.",
-      "Ik werk in de trein.",
-      "Zonder auto kunnen we ons niet verplaatsen."
-    ],
-    "uk": [
-      "Я пересуваюся на велосипеді.",
-      "Після операції він знову може рухатися.",
-      "Я працюю в поїзді.",
-      "Без машини ми не можемо пересуватися."
-    ],
-    "hu": [
-      "Kerékpárral közlekedem.",
-      "A műtét után újra tud mozogni.",
-      "Vonaton dolgozom.",
-      "Autó nélkül nem tudunk közlekedni."
-    ],
-    "hi": [
-      "मैं साइकिल से आता-जाता हूँ।",
-      "ऑपरेशन के बाद वह फिर से चल-फिर सकता है।",
-      "मैं ट्रेन में काम करता हूँ।",
-      "गाड़ी के बिना हम कहीं जा नहीं सकते।"
-    ],
-    "pl": [
-      "Poruszam się na rowerze.",
-      "Po operacji znów może się poruszać.",
-      "Pracuję w pociągu.",
-      "Bez samochodu nie możemy się przemieszczać."
-    ],
-    "el": [
-      "Μετακινούμαι με ποδήλατο.",
-      "Μετά την επέμβαση μπορεί ξανά να κινηθεί.",
-      "Δουλεύω στο τρένο.",
-      "Χωρίς αυτοκίνητο δεν μπορούμε να μετακινηθούμε."
-    ],
-    "nb": [
-      "Jeg kommer meg rundt med sykkel.",
-      "Etter operasjonen kan han bevege seg igjen.",
-      "Jeg jobber på toget.",
-      "Uten bil kommer vi oss ikke rundt."
-    ],
-    "id": [
-      "Saya bepergian dengan sepeda.",
-      "Setelah operasi, dia bisa bergerak lagi.",
-      "Saya bekerja di kereta.",
-      "Tanpa mobil, kami tidak bisa ke mana-mana."
-    ],
-    "sv": [
-      "Jag tar mig fram med cykel.",
-      "Efter operationen kan han röra sig igen.",
-      "Jag jobbar på tåget.",
-      "Utan bil kan vi inte ta oss runt."
-    ],
-    "ro": [
-      "Mă deplasez cu bicicleta.",
-      "După operație, el poate din nou să se miște.",
-      "Lucrez în tren.",
-      "Fără mașină nu putem să ne deplasăm."
     ],
     "cs": [
       "Jezdím na kole.",
@@ -889,11 +1103,77 @@
       "Jeg arbejder i toget.",
       "Uden bil kan vi ikke komme rundt."
     ],
+    "de": [
+      "Ich bleibe mit dem Fahrrad mobil.",
+      "Er ist wieder mobil nach der Operation.",
+      "Ich arbeite mobil im Zug.",
+      "Ohne Auto sind wir nicht mobil."
+    ],
+    "el": [
+      "Μετακινούμαι με ποδήλατο.",
+      "Μετά την επέμβαση μπορεί ξανά να κινηθεί.",
+      "Δουλεύω στο τρένο.",
+      "Χωρίς αυτοκίνητο δεν μπορούμε να μετακινηθούμε."
+    ],
+    "en": [
+      "I stay mobile with my bike.",
+      "He's mobile again after the operation.",
+      "I work on the go while traveling by train.",
+      "Without a car, we can't get around."
+    ],
+    "es": [
+      "Me desplazo en bicicleta.",
+      "Después de la operación, ya puede moverse otra vez.",
+      "Trabajo mientras voy en tren.",
+      "Sin coche, no podemos movernos."
+    ],
     "fi": [
       "Kuljen pyörällä.",
       "Leikkauksen jälkeen hän voi taas liikkua.",
       "Teen töitä junassa.",
       "Ilman autoa emme pääse liikkumaan."
+    ],
+    "fr": [
+      "Je me déplace à vélo.",
+      "Après l'opération, il peut à nouveau se déplacer.",
+      "Je travaille dans le train.",
+      "Sans voiture, on ne peut pas se déplacer."
+    ],
+    "he": [
+      "אני מתנייד באופניים.",
+      "אחרי הניתוח הוא שוב יכול לזוז.",
+      "אני עובד ברכבת.",
+      "בלי רכב אנחנו לא יכולים להתנייד."
+    ],
+    "hi": [
+      "मैं साइकिल से आता-जाता हूँ।",
+      "ऑपरेशन के बाद वह फिर से चल-फिर सकता है।",
+      "मैं ट्रेन में काम करता हूँ।",
+      "गाड़ी के बिना हम कहीं जा नहीं सकते।"
+    ],
+    "hu": [
+      "Kerékpárral közlekedem.",
+      "A műtét után újra tud mozogni.",
+      "Vonaton dolgozom.",
+      "Autó nélkül nem tudunk közlekedni."
+    ],
+    "id": [
+      "Saya bepergian dengan sepeda.",
+      "Setelah operasi, dia bisa bergerak lagi.",
+      "Saya bekerja di kereta.",
+      "Tanpa mobil, kami tidak bisa ke mana-mana."
+    ],
+    "ipa": [
+      "/ɪç ˈblaɪ̯bə mɪt deːm ˈfaːʁaːt moˈbiːl/",
+      "/eːɐ̯ ɪst ˈviːdɐ moˈbiːl naːx deːɐ̯ ɔpəʁaˈtsioːn/",
+      "/ɪç ˈaʁbaɪ̯tə moˈbiːl ɪm tsuːk/",
+      "/ˈoːnə ˈaʊ̯toː zɪnt viːɐ̯ nɪçt moˈbiːl/"
+    ],
+    "it": [
+      "Mi sposto in bici.",
+      "Dopo l'operazione, può di nuovo muoversi.",
+      "Lavoro in treno.",
+      "Senza auto non riusciamo a muoverci."
     ],
     "ja": [
       "自転車で移動しています。",
@@ -901,6 +1181,83 @@
       "電車で仕事をしています。",
       "車がないと、私たちは移動できません。"
     ],
-    "word_POS": "Adjective"
+    "ko": [
+      "자전거로 다녀요.",
+      "수술 후 다시 움직일 수 있어요.",
+      "기차에서 일해요.",
+      "차가 없으면 우리는 이동할 수 없어요."
+    ],
+    "nb": [
+      "Jeg kommer meg rundt med sykkel.",
+      "Etter operasjonen kan han bevege seg igjen.",
+      "Jeg jobber på toget.",
+      "Uten bil kommer vi oss ikke rundt."
+    ],
+    "nl": [
+      "Ik verplaats me met de fiets.",
+      "Na de operatie kan hij zich weer bewegen.",
+      "Ik werk in de trein.",
+      "Zonder auto kunnen we ons niet verplaatsen."
+    ],
+    "pl": [
+      "Poruszam się na rowerze.",
+      "Po operacji znów może się poruszać.",
+      "Pracuję w pociągu.",
+      "Bez samochodu nie możemy się przemieszczać."
+    ],
+    "pt": [
+      "Eu me desloco de bicicleta.",
+      "Depois da cirurgia, ele voltou a se movimentar.",
+      "Eu trabalho no trem.",
+      "Sem carro, não conseguimos nos deslocar."
+    ],
+    "ro": [
+      "Mă deplasez cu bicicleta.",
+      "După operație, el poate din nou să se miște.",
+      "Lucrez în tren.",
+      "Fără mașină nu putem să ne deplasăm."
+    ],
+    "ru": [
+      "Я передвигаюсь на велосипеде.",
+      "После операции он снова может двигаться.",
+      "Я работаю в поезде.",
+      "Без машины мы никуда не доберёмся."
+    ],
+    "sv": [
+      "Jag tar mig fram med cykel.",
+      "Efter operationen kan han röra sig igen.",
+      "Jag jobbar på tåget.",
+      "Utan bil kan vi inte ta oss runt."
+    ],
+    "tr": [
+      "Bisikletle gidip geliyorum.",
+      "Ameliyattan sonra tekrar hareket edebiliyor.",
+      "Trende çalışıyorum.",
+      "Araba olmadan bir yere gidemiyoruz."
+    ],
+    "uk": [
+      "Я пересуваюся на велосипеді.",
+      "Після операції він знову може рухатися.",
+      "Я працюю в поїзді.",
+      "Без машини ми не можемо пересуватися."
+    ],
+    "vi": [
+      "Tôi đi lại bằng xe đạp.",
+      "Sau ca phẫu thuật, anh ấy lại có thể đi lại.",
+      "Tôi làm việc trên tàu.",
+      "Không có ô tô, chúng tôi không đi lại được."
+    ],
+    "yue": [
+      "我用單車代步。",
+      "做完手術之後佢又可以走動啦。",
+      "我喺火車上做嘢。",
+      "冇車我哋就唔方便出入。"
+    ],
+    "zh-Hans": [
+      "我骑自行车出行。",
+      "手术后他又能活动了。",
+      "我在火车上工作。",
+      "没有车我们就不方便出行。"
+    ]
   }
 }

@@ -49,7 +49,7 @@
       "translations": {
         "de": "Mein Wohnsitz ist jetzt in Köln.",
         "ipa": "/maɪ̯n ˈvoːnˌzɪts ɪst jɛtst ɪn kœln/",
-        "en": "My address is now in Cologne.",
+        "en": "I now live in Cologne.",
         "es": "Ahora vivo en Colonia.",
         "fr": "J'habite maintenant à Cologne.",
         "it": "Ora vivo a Colonia.",
@@ -137,10 +137,10 @@
       "difficulty": 6.17
     },
     {
-      "target": "Wir melden den Wohnsitz heute um.",
+      "target": "Wir melden heute unseren Wohnsitz um.",
       "reading": "/viːɐ̯ ˈmɛldən deːn ˈvoːnˌzɪts ˈhɔɪ̯tə ʊm/",
       "translations": {
-        "de": "Wir melden den Wohnsitz heute um.",
+        "de": "Wir melden heute unseren Wohnsitz um.",
         "ipa": "/viːɐ̯ ˈmɛldən deːn ˈvoːnˌzɪts ˈhɔɪ̯tə ʊm/",
         "en": "We’re changing the address today.",
         "es": "Hoy cambiamos el domicilio.",
@@ -173,69 +173,90 @@
       "tokens": [
         {
           "surface": "Wir",
-          "surface_en": "we",
-          "furigana": "[viːɐ̯]",
-          "pos": "PRON",
           "lemma": "wir",
-          "explanation": "Personal pronoun, 1st person plural, subject of the clause.",
-          "difficulty": 2
+          "pos": "PRON",
+          "upos": "PRON",
+          "xpos": "PPER",
+          "feats": {},
+          "start": 0,
+          "end": 3,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "melden",
-          "surface_en": "register",
-          "furigana": "[ˈmɛldən]",
-          "pos": "VERB",
           "lemma": "melden",
-          "explanation": "Finite main verb (present, 1st person plural); here part of the separable verb 'ummelden' ('to re-register').",
-          "compound_id": "ummelden_1",
-          "difficulty": 7
-        },
-        {
-          "surface": "den",
-          "surface_en": "the",
-          "furigana": "[deːn]",
-          "pos": "DET",
-          "lemma": "der",
-          "explanation": "Definite article, accusative masculine singular, determiner of 'Wohnsitz'.",
-          "difficulty": 2
-        },
-        {
-          "surface": "Wohnsitz",
-          "surface_en": "residence",
-          "furigana": "[ˈvoːnˌzɪts]",
-          "pos": "NOUN",
-          "lemma": "Wohnsitz",
-          "explanation": "Direct object of 'melden' (accusative).",
-          "difficulty": 10,
-          "is_main_word": true
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VVFIN",
+          "feats": {},
+          "start": 4,
+          "end": 10,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "heute",
-          "surface_en": "today",
-          "furigana": "[ˈhɔʏ̯tə]",
-          "pos": "ADV",
           "lemma": "heute",
-          "explanation": "Temporal adverb indicating the time of the action.",
-          "difficulty": 7
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "ADV",
+          "feats": {},
+          "start": 11,
+          "end": 16,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "um.",
-          "surface_en": "um- (prefix)",
-          "furigana": "[ʊm]",
-          "pos": "PART",
+          "surface": "unseren",
+          "lemma": "unser",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "PPOSAT",
+          "feats": {},
+          "start": 17,
+          "end": 24,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "Wohnsitz",
+          "lemma": "Wohnsitz",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 25,
+          "end": 33,
+          "analyzer": "spacy_de_core_news_lg",
+          "is_main_word": true
+        },
+        {
+          "surface": "um",
           "lemma": "um",
-          "explanation": "Separable verbal particle completing the verb 'ummelden'; appears clause-final.",
-          "compound_id": "ummelden_1",
-          "difficulty": 4
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "PTKVZ",
+          "feats": {},
+          "start": 34,
+          "end": 36,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 36,
+          "end": 37,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 5.33
     },
     {
-      "target": "Sie fragt nach meinem Wohnsitz auf dem Formular.",
+      "target": "Auf dem Formular fragt sie nach meinem Wohnsitz.",
       "reading": "/ziː fʁaːkt naːx ˈmaɪ̯nəm ˈvoːnˌzɪts aʊ̯f deːm fɔʁmuˈlaːʁ/",
       "translations": {
-        "de": "Sie fragt nach meinem Wohnsitz auf dem Formular.",
+        "de": "Auf dem Formular fragt sie nach meinem Wohnsitz.",
         "ipa": "/ziː fʁaːkt naːx ˈmaɪ̯nəm ˈvoːnˌzɪts aʊ̯f deːm fɔʁmuˈlaːʁ/",
         "en": "She asks for my address on the form.",
         "es": "Ella pide mi dirección en el formulario.",
@@ -267,77 +288,104 @@
       },
       "tokens": [
         {
-          "surface": "Sie",
-          "surface_en": "she",
-          "furigana": "[ziː]",
-          "pos": "PRON",
-          "lemma": "sie",
-          "explanation": "Personal pronoun, 3rd person singular, subject.",
-          "difficulty": 2
-        },
-        {
-          "surface": "fragt",
-          "surface_en": "asks",
-          "furigana": "[fʁaːkt]",
-          "pos": "VERB",
-          "lemma": "fragen",
-          "explanation": "Finite main verb (present, 3rd person singular).",
-          "difficulty": 7
-        },
-        {
-          "surface": "nach",
-          "surface_en": "about",
-          "furigana": "[naːx]",
-          "pos": "ADP",
-          "lemma": "nach",
-          "explanation": "Preposition governing dative; with 'fragen' forms 'nach etwas fragen' ('ask about something').",
-          "difficulty": 2
-        },
-        {
-          "surface": "meinem",
-          "surface_en": "my",
-          "furigana": "[ˈmaɪ̯nəm]",
-          "pos": "DET",
-          "lemma": "mein",
-          "explanation": "Attributive possessive determiner, dative masculine singular, modifying 'Wohnsitz'.",
-          "difficulty": 7
-        },
-        {
-          "surface": "Wohnsitz",
-          "surface_en": "residence",
-          "furigana": "[ˈvoːnˌzɪts]",
-          "pos": "NOUN",
-          "lemma": "Wohnsitz",
-          "explanation": "Object of the preposition 'nach' (dative).",
-          "difficulty": 10,
-          "is_main_word": true
-        },
-        {
-          "surface": "auf",
-          "surface_en": "on",
-          "furigana": "[aʊ̯f]",
-          "pos": "ADP",
+          "surface": "Auf",
           "lemma": "auf",
-          "explanation": "Preposition introducing a locative PP; governs dative here.",
-          "difficulty": 2
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "APPR",
+          "feats": {},
+          "start": 0,
+          "end": 3,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "dem",
-          "surface_en": "the",
-          "furigana": "[deːm]",
-          "pos": "DET",
           "lemma": "der",
-          "explanation": "Definite article, dative neuter singular, determiner of 'Formular'.",
-          "difficulty": 2
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "ART",
+          "feats": {},
+          "start": 4,
+          "end": 7,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "Formular.",
-          "surface_en": "form",
-          "furigana": "[fɔʁmuˈlaːʁ]",
-          "pos": "NOUN",
+          "surface": "Formular",
           "lemma": "Formular",
-          "explanation": "Head noun of the PP 'auf dem Formular'.",
-          "difficulty": 10
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 8,
+          "end": 16,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "fragt",
+          "lemma": "fragen",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VVFIN",
+          "feats": {},
+          "start": 17,
+          "end": 22,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "sie",
+          "lemma": "sie",
+          "pos": "PRON",
+          "upos": "PRON",
+          "xpos": "PPER",
+          "feats": {},
+          "start": 23,
+          "end": 26,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "nach",
+          "lemma": "nach",
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "APPR",
+          "feats": {},
+          "start": 27,
+          "end": 31,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "meinem",
+          "lemma": "mein",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "PPOSAT",
+          "feats": {},
+          "start": 32,
+          "end": 38,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "Wohnsitz",
+          "lemma": "Wohnsitz",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 39,
+          "end": 47,
+          "analyzer": "spacy_de_core_news_lg",
+          "is_main_word": true
+        },
+        {
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 47,
+          "end": 48,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 5.25
@@ -456,8 +504,603 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-15T05:57:32Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:De b1/3d380f71d91de6b8",
+      "revision_id": 84794,
+      "parent_revision_id": 18526,
+      "revision_timestamp_utc": "2026-10-15T05:57:32Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Improved the German word order in the residence-registration examples and made the English rendering of Wohnsitz more natural.",
+      "pulled_utc": "2026-10-17T07:06:37Z",
+      "applied_utc": "2026-10-17T07:06:51Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-eebbf9b245b37aff",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_b1:3d380f71d91de6b8",
+        "pack_code": "de_b1",
+        "entry_id": "Wohnsitz",
+        "language": "de",
+        "sentence_index": 2,
+        "old_sentence": "Wir melden den Wohnsitz heute um.",
+        "old_translations": {
+          "de": "Wir melden den Wohnsitz heute um.",
+          "ipa": "/viːɐ̯ ˈmɛldən deːn ˈvoːnˌzɪts ˈhɔɪ̯tə ʊm/",
+          "en": "We’re changing the address today.",
+          "es": "Hoy cambiamos el domicilio.",
+          "fr": "On change l'adresse aujourd'hui.",
+          "it": "Oggi cambiamo l'indirizzo.",
+          "ko": "오늘 주소를 변경해요.",
+          "zh-Hans": "我们今天办理地址变更。",
+          "yue": "我哋今日改地址。",
+          "ru": "Мы сегодня меняем адрес.",
+          "pt": "Hoje vamos mudar o endereço.",
+          "he": "אנחנו משנים את הכתובת היום.",
+          "tr": "Bugün adresi değiştiriyoruz.",
+          "vi": "Hôm nay chúng tôi đổi địa chỉ.",
+          "ar": "نحن نغير العنوان اليوم.",
+          "nl": "We veranderen vandaag ons adres.",
+          "uk": "Сьогодні ми змінюємо адресу.",
+          "hu": "Ma megváltoztatjuk a címet.",
+          "hi": "आज हम पता बदल रहे हैं।",
+          "pl": "Dziś zmieniamy adres.",
+          "el": "Σήμερα αλλάζουμε τη διεύθυνση.",
+          "nb": "Vi endrer adressen i dag.",
+          "id": "Hari ini kami mengganti alamat.",
+          "sv": "Vi byter adress i dag.",
+          "ro": "Astăzi schimbăm adresa.",
+          "cs": "Dnes měníme adresu.",
+          "da": "Vi ændrer adressen i dag.",
+          "fi": "Tänään vaihdamme osoitteen.",
+          "ja": "今日は住所を変更します。"
+        },
+        "proposed_sentence": "Wir melden heute unseren Wohnsitz um.",
+        "proposed_translations": {
+          "de": "Wir melden heute unseren Wohnsitz um.",
+          "ipa": "/viːɐ̯ ˈmɛldən deːn ˈvoːnˌzɪts ˈhɔɪ̯tə ʊm/",
+          "en": "We’re changing the address today.",
+          "es": "Hoy cambiamos el domicilio.",
+          "fr": "On change l'adresse aujourd'hui.",
+          "it": "Oggi cambiamo l'indirizzo.",
+          "ko": "오늘 주소를 변경해요.",
+          "zh-Hans": "我们今天办理地址变更。",
+          "yue": "我哋今日改地址。",
+          "ru": "Мы сегодня меняем адрес.",
+          "pt": "Hoje vamos mudar o endereço.",
+          "he": "אנחנו משנים את הכתובת היום.",
+          "tr": "Bugün adresi değiştiriyoruz.",
+          "vi": "Hôm nay chúng tôi đổi địa chỉ.",
+          "ar": "نحن نغير العنوان اليوم.",
+          "nl": "We veranderen vandaag ons adres.",
+          "uk": "Сьогодні ми змінюємо адресу.",
+          "hu": "Ma megváltoztatjuk a címet.",
+          "hi": "आज हम पता बदल रहे हैं।",
+          "pl": "Dziś zmieniamy adres.",
+          "el": "Σήμερα αλλάζουμε τη διεύθυνση.",
+          "nb": "Vi endrer adressen i dag.",
+          "id": "Hari ini kami mengganti alamat.",
+          "sv": "Vi byter adress i dag.",
+          "ro": "Astăzi schimbăm adresa.",
+          "cs": "Dnes měníme adresu.",
+          "da": "Vi ændrer adressen i dag.",
+          "fi": "Tänään vaihdamme osoitteen.",
+          "ja": "今日は住所を変更します。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Wir melden heute unseren Wohnsitz um.",
+        "old_japanese": "Wir melden den Wohnsitz heute um.",
+        "old_english": "We’re changing the address today.",
+        "proposed_japanese": "Wir melden heute unseren Wohnsitz um.",
+        "proposed_english": "We’re changing the address today.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Wir melden heute unseren Wohnsitz um.",
+          "tokens": [
+            {
+              "surface": "Wir",
+              "lemma": "wir",
+              "pos": "PRON",
+              "upos": "PRON",
+              "xpos": "PPER",
+              "feats": {},
+              "start": 0,
+              "end": 3,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "melden",
+              "lemma": "melden",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVFIN",
+              "feats": {},
+              "start": 4,
+              "end": 10,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "heute",
+              "lemma": "heute",
+              "pos": "ADV",
+              "upos": "ADV",
+              "xpos": "ADV",
+              "feats": {},
+              "start": 11,
+              "end": 16,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "unseren",
+              "lemma": "unser",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "PPOSAT",
+              "feats": {},
+              "start": 17,
+              "end": 24,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Wohnsitz",
+              "lemma": "Wohnsitz",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 25,
+              "end": 33,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "um",
+              "lemma": "um",
+              "pos": "ADP",
+              "upos": "ADP",
+              "xpos": "PTKVZ",
+              "feats": {},
+              "start": 34,
+              "end": 36,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 36,
+              "end": 37,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Wir",
+            "lemma": "wir",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "melden",
+            "lemma": "melden",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 4,
+            "end": 10,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "heute",
+            "lemma": "heute",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 11,
+            "end": 16,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "unseren",
+            "lemma": "unser",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "PPOSAT",
+            "feats": {},
+            "start": 17,
+            "end": 24,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Wohnsitz",
+            "lemma": "Wohnsitz",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 25,
+            "end": 33,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "um",
+            "lemma": "um",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "PTKVZ",
+            "feats": {},
+            "start": 34,
+            "end": 36,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 36,
+            "end": 37,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:06:37Z",
+        "updated_utc": "2026-10-17T07:07:06Z",
+        "applied_utc": "2026-10-17T07:07:06Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      },
+      {
+        "id": "sentprop-11bd18b925475272",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_b1:3d380f71d91de6b8",
+        "pack_code": "de_b1",
+        "entry_id": "Wohnsitz",
+        "language": "de",
+        "sentence_index": 3,
+        "old_sentence": "Sie fragt nach meinem Wohnsitz auf dem Formular.",
+        "old_translations": {
+          "de": "Sie fragt nach meinem Wohnsitz auf dem Formular.",
+          "ipa": "/ziː fʁaːkt naːx ˈmaɪ̯nəm ˈvoːnˌzɪts aʊ̯f deːm fɔʁmuˈlaːʁ/",
+          "en": "She asks for my address on the form.",
+          "es": "Ella pide mi dirección en el formulario.",
+          "fr": "Elle demande mon adresse sur le formulaire.",
+          "it": "Lei chiede il mio indirizzo sul modulo.",
+          "ko": "그녀는 양식에서 제 주소를 물어봐요.",
+          "zh-Hans": "她在表格上要我的地址。",
+          "yue": "佢喺表格上面要我嘅地址。",
+          "ru": "Она спрашивает мой адрес в анкете.",
+          "pt": "Ela pede meu endereço no formulário.",
+          "he": "היא מבקשת את הכתובת שלי בטופס.",
+          "tr": "Formda adresimi istiyor.",
+          "vi": "Cô ấy yêu cầu địa chỉ của tôi trên biểu mẫu.",
+          "ar": "هي تطلب عنواني في الاستمارة.",
+          "nl": "Ze vraagt om mijn adres op het formulier.",
+          "uk": "Вона просить мою адресу в анкеті.",
+          "hu": "Az űrlapon kéri a címemet.",
+          "hi": "वह फ़ॉर्म में मेरा पता माँगती है।",
+          "pl": "Ona prosi o mój adres w formularzu.",
+          "el": "Ζητά τη διεύθυνσή μου στο έντυπο.",
+          "nb": "Hun ber om adressen min på skjemaet.",
+          "id": "Dia meminta alamat saya di formulir.",
+          "sv": "Hon ber om min adress på formuläret.",
+          "ro": "Ea îmi cere adresa pe formular.",
+          "cs": "Na formuláři žádá o mou adresu.",
+          "da": "Hun beder om min adresse på formularen.",
+          "fi": "Hän pyytää osoitteeni lomakkeella.",
+          "ja": "彼女は用紙の欄で私の住所を求めています。"
+        },
+        "proposed_sentence": "Auf dem Formular fragt sie nach meinem Wohnsitz.",
+        "proposed_translations": {
+          "de": "Auf dem Formular fragt sie nach meinem Wohnsitz.",
+          "ipa": "/ziː fʁaːkt naːx ˈmaɪ̯nəm ˈvoːnˌzɪts aʊ̯f deːm fɔʁmuˈlaːʁ/",
+          "en": "She asks for my address on the form.",
+          "es": "Ella pide mi dirección en el formulario.",
+          "fr": "Elle demande mon adresse sur le formulaire.",
+          "it": "Lei chiede il mio indirizzo sul modulo.",
+          "ko": "그녀는 양식에서 제 주소를 물어봐요.",
+          "zh-Hans": "她在表格上要我的地址。",
+          "yue": "佢喺表格上面要我嘅地址。",
+          "ru": "Она спрашивает мой адрес в анкете.",
+          "pt": "Ela pede meu endereço no formulário.",
+          "he": "היא מבקשת את הכתובת שלי בטופס.",
+          "tr": "Formda adresimi istiyor.",
+          "vi": "Cô ấy yêu cầu địa chỉ của tôi trên biểu mẫu.",
+          "ar": "هي تطلب عنواني في الاستمارة.",
+          "nl": "Ze vraagt om mijn adres op het formulier.",
+          "uk": "Вона просить мою адресу в анкеті.",
+          "hu": "Az űrlapon kéri a címemet.",
+          "hi": "वह फ़ॉर्म में मेरा पता माँगती है।",
+          "pl": "Ona prosi o mój adres w formularzu.",
+          "el": "Ζητά τη διεύθυνσή μου στο έντυπο.",
+          "nb": "Hun ber om adressen min på skjemaet.",
+          "id": "Dia meminta alamat saya di formulir.",
+          "sv": "Hon ber om min adress på formuläret.",
+          "ro": "Ea îmi cere adresa pe formular.",
+          "cs": "Na formuláři žádá o mou adresu.",
+          "da": "Hun beder om min adresse på formularen.",
+          "fi": "Hän pyytää osoitteeni lomakkeella.",
+          "ja": "彼女は用紙の欄で私の住所を求めています。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Auf dem Formular fragt sie nach meinem Wohnsitz.",
+        "old_japanese": "Sie fragt nach meinem Wohnsitz auf dem Formular.",
+        "old_english": "She asks for my address on the form.",
+        "proposed_japanese": "Auf dem Formular fragt sie nach meinem Wohnsitz.",
+        "proposed_english": "She asks for my address on the form.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Auf dem Formular fragt sie nach meinem Wohnsitz.",
+          "tokens": [
+            {
+              "surface": "Auf",
+              "lemma": "auf",
+              "pos": "ADP",
+              "upos": "ADP",
+              "xpos": "APPR",
+              "feats": {},
+              "start": 0,
+              "end": 3,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "dem",
+              "lemma": "der",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "ART",
+              "feats": {},
+              "start": 4,
+              "end": 7,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Formular",
+              "lemma": "Formular",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 8,
+              "end": 16,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "fragt",
+              "lemma": "fragen",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVFIN",
+              "feats": {},
+              "start": 17,
+              "end": 22,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "sie",
+              "lemma": "sie",
+              "pos": "PRON",
+              "upos": "PRON",
+              "xpos": "PPER",
+              "feats": {},
+              "start": 23,
+              "end": 26,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "nach",
+              "lemma": "nach",
+              "pos": "ADP",
+              "upos": "ADP",
+              "xpos": "APPR",
+              "feats": {},
+              "start": 27,
+              "end": 31,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "meinem",
+              "lemma": "mein",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "PPOSAT",
+              "feats": {},
+              "start": 32,
+              "end": 38,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Wohnsitz",
+              "lemma": "Wohnsitz",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 39,
+              "end": 47,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 47,
+              "end": 48,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Auf",
+            "lemma": "auf",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "dem",
+            "lemma": "der",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 4,
+            "end": 7,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Formular",
+            "lemma": "Formular",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 8,
+            "end": 16,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "fragt",
+            "lemma": "fragen",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 17,
+            "end": 22,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "sie",
+            "lemma": "sie",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 23,
+            "end": 26,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "nach",
+            "lemma": "nach",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 27,
+            "end": 31,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "meinem",
+            "lemma": "mein",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "PPOSAT",
+            "feats": {},
+            "start": 32,
+            "end": 38,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Wohnsitz",
+            "lemma": "Wohnsitz",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 39,
+            "end": 47,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 47,
+            "end": 48,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:06:37Z",
+        "updated_utc": "2026-10-17T07:07:06Z",
+        "applied_utc": "2026-10-17T07:07:06Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:07:06Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -469,34 +1112,6 @@
     "word": "Wohnsitz",
     "word_reading": "",
     "word_label": "Substantiv (der mask.)",
-    "word_en": "residence; place of residence",
-    "word_es": "residencia; domicilio",
-    "word_fr": "résidence; domicile",
-    "word_it": "residenza; domicilio",
-    "word_ko": "거주지; 주소지",
-    "word_zh-Hans": "居住地; 住所",
-    "word_yue": "居住地; 住址",
-    "word_ru": "место жительства; постоянный адрес",
-    "word_pt": "residência; domicílio",
-    "word_he": "מקום מגורים; כתובת מגורים",
-    "word_tr": "ikamet yeri; yerleşim yeri",
-    "word_vi": "nơi cư trú; địa chỉ cư trú",
-    "word_ar": "محل الإقامة; محل السكن",
-    "word_nl": "woonplaats; domicilie",
-    "word_uk": "місце проживання; постійна адреса",
-    "word_hu": "lakóhely; lakcím",
-    "word_hi": "निवास स्थान; स्थायी पता",
-    "word_pl": "miejsce zamieszkania; stały adres",
-    "word_el": "τόπος κατοικίας; μόνιμη διεύθυνση",
-    "word_nb": "bosted; adresse",
-    "word_id": "tempat tinggal; domisili",
-    "word_sv": "bostadsort; hemadress",
-    "word_ro": "domiciliu; reședință",
-    "word_cs": "bydliště; místo pobytu",
-    "word_da": "bopæl; adresse",
-    "word_fi": "asuinpaikka; kotiosoite",
-    "word_ja": "居住地; 住所",
-    "word_de": "Wohnsitz",
     "comic_difficulty": 5.79,
     "jp": [
       "Mein Wohnsitz ist jetzt in Köln.",
@@ -509,24 +1124,6 @@
       "/viːɐ̯ ˈmɛldən deːn ˈvoːnˌzɪts ˈhɔɪ̯tə ʊm/",
       "/ziː fʁaːkt naːx ˈmaɪ̯nəm ˈvoːnˌzɪts aʊ̯f deːm fɔʁmuˈlaːʁ/",
       "/deːɐ̯ ˈvoːnˌzɪts blaɪ̯pt tʁɔts deːs ˈdʒɔpˌvɛksl̩s ɡlaɪ̯ç/"
-    ],
-    "de": [
-      "Mein Wohnsitz ist jetzt in Köln.",
-      "Wir melden den Wohnsitz heute um.",
-      "Sie fragt nach meinem Wohnsitz auf dem Formular.",
-      "Der Wohnsitz bleibt trotz des Jobwechsels gleich."
-    ],
-    "ipa": [
-      "/maɪ̯n ˈvoːnˌzɪts ɪst jɛtst ɪn kœln/",
-      "/viːɐ̯ ˈmɛldən deːn ˈvoːnˌzɪts ˈhɔɪ̯tə ʊm/",
-      "/ziː fʁaːkt naːx ˈmaɪ̯nəm ˈvoːnˌzɪts aʊ̯f deːm fɔʁmuˈlaːʁ/",
-      "/deːɐ̯ ˈvoːnˌzɪts blaɪ̯pt tʁɔts deːs ˈdʒɔpˌvɛksl̩s ɡlaɪ̯ç/"
-    ],
-    "en": [
-      "My address is now in Cologne.",
-      "We’re changing the address today.",
-      "She asks for my address on the form.",
-      "The address stays the same despite changing jobs."
     ],
     "pos_analysis": [
       {
@@ -591,143 +1188,191 @@
         "difficulty_aggregated": 6.17
       },
       {
-        "sentence": "Wir melden den Wohnsitz heute um.",
+        "sentence": "Wir melden heute unseren Wohnsitz um.",
         "tokens": [
           {
             "surface": "Wir",
-            "surface_en": "we",
-            "furigana": "[viːɐ̯]",
-            "pos": "PRON",
             "lemma": "wir",
-            "explanation": "Personal pronoun, 1st person plural, subject of the clause.",
-            "difficulty": 2
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "melden",
-            "surface_en": "register",
-            "furigana": "[ˈmɛldən]",
-            "pos": "VERB",
             "lemma": "melden",
-            "explanation": "Finite main verb (present, 1st person plural); here part of the separable verb 'ummelden' ('to re-register').",
-            "compound_id": "ummelden_1",
-            "difficulty": 7
-          },
-          {
-            "surface": "den",
-            "surface_en": "the",
-            "furigana": "[deːn]",
-            "pos": "DET",
-            "lemma": "der",
-            "explanation": "Definite article, accusative masculine singular, determiner of 'Wohnsitz'.",
-            "difficulty": 2
-          },
-          {
-            "surface": "Wohnsitz",
-            "surface_en": "residence",
-            "furigana": "[ˈvoːnˌzɪts]",
-            "pos": "NOUN",
-            "lemma": "Wohnsitz",
-            "explanation": "Direct object of 'melden' (accusative).",
-            "difficulty": 10,
-            "is_main_word": true
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 4,
+            "end": 10,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "heute",
-            "surface_en": "today",
-            "furigana": "[ˈhɔʏ̯tə]",
-            "pos": "ADV",
             "lemma": "heute",
-            "explanation": "Temporal adverb indicating the time of the action.",
-            "difficulty": 7
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 11,
+            "end": 16,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "um.",
-            "surface_en": "um- (prefix)",
-            "furigana": "[ʊm]",
-            "pos": "PART",
+            "surface": "unseren",
+            "lemma": "unser",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "PPOSAT",
+            "feats": {},
+            "start": 17,
+            "end": 24,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Wohnsitz",
+            "lemma": "Wohnsitz",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 25,
+            "end": 33,
+            "analyzer": "spacy_de_core_news_lg",
+            "is_main_word": true
+          },
+          {
+            "surface": "um",
             "lemma": "um",
-            "explanation": "Separable verbal particle completing the verb 'ummelden'; appears clause-final.",
-            "compound_id": "ummelden_1",
-            "difficulty": 4
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "PTKVZ",
+            "feats": {},
+            "start": 34,
+            "end": 36,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 36,
+            "end": 37,
+            "analyzer": "spacy_de_core_news_lg"
           }
         ],
         "difficulty_aggregated": 5.33
       },
       {
-        "sentence": "Sie fragt nach meinem Wohnsitz auf dem Formular.",
+        "sentence": "Auf dem Formular fragt sie nach meinem Wohnsitz.",
         "tokens": [
           {
-            "surface": "Sie",
-            "surface_en": "she",
-            "furigana": "[ziː]",
-            "pos": "PRON",
-            "lemma": "sie",
-            "explanation": "Personal pronoun, 3rd person singular, subject.",
-            "difficulty": 2
-          },
-          {
-            "surface": "fragt",
-            "surface_en": "asks",
-            "furigana": "[fʁaːkt]",
-            "pos": "VERB",
-            "lemma": "fragen",
-            "explanation": "Finite main verb (present, 3rd person singular).",
-            "difficulty": 7
-          },
-          {
-            "surface": "nach",
-            "surface_en": "about",
-            "furigana": "[naːx]",
-            "pos": "ADP",
-            "lemma": "nach",
-            "explanation": "Preposition governing dative; with 'fragen' forms 'nach etwas fragen' ('ask about something').",
-            "difficulty": 2
-          },
-          {
-            "surface": "meinem",
-            "surface_en": "my",
-            "furigana": "[ˈmaɪ̯nəm]",
-            "pos": "DET",
-            "lemma": "mein",
-            "explanation": "Attributive possessive determiner, dative masculine singular, modifying 'Wohnsitz'.",
-            "difficulty": 7
-          },
-          {
-            "surface": "Wohnsitz",
-            "surface_en": "residence",
-            "furigana": "[ˈvoːnˌzɪts]",
-            "pos": "NOUN",
-            "lemma": "Wohnsitz",
-            "explanation": "Object of the preposition 'nach' (dative).",
-            "difficulty": 10,
-            "is_main_word": true
-          },
-          {
-            "surface": "auf",
-            "surface_en": "on",
-            "furigana": "[aʊ̯f]",
-            "pos": "ADP",
+            "surface": "Auf",
             "lemma": "auf",
-            "explanation": "Preposition introducing a locative PP; governs dative here.",
-            "difficulty": 2
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "dem",
-            "surface_en": "the",
-            "furigana": "[deːm]",
-            "pos": "DET",
             "lemma": "der",
-            "explanation": "Definite article, dative neuter singular, determiner of 'Formular'.",
-            "difficulty": 2
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 4,
+            "end": 7,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "Formular.",
-            "surface_en": "form",
-            "furigana": "[fɔʁmuˈlaːʁ]",
-            "pos": "NOUN",
+            "surface": "Formular",
             "lemma": "Formular",
-            "explanation": "Head noun of the PP 'auf dem Formular'.",
-            "difficulty": 10
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 8,
+            "end": 16,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "fragt",
+            "lemma": "fragen",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 17,
+            "end": 22,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "sie",
+            "lemma": "sie",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 23,
+            "end": 26,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "nach",
+            "lemma": "nach",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 27,
+            "end": 31,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "meinem",
+            "lemma": "mein",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "PPOSAT",
+            "feats": {},
+            "start": 32,
+            "end": 38,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Wohnsitz",
+            "lemma": "Wohnsitz",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 39,
+            "end": 47,
+            "analyzer": "spacy_de_core_news_lg",
+            "is_main_word": true
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 47,
+            "end": 48,
+            "analyzer": "spacy_de_core_news_lg"
           }
         ],
         "difficulty_aggregated": 5.25
@@ -803,137 +1448,41 @@
         "difficulty_aggregated": 6.43
       }
     ],
-    "es": [
-      "Ahora vivo en Colonia.",
-      "Hoy cambiamos el domicilio.",
-      "Ella pide mi dirección en el formulario.",
-      "La dirección sigue igual a pesar del cambio de trabajo."
-    ],
-    "fr": [
-      "J'habite maintenant à Cologne.",
-      "On change l'adresse aujourd'hui.",
-      "Elle demande mon adresse sur le formulaire.",
-      "L'adresse reste la même malgré le changement de travail."
-    ],
-    "it": [
-      "Ora vivo a Colonia.",
-      "Oggi cambiamo l'indirizzo.",
-      "Lei chiede il mio indirizzo sul modulo.",
-      "L'indirizzo rimane lo stesso nonostante il cambio di lavoro."
-    ],
-    "ko": [
-      "이제 쾰른에 살아요.",
-      "오늘 주소를 변경해요.",
-      "그녀는 양식에서 제 주소를 물어봐요.",
-      "직장을 바꿔도 주소는 그대로예요."
-    ],
-    "zh-Hans": [
-      "我现在住在科隆。",
-      "我们今天办理地址变更。",
-      "她在表格上要我的地址。",
-      "虽然换了工作，地址还是不变。"
-    ],
-    "yue": [
-      "我而家住喺科隆。",
-      "我哋今日改地址。",
-      "佢喺表格上面要我嘅地址。",
-      "就算換咗工，地址都唔變。"
-    ],
-    "ru": [
-      "Теперь я живу в Кёльне.",
-      "Мы сегодня меняем адрес.",
-      "Она спрашивает мой адрес в анкете.",
-      "Адрес остаётся прежним, несмотря на смену работы."
-    ],
-    "pt": [
-      "Agora moro em Colônia.",
-      "Hoje vamos mudar o endereço.",
-      "Ela pede meu endereço no formulário.",
-      "O endereço continua o mesmo apesar da troca de emprego."
-    ],
-    "he": [
-      "הכתובת שלי עכשיו בקלן.",
-      "אנחנו משנים את הכתובת היום.",
-      "היא מבקשת את הכתובת שלי בטופס.",
-      "הכתובת נשארת כפי שהיא למרות שינוי העבודה."
-    ],
-    "tr": [
-      "Artık Köln'de yaşıyorum.",
-      "Bugün adresi değiştiriyoruz.",
-      "Formda adresimi istiyor.",
-      "İş değişikliğine rağmen adres aynı kalıyor."
-    ],
-    "vi": [
-      "Giờ tôi sống ở Cologne.",
-      "Hôm nay chúng tôi đổi địa chỉ.",
-      "Cô ấy yêu cầu địa chỉ của tôi trên biểu mẫu.",
-      "Dù đổi việc, địa chỉ vẫn như cũ."
-    ],
+    "word_POS": "Noun",
+    "entry_id": "Wohnsitz",
+    "word_en": "residence; place of residence",
+    "word_es": "residencia; domicilio",
+    "word_fr": "résidence; domicile",
+    "word_it": "residenza; domicilio",
+    "word_ko": "거주지; 주소지",
+    "word_zh-Hans": "居住地; 住所",
+    "word_yue": "居住地; 住址",
+    "word_ru": "место жительства; постоянный адрес",
+    "word_pt": "residência; domicílio",
+    "word_he": "מקום מגורים; כתובת מגורים",
+    "word_tr": "ikamet yeri; yerleşim yeri",
+    "word_vi": "nơi cư trú; địa chỉ cư trú",
+    "word_ar": "محل الإقامة; محل السكن",
+    "word_nl": "woonplaats; domicilie",
+    "word_uk": "місце проживання; постійна адреса",
+    "word_hu": "lakóhely; lakcím",
+    "word_hi": "निवास स्थान; स्थायी पता",
+    "word_pl": "miejsce zamieszkania; stały adres",
+    "word_el": "τόπος κατοικίας; μόνιμη διεύθυνση",
+    "word_nb": "bosted; adresse",
+    "word_id": "tempat tinggal; domisili",
+    "word_sv": "bostadsort; hemadress",
+    "word_ro": "domiciliu; reședință",
+    "word_cs": "bydliště; místo pobytu",
+    "word_da": "bopæl; adresse",
+    "word_fi": "asuinpaikka; kotiosoite",
+    "word_ja": "居住地; 住所",
+    "word_de": "Wohnsitz",
     "ar": [
       "أنا الآن أسكن في كولونيا.",
       "نحن نغير العنوان اليوم.",
       "هي تطلب عنواني في الاستمارة.",
       "العنوان يبقى كما هو رغم تغيير العمل."
-    ],
-    "nl": [
-      "Ik woon nu in Keulen.",
-      "We veranderen vandaag ons adres.",
-      "Ze vraagt om mijn adres op het formulier.",
-      "Het adres blijft hetzelfde ondanks een baanwisseling."
-    ],
-    "uk": [
-      "Я тепер живу в Кельні.",
-      "Сьогодні ми змінюємо адресу.",
-      "Вона просить мою адресу в анкеті.",
-      "Адреса лишається тією самою, попри зміну роботи."
-    ],
-    "hu": [
-      "Most már Kölnben lakom.",
-      "Ma megváltoztatjuk a címet.",
-      "Az űrlapon kéri a címemet.",
-      "A cím változatlan marad a munkahelyváltás ellenére."
-    ],
-    "hi": [
-      "अब मेरा पता कोलोन में है।",
-      "आज हम पता बदल रहे हैं।",
-      "वह फ़ॉर्म में मेरा पता माँगती है।",
-      "नौकरी बदलने पर भी पता वही रहता है।"
-    ],
-    "pl": [
-      "Teraz mieszkam w Kolonii.",
-      "Dziś zmieniamy adres.",
-      "Ona prosi o mój adres w formularzu.",
-      "Adres pozostaje taki sam mimo zmiany pracy."
-    ],
-    "el": [
-      "Τώρα μένω στην Κολωνία.",
-      "Σήμερα αλλάζουμε τη διεύθυνση.",
-      "Ζητά τη διεύθυνσή μου στο έντυπο.",
-      "Η διεύθυνση μένει η ίδια παρά την αλλαγή δουλειάς."
-    ],
-    "nb": [
-      "Jeg bor nå i Köln.",
-      "Vi endrer adressen i dag.",
-      "Hun ber om adressen min på skjemaet.",
-      "Adressen forblir den samme til tross for jobbskifte."
-    ],
-    "id": [
-      "Sekarang saya tinggal di Köln.",
-      "Hari ini kami mengganti alamat.",
-      "Dia meminta alamat saya di formulir.",
-      "Alamat tetap sama meskipun ganti pekerjaan."
-    ],
-    "sv": [
-      "Jag bor nu i Köln.",
-      "Vi byter adress i dag.",
-      "Hon ber om min adress på formuläret.",
-      "Adressen är densamma trots jobbbyte."
-    ],
-    "ro": [
-      "Acum locuiesc în Köln.",
-      "Astăzi schimbăm adresa.",
-      "Ea îmi cere adresa pe formular.",
-      "Adresa rămâne aceeași în ciuda schimbării locului de muncă."
     ],
     "cs": [
       "Teď bydlím v Kolíně nad Rýnem.",
@@ -947,11 +1496,77 @@
       "Hun beder om min adresse på formularen.",
       "Adressen er den samme trods jobskifte."
     ],
+    "de": [
+      "Mein Wohnsitz ist jetzt in Köln.",
+      "Wir melden den Wohnsitz heute um.",
+      "Sie fragt nach meinem Wohnsitz auf dem Formular.",
+      "Der Wohnsitz bleibt trotz des Jobwechsels gleich."
+    ],
+    "el": [
+      "Τώρα μένω στην Κολωνία.",
+      "Σήμερα αλλάζουμε τη διεύθυνση.",
+      "Ζητά τη διεύθυνσή μου στο έντυπο.",
+      "Η διεύθυνση μένει η ίδια παρά την αλλαγή δουλειάς."
+    ],
+    "en": [
+      "I now live in Cologne.",
+      "We’re changing the address today.",
+      "She asks for my address on the form.",
+      "The address stays the same despite changing jobs."
+    ],
+    "es": [
+      "Ahora vivo en Colonia.",
+      "Hoy cambiamos el domicilio.",
+      "Ella pide mi dirección en el formulario.",
+      "La dirección sigue igual a pesar del cambio de trabajo."
+    ],
     "fi": [
       "Asun nyt Kölnissä.",
       "Tänään vaihdamme osoitteen.",
       "Hän pyytää osoitteeni lomakkeella.",
       "Osoite pysyy samana työnvaihdosta huolimatta."
+    ],
+    "fr": [
+      "J'habite maintenant à Cologne.",
+      "On change l'adresse aujourd'hui.",
+      "Elle demande mon adresse sur le formulaire.",
+      "L'adresse reste la même malgré le changement de travail."
+    ],
+    "he": [
+      "הכתובת שלי עכשיו בקלן.",
+      "אנחנו משנים את הכתובת היום.",
+      "היא מבקשת את הכתובת שלי בטופס.",
+      "הכתובת נשארת כפי שהיא למרות שינוי העבודה."
+    ],
+    "hi": [
+      "अब मेरा पता कोलोन में है।",
+      "आज हम पता बदल रहे हैं।",
+      "वह फ़ॉर्म में मेरा पता माँगती है।",
+      "नौकरी बदलने पर भी पता वही रहता है।"
+    ],
+    "hu": [
+      "Most már Kölnben lakom.",
+      "Ma megváltoztatjuk a címet.",
+      "Az űrlapon kéri a címemet.",
+      "A cím változatlan marad a munkahelyváltás ellenére."
+    ],
+    "id": [
+      "Sekarang saya tinggal di Köln.",
+      "Hari ini kami mengganti alamat.",
+      "Dia meminta alamat saya di formulir.",
+      "Alamat tetap sama meskipun ganti pekerjaan."
+    ],
+    "ipa": [
+      "/maɪ̯n ˈvoːnˌzɪts ɪst jɛtst ɪn kœln/",
+      "/viːɐ̯ ˈmɛldən deːn ˈvoːnˌzɪts ˈhɔɪ̯tə ʊm/",
+      "/ziː fʁaːkt naːx ˈmaɪ̯nəm ˈvoːnˌzɪts aʊ̯f deːm fɔʁmuˈlaːʁ/",
+      "/deːɐ̯ ˈvoːnˌzɪts blaɪ̯pt tʁɔts deːs ˈdʒɔpˌvɛksl̩s ɡlaɪ̯ç/"
+    ],
+    "it": [
+      "Ora vivo a Colonia.",
+      "Oggi cambiamo l'indirizzo.",
+      "Lei chiede il mio indirizzo sul modulo.",
+      "L'indirizzo rimane lo stesso nonostante il cambio di lavoro."
     ],
     "ja": [
       "今はケルンに住んでいます。",
@@ -959,6 +1574,83 @@
       "彼女は用紙の欄で私の住所を求めています。",
       "仕事を変えても住所はそのままです。"
     ],
-    "word_POS": "Noun"
+    "ko": [
+      "이제 쾰른에 살아요.",
+      "오늘 주소를 변경해요.",
+      "그녀는 양식에서 제 주소를 물어봐요.",
+      "직장을 바꿔도 주소는 그대로예요."
+    ],
+    "nb": [
+      "Jeg bor nå i Köln.",
+      "Vi endrer adressen i dag.",
+      "Hun ber om adressen min på skjemaet.",
+      "Adressen forblir den samme til tross for jobbskifte."
+    ],
+    "nl": [
+      "Ik woon nu in Keulen.",
+      "We veranderen vandaag ons adres.",
+      "Ze vraagt om mijn adres op het formulier.",
+      "Het adres blijft hetzelfde ondanks een baanwisseling."
+    ],
+    "pl": [
+      "Teraz mieszkam w Kolonii.",
+      "Dziś zmieniamy adres.",
+      "Ona prosi o mój adres w formularzu.",
+      "Adres pozostaje taki sam mimo zmiany pracy."
+    ],
+    "pt": [
+      "Agora moro em Colônia.",
+      "Hoje vamos mudar o endereço.",
+      "Ela pede meu endereço no formulário.",
+      "O endereço continua o mesmo apesar da troca de emprego."
+    ],
+    "ro": [
+      "Acum locuiesc în Köln.",
+      "Astăzi schimbăm adresa.",
+      "Ea îmi cere adresa pe formular.",
+      "Adresa rămâne aceeași în ciuda schimbării locului de muncă."
+    ],
+    "ru": [
+      "Теперь я живу в Кёльне.",
+      "Мы сегодня меняем адрес.",
+      "Она спрашивает мой адрес в анкете.",
+      "Адрес остаётся прежним, несмотря на смену работы."
+    ],
+    "sv": [
+      "Jag bor nu i Köln.",
+      "Vi byter adress i dag.",
+      "Hon ber om min adress på formuläret.",
+      "Adressen är densamma trots jobbbyte."
+    ],
+    "tr": [
+      "Artık Köln'de yaşıyorum.",
+      "Bugün adresi değiştiriyoruz.",
+      "Formda adresimi istiyor.",
+      "İş değişikliğine rağmen adres aynı kalıyor."
+    ],
+    "uk": [
+      "Я тепер живу в Кельні.",
+      "Сьогодні ми змінюємо адресу.",
+      "Вона просить мою адресу в анкеті.",
+      "Адреса лишається тією самою, попри зміну роботи."
+    ],
+    "vi": [
+      "Giờ tôi sống ở Cologne.",
+      "Hôm nay chúng tôi đổi địa chỉ.",
+      "Cô ấy yêu cầu địa chỉ của tôi trên biểu mẫu.",
+      "Dù đổi việc, địa chỉ vẫn như cũ."
+    ],
+    "yue": [
+      "我而家住喺科隆。",
+      "我哋今日改地址。",
+      "佢喺表格上面要我嘅地址。",
+      "就算換咗工，地址都唔變。"
+    ],
+    "zh-Hans": [
+      "我现在住在科隆。",
+      "我们今天办理地址变更。",
+      "她在表格上要我的地址。",
+      "虽然换了工作，地址还是不变。"
+    ]
   }
 }

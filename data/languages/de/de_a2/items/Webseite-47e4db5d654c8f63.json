@@ -146,12 +146,12 @@
       "difficulty": 5.71
     },
     {
-      "target": "Er schickt mir die Webseite später zu.",
+      "target": "Er schickt mir später den Link zur Webseite.",
       "reading": "/eːɐ ʃɪkt miːɐ diː ˈvɛpzaɪ̯tə ˈʃpɛːtɐ./",
       "translations": {
-        "de": "Er schickt mir die Webseite später zu.",
+        "de": "Er schickt mir später den Link zur Webseite.",
         "ipa": "/eːɐ ʃɪkt miːɐ diː ˈvɛpzaɪ̯tə ˈʃpɛːtɐ./",
-        "en": "He’ll send me the website later.",
+        "en": "He’ll send me the link to the website later.",
         "es": "Me mandará el enlace más tarde.",
         "fr": "Il m’enverra le lien plus tard.",
         "it": "Mi manderà il link più tardi.",
@@ -182,67 +182,103 @@
       "tokens": [
         {
           "surface": "Er",
-          "surface_en": "he",
-          "furigana": "[eːɐ]",
-          "pos": "PRON",
           "lemma": "er",
-          "explanation": "Personal pronoun, 3rd person singular nominative; subject.",
-          "difficulty": 2
+          "pos": "PRON",
+          "upos": "PRON",
+          "xpos": "PPER",
+          "feats": {},
+          "start": 0,
+          "end": 2,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "schickt",
-          "surface_en": "sends",
-          "furigana": "[ʃɪkt]",
-          "pos": "VERB",
           "lemma": "schicken",
-          "explanation": "Finite main verb, present tense, 3rd person singular; ditransitive verb.",
-          "difficulty": 10
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VVFIN",
+          "feats": {},
+          "start": 3,
+          "end": 10,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "mir",
-          "surface_en": "to me",
-          "furigana": "[miːɐ]",
+          "lemma": "mir",
           "pos": "PRON",
-          "lemma": "ich",
-          "explanation": "Personal pronoun, 1st person singular dative; indirect object.",
-          "difficulty": 4
-        },
-        {
-          "surface": "die",
-          "surface_en": "the",
-          "furigana": "[diː]",
-          "pos": "DET",
-          "lemma": "der",
-          "explanation": "Definite article, feminine accusative singular; marks 'Webseite'.",
-          "difficulty": 2
-        },
-        {
-          "surface": "Webseite",
-          "surface_en": "website",
-          "furigana": "[ˈvɛpˌzaɪ̯tə]",
-          "pos": "NOUN",
-          "lemma": "Webseite",
-          "explanation": "Feminine noun, accusative singular; direct object.",
-          "difficulty": 10,
-          "is_main_word": true
+          "upos": "PRON",
+          "xpos": "PPER",
+          "feats": {},
+          "start": 11,
+          "end": 14,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "später",
-          "surface_en": "later",
-          "furigana": "[ˈʃpɛːtɐ]",
-          "pos": "ADV",
           "lemma": "spät",
-          "explanation": "Temporal adverb; indicates time.",
-          "difficulty": 7
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "ADJD",
+          "feats": {},
+          "start": 15,
+          "end": 21,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "zu.",
-          "surface_en": "to",
-          "furigana": "[tsuː]",
-          "pos": "PART",
+          "surface": "den",
+          "lemma": "der",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "ART",
+          "feats": {},
+          "start": 22,
+          "end": 25,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "Link",
+          "lemma": "Link",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 26,
+          "end": 30,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "zur",
           "lemma": "zu",
-          "explanation": "Particle required with 'schicken' when indicating delivery to someone.",
-          "difficulty": 8
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "APPRART",
+          "feats": {},
+          "start": 31,
+          "end": 34,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "Webseite",
+          "lemma": "Webseite",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 35,
+          "end": 43,
+          "analyzer": "spacy_de_core_news_lg",
+          "is_main_word": true
+        },
+        {
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 43,
+          "end": 44,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 6.14
@@ -457,19 +493,333 @@
     "content_reviewers": [
       "mediawiki-visible-revision"
     ],
-    "last_reviewed_utc": "2026-06-12T11:53:39Z",
-    "approval_source": "mediawiki_visible_revision",
+    "last_reviewed_utc": "2026-10-14T21:41:33Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
     "wiki": {
       "title": "Item:De a2/47e4db5d654c8f63",
-      "revision_id": 14900,
-      "parent_revision_id": 1400,
-      "revision_timestamp_utc": "2026-06-12T11:53:39Z",
-      "revision_user": "VocomiBot",
-      "revision_comment": "Sync de_a2 item Webseite",
-      "pulled_utc": "2026-06-22T08:19:04Z",
-      "applied_utc": "2026-06-22T08:19:12Z",
+      "revision_id": 86282,
+      "parent_revision_id": 59670,
+      "revision_timestamp_utc": "2026-10-14T21:41:33Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Content review: German and translation corrections",
+      "pulled_utc": "2026-10-17T07:00:40Z",
+      "applied_utc": "2026-10-17T07:00:48Z",
       "applied_by": "vocomipedia-apply-pulled"
-    }
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-1d44d329af17bbae",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_a2:47e4db5d654c8f63",
+        "pack_code": "de_a2",
+        "entry_id": "Webseite",
+        "language": "de",
+        "sentence_index": 2,
+        "old_sentence": "Er schickt mir die Webseite später zu.",
+        "old_translations": {
+          "de": "Er schickt mir die Webseite später zu.",
+          "ipa": "/eːɐ ʃɪkt miːɐ diː ˈvɛpzaɪ̯tə ˈʃpɛːtɐ./",
+          "en": "He’ll send me the website later.",
+          "es": "Me mandará el enlace más tarde.",
+          "fr": "Il m’enverra le lien plus tard.",
+          "it": "Mi manderà il link più tardi.",
+          "ko": "그가 나중에 링크를 보내 줄 거예요.",
+          "zh-Hans": "他稍后会把链接发给我。",
+          "yue": "佢遲啲會發條連結畀我。",
+          "ru": "Он позже пришлёт мне ссылку.",
+          "pt": "Ele vai me enviar o link mais tarde.",
+          "he": "הוא ישלח לי את הקישור אחר כך.",
+          "tr": "Linki bana sonra gönderecek.",
+          "vi": "Anh ấy sẽ gửi cho tôi đường link sau.",
+          "ar": "سيرسل لي الرابط لاحقًا.",
+          "nl": "Hij stuurt me de link later.",
+          "uk": "Він пізніше надішле мені посилання.",
+          "hu": "Később elküldi nekem a linket.",
+          "hi": "वह मुझे बाद में लिंक भेजेगा.",
+          "pl": "Wyśle mi link później.",
+          "el": "Θα μου στείλει τον σύνδεσμο αργότερα.",
+          "nb": "Han sender meg lenken senere.",
+          "id": "Dia akan mengirimkan linknya nanti.",
+          "sv": "Han skickar länken senare.",
+          "ro": "Îmi va trimite linkul mai târziu.",
+          "cs": "Pošle mi odkaz později.",
+          "da": "Han sender mig linket senere.",
+          "fi": "Hän lähettää minulle linkin myöhemmin.",
+          "ja": "彼は後でリンクを送ってくれる。"
+        },
+        "proposed_sentence": "Er schickt mir später den Link zur Webseite.",
+        "proposed_translations": {
+          "de": "Er schickt mir später den Link zur Webseite.",
+          "ipa": "/eːɐ ʃɪkt miːɐ diː ˈvɛpzaɪ̯tə ˈʃpɛːtɐ./",
+          "en": "He’ll send me the link to the website later.",
+          "es": "Me mandará el enlace más tarde.",
+          "fr": "Il m’enverra le lien plus tard.",
+          "it": "Mi manderà il link più tardi.",
+          "ko": "그가 나중에 링크를 보내 줄 거예요.",
+          "zh-Hans": "他稍后会把链接发给我。",
+          "yue": "佢遲啲會發條連結畀我。",
+          "ru": "Он позже пришлёт мне ссылку.",
+          "pt": "Ele vai me enviar o link mais tarde.",
+          "he": "הוא ישלח לי את הקישור אחר כך.",
+          "tr": "Linki bana sonra gönderecek.",
+          "vi": "Anh ấy sẽ gửi cho tôi đường link sau.",
+          "ar": "سيرسل لي الرابط لاحقًا.",
+          "nl": "Hij stuurt me de link later.",
+          "uk": "Він пізніше надішле мені посилання.",
+          "hu": "Később elküldi nekem a linket.",
+          "hi": "वह मुझे बाद में लिंक भेजेगा.",
+          "pl": "Wyśle mi link później.",
+          "el": "Θα μου στείλει τον σύνδεσμο αργότερα.",
+          "nb": "Han sender meg lenken senere.",
+          "id": "Dia akan mengirimkan linknya nanti.",
+          "sv": "Han skickar länken senare.",
+          "ro": "Îmi va trimite linkul mai târziu.",
+          "cs": "Pošle mi odkaz později.",
+          "da": "Han sender mig linket senere.",
+          "fi": "Hän lähettää minulle linkin myöhemmin.",
+          "ja": "彼は後でリンクを送ってくれる。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Er schickt mir später den Link zur Webseite.",
+        "old_japanese": "Er schickt mir die Webseite später zu.",
+        "old_english": "He’ll send me the website later.",
+        "proposed_japanese": "Er schickt mir später den Link zur Webseite.",
+        "proposed_english": "He’ll send me the link to the website later.",
+        "reason": "Use the idiomatic German wording for sending someone a webpage link, matching the translation intent.",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Er schickt mir später den Link zur Webseite.",
+          "tokens": [
+            {
+              "surface": "Er",
+              "lemma": "er",
+              "pos": "PRON",
+              "upos": "PRON",
+              "xpos": "PPER",
+              "feats": {},
+              "start": 0,
+              "end": 2,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "schickt",
+              "lemma": "schicken",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVFIN",
+              "feats": {},
+              "start": 3,
+              "end": 10,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "mir",
+              "lemma": "mir",
+              "pos": "PRON",
+              "upos": "PRON",
+              "xpos": "PPER",
+              "feats": {},
+              "start": 11,
+              "end": 14,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "später",
+              "lemma": "spät",
+              "pos": "ADV",
+              "upos": "ADV",
+              "xpos": "ADJD",
+              "feats": {},
+              "start": 15,
+              "end": 21,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "den",
+              "lemma": "der",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "ART",
+              "feats": {},
+              "start": 22,
+              "end": 25,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Link",
+              "lemma": "Link",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 26,
+              "end": 30,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "zur",
+              "lemma": "zu",
+              "pos": "ADP",
+              "upos": "ADP",
+              "xpos": "APPRART",
+              "feats": {},
+              "start": 31,
+              "end": 34,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Webseite",
+              "lemma": "Webseite",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 35,
+              "end": 43,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 43,
+              "end": 44,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Er",
+            "lemma": "er",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "schickt",
+            "lemma": "schicken",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 3,
+            "end": 10,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "mir",
+            "lemma": "mir",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 11,
+            "end": 14,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "später",
+            "lemma": "spät",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADJD",
+            "feats": {},
+            "start": 15,
+            "end": 21,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "den",
+            "lemma": "der",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 22,
+            "end": 25,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Link",
+            "lemma": "Link",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 26,
+            "end": 30,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "zur",
+            "lemma": "zu",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPRART",
+            "feats": {},
+            "start": 31,
+            "end": 34,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Webseite",
+            "lemma": "Webseite",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 35,
+            "end": 43,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 43,
+            "end": 44,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:00:40Z",
+        "updated_utc": "2026-10-17T07:01:00Z",
+        "applied_utc": "2026-10-17T07:01:00Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:01:00Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -566,71 +916,107 @@
         "difficulty_aggregated": 5.71
       },
       {
-        "sentence": "Er schickt mir die Webseite später zu.",
+        "sentence": "Er schickt mir später den Link zur Webseite.",
         "tokens": [
           {
             "surface": "Er",
-            "surface_en": "he",
-            "furigana": "[eːɐ]",
-            "pos": "PRON",
             "lemma": "er",
-            "explanation": "Personal pronoun, 3rd person singular nominative; subject.",
-            "difficulty": 2
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "schickt",
-            "surface_en": "sends",
-            "furigana": "[ʃɪkt]",
-            "pos": "VERB",
             "lemma": "schicken",
-            "explanation": "Finite main verb, present tense, 3rd person singular; ditransitive verb.",
-            "difficulty": 10
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 3,
+            "end": 10,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "mir",
-            "surface_en": "to me",
-            "furigana": "[miːɐ]",
+            "lemma": "mir",
             "pos": "PRON",
-            "lemma": "ich",
-            "explanation": "Personal pronoun, 1st person singular dative; indirect object.",
-            "difficulty": 4
-          },
-          {
-            "surface": "die",
-            "surface_en": "the",
-            "furigana": "[diː]",
-            "pos": "DET",
-            "lemma": "der",
-            "explanation": "Definite article, feminine accusative singular; marks 'Webseite'.",
-            "difficulty": 2
-          },
-          {
-            "surface": "Webseite",
-            "surface_en": "website",
-            "furigana": "[ˈvɛpˌzaɪ̯tə]",
-            "pos": "NOUN",
-            "lemma": "Webseite",
-            "explanation": "Feminine noun, accusative singular; direct object.",
-            "difficulty": 10,
-            "is_main_word": true
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 11,
+            "end": 14,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "später",
-            "surface_en": "later",
-            "furigana": "[ˈʃpɛːtɐ]",
-            "pos": "ADV",
             "lemma": "spät",
-            "explanation": "Temporal adverb; indicates time.",
-            "difficulty": 7
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADJD",
+            "feats": {},
+            "start": 15,
+            "end": 21,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "zu.",
-            "surface_en": "to",
-            "furigana": "[tsuː]",
-            "pos": "PART",
+            "surface": "den",
+            "lemma": "der",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 22,
+            "end": 25,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Link",
+            "lemma": "Link",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 26,
+            "end": 30,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "zur",
             "lemma": "zu",
-            "explanation": "Particle required with 'schicken' when indicating delivery to someone.",
-            "difficulty": 8
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPRART",
+            "feats": {},
+            "start": 31,
+            "end": 34,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Webseite",
+            "lemma": "Webseite",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 35,
+            "end": 43,
+            "analyzer": "spacy_de_core_news_lg",
+            "is_main_word": true
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 43,
+            "end": 44,
+            "analyzer": "spacy_de_core_news_lg"
           }
         ],
         "difficulty_aggregated": 6.14

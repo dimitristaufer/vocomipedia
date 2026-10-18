@@ -459,7 +459,7 @@
     },
     {
       "target": "急いで彼処を目指そう！",
-      "reading": "急いであすこをめざそう！",
+      "reading": "急いであすこをめざそう!",
       "translations": {
         "en": "Let’s hurry and head for that place!",
         "es": "¡Apurémonos y vayamos a ese lugar!",
@@ -491,15 +491,17 @@
       },
       "tokens": [
         {
-          "surface": "急いで",
-          "surface_en": "hastily",
-          "furigana": "急いで",
-          "pos": "adverb",
+          "surface": "急い",
           "lemma": "急ぐ",
-          "difficulty": 1,
-          "explanation": "Te-form of '急ぐ' used adverbially 'in a hurry'.",
-          "reading_kana": "急いで",
-          "ruby_text": "急[急]いで",
+          "pos": "動詞/一般/*/*/五段-ガ行/連用形-イ音便",
+          "upos": "VERB",
+          "xpos": "動詞",
+          "feats": {},
+          "start": 0,
+          "end": 2,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "急い",
+          "ruby_text": "急[急]い",
           "ruby_spans": [
             {
               "base": "急",
@@ -508,18 +510,36 @@
               "length": 1
             }
           ],
+          "ruby_confidence": "reviewed",
+          "furigana": "急い",
+          "ruby_source": "mediawiki_sentence_ruby"
+        },
+        {
+          "surface": "で",
+          "lemma": "で",
+          "pos": "助詞/接続助詞/*/*/*/*",
+          "upos": "PART",
+          "xpos": "助詞",
+          "feats": {},
+          "start": 2,
+          "end": 3,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "で",
+          "ruby_text": "で",
+          "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "で"
         },
         {
           "surface": "彼処",
-          "surface_en": "there",
-          "furigana": "あすこ",
-          "pos": "noun",
           "lemma": "彼処",
-          "difficulty": 1,
-          "explanation": "Demonstrative pronoun indicating the goal.",
-          "is_main_word": true,
+          "pos": "代名詞/*/*/*/*/*",
+          "upos": "PRON",
+          "xpos": "代名詞",
+          "feats": {},
+          "start": 3,
+          "end": 5,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "あすこ",
           "ruby_text": "彼処[あすこ]",
           "ruby_spans": [
@@ -530,31 +550,37 @@
               "length": 2
             }
           ],
-          "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "ruby_confidence": "reviewed",
+          "furigana": "あすこ",
+          "ruby_source": "mediawiki_sentence_ruby",
+          "is_main_word": true
         },
         {
           "surface": "を",
-          "surface_en": "object marker",
-          "furigana": "を",
-          "pos": "particle",
           "lemma": "を",
-          "difficulty": 1,
-          "explanation": "Particle marking 'there' as the object/goal of 'aim for'.",
+          "pos": "助詞/格助詞/*/*/*/*",
+          "upos": "PART",
+          "xpos": "助詞",
+          "feats": {},
+          "start": 5,
+          "end": 6,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "を",
           "ruby_text": "を",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "を"
         },
         {
           "surface": "目指そう",
-          "surface_en": "let's aim for",
-          "furigana": "めざそう",
-          "pos": "verb",
           "lemma": "目指す",
-          "difficulty": 1,
-          "explanation": "Volitional form of '目指す', meaning 'let's head for'.",
+          "pos": "動詞/一般/*/*/五段-サ行/意志推量形",
+          "upos": "VERB",
+          "xpos": "動詞",
+          "feats": {},
+          "start": 6,
+          "end": 10,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "めざそう",
           "ruby_text": "目指[めざ]そう",
           "ruby_spans": [
@@ -565,8 +591,25 @@
               "length": 2
             }
           ],
+          "ruby_confidence": "reviewed",
+          "furigana": "めざそう",
+          "ruby_source": "mediawiki_sentence_ruby"
+        },
+        {
+          "surface": "！",
+          "lemma": "!",
+          "pos": "補助記号/句点/*/*/*/*",
+          "upos": "PUNCT",
+          "xpos": "補助記号",
+          "feats": {},
+          "start": 10,
+          "end": 11,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "!",
+          "ruby_text": "！",
+          "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "!"
         }
       ],
       "difficulty": 1,
@@ -587,19 +630,371 @@
     "content_reviewers": [
       "mediawiki-visible-revision"
     ],
-    "last_reviewed_utc": "2026-06-21T18:32:40Z",
-    "approval_source": "mediawiki_visible_revision",
+    "last_reviewed_utc": "2026-10-10T22:19:31Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
     "wiki": {
       "title": "Item:Ja n5/13e3c4d9b4f4bd3f",
-      "revision_id": 58347,
-      "parent_revision_id": 36791,
-      "revision_timestamp_utc": "2026-06-21T18:32:40Z",
-      "revision_user": "VocomiBot",
-      "revision_comment": "Sync ja_n5 item 彼処",
-      "pulled_utc": "2026-06-21T20:53:37Z",
-      "applied_utc": "2026-06-21T20:53:52Z",
+      "revision_id": 83879,
+      "parent_revision_id": 69224,
+      "revision_timestamp_utc": "2026-10-10T22:19:31Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Suggest reviewed Japanese and translation corrections",
+      "pulled_utc": "2026-10-17T07:37:30Z",
+      "applied_utc": "2026-10-17T07:37:46Z",
       "applied_by": "vocomipedia-apply-pulled"
-    }
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-87a8d81e8c3b75a0",
+        "status": "applied",
+        "type": "translation_update",
+        "item_id": "ja_n5:13e3c4d9b4f4bd3f",
+        "pack_code": "ja_n5",
+        "entry_id": "彼処",
+        "language": "ja",
+        "sentence_index": 4,
+        "old_sentence": "急いで彼処を目指そう！",
+        "old_translations": {
+          "en": "Let’s hurry and head for that place!",
+          "es": "¡Apurémonos y vayamos a ese lugar!",
+          "fr": "Dépêchons-nous de nous diriger vers cet endroit !",
+          "de": "Beeilen wir uns und machen wir uns auf den Weg zu diesem Ort!",
+          "it": "Sbrighiamoci e dirigiamoci verso quel posto!",
+          "ko": "어서 그곳으로 가자!",
+          "zh-Hans": "让我们快点前往那个地方吧！",
+          "yue": "我哋快啲去嗰度啦！",
+          "ru": "Давайте поторопимся и отправимся в это место!",
+          "pt": "Vamos nos apressar e ir para aquele lugar!",
+          "he": "בואו נמהר ונצא לכיוון המקום הזה!",
+          "tr": "Acele edelim ve o yere doğru yola çıkalım!",
+          "vi": "Chúng ta mau đi đến nơi đó thôi!",
+          "ar": "دعونا نسرع ونتوجه إلى ذلك المكان!",
+          "nl": "Laten we opschieten en naar die plek gaan!",
+          "uk": "Поспішаймо і попрямуємо до того місця!",
+          "hu": "Siessünk, és irány az a hely!",
+          "hi": "चलो जल्दी करें और उस जगह की ओर चलें!",
+          "pl": "Pospieszmy się i ruszajmy do tego miejsca!",
+          "el": "Ας βιαστούμε και ας κατευθυνθούμε προς αυτό το μέρος!",
+          "nb": "La oss skynde oss og dra til det stedet!",
+          "id": "Ayo cepat dan menuju ke tempat itu!",
+          "sv": "Låt oss skynda oss och bege oss till den platsen!",
+          "ro": "Să ne grăbim și să ne îndreptăm spre acel loc!",
+          "cs": "Pospěšme si a zamiřme na to místo!",
+          "da": "Lad os skynde os og tage til det sted!",
+          "fi": "Kiirehditään ja lähdetään sinne!"
+        },
+        "proposed_sentence": "急いで彼処を目指そう！",
+        "proposed_translations": {
+          "en": "Let’s hurry and head for that place!",
+          "es": "¡Apurémonos y vayamos a ese lugar!",
+          "fr": "Dépêchons-nous de nous diriger vers cet endroit !",
+          "de": "Beeilen wir uns und machen wir uns auf den Weg zu diesem Ort!",
+          "it": "Sbrighiamoci e dirigiamoci verso quel posto!",
+          "ko": "어서 그곳으로 가자!",
+          "zh-Hans": "让我们快点前往那个地方吧！",
+          "yue": "等我哋快啲前往嗰個地方吧！",
+          "ru": "Давайте поторопимся и отправимся в это место!",
+          "pt": "Vamos nos apressar и ir para aquele lugar!",
+          "he": "בואו נמהר ונצא לכיוון המקום הזה!",
+          "tr": "Acele edelim ve o yere doğru yola çıkalım!",
+          "vi": "Hãy nhanh chóng đi đến nơi đó!",
+          "ar": "دعونا نسرع ونتوجه إلى هذا المكان!",
+          "nl": "Laten we opschieten en naar die plek gaan!",
+          "uk": "Поспішаймо і попрямуємо до того місця!",
+          "hu": "Siessünk, és irány az a hely!",
+          "hi": "चलो जल्दी करो और उस जगह के लिए सिर!",
+          "pl": "Pospieszmy się i ruszajmy в to miejsce!",
+          "el": "Ας βιαστούμε και ας κατευθυνθούμε προς αυτό το μέρος!",
+          "nb": "La oss skynde oss og dra til det stedet!",
+          "id": "Ayo cepat dan menuju ke tempat itu!",
+          "sv": "Låt oss skynda oss och bege oss till den platsen!",
+          "ro": "Să ne grăbim și să ne îndreptăm spre acel loc!",
+          "cs": "Pospěšme si a zamiřme na to místo!",
+          "da": "Lad os skynde os og tage til det sted!",
+          "fi": "Kiirehditään ja lähdetään sinne!"
+        },
+        "old_ruby_source": "急[いそ]いで彼処[あすこ]を目指[めざ]そう！",
+        "proposed_ruby_source": "急[急]いで彼処[あすこ]を目指[めざ]そう！",
+        "old_japanese": "急いで彼処を目指そう！",
+        "old_english": "Let’s hurry and head for that place!",
+        "proposed_japanese": "急いで彼処を目指そう！",
+        "proposed_english": "Let’s hurry and head for that place!",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "ja",
+          "sentence": "急いで彼処を目指そう！",
+          "tokens": [
+            {
+              "surface": "急い",
+              "lemma": "急ぐ",
+              "pos": "動詞/一般/*/*/五段-ガ行/連用形-イ音便",
+              "upos": "VERB",
+              "xpos": "動詞",
+              "feats": {},
+              "start": 0,
+              "end": 2,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "急い",
+              "ruby_text": "急[急]い",
+              "ruby_spans": [
+                {
+                  "base": "急",
+                  "reading": "急",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "急い",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "で",
+              "lemma": "で",
+              "pos": "助詞/接続助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 2,
+              "end": 3,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "で",
+              "ruby_text": "で",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "で"
+            },
+            {
+              "surface": "彼処",
+              "lemma": "彼処",
+              "pos": "代名詞/*/*/*/*/*",
+              "upos": "PRON",
+              "xpos": "代名詞",
+              "feats": {},
+              "start": 3,
+              "end": 5,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "あすこ",
+              "ruby_text": "彼処[あすこ]",
+              "ruby_spans": [
+                {
+                  "base": "彼処",
+                  "reading": "あすこ",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "あすこ",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "を",
+              "lemma": "を",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 5,
+              "end": 6,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "を",
+              "ruby_text": "を",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "を"
+            },
+            {
+              "surface": "目指そう",
+              "lemma": "目指す",
+              "pos": "動詞/一般/*/*/五段-サ行/意志推量形",
+              "upos": "VERB",
+              "xpos": "動詞",
+              "feats": {},
+              "start": 6,
+              "end": 10,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "めざそう",
+              "ruby_text": "目指[めざ]そう",
+              "ruby_spans": [
+                {
+                  "base": "目指",
+                  "reading": "めざ",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "めざそう",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "！",
+              "lemma": "!",
+              "pos": "補助記号/句点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 10,
+              "end": 11,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "!",
+              "ruby_text": "！",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "!"
+            }
+          ],
+          "reading": "急いであすこをめざそう!",
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "warnings": [
+            "mediawiki ruby hints applied"
+          ]
+        },
+        "generated_tokens": [
+          {
+            "surface": "急い",
+            "lemma": "急ぐ",
+            "pos": "動詞/一般/*/*/五段-ガ行/連用形-イ音便",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "急い",
+            "ruby_text": "急[急]い",
+            "ruby_spans": [
+              {
+                "base": "急",
+                "reading": "急",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "急い",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "で",
+            "lemma": "で",
+            "pos": "助詞/接続助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 2,
+            "end": 3,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "で",
+            "ruby_text": "で",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "で"
+          },
+          {
+            "surface": "彼処",
+            "lemma": "彼処",
+            "pos": "代名詞/*/*/*/*/*",
+            "upos": "PRON",
+            "xpos": "代名詞",
+            "feats": {},
+            "start": 3,
+            "end": 5,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "あすこ",
+            "ruby_text": "彼処[あすこ]",
+            "ruby_spans": [
+              {
+                "base": "彼処",
+                "reading": "あすこ",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "あすこ",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "を",
+            "lemma": "を",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 5,
+            "end": 6,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "を",
+            "ruby_text": "を",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "を"
+          },
+          {
+            "surface": "目指そう",
+            "lemma": "目指す",
+            "pos": "動詞/一般/*/*/五段-サ行/意志推量形",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 6,
+            "end": 10,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "めざそう",
+            "ruby_text": "目指[めざ]そう",
+            "ruby_spans": [
+              {
+                "base": "目指",
+                "reading": "めざ",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "めざそう",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "！",
+            "lemma": "!",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 10,
+            "end": 11,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "!",
+            "ruby_text": "！",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "!"
+          }
+        ],
+        "generated_reading": "急いであすこをめざそう!",
+        "analyzer": "sudachipy_sudachidict_core_c",
+        "requires": [
+          "human_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:37:30Z",
+        "updated_utc": "2026-10-17T07:38:15Z",
+        "applied_utc": "2026-10-17T07:38:15Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:38:15Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -965,15 +1360,17 @@
         "sentence": "急いで彼処を目指そう！",
         "tokens": [
           {
-            "surface": "急いで",
-            "surface_en": "hastily",
-            "furigana": "急いで",
-            "pos": "adverb",
+            "surface": "急い",
             "lemma": "急ぐ",
-            "difficulty": 1,
-            "explanation": "Te-form of '急ぐ' used adverbially 'in a hurry'.",
-            "reading_kana": "急いで",
-            "ruby_text": "急[急]いで",
+            "pos": "動詞/一般/*/*/五段-ガ行/連用形-イ音便",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "急い",
+            "ruby_text": "急[急]い",
             "ruby_spans": [
               {
                 "base": "急",
@@ -982,18 +1379,36 @@
                 "length": 1
               }
             ],
+            "ruby_confidence": "reviewed",
+            "furigana": "急い",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "で",
+            "lemma": "で",
+            "pos": "助詞/接続助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 2,
+            "end": 3,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "で",
+            "ruby_text": "で",
+            "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "で"
           },
           {
             "surface": "彼処",
-            "surface_en": "there",
-            "furigana": "あすこ",
-            "pos": "noun",
             "lemma": "彼処",
-            "difficulty": 1,
-            "explanation": "Demonstrative pronoun indicating the goal.",
-            "is_main_word": true,
+            "pos": "代名詞/*/*/*/*/*",
+            "upos": "PRON",
+            "xpos": "代名詞",
+            "feats": {},
+            "start": 3,
+            "end": 5,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "あすこ",
             "ruby_text": "彼処[あすこ]",
             "ruby_spans": [
@@ -1004,31 +1419,37 @@
                 "length": 2
               }
             ],
-            "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "ruby_confidence": "reviewed",
+            "furigana": "あすこ",
+            "ruby_source": "mediawiki_sentence_ruby",
+            "is_main_word": true
           },
           {
             "surface": "を",
-            "surface_en": "object marker",
-            "furigana": "を",
-            "pos": "particle",
             "lemma": "を",
-            "difficulty": 1,
-            "explanation": "Particle marking 'there' as the object/goal of 'aim for'.",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 5,
+            "end": 6,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "を",
             "ruby_text": "を",
             "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "を"
           },
           {
             "surface": "目指そう",
-            "surface_en": "let's aim for",
-            "furigana": "めざそう",
-            "pos": "verb",
             "lemma": "目指す",
-            "difficulty": 1,
-            "explanation": "Volitional form of '目指す', meaning 'let's head for'.",
+            "pos": "動詞/一般/*/*/五段-サ行/意志推量形",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 6,
+            "end": 10,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "めざそう",
             "ruby_text": "目指[めざ]そう",
             "ruby_spans": [
@@ -1039,8 +1460,25 @@
                 "length": 2
               }
             ],
+            "ruby_confidence": "reviewed",
+            "furigana": "めざそう",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "！",
+            "lemma": "!",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 10,
+            "end": 11,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "!",
+            "ruby_text": "！",
+            "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "!"
           }
         ],
         "difficulty_aggregated": 1
@@ -1080,7 +1518,7 @@
       "هذا المكان مكان هادئ.",
       "هناك شيء متوهج هناك.",
       "أريد أن أذهب إلى هناك.",
-      "دعونا نسرع ونتوجه إلى هذا المكان!"
+      "دعونا نسرع ونتوجه إلى ذلك المكان!"
     ],
     "cs": [
       "To místo je klidné místo.",
@@ -1140,7 +1578,7 @@
       "वह जगह एक शांत जगह है।",
       "वहाँ पर कुछ चमक रहा है।",
       "मैं वहां जाना चाहता हूं।",
-      "चलो जल्दी करो और उस जगह के लिए सिर!"
+      "चलो जल्दी करें और उस जगह की ओर चलें!"
     ],
     "hu": [
       "Ez a hely egy csendes hely.",
@@ -1182,13 +1620,13 @@
       "To miejsce jest cichym miejscem.",
       "Tam coś się świeci.",
       "Chcę tam pojechać.",
-      "Pospieszmy się i ruszajmy в to miejsce!"
+      "Pospieszmy się i ruszajmy do tego miejsca!"
     ],
     "pt": [
       "Esse lugar é um local tranquilo.",
       "Há algo brilhando ali.",
       "Eu quero ir para lá.",
-      "Vamos nos apressar и ir para aquele lugar!"
+      "Vamos nos apressar e ir para aquele lugar!"
     ],
     "ro": [
       "Acel loc este un loc liniștit.",
@@ -1224,13 +1662,13 @@
       "Nơi đó là một nơi yên tĩnh.",
       "Có một cái gì đó phát sáng ở đó.",
       "Tôi muốn đến đó.",
-      "Hãy nhanh chóng đi đến nơi đó!"
+      "Chúng ta mau đi đến nơi đó thôi!"
     ],
     "yue": [
       "嗰個地方好靜。",
       "嗰便有乜嘢嘢喺發光。",
       "我想去嗰度。",
-      "等我哋快啲前往嗰個地方吧！"
+      "我哋快啲去嗰度啦！"
     ],
     "zh-Hans": [
       "那个地方很安静。",

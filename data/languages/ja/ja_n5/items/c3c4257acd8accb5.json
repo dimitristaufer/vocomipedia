@@ -168,10 +168,10 @@
       "target": "先生、あの問題がわかりません。",
       "reading": "せんせい、あのもんだいがわかりません。",
       "translations": {
-        "en": "Teacher, I don't understand that question.",
+        "en": "Excuse me, I don't understand that problem.",
         "es": "Profesor, no entiendo esa pregunta.",
         "fr": "Professeur, je ne comprends pas cette question.",
-        "de": "Herr Lehrer, ich verstehe diese Frage nicht.",
+        "de": "Entschuldigung, ich verstehe diese Aufgabe nicht.",
         "it": "Professore, non capisco quella domanda.",
         "ko": "선생님, 저는 그 문제를 이해하지 못하겠습니다.",
         "zh-Hans": "老师，我不明白那道题。",
@@ -188,12 +188,12 @@
         "hi": "गुरुजी, मुझे वह सवाल समझ में नहीं आता।",
         "pl": "Panie nauczycielu, nie rozumiem tego pytania.",
         "el": "Κύριε καθηγητά, δεν καταλαβαίνω αυτή την ερώτηση.",
-        "nb": "Lærer, jeg forstår ikke det spørsmålet.",
+        "nb": "Unnskyld, jeg forstår ikke det spørsmålet.",
         "id": "Pak guru, saya tidak mengerti pertanyaan itu.",
-        "sv": "Lärare, jag förstår не den frågan.",
+        "sv": "Ursäkta, jag förstår inte den frågan.",
         "ro": "Domnule profesor, nu înțeleg întrebarea aceea.",
         "cs": "Pane učiteli, nerozumím té otázce.",
-        "da": "Lærer, jeg forstår ikke det spørgsmål.",
+        "da": "Undskyld, jeg forstår ikke det spørgsmål.",
         "fi": "Opettaja, en ymmärrä tuota kysymystä."
       },
       "tokens": [
@@ -302,17 +302,17 @@
     },
     {
       "target": "時間がない！最後の問題を急いで解こう。",
-      "reading": "じかんがない！さいごのもんだいを急いでとこう。",
+      "reading": "じかんがない!さいごのもんだいをいそいでとこう。",
       "translations": {
-        "en": "There's no time! Let's hurry to solve the last problem.",
+        "en": "There's no time! Let's hurry and solve the last problem.",
         "es": "¡No hay tiempo! Apresurémonos a resolver el último problema.",
         "fr": "On n’a pas le temps ! Hâtons-nous de résoudre le dernier problème.",
         "de": "Es ist keine Zeit! Beeilen wir uns, die letzte Aufgabe zu lösen.",
         "it": "Non c'è tempo! Affrettiamoci a risolvere l'ultima domanda.",
         "ko": "시간이 없어요! 마지막 문제를 풀기 위해 서두르자.",
         "zh-Hans": "没时间了！我们赶紧解决最后一道题吧。",
-        "yue": "冇時間喇！等我哋趕快解決最後一條題。",
-        "ru": "Нет времени! Давайте поскорее решить последнюю задачу.",
+        "yue": "冇時間喇！我哋快啲解埋最後一條問題啦。",
+        "ru": "Нет времени! Давайте поскорее решим последнюю задачу.",
         "pt": "Não há tempo! Vamos nos apressar para resolver o último problema.",
         "he": "אין זמן! בואו נמהר לפתור את הבעיה האחרונה.",
         "tr": "Zaman yok! Son soruyu çözmek için acele edelim.",
@@ -335,12 +335,14 @@
       "tokens": [
         {
           "surface": "時間",
-          "surface_en": "time",
-          "furigana": "じかん",
-          "pos": "noun",
           "lemma": "時間",
-          "difficulty": 8,
-          "explanation": "Refers to the available time before a deadline or event.",
+          "pos": "名詞/普通名詞/助数詞可能/*/*/*",
+          "upos": "NOUN",
+          "xpos": "名詞",
+          "feats": {},
+          "start": 0,
+          "end": 2,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "じかん",
           "ruby_text": "時間[じかん]",
           "ruby_spans": [
@@ -351,59 +353,68 @@
               "length": 2
             }
           ],
-          "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "ruby_confidence": "reviewed",
+          "furigana": "じかん",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "が",
-          "surface_en": "(subject marker)",
-          "furigana": "が",
-          "pos": "particle",
           "lemma": "が",
-          "difficulty": 1,
-          "explanation": "Marks '時間' as the subject that is lacking.",
+          "pos": "助詞/格助詞/*/*/*/*",
+          "upos": "PART",
+          "xpos": "助詞",
+          "feats": {},
+          "start": 2,
+          "end": 3,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "が",
           "ruby_text": "が",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "が"
         },
         {
           "surface": "ない",
-          "surface_en": "there is no",
-          "furigana": "ない",
-          "pos": "adjective",
           "lemma": "ない",
-          "difficulty": 1,
-          "explanation": "I-adjective indicating nonexistence or absence of time.",
+          "pos": "形容詞/非自立可能/*/*/形容詞/終止形-一般",
+          "upos": "ADJ",
+          "xpos": "形容詞",
+          "feats": {},
+          "start": 3,
+          "end": 5,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "ない",
           "ruby_text": "ない",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "ない"
         },
         {
           "surface": "！",
-          "surface_en": "!",
-          "furigana": "！",
-          "pos": "punctuation",
-          "lemma": "！",
-          "difficulty": 1,
-          "explanation": "Exclamation mark expressing urgency.",
-          "reading_kana": "！",
+          "lemma": "!",
+          "pos": "補助記号/句点/*/*/*/*",
+          "upos": "PUNCT",
+          "xpos": "補助記号",
+          "feats": {},
+          "start": 5,
+          "end": 6,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "!",
           "ruby_text": "！",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "!"
         },
         {
           "surface": "最後",
-          "surface_en": "last",
-          "furigana": "さいご",
-          "pos": "noun",
           "lemma": "最後",
-          "difficulty": 10,
-          "explanation": "Denotes the final item in a sequence.",
+          "pos": "名詞/普通名詞/一般/*/*/*",
+          "upos": "NOUN",
+          "xpos": "名詞",
+          "feats": {},
+          "start": 6,
+          "end": 8,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "さいご",
           "ruby_text": "最後[さいご]",
           "ruby_spans": [
@@ -414,32 +425,36 @@
               "length": 2
             }
           ],
-          "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "ruby_confidence": "reviewed",
+          "furigana": "さいご",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "の",
-          "surface_en": "of",
-          "furigana": "の",
-          "pos": "particle",
           "lemma": "の",
-          "difficulty": 1,
-          "explanation": "Genitive particle linking '最後' to '問題' to form 'the last problem'.",
+          "pos": "助詞/格助詞/*/*/*/*",
+          "upos": "PART",
+          "xpos": "助詞",
+          "feats": {},
+          "start": 8,
+          "end": 9,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "の",
           "ruby_text": "の",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "の"
         },
         {
           "surface": "問題",
-          "surface_en": "problem",
-          "furigana": "もんだい",
-          "pos": "noun",
           "lemma": "問題",
-          "difficulty": 13,
-          "explanation": "The specific question to be solved.",
-          "is_main_word": true,
+          "pos": "名詞/普通名詞/一般/*/*/*",
+          "upos": "NOUN",
+          "xpos": "名詞",
+          "feats": {},
+          "start": 9,
+          "end": 11,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "もんだい",
           "ruby_text": "問題[もんだい]",
           "ruby_spans": [
@@ -450,52 +465,77 @@
               "length": 2
             }
           ],
-          "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "ruby_confidence": "reviewed",
+          "furigana": "もんだい",
+          "ruby_source": "mediawiki_sentence_ruby",
+          "is_main_word": true
         },
         {
           "surface": "を",
-          "surface_en": "(object marker)",
-          "furigana": "を",
-          "pos": "particle",
           "lemma": "を",
-          "difficulty": 1,
-          "explanation": "Marks '最後の問題' as the direct object of the verb phrase.",
+          "pos": "助詞/格助詞/*/*/*/*",
+          "upos": "PART",
+          "xpos": "助詞",
+          "feats": {},
+          "start": 11,
+          "end": 12,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "を",
           "ruby_text": "を",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "を"
         },
         {
-          "surface": "急いで",
-          "surface_en": "in a hurry",
-          "furigana": "急いで",
-          "pos": "verb (te-form)",
+          "surface": "急い",
           "lemma": "急ぐ",
-          "difficulty": 1,
-          "explanation": "Te-form of '急ぐ', used adverbially to indicate doing something in a hurry.",
-          "reading_kana": "急いで",
-          "ruby_text": "急[急]いで",
+          "pos": "動詞/一般/*/*/五段-ガ行/連用形-イ音便",
+          "upos": "VERB",
+          "xpos": "動詞",
+          "feats": {},
+          "start": 12,
+          "end": 14,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "いそい",
+          "ruby_text": "急[いそ]い",
           "ruby_spans": [
             {
               "base": "急",
-              "reading": "急",
+              "reading": "いそ",
               "start": 0,
               "length": 1
             }
           ],
+          "ruby_confidence": "reviewed",
+          "furigana": "いそい",
+          "ruby_source": "mediawiki_sentence_ruby"
+        },
+        {
+          "surface": "で",
+          "lemma": "で",
+          "pos": "助詞/接続助詞/*/*/*/*",
+          "upos": "PART",
+          "xpos": "助詞",
+          "feats": {},
+          "start": 14,
+          "end": 15,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "で",
+          "ruby_text": "で",
+          "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "で"
         },
         {
           "surface": "解こう",
-          "surface_en": "let's solve",
-          "furigana": "とこう",
-          "pos": "verb",
           "lemma": "解く",
-          "difficulty": 1,
-          "explanation": "Volitional form of '解く', expressing the speaker's intention or suggestion to solve.",
+          "pos": "動詞/一般/*/*/五段-カ行/意志推量形",
+          "upos": "VERB",
+          "xpos": "動詞",
+          "feats": {},
+          "start": 15,
+          "end": 18,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "とこう",
           "ruby_text": "解[と]こう",
           "ruby_spans": [
@@ -506,22 +546,25 @@
               "length": 1
             }
           ],
-          "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "ruby_confidence": "reviewed",
+          "furigana": "とこう",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "。",
-          "surface_en": ".",
-          "furigana": "。",
-          "pos": "punctuation",
           "lemma": "。",
-          "difficulty": 1,
-          "explanation": "Period marking the end of the sentence.",
+          "pos": "補助記号/句点/*/*/*/*",
+          "upos": "PUNCT",
+          "xpos": "補助記号",
+          "feats": {},
+          "start": 18,
+          "end": 19,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "。",
           "ruby_text": "。",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "。"
         }
       ],
       "difficulty": 1,
@@ -540,7 +583,7 @@
         "zh-Hans": "如果出现问题，请立即与我们联系。",
         "yue": "如果出現問題，請立即同我哋聯絡。",
         "ru": "Если возникнет проблема, немедленно свяжитесь с нами.",
-        "pt": "Se ocorrer um problema, entre em contato conosco立即.",
+        "pt": "Se ocorrer um problema, entre em contato conosco imediatamente.",
         "he": "אם מתרחשת בעיה, אנא צור איתנו קשר מיד.",
         "tr": "Bir sorun oluşursa, lütfen hemen bizimle iletişime geçin.",
         "vi": "Nếu có vấn đề xảy ra, vui lòng liên hệ với chúng tôi ngay lập tức.",
@@ -699,19 +742,596 @@
     "content_reviewers": [
       "mediawiki-visible-revision"
     ],
-    "last_reviewed_utc": "2026-06-21T18:23:39Z",
-    "approval_source": "mediawiki_visible_revision",
+    "last_reviewed_utc": "2026-10-11T09:01:59Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
     "wiki": {
       "title": "Item:Ja n5/c3c4257acd8accb5",
-      "revision_id": 57892,
-      "parent_revision_id": 36336,
-      "revision_timestamp_utc": "2026-06-21T18:23:39Z",
-      "revision_user": "VocomiBot",
-      "revision_comment": "Sync ja_n5 item 問題",
-      "pulled_utc": "2026-06-21T20:53:45Z",
-      "applied_utc": "2026-06-21T20:53:59Z",
+      "revision_id": 83006,
+      "parent_revision_id": 79122,
+      "revision_timestamp_utc": "2026-10-11T09:01:59Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Suggest reviewed Japanese and translation corrections",
+      "pulled_utc": "2026-10-17T07:37:39Z",
+      "applied_utc": "2026-10-17T07:37:56Z",
       "applied_by": "vocomipedia-apply-pulled"
-    }
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-75b89d0460cb56aa",
+        "status": "applied",
+        "type": "ruby_update",
+        "item_id": "ja_n5:c3c4257acd8accb5",
+        "pack_code": "ja_n5",
+        "entry_id": "問題",
+        "language": "ja",
+        "sentence_index": 3,
+        "old_sentence": "時間がない！最後の問題を急いで解こう。",
+        "old_translations": {
+          "en": "There's no time! Let's hurry and solve the last problem.",
+          "es": "¡No hay tiempo! Apresurémonos a resolver el último problema.",
+          "fr": "On n’a pas le temps ! Hâtons-nous de résoudre le dernier problème.",
+          "de": "Es ist keine Zeit! Beeilen wir uns, die letzte Aufgabe zu lösen.",
+          "it": "Non c'è tempo! Affrettiamoci a risolvere l'ultima domanda.",
+          "ko": "시간이 없어요! 마지막 문제를 풀기 위해 서두르자.",
+          "zh-Hans": "没时间了！我们赶紧解决最后一道题吧。",
+          "yue": "冇時間喇！我哋快啲解埋最後一條問題啦。",
+          "ru": "Нет времени! Давайте поскорее решим последнюю задачу.",
+          "pt": "Não há tempo! Vamos nos apressar para resolver o último problema.",
+          "he": "אין זמן! בואו נמהר לפתור את הבעיה האחרונה.",
+          "tr": "Zaman yok! Son soruyu çözmek için acele edelim.",
+          "vi": "Không còn thời gian! Hãy nhanh chóng giải câu cuối cùng.",
+          "ar": "ليس هناك وقت! فلنسرع في حل المسألة الأخيرة.",
+          "nl": "Er is geen tijd! Laten we ons haasten om de laatste vraag op te lossen.",
+          "uk": "Немає часу! Давайте поспішимо розв’язати останню задачу.",
+          "hu": "Nincs idő! Siessünk, és oldjuk meg az utolsó feladatot.",
+          "hi": "समय नहीं है! चलो जल्दी से आखिरी सवाल हल करें।",
+          "pl": "Nie ma czasu! Pospieszmy się, aby rozwiązać ostatni problem.",
+          "el": "Δεν υπάρχει χρόνος! Ας βιαστούμε να λύσουμε το τελευταίο πρόβλημα.",
+          "nb": "Det er ikke tid! La oss skynde oss å løse det siste problemet.",
+          "id": "Tidak ada waktu! Mari kita cepat menyelesaikan soal terakhir.",
+          "sv": "Det finns ingen tid! Låt oss skynda oss att lösa den sista uppgiften.",
+          "ro": "Nu este timp! Să ne grăbim să rezolvăm ultima problemă.",
+          "cs": "Není čas! Pospěšme si vyřešit poslední úlohu.",
+          "da": "Der er ikke tid! Lad os skynde os at løse det sidste problem.",
+          "fi": "Ei ole aikaa! Kiirehditään ratkaisemaan viimeinen tehtävä."
+        },
+        "proposed_sentence": "時間がない！最後の問題を急いで解こう。",
+        "proposed_translations": {
+          "en": "There's no time! Let's hurry and solve the last problem.",
+          "es": "¡No hay tiempo! Apresurémonos a resolver el último problema.",
+          "fr": "On n’a pas le temps ! Hâtons-nous de résoudre le dernier problème.",
+          "de": "Es ist keine Zeit! Beeilen wir uns, die letzte Aufgabe zu lösen.",
+          "it": "Non c'è tempo! Affrettiamoci a risolvere l'ultima domanda.",
+          "ko": "시간이 없어요! 마지막 문제를 풀기 위해 서두르자.",
+          "zh-Hans": "没时间了！我们赶紧解决最后一道题吧。",
+          "yue": "冇時間喇！我哋快啲解埋最後一條問題啦。",
+          "ru": "Нет времени! Давайте поскорее решим последнюю задачу.",
+          "pt": "Não há tempo! Vamos nos apressar para resolver o último problema.",
+          "he": "אין זמן! בואו נמהר לפתור את הבעיה האחרונה.",
+          "tr": "Zaman yok! Son soruyu çözmek için acele edelim.",
+          "vi": "Không còn thời gian! Hãy nhanh chóng giải câu cuối cùng.",
+          "ar": "ليس هناك وقت! فلنسرع في حل المسألة الأخيرة.",
+          "nl": "Er is geen tijd! Laten we ons haasten om de laatste vraag op te lossen.",
+          "uk": "Немає часу! Давайте поспішимо розв’язати останню задачу.",
+          "hu": "Nincs idő! Siessünk, és oldjuk meg az utolsó feladatot.",
+          "hi": "समय नहीं है! चलो जल्दी से आखिरी सवाल हल करें।",
+          "pl": "Nie ma czasu! Pospieszmy się, aby rozwiązać ostatni problem.",
+          "el": "Δεν υπάρχει χρόνος! Ας βιαστούμε να λύσουμε το τελευταίο πρόβλημα.",
+          "nb": "Det er ikke tid! La oss skynde oss å løse det siste problemet.",
+          "id": "Tidak ada waktu! Mari kita cepat menyelesaikan soal terakhir.",
+          "sv": "Det finns ingen tid! Låt oss skynda oss att lösa den sista uppgiften.",
+          "ro": "Nu este timp! Să ne grăbim să rezolvăm ultima problemă.",
+          "cs": "Není čas! Pospěšme si vyřešit poslední úlohu.",
+          "da": "Der er ikke tid! Lad os skynde os at løse det sidste problem.",
+          "fi": "Ei ole aikaa! Kiirehditään ratkaisemaan viimeinen tehtävä."
+        },
+        "old_ruby_source": "時間[じかん]がない！最後[さいご]の問題[もんだい]を急[急]いで解[と]こう。",
+        "proposed_ruby_source": "時間[じかん]がない！最後[さいご]の問題[もんだい]を急[いそ]いで解[と]こう。",
+        "old_japanese": "時間がない！最後の問題を急いで解こう。",
+        "old_english": "There's no time! Let's hurry and solve the last problem.",
+        "proposed_japanese": "時間がない！最後の問題を急いで解こう。",
+        "proposed_english": "There's no time! Let's hurry and solve the last problem.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "ja",
+          "sentence": "時間がない！最後の問題を急いで解こう。",
+          "tokens": [
+            {
+              "surface": "時間",
+              "lemma": "時間",
+              "pos": "名詞/普通名詞/助数詞可能/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 0,
+              "end": 2,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "じかん",
+              "ruby_text": "時間[じかん]",
+              "ruby_spans": [
+                {
+                  "base": "時間",
+                  "reading": "じかん",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "じかん",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "が",
+              "lemma": "が",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 2,
+              "end": 3,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "が",
+              "ruby_text": "が",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "が"
+            },
+            {
+              "surface": "ない",
+              "lemma": "ない",
+              "pos": "形容詞/非自立可能/*/*/形容詞/終止形-一般",
+              "upos": "ADJ",
+              "xpos": "形容詞",
+              "feats": {},
+              "start": 3,
+              "end": 5,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "ない",
+              "ruby_text": "ない",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "ない"
+            },
+            {
+              "surface": "！",
+              "lemma": "!",
+              "pos": "補助記号/句点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 5,
+              "end": 6,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "!",
+              "ruby_text": "！",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "!"
+            },
+            {
+              "surface": "最後",
+              "lemma": "最後",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 6,
+              "end": 8,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "さいご",
+              "ruby_text": "最後[さいご]",
+              "ruby_spans": [
+                {
+                  "base": "最後",
+                  "reading": "さいご",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "さいご",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "の",
+              "lemma": "の",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 8,
+              "end": 9,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "の",
+              "ruby_text": "の",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "の"
+            },
+            {
+              "surface": "問題",
+              "lemma": "問題",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 9,
+              "end": 11,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "もんだい",
+              "ruby_text": "問題[もんだい]",
+              "ruby_spans": [
+                {
+                  "base": "問題",
+                  "reading": "もんだい",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "もんだい",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "を",
+              "lemma": "を",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 11,
+              "end": 12,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "を",
+              "ruby_text": "を",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "を"
+            },
+            {
+              "surface": "急い",
+              "lemma": "急ぐ",
+              "pos": "動詞/一般/*/*/五段-ガ行/連用形-イ音便",
+              "upos": "VERB",
+              "xpos": "動詞",
+              "feats": {},
+              "start": 12,
+              "end": 14,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "いそい",
+              "ruby_text": "急[いそ]い",
+              "ruby_spans": [
+                {
+                  "base": "急",
+                  "reading": "いそ",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "いそい",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "で",
+              "lemma": "で",
+              "pos": "助詞/接続助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 14,
+              "end": 15,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "で",
+              "ruby_text": "で",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "で"
+            },
+            {
+              "surface": "解こう",
+              "lemma": "解く",
+              "pos": "動詞/一般/*/*/五段-カ行/意志推量形",
+              "upos": "VERB",
+              "xpos": "動詞",
+              "feats": {},
+              "start": 15,
+              "end": 18,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "とこう",
+              "ruby_text": "解[と]こう",
+              "ruby_spans": [
+                {
+                  "base": "解",
+                  "reading": "と",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "とこう",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "。",
+              "lemma": "。",
+              "pos": "補助記号/句点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 18,
+              "end": 19,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "。",
+              "ruby_text": "。",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "。"
+            }
+          ],
+          "reading": "じかんがない!さいごのもんだいをいそいでとこう。",
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "warnings": [
+            "mediawiki ruby hints applied"
+          ]
+        },
+        "generated_tokens": [
+          {
+            "surface": "時間",
+            "lemma": "時間",
+            "pos": "名詞/普通名詞/助数詞可能/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "じかん",
+            "ruby_text": "時間[じかん]",
+            "ruby_spans": [
+              {
+                "base": "時間",
+                "reading": "じかん",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "じかん",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "が",
+            "lemma": "が",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 2,
+            "end": 3,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "が",
+            "ruby_text": "が",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "が"
+          },
+          {
+            "surface": "ない",
+            "lemma": "ない",
+            "pos": "形容詞/非自立可能/*/*/形容詞/終止形-一般",
+            "upos": "ADJ",
+            "xpos": "形容詞",
+            "feats": {},
+            "start": 3,
+            "end": 5,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ない",
+            "ruby_text": "ない",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "ない"
+          },
+          {
+            "surface": "！",
+            "lemma": "!",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 5,
+            "end": 6,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "!",
+            "ruby_text": "！",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "!"
+          },
+          {
+            "surface": "最後",
+            "lemma": "最後",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 6,
+            "end": 8,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "さいご",
+            "ruby_text": "最後[さいご]",
+            "ruby_spans": [
+              {
+                "base": "最後",
+                "reading": "さいご",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "さいご",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "の",
+            "lemma": "の",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 8,
+            "end": 9,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "の",
+            "ruby_text": "の",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "の"
+          },
+          {
+            "surface": "問題",
+            "lemma": "問題",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 9,
+            "end": 11,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "もんだい",
+            "ruby_text": "問題[もんだい]",
+            "ruby_spans": [
+              {
+                "base": "問題",
+                "reading": "もんだい",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "もんだい",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "を",
+            "lemma": "を",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 11,
+            "end": 12,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "を",
+            "ruby_text": "を",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "を"
+          },
+          {
+            "surface": "急い",
+            "lemma": "急ぐ",
+            "pos": "動詞/一般/*/*/五段-ガ行/連用形-イ音便",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 12,
+            "end": 14,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "いそい",
+            "ruby_text": "急[いそ]い",
+            "ruby_spans": [
+              {
+                "base": "急",
+                "reading": "いそ",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "いそい",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "で",
+            "lemma": "で",
+            "pos": "助詞/接続助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 14,
+            "end": 15,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "で",
+            "ruby_text": "で",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "で"
+          },
+          {
+            "surface": "解こう",
+            "lemma": "解く",
+            "pos": "動詞/一般/*/*/五段-カ行/意志推量形",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 15,
+            "end": 18,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "とこう",
+            "ruby_text": "解[と]こう",
+            "ruby_spans": [
+              {
+                "base": "解",
+                "reading": "と",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "とこう",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 18,
+            "end": 19,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
+          }
+        ],
+        "generated_reading": "じかんがない!さいごのもんだいをいそいでとこう。",
+        "analyzer": "sudachipy_sudachidict_core_c",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:37:39Z",
+        "updated_utc": "2026-10-17T07:38:14Z",
+        "applied_utc": "2026-10-17T07:38:14Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:38:14Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -952,12 +1572,14 @@
         "tokens": [
           {
             "surface": "時間",
-            "surface_en": "time",
-            "furigana": "じかん",
-            "pos": "noun",
             "lemma": "時間",
-            "difficulty": 8,
-            "explanation": "Refers to the available time before a deadline or event.",
+            "pos": "名詞/普通名詞/助数詞可能/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "じかん",
             "ruby_text": "時間[じかん]",
             "ruby_spans": [
@@ -968,59 +1590,68 @@
                 "length": 2
               }
             ],
-            "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "ruby_confidence": "reviewed",
+            "furigana": "じかん",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "が",
-            "surface_en": "(subject marker)",
-            "furigana": "が",
-            "pos": "particle",
             "lemma": "が",
-            "difficulty": 1,
-            "explanation": "Marks '時間' as the subject that is lacking.",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 2,
+            "end": 3,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "が",
             "ruby_text": "が",
             "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "が"
           },
           {
             "surface": "ない",
-            "surface_en": "there is no",
-            "furigana": "ない",
-            "pos": "adjective",
             "lemma": "ない",
-            "difficulty": 1,
-            "explanation": "I-adjective indicating nonexistence or absence of time.",
+            "pos": "形容詞/非自立可能/*/*/形容詞/終止形-一般",
+            "upos": "ADJ",
+            "xpos": "形容詞",
+            "feats": {},
+            "start": 3,
+            "end": 5,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "ない",
             "ruby_text": "ない",
             "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "ない"
           },
           {
             "surface": "！",
-            "surface_en": "!",
-            "furigana": "！",
-            "pos": "punctuation",
-            "lemma": "！",
-            "difficulty": 1,
-            "explanation": "Exclamation mark expressing urgency.",
-            "reading_kana": "！",
+            "lemma": "!",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 5,
+            "end": 6,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "!",
             "ruby_text": "！",
             "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "!"
           },
           {
             "surface": "最後",
-            "surface_en": "last",
-            "furigana": "さいご",
-            "pos": "noun",
             "lemma": "最後",
-            "difficulty": 10,
-            "explanation": "Denotes the final item in a sequence.",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 6,
+            "end": 8,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "さいご",
             "ruby_text": "最後[さいご]",
             "ruby_spans": [
@@ -1031,32 +1662,36 @@
                 "length": 2
               }
             ],
-            "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "ruby_confidence": "reviewed",
+            "furigana": "さいご",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "の",
-            "surface_en": "of",
-            "furigana": "の",
-            "pos": "particle",
             "lemma": "の",
-            "difficulty": 1,
-            "explanation": "Genitive particle linking '最後' to '問題' to form 'the last problem'.",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 8,
+            "end": 9,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "の",
             "ruby_text": "の",
             "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "の"
           },
           {
             "surface": "問題",
-            "surface_en": "problem",
-            "furigana": "もんだい",
-            "pos": "noun",
             "lemma": "問題",
-            "difficulty": 13,
-            "explanation": "The specific question to be solved.",
-            "is_main_word": true,
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 9,
+            "end": 11,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "もんだい",
             "ruby_text": "問題[もんだい]",
             "ruby_spans": [
@@ -1067,52 +1702,77 @@
                 "length": 2
               }
             ],
-            "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "ruby_confidence": "reviewed",
+            "furigana": "もんだい",
+            "ruby_source": "mediawiki_sentence_ruby",
+            "is_main_word": true
           },
           {
             "surface": "を",
-            "surface_en": "(object marker)",
-            "furigana": "を",
-            "pos": "particle",
             "lemma": "を",
-            "difficulty": 1,
-            "explanation": "Marks '最後の問題' as the direct object of the verb phrase.",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 11,
+            "end": 12,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "を",
             "ruby_text": "を",
             "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "を"
           },
           {
-            "surface": "急いで",
-            "surface_en": "in a hurry",
-            "furigana": "急いで",
-            "pos": "verb (te-form)",
+            "surface": "急い",
             "lemma": "急ぐ",
-            "difficulty": 1,
-            "explanation": "Te-form of '急ぐ', used adverbially to indicate doing something in a hurry.",
-            "reading_kana": "急いで",
-            "ruby_text": "急[急]いで",
+            "pos": "動詞/一般/*/*/五段-ガ行/連用形-イ音便",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 12,
+            "end": 14,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "いそい",
+            "ruby_text": "急[いそ]い",
             "ruby_spans": [
               {
                 "base": "急",
-                "reading": "急",
+                "reading": "いそ",
                 "start": 0,
                 "length": 1
               }
             ],
+            "ruby_confidence": "reviewed",
+            "furigana": "いそい",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "で",
+            "lemma": "で",
+            "pos": "助詞/接続助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 14,
+            "end": 15,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "で",
+            "ruby_text": "で",
+            "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "で"
           },
           {
             "surface": "解こう",
-            "surface_en": "let's solve",
-            "furigana": "とこう",
-            "pos": "verb",
             "lemma": "解く",
-            "difficulty": 1,
-            "explanation": "Volitional form of '解く', expressing the speaker's intention or suggestion to solve.",
+            "pos": "動詞/一般/*/*/五段-カ行/意志推量形",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 15,
+            "end": 18,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "とこう",
             "ruby_text": "解[と]こう",
             "ruby_spans": [
@@ -1123,22 +1783,25 @@
                 "length": 1
               }
             ],
-            "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "ruby_confidence": "reviewed",
+            "furigana": "とこう",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "。",
-            "surface_en": ".",
-            "furigana": "。",
-            "pos": "punctuation",
             "lemma": "。",
-            "difficulty": 1,
-            "explanation": "Period marking the end of the sentence.",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 18,
+            "end": 19,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "。",
             "ruby_text": "。",
             "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "。"
           }
         ],
         "difficulty_aggregated": 1
@@ -1314,13 +1977,13 @@
     ],
     "da": [
       "Dette problem er let.",
-      "Lærer, jeg forstår ikke det spørgsmål.",
+      "Undskyld, jeg forstår ikke det spørgsmål.",
       "Der er ikke tid! Lad os skynde os at løse det sidste problem.",
       "Hvis der opstår et problem, bedes du kontakte os med det samme."
     ],
     "de": [
       "Dieses Problem ist einfach.",
-      "Herr Lehrer, ich verstehe diese Frage nicht.",
+      "Entschuldigung, ich verstehe diese Aufgabe nicht.",
       "Es ist keine Zeit! Beeilen wir uns, die letzte Aufgabe zu lösen.",
       "Sollte ein Problem auftreten, kontaktieren Sie uns bitte umgehend."
     ],
@@ -1332,8 +1995,8 @@
     ],
     "en": [
       "This problem is easy.",
-      "Teacher, I don't understand that question.",
-      "There's no time! Let's hurry to solve the last problem.",
+      "Excuse me, I don't understand that problem.",
+      "There's no time! Let's hurry and solve the last problem.",
       "If a problem occurs, please contact us immediately."
     ],
     "es": [
@@ -1392,7 +2055,7 @@
     ],
     "nb": [
       "Dette problemet er enkelt.",
-      "Lærer, jeg forstår ikke det spørsmålet.",
+      "Unnskyld, jeg forstår ikke det spørsmålet.",
       "Det er ikke tid! La oss skynde oss å løse det siste problemet.",
       "Hvis det oppstår et problem, vennligst kontakt oss umiddelbart."
     ],
@@ -1412,7 +2075,7 @@
       "Este problema é fácil.",
       "Professor, eu não entendo essa pergunta.",
       "Não há tempo! Vamos nos apressar para resolver o último problema.",
-      "Se ocorrer um problema, entre em contato conosco立即."
+      "Se ocorrer um problema, entre em contato conosco imediatamente."
     ],
     "ro": [
       "Această problemă este ușoară.",
@@ -1423,12 +2086,12 @@
     "ru": [
       "Эта задача простая.",
       "Учитель, я не понимаю тот вопрос.",
-      "Нет времени! Давайте поскорее решить последнюю задачу.",
+      "Нет времени! Давайте поскорее решим последнюю задачу.",
       "Если возникнет проблема, немедленно свяжитесь с нами."
     ],
     "sv": [
       "Det här problemet är enkelt.",
-      "Lärare, jag förstår не den frågan.",
+      "Ursäkta, jag förstår inte den frågan.",
       "Det finns ingen tid! Låt oss skynda oss att lösa den sista uppgiften.",
       "Om ett problem uppstår, vänligen kontakta oss omedelbart."
     ],
@@ -1453,7 +2116,7 @@
     "yue": [
       "呢個問題好簡單。",
       "老師，我唔明嗰條題。",
-      "冇時間喇！等我哋趕快解決最後一條題。",
+      "冇時間喇！我哋快啲解埋最後一條問題啦。",
       "如果出現問題，請立即同我哋聯絡。"
     ],
     "zh-Hans": [

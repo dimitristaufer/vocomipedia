@@ -137,10 +137,10 @@
       "difficulty": 5
     },
     {
-      "target": "Meine Eltern wollen eine Scheidung.",
+      "target": "Meine Eltern wollen sich scheiden lassen.",
       "reading": "/ˈmaɪ̯nə ˈʔɛltɐn ˈvɔlən ˈaɪ̯nə ˈʃaɪ̯dʊŋ/",
       "translations": {
-        "de": "Meine Eltern wollen eine Scheidung.",
+        "de": "Meine Eltern wollen sich scheiden lassen.",
         "ipa": "/ˈmaɪ̯nə ˈʔɛltɐn ˈvɔlən ˈaɪ̯nə ˈʃaɪ̯dʊŋ/",
         "en": "My parents want a divorce.",
         "es": "Mis padres quieren divorciarse.",
@@ -173,49 +173,80 @@
       "tokens": [
         {
           "surface": "Meine",
-          "surface_en": "my",
-          "furigana": "[ˈmaɪ̯nə]",
-          "pos": "DET",
           "lemma": "mein",
-          "explanation": "Possessive determiner agreeing with 'Eltern' (plural, nominative); marks possession.",
-          "difficulty": 7
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "PPOSAT",
+          "feats": {},
+          "start": 0,
+          "end": 5,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "Eltern",
-          "surface_en": "parents",
-          "furigana": "[ˈɛltɐn]",
-          "pos": "NOUN",
           "lemma": "Eltern",
-          "explanation": "Common noun (plural, nominative); subject of the clause.",
-          "difficulty": 7
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 6,
+          "end": 12,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "wollen",
-          "surface_en": "want",
-          "furigana": "[ˈvɔlən]",
-          "pos": "AUX",
           "lemma": "wollen",
-          "explanation": "Modal auxiliary (3rd pl, present) expressing desire; serves as predicate with an understood infinitival complement.",
-          "difficulty": 7
+          "pos": "AUX",
+          "upos": "AUX",
+          "xpos": "VMFIN",
+          "feats": {},
+          "start": 13,
+          "end": 19,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "eine",
-          "surface_en": "a",
-          "furigana": "[ˈaɪ̯nə]",
-          "pos": "DET",
-          "lemma": "ein",
-          "explanation": "Indefinite article (feminine, singular, accusative) modifying 'Scheidung'.",
-          "difficulty": 2
+          "surface": "sich",
+          "lemma": "sich",
+          "pos": "PRON",
+          "upos": "PRON",
+          "xpos": "PRF",
+          "feats": {},
+          "start": 20,
+          "end": 24,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "Scheidung.",
-          "surface_en": "divorce",
-          "furigana": "[ˈʃaɪ̯dʊŋ]",
-          "pos": "NOUN",
-          "lemma": "Scheidung",
-          "explanation": "Common noun (feminine, singular, accusative); direct object (the thing wanted).",
-          "difficulty": 10,
-          "is_main_word": true
+          "surface": "scheiden",
+          "lemma": "scheiden",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VVINF",
+          "feats": {},
+          "start": 25,
+          "end": 33,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "lassen",
+          "lemma": "lassen",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VVINF",
+          "feats": {},
+          "start": 34,
+          "end": 40,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 40,
+          "end": 41,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 6.6
@@ -409,8 +440,292 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-15T03:14:55Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:De b1/4b512ee11715e12d",
+      "revision_id": 85062,
+      "parent_revision_id": 17570,
+      "revision_timestamp_utc": "2026-10-15T03:14:55Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Use the idiomatic German construction for wanting a divorce",
+      "pulled_utc": "2026-10-17T07:06:38Z",
+      "applied_utc": "2026-10-17T07:06:50Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-cd622b8666ab13a9",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_b1:4b512ee11715e12d",
+        "pack_code": "de_b1",
+        "entry_id": "Scheidung",
+        "language": "de",
+        "sentence_index": 2,
+        "old_sentence": "Meine Eltern wollen eine Scheidung.",
+        "old_translations": {
+          "de": "Meine Eltern wollen eine Scheidung.",
+          "ipa": "/ˈmaɪ̯nə ˈʔɛltɐn ˈvɔlən ˈaɪ̯nə ˈʃaɪ̯dʊŋ/",
+          "en": "My parents want a divorce.",
+          "es": "Mis padres quieren divorciarse.",
+          "fr": "Mes parents veulent divorcer.",
+          "it": "I miei genitori vogliono divorziare.",
+          "ko": "부모님이 이혼하려고 해요.",
+          "zh-Hans": "我父母想离婚。",
+          "yue": "我爸媽想離婚。",
+          "ru": "Мои родители хотят развестись.",
+          "pt": "Meus pais querem se divorciar.",
+          "he": "ההורים שלי רוצים להתגרש.",
+          "tr": "Annemle babam boşanmak istiyor.",
+          "vi": "Bố mẹ tôi muốn ly hôn.",
+          "ar": "والداي يريدان الطلاق.",
+          "nl": "Mijn ouders willen scheiden.",
+          "uk": "Мої батьки хочуть розлучитися.",
+          "hu": "A szüleim el akarnak válni.",
+          "hi": "मेरे माता-पिता तलाक लेना चाहते हैं।",
+          "pl": "Moi rodzice chcą się rozwieść.",
+          "el": "Οι γονείς μου θέλουν να χωρίσουν.",
+          "nb": "Foreldrene mine vil skilles.",
+          "id": "Orang tua saya ingin bercerai.",
+          "sv": "Mina föräldrar vill skiljas.",
+          "ro": "Părinții mei vor să divorțeze.",
+          "cs": "Moji rodiče se chtějí rozvést.",
+          "da": "Mine forældre vil skilles.",
+          "fi": "Vanhempani haluavat erota.",
+          "ja": "両親は離婚したがっています。"
+        },
+        "proposed_sentence": "Meine Eltern wollen sich scheiden lassen.",
+        "proposed_translations": {
+          "de": "Meine Eltern wollen sich scheiden lassen.",
+          "ipa": "/ˈmaɪ̯nə ˈʔɛltɐn ˈvɔlən ˈaɪ̯nə ˈʃaɪ̯dʊŋ/",
+          "en": "My parents want a divorce.",
+          "es": "Mis padres quieren divorciarse.",
+          "fr": "Mes parents veulent divorcer.",
+          "it": "I miei genitori vogliono divorziare.",
+          "ko": "부모님이 이혼하려고 해요.",
+          "zh-Hans": "我父母想离婚。",
+          "yue": "我爸媽想離婚。",
+          "ru": "Мои родители хотят развестись.",
+          "pt": "Meus pais querem se divorciar.",
+          "he": "ההורים שלי רוצים להתגרש.",
+          "tr": "Annemle babam boşanmak istiyor.",
+          "vi": "Bố mẹ tôi muốn ly hôn.",
+          "ar": "والداي يريدان الطلاق.",
+          "nl": "Mijn ouders willen scheiden.",
+          "uk": "Мої батьки хочуть розлучитися.",
+          "hu": "A szüleim el akarnak válni.",
+          "hi": "मेरे माता-पिता तलाक लेना चाहते हैं।",
+          "pl": "Moi rodzice chcą się rozwieść.",
+          "el": "Οι γονείς μου θέλουν να χωρίσουν.",
+          "nb": "Foreldrene mine vil skilles.",
+          "id": "Orang tua saya ingin bercerai.",
+          "sv": "Mina föräldrar vill skiljas.",
+          "ro": "Părinții mei vor să divorțeze.",
+          "cs": "Moji rodiče se chtějí rozvést.",
+          "da": "Mine forældre vil skilles.",
+          "fi": "Vanhempani haluavat erota.",
+          "ja": "両親は離婚したがっています。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Meine Eltern wollen sich scheiden lassen.",
+        "old_japanese": "Meine Eltern wollen eine Scheidung.",
+        "old_english": "My parents want a divorce.",
+        "proposed_japanese": "Meine Eltern wollen sich scheiden lassen.",
+        "proposed_english": "My parents want a divorce.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Meine Eltern wollen sich scheiden lassen.",
+          "tokens": [
+            {
+              "surface": "Meine",
+              "lemma": "mein",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "PPOSAT",
+              "feats": {},
+              "start": 0,
+              "end": 5,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Eltern",
+              "lemma": "Eltern",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 6,
+              "end": 12,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "wollen",
+              "lemma": "wollen",
+              "pos": "AUX",
+              "upos": "AUX",
+              "xpos": "VMFIN",
+              "feats": {},
+              "start": 13,
+              "end": 19,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "sich",
+              "lemma": "sich",
+              "pos": "PRON",
+              "upos": "PRON",
+              "xpos": "PRF",
+              "feats": {},
+              "start": 20,
+              "end": 24,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "scheiden",
+              "lemma": "scheiden",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVINF",
+              "feats": {},
+              "start": 25,
+              "end": 33,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "lassen",
+              "lemma": "lassen",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVINF",
+              "feats": {},
+              "start": 34,
+              "end": 40,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 40,
+              "end": 41,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Meine",
+            "lemma": "mein",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "PPOSAT",
+            "feats": {},
+            "start": 0,
+            "end": 5,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Eltern",
+            "lemma": "Eltern",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 6,
+            "end": 12,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "wollen",
+            "lemma": "wollen",
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "VMFIN",
+            "feats": {},
+            "start": 13,
+            "end": 19,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "sich",
+            "lemma": "sich",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PRF",
+            "feats": {},
+            "start": 20,
+            "end": 24,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "scheiden",
+            "lemma": "scheiden",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVINF",
+            "feats": {},
+            "start": 25,
+            "end": 33,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "lassen",
+            "lemma": "lassen",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVINF",
+            "feats": {},
+            "start": 34,
+            "end": 40,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 40,
+            "end": 41,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:06:38Z",
+        "updated_utc": "2026-10-17T07:07:06Z",
+        "applied_utc": "2026-10-17T07:07:06Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:07:06Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -422,34 +737,6 @@
     "word": "Scheidung",
     "word_reading": "",
     "word_label": "Substantiv (die fem.)",
-    "word_en": "divorce",
-    "word_es": "divorcio",
-    "word_fr": "divorce",
-    "word_it": "divorzio",
-    "word_ko": "이혼",
-    "word_zh-Hans": "离婚",
-    "word_yue": "離婚",
-    "word_ru": "развод",
-    "word_pt": "divórcio",
-    "word_he": "גירושין",
-    "word_tr": "boşanma",
-    "word_vi": "ly hôn",
-    "word_ar": "طلاق",
-    "word_nl": "echtscheiding",
-    "word_uk": "розлучення",
-    "word_hu": "válás",
-    "word_hi": "तलाक",
-    "word_pl": "rozwód",
-    "word_el": "διαζύγιο",
-    "word_nb": "skilsmisse",
-    "word_id": "perceraian",
-    "word_sv": "skilsmässa",
-    "word_ro": "divorț",
-    "word_cs": "rozvod",
-    "word_da": "skilsmisse",
-    "word_fi": "avioero",
-    "word_ja": "離婚",
-    "word_de": "Scheidung",
     "comic_difficulty": 5.97,
     "jp": [
       "Ich habe Angst vor der Scheidung.",
@@ -462,24 +749,6 @@
       "/ˈmaɪ̯nə ˈʔɛltɐn ˈvɔlən ˈaɪ̯nə ˈʃaɪ̯dʊŋ/",
       "/diː ˈʃaɪ̯dʊŋ ˈdaʊ̯ɐt ˈlaɪ̯dɐ zeːɐ ˈlaŋə/",
       "/ziː hat diː ˈʃaɪ̯dʊŋ ˈaɪ̯nɡəʁaɪ̯çt/"
-    ],
-    "de": [
-      "Ich habe Angst vor der Scheidung.",
-      "Meine Eltern wollen eine Scheidung.",
-      "Die Scheidung dauert leider sehr lange.",
-      "Sie hat die Scheidung eingereicht."
-    ],
-    "ipa": [
-      "/ɪç ˈhaːbə aŋst fɔʁ deːɐ ˈʃaɪ̯dʊŋ/",
-      "/ˈmaɪ̯nə ˈʔɛltɐn ˈvɔlən ˈaɪ̯nə ˈʃaɪ̯dʊŋ/",
-      "/diː ˈʃaɪ̯dʊŋ ˈdaʊ̯ɐt ˈlaɪ̯dɐ zeːɐ ˈlaŋə/",
-      "/ziː hat diː ˈʃaɪ̯dʊŋ ˈaɪ̯nɡəʁaɪ̯çt/"
-    ],
-    "en": [
-      "I am afraid of the divorce.",
-      "My parents want a divorce.",
-      "The divorce is taking a very long time.",
-      "She has filed for divorce."
     ],
     "pos_analysis": [
       {
@@ -544,53 +813,84 @@
         "difficulty_aggregated": 5
       },
       {
-        "sentence": "Meine Eltern wollen eine Scheidung.",
+        "sentence": "Meine Eltern wollen sich scheiden lassen.",
         "tokens": [
           {
             "surface": "Meine",
-            "surface_en": "my",
-            "furigana": "[ˈmaɪ̯nə]",
-            "pos": "DET",
             "lemma": "mein",
-            "explanation": "Possessive determiner agreeing with 'Eltern' (plural, nominative); marks possession.",
-            "difficulty": 7
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "PPOSAT",
+            "feats": {},
+            "start": 0,
+            "end": 5,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "Eltern",
-            "surface_en": "parents",
-            "furigana": "[ˈɛltɐn]",
-            "pos": "NOUN",
             "lemma": "Eltern",
-            "explanation": "Common noun (plural, nominative); subject of the clause.",
-            "difficulty": 7
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 6,
+            "end": 12,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "wollen",
-            "surface_en": "want",
-            "furigana": "[ˈvɔlən]",
-            "pos": "AUX",
             "lemma": "wollen",
-            "explanation": "Modal auxiliary (3rd pl, present) expressing desire; serves as predicate with an understood infinitival complement.",
-            "difficulty": 7
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "VMFIN",
+            "feats": {},
+            "start": 13,
+            "end": 19,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "eine",
-            "surface_en": "a",
-            "furigana": "[ˈaɪ̯nə]",
-            "pos": "DET",
-            "lemma": "ein",
-            "explanation": "Indefinite article (feminine, singular, accusative) modifying 'Scheidung'.",
-            "difficulty": 2
+            "surface": "sich",
+            "lemma": "sich",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PRF",
+            "feats": {},
+            "start": 20,
+            "end": 24,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "Scheidung.",
-            "surface_en": "divorce",
-            "furigana": "[ˈʃaɪ̯dʊŋ]",
-            "pos": "NOUN",
-            "lemma": "Scheidung",
-            "explanation": "Common noun (feminine, singular, accusative); direct object (the thing wanted).",
-            "difficulty": 10,
-            "is_main_word": true
+            "surface": "scheiden",
+            "lemma": "scheiden",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVINF",
+            "feats": {},
+            "start": 25,
+            "end": 33,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "lassen",
+            "lemma": "lassen",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVINF",
+            "feats": {},
+            "start": 34,
+            "end": 40,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 40,
+            "end": 41,
+            "analyzer": "spacy_de_core_news_lg"
           }
         ],
         "difficulty_aggregated": 6.6
@@ -709,137 +1009,41 @@
         "difficulty_aggregated": 5.6
       }
     ],
-    "es": [
-      "Me da miedo el divorcio.",
-      "Mis padres quieren divorciarse.",
-      "Por desgracia, el divorcio está tardando mucho.",
-      "Ha pedido el divorcio."
-    ],
-    "fr": [
-      "Le divorce me fait peur.",
-      "Mes parents veulent divorcer.",
-      "Malheureusement, le divorce prend beaucoup de temps.",
-      "Elle a demandé le divorce."
-    ],
-    "it": [
-      "Ho paura del divorzio.",
-      "I miei genitori vogliono divorziare.",
-      "Purtroppo il divorzio sta durando molto.",
-      "Ha chiesto il divorzio."
-    ],
-    "ko": [
-      "이혼이 두려워요.",
-      "부모님이 이혼하려고 해요.",
-      "안타깝게도 이혼 절차가 너무 오래 걸리고 있어요.",
-      "그녀는 이혼을 신청했어요."
-    ],
-    "zh-Hans": [
-      "我害怕离婚。",
-      "我父母想离婚。",
-      "不幸的是，离婚手续拖得很久。",
-      "她已经提出离婚。"
-    ],
-    "yue": [
-      "我好驚離婚。",
-      "我爸媽想離婚。",
-      "可惜離婚手續拖得好耐。",
-      "佢已經申請離婚。"
-    ],
-    "ru": [
-      "Я боюсь развода.",
-      "Мои родители хотят развестись.",
-      "К сожалению, развод тянется очень долго.",
-      "Она подала на развод."
-    ],
-    "pt": [
-      "Tenho medo do divórcio.",
-      "Meus pais querem se divorciar.",
-      "Infelizmente, o divórcio está demorando muito.",
-      "Ela pediu o divórcio."
-    ],
-    "he": [
-      "אני מפחד מהגירושים.",
-      "ההורים שלי רוצים להתגרש.",
-      "לצערי, הגירושים נמשכים המון זמן.",
-      "היא הגישה בקשה לגירושים."
-    ],
-    "tr": [
-      "Boşanmaktan korkuyorum.",
-      "Annemle babam boşanmak istiyor.",
-      "Maalesef boşanma çok uzun sürüyor.",
-      "Boşanma davası açtı."
-    ],
-    "vi": [
-      "Tôi sợ ly hôn.",
-      "Bố mẹ tôi muốn ly hôn.",
-      "Tiếc là việc ly hôn đang kéo dài quá lâu.",
-      "Cô ấy đã nộp đơn ly hôn."
-    ],
+    "word_POS": "Noun",
+    "entry_id": "Scheidung",
+    "word_en": "divorce",
+    "word_es": "divorcio",
+    "word_fr": "divorce",
+    "word_it": "divorzio",
+    "word_ko": "이혼",
+    "word_zh-Hans": "离婚",
+    "word_yue": "離婚",
+    "word_ru": "развод",
+    "word_pt": "divórcio",
+    "word_he": "גירושין",
+    "word_tr": "boşanma",
+    "word_vi": "ly hôn",
+    "word_ar": "طلاق",
+    "word_nl": "echtscheiding",
+    "word_uk": "розлучення",
+    "word_hu": "válás",
+    "word_hi": "तलाक",
+    "word_pl": "rozwód",
+    "word_el": "διαζύγιο",
+    "word_nb": "skilsmisse",
+    "word_id": "perceraian",
+    "word_sv": "skilsmässa",
+    "word_ro": "divorț",
+    "word_cs": "rozvod",
+    "word_da": "skilsmisse",
+    "word_fi": "avioero",
+    "word_ja": "離婚",
+    "word_de": "Scheidung",
     "ar": [
       "أنا خائف من الطلاق.",
       "والداي يريدان الطلاق.",
       "للأسف، الطلاق يستغرق وقتًا طويلًا جدًا.",
       "هي قدمت طلب طلاق."
-    ],
-    "nl": [
-      "Ik ben bang voor de scheiding.",
-      "Mijn ouders willen scheiden.",
-      "Helaas duurt de scheiding erg lang.",
-      "Ze heeft de scheiding aangevraagd."
-    ],
-    "uk": [
-      "Я боюся розлучення.",
-      "Мої батьки хочуть розлучитися.",
-      "На жаль, розлучення триває дуже довго.",
-      "Вона подала на розлучення."
-    ],
-    "hu": [
-      "Félek a válástól.",
-      "A szüleim el akarnak válni.",
-      "Sajnos a válás nagyon sokáig tart.",
-      "Beadta a válókeresetet."
-    ],
-    "hi": [
-      "मुझे तलाक से डर लगता है।",
-      "मेरे माता-पिता तलाक लेना चाहते हैं।",
-      "दुर्भाग्य से तलाक में बहुत समय लग रहा है।",
-      "उसने तलाक के लिए अर्जी दी है।"
-    ],
-    "pl": [
-      "Boję się rozwodu.",
-      "Moi rodzice chcą się rozwieść.",
-      "Niestety, rozwód trwa bardzo długo.",
-      "Złożyła pozew o rozwód."
-    ],
-    "el": [
-      "Φοβάμαι το διαζύγιο.",
-      "Οι γονείς μου θέλουν να χωρίσουν.",
-      "Δυστυχώς, το διαζύγιο διαρκεί πάρα πολύ.",
-      "Κατέθεσε αίτηση διαζυγίου."
-    ],
-    "nb": [
-      "Jeg er redd for skilsmissen.",
-      "Foreldrene mine vil skilles.",
-      "Dessverre tar skilsmissen veldig lang tid.",
-      "Hun har søkt om skilsmisse."
-    ],
-    "id": [
-      "Aku takut bercerai.",
-      "Orang tua saya ingin bercerai.",
-      "Sayangnya, proses perceraian memakan waktu lama sekali.",
-      "Dia sudah mengajukan cerai."
-    ],
-    "sv": [
-      "Jag är rädd för skilsmässan.",
-      "Mina föräldrar vill skiljas.",
-      "Tyvärr tar skilsmässan väldigt lång tid.",
-      "Hon har ansökt om skilsmässa."
-    ],
-    "ro": [
-      "Mi-e frică de divorț.",
-      "Părinții mei vor să divorțeze.",
-      "Din păcate, divorțul durează foarte mult.",
-      "Ea a depus cerere de divorț."
     ],
     "cs": [
       "Bojím se rozvodu.",
@@ -853,11 +1057,77 @@
       "Desværre tager skilsmissen meget lang tid.",
       "Hun har søgt om skilsmisse."
     ],
+    "de": [
+      "Ich habe Angst vor der Scheidung.",
+      "Meine Eltern wollen eine Scheidung.",
+      "Die Scheidung dauert leider sehr lange.",
+      "Sie hat die Scheidung eingereicht."
+    ],
+    "el": [
+      "Φοβάμαι το διαζύγιο.",
+      "Οι γονείς μου θέλουν να χωρίσουν.",
+      "Δυστυχώς, το διαζύγιο διαρκεί πάρα πολύ.",
+      "Κατέθεσε αίτηση διαζυγίου."
+    ],
+    "en": [
+      "I am afraid of the divorce.",
+      "My parents want a divorce.",
+      "The divorce is taking a very long time.",
+      "She has filed for divorce."
+    ],
+    "es": [
+      "Me da miedo el divorcio.",
+      "Mis padres quieren divorciarse.",
+      "Por desgracia, el divorcio está tardando mucho.",
+      "Ha pedido el divorcio."
+    ],
     "fi": [
       "Pelkään avioeroa.",
       "Vanhempani haluavat erota.",
       "Valitettavasti avioero kestää todella kauan.",
       "Hän on hakenut avioeroa."
+    ],
+    "fr": [
+      "Le divorce me fait peur.",
+      "Mes parents veulent divorcer.",
+      "Malheureusement, le divorce prend beaucoup de temps.",
+      "Elle a demandé le divorce."
+    ],
+    "he": [
+      "אני מפחד מהגירושים.",
+      "ההורים שלי רוצים להתגרש.",
+      "לצערי, הגירושים נמשכים המון זמן.",
+      "היא הגישה בקשה לגירושים."
+    ],
+    "hi": [
+      "मुझे तलाक से डर लगता है।",
+      "मेरे माता-पिता तलाक लेना चाहते हैं।",
+      "दुर्भाग्य से तलाक में बहुत समय लग रहा है।",
+      "उसने तलाक के लिए अर्जी दी है।"
+    ],
+    "hu": [
+      "Félek a válástól.",
+      "A szüleim el akarnak válni.",
+      "Sajnos a válás nagyon sokáig tart.",
+      "Beadta a válókeresetet."
+    ],
+    "id": [
+      "Aku takut bercerai.",
+      "Orang tua saya ingin bercerai.",
+      "Sayangnya, proses perceraian memakan waktu lama sekali.",
+      "Dia sudah mengajukan cerai."
+    ],
+    "ipa": [
+      "/ɪç ˈhaːbə aŋst fɔʁ deːɐ ˈʃaɪ̯dʊŋ/",
+      "/ˈmaɪ̯nə ˈʔɛltɐn ˈvɔlən ˈaɪ̯nə ˈʃaɪ̯dʊŋ/",
+      "/diː ˈʃaɪ̯dʊŋ ˈdaʊ̯ɐt ˈlaɪ̯dɐ zeːɐ ˈlaŋə/",
+      "/ziː hat diː ˈʃaɪ̯dʊŋ ˈaɪ̯nɡəʁaɪ̯çt/"
+    ],
+    "it": [
+      "Ho paura del divorzio.",
+      "I miei genitori vogliono divorziare.",
+      "Purtroppo il divorzio sta durando molto.",
+      "Ha chiesto il divorzio."
     ],
     "ja": [
       "離婚が怖いです。",
@@ -865,6 +1135,83 @@
       "残念ながら、離婚にとても時間がかかっています。",
       "彼女は離婚を申請しました。"
     ],
-    "word_POS": "Noun"
+    "ko": [
+      "이혼이 두려워요.",
+      "부모님이 이혼하려고 해요.",
+      "안타깝게도 이혼 절차가 너무 오래 걸리고 있어요.",
+      "그녀는 이혼을 신청했어요."
+    ],
+    "nb": [
+      "Jeg er redd for skilsmissen.",
+      "Foreldrene mine vil skilles.",
+      "Dessverre tar skilsmissen veldig lang tid.",
+      "Hun har søkt om skilsmisse."
+    ],
+    "nl": [
+      "Ik ben bang voor de scheiding.",
+      "Mijn ouders willen scheiden.",
+      "Helaas duurt de scheiding erg lang.",
+      "Ze heeft de scheiding aangevraagd."
+    ],
+    "pl": [
+      "Boję się rozwodu.",
+      "Moi rodzice chcą się rozwieść.",
+      "Niestety, rozwód trwa bardzo długo.",
+      "Złożyła pozew o rozwód."
+    ],
+    "pt": [
+      "Tenho medo do divórcio.",
+      "Meus pais querem se divorciar.",
+      "Infelizmente, o divórcio está demorando muito.",
+      "Ela pediu o divórcio."
+    ],
+    "ro": [
+      "Mi-e frică de divorț.",
+      "Părinții mei vor să divorțeze.",
+      "Din păcate, divorțul durează foarte mult.",
+      "Ea a depus cerere de divorț."
+    ],
+    "ru": [
+      "Я боюсь развода.",
+      "Мои родители хотят развестись.",
+      "К сожалению, развод тянется очень долго.",
+      "Она подала на развод."
+    ],
+    "sv": [
+      "Jag är rädd för skilsmässan.",
+      "Mina föräldrar vill skiljas.",
+      "Tyvärr tar skilsmässan väldigt lång tid.",
+      "Hon har ansökt om skilsmässa."
+    ],
+    "tr": [
+      "Boşanmaktan korkuyorum.",
+      "Annemle babam boşanmak istiyor.",
+      "Maalesef boşanma çok uzun sürüyor.",
+      "Boşanma davası açtı."
+    ],
+    "uk": [
+      "Я боюся розлучення.",
+      "Мої батьки хочуть розлучитися.",
+      "На жаль, розлучення триває дуже довго.",
+      "Вона подала на розлучення."
+    ],
+    "vi": [
+      "Tôi sợ ly hôn.",
+      "Bố mẹ tôi muốn ly hôn.",
+      "Tiếc là việc ly hôn đang kéo dài quá lâu.",
+      "Cô ấy đã nộp đơn ly hôn."
+    ],
+    "yue": [
+      "我好驚離婚。",
+      "我爸媽想離婚。",
+      "可惜離婚手續拖得好耐。",
+      "佢已經申請離婚。"
+    ],
+    "zh-Hans": [
+      "我害怕离婚。",
+      "我父母想离婚。",
+      "不幸的是，离婚手续拖得很久。",
+      "她已经提出离婚。"
+    ]
   }
 }

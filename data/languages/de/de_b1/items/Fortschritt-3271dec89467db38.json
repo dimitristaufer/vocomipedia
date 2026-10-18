@@ -49,7 +49,7 @@
       "translations": {
         "de": "Der Fortschritt ist heute wirklich langsam.",
         "ipa": "/deːɐ̯ ˈfɔʁt͡ʃʁɪt ɪst ˈhɔʏ̯tə ˈvɪʁklɪç ˈlaŋzaːm/",
-        "en": "The progress is really slow today.",
+        "en": "Progress is really slow today.",
         "es": "Hoy el progreso va muy lento.",
         "fr": "Aujourd'hui, ça avance vraiment lentement.",
         "it": "Oggi si va avanti davvero piano.",
@@ -137,10 +137,10 @@
       "difficulty": 7.17
     },
     {
-      "target": "Ich sehe endlich etwas Fortschritt im Projekt.",
+      "target": "Ich sehe endlich Fortschritte im Projekt.",
       "reading": "/ɪç ˈzeːə ˈɛntlɪç ˈɛtvas ˈfɔʁt͡ʃʁɪt ɪm pʁoˈjɛkt/",
       "translations": {
-        "de": "Ich sehe endlich etwas Fortschritt im Projekt.",
+        "de": "Ich sehe endlich Fortschritte im Projekt.",
         "ipa": "/ɪç ˈzeːə ˈɛntlɪç ˈɛtvas ˈfɔʁt͡ʃʁɪt ɪm pʁoˈjɛkt/",
         "en": "I finally see some progress in the project.",
         "es": "Por fin veo algo de progreso en el proyecto.",
@@ -173,67 +173,81 @@
       "tokens": [
         {
           "surface": "Ich",
-          "surface_en": "I",
-          "furigana": "[ɪç]",
-          "pos": "PRON",
           "lemma": "ich",
-          "explanation": "Personal pronoun, 1st person singular nominative; subject.",
-          "difficulty": 2
+          "pos": "PRON",
+          "upos": "PRON",
+          "xpos": "PPER",
+          "feats": {},
+          "start": 0,
+          "end": 3,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "sehe",
-          "surface_en": "see",
-          "furigana": "[ˈzeːə]",
-          "pos": "VERB",
           "lemma": "sehen",
-          "explanation": "Main verb, 1st person singular present.",
-          "difficulty": 7
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VVFIN",
+          "feats": {},
+          "start": 4,
+          "end": 8,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "endlich",
-          "surface_en": "finally",
-          "furigana": "[ˈɛntlɪç]",
-          "pos": "ADV",
           "lemma": "endlich",
-          "explanation": "Temporal/degree adverb conveying arrival after delay.",
-          "difficulty": 10
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "ADV",
+          "feats": {},
+          "start": 9,
+          "end": 16,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "etwas",
-          "surface_en": "some",
-          "furigana": "[ˈɛtvas]",
-          "pos": "DET",
-          "lemma": "etwas",
-          "explanation": "Indefinite quantifying determiner modifying the following noun.",
-          "difficulty": 7
-        },
-        {
-          "surface": "Fortschritt",
-          "surface_en": "progress",
-          "furigana": "[ˈfɔʁt͡ʃʁɪt]",
-          "pos": "NOUN",
+          "surface": "Fortschritte",
           "lemma": "Fortschritt",
-          "explanation": "Common noun, masculine; direct object.",
-          "difficulty": 10,
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 17,
+          "end": 29,
+          "analyzer": "spacy_de_core_news_lg",
           "is_main_word": true
         },
         {
           "surface": "im",
-          "surface_en": "in the",
-          "furigana": "[ɪm]",
-          "pos": "ADP",
           "lemma": "in",
-          "explanation": "Preposition; contracted form of “in dem”, governs dative.",
-          "difficulty": 2
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "APPRART",
+          "feats": {},
+          "start": 30,
+          "end": 32,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "Projekt.",
-          "surface_en": "project",
-          "furigana": "[pʁoˈjɛkt]",
-          "pos": "NOUN",
+          "surface": "Projekt",
           "lemma": "Projekt",
-          "explanation": "Common noun, neuter; object of the preposition (dative).",
-          "difficulty": 10
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 33,
+          "end": 40,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 40,
+          "end": 41,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 6.86
@@ -447,8 +461,292 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-15T00:00:29Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:De b1/3271dec89467db38",
+      "revision_id": 85508,
+      "parent_revision_id": 16114,
+      "revision_timestamp_utc": "2026-10-15T00:00:29Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Naturalize German collocation and English mass noun",
+      "pulled_utc": "2026-10-17T07:06:37Z",
+      "applied_utc": "2026-10-17T07:06:49Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-628ca53199af9823",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_b1:3271dec89467db38",
+        "pack_code": "de_b1",
+        "entry_id": "Fortschritt",
+        "language": "de",
+        "sentence_index": 2,
+        "old_sentence": "Ich sehe endlich etwas Fortschritt im Projekt.",
+        "old_translations": {
+          "de": "Ich sehe endlich etwas Fortschritt im Projekt.",
+          "ipa": "/ɪç ˈzeːə ˈɛntlɪç ˈɛtvas ˈfɔʁt͡ʃʁɪt ɪm pʁoˈjɛkt/",
+          "en": "I finally see some progress in the project.",
+          "es": "Por fin veo algo de progreso en el proyecto.",
+          "fr": "Je vois enfin des progrès dans le projet.",
+          "it": "Finalmente vedo qualche progresso nel progetto.",
+          "ko": "드디어 프로젝트에 진전이 좀 있어요.",
+          "zh-Hans": "我终于看到项目有些进展了。",
+          "yue": "我終於見到個項目有啲進展。",
+          "ru": "Наконец-то я вижу прогресс в проекте.",
+          "pt": "Finalmente estou vendo algum progresso no projeto.",
+          "he": "סוף סוף אני רואה קצת התקדמות בפרויקט.",
+          "tr": "Nihayet projede biraz ilerleme görüyorum.",
+          "vi": "Cuối cùng tôi cũng thấy dự án có chút tiến triển.",
+          "ar": "أخيرًا أرى بعض التقدم في المشروع.",
+          "nl": "Eindelijk zie ik wat vooruitgang in het project.",
+          "uk": "Нарешті я бачу певний прогрес у проєкті.",
+          "hu": "Végre látok némi előrelépést a projektben.",
+          "hi": "आखिरकार मुझे प्रोजेक्ट में थोड़ी प्रगति दिख रही है।",
+          "pl": "Wreszcie widzę pewien postęp w projekcie.",
+          "el": "Επιτέλους βλέπω κάποια πρόοδο στο έργο.",
+          "nb": "Endelig ser jeg litt framgang i prosjektet.",
+          "id": "Akhirnya saya melihat ada kemajuan dalam proyek.",
+          "sv": "Äntligen ser jag lite framsteg i projektet.",
+          "ro": "În sfârșit văd ceva progres în proiect.",
+          "cs": "Konečně vidím nějaký pokrok v projektu.",
+          "da": "Endelig kan jeg se lidt fremgang i projektet.",
+          "fi": "Vihdoin näen edistystä projektissa.",
+          "ja": "やっとプロジェクトに少し進展が見えてきました。"
+        },
+        "proposed_sentence": "Ich sehe endlich Fortschritte im Projekt.",
+        "proposed_translations": {
+          "de": "Ich sehe endlich Fortschritte im Projekt.",
+          "ipa": "/ɪç ˈzeːə ˈɛntlɪç ˈɛtvas ˈfɔʁt͡ʃʁɪt ɪm pʁoˈjɛkt/",
+          "en": "I finally see some progress in the project.",
+          "es": "Por fin veo algo de progreso en el proyecto.",
+          "fr": "Je vois enfin des progrès dans le projet.",
+          "it": "Finalmente vedo qualche progresso nel progetto.",
+          "ko": "드디어 프로젝트에 진전이 좀 있어요.",
+          "zh-Hans": "我终于看到项目有些进展了。",
+          "yue": "我終於見到個項目有啲進展。",
+          "ru": "Наконец-то я вижу прогресс в проекте.",
+          "pt": "Finalmente estou vendo algum progresso no projeto.",
+          "he": "סוף סוף אני רואה קצת התקדמות בפרויקט.",
+          "tr": "Nihayet projede biraz ilerleme görüyorum.",
+          "vi": "Cuối cùng tôi cũng thấy dự án có chút tiến triển.",
+          "ar": "أخيرًا أرى بعض التقدم في المشروع.",
+          "nl": "Eindelijk zie ik wat vooruitgang in het project.",
+          "uk": "Нарешті я бачу певний прогрес у проєкті.",
+          "hu": "Végre látok némi előrelépést a projektben.",
+          "hi": "आखिरकार मुझे प्रोजेक्ट में थोड़ी प्रगति दिख रही है।",
+          "pl": "Wreszcie widzę pewien postęp w projekcie.",
+          "el": "Επιτέλους βλέπω κάποια πρόοδο στο έργο.",
+          "nb": "Endelig ser jeg litt framgang i prosjektet.",
+          "id": "Akhirnya saya melihat ada kemajuan dalam proyek.",
+          "sv": "Äntligen ser jag lite framsteg i projektet.",
+          "ro": "În sfârșit văd ceva progres în proiect.",
+          "cs": "Konečně vidím nějaký pokrok v projektu.",
+          "da": "Endelig kan jeg se lidt fremgang i projektet.",
+          "fi": "Vihdoin näen edistystä projektissa.",
+          "ja": "やっとプロジェクトに少し進展が見えてきました。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Ich sehe endlich Fortschritte im Projekt.",
+        "old_japanese": "Ich sehe endlich etwas Fortschritt im Projekt.",
+        "old_english": "I finally see some progress in the project.",
+        "proposed_japanese": "Ich sehe endlich Fortschritte im Projekt.",
+        "proposed_english": "I finally see some progress in the project.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Ich sehe endlich Fortschritte im Projekt.",
+          "tokens": [
+            {
+              "surface": "Ich",
+              "lemma": "ich",
+              "pos": "PRON",
+              "upos": "PRON",
+              "xpos": "PPER",
+              "feats": {},
+              "start": 0,
+              "end": 3,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "sehe",
+              "lemma": "sehen",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVFIN",
+              "feats": {},
+              "start": 4,
+              "end": 8,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "endlich",
+              "lemma": "endlich",
+              "pos": "ADV",
+              "upos": "ADV",
+              "xpos": "ADV",
+              "feats": {},
+              "start": 9,
+              "end": 16,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Fortschritte",
+              "lemma": "Fortschritt",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 17,
+              "end": 29,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "im",
+              "lemma": "in",
+              "pos": "ADP",
+              "upos": "ADP",
+              "xpos": "APPRART",
+              "feats": {},
+              "start": 30,
+              "end": 32,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Projekt",
+              "lemma": "Projekt",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 33,
+              "end": 40,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 40,
+              "end": 41,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Ich",
+            "lemma": "ich",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "sehe",
+            "lemma": "sehen",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 4,
+            "end": 8,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "endlich",
+            "lemma": "endlich",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 9,
+            "end": 16,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Fortschritte",
+            "lemma": "Fortschritt",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 17,
+            "end": 29,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "im",
+            "lemma": "in",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPRART",
+            "feats": {},
+            "start": 30,
+            "end": 32,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Projekt",
+            "lemma": "Projekt",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 33,
+            "end": 40,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 40,
+            "end": 41,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:06:37Z",
+        "updated_utc": "2026-10-17T07:07:05Z",
+        "applied_utc": "2026-10-17T07:07:05Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:07:05Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -460,34 +758,6 @@
     "word": "Fortschritt",
     "word_reading": "",
     "word_label": "Substantiv (der mask.)",
-    "word_en": "progress; advance",
-    "word_es": "progreso; avance",
-    "word_fr": "progrès; avancée",
-    "word_it": "progresso; avanzamento",
-    "word_ko": "진보; 발전",
-    "word_zh-Hans": "进步; 进展",
-    "word_yue": "進步; 進展",
-    "word_ru": "прогресс; продвижение",
-    "word_pt": "progresso; avanço",
-    "word_he": "התקדמות; התפתחות",
-    "word_tr": "ilerleme; gelişme",
-    "word_vi": "tiến bộ; tiến triển",
-    "word_ar": "تقدّم; تطوّر",
-    "word_nl": "vooruitgang; voortgang",
-    "word_uk": "прогрес; просування",
-    "word_hu": "haladás; fejlődés",
-    "word_hi": "प्रगति; उन्नति",
-    "word_pl": "postęp; rozwój",
-    "word_el": "πρόοδος; εξέλιξη",
-    "word_nb": "fremskritt; fremgang",
-    "word_id": "kemajuan; perkembangan",
-    "word_sv": "framsteg; utveckling",
-    "word_ro": "progres; avansare",
-    "word_cs": "pokrok; postup",
-    "word_da": "fremskridt; fremgang",
-    "word_fi": "edistys; kehitys",
-    "word_ja": "進歩; 進展",
-    "word_de": "Fortschritt",
     "comic_difficulty": 7.09,
     "jp": [
       "Der Fortschritt ist heute wirklich langsam.",
@@ -500,24 +770,6 @@
       "/ɪç ˈzeːə ˈɛntlɪç ˈɛtvas ˈfɔʁt͡ʃʁɪt ɪm pʁoˈjɛkt/",
       "/ˈʊnzɐ ˈfɔʁt͡ʃʁɪt motiˈviːʁt das ˈɡant͡sə tiːm/",
       "/ˈoːnə ˈfɔʁt͡ʃʁɪt blaɪ̯pt diː ˈaʁbaɪ̯t ˈaɪ̯nfaχ ˈʃteːən/"
-    ],
-    "de": [
-      "Der Fortschritt ist heute wirklich langsam.",
-      "Ich sehe endlich etwas Fortschritt im Projekt.",
-      "Unser Fortschritt motiviert das ganze Team.",
-      "Ohne Fortschritt bleibt die Arbeit einfach stehen."
-    ],
-    "ipa": [
-      "/deːɐ̯ ˈfɔʁt͡ʃʁɪt ɪst ˈhɔʏ̯tə ˈvɪʁklɪç ˈlaŋzaːm/",
-      "/ɪç ˈzeːə ˈɛntlɪç ˈɛtvas ˈfɔʁt͡ʃʁɪt ɪm pʁoˈjɛkt/",
-      "/ˈʊnzɐ ˈfɔʁt͡ʃʁɪt motiˈviːʁt das ˈɡant͡sə tiːm/",
-      "/ˈoːnə ˈfɔʁt͡ʃʁɪt blaɪ̯pt diː ˈaʁbaɪ̯t ˈaɪ̯nfaχ ˈʃteːən/"
-    ],
-    "en": [
-      "The progress is really slow today.",
-      "I finally see some progress in the project.",
-      "Our progress motivates the whole team.",
-      "Without progress, the work just stops."
     ],
     "pos_analysis": [
       {
@@ -582,71 +834,85 @@
         "difficulty_aggregated": 7.17
       },
       {
-        "sentence": "Ich sehe endlich etwas Fortschritt im Projekt.",
+        "sentence": "Ich sehe endlich Fortschritte im Projekt.",
         "tokens": [
           {
             "surface": "Ich",
-            "surface_en": "I",
-            "furigana": "[ɪç]",
-            "pos": "PRON",
             "lemma": "ich",
-            "explanation": "Personal pronoun, 1st person singular nominative; subject.",
-            "difficulty": 2
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "sehe",
-            "surface_en": "see",
-            "furigana": "[ˈzeːə]",
-            "pos": "VERB",
             "lemma": "sehen",
-            "explanation": "Main verb, 1st person singular present.",
-            "difficulty": 7
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 4,
+            "end": 8,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "endlich",
-            "surface_en": "finally",
-            "furigana": "[ˈɛntlɪç]",
-            "pos": "ADV",
             "lemma": "endlich",
-            "explanation": "Temporal/degree adverb conveying arrival after delay.",
-            "difficulty": 10
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 9,
+            "end": 16,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "etwas",
-            "surface_en": "some",
-            "furigana": "[ˈɛtvas]",
-            "pos": "DET",
-            "lemma": "etwas",
-            "explanation": "Indefinite quantifying determiner modifying the following noun.",
-            "difficulty": 7
-          },
-          {
-            "surface": "Fortschritt",
-            "surface_en": "progress",
-            "furigana": "[ˈfɔʁt͡ʃʁɪt]",
-            "pos": "NOUN",
+            "surface": "Fortschritte",
             "lemma": "Fortschritt",
-            "explanation": "Common noun, masculine; direct object.",
-            "difficulty": 10,
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 17,
+            "end": 29,
+            "analyzer": "spacy_de_core_news_lg",
             "is_main_word": true
           },
           {
             "surface": "im",
-            "surface_en": "in the",
-            "furigana": "[ɪm]",
-            "pos": "ADP",
             "lemma": "in",
-            "explanation": "Preposition; contracted form of “in dem”, governs dative.",
-            "difficulty": 2
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPRART",
+            "feats": {},
+            "start": 30,
+            "end": 32,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "Projekt.",
-            "surface_en": "project",
-            "furigana": "[pʁoˈjɛkt]",
-            "pos": "NOUN",
+            "surface": "Projekt",
             "lemma": "Projekt",
-            "explanation": "Common noun, neuter; object of the preposition (dative).",
-            "difficulty": 10
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 33,
+            "end": 40,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 40,
+            "end": 41,
+            "analyzer": "spacy_de_core_news_lg"
           }
         ],
         "difficulty_aggregated": 6.86
@@ -785,137 +1051,41 @@
         "difficulty_aggregated": 7.14
       }
     ],
-    "es": [
-      "Hoy el progreso va muy lento.",
-      "Por fin veo algo de progreso en el proyecto.",
-      "Nuestro progreso motiva a todo el equipo.",
-      "Sin progreso, el trabajo simplemente se detiene."
-    ],
-    "fr": [
-      "Aujourd'hui, ça avance vraiment lentement.",
-      "Je vois enfin des progrès dans le projet.",
-      "Nos progrès motivent toute l'équipe.",
-      "Sans progrès, le travail s'arrête tout simplement."
-    ],
-    "it": [
-      "Oggi si va avanti davvero piano.",
-      "Finalmente vedo qualche progresso nel progetto.",
-      "I nostri progressi motivano tutto il team.",
-      "Senza progressi, il lavoro si ferma."
-    ],
-    "ko": [
-      "오늘 진도가 정말 느려요.",
-      "드디어 프로젝트에 진전이 좀 있어요.",
-      "우리의 진전이 팀 전체에 동기를 부여해요.",
-      "진전이 없으면 일이 그냥 멈춰요."
-    ],
-    "zh-Hans": [
-      "今天进度真的很慢。",
-      "我终于看到项目有些进展了。",
-      "我们的进展激励了整个团队。",
-      "没有进展，工作就会停下来。"
-    ],
-    "yue": [
-      "今日進度真係好慢。",
-      "我終於見到個項目有啲進展。",
-      "我哋嘅進展鼓舞晒成個團隊。",
-      "冇進展，啲工作就會停晒。"
-    ],
-    "ru": [
-      "Сегодня всё продвигается очень медленно.",
-      "Наконец-то я вижу прогресс в проекте.",
-      "Наш прогресс мотивирует всю команду.",
-      "Без прогресса работа просто останавливается."
-    ],
-    "pt": [
-      "Hoje o progresso está bem lento.",
-      "Finalmente estou vendo algum progresso no projeto.",
-      "Nosso progresso motiva toda a equipe.",
-      "Sem progresso, o trabalho simplesmente para."
-    ],
-    "he": [
-      "ההתקדמות היום ממש איטית.",
-      "סוף סוף אני רואה קצת התקדמות בפרויקט.",
-      "ההתקדמות שלנו מדרבנת את כל הצוות.",
-      "בלי התקדמות, העבודה פשוט נעצרת."
-    ],
-    "tr": [
-      "Bugün ilerleme gerçekten yavaş.",
-      "Nihayet projede biraz ilerleme görüyorum.",
-      "İlerlememiz tüm ekibi motive ediyor.",
-      "İlerleme olmazsa iş durup kalır."
-    ],
-    "vi": [
-      "Hôm nay tiến độ thật chậm.",
-      "Cuối cùng tôi cũng thấy dự án có chút tiến triển.",
-      "Tiến độ của chúng tôi tiếp thêm động lực cho cả đội.",
-      "Không có tiến độ thì công việc sẽ dừng lại."
-    ],
+    "word_POS": "Noun",
+    "entry_id": "Fortschritt",
+    "word_en": "progress; advance",
+    "word_es": "progreso; avance",
+    "word_fr": "progrès; avancée",
+    "word_it": "progresso; avanzamento",
+    "word_ko": "진보; 발전",
+    "word_zh-Hans": "进步; 进展",
+    "word_yue": "進步; 進展",
+    "word_ru": "прогресс; продвижение",
+    "word_pt": "progresso; avanço",
+    "word_he": "התקדמות; התפתחות",
+    "word_tr": "ilerleme; gelişme",
+    "word_vi": "tiến bộ; tiến triển",
+    "word_ar": "تقدّم; تطوّر",
+    "word_nl": "vooruitgang; voortgang",
+    "word_uk": "прогрес; просування",
+    "word_hu": "haladás; fejlődés",
+    "word_hi": "प्रगति; उन्नति",
+    "word_pl": "postęp; rozwój",
+    "word_el": "πρόοδος; εξέλιξη",
+    "word_nb": "fremskritt; fremgang",
+    "word_id": "kemajuan; perkembangan",
+    "word_sv": "framsteg; utveckling",
+    "word_ro": "progres; avansare",
+    "word_cs": "pokrok; postup",
+    "word_da": "fremskridt; fremgang",
+    "word_fi": "edistys; kehitys",
+    "word_ja": "進歩; 進展",
+    "word_de": "Fortschritt",
     "ar": [
       "التقدم اليوم بطيء جدًا.",
       "أخيرًا أرى بعض التقدم في المشروع.",
       "تقدمنا يحفّز الفريق بأكمله.",
       "من دون تقدم يتوقف العمل ببساطة."
-    ],
-    "nl": [
-      "Vandaag gaat de voortgang echt langzaam.",
-      "Eindelijk zie ik wat vooruitgang in het project.",
-      "Onze vooruitgang motiveert het hele team.",
-      "Zonder voortgang stopt het werk gewoon."
-    ],
-    "uk": [
-      "Сьогодні прогрес іде дуже повільно.",
-      "Нарешті я бачу певний прогрес у проєкті.",
-      "Наш прогрес мотивує всю команду.",
-      "Без прогресу робота просто зупиняється."
-    ],
-    "hu": [
-      "Ma tényleg nagyon lassan haladunk.",
-      "Végre látok némi előrelépést a projektben.",
-      "A haladásunk motiválja az egész csapatot.",
-      "Haladás nélkül a munka egyszerűen megáll."
-    ],
-    "hi": [
-      "आज प्रगति सच में बहुत धीमी है।",
-      "आखिरकार मुझे प्रोजेक्ट में थोड़ी प्रगति दिख रही है।",
-      "हमारी प्रगति पूरी टीम को प्रेरित करती है।",
-      "प्रगति के बिना काम बस रुक जाता है।"
-    ],
-    "pl": [
-      "Postępy są dziś naprawdę powolne.",
-      "Wreszcie widzę pewien postęp w projekcie.",
-      "Nasz postęp motywuje cały zespół.",
-      "Bez postępów praca po prostu staje."
-    ],
-    "el": [
-      "Σήμερα η πρόοδος είναι πραγματικά αργή.",
-      "Επιτέλους βλέπω κάποια πρόοδο στο έργο.",
-      "Η πρόοδός μας παρακινεί όλη την ομάδα.",
-      "Χωρίς πρόοδο, η δουλειά απλώς σταματά."
-    ],
-    "nb": [
-      "I dag går fremgangen virkelig sakte.",
-      "Endelig ser jeg litt framgang i prosjektet.",
-      "Framgangen vår motiverer hele teamet.",
-      "Uten framgang stopper arbeidet bare opp."
-    ],
-    "id": [
-      "Hari ini kemajuannya benar-benar lambat.",
-      "Akhirnya saya melihat ada kemajuan dalam proyek.",
-      "Kemajuan kami memotivasi seluruh tim.",
-      "Tanpa kemajuan, pekerjaan jadi berhenti begitu saja."
-    ],
-    "sv": [
-      "Idag går det verkligen långsamt.",
-      "Äntligen ser jag lite framsteg i projektet.",
-      "Våra framsteg motiverar hela teamet.",
-      "Utan framsteg stannar arbetet bara av."
-    ],
-    "ro": [
-      "Astăzi progresul merge foarte încet.",
-      "În sfârșit văd ceva progres în proiect.",
-      "Progresul nostru motivează întreaga echipă.",
-      "Fără progres, munca pur și simplu se oprește."
     ],
     "cs": [
       "Dnes jde pokrok opravdu pomalu.",
@@ -929,11 +1099,77 @@
       "Vores fremskridt motiverer hele teamet.",
       "Uden fremskridt går arbejdet bare i stå."
     ],
+    "de": [
+      "Der Fortschritt ist heute wirklich langsam.",
+      "Ich sehe endlich etwas Fortschritt im Projekt.",
+      "Unser Fortschritt motiviert das ganze Team.",
+      "Ohne Fortschritt bleibt die Arbeit einfach stehen."
+    ],
+    "el": [
+      "Σήμερα η πρόοδος είναι πραγματικά αργή.",
+      "Επιτέλους βλέπω κάποια πρόοδο στο έργο.",
+      "Η πρόοδός μας παρακινεί όλη την ομάδα.",
+      "Χωρίς πρόοδο, η δουλειά απλώς σταματά."
+    ],
+    "en": [
+      "Progress is really slow today.",
+      "I finally see some progress in the project.",
+      "Our progress motivates the whole team.",
+      "Without progress, the work just stops."
+    ],
+    "es": [
+      "Hoy el progreso va muy lento.",
+      "Por fin veo algo de progreso en el proyecto.",
+      "Nuestro progreso motiva a todo el equipo.",
+      "Sin progreso, el trabajo simplemente se detiene."
+    ],
     "fi": [
       "Tänään edistyminen on todella hidasta.",
       "Vihdoin näen edistystä projektissa.",
       "Edistyksemme motivoi koko tiimiä.",
       "Ilman edistystä työ vain pysähtyy."
+    ],
+    "fr": [
+      "Aujourd'hui, ça avance vraiment lentement.",
+      "Je vois enfin des progrès dans le projet.",
+      "Nos progrès motivent toute l'équipe.",
+      "Sans progrès, le travail s'arrête tout simplement."
+    ],
+    "he": [
+      "ההתקדמות היום ממש איטית.",
+      "סוף סוף אני רואה קצת התקדמות בפרויקט.",
+      "ההתקדמות שלנו מדרבנת את כל הצוות.",
+      "בלי התקדמות, העבודה פשוט נעצרת."
+    ],
+    "hi": [
+      "आज प्रगति सच में बहुत धीमी है।",
+      "आखिरकार मुझे प्रोजेक्ट में थोड़ी प्रगति दिख रही है।",
+      "हमारी प्रगति पूरी टीम को प्रेरित करती है।",
+      "प्रगति के बिना काम बस रुक जाता है।"
+    ],
+    "hu": [
+      "Ma tényleg nagyon lassan haladunk.",
+      "Végre látok némi előrelépést a projektben.",
+      "A haladásunk motiválja az egész csapatot.",
+      "Haladás nélkül a munka egyszerűen megáll."
+    ],
+    "id": [
+      "Hari ini kemajuannya benar-benar lambat.",
+      "Akhirnya saya melihat ada kemajuan dalam proyek.",
+      "Kemajuan kami memotivasi seluruh tim.",
+      "Tanpa kemajuan, pekerjaan jadi berhenti begitu saja."
+    ],
+    "ipa": [
+      "/deːɐ̯ ˈfɔʁt͡ʃʁɪt ɪst ˈhɔʏ̯tə ˈvɪʁklɪç ˈlaŋzaːm/",
+      "/ɪç ˈzeːə ˈɛntlɪç ˈɛtvas ˈfɔʁt͡ʃʁɪt ɪm pʁoˈjɛkt/",
+      "/ˈʊnzɐ ˈfɔʁt͡ʃʁɪt motiˈviːʁt das ˈɡant͡sə tiːm/",
+      "/ˈoːnə ˈfɔʁt͡ʃʁɪt blaɪ̯pt diː ˈaʁbaɪ̯t ˈaɪ̯nfaχ ˈʃteːən/"
+    ],
+    "it": [
+      "Oggi si va avanti davvero piano.",
+      "Finalmente vedo qualche progresso nel progetto.",
+      "I nostri progressi motivano tutto il team.",
+      "Senza progressi, il lavoro si ferma."
     ],
     "ja": [
       "今日は進捗が本当に遅いです。",
@@ -941,6 +1177,83 @@
       "私たちの進捗がチーム全体のやる気を高めます。",
       "進捗がなければ、仕事はそのまま止まります。"
     ],
-    "word_POS": "Noun"
+    "ko": [
+      "오늘 진도가 정말 느려요.",
+      "드디어 프로젝트에 진전이 좀 있어요.",
+      "우리의 진전이 팀 전체에 동기를 부여해요.",
+      "진전이 없으면 일이 그냥 멈춰요."
+    ],
+    "nb": [
+      "I dag går fremgangen virkelig sakte.",
+      "Endelig ser jeg litt framgang i prosjektet.",
+      "Framgangen vår motiverer hele teamet.",
+      "Uten framgang stopper arbeidet bare opp."
+    ],
+    "nl": [
+      "Vandaag gaat de voortgang echt langzaam.",
+      "Eindelijk zie ik wat vooruitgang in het project.",
+      "Onze vooruitgang motiveert het hele team.",
+      "Zonder voortgang stopt het werk gewoon."
+    ],
+    "pl": [
+      "Postępy są dziś naprawdę powolne.",
+      "Wreszcie widzę pewien postęp w projekcie.",
+      "Nasz postęp motywuje cały zespół.",
+      "Bez postępów praca po prostu staje."
+    ],
+    "pt": [
+      "Hoje o progresso está bem lento.",
+      "Finalmente estou vendo algum progresso no projeto.",
+      "Nosso progresso motiva toda a equipe.",
+      "Sem progresso, o trabalho simplesmente para."
+    ],
+    "ro": [
+      "Astăzi progresul merge foarte încet.",
+      "În sfârșit văd ceva progres în proiect.",
+      "Progresul nostru motivează întreaga echipă.",
+      "Fără progres, munca pur și simplu se oprește."
+    ],
+    "ru": [
+      "Сегодня всё продвигается очень медленно.",
+      "Наконец-то я вижу прогресс в проекте.",
+      "Наш прогресс мотивирует всю команду.",
+      "Без прогресса работа просто останавливается."
+    ],
+    "sv": [
+      "Idag går det verkligen långsamt.",
+      "Äntligen ser jag lite framsteg i projektet.",
+      "Våra framsteg motiverar hela teamet.",
+      "Utan framsteg stannar arbetet bara av."
+    ],
+    "tr": [
+      "Bugün ilerleme gerçekten yavaş.",
+      "Nihayet projede biraz ilerleme görüyorum.",
+      "İlerlememiz tüm ekibi motive ediyor.",
+      "İlerleme olmazsa iş durup kalır."
+    ],
+    "uk": [
+      "Сьогодні прогрес іде дуже повільно.",
+      "Нарешті я бачу певний прогрес у проєкті.",
+      "Наш прогрес мотивує всю команду.",
+      "Без прогресу робота просто зупиняється."
+    ],
+    "vi": [
+      "Hôm nay tiến độ thật chậm.",
+      "Cuối cùng tôi cũng thấy dự án có chút tiến triển.",
+      "Tiến độ của chúng tôi tiếp thêm động lực cho cả đội.",
+      "Không có tiến độ thì công việc sẽ dừng lại."
+    ],
+    "yue": [
+      "今日進度真係好慢。",
+      "我終於見到個項目有啲進展。",
+      "我哋嘅進展鼓舞晒成個團隊。",
+      "冇進展，啲工作就會停晒。"
+    ],
+    "zh-Hans": [
+      "今天进度真的很慢。",
+      "我终于看到项目有些进展了。",
+      "我们的进展激励了整个团队。",
+      "没有进展，工作就会停下来。"
+    ]
   }
 }

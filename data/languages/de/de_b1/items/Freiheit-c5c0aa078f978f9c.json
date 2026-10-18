@@ -49,7 +49,7 @@
       "translations": {
         "de": "Ich liebe die Freiheit am Wochenende.",
         "ipa": "/ɪç ˈliːbə diː ˈfʁaɪ̯haɪ̯t am ˈvɔxənˌɛndə/",
-        "en": "I love the freedom on weekends.",
+        "en": "I love having freedom on the weekends.",
         "es": "Me encanta la libertad de los fines de semana.",
         "fr": "J'adore la liberté des week-ends.",
         "it": "Adoro la libertà del fine settimana.",
@@ -151,7 +151,7 @@
       "translations": {
         "de": "Endlich habe ich wieder meine Freiheit.",
         "ipa": "/ˈɛndlɪç ˈhaːbə ɪç ˈviːdɐ ˈmaɪ̯nə ˈfʁaɪ̯haɪ̯t/",
-        "en": "Finally I have my freedom again.",
+        "en": "I finally have my freedom back.",
         "es": "Por fin vuelvo a ser libre.",
         "fr": "Enfin, je suis à nouveau libre.",
         "it": "Finalmente ho di nuovo la mia libertà.",
@@ -239,12 +239,12 @@
       "difficulty": 7.17
     },
     {
-      "target": "Im Ausland fühle ich mehr Freiheit.",
+      "target": "Im Ausland spüre ich mehr Freiheit.",
       "reading": "/ɪm ˈaʊ̯sland ˈfyːlə ɪç meːɐ̯ ˈfʁaɪ̯haɪ̯t/",
       "translations": {
-        "de": "Im Ausland fühle ich mehr Freiheit.",
+        "de": "Im Ausland spüre ich mehr Freiheit.",
         "ipa": "/ɪm ˈaʊ̯sland ˈfyːlə ɪç meːɐ̯ ˈfʁaɪ̯haɪ̯t/",
-        "en": "Abroad I feel more freedom.",
+        "en": "When I’m abroad, I feel freer.",
         "es": "En el extranjero me siento más libre.",
         "fr": "À l'étranger, je me sens plus libre.",
         "it": "All'estero mi sento più libero.",
@@ -274,68 +274,82 @@
       },
       "tokens": [
         {
-          "surface": "in",
-          "surface_en": "in",
-          "furigana": "[ɪn]",
-          "pos": "ADP",
+          "surface": "Im",
           "lemma": "in",
-          "explanation": "Preposition taking dative for static location; part of the contraction 'im' = 'in dem'.",
-          "difficulty": 2
-        },
-        {
-          "surface": "dem",
-          "surface_en": "the",
-          "furigana": "[deːm]",
-          "pos": "DET",
-          "lemma": "der",
-          "explanation": "Definite article, dative singular neuter; completes the PP 'in dem Ausland'.",
-          "difficulty": 2
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "APPRART",
+          "feats": {},
+          "start": 0,
+          "end": 2,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "Ausland",
-          "surface_en": "abroad",
-          "furigana": "[ˈaʊ̯slant]",
-          "pos": "NOUN",
           "lemma": "Ausland",
-          "explanation": "Common noun, neuter; dative singular as complement of 'in' denoting location.",
-          "difficulty": 10
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 3,
+          "end": 10,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "fühle",
-          "surface_en": "feel",
-          "furigana": "[ˈfyːlə]",
+          "surface": "spüre",
+          "lemma": "spüren",
           "pos": "VERB",
-          "lemma": "fühlen",
-          "explanation": "Finite main verb, 1st person singular present; takes an object expressing what is felt.",
-          "difficulty": 7
+          "upos": "VERB",
+          "xpos": "VVFIN",
+          "feats": {},
+          "start": 11,
+          "end": 16,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "ich",
-          "surface_en": "I",
-          "furigana": "[ɪç]",
-          "pos": "PRON",
           "lemma": "ich",
-          "explanation": "Personal pronoun, 1st person singular nominative; subject of 'fühle'.",
-          "difficulty": 2
+          "pos": "PRON",
+          "upos": "PRON",
+          "xpos": "PPER",
+          "feats": {},
+          "start": 17,
+          "end": 20,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "mehr",
-          "surface_en": "more",
-          "furigana": "[meːɐ̯]",
-          "pos": "DET",
           "lemma": "mehr",
-          "explanation": "Quantifying determiner used prenominally, modifying the following noun ('Freiheit') without an article.",
-          "difficulty": 7
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "PIAT",
+          "feats": {},
+          "start": 21,
+          "end": 25,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "Freiheit.",
-          "surface_en": "freedom",
-          "furigana": "[ˈfʁaɪ̯haɪ̯t]",
-          "pos": "NOUN",
+          "surface": "Freiheit",
           "lemma": "Freiheit",
-          "explanation": "Common noun, feminine; accusative singular as the object of 'fühle', quantified by 'mehr'.",
-          "difficulty": 10,
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 26,
+          "end": 34,
+          "analyzer": "spacy_de_core_news_lg",
           "is_main_word": true
+        },
+        {
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 34,
+          "end": 35,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 5.71
@@ -472,8 +486,292 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-15T00:02:48Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:De b1/c5c0aa078f978f9c",
+      "revision_id": 85503,
+      "parent_revision_id": 16128,
+      "revision_timestamp_utc": "2026-10-15T00:02:48Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Naturalize German and English freedom expressions",
+      "pulled_utc": "2026-10-17T07:06:43Z",
+      "applied_utc": "2026-10-17T07:06:49Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-2acb537fef75252c",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_b1:c5c0aa078f978f9c",
+        "pack_code": "de_b1",
+        "entry_id": "Freiheit",
+        "language": "de",
+        "sentence_index": 3,
+        "old_sentence": "Im Ausland fühle ich mehr Freiheit.",
+        "old_translations": {
+          "de": "Im Ausland fühle ich mehr Freiheit.",
+          "ipa": "/ɪm ˈaʊ̯sland ˈfyːlə ɪç meːɐ̯ ˈfʁaɪ̯haɪ̯t/",
+          "en": "Abroad I feel more freedom.",
+          "es": "En el extranjero me siento más libre.",
+          "fr": "À l'étranger, je me sens plus libre.",
+          "it": "All'estero mi sento più libero.",
+          "ko": "해외에 있으면 더 자유롭게 느껴진다.",
+          "zh-Hans": "在国外我感觉更自由。",
+          "yue": "喺外國我覺得更自由。",
+          "ru": "За границей я чувствую себя свободнее.",
+          "pt": "No exterior eu me sinto mais livre.",
+          "he": "בחו״ל יש לי יותר חופש.",
+          "tr": "Yurtdışında kendimi daha özgür hissediyorum.",
+          "vi": "Ở nước ngoài tôi cảm thấy tự do hơn.",
+          "ar": "في الخارج أشعر بحرية أكبر.",
+          "nl": "In het buitenland voel ik me vrijer.",
+          "uk": "За кордоном мені вільніше.",
+          "hu": "Külföldön szabadabbnak érzem magam.",
+          "hi": "विदेश में मुझे ज्यादा आज़ादी महसूस होती है.",
+          "pl": "Za granicą czuję się swobodniej.",
+          "el": "Στο εξωτερικό έχω περισσότερη ελευθερία.",
+          "nb": "I utlandet føler jeg meg friere.",
+          "id": "Di luar negeri aku merasa lebih bebas.",
+          "sv": "Utomlands känner jag mig friare.",
+          "ro": "În străinătate am mai multă libertate.",
+          "cs": "V zahraničí se cítím svobodněji.",
+          "da": "I udlandet føler jeg mig friere.",
+          "fi": "Ulkomailla tunnen oloni vapaammaksi.",
+          "ja": "海外にいるともっと自由に感じる。"
+        },
+        "proposed_sentence": "Im Ausland spüre ich mehr Freiheit.",
+        "proposed_translations": {
+          "de": "Im Ausland spüre ich mehr Freiheit.",
+          "ipa": "/ɪm ˈaʊ̯sland ˈfyːlə ɪç meːɐ̯ ˈfʁaɪ̯haɪ̯t/",
+          "en": "When I’m abroad, I feel freer.",
+          "es": "En el extranjero me siento más libre.",
+          "fr": "À l'étranger, je me sens plus libre.",
+          "it": "All'estero mi sento più libero.",
+          "ko": "해외에 있으면 더 자유롭게 느껴진다.",
+          "zh-Hans": "在国外我感觉更自由。",
+          "yue": "喺外國我覺得更自由。",
+          "ru": "За границей я чувствую себя свободнее.",
+          "pt": "No exterior eu me sinto mais livre.",
+          "he": "בחו״ל יש לי יותר חופש.",
+          "tr": "Yurtdışında kendimi daha özgür hissediyorum.",
+          "vi": "Ở nước ngoài tôi cảm thấy tự do hơn.",
+          "ar": "في الخارج أشعر بحرية أكبر.",
+          "nl": "In het buitenland voel ik me vrijer.",
+          "uk": "За кордоном мені вільніше.",
+          "hu": "Külföldön szabadabbnak érzem magam.",
+          "hi": "विदेश में मुझे ज्यादा आज़ादी महसूस होती है.",
+          "pl": "Za granicą czuję się swobodniej.",
+          "el": "Στο εξωτερικό έχω περισσότερη ελευθερία.",
+          "nb": "I utlandet føler jeg meg friere.",
+          "id": "Di luar negeri aku merasa lebih bebas.",
+          "sv": "Utomlands känner jag mig friare.",
+          "ro": "În străinătate am mai multă libertate.",
+          "cs": "V zahraničí se cítím svobodněji.",
+          "da": "I udlandet føler jeg mig friere.",
+          "fi": "Ulkomailla tunnen oloni vapaammaksi.",
+          "ja": "海外にいるともっと自由に感じる。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Im Ausland spüre ich mehr Freiheit.",
+        "old_japanese": "Im Ausland fühle ich mehr Freiheit.",
+        "old_english": "Abroad I feel more freedom.",
+        "proposed_japanese": "Im Ausland spüre ich mehr Freiheit.",
+        "proposed_english": "When I’m abroad, I feel freer.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Im Ausland spüre ich mehr Freiheit.",
+          "tokens": [
+            {
+              "surface": "Im",
+              "lemma": "in",
+              "pos": "ADP",
+              "upos": "ADP",
+              "xpos": "APPRART",
+              "feats": {},
+              "start": 0,
+              "end": 2,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Ausland",
+              "lemma": "Ausland",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 3,
+              "end": 10,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "spüre",
+              "lemma": "spüren",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVFIN",
+              "feats": {},
+              "start": 11,
+              "end": 16,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "ich",
+              "lemma": "ich",
+              "pos": "PRON",
+              "upos": "PRON",
+              "xpos": "PPER",
+              "feats": {},
+              "start": 17,
+              "end": 20,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "mehr",
+              "lemma": "mehr",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "PIAT",
+              "feats": {},
+              "start": 21,
+              "end": 25,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Freiheit",
+              "lemma": "Freiheit",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 26,
+              "end": 34,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 34,
+              "end": 35,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Im",
+            "lemma": "in",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPRART",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Ausland",
+            "lemma": "Ausland",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 3,
+            "end": 10,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "spüre",
+            "lemma": "spüren",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 11,
+            "end": 16,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "ich",
+            "lemma": "ich",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 17,
+            "end": 20,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "mehr",
+            "lemma": "mehr",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "PIAT",
+            "feats": {},
+            "start": 21,
+            "end": 25,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Freiheit",
+            "lemma": "Freiheit",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 26,
+            "end": 34,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 34,
+            "end": 35,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:06:43Z",
+        "updated_utc": "2026-10-17T07:07:05Z",
+        "applied_utc": "2026-10-17T07:07:05Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:07:05Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -485,34 +783,6 @@
     "word": "Freiheit",
     "word_reading": "",
     "word_label": "Substantiv (die fem.)",
-    "word_en": "freedom; liberty",
-    "word_es": "libertad",
-    "word_fr": "liberté",
-    "word_it": "libertà",
-    "word_ko": "자유",
-    "word_zh-Hans": "自由",
-    "word_yue": "自由",
-    "word_ru": "свобода",
-    "word_pt": "liberdade",
-    "word_he": "חירות; חופש",
-    "word_tr": "özgürlük; hürriyet",
-    "word_vi": "tự do",
-    "word_ar": "حرية",
-    "word_nl": "vrijheid",
-    "word_uk": "свобода",
-    "word_hu": "szabadság",
-    "word_hi": "आज़ादी; स्वतंत्रता",
-    "word_pl": "wolność",
-    "word_el": "ελευθερία",
-    "word_nb": "frihet",
-    "word_id": "kebebasan",
-    "word_sv": "frihet",
-    "word_ro": "libertate",
-    "word_cs": "svoboda",
-    "word_da": "frihed",
-    "word_fi": "vapaus",
-    "word_ja": "自由",
-    "word_de": "Freiheit",
     "comic_difficulty": 5.75,
     "jp": [
       "Ich liebe die Freiheit am Wochenende.",
@@ -525,24 +795,6 @@
       "/ˈɛndlɪç ˈhaːbə ɪç ˈviːdɐ ˈmaɪ̯nə ˈfʁaɪ̯haɪ̯t/",
       "/ɪm ˈaʊ̯sland ˈfyːlə ɪç meːɐ̯ ˈfʁaɪ̯haɪ̯t/",
       "/tɔm ˈfɪndət ˈfʁaɪ̯haɪ̯t baɪ̯m ˈklɛtɐn ɪn deːɐ̯ ˈhalə/"
-    ],
-    "de": [
-      "Ich liebe die Freiheit am Wochenende.",
-      "Endlich habe ich wieder meine Freiheit.",
-      "Im Ausland fühle ich mehr Freiheit.",
-      "Tom findet Freiheit beim Klettern in der Halle."
-    ],
-    "ipa": [
-      "/ɪç ˈliːbə diː ˈfʁaɪ̯haɪ̯t am ˈvɔxənˌɛndə/",
-      "/ˈɛndlɪç ˈhaːbə ɪç ˈviːdɐ ˈmaɪ̯nə ˈfʁaɪ̯haɪ̯t/",
-      "/ɪm ˈaʊ̯sland ˈfyːlə ɪç meːɐ̯ ˈfʁaɪ̯haɪ̯t/",
-      "/tɔm ˈfɪndət ˈfʁaɪ̯haɪ̯t baɪ̯m ˈklɛtɐn ɪn deːɐ̯ ˈhalə/"
-    ],
-    "en": [
-      "I love the freedom on weekends.",
-      "Finally I have my freedom again.",
-      "Abroad I feel more freedom.",
-      "Tom finds freedom while climbing in the gym."
     ],
     "pos_analysis": [
       {
@@ -677,71 +929,85 @@
         "difficulty_aggregated": 7.17
       },
       {
-        "sentence": "Im Ausland fühle ich mehr Freiheit.",
+        "sentence": "Im Ausland spüre ich mehr Freiheit.",
         "tokens": [
           {
-            "surface": "in",
-            "surface_en": "in",
-            "furigana": "[ɪn]",
-            "pos": "ADP",
+            "surface": "Im",
             "lemma": "in",
-            "explanation": "Preposition taking dative for static location; part of the contraction 'im' = 'in dem'.",
-            "difficulty": 2
-          },
-          {
-            "surface": "dem",
-            "surface_en": "the",
-            "furigana": "[deːm]",
-            "pos": "DET",
-            "lemma": "der",
-            "explanation": "Definite article, dative singular neuter; completes the PP 'in dem Ausland'.",
-            "difficulty": 2
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPRART",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "Ausland",
-            "surface_en": "abroad",
-            "furigana": "[ˈaʊ̯slant]",
-            "pos": "NOUN",
             "lemma": "Ausland",
-            "explanation": "Common noun, neuter; dative singular as complement of 'in' denoting location.",
-            "difficulty": 10
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 3,
+            "end": 10,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "fühle",
-            "surface_en": "feel",
-            "furigana": "[ˈfyːlə]",
+            "surface": "spüre",
+            "lemma": "spüren",
             "pos": "VERB",
-            "lemma": "fühlen",
-            "explanation": "Finite main verb, 1st person singular present; takes an object expressing what is felt.",
-            "difficulty": 7
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 11,
+            "end": 16,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "ich",
-            "surface_en": "I",
-            "furigana": "[ɪç]",
-            "pos": "PRON",
             "lemma": "ich",
-            "explanation": "Personal pronoun, 1st person singular nominative; subject of 'fühle'.",
-            "difficulty": 2
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 17,
+            "end": 20,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "mehr",
-            "surface_en": "more",
-            "furigana": "[meːɐ̯]",
-            "pos": "DET",
             "lemma": "mehr",
-            "explanation": "Quantifying determiner used prenominally, modifying the following noun ('Freiheit') without an article.",
-            "difficulty": 7
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "PIAT",
+            "feats": {},
+            "start": 21,
+            "end": 25,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "Freiheit.",
-            "surface_en": "freedom",
-            "furigana": "[ˈfʁaɪ̯haɪ̯t]",
-            "pos": "NOUN",
+            "surface": "Freiheit",
             "lemma": "Freiheit",
-            "explanation": "Common noun, feminine; accusative singular as the object of 'fühle', quantified by 'mehr'.",
-            "difficulty": 10,
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 26,
+            "end": 34,
+            "analyzer": "spacy_de_core_news_lg",
             "is_main_word": true
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 34,
+            "end": 35,
+            "analyzer": "spacy_de_core_news_lg"
           }
         ],
         "difficulty_aggregated": 5.71
@@ -835,137 +1101,41 @@
         "difficulty_aggregated": 5.11
       }
     ],
-    "es": [
-      "Me encanta la libertad de los fines de semana.",
-      "Por fin vuelvo a ser libre.",
-      "En el extranjero me siento más libre.",
-      "Tom se siente libre cuando escala en el rocódromo."
-    ],
-    "fr": [
-      "J'adore la liberté des week-ends.",
-      "Enfin, je suis à nouveau libre.",
-      "À l'étranger, je me sens plus libre.",
-      "Tom se sent libre quand il grimpe en salle."
-    ],
-    "it": [
-      "Adoro la libertà del fine settimana.",
-      "Finalmente ho di nuovo la mia libertà.",
-      "All'estero mi sento più libero.",
-      "Tom si sente libero quando arrampica in palestra."
-    ],
-    "ko": [
-      "주말의 자유가 참 좋다.",
-      "드디어 다시 자유를 되찾았다.",
-      "해외에 있으면 더 자유롭게 느껴진다.",
-      "톰은 실내 암벽장에서 클라이밍할 때 자유를 느낀다."
-    ],
-    "zh-Hans": [
-      "我喜欢周末的自由。",
-      "我终于又自由了。",
-      "在国外我感觉更自由。",
-      "汤姆在攀岩馆攀岩时感到自由。"
-    ],
-    "yue": [
-      "我鍾意周末嘅自由。",
-      "終於再次重獲自由。",
-      "喺外國我覺得更自由。",
-      "湯姆喺攀石館攀爬時覺得好自由。"
-    ],
-    "ru": [
-      "Я обожаю свободу по выходным.",
-      "Наконец снова свобода.",
-      "За границей я чувствую себя свободнее.",
-      "Том чувствует свободу, когда занимается скалолазанием в зале."
-    ],
-    "pt": [
-      "Adoro a liberdade dos fins de semana.",
-      "Finalmente estou livre de novo.",
-      "No exterior eu me sinto mais livre.",
-      "Tom sente-se livre quando escala no ginásio de escalada."
-    ],
-    "he": [
-      "אני אוהב את החופש בסופי השבוע.",
-      "סוף סוף יש לי שוב את החופש שלי.",
-      "בחו״ל יש לי יותר חופש.",
-      "טום מרגיש חופשי כשהוא מטפס באולם טיפוס."
-    ],
-    "tr": [
-      "Hafta sonlarının özgürlüğünü seviyorum.",
-      "Sonunda yeniden özgürlüğümü kazandım.",
-      "Yurtdışında kendimi daha özgür hissediyorum.",
-      "Tom, tırmanış salonunda tırmanırken özgür hissediyor."
-    ],
-    "vi": [
-      "Tôi thích sự tự do vào cuối tuần.",
-      "Cuối cùng tôi lại được tự do.",
-      "Ở nước ngoài tôi cảm thấy tự do hơn.",
-      "Tom thấy tự do khi leo ở phòng leo núi trong nhà."
-    ],
+    "word_POS": "Noun",
+    "entry_id": "Freiheit",
+    "word_en": "freedom; liberty",
+    "word_es": "libertad",
+    "word_fr": "liberté",
+    "word_it": "libertà",
+    "word_ko": "자유",
+    "word_zh-Hans": "自由",
+    "word_yue": "自由",
+    "word_ru": "свобода",
+    "word_pt": "liberdade",
+    "word_he": "חירות; חופש",
+    "word_tr": "özgürlük; hürriyet",
+    "word_vi": "tự do",
+    "word_ar": "حرية",
+    "word_nl": "vrijheid",
+    "word_uk": "свобода",
+    "word_hu": "szabadság",
+    "word_hi": "आज़ादी; स्वतंत्रता",
+    "word_pl": "wolność",
+    "word_el": "ελευθερία",
+    "word_nb": "frihet",
+    "word_id": "kebebasan",
+    "word_sv": "frihet",
+    "word_ro": "libertate",
+    "word_cs": "svoboda",
+    "word_da": "frihed",
+    "word_fi": "vapaus",
+    "word_ja": "自由",
+    "word_de": "Freiheit",
     "ar": [
       "أحب حرية عطلة نهاية الأسبوع.",
       "أخيرًا استعدت حريتي.",
       "في الخارج أشعر بحرية أكبر.",
       "توم يشعر بالحرية عندما يتسلق في صالة التسلق."
-    ],
-    "nl": [
-      "Ik hou van de vrijheid in het weekend.",
-      "Eindelijk heb ik mijn vrijheid weer.",
-      "In het buitenland voel ik me vrijer.",
-      "Tom voelt zich vrij als hij klimt in de klimhal."
-    ],
-    "uk": [
-      "Я люблю свободу у вихідні.",
-      "Нарешті знову свобода.",
-      "За кордоном мені вільніше.",
-      "Том відчуває свободу, коли займається скелелазінням у скеледромі."
-    ],
-    "hu": [
-      "Imádom a hétvégék szabadságát.",
-      "Végre megint szabad vagyok.",
-      "Külföldön szabadabbnak érzem magam.",
-      "Tom szabadnak érzi magát, amikor a mászóteremben mászik."
-    ],
-    "hi": [
-      "मुझे वीकेंड की आज़ादी बहुत पसंद है.",
-      "आखिरकार मैं फिर से आज़ाद हूँ.",
-      "विदेश में मुझे ज्यादा आज़ादी महसूस होती है.",
-      "टॉम जिम में क्लाइंबिंग करते समय खुद को आज़ाद महसूस करता है."
-    ],
-    "pl": [
-      "Uwielbiam wolność w weekendy.",
-      "Wreszcie znów mam wolność.",
-      "Za granicą czuję się swobodniej.",
-      "Tom czuje się wolny, gdy wspina się na ściance w hali."
-    ],
-    "el": [
-      "Λατρεύω την ελευθερία του σαββατοκύριακου.",
-      "Επιτέλους ξαναβρήκα την ελευθερία μου.",
-      "Στο εξωτερικό έχω περισσότερη ελευθερία.",
-      "Ο Τομ νιώθει ελευθερία όταν σκαρφαλώνει στο αναρριχητήριο."
-    ],
-    "nb": [
-      "Jeg elsker friheten i helgene.",
-      "Endelig er jeg fri igjen.",
-      "I utlandet føler jeg meg friere.",
-      "Tom føler seg fri når han klatrer i klatrehallen."
-    ],
-    "id": [
-      "Saya suka kebebasan di akhir pekan.",
-      "Akhirnya aku bebas lagi.",
-      "Di luar negeri aku merasa lebih bebas.",
-      "Tom merasa bebas saat memanjat di gym panjat tebing."
-    ],
-    "sv": [
-      "Jag älskar friheten på helgerna.",
-      "Äntligen är jag fri igen.",
-      "Utomlands känner jag mig friare.",
-      "Tom känner sig fri när han klättrar i klätterhallen."
-    ],
-    "ro": [
-      "Îmi place libertatea din weekend.",
-      "În sfârșit mi-am recăpătat libertatea.",
-      "În străinătate am mai multă libertate.",
-      "Tom se simte liber când se cațără în sala de escaladă."
     ],
     "cs": [
       "Miluju svobodu o víkendech.",
@@ -979,11 +1149,77 @@
       "I udlandet føler jeg mig friere.",
       "Tom føler frihed, når han klatrer i klatrehallen."
     ],
+    "de": [
+      "Ich liebe die Freiheit am Wochenende.",
+      "Endlich habe ich wieder meine Freiheit.",
+      "Im Ausland fühle ich mehr Freiheit.",
+      "Tom findet Freiheit beim Klettern in der Halle."
+    ],
+    "el": [
+      "Λατρεύω την ελευθερία του σαββατοκύριακου.",
+      "Επιτέλους ξαναβρήκα την ελευθερία μου.",
+      "Στο εξωτερικό έχω περισσότερη ελευθερία.",
+      "Ο Τομ νιώθει ελευθερία όταν σκαρφαλώνει στο αναρριχητήριο."
+    ],
+    "en": [
+      "I love having freedom on the weekends.",
+      "I finally have my freedom back.",
+      "Abroad I feel more freedom.",
+      "Tom finds freedom while climbing in the gym."
+    ],
+    "es": [
+      "Me encanta la libertad de los fines de semana.",
+      "Por fin vuelvo a ser libre.",
+      "En el extranjero me siento más libre.",
+      "Tom se siente libre cuando escala en el rocódromo."
+    ],
     "fi": [
       "Rakastan viikonloppujen vapautta.",
       "Vihdoin sain vapauteni takaisin.",
       "Ulkomailla tunnen oloni vapaammaksi.",
       "Tom tuntee vapautta kiivetessään kiipeilyhallissa."
+    ],
+    "fr": [
+      "J'adore la liberté des week-ends.",
+      "Enfin, je suis à nouveau libre.",
+      "À l'étranger, je me sens plus libre.",
+      "Tom se sent libre quand il grimpe en salle."
+    ],
+    "he": [
+      "אני אוהב את החופש בסופי השבוע.",
+      "סוף סוף יש לי שוב את החופש שלי.",
+      "בחו״ל יש לי יותר חופש.",
+      "טום מרגיש חופשי כשהוא מטפס באולם טיפוס."
+    ],
+    "hi": [
+      "मुझे वीकेंड की आज़ादी बहुत पसंद है.",
+      "आखिरकार मैं फिर से आज़ाद हूँ.",
+      "विदेश में मुझे ज्यादा आज़ादी महसूस होती है.",
+      "टॉम जिम में क्लाइंबिंग करते समय खुद को आज़ाद महसूस करता है."
+    ],
+    "hu": [
+      "Imádom a hétvégék szabadságát.",
+      "Végre megint szabad vagyok.",
+      "Külföldön szabadabbnak érzem magam.",
+      "Tom szabadnak érzi magát, amikor a mászóteremben mászik."
+    ],
+    "id": [
+      "Saya suka kebebasan di akhir pekan.",
+      "Akhirnya aku bebas lagi.",
+      "Di luar negeri aku merasa lebih bebas.",
+      "Tom merasa bebas saat memanjat di gym panjat tebing."
+    ],
+    "ipa": [
+      "/ɪç ˈliːbə diː ˈfʁaɪ̯haɪ̯t am ˈvɔxənˌɛndə/",
+      "/ˈɛndlɪç ˈhaːbə ɪç ˈviːdɐ ˈmaɪ̯nə ˈfʁaɪ̯haɪ̯t/",
+      "/ɪm ˈaʊ̯sland ˈfyːlə ɪç meːɐ̯ ˈfʁaɪ̯haɪ̯t/",
+      "/tɔm ˈfɪndət ˈfʁaɪ̯haɪ̯t baɪ̯m ˈklɛtɐn ɪn deːɐ̯ ˈhalə/"
+    ],
+    "it": [
+      "Adoro la libertà del fine settimana.",
+      "Finalmente ho di nuovo la mia libertà.",
+      "All'estero mi sento più libero.",
+      "Tom si sente libero quando arrampica in palestra."
     ],
     "ja": [
       "週末の自由が大好きだ。",
@@ -991,6 +1227,83 @@
       "海外にいるともっと自由に感じる。",
       "トムはクライミングジムで登っていると自由を感じる。"
     ],
-    "word_POS": "Noun"
+    "ko": [
+      "주말의 자유가 참 좋다.",
+      "드디어 다시 자유를 되찾았다.",
+      "해외에 있으면 더 자유롭게 느껴진다.",
+      "톰은 실내 암벽장에서 클라이밍할 때 자유를 느낀다."
+    ],
+    "nb": [
+      "Jeg elsker friheten i helgene.",
+      "Endelig er jeg fri igjen.",
+      "I utlandet føler jeg meg friere.",
+      "Tom føler seg fri når han klatrer i klatrehallen."
+    ],
+    "nl": [
+      "Ik hou van de vrijheid in het weekend.",
+      "Eindelijk heb ik mijn vrijheid weer.",
+      "In het buitenland voel ik me vrijer.",
+      "Tom voelt zich vrij als hij klimt in de klimhal."
+    ],
+    "pl": [
+      "Uwielbiam wolność w weekendy.",
+      "Wreszcie znów mam wolność.",
+      "Za granicą czuję się swobodniej.",
+      "Tom czuje się wolny, gdy wspina się na ściance w hali."
+    ],
+    "pt": [
+      "Adoro a liberdade dos fins de semana.",
+      "Finalmente estou livre de novo.",
+      "No exterior eu me sinto mais livre.",
+      "Tom sente-se livre quando escala no ginásio de escalada."
+    ],
+    "ro": [
+      "Îmi place libertatea din weekend.",
+      "În sfârșit mi-am recăpătat libertatea.",
+      "În străinătate am mai multă libertate.",
+      "Tom se simte liber când se cațără în sala de escaladă."
+    ],
+    "ru": [
+      "Я обожаю свободу по выходным.",
+      "Наконец снова свобода.",
+      "За границей я чувствую себя свободнее.",
+      "Том чувствует свободу, когда занимается скалолазанием в зале."
+    ],
+    "sv": [
+      "Jag älskar friheten på helgerna.",
+      "Äntligen är jag fri igen.",
+      "Utomlands känner jag mig friare.",
+      "Tom känner sig fri när han klättrar i klätterhallen."
+    ],
+    "tr": [
+      "Hafta sonlarının özgürlüğünü seviyorum.",
+      "Sonunda yeniden özgürlüğümü kazandım.",
+      "Yurtdışında kendimi daha özgür hissediyorum.",
+      "Tom, tırmanış salonunda tırmanırken özgür hissediyor."
+    ],
+    "uk": [
+      "Я люблю свободу у вихідні.",
+      "Нарешті знову свобода.",
+      "За кордоном мені вільніше.",
+      "Том відчуває свободу, коли займається скелелазінням у скеледромі."
+    ],
+    "vi": [
+      "Tôi thích sự tự do vào cuối tuần.",
+      "Cuối cùng tôi lại được tự do.",
+      "Ở nước ngoài tôi cảm thấy tự do hơn.",
+      "Tom thấy tự do khi leo ở phòng leo núi trong nhà."
+    ],
+    "yue": [
+      "我鍾意周末嘅自由。",
+      "終於再次重獲自由。",
+      "喺外國我覺得更自由。",
+      "湯姆喺攀石館攀爬時覺得好自由。"
+    ],
+    "zh-Hans": [
+      "我喜欢周末的自由。",
+      "我终于又自由了。",
+      "在国外我感觉更自由。",
+      "汤姆在攀岩馆攀岩时感到自由。"
+    ]
   }
 }

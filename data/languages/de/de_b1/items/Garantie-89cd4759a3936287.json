@@ -49,7 +49,7 @@
       "translations": {
         "de": "Die Garantie gilt noch zwei Jahre.",
         "ipa": "/diː ɡaʁanˈtiː ɡɪlt nɔx tsvaɪ̯ ˈjaːʁə/",
-        "en": "The warranty is still valid for two years.",
+        "en": "The warranty is valid for another two years.",
         "es": "La garantía sigue vigente por dos años más.",
         "fr": "La garantie est encore valable pendant deux ans.",
         "it": "La garanzia è ancora valida per altri due anni.",
@@ -239,10 +239,10 @@
       "difficulty": 4.57
     },
     {
-      "target": "Er fragt nach der Garantie beim Verkäufer.",
+      "target": "Er fragt den Verkäufer nach der Garantie.",
       "reading": "/eːɐ̯ fʁaːkt naːx deːɐ̯ ɡaʁanˈtiː baɪ̯m fɛɐ̯ˈkɔʏ̯fɐ/",
       "translations": {
-        "de": "Er fragt nach der Garantie beim Verkäufer.",
+        "de": "Er fragt den Verkäufer nach der Garantie.",
         "ipa": "/eːɐ̯ fʁaːkt naːx deːɐ̯ ɡaʁanˈtiː baɪ̯m fɛɐ̯ˈkɔʏ̯fɐ/",
         "en": "He asks the seller about the warranty.",
         "es": "Le pregunta al vendedor por la garantía.",
@@ -256,7 +256,7 @@
         "he": "הוא שואל את המוכר לגבי האחריות.",
         "tr": "Satıcıya garantiyle ilgili soru soruyor.",
         "vi": "Anh ấy hỏi người bán về bảo hành.",
-        "ar": "يسأل הבائع عن الضمان.",
+        "ar": "يسأل البائع عن الضمان.",
         "nl": "Hij vraagt de verkoper naar de garantie.",
         "uk": "Він запитує продавця про гарантію.",
         "hu": "Az eladót a garanciáról kérdezi.",
@@ -275,67 +275,92 @@
       "tokens": [
         {
           "surface": "Er",
-          "surface_en": "he",
-          "furigana": "[eːɐ]",
-          "pos": "PRON",
           "lemma": "er",
-          "explanation": "Personal pronoun; 3rd person singular nominative; subject.",
-          "difficulty": 2
+          "pos": "PRON",
+          "upos": "PRON",
+          "xpos": "PPER",
+          "feats": {},
+          "start": 0,
+          "end": 2,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "fragt",
-          "surface_en": "asks",
-          "furigana": "[fʁaːkt]",
-          "pos": "VERB",
           "lemma": "fragen",
-          "explanation": "Finite verb; 3rd person singular present; main predicate.",
-          "difficulty": 7
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VVFIN",
+          "feats": {},
+          "start": 3,
+          "end": 8,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "den",
+          "lemma": "der",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "ART",
+          "feats": {},
+          "start": 9,
+          "end": 12,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "Verkäufer",
+          "lemma": "Verkäufer",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 13,
+          "end": 22,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "nach",
-          "surface_en": "about",
-          "furigana": "[naːx]",
-          "pos": "ADP",
           "lemma": "nach",
-          "explanation": "Preposition; governs dative; marks the topic being asked about.",
-          "difficulty": 2
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "APPR",
+          "feats": {},
+          "start": 23,
+          "end": 27,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "der",
-          "surface_en": "the",
-          "furigana": "[deːɐ]",
-          "pos": "DET",
           "lemma": "der",
-          "explanation": "Definite article; dative singular feminine, determines 'Garantie' after 'nach'.",
-          "difficulty": 2
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "ART",
+          "feats": {},
+          "start": 28,
+          "end": 31,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "Garantie",
-          "surface_en": "warranty",
-          "furigana": "[ɡaʁanˈtiː]",
-          "pos": "NOUN",
           "lemma": "Garantie",
-          "explanation": "Noun; feminine singular; object of 'nach' in dative.",
-          "difficulty": 10,
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 32,
+          "end": 40,
+          "analyzer": "spacy_de_core_news_lg",
           "is_main_word": true
         },
         {
-          "surface": "beim",
-          "surface_en": "at the",
-          "furigana": "[baɪ̯m]",
-          "pos": "ADP",
-          "lemma": "bei",
-          "explanation": "Preposition (fused form of 'bei dem'); governs dative; introduces a locative PP.",
-          "difficulty": 2
-        },
-        {
-          "surface": "Verkäufer.",
-          "surface_en": "seller",
-          "furigana": "[fɛɐ̯ˈkɔʏfɐ]",
-          "pos": "NOUN",
-          "lemma": "Verkäufer",
-          "explanation": "Noun; masculine singular; dative object of 'beim' (location/person asked).",
-          "difficulty": 10
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 40,
+          "end": 41,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 5
@@ -346,7 +371,7 @@
       "translations": {
         "de": "Die Uhr hat keine Garantie mehr.",
         "ipa": "/diː uːɐ̯ hat ˈkaɪ̯nə ɡaʁanˈtiː meːɐ̯/",
-        "en": "The watch has no warranty anymore.",
+        "en": "The watch is no longer under warranty.",
         "es": "El reloj ya no tiene garantía.",
         "fr": "La montre n'est plus sous garantie.",
         "it": "L'orologio non è più in garanzia.",
@@ -445,8 +470,314 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-15T00:12:51Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:De b1/89cd4759a3936287",
+      "revision_id": 85478,
+      "parent_revision_id": 16194,
+      "revision_timestamp_utc": "2026-10-15T00:12:51Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Clarify the German question construction and polish two English phrases and Arabic spelling",
+      "pulled_utc": "2026-10-17T07:06:40Z",
+      "applied_utc": "2026-10-17T07:06:49Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-1a3411d9ef36c241",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_b1:89cd4759a3936287",
+        "pack_code": "de_b1",
+        "entry_id": "Garantie",
+        "language": "de",
+        "sentence_index": 3,
+        "old_sentence": "Er fragt nach der Garantie beim Verkäufer.",
+        "old_translations": {
+          "de": "Er fragt nach der Garantie beim Verkäufer.",
+          "ipa": "/eːɐ̯ fʁaːkt naːx deːɐ̯ ɡaʁanˈtiː baɪ̯m fɛɐ̯ˈkɔʏ̯fɐ/",
+          "en": "He asks the seller about the warranty.",
+          "es": "Le pregunta al vendedor por la garantía.",
+          "fr": "Il demande au vendeur des détails sur la garantie.",
+          "it": "Chiede al venditore informazioni sulla garanzia.",
+          "ko": "그는 판매원에게 보증에 대해 물어봐요.",
+          "zh-Hans": "他向售货员询问保修情况。",
+          "yue": "佢問售貨員有關保養嘅情況。",
+          "ru": "Он спрашивает у продавца о гарантии.",
+          "pt": "Ele pergunta ao vendedor sobre a garantia.",
+          "he": "הוא שואל את המוכר לגבי האחריות.",
+          "tr": "Satıcıya garantiyle ilgili soru soruyor.",
+          "vi": "Anh ấy hỏi người bán về bảo hành.",
+          "ar": "يسأل הבائع عن الضمان.",
+          "nl": "Hij vraagt de verkoper naar de garantie.",
+          "uk": "Він запитує продавця про гарантію.",
+          "hu": "Az eladót a garanciáról kérdezi.",
+          "hi": "वह विक्रेता से वारंटी के बारे में पूछता है.",
+          "pl": "Pyta sprzedawcę o gwarancję.",
+          "el": "Ρωτά τον πωλητή για την εγγύηση.",
+          "nb": "Han spør selgeren om garantien.",
+          "id": "Dia bertanya kepada penjual tentang garansi.",
+          "sv": "Han frågar säljaren om garantin.",
+          "ro": "Îl întreabă pe vânzător despre garanție.",
+          "cs": "Ptá se prodavače na záruku.",
+          "da": "Han spørger sælgeren om garantien.",
+          "fi": "Hän kysyy myyjältä takuusta.",
+          "ja": "彼は店員に保証について尋ねます。"
+        },
+        "proposed_sentence": "Er fragt den Verkäufer nach der Garantie.",
+        "proposed_translations": {
+          "de": "Er fragt den Verkäufer nach der Garantie.",
+          "ipa": "/eːɐ̯ fʁaːkt naːx deːɐ̯ ɡaʁanˈtiː baɪ̯m fɛɐ̯ˈkɔʏ̯fɐ/",
+          "en": "He asks the seller about the warranty.",
+          "es": "Le pregunta al vendedor por la garantía.",
+          "fr": "Il demande au vendeur des détails sur la garantie.",
+          "it": "Chiede al venditore informazioni sulla garanzia.",
+          "ko": "그는 판매원에게 보증에 대해 물어봐요.",
+          "zh-Hans": "他向售货员询问保修情况。",
+          "yue": "佢問售貨員有關保養嘅情況。",
+          "ru": "Он спрашивает у продавца о гарантии.",
+          "pt": "Ele pergunta ao vendedor sobre a garantia.",
+          "he": "הוא שואל את המוכר לגבי האחריות.",
+          "tr": "Satıcıya garantiyle ilgili soru soruyor.",
+          "vi": "Anh ấy hỏi người bán về bảo hành.",
+          "ar": "يسأل البائع عن الضمان.",
+          "nl": "Hij vraagt de verkoper naar de garantie.",
+          "uk": "Він запитує продавця про гарантію.",
+          "hu": "Az eladót a garanciáról kérdezi.",
+          "hi": "वह विक्रेता से वारंटी के बारे में पूछता है.",
+          "pl": "Pyta sprzedawcę o gwarancję.",
+          "el": "Ρωτά τον πωλητή για την εγγύηση.",
+          "nb": "Han spør selgeren om garantien.",
+          "id": "Dia bertanya kepada penjual tentang garansi.",
+          "sv": "Han frågar säljaren om garantin.",
+          "ro": "Îl întreabă pe vânzător despre garanție.",
+          "cs": "Ptá se prodavače na záruku.",
+          "da": "Han spørger sælgeren om garantien.",
+          "fi": "Hän kysyy myyjältä takuusta.",
+          "ja": "彼は店員に保証について尋ねます。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Er fragt den Verkäufer nach der Garantie.",
+        "old_japanese": "Er fragt nach der Garantie beim Verkäufer.",
+        "old_english": "He asks the seller about the warranty.",
+        "proposed_japanese": "Er fragt den Verkäufer nach der Garantie.",
+        "proposed_english": "He asks the seller about the warranty.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Er fragt den Verkäufer nach der Garantie.",
+          "tokens": [
+            {
+              "surface": "Er",
+              "lemma": "er",
+              "pos": "PRON",
+              "upos": "PRON",
+              "xpos": "PPER",
+              "feats": {},
+              "start": 0,
+              "end": 2,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "fragt",
+              "lemma": "fragen",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVFIN",
+              "feats": {},
+              "start": 3,
+              "end": 8,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "den",
+              "lemma": "der",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "ART",
+              "feats": {},
+              "start": 9,
+              "end": 12,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Verkäufer",
+              "lemma": "Verkäufer",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 13,
+              "end": 22,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "nach",
+              "lemma": "nach",
+              "pos": "ADP",
+              "upos": "ADP",
+              "xpos": "APPR",
+              "feats": {},
+              "start": 23,
+              "end": 27,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "der",
+              "lemma": "der",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "ART",
+              "feats": {},
+              "start": 28,
+              "end": 31,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Garantie",
+              "lemma": "Garantie",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 32,
+              "end": 40,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 40,
+              "end": 41,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Er",
+            "lemma": "er",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "fragt",
+            "lemma": "fragen",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 3,
+            "end": 8,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "den",
+            "lemma": "der",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 9,
+            "end": 12,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Verkäufer",
+            "lemma": "Verkäufer",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 13,
+            "end": 22,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "nach",
+            "lemma": "nach",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 23,
+            "end": 27,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "der",
+            "lemma": "der",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 28,
+            "end": 31,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Garantie",
+            "lemma": "Garantie",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 32,
+            "end": 40,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 40,
+            "end": 41,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:06:40Z",
+        "updated_utc": "2026-10-17T07:07:05Z",
+        "applied_utc": "2026-10-17T07:07:05Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:07:05Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -458,34 +789,6 @@
     "word": "Garantie",
     "word_reading": "",
     "word_label": "Substantiv (die fem.)",
-    "word_en": "warranty; guarantee",
-    "word_es": "garantía",
-    "word_fr": "garantie",
-    "word_it": "garanzia",
-    "word_ko": "보증",
-    "word_zh-Hans": "保证; 保修",
-    "word_yue": "保證; 保養",
-    "word_ru": "гарантия",
-    "word_pt": "garantia",
-    "word_he": "אחריות; ערובה",
-    "word_tr": "garanti",
-    "word_vi": "bảo hành; bảo đảm",
-    "word_ar": "ضمان; كفالة",
-    "word_nl": "garantie",
-    "word_uk": "гарантія",
-    "word_hu": "garancia",
-    "word_hi": "गारंटी; वारंटी",
-    "word_pl": "gwarancja",
-    "word_el": "εγγύηση",
-    "word_nb": "garanti",
-    "word_id": "garansi; jaminan",
-    "word_sv": "garanti",
-    "word_ro": "garanție",
-    "word_cs": "záruka; garance",
-    "word_da": "garanti",
-    "word_fi": "takuu; tae",
-    "word_ja": "保証",
-    "word_de": "Garantie",
     "comic_difficulty": 5.06,
     "jp": [
       "Die Garantie gilt noch zwei Jahre.",
@@ -498,24 +801,6 @@
       "/ɪç ˈhaːbə nɔx ɡaʁanˈtiː aʊ̯f das ˈhɛndi/",
       "/eːɐ̯ fʁaːkt naːx deːɐ̯ ɡaʁanˈtiː baɪ̯m fɛɐ̯ˈkɔʏ̯fɐ/",
       "/diː uːɐ̯ hat ˈkaɪ̯nə ɡaʁanˈtiː meːɐ̯/"
-    ],
-    "de": [
-      "Die Garantie gilt noch zwei Jahre.",
-      "Ich habe noch Garantie auf das Handy.",
-      "Er fragt nach der Garantie beim Verkäufer.",
-      "Die Uhr hat keine Garantie mehr."
-    ],
-    "ipa": [
-      "/diː ɡaʁanˈtiː ɡɪlt nɔx tsvaɪ̯ ˈjaːʁə/",
-      "/ɪç ˈhaːbə nɔx ɡaʁanˈtiː aʊ̯f das ˈhɛndi/",
-      "/eːɐ̯ fʁaːkt naːx deːɐ̯ ɡaʁanˈtiː baɪ̯m fɛɐ̯ˈkɔʏ̯fɐ/",
-      "/diː uːɐ̯ hat ˈkaɪ̯nə ɡaʁanˈtiː meːɐ̯/"
-    ],
-    "en": [
-      "The warranty is still valid for two years.",
-      "I still have a warranty on the phone.",
-      "He asks the seller about the warranty.",
-      "The watch has no warranty anymore."
     ],
     "pos_analysis": [
       {
@@ -650,71 +935,96 @@
         "difficulty_aggregated": 4.57
       },
       {
-        "sentence": "Er fragt nach der Garantie beim Verkäufer.",
+        "sentence": "Er fragt den Verkäufer nach der Garantie.",
         "tokens": [
           {
             "surface": "Er",
-            "surface_en": "he",
-            "furigana": "[eːɐ]",
-            "pos": "PRON",
             "lemma": "er",
-            "explanation": "Personal pronoun; 3rd person singular nominative; subject.",
-            "difficulty": 2
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "fragt",
-            "surface_en": "asks",
-            "furigana": "[fʁaːkt]",
-            "pos": "VERB",
             "lemma": "fragen",
-            "explanation": "Finite verb; 3rd person singular present; main predicate.",
-            "difficulty": 7
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 3,
+            "end": 8,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "den",
+            "lemma": "der",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 9,
+            "end": 12,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Verkäufer",
+            "lemma": "Verkäufer",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 13,
+            "end": 22,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "nach",
-            "surface_en": "about",
-            "furigana": "[naːx]",
-            "pos": "ADP",
             "lemma": "nach",
-            "explanation": "Preposition; governs dative; marks the topic being asked about.",
-            "difficulty": 2
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 23,
+            "end": 27,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "der",
-            "surface_en": "the",
-            "furigana": "[deːɐ]",
-            "pos": "DET",
             "lemma": "der",
-            "explanation": "Definite article; dative singular feminine, determines 'Garantie' after 'nach'.",
-            "difficulty": 2
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 28,
+            "end": 31,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "Garantie",
-            "surface_en": "warranty",
-            "furigana": "[ɡaʁanˈtiː]",
-            "pos": "NOUN",
             "lemma": "Garantie",
-            "explanation": "Noun; feminine singular; object of 'nach' in dative.",
-            "difficulty": 10,
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 32,
+            "end": 40,
+            "analyzer": "spacy_de_core_news_lg",
             "is_main_word": true
           },
           {
-            "surface": "beim",
-            "surface_en": "at the",
-            "furigana": "[baɪ̯m]",
-            "pos": "ADP",
-            "lemma": "bei",
-            "explanation": "Preposition (fused form of 'bei dem'); governs dative; introduces a locative PP.",
-            "difficulty": 2
-          },
-          {
-            "surface": "Verkäufer.",
-            "surface_en": "seller",
-            "furigana": "[fɛɐ̯ˈkɔʏfɐ]",
-            "pos": "NOUN",
-            "lemma": "Verkäufer",
-            "explanation": "Noun; masculine singular; dative object of 'beim' (location/person asked).",
-            "difficulty": 10
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 40,
+            "end": 41,
+            "analyzer": "spacy_de_core_news_lg"
           }
         ],
         "difficulty_aggregated": 5
@@ -781,137 +1091,41 @@
         "difficulty_aggregated": 4.83
       }
     ],
-    "es": [
-      "La garantía sigue vigente por dos años más.",
-      "El teléfono aún está en garantía.",
-      "Le pregunta al vendedor por la garantía.",
-      "El reloj ya no tiene garantía."
-    ],
-    "fr": [
-      "La garantie est encore valable pendant deux ans.",
-      "Le téléphone est encore sous garantie.",
-      "Il demande au vendeur des détails sur la garantie.",
-      "La montre n'est plus sous garantie."
-    ],
-    "it": [
-      "La garanzia è ancora valida per altri due anni.",
-      "Il telefono è ancora in garanzia.",
-      "Chiede al venditore informazioni sulla garanzia.",
-      "L'orologio non è più in garanzia."
-    ],
-    "ko": [
-      "보증이 아직 2년 더 남았어요.",
-      "휴대폰은 아직 보증이 남아 있어요.",
-      "그는 판매원에게 보증에 대해 물어봐요.",
-      "시계는 더 이상 보증이 없어요."
-    ],
-    "zh-Hans": [
-      "保修期还有两年。",
-      "这部手机还在保修期内。",
-      "他向售货员询问保修情况。",
-      "这只手表已不在保修期内。"
-    ],
-    "yue": [
-      "保養仲有兩年。",
-      "呢部手機仲喺保養期內。",
-      "佢問售貨員有關保養嘅情況。",
-      "呢隻錶已經唔喺保養期內。"
-    ],
-    "ru": [
-      "Гарантия ещё действует два года.",
-      "Телефон всё ещё на гарантии.",
-      "Он спрашивает у продавца о гарантии.",
-      "Часы больше не на гарантии."
-    ],
-    "pt": [
-      "A garantia ainda é válida por mais dois anos.",
-      "O telefone ainda está na garantia.",
-      "Ele pergunta ao vendedor sobre a garantia.",
-      "O relógio não está mais na garantia."
-    ],
-    "he": [
-      "האחריות עדיין בתוקף לעוד שנתיים.",
-      "הטלפון עדיין באחריות.",
-      "הוא שואל את המוכר לגבי האחריות.",
-      "השעון כבר לא באחריות."
-    ],
-    "tr": [
-      "Garanti iki yıl daha geçerli.",
-      "Telefon hâlâ garantide.",
-      "Satıcıya garantiyle ilgili soru soruyor.",
-      "Saat artık garanti kapsamında değil."
-    ],
-    "vi": [
-      "Bảo hành vẫn còn hiệu lực thêm hai năm nữa.",
-      "Điện thoại vẫn còn bảo hành.",
-      "Anh ấy hỏi người bán về bảo hành.",
-      "Chiếc đồng hồ không còn bảo hành nữa."
-    ],
+    "word_POS": "Noun",
+    "entry_id": "Garantie",
+    "word_en": "warranty; guarantee",
+    "word_es": "garantía",
+    "word_fr": "garantie",
+    "word_it": "garanzia",
+    "word_ko": "보증",
+    "word_zh-Hans": "保证; 保修",
+    "word_yue": "保證; 保養",
+    "word_ru": "гарантия",
+    "word_pt": "garantia",
+    "word_he": "אחריות; ערובה",
+    "word_tr": "garanti",
+    "word_vi": "bảo hành; bảo đảm",
+    "word_ar": "ضمان; كفالة",
+    "word_nl": "garantie",
+    "word_uk": "гарантія",
+    "word_hu": "garancia",
+    "word_hi": "गारंटी; वारंटी",
+    "word_pl": "gwarancja",
+    "word_el": "εγγύηση",
+    "word_nb": "garanti",
+    "word_id": "garansi; jaminan",
+    "word_sv": "garanti",
+    "word_ro": "garanție",
+    "word_cs": "záruka; garance",
+    "word_da": "garanti",
+    "word_fi": "takuu; tae",
+    "word_ja": "保証",
+    "word_de": "Garantie",
     "ar": [
       "الضمان لا يزال ساريًا لعامين إضافيين.",
       "الهاتف ما زال تحت الضمان.",
       "يسأل הבائع عن الضمان.",
       "الساعة لم تعد تحت الضمان."
-    ],
-    "nl": [
-      "De garantie is nog twee jaar geldig.",
-      "De telefoon valt nog onder de garantie.",
-      "Hij vraagt de verkoper naar de garantie.",
-      "Het horloge valt niet meer onder de garantie."
-    ],
-    "uk": [
-      "Гарантія ще діє два роки.",
-      "Телефон ще на гарантії.",
-      "Він запитує продавця про гарантію.",
-      "Годинник більше не на гарантії."
-    ],
-    "hu": [
-      "A garancia még két évig érvényes.",
-      "A telefon még garanciális.",
-      "Az eladót a garanciáról kérdezi.",
-      "Az óra már nem garanciális."
-    ],
-    "hi": [
-      "वारंटी अभी दो साल और मान्य है.",
-      "फोन अभी भी वारंटी में है.",
-      "वह विक्रेता से वारंटी के बारे में पूछता है.",
-      "घड़ी अब वारंटी में नहीं है."
-    ],
-    "pl": [
-      "Gwarancja jest ważna jeszcze przez dwa lata.",
-      "Telefon jest jeszcze na gwarancji.",
-      "Pyta sprzedawcę o gwarancję.",
-      "Zegarek nie jest już na gwarancji."
-    ],
-    "el": [
-      "Η εγγύηση ισχύει για άλλα δύο χρόνια.",
-      "Το τηλέφωνο είναι ακόμα σε εγγύηση.",
-      "Ρωτά τον πωλητή για την εγγύηση.",
-      "Το ρολόι δεν καλύπτεται πλέον από εγγύηση."
-    ],
-    "nb": [
-      "Garantien gjelder i to år til.",
-      "Telefonen er fortsatt under garanti.",
-      "Han spør selgeren om garantien.",
-      "Klokka er ikke lenger under garanti."
-    ],
-    "id": [
-      "Garansi masih berlaku selama dua tahun lagi.",
-      "Ponsel ini masih bergaransi.",
-      "Dia bertanya kepada penjual tentang garansi.",
-      "Jam tangan tidak lagi bergaransi."
-    ],
-    "sv": [
-      "Garantin gäller i ytterligare två år.",
-      "Telefonen är fortfarande under garanti.",
-      "Han frågar säljaren om garantin.",
-      "Klockan har inte längre någon garanti."
-    ],
-    "ro": [
-      "Garanția mai este valabilă încă doi ani.",
-      "Telefonul este încă în garanție.",
-      "Îl întreabă pe vânzător despre garanție.",
-      "Ceasul nu mai este în garanție."
     ],
     "cs": [
       "Záruka platí ještě dva roky.",
@@ -925,11 +1139,77 @@
       "Han spørger sælgeren om garantien.",
       "Uret er ikke længere under garanti."
     ],
+    "de": [
+      "Die Garantie gilt noch zwei Jahre.",
+      "Ich habe noch Garantie auf das Handy.",
+      "Er fragt nach der Garantie beim Verkäufer.",
+      "Die Uhr hat keine Garantie mehr."
+    ],
+    "el": [
+      "Η εγγύηση ισχύει για άλλα δύο χρόνια.",
+      "Το τηλέφωνο είναι ακόμα σε εγγύηση.",
+      "Ρωτά τον πωλητή για την εγγύηση.",
+      "Το ρολόι δεν καλύπτεται πλέον από εγγύηση."
+    ],
+    "en": [
+      "The warranty is valid for another two years.",
+      "I still have a warranty on the phone.",
+      "He asks the seller about the warranty.",
+      "The watch is no longer under warranty."
+    ],
+    "es": [
+      "La garantía sigue vigente por dos años más.",
+      "El teléfono aún está en garantía.",
+      "Le pregunta al vendedor por la garantía.",
+      "El reloj ya no tiene garantía."
+    ],
     "fi": [
       "Takuu on voimassa vielä kaksi vuotta.",
       "Puhelin on yhä takuun piirissä.",
       "Hän kysyy myyjältä takuusta.",
       "Kellolla ei ole enää takuuta."
+    ],
+    "fr": [
+      "La garantie est encore valable pendant deux ans.",
+      "Le téléphone est encore sous garantie.",
+      "Il demande au vendeur des détails sur la garantie.",
+      "La montre n'est plus sous garantie."
+    ],
+    "he": [
+      "האחריות עדיין בתוקף לעוד שנתיים.",
+      "הטלפון עדיין באחריות.",
+      "הוא שואל את המוכר לגבי האחריות.",
+      "השעון כבר לא באחריות."
+    ],
+    "hi": [
+      "वारंटी अभी दो साल और मान्य है.",
+      "फोन अभी भी वारंटी में है.",
+      "वह विक्रेता से वारंटी के बारे में पूछता है.",
+      "घड़ी अब वारंटी में नहीं है."
+    ],
+    "hu": [
+      "A garancia még két évig érvényes.",
+      "A telefon még garanciális.",
+      "Az eladót a garanciáról kérdezi.",
+      "Az óra már nem garanciális."
+    ],
+    "id": [
+      "Garansi masih berlaku selama dua tahun lagi.",
+      "Ponsel ini masih bergaransi.",
+      "Dia bertanya kepada penjual tentang garansi.",
+      "Jam tangan tidak lagi bergaransi."
+    ],
+    "ipa": [
+      "/diː ɡaʁanˈtiː ɡɪlt nɔx tsvaɪ̯ ˈjaːʁə/",
+      "/ɪç ˈhaːbə nɔx ɡaʁanˈtiː aʊ̯f das ˈhɛndi/",
+      "/eːɐ̯ fʁaːkt naːx deːɐ̯ ɡaʁanˈtiː baɪ̯m fɛɐ̯ˈkɔʏ̯fɐ/",
+      "/diː uːɐ̯ hat ˈkaɪ̯nə ɡaʁanˈtiː meːɐ̯/"
+    ],
+    "it": [
+      "La garanzia è ancora valida per altri due anni.",
+      "Il telefono è ancora in garanzia.",
+      "Chiede al venditore informazioni sulla garanzia.",
+      "L'orologio non è più in garanzia."
     ],
     "ja": [
       "保証はあと2年間有効です。",
@@ -937,6 +1217,83 @@
       "彼は店員に保証について尋ねます。",
       "この時計はもう保証対象外です。"
     ],
-    "word_POS": "Noun"
+    "ko": [
+      "보증이 아직 2년 더 남았어요.",
+      "휴대폰은 아직 보증이 남아 있어요.",
+      "그는 판매원에게 보증에 대해 물어봐요.",
+      "시계는 더 이상 보증이 없어요."
+    ],
+    "nb": [
+      "Garantien gjelder i to år til.",
+      "Telefonen er fortsatt under garanti.",
+      "Han spør selgeren om garantien.",
+      "Klokka er ikke lenger under garanti."
+    ],
+    "nl": [
+      "De garantie is nog twee jaar geldig.",
+      "De telefoon valt nog onder de garantie.",
+      "Hij vraagt de verkoper naar de garantie.",
+      "Het horloge valt niet meer onder de garantie."
+    ],
+    "pl": [
+      "Gwarancja jest ważna jeszcze przez dwa lata.",
+      "Telefon jest jeszcze na gwarancji.",
+      "Pyta sprzedawcę o gwarancję.",
+      "Zegarek nie jest już na gwarancji."
+    ],
+    "pt": [
+      "A garantia ainda é válida por mais dois anos.",
+      "O telefone ainda está na garantia.",
+      "Ele pergunta ao vendedor sobre a garantia.",
+      "O relógio não está mais na garantia."
+    ],
+    "ro": [
+      "Garanția mai este valabilă încă doi ani.",
+      "Telefonul este încă în garanție.",
+      "Îl întreabă pe vânzător despre garanție.",
+      "Ceasul nu mai este în garanție."
+    ],
+    "ru": [
+      "Гарантия ещё действует два года.",
+      "Телефон всё ещё на гарантии.",
+      "Он спрашивает у продавца о гарантии.",
+      "Часы больше не на гарантии."
+    ],
+    "sv": [
+      "Garantin gäller i ytterligare två år.",
+      "Telefonen är fortfarande under garanti.",
+      "Han frågar säljaren om garantin.",
+      "Klockan har inte längre någon garanti."
+    ],
+    "tr": [
+      "Garanti iki yıl daha geçerli.",
+      "Telefon hâlâ garantide.",
+      "Satıcıya garantiyle ilgili soru soruyor.",
+      "Saat artık garanti kapsamında değil."
+    ],
+    "uk": [
+      "Гарантія ще діє два роки.",
+      "Телефон ще на гарантії.",
+      "Він запитує продавця про гарантію.",
+      "Годинник більше не на гарантії."
+    ],
+    "vi": [
+      "Bảo hành vẫn còn hiệu lực thêm hai năm nữa.",
+      "Điện thoại vẫn còn bảo hành.",
+      "Anh ấy hỏi người bán về bảo hành.",
+      "Chiếc đồng hồ không còn bảo hành nữa."
+    ],
+    "yue": [
+      "保養仲有兩年。",
+      "呢部手機仲喺保養期內。",
+      "佢問售貨員有關保養嘅情況。",
+      "呢隻錶已經唔喺保養期內。"
+    ],
+    "zh-Hans": [
+      "保修期还有两年。",
+      "这部手机还在保修期内。",
+      "他向售货员询问保修情况。",
+      "这只手表已不在保修期内。"
+    ]
   }
 }

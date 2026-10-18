@@ -145,7 +145,7 @@
         "en": "I'm reporting an outage to the internet provider.",
         "es": "Estoy reportando una falla al proveedor de internet.",
         "fr": "Je signale une panne à mon fournisseur d’accès Internet.",
-        "it": "Sto segnalando un guasto al fornitore de internet.",
+        "it": "Sto segnalando un guasto al provider di Internet.",
         "ko": "인터넷 업체에 장애를 신고하고 있어요.",
         "zh-Hans": "我正在向网络服务商报故障。",
         "yue": "我正向網絡供應商報故障。",
@@ -332,10 +332,10 @@
       "difficulty": 6.57
     },
     {
-      "target": "Mein Zug hat eine Störung am Motor.",
+      "target": "Mein Zug hat eine Motorstörung.",
       "reading": "/maɪ̯n tsuːk hat ˈaɪ̯nə ˈʃtøːʀʊŋ am ˈmoːtoːɐ̯/",
       "translations": {
-        "de": "Mein Zug hat eine Störung am Motor.",
+        "de": "Mein Zug hat eine Motorstörung.",
         "ipa": "/maɪ̯n tsuːk hat ˈaɪ̯nə ˈʃtøːʀʊŋ am ˈmoːtoːɐ̯/",
         "en": "My train has an engine problem.",
         "es": "Mi tren tiene una avería en el motor.",
@@ -368,67 +368,69 @@
       "tokens": [
         {
           "surface": "Mein",
-          "surface_en": "my",
-          "furigana": "[maɪ̯n]",
-          "pos": "DET",
           "lemma": "mein",
-          "explanation": "Possessive determiner; nominative singular masculine; determiner of 'Zug'.",
-          "difficulty": 7
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "PPOSAT",
+          "feats": {},
+          "start": 0,
+          "end": 4,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "Zug",
-          "surface_en": "train",
-          "furigana": "[tsuːk]",
-          "pos": "NOUN",
           "lemma": "Zug",
-          "explanation": "Common noun; nominative singular masculine; subject of the clause.",
-          "difficulty": 4
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 5,
+          "end": 8,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "hat",
-          "surface_en": "has",
-          "furigana": "[hat]",
-          "pos": "VERB",
           "lemma": "haben",
-          "explanation": "Main verb; 3rd person singular present; takes an accusative object and a prepositional complement.",
-          "difficulty": 4
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VAFIN",
+          "feats": {},
+          "start": 9,
+          "end": 12,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "eine",
-          "surface_en": "a",
-          "furigana": "[ˈaɪ̯nə]",
-          "pos": "DET",
           "lemma": "ein",
-          "explanation": "Indefinite article; accusative singular feminine; determiner of 'Störung'.",
-          "difficulty": 2
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "ART",
+          "feats": {},
+          "start": 13,
+          "end": 17,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "Störung",
-          "surface_en": "disruption",
-          "furigana": "[ˈʃtøːʁʊŋ]",
+          "surface": "Motorstörung",
+          "lemma": "Motorstörung",
           "pos": "NOUN",
-          "lemma": "Störung",
-          "explanation": "Common noun; accusative singular feminine; direct object of 'hat'.",
-          "difficulty": 10,
-          "is_main_word": true
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 18,
+          "end": 30,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "am",
-          "surface_en": "at-the",
-          "furigana": "[am]",
-          "pos": "ADP",
-          "lemma": "an",
-          "explanation": "Preposition; contraction of 'an' + 'dem'; governs dative; indicates the affected part/location.",
-          "difficulty": 2
-        },
-        {
-          "surface": "Motor.",
-          "surface_en": "engine",
-          "furigana": "[moˈtoːʁ]",
-          "pos": "NOUN",
-          "lemma": "Motor",
-          "explanation": "Common noun; dative singular masculine; object of 'am'.",
-          "difficulty": 7
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 30,
+          "end": 31,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 5.14
@@ -445,8 +447,270 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-15T04:00:42Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:De b1/3f36dc0d0c823581",
+      "revision_id": 84950,
+      "parent_revision_id": 17938,
+      "revision_timestamp_utc": "2026-10-15T04:00:42Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Make the German train sentence idiomatic and correct the Italian preposition.",
+      "pulled_utc": "2026-10-17T07:06:37Z",
+      "applied_utc": "2026-10-17T07:06:51Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-a6b5ee5503b5e64c",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_b1:3f36dc0d0c823581",
+        "pack_code": "de_b1",
+        "entry_id": "Störung",
+        "language": "de",
+        "sentence_index": 4,
+        "old_sentence": "Mein Zug hat eine Störung am Motor.",
+        "old_translations": {
+          "de": "Mein Zug hat eine Störung am Motor.",
+          "ipa": "/maɪ̯n tsuːk hat ˈaɪ̯nə ˈʃtøːʀʊŋ am ˈmoːtoːɐ̯/",
+          "en": "My train has an engine problem.",
+          "es": "Mi tren tiene una avería en el motor.",
+          "fr": "Mon train a un problème de moteur.",
+          "it": "Il mio treno ha un problema al motore.",
+          "ko": "기차에 엔진 문제가 있어요.",
+          "zh-Hans": "我坐的火车发动机出故障了。",
+          "yue": "我搭嘅火車個引擎有故障。",
+          "ru": "У моего поезда неполадки с двигателем.",
+          "pt": "O meu comboio tem uma avaria no motor.",
+          "he": "לרכבת שלי יש תקלה במנוע.",
+          "tr": "Trenimin motorunda arıza var.",
+          "vi": "Tàu của tôi bị hỏng động cơ.",
+          "ar": "قطاري فيه عطل في المحرك.",
+          "nl": "Mijn trein heeft een motorstoring.",
+          "uk": "У мого поїзда проблема з двигуном.",
+          "hu": "A vonatomnak motorhibája van.",
+          "hi": "मेरी ट्रेन में इंजन की समस्या है।",
+          "pl": "Mój pociąg ma problem z silnikiem.",
+          "el": "Το τρένο μου έχει πρόβλημα στον κινητήρα.",
+          "nb": "Toget mitt har motortrøbbel.",
+          "id": "Kereta saya mengalami masalah mesin.",
+          "sv": "Mitt tåg har motorproblem.",
+          "ro": "Trenul meu are o problemă la motor.",
+          "cs": "Můj vlak má problém s motorem.",
+          "da": "Mit tog har motorproblemer.",
+          "fi": "Junassani on moottorivika.",
+          "ja": "乗っている電車のエンジンに不具合があります。"
+        },
+        "proposed_sentence": "Mein Zug hat eine Motorstörung.",
+        "proposed_translations": {
+          "de": "Mein Zug hat eine Motorstörung.",
+          "ipa": "/maɪ̯n tsuːk hat ˈaɪ̯nə ˈʃtøːʀʊŋ am ˈmoːtoːɐ̯/",
+          "en": "My train has an engine problem.",
+          "es": "Mi tren tiene una avería en el motor.",
+          "fr": "Mon train a un problème de moteur.",
+          "it": "Il mio treno ha un problema al motore.",
+          "ko": "기차에 엔진 문제가 있어요.",
+          "zh-Hans": "我坐的火车发动机出故障了。",
+          "yue": "我搭嘅火車個引擎有故障。",
+          "ru": "У моего поезда неполадки с двигателем.",
+          "pt": "O meu comboio tem uma avaria no motor.",
+          "he": "לרכבת שלי יש תקלה במנוע.",
+          "tr": "Trenimin motorunda arıza var.",
+          "vi": "Tàu của tôi bị hỏng động cơ.",
+          "ar": "قطاري فيه عطل في المحرك.",
+          "nl": "Mijn trein heeft een motorstoring.",
+          "uk": "У мого поїзда проблема з двигуном.",
+          "hu": "A vonatomnak motorhibája van.",
+          "hi": "मेरी ट्रेन में इंजन की समस्या है।",
+          "pl": "Mój pociąg ma problem z silnikiem.",
+          "el": "Το τρένο μου έχει πρόβλημα στον κινητήρα.",
+          "nb": "Toget mitt har motortrøbbel.",
+          "id": "Kereta saya mengalami masalah mesin.",
+          "sv": "Mitt tåg har motorproblem.",
+          "ro": "Trenul meu are o problemă la motor.",
+          "cs": "Můj vlak má problém s motorem.",
+          "da": "Mit tog har motorproblemer.",
+          "fi": "Junassani on moottorivika.",
+          "ja": "乗っている電車のエンジンに不具合があります。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Mein Zug hat eine Motorstörung.",
+        "old_japanese": "Mein Zug hat eine Störung am Motor.",
+        "old_english": "My train has an engine problem.",
+        "proposed_japanese": "Mein Zug hat eine Motorstörung.",
+        "proposed_english": "My train has an engine problem.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Mein Zug hat eine Motorstörung.",
+          "tokens": [
+            {
+              "surface": "Mein",
+              "lemma": "mein",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "PPOSAT",
+              "feats": {},
+              "start": 0,
+              "end": 4,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Zug",
+              "lemma": "Zug",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 5,
+              "end": 8,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "hat",
+              "lemma": "haben",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VAFIN",
+              "feats": {},
+              "start": 9,
+              "end": 12,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "eine",
+              "lemma": "ein",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "ART",
+              "feats": {},
+              "start": 13,
+              "end": 17,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Motorstörung",
+              "lemma": "Motorstörung",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 18,
+              "end": 30,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 30,
+              "end": 31,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Mein",
+            "lemma": "mein",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "PPOSAT",
+            "feats": {},
+            "start": 0,
+            "end": 4,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Zug",
+            "lemma": "Zug",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 5,
+            "end": 8,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "hat",
+            "lemma": "haben",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VAFIN",
+            "feats": {},
+            "start": 9,
+            "end": 12,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "eine",
+            "lemma": "ein",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 13,
+            "end": 17,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Motorstörung",
+            "lemma": "Motorstörung",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 18,
+            "end": 30,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 30,
+            "end": 31,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:06:37Z",
+        "updated_utc": "2026-10-17T07:07:06Z",
+        "applied_utc": "2026-10-17T07:07:06Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:07:06Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -458,34 +722,6 @@
     "word": "Störung",
     "word_reading": "",
     "word_label": "Substantiv (die fem.)",
-    "word_en": "disruption; malfunction",
-    "word_es": "avería; interrupción",
-    "word_fr": "panne; perturbation",
-    "word_it": "guasto; interruzione",
-    "word_ko": "고장; 장애",
-    "word_zh-Hans": "故障; 干扰",
-    "word_yue": "故障; 干擾",
-    "word_ru": "неисправность; перебой",
-    "word_pt": "avaria; interrupção",
-    "word_he": "תקלה; הפרעה",
-    "word_tr": "arıza; kesinti",
-    "word_vi": "sự cố; gián đoạn",
-    "word_ar": "عطل; انقطاع",
-    "word_nl": "storing; onderbreking",
-    "word_uk": "неполадка; перебій",
-    "word_hu": "meghibásodás; zavar",
-    "word_hi": "खराबी; बाधा",
-    "word_pl": "awaria; zakłócenie",
-    "word_el": "βλάβη; διακοπή",
-    "word_nb": "feil; avbrudd",
-    "word_id": "gangguan; kerusakan",
-    "word_sv": "störning; avbrott",
-    "word_ro": "defecțiune; întrerupere",
-    "word_cs": "porucha; přerušení",
-    "word_da": "fejl; afbrydelse",
-    "word_fi": "häiriö; vika",
-    "word_ja": "故障; 障害",
-    "word_de": "Störung",
     "comic_difficulty": 5.55,
     "jp": [
       "Es gibt eine Störung im WLAN.",
@@ -498,24 +734,6 @@
       "/ɪç ˈmɛldə ˈaɪ̯nə ˈʃtøːʀʊŋ baɪ̯m ˈɪntɐnɛtʔanˌbiːtɐ/",
       "/diː ˈbaʊ̯ʔaʀbaɪ̯tən fɛʀˈuːʀzaxən ˈaɪ̯nə ˈʃtøːʀʊŋ ɪm ˈʊntɐʀɪçt/",
       "/maɪ̯n tsuːk hat ˈaɪ̯nə ˈʃtøːʀʊŋ am ˈmoːtoːɐ̯/"
-    ],
-    "de": [
-      "Es gibt eine Störung im WLAN.",
-      "Ich melde eine Störung beim Internetanbieter.",
-      "Die Bauarbeiten verursachen eine Störung im Unterricht.",
-      "Mein Zug hat eine Störung am Motor."
-    ],
-    "ipa": [
-      "/ɛs ɡɪpt ˈaɪ̯nə ˈʃtøːʀʊŋ ɪm ˈveːlaːn/",
-      "/ɪç ˈmɛldə ˈaɪ̯nə ˈʃtøːʀʊŋ baɪ̯m ˈɪntɐnɛtʔanˌbiːtɐ/",
-      "/diː ˈbaʊ̯ʔaʀbaɪ̯tən fɛʀˈuːʀzaxən ˈaɪ̯nə ˈʃtøːʀʊŋ ɪm ˈʊntɐʀɪçt/",
-      "/maɪ̯n tsuːk hat ˈaɪ̯nə ˈʃtøːʀʊŋ am ˈmoːtoːɐ̯/"
-    ],
-    "en": [
-      "There's a problem with the Wi‑Fi.",
-      "I'm reporting an outage to the internet provider.",
-      "The construction work causes a disruption in class.",
-      "My train has an engine problem."
     ],
     "pos_analysis": [
       {
@@ -711,207 +929,113 @@
         "difficulty_aggregated": 6.57
       },
       {
-        "sentence": "Mein Zug hat eine Störung am Motor.",
+        "sentence": "Mein Zug hat eine Motorstörung.",
         "tokens": [
           {
             "surface": "Mein",
-            "surface_en": "my",
-            "furigana": "[maɪ̯n]",
-            "pos": "DET",
             "lemma": "mein",
-            "explanation": "Possessive determiner; nominative singular masculine; determiner of 'Zug'.",
-            "difficulty": 7
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "PPOSAT",
+            "feats": {},
+            "start": 0,
+            "end": 4,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "Zug",
-            "surface_en": "train",
-            "furigana": "[tsuːk]",
-            "pos": "NOUN",
             "lemma": "Zug",
-            "explanation": "Common noun; nominative singular masculine; subject of the clause.",
-            "difficulty": 4
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 5,
+            "end": 8,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "hat",
-            "surface_en": "has",
-            "furigana": "[hat]",
-            "pos": "VERB",
             "lemma": "haben",
-            "explanation": "Main verb; 3rd person singular present; takes an accusative object and a prepositional complement.",
-            "difficulty": 4
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VAFIN",
+            "feats": {},
+            "start": 9,
+            "end": 12,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "eine",
-            "surface_en": "a",
-            "furigana": "[ˈaɪ̯nə]",
-            "pos": "DET",
             "lemma": "ein",
-            "explanation": "Indefinite article; accusative singular feminine; determiner of 'Störung'.",
-            "difficulty": 2
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 13,
+            "end": 17,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "Störung",
-            "surface_en": "disruption",
-            "furigana": "[ˈʃtøːʁʊŋ]",
+            "surface": "Motorstörung",
+            "lemma": "Motorstörung",
             "pos": "NOUN",
-            "lemma": "Störung",
-            "explanation": "Common noun; accusative singular feminine; direct object of 'hat'.",
-            "difficulty": 10,
-            "is_main_word": true
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 18,
+            "end": 30,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "am",
-            "surface_en": "at-the",
-            "furigana": "[am]",
-            "pos": "ADP",
-            "lemma": "an",
-            "explanation": "Preposition; contraction of 'an' + 'dem'; governs dative; indicates the affected part/location.",
-            "difficulty": 2
-          },
-          {
-            "surface": "Motor.",
-            "surface_en": "engine",
-            "furigana": "[moˈtoːʁ]",
-            "pos": "NOUN",
-            "lemma": "Motor",
-            "explanation": "Common noun; dative singular masculine; object of 'am'.",
-            "difficulty": 7
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 30,
+            "end": 31,
+            "analyzer": "spacy_de_core_news_lg"
           }
         ],
         "difficulty_aggregated": 5.14
       }
     ],
-    "es": [
-      "Hay un problema con el Wi-Fi.",
-      "Estoy reportando una falla al proveedor de internet.",
-      "Las obras están interrumpiendo la clase.",
-      "Mi tren tiene una avería en el motor."
-    ],
-    "fr": [
-      "Il y a un problème avec le Wi-Fi.",
-      "Je signale une panne à mon fournisseur d’accès Internet.",
-      "Les travaux perturbent le cours.",
-      "Mon train a un problème de moteur."
-    ],
-    "it": [
-      "C'è un problema con il Wi-Fi.",
-      "Sto segnalando un guasto al fornitore de internet.",
-      "I lavori stanno disturbando la lezione.",
-      "Il mio treno ha un problema al motore."
-    ],
-    "ko": [
-      "와이파이에 문제가 있어요.",
-      "인터넷 업체에 장애를 신고하고 있어요.",
-      "공사 때문에 수업이 방해돼요.",
-      "기차에 엔진 문제가 있어요."
-    ],
-    "zh-Hans": [
-      "Wi-Fi 有问题。",
-      "我正在向网络服务商报故障。",
-      "施工影响上课。",
-      "我坐的火车发动机出故障了。"
-    ],
-    "yue": [
-      "Wi-Fi 有問題。",
-      "我正向網絡供應商報故障。",
-      "施工影響上課。",
-      "我搭嘅火車個引擎有故障。"
-    ],
-    "ru": [
-      "Проблема с Wi-Fi.",
-      "Я сообщаю интернет-провайдеру о неполадке.",
-      "Строительные работы мешают занятиям.",
-      "У моего поезда неполадки с двигателем."
-    ],
-    "pt": [
-      "Há um problema com o Wi-Fi.",
-      "Estou reportando uma falha ao provedor de internet.",
-      "As obras estão atrapalhando a aula.",
-      "O meu comboio tem uma avaria no motor."
-    ],
-    "he": [
-      "יש בעיה ב-Wi-Fi.",
-      "אני מדווח על תקלה לספק האינטרנט.",
-      "העבודות גורמות להפרעה בשיעור.",
-      "לרכבת שלי יש תקלה במנוע."
-    ],
-    "tr": [
-      "Wi-Fi'de sorun var.",
-      "İnternet sağlayıcısına kesinti bildiriyorum.",
-      "İnşaat çalışmaları dersi aksatıyor.",
-      "Trenimin motorunda arıza var."
-    ],
-    "vi": [
-      "Wi-Fi bị lỗi.",
-      "Tôi đang báo sự cố cho nhà cung cấp internet.",
-      "Việc thi công đang làm gián đoạn lớp học.",
-      "Tàu của tôi bị hỏng động cơ."
-    ],
+    "word_POS": "Noun",
+    "entry_id": "Störung",
+    "word_en": "disruption; malfunction",
+    "word_es": "avería; interrupción",
+    "word_fr": "panne; perturbation",
+    "word_it": "guasto; interruzione",
+    "word_ko": "고장; 장애",
+    "word_zh-Hans": "故障; 干扰",
+    "word_yue": "故障; 干擾",
+    "word_ru": "неисправность; перебой",
+    "word_pt": "avaria; interrupção",
+    "word_he": "תקלה; הפרעה",
+    "word_tr": "arıza; kesinti",
+    "word_vi": "sự cố; gián đoạn",
+    "word_ar": "عطل; انقطاع",
+    "word_nl": "storing; onderbreking",
+    "word_uk": "неполадка; перебій",
+    "word_hu": "meghibásodás; zavar",
+    "word_hi": "खराबी; बाधा",
+    "word_pl": "awaria; zakłócenie",
+    "word_el": "βλάβη; διακοπή",
+    "word_nb": "feil; avbrudd",
+    "word_id": "gangguan; kerusakan",
+    "word_sv": "störning; avbrott",
+    "word_ro": "defecțiune; întrerupere",
+    "word_cs": "porucha; přerušení",
+    "word_da": "fejl; afbrydelse",
+    "word_fi": "häiriö; vika",
+    "word_ja": "故障; 障害",
+    "word_de": "Störung",
     "ar": [
       "هناك مشكلة في الواي فاي.",
       "أنا أبلغ مزوّد الإنترنت عن انقطاع.",
       "أعمال البناء تعطل الدرس.",
       "قطاري فيه عطل في المحرك."
-    ],
-    "nl": [
-      "Er is een probleem met de wifi.",
-      "Ik meld een storing bij de internetprovider.",
-      "De bouwwerkzaamheden verstoren de les.",
-      "Mijn trein heeft een motorstoring."
-    ],
-    "uk": [
-      "Є проблема з Wi-Fi.",
-      "Я повідомляю інтернет-провайдеру про збій.",
-      "Будівельні роботи заважають уроку.",
-      "У мого поїзда проблема з двигуном."
-    ],
-    "hu": [
-      "Gond van a Wi-Fi-vel.",
-      "Hibát jelentek az internetszolgáltatónál.",
-      "Az építkezés zavarja az órát.",
-      "A vonatomnak motorhibája van."
-    ],
-    "hi": [
-      "वाई-फाई में समस्या है।",
-      "मैं इंटरनेट प्रदाता को खराबी की सूचना दे रहा हूँ.",
-      "निर्माण कार्य से कक्षा बाधित हो रही है।",
-      "मेरी ट्रेन में इंजन की समस्या है।"
-    ],
-    "pl": [
-      "Jest problem z Wi-Fi.",
-      "Zgłaszam awarię u dostawcy internetu.",
-      "Prace budowlane zakłócają lekcję.",
-      "Mój pociąg ma problem z silnikiem."
-    ],
-    "el": [
-      "Υπάρχει πρόβλημα με το Wi-Fi.",
-      "Αναφέρω βλάβη στον πάροχο διαδικτύου.",
-      "Οι οικοδομικές εργασίες διαταράσσουν το μάθημα.",
-      "Το τρένο μου έχει πρόβλημα στον κινητήρα."
-    ],
-    "nb": [
-      "Det er et problem med Wi-Fi.",
-      "Jeg melder inn en feil til internettleverandøren.",
-      "Byggearbeidet forstyrrer undervisningen.",
-      "Toget mitt har motortrøbbel."
-    ],
-    "id": [
-      "Ada masalah dengan Wi-Fi.",
-      "Saya melaporkan gangguan ke penyedia internet.",
-      "Pekerjaan konstruksi mengganggu kelas.",
-      "Kereta saya mengalami masalah mesin."
-    ],
-    "sv": [
-      "Det är problem med wifi.",
-      "Jag anmäler en störning till internetleverantören.",
-      "Byggarbetet stör lektionen.",
-      "Mitt tåg har motorproblem."
-    ],
-    "ro": [
-      "Este o problemă cu Wi-Fi.",
-      "Raportez o defecțiune la furnizorul de internet.",
-      "Lucrările de construcție perturbă ora.",
-      "Trenul meu are o problemă la motor."
     ],
     "cs": [
       "Je problém s Wi-Fi.",
@@ -925,11 +1049,77 @@
       "Byggearbejdet forstyrrer undervisningen.",
       "Mit tog har motorproblemer."
     ],
+    "de": [
+      "Es gibt eine Störung im WLAN.",
+      "Ich melde eine Störung beim Internetanbieter.",
+      "Die Bauarbeiten verursachen eine Störung im Unterricht.",
+      "Mein Zug hat eine Störung am Motor."
+    ],
+    "el": [
+      "Υπάρχει πρόβλημα με το Wi-Fi.",
+      "Αναφέρω βλάβη στον πάροχο διαδικτύου.",
+      "Οι οικοδομικές εργασίες διαταράσσουν το μάθημα.",
+      "Το τρένο μου έχει πρόβλημα στον κινητήρα."
+    ],
+    "en": [
+      "There's a problem with the Wi‑Fi.",
+      "I'm reporting an outage to the internet provider.",
+      "The construction work causes a disruption in class.",
+      "My train has an engine problem."
+    ],
+    "es": [
+      "Hay un problema con el Wi-Fi.",
+      "Estoy reportando una falla al proveedor de internet.",
+      "Las obras están interrumpiendo la clase.",
+      "Mi tren tiene una avería en el motor."
+    ],
     "fi": [
       "Wi-Fi:ssä on ongelma.",
       "Ilmoitan häiriöstä internet-palveluntarjoajalle.",
       "Rakennustyöt häiritsevät opetusta.",
       "Junassani on moottorivika."
+    ],
+    "fr": [
+      "Il y a un problème avec le Wi-Fi.",
+      "Je signale une panne à mon fournisseur d’accès Internet.",
+      "Les travaux perturbent le cours.",
+      "Mon train a un problème de moteur."
+    ],
+    "he": [
+      "יש בעיה ב-Wi-Fi.",
+      "אני מדווח על תקלה לספק האינטרנט.",
+      "העבודות גורמות להפרעה בשיעור.",
+      "לרכבת שלי יש תקלה במנוע."
+    ],
+    "hi": [
+      "वाई-फाई में समस्या है।",
+      "मैं इंटरनेट प्रदाता को खराबी की सूचना दे रहा हूँ.",
+      "निर्माण कार्य से कक्षा बाधित हो रही है।",
+      "मेरी ट्रेन में इंजन की समस्या है।"
+    ],
+    "hu": [
+      "Gond van a Wi-Fi-vel.",
+      "Hibát jelentek az internetszolgáltatónál.",
+      "Az építkezés zavarja az órát.",
+      "A vonatomnak motorhibája van."
+    ],
+    "id": [
+      "Ada masalah dengan Wi-Fi.",
+      "Saya melaporkan gangguan ke penyedia internet.",
+      "Pekerjaan konstruksi mengganggu kelas.",
+      "Kereta saya mengalami masalah mesin."
+    ],
+    "ipa": [
+      "/ɛs ɡɪpt ˈaɪ̯nə ˈʃtøːʀʊŋ ɪm ˈveːlaːn/",
+      "/ɪç ˈmɛldə ˈaɪ̯nə ˈʃtøːʀʊŋ baɪ̯m ˈɪntɐnɛtʔanˌbiːtɐ/",
+      "/diː ˈbaʊ̯ʔaʀbaɪ̯tən fɛʀˈuːʀzaxən ˈaɪ̯nə ˈʃtøːʀʊŋ ɪm ˈʊntɐʀɪçt/",
+      "/maɪ̯n tsuːk hat ˈaɪ̯nə ˈʃtøːʀʊŋ am ˈmoːtoːɐ̯/"
+    ],
+    "it": [
+      "C'è un problema con il Wi-Fi.",
+      "Sto segnalando un guasto al provider di Internet.",
+      "I lavori stanno disturbando la lezione.",
+      "Il mio treno ha un problema al motore."
     ],
     "ja": [
       "Wi-Fiに問題があります。",
@@ -937,6 +1127,83 @@
       "工事が授業の邪魔になっている。",
       "乗っている電車のエンジンに不具合があります。"
     ],
-    "word_POS": "Noun"
+    "ko": [
+      "와이파이에 문제가 있어요.",
+      "인터넷 업체에 장애를 신고하고 있어요.",
+      "공사 때문에 수업이 방해돼요.",
+      "기차에 엔진 문제가 있어요."
+    ],
+    "nb": [
+      "Det er et problem med Wi-Fi.",
+      "Jeg melder inn en feil til internettleverandøren.",
+      "Byggearbeidet forstyrrer undervisningen.",
+      "Toget mitt har motortrøbbel."
+    ],
+    "nl": [
+      "Er is een probleem met de wifi.",
+      "Ik meld een storing bij de internetprovider.",
+      "De bouwwerkzaamheden verstoren de les.",
+      "Mijn trein heeft een motorstoring."
+    ],
+    "pl": [
+      "Jest problem z Wi-Fi.",
+      "Zgłaszam awarię u dostawcy internetu.",
+      "Prace budowlane zakłócają lekcję.",
+      "Mój pociąg ma problem z silnikiem."
+    ],
+    "pt": [
+      "Há um problema com o Wi-Fi.",
+      "Estou reportando uma falha ao provedor de internet.",
+      "As obras estão atrapalhando a aula.",
+      "O meu comboio tem uma avaria no motor."
+    ],
+    "ro": [
+      "Este o problemă cu Wi-Fi.",
+      "Raportez o defecțiune la furnizorul de internet.",
+      "Lucrările de construcție perturbă ora.",
+      "Trenul meu are o problemă la motor."
+    ],
+    "ru": [
+      "Проблема с Wi-Fi.",
+      "Я сообщаю интернет-провайдеру о неполадке.",
+      "Строительные работы мешают занятиям.",
+      "У моего поезда неполадки с двигателем."
+    ],
+    "sv": [
+      "Det är problem med wifi.",
+      "Jag anmäler en störning till internetleverantören.",
+      "Byggarbetet stör lektionen.",
+      "Mitt tåg har motorproblem."
+    ],
+    "tr": [
+      "Wi-Fi'de sorun var.",
+      "İnternet sağlayıcısına kesinti bildiriyorum.",
+      "İnşaat çalışmaları dersi aksatıyor.",
+      "Trenimin motorunda arıza var."
+    ],
+    "uk": [
+      "Є проблема з Wi-Fi.",
+      "Я повідомляю інтернет-провайдеру про збій.",
+      "Будівельні роботи заважають уроку.",
+      "У мого поїзда проблема з двигуном."
+    ],
+    "vi": [
+      "Wi-Fi bị lỗi.",
+      "Tôi đang báo sự cố cho nhà cung cấp internet.",
+      "Việc thi công đang làm gián đoạn lớp học.",
+      "Tàu của tôi bị hỏng động cơ."
+    ],
+    "yue": [
+      "Wi-Fi 有問題。",
+      "我正向網絡供應商報故障。",
+      "施工影響上課。",
+      "我搭嘅火車個引擎有故障。"
+    ],
+    "zh-Hans": [
+      "Wi-Fi 有问题。",
+      "我正在向网络服务商报故障。",
+      "施工影响上课。",
+      "我坐的火车发动机出故障了。"
+    ]
   }
 }

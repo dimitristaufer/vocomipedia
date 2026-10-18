@@ -478,13 +478,14 @@
       "tokens": [
         {
           "surface": "東京",
-          "surface_en": "Tokyo",
-          "furigana": "とうきょう",
-          "pos": "proper noun",
           "lemma": "東京",
-          "explanation": "Location being described",
-          "difficulty": 6,
-          "is_main_word": true,
+          "pos": "名詞/固有名詞/地名/一般/*/*",
+          "upos": "NOUN",
+          "xpos": "名詞",
+          "feats": {},
+          "start": 0,
+          "end": 2,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "とうきょう",
           "ruby_text": "東京[とうきょう]",
           "ruby_spans": [
@@ -495,31 +496,37 @@
               "length": 2
             }
           ],
-          "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "ruby_confidence": "reviewed",
+          "furigana": "とうきょう",
+          "ruby_source": "mediawiki_sentence_ruby",
+          "is_main_word": true
         },
         {
           "surface": "の",
-          "surface_en": "of",
-          "furigana": "の",
-          "pos": "particle",
           "lemma": "の",
-          "explanation": "Indicates possession or attribute",
-          "difficulty": 1,
+          "pos": "助詞/格助詞/*/*/*/*",
+          "upos": "PART",
+          "xpos": "助詞",
+          "feats": {},
+          "start": 2,
+          "end": 3,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "の",
           "ruby_text": "の",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "の"
         },
         {
           "surface": "天気",
-          "surface_en": "weather",
-          "furigana": "てんき",
-          "pos": "noun",
           "lemma": "天気",
-          "explanation": "Subject referring to weather condition",
-          "difficulty": 4,
+          "pos": "名詞/普通名詞/一般/*/*/*",
+          "upos": "NOUN",
+          "xpos": "名詞",
+          "feats": {},
+          "start": 3,
+          "end": 5,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "てんき",
           "ruby_text": "天気[てんき]",
           "ruby_spans": [
@@ -530,31 +537,36 @@
               "length": 2
             }
           ],
-          "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "ruby_confidence": "reviewed",
+          "furigana": "てんき",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "は",
-          "surface_en": "topic marker",
-          "furigana": "は",
-          "pos": "particle",
           "lemma": "は",
-          "explanation": "Marks the topic of the sentence",
-          "difficulty": 1,
+          "pos": "助詞/係助詞/*/*/*/*",
+          "upos": "PART",
+          "xpos": "助詞",
+          "feats": {},
+          "start": 5,
+          "end": 6,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "は",
           "ruby_text": "は",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "は"
         },
         {
           "surface": "暑い",
-          "surface_en": "hot",
-          "furigana": "あつい",
-          "pos": "adjective",
           "lemma": "暑い",
-          "explanation": "Describes the temperature",
-          "difficulty": 12,
+          "pos": "形容詞/一般/*/*/形容詞/終止形-一般",
+          "upos": "ADJ",
+          "xpos": "形容詞",
+          "feats": {},
+          "start": 6,
+          "end": 8,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "あつい",
           "ruby_text": "暑[あつ]い",
           "ruby_spans": [
@@ -565,22 +577,41 @@
               "length": 1
             }
           ],
-          "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "ruby_confidence": "reviewed",
+          "furigana": "あつい",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "です",
-          "surface_en": "is",
-          "furigana": "です",
-          "pos": "copula",
           "lemma": "です",
-          "explanation": "Polite copular verb",
-          "difficulty": 1,
+          "pos": "助動詞/*/*/*/助動詞-デス/終止形-一般",
+          "upos": "AUX",
+          "xpos": "助動詞",
+          "feats": {},
+          "start": 8,
+          "end": 10,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "です",
           "ruby_text": "です",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "です"
+        },
+        {
+          "surface": "。",
+          "lemma": "。",
+          "pos": "補助記号/句点/*/*/*/*",
+          "upos": "PUNCT",
+          "xpos": "補助記号",
+          "feats": {},
+          "start": 10,
+          "end": 11,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "。",
+          "ruby_text": "。",
+          "ruby_spans": [],
+          "ruby_confidence": "high",
+          "furigana": "。"
         }
       ],
       "difficulty": 4.17,
@@ -601,19 +632,405 @@
     "content_reviewers": [
       "mediawiki-visible-revision"
     ],
-    "last_reviewed_utc": "2026-06-21T18:38:37Z",
-    "approval_source": "mediawiki_visible_revision",
+    "last_reviewed_utc": "2026-10-11T00:37:20Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
     "wiki": {
       "title": "Item:Ja n5/3c86d9b4e3dd1320",
-      "revision_id": 58648,
-      "parent_revision_id": 37092,
-      "revision_timestamp_utc": "2026-06-21T18:38:37Z",
-      "revision_user": "VocomiBot",
-      "revision_comment": "Sync ja_n5 item 東京",
-      "pulled_utc": "2026-06-21T20:53:39Z",
-      "applied_utc": "2026-06-21T20:53:53Z",
+      "revision_id": 83680,
+      "parent_revision_id": 69823,
+      "revision_timestamp_utc": "2026-10-11T00:37:20Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Suggest reviewed Japanese and translation corrections",
+      "pulled_utc": "2026-10-17T07:37:32Z",
+      "applied_utc": "2026-10-17T07:37:49Z",
       "applied_by": "vocomipedia-apply-pulled"
-    }
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-2e7e7dd84c744cb0",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "ja_n5:3c86d9b4e3dd1320",
+        "pack_code": "ja_n5",
+        "entry_id": "東京",
+        "language": "ja",
+        "sentence_index": 4,
+        "old_sentence": "東京は暑いです。",
+        "old_translations": {
+          "en": "The weather in Tokyo is hot.",
+          "es": "El tiempo en Tokio es caluroso.",
+          "fr": "Il fait chaud à Tokyo.",
+          "de": "Das Wetter in Tokio ist heiß.",
+          "it": "A Tokyo fa caldo.",
+          "ko": "도쿄는 날씨가 더워요.",
+          "zh-Hans": "东京的天气很热。",
+          "yue": "東京天氣好熱。",
+          "ru": "В Токио жарко.",
+          "pt": "Faz calor em Tóquio.",
+          "he": "מזג האוויר בטוקיו חם.",
+          "tr": "Tokyo'da hava sıcak.",
+          "vi": "Thời tiết ở Tokyo rất nóng.",
+          "ar": "الطقس في طوكيو حار.",
+          "nl": "Het weer in Tokio is heet.",
+          "uk": "Погода в Токіо спекотна.",
+          "hu": "Tokióban meleg az idő.",
+          "hi": "टोक्यो में मौसम गर्म है।",
+          "pl": "W Tokio jest gorąco.",
+          "el": "Ο καιρός στο Τόκιο είναι ζεστός.",
+          "nb": "Været i Tokyo er varmt.",
+          "id": "Cuaca di Tokyo panas.",
+          "sv": "Vädret i Tokyo är varmt.",
+          "ro": "Vremea în Tokyo este caldă.",
+          "cs": "Počasí v Tokiu je horké.",
+          "da": "Vejret i Tokyo er varmt.",
+          "fi": "Sää Tokiossa on kuuma."
+        },
+        "proposed_sentence": "東京の天気は暑いです。",
+        "proposed_translations": {
+          "en": "The weather in Tokyo is hot.",
+          "es": "El tiempo en Tokio es caluroso.",
+          "fr": "Le temps à Tokyo est chaud.",
+          "de": "Das Wetter in Tokio ist heiß.",
+          "it": "Il tempo a Tokyo è caldo.",
+          "ko": "도쿄의 날씨는 덥다.",
+          "zh-Hans": "东京的天气很热。",
+          "yue": "東京天氣好熱。",
+          "ru": "Погода в Токио жаркая.",
+          "pt": "O clima em Tóquio está quente.",
+          "he": "מזג האוויר בטוקיו חם.",
+          "tr": "Tokyo'da hava sıcak.",
+          "vi": "Thời tiết ở Tokyo rất nóng.",
+          "ar": "الطقس في طوكيو حار.",
+          "nl": "Het weer in Tokio is heet.",
+          "uk": "Погода в Токіо спекотна.",
+          "hu": "Tokióban meleg az idő.",
+          "hi": "टोक्यो में मौसम गर्म है।",
+          "pl": "Pogoda в Tokio jest gorąca.",
+          "el": "Ο καιρός στο Τόκιο είναι ζεστός.",
+          "nb": "Været i Tokyo er varmt.",
+          "id": "Cuaca di Tokyo panas.",
+          "sv": "Vädret i Tokyo är varmt.",
+          "ro": "Vremea în Tokyo este caldă.",
+          "cs": "Počasí v Tokiu je horké.",
+          "da": "Vejret i Tokyo er varmt.",
+          "fi": "Sää Tokiossa on kuuma."
+        },
+        "old_ruby_source": "東京[とうきょう]は暑[あつ]いです。",
+        "proposed_ruby_source": "東京[とうきょう]の天気[てんき]は暑[あつ]いです。",
+        "old_japanese": "東京は暑いです。",
+        "old_english": "The weather in Tokyo is hot.",
+        "proposed_japanese": "東京の天気は暑いです。",
+        "proposed_english": "The weather in Tokyo is hot.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "ja",
+          "sentence": "東京の天気は暑いです。",
+          "tokens": [
+            {
+              "surface": "東京",
+              "lemma": "東京",
+              "pos": "名詞/固有名詞/地名/一般/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 0,
+              "end": 2,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "とうきょう",
+              "ruby_text": "東京[とうきょう]",
+              "ruby_spans": [
+                {
+                  "base": "東京",
+                  "reading": "とうきょう",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "とうきょう",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "の",
+              "lemma": "の",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 2,
+              "end": 3,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "の",
+              "ruby_text": "の",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "の"
+            },
+            {
+              "surface": "天気",
+              "lemma": "天気",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 3,
+              "end": 5,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "てんき",
+              "ruby_text": "天気[てんき]",
+              "ruby_spans": [
+                {
+                  "base": "天気",
+                  "reading": "てんき",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "てんき",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "は",
+              "lemma": "は",
+              "pos": "助詞/係助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 5,
+              "end": 6,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "は",
+              "ruby_text": "は",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "は"
+            },
+            {
+              "surface": "暑い",
+              "lemma": "暑い",
+              "pos": "形容詞/一般/*/*/形容詞/終止形-一般",
+              "upos": "ADJ",
+              "xpos": "形容詞",
+              "feats": {},
+              "start": 6,
+              "end": 8,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "あつい",
+              "ruby_text": "暑[あつ]い",
+              "ruby_spans": [
+                {
+                  "base": "暑",
+                  "reading": "あつ",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "あつい",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "です",
+              "lemma": "です",
+              "pos": "助動詞/*/*/*/助動詞-デス/終止形-一般",
+              "upos": "AUX",
+              "xpos": "助動詞",
+              "feats": {},
+              "start": 8,
+              "end": 10,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "です",
+              "ruby_text": "です",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "です"
+            },
+            {
+              "surface": "。",
+              "lemma": "。",
+              "pos": "補助記号/句点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 10,
+              "end": 11,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "。",
+              "ruby_text": "。",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "。"
+            }
+          ],
+          "reading": "とうきょうのてんきはあついです。",
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "warnings": [
+            "mediawiki ruby hints applied"
+          ]
+        },
+        "generated_tokens": [
+          {
+            "surface": "東京",
+            "lemma": "東京",
+            "pos": "名詞/固有名詞/地名/一般/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "とうきょう",
+            "ruby_text": "東京[とうきょう]",
+            "ruby_spans": [
+              {
+                "base": "東京",
+                "reading": "とうきょう",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "とうきょう",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "の",
+            "lemma": "の",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 2,
+            "end": 3,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "の",
+            "ruby_text": "の",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "の"
+          },
+          {
+            "surface": "天気",
+            "lemma": "天気",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 3,
+            "end": 5,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "てんき",
+            "ruby_text": "天気[てんき]",
+            "ruby_spans": [
+              {
+                "base": "天気",
+                "reading": "てんき",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "てんき",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "は",
+            "lemma": "は",
+            "pos": "助詞/係助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 5,
+            "end": 6,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "は",
+            "ruby_text": "は",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "は"
+          },
+          {
+            "surface": "暑い",
+            "lemma": "暑い",
+            "pos": "形容詞/一般/*/*/形容詞/終止形-一般",
+            "upos": "ADJ",
+            "xpos": "形容詞",
+            "feats": {},
+            "start": 6,
+            "end": 8,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "あつい",
+            "ruby_text": "暑[あつ]い",
+            "ruby_spans": [
+              {
+                "base": "暑",
+                "reading": "あつ",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "あつい",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "です",
+            "lemma": "です",
+            "pos": "助動詞/*/*/*/助動詞-デス/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 8,
+            "end": 10,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "です",
+            "ruby_text": "です",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "です"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 10,
+            "end": 11,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
+          }
+        ],
+        "generated_reading": "とうきょうのてんきはあついです。",
+        "analyzer": "sudachipy_sudachidict_core_c",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:37:32Z",
+        "updated_utc": "2026-10-17T07:38:17Z",
+        "applied_utc": "2026-10-17T07:38:17Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:38:17Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -957,13 +1374,14 @@
         "tokens": [
           {
             "surface": "東京",
-            "surface_en": "Tokyo",
-            "furigana": "とうきょう",
-            "pos": "proper noun",
             "lemma": "東京",
-            "explanation": "Location being described",
-            "difficulty": 6,
-            "is_main_word": true,
+            "pos": "名詞/固有名詞/地名/一般/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "とうきょう",
             "ruby_text": "東京[とうきょう]",
             "ruby_spans": [
@@ -974,31 +1392,37 @@
                 "length": 2
               }
             ],
-            "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "ruby_confidence": "reviewed",
+            "furigana": "とうきょう",
+            "ruby_source": "mediawiki_sentence_ruby",
+            "is_main_word": true
           },
           {
             "surface": "の",
-            "surface_en": "of",
-            "furigana": "の",
-            "pos": "particle",
             "lemma": "の",
-            "explanation": "Indicates possession or attribute",
-            "difficulty": 1,
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 2,
+            "end": 3,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "の",
             "ruby_text": "の",
             "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "の"
           },
           {
             "surface": "天気",
-            "surface_en": "weather",
-            "furigana": "てんき",
-            "pos": "noun",
             "lemma": "天気",
-            "explanation": "Subject referring to weather condition",
-            "difficulty": 4,
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 3,
+            "end": 5,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "てんき",
             "ruby_text": "天気[てんき]",
             "ruby_spans": [
@@ -1009,31 +1433,36 @@
                 "length": 2
               }
             ],
-            "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "ruby_confidence": "reviewed",
+            "furigana": "てんき",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "は",
-            "surface_en": "topic marker",
-            "furigana": "は",
-            "pos": "particle",
             "lemma": "は",
-            "explanation": "Marks the topic of the sentence",
-            "difficulty": 1,
+            "pos": "助詞/係助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 5,
+            "end": 6,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "は",
             "ruby_text": "は",
             "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "は"
           },
           {
             "surface": "暑い",
-            "surface_en": "hot",
-            "furigana": "あつい",
-            "pos": "adjective",
             "lemma": "暑い",
-            "explanation": "Describes the temperature",
-            "difficulty": 12,
+            "pos": "形容詞/一般/*/*/形容詞/終止形-一般",
+            "upos": "ADJ",
+            "xpos": "形容詞",
+            "feats": {},
+            "start": 6,
+            "end": 8,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "あつい",
             "ruby_text": "暑[あつ]い",
             "ruby_spans": [
@@ -1044,22 +1473,41 @@
                 "length": 1
               }
             ],
-            "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "ruby_confidence": "reviewed",
+            "furigana": "あつい",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "です",
-            "surface_en": "is",
-            "furigana": "です",
-            "pos": "copula",
             "lemma": "です",
-            "explanation": "Polite copular verb",
-            "difficulty": 1,
+            "pos": "助動詞/*/*/*/助動詞-デス/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 8,
+            "end": 10,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "です",
             "ruby_text": "です",
             "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "です"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 10,
+            "end": 11,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
           }
         ],
         "difficulty_aggregated": 4.17
@@ -1146,7 +1594,7 @@
       "Je vais à Tokyo.",
       "Tokyo est la capitale du Japon.",
       "J’ai pris une photo à la gare de Tokyo.",
-      "Le temps à Tokyo est chaud."
+      "Il fait chaud à Tokyo."
     ],
     "he": [
       "אני נוסע לטוקיו.",
@@ -1176,13 +1624,13 @@
       "Sto andando a Tokyo.",
       "Tokyo è la capitale del Giappone.",
       "Ho scattato una foto alla stazione di Tokyo.",
-      "Il tempo a Tokyo è caldo."
+      "A Tokyo fa caldo."
     ],
     "ko": [
       "도쿄로 가요.",
       "도쿄는 일본의 수도입니다.",
       "도쿄역에서 사진을 찍었어요.",
-      "도쿄의 날씨는 덥다."
+      "도쿄는 날씨가 더워요."
     ],
     "nb": [
       "Jeg skal til Tokyo.",
@@ -1200,13 +1648,13 @@
       "Jadę do Tokio.",
       "Tokio jest stolicą Japonii.",
       "Zrobiłem zdjęcie na stacji Tokyo.",
-      "Pogoda в Tokio jest gorąca."
+      "W Tokio jest gorąco."
     ],
     "pt": [
       "Eu vou para Tóquio.",
       "Tóquio é a capital do Japão.",
       "Tirei uma foto na Estação de Tóquio.",
-      "O clima em Tóquio está quente."
+      "Faz calor em Tóquio."
     ],
     "ro": [
       "Mă duc la Tokyo.",
@@ -1218,7 +1666,7 @@
       "Я еду в Токио.",
       "Токио — столица Японии.",
       "Я сделал фото на вокзале Токио.",
-      "Погода в Токио жаркая."
+      "В Токио жарко."
     ],
     "sv": [
       "Jag ska till Tokyo.",

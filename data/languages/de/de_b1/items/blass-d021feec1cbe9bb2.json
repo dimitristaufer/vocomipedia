@@ -325,12 +325,12 @@
       "difficulty": 5.33
     },
     {
-      "target": "Der Junge ist vom Winter noch blass.",
+      "target": "Der Junge ist nach dem Winter noch blass.",
       "reading": "/deːɐ̯ ˈjʊŋə ɪst fɔm ˈvɪntɐ nɔx blas/",
       "translations": {
-        "de": "Der Junge ist vom Winter noch blass.",
+        "de": "Der Junge ist nach dem Winter noch blass.",
         "ipa": "/deːɐ̯ ˈjʊŋə ɪst fɔm ˈvɪntɐ nɔx blas/",
-        "en": "The boy is still pale from winter.",
+        "en": "The boy is still pale after winter.",
         "es": "El niño sigue pálido después del invierno.",
         "fr": "Le garçon est encore pâle après l’hiver.",
         "it": "Il ragazzo è ancora pallido dopo l’inverno.",
@@ -339,7 +339,7 @@
         "yue": "冬天過後，個男仔仲係好蒼白。",
         "ru": "Мальчик всё ещё бледен после зимы.",
         "pt": "O menino ainda está pálido depois do inverno.",
-        "he": "הילד עדיין חיוור מהחורף.",
+        "he": "הילד עדיין חיוור אחרי החורף.",
         "tr": "Çocuk kıştan sonra hâlâ solgun.",
         "vi": "Cậu bé vẫn còn tái sau mùa đông.",
         "ar": "الصبي لا يزال شاحبًا بعد الشتاء.",
@@ -361,67 +361,103 @@
       "tokens": [
         {
           "surface": "Der",
-          "surface_en": "the",
-          "furigana": "[deːɐ̯]",
-          "pos": "DET",
           "lemma": "der",
-          "explanation": "Definite article, nominative singular masculine; determiner of the subject noun.",
-          "difficulty": 2
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "ART",
+          "feats": {},
+          "start": 0,
+          "end": 3,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "Junge",
-          "surface_en": "boy",
-          "furigana": "[ˈjʊŋə]",
-          "pos": "NOUN",
           "lemma": "Junge",
-          "explanation": "Common noun (masculine); head of the subject NP.",
-          "difficulty": 7
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 4,
+          "end": 9,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "ist",
-          "surface_en": "is",
-          "furigana": "[ɪst]",
-          "pos": "AUX",
           "lemma": "sein",
-          "explanation": "Copular auxiliary, 3rd person singular present; links the subject to the predicative adjective.",
-          "difficulty": 4
+          "pos": "AUX",
+          "upos": "AUX",
+          "xpos": "VAFIN",
+          "feats": {},
+          "start": 10,
+          "end": 13,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "vom",
-          "surface_en": "from the",
-          "furigana": "[fɔm]",
+          "surface": "nach",
+          "lemma": "nach",
           "pos": "ADP",
-          "lemma": "von",
-          "explanation": "Contraction of ‘von dem’ (ADP+DET); introduces a PP marking source/cause.",
-          "difficulty": 2
+          "upos": "ADP",
+          "xpos": "APPR",
+          "feats": {},
+          "start": 14,
+          "end": 18,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "dem",
+          "lemma": "der",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "ART",
+          "feats": {},
+          "start": 19,
+          "end": 22,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "Winter",
-          "surface_en": "winter",
-          "furigana": "[ˈvɪntɐ]",
-          "pos": "NOUN",
           "lemma": "Winter",
-          "explanation": "Common noun (masculine, dative in the PP); complement/object of ‘vom’.",
-          "difficulty": 7
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 23,
+          "end": 29,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "noch",
-          "surface_en": "still",
-          "furigana": "[nɔx]",
-          "pos": "ADV",
           "lemma": "noch",
-          "explanation": "Continuative adverb modifying the predicate.",
-          "difficulty": 2
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "ADV",
+          "feats": {},
+          "start": 30,
+          "end": 34,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "blass.",
-          "surface_en": "pale",
-          "furigana": "[blas]",
-          "pos": "ADJ",
+          "surface": "blass",
           "lemma": "blass",
-          "explanation": "Predicative adjective complement to the copula ‘ist’, describing the subject’s condition.",
-          "difficulty": 7,
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "ADJD",
+          "feats": {},
+          "start": 35,
+          "end": 40,
+          "analyzer": "spacy_de_core_news_lg",
           "is_main_word": true
+        },
+        {
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 40,
+          "end": 41,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 4.43
@@ -438,8 +474,336 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-14T22:17:00Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:De b1/d021feec1cbe9bb2",
+      "revision_id": 86039,
+      "parent_revision_id": 15514,
+      "revision_timestamp_utc": "2026-10-14T22:17:00Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Suggest content corrections",
+      "pulled_utc": "2026-10-17T07:06:43Z",
+      "applied_utc": "2026-10-17T07:06:52Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-04211415235e8d8b",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_b1:d021feec1cbe9bb2",
+        "pack_code": "de_b1",
+        "entry_id": "blass",
+        "language": "de",
+        "sentence_index": 4,
+        "old_sentence": "Der Junge ist vom Winter noch blass.",
+        "old_translations": {
+          "de": "Der Junge ist vom Winter noch blass.",
+          "ipa": "/deːɐ̯ ˈjʊŋə ɪst fɔm ˈvɪntɐ nɔx blas/",
+          "en": "The boy is still pale from winter.",
+          "es": "El niño sigue pálido después del invierno.",
+          "fr": "Le garçon est encore pâle après l’hiver.",
+          "it": "Il ragazzo è ancora pallido dopo l’inverno.",
+          "ko": "겨울 지나고도 그 소년은 아직 창백해.",
+          "zh-Hans": "冬天过后，这个男孩还很苍白。",
+          "yue": "冬天過後，個男仔仲係好蒼白。",
+          "ru": "Мальчик всё ещё бледен после зимы.",
+          "pt": "O menino ainda está pálido depois do inverno.",
+          "he": "הילד עדיין חיוור מהחורף.",
+          "tr": "Çocuk kıştan sonra hâlâ solgun.",
+          "vi": "Cậu bé vẫn còn tái sau mùa đông.",
+          "ar": "الصبي لا يزال شاحبًا بعد الشتاء.",
+          "nl": "De jongen is na de winter nog steeds bleek.",
+          "uk": "Хлопчик досі блідий після зими.",
+          "hu": "A fiú a tél után még mindig sápadt.",
+          "hi": "सर्दियों के बाद लड़के का चेहरा अब भी फीका है.",
+          "pl": "Chłopiec wciąż jest blady po zimie.",
+          "el": "Το αγόρι είναι ακόμα χλωμό μετά τον χειμώνα.",
+          "nb": "Gutten er fortsatt blek etter vinteren.",
+          "id": "Anak laki-laki itu masih pucat setelah musim dingin.",
+          "sv": "Pojken är fortfarande blek efter vintern.",
+          "ro": "Băiatul e încă palid după iarnă.",
+          "cs": "Ten chlapec je po zimě pořád bledý.",
+          "da": "Drengen er stadig bleg efter vinteren.",
+          "fi": "Poika on vieläkin kalpea talven jälkeen.",
+          "ja": "冬のあともまだその男の子は顔色が悪い。"
+        },
+        "proposed_sentence": "Der Junge ist nach dem Winter noch blass.",
+        "proposed_translations": {
+          "de": "Der Junge ist nach dem Winter noch blass.",
+          "ipa": "/deːɐ̯ ˈjʊŋə ɪst fɔm ˈvɪntɐ nɔx blas/",
+          "en": "The boy is still pale after winter.",
+          "es": "El niño sigue pálido después del invierno.",
+          "fr": "Le garçon est encore pâle après l’hiver.",
+          "it": "Il ragazzo è ancora pallido dopo l’inverno.",
+          "ko": "겨울 지나고도 그 소년은 아직 창백해.",
+          "zh-Hans": "冬天过后，这个男孩还很苍白。",
+          "yue": "冬天過後，個男仔仲係好蒼白。",
+          "ru": "Мальчик всё ещё бледен после зимы.",
+          "pt": "O menino ainda está pálido depois do inverno.",
+          "he": "הילד עדיין חיוור אחרי החורף.",
+          "tr": "Çocuk kıştan sonra hâlâ solgun.",
+          "vi": "Cậu bé vẫn còn tái sau mùa đông.",
+          "ar": "الصبي لا يزال شاحبًا بعد الشتاء.",
+          "nl": "De jongen is na de winter nog steeds bleek.",
+          "uk": "Хлопчик досі блідий після зими.",
+          "hu": "A fiú a tél után még mindig sápadt.",
+          "hi": "सर्दियों के बाद लड़के का चेहरा अब भी फीका है.",
+          "pl": "Chłopiec wciąż jest blady po zimie.",
+          "el": "Το αγόρι είναι ακόμα χλωμό μετά τον χειμώνα.",
+          "nb": "Gutten er fortsatt blek etter vinteren.",
+          "id": "Anak laki-laki itu masih pucat setelah musim dingin.",
+          "sv": "Pojken är fortfarande blek efter vintern.",
+          "ro": "Băiatul e încă palid după iarnă.",
+          "cs": "Ten chlapec je po zimě pořád bledý.",
+          "da": "Drengen er stadig bleg efter vinteren.",
+          "fi": "Poika on vieläkin kalpea talven jälkeen.",
+          "ja": "冬のあともまだその男の子は顔色が悪い。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Der Junge ist nach dem Winter noch blass.",
+        "old_japanese": "Der Junge ist vom Winter noch blass.",
+        "old_english": "The boy is still pale from winter.",
+        "proposed_japanese": "Der Junge ist nach dem Winter noch blass.",
+        "proposed_english": "The boy is still pale after winter.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Der Junge ist nach dem Winter noch blass.",
+          "tokens": [
+            {
+              "surface": "Der",
+              "lemma": "der",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "ART",
+              "feats": {},
+              "start": 0,
+              "end": 3,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Junge",
+              "lemma": "Junge",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 4,
+              "end": 9,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "ist",
+              "lemma": "sein",
+              "pos": "AUX",
+              "upos": "AUX",
+              "xpos": "VAFIN",
+              "feats": {},
+              "start": 10,
+              "end": 13,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "nach",
+              "lemma": "nach",
+              "pos": "ADP",
+              "upos": "ADP",
+              "xpos": "APPR",
+              "feats": {},
+              "start": 14,
+              "end": 18,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "dem",
+              "lemma": "der",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "ART",
+              "feats": {},
+              "start": 19,
+              "end": 22,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Winter",
+              "lemma": "Winter",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 23,
+              "end": 29,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "noch",
+              "lemma": "noch",
+              "pos": "ADV",
+              "upos": "ADV",
+              "xpos": "ADV",
+              "feats": {},
+              "start": 30,
+              "end": 34,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "blass",
+              "lemma": "blass",
+              "pos": "ADV",
+              "upos": "ADV",
+              "xpos": "ADJD",
+              "feats": {},
+              "start": 35,
+              "end": 40,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 40,
+              "end": 41,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Der",
+            "lemma": "der",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Junge",
+            "lemma": "Junge",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 4,
+            "end": 9,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "ist",
+            "lemma": "sein",
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "VAFIN",
+            "feats": {},
+            "start": 10,
+            "end": 13,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "nach",
+            "lemma": "nach",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 14,
+            "end": 18,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "dem",
+            "lemma": "der",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 19,
+            "end": 22,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Winter",
+            "lemma": "Winter",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 23,
+            "end": 29,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "noch",
+            "lemma": "noch",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 30,
+            "end": 34,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "blass",
+            "lemma": "blass",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADJD",
+            "feats": {},
+            "start": 35,
+            "end": 40,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 40,
+            "end": 41,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:06:43Z",
+        "updated_utc": "2026-10-17T07:07:05Z",
+        "applied_utc": "2026-10-17T07:07:05Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:07:05Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -451,34 +815,6 @@
     "word": "blass",
     "word_reading": "",
     "word_label": "Adjektiv",
-    "word_en": "pale; faint",
-    "word_es": "pálido; descolorido",
-    "word_fr": "pâle; délavé",
-    "word_it": "pallido; sbiadito",
-    "word_ko": "창백한; 빛바랜",
-    "word_zh-Hans": "苍白的; 褪色的",
-    "word_yue": "蒼白; 褪色的",
-    "word_ru": "бледный; выцветший",
-    "word_pt": "pálido; desbotado",
-    "word_he": "חיוור; דהוי",
-    "word_tr": "soluk; solmuş",
-    "word_vi": "tái nhợt; phai màu",
-    "word_ar": "شاحب؛ باهت",
-    "word_nl": "bleek; verbleekt",
-    "word_uk": "блідий; вицвілий",
-    "word_hu": "sápadt; fakó",
-    "word_hi": "फीका; पीला पड़ा",
-    "word_pl": "blady; wyblakły",
-    "word_el": "χλωμός; ξεθωριασμένος",
-    "word_nb": "blek; falmet",
-    "word_id": "pucat; pudar",
-    "word_sv": "blek; urblekt",
-    "word_ro": "palid; decolorat",
-    "word_cs": "bledý; vybledlý",
-    "word_da": "bleg; falmet",
-    "word_fi": "kalpea; haalistunut",
-    "word_ja": "青白い; 色あせた",
-    "word_de": "blass",
     "comic_difficulty": 4.62,
     "jp": [
       "Du siehst heute blass aus.",
@@ -491,24 +827,6 @@
       "/naːx deːɐ̯ ˈɡʁɪpə bɪn ɪç nɔx blas/",
       "/ziː vɪʁkt ɪm byˈʁoː zeːɐ̯ blas/",
       "/deːɐ̯ ˈjʊŋə ɪst fɔm ˈvɪntɐ nɔx blas/"
-    ],
-    "de": [
-      "Du siehst heute blass aus.",
-      "Nach der Grippe bin ich noch blass.",
-      "Sie wirkt im Büro sehr blass.",
-      "Der Junge ist vom Winter noch blass."
-    ],
-    "ipa": [
-      "/duː ziːst ˈhɔɪ̯tə blas aʊs/",
-      "/naːx deːɐ̯ ˈɡʁɪpə bɪn ɪç nɔx blas/",
-      "/ziː vɪʁkt ɪm byˈʁoː zeːɐ̯ blas/",
-      "/deːɐ̯ ˈjʊŋə ɪst fɔm ˈvɪntɐ nɔx blas/"
-    ],
-    "en": [
-      "You look pale today.",
-      "After the flu, I'm still pale.",
-      "She seems very pale at the office.",
-      "The boy is still pale from winter."
     ],
     "pos_analysis": [
       {
@@ -697,207 +1015,147 @@
         "difficulty_aggregated": 5.33
       },
       {
-        "sentence": "Der Junge ist vom Winter noch blass.",
+        "sentence": "Der Junge ist nach dem Winter noch blass.",
         "tokens": [
           {
             "surface": "Der",
-            "surface_en": "the",
-            "furigana": "[deːɐ̯]",
-            "pos": "DET",
             "lemma": "der",
-            "explanation": "Definite article, nominative singular masculine; determiner of the subject noun.",
-            "difficulty": 2
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "Junge",
-            "surface_en": "boy",
-            "furigana": "[ˈjʊŋə]",
-            "pos": "NOUN",
             "lemma": "Junge",
-            "explanation": "Common noun (masculine); head of the subject NP.",
-            "difficulty": 7
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 4,
+            "end": 9,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "ist",
-            "surface_en": "is",
-            "furigana": "[ɪst]",
-            "pos": "AUX",
             "lemma": "sein",
-            "explanation": "Copular auxiliary, 3rd person singular present; links the subject to the predicative adjective.",
-            "difficulty": 4
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "VAFIN",
+            "feats": {},
+            "start": 10,
+            "end": 13,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "vom",
-            "surface_en": "from the",
-            "furigana": "[fɔm]",
+            "surface": "nach",
+            "lemma": "nach",
             "pos": "ADP",
-            "lemma": "von",
-            "explanation": "Contraction of ‘von dem’ (ADP+DET); introduces a PP marking source/cause.",
-            "difficulty": 2
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 14,
+            "end": 18,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "dem",
+            "lemma": "der",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 19,
+            "end": 22,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "Winter",
-            "surface_en": "winter",
-            "furigana": "[ˈvɪntɐ]",
-            "pos": "NOUN",
             "lemma": "Winter",
-            "explanation": "Common noun (masculine, dative in the PP); complement/object of ‘vom’.",
-            "difficulty": 7
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 23,
+            "end": 29,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "noch",
-            "surface_en": "still",
-            "furigana": "[nɔx]",
-            "pos": "ADV",
             "lemma": "noch",
-            "explanation": "Continuative adverb modifying the predicate.",
-            "difficulty": 2
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 30,
+            "end": 34,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "blass.",
-            "surface_en": "pale",
-            "furigana": "[blas]",
-            "pos": "ADJ",
+            "surface": "blass",
             "lemma": "blass",
-            "explanation": "Predicative adjective complement to the copula ‘ist’, describing the subject’s condition.",
-            "difficulty": 7,
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADJD",
+            "feats": {},
+            "start": 35,
+            "end": 40,
+            "analyzer": "spacy_de_core_news_lg",
             "is_main_word": true
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 40,
+            "end": 41,
+            "analyzer": "spacy_de_core_news_lg"
           }
         ],
         "difficulty_aggregated": 4.43
       }
     ],
-    "es": [
-      "Hoy no tienes buen color.",
-      "Después de la gripe, aún no recupero el color.",
-      "En la oficina parece muy pálida.",
-      "El niño sigue pálido después del invierno."
-    ],
-    "fr": [
-      "Tu as l’air pâle aujourd’hui.",
-      "Après la grippe, je suis encore pâle.",
-      "Au bureau, elle paraît très pâle.",
-      "Le garçon est encore pâle après l’hiver."
-    ],
-    "it": [
-      "Oggi hai un aspetto pallido.",
-      "Dopo l’influenza non ho ancora ripreso colore.",
-      "In ufficio sembra molto pallida.",
-      "Il ragazzo è ancora pallido dopo l’inverno."
-    ],
-    "ko": [
-      "오늘 좀 창백해 보여.",
-      "독감 앓고 나서 아직 얼굴이 창백해.",
-      "회사에서 그녀가 많이 창백해 보여.",
-      "겨울 지나고도 그 소년은 아직 창백해."
-    ],
-    "zh-Hans": [
-      "你今天看起来有点苍白。",
-      "流感之后我到现在气色还不好。",
-      "她在公司看起来很苍白。",
-      "冬天过后，这个男孩还很苍白。"
-    ],
-    "yue": [
-      "你今日睇落面色唔太好。",
-      "中咗流感之後，我而家仲係面色唔太好。",
-      "佢喺公司睇落面色好蒼白。",
-      "冬天過後，個男仔仲係好蒼白。"
-    ],
-    "ru": [
-      "Сегодня ты бледно выглядишь.",
-      "После гриппа у меня всё ещё бледный вид.",
-      "На работе она выглядит очень бледно.",
-      "Мальчик всё ещё бледен после зимы."
-    ],
-    "pt": [
-      "Hoje você parece meio sem cor.",
-      "Depois da gripe, ainda não recuperei a cor.",
-      "No escritório ela parece bem pálida.",
-      "O menino ainda está pálido depois do inverno."
-    ],
-    "he": [
-      "אתה נראה חיוור היום.",
-      "אחרי השפעת עדיין אין לי צבע.",
-      "במשרד היא נראית מאוד חיוורת.",
-      "הילד עדיין חיוור מהחורף."
-    ],
-    "tr": [
-      "Bugün solgun görünüyorsun.",
-      "Gripten sonra hâlâ solgunum.",
-      "Ofiste çok solgun görünüyor.",
-      "Çocuk kıştan sonra hâlâ solgun."
-    ],
-    "vi": [
-      "Hôm nay trông bạn hơi tái.",
-      "Sau khi bị cúm, trông tôi vẫn còn tái.",
-      "Ở văn phòng, trông cô ấy rất tái.",
-      "Cậu bé vẫn còn tái sau mùa đông."
-    ],
+    "word_POS": "Adjective",
+    "entry_id": "blass",
+    "word_en": "pale; faint",
+    "word_es": "pálido; descolorido",
+    "word_fr": "pâle; délavé",
+    "word_it": "pallido; sbiadito",
+    "word_ko": "창백한; 빛바랜",
+    "word_zh-Hans": "苍白的; 褪色的",
+    "word_yue": "蒼白; 褪色的",
+    "word_ru": "бледный; выцветший",
+    "word_pt": "pálido; desbotado",
+    "word_he": "חיוור; דהוי",
+    "word_tr": "soluk; solmuş",
+    "word_vi": "tái nhợt; phai màu",
+    "word_ar": "شاحب؛ باهت",
+    "word_nl": "bleek; verbleekt",
+    "word_uk": "блідий; вицвілий",
+    "word_hu": "sápadt; fakó",
+    "word_hi": "फीका; पीला पड़ा",
+    "word_pl": "blady; wyblakły",
+    "word_el": "χλωμός; ξεθωριασμένος",
+    "word_nb": "blek; falmet",
+    "word_id": "pucat; pudar",
+    "word_sv": "blek; urblekt",
+    "word_ro": "palid; decolorat",
+    "word_cs": "bledý; vybledlý",
+    "word_da": "bleg; falmet",
+    "word_fi": "kalpea; haalistunut",
+    "word_ja": "青白い; 色あせた",
+    "word_de": "blass",
     "ar": [
       "تبدو شاحبًا اليوم.",
       "بعد الإنفلونزا ما زلت شاحبًا.",
       "في المكتب تبدو شاحبة جدًا.",
       "الصبي لا يزال شاحبًا بعد الشتاء."
-    ],
-    "nl": [
-      "Je ziet er vandaag bleek uit.",
-      "Na de griep ben ik nog steeds bleek.",
-      "Op kantoor ziet ze er erg bleek uit.",
-      "De jongen is na de winter nog steeds bleek."
-    ],
-    "uk": [
-      "Сьогодні ти виглядаєш блідо.",
-      "Після грипу в мене досі блідий вигляд.",
-      "В офісі вона виглядає дуже блідо.",
-      "Хлопчик досі блідий після зими."
-    ],
-    "hu": [
-      "Ma elég sápadtnak tűnsz.",
-      "Influenza után még mindig sápadt vagyok.",
-      "Az irodában nagyon sápadtnak tűnik.",
-      "A fiú a tél után még mindig sápadt."
-    ],
-    "hi": [
-      "आज तुम्हारा चेहरा फीका लग रहा है.",
-      "फ्लू के बाद मेरा चेहरा अभी भी फीका है.",
-      "ऑफिस में वह बहुत फीकी दिख रही है.",
-      "सर्दियों के बाद लड़के का चेहरा अब भी फीका है."
-    ],
-    "pl": [
-      "Dziś wyglądasz blado.",
-      "Po grypie nadal wyglądam blado.",
-      "W pracy wygląda bardzo blado.",
-      "Chłopiec wciąż jest blady po zimie."
-    ],
-    "el": [
-      "Σήμερα φαίνεσαι χλωμός.",
-      "Ακόμα δεν έχω ξαναβρεί χρώμα μετά τη γρίπη.",
-      "Στο γραφείο δείχνει πολύ χλωμή.",
-      "Το αγόρι είναι ακόμα χλωμό μετά τον χειμώνα."
-    ],
-    "nb": [
-      "Du ser blek ut i dag.",
-      "Etter influensaen er jeg fortsatt blek.",
-      "På kontoret ser hun veldig blek ut.",
-      "Gutten er fortsatt blek etter vinteren."
-    ],
-    "id": [
-      "Hari ini kamu terlihat pucat.",
-      "Setelah kena flu, aku masih pucat.",
-      "Di kantor, dia kelihatan sangat pucat.",
-      "Anak laki-laki itu masih pucat setelah musim dingin."
-    ],
-    "sv": [
-      "Du ser blek ut i dag.",
-      "Efter influensan är jag fortfarande blek.",
-      "På kontoret ser hon väldigt blek ut.",
-      "Pojken är fortfarande blek efter vintern."
-    ],
-    "ro": [
-      "Azi ai fața cam palidă.",
-      "După gripă încă n-am revenit la culoare.",
-      "La birou ea pare foarte palidă.",
-      "Băiatul e încă palid după iarnă."
     ],
     "cs": [
       "Dnes vypadáš bledě.",
@@ -911,11 +1169,77 @@
       "På kontoret ser hun meget bleg ud.",
       "Drengen er stadig bleg efter vinteren."
     ],
+    "de": [
+      "Du siehst heute blass aus.",
+      "Nach der Grippe bin ich noch blass.",
+      "Sie wirkt im Büro sehr blass.",
+      "Der Junge ist vom Winter noch blass."
+    ],
+    "el": [
+      "Σήμερα φαίνεσαι χλωμός.",
+      "Ακόμα δεν έχω ξαναβρεί χρώμα μετά τη γρίπη.",
+      "Στο γραφείο δείχνει πολύ χλωμή.",
+      "Το αγόρι είναι ακόμα χλωμό μετά τον χειμώνα."
+    ],
+    "en": [
+      "You look pale today.",
+      "After the flu, I'm still pale.",
+      "She seems very pale at the office.",
+      "The boy is still pale from winter."
+    ],
+    "es": [
+      "Hoy no tienes buen color.",
+      "Después de la gripe, aún no recupero el color.",
+      "En la oficina parece muy pálida.",
+      "El niño sigue pálido después del invierno."
+    ],
     "fi": [
       "Näytät tänään kalpealta.",
       "Influenssan jälkeen olen yhä kalpea.",
       "Toimistossa hän näyttää hyvin kalpealta.",
       "Poika on vieläkin kalpea talven jälkeen."
+    ],
+    "fr": [
+      "Tu as l’air pâle aujourd’hui.",
+      "Après la grippe, je suis encore pâle.",
+      "Au bureau, elle paraît très pâle.",
+      "Le garçon est encore pâle après l’hiver."
+    ],
+    "he": [
+      "אתה נראה חיוור היום.",
+      "אחרי השפעת עדיין אין לי צבע.",
+      "במשרד היא נראית מאוד חיוורת.",
+      "הילד עדיין חיוור מהחורף."
+    ],
+    "hi": [
+      "आज तुम्हारा चेहरा फीका लग रहा है.",
+      "फ्लू के बाद मेरा चेहरा अभी भी फीका है.",
+      "ऑफिस में वह बहुत फीकी दिख रही है.",
+      "सर्दियों के बाद लड़के का चेहरा अब भी फीका है."
+    ],
+    "hu": [
+      "Ma elég sápadtnak tűnsz.",
+      "Influenza után még mindig sápadt vagyok.",
+      "Az irodában nagyon sápadtnak tűnik.",
+      "A fiú a tél után még mindig sápadt."
+    ],
+    "id": [
+      "Hari ini kamu terlihat pucat.",
+      "Setelah kena flu, aku masih pucat.",
+      "Di kantor, dia kelihatan sangat pucat.",
+      "Anak laki-laki itu masih pucat setelah musim dingin."
+    ],
+    "ipa": [
+      "/duː ziːst ˈhɔɪ̯tə blas aʊs/",
+      "/naːx deːɐ̯ ˈɡʁɪpə bɪn ɪç nɔx blas/",
+      "/ziː vɪʁkt ɪm byˈʁoː zeːɐ̯ blas/",
+      "/deːɐ̯ ˈjʊŋə ɪst fɔm ˈvɪntɐ nɔx blas/"
+    ],
+    "it": [
+      "Oggi hai un aspetto pallido.",
+      "Dopo l’influenza non ho ancora ripreso colore.",
+      "In ufficio sembra molto pallida.",
+      "Il ragazzo è ancora pallido dopo l’inverno."
     ],
     "ja": [
       "今日は顔色が悪いね。",
@@ -923,6 +1247,83 @@
       "会社では彼女はとても顔色が悪く見える。",
       "冬のあともまだその男の子は顔色が悪い。"
     ],
-    "word_POS": "Adjective"
+    "ko": [
+      "오늘 좀 창백해 보여.",
+      "독감 앓고 나서 아직 얼굴이 창백해.",
+      "회사에서 그녀가 많이 창백해 보여.",
+      "겨울 지나고도 그 소년은 아직 창백해."
+    ],
+    "nb": [
+      "Du ser blek ut i dag.",
+      "Etter influensaen er jeg fortsatt blek.",
+      "På kontoret ser hun veldig blek ut.",
+      "Gutten er fortsatt blek etter vinteren."
+    ],
+    "nl": [
+      "Je ziet er vandaag bleek uit.",
+      "Na de griep ben ik nog steeds bleek.",
+      "Op kantoor ziet ze er erg bleek uit.",
+      "De jongen is na de winter nog steeds bleek."
+    ],
+    "pl": [
+      "Dziś wyglądasz blado.",
+      "Po grypie nadal wyglądam blado.",
+      "W pracy wygląda bardzo blado.",
+      "Chłopiec wciąż jest blady po zimie."
+    ],
+    "pt": [
+      "Hoje você parece meio sem cor.",
+      "Depois da gripe, ainda não recuperei a cor.",
+      "No escritório ela parece bem pálida.",
+      "O menino ainda está pálido depois do inverno."
+    ],
+    "ro": [
+      "Azi ai fața cam palidă.",
+      "După gripă încă n-am revenit la culoare.",
+      "La birou ea pare foarte palidă.",
+      "Băiatul e încă palid după iarnă."
+    ],
+    "ru": [
+      "Сегодня ты бледно выглядишь.",
+      "После гриппа у меня всё ещё бледный вид.",
+      "На работе она выглядит очень бледно.",
+      "Мальчик всё ещё бледен после зимы."
+    ],
+    "sv": [
+      "Du ser blek ut i dag.",
+      "Efter influensan är jag fortfarande blek.",
+      "På kontoret ser hon väldigt blek ut.",
+      "Pojken är fortfarande blek efter vintern."
+    ],
+    "tr": [
+      "Bugün solgun görünüyorsun.",
+      "Gripten sonra hâlâ solgunum.",
+      "Ofiste çok solgun görünüyor.",
+      "Çocuk kıştan sonra hâlâ solgun."
+    ],
+    "uk": [
+      "Сьогодні ти виглядаєш блідо.",
+      "Після грипу в мене досі блідий вигляд.",
+      "В офісі вона виглядає дуже блідо.",
+      "Хлопчик досі блідий після зими."
+    ],
+    "vi": [
+      "Hôm nay trông bạn hơi tái.",
+      "Sau khi bị cúm, trông tôi vẫn còn tái.",
+      "Ở văn phòng, trông cô ấy rất tái.",
+      "Cậu bé vẫn còn tái sau mùa đông."
+    ],
+    "yue": [
+      "你今日睇落面色唔太好。",
+      "中咗流感之後，我而家仲係面色唔太好。",
+      "佢喺公司睇落面色好蒼白。",
+      "冬天過後，個男仔仲係好蒼白。"
+    ],
+    "zh-Hans": [
+      "你今天看起来有点苍白。",
+      "流感之后我到现在气色还不好。",
+      "她在公司看起来很苍白。",
+      "冬天过后，这个男孩还很苍白。"
+    ]
   }
 }

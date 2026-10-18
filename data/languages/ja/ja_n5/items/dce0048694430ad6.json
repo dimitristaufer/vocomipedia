@@ -15,7 +15,7 @@
   "glosses": {
     "en": "feeling",
     "es": "Sentimiento",
-    "fr": "Ressentir",
+    "fr": "sentiment",
     "de": "Gefühl",
     "it": "Sentimento",
     "ko": "느낌",
@@ -46,33 +46,33 @@
       "target": "気持ちがいい朝ですね。",
       "reading": "きもちがいいあさですね。",
       "translations": {
-        "en": "It feels great this morning.",
-        "es": "Esta mañana se siente genial.",
-        "fr": "Ce matin, c’est très agréable.",
-        "de": "Heute Morgen fühlt es sich großartig an.",
-        "it": "Questa mattina è una sensazione fantastica.",
-        "ko": "오늘 아침 기분이 정말 좋아.",
-        "zh-Hans": "今天早上感觉真好。",
-        "yue": "今朝感覺真係好。",
-        "ru": "Сегодня утром всё отлично.",
-        "pt": "Está ótimo esta manhã.",
-        "he": "מרגיש נהדר הבוקר.",
-        "tr": "Bu sabah harika hissettiriyor.",
-        "vi": "Sáng nay cảm thấy thật tuyệt.",
-        "ar": "أشعر بشعور رائع هذا الصباح.",
-        "nl": "Het voelt geweldig vanmorgen.",
-        "uk": "Сьогодні вранці все чудово.",
-        "hu": "Ma reggel nagyon jól érzem magam.",
-        "hi": "आज सुबह बहुत अच्छा लग रहा है।",
-        "pl": "Dziś rano czuję się świetnie.",
-        "el": "Αισθάνομαι υπέροχα σήμερα το πρωί.",
-        "nb": "Det føles fantastisk i dag tidlig.",
-        "id": "Rasanya luar biasa pagi ini.",
-        "sv": "Det känns fantastiskt i morse.",
-        "ro": "Mă simt grozav în această dimineață.",
-        "cs": "Dnes ráno je to skvělý pocit.",
-        "da": "Det føles fantastisk i morges.",
-        "fi": "Tänä aamuna tuntuu mahtavalta."
+        "en": "It's such a pleasant morning, isn't it?",
+        "es": "Hace una mañana muy agradable, ¿verdad?",
+        "fr": "C’est une matinée très agréable, n’est-ce pas ?",
+        "de": "Heute Morgen ist es wirklich angenehm, nicht wahr?",
+        "it": "È una mattinata davvero piacevole, vero?",
+        "ko": "오늘 아침은 참 상쾌하네요.",
+        "zh-Hans": "今天早上真舒服啊。",
+        "yue": "今朝真係好舒服呀。",
+        "ru": "Сегодня такое приятное утро, правда?",
+        "pt": "Que manhã agradável, não é?",
+        "he": "איזה בוקר נעים היום, נכון?",
+        "tr": "Bu sabah ne güzel, değil mi?",
+        "vi": "Sáng nay thật dễ chịu nhỉ.",
+        "ar": "هذا الصباح لطيف ومريح، أليس كذلك؟",
+        "nl": "Wat een heerlijke ochtend, hè?",
+        "uk": "Який приємний ранок сьогодні, правда?",
+        "hu": "Milyen kellemes reggel van ma, nem igaz?",
+        "hi": "आज की सुबह बहुत सुहानी है, है न?",
+        "pl": "Ale dziś rano jest przyjemnie, prawda?",
+        "el": "Είναι ένα πολύ ευχάριστο πρωινό, έτσι δεν είναι;",
+        "nb": "For en deilig morgen det er i dag, ikke sant?",
+        "id": "Pagi ini terasa sangat menyenangkan, ya?",
+        "sv": "Vilken härlig morgon det är, eller hur?",
+        "ro": "Ce dimineață plăcută, nu-i așa?",
+        "cs": "Dnes ráno je příjemně, že?",
+        "da": "Sikke en dejlig morgen, ikke?",
+        "fi": "Onpa mukava aamu tänään, eikö totta?"
       },
       "tokens": [
         {
@@ -213,13 +213,14 @@
       "tokens": [
         {
           "surface": "気持ち",
-          "surface_en": "feeling",
-          "furigana": "きもち",
-          "pos": "noun",
           "lemma": "気持ち",
-          "explanation": "Object noun meaning 'feeling' or 'thought'.",
-          "difficulty": 11,
-          "is_main_word": true,
+          "pos": "名詞/普通名詞/一般/*/*/*",
+          "upos": "NOUN",
+          "xpos": "名詞",
+          "feats": {},
+          "start": 0,
+          "end": 3,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "きもち",
           "ruby_text": "気持[きも]ち",
           "ruby_spans": [
@@ -230,33 +231,39 @@
               "length": 2
             }
           ],
-          "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "ruby_confidence": "reviewed",
+          "furigana": "きもち",
+          "ruby_source": "mediawiki_sentence_ruby",
+          "is_main_word": true
         },
         {
           "surface": "を",
-          "surface_en": "object marker",
-          "furigana": "を",
-          "pos": "particle",
           "lemma": "を",
-          "explanation": "Direct object–marking particle.",
-          "difficulty": 1,
+          "pos": "助詞/格助詞/*/*/*/*",
+          "upos": "PART",
+          "xpos": "助詞",
+          "feats": {},
+          "start": 3,
+          "end": 4,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "を",
           "ruby_text": "を",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "を"
         },
         {
-          "surface": "言いたい",
-          "surface_en": "want to say",
-          "furigana": "言いたい",
-          "pos": "verb",
+          "surface": "言い",
           "lemma": "言う",
-          "explanation": "Desiderative form of 言う, meaning 'want to say'.",
-          "difficulty": 1,
-          "reading_kana": "言いたい",
-          "ruby_text": "言[言]いたい",
+          "pos": "動詞/一般/*/*/五段-ワア行/連用形-一般",
+          "upos": "VERB",
+          "xpos": "動詞",
+          "feats": {},
+          "start": 4,
+          "end": 6,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "言い",
+          "ruby_text": "言[言]い",
           "ruby_spans": [
             {
               "base": "言",
@@ -265,8 +272,41 @@
               "length": 1
             }
           ],
+          "ruby_confidence": "reviewed",
+          "furigana": "言い",
+          "ruby_source": "mediawiki_sentence_ruby"
+        },
+        {
+          "surface": "たい",
+          "lemma": "たい",
+          "pos": "助動詞/*/*/*/助動詞-タイ/終止形-一般",
+          "upos": "AUX",
+          "xpos": "助動詞",
+          "feats": {},
+          "start": 6,
+          "end": 8,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "たい",
+          "ruby_text": "たい",
+          "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "たい"
+        },
+        {
+          "surface": "。",
+          "lemma": "。",
+          "pos": "補助記号/句点/*/*/*/*",
+          "upos": "PUNCT",
+          "xpos": "補助記号",
+          "feats": {},
+          "start": 8,
+          "end": 9,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "。",
+          "ruby_text": "。",
+          "ruby_spans": [],
+          "ruby_confidence": "high",
+          "furigana": "。"
         }
       ],
       "difficulty": 4.33,
@@ -293,11 +333,11 @@
         "nl": "Ik begrijp hoe je je voelt.",
         "uk": "Я розумію, як ти почуваєшся.",
         "hu": "Értem, mit érzel.",
-        "hi": "मैं समझता हूं कि आप कैसा महसूस करते हैं।",
+        "hi": "मैं तुम्हारी भावनाएँ समझता हूँ।",
         "pl": "Rozumiem, co czujesz.",
         "el": "Καταλαβαίνω πώς νιώθεις.",
         "nb": "Jeg forstår hvordan du har det.",
-        "id": "Saya mengerti bagaimana perasaan Anda.",
+        "id": "Aku mengerti perasaanmu.",
         "sv": "Jag förstår hur du känner.",
         "ro": "Înțeleg cum te simți.",
         "cs": "Chápu, jak se cítíš.",
@@ -428,7 +468,7 @@
         "ar": "لنغني بالإحساس!",
         "nl": "Laten we zingen met gevoel!",
         "uk": "Співаємо з почуттями!",
-        "hu": "Énekeljünk érzelmivel!",
+        "hu": "Énekeljünk jókedvűen!",
         "hi": "चलो भावना के साथ गाते हैं!",
         "pl": "Zaśpiewajmy z uczuciem!",
         "el": "Ας τραγουδήσουμε με συναίσθημα!",
@@ -496,19 +536,324 @@
     "content_reviewers": [
       "mediawiki-visible-revision"
     ],
-    "last_reviewed_utc": "2026-06-21T18:39:13Z",
-    "approval_source": "mediawiki_visible_revision",
+    "last_reviewed_utc": "2026-10-11T10:37:24Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
     "wiki": {
       "title": "Item:Ja n5/dce0048694430ad6",
-      "revision_id": 58678,
-      "parent_revision_id": 37122,
-      "revision_timestamp_utc": "2026-06-21T18:39:13Z",
-      "revision_user": "VocomiBot",
-      "revision_comment": "Sync ja_n5 item 気持ち",
-      "pulled_utc": "2026-06-21T20:53:46Z",
-      "applied_utc": "2026-06-21T20:54:00Z",
+      "revision_id": 82910,
+      "parent_revision_id": 69853,
+      "revision_timestamp_utc": "2026-10-11T10:37:24Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Suggest reviewed Japanese and translation corrections",
+      "pulled_utc": "2026-10-17T07:37:40Z",
+      "applied_utc": "2026-10-17T07:37:58Z",
       "applied_by": "vocomipedia-apply-pulled"
-    }
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-9620df61e626af23",
+        "status": "applied",
+        "type": "ruby_update",
+        "item_id": "ja_n5:dce0048694430ad6",
+        "pack_code": "ja_n5",
+        "entry_id": "気持ち",
+        "language": "ja",
+        "sentence_index": 2,
+        "old_sentence": "気持ちを言いたい。",
+        "old_translations": {
+          "en": "I want to express my feelings.",
+          "es": "Quiero expresar mis sentimientos.",
+          "fr": "Je veux exprimer mes sentiments.",
+          "de": "Ich möchte meine Gefühle ausdrücken.",
+          "it": "Voglio esprimere i miei sentimenti.",
+          "ko": "내 감정을 표현하고 싶어.",
+          "zh-Hans": "我想表达我的感受。",
+          "yue": "我想講出我嘅感受。",
+          "ru": "Я хочу выразить свои чувства.",
+          "pt": "Quero expressar meus sentimentos.",
+          "he": "אני רוצה לבטא את הרגשות שלי.",
+          "tr": "Duygularımı ifade etmek istiyorum.",
+          "vi": "Tôi muốn bày tỏ cảm xúc của mình.",
+          "ar": "أريد أن أعبر عن مشاعري.",
+          "nl": "Ik wil mijn gevoelens uiten.",
+          "uk": "Я хочу висловити свої почуття.",
+          "hu": "Ki akarom fejezni az érzéseimet.",
+          "hi": "मैं अपनी भावनाओं को व्यक्त करना चाहता हूं।",
+          "pl": "Chcę wyrazić swoje uczucia.",
+          "el": "Θέλω να εκφράσω τα συναισθήματά μου.",
+          "nb": "Jeg vil uttrykke følelsene mine.",
+          "id": "Saya ingin mengungkapkan perasaan saya.",
+          "sv": "Jag vill uttrycka mina känslor.",
+          "ro": "Vreau să-mi exprim sentimentele.",
+          "cs": "Chci vyjádřit své pocity.",
+          "da": "Jeg vil gerne udtrykke mine følelser.",
+          "fi": "Haluan ilmaista tunteeni."
+        },
+        "proposed_sentence": "気持ちを言いたい。",
+        "proposed_translations": {
+          "en": "I want to express my feelings.",
+          "es": "Quiero expresar mis sentimientos.",
+          "fr": "Je veux exprimer mes sentiments.",
+          "de": "Ich möchte meine Gefühle ausdrücken.",
+          "it": "Voglio esprimere i miei sentimenti.",
+          "ko": "내 감정을 표현하고 싶어.",
+          "zh-Hans": "我想表达我的感受。",
+          "yue": "我想講出我嘅感受。",
+          "ru": "Я хочу выразить свои чувства.",
+          "pt": "Quero expressar meus sentimentos.",
+          "he": "אני רוצה לבטא את הרגשות שלי.",
+          "tr": "Duygularımı ifade etmek istiyorum.",
+          "vi": "Tôi muốn bày tỏ cảm xúc của mình.",
+          "ar": "أريد أن أعبر عن مشاعري.",
+          "nl": "Ik wil mijn gevoelens uiten.",
+          "uk": "Я хочу висловити свої почуття.",
+          "hu": "Ki akarom fejezni az érzéseimet.",
+          "hi": "मैं अपनी भावनाओं को व्यक्त करना चाहता हूं।",
+          "pl": "Chcę wyrazić swoje uczucia.",
+          "el": "Θέλω να εκφράσω τα συναισθήματά μου.",
+          "nb": "Jeg vil uttrykke følelsene mine.",
+          "id": "Saya ingin mengungkapkan perasaan saya.",
+          "sv": "Jag vill uttrycka mina känslor.",
+          "ro": "Vreau să-mi exprim sentimentele.",
+          "cs": "Chci vyjádřit své pocity.",
+          "da": "Jeg vil gerne udtrykke mine følelser.",
+          "fi": "Haluan ilmaista tunteeni."
+        },
+        "old_ruby_source": "気持[きも]ちを言[い]いたい。",
+        "proposed_ruby_source": "気持[きも]ちを言[言]いたい。",
+        "old_japanese": "気持ちを言いたい。",
+        "old_english": "I want to express my feelings.",
+        "proposed_japanese": "気持ちを言いたい。",
+        "proposed_english": "I want to express my feelings.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "ja",
+          "sentence": "気持ちを言いたい。",
+          "tokens": [
+            {
+              "surface": "気持ち",
+              "lemma": "気持ち",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 0,
+              "end": 3,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "きもち",
+              "ruby_text": "気持[きも]ち",
+              "ruby_spans": [
+                {
+                  "base": "気持",
+                  "reading": "きも",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "きもち",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "を",
+              "lemma": "を",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 3,
+              "end": 4,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "を",
+              "ruby_text": "を",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "を"
+            },
+            {
+              "surface": "言い",
+              "lemma": "言う",
+              "pos": "動詞/一般/*/*/五段-ワア行/連用形-一般",
+              "upos": "VERB",
+              "xpos": "動詞",
+              "feats": {},
+              "start": 4,
+              "end": 6,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "言い",
+              "ruby_text": "言[言]い",
+              "ruby_spans": [
+                {
+                  "base": "言",
+                  "reading": "言",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "言い",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "たい",
+              "lemma": "たい",
+              "pos": "助動詞/*/*/*/助動詞-タイ/終止形-一般",
+              "upos": "AUX",
+              "xpos": "助動詞",
+              "feats": {},
+              "start": 6,
+              "end": 8,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "たい",
+              "ruby_text": "たい",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "たい"
+            },
+            {
+              "surface": "。",
+              "lemma": "。",
+              "pos": "補助記号/句点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 8,
+              "end": 9,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "。",
+              "ruby_text": "。",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "。"
+            }
+          ],
+          "reading": "きもちを言いたい。",
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "warnings": [
+            "mediawiki ruby hints applied"
+          ]
+        },
+        "generated_tokens": [
+          {
+            "surface": "気持ち",
+            "lemma": "気持ち",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "きもち",
+            "ruby_text": "気持[きも]ち",
+            "ruby_spans": [
+              {
+                "base": "気持",
+                "reading": "きも",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "きもち",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "を",
+            "lemma": "を",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 3,
+            "end": 4,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "を",
+            "ruby_text": "を",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "を"
+          },
+          {
+            "surface": "言い",
+            "lemma": "言う",
+            "pos": "動詞/一般/*/*/五段-ワア行/連用形-一般",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 4,
+            "end": 6,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "言い",
+            "ruby_text": "言[言]い",
+            "ruby_spans": [
+              {
+                "base": "言",
+                "reading": "言",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "言い",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "たい",
+            "lemma": "たい",
+            "pos": "助動詞/*/*/*/助動詞-タイ/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 6,
+            "end": 8,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "たい",
+            "ruby_text": "たい",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "たい"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 8,
+            "end": 9,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
+          }
+        ],
+        "generated_reading": "きもちを言いたい。",
+        "analyzer": "sudachipy_sudachidict_core_c",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:37:40Z",
+        "updated_utc": "2026-10-17T07:38:17Z",
+        "applied_utc": "2026-10-17T07:38:17Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:38:17Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -649,13 +994,14 @@
         "tokens": [
           {
             "surface": "気持ち",
-            "surface_en": "feeling",
-            "furigana": "きもち",
-            "pos": "noun",
             "lemma": "気持ち",
-            "explanation": "Object noun meaning 'feeling' or 'thought'.",
-            "difficulty": 11,
-            "is_main_word": true,
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "きもち",
             "ruby_text": "気持[きも]ち",
             "ruby_spans": [
@@ -666,33 +1012,39 @@
                 "length": 2
               }
             ],
-            "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "ruby_confidence": "reviewed",
+            "furigana": "きもち",
+            "ruby_source": "mediawiki_sentence_ruby",
+            "is_main_word": true
           },
           {
             "surface": "を",
-            "surface_en": "object marker",
-            "furigana": "を",
-            "pos": "particle",
             "lemma": "を",
-            "explanation": "Direct object–marking particle.",
-            "difficulty": 1,
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 3,
+            "end": 4,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "を",
             "ruby_text": "を",
             "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "を"
           },
           {
-            "surface": "言いたい",
-            "surface_en": "want to say",
-            "furigana": "言いたい",
-            "pos": "verb",
+            "surface": "言い",
             "lemma": "言う",
-            "explanation": "Desiderative form of 言う, meaning 'want to say'.",
-            "difficulty": 1,
-            "reading_kana": "言いたい",
-            "ruby_text": "言[言]いたい",
+            "pos": "動詞/一般/*/*/五段-ワア行/連用形-一般",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 4,
+            "end": 6,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "言い",
+            "ruby_text": "言[言]い",
             "ruby_spans": [
               {
                 "base": "言",
@@ -701,8 +1053,41 @@
                 "length": 1
               }
             ],
+            "ruby_confidence": "reviewed",
+            "furigana": "言い",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "たい",
+            "lemma": "たい",
+            "pos": "助動詞/*/*/*/助動詞-タイ/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 6,
+            "end": 8,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "たい",
+            "ruby_text": "たい",
+            "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "たい"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 8,
+            "end": 9,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
           }
         ],
         "difficulty_aggregated": 4.33
@@ -859,7 +1244,7 @@
     "entry_id": "気持ち",
     "word_en": "feeling",
     "word_es": "Sentimiento",
-    "word_fr": "Ressentir",
+    "word_fr": "sentiment",
     "word_de": "Gefühl",
     "word_it": "Sentimento",
     "word_ko": "느낌",
@@ -885,163 +1270,163 @@
     "word_da": "Følelse",
     "word_fi": "Tunne",
     "ar": [
-      "أشعر بشعور رائع هذا الصباح.",
+      "هذا الصباح لطيف ومريح، أليس كذلك؟",
       "أريد أن أعبر عن مشاعري.",
       "أنا أفهم شعورك.",
       "لنغني بالإحساس!"
     ],
     "cs": [
-      "Dnes ráno je to skvělý pocit.",
+      "Dnes ráno je příjemně, že?",
       "Chci vyjádřit své pocity.",
       "Chápu, jak se cítíš.",
       "Zpívejme s citem!"
     ],
     "da": [
-      "Det føles fantastisk i morges.",
+      "Sikke en dejlig morgen, ikke?",
       "Jeg vil gerne udtrykke mine følelser.",
       "Jeg forstår, hvordan du har det.",
       "Lad os synge med følelse!"
     ],
     "de": [
-      "Heute Morgen fühlt es sich großartig an.",
+      "Heute Morgen ist es wirklich angenehm, nicht wahr?",
       "Ich möchte meine Gefühle ausdrücken.",
       "Ich verstehe, wie du dich fühlst.",
       "Lasst uns mit Gefühl singen!"
     ],
     "el": [
-      "Αισθάνομαι υπέροχα σήμερα το πρωί.",
+      "Είναι ένα πολύ ευχάριστο πρωινό, έτσι δεν είναι;",
       "Θέλω να εκφράσω τα συναισθήματά μου.",
       "Καταλαβαίνω πώς νιώθεις.",
       "Ας τραγουδήσουμε με συναίσθημα!"
     ],
     "en": [
-      "It feels great this morning.",
+      "It's such a pleasant morning, isn't it?",
       "I want to express my feelings.",
       "I understand how you feel.",
       "Let's sing with feeling!"
     ],
     "es": [
-      "Esta mañana se siente genial.",
+      "Hace una mañana muy agradable, ¿verdad?",
       "Quiero expresar mis sentimientos.",
       "Entiendo cómo te sientes.",
       "¡Cantemos con sentimiento!"
     ],
     "fi": [
-      "Tänä aamuna tuntuu mahtavalta.",
+      "Onpa mukava aamu tänään, eikö totta?",
       "Haluan ilmaista tunteeni.",
       "Ymmärrän, miltä sinusta tuntuu.",
       "Laulakaamme tunteella!"
     ],
     "fr": [
-      "Ce matin, c’est très agréable.",
+      "C’est une matinée très agréable, n’est-ce pas ?",
       "Je veux exprimer mes sentiments.",
       "Je comprends ce que tu ressens.",
       "Chantons avec émotion !"
     ],
     "he": [
-      "מרגיש נהדר הבוקר.",
+      "איזה בוקר נעים היום, נכון?",
       "אני רוצה לבטא את הרגשות שלי.",
       "אני מבין איך אתה מרגיש.",
       "בואו נשיר ברגש!"
     ],
     "hi": [
-      "आज सुबह बहुत अच्छा लग रहा है।",
+      "आज की सुबह बहुत सुहानी है, है न?",
       "मैं अपनी भावनाओं को व्यक्त करना चाहता हूं।",
-      "मैं समझता हूं कि आप कैसा महसूस करते हैं।",
+      "मैं तुम्हारी भावनाएँ समझता हूँ।",
       "चलो भावना के साथ गाते हैं!"
     ],
     "hu": [
-      "Ma reggel nagyon jól érzem magam.",
+      "Milyen kellemes reggel van ma, nem igaz?",
       "Ki akarom fejezni az érzéseimet.",
       "Értem, mit érzel.",
-      "Énekeljünk érzelmivel!"
+      "Énekeljünk jókedvűen!"
     ],
     "id": [
-      "Rasanya luar biasa pagi ini.",
+      "Pagi ini terasa sangat menyenangkan, ya?",
       "Saya ingin mengungkapkan perasaan saya.",
-      "Saya mengerti bagaimana perasaan Anda.",
+      "Aku mengerti perasaanmu.",
       "Mari kita bernyanyi dengan perasaan!"
     ],
     "it": [
-      "Questa mattina è una sensazione fantastica.",
+      "È una mattinata davvero piacevole, vero?",
       "Voglio esprimere i miei sentimenti.",
       "Capisco come ti senti.",
       "Cantiamo con sentimento!"
     ],
     "ko": [
-      "오늘 아침 기분이 정말 좋아.",
+      "오늘 아침은 참 상쾌하네요.",
       "내 감정을 표현하고 싶어.",
       "네 기분 이해해.",
       "감정을 담아 노래하자!"
     ],
     "nb": [
-      "Det føles fantastisk i dag tidlig.",
+      "For en deilig morgen det er i dag, ikke sant?",
       "Jeg vil uttrykke følelsene mine.",
       "Jeg forstår hvordan du har det.",
       "La oss synge med følelse!"
     ],
     "nl": [
-      "Het voelt geweldig vanmorgen.",
+      "Wat een heerlijke ochtend, hè?",
       "Ik wil mijn gevoelens uiten.",
       "Ik begrijp hoe je je voelt.",
       "Laten we zingen met gevoel!"
     ],
     "pl": [
-      "Dziś rano czuję się świetnie.",
+      "Ale dziś rano jest przyjemnie, prawda?",
       "Chcę wyrazić swoje uczucia.",
       "Rozumiem, co czujesz.",
       "Zaśpiewajmy z uczuciem!"
     ],
     "pt": [
-      "Está ótimo esta manhã.",
+      "Que manhã agradável, não é?",
       "Quero expressar meus sentimentos.",
       "Eu entendo como você se sente.",
       "Vamos cantar com sentimento!"
     ],
     "ro": [
-      "Mă simt grozav în această dimineață.",
+      "Ce dimineață plăcută, nu-i așa?",
       "Vreau să-mi exprim sentimentele.",
       "Înțeleg cum te simți.",
       "Să cântăm cu emoție!"
     ],
     "ru": [
-      "Сегодня утром всё отлично.",
+      "Сегодня такое приятное утро, правда?",
       "Я хочу выразить свои чувства.",
       "Я понимаю, что ты чувствуешь.",
       "Давайте споём с чувством!"
     ],
     "sv": [
-      "Det känns fantastiskt i morse.",
+      "Vilken härlig morgon det är, eller hur?",
       "Jag vill uttrycka mina känslor.",
       "Jag förstår hur du känner.",
       "Låt oss sjunga med känsla!"
     ],
     "tr": [
-      "Bu sabah harika hissettiriyor.",
+      "Bu sabah ne güzel, değil mi?",
       "Duygularımı ifade etmek istiyorum.",
       "Nasıl hissettiğini anlıyorum.",
       "Duyguyla şarkı söyleyelim!"
     ],
     "uk": [
-      "Сьогодні вранці все чудово.",
+      "Який приємний ранок сьогодні, правда?",
       "Я хочу висловити свої почуття.",
       "Я розумію, як ти почуваєшся.",
       "Співаємо з почуттями!"
     ],
     "vi": [
-      "Sáng nay cảm thấy thật tuyệt.",
+      "Sáng nay thật dễ chịu nhỉ.",
       "Tôi muốn bày tỏ cảm xúc của mình.",
       "Tôi hiểu cảm giác của bạn.",
       "Hãy hát với cảm xúc!"
     ],
     "yue": [
-      "今朝感覺真係好。",
+      "今朝真係好舒服呀。",
       "我想講出我嘅感受。",
       "我明白你嘅心情。",
       "我哋用感情嚟唱啦！"
     ],
     "zh-Hans": [
-      "今天早上感觉真好。",
+      "今天早上真舒服啊。",
       "我想表达我的感受。",
       "我理解你的感受。",
       "让我们用感情唱歌！"

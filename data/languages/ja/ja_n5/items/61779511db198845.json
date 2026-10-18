@@ -502,7 +502,7 @@
     },
     {
       "target": "三日前に会った人を思い出した.",
-      "reading": "みっかまえにあったひとをおもいだした.",
+      "reading": "みっかまえにあったひとをおもいだした．",
       "translations": {
         "en": "I remembered the person I met three days ago.",
         "es": "Recordé a la persona que conocí hace tres días.",
@@ -534,63 +534,108 @@
       },
       "tokens": [
         {
-          "surface": "三日前",
-          "surface_en": "three days ago",
-          "furigana": "みっかまえ",
-          "pos": "noun",
-          "lemma": "三日前",
-          "explanation": "Temporal noun indicating 'three days ago'.",
-          "difficulty": 1,
-          "is_main_word": true,
-          "reading_kana": "みっかまえ",
-          "ruby_text": "三[みっ]日[か]前[まえ]",
+          "surface": "三",
+          "lemma": "三",
+          "pos": "名詞/数詞/*/*/*/*",
+          "upos": "NOUN",
+          "xpos": "名詞",
+          "feats": {},
+          "start": 0,
+          "end": 1,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "みっ",
+          "ruby_text": "三[みっ]",
           "ruby_spans": [
             {
               "base": "三",
               "reading": "みっ",
               "start": 0,
               "length": 1
-            },
+            }
+          ],
+          "ruby_confidence": "reviewed",
+          "furigana": "みっ",
+          "ruby_source": "mediawiki_sentence_ruby",
+          "is_main_word": true
+        },
+        {
+          "surface": "日",
+          "lemma": "日",
+          "pos": "接尾辞/名詞的/助数詞/*/*/*",
+          "upos": "SUFFIX",
+          "xpos": "接尾辞",
+          "feats": {},
+          "start": 1,
+          "end": 2,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "か",
+          "ruby_text": "日[か]",
+          "ruby_spans": [
             {
               "base": "日",
               "reading": "か",
-              "start": 1,
-              "length": 1
-            },
-            {
-              "base": "前",
-              "reading": "まえ",
-              "start": 2,
+              "start": 0,
               "length": 1
             }
           ],
-          "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "ruby_confidence": "reviewed",
+          "furigana": "か",
+          "ruby_source": "mediawiki_sentence_ruby",
+          "is_main_word": true
+        },
+        {
+          "surface": "前",
+          "lemma": "前",
+          "pos": "名詞/普通名詞/副詞可能/*/*/*",
+          "upos": "NOUN",
+          "xpos": "名詞",
+          "feats": {},
+          "start": 2,
+          "end": 3,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "まえ",
+          "ruby_text": "前[まえ]",
+          "ruby_spans": [
+            {
+              "base": "前",
+              "reading": "まえ",
+              "start": 0,
+              "length": 1
+            }
+          ],
+          "ruby_confidence": "reviewed",
+          "furigana": "まえ",
+          "ruby_source": "mediawiki_sentence_ruby",
+          "is_main_word": true
         },
         {
           "surface": "に",
-          "surface_en": "at/on",
-          "furigana": "に",
-          "pos": "particle",
           "lemma": "に",
-          "explanation": "Particle marking a point in time.",
-          "difficulty": 1,
+          "pos": "助詞/格助詞/*/*/*/*",
+          "upos": "PART",
+          "xpos": "助詞",
+          "feats": {},
+          "start": 3,
+          "end": 4,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "に",
           "ruby_text": "に",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "に"
         },
         {
-          "surface": "会った",
-          "surface_en": "met",
-          "furigana": "あった",
-          "pos": "verb",
+          "surface": "会っ",
           "lemma": "会う",
-          "explanation": "Past tense of '会う' (to meet).",
-          "difficulty": 1,
-          "reading_kana": "あった",
-          "ruby_text": "会[あ]った",
+          "pos": "動詞/一般/*/*/五段-ワア行/連用形-促音便",
+          "upos": "VERB",
+          "xpos": "動詞",
+          "feats": {},
+          "start": 4,
+          "end": 6,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "あっ",
+          "ruby_text": "会[あ]っ",
           "ruby_spans": [
             {
               "base": "会",
@@ -599,17 +644,36 @@
               "length": 1
             }
           ],
+          "ruby_confidence": "reviewed",
+          "furigana": "あっ",
+          "ruby_source": "mediawiki_sentence_ruby"
+        },
+        {
+          "surface": "た",
+          "lemma": "た",
+          "pos": "助動詞/*/*/*/助動詞-タ/連体形-一般",
+          "upos": "AUX",
+          "xpos": "助動詞",
+          "feats": {},
+          "start": 6,
+          "end": 7,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "た",
+          "ruby_text": "た",
+          "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "た"
         },
         {
           "surface": "人",
-          "surface_en": "person",
-          "furigana": "ひと",
-          "pos": "noun",
           "lemma": "人",
-          "explanation": "Object of memory, the person met.",
-          "difficulty": 1,
+          "pos": "名詞/普通名詞/一般/*/*/*",
+          "upos": "NOUN",
+          "xpos": "名詞",
+          "feats": {},
+          "start": 7,
+          "end": 8,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "ひと",
           "ruby_text": "人[ひと]",
           "ruby_spans": [
@@ -620,33 +684,38 @@
               "length": 1
             }
           ],
-          "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "ruby_confidence": "reviewed",
+          "furigana": "ひと",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "を",
-          "surface_en": "object marker",
-          "furigana": "を",
-          "pos": "particle",
           "lemma": "を",
-          "explanation": "Object-marking particle.",
-          "difficulty": 1,
+          "pos": "助詞/格助詞/*/*/*/*",
+          "upos": "PART",
+          "xpos": "助詞",
+          "feats": {},
+          "start": 8,
+          "end": 9,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "を",
           "ruby_text": "を",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "を"
         },
         {
-          "surface": "思い出した",
-          "surface_en": "recalled",
-          "furigana": "おもいだした",
-          "pos": "verb",
+          "surface": "思い出し",
           "lemma": "思い出す",
-          "explanation": "Past tense of '思い出す' (to recall or remember).",
-          "difficulty": 8,
-          "reading_kana": "おもいだした",
-          "ruby_text": "思[おも]い出[だ]した",
+          "pos": "動詞/一般/*/*/五段-サ行/連用形-一般",
+          "upos": "VERB",
+          "xpos": "動詞",
+          "feats": {},
+          "start": 9,
+          "end": 13,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "おもいだし",
+          "ruby_text": "思[おも]い出[だ]し",
           "ruby_spans": [
             {
               "base": "思",
@@ -661,8 +730,41 @@
               "length": 1
             }
           ],
+          "ruby_confidence": "reviewed",
+          "furigana": "おもいだし",
+          "ruby_source": "mediawiki_sentence_ruby"
+        },
+        {
+          "surface": "た",
+          "lemma": "た",
+          "pos": "助動詞/*/*/*/助動詞-タ/終止形-一般",
+          "upos": "AUX",
+          "xpos": "助動詞",
+          "feats": {},
+          "start": 13,
+          "end": 14,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "た",
+          "ruby_text": "た",
+          "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "た"
+        },
+        {
+          "surface": ".",
+          "lemma": ".",
+          "pos": "補助記号/句点/*/*/*/*",
+          "upos": "PUNCT",
+          "xpos": "補助記号",
+          "feats": {},
+          "start": 14,
+          "end": 15,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "．",
+          "ruby_text": ".",
+          "ruby_spans": [],
+          "ruby_confidence": "high",
+          "furigana": "．"
         }
       ],
       "difficulty": 2.17,
@@ -683,19 +785,593 @@
     "content_reviewers": [
       "mediawiki-visible-revision"
     ],
-    "last_reviewed_utc": "2026-06-21T18:38:26Z",
-    "approval_source": "mediawiki_visible_revision",
+    "last_reviewed_utc": "2026-10-11T02:40:30Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
     "wiki": {
       "title": "Item:Ja n5/61779511db198845",
-      "revision_id": 58638,
-      "parent_revision_id": 37082,
-      "revision_timestamp_utc": "2026-06-21T18:38:26Z",
-      "revision_user": "VocomiBot",
-      "revision_comment": "Sync ja_n5 item 三日前",
-      "pulled_utc": "2026-06-21T20:53:41Z",
-      "applied_utc": "2026-06-21T20:53:55Z",
+      "revision_id": 83485,
+      "parent_revision_id": 69813,
+      "revision_timestamp_utc": "2026-10-11T02:40:30Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Suggest reviewed Japanese and translation corrections",
+      "pulled_utc": "2026-10-17T07:37:34Z",
+      "applied_utc": "2026-10-17T07:37:51Z",
       "applied_by": "vocomipedia-apply-pulled"
-    }
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-64db7d108bda2560",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "ja_n5:61779511db198845",
+        "pack_code": "ja_n5",
+        "entry_id": "三日前",
+        "language": "ja",
+        "sentence_index": 4,
+        "old_sentence": "三日前に会った人を思い出した。",
+        "old_translations": {
+          "en": "I remembered the person I met three days ago.",
+          "es": "Recordé a la persona que conocí hace tres días.",
+          "fr": "Je me suis souvenu de la personne que j’ai rencontrée il y a trois jours.",
+          "de": "Ich erinnerte mich an die Person, die ich vor drei Tagen getroffen hatte.",
+          "it": "Mi è tornata in mente la persona che ho incontrato tre giorni fa.",
+          "ko": "3일 전에 만난 사람이 떠올랐어요.",
+          "zh-Hans": "我想起了三天前遇到的那个人。",
+          "yue": "我想起三日前遇到嗰個人。",
+          "ru": "Я вспомнил человека, которого встретил три дня назад.",
+          "pt": "Lembrei da pessoa que conheci há três dias.",
+          "he": "נזכרתי באדם שפגשתי לפני שלושה ימים.",
+          "tr": "Üç gün önce tanıştığım kişiyi hatırladım.",
+          "vi": "Tôi nhớ đến người mà tôi đã gặp ba ngày trước.",
+          "ar": "تذكرت الشخص الذي قابلته قبل ثلاثة أيام.",
+          "nl": "Ik herinnerde me de persoon die ik drie dagen geleden ontmoette.",
+          "uk": "Я згадав людину, яку зустрів три дні тому.",
+          "hu": "Eszembe jutott az a személy, akivel három napja találkoztam.",
+          "hi": "मुझे वह व्यक्ति याद आया जिससे मैं तीन दिन पहले मिला था।",
+          "pl": "Przypomniałem sobie osobę, którą spotkałem trzy dni temu.",
+          "el": "Θυμήθηκα το άτομο που γνώρισα πριν από τρεις ημέρες.",
+          "nb": "Jeg husket personen jeg møtte for tre dager siden.",
+          "id": "Saya ingat orang yang saya temui tiga hari yang lalu.",
+          "sv": "Jag mindes personen jag träffade för tre dagar sedan.",
+          "ro": "Mi-am amintit de persoana pe care am întâlnit-o acum trei zile.",
+          "cs": "Vzpomněl jsem si na člověka, kterého jsem potkal před třemi dny.",
+          "da": "Jeg huskede personen, jeg mødte for tre dage siden.",
+          "fi": "Muistin henkilön, jonka tapasin kolme päivää sitten."
+        },
+        "proposed_sentence": "三日前に会った人を思い出した.",
+        "proposed_translations": {
+          "en": "I remembered the person I met three days ago.",
+          "es": "Recordé a la persona que conocí hace tres días.",
+          "fr": "Je me suis souvenu de la personne que j’ai rencontrée il y a trois jours.",
+          "de": "Ich erinnerte mich an die Person, die ich vor drei Tagen getroffen hatte.",
+          "it": "Mi sono ricordata della persona che ho incontrato tre giorni fa.",
+          "ko": "3일 전에 만난 사람이 떠올랐어요.",
+          "zh-Hans": "我想起了三天前遇到的那个人。",
+          "yue": "我記得三日前遇到嗰個人。",
+          "ru": "Я вспомнил человека, которого встретил три дня назад.",
+          "pt": "Lembrei da pessoa que conheci há três dias.",
+          "he": "נזכרתי באדם שפגשתי לפני שלושה ימים.",
+          "tr": "Üç gün önce tanıştığım kişiyi hatırladım.",
+          "vi": "Tôi nhớ đến người mà tôi đã gặp ba ngày trước.",
+          "ar": "تذكرت الشخص الذي قابلته قبل ثلاثة أيام.",
+          "nl": "Ik herinnerde me de persoon die ik drie dagen geleden ontmoette.",
+          "uk": "Я згадав людину, яку зустрів три дні тому.",
+          "hu": "Eszembe jutott az a személy, akivel három napja találkoztam.",
+          "hi": "मुझे वह व्यक्ति याद आया जिससे मैं तीन दिन पहले मिला था।",
+          "pl": "Przypomniałem sobie osobę, którą spotkałem trzy dni temu.",
+          "el": "Θυμήθηκα το άτομο που γνώρισα πριν από τρεις ημέρες.",
+          "nb": "Jeg husket personen jeg møtte for tre dager siden.",
+          "id": "Saya ingat orang yang saya temui tiga hari yang lalu.",
+          "sv": "Jag mindes personen jag träffade för tre dagar sedan.",
+          "ro": "Mi-am amintit de persoana pe care am întâlnit-o acum trei zile.",
+          "cs": "Vzpomněl jsem si na člověka, kterého jsem potkal před třemi dny.",
+          "da": "Jeg huskede personen, jeg mødte for tre dage siden.",
+          "fi": "Muistin henkilön, jonka tapasin kolme päivää sitten."
+        },
+        "old_ruby_source": "三[みっ]日[か]前[まえ]に会[あ]った人[ひと]を思[おも]い出[だ]した。",
+        "proposed_ruby_source": "三[みっ]日[か]前[まえ]に会[あ]った人[ひと]を思[おも]い出[だ]した.",
+        "old_japanese": "三日前に会った人を思い出した。",
+        "old_english": "I remembered the person I met three days ago.",
+        "proposed_japanese": "三日前に会った人を思い出した.",
+        "proposed_english": "I remembered the person I met three days ago.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "ja",
+          "sentence": "三日前に会った人を思い出した.",
+          "tokens": [
+            {
+              "surface": "三",
+              "lemma": "三",
+              "pos": "名詞/数詞/*/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 0,
+              "end": 1,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "みっ",
+              "ruby_text": "三[みっ]",
+              "ruby_spans": [
+                {
+                  "base": "三",
+                  "reading": "みっ",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "みっ",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "日",
+              "lemma": "日",
+              "pos": "接尾辞/名詞的/助数詞/*/*/*",
+              "upos": "SUFFIX",
+              "xpos": "接尾辞",
+              "feats": {},
+              "start": 1,
+              "end": 2,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "か",
+              "ruby_text": "日[か]",
+              "ruby_spans": [
+                {
+                  "base": "日",
+                  "reading": "か",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "か",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "前",
+              "lemma": "前",
+              "pos": "名詞/普通名詞/副詞可能/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 2,
+              "end": 3,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "まえ",
+              "ruby_text": "前[まえ]",
+              "ruby_spans": [
+                {
+                  "base": "前",
+                  "reading": "まえ",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "まえ",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "に",
+              "lemma": "に",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 3,
+              "end": 4,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "に",
+              "ruby_text": "に",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "に"
+            },
+            {
+              "surface": "会っ",
+              "lemma": "会う",
+              "pos": "動詞/一般/*/*/五段-ワア行/連用形-促音便",
+              "upos": "VERB",
+              "xpos": "動詞",
+              "feats": {},
+              "start": 4,
+              "end": 6,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "あっ",
+              "ruby_text": "会[あ]っ",
+              "ruby_spans": [
+                {
+                  "base": "会",
+                  "reading": "あ",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "あっ",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "た",
+              "lemma": "た",
+              "pos": "助動詞/*/*/*/助動詞-タ/連体形-一般",
+              "upos": "AUX",
+              "xpos": "助動詞",
+              "feats": {},
+              "start": 6,
+              "end": 7,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "た",
+              "ruby_text": "た",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "た"
+            },
+            {
+              "surface": "人",
+              "lemma": "人",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 7,
+              "end": 8,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "ひと",
+              "ruby_text": "人[ひと]",
+              "ruby_spans": [
+                {
+                  "base": "人",
+                  "reading": "ひと",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "ひと",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "を",
+              "lemma": "を",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 8,
+              "end": 9,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "を",
+              "ruby_text": "を",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "を"
+            },
+            {
+              "surface": "思い出し",
+              "lemma": "思い出す",
+              "pos": "動詞/一般/*/*/五段-サ行/連用形-一般",
+              "upos": "VERB",
+              "xpos": "動詞",
+              "feats": {},
+              "start": 9,
+              "end": 13,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "おもいだし",
+              "ruby_text": "思[おも]い出[だ]し",
+              "ruby_spans": [
+                {
+                  "base": "思",
+                  "reading": "おも",
+                  "start": 0,
+                  "length": 1
+                },
+                {
+                  "base": "出",
+                  "reading": "だ",
+                  "start": 2,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "おもいだし",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "た",
+              "lemma": "た",
+              "pos": "助動詞/*/*/*/助動詞-タ/終止形-一般",
+              "upos": "AUX",
+              "xpos": "助動詞",
+              "feats": {},
+              "start": 13,
+              "end": 14,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "た",
+              "ruby_text": "た",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "た"
+            },
+            {
+              "surface": ".",
+              "lemma": ".",
+              "pos": "補助記号/句点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 14,
+              "end": 15,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "．",
+              "ruby_text": ".",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "．"
+            }
+          ],
+          "reading": "みっかまえにあったひとをおもいだした．",
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "warnings": [
+            "mediawiki ruby hints applied"
+          ]
+        },
+        "generated_tokens": [
+          {
+            "surface": "三",
+            "lemma": "三",
+            "pos": "名詞/数詞/*/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 0,
+            "end": 1,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "みっ",
+            "ruby_text": "三[みっ]",
+            "ruby_spans": [
+              {
+                "base": "三",
+                "reading": "みっ",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "みっ",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "日",
+            "lemma": "日",
+            "pos": "接尾辞/名詞的/助数詞/*/*/*",
+            "upos": "SUFFIX",
+            "xpos": "接尾辞",
+            "feats": {},
+            "start": 1,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "か",
+            "ruby_text": "日[か]",
+            "ruby_spans": [
+              {
+                "base": "日",
+                "reading": "か",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "か",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "前",
+            "lemma": "前",
+            "pos": "名詞/普通名詞/副詞可能/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 2,
+            "end": 3,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "まえ",
+            "ruby_text": "前[まえ]",
+            "ruby_spans": [
+              {
+                "base": "前",
+                "reading": "まえ",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "まえ",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "に",
+            "lemma": "に",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 3,
+            "end": 4,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "に",
+            "ruby_text": "に",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "に"
+          },
+          {
+            "surface": "会っ",
+            "lemma": "会う",
+            "pos": "動詞/一般/*/*/五段-ワア行/連用形-促音便",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 4,
+            "end": 6,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "あっ",
+            "ruby_text": "会[あ]っ",
+            "ruby_spans": [
+              {
+                "base": "会",
+                "reading": "あ",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "あっ",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "た",
+            "lemma": "た",
+            "pos": "助動詞/*/*/*/助動詞-タ/連体形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 6,
+            "end": 7,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "た",
+            "ruby_text": "た",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "た"
+          },
+          {
+            "surface": "人",
+            "lemma": "人",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 7,
+            "end": 8,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ひと",
+            "ruby_text": "人[ひと]",
+            "ruby_spans": [
+              {
+                "base": "人",
+                "reading": "ひと",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "ひと",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "を",
+            "lemma": "を",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 8,
+            "end": 9,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "を",
+            "ruby_text": "を",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "を"
+          },
+          {
+            "surface": "思い出し",
+            "lemma": "思い出す",
+            "pos": "動詞/一般/*/*/五段-サ行/連用形-一般",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 9,
+            "end": 13,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "おもいだし",
+            "ruby_text": "思[おも]い出[だ]し",
+            "ruby_spans": [
+              {
+                "base": "思",
+                "reading": "おも",
+                "start": 0,
+                "length": 1
+              },
+              {
+                "base": "出",
+                "reading": "だ",
+                "start": 2,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "おもいだし",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "た",
+            "lemma": "た",
+            "pos": "助動詞/*/*/*/助動詞-タ/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 13,
+            "end": 14,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "た",
+            "ruby_text": "た",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "た"
+          },
+          {
+            "surface": ".",
+            "lemma": ".",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 14,
+            "end": 15,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "．",
+            "ruby_text": ".",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "．"
+          }
+        ],
+        "generated_reading": "みっかまえにあったひとをおもいだした．",
+        "analyzer": "sudachipy_sudachidict_core_c",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:37:34Z",
+        "updated_utc": "2026-10-17T07:38:17Z",
+        "applied_utc": "2026-10-17T07:38:17Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:38:17Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -1095,63 +1771,108 @@
         "sentence": "三日前に会った人を思い出した.",
         "tokens": [
           {
-            "surface": "三日前",
-            "surface_en": "three days ago",
-            "furigana": "みっかまえ",
-            "pos": "noun",
-            "lemma": "三日前",
-            "explanation": "Temporal noun indicating 'three days ago'.",
-            "difficulty": 1,
-            "is_main_word": true,
-            "reading_kana": "みっかまえ",
-            "ruby_text": "三[みっ]日[か]前[まえ]",
+            "surface": "三",
+            "lemma": "三",
+            "pos": "名詞/数詞/*/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 0,
+            "end": 1,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "みっ",
+            "ruby_text": "三[みっ]",
             "ruby_spans": [
               {
                 "base": "三",
                 "reading": "みっ",
                 "start": 0,
                 "length": 1
-              },
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "みっ",
+            "ruby_source": "mediawiki_sentence_ruby",
+            "is_main_word": true
+          },
+          {
+            "surface": "日",
+            "lemma": "日",
+            "pos": "接尾辞/名詞的/助数詞/*/*/*",
+            "upos": "SUFFIX",
+            "xpos": "接尾辞",
+            "feats": {},
+            "start": 1,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "か",
+            "ruby_text": "日[か]",
+            "ruby_spans": [
               {
                 "base": "日",
                 "reading": "か",
-                "start": 1,
-                "length": 1
-              },
-              {
-                "base": "前",
-                "reading": "まえ",
-                "start": 2,
+                "start": 0,
                 "length": 1
               }
             ],
-            "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "ruby_confidence": "reviewed",
+            "furigana": "か",
+            "ruby_source": "mediawiki_sentence_ruby",
+            "is_main_word": true
+          },
+          {
+            "surface": "前",
+            "lemma": "前",
+            "pos": "名詞/普通名詞/副詞可能/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 2,
+            "end": 3,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "まえ",
+            "ruby_text": "前[まえ]",
+            "ruby_spans": [
+              {
+                "base": "前",
+                "reading": "まえ",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "まえ",
+            "ruby_source": "mediawiki_sentence_ruby",
+            "is_main_word": true
           },
           {
             "surface": "に",
-            "surface_en": "at/on",
-            "furigana": "に",
-            "pos": "particle",
             "lemma": "に",
-            "explanation": "Particle marking a point in time.",
-            "difficulty": 1,
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 3,
+            "end": 4,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "に",
             "ruby_text": "に",
             "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "に"
           },
           {
-            "surface": "会った",
-            "surface_en": "met",
-            "furigana": "あった",
-            "pos": "verb",
+            "surface": "会っ",
             "lemma": "会う",
-            "explanation": "Past tense of '会う' (to meet).",
-            "difficulty": 1,
-            "reading_kana": "あった",
-            "ruby_text": "会[あ]った",
+            "pos": "動詞/一般/*/*/五段-ワア行/連用形-促音便",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 4,
+            "end": 6,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "あっ",
+            "ruby_text": "会[あ]っ",
             "ruby_spans": [
               {
                 "base": "会",
@@ -1160,17 +1881,36 @@
                 "length": 1
               }
             ],
+            "ruby_confidence": "reviewed",
+            "furigana": "あっ",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "た",
+            "lemma": "た",
+            "pos": "助動詞/*/*/*/助動詞-タ/連体形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 6,
+            "end": 7,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "た",
+            "ruby_text": "た",
+            "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "た"
           },
           {
             "surface": "人",
-            "surface_en": "person",
-            "furigana": "ひと",
-            "pos": "noun",
             "lemma": "人",
-            "explanation": "Object of memory, the person met.",
-            "difficulty": 1,
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 7,
+            "end": 8,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "ひと",
             "ruby_text": "人[ひと]",
             "ruby_spans": [
@@ -1181,33 +1921,38 @@
                 "length": 1
               }
             ],
-            "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "ruby_confidence": "reviewed",
+            "furigana": "ひと",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "を",
-            "surface_en": "object marker",
-            "furigana": "を",
-            "pos": "particle",
             "lemma": "を",
-            "explanation": "Object-marking particle.",
-            "difficulty": 1,
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 8,
+            "end": 9,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "を",
             "ruby_text": "を",
             "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "を"
           },
           {
-            "surface": "思い出した",
-            "surface_en": "recalled",
-            "furigana": "おもいだした",
-            "pos": "verb",
+            "surface": "思い出し",
             "lemma": "思い出す",
-            "explanation": "Past tense of '思い出す' (to recall or remember).",
-            "difficulty": 8,
-            "reading_kana": "おもいだした",
-            "ruby_text": "思[おも]い出[だ]した",
+            "pos": "動詞/一般/*/*/五段-サ行/連用形-一般",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 9,
+            "end": 13,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "おもいだし",
+            "ruby_text": "思[おも]い出[だ]し",
             "ruby_spans": [
               {
                 "base": "思",
@@ -1222,8 +1967,41 @@
                 "length": 1
               }
             ],
+            "ruby_confidence": "reviewed",
+            "furigana": "おもいだし",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "た",
+            "lemma": "た",
+            "pos": "助動詞/*/*/*/助動詞-タ/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 13,
+            "end": 14,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "た",
+            "ruby_text": "た",
+            "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "た"
+          },
+          {
+            "surface": ".",
+            "lemma": ".",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 14,
+            "end": 15,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "．",
+            "ruby_text": ".",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "．"
           }
         ],
         "difficulty_aggregated": 2.17
@@ -1340,7 +2118,7 @@
       "Ha piovuto tre giorni fa.",
       "Un nuovo caffè ha aperto tre giorni fa.",
       "Ho perso il portafoglio tre giorni fa ed è stato terribile.",
-      "Mi sono ricordata della persona che ho incontrato tre giorni fa."
+      "Mi è tornata in mente la persona che ho incontrato tre giorni fa."
     ],
     "ko": [
       "3일 전에 비가 왔어.",
@@ -1412,7 +2190,7 @@
       "前三日落咗雨。",
       "一間新咖啡館喺三日前開張。",
       "三日前我唔見咗個銀包，真係好慘。",
-      "我記得三日前遇到嗰個人。"
+      "我想起三日前遇到嗰個人。"
     ],
     "zh-Hans": [
       "三天前下过雨。",

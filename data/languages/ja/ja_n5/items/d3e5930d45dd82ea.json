@@ -13,7 +13,7 @@
     "Verb"
   ],
   "glosses": {
-    "en": "to pick up",
+    "en": "to go and meet; to pick up; to welcome",
     "es": "recibir",
     "fr": "accueillir",
     "de": "abholen",
@@ -26,13 +26,13 @@
     "he": "לקבל",
     "tr": "karşılamak",
     "vi": "đón",
-    "ar": "للذهاب للقاء؛ أهلًا وسهلًا",
+    "ar": "استقبال شخص أو الذهاب لملاقاته",
     "nl": "afhalen",
     "uk": "зустрічати",
     "hu": "fogadni",
     "hi": "लाने जाना",
     "pl": "odebrać",
-    "el": "να πάω να συναντηθούμε? Καλώς ήρθες",
+    "el": "υποδέχομαι, πηγαίνω να συναντήσω",
     "nb": "hente",
     "id": "menjemput",
     "sv": "möta",
@@ -51,10 +51,10 @@
         "fr": "Je retrouverai mon ami à la gare demain.",
         "de": "Ich treffe meinen Freund morgen am Bahnhof.",
         "it": "Domani incontrerò il mio amico alla stazione.",
-        "ko": "내일 역에서 친구를 만날 거야.",
+        "ko": "내일 역에서 친구를 만날 거예요.",
         "zh-Hans": "我明天会在车站和朋友会合。",
         "yue": "我聽日會喺車站見我嘅朋友。",
-        "ru": "Завтра встретимся с другом на вокзале.",
+        "ru": "Завтра я встречу друга на вокзале.",
         "pt": "Vou encontrar meu amigo na estação amanhã.",
         "he": "אני אפגוש את החברה שלי בתחנה מחר.",
         "tr": "Yarın istasyonda arkadaşımla buluşacağım.",
@@ -77,12 +77,14 @@
       "tokens": [
         {
           "surface": "明日",
-          "surface_en": "tomorrow",
-          "furigana": "あす",
-          "pos": "noun",
           "lemma": "明日",
-          "explanation": "Temporal noun indicating when the action takes place.",
-          "difficulty": 8,
+          "pos": "名詞/普通名詞/副詞可能/*/*/*",
+          "upos": "NOUN",
+          "xpos": "名詞",
+          "feats": {},
+          "start": 0,
+          "end": 2,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "あす",
           "ruby_text": "明日[あす]",
           "ruby_spans": [
@@ -93,17 +95,36 @@
               "length": 2
             }
           ],
+          "ruby_confidence": "reviewed",
+          "furigana": "あす",
+          "ruby_source": "mediawiki_sentence_ruby"
+        },
+        {
+          "surface": "、",
+          "lemma": "、",
+          "pos": "補助記号/読点/*/*/*/*",
+          "upos": "PUNCT",
+          "xpos": "補助記号",
+          "feats": {},
+          "start": 2,
+          "end": 3,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "、",
+          "ruby_text": "、",
+          "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "、"
         },
         {
           "surface": "駅",
-          "surface_en": "station",
-          "furigana": "えき",
-          "pos": "noun",
           "lemma": "駅",
-          "explanation": "Location that marks the endpoint of movement with まで.",
-          "difficulty": 13,
+          "pos": "名詞/普通名詞/一般/*/*/*",
+          "upos": "NOUN",
+          "xpos": "名詞",
+          "feats": {},
+          "start": 3,
+          "end": 4,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "えき",
           "ruby_text": "駅[えき]",
           "ruby_spans": [
@@ -114,31 +135,36 @@
               "length": 1
             }
           ],
-          "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "ruby_confidence": "reviewed",
+          "furigana": "えき",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "まで",
-          "surface_en": "up to",
-          "furigana": "まで",
-          "pos": "particle",
           "lemma": "まで",
-          "explanation": "Particle indicating the extent or limit ('up to the station').",
-          "difficulty": 1,
+          "pos": "助詞/副助詞/*/*/*/*",
+          "upos": "PART",
+          "xpos": "助詞",
+          "feats": {},
+          "start": 4,
+          "end": 6,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "まで",
           "ruby_text": "まで",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "まで"
         },
         {
           "surface": "友達",
-          "surface_en": "friend",
-          "furigana": "ともだち",
-          "pos": "noun",
           "lemma": "友達",
-          "explanation": "Direct object marking who is being picked up.",
-          "difficulty": 18,
+          "pos": "名詞/普通名詞/一般/*/*/*",
+          "upos": "NOUN",
+          "xpos": "名詞",
+          "feats": {},
+          "start": 6,
+          "end": 8,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "ともだち",
           "ruby_text": "友達[ともだち]",
           "ruby_spans": [
@@ -149,34 +175,38 @@
               "length": 2
             }
           ],
-          "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "ruby_confidence": "reviewed",
+          "furigana": "ともだち",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "を",
-          "surface_en": "object marker",
-          "furigana": "を",
-          "pos": "particle",
           "lemma": "を",
-          "explanation": "Object-marking particle indicating the direct object of the verb.",
-          "difficulty": 1,
+          "pos": "助詞/格助詞/*/*/*/*",
+          "upos": "PART",
+          "xpos": "助詞",
+          "feats": {},
+          "start": 8,
+          "end": 9,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "を",
           "ruby_text": "を",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "を"
         },
         {
-          "surface": "迎えます",
-          "surface_en": "will pick up",
-          "furigana": "むかえます",
-          "pos": "verb",
+          "surface": "迎え",
           "lemma": "迎える",
-          "explanation": "Polite non-past verb meaning 'to go pick up/meet someone'.",
-          "difficulty": 32,
-          "is_main_word": true,
-          "reading_kana": "むかえます",
-          "ruby_text": "迎[むか]えます",
+          "pos": "動詞/一般/*/*/下一段-ア行/連用形-一般",
+          "upos": "VERB",
+          "xpos": "動詞",
+          "feats": {},
+          "start": 9,
+          "end": 11,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "むかえ",
+          "ruby_text": "迎[むか]え",
           "ruby_spans": [
             {
               "base": "迎",
@@ -185,8 +215,42 @@
               "length": 1
             }
           ],
+          "ruby_confidence": "reviewed",
+          "furigana": "むかえ",
+          "ruby_source": "mediawiki_sentence_ruby",
+          "is_main_word": true
+        },
+        {
+          "surface": "ます",
+          "lemma": "ます",
+          "pos": "助動詞/*/*/*/助動詞-マス/終止形-一般",
+          "upos": "AUX",
+          "xpos": "助動詞",
+          "feats": {},
+          "start": 11,
+          "end": 13,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "ます",
+          "ruby_text": "ます",
+          "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "ます"
+        },
+        {
+          "surface": "。",
+          "lemma": "。",
+          "pos": "補助記号/句点/*/*/*/*",
+          "upos": "PUNCT",
+          "xpos": "補助記号",
+          "feats": {},
+          "start": 13,
+          "end": 14,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "。",
+          "ruby_text": "。",
+          "ruby_spans": [],
+          "ruby_confidence": "high",
+          "furigana": "。"
         }
       ],
       "difficulty": 12.17,
@@ -365,7 +429,7 @@
         "fr": "Quand je rentre à la maison, mon chien m’accueille à la porte.",
         "de": "Wenn ich nach Hause komme, begrüßt mich mein Hund am Tor.",
         "it": "Quando torno a casa, il mio cane mi accoglie al cancello.",
-        "ko": "집에 오면 개가 문 앞에서 저를 반갑게 해요.",
+        "ko": "집에 돌아오면 개가 대문에서 저를 맞아 줘요.",
         "zh-Hans": "我回家时，狗会在门口迎接我。",
         "yue": "當我返到屋企，我隻狗喺門口迎接我。",
         "ru": "Когда я прихожу домой, моя собака встречает меня у ворот.",
@@ -584,7 +648,7 @@
         "ru": "Поскольку мой друг приезжает, я заберу его на станции.",
         "pt": "Como meu amigo está vindo, vou buscá-lo na estação.",
         "he": "מכיוון שהחבר שלי מגיע, אני אאסוף אותו בתחנה.",
-        "tr": "Arkadaşım geldiği için onu istasyondan alacağım.",
+        "tr": "Arkadaşım geleceği için onu istasyondan alacağım.",
         "vi": "Vì bạn tôi đang đến, tôi sẽ đón họ ở nhà ga.",
         "ar": "بما أن صديقي قادم، سأستقبله في المحطة.",
         "nl": "Omdat mijn vriend komt, haal ik hem op bij het station.",
@@ -748,19 +812,485 @@
     "content_reviewers": [
       "mediawiki-visible-revision"
     ],
-    "last_reviewed_utc": "2026-06-21T18:45:36Z",
-    "approval_source": "mediawiki_visible_revision",
+    "last_reviewed_utc": "2026-10-11T09:58:23Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
     "wiki": {
       "title": "Item:Ja n5/d3e5930d45dd82ea",
-      "revision_id": 59000,
-      "parent_revision_id": 37444,
-      "revision_timestamp_utc": "2026-06-21T18:45:36Z",
-      "revision_user": "VocomiBot",
-      "revision_comment": "Sync ja_n5 item 迎える",
-      "pulled_utc": "2026-06-21T20:53:46Z",
-      "applied_utc": "2026-06-21T20:53:59Z",
+      "revision_id": 79141,
+      "parent_revision_id": 70175,
+      "revision_timestamp_utc": "2026-10-11T09:58:23Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Suggest reviewed Japanese and translation corrections",
+      "pulled_utc": "2026-10-17T07:37:40Z",
+      "applied_utc": "2026-10-17T07:37:57Z",
       "applied_by": "vocomipedia-apply-pulled"
-    }
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-1b1329814fb326f2",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "ja_n5:d3e5930d45dd82ea",
+        "pack_code": "ja_n5",
+        "entry_id": "迎える",
+        "language": "ja",
+        "sentence_index": 1,
+        "old_sentence": "明日、駅まで友達を迎えに行きます。",
+        "old_translations": {
+          "en": "I will meet my friend at the station tomorrow.",
+          "es": "Mañana me reuniré con mi amigo en la estación.",
+          "fr": "Je retrouverai mon ami à la gare demain.",
+          "de": "Ich treffe meinen Freund morgen am Bahnhof.",
+          "it": "Domani incontrerò il mio amico alla stazione.",
+          "ko": "내일 역에서 친구를 만날 거예요.",
+          "zh-Hans": "我明天会在车站和朋友会合。",
+          "yue": "我聽日會喺車站見我嘅朋友。",
+          "ru": "Завтра я встречу друга на вокзале.",
+          "pt": "Vou encontrar meu amigo na estação amanhã.",
+          "he": "אני אפגוש את החברה שלי בתחנה מחר.",
+          "tr": "Yarın istasyonda arkadaşımla buluşacağım.",
+          "vi": "Tôi sẽ gặp bạn tôi ở nhà ga vào ngày mai.",
+          "ar": "سألتقي بصديقي في المحطة غدًا.",
+          "nl": "Ik ontmoet mijn vriend morgen op het station.",
+          "uk": "Завтра зустрінуся з другом на станції.",
+          "hu": "Holnap találkozom a barátommal az állomáson.",
+          "hi": "मैं कल स्टेशन पर अपने दोस्त से मिलूंगा।",
+          "pl": "Spotkam się jutro z przyjacielem na stacji.",
+          "el": "Θα συναντήσω τον φίλο μου στον σταθμό αύριο.",
+          "nb": "Jeg møter vennen min på stasjonen i morgen.",
+          "id": "Saya akan bertemu teman saya di stasiun besok.",
+          "sv": "Jag möter min vän på stationen imorgon.",
+          "ro": "Mâine mă întâlnesc cu prietenul meu la gară.",
+          "cs": "Zítra se setkám s přítelem na nádraží.",
+          "da": "Jeg møder min ven på stationen i morgen.",
+          "fi": "Tapaan ystäväni huomenna asemalla."
+        },
+        "proposed_sentence": "明日、駅まで友達を迎えます。",
+        "proposed_translations": {
+          "en": "I will meet my friend at the station tomorrow.",
+          "es": "Mañana me reuniré con mi amigo en la estación.",
+          "fr": "Je retrouverai mon ami à la gare demain.",
+          "de": "Ich treffe meinen Freund morgen am Bahnhof.",
+          "it": "Domani incontrerò il mio amico alla stazione.",
+          "ko": "내일 역에서 친구를 만날 거예요.",
+          "zh-Hans": "我明天会在车站和朋友会合。",
+          "yue": "我聽日會喺車站見我嘅朋友。",
+          "ru": "Завтра я встречу друга на вокзале.",
+          "pt": "Vou encontrar meu amigo na estação amanhã.",
+          "he": "אני אפגוש את החברה שלי בתחנה מחר.",
+          "tr": "Yarın istasyonda arkadaşımla buluşacağım.",
+          "vi": "Tôi sẽ gặp bạn tôi ở nhà ga vào ngày mai.",
+          "ar": "سألتقي بصديقي في المحطة غدًا.",
+          "nl": "Ik ontmoet mijn vriend morgen op het station.",
+          "uk": "Завтра зустрінуся з другом на станції.",
+          "hu": "Holnap találkozom a barátommal az állomáson.",
+          "hi": "मैं कल स्टेशन पर अपने दोस्त से मिलूंगा।",
+          "pl": "Spotkam się jutro z przyjacielem na stacji.",
+          "el": "Θα συναντήσω τον φίλο μου στον σταθμό αύριο.",
+          "nb": "Jeg møter vennen min på stasjonen i morgen.",
+          "id": "Saya akan bertemu teman saya di stasiun besok.",
+          "sv": "Jag möter min vän på stationen imorgon.",
+          "ro": "Mâine mă întâlnesc cu prietenul meu la gară.",
+          "cs": "Zítra se setkám s přítelem na nádraží.",
+          "da": "Jeg møder min ven på stationen i morgen.",
+          "fi": "Tapaan ystäväni huomenna asemalla."
+        },
+        "old_ruby_source": "明日[あす]、駅[えき]まで友達[ともだち]を迎[むか]えに行[い]きます。",
+        "proposed_ruby_source": "明日[あす]、駅[えき]まで友達[ともだち]を迎[むか]えます。",
+        "old_japanese": "明日、駅まで友達を迎えに行きます。",
+        "old_english": "I will meet my friend at the station tomorrow.",
+        "proposed_japanese": "明日、駅まで友達を迎えます。",
+        "proposed_english": "I will meet my friend at the station tomorrow.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "ja",
+          "sentence": "明日、駅まで友達を迎えます。",
+          "tokens": [
+            {
+              "surface": "明日",
+              "lemma": "明日",
+              "pos": "名詞/普通名詞/副詞可能/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 0,
+              "end": 2,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "あす",
+              "ruby_text": "明日[あす]",
+              "ruby_spans": [
+                {
+                  "base": "明日",
+                  "reading": "あす",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "あす",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "、",
+              "lemma": "、",
+              "pos": "補助記号/読点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 2,
+              "end": 3,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "、",
+              "ruby_text": "、",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "、"
+            },
+            {
+              "surface": "駅",
+              "lemma": "駅",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 3,
+              "end": 4,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "えき",
+              "ruby_text": "駅[えき]",
+              "ruby_spans": [
+                {
+                  "base": "駅",
+                  "reading": "えき",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "えき",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "まで",
+              "lemma": "まで",
+              "pos": "助詞/副助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 4,
+              "end": 6,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "まで",
+              "ruby_text": "まで",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "まで"
+            },
+            {
+              "surface": "友達",
+              "lemma": "友達",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 6,
+              "end": 8,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "ともだち",
+              "ruby_text": "友達[ともだち]",
+              "ruby_spans": [
+                {
+                  "base": "友達",
+                  "reading": "ともだち",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "ともだち",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "を",
+              "lemma": "を",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 8,
+              "end": 9,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "を",
+              "ruby_text": "を",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "を"
+            },
+            {
+              "surface": "迎え",
+              "lemma": "迎える",
+              "pos": "動詞/一般/*/*/下一段-ア行/連用形-一般",
+              "upos": "VERB",
+              "xpos": "動詞",
+              "feats": {},
+              "start": 9,
+              "end": 11,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "むかえ",
+              "ruby_text": "迎[むか]え",
+              "ruby_spans": [
+                {
+                  "base": "迎",
+                  "reading": "むか",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "むかえ",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "ます",
+              "lemma": "ます",
+              "pos": "助動詞/*/*/*/助動詞-マス/終止形-一般",
+              "upos": "AUX",
+              "xpos": "助動詞",
+              "feats": {},
+              "start": 11,
+              "end": 13,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "ます",
+              "ruby_text": "ます",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "ます"
+            },
+            {
+              "surface": "。",
+              "lemma": "。",
+              "pos": "補助記号/句点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 13,
+              "end": 14,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "。",
+              "ruby_text": "。",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "。"
+            }
+          ],
+          "reading": "あす、えきまでともだちをむかえます。",
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "warnings": [
+            "mediawiki ruby hints applied"
+          ]
+        },
+        "generated_tokens": [
+          {
+            "surface": "明日",
+            "lemma": "明日",
+            "pos": "名詞/普通名詞/副詞可能/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "あす",
+            "ruby_text": "明日[あす]",
+            "ruby_spans": [
+              {
+                "base": "明日",
+                "reading": "あす",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "あす",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "、",
+            "lemma": "、",
+            "pos": "補助記号/読点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 2,
+            "end": 3,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "、",
+            "ruby_text": "、",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "、"
+          },
+          {
+            "surface": "駅",
+            "lemma": "駅",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 3,
+            "end": 4,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "えき",
+            "ruby_text": "駅[えき]",
+            "ruby_spans": [
+              {
+                "base": "駅",
+                "reading": "えき",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "えき",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "まで",
+            "lemma": "まで",
+            "pos": "助詞/副助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 4,
+            "end": 6,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "まで",
+            "ruby_text": "まで",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "まで"
+          },
+          {
+            "surface": "友達",
+            "lemma": "友達",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 6,
+            "end": 8,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ともだち",
+            "ruby_text": "友達[ともだち]",
+            "ruby_spans": [
+              {
+                "base": "友達",
+                "reading": "ともだち",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "ともだち",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "を",
+            "lemma": "を",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 8,
+            "end": 9,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "を",
+            "ruby_text": "を",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "を"
+          },
+          {
+            "surface": "迎え",
+            "lemma": "迎える",
+            "pos": "動詞/一般/*/*/下一段-ア行/連用形-一般",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 9,
+            "end": 11,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "むかえ",
+            "ruby_text": "迎[むか]え",
+            "ruby_spans": [
+              {
+                "base": "迎",
+                "reading": "むか",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "むかえ",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "ます",
+            "lemma": "ます",
+            "pos": "助動詞/*/*/*/助動詞-マス/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 11,
+            "end": 13,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ます",
+            "ruby_text": "ます",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "ます"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 13,
+            "end": 14,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
+          }
+        ],
+        "generated_reading": "あす、えきまでともだちをむかえます。",
+        "analyzer": "sudachipy_sudachidict_core_c",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:37:40Z",
+        "updated_utc": "2026-10-17T07:38:18Z",
+        "applied_utc": "2026-10-17T07:38:18Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:38:18Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -796,12 +1326,14 @@
         "tokens": [
           {
             "surface": "明日",
-            "surface_en": "tomorrow",
-            "furigana": "あす",
-            "pos": "noun",
             "lemma": "明日",
-            "explanation": "Temporal noun indicating when the action takes place.",
-            "difficulty": 8,
+            "pos": "名詞/普通名詞/副詞可能/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "あす",
             "ruby_text": "明日[あす]",
             "ruby_spans": [
@@ -812,17 +1344,36 @@
                 "length": 2
               }
             ],
+            "ruby_confidence": "reviewed",
+            "furigana": "あす",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "、",
+            "lemma": "、",
+            "pos": "補助記号/読点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 2,
+            "end": 3,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "、",
+            "ruby_text": "、",
+            "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "、"
           },
           {
             "surface": "駅",
-            "surface_en": "station",
-            "furigana": "えき",
-            "pos": "noun",
             "lemma": "駅",
-            "explanation": "Location that marks the endpoint of movement with まで.",
-            "difficulty": 13,
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 3,
+            "end": 4,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "えき",
             "ruby_text": "駅[えき]",
             "ruby_spans": [
@@ -833,31 +1384,36 @@
                 "length": 1
               }
             ],
-            "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "ruby_confidence": "reviewed",
+            "furigana": "えき",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "まで",
-            "surface_en": "up to",
-            "furigana": "まで",
-            "pos": "particle",
             "lemma": "まで",
-            "explanation": "Particle indicating the extent or limit ('up to the station').",
-            "difficulty": 1,
+            "pos": "助詞/副助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 4,
+            "end": 6,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "まで",
             "ruby_text": "まで",
             "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "まで"
           },
           {
             "surface": "友達",
-            "surface_en": "friend",
-            "furigana": "ともだち",
-            "pos": "noun",
             "lemma": "友達",
-            "explanation": "Direct object marking who is being picked up.",
-            "difficulty": 18,
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 6,
+            "end": 8,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "ともだち",
             "ruby_text": "友達[ともだち]",
             "ruby_spans": [
@@ -868,34 +1424,38 @@
                 "length": 2
               }
             ],
-            "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "ruby_confidence": "reviewed",
+            "furigana": "ともだち",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "を",
-            "surface_en": "object marker",
-            "furigana": "を",
-            "pos": "particle",
             "lemma": "を",
-            "explanation": "Object-marking particle indicating the direct object of the verb.",
-            "difficulty": 1,
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 8,
+            "end": 9,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "を",
             "ruby_text": "を",
             "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "を"
           },
           {
-            "surface": "迎えます",
-            "surface_en": "will pick up",
-            "furigana": "むかえます",
-            "pos": "verb",
+            "surface": "迎え",
             "lemma": "迎える",
-            "explanation": "Polite non-past verb meaning 'to go pick up/meet someone'.",
-            "difficulty": 32,
-            "is_main_word": true,
-            "reading_kana": "むかえます",
-            "ruby_text": "迎[むか]えます",
+            "pos": "動詞/一般/*/*/下一段-ア行/連用形-一般",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 9,
+            "end": 11,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "むかえ",
+            "ruby_text": "迎[むか]え",
             "ruby_spans": [
               {
                 "base": "迎",
@@ -904,8 +1464,42 @@
                 "length": 1
               }
             ],
+            "ruby_confidence": "reviewed",
+            "furigana": "むかえ",
+            "ruby_source": "mediawiki_sentence_ruby",
+            "is_main_word": true
+          },
+          {
+            "surface": "ます",
+            "lemma": "ます",
+            "pos": "助動詞/*/*/*/助動詞-マス/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 11,
+            "end": 13,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ます",
+            "ruby_text": "ます",
+            "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "ます"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 13,
+            "end": 14,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
           }
         ],
         "difficulty_aggregated": 12.17
@@ -1361,7 +1955,7 @@
     ],
     "word_POS": "Verb",
     "entry_id": "迎える",
-    "word_en": "to pick up",
+    "word_en": "to go and meet; to pick up; to welcome",
     "word_es": "recibir",
     "word_fr": "accueillir",
     "word_de": "abholen",
@@ -1374,13 +1968,13 @@
     "word_he": "לקבל",
     "word_tr": "karşılamak",
     "word_vi": "đón",
-    "word_ar": "للذهاب للقاء؛ أهلًا وسهلًا",
+    "word_ar": "استقبال شخص أو الذهاب لملاقاته",
     "word_nl": "afhalen",
     "word_uk": "зустрічати",
     "word_hu": "fogadni",
     "word_hi": "लाने जाना",
     "word_pl": "odebrać",
-    "word_el": "να πάω να συναντηθούμε? Καλώς ήρθες",
+    "word_el": "υποδέχομαι, πηγαίνω να συναντήσω",
     "word_nb": "hente",
     "word_id": "menjemput",
     "word_sv": "möta",
@@ -1473,9 +2067,9 @@
       "Dato che il mio amico viene, andrò a prenderlo alla stazione."
     ],
     "ko": [
-      "내일 역에서 친구를 만날 거야.",
+      "내일 역에서 친구를 만날 거예요.",
       "어머니가 공항에서 저를 맞이하셨습니다.",
-      "집에 오면 개가 문 앞에서 저를 반갑게 해요.",
+      "집에 돌아오면 개가 대문에서 저를 맞아 줘요.",
       "내 친구가 오니까 역에서 데리러 갈게."
     ],
     "nb": [
@@ -1509,7 +2103,7 @@
       "Deoarece prietenul meu vine, o să-l iau de la gară."
     ],
     "ru": [
-      "Завтра встретимся с другом на вокзале.",
+      "Завтра я встречу друга на вокзале.",
       "Мама встретила меня в аэропорту.",
       "Когда я прихожу домой, моя собака встречает меня у ворот.",
       "Поскольку мой друг приезжает, я заберу его на станции."
@@ -1524,7 +2118,7 @@
       "Yarın istasyonda arkadaşımla buluşacağım.",
       "Annem beni havaalanında karşıladı.",
       "Eve geldiğimde köpeğim kapıda beni karşılıyor.",
-      "Arkadaşım geldiği için onu istasyondan alacağım."
+      "Arkadaşım geleceği için onu istasyondan alacağım."
     ],
     "uk": [
       "Завтра зустрінуся з другом на станції.",

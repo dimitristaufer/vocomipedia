@@ -119,10 +119,10 @@
       "difficulty": 6
     },
     {
-      "target": "Ich schaue die Wiederholung vom Spiel.",
+      "target": "Ich schaue mir die Wiederholung des Spiels an.",
       "reading": "/ɪç ˈʃaʊ̯ə diː viːdɐˈhoːlʊŋ fɔm ʃpiːl/",
       "translations": {
-        "de": "Ich schaue die Wiederholung vom Spiel.",
+        "de": "Ich schaue mir die Wiederholung des Spiels an.",
         "ipa": "/ɪç ˈʃaʊ̯ə diː viːdɐˈhoːlʊŋ fɔm ʃpiːl/",
         "en": "I'm watching the replay of the game.",
         "es": "Estoy viendo la repetición del partido.",
@@ -155,58 +155,103 @@
       "tokens": [
         {
           "surface": "Ich",
-          "surface_en": "I",
-          "furigana": "[ɪç]",
-          "pos": "PRON",
           "lemma": "ich",
-          "explanation": "Personal pronoun, 1st person singular nominative; subject of the clause.",
-          "difficulty": 2
+          "pos": "PRON",
+          "upos": "PRON",
+          "xpos": "PPER",
+          "feats": {},
+          "start": 0,
+          "end": 3,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "schaue",
-          "surface_en": "watch",
-          "furigana": "[ˈʃaʊ̯ə]",
-          "pos": "VERB",
           "lemma": "schauen",
-          "explanation": "Finite main verb (present indicative, 1st singular); takes an accusative direct object.",
-          "difficulty": 7
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VVFIN",
+          "feats": {},
+          "start": 4,
+          "end": 10,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "mir",
+          "lemma": "sich",
+          "pos": "PRON",
+          "upos": "PRON",
+          "xpos": "PPER",
+          "feats": {},
+          "start": 11,
+          "end": 14,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "die",
-          "surface_en": "the",
-          "furigana": "[diː]",
+          "lemma": "der",
           "pos": "DET",
-          "lemma": "die",
-          "explanation": "Definite article, feminine singular accusative; determiner of 'Wiederholung'.",
-          "difficulty": 2
+          "upos": "DET",
+          "xpos": "ART",
+          "feats": {},
+          "start": 15,
+          "end": 18,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "Wiederholung",
-          "surface_en": "repetition",
-          "furigana": "[viːdɐˈhoːlʊŋ]",
-          "pos": "NOUN",
           "lemma": "Wiederholung",
-          "explanation": "Common noun, feminine, accusative singular; direct object of 'schaue'.",
-          "difficulty": 10,
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 19,
+          "end": 31,
+          "analyzer": "spacy_de_core_news_lg",
           "is_main_word": true
         },
         {
-          "surface": "vom",
-          "surface_en": "of the",
-          "furigana": "[fɔm]",
-          "pos": "ADP",
-          "lemma": "von",
-          "explanation": "Contraction of 'von dem'; preposition governing dative; introduces a PP modifying 'Wiederholung'.",
-          "difficulty": 2
+          "surface": "des",
+          "lemma": "der",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "ART",
+          "feats": {},
+          "start": 32,
+          "end": 35,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "Spiel.",
-          "surface_en": "game",
-          "furigana": "[ʃpiːl]",
-          "pos": "NOUN",
+          "surface": "Spiels",
           "lemma": "Spiel",
-          "explanation": "Common noun, neuter, dative singular; object of the preposition 'von' in 'vom Spiel'.",
-          "difficulty": 7
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 36,
+          "end": 42,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "an",
+          "lemma": "an",
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "PTKVZ",
+          "feats": {},
+          "start": 43,
+          "end": 45,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 45,
+          "end": 46,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 5
@@ -332,7 +377,7 @@
         "nb": "Ny prøve er i morgen.",
         "id": "Ujian ulang besok.",
         "sv": "Omprovet är i morgon.",
-        "ro": "Examenul de reexaminare este mâine.",
+        "ro": "Examenul de restanță este mâine.",
         "cs": "Opravná zkouška je zítra.",
         "da": "Omprøven er i morgen.",
         "fi": "Uusintakoe on huomenna.",
@@ -391,8 +436,336 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-15T05:52:29Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:De b1/c914c943410a0b9d",
+      "revision_id": 84770,
+      "parent_revision_id": 18492,
+      "revision_timestamp_utc": "2026-10-15T05:52:29Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Standardized the German phrasing for watching a replay and made the Romanian retake-exam translation idiomatic.",
+      "pulled_utc": "2026-10-17T07:06:43Z",
+      "applied_utc": "2026-10-17T07:06:51Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-f775dc47eca944dc",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_b1:c914c943410a0b9d",
+        "pack_code": "de_b1",
+        "entry_id": "Wiederholung",
+        "language": "de",
+        "sentence_index": 2,
+        "old_sentence": "Ich schaue die Wiederholung vom Spiel.",
+        "old_translations": {
+          "de": "Ich schaue die Wiederholung vom Spiel.",
+          "ipa": "/ɪç ˈʃaʊ̯ə diː viːdɐˈhoːlʊŋ fɔm ʃpiːl/",
+          "en": "I'm watching the replay of the game.",
+          "es": "Estoy viendo la repetición del partido.",
+          "fr": "Je regarde la rediffusion du match.",
+          "it": "Sto guardando la replica della partita.",
+          "ko": "경기 재방송을 보고 있어요.",
+          "zh-Hans": "我在看比赛的回放。",
+          "yue": "我喺度睇比賽重播。",
+          "ru": "Я смотрю повтор матча.",
+          "pt": "Estou assistindo à reprise da partida.",
+          "he": "אני צופה בשידור החוזר של המשחק.",
+          "tr": "Maçın tekrarını izliyorum.",
+          "vi": "Tôi đang xem lại trận đấu.",
+          "ar": "أنا أشاهد إعادة المباراة.",
+          "nl": "Ik kijk de herhaling van de wedstrijd.",
+          "uk": "Я дивлюся повтор матчу.",
+          "hu": "A meccs ismétlését nézem.",
+          "hi": "मैं मैच का पुनःप्रसारण देख रहा हूँ.",
+          "pl": "Oglądam powtórkę meczu.",
+          "el": "Βλέπω την επανάληψη του αγώνα.",
+          "nb": "Jeg ser reprise av kampen.",
+          "id": "Saya sedang menonton tayangan ulang pertandingan.",
+          "sv": "Jag tittar på reprisen av matchen.",
+          "ro": "Mă uit la reluarea meciului.",
+          "cs": "Dívám se na záznam zápasu.",
+          "da": "Jeg ser genudsendelsen af kampen.",
+          "fi": "Katson ottelun uusintaa.",
+          "ja": "試合の再放送を見ている。"
+        },
+        "proposed_sentence": "Ich schaue mir die Wiederholung des Spiels an.",
+        "proposed_translations": {
+          "de": "Ich schaue mir die Wiederholung des Spiels an.",
+          "ipa": "/ɪç ˈʃaʊ̯ə diː viːdɐˈhoːlʊŋ fɔm ʃpiːl/",
+          "en": "I'm watching the replay of the game.",
+          "es": "Estoy viendo la repetición del partido.",
+          "fr": "Je regarde la rediffusion du match.",
+          "it": "Sto guardando la replica della partita.",
+          "ko": "경기 재방송을 보고 있어요.",
+          "zh-Hans": "我在看比赛的回放。",
+          "yue": "我喺度睇比賽重播。",
+          "ru": "Я смотрю повтор матча.",
+          "pt": "Estou assistindo à reprise da partida.",
+          "he": "אני צופה בשידור החוזר של המשחק.",
+          "tr": "Maçın tekrarını izliyorum.",
+          "vi": "Tôi đang xem lại trận đấu.",
+          "ar": "أنا أشاهد إعادة المباراة.",
+          "nl": "Ik kijk de herhaling van de wedstrijd.",
+          "uk": "Я дивлюся повтор матчу.",
+          "hu": "A meccs ismétlését nézem.",
+          "hi": "मैं मैच का पुनःप्रसारण देख रहा हूँ.",
+          "pl": "Oglądam powtórkę meczu.",
+          "el": "Βλέπω την επανάληψη του αγώνα.",
+          "nb": "Jeg ser reprise av kampen.",
+          "id": "Saya sedang menonton tayangan ulang pertandingan.",
+          "sv": "Jag tittar på reprisen av matchen.",
+          "ro": "Mă uit la reluarea meciului.",
+          "cs": "Dívám se na záznam zápasu.",
+          "da": "Jeg ser genudsendelsen af kampen.",
+          "fi": "Katson ottelun uusintaa.",
+          "ja": "試合の再放送を見ている。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Ich schaue mir die Wiederholung des Spiels an.",
+        "old_japanese": "Ich schaue die Wiederholung vom Spiel.",
+        "old_english": "I'm watching the replay of the game.",
+        "proposed_japanese": "Ich schaue mir die Wiederholung des Spiels an.",
+        "proposed_english": "I'm watching the replay of the game.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Ich schaue mir die Wiederholung des Spiels an.",
+          "tokens": [
+            {
+              "surface": "Ich",
+              "lemma": "ich",
+              "pos": "PRON",
+              "upos": "PRON",
+              "xpos": "PPER",
+              "feats": {},
+              "start": 0,
+              "end": 3,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "schaue",
+              "lemma": "schauen",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVFIN",
+              "feats": {},
+              "start": 4,
+              "end": 10,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "mir",
+              "lemma": "sich",
+              "pos": "PRON",
+              "upos": "PRON",
+              "xpos": "PPER",
+              "feats": {},
+              "start": 11,
+              "end": 14,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "die",
+              "lemma": "der",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "ART",
+              "feats": {},
+              "start": 15,
+              "end": 18,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Wiederholung",
+              "lemma": "Wiederholung",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 19,
+              "end": 31,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "des",
+              "lemma": "der",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "ART",
+              "feats": {},
+              "start": 32,
+              "end": 35,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Spiels",
+              "lemma": "Spiel",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 36,
+              "end": 42,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "an",
+              "lemma": "an",
+              "pos": "ADP",
+              "upos": "ADP",
+              "xpos": "PTKVZ",
+              "feats": {},
+              "start": 43,
+              "end": 45,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 45,
+              "end": 46,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Ich",
+            "lemma": "ich",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "schaue",
+            "lemma": "schauen",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 4,
+            "end": 10,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "mir",
+            "lemma": "sich",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 11,
+            "end": 14,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "die",
+            "lemma": "der",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 15,
+            "end": 18,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Wiederholung",
+            "lemma": "Wiederholung",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 19,
+            "end": 31,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "des",
+            "lemma": "der",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 32,
+            "end": 35,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Spiels",
+            "lemma": "Spiel",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 36,
+            "end": 42,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "an",
+            "lemma": "an",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "PTKVZ",
+            "feats": {},
+            "start": 43,
+            "end": 45,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 45,
+            "end": 46,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:06:43Z",
+        "updated_utc": "2026-10-17T07:07:06Z",
+        "applied_utc": "2026-10-17T07:07:06Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:07:06Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -404,34 +777,6 @@
     "word": "Wiederholung",
     "word_reading": "",
     "word_label": "Substantiv (die fem.)",
-    "word_en": "repetition; review",
-    "word_es": "repetición; repaso",
-    "word_fr": "répétition; révision",
-    "word_it": "ripetizione; ripasso",
-    "word_ko": "반복; 복습",
-    "word_zh-Hans": "重复; 复习",
-    "word_yue": "重複; 溫習",
-    "word_ru": "повторение; повтор",
-    "word_pt": "repetição; revisão",
-    "word_he": "חזרה; שינון",
-    "word_tr": "tekrar; gözden geçirme",
-    "word_vi": "lặp lại; ôn tập",
-    "word_ar": "تكرار; مراجعة",
-    "word_nl": "herhaling",
-    "word_uk": "повторення; повтор",
-    "word_hu": "ismétlés; átismétlés",
-    "word_hi": "दोहराव; दोहराई",
-    "word_pl": "powtórzenie; powtórka",
-    "word_el": "επανάληψη; ανασκόπηση",
-    "word_nb": "repetisjon; gjennomgang",
-    "word_id": "pengulangan; pengulangan pelajaran",
-    "word_sv": "upprepning; repetition",
-    "word_ro": "repetare; recapitulare",
-    "word_cs": "opakování; rekapitulace",
-    "word_da": "gentagelse; repetition",
-    "word_fi": "toisto; kertaus",
-    "word_ja": "繰り返し; 復習",
-    "word_de": "Wiederholung",
     "comic_difficulty": 5.52,
     "jp": [
       "Ich brauche eine Wiederholung.",
@@ -444,24 +789,6 @@
       "/ɪç ˈʃaʊ̯ə diː viːdɐˈhoːlʊŋ fɔm ʃpiːl/",
       "/diː viːdɐˈhoːlʊŋ hɪlft miːɐ̯ baɪ̯m ˈlɛʁnən/",
       "/ˈmɔʁɡn̩ ɪst diː viːdɐˈhoːlʊŋ/"
-    ],
-    "de": [
-      "Ich brauche eine Wiederholung.",
-      "Ich schaue die Wiederholung vom Spiel.",
-      "Die Wiederholung hilft mir beim Lernen.",
-      "Morgen ist die Wiederholung."
-    ],
-    "ipa": [
-      "/ɪç ˈbʁaʊxə ˈaɪ̯nə viːdɐˈhoːlʊŋ/",
-      "/ɪç ˈʃaʊ̯ə diː viːdɐˈhoːlʊŋ fɔm ʃpiːl/",
-      "/diː viːdɐˈhoːlʊŋ hɪlft miːɐ̯ baɪ̯m ˈlɛʁnən/",
-      "/ˈmɔʁɡn̩ ɪst diː viːdɐˈhoːlʊŋ/"
-    ],
-    "en": [
-      "I need a review.",
-      "I'm watching the replay of the game.",
-      "The review helps me study.",
-      "The retake is tomorrow."
     ],
     "pos_analysis": [
       {
@@ -508,62 +835,107 @@
         "difficulty_aggregated": 6
       },
       {
-        "sentence": "Ich schaue die Wiederholung vom Spiel.",
+        "sentence": "Ich schaue mir die Wiederholung des Spiels an.",
         "tokens": [
           {
             "surface": "Ich",
-            "surface_en": "I",
-            "furigana": "[ɪç]",
-            "pos": "PRON",
             "lemma": "ich",
-            "explanation": "Personal pronoun, 1st person singular nominative; subject of the clause.",
-            "difficulty": 2
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "schaue",
-            "surface_en": "watch",
-            "furigana": "[ˈʃaʊ̯ə]",
-            "pos": "VERB",
             "lemma": "schauen",
-            "explanation": "Finite main verb (present indicative, 1st singular); takes an accusative direct object.",
-            "difficulty": 7
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 4,
+            "end": 10,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "mir",
+            "lemma": "sich",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 11,
+            "end": 14,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "die",
-            "surface_en": "the",
-            "furigana": "[diː]",
+            "lemma": "der",
             "pos": "DET",
-            "lemma": "die",
-            "explanation": "Definite article, feminine singular accusative; determiner of 'Wiederholung'.",
-            "difficulty": 2
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 15,
+            "end": 18,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "Wiederholung",
-            "surface_en": "repetition",
-            "furigana": "[viːdɐˈhoːlʊŋ]",
-            "pos": "NOUN",
             "lemma": "Wiederholung",
-            "explanation": "Common noun, feminine, accusative singular; direct object of 'schaue'.",
-            "difficulty": 10,
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 19,
+            "end": 31,
+            "analyzer": "spacy_de_core_news_lg",
             "is_main_word": true
           },
           {
-            "surface": "vom",
-            "surface_en": "of the",
-            "furigana": "[fɔm]",
-            "pos": "ADP",
-            "lemma": "von",
-            "explanation": "Contraction of 'von dem'; preposition governing dative; introduces a PP modifying 'Wiederholung'.",
-            "difficulty": 2
+            "surface": "des",
+            "lemma": "der",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 32,
+            "end": 35,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "Spiel.",
-            "surface_en": "game",
-            "furigana": "[ʃpiːl]",
-            "pos": "NOUN",
+            "surface": "Spiels",
             "lemma": "Spiel",
-            "explanation": "Common noun, neuter, dative singular; object of the preposition 'von' in 'vom Spiel'.",
-            "difficulty": 7
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 36,
+            "end": 42,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "an",
+            "lemma": "an",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "PTKVZ",
+            "feats": {},
+            "start": 43,
+            "end": 45,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 45,
+            "end": 46,
+            "analyzer": "spacy_de_core_news_lg"
           }
         ],
         "difficulty_aggregated": 5
@@ -673,137 +1045,41 @@
         "difficulty_aggregated": 5.75
       }
     ],
-    "es": [
-      "Necesito un repaso.",
-      "Estoy viendo la repetición del partido.",
-      "El repaso me ayuda a estudiar.",
-      "El examen de recuperación es mañana."
-    ],
-    "fr": [
-      "J'ai besoin d'une révision.",
-      "Je regarde la rediffusion du match.",
-      "La révision m'aide à étudier.",
-      "Le rattrapage est demain."
-    ],
-    "it": [
-      "Ho bisogno di un ripasso.",
-      "Sto guardando la replica della partita.",
-      "Il ripasso mi aiuta a studiare.",
-      "L'esame di recupero è domani."
-    ],
-    "ko": [
-      "복습이 필요해요.",
-      "경기 재방송을 보고 있어요.",
-      "복습이 공부에 도움이 돼요.",
-      "재시험은 내일이에요."
-    ],
-    "zh-Hans": [
-      "我需要复习。",
-      "我在看比赛的回放。",
-      "复习有助于我学习。",
-      "补考在明天。"
-    ],
-    "yue": [
-      "我需要溫習。",
-      "我喺度睇比賽重播。",
-      "溫習對我學習有幫助。",
-      "補考喺聽日。"
-    ],
-    "ru": [
-      "Мне нужно повторение.",
-      "Я смотрю повтор матча.",
-      "Повторение помогает мне учиться.",
-      "Пересдача завтра."
-    ],
-    "pt": [
-      "Preciso de uma revisão.",
-      "Estou assistindo à reprise da partida.",
-      "A revisão me ajuda a estudar.",
-      "A prova de recuperação é amanhã."
-    ],
-    "he": [
-      "אני צריך חזרה.",
-      "אני צופה בשידור החוזר של המשחק.",
-      "החזרה עוזרת לי ללמוד.",
-      "המבחן החוזר מחר."
-    ],
-    "tr": [
-      "Tekrara ihtiyacım var.",
-      "Maçın tekrarını izliyorum.",
-      "Tekrar etmek bana çalışmada yardımcı oluyor.",
-      "Telafi sınavı yarın."
-    ],
-    "vi": [
-      "Tôi cần ôn tập.",
-      "Tôi đang xem lại trận đấu.",
-      "Ôn tập giúp tôi học.",
-      "Kỳ thi lại là ngày mai."
-    ],
+    "word_POS": "Noun",
+    "entry_id": "Wiederholung",
+    "word_en": "repetition; review",
+    "word_es": "repetición; repaso",
+    "word_fr": "répétition; révision",
+    "word_it": "ripetizione; ripasso",
+    "word_ko": "반복; 복습",
+    "word_zh-Hans": "重复; 复习",
+    "word_yue": "重複; 溫習",
+    "word_ru": "повторение; повтор",
+    "word_pt": "repetição; revisão",
+    "word_he": "חזרה; שינון",
+    "word_tr": "tekrar; gözden geçirme",
+    "word_vi": "lặp lại; ôn tập",
+    "word_ar": "تكرار; مراجعة",
+    "word_nl": "herhaling",
+    "word_uk": "повторення; повтор",
+    "word_hu": "ismétlés; átismétlés",
+    "word_hi": "दोहराव; दोहराई",
+    "word_pl": "powtórzenie; powtórka",
+    "word_el": "επανάληψη; ανασκόπηση",
+    "word_nb": "repetisjon; gjennomgang",
+    "word_id": "pengulangan; pengulangan pelajaran",
+    "word_sv": "upprepning; repetition",
+    "word_ro": "repetare; recapitulare",
+    "word_cs": "opakování; rekapitulace",
+    "word_da": "gentagelse; repetition",
+    "word_fi": "toisto; kertaus",
+    "word_ja": "繰り返し; 復習",
+    "word_de": "Wiederholung",
     "ar": [
       "أنا بحاجة إلى مراجعة.",
       "أنا أشاهد إعادة المباراة.",
       "المراجعة تساعدني على الدراسة.",
       "إعادة الاختبار غدًا."
-    ],
-    "nl": [
-      "Ik heb een herhaling nodig.",
-      "Ik kijk de herhaling van de wedstrijd.",
-      "De herhaling helpt me studeren.",
-      "De herkansing is morgen."
-    ],
-    "uk": [
-      "Мені потрібне повторення.",
-      "Я дивлюся повтор матчу.",
-      "Повторення допомагає мені вчитися.",
-      "Перескладання завтра."
-    ],
-    "hu": [
-      "Szükségem van egy ismétlésre.",
-      "A meccs ismétlését nézem.",
-      "Az ismétlés segít a tanulásban.",
-      "A pótvizsga holnap van."
-    ],
-    "hi": [
-      "मुझे दोहराने की ज़रूरत है।",
-      "मैं मैच का पुनःप्रसारण देख रहा हूँ.",
-      "दोहराना मुझे पढ़ने में मदद करता है।",
-      "पुनर्परीक्षा कल है।"
-    ],
-    "pl": [
-      "Potrzebuję powtórki.",
-      "Oglądam powtórkę meczu.",
-      "Powtórka pomaga mi się uczyć.",
-      "Poprawka jest jutro."
-    ],
-    "el": [
-      "Χρειάζομαι επανάληψη.",
-      "Βλέπω την επανάληψη του αγώνα.",
-      "Η επανάληψη με βοηθά να διαβάζω.",
-      "Η επανεξέταση είναι αύριο."
-    ],
-    "nb": [
-      "Jeg trenger repetisjon.",
-      "Jeg ser reprise av kampen.",
-      "Repetisjon hjelper meg å studere.",
-      "Ny prøve er i morgen."
-    ],
-    "id": [
-      "Saya perlu mengulang.",
-      "Saya sedang menonton tayangan ulang pertandingan.",
-      "Mengulang pelajaran membantu saya belajar.",
-      "Ujian ulang besok."
-    ],
-    "sv": [
-      "Jag behöver repetition.",
-      "Jag tittar på reprisen av matchen.",
-      "Repetition hjälper mig att plugga.",
-      "Omprovet är i morgon."
-    ],
-    "ro": [
-      "Am nevoie de o recapitulare.",
-      "Mă uit la reluarea meciului.",
-      "Recapitularea mă ajută să învăț.",
-      "Examenul de reexaminare este mâine."
     ],
     "cs": [
       "Potřebuji opakování.",
@@ -817,11 +1093,77 @@
       "Repetition hjælper mig med at læse.",
       "Omprøven er i morgen."
     ],
+    "de": [
+      "Ich brauche eine Wiederholung.",
+      "Ich schaue die Wiederholung vom Spiel.",
+      "Die Wiederholung hilft mir beim Lernen.",
+      "Morgen ist die Wiederholung."
+    ],
+    "el": [
+      "Χρειάζομαι επανάληψη.",
+      "Βλέπω την επανάληψη του αγώνα.",
+      "Η επανάληψη με βοηθά να διαβάζω.",
+      "Η επανεξέταση είναι αύριο."
+    ],
+    "en": [
+      "I need a review.",
+      "I'm watching the replay of the game.",
+      "The review helps me study.",
+      "The retake is tomorrow."
+    ],
+    "es": [
+      "Necesito un repaso.",
+      "Estoy viendo la repetición del partido.",
+      "El repaso me ayuda a estudiar.",
+      "El examen de recuperación es mañana."
+    ],
     "fi": [
       "Tarvitsen kertauksen.",
       "Katson ottelun uusintaa.",
       "Kertaus auttaa minua opiskelemaan.",
       "Uusintakoe on huomenna."
+    ],
+    "fr": [
+      "J'ai besoin d'une révision.",
+      "Je regarde la rediffusion du match.",
+      "La révision m'aide à étudier.",
+      "Le rattrapage est demain."
+    ],
+    "he": [
+      "אני צריך חזרה.",
+      "אני צופה בשידור החוזר של המשחק.",
+      "החזרה עוזרת לי ללמוד.",
+      "המבחן החוזר מחר."
+    ],
+    "hi": [
+      "मुझे दोहराने की ज़रूरत है।",
+      "मैं मैच का पुनःप्रसारण देख रहा हूँ.",
+      "दोहराना मुझे पढ़ने में मदद करता है।",
+      "पुनर्परीक्षा कल है।"
+    ],
+    "hu": [
+      "Szükségem van egy ismétlésre.",
+      "A meccs ismétlését nézem.",
+      "Az ismétlés segít a tanulásban.",
+      "A pótvizsga holnap van."
+    ],
+    "id": [
+      "Saya perlu mengulang.",
+      "Saya sedang menonton tayangan ulang pertandingan.",
+      "Mengulang pelajaran membantu saya belajar.",
+      "Ujian ulang besok."
+    ],
+    "ipa": [
+      "/ɪç ˈbʁaʊxə ˈaɪ̯nə viːdɐˈhoːlʊŋ/",
+      "/ɪç ˈʃaʊ̯ə diː viːdɐˈhoːlʊŋ fɔm ʃpiːl/",
+      "/diː viːdɐˈhoːlʊŋ hɪlft miːɐ̯ baɪ̯m ˈlɛʁnən/",
+      "/ˈmɔʁɡn̩ ɪst diː viːdɐˈhoːlʊŋ/"
+    ],
+    "it": [
+      "Ho bisogno di un ripasso.",
+      "Sto guardando la replica della partita.",
+      "Il ripasso mi aiuta a studiare.",
+      "L'esame di recupero è domani."
     ],
     "ja": [
       "復習が必要です。",
@@ -829,6 +1171,83 @@
       "復習は勉強に役立ちます。",
       "追試は明日です。"
     ],
-    "word_POS": "Noun"
+    "ko": [
+      "복습이 필요해요.",
+      "경기 재방송을 보고 있어요.",
+      "복습이 공부에 도움이 돼요.",
+      "재시험은 내일이에요."
+    ],
+    "nb": [
+      "Jeg trenger repetisjon.",
+      "Jeg ser reprise av kampen.",
+      "Repetisjon hjelper meg å studere.",
+      "Ny prøve er i morgen."
+    ],
+    "nl": [
+      "Ik heb een herhaling nodig.",
+      "Ik kijk de herhaling van de wedstrijd.",
+      "De herhaling helpt me studeren.",
+      "De herkansing is morgen."
+    ],
+    "pl": [
+      "Potrzebuję powtórki.",
+      "Oglądam powtórkę meczu.",
+      "Powtórka pomaga mi się uczyć.",
+      "Poprawka jest jutro."
+    ],
+    "pt": [
+      "Preciso de uma revisão.",
+      "Estou assistindo à reprise da partida.",
+      "A revisão me ajuda a estudar.",
+      "A prova de recuperação é amanhã."
+    ],
+    "ro": [
+      "Am nevoie de o recapitulare.",
+      "Mă uit la reluarea meciului.",
+      "Recapitularea mă ajută să învăț.",
+      "Examenul de restanță este mâine."
+    ],
+    "ru": [
+      "Мне нужно повторение.",
+      "Я смотрю повтор матча.",
+      "Повторение помогает мне учиться.",
+      "Пересдача завтра."
+    ],
+    "sv": [
+      "Jag behöver repetition.",
+      "Jag tittar på reprisen av matchen.",
+      "Repetition hjälper mig att plugga.",
+      "Omprovet är i morgon."
+    ],
+    "tr": [
+      "Tekrara ihtiyacım var.",
+      "Maçın tekrarını izliyorum.",
+      "Tekrar etmek bana çalışmada yardımcı oluyor.",
+      "Telafi sınavı yarın."
+    ],
+    "uk": [
+      "Мені потрібне повторення.",
+      "Я дивлюся повтор матчу.",
+      "Повторення допомагає мені вчитися.",
+      "Перескладання завтра."
+    ],
+    "vi": [
+      "Tôi cần ôn tập.",
+      "Tôi đang xem lại trận đấu.",
+      "Ôn tập giúp tôi học.",
+      "Kỳ thi lại là ngày mai."
+    ],
+    "yue": [
+      "我需要溫習。",
+      "我喺度睇比賽重播。",
+      "溫習對我學習有幫助。",
+      "補考喺聽日。"
+    ],
+    "zh-Hans": [
+      "我需要复习。",
+      "我在看比赛的回放。",
+      "复习有助于我学习。",
+      "补考在明天。"
+    ]
   }
 }

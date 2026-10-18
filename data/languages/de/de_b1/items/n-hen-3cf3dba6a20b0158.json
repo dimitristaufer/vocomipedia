@@ -305,12 +305,12 @@
       "difficulty": 5.17
     },
     {
-      "target": "Du kannst mir bitte die Hose nähen.",
+      "target": "Kannst du mir bitte die Hose nähen?",
       "reading": "/duː kanst miːɐ̯ ˈbɪtə diː ˈhoːzə ˈnɛːən/",
       "translations": {
-        "de": "Du kannst mir bitte die Hose nähen.",
+        "de": "Kannst du mir bitte die Hose nähen?",
         "ipa": "/duː kanst miːɐ̯ ˈbɪtə diː ˈhoːzə ˈnɛːən/",
-        "en": "You can sew my pants for me, please.",
+        "en": "Could you please sew my pants for me?",
         "es": "¿Puedes coserme los pantalones, por favor?",
         "fr": "Tu peux me recoudre mon pantalon, s’il te plaît?",
         "it": "Puoi cucirmi i pantaloni, per favore?",
@@ -340,68 +340,93 @@
       },
       "tokens": [
         {
-          "surface": "Du",
-          "surface_en": "you",
-          "furigana": "[duː]",
-          "pos": "PRON",
-          "lemma": "du",
-          "explanation": "Personal pronoun, 2nd person singular nominative; subject.",
-          "difficulty": 2
+          "surface": "Kannst",
+          "lemma": "Kannst",
+          "pos": "X",
+          "upos": "X",
+          "xpos": "FM",
+          "feats": {},
+          "start": 0,
+          "end": 6,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "kannst",
-          "surface_en": "can",
-          "furigana": "[kanst]",
-          "pos": "AUX",
-          "lemma": "können",
-          "explanation": "Modal auxiliary, finite; selects a bare infinitive complement.",
-          "difficulty": 7
+          "surface": "du",
+          "lemma": "du",
+          "pos": "PRON",
+          "upos": "PRON",
+          "xpos": "PPER",
+          "feats": {},
+          "start": 7,
+          "end": 9,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "mir",
-          "surface_en": "me",
-          "furigana": "[miːɐ̯]",
+          "lemma": "mir",
           "pos": "PRON",
-          "lemma": "ich",
-          "explanation": "Personal pronoun in dative; indirect object ('for me').",
-          "difficulty": 4
+          "upos": "PRON",
+          "xpos": "PPER",
+          "feats": {},
+          "start": 10,
+          "end": 13,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "bitte",
-          "surface_en": "please",
-          "furigana": "[ˈbɪtə]",
-          "pos": "INTJ",
           "lemma": "bitte",
-          "explanation": "Politeness marker; discourse particle.",
-          "difficulty": 7
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "ADV",
+          "feats": {},
+          "start": 14,
+          "end": 19,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "die",
-          "surface_en": "the",
-          "furigana": "[diː]",
-          "pos": "DET",
           "lemma": "der",
-          "explanation": "Definite article, feminine singular; determiner of 'Hose'.",
-          "difficulty": 2
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "ART",
+          "feats": {},
+          "start": 20,
+          "end": 23,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "Hose",
-          "surface_en": "pants",
-          "furigana": "[ˈhoːzə]",
-          "pos": "NOUN",
           "lemma": "Hose",
-          "explanation": "Common noun; direct object of 'nähen'.",
-          "difficulty": 7
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 24,
+          "end": 28,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "nähen.",
-          "surface_en": "sew",
-          "furigana": "[ˈnɛːən]",
-          "pos": "VERB",
+          "surface": "nähen",
           "lemma": "nähen",
-          "explanation": "Main lexical verb in bare infinitive; complement of the modal auxiliary.",
-          "difficulty": 7,
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VVINF",
+          "feats": {},
+          "start": 29,
+          "end": 34,
+          "analyzer": "spacy_de_core_news_lg",
           "is_main_word": true
+        },
+        {
+          "surface": "?",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 34,
+          "end": 35,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 5.14
@@ -418,8 +443,314 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-15T02:23:46Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:De b1/3cf3dba6a20b0158",
+      "revision_id": 85176,
+      "parent_revision_id": 17182,
+      "revision_timestamp_utc": "2026-10-15T02:23:46Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Rephrased the German pants sentence as the polite question reflected in the translations and made the English request natural.",
+      "pulled_utc": "2026-10-17T07:06:37Z",
+      "applied_utc": "2026-10-17T07:06:53Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-b4d430d8ca9951d1",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_b1:3cf3dba6a20b0158",
+        "pack_code": "de_b1",
+        "entry_id": "nähen",
+        "language": "de",
+        "sentence_index": 4,
+        "old_sentence": "Du kannst mir bitte die Hose nähen.",
+        "old_translations": {
+          "de": "Du kannst mir bitte die Hose nähen.",
+          "ipa": "/duː kanst miːɐ̯ ˈbɪtə diː ˈhoːzə ˈnɛːən/",
+          "en": "You can sew my pants for me, please.",
+          "es": "¿Puedes coserme los pantalones, por favor?",
+          "fr": "Tu peux me recoudre mon pantalon, s’il te plaît?",
+          "it": "Puoi cucirmi i pantaloni, per favore?",
+          "ko": "제 바지 좀 꿰매 줄 수 있어요?",
+          "zh-Hans": "你能帮我把裤子缝好吗？",
+          "yue": "你可唔可以幫我縫返條褲？",
+          "ru": "Можешь, пожалуйста, зашить мне штаны?",
+          "pt": "Você pode costurar minha calça para mim, por favor?",
+          "he": "אתה יכול לתפור לי את המכנסיים בבקשה?",
+          "tr": "Pantolonumu benim için dikebilir misin, lütfen?",
+          "vi": "Bạn có thể may cái quần cho tôi được không?",
+          "ar": "هل يمكنك خياطة سروالي من أجلي، من فضلك؟",
+          "nl": "Kun je mijn broek voor me naaien, alsjeblieft?",
+          "uk": "Можеш, будь ласка, зашити мені штани?",
+          "hu": "Meg tudnád varrni a nadrágomat, kérlek?",
+          "hi": "क्या आप मेरे लिए मेरी पैंट सिल देंगे, कृपया?",
+          "pl": "Czy możesz mi zszyć spodnie, proszę?",
+          "el": "Μπορείς να μου ράψεις το παντελόνι, σε παρακαλώ?",
+          "nb": "Kan du sy buksene mine for meg, vær så snill?",
+          "id": "Bisakah kamu menjahit celana saya, tolong?",
+          "sv": "Kan du sy mina byxor åt mig, snälla?",
+          "ro": "Poți să-mi coși pantalonii, te rog?",
+          "cs": "Můžeš mi prosím zašít kalhoty?",
+          "da": "Kan du sy mine bukser for mig, tak?",
+          "fi": "Voisitko ommella housuni, kiitos?",
+          "ja": "私のズボンを縫ってもらえますか。"
+        },
+        "proposed_sentence": "Kannst du mir bitte die Hose nähen?",
+        "proposed_translations": {
+          "de": "Kannst du mir bitte die Hose nähen?",
+          "ipa": "/duː kanst miːɐ̯ ˈbɪtə diː ˈhoːzə ˈnɛːən/",
+          "en": "Could you please sew my pants for me?",
+          "es": "¿Puedes coserme los pantalones, por favor?",
+          "fr": "Tu peux me recoudre mon pantalon, s’il te plaît?",
+          "it": "Puoi cucirmi i pantaloni, per favore?",
+          "ko": "제 바지 좀 꿰매 줄 수 있어요?",
+          "zh-Hans": "你能帮我把裤子缝好吗？",
+          "yue": "你可唔可以幫我縫返條褲？",
+          "ru": "Можешь, пожалуйста, зашить мне штаны?",
+          "pt": "Você pode costurar minha calça para mim, por favor?",
+          "he": "אתה יכול לתפור לי את המכנסיים בבקשה?",
+          "tr": "Pantolonumu benim için dikebilir misin, lütfen?",
+          "vi": "Bạn có thể may cái quần cho tôi được không?",
+          "ar": "هل يمكنك خياطة سروالي من أجلي، من فضلك؟",
+          "nl": "Kun je mijn broek voor me naaien, alsjeblieft?",
+          "uk": "Можеш, будь ласка, зашити мені штани?",
+          "hu": "Meg tudnád varrni a nadrágomat, kérlek?",
+          "hi": "क्या आप मेरे लिए मेरी पैंट सिल देंगे, कृपया?",
+          "pl": "Czy możesz mi zszyć spodnie, proszę?",
+          "el": "Μπορείς να μου ράψεις το παντελόνι, σε παρακαλώ?",
+          "nb": "Kan du sy buksene mine for meg, vær så snill?",
+          "id": "Bisakah kamu menjahit celana saya, tolong?",
+          "sv": "Kan du sy mina byxor åt mig, snälla?",
+          "ro": "Poți să-mi coși pantalonii, te rog?",
+          "cs": "Můžeš mi prosím zašít kalhoty?",
+          "da": "Kan du sy mine bukser for mig, tak?",
+          "fi": "Voisitko ommella housuni, kiitos?",
+          "ja": "私のズボンを縫ってもらえますか。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Kannst du mir bitte die Hose nähen?",
+        "old_japanese": "Du kannst mir bitte die Hose nähen.",
+        "old_english": "You can sew my pants for me, please.",
+        "proposed_japanese": "Kannst du mir bitte die Hose nähen?",
+        "proposed_english": "Could you please sew my pants for me?",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Kannst du mir bitte die Hose nähen?",
+          "tokens": [
+            {
+              "surface": "Kannst",
+              "lemma": "Kannst",
+              "pos": "X",
+              "upos": "X",
+              "xpos": "FM",
+              "feats": {},
+              "start": 0,
+              "end": 6,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "du",
+              "lemma": "du",
+              "pos": "PRON",
+              "upos": "PRON",
+              "xpos": "PPER",
+              "feats": {},
+              "start": 7,
+              "end": 9,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "mir",
+              "lemma": "mir",
+              "pos": "PRON",
+              "upos": "PRON",
+              "xpos": "PPER",
+              "feats": {},
+              "start": 10,
+              "end": 13,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "bitte",
+              "lemma": "bitte",
+              "pos": "ADV",
+              "upos": "ADV",
+              "xpos": "ADV",
+              "feats": {},
+              "start": 14,
+              "end": 19,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "die",
+              "lemma": "der",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "ART",
+              "feats": {},
+              "start": 20,
+              "end": 23,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Hose",
+              "lemma": "Hose",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 24,
+              "end": 28,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "nähen",
+              "lemma": "nähen",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVINF",
+              "feats": {},
+              "start": 29,
+              "end": 34,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "?",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 34,
+              "end": 35,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Kannst",
+            "lemma": "Kannst",
+            "pos": "X",
+            "upos": "X",
+            "xpos": "FM",
+            "feats": {},
+            "start": 0,
+            "end": 6,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "du",
+            "lemma": "du",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 7,
+            "end": 9,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "mir",
+            "lemma": "mir",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 10,
+            "end": 13,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "bitte",
+            "lemma": "bitte",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 14,
+            "end": 19,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "die",
+            "lemma": "der",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 20,
+            "end": 23,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Hose",
+            "lemma": "Hose",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 24,
+            "end": 28,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "nähen",
+            "lemma": "nähen",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVINF",
+            "feats": {},
+            "start": 29,
+            "end": 34,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "?",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 34,
+            "end": 35,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:06:37Z",
+        "updated_utc": "2026-10-17T07:07:06Z",
+        "applied_utc": "2026-10-17T07:07:06Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:07:06Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -431,34 +762,6 @@
     "word": "nähen",
     "word_reading": "",
     "word_label": "Verb",
-    "word_en": "to sew; to stitch",
-    "word_es": "coser",
-    "word_fr": "coudre",
-    "word_it": "cucire",
-    "word_ko": "바느질하다; 꿰매다",
-    "word_zh-Hans": "缝; 缝合",
-    "word_yue": "縫; 縫合",
-    "word_ru": "шить",
-    "word_pt": "costurar",
-    "word_he": "לתפור",
-    "word_tr": "dikmek",
-    "word_vi": "may; khâu",
-    "word_ar": "خيّط",
-    "word_nl": "naaien",
-    "word_uk": "шити",
-    "word_hu": "varr",
-    "word_hi": "सिलना",
-    "word_pl": "szyć",
-    "word_el": "ράβω",
-    "word_nb": "sy",
-    "word_id": "menjahit",
-    "word_sv": "sy",
-    "word_ro": "coase",
-    "word_cs": "šít",
-    "word_da": "sy",
-    "word_fi": "ommella",
-    "word_ja": "縫う",
-    "word_de": "nähen",
     "comic_difficulty": 5.49,
     "jp": [
       "Ich kann noch nicht nähen.",
@@ -471,24 +774,6 @@
       "/ˈmaɪ̯nə ˈmʊtɐ vɪl ˈhɔʏ̯tə ˈnɛːən/",
       "/viːɐ̯ ˈɡeːən ˈʃpɛːtɐ tsuː ˈoːma ˈnɛːən/",
       "/duː kanst miːɐ̯ ˈbɪtə diː ˈhoːzə ˈnɛːən/"
-    ],
-    "de": [
-      "Ich kann noch nicht nähen.",
-      "Meine Mutter will heute nähen.",
-      "Wir gehen später zu Oma nähen.",
-      "Du kannst mir bitte die Hose nähen."
-    ],
-    "ipa": [
-      "/ɪç kan nɔx nɪçt ˈnɛːən/",
-      "/ˈmaɪ̯nə ˈmʊtɐ vɪl ˈhɔʏ̯tə ˈnɛːən/",
-      "/viːɐ̯ ˈɡeːən ˈʃpɛːtɐ tsuː ˈoːma ˈnɛːən/",
-      "/duː kanst miːɐ̯ ˈbɪtə diː ˈhoːzə ˈnɛːən/"
-    ],
-    "en": [
-      "I still can't sew.",
-      "My mother wants to sew today.",
-      "We’re going to sew at Grandma’s later.",
-      "You can sew my pants for me, please."
     ],
     "pos_analysis": [
       {
@@ -657,207 +942,136 @@
         "difficulty_aggregated": 5.17
       },
       {
-        "sentence": "Du kannst mir bitte die Hose nähen.",
+        "sentence": "Kannst du mir bitte die Hose nähen?",
         "tokens": [
           {
-            "surface": "Du",
-            "surface_en": "you",
-            "furigana": "[duː]",
-            "pos": "PRON",
-            "lemma": "du",
-            "explanation": "Personal pronoun, 2nd person singular nominative; subject.",
-            "difficulty": 2
+            "surface": "Kannst",
+            "lemma": "Kannst",
+            "pos": "X",
+            "upos": "X",
+            "xpos": "FM",
+            "feats": {},
+            "start": 0,
+            "end": 6,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "kannst",
-            "surface_en": "can",
-            "furigana": "[kanst]",
-            "pos": "AUX",
-            "lemma": "können",
-            "explanation": "Modal auxiliary, finite; selects a bare infinitive complement.",
-            "difficulty": 7
+            "surface": "du",
+            "lemma": "du",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 7,
+            "end": 9,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "mir",
-            "surface_en": "me",
-            "furigana": "[miːɐ̯]",
+            "lemma": "mir",
             "pos": "PRON",
-            "lemma": "ich",
-            "explanation": "Personal pronoun in dative; indirect object ('for me').",
-            "difficulty": 4
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 10,
+            "end": 13,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "bitte",
-            "surface_en": "please",
-            "furigana": "[ˈbɪtə]",
-            "pos": "INTJ",
             "lemma": "bitte",
-            "explanation": "Politeness marker; discourse particle.",
-            "difficulty": 7
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 14,
+            "end": 19,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "die",
-            "surface_en": "the",
-            "furigana": "[diː]",
-            "pos": "DET",
             "lemma": "der",
-            "explanation": "Definite article, feminine singular; determiner of 'Hose'.",
-            "difficulty": 2
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 20,
+            "end": 23,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "Hose",
-            "surface_en": "pants",
-            "furigana": "[ˈhoːzə]",
-            "pos": "NOUN",
             "lemma": "Hose",
-            "explanation": "Common noun; direct object of 'nähen'.",
-            "difficulty": 7
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 24,
+            "end": 28,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "nähen.",
-            "surface_en": "sew",
-            "furigana": "[ˈnɛːən]",
-            "pos": "VERB",
+            "surface": "nähen",
             "lemma": "nähen",
-            "explanation": "Main lexical verb in bare infinitive; complement of the modal auxiliary.",
-            "difficulty": 7,
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVINF",
+            "feats": {},
+            "start": 29,
+            "end": 34,
+            "analyzer": "spacy_de_core_news_lg",
             "is_main_word": true
+          },
+          {
+            "surface": "?",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 34,
+            "end": 35,
+            "analyzer": "spacy_de_core_news_lg"
           }
         ],
         "difficulty_aggregated": 5.14
       }
     ],
-    "es": [
-      "Todavía no sé coser.",
-      "Mi madre quiere coser hoy.",
-      "Más tarde vamos a coser en casa de la abuela.",
-      "¿Puedes coserme los pantalones, por favor?"
-    ],
-    "fr": [
-      "Je ne sais toujours pas coudre.",
-      "Ma mère veut coudre aujourd’hui.",
-      "Plus tard, on va coudre chez Mamie.",
-      "Tu peux me recoudre mon pantalon, s’il te plaît?"
-    ],
-    "it": [
-      "Non so ancora cucire.",
-      "Mia madre vuole cucire oggi.",
-      "Più tardi andiamo a cucire dalla nonna.",
-      "Puoi cucirmi i pantaloni, per favore?"
-    ],
-    "ko": [
-      "저는 아직 바느질을 못해요.",
-      "우리 엄마는 오늘 바느질하고 싶어해요.",
-      "나중에 할머니 집에 가서 바느질할 거예요.",
-      "제 바지 좀 꿰매 줄 수 있어요?"
-    ],
-    "zh-Hans": [
-      "我还不会缝纫。",
-      "我妈妈今天想缝纫。",
-      "我们晚些时候去奶奶家缝衣服。",
-      "你能帮我把裤子缝好吗？"
-    ],
-    "yue": [
-      "我仲未識縫衫。",
-      "我媽今日想縫衫。",
-      "我哋陣間去阿嫲屋企縫衫。",
-      "你可唔可以幫我縫返條褲？"
-    ],
-    "ru": [
-      "Я всё ещё не умею шить.",
-      "Моя мама сегодня хочет шить.",
-      "Позже мы пойдём шить к бабушке.",
-      "Можешь, пожалуйста, зашить мне штаны?"
-    ],
-    "pt": [
-      "Eu ainda não sei costurar.",
-      "Minha mãe quer costurar hoje.",
-      "Mais tarde vamos costurar na casa da vovó.",
-      "Você pode costurar minha calça para mim, por favor?"
-    ],
-    "he": [
-      "אני עדיין לא יודע לתפור.",
-      "אמא שלי хочет לתפור היום.",
-      "אחר כך נלך לתפור אצל סבתא.",
-      "אתה יכול לתפור לי את המכנסיים בבקשה?"
-    ],
-    "tr": [
-      "Henüz dikiş dikemiyorum.",
-      "Annem bugün dikiş dikmek istiyor.",
-      "Daha sonra büyükannenin evine gidip dikiş dikeceğiz.",
-      "Pantolonumu benim için dikebilir misin, lütfen?"
-    ],
-    "vi": [
-      "Tôi vẫn chưa biết may.",
-      "Mẹ tôi muốn may hôm nay.",
-      "Lát nữa chúng tôi sẽ đến nhà bà để may.",
-      "Bạn có thể may cái quần cho tôi được không?"
-    ],
+    "word_POS": "Verb",
+    "entry_id": "nähen",
+    "word_en": "to sew; to stitch",
+    "word_es": "coser",
+    "word_fr": "coudre",
+    "word_it": "cucire",
+    "word_ko": "바느질하다; 꿰매다",
+    "word_zh-Hans": "缝; 缝合",
+    "word_yue": "縫; 縫合",
+    "word_ru": "шить",
+    "word_pt": "costurar",
+    "word_he": "לתפור",
+    "word_tr": "dikmek",
+    "word_vi": "may; khâu",
+    "word_ar": "خيّط",
+    "word_nl": "naaien",
+    "word_uk": "шити",
+    "word_hu": "varr",
+    "word_hi": "सिलना",
+    "word_pl": "szyć",
+    "word_el": "ράβω",
+    "word_nb": "sy",
+    "word_id": "menjahit",
+    "word_sv": "sy",
+    "word_ro": "coase",
+    "word_cs": "šít",
+    "word_da": "sy",
+    "word_fi": "ommella",
+    "word_ja": "縫う",
+    "word_de": "nähen",
     "ar": [
       "ما زلت لا أعرف كيف أخيط.",
       "أمي تريد أن تخيط اليوم.",
       "لاحقًا سنذهب لنخيط في بيت جدتنا.",
       "هل يمكنك خياطة سروالي من أجلي، من فضلك؟"
-    ],
-    "nl": [
-      "Ik kan nog steeds niet naaien.",
-      "Mijn moeder wil vandaag naaien.",
-      "Later gaan we bij oma naaien.",
-      "Kun je mijn broek voor me naaien, alsjeblieft?"
-    ],
-    "uk": [
-      "Я все ще не вмію шити.",
-      "Моя мама сьогодні хоче шити.",
-      "Пізніше ми підемо шити до бабусі.",
-      "Можеш, будь ласка, зашити мені штани?"
-    ],
-    "hu": [
-      "Még nem tudok varrni.",
-      "Anyám ma varrni akar.",
-      "Később elmegyünk varrni a nagymamámhoz.",
-      "Meg tudnád varrni a nadrágomat, kérlek?"
-    ],
-    "hi": [
-      "मुझे अभी तक सिलाई नहीं आती.",
-      "मेरी माँ आज सिलाई करना चाहती हैं.",
-      "बाद में हम दादी के घर जाकर सिलाई करेंगे.",
-      "क्या आप मेरे लिए मेरी पैंट सिल देंगे, कृपया?"
-    ],
-    "pl": [
-      "Wciąż nie potrafię szyć.",
-      "Moja mama chce dziś szyć.",
-      "Później pójdziemy szyć do babci.",
-      "Czy możesz mi zszyć spodnie, proszę?"
-    ],
-    "el": [
-      "Δεν ξέρω ακόμα να ράβω.",
-      "Η μητέρα μου θέλει να ράψει σήμερα.",
-      "Αργότερα θα πάμε να ράψουμε στο σπίτι της γιαγιάς.",
-      "Μπορείς να μου ράψεις το παντελόνι, σε παρακαλώ?"
-    ],
-    "nb": [
-      "Jeg kan fortsatt ikke sy.",
-      "Moren min vil sy i dag.",
-      "Senere skal vi til bestemor og sy.",
-      "Kan du sy buksene mine for meg, vær så snill?"
-    ],
-    "id": [
-      "Saya masih belum bisa menjahit.",
-      "Ibu saya ingin menjahit hari ini.",
-      "Nanti kita akan pergi menjahit di rumah nenek.",
-      "Bisakah kamu menjahit celana saya, tolong?"
-    ],
-    "sv": [
-      "Jag kan fortfarande inte sy.",
-      "Min mamma vill sy idag.",
-      "Senare ska vi åka till mormor och sy.",
-      "Kan du sy mina byxor åt mig, snälla?"
-    ],
-    "ro": [
-      "Încă nu știu să cos.",
-      "Mama mea vrea să coasă azi.",
-      "Mai târziu mergem să coasem la bunica.",
-      "Poți să-mi coși pantalonii, te rog?"
     ],
     "cs": [
       "Ještě neumím šít.",
@@ -871,11 +1085,77 @@
       "Senere skal vi hjem til mormor og sy.",
       "Kan du sy mine bukser for mig, tak?"
     ],
+    "de": [
+      "Ich kann noch nicht nähen.",
+      "Meine Mutter will heute nähen.",
+      "Wir gehen später zu Oma nähen.",
+      "Du kannst mir bitte die Hose nähen."
+    ],
+    "el": [
+      "Δεν ξέρω ακόμα να ράβω.",
+      "Η μητέρα μου θέλει να ράψει σήμερα.",
+      "Αργότερα θα πάμε να ράψουμε στο σπίτι της γιαγιάς.",
+      "Μπορείς να μου ράψεις το παντελόνι, σε παρακαλώ?"
+    ],
+    "en": [
+      "I still can't sew.",
+      "My mother wants to sew today.",
+      "We’re going to sew at Grandma’s later.",
+      "You can sew my pants for me, please."
+    ],
+    "es": [
+      "Todavía no sé coser.",
+      "Mi madre quiere coser hoy.",
+      "Más tarde vamos a coser en casa de la abuela.",
+      "¿Puedes coserme los pantalones, por favor?"
+    ],
     "fi": [
       "En osaa vieläkään ommella.",
       "Äitini haluaa ommella tänään.",
       "Myöhemmin menemme mummolaan ompelemaan.",
       "Voisitko ommella housuni, kiitos?"
+    ],
+    "fr": [
+      "Je ne sais toujours pas coudre.",
+      "Ma mère veut coudre aujourd’hui.",
+      "Plus tard, on va coudre chez Mamie.",
+      "Tu peux me recoudre mon pantalon, s’il te plaît?"
+    ],
+    "he": [
+      "אני עדיין לא יודע לתפור.",
+      "אמא שלי хочет לתפור היום.",
+      "אחר כך נלך לתפור אצל סבתא.",
+      "אתה יכול לתפור לי את המכנסיים בבקשה?"
+    ],
+    "hi": [
+      "मुझे अभी तक सिलाई नहीं आती.",
+      "मेरी माँ आज सिलाई करना चाहती हैं.",
+      "बाद में हम दादी के घर जाकर सिलाई करेंगे.",
+      "क्या आप मेरे लिए मेरी पैंट सिल देंगे, कृपया?"
+    ],
+    "hu": [
+      "Még nem tudok varrni.",
+      "Anyám ma varrni akar.",
+      "Később elmegyünk varrni a nagymamámhoz.",
+      "Meg tudnád varrni a nadrágomat, kérlek?"
+    ],
+    "id": [
+      "Saya masih belum bisa menjahit.",
+      "Ibu saya ingin menjahit hari ini.",
+      "Nanti kita akan pergi menjahit di rumah nenek.",
+      "Bisakah kamu menjahit celana saya, tolong?"
+    ],
+    "ipa": [
+      "/ɪç kan nɔx nɪçt ˈnɛːən/",
+      "/ˈmaɪ̯nə ˈmʊtɐ vɪl ˈhɔʏ̯tə ˈnɛːən/",
+      "/viːɐ̯ ˈɡeːən ˈʃpɛːtɐ tsuː ˈoːma ˈnɛːən/",
+      "/duː kanst miːɐ̯ ˈbɪtə diː ˈhoːzə ˈnɛːən/"
+    ],
+    "it": [
+      "Non so ancora cucire.",
+      "Mia madre vuole cucire oggi.",
+      "Più tardi andiamo a cucire dalla nonna.",
+      "Puoi cucirmi i pantaloni, per favore?"
     ],
     "ja": [
       "まだ縫い物ができません。",
@@ -883,6 +1163,83 @@
       "あとで祖母の家に行って縫い物をします。",
       "私のズボンを縫ってもらえますか。"
     ],
-    "word_POS": "Verb"
+    "ko": [
+      "저는 아직 바느질을 못해요.",
+      "우리 엄마는 오늘 바느질하고 싶어해요.",
+      "나중에 할머니 집에 가서 바느질할 거예요.",
+      "제 바지 좀 꿰매 줄 수 있어요?"
+    ],
+    "nb": [
+      "Jeg kan fortsatt ikke sy.",
+      "Moren min vil sy i dag.",
+      "Senere skal vi til bestemor og sy.",
+      "Kan du sy buksene mine for meg, vær så snill?"
+    ],
+    "nl": [
+      "Ik kan nog steeds niet naaien.",
+      "Mijn moeder wil vandaag naaien.",
+      "Later gaan we bij oma naaien.",
+      "Kun je mijn broek voor me naaien, alsjeblieft?"
+    ],
+    "pl": [
+      "Wciąż nie potrafię szyć.",
+      "Moja mama chce dziś szyć.",
+      "Później pójdziemy szyć do babci.",
+      "Czy możesz mi zszyć spodnie, proszę?"
+    ],
+    "pt": [
+      "Eu ainda não sei costurar.",
+      "Minha mãe quer costurar hoje.",
+      "Mais tarde vamos costurar na casa da vovó.",
+      "Você pode costurar minha calça para mim, por favor?"
+    ],
+    "ro": [
+      "Încă nu știu să cos.",
+      "Mama mea vrea să coasă azi.",
+      "Mai târziu mergem să coasem la bunica.",
+      "Poți să-mi coși pantalonii, te rog?"
+    ],
+    "ru": [
+      "Я всё ещё не умею шить.",
+      "Моя мама сегодня хочет шить.",
+      "Позже мы пойдём шить к бабушке.",
+      "Можешь, пожалуйста, зашить мне штаны?"
+    ],
+    "sv": [
+      "Jag kan fortfarande inte sy.",
+      "Min mamma vill sy idag.",
+      "Senare ska vi åka till mormor och sy.",
+      "Kan du sy mina byxor åt mig, snälla?"
+    ],
+    "tr": [
+      "Henüz dikiş dikemiyorum.",
+      "Annem bugün dikiş dikmek istiyor.",
+      "Daha sonra büyükannenin evine gidip dikiş dikeceğiz.",
+      "Pantolonumu benim için dikebilir misin, lütfen?"
+    ],
+    "uk": [
+      "Я все ще не вмію шити.",
+      "Моя мама сьогодні хоче шити.",
+      "Пізніше ми підемо шити до бабусі.",
+      "Можеш, будь ласка, зашити мені штани?"
+    ],
+    "vi": [
+      "Tôi vẫn chưa biết may.",
+      "Mẹ tôi muốn may hôm nay.",
+      "Lát nữa chúng tôi sẽ đến nhà bà để may.",
+      "Bạn có thể may cái quần cho tôi được không?"
+    ],
+    "yue": [
+      "我仲未識縫衫。",
+      "我媽今日想縫衫。",
+      "我哋陣間去阿嫲屋企縫衫。",
+      "你可唔可以幫我縫返條褲？"
+    ],
+    "zh-Hans": [
+      "我还不会缝纫。",
+      "我妈妈今天想缝纫。",
+      "我们晚些时候去奶奶家缝衣服。",
+      "你能帮我把裤子缝好吗？"
+    ]
   }
 }

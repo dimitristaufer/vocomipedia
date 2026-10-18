@@ -14,32 +14,32 @@
   ],
   "glosses": {
     "en": "just; only",
-    "es": "solo; desnudo",
-    "fr": "seulement; nu",
-    "it": "solo; nudo",
-    "ko": "오직; 벌거벗은",
-    "zh-Hans": "只是; 裸露的",
-    "yue": "淨係; 赤裸的",
-    "ru": "только; голый",
-    "pt": "só; nu",
-    "he": "רק; עירום",
-    "tr": "sadece; çıplak",
-    "vi": "chỉ; trần",
-    "ar": "فقط; عارٍ",
-    "nl": "alleen; naakt",
-    "uk": "лише; голий",
-    "hu": "csak; meztelen",
-    "hi": "सिर्फ; नग्न",
-    "pl": "tylko; nagi",
-    "el": "μόνο; γυμνός",
-    "nb": "bare; naken",
-    "id": "hanya; telanjang",
-    "sv": "bara; naken",
-    "ro": "doar; gol",
-    "cs": "jen; nahý",
-    "da": "kun; nøgen",
-    "fi": "vain; alaston",
-    "ja": "ただ; 裸の",
+    "es": "solo",
+    "fr": "seulement",
+    "it": "solo",
+    "ko": "오직",
+    "zh-Hans": "只是",
+    "yue": "淨係",
+    "ru": "только",
+    "pt": "só",
+    "he": "רק",
+    "tr": "sadece",
+    "vi": "chỉ",
+    "ar": "فقط",
+    "nl": "alleen",
+    "uk": "лише",
+    "hu": "csak",
+    "hi": "सिर्फ",
+    "pl": "tylko",
+    "el": "μόνο",
+    "nb": "bare",
+    "id": "hanya",
+    "sv": "bara",
+    "ro": "doar",
+    "cs": "jen",
+    "da": "kun",
+    "fi": "vain",
+    "ja": "ただ",
     "de": "bloß"
   },
   "sentences": [
@@ -133,7 +133,7 @@
         "yue": "只係講笑啫。",
         "ru": "Это просто шутка.",
         "pt": "É só uma brincadeira.",
-        "he": "זה רק בדיחה.",
+        "he": "זו רק בדיחה.",
         "tr": "Bu sadece bir şaka.",
         "vi": "Chỉ là một trò đùa thôi.",
         "ar": "إنها مجرد مزحة.",
@@ -203,10 +203,10 @@
       "difficulty": 4.4
     },
     {
-      "target": "Ich habe bloß keine Zeit heute.",
+      "target": "Ich habe heute bloß keine Zeit.",
       "reading": "/ɪç ˈhaːbə bloːs ˈkaɪnə tsaɪt ˈhɔʏtə/",
       "translations": {
-        "de": "Ich habe bloß keine Zeit heute.",
+        "de": "Ich habe heute bloß keine Zeit.",
         "ipa": "/ɪç ˈhaːbə bloːs ˈkaɪnə tsaɪt ˈhɔʏtə/",
         "en": "I just don’t have time today.",
         "es": "Hoy simplemente no tengo tiempo.",
@@ -239,58 +239,81 @@
       "tokens": [
         {
           "surface": "Ich",
-          "surface_en": "I",
-          "furigana": "[ɪç]",
-          "pos": "PRON",
           "lemma": "ich",
-          "explanation": "Personal pronoun, 1st person singular nominative; subject.",
-          "difficulty": 2
+          "pos": "PRON",
+          "upos": "PRON",
+          "xpos": "PPER",
+          "feats": {},
+          "start": 0,
+          "end": 3,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "habe",
-          "surface_en": "have",
-          "furigana": "[ˈhaːbə]",
-          "pos": "VERB",
           "lemma": "haben",
-          "explanation": "Main lexical verb, present tense, 1st person singular; takes a direct object (‘keine Zeit’).",
-          "difficulty": 7
+          "pos": "AUX",
+          "upos": "AUX",
+          "xpos": "VAFIN",
+          "feats": {},
+          "start": 4,
+          "end": 8,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "heute",
+          "lemma": "heute",
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "ADV",
+          "feats": {},
+          "start": 9,
+          "end": 14,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "bloß",
-          "surface_en": "only/just",
-          "furigana": "[bloːs]",
-          "pos": "ADV",
           "lemma": "bloß",
-          "explanation": "Focus adverb; scopes over the NP ‘keine Zeit’, indicating that the only issue is the lack of time.",
-          "difficulty": 7,
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "ADV",
+          "feats": {},
+          "start": 15,
+          "end": 19,
+          "analyzer": "spacy_de_core_news_lg",
           "is_main_word": true
         },
         {
           "surface": "keine",
-          "surface_en": "no",
-          "furigana": "[ˈkaɪ̯nə]",
-          "pos": "DET",
           "lemma": "kein",
-          "explanation": "Negative determiner, feminine singular accusative; negates the noun ‘Zeit’.",
-          "difficulty": 2
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "PIAT",
+          "feats": {},
+          "start": 20,
+          "end": 25,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "Zeit",
-          "surface_en": "time",
-          "furigana": "[tsaɪ̯t]",
-          "pos": "NOUN",
           "lemma": "Zeit",
-          "explanation": "Common noun, feminine; direct object of ‘habe’.",
-          "difficulty": 7
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 26,
+          "end": 30,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "heute.",
-          "surface_en": "today",
-          "furigana": "[ˈhɔʏ̯tə]",
-          "pos": "ADV",
-          "lemma": "heute",
-          "explanation": "Temporal adverb; situates the event in time.",
-          "difficulty": 7
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 30,
+          "end": 31,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 5.33
@@ -391,8 +414,292 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-14T22:17:48Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:De b1/7a718e2bddbb82ca",
+      "revision_id": 86033,
+      "parent_revision_id": 15518,
+      "revision_timestamp_utc": "2026-10-14T22:17:48Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Suggest content corrections",
+      "pulled_utc": "2026-10-17T07:06:40Z",
+      "applied_utc": "2026-10-17T07:06:52Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-b19bbeaac7f438b9",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_b1:7a718e2bddbb82ca",
+        "pack_code": "de_b1",
+        "entry_id": "bloß",
+        "language": "de",
+        "sentence_index": 3,
+        "old_sentence": "Ich habe bloß keine Zeit heute.",
+        "old_translations": {
+          "de": "Ich habe bloß keine Zeit heute.",
+          "ipa": "/ɪç ˈhaːbə bloːs ˈkaɪnə tsaɪt ˈhɔʏtə/",
+          "en": "I just don’t have time today.",
+          "es": "Hoy simplemente no tengo tiempo.",
+          "fr": "Je n’ai juste pas le temps aujourd’hui.",
+          "it": "Oggi proprio non ho tempo.",
+          "ko": "오늘은 시간이 진짜 없어요.",
+          "zh-Hans": "我今天真的没时间。",
+          "yue": "我今日真係冇時間。",
+          "ru": "Сегодня у меня просто нет времени.",
+          "pt": "Hoje eu simplesmente não tenho tempo.",
+          "he": "פשוט אין לי זמן היום.",
+          "tr": "Bugün sadece vaktim yok.",
+          "vi": "Hôm nay tôi không có thời gian.",
+          "ar": "اليوم ليس لدي وقت.",
+          "nl": "Ik heb vandaag gewoon geen tijd.",
+          "uk": "Сьогодні в мене просто немає часу.",
+          "hu": "Ma egyszerűen nincs időm.",
+          "hi": "आज मेरे पास बस समय नहीं है।",
+          "pl": "Dziś po prostu nie mam czasu.",
+          "el": "Σήμερα απλώς δεν έχω χρόνο.",
+          "nb": "Jeg har bare ikke tid i dag.",
+          "id": "Hari ini aku tidak punya waktu.",
+          "sv": "Jag har bara inte tid i dag.",
+          "ro": "Astăzi pur și simplu nu am timp.",
+          "cs": "Dnes prostě nemám čas.",
+          "da": "Jeg har bare ikke tid i dag.",
+          "fi": "Tänään minulla ei vain ole aikaa.",
+          "ja": "今日は時間がないだけなんです。"
+        },
+        "proposed_sentence": "Ich habe heute bloß keine Zeit.",
+        "proposed_translations": {
+          "de": "Ich habe heute bloß keine Zeit.",
+          "ipa": "/ɪç ˈhaːbə bloːs ˈkaɪnə tsaɪt ˈhɔʏtə/",
+          "en": "I just don’t have time today.",
+          "es": "Hoy simplemente no tengo tiempo.",
+          "fr": "Je n’ai juste pas le temps aujourd’hui.",
+          "it": "Oggi proprio non ho tempo.",
+          "ko": "오늘은 시간이 진짜 없어요.",
+          "zh-Hans": "我今天真的没时间。",
+          "yue": "我今日真係冇時間。",
+          "ru": "Сегодня у меня просто нет времени.",
+          "pt": "Hoje eu simplesmente não tenho tempo.",
+          "he": "פשוט אין לי זמן היום.",
+          "tr": "Bugün sadece vaktim yok.",
+          "vi": "Hôm nay tôi không có thời gian.",
+          "ar": "اليوم ليس لدي وقت.",
+          "nl": "Ik heb vandaag gewoon geen tijd.",
+          "uk": "Сьогодні в мене просто немає часу.",
+          "hu": "Ma egyszerűen nincs időm.",
+          "hi": "आज मेरे पास बस समय नहीं है।",
+          "pl": "Dziś po prostu nie mam czasu.",
+          "el": "Σήμερα απλώς δεν έχω χρόνο.",
+          "nb": "Jeg har bare ikke tid i dag.",
+          "id": "Hari ini aku tidak punya waktu.",
+          "sv": "Jag har bara inte tid i dag.",
+          "ro": "Astăzi pur și simplu nu am timp.",
+          "cs": "Dnes prostě nemám čas.",
+          "da": "Jeg har bare ikke tid i dag.",
+          "fi": "Tänään minulla ei vain ole aikaa.",
+          "ja": "今日は時間がないだけなんです。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Ich habe heute bloß keine Zeit.",
+        "old_japanese": "Ich habe bloß keine Zeit heute.",
+        "old_english": "I just don’t have time today.",
+        "proposed_japanese": "Ich habe heute bloß keine Zeit.",
+        "proposed_english": "I just don’t have time today.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Ich habe heute bloß keine Zeit.",
+          "tokens": [
+            {
+              "surface": "Ich",
+              "lemma": "ich",
+              "pos": "PRON",
+              "upos": "PRON",
+              "xpos": "PPER",
+              "feats": {},
+              "start": 0,
+              "end": 3,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "habe",
+              "lemma": "haben",
+              "pos": "AUX",
+              "upos": "AUX",
+              "xpos": "VAFIN",
+              "feats": {},
+              "start": 4,
+              "end": 8,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "heute",
+              "lemma": "heute",
+              "pos": "ADV",
+              "upos": "ADV",
+              "xpos": "ADV",
+              "feats": {},
+              "start": 9,
+              "end": 14,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "bloß",
+              "lemma": "bloß",
+              "pos": "ADV",
+              "upos": "ADV",
+              "xpos": "ADV",
+              "feats": {},
+              "start": 15,
+              "end": 19,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "keine",
+              "lemma": "kein",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "PIAT",
+              "feats": {},
+              "start": 20,
+              "end": 25,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Zeit",
+              "lemma": "Zeit",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 26,
+              "end": 30,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 30,
+              "end": 31,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Ich",
+            "lemma": "ich",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "habe",
+            "lemma": "haben",
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "VAFIN",
+            "feats": {},
+            "start": 4,
+            "end": 8,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "heute",
+            "lemma": "heute",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 9,
+            "end": 14,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "bloß",
+            "lemma": "bloß",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 15,
+            "end": 19,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "keine",
+            "lemma": "kein",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "PIAT",
+            "feats": {},
+            "start": 20,
+            "end": 25,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Zeit",
+            "lemma": "Zeit",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 26,
+            "end": 30,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 30,
+            "end": 31,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:06:40Z",
+        "updated_utc": "2026-10-17T07:07:05Z",
+        "applied_utc": "2026-10-17T07:07:05Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:07:05Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -404,34 +711,6 @@
     "word": "bloß",
     "word_reading": "",
     "word_label": "Adverb",
-    "word_en": "just; only",
-    "word_es": "solo; desnudo",
-    "word_fr": "seulement; nu",
-    "word_it": "solo; nudo",
-    "word_ko": "오직; 벌거벗은",
-    "word_zh-Hans": "只是; 裸露的",
-    "word_yue": "淨係; 赤裸的",
-    "word_ru": "только; голый",
-    "word_pt": "só; nu",
-    "word_he": "רק; עירום",
-    "word_tr": "sadece; çıplak",
-    "word_vi": "chỉ; trần",
-    "word_ar": "فقط; عارٍ",
-    "word_nl": "alleen; naakt",
-    "word_uk": "лише; голий",
-    "word_hu": "csak; meztelen",
-    "word_hi": "सिर्फ; नग्न",
-    "word_pl": "tylko; nagi",
-    "word_el": "μόνο; γυμνός",
-    "word_nb": "bare; naken",
-    "word_id": "hanya; telanjang",
-    "word_sv": "bara; naken",
-    "word_ro": "doar; gol",
-    "word_cs": "jen; nahý",
-    "word_da": "kun; nøgen",
-    "word_fi": "vain; alaston",
-    "word_ja": "ただ; 裸の",
-    "word_de": "bloß",
     "comic_difficulty": 5.12,
     "jp": [
       "Ich wollte bloß helfen.",
@@ -444,24 +723,6 @@
       "/ɛs ɪst bloːs aɪn vɪts/",
       "/ɪç ˈhaːbə bloːs ˈkaɪnə tsaɪt ˈhɔʏtə/",
       "/viːɐ̯ zɪnt bloːs tsuː fʏnft/"
-    ],
-    "de": [
-      "Ich wollte bloß helfen.",
-      "Es ist bloß ein Witz.",
-      "Ich habe bloß keine Zeit heute.",
-      "Wir sind bloß zu fünft."
-    ],
-    "ipa": [
-      "/ɪç ˈvɔltə bloːs ˈhɛlfən/",
-      "/ɛs ɪst bloːs aɪn vɪts/",
-      "/ɪç ˈhaːbə bloːs ˈkaɪnə tsaɪt ˈhɔʏtə/",
-      "/viːɐ̯ zɪnt bloːs tsuː fʏnft/"
-    ],
-    "en": [
-      "I just wanted to help.",
-      "It’s just a joke.",
-      "I just don’t have time today.",
-      "There are only five of us."
     ],
     "pos_analysis": [
       {
@@ -560,62 +821,85 @@
         "difficulty_aggregated": 4.4
       },
       {
-        "sentence": "Ich habe bloß keine Zeit heute.",
+        "sentence": "Ich habe heute bloß keine Zeit.",
         "tokens": [
           {
             "surface": "Ich",
-            "surface_en": "I",
-            "furigana": "[ɪç]",
-            "pos": "PRON",
             "lemma": "ich",
-            "explanation": "Personal pronoun, 1st person singular nominative; subject.",
-            "difficulty": 2
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "habe",
-            "surface_en": "have",
-            "furigana": "[ˈhaːbə]",
-            "pos": "VERB",
             "lemma": "haben",
-            "explanation": "Main lexical verb, present tense, 1st person singular; takes a direct object (‘keine Zeit’).",
-            "difficulty": 7
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "VAFIN",
+            "feats": {},
+            "start": 4,
+            "end": 8,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "heute",
+            "lemma": "heute",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 9,
+            "end": 14,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "bloß",
-            "surface_en": "only/just",
-            "furigana": "[bloːs]",
-            "pos": "ADV",
             "lemma": "bloß",
-            "explanation": "Focus adverb; scopes over the NP ‘keine Zeit’, indicating that the only issue is the lack of time.",
-            "difficulty": 7,
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 15,
+            "end": 19,
+            "analyzer": "spacy_de_core_news_lg",
             "is_main_word": true
           },
           {
             "surface": "keine",
-            "surface_en": "no",
-            "furigana": "[ˈkaɪ̯nə]",
-            "pos": "DET",
             "lemma": "kein",
-            "explanation": "Negative determiner, feminine singular accusative; negates the noun ‘Zeit’.",
-            "difficulty": 2
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "PIAT",
+            "feats": {},
+            "start": 20,
+            "end": 25,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "Zeit",
-            "surface_en": "time",
-            "furigana": "[tsaɪ̯t]",
-            "pos": "NOUN",
             "lemma": "Zeit",
-            "explanation": "Common noun, feminine; direct object of ‘habe’.",
-            "difficulty": 7
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 26,
+            "end": 30,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "heute.",
-            "surface_en": "today",
-            "furigana": "[ˈhɔʏ̯tə]",
-            "pos": "ADV",
-            "lemma": "heute",
-            "explanation": "Temporal adverb; situates the event in time.",
-            "difficulty": 7
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 30,
+            "end": 31,
+            "analyzer": "spacy_de_core_news_lg"
           }
         ],
         "difficulty_aggregated": 5.33
@@ -673,137 +957,41 @@
         "difficulty_aggregated": 5
       }
     ],
-    "es": [
-      "Solo quería ayudar.",
-      "Es solo una broma.",
-      "Hoy simplemente no tengo tiempo.",
-      "Solo somos cinco."
-    ],
-    "fr": [
-      "Je voulais juste aider.",
-      "C’est juste une blague.",
-      "Je n’ai juste pas le temps aujourd’hui.",
-      "On n’est que cinq."
-    ],
-    "it": [
-      "Volevo solo aiutare.",
-      "È solo uno scherzo.",
-      "Oggi proprio non ho tempo.",
-      "Siamo solo in cinque."
-    ],
-    "ko": [
-      "그냥 도와주려고 했어요.",
-      "그냥 농담이에요.",
-      "오늘은 시간이 진짜 없어요.",
-      "우리는 다섯 명뿐이에요."
-    ],
-    "zh-Hans": [
-      "我只是想帮忙。",
-      "这只是个玩笑。",
-      "我今天真的没时间。",
-      "我们只有五个人。"
-    ],
-    "yue": [
-      "我只係想幫手。",
-      "只係講笑啫。",
-      "我今日真係冇時間。",
-      "我哋得五個人啫。"
-    ],
-    "ru": [
-      "Я просто хотел помочь.",
-      "Это просто шутка.",
-      "Сегодня у меня просто нет времени.",
-      "Нас всего пятеро."
-    ],
-    "pt": [
-      "Eu só queria ajudar.",
-      "É só uma brincadeira.",
-      "Hoje eu simplesmente não tenho tempo.",
-      "Somos só cinco."
-    ],
-    "he": [
-      "רק רציתי לעזור.",
-      "זה רק בדיחה.",
-      "פשוט אין לי זמן היום.",
-      "אנחנו רק חמישה."
-    ],
-    "tr": [
-      "Sadece yardım etmek istedim.",
-      "Bu sadece bir şaka.",
-      "Bugün sadece vaktim yok.",
-      "Sadece beş kişiyiz."
-    ],
-    "vi": [
-      "Tôi chỉ muốn giúp.",
-      "Chỉ là một trò đùa thôi.",
-      "Hôm nay tôi không có thời gian.",
-      "Chúng tôi chỉ có năm người."
-    ],
+    "word_POS": "Adverb",
+    "entry_id": "bloß",
+    "word_en": "just; only",
+    "word_es": "solo",
+    "word_fr": "seulement",
+    "word_it": "solo",
+    "word_ko": "오직",
+    "word_zh-Hans": "只是",
+    "word_yue": "淨係",
+    "word_ru": "только",
+    "word_pt": "só",
+    "word_he": "רק",
+    "word_tr": "sadece",
+    "word_vi": "chỉ",
+    "word_ar": "فقط",
+    "word_nl": "alleen",
+    "word_uk": "лише",
+    "word_hu": "csak",
+    "word_hi": "सिर्फ",
+    "word_pl": "tylko",
+    "word_el": "μόνο",
+    "word_nb": "bare",
+    "word_id": "hanya",
+    "word_sv": "bara",
+    "word_ro": "doar",
+    "word_cs": "jen",
+    "word_da": "kun",
+    "word_fi": "vain",
+    "word_ja": "ただ",
+    "word_de": "bloß",
     "ar": [
       "كنت فقط أريد أن أساعد.",
       "إنها مجرد مزحة.",
       "اليوم ليس لدي وقت.",
       "نحن خمسة فقط."
-    ],
-    "nl": [
-      "Ik wilde alleen helpen.",
-      "Het is maar een grapje.",
-      "Ik heb vandaag gewoon geen tijd.",
-      "We zijn maar met z’n vijven."
-    ],
-    "uk": [
-      "Я просто хотів допомогти.",
-      "Це просто жарт.",
-      "Сьогодні в мене просто немає часу.",
-      "Нас усього п’ятеро."
-    ],
-    "hu": [
-      "Csak segíteni akartam.",
-      "Ez csak egy vicc.",
-      "Ma egyszerűen nincs időm.",
-      "Csak öten vagyunk."
-    ],
-    "hi": [
-      "मैं बस मदद करना चाहता था।",
-      "यह बस मज़ाक है।",
-      "आज मेरे पास बस समय नहीं है।",
-      "हम सिर्फ पाँच हैं।"
-    ],
-    "pl": [
-      "Chciałem tylko pomóc.",
-      "To tylko żart.",
-      "Dziś po prostu nie mam czasu.",
-      "Jest nas tylko pięcioro."
-    ],
-    "el": [
-      "Ήθελα απλώς να βοηθήσω.",
-      "Είναι απλώς ένα αστείο.",
-      "Σήμερα απλώς δεν έχω χρόνο.",
-      "Είμαστε μόνο πέντε."
-    ],
-    "nb": [
-      "Jeg ville bare hjelpe.",
-      "Det er bare en spøk.",
-      "Jeg har bare ikke tid i dag.",
-      "Vi er bare fem."
-    ],
-    "id": [
-      "Aku cuma ingin membantu.",
-      "Ini cuma lelucon.",
-      "Hari ini aku tidak punya waktu.",
-      "Kami cuma berlima."
-    ],
-    "sv": [
-      "Jag ville bara hjälpa.",
-      "Det är bara ett skämt.",
-      "Jag har bara inte tid i dag.",
-      "Vi är bara fem."
-    ],
-    "ro": [
-      "Am vrut doar să ajut.",
-      "E doar o glumă.",
-      "Astăzi pur și simplu nu am timp.",
-      "Suntem doar cinci."
     ],
     "cs": [
       "Chtěl jsem jen pomoct.",
@@ -817,11 +1005,77 @@
       "Jeg har bare ikke tid i dag.",
       "Vi er kun fem."
     ],
+    "de": [
+      "Ich wollte bloß helfen.",
+      "Es ist bloß ein Witz.",
+      "Ich habe bloß keine Zeit heute.",
+      "Wir sind bloß zu fünft."
+    ],
+    "el": [
+      "Ήθελα απλώς να βοηθήσω.",
+      "Είναι απλώς ένα αστείο.",
+      "Σήμερα απλώς δεν έχω χρόνο.",
+      "Είμαστε μόνο πέντε."
+    ],
+    "en": [
+      "I just wanted to help.",
+      "It’s just a joke.",
+      "I just don’t have time today.",
+      "There are only five of us."
+    ],
+    "es": [
+      "Solo quería ayudar.",
+      "Es solo una broma.",
+      "Hoy simplemente no tengo tiempo.",
+      "Solo somos cinco."
+    ],
     "fi": [
       "Halusin vain auttaa.",
       "Se on vain vitsi.",
       "Tänään minulla ei vain ole aikaa.",
       "Meitä on vain viisi."
+    ],
+    "fr": [
+      "Je voulais juste aider.",
+      "C’est juste une blague.",
+      "Je n’ai juste pas le temps aujourd’hui.",
+      "On n’est que cinq."
+    ],
+    "he": [
+      "רק רציתי לעזור.",
+      "זו רק בדיחה.",
+      "פשוט אין לי זמן היום.",
+      "אנחנו רק חמישה."
+    ],
+    "hi": [
+      "मैं बस मदद करना चाहता था।",
+      "यह बस मज़ाक है।",
+      "आज मेरे पास बस समय नहीं है।",
+      "हम सिर्फ पाँच हैं।"
+    ],
+    "hu": [
+      "Csak segíteni akartam.",
+      "Ez csak egy vicc.",
+      "Ma egyszerűen nincs időm.",
+      "Csak öten vagyunk."
+    ],
+    "id": [
+      "Aku cuma ingin membantu.",
+      "Ini cuma lelucon.",
+      "Hari ini aku tidak punya waktu.",
+      "Kami cuma berlima."
+    ],
+    "ipa": [
+      "/ɪç ˈvɔltə bloːs ˈhɛlfən/",
+      "/ɛs ɪst bloːs aɪn vɪts/",
+      "/ɪç ˈhaːbə bloːs ˈkaɪnə tsaɪt ˈhɔʏtə/",
+      "/viːɐ̯ zɪnt bloːs tsuː fʏnft/"
+    ],
+    "it": [
+      "Volevo solo aiutare.",
+      "È solo uno scherzo.",
+      "Oggi proprio non ho tempo.",
+      "Siamo solo in cinque."
     ],
     "ja": [
       "ただ助けたかったんです。",
@@ -829,6 +1083,83 @@
       "今日は時間がないだけなんです。",
       "私たちは5人しかいません。"
     ],
-    "word_POS": "Adverb"
+    "ko": [
+      "그냥 도와주려고 했어요.",
+      "그냥 농담이에요.",
+      "오늘은 시간이 진짜 없어요.",
+      "우리는 다섯 명뿐이에요."
+    ],
+    "nb": [
+      "Jeg ville bare hjelpe.",
+      "Det er bare en spøk.",
+      "Jeg har bare ikke tid i dag.",
+      "Vi er bare fem."
+    ],
+    "nl": [
+      "Ik wilde alleen helpen.",
+      "Het is maar een grapje.",
+      "Ik heb vandaag gewoon geen tijd.",
+      "We zijn maar met z’n vijven."
+    ],
+    "pl": [
+      "Chciałem tylko pomóc.",
+      "To tylko żart.",
+      "Dziś po prostu nie mam czasu.",
+      "Jest nas tylko pięcioro."
+    ],
+    "pt": [
+      "Eu só queria ajudar.",
+      "É só uma brincadeira.",
+      "Hoje eu simplesmente não tenho tempo.",
+      "Somos só cinco."
+    ],
+    "ro": [
+      "Am vrut doar să ajut.",
+      "E doar o glumă.",
+      "Astăzi pur și simplu nu am timp.",
+      "Suntem doar cinci."
+    ],
+    "ru": [
+      "Я просто хотел помочь.",
+      "Это просто шутка.",
+      "Сегодня у меня просто нет времени.",
+      "Нас всего пятеро."
+    ],
+    "sv": [
+      "Jag ville bara hjälpa.",
+      "Det är bara ett skämt.",
+      "Jag har bara inte tid i dag.",
+      "Vi är bara fem."
+    ],
+    "tr": [
+      "Sadece yardım etmek istedim.",
+      "Bu sadece bir şaka.",
+      "Bugün sadece vaktim yok.",
+      "Sadece beş kişiyiz."
+    ],
+    "uk": [
+      "Я просто хотів допомогти.",
+      "Це просто жарт.",
+      "Сьогодні в мене просто немає часу.",
+      "Нас усього п’ятеро."
+    ],
+    "vi": [
+      "Tôi chỉ muốn giúp.",
+      "Chỉ là một trò đùa thôi.",
+      "Hôm nay tôi không có thời gian.",
+      "Chúng tôi chỉ có năm người."
+    ],
+    "yue": [
+      "我只係想幫手。",
+      "只係講笑啫。",
+      "我今日真係冇時間。",
+      "我哋得五個人啫。"
+    ],
+    "zh-Hans": [
+      "我只是想帮忙。",
+      "这只是个玩笑。",
+      "我今天真的没时间。",
+      "我们只有五个人。"
+    ]
   }
 }

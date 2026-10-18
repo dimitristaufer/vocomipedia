@@ -62,7 +62,7 @@
         "ar": "سأدخل المدرسة الابتدائية العام القادم.",
         "nl": "Volgend jaar ga ik naar de basisschool.",
         "uk": "Наступного року я йду до початкової школи.",
-        "hu": "Jövőre kezdem általános iskolát.",
+        "hu": "Jövőre kezdem az általános iskolát.",
         "hi": "मैं अगले साल प्राथमिक विद्यालय में प्रवेश कर रहा हूँ।",
         "pl": "W przyszłym roku zaczynam szkołę podstawową.",
         "el": "Μπαίνω στο δημοτικό του χρόνου.",
@@ -162,30 +162,30 @@
       "reading": "わたくしはしょうがっこうのせんせいになりたいです。",
       "translations": {
         "en": "I want to become a primary school teacher.",
-        "es": "Quiero ser profesor de primaria.",
-        "fr": "Je veux devenir enseignante à l’école primaire.",
-        "de": "Ich möchte Grundschullehrerin werden.",
+        "es": "Quiero ser docente de primaria.",
+        "fr": "Je veux enseigner à l’école primaire.",
+        "de": "Ich möchte Lehrkraft an einer Grundschule werden.",
         "it": "Voglio diventare insegnante di scuola primaria.",
         "ko": "초등학교 교사가 되고 싶어요.",
         "zh-Hans": "我想成为一名小学教师。",
         "yue": "我想當小學老師。",
-        "ru": "Я хочу стать учителем начальной школы.",
-        "pt": "Quero me tornar professora do ensino fundamental.",
+        "ru": "Я хочу преподавать в начальной школе.",
+        "pt": "Quero dar aulas no ensino fundamental.",
         "he": "אני רוצה להיות מורה בבית ספר יסודי.",
         "tr": "İlkokul öğretmeni olmak istiyorum.",
         "vi": "Tôi muốn trở thành một giáo viên tiểu học.",
-        "ar": "أريد أن أصبح معلمة في المدرسة الابتدائية.",
-        "nl": "Ik wil leraar op de basisschool worden.",
-        "uk": "Я хочу стати вчителем початкової школи.",
+        "ar": "أريد أن أدرّس في المدرسة الابتدائية.",
+        "nl": "Ik wil leerkracht op de basisschool worden.",
+        "uk": "Я хочу викладати в початковій школі.",
         "hu": "Általános iskolai tanár szeretnék lenni.",
-        "hi": "मैं एक प्राथमिक विद्यालय शिक्षक बनना चाहता हूं।",
-        "pl": "Chcę zostać nauczycielem w szkole podstawowej.",
-        "el": "Θέλω να γίνω δασκάλα δημοτικού σχολείου.",
+        "hi": "मेरी इच्छा प्राथमिक विद्यालय में पढ़ाने की है।",
+        "pl": "Chcę uczyć w szkole podstawowej.",
+        "el": "Θέλω να διδάσκω στο δημοτικό σχολείο.",
         "nb": "Jeg vil bli barneskolelærer.",
         "id": "Saya ingin menjadi guru sekolah dasar.",
         "sv": "Jag vill bli grundskollärare.",
-        "ro": "Vreau să devin învățătoare la școala primară.",
-        "cs": "Chci se stát učitelem na základní škole.",
+        "ro": "Vreau să predau la școala primară.",
+        "cs": "Chci učit na základní škole.",
         "da": "Jeg vil gerne være folkeskolelærer.",
         "fi": "Haluan tulla alakoulun opettajaksi."
       },
@@ -333,7 +333,7 @@
       "reading": "きょうはしょうがっこうでうんどうかいがあります。",
       "translations": {
         "en": "There's a sports day at the primary school today.",
-        "es": "Hoy hay un día deportivo en la escuela primaria.",
+        "es": "Hoy hay una jornada deportiva en la escuela primaria.",
         "fr": "Il y a une journée sportive aujourd’hui à l’école primaire.",
         "de": "Heute gibt es einen Sporttag an der Grundschule.",
         "it": "Oggi c'è una giornata sportiva alla scuola primaria.",
@@ -341,7 +341,7 @@
         "zh-Hans": "今天小学有运动会。",
         "yue": "今日小學有運動會",
         "ru": "Сегодня в начальной школе спортивный день.",
-        "pt": "Hoje tem um dia esportivo na escola primária.",
+        "pt": "Hoje tem um festival esportivo na escola primária.",
         "he": "יש יום ספורט בבית הספר היסודי היום.",
         "tr": "Bugün ilkokulda bir spor günü var.",
         "vi": "Hôm nay có một ngày thể thao ở trường tiểu học.",
@@ -487,7 +487,7 @@
     },
     {
       "target": "放課後、小学校の友達と遊びます.",
-      "reading": "ほうかご、しょうがっこうのともだちとあそびます.",
+      "reading": "ほうかご、しょうがっこうのともだちとあそびます．",
       "translations": {
         "en": "After school, I play with my primary school friends.",
         "es": "Después del colegio, juego con mis amigos de primaria.",
@@ -520,12 +520,14 @@
       "tokens": [
         {
           "surface": "放課後",
-          "surface_en": "after school",
-          "furigana": "ほうかご",
-          "pos": "noun",
           "lemma": "放課後",
-          "explanation": "indicates the time period when the action happens",
-          "difficulty": 1,
+          "pos": "名詞/普通名詞/一般/*/*/*",
+          "upos": "NOUN",
+          "xpos": "名詞",
+          "feats": {},
+          "start": 0,
+          "end": 3,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "ほうかご",
           "ruby_text": "放課後[ほうかご]",
           "ruby_spans": [
@@ -536,18 +538,36 @@
               "length": 3
             }
           ],
+          "ruby_confidence": "reviewed",
+          "furigana": "ほうかご",
+          "ruby_source": "mediawiki_sentence_ruby"
+        },
+        {
+          "surface": "、",
+          "lemma": "、",
+          "pos": "補助記号/読点/*/*/*/*",
+          "upos": "PUNCT",
+          "xpos": "補助記号",
+          "feats": {},
+          "start": 3,
+          "end": 4,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "、",
+          "ruby_text": "、",
+          "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "、"
         },
         {
           "surface": "小学校",
-          "surface_en": "elementary school",
-          "furigana": "しょうがっこう",
-          "pos": "noun",
           "lemma": "小学校",
-          "explanation": "the origin or affiliation of the friends",
-          "difficulty": 9,
-          "is_main_word": true,
+          "pos": "名詞/普通名詞/一般/*/*/*",
+          "upos": "NOUN",
+          "xpos": "名詞",
+          "feats": {},
+          "start": 4,
+          "end": 7,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "しょうがっこう",
           "ruby_text": "小学校[しょうがっこう]",
           "ruby_spans": [
@@ -558,31 +578,37 @@
               "length": 3
             }
           ],
-          "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "ruby_confidence": "reviewed",
+          "furigana": "しょうがっこう",
+          "ruby_source": "mediawiki_sentence_ruby",
+          "is_main_word": true
         },
         {
           "surface": "の",
-          "surface_en": "of",
-          "furigana": "の",
-          "pos": "particle",
           "lemma": "の",
-          "explanation": "links 小学校 and 友達 to show that the friends are from the elementary school",
-          "difficulty": 1,
+          "pos": "助詞/格助詞/*/*/*/*",
+          "upos": "PART",
+          "xpos": "助詞",
+          "feats": {},
+          "start": 7,
+          "end": 8,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "の",
           "ruby_text": "の",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "の"
         },
         {
           "surface": "友達",
-          "surface_en": "friends",
-          "furigana": "ともだち",
-          "pos": "noun",
           "lemma": "友達",
-          "explanation": "the people with whom the speaker will play",
-          "difficulty": 18,
+          "pos": "名詞/普通名詞/一般/*/*/*",
+          "upos": "NOUN",
+          "xpos": "名詞",
+          "feats": {},
+          "start": 8,
+          "end": 10,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "ともだち",
           "ruby_text": "友達[ともだち]",
           "ruby_spans": [
@@ -593,33 +619,38 @@
               "length": 2
             }
           ],
-          "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "ruby_confidence": "reviewed",
+          "furigana": "ともだち",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "と",
-          "surface_en": "with",
-          "furigana": "と",
-          "pos": "particle",
           "lemma": "と",
-          "explanation": "indicates companionship or association",
-          "difficulty": 1,
+          "pos": "助詞/格助詞/*/*/*/*",
+          "upos": "PART",
+          "xpos": "助詞",
+          "feats": {},
+          "start": 10,
+          "end": 11,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "と",
           "ruby_text": "と",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "と"
         },
         {
-          "surface": "遊びます",
-          "surface_en": "play",
-          "furigana": "あそびます",
-          "pos": "verb",
+          "surface": "遊び",
           "lemma": "遊ぶ",
-          "explanation": "polite form of 遊ぶ, indicating the action of playing",
-          "difficulty": 30,
-          "reading_kana": "あそびます",
-          "ruby_text": "遊[あそ]びます",
+          "pos": "動詞/一般/*/*/五段-バ行/連用形-一般",
+          "upos": "VERB",
+          "xpos": "動詞",
+          "feats": {},
+          "start": 11,
+          "end": 13,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "あそび",
+          "ruby_text": "遊[あそ]び",
           "ruby_spans": [
             {
               "base": "遊",
@@ -628,8 +659,41 @@
               "length": 1
             }
           ],
+          "ruby_confidence": "reviewed",
+          "furigana": "あそび",
+          "ruby_source": "mediawiki_sentence_ruby"
+        },
+        {
+          "surface": "ます",
+          "lemma": "ます",
+          "pos": "助動詞/*/*/*/助動詞-マス/終止形-一般",
+          "upos": "AUX",
+          "xpos": "助動詞",
+          "feats": {},
+          "start": 13,
+          "end": 15,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "ます",
+          "ruby_text": "ます",
+          "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "ます"
+        },
+        {
+          "surface": ".",
+          "lemma": ".",
+          "pos": "補助記号/句点/*/*/*/*",
+          "upos": "PUNCT",
+          "xpos": "補助記号",
+          "feats": {},
+          "start": 15,
+          "end": 16,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "．",
+          "ruby_text": ".",
+          "ruby_spans": [],
+          "ruby_confidence": "high",
+          "furigana": "．"
         }
       ],
       "difficulty": 10,
@@ -650,19 +714,485 @@
     "content_reviewers": [
       "mediawiki-visible-revision"
     ],
-    "last_reviewed_utc": "2026-06-21T18:38:13Z",
-    "approval_source": "mediawiki_visible_revision",
+    "last_reviewed_utc": "2026-10-11T12:31:30Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
     "wiki": {
       "title": "Item:Ja n5/f9b665c970c1d5a6",
-      "revision_id": 58627,
-      "parent_revision_id": 37071,
-      "revision_timestamp_utc": "2026-06-21T18:38:13Z",
-      "revision_user": "VocomiBot",
-      "revision_comment": "Sync ja_n5 item 小学校",
-      "pulled_utc": "2026-06-21T20:53:48Z",
-      "applied_utc": "2026-06-21T20:54:01Z",
+      "revision_id": 82776,
+      "parent_revision_id": 69802,
+      "revision_timestamp_utc": "2026-10-11T12:31:30Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Suggest reviewed Japanese and translation corrections",
+      "pulled_utc": "2026-10-17T07:37:42Z",
+      "applied_utc": "2026-10-17T07:37:59Z",
       "applied_by": "vocomipedia-apply-pulled"
-    }
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-cb69f93113f79dd6",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "ja_n5:f9b665c970c1d5a6",
+        "pack_code": "ja_n5",
+        "entry_id": "小学校",
+        "language": "ja",
+        "sentence_index": 4,
+        "old_sentence": "放課後、小学校の友達と遊びます。",
+        "old_translations": {
+          "en": "After school, I play with my primary school friends.",
+          "es": "Después del colegio, juego con mis amigos de primaria.",
+          "fr": "Après l’école, je joue avec mes amis de l’école primaire.",
+          "de": "Nach der Schule spiele ich mit meinen Grundschulfreunden.",
+          "it": "Dopo la scuola, gioco con i miei amici delle elementari.",
+          "ko": "방과 후에는 초등학교 친구들과 놀아요.",
+          "zh-Hans": "放学后，我会和小学的朋友们一起玩。",
+          "yue": "放學之後，我同小學嘅朋友一齊玩。",
+          "ru": "После школы я играю с друзьями из начальной школы.",
+          "pt": "Depois da escola, brinco com meus amigos do ensino fundamental.",
+          "he": "אחרי בית הספר, אני משחק עם חברי בית הספר היסודי.",
+          "tr": "Okuldan sonra ilkokul arkadaşlarımla oynuyorum.",
+          "vi": "Sau giờ học, tôi chơi với những người bạn tiểu học của mình.",
+          "ar": "بعد المدرسة، ألعب مع أصدقائي من المدرسة الابتدائية.",
+          "nl": "Na school speel ik met mijn vrienden uit de basisschool.",
+          "uk": "Після школи я граю з друзями з початкової школи.",
+          "hu": "Iskola után az általános iskolai barátaimmal játszom.",
+          "hi": "स्कूल के बाद, मैं अपने प्राथमिक विद्यालय के दोस्तों के साथ खेलता हूं।",
+          "pl": "Po szkole bawię się z przyjaciółmi z podstawówki.",
+          "el": "Μετά το σχολείο, παίζω με τους φίλους μου στο δημοτικό.",
+          "nb": "Etter skolen leker jeg med vennene mine fra barneskolen.",
+          "id": "Sepulang sekolah, saya bermain dengan teman-teman sekolah dasar saya.",
+          "sv": "Efter skolan leker jag med mina vänner från lågstadiet.",
+          "ro": "După școală, mă joc cu prietenii mei din școala primară.",
+          "cs": "Po škole si hraju s kamarády ze základní školy.",
+          "da": "Efter skole leger jeg med mine folkeskolevenner.",
+          "fi": "Koulun jälkeen leikin alakoulukavereideni kanssa."
+        },
+        "proposed_sentence": "放課後、小学校の友達と遊びます.",
+        "proposed_translations": {
+          "en": "After school, I play with my primary school friends.",
+          "es": "Después del colegio, juego con mis amigos de primaria.",
+          "fr": "Après l’école, je joue avec mes amis de l’école primaire.",
+          "de": "Nach der Schule spiele ich mit meinen Grundschulfreunden.",
+          "it": "Dopo la scuola, gioco con i miei amici delle elementari.",
+          "ko": "방과 후에는 초등학교 친구들과 놀아요.",
+          "zh-Hans": "放学后，我会和小学的朋友们一起玩。",
+          "yue": "放學之後，我同小學嘅朋友一齊玩。",
+          "ru": "После школы я играю с друзьями из начальной школы.",
+          "pt": "Depois da escola, brinco com meus amigos do ensino fundamental.",
+          "he": "אחרי בית הספר, אני משחק עם חברי בית הספר היסודי.",
+          "tr": "Okuldan sonra ilkokul arkadaşlarımla oynuyorum.",
+          "vi": "Sau giờ học, tôi chơi với những người bạn tiểu học của mình.",
+          "ar": "بعد المدرسة، ألعب مع أصدقائي من المدرسة الابتدائية.",
+          "nl": "Na school speel ik met mijn vrienden uit de basisschool.",
+          "uk": "Після школи я граю з друзями з початкової школи.",
+          "hu": "Iskola után az általános iskolai barátaimmal játszom.",
+          "hi": "स्कूल के बाद, मैं अपने प्राथमिक विद्यालय के दोस्तों के साथ खेलता हूं।",
+          "pl": "Po szkole bawię się z przyjaciółmi z podstawówki.",
+          "el": "Μετά το σχολείο, παίζω με τους φίλους μου στο δημοτικό.",
+          "nb": "Etter skolen leker jeg med vennene mine fra barneskolen.",
+          "id": "Sepulang sekolah, saya bermain dengan teman-teman sekolah dasar saya.",
+          "sv": "Efter skolan leker jag med mina vänner från lågstadiet.",
+          "ro": "După școală, mă joc cu prietenii mei din școala primară.",
+          "cs": "Po škole si hraju s kamarády ze základní školy.",
+          "da": "Efter skole leger jeg med mine folkeskolevenner.",
+          "fi": "Koulun jälkeen leikin alakoulukavereideni kanssa."
+        },
+        "old_ruby_source": "放課後[ほうかご]、小学校[しょうがっこう]の友達[ともだち]と遊[あそ]びます。",
+        "proposed_ruby_source": "放課後[ほうかご]、小学校[しょうがっこう]の友達[ともだち]と遊[あそ]びます.",
+        "old_japanese": "放課後、小学校の友達と遊びます。",
+        "old_english": "After school, I play with my primary school friends.",
+        "proposed_japanese": "放課後、小学校の友達と遊びます.",
+        "proposed_english": "After school, I play with my primary school friends.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "ja",
+          "sentence": "放課後、小学校の友達と遊びます.",
+          "tokens": [
+            {
+              "surface": "放課後",
+              "lemma": "放課後",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 0,
+              "end": 3,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "ほうかご",
+              "ruby_text": "放課後[ほうかご]",
+              "ruby_spans": [
+                {
+                  "base": "放課後",
+                  "reading": "ほうかご",
+                  "start": 0,
+                  "length": 3
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "ほうかご",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "、",
+              "lemma": "、",
+              "pos": "補助記号/読点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 3,
+              "end": 4,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "、",
+              "ruby_text": "、",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "、"
+            },
+            {
+              "surface": "小学校",
+              "lemma": "小学校",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 4,
+              "end": 7,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "しょうがっこう",
+              "ruby_text": "小学校[しょうがっこう]",
+              "ruby_spans": [
+                {
+                  "base": "小学校",
+                  "reading": "しょうがっこう",
+                  "start": 0,
+                  "length": 3
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "しょうがっこう",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "の",
+              "lemma": "の",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 7,
+              "end": 8,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "の",
+              "ruby_text": "の",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "の"
+            },
+            {
+              "surface": "友達",
+              "lemma": "友達",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 8,
+              "end": 10,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "ともだち",
+              "ruby_text": "友達[ともだち]",
+              "ruby_spans": [
+                {
+                  "base": "友達",
+                  "reading": "ともだち",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "ともだち",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "と",
+              "lemma": "と",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 10,
+              "end": 11,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "と",
+              "ruby_text": "と",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "と"
+            },
+            {
+              "surface": "遊び",
+              "lemma": "遊ぶ",
+              "pos": "動詞/一般/*/*/五段-バ行/連用形-一般",
+              "upos": "VERB",
+              "xpos": "動詞",
+              "feats": {},
+              "start": 11,
+              "end": 13,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "あそび",
+              "ruby_text": "遊[あそ]び",
+              "ruby_spans": [
+                {
+                  "base": "遊",
+                  "reading": "あそ",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "あそび",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "ます",
+              "lemma": "ます",
+              "pos": "助動詞/*/*/*/助動詞-マス/終止形-一般",
+              "upos": "AUX",
+              "xpos": "助動詞",
+              "feats": {},
+              "start": 13,
+              "end": 15,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "ます",
+              "ruby_text": "ます",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "ます"
+            },
+            {
+              "surface": ".",
+              "lemma": ".",
+              "pos": "補助記号/句点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 15,
+              "end": 16,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "．",
+              "ruby_text": ".",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "．"
+            }
+          ],
+          "reading": "ほうかご、しょうがっこうのともだちとあそびます．",
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "warnings": [
+            "mediawiki ruby hints applied"
+          ]
+        },
+        "generated_tokens": [
+          {
+            "surface": "放課後",
+            "lemma": "放課後",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ほうかご",
+            "ruby_text": "放課後[ほうかご]",
+            "ruby_spans": [
+              {
+                "base": "放課後",
+                "reading": "ほうかご",
+                "start": 0,
+                "length": 3
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "ほうかご",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "、",
+            "lemma": "、",
+            "pos": "補助記号/読点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 3,
+            "end": 4,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "、",
+            "ruby_text": "、",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "、"
+          },
+          {
+            "surface": "小学校",
+            "lemma": "小学校",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 4,
+            "end": 7,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "しょうがっこう",
+            "ruby_text": "小学校[しょうがっこう]",
+            "ruby_spans": [
+              {
+                "base": "小学校",
+                "reading": "しょうがっこう",
+                "start": 0,
+                "length": 3
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "しょうがっこう",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "の",
+            "lemma": "の",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 7,
+            "end": 8,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "の",
+            "ruby_text": "の",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "の"
+          },
+          {
+            "surface": "友達",
+            "lemma": "友達",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 8,
+            "end": 10,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ともだち",
+            "ruby_text": "友達[ともだち]",
+            "ruby_spans": [
+              {
+                "base": "友達",
+                "reading": "ともだち",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "ともだち",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "と",
+            "lemma": "と",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 10,
+            "end": 11,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "と",
+            "ruby_text": "と",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "と"
+          },
+          {
+            "surface": "遊び",
+            "lemma": "遊ぶ",
+            "pos": "動詞/一般/*/*/五段-バ行/連用形-一般",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 11,
+            "end": 13,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "あそび",
+            "ruby_text": "遊[あそ]び",
+            "ruby_spans": [
+              {
+                "base": "遊",
+                "reading": "あそ",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "あそび",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "ます",
+            "lemma": "ます",
+            "pos": "助動詞/*/*/*/助動詞-マス/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 13,
+            "end": 15,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ます",
+            "ruby_text": "ます",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "ます"
+          },
+          {
+            "surface": ".",
+            "lemma": ".",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 15,
+            "end": 16,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "．",
+            "ruby_text": ".",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "．"
+          }
+        ],
+        "generated_reading": "ほうかご、しょうがっこうのともだちとあそびます．",
+        "analyzer": "sudachipy_sudachidict_core_c",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:37:42Z",
+        "updated_utc": "2026-10-17T07:38:17Z",
+        "applied_utc": "2026-10-17T07:38:17Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:38:17Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -1048,12 +1578,14 @@
         "tokens": [
           {
             "surface": "放課後",
-            "surface_en": "after school",
-            "furigana": "ほうかご",
-            "pos": "noun",
             "lemma": "放課後",
-            "explanation": "indicates the time period when the action happens",
-            "difficulty": 1,
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "ほうかご",
             "ruby_text": "放課後[ほうかご]",
             "ruby_spans": [
@@ -1064,18 +1596,36 @@
                 "length": 3
               }
             ],
+            "ruby_confidence": "reviewed",
+            "furigana": "ほうかご",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "、",
+            "lemma": "、",
+            "pos": "補助記号/読点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 3,
+            "end": 4,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "、",
+            "ruby_text": "、",
+            "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "、"
           },
           {
             "surface": "小学校",
-            "surface_en": "elementary school",
-            "furigana": "しょうがっこう",
-            "pos": "noun",
             "lemma": "小学校",
-            "explanation": "the origin or affiliation of the friends",
-            "difficulty": 9,
-            "is_main_word": true,
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 4,
+            "end": 7,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "しょうがっこう",
             "ruby_text": "小学校[しょうがっこう]",
             "ruby_spans": [
@@ -1086,31 +1636,37 @@
                 "length": 3
               }
             ],
-            "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "ruby_confidence": "reviewed",
+            "furigana": "しょうがっこう",
+            "ruby_source": "mediawiki_sentence_ruby",
+            "is_main_word": true
           },
           {
             "surface": "の",
-            "surface_en": "of",
-            "furigana": "の",
-            "pos": "particle",
             "lemma": "の",
-            "explanation": "links 小学校 and 友達 to show that the friends are from the elementary school",
-            "difficulty": 1,
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 7,
+            "end": 8,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "の",
             "ruby_text": "の",
             "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "の"
           },
           {
             "surface": "友達",
-            "surface_en": "friends",
-            "furigana": "ともだち",
-            "pos": "noun",
             "lemma": "友達",
-            "explanation": "the people with whom the speaker will play",
-            "difficulty": 18,
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 8,
+            "end": 10,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "ともだち",
             "ruby_text": "友達[ともだち]",
             "ruby_spans": [
@@ -1121,33 +1677,38 @@
                 "length": 2
               }
             ],
-            "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "ruby_confidence": "reviewed",
+            "furigana": "ともだち",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "と",
-            "surface_en": "with",
-            "furigana": "と",
-            "pos": "particle",
             "lemma": "と",
-            "explanation": "indicates companionship or association",
-            "difficulty": 1,
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 10,
+            "end": 11,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "と",
             "ruby_text": "と",
             "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "と"
           },
           {
-            "surface": "遊びます",
-            "surface_en": "play",
-            "furigana": "あそびます",
-            "pos": "verb",
+            "surface": "遊び",
             "lemma": "遊ぶ",
-            "explanation": "polite form of 遊ぶ, indicating the action of playing",
-            "difficulty": 30,
-            "reading_kana": "あそびます",
-            "ruby_text": "遊[あそ]びます",
+            "pos": "動詞/一般/*/*/五段-バ行/連用形-一般",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 11,
+            "end": 13,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "あそび",
+            "ruby_text": "遊[あそ]び",
             "ruby_spans": [
               {
                 "base": "遊",
@@ -1156,8 +1717,41 @@
                 "length": 1
               }
             ],
+            "ruby_confidence": "reviewed",
+            "furigana": "あそび",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "ます",
+            "lemma": "ます",
+            "pos": "助動詞/*/*/*/助動詞-マス/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 13,
+            "end": 15,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ます",
+            "ruby_text": "ます",
+            "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "ます"
+          },
+          {
+            "surface": ".",
+            "lemma": ".",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 15,
+            "end": 16,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "．",
+            "ruby_text": ".",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "．"
           }
         ],
         "difficulty_aggregated": 10
@@ -1194,13 +1788,13 @@
     "word_fi": "Alakoulu",
     "ar": [
       "سأدخل المدرسة الابتدائية العام القادم.",
-      "أريد أن أصبح معلمة في المدرسة الابتدائية.",
+      "أريد أن أدرّس في المدرسة الابتدائية.",
       "هناك يوم رياضي في المدرسة الابتدائية اليوم.",
       "بعد المدرسة، ألعب مع أصدقائي من المدرسة الابتدائية."
     ],
     "cs": [
       "Příští rok nastupuji na základní školu.",
-      "Chci se stát učitelem na základní škole.",
+      "Chci učit na základní škole.",
       "Dnes je sportovní den na základní škole.",
       "Po škole si hraju s kamarády ze základní školy."
     ],
@@ -1212,13 +1806,13 @@
     ],
     "de": [
       "Nächstes Jahr beginne ich die Grundschule.",
-      "Ich möchte Grundschullehrerin werden.",
+      "Ich möchte Lehrkraft an einer Grundschule werden.",
       "Heute gibt es einen Sporttag an der Grundschule.",
       "Nach der Schule spiele ich mit meinen Grundschulfreunden."
     ],
     "el": [
       "Μπαίνω στο δημοτικό του χρόνου.",
-      "Θέλω να γίνω δασκάλα δημοτικού σχολείου.",
+      "Θέλω να διδάσκω στο δημοτικό σχολείο.",
       "Υπάρχει μια αθλητική μέρα στο δημοτικό σχολείο σήμερα.",
       "Μετά το σχολείο, παίζω με τους φίλους μου στο δημοτικό."
     ],
@@ -1230,8 +1824,8 @@
     ],
     "es": [
       "El año que viene empiezo en primaria.",
-      "Quiero ser profesor de primaria.",
-      "Hoy hay un día deportivo en la escuela primaria.",
+      "Quiero ser docente de primaria.",
+      "Hoy hay una jornada deportiva en la escuela primaria.",
       "Después del colegio, juego con mis amigos de primaria."
     ],
     "fi": [
@@ -1242,7 +1836,7 @@
     ],
     "fr": [
       "J’entre à l’école primaire l’année prochaine.",
-      "Je veux devenir enseignante à l’école primaire.",
+      "Je veux enseigner à l’école primaire.",
       "Il y a une journée sportive aujourd’hui à l’école primaire.",
       "Après l’école, je joue avec mes amis de l’école primaire."
     ],
@@ -1254,12 +1848,12 @@
     ],
     "hi": [
       "मैं अगले साल प्राथमिक विद्यालय में प्रवेश कर रहा हूँ।",
-      "मैं एक प्राथमिक विद्यालय शिक्षक बनना चाहता हूं।",
+      "मेरी इच्छा प्राथमिक विद्यालय में पढ़ाने की है।",
       "आज प्राथमिक विद्यालय में एक खेल दिवस है।",
       "स्कूल के बाद, मैं अपने प्राथमिक विद्यालय के दोस्तों के साथ खेलता हूं।"
     ],
     "hu": [
-      "Jövőre kezdem általános iskolát.",
+      "Jövőre kezdem az általános iskolát.",
       "Általános iskolai tanár szeretnék lenni.",
       "Ma sportnap van az általános iskolában.",
       "Iskola után az általános iskolai barátaimmal játszom."
@@ -1290,31 +1884,31 @@
     ],
     "nl": [
       "Volgend jaar ga ik naar de basisschool.",
-      "Ik wil leraar op de basisschool worden.",
+      "Ik wil leerkracht op de basisschool worden.",
       "Er is vandaag een sportdag op de basisschool.",
       "Na school speel ik met mijn vrienden uit de basisschool."
     ],
     "pl": [
       "W przyszłym roku zaczynam szkołę podstawową.",
-      "Chcę zostać nauczycielem w szkole podstawowej.",
+      "Chcę uczyć w szkole podstawowej.",
       "Dziś w szkole podstawowej jest dzień sportowy.",
       "Po szkole bawię się z przyjaciółmi z podstawówki."
     ],
     "pt": [
       "Vou entrar no ensino fundamental no ano que vem.",
-      "Quero me tornar professora do ensino fundamental.",
-      "Hoje tem um dia esportivo na escola primária.",
+      "Quero dar aulas no ensino fundamental.",
+      "Hoje tem um festival esportivo na escola primária.",
       "Depois da escola, brinco com meus amigos do ensino fundamental."
     ],
     "ro": [
       "Intru la școala primară anul viitor.",
-      "Vreau să devin învățătoare la școala primară.",
+      "Vreau să predau la școala primară.",
       "Astăzi este o zi sportivă la școala primară.",
       "După școală, mă joc cu prietenii mei din școala primară."
     ],
     "ru": [
       "В следующем году я поступаю в начальную школу.",
-      "Я хочу стать учителем начальной школы.",
+      "Я хочу преподавать в начальной школе.",
       "Сегодня в начальной школе спортивный день.",
       "После школы я играю с друзьями из начальной школы."
     ],
@@ -1332,7 +1926,7 @@
     ],
     "uk": [
       "Наступного року я йду до початкової школи.",
-      "Я хочу стати вчителем початкової школи.",
+      "Я хочу викладати в початковій школі.",
       "Сьогодні в початковій школі спортивний день.",
       "Після школи я граю з друзями з початкової школи."
     ],

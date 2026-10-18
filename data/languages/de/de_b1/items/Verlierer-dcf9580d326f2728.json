@@ -49,7 +49,7 @@
       "translations": {
         "de": "Heute bin ich leider der Verlierer.",
         "ipa": "/ˈhɔɪ̯tə bɪn ɪç ˈlaɪ̯dɐ deːɐ̯ fɛɐ̯ˈliːʁɐ./",
-        "en": "Today I'm unfortunately the loser.",
+        "en": "Unfortunately, I'm the loser today.",
         "es": "Hoy, por desgracia, me tocó perder.",
         "fr": "Aujourd'hui, malheureusement, j'ai perdu.",
         "it": "Oggi, purtroppo, ho perso.",
@@ -154,7 +154,7 @@
         "he": "אחרי המשחק היא מנחמת את מי שהפסיד.",
         "tr": "Maçtan sonra kaybedeni teselli ediyor.",
         "vi": "Sau trận, cô ấy an ủi người thua cuộc.",
-        "ar": "بعد المباراة، هي تواसी من خسر.",
+        "ar": "بعد المباراة، هي تواسي من خسر.",
         "nl": "Ze troost de verliezer na de wedstrijd.",
         "uk": "Після гри вона втішає того, хто програв.",
         "hu": "A meccs után megvigasztalja a vesztest.",
@@ -239,10 +239,10 @@
       "difficulty": 5
     },
     {
-      "target": "Bei Mario Kart bleibt Tom wieder Verlierer.",
+      "target": "Bei Mario Kart bleibt Tom wieder der Verlierer.",
       "reading": "/baɪ̯ ˈmaːʁio kaʁt blaɪ̯pt tɔm ˈviːdɐ fɛɐ̯ˈliːʁɐ./",
       "translations": {
-        "de": "Bei Mario Kart bleibt Tom wieder Verlierer.",
+        "de": "Bei Mario Kart bleibt Tom wieder der Verlierer.",
         "ipa": "/baɪ̯ ˈmaːʁio kaʁt blaɪ̯pt tɔm ˈviːdɐ fɛɐ̯ˈliːʁɐ./",
         "en": "In Mario Kart, Tom ends up the loser again.",
         "es": "En Mario Kart, Tom volvió a perder.",
@@ -275,67 +275,103 @@
       "tokens": [
         {
           "surface": "Bei",
-          "surface_en": "at",
-          "furigana": "[baɪ]",
-          "pos": "ADP",
           "lemma": "bei",
-          "explanation": "Preposition governing the dative; introduces a contextual/location PP.",
-          "difficulty": 2
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "APPR",
+          "feats": {},
+          "start": 0,
+          "end": 3,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "Mario",
-          "surface_en": "Mario",
-          "furigana": "[ˈmaːʁio]",
-          "pos": "PROPN",
           "lemma": "Mario",
-          "explanation": "Proper noun; first part of the multiword proper name 'Mario Kart' functioning as the dative object of 'bei'.",
-          "difficulty": 7
+          "pos": "PROPN",
+          "upos": "PROPN",
+          "xpos": "NE",
+          "feats": {},
+          "start": 4,
+          "end": 9,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "Kart",
-          "surface_en": "Kart",
-          "furigana": "[kaʁt]",
-          "pos": "PROPN",
           "lemma": "Kart",
-          "explanation": "Proper noun; second part of the multiword proper name 'Mario Kart' in dative; object of 'bei'.",
-          "difficulty": 7
+          "pos": "PROPN",
+          "upos": "PROPN",
+          "xpos": "NE",
+          "feats": {},
+          "start": 10,
+          "end": 14,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "bleibt",
-          "surface_en": "remains",
-          "furigana": "[blaɪpt]",
-          "pos": "VERB",
           "lemma": "bleiben",
-          "explanation": "Finite main verb (present 3sg); links the subject with a predicate nominal.",
-          "difficulty": 7
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VVFIN",
+          "feats": {},
+          "start": 15,
+          "end": 21,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "Tom",
-          "surface_en": "Tom",
-          "furigana": "[tɔm]",
-          "pos": "PROPN",
           "lemma": "Tom",
-          "explanation": "Proper noun, nominative singular; subject.",
-          "difficulty": 4
+          "pos": "PROPN",
+          "upos": "PROPN",
+          "xpos": "NE",
+          "feats": {},
+          "start": 22,
+          "end": 25,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "wieder",
-          "surface_en": "again",
-          "furigana": "[ˈviːdɐ]",
-          "pos": "ADV",
           "lemma": "wieder",
-          "explanation": "Adverb indicating repetition; modifies the verb phrase.",
-          "difficulty": 7
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "ADV",
+          "feats": {},
+          "start": 26,
+          "end": 32,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "Verlierer.",
-          "surface_en": "loser",
-          "furigana": "[fɛɐˈliːʁɐ]",
-          "pos": "NOUN",
+          "surface": "der",
+          "lemma": "der",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "ART",
+          "feats": {},
+          "start": 33,
+          "end": 36,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "Verlierer",
           "lemma": "Verlierer",
-          "explanation": "Common noun, masculine, nominative singular; predicate nominal with 'bleibt' (bare form indicates indefiniteness).",
-          "difficulty": 10,
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 37,
+          "end": 46,
+          "analyzer": "spacy_de_core_news_lg",
           "is_main_word": true
+        },
+        {
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 46,
+          "end": 47,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 6.29
@@ -436,8 +472,336 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-15T04:37:15Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:De b1/dcf9580d326f2728",
+      "revision_id": 84850,
+      "parent_revision_id": 18268,
+      "revision_timestamp_utc": "2026-10-15T04:37:15Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Add the needed article in the German Mario Kart sentence, smooth the English wording, and fix mixed-script Arabic text.",
+      "pulled_utc": "2026-10-17T07:06:44Z",
+      "applied_utc": "2026-10-17T07:06:51Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-ea1ffec3f483a74e",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_b1:dcf9580d326f2728",
+        "pack_code": "de_b1",
+        "entry_id": "Verlierer",
+        "language": "de",
+        "sentence_index": 3,
+        "old_sentence": "Bei Mario Kart bleibt Tom wieder Verlierer.",
+        "old_translations": {
+          "de": "Bei Mario Kart bleibt Tom wieder Verlierer.",
+          "ipa": "/baɪ̯ ˈmaːʁio kaʁt blaɪ̯pt tɔm ˈviːdɐ fɛɐ̯ˈliːʁɐ./",
+          "en": "In Mario Kart, Tom ends up the loser again.",
+          "es": "En Mario Kart, Tom volvió a perder.",
+          "fr": "À Mario Kart, Tom a encore perdu.",
+          "it": "A Mario Kart, Tom ha perso di nuovo.",
+          "ko": "마리오 카트에서 톰이 또 졌어요.",
+          "zh-Hans": "在马里奥赛车里，汤姆又输了。",
+          "yue": "喺馬里奧賽車入面，湯姆又輸咗。",
+          "ru": "В Mario Kart Том снова проиграл.",
+          "pt": "No Mario Kart, Tom perdeu de novo.",
+          "he": "במריו קארט, טום הפסיד שוב.",
+          "tr": "Mario Kart’ta Tom yine kaybetti.",
+          "vi": "Trong Mario Kart, Tom lại thua.",
+          "ar": "في ماريو كارت، توم خسر مرة أخرى.",
+          "nl": "In Mario Kart verloor Tom weer.",
+          "uk": "В Mario Kart Том знову програв.",
+          "hu": "A Mario Kartban Tom megint vesztett.",
+          "hi": "मारियो कार्ट में टॉम फिर हार गया.",
+          "pl": "W Mario Kart Tom znowu przegrał.",
+          "el": "Στο Mario Kart ο Τομ έχασε πάλι.",
+          "nb": "I Mario Kart tapte Tom igjen.",
+          "id": "Di Mario Kart, Tom kalah lagi.",
+          "sv": "I Mario Kart förlorade Tom igen.",
+          "ro": "La Mario Kart, Tom a pierdut din nou.",
+          "cs": "V Mario Kart Tom zase prohrál.",
+          "da": "I Mario Kart tabte Tom igen.",
+          "fi": "Mario Kartissa Tom hävisi taas.",
+          "ja": "マリオカートでトムはまた負けた。"
+        },
+        "proposed_sentence": "Bei Mario Kart bleibt Tom wieder der Verlierer.",
+        "proposed_translations": {
+          "de": "Bei Mario Kart bleibt Tom wieder der Verlierer.",
+          "ipa": "/baɪ̯ ˈmaːʁio kaʁt blaɪ̯pt tɔm ˈviːdɐ fɛɐ̯ˈliːʁɐ./",
+          "en": "In Mario Kart, Tom ends up the loser again.",
+          "es": "En Mario Kart, Tom volvió a perder.",
+          "fr": "À Mario Kart, Tom a encore perdu.",
+          "it": "A Mario Kart, Tom ha perso di nuovo.",
+          "ko": "마리오 카트에서 톰이 또 졌어요.",
+          "zh-Hans": "在马里奥赛车里，汤姆又输了。",
+          "yue": "喺馬里奧賽車入面，湯姆又輸咗。",
+          "ru": "В Mario Kart Том снова проиграл.",
+          "pt": "No Mario Kart, Tom perdeu de novo.",
+          "he": "במריו קארט, טום הפסיד שוב.",
+          "tr": "Mario Kart’ta Tom yine kaybetti.",
+          "vi": "Trong Mario Kart, Tom lại thua.",
+          "ar": "في ماريو كارت، توم خسر مرة أخرى.",
+          "nl": "In Mario Kart verloor Tom weer.",
+          "uk": "В Mario Kart Том знову програв.",
+          "hu": "A Mario Kartban Tom megint vesztett.",
+          "hi": "मारियो कार्ट में टॉम फिर हार गया.",
+          "pl": "W Mario Kart Tom znowu przegrał.",
+          "el": "Στο Mario Kart ο Τομ έχασε πάλι.",
+          "nb": "I Mario Kart tapte Tom igjen.",
+          "id": "Di Mario Kart, Tom kalah lagi.",
+          "sv": "I Mario Kart förlorade Tom igen.",
+          "ro": "La Mario Kart, Tom a pierdut din nou.",
+          "cs": "V Mario Kart Tom zase prohrál.",
+          "da": "I Mario Kart tabte Tom igen.",
+          "fi": "Mario Kartissa Tom hävisi taas.",
+          "ja": "マリオカートでトムはまた負けた。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Bei Mario Kart bleibt Tom wieder der Verlierer.",
+        "old_japanese": "Bei Mario Kart bleibt Tom wieder Verlierer.",
+        "old_english": "In Mario Kart, Tom ends up the loser again.",
+        "proposed_japanese": "Bei Mario Kart bleibt Tom wieder der Verlierer.",
+        "proposed_english": "In Mario Kart, Tom ends up the loser again.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Bei Mario Kart bleibt Tom wieder der Verlierer.",
+          "tokens": [
+            {
+              "surface": "Bei",
+              "lemma": "bei",
+              "pos": "ADP",
+              "upos": "ADP",
+              "xpos": "APPR",
+              "feats": {},
+              "start": 0,
+              "end": 3,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Mario",
+              "lemma": "Mario",
+              "pos": "PROPN",
+              "upos": "PROPN",
+              "xpos": "NE",
+              "feats": {},
+              "start": 4,
+              "end": 9,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Kart",
+              "lemma": "Kart",
+              "pos": "PROPN",
+              "upos": "PROPN",
+              "xpos": "NE",
+              "feats": {},
+              "start": 10,
+              "end": 14,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "bleibt",
+              "lemma": "bleiben",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVFIN",
+              "feats": {},
+              "start": 15,
+              "end": 21,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Tom",
+              "lemma": "Tom",
+              "pos": "PROPN",
+              "upos": "PROPN",
+              "xpos": "NE",
+              "feats": {},
+              "start": 22,
+              "end": 25,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "wieder",
+              "lemma": "wieder",
+              "pos": "ADV",
+              "upos": "ADV",
+              "xpos": "ADV",
+              "feats": {},
+              "start": 26,
+              "end": 32,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "der",
+              "lemma": "der",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "ART",
+              "feats": {},
+              "start": 33,
+              "end": 36,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Verlierer",
+              "lemma": "Verlierer",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 37,
+              "end": 46,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 46,
+              "end": 47,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Bei",
+            "lemma": "bei",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Mario",
+            "lemma": "Mario",
+            "pos": "PROPN",
+            "upos": "PROPN",
+            "xpos": "NE",
+            "feats": {},
+            "start": 4,
+            "end": 9,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Kart",
+            "lemma": "Kart",
+            "pos": "PROPN",
+            "upos": "PROPN",
+            "xpos": "NE",
+            "feats": {},
+            "start": 10,
+            "end": 14,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "bleibt",
+            "lemma": "bleiben",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 15,
+            "end": 21,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Tom",
+            "lemma": "Tom",
+            "pos": "PROPN",
+            "upos": "PROPN",
+            "xpos": "NE",
+            "feats": {},
+            "start": 22,
+            "end": 25,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "wieder",
+            "lemma": "wieder",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 26,
+            "end": 32,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "der",
+            "lemma": "der",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 33,
+            "end": 36,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Verlierer",
+            "lemma": "Verlierer",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 37,
+            "end": 46,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 46,
+            "end": 47,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:06:44Z",
+        "updated_utc": "2026-10-17T07:07:06Z",
+        "applied_utc": "2026-10-17T07:07:06Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:07:06Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -449,34 +813,6 @@
     "word": "Verlierer",
     "word_reading": "",
     "word_label": "Substantiv (der mask.)",
-    "word_en": "loser; defeated person",
-    "word_es": "perdedor; derrotado",
-    "word_fr": "perdant; vaincu",
-    "word_it": "perdente; sconfitto",
-    "word_ko": "패자; 진 사람",
-    "word_zh-Hans": "失败者; 输家",
-    "word_yue": "輸家; 失敗者",
-    "word_ru": "проигравший; неудачник",
-    "word_pt": "perdedor; derrotado",
-    "word_he": "מפסיד; מובס",
-    "word_tr": "kaybeden; mağlup",
-    "word_vi": "người thua; kẻ thua cuộc",
-    "word_ar": "خاسر; مهزوم",
-    "word_nl": "verliezer; verliezende partij",
-    "word_uk": "той, хто програв; невдаха",
-    "word_hu": "vesztes; legyőzött",
-    "word_hi": "हारने वाला; पराजित",
-    "word_pl": "przegrany; pokonany",
-    "word_el": "χαμένος; ηττημένος",
-    "word_nb": "taper; den tapende",
-    "word_id": "pecundang; yang kalah",
-    "word_sv": "förlorare; den förlorande",
-    "word_ro": "perdant; înfrânt",
-    "word_cs": "poražený; ten, kdo prohrál",
-    "word_da": "taber; den tabende",
-    "word_fi": "häviäjä; hävinnyt osapuoli",
-    "word_ja": "敗者; 負けた人",
-    "word_de": "Verlierer",
     "comic_difficulty": 5.96,
     "jp": [
       "Heute bin ich leider der Verlierer.",
@@ -489,24 +825,6 @@
       "/ziː ˈtrøːstət deːn fɛɐ̯ˈliːʁɐ nax deːm ʃpiːl./",
       "/baɪ̯ ˈmaːʁio kaʁt blaɪ̯pt tɔm ˈviːdɐ fɛɐ̯ˈliːʁɐ./",
       "/ˈniːmant nɛnt dɪç ˈaɪ̯nən fɛɐ̯ˈliːʁɐ./"
-    ],
-    "de": [
-      "Heute bin ich leider der Verlierer.",
-      "Sie tröstet den Verlierer nach dem Spiel.",
-      "Bei Mario Kart bleibt Tom wieder Verlierer.",
-      "Niemand nennt dich einen Verlierer."
-    ],
-    "ipa": [
-      "/ˈhɔɪ̯tə bɪn ɪç ˈlaɪ̯dɐ deːɐ̯ fɛɐ̯ˈliːʁɐ./",
-      "/ziː ˈtrøːstət deːn fɛɐ̯ˈliːʁɐ nax deːm ʃpiːl./",
-      "/baɪ̯ ˈmaːʁio kaʁt blaɪ̯pt tɔm ˈviːdɐ fɛɐ̯ˈliːʁɐ./",
-      "/ˈniːmant nɛnt dɪç ˈaɪ̯nən fɛɐ̯ˈliːʁɐ./"
-    ],
-    "en": [
-      "Today I'm unfortunately the loser.",
-      "She comforts the loser after the game.",
-      "In Mario Kart, Tom ends up the loser again.",
-      "Nobody calls you a loser."
     ],
     "pos_analysis": [
       {
@@ -641,71 +959,107 @@
         "difficulty_aggregated": 5
       },
       {
-        "sentence": "Bei Mario Kart bleibt Tom wieder Verlierer.",
+        "sentence": "Bei Mario Kart bleibt Tom wieder der Verlierer.",
         "tokens": [
           {
             "surface": "Bei",
-            "surface_en": "at",
-            "furigana": "[baɪ]",
-            "pos": "ADP",
             "lemma": "bei",
-            "explanation": "Preposition governing the dative; introduces a contextual/location PP.",
-            "difficulty": 2
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "Mario",
-            "surface_en": "Mario",
-            "furigana": "[ˈmaːʁio]",
-            "pos": "PROPN",
             "lemma": "Mario",
-            "explanation": "Proper noun; first part of the multiword proper name 'Mario Kart' functioning as the dative object of 'bei'.",
-            "difficulty": 7
+            "pos": "PROPN",
+            "upos": "PROPN",
+            "xpos": "NE",
+            "feats": {},
+            "start": 4,
+            "end": 9,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "Kart",
-            "surface_en": "Kart",
-            "furigana": "[kaʁt]",
-            "pos": "PROPN",
             "lemma": "Kart",
-            "explanation": "Proper noun; second part of the multiword proper name 'Mario Kart' in dative; object of 'bei'.",
-            "difficulty": 7
+            "pos": "PROPN",
+            "upos": "PROPN",
+            "xpos": "NE",
+            "feats": {},
+            "start": 10,
+            "end": 14,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "bleibt",
-            "surface_en": "remains",
-            "furigana": "[blaɪpt]",
-            "pos": "VERB",
             "lemma": "bleiben",
-            "explanation": "Finite main verb (present 3sg); links the subject with a predicate nominal.",
-            "difficulty": 7
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 15,
+            "end": 21,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "Tom",
-            "surface_en": "Tom",
-            "furigana": "[tɔm]",
-            "pos": "PROPN",
             "lemma": "Tom",
-            "explanation": "Proper noun, nominative singular; subject.",
-            "difficulty": 4
+            "pos": "PROPN",
+            "upos": "PROPN",
+            "xpos": "NE",
+            "feats": {},
+            "start": 22,
+            "end": 25,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "wieder",
-            "surface_en": "again",
-            "furigana": "[ˈviːdɐ]",
-            "pos": "ADV",
             "lemma": "wieder",
-            "explanation": "Adverb indicating repetition; modifies the verb phrase.",
-            "difficulty": 7
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 26,
+            "end": 32,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "Verlierer.",
-            "surface_en": "loser",
-            "furigana": "[fɛɐˈliːʁɐ]",
-            "pos": "NOUN",
+            "surface": "der",
+            "lemma": "der",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 33,
+            "end": 36,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Verlierer",
             "lemma": "Verlierer",
-            "explanation": "Common noun, masculine, nominative singular; predicate nominal with 'bleibt' (bare form indicates indefiniteness).",
-            "difficulty": 10,
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 37,
+            "end": 46,
+            "analyzer": "spacy_de_core_news_lg",
             "is_main_word": true
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 46,
+            "end": 47,
+            "analyzer": "spacy_de_core_news_lg"
           }
         ],
         "difficulty_aggregated": 6.29
@@ -763,137 +1117,41 @@
         "difficulty_aggregated": 7.2
       }
     ],
-    "es": [
-      "Hoy, por desgracia, me tocó perder.",
-      "Ella consuela al que perdió después del partido.",
-      "En Mario Kart, Tom volvió a perder.",
-      "Nadie te llama perdedor."
-    ],
-    "fr": [
-      "Aujourd'hui, malheureusement, j'ai perdu.",
-      "Elle réconforte le perdant après le match.",
-      "À Mario Kart, Tom a encore perdu.",
-      "Personne ne te traite de perdant."
-    ],
-    "it": [
-      "Oggi, purtroppo, ho perso.",
-      "Consola chi ha perso dopo la partita.",
-      "A Mario Kart, Tom ha perso di nuovo.",
-      "Nessuno ti chiama perdente."
-    ],
-    "ko": [
-      "오늘은 안타깝게도 제가 졌어요.",
-      "경기 후에 그녀는 진 선수를 위로한다.",
-      "마리오 카트에서 톰이 또 졌어요.",
-      "아무도 너를 루저라고 부르지 않아."
-    ],
-    "zh-Hans": [
-      "今天很遗憾我输了。",
-      "比赛后，她安慰了输的那位。",
-      "在马里奥赛车里，汤姆又输了。",
-      "没有人会叫你失败者。"
-    ],
-    "yue": [
-      "今日可惜我輸咗。",
-      "比賽後佢安慰咗輸嗰位。",
-      "喺馬里奧賽車入面，湯姆又輸咗。",
-      "冇人會叫你輸家。"
-    ],
-    "ru": [
-      "К сожалению, сегодня я проиграл.",
-      "После игры она утешает проигравшего.",
-      "В Mario Kart Том снова проиграл.",
-      "Никто не называет тебя неудачником."
-    ],
-    "pt": [
-      "Infelizmente, hoje eu perdi.",
-      "Depois do jogo, ela consola quem perdeu.",
-      "No Mario Kart, Tom perdeu de novo.",
-      "Ninguém te chama de perdedor."
-    ],
-    "he": [
-      "היום, לצערי, הפסדתי.",
-      "אחרי המשחק היא מנחמת את מי שהפסיד.",
-      "במריו קארט, טום הפסיד שוב.",
-      "אף אחד לא קורא לך מפסידן."
-    ],
-    "tr": [
-      "Bugün ne yazık ki kaybettim.",
-      "Maçtan sonra kaybedeni teselli ediyor.",
-      "Mario Kart’ta Tom yine kaybetti.",
-      "Kimse sana kaybeden demiyor."
-    ],
-    "vi": [
-      "Hôm nay, tiếc là tôi đã thua.",
-      "Sau trận, cô ấy an ủi người thua cuộc.",
-      "Trong Mario Kart, Tom lại thua.",
-      "Không ai gọi bạn là kẻ thua cuộc."
-    ],
+    "word_POS": "Noun",
+    "entry_id": "Verlierer",
+    "word_en": "loser; defeated person",
+    "word_es": "perdedor; derrotado",
+    "word_fr": "perdant; vaincu",
+    "word_it": "perdente; sconfitto",
+    "word_ko": "패자; 진 사람",
+    "word_zh-Hans": "失败者; 输家",
+    "word_yue": "輸家; 失敗者",
+    "word_ru": "проигравший; неудачник",
+    "word_pt": "perdedor; derrotado",
+    "word_he": "מפסיד; מובס",
+    "word_tr": "kaybeden; mağlup",
+    "word_vi": "người thua; kẻ thua cuộc",
+    "word_ar": "خاسر; مهزوم",
+    "word_nl": "verliezer; verliezende partij",
+    "word_uk": "той, хто програв; невдаха",
+    "word_hu": "vesztes; legyőzött",
+    "word_hi": "हारने वाला; पराजित",
+    "word_pl": "przegrany; pokonany",
+    "word_el": "χαμένος; ηττημένος",
+    "word_nb": "taper; den tapende",
+    "word_id": "pecundang; yang kalah",
+    "word_sv": "förlorare; den förlorande",
+    "word_ro": "perdant; înfrânt",
+    "word_cs": "poražený; ten, kdo prohrál",
+    "word_da": "taber; den tabende",
+    "word_fi": "häviäjä; hävinnyt osapuoli",
+    "word_ja": "敗者; 負けた人",
+    "word_de": "Verlierer",
     "ar": [
       "للأسف، اليوم خسرت.",
-      "بعد المباراة، هي تواसी من خسر.",
+      "بعد المباراة، هي تواسي من خسر.",
       "في ماريو كارت، توم خسر مرة أخرى.",
       "لا أحد يناديك خاسرًا."
-    ],
-    "nl": [
-      "Vandaag heb ik helaas verloren.",
-      "Ze troost de verliezer na de wedstrijd.",
-      "In Mario Kart verloor Tom weer.",
-      "Niemand noemt jou een verliezer."
-    ],
-    "uk": [
-      "На жаль, сьогодні я програв.",
-      "Після гри вона втішає того, хто програв.",
-      "В Mario Kart Том знову програв.",
-      "Ніхто не називає тебе невдахою."
-    ],
-    "hu": [
-      "Sajnos ma én vesztettem.",
-      "A meccs után megvigasztalja a vesztest.",
-      "A Mario Kartban Tom megint vesztett.",
-      "Senki sem nevez téged vesztesnek."
-    ],
-    "hi": [
-      "आज दुर्भाग्यवश मैं हार गया.",
-      "मैच के बाद वह हारने वाले को दिलासा देती है.",
-      "मारियो कार्ट में टॉम फिर हार गया.",
-      "कोई तुम्हें हारा हुआ नहीं कहता."
-    ],
-    "pl": [
-      "Niestety, dziś przegrałem.",
-      "Po meczu pociesza przegranego.",
-      "W Mario Kart Tom znowu przegrał.",
-      "Nikt nie nazywa cię przegranym."
-    ],
-    "el": [
-      "Δυστυχώς, σήμερα έχασα.",
-      "Μετά τον αγώνα, εκείνη παρηγορεί τον χαμένο.",
-      "Στο Mario Kart ο Τομ έχασε πάλι.",
-      "Κανείς δεν σε λέει χαμένο."
-    ],
-    "nb": [
-      "I dag tapte jeg dessverre.",
-      "Etter kampen trøster hun taperen.",
-      "I Mario Kart tapte Tom igjen.",
-      "Ingen kaller deg en taper."
-    ],
-    "id": [
-      "Sayangnya, hari ini saya kalah.",
-      "Setelah pertandingan, dia menghibur yang kalah.",
-      "Di Mario Kart, Tom kalah lagi.",
-      "Tidak ada yang menyebutmu pecundang."
-    ],
-    "sv": [
-      "Tyvärr förlorade jag idag.",
-      "Efter matchen tröstar hon förloraren.",
-      "I Mario Kart förlorade Tom igen.",
-      "Ingen kallar dig en förlorare."
-    ],
-    "ro": [
-      "Din păcate, azi am pierdut.",
-      "După meci, ea îl consolează pe cel care a pierdut.",
-      "La Mario Kart, Tom a pierdut din nou.",
-      "Nimeni nu te numește un învins."
     ],
     "cs": [
       "Bohužel jsem dnes prohrál.",
@@ -907,11 +1165,77 @@
       "I Mario Kart tabte Tom igen.",
       "Ingen kalder dig en taber."
     ],
+    "de": [
+      "Heute bin ich leider der Verlierer.",
+      "Sie tröstet den Verlierer nach dem Spiel.",
+      "Bei Mario Kart bleibt Tom wieder Verlierer.",
+      "Niemand nennt dich einen Verlierer."
+    ],
+    "el": [
+      "Δυστυχώς, σήμερα έχασα.",
+      "Μετά τον αγώνα, εκείνη παρηγορεί τον χαμένο.",
+      "Στο Mario Kart ο Τομ έχασε πάλι.",
+      "Κανείς δεν σε λέει χαμένο."
+    ],
+    "en": [
+      "Unfortunately, I'm the loser today.",
+      "She comforts the loser after the game.",
+      "In Mario Kart, Tom ends up the loser again.",
+      "Nobody calls you a loser."
+    ],
+    "es": [
+      "Hoy, por desgracia, me tocó perder.",
+      "Ella consuela al que perdió después del partido.",
+      "En Mario Kart, Tom volvió a perder.",
+      "Nadie te llama perdedor."
+    ],
     "fi": [
       "Valitettavasti hävisin tänään.",
       "Pelin jälkeen hän lohduttaa häviäjää.",
       "Mario Kartissa Tom hävisi taas.",
       "Kukaan ei kutsu sinua häviäjäksi."
+    ],
+    "fr": [
+      "Aujourd'hui, malheureusement, j'ai perdu.",
+      "Elle réconforte le perdant après le match.",
+      "À Mario Kart, Tom a encore perdu.",
+      "Personne ne te traite de perdant."
+    ],
+    "he": [
+      "היום, לצערי, הפסדתי.",
+      "אחרי המשחק היא מנחמת את מי שהפסיד.",
+      "במריו קארט, טום הפסיד שוב.",
+      "אף אחד לא קורא לך מפסידן."
+    ],
+    "hi": [
+      "आज दुर्भाग्यवश मैं हार गया.",
+      "मैच के बाद वह हारने वाले को दिलासा देती है.",
+      "मारियो कार्ट में टॉम फिर हार गया.",
+      "कोई तुम्हें हारा हुआ नहीं कहता."
+    ],
+    "hu": [
+      "Sajnos ma én vesztettem.",
+      "A meccs után megvigasztalja a vesztest.",
+      "A Mario Kartban Tom megint vesztett.",
+      "Senki sem nevez téged vesztesnek."
+    ],
+    "id": [
+      "Sayangnya, hari ini saya kalah.",
+      "Setelah pertandingan, dia menghibur yang kalah.",
+      "Di Mario Kart, Tom kalah lagi.",
+      "Tidak ada yang menyebutmu pecundang."
+    ],
+    "ipa": [
+      "/ˈhɔɪ̯tə bɪn ɪç ˈlaɪ̯dɐ deːɐ̯ fɛɐ̯ˈliːʁɐ./",
+      "/ziː ˈtrøːstət deːn fɛɐ̯ˈliːʁɐ nax deːm ʃpiːl./",
+      "/baɪ̯ ˈmaːʁio kaʁt blaɪ̯pt tɔm ˈviːdɐ fɛɐ̯ˈliːʁɐ./",
+      "/ˈniːmant nɛnt dɪç ˈaɪ̯nən fɛɐ̯ˈliːʁɐ./"
+    ],
+    "it": [
+      "Oggi, purtroppo, ho perso.",
+      "Consola chi ha perso dopo la partita.",
+      "A Mario Kart, Tom ha perso di nuovo.",
+      "Nessuno ti chiama perdente."
     ],
     "ja": [
       "今日は残念ながら負けました。",
@@ -919,6 +1243,83 @@
       "マリオカートでトムはまた負けた。",
       "誰もあなたを負け犬とは呼ばない。"
     ],
-    "word_POS": "Noun"
+    "ko": [
+      "오늘은 안타깝게도 제가 졌어요.",
+      "경기 후에 그녀는 진 선수를 위로한다.",
+      "마리오 카트에서 톰이 또 졌어요.",
+      "아무도 너를 루저라고 부르지 않아."
+    ],
+    "nb": [
+      "I dag tapte jeg dessverre.",
+      "Etter kampen trøster hun taperen.",
+      "I Mario Kart tapte Tom igjen.",
+      "Ingen kaller deg en taper."
+    ],
+    "nl": [
+      "Vandaag heb ik helaas verloren.",
+      "Ze troost de verliezer na de wedstrijd.",
+      "In Mario Kart verloor Tom weer.",
+      "Niemand noemt jou een verliezer."
+    ],
+    "pl": [
+      "Niestety, dziś przegrałem.",
+      "Po meczu pociesza przegranego.",
+      "W Mario Kart Tom znowu przegrał.",
+      "Nikt nie nazywa cię przegranym."
+    ],
+    "pt": [
+      "Infelizmente, hoje eu perdi.",
+      "Depois do jogo, ela consola quem perdeu.",
+      "No Mario Kart, Tom perdeu de novo.",
+      "Ninguém te chama de perdedor."
+    ],
+    "ro": [
+      "Din păcate, azi am pierdut.",
+      "După meci, ea îl consolează pe cel care a pierdut.",
+      "La Mario Kart, Tom a pierdut din nou.",
+      "Nimeni nu te numește un învins."
+    ],
+    "ru": [
+      "К сожалению, сегодня я проиграл.",
+      "После игры она утешает проигравшего.",
+      "В Mario Kart Том снова проиграл.",
+      "Никто не называет тебя неудачником."
+    ],
+    "sv": [
+      "Tyvärr förlorade jag idag.",
+      "Efter matchen tröstar hon förloraren.",
+      "I Mario Kart förlorade Tom igen.",
+      "Ingen kallar dig en förlorare."
+    ],
+    "tr": [
+      "Bugün ne yazık ki kaybettim.",
+      "Maçtan sonra kaybedeni teselli ediyor.",
+      "Mario Kart’ta Tom yine kaybetti.",
+      "Kimse sana kaybeden demiyor."
+    ],
+    "uk": [
+      "На жаль, сьогодні я програв.",
+      "Після гри вона втішає того, хто програв.",
+      "В Mario Kart Том знову програв.",
+      "Ніхто не називає тебе невдахою."
+    ],
+    "vi": [
+      "Hôm nay, tiếc là tôi đã thua.",
+      "Sau trận, cô ấy an ủi người thua cuộc.",
+      "Trong Mario Kart, Tom lại thua.",
+      "Không ai gọi bạn là kẻ thua cuộc."
+    ],
+    "yue": [
+      "今日可惜我輸咗。",
+      "比賽後佢安慰咗輸嗰位。",
+      "喺馬里奧賽車入面，湯姆又輸咗。",
+      "冇人會叫你輸家。"
+    ],
+    "zh-Hans": [
+      "今天很遗憾我输了。",
+      "比赛后，她安慰了输的那位。",
+      "在马里奥赛车里，汤姆又输了。",
+      "没有人会叫你失败者。"
+    ]
   }
 }

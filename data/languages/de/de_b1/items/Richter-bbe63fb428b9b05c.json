@@ -278,10 +278,10 @@
       "difficulty": 6
     },
     {
-      "target": "Meine Schwester will Richter werden.",
+      "target": "Meine Schwester will Richterin werden.",
       "reading": "/ˈmaɪ̯nə ˈʃvɛstɐ vɪl ˈʁɪçtɐ ˈveːʁdn̩/",
       "translations": {
-        "de": "Meine Schwester will Richter werden.",
+        "de": "Meine Schwester will Richterin werden.",
         "ipa": "/ˈmaɪ̯nə ˈʃvɛstɐ vɪl ˈʁɪçtɐ ˈveːʁdn̩/",
         "en": "My sister wants to become a judge.",
         "es": "Mi hermana quiere ser jueza.",
@@ -314,49 +314,69 @@
       "tokens": [
         {
           "surface": "Meine",
-          "surface_en": "my",
-          "furigana": "[ˈmaɪ̯nə]",
-          "pos": "DET",
           "lemma": "mein",
-          "explanation": "Possessive determiner modifying 'Schwester'; feminine, singular, nominative.",
-          "difficulty": 7
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "PPOSAT",
+          "feats": {},
+          "start": 0,
+          "end": 5,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "Schwester",
-          "surface_en": "sister",
-          "furigana": "[ˈʃvɛstɐ]",
-          "pos": "NOUN",
           "lemma": "Schwester",
-          "explanation": "Head noun of the subject NP; feminine, singular, nominative.",
-          "difficulty": 10
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 6,
+          "end": 15,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "will",
-          "surface_en": "wants to",
-          "furigana": "[vɪl]",
-          "pos": "AUX",
           "lemma": "wollen",
-          "explanation": "Modal auxiliary (3rd person singular present) selecting the bare infinitive 'werden'.",
-          "difficulty": 7
+          "pos": "AUX",
+          "upos": "AUX",
+          "xpos": "VMFIN",
+          "feats": {},
+          "start": 16,
+          "end": 20,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "Richter",
-          "surface_en": "judge",
-          "furigana": "[ˈʁɪçtɐ]",
+          "surface": "Richterin",
+          "lemma": "Richterin",
           "pos": "NOUN",
-          "lemma": "Richter",
-          "explanation": "Predicate noun within the infinitival complement ('Richter werden'); profession noun used bare.",
-          "difficulty": 10,
-          "is_main_word": true
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 21,
+          "end": 30,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "werden.",
-          "surface_en": "become",
-          "furigana": "[ˈveːɐdn̩]",
-          "pos": "VERB",
+          "surface": "werden",
           "lemma": "werden",
-          "explanation": "Bare infinitive lexical verb 'to become'; head of the infinitival complement selected by 'will'.",
-          "difficulty": 7
+          "pos": "AUX",
+          "upos": "AUX",
+          "xpos": "VAINF",
+          "feats": {},
+          "start": 31,
+          "end": 37,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 37,
+          "end": 38,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 8.2
@@ -373,8 +393,270 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-15T03:06:21Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:De b1/bbe63fb428b9b05c",
+      "revision_id": 85086,
+      "parent_revision_id": 17492,
+      "revision_timestamp_utc": "2026-10-15T03:06:21Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Use the feminine profession title for the sister and update IPA",
+      "pulled_utc": "2026-10-17T07:06:42Z",
+      "applied_utc": "2026-10-17T07:06:50Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-2bc9cc463f8900d4",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_b1:bbe63fb428b9b05c",
+        "pack_code": "de_b1",
+        "entry_id": "Richter",
+        "language": "de",
+        "sentence_index": 4,
+        "old_sentence": "Meine Schwester will Richter werden.",
+        "old_translations": {
+          "de": "Meine Schwester will Richter werden.",
+          "ipa": "/ˈmaɪ̯nə ˈʃvɛstɐ vɪl ˈʁɪçtɐ ˈveːʁdn̩/",
+          "en": "My sister wants to become a judge.",
+          "es": "Mi hermana quiere ser jueza.",
+          "fr": "Ma sœur veut devenir juge.",
+          "it": "Mia sorella vuole diventare giudice.",
+          "ko": "제 여동생은 판사가 되고 싶어해요.",
+          "zh-Hans": "我妹妹想当法官。",
+          "yue": "我妹妹想做法官。",
+          "ru": "Моя сестра хочет стать судьёй.",
+          "pt": "Minha irmã quer ser juíza.",
+          "he": "אחותי רוצה להיות שופטת.",
+          "tr": "Kız kardeşim hakim olmak istiyor.",
+          "vi": "Em gái tôi muốn trở thành thẩm phán.",
+          "ar": "أختي تريد أن تصبح قاضية.",
+          "nl": "Mijn zus wil rechter worden.",
+          "uk": "Моя сестра хоче стати суддею.",
+          "hu": "A lánytestvérem bíró szeretne lenni.",
+          "hi": "मेरी बहन जज बनना चाहती है।",
+          "pl": "Moja siostra chce zostać sędzią.",
+          "el": "Η αδελφή μου θέλει να γίνει δικαστής.",
+          "nb": "Søsteren min vil bli dommer.",
+          "id": "Saudara perempuan saya ingin menjadi hakim.",
+          "sv": "Min syster vill bli domare.",
+          "ro": "Sora mea vrea să devină judecătoare.",
+          "cs": "Moje sestra chce být soudkyní.",
+          "da": "Min søster vil blive dommer.",
+          "fi": "Siskoni haluaa tulla tuomariksi.",
+          "ja": "妹は裁判官になりたいです。"
+        },
+        "proposed_sentence": "Meine Schwester will Richterin werden.",
+        "proposed_translations": {
+          "de": "Meine Schwester will Richterin werden.",
+          "ipa": "/ˈmaɪ̯nə ˈʃvɛstɐ vɪl ˈʁɪçtɐ ˈveːʁdn̩/",
+          "en": "My sister wants to become a judge.",
+          "es": "Mi hermana quiere ser jueza.",
+          "fr": "Ma sœur veut devenir juge.",
+          "it": "Mia sorella vuole diventare giudice.",
+          "ko": "제 여동생은 판사가 되고 싶어해요.",
+          "zh-Hans": "我妹妹想当法官。",
+          "yue": "我妹妹想做法官。",
+          "ru": "Моя сестра хочет стать судьёй.",
+          "pt": "Minha irmã quer ser juíza.",
+          "he": "אחותי רוצה להיות שופטת.",
+          "tr": "Kız kardeşim hakim olmak istiyor.",
+          "vi": "Em gái tôi muốn trở thành thẩm phán.",
+          "ar": "أختي تريد أن تصبح قاضية.",
+          "nl": "Mijn zus wil rechter worden.",
+          "uk": "Моя сестра хоче стати суддею.",
+          "hu": "A lánytestvérem bíró szeretne lenni.",
+          "hi": "मेरी बहन जज बनना चाहती है।",
+          "pl": "Moja siostra chce zostać sędzią.",
+          "el": "Η αδελφή μου θέλει να γίνει δικαστής.",
+          "nb": "Søsteren min vil bli dommer.",
+          "id": "Saudara perempuan saya ingin menjadi hakim.",
+          "sv": "Min syster vill bli domare.",
+          "ro": "Sora mea vrea să devină judecătoare.",
+          "cs": "Moje sestra chce být soudkyní.",
+          "da": "Min søster vil blive dommer.",
+          "fi": "Siskoni haluaa tulla tuomariksi.",
+          "ja": "妹は裁判官になりたいです。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Meine Schwester will Richterin werden.",
+        "old_japanese": "Meine Schwester will Richter werden.",
+        "old_english": "My sister wants to become a judge.",
+        "proposed_japanese": "Meine Schwester will Richterin werden.",
+        "proposed_english": "My sister wants to become a judge.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Meine Schwester will Richterin werden.",
+          "tokens": [
+            {
+              "surface": "Meine",
+              "lemma": "mein",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "PPOSAT",
+              "feats": {},
+              "start": 0,
+              "end": 5,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Schwester",
+              "lemma": "Schwester",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 6,
+              "end": 15,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "will",
+              "lemma": "wollen",
+              "pos": "AUX",
+              "upos": "AUX",
+              "xpos": "VMFIN",
+              "feats": {},
+              "start": 16,
+              "end": 20,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Richterin",
+              "lemma": "Richterin",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 21,
+              "end": 30,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "werden",
+              "lemma": "werden",
+              "pos": "AUX",
+              "upos": "AUX",
+              "xpos": "VAINF",
+              "feats": {},
+              "start": 31,
+              "end": 37,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 37,
+              "end": 38,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Meine",
+            "lemma": "mein",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "PPOSAT",
+            "feats": {},
+            "start": 0,
+            "end": 5,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Schwester",
+            "lemma": "Schwester",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 6,
+            "end": 15,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "will",
+            "lemma": "wollen",
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "VMFIN",
+            "feats": {},
+            "start": 16,
+            "end": 20,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Richterin",
+            "lemma": "Richterin",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 21,
+            "end": 30,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "werden",
+            "lemma": "werden",
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "VAINF",
+            "feats": {},
+            "start": 31,
+            "end": 37,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 37,
+            "end": 38,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:06:42Z",
+        "updated_utc": "2026-10-17T07:07:06Z",
+        "applied_utc": "2026-10-17T07:07:06Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:07:06Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -386,34 +668,6 @@
     "word": "Richter",
     "word_reading": "",
     "word_label": "Substantiv (der mask.)",
-    "word_en": "judge",
-    "word_es": "juez",
-    "word_fr": "juge",
-    "word_it": "giudice",
-    "word_ko": "판사",
-    "word_zh-Hans": "法官",
-    "word_yue": "法官",
-    "word_ru": "судья",
-    "word_pt": "juiz",
-    "word_he": "שופט",
-    "word_tr": "hakim",
-    "word_vi": "thẩm phán",
-    "word_ar": "قاضي",
-    "word_nl": "rechter",
-    "word_uk": "суддя",
-    "word_hu": "bíró",
-    "word_hi": "न्यायाधीश",
-    "word_pl": "sędzia",
-    "word_el": "δικαστής",
-    "word_nb": "dommer",
-    "word_id": "hakim",
-    "word_sv": "domare",
-    "word_ro": "judecător",
-    "word_cs": "soudce",
-    "word_da": "dommer",
-    "word_fi": "tuomari",
-    "word_ja": "裁判官",
-    "word_de": "Richter",
     "comic_difficulty": 6.85,
     "jp": [
       "Mein Onkel ist Richter.",
@@ -426,24 +680,6 @@
       "/deːɐ̯ ˈʁɪçtɐ ɛʁˈklɛːɐ̯t das ˈʊʁtaɪ̯l/",
       "/ɪç fɛʁˈtʁaʊ̯ə deːm ˈʁɪçtɐ/",
       "/ˈmaɪ̯nə ˈʃvɛstɐ vɪl ˈʁɪçtɐ ˈveːʁdn̩/"
-    ],
-    "de": [
-      "Mein Onkel ist Richter.",
-      "Der Richter erklärt das Urteil.",
-      "Ich vertraue dem Richter.",
-      "Meine Schwester will Richter werden."
-    ],
-    "ipa": [
-      "/maɪ̯n ˈɔŋkl̩ ɪst ˈʁɪçtɐ/",
-      "/deːɐ̯ ˈʁɪçtɐ ɛʁˈklɛːɐ̯t das ˈʊʁtaɪ̯l/",
-      "/ɪç fɛʁˈtʁaʊ̯ə deːm ˈʁɪçtɐ/",
-      "/ˈmaɪ̯nə ˈʃvɛstɐ vɪl ˈʁɪçtɐ ˈveːʁdn̩/"
-    ],
-    "en": [
-      "My uncle is a judge.",
-      "The judge explains the verdict.",
-      "I trust the judge.",
-      "My sister wants to become a judge."
     ],
     "pos_analysis": [
       {
@@ -585,189 +821,113 @@
         "difficulty_aggregated": 6
       },
       {
-        "sentence": "Meine Schwester will Richter werden.",
+        "sentence": "Meine Schwester will Richterin werden.",
         "tokens": [
           {
             "surface": "Meine",
-            "surface_en": "my",
-            "furigana": "[ˈmaɪ̯nə]",
-            "pos": "DET",
             "lemma": "mein",
-            "explanation": "Possessive determiner modifying 'Schwester'; feminine, singular, nominative.",
-            "difficulty": 7
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "PPOSAT",
+            "feats": {},
+            "start": 0,
+            "end": 5,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "Schwester",
-            "surface_en": "sister",
-            "furigana": "[ˈʃvɛstɐ]",
-            "pos": "NOUN",
             "lemma": "Schwester",
-            "explanation": "Head noun of the subject NP; feminine, singular, nominative.",
-            "difficulty": 10
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 6,
+            "end": 15,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "will",
-            "surface_en": "wants to",
-            "furigana": "[vɪl]",
-            "pos": "AUX",
             "lemma": "wollen",
-            "explanation": "Modal auxiliary (3rd person singular present) selecting the bare infinitive 'werden'.",
-            "difficulty": 7
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "VMFIN",
+            "feats": {},
+            "start": 16,
+            "end": 20,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "Richter",
-            "surface_en": "judge",
-            "furigana": "[ˈʁɪçtɐ]",
+            "surface": "Richterin",
+            "lemma": "Richterin",
             "pos": "NOUN",
-            "lemma": "Richter",
-            "explanation": "Predicate noun within the infinitival complement ('Richter werden'); profession noun used bare.",
-            "difficulty": 10,
-            "is_main_word": true
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 21,
+            "end": 30,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "werden.",
-            "surface_en": "become",
-            "furigana": "[ˈveːɐdn̩]",
-            "pos": "VERB",
+            "surface": "werden",
             "lemma": "werden",
-            "explanation": "Bare infinitive lexical verb 'to become'; head of the infinitival complement selected by 'will'.",
-            "difficulty": 7
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "VAINF",
+            "feats": {},
+            "start": 31,
+            "end": 37,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 37,
+            "end": 38,
+            "analyzer": "spacy_de_core_news_lg"
           }
         ],
         "difficulty_aggregated": 8.2
       }
     ],
-    "es": [
-      "Mi tío es juez.",
-      "El juez explica la sentencia.",
-      "Confío en el juez.",
-      "Mi hermana quiere ser jueza."
-    ],
-    "fr": [
-      "Mon oncle est juge.",
-      "Le juge explique le jugement.",
-      "Je fais confiance au juge.",
-      "Ma sœur veut devenir juge."
-    ],
-    "it": [
-      "Mio zio è giudice.",
-      "Il giudice spiega la sentenza.",
-      "Mi fido del giudice.",
-      "Mia sorella vuole diventare giudice."
-    ],
-    "ko": [
-      "우리 삼촌은 판사예요.",
-      "판사가 판결을 설명해요.",
-      "저는 판사를 믿어요.",
-      "제 여동생은 판사가 되고 싶어해요."
-    ],
-    "zh-Hans": [
-      "我叔叔是法官。",
-      "法官解释判决。",
-      "我信任法官。",
-      "我妹妹想当法官。"
-    ],
-    "yue": [
-      "我叔叔係法官。",
-      "法官解釋判決。",
-      "我信任法官。",
-      "我妹妹想做法官。"
-    ],
-    "ru": [
-      "Мой дядя — судья.",
-      "Судья объясняет приговор.",
-      "Я доверяю судье.",
-      "Моя сестра хочет стать судьёй."
-    ],
-    "pt": [
-      "Meu tio é juiz.",
-      "O juiz explica a sentença.",
-      "Eu confio no juiz.",
-      "Minha irmã quer ser juíza."
-    ],
-    "he": [
-      "הדוד שלי הוא שופט.",
-      "השופט מסביר את פסק הדין.",
-      "אני סומך על השופט.",
-      "אחותי רוצה להיות שופטת."
-    ],
-    "tr": [
-      "Amcam hakim.",
-      "Hakim kararı açıklıyor.",
-      "Hakime güveniyorum.",
-      "Kız kardeşim hakim olmak istiyor."
-    ],
-    "vi": [
-      "Chú tôi là thẩm phán.",
-      "Thẩm phán giải thích bản án.",
-      "Tôi tin tưởng thẩm phán.",
-      "Em gái tôi muốn trở thành thẩm phán."
-    ],
+    "word_POS": "Noun",
+    "entry_id": "Richter",
+    "word_en": "judge",
+    "word_es": "juez",
+    "word_fr": "juge",
+    "word_it": "giudice",
+    "word_ko": "판사",
+    "word_zh-Hans": "法官",
+    "word_yue": "法官",
+    "word_ru": "судья",
+    "word_pt": "juiz",
+    "word_he": "שופט",
+    "word_tr": "hakim",
+    "word_vi": "thẩm phán",
+    "word_ar": "قاضي",
+    "word_nl": "rechter",
+    "word_uk": "суддя",
+    "word_hu": "bíró",
+    "word_hi": "न्यायाधीश",
+    "word_pl": "sędzia",
+    "word_el": "δικαστής",
+    "word_nb": "dommer",
+    "word_id": "hakim",
+    "word_sv": "domare",
+    "word_ro": "judecător",
+    "word_cs": "soudce",
+    "word_da": "dommer",
+    "word_fi": "tuomari",
+    "word_ja": "裁判官",
+    "word_de": "Richter",
     "ar": [
       "عمي قاضٍ.",
       "القاضي يشرح الحكم.",
       "أنا أثق بالقاضي.",
       "أختي تريد أن تصبح قاضية."
-    ],
-    "nl": [
-      "Mijn oom is rechter.",
-      "De rechter legt het vonnis uit.",
-      "Ik vertrouw de rechter.",
-      "Mijn zus wil rechter worden."
-    ],
-    "uk": [
-      "Мій дядько — суддя.",
-      "Суддя пояснює вирок.",
-      "Я довіряю судді.",
-      "Моя сестра хоче стати суддею."
-    ],
-    "hu": [
-      "A nagybátyám bíró.",
-      "A bíró elmagyarázza az ítéletet.",
-      "Bízom a bíróban.",
-      "A lánytestvérem bíró szeretne lenni."
-    ],
-    "hi": [
-      "मेरे चाचा जज हैं।",
-      "जज फैसला समझा रहा है।",
-      "मुझे जज पर भरोसा है।",
-      "मेरी बहन जज बनना चाहती है।"
-    ],
-    "pl": [
-      "Mój wujek jest sędzią.",
-      "Sędzia wyjaśnia wyrok.",
-      "Ufam sędziemu.",
-      "Moja siostra chce zostać sędzią."
-    ],
-    "el": [
-      "Ο θείος μου είναι δικαστής.",
-      "Ο δικαστής εξηγεί την απόφαση.",
-      "Εμπιστεύομαι τον δικαστή.",
-      "Η αδελφή μου θέλει να γίνει δικαστής."
-    ],
-    "nb": [
-      "Min onkel er dommer.",
-      "Dommeren forklarer dommen.",
-      "Jeg stoler på dommeren.",
-      "Søsteren min vil bli dommer."
-    ],
-    "id": [
-      "Paman saya adalah hakim.",
-      "Hakim menjelaskan putusan.",
-      "Saya percaya pada hakim.",
-      "Saudara perempuan saya ingin menjadi hakim."
-    ],
-    "sv": [
-      "Min farbror är domare.",
-      "Domaren förklarar domen.",
-      "Jag litar på domaren.",
-      "Min syster vill bli domare."
-    ],
-    "ro": [
-      "Unchiul meu este judecător.",
-      "Judecătorul explică sentința.",
-      "Am încredere în judecător.",
-      "Sora mea vrea să devină judecătoare."
     ],
     "cs": [
       "Můj strýc je soudce.",
@@ -781,11 +941,77 @@
       "Jeg stoler på dommeren.",
       "Min søster vil blive dommer."
     ],
+    "de": [
+      "Mein Onkel ist Richter.",
+      "Der Richter erklärt das Urteil.",
+      "Ich vertraue dem Richter.",
+      "Meine Schwester will Richter werden."
+    ],
+    "el": [
+      "Ο θείος μου είναι δικαστής.",
+      "Ο δικαστής εξηγεί την απόφαση.",
+      "Εμπιστεύομαι τον δικαστή.",
+      "Η αδελφή μου θέλει να γίνει δικαστής."
+    ],
+    "en": [
+      "My uncle is a judge.",
+      "The judge explains the verdict.",
+      "I trust the judge.",
+      "My sister wants to become a judge."
+    ],
+    "es": [
+      "Mi tío es juez.",
+      "El juez explica la sentencia.",
+      "Confío en el juez.",
+      "Mi hermana quiere ser jueza."
+    ],
     "fi": [
       "Setäni on tuomari.",
       "Tuomari selittää tuomion.",
       "Luotan tuomariin.",
       "Siskoni haluaa tulla tuomariksi."
+    ],
+    "fr": [
+      "Mon oncle est juge.",
+      "Le juge explique le jugement.",
+      "Je fais confiance au juge.",
+      "Ma sœur veut devenir juge."
+    ],
+    "he": [
+      "הדוד שלי הוא שופט.",
+      "השופט מסביר את פסק הדין.",
+      "אני סומך על השופט.",
+      "אחותי רוצה להיות שופטת."
+    ],
+    "hi": [
+      "मेरे चाचा जज हैं।",
+      "जज फैसला समझा रहा है।",
+      "मुझे जज पर भरोसा है।",
+      "मेरी बहन जज बनना चाहती है।"
+    ],
+    "hu": [
+      "A nagybátyám bíró.",
+      "A bíró elmagyarázza az ítéletet.",
+      "Bízom a bíróban.",
+      "A lánytestvérem bíró szeretne lenni."
+    ],
+    "id": [
+      "Paman saya adalah hakim.",
+      "Hakim menjelaskan putusan.",
+      "Saya percaya pada hakim.",
+      "Saudara perempuan saya ingin menjadi hakim."
+    ],
+    "ipa": [
+      "/maɪ̯n ˈɔŋkl̩ ɪst ˈʁɪçtɐ/",
+      "/deːɐ̯ ˈʁɪçtɐ ɛʁˈklɛːɐ̯t das ˈʊʁtaɪ̯l/",
+      "/ɪç fɛʁˈtʁaʊ̯ə deːm ˈʁɪçtɐ/",
+      "/ˈmaɪ̯nə ˈʃvɛstɐ vɪl ˈʁɪçtɐ ˈveːʁdn̩/"
+    ],
+    "it": [
+      "Mio zio è giudice.",
+      "Il giudice spiega la sentenza.",
+      "Mi fido del giudice.",
+      "Mia sorella vuole diventare giudice."
     ],
     "ja": [
       "おじは裁判官です。",
@@ -793,6 +1019,83 @@
       "私は裁判官を信じています。",
       "妹は裁判官になりたいです。"
     ],
-    "word_POS": "Noun"
+    "ko": [
+      "우리 삼촌은 판사예요.",
+      "판사가 판결을 설명해요.",
+      "저는 판사를 믿어요.",
+      "제 여동생은 판사가 되고 싶어해요."
+    ],
+    "nb": [
+      "Min onkel er dommer.",
+      "Dommeren forklarer dommen.",
+      "Jeg stoler på dommeren.",
+      "Søsteren min vil bli dommer."
+    ],
+    "nl": [
+      "Mijn oom is rechter.",
+      "De rechter legt het vonnis uit.",
+      "Ik vertrouw de rechter.",
+      "Mijn zus wil rechter worden."
+    ],
+    "pl": [
+      "Mój wujek jest sędzią.",
+      "Sędzia wyjaśnia wyrok.",
+      "Ufam sędziemu.",
+      "Moja siostra chce zostać sędzią."
+    ],
+    "pt": [
+      "Meu tio é juiz.",
+      "O juiz explica a sentença.",
+      "Eu confio no juiz.",
+      "Minha irmã quer ser juíza."
+    ],
+    "ro": [
+      "Unchiul meu este judecător.",
+      "Judecătorul explică sentința.",
+      "Am încredere în judecător.",
+      "Sora mea vrea să devină judecătoare."
+    ],
+    "ru": [
+      "Мой дядя — судья.",
+      "Судья объясняет приговор.",
+      "Я доверяю судье.",
+      "Моя сестра хочет стать судьёй."
+    ],
+    "sv": [
+      "Min farbror är domare.",
+      "Domaren förklarar domen.",
+      "Jag litar på domaren.",
+      "Min syster vill bli domare."
+    ],
+    "tr": [
+      "Amcam hakim.",
+      "Hakim kararı açıklıyor.",
+      "Hakime güveniyorum.",
+      "Kız kardeşim hakim olmak istiyor."
+    ],
+    "uk": [
+      "Мій дядько — суддя.",
+      "Суддя пояснює вирок.",
+      "Я довіряю судді.",
+      "Моя сестра хоче стати суддею."
+    ],
+    "vi": [
+      "Chú tôi là thẩm phán.",
+      "Thẩm phán giải thích bản án.",
+      "Tôi tin tưởng thẩm phán.",
+      "Em gái tôi muốn trở thành thẩm phán."
+    ],
+    "yue": [
+      "我叔叔係法官。",
+      "法官解釋判決。",
+      "我信任法官。",
+      "我妹妹想做法官。"
+    ],
+    "zh-Hans": [
+      "我叔叔是法官。",
+      "法官解释判决。",
+      "我信任法官。",
+      "我妹妹想当法官。"
+    ]
   }
 }

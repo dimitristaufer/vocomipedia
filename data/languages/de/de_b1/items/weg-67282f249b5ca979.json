@@ -44,10 +44,10 @@
   },
   "sentences": [
     {
-      "target": "Ich schreibe 'weg-' aufs Etikett.",
+      "target": "Ich schreibe „weg-“ aufs Etikett.",
       "reading": "/ɪç ˈʃʁaɪ̯bə vɛk aʊ̯fs eːtiˈkɛt/",
       "translations": {
-        "de": "Ich schreibe 'weg-' aufs Etikett.",
+        "de": "Ich schreibe „weg-“ aufs Etikett.",
         "ipa": "/ɪç ˈʃʁaɪ̯bə vɛk aʊ̯fs eːtiˈkɛt/",
         "en": "I write 'weg-' on the label.",
         "es": "Escribo la palabra tirar en la etiqueta.",
@@ -80,58 +80,101 @@
       "tokens": [
         {
           "surface": "Ich",
-          "surface_en": "I",
-          "furigana": "[ɪç]",
-          "pos": "PRON",
           "lemma": "ich",
-          "explanation": "Personal pronoun, 1st person singular nominative; subject of the clause.",
-          "difficulty": 2
+          "pos": "PRON",
+          "upos": "PRON",
+          "xpos": "PPER",
+          "feats": {},
+          "start": 0,
+          "end": 3,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "schreibe'",
-          "surface_en": "write",
-          "furigana": "[ˈʃʁaɪbə]",
-          "pos": "VERB",
+          "surface": "schreibe",
           "lemma": "schreiben",
-          "explanation": "Finite main verb, 1st person singular present indicative of 'schreiben'; denotes the act of writing.",
-          "difficulty": 10
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VVFIN",
+          "feats": {},
+          "start": 4,
+          "end": 12,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "weg-'",
-          "surface_en": "away-",
-          "furigana": "[vɛk]",
-          "pos": "NOUN",
-          "lemma": "weg-",
-          "explanation": "Quoted prefix/label functioning as a metalinguistic noun; direct object of 'schreibe'. The hyphen is part of the written label.",
-          "difficulty": 7,
+          "surface": "„",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$(",
+          "feats": {},
+          "start": 13,
+          "end": 14,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "weg-",
+          "lemma": "weg",
+          "pos": "X",
+          "upos": "X",
+          "xpos": "TRUNC",
+          "feats": {},
+          "start": 14,
+          "end": 18,
+          "analyzer": "spacy_de_core_news_lg",
           "is_main_word": true
         },
         {
-          "surface": "aufs",
-          "surface_en": "onto the",
-          "furigana": "[aʊfs]",
-          "pos": "ADP",
-          "lemma": "auf",
-          "explanation": "Preposition contracted with the article ('auf das'); introduces a goal PP ('aufs Etikett') and governs accusative.",
-          "difficulty": 7
+          "surface": "“",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$(",
+          "feats": {},
+          "start": 18,
+          "end": 19,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "Etikett.",
-          "surface_en": "label",
-          "furigana": "[etɪˈkɛt]",
-          "pos": "NOUN",
+          "surface": "aufs",
+          "lemma": "auf",
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "APPRART",
+          "feats": {},
+          "start": 20,
+          "end": 24,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "Etikett",
           "lemma": "Etikett",
-          "explanation": "Common noun (neuter); head of the prepositional phrase governed by 'auf(s)'.",
-          "difficulty": 10
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 25,
+          "end": 32,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 32,
+          "end": 33,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 7.2
     },
     {
-      "target": "Wir kleben 'weg-' auf die Kiste.",
+      "target": "Wir kleben „weg-“ auf die Kiste.",
       "reading": "/viːɐ̯ ˈkleːbən vɛk aʊ̯f diː ˈkɪstə/",
       "translations": {
-        "de": "Wir kleben 'weg-' auf die Kiste.",
+        "de": "Wir kleben „weg-“ auf die Kiste.",
         "ipa": "/viːɐ̯ ˈkleːbən vɛk aʊ̯f diː ˈkɪstə/",
         "en": "We stick 'weg-' onto the box.",
         "es": "Pegamos en la caja una etiqueta que dice tirar.",
@@ -164,67 +207,112 @@
       "tokens": [
         {
           "surface": "Wir",
-          "surface_en": "we",
-          "furigana": "[viːɐ]",
-          "pos": "PRON",
           "lemma": "wir",
-          "explanation": "Personal pronoun, 1st person plural nominative; subject of the clause.",
-          "difficulty": 2
+          "pos": "PRON",
+          "upos": "PRON",
+          "xpos": "PPER",
+          "feats": {},
+          "start": 0,
+          "end": 3,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "kleben'",
-          "surface_en": "glue",
-          "furigana": "[ˈkleːbən]",
-          "pos": "VERB",
+          "surface": "kleben",
           "lemma": "kleben",
-          "explanation": "Finite main verb, 1st person plural present indicative; denotes attaching something with adhesive.",
-          "difficulty": 7
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VVFIN",
+          "feats": {},
+          "start": 4,
+          "end": 10,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "weg-'",
-          "surface_en": "away-",
-          "furigana": "[vɛk]",
-          "pos": "NOUN",
-          "lemma": "weg-",
-          "explanation": "Quoted label used metalinguistically as a noun; direct object of 'kleben'.",
-          "difficulty": 7,
+          "surface": "„",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$(",
+          "feats": {},
+          "start": 11,
+          "end": 12,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "weg-",
+          "lemma": "weg",
+          "pos": "X",
+          "upos": "X",
+          "xpos": "TRUNC",
+          "feats": {},
+          "start": 12,
+          "end": 16,
+          "analyzer": "spacy_de_core_news_lg",
           "is_main_word": true
         },
         {
+          "surface": "“",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$(",
+          "feats": {},
+          "start": 16,
+          "end": 17,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
           "surface": "auf",
-          "surface_en": "onto",
-          "furigana": "[aʊf]",
-          "pos": "ADP",
           "lemma": "auf",
-          "explanation": "Preposition introducing a goal PP ('auf die Kiste'); governs accusative here (direction).",
-          "difficulty": 2
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "APPR",
+          "feats": {},
+          "start": 18,
+          "end": 21,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "die",
-          "surface_en": "the",
-          "furigana": "[diː]",
-          "pos": "DET",
           "lemma": "der",
-          "explanation": "Definite article, feminine accusative singular; determiner of 'Kiste'.",
-          "difficulty": 2
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "ART",
+          "feats": {},
+          "start": 22,
+          "end": 25,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "Kiste.",
-          "surface_en": "box",
-          "furigana": "[ˈkɪstə]",
-          "pos": "NOUN",
+          "surface": "Kiste",
           "lemma": "Kiste",
-          "explanation": "Common noun (feminine); object of the preposition 'auf'.",
-          "difficulty": 7
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 26,
+          "end": 31,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 31,
+          "end": 32,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 4.5
     },
     {
-      "target": "Er markiert die Pflanzen mit 'weg-'.",
+      "target": "Er markiert die Pflanzen mit „weg-“.",
       "reading": "/eːɐ̯ maʁˈkiːɐ̯t diː ˈpflant͡sən mɪt vɛk/",
       "translations": {
-        "de": "Er markiert die Pflanzen mit 'weg-'.",
+        "de": "Er markiert die Pflanzen mit „weg-“.",
         "ipa": "/eːɐ̯ maʁˈkiːɐ̯t diː ˈpflant͡sən mɪt vɛk/",
         "en": "He marks the plants with 'weg-'.",
         "es": "Marca las plantas como para tirar.",
@@ -257,67 +345,112 @@
       "tokens": [
         {
           "surface": "Er",
-          "surface_en": "he",
-          "furigana": "[eːɐ]",
-          "pos": "PRON",
           "lemma": "er",
-          "explanation": "Personal pronoun, 3rd person singular masculine nominative; subject of the clause.",
-          "difficulty": 2
+          "pos": "PRON",
+          "upos": "PRON",
+          "xpos": "PPER",
+          "feats": {},
+          "start": 0,
+          "end": 2,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "markiert",
-          "surface_en": "marks",
-          "furigana": "[maʁˈkiːɐt]",
-          "pos": "VERB",
           "lemma": "markieren",
-          "explanation": "Finite main verb, 3rd person singular present indicative; denotes labeling/marking.",
-          "difficulty": 10
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VVFIN",
+          "feats": {},
+          "start": 3,
+          "end": 11,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "die",
-          "surface_en": "the",
-          "furigana": "[diː]",
-          "pos": "DET",
           "lemma": "der",
-          "explanation": "Definite article, plural accusative; determiner of 'Pflanzen'.",
-          "difficulty": 2
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "ART",
+          "feats": {},
+          "start": 12,
+          "end": 15,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "Pflanzen",
-          "surface_en": "plants",
-          "furigana": "[ˈpflantsən]",
-          "pos": "NOUN",
           "lemma": "Pflanze",
-          "explanation": "Common noun (plural); direct object of 'markiert'.",
-          "difficulty": 10
-        },
-        {
-          "surface": "mit'",
-          "surface_en": "with",
-          "furigana": "[mɪt]",
-          "pos": "ADP",
-          "lemma": "mit",
-          "explanation": "Preposition introducing an instrumental PP ('mit weg-'); governs dative (the quoted label is used as the marking).",
-          "difficulty": 2
-        },
-        {
-          "surface": "weg-'.",
-          "surface_en": "away-",
-          "furigana": "[vɛk]",
           "pos": "NOUN",
-          "lemma": "weg-",
-          "explanation": "Quoted label functioning as the object of the preposition 'mit'.",
-          "difficulty": 7,
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 16,
+          "end": 24,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "mit",
+          "lemma": "mit",
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "APPR",
+          "feats": {},
+          "start": 25,
+          "end": 28,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "„",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$(",
+          "feats": {},
+          "start": 29,
+          "end": 30,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "weg-",
+          "lemma": "weg",
+          "pos": "X",
+          "upos": "X",
+          "xpos": "TRUNC",
+          "feats": {},
+          "start": 30,
+          "end": 34,
+          "analyzer": "spacy_de_core_news_lg",
           "is_main_word": true
+        },
+        {
+          "surface": "“",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$(",
+          "feats": {},
+          "start": 34,
+          "end": 35,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 35,
+          "end": 36,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 5.5
     },
     {
-      "target": "Sie notiert 'weg-' in der Liste.",
+      "target": "Sie notiert „weg-“ in der Liste.",
       "reading": "/ziː noˈtiːɐ̯t vɛk ɪn deːɐ̯ ˈlɪstə/",
       "translations": {
-        "de": "Sie notiert 'weg-' in der Liste.",
+        "de": "Sie notiert „weg-“ in der Liste.",
         "ipa": "/ziː noˈtiːɐ̯t vɛk ɪn deːɐ̯ ˈlɪstə/",
         "en": "She notes 'weg-' in the list.",
         "es": "Anota en la lista que va para tirar.",
@@ -341,7 +474,7 @@
         "nb": "Hun noterer i lista at det skal kastes.",
         "id": "Dia mencatat dalam daftar bahwa akan dibuang.",
         "sv": "Hon antecknar i listan att det ska slängas.",
-        "ro": "Ea notează în listă că e de apuncat.",
+        "ro": "Ea notează în listă că e de aruncat.",
         "cs": "Zapíše do seznamu, že to je na vyhození.",
         "da": "Hun noterer i listen, at det skal smides ud.",
         "fi": "Hän merkitsee listaan, että se menee roskiin.",
@@ -350,58 +483,103 @@
       "tokens": [
         {
           "surface": "Sie",
-          "surface_en": "she",
-          "furigana": "[ziː]",
-          "pos": "PRON",
           "lemma": "sie",
-          "explanation": "Personal pronoun, 3rd person singular feminine nominative (sentence-initial capitalization); subject of the clause.",
-          "difficulty": 2
+          "pos": "PRON",
+          "upos": "PRON",
+          "xpos": "PPER",
+          "feats": {},
+          "start": 0,
+          "end": 3,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "notiert'",
-          "surface_en": "notes",
-          "furigana": "[noˈtiːɐt]",
-          "pos": "VERB",
+          "surface": "notiert",
           "lemma": "notieren",
-          "explanation": "Finite main verb, 3rd person singular present indicative; denotes writing down/recording.",
-          "difficulty": 10
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VVFIN",
+          "feats": {},
+          "start": 4,
+          "end": 11,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "weg-'",
-          "surface_en": "away-",
-          "furigana": "[vɛk]",
-          "pos": "NOUN",
-          "lemma": "weg-",
-          "explanation": "Quoted label used as a noun; direct object of 'notiert'.",
-          "difficulty": 7,
+          "surface": "„",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$(",
+          "feats": {},
+          "start": 12,
+          "end": 13,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "weg-",
+          "lemma": "weg",
+          "pos": "X",
+          "upos": "X",
+          "xpos": "TRUNC",
+          "feats": {},
+          "start": 13,
+          "end": 17,
+          "analyzer": "spacy_de_core_news_lg",
           "is_main_word": true
         },
         {
+          "surface": "“",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$(",
+          "feats": {},
+          "start": 17,
+          "end": 18,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
           "surface": "in",
-          "surface_en": "in",
-          "furigana": "[ɪn]",
-          "pos": "ADP",
           "lemma": "in",
-          "explanation": "Preposition introducing a locative PP ('in der Liste'); governs dative here (location).",
-          "difficulty": 2
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "APPR",
+          "feats": {},
+          "start": 19,
+          "end": 21,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "der",
-          "surface_en": "the",
-          "furigana": "[deːɐ]",
-          "pos": "DET",
           "lemma": "der",
-          "explanation": "Definite article, feminine dative singular; determiner of 'Liste'.",
-          "difficulty": 2
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "ART",
+          "feats": {},
+          "start": 22,
+          "end": 25,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "Liste.",
-          "surface_en": "list",
-          "furigana": "[ˈlɪstə]",
-          "pos": "NOUN",
+          "surface": "Liste",
           "lemma": "Liste",
-          "explanation": "Common noun (feminine); head of the PP governed by 'in'.",
-          "difficulty": 7
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 26,
+          "end": 31,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 31,
+          "end": 32,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 5
@@ -418,8 +596,1247 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-15T05:38:55Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:De b1/67282f249b5ca979",
+      "revision_id": 84795,
+      "parent_revision_id": 18452,
+      "revision_timestamp_utc": "2026-10-15T05:38:55Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Marked the prefix as a quoted text form in the German examples and corrected a Romanian typo.",
+      "pulled_utc": "2026-10-17T07:06:39Z",
+      "applied_utc": "2026-10-17T07:06:54Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-1632e043cff8571f",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_b1:67282f249b5ca979",
+        "pack_code": "de_b1",
+        "entry_id": "weg-",
+        "language": "de",
+        "sentence_index": 1,
+        "old_sentence": "Ich schreibe 'weg-' aufs Etikett.",
+        "old_translations": {
+          "de": "Ich schreibe 'weg-' aufs Etikett.",
+          "ipa": "/ɪç ˈʃʁaɪ̯bə vɛk aʊ̯fs eːtiˈkɛt/",
+          "en": "I write 'weg-' on the label.",
+          "es": "Escribo la palabra tirar en la etiqueta.",
+          "fr": "J'écris le mot jeter sur l'étiquette.",
+          "it": "Scrivo la parola buttare sull'etichetta.",
+          "ko": "라벨에 버리기라고 쓴다.",
+          "zh-Hans": "我在标签上写上丢弃。",
+          "yue": "我喺標籤上寫上棄置。",
+          "ru": "Я пишу на этикетке слово выбросить.",
+          "pt": "Escrevo a palavra descartar na etiqueta.",
+          "he": "אני כותב את המילה לזרוק על התווית.",
+          "tr": "Etikete atılacak diye yazıyorum.",
+          "vi": "Tôi viết chữ bỏ đi lên nhãn.",
+          "ar": "أكتب كلمة للرمي على الملصق.",
+          "nl": "Ik schrijf het woord weggooien op het etiket.",
+          "uk": "Я пишу на етикетці слово викинути.",
+          "hu": "A címkére azt írom, hogy kidobandó.",
+          "hi": "मैं लेबल पर फेंकना लिखता हूँ.",
+          "pl": "Na etykiecie piszę słowo wyrzucić.",
+          "el": "Γράφω στην ετικέτα να πεταχτεί.",
+          "nb": "Jeg skriver skal kastes på etiketten.",
+          "id": "Saya menulis kata buang pada label.",
+          "sv": "Jag skriver ska slängas på etiketten.",
+          "ro": "Scriu pe etichetă de aruncat.",
+          "cs": "Na štítek píšu slovo vyhodit.",
+          "da": "Jeg skriver smid ud på etiketten.",
+          "fi": "Kirjoitan etikettiin roskiin.",
+          "ja": "ラベルに廃棄と書く。"
+        },
+        "proposed_sentence": "Ich schreibe „weg-“ aufs Etikett.",
+        "proposed_translations": {
+          "de": "Ich schreibe „weg-“ aufs Etikett.",
+          "ipa": "/ɪç ˈʃʁaɪ̯bə vɛk aʊ̯fs eːtiˈkɛt/",
+          "en": "I write 'weg-' on the label.",
+          "es": "Escribo la palabra tirar en la etiqueta.",
+          "fr": "J'écris le mot jeter sur l'étiquette.",
+          "it": "Scrivo la parola buttare sull'etichetta.",
+          "ko": "라벨에 버리기라고 쓴다.",
+          "zh-Hans": "我在标签上写上丢弃。",
+          "yue": "我喺標籤上寫上棄置。",
+          "ru": "Я пишу на этикетке слово выбросить.",
+          "pt": "Escrevo a palavra descartar na etiqueta.",
+          "he": "אני כותב את המילה לזרוק על התווית.",
+          "tr": "Etikete atılacak diye yazıyorum.",
+          "vi": "Tôi viết chữ bỏ đi lên nhãn.",
+          "ar": "أكتب كلمة للرمي على الملصق.",
+          "nl": "Ik schrijf het woord weggooien op het etiket.",
+          "uk": "Я пишу на етикетці слово викинути.",
+          "hu": "A címkére azt írom, hogy kidobandó.",
+          "hi": "मैं लेबल पर फेंकना लिखता हूँ.",
+          "pl": "Na etykiecie piszę słowo wyrzucić.",
+          "el": "Γράφω στην ετικέτα να πεταχτεί.",
+          "nb": "Jeg skriver skal kastes på etiketten.",
+          "id": "Saya menulis kata buang pada label.",
+          "sv": "Jag skriver ska slängas på etiketten.",
+          "ro": "Scriu pe etichetă de aruncat.",
+          "cs": "Na štítek píšu slovo vyhodit.",
+          "da": "Jeg skriver smid ud på etiketten.",
+          "fi": "Kirjoitan etikettiin roskiin.",
+          "ja": "ラベルに廃棄と書く。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Ich schreibe „weg-“ aufs Etikett.",
+        "old_japanese": "Ich schreibe 'weg-' aufs Etikett.",
+        "old_english": "I write 'weg-' on the label.",
+        "proposed_japanese": "Ich schreibe „weg-“ aufs Etikett.",
+        "proposed_english": "I write 'weg-' on the label.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Ich schreibe „weg-“ aufs Etikett.",
+          "tokens": [
+            {
+              "surface": "Ich",
+              "lemma": "ich",
+              "pos": "PRON",
+              "upos": "PRON",
+              "xpos": "PPER",
+              "feats": {},
+              "start": 0,
+              "end": 3,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "schreibe",
+              "lemma": "schreiben",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVFIN",
+              "feats": {},
+              "start": 4,
+              "end": 12,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "„",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$(",
+              "feats": {},
+              "start": 13,
+              "end": 14,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "weg-",
+              "lemma": "weg",
+              "pos": "X",
+              "upos": "X",
+              "xpos": "TRUNC",
+              "feats": {},
+              "start": 14,
+              "end": 18,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "“",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$(",
+              "feats": {},
+              "start": 18,
+              "end": 19,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "aufs",
+              "lemma": "auf",
+              "pos": "ADP",
+              "upos": "ADP",
+              "xpos": "APPRART",
+              "feats": {},
+              "start": 20,
+              "end": 24,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Etikett",
+              "lemma": "Etikett",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 25,
+              "end": 32,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 32,
+              "end": 33,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Ich",
+            "lemma": "ich",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "schreibe",
+            "lemma": "schreiben",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 4,
+            "end": 12,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "„",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$(",
+            "feats": {},
+            "start": 13,
+            "end": 14,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "weg-",
+            "lemma": "weg",
+            "pos": "X",
+            "upos": "X",
+            "xpos": "TRUNC",
+            "feats": {},
+            "start": 14,
+            "end": 18,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "“",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$(",
+            "feats": {},
+            "start": 18,
+            "end": 19,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "aufs",
+            "lemma": "auf",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPRART",
+            "feats": {},
+            "start": 20,
+            "end": 24,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Etikett",
+            "lemma": "Etikett",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 25,
+            "end": 32,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 32,
+            "end": 33,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:06:39Z",
+        "updated_utc": "2026-10-17T07:07:06Z",
+        "applied_utc": "2026-10-17T07:07:06Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      },
+      {
+        "id": "sentprop-6fb228ab0c015a51",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_b1:67282f249b5ca979",
+        "pack_code": "de_b1",
+        "entry_id": "weg-",
+        "language": "de",
+        "sentence_index": 2,
+        "old_sentence": "Wir kleben 'weg-' auf die Kiste.",
+        "old_translations": {
+          "de": "Wir kleben 'weg-' auf die Kiste.",
+          "ipa": "/viːɐ̯ ˈkleːbən vɛk aʊ̯f diː ˈkɪstə/",
+          "en": "We stick 'weg-' onto the box.",
+          "es": "Pegamos en la caja una etiqueta que dice tirar.",
+          "fr": "On colle sur le carton une étiquette avec la mention à jeter.",
+          "it": "Attacchiamo sulla scatola un'etichetta con scritto da buttare.",
+          "ko": "상자에 버리기라고 적힌 라벨을 붙인다.",
+          "zh-Hans": "我们把写着丢弃的标签贴在箱子上。",
+          "yue": "我哋將寫有棄置嘅標籤貼喺箱上面。",
+          "ru": "Мы клеим на коробку наклейку с надписью выбросить.",
+          "pt": "Colamos na caixa uma etiqueta com a palavra descartar.",
+          "he": "אנחנו מדביקים על הקופסה מדבקה שכתוב עליה לזרוק.",
+          "tr": "Kutunun üzerine atılacak yazan bir etiket yapıştırıyoruz.",
+          "vi": "Chúng tôi dán lên thùng một nhãn có chữ bỏ đi.",
+          "ar": "نلصق على الصندوق ملصقًا مكتوب عليه للرمي.",
+          "nl": "We plakken op de doos een sticker met de tekst weggooien.",
+          "uk": "Ми клеїмо на коробку наліпку з написом викинути.",
+          "hu": "Kidobandó feliratú címkét ragasztunk a dobozra.",
+          "hi": "हम डिब्बे पर एक लेबल चिपकाते हैं जिस पर फेंकना लिखा है.",
+          "pl": "Naklejamy na pudełko etykietę z napisem wyrzucić.",
+          "el": "Κολλάμε στο κουτί αυτοκόλλητο με την ένδειξη να πεταχτεί.",
+          "nb": "Vi fester på esken en etikett der det står skal kastes.",
+          "id": "Kami menempelkan pada kotak sebuah label bertuliskan buang.",
+          "sv": "Vi sätter på lådan en etikett där det står ska slängas.",
+          "ro": "Lipim pe cutie o etichetă pe care scrie de aruncat.",
+          "cs": "Na krabici lepíme štítek s nápisem vyhodit.",
+          "da": "Vi sætter en etiket på kassen, hvor der står skal smides ud.",
+          "fi": "Liimaamme laatikkoon tarran, jossa lukee roskiin.",
+          "ja": "箱に廃棄と書かれたラベルを貼る。"
+        },
+        "proposed_sentence": "Wir kleben „weg-“ auf die Kiste.",
+        "proposed_translations": {
+          "de": "Wir kleben „weg-“ auf die Kiste.",
+          "ipa": "/viːɐ̯ ˈkleːbən vɛk aʊ̯f diː ˈkɪstə/",
+          "en": "We stick 'weg-' onto the box.",
+          "es": "Pegamos en la caja una etiqueta que dice tirar.",
+          "fr": "On colle sur le carton une étiquette avec la mention à jeter.",
+          "it": "Attacchiamo sulla scatola un'etichetta con scritto da buttare.",
+          "ko": "상자에 버리기라고 적힌 라벨을 붙인다.",
+          "zh-Hans": "我们把写着丢弃的标签贴在箱子上。",
+          "yue": "我哋將寫有棄置嘅標籤貼喺箱上面。",
+          "ru": "Мы клеим на коробку наклейку с надписью выбросить.",
+          "pt": "Colamos na caixa uma etiqueta com a palavra descartar.",
+          "he": "אנחנו מדביקים על הקופסה מדבקה שכתוב עליה לזרוק.",
+          "tr": "Kutunun üzerine atılacak yazan bir etiket yapıştırıyoruz.",
+          "vi": "Chúng tôi dán lên thùng một nhãn có chữ bỏ đi.",
+          "ar": "نلصق على الصندوق ملصقًا مكتوب عليه للرمي.",
+          "nl": "We plakken op de doos een sticker met de tekst weggooien.",
+          "uk": "Ми клеїмо на коробку наліпку з написом викинути.",
+          "hu": "Kidobandó feliratú címkét ragasztunk a dobozra.",
+          "hi": "हम डिब्बे पर एक लेबल चिपकाते हैं जिस पर फेंकना लिखा है.",
+          "pl": "Naklejamy na pudełko etykietę z napisem wyrzucić.",
+          "el": "Κολλάμε στο κουτί αυτοκόλλητο με την ένδειξη να πεταχτεί.",
+          "nb": "Vi fester på esken en etikett der det står skal kastes.",
+          "id": "Kami menempelkan pada kotak sebuah label bertuliskan buang.",
+          "sv": "Vi sätter på lådan en etikett där det står ska slängas.",
+          "ro": "Lipim pe cutie o etichetă pe care scrie de aruncat.",
+          "cs": "Na krabici lepíme štítek s nápisem vyhodit.",
+          "da": "Vi sætter en etiket på kassen, hvor der står skal smides ud.",
+          "fi": "Liimaamme laatikkoon tarran, jossa lukee roskiin.",
+          "ja": "箱に廃棄と書かれたラベルを貼る。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Wir kleben „weg-“ auf die Kiste.",
+        "old_japanese": "Wir kleben 'weg-' auf die Kiste.",
+        "old_english": "We stick 'weg-' onto the box.",
+        "proposed_japanese": "Wir kleben „weg-“ auf die Kiste.",
+        "proposed_english": "We stick 'weg-' onto the box.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Wir kleben „weg-“ auf die Kiste.",
+          "tokens": [
+            {
+              "surface": "Wir",
+              "lemma": "wir",
+              "pos": "PRON",
+              "upos": "PRON",
+              "xpos": "PPER",
+              "feats": {},
+              "start": 0,
+              "end": 3,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "kleben",
+              "lemma": "kleben",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVFIN",
+              "feats": {},
+              "start": 4,
+              "end": 10,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "„",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$(",
+              "feats": {},
+              "start": 11,
+              "end": 12,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "weg-",
+              "lemma": "weg",
+              "pos": "X",
+              "upos": "X",
+              "xpos": "TRUNC",
+              "feats": {},
+              "start": 12,
+              "end": 16,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "“",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$(",
+              "feats": {},
+              "start": 16,
+              "end": 17,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "auf",
+              "lemma": "auf",
+              "pos": "ADP",
+              "upos": "ADP",
+              "xpos": "APPR",
+              "feats": {},
+              "start": 18,
+              "end": 21,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "die",
+              "lemma": "der",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "ART",
+              "feats": {},
+              "start": 22,
+              "end": 25,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Kiste",
+              "lemma": "Kiste",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 26,
+              "end": 31,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 31,
+              "end": 32,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Wir",
+            "lemma": "wir",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "kleben",
+            "lemma": "kleben",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 4,
+            "end": 10,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "„",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$(",
+            "feats": {},
+            "start": 11,
+            "end": 12,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "weg-",
+            "lemma": "weg",
+            "pos": "X",
+            "upos": "X",
+            "xpos": "TRUNC",
+            "feats": {},
+            "start": 12,
+            "end": 16,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "“",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$(",
+            "feats": {},
+            "start": 16,
+            "end": 17,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "auf",
+            "lemma": "auf",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 18,
+            "end": 21,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "die",
+            "lemma": "der",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 22,
+            "end": 25,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Kiste",
+            "lemma": "Kiste",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 26,
+            "end": 31,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 31,
+            "end": 32,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:06:39Z",
+        "updated_utc": "2026-10-17T07:07:06Z",
+        "applied_utc": "2026-10-17T07:07:06Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      },
+      {
+        "id": "sentprop-b9115d2dd0f60e18",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_b1:67282f249b5ca979",
+        "pack_code": "de_b1",
+        "entry_id": "weg-",
+        "language": "de",
+        "sentence_index": 3,
+        "old_sentence": "Er markiert die Pflanzen mit 'weg-'.",
+        "old_translations": {
+          "de": "Er markiert die Pflanzen mit 'weg-'.",
+          "ipa": "/eːɐ̯ maʁˈkiːɐ̯t diː ˈpflant͡sən mɪt vɛk/",
+          "en": "He marks the plants with 'weg-'.",
+          "es": "Marca las plantas como para tirar.",
+          "fr": "Il marque les plantes à jeter.",
+          "it": "Segna le piante come da buttare.",
+          "ko": "식물에 버리기 표시를 한다.",
+          "zh-Hans": "他把这些植物标为丢弃。",
+          "yue": "佢將啲植物標註為棄置。",
+          "ru": "Он помечает растения как на выброс.",
+          "pt": "Ele marca as plantas como para descarte.",
+          "he": "הוא מסמן את הצמחים כמיועדים לזריקה.",
+          "tr": "Bitkileri atılacak olarak işaretliyor.",
+          "vi": "Anh ấy đánh dấu các cây là để bỏ đi.",
+          "ar": "يعلّم النباتات على أنها للرمي.",
+          "nl": "Hij markeert de planten als weg te gooien.",
+          "uk": "Він позначає рослини як на викид.",
+          "hu": "Megjelöli a növényeket kidobandóként.",
+          "hi": "वह पौधों को फेंकने के लिए चिन्हित करता है.",
+          "pl": "Oznacza rośliny jako do wyrzucenia.",
+          "el": "Σημειώνει τα φυτά ως για πέταμα.",
+          "nb": "Han merker plantene som skal kastes.",
+          "id": "Dia menandai tanaman untuk dibuang.",
+          "sv": "Han markerar växterna som ska slängas.",
+          "ro": "El marchează plantele ca de aruncat.",
+          "cs": "Označuje rostliny jako na vyhození.",
+          "da": "Han markerer planterne som skal smides ud.",
+          "fi": "Hän merkitsee kasvit roskiin meneviksi.",
+          "ja": "彼は植物に廃棄の印を付ける。"
+        },
+        "proposed_sentence": "Er markiert die Pflanzen mit „weg-“.",
+        "proposed_translations": {
+          "de": "Er markiert die Pflanzen mit „weg-“.",
+          "ipa": "/eːɐ̯ maʁˈkiːɐ̯t diː ˈpflant͡sən mɪt vɛk/",
+          "en": "He marks the plants with 'weg-'.",
+          "es": "Marca las plantas como para tirar.",
+          "fr": "Il marque les plantes à jeter.",
+          "it": "Segna le piante come da buttare.",
+          "ko": "식물에 버리기 표시를 한다.",
+          "zh-Hans": "他把这些植物标为丢弃。",
+          "yue": "佢將啲植物標註為棄置。",
+          "ru": "Он помечает растения как на выброс.",
+          "pt": "Ele marca as plantas como para descarte.",
+          "he": "הוא מסמן את הצמחים כמיועדים לזריקה.",
+          "tr": "Bitkileri atılacak olarak işaretliyor.",
+          "vi": "Anh ấy đánh dấu các cây là để bỏ đi.",
+          "ar": "يعلّم النباتات على أنها للرمي.",
+          "nl": "Hij markeert de planten als weg te gooien.",
+          "uk": "Він позначає рослини як на викид.",
+          "hu": "Megjelöli a növényeket kidobandóként.",
+          "hi": "वह पौधों को फेंकने के लिए चिन्हित करता है.",
+          "pl": "Oznacza rośliny jako do wyrzucenia.",
+          "el": "Σημειώνει τα φυτά ως για πέταμα.",
+          "nb": "Han merker plantene som skal kastes.",
+          "id": "Dia menandai tanaman untuk dibuang.",
+          "sv": "Han markerar växterna som ska slängas.",
+          "ro": "El marchează plantele ca de aruncat.",
+          "cs": "Označuje rostliny jako na vyhození.",
+          "da": "Han markerer planterne som skal smides ud.",
+          "fi": "Hän merkitsee kasvit roskiin meneviksi.",
+          "ja": "彼は植物に廃棄の印を付ける。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Er markiert die Pflanzen mit „weg-“.",
+        "old_japanese": "Er markiert die Pflanzen mit 'weg-'.",
+        "old_english": "He marks the plants with 'weg-'.",
+        "proposed_japanese": "Er markiert die Pflanzen mit „weg-“.",
+        "proposed_english": "He marks the plants with 'weg-'.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Er markiert die Pflanzen mit „weg-“.",
+          "tokens": [
+            {
+              "surface": "Er",
+              "lemma": "er",
+              "pos": "PRON",
+              "upos": "PRON",
+              "xpos": "PPER",
+              "feats": {},
+              "start": 0,
+              "end": 2,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "markiert",
+              "lemma": "markieren",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVFIN",
+              "feats": {},
+              "start": 3,
+              "end": 11,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "die",
+              "lemma": "der",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "ART",
+              "feats": {},
+              "start": 12,
+              "end": 15,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Pflanzen",
+              "lemma": "Pflanze",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 16,
+              "end": 24,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "mit",
+              "lemma": "mit",
+              "pos": "ADP",
+              "upos": "ADP",
+              "xpos": "APPR",
+              "feats": {},
+              "start": 25,
+              "end": 28,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "„",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$(",
+              "feats": {},
+              "start": 29,
+              "end": 30,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "weg-",
+              "lemma": "weg",
+              "pos": "X",
+              "upos": "X",
+              "xpos": "TRUNC",
+              "feats": {},
+              "start": 30,
+              "end": 34,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "“",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$(",
+              "feats": {},
+              "start": 34,
+              "end": 35,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 35,
+              "end": 36,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Er",
+            "lemma": "er",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "markiert",
+            "lemma": "markieren",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 3,
+            "end": 11,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "die",
+            "lemma": "der",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 12,
+            "end": 15,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Pflanzen",
+            "lemma": "Pflanze",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 16,
+            "end": 24,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "mit",
+            "lemma": "mit",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 25,
+            "end": 28,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "„",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$(",
+            "feats": {},
+            "start": 29,
+            "end": 30,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "weg-",
+            "lemma": "weg",
+            "pos": "X",
+            "upos": "X",
+            "xpos": "TRUNC",
+            "feats": {},
+            "start": 30,
+            "end": 34,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "“",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$(",
+            "feats": {},
+            "start": 34,
+            "end": 35,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 35,
+            "end": 36,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:06:39Z",
+        "updated_utc": "2026-10-17T07:07:06Z",
+        "applied_utc": "2026-10-17T07:07:06Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      },
+      {
+        "id": "sentprop-f1f71d6003d7371f",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_b1:67282f249b5ca979",
+        "pack_code": "de_b1",
+        "entry_id": "weg-",
+        "language": "de",
+        "sentence_index": 4,
+        "old_sentence": "Sie notiert 'weg-' in der Liste.",
+        "old_translations": {
+          "de": "Sie notiert 'weg-' in der Liste.",
+          "ipa": "/ziː noˈtiːɐ̯t vɛk ɪn deːɐ̯ ˈlɪstə/",
+          "en": "She notes 'weg-' in the list.",
+          "es": "Anota en la lista que va para tirar.",
+          "fr": "Elle note sur la liste que c'est à jeter.",
+          "it": "Segna nella lista che è da buttare.",
+          "ko": "그녀는 목록에 버리기라고 적는다.",
+          "zh-Hans": "她在清单上记下丢弃。",
+          "yue": "佢喺清單上記低棄置。",
+          "ru": "Она отмечает в списке, что это на выброс.",
+          "pt": "Ela anota na lista que é para descartar.",
+          "he": "היא רושמת ברשימה שצריך לזרוק.",
+          "tr": "Listeye atılacak diye not ediyor.",
+          "vi": "Cô ấy ghi vào danh sách là để bỏ đi.",
+          "ar": "تدوّن في القائمة أنه يجب رميه.",
+          "nl": "Ze noteert in de lijst dat het weg moet.",
+          "uk": "Вона занотовує в списку, що це на викид.",
+          "hu": "Beírja a listába, hogy kidobandó.",
+          "hi": "वह सूची में लिखती है कि इसे फेंकना है.",
+          "pl": "Zapisuje na liście, że to do wyrzucenia.",
+          "el": "Σημειώνει στη λίστα ότι πάει για πέταμα.",
+          "nb": "Hun noterer i lista at det skal kastes.",
+          "id": "Dia mencatat dalam daftar bahwa akan dibuang.",
+          "sv": "Hon antecknar i listan att det ska slängas.",
+          "ro": "Ea notează în listă că e de apuncat.",
+          "cs": "Zapíše do seznamu, že to je na vyhození.",
+          "da": "Hun noterer i listen, at det skal smides ud.",
+          "fi": "Hän merkitsee listaan, että se menee roskiin.",
+          "ja": "彼女はリストに廃棄と書く。"
+        },
+        "proposed_sentence": "Sie notiert „weg-“ in der Liste.",
+        "proposed_translations": {
+          "de": "Sie notiert „weg-“ in der Liste.",
+          "ipa": "/ziː noˈtiːɐ̯t vɛk ɪn deːɐ̯ ˈlɪstə/",
+          "en": "She notes 'weg-' in the list.",
+          "es": "Anota en la lista que va para tirar.",
+          "fr": "Elle note sur la liste que c'est à jeter.",
+          "it": "Segna nella lista che è da buttare.",
+          "ko": "그녀는 목록에 버리기라고 적는다.",
+          "zh-Hans": "她在清单上记下丢弃。",
+          "yue": "佢喺清單上記低棄置。",
+          "ru": "Она отмечает в списке, что это на выброс.",
+          "pt": "Ela anota na lista que é para descartar.",
+          "he": "היא רושמת ברשימה שצריך לזרוק.",
+          "tr": "Listeye atılacak diye not ediyor.",
+          "vi": "Cô ấy ghi vào danh sách là để bỏ đi.",
+          "ar": "تدوّن في القائمة أنه يجب رميه.",
+          "nl": "Ze noteert in de lijst dat het weg moet.",
+          "uk": "Вона занотовує в списку, що це на викид.",
+          "hu": "Beírja a listába, hogy kidobandó.",
+          "hi": "वह सूची में लिखती है कि इसे फेंकना है.",
+          "pl": "Zapisuje na liście, że to do wyrzucenia.",
+          "el": "Σημειώνει στη λίστα ότι πάει για πέταμα.",
+          "nb": "Hun noterer i lista at det skal kastes.",
+          "id": "Dia mencatat dalam daftar bahwa akan dibuang.",
+          "sv": "Hon antecknar i listan att det ska slängas.",
+          "ro": "Ea notează în listă că e de aruncat.",
+          "cs": "Zapíše do seznamu, že to je na vyhození.",
+          "da": "Hun noterer i listen, at det skal smides ud.",
+          "fi": "Hän merkitsee listaan, että se menee roskiin.",
+          "ja": "彼女はリストに廃棄と書く。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Sie notiert „weg-“ in der Liste.",
+        "old_japanese": "Sie notiert 'weg-' in der Liste.",
+        "old_english": "She notes 'weg-' in the list.",
+        "proposed_japanese": "Sie notiert „weg-“ in der Liste.",
+        "proposed_english": "She notes 'weg-' in the list.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Sie notiert „weg-“ in der Liste.",
+          "tokens": [
+            {
+              "surface": "Sie",
+              "lemma": "sie",
+              "pos": "PRON",
+              "upos": "PRON",
+              "xpos": "PPER",
+              "feats": {},
+              "start": 0,
+              "end": 3,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "notiert",
+              "lemma": "notieren",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVFIN",
+              "feats": {},
+              "start": 4,
+              "end": 11,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "„",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$(",
+              "feats": {},
+              "start": 12,
+              "end": 13,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "weg-",
+              "lemma": "weg",
+              "pos": "X",
+              "upos": "X",
+              "xpos": "TRUNC",
+              "feats": {},
+              "start": 13,
+              "end": 17,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "“",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$(",
+              "feats": {},
+              "start": 17,
+              "end": 18,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "in",
+              "lemma": "in",
+              "pos": "ADP",
+              "upos": "ADP",
+              "xpos": "APPR",
+              "feats": {},
+              "start": 19,
+              "end": 21,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "der",
+              "lemma": "der",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "ART",
+              "feats": {},
+              "start": 22,
+              "end": 25,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Liste",
+              "lemma": "Liste",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 26,
+              "end": 31,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 31,
+              "end": 32,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Sie",
+            "lemma": "sie",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "notiert",
+            "lemma": "notieren",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 4,
+            "end": 11,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "„",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$(",
+            "feats": {},
+            "start": 12,
+            "end": 13,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "weg-",
+            "lemma": "weg",
+            "pos": "X",
+            "upos": "X",
+            "xpos": "TRUNC",
+            "feats": {},
+            "start": 13,
+            "end": 17,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "“",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$(",
+            "feats": {},
+            "start": 17,
+            "end": 18,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "in",
+            "lemma": "in",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 19,
+            "end": 21,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "der",
+            "lemma": "der",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 22,
+            "end": 25,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Liste",
+            "lemma": "Liste",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 26,
+            "end": 31,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 31,
+            "end": 32,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:06:39Z",
+        "updated_utc": "2026-10-17T07:07:06Z",
+        "applied_utc": "2026-10-17T07:07:06Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:07:06Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -431,6 +1848,436 @@
     "word": "weg-",
     "word_reading": "",
     "word_label": "Affix",
+    "comic_difficulty": 5.55,
+    "jp": [
+      "Ich schreibe 'weg-' aufs Etikett.",
+      "Wir kleben 'weg-' auf die Kiste.",
+      "Er markiert die Pflanzen mit 'weg-'.",
+      "Sie notiert 'weg-' in der Liste."
+    ],
+    "fu": [
+      "/ɪç ˈʃʁaɪ̯bə vɛk aʊ̯fs eːtiˈkɛt/",
+      "/viːɐ̯ ˈkleːbən vɛk aʊ̯f diː ˈkɪstə/",
+      "/eːɐ̯ maʁˈkiːɐ̯t diː ˈpflant͡sən mɪt vɛk/",
+      "/ziː noˈtiːɐ̯t vɛk ɪn deːɐ̯ ˈlɪstə/"
+    ],
+    "pos_analysis": [
+      {
+        "sentence": "Ich schreibe „weg-“ aufs Etikett.",
+        "tokens": [
+          {
+            "surface": "Ich",
+            "lemma": "ich",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "schreibe",
+            "lemma": "schreiben",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 4,
+            "end": 12,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "„",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$(",
+            "feats": {},
+            "start": 13,
+            "end": 14,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "weg-",
+            "lemma": "weg",
+            "pos": "X",
+            "upos": "X",
+            "xpos": "TRUNC",
+            "feats": {},
+            "start": 14,
+            "end": 18,
+            "analyzer": "spacy_de_core_news_lg",
+            "is_main_word": true
+          },
+          {
+            "surface": "“",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$(",
+            "feats": {},
+            "start": 18,
+            "end": 19,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "aufs",
+            "lemma": "auf",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPRART",
+            "feats": {},
+            "start": 20,
+            "end": 24,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Etikett",
+            "lemma": "Etikett",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 25,
+            "end": 32,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 32,
+            "end": 33,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "difficulty_aggregated": 7.2
+      },
+      {
+        "sentence": "Wir kleben „weg-“ auf die Kiste.",
+        "tokens": [
+          {
+            "surface": "Wir",
+            "lemma": "wir",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "kleben",
+            "lemma": "kleben",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 4,
+            "end": 10,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "„",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$(",
+            "feats": {},
+            "start": 11,
+            "end": 12,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "weg-",
+            "lemma": "weg",
+            "pos": "X",
+            "upos": "X",
+            "xpos": "TRUNC",
+            "feats": {},
+            "start": 12,
+            "end": 16,
+            "analyzer": "spacy_de_core_news_lg",
+            "is_main_word": true
+          },
+          {
+            "surface": "“",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$(",
+            "feats": {},
+            "start": 16,
+            "end": 17,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "auf",
+            "lemma": "auf",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 18,
+            "end": 21,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "die",
+            "lemma": "der",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 22,
+            "end": 25,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Kiste",
+            "lemma": "Kiste",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 26,
+            "end": 31,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 31,
+            "end": 32,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "difficulty_aggregated": 4.5
+      },
+      {
+        "sentence": "Er markiert die Pflanzen mit „weg-“.",
+        "tokens": [
+          {
+            "surface": "Er",
+            "lemma": "er",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "markiert",
+            "lemma": "markieren",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 3,
+            "end": 11,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "die",
+            "lemma": "der",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 12,
+            "end": 15,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Pflanzen",
+            "lemma": "Pflanze",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 16,
+            "end": 24,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "mit",
+            "lemma": "mit",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 25,
+            "end": 28,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "„",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$(",
+            "feats": {},
+            "start": 29,
+            "end": 30,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "weg-",
+            "lemma": "weg",
+            "pos": "X",
+            "upos": "X",
+            "xpos": "TRUNC",
+            "feats": {},
+            "start": 30,
+            "end": 34,
+            "analyzer": "spacy_de_core_news_lg",
+            "is_main_word": true
+          },
+          {
+            "surface": "“",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$(",
+            "feats": {},
+            "start": 34,
+            "end": 35,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 35,
+            "end": 36,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "difficulty_aggregated": 5.5
+      },
+      {
+        "sentence": "Sie notiert „weg-“ in der Liste.",
+        "tokens": [
+          {
+            "surface": "Sie",
+            "lemma": "sie",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "notiert",
+            "lemma": "notieren",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 4,
+            "end": 11,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "„",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$(",
+            "feats": {},
+            "start": 12,
+            "end": 13,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "weg-",
+            "lemma": "weg",
+            "pos": "X",
+            "upos": "X",
+            "xpos": "TRUNC",
+            "feats": {},
+            "start": 13,
+            "end": 17,
+            "analyzer": "spacy_de_core_news_lg",
+            "is_main_word": true
+          },
+          {
+            "surface": "“",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$(",
+            "feats": {},
+            "start": 17,
+            "end": 18,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "in",
+            "lemma": "in",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 19,
+            "end": 21,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "der",
+            "lemma": "der",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 22,
+            "end": 25,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Liste",
+            "lemma": "Liste",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 26,
+            "end": 31,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 31,
+            "end": 32,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "difficulty_aggregated": 5
+      }
+    ],
+    "word_POS": "Other",
+    "entry_id": "weg-",
     "word_en": "away-; off-",
     "word_es": "fuera; quitar",
     "word_fr": "loin; enlever",
@@ -459,405 +2306,11 @@
     "word_fi": "pois; poistaa",
     "word_ja": "離れる; 取り除く",
     "word_de": "weg-",
-    "comic_difficulty": 5.55,
-    "jp": [
-      "Ich schreibe 'weg-' aufs Etikett.",
-      "Wir kleben 'weg-' auf die Kiste.",
-      "Er markiert die Pflanzen mit 'weg-'.",
-      "Sie notiert 'weg-' in der Liste."
-    ],
-    "fu": [
-      "/ɪç ˈʃʁaɪ̯bə vɛk aʊ̯fs eːtiˈkɛt/",
-      "/viːɐ̯ ˈkleːbən vɛk aʊ̯f diː ˈkɪstə/",
-      "/eːɐ̯ maʁˈkiːɐ̯t diː ˈpflant͡sən mɪt vɛk/",
-      "/ziː noˈtiːɐ̯t vɛk ɪn deːɐ̯ ˈlɪstə/"
-    ],
-    "de": [
-      "Ich schreibe 'weg-' aufs Etikett.",
-      "Wir kleben 'weg-' auf die Kiste.",
-      "Er markiert die Pflanzen mit 'weg-'.",
-      "Sie notiert 'weg-' in der Liste."
-    ],
-    "ipa": [
-      "/ɪç ˈʃʁaɪ̯bə vɛk aʊ̯fs eːtiˈkɛt/",
-      "/viːɐ̯ ˈkleːbən vɛk aʊ̯f diː ˈkɪstə/",
-      "/eːɐ̯ maʁˈkiːɐ̯t diː ˈpflant͡sən mɪt vɛk/",
-      "/ziː noˈtiːɐ̯t vɛk ɪn deːɐ̯ ˈlɪstə/"
-    ],
-    "en": [
-      "I write 'weg-' on the label.",
-      "We stick 'weg-' onto the box.",
-      "He marks the plants with 'weg-'.",
-      "She notes 'weg-' in the list."
-    ],
-    "pos_analysis": [
-      {
-        "sentence": "Ich schreibe 'weg-' aufs Etikett.",
-        "tokens": [
-          {
-            "surface": "Ich",
-            "surface_en": "I",
-            "furigana": "[ɪç]",
-            "pos": "PRON",
-            "lemma": "ich",
-            "explanation": "Personal pronoun, 1st person singular nominative; subject of the clause.",
-            "difficulty": 2
-          },
-          {
-            "surface": "schreibe'",
-            "surface_en": "write",
-            "furigana": "[ˈʃʁaɪbə]",
-            "pos": "VERB",
-            "lemma": "schreiben",
-            "explanation": "Finite main verb, 1st person singular present indicative of 'schreiben'; denotes the act of writing.",
-            "difficulty": 10
-          },
-          {
-            "surface": "weg-'",
-            "surface_en": "away-",
-            "furigana": "[vɛk]",
-            "pos": "NOUN",
-            "lemma": "weg-",
-            "explanation": "Quoted prefix/label functioning as a metalinguistic noun; direct object of 'schreibe'. The hyphen is part of the written label.",
-            "difficulty": 7,
-            "is_main_word": true
-          },
-          {
-            "surface": "aufs",
-            "surface_en": "onto the",
-            "furigana": "[aʊfs]",
-            "pos": "ADP",
-            "lemma": "auf",
-            "explanation": "Preposition contracted with the article ('auf das'); introduces a goal PP ('aufs Etikett') and governs accusative.",
-            "difficulty": 7
-          },
-          {
-            "surface": "Etikett.",
-            "surface_en": "label",
-            "furigana": "[etɪˈkɛt]",
-            "pos": "NOUN",
-            "lemma": "Etikett",
-            "explanation": "Common noun (neuter); head of the prepositional phrase governed by 'auf(s)'.",
-            "difficulty": 10
-          }
-        ],
-        "difficulty_aggregated": 7.2
-      },
-      {
-        "sentence": "Wir kleben 'weg-' auf die Kiste.",
-        "tokens": [
-          {
-            "surface": "Wir",
-            "surface_en": "we",
-            "furigana": "[viːɐ]",
-            "pos": "PRON",
-            "lemma": "wir",
-            "explanation": "Personal pronoun, 1st person plural nominative; subject of the clause.",
-            "difficulty": 2
-          },
-          {
-            "surface": "kleben'",
-            "surface_en": "glue",
-            "furigana": "[ˈkleːbən]",
-            "pos": "VERB",
-            "lemma": "kleben",
-            "explanation": "Finite main verb, 1st person plural present indicative; denotes attaching something with adhesive.",
-            "difficulty": 7
-          },
-          {
-            "surface": "weg-'",
-            "surface_en": "away-",
-            "furigana": "[vɛk]",
-            "pos": "NOUN",
-            "lemma": "weg-",
-            "explanation": "Quoted label used metalinguistically as a noun; direct object of 'kleben'.",
-            "difficulty": 7,
-            "is_main_word": true
-          },
-          {
-            "surface": "auf",
-            "surface_en": "onto",
-            "furigana": "[aʊf]",
-            "pos": "ADP",
-            "lemma": "auf",
-            "explanation": "Preposition introducing a goal PP ('auf die Kiste'); governs accusative here (direction).",
-            "difficulty": 2
-          },
-          {
-            "surface": "die",
-            "surface_en": "the",
-            "furigana": "[diː]",
-            "pos": "DET",
-            "lemma": "der",
-            "explanation": "Definite article, feminine accusative singular; determiner of 'Kiste'.",
-            "difficulty": 2
-          },
-          {
-            "surface": "Kiste.",
-            "surface_en": "box",
-            "furigana": "[ˈkɪstə]",
-            "pos": "NOUN",
-            "lemma": "Kiste",
-            "explanation": "Common noun (feminine); object of the preposition 'auf'.",
-            "difficulty": 7
-          }
-        ],
-        "difficulty_aggregated": 4.5
-      },
-      {
-        "sentence": "Er markiert die Pflanzen mit 'weg-'.",
-        "tokens": [
-          {
-            "surface": "Er",
-            "surface_en": "he",
-            "furigana": "[eːɐ]",
-            "pos": "PRON",
-            "lemma": "er",
-            "explanation": "Personal pronoun, 3rd person singular masculine nominative; subject of the clause.",
-            "difficulty": 2
-          },
-          {
-            "surface": "markiert",
-            "surface_en": "marks",
-            "furigana": "[maʁˈkiːɐt]",
-            "pos": "VERB",
-            "lemma": "markieren",
-            "explanation": "Finite main verb, 3rd person singular present indicative; denotes labeling/marking.",
-            "difficulty": 10
-          },
-          {
-            "surface": "die",
-            "surface_en": "the",
-            "furigana": "[diː]",
-            "pos": "DET",
-            "lemma": "der",
-            "explanation": "Definite article, plural accusative; determiner of 'Pflanzen'.",
-            "difficulty": 2
-          },
-          {
-            "surface": "Pflanzen",
-            "surface_en": "plants",
-            "furigana": "[ˈpflantsən]",
-            "pos": "NOUN",
-            "lemma": "Pflanze",
-            "explanation": "Common noun (plural); direct object of 'markiert'.",
-            "difficulty": 10
-          },
-          {
-            "surface": "mit'",
-            "surface_en": "with",
-            "furigana": "[mɪt]",
-            "pos": "ADP",
-            "lemma": "mit",
-            "explanation": "Preposition introducing an instrumental PP ('mit weg-'); governs dative (the quoted label is used as the marking).",
-            "difficulty": 2
-          },
-          {
-            "surface": "weg-'.",
-            "surface_en": "away-",
-            "furigana": "[vɛk]",
-            "pos": "NOUN",
-            "lemma": "weg-",
-            "explanation": "Quoted label functioning as the object of the preposition 'mit'.",
-            "difficulty": 7,
-            "is_main_word": true
-          }
-        ],
-        "difficulty_aggregated": 5.5
-      },
-      {
-        "sentence": "Sie notiert 'weg-' in der Liste.",
-        "tokens": [
-          {
-            "surface": "Sie",
-            "surface_en": "she",
-            "furigana": "[ziː]",
-            "pos": "PRON",
-            "lemma": "sie",
-            "explanation": "Personal pronoun, 3rd person singular feminine nominative (sentence-initial capitalization); subject of the clause.",
-            "difficulty": 2
-          },
-          {
-            "surface": "notiert'",
-            "surface_en": "notes",
-            "furigana": "[noˈtiːɐt]",
-            "pos": "VERB",
-            "lemma": "notieren",
-            "explanation": "Finite main verb, 3rd person singular present indicative; denotes writing down/recording.",
-            "difficulty": 10
-          },
-          {
-            "surface": "weg-'",
-            "surface_en": "away-",
-            "furigana": "[vɛk]",
-            "pos": "NOUN",
-            "lemma": "weg-",
-            "explanation": "Quoted label used as a noun; direct object of 'notiert'.",
-            "difficulty": 7,
-            "is_main_word": true
-          },
-          {
-            "surface": "in",
-            "surface_en": "in",
-            "furigana": "[ɪn]",
-            "pos": "ADP",
-            "lemma": "in",
-            "explanation": "Preposition introducing a locative PP ('in der Liste'); governs dative here (location).",
-            "difficulty": 2
-          },
-          {
-            "surface": "der",
-            "surface_en": "the",
-            "furigana": "[deːɐ]",
-            "pos": "DET",
-            "lemma": "der",
-            "explanation": "Definite article, feminine dative singular; determiner of 'Liste'.",
-            "difficulty": 2
-          },
-          {
-            "surface": "Liste.",
-            "surface_en": "list",
-            "furigana": "[ˈlɪstə]",
-            "pos": "NOUN",
-            "lemma": "Liste",
-            "explanation": "Common noun (feminine); head of the PP governed by 'in'.",
-            "difficulty": 7
-          }
-        ],
-        "difficulty_aggregated": 5
-      }
-    ],
-    "es": [
-      "Escribo la palabra tirar en la etiqueta.",
-      "Pegamos en la caja una etiqueta que dice tirar.",
-      "Marca las plantas como para tirar.",
-      "Anota en la lista que va para tirar."
-    ],
-    "fr": [
-      "J'écris le mot jeter sur l'étiquette.",
-      "On colle sur le carton une étiquette avec la mention à jeter.",
-      "Il marque les plantes à jeter.",
-      "Elle note sur la liste que c'est à jeter."
-    ],
-    "it": [
-      "Scrivo la parola buttare sull'etichetta.",
-      "Attacchiamo sulla scatola un'etichetta con scritto da buttare.",
-      "Segna le piante come da buttare.",
-      "Segna nella lista che è da buttare."
-    ],
-    "ko": [
-      "라벨에 버리기라고 쓴다.",
-      "상자에 버리기라고 적힌 라벨을 붙인다.",
-      "식물에 버리기 표시를 한다.",
-      "그녀는 목록에 버리기라고 적는다."
-    ],
-    "zh-Hans": [
-      "我在标签上写上丢弃。",
-      "我们把写着丢弃的标签贴在箱子上。",
-      "他把这些植物标为丢弃。",
-      "她在清单上记下丢弃。"
-    ],
-    "yue": [
-      "我喺標籤上寫上棄置。",
-      "我哋將寫有棄置嘅標籤貼喺箱上面。",
-      "佢將啲植物標註為棄置。",
-      "佢喺清單上記低棄置。"
-    ],
-    "ru": [
-      "Я пишу на этикетке слово выбросить.",
-      "Мы клеим на коробку наклейку с надписью выбросить.",
-      "Он помечает растения как на выброс.",
-      "Она отмечает в списке, что это на выброс."
-    ],
-    "pt": [
-      "Escrevo a palavra descartar na etiqueta.",
-      "Colamos na caixa uma etiqueta com a palavra descartar.",
-      "Ele marca as plantas como para descarte.",
-      "Ela anota na lista que é para descartar."
-    ],
-    "he": [
-      "אני כותב את המילה לזרוק על התווית.",
-      "אנחנו מדביקים על הקופסה מדבקה שכתוב עליה לזרוק.",
-      "הוא מסמן את הצמחים כמיועדים לזריקה.",
-      "היא רושמת ברשימה שצריך לזרוק."
-    ],
-    "tr": [
-      "Etikete atılacak diye yazıyorum.",
-      "Kutunun üzerine atılacak yazan bir etiket yapıştırıyoruz.",
-      "Bitkileri atılacak olarak işaretliyor.",
-      "Listeye atılacak diye not ediyor."
-    ],
-    "vi": [
-      "Tôi viết chữ bỏ đi lên nhãn.",
-      "Chúng tôi dán lên thùng một nhãn có chữ bỏ đi.",
-      "Anh ấy đánh dấu các cây là để bỏ đi.",
-      "Cô ấy ghi vào danh sách là để bỏ đi."
-    ],
     "ar": [
       "أكتب كلمة للرمي على الملصق.",
       "نلصق على الصندوق ملصقًا مكتوب عليه للرمي.",
       "يعلّم النباتات على أنها للرمي.",
       "تدوّن في القائمة أنه يجب رميه."
-    ],
-    "nl": [
-      "Ik schrijf het woord weggooien op het etiket.",
-      "We plakken op de doos een sticker met de tekst weggooien.",
-      "Hij markeert de planten als weg te gooien.",
-      "Ze noteert in de lijst dat het weg moet."
-    ],
-    "uk": [
-      "Я пишу на етикетці слово викинути.",
-      "Ми клеїмо на коробку наліпку з написом викинути.",
-      "Він позначає рослини як на викид.",
-      "Вона занотовує в списку, що це на викид."
-    ],
-    "hu": [
-      "A címkére azt írom, hogy kidobandó.",
-      "Kidobandó feliratú címkét ragasztunk a dobozra.",
-      "Megjelöli a növényeket kidobandóként.",
-      "Beírja a listába, hogy kidobandó."
-    ],
-    "hi": [
-      "मैं लेबल पर फेंकना लिखता हूँ.",
-      "हम डिब्बे पर एक लेबल चिपकाते हैं जिस पर फेंकना लिखा है.",
-      "वह पौधों को फेंकने के लिए चिन्हित करता है.",
-      "वह सूची में लिखती है कि इसे फेंकना है."
-    ],
-    "pl": [
-      "Na etykiecie piszę słowo wyrzucić.",
-      "Naklejamy na pudełko etykietę z napisem wyrzucić.",
-      "Oznacza rośliny jako do wyrzucenia.",
-      "Zapisuje na liście, że to do wyrzucenia."
-    ],
-    "el": [
-      "Γράφω στην ετικέτα να πεταχτεί.",
-      "Κολλάμε στο κουτί αυτοκόλλητο με την ένδειξη να πεταχτεί.",
-      "Σημειώνει τα φυτά ως για πέταμα.",
-      "Σημειώνει στη λίστα ότι πάει για πέταμα."
-    ],
-    "nb": [
-      "Jeg skriver skal kastes på etiketten.",
-      "Vi fester på esken en etikett der det står skal kastes.",
-      "Han merker plantene som skal kastes.",
-      "Hun noterer i lista at det skal kastes."
-    ],
-    "id": [
-      "Saya menulis kata buang pada label.",
-      "Kami menempelkan pada kotak sebuah label bertuliskan buang.",
-      "Dia menandai tanaman untuk dibuang.",
-      "Dia mencatat dalam daftar bahwa akan dibuang."
-    ],
-    "sv": [
-      "Jag skriver ska slängas på etiketten.",
-      "Vi sätter på lådan en etikett där det står ska slängas.",
-      "Han markerar växterna som ska slängas.",
-      "Hon antecknar i listan att det ska slängas."
-    ],
-    "ro": [
-      "Scriu pe etichetă de aruncat.",
-      "Lipim pe cutie o etichetă pe care scrie de aruncat.",
-      "El marchează plantele ca de aruncat.",
-      "Ea notează în listă că e de apuncat."
     ],
     "cs": [
       "Na štítek píšu slovo vyhodit.",
@@ -871,11 +2324,77 @@
       "Han markerer planterne som skal smides ud.",
       "Hun noterer i listen, at det skal smides ud."
     ],
+    "de": [
+      "Ich schreibe 'weg-' aufs Etikett.",
+      "Wir kleben 'weg-' auf die Kiste.",
+      "Er markiert die Pflanzen mit 'weg-'.",
+      "Sie notiert 'weg-' in der Liste."
+    ],
+    "el": [
+      "Γράφω στην ετικέτα να πεταχτεί.",
+      "Κολλάμε στο κουτί αυτοκόλλητο με την ένδειξη να πεταχτεί.",
+      "Σημειώνει τα φυτά ως για πέταμα.",
+      "Σημειώνει στη λίστα ότι πάει για πέταμα."
+    ],
+    "en": [
+      "I write 'weg-' on the label.",
+      "We stick 'weg-' onto the box.",
+      "He marks the plants with 'weg-'.",
+      "She notes 'weg-' in the list."
+    ],
+    "es": [
+      "Escribo la palabra tirar en la etiqueta.",
+      "Pegamos en la caja una etiqueta que dice tirar.",
+      "Marca las plantas como para tirar.",
+      "Anota en la lista que va para tirar."
+    ],
     "fi": [
       "Kirjoitan etikettiin roskiin.",
       "Liimaamme laatikkoon tarran, jossa lukee roskiin.",
       "Hän merkitsee kasvit roskiin meneviksi.",
       "Hän merkitsee listaan, että se menee roskiin."
+    ],
+    "fr": [
+      "J'écris le mot jeter sur l'étiquette.",
+      "On colle sur le carton une étiquette avec la mention à jeter.",
+      "Il marque les plantes à jeter.",
+      "Elle note sur la liste que c'est à jeter."
+    ],
+    "he": [
+      "אני כותב את המילה לזרוק על התווית.",
+      "אנחנו מדביקים על הקופסה מדבקה שכתוב עליה לזרוק.",
+      "הוא מסמן את הצמחים כמיועדים לזריקה.",
+      "היא רושמת ברשימה שצריך לזרוק."
+    ],
+    "hi": [
+      "मैं लेबल पर फेंकना लिखता हूँ.",
+      "हम डिब्बे पर एक लेबल चिपकाते हैं जिस पर फेंकना लिखा है.",
+      "वह पौधों को फेंकने के लिए चिन्हित करता है.",
+      "वह सूची में लिखती है कि इसे फेंकना है."
+    ],
+    "hu": [
+      "A címkére azt írom, hogy kidobandó.",
+      "Kidobandó feliratú címkét ragasztunk a dobozra.",
+      "Megjelöli a növényeket kidobandóként.",
+      "Beírja a listába, hogy kidobandó."
+    ],
+    "id": [
+      "Saya menulis kata buang pada label.",
+      "Kami menempelkan pada kotak sebuah label bertuliskan buang.",
+      "Dia menandai tanaman untuk dibuang.",
+      "Dia mencatat dalam daftar bahwa akan dibuang."
+    ],
+    "ipa": [
+      "/ɪç ˈʃʁaɪ̯bə vɛk aʊ̯fs eːtiˈkɛt/",
+      "/viːɐ̯ ˈkleːbən vɛk aʊ̯f diː ˈkɪstə/",
+      "/eːɐ̯ maʁˈkiːɐ̯t diː ˈpflant͡sən mɪt vɛk/",
+      "/ziː noˈtiːɐ̯t vɛk ɪn deːɐ̯ ˈlɪstə/"
+    ],
+    "it": [
+      "Scrivo la parola buttare sull'etichetta.",
+      "Attacchiamo sulla scatola un'etichetta con scritto da buttare.",
+      "Segna le piante come da buttare.",
+      "Segna nella lista che è da buttare."
     ],
     "ja": [
       "ラベルに廃棄と書く。",
@@ -883,6 +2402,83 @@
       "彼は植物に廃棄の印を付ける。",
       "彼女はリストに廃棄と書く。"
     ],
-    "word_POS": "Other"
+    "ko": [
+      "라벨에 버리기라고 쓴다.",
+      "상자에 버리기라고 적힌 라벨을 붙인다.",
+      "식물에 버리기 표시를 한다.",
+      "그녀는 목록에 버리기라고 적는다."
+    ],
+    "nb": [
+      "Jeg skriver skal kastes på etiketten.",
+      "Vi fester på esken en etikett der det står skal kastes.",
+      "Han merker plantene som skal kastes.",
+      "Hun noterer i lista at det skal kastes."
+    ],
+    "nl": [
+      "Ik schrijf het woord weggooien op het etiket.",
+      "We plakken op de doos een sticker met de tekst weggooien.",
+      "Hij markeert de planten als weg te gooien.",
+      "Ze noteert in de lijst dat het weg moet."
+    ],
+    "pl": [
+      "Na etykiecie piszę słowo wyrzucić.",
+      "Naklejamy na pudełko etykietę z napisem wyrzucić.",
+      "Oznacza rośliny jako do wyrzucenia.",
+      "Zapisuje na liście, że to do wyrzucenia."
+    ],
+    "pt": [
+      "Escrevo a palavra descartar na etiqueta.",
+      "Colamos na caixa uma etiqueta com a palavra descartar.",
+      "Ele marca as plantas como para descarte.",
+      "Ela anota na lista que é para descartar."
+    ],
+    "ro": [
+      "Scriu pe etichetă de aruncat.",
+      "Lipim pe cutie o etichetă pe care scrie de aruncat.",
+      "El marchează plantele ca de aruncat.",
+      "Ea notează în listă că e de apuncat."
+    ],
+    "ru": [
+      "Я пишу на этикетке слово выбросить.",
+      "Мы клеим на коробку наклейку с надписью выбросить.",
+      "Он помечает растения как на выброс.",
+      "Она отмечает в списке, что это на выброс."
+    ],
+    "sv": [
+      "Jag skriver ska slängas på etiketten.",
+      "Vi sätter på lådan en etikett där det står ska slängas.",
+      "Han markerar växterna som ska slängas.",
+      "Hon antecknar i listan att det ska slängas."
+    ],
+    "tr": [
+      "Etikete atılacak diye yazıyorum.",
+      "Kutunun üzerine atılacak yazan bir etiket yapıştırıyoruz.",
+      "Bitkileri atılacak olarak işaretliyor.",
+      "Listeye atılacak diye not ediyor."
+    ],
+    "uk": [
+      "Я пишу на етикетці слово викинути.",
+      "Ми клеїмо на коробку наліпку з написом викинути.",
+      "Він позначає рослини як на викид.",
+      "Вона занотовує в списку, що це на викид."
+    ],
+    "vi": [
+      "Tôi viết chữ bỏ đi lên nhãn.",
+      "Chúng tôi dán lên thùng một nhãn có chữ bỏ đi.",
+      "Anh ấy đánh dấu các cây là để bỏ đi.",
+      "Cô ấy ghi vào danh sách là để bỏ đi."
+    ],
+    "yue": [
+      "我喺標籤上寫上棄置。",
+      "我哋將寫有棄置嘅標籤貼喺箱上面。",
+      "佢將啲植物標註為棄置。",
+      "佢喺清單上記低棄置。"
+    ],
+    "zh-Hans": [
+      "我在标签上写上丢弃。",
+      "我们把写着丢弃的标签贴在箱子上。",
+      "他把这些植物标为丢弃。",
+      "她在清单上记下丢弃。"
+    ]
   }
 }

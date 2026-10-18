@@ -137,10 +137,10 @@
       "difficulty": 7.17
     },
     {
-      "target": "Meine Schwester arbeitet als Photograph im Studio.",
+      "target": "Meine Schwester arbeitet als Photographin im Studio.",
       "reading": "/ˈmaɪ̯nə ˈʃvɛstɐ ˈaʁbaɪ̯tɛt als fotoˈɡʁaːf ɪm ˈʃtuːdi̯o/",
       "translations": {
-        "de": "Meine Schwester arbeitet als Photograph im Studio.",
+        "de": "Meine Schwester arbeitet als Photographin im Studio.",
         "ipa": "/ˈmaɪ̯nə ˈʃvɛstɐ ˈaʁbaɪ̯tɛt als fotoˈɡʁaːf ɪm ˈʃtuːdi̯o/",
         "en": "My sister works as a photographer in a studio.",
         "es": "Mi hermana trabaja como fotógrafa en un estudio.",
@@ -173,67 +173,91 @@
       "tokens": [
         {
           "surface": "Meine",
-          "surface_en": "my",
-          "furigana": "[ˈmaɪ̯nə]",
-          "pos": "DET",
           "lemma": "mein",
-          "explanation": "Possessive determiner, feminine nominative singular, modifying ‘Schwester’.",
-          "difficulty": 7
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "PPOSAT",
+          "feats": {},
+          "start": 0,
+          "end": 5,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "Schwester",
-          "surface_en": "sister",
-          "furigana": "[ˈʃvɛstɐ]",
-          "pos": "NOUN",
           "lemma": "Schwester",
-          "explanation": "Common noun, feminine nominative singular; subject of the clause.",
-          "difficulty": 10
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 6,
+          "end": 15,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "arbeitet",
-          "surface_en": "works",
-          "furigana": "[ˈaʁbaɪ̯tət]",
-          "pos": "VERB",
           "lemma": "arbeiten",
-          "explanation": "Finite main verb, 3rd person singular present.",
-          "difficulty": 10
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VVFIN",
+          "feats": {},
+          "start": 16,
+          "end": 24,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "als",
-          "surface_en": "as",
-          "furigana": "[als]",
-          "pos": "ADP",
           "lemma": "als",
-          "explanation": "Preposition introducing a predicative/complement NP of profession (‘als Photograph’).",
-          "difficulty": 2
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "APPR",
+          "feats": {},
+          "start": 25,
+          "end": 28,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "Photograph",
-          "surface_en": "photographer",
-          "furigana": "[fotoˈɡʁaːf]",
+          "surface": "Photographin",
+          "lemma": "Photographin",
           "pos": "NOUN",
-          "lemma": "Photograph",
-          "explanation": "Common noun, role/profession; complement of ‘als’ (no article in professional titles).",
-          "difficulty": 10,
-          "is_main_word": true
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 29,
+          "end": 41,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "im",
-          "surface_en": "in the",
-          "furigana": "[ɪm]",
-          "pos": "ADP",
           "lemma": "in",
-          "explanation": "Preposition contracted with the article (‘in dem’); introduces a locative PP.",
-          "difficulty": 2
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "APPRART",
+          "feats": {},
+          "start": 42,
+          "end": 44,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "Studio.",
-          "surface_en": "studio",
-          "furigana": "[ˈʃtuːdio]",
-          "pos": "NOUN",
+          "surface": "Studio",
           "lemma": "Studio",
-          "explanation": "Common noun, neuter; object of the preposition ‘im’ (location).",
-          "difficulty": 7
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 45,
+          "end": 51,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 51,
+          "end": 52,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 6.86
@@ -380,7 +404,7 @@
         "ro": "Fotograful locuiește chiar după colț.",
         "cs": "Fotograf bydlí hned za rohem.",
         "da": "Fotografen bor lige rundt om hjørnet.",
-        "fi": "Valokuvaaja asuu aivan nurkah takana.",
+        "fi": "Valokuvaaja asuu aivan nurkan takana.",
         "ja": "カメラマンは角を曲がってすぐのところに住んでいます。"
       },
       "tokens": [
@@ -463,8 +487,314 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-15T02:43:26Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:De b1/3c7d5dee3d6f8653",
+      "revision_id": 85144,
+      "parent_revision_id": 17308,
+      "revision_timestamp_utc": "2026-10-15T02:43:26Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Use the feminine German occupational noun for the sister, update its pronunciation, and correct a Finnish typo.",
+      "pulled_utc": "2026-10-17T07:06:37Z",
+      "applied_utc": "2026-10-17T07:06:50Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-b6ac85d6cdfe0854",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_b1:3c7d5dee3d6f8653",
+        "pack_code": "de_b1",
+        "entry_id": "Photograph",
+        "language": "de",
+        "sentence_index": 2,
+        "old_sentence": "Meine Schwester arbeitet als Photograph im Studio.",
+        "old_translations": {
+          "de": "Meine Schwester arbeitet als Photograph im Studio.",
+          "ipa": "/ˈmaɪ̯nə ˈʃvɛstɐ ˈaʁbaɪ̯tɛt als fotoˈɡʁaːf ɪm ˈʃtuːdi̯o/",
+          "en": "My sister works as a photographer in a studio.",
+          "es": "Mi hermana trabaja como fotógrafa en un estudio.",
+          "fr": "Ma sœur travaille comme photographe dans un studio.",
+          "it": "Mia sorella lavora come fotografa in uno studio.",
+          "ko": "제 여동생은 스튜디오에서 사진사로 일해요.",
+          "zh-Hans": "我姐姐在摄影工作室当摄影师。",
+          "yue": "我家姐喺影樓做攝影師。",
+          "ru": "Моя сестра работает фотографом в студии.",
+          "pt": "Minha irmã trabalha como fotógrafa em um estúdio.",
+          "he": "אחותי עובדת כצלמת בסטודיו.",
+          "tr": "Kız kardeşim stüdyoda fotoğrafçı olarak çalışıyor.",
+          "vi": "Chị tôi làm thợ chụp ảnh ở studio.",
+          "ar": "أختي تعمل كمصوّرة في استوديو.",
+          "nl": "Mijn zus werkt als fotograaf in een studio.",
+          "uk": "Моя сестра працює фотографом у студії.",
+          "hu": "A nővérem fotósként dolgozik egy stúdióban.",
+          "hi": "मेरी बहन स्टूडियो में फ़ोटोग्राफ़र के रूप में काम करती है.",
+          "pl": "Moja siostra pracuje jako fotograf w studiu.",
+          "el": "Η αδελφή μου δουλεύει ως φωτογράφος σε στούντιο.",
+          "nb": "Søsteren min jobber som fotograf i et studio.",
+          "id": "Saudara perempuan saya bekerja sebagai fotografer di studio.",
+          "sv": "Min syster jobbar som fotograf i en studio.",
+          "ro": "Sora mea lucrează ca fotografă într-un studio.",
+          "cs": "Moje sestra pracuje jako fotografka ve studiu.",
+          "da": "Min søster arbejder som fotograf i et studie.",
+          "fi": "Siskoni työskentelee valokuvaajana studiossa.",
+          "ja": "私の姉はスタジオでカメラマンとして働いています。"
+        },
+        "proposed_sentence": "Meine Schwester arbeitet als Photographin im Studio.",
+        "proposed_translations": {
+          "de": "Meine Schwester arbeitet als Photographin im Studio.",
+          "ipa": "/ˈmaɪ̯nə ˈʃvɛstɐ ˈaʁbaɪ̯tɛt als fotoˈɡʁaːf ɪm ˈʃtuːdi̯o/",
+          "en": "My sister works as a photographer in a studio.",
+          "es": "Mi hermana trabaja como fotógrafa en un estudio.",
+          "fr": "Ma sœur travaille comme photographe dans un studio.",
+          "it": "Mia sorella lavora come fotografa in uno studio.",
+          "ko": "제 여동생은 스튜디오에서 사진사로 일해요.",
+          "zh-Hans": "我姐姐在摄影工作室当摄影师。",
+          "yue": "我家姐喺影樓做攝影師。",
+          "ru": "Моя сестра работает фотографом в студии.",
+          "pt": "Minha irmã trabalha como fotógrafa em um estúdio.",
+          "he": "אחותי עובדת כצלמת בסטודיו.",
+          "tr": "Kız kardeşim stüdyoda fotoğrafçı olarak çalışıyor.",
+          "vi": "Chị tôi làm thợ chụp ảnh ở studio.",
+          "ar": "أختي تعمل كمصوّرة في استوديو.",
+          "nl": "Mijn zus werkt als fotograaf in een studio.",
+          "uk": "Моя сестра працює фотографом у студії.",
+          "hu": "A nővérem fotósként dolgozik egy stúdióban.",
+          "hi": "मेरी बहन स्टूडियो में फ़ोटोग्राफ़र के रूप में काम करती है.",
+          "pl": "Moja siostra pracuje jako fotograf w studiu.",
+          "el": "Η αδελφή μου δουλεύει ως φωτογράφος σε στούντιο.",
+          "nb": "Søsteren min jobber som fotograf i et studio.",
+          "id": "Saudara perempuan saya bekerja sebagai fotografer di studio.",
+          "sv": "Min syster jobbar som fotograf i en studio.",
+          "ro": "Sora mea lucrează ca fotografă într-un studio.",
+          "cs": "Moje sestra pracuje jako fotografka ve studiu.",
+          "da": "Min søster arbejder som fotograf i et studie.",
+          "fi": "Siskoni työskentelee valokuvaajana studiossa.",
+          "ja": "私の姉はスタジオでカメラマンとして働いています。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Meine Schwester arbeitet als Photographin im Studio.",
+        "old_japanese": "Meine Schwester arbeitet als Photograph im Studio.",
+        "old_english": "My sister works as a photographer in a studio.",
+        "proposed_japanese": "Meine Schwester arbeitet als Photographin im Studio.",
+        "proposed_english": "My sister works as a photographer in a studio.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Meine Schwester arbeitet als Photographin im Studio.",
+          "tokens": [
+            {
+              "surface": "Meine",
+              "lemma": "mein",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "PPOSAT",
+              "feats": {},
+              "start": 0,
+              "end": 5,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Schwester",
+              "lemma": "Schwester",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 6,
+              "end": 15,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "arbeitet",
+              "lemma": "arbeiten",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVFIN",
+              "feats": {},
+              "start": 16,
+              "end": 24,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "als",
+              "lemma": "als",
+              "pos": "ADP",
+              "upos": "ADP",
+              "xpos": "APPR",
+              "feats": {},
+              "start": 25,
+              "end": 28,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Photographin",
+              "lemma": "Photographin",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 29,
+              "end": 41,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "im",
+              "lemma": "in",
+              "pos": "ADP",
+              "upos": "ADP",
+              "xpos": "APPRART",
+              "feats": {},
+              "start": 42,
+              "end": 44,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Studio",
+              "lemma": "Studio",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 45,
+              "end": 51,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 51,
+              "end": 52,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Meine",
+            "lemma": "mein",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "PPOSAT",
+            "feats": {},
+            "start": 0,
+            "end": 5,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Schwester",
+            "lemma": "Schwester",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 6,
+            "end": 15,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "arbeitet",
+            "lemma": "arbeiten",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 16,
+            "end": 24,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "als",
+            "lemma": "als",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 25,
+            "end": 28,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Photographin",
+            "lemma": "Photographin",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 29,
+            "end": 41,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "im",
+            "lemma": "in",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPRART",
+            "feats": {},
+            "start": 42,
+            "end": 44,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Studio",
+            "lemma": "Studio",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 45,
+            "end": 51,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 51,
+            "end": 52,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:06:37Z",
+        "updated_utc": "2026-10-17T07:07:06Z",
+        "applied_utc": "2026-10-17T07:07:06Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:07:06Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -476,34 +806,6 @@
     "word": "Photograph",
     "word_reading": "",
     "word_label": "Substantiv (der mask.)",
-    "word_en": "photographer",
-    "word_es": "fotógrafo",
-    "word_fr": "photographe",
-    "word_it": "fotografo",
-    "word_ko": "사진가",
-    "word_zh-Hans": "摄影师",
-    "word_yue": "攝影師",
-    "word_ru": "фотограф",
-    "word_pt": "fotógrafo",
-    "word_he": "צלם",
-    "word_tr": "fotoğrafçı",
-    "word_vi": "nhiếp ảnh gia",
-    "word_ar": "مصور",
-    "word_nl": "fotograaf",
-    "word_uk": "фотограф",
-    "word_hu": "fotós",
-    "word_hi": "फोटोग्राफर",
-    "word_pl": "fotograf",
-    "word_el": "φωτογράφος",
-    "word_nb": "fotograf",
-    "word_id": "fotografer",
-    "word_sv": "fotograf",
-    "word_ro": "fotograf",
-    "word_cs": "fotograf",
-    "word_da": "fotograf",
-    "word_fi": "valokuvaaja",
-    "word_ja": "写真家",
-    "word_de": "Photograph",
     "comic_difficulty": 6.28,
     "jp": [
       "Der Photograph macht heute unsere Klassenfotos.",
@@ -516,24 +818,6 @@
       "/ˈmaɪ̯nə ˈʃvɛstɐ ˈaʁbaɪ̯tɛt als fotoˈɡʁaːf ɪm ˈʃtuːdi̯o/",
       "/deːɐ̯ fotoˈɡʁaːf kɔmt ɡlaɪ̯ç ˈaːbɐ viːɐ̯ ˈvaʁtən ˈʁuːɪç/",
       "/deːɐ̯ fotoˈɡʁaːf voːnt ɡlaɪ̯ç ʊm diː ˈɛkə/"
-    ],
-    "de": [
-      "Der Photograph macht heute unsere Klassenfotos.",
-      "Meine Schwester arbeitet als Photograph im Studio.",
-      "Der Photograph kommt gleich, aber wir warten ruhig.",
-      "Der Photograph wohnt gleich um die Ecke."
-    ],
-    "ipa": [
-      "/deːɐ̯ fotoˈɡʁaːf maxt ˈhɔʏ̯tə ˈʊnzərə ˈklasənˌfoːtoːs/",
-      "/ˈmaɪ̯nə ˈʃvɛstɐ ˈaʁbaɪ̯tɛt als fotoˈɡʁaːf ɪm ˈʃtuːdi̯o/",
-      "/deːɐ̯ fotoˈɡʁaːf kɔmt ɡlaɪ̯ç ˈaːbɐ viːɐ̯ ˈvaʁtən ˈʁuːɪç/",
-      "/deːɐ̯ fotoˈɡʁaːf voːnt ɡlaɪ̯ç ʊm diː ˈɛkə/"
-    ],
-    "en": [
-      "The photographer is taking our class photos today.",
-      "My sister works as a photographer in a studio.",
-      "The photographer is coming soon, but we’re waiting calmly.",
-      "The photographer lives just around the corner."
     ],
     "pos_analysis": [
       {
@@ -598,71 +882,95 @@
         "difficulty_aggregated": 7.17
       },
       {
-        "sentence": "Meine Schwester arbeitet als Photograph im Studio.",
+        "sentence": "Meine Schwester arbeitet als Photographin im Studio.",
         "tokens": [
           {
             "surface": "Meine",
-            "surface_en": "my",
-            "furigana": "[ˈmaɪ̯nə]",
-            "pos": "DET",
             "lemma": "mein",
-            "explanation": "Possessive determiner, feminine nominative singular, modifying ‘Schwester’.",
-            "difficulty": 7
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "PPOSAT",
+            "feats": {},
+            "start": 0,
+            "end": 5,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "Schwester",
-            "surface_en": "sister",
-            "furigana": "[ˈʃvɛstɐ]",
-            "pos": "NOUN",
             "lemma": "Schwester",
-            "explanation": "Common noun, feminine nominative singular; subject of the clause.",
-            "difficulty": 10
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 6,
+            "end": 15,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "arbeitet",
-            "surface_en": "works",
-            "furigana": "[ˈaʁbaɪ̯tət]",
-            "pos": "VERB",
             "lemma": "arbeiten",
-            "explanation": "Finite main verb, 3rd person singular present.",
-            "difficulty": 10
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 16,
+            "end": 24,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "als",
-            "surface_en": "as",
-            "furigana": "[als]",
-            "pos": "ADP",
             "lemma": "als",
-            "explanation": "Preposition introducing a predicative/complement NP of profession (‘als Photograph’).",
-            "difficulty": 2
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 25,
+            "end": 28,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "Photograph",
-            "surface_en": "photographer",
-            "furigana": "[fotoˈɡʁaːf]",
+            "surface": "Photographin",
+            "lemma": "Photographin",
             "pos": "NOUN",
-            "lemma": "Photograph",
-            "explanation": "Common noun, role/profession; complement of ‘als’ (no article in professional titles).",
-            "difficulty": 10,
-            "is_main_word": true
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 29,
+            "end": 41,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "im",
-            "surface_en": "in the",
-            "furigana": "[ɪm]",
-            "pos": "ADP",
             "lemma": "in",
-            "explanation": "Preposition contracted with the article (‘in dem’); introduces a locative PP.",
-            "difficulty": 2
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPRART",
+            "feats": {},
+            "start": 42,
+            "end": 44,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "Studio.",
-            "surface_en": "studio",
-            "furigana": "[ˈʃtuːdio]",
-            "pos": "NOUN",
+            "surface": "Studio",
             "lemma": "Studio",
-            "explanation": "Common noun, neuter; object of the preposition ‘im’ (location).",
-            "difficulty": 7
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 45,
+            "end": 51,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 51,
+            "end": 52,
+            "analyzer": "spacy_de_core_news_lg"
           }
         ],
         "difficulty_aggregated": 6.86
@@ -817,137 +1125,41 @@
         "difficulty_aggregated": 5.57
       }
     ],
-    "es": [
-      "Hoy el fotógrafo nos hace las fotos de clase.",
-      "Mi hermana trabaja como fotógrafa en un estudio.",
-      "El fotógrafo llega enseguida, pero esperamos tranquilos.",
-      "El fotógrafo vive a la vuelta de la esquina."
-    ],
-    "fr": [
-      "Le photographe prend nos photos de classe aujourd'hui.",
-      "Ma sœur travaille comme photographe dans un studio.",
-      "Le photographe arrive bientôt, mais nous attendons calmement.",
-      "Le photographe habite juste au coin de la rue."
-    ],
-    "it": [
-      "Oggi il fotografo scatta le foto di classe.",
-      "Mia sorella lavora come fotografa in uno studio.",
-      "Il fotografo arriva tra poco, ma aspettiamo tranquilli.",
-      "Il fotografo abita proprio dietro l'angolo."
-    ],
-    "ko": [
-      "사진사가 오늘 우리 반 사진을 찍어요.",
-      "제 여동생은 스튜디오에서 사진사로 일해요.",
-      "사진사가 곧 오지만 우리는 차분하게 기다리고 있어요.",
-      "사진사는 바로 모퉁이 너머에 살아요."
-    ],
-    "zh-Hans": [
-      "摄影师今天给我们拍班级照。",
-      "我姐姐在摄影工作室当摄影师。",
-      "摄影师马上就到，我们安静地等着。",
-      "摄影师就住在拐角附近。"
-    ],
-    "yue": [
-      "攝影師今日會幫我哋影班相。",
-      "我家姐喺影樓做攝影師。",
-      "攝影師好快就到，但我哋冷靜咁等。",
-      "攝影師就住喺轉角附近。"
-    ],
-    "ru": [
-      "Фотограф сегодня делает наши фотографии класса.",
-      "Моя сестра работает фотографом в студии.",
-      "Фотограф скоро придёт, а мы спокойно ждём.",
-      "Фотограф живёт прямо за углом."
-    ],
-    "pt": [
-      "O fotógrafo vai tirar as fotos da nossa turma hoje.",
-      "Minha irmã trabalha como fotógrafa em um estúdio.",
-      "O fotógrafo chega daqui a pouco, mas estamos esperando tranquilos.",
-      "O fotógrafo mora logo ali na esquina."
-    ],
-    "he": [
-      "הצלם מצלם היום את תמונות הכיתה שלנו.",
-      "אחותי עובדת כצלמת בסטודיו.",
-      "הצלם מגיע עוד מעט, אבל אנחנו מחכים בשקט.",
-      "הצלם גר ממש מעבר לפינה."
-    ],
-    "tr": [
-      "Fotoğrafçı bugün sınıf fotoğraflarımızı çekiyor.",
-      "Kız kardeşim stüdyoda fotoğrafçı olarak çalışıyor.",
-      "Fotoğrafçı birazdan gelecek ama biz sakince bekliyoruz.",
-      "Fotoğrafçı hemen köşenin arkasında oturuyor."
-    ],
-    "vi": [
-      "Hôm nay thợ ảnh chụp ảnh lớp cho chúng tôi.",
-      "Chị tôi làm thợ chụp ảnh ở studio.",
-      "Thợ chụp ảnh sắp đến, nhưng chúng tôi đang bình tĩnh đợi.",
-      "Thợ chụp ảnh sống ngay gần góc phố."
-    ],
+    "word_POS": "Noun",
+    "entry_id": "Photograph",
+    "word_en": "photographer",
+    "word_es": "fotógrafo",
+    "word_fr": "photographe",
+    "word_it": "fotografo",
+    "word_ko": "사진가",
+    "word_zh-Hans": "摄影师",
+    "word_yue": "攝影師",
+    "word_ru": "фотограф",
+    "word_pt": "fotógrafo",
+    "word_he": "צלם",
+    "word_tr": "fotoğrafçı",
+    "word_vi": "nhiếp ảnh gia",
+    "word_ar": "مصور",
+    "word_nl": "fotograaf",
+    "word_uk": "фотограф",
+    "word_hu": "fotós",
+    "word_hi": "फोटोग्राफर",
+    "word_pl": "fotograf",
+    "word_el": "φωτογράφος",
+    "word_nb": "fotograf",
+    "word_id": "fotografer",
+    "word_sv": "fotograf",
+    "word_ro": "fotograf",
+    "word_cs": "fotograf",
+    "word_da": "fotograf",
+    "word_fi": "valokuvaaja",
+    "word_ja": "写真家",
+    "word_de": "Photograph",
     "ar": [
       "اليوم المصوّر يلتقط صور الصف لنا.",
       "أختي تعمل كمصوّرة في استوديو.",
       "المصوّر سيصل قريبًا، لكننا ننتظر بهدوء.",
       "المصوّر يسكن خلف الزاوية مباشرة."
-    ],
-    "nl": [
-      "De fotograaf maakt vandaag onze klassenfoto's.",
-      "Mijn zus werkt als fotograaf in een studio.",
-      "De fotograaf komt zo, maar we wachten rustig.",
-      "De fotograaf woont vlak om de hoek."
-    ],
-    "uk": [
-      "Фотограф сьогодні робить світлини нашого класу.",
-      "Моя сестра працює фотографом у студії.",
-      "Фотограф скоро прийде, а ми спокійно чекаємо.",
-      "Фотограф живе буквально за рогом."
-    ],
-    "hu": [
-      "A fotós ma elkészíti az osztályképeinket.",
-      "A nővérem fotósként dolgozik egy stúdióban.",
-      "A fotós mindjárt megérkezik, de mi nyugodtan várunk.",
-      "A fotós rögtön a sarkon túl lakik."
-    ],
-    "hi": [
-      "आज फ़ोटोग्राफ़र हमारी कक्षा की तस्वीरें ले रहा है.",
-      "मेरी बहन स्टूडियो में फ़ोटोग्राफ़र के रूप में काम करती है.",
-      "फ़ोटोग्राफ़र जल्द आने वाला है, लेकिन हम शांत होकर इंतज़ार कर रहे हैं.",
-      "फोटोग्राफर मोड़ के ठीक बाद ही रहता है."
-    ],
-    "pl": [
-      "Fotograf dziś robi nasze zdjęcia klasowe.",
-      "Moja siostra pracuje jako fotograf w studiu.",
-      "Fotograf zaraz przyjdzie, a my spokojnie czekamy.",
-      "Fotograf mieszka tuż za rogiem."
-    ],
-    "el": [
-      "Ο φωτογράφος βγάζει σήμερα τις φωτογραφίες της τάξης μας.",
-      "Η αδελφή μου δουλεύει ως φωτογράφος σε στούντιο.",
-      "Ο φωτογράφος έρχεται σύντομα, αλλά εμείς περιμένουμε ήρεμα.",
-      "Ο φωτογράφος μένει ακριβώς μετά τη γωνία."
-    ],
-    "nb": [
-      "Fotografen tar klassebildene våre i dag.",
-      "Søsteren min jobber som fotograf i et studio.",
-      "Fotografen kommer snart, men vi venter rolig.",
-      "Fotografen bor rett rundt hjørnet."
-    ],
-    "id": [
-      "Hari ini fotografer mengambil foto kelas kami.",
-      "Saudara perempuan saya bekerja sebagai fotografer di studio.",
-      "Fotografer akan datang sebentar lagi, tapi kami menunggu dengan tenang.",
-      "Fotografer tinggal tepat di tikungan."
-    ],
-    "sv": [
-      "Fotografen tar våra klassfoton i dag.",
-      "Min syster jobbar som fotograf i en studio.",
-      "Fotografen kommer snart, men vi väntar lugnt.",
-      "Fotografen bor precis runt hörnet."
-    ],
-    "ro": [
-      "Fotograful ne face astăzi pozele de clasă.",
-      "Sora mea lucrează ca fotografă într-un studio.",
-      "Fotograful sosește în curând, dar noi așteptăm liniștiți.",
-      "Fotograful locuiește chiar după colț."
     ],
     "cs": [
       "Fotograf dnes pořizuje naše třídní fotografie.",
@@ -961,11 +1173,77 @@
       "Fotografen kommer snart, men vi venter roligt.",
       "Fotografen bor lige rundt om hjørnet."
     ],
+    "de": [
+      "Der Photograph macht heute unsere Klassenfotos.",
+      "Meine Schwester arbeitet als Photograph im Studio.",
+      "Der Photograph kommt gleich, aber wir warten ruhig.",
+      "Der Photograph wohnt gleich um die Ecke."
+    ],
+    "el": [
+      "Ο φωτογράφος βγάζει σήμερα τις φωτογραφίες της τάξης μας.",
+      "Η αδελφή μου δουλεύει ως φωτογράφος σε στούντιο.",
+      "Ο φωτογράφος έρχεται σύντομα, αλλά εμείς περιμένουμε ήρεμα.",
+      "Ο φωτογράφος μένει ακριβώς μετά τη γωνία."
+    ],
+    "en": [
+      "The photographer is taking our class photos today.",
+      "My sister works as a photographer in a studio.",
+      "The photographer is coming soon, but we’re waiting calmly.",
+      "The photographer lives just around the corner."
+    ],
+    "es": [
+      "Hoy el fotógrafo nos hace las fotos de clase.",
+      "Mi hermana trabaja como fotógrafa en un estudio.",
+      "El fotógrafo llega enseguida, pero esperamos tranquilos.",
+      "El fotógrafo vive a la vuelta de la esquina."
+    ],
     "fi": [
       "Valokuvaaja ottaa tänään luokkakuvamme.",
       "Siskoni työskentelee valokuvaajana studiossa.",
       "Valokuvaaja tulee pian, mutta me odotamme rauhallisesti.",
-      "Valokuvaaja asuu aivan nurkah takana."
+      "Valokuvaaja asuu aivan nurkan takana."
+    ],
+    "fr": [
+      "Le photographe prend nos photos de classe aujourd'hui.",
+      "Ma sœur travaille comme photographe dans un studio.",
+      "Le photographe arrive bientôt, mais nous attendons calmement.",
+      "Le photographe habite juste au coin de la rue."
+    ],
+    "he": [
+      "הצלם מצלם היום את תמונות הכיתה שלנו.",
+      "אחותי עובדת כצלמת בסטודיו.",
+      "הצלם מגיע עוד מעט, אבל אנחנו מחכים בשקט.",
+      "הצלם גר ממש מעבר לפינה."
+    ],
+    "hi": [
+      "आज फ़ोटोग्राफ़र हमारी कक्षा की तस्वीरें ले रहा है.",
+      "मेरी बहन स्टूडियो में फ़ोटोग्राफ़र के रूप में काम करती है.",
+      "फ़ोटोग्राफ़र जल्द आने वाला है, लेकिन हम शांत होकर इंतज़ार कर रहे हैं.",
+      "फोटोग्राफर मोड़ के ठीक बाद ही रहता है."
+    ],
+    "hu": [
+      "A fotós ma elkészíti az osztályképeinket.",
+      "A nővérem fotósként dolgozik egy stúdióban.",
+      "A fotós mindjárt megérkezik, de mi nyugodtan várunk.",
+      "A fotós rögtön a sarkon túl lakik."
+    ],
+    "id": [
+      "Hari ini fotografer mengambil foto kelas kami.",
+      "Saudara perempuan saya bekerja sebagai fotografer di studio.",
+      "Fotografer akan datang sebentar lagi, tapi kami menunggu dengan tenang.",
+      "Fotografer tinggal tepat di tikungan."
+    ],
+    "ipa": [
+      "/deːɐ̯ fotoˈɡʁaːf maxt ˈhɔʏ̯tə ˈʊnzərə ˈklasənˌfoːtoːs/",
+      "/ˈmaɪ̯nə ˈʃvɛstɐ ˈaʁbaɪ̯tɛt als fotoˈɡʁaːf ɪm ˈʃtuːdi̯o/",
+      "/deːɐ̯ fotoˈɡʁaːf kɔmt ɡlaɪ̯ç ˈaːbɐ viːɐ̯ ˈvaʁtən ˈʁuːɪç/",
+      "/deːɐ̯ fotoˈɡʁaːf voːnt ɡlaɪ̯ç ʊm diː ˈɛkə/"
+    ],
+    "it": [
+      "Oggi il fotografo scatta le foto di classe.",
+      "Mia sorella lavora come fotografa in uno studio.",
+      "Il fotografo arriva tra poco, ma aspettiamo tranquilli.",
+      "Il fotografo abita proprio dietro l'angolo."
     ],
     "ja": [
       "今日はカメラマンがクラス写真を撮ります。",
@@ -973,6 +1251,83 @@
       "カメラマンはもうすぐ来ますが、私たちは落ち着いて待っています。",
       "カメラマンは角を曲がってすぐのところに住んでいます。"
     ],
-    "word_POS": "Noun"
+    "ko": [
+      "사진사가 오늘 우리 반 사진을 찍어요.",
+      "제 여동생은 스튜디오에서 사진사로 일해요.",
+      "사진사가 곧 오지만 우리는 차분하게 기다리고 있어요.",
+      "사진사는 바로 모퉁이 너머에 살아요."
+    ],
+    "nb": [
+      "Fotografen tar klassebildene våre i dag.",
+      "Søsteren min jobber som fotograf i et studio.",
+      "Fotografen kommer snart, men vi venter rolig.",
+      "Fotografen bor rett rundt hjørnet."
+    ],
+    "nl": [
+      "De fotograaf maakt vandaag onze klassenfoto's.",
+      "Mijn zus werkt als fotograaf in een studio.",
+      "De fotograaf komt zo, maar we wachten rustig.",
+      "De fotograaf woont vlak om de hoek."
+    ],
+    "pl": [
+      "Fotograf dziś robi nasze zdjęcia klasowe.",
+      "Moja siostra pracuje jako fotograf w studiu.",
+      "Fotograf zaraz przyjdzie, a my spokojnie czekamy.",
+      "Fotograf mieszka tuż za rogiem."
+    ],
+    "pt": [
+      "O fotógrafo vai tirar as fotos da nossa turma hoje.",
+      "Minha irmã trabalha como fotógrafa em um estúdio.",
+      "O fotógrafo chega daqui a pouco, mas estamos esperando tranquilos.",
+      "O fotógrafo mora logo ali na esquina."
+    ],
+    "ro": [
+      "Fotograful ne face astăzi pozele de clasă.",
+      "Sora mea lucrează ca fotografă într-un studio.",
+      "Fotograful sosește în curând, dar noi așteptăm liniștiți.",
+      "Fotograful locuiește chiar după colț."
+    ],
+    "ru": [
+      "Фотограф сегодня делает наши фотографии класса.",
+      "Моя сестра работает фотографом в студии.",
+      "Фотограф скоро придёт, а мы спокойно ждём.",
+      "Фотограф живёт прямо за углом."
+    ],
+    "sv": [
+      "Fotografen tar våra klassfoton i dag.",
+      "Min syster jobbar som fotograf i en studio.",
+      "Fotografen kommer snart, men vi väntar lugnt.",
+      "Fotografen bor precis runt hörnet."
+    ],
+    "tr": [
+      "Fotoğrafçı bugün sınıf fotoğraflarımızı çekiyor.",
+      "Kız kardeşim stüdyoda fotoğrafçı olarak çalışıyor.",
+      "Fotoğrafçı birazdan gelecek ama biz sakince bekliyoruz.",
+      "Fotoğrafçı hemen köşenin arkasında oturuyor."
+    ],
+    "uk": [
+      "Фотограф сьогодні робить світлини нашого класу.",
+      "Моя сестра працює фотографом у студії.",
+      "Фотограф скоро прийде, а ми спокійно чекаємо.",
+      "Фотограф живе буквально за рогом."
+    ],
+    "vi": [
+      "Hôm nay thợ ảnh chụp ảnh lớp cho chúng tôi.",
+      "Chị tôi làm thợ chụp ảnh ở studio.",
+      "Thợ chụp ảnh sắp đến, nhưng chúng tôi đang bình tĩnh đợi.",
+      "Thợ chụp ảnh sống ngay gần góc phố."
+    ],
+    "yue": [
+      "攝影師今日會幫我哋影班相。",
+      "我家姐喺影樓做攝影師。",
+      "攝影師好快就到，但我哋冷靜咁等。",
+      "攝影師就住喺轉角附近。"
+    ],
+    "zh-Hans": [
+      "摄影师今天给我们拍班级照。",
+      "我姐姐在摄影工作室当摄影师。",
+      "摄影师马上就到，我们安静地等着。",
+      "摄影师就住在拐角附近。"
+    ]
   }
 }

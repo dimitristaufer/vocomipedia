@@ -137,10 +137,10 @@
       "difficulty": 5
     },
     {
-      "target": "Der Plan klingt realistisch für morgen.",
+      "target": "Der Plan für morgen klingt realistisch.",
       "reading": "/deːɐ̯ plaːn klɪŋt ʁe.aˈlɪstɪʃ fyːɐ̯ ˈmɔʁɡn̩/",
       "translations": {
-        "de": "Der Plan klingt realistisch für morgen.",
+        "de": "Der Plan für morgen klingt realistisch.",
         "ipa": "/deːɐ̯ plaːn klɪŋt ʁe.aˈlɪstɪʃ fyːɐ̯ ˈmɔʁɡn̩/",
         "en": "The plan sounds realistic for tomorrow.",
         "es": "El plan suena realista para mañana.",
@@ -167,64 +167,87 @@
         "ro": "Planul pentru mâine pare realist.",
         "cs": "Plán na zítra zní realisticky.",
         "da": "Planen lyder realistisk for i morgen.",
-        "fi": "Suunnitelma huomiselle kuuloctaa realistiselta.",
+        "fi": "Suunnitelma huomiselle kuulostaa realistiselta.",
         "ja": "明日の計画は現実的に思えます。"
       },
       "tokens": [
         {
           "surface": "Der",
-          "surface_en": "the",
-          "furigana": "[deːɐ̯]",
-          "pos": "DET",
           "lemma": "der",
-          "explanation": "Definite article, nominative masculine singular; modifies 'Plan'.",
-          "difficulty": 2
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "ART",
+          "feats": {},
+          "start": 0,
+          "end": 3,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "Plan",
-          "surface_en": "plan",
-          "furigana": "[plaːn]",
-          "pos": "NOUN",
           "lemma": "Plan",
-          "explanation": "Common noun, masculine singular; grammatical subject.",
-          "difficulty": 7
-        },
-        {
-          "surface": "klingt",
-          "surface_en": "sounds",
-          "furigana": "[klɪŋt]",
-          "pos": "VERB",
-          "lemma": "klingen",
-          "explanation": "Finite main verb (present indicative, 3rd sg); takes a predicative complement.",
-          "difficulty": 7
-        },
-        {
-          "surface": "realistisch",
-          "surface_en": "realistic",
-          "furigana": "[ʁe.aˈlɪstɪʃ]",
-          "pos": "ADJ",
-          "lemma": "realistisch",
-          "explanation": "Predicate adjective; complement to 'klingen'.",
-          "difficulty": 10,
-          "is_main_word": true
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 4,
+          "end": 8,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "für",
-          "surface_en": "for",
-          "furigana": "[fyːɐ̯]",
-          "pos": "ADP",
           "lemma": "für",
-          "explanation": "Preposition governing accusative; indicates time frame.",
-          "difficulty": 2
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "APPR",
+          "feats": {},
+          "start": 9,
+          "end": 12,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "morgen.",
-          "surface_en": "tomorrow",
-          "furigana": "[ˈmɔʁɡn̩]",
-          "pos": "ADV",
+          "surface": "morgen",
           "lemma": "morgen",
-          "explanation": "Temporal adverb; complement to 'für'.",
-          "difficulty": 7
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "ADV",
+          "feats": {},
+          "start": 13,
+          "end": 19,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "klingt",
+          "lemma": "klingen",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VVFIN",
+          "feats": {},
+          "start": 20,
+          "end": 26,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "realistisch",
+          "lemma": "realistisch",
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "ADJD",
+          "feats": {},
+          "start": 27,
+          "end": 38,
+          "analyzer": "spacy_de_core_news_lg",
+          "is_main_word": true
+        },
+        {
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 38,
+          "end": 39,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 5.83
@@ -233,7 +256,7 @@
       "target": "Diese Erwartungen sind für dich realistisch.",
       "reading": "/ˈdiːzə ɛʁˈvaːʁtʊŋən zɪnt ʁe.aˈlɪstɪʃ fyːɐ̯ dɪç/",
       "translations": {
-        "de": "Diese Erwartungen sind realistisch für dich.",
+        "de": "Diese Erwartungen sind für dich realistisch.",
         "ipa": "/ˈdiːzə ɛʁˈvaːʁtʊŋən zɪnt ʁe.aˈlɪstɪʃ fyːɐ̯ dɪç/",
         "en": "These expectations are realistic for you.",
         "es": "Estas expectativas son realistas para ti.",
@@ -256,7 +279,7 @@
         "el": "Αυτές οι προσδοκίες είναι ρεαλιστικές για εσένα.",
         "nb": "Disse forventningene er realistiske for deg.",
         "id": "Ekspektasi ini realistis untukmu.",
-        "sv": "De här förväntningarna är realistiska γia dig.",
+        "sv": "De här förväntningarna är realistiska för dig.",
         "ro": "Aceste așteptări sunt realiste pentru tine.",
         "cs": "Tato očekávání jsou pro tebe realistická.",
         "da": "Disse forventninger er realistiske for dig.",
@@ -427,8 +450,292 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-15T02:58:08Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:De b1/451863e52653844d",
+      "revision_id": 85110,
+      "parent_revision_id": 17424,
+      "revision_timestamp_utc": "2026-10-15T02:58:08Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Improve the German word order, align duplicates and pronunciation, and fix Finnish and Swedish typos.",
+      "pulled_utc": "2026-10-17T07:06:38Z",
+      "applied_utc": "2026-10-17T07:06:53Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-3dab3f386dca6955",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_b1:451863e52653844d",
+        "pack_code": "de_b1",
+        "entry_id": "realistisch",
+        "language": "de",
+        "sentence_index": 2,
+        "old_sentence": "Der Plan klingt realistisch für morgen.",
+        "old_translations": {
+          "de": "Der Plan klingt realistisch für morgen.",
+          "ipa": "/deːɐ̯ plaːn klɪŋt ʁe.aˈlɪstɪʃ fyːɐ̯ ˈmɔʁɡn̩/",
+          "en": "The plan sounds realistic for tomorrow.",
+          "es": "El plan suena realista para mañana.",
+          "fr": "Le plan semble réaliste pour demain.",
+          "it": "Il piano sembra realistico per domani.",
+          "ko": "내일 계획은 현실적이에요.",
+          "zh-Hans": "这个计划听起来很现实，明天可行。",
+          "yue": "呢個計劃聽落幾實際，聽日可行。",
+          "ru": "План на завтра звучит реалистично.",
+          "pt": "O plano parece realista para amanhã.",
+          "he": "התוכנית נשמעת מציאותית למחר.",
+          "tr": "Plan yarın için gerçekçi görünüyor.",
+          "vi": "Kế hoạch cho ngày mai nghe có vẻ thực tế.",
+          "ar": "الخطة تبدو واقعية ليوم غد.",
+          "nl": "Het plan klinkt realistisch voor morgen.",
+          "uk": "План на завтра звучить реалістично.",
+          "hu": "A terv holnapra reálisnak hangzik.",
+          "hi": "कल के लिए योजना यथार्थवादी लगती है.",
+          "pl": "Plan na jutro brzmi realistycznie.",
+          "el": "Το σχέδιο για αύριο ακούγεται ρεαλιστικό.",
+          "nb": "Planen høres realistisk ut for i morgen.",
+          "id": "Rencana untuk besok terdengar realistis.",
+          "sv": "Planen låter realistisk för imorgon.",
+          "ro": "Planul pentru mâine pare realist.",
+          "cs": "Plán na zítra zní realisticky.",
+          "da": "Planen lyder realistisk for i morgen.",
+          "fi": "Suunnitelma huomiselle kuuloctaa realistiselta.",
+          "ja": "明日の計画は現実的に思えます。"
+        },
+        "proposed_sentence": "Der Plan für morgen klingt realistisch.",
+        "proposed_translations": {
+          "de": "Der Plan für morgen klingt realistisch.",
+          "ipa": "/deːɐ̯ plaːn klɪŋt ʁe.aˈlɪstɪʃ fyːɐ̯ ˈmɔʁɡn̩/",
+          "en": "The plan sounds realistic for tomorrow.",
+          "es": "El plan suena realista para mañana.",
+          "fr": "Le plan semble réaliste pour demain.",
+          "it": "Il piano sembra realistico per domani.",
+          "ko": "내일 계획은 현실적이에요.",
+          "zh-Hans": "这个计划听起来很现实，明天可行。",
+          "yue": "呢個計劃聽落幾實際，聽日可行。",
+          "ru": "План на завтра звучит реалистично.",
+          "pt": "O plano parece realista para amanhã.",
+          "he": "התוכנית נשמעת מציאותית למחר.",
+          "tr": "Plan yarın için gerçekçi görünüyor.",
+          "vi": "Kế hoạch cho ngày mai nghe có vẻ thực tế.",
+          "ar": "الخطة تبدو واقعية ليوم غد.",
+          "nl": "Het plan klinkt realistisch voor morgen.",
+          "uk": "План на завтра звучить реалістично.",
+          "hu": "A terv holnapra reálisnak hangzik.",
+          "hi": "कल के लिए योजना यथार्थवादी लगती है.",
+          "pl": "Plan na jutro brzmi realistycznie.",
+          "el": "Το σχέδιο για αύριο ακούγεται ρεαλιστικό.",
+          "nb": "Planen høres realistisk ut for i morgen.",
+          "id": "Rencana untuk besok terdengar realistis.",
+          "sv": "Planen låter realistisk för imorgon.",
+          "ro": "Planul pentru mâine pare realist.",
+          "cs": "Plán na zítra zní realisticky.",
+          "da": "Planen lyder realistisk for i morgen.",
+          "fi": "Suunnitelma huomiselle kuulostaa realistiselta.",
+          "ja": "明日の計画は現実的に思えます。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Der Plan für morgen klingt realistisch.",
+        "old_japanese": "Der Plan klingt realistisch für morgen.",
+        "old_english": "The plan sounds realistic for tomorrow.",
+        "proposed_japanese": "Der Plan für morgen klingt realistisch.",
+        "proposed_english": "The plan sounds realistic for tomorrow.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Der Plan für morgen klingt realistisch.",
+          "tokens": [
+            {
+              "surface": "Der",
+              "lemma": "der",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "ART",
+              "feats": {},
+              "start": 0,
+              "end": 3,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Plan",
+              "lemma": "Plan",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 4,
+              "end": 8,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "für",
+              "lemma": "für",
+              "pos": "ADP",
+              "upos": "ADP",
+              "xpos": "APPR",
+              "feats": {},
+              "start": 9,
+              "end": 12,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "morgen",
+              "lemma": "morgen",
+              "pos": "ADV",
+              "upos": "ADV",
+              "xpos": "ADV",
+              "feats": {},
+              "start": 13,
+              "end": 19,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "klingt",
+              "lemma": "klingen",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVFIN",
+              "feats": {},
+              "start": 20,
+              "end": 26,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "realistisch",
+              "lemma": "realistisch",
+              "pos": "ADV",
+              "upos": "ADV",
+              "xpos": "ADJD",
+              "feats": {},
+              "start": 27,
+              "end": 38,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 38,
+              "end": 39,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Der",
+            "lemma": "der",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Plan",
+            "lemma": "Plan",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 4,
+            "end": 8,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "für",
+            "lemma": "für",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 9,
+            "end": 12,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "morgen",
+            "lemma": "morgen",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 13,
+            "end": 19,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "klingt",
+            "lemma": "klingen",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 20,
+            "end": 26,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "realistisch",
+            "lemma": "realistisch",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADJD",
+            "feats": {},
+            "start": 27,
+            "end": 38,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 38,
+            "end": 39,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:06:38Z",
+        "updated_utc": "2026-10-17T07:07:06Z",
+        "applied_utc": "2026-10-17T07:07:06Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:07:06Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -440,34 +747,6 @@
     "word": "realistisch",
     "word_reading": "",
     "word_label": "Adjektiv",
-    "word_en": "realistic; practical",
-    "word_es": "realista",
-    "word_fr": "réaliste",
-    "word_it": "realistico",
-    "word_ko": "현실적인",
-    "word_zh-Hans": "现实的",
-    "word_yue": "現實的",
-    "word_ru": "реалистичный",
-    "word_pt": "realista",
-    "word_he": "מציאותי",
-    "word_tr": "gerçekçi",
-    "word_vi": "thực tế",
-    "word_ar": "واقعي",
-    "word_nl": "realistisch",
-    "word_uk": "реалістичний",
-    "word_hu": "reális; realisztikus",
-    "word_hi": "यथार्थवादी; व्यावहारिक",
-    "word_pl": "realistyczny; realny",
-    "word_el": "ρεαλιστικός",
-    "word_nb": "realistisk",
-    "word_id": "realistis",
-    "word_sv": "realistisk",
-    "word_ro": "realist",
-    "word_cs": "realistický",
-    "word_da": "realistisk",
-    "word_fi": "realistinen",
-    "word_ja": "現実的",
-    "word_de": "realistisch",
     "comic_difficulty": 5.88,
     "jp": [
       "Ich bleibe realistisch bei den Kosten.",
@@ -480,24 +759,6 @@
       "/deːɐ̯ plaːn klɪŋt ʁe.aˈlɪstɪʃ fyːɐ̯ ˈmɔʁɡn̩/",
       "/ˈdiːzə ɛʁˈvaːʁtʊŋən zɪnt ʁe.aˈlɪstɪʃ fyːɐ̯ dɪç/",
       "/ɪç ˈʃɛt͡sə diː ˈlaːɡə ʁe.aˈlɪstɪʃ aɪ̯n/"
-    ],
-    "de": [
-      "Ich bleibe realistisch bei den Kosten.",
-      "Der Plan klingt realistisch für morgen.",
-      "Diese Erwartungen sind realistisch für dich.",
-      "Ich schätze die Lage realistisch ein."
-    ],
-    "ipa": [
-      "/ɪç ˈblaɪbə ʁe.aˈlɪstɪʃ baɪ̯ deːn ˈkɔstn̩/",
-      "/deːɐ̯ plaːn klɪŋt ʁe.aˈlɪstɪʃ fyːɐ̯ ˈmɔʁɡn̩/",
-      "/ˈdiːzə ɛʁˈvaːʁtʊŋən zɪnt ʁe.aˈlɪstɪʃ fyːɐ̯ dɪç/",
-      "/ɪç ˈʃɛt͡sə diː ˈlaːɡə ʁe.aˈlɪstɪʃ aɪ̯n/"
-    ],
-    "en": [
-      "I’m staying realistic about the costs.",
-      "The plan sounds realistic for tomorrow.",
-      "These expectations are realistic for you.",
-      "I assess the situation realistically."
     ],
     "pos_analysis": [
       {
@@ -562,62 +823,85 @@
         "difficulty_aggregated": 5
       },
       {
-        "sentence": "Der Plan klingt realistisch für morgen.",
+        "sentence": "Der Plan für morgen klingt realistisch.",
         "tokens": [
           {
             "surface": "Der",
-            "surface_en": "the",
-            "furigana": "[deːɐ̯]",
-            "pos": "DET",
             "lemma": "der",
-            "explanation": "Definite article, nominative masculine singular; modifies 'Plan'.",
-            "difficulty": 2
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "Plan",
-            "surface_en": "plan",
-            "furigana": "[plaːn]",
-            "pos": "NOUN",
             "lemma": "Plan",
-            "explanation": "Common noun, masculine singular; grammatical subject.",
-            "difficulty": 7
-          },
-          {
-            "surface": "klingt",
-            "surface_en": "sounds",
-            "furigana": "[klɪŋt]",
-            "pos": "VERB",
-            "lemma": "klingen",
-            "explanation": "Finite main verb (present indicative, 3rd sg); takes a predicative complement.",
-            "difficulty": 7
-          },
-          {
-            "surface": "realistisch",
-            "surface_en": "realistic",
-            "furigana": "[ʁe.aˈlɪstɪʃ]",
-            "pos": "ADJ",
-            "lemma": "realistisch",
-            "explanation": "Predicate adjective; complement to 'klingen'.",
-            "difficulty": 10,
-            "is_main_word": true
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 4,
+            "end": 8,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "für",
-            "surface_en": "for",
-            "furigana": "[fyːɐ̯]",
-            "pos": "ADP",
             "lemma": "für",
-            "explanation": "Preposition governing accusative; indicates time frame.",
-            "difficulty": 2
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 9,
+            "end": 12,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "morgen.",
-            "surface_en": "tomorrow",
-            "furigana": "[ˈmɔʁɡn̩]",
-            "pos": "ADV",
+            "surface": "morgen",
             "lemma": "morgen",
-            "explanation": "Temporal adverb; complement to 'für'.",
-            "difficulty": 7
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 13,
+            "end": 19,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "klingt",
+            "lemma": "klingen",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 20,
+            "end": 26,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "realistisch",
+            "lemma": "realistisch",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADJD",
+            "feats": {},
+            "start": 27,
+            "end": 38,
+            "analyzer": "spacy_de_core_news_lg",
+            "is_main_word": true
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 38,
+            "end": 39,
+            "analyzer": "spacy_de_core_news_lg"
           }
         ],
         "difficulty_aggregated": 5.83
@@ -745,137 +1029,41 @@
         "difficulty_aggregated": 5.5
       }
     ],
-    "es": [
-      "Soy realista con los gastos.",
-      "El plan suena realista para mañana.",
-      "Estas expectativas son realistas para ti.",
-      "Evalúo la situación de forma realista."
-    ],
-    "fr": [
-      "Je reste réaliste sur les dépenses.",
-      "Le plan semble réaliste pour demain.",
-      "Ces attentes sont réalistes pour toi.",
-      "J’évalue la situation de manière réaliste."
-    ],
-    "it": [
-      "Resto realista sulle spese.",
-      "Il piano sembra realistico per domani.",
-      "Queste aspettative sono realistiche per te.",
-      "Valuto la situazione in modo realistico."
-    ],
-    "ko": [
-      "비용은 현실적으로 보고 있어요.",
-      "내일 계획은 현실적이에요.",
-      "이 기대는 너에게 현실적이야.",
-      "상황을 현실적으로 판단하고 있어요."
-    ],
-    "zh-Hans": [
-      "我对开销很理性。",
-      "这个计划听起来很现实，明天可行。",
-      "这些期望对你来说很现实。",
-      "我现实地评估情况。"
-    ],
-    "yue": [
-      "我對開支好實際。",
-      "呢個計劃聽落幾實際，聽日可行。",
-      "呢啲期望對你嚟講好現實。",
-      "我現實地評估情況。"
-    ],
-    "ru": [
-      "Я реалистично смотрю на расходы.",
-      "План на завтра звучит реалистично.",
-      "Эти ожидания для тебя вполне реалистичны.",
-      "Я трезво оцениваю ситуацию."
-    ],
-    "pt": [
-      "Sou realista com os gastos.",
-      "O plano parece realista para amanhã.",
-      "Essas expectativas são realistas para você.",
-      "Avalio a situação de forma realista."
-    ],
-    "he": [
-      "אני מציאותי לגבי העלויות.",
-      "התוכנית נשמעת מציאותית למחר.",
-      "הציפיות האלה מציאותיות עבורך.",
-      "אני מעריך את המצב באופן מציאותי."
-    ],
-    "tr": [
-      "Masraflar konusunda gerçekçi davranıyorum.",
-      "Plan yarın için gerçekçi görünüyor.",
-      "Bu beklentiler senin için gerçekçi.",
-      "Durumu gerçekçi bir şekilde değerlendiriyorum."
-    ],
-    "vi": [
-      "Tôi thực tế về chi phí.",
-      "Kế hoạch cho ngày mai nghe có vẻ thực tế.",
-      "Những kỳ vọng này là thực tế đối với bạn.",
-      "Tôi đánh giá tình hình một cách thực tế."
-    ],
+    "word_POS": "Adjective",
+    "entry_id": "realistisch",
+    "word_en": "realistic; practical",
+    "word_es": "realista",
+    "word_fr": "réaliste",
+    "word_it": "realistico",
+    "word_ko": "현실적인",
+    "word_zh-Hans": "现实的",
+    "word_yue": "現實的",
+    "word_ru": "реалистичный",
+    "word_pt": "realista",
+    "word_he": "מציאותי",
+    "word_tr": "gerçekçi",
+    "word_vi": "thực tế",
+    "word_ar": "واقعي",
+    "word_nl": "realistisch",
+    "word_uk": "реалістичний",
+    "word_hu": "reális; realisztikus",
+    "word_hi": "यथार्थवादी; व्यावहारिक",
+    "word_pl": "realistyczny; realny",
+    "word_el": "ρεαλιστικός",
+    "word_nb": "realistisk",
+    "word_id": "realistis",
+    "word_sv": "realistisk",
+    "word_ro": "realist",
+    "word_cs": "realistický",
+    "word_da": "realistisk",
+    "word_fi": "realistinen",
+    "word_ja": "現実的",
+    "word_de": "realistisch",
     "ar": [
       "أنا واقعي بشأن التكاليف.",
       "الخطة تبدو واقعية ليوم غد.",
       "هذه التوقعات واقعية بالنسبة لك.",
       "أقيّم الوضع بشكل واقعي."
-    ],
-    "nl": [
-      "Ik blijf realistisch over de kosten.",
-      "Het plan klinkt realistisch voor morgen.",
-      "Deze verwachtingen zijn realistisch voor jou.",
-      "Ik schat de situatie realistisch in."
-    ],
-    "uk": [
-      "Я реалістично ставлюся до витрат.",
-      "План на завтра звучить реалістично.",
-      "Ці очікування для тебе реалістичні.",
-      "Я реалістично оцінюю ситуацію."
-    ],
-    "hu": [
-      "Reálisan kezelem a költségeket.",
-      "A terv holnapra reálisnak hangzik.",
-      "Ezek az elvárások számodra reálisak.",
-      "Reálisan ítélem meg a helyzetet."
-    ],
-    "hi": [
-      "मैं खर्चों के बारे में यथार्थवादी हूँ.",
-      "कल के लिए योजना यथार्थवादी लगती है.",
-      "ये उम्मीदें तुम्हारे लिए यथार्थवादी हैं.",
-      "मैं स्थिति का आकलन यथार्थवादी तरीके से करता हूँ."
-    ],
-    "pl": [
-      "Podchodzę realistycznie do kosztów.",
-      "Plan na jutro brzmi realistycznie.",
-      "Te oczekiwania są dla ciebie realistyczne.",
-      "Oceniam sytuację realistycznie."
-    ],
-    "el": [
-      "Βλέπω ρεαλιστικά τα έξοδα.",
-      "Το σχέδιο για αύριο ακούγεται ρεαλιστικό.",
-      "Αυτές οι προσδοκίες είναι ρεαλιστικές για εσένα.",
-      "Αξιολογώ την κατάσταση ρεαλιστικά."
-    ],
-    "nb": [
-      "Jeg er realistisk når det gjelder kostnader.",
-      "Planen høres realistisk ut for i morgen.",
-      "Disse forventningene er realistiske for deg.",
-      "Jeg vurderer situasjonen realistisk."
-    ],
-    "id": [
-      "Saya bersikap realistis soal biaya.",
-      "Rencana untuk besok terdengar realistis.",
-      "Ekspektasi ini realistis untukmu.",
-      "Saya menilai situasi secara realistis."
-    ],
-    "sv": [
-      "Jag är realistisk när det gäller kostnaderna.",
-      "Planen låter realistisk för imorgon.",
-      "De här förväntningarna är realistiska γia dig.",
-      "Jag bedömer situationen realistiskt."
-    ],
-    "ro": [
-      "Rămân realist în privința costurilor.",
-      "Planul pentru mâine pare realist.",
-      "Aceste așteptări sunt realiste pentru tine.",
-      "Evaluez situația în mod realist."
     ],
     "cs": [
       "K nákladům přistupuji realisticky.",
@@ -889,11 +1077,77 @@
       "Disse forventninger er realistiske for dig.",
       "Jeg vurderer situationen realistisk."
     ],
+    "de": [
+      "Ich bleibe realistisch bei den Kosten.",
+      "Der Plan klingt realistisch für morgen.",
+      "Diese Erwartungen sind für dich realistisch.",
+      "Ich schätze die Lage realistisch ein."
+    ],
+    "el": [
+      "Βλέπω ρεαλιστικά τα έξοδα.",
+      "Το σχέδιο για αύριο ακούγεται ρεαλιστικό.",
+      "Αυτές οι προσδοκίες είναι ρεαλιστικές για εσένα.",
+      "Αξιολογώ την κατάσταση ρεαλιστικά."
+    ],
+    "en": [
+      "I’m staying realistic about the costs.",
+      "The plan sounds realistic for tomorrow.",
+      "These expectations are realistic for you.",
+      "I assess the situation realistically."
+    ],
+    "es": [
+      "Soy realista con los gastos.",
+      "El plan suena realista para mañana.",
+      "Estas expectativas son realistas para ti.",
+      "Evalúo la situación de forma realista."
+    ],
     "fi": [
       "Olen realistinen kustannusten suhteen.",
       "Suunnitelma huomiselle kuuloctaa realistiselta.",
       "Nämä odotukset ovat sinulle realistisia.",
       "Arvioin tilanteen realistisesti."
+    ],
+    "fr": [
+      "Je reste réaliste sur les dépenses.",
+      "Le plan semble réaliste pour demain.",
+      "Ces attentes sont réalistes pour toi.",
+      "J’évalue la situation de manière réaliste."
+    ],
+    "he": [
+      "אני מציאותי לגבי העלויות.",
+      "התוכנית נשמעת מציאותית למחר.",
+      "הציפיות האלה מציאותיות עבורך.",
+      "אני מעריך את המצב באופן מציאותי."
+    ],
+    "hi": [
+      "मैं खर्चों के बारे में यथार्थवादी हूँ.",
+      "कल के लिए योजना यथार्थवादी लगती है.",
+      "ये उम्मीदें तुम्हारे लिए यथार्थवादी हैं.",
+      "मैं स्थिति का आकलन यथार्थवादी तरीके से करता हूँ."
+    ],
+    "hu": [
+      "Reálisan kezelem a költségeket.",
+      "A terv holnapra reálisnak hangzik.",
+      "Ezek az elvárások számodra reálisak.",
+      "Reálisan ítélem meg a helyzetet."
+    ],
+    "id": [
+      "Saya bersikap realistis soal biaya.",
+      "Rencana untuk besok terdengar realistis.",
+      "Ekspektasi ini realistis untukmu.",
+      "Saya menilai situasi secara realistis."
+    ],
+    "ipa": [
+      "/ɪç ˈblaɪbə ʁe.aˈlɪstɪʃ baɪ̯ deːn ˈkɔstn̩/",
+      "/deːɐ̯ plaːn klɪŋt ʁe.aˈlɪstɪʃ fyːɐ̯ ˈmɔʁɡn̩/",
+      "/ˈdiːzə ɛʁˈvaːʁtʊŋən zɪnt ʁe.aˈlɪstɪʃ fyːɐ̯ dɪç/",
+      "/ɪç ˈʃɛt͡sə diː ˈlaːɡə ʁe.aˈlɪstɪʃ aɪ̯n/"
+    ],
+    "it": [
+      "Resto realista sulle spese.",
+      "Il piano sembra realistico per domani.",
+      "Queste aspettative sono realistiche per te.",
+      "Valuto la situazione in modo realistico."
     ],
     "ja": [
       "費用について現実的に考えています。",
@@ -901,6 +1155,83 @@
       "この期待はあなたにとって現実的です。",
       "状況を現実的に判断しています。"
     ],
-    "word_POS": "Adjective"
+    "ko": [
+      "비용은 현실적으로 보고 있어요.",
+      "내일 계획은 현실적이에요.",
+      "이 기대는 너에게 현실적이야.",
+      "상황을 현실적으로 판단하고 있어요."
+    ],
+    "nb": [
+      "Jeg er realistisk når det gjelder kostnader.",
+      "Planen høres realistisk ut for i morgen.",
+      "Disse forventningene er realistiske for deg.",
+      "Jeg vurderer situasjonen realistisk."
+    ],
+    "nl": [
+      "Ik blijf realistisch over de kosten.",
+      "Het plan klinkt realistisch voor morgen.",
+      "Deze verwachtingen zijn realistisch voor jou.",
+      "Ik schat de situatie realistisch in."
+    ],
+    "pl": [
+      "Podchodzę realistycznie do kosztów.",
+      "Plan na jutro brzmi realistycznie.",
+      "Te oczekiwania są dla ciebie realistyczne.",
+      "Oceniam sytuację realistycznie."
+    ],
+    "pt": [
+      "Sou realista com os gastos.",
+      "O plano parece realista para amanhã.",
+      "Essas expectativas são realistas para você.",
+      "Avalio a situação de forma realista."
+    ],
+    "ro": [
+      "Rămân realist în privința costurilor.",
+      "Planul pentru mâine pare realist.",
+      "Aceste așteptări sunt realiste pentru tine.",
+      "Evaluez situația în mod realist."
+    ],
+    "ru": [
+      "Я реалистично смотрю на расходы.",
+      "План на завтра звучит реалистично.",
+      "Эти ожидания для тебя вполне реалистичны.",
+      "Я трезво оцениваю ситуацию."
+    ],
+    "sv": [
+      "Jag är realistisk när det gäller kostnaderna.",
+      "Planen låter realistisk för imorgon.",
+      "De här förväntningarna är realistiska för dig.",
+      "Jag bedömer situationen realistiskt."
+    ],
+    "tr": [
+      "Masraflar konusunda gerçekçi davranıyorum.",
+      "Plan yarın için gerçekçi görünüyor.",
+      "Bu beklentiler senin için gerçekçi.",
+      "Durumu gerçekçi bir şekilde değerlendiriyorum."
+    ],
+    "uk": [
+      "Я реалістично ставлюся до витрат.",
+      "План на завтра звучить реалістично.",
+      "Ці очікування для тебе реалістичні.",
+      "Я реалістично оцінюю ситуацію."
+    ],
+    "vi": [
+      "Tôi thực tế về chi phí.",
+      "Kế hoạch cho ngày mai nghe có vẻ thực tế.",
+      "Những kỳ vọng này là thực tế đối với bạn.",
+      "Tôi đánh giá tình hình một cách thực tế."
+    ],
+    "yue": [
+      "我對開支好實際。",
+      "呢個計劃聽落幾實際，聽日可行。",
+      "呢啲期望對你嚟講好現實。",
+      "我現實地評估情況。"
+    ],
+    "zh-Hans": [
+      "我对开销很理性。",
+      "这个计划听起来很现实，明天可行。",
+      "这些期望对你来说很现实。",
+      "我现实地评估情况。"
+    ]
   }
 }

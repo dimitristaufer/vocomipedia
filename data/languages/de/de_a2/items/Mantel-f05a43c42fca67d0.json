@@ -332,13 +332,13 @@
       "difficulty": 5.33
     },
     {
-      "target": "Sie kauft einen warmen Mantel im Winter.",
+      "target": "Sie kauft im Winter einen warmen Mantel.",
       "reading": "/ziː kaʊft ˈaɪnən ˈvaʁmən ˈmantl̩ ɪm ˈvɪntɐ/",
       "translations": {
-        "de": "Sie kauft einen warmen Mantel im Winter.",
+        "de": "Sie kauft im Winter einen warmen Mantel.",
         "ipa": "/ziː kaʊft ˈaɪnən ˈvaʁmən ˈmantl̩ ɪm ˈvɪntɐ/",
         "en": "She is buying a warm coat in winter.",
-        "es": "Ella está comprando un abrigo grueso en invierno.",
+        "es": "Ella está comprando un abrigo cálido en invierno.",
         "fr": "Elle achète un manteau chaud en hiver.",
         "it": "Lei sta comprando un cappotto caldo in inverno.",
         "ko": "그녀는 겨울에 따뜻한 코트를 사요.",
@@ -368,67 +368,92 @@
       "tokens": [
         {
           "surface": "Sie",
-          "surface_en": "she",
-          "furigana": "[ziː]",
-          "pos": "PRON",
           "lemma": "sie",
-          "explanation": "Personal pronoun, nominative singular; subject of the clause.",
-          "difficulty": 2
+          "pos": "PRON",
+          "upos": "PRON",
+          "xpos": "PPER",
+          "feats": {},
+          "start": 0,
+          "end": 3,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "kauft",
-          "surface_en": "buys",
-          "furigana": "[kaʊft]",
-          "pos": "VERB",
           "lemma": "kaufen",
-          "explanation": "Finite main verb (present, 3rd sg); transitive; selects a direct object and temporal PP.",
-          "difficulty": 7
-        },
-        {
-          "surface": "einen",
-          "surface_en": "a",
-          "furigana": "[ˈaɪnən]",
-          "pos": "DET",
-          "lemma": "ein",
-          "explanation": "Indefinite article, masculine accusative singular; determiner of 'Mantel'.",
-          "difficulty": 2
-        },
-        {
-          "surface": "warmen",
-          "surface_en": "warm",
-          "furigana": "[ˈvaʁmən]",
-          "pos": "ADJ",
-          "lemma": "warm",
-          "explanation": "Attributive adjective, masculine accusative singular; modifies 'Mantel'.",
-          "difficulty": 7
-        },
-        {
-          "surface": "Mantel",
-          "surface_en": "coat",
-          "furigana": "[ˈmantl̩]",
-          "pos": "NOUN",
-          "lemma": "Mantel",
-          "explanation": "Masculine noun, accusative singular; direct object of 'kauft'.",
-          "difficulty": 7,
-          "is_main_word": true
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VVFIN",
+          "feats": {},
+          "start": 4,
+          "end": 9,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "im",
-          "surface_en": "in the",
-          "furigana": "[ɪm]",
-          "pos": "ADP",
           "lemma": "in",
-          "explanation": "Preposition (fusion of 'in' + 'dem'), governs dative; introduces temporal PP.",
-          "difficulty": 2
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "APPRART",
+          "feats": {},
+          "start": 10,
+          "end": 12,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "Winter.",
-          "surface_en": "winter",
-          "furigana": "[ˈvɪntɐ]",
-          "pos": "NOUN",
+          "surface": "Winter",
           "lemma": "Winter",
-          "explanation": "Noun, dative singular; object of 'im'; head of PP functioning as temporal adverbial.",
-          "difficulty": 7
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 13,
+          "end": 19,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "einen",
+          "lemma": "ein",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "ART",
+          "feats": {},
+          "start": 20,
+          "end": 25,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "warmen",
+          "lemma": "warm",
+          "pos": "ADJ",
+          "upos": "ADJ",
+          "xpos": "ADJA",
+          "feats": {},
+          "start": 26,
+          "end": 32,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "Mantel",
+          "lemma": "Mantel",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 33,
+          "end": 39,
+          "analyzer": "spacy_de_core_news_lg",
+          "is_main_word": true
+        },
+        {
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 39,
+          "end": 40,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 4.86
@@ -448,19 +473,311 @@
     "content_reviewers": [
       "mediawiki-visible-revision"
     ],
-    "last_reviewed_utc": "2026-06-12T11:46:03Z",
-    "approval_source": "mediawiki_visible_revision",
+    "last_reviewed_utc": "2026-10-14T23:21:19Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
     "wiki": {
       "title": "Item:De a2/f05a43c42fca67d0",
-      "revision_id": 14338,
-      "parent_revision_id": 1119,
-      "revision_timestamp_utc": "2026-06-12T11:46:03Z",
-      "revision_user": "VocomiBot",
-      "revision_comment": "Sync de_a2 item Mantel",
-      "pulled_utc": "2026-06-22T08:19:08Z",
-      "applied_utc": "2026-06-22T08:19:11Z",
+      "revision_id": 85641,
+      "parent_revision_id": 59389,
+      "revision_timestamp_utc": "2026-10-14T23:21:19Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Content review: German and translation corrections",
+      "pulled_utc": "2026-10-17T07:00:44Z",
+      "applied_utc": "2026-10-17T07:00:47Z",
       "applied_by": "vocomipedia-apply-pulled"
-    }
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-69bd3c7b8a23d9ff",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_a2:f05a43c42fca67d0",
+        "pack_code": "de_a2",
+        "entry_id": "Mantel",
+        "language": "de",
+        "sentence_index": 4,
+        "old_sentence": "Sie kauft einen warmen Mantel im Winter.",
+        "old_translations": {
+          "de": "Sie kauft einen warmen Mantel im Winter.",
+          "ipa": "/ziː kaʊft ˈaɪnən ˈvaʁmən ˈmantl̩ ɪm ˈvɪntɐ/",
+          "en": "She is buying a warm coat in winter.",
+          "es": "Ella está comprando un abrigo grueso en invierno.",
+          "fr": "Elle achète un manteau chaud en hiver.",
+          "it": "Lei sta comprando un cappotto caldo in inverno.",
+          "ko": "그녀는 겨울에 따뜻한 코트를 사요.",
+          "zh-Hans": "她正在买一件暖和的大衣。",
+          "yue": "佢喺冬天買件暖嘅褸。",
+          "ru": "Она покупает тёплое пальто зимой.",
+          "pt": "Ela está comprando um casaco quente no inverno.",
+          "he": "היא קונה מעיל חם בחורף.",
+          "tr": "Kışın sıcak bir mont alıyor.",
+          "vi": "Cô ấy đang mua một chiếc áo khoác ấm vào mùa đông.",
+          "ar": "هي تشتري معطفًا دافئًا في الشتاء.",
+          "nl": "Ze koopt in de winter een warme jas.",
+          "uk": "Вона купує тепле пальто взимку.",
+          "hu": "Télen vesz egy meleg kabátot.",
+          "hi": "वह सर्दियों में एक गर्म कोट खरीद रही है।",
+          "pl": "Ona kupuje ciepły płaszcz zimą.",
+          "el": "Αυτή αγοράζει ένα ζεστό παλτό τον χειμώνα.",
+          "nb": "Hun kjøper en varm frakk om vinteren.",
+          "id": "Dia membeli mantel hangat saat musim dingin.",
+          "sv": "Hon köper en varm rock på vintern.",
+          "ro": "Ea cumpără un palton călduros iarna.",
+          "cs": "Kupuje teplý kabát v zimě.",
+          "da": "Hun køber en varm frakke om vinteren.",
+          "fi": "Hän ostaa lämpimän takin talvella.",
+          "ja": "彼女は冬に暖かいコートを買う。"
+        },
+        "proposed_sentence": "Sie kauft im Winter einen warmen Mantel.",
+        "proposed_translations": {
+          "de": "Sie kauft im Winter einen warmen Mantel.",
+          "ipa": "/ziː kaʊft ˈaɪnən ˈvaʁmən ˈmantl̩ ɪm ˈvɪntɐ/",
+          "en": "She is buying a warm coat in winter.",
+          "es": "Ella está comprando un abrigo cálido en invierno.",
+          "fr": "Elle achète un manteau chaud en hiver.",
+          "it": "Lei sta comprando un cappotto caldo in inverno.",
+          "ko": "그녀는 겨울에 따뜻한 코트를 사요.",
+          "zh-Hans": "她正在买一件暖和的大衣。",
+          "yue": "佢喺冬天買件暖嘅褸。",
+          "ru": "Она покупает тёплое пальто зимой.",
+          "pt": "Ela está comprando um casaco quente no inverno.",
+          "he": "היא קונה מעיל חם בחורף.",
+          "tr": "Kışın sıcak bir mont alıyor.",
+          "vi": "Cô ấy đang mua một chiếc áo khoác ấm vào mùa đông.",
+          "ar": "هي تشتري معطفًا دافئًا في الشتاء.",
+          "nl": "Ze koopt in de winter een warme jas.",
+          "uk": "Вона купує тепле пальто взимку.",
+          "hu": "Télen vesz egy meleg kabátot.",
+          "hi": "वह सर्दियों में एक गर्म कोट खरीद रही है।",
+          "pl": "Ona kupuje ciepły płaszcz zimą.",
+          "el": "Αυτή αγοράζει ένα ζεστό παλτό τον χειμώνα.",
+          "nb": "Hun kjøper en varm frakk om vinteren.",
+          "id": "Dia membeli mantel hangat saat musim dingin.",
+          "sv": "Hon köper en varm rock på vintern.",
+          "ro": "Ea cumpără un palton călduros iarna.",
+          "cs": "Kupuje teplý kabát v zimě.",
+          "da": "Hun køber en varm frakke om vinteren.",
+          "fi": "Hän ostaa lämpimän takin talvella.",
+          "ja": "彼女は冬に暖かいコートを買う。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Sie kauft im Winter einen warmen Mantel.",
+        "old_japanese": "Sie kauft einen warmen Mantel im Winter.",
+        "old_english": "She is buying a warm coat in winter.",
+        "proposed_japanese": "Sie kauft im Winter einen warmen Mantel.",
+        "proposed_english": "She is buying a warm coat in winter.",
+        "reason": "Use the more natural German word order without changing the meaning.",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Sie kauft im Winter einen warmen Mantel.",
+          "tokens": [
+            {
+              "surface": "Sie",
+              "lemma": "sie",
+              "pos": "PRON",
+              "upos": "PRON",
+              "xpos": "PPER",
+              "feats": {},
+              "start": 0,
+              "end": 3,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "kauft",
+              "lemma": "kaufen",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVFIN",
+              "feats": {},
+              "start": 4,
+              "end": 9,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "im",
+              "lemma": "in",
+              "pos": "ADP",
+              "upos": "ADP",
+              "xpos": "APPRART",
+              "feats": {},
+              "start": 10,
+              "end": 12,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Winter",
+              "lemma": "Winter",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 13,
+              "end": 19,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "einen",
+              "lemma": "ein",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "ART",
+              "feats": {},
+              "start": 20,
+              "end": 25,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "warmen",
+              "lemma": "warm",
+              "pos": "ADJ",
+              "upos": "ADJ",
+              "xpos": "ADJA",
+              "feats": {},
+              "start": 26,
+              "end": 32,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Mantel",
+              "lemma": "Mantel",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 33,
+              "end": 39,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 39,
+              "end": 40,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Sie",
+            "lemma": "sie",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "kauft",
+            "lemma": "kaufen",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 4,
+            "end": 9,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "im",
+            "lemma": "in",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPRART",
+            "feats": {},
+            "start": 10,
+            "end": 12,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Winter",
+            "lemma": "Winter",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 13,
+            "end": 19,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "einen",
+            "lemma": "ein",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 20,
+            "end": 25,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "warmen",
+            "lemma": "warm",
+            "pos": "ADJ",
+            "upos": "ADJ",
+            "xpos": "ADJA",
+            "feats": {},
+            "start": 26,
+            "end": 32,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Mantel",
+            "lemma": "Mantel",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 33,
+            "end": 39,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 39,
+            "end": 40,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:00:44Z",
+        "updated_utc": "2026-10-17T07:00:59Z",
+        "applied_utc": "2026-10-17T07:00:59Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:00:59Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -679,71 +996,96 @@
         "difficulty_aggregated": 5.33
       },
       {
-        "sentence": "Sie kauft einen warmen Mantel im Winter.",
+        "sentence": "Sie kauft im Winter einen warmen Mantel.",
         "tokens": [
           {
             "surface": "Sie",
-            "surface_en": "she",
-            "furigana": "[ziː]",
-            "pos": "PRON",
             "lemma": "sie",
-            "explanation": "Personal pronoun, nominative singular; subject of the clause.",
-            "difficulty": 2
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "kauft",
-            "surface_en": "buys",
-            "furigana": "[kaʊft]",
-            "pos": "VERB",
             "lemma": "kaufen",
-            "explanation": "Finite main verb (present, 3rd sg); transitive; selects a direct object and temporal PP.",
-            "difficulty": 7
-          },
-          {
-            "surface": "einen",
-            "surface_en": "a",
-            "furigana": "[ˈaɪnən]",
-            "pos": "DET",
-            "lemma": "ein",
-            "explanation": "Indefinite article, masculine accusative singular; determiner of 'Mantel'.",
-            "difficulty": 2
-          },
-          {
-            "surface": "warmen",
-            "surface_en": "warm",
-            "furigana": "[ˈvaʁmən]",
-            "pos": "ADJ",
-            "lemma": "warm",
-            "explanation": "Attributive adjective, masculine accusative singular; modifies 'Mantel'.",
-            "difficulty": 7
-          },
-          {
-            "surface": "Mantel",
-            "surface_en": "coat",
-            "furigana": "[ˈmantl̩]",
-            "pos": "NOUN",
-            "lemma": "Mantel",
-            "explanation": "Masculine noun, accusative singular; direct object of 'kauft'.",
-            "difficulty": 7,
-            "is_main_word": true
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 4,
+            "end": 9,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "im",
-            "surface_en": "in the",
-            "furigana": "[ɪm]",
-            "pos": "ADP",
             "lemma": "in",
-            "explanation": "Preposition (fusion of 'in' + 'dem'), governs dative; introduces temporal PP.",
-            "difficulty": 2
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPRART",
+            "feats": {},
+            "start": 10,
+            "end": 12,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "Winter.",
-            "surface_en": "winter",
-            "furigana": "[ˈvɪntɐ]",
-            "pos": "NOUN",
+            "surface": "Winter",
             "lemma": "Winter",
-            "explanation": "Noun, dative singular; object of 'im'; head of PP functioning as temporal adverbial.",
-            "difficulty": 7
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 13,
+            "end": 19,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "einen",
+            "lemma": "ein",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 20,
+            "end": 25,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "warmen",
+            "lemma": "warm",
+            "pos": "ADJ",
+            "upos": "ADJ",
+            "xpos": "ADJA",
+            "feats": {},
+            "start": 26,
+            "end": 32,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Mantel",
+            "lemma": "Mantel",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 33,
+            "end": 39,
+            "analyzer": "spacy_de_core_news_lg",
+            "is_main_word": true
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 39,
+            "end": 40,
+            "analyzer": "spacy_de_core_news_lg"
           }
         ],
         "difficulty_aggregated": 4.86

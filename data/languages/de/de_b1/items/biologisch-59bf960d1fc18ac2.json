@@ -305,12 +305,12 @@
       "difficulty": 8.2
     },
     {
-      "target": "Das Restaurant kocht biologisch und regional.",
+      "target": "Das Restaurant kocht mit biologischen und regionalen Zutaten.",
       "reading": "/das ʁɛstoˈʁɑ̃ː kɔxt bioˈloːgɪʃ ʊnt ʁeɡioˈnaːl/",
       "translations": {
-        "de": "Das Restaurant kocht biologisch und regional.",
+        "de": "Das Restaurant kocht mit biologischen und regionalen Zutaten.",
         "ipa": "/das ʁɛstoˈʁɑ̃ː kɔxt bioˈloːgɪʃ ʊnt ʁeɡioˈnaːl/",
-        "en": "The restaurant cooks organic and local.",
+        "en": "The restaurant cooks with organic and locally sourced ingredients.",
         "es": "El restaurante cocina con productos orgánicos y locales.",
         "fr": "Le restaurant cuisine avec des produits bio et locaux.",
         "it": "Il ristorante cucina con prodotti biologici e locali.",
@@ -323,76 +323,121 @@
         "tr": "Restoran organik ve yerel ürünlerle yemek yapıyor.",
         "vi": "Nhà hàng nấu bằng nguyên liệu hữu cơ và địa phương.",
         "ar": "المطعم يطبخ بمكونات عضوية ومحلية.",
-        "nl": "Het restaurant kookt met biologische og lokale ingrediënten.",
+        "nl": "Het restaurant kookt met biologische en lokale ingrediënten.",
         "uk": "У ресторані готують з органічних і місцевих продуктів.",
         "hu": "Az étterem bio és helyi alapanyagokkal főz.",
         "hi": "यह रेस्टोरेंट जैविक और स्थानीय सामग्री से खाना बनाता है.",
         "pl": "Restauracja gotuje z ekologicznych i lokalnych składników.",
         "el": "Το εστιατόριο μαγειρεύει με βιολογικά και τοπικά προϊόντα.",
-        "nb": "Restauranten lager mat me økologiske og lokale råvarer.",
+        "nb": "Restauranten lager mat med økologiske og lokale råvarer.",
         "id": "Restoran memasak dengan bahan organik dan lokal.",
         "sv": "Restaurangen lagar mat med ekologiska och lokala råvaror.",
         "ro": "Restaurantul gătește cu ingrediente organice și locale.",
         "cs": "Restaurace vaří z ekologických a místních surovin.",
         "da": "Restauranten laver mad med økologiske og lokale råvarer.",
-        "fi": "Ravintola xpnσimoπoieί luomu- ja lähiraaka-aineita.",
+        "fi": "Ravintola käyttää luomu- ja lähiraaka-aineita.",
         "ja": "そのレストランは有機食材と地元の食材で料理しています。"
       },
       "tokens": [
         {
           "surface": "Das",
-          "surface_en": "the",
-          "furigana": "[das]",
-          "pos": "DET",
           "lemma": "der",
-          "explanation": "Definite article; nominative singular neuter; determiner of 'Restaurant'.",
-          "difficulty": 2
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "ART",
+          "feats": {},
+          "start": 0,
+          "end": 3,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "Restaurant",
-          "surface_en": "restaurant",
-          "furigana": "[ʁɛstoˈʁɑ̃ː]",
-          "pos": "NOUN",
           "lemma": "Restaurant",
-          "explanation": "Common noun; neuter nominative singular; subject.",
-          "difficulty": 10
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 4,
+          "end": 14,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "kocht",
-          "surface_en": "cooks",
-          "furigana": "[kɔxt]",
-          "pos": "VERB",
           "lemma": "kochen",
-          "explanation": "Finite verb; present 3rd person singular; main predicate.",
-          "difficulty": 7
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VVFIN",
+          "feats": {},
+          "start": 15,
+          "end": 20,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "biologisch",
-          "surface_en": "biologically",
-          "furigana": "[bi.oˈloːɡɪʃ]",
-          "pos": "ADV",
+          "surface": "mit",
+          "lemma": "mit",
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "APPR",
+          "feats": {},
+          "start": 21,
+          "end": 24,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "biologischen",
           "lemma": "biologisch",
-          "explanation": "Adverb modifying 'kocht'.",
-          "difficulty": 10,
+          "pos": "ADJ",
+          "upos": "ADJ",
+          "xpos": "ADJA",
+          "feats": {},
+          "start": 25,
+          "end": 37,
+          "analyzer": "spacy_de_core_news_lg",
           "is_main_word": true
         },
         {
           "surface": "und",
-          "surface_en": "and",
-          "furigana": "[ʊnt]",
-          "pos": "CCONJ",
           "lemma": "und",
-          "explanation": "Coordinating conjunction linking two adverbial modifiers.",
-          "difficulty": 2
+          "pos": "CCONJ",
+          "upos": "CCONJ",
+          "xpos": "KON",
+          "feats": {},
+          "start": 38,
+          "end": 41,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "regional.",
-          "surface_en": "regionally",
-          "furigana": "[ʁeɡioˈnaːl]",
-          "pos": "ADV",
+          "surface": "regionalen",
           "lemma": "regional",
-          "explanation": "Adverb modifying 'kocht'; coordinated with 'biologisch'.",
-          "difficulty": 10
+          "pos": "ADJ",
+          "upos": "ADJ",
+          "xpos": "ADJA",
+          "feats": {},
+          "start": 42,
+          "end": 52,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "Zutaten",
+          "lemma": "Zutat",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 53,
+          "end": 60,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 60,
+          "end": 61,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 6.83
@@ -409,8 +454,336 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-14T22:16:09Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:De b1/59bf960d1fc18ac2",
+      "revision_id": 86046,
+      "parent_revision_id": 15508,
+      "revision_timestamp_utc": "2026-10-14T22:16:09Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Suggest content corrections",
+      "pulled_utc": "2026-10-17T07:06:38Z",
+      "applied_utc": "2026-10-17T07:06:52Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-d74c09fde30c1f8c",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_b1:59bf960d1fc18ac2",
+        "pack_code": "de_b1",
+        "entry_id": "biologisch",
+        "language": "de",
+        "sentence_index": 4,
+        "old_sentence": "Das Restaurant kocht biologisch und regional.",
+        "old_translations": {
+          "de": "Das Restaurant kocht biologisch und regional.",
+          "ipa": "/das ʁɛstoˈʁɑ̃ː kɔxt bioˈloːgɪʃ ʊnt ʁeɡioˈnaːl/",
+          "en": "The restaurant cooks organic and local.",
+          "es": "El restaurante cocina con productos orgánicos y locales.",
+          "fr": "Le restaurant cuisine avec des produits bio et locaux.",
+          "it": "Il ristorante cucina con prodotti biologici e locali.",
+          "ko": "그 식당은 유기농 재료와 지역 재료로 요리해요.",
+          "zh-Hans": "这家餐厅使用有机和本地食材烹饪。",
+          "yue": "嗰間餐廳用有機同本地食材煮嘢食。",
+          "ru": "В ресторане готовят из органических и местных продуктов.",
+          "pt": "O restaurante cozinha com ingredientes orgânicos e locais.",
+          "he": "המסעדה מבשלת עם חומרי גלם אורגניים ומקומיים.",
+          "tr": "Restoran organik ve yerel ürünlerle yemek yapıyor.",
+          "vi": "Nhà hàng nấu bằng nguyên liệu hữu cơ và địa phương.",
+          "ar": "المطعم يطبخ بمكونات عضوية ومحلية.",
+          "nl": "Het restaurant kookt met biologische og lokale ingrediënten.",
+          "uk": "У ресторані готують з органічних і місцевих продуктів.",
+          "hu": "Az étterem bio és helyi alapanyagokkal főz.",
+          "hi": "यह रेस्टोरेंट जैविक और स्थानीय सामग्री से खाना बनाता है.",
+          "pl": "Restauracja gotuje z ekologicznych i lokalnych składników.",
+          "el": "Το εστιατόριο μαγειρεύει με βιολογικά και τοπικά προϊόντα.",
+          "nb": "Restauranten lager mat me økologiske og lokale råvarer.",
+          "id": "Restoran memasak dengan bahan organik dan lokal.",
+          "sv": "Restaurangen lagar mat med ekologiska och lokala råvaror.",
+          "ro": "Restaurantul gătește cu ingrediente organice și locale.",
+          "cs": "Restaurace vaří z ekologických a místních surovin.",
+          "da": "Restauranten laver mad med økologiske og lokale råvarer.",
+          "fi": "Ravintola xpnσimoπoieί luomu- ja lähiraaka-aineita.",
+          "ja": "そのレストランは有機食材と地元の食材で料理しています。"
+        },
+        "proposed_sentence": "Das Restaurant kocht mit biologischen und regionalen Zutaten.",
+        "proposed_translations": {
+          "de": "Das Restaurant kocht mit biologischen und regionalen Zutaten.",
+          "ipa": "/das ʁɛstoˈʁɑ̃ː kɔxt bioˈloːgɪʃ ʊnt ʁeɡioˈnaːl/",
+          "en": "The restaurant cooks with organic and locally sourced ingredients.",
+          "es": "El restaurante cocina con productos orgánicos y locales.",
+          "fr": "Le restaurant cuisine avec des produits bio et locaux.",
+          "it": "Il ristorante cucina con prodotti biologici e locali.",
+          "ko": "그 식당은 유기농 재료와 지역 재료로 요리해요.",
+          "zh-Hans": "这家餐厅使用有机和本地食材烹饪。",
+          "yue": "嗰間餐廳用有機同本地食材煮嘢食。",
+          "ru": "В ресторане готовят из органических и местных продуктов.",
+          "pt": "O restaurante cozinha com ingredientes orgânicos e locais.",
+          "he": "המסעדה מבשלת עם חומרי גלם אורגניים ומקומיים.",
+          "tr": "Restoran organik ve yerel ürünlerle yemek yapıyor.",
+          "vi": "Nhà hàng nấu bằng nguyên liệu hữu cơ và địa phương.",
+          "ar": "المطعم يطبخ بمكونات عضوية ومحلية.",
+          "nl": "Het restaurant kookt met biologische en lokale ingrediënten.",
+          "uk": "У ресторані готують з органічних і місцевих продуктів.",
+          "hu": "Az étterem bio és helyi alapanyagokkal főz.",
+          "hi": "यह रेस्टोरेंट जैविक और स्थानीय सामग्री से खाना बनाता है.",
+          "pl": "Restauracja gotuje z ekologicznych i lokalnych składników.",
+          "el": "Το εστιατόριο μαγειρεύει με βιολογικά και τοπικά προϊόντα.",
+          "nb": "Restauranten lager mat med økologiske og lokale råvarer.",
+          "id": "Restoran memasak dengan bahan organik dan lokal.",
+          "sv": "Restaurangen lagar mat med ekologiska och lokala råvaror.",
+          "ro": "Restaurantul gătește cu ingrediente organice și locale.",
+          "cs": "Restaurace vaří z ekologických a místních surovin.",
+          "da": "Restauranten laver mad med økologiske og lokale råvarer.",
+          "fi": "Ravintola käyttää luomu- ja lähiraaka-aineita.",
+          "ja": "そのレストランは有機食材と地元の食材で料理しています。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Das Restaurant kocht mit biologischen und regionalen Zutaten.",
+        "old_japanese": "Das Restaurant kocht biologisch und regional.",
+        "old_english": "The restaurant cooks organic and local.",
+        "proposed_japanese": "Das Restaurant kocht mit biologischen und regionalen Zutaten.",
+        "proposed_english": "The restaurant cooks with organic and locally sourced ingredients.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Das Restaurant kocht mit biologischen und regionalen Zutaten.",
+          "tokens": [
+            {
+              "surface": "Das",
+              "lemma": "der",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "ART",
+              "feats": {},
+              "start": 0,
+              "end": 3,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Restaurant",
+              "lemma": "Restaurant",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 4,
+              "end": 14,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "kocht",
+              "lemma": "kochen",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVFIN",
+              "feats": {},
+              "start": 15,
+              "end": 20,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "mit",
+              "lemma": "mit",
+              "pos": "ADP",
+              "upos": "ADP",
+              "xpos": "APPR",
+              "feats": {},
+              "start": 21,
+              "end": 24,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "biologischen",
+              "lemma": "biologisch",
+              "pos": "ADJ",
+              "upos": "ADJ",
+              "xpos": "ADJA",
+              "feats": {},
+              "start": 25,
+              "end": 37,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "und",
+              "lemma": "und",
+              "pos": "CCONJ",
+              "upos": "CCONJ",
+              "xpos": "KON",
+              "feats": {},
+              "start": 38,
+              "end": 41,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "regionalen",
+              "lemma": "regional",
+              "pos": "ADJ",
+              "upos": "ADJ",
+              "xpos": "ADJA",
+              "feats": {},
+              "start": 42,
+              "end": 52,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Zutaten",
+              "lemma": "Zutat",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 53,
+              "end": 60,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 60,
+              "end": 61,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Das",
+            "lemma": "der",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Restaurant",
+            "lemma": "Restaurant",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 4,
+            "end": 14,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "kocht",
+            "lemma": "kochen",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 15,
+            "end": 20,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "mit",
+            "lemma": "mit",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 21,
+            "end": 24,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "biologischen",
+            "lemma": "biologisch",
+            "pos": "ADJ",
+            "upos": "ADJ",
+            "xpos": "ADJA",
+            "feats": {},
+            "start": 25,
+            "end": 37,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "und",
+            "lemma": "und",
+            "pos": "CCONJ",
+            "upos": "CCONJ",
+            "xpos": "KON",
+            "feats": {},
+            "start": 38,
+            "end": 41,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "regionalen",
+            "lemma": "regional",
+            "pos": "ADJ",
+            "upos": "ADJ",
+            "xpos": "ADJA",
+            "feats": {},
+            "start": 42,
+            "end": 52,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Zutaten",
+            "lemma": "Zutat",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 53,
+            "end": 60,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 60,
+            "end": 61,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:06:38Z",
+        "updated_utc": "2026-10-17T07:07:05Z",
+        "applied_utc": "2026-10-17T07:07:05Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:07:05Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -422,34 +795,6 @@
     "word": "biologisch",
     "word_reading": "",
     "word_label": "Adjektiv",
-    "word_en": "biological; organic (food)",
-    "word_es": "biológico; ecológico",
-    "word_fr": "biologique; bio",
-    "word_it": "biologico",
-    "word_ko": "생물학의; 유기농의",
-    "word_zh-Hans": "生物的; 有机的",
-    "word_yue": "生物嘅; 有機嘅",
-    "word_ru": "биологический; органический",
-    "word_pt": "biológico; orgânico",
-    "word_he": "ביולוגי; אורגני",
-    "word_tr": "biyolojik; organik",
-    "word_vi": "sinh học; hữu cơ",
-    "word_ar": "بيولوجي; عضوي",
-    "word_nl": "biologisch",
-    "word_uk": "біологічний; органічний",
-    "word_hu": "biológiai; bio",
-    "word_hi": "जैविक; ऑर्गेनिक",
-    "word_pl": "biologiczny; ekologiczny",
-    "word_el": "βιολογικός",
-    "word_nb": "biologisk; økologisk",
-    "word_id": "biologis; organik",
-    "word_sv": "biologisk; ekologisk",
-    "word_ro": "biologic; ecologic",
-    "word_cs": "biologický; ekologický",
-    "word_da": "biologisk; økologisk",
-    "word_fi": "biologinen; luomu",
-    "word_ja": "生物学の; オーガニックの",
-    "word_de": "biologisch",
     "comic_difficulty": 7.2,
     "jp": [
       "Die Tüte ist biologisch abbaubar.",
@@ -462,24 +807,6 @@
       "/ɪç ˈkaʊ̯fə ˈhɔʏ̯tə bioˈloːgɪʃ ˈanɡəbaʊ̯təs ɡəˈmyːzə/",
       "/ˈʊnzərə ˈzaɪ̯fə vɪʁt bioˈloːgɪʃ ˈheːɐ̯ɡəʃtɛlt/",
       "/das ʁɛstoˈʁɑ̃ː kɔxt bioˈloːgɪʃ ʊnt ʁeɡioˈnaːl/"
-    ],
-    "de": [
-      "Die Tüte ist biologisch abbaubar.",
-      "Ich kaufe heute biologisch angebautes Gemüse.",
-      "Unsere Seife wird biologisch hergestellt.",
-      "Das Restaurant kocht biologisch und regional."
-    ],
-    "ipa": [
-      "/diː ˈtyːtə ɪst bioˈloːgɪʃ ˈapbaʊ̯baːɐ̯/",
-      "/ɪç ˈkaʊ̯fə ˈhɔʏ̯tə bioˈloːgɪʃ ˈanɡəbaʊ̯təs ɡəˈmyːzə/",
-      "/ˈʊnzərə ˈzaɪ̯fə vɪʁt bioˈloːgɪʃ ˈheːɐ̯ɡəʃtɛlt/",
-      "/das ʁɛstoˈʁɑ̃ː kɔxt bioˈloːgɪʃ ʊnt ʁeɡioˈnaːl/"
-    ],
-    "en": [
-      "The bag is biodegradable.",
-      "I’m buying organically grown vegetables today.",
-      "Our soap is produced organically.",
-      "The restaurant cooks organic and local."
     ],
     "pos_analysis": [
       {
@@ -648,198 +975,147 @@
         "difficulty_aggregated": 8.2
       },
       {
-        "sentence": "Das Restaurant kocht biologisch und regional.",
+        "sentence": "Das Restaurant kocht mit biologischen und regionalen Zutaten.",
         "tokens": [
           {
             "surface": "Das",
-            "surface_en": "the",
-            "furigana": "[das]",
-            "pos": "DET",
             "lemma": "der",
-            "explanation": "Definite article; nominative singular neuter; determiner of 'Restaurant'.",
-            "difficulty": 2
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "Restaurant",
-            "surface_en": "restaurant",
-            "furigana": "[ʁɛstoˈʁɑ̃ː]",
-            "pos": "NOUN",
             "lemma": "Restaurant",
-            "explanation": "Common noun; neuter nominative singular; subject.",
-            "difficulty": 10
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 4,
+            "end": 14,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "kocht",
-            "surface_en": "cooks",
-            "furigana": "[kɔxt]",
-            "pos": "VERB",
             "lemma": "kochen",
-            "explanation": "Finite verb; present 3rd person singular; main predicate.",
-            "difficulty": 7
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 15,
+            "end": 20,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "biologisch",
-            "surface_en": "biologically",
-            "furigana": "[bi.oˈloːɡɪʃ]",
-            "pos": "ADV",
+            "surface": "mit",
+            "lemma": "mit",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 21,
+            "end": 24,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "biologischen",
             "lemma": "biologisch",
-            "explanation": "Adverb modifying 'kocht'.",
-            "difficulty": 10,
+            "pos": "ADJ",
+            "upos": "ADJ",
+            "xpos": "ADJA",
+            "feats": {},
+            "start": 25,
+            "end": 37,
+            "analyzer": "spacy_de_core_news_lg",
             "is_main_word": true
           },
           {
             "surface": "und",
-            "surface_en": "and",
-            "furigana": "[ʊnt]",
-            "pos": "CCONJ",
             "lemma": "und",
-            "explanation": "Coordinating conjunction linking two adverbial modifiers.",
-            "difficulty": 2
+            "pos": "CCONJ",
+            "upos": "CCONJ",
+            "xpos": "KON",
+            "feats": {},
+            "start": 38,
+            "end": 41,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "regional.",
-            "surface_en": "regionally",
-            "furigana": "[ʁeɡioˈnaːl]",
-            "pos": "ADV",
+            "surface": "regionalen",
             "lemma": "regional",
-            "explanation": "Adverb modifying 'kocht'; coordinated with 'biologisch'.",
-            "difficulty": 10
+            "pos": "ADJ",
+            "upos": "ADJ",
+            "xpos": "ADJA",
+            "feats": {},
+            "start": 42,
+            "end": 52,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Zutaten",
+            "lemma": "Zutat",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 53,
+            "end": 60,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 60,
+            "end": 61,
+            "analyzer": "spacy_de_core_news_lg"
           }
         ],
         "difficulty_aggregated": 6.83
       }
     ],
-    "es": [
-      "La bolsa es biodegradable.",
-      "Hoy compro verduras orgánicas.",
-      "Nuestro jabón se elabora de forma orgánica.",
-      "El restaurante cocina con productos orgánicos y locales."
-    ],
-    "fr": [
-      "Le sac est biodégradable.",
-      "Aujourd’hui, j’achète des légumes bio.",
-      "Notre savon est fabriqué de manière biologique.",
-      "Le restaurant cuisine avec des produits bio et locaux."
-    ],
-    "it": [
-      "Il sacchetto è biodegradabile.",
-      "Oggi compro verdure biologiche.",
-      "Il nostro sapone è realizzato con metodi biologici.",
-      "Il ristorante cucina con prodotti biologici e locali."
-    ],
-    "ko": [
-      "그 봉지는 생분해돼요.",
-      "오늘 유기농 채소를 사요.",
-      "우리 비누는 유기농으로 만들어져요.",
-      "그 식당은 유기농 재료와 지역 재료로 요리해요."
-    ],
-    "zh-Hans": [
-      "这个袋子是可生物降解的。",
-      "我今天要买有机蔬菜。",
-      "我们的肥皂是有机生产的。",
-      "这家餐厅使用有机和本地食材烹饪。"
-    ],
-    "yue": [
-      "個袋係可生物降解。",
-      "我今日買有機菜。",
-      "我哋嘅肥皂係用有機方法製造。",
-      "嗰間餐廳用有機同本地食材煮嘢食。"
-    ],
-    "ru": [
-      "Этот пакет биоразлагаемый.",
-      "Сегодня я покупаю органические овощи.",
-      "Наше мыло производится по органическим стандартам.",
-      "В ресторане готовят из органических и местных продуктов."
-    ],
-    "pt": [
-      "A sacola é biodegradável.",
-      "Hoje vou comprar vegetais orgânicos.",
-      "Nosso sabonete é fabricado de forma orgânica.",
-      "O restaurante cozinha com ingredientes orgânicos e locais."
-    ],
-    "he": [
-      "השקית מתכלה ביולוגית.",
-      "היום אני קונה ירקות אורגניים.",
-      "הסבון שלנו מיוצר באופן אורגני.",
-      "המסעדה מבשלת עם חומרי גלם אורגניים ומקומיים."
-    ],
-    "tr": [
-      "Poşet biyolojik olarak parçalanabilir.",
-      "Bugün organik yetiştirilmiş sebze alıyorum.",
-      "Sabunumuz organik olarak üretiliyor.",
-      "Restoran organik ve yerel ürünlerle yemek yapıyor."
-    ],
-    "vi": [
-      "Túi này có thể phân hủy sinh học.",
-      "Hôm nay tôi mua rau trồng hữu cơ.",
-      "Xà phòng của chúng tôi được sản xuất theo quy trình hữu cơ.",
-      "Nhà hàng nấu bằng nguyên liệu hữu cơ và địa phương."
-    ],
+    "word_POS": "Adjective",
+    "entry_id": "biologisch",
+    "word_en": "biological; organic (food)",
+    "word_es": "biológico; ecológico",
+    "word_fr": "biologique; bio",
+    "word_it": "biologico",
+    "word_ko": "생물학의; 유기농의",
+    "word_zh-Hans": "生物的; 有机的",
+    "word_yue": "生物嘅; 有機嘅",
+    "word_ru": "биологический; органический",
+    "word_pt": "biológico; orgânico",
+    "word_he": "ביולוגי; אורגני",
+    "word_tr": "biyolojik; organik",
+    "word_vi": "sinh học; hữu cơ",
+    "word_ar": "بيولوجي; عضوي",
+    "word_nl": "biologisch",
+    "word_uk": "біологічний; органічний",
+    "word_hu": "biológiai; bio",
+    "word_hi": "जैविक; ऑर्गेनिक",
+    "word_pl": "biologiczny; ekologiczny",
+    "word_el": "βιολογικός",
+    "word_nb": "biologisk; økologisk",
+    "word_id": "biologis; organik",
+    "word_sv": "biologisk; ekologisk",
+    "word_ro": "biologic; ecologic",
+    "word_cs": "biologický; ekologický",
+    "word_da": "biologisk; økologisk",
+    "word_fi": "biologinen; luomu",
+    "word_ja": "生物学の; オーガニックの",
+    "word_de": "biologisch",
     "ar": [
       "الكيس قابل للتحلل الحيوي.",
       "اليوم أشتري خضروات عضوية.",
       "صابوننا يُصنَع بطريقة عضوية.",
       "المطعم يطبخ بمكونات عضوية ومحلية."
-    ],
-    "nl": [
-      "De tas is biologisch afbreekbaar.",
-      "Vandaag koop ik biologisch geteelde groenten.",
-      "Onze zeep wordt biologisch gemaakt.",
-      "Het restaurant kookt met biologische og lokale ingrediënten."
-    ],
-    "uk": [
-      "Цей пакет біорозкладний.",
-      "Сьогодні я купую органічні овочі.",
-      "Наше мило виготовляється органічним способом.",
-      "У ресторані готують з органічних і місцевих продуктів."
-    ],
-    "hu": [
-      "A zacskó biológiailag lebomló.",
-      "Ma bio zöldséget veszek.",
-      "A szappanunk organikus eljárással készül.",
-      "Az étterem bio és helyi alapanyagokkal főz."
-    ],
-    "hi": [
-      "यह थैला जैव-अपघटनीय है.",
-      "आज मैं जैविक सब्जियाँ खरीद रहा हूँ.",
-      "हमारा साबुन जैविक तरीके से बनाया जाता है.",
-      "यह रेस्टोरेंट जैविक और स्थानीय सामग्री से खाना बनाता है."
-    ],
-    "pl": [
-      "Torba jest biodegradowalna.",
-      "Dziś kupuję warzywa z uprawy ekologicznej.",
-      "Nasze mydło jest produkowane w sposób ekologiczny.",
-      "Restauracja gotuje z ekologicznych i lokalnych składników."
-    ],
-    "el": [
-      "Η σακούλα είναι βιοδιασπώμενη.",
-      "Σήμερα αγοράζω λαχανικά βιολογικής καλλιέργειας.",
-      "Το σαπούνι μας παράγεται με βιολογικές μεθόδους.",
-      "Το εστιατόριο μαγειρεύει με βιολογικά και τοπικά προϊόντα."
-    ],
-    "nb": [
-      "Posen er biologisk nedbrytbar.",
-      "I dag kjøper jeg økologiske grønnsaker.",
-      "Såpen vår produseres økologisk.",
-      "Restauranten lager mat me økologiske og lokale råvarer."
-    ],
-    "id": [
-      "Kantong ini dapat terurai secara hayati.",
-      "Hari ini saya membeli sayur yang ditanam secara organik.",
-      "Sabun kami diproduksi secara organik.",
-      "Restoran memasak dengan bahan organik dan lokal."
-    ],
-    "sv": [
-      "Påsen är biologiskt nedbrytbar.",
-      "Idag köper jag ekologiska grönsaker.",
-      "Vår tvål tillverkas ekologiskt.",
-      "Restaurangen lagar mat med ekologiska och lokala råvaror."
-    ],
-    "ro": [
-      "Punga este biodegradabilă.",
-      "Astăzi cumpăr legume ecologice.",
-      "Săpunul nostru este produs în mod organic.",
-      "Restaurantul gătește cu ingrediente organice și locale."
     ],
     "cs": [
       "Sáček je biologicky rozložitelný.",
@@ -853,11 +1129,77 @@
       "Vores sæbe fremstilles økologisk.",
       "Restauranten laver mad med økologiske og lokale råvarer."
     ],
+    "de": [
+      "Die Tüte ist biologisch abbaubar.",
+      "Ich kaufe heute biologisch angebautes Gemüse.",
+      "Unsere Seife wird biologisch hergestellt.",
+      "Das Restaurant kocht biologisch und regional."
+    ],
+    "el": [
+      "Η σακούλα είναι βιοδιασπώμενη.",
+      "Σήμερα αγοράζω λαχανικά βιολογικής καλλιέργειας.",
+      "Το σαπούνι μας παράγεται με βιολογικές μεθόδους.",
+      "Το εστιατόριο μαγειρεύει με βιολογικά και τοπικά προϊόντα."
+    ],
+    "en": [
+      "The bag is biodegradable.",
+      "I’m buying organically grown vegetables today.",
+      "Our soap is produced organically.",
+      "The restaurant cooks organic and local."
+    ],
+    "es": [
+      "La bolsa es biodegradable.",
+      "Hoy compro verduras orgánicas.",
+      "Nuestro jabón se elabora de forma orgánica.",
+      "El restaurante cocina con productos orgánicos y locales."
+    ],
     "fi": [
       "Pussi on biohajoava.",
       "Ostan tänään luomuvihanneksia.",
       "Saippuamme valmistetaan luonnonmukaisesti.",
       "Ravintola xpnσimoπoieί luomu- ja lähiraaka-aineita."
+    ],
+    "fr": [
+      "Le sac est biodégradable.",
+      "Aujourd’hui, j’achète des légumes bio.",
+      "Notre savon est fabriqué de manière biologique.",
+      "Le restaurant cuisine avec des produits bio et locaux."
+    ],
+    "he": [
+      "השקית מתכלה ביולוגית.",
+      "היום אני קונה ירקות אורגניים.",
+      "הסבון שלנו מיוצר באופן אורגני.",
+      "המסעדה מבשלת עם חומרי גלם אורגניים ומקומיים."
+    ],
+    "hi": [
+      "यह थैला जैव-अपघटनीय है.",
+      "आज मैं जैविक सब्जियाँ खरीद रहा हूँ.",
+      "हमारा साबुन जैविक तरीके से बनाया जाता है.",
+      "यह रेस्टोरेंट जैविक और स्थानीय सामग्री से खाना बनाता है."
+    ],
+    "hu": [
+      "A zacskó biológiailag lebomló.",
+      "Ma bio zöldséget veszek.",
+      "A szappanunk organikus eljárással készül.",
+      "Az étterem bio és helyi alapanyagokkal főz."
+    ],
+    "id": [
+      "Kantong ini dapat terurai secara hayati.",
+      "Hari ini saya membeli sayur yang ditanam secara organik.",
+      "Sabun kami diproduksi secara organik.",
+      "Restoran memasak dengan bahan organik dan lokal."
+    ],
+    "ipa": [
+      "/diː ˈtyːtə ɪst bioˈloːgɪʃ ˈapbaʊ̯baːɐ̯/",
+      "/ɪç ˈkaʊ̯fə ˈhɔʏ̯tə bioˈloːgɪʃ ˈanɡəbaʊ̯təs ɡəˈmyːzə/",
+      "/ˈʊnzərə ˈzaɪ̯fə vɪʁt bioˈloːgɪʃ ˈheːɐ̯ɡəʃtɛlt/",
+      "/das ʁɛstoˈʁɑ̃ː kɔxt bioˈloːgɪʃ ʊnt ʁeɡioˈnaːl/"
+    ],
+    "it": [
+      "Il sacchetto è biodegradabile.",
+      "Oggi compro verdure biologiche.",
+      "Il nostro sapone è realizzato con metodi biologici.",
+      "Il ristorante cucina con prodotti biologici e locali."
     ],
     "ja": [
       "その袋は生分解性です。",
@@ -865,6 +1207,83 @@
       "うちの石けんはオーガニック製法で作っています。",
       "そのレストランは有機食材と地元の食材で料理しています。"
     ],
-    "word_POS": "Adjective"
+    "ko": [
+      "그 봉지는 생분해돼요.",
+      "오늘 유기농 채소를 사요.",
+      "우리 비누는 유기농으로 만들어져요.",
+      "그 식당은 유기농 재료와 지역 재료로 요리해요."
+    ],
+    "nb": [
+      "Posen er biologisk nedbrytbar.",
+      "I dag kjøper jeg økologiske grønnsaker.",
+      "Såpen vår produseres økologisk.",
+      "Restauranten lager mat me økologiske og lokale råvarer."
+    ],
+    "nl": [
+      "De tas is biologisch afbreekbaar.",
+      "Vandaag koop ik biologisch geteelde groenten.",
+      "Onze zeep wordt biologisch gemaakt.",
+      "Het restaurant kookt met biologische og lokale ingrediënten."
+    ],
+    "pl": [
+      "Torba jest biodegradowalna.",
+      "Dziś kupuję warzywa z uprawy ekologicznej.",
+      "Nasze mydło jest produkowane w sposób ekologiczny.",
+      "Restauracja gotuje z ekologicznych i lokalnych składników."
+    ],
+    "pt": [
+      "A sacola é biodegradável.",
+      "Hoje vou comprar vegetais orgânicos.",
+      "Nosso sabonete é fabricado de forma orgânica.",
+      "O restaurante cozinha com ingredientes orgânicos e locais."
+    ],
+    "ro": [
+      "Punga este biodegradabilă.",
+      "Astăzi cumpăr legume ecologice.",
+      "Săpunul nostru este produs în mod organic.",
+      "Restaurantul gătește cu ingrediente organice și locale."
+    ],
+    "ru": [
+      "Этот пакет биоразлагаемый.",
+      "Сегодня я покупаю органические овощи.",
+      "Наше мыло производится по органическим стандартам.",
+      "В ресторане готовят из органических и местных продуктов."
+    ],
+    "sv": [
+      "Påsen är biologiskt nedbrytbar.",
+      "Idag köper jag ekologiska grönsaker.",
+      "Vår tvål tillverkas ekologiskt.",
+      "Restaurangen lagar mat med ekologiska och lokala råvaror."
+    ],
+    "tr": [
+      "Poşet biyolojik olarak parçalanabilir.",
+      "Bugün organik yetiştirilmiş sebze alıyorum.",
+      "Sabunumuz organik olarak üretiliyor.",
+      "Restoran organik ve yerel ürünlerle yemek yapıyor."
+    ],
+    "uk": [
+      "Цей пакет біорозкладний.",
+      "Сьогодні я купую органічні овочі.",
+      "Наше мило виготовляється органічним способом.",
+      "У ресторані готують з органічних і місцевих продуктів."
+    ],
+    "vi": [
+      "Túi này có thể phân hủy sinh học.",
+      "Hôm nay tôi mua rau trồng hữu cơ.",
+      "Xà phòng của chúng tôi được sản xuất theo quy trình hữu cơ.",
+      "Nhà hàng nấu bằng nguyên liệu hữu cơ và địa phương."
+    ],
+    "yue": [
+      "個袋係可生物降解。",
+      "我今日買有機菜。",
+      "我哋嘅肥皂係用有機方法製造。",
+      "嗰間餐廳用有機同本地食材煮嘢食。"
+    ],
+    "zh-Hans": [
+      "这个袋子是可生物降解的。",
+      "我今天要买有机蔬菜。",
+      "我们的肥皂是有机生产的。",
+      "这家餐厅使用有机和本地食材烹饪。"
+    ]
   }
 }

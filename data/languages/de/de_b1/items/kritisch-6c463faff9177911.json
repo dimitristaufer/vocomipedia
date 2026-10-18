@@ -44,10 +44,10 @@
   },
   "sentences": [
     {
-      "target": "Die Lage ist kritisch im Krankenhaus.",
+      "target": "Die Lage im Krankenhaus ist kritisch.",
       "reading": "/diː ˈlaːɡə ɪst ˈkʁɪtɪʃ ɪm ˈkʁaŋkənhaʊs/",
       "translations": {
-        "de": "Die Lage ist kritisch im Krankenhaus.",
+        "de": "Die Lage im Krankenhaus ist kritisch.",
         "ipa": "/diː ˈlaːɡə ɪst ˈkʁɪtɪʃ ɪm ˈkʁaŋkənhaʊs/",
         "en": "The situation is critical at the hospital.",
         "es": "La situación en el hospital es crítica.",
@@ -80,58 +80,81 @@
       "tokens": [
         {
           "surface": "Die",
-          "surface_en": "the",
-          "furigana": "[diː]",
-          "pos": "DET",
           "lemma": "der",
-          "explanation": "Definite article, nominative feminine singular; determiner of 'Lage'.",
-          "difficulty": 2
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "ART",
+          "feats": {},
+          "start": 0,
+          "end": 3,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "Lage",
-          "surface_en": "situation",
-          "furigana": "[ˈlaːɡə]",
-          "pos": "NOUN",
           "lemma": "Lage",
-          "explanation": "Common noun, nominative feminine singular; subject.",
-          "difficulty": 7
-        },
-        {
-          "surface": "ist",
-          "surface_en": "is",
-          "furigana": "[ɪst]",
-          "pos": "AUX",
-          "lemma": "sein",
-          "explanation": "Copular auxiliary, present 3rd singular; links subject to complement.",
-          "difficulty": 4
-        },
-        {
-          "surface": "kritisch",
-          "surface_en": "critical",
-          "furigana": "[ˈkʁɪtɪʃ]",
-          "pos": "ADJ",
-          "lemma": "kritisch",
-          "explanation": "Predicative adjective describing 'Lage'.",
-          "difficulty": 10,
-          "is_main_word": true
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 4,
+          "end": 8,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "im",
-          "surface_en": "in the",
-          "furigana": "[ɪm]",
+          "lemma": "in",
           "pos": "ADP",
-          "lemma": "in dem",
-          "explanation": "Preposition 'in' plus dative article 'dem'; introduces locative PP.",
-          "difficulty": 2
+          "upos": "ADP",
+          "xpos": "APPRART",
+          "feats": {},
+          "start": 9,
+          "end": 11,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "Krankenhaus.",
-          "surface_en": "hospital",
-          "furigana": "[ˈkʁaŋkn̩haʊs]",
-          "pos": "NOUN",
+          "surface": "Krankenhaus",
           "lemma": "Krankenhaus",
-          "explanation": "Common noun, dative neuter singular; object of 'im'.",
-          "difficulty": 10
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 12,
+          "end": 23,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "ist",
+          "lemma": "sein",
+          "pos": "AUX",
+          "upos": "AUX",
+          "xpos": "VAFIN",
+          "feats": {},
+          "start": 24,
+          "end": 27,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "kritisch",
+          "lemma": "kritisch",
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "ADJD",
+          "feats": {},
+          "start": 28,
+          "end": 36,
+          "analyzer": "spacy_de_core_news_lg",
+          "is_main_word": true
+        },
+        {
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 36,
+          "end": 37,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 5.83
@@ -142,7 +165,7 @@
       "translations": {
         "de": "Meine Mutter ist kritisch beim Essen.",
         "ipa": "/ˈmaɪ̯nə ˈmʊtɐ ɪst ˈkʁɪtɪʃ baɪ̯m ˈʔɛsn̩/",
-        "en": "My mother is critical about the food.",
+        "en": "My mother is picky about food.",
         "es": "Mi madre es muy exigente con la comida.",
         "fr": "Ma mère est difficile avec la nourriture.",
         "it": "Mia madre è esigente con il cibo.",
@@ -163,7 +186,7 @@
         "el": "Η μητέρα μου είναι απαιτητική με το φαγητό.",
         "nb": "Moren min er kresen på mat.",
         "id": "Ibu saya cukup pemilih soal makanan.",
-        "sv": "Min mamma är kräsen me mat.",
+        "sv": "Min mamma är kräsen med mat.",
         "ro": "Mama mea este exigentă cu mâncarea.",
         "cs": "Moje máma je vybíravá v jídle.",
         "da": "Min mor er kræsen med mad.",
@@ -328,7 +351,7 @@
       "translations": {
         "de": "Der Chef wirkt heute im Meeting kritisch.",
         "ipa": "/deːɐ̯ ʃɛf vɪʁkt ˈhɔʏ̯tə ɪm ˈmiːtɪŋ ˈkʁɪtɪʃ/",
-        "en": "The boss seems critical today in the meeting.",
+        "en": "The boss seems critical in the meeting today.",
         "es": "El jefe parece muy exigente hoy en la reunión.",
         "fr": "Le patron a l’air sévère aujourd’hui en réunion.",
         "it": "Il capo oggi sembra molto critico in riunione.",
@@ -351,7 +374,7 @@
         "id": "Bos terlihat kritis hari ini di rapat.",
         "sv": "Chefen verkar kritisk i mötet idag.",
         "ro": "Șeful pare critic astăzi la ședință.",
-        "cs": "Šéf dnes na schůzce působei kpиticky.",
+        "cs": "Šéf dnes na schůzce působí kriticky.",
         "da": "Chefen virker kritisk i mødet i dag.",
         "fi": "Esimies vaikuttaa tänään kokouksessa kriittiseltä.",
         "ja": "上司は今日の会議で厳しい感じです。"
@@ -436,8 +459,292 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-15T01:36:19Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:De b1/6c463faff9177911",
+      "revision_id": 85287,
+      "parent_revision_id": 16770,
+      "revision_timestamp_utc": "2026-10-15T01:36:19Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Improve the German word order and correct the awkward or corrupted translations.",
+      "pulled_utc": "2026-10-17T07:06:39Z",
+      "applied_utc": "2026-10-17T07:06:53Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-2cd87261a72f31c6",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_b1:6c463faff9177911",
+        "pack_code": "de_b1",
+        "entry_id": "kritisch",
+        "language": "de",
+        "sentence_index": 1,
+        "old_sentence": "Die Lage ist kritisch im Krankenhaus.",
+        "old_translations": {
+          "de": "Die Lage ist kritisch im Krankenhaus.",
+          "ipa": "/diː ˈlaːɡə ɪst ˈkʁɪtɪʃ ɪm ˈkʁaŋkənhaʊs/",
+          "en": "The situation is critical at the hospital.",
+          "es": "La situación en el hospital es crítica.",
+          "fr": "La situation est critique à l’hôpital.",
+          "it": "La situazione in ospedale è critica.",
+          "ko": "병원 상황이 위급합니다.",
+          "zh-Hans": "医院的情况很危急。",
+          "yue": "醫院嘅情況十分危急。",
+          "ru": "Ситуация в больнице критическая.",
+          "pt": "A situação no hospital é crítica.",
+          "he": "המצב בבית החולים קריטי.",
+          "tr": "Hastanedeki durum kritik.",
+          "vi": "Tình hình ở bệnh viện đang rất nghiêm trọng.",
+          "ar": "الوضع في المستشفى حرج.",
+          "nl": "De situatie in het ziekenhuis is kritiek.",
+          "uk": "Ситуація в лікарні критична.",
+          "hu": "A helyzet a kórházban kritikus.",
+          "hi": "अस्पताल में स्थिति गंभीर है.",
+          "pl": "Sytuacja w szpitalu jest krytyczna.",
+          "el": "Η κατάσταση στο νοσοκομείο είναι κρίσιμη.",
+          "nb": "Situasjonen på sykehuset er kritisk.",
+          "id": "Situasi di rumah sakit sangat genting.",
+          "sv": "Situationen på sjukhuset är kritisk.",
+          "ro": "Situația de la spital este critică.",
+          "cs": "Situace v nemocnici je kritická.",
+          "da": "Situationen på hospitalet er kritisk.",
+          "fi": "Tilanne sairaalassa on kriittinen.",
+          "ja": "病院の状況は深刻です。"
+        },
+        "proposed_sentence": "Die Lage im Krankenhaus ist kritisch.",
+        "proposed_translations": {
+          "de": "Die Lage im Krankenhaus ist kritisch.",
+          "ipa": "/diː ˈlaːɡə ɪst ˈkʁɪtɪʃ ɪm ˈkʁaŋkənhaʊs/",
+          "en": "The situation is critical at the hospital.",
+          "es": "La situación en el hospital es crítica.",
+          "fr": "La situation est critique à l’hôpital.",
+          "it": "La situazione in ospedale è critica.",
+          "ko": "병원 상황이 위급합니다.",
+          "zh-Hans": "医院的情况很危急。",
+          "yue": "醫院嘅情況十分危急。",
+          "ru": "Ситуация в больнице критическая.",
+          "pt": "A situação no hospital é crítica.",
+          "he": "המצב בבית החולים קריטי.",
+          "tr": "Hastanedeki durum kritik.",
+          "vi": "Tình hình ở bệnh viện đang rất nghiêm trọng.",
+          "ar": "الوضع في المستشفى حرج.",
+          "nl": "De situatie in het ziekenhuis is kritiek.",
+          "uk": "Ситуація в лікарні критична.",
+          "hu": "A helyzet a kórházban kritikus.",
+          "hi": "अस्पताल में स्थिति गंभीर है.",
+          "pl": "Sytuacja w szpitalu jest krytyczna.",
+          "el": "Η κατάσταση στο νοσοκομείο είναι κρίσιμη.",
+          "nb": "Situasjonen på sykehuset er kritisk.",
+          "id": "Situasi di rumah sakit sangat genting.",
+          "sv": "Situationen på sjukhuset är kritisk.",
+          "ro": "Situația de la spital este critică.",
+          "cs": "Situace v nemocnici je kritická.",
+          "da": "Situationen på hospitalet er kritisk.",
+          "fi": "Tilanne sairaalassa on kriittinen.",
+          "ja": "病院の状況は深刻です。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Die Lage im Krankenhaus ist kritisch.",
+        "old_japanese": "Die Lage ist kritisch im Krankenhaus.",
+        "old_english": "The situation is critical at the hospital.",
+        "proposed_japanese": "Die Lage im Krankenhaus ist kritisch.",
+        "proposed_english": "The situation is critical at the hospital.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Die Lage im Krankenhaus ist kritisch.",
+          "tokens": [
+            {
+              "surface": "Die",
+              "lemma": "der",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "ART",
+              "feats": {},
+              "start": 0,
+              "end": 3,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Lage",
+              "lemma": "Lage",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 4,
+              "end": 8,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "im",
+              "lemma": "in",
+              "pos": "ADP",
+              "upos": "ADP",
+              "xpos": "APPRART",
+              "feats": {},
+              "start": 9,
+              "end": 11,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Krankenhaus",
+              "lemma": "Krankenhaus",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 12,
+              "end": 23,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "ist",
+              "lemma": "sein",
+              "pos": "AUX",
+              "upos": "AUX",
+              "xpos": "VAFIN",
+              "feats": {},
+              "start": 24,
+              "end": 27,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "kritisch",
+              "lemma": "kritisch",
+              "pos": "ADV",
+              "upos": "ADV",
+              "xpos": "ADJD",
+              "feats": {},
+              "start": 28,
+              "end": 36,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 36,
+              "end": 37,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Die",
+            "lemma": "der",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Lage",
+            "lemma": "Lage",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 4,
+            "end": 8,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "im",
+            "lemma": "in",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPRART",
+            "feats": {},
+            "start": 9,
+            "end": 11,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Krankenhaus",
+            "lemma": "Krankenhaus",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 12,
+            "end": 23,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "ist",
+            "lemma": "sein",
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "VAFIN",
+            "feats": {},
+            "start": 24,
+            "end": 27,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "kritisch",
+            "lemma": "kritisch",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADJD",
+            "feats": {},
+            "start": 28,
+            "end": 36,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 36,
+            "end": 37,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:06:39Z",
+        "updated_utc": "2026-10-17T07:07:05Z",
+        "applied_utc": "2026-10-17T07:07:05Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:07:05Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -449,34 +756,6 @@
     "word": "kritisch",
     "word_reading": "",
     "word_label": "Adjektiv",
-    "word_en": "critical; serious",
-    "word_es": "crítico; grave",
-    "word_fr": "critique; grave",
-    "word_it": "critico; grave",
-    "word_ko": "비판적인; 위태로운",
-    "word_zh-Hans": "批判的; 危急的",
-    "word_yue": "批判的; 危急的",
-    "word_ru": "критический; тяжёлый",
-    "word_pt": "crítico; grave",
-    "word_he": "ביקורתי; חמור",
-    "word_tr": "eleştirel; kritik",
-    "word_vi": "phê phán; nghiêm trọng",
-    "word_ar": "نقدي; خطير",
-    "word_nl": "kritisch; ernstig",
-    "word_uk": "критичний; серйозний",
-    "word_hu": "kritikus; súlyos",
-    "word_hi": "आलोचनात्मक; गंभीर",
-    "word_pl": "krytyczny; poważny",
-    "word_el": "κριτικός; σοβαρός",
-    "word_nb": "kritisk; alvorlig",
-    "word_id": "kritis; serius",
-    "word_sv": "kritisk; allvarlig",
-    "word_ro": "critic; grav",
-    "word_cs": "kritický; vážný",
-    "word_da": "kritisk; alvorlig",
-    "word_fi": "kriittinen; vakava",
-    "word_ja": "批判的な; 深刻な",
-    "word_de": "kritisch",
     "comic_difficulty": 6.28,
     "jp": [
       "Die Lage ist kritisch im Krankenhaus.",
@@ -490,82 +769,87 @@
       "/ɪç bɪn ˈkʁɪtɪʃ ɡeːɡn̩ˈyːbɐ ˈnɔʏ̯ən ɛps/",
       "/deːɐ̯ ʃɛf vɪʁkt ˈhɔʏ̯tə ɪm ˈmiːtɪŋ ˈkʁɪtɪʃ/"
     ],
-    "de": [
-      "Die Lage ist kritisch im Krankenhaus.",
-      "Meine Mutter ist kritisch beim Essen.",
-      "Ich bin kritisch gegenüber neuen Apps.",
-      "Der Chef wirkt heute im Meeting kritisch."
-    ],
-    "ipa": [
-      "/diː ˈlaːɡə ɪst ˈkʁɪtɪʃ ɪm ˈkʁaŋkənhaʊs/",
-      "/ˈmaɪ̯nə ˈmʊtɐ ɪst ˈkʁɪtɪʃ baɪ̯m ˈʔɛsn̩/",
-      "/ɪç bɪn ˈkʁɪtɪʃ ɡeːɡn̩ˈyːbɐ ˈnɔʏ̯ən ɛps/",
-      "/deːɐ̯ ʃɛf vɪʁkt ˈhɔʏ̯tə ɪm ˈmiːtɪŋ ˈkʁɪtɪʃ/"
-    ],
-    "en": [
-      "The situation is critical at the hospital.",
-      "My mother is critical about the food.",
-      "I’m critical of new apps.",
-      "The boss seems critical today in the meeting."
-    ],
     "pos_analysis": [
       {
-        "sentence": "Die Lage ist kritisch im Krankenhaus.",
+        "sentence": "Die Lage im Krankenhaus ist kritisch.",
         "tokens": [
           {
             "surface": "Die",
-            "surface_en": "the",
-            "furigana": "[diː]",
-            "pos": "DET",
             "lemma": "der",
-            "explanation": "Definite article, nominative feminine singular; determiner of 'Lage'.",
-            "difficulty": 2
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "Lage",
-            "surface_en": "situation",
-            "furigana": "[ˈlaːɡə]",
-            "pos": "NOUN",
             "lemma": "Lage",
-            "explanation": "Common noun, nominative feminine singular; subject.",
-            "difficulty": 7
-          },
-          {
-            "surface": "ist",
-            "surface_en": "is",
-            "furigana": "[ɪst]",
-            "pos": "AUX",
-            "lemma": "sein",
-            "explanation": "Copular auxiliary, present 3rd singular; links subject to complement.",
-            "difficulty": 4
-          },
-          {
-            "surface": "kritisch",
-            "surface_en": "critical",
-            "furigana": "[ˈkʁɪtɪʃ]",
-            "pos": "ADJ",
-            "lemma": "kritisch",
-            "explanation": "Predicative adjective describing 'Lage'.",
-            "difficulty": 10,
-            "is_main_word": true
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 4,
+            "end": 8,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "im",
-            "surface_en": "in the",
-            "furigana": "[ɪm]",
+            "lemma": "in",
             "pos": "ADP",
-            "lemma": "in dem",
-            "explanation": "Preposition 'in' plus dative article 'dem'; introduces locative PP.",
-            "difficulty": 2
+            "upos": "ADP",
+            "xpos": "APPRART",
+            "feats": {},
+            "start": 9,
+            "end": 11,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "Krankenhaus.",
-            "surface_en": "hospital",
-            "furigana": "[ˈkʁaŋkn̩haʊs]",
-            "pos": "NOUN",
+            "surface": "Krankenhaus",
             "lemma": "Krankenhaus",
-            "explanation": "Common noun, dative neuter singular; object of 'im'.",
-            "difficulty": 10
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 12,
+            "end": 23,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "ist",
+            "lemma": "sein",
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "VAFIN",
+            "feats": {},
+            "start": 24,
+            "end": 27,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "kritisch",
+            "lemma": "kritisch",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADJD",
+            "feats": {},
+            "start": 28,
+            "end": 36,
+            "analyzer": "spacy_de_core_news_lg",
+            "is_main_word": true
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 36,
+            "end": 37,
+            "analyzer": "spacy_de_core_news_lg"
           }
         ],
         "difficulty_aggregated": 5.83
@@ -763,143 +1047,47 @@
         "difficulty_aggregated": 6.43
       }
     ],
-    "es": [
-      "La situación en el hospital es crítica.",
-      "Mi madre es muy exigente con la comida.",
-      "Soy escéptico con las aplicaciones nuevas.",
-      "El jefe parece muy exigente hoy en la reunión."
-    ],
-    "fr": [
-      "La situation est critique à l’hôpital.",
-      "Ma mère est difficile avec la nourriture.",
-      "Je me méfie des nouvelles applications.",
-      "Le patron a l’air sévère aujourd’hui en réunion."
-    ],
-    "it": [
-      "La situazione in ospedale è critica.",
-      "Mia madre è esigente con il cibo.",
-      "Sono diffidente verso le nuove app.",
-      "Il capo oggi sembra molto critico in riunione."
-    ],
-    "ko": [
-      "병원 상황이 위급합니다.",
-      "우리 엄마는 음식에 까다로워요.",
-      "나는 새로운 앱에 대해 회의적이에요.",
-      "오늘 회의에서 상사가 까다롭게 보여요."
-    ],
-    "zh-Hans": [
-      "医院的情况很危急。",
-      "我妈妈对食物很挑剔。",
-      "我对新应用持怀疑态度。",
-      "老板今天在会议上显得很挑剔。"
-    ],
-    "yue": [
-      "醫院嘅情況十分危急。",
-      "我媽對食物好挑剔。",
-      "我對新嘅應用程式抱住懷疑態度。",
-      "老闆今日喺會議上顯得好挑剔。"
-    ],
-    "ru": [
-      "Ситуация в больнице критическая.",
-      "Моя мама придирчива к еде.",
-      "Я скептически отношусь к новым приложениям.",
-      "Начальник сегодня на совещании ведёт себя критично."
-    ],
-    "pt": [
-      "A situação no hospital é crítica.",
-      "Minha mãe é exigente com a comida.",
-      "Sou cético em relação aos novos aplicativos.",
-      "O chefe parece crítico hoje na reunião."
-    ],
-    "he": [
-      "המצב בבית החולים קריטי.",
-      "אמא שלי בררנית באוכל.",
-      "אני ביקורתי כלפי אפליקציות חדשות.",
-      "הבוס נראה ביקורתי היום בפגישה."
-    ],
-    "tr": [
-      "Hastanedeki durum kritik.",
-      "Annem yemek konusunda titiz.",
-      "Yeni uygulamalara karşı şüpheciyim.",
-      "Patron bugün toplantıda eleştirel görünüyor."
-    ],
-    "vi": [
-      "Tình hình ở bệnh viện đang rất nghiêm trọng.",
-      "Mẹ tôi rất khó tính về đồ ăn.",
-      "Tôi hoài nghi về các ứng dụng mới.",
-      "Sếp có vẻ rất khó tính trong cuộc họp hôm nay."
-    ],
+    "word_POS": "Adjective",
+    "entry_id": "kritisch",
+    "word_en": "critical; serious",
+    "word_es": "crítico; grave",
+    "word_fr": "critique; grave",
+    "word_it": "critico; grave",
+    "word_ko": "비판적인; 위태로운",
+    "word_zh-Hans": "批判的; 危急的",
+    "word_yue": "批判的; 危急的",
+    "word_ru": "критический; тяжёлый",
+    "word_pt": "crítico; grave",
+    "word_he": "ביקורתי; חמור",
+    "word_tr": "eleştirel; kritik",
+    "word_vi": "phê phán; nghiêm trọng",
+    "word_ar": "نقدي; خطير",
+    "word_nl": "kritisch; ernstig",
+    "word_uk": "критичний; серйозний",
+    "word_hu": "kritikus; súlyos",
+    "word_hi": "आलोचनात्मक; गंभीर",
+    "word_pl": "krytyczny; poważny",
+    "word_el": "κριτικός; σοβαρός",
+    "word_nb": "kritisk; alvorlig",
+    "word_id": "kritis; serius",
+    "word_sv": "kritisk; allvarlig",
+    "word_ro": "critic; grav",
+    "word_cs": "kritický; vážný",
+    "word_da": "kritisk; alvorlig",
+    "word_fi": "kriittinen; vakava",
+    "word_ja": "批判的な; 深刻な",
+    "word_de": "kritisch",
     "ar": [
       "الوضع في المستشفى حرج.",
       "والدتي صعبة الإرضاء في الطعام.",
       "أنا متشكك تجاه التطبيقات الجديدة.",
       "المدير يبدو انتقاديًا اليوم في الاجتماع."
     ],
-    "nl": [
-      "De situatie in het ziekenhuis is kritiek.",
-      "Mijn moeder is kieskeurig met eten.",
-      "Ik sta sceptisch tegenover nieuwe apps.",
-      "De baas lijkt vandaag kritisch in de vergadering."
-    ],
-    "uk": [
-      "Ситуація в лікарні критична.",
-      "Моя мама перебірлива щодо їжі.",
-      "Я скептично ставлюся до нових застосунків.",
-      "Керівник сьогодні на нараді налаштований критично."
-    ],
-    "hu": [
-      "A helyzet a kórházban kritikus.",
-      "Anyukám válogatós az ételekkel.",
-      "Skeptikus vagyok az új alkalmazásokkal kapcsolatban.",
-      "A főnök ma a megbeszélésen kritikusan viselkedik."
-    ],
-    "hi": [
-      "अस्पताल में स्थिति गंभीर है.",
-      "मेरी माँ खाने के मामले में बहुत चुनिंदा हैं.",
-      "मैं नई ऐप्स के प्रति संदेहपूर्ण हूँ.",
-      "आज की बैठक में बॉस आलोचनात्मक लग रहा है."
-    ],
-    "pl": [
-      "Sytuacja w szpitalu jest krytyczna.",
-      "Moja mama jest wybredna w kwestii jedzenia.",
-      "Jestem sceptyczny wobec nowych aplikacji.",
-      "Szef dziś na spotkaniu wydaje się bardzo krytyczny."
-    ],
-    "el": [
-      "Η κατάσταση στο νοσοκομείο είναι κρίσιμη.",
-      "Η μητέρα μου είναι απαιτητική με το φαγητό.",
-      "Είμαι επιφυλακτικός με τις νέες εφαρμογές.",
-      "Το αφεντικό φαίνεται επικριτικό σήμερα στη συνάντηση."
-    ],
-    "nb": [
-      "Situasjonen på sykehuset er kritisk.",
-      "Moren min er kresen på mat.",
-      "Jeg er skeptisk til nye apper.",
-      "Sjefen virker kritisk i møtet i dag."
-    ],
-    "id": [
-      "Situasi di rumah sakit sangat genting.",
-      "Ibu saya cukup pemilih soal makanan.",
-      "Saya skeptis terhadap aplikasi baru.",
-      "Bos terlihat kritis hari ini di rapat."
-    ],
-    "sv": [
-      "Situationen på sjukhuset är kritisk.",
-      "Min mamma är kräsen me mat.",
-      "Jag är skeptisk till nya appar.",
-      "Chefen verkar kritisk i mötet idag."
-    ],
-    "ro": [
-      "Situația de la spital este critică.",
-      "Mama mea este exigentă cu mâncarea.",
-      "Sunt sceptic față de aplicațiile noi.",
-      "Șeful pare critic astăzi la ședință."
-    ],
     "cs": [
       "Situace v nemocnici je kritická.",
       "Moje máma je vybíravá v jídle.",
       "Jsem skeptický vůči novým aplikacím.",
-      "Šéf dnes na schůzce působei kpиticky."
+      "Šéf dnes na schůzce působí kriticky."
     ],
     "da": [
       "Situationen på hospitalet er kritisk.",
@@ -907,11 +1095,77 @@
       "Jeg er skeptisk over for nye apps.",
       "Chefen virker kritisk i mødet i dag."
     ],
+    "de": [
+      "Die Lage ist kritisch im Krankenhaus.",
+      "Meine Mutter ist kritisch beim Essen.",
+      "Ich bin kritisch gegenüber neuen Apps.",
+      "Der Chef wirkt heute im Meeting kritisch."
+    ],
+    "el": [
+      "Η κατάσταση στο νοσοκομείο είναι κρίσιμη.",
+      "Η μητέρα μου είναι απαιτητική με το φαγητό.",
+      "Είμαι επιφυλακτικός με τις νέες εφαρμογές.",
+      "Το αφεντικό φαίνεται επικριτικό σήμερα στη συνάντηση."
+    ],
+    "en": [
+      "The situation is critical at the hospital.",
+      "My mother is picky about food.",
+      "I’m critical of new apps.",
+      "The boss seems critical in the meeting today."
+    ],
+    "es": [
+      "La situación en el hospital es crítica.",
+      "Mi madre es muy exigente con la comida.",
+      "Soy escéptico con las aplicaciones nuevas.",
+      "El jefe parece muy exigente hoy en la reunión."
+    ],
     "fi": [
       "Tilanne sairaalassa on kriittinen.",
       "Äitini on nirso ruoan suhteen.",
       "Suhtaudun uusiin sovelluksiin kriittisesti.",
       "Esimies vaikuttaa tänään kokouksessa kriittiseltä."
+    ],
+    "fr": [
+      "La situation est critique à l’hôpital.",
+      "Ma mère est difficile avec la nourriture.",
+      "Je me méfie des nouvelles applications.",
+      "Le patron a l’air sévère aujourd’hui en réunion."
+    ],
+    "he": [
+      "המצב בבית החולים קריטי.",
+      "אמא שלי בררנית באוכל.",
+      "אני ביקורתי כלפי אפליקציות חדשות.",
+      "הבוס נראה ביקורתי היום בפגישה."
+    ],
+    "hi": [
+      "अस्पताल में स्थिति गंभीर है.",
+      "मेरी माँ खाने के मामले में बहुत चुनिंदा हैं.",
+      "मैं नई ऐप्स के प्रति संदेहपूर्ण हूँ.",
+      "आज की बैठक में बॉस आलोचनात्मक लग रहा है."
+    ],
+    "hu": [
+      "A helyzet a kórházban kritikus.",
+      "Anyukám válogatós az ételekkel.",
+      "Skeptikus vagyok az új alkalmazásokkal kapcsolatban.",
+      "A főnök ma a megbeszélésen kritikusan viselkedik."
+    ],
+    "id": [
+      "Situasi di rumah sakit sangat genting.",
+      "Ibu saya cukup pemilih soal makanan.",
+      "Saya skeptis terhadap aplikasi baru.",
+      "Bos terlihat kritis hari ini di rapat."
+    ],
+    "ipa": [
+      "/diː ˈlaːɡə ɪst ˈkʁɪtɪʃ ɪm ˈkʁaŋkənhaʊs/",
+      "/ˈmaɪ̯nə ˈmʊtɐ ɪst ˈkʁɪtɪʃ baɪ̯m ˈʔɛsn̩/",
+      "/ɪç bɪn ˈkʁɪtɪʃ ɡeːɡn̩ˈyːbɐ ˈnɔʏ̯ən ɛps/",
+      "/deːɐ̯ ʃɛf vɪʁkt ˈhɔʏ̯tə ɪm ˈmiːtɪŋ ˈkʁɪtɪʃ/"
+    ],
+    "it": [
+      "La situazione in ospedale è critica.",
+      "Mia madre è esigente con il cibo.",
+      "Sono diffidente verso le nuove app.",
+      "Il capo oggi sembra molto critico in riunione."
     ],
     "ja": [
       "病院の状況は深刻です。",
@@ -919,6 +1173,83 @@
       "新しいアプリには懐疑的です。",
       "上司は今日の会議で厳しい感じです。"
     ],
-    "word_POS": "Adjective"
+    "ko": [
+      "병원 상황이 위급합니다.",
+      "우리 엄마는 음식에 까다로워요.",
+      "나는 새로운 앱에 대해 회의적이에요.",
+      "오늘 회의에서 상사가 까다롭게 보여요."
+    ],
+    "nb": [
+      "Situasjonen på sykehuset er kritisk.",
+      "Moren min er kresen på mat.",
+      "Jeg er skeptisk til nye apper.",
+      "Sjefen virker kritisk i møtet i dag."
+    ],
+    "nl": [
+      "De situatie in het ziekenhuis is kritiek.",
+      "Mijn moeder is kieskeurig met eten.",
+      "Ik sta sceptisch tegenover nieuwe apps.",
+      "De baas lijkt vandaag kritisch in de vergadering."
+    ],
+    "pl": [
+      "Sytuacja w szpitalu jest krytyczna.",
+      "Moja mama jest wybredna w kwestii jedzenia.",
+      "Jestem sceptyczny wobec nowych aplikacji.",
+      "Szef dziś na spotkaniu wydaje się bardzo krytyczny."
+    ],
+    "pt": [
+      "A situação no hospital é crítica.",
+      "Minha mãe é exigente com a comida.",
+      "Sou cético em relação aos novos aplicativos.",
+      "O chefe parece crítico hoje na reunião."
+    ],
+    "ro": [
+      "Situația de la spital este critică.",
+      "Mama mea este exigentă cu mâncarea.",
+      "Sunt sceptic față de aplicațiile noi.",
+      "Șeful pare critic astăzi la ședință."
+    ],
+    "ru": [
+      "Ситуация в больнице критическая.",
+      "Моя мама придирчива к еде.",
+      "Я скептически отношусь к новым приложениям.",
+      "Начальник сегодня на совещании ведёт себя критично."
+    ],
+    "sv": [
+      "Situationen på sjukhuset är kritisk.",
+      "Min mamma är kräsen med mat.",
+      "Jag är skeptisk till nya appar.",
+      "Chefen verkar kritisk i mötet idag."
+    ],
+    "tr": [
+      "Hastanedeki durum kritik.",
+      "Annem yemek konusunda titiz.",
+      "Yeni uygulamalara karşı şüpheciyim.",
+      "Patron bugün toplantıda eleştirel görünüyor."
+    ],
+    "uk": [
+      "Ситуація в лікарні критична.",
+      "Моя мама перебірлива щодо їжі.",
+      "Я скептично ставлюся до нових застосунків.",
+      "Керівник сьогодні на нараді налаштований критично."
+    ],
+    "vi": [
+      "Tình hình ở bệnh viện đang rất nghiêm trọng.",
+      "Mẹ tôi rất khó tính về đồ ăn.",
+      "Tôi hoài nghi về các ứng dụng mới.",
+      "Sếp có vẻ rất khó tính trong cuộc họp hôm nay."
+    ],
+    "yue": [
+      "醫院嘅情況十分危急。",
+      "我媽對食物好挑剔。",
+      "我對新嘅應用程式抱住懷疑態度。",
+      "老闆今日喺會議上顯得好挑剔。"
+    ],
+    "zh-Hans": [
+      "医院的情况很危急。",
+      "我妈妈对食物很挑剔。",
+      "我对新应用持怀疑态度。",
+      "老板今天在会议上显得很挑剔。"
+    ]
   }
 }

@@ -85,8 +85,7 @@
           "pos": "PRON",
           "lemma": "es",
           "explanation": "Expletive/dummy subject pronoun anticipating the infinitival clause.",
-          "difficulty": 2,
-          "is_main_word": false
+          "difficulty": 2
         },
         {
           "surface": "ist",
@@ -95,8 +94,7 @@
           "pos": "AUX",
           "lemma": "sein",
           "explanation": "Finite 3rd person singular present of 'sein' as copula.",
-          "difficulty": 4,
-          "is_main_word": false
+          "difficulty": 4
         },
         {
           "surface": "schwer",
@@ -105,8 +103,7 @@
           "pos": "ADJ",
           "lemma": "schwer",
           "explanation": "Predicative adjective as subject complement.",
-          "difficulty": 7,
-          "is_main_word": false
+          "difficulty": 7
         },
         {
           "surface": "dir",
@@ -115,8 +112,7 @@
           "pos": "PRON",
           "lemma": "du",
           "explanation": "Dative pronoun, indirect object of 'raten'.",
-          "difficulty": 4,
-          "is_main_word": false
+          "difficulty": 4
         },
         {
           "surface": "zu",
@@ -125,8 +121,7 @@
           "pos": "PART",
           "lemma": "zu",
           "explanation": "Infinitive marker for 'raten'.",
-          "difficulty": 2,
-          "is_main_word": false
+          "difficulty": 2
         },
         {
           "surface": "raten.",
@@ -183,8 +178,7 @@
           "pos": "PRON",
           "lemma": "ich",
           "explanation": "First person nominative pronoun as subject.",
-          "difficulty": 2,
-          "is_main_word": false
+          "difficulty": 2
         },
         {
           "surface": "kann",
@@ -193,8 +187,7 @@
           "pos": "AUX",
           "lemma": "können",
           "explanation": "Modal auxiliary selecting a bare infinitive.",
-          "difficulty": 7,
-          "is_main_word": false
+          "difficulty": 7
         },
         {
           "surface": "dir",
@@ -203,8 +196,7 @@
           "pos": "PRON",
           "lemma": "du",
           "explanation": "Dative pronoun, indirect object of 'raten'.",
-          "difficulty": 4,
-          "is_main_word": false
+          "difficulty": 4
         },
         {
           "surface": "nur",
@@ -213,8 +205,7 @@
           "pos": "ADV",
           "lemma": "nur",
           "explanation": "Restrictive adverb narrowing scope.",
-          "difficulty": 2,
-          "is_main_word": false
+          "difficulty": 2
         },
         {
           "surface": "raten.",
@@ -230,10 +221,10 @@
       "difficulty": 4.4
     },
     {
-      "target": "Er kann mir gut raten.",
+      "target": "Er kann mich gut beraten.",
       "reading": "/eːɐ̯ kan miːɐ̯ ɡuːt ˈʁaːtən/",
       "translations": {
-        "de": "Er kann mir gut raten.",
+        "de": "Er kann mich gut beraten.",
         "ipa": "/eːɐ̯ kan miːɐ̯ ɡuːt ˈʁaːtən/",
         "en": "He can advise me well.",
         "es": "Él me da buenos consejos.",
@@ -266,62 +257,78 @@
       "tokens": [
         {
           "surface": "Er",
-          "surface_en": "he",
-          "furigana": "[eːɐ̯]",
-          "pos": "PRON",
           "lemma": "er",
-          "explanation": "Third person nominative pronoun as subject.",
-          "difficulty": 2,
-          "is_main_word": false
+          "pos": "PRON",
+          "upos": "PRON",
+          "xpos": "PPER",
+          "feats": {},
+          "start": 0,
+          "end": 2,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "kann",
-          "surface_en": "can",
-          "furigana": "[kan]",
-          "pos": "AUX",
           "lemma": "können",
-          "explanation": "Modal auxiliary selecting a bare infinitive.",
-          "difficulty": 7,
-          "is_main_word": false
+          "pos": "AUX",
+          "upos": "AUX",
+          "xpos": "VMFIN",
+          "feats": {},
+          "start": 3,
+          "end": 7,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "mir",
-          "surface_en": "to me",
-          "furigana": "[miːɐ̯]",
+          "surface": "mich",
+          "lemma": "mich",
           "pos": "PRON",
-          "lemma": "ich",
-          "explanation": "Dative pronoun, indirect object of 'raten'.",
-          "difficulty": 4,
-          "is_main_word": false
+          "upos": "PRON",
+          "xpos": "PPER",
+          "feats": {},
+          "start": 8,
+          "end": 12,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "gut",
-          "surface_en": "well",
-          "furigana": "[ɡuːt]",
-          "pos": "ADV",
           "lemma": "gut",
-          "explanation": "Manner adverb modifying the verb.",
-          "difficulty": 4,
-          "is_main_word": false
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "ADJD",
+          "feats": {},
+          "start": 13,
+          "end": 16,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "raten.",
-          "surface_en": "advise",
-          "furigana": "[ˈʁaːtən]",
+          "surface": "beraten",
+          "lemma": "beraten",
           "pos": "VERB",
-          "lemma": "raten",
-          "explanation": "Bare infinitive verb governed by the modal.",
-          "difficulty": 7,
-          "is_main_word": true
+          "upos": "VERB",
+          "xpos": "VVINF",
+          "feats": {},
+          "start": 17,
+          "end": 24,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 24,
+          "end": 25,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 4.8
     },
     {
-      "target": "Ich lasse mir vom Chef etwas raten.",
+      "target": "Ich lasse mich vom Chef beraten.",
       "reading": "/ɪç ˈlasə miːɐ̯ fɔm ʃɛf ˈʁaːtən/",
       "translations": {
-        "de": "Ich lasse mir vom Chef etwas raten.",
+        "de": "Ich lasse mich vom Chef beraten.",
         "ipa": "/ɪç ˈlasə miːɐ̯ fɔm ʃɛf ˈʁaːtən/",
         "en": "I’m getting advice from the boss.",
         "es": "Le estoy pidiendo consejo a mi jefe.",
@@ -354,73 +361,80 @@
       "tokens": [
         {
           "surface": "Ich",
-          "surface_en": "I",
-          "furigana": "[ɪç]",
-          "pos": "PRON",
           "lemma": "ich",
-          "explanation": "First person nominative pronoun as subject.",
-          "difficulty": 2,
-          "is_main_word": false
+          "pos": "PRON",
+          "upos": "PRON",
+          "xpos": "PPER",
+          "feats": {},
+          "start": 0,
+          "end": 3,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "lasse",
-          "surface_en": "let/have",
-          "furigana": "[ˈlasə]",
-          "pos": "VERB",
           "lemma": "lassen",
-          "explanation": "Causative auxiliary selecting a bare infinitive.",
-          "difficulty": 7,
-          "is_main_word": false
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VVFIN",
+          "feats": {},
+          "start": 4,
+          "end": 9,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "mir",
-          "surface_en": "to me",
-          "furigana": "[miːɐ̯]",
+          "surface": "mich",
+          "lemma": "sich",
           "pos": "PRON",
-          "lemma": "ich",
-          "explanation": "Dative pronoun, beneficiary of the advising.",
-          "difficulty": 4,
-          "is_main_word": false
+          "upos": "PRON",
+          "xpos": "PRF",
+          "feats": {},
+          "start": 10,
+          "end": 14,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "vom",
-          "surface_en": "from the",
-          "furigana": "[fɔm]",
+          "lemma": "von",
           "pos": "ADP",
-          "lemma": "von dem",
-          "explanation": "Preposition + article contraction marking the source.",
-          "difficulty": 2,
-          "is_main_word": false
+          "upos": "ADP",
+          "xpos": "APPRART",
+          "feats": {},
+          "start": 15,
+          "end": 18,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "Chef",
-          "surface_en": "boss",
-          "furigana": "[ʃɛf]",
-          "pos": "NOUN",
           "lemma": "Chef",
-          "explanation": "Noun, object of the preposition indicating the advisor.",
-          "difficulty": 7,
-          "is_main_word": false
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 19,
+          "end": 23,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "etwas",
-          "surface_en": "something",
-          "furigana": "[ˈɛtvas]",
-          "pos": "PRON",
-          "lemma": "etwas",
-          "explanation": "Indefinite pronoun as placeholder object.",
-          "difficulty": 4,
-          "is_main_word": false
-        },
-        {
-          "surface": "raten.",
-          "surface_en": "advise",
-          "furigana": "[ˈʁaːtən]",
+          "surface": "beraten",
+          "lemma": "beraten",
           "pos": "VERB",
-          "lemma": "raten",
-          "explanation": "Bare infinitive complement of 'lassen'.",
-          "difficulty": 7,
-          "is_main_word": true
+          "upos": "VERB",
+          "xpos": "VVINF",
+          "feats": {},
+          "start": 24,
+          "end": 31,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 31,
+          "end": 32,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 4.71
@@ -467,8 +481,7 @@
           "pos": "PRON",
           "lemma": "ich",
           "explanation": "Personal pronoun; subject.",
-          "difficulty": 2,
-          "is_main_word": false
+          "difficulty": 2
         },
         {
           "surface": "würde",
@@ -477,8 +490,7 @@
           "pos": "AUX",
           "lemma": "werden",
           "explanation": "Conditional auxiliary indicating mood.",
-          "difficulty": 7,
-          "is_main_word": false
+          "difficulty": 7
         },
         {
           "surface": "dir",
@@ -487,8 +499,7 @@
           "pos": "PRON",
           "lemma": "du",
           "explanation": "Dative pronoun; indirect object.",
-          "difficulty": 4,
-          "is_main_word": false
+          "difficulty": 4
         },
         {
           "surface": "zu",
@@ -497,8 +508,7 @@
           "pos": "ADP",
           "lemma": "zu",
           "explanation": "Preposition governing dative.",
-          "difficulty": 2,
-          "is_main_word": false
+          "difficulty": 2
         },
         {
           "surface": "dem",
@@ -507,8 +517,7 @@
           "pos": "DET",
           "lemma": "der",
           "explanation": "Definite article, dative singular.",
-          "difficulty": 2,
-          "is_main_word": false
+          "difficulty": 2
         },
         {
           "surface": "Kurs",
@@ -517,8 +526,7 @@
           "pos": "NOUN",
           "lemma": "Kurs",
           "explanation": "Noun, dative singular; object of 'zu'.",
-          "difficulty": 7,
-          "is_main_word": false
+          "difficulty": 7
         },
         {
           "surface": "raten",
@@ -575,8 +583,7 @@
           "pos": "DET",
           "lemma": "mein",
           "explanation": "Possessive determiner modifying 'Mutter'.",
-          "difficulty": 7,
-          "is_main_word": false
+          "difficulty": 7
         },
         {
           "surface": "Mutter",
@@ -585,8 +592,7 @@
           "pos": "NOUN",
           "lemma": "Mutter",
           "explanation": "Subject noun.",
-          "difficulty": 7,
-          "is_main_word": false
+          "difficulty": 7
         },
         {
           "surface": "will",
@@ -595,8 +601,7 @@
           "pos": "AUX",
           "lemma": "wollen",
           "explanation": "Modal auxiliary expressing volition.",
-          "difficulty": 7,
-          "is_main_word": false
+          "difficulty": 7
         },
         {
           "surface": "mir",
@@ -605,8 +610,7 @@
           "pos": "PRON",
           "lemma": "ich",
           "explanation": "Dative pronoun; indirect object.",
-          "difficulty": 4,
-          "is_main_word": false
+          "difficulty": 4
         },
         {
           "surface": "zu",
@@ -615,8 +619,7 @@
           "pos": "ADP",
           "lemma": "zu",
           "explanation": "Preposition governing dative.",
-          "difficulty": 2,
-          "is_main_word": false
+          "difficulty": 2
         },
         {
           "surface": "mehr",
@@ -625,8 +628,7 @@
           "pos": "DET",
           "lemma": "mehr",
           "explanation": "Quantifier modifying 'Schlaf'.",
-          "difficulty": 7,
-          "is_main_word": false
+          "difficulty": 7
         },
         {
           "surface": "Schlaf",
@@ -635,8 +637,7 @@
           "pos": "NOUN",
           "lemma": "Schlaf",
           "explanation": "Noun, object of 'zu'.",
-          "difficulty": 7,
-          "is_main_word": false
+          "difficulty": 7
         },
         {
           "surface": "raten",
@@ -693,8 +694,7 @@
           "pos": "PRON",
           "lemma": "wir",
           "explanation": "Subject pronoun.",
-          "difficulty": 2,
-          "is_main_word": false
+          "difficulty": 2
         },
         {
           "surface": "können",
@@ -703,8 +703,7 @@
           "pos": "AUX",
           "lemma": "können",
           "explanation": "Modal auxiliary; ability.",
-          "difficulty": 7,
-          "is_main_word": false
+          "difficulty": 7
         },
         {
           "surface": "dir",
@@ -713,8 +712,7 @@
           "pos": "PRON",
           "lemma": "du",
           "explanation": "Dative pronoun; indirect object.",
-          "difficulty": 4,
-          "is_main_word": false
+          "difficulty": 4
         },
         {
           "surface": "nur",
@@ -723,8 +721,7 @@
           "pos": "ADV",
           "lemma": "nur",
           "explanation": "Restrictive adverb.",
-          "difficulty": 2,
-          "is_main_word": false
+          "difficulty": 2
         },
         {
           "surface": "raten",
@@ -754,19 +751,534 @@
     "content_reviewers": [
       "mediawiki-visible-revision"
     ],
-    "last_reviewed_utc": "2026-06-12T11:51:21Z",
-    "approval_source": "mediawiki_visible_revision",
+    "last_reviewed_utc": "2026-10-14T22:30:00Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
     "wiki": {
       "title": "Item:De a2/b0611b5e1d8ca749",
-      "revision_id": 14520,
-      "parent_revision_id": 1210,
-      "revision_timestamp_utc": "2026-06-12T11:51:21Z",
-      "revision_user": "VocomiBot",
-      "revision_comment": "Sync de_a2 item raten",
-      "pulled_utc": "2026-06-22T08:19:07Z",
-      "applied_utc": "2026-06-22T08:19:14Z",
+      "revision_id": 85941,
+      "parent_revision_id": 84613,
+      "revision_timestamp_utc": "2026-10-14T22:30:00Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Content review: German and translation corrections",
+      "pulled_utc": "2026-10-17T07:00:42Z",
+      "applied_utc": "2026-10-17T07:00:49Z",
       "applied_by": "vocomipedia-apply-pulled"
-    }
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-6b87be839052cc44",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_a2:b0611b5e1d8ca749",
+        "pack_code": "de_a2",
+        "entry_id": "raten",
+        "language": "de",
+        "sentence_index": 3,
+        "old_sentence": "Er kann mir gut raten.",
+        "old_translations": {
+          "de": "Er kann mir gut raten.",
+          "ipa": "/eːɐ̯ kan miːɐ̯ ɡuːt ˈʁaːtən/",
+          "en": "He can advise me well.",
+          "es": "Él me da buenos consejos.",
+          "fr": "Il me donne de bons conseils.",
+          "it": "Lui mi dà buoni consigli.",
+          "ko": "그는 나에게 좋은 조언을 해줘.",
+          "zh-Hans": "他给我很好的建议。",
+          "yue": "佢會畀我好嘅意見。",
+          "ru": "Он даёт мне хорошие советы.",
+          "pt": "Ele me dá bons conselhos.",
+          "he": "הוא נותן לי עצות טובות.",
+          "tr": "O bana iyi tavsiyeler veriyor.",
+          "vi": "Anh ấy cho tôi lời khuyên rất hay.",
+          "ar": "هو يقدم لي نصائح جيدة.",
+          "nl": "Hij geeft me goede raad.",
+          "uk": "Він дає мені хороші поради.",
+          "hu": "Ő jó tanácsokat ad nekem.",
+          "hi": "वह मुझे अच्छी सलाह देता है.",
+          "pl": "On daje mi dobre rady.",
+          "el": "Μου δίνει καλές συμβουλές.",
+          "nb": "Han gir meg gode råd.",
+          "id": "Dia memberi aku saran yang bagus.",
+          "sv": "Han ger mig bra råd.",
+          "ro": "Îmi dă sfaturi bune.",
+          "cs": "Dává mi dobré rady.",
+          "da": "Han giver mig gode råd.",
+          "fi": "Hän antaa minulle hyviä neuvoja.",
+          "ja": "彼は私に良いアドバイスをくれます。"
+        },
+        "proposed_sentence": "Er kann mich gut beraten.",
+        "proposed_translations": {
+          "de": "Er kann mich gut beraten.",
+          "ipa": "/eːɐ̯ kan miːɐ̯ ɡuːt ˈʁaːtən/",
+          "en": "He can advise me well.",
+          "es": "Él me da buenos consejos.",
+          "fr": "Il me donne de bons conseils.",
+          "it": "Lui mi dà buoni consigli.",
+          "ko": "그는 나에게 좋은 조언을 해줘.",
+          "zh-Hans": "他给我很好的建议。",
+          "yue": "佢會畀我好嘅意見。",
+          "ru": "Он даёт мне хорошие советы.",
+          "pt": "Ele me dá bons conselhos.",
+          "he": "הוא נותן לי עצות טובות.",
+          "tr": "O bana iyi tavsiyeler veriyor.",
+          "vi": "Anh ấy cho tôi lời khuyên rất hay.",
+          "ar": "هو يقدم لي نصائح جيدة.",
+          "nl": "Hij geeft me goede raad.",
+          "uk": "Він дає мені хороші поради.",
+          "hu": "Ő jó tanácsokat ad nekem.",
+          "hi": "वह मुझे अच्छी सलाह देता है.",
+          "pl": "On daje mi dobre rady.",
+          "el": "Μου δίνει καλές συμβουλές.",
+          "nb": "Han gir meg gode råd.",
+          "id": "Dia memberi aku saran yang bagus.",
+          "sv": "Han ger mig bra råd.",
+          "ro": "Îmi dă sfaturi bune.",
+          "cs": "Dává mi dobré rady.",
+          "da": "Han giver mig gode råd.",
+          "fi": "Hän antaa minulle hyviä neuvoja.",
+          "ja": "彼は私に良いアドバイスをくれます。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Er kann mich gut beraten.",
+        "old_japanese": "Er kann mir gut raten.",
+        "old_english": "He can advise me well.",
+        "proposed_japanese": "Er kann mich gut beraten.",
+        "proposed_english": "He can advise me well.",
+        "reason": "Use the natural German verb construction for ‘advise me well’ while keeping the meaning.",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Er kann mich gut beraten.",
+          "tokens": [
+            {
+              "surface": "Er",
+              "lemma": "er",
+              "pos": "PRON",
+              "upos": "PRON",
+              "xpos": "PPER",
+              "feats": {},
+              "start": 0,
+              "end": 2,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "kann",
+              "lemma": "können",
+              "pos": "AUX",
+              "upos": "AUX",
+              "xpos": "VMFIN",
+              "feats": {},
+              "start": 3,
+              "end": 7,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "mich",
+              "lemma": "mich",
+              "pos": "PRON",
+              "upos": "PRON",
+              "xpos": "PPER",
+              "feats": {},
+              "start": 8,
+              "end": 12,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "gut",
+              "lemma": "gut",
+              "pos": "ADV",
+              "upos": "ADV",
+              "xpos": "ADJD",
+              "feats": {},
+              "start": 13,
+              "end": 16,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "beraten",
+              "lemma": "beraten",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVINF",
+              "feats": {},
+              "start": 17,
+              "end": 24,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 24,
+              "end": 25,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Er",
+            "lemma": "er",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "kann",
+            "lemma": "können",
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "VMFIN",
+            "feats": {},
+            "start": 3,
+            "end": 7,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "mich",
+            "lemma": "mich",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 8,
+            "end": 12,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "gut",
+            "lemma": "gut",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADJD",
+            "feats": {},
+            "start": 13,
+            "end": 16,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "beraten",
+            "lemma": "beraten",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVINF",
+            "feats": {},
+            "start": 17,
+            "end": 24,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 24,
+            "end": 25,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:00:42Z",
+        "updated_utc": "2026-10-17T07:00:59Z",
+        "applied_utc": "2026-10-17T07:00:59Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      },
+      {
+        "id": "sentprop-fa8961f9f810dbc9",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_a2:b0611b5e1d8ca749",
+        "pack_code": "de_a2",
+        "entry_id": "raten",
+        "language": "de",
+        "sentence_index": 4,
+        "old_sentence": "Ich lasse mir vom Chef etwas raten.",
+        "old_translations": {
+          "de": "Ich lasse mir vom Chef etwas raten.",
+          "ipa": "/ɪç ˈlasə miːɐ̯ fɔm ʃɛf ˈʁaːtən/",
+          "en": "I’m getting advice from the boss.",
+          "es": "Le estoy pidiendo consejo a mi jefe.",
+          "fr": "Je demande conseil à mon chef.",
+          "it": "Sto chiedendo consiglio al capo.",
+          "ko": "나는 상사에게 조언을 받고 있어.",
+          "zh-Hans": "我在向老板请教。",
+          "yue": "我問老闆意見。",
+          "ru": "Я советуюсь с начальником.",
+          "pt": "Estou pedindo conselho ao meu chefe.",
+          "he": "אני מתייעץ עם הבוס.",
+          "tr": "Patronuma danışıyorum.",
+          "vi": "Tôi đang hỏi ý kiến sếp.",
+          "ar": "أستشير المدير.",
+          "nl": "Ik laat me adviseren door mijn baas.",
+          "uk": "Я раджуся з начальником.",
+          "hu": "Tanácsot kérek a főnökömtől.",
+          "hi": "मैं बॉस से सलाह ले रहा हूँ.",
+          "pl": "Konsultuję się z szefem.",
+          "el": "Συμβουλεύομαι το αφεντικό μου.",
+          "nb": "Jeg får råd fra sjefen.",
+          "id": "Aku sedang meminta saran dari bos.",
+          "sv": "Jag rådfrågar chefen.",
+          "ro": "Mă consult cu șeful meu.",
+          "cs": "Radím se se šéfem.",
+          "da": "Jeg rådfører mig med chefen.",
+          "fi": "Pyydän neuvoa pomoltani.",
+          "ja": "上司に相談しています。"
+        },
+        "proposed_sentence": "Ich lasse mich vom Chef beraten.",
+        "proposed_translations": {
+          "de": "Ich lasse mich vom Chef beraten.",
+          "ipa": "/ɪç ˈlasə miːɐ̯ fɔm ʃɛf ˈʁaːtən/",
+          "en": "I’m getting advice from the boss.",
+          "es": "Le estoy pidiendo consejo a mi jefe.",
+          "fr": "Je demande conseil à mon chef.",
+          "it": "Sto chiedendo consiglio al capo.",
+          "ko": "나는 상사에게 조언을 받고 있어.",
+          "zh-Hans": "我在向老板请教。",
+          "yue": "我問老闆意見。",
+          "ru": "Я советуюсь с начальником.",
+          "pt": "Estou pedindo conselho ao meu chefe.",
+          "he": "אני מתייעץ עם הבוס.",
+          "tr": "Patronuma danışıyorum.",
+          "vi": "Tôi đang hỏi ý kiến sếp.",
+          "ar": "أستشير المدير.",
+          "nl": "Ik laat me adviseren door mijn baas.",
+          "uk": "Я раджуся з начальником.",
+          "hu": "Tanácsot kérek a főnökömtől.",
+          "hi": "मैं बॉस से सलाह ले रहा हूँ.",
+          "pl": "Konsultuję się z szefem.",
+          "el": "Συμβουλεύομαι το αφεντικό μου.",
+          "nb": "Jeg får råd fra sjefen.",
+          "id": "Aku sedang meminta saran dari bos.",
+          "sv": "Jag rådfrågar chefen.",
+          "ro": "Mă consult cu șeful meu.",
+          "cs": "Radím se se šéfem.",
+          "da": "Jeg rådfører mig med chefen.",
+          "fi": "Pyydän neuvoa pomoltani.",
+          "ja": "上司に相談しています。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Ich lasse mich vom Chef beraten.",
+        "old_japanese": "Ich lasse mir vom Chef etwas raten.",
+        "old_english": "I’m getting advice from the boss.",
+        "proposed_japanese": "Ich lasse mich vom Chef beraten.",
+        "proposed_english": "I’m getting advice from the boss.",
+        "reason": "Use the idiomatic German construction for getting advice from the boss, preserving the meaning.",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Ich lasse mich vom Chef beraten.",
+          "tokens": [
+            {
+              "surface": "Ich",
+              "lemma": "ich",
+              "pos": "PRON",
+              "upos": "PRON",
+              "xpos": "PPER",
+              "feats": {},
+              "start": 0,
+              "end": 3,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "lasse",
+              "lemma": "lassen",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVFIN",
+              "feats": {},
+              "start": 4,
+              "end": 9,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "mich",
+              "lemma": "sich",
+              "pos": "PRON",
+              "upos": "PRON",
+              "xpos": "PRF",
+              "feats": {},
+              "start": 10,
+              "end": 14,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "vom",
+              "lemma": "von",
+              "pos": "ADP",
+              "upos": "ADP",
+              "xpos": "APPRART",
+              "feats": {},
+              "start": 15,
+              "end": 18,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Chef",
+              "lemma": "Chef",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 19,
+              "end": 23,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "beraten",
+              "lemma": "beraten",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVINF",
+              "feats": {},
+              "start": 24,
+              "end": 31,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 31,
+              "end": 32,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Ich",
+            "lemma": "ich",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "lasse",
+            "lemma": "lassen",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 4,
+            "end": 9,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "mich",
+            "lemma": "sich",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PRF",
+            "feats": {},
+            "start": 10,
+            "end": 14,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "vom",
+            "lemma": "von",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPRART",
+            "feats": {},
+            "start": 15,
+            "end": 18,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Chef",
+            "lemma": "Chef",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 19,
+            "end": 23,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "beraten",
+            "lemma": "beraten",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVINF",
+            "feats": {},
+            "start": 24,
+            "end": 31,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 31,
+            "end": 32,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:00:42Z",
+        "updated_utc": "2026-10-17T07:00:59Z",
+        "applied_utc": "2026-10-17T07:00:59Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:00:59Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -808,8 +1320,7 @@
             "pos": "PRON",
             "lemma": "es",
             "explanation": "Expletive/dummy subject pronoun anticipating the infinitival clause.",
-            "difficulty": 2,
-            "is_main_word": false
+            "difficulty": 2
           },
           {
             "surface": "ist",
@@ -818,8 +1329,7 @@
             "pos": "AUX",
             "lemma": "sein",
             "explanation": "Finite 3rd person singular present of 'sein' as copula.",
-            "difficulty": 4,
-            "is_main_word": false
+            "difficulty": 4
           },
           {
             "surface": "schwer",
@@ -828,8 +1338,7 @@
             "pos": "ADJ",
             "lemma": "schwer",
             "explanation": "Predicative adjective as subject complement.",
-            "difficulty": 7,
-            "is_main_word": false
+            "difficulty": 7
           },
           {
             "surface": "dir",
@@ -838,8 +1347,7 @@
             "pos": "PRON",
             "lemma": "du",
             "explanation": "Dative pronoun, indirect object of 'raten'.",
-            "difficulty": 4,
-            "is_main_word": false
+            "difficulty": 4
           },
           {
             "surface": "zu",
@@ -848,8 +1356,7 @@
             "pos": "PART",
             "lemma": "zu",
             "explanation": "Infinitive marker for 'raten'.",
-            "difficulty": 2,
-            "is_main_word": false
+            "difficulty": 2
           },
           {
             "surface": "raten.",
@@ -874,8 +1381,7 @@
             "pos": "PRON",
             "lemma": "ich",
             "explanation": "First person nominative pronoun as subject.",
-            "difficulty": 2,
-            "is_main_word": false
+            "difficulty": 2
           },
           {
             "surface": "kann",
@@ -884,8 +1390,7 @@
             "pos": "AUX",
             "lemma": "können",
             "explanation": "Modal auxiliary selecting a bare infinitive.",
-            "difficulty": 7,
-            "is_main_word": false
+            "difficulty": 7
           },
           {
             "surface": "dir",
@@ -894,8 +1399,7 @@
             "pos": "PRON",
             "lemma": "du",
             "explanation": "Dative pronoun, indirect object of 'raten'.",
-            "difficulty": 4,
-            "is_main_word": false
+            "difficulty": 4
           },
           {
             "surface": "nur",
@@ -904,8 +1408,7 @@
             "pos": "ADV",
             "lemma": "nur",
             "explanation": "Restrictive adverb narrowing scope.",
-            "difficulty": 2,
-            "is_main_word": false
+            "difficulty": 2
           },
           {
             "surface": "raten.",
@@ -921,133 +1424,156 @@
         "difficulty_aggregated": 4.4
       },
       {
-        "sentence": "Er kann mir gut raten.",
+        "sentence": "Er kann mich gut beraten.",
         "tokens": [
           {
             "surface": "Er",
-            "surface_en": "he",
-            "furigana": "[eːɐ̯]",
-            "pos": "PRON",
             "lemma": "er",
-            "explanation": "Third person nominative pronoun as subject.",
-            "difficulty": 2,
-            "is_main_word": false
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "kann",
-            "surface_en": "can",
-            "furigana": "[kan]",
-            "pos": "AUX",
             "lemma": "können",
-            "explanation": "Modal auxiliary selecting a bare infinitive.",
-            "difficulty": 7,
-            "is_main_word": false
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "VMFIN",
+            "feats": {},
+            "start": 3,
+            "end": 7,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "mir",
-            "surface_en": "to me",
-            "furigana": "[miːɐ̯]",
+            "surface": "mich",
+            "lemma": "mich",
             "pos": "PRON",
-            "lemma": "ich",
-            "explanation": "Dative pronoun, indirect object of 'raten'.",
-            "difficulty": 4,
-            "is_main_word": false
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 8,
+            "end": 12,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "gut",
-            "surface_en": "well",
-            "furigana": "[ɡuːt]",
-            "pos": "ADV",
             "lemma": "gut",
-            "explanation": "Manner adverb modifying the verb.",
-            "difficulty": 4,
-            "is_main_word": false
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADJD",
+            "feats": {},
+            "start": 13,
+            "end": 16,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "raten.",
-            "surface_en": "advise",
-            "furigana": "[ˈʁaːtən]",
+            "surface": "beraten",
+            "lemma": "beraten",
             "pos": "VERB",
-            "lemma": "raten",
-            "explanation": "Bare infinitive verb governed by the modal.",
-            "difficulty": 7,
-            "is_main_word": true
+            "upos": "VERB",
+            "xpos": "VVINF",
+            "feats": {},
+            "start": 17,
+            "end": 24,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 24,
+            "end": 25,
+            "analyzer": "spacy_de_core_news_lg"
           }
         ],
         "difficulty_aggregated": 4.8
       },
       {
-        "sentence": "Ich lasse mir vom Chef etwas raten.",
+        "sentence": "Ich lasse mich vom Chef beraten.",
         "tokens": [
           {
             "surface": "Ich",
-            "surface_en": "I",
-            "furigana": "[ɪç]",
-            "pos": "PRON",
             "lemma": "ich",
-            "explanation": "First person nominative pronoun as subject.",
-            "difficulty": 2,
-            "is_main_word": false
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "lasse",
-            "surface_en": "let/have",
-            "furigana": "[ˈlasə]",
-            "pos": "VERB",
             "lemma": "lassen",
-            "explanation": "Causative auxiliary selecting a bare infinitive.",
-            "difficulty": 7,
-            "is_main_word": false
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 4,
+            "end": 9,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "mir",
-            "surface_en": "to me",
-            "furigana": "[miːɐ̯]",
+            "surface": "mich",
+            "lemma": "sich",
             "pos": "PRON",
-            "lemma": "ich",
-            "explanation": "Dative pronoun, beneficiary of the advising.",
-            "difficulty": 4,
-            "is_main_word": false
+            "upos": "PRON",
+            "xpos": "PRF",
+            "feats": {},
+            "start": 10,
+            "end": 14,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "vom",
-            "surface_en": "from the",
-            "furigana": "[fɔm]",
+            "lemma": "von",
             "pos": "ADP",
-            "lemma": "von dem",
-            "explanation": "Preposition + article contraction marking the source.",
-            "difficulty": 2,
-            "is_main_word": false
+            "upos": "ADP",
+            "xpos": "APPRART",
+            "feats": {},
+            "start": 15,
+            "end": 18,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "Chef",
-            "surface_en": "boss",
-            "furigana": "[ʃɛf]",
-            "pos": "NOUN",
             "lemma": "Chef",
-            "explanation": "Noun, object of the preposition indicating the advisor.",
-            "difficulty": 7,
-            "is_main_word": false
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 19,
+            "end": 23,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "etwas",
-            "surface_en": "something",
-            "furigana": "[ˈɛtvas]",
-            "pos": "PRON",
-            "lemma": "etwas",
-            "explanation": "Indefinite pronoun as placeholder object.",
-            "difficulty": 4,
-            "is_main_word": false
-          },
-          {
-            "surface": "raten.",
-            "surface_en": "advise",
-            "furigana": "[ˈʁaːtən]",
+            "surface": "beraten",
+            "lemma": "beraten",
             "pos": "VERB",
-            "lemma": "raten",
-            "explanation": "Bare infinitive complement of 'lassen'.",
-            "difficulty": 7,
-            "is_main_word": true
+            "upos": "VERB",
+            "xpos": "VVINF",
+            "feats": {},
+            "start": 24,
+            "end": 31,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 31,
+            "end": 32,
+            "analyzer": "spacy_de_core_news_lg"
           }
         ],
         "difficulty_aggregated": 4.71
@@ -1062,8 +1588,7 @@
             "pos": "PRON",
             "lemma": "ich",
             "explanation": "Personal pronoun; subject.",
-            "difficulty": 2,
-            "is_main_word": false
+            "difficulty": 2
           },
           {
             "surface": "würde",
@@ -1072,8 +1597,7 @@
             "pos": "AUX",
             "lemma": "werden",
             "explanation": "Conditional auxiliary indicating mood.",
-            "difficulty": 7,
-            "is_main_word": false
+            "difficulty": 7
           },
           {
             "surface": "dir",
@@ -1082,8 +1606,7 @@
             "pos": "PRON",
             "lemma": "du",
             "explanation": "Dative pronoun; indirect object.",
-            "difficulty": 4,
-            "is_main_word": false
+            "difficulty": 4
           },
           {
             "surface": "zu",
@@ -1092,8 +1615,7 @@
             "pos": "ADP",
             "lemma": "zu",
             "explanation": "Preposition governing dative.",
-            "difficulty": 2,
-            "is_main_word": false
+            "difficulty": 2
           },
           {
             "surface": "dem",
@@ -1102,8 +1624,7 @@
             "pos": "DET",
             "lemma": "der",
             "explanation": "Definite article, dative singular.",
-            "difficulty": 2,
-            "is_main_word": false
+            "difficulty": 2
           },
           {
             "surface": "Kurs",
@@ -1112,8 +1633,7 @@
             "pos": "NOUN",
             "lemma": "Kurs",
             "explanation": "Noun, dative singular; object of 'zu'.",
-            "difficulty": 7,
-            "is_main_word": false
+            "difficulty": 7
           },
           {
             "surface": "raten",
@@ -1138,8 +1658,7 @@
             "pos": "DET",
             "lemma": "mein",
             "explanation": "Possessive determiner modifying 'Mutter'.",
-            "difficulty": 7,
-            "is_main_word": false
+            "difficulty": 7
           },
           {
             "surface": "Mutter",
@@ -1148,8 +1667,7 @@
             "pos": "NOUN",
             "lemma": "Mutter",
             "explanation": "Subject noun.",
-            "difficulty": 7,
-            "is_main_word": false
+            "difficulty": 7
           },
           {
             "surface": "will",
@@ -1158,8 +1676,7 @@
             "pos": "AUX",
             "lemma": "wollen",
             "explanation": "Modal auxiliary expressing volition.",
-            "difficulty": 7,
-            "is_main_word": false
+            "difficulty": 7
           },
           {
             "surface": "mir",
@@ -1168,8 +1685,7 @@
             "pos": "PRON",
             "lemma": "ich",
             "explanation": "Dative pronoun; indirect object.",
-            "difficulty": 4,
-            "is_main_word": false
+            "difficulty": 4
           },
           {
             "surface": "zu",
@@ -1178,8 +1694,7 @@
             "pos": "ADP",
             "lemma": "zu",
             "explanation": "Preposition governing dative.",
-            "difficulty": 2,
-            "is_main_word": false
+            "difficulty": 2
           },
           {
             "surface": "mehr",
@@ -1188,8 +1703,7 @@
             "pos": "DET",
             "lemma": "mehr",
             "explanation": "Quantifier modifying 'Schlaf'.",
-            "difficulty": 7,
-            "is_main_word": false
+            "difficulty": 7
           },
           {
             "surface": "Schlaf",
@@ -1198,8 +1712,7 @@
             "pos": "NOUN",
             "lemma": "Schlaf",
             "explanation": "Noun, object of 'zu'.",
-            "difficulty": 7,
-            "is_main_word": false
+            "difficulty": 7
           },
           {
             "surface": "raten",
@@ -1224,8 +1737,7 @@
             "pos": "PRON",
             "lemma": "wir",
             "explanation": "Subject pronoun.",
-            "difficulty": 2,
-            "is_main_word": false
+            "difficulty": 2
           },
           {
             "surface": "können",
@@ -1234,8 +1746,7 @@
             "pos": "AUX",
             "lemma": "können",
             "explanation": "Modal auxiliary; ability.",
-            "difficulty": 7,
-            "is_main_word": false
+            "difficulty": 7
           },
           {
             "surface": "dir",
@@ -1244,8 +1755,7 @@
             "pos": "PRON",
             "lemma": "du",
             "explanation": "Dative pronoun; indirect object.",
-            "difficulty": 4,
-            "is_main_word": false
+            "difficulty": 4
           },
           {
             "surface": "nur",
@@ -1254,8 +1764,7 @@
             "pos": "ADV",
             "lemma": "nur",
             "explanation": "Restrictive adverb.",
-            "difficulty": 2,
-            "is_main_word": false
+            "difficulty": 2
           },
           {
             "surface": "raten",

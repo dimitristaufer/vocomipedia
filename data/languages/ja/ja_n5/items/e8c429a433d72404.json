@@ -50,7 +50,7 @@
         "es": "Hay dos kilómetros desde aquí hasta la estación.",
         "fr": "Il y a deux kilomètres d’ici jusqu’à la gare.",
         "de": "Von hier sind es zwei Kilometer bis zum Bahnhof.",
-        "it": "Da qui si trovano due chilometri fino alla stazione.",
+        "it": "Da qui alla stazione ci sono due chilometri.",
         "ko": "여기에서 역까지는 2km 떨어져 있습니다.",
         "zh-Hans": "从这里到车站有两公里。",
         "yue": "由呢度到車站有兩公里。",
@@ -58,13 +58,13 @@
         "pt": "São dois quilômetros daqui até a estação.",
         "he": "זה שני קילומטרים מכאן לתחנה.",
         "tr": "Buradan istasyona iki kilometre uzaklıktadır.",
-        "vi": "Nó cách đây hai km đến nhà ga.",
+        "vi": "Từ đây đến nhà ga là hai km.",
         "ar": "إنه على بعد كيلومترين من هنا إلى المحطة.",
         "nl": "Vanaf hier is het twee kilometer naar het station.",
         "uk": "Звідси до вокзалу два кілометри.",
         "hu": "Innen két kilométer van az állomásig.",
         "hi": "यहां से स्टेशन तक का रास्ता दो किलोमीटर है।",
-        "pl": "Do dworca są stąd два kilometry.",
+        "pl": "Stąd do dworca są dwa kilometry.",
         "el": "Απέχει δύο χιλιόμετρα από εδώ μέχρι το σταθμό.",
         "nb": "Det er to kilometer herfra til stasjonen.",
         "id": "Jaraknya dua kilometer dari sini ke stasiun.",
@@ -77,40 +77,46 @@
       "tokens": [
         {
           "surface": "ここ",
-          "surface_en": "here",
-          "furigana": "ここ",
-          "pos": "pronoun",
           "lemma": "ここ",
-          "difficulty": 1,
-          "explanation": "anaphoric adverb indicating location near the speaker",
+          "pos": "代名詞/*/*/*/*/*",
+          "upos": "PRON",
+          "xpos": "代名詞",
+          "feats": {},
+          "start": 0,
+          "end": 2,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "ここ",
           "ruby_text": "ここ",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "ここ"
         },
         {
           "surface": "から",
-          "surface_en": "from",
-          "furigana": "から",
-          "pos": "particle",
           "lemma": "から",
-          "difficulty": 1,
-          "explanation": "marks the starting point of a distance",
+          "pos": "助詞/格助詞/*/*/*/*",
+          "upos": "PART",
+          "xpos": "助詞",
+          "feats": {},
+          "start": 2,
+          "end": 4,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "から",
           "ruby_text": "から",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "から"
         },
         {
           "surface": "駅",
-          "surface_en": "station",
-          "furigana": "えき",
-          "pos": "noun",
           "lemma": "駅",
-          "difficulty": 13,
-          "explanation": "the endpoint or destination in this context",
+          "pos": "名詞/普通名詞/一般/*/*/*",
+          "upos": "NOUN",
+          "xpos": "名詞",
+          "feats": {},
+          "start": 4,
+          "end": 5,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "えき",
           "ruby_text": "駅[えき]",
           "ruby_spans": [
@@ -121,31 +127,36 @@
               "length": 1
             }
           ],
-          "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "ruby_confidence": "reviewed",
+          "furigana": "えき",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "まで",
-          "surface_en": "to, until",
-          "furigana": "まで",
-          "pos": "particle",
           "lemma": "まで",
-          "difficulty": 1,
-          "explanation": "marks the endpoint or limit of the distance",
+          "pos": "助詞/副助詞/*/*/*/*",
+          "upos": "PART",
+          "xpos": "助詞",
+          "feats": {},
+          "start": 5,
+          "end": 7,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "まで",
           "ruby_text": "まで",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "まで"
         },
         {
           "surface": "二",
-          "surface_en": "two",
-          "furigana": "に",
-          "pos": "numeral",
           "lemma": "二",
-          "difficulty": 1,
-          "explanation": "cardinal number indicating quantity",
+          "pos": "名詞/数詞/*/*/*/*",
+          "upos": "NOUN",
+          "xpos": "名詞",
+          "feats": {},
+          "start": 7,
+          "end": 8,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "に",
           "ruby_text": "二[に]",
           "ruby_spans": [
@@ -156,18 +167,20 @@
               "length": 1
             }
           ],
-          "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "ruby_confidence": "reviewed",
+          "furigana": "に",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "粁",
-          "surface_en": "kilometer(s)",
-          "furigana": "粁",
-          "pos": "counter",
           "lemma": "粁",
-          "difficulty": 1,
-          "explanation": "unit counter for measuring distance in kilometers",
-          "is_main_word": true,
+          "pos": "名詞/普通名詞/一般/*/*/*",
+          "upos": "NOUN",
+          "xpos": "名詞",
+          "feats": {},
+          "start": 8,
+          "end": 9,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "粁",
           "ruby_text": "粁[粁]",
           "ruby_spans": [
@@ -178,22 +191,58 @@
               "length": 1
             }
           ],
-          "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "ruby_confidence": "reviewed",
+          "furigana": "粁",
+          "ruby_source": "mediawiki_sentence_ruby",
+          "is_main_word": true
         },
         {
-          "surface": "あります",
-          "surface_en": "there is",
-          "furigana": "あります",
-          "pos": "verb",
+          "surface": "あり",
           "lemma": "ある",
-          "difficulty": 1,
-          "explanation": "intransitive verb indicating existence (here used for a measured distance)",
-          "reading_kana": "あります",
-          "ruby_text": "あります",
+          "pos": "動詞/非自立可能/*/*/五段-ラ行/連用形-一般",
+          "upos": "VERB",
+          "xpos": "動詞",
+          "feats": {},
+          "start": 9,
+          "end": 11,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "あり",
+          "ruby_text": "あり",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "あり"
+        },
+        {
+          "surface": "ます",
+          "lemma": "ます",
+          "pos": "助動詞/*/*/*/助動詞-マス/終止形-一般",
+          "upos": "AUX",
+          "xpos": "助動詞",
+          "feats": {},
+          "start": 11,
+          "end": 13,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "ます",
+          "ruby_text": "ます",
+          "ruby_spans": [],
+          "ruby_confidence": "high",
+          "furigana": "ます"
+        },
+        {
+          "surface": "。",
+          "lemma": "。",
+          "pos": "補助記号/句点/*/*/*/*",
+          "upos": "PUNCT",
+          "xpos": "補助記号",
+          "feats": {},
+          "start": 13,
+          "end": 14,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "。",
+          "ruby_text": "。",
+          "ruby_spans": [],
+          "ruby_confidence": "high",
+          "furigana": "。"
         }
       ],
       "difficulty": 3,
@@ -217,14 +266,14 @@
         "tr": "Annem her gün okula üç kilometre yürüyerek gidiyor.",
         "vi": "Mẹ tôi đi bộ ba km đến trường mỗi ngày.",
         "ar": "تسير والدتي لمسافة ثلاثة كيلومترات إلى المدرسة كل يوم.",
-        "nl": "Mijn moeder loopt elke день drie kilometer naar school.",
+        "nl": "Mijn moeder loopt elke dag drie kilometer naar school.",
         "uk": "Моя мама щодня ходить до школи пішки три кілометри.",
         "hu": "Anyám minden nap három kilométert gyalogol az iskolába.",
         "hi": "मेरी मां हर दिन तीन किलोमीटर पैदल चलकर स्कूल जाती हैं।",
         "pl": "Moja mama codziennie idzie trzy kilometry do szkoły.",
         "el": "Η μητέρα μου περπατάει τρία χιλιόμετρα μέχρι το σχολείο κάθε μέρα.",
         "nb": "Moren min går tre kilometer til skolen hver dag.",
-        "id": "Ibu saya berjalan kaki три kilometer ke sekolah setiap hari.",
+        "id": "Ibu saya berjalan kaki tiga kilometer ke sekolah setiap hari.",
         "sv": "Min mamma går tre kilometer till skolan varje dag.",
         "ro": "Mama mea merge trei kilometri la școală în fiecare zi.",
         "cs": "Moje matka chodí každý den do školy tři kilometry.",
@@ -234,12 +283,14 @@
       "tokens": [
         {
           "surface": "母",
-          "surface_en": "(my) mother",
-          "furigana": "はは",
-          "pos": "noun",
           "lemma": "母",
-          "difficulty": 3,
-          "explanation": "the topic or subject (the person who performs the action)",
+          "pos": "名詞/普通名詞/一般/*/*/*",
+          "upos": "NOUN",
+          "xpos": "名詞",
+          "feats": {},
+          "start": 0,
+          "end": 1,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "はは",
           "ruby_text": "母[はは]",
           "ruby_spans": [
@@ -250,31 +301,36 @@
               "length": 1
             }
           ],
-          "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "ruby_confidence": "reviewed",
+          "furigana": "はは",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "は",
-          "surface_en": "(topic marker)",
-          "furigana": "は",
-          "pos": "particle",
           "lemma": "は",
-          "difficulty": 1,
-          "explanation": "marks '母' as the topic of the sentence",
+          "pos": "助詞/係助詞/*/*/*/*",
+          "upos": "PART",
+          "xpos": "助詞",
+          "feats": {},
+          "start": 1,
+          "end": 2,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "は",
           "ruby_text": "は",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "は"
         },
         {
           "surface": "毎日",
-          "surface_en": "every day",
-          "furigana": "まいにち",
-          "pos": "adverb",
           "lemma": "毎日",
-          "difficulty": 5,
-          "explanation": "indicates frequency of the action",
+          "pos": "名詞/普通名詞/副詞可能/*/*/*",
+          "upos": "NOUN",
+          "xpos": "名詞",
+          "feats": {},
+          "start": 2,
+          "end": 4,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "まいにち",
           "ruby_text": "毎日[まいにち]",
           "ruby_spans": [
@@ -285,17 +341,20 @@
               "length": 2
             }
           ],
-          "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "ruby_confidence": "reviewed",
+          "furigana": "まいにち",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "三",
-          "surface_en": "three",
-          "furigana": "さん",
-          "pos": "numeral",
           "lemma": "三",
-          "difficulty": 1,
-          "explanation": "cardinal number indicating quantity",
+          "pos": "名詞/数詞/*/*/*/*",
+          "upos": "NOUN",
+          "xpos": "名詞",
+          "feats": {},
+          "start": 4,
+          "end": 5,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "さん",
           "ruby_text": "三[さん]",
           "ruby_spans": [
@@ -306,18 +365,20 @@
               "length": 1
             }
           ],
-          "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "ruby_confidence": "reviewed",
+          "furigana": "さん",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "粁",
-          "surface_en": "kilometer(s)",
-          "furigana": "粁",
-          "pos": "counter",
           "lemma": "粁",
-          "difficulty": 1,
-          "explanation": "unit counter for distance traveled",
-          "is_main_word": true,
+          "pos": "名詞/普通名詞/一般/*/*/*",
+          "upos": "NOUN",
+          "xpos": "名詞",
+          "feats": {},
+          "start": 5,
+          "end": 6,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "粁",
           "ruby_text": "粁[粁]",
           "ruby_spans": [
@@ -328,19 +389,23 @@
               "length": 1
             }
           ],
-          "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "ruby_confidence": "reviewed",
+          "furigana": "粁",
+          "ruby_source": "mediawiki_sentence_ruby",
+          "is_main_word": true
         },
         {
-          "surface": "歩いて",
-          "surface_en": "walking (and)",
-          "furigana": "あるいて",
-          "pos": "verb (te-form)",
+          "surface": "歩い",
           "lemma": "歩く",
-          "difficulty": 1,
-          "explanation": "te-form of '歩く' indicating the manner or means of travel",
-          "reading_kana": "あるいて",
-          "ruby_text": "歩[ある]いて",
+          "pos": "動詞/一般/*/*/五段-カ行/連用形-イ音便",
+          "upos": "VERB",
+          "xpos": "動詞",
+          "feats": {},
+          "start": 6,
+          "end": 8,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "あるい",
+          "ruby_text": "歩[ある]い",
           "ruby_spans": [
             {
               "base": "歩",
@@ -349,17 +414,36 @@
               "length": 1
             }
           ],
+          "ruby_confidence": "reviewed",
+          "furigana": "あるい",
+          "ruby_source": "mediawiki_sentence_ruby"
+        },
+        {
+          "surface": "て",
+          "lemma": "て",
+          "pos": "助詞/接続助詞/*/*/*/*",
+          "upos": "PART",
+          "xpos": "助詞",
+          "feats": {},
+          "start": 8,
+          "end": 9,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "て",
+          "ruby_text": "て",
+          "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "て"
         },
         {
           "surface": "学校",
-          "surface_en": "school",
-          "furigana": "がっこう",
-          "pos": "noun",
           "lemma": "学校",
-          "difficulty": 7,
-          "explanation": "destination of the movement",
+          "pos": "名詞/普通名詞/一般/*/*/*",
+          "upos": "NOUN",
+          "xpos": "名詞",
+          "feats": {},
+          "start": 9,
+          "end": 11,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "がっこう",
           "ruby_text": "学校[がっこう]",
           "ruby_spans": [
@@ -370,33 +454,38 @@
               "length": 2
             }
           ],
-          "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "ruby_confidence": "reviewed",
+          "furigana": "がっこう",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "に",
-          "surface_en": "to",
-          "furigana": "に",
-          "pos": "particle",
           "lemma": "に",
-          "difficulty": 1,
-          "explanation": "marks the direction or goal of motion",
+          "pos": "助詞/格助詞/*/*/*/*",
+          "upos": "PART",
+          "xpos": "助詞",
+          "feats": {},
+          "start": 11,
+          "end": 12,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "に",
           "ruby_text": "に",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "に"
         },
         {
-          "surface": "行きます",
-          "surface_en": "go(es)",
-          "furigana": "いきます",
-          "pos": "verb",
+          "surface": "行き",
           "lemma": "行く",
-          "difficulty": 1,
-          "explanation": "polite form of the verb '行く', indicating movement toward a place",
-          "reading_kana": "いきます",
-          "ruby_text": "行[い]きます",
+          "pos": "動詞/非自立可能/*/*/五段-カ行/連用形-一般",
+          "upos": "VERB",
+          "xpos": "動詞",
+          "feats": {},
+          "start": 12,
+          "end": 14,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "いき",
+          "ruby_text": "行[い]き",
           "ruby_spans": [
             {
               "base": "行",
@@ -405,8 +494,41 @@
               "length": 1
             }
           ],
+          "ruby_confidence": "reviewed",
+          "furigana": "いき",
+          "ruby_source": "mediawiki_sentence_ruby"
+        },
+        {
+          "surface": "ます",
+          "lemma": "ます",
+          "pos": "助動詞/*/*/*/助動詞-マス/終止形-一般",
+          "upos": "AUX",
+          "xpos": "助動詞",
+          "feats": {},
+          "start": 14,
+          "end": 16,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "ます",
+          "ruby_text": "ます",
+          "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "ます"
+        },
+        {
+          "surface": "。",
+          "lemma": "。",
+          "pos": "補助記号/句点/*/*/*/*",
+          "upos": "PUNCT",
+          "xpos": "補助記号",
+          "feats": {},
+          "start": 16,
+          "end": 17,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "。",
+          "ruby_text": "。",
+          "ruby_spans": [],
+          "ruby_confidence": "high",
+          "furigana": "。"
         }
       ],
       "difficulty": 4,
@@ -423,7 +545,7 @@
         "it": "Salire per cinque chilometri fino alla vetta è difficile.",
         "ko": "정상까지 5km를 오르는 것은 힘든 일입니다.",
         "zh-Hans": "爬 5 公里到山顶很艰难。",
-        "yue": "擒5公里到山頂好艱難。",
+        "yue": "爬五公里上山頂好艱難。",
         "ru": "Подняться на пять километров до вершины сложно.",
         "pt": "Subir cinco quilômetros até o cume é difícil.",
         "he": "טיפוס חמישה קילומטרים לפסגה הוא קשה.",
@@ -432,9 +554,9 @@
         "ar": "الصعود لمسافة خمسة كيلومترات إلى القمة أمر صعب.",
         "nl": "Vijf kilometer klimmen naar de top is zwaar.",
         "uk": "Піднятися на п'ять кілометрів до вершини важко.",
-        "hu": "Öt киломétert megmászni a csúcsра nehéz.",
+        "hu": "Öt kilométert felmászni a csúcsig nehéz.",
         "hi": "शिखर पर पांच किलोमीटर चढ़ना कठिन है।",
-        "pl": "Wspinaczka na szczyt o pięć kilometrów jest трудna.",
+        "pl": "Wspinaczka przez pięć kilometrów aż na szczyt jest trudna.",
         "el": "Η ανάβαση πέντε χιλιομέτρων μέχρι την κορυφή είναι δύσκολη.",
         "nb": "Å klatre fem kilometer til toppen er tøft.",
         "id": "Mendaki lima kilometer ke puncak itu sulit.",
@@ -447,12 +569,14 @@
       "tokens": [
         {
           "surface": "山頂",
-          "surface_en": "mountain summit",
-          "furigana": "さんちょう",
-          "pos": "noun",
           "lemma": "山頂",
-          "difficulty": 51,
-          "explanation": "the goal or endpoint of the climbing action",
+          "pos": "名詞/普通名詞/一般/*/*/*",
+          "upos": "NOUN",
+          "xpos": "名詞",
+          "feats": {},
+          "start": 0,
+          "end": 2,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "さんちょう",
           "ruby_text": "山頂[さんちょう]",
           "ruby_spans": [
@@ -463,31 +587,36 @@
               "length": 2
             }
           ],
-          "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "ruby_confidence": "reviewed",
+          "furigana": "さんちょう",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "まで",
-          "surface_en": "to, until",
-          "furigana": "まで",
-          "pos": "particle",
           "lemma": "まで",
-          "difficulty": 1,
-          "explanation": "marks the limit or extent of climbing",
+          "pos": "助詞/副助詞/*/*/*/*",
+          "upos": "PART",
+          "xpos": "助詞",
+          "feats": {},
+          "start": 2,
+          "end": 4,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "まで",
           "ruby_text": "まで",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "まで"
         },
         {
           "surface": "五",
-          "surface_en": "five",
-          "furigana": "ご",
-          "pos": "numeral",
           "lemma": "五",
-          "difficulty": 2,
-          "explanation": "cardinal number indicating quantity",
+          "pos": "名詞/数詞/*/*/*/*",
+          "upos": "NOUN",
+          "xpos": "名詞",
+          "feats": {},
+          "start": 4,
+          "end": 5,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "ご",
           "ruby_text": "五[ご]",
           "ruby_spans": [
@@ -498,18 +627,20 @@
               "length": 1
             }
           ],
-          "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "ruby_confidence": "reviewed",
+          "furigana": "ご",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "粁",
-          "surface_en": "kilometer(s)",
-          "furigana": "粁",
-          "pos": "counter",
           "lemma": "粁",
-          "difficulty": 1,
-          "explanation": "unit counter for distance to be climbed",
-          "is_main_word": true,
+          "pos": "名詞/普通名詞/一般/*/*/*",
+          "upos": "NOUN",
+          "xpos": "名詞",
+          "feats": {},
+          "start": 5,
+          "end": 6,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "粁",
           "ruby_text": "粁[粁]",
           "ruby_spans": [
@@ -520,17 +651,21 @@
               "length": 1
             }
           ],
-          "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "ruby_confidence": "reviewed",
+          "furigana": "粁",
+          "ruby_source": "mediawiki_sentence_ruby",
+          "is_main_word": true
         },
         {
           "surface": "登る",
-          "surface_en": "climb",
-          "furigana": "のぼる",
-          "pos": "verb",
           "lemma": "登る",
-          "difficulty": 1,
-          "explanation": "dictionary form of the verb indicating the action of ascending",
+          "pos": "動詞/一般/*/*/五段-ラ行/連体形-一般",
+          "upos": "VERB",
+          "xpos": "動詞",
+          "feats": {},
+          "start": 6,
+          "end": 8,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "のぼる",
           "ruby_text": "登[のぼ]る",
           "ruby_spans": [
@@ -541,45 +676,52 @@
               "length": 1
             }
           ],
-          "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "ruby_confidence": "reviewed",
+          "furigana": "のぼる",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "の",
-          "surface_en": "(nominalizer)",
-          "furigana": "の",
-          "pos": "particle",
           "lemma": "の",
-          "difficulty": 1,
-          "explanation": "turns the preceding clause into a noun phrase",
+          "pos": "助詞/準体助詞/*/*/*/*",
+          "upos": "PART",
+          "xpos": "助詞",
+          "feats": {},
+          "start": 8,
+          "end": 9,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "の",
           "ruby_text": "の",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "の"
         },
         {
           "surface": "は",
-          "surface_en": "(topic marker)",
-          "furigana": "は",
-          "pos": "particle",
           "lemma": "は",
-          "difficulty": 1,
-          "explanation": "marks the nominalized clause as the topic",
+          "pos": "助詞/係助詞/*/*/*/*",
+          "upos": "PART",
+          "xpos": "助詞",
+          "feats": {},
+          "start": 9,
+          "end": 10,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "は",
           "ruby_text": "は",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "は"
         },
         {
           "surface": "大変",
-          "surface_en": "tough, hard",
-          "furigana": "たいへん",
-          "pos": "na-adjective",
           "lemma": "大変",
-          "difficulty": 15,
-          "explanation": "describes the difficulty of the action",
+          "pos": "形状詞/一般/*/*/*/*",
+          "upos": "ADJ",
+          "xpos": "形状詞",
+          "feats": {},
+          "start": 10,
+          "end": 12,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "たいへん",
           "ruby_text": "大変[たいへん]",
           "ruby_spans": [
@@ -590,22 +732,41 @@
               "length": 2
             }
           ],
-          "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "ruby_confidence": "reviewed",
+          "furigana": "たいへん",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "だ",
-          "surface_en": "is",
-          "furigana": "だ",
-          "pos": "copula",
           "lemma": "だ",
-          "difficulty": 1,
-          "explanation": "asserts the predicate as a plain-state copula",
+          "pos": "助動詞/*/*/*/助動詞-ダ/終止形-一般",
+          "upos": "AUX",
+          "xpos": "助動詞",
+          "feats": {},
+          "start": 12,
+          "end": 13,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "だ",
           "ruby_text": "だ",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "だ"
+        },
+        {
+          "surface": "。",
+          "lemma": "。",
+          "pos": "補助記号/句点/*/*/*/*",
+          "upos": "PUNCT",
+          "xpos": "補助記号",
+          "feats": {},
+          "start": 13,
+          "end": 14,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "。",
+          "ruby_text": "。",
+          "ruby_spans": [],
+          "ruby_confidence": "high",
+          "furigana": "。"
         }
       ],
       "difficulty": 4,
@@ -615,7 +776,7 @@
       "target": "東京から京都までは約五百粁です。",
       "reading": "とうきょうからきょうとまではやくごひゃく粁です。",
       "translations": {
-        "en": "From Tokyo to Kyoto is about 500 kilometers.",
+        "en": "It’s about 500 kilometers from Tokyo to Kyoto.",
         "es": "De Tokio a Kioto hay unos 500 kilómetros.",
         "fr": "De Tokyo à Kyoto, il y a environ 500 kilomètres.",
         "de": "Von Tokio nach Kyoto sind es etwa 500 Kilometer.",
@@ -646,12 +807,14 @@
       "tokens": [
         {
           "surface": "東京",
-          "surface_en": "Tokyo",
-          "furigana": "とうきょう",
-          "pos": "noun",
           "lemma": "東京",
-          "difficulty": 6,
-          "explanation": "the starting point of the measured distance",
+          "pos": "名詞/固有名詞/地名/一般/*/*",
+          "upos": "NOUN",
+          "xpos": "名詞",
+          "feats": {},
+          "start": 0,
+          "end": 2,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "とうきょう",
           "ruby_text": "東京[とうきょう]",
           "ruby_spans": [
@@ -662,31 +825,36 @@
               "length": 2
             }
           ],
-          "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "ruby_confidence": "reviewed",
+          "furigana": "とうきょう",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "から",
-          "surface_en": "from",
-          "furigana": "から",
-          "pos": "particle",
           "lemma": "から",
-          "difficulty": 1,
-          "explanation": "marks the origin of the distance",
+          "pos": "助詞/格助詞/*/*/*/*",
+          "upos": "PART",
+          "xpos": "助詞",
+          "feats": {},
+          "start": 2,
+          "end": 4,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "から",
           "ruby_text": "から",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "から"
         },
         {
           "surface": "京都",
-          "surface_en": "Kyoto",
-          "furigana": "きょうと",
-          "pos": "noun",
           "lemma": "京都",
-          "difficulty": 12,
-          "explanation": "the endpoint of the measured distance",
+          "pos": "名詞/固有名詞/地名/一般/*/*",
+          "upos": "NOUN",
+          "xpos": "名詞",
+          "feats": {},
+          "start": 4,
+          "end": 6,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "きょうと",
           "ruby_text": "京都[きょうと]",
           "ruby_spans": [
@@ -697,45 +865,52 @@
               "length": 2
             }
           ],
-          "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "ruby_confidence": "reviewed",
+          "furigana": "きょうと",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "まで",
-          "surface_en": "to, until",
-          "furigana": "まで",
-          "pos": "particle",
           "lemma": "まで",
-          "difficulty": 1,
-          "explanation": "marks the limit or boundary of the distance",
+          "pos": "助詞/副助詞/*/*/*/*",
+          "upos": "PART",
+          "xpos": "助詞",
+          "feats": {},
+          "start": 6,
+          "end": 8,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "まで",
           "ruby_text": "まで",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "まで"
         },
         {
           "surface": "は",
-          "surface_en": "(topic marker)",
-          "furigana": "は",
-          "pos": "particle",
           "lemma": "は",
-          "difficulty": 1,
-          "explanation": "sets up '東京から京都まで' as the topic of the sentence",
+          "pos": "助詞/係助詞/*/*/*/*",
+          "upos": "PART",
+          "xpos": "助詞",
+          "feats": {},
+          "start": 8,
+          "end": 9,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "は",
           "ruby_text": "は",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "は"
         },
         {
           "surface": "約",
-          "surface_en": "approximately",
-          "furigana": "やく",
-          "pos": "adverb",
           "lemma": "約",
-          "difficulty": 14,
-          "explanation": "indicates an approximate quantity",
+          "pos": "接頭辞/*/*/*/*/*",
+          "upos": "PREFIX",
+          "xpos": "接頭辞",
+          "feats": {},
+          "start": 9,
+          "end": 10,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "やく",
           "ruby_text": "約[やく]",
           "ruby_spans": [
@@ -746,17 +921,20 @@
               "length": 1
             }
           ],
-          "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "ruby_confidence": "reviewed",
+          "furigana": "やく",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "五百",
-          "surface_en": "five hundred",
-          "furigana": "ごひゃく",
-          "pos": "numeral",
           "lemma": "五百",
-          "difficulty": 4,
-          "explanation": "cardinal number indicating quantity",
+          "pos": "名詞/数詞/*/*/*/*",
+          "upos": "NOUN",
+          "xpos": "名詞",
+          "feats": {},
+          "start": 10,
+          "end": 12,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "ごひゃく",
           "ruby_text": "五百[ごひゃく]",
           "ruby_spans": [
@@ -767,18 +945,20 @@
               "length": 2
             }
           ],
-          "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "ruby_confidence": "reviewed",
+          "furigana": "ごひゃく",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "粁",
-          "surface_en": "kilometer(s)",
-          "furigana": "粁",
-          "pos": "counter",
           "lemma": "粁",
-          "difficulty": 1,
-          "explanation": "unit counter for distance",
-          "is_main_word": true,
+          "pos": "名詞/普通名詞/一般/*/*/*",
+          "upos": "NOUN",
+          "xpos": "名詞",
+          "feats": {},
+          "start": 12,
+          "end": 13,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "粁",
           "ruby_text": "粁[粁]",
           "ruby_spans": [
@@ -789,22 +969,42 @@
               "length": 1
             }
           ],
-          "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "ruby_confidence": "reviewed",
+          "furigana": "粁",
+          "ruby_source": "mediawiki_sentence_ruby",
+          "is_main_word": true
         },
         {
           "surface": "です",
-          "surface_en": "is",
-          "furigana": "です",
-          "pos": "copula",
           "lemma": "です",
-          "difficulty": 1,
-          "explanation": "polite copula marking a statement",
+          "pos": "助動詞/*/*/*/助動詞-デス/終止形-一般",
+          "upos": "AUX",
+          "xpos": "助動詞",
+          "feats": {},
+          "start": 13,
+          "end": 15,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "です",
           "ruby_text": "です",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "です"
+        },
+        {
+          "surface": "。",
+          "lemma": "。",
+          "pos": "補助記号/句点/*/*/*/*",
+          "upos": "PUNCT",
+          "xpos": "補助記号",
+          "feats": {},
+          "start": 15,
+          "end": 16,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "。",
+          "ruby_text": "。",
+          "ruby_spans": [],
+          "ruby_confidence": "high",
+          "furigana": "。"
         }
       ],
       "difficulty": 4,
@@ -825,19 +1025,2094 @@
     "content_reviewers": [
       "mediawiki-visible-revision"
     ],
-    "last_reviewed_utc": "2026-06-21T18:33:25Z",
-    "approval_source": "mediawiki_visible_revision",
+    "last_reviewed_utc": "2026-10-11T11:20:30Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
     "wiki": {
       "title": "Item:Ja n5/e8c429a433d72404",
-      "revision_id": 58385,
-      "parent_revision_id": 36829,
-      "revision_timestamp_utc": "2026-06-21T18:33:25Z",
-      "revision_user": "VocomiBot",
-      "revision_comment": "Sync ja_n5 item 粁",
-      "pulled_utc": "2026-06-21T20:53:47Z",
-      "applied_utc": "2026-06-21T20:54:00Z",
+      "revision_id": 82856,
+      "parent_revision_id": 69262,
+      "revision_timestamp_utc": "2026-10-11T11:20:30Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Suggest reviewed Japanese and translation corrections",
+      "pulled_utc": "2026-10-17T07:37:41Z",
+      "applied_utc": "2026-10-17T07:37:59Z",
       "applied_by": "vocomipedia-apply-pulled"
-    }
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-b266921eecbc190a",
+        "status": "applied",
+        "type": "ruby_update",
+        "item_id": "ja_n5:e8c429a433d72404",
+        "pack_code": "ja_n5",
+        "entry_id": "粁",
+        "language": "ja",
+        "sentence_index": 1,
+        "old_sentence": "ここから駅まで二粁あります。",
+        "old_translations": {
+          "en": "It is two kilometers from here to the station.",
+          "es": "Hay dos kilómetros desde aquí hasta la estación.",
+          "fr": "Il y a deux kilomètres d’ici jusqu’à la gare.",
+          "de": "Von hier sind es zwei Kilometer bis zum Bahnhof.",
+          "it": "Da qui alla stazione ci sono due chilometri.",
+          "ko": "여기에서 역까지는 2km 떨어져 있습니다.",
+          "zh-Hans": "从这里到车站有两公里。",
+          "yue": "由呢度到車站有兩公里。",
+          "ru": "Отсюда до станции два километра.",
+          "pt": "São dois quilômetros daqui até a estação.",
+          "he": "זה שני קילומטרים מכאן לתחנה.",
+          "tr": "Buradan istasyona iki kilometre uzaklıktadır.",
+          "vi": "Từ đây đến nhà ga là hai km.",
+          "ar": "إنه على بعد كيلومترين من هنا إلى المحطة.",
+          "nl": "Vanaf hier is het twee kilometer naar het station.",
+          "uk": "Звідси до вокзалу два кілометри.",
+          "hu": "Innen két kilométer van az állomásig.",
+          "hi": "यहां से स्टेशन तक का रास्ता दो किलोमीटर है।",
+          "pl": "Stąd do dworca są dwa kilometry.",
+          "el": "Απέχει δύο χιλιόμετρα από εδώ μέχρι το σταθμό.",
+          "nb": "Det er to kilometer herfra til stasjonen.",
+          "id": "Jaraknya dua kilometer dari sini ke stasiun.",
+          "sv": "Härifrån är det två kilometer till stationen.",
+          "ro": "Sunt doi kilometri de aici până la gară.",
+          "cs": "Odtud jsou to na nádraží dva kilometry.",
+          "da": "Herfra er der to kilometer til stationen.",
+          "fi": "Täältä on kaksi kilometriä asemalle."
+        },
+        "proposed_sentence": "ここから駅まで二粁あります。",
+        "proposed_translations": {
+          "en": "It is two kilometers from here to the station.",
+          "es": "Hay dos kilómetros desde aquí hasta la estación.",
+          "fr": "Il y a deux kilomètres d’ici jusqu’à la gare.",
+          "de": "Von hier sind es zwei Kilometer bis zum Bahnhof.",
+          "it": "Da qui alla stazione ci sono due chilometri.",
+          "ko": "여기에서 역까지는 2km 떨어져 있습니다.",
+          "zh-Hans": "从这里到车站有两公里。",
+          "yue": "由呢度到車站有兩公里。",
+          "ru": "Отсюда до станции два километра.",
+          "pt": "São dois quilômetros daqui até a estação.",
+          "he": "זה שני קילומטרים מכאן לתחנה.",
+          "tr": "Buradan istasyona iki kilometre uzaklıktadır.",
+          "vi": "Từ đây đến nhà ga là hai km.",
+          "ar": "إنه على بعد كيلومترين من هنا إلى المحطة.",
+          "nl": "Vanaf hier is het twee kilometer naar het station.",
+          "uk": "Звідси до вокзалу два кілометри.",
+          "hu": "Innen két kilométer van az állomásig.",
+          "hi": "यहां से स्टेशन तक का रास्ता दो किलोमीटर है।",
+          "pl": "Stąd do dworca są dwa kilometry.",
+          "el": "Απέχει δύο χιλιόμετρα από εδώ μέχρι το σταθμό.",
+          "nb": "Det er to kilometer herfra til stasjonen.",
+          "id": "Jaraknya dua kilometer dari sini ke stasiun.",
+          "sv": "Härifrån är det två kilometer till stationen.",
+          "ro": "Sunt doi kilometri de aici până la gară.",
+          "cs": "Odtud jsou to na nádraží dva kilometry.",
+          "da": "Herfra er der to kilometer til stationen.",
+          "fi": "Täältä on kaksi kilometriä asemalle."
+        },
+        "old_ruby_source": "ここから駅[えき]まで二[に]粁[きろめーとる]あります。",
+        "proposed_ruby_source": "ここから駅[えき]まで二[に]粁[粁]あります。",
+        "old_japanese": "ここから駅まで二粁あります。",
+        "old_english": "It is two kilometers from here to the station.",
+        "proposed_japanese": "ここから駅まで二粁あります。",
+        "proposed_english": "It is two kilometers from here to the station.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "ja",
+          "sentence": "ここから駅まで二粁あります。",
+          "tokens": [
+            {
+              "surface": "ここ",
+              "lemma": "ここ",
+              "pos": "代名詞/*/*/*/*/*",
+              "upos": "PRON",
+              "xpos": "代名詞",
+              "feats": {},
+              "start": 0,
+              "end": 2,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "ここ",
+              "ruby_text": "ここ",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "ここ"
+            },
+            {
+              "surface": "から",
+              "lemma": "から",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 2,
+              "end": 4,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "から",
+              "ruby_text": "から",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "から"
+            },
+            {
+              "surface": "駅",
+              "lemma": "駅",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 4,
+              "end": 5,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "えき",
+              "ruby_text": "駅[えき]",
+              "ruby_spans": [
+                {
+                  "base": "駅",
+                  "reading": "えき",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "えき",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "まで",
+              "lemma": "まで",
+              "pos": "助詞/副助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 5,
+              "end": 7,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "まで",
+              "ruby_text": "まで",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "まで"
+            },
+            {
+              "surface": "二",
+              "lemma": "二",
+              "pos": "名詞/数詞/*/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 7,
+              "end": 8,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "に",
+              "ruby_text": "二[に]",
+              "ruby_spans": [
+                {
+                  "base": "二",
+                  "reading": "に",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "に",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "粁",
+              "lemma": "粁",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 8,
+              "end": 9,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "粁",
+              "ruby_text": "粁[粁]",
+              "ruby_spans": [
+                {
+                  "base": "粁",
+                  "reading": "粁",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "粁",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "あり",
+              "lemma": "ある",
+              "pos": "動詞/非自立可能/*/*/五段-ラ行/連用形-一般",
+              "upos": "VERB",
+              "xpos": "動詞",
+              "feats": {},
+              "start": 9,
+              "end": 11,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "あり",
+              "ruby_text": "あり",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "あり"
+            },
+            {
+              "surface": "ます",
+              "lemma": "ます",
+              "pos": "助動詞/*/*/*/助動詞-マス/終止形-一般",
+              "upos": "AUX",
+              "xpos": "助動詞",
+              "feats": {},
+              "start": 11,
+              "end": 13,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "ます",
+              "ruby_text": "ます",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "ます"
+            },
+            {
+              "surface": "。",
+              "lemma": "。",
+              "pos": "補助記号/句点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 13,
+              "end": 14,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "。",
+              "ruby_text": "。",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "。"
+            }
+          ],
+          "reading": "ここからえきまでに粁あります。",
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "warnings": [
+            "mediawiki ruby hints applied"
+          ]
+        },
+        "generated_tokens": [
+          {
+            "surface": "ここ",
+            "lemma": "ここ",
+            "pos": "代名詞/*/*/*/*/*",
+            "upos": "PRON",
+            "xpos": "代名詞",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ここ",
+            "ruby_text": "ここ",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "ここ"
+          },
+          {
+            "surface": "から",
+            "lemma": "から",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 2,
+            "end": 4,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "から",
+            "ruby_text": "から",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "から"
+          },
+          {
+            "surface": "駅",
+            "lemma": "駅",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 4,
+            "end": 5,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "えき",
+            "ruby_text": "駅[えき]",
+            "ruby_spans": [
+              {
+                "base": "駅",
+                "reading": "えき",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "えき",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "まで",
+            "lemma": "まで",
+            "pos": "助詞/副助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 5,
+            "end": 7,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "まで",
+            "ruby_text": "まで",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "まで"
+          },
+          {
+            "surface": "二",
+            "lemma": "二",
+            "pos": "名詞/数詞/*/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 7,
+            "end": 8,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "に",
+            "ruby_text": "二[に]",
+            "ruby_spans": [
+              {
+                "base": "二",
+                "reading": "に",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "に",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "粁",
+            "lemma": "粁",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 8,
+            "end": 9,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "粁",
+            "ruby_text": "粁[粁]",
+            "ruby_spans": [
+              {
+                "base": "粁",
+                "reading": "粁",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "粁",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "あり",
+            "lemma": "ある",
+            "pos": "動詞/非自立可能/*/*/五段-ラ行/連用形-一般",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 9,
+            "end": 11,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "あり",
+            "ruby_text": "あり",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "あり"
+          },
+          {
+            "surface": "ます",
+            "lemma": "ます",
+            "pos": "助動詞/*/*/*/助動詞-マス/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 11,
+            "end": 13,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ます",
+            "ruby_text": "ます",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "ます"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 13,
+            "end": 14,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
+          }
+        ],
+        "generated_reading": "ここからえきまでに粁あります。",
+        "analyzer": "sudachipy_sudachidict_core_c",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:37:41Z",
+        "updated_utc": "2026-10-17T07:38:16Z",
+        "applied_utc": "2026-10-17T07:38:16Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      },
+      {
+        "id": "sentprop-4b9f6156261521dc",
+        "status": "applied",
+        "type": "ruby_update",
+        "item_id": "ja_n5:e8c429a433d72404",
+        "pack_code": "ja_n5",
+        "entry_id": "粁",
+        "language": "ja",
+        "sentence_index": 2,
+        "old_sentence": "母は毎日三粁歩いて学校に行きます。",
+        "old_translations": {
+          "en": "My mother walks three kilometers to school every day.",
+          "es": "Mi madre camina tres kilómetros para ir a la escuela todos los días.",
+          "fr": "Ma mère marche trois kilomètres pour aller à l’école tous les jours.",
+          "de": "Meine Mutter läuft jeden Tag drei Kilometer zur Schule.",
+          "it": "Mia madre cammina per tre chilometri per andare a scuola ogni giorno.",
+          "ko": "어머니는 매일 3km를 걸어서 학교에 가십니다.",
+          "zh-Hans": "我妈妈每天步行三公里去上学。",
+          "yue": "我媽咪每日步行三公里去返學。",
+          "ru": "Моя мама каждый день ходит в школу пешком три километра.",
+          "pt": "Minha mãe caminha três quilômetros para a escola todos os dias.",
+          "he": "אמא שלי הולכת כל יום שלושה קילומטרים לבית הספר.",
+          "tr": "Annem her gün okula üç kilometre yürüyerek gidiyor.",
+          "vi": "Mẹ tôi đi bộ ba km đến trường mỗi ngày.",
+          "ar": "تسير والدتي لمسافة ثلاثة كيلومترات إلى المدرسة كل يوم.",
+          "nl": "Mijn moeder loopt elke dag drie kilometer naar school.",
+          "uk": "Моя мама щодня ходить до школи пішки три кілометри.",
+          "hu": "Anyám minden nap három kilométert gyalogol az iskolába.",
+          "hi": "मेरी मां हर दिन तीन किलोमीटर पैदल चलकर स्कूल जाती हैं।",
+          "pl": "Moja mama codziennie idzie trzy kilometry do szkoły.",
+          "el": "Η μητέρα μου περπατάει τρία χιλιόμετρα μέχρι το σχολείο κάθε μέρα.",
+          "nb": "Moren min går tre kilometer til skolen hver dag.",
+          "id": "Ibu saya berjalan kaki tiga kilometer ke sekolah setiap hari.",
+          "sv": "Min mamma går tre kilometer till skolan varje dag.",
+          "ro": "Mama mea merge trei kilometri la școală în fiecare zi.",
+          "cs": "Moje matka chodí každý den do školy tři kilometry.",
+          "da": "Min mor går tre kilometer til skole hver dag.",
+          "fi": "Äitini kävelee kolme kilometriä kouluun joka päivä."
+        },
+        "proposed_sentence": "母は毎日三粁歩いて学校に行きます。",
+        "proposed_translations": {
+          "en": "My mother walks three kilometers to school every day.",
+          "es": "Mi madre camina tres kilómetros para ir a la escuela todos los días.",
+          "fr": "Ma mère marche trois kilomètres pour aller à l’école tous les jours.",
+          "de": "Meine Mutter läuft jeden Tag drei Kilometer zur Schule.",
+          "it": "Mia madre cammina per tre chilometri per andare a scuola ogni giorno.",
+          "ko": "어머니는 매일 3km를 걸어서 학교에 가십니다.",
+          "zh-Hans": "我妈妈每天步行三公里去上学。",
+          "yue": "我媽咪每日步行三公里去返學。",
+          "ru": "Моя мама каждый день ходит в школу пешком три километра.",
+          "pt": "Minha mãe caminha três quilômetros para a escola todos os dias.",
+          "he": "אמא שלי הולכת כל יום שלושה קילומטרים לבית הספר.",
+          "tr": "Annem her gün okula üç kilometre yürüyerek gidiyor.",
+          "vi": "Mẹ tôi đi bộ ba km đến trường mỗi ngày.",
+          "ar": "تسير والدتي لمسافة ثلاثة كيلومترات إلى المدرسة كل يوم.",
+          "nl": "Mijn moeder loopt elke dag drie kilometer naar school.",
+          "uk": "Моя мама щодня ходить до школи пішки три кілометри.",
+          "hu": "Anyám minden nap három kilométert gyalogol az iskolába.",
+          "hi": "मेरी मां हर दिन तीन किलोमीटर पैदल चलकर स्कूल जाती हैं।",
+          "pl": "Moja mama codziennie idzie trzy kilometry do szkoły.",
+          "el": "Η μητέρα μου περπατάει τρία χιλιόμετρα μέχρι το σχολείο κάθε μέρα.",
+          "nb": "Moren min går tre kilometer til skolen hver dag.",
+          "id": "Ibu saya berjalan kaki tiga kilometer ke sekolah setiap hari.",
+          "sv": "Min mamma går tre kilometer till skolan varje dag.",
+          "ro": "Mama mea merge trei kilometri la școală în fiecare zi.",
+          "cs": "Moje matka chodí každý den do školy tři kilometry.",
+          "da": "Min mor går tre kilometer til skole hver dag.",
+          "fi": "Äitini kävelee kolme kilometriä kouluun joka päivä."
+        },
+        "old_ruby_source": "母[はは]は毎日[まいにち]三[さん]粁[きろめーとる]歩[ある]いて学校[がっこう]に行[い]きます。",
+        "proposed_ruby_source": "母[はは]は毎日[まいにち]三[さん]粁[粁]歩[ある]いて学校[がっこう]に行[い]きます。",
+        "old_japanese": "母は毎日三粁歩いて学校に行きます。",
+        "old_english": "My mother walks three kilometers to school every day.",
+        "proposed_japanese": "母は毎日三粁歩いて学校に行きます。",
+        "proposed_english": "My mother walks three kilometers to school every day.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "ja",
+          "sentence": "母は毎日三粁歩いて学校に行きます。",
+          "tokens": [
+            {
+              "surface": "母",
+              "lemma": "母",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 0,
+              "end": 1,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "はは",
+              "ruby_text": "母[はは]",
+              "ruby_spans": [
+                {
+                  "base": "母",
+                  "reading": "はは",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "はは",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "は",
+              "lemma": "は",
+              "pos": "助詞/係助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 1,
+              "end": 2,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "は",
+              "ruby_text": "は",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "は"
+            },
+            {
+              "surface": "毎日",
+              "lemma": "毎日",
+              "pos": "名詞/普通名詞/副詞可能/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 2,
+              "end": 4,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "まいにち",
+              "ruby_text": "毎日[まいにち]",
+              "ruby_spans": [
+                {
+                  "base": "毎日",
+                  "reading": "まいにち",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "まいにち",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "三",
+              "lemma": "三",
+              "pos": "名詞/数詞/*/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 4,
+              "end": 5,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "さん",
+              "ruby_text": "三[さん]",
+              "ruby_spans": [
+                {
+                  "base": "三",
+                  "reading": "さん",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "さん",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "粁",
+              "lemma": "粁",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 5,
+              "end": 6,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "粁",
+              "ruby_text": "粁[粁]",
+              "ruby_spans": [
+                {
+                  "base": "粁",
+                  "reading": "粁",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "粁",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "歩い",
+              "lemma": "歩く",
+              "pos": "動詞/一般/*/*/五段-カ行/連用形-イ音便",
+              "upos": "VERB",
+              "xpos": "動詞",
+              "feats": {},
+              "start": 6,
+              "end": 8,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "あるい",
+              "ruby_text": "歩[ある]い",
+              "ruby_spans": [
+                {
+                  "base": "歩",
+                  "reading": "ある",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "あるい",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "て",
+              "lemma": "て",
+              "pos": "助詞/接続助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 8,
+              "end": 9,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "て",
+              "ruby_text": "て",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "て"
+            },
+            {
+              "surface": "学校",
+              "lemma": "学校",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 9,
+              "end": 11,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "がっこう",
+              "ruby_text": "学校[がっこう]",
+              "ruby_spans": [
+                {
+                  "base": "学校",
+                  "reading": "がっこう",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "がっこう",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "に",
+              "lemma": "に",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 11,
+              "end": 12,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "に",
+              "ruby_text": "に",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "に"
+            },
+            {
+              "surface": "行き",
+              "lemma": "行く",
+              "pos": "動詞/非自立可能/*/*/五段-カ行/連用形-一般",
+              "upos": "VERB",
+              "xpos": "動詞",
+              "feats": {},
+              "start": 12,
+              "end": 14,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "いき",
+              "ruby_text": "行[い]き",
+              "ruby_spans": [
+                {
+                  "base": "行",
+                  "reading": "い",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "いき",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "ます",
+              "lemma": "ます",
+              "pos": "助動詞/*/*/*/助動詞-マス/終止形-一般",
+              "upos": "AUX",
+              "xpos": "助動詞",
+              "feats": {},
+              "start": 14,
+              "end": 16,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "ます",
+              "ruby_text": "ます",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "ます"
+            },
+            {
+              "surface": "。",
+              "lemma": "。",
+              "pos": "補助記号/句点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 16,
+              "end": 17,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "。",
+              "ruby_text": "。",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "。"
+            }
+          ],
+          "reading": "はははまいにちさん粁あるいてがっこうにいきます。",
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "warnings": [
+            "mediawiki ruby hints applied"
+          ]
+        },
+        "generated_tokens": [
+          {
+            "surface": "母",
+            "lemma": "母",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 0,
+            "end": 1,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "はは",
+            "ruby_text": "母[はは]",
+            "ruby_spans": [
+              {
+                "base": "母",
+                "reading": "はは",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "はは",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "は",
+            "lemma": "は",
+            "pos": "助詞/係助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 1,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "は",
+            "ruby_text": "は",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "は"
+          },
+          {
+            "surface": "毎日",
+            "lemma": "毎日",
+            "pos": "名詞/普通名詞/副詞可能/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 2,
+            "end": 4,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "まいにち",
+            "ruby_text": "毎日[まいにち]",
+            "ruby_spans": [
+              {
+                "base": "毎日",
+                "reading": "まいにち",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "まいにち",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "三",
+            "lemma": "三",
+            "pos": "名詞/数詞/*/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 4,
+            "end": 5,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "さん",
+            "ruby_text": "三[さん]",
+            "ruby_spans": [
+              {
+                "base": "三",
+                "reading": "さん",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "さん",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "粁",
+            "lemma": "粁",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 5,
+            "end": 6,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "粁",
+            "ruby_text": "粁[粁]",
+            "ruby_spans": [
+              {
+                "base": "粁",
+                "reading": "粁",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "粁",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "歩い",
+            "lemma": "歩く",
+            "pos": "動詞/一般/*/*/五段-カ行/連用形-イ音便",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 6,
+            "end": 8,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "あるい",
+            "ruby_text": "歩[ある]い",
+            "ruby_spans": [
+              {
+                "base": "歩",
+                "reading": "ある",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "あるい",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "て",
+            "lemma": "て",
+            "pos": "助詞/接続助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 8,
+            "end": 9,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "て",
+            "ruby_text": "て",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "て"
+          },
+          {
+            "surface": "学校",
+            "lemma": "学校",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 9,
+            "end": 11,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "がっこう",
+            "ruby_text": "学校[がっこう]",
+            "ruby_spans": [
+              {
+                "base": "学校",
+                "reading": "がっこう",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "がっこう",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "に",
+            "lemma": "に",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 11,
+            "end": 12,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "に",
+            "ruby_text": "に",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "に"
+          },
+          {
+            "surface": "行き",
+            "lemma": "行く",
+            "pos": "動詞/非自立可能/*/*/五段-カ行/連用形-一般",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 12,
+            "end": 14,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "いき",
+            "ruby_text": "行[い]き",
+            "ruby_spans": [
+              {
+                "base": "行",
+                "reading": "い",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "いき",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "ます",
+            "lemma": "ます",
+            "pos": "助動詞/*/*/*/助動詞-マス/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 14,
+            "end": 16,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ます",
+            "ruby_text": "ます",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "ます"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 16,
+            "end": 17,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
+          }
+        ],
+        "generated_reading": "はははまいにちさん粁あるいてがっこうにいきます。",
+        "analyzer": "sudachipy_sudachidict_core_c",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:37:41Z",
+        "updated_utc": "2026-10-17T07:38:16Z",
+        "applied_utc": "2026-10-17T07:38:16Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      },
+      {
+        "id": "sentprop-fdca11e12dbd42c8",
+        "status": "applied",
+        "type": "ruby_update",
+        "item_id": "ja_n5:e8c429a433d72404",
+        "pack_code": "ja_n5",
+        "entry_id": "粁",
+        "language": "ja",
+        "sentence_index": 3,
+        "old_sentence": "山頂まで五粁登るのは大変だ。",
+        "old_translations": {
+          "en": "Climbing five kilometers to the summit is tough.",
+          "es": "Subir cinco kilómetros hasta la cima es duro.",
+          "fr": "Grimper cinq kilomètres jusqu’au sommet est difficile.",
+          "de": "Fünf Kilometer bis zum Gipfel zu erklimmen, ist hart.",
+          "it": "Salire per cinque chilometri fino alla vetta è difficile.",
+          "ko": "정상까지 5km를 오르는 것은 힘든 일입니다.",
+          "zh-Hans": "爬 5 公里到山顶很艰难。",
+          "yue": "爬五公里上山頂好艱難。",
+          "ru": "Подняться на пять километров до вершины сложно.",
+          "pt": "Subir cinco quilômetros até o cume é difícil.",
+          "he": "טיפוס חמישה קילומטרים לפסגה הוא קשה.",
+          "tr": "Zirveye beş kilometre tırmanmak zordur.",
+          "vi": "Leo năm km lên đỉnh núi rất khó khăn.",
+          "ar": "الصعود لمسافة خمسة كيلومترات إلى القمة أمر صعب.",
+          "nl": "Vijf kilometer klimmen naar de top is zwaar.",
+          "uk": "Піднятися на п'ять кілометрів до вершини важко.",
+          "hu": "Öt kilométert felmászni a csúcsig nehéz.",
+          "hi": "शिखर पर पांच किलोमीटर चढ़ना कठिन है।",
+          "pl": "Wspinaczka przez pięć kilometrów aż na szczyt jest trudna.",
+          "el": "Η ανάβαση πέντε χιλιομέτρων μέχρι την κορυφή είναι δύσκολη.",
+          "nb": "Å klatre fem kilometer til toppen er tøft.",
+          "id": "Mendaki lima kilometer ke puncak itu sulit.",
+          "sv": "Att klättra fem kilometer till toppen är tufft.",
+          "ro": "Urcarea a cinci kilometri până în vârf este dificilă.",
+          "cs": "Vystoupat pět kilometrů na vrchol je náročné.",
+          "da": "Det er hårdt at bestige fem kilometer til toppen.",
+          "fi": "Viiden kilometrin kiipeäminen huipulle on rankkaa."
+        },
+        "proposed_sentence": "山頂まで五粁登るのは大変だ。",
+        "proposed_translations": {
+          "en": "Climbing five kilometers to the summit is tough.",
+          "es": "Subir cinco kilómetros hasta la cima es duro.",
+          "fr": "Grimper cinq kilomètres jusqu’au sommet est difficile.",
+          "de": "Fünf Kilometer bis zum Gipfel zu erklimmen, ist hart.",
+          "it": "Salire per cinque chilometri fino alla vetta è difficile.",
+          "ko": "정상까지 5km를 오르는 것은 힘든 일입니다.",
+          "zh-Hans": "爬 5 公里到山顶很艰难。",
+          "yue": "爬五公里上山頂好艱難。",
+          "ru": "Подняться на пять километров до вершины сложно.",
+          "pt": "Subir cinco quilômetros até o cume é difícil.",
+          "he": "טיפוס חמישה קילומטרים לפסגה הוא קשה.",
+          "tr": "Zirveye beş kilometre tırmanmak zordur.",
+          "vi": "Leo năm km lên đỉnh núi rất khó khăn.",
+          "ar": "الصعود لمسافة خمسة كيلومترات إلى القمة أمر صعب.",
+          "nl": "Vijf kilometer klimmen naar de top is zwaar.",
+          "uk": "Піднятися на п'ять кілометрів до вершини важко.",
+          "hu": "Öt kilométert felmászni a csúcsig nehéz.",
+          "hi": "शिखर पर पांच किलोमीटर चढ़ना कठिन है।",
+          "pl": "Wspinaczka przez pięć kilometrów aż na szczyt jest trudna.",
+          "el": "Η ανάβαση πέντε χιλιομέτρων μέχρι την κορυφή είναι δύσκολη.",
+          "nb": "Å klatre fem kilometer til toppen er tøft.",
+          "id": "Mendaki lima kilometer ke puncak itu sulit.",
+          "sv": "Att klättra fem kilometer till toppen är tufft.",
+          "ro": "Urcarea a cinci kilometri până în vârf este dificilă.",
+          "cs": "Vystoupat pět kilometrů na vrchol je náročné.",
+          "da": "Det er hårdt at bestige fem kilometer til toppen.",
+          "fi": "Viiden kilometrin kiipeäminen huipulle on rankkaa."
+        },
+        "old_ruby_source": "山頂[さんちょう]まで五[ご]粁[きろめーとる]登[のぼ]るのは大変[たいへん]だ。",
+        "proposed_ruby_source": "山頂[さんちょう]まで五[ご]粁[粁]登[のぼ]るのは大変[たいへん]だ。",
+        "old_japanese": "山頂まで五粁登るのは大変だ。",
+        "old_english": "Climbing five kilometers to the summit is tough.",
+        "proposed_japanese": "山頂まで五粁登るのは大変だ。",
+        "proposed_english": "Climbing five kilometers to the summit is tough.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "ja",
+          "sentence": "山頂まで五粁登るのは大変だ。",
+          "tokens": [
+            {
+              "surface": "山頂",
+              "lemma": "山頂",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 0,
+              "end": 2,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "さんちょう",
+              "ruby_text": "山頂[さんちょう]",
+              "ruby_spans": [
+                {
+                  "base": "山頂",
+                  "reading": "さんちょう",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "さんちょう",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "まで",
+              "lemma": "まで",
+              "pos": "助詞/副助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 2,
+              "end": 4,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "まで",
+              "ruby_text": "まで",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "まで"
+            },
+            {
+              "surface": "五",
+              "lemma": "五",
+              "pos": "名詞/数詞/*/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 4,
+              "end": 5,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "ご",
+              "ruby_text": "五[ご]",
+              "ruby_spans": [
+                {
+                  "base": "五",
+                  "reading": "ご",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "ご",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "粁",
+              "lemma": "粁",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 5,
+              "end": 6,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "粁",
+              "ruby_text": "粁[粁]",
+              "ruby_spans": [
+                {
+                  "base": "粁",
+                  "reading": "粁",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "粁",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "登る",
+              "lemma": "登る",
+              "pos": "動詞/一般/*/*/五段-ラ行/連体形-一般",
+              "upos": "VERB",
+              "xpos": "動詞",
+              "feats": {},
+              "start": 6,
+              "end": 8,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "のぼる",
+              "ruby_text": "登[のぼ]る",
+              "ruby_spans": [
+                {
+                  "base": "登",
+                  "reading": "のぼ",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "のぼる",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "の",
+              "lemma": "の",
+              "pos": "助詞/準体助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 8,
+              "end": 9,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "の",
+              "ruby_text": "の",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "の"
+            },
+            {
+              "surface": "は",
+              "lemma": "は",
+              "pos": "助詞/係助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 9,
+              "end": 10,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "は",
+              "ruby_text": "は",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "は"
+            },
+            {
+              "surface": "大変",
+              "lemma": "大変",
+              "pos": "形状詞/一般/*/*/*/*",
+              "upos": "ADJ",
+              "xpos": "形状詞",
+              "feats": {},
+              "start": 10,
+              "end": 12,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "たいへん",
+              "ruby_text": "大変[たいへん]",
+              "ruby_spans": [
+                {
+                  "base": "大変",
+                  "reading": "たいへん",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "たいへん",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "だ",
+              "lemma": "だ",
+              "pos": "助動詞/*/*/*/助動詞-ダ/終止形-一般",
+              "upos": "AUX",
+              "xpos": "助動詞",
+              "feats": {},
+              "start": 12,
+              "end": 13,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "だ",
+              "ruby_text": "だ",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "だ"
+            },
+            {
+              "surface": "。",
+              "lemma": "。",
+              "pos": "補助記号/句点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 13,
+              "end": 14,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "。",
+              "ruby_text": "。",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "。"
+            }
+          ],
+          "reading": "さんちょうまでご粁のぼるのはたいへんだ。",
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "warnings": [
+            "mediawiki ruby hints applied"
+          ]
+        },
+        "generated_tokens": [
+          {
+            "surface": "山頂",
+            "lemma": "山頂",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "さんちょう",
+            "ruby_text": "山頂[さんちょう]",
+            "ruby_spans": [
+              {
+                "base": "山頂",
+                "reading": "さんちょう",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "さんちょう",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "まで",
+            "lemma": "まで",
+            "pos": "助詞/副助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 2,
+            "end": 4,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "まで",
+            "ruby_text": "まで",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "まで"
+          },
+          {
+            "surface": "五",
+            "lemma": "五",
+            "pos": "名詞/数詞/*/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 4,
+            "end": 5,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ご",
+            "ruby_text": "五[ご]",
+            "ruby_spans": [
+              {
+                "base": "五",
+                "reading": "ご",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "ご",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "粁",
+            "lemma": "粁",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 5,
+            "end": 6,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "粁",
+            "ruby_text": "粁[粁]",
+            "ruby_spans": [
+              {
+                "base": "粁",
+                "reading": "粁",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "粁",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "登る",
+            "lemma": "登る",
+            "pos": "動詞/一般/*/*/五段-ラ行/連体形-一般",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 6,
+            "end": 8,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "のぼる",
+            "ruby_text": "登[のぼ]る",
+            "ruby_spans": [
+              {
+                "base": "登",
+                "reading": "のぼ",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "のぼる",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "の",
+            "lemma": "の",
+            "pos": "助詞/準体助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 8,
+            "end": 9,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "の",
+            "ruby_text": "の",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "の"
+          },
+          {
+            "surface": "は",
+            "lemma": "は",
+            "pos": "助詞/係助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 9,
+            "end": 10,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "は",
+            "ruby_text": "は",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "は"
+          },
+          {
+            "surface": "大変",
+            "lemma": "大変",
+            "pos": "形状詞/一般/*/*/*/*",
+            "upos": "ADJ",
+            "xpos": "形状詞",
+            "feats": {},
+            "start": 10,
+            "end": 12,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "たいへん",
+            "ruby_text": "大変[たいへん]",
+            "ruby_spans": [
+              {
+                "base": "大変",
+                "reading": "たいへん",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "たいへん",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "だ",
+            "lemma": "だ",
+            "pos": "助動詞/*/*/*/助動詞-ダ/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 12,
+            "end": 13,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "だ",
+            "ruby_text": "だ",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "だ"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 13,
+            "end": 14,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
+          }
+        ],
+        "generated_reading": "さんちょうまでご粁のぼるのはたいへんだ。",
+        "analyzer": "sudachipy_sudachidict_core_c",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:37:41Z",
+        "updated_utc": "2026-10-17T07:38:16Z",
+        "applied_utc": "2026-10-17T07:38:16Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      },
+      {
+        "id": "sentprop-43959f7adc4cc602",
+        "status": "applied",
+        "type": "ruby_update",
+        "item_id": "ja_n5:e8c429a433d72404",
+        "pack_code": "ja_n5",
+        "entry_id": "粁",
+        "language": "ja",
+        "sentence_index": 4,
+        "old_sentence": "東京から京都までは約五百粁です。",
+        "old_translations": {
+          "en": "It’s about 500 kilometers from Tokyo to Kyoto.",
+          "es": "De Tokio a Kioto hay unos 500 kilómetros.",
+          "fr": "De Tokyo à Kyoto, il y a environ 500 kilomètres.",
+          "de": "Von Tokio nach Kyoto sind es etwa 500 Kilometer.",
+          "it": "Da Tokyo a Kyoto sono circa 500 chilometri.",
+          "ko": "도쿄에서 교토까지는 약 500km입니다.",
+          "zh-Hans": "从东京到京都大约有 500 公里。",
+          "yue": "由東京到京都大約有500公里。",
+          "ru": "От Токио до Киото около 500 километров.",
+          "pt": "De Tóquio a Quioto são cerca de 500 quilômetros.",
+          "he": "מטוקיו לקיוטו זה כ-500 קילומטרים.",
+          "tr": "Tokyo'dan Kyoto'ya yaklaşık 500 kilometredir.",
+          "vi": "Từ Tokyo đến Kyoto khoảng 500 km.",
+          "ar": "من طوكيو إلى كيوتو حوالي 500 كيلومتر.",
+          "nl": "Van Tokio naar Kyoto is ongeveer 500 kilometer.",
+          "uk": "Від Токіо до Кіото близько 500 кілометрів.",
+          "hu": "Tokiótól Kiotóig körülbelül 500 kilométer van.",
+          "hi": "टोक्यो से क्योटो तक की दूरी लगभग 500 किलोमीटर है।",
+          "pl": "Z Tokio do Kioto jest około 500 kilometrów.",
+          "el": "Από το Τόκιο στο Κιότο είναι περίπου 500 χιλιόμετρα.",
+          "nb": "Fra Tokyo til Kyoto er det omtrent 500 kilometer.",
+          "id": "Dari Tokyo ke Kyoto adalah sekitar 500 kilometer.",
+          "sv": "Från Tokyo till Kyoto är det cirka 500 kilometer.",
+          "ro": "De la Tokyo la Kyoto sunt aproximativ 500 de kilometri.",
+          "cs": "Z Tokia do Kjóta je to asi 500 kilometrů.",
+          "da": "Fra Tokyo til Kyoto er der omkring 500 kilometer.",
+          "fi": "Tokiosta Kiotoon on noin 500 kilometriä."
+        },
+        "proposed_sentence": "東京から京都までは約五百粁です。",
+        "proposed_translations": {
+          "en": "It’s about 500 kilometers from Tokyo to Kyoto.",
+          "es": "De Tokio a Kioto hay unos 500 kilómetros.",
+          "fr": "De Tokyo à Kyoto, il y a environ 500 kilomètres.",
+          "de": "Von Tokio nach Kyoto sind es etwa 500 Kilometer.",
+          "it": "Da Tokyo a Kyoto sono circa 500 chilometri.",
+          "ko": "도쿄에서 교토까지는 약 500km입니다.",
+          "zh-Hans": "从东京到京都大约有 500 公里。",
+          "yue": "由東京到京都大約有500公里。",
+          "ru": "От Токио до Киото около 500 километров.",
+          "pt": "De Tóquio a Quioto são cerca de 500 quilômetros.",
+          "he": "מטוקיו לקיוטו זה כ-500 קילומטרים.",
+          "tr": "Tokyo'dan Kyoto'ya yaklaşık 500 kilometredir.",
+          "vi": "Từ Tokyo đến Kyoto khoảng 500 km.",
+          "ar": "من طوكيو إلى كيوتو حوالي 500 كيلومتر.",
+          "nl": "Van Tokio naar Kyoto is ongeveer 500 kilometer.",
+          "uk": "Від Токіо до Кіото близько 500 кілометрів.",
+          "hu": "Tokiótól Kiotóig körülbelül 500 kilométer van.",
+          "hi": "टोक्यो से क्योटो तक की दूरी लगभग 500 किलोमीटर है।",
+          "pl": "Z Tokio do Kioto jest około 500 kilometrów.",
+          "el": "Από το Τόκιο στο Κιότο είναι περίπου 500 χιλιόμετρα.",
+          "nb": "Fra Tokyo til Kyoto er det omtrent 500 kilometer.",
+          "id": "Dari Tokyo ke Kyoto adalah sekitar 500 kilometer.",
+          "sv": "Från Tokyo till Kyoto är det cirka 500 kilometer.",
+          "ro": "De la Tokyo la Kyoto sunt aproximativ 500 de kilometri.",
+          "cs": "Z Tokia do Kjóta je to asi 500 kilometrů.",
+          "da": "Fra Tokyo til Kyoto er der omkring 500 kilometer.",
+          "fi": "Tokiosta Kiotoon on noin 500 kilometriä."
+        },
+        "old_ruby_source": "東京[とうきょう]から京都[きょうと]までは約[やく]五百[ごひゃく]粁[きろめーとる]です。",
+        "proposed_ruby_source": "東京[とうきょう]から京都[きょうと]までは約[やく]五百[ごひゃく]粁[粁]です。",
+        "old_japanese": "東京から京都までは約五百粁です。",
+        "old_english": "It’s about 500 kilometers from Tokyo to Kyoto.",
+        "proposed_japanese": "東京から京都までは約五百粁です。",
+        "proposed_english": "It’s about 500 kilometers from Tokyo to Kyoto.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "ja",
+          "sentence": "東京から京都までは約五百粁です。",
+          "tokens": [
+            {
+              "surface": "東京",
+              "lemma": "東京",
+              "pos": "名詞/固有名詞/地名/一般/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 0,
+              "end": 2,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "とうきょう",
+              "ruby_text": "東京[とうきょう]",
+              "ruby_spans": [
+                {
+                  "base": "東京",
+                  "reading": "とうきょう",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "とうきょう",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "から",
+              "lemma": "から",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 2,
+              "end": 4,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "から",
+              "ruby_text": "から",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "から"
+            },
+            {
+              "surface": "京都",
+              "lemma": "京都",
+              "pos": "名詞/固有名詞/地名/一般/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 4,
+              "end": 6,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "きょうと",
+              "ruby_text": "京都[きょうと]",
+              "ruby_spans": [
+                {
+                  "base": "京都",
+                  "reading": "きょうと",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "きょうと",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "まで",
+              "lemma": "まで",
+              "pos": "助詞/副助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 6,
+              "end": 8,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "まで",
+              "ruby_text": "まで",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "まで"
+            },
+            {
+              "surface": "は",
+              "lemma": "は",
+              "pos": "助詞/係助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 8,
+              "end": 9,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "は",
+              "ruby_text": "は",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "は"
+            },
+            {
+              "surface": "約",
+              "lemma": "約",
+              "pos": "接頭辞/*/*/*/*/*",
+              "upos": "PREFIX",
+              "xpos": "接頭辞",
+              "feats": {},
+              "start": 9,
+              "end": 10,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "やく",
+              "ruby_text": "約[やく]",
+              "ruby_spans": [
+                {
+                  "base": "約",
+                  "reading": "やく",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "やく",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "五百",
+              "lemma": "五百",
+              "pos": "名詞/数詞/*/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 10,
+              "end": 12,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "ごひゃく",
+              "ruby_text": "五百[ごひゃく]",
+              "ruby_spans": [
+                {
+                  "base": "五百",
+                  "reading": "ごひゃく",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "ごひゃく",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "粁",
+              "lemma": "粁",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 12,
+              "end": 13,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "粁",
+              "ruby_text": "粁[粁]",
+              "ruby_spans": [
+                {
+                  "base": "粁",
+                  "reading": "粁",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "粁",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "です",
+              "lemma": "です",
+              "pos": "助動詞/*/*/*/助動詞-デス/終止形-一般",
+              "upos": "AUX",
+              "xpos": "助動詞",
+              "feats": {},
+              "start": 13,
+              "end": 15,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "です",
+              "ruby_text": "です",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "です"
+            },
+            {
+              "surface": "。",
+              "lemma": "。",
+              "pos": "補助記号/句点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 15,
+              "end": 16,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "。",
+              "ruby_text": "。",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "。"
+            }
+          ],
+          "reading": "とうきょうからきょうとまではやくごひゃく粁です。",
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "warnings": [
+            "mediawiki ruby hints applied"
+          ]
+        },
+        "generated_tokens": [
+          {
+            "surface": "東京",
+            "lemma": "東京",
+            "pos": "名詞/固有名詞/地名/一般/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "とうきょう",
+            "ruby_text": "東京[とうきょう]",
+            "ruby_spans": [
+              {
+                "base": "東京",
+                "reading": "とうきょう",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "とうきょう",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "から",
+            "lemma": "から",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 2,
+            "end": 4,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "から",
+            "ruby_text": "から",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "から"
+          },
+          {
+            "surface": "京都",
+            "lemma": "京都",
+            "pos": "名詞/固有名詞/地名/一般/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 4,
+            "end": 6,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "きょうと",
+            "ruby_text": "京都[きょうと]",
+            "ruby_spans": [
+              {
+                "base": "京都",
+                "reading": "きょうと",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "きょうと",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "まで",
+            "lemma": "まで",
+            "pos": "助詞/副助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 6,
+            "end": 8,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "まで",
+            "ruby_text": "まで",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "まで"
+          },
+          {
+            "surface": "は",
+            "lemma": "は",
+            "pos": "助詞/係助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 8,
+            "end": 9,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "は",
+            "ruby_text": "は",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "は"
+          },
+          {
+            "surface": "約",
+            "lemma": "約",
+            "pos": "接頭辞/*/*/*/*/*",
+            "upos": "PREFIX",
+            "xpos": "接頭辞",
+            "feats": {},
+            "start": 9,
+            "end": 10,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "やく",
+            "ruby_text": "約[やく]",
+            "ruby_spans": [
+              {
+                "base": "約",
+                "reading": "やく",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "やく",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "五百",
+            "lemma": "五百",
+            "pos": "名詞/数詞/*/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 10,
+            "end": 12,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ごひゃく",
+            "ruby_text": "五百[ごひゃく]",
+            "ruby_spans": [
+              {
+                "base": "五百",
+                "reading": "ごひゃく",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "ごひゃく",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "粁",
+            "lemma": "粁",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 12,
+            "end": 13,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "粁",
+            "ruby_text": "粁[粁]",
+            "ruby_spans": [
+              {
+                "base": "粁",
+                "reading": "粁",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "粁",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "です",
+            "lemma": "です",
+            "pos": "助動詞/*/*/*/助動詞-デス/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 13,
+            "end": 15,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "です",
+            "ruby_text": "です",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "です"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 15,
+            "end": 16,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
+          }
+        ],
+        "generated_reading": "とうきょうからきょうとまではやくごひゃく粁です。",
+        "analyzer": "sudachipy_sudachidict_core_c",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:37:41Z",
+        "updated_utc": "2026-10-17T07:38:16Z",
+        "applied_utc": "2026-10-17T07:38:16Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:38:16Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -882,40 +3157,46 @@
         "tokens": [
           {
             "surface": "ここ",
-            "surface_en": "here",
-            "furigana": "ここ",
-            "pos": "pronoun",
             "lemma": "ここ",
-            "difficulty": 1,
-            "explanation": "anaphoric adverb indicating location near the speaker",
+            "pos": "代名詞/*/*/*/*/*",
+            "upos": "PRON",
+            "xpos": "代名詞",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "ここ",
             "ruby_text": "ここ",
             "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "ここ"
           },
           {
             "surface": "から",
-            "surface_en": "from",
-            "furigana": "から",
-            "pos": "particle",
             "lemma": "から",
-            "difficulty": 1,
-            "explanation": "marks the starting point of a distance",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 2,
+            "end": 4,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "から",
             "ruby_text": "から",
             "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "から"
           },
           {
             "surface": "駅",
-            "surface_en": "station",
-            "furigana": "えき",
-            "pos": "noun",
             "lemma": "駅",
-            "difficulty": 13,
-            "explanation": "the endpoint or destination in this context",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 4,
+            "end": 5,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "えき",
             "ruby_text": "駅[えき]",
             "ruby_spans": [
@@ -926,31 +3207,36 @@
                 "length": 1
               }
             ],
-            "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "ruby_confidence": "reviewed",
+            "furigana": "えき",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "まで",
-            "surface_en": "to, until",
-            "furigana": "まで",
-            "pos": "particle",
             "lemma": "まで",
-            "difficulty": 1,
-            "explanation": "marks the endpoint or limit of the distance",
+            "pos": "助詞/副助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 5,
+            "end": 7,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "まで",
             "ruby_text": "まで",
             "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "まで"
           },
           {
             "surface": "二",
-            "surface_en": "two",
-            "furigana": "に",
-            "pos": "numeral",
             "lemma": "二",
-            "difficulty": 1,
-            "explanation": "cardinal number indicating quantity",
+            "pos": "名詞/数詞/*/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 7,
+            "end": 8,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "に",
             "ruby_text": "二[に]",
             "ruby_spans": [
@@ -961,18 +3247,20 @@
                 "length": 1
               }
             ],
-            "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "ruby_confidence": "reviewed",
+            "furigana": "に",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "粁",
-            "surface_en": "kilometer(s)",
-            "furigana": "粁",
-            "pos": "counter",
             "lemma": "粁",
-            "difficulty": 1,
-            "explanation": "unit counter for measuring distance in kilometers",
-            "is_main_word": true,
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 8,
+            "end": 9,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "粁",
             "ruby_text": "粁[粁]",
             "ruby_spans": [
@@ -983,22 +3271,58 @@
                 "length": 1
               }
             ],
-            "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "ruby_confidence": "reviewed",
+            "furigana": "粁",
+            "ruby_source": "mediawiki_sentence_ruby",
+            "is_main_word": true
           },
           {
-            "surface": "あります",
-            "surface_en": "there is",
-            "furigana": "あります",
-            "pos": "verb",
+            "surface": "あり",
             "lemma": "ある",
-            "difficulty": 1,
-            "explanation": "intransitive verb indicating existence (here used for a measured distance)",
-            "reading_kana": "あります",
-            "ruby_text": "あります",
+            "pos": "動詞/非自立可能/*/*/五段-ラ行/連用形-一般",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 9,
+            "end": 11,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "あり",
+            "ruby_text": "あり",
             "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "あり"
+          },
+          {
+            "surface": "ます",
+            "lemma": "ます",
+            "pos": "助動詞/*/*/*/助動詞-マス/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 11,
+            "end": 13,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ます",
+            "ruby_text": "ます",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "ます"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 13,
+            "end": 14,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
           }
         ],
         "difficulty_aggregated": 3
@@ -1008,12 +3332,14 @@
         "tokens": [
           {
             "surface": "母",
-            "surface_en": "(my) mother",
-            "furigana": "はは",
-            "pos": "noun",
             "lemma": "母",
-            "difficulty": 3,
-            "explanation": "the topic or subject (the person who performs the action)",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 0,
+            "end": 1,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "はは",
             "ruby_text": "母[はは]",
             "ruby_spans": [
@@ -1024,31 +3350,36 @@
                 "length": 1
               }
             ],
-            "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "ruby_confidence": "reviewed",
+            "furigana": "はは",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "は",
-            "surface_en": "(topic marker)",
-            "furigana": "は",
-            "pos": "particle",
             "lemma": "は",
-            "difficulty": 1,
-            "explanation": "marks '母' as the topic of the sentence",
+            "pos": "助詞/係助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 1,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "は",
             "ruby_text": "は",
             "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "は"
           },
           {
             "surface": "毎日",
-            "surface_en": "every day",
-            "furigana": "まいにち",
-            "pos": "adverb",
             "lemma": "毎日",
-            "difficulty": 5,
-            "explanation": "indicates frequency of the action",
+            "pos": "名詞/普通名詞/副詞可能/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 2,
+            "end": 4,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "まいにち",
             "ruby_text": "毎日[まいにち]",
             "ruby_spans": [
@@ -1059,17 +3390,20 @@
                 "length": 2
               }
             ],
-            "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "ruby_confidence": "reviewed",
+            "furigana": "まいにち",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "三",
-            "surface_en": "three",
-            "furigana": "さん",
-            "pos": "numeral",
             "lemma": "三",
-            "difficulty": 1,
-            "explanation": "cardinal number indicating quantity",
+            "pos": "名詞/数詞/*/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 4,
+            "end": 5,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "さん",
             "ruby_text": "三[さん]",
             "ruby_spans": [
@@ -1080,18 +3414,20 @@
                 "length": 1
               }
             ],
-            "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "ruby_confidence": "reviewed",
+            "furigana": "さん",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "粁",
-            "surface_en": "kilometer(s)",
-            "furigana": "粁",
-            "pos": "counter",
             "lemma": "粁",
-            "difficulty": 1,
-            "explanation": "unit counter for distance traveled",
-            "is_main_word": true,
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 5,
+            "end": 6,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "粁",
             "ruby_text": "粁[粁]",
             "ruby_spans": [
@@ -1102,19 +3438,23 @@
                 "length": 1
               }
             ],
-            "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "ruby_confidence": "reviewed",
+            "furigana": "粁",
+            "ruby_source": "mediawiki_sentence_ruby",
+            "is_main_word": true
           },
           {
-            "surface": "歩いて",
-            "surface_en": "walking (and)",
-            "furigana": "あるいて",
-            "pos": "verb (te-form)",
+            "surface": "歩い",
             "lemma": "歩く",
-            "difficulty": 1,
-            "explanation": "te-form of '歩く' indicating the manner or means of travel",
-            "reading_kana": "あるいて",
-            "ruby_text": "歩[ある]いて",
+            "pos": "動詞/一般/*/*/五段-カ行/連用形-イ音便",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 6,
+            "end": 8,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "あるい",
+            "ruby_text": "歩[ある]い",
             "ruby_spans": [
               {
                 "base": "歩",
@@ -1123,17 +3463,36 @@
                 "length": 1
               }
             ],
+            "ruby_confidence": "reviewed",
+            "furigana": "あるい",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "て",
+            "lemma": "て",
+            "pos": "助詞/接続助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 8,
+            "end": 9,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "て",
+            "ruby_text": "て",
+            "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "て"
           },
           {
             "surface": "学校",
-            "surface_en": "school",
-            "furigana": "がっこう",
-            "pos": "noun",
             "lemma": "学校",
-            "difficulty": 7,
-            "explanation": "destination of the movement",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 9,
+            "end": 11,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "がっこう",
             "ruby_text": "学校[がっこう]",
             "ruby_spans": [
@@ -1144,33 +3503,38 @@
                 "length": 2
               }
             ],
-            "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "ruby_confidence": "reviewed",
+            "furigana": "がっこう",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "に",
-            "surface_en": "to",
-            "furigana": "に",
-            "pos": "particle",
             "lemma": "に",
-            "difficulty": 1,
-            "explanation": "marks the direction or goal of motion",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 11,
+            "end": 12,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "に",
             "ruby_text": "に",
             "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "に"
           },
           {
-            "surface": "行きます",
-            "surface_en": "go(es)",
-            "furigana": "いきます",
-            "pos": "verb",
+            "surface": "行き",
             "lemma": "行く",
-            "difficulty": 1,
-            "explanation": "polite form of the verb '行く', indicating movement toward a place",
-            "reading_kana": "いきます",
-            "ruby_text": "行[い]きます",
+            "pos": "動詞/非自立可能/*/*/五段-カ行/連用形-一般",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 12,
+            "end": 14,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "いき",
+            "ruby_text": "行[い]き",
             "ruby_spans": [
               {
                 "base": "行",
@@ -1179,8 +3543,41 @@
                 "length": 1
               }
             ],
+            "ruby_confidence": "reviewed",
+            "furigana": "いき",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "ます",
+            "lemma": "ます",
+            "pos": "助動詞/*/*/*/助動詞-マス/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 14,
+            "end": 16,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ます",
+            "ruby_text": "ます",
+            "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "ます"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 16,
+            "end": 17,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
           }
         ],
         "difficulty_aggregated": 4
@@ -1190,12 +3587,14 @@
         "tokens": [
           {
             "surface": "山頂",
-            "surface_en": "mountain summit",
-            "furigana": "さんちょう",
-            "pos": "noun",
             "lemma": "山頂",
-            "difficulty": 51,
-            "explanation": "the goal or endpoint of the climbing action",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "さんちょう",
             "ruby_text": "山頂[さんちょう]",
             "ruby_spans": [
@@ -1206,31 +3605,36 @@
                 "length": 2
               }
             ],
-            "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "ruby_confidence": "reviewed",
+            "furigana": "さんちょう",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "まで",
-            "surface_en": "to, until",
-            "furigana": "まで",
-            "pos": "particle",
             "lemma": "まで",
-            "difficulty": 1,
-            "explanation": "marks the limit or extent of climbing",
+            "pos": "助詞/副助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 2,
+            "end": 4,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "まで",
             "ruby_text": "まで",
             "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "まで"
           },
           {
             "surface": "五",
-            "surface_en": "five",
-            "furigana": "ご",
-            "pos": "numeral",
             "lemma": "五",
-            "difficulty": 2,
-            "explanation": "cardinal number indicating quantity",
+            "pos": "名詞/数詞/*/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 4,
+            "end": 5,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "ご",
             "ruby_text": "五[ご]",
             "ruby_spans": [
@@ -1241,18 +3645,20 @@
                 "length": 1
               }
             ],
-            "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "ruby_confidence": "reviewed",
+            "furigana": "ご",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "粁",
-            "surface_en": "kilometer(s)",
-            "furigana": "粁",
-            "pos": "counter",
             "lemma": "粁",
-            "difficulty": 1,
-            "explanation": "unit counter for distance to be climbed",
-            "is_main_word": true,
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 5,
+            "end": 6,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "粁",
             "ruby_text": "粁[粁]",
             "ruby_spans": [
@@ -1263,17 +3669,21 @@
                 "length": 1
               }
             ],
-            "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "ruby_confidence": "reviewed",
+            "furigana": "粁",
+            "ruby_source": "mediawiki_sentence_ruby",
+            "is_main_word": true
           },
           {
             "surface": "登る",
-            "surface_en": "climb",
-            "furigana": "のぼる",
-            "pos": "verb",
             "lemma": "登る",
-            "difficulty": 1,
-            "explanation": "dictionary form of the verb indicating the action of ascending",
+            "pos": "動詞/一般/*/*/五段-ラ行/連体形-一般",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 6,
+            "end": 8,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "のぼる",
             "ruby_text": "登[のぼ]る",
             "ruby_spans": [
@@ -1284,45 +3694,52 @@
                 "length": 1
               }
             ],
-            "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "ruby_confidence": "reviewed",
+            "furigana": "のぼる",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "の",
-            "surface_en": "(nominalizer)",
-            "furigana": "の",
-            "pos": "particle",
             "lemma": "の",
-            "difficulty": 1,
-            "explanation": "turns the preceding clause into a noun phrase",
+            "pos": "助詞/準体助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 8,
+            "end": 9,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "の",
             "ruby_text": "の",
             "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "の"
           },
           {
             "surface": "は",
-            "surface_en": "(topic marker)",
-            "furigana": "は",
-            "pos": "particle",
             "lemma": "は",
-            "difficulty": 1,
-            "explanation": "marks the nominalized clause as the topic",
+            "pos": "助詞/係助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 9,
+            "end": 10,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "は",
             "ruby_text": "は",
             "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "は"
           },
           {
             "surface": "大変",
-            "surface_en": "tough, hard",
-            "furigana": "たいへん",
-            "pos": "na-adjective",
             "lemma": "大変",
-            "difficulty": 15,
-            "explanation": "describes the difficulty of the action",
+            "pos": "形状詞/一般/*/*/*/*",
+            "upos": "ADJ",
+            "xpos": "形状詞",
+            "feats": {},
+            "start": 10,
+            "end": 12,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "たいへん",
             "ruby_text": "大変[たいへん]",
             "ruby_spans": [
@@ -1333,22 +3750,41 @@
                 "length": 2
               }
             ],
-            "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "ruby_confidence": "reviewed",
+            "furigana": "たいへん",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "だ",
-            "surface_en": "is",
-            "furigana": "だ",
-            "pos": "copula",
             "lemma": "だ",
-            "difficulty": 1,
-            "explanation": "asserts the predicate as a plain-state copula",
+            "pos": "助動詞/*/*/*/助動詞-ダ/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 12,
+            "end": 13,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "だ",
             "ruby_text": "だ",
             "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "だ"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 13,
+            "end": 14,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
           }
         ],
         "difficulty_aggregated": 4
@@ -1358,12 +3794,14 @@
         "tokens": [
           {
             "surface": "東京",
-            "surface_en": "Tokyo",
-            "furigana": "とうきょう",
-            "pos": "noun",
             "lemma": "東京",
-            "difficulty": 6,
-            "explanation": "the starting point of the measured distance",
+            "pos": "名詞/固有名詞/地名/一般/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "とうきょう",
             "ruby_text": "東京[とうきょう]",
             "ruby_spans": [
@@ -1374,31 +3812,36 @@
                 "length": 2
               }
             ],
-            "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "ruby_confidence": "reviewed",
+            "furigana": "とうきょう",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "から",
-            "surface_en": "from",
-            "furigana": "から",
-            "pos": "particle",
             "lemma": "から",
-            "difficulty": 1,
-            "explanation": "marks the origin of the distance",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 2,
+            "end": 4,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "から",
             "ruby_text": "から",
             "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "から"
           },
           {
             "surface": "京都",
-            "surface_en": "Kyoto",
-            "furigana": "きょうと",
-            "pos": "noun",
             "lemma": "京都",
-            "difficulty": 12,
-            "explanation": "the endpoint of the measured distance",
+            "pos": "名詞/固有名詞/地名/一般/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 4,
+            "end": 6,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "きょうと",
             "ruby_text": "京都[きょうと]",
             "ruby_spans": [
@@ -1409,45 +3852,52 @@
                 "length": 2
               }
             ],
-            "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "ruby_confidence": "reviewed",
+            "furigana": "きょうと",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "まで",
-            "surface_en": "to, until",
-            "furigana": "まで",
-            "pos": "particle",
             "lemma": "まで",
-            "difficulty": 1,
-            "explanation": "marks the limit or boundary of the distance",
+            "pos": "助詞/副助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 6,
+            "end": 8,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "まで",
             "ruby_text": "まで",
             "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "まで"
           },
           {
             "surface": "は",
-            "surface_en": "(topic marker)",
-            "furigana": "は",
-            "pos": "particle",
             "lemma": "は",
-            "difficulty": 1,
-            "explanation": "sets up '東京から京都まで' as the topic of the sentence",
+            "pos": "助詞/係助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 8,
+            "end": 9,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "は",
             "ruby_text": "は",
             "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "は"
           },
           {
             "surface": "約",
-            "surface_en": "approximately",
-            "furigana": "やく",
-            "pos": "adverb",
             "lemma": "約",
-            "difficulty": 14,
-            "explanation": "indicates an approximate quantity",
+            "pos": "接頭辞/*/*/*/*/*",
+            "upos": "PREFIX",
+            "xpos": "接頭辞",
+            "feats": {},
+            "start": 9,
+            "end": 10,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "やく",
             "ruby_text": "約[やく]",
             "ruby_spans": [
@@ -1458,17 +3908,20 @@
                 "length": 1
               }
             ],
-            "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "ruby_confidence": "reviewed",
+            "furigana": "やく",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "五百",
-            "surface_en": "five hundred",
-            "furigana": "ごひゃく",
-            "pos": "numeral",
             "lemma": "五百",
-            "difficulty": 4,
-            "explanation": "cardinal number indicating quantity",
+            "pos": "名詞/数詞/*/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 10,
+            "end": 12,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "ごひゃく",
             "ruby_text": "五百[ごひゃく]",
             "ruby_spans": [
@@ -1479,18 +3932,20 @@
                 "length": 2
               }
             ],
-            "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "ruby_confidence": "reviewed",
+            "furigana": "ごひゃく",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "粁",
-            "surface_en": "kilometer(s)",
-            "furigana": "粁",
-            "pos": "counter",
             "lemma": "粁",
-            "difficulty": 1,
-            "explanation": "unit counter for distance",
-            "is_main_word": true,
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 12,
+            "end": 13,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "粁",
             "ruby_text": "粁[粁]",
             "ruby_spans": [
@@ -1501,22 +3956,42 @@
                 "length": 1
               }
             ],
-            "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "ruby_confidence": "reviewed",
+            "furigana": "粁",
+            "ruby_source": "mediawiki_sentence_ruby",
+            "is_main_word": true
           },
           {
             "surface": "です",
-            "surface_en": "is",
-            "furigana": "です",
-            "pos": "copula",
             "lemma": "です",
-            "difficulty": 1,
-            "explanation": "polite copula marking a statement",
+            "pos": "助動詞/*/*/*/助動詞-デス/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 13,
+            "end": 15,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "です",
             "ruby_text": "です",
             "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "です"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 15,
+            "end": 16,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
           }
         ],
         "difficulty_aggregated": 4
@@ -1586,7 +4061,7 @@
       "It is two kilometers from here to the station.",
       "My mother walks three kilometers to school every day.",
       "Climbing five kilometers to the summit is tough.",
-      "From Tokyo to Kyoto is about 500 kilometers."
+      "It’s about 500 kilometers from Tokyo to Kyoto."
     ],
     "es": [
       "Hay dos kilómetros desde aquí hasta la estación.",
@@ -1621,17 +4096,17 @@
     "hu": [
       "Innen két kilométer van az állomásig.",
       "Anyám minden nap három kilométert gyalogol az iskolába.",
-      "Öt киломétert megmászni a csúcsра nehéz.",
+      "Öt kilométert felmászni a csúcsig nehéz.",
       "Tokiótól Kiotóig körülbelül 500 kilométer van."
     ],
     "id": [
       "Jaraknya dua kilometer dari sini ke stasiun.",
-      "Ibu saya berjalan kaki три kilometer ke sekolah setiap hari.",
+      "Ibu saya berjalan kaki tiga kilometer ke sekolah setiap hari.",
       "Mendaki lima kilometer ke puncak itu sulit.",
       "Dari Tokyo ke Kyoto adalah sekitar 500 kilometer."
     ],
     "it": [
-      "Da qui si trovano due chilometri fino alla stazione.",
+      "Da qui alla stazione ci sono due chilometri.",
       "Mia madre cammina per tre chilometri per andare a scuola ogni giorno.",
       "Salire per cinque chilometri fino alla vetta è difficile.",
       "Da Tokyo a Kyoto sono circa 500 chilometri."
@@ -1650,14 +4125,14 @@
     ],
     "nl": [
       "Vanaf hier is het twee kilometer naar het station.",
-      "Mijn moeder loopt elke день drie kilometer naar school.",
+      "Mijn moeder loopt elke dag drie kilometer naar school.",
       "Vijf kilometer klimmen naar de top is zwaar.",
       "Van Tokio naar Kyoto is ongeveer 500 kilometer."
     ],
     "pl": [
-      "Do dworca są stąd два kilometry.",
+      "Stąd do dworca są dwa kilometry.",
       "Moja mama codziennie idzie trzy kilometry do szkoły.",
-      "Wspinaczka na szczyt o pięć kilometrów jest трудna.",
+      "Wspinaczka przez pięć kilometrów aż na szczyt jest trudna.",
       "Z Tokio do Kioto jest około 500 kilometrów."
     ],
     "pt": [
@@ -1697,7 +4172,7 @@
       "Від Токіо до Кіото близько 500 кілометрів."
     ],
     "vi": [
-      "Nó cách đây hai km đến nhà ga.",
+      "Từ đây đến nhà ga là hai km.",
       "Mẹ tôi đi bộ ba km đến trường mỗi ngày.",
       "Leo năm km lên đỉnh núi rất khó khăn.",
       "Từ Tokyo đến Kyoto khoảng 500 km."
@@ -1705,7 +4180,7 @@
     "yue": [
       "由呢度到車站有兩公里。",
       "我媽咪每日步行三公里去返學。",
-      "擒5公里到山頂好艱難。",
+      "爬五公里上山頂好艱難。",
       "由東京到京都大約有500公里。"
     ],
     "zh-Hans": [

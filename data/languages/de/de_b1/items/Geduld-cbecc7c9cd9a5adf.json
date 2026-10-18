@@ -61,7 +61,7 @@
         "he": "אני מנסה להתאזר בסבלנות.",
         "tr": "Sabırlı olmayı öğreniyorum.",
         "vi": "Tôi đang tập kiên nhẫn.",
-        "ar": "أنا أتدرّب על الصبر.",
+        "ar": "أنا أتدرّب على الصبر.",
         "nl": "Ik probeer geduldig te zijn.",
         "uk": "Вчуся терпінню.",
         "hu": "Próbálok türelmes lenni.",
@@ -305,10 +305,10 @@
       "difficulty": 5.67
     },
     {
-      "target": "Mir fehlt manchmal Geduld.",
+      "target": "Mir fehlt manchmal die Geduld.",
       "reading": "/miːɐ̯ feːlt ˈmançmaːl ɡəˈdʊlt/",
       "translations": {
-        "de": "Mir fehlt manchmal Geduld.",
+        "de": "Mir fehlt manchmal die Geduld.",
         "ipa": "/miːɐ̯ feːlt ˈmançmaːl ɡəˈdʊlt/",
         "en": "I sometimes lack patience.",
         "es": "A veces me falta paciencia.",
@@ -341,40 +341,70 @@
       "tokens": [
         {
           "surface": "Mir",
-          "surface_en": "to me",
-          "furigana": "[miːɐ̯]",
+          "lemma": "mir",
           "pos": "PRON",
-          "lemma": "ich",
-          "explanation": "Personal pronoun, 1st person singular, dative; experiencer argument with 'fehlen'.",
-          "difficulty": 4
+          "upos": "PRON",
+          "xpos": "PPER",
+          "feats": {},
+          "start": 0,
+          "end": 3,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "fehlt",
-          "surface_en": "is missing",
-          "furigana": "[feːlt]",
-          "pos": "VERB",
           "lemma": "fehlen",
-          "explanation": "Finite main verb, present 3rd person singular; intransitive verb meaning 'to be missing', taking a dative argument ('Mir') and a nominative subject ('Geduld').",
-          "difficulty": 7
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VVFIN",
+          "feats": {},
+          "start": 4,
+          "end": 9,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "manchmal",
-          "surface_en": "sometimes",
-          "furigana": "[ˈmançmaːl]",
-          "pos": "ADV",
           "lemma": "manchmal",
-          "explanation": "Frequency adverb modifying the clause.",
-          "difficulty": 10
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "ADV",
+          "feats": {},
+          "start": 10,
+          "end": 18,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "die",
+          "lemma": "der",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "ART",
+          "feats": {},
+          "start": 19,
+          "end": 22,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "Geduld",
-          "surface_en": "patience",
-          "furigana": "[ɡəˈdʊlt]",
-          "pos": "NOUN",
           "lemma": "Geduld",
-          "explanation": "Common noun, feminine, singular; grammatical subject in post-verbal position.",
-          "difficulty": 7,
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 23,
+          "end": 29,
+          "analyzer": "spacy_de_core_news_lg",
           "is_main_word": true
+        },
+        {
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 29,
+          "end": 30,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 7
@@ -391,8 +421,270 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-15T00:16:31Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:De b1/cbecc7c9cd9a5adf",
+      "revision_id": 85469,
+      "parent_revision_id": 16224,
+      "revision_timestamp_utc": "2026-10-15T00:16:31Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Add the natural German article and correct Arabic script",
+      "pulled_utc": "2026-10-17T07:06:43Z",
+      "applied_utc": "2026-10-17T07:06:49Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-1cc87810795810a5",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_b1:cbecc7c9cd9a5adf",
+        "pack_code": "de_b1",
+        "entry_id": "Geduld",
+        "language": "de",
+        "sentence_index": 4,
+        "old_sentence": "Mir fehlt manchmal Geduld.",
+        "old_translations": {
+          "de": "Mir fehlt manchmal Geduld.",
+          "ipa": "/miːɐ̯ feːlt ˈmançmaːl ɡəˈdʊlt/",
+          "en": "I sometimes lack patience.",
+          "es": "A veces me falta paciencia.",
+          "fr": "Parfois, je manque de patience.",
+          "it": "A volte mi manca la pazienza.",
+          "ko": "가끔 인내심이 부족해요.",
+          "zh-Hans": "我有时不太有耐心。",
+          "yue": "我有時唔太有耐性。",
+          "ru": "Иногда мне не хватает терпения.",
+          "pt": "Às vezes me falta paciência.",
+          "he": "לפעמים חסרה לי סבלנות.",
+          "tr": "Bazen sabrım yetmiyor.",
+          "vi": "Đôi khi tôi thiếu kiên nhẫn.",
+          "ar": "أحيانًا أفتقر إلى الصبر.",
+          "nl": "Soms heb ik te weinig geduld.",
+          "uk": "Іноді мені бракує терпіння.",
+          "hu": "Néha nincs elég türelmem.",
+          "hi": "कभी-कभी मुझमें धैर्य की कमी होती है।",
+          "pl": "Czasem brakuje mi cierpliwości.",
+          "el": "Μερικές φορές μου λείπει υπομονή.",
+          "nb": "Noen ganger mangler jeg tålmodighet.",
+          "id": "Kadang-kadang saya kurang sabar.",
+          "sv": "Ibland saknar jag tålamod.",
+          "ro": "Uneori îmi lipsește răbdarea.",
+          "cs": "Někdy mi chybí trpělivost.",
+          "da": "Nogle gange mangler jeg tålmodighed.",
+          "fi": "Joskus minulta puuttuu kärsivällisyyttä.",
+          "ja": "時々我慢が足りない。"
+        },
+        "proposed_sentence": "Mir fehlt manchmal die Geduld.",
+        "proposed_translations": {
+          "de": "Mir fehlt manchmal die Geduld.",
+          "ipa": "/miːɐ̯ feːlt ˈmançmaːl ɡəˈdʊlt/",
+          "en": "I sometimes lack patience.",
+          "es": "A veces me falta paciencia.",
+          "fr": "Parfois, je manque de patience.",
+          "it": "A volte mi manca la pazienza.",
+          "ko": "가끔 인내심이 부족해요.",
+          "zh-Hans": "我有时不太有耐心。",
+          "yue": "我有時唔太有耐性。",
+          "ru": "Иногда мне не хватает терпения.",
+          "pt": "Às vezes me falta paciência.",
+          "he": "לפעמים חסרה לי סבלנות.",
+          "tr": "Bazen sabrım yetmiyor.",
+          "vi": "Đôi khi tôi thiếu kiên nhẫn.",
+          "ar": "أحيانًا أفتقر إلى الصبر.",
+          "nl": "Soms heb ik te weinig geduld.",
+          "uk": "Іноді мені бракує терпіння.",
+          "hu": "Néha nincs elég türelmem.",
+          "hi": "कभी-कभी मुझमें धैर्य की कमी होती है।",
+          "pl": "Czasem brakuje mi cierpliwości.",
+          "el": "Μερικές φορές μου λείπει υπομονή.",
+          "nb": "Noen ganger mangler jeg tålmodighet.",
+          "id": "Kadang-kadang saya kurang sabar.",
+          "sv": "Ibland saknar jag tålamod.",
+          "ro": "Uneori îmi lipsește răbdarea.",
+          "cs": "Někdy mi chybí trpělivost.",
+          "da": "Nogle gange mangler jeg tålmodighed.",
+          "fi": "Joskus minulta puuttuu kärsivällisyyttä.",
+          "ja": "時々我慢が足りない。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Mir fehlt manchmal die Geduld.",
+        "old_japanese": "Mir fehlt manchmal Geduld.",
+        "old_english": "I sometimes lack patience.",
+        "proposed_japanese": "Mir fehlt manchmal die Geduld.",
+        "proposed_english": "I sometimes lack patience.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Mir fehlt manchmal die Geduld.",
+          "tokens": [
+            {
+              "surface": "Mir",
+              "lemma": "mir",
+              "pos": "PRON",
+              "upos": "PRON",
+              "xpos": "PPER",
+              "feats": {},
+              "start": 0,
+              "end": 3,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "fehlt",
+              "lemma": "fehlen",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVFIN",
+              "feats": {},
+              "start": 4,
+              "end": 9,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "manchmal",
+              "lemma": "manchmal",
+              "pos": "ADV",
+              "upos": "ADV",
+              "xpos": "ADV",
+              "feats": {},
+              "start": 10,
+              "end": 18,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "die",
+              "lemma": "der",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "ART",
+              "feats": {},
+              "start": 19,
+              "end": 22,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Geduld",
+              "lemma": "Geduld",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 23,
+              "end": 29,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 29,
+              "end": 30,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Mir",
+            "lemma": "mir",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "fehlt",
+            "lemma": "fehlen",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 4,
+            "end": 9,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "manchmal",
+            "lemma": "manchmal",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 10,
+            "end": 18,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "die",
+            "lemma": "der",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 19,
+            "end": 22,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Geduld",
+            "lemma": "Geduld",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 23,
+            "end": 29,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 29,
+            "end": 30,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:06:43Z",
+        "updated_utc": "2026-10-17T07:07:05Z",
+        "applied_utc": "2026-10-17T07:07:05Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:07:05Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -404,34 +696,6 @@
     "word": "Geduld",
     "word_reading": "",
     "word_label": "Substantiv (die fem.)",
-    "word_en": "patience",
-    "word_es": "paciencia",
-    "word_fr": "patience",
-    "word_it": "pazienza",
-    "word_ko": "참을성; 인내",
-    "word_zh-Hans": "耐心; 忍耐",
-    "word_yue": "耐性; 忍耐",
-    "word_ru": "терпение",
-    "word_pt": "paciência",
-    "word_he": "סבלנות",
-    "word_tr": "sabır; tahammül",
-    "word_vi": "kiên nhẫn; nhẫn nại",
-    "word_ar": "صبر; تحمّل",
-    "word_nl": "geduld",
-    "word_uk": "терпіння",
-    "word_hu": "türelem",
-    "word_hi": "धैर्य",
-    "word_pl": "cierpliwość",
-    "word_el": "υπομονή",
-    "word_nb": "tålmodighet",
-    "word_id": "kesabaran",
-    "word_sv": "tålamod",
-    "word_ro": "răbdare",
-    "word_cs": "trpělivost",
-    "word_da": "tålmodighed",
-    "word_fi": "kärsivällisyys",
-    "word_ja": "我慢; 忍耐",
-    "word_de": "Geduld",
     "comic_difficulty": 5.92,
     "jp": [
       "Ich übe mich in Geduld.",
@@ -444,24 +708,6 @@
       "/duː bʁaʊ̯xst ˈhɔɪ̯tə ˈɛtvas ɡəˈdʊlt/",
       "/ˈzaɪ̯nə ɡəˈdʊlt ɪst fast am ˈɛndə/",
       "/miːɐ̯ feːlt ˈmançmaːl ɡəˈdʊlt/"
-    ],
-    "de": [
-      "Ich übe mich in Geduld.",
-      "Du brauchst heute etwas Geduld.",
-      "Seine Geduld ist fast am Ende.",
-      "Mir fehlt manchmal Geduld."
-    ],
-    "ipa": [
-      "/ɪç ˈyːbə mɪç ɪn ɡəˈdʊlt/",
-      "/duː bʁaʊ̯xst ˈhɔɪ̯tə ˈɛtvas ɡəˈdʊlt/",
-      "/ˈzaɪ̯nə ɡəˈdʊlt ɪst fast am ˈɛndə/",
-      "/miːɐ̯ feːlt ˈmançmaːl ɡəˈdʊlt/"
-    ],
-    "en": [
-      "I’m practicing patience.",
-      "You need some patience today.",
-      "His patience is almost gone.",
-      "I sometimes lack patience."
     ],
     "pos_analysis": [
       {
@@ -630,180 +876,114 @@
         "difficulty_aggregated": 5.67
       },
       {
-        "sentence": "Mir fehlt manchmal Geduld.",
+        "sentence": "Mir fehlt manchmal die Geduld.",
         "tokens": [
           {
             "surface": "Mir",
-            "surface_en": "to me",
-            "furigana": "[miːɐ̯]",
+            "lemma": "mir",
             "pos": "PRON",
-            "lemma": "ich",
-            "explanation": "Personal pronoun, 1st person singular, dative; experiencer argument with 'fehlen'.",
-            "difficulty": 4
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "fehlt",
-            "surface_en": "is missing",
-            "furigana": "[feːlt]",
-            "pos": "VERB",
             "lemma": "fehlen",
-            "explanation": "Finite main verb, present 3rd person singular; intransitive verb meaning 'to be missing', taking a dative argument ('Mir') and a nominative subject ('Geduld').",
-            "difficulty": 7
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 4,
+            "end": 9,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "manchmal",
-            "surface_en": "sometimes",
-            "furigana": "[ˈmançmaːl]",
-            "pos": "ADV",
             "lemma": "manchmal",
-            "explanation": "Frequency adverb modifying the clause.",
-            "difficulty": 10
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 10,
+            "end": 18,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "die",
+            "lemma": "der",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 19,
+            "end": 22,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "Geduld",
-            "surface_en": "patience",
-            "furigana": "[ɡəˈdʊlt]",
-            "pos": "NOUN",
             "lemma": "Geduld",
-            "explanation": "Common noun, feminine, singular; grammatical subject in post-verbal position.",
-            "difficulty": 7,
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 23,
+            "end": 29,
+            "analyzer": "spacy_de_core_news_lg",
             "is_main_word": true
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 29,
+            "end": 30,
+            "analyzer": "spacy_de_core_news_lg"
           }
         ],
         "difficulty_aggregated": 7
       }
     ],
-    "es": [
-      "Me estoy armando de paciencia.",
-      "Hoy necesitas un poco de paciencia.",
-      "Se le está acabando la paciencia.",
-      "A veces me falta paciencia."
-    ],
-    "fr": [
-      "J'essaie de rester patient.",
-      "Aujourd’hui, tu as besoin de patience.",
-      "Sa patience est presque à bout.",
-      "Parfois, je manque de patience."
-    ],
-    "it": [
-      "Sto cercando di avere pazienza.",
-      "Oggi ti serve un po’ di pazienza.",
-      "La sua pazienza è quasi finita.",
-      "A volte mi manca la pazienza."
-    ],
-    "ko": [
-      "참는 연습을 하고 있어요.",
-      "오늘은 인내심이 좀 필요해요.",
-      "그의 인내심은 거의 바닥났어요.",
-      "가끔 인내심이 부족해요."
-    ],
-    "zh-Hans": [
-      "我在练习耐心。",
-      "你今天需要一点耐心。",
-      "他快没耐心了。",
-      "我有时不太有耐心。"
-    ],
-    "yue": [
-      "我練緊耐性。",
-      "你今日需要啲耐性。",
-      "佢嘅耐性差唔多用完啦。",
-      "我有時唔太有耐性。"
-    ],
-    "ru": [
-      "Учусь терпению.",
-      "Тебе сегодня нужно немного терпения.",
-      "Его терпение почти на исходе.",
-      "Иногда мне не хватает терпения."
-    ],
-    "pt": [
-      "Estou praticando a paciência.",
-      "Hoje você precisa de um pouco de paciência.",
-      "A paciência dele está quase no fim.",
-      "Às vezes me falta paciência."
-    ],
-    "he": [
-      "אני מנסה להתאזר בסבלנות.",
-      "היום צריך קצת סבלנות.",
-      "הסבלנות שלו כמעט נגמרה.",
-      "לפעמים חסרה לי סבלנות."
-    ],
-    "tr": [
-      "Sabırlı olmayı öğreniyorum.",
-      "Bugün biraz sabra ihtiyacın var.",
-      "Onun sabrı neredeyse tükendi.",
-      "Bazen sabrım yetmiyor."
-    ],
-    "vi": [
-      "Tôi đang tập kiên nhẫn.",
-      "Hôm nay bạn cần chút kiên nhẫn.",
-      "Anh ấy sắp hết kiên nhẫn.",
-      "Đôi khi tôi thiếu kiên nhẫn."
-    ],
+    "word_POS": "Noun",
+    "entry_id": "Geduld",
+    "word_en": "patience",
+    "word_es": "paciencia",
+    "word_fr": "patience",
+    "word_it": "pazienza",
+    "word_ko": "참을성; 인내",
+    "word_zh-Hans": "耐心; 忍耐",
+    "word_yue": "耐性; 忍耐",
+    "word_ru": "терпение",
+    "word_pt": "paciência",
+    "word_he": "סבלנות",
+    "word_tr": "sabır; tahammül",
+    "word_vi": "kiên nhẫn; nhẫn nại",
+    "word_ar": "صبر; تحمّل",
+    "word_nl": "geduld",
+    "word_uk": "терпіння",
+    "word_hu": "türelem",
+    "word_hi": "धैर्य",
+    "word_pl": "cierpliwość",
+    "word_el": "υπομονή",
+    "word_nb": "tålmodighet",
+    "word_id": "kesabaran",
+    "word_sv": "tålamod",
+    "word_ro": "răbdare",
+    "word_cs": "trpělivost",
+    "word_da": "tålmodighed",
+    "word_fi": "kärsivällisyys",
+    "word_ja": "我慢; 忍耐",
+    "word_de": "Geduld",
     "ar": [
-      "أنا أتدرّب על الصبر.",
+      "أنا أتدرّب على الصبر.",
       "أنت بحاجة إلى بعض الصبر اليوم.",
       "صبره يكاد ينفد.",
       "أحيانًا أفتقر إلى الصبر."
-    ],
-    "nl": [
-      "Ik probeer geduldig te zijn.",
-      "Vandaag heb je wat geduld nodig.",
-      "Zijn geduld is bijna op.",
-      "Soms heb ik te weinig geduld."
-    ],
-    "uk": [
-      "Вчуся терпінню.",
-      "Сьогодні тобі потрібно трохи терпіння.",
-      "Його терпіння майже вичерпалося.",
-      "Іноді мені бракує терпіння."
-    ],
-    "hu": [
-      "Próbálok türelmes lenni.",
-      "Ma egy kis türelemre van szükséged.",
-      "A türelme majdnem elfogyott.",
-      "Néha nincs elég türelmem."
-    ],
-    "hi": [
-      "मैं धैर्य का अभ्यास कर रहा हूँ।",
-      "आज तुम्हें थोड़ा धैर्य चाहिए।",
-      "उसका धैर्य अब लगभग खत्म हो गया है।",
-      "कभी-कभी मुझमें धैर्य की कमी होती है।"
-    ],
-    "pl": [
-      "Ćwiczę cierpliwość.",
-      "Dziś potrzebujesz trochę cierpliwości.",
-      "Jego cierpliwość jest prawie na wyczerpaniu.",
-      "Czasem brakuje mi cierpliwości."
-    ],
-    "el": [
-      "Προσπαθώ να κάνω υπομονή.",
-      "Σήμερα χρειάζεσαι λίγη υπομονή.",
-      "Η υπομονή του έχει σχεδόν εξαντληθεί.",
-      "Μερικές φορές μου λείπει υπομονή."
-    ],
-    "nb": [
-      "Jeg øver meg på å være tålmodig.",
-      "I dag trenger du litt tålmodighet.",
-      "Tålmodigheten hans er nesten brukt opp.",
-      "Noen ganger mangler jeg tålmodighet."
-    ],
-    "id": [
-      "Saya sedang berlatih bersabar.",
-      "Hari ini kamu perlu sedikit kesabaran.",
-      "Kesabarannya hampir habis.",
-      "Kadang-kadang saya kurang sabar."
-    ],
-    "sv": [
-      "Jag övar på att vara tålmodig.",
-      "Idag behöver du lite tålamod.",
-      "Hans tålamod är nästan slut.",
-      "Ibland saknar jag tålamod."
-    ],
-    "ro": [
-      "Încerc să am răbdare.",
-      "Astăzi ai nevoie de puțină răbdare.",
-      "Răbdarea lui e pe sfârșite.",
-      "Uneori îmi lipsește răbdarea."
     ],
     "cs": [
       "Učím se trpělivosti.",
@@ -817,11 +997,77 @@
       "Hans tålmodighed er næsten opbrugt.",
       "Nogle gange mangler jeg tålmodighed."
     ],
+    "de": [
+      "Ich übe mich in Geduld.",
+      "Du brauchst heute etwas Geduld.",
+      "Seine Geduld ist fast am Ende.",
+      "Mir fehlt manchmal Geduld."
+    ],
+    "el": [
+      "Προσπαθώ να κάνω υπομονή.",
+      "Σήμερα χρειάζεσαι λίγη υπομονή.",
+      "Η υπομονή του έχει σχεδόν εξαντληθεί.",
+      "Μερικές φορές μου λείπει υπομονή."
+    ],
+    "en": [
+      "I’m practicing patience.",
+      "You need some patience today.",
+      "His patience is almost gone.",
+      "I sometimes lack patience."
+    ],
+    "es": [
+      "Me estoy armando de paciencia.",
+      "Hoy necesitas un poco de paciencia.",
+      "Se le está acabando la paciencia.",
+      "A veces me falta paciencia."
+    ],
     "fi": [
       "Harjoittelen kärsivällisyyttä.",
       "Tänään tarvitset hieman kärsivällisyyttä.",
       "Hänen kärsivällisyytensä on melkein lopussa.",
       "Joskus minulta puuttuu kärsivällisyyttä."
+    ],
+    "fr": [
+      "J'essaie de rester patient.",
+      "Aujourd’hui, tu as besoin de patience.",
+      "Sa patience est presque à bout.",
+      "Parfois, je manque de patience."
+    ],
+    "he": [
+      "אני מנסה להתאזר בסבלנות.",
+      "היום צריך קצת סבלנות.",
+      "הסבלנות שלו כמעט נגמרה.",
+      "לפעמים חסרה לי סבלנות."
+    ],
+    "hi": [
+      "मैं धैर्य का अभ्यास कर रहा हूँ।",
+      "आज तुम्हें थोड़ा धैर्य चाहिए।",
+      "उसका धैर्य अब लगभग खत्म हो गया है।",
+      "कभी-कभी मुझमें धैर्य की कमी होती है।"
+    ],
+    "hu": [
+      "Próbálok türelmes lenni.",
+      "Ma egy kis türelemre van szükséged.",
+      "A türelme majdnem elfogyott.",
+      "Néha nincs elég türelmem."
+    ],
+    "id": [
+      "Saya sedang berlatih bersabar.",
+      "Hari ini kamu perlu sedikit kesabaran.",
+      "Kesabarannya hampir habis.",
+      "Kadang-kadang saya kurang sabar."
+    ],
+    "ipa": [
+      "/ɪç ˈyːbə mɪç ɪn ɡəˈdʊlt/",
+      "/duː bʁaʊ̯xst ˈhɔɪ̯tə ˈɛtvas ɡəˈdʊlt/",
+      "/ˈzaɪ̯nə ɡəˈdʊlt ɪst fast am ˈɛndə/",
+      "/miːɐ̯ feːlt ˈmançmaːl ɡəˈdʊlt/"
+    ],
+    "it": [
+      "Sto cercando di avere pazienza.",
+      "Oggi ti serve un po’ di pazienza.",
+      "La sua pazienza è quasi finita.",
+      "A volte mi manca la pazienza."
     ],
     "ja": [
       "我慢の練習をしています。",
@@ -829,6 +1075,83 @@
       "彼の我慢はもう限界に近い。",
       "時々我慢が足りない。"
     ],
-    "word_POS": "Noun"
+    "ko": [
+      "참는 연습을 하고 있어요.",
+      "오늘은 인내심이 좀 필요해요.",
+      "그의 인내심은 거의 바닥났어요.",
+      "가끔 인내심이 부족해요."
+    ],
+    "nb": [
+      "Jeg øver meg på å være tålmodig.",
+      "I dag trenger du litt tålmodighet.",
+      "Tålmodigheten hans er nesten brukt opp.",
+      "Noen ganger mangler jeg tålmodighet."
+    ],
+    "nl": [
+      "Ik probeer geduldig te zijn.",
+      "Vandaag heb je wat geduld nodig.",
+      "Zijn geduld is bijna op.",
+      "Soms heb ik te weinig geduld."
+    ],
+    "pl": [
+      "Ćwiczę cierpliwość.",
+      "Dziś potrzebujesz trochę cierpliwości.",
+      "Jego cierpliwość jest prawie na wyczerpaniu.",
+      "Czasem brakuje mi cierpliwości."
+    ],
+    "pt": [
+      "Estou praticando a paciência.",
+      "Hoje você precisa de um pouco de paciência.",
+      "A paciência dele está quase no fim.",
+      "Às vezes me falta paciência."
+    ],
+    "ro": [
+      "Încerc să am răbdare.",
+      "Astăzi ai nevoie de puțină răbdare.",
+      "Răbdarea lui e pe sfârșite.",
+      "Uneori îmi lipsește răbdarea."
+    ],
+    "ru": [
+      "Учусь терпению.",
+      "Тебе сегодня нужно немного терпения.",
+      "Его терпение почти на исходе.",
+      "Иногда мне не хватает терпения."
+    ],
+    "sv": [
+      "Jag övar på att vara tålmodig.",
+      "Idag behöver du lite tålamod.",
+      "Hans tålamod är nästan slut.",
+      "Ibland saknar jag tålamod."
+    ],
+    "tr": [
+      "Sabırlı olmayı öğreniyorum.",
+      "Bugün biraz sabra ihtiyacın var.",
+      "Onun sabrı neredeyse tükendi.",
+      "Bazen sabrım yetmiyor."
+    ],
+    "uk": [
+      "Вчуся терпінню.",
+      "Сьогодні тобі потрібно трохи терпіння.",
+      "Його терпіння майже вичерпалося.",
+      "Іноді мені бракує терпіння."
+    ],
+    "vi": [
+      "Tôi đang tập kiên nhẫn.",
+      "Hôm nay bạn cần chút kiên nhẫn.",
+      "Anh ấy sắp hết kiên nhẫn.",
+      "Đôi khi tôi thiếu kiên nhẫn."
+    ],
+    "yue": [
+      "我練緊耐性。",
+      "你今日需要啲耐性。",
+      "佢嘅耐性差唔多用完啦。",
+      "我有時唔太有耐性。"
+    ],
+    "zh-Hans": [
+      "我在练习耐心。",
+      "你今天需要一点耐心。",
+      "他快没耐心了。",
+      "我有时不太有耐心。"
+    ]
   }
 }

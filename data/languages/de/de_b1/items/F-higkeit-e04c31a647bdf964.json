@@ -137,12 +137,12 @@
       "difficulty": 6.17
     },
     {
-      "target": "Er verbessert seine Fähigkeit im Schreiben.",
+      "target": "Er verbessert seine Fähigkeit zu schreiben.",
       "reading": "/eːɐ̯ fɛɐ̯ˈbɛsɐt ˈzaɪ̯nə ˈfɛːɪçkaɪ̯t ʔɪm ˈʃʁaɪ̯bən./",
       "translations": {
-        "de": "Er verbessert seine Fähigkeit im Schreiben.",
+        "de": "Er verbessert seine Fähigkeit zu schreiben.",
         "ipa": "/eːɐ̯ fɛɐ̯ˈbɛsɐt ˈzaɪ̯nə ˈfɛːɪçkaɪ̯t ʔɪm ˈʃʁaɪ̯bən./",
-        "en": "He improves his ability in writing.",
+        "en": "He is improving his ability to write.",
         "es": "Él está mejorando su habilidad para escribir.",
         "fr": "Il améliore ses compétences en écriture.",
         "it": "Sta migliorando la sua capacità di scrittura.",
@@ -173,58 +173,81 @@
       "tokens": [
         {
           "surface": "Er",
-          "surface_en": "he",
-          "furigana": "[eːɐ̯]",
-          "pos": "PRON",
           "lemma": "er",
-          "explanation": "Personal pronoun, nominative singular; subject of the clause.",
-          "difficulty": 2
+          "pos": "PRON",
+          "upos": "PRON",
+          "xpos": "PPER",
+          "feats": {},
+          "start": 0,
+          "end": 2,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "verbessert",
-          "surface_en": "improves",
-          "furigana": "[fɛɐ̯ˈbɛsɐt]",
-          "pos": "VERB",
           "lemma": "verbessern",
-          "explanation": "Main verb, 3rd person singular present; transitive, selecting an accusative direct object ('seine Fähigkeit') and a prepositional phrase ('im Schreiben').",
-          "difficulty": 10
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VVFIN",
+          "feats": {},
+          "start": 3,
+          "end": 13,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "seine",
-          "surface_en": "his",
-          "furigana": "[ˈzaɪ̯nə]",
-          "pos": "DET",
           "lemma": "sein",
-          "explanation": "Attributive possessive determiner; agrees with feminine singular accusative noun 'Fähigkeit'; determiner of the object.",
-          "difficulty": 7
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "PPOSAT",
+          "feats": {},
+          "start": 14,
+          "end": 19,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "Fähigkeit",
-          "surface_en": "ability",
-          "furigana": "[ˈfɛːɪçkaɪ̯t]",
-          "pos": "NOUN",
           "lemma": "Fähigkeit",
-          "explanation": "Noun, feminine singular accusative; direct object of 'verbessert'.",
-          "difficulty": 10,
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 20,
+          "end": 29,
+          "analyzer": "spacy_de_core_news_lg",
           "is_main_word": true
         },
         {
-          "surface": "im",
-          "surface_en": "in the",
-          "furigana": "[ɪm]",
-          "pos": "ADP",
-          "lemma": "in",
-          "explanation": "Contraction of 'in dem'; preposition governing the dative; introduces a domain/manner prepositional phrase.",
-          "difficulty": 2
+          "surface": "zu",
+          "lemma": "zu",
+          "pos": "PART",
+          "upos": "PART",
+          "xpos": "PTKZU",
+          "feats": {},
+          "start": 30,
+          "end": 32,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "Schreiben.",
-          "surface_en": "writing",
-          "furigana": "[ˈʃʁaɪ̯bən]",
-          "pos": "NOUN",
-          "lemma": "Schreiben",
-          "explanation": "Nominalized infinitive functioning as a noun; dative singular as complement of 'im'; denotes the domain ('in writing').",
-          "difficulty": 10
+          "surface": "schreiben",
+          "lemma": "schreiben",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VVINF",
+          "feats": {},
+          "start": 33,
+          "end": 42,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 42,
+          "end": 43,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 6.83
@@ -332,15 +355,15 @@
       "difficulty": 5.71
     },
     {
-      "target": "Die Chefin lobt meine Fähigkeit heute sehr.",
+      "target": "Die Chefin lobt heute meine Fähigkeiten sehr.",
       "reading": "/diː ˈʃeːfɪn loːpt ˈmaɪ̯nə ˈfɛːɪçkaɪ̯t ˈhɔʏ̯tə zeːɐ̯./",
       "translations": {
-        "de": "Die Chefin lobt meine Fähigkeit heute sehr.",
+        "de": "Die Chefin lobt heute meine Fähigkeiten sehr.",
         "ipa": "/diː ˈʃeːfɪn loːpt ˈmaɪ̯nə ˈfɛːɪçkaɪ̯t ˈhɔʏ̯tə zeːɐ̯./",
-        "en": "The boss praises my ability a lot today.",
+        "en": "My boss has been praising my skills a lot today.",
         "es": "La jefa elogió mucho mi habilidad hoy.",
         "fr": "Ma cheffe m’a beaucoup félicité pour mes compétences aujourd’hui.",
-        "it": "Oggi la mia capo ha elogiato molto le mie capacità.",
+        "it": "Oggi la mia responsabile ha elogiato molto le mie capacità.",
         "ko": "오늘 사장님이 내 능력을 많이 칭찬했어요.",
         "zh-Hans": "老板今天很夸奖我的能力。",
         "yue": "老細今日好讚我嘅能力。",
@@ -368,67 +391,92 @@
       "tokens": [
         {
           "surface": "Die",
-          "surface_en": "the",
-          "furigana": "[diː]",
-          "pos": "DET",
           "lemma": "der",
-          "explanation": "Definite article, feminine singular nominative; determiner of the subject 'Chefin'.",
-          "difficulty": 2
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "ART",
+          "feats": {},
+          "start": 0,
+          "end": 3,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "Chefin",
-          "surface_en": "boss (female)",
-          "furigana": "[ˈʃɛfɪn]",
-          "pos": "NOUN",
           "lemma": "Chefin",
-          "explanation": "Common noun, feminine singular nominative; subject of 'lobt'.",
-          "difficulty": 7
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 4,
+          "end": 10,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "lobt",
-          "surface_en": "praises",
-          "furigana": "[loːpt]",
-          "pos": "VERB",
           "lemma": "loben",
-          "explanation": "Main verb, 3rd person singular present; transitive, selecting the accusative object 'meine Fähigkeit'; modified by adverbs 'heute' (temporal) and 'sehr' (degree).",
-          "difficulty": 7
-        },
-        {
-          "surface": "meine",
-          "surface_en": "my",
-          "furigana": "[ˈmaɪ̯nə]",
-          "pos": "DET",
-          "lemma": "mein",
-          "explanation": "Attributive possessive determiner; agrees with feminine singular accusative noun 'Fähigkeit'; determiner of the object.",
-          "difficulty": 7
-        },
-        {
-          "surface": "Fähigkeit",
-          "surface_en": "ability",
-          "furigana": "[ˈfɛːɪçkaɪ̯t]",
-          "pos": "NOUN",
-          "lemma": "Fähigkeit",
-          "explanation": "Noun, feminine singular accusative; direct object of 'lobt'.",
-          "difficulty": 10,
-          "is_main_word": true
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VVFIN",
+          "feats": {},
+          "start": 11,
+          "end": 15,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "heute",
-          "surface_en": "today",
-          "furigana": "[ˈhɔʏ̯tə]",
-          "pos": "ADV",
           "lemma": "heute",
-          "explanation": "Temporal adverb modifying the verb 'lobt'.",
-          "difficulty": 7
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "ADV",
+          "feats": {},
+          "start": 16,
+          "end": 21,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "sehr.",
-          "surface_en": "very",
-          "furigana": "[zeːɐ̯]",
-          "pos": "ADV",
+          "surface": "meine",
+          "lemma": "mein",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "PPOSAT",
+          "feats": {},
+          "start": 22,
+          "end": 27,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "Fähigkeiten",
+          "lemma": "Fähigkeit",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 28,
+          "end": 39,
+          "analyzer": "spacy_de_core_news_lg",
+          "is_main_word": true
+        },
+        {
+          "surface": "sehr",
           "lemma": "sehr",
-          "explanation": "Degree/intensifier adverb modifying 'lobt'; indicates high extent.",
-          "difficulty": 7
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "ADV",
+          "feats": {},
+          "start": 40,
+          "end": 44,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 44,
+          "end": 45,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 6.71
@@ -445,8 +493,581 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-15T00:08:30Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:De b1/e04c31a647bdf964",
+      "revision_id": 85489,
+      "parent_revision_id": 16166,
+      "revision_timestamp_utc": "2026-10-15T00:08:30Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Naturalize writing-ability and praise phrasing",
+      "pulled_utc": "2026-10-17T07:06:44Z",
+      "applied_utc": "2026-10-17T07:06:49Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-7fbfb7b8c7474609",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_b1:e04c31a647bdf964",
+        "pack_code": "de_b1",
+        "entry_id": "Fähigkeit",
+        "language": "de",
+        "sentence_index": 2,
+        "old_sentence": "Er verbessert seine Fähigkeit im Schreiben.",
+        "old_translations": {
+          "de": "Er verbessert seine Fähigkeit im Schreiben.",
+          "ipa": "/eːɐ̯ fɛɐ̯ˈbɛsɐt ˈzaɪ̯nə ˈfɛːɪçkaɪ̯t ʔɪm ˈʃʁaɪ̯bən./",
+          "en": "He improves his ability in writing.",
+          "es": "Él está mejorando su habilidad para escribir.",
+          "fr": "Il améliore ses compétences en écriture.",
+          "it": "Sta migliorando la sua capacità di scrittura.",
+          "ko": "그는 글쓰기 실력을 늘리고 있어요.",
+          "zh-Hans": "他在提高自己的写作能力。",
+          "yue": "佢而家喺提升自己嘅寫作能力。",
+          "ru": "Он улучшает свои навыки письма.",
+          "pt": "Ele está melhorando sua habilidade de escrita.",
+          "he": "הוא משפר את כישורי הכתיבה שלו.",
+          "tr": "Yazma becerisini geliştiriyor.",
+          "vi": "Anh ấy đang cải thiện kỹ năng viết của mình.",
+          "ar": "هو يحسن مهارة الكتابة لديه.",
+          "nl": "Hij verbetert zijn schrijfvaardigheid.",
+          "uk": "Він покращує свої навички письма.",
+          "hu": "Fejleszti az íráskészségét.",
+          "hi": "वह अपनी लेखन क्षमता में सुधार कर रहा है.",
+          "pl": "On poprawia swoje umiejętności pisania.",
+          "el": "Βελτιώνει την ικανότητά του στο γράψιμο.",
+          "nb": "Han forbedrer skriveferdigheten sin.",
+          "id": "Dia meningkatkan kemampuan menulisnya.",
+          "sv": "Han förbättrar sin skrivförmåga.",
+          "ro": "El își îmbunătățește abilitatea de a scrie.",
+          "cs": "Zlepšuje své schopnosti v psaní.",
+          "da": "Han forbedrer sin skriveevne.",
+          "fi": "Hän parantaa kirjoitustaitoaan.",
+          "ja": "彼は文章力を伸ばしています。"
+        },
+        "proposed_sentence": "Er verbessert seine Fähigkeit zu schreiben.",
+        "proposed_translations": {
+          "de": "Er verbessert seine Fähigkeit zu schreiben.",
+          "ipa": "/eːɐ̯ fɛɐ̯ˈbɛsɐt ˈzaɪ̯nə ˈfɛːɪçkaɪ̯t ʔɪm ˈʃʁaɪ̯bən./",
+          "en": "He is improving his ability to write.",
+          "es": "Él está mejorando su habilidad para escribir.",
+          "fr": "Il améliore ses compétences en écriture.",
+          "it": "Sta migliorando la sua capacità di scrittura.",
+          "ko": "그는 글쓰기 실력을 늘리고 있어요.",
+          "zh-Hans": "他在提高自己的写作能力。",
+          "yue": "佢而家喺提升自己嘅寫作能力。",
+          "ru": "Он улучшает свои навыки письма.",
+          "pt": "Ele está melhorando sua habilidade de escrita.",
+          "he": "הוא משפר את כישורי הכתיבה שלו.",
+          "tr": "Yazma becerisini geliştiriyor.",
+          "vi": "Anh ấy đang cải thiện kỹ năng viết của mình.",
+          "ar": "هو يحسن مهارة الكتابة لديه.",
+          "nl": "Hij verbetert zijn schrijfvaardigheid.",
+          "uk": "Він покращує свої навички письма.",
+          "hu": "Fejleszti az íráskészségét.",
+          "hi": "वह अपनी लेखन क्षमता में सुधार कर रहा है.",
+          "pl": "On poprawia swoje umiejętności pisania.",
+          "el": "Βελτιώνει την ικανότητά του στο γράψιμο.",
+          "nb": "Han forbedrer skriveferdigheten sin.",
+          "id": "Dia meningkatkan kemampuan menulisnya.",
+          "sv": "Han förbättrar sin skrivförmåga.",
+          "ro": "El își îmbunătățește abilitatea de a scrie.",
+          "cs": "Zlepšuje své schopnosti v psaní.",
+          "da": "Han forbedrer sin skriveevne.",
+          "fi": "Hän parantaa kirjoitustaitoaan.",
+          "ja": "彼は文章力を伸ばしています。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Er verbessert seine Fähigkeit zu schreiben.",
+        "old_japanese": "Er verbessert seine Fähigkeit im Schreiben.",
+        "old_english": "He improves his ability in writing.",
+        "proposed_japanese": "Er verbessert seine Fähigkeit zu schreiben.",
+        "proposed_english": "He is improving his ability to write.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Er verbessert seine Fähigkeit zu schreiben.",
+          "tokens": [
+            {
+              "surface": "Er",
+              "lemma": "er",
+              "pos": "PRON",
+              "upos": "PRON",
+              "xpos": "PPER",
+              "feats": {},
+              "start": 0,
+              "end": 2,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "verbessert",
+              "lemma": "verbessern",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVFIN",
+              "feats": {},
+              "start": 3,
+              "end": 13,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "seine",
+              "lemma": "sein",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "PPOSAT",
+              "feats": {},
+              "start": 14,
+              "end": 19,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Fähigkeit",
+              "lemma": "Fähigkeit",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 20,
+              "end": 29,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "zu",
+              "lemma": "zu",
+              "pos": "PART",
+              "upos": "PART",
+              "xpos": "PTKZU",
+              "feats": {},
+              "start": 30,
+              "end": 32,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "schreiben",
+              "lemma": "schreiben",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVINF",
+              "feats": {},
+              "start": 33,
+              "end": 42,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 42,
+              "end": 43,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Er",
+            "lemma": "er",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "verbessert",
+            "lemma": "verbessern",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 3,
+            "end": 13,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "seine",
+            "lemma": "sein",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "PPOSAT",
+            "feats": {},
+            "start": 14,
+            "end": 19,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Fähigkeit",
+            "lemma": "Fähigkeit",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 20,
+            "end": 29,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "zu",
+            "lemma": "zu",
+            "pos": "PART",
+            "upos": "PART",
+            "xpos": "PTKZU",
+            "feats": {},
+            "start": 30,
+            "end": 32,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "schreiben",
+            "lemma": "schreiben",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVINF",
+            "feats": {},
+            "start": 33,
+            "end": 42,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 42,
+            "end": 43,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:06:44Z",
+        "updated_utc": "2026-10-17T07:07:05Z",
+        "applied_utc": "2026-10-17T07:07:05Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      },
+      {
+        "id": "sentprop-22905f9864d30b06",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_b1:e04c31a647bdf964",
+        "pack_code": "de_b1",
+        "entry_id": "Fähigkeit",
+        "language": "de",
+        "sentence_index": 4,
+        "old_sentence": "Die Chefin lobt meine Fähigkeit heute sehr.",
+        "old_translations": {
+          "de": "Die Chefin lobt meine Fähigkeit heute sehr.",
+          "ipa": "/diː ˈʃeːfɪn loːpt ˈmaɪ̯nə ˈfɛːɪçkaɪ̯t ˈhɔʏ̯tə zeːɐ̯./",
+          "en": "The boss praises my ability a lot today.",
+          "es": "La jefa elogió mucho mi habilidad hoy.",
+          "fr": "Ma cheffe m’a beaucoup félicité pour mes compétences aujourd’hui.",
+          "it": "Oggi la mia capo ha elogiato molto le mie capacità.",
+          "ko": "오늘 사장님이 내 능력을 많이 칭찬했어요.",
+          "zh-Hans": "老板今天很夸奖我的能力。",
+          "yue": "老細今日好讚我嘅能力。",
+          "ru": "Начальница сегодня очень похвалила мои навыки.",
+          "pt": "A chefe elogiou muito minha habilidade hoje.",
+          "he": "המנהלת מאוד שיבחה היום את היכולות שלי.",
+          "tr": "Patron bugün becerimi çok övdü.",
+          "vi": "Sếp hôm nay khen kỹ năng của tôi rất nhiều.",
+          "ar": "المديرة مدحت مهارتي كثيرًا اليوم.",
+          "nl": "Mijn baas prees mijn vaardigheden vandaag heel erg.",
+          "uk": "Керівниця сьогодні дуже похвалила мої навички.",
+          "hu": "A főnöknő ma nagyon dicsérte a képességeimet.",
+          "hi": "आज बॉस ने मेरी क्षमता की खूब तारीफ की.",
+          "pl": "Szefowa dziś bardzo pochwaliła moje umiejętności.",
+          "el": "Η διευθύντρια σήμερα επαίνεσε πολύ τις ικανότητές μου.",
+          "nb": "Sjefen roste ferdighetene mine mye i dag.",
+          "id": "Bos hari ini sangat memuji kemampuan saya.",
+          "sv": "Chefen berömde mina färdigheter mycket i dag.",
+          "ro": "Șefa mi-a lăudat foarte mult abilitățile astăzi.",
+          "cs": "Šéfová dnes velmi chválila moje schopnosti.",
+          "da": "Chefen roste mine evner meget i dag.",
+          "fi": "Pomo kehui taitojani tänään paljon.",
+          "ja": "今日は上司が私の能力をたくさん褒めてくれました。"
+        },
+        "proposed_sentence": "Die Chefin lobt heute meine Fähigkeiten sehr.",
+        "proposed_translations": {
+          "de": "Die Chefin lobt heute meine Fähigkeiten sehr.",
+          "ipa": "/diː ˈʃeːfɪn loːpt ˈmaɪ̯nə ˈfɛːɪçkaɪ̯t ˈhɔʏ̯tə zeːɐ̯./",
+          "en": "My boss has been praising my skills a lot today.",
+          "es": "La jefa elogió mucho mi habilidad hoy.",
+          "fr": "Ma cheffe m’a beaucoup félicité pour mes compétences aujourd’hui.",
+          "it": "Oggi la mia responsabile ha elogiato molto le mie capacità.",
+          "ko": "오늘 사장님이 내 능력을 많이 칭찬했어요.",
+          "zh-Hans": "老板今天很夸奖我的能力。",
+          "yue": "老細今日好讚我嘅能力。",
+          "ru": "Начальница сегодня очень похвалила мои навыки.",
+          "pt": "A chefe elogiou muito minha habilidade hoje.",
+          "he": "המנהלת מאוד שיבחה היום את היכולות שלי.",
+          "tr": "Patron bugün becerimi çok övdü.",
+          "vi": "Sếp hôm nay khen kỹ năng của tôi rất nhiều.",
+          "ar": "المديرة مدحت مهارتي كثيرًا اليوم.",
+          "nl": "Mijn baas prees mijn vaardigheden vandaag heel erg.",
+          "uk": "Керівниця сьогодні дуже похвалила мої навички.",
+          "hu": "A főnöknő ma nagyon dicsérte a képességeimet.",
+          "hi": "आज बॉस ने मेरी क्षमता की खूब तारीफ की.",
+          "pl": "Szefowa dziś bardzo pochwaliła moje umiejętności.",
+          "el": "Η διευθύντρια σήμερα επαίνεσε πολύ τις ικανότητές μου.",
+          "nb": "Sjefen roste ferdighetene mine mye i dag.",
+          "id": "Bos hari ini sangat memuji kemampuan saya.",
+          "sv": "Chefen berömde mina färdigheter mycket i dag.",
+          "ro": "Șefa mi-a lăudat foarte mult abilitățile astăzi.",
+          "cs": "Šéfová dnes velmi chválila moje schopnosti.",
+          "da": "Chefen roste mine evner meget i dag.",
+          "fi": "Pomo kehui taitojani tänään paljon.",
+          "ja": "今日は上司が私の能力をたくさん褒めてくれました。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Die Chefin lobt heute meine Fähigkeiten sehr.",
+        "old_japanese": "Die Chefin lobt meine Fähigkeit heute sehr.",
+        "old_english": "The boss praises my ability a lot today.",
+        "proposed_japanese": "Die Chefin lobt heute meine Fähigkeiten sehr.",
+        "proposed_english": "My boss has been praising my skills a lot today.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Die Chefin lobt heute meine Fähigkeiten sehr.",
+          "tokens": [
+            {
+              "surface": "Die",
+              "lemma": "der",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "ART",
+              "feats": {},
+              "start": 0,
+              "end": 3,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Chefin",
+              "lemma": "Chefin",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 4,
+              "end": 10,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "lobt",
+              "lemma": "loben",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVFIN",
+              "feats": {},
+              "start": 11,
+              "end": 15,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "heute",
+              "lemma": "heute",
+              "pos": "ADV",
+              "upos": "ADV",
+              "xpos": "ADV",
+              "feats": {},
+              "start": 16,
+              "end": 21,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "meine",
+              "lemma": "mein",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "PPOSAT",
+              "feats": {},
+              "start": 22,
+              "end": 27,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Fähigkeiten",
+              "lemma": "Fähigkeit",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 28,
+              "end": 39,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "sehr",
+              "lemma": "sehr",
+              "pos": "ADV",
+              "upos": "ADV",
+              "xpos": "ADV",
+              "feats": {},
+              "start": 40,
+              "end": 44,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 44,
+              "end": 45,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Die",
+            "lemma": "der",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Chefin",
+            "lemma": "Chefin",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 4,
+            "end": 10,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "lobt",
+            "lemma": "loben",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 11,
+            "end": 15,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "heute",
+            "lemma": "heute",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 16,
+            "end": 21,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "meine",
+            "lemma": "mein",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "PPOSAT",
+            "feats": {},
+            "start": 22,
+            "end": 27,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Fähigkeiten",
+            "lemma": "Fähigkeit",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 28,
+            "end": 39,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "sehr",
+            "lemma": "sehr",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 40,
+            "end": 44,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 44,
+            "end": 45,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:06:44Z",
+        "updated_utc": "2026-10-17T07:07:05Z",
+        "applied_utc": "2026-10-17T07:07:05Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:07:05Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -458,34 +1079,6 @@
     "word": "Fähigkeit",
     "word_reading": "",
     "word_label": "Substantiv (die fem.)",
-    "word_en": "ability; skill",
-    "word_es": "capacidad; habilidad",
-    "word_fr": "capacité; aptitude",
-    "word_it": "abilità; capacità",
-    "word_ko": "능력; 실력",
-    "word_zh-Hans": "能力; 技能",
-    "word_yue": "能力; 技能",
-    "word_ru": "способность; навык",
-    "word_pt": "capacidade; habilidade",
-    "word_he": "יכולת; מיומנות",
-    "word_tr": "yetenek; beceri",
-    "word_vi": "khả năng; kỹ năng",
-    "word_ar": "قدرة; مهارة",
-    "word_nl": "vaardigheid; bekwaamheid",
-    "word_uk": "здатність; навичка",
-    "word_hu": "képesség; készség",
-    "word_hi": "क्षमता; कौशल",
-    "word_pl": "umiejętność; zdolność",
-    "word_el": "ικανότητα; δεξιότητα",
-    "word_nb": "evne; ferdighet",
-    "word_id": "kemampuan; keterampilan",
-    "word_sv": "förmåga; färdighet",
-    "word_ro": "abilitate; capacitate",
-    "word_cs": "schopnost; dovednost",
-    "word_da": "evne; færdighed",
-    "word_fi": "kyky; taito",
-    "word_ja": "能力; スキル",
-    "word_de": "Fähigkeit",
     "comic_difficulty": 6.36,
     "jp": [
       "Meine Fähigkeit hilft mir im Beruf.",
@@ -498,24 +1091,6 @@
       "/eːɐ̯ fɛɐ̯ˈbɛsɐt ˈzaɪ̯nə ˈfɛːɪçkaɪ̯t ʔɪm ˈʃʁaɪ̯bən./",
       "/ɪç ˈbʁaʊ̯xə ˈdiːzə ˈfɛːɪçkaɪ̯t fyːɐ̯ deːn kʊʁs./",
       "/diː ˈʃeːfɪn loːpt ˈmaɪ̯nə ˈfɛːɪçkaɪ̯t ˈhɔʏ̯tə zeːɐ̯./"
-    ],
-    "de": [
-      "Meine Fähigkeit hilft mir im Beruf.",
-      "Er verbessert seine Fähigkeit im Schreiben.",
-      "Ich brauche diese Fähigkeit für den Kurs.",
-      "Die Chefin lobt meine Fähigkeit heute sehr."
-    ],
-    "ipa": [
-      "/ˈmaɪ̯nə ˈfɛːɪçkaɪ̯t hɪlft miːɐ̯ ʔɪm bəˈʁuːf./",
-      "/eːɐ̯ fɛɐ̯ˈbɛsɐt ˈzaɪ̯nə ˈfɛːɪçkaɪ̯t ʔɪm ˈʃʁaɪ̯bən./",
-      "/ɪç ˈbʁaʊ̯xə ˈdiːzə ˈfɛːɪçkaɪ̯t fyːɐ̯ deːn kʊʁs./",
-      "/diː ˈʃeːfɪn loːpt ˈmaɪ̯nə ˈfɛːɪçkaɪ̯t ˈhɔʏ̯tə zeːɐ̯./"
-    ],
-    "en": [
-      "My ability helps me at work.",
-      "He improves his ability in writing.",
-      "I need this ability for the course.",
-      "The boss praises my ability a lot today."
     ],
     "pos_analysis": [
       {
@@ -580,62 +1155,85 @@
         "difficulty_aggregated": 6.17
       },
       {
-        "sentence": "Er verbessert seine Fähigkeit im Schreiben.",
+        "sentence": "Er verbessert seine Fähigkeit zu schreiben.",
         "tokens": [
           {
             "surface": "Er",
-            "surface_en": "he",
-            "furigana": "[eːɐ̯]",
-            "pos": "PRON",
             "lemma": "er",
-            "explanation": "Personal pronoun, nominative singular; subject of the clause.",
-            "difficulty": 2
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "verbessert",
-            "surface_en": "improves",
-            "furigana": "[fɛɐ̯ˈbɛsɐt]",
-            "pos": "VERB",
             "lemma": "verbessern",
-            "explanation": "Main verb, 3rd person singular present; transitive, selecting an accusative direct object ('seine Fähigkeit') and a prepositional phrase ('im Schreiben').",
-            "difficulty": 10
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 3,
+            "end": 13,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "seine",
-            "surface_en": "his",
-            "furigana": "[ˈzaɪ̯nə]",
-            "pos": "DET",
             "lemma": "sein",
-            "explanation": "Attributive possessive determiner; agrees with feminine singular accusative noun 'Fähigkeit'; determiner of the object.",
-            "difficulty": 7
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "PPOSAT",
+            "feats": {},
+            "start": 14,
+            "end": 19,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "Fähigkeit",
-            "surface_en": "ability",
-            "furigana": "[ˈfɛːɪçkaɪ̯t]",
-            "pos": "NOUN",
             "lemma": "Fähigkeit",
-            "explanation": "Noun, feminine singular accusative; direct object of 'verbessert'.",
-            "difficulty": 10,
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 20,
+            "end": 29,
+            "analyzer": "spacy_de_core_news_lg",
             "is_main_word": true
           },
           {
-            "surface": "im",
-            "surface_en": "in the",
-            "furigana": "[ɪm]",
-            "pos": "ADP",
-            "lemma": "in",
-            "explanation": "Contraction of 'in dem'; preposition governing the dative; introduces a domain/manner prepositional phrase.",
-            "difficulty": 2
+            "surface": "zu",
+            "lemma": "zu",
+            "pos": "PART",
+            "upos": "PART",
+            "xpos": "PTKZU",
+            "feats": {},
+            "start": 30,
+            "end": 32,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "Schreiben.",
-            "surface_en": "writing",
-            "furigana": "[ˈʃʁaɪ̯bən]",
-            "pos": "NOUN",
-            "lemma": "Schreiben",
-            "explanation": "Nominalized infinitive functioning as a noun; dative singular as complement of 'im'; denotes the domain ('in writing').",
-            "difficulty": 10
+            "surface": "schreiben",
+            "lemma": "schreiben",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVINF",
+            "feats": {},
+            "start": 33,
+            "end": 42,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 42,
+            "end": 43,
+            "analyzer": "spacy_de_core_news_lg"
           }
         ],
         "difficulty_aggregated": 6.83
@@ -711,207 +1309,136 @@
         "difficulty_aggregated": 5.71
       },
       {
-        "sentence": "Die Chefin lobt meine Fähigkeit heute sehr.",
+        "sentence": "Die Chefin lobt heute meine Fähigkeiten sehr.",
         "tokens": [
           {
             "surface": "Die",
-            "surface_en": "the",
-            "furigana": "[diː]",
-            "pos": "DET",
             "lemma": "der",
-            "explanation": "Definite article, feminine singular nominative; determiner of the subject 'Chefin'.",
-            "difficulty": 2
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "Chefin",
-            "surface_en": "boss (female)",
-            "furigana": "[ˈʃɛfɪn]",
-            "pos": "NOUN",
             "lemma": "Chefin",
-            "explanation": "Common noun, feminine singular nominative; subject of 'lobt'.",
-            "difficulty": 7
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 4,
+            "end": 10,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "lobt",
-            "surface_en": "praises",
-            "furigana": "[loːpt]",
-            "pos": "VERB",
             "lemma": "loben",
-            "explanation": "Main verb, 3rd person singular present; transitive, selecting the accusative object 'meine Fähigkeit'; modified by adverbs 'heute' (temporal) and 'sehr' (degree).",
-            "difficulty": 7
-          },
-          {
-            "surface": "meine",
-            "surface_en": "my",
-            "furigana": "[ˈmaɪ̯nə]",
-            "pos": "DET",
-            "lemma": "mein",
-            "explanation": "Attributive possessive determiner; agrees with feminine singular accusative noun 'Fähigkeit'; determiner of the object.",
-            "difficulty": 7
-          },
-          {
-            "surface": "Fähigkeit",
-            "surface_en": "ability",
-            "furigana": "[ˈfɛːɪçkaɪ̯t]",
-            "pos": "NOUN",
-            "lemma": "Fähigkeit",
-            "explanation": "Noun, feminine singular accusative; direct object of 'lobt'.",
-            "difficulty": 10,
-            "is_main_word": true
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 11,
+            "end": 15,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "heute",
-            "surface_en": "today",
-            "furigana": "[ˈhɔʏ̯tə]",
-            "pos": "ADV",
             "lemma": "heute",
-            "explanation": "Temporal adverb modifying the verb 'lobt'.",
-            "difficulty": 7
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 16,
+            "end": 21,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "sehr.",
-            "surface_en": "very",
-            "furigana": "[zeːɐ̯]",
-            "pos": "ADV",
+            "surface": "meine",
+            "lemma": "mein",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "PPOSAT",
+            "feats": {},
+            "start": 22,
+            "end": 27,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Fähigkeiten",
+            "lemma": "Fähigkeit",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 28,
+            "end": 39,
+            "analyzer": "spacy_de_core_news_lg",
+            "is_main_word": true
+          },
+          {
+            "surface": "sehr",
             "lemma": "sehr",
-            "explanation": "Degree/intensifier adverb modifying 'lobt'; indicates high extent.",
-            "difficulty": 7
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 40,
+            "end": 44,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 44,
+            "end": 45,
+            "analyzer": "spacy_de_core_news_lg"
           }
         ],
         "difficulty_aggregated": 6.71
       }
     ],
-    "es": [
-      "Mis habilidades me ayudan en el trabajo.",
-      "Él está mejorando su habilidad para escribir.",
-      "Necesito esta habilidad para el curso.",
-      "La jefa elogió mucho mi habilidad hoy."
-    ],
-    "fr": [
-      "Mes compétences m’aident au travail.",
-      "Il améliore ses compétences en écriture.",
-      "J’ai besoin de cette compétence pour le cours.",
-      "Ma cheffe m’a beaucoup félicité pour mes compétences aujourd’hui."
-    ],
-    "it": [
-      "Le mie capacità mi aiutano al lavoro.",
-      "Sta migliorando la sua capacità di scrittura.",
-      "Ho bisogno di questa capacità per il corso.",
-      "Oggi la mia capo ha elogiato molto le mie capacità."
-    ],
-    "ko": [
-      "내 능력이 직장에서 도움이 돼요.",
-      "그는 글쓰기 실력을 늘리고 있어요.",
-      "이 수업에는 이 능력이 필요해요.",
-      "오늘 사장님이 내 능력을 많이 칭찬했어요."
-    ],
-    "zh-Hans": [
-      "我的能力在工作中很有用。",
-      "他在提高自己的写作能力。",
-      "这门课需要这项能力。",
-      "老板今天很夸奖我的能力。"
-    ],
-    "yue": [
-      "我嘅能力喺工作上好有用。",
-      "佢而家喺提升自己嘅寫作能力。",
-      "呢個課程需要呢項能力。",
-      "老細今日好讚我嘅能力。"
-    ],
-    "ru": [
-      "Мои навыки помогают мне на работе.",
-      "Он улучшает свои навыки письма.",
-      "Мне нужен этот навык для курса.",
-      "Начальница сегодня очень похвалила мои навыки."
-    ],
-    "pt": [
-      "Minhas habilidades me ajudam no trabalho.",
-      "Ele está melhorando sua habilidade de escrita.",
-      "Eu preciso dessa habilidade para o curso.",
-      "A chefe elogiou muito minha habilidade hoje."
-    ],
-    "he": [
-      "היכולות שלי עוזרות לי בעבודה.",
-      "הוא משפר את כישורי הכתיבה שלו.",
-      "אני צריך את המיומנות הזו לקורס.",
-      "המנהלת מאוד שיבחה היום את היכולות שלי."
-    ],
-    "tr": [
-      "Becerilerim işimde yardımcı oluyor.",
-      "Yazma becerisini geliştiriyor.",
-      "Bu ders için bu beceriye ihtiyacım var.",
-      "Patron bugün becerimi çok övdü."
-    ],
-    "vi": [
-      "Kỹ năng của tôi giúp tôi trong công việc.",
-      "Anh ấy đang cải thiện kỹ năng viết của mình.",
-      "Tôi cần kỹ năng này cho khóa học.",
-      "Sếp hôm nay khen kỹ năng của tôi rất nhiều."
-    ],
+    "word_POS": "Noun",
+    "entry_id": "Fähigkeit",
+    "word_en": "ability; skill",
+    "word_es": "capacidad; habilidad",
+    "word_fr": "capacité; aptitude",
+    "word_it": "abilità; capacità",
+    "word_ko": "능력; 실력",
+    "word_zh-Hans": "能力; 技能",
+    "word_yue": "能力; 技能",
+    "word_ru": "способность; навык",
+    "word_pt": "capacidade; habilidade",
+    "word_he": "יכולת; מיומנות",
+    "word_tr": "yetenek; beceri",
+    "word_vi": "khả năng; kỹ năng",
+    "word_ar": "قدرة; مهارة",
+    "word_nl": "vaardigheid; bekwaamheid",
+    "word_uk": "здатність; навичка",
+    "word_hu": "képesség; készség",
+    "word_hi": "क्षमता; कौशल",
+    "word_pl": "umiejętność; zdolność",
+    "word_el": "ικανότητα; δεξιότητα",
+    "word_nb": "evne; ferdighet",
+    "word_id": "kemampuan; keterampilan",
+    "word_sv": "förmåga; färdighet",
+    "word_ro": "abilitate; capacitate",
+    "word_cs": "schopnost; dovednost",
+    "word_da": "evne; færdighed",
+    "word_fi": "kyky; taito",
+    "word_ja": "能力; スキル",
+    "word_de": "Fähigkeit",
     "ar": [
       "مهاراتي تساعدني في العمل.",
       "هو يحسن مهارة الكتابة لديه.",
       "أحتاج هذه المهارة للدورة.",
       "المديرة مدحت مهارتي كثيرًا اليوم."
-    ],
-    "nl": [
-      "Mijn vaardigheden helpen me op het werk.",
-      "Hij verbetert zijn schrijfvaardigheid.",
-      "Ik heb deze vaardigheid nodig voor de cursus.",
-      "Mijn baas prees mijn vaardigheden vandaag heel erg."
-    ],
-    "uk": [
-      "Мої навички допомагають мені на роботі.",
-      "Він покращує свої навички письма.",
-      "Мені потрібна ця навичка для курсу.",
-      "Керівниця сьогодні дуже похвалила мої навички."
-    ],
-    "hu": [
-      "A képességeim segítenek a munkában.",
-      "Fejleszti az íráskészségét.",
-      "Szükségem van erre a képességre a kurzushoz.",
-      "A főnöknő ma nagyon dicsérte a képességeimet."
-    ],
-    "hi": [
-      "मेरी क्षमताएँ मुझे काम में मदद करती हैं.",
-      "वह अपनी लेखन क्षमता में सुधार कर रहा है.",
-      "मुझे इस कोर्स के लिए यह क्षमता चाहिए.",
-      "आज बॉस ने मेरी क्षमता की खूब तारीफ की."
-    ],
-    "pl": [
-      "Moje umiejętności pomagają mi w pracy.",
-      "On poprawia swoje umiejętności pisania.",
-      "Potrzebuję tej umiejętności do kursu.",
-      "Szefowa dziś bardzo pochwaliła moje umiejętności."
-    ],
-    "el": [
-      "Οι ικανότητές μου με βοηθούν στη δουλειά.",
-      "Βελτιώνει την ικανότητά του στο γράψιμο.",
-      "Χρειάζομαι αυτή την ικανότητα για το μάθημα.",
-      "Η διευθύντρια σήμερα επαίνεσε πολύ τις ικανότητές μου."
-    ],
-    "nb": [
-      "Ferdighetene mine hjelper meg på jobb.",
-      "Han forbedrer skriveferdigheten sin.",
-      "Jeg trenger denne ferdigheten til kurset.",
-      "Sjefen roste ferdighetene mine mye i dag."
-    ],
-    "id": [
-      "Kemampuan saya membantu saya di tempat kerja.",
-      "Dia meningkatkan kemampuan menulisnya.",
-      "Saya perlu kemampuan ini untuk kursus.",
-      "Bos hari ini sangat memuji kemampuan saya."
-    ],
-    "sv": [
-      "Mina färdigheter hjälper mig på jobbet.",
-      "Han förbättrar sin skrivförmåga.",
-      "Jag behöver den här färdigheten för kursen.",
-      "Chefen berömde mina färdigheter mycket i dag."
-    ],
-    "ro": [
-      "Abilitățile mele mă ajută la serviciu.",
-      "El își îmbunătățește abilitatea de a scrie.",
-      "Am nevoie de această abilitate pentru curs.",
-      "Șefa mi-a lăudat foarte mult abilitățile astăzi."
     ],
     "cs": [
       "Moje schopnosti mi pomáhají v práci.",
@@ -925,11 +1452,77 @@
       "Jeg har brug for denne evne til kurset.",
       "Chefen roste mine evner meget i dag."
     ],
+    "de": [
+      "Meine Fähigkeit hilft mir im Beruf.",
+      "Er verbessert seine Fähigkeit im Schreiben.",
+      "Ich brauche diese Fähigkeit für den Kurs.",
+      "Die Chefin lobt meine Fähigkeit heute sehr."
+    ],
+    "el": [
+      "Οι ικανότητές μου με βοηθούν στη δουλειά.",
+      "Βελτιώνει την ικανότητά του στο γράψιμο.",
+      "Χρειάζομαι αυτή την ικανότητα για το μάθημα.",
+      "Η διευθύντρια σήμερα επαίνεσε πολύ τις ικανότητές μου."
+    ],
+    "en": [
+      "My ability helps me at work.",
+      "He improves his ability in writing.",
+      "I need this ability for the course.",
+      "The boss praises my ability a lot today."
+    ],
+    "es": [
+      "Mis habilidades me ayudan en el trabajo.",
+      "Él está mejorando su habilidad para escribir.",
+      "Necesito esta habilidad para el curso.",
+      "La jefa elogió mucho mi habilidad hoy."
+    ],
     "fi": [
       "Taitoni auttavat minua työssä.",
       "Hän parantaa kirjoitustaitoaan.",
       "Tarvitsen tätä taitoa kurssia varten.",
       "Pomo kehui taitojani tänään paljon."
+    ],
+    "fr": [
+      "Mes compétences m’aident au travail.",
+      "Il améliore ses compétences en écriture.",
+      "J’ai besoin de cette compétence pour le cours.",
+      "Ma cheffe m’a beaucoup félicité pour mes compétences aujourd’hui."
+    ],
+    "he": [
+      "היכולות שלי עוזרות לי בעבודה.",
+      "הוא משפר את כישורי הכתיבה שלו.",
+      "אני צריך את המיומנות הזו לקורס.",
+      "המנהלת מאוד שיבחה היום את היכולות שלי."
+    ],
+    "hi": [
+      "मेरी क्षमताएँ मुझे काम में मदद करती हैं.",
+      "वह अपनी लेखन क्षमता में सुधार कर रहा है.",
+      "मुझे इस कोर्स के लिए यह क्षमता चाहिए.",
+      "आज बॉस ने मेरी क्षमता की खूब तारीफ की."
+    ],
+    "hu": [
+      "A képességeim segítenek a munkában.",
+      "Fejleszti az íráskészségét.",
+      "Szükségem van erre a képességre a kurzushoz.",
+      "A főnöknő ma nagyon dicsérte a képességeimet."
+    ],
+    "id": [
+      "Kemampuan saya membantu saya di tempat kerja.",
+      "Dia meningkatkan kemampuan menulisnya.",
+      "Saya perlu kemampuan ini untuk kursus.",
+      "Bos hari ini sangat memuji kemampuan saya."
+    ],
+    "ipa": [
+      "/ˈmaɪ̯nə ˈfɛːɪçkaɪ̯t hɪlft miːɐ̯ ʔɪm bəˈʁuːf./",
+      "/eːɐ̯ fɛɐ̯ˈbɛsɐt ˈzaɪ̯nə ˈfɛːɪçkaɪ̯t ʔɪm ˈʃʁaɪ̯bən./",
+      "/ɪç ˈbʁaʊ̯xə ˈdiːzə ˈfɛːɪçkaɪ̯t fyːɐ̯ deːn kʊʁs./",
+      "/diː ˈʃeːfɪn loːpt ˈmaɪ̯nə ˈfɛːɪçkaɪ̯t ˈhɔʏ̯tə zeːɐ̯./"
+    ],
+    "it": [
+      "Le mie capacità mi aiutano al lavoro.",
+      "Sta migliorando la sua capacità di scrittura.",
+      "Ho bisogno di questa capacità per il corso.",
+      "Oggi la mia capo ha elogiato molto le mie capacità."
     ],
     "ja": [
       "私の能力は仕事で役に立ちます。",
@@ -937,6 +1530,83 @@
       "この講座にはこの能力が必要です。",
       "今日は上司が私の能力をたくさん褒めてくれました。"
     ],
-    "word_POS": "Noun"
+    "ko": [
+      "내 능력이 직장에서 도움이 돼요.",
+      "그는 글쓰기 실력을 늘리고 있어요.",
+      "이 수업에는 이 능력이 필요해요.",
+      "오늘 사장님이 내 능력을 많이 칭찬했어요."
+    ],
+    "nb": [
+      "Ferdighetene mine hjelper meg på jobb.",
+      "Han forbedrer skriveferdigheten sin.",
+      "Jeg trenger denne ferdigheten til kurset.",
+      "Sjefen roste ferdighetene mine mye i dag."
+    ],
+    "nl": [
+      "Mijn vaardigheden helpen me op het werk.",
+      "Hij verbetert zijn schrijfvaardigheid.",
+      "Ik heb deze vaardigheid nodig voor de cursus.",
+      "Mijn baas prees mijn vaardigheden vandaag heel erg."
+    ],
+    "pl": [
+      "Moje umiejętności pomagają mi w pracy.",
+      "On poprawia swoje umiejętności pisania.",
+      "Potrzebuję tej umiejętności do kursu.",
+      "Szefowa dziś bardzo pochwaliła moje umiejętności."
+    ],
+    "pt": [
+      "Minhas habilidades me ajudam no trabalho.",
+      "Ele está melhorando sua habilidade de escrita.",
+      "Eu preciso dessa habilidade para o curso.",
+      "A chefe elogiou muito minha habilidade hoje."
+    ],
+    "ro": [
+      "Abilitățile mele mă ajută la serviciu.",
+      "El își îmbunătățește abilitatea de a scrie.",
+      "Am nevoie de această abilitate pentru curs.",
+      "Șefa mi-a lăudat foarte mult abilitățile astăzi."
+    ],
+    "ru": [
+      "Мои навыки помогают мне на работе.",
+      "Он улучшает свои навыки письма.",
+      "Мне нужен этот навык для курса.",
+      "Начальница сегодня очень похвалила мои навыки."
+    ],
+    "sv": [
+      "Mina färdigheter hjälper mig på jobbet.",
+      "Han förbättrar sin skrivförmåga.",
+      "Jag behöver den här färdigheten för kursen.",
+      "Chefen berömde mina färdigheter mycket i dag."
+    ],
+    "tr": [
+      "Becerilerim işimde yardımcı oluyor.",
+      "Yazma becerisini geliştiriyor.",
+      "Bu ders için bu beceriye ihtiyacım var.",
+      "Patron bugün becerimi çok övdü."
+    ],
+    "uk": [
+      "Мої навички допомагають мені на роботі.",
+      "Він покращує свої навички письма.",
+      "Мені потрібна ця навичка для курсу.",
+      "Керівниця сьогодні дуже похвалила мої навички."
+    ],
+    "vi": [
+      "Kỹ năng của tôi giúp tôi trong công việc.",
+      "Anh ấy đang cải thiện kỹ năng viết của mình.",
+      "Tôi cần kỹ năng này cho khóa học.",
+      "Sếp hôm nay khen kỹ năng của tôi rất nhiều."
+    ],
+    "yue": [
+      "我嘅能力喺工作上好有用。",
+      "佢而家喺提升自己嘅寫作能力。",
+      "呢個課程需要呢項能力。",
+      "老細今日好讚我嘅能力。"
+    ],
+    "zh-Hans": [
+      "我的能力在工作中很有用。",
+      "他在提高自己的写作能力。",
+      "这门课需要这项能力。",
+      "老板今天很夸奖我的能力。"
+    ]
   }
 }

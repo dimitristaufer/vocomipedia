@@ -323,12 +323,12 @@
       "difficulty": 5.5
     },
     {
-      "target": "Meine Oma erzählt von der Landwirtschaft von früher.",
+      "target": "Meine Oma erzählt, wie die Landwirtschaft früher war.",
       "reading": "/ˈmaɪ̯nə ˈoːma ɛʁˈtsɛːlt fɔn deːɐ̯ ˈlantvɪʁtʃaft fɔn ˈfʁyːɐ̯/",
       "translations": {
-        "de": "Meine Oma erzählt von der Landwirtschaft von früher.",
+        "de": "Meine Oma erzählt, wie die Landwirtschaft früher war.",
         "ipa": "/ˈmaɪ̯nə ˈoːma ɛʁˈtsɛːlt fɔn deːɐ̯ ˈlantvɪʁtʃaft fɔn ˈfʁyːɐ̯/",
-        "en": "My grandma talks about agriculture in the past.",
+        "en": "My grandma talks about what farming used to be like.",
         "es": "Mi abuela cuenta cómo era la agricultura antes.",
         "fr": "Ma grand-mère parle de l'agriculture d'autrefois.",
         "it": "Mia nonna racconta com'era l'agricoltura una volta.",
@@ -359,76 +359,114 @@
       "tokens": [
         {
           "surface": "Meine",
-          "surface_en": "my",
-          "furigana": "[ˈmaɪ̯nə]",
-          "pos": "DET",
           "lemma": "mein",
-          "explanation": "Possessive determiner, feminine nominative singular; modifies the subject noun 'Oma'.",
-          "difficulty": 7
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "PPOSAT",
+          "feats": {},
+          "start": 0,
+          "end": 5,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "Oma",
-          "surface_en": "grandma",
-          "furigana": "[ˈoːma]",
-          "pos": "NOUN",
           "lemma": "Oma",
-          "explanation": "Common noun, feminine singular; head of the subject NP.",
-          "difficulty": 4
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 6,
+          "end": 9,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "erzählt",
-          "surface_en": "tells",
-          "furigana": "[ɛʁˈtsɛːlt]",
-          "pos": "VERB",
           "lemma": "erzählen",
-          "explanation": "Finite main verb, 3rd person singular, present indicative; introduces content via a 'von'-PP.",
-          "difficulty": 10
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VVFIN",
+          "feats": {},
+          "start": 10,
+          "end": 17,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "von",
-          "surface_en": "about",
-          "furigana": "[fɔn]",
-          "pos": "ADP",
-          "lemma": "von",
-          "explanation": "Preposition selecting dative; introduces the topic 'Landwirtschaft'.",
-          "difficulty": 2
+          "surface": ",",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$,",
+          "feats": {},
+          "start": 17,
+          "end": 18,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "der",
-          "surface_en": "the",
-          "furigana": "[deːɐ̯]",
-          "pos": "DET",
+          "surface": "wie",
+          "lemma": "wie",
+          "pos": "SCONJ",
+          "upos": "SCONJ",
+          "xpos": "PWAV",
+          "feats": {},
+          "start": 19,
+          "end": 22,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "die",
           "lemma": "der",
-          "explanation": "Definite article, feminine dative singular; agrees with 'Landwirtschaft'.",
-          "difficulty": 2
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "ART",
+          "feats": {},
+          "start": 23,
+          "end": 26,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "Landwirtschaft",
-          "surface_en": "agriculture",
-          "furigana": "[ˈlantvɪʁtʃaft]",
-          "pos": "NOUN",
           "lemma": "Landwirtschaft",
-          "explanation": "Common noun, feminine singular; object of the preposition 'von'.",
-          "difficulty": 10,
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 27,
+          "end": 41,
+          "analyzer": "spacy_de_core_news_lg",
           "is_main_word": true
         },
         {
-          "surface": "von",
-          "surface_en": "from",
-          "furigana": "[fɔn]",
-          "pos": "ADP",
-          "lemma": "von",
-          "explanation": "Preposition introducing a temporal PP; indicates origin in time ('from earlier').",
-          "difficulty": 2
+          "surface": "früher",
+          "lemma": "früh",
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "ADJD",
+          "feats": {},
+          "start": 42,
+          "end": 48,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "früher.",
-          "surface_en": "earlier",
-          "furigana": "[ˈfʁyːɐ̯]",
-          "pos": "ADV",
-          "lemma": "früh",
-          "explanation": "Temporal adverb meaning 'earlier/formerly'; complements 'von' in the PP 'von früher'.",
-          "difficulty": 7
+          "surface": "war",
+          "lemma": "sein",
+          "pos": "AUX",
+          "upos": "AUX",
+          "xpos": "VAFIN",
+          "feats": {},
+          "start": 49,
+          "end": 52,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 52,
+          "end": 53,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 5.5
@@ -445,8 +483,358 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-15T01:43:34Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:De b1/a489d92fca6bcfdb",
+      "revision_id": 85271,
+      "parent_revision_id": 16824,
+      "revision_timestamp_utc": "2026-10-15T01:43:34Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Avoid the repeated von in German and make the English sentence about past farming idiomatic.",
+      "pulled_utc": "2026-10-17T07:06:41Z",
+      "applied_utc": "2026-10-17T07:06:49Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-bf6affdcfdba7f9b",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_b1:a489d92fca6bcfdb",
+        "pack_code": "de_b1",
+        "entry_id": "Landwirtschaft",
+        "language": "de",
+        "sentence_index": 4,
+        "old_sentence": "Meine Oma erzählt von der Landwirtschaft von früher.",
+        "old_translations": {
+          "de": "Meine Oma erzählt von der Landwirtschaft von früher.",
+          "ipa": "/ˈmaɪ̯nə ˈoːma ɛʁˈtsɛːlt fɔn deːɐ̯ ˈlantvɪʁtʃaft fɔn ˈfʁyːɐ̯/",
+          "en": "My grandma talks about agriculture in the past.",
+          "es": "Mi abuela cuenta cómo era la agricultura antes.",
+          "fr": "Ma grand-mère parle de l'agriculture d'autrefois.",
+          "it": "Mia nonna racconta com'era l'agricoltura una volta.",
+          "ko": "우리 할머니는 예전의 농업에 대해 이야기해요.",
+          "zh-Hans": "奶奶讲以前的农业。",
+          "yue": "我阿婆講以前嘅農業。",
+          "ru": "Моя бабушка рассказывает, каким было сельское хозяйство раньше.",
+          "pt": "Minha avó conta como era a agricultura antigamente.",
+          "he": "סבתא שלי מספרת איך החקלאות הייתה פעם.",
+          "tr": "Büyükannem eskiden tarımın nasıl olduğunu anlatıyor.",
+          "vi": "Bà tôi kể về nông nghiệp ngày xưa.",
+          "ar": "جدتي تتحدث عن الزراعة في الماضي.",
+          "nl": "Mijn oma vertelt over de landbouw van vroeger.",
+          "uk": "Моя бабуся розповідає, яким було сільське господарство раніше.",
+          "hu": "A nagymamám mesél a régi mezőgazdaságról.",
+          "hi": "मेरी दादी पहले की कृषि के बारे में बताती हैं।",
+          "pl": "Moja babcia opowiada, jakie było kiedyś rolnictwo.",
+          "el": "Η γιαγιά μου μιλάει για τη γεωργία όπως ήταν παλιά.",
+          "nb": "Bestemor forteller om hvordan landbruket var før.",
+          "id": "Nenek saya bercerita tentang pertanian zaman dulu.",
+          "sv": "Min mormor berättar om hur jordbruket var förr.",
+          "ro": "Bunica mea povestește despre cum era agricultura pe vremuri.",
+          "cs": "Moje babička vypráví o tom, jaké bylo dřív zemědělství.",
+          "da": "Min mormor fortæller om, hvordan landbruget var før.",
+          "fi": "Isoäitini kertoo, millaista maatalous oli ennen.",
+          "ja": "祖母は昔の農業について話しています。"
+        },
+        "proposed_sentence": "Meine Oma erzählt, wie die Landwirtschaft früher war.",
+        "proposed_translations": {
+          "de": "Meine Oma erzählt, wie die Landwirtschaft früher war.",
+          "ipa": "/ˈmaɪ̯nə ˈoːma ɛʁˈtsɛːlt fɔn deːɐ̯ ˈlantvɪʁtʃaft fɔn ˈfʁyːɐ̯/",
+          "en": "My grandma talks about what farming used to be like.",
+          "es": "Mi abuela cuenta cómo era la agricultura antes.",
+          "fr": "Ma grand-mère parle de l'agriculture d'autrefois.",
+          "it": "Mia nonna racconta com'era l'agricoltura una volta.",
+          "ko": "우리 할머니는 예전의 농업에 대해 이야기해요.",
+          "zh-Hans": "奶奶讲以前的农业。",
+          "yue": "我阿婆講以前嘅農業。",
+          "ru": "Моя бабушка рассказывает, каким было сельское хозяйство раньше.",
+          "pt": "Minha avó conta como era a agricultura antigamente.",
+          "he": "סבתא שלי מספרת איך החקלאות הייתה פעם.",
+          "tr": "Büyükannem eskiden tarımın nasıl olduğunu anlatıyor.",
+          "vi": "Bà tôi kể về nông nghiệp ngày xưa.",
+          "ar": "جدتي تتحدث عن الزراعة في الماضي.",
+          "nl": "Mijn oma vertelt over de landbouw van vroeger.",
+          "uk": "Моя бабуся розповідає, яким було сільське господарство раніше.",
+          "hu": "A nagymamám mesél a régi mezőgazdaságról.",
+          "hi": "मेरी दादी पहले की कृषि के बारे में बताती हैं।",
+          "pl": "Moja babcia opowiada, jakie było kiedyś rolnictwo.",
+          "el": "Η γιαγιά μου μιλάει για τη γεωργία όπως ήταν παλιά.",
+          "nb": "Bestemor forteller om hvordan landbruket var før.",
+          "id": "Nenek saya bercerita tentang pertanian zaman dulu.",
+          "sv": "Min mormor berättar om hur jordbruket var förr.",
+          "ro": "Bunica mea povestește despre cum era agricultura pe vremuri.",
+          "cs": "Moje babička vypráví o tom, jaké bylo dřív zemědělství.",
+          "da": "Min mormor fortæller om, hvordan landbruget var før.",
+          "fi": "Isoäitini kertoo, millaista maatalous oli ennen.",
+          "ja": "祖母は昔の農業について話しています。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Meine Oma erzählt, wie die Landwirtschaft früher war.",
+        "old_japanese": "Meine Oma erzählt von der Landwirtschaft von früher.",
+        "old_english": "My grandma talks about agriculture in the past.",
+        "proposed_japanese": "Meine Oma erzählt, wie die Landwirtschaft früher war.",
+        "proposed_english": "My grandma talks about what farming used to be like.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Meine Oma erzählt, wie die Landwirtschaft früher war.",
+          "tokens": [
+            {
+              "surface": "Meine",
+              "lemma": "mein",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "PPOSAT",
+              "feats": {},
+              "start": 0,
+              "end": 5,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Oma",
+              "lemma": "Oma",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 6,
+              "end": 9,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "erzählt",
+              "lemma": "erzählen",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVFIN",
+              "feats": {},
+              "start": 10,
+              "end": 17,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ",",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$,",
+              "feats": {},
+              "start": 17,
+              "end": 18,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "wie",
+              "lemma": "wie",
+              "pos": "SCONJ",
+              "upos": "SCONJ",
+              "xpos": "PWAV",
+              "feats": {},
+              "start": 19,
+              "end": 22,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "die",
+              "lemma": "der",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "ART",
+              "feats": {},
+              "start": 23,
+              "end": 26,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Landwirtschaft",
+              "lemma": "Landwirtschaft",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 27,
+              "end": 41,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "früher",
+              "lemma": "früh",
+              "pos": "ADV",
+              "upos": "ADV",
+              "xpos": "ADJD",
+              "feats": {},
+              "start": 42,
+              "end": 48,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "war",
+              "lemma": "sein",
+              "pos": "AUX",
+              "upos": "AUX",
+              "xpos": "VAFIN",
+              "feats": {},
+              "start": 49,
+              "end": 52,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 52,
+              "end": 53,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Meine",
+            "lemma": "mein",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "PPOSAT",
+            "feats": {},
+            "start": 0,
+            "end": 5,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Oma",
+            "lemma": "Oma",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 6,
+            "end": 9,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "erzählt",
+            "lemma": "erzählen",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 10,
+            "end": 17,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ",",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$,",
+            "feats": {},
+            "start": 17,
+            "end": 18,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "wie",
+            "lemma": "wie",
+            "pos": "SCONJ",
+            "upos": "SCONJ",
+            "xpos": "PWAV",
+            "feats": {},
+            "start": 19,
+            "end": 22,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "die",
+            "lemma": "der",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 23,
+            "end": 26,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Landwirtschaft",
+            "lemma": "Landwirtschaft",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 27,
+            "end": 41,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "früher",
+            "lemma": "früh",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADJD",
+            "feats": {},
+            "start": 42,
+            "end": 48,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "war",
+            "lemma": "sein",
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "VAFIN",
+            "feats": {},
+            "start": 49,
+            "end": 52,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 52,
+            "end": 53,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:06:41Z",
+        "updated_utc": "2026-10-17T07:07:05Z",
+        "applied_utc": "2026-10-17T07:07:05Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:07:05Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -458,34 +846,6 @@
     "word": "Landwirtschaft",
     "word_reading": "",
     "word_label": "Substantiv (die fem.)",
-    "word_en": "agriculture; farming",
-    "word_es": "agricultura; cultivo",
-    "word_fr": "agriculture; exploitation agricole",
-    "word_it": "agricoltura; coltivazione",
-    "word_ko": "농업; 농사",
-    "word_zh-Hans": "农业; 农耕",
-    "word_yue": "農業; 耕作",
-    "word_ru": "сельское хозяйство; земледелие",
-    "word_pt": "agricultura; lavoura",
-    "word_he": "חקלאות; עבודת אדמה",
-    "word_tr": "tarım; ziraat",
-    "word_vi": "nông nghiệp; trồng trọt",
-    "word_ar": "الزراعة; الفلاحة",
-    "word_nl": "landbouw; akkerbouw",
-    "word_uk": "сільське господарство; землеробство",
-    "word_hu": "mezőgazdaság; földművelés",
-    "word_hi": "कृषि; खेती",
-    "word_pl": "rolnictwo; uprawa ziemi",
-    "word_el": "γεωργία; καλλιέργεια",
-    "word_nb": "landbruk; jordbruk",
-    "word_id": "pertanian; usaha tani",
-    "word_sv": "jordbruk; lantbruk",
-    "word_ro": "agricultură; cultivare",
-    "word_cs": "zemědělství; pěstování",
-    "word_da": "landbrug; jordbrug",
-    "word_fi": "maatalous; viljely",
-    "word_ja": "農業; 農耕",
-    "word_de": "Landwirtschaft",
     "comic_difficulty": 5.83,
     "jp": [
       "Mein Onkel arbeitet in der Landwirtschaft.",
@@ -498,24 +858,6 @@
       "/ɪç ʃtuˈdiːʁə ˈlantvɪʁtʃaft an deːɐ̯ ˈhoːxʃuːlə/",
       "/diː ˈlantvɪʁtʃaft ˈlaɪ̯dɛt ˈʊntɐ deːɐ̯ ˈtʁɔkn̩haɪ̯t/",
       "/ˈmaɪ̯nə ˈoːma ɛʁˈtsɛːlt fɔn deːɐ̯ ˈlantvɪʁtʃaft fɔn ˈfʁyːɐ̯/"
-    ],
-    "de": [
-      "Mein Onkel arbeitet in der Landwirtschaft.",
-      "Ich studiere Landwirtschaft an der Hochschule.",
-      "Die Landwirtschaft leidet unter der Trockenheit.",
-      "Meine Oma erzählt von der Landwirtschaft von früher."
-    ],
-    "ipa": [
-      "/maɪ̯n ˈɔŋkəl ˈaʁbaɪ̯tɛt ɪn deːɐ̯ ˈlantvɪʁtʃaft/",
-      "/ɪç ʃtuˈdiːʁə ˈlantvɪʁtʃaft an deːɐ̯ ˈhoːxʃuːlə/",
-      "/diː ˈlantvɪʁtʃaft ˈlaɪ̯dɛt ˈʊntɐ deːɐ̯ ˈtʁɔkn̩haɪ̯t/",
-      "/ˈmaɪ̯nə ˈoːma ɛʁˈtsɛːlt fɔn deːɐ̯ ˈlantvɪʁtʃaft fɔn ˈfʁyːɐ̯/"
-    ],
-    "en": [
-      "My uncle works in agriculture.",
-      "I study agriculture at the university.",
-      "Agriculture suffers from the drought.",
-      "My grandma talks about agriculture in the past."
     ],
     "pos_analysis": [
       {
@@ -702,216 +1044,158 @@
         "difficulty_aggregated": 5.5
       },
       {
-        "sentence": "Meine Oma erzählt von der Landwirtschaft von früher.",
+        "sentence": "Meine Oma erzählt, wie die Landwirtschaft früher war.",
         "tokens": [
           {
             "surface": "Meine",
-            "surface_en": "my",
-            "furigana": "[ˈmaɪ̯nə]",
-            "pos": "DET",
             "lemma": "mein",
-            "explanation": "Possessive determiner, feminine nominative singular; modifies the subject noun 'Oma'.",
-            "difficulty": 7
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "PPOSAT",
+            "feats": {},
+            "start": 0,
+            "end": 5,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "Oma",
-            "surface_en": "grandma",
-            "furigana": "[ˈoːma]",
-            "pos": "NOUN",
             "lemma": "Oma",
-            "explanation": "Common noun, feminine singular; head of the subject NP.",
-            "difficulty": 4
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 6,
+            "end": 9,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "erzählt",
-            "surface_en": "tells",
-            "furigana": "[ɛʁˈtsɛːlt]",
-            "pos": "VERB",
             "lemma": "erzählen",
-            "explanation": "Finite main verb, 3rd person singular, present indicative; introduces content via a 'von'-PP.",
-            "difficulty": 10
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 10,
+            "end": 17,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "von",
-            "surface_en": "about",
-            "furigana": "[fɔn]",
-            "pos": "ADP",
-            "lemma": "von",
-            "explanation": "Preposition selecting dative; introduces the topic 'Landwirtschaft'.",
-            "difficulty": 2
+            "surface": ",",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$,",
+            "feats": {},
+            "start": 17,
+            "end": 18,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "der",
-            "surface_en": "the",
-            "furigana": "[deːɐ̯]",
-            "pos": "DET",
+            "surface": "wie",
+            "lemma": "wie",
+            "pos": "SCONJ",
+            "upos": "SCONJ",
+            "xpos": "PWAV",
+            "feats": {},
+            "start": 19,
+            "end": 22,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "die",
             "lemma": "der",
-            "explanation": "Definite article, feminine dative singular; agrees with 'Landwirtschaft'.",
-            "difficulty": 2
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 23,
+            "end": 26,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "Landwirtschaft",
-            "surface_en": "agriculture",
-            "furigana": "[ˈlantvɪʁtʃaft]",
-            "pos": "NOUN",
             "lemma": "Landwirtschaft",
-            "explanation": "Common noun, feminine singular; object of the preposition 'von'.",
-            "difficulty": 10,
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 27,
+            "end": 41,
+            "analyzer": "spacy_de_core_news_lg",
             "is_main_word": true
           },
           {
-            "surface": "von",
-            "surface_en": "from",
-            "furigana": "[fɔn]",
-            "pos": "ADP",
-            "lemma": "von",
-            "explanation": "Preposition introducing a temporal PP; indicates origin in time ('from earlier').",
-            "difficulty": 2
+            "surface": "früher",
+            "lemma": "früh",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADJD",
+            "feats": {},
+            "start": 42,
+            "end": 48,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "früher.",
-            "surface_en": "earlier",
-            "furigana": "[ˈfʁyːɐ̯]",
-            "pos": "ADV",
-            "lemma": "früh",
-            "explanation": "Temporal adverb meaning 'earlier/formerly'; complements 'von' in the PP 'von früher'.",
-            "difficulty": 7
+            "surface": "war",
+            "lemma": "sein",
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "VAFIN",
+            "feats": {},
+            "start": 49,
+            "end": 52,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 52,
+            "end": 53,
+            "analyzer": "spacy_de_core_news_lg"
           }
         ],
         "difficulty_aggregated": 5.5
       }
     ],
-    "es": [
-      "Mi tío trabaja en la agricultura.",
-      "Estudio agricultura en la universidad.",
-      "La agricultura sufre por la sequía.",
-      "Mi abuela cuenta cómo era la agricultura antes."
-    ],
-    "fr": [
-      "Mon oncle travaille dans l'agriculture.",
-      "J'étudie l'agriculture à l'université.",
-      "L'agriculture souffre de la sécheresse.",
-      "Ma grand-mère parle de l'agriculture d'autrefois."
-    ],
-    "it": [
-      "Mio zio lavora in agricoltura.",
-      "Studio agraria all'università.",
-      "L'agricoltura risente della siccità.",
-      "Mia nonna racconta com'era l'agricoltura una volta."
-    ],
-    "ko": [
-      "우리 삼촌은 농업 분야에서 일해요.",
-      "저는 대학교에서 농업을 공부해요.",
-      "가뭄 때문에 농업이 어려움을 겪고 있어요.",
-      "우리 할머니는 예전의 농업에 대해 이야기해요."
-    ],
-    "zh-Hans": [
-      "我叔叔从事农业工作。",
-      "我在大学学习农业。",
-      "农业受到干旱的影响。",
-      "奶奶讲以前的农业。"
-    ],
-    "yue": [
-      "我叔叔喺農業工作。",
-      "我喺大學讀農業。",
-      "農業因為乾旱受影響。",
-      "我阿婆講以前嘅農業。"
-    ],
-    "ru": [
-      "Мой дядя работает в сельском хозяйстве.",
-      "Я изучаю сельское хозяйство в университете.",
-      "Сельское хозяйство страдает от засухи.",
-      "Моя бабушка рассказывает, каким было сельское хозяйство раньше."
-    ],
-    "pt": [
-      "Meu tio trabalha na agricultura.",
-      "Eu estudo agricultura na universidade.",
-      "A agricultura sofre com a seca.",
-      "Minha avó conta como era a agricultura antigamente."
-    ],
-    "he": [
-      "הדוד שלי עובד בחקלאות.",
-      "אני לומד חקלאות באוניברסיטה.",
-      "החקלאות סובלת מהבצורת.",
-      "סבתא שלי מספרת איך החקלאות הייתה פעם."
-    ],
-    "tr": [
-      "Amcam tarımda çalışıyor.",
-      "Üniversitede tarım okuyorum.",
-      "Tarım kuraklıktan zarar görüyor.",
-      "Büyükannem eskiden tarımın nasıl olduğunu anlatıyor."
-    ],
-    "vi": [
-      "Chú tôi làm trong ngành nông nghiệp.",
-      "Tôi học nông nghiệp ở trường đại học.",
-      "Nông nghiệp bị ảnh hưởng bởi hạn hán.",
-      "Bà tôi kể về nông nghiệp ngày xưa."
-    ],
+    "word_POS": "Noun",
+    "entry_id": "Landwirtschaft",
+    "word_en": "agriculture; farming",
+    "word_es": "agricultura; cultivo",
+    "word_fr": "agriculture; exploitation agricole",
+    "word_it": "agricoltura; coltivazione",
+    "word_ko": "농업; 농사",
+    "word_zh-Hans": "农业; 农耕",
+    "word_yue": "農業; 耕作",
+    "word_ru": "сельское хозяйство; земледелие",
+    "word_pt": "agricultura; lavoura",
+    "word_he": "חקלאות; עבודת אדמה",
+    "word_tr": "tarım; ziraat",
+    "word_vi": "nông nghiệp; trồng trọt",
+    "word_ar": "الزراعة; الفلاحة",
+    "word_nl": "landbouw; akkerbouw",
+    "word_uk": "сільське господарство; землеробство",
+    "word_hu": "mezőgazdaság; földművelés",
+    "word_hi": "कृषि; खेती",
+    "word_pl": "rolnictwo; uprawa ziemi",
+    "word_el": "γεωργία; καλλιέργεια",
+    "word_nb": "landbruk; jordbruk",
+    "word_id": "pertanian; usaha tani",
+    "word_sv": "jordbruk; lantbruk",
+    "word_ro": "agricultură; cultivare",
+    "word_cs": "zemědělství; pěstování",
+    "word_da": "landbrug; jordbrug",
+    "word_fi": "maatalous; viljely",
+    "word_ja": "農業; 農耕",
+    "word_de": "Landwirtschaft",
     "ar": [
       "عمي يعمل في الزراعة.",
       "أدرس الزراعة في الجامعة.",
       "الزراعة تعاني من الجفاف.",
       "جدتي تتحدث عن الزراعة في الماضي."
-    ],
-    "nl": [
-      "Mijn oom werkt in de landbouw.",
-      "Ik studeer landbouw aan de universiteit.",
-      "De landbouw lijdt onder de droogte.",
-      "Mijn oma vertelt over de landbouw van vroeger."
-    ],
-    "uk": [
-      "Мій дядько працює в сільському господарстві.",
-      "Я вивчаю сільське господарство в університеті.",
-      "Сільське господарство страждає від посухи.",
-      "Моя бабуся розповідає, яким було сільське господарство раніше."
-    ],
-    "hu": [
-      "A nagybátyám a mezőgazdaságban dolgozik.",
-      "Az egyetemen mezőgazdaságot tanulok.",
-      "A mezőgazdaságot sújtja az aszály.",
-      "A nagymamám mesél a régi mezőgazdaságról."
-    ],
-    "hi": [
-      "मेरे चाचा कृषि में काम करते हैं।",
-      "मैं विश्वविद्यालय में कृषि की पढ़ाई करता हूँ।",
-      "कृषि सूखे से प्रभावित है।",
-      "मेरी दादी पहले की कृषि के बारे में बताती हैं।"
-    ],
-    "pl": [
-      "Mój wujek pracuje w rolnictwie.",
-      "Studiuję rolnictwo na uniwersytecie.",
-      "Rolnictwo cierpi z powodu suszy.",
-      "Moja babcia opowiada, jakie było kiedyś rolnictwo."
-    ],
-    "el": [
-      "Ο θείος μου δουλεύει στη γεωργία.",
-      "Σπουδάζω γεωπονία στο πανεπιστήμιο.",
-      "Η γεωργία υποφέρει από την ξηρασία.",
-      "Η γιαγιά μου μιλάει για τη γεωργία όπως ήταν παλιά."
-    ],
-    "nb": [
-      "Onkelen min jobber i landbruket.",
-      "Jeg studerer landbruk på universitetet.",
-      "Landbruket lider under tørken.",
-      "Bestemor forteller om hvordan landbruket var før."
-    ],
-    "id": [
-      "Paman saya bekerja di bidang pertanian.",
-      "Saya belajar pertanian di universitas.",
-      "Pertanian terdampak kekeringan.",
-      "Nenek saya bercerita tentang pertanian zaman dulu."
-    ],
-    "sv": [
-      "Min farbror jobbar inom jordbruket.",
-      "Jag studerar jordbruk på universitetet.",
-      "Jordbruket drabbas av torkan.",
-      "Min mormor berättar om hur jordbruket var förr."
-    ],
-    "ro": [
-      "Unchiul meu lucrează în agricultură.",
-      "Studiez agricultură la universitate.",
-      "Agricultura suferă din cauza secetei.",
-      "Bunica mea povestește despre cum era agricultura pe vremuri."
     ],
     "cs": [
       "Můj strýc pracuje v zemědělství.",
@@ -925,11 +1209,77 @@
       "Landbruget lider under tørken.",
       "Min mormor fortæller om, hvordan landbruget var før."
     ],
+    "de": [
+      "Mein Onkel arbeitet in der Landwirtschaft.",
+      "Ich studiere Landwirtschaft an der Hochschule.",
+      "Die Landwirtschaft leidet unter der Trockenheit.",
+      "Meine Oma erzählt von der Landwirtschaft von früher."
+    ],
+    "el": [
+      "Ο θείος μου δουλεύει στη γεωργία.",
+      "Σπουδάζω γεωπονία στο πανεπιστήμιο.",
+      "Η γεωργία υποφέρει από την ξηρασία.",
+      "Η γιαγιά μου μιλάει για τη γεωργία όπως ήταν παλιά."
+    ],
+    "en": [
+      "My uncle works in agriculture.",
+      "I study agriculture at the university.",
+      "Agriculture suffers from the drought.",
+      "My grandma talks about agriculture in the past."
+    ],
+    "es": [
+      "Mi tío trabaja en la agricultura.",
+      "Estudio agricultura en la universidad.",
+      "La agricultura sufre por la sequía.",
+      "Mi abuela cuenta cómo era la agricultura antes."
+    ],
     "fi": [
       "Setäni työskentelee maataloudessa.",
       "Opiskelen maataloutta yliopistossa.",
       "Maatalous kärsii kuivuudesta.",
       "Isoäitini kertoo, millaista maatalous oli ennen."
+    ],
+    "fr": [
+      "Mon oncle travaille dans l'agriculture.",
+      "J'étudie l'agriculture à l'université.",
+      "L'agriculture souffre de la sécheresse.",
+      "Ma grand-mère parle de l'agriculture d'autrefois."
+    ],
+    "he": [
+      "הדוד שלי עובד בחקלאות.",
+      "אני לומד חקלאות באוניברסיטה.",
+      "החקלאות סובלת מהבצורת.",
+      "סבתא שלי מספרת איך החקלאות הייתה פעם."
+    ],
+    "hi": [
+      "मेरे चाचा कृषि में काम करते हैं।",
+      "मैं विश्वविद्यालय में कृषि की पढ़ाई करता हूँ।",
+      "कृषि सूखे से प्रभावित है।",
+      "मेरी दादी पहले की कृषि के बारे में बताती हैं।"
+    ],
+    "hu": [
+      "A nagybátyám a mezőgazdaságban dolgozik.",
+      "Az egyetemen mezőgazdaságot tanulok.",
+      "A mezőgazdaságot sújtja az aszály.",
+      "A nagymamám mesél a régi mezőgazdaságról."
+    ],
+    "id": [
+      "Paman saya bekerja di bidang pertanian.",
+      "Saya belajar pertanian di universitas.",
+      "Pertanian terdampak kekeringan.",
+      "Nenek saya bercerita tentang pertanian zaman dulu."
+    ],
+    "ipa": [
+      "/maɪ̯n ˈɔŋkəl ˈaʁbaɪ̯tɛt ɪn deːɐ̯ ˈlantvɪʁtʃaft/",
+      "/ɪç ʃtuˈdiːʁə ˈlantvɪʁtʃaft an deːɐ̯ ˈhoːxʃuːlə/",
+      "/diː ˈlantvɪʁtʃaft ˈlaɪ̯dɛt ˈʊntɐ deːɐ̯ ˈtʁɔkn̩haɪ̯t/",
+      "/ˈmaɪ̯nə ˈoːma ɛʁˈtsɛːlt fɔn deːɐ̯ ˈlantvɪʁtʃaft fɔn ˈfʁyːɐ̯/"
+    ],
+    "it": [
+      "Mio zio lavora in agricoltura.",
+      "Studio agraria all'università.",
+      "L'agricoltura risente della siccità.",
+      "Mia nonna racconta com'era l'agricoltura una volta."
     ],
     "ja": [
       "おじは農業の仕事をしています。",
@@ -937,6 +1287,83 @@
       "農業は干ばつに苦しんでいます。",
       "祖母は昔の農業について話しています。"
     ],
-    "word_POS": "Noun"
+    "ko": [
+      "우리 삼촌은 농업 분야에서 일해요.",
+      "저는 대학교에서 농업을 공부해요.",
+      "가뭄 때문에 농업이 어려움을 겪고 있어요.",
+      "우리 할머니는 예전의 농업에 대해 이야기해요."
+    ],
+    "nb": [
+      "Onkelen min jobber i landbruket.",
+      "Jeg studerer landbruk på universitetet.",
+      "Landbruket lider under tørken.",
+      "Bestemor forteller om hvordan landbruket var før."
+    ],
+    "nl": [
+      "Mijn oom werkt in de landbouw.",
+      "Ik studeer landbouw aan de universiteit.",
+      "De landbouw lijdt onder de droogte.",
+      "Mijn oma vertelt over de landbouw van vroeger."
+    ],
+    "pl": [
+      "Mój wujek pracuje w rolnictwie.",
+      "Studiuję rolnictwo na uniwersytecie.",
+      "Rolnictwo cierpi z powodu suszy.",
+      "Moja babcia opowiada, jakie było kiedyś rolnictwo."
+    ],
+    "pt": [
+      "Meu tio trabalha na agricultura.",
+      "Eu estudo agricultura na universidade.",
+      "A agricultura sofre com a seca.",
+      "Minha avó conta como era a agricultura antigamente."
+    ],
+    "ro": [
+      "Unchiul meu lucrează în agricultură.",
+      "Studiez agricultură la universitate.",
+      "Agricultura suferă din cauza secetei.",
+      "Bunica mea povestește despre cum era agricultura pe vremuri."
+    ],
+    "ru": [
+      "Мой дядя работает в сельском хозяйстве.",
+      "Я изучаю сельское хозяйство в университете.",
+      "Сельское хозяйство страдает от засухи.",
+      "Моя бабушка рассказывает, каким было сельское хозяйство раньше."
+    ],
+    "sv": [
+      "Min farbror jobbar inom jordbruket.",
+      "Jag studerar jordbruk på universitetet.",
+      "Jordbruket drabbas av torkan.",
+      "Min mormor berättar om hur jordbruket var förr."
+    ],
+    "tr": [
+      "Amcam tarımda çalışıyor.",
+      "Üniversitede tarım okuyorum.",
+      "Tarım kuraklıktan zarar görüyor.",
+      "Büyükannem eskiden tarımın nasıl olduğunu anlatıyor."
+    ],
+    "uk": [
+      "Мій дядько працює в сільському господарстві.",
+      "Я вивчаю сільське господарство в університеті.",
+      "Сільське господарство страждає від посухи.",
+      "Моя бабуся розповідає, яким було сільське господарство раніше."
+    ],
+    "vi": [
+      "Chú tôi làm trong ngành nông nghiệp.",
+      "Tôi học nông nghiệp ở trường đại học.",
+      "Nông nghiệp bị ảnh hưởng bởi hạn hán.",
+      "Bà tôi kể về nông nghiệp ngày xưa."
+    ],
+    "yue": [
+      "我叔叔喺農業工作。",
+      "我喺大學讀農業。",
+      "農業因為乾旱受影響。",
+      "我阿婆講以前嘅農業。"
+    ],
+    "zh-Hans": [
+      "我叔叔从事农业工作。",
+      "我在大学学习农业。",
+      "农业受到干旱的影响。",
+      "奶奶讲以前的农业。"
+    ]
   }
 }

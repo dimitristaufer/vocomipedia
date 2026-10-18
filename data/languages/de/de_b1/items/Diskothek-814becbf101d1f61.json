@@ -137,10 +137,10 @@
       "difficulty": 5
     },
     {
-      "target": "Anna arbeitet in der Diskothek am Wochenende.",
+      "target": "Anna arbeitet am Wochenende in der Diskothek.",
       "reading": "/ˈana ˈaʁbaɪ̯tɛt ɪn deːɐ̯ dɪskoˈteːk am ˈvɔxənˌɛndə/",
       "translations": {
-        "de": "Anna arbeitet in der Diskothek am Wochenende.",
+        "de": "Anna arbeitet am Wochenende in der Diskothek.",
         "ipa": "/ˈana ˈaʁbaɪ̯tɛt ɪn deːɐ̯ dɪskoˈteːk am ˈvɔxənˌɛndə/",
         "en": "Anna works at the nightclub on weekends.",
         "es": "Anna trabaja en la discoteca los fines de semana.",
@@ -173,67 +173,92 @@
       "tokens": [
         {
           "surface": "Anna",
-          "surface_en": "Anna",
-          "furigana": "[ˈana]",
-          "pos": "PROPN",
           "lemma": "Anna",
-          "explanation": "Proper noun; subject (3rd person singular).",
-          "difficulty": 7
+          "pos": "PROPN",
+          "upos": "PROPN",
+          "xpos": "NE",
+          "feats": {},
+          "start": 0,
+          "end": 4,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "arbeitet",
-          "surface_en": "works",
-          "furigana": "[ˈaʁbaɪ̯tɛt]",
-          "pos": "VERB",
           "lemma": "arbeiten",
-          "explanation": "Finite lexical verb, present tense (3sg).",
-          "difficulty": 10
-        },
-        {
-          "surface": "in",
-          "surface_en": "in/at",
-          "furigana": "[ɪn]",
-          "pos": "ADP",
-          "lemma": "in",
-          "explanation": "Preposition; with dative here for static location.",
-          "difficulty": 2
-        },
-        {
-          "surface": "der",
-          "surface_en": "the",
-          "furigana": "[deːɐ̯]",
-          "pos": "DET",
-          "lemma": "der",
-          "explanation": "Definite article, dative feminine singular; determiner of 'Diskothek' with static 'in'.",
-          "difficulty": 2
-        },
-        {
-          "surface": "Diskothek",
-          "surface_en": "discotheque",
-          "furigana": "[ˌdɪskoˈteːk]",
-          "pos": "NOUN",
-          "lemma": "Diskothek",
-          "explanation": "Common noun, feminine singular; object of the preposition 'in' (location).",
-          "difficulty": 10,
-          "is_main_word": true
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VVFIN",
+          "feats": {},
+          "start": 5,
+          "end": 13,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "am",
-          "surface_en": "at the",
-          "furigana": "[am]",
-          "pos": "ADP",
           "lemma": "an",
-          "explanation": "Preposition (contraction of 'an dem'); selects dative; introduces a temporal PP.",
-          "difficulty": 2
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "APPRART",
+          "feats": {},
+          "start": 14,
+          "end": 16,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "Wochenende.",
-          "surface_en": "weekend",
-          "furigana": "[ˈvɔxənˌɛndə]",
-          "pos": "NOUN",
+          "surface": "Wochenende",
           "lemma": "Wochenende",
-          "explanation": "Common noun, neuter singular; temporal complement of 'am'.",
-          "difficulty": 10
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 17,
+          "end": 27,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "in",
+          "lemma": "in",
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "APPR",
+          "feats": {},
+          "start": 28,
+          "end": 30,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "der",
+          "lemma": "der",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "ART",
+          "feats": {},
+          "start": 31,
+          "end": 34,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "Diskothek",
+          "lemma": "Diskothek",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 35,
+          "end": 44,
+          "analyzer": "spacy_de_core_news_lg",
+          "is_main_word": true
+        },
+        {
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 44,
+          "end": 45,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 6.14
@@ -366,8 +391,8 @@
         "pt": "Ontem finalmente encontrei a boate.",
         "he": "אתמול סוף סוף מצאתי את מועדון הלילה.",
         "tr": "Dün sonunda gece kulübünü buldum.",
-        "vi": "Hôm qua tôi cuối cùng भी tìm thấy hộp đêm.",
-        "ar": "أخيرًا وجدت המلهى الليلي أمس.",
+        "vi": "Hôm qua cuối cùng tôi cũng tìm thấy hộp đêm.",
+        "ar": "أخيرًا وجدت الملهى الليلي أمس.",
         "nl": "Gisteren heb ik eindelijk de nachtclub gevonden.",
         "uk": "Учора мені нарешті вдалося знайти нічний клуб.",
         "hu": "Tegnap végre megtaláltam az éjszakai klubot.",
@@ -463,8 +488,314 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-14T22:39:43Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:De b1/814becbf101d1f61",
+      "revision_id": 85865,
+      "parent_revision_id": 15670,
+      "revision_timestamp_utc": "2026-10-14T22:39:43Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Suggest content corrections",
+      "pulled_utc": "2026-10-17T07:06:40Z",
+      "applied_utc": "2026-10-17T07:06:48Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-1ed8e4b25748425b",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_b1:814becbf101d1f61",
+        "pack_code": "de_b1",
+        "entry_id": "Diskothek",
+        "language": "de",
+        "sentence_index": 2,
+        "old_sentence": "Anna arbeitet in der Diskothek am Wochenende.",
+        "old_translations": {
+          "de": "Anna arbeitet in der Diskothek am Wochenende.",
+          "ipa": "/ˈana ˈaʁbaɪ̯tɛt ɪn deːɐ̯ dɪskoˈteːk am ˈvɔxənˌɛndə/",
+          "en": "Anna works at the nightclub on weekends.",
+          "es": "Anna trabaja en la discoteca los fines de semana.",
+          "fr": "Anna travaille à la boîte de nuit le week-end.",
+          "it": "Anna lavora in discoteca nel fine settimana.",
+          "ko": "안나는 주말에 클럽에서 일해요.",
+          "zh-Hans": "安娜周末在夜店上班。",
+          "yue": "Anna週末喺夜店做嘢。",
+          "ru": "Анна по выходным работает в ночном клубе.",
+          "pt": "Anna trabalha na boate nos fins de semana.",
+          "he": "אנה עובדת במועדון הלילה בסופי שבוע.",
+          "tr": "Anna hafta sonları gece kulübünde çalışıyor.",
+          "vi": "Anna làm ở hộp đêm vào cuối tuần.",
+          "ar": "آنا تعمل في الملهى الليلي في عطلة نهاية الأسبوع.",
+          "nl": "Anna werkt in de nachtclub in het weekend.",
+          "uk": "Анна працює у нічному клубі на вихідних.",
+          "hu": "Anna hétvégén az éjszakai klubban dolgozik.",
+          "hi": "अन्ना सप्ताहांत पर नाइटक्लब में काम करती है.",
+          "pl": "Anna pracuje w klubie nocnym w weekendy.",
+          "el": "Η Άννα δουλεύει στο νυχτερινό κλαμπ τα Σαββατοκύριακα.",
+          "nb": "Anna jobber på nattklubben i helgene.",
+          "id": "Anna bekerja di klub malam saat akhir pekan.",
+          "sv": "Anna jobbar på nattklubben på helgerna.",
+          "ro": "Anna lucrează la clubul de noapte în weekend.",
+          "cs": "Anna o víkendech pracuje v nočním klubu.",
+          "da": "Anna arbejder på natklubben i weekenden.",
+          "fi": "Anna työskentelee yökerhossa viikonloppuisin.",
+          "ja": "アンナは週末にクラブで働いています。"
+        },
+        "proposed_sentence": "Anna arbeitet am Wochenende in der Diskothek.",
+        "proposed_translations": {
+          "de": "Anna arbeitet am Wochenende in der Diskothek.",
+          "ipa": "/ˈana ˈaʁbaɪ̯tɛt ɪn deːɐ̯ dɪskoˈteːk am ˈvɔxənˌɛndə/",
+          "en": "Anna works at the nightclub on weekends.",
+          "es": "Anna trabaja en la discoteca los fines de semana.",
+          "fr": "Anna travaille à la boîte de nuit le week-end.",
+          "it": "Anna lavora in discoteca nel fine settimana.",
+          "ko": "안나는 주말에 클럽에서 일해요.",
+          "zh-Hans": "安娜周末在夜店上班。",
+          "yue": "Anna週末喺夜店做嘢。",
+          "ru": "Анна по выходным работает в ночном клубе.",
+          "pt": "Anna trabalha na boate nos fins de semana.",
+          "he": "אנה עובדת במועדון הלילה בסופי שבוע.",
+          "tr": "Anna hafta sonları gece kulübünde çalışıyor.",
+          "vi": "Anna làm ở hộp đêm vào cuối tuần.",
+          "ar": "آنا تعمل في الملهى الليلي في عطلة نهاية الأسبوع.",
+          "nl": "Anna werkt in de nachtclub in het weekend.",
+          "uk": "Анна працює у нічному клубі на вихідних.",
+          "hu": "Anna hétvégén az éjszakai klubban dolgozik.",
+          "hi": "अन्ना सप्ताहांत पर नाइटक्लब में काम करती है.",
+          "pl": "Anna pracuje w klubie nocnym w weekendy.",
+          "el": "Η Άννα δουλεύει στο νυχτερινό κλαμπ τα Σαββατοκύριακα.",
+          "nb": "Anna jobber på nattklubben i helgene.",
+          "id": "Anna bekerja di klub malam saat akhir pekan.",
+          "sv": "Anna jobbar på nattklubben på helgerna.",
+          "ro": "Anna lucrează la clubul de noapte în weekend.",
+          "cs": "Anna o víkendech pracuje v nočním klubu.",
+          "da": "Anna arbejder på natklubben i weekenden.",
+          "fi": "Anna työskentelee yökerhossa viikonloppuisin.",
+          "ja": "アンナは週末にクラブで働いています。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Anna arbeitet am Wochenende in der Diskothek.",
+        "old_japanese": "Anna arbeitet in der Diskothek am Wochenende.",
+        "old_english": "Anna works at the nightclub on weekends.",
+        "proposed_japanese": "Anna arbeitet am Wochenende in der Diskothek.",
+        "proposed_english": "Anna works at the nightclub on weekends.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Anna arbeitet am Wochenende in der Diskothek.",
+          "tokens": [
+            {
+              "surface": "Anna",
+              "lemma": "Anna",
+              "pos": "PROPN",
+              "upos": "PROPN",
+              "xpos": "NE",
+              "feats": {},
+              "start": 0,
+              "end": 4,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "arbeitet",
+              "lemma": "arbeiten",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVFIN",
+              "feats": {},
+              "start": 5,
+              "end": 13,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "am",
+              "lemma": "an",
+              "pos": "ADP",
+              "upos": "ADP",
+              "xpos": "APPRART",
+              "feats": {},
+              "start": 14,
+              "end": 16,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Wochenende",
+              "lemma": "Wochenende",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 17,
+              "end": 27,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "in",
+              "lemma": "in",
+              "pos": "ADP",
+              "upos": "ADP",
+              "xpos": "APPR",
+              "feats": {},
+              "start": 28,
+              "end": 30,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "der",
+              "lemma": "der",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "ART",
+              "feats": {},
+              "start": 31,
+              "end": 34,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Diskothek",
+              "lemma": "Diskothek",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 35,
+              "end": 44,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 44,
+              "end": 45,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Anna",
+            "lemma": "Anna",
+            "pos": "PROPN",
+            "upos": "PROPN",
+            "xpos": "NE",
+            "feats": {},
+            "start": 0,
+            "end": 4,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "arbeitet",
+            "lemma": "arbeiten",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 5,
+            "end": 13,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "am",
+            "lemma": "an",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPRART",
+            "feats": {},
+            "start": 14,
+            "end": 16,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Wochenende",
+            "lemma": "Wochenende",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 17,
+            "end": 27,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "in",
+            "lemma": "in",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 28,
+            "end": 30,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "der",
+            "lemma": "der",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 31,
+            "end": 34,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Diskothek",
+            "lemma": "Diskothek",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 35,
+            "end": 44,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 44,
+            "end": 45,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-17T07:06:40Z",
+        "updated_utc": "2026-10-17T07:07:05Z",
+        "applied_utc": "2026-10-17T07:07:05Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-17T07:07:05Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -476,34 +807,6 @@
     "word": "Diskothek",
     "word_reading": "",
     "word_label": "Substantiv (die fem.)",
-    "word_en": "disco; nightclub",
-    "word_es": "discoteca",
-    "word_fr": "discothèque",
-    "word_it": "discoteca",
-    "word_ko": "나이트클럽; 클럽",
-    "word_zh-Hans": "夜店; 迪厅",
-    "word_yue": "的士高; 夜店",
-    "word_ru": "дискотека; ночной клуб",
-    "word_pt": "discoteca; boate",
-    "word_he": "מועדון לילה; דיסקוטק",
-    "word_tr": "disko; gece kulübü",
-    "word_vi": "vũ trường; câu lạc bộ đêm",
-    "word_ar": "ملهى ليلي; مرقص",
-    "word_nl": "discotheek; nachtclub",
-    "word_uk": "дискотека; нічний клуб",
-    "word_hu": "diszkó; éjszakai klub",
-    "word_hi": "डिस्को; नाइटक्लब",
-    "word_pl": "dyskoteka; klub nocny",
-    "word_el": "ντισκοτέκ; νυχτερινό κλαμπ",
-    "word_nb": "diskotek; nattklubb",
-    "word_id": "disko; klub malam",
-    "word_sv": "diskotek; nattklubb",
-    "word_ro": "discotecă; club de noapte",
-    "word_cs": "diskotéka; noční klub",
-    "word_da": "diskotek; natklub",
-    "word_fi": "yökerho; disko",
-    "word_ja": "ディスコ; クラブ",
-    "word_de": "Diskothek",
     "comic_difficulty": 5.92,
     "jp": [
       "Wir gehen später in die Diskothek.",
@@ -516,24 +819,6 @@
       "/ˈana ˈaʁbaɪ̯tɛt ɪn deːɐ̯ dɪskoˈteːk am ˈvɔxənˌɛndə/",
       "/foːɐ̯ deːɐ̯ dɪskoˈteːk ˈvaʁtɛt ʃoːn ˈaɪ̯nə ˈlaŋə ˈʃlaŋə/",
       "/ɪç ˈhaːbə diː dɪskoˈteːk ˈɡɛstɐn ˈɛntlɪç ɡəˈfʊndən/"
-    ],
-    "de": [
-      "Wir gehen später in die Diskothek.",
-      "Anna arbeitet in der Diskothek am Wochenende.",
-      "Vor der Diskothek wartet schon eine lange Schlange.",
-      "Ich habe die Diskothek gestern endlich gefunden."
-    ],
-    "ipa": [
-      "/viːɐ̯ ˈɡeːən ˈʃpɛːtɐ ɪn diː dɪskoˈteːk/",
-      "/ˈana ˈaʁbaɪ̯tɛt ɪn deːɐ̯ dɪskoˈteːk am ˈvɔxənˌɛndə/",
-      "/foːɐ̯ deːɐ̯ dɪskoˈteːk ˈvaʁtɛt ʃoːn ˈaɪ̯nə ˈlaŋə ˈʃlaŋə/",
-      "/ɪç ˈhaːbə diː dɪskoˈteːk ˈɡɛstɐn ˈɛntlɪç ɡəˈfʊndən/"
-    ],
-    "en": [
-      "We're going to the nightclub later.",
-      "Anna works at the nightclub on weekends.",
-      "There's already a long line outside the nightclub.",
-      "I finally found the nightclub yesterday."
     ],
     "pos_analysis": [
       {
@@ -598,71 +883,96 @@
         "difficulty_aggregated": 5
       },
       {
-        "sentence": "Anna arbeitet in der Diskothek am Wochenende.",
+        "sentence": "Anna arbeitet am Wochenende in der Diskothek.",
         "tokens": [
           {
             "surface": "Anna",
-            "surface_en": "Anna",
-            "furigana": "[ˈana]",
-            "pos": "PROPN",
             "lemma": "Anna",
-            "explanation": "Proper noun; subject (3rd person singular).",
-            "difficulty": 7
+            "pos": "PROPN",
+            "upos": "PROPN",
+            "xpos": "NE",
+            "feats": {},
+            "start": 0,
+            "end": 4,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "arbeitet",
-            "surface_en": "works",
-            "furigana": "[ˈaʁbaɪ̯tɛt]",
-            "pos": "VERB",
             "lemma": "arbeiten",
-            "explanation": "Finite lexical verb, present tense (3sg).",
-            "difficulty": 10
-          },
-          {
-            "surface": "in",
-            "surface_en": "in/at",
-            "furigana": "[ɪn]",
-            "pos": "ADP",
-            "lemma": "in",
-            "explanation": "Preposition; with dative here for static location.",
-            "difficulty": 2
-          },
-          {
-            "surface": "der",
-            "surface_en": "the",
-            "furigana": "[deːɐ̯]",
-            "pos": "DET",
-            "lemma": "der",
-            "explanation": "Definite article, dative feminine singular; determiner of 'Diskothek' with static 'in'.",
-            "difficulty": 2
-          },
-          {
-            "surface": "Diskothek",
-            "surface_en": "discotheque",
-            "furigana": "[ˌdɪskoˈteːk]",
-            "pos": "NOUN",
-            "lemma": "Diskothek",
-            "explanation": "Common noun, feminine singular; object of the preposition 'in' (location).",
-            "difficulty": 10,
-            "is_main_word": true
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 5,
+            "end": 13,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "am",
-            "surface_en": "at the",
-            "furigana": "[am]",
-            "pos": "ADP",
             "lemma": "an",
-            "explanation": "Preposition (contraction of 'an dem'); selects dative; introduces a temporal PP.",
-            "difficulty": 2
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPRART",
+            "feats": {},
+            "start": 14,
+            "end": 16,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "Wochenende.",
-            "surface_en": "weekend",
-            "furigana": "[ˈvɔxənˌɛndə]",
-            "pos": "NOUN",
+            "surface": "Wochenende",
             "lemma": "Wochenende",
-            "explanation": "Common noun, neuter singular; temporal complement of 'am'.",
-            "difficulty": 10
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 17,
+            "end": 27,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "in",
+            "lemma": "in",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 28,
+            "end": 30,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "der",
+            "lemma": "der",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 31,
+            "end": 34,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Diskothek",
+            "lemma": "Diskothek",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 35,
+            "end": 44,
+            "analyzer": "spacy_de_core_news_lg",
+            "is_main_word": true
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 44,
+            "end": 45,
+            "analyzer": "spacy_de_core_news_lg"
           }
         ],
         "difficulty_aggregated": 6.14
@@ -817,137 +1127,41 @@
         "difficulty_aggregated": 7.29
       }
     ],
-    "es": [
-      "Vamos a la discoteca más tarde.",
-      "Anna trabaja en la discoteca los fines de semana.",
-      "Ya hay una larga fila afuera de la discoteca.",
-      "Ayer por fin encontré la discoteca."
-    ],
-    "fr": [
-      "On va en boîte plus tard.",
-      "Anna travaille à la boîte de nuit le week-end.",
-      "Il y a déjà une longue file devant la boîte de nuit.",
-      "J'ai enfin trouvé la boîte de nuit hier."
-    ],
-    "it": [
-      "Andiamo in discoteca più tardi.",
-      "Anna lavora in discoteca nel fine settimana.",
-      "C'è già una lunga fila fuori dalla discoteca.",
-      "Ieri ho finalmente trovato la discoteca."
-    ],
-    "ko": [
-      "나중에 클럽에 갈 거예요.",
-      "안나는 주말에 클럽에서 일해요.",
-      "클럽 밖에 이미 긴 줄이 있어요.",
-      "어제 드디어 클럽을 찾았어요."
-    ],
-    "zh-Hans": [
-      "我们晚点去夜店。",
-      "安娜周末在夜店上班。",
-      "夜店门口已经排起了长队。",
-      "我昨天终于找到了夜店。"
-    ],
-    "yue": [
-      "我哋遲啲去夜店。",
-      "Anna週末喺夜店做嘢。",
-      "夜店門口已經有一條長龍。",
-      "我噚日終於搵到嗰間夜店。"
-    ],
-    "ru": [
-      "Мы позже пойдём в ночной клуб.",
-      "Анна по выходным работает в ночном клубе.",
-      "У входа в ночной клуб уже длинная очередь.",
-      "Вчера мне наконец удалось найти ночной клуб."
-    ],
-    "pt": [
-      "Vamos à boate mais tarde.",
-      "Anna trabalha na boate nos fins de semana.",
-      "Já há uma longa fila em frente à boate.",
-      "Ontem finalmente encontrei a boate."
-    ],
-    "he": [
-      "אנחנו הולכים למועדון הלילה מאוחר יותר.",
-      "אנה עובדת במועדון הלילה בסופי שבוע.",
-      "מחוץ למועדון הלילה כבר יש תור ארוך.",
-      "אתמול סוף סוף מצאתי את מועדון הלילה."
-    ],
-    "tr": [
-      "Gece kulübüne daha sonra gideceğiz.",
-      "Anna hafta sonları gece kulübünde çalışıyor.",
-      "Gece kulübünün dışında şimdiden uzun bir sıra var.",
-      "Dün sonunda gece kulübünü buldum."
-    ],
-    "vi": [
-      "Lát nữa chúng mình đi hộp đêm.",
-      "Anna làm ở hộp đêm vào cuối tuần.",
-      "Bên ngoài hộp đêm đã có một hàng dài.",
-      "Hôm qua tôi cuối cùng भी tìm thấy hộp đêm."
-    ],
+    "word_POS": "Noun",
+    "entry_id": "Diskothek",
+    "word_en": "disco; nightclub",
+    "word_es": "discoteca",
+    "word_fr": "discothèque",
+    "word_it": "discoteca",
+    "word_ko": "나이트클럽; 클럽",
+    "word_zh-Hans": "夜店; 迪厅",
+    "word_yue": "的士高; 夜店",
+    "word_ru": "дискотека; ночной клуб",
+    "word_pt": "discoteca; boate",
+    "word_he": "מועדון לילה; דיסקוטק",
+    "word_tr": "disko; gece kulübü",
+    "word_vi": "vũ trường; câu lạc bộ đêm",
+    "word_ar": "ملهى ليلي; مرقص",
+    "word_nl": "discotheek; nachtclub",
+    "word_uk": "дискотека; нічний клуб",
+    "word_hu": "diszkó; éjszakai klub",
+    "word_hi": "डिस्को; नाइटक्लब",
+    "word_pl": "dyskoteka; klub nocny",
+    "word_el": "ντισκοτέκ; νυχτερινό κλαμπ",
+    "word_nb": "diskotek; nattklubb",
+    "word_id": "disko; klub malam",
+    "word_sv": "diskotek; nattklubb",
+    "word_ro": "discotecă; club de noapte",
+    "word_cs": "diskotéka; noční klub",
+    "word_da": "diskotek; natklub",
+    "word_fi": "yökerho; disko",
+    "word_ja": "ディスコ; クラブ",
+    "word_de": "Diskothek",
     "ar": [
       "سنذهب إلى الملهى الليلي لاحقًا.",
       "آنا تعمل في الملهى الليلي في عطلة نهاية الأسبوع.",
       "هناك بالفعل طابور طويل خارج الملهى الليلي.",
-      "أخيرًا وجدت המلهى الليلي أمس."
-    ],
-    "nl": [
-      "We gaan later naar de nachtclub.",
-      "Anna werkt in de nachtclub in het weekend.",
-      "Er staat al een lange rij buiten de nachtclub.",
-      "Gisteren heb ik eindelijk de nachtclub gevonden."
-    ],
-    "uk": [
-      "Ми підемо в нічний клуб пізніше.",
-      "Анна працює у нічному клубі на вихідних.",
-      "Перед нічним клубом вже довга черга.",
-      "Учора мені нарешті вдалося знайти нічний клуб."
-    ],
-    "hu": [
-      "Később elmegyünk az éjszakai klubba.",
-      "Anna hétvégén az éjszakai klubban dolgozik.",
-      "Az éjszakai klub előtt már hosszú sor van.",
-      "Tegnap végre megtaláltam az éjszakai klubot."
-    ],
-    "hi": [
-      "हम बाद में नाइटक्लब जाएंगे.",
-      "अन्ना सप्ताहांत पर नाइटक्लब में काम करती है.",
-      "नाइटक्लब के बाहर पहले से ही लंबी कतार लगी है.",
-      "मैंने कल आखिरकार नाइटक्लब ढूँढ़ लिया."
-    ],
-    "pl": [
-      "Później idziemy do klubu nocnego.",
-      "Anna pracuje w klubie nocnym w weekendy.",
-      "Przed klubem nocnym jest już długa kolejka.",
-      "Wczoraj wreszcie udało mi się znaleźć klub nocny."
-    ],
-    "el": [
-      "Θα πάμε αργότερα στο νυχτερινό κλαμπ.",
-      "Η Άννα δουλεύει στο νυχτερινό κλαμπ τα Σαββατοκύριακα.",
-      "Έξω από το νυχτερινό κλαμπ υπάρχει ήδη μεγάλη ουρά.",
-      "Χθες βρήκα επιτέλους το νυχτερινό κλαμπ."
-    ],
-    "nb": [
-      "Vi skal på nattklubb senere.",
-      "Anna jobber på nattklubben i helgene.",
-      "Utenfor nattklubben er det allerede en lang kø.",
-      "I går fant jeg endelig nattklubben."
-    ],
-    "id": [
-      "Nanti kita pergi ke klub malam.",
-      "Anna bekerja di klub malam saat akhir pekan.",
-      "Di luar klub malam sudah ada antrean panjang.",
-      "Kemarin akhirnya aku menemukan klub malam."
-    ],
-    "sv": [
-      "Vi ska till nattklubben senare.",
-      "Anna jobbar på nattklubben på helgerna.",
-      "Utanför nattklubben är det redan en lång kö.",
-      "I går hittade jag äntligen nattklubben."
-    ],
-    "ro": [
-      "Mergem mai târziu la clubul de noapte.",
-      "Anna lucrează la clubul de noapte în weekend.",
-      "În fața clubului de noapte este deja o coadă lungă.",
-      "Ieri am găsit în sfârșit clubul de noapte."
+      "أخيرًا وجدت الملهى الليلي أمس."
     ],
     "cs": [
       "Později půjdeme do nočního klubu.",
@@ -961,11 +1175,77 @@
       "Uden for natklubben er der allerede en lang kø.",
       "I går fandt jeg endelig natklubben."
     ],
+    "de": [
+      "Wir gehen später in die Diskothek.",
+      "Anna arbeitet in der Diskothek am Wochenende.",
+      "Vor der Diskothek wartet schon eine lange Schlange.",
+      "Ich habe die Diskothek gestern endlich gefunden."
+    ],
+    "el": [
+      "Θα πάμε αργότερα στο νυχτερινό κλαμπ.",
+      "Η Άννα δουλεύει στο νυχτερινό κλαμπ τα Σαββατοκύριακα.",
+      "Έξω από το νυχτερινό κλαμπ υπάρχει ήδη μεγάλη ουρά.",
+      "Χθες βρήκα επιτέλους το νυχτερινό κλαμπ."
+    ],
+    "en": [
+      "We're going to the nightclub later.",
+      "Anna works at the nightclub on weekends.",
+      "There's already a long line outside the nightclub.",
+      "I finally found the nightclub yesterday."
+    ],
+    "es": [
+      "Vamos a la discoteca más tarde.",
+      "Anna trabaja en la discoteca los fines de semana.",
+      "Ya hay una larga fila afuera de la discoteca.",
+      "Ayer por fin encontré la discoteca."
+    ],
     "fi": [
       "Mennään myöhemmin yökerhoon.",
       "Anna työskentelee yökerhossa viikonloppuisin.",
       "Yökerhon ulkopuolella on jo pitkä jono.",
       "Eilen löysin vihdoin yökerhon."
+    ],
+    "fr": [
+      "On va en boîte plus tard.",
+      "Anna travaille à la boîte de nuit le week-end.",
+      "Il y a déjà une longue file devant la boîte de nuit.",
+      "J'ai enfin trouvé la boîte de nuit hier."
+    ],
+    "he": [
+      "אנחנו הולכים למועדון הלילה מאוחר יותר.",
+      "אנה עובדת במועדון הלילה בסופי שבוע.",
+      "מחוץ למועדון הלילה כבר יש תור ארוך.",
+      "אתמול סוף סוף מצאתי את מועדון הלילה."
+    ],
+    "hi": [
+      "हम बाद में नाइटक्लब जाएंगे.",
+      "अन्ना सप्ताहांत पर नाइटक्लब में काम करती है.",
+      "नाइटक्लब के बाहर पहले से ही लंबी कतार लगी है.",
+      "मैंने कल आखिरकार नाइटक्लब ढूँढ़ लिया."
+    ],
+    "hu": [
+      "Később elmegyünk az éjszakai klubba.",
+      "Anna hétvégén az éjszakai klubban dolgozik.",
+      "Az éjszakai klub előtt már hosszú sor van.",
+      "Tegnap végre megtaláltam az éjszakai klubot."
+    ],
+    "id": [
+      "Nanti kita pergi ke klub malam.",
+      "Anna bekerja di klub malam saat akhir pekan.",
+      "Di luar klub malam sudah ada antrean panjang.",
+      "Kemarin akhirnya aku menemukan klub malam."
+    ],
+    "ipa": [
+      "/viːɐ̯ ˈɡeːən ˈʃpɛːtɐ ɪn diː dɪskoˈteːk/",
+      "/ˈana ˈaʁbaɪ̯tɛt ɪn deːɐ̯ dɪskoˈteːk am ˈvɔxənˌɛndə/",
+      "/foːɐ̯ deːɐ̯ dɪskoˈteːk ˈvaʁtɛt ʃoːn ˈaɪ̯nə ˈlaŋə ˈʃlaŋə/",
+      "/ɪç ˈhaːbə diː dɪskoˈteːk ˈɡɛstɐn ˈɛntlɪç ɡəˈfʊndən/"
+    ],
+    "it": [
+      "Andiamo in discoteca più tardi.",
+      "Anna lavora in discoteca nel fine settimana.",
+      "C'è già una lunga fila fuori dalla discoteca.",
+      "Ieri ho finalmente trovato la discoteca."
     ],
     "ja": [
       "あとでクラブに行きます。",
@@ -973,6 +1253,83 @@
       "クラブの外にはすでに長い列ができています。",
       "きのうやっとクラブを見つけました。"
     ],
-    "word_POS": "Noun"
+    "ko": [
+      "나중에 클럽에 갈 거예요.",
+      "안나는 주말에 클럽에서 일해요.",
+      "클럽 밖에 이미 긴 줄이 있어요.",
+      "어제 드디어 클럽을 찾았어요."
+    ],
+    "nb": [
+      "Vi skal på nattklubb senere.",
+      "Anna jobber på nattklubben i helgene.",
+      "Utenfor nattklubben er det allerede en lang kø.",
+      "I går fant jeg endelig nattklubben."
+    ],
+    "nl": [
+      "We gaan later naar de nachtclub.",
+      "Anna werkt in de nachtclub in het weekend.",
+      "Er staat al een lange rij buiten de nachtclub.",
+      "Gisteren heb ik eindelijk de nachtclub gevonden."
+    ],
+    "pl": [
+      "Później idziemy do klubu nocnego.",
+      "Anna pracuje w klubie nocnym w weekendy.",
+      "Przed klubem nocnym jest już długa kolejka.",
+      "Wczoraj wreszcie udało mi się znaleźć klub nocny."
+    ],
+    "pt": [
+      "Vamos à boate mais tarde.",
+      "Anna trabalha na boate nos fins de semana.",
+      "Já há uma longa fila em frente à boate.",
+      "Ontem finalmente encontrei a boate."
+    ],
+    "ro": [
+      "Mergem mai târziu la clubul de noapte.",
+      "Anna lucrează la clubul de noapte în weekend.",
+      "În fața clubului de noapte este deja o coadă lungă.",
+      "Ieri am găsit în sfârșit clubul de noapte."
+    ],
+    "ru": [
+      "Мы позже пойдём в ночной клуб.",
+      "Анна по выходным работает в ночном клубе.",
+      "У входа в ночной клуб уже длинная очередь.",
+      "Вчера мне наконец удалось найти ночной клуб."
+    ],
+    "sv": [
+      "Vi ska till nattklubben senare.",
+      "Anna jobbar på nattklubben på helgerna.",
+      "Utanför nattklubben är det redan en lång kö.",
+      "I går hittade jag äntligen nattklubben."
+    ],
+    "tr": [
+      "Gece kulübüne daha sonra gideceğiz.",
+      "Anna hafta sonları gece kulübünde çalışıyor.",
+      "Gece kulübünün dışında şimdiden uzun bir sıra var.",
+      "Dün sonunda gece kulübünü buldum."
+    ],
+    "uk": [
+      "Ми підемо в нічний клуб пізніше.",
+      "Анна працює у нічному клубі на вихідних.",
+      "Перед нічним клубом вже довга черга.",
+      "Учора мені нарешті вдалося знайти нічний клуб."
+    ],
+    "vi": [
+      "Lát nữa chúng mình đi hộp đêm.",
+      "Anna làm ở hộp đêm vào cuối tuần.",
+      "Bên ngoài hộp đêm đã có một hàng dài.",
+      "Hôm qua cuối cùng tôi cũng tìm thấy hộp đêm."
+    ],
+    "yue": [
+      "我哋遲啲去夜店。",
+      "Anna週末喺夜店做嘢。",
+      "夜店門口已經有一條長龍。",
+      "我噚日終於搵到嗰間夜店。"
+    ],
+    "zh-Hans": [
+      "我们晚点去夜店。",
+      "安娜周末在夜店上班。",
+      "夜店门口已经排起了长队。",
+      "我昨天终于找到了夜店。"
+    ]
   }
 }
