@@ -199,7 +199,7 @@
       "translations": {
         "de": "Seine Freunde sind ausländischer Herkunft.",
         "ipa": "/ˈzaɪ̯nə ˈfʁɔʏ̯ndə zɪnt ˈaʊ̯slɛndɐˈhɛʁkʊnft/",
-        "en": "His friends are foreign.",
+        "en": "His friends are of foreign origin.",
         "es": "Sus amigos son de otros países.",
         "fr": "Ses amis viennent de l'étranger.",
         "it": "I suoi amici vengono dall'estero.",
@@ -278,10 +278,10 @@
       "difficulty": 8.4
     },
     {
-      "target": "Das Essen ist ausländisch.",
+      "target": "Das ist ausländisches Essen.",
       "reading": "/das ˈɛsən ɪst ˈaʊ̯s.lɛn.dɪʃ/",
       "translations": {
-        "de": "Das Essen ist ausländisch.",
+        "de": "Das ist ausländisches Essen.",
         "ipa": "/das ˈɛsən ɪst ˈaʊ̯s.lɛn.dɪʃ/",
         "en": "The food is foreign.",
         "es": "La comida es extranjera.",
@@ -314,40 +314,59 @@
       "tokens": [
         {
           "surface": "Das",
-          "surface_en": "the",
-          "furigana": "[das]",
-          "pos": "DET",
           "lemma": "der",
-          "explanation": "Definite article; neuter nominative singular agreeing with 'Essen'.",
-          "difficulty": 2
-        },
-        {
-          "surface": "Essen",
-          "surface_en": "food",
-          "furigana": "[ˈɛsn̩]",
-          "pos": "NOUN",
-          "lemma": "Essen",
-          "explanation": "Common noun; neuter; nominative singular; subject of 'ist'.",
-          "difficulty": 7
+          "pos": "PRON",
+          "upos": "PRON",
+          "xpos": "PDS",
+          "feats": {},
+          "start": 0,
+          "end": 3,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "ist",
-          "surface_en": "is",
-          "furigana": "[ɪst]",
-          "pos": "VERB",
           "lemma": "sein",
-          "explanation": "Copula; 3rd person singular present linking subject and predicate.",
-          "difficulty": 4
+          "pos": "AUX",
+          "upos": "AUX",
+          "xpos": "VAFIN",
+          "feats": {},
+          "start": 4,
+          "end": 7,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "ausländisch.",
-          "surface_en": "foreign",
-          "furigana": "[ˈaʊ̯slɛndɪʃ]",
-          "pos": "ADJ",
+          "surface": "ausländisches",
           "lemma": "ausländisch",
-          "explanation": "Predicate adjective describing the food.",
-          "difficulty": 10,
+          "pos": "ADJ",
+          "upos": "ADJ",
+          "xpos": "ADJA",
+          "feats": {},
+          "start": 8,
+          "end": 21,
+          "analyzer": "spacy_de_core_news_lg",
           "is_main_word": true
+        },
+        {
+          "surface": "Essen",
+          "lemma": "Essen",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 22,
+          "end": 27,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 27,
+          "end": 28,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 5.75
@@ -364,8 +383,248 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-14T22:04:06Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:De a1/8e5b98b3b5535653",
+      "revision_id": 86134,
+      "parent_revision_id": 12280,
+      "revision_timestamp_utc": "2026-10-14T22:04:06Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Content suggestion: improve German or translation wording",
+      "pulled_utc": "2026-10-18T17:32:05Z",
+      "applied_utc": "2026-10-18T17:32:13Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-d5371db9899cd565",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_a1:8e5b98b3b5535653",
+        "pack_code": "de_a1",
+        "entry_id": "ausländisch",
+        "language": "de",
+        "sentence_index": 4,
+        "old_sentence": "Das Essen ist ausländisch.",
+        "old_translations": {
+          "de": "Das Essen ist ausländisch.",
+          "ipa": "/das ˈɛsən ɪst ˈaʊ̯s.lɛn.dɪʃ/",
+          "en": "The food is foreign.",
+          "es": "La comida es extranjera.",
+          "fr": "La nourriture est étrangère.",
+          "it": "Il cibo è di un altro paese.",
+          "ko": "이 음식은 외국 음식이에요.",
+          "zh-Hans": "这是外国菜。",
+          "yue": "呢個係外國菜。",
+          "ru": "Эта еда из другой страны.",
+          "pt": "A comida é de outro país.",
+          "he": "האוכל מחו״ל.",
+          "tr": "Bu yemek yabancı.",
+          "vi": "Món ăn này là món nước ngoài.",
+          "ar": "الطعام أجنبي.",
+          "nl": "Het eten is buitenlands.",
+          "uk": "Це їжа з іншої країни.",
+          "hu": "Az étel külföldi.",
+          "hi": "यह खाना विदेशी है.",
+          "pl": "To jedzenie jest z innego kraju.",
+          "el": "Το φαγητό είναι από άλλη χώρα.",
+          "nb": "Maten er utenlandsk.",
+          "id": "Makanannya dari luar negeri.",
+          "sv": "Maten är utländsk.",
+          "ro": "Mâncarea este din altă țară.",
+          "cs": "To jídlo je z jiné země.",
+          "da": "Maden er udenlandsk.",
+          "fi": "Ruoka on ulkomaista.",
+          "ja": "この料理は外国のものです。"
+        },
+        "proposed_sentence": "Das ist ausländisches Essen.",
+        "proposed_translations": {
+          "de": "Das ist ausländisches Essen.",
+          "ipa": "/das ˈɛsən ɪst ˈaʊ̯s.lɛn.dɪʃ/",
+          "en": "The food is foreign.",
+          "es": "La comida es extranjera.",
+          "fr": "La nourriture est étrangère.",
+          "it": "Il cibo è di un altro paese.",
+          "ko": "이 음식은 외국 음식이에요.",
+          "zh-Hans": "这是外国菜。",
+          "yue": "呢個係外國菜。",
+          "ru": "Эта еда из другой страны.",
+          "pt": "A comida é de outro país.",
+          "he": "האוכל מחו״ל.",
+          "tr": "Bu yemek yabancı.",
+          "vi": "Món ăn này là món nước ngoài.",
+          "ar": "الطعام أجنبي.",
+          "nl": "Het eten is buitenlands.",
+          "uk": "Це їжа з іншої країни.",
+          "hu": "Az étel külföldi.",
+          "hi": "यह खाना विदेशी है.",
+          "pl": "To jedzenie jest z innego kraju.",
+          "el": "Το φαγητό είναι από άλλη χώρα.",
+          "nb": "Maten er utenlandsk.",
+          "id": "Makanannya dari luar negeri.",
+          "sv": "Maten är utländsk.",
+          "ro": "Mâncarea este din altă țară.",
+          "cs": "To jídlo je z jiné země.",
+          "da": "Maden er udenlandsk.",
+          "fi": "Ruoka on ulkomaista.",
+          "ja": "この料理は外国のものです。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Das ist ausländisches Essen.",
+        "old_japanese": "Das Essen ist ausländisch.",
+        "old_english": "The food is foreign.",
+        "proposed_japanese": "Das ist ausländisches Essen.",
+        "proposed_english": "The food is foreign.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Das ist ausländisches Essen.",
+          "tokens": [
+            {
+              "surface": "Das",
+              "lemma": "der",
+              "pos": "PRON",
+              "upos": "PRON",
+              "xpos": "PDS",
+              "feats": {},
+              "start": 0,
+              "end": 3,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "ist",
+              "lemma": "sein",
+              "pos": "AUX",
+              "upos": "AUX",
+              "xpos": "VAFIN",
+              "feats": {},
+              "start": 4,
+              "end": 7,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "ausländisches",
+              "lemma": "ausländisch",
+              "pos": "ADJ",
+              "upos": "ADJ",
+              "xpos": "ADJA",
+              "feats": {},
+              "start": 8,
+              "end": 21,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Essen",
+              "lemma": "Essen",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 22,
+              "end": 27,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 27,
+              "end": 28,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Das",
+            "lemma": "der",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PDS",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "ist",
+            "lemma": "sein",
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "VAFIN",
+            "feats": {},
+            "start": 4,
+            "end": 7,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "ausländisches",
+            "lemma": "ausländisch",
+            "pos": "ADJ",
+            "upos": "ADJ",
+            "xpos": "ADJA",
+            "feats": {},
+            "start": 8,
+            "end": 21,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Essen",
+            "lemma": "Essen",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 22,
+            "end": 27,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 27,
+            "end": 28,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-18T17:32:05Z",
+        "updated_utc": "2026-10-18T17:32:25Z",
+        "applied_utc": "2026-10-18T17:32:25Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-18T17:32:25Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -377,34 +636,6 @@
     "word": "ausländisch",
     "word_reading": "",
     "word_label": "Adjektiv",
-    "word_en": "foreign; from abroad",
-    "word_es": "extranjero",
-    "word_fr": "étranger",
-    "word_it": "straniero",
-    "word_ko": "외국의",
-    "word_zh-Hans": "外国的",
-    "word_yue": "外國嘅",
-    "word_ru": "иностранный",
-    "word_pt": "estrangeiro",
-    "word_he": "זר",
-    "word_tr": "yabancı",
-    "word_vi": "nước ngoài",
-    "word_ar": "أجنبي",
-    "word_nl": "buitenlands",
-    "word_uk": "іноземний",
-    "word_hu": "külföldi",
-    "word_hi": "विदेशी",
-    "word_pl": "zagraniczny",
-    "word_el": "ξένος",
-    "word_nb": "utenlandsk",
-    "word_id": "asing",
-    "word_sv": "utländsk",
-    "word_ro": "străin",
-    "word_cs": "zahraniční",
-    "word_da": "udenlandsk",
-    "word_fi": "ulkomainen",
-    "word_ja": "外国の",
-    "word_de": "ausländisch",
     "comic_difficulty": 6.94,
     "jp": [
       "Die Musik klingt ausländisch.",
@@ -417,24 +648,6 @@
       "/ˈmaɪ̯nə ˈfɪʁma ɪst ˈaʊ̯s.lɛn.dɪʃ/",
       "/ˈzaɪ̯nə ˈfʁɔʏ̯ndə zɪnt ˈaʊ̯s.lɛn.dɪʃ/",
       "/das ˈɛsən ɪst ˈaʊ̯s.lɛn.dɪʃ/"
-    ],
-    "de": [
-      "Die Musik klingt ausländisch.",
-      "Meine Firma ist ausländisch.",
-      "Seine Freunde sind ausländischer Herkunft.",
-      "Das Essen ist ausländisch."
-    ],
-    "ipa": [
-      "/diː muˈziːk klɪŋt ˈaʊ̯s.lɛn.dɪʃ/",
-      "/ˈmaɪ̯nə ˈfɪʁma ɪst ˈaʊ̯s.lɛn.dɪʃ/",
-      "/ˈzaɪ̯nə ˈfʁɔʏ̯ndə zɪnt ˈaʊ̯slɛndɐˈhɛʁkʊnft/",
-      "/das ˈɛsən ɪst ˈaʊ̯s.lɛn.dɪʃ/"
-    ],
-    "en": [
-      "The music sounds foreign.",
-      "My company is foreign.",
-      "His friends are foreign.",
-      "The food is foreign."
     ],
     "pos_analysis": [
       {
@@ -576,180 +789,103 @@
         "difficulty_aggregated": 8.4
       },
       {
-        "sentence": "Das Essen ist ausländisch.",
+        "sentence": "Das ist ausländisches Essen.",
         "tokens": [
           {
             "surface": "Das",
-            "surface_en": "the",
-            "furigana": "[das]",
-            "pos": "DET",
             "lemma": "der",
-            "explanation": "Definite article; neuter nominative singular agreeing with 'Essen'.",
-            "difficulty": 2
-          },
-          {
-            "surface": "Essen",
-            "surface_en": "food",
-            "furigana": "[ˈɛsn̩]",
-            "pos": "NOUN",
-            "lemma": "Essen",
-            "explanation": "Common noun; neuter; nominative singular; subject of 'ist'.",
-            "difficulty": 7
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PDS",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "ist",
-            "surface_en": "is",
-            "furigana": "[ɪst]",
-            "pos": "VERB",
             "lemma": "sein",
-            "explanation": "Copula; 3rd person singular present linking subject and predicate.",
-            "difficulty": 4
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "VAFIN",
+            "feats": {},
+            "start": 4,
+            "end": 7,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "ausländisch.",
-            "surface_en": "foreign",
-            "furigana": "[ˈaʊ̯slɛndɪʃ]",
-            "pos": "ADJ",
+            "surface": "ausländisches",
             "lemma": "ausländisch",
-            "explanation": "Predicate adjective describing the food.",
-            "difficulty": 10,
+            "pos": "ADJ",
+            "upos": "ADJ",
+            "xpos": "ADJA",
+            "feats": {},
+            "start": 8,
+            "end": 21,
+            "analyzer": "spacy_de_core_news_lg",
             "is_main_word": true
+          },
+          {
+            "surface": "Essen",
+            "lemma": "Essen",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 22,
+            "end": 27,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 27,
+            "end": 28,
+            "analyzer": "spacy_de_core_news_lg"
           }
         ],
         "difficulty_aggregated": 5.75
       }
     ],
-    "es": [
-      "Esta música parece de otro país.",
-      "Mi empresa es extranjera.",
-      "Sus amigos son de otros países.",
-      "La comida es extranjera."
-    ],
-    "fr": [
-      "Cette musique semble venir de l'étranger.",
-      "Mon entreprise est étrangère.",
-      "Ses amis viennent de l'étranger.",
-      "La nourriture est étrangère."
-    ],
-    "it": [
-      "Questa musica sembra di un altro paese.",
-      "La mia azienda è straniera.",
-      "I suoi amici vengono dall'estero.",
-      "Il cibo è di un altro paese."
-    ],
-    "ko": [
-      "이 음악은 외국 음악 같아요.",
-      "제 회사는 외국 회사예요.",
-      "그의 친구들은 외국에서 왔어요.",
-      "이 음식은 외국 음식이에요."
-    ],
-    "zh-Hans": [
-      "这音乐听起来像是外国的。",
-      "我的公司是外国的。",
-      "他的朋友来自国外。",
-      "这是外国菜。"
-    ],
-    "yue": [
-      "呢段音樂聽起嚟好似外國嘅。",
-      "我嗰間公司係外國嘅。",
-      "佢嘅朋友嚟自外國。",
-      "呢個係外國菜。"
-    ],
-    "ru": [
-      "Музыка звучит как иностранная.",
-      "Моя компания иностранная.",
-      "Его друзья из-за границы.",
-      "Эта еда из другой страны."
-    ],
-    "pt": [
-      "A música parece de outro país.",
-      "Minha empresa é estrangeira.",
-      "Os amigos dele são de outros países.",
-      "A comida é de outro país."
-    ],
-    "he": [
-      "המוזיקה נשמעת זרה.",
-      "החברה שלי מחו״ל.",
-      "החברים שלו מחו״ל.",
-      "האוכל מחו״ל."
-    ],
-    "tr": [
-      "Bu müzik yabancı gibi geliyor.",
-      "Şirketim yabancı.",
-      "Onun arkadaşları yurtdışından.",
-      "Bu yemek yabancı."
-    ],
-    "vi": [
-      "Nhạc này nghe như từ nước ngoài.",
-      "Công ty của tôi là công ty nước ngoài.",
-      "Bạn bè của anh ấy đến từ nước ngoài.",
-      "Món ăn này là món nước ngoài."
-    ],
+    "word_POS": "Adjective",
+    "entry_id": "ausländisch",
+    "word_en": "foreign; from abroad",
+    "word_es": "extranjero",
+    "word_fr": "étranger",
+    "word_it": "straniero",
+    "word_ko": "외국의",
+    "word_zh-Hans": "外国的",
+    "word_yue": "外國嘅",
+    "word_ru": "иностранный",
+    "word_pt": "estrangeiro",
+    "word_he": "זר",
+    "word_tr": "yabancı",
+    "word_vi": "nước ngoài",
+    "word_ar": "أجنبي",
+    "word_nl": "buitenlands",
+    "word_uk": "іноземний",
+    "word_hu": "külföldi",
+    "word_hi": "विदेशी",
+    "word_pl": "zagraniczny",
+    "word_el": "ξένος",
+    "word_nb": "utenlandsk",
+    "word_id": "asing",
+    "word_sv": "utländsk",
+    "word_ro": "străin",
+    "word_cs": "zahraniční",
+    "word_da": "udenlandsk",
+    "word_fi": "ulkomainen",
+    "word_ja": "外国の",
+    "word_de": "ausländisch",
     "ar": [
       "الموسيقى تبدو أجنبية.",
       "شركتي أجنبية.",
       "أصدقاؤه من الخارج.",
       "الطعام أجنبي."
-    ],
-    "nl": [
-      "De muziek klinkt buitenlands.",
-      "Mijn bedrijf is buitenlands.",
-      "Zijn vrienden komen uit het buitenland.",
-      "Het eten is buitenlands."
-    ],
-    "uk": [
-      "Музика звучить по-іноземному.",
-      "Моя компанія іноземна.",
-      "Його друзі з-за кордону.",
-      "Це їжа з іншої країни."
-    ],
-    "hu": [
-      "A zene külföldinek hangzik.",
-      "A cégem külföldi.",
-      "A barátai külföldről valók.",
-      "Az étel külföldi."
-    ],
-    "hi": [
-      "यह संगीत विदेशी लगता है.",
-      "मेरी कंपनी विदेशी है.",
-      "उसके दोस्त विदेश से हैं.",
-      "यह खाना विदेशी है."
-    ],
-    "pl": [
-      "Ta muzyka brzmi jak z zagranicy.",
-      "Moja firma jest zagraniczna.",
-      "Jego przyjaciele są z zagranicy.",
-      "To jedzenie jest z innego kraju."
-    ],
-    "el": [
-      "Η μουσική ακούγεται ξένη.",
-      "Η εταιρεία μου είναι ξένη.",
-      "Οι φίλοι του είναι από το εξωτερικό.",
-      "Το φαγητό είναι από άλλη χώρα."
-    ],
-    "nb": [
-      "Musikken høres utenlandsk ut.",
-      "Selskapet mitt er utenlandsk.",
-      "Vennene hans er fra utlandet.",
-      "Maten er utenlandsk."
-    ],
-    "id": [
-      "Musik ini terdengar seperti musik dari luar negeri.",
-      "Perusahaan saya adalah perusahaan asing.",
-      "Teman-temannya dari luar negeri.",
-      "Makanannya dari luar negeri."
-    ],
-    "sv": [
-      "Musiken låter utländsk.",
-      "Mitt företag är utländskt.",
-      "Hans vänner är från utlandet.",
-      "Maten är utländsk."
-    ],
-    "ro": [
-      "Muzica sună străină.",
-      "Compania mea este străină.",
-      "Prietenii lui sunt din străinătate.",
-      "Mâncarea este din altă țară."
     ],
     "cs": [
       "Ta hudba zní jako ze zahraničí.",
@@ -763,11 +899,77 @@
       "Hans venner er fra udlandet.",
       "Maden er udenlandsk."
     ],
+    "de": [
+      "Die Musik klingt ausländisch.",
+      "Meine Firma ist ausländisch.",
+      "Seine Freunde sind ausländischer Herkunft.",
+      "Das Essen ist ausländisch."
+    ],
+    "el": [
+      "Η μουσική ακούγεται ξένη.",
+      "Η εταιρεία μου είναι ξένη.",
+      "Οι φίλοι του είναι από το εξωτερικό.",
+      "Το φαγητό είναι από άλλη χώρα."
+    ],
+    "en": [
+      "The music sounds foreign.",
+      "My company is foreign.",
+      "His friends are of foreign origin.",
+      "The food is foreign."
+    ],
+    "es": [
+      "Esta música parece de otro país.",
+      "Mi empresa es extranjera.",
+      "Sus amigos son de otros países.",
+      "La comida es extranjera."
+    ],
     "fi": [
       "Musiikki kuulostaa ulkomaiselta.",
       "Yritykseni on ulkomainen.",
       "Hänen ystävänsä ovat ulkomailta.",
       "Ruoka on ulkomaista."
+    ],
+    "fr": [
+      "Cette musique semble venir de l'étranger.",
+      "Mon entreprise est étrangère.",
+      "Ses amis viennent de l'étranger.",
+      "La nourriture est étrangère."
+    ],
+    "he": [
+      "המוזיקה נשמעת זרה.",
+      "החברה שלי מחו״ל.",
+      "החברים שלו מחו״ל.",
+      "האוכל מחו״ל."
+    ],
+    "hi": [
+      "यह संगीत विदेशी लगता है.",
+      "मेरी कंपनी विदेशी है.",
+      "उसके दोस्त विदेश से हैं.",
+      "यह खाना विदेशी है."
+    ],
+    "hu": [
+      "A zene külföldinek hangzik.",
+      "A cégem külföldi.",
+      "A barátai külföldről valók.",
+      "Az étel külföldi."
+    ],
+    "id": [
+      "Musik ini terdengar seperti musik dari luar negeri.",
+      "Perusahaan saya adalah perusahaan asing.",
+      "Teman-temannya dari luar negeri.",
+      "Makanannya dari luar negeri."
+    ],
+    "ipa": [
+      "/diː muˈziːk klɪŋt ˈaʊ̯s.lɛn.dɪʃ/",
+      "/ˈmaɪ̯nə ˈfɪʁma ɪst ˈaʊ̯s.lɛn.dɪʃ/",
+      "/ˈzaɪ̯nə ˈfʁɔʏ̯ndə zɪnt ˈaʊ̯slɛndɐˈhɛʁkʊnft/",
+      "/das ˈɛsən ɪst ˈaʊ̯s.lɛn.dɪʃ/"
+    ],
+    "it": [
+      "Questa musica sembra di un altro paese.",
+      "La mia azienda è straniera.",
+      "I suoi amici vengono dall'estero.",
+      "Il cibo è di un altro paese."
     ],
     "ja": [
       "この音楽は外国のものみたいに聞こえる。",
@@ -775,6 +977,83 @@
       "彼の友だちは外国の人です。",
       "この料理は外国のものです。"
     ],
-    "word_POS": "Adjective"
+    "ko": [
+      "이 음악은 외국 음악 같아요.",
+      "제 회사는 외국 회사예요.",
+      "그의 친구들은 외국에서 왔어요.",
+      "이 음식은 외국 음식이에요."
+    ],
+    "nb": [
+      "Musikken høres utenlandsk ut.",
+      "Selskapet mitt er utenlandsk.",
+      "Vennene hans er fra utlandet.",
+      "Maten er utenlandsk."
+    ],
+    "nl": [
+      "De muziek klinkt buitenlands.",
+      "Mijn bedrijf is buitenlands.",
+      "Zijn vrienden komen uit het buitenland.",
+      "Het eten is buitenlands."
+    ],
+    "pl": [
+      "Ta muzyka brzmi jak z zagranicy.",
+      "Moja firma jest zagraniczna.",
+      "Jego przyjaciele są z zagranicy.",
+      "To jedzenie jest z innego kraju."
+    ],
+    "pt": [
+      "A música parece de outro país.",
+      "Minha empresa é estrangeira.",
+      "Os amigos dele são de outros países.",
+      "A comida é de outro país."
+    ],
+    "ro": [
+      "Muzica sună străină.",
+      "Compania mea este străină.",
+      "Prietenii lui sunt din străinătate.",
+      "Mâncarea este din altă țară."
+    ],
+    "ru": [
+      "Музыка звучит как иностранная.",
+      "Моя компания иностранная.",
+      "Его друзья из-за границы.",
+      "Эта еда из другой страны."
+    ],
+    "sv": [
+      "Musiken låter utländsk.",
+      "Mitt företag är utländskt.",
+      "Hans vänner är från utlandet.",
+      "Maten är utländsk."
+    ],
+    "tr": [
+      "Bu müzik yabancı gibi geliyor.",
+      "Şirketim yabancı.",
+      "Onun arkadaşları yurtdışından.",
+      "Bu yemek yabancı."
+    ],
+    "uk": [
+      "Музика звучить по-іноземному.",
+      "Моя компанія іноземна.",
+      "Його друзі з-за кордону.",
+      "Це їжа з іншої країни."
+    ],
+    "vi": [
+      "Nhạc này nghe như từ nước ngoài.",
+      "Công ty của tôi là công ty nước ngoài.",
+      "Bạn bè của anh ấy đến từ nước ngoài.",
+      "Món ăn này là món nước ngoài."
+    ],
+    "yue": [
+      "呢段音樂聽起嚟好似外國嘅。",
+      "我嗰間公司係外國嘅。",
+      "佢嘅朋友嚟自外國。",
+      "呢個係外國菜。"
+    ],
+    "zh-Hans": [
+      "这音乐听起来像是外国的。",
+      "我的公司是外国的。",
+      "他的朋友来自国外。",
+      "这是外国菜。"
+    ]
   }
 }

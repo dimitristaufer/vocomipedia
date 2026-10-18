@@ -63,7 +63,7 @@
         "nb": "Han er godt utdannet.",
         "nl": "Hij is goed opgeleid.",
         "pl": "Jest dobrze wykształcony.",
-        "pt": "Ele é bem-educado.",
+        "pt": "Ele é muito culto.",
         "ro": "Este bine educat.",
         "ru": "Он хорошо образован.",
         "sv": "Han är välutbildad.",
@@ -207,7 +207,7 @@
       "target": "本を読むと教養が身につく。",
       "reading": "ほんをよむときょうようがみにつく。",
       "translations": {
-        "en": "Reading books builds your education and refinement.",
+        "en": "Reading books helps you become more cultured.",
         "ar": "قراءة الكتب تنمي ثقافتك ورقيّك.",
         "cs": "Čtení knih rozvíjí tvoji vzdělanost a vytříbenost.",
         "da": "At læse bøger styrker din dannelse.",
@@ -428,8 +428,8 @@
       "difficulty": null
     },
     {
-      "target": "この学校は教養も大事です。",
-      "reading": "このがっこうはきょうようもだいじです。",
+      "target": "この学校では教養も大事です。",
+      "reading": "このがっこうではきょうようもだいじです。",
       "translations": {
         "en": "This school also values a well-rounded education.",
         "ar": "هذه المدرسة تقدر أيضًا التعليم الشامل.",
@@ -496,8 +496,25 @@
               "length": 2
             }
           ],
-          "ruby_confidence": "medium",
-          "furigana": "がっこう"
+          "ruby_confidence": "reviewed",
+          "furigana": "がっこう",
+          "ruby_source": "mediawiki_sentence_ruby"
+        },
+        {
+          "surface": "で",
+          "lemma": "で",
+          "pos": "助詞/格助詞/*/*/*/*",
+          "upos": "PART",
+          "xpos": "助詞",
+          "feats": {},
+          "start": 4,
+          "end": 5,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "で",
+          "ruby_text": "で",
+          "ruby_spans": [],
+          "ruby_confidence": "high",
+          "furigana": "で"
         },
         {
           "surface": "は",
@@ -506,8 +523,8 @@
           "upos": "PART",
           "xpos": "助詞",
           "feats": {},
-          "start": 4,
-          "end": 5,
+          "start": 5,
+          "end": 6,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "は",
           "ruby_text": "は",
@@ -522,8 +539,8 @@
           "upos": "NOUN",
           "xpos": "名詞",
           "feats": {},
-          "start": 5,
-          "end": 7,
+          "start": 6,
+          "end": 8,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "きょうよう",
           "ruby_text": "教養[きょうよう]",
@@ -535,8 +552,9 @@
               "length": 2
             }
           ],
-          "ruby_confidence": "medium",
-          "furigana": "きょうよう"
+          "ruby_confidence": "reviewed",
+          "furigana": "きょうよう",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "も",
@@ -545,8 +563,8 @@
           "upos": "PART",
           "xpos": "助詞",
           "feats": {},
-          "start": 7,
-          "end": 8,
+          "start": 8,
+          "end": 9,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "も",
           "ruby_text": "も",
@@ -561,8 +579,8 @@
           "upos": "ADJ",
           "xpos": "形状詞",
           "feats": {},
-          "start": 8,
-          "end": 10,
+          "start": 9,
+          "end": 11,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "だいじ",
           "ruby_text": "大事[だいじ]",
@@ -574,8 +592,9 @@
               "length": 2
             }
           ],
-          "ruby_confidence": "medium",
-          "furigana": "だいじ"
+          "ruby_confidence": "reviewed",
+          "furigana": "だいじ",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "です",
@@ -584,8 +603,8 @@
           "upos": "AUX",
           "xpos": "助動詞",
           "feats": {},
-          "start": 10,
-          "end": 12,
+          "start": 11,
+          "end": 13,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "です",
           "ruby_text": "です",
@@ -600,8 +619,8 @@
           "upos": "PUNCT",
           "xpos": "補助記号",
           "feats": {},
-          "start": 12,
-          "end": 13,
+          "start": 13,
+          "end": 14,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "。",
           "ruby_text": "。",
@@ -623,7 +642,7 @@
         "de": "Mein Großvater ist ein kultivierter Mann.",
         "el": "Ο παππούς μου είναι καλλιεργημένος άνθρωπος.",
         "es": "Mi abuelo es un hombre refinado.",
-        "fi": "Isäni isä on sivistynyt mies.",
+        "fi": "Isoisäni on sivistynyt mies.",
         "fr": "Mon grand-père est un homme raffiné.",
         "he": "סבא שלי הוא אדם מתורבת.",
         "hi": "मेरे दादाजी एक सुसंस्कृत आदमी हैं।",
@@ -809,8 +828,472 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-12T23:40:42Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:Ja n3/5c4da1e976b27f45",
+      "revision_id": 81458,
+      "parent_revision_id": 60923,
+      "revision_timestamp_utc": "2026-10-12T23:40:42Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Fix the Japanese topic marker and improve three natural translations of 教養.",
+      "pulled_utc": "2026-10-18T17:39:02Z",
+      "applied_utc": "2026-10-18T17:39:39Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-7c3372e339d2e5a1",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "ja_n3:5c4da1e976b27f45",
+        "pack_code": "ja_n3",
+        "entry_id": "きょうよう",
+        "language": "ja",
+        "sentence_index": 3,
+        "old_sentence": "この学校は教養も大事です。",
+        "old_translations": {
+          "en": "This school also values a well-rounded education.",
+          "ar": "هذه المدرسة تقدر أيضًا التعليم الشامل.",
+          "cs": "Tato škola si také váží všestranného vzdělání.",
+          "da": "Den her skole værdsætter også en alsidig uddannelse.",
+          "de": "Diese Schule legt auch Wert auf eine ganzheitliche Bildung.",
+          "el": "Αυτό το σχολείο δίνει επίσης αξία στη σφαιρική παιδεία.",
+          "es": "Esta escuela también valora una educación integral.",
+          "fi": "Tämä koulu arvostaa myös monipuolista koulutusta.",
+          "fr": "Cette école valorise aussi une éducation complète.",
+          "he": "בית הספר הזה מעריך גם השכלה רחבה.",
+          "hi": "यह स्कूल भी समग्र शिक्षा को महत्व देता है।",
+          "hu": "Ez az iskola a sokoldalú műveltséget is fontosnak tartja.",
+          "id": "Sekolah ini juga menghargai pendidikan yang menyeluruh.",
+          "it": "Questa scuola dà valore anche a una formazione completa.",
+          "ko": "이 학교는 교양도 중요하게 생각합니다.",
+          "nb": "Denne skolen legger også vekt på allsidig utdanning.",
+          "nl": "Deze school hecht ook waarde aan een brede opleiding.",
+          "pl": "Ta szkoła ceni też wszechstronne wykształcenie.",
+          "pt": "Esta escola também valoriza uma educação completa.",
+          "ro": "Această școală apreciază și o educație completă.",
+          "ru": "Эта школа тоже ценит всестороннее образование.",
+          "sv": "Den här skolan värdesätter också en bred utbildning.",
+          "tr": "Bu okul da kapsamlı eğitimi önemser.",
+          "uk": "Ця школа теж цінує всебічну освіту.",
+          "vi": "Ngôi trường này cũng coi trọng một nền giáo dục toàn diện.",
+          "yue": "呢間學校都重視全面教育。",
+          "zh-Hans": "这所学校也重视全面教育。"
+        },
+        "proposed_sentence": "この学校では教養も大事です。",
+        "proposed_translations": {
+          "en": "This school also values a well-rounded education.",
+          "ar": "هذه المدرسة تقدر أيضًا التعليم الشامل.",
+          "cs": "Tato škola si také váží všestranného vzdělání.",
+          "da": "Den her skole værdsætter også en alsidig uddannelse.",
+          "de": "Diese Schule legt auch Wert auf eine ganzheitliche Bildung.",
+          "el": "Αυτό το σχολείο δίνει επίσης αξία στη σφαιρική παιδεία.",
+          "es": "Esta escuela también valora una educación integral.",
+          "fi": "Tämä koulu arvostaa myös monipuolista koulutusta.",
+          "fr": "Cette école valorise aussi une éducation complète.",
+          "he": "בית הספר הזה מעריך גם השכלה רחבה.",
+          "hi": "यह स्कूल भी समग्र शिक्षा को महत्व देता है।",
+          "hu": "Ez az iskola a sokoldalú műveltséget is fontosnak tartja.",
+          "id": "Sekolah ini juga menghargai pendidikan yang menyeluruh.",
+          "it": "Questa scuola dà valore anche a una formazione completa.",
+          "ko": "이 학교는 교양도 중요하게 생각합니다.",
+          "nb": "Denne skolen legger også vekt på allsidig utdanning.",
+          "nl": "Deze school hecht ook waarde aan een brede opleiding.",
+          "pl": "Ta szkoła ceni też wszechstronne wykształcenie.",
+          "pt": "Esta escola também valoriza uma educação completa.",
+          "ro": "Această școală apreciază și o educație completă.",
+          "ru": "Эта школа тоже ценит всестороннее образование.",
+          "sv": "Den här skolan värdesätter också en bred utbildning.",
+          "tr": "Bu okul da kapsamlı eğitimi önemser.",
+          "uk": "Ця школа теж цінує всебічну освіту.",
+          "vi": "Ngôi trường này cũng coi trọng một nền giáo dục toàn diện.",
+          "yue": "呢間學校都重視全面教育。",
+          "zh-Hans": "这所学校也重视全面教育。"
+        },
+        "old_ruby_source": "この学校[がっこう]は教養[きょうよう]も大事[だいじ]です。",
+        "proposed_ruby_source": "この学校[がっこう]では教養[きょうよう]も大事[だいじ]です。",
+        "old_japanese": "この学校は教養も大事です。",
+        "old_english": "This school also values a well-rounded education.",
+        "proposed_japanese": "この学校では教養も大事です。",
+        "proposed_english": "This school also values a well-rounded education.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "ja",
+          "sentence": "この学校では教養も大事です。",
+          "tokens": [
+            {
+              "surface": "この",
+              "lemma": "この",
+              "pos": "連体詞/*/*/*/*/*",
+              "upos": "DET",
+              "xpos": "連体詞",
+              "feats": {},
+              "start": 0,
+              "end": 2,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "この",
+              "ruby_text": "この",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "この"
+            },
+            {
+              "surface": "学校",
+              "lemma": "学校",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 2,
+              "end": 4,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "がっこう",
+              "ruby_text": "学校[がっこう]",
+              "ruby_spans": [
+                {
+                  "base": "学校",
+                  "reading": "がっこう",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "がっこう",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "で",
+              "lemma": "で",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 4,
+              "end": 5,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "で",
+              "ruby_text": "で",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "で"
+            },
+            {
+              "surface": "は",
+              "lemma": "は",
+              "pos": "助詞/係助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 5,
+              "end": 6,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "は",
+              "ruby_text": "は",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "は"
+            },
+            {
+              "surface": "教養",
+              "lemma": "教養",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 6,
+              "end": 8,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "きょうよう",
+              "ruby_text": "教養[きょうよう]",
+              "ruby_spans": [
+                {
+                  "base": "教養",
+                  "reading": "きょうよう",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "きょうよう",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "も",
+              "lemma": "も",
+              "pos": "助詞/係助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 8,
+              "end": 9,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "も",
+              "ruby_text": "も",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "も"
+            },
+            {
+              "surface": "大事",
+              "lemma": "大事",
+              "pos": "形状詞/一般/*/*/*/*",
+              "upos": "ADJ",
+              "xpos": "形状詞",
+              "feats": {},
+              "start": 9,
+              "end": 11,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "だいじ",
+              "ruby_text": "大事[だいじ]",
+              "ruby_spans": [
+                {
+                  "base": "大事",
+                  "reading": "だいじ",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "だいじ",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "です",
+              "lemma": "です",
+              "pos": "助動詞/*/*/*/助動詞-デス/終止形-一般",
+              "upos": "AUX",
+              "xpos": "助動詞",
+              "feats": {},
+              "start": 11,
+              "end": 13,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "です",
+              "ruby_text": "です",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "です"
+            },
+            {
+              "surface": "。",
+              "lemma": "。",
+              "pos": "補助記号/句点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 13,
+              "end": 14,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "。",
+              "ruby_text": "。",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "。"
+            }
+          ],
+          "reading": "このがっこうではきょうようもだいじです。",
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "warnings": [
+            "mediawiki ruby hints applied"
+          ]
+        },
+        "generated_tokens": [
+          {
+            "surface": "この",
+            "lemma": "この",
+            "pos": "連体詞/*/*/*/*/*",
+            "upos": "DET",
+            "xpos": "連体詞",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "この",
+            "ruby_text": "この",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "この"
+          },
+          {
+            "surface": "学校",
+            "lemma": "学校",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 2,
+            "end": 4,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "がっこう",
+            "ruby_text": "学校[がっこう]",
+            "ruby_spans": [
+              {
+                "base": "学校",
+                "reading": "がっこう",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "がっこう",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "で",
+            "lemma": "で",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 4,
+            "end": 5,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "で",
+            "ruby_text": "で",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "で"
+          },
+          {
+            "surface": "は",
+            "lemma": "は",
+            "pos": "助詞/係助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 5,
+            "end": 6,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "は",
+            "ruby_text": "は",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "は"
+          },
+          {
+            "surface": "教養",
+            "lemma": "教養",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 6,
+            "end": 8,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "きょうよう",
+            "ruby_text": "教養[きょうよう]",
+            "ruby_spans": [
+              {
+                "base": "教養",
+                "reading": "きょうよう",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "きょうよう",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "も",
+            "lemma": "も",
+            "pos": "助詞/係助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 8,
+            "end": 9,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "も",
+            "ruby_text": "も",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "も"
+          },
+          {
+            "surface": "大事",
+            "lemma": "大事",
+            "pos": "形状詞/一般/*/*/*/*",
+            "upos": "ADJ",
+            "xpos": "形状詞",
+            "feats": {},
+            "start": 9,
+            "end": 11,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "だいじ",
+            "ruby_text": "大事[だいじ]",
+            "ruby_spans": [
+              {
+                "base": "大事",
+                "reading": "だいじ",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "だいじ",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "です",
+            "lemma": "です",
+            "pos": "助動詞/*/*/*/助動詞-デス/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 11,
+            "end": 13,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "です",
+            "ruby_text": "です",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "です"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 13,
+            "end": 14,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
+          }
+        ],
+        "generated_reading": "このがっこうではきょうようもだいじです。",
+        "analyzer": "sudachipy_sudachidict_core_c",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-18T17:39:02Z",
+        "updated_utc": "2026-10-18T17:40:39Z",
+        "applied_utc": "2026-10-18T17:40:39Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-18T17:40:39Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -835,12 +1318,6 @@
       "ほんをよむときょうようがみにつく。",
       "このがっこうはきょうようもだいじです。",
       "そふはきょうようのあるひとです。"
-    ],
-    "en": [
-      "He is well educated.",
-      "Reading books builds your education and refinement.",
-      "This school also values a well-rounded education.",
-      "My grandfather is a refined man."
     ],
     "generation": {
       "generator": "vocomipedia_source_generator.py",
@@ -879,190 +1356,6 @@
         "parts_of_speech": "Noun"
       }
     },
-    "word_en": "culture; (one's) education; cultivation; sophistication; refinement",
-    "word_es": "cultura; educación",
-    "word_fr": "culture; éducation",
-    "word_de": "Bildung; Kultiviertheit",
-    "word_it": "cultura; istruzione",
-    "word_ko": "교양",
-    "word_zh-Hans": "教养",
-    "word_yue": "教養",
-    "word_ru": "образованность; культура",
-    "word_pt": "cultura; educação",
-    "word_he": "השכלה; תרבות",
-    "word_tr": "kültür; eğitim",
-    "word_vi": "giáo dưỡng; học vấn",
-    "word_ar": "ثقافة; تهذيب",
-    "word_nl": "beschaving; ontwikkeling",
-    "word_uk": "освіченість; культура",
-    "word_hu": "műveltség",
-    "word_hi": "सुसंस्कृति; शिक्षा",
-    "word_pl": "wykształcenie; ogłada",
-    "word_el": "παιδεία; καλλιέργεια",
-    "word_nb": "dannelse",
-    "word_id": "pendidikan; budaya",
-    "word_sv": "bildning; kultivering",
-    "word_ro": "cultură; educație",
-    "word_cs": "vzdělání; kultura",
-    "word_da": "dannelse",
-    "word_fi": "sivistys",
-    "word_ja": "きょうよう",
-    "ar": [
-      "هو متعلم جيدًا.",
-      "قراءة الكتب تنمي ثقافتك ورقيّك.",
-      "هذه المدرسة تقدر أيضًا التعليم الشامل.",
-      "جدي رجل مثقف."
-    ],
-    "cs": [
-      "Je dobře vzdělaný.",
-      "Čtení knih rozvíjí tvoji vzdělanost a vytříbenost.",
-      "Tato škola si také váží všestranného vzdělání.",
-      "Můj dědeček je vzdělaný muž."
-    ],
-    "da": [
-      "Han er veluddannet.",
-      "At læse bøger styrker din dannelse.",
-      "Den her skole værdsætter også en alsidig uddannelse.",
-      "Min bedstefar er en dannet mand."
-    ],
-    "de": [
-      "Er ist gut gebildet.",
-      "Bücher lesen fördert deine Bildung und Kultiviertheit.",
-      "Diese Schule legt auch Wert auf eine ganzheitliche Bildung.",
-      "Mein Großvater ist ein kultivierter Mann."
-    ],
-    "el": [
-      "Είναι πολύ μορφωμένος.",
-      "Το διάβασμα βιβλίων καλλιεργεί τη μόρφωσή σου.",
-      "Αυτό το σχολείο δίνει επίσης αξία στη σφαιρική παιδεία.",
-      "Ο παππούς μου είναι καλλιεργημένος άνθρωπος."
-    ],
-    "es": [
-      "Él está bien educado.",
-      "Leer libros desarrolla tu cultura y refinamiento.",
-      "Esta escuela también valora una educación integral.",
-      "Mi abuelo es un hombre refinado."
-    ],
-    "fi": [
-      "Hän on hyvin sivistynyt.",
-      "Kirjojen lukeminen kehittää sivistystäsi ja hienostuneisuuttasi.",
-      "Tämä koulu arvostaa myös monipuolista koulutusta.",
-      "Isäni isä on sivistynyt mies."
-    ],
-    "fr": [
-      "Il est très cultivé.",
-      "Lire des livres développe ta culture et ton raffinement.",
-      "Cette école valorise aussi une éducation complète.",
-      "Mon grand-père est un homme raffiné."
-    ],
-    "he": [
-      "הוא משכיל מאוד.",
-      "קריאת ספרים מפתחת את ההשכלה והטעם הטוב שלך.",
-      "בית הספר הזה מעריך גם השכלה רחבה.",
-      "סבא שלי הוא אדם מתורבת."
-    ],
-    "hi": [
-      "वह बहुत शिक्षित है।",
-      "किताबें पढ़ने से आपकी शिक्षा और परिष्कार बढ़ता है।",
-      "यह स्कूल भी समग्र शिक्षा को महत्व देता है।",
-      "मेरे दादाजी एक सुसंस्कृत आदमी हैं।"
-    ],
-    "hu": [
-      "Jól képzett.",
-      "A könyvek olvasása fejleszti a műveltségedet és az igényességedet.",
-      "Ez az iskola a sokoldalú műveltséget is fontosnak tartja.",
-      "A nagyapám művelt ember."
-    ],
-    "id": [
-      "Dia berpendidikan baik.",
-      "Membaca buku membangun pengetahuan dan kehalusan budi Anda.",
-      "Sekolah ini juga menghargai pendidikan yang menyeluruh.",
-      "Kakek saya adalah orang yang berbudaya."
-    ],
-    "it": [
-      "È molto istruito.",
-      "Leggere libri arricchisce la tua cultura e il tuo gusto.",
-      "Questa scuola dà valore anche a una formazione completa.",
-      "Mio nonno è un uomo raffinato."
-    ],
-    "ko": [
-      "그는 교양이 있습니다.",
-      "책을 읽으면 교양이 쌓입니다.",
-      "이 학교는 교양도 중요하게 생각합니다.",
-      "우리 할아버지는 교양 있는 분입니다."
-    ],
-    "nb": [
-      "Han er godt utdannet.",
-      "Å lese bøker bygger opp dannelsen din.",
-      "Denne skolen legger også vekt på allsidig utdanning.",
-      "Bestefaren min er en dannet mann."
-    ],
-    "nl": [
-      "Hij is goed opgeleid.",
-      "Boeken lezen ontwikkelt je kennis en verfijning.",
-      "Deze school hecht ook waarde aan een brede opleiding.",
-      "Mijn grootvader is een beschaafd man."
-    ],
-    "pl": [
-      "Jest dobrze wykształcony.",
-      "Czytanie książek rozwija twoją wiedzę i ogładę.",
-      "Ta szkoła ceni też wszechstronne wykształcenie.",
-      "Mój dziadek jest człowiekiem o ogładzie."
-    ],
-    "pt": [
-      "Ele é bem-educado.",
-      "Ler livros desenvolve sua cultura e sofisticação.",
-      "Esta escola também valoriza uma educação completa.",
-      "Meu avô é um homem refinado."
-    ],
-    "ro": [
-      "Este bine educat.",
-      "Cititul cărților îți dezvoltă cultura și rafinamentul.",
-      "Această școală apreciază și o educație completă.",
-      "Bunicul meu este un om rafinat."
-    ],
-    "ru": [
-      "Он хорошо образован.",
-      "Чтение книг развивает вашу культуру и утончённость.",
-      "Эта школа тоже ценит всестороннее образование.",
-      "Мой дедушка — культурный человек."
-    ],
-    "sv": [
-      "Han är välutbildad.",
-      "Att läsa böcker utvecklar din bildning och förfining.",
-      "Den här skolan värdesätter också en bred utbildning.",
-      "Min farfar är en bildad man."
-    ],
-    "tr": [
-      "O çok iyi eğitimli.",
-      "Kitap okumak kültürünü ve zarafetini geliştirir.",
-      "Bu okul da kapsamlı eğitimi önemser.",
-      "Dedem kültürlü bir adamdır."
-    ],
-    "uk": [
-      "Він добре освічений.",
-      "Читання книжок розвиває твою освіченість і витонченість.",
-      "Ця школа теж цінує всебічну освіту.",
-      "Мій дідусь — культурна людина."
-    ],
-    "vi": [
-      "Anh ấy được học hành tử tế.",
-      "Đọc sách giúp bạn có thêm kiến thức và sự tinh tế.",
-      "Ngôi trường này cũng coi trọng một nền giáo dục toàn diện.",
-      "Ông tôi là một người lịch lãm."
-    ],
-    "yue": [
-      "佢好有教養。",
-      "睇書可以增長你嘅學識同修養。",
-      "呢間學校都重視全面教育。",
-      "我爺爺係一個有修養嘅人。"
-    ],
-    "zh-Hans": [
-      "他很有教养。",
-      "读书能增长你的学识和修养。",
-      "这所学校也重视全面教育。",
-      "我爷爷是一个有修养的人。"
-    ],
     "pos_analysis": [
       {
         "sentence": "彼は教養があります。",
@@ -1391,7 +1684,7 @@
         "difficulty_aggregated": null
       },
       {
-        "sentence": "この学校は教養も大事です。",
+        "sentence": "この学校では教養も大事です。",
         "tokens": [
           {
             "surface": "この",
@@ -1429,8 +1722,25 @@
                 "length": 2
               }
             ],
-            "ruby_confidence": "medium",
-            "furigana": "がっこう"
+            "ruby_confidence": "reviewed",
+            "furigana": "がっこう",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "で",
+            "lemma": "で",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 4,
+            "end": 5,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "で",
+            "ruby_text": "で",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "で"
           },
           {
             "surface": "は",
@@ -1439,8 +1749,8 @@
             "upos": "PART",
             "xpos": "助詞",
             "feats": {},
-            "start": 4,
-            "end": 5,
+            "start": 5,
+            "end": 6,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "は",
             "ruby_text": "は",
@@ -1455,8 +1765,8 @@
             "upos": "NOUN",
             "xpos": "名詞",
             "feats": {},
-            "start": 5,
-            "end": 7,
+            "start": 6,
+            "end": 8,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "きょうよう",
             "ruby_text": "教養[きょうよう]",
@@ -1468,8 +1778,9 @@
                 "length": 2
               }
             ],
-            "ruby_confidence": "medium",
-            "furigana": "きょうよう"
+            "ruby_confidence": "reviewed",
+            "furigana": "きょうよう",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "も",
@@ -1478,8 +1789,8 @@
             "upos": "PART",
             "xpos": "助詞",
             "feats": {},
-            "start": 7,
-            "end": 8,
+            "start": 8,
+            "end": 9,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "も",
             "ruby_text": "も",
@@ -1494,8 +1805,8 @@
             "upos": "ADJ",
             "xpos": "形状詞",
             "feats": {},
-            "start": 8,
-            "end": 10,
+            "start": 9,
+            "end": 11,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "だいじ",
             "ruby_text": "大事[だいじ]",
@@ -1507,8 +1818,9 @@
                 "length": 2
               }
             ],
-            "ruby_confidence": "medium",
-            "furigana": "だいじ"
+            "ruby_confidence": "reviewed",
+            "furigana": "だいじ",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "です",
@@ -1517,8 +1829,8 @@
             "upos": "AUX",
             "xpos": "助動詞",
             "feats": {},
-            "start": 10,
-            "end": 12,
+            "start": 11,
+            "end": 13,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "です",
             "ruby_text": "です",
@@ -1533,8 +1845,8 @@
             "upos": "PUNCT",
             "xpos": "補助記号",
             "feats": {},
-            "start": 12,
-            "end": 13,
+            "start": 13,
+            "end": 14,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "。",
             "ruby_text": "。",
@@ -1700,6 +2012,196 @@
         ],
         "difficulty_aggregated": null
       }
+    ],
+    "word_en": "culture; (one's) education; cultivation; sophistication; refinement",
+    "word_es": "cultura; educación",
+    "word_fr": "culture; éducation",
+    "word_de": "Bildung; Kultiviertheit",
+    "word_it": "cultura; istruzione",
+    "word_ko": "교양",
+    "word_zh-Hans": "教养",
+    "word_yue": "教養",
+    "word_ru": "образованность; культура",
+    "word_pt": "cultura; educação",
+    "word_he": "השכלה; תרבות",
+    "word_tr": "kültür; eğitim",
+    "word_vi": "giáo dưỡng; học vấn",
+    "word_ar": "ثقافة; تهذيب",
+    "word_nl": "beschaving; ontwikkeling",
+    "word_uk": "освіченість; культура",
+    "word_hu": "műveltség",
+    "word_hi": "सुसंस्कृति; शिक्षा",
+    "word_pl": "wykształcenie; ogłada",
+    "word_el": "παιδεία; καλλιέργεια",
+    "word_nb": "dannelse",
+    "word_id": "pendidikan; budaya",
+    "word_sv": "bildning; kultivering",
+    "word_ro": "cultură; educație",
+    "word_cs": "vzdělání; kultura",
+    "word_da": "dannelse",
+    "word_fi": "sivistys",
+    "word_ja": "きょうよう",
+    "ar": [
+      "هو متعلم جيدًا.",
+      "قراءة الكتب تنمي ثقافتك ورقيّك.",
+      "هذه المدرسة تقدر أيضًا التعليم الشامل.",
+      "جدي رجل مثقف."
+    ],
+    "cs": [
+      "Je dobře vzdělaný.",
+      "Čtení knih rozvíjí tvoji vzdělanost a vytříbenost.",
+      "Tato škola si také váží všestranného vzdělání.",
+      "Můj dědeček je vzdělaný muž."
+    ],
+    "da": [
+      "Han er veluddannet.",
+      "At læse bøger styrker din dannelse.",
+      "Den her skole værdsætter også en alsidig uddannelse.",
+      "Min bedstefar er en dannet mand."
+    ],
+    "de": [
+      "Er ist gut gebildet.",
+      "Bücher lesen fördert deine Bildung und Kultiviertheit.",
+      "Diese Schule legt auch Wert auf eine ganzheitliche Bildung.",
+      "Mein Großvater ist ein kultivierter Mann."
+    ],
+    "el": [
+      "Είναι πολύ μορφωμένος.",
+      "Το διάβασμα βιβλίων καλλιεργεί τη μόρφωσή σου.",
+      "Αυτό το σχολείο δίνει επίσης αξία στη σφαιρική παιδεία.",
+      "Ο παππούς μου είναι καλλιεργημένος άνθρωπος."
+    ],
+    "en": [
+      "He is well educated.",
+      "Reading books helps you become more cultured.",
+      "This school also values a well-rounded education.",
+      "My grandfather is a refined man."
+    ],
+    "es": [
+      "Él está bien educado.",
+      "Leer libros desarrolla tu cultura y refinamiento.",
+      "Esta escuela también valora una educación integral.",
+      "Mi abuelo es un hombre refinado."
+    ],
+    "fi": [
+      "Hän on hyvin sivistynyt.",
+      "Kirjojen lukeminen kehittää sivistystäsi ja hienostuneisuuttasi.",
+      "Tämä koulu arvostaa myös monipuolista koulutusta.",
+      "Isoisäni on sivistynyt mies."
+    ],
+    "fr": [
+      "Il est très cultivé.",
+      "Lire des livres développe ta culture et ton raffinement.",
+      "Cette école valorise aussi une éducation complète.",
+      "Mon grand-père est un homme raffiné."
+    ],
+    "he": [
+      "הוא משכיל מאוד.",
+      "קריאת ספרים מפתחת את ההשכלה והטעם הטוב שלך.",
+      "בית הספר הזה מעריך גם השכלה רחבה.",
+      "סבא שלי הוא אדם מתורבת."
+    ],
+    "hi": [
+      "वह बहुत शिक्षित है।",
+      "किताबें पढ़ने से आपकी शिक्षा और परिष्कार बढ़ता है।",
+      "यह स्कूल भी समग्र शिक्षा को महत्व देता है।",
+      "मेरे दादाजी एक सुसंस्कृत आदमी हैं।"
+    ],
+    "hu": [
+      "Jól képzett.",
+      "A könyvek olvasása fejleszti a műveltségedet és az igényességedet.",
+      "Ez az iskola a sokoldalú műveltséget is fontosnak tartja.",
+      "A nagyapám művelt ember."
+    ],
+    "id": [
+      "Dia berpendidikan baik.",
+      "Membaca buku membangun pengetahuan dan kehalusan budi Anda.",
+      "Sekolah ini juga menghargai pendidikan yang menyeluruh.",
+      "Kakek saya adalah orang yang berbudaya."
+    ],
+    "it": [
+      "È molto istruito.",
+      "Leggere libri arricchisce la tua cultura e il tuo gusto.",
+      "Questa scuola dà valore anche a una formazione completa.",
+      "Mio nonno è un uomo raffinato."
+    ],
+    "ko": [
+      "그는 교양이 있습니다.",
+      "책을 읽으면 교양이 쌓입니다.",
+      "이 학교는 교양도 중요하게 생각합니다.",
+      "우리 할아버지는 교양 있는 분입니다."
+    ],
+    "nb": [
+      "Han er godt utdannet.",
+      "Å lese bøker bygger opp dannelsen din.",
+      "Denne skolen legger også vekt på allsidig utdanning.",
+      "Bestefaren min er en dannet mann."
+    ],
+    "nl": [
+      "Hij is goed opgeleid.",
+      "Boeken lezen ontwikkelt je kennis en verfijning.",
+      "Deze school hecht ook waarde aan een brede opleiding.",
+      "Mijn grootvader is een beschaafd man."
+    ],
+    "pl": [
+      "Jest dobrze wykształcony.",
+      "Czytanie książek rozwija twoją wiedzę i ogładę.",
+      "Ta szkoła ceni też wszechstronne wykształcenie.",
+      "Mój dziadek jest człowiekiem o ogładzie."
+    ],
+    "pt": [
+      "Ele é muito culto.",
+      "Ler livros desenvolve sua cultura e sofisticação.",
+      "Esta escola também valoriza uma educação completa.",
+      "Meu avô é um homem refinado."
+    ],
+    "ro": [
+      "Este bine educat.",
+      "Cititul cărților îți dezvoltă cultura și rafinamentul.",
+      "Această școală apreciază și o educație completă.",
+      "Bunicul meu este un om rafinat."
+    ],
+    "ru": [
+      "Он хорошо образован.",
+      "Чтение книг развивает вашу культуру и утончённость.",
+      "Эта школа тоже ценит всестороннее образование.",
+      "Мой дедушка — культурный человек."
+    ],
+    "sv": [
+      "Han är välutbildad.",
+      "Att läsa böcker utvecklar din bildning och förfining.",
+      "Den här skolan värdesätter också en bred utbildning.",
+      "Min farfar är en bildad man."
+    ],
+    "tr": [
+      "O çok iyi eğitimli.",
+      "Kitap okumak kültürünü ve zarafetini geliştirir.",
+      "Bu okul da kapsamlı eğitimi önemser.",
+      "Dedem kültürlü bir adamdır."
+    ],
+    "uk": [
+      "Він добре освічений.",
+      "Читання книжок розвиває твою освіченість і витонченість.",
+      "Ця школа теж цінує всебічну освіту.",
+      "Мій дідусь — культурна людина."
+    ],
+    "vi": [
+      "Anh ấy được học hành tử tế.",
+      "Đọc sách giúp bạn có thêm kiến thức và sự tinh tế.",
+      "Ngôi trường này cũng coi trọng một nền giáo dục toàn diện.",
+      "Ông tôi là một người lịch lãm."
+    ],
+    "yue": [
+      "佢好有教養。",
+      "睇書可以增長你嘅學識同修養。",
+      "呢間學校都重視全面教育。",
+      "我爺爺係一個有修養嘅人。"
+    ],
+    "zh-Hans": [
+      "他很有教养。",
+      "读书能增长你的学识和修养。",
+      "这所学校也重视全面教育。",
+      "我爷爷是一个有修养的人。"
     ]
   }
 }

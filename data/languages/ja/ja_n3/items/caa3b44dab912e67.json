@@ -43,7 +43,7 @@
   "sentences": [
     {
       "target": "結局、バスで行った。",
-      "reading": "けっきょく、ばすでおこなった。",
+      "reading": "けっきょく、ばすでいった。",
       "translations": {
         "en": "In the end, we went by bus.",
         "ar": "في النهاية، ذهبنا بالحافلة.",
@@ -94,8 +94,9 @@
               "length": 2
             }
           ],
-          "ruby_confidence": "medium",
+          "ruby_confidence": "reviewed",
           "furigana": "けっきょく",
+          "ruby_source": "mediawiki_sentence_ruby",
           "is_main_word": true
         },
         {
@@ -156,18 +157,19 @@
           "start": 6,
           "end": 8,
           "analyzer": "sudachipy_sudachidict_core_c",
-          "reading_kana": "おこなっ",
-          "ruby_text": "行[おこな]っ",
+          "reading_kana": "いっ",
+          "ruby_text": "行[い]っ",
           "ruby_spans": [
             {
               "base": "行",
-              "reading": "おこな",
+              "reading": "い",
               "start": 0,
               "length": 1
             }
           ],
-          "ruby_confidence": "high",
-          "furigana": "おこなっ"
+          "ruby_confidence": "reviewed",
+          "furigana": "いっ",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "た",
@@ -389,7 +391,7 @@
         "fr": "Finalement, j'ai acheté le moins cher.",
         "he": "בסוף קניתי את הזול יותר.",
         "hi": "आखिरकार, मैंने सस्ता वाला खरीदा।",
-        "hu": "Végül a olcsóbbat vettem meg.",
+        "hu": "Végül az olcsóbbat vettem meg.",
         "id": "Akhirnya, saya membeli yang lebih murah.",
         "it": "Alla fine ho comprato quello più economico.",
         "ko": "결국 더 싼 걸 샀어요.",
@@ -564,13 +566,13 @@
       "target": "何度も迷って、結局それにした。",
       "reading": "なんどもまよって、けっきょくそれにした。",
       "translations": {
-        "en": "I hesitated many times, and eventually chose that one.",
+        "en": "I went back and forth many times before finally choosing that one.",
         "ar": "ترددت كثيرًا، وفي النهاية اخترت ذلك.",
         "cs": "Dlouho jsem váhal a nakonec jsem si vybral ten.",
         "da": "Jeg tøvede mange gange, og til sidst valgte jeg den.",
         "de": "Ich habe oft gezögert und mich am Ende dafür entschieden.",
         "el": "Δίστασα πολλές φορές και τελικά διάλεξα αυτό.",
-        "es": "Dudé muchas veces y al final elegí ese.",
+        "es": "Le di muchas vueltas y al final elegí ese.",
         "fi": "Epäröin monta kertaa ja valitsin lopulta sen.",
         "fr": "J'ai hésité plusieurs fois et j'ai finalement choisi celui-là.",
         "he": "התלבטתי הרבה ובסוף בחרתי בזה.",
@@ -589,7 +591,7 @@
         "tr": "Birçok kez tereddüt ettim ve sonunda onu seçtim.",
         "uk": "Я багато разів вагався і зрештою вибрав це.",
         "vi": "Tôi đã do dự nhiều lần và cuối cùng chọn cái đó.",
-        "yue": "我諗咗好多次，結果揀咗嗰個。",
+        "yue": "我猶豫咗好耐，最後揀咗嗰個。",
         "zh-Hans": "我犹豫了很多次，最后选了那个。"
       },
       "tokens": [
@@ -806,8 +808,391 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-13T00:13:06Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:Ja n3/caa3b44dab912e67",
+      "revision_id": 81374,
+      "parent_revision_id": 67482,
+      "revision_timestamp_utc": "2026-10-13T00:13:06Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Correct the ruby reading of 行った and smooth the hesitation and comparative-choice translations.",
+      "pulled_utc": "2026-10-18T17:39:14Z",
+      "applied_utc": "2026-10-18T17:39:53Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-9717bc489fdcdfac",
+        "status": "applied",
+        "type": "ruby_update",
+        "item_id": "ja_n3:caa3b44dab912e67",
+        "pack_code": "ja_n3",
+        "entry_id": "結局",
+        "language": "ja",
+        "sentence_index": 1,
+        "old_sentence": "結局、バスで行った。",
+        "old_translations": {
+          "en": "In the end, we went by bus.",
+          "ar": "في النهاية، ذهبنا بالحافلة.",
+          "cs": "Nakonec jsme jeli autobusem.",
+          "da": "Til sidst tog vi bussen.",
+          "de": "Am Ende sind wir mit dem Bus gefahren.",
+          "el": "Τελικά πήγαμε με το λεωφορείο.",
+          "es": "Al final, fuimos en autobús.",
+          "fi": "Lopulta menimme bussilla.",
+          "fr": "Finalement, nous y sommes allés en bus.",
+          "he": "בסוף נסענו באוטובוס.",
+          "hi": "आखिरकार, हम बस से गए।",
+          "hu": "Végül busszal mentünk.",
+          "id": "Akhirnya, kami pergi naik bus.",
+          "it": "Alla fine siamo andati in autobus.",
+          "ko": "결국 버스로 갔어요.",
+          "nb": "Til slutt dro vi med buss.",
+          "nl": "Uiteindelijk gingen we met de bus.",
+          "pl": "W końcu pojechaliśmy autobusem.",
+          "pt": "No fim, fomos de ônibus.",
+          "ro": "Până la urmă, am mers cu autobuzul.",
+          "ru": "В конце концов мы поехали на автобусе.",
+          "sv": "Till slut åkte vi buss.",
+          "tr": "Sonunda otobüsle gittik.",
+          "uk": "Зрештою ми поїхали автобусом.",
+          "vi": "Cuối cùng, chúng tôi đi bằng xe buýt.",
+          "yue": "結果，我哋搭巴士去。",
+          "zh-Hans": "最后，我们坐公交车去了。"
+        },
+        "proposed_sentence": "結局、バスで行った。",
+        "proposed_translations": {
+          "en": "In the end, we went by bus.",
+          "ar": "في النهاية، ذهبنا بالحافلة.",
+          "cs": "Nakonec jsme jeli autobusem.",
+          "da": "Til sidst tog vi bussen.",
+          "de": "Am Ende sind wir mit dem Bus gefahren.",
+          "el": "Τελικά πήγαμε με το λεωφορείο.",
+          "es": "Al final, fuimos en autobús.",
+          "fi": "Lopulta menimme bussilla.",
+          "fr": "Finalement, nous y sommes allés en bus.",
+          "he": "בסוף נסענו באוטובוס.",
+          "hi": "आखिरकार, हम बस से गए।",
+          "hu": "Végül busszal mentünk.",
+          "id": "Akhirnya, kami pergi naik bus.",
+          "it": "Alla fine siamo andati in autobus.",
+          "ko": "결국 버스로 갔어요.",
+          "nb": "Til slutt dro vi med buss.",
+          "nl": "Uiteindelijk gingen we met de bus.",
+          "pl": "W końcu pojechaliśmy autobusem.",
+          "pt": "No fim, fomos de ônibus.",
+          "ro": "Până la urmă, am mers cu autobuzul.",
+          "ru": "В конце концов мы поехали на автобусе.",
+          "sv": "Till slut åkte vi buss.",
+          "tr": "Sonunda otobüsle gittik.",
+          "uk": "Зрештою ми поїхали автобусом.",
+          "vi": "Cuối cùng, chúng tôi đi bằng xe buýt.",
+          "yue": "結果，我哋搭巴士去。",
+          "zh-Hans": "最后，我们坐公交车去了。"
+        },
+        "old_ruby_source": "結局[けっきょく]、バスで行[おこな]った。",
+        "proposed_ruby_source": "結局[けっきょく]、バスで行[い]った。",
+        "old_japanese": "結局、バスで行った。",
+        "old_english": "In the end, we went by bus.",
+        "proposed_japanese": "結局、バスで行った。",
+        "proposed_english": "In the end, we went by bus.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "ja",
+          "sentence": "結局、バスで行った。",
+          "tokens": [
+            {
+              "surface": "結局",
+              "lemma": "結局",
+              "pos": "名詞/普通名詞/副詞可能/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 0,
+              "end": 2,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "けっきょく",
+              "ruby_text": "結局[けっきょく]",
+              "ruby_spans": [
+                {
+                  "base": "結局",
+                  "reading": "けっきょく",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "けっきょく",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "、",
+              "lemma": "、",
+              "pos": "補助記号/読点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 2,
+              "end": 3,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "、",
+              "ruby_text": "、",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "、"
+            },
+            {
+              "surface": "バス",
+              "lemma": "バス",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 3,
+              "end": 5,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "ばす",
+              "ruby_text": "バス",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "ばす"
+            },
+            {
+              "surface": "で",
+              "lemma": "で",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 5,
+              "end": 6,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "で",
+              "ruby_text": "で",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "で"
+            },
+            {
+              "surface": "行っ",
+              "lemma": "行う",
+              "pos": "動詞/一般/*/*/五段-ワア行/連用形-促音便",
+              "upos": "VERB",
+              "xpos": "動詞",
+              "feats": {},
+              "start": 6,
+              "end": 8,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "いっ",
+              "ruby_text": "行[い]っ",
+              "ruby_spans": [
+                {
+                  "base": "行",
+                  "reading": "い",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "いっ",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "た",
+              "lemma": "た",
+              "pos": "助動詞/*/*/*/助動詞-タ/終止形-一般",
+              "upos": "AUX",
+              "xpos": "助動詞",
+              "feats": {},
+              "start": 8,
+              "end": 9,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "た",
+              "ruby_text": "た",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "た"
+            },
+            {
+              "surface": "。",
+              "lemma": "。",
+              "pos": "補助記号/句点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 9,
+              "end": 10,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "。",
+              "ruby_text": "。",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "。"
+            }
+          ],
+          "reading": "けっきょく、ばすでいった。",
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "warnings": [
+            "mediawiki ruby hints applied"
+          ]
+        },
+        "generated_tokens": [
+          {
+            "surface": "結局",
+            "lemma": "結局",
+            "pos": "名詞/普通名詞/副詞可能/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "けっきょく",
+            "ruby_text": "結局[けっきょく]",
+            "ruby_spans": [
+              {
+                "base": "結局",
+                "reading": "けっきょく",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "けっきょく",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "、",
+            "lemma": "、",
+            "pos": "補助記号/読点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 2,
+            "end": 3,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "、",
+            "ruby_text": "、",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "、"
+          },
+          {
+            "surface": "バス",
+            "lemma": "バス",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 3,
+            "end": 5,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ばす",
+            "ruby_text": "バス",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "ばす"
+          },
+          {
+            "surface": "で",
+            "lemma": "で",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 5,
+            "end": 6,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "で",
+            "ruby_text": "で",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "で"
+          },
+          {
+            "surface": "行っ",
+            "lemma": "行う",
+            "pos": "動詞/一般/*/*/五段-ワア行/連用形-促音便",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 6,
+            "end": 8,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "いっ",
+            "ruby_text": "行[い]っ",
+            "ruby_spans": [
+              {
+                "base": "行",
+                "reading": "い",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "いっ",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "た",
+            "lemma": "た",
+            "pos": "助動詞/*/*/*/助動詞-タ/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 8,
+            "end": 9,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "た",
+            "ruby_text": "た",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "た"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 9,
+            "end": 10,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
+          }
+        ],
+        "generated_reading": "けっきょく、ばすでいった。",
+        "analyzer": "sudachipy_sudachidict_core_c",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-18T17:39:14Z",
+        "updated_utc": "2026-10-18T17:40:40Z",
+        "applied_utc": "2026-10-18T17:40:40Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-18T17:40:40Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -828,16 +1213,10 @@
       "何度も迷って、結局それにした。"
     ],
     "fu": [
-      "けっきょく、ばすでいった。",
+      "けっきょく、ばすでおこなった。",
       "けっきょく、かれがかった。",
       "けっきょく、やすいほうをかった。",
       "なんどもまよって、けっきょくそれにした。"
-    ],
-    "en": [
-      "In the end, we went by bus.",
-      "After all, he won.",
-      "In the end, I bought the cheaper one.",
-      "I hesitated many times, and eventually chose that one."
     ],
     "generation": {
       "generator": "vocomipedia_source_generator.py",
@@ -876,190 +1255,6 @@
         "parts_of_speech": "Adverb (fukushi); Noun; Noun which may take the genitive case particle 'no'"
       }
     },
-    "word_en": "after all; in the end; ultimately; eventually; conclusion; end; end of a game of go, shogi, etc.",
-    "word_es": "al final; después de todo",
-    "word_fr": "finalement; après tout",
-    "word_de": "schließlich; am Ende",
-    "word_it": "alla fine; in definitiva",
-    "word_ko": "결국",
-    "word_zh-Hans": "结果；最终",
-    "word_yue": "結果上；最終",
-    "word_ru": "в конце концов; в итоге",
-    "word_pt": "no fim; afinal",
-    "word_he": "בסופו של דבר",
-    "word_tr": "sonuçta; nihayet",
-    "word_vi": "rốt cuộc; cuối cùng",
-    "word_ar": "في النهاية; أخيرًا",
-    "word_nl": "uiteindelijk; tenslotte",
-    "word_uk": "врешті-решт; зрештою",
-    "word_hu": "végül; végül is",
-    "word_hi": "आखिरकार; अंततः",
-    "word_pl": "ostatecznie; w końcu",
-    "word_el": "τελικά",
-    "word_nb": "til syvende og sist; til slutt",
-    "word_id": "pada akhirnya; akhirnya",
-    "word_sv": "i slutändan; till slut",
-    "word_ro": "în cele din urmă; până la urmă",
-    "word_cs": "nakonec; ve výsledku",
-    "word_da": "til sidst; i sidste ende",
-    "word_fi": "lopulta; viime kädessä",
-    "word_ja": "結局",
-    "ar": [
-      "في النهاية، ذهبنا بالحافلة.",
-      "في النهاية، هو فاز.",
-      "في النهاية، اشتريت الأرخص.",
-      "ترددت كثيرًا، وفي النهاية اخترت ذلك."
-    ],
-    "cs": [
-      "Nakonec jsme jeli autobusem.",
-      "Nakonec vyhrál.",
-      "Nakonec jsem koupil levnější.",
-      "Dlouho jsem váhal a nakonec jsem si vybral ten."
-    ],
-    "da": [
-      "Til sidst tog vi bussen.",
-      "Til sidst vandt han.",
-      "Til sidst købte jeg den billigere.",
-      "Jeg tøvede mange gange, og til sidst valgte jeg den."
-    ],
-    "de": [
-      "Am Ende sind wir mit dem Bus gefahren.",
-      "Am Ende hat er gewonnen.",
-      "Am Ende habe ich das billigere gekauft.",
-      "Ich habe oft gezögert und mich am Ende dafür entschieden."
-    ],
-    "el": [
-      "Τελικά πήγαμε με το λεωφορείο.",
-      "Τελικά κέρδισε.",
-      "Τελικά αγόρασα το πιο φτηνό.",
-      "Δίστασα πολλές φορές και τελικά διάλεξα αυτό."
-    ],
-    "es": [
-      "Al final, fuimos en autobús.",
-      "Al final, él ganó.",
-      "Al final, compré el más barato.",
-      "Dudé muchas veces y al final elegí ese."
-    ],
-    "fi": [
-      "Lopulta menimme bussilla.",
-      "Lopulta hän voitti.",
-      "Lopulta ostin halvemman.",
-      "Epäröin monta kertaa ja valitsin lopulta sen."
-    ],
-    "fr": [
-      "Finalement, nous y sommes allés en bus.",
-      "Finalement, c'est lui qui a gagné.",
-      "Finalement, j'ai acheté le moins cher.",
-      "J'ai hésité plusieurs fois et j'ai finalement choisi celui-là."
-    ],
-    "he": [
-      "בסוף נסענו באוטובוס.",
-      "בסוף הוא ניצח.",
-      "בסוף קניתי את הזול יותר.",
-      "התלבטתי הרבה ובסוף בחרתי בזה."
-    ],
-    "hi": [
-      "आखिरकार, हम बस से गए।",
-      "आखिरकार, वह जीता।",
-      "आखिरकार, मैंने सस्ता वाला खरीदा।",
-      "मैंने कई बार सोचा और आखिरकार उसे चुना।"
-    ],
-    "hu": [
-      "Végül busszal mentünk.",
-      "Végül ő nyert.",
-      "Végül a olcsóbbat vettem meg.",
-      "Sokszor hezitáltam, és végül azt választottam."
-    ],
-    "id": [
-      "Akhirnya, kami pergi naik bus.",
-      "Akhirnya, dia menang.",
-      "Akhirnya, saya membeli yang lebih murah.",
-      "Saya ragu-ragu berkali-kali, dan akhirnya saya memilih yang itu."
-    ],
-    "it": [
-      "Alla fine siamo andati in autobus.",
-      "Alla fine ha vinto lui.",
-      "Alla fine ho comprato quello più economico.",
-      "Ho esitato molte volte e alla fine ho scelto quello."
-    ],
-    "ko": [
-      "결국 버스로 갔어요.",
-      "결국 그가 이겼어요.",
-      "결국 더 싼 걸 샀어요.",
-      "몇 번이나 망설이다가 결국 그것으로 했어요."
-    ],
-    "nb": [
-      "Til slutt dro vi med buss.",
-      "Til slutt vant han.",
-      "Til slutt kjøpte jeg den billigere.",
-      "Jeg nølte mange ganger, og til slutt valgte jeg den."
-    ],
-    "nl": [
-      "Uiteindelijk gingen we met de bus.",
-      "Uiteindelijk won hij.",
-      "Uiteindelijk kocht ik de goedkopere.",
-      "Ik twijfelde vaak en koos uiteindelijk daarvoor."
-    ],
-    "pl": [
-      "W końcu pojechaliśmy autobusem.",
-      "W końcu on wygrał.",
-      "W końcu kupiłem tańszy.",
-      "Wahałem się wiele razy i w końcu wybrałem tamten."
-    ],
-    "pt": [
-      "No fim, fomos de ônibus.",
-      "No fim, ele ganhou.",
-      "No fim, comprei o mais barato.",
-      "Hesitei muitas vezes e acabei escolhendo aquele."
-    ],
-    "ro": [
-      "Până la urmă, am mers cu autobuzul.",
-      "Până la urmă, el a câștigat.",
-      "Până la urmă, l-am cumpărat pe cel mai ieftin.",
-      "M-am tot gândit și, până la urmă, l-am ales pe acela."
-    ],
-    "ru": [
-      "В конце концов мы поехали на автобусе.",
-      "В конце концов он победил.",
-      "В конце концов я купил более дешёвый.",
-      "Я много раз колебался и в конце концов выбрал это."
-    ],
-    "sv": [
-      "Till slut åkte vi buss.",
-      "Till slut vann han.",
-      "Till slut köpte jag den billigare.",
-      "Jag tvekade många gånger och valde till slut den."
-    ],
-    "tr": [
-      "Sonunda otobüsle gittik.",
-      "Sonunda o kazandı.",
-      "Sonunda daha ucuz olanı aldım.",
-      "Birçok kez tereddüt ettim ve sonunda onu seçtim."
-    ],
-    "uk": [
-      "Зрештою ми поїхали автобусом.",
-      "Зрештою він переміг.",
-      "Зрештою я купив дешевший.",
-      "Я багато разів вагався і зрештою вибрав це."
-    ],
-    "vi": [
-      "Cuối cùng, chúng tôi đi bằng xe buýt.",
-      "Cuối cùng, anh ấy đã thắng.",
-      "Cuối cùng, tôi đã mua cái rẻ hơn.",
-      "Tôi đã do dự nhiều lần và cuối cùng chọn cái đó."
-    ],
-    "yue": [
-      "結果，我哋搭巴士去。",
-      "結果，佢贏咗。",
-      "結果，我買咗平啲嗰個。",
-      "我諗咗好多次，結果揀咗嗰個。"
-    ],
-    "zh-Hans": [
-      "最后，我们坐公交车去了。",
-      "最后，他赢了。",
-      "最后，我买了便宜一点的。",
-      "我犹豫了很多次，最后选了那个。"
-    ],
     "pos_analysis": [
       {
         "sentence": "結局、バスで行った。",
@@ -1084,8 +1279,9 @@
                 "length": 2
               }
             ],
-            "ruby_confidence": "medium",
+            "ruby_confidence": "reviewed",
             "furigana": "けっきょく",
+            "ruby_source": "mediawiki_sentence_ruby",
             "is_main_word": true
           },
           {
@@ -1146,18 +1342,19 @@
             "start": 6,
             "end": 8,
             "analyzer": "sudachipy_sudachidict_core_c",
-            "reading_kana": "おこなっ",
-            "ruby_text": "行[おこな]っ",
+            "reading_kana": "いっ",
+            "ruby_text": "行[い]っ",
             "ruby_spans": [
               {
                 "base": "行",
-                "reading": "おこな",
+                "reading": "い",
                 "start": 0,
                 "length": 1
               }
             ],
-            "ruby_confidence": "high",
-            "furigana": "おこなっ"
+            "ruby_confidence": "reviewed",
+            "furigana": "いっ",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "た",
@@ -1694,6 +1891,196 @@
         ],
         "difficulty_aggregated": null
       }
+    ],
+    "word_en": "after all; in the end; ultimately; eventually; conclusion; end; end of a game of go, shogi, etc.",
+    "word_es": "al final; después de todo",
+    "word_fr": "finalement; après tout",
+    "word_de": "schließlich; am Ende",
+    "word_it": "alla fine; in definitiva",
+    "word_ko": "결국",
+    "word_zh-Hans": "结果；最终",
+    "word_yue": "結果上；最終",
+    "word_ru": "в конце концов; в итоге",
+    "word_pt": "no fim; afinal",
+    "word_he": "בסופו של דבר",
+    "word_tr": "sonuçta; nihayet",
+    "word_vi": "rốt cuộc; cuối cùng",
+    "word_ar": "في النهاية; أخيرًا",
+    "word_nl": "uiteindelijk; tenslotte",
+    "word_uk": "врешті-решт; зрештою",
+    "word_hu": "végül; végül is",
+    "word_hi": "आखिरकार; अंततः",
+    "word_pl": "ostatecznie; w końcu",
+    "word_el": "τελικά",
+    "word_nb": "til syvende og sist; til slutt",
+    "word_id": "pada akhirnya; akhirnya",
+    "word_sv": "i slutändan; till slut",
+    "word_ro": "în cele din urmă; până la urmă",
+    "word_cs": "nakonec; ve výsledku",
+    "word_da": "til sidst; i sidste ende",
+    "word_fi": "lopulta; viime kädessä",
+    "word_ja": "結局",
+    "ar": [
+      "في النهاية، ذهبنا بالحافلة.",
+      "في النهاية، هو فاز.",
+      "في النهاية، اشتريت الأرخص.",
+      "ترددت كثيرًا، وفي النهاية اخترت ذلك."
+    ],
+    "cs": [
+      "Nakonec jsme jeli autobusem.",
+      "Nakonec vyhrál.",
+      "Nakonec jsem koupil levnější.",
+      "Dlouho jsem váhal a nakonec jsem si vybral ten."
+    ],
+    "da": [
+      "Til sidst tog vi bussen.",
+      "Til sidst vandt han.",
+      "Til sidst købte jeg den billigere.",
+      "Jeg tøvede mange gange, og til sidst valgte jeg den."
+    ],
+    "de": [
+      "Am Ende sind wir mit dem Bus gefahren.",
+      "Am Ende hat er gewonnen.",
+      "Am Ende habe ich das billigere gekauft.",
+      "Ich habe oft gezögert und mich am Ende dafür entschieden."
+    ],
+    "el": [
+      "Τελικά πήγαμε με το λεωφορείο.",
+      "Τελικά κέρδισε.",
+      "Τελικά αγόρασα το πιο φτηνό.",
+      "Δίστασα πολλές φορές και τελικά διάλεξα αυτό."
+    ],
+    "en": [
+      "In the end, we went by bus.",
+      "After all, he won.",
+      "In the end, I bought the cheaper one.",
+      "I went back and forth many times before finally choosing that one."
+    ],
+    "es": [
+      "Al final, fuimos en autobús.",
+      "Al final, él ganó.",
+      "Al final, compré el más barato.",
+      "Le di muchas vueltas y al final elegí ese."
+    ],
+    "fi": [
+      "Lopulta menimme bussilla.",
+      "Lopulta hän voitti.",
+      "Lopulta ostin halvemman.",
+      "Epäröin monta kertaa ja valitsin lopulta sen."
+    ],
+    "fr": [
+      "Finalement, nous y sommes allés en bus.",
+      "Finalement, c'est lui qui a gagné.",
+      "Finalement, j'ai acheté le moins cher.",
+      "J'ai hésité plusieurs fois et j'ai finalement choisi celui-là."
+    ],
+    "he": [
+      "בסוף נסענו באוטובוס.",
+      "בסוף הוא ניצח.",
+      "בסוף קניתי את הזול יותר.",
+      "התלבטתי הרבה ובסוף בחרתי בזה."
+    ],
+    "hi": [
+      "आखिरकार, हम बस से गए।",
+      "आखिरकार, वह जीता।",
+      "आखिरकार, मैंने सस्ता वाला खरीदा।",
+      "मैंने कई बार सोचा और आखिरकार उसे चुना।"
+    ],
+    "hu": [
+      "Végül busszal mentünk.",
+      "Végül ő nyert.",
+      "Végül az olcsóbbat vettem meg.",
+      "Sokszor hezitáltam, és végül azt választottam."
+    ],
+    "id": [
+      "Akhirnya, kami pergi naik bus.",
+      "Akhirnya, dia menang.",
+      "Akhirnya, saya membeli yang lebih murah.",
+      "Saya ragu-ragu berkali-kali, dan akhirnya saya memilih yang itu."
+    ],
+    "it": [
+      "Alla fine siamo andati in autobus.",
+      "Alla fine ha vinto lui.",
+      "Alla fine ho comprato quello più economico.",
+      "Ho esitato molte volte e alla fine ho scelto quello."
+    ],
+    "ko": [
+      "결국 버스로 갔어요.",
+      "결국 그가 이겼어요.",
+      "결국 더 싼 걸 샀어요.",
+      "몇 번이나 망설이다가 결국 그것으로 했어요."
+    ],
+    "nb": [
+      "Til slutt dro vi med buss.",
+      "Til slutt vant han.",
+      "Til slutt kjøpte jeg den billigere.",
+      "Jeg nølte mange ganger, og til slutt valgte jeg den."
+    ],
+    "nl": [
+      "Uiteindelijk gingen we met de bus.",
+      "Uiteindelijk won hij.",
+      "Uiteindelijk kocht ik de goedkopere.",
+      "Ik twijfelde vaak en koos uiteindelijk daarvoor."
+    ],
+    "pl": [
+      "W końcu pojechaliśmy autobusem.",
+      "W końcu on wygrał.",
+      "W końcu kupiłem tańszy.",
+      "Wahałem się wiele razy i w końcu wybrałem tamten."
+    ],
+    "pt": [
+      "No fim, fomos de ônibus.",
+      "No fim, ele ganhou.",
+      "No fim, comprei o mais barato.",
+      "Hesitei muitas vezes e acabei escolhendo aquele."
+    ],
+    "ro": [
+      "Până la urmă, am mers cu autobuzul.",
+      "Până la urmă, el a câștigat.",
+      "Până la urmă, l-am cumpărat pe cel mai ieftin.",
+      "M-am tot gândit și, până la urmă, l-am ales pe acela."
+    ],
+    "ru": [
+      "В конце концов мы поехали на автобусе.",
+      "В конце концов он победил.",
+      "В конце концов я купил более дешёвый.",
+      "Я много раз колебался и в конце концов выбрал это."
+    ],
+    "sv": [
+      "Till slut åkte vi buss.",
+      "Till slut vann han.",
+      "Till slut köpte jag den billigare.",
+      "Jag tvekade många gånger och valde till slut den."
+    ],
+    "tr": [
+      "Sonunda otobüsle gittik.",
+      "Sonunda o kazandı.",
+      "Sonunda daha ucuz olanı aldım.",
+      "Birçok kez tereddüt ettim ve sonunda onu seçtim."
+    ],
+    "uk": [
+      "Зрештою ми поїхали автобусом.",
+      "Зрештою він переміг.",
+      "Зрештою я купив дешевший.",
+      "Я багато разів вагався і зрештою вибрав це."
+    ],
+    "vi": [
+      "Cuối cùng, chúng tôi đi bằng xe buýt.",
+      "Cuối cùng, anh ấy đã thắng.",
+      "Cuối cùng, tôi đã mua cái rẻ hơn.",
+      "Tôi đã do dự nhiều lần và cuối cùng chọn cái đó."
+    ],
+    "yue": [
+      "結果，我哋搭巴士去。",
+      "結果，佢贏咗。",
+      "結果，我買咗平啲嗰個。",
+      "我猶豫咗好耐，最後揀咗嗰個。"
+    ],
+    "zh-Hans": [
+      "最后，我们坐公交车去了。",
+      "最后，他赢了。",
+      "最后，我买了便宜一点的。",
+      "我犹豫了很多次，最后选了那个。"
     ]
   }
 }

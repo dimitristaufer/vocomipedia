@@ -436,12 +436,12 @@
       "difficulty": null
     },
     {
-      "target": "にわのざっそうをぜつめつするのはたいへんだ。",
-      "reading": "にわのざっそうをぜつめつするのはたいへんだ。",
+      "target": "庭の雑草を絶滅させるのは大変だ。",
+      "reading": "にわのざっそうをぜつめつさせるのはたいへんだ。",
       "translations": {
         "en": "Eradicating the weeds in the garden is hard.",
         "ar": "من الصعب القضاء على الأعشاب الضارة في الحديقة.",
-        "cs": "Je těžké vyhubit na zahradě plevel.",
+        "cs": "Je těžké vyhubit plevel na zahradě.",
         "da": "Det er svært at udrydde ukrudtet i haven.",
         "de": "Es ist schwer, das Unkraut im Garten zu beseitigen.",
         "el": "Είναι δύσκολο να εξαλείψεις τα αγριόχορτα στον κήπο.",
@@ -469,20 +469,28 @@
       },
       "tokens": [
         {
-          "surface": "にわ",
-          "lemma": "にわ",
+          "surface": "庭",
+          "lemma": "庭",
           "pos": "名詞/普通名詞/一般/*/*/*",
           "upos": "NOUN",
           "xpos": "名詞",
           "feats": {},
           "start": 0,
-          "end": 2,
+          "end": 1,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "にわ",
-          "ruby_text": "にわ",
-          "ruby_spans": [],
-          "ruby_confidence": "high",
-          "furigana": "にわ"
+          "ruby_text": "庭[にわ]",
+          "ruby_spans": [
+            {
+              "base": "庭",
+              "reading": "にわ",
+              "start": 0,
+              "length": 1
+            }
+          ],
+          "ruby_confidence": "reviewed",
+          "furigana": "にわ",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "の",
@@ -491,8 +499,8 @@
           "upos": "PART",
           "xpos": "助詞",
           "feats": {},
-          "start": 2,
-          "end": 3,
+          "start": 1,
+          "end": 2,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "の",
           "ruby_text": "の",
@@ -501,36 +509,28 @@
           "furigana": "の"
         },
         {
-          "surface": "ざっ",
-          "lemma": "ざっ",
-          "pos": "副詞/*/*/*/*/*",
-          "upos": "ADV",
-          "xpos": "副詞",
+          "surface": "雑草",
+          "lemma": "雑草",
+          "pos": "名詞/普通名詞/一般/*/*/*",
+          "upos": "NOUN",
+          "xpos": "名詞",
           "feats": {},
-          "start": 3,
-          "end": 5,
+          "start": 2,
+          "end": 4,
           "analyzer": "sudachipy_sudachidict_core_c",
-          "reading_kana": "ざっ",
-          "ruby_text": "ざっ",
-          "ruby_spans": [],
-          "ruby_confidence": "high",
-          "furigana": "ざっ"
-        },
-        {
-          "surface": "そう",
-          "lemma": "そう",
-          "pos": "副詞/*/*/*/*/*",
-          "upos": "ADV",
-          "xpos": "副詞",
-          "feats": {},
-          "start": 5,
-          "end": 7,
-          "analyzer": "sudachipy_sudachidict_core_c",
-          "reading_kana": "そう",
-          "ruby_text": "そう",
-          "ruby_spans": [],
-          "ruby_confidence": "high",
-          "furigana": "そう"
+          "reading_kana": "ざっそう",
+          "ruby_text": "雑草[ざっそう]",
+          "ruby_spans": [
+            {
+              "base": "雑草",
+              "reading": "ざっそう",
+              "start": 0,
+              "length": 2
+            }
+          ],
+          "ruby_confidence": "reviewed",
+          "furigana": "ざっそう",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "を",
@@ -539,8 +539,8 @@
           "upos": "PART",
           "xpos": "助詞",
           "feats": {},
-          "start": 7,
-          "end": 8,
+          "start": 4,
+          "end": 5,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "を",
           "ruby_text": "を",
@@ -549,37 +549,60 @@
           "furigana": "を"
         },
         {
-          "surface": "ぜつめつ",
-          "lemma": "ぜつめつ",
+          "surface": "絶滅",
+          "lemma": "絶滅",
           "pos": "名詞/普通名詞/サ変可能/*/*/*",
           "upos": "NOUN",
           "xpos": "名詞",
           "feats": {},
-          "start": 8,
-          "end": 12,
+          "start": 5,
+          "end": 7,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "ぜつめつ",
-          "ruby_text": "ぜつめつ",
-          "ruby_spans": [],
-          "ruby_confidence": "high",
+          "ruby_text": "絶滅[ぜつめつ]",
+          "ruby_spans": [
+            {
+              "base": "絶滅",
+              "reading": "ぜつめつ",
+              "start": 0,
+              "length": 2
+            }
+          ],
+          "ruby_confidence": "reviewed",
           "furigana": "ぜつめつ",
-          "is_main_word": true
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
-          "surface": "する",
+          "surface": "さ",
           "lemma": "する",
-          "pos": "動詞/非自立可能/*/*/サ行変格/連体形-一般",
+          "pos": "動詞/非自立可能/*/*/サ行変格/未然形-サ",
           "upos": "VERB",
           "xpos": "動詞",
           "feats": {},
-          "start": 12,
-          "end": 14,
+          "start": 7,
+          "end": 8,
           "analyzer": "sudachipy_sudachidict_core_c",
-          "reading_kana": "する",
-          "ruby_text": "する",
+          "reading_kana": "さ",
+          "ruby_text": "さ",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "furigana": "する"
+          "furigana": "さ"
+        },
+        {
+          "surface": "せる",
+          "lemma": "せる",
+          "pos": "助動詞/*/*/*/下一段-サ行/連体形-一般",
+          "upos": "AUX",
+          "xpos": "助動詞",
+          "feats": {},
+          "start": 8,
+          "end": 10,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "せる",
+          "ruby_text": "せる",
+          "ruby_spans": [],
+          "ruby_confidence": "high",
+          "furigana": "せる"
         },
         {
           "surface": "の",
@@ -588,8 +611,8 @@
           "upos": "PART",
           "xpos": "助詞",
           "feats": {},
-          "start": 14,
-          "end": 15,
+          "start": 10,
+          "end": 11,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "の",
           "ruby_text": "の",
@@ -604,8 +627,8 @@
           "upos": "PART",
           "xpos": "助詞",
           "feats": {},
-          "start": 15,
-          "end": 16,
+          "start": 11,
+          "end": 12,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "は",
           "ruby_text": "は",
@@ -614,20 +637,28 @@
           "furigana": "は"
         },
         {
-          "surface": "たいへん",
-          "lemma": "たいへん",
+          "surface": "大変",
+          "lemma": "大変",
           "pos": "形状詞/一般/*/*/*/*",
           "upos": "ADJ",
           "xpos": "形状詞",
           "feats": {},
-          "start": 16,
-          "end": 20,
+          "start": 12,
+          "end": 14,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "たいへん",
-          "ruby_text": "たいへん",
-          "ruby_spans": [],
-          "ruby_confidence": "high",
-          "furigana": "たいへん"
+          "ruby_text": "大変[たいへん]",
+          "ruby_spans": [
+            {
+              "base": "大変",
+              "reading": "たいへん",
+              "start": 0,
+              "length": 2
+            }
+          ],
+          "ruby_confidence": "reviewed",
+          "furigana": "たいへん",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "だ",
@@ -636,8 +667,8 @@
           "upos": "AUX",
           "xpos": "助動詞",
           "feats": {},
-          "start": 20,
-          "end": 21,
+          "start": 14,
+          "end": 15,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "だ",
           "ruby_text": "だ",
@@ -652,8 +683,8 @@
           "upos": "PUNCT",
           "xpos": "補助記号",
           "feats": {},
-          "start": 21,
-          "end": 22,
+          "start": 15,
+          "end": 16,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "。",
           "ruby_text": "。",
@@ -905,8 +936,584 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-13T02:47:08Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:Ja n3/b2d7d33e5b1811bf",
+      "revision_id": 80950,
+      "parent_revision_id": 67763,
+      "revision_timestamp_utc": "2026-10-13T02:47:08Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Use the causative verb construction in Japanese for eradicating weeds and smooth the Czech word order.",
+      "pulled_utc": "2026-10-18T17:39:11Z",
+      "applied_utc": "2026-10-18T17:39:50Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-5c6087a9f7e7f92d",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "ja_n3:b2d7d33e5b1811bf",
+        "pack_code": "ja_n3",
+        "entry_id": "ぜつめつ",
+        "language": "ja",
+        "sentence_index": 3,
+        "old_sentence": "にわのざっそうをぜつめつするのはたいへんだ。",
+        "old_translations": {
+          "en": "Eradicating the weeds in the garden is hard.",
+          "ar": "من الصعب القضاء على الأعشاب الضارة في الحديقة.",
+          "cs": "Je těžké vyhubit na zahradě plevel.",
+          "da": "Det er svært at udrydde ukrudtet i haven.",
+          "de": "Es ist schwer, das Unkraut im Garten zu beseitigen.",
+          "el": "Είναι δύσκολο να εξαλείψεις τα αγριόχορτα στον κήπο.",
+          "es": "Es difícil erradicar las malas hierbas del jardín.",
+          "fi": "Rikkaruohojen hävittäminen puutarhasta on vaikeaa.",
+          "fr": "Il est difficile d'éradiquer les mauvaises herbes du jardin.",
+          "he": "קשה להשמיד את העשבים השוטים בגינה.",
+          "hi": "बगीचे में खरपतवार को खत्म करना मुश्किल है।",
+          "hu": "Nehéz kiirtani a gyomokat a kertből.",
+          "id": "Sulit memberantas gulma di kebun.",
+          "it": "È difficile estirpare le erbacce nel giardino.",
+          "ko": "정원의 잡초를 없애는 것은 어렵다.",
+          "nb": "Det er vanskelig å utrydde ugresset i hagen.",
+          "nl": "Het is moeilijk om het onkruid in de tuin uit te roeien.",
+          "pl": "Trudno jest wytępić chwasty w ogrodzie.",
+          "pt": "É difícil erradicar as ervas daninhas do jardim.",
+          "ro": "Este greu să stârpești buruienile din grădină.",
+          "ru": "Трудно вывести сорняки в саду.",
+          "sv": "Det är svårt att utrota ogräset i trädgården.",
+          "tr": "Bahçedeki yabani otları yok etmek zor.",
+          "uk": "Викорінити бур’яни в саду важко.",
+          "vi": "Khó mà diệt hết cỏ dại trong vườn.",
+          "yue": "清除花園入面嘅雜草好難。",
+          "zh-Hans": "清除花园里的杂草很难。"
+        },
+        "proposed_sentence": "庭の雑草を絶滅させるのは大変だ。",
+        "proposed_translations": {
+          "en": "Eradicating the weeds in the garden is hard.",
+          "ar": "من الصعب القضاء على الأعشاب الضارة في الحديقة.",
+          "cs": "Je těžké vyhubit plevel na zahradě.",
+          "da": "Det er svært at udrydde ukrudtet i haven.",
+          "de": "Es ist schwer, das Unkraut im Garten zu beseitigen.",
+          "el": "Είναι δύσκολο να εξαλείψεις τα αγριόχορτα στον κήπο.",
+          "es": "Es difícil erradicar las malas hierbas del jardín.",
+          "fi": "Rikkaruohojen hävittäminen puutarhasta on vaikeaa.",
+          "fr": "Il est difficile d'éradiquer les mauvaises herbes du jardin.",
+          "he": "קשה להשמיד את העשבים השוטים בגינה.",
+          "hi": "बगीचे में खरपतवार को खत्म करना मुश्किल है।",
+          "hu": "Nehéz kiirtani a gyomokat a kertből.",
+          "id": "Sulit memberantas gulma di kebun.",
+          "it": "È difficile estirpare le erbacce nel giardino.",
+          "ko": "정원의 잡초를 없애는 것은 어렵다.",
+          "nb": "Det er vanskelig å utrydde ugresset i hagen.",
+          "nl": "Het is moeilijk om het onkruid in de tuin uit te roeien.",
+          "pl": "Trudno jest wytępić chwasty w ogrodzie.",
+          "pt": "É difícil erradicar as ervas daninhas do jardim.",
+          "ro": "Este greu să stârpești buruienile din grădină.",
+          "ru": "Трудно вывести сорняки в саду.",
+          "sv": "Det är svårt att utrota ogräset i trädgården.",
+          "tr": "Bahçedeki yabani otları yok etmek zor.",
+          "uk": "Викорінити бур’яни в саду важко.",
+          "vi": "Khó mà diệt hết cỏ dại trong vườn.",
+          "yue": "清除花園入面嘅雜草好難。",
+          "zh-Hans": "清除花园里的杂草很难。"
+        },
+        "old_ruby_source": "にわのざっそうをぜつめつするのはたいへんだ。",
+        "proposed_ruby_source": "庭[にわ]の雑草[ざっそう]を絶滅[ぜつめつ]させるのは大変[たいへん]だ。",
+        "old_japanese": "にわのざっそうをぜつめつするのはたいへんだ。",
+        "old_english": "Eradicating the weeds in the garden is hard.",
+        "proposed_japanese": "庭の雑草を絶滅させるのは大変だ。",
+        "proposed_english": "Eradicating the weeds in the garden is hard.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "ja",
+          "sentence": "庭の雑草を絶滅させるのは大変だ。",
+          "tokens": [
+            {
+              "surface": "庭",
+              "lemma": "庭",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 0,
+              "end": 1,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "にわ",
+              "ruby_text": "庭[にわ]",
+              "ruby_spans": [
+                {
+                  "base": "庭",
+                  "reading": "にわ",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "にわ",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "の",
+              "lemma": "の",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 1,
+              "end": 2,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "の",
+              "ruby_text": "の",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "の"
+            },
+            {
+              "surface": "雑草",
+              "lemma": "雑草",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 2,
+              "end": 4,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "ざっそう",
+              "ruby_text": "雑草[ざっそう]",
+              "ruby_spans": [
+                {
+                  "base": "雑草",
+                  "reading": "ざっそう",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "ざっそう",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "を",
+              "lemma": "を",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 4,
+              "end": 5,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "を",
+              "ruby_text": "を",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "を"
+            },
+            {
+              "surface": "絶滅",
+              "lemma": "絶滅",
+              "pos": "名詞/普通名詞/サ変可能/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 5,
+              "end": 7,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "ぜつめつ",
+              "ruby_text": "絶滅[ぜつめつ]",
+              "ruby_spans": [
+                {
+                  "base": "絶滅",
+                  "reading": "ぜつめつ",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "ぜつめつ",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "さ",
+              "lemma": "する",
+              "pos": "動詞/非自立可能/*/*/サ行変格/未然形-サ",
+              "upos": "VERB",
+              "xpos": "動詞",
+              "feats": {},
+              "start": 7,
+              "end": 8,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "さ",
+              "ruby_text": "さ",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "さ"
+            },
+            {
+              "surface": "せる",
+              "lemma": "せる",
+              "pos": "助動詞/*/*/*/下一段-サ行/連体形-一般",
+              "upos": "AUX",
+              "xpos": "助動詞",
+              "feats": {},
+              "start": 8,
+              "end": 10,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "せる",
+              "ruby_text": "せる",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "せる"
+            },
+            {
+              "surface": "の",
+              "lemma": "の",
+              "pos": "助詞/準体助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 10,
+              "end": 11,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "の",
+              "ruby_text": "の",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "の"
+            },
+            {
+              "surface": "は",
+              "lemma": "は",
+              "pos": "助詞/係助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 11,
+              "end": 12,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "は",
+              "ruby_text": "は",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "は"
+            },
+            {
+              "surface": "大変",
+              "lemma": "大変",
+              "pos": "形状詞/一般/*/*/*/*",
+              "upos": "ADJ",
+              "xpos": "形状詞",
+              "feats": {},
+              "start": 12,
+              "end": 14,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "たいへん",
+              "ruby_text": "大変[たいへん]",
+              "ruby_spans": [
+                {
+                  "base": "大変",
+                  "reading": "たいへん",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "たいへん",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "だ",
+              "lemma": "だ",
+              "pos": "助動詞/*/*/*/助動詞-ダ/終止形-一般",
+              "upos": "AUX",
+              "xpos": "助動詞",
+              "feats": {},
+              "start": 14,
+              "end": 15,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "だ",
+              "ruby_text": "だ",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "だ"
+            },
+            {
+              "surface": "。",
+              "lemma": "。",
+              "pos": "補助記号/句点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 15,
+              "end": 16,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "。",
+              "ruby_text": "。",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "。"
+            }
+          ],
+          "reading": "にわのざっそうをぜつめつさせるのはたいへんだ。",
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "warnings": [
+            "mediawiki ruby hints applied"
+          ]
+        },
+        "generated_tokens": [
+          {
+            "surface": "庭",
+            "lemma": "庭",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 0,
+            "end": 1,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "にわ",
+            "ruby_text": "庭[にわ]",
+            "ruby_spans": [
+              {
+                "base": "庭",
+                "reading": "にわ",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "にわ",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "の",
+            "lemma": "の",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 1,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "の",
+            "ruby_text": "の",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "の"
+          },
+          {
+            "surface": "雑草",
+            "lemma": "雑草",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 2,
+            "end": 4,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ざっそう",
+            "ruby_text": "雑草[ざっそう]",
+            "ruby_spans": [
+              {
+                "base": "雑草",
+                "reading": "ざっそう",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "ざっそう",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "を",
+            "lemma": "を",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 4,
+            "end": 5,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "を",
+            "ruby_text": "を",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "を"
+          },
+          {
+            "surface": "絶滅",
+            "lemma": "絶滅",
+            "pos": "名詞/普通名詞/サ変可能/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 5,
+            "end": 7,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ぜつめつ",
+            "ruby_text": "絶滅[ぜつめつ]",
+            "ruby_spans": [
+              {
+                "base": "絶滅",
+                "reading": "ぜつめつ",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "ぜつめつ",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "さ",
+            "lemma": "する",
+            "pos": "動詞/非自立可能/*/*/サ行変格/未然形-サ",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 7,
+            "end": 8,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "さ",
+            "ruby_text": "さ",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "さ"
+          },
+          {
+            "surface": "せる",
+            "lemma": "せる",
+            "pos": "助動詞/*/*/*/下一段-サ行/連体形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 8,
+            "end": 10,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "せる",
+            "ruby_text": "せる",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "せる"
+          },
+          {
+            "surface": "の",
+            "lemma": "の",
+            "pos": "助詞/準体助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 10,
+            "end": 11,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "の",
+            "ruby_text": "の",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "の"
+          },
+          {
+            "surface": "は",
+            "lemma": "は",
+            "pos": "助詞/係助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 11,
+            "end": 12,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "は",
+            "ruby_text": "は",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "は"
+          },
+          {
+            "surface": "大変",
+            "lemma": "大変",
+            "pos": "形状詞/一般/*/*/*/*",
+            "upos": "ADJ",
+            "xpos": "形状詞",
+            "feats": {},
+            "start": 12,
+            "end": 14,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "たいへん",
+            "ruby_text": "大変[たいへん]",
+            "ruby_spans": [
+              {
+                "base": "大変",
+                "reading": "たいへん",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "たいへん",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "だ",
+            "lemma": "だ",
+            "pos": "助動詞/*/*/*/助動詞-ダ/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 14,
+            "end": 15,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "だ",
+            "ruby_text": "だ",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "だ"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 15,
+            "end": 16,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
+          }
+        ],
+        "generated_reading": "にわのざっそうをぜつめつさせるのはたいへんだ。",
+        "analyzer": "sudachipy_sudachidict_core_c",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-18T17:39:11Z",
+        "updated_utc": "2026-10-18T17:40:49Z",
+        "applied_utc": "2026-10-18T17:40:49Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-18T17:40:49Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -931,12 +1538,6 @@
       "そのしゅもくは、ぜつめつのききです。",
       "にわのざっそうをぜつめつするのはたいへんだ。",
       "やくしょは、ねずみのぜつめつをすすめている。"
-    ],
-    "en": [
-      "On this island, the animals went extinct.",
-      "That species is in danger of extinction.",
-      "Eradicating the weeds in the garden is hard.",
-      "The city office is carrying out a rat eradication effort."
     ],
     "generation": {
       "generator": "vocomipedia_source_generator.py",
@@ -975,190 +1576,6 @@
         "parts_of_speech": "Noun; Suru verb; Intransitive verb"
       }
     },
-    "word_en": "extinction; extermination; eradication; stamping out; wiping out",
-    "word_es": "extinción",
-    "word_fr": "extinction",
-    "word_de": "Ausrottung",
-    "word_it": "estinzione",
-    "word_ko": "멸종",
-    "word_zh-Hans": "灭绝",
-    "word_yue": "滅絕",
-    "word_ru": "вымирание",
-    "word_pt": "extinção",
-    "word_he": "הכחדה",
-    "word_tr": "yok oluş",
-    "word_vi": "tuyệt chủng",
-    "word_ar": "انقراض",
-    "word_nl": "uitsterving",
-    "word_uk": "вимирання",
-    "word_hu": "kihalás",
-    "word_hi": "विलुप्ति",
-    "word_pl": "wyginięcie",
-    "word_el": "εξαφάνιση",
-    "word_nb": "utryddelse",
-    "word_id": "kepunahan",
-    "word_sv": "utrotning",
-    "word_ro": "extincție",
-    "word_cs": "vyhynutí",
-    "word_da": "udryddelse",
-    "word_fi": "sukupuutto",
-    "word_ja": "ぜつめつ",
-    "ar": [
-      "انقرضت الحيوانات في هذه الجزيرة.",
-      "هذا النوع مهدد بالانقراض.",
-      "من الصعب القضاء على الأعشاب الضارة في الحديقة.",
-      "تقوم البلدية بحملة للقضاء على الفئران."
-    ],
-    "cs": [
-      "Na tomto ostrově zvířata vyhynula.",
-      "Tento druh je v ohrožení vyhynutí.",
-      "Je těžké vyhubit na zahradě plevel.",
-      "Radnice provádí opatření na vyhubení krys."
-    ],
-    "da": [
-      "På denne ø er dyrene uddøde.",
-      "Den art er truet af udryddelse.",
-      "Det er svært at udrydde ukrudtet i haven.",
-      "Kommunekontoret er i gang med en indsats for at udrydde rotter."
-    ],
-    "de": [
-      "Auf dieser Insel sind die Tiere ausgestorben.",
-      "Diese Art ist vom Aussterben bedroht.",
-      "Es ist schwer, das Unkraut im Garten zu beseitigen.",
-      "Das Rathaus führt eine Kampagne zur Rattenbekämpfung durch."
-    ],
-    "el": [
-      "Σε αυτό το νησί, τα ζώα εξαφανίστηκαν.",
-      "Αυτό το είδος κινδυνεύει με εξαφάνιση.",
-      "Είναι δύσκολο να εξαλείψεις τα αγριόχορτα στον κήπο.",
-      "Το δημαρχείο κάνει μια προσπάθεια να εξοντώσει τους αρουραίους."
-    ],
-    "es": [
-      "En esta isla, los animales se extinguieron.",
-      "Esa especie está en peligro de extinción.",
-      "Es difícil erradicar las malas hierbas del jardín.",
-      "El ayuntamiento está llevando a cabo una campaña para eliminar las ratas."
-    ],
-    "fi": [
-      "Tällä saarella eläimet kuolivat sukupuuttoon.",
-      "Tuo laji on vaarassa kuolla sukupuuttoon.",
-      "Rikkaruohojen hävittäminen puutarhasta on vaikeaa.",
-      "Kunnanvirasto tekee työtä rottien hävittämiseksi."
-    ],
-    "fr": [
-      "Sur cette île, les animaux ont disparu.",
-      "Cette espèce est en danger d'extinction.",
-      "Il est difficile d'éradiquer les mauvaises herbes du jardin.",
-      "La mairie mène une campagne pour éliminer les rats."
-    ],
-    "he": [
-      "באי הזה, החיות נכחדו.",
-      "המין הזה בסכנת הכחדה.",
-      "קשה להשמיד את העשבים השוטים בגינה.",
-      "העירייה מנהלת מבצע הדברה נגד עכברושים."
-    ],
-    "hi": [
-      "इस द्वीप पर जानवर विलुप्त हो गए।",
-      "यह प्रजाति विलुप्त होने के खतरे में है।",
-      "बगीचे में खरपतवार को खत्म करना मुश्किल है।",
-      "नगर कार्यालय चूहों को खत्म करने का अभियान चला रहा है।"
-    ],
-    "hu": [
-      "Ezen a szigeten az állatok kipusztultak.",
-      "Ez a faj a kihalás veszélyében van.",
-      "Nehéz kiirtani a gyomokat a kertből.",
-      "A városháza patkányirtási akciót folytat."
-    ],
-    "id": [
-      "Di pulau ini, hewan-hewan punah.",
-      "Spesies itu terancam punah.",
-      "Sulit memberantas gulma di kebun.",
-      "Kantor kota sedang melakukan upaya untuk memberantas tikus."
-    ],
-    "it": [
-      "Su quest'isola, gli animali si sono estinti.",
-      "Quella specie è in pericolo di estinzione.",
-      "È difficile estirpare le erbacce nel giardino.",
-      "Il municipio sta portando avanti una campagna per eliminare i topi."
-    ],
-    "ko": [
-      "이 섬에서는 동물들이 멸종했다.",
-      "그 종은 멸종 위기에 있다.",
-      "정원의 잡초를 없애는 것은 어렵다.",
-      "구청은 쥐를 없애는 작업을 진행하고 있다."
-    ],
-    "nb": [
-      "På denne øya døde dyrene ut.",
-      "Den arten er truet av utryddelse.",
-      "Det er vanskelig å utrydde ugresset i hagen.",
-      "Kommunehuset jobber med å utrydde rotter."
-    ],
-    "nl": [
-      "Op dit eiland zijn de dieren uitgestorven.",
-      "Die soort is met uitsterven bedreigd.",
-      "Het is moeilijk om het onkruid in de tuin uit te roeien.",
-      "Het stadhuis voert een actie uit om ratten uit te roeien."
-    ],
-    "pl": [
-      "Na tej wyspie zwierzęta wyginęły.",
-      "Ten gatunek jest zagrożony wyginięciem.",
-      "Trudno jest wytępić chwasty w ogrodzie.",
-      "Urząd miasta prowadzi akcję zwalczania szczurów."
-    ],
-    "pt": [
-      "Nesta ilha, os animais foram extintos.",
-      "Essa espécie está em perigo de extinção.",
-      "É difícil erradicar as ervas daninhas do jardim.",
-      "A prefeitura está fazendo uma campanha para eliminar os ratos."
-    ],
-    "ro": [
-      "Pe această insulă, animalele au dispărut.",
-      "Această specie este în pericol de dispariție.",
-      "Este greu să stârpești buruienile din grădină.",
-      "Primăria desfășoară o campanie de combatere a șobolanilor."
-    ],
-    "ru": [
-      "На этом острове животные вымерли.",
-      "Этот вид находится под угрозой исчезновения.",
-      "Трудно вывести сорняки в саду.",
-      "Городская администрация проводит кампанию по уничтожению крыс."
-    ],
-    "sv": [
-      "På den här ön dog djuren ut.",
-      "Den arten är utrotningshotad.",
-      "Det är svårt att utrota ogräset i trädgården.",
-      "Kommunhuset arbetar med att utrota råttor."
-    ],
-    "tr": [
-      "Bu adada hayvanlar yok oldu.",
-      "Bu türün soyu tükenme tehlikesi altında.",
-      "Bahçedeki yabani otları yok etmek zor.",
-      "Belediye, fareleri yok etmek için çalışma yürütüyor."
-    ],
-    "uk": [
-      "На цьому острові тварини вимерли.",
-      "Цей вид під загрозою зникнення.",
-      "Викорінити бур’яни в саду важко.",
-      "Міська рада проводить кампанію з винищення щурів."
-    ],
-    "vi": [
-      "Trên hòn đảo này, các loài động vật đã tuyệt chủng.",
-      "Loài đó đang bị đe dọa tuyệt chủng.",
-      "Khó mà diệt hết cỏ dại trong vườn.",
-      "Ủy ban thành phố đang tiến hành một chiến dịch diệt chuột."
-    ],
-    "yue": [
-      "喺呢個島上，動物絕咗種。",
-      "嗰個物種瀕臨絕種。",
-      "清除花園入面嘅雜草好難。",
-      "市政府正進行一項滅鼠行動。"
-    ],
-    "zh-Hans": [
-      "在这个岛上，动物灭绝了。",
-      "那个物种濒临灭绝。",
-      "清除花园里的杂草很难。",
-      "市政府正在开展灭鼠行动。"
-    ],
     "pos_analysis": [
       {
         "sentence": "このしまでは、どうぶつがぜつめつした。",
@@ -1495,23 +1912,31 @@
         "difficulty_aggregated": null
       },
       {
-        "sentence": "にわのざっそうをぜつめつするのはたいへんだ。",
+        "sentence": "庭の雑草を絶滅させるのは大変だ。",
         "tokens": [
           {
-            "surface": "にわ",
-            "lemma": "にわ",
+            "surface": "庭",
+            "lemma": "庭",
             "pos": "名詞/普通名詞/一般/*/*/*",
             "upos": "NOUN",
             "xpos": "名詞",
             "feats": {},
             "start": 0,
-            "end": 2,
+            "end": 1,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "にわ",
-            "ruby_text": "にわ",
-            "ruby_spans": [],
-            "ruby_confidence": "high",
-            "furigana": "にわ"
+            "ruby_text": "庭[にわ]",
+            "ruby_spans": [
+              {
+                "base": "庭",
+                "reading": "にわ",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "にわ",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "の",
@@ -1520,8 +1945,8 @@
             "upos": "PART",
             "xpos": "助詞",
             "feats": {},
-            "start": 2,
-            "end": 3,
+            "start": 1,
+            "end": 2,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "の",
             "ruby_text": "の",
@@ -1530,36 +1955,28 @@
             "furigana": "の"
           },
           {
-            "surface": "ざっ",
-            "lemma": "ざっ",
-            "pos": "副詞/*/*/*/*/*",
-            "upos": "ADV",
-            "xpos": "副詞",
+            "surface": "雑草",
+            "lemma": "雑草",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
             "feats": {},
-            "start": 3,
-            "end": 5,
+            "start": 2,
+            "end": 4,
             "analyzer": "sudachipy_sudachidict_core_c",
-            "reading_kana": "ざっ",
-            "ruby_text": "ざっ",
-            "ruby_spans": [],
-            "ruby_confidence": "high",
-            "furigana": "ざっ"
-          },
-          {
-            "surface": "そう",
-            "lemma": "そう",
-            "pos": "副詞/*/*/*/*/*",
-            "upos": "ADV",
-            "xpos": "副詞",
-            "feats": {},
-            "start": 5,
-            "end": 7,
-            "analyzer": "sudachipy_sudachidict_core_c",
-            "reading_kana": "そう",
-            "ruby_text": "そう",
-            "ruby_spans": [],
-            "ruby_confidence": "high",
-            "furigana": "そう"
+            "reading_kana": "ざっそう",
+            "ruby_text": "雑草[ざっそう]",
+            "ruby_spans": [
+              {
+                "base": "雑草",
+                "reading": "ざっそう",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "ざっそう",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "を",
@@ -1568,8 +1985,8 @@
             "upos": "PART",
             "xpos": "助詞",
             "feats": {},
-            "start": 7,
-            "end": 8,
+            "start": 4,
+            "end": 5,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "を",
             "ruby_text": "を",
@@ -1578,37 +1995,60 @@
             "furigana": "を"
           },
           {
-            "surface": "ぜつめつ",
-            "lemma": "ぜつめつ",
+            "surface": "絶滅",
+            "lemma": "絶滅",
             "pos": "名詞/普通名詞/サ変可能/*/*/*",
             "upos": "NOUN",
             "xpos": "名詞",
             "feats": {},
-            "start": 8,
-            "end": 12,
+            "start": 5,
+            "end": 7,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "ぜつめつ",
-            "ruby_text": "ぜつめつ",
-            "ruby_spans": [],
-            "ruby_confidence": "high",
+            "ruby_text": "絶滅[ぜつめつ]",
+            "ruby_spans": [
+              {
+                "base": "絶滅",
+                "reading": "ぜつめつ",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
             "furigana": "ぜつめつ",
-            "is_main_word": true
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
-            "surface": "する",
+            "surface": "さ",
             "lemma": "する",
-            "pos": "動詞/非自立可能/*/*/サ行変格/連体形-一般",
+            "pos": "動詞/非自立可能/*/*/サ行変格/未然形-サ",
             "upos": "VERB",
             "xpos": "動詞",
             "feats": {},
-            "start": 12,
-            "end": 14,
+            "start": 7,
+            "end": 8,
             "analyzer": "sudachipy_sudachidict_core_c",
-            "reading_kana": "する",
-            "ruby_text": "する",
+            "reading_kana": "さ",
+            "ruby_text": "さ",
             "ruby_spans": [],
             "ruby_confidence": "high",
-            "furigana": "する"
+            "furigana": "さ"
+          },
+          {
+            "surface": "せる",
+            "lemma": "せる",
+            "pos": "助動詞/*/*/*/下一段-サ行/連体形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 8,
+            "end": 10,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "せる",
+            "ruby_text": "せる",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "せる"
           },
           {
             "surface": "の",
@@ -1617,8 +2057,8 @@
             "upos": "PART",
             "xpos": "助詞",
             "feats": {},
-            "start": 14,
-            "end": 15,
+            "start": 10,
+            "end": 11,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "の",
             "ruby_text": "の",
@@ -1633,8 +2073,8 @@
             "upos": "PART",
             "xpos": "助詞",
             "feats": {},
-            "start": 15,
-            "end": 16,
+            "start": 11,
+            "end": 12,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "は",
             "ruby_text": "は",
@@ -1643,20 +2083,28 @@
             "furigana": "は"
           },
           {
-            "surface": "たいへん",
-            "lemma": "たいへん",
+            "surface": "大変",
+            "lemma": "大変",
             "pos": "形状詞/一般/*/*/*/*",
             "upos": "ADJ",
             "xpos": "形状詞",
             "feats": {},
-            "start": 16,
-            "end": 20,
+            "start": 12,
+            "end": 14,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "たいへん",
-            "ruby_text": "たいへん",
-            "ruby_spans": [],
-            "ruby_confidence": "high",
-            "furigana": "たいへん"
+            "ruby_text": "大変[たいへん]",
+            "ruby_spans": [
+              {
+                "base": "大変",
+                "reading": "たいへん",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "たいへん",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "だ",
@@ -1665,8 +2113,8 @@
             "upos": "AUX",
             "xpos": "助動詞",
             "feats": {},
-            "start": 20,
-            "end": 21,
+            "start": 14,
+            "end": 15,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "だ",
             "ruby_text": "だ",
@@ -1681,8 +2129,8 @@
             "upos": "PUNCT",
             "xpos": "補助記号",
             "feats": {},
-            "start": 21,
-            "end": 22,
+            "start": 15,
+            "end": 16,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "。",
             "ruby_text": "。",
@@ -1892,6 +2340,196 @@
         ],
         "difficulty_aggregated": null
       }
+    ],
+    "word_en": "extinction; extermination; eradication; stamping out; wiping out",
+    "word_es": "extinción",
+    "word_fr": "extinction",
+    "word_de": "Ausrottung",
+    "word_it": "estinzione",
+    "word_ko": "멸종",
+    "word_zh-Hans": "灭绝",
+    "word_yue": "滅絕",
+    "word_ru": "вымирание",
+    "word_pt": "extinção",
+    "word_he": "הכחדה",
+    "word_tr": "yok oluş",
+    "word_vi": "tuyệt chủng",
+    "word_ar": "انقراض",
+    "word_nl": "uitsterving",
+    "word_uk": "вимирання",
+    "word_hu": "kihalás",
+    "word_hi": "विलुप्ति",
+    "word_pl": "wyginięcie",
+    "word_el": "εξαφάνιση",
+    "word_nb": "utryddelse",
+    "word_id": "kepunahan",
+    "word_sv": "utrotning",
+    "word_ro": "extincție",
+    "word_cs": "vyhynutí",
+    "word_da": "udryddelse",
+    "word_fi": "sukupuutto",
+    "word_ja": "ぜつめつ",
+    "ar": [
+      "انقرضت الحيوانات في هذه الجزيرة.",
+      "هذا النوع مهدد بالانقراض.",
+      "من الصعب القضاء على الأعشاب الضارة في الحديقة.",
+      "تقوم البلدية بحملة للقضاء على الفئران."
+    ],
+    "cs": [
+      "Na tomto ostrově zvířata vyhynula.",
+      "Tento druh je v ohrožení vyhynutí.",
+      "Je těžké vyhubit na zahradě plevel.",
+      "Radnice provádí opatření na vyhubení krys."
+    ],
+    "da": [
+      "På denne ø er dyrene uddøde.",
+      "Den art er truet af udryddelse.",
+      "Det er svært at udrydde ukrudtet i haven.",
+      "Kommunekontoret er i gang med en indsats for at udrydde rotter."
+    ],
+    "de": [
+      "Auf dieser Insel sind die Tiere ausgestorben.",
+      "Diese Art ist vom Aussterben bedroht.",
+      "Es ist schwer, das Unkraut im Garten zu beseitigen.",
+      "Das Rathaus führt eine Kampagne zur Rattenbekämpfung durch."
+    ],
+    "el": [
+      "Σε αυτό το νησί, τα ζώα εξαφανίστηκαν.",
+      "Αυτό το είδος κινδυνεύει με εξαφάνιση.",
+      "Είναι δύσκολο να εξαλείψεις τα αγριόχορτα στον κήπο.",
+      "Το δημαρχείο κάνει μια προσπάθεια να εξοντώσει τους αρουραίους."
+    ],
+    "en": [
+      "On this island, the animals went extinct.",
+      "That species is in danger of extinction.",
+      "Eradicating the weeds in the garden is hard.",
+      "The city office is carrying out a rat eradication effort."
+    ],
+    "es": [
+      "En esta isla, los animales se extinguieron.",
+      "Esa especie está en peligro de extinción.",
+      "Es difícil erradicar las malas hierbas del jardín.",
+      "El ayuntamiento está llevando a cabo una campaña para eliminar las ratas."
+    ],
+    "fi": [
+      "Tällä saarella eläimet kuolivat sukupuuttoon.",
+      "Tuo laji on vaarassa kuolla sukupuuttoon.",
+      "Rikkaruohojen hävittäminen puutarhasta on vaikeaa.",
+      "Kunnanvirasto tekee työtä rottien hävittämiseksi."
+    ],
+    "fr": [
+      "Sur cette île, les animaux ont disparu.",
+      "Cette espèce est en danger d'extinction.",
+      "Il est difficile d'éradiquer les mauvaises herbes du jardin.",
+      "La mairie mène une campagne pour éliminer les rats."
+    ],
+    "he": [
+      "באי הזה, החיות נכחדו.",
+      "המין הזה בסכנת הכחדה.",
+      "קשה להשמיד את העשבים השוטים בגינה.",
+      "העירייה מנהלת מבצע הדברה נגד עכברושים."
+    ],
+    "hi": [
+      "इस द्वीप पर जानवर विलुप्त हो गए।",
+      "यह प्रजाति विलुप्त होने के खतरे में है।",
+      "बगीचे में खरपतवार को खत्म करना मुश्किल है।",
+      "नगर कार्यालय चूहों को खत्म करने का अभियान चला रहा है।"
+    ],
+    "hu": [
+      "Ezen a szigeten az állatok kipusztultak.",
+      "Ez a faj a kihalás veszélyében van.",
+      "Nehéz kiirtani a gyomokat a kertből.",
+      "A városháza patkányirtási akciót folytat."
+    ],
+    "id": [
+      "Di pulau ini, hewan-hewan punah.",
+      "Spesies itu terancam punah.",
+      "Sulit memberantas gulma di kebun.",
+      "Kantor kota sedang melakukan upaya untuk memberantas tikus."
+    ],
+    "it": [
+      "Su quest'isola, gli animali si sono estinti.",
+      "Quella specie è in pericolo di estinzione.",
+      "È difficile estirpare le erbacce nel giardino.",
+      "Il municipio sta portando avanti una campagna per eliminare i topi."
+    ],
+    "ko": [
+      "이 섬에서는 동물들이 멸종했다.",
+      "그 종은 멸종 위기에 있다.",
+      "정원의 잡초를 없애는 것은 어렵다.",
+      "구청은 쥐를 없애는 작업을 진행하고 있다."
+    ],
+    "nb": [
+      "På denne øya døde dyrene ut.",
+      "Den arten er truet av utryddelse.",
+      "Det er vanskelig å utrydde ugresset i hagen.",
+      "Kommunehuset jobber med å utrydde rotter."
+    ],
+    "nl": [
+      "Op dit eiland zijn de dieren uitgestorven.",
+      "Die soort is met uitsterven bedreigd.",
+      "Het is moeilijk om het onkruid in de tuin uit te roeien.",
+      "Het stadhuis voert een actie uit om ratten uit te roeien."
+    ],
+    "pl": [
+      "Na tej wyspie zwierzęta wyginęły.",
+      "Ten gatunek jest zagrożony wyginięciem.",
+      "Trudno jest wytępić chwasty w ogrodzie.",
+      "Urząd miasta prowadzi akcję zwalczania szczurów."
+    ],
+    "pt": [
+      "Nesta ilha, os animais foram extintos.",
+      "Essa espécie está em perigo de extinção.",
+      "É difícil erradicar as ervas daninhas do jardim.",
+      "A prefeitura está fazendo uma campanha para eliminar os ratos."
+    ],
+    "ro": [
+      "Pe această insulă, animalele au dispărut.",
+      "Această specie este în pericol de dispariție.",
+      "Este greu să stârpești buruienile din grădină.",
+      "Primăria desfășoară o campanie de combatere a șobolanilor."
+    ],
+    "ru": [
+      "На этом острове животные вымерли.",
+      "Этот вид находится под угрозой исчезновения.",
+      "Трудно вывести сорняки в саду.",
+      "Городская администрация проводит кампанию по уничтожению крыс."
+    ],
+    "sv": [
+      "På den här ön dog djuren ut.",
+      "Den arten är utrotningshotad.",
+      "Det är svårt att utrota ogräset i trädgården.",
+      "Kommunhuset arbetar med att utrota råttor."
+    ],
+    "tr": [
+      "Bu adada hayvanlar yok oldu.",
+      "Bu türün soyu tükenme tehlikesi altında.",
+      "Bahçedeki yabani otları yok etmek zor.",
+      "Belediye, fareleri yok etmek için çalışma yürütüyor."
+    ],
+    "uk": [
+      "На цьому острові тварини вимерли.",
+      "Цей вид під загрозою зникнення.",
+      "Викорінити бур’яни в саду важко.",
+      "Міська рада проводить кампанію з винищення щурів."
+    ],
+    "vi": [
+      "Trên hòn đảo này, các loài động vật đã tuyệt chủng.",
+      "Loài đó đang bị đe dọa tuyệt chủng.",
+      "Khó mà diệt hết cỏ dại trong vườn.",
+      "Ủy ban thành phố đang tiến hành một chiến dịch diệt chuột."
+    ],
+    "yue": [
+      "喺呢個島上，動物絕咗種。",
+      "嗰個物種瀕臨絕種。",
+      "清除花園入面嘅雜草好難。",
+      "市政府正進行一項滅鼠行動。"
+    ],
+    "zh-Hans": [
+      "在这个岛上，动物灭绝了。",
+      "那个物种濒临灭绝。",
+      "清除花园里的杂草很难。",
+      "市政府正在开展灭鼠行动。"
     ]
   }
 }

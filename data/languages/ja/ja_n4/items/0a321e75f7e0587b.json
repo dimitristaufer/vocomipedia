@@ -16,8 +16,8 @@
     "en": "muscle",
     "es": "Músculo",
     "fr": "Muscle",
-    "de": "Muskelkraft",
-    "it": "Muscoli",
+    "de": "Muskel",
+    "it": "muscolo",
     "ko": "근육",
     "zh-Hans": "肌肉",
     "yue": "肌肉",
@@ -26,11 +26,11 @@
     "he": "שריר",
     "tr": "Kas",
     "vi": "Cơ bắp",
-    "ar": "العضلات",
-    "nl": "Spierkracht",
-    "uk": "м'язи",
+    "ar": "عضلة; عضلات",
+    "nl": "spier",
+    "uk": "м'яз; м'язи",
     "hu": "Izom",
-    "hi": "मांसपेशियां",
+    "hi": "मांसपेशी",
     "pl": "mięśnie",
     "el": "μυς",
     "nb": "Muskler",
@@ -58,12 +58,12 @@
         "pt": "Meus músculos cresceram com o novo treino!",
         "he": "השרירים שלי התרחבו עם האימונים החדשים!",
         "tr": "Yeni antrenmanla kaslarım büyüdü!",
-        "vi": "Cơ bắp của tôi đã lớn hơn với bài tập mới!",
-        "ar": "عضلاتي أصبحت أكبر עם التدريب الجديد!",
+        "vi": "Cơ bắp của tôi đã phát triển nhờ bài tập mới!",
+        "ar": "أصبحت عضلاتي أكبر بفضل التدريب الجديد!",
         "nl": "Mijn spieren zijn groter geworden door de nieuwe training!",
         "uk": "Мої м'язи стали більшими завдяки новим тренуванням!",
         "hu": "Az izmaim nagyobbak lettek az új edzéssel!",
-        "hi": "नए प्रशिक्षण के साथ मेरी मांसपेशियां बड़ी हो गई हैं!",
+        "hi": "नए वर्कआउट से मेरी मांसपेशियां बड़ी हो गई हैं!",
         "pl": "Moje mięśnie powiększyły się dzięki nowemu treningowi!",
         "el": "Οι μύες μου έχουν μεγαλώσει με τη νέα προπόνηση!",
         "nb": "Musklene mine har blitt større med den nye treningen!",
@@ -180,10 +180,10 @@
     },
     {
       "target": "昨日の運動で筋肉が痛い…",
-      "reading": "きのうのうんどうできんにくが痛い…",
+      "reading": "きのうのうんどうできんにくがいたい．",
       "translations": {
         "en": "My muscles hurt after yesterday's workout…",
-        "es": "Me duelieron los músculos después del entrenamiento de ayer...",
+        "es": "Me duelen los músculos después del entrenamiento de ayer...",
         "fr": "Mes muscles me faisaient mal après l’entraînement d’hier...",
         "de": "Meine Muskeln tun nach dem gestrigen Training weh...",
         "it": "I muscoli mi facevano male dopo l'allenamento di ieri...",
@@ -191,7 +191,7 @@
         "zh-Hans": "昨天锻炼后肌肉疼......",
         "yue": "我昨天做咗運動之後肌肉痛...",
         "ru": "У меня болят мышцы после вчерашней тренировки...",
-        "pt": "Meus músculos doeram depois do treino de ontem...",
+        "pt": "Meus músculos estão doloridos depois do treino de ontem...",
         "he": "השרירים שלי כואבים אחרי האימון אתמול...",
         "tr": "Dünkü antrenmandan sonra kaslarım ağrıyor...",
         "vi": "Cơ bắp của tôi bị đau sau buổi tập ngày hôm qua...",
@@ -213,12 +213,14 @@
       "tokens": [
         {
           "surface": "昨日",
-          "surface_en": "yesterday",
-          "furigana": "きのう",
-          "pos": "noun",
           "lemma": "昨日",
-          "explanation": "temporal noun indicating when the exercise happened",
-          "difficulty": 15,
+          "pos": "名詞/普通名詞/副詞可能/*/*/*",
+          "upos": "NOUN",
+          "xpos": "名詞",
+          "feats": {},
+          "start": 0,
+          "end": 2,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "きのう",
           "ruby_text": "昨日[きのう]",
           "ruby_spans": [
@@ -229,31 +231,36 @@
               "length": 2
             }
           ],
-          "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "ruby_confidence": "reviewed",
+          "furigana": "きのう",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "の",
-          "surface_en": "'s/of",
-          "furigana": "の",
-          "pos": "particle",
           "lemma": "の",
-          "explanation": "connects '昨日' to '運動' to form 'yesterday's exercise'",
-          "difficulty": 1,
+          "pos": "助詞/格助詞/*/*/*/*",
+          "upos": "PART",
+          "xpos": "助詞",
+          "feats": {},
+          "start": 2,
+          "end": 3,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "の",
           "ruby_text": "の",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "の"
         },
         {
           "surface": "運動",
-          "surface_en": "exercise",
-          "furigana": "うんどう",
-          "pos": "noun",
           "lemma": "運動",
-          "explanation": "the activity performed yesterday",
-          "difficulty": 12,
+          "pos": "名詞/普通名詞/サ変可能/*/*/*",
+          "upos": "NOUN",
+          "xpos": "名詞",
+          "feats": {},
+          "start": 3,
+          "end": 5,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "うんどう",
           "ruby_text": "運動[うんどう]",
           "ruby_spans": [
@@ -264,32 +271,36 @@
               "length": 2
             }
           ],
-          "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "ruby_confidence": "reviewed",
+          "furigana": "うんどう",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "で",
-          "surface_en": "because of",
-          "furigana": "で",
-          "pos": "particle",
           "lemma": "で",
-          "explanation": "indicates cause ('because of yesterday’s exercise')",
-          "difficulty": 1,
+          "pos": "助詞/格助詞/*/*/*/*",
+          "upos": "PART",
+          "xpos": "助詞",
+          "feats": {},
+          "start": 5,
+          "end": 6,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "で",
           "ruby_text": "で",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "で"
         },
         {
           "surface": "筋肉",
-          "surface_en": "muscles",
-          "furigana": "きんにく",
-          "pos": "noun",
           "lemma": "筋肉",
-          "explanation": "the part of the body that is feeling pain",
-          "difficulty": 33,
-          "is_main_word": true,
+          "pos": "名詞/普通名詞/一般/*/*/*",
+          "upos": "NOUN",
+          "xpos": "名詞",
+          "feats": {},
+          "start": 6,
+          "end": 8,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "きんにく",
           "ruby_text": "筋肉[きんにく]",
           "ruby_spans": [
@@ -300,43 +311,66 @@
               "length": 2
             }
           ],
-          "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "ruby_confidence": "reviewed",
+          "furigana": "きんにく",
+          "ruby_source": "mediawiki_sentence_ruby",
+          "is_main_word": true
         },
         {
           "surface": "が",
-          "surface_en": "(subject marker)",
-          "furigana": "が",
-          "pos": "particle",
           "lemma": "が",
-          "explanation": "marks '筋肉' as the subject of '痛い'",
-          "difficulty": 1,
+          "pos": "助詞/格助詞/*/*/*/*",
+          "upos": "PART",
+          "xpos": "助詞",
+          "feats": {},
+          "start": 8,
+          "end": 9,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "が",
           "ruby_text": "が",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "が"
         },
         {
           "surface": "痛い",
-          "surface_en": "hurts/painful",
-          "furigana": "痛い",
-          "pos": "i-adjective",
           "lemma": "痛い",
-          "explanation": "describes the state of the muscles as painful",
-          "difficulty": 27,
-          "reading_kana": "痛い",
-          "ruby_text": "痛[痛]い",
+          "pos": "形容詞/一般/*/*/形容詞/終止形-一般",
+          "upos": "ADJ",
+          "xpos": "形容詞",
+          "feats": {},
+          "start": 9,
+          "end": 11,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "いたい",
+          "ruby_text": "痛[いた]い",
           "ruby_spans": [
             {
               "base": "痛",
-              "reading": "痛",
+              "reading": "いた",
               "start": 0,
               "length": 1
             }
           ],
+          "ruby_confidence": "reviewed",
+          "furigana": "いたい",
+          "ruby_source": "mediawiki_sentence_ruby"
+        },
+        {
+          "surface": "…",
+          "lemma": ".",
+          "pos": "補助記号/句点/*/*/*/*",
+          "upos": "PUNCT",
+          "xpos": "補助記号",
+          "feats": {},
+          "start": 11,
+          "end": 12,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "．",
+          "ruby_text": "…",
+          "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "．"
         }
       ],
       "difficulty": 12.86,
@@ -351,13 +385,13 @@
         "fr": "Il est aussi important de laisser vos muscles se reposer !",
         "de": "Es ist auch wichtig, die Muskeln ruhen zu lassen!",
         "it": "È anche importante lasciare riposare i muscoli!",
-        "ko": "근육을 충분히 쉬게 하는 것도 중요합니다!",
+        "ko": "근육을 쉬게 하는 것도 중요해!",
         "zh-Hans": "让肌肉休息也很重要！",
         "yue": "畀肌肉休息都好重要！",
         "ru": "Также важно дать мышцам отдохнуть!",
         "pt": "Também é importante deixar seus músculos descansarem!",
         "he": "חשוב גם לתת לשרירים שלך לנוח!",
-        "tr": "Kaslarınızı dinlendirmek de önemlidir!",
+        "tr": "Kaslarını dinlendirmek de önemli!",
         "vi": "Điều quan trọng nữa là để cơ bắp của bạn được nghỉ ngơi!",
         "ar": "من المهم أيضا أن تترك عضلاتك ترتاح!",
         "nl": "Het is ook belangrijk om je spieren te laten rusten!",
@@ -365,9 +399,9 @@
         "hu": "Az is fontos, hogy hagyd pihenni az izmaidat!",
         "hi": "अपनी मांसपेशियों को आराम देना भी महत्वपूर्ण है!",
         "pl": "Ważne jest też, aby pozwolić mięśniom odpocząć!",
-        "el": "Είναι επίσης σημαντικό να αφήσετε τους μύες σας να ξεκουραστούν!",
+        "el": "Είναι επίσης σημαντικό να αφήνεις τους μύες σου να ξεκουράζονται!",
         "nb": "Det er også viktig å la musklene hvile!",
-        "id": "Penting juga untuk membiarkan otot Anda beristirahat!",
+        "id": "Penting juga untuk membiarkan otot beristirahat!",
         "sv": "Det är också viktigt att låta dina muskler vila!",
         "ro": "De asemenea, este important să-ți lași mușchii să se odihnească!",
         "cs": "Je také důležité nechat svaly odpočívat!",
@@ -520,29 +554,29 @@
         "en": "With daily care, my muscles feel revitalized!",
         "es": "Con el cuidado diario, ¡mis músculos se sienten revitalizados!",
         "fr": "Avec des soins quotidiens, mes muscles se sentent revitalisés !",
-        "de": "Mit täglicher Pflege fühlen sich meine Muskeln revitalisiert an!",
-        "it": "Con la cura quotidiana, i miei muscoli si sentono rivitalizzati!",
+        "de": "Durch tägliche Pflege werden meine Muskeln wieder fit!",
+        "it": "Con la cura quotidiana, i miei muscoli si rigenerano!",
         "ko": "매일 관리하니 근육이 활력을 되찾는 느낌이에요!",
         "zh-Hans": "每天护理后，我的肌肉焕然一新！",
         "yue": "每日護理，我嘅肌肉都煥然一新！",
-        "ru": "С ежедневным уходом мои мышцы ощущаются обновлёнными!",
-        "pt": "Com os cuidados diários, meus músculos se sentem revitalizados!",
-        "he": "עם טיפול יומיומי, השרירים שלי מרגישים מחודשים!",
-        "tr": "Günlük bakımla kaslarım canlanmış hissediyor!",
+        "ru": "При ежедневном уходе мышцы приходят в тонус!",
+        "pt": "Com os cuidados diários, meus músculos ficam revigorados!",
+        "he": "הטיפול היומיומי מחזיר לשרירים שלי את החיוניות!",
+        "tr": "Günlük bakımla kaslarım canlanıyor!",
         "vi": "Với sự chăm sóc hàng ngày, cơ bắp của tôi cảm thấy được hồi sinh!",
         "ar": "مع العناية اليومية، تشعر عضلاتي بالانتعاش!",
-        "nl": "Met dagelijkse zorg voelen mijn spieren zich weer vernieuwd!",
-        "uk": "З щоденним доглядом мої м'язи відчуваються оновленими!",
+        "nl": "Door dagelijkse verzorging krijgen mijn spieren weer energie!",
+        "uk": "Щоденний догляд додає енергії моїм м’язам!",
         "hu": "A napi gondozással az izmaim felfrissülnek!",
-        "hi": "दैनिक देखभाल के साथ, मेरी मांसपेशियां पुनर्जीवित महसूस करती हैं!",
-        "pl": "Dzięki codziennej pielęgnacji moje mięśnie czują się odnowione!",
-        "el": "Με την καθημερινή φροντίδα, οι μύες μου αισθάνονται αναζωογονημένοι!",
-        "nb": "Med daglig pleie føles musklene mine revitaliserte!",
-        "id": "Dengan perawatan sehari-hari, otot-otot saya terasa direvitalisasi!",
-        "sv": "Med daglig vård känns mina muskler återupplivade!",
-        "ro": "Cu îngrijire zilnică, mușchii mei se simt revitalizați!",
-        "cs": "Díky každodenní péči se mé svaly cítí obnovené!",
-        "da": "Med daglig pleje føles mine muskler revitaliserede!",
+        "hi": "रोज़ाना देखभाल से मेरी मांसपेशियों में नई ऊर्जा आती है!",
+        "pl": "Dzięki codziennej pielęgnacji moje mięśnie odzyskują witalność!",
+        "el": "Η καθημερινή φροντίδα αναζωογονεί τους μύες μου!",
+        "nb": "Med daglig pleie får musklene mine ny energi!",
+        "id": "Dengan perawatan sehari-hari, otot saya menjadi lebih bugar!",
+        "sv": "Med daglig vård får mina muskler ny energi!",
+        "ro": "Îngrijirea zilnică îmi revigorează mușchii!",
+        "cs": "Každodenní péče dodává mým svalům novou energii!",
+        "da": "Daglig pleje giver mine muskler ny energi!",
         "fi": "Päivittäisellä hoidolla lihakseni tuntuvat virkistyneiltä!"
       },
       "tokens": [
@@ -710,8 +744,454 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-11T15:50:19Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:Ja n4/0a321e75f7e0587b",
+      "revision_id": 82663,
+      "parent_revision_id": 30050,
+      "revision_timestamp_utc": "2026-10-11T15:50:19Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Correct the reading and mistranslations, fix muscle glosses, and naturalize literal translations of sore and revitalized muscles.",
+      "pulled_utc": "2026-10-18T17:47:09Z",
+      "applied_utc": "2026-10-18T17:47:41Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-8030bece8597920a",
+        "status": "applied",
+        "type": "translation_update",
+        "item_id": "ja_n4:0a321e75f7e0587b",
+        "pack_code": "ja_n4",
+        "entry_id": "筋肉",
+        "language": "ja",
+        "sentence_index": 2,
+        "old_sentence": "昨日の運動で筋肉が痛い…",
+        "old_translations": {
+          "en": "My muscles hurt after yesterday's workout…",
+          "es": "Me duelieron los músculos después del entrenamiento de ayer...",
+          "fr": "Mes muscles me faisaient mal après l’entraînement d’hier...",
+          "de": "Meine Muskeln tun nach dem gestrigen Training weh...",
+          "it": "I muscoli mi facevano male dopo l'allenamento di ieri...",
+          "ko": "어제 운동 후에 근육이 아파서...",
+          "zh-Hans": "昨天锻炼后肌肉疼......",
+          "yue": "我昨天做咗運動之後肌肉痛...",
+          "ru": "У меня болят мышцы после вчерашней тренировки...",
+          "pt": "Meus músculos doeram depois do treino de ontem...",
+          "he": "השרירים שלי כואבים אחרי האימון אתמול...",
+          "tr": "Dünkü antrenmandan sonra kaslarım ağrıyor...",
+          "vi": "Cơ bắp của tôi bị đau sau buổi tập ngày hôm qua...",
+          "ar": "عضلاتي تؤلمني بعد تمرين الأمس...",
+          "nl": "Mijn spieren doen pijn na de training van gisteren...",
+          "uk": "М'язи болять після вчорашнього тренування...",
+          "hu": "Fájnak az izmaim a tegnapi edzés után...",
+          "hi": "कल के वर्कआउट के बाद मेरी मांसपेशियों में दर्द हो रहा है...",
+          "pl": "Bolą mnie mięśnie po wczorajszym treningu...",
+          "el": "Πονάνε οι μύες μου μετά τη χθεσινή προπόνηση...",
+          "nb": "Musklene mine verker etter gårsdagens trening...",
+          "id": "Otot-otot saya sakit setelah latihan kemarin...",
+          "sv": "Mina muskler gör ont efter gårdagens träning...",
+          "ro": "Mușchii mă dor după antrenamentul de ieri...",
+          "cs": "Bolí mě svaly po včerejším tréninku...",
+          "da": "Mine muskler gør ondt efter gårsdagens træning...",
+          "fi": "Lihakseni ovat kipeät eilisen treenin jälkeen..."
+        },
+        "proposed_sentence": "昨日の運動で筋肉が痛い…",
+        "proposed_translations": {
+          "en": "My muscles hurt after yesterday's workout…",
+          "es": "Me duelen los músculos después del entrenamiento de ayer...",
+          "fr": "Mes muscles me faisaient mal après l’entraînement d’hier...",
+          "de": "Meine Muskeln tun nach dem gestrigen Training weh...",
+          "it": "I muscoli mi facevano male dopo l'allenamento di ieri...",
+          "ko": "어제 운동 후에 근육이 아파서...",
+          "zh-Hans": "昨天锻炼后肌肉疼......",
+          "yue": "我昨天做咗運動之後肌肉痛...",
+          "ru": "У меня болят мышцы после вчерашней тренировки...",
+          "pt": "Meus músculos estão doloridos depois do treino de ontem...",
+          "he": "השרירים שלי כואבים אחרי האימון אתמול...",
+          "tr": "Dünkü antrenmandan sonra kaslarım ağrıyor...",
+          "vi": "Cơ bắp của tôi bị đau sau buổi tập ngày hôm qua...",
+          "ar": "عضلاتي تؤلمني بعد تمرين الأمس...",
+          "nl": "Mijn spieren doen pijn na de training van gisteren...",
+          "uk": "М'язи болять після вчорашнього тренування...",
+          "hu": "Fájnak az izmaim a tegnapi edzés után...",
+          "hi": "कल के वर्कआउट के बाद मेरी मांसपेशियों में दर्द हो रहा है...",
+          "pl": "Bolą mnie mięśnie po wczorajszym treningu...",
+          "el": "Πονάνε οι μύες μου μετά τη χθεσινή προπόνηση...",
+          "nb": "Musklene mine verker etter gårsdagens trening...",
+          "id": "Otot-otot saya sakit setelah latihan kemarin...",
+          "sv": "Mina muskler gör ont efter gårdagens träning...",
+          "ro": "Mușchii mă dor după antrenamentul de ieri...",
+          "cs": "Bolí mě svaly po včerejším tréninku...",
+          "da": "Mine muskler gør ondt efter gårsdagens træning...",
+          "fi": "Lihakseni ovat kipeät eilisen treenin jälkeen..."
+        },
+        "old_ruby_source": "昨日[きのう]の運動[うんどう]で筋肉[きんにく]が痛[痛]い…",
+        "proposed_ruby_source": "昨日[きのう]の運動[うんどう]で筋肉[きんにく]が痛[いた]い…",
+        "old_japanese": "昨日の運動で筋肉が痛い…",
+        "old_english": "My muscles hurt after yesterday's workout…",
+        "proposed_japanese": "昨日の運動で筋肉が痛い…",
+        "proposed_english": "My muscles hurt after yesterday's workout…",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "ja",
+          "sentence": "昨日の運動で筋肉が痛い…",
+          "tokens": [
+            {
+              "surface": "昨日",
+              "lemma": "昨日",
+              "pos": "名詞/普通名詞/副詞可能/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 0,
+              "end": 2,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "きのう",
+              "ruby_text": "昨日[きのう]",
+              "ruby_spans": [
+                {
+                  "base": "昨日",
+                  "reading": "きのう",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "きのう",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "の",
+              "lemma": "の",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 2,
+              "end": 3,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "の",
+              "ruby_text": "の",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "の"
+            },
+            {
+              "surface": "運動",
+              "lemma": "運動",
+              "pos": "名詞/普通名詞/サ変可能/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 3,
+              "end": 5,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "うんどう",
+              "ruby_text": "運動[うんどう]",
+              "ruby_spans": [
+                {
+                  "base": "運動",
+                  "reading": "うんどう",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "うんどう",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "で",
+              "lemma": "で",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 5,
+              "end": 6,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "で",
+              "ruby_text": "で",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "で"
+            },
+            {
+              "surface": "筋肉",
+              "lemma": "筋肉",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 6,
+              "end": 8,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "きんにく",
+              "ruby_text": "筋肉[きんにく]",
+              "ruby_spans": [
+                {
+                  "base": "筋肉",
+                  "reading": "きんにく",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "きんにく",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "が",
+              "lemma": "が",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 8,
+              "end": 9,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "が",
+              "ruby_text": "が",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "が"
+            },
+            {
+              "surface": "痛い",
+              "lemma": "痛い",
+              "pos": "形容詞/一般/*/*/形容詞/終止形-一般",
+              "upos": "ADJ",
+              "xpos": "形容詞",
+              "feats": {},
+              "start": 9,
+              "end": 11,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "いたい",
+              "ruby_text": "痛[いた]い",
+              "ruby_spans": [
+                {
+                  "base": "痛",
+                  "reading": "いた",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "いたい",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "…",
+              "lemma": ".",
+              "pos": "補助記号/句点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 11,
+              "end": 12,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "．",
+              "ruby_text": "…",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "．"
+            }
+          ],
+          "reading": "きのうのうんどうできんにくがいたい．",
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "warnings": [
+            "mediawiki ruby hints applied"
+          ]
+        },
+        "generated_tokens": [
+          {
+            "surface": "昨日",
+            "lemma": "昨日",
+            "pos": "名詞/普通名詞/副詞可能/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "きのう",
+            "ruby_text": "昨日[きのう]",
+            "ruby_spans": [
+              {
+                "base": "昨日",
+                "reading": "きのう",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "きのう",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "の",
+            "lemma": "の",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 2,
+            "end": 3,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "の",
+            "ruby_text": "の",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "の"
+          },
+          {
+            "surface": "運動",
+            "lemma": "運動",
+            "pos": "名詞/普通名詞/サ変可能/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 3,
+            "end": 5,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "うんどう",
+            "ruby_text": "運動[うんどう]",
+            "ruby_spans": [
+              {
+                "base": "運動",
+                "reading": "うんどう",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "うんどう",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "で",
+            "lemma": "で",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 5,
+            "end": 6,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "で",
+            "ruby_text": "で",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "で"
+          },
+          {
+            "surface": "筋肉",
+            "lemma": "筋肉",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 6,
+            "end": 8,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "きんにく",
+            "ruby_text": "筋肉[きんにく]",
+            "ruby_spans": [
+              {
+                "base": "筋肉",
+                "reading": "きんにく",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "きんにく",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "が",
+            "lemma": "が",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 8,
+            "end": 9,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "が",
+            "ruby_text": "が",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "が"
+          },
+          {
+            "surface": "痛い",
+            "lemma": "痛い",
+            "pos": "形容詞/一般/*/*/形容詞/終止形-一般",
+            "upos": "ADJ",
+            "xpos": "形容詞",
+            "feats": {},
+            "start": 9,
+            "end": 11,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "いたい",
+            "ruby_text": "痛[いた]い",
+            "ruby_spans": [
+              {
+                "base": "痛",
+                "reading": "いた",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "いたい",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "…",
+            "lemma": ".",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 11,
+            "end": 12,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "．",
+            "ruby_text": "…",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "．"
+          }
+        ],
+        "generated_reading": "きのうのうんどうできんにくがいたい．",
+        "analyzer": "sudachipy_sudachidict_core_c",
+        "requires": [
+          "human_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-18T17:47:09Z",
+        "updated_utc": "2026-10-18T17:48:27Z",
+        "applied_utc": "2026-10-18T17:48:27Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-18T17:48:27Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -728,33 +1208,6 @@
   "app_payload": {
     "word": "筋肉",
     "word_reading": "きんにく",
-    "word_en": "muscle",
-    "word_es": "Músculo",
-    "word_fr": "Muscle",
-    "word_de": "Muskelkraft",
-    "word_it": "Muscoli",
-    "word_ko": "근육",
-    "word_zh-Hans": "肌肉",
-    "word_yue": "肌肉",
-    "word_ru": "Мышцы",
-    "word_pt": "Músculo",
-    "word_he": "שריר",
-    "word_tr": "Kas",
-    "word_vi": "Cơ bắp",
-    "word_ar": "العضلات",
-    "word_nl": "Spierkracht",
-    "word_uk": "м'язи",
-    "word_hu": "Izom",
-    "word_hi": "मांसपेशियां",
-    "word_pl": "mięśnie",
-    "word_el": "μυς",
-    "word_nb": "Muskler",
-    "word_id": "otot",
-    "word_sv": "Muskler",
-    "word_ro": "Mușchi",
-    "word_cs": "Svaly",
-    "word_da": "Muskel",
-    "word_fi": "Lihas",
     "comic_difficulty": 7.78,
     "jp": [
       "新しいトレーニングで筋肉がついた！",
@@ -763,16 +1216,10 @@
       "毎日のケアで筋肉が元気になる！"
     ],
     "fu": [
-      "あたらしいトレーニングできんにくがついた！",
-      "きのうのうんどうできんにくがいたい…",
+      "あたらしいとれーにんぐできんにくがついた！",
+      "きのうのうんどうできんにくが痛い…",
       "きんにくをやすませることもたいせつだよ！",
-      "まいにちのケアできんにくがげんきになる！"
-    ],
-    "en": [
-      "My muscles have gotten bigger with the new training!",
-      "My muscles hurt after yesterday's workout…",
-      "It's also important to let your muscles rest!",
-      "With daily care, my muscles feel revitalized!"
+      "まいにちのけあできんにくがげんきになる！"
     ],
     "pos_analysis": [
       {
@@ -885,12 +1332,14 @@
         "tokens": [
           {
             "surface": "昨日",
-            "surface_en": "yesterday",
-            "furigana": "きのう",
-            "pos": "noun",
             "lemma": "昨日",
-            "explanation": "temporal noun indicating when the exercise happened",
-            "difficulty": 15,
+            "pos": "名詞/普通名詞/副詞可能/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "きのう",
             "ruby_text": "昨日[きのう]",
             "ruby_spans": [
@@ -901,31 +1350,36 @@
                 "length": 2
               }
             ],
-            "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "ruby_confidence": "reviewed",
+            "furigana": "きのう",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "の",
-            "surface_en": "'s/of",
-            "furigana": "の",
-            "pos": "particle",
             "lemma": "の",
-            "explanation": "connects '昨日' to '運動' to form 'yesterday's exercise'",
-            "difficulty": 1,
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 2,
+            "end": 3,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "の",
             "ruby_text": "の",
             "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "の"
           },
           {
             "surface": "運動",
-            "surface_en": "exercise",
-            "furigana": "うんどう",
-            "pos": "noun",
             "lemma": "運動",
-            "explanation": "the activity performed yesterday",
-            "difficulty": 12,
+            "pos": "名詞/普通名詞/サ変可能/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 3,
+            "end": 5,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "うんどう",
             "ruby_text": "運動[うんどう]",
             "ruby_spans": [
@@ -936,32 +1390,36 @@
                 "length": 2
               }
             ],
-            "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "ruby_confidence": "reviewed",
+            "furigana": "うんどう",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "で",
-            "surface_en": "because of",
-            "furigana": "で",
-            "pos": "particle",
             "lemma": "で",
-            "explanation": "indicates cause ('because of yesterday’s exercise')",
-            "difficulty": 1,
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 5,
+            "end": 6,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "で",
             "ruby_text": "で",
             "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "で"
           },
           {
             "surface": "筋肉",
-            "surface_en": "muscles",
-            "furigana": "きんにく",
-            "pos": "noun",
             "lemma": "筋肉",
-            "explanation": "the part of the body that is feeling pain",
-            "difficulty": 33,
-            "is_main_word": true,
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 6,
+            "end": 8,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "きんにく",
             "ruby_text": "筋肉[きんにく]",
             "ruby_spans": [
@@ -972,43 +1430,66 @@
                 "length": 2
               }
             ],
-            "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "ruby_confidence": "reviewed",
+            "furigana": "きんにく",
+            "ruby_source": "mediawiki_sentence_ruby",
+            "is_main_word": true
           },
           {
             "surface": "が",
-            "surface_en": "(subject marker)",
-            "furigana": "が",
-            "pos": "particle",
             "lemma": "が",
-            "explanation": "marks '筋肉' as the subject of '痛い'",
-            "difficulty": 1,
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 8,
+            "end": 9,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "が",
             "ruby_text": "が",
             "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "が"
           },
           {
             "surface": "痛い",
-            "surface_en": "hurts/painful",
-            "furigana": "痛い",
-            "pos": "i-adjective",
             "lemma": "痛い",
-            "explanation": "describes the state of the muscles as painful",
-            "difficulty": 27,
-            "reading_kana": "痛い",
-            "ruby_text": "痛[痛]い",
+            "pos": "形容詞/一般/*/*/形容詞/終止形-一般",
+            "upos": "ADJ",
+            "xpos": "形容詞",
+            "feats": {},
+            "start": 9,
+            "end": 11,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "いたい",
+            "ruby_text": "痛[いた]い",
             "ruby_spans": [
               {
                 "base": "痛",
-                "reading": "痛",
+                "reading": "いた",
                 "start": 0,
                 "length": 1
               }
             ],
+            "ruby_confidence": "reviewed",
+            "furigana": "いたい",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "…",
+            "lemma": ".",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 11,
+            "end": 12,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "．",
+            "ruby_text": "…",
+            "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "．"
           }
         ],
         "difficulty_aggregated": 12.86
@@ -1308,155 +1789,76 @@
         "difficulty_aggregated": 5.33
       }
     ],
-    "es": [
-      "¡Mis músculos se han hecho más grandes con el nuevo entrenamiento!",
-      "Me duelieron los músculos después del entrenamiento de ayer...",
-      "¡También es importante dejar descansar los músculos!",
-      "Con el cuidado diario, ¡mis músculos se sienten revitalizados!"
-    ],
-    "fr": [
-      "Mes muscles ont grandi avec le nouvel entraînement !",
-      "Mes muscles me faisaient mal après l’entraînement d’hier...",
-      "Il est aussi important de laisser vos muscles se reposer !",
-      "Avec des soins quotidiens, mes muscles se sentent revitalisés !"
-    ],
-    "de": [
-      "Meine Muskeln sind durch das neue Training größer geworden!",
-      "Meine Muskeln tun nach dem gestrigen Training weh...",
-      "Es ist auch wichtig, die Muskeln ruhen zu lassen!",
-      "Mit täglicher Pflege fühlen sich meine Muskeln revitalisiert an!"
-    ],
-    "it": [
-      "I miei muscoli sono cresciuti con il nuovo allenamento!",
-      "I muscoli mi facevano male dopo l'allenamento di ieri...",
-      "È anche importante lasciare riposare i muscoli!",
-      "Con la cura quotidiana, i miei muscoli si sentono rivitalizzati!"
-    ],
-    "ko": [
-      "새로운 훈련 덕분에 근육이 더 커졌어요!",
-      "어제 운동 후에 근육이 아파서...",
-      "근육을 충분히 쉬게 하는 것도 중요합니다!",
-      "매일 관리하니 근육이 활력을 되찾는 느낌이에요!"
-    ],
-    "zh-Hans": [
-      "我的肌肉在新训练后变大了！",
-      "昨天锻炼后肌肉疼......",
-      "让肌肉休息也很重要！",
-      "每天护理后，我的肌肉焕然一新！"
-    ],
-    "yue": [
-      "我嘅肌肉因為新嘅訓練而變得更大！",
-      "我昨天做咗運動之後肌肉痛...",
-      "畀肌肉休息都好重要！",
-      "每日護理，我嘅肌肉都煥然一新！"
-    ],
-    "ru": [
-      "Мои мышцы стали больше благодаря новым тренировкам!",
-      "У меня болят мышцы после вчерашней тренировки...",
-      "Также важно дать мышцам отдохнуть!",
-      "С ежедневным уходом мои мышцы ощущаются обновлёнными!"
-    ],
-    "pt": [
-      "Meus músculos cresceram com o novo treino!",
-      "Meus músculos doeram depois do treino de ontem...",
-      "Também é importante deixar seus músculos descansarem!",
-      "Com os cuidados diários, meus músculos se sentem revitalizados!"
-    ],
-    "he": [
-      "השרירים שלי התרחבו עם האימונים החדשים!",
-      "השרירים שלי כואבים אחרי האימון אתמול...",
-      "חשוב גם לתת לשרירים שלך לנוח!",
-      "עם טיפול יומיומי, השרירים שלי מרגישים מחודשים!"
-    ],
-    "tr": [
-      "Yeni antrenmanla kaslarım büyüdü!",
-      "Dünkü antrenmandan sonra kaslarım ağrıyor...",
-      "Kaslarınızı dinlendirmek de önemlidir!",
-      "Günlük bakımla kaslarım canlanmış hissediyor!"
-    ],
-    "vi": [
-      "Cơ bắp của tôi đã lớn hơn với bài tập mới!",
-      "Cơ bắp của tôi bị đau sau buổi tập ngày hôm qua...",
-      "Điều quan trọng nữa là để cơ bắp của bạn được nghỉ ngơi!",
-      "Với sự chăm sóc hàng ngày, cơ bắp của tôi cảm thấy được hồi sinh!"
-    ],
+    "word_POS": "Noun",
+    "entry_id": "筋肉",
+    "word_en": "muscle",
+    "word_es": "Músculo",
+    "word_fr": "Muscle",
+    "word_de": "Muskel",
+    "word_it": "muscolo",
+    "word_ko": "근육",
+    "word_zh-Hans": "肌肉",
+    "word_yue": "肌肉",
+    "word_ru": "Мышцы",
+    "word_pt": "Músculo",
+    "word_he": "שריר",
+    "word_tr": "Kas",
+    "word_vi": "Cơ bắp",
+    "word_ar": "عضلة; عضلات",
+    "word_nl": "spier",
+    "word_uk": "м'яз; м'язи",
+    "word_hu": "Izom",
+    "word_hi": "मांसपेशी",
+    "word_pl": "mięśnie",
+    "word_el": "μυς",
+    "word_nb": "Muskler",
+    "word_id": "otot",
+    "word_sv": "Muskler",
+    "word_ro": "Mușchi",
+    "word_cs": "Svaly",
+    "word_da": "Muskel",
+    "word_fi": "Lihas",
     "ar": [
-      "عضلاتي أصبحت أكبر עם التدريب الجديد!",
+      "أصبحت عضلاتي أكبر بفضل التدريب الجديد!",
       "عضلاتي تؤلمني بعد تمرين الأمس...",
       "من المهم أيضا أن تترك عضلاتك ترتاح!",
       "مع العناية اليومية، تشعر عضلاتي بالانتعاش!"
-    ],
-    "nl": [
-      "Mijn spieren zijn groter geworden door de nieuwe training!",
-      "Mijn spieren doen pijn na de training van gisteren...",
-      "Het is ook belangrijk om je spieren te laten rusten!",
-      "Met dagelijkse zorg voelen mijn spieren zich weer vernieuwd!"
-    ],
-    "uk": [
-      "Мої м'язи стали більшими завдяки новим тренуванням!",
-      "М'язи болять після вчорашнього тренування...",
-      "Також важливо дати м'язам відпочити!",
-      "З щоденним доглядом мої м'язи відчуваються оновленими!"
-    ],
-    "hu": [
-      "Az izmaim nagyobbak lettek az új edzéssel!",
-      "Fájnak az izmaim a tegnapi edzés után...",
-      "Az is fontos, hogy hagyd pihenni az izmaidat!",
-      "A napi gondozással az izmaim felfrissülnek!"
-    ],
-    "hi": [
-      "नए प्रशिक्षण के साथ मेरी मांसपेशियां बड़ी हो गई हैं!",
-      "कल के वर्कआउट के बाद मेरी मांसपेशियों में दर्द हो रहा है...",
-      "अपनी मांसपेशियों को आराम देना भी महत्वपूर्ण है!",
-      "दैनिक देखभाल के साथ, मेरी मांसपेशियां पुनर्जीवित महसूस करती हैं!"
-    ],
-    "pl": [
-      "Moje mięśnie powiększyły się dzięki nowemu treningowi!",
-      "Bolą mnie mięśnie po wczorajszym treningu...",
-      "Ważne jest też, aby pozwolić mięśniom odpocząć!",
-      "Dzięki codziennej pielęgnacji moje mięśnie czują się odnowione!"
-    ],
-    "el": [
-      "Οι μύες μου έχουν μεγαλώσει με τη νέα προπόνηση!",
-      "Πονάνε οι μύες μου μετά τη χθεσινή προπόνηση...",
-      "Είναι επίσης σημαντικό να αφήσετε τους μύες σας να ξεκουραστούν!",
-      "Με την καθημερινή φροντίδα, οι μύες μου αισθάνονται αναζωογονημένοι!"
-    ],
-    "nb": [
-      "Musklene mine har blitt større med den nye treningen!",
-      "Musklene mine verker etter gårsdagens trening...",
-      "Det er også viktig å la musklene hvile!",
-      "Med daglig pleie føles musklene mine revitaliserte!"
-    ],
-    "id": [
-      "Otot-otot saya menjadi lebih besar dengan pelatihan baru!",
-      "Otot-otot saya sakit setelah latihan kemarin...",
-      "Penting juga untuk membiarkan otot Anda beristirahat!",
-      "Dengan perawatan sehari-hari, otot-otot saya terasa direvitalisasi!"
-    ],
-    "sv": [
-      "Mina muskler har blivit större med den nya träningen!",
-      "Mina muskler gör ont efter gårdagens träning...",
-      "Det är också viktigt att låta dina muskler vila!",
-      "Med daglig vård känns mina muskler återupplivade!"
-    ],
-    "ro": [
-      "Mușchii mei s-au mărit odată cu noul antrenament!",
-      "Mușchii mă dor după antrenamentul de ieri...",
-      "De asemenea, este important să-ți lași mușchii să se odihnească!",
-      "Cu îngrijire zilnică, mușchii mei se simt revitalizați!"
     ],
     "cs": [
       "Mé svaly se díky novému tréninku zvětšily!",
       "Bolí mě svaly po včerejším tréninku...",
       "Je také důležité nechat svaly odpočívat!",
-      "Díky každodenní péči se mé svaly cítí obnovené!"
+      "Každodenní péče dodává mým svalům novou energii!"
     ],
     "da": [
       "Mine muskler er blevet større med den nye træning!",
       "Mine muskler gør ondt efter gårsdagens træning...",
       "Det er også vigtigt at lade dine muskler hvile!",
-      "Med daglig pleje føles mine muskler revitaliserede!"
+      "Daglig pleje giver mine muskler ny energi!"
+    ],
+    "de": [
+      "Meine Muskeln sind durch das neue Training größer geworden!",
+      "Meine Muskeln tun nach dem gestrigen Training weh...",
+      "Es ist auch wichtig, die Muskeln ruhen zu lassen!",
+      "Durch tägliche Pflege werden meine Muskeln wieder fit!"
+    ],
+    "el": [
+      "Οι μύες μου έχουν μεγαλώσει με τη νέα προπόνηση!",
+      "Πονάνε οι μύες μου μετά τη χθεσινή προπόνηση...",
+      "Είναι επίσης σημαντικό να αφήνεις τους μύες σου να ξεκουράζονται!",
+      "Η καθημερινή φροντίδα αναζωογονεί τους μύες μου!"
+    ],
+    "en": [
+      "My muscles have gotten bigger with the new training!",
+      "My muscles hurt after yesterday's workout…",
+      "It's also important to let your muscles rest!",
+      "With daily care, my muscles feel revitalized!"
+    ],
+    "es": [
+      "¡Mis músculos se han hecho más grandes con el nuevo entrenamiento!",
+      "Me duelieron los músculos después del entrenamiento de ayer...",
+      "¡También es importante dejar descansar los músculos!",
+      "Con el cuidado diario, ¡mis músculos se sienten revitalizados!"
     ],
     "fi": [
       "Lihakseni ovat kasvaneet uuden harjoittelun myötä!",
@@ -1464,6 +1866,119 @@
       "On myös tärkeää antaa lihasten levätä!",
       "Päivittäisellä hoidolla lihakseni tuntuvat virkistyneiltä!"
     ],
-    "word_POS": "Noun"
+    "fr": [
+      "Mes muscles ont grandi avec le nouvel entraînement !",
+      "Mes muscles me faisaient mal après l’entraînement d’hier...",
+      "Il est aussi important de laisser vos muscles se reposer !",
+      "Avec des soins quotidiens, mes muscles se sentent revitalisés !"
+    ],
+    "he": [
+      "השרירים שלי התרחבו עם האימונים החדשים!",
+      "השרירים שלי כואבים אחרי האימון אתמול...",
+      "חשוב גם לתת לשרירים שלך לנוח!",
+      "הטיפול היומיומי מחזיר לשרירים שלי את החיוניות!"
+    ],
+    "hi": [
+      "नए वर्कआउट से मेरी मांसपेशियां बड़ी हो गई हैं!",
+      "कल के वर्कआउट के बाद मेरी मांसपेशियों में दर्द हो रहा है...",
+      "अपनी मांसपेशियों को आराम देना भी महत्वपूर्ण है!",
+      "रोज़ाना देखभाल से मेरी मांसपेशियों में नई ऊर्जा आती है!"
+    ],
+    "hu": [
+      "Az izmaim nagyobbak lettek az új edzéssel!",
+      "Fájnak az izmaim a tegnapi edzés után...",
+      "Az is fontos, hogy hagyd pihenni az izmaidat!",
+      "A napi gondozással az izmaim felfrissülnek!"
+    ],
+    "id": [
+      "Otot-otot saya menjadi lebih besar dengan pelatihan baru!",
+      "Otot-otot saya sakit setelah latihan kemarin...",
+      "Penting juga untuk membiarkan otot beristirahat!",
+      "Dengan perawatan sehari-hari, otot saya menjadi lebih bugar!"
+    ],
+    "it": [
+      "I miei muscoli sono cresciuti con il nuovo allenamento!",
+      "I muscoli mi facevano male dopo l'allenamento di ieri...",
+      "È anche importante lasciare riposare i muscoli!",
+      "Con la cura quotidiana, i miei muscoli si rigenerano!"
+    ],
+    "ko": [
+      "새로운 훈련 덕분에 근육이 더 커졌어요!",
+      "어제 운동 후에 근육이 아파서...",
+      "근육을 쉬게 하는 것도 중요해!",
+      "매일 관리하니 근육이 활력을 되찾는 느낌이에요!"
+    ],
+    "nb": [
+      "Musklene mine har blitt større med den nye treningen!",
+      "Musklene mine verker etter gårsdagens trening...",
+      "Det er også viktig å la musklene hvile!",
+      "Med daglig pleie får musklene mine ny energi!"
+    ],
+    "nl": [
+      "Mijn spieren zijn groter geworden door de nieuwe training!",
+      "Mijn spieren doen pijn na de training van gisteren...",
+      "Het is ook belangrijk om je spieren te laten rusten!",
+      "Door dagelijkse verzorging krijgen mijn spieren weer energie!"
+    ],
+    "pl": [
+      "Moje mięśnie powiększyły się dzięki nowemu treningowi!",
+      "Bolą mnie mięśnie po wczorajszym treningu...",
+      "Ważne jest też, aby pozwolić mięśniom odpocząć!",
+      "Dzięki codziennej pielęgnacji moje mięśnie odzyskują witalność!"
+    ],
+    "pt": [
+      "Meus músculos cresceram com o novo treino!",
+      "Meus músculos doeram depois do treino de ontem...",
+      "Também é importante deixar seus músculos descansarem!",
+      "Com os cuidados diários, meus músculos ficam revigorados!"
+    ],
+    "ro": [
+      "Mușchii mei s-au mărit odată cu noul antrenament!",
+      "Mușchii mă dor după antrenamentul de ieri...",
+      "De asemenea, este important să-ți lași mușchii să se odihnească!",
+      "Îngrijirea zilnică îmi revigorează mușchii!"
+    ],
+    "ru": [
+      "Мои мышцы стали больше благодаря новым тренировкам!",
+      "У меня болят мышцы после вчерашней тренировки...",
+      "Также важно дать мышцам отдохнуть!",
+      "При ежедневном уходе мышцы приходят в тонус!"
+    ],
+    "sv": [
+      "Mina muskler har blivit större med den nya träningen!",
+      "Mina muskler gör ont efter gårdagens träning...",
+      "Det är också viktigt att låta dina muskler vila!",
+      "Med daglig vård får mina muskler ny energi!"
+    ],
+    "tr": [
+      "Yeni antrenmanla kaslarım büyüdü!",
+      "Dünkü antrenmandan sonra kaslarım ağrıyor...",
+      "Kaslarını dinlendirmek de önemli!",
+      "Günlük bakımla kaslarım canlanıyor!"
+    ],
+    "uk": [
+      "Мої м'язи стали більшими завдяки новим тренуванням!",
+      "М'язи болять після вчорашнього тренування...",
+      "Також важливо дати м'язам відпочити!",
+      "Щоденний догляд додає енергії моїм м’язам!"
+    ],
+    "vi": [
+      "Cơ bắp của tôi đã phát triển nhờ bài tập mới!",
+      "Cơ bắp của tôi bị đau sau buổi tập ngày hôm qua...",
+      "Điều quan trọng nữa là để cơ bắp của bạn được nghỉ ngơi!",
+      "Với sự chăm sóc hàng ngày, cơ bắp của tôi cảm thấy được hồi sinh!"
+    ],
+    "yue": [
+      "我嘅肌肉因為新嘅訓練而變得更大！",
+      "我昨天做咗運動之後肌肉痛...",
+      "畀肌肉休息都好重要！",
+      "每日護理，我嘅肌肉都煥然一新！"
+    ],
+    "zh-Hans": [
+      "我的肌肉在新训练后变大了！",
+      "昨天锻炼后肌肉疼......",
+      "让肌肉休息也很重要！",
+      "每天护理后，我的肌肉焕然一新！"
+    ]
   }
 }

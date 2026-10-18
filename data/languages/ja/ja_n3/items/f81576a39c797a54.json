@@ -42,12 +42,12 @@
   },
   "sentences": [
     {
-      "target": "くつに泥がついた。",
+      "target": "靴に泥がついた。",
       "reading": "くつにどろがついた。",
       "translations": {
         "en": "Mud got on my shoes.",
-        "ar": "علقت طين على حذائي.",
-        "cs": "Na boty mi nalepilo bláto.",
+        "ar": "علق الطين بحذائي.",
+        "cs": "Na boty se mi nalepilo bláto.",
         "da": "Der kom mudder på mine sko.",
         "de": "An meinen Schuhen war Matsch.",
         "el": "Λάσπη έπεσε στα παπούτσια μου.",
@@ -62,7 +62,7 @@
         "ko": "신발에 진흙이 묻었다.",
         "nb": "Det kom søle på skoene mine.",
         "nl": "Er kwam modder op mijn schoenen.",
-        "pl": "Na moich butach była błotna plama.",
+        "pl": "Błoto przykleiło się do moich butów.",
         "pt": "Meu sapato ficou com lama.",
         "ro": "Mi s-a lipit noroi de pantofi.",
         "ru": "На мою обувь попала грязь.",
@@ -75,20 +75,28 @@
       },
       "tokens": [
         {
-          "surface": "くつ",
-          "lemma": "くつ",
+          "surface": "靴",
+          "lemma": "靴",
           "pos": "名詞/普通名詞/一般/*/*/*",
           "upos": "NOUN",
           "xpos": "名詞",
           "feats": {},
           "start": 0,
-          "end": 2,
+          "end": 1,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "くつ",
-          "ruby_text": "くつ",
-          "ruby_spans": [],
-          "ruby_confidence": "high",
-          "furigana": "くつ"
+          "ruby_text": "靴[くつ]",
+          "ruby_spans": [
+            {
+              "base": "靴",
+              "reading": "くつ",
+              "start": 0,
+              "length": 1
+            }
+          ],
+          "ruby_confidence": "reviewed",
+          "furigana": "くつ",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "に",
@@ -97,8 +105,8 @@
           "upos": "PART",
           "xpos": "助詞",
           "feats": {},
-          "start": 2,
-          "end": 3,
+          "start": 1,
+          "end": 2,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "に",
           "ruby_text": "に",
@@ -113,8 +121,8 @@
           "upos": "NOUN",
           "xpos": "名詞",
           "feats": {},
-          "start": 3,
-          "end": 4,
+          "start": 2,
+          "end": 3,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "どろ",
           "ruby_text": "泥[どろ]",
@@ -126,8 +134,9 @@
               "length": 1
             }
           ],
-          "ruby_confidence": "high",
+          "ruby_confidence": "reviewed",
           "furigana": "どろ",
+          "ruby_source": "mediawiki_sentence_ruby",
           "is_main_word": true
         },
         {
@@ -137,8 +146,8 @@
           "upos": "PART",
           "xpos": "助詞",
           "feats": {},
-          "start": 4,
-          "end": 5,
+          "start": 3,
+          "end": 4,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "が",
           "ruby_text": "が",
@@ -153,8 +162,8 @@
           "upos": "VERB",
           "xpos": "動詞",
           "feats": {},
-          "start": 5,
-          "end": 7,
+          "start": 4,
+          "end": 6,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "つい",
           "ruby_text": "つい",
@@ -169,8 +178,8 @@
           "upos": "AUX",
           "xpos": "助動詞",
           "feats": {},
-          "start": 7,
-          "end": 8,
+          "start": 6,
+          "end": 7,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "た",
           "ruby_text": "た",
@@ -185,8 +194,8 @@
           "upos": "PUNCT",
           "xpos": "補助記号",
           "feats": {},
-          "start": 8,
-          "end": 9,
+          "start": 7,
+          "end": 8,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "。",
           "ruby_text": "。",
@@ -586,7 +595,7 @@
       "difficulty": null
     },
     {
-      "target": "犬が庭で泥をはねた。",
+      "target": "犬が庭で泥を跳ねた。",
       "reading": "いぬがにわでどろをはねた。",
       "translations": {
         "en": "The dog splashed mud in the yard.",
@@ -638,8 +647,9 @@
               "length": 1
             }
           ],
-          "ruby_confidence": "high",
-          "furigana": "いぬ"
+          "ruby_confidence": "reviewed",
+          "furigana": "いぬ",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "が",
@@ -677,8 +687,9 @@
               "length": 1
             }
           ],
-          "ruby_confidence": "high",
-          "furigana": "にわ"
+          "ruby_confidence": "reviewed",
+          "furigana": "にわ",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "で",
@@ -716,8 +727,9 @@
               "length": 1
             }
           ],
-          "ruby_confidence": "high",
+          "ruby_confidence": "reviewed",
           "furigana": "どろ",
+          "ruby_source": "mediawiki_sentence_ruby",
           "is_main_word": true
         },
         {
@@ -737,8 +749,8 @@
           "furigana": "を"
         },
         {
-          "surface": "はね",
-          "lemma": "はねる",
+          "surface": "跳ね",
+          "lemma": "跳ねる",
           "pos": "動詞/一般/*/*/下一段-ナ行/連用形-一般",
           "upos": "VERB",
           "xpos": "動詞",
@@ -747,10 +759,18 @@
           "end": 8,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "はね",
-          "ruby_text": "はね",
-          "ruby_spans": [],
-          "ruby_confidence": "high",
-          "furigana": "はね"
+          "ruby_text": "跳[は]ね",
+          "ruby_spans": [
+            {
+              "base": "跳",
+              "reading": "は",
+              "start": 0,
+              "length": 1
+            }
+          ],
+          "ruby_confidence": "reviewed",
+          "furigana": "はね",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "た",
@@ -799,8 +819,855 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-13T08:18:46Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:Ja n3/f81576a39c797a54",
+      "revision_id": 80170,
+      "parent_revision_id": 68380,
+      "revision_timestamp_utc": "2026-10-13T08:18:46Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Standardized common Japanese spellings and corrected the Arabic, Czech, and Polish descriptions of mud getting on shoes.",
+      "pulled_utc": "2026-10-18T17:39:20Z",
+      "applied_utc": "2026-10-18T17:40:00Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-52f6d84dd9c5a813",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "ja_n3:f81576a39c797a54",
+        "pack_code": "ja_n3",
+        "entry_id": "泥",
+        "language": "ja",
+        "sentence_index": 1,
+        "old_sentence": "くつに泥がついた。",
+        "old_translations": {
+          "en": "Mud got on my shoes.",
+          "ar": "علقت طين على حذائي.",
+          "cs": "Na boty mi nalepilo bláto.",
+          "da": "Der kom mudder på mine sko.",
+          "de": "An meinen Schuhen war Matsch.",
+          "el": "Λάσπη έπεσε στα παπούτσια μου.",
+          "es": "Se me pegó barro en los zapatos.",
+          "fi": "Kengilleni tarttui mutaa.",
+          "fr": "J'ai de la boue sur mes chaussures.",
+          "he": "בוץ נדבק לנעליים שלי.",
+          "hi": "मेरे जूतों पर कीचड़ लग गया।",
+          "hu": "Sár ragadt a cipőmre.",
+          "id": "Sepatuku terkena lumpur.",
+          "it": "Mi è finito del fango sulle scarpe.",
+          "ko": "신발에 진흙이 묻었다.",
+          "nb": "Det kom søle på skoene mine.",
+          "nl": "Er kwam modder op mijn schoenen.",
+          "pl": "Na moich butach była błotna plama.",
+          "pt": "Meu sapato ficou com lama.",
+          "ro": "Mi s-a lipit noroi de pantofi.",
+          "ru": "На мою обувь попала грязь.",
+          "sv": "Det kom lera på mina skor.",
+          "tr": "Ayakkabılarıma çamur bulaştı.",
+          "uk": "На моє взуття потрапило багно.",
+          "vi": "Bùn dính vào giày tôi.",
+          "yue": "泥黐咗喺我對鞋度。",
+          "zh-Hans": "我的鞋上沾了泥。"
+        },
+        "proposed_sentence": "靴に泥がついた。",
+        "proposed_translations": {
+          "en": "Mud got on my shoes.",
+          "ar": "علق الطين بحذائي.",
+          "cs": "Na boty se mi nalepilo bláto.",
+          "da": "Der kom mudder på mine sko.",
+          "de": "An meinen Schuhen war Matsch.",
+          "el": "Λάσπη έπεσε στα παπούτσια μου.",
+          "es": "Se me pegó barro en los zapatos.",
+          "fi": "Kengilleni tarttui mutaa.",
+          "fr": "J'ai de la boue sur mes chaussures.",
+          "he": "בוץ נדבק לנעליים שלי.",
+          "hi": "मेरे जूतों पर कीचड़ लग गया।",
+          "hu": "Sár ragadt a cipőmre.",
+          "id": "Sepatuku terkena lumpur.",
+          "it": "Mi è finito del fango sulle scarpe.",
+          "ko": "신발에 진흙이 묻었다.",
+          "nb": "Det kom søle på skoene mine.",
+          "nl": "Er kwam modder op mijn schoenen.",
+          "pl": "Błoto przykleiło się do moich butów.",
+          "pt": "Meu sapato ficou com lama.",
+          "ro": "Mi s-a lipit noroi de pantofi.",
+          "ru": "На мою обувь попала грязь.",
+          "sv": "Det kom lera på mina skor.",
+          "tr": "Ayakkabılarıma çamur bulaştı.",
+          "uk": "На моє взуття потрапило багно.",
+          "vi": "Bùn dính vào giày tôi.",
+          "yue": "泥黐咗喺我對鞋度。",
+          "zh-Hans": "我的鞋上沾了泥。"
+        },
+        "old_ruby_source": "くつに泥[どろ]がついた。",
+        "proposed_ruby_source": "靴[くつ]に泥[どろ]がついた。",
+        "old_japanese": "くつに泥がついた。",
+        "old_english": "Mud got on my shoes.",
+        "proposed_japanese": "靴に泥がついた。",
+        "proposed_english": "Mud got on my shoes.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "ja",
+          "sentence": "靴に泥がついた。",
+          "tokens": [
+            {
+              "surface": "靴",
+              "lemma": "靴",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 0,
+              "end": 1,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "くつ",
+              "ruby_text": "靴[くつ]",
+              "ruby_spans": [
+                {
+                  "base": "靴",
+                  "reading": "くつ",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "くつ",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "に",
+              "lemma": "に",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 1,
+              "end": 2,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "に",
+              "ruby_text": "に",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "に"
+            },
+            {
+              "surface": "泥",
+              "lemma": "泥",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 2,
+              "end": 3,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "どろ",
+              "ruby_text": "泥[どろ]",
+              "ruby_spans": [
+                {
+                  "base": "泥",
+                  "reading": "どろ",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "どろ",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "が",
+              "lemma": "が",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 3,
+              "end": 4,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "が",
+              "ruby_text": "が",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "が"
+            },
+            {
+              "surface": "つい",
+              "lemma": "つく",
+              "pos": "動詞/非自立可能/*/*/五段-カ行/連用形-イ音便",
+              "upos": "VERB",
+              "xpos": "動詞",
+              "feats": {},
+              "start": 4,
+              "end": 6,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "つい",
+              "ruby_text": "つい",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "つい"
+            },
+            {
+              "surface": "た",
+              "lemma": "た",
+              "pos": "助動詞/*/*/*/助動詞-タ/終止形-一般",
+              "upos": "AUX",
+              "xpos": "助動詞",
+              "feats": {},
+              "start": 6,
+              "end": 7,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "た",
+              "ruby_text": "た",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "た"
+            },
+            {
+              "surface": "。",
+              "lemma": "。",
+              "pos": "補助記号/句点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 7,
+              "end": 8,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "。",
+              "ruby_text": "。",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "。"
+            }
+          ],
+          "reading": "くつにどろがついた。",
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "warnings": [
+            "mediawiki ruby hints applied"
+          ]
+        },
+        "generated_tokens": [
+          {
+            "surface": "靴",
+            "lemma": "靴",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 0,
+            "end": 1,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "くつ",
+            "ruby_text": "靴[くつ]",
+            "ruby_spans": [
+              {
+                "base": "靴",
+                "reading": "くつ",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "くつ",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "に",
+            "lemma": "に",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 1,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "に",
+            "ruby_text": "に",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "に"
+          },
+          {
+            "surface": "泥",
+            "lemma": "泥",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 2,
+            "end": 3,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "どろ",
+            "ruby_text": "泥[どろ]",
+            "ruby_spans": [
+              {
+                "base": "泥",
+                "reading": "どろ",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "どろ",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "が",
+            "lemma": "が",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 3,
+            "end": 4,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "が",
+            "ruby_text": "が",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "が"
+          },
+          {
+            "surface": "つい",
+            "lemma": "つく",
+            "pos": "動詞/非自立可能/*/*/五段-カ行/連用形-イ音便",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 4,
+            "end": 6,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "つい",
+            "ruby_text": "つい",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "つい"
+          },
+          {
+            "surface": "た",
+            "lemma": "た",
+            "pos": "助動詞/*/*/*/助動詞-タ/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 6,
+            "end": 7,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "た",
+            "ruby_text": "た",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "た"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 7,
+            "end": 8,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
+          }
+        ],
+        "generated_reading": "くつにどろがついた。",
+        "analyzer": "sudachipy_sudachidict_core_c",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-18T17:39:20Z",
+        "updated_utc": "2026-10-18T17:40:52Z",
+        "applied_utc": "2026-10-18T17:40:52Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      },
+      {
+        "id": "sentprop-6370354061e4f5c9",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "ja_n3:f81576a39c797a54",
+        "pack_code": "ja_n3",
+        "entry_id": "泥",
+        "language": "ja",
+        "sentence_index": 4,
+        "old_sentence": "犬が庭で泥をはねた。",
+        "old_translations": {
+          "en": "The dog splashed mud in the yard.",
+          "ar": "رشّ الكلب الطين في الحديقة.",
+          "cs": "Pes na dvoře rozstříkl bláto.",
+          "da": "Hunden sprøjtede mudder i haven.",
+          "de": "Der Hund spritzte im Garten Matsch auf.",
+          "el": "Ο σκύλος πιτσίλισε λάσπη στην αυλή.",
+          "es": "El perro salpicó barro en el patio.",
+          "fi": "Koira roiskutti mutaa pihalla.",
+          "fr": "Le chien a éclaboussé de la boue dans le jardin.",
+          "he": "הכלב השפריץ בוץ בחצר.",
+          "hi": "कुत्ते ने आँगन में कीचड़ उछाला।",
+          "hu": "A kutya sarat fröcskölt az udvarban.",
+          "id": "Anjing itu memercikkan lumpur di halaman.",
+          "it": "Il cane ha schizzato fango in giardino.",
+          "ko": "개가 마당에서 진흙을 튀겼다.",
+          "nb": "Hunden sprutet søle i hagen.",
+          "nl": "De hond spetterde modder in de tuin.",
+          "pl": "Pies ochlapał błotem podwórko.",
+          "pt": "O cachorro espirrou lama no quintal.",
+          "ro": "Câinele a împroșcat noroi în curte.",
+          "ru": "Собака разбрызгала грязь во дворе.",
+          "sv": "Hunden skvätte lera i trädgården.",
+          "tr": "Köpek bahçede çamur sıçrattı.",
+          "uk": "Собака розбризкав багно у дворі.",
+          "vi": "Con chó làm bùn bắn tung tóe trong sân.",
+          "yue": "隻狗喺個院度濺起泥。",
+          "zh-Hans": "狗在院子里把泥溅得到处都是。"
+        },
+        "proposed_sentence": "犬が庭で泥を跳ねた。",
+        "proposed_translations": {
+          "en": "The dog splashed mud in the yard.",
+          "ar": "رشّ الكلب الطين في الحديقة.",
+          "cs": "Pes na dvoře rozstříkl bláto.",
+          "da": "Hunden sprøjtede mudder i haven.",
+          "de": "Der Hund spritzte im Garten Matsch auf.",
+          "el": "Ο σκύλος πιτσίλισε λάσπη στην αυλή.",
+          "es": "El perro salpicó barro en el patio.",
+          "fi": "Koira roiskutti mutaa pihalla.",
+          "fr": "Le chien a éclaboussé de la boue dans le jardin.",
+          "he": "הכלב השפריץ בוץ בחצר.",
+          "hi": "कुत्ते ने आँगन में कीचड़ उछाला।",
+          "hu": "A kutya sarat fröcskölt az udvarban.",
+          "id": "Anjing itu memercikkan lumpur di halaman.",
+          "it": "Il cane ha schizzato fango in giardino.",
+          "ko": "개가 마당에서 진흙을 튀겼다.",
+          "nb": "Hunden sprutet søle i hagen.",
+          "nl": "De hond spetterde modder in de tuin.",
+          "pl": "Pies ochlapał błotem podwórko.",
+          "pt": "O cachorro espirrou lama no quintal.",
+          "ro": "Câinele a împroșcat noroi în curte.",
+          "ru": "Собака разбрызгала грязь во дворе.",
+          "sv": "Hunden skvätte lera i trädgården.",
+          "tr": "Köpek bahçede çamur sıçrattı.",
+          "uk": "Собака розбризкав багно у дворі.",
+          "vi": "Con chó làm bùn bắn tung tóe trong sân.",
+          "yue": "隻狗喺個院度濺起泥。",
+          "zh-Hans": "狗在院子里把泥溅得到处都是。"
+        },
+        "old_ruby_source": "犬[いぬ]が庭[にわ]で泥[どろ]をはねた。",
+        "proposed_ruby_source": "犬[いぬ]が庭[にわ]で泥[どろ]を跳[は]ねた。",
+        "old_japanese": "犬が庭で泥をはねた。",
+        "old_english": "The dog splashed mud in the yard.",
+        "proposed_japanese": "犬が庭で泥を跳ねた。",
+        "proposed_english": "The dog splashed mud in the yard.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "ja",
+          "sentence": "犬が庭で泥を跳ねた。",
+          "tokens": [
+            {
+              "surface": "犬",
+              "lemma": "犬",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 0,
+              "end": 1,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "いぬ",
+              "ruby_text": "犬[いぬ]",
+              "ruby_spans": [
+                {
+                  "base": "犬",
+                  "reading": "いぬ",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "いぬ",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "が",
+              "lemma": "が",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 1,
+              "end": 2,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "が",
+              "ruby_text": "が",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "が"
+            },
+            {
+              "surface": "庭",
+              "lemma": "庭",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 2,
+              "end": 3,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "にわ",
+              "ruby_text": "庭[にわ]",
+              "ruby_spans": [
+                {
+                  "base": "庭",
+                  "reading": "にわ",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "にわ",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "で",
+              "lemma": "で",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 3,
+              "end": 4,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "で",
+              "ruby_text": "で",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "で"
+            },
+            {
+              "surface": "泥",
+              "lemma": "泥",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 4,
+              "end": 5,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "どろ",
+              "ruby_text": "泥[どろ]",
+              "ruby_spans": [
+                {
+                  "base": "泥",
+                  "reading": "どろ",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "どろ",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "を",
+              "lemma": "を",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 5,
+              "end": 6,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "を",
+              "ruby_text": "を",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "を"
+            },
+            {
+              "surface": "跳ね",
+              "lemma": "跳ねる",
+              "pos": "動詞/一般/*/*/下一段-ナ行/連用形-一般",
+              "upos": "VERB",
+              "xpos": "動詞",
+              "feats": {},
+              "start": 6,
+              "end": 8,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "はね",
+              "ruby_text": "跳[は]ね",
+              "ruby_spans": [
+                {
+                  "base": "跳",
+                  "reading": "は",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "はね",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "た",
+              "lemma": "た",
+              "pos": "助動詞/*/*/*/助動詞-タ/終止形-一般",
+              "upos": "AUX",
+              "xpos": "助動詞",
+              "feats": {},
+              "start": 8,
+              "end": 9,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "た",
+              "ruby_text": "た",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "た"
+            },
+            {
+              "surface": "。",
+              "lemma": "。",
+              "pos": "補助記号/句点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 9,
+              "end": 10,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "。",
+              "ruby_text": "。",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "。"
+            }
+          ],
+          "reading": "いぬがにわでどろをはねた。",
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "warnings": [
+            "mediawiki ruby hints applied"
+          ]
+        },
+        "generated_tokens": [
+          {
+            "surface": "犬",
+            "lemma": "犬",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 0,
+            "end": 1,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "いぬ",
+            "ruby_text": "犬[いぬ]",
+            "ruby_spans": [
+              {
+                "base": "犬",
+                "reading": "いぬ",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "いぬ",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "が",
+            "lemma": "が",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 1,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "が",
+            "ruby_text": "が",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "が"
+          },
+          {
+            "surface": "庭",
+            "lemma": "庭",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 2,
+            "end": 3,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "にわ",
+            "ruby_text": "庭[にわ]",
+            "ruby_spans": [
+              {
+                "base": "庭",
+                "reading": "にわ",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "にわ",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "で",
+            "lemma": "で",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 3,
+            "end": 4,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "で",
+            "ruby_text": "で",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "で"
+          },
+          {
+            "surface": "泥",
+            "lemma": "泥",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 4,
+            "end": 5,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "どろ",
+            "ruby_text": "泥[どろ]",
+            "ruby_spans": [
+              {
+                "base": "泥",
+                "reading": "どろ",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "どろ",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "を",
+            "lemma": "を",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 5,
+            "end": 6,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "を",
+            "ruby_text": "を",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "を"
+          },
+          {
+            "surface": "跳ね",
+            "lemma": "跳ねる",
+            "pos": "動詞/一般/*/*/下一段-ナ行/連用形-一般",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 6,
+            "end": 8,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "はね",
+            "ruby_text": "跳[は]ね",
+            "ruby_spans": [
+              {
+                "base": "跳",
+                "reading": "は",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "はね",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "た",
+            "lemma": "た",
+            "pos": "助動詞/*/*/*/助動詞-タ/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 8,
+            "end": 9,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "た",
+            "ruby_text": "た",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "た"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 9,
+            "end": 10,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
+          }
+        ],
+        "generated_reading": "いぬがにわでどろをはねた。",
+        "analyzer": "sudachipy_sudachidict_core_c",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-18T17:39:20Z",
+        "updated_utc": "2026-10-18T17:40:52Z",
+        "applied_utc": "2026-10-18T17:40:52Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-18T17:40:52Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -825,12 +1692,6 @@
       "こどもがどろだらけでかえった。",
       "あめでみちがどろになった。",
       "いぬがにわでどろをはねた。"
-    ],
-    "en": [
-      "Mud got on my shoes.",
-      "The child came home covered in mud.",
-      "The rain turned the road to mud.",
-      "The dog splashed mud in the yard."
     ],
     "generation": {
       "generator": "vocomipedia_source_generator.py",
@@ -869,209 +1730,33 @@
         "parts_of_speech": "Noun"
       }
     },
-    "word_en": "mud; (wet) dirt",
-    "word_es": "barro",
-    "word_fr": "boue",
-    "word_de": "Schlamm",
-    "word_it": "fango",
-    "word_ko": "진흙",
-    "word_zh-Hans": "泥",
-    "word_yue": "泥",
-    "word_ru": "грязь",
-    "word_pt": "lama",
-    "word_he": "בוץ",
-    "word_tr": "çamur",
-    "word_vi": "bùn",
-    "word_ar": "طين",
-    "word_nl": "modder",
-    "word_uk": "бруд",
-    "word_hu": "sár",
-    "word_hi": "कीचड़",
-    "word_pl": "błoto",
-    "word_el": "λάσπη",
-    "word_nb": "gjørme",
-    "word_id": "lumpur",
-    "word_sv": "lera",
-    "word_ro": "noroi",
-    "word_cs": "bahno",
-    "word_da": "mudder",
-    "word_fi": "muta",
-    "word_ja": "泥",
-    "ar": [
-      "علقت طين على حذائي.",
-      "عاد الطفل وهو مغطى بالطين.",
-      "حوّل المطر الطريق إلى طين.",
-      "رشّ الكلب الطين في الحديقة."
-    ],
-    "cs": [
-      "Na boty mi nalepilo bláto.",
-      "Dítě se vrátilo domů celé od bláta.",
-      "Déšť změnil cestu v bláto.",
-      "Pes na dvoře rozstříkl bláto."
-    ],
-    "da": [
-      "Der kom mudder på mine sko.",
-      "Barnet kom hjem dækket af mudder.",
-      "Regnen gjorde vejen til mudder.",
-      "Hunden sprøjtede mudder i haven."
-    ],
-    "de": [
-      "An meinen Schuhen war Matsch.",
-      "Das Kind kam voller Matsch nach Hause.",
-      "Der Regen machte die Straße zu Matsch.",
-      "Der Hund spritzte im Garten Matsch auf."
-    ],
-    "el": [
-      "Λάσπη έπεσε στα παπούτσια μου.",
-      "Το παιδί γύρισε σπίτι γεμάτο λάσπη.",
-      "Η βροχή έκανε τον δρόμο λάσπη.",
-      "Ο σκύλος πιτσίλισε λάσπη στην αυλή."
-    ],
-    "es": [
-      "Se me pegó barro en los zapatos.",
-      "El niño volvió a casa lleno de barro.",
-      "La lluvia convirtió el camino en barro.",
-      "El perro salpicó barro en el patio."
-    ],
-    "fi": [
-      "Kengilleni tarttui mutaa.",
-      "Lapsi tuli kotiin mutaisena.",
-      "Sade muutti tien mudaksi.",
-      "Koira roiskutti mutaa pihalla."
-    ],
-    "fr": [
-      "J'ai de la boue sur mes chaussures.",
-      "L'enfant est rentré couvert de boue.",
-      "La pluie a transformé la route en boue.",
-      "Le chien a éclaboussé de la boue dans le jardin."
-    ],
-    "he": [
-      "בוץ נדבק לנעליים שלי.",
-      "הילד חזר הביתה מכוסה בבוץ.",
-      "הגשם הפך את הדרך לבוץ.",
-      "הכלב השפריץ בוץ בחצר."
-    ],
-    "hi": [
-      "मेरे जूतों पर कीचड़ लग गया।",
-      "बच्चा कीचड़ में सना हुआ घर लौटा।",
-      "बारिश ने सड़क को कीचड़ बना दिया।",
-      "कुत्ते ने आँगन में कीचड़ उछाला।"
-    ],
-    "hu": [
-      "Sár ragadt a cipőmre.",
-      "A gyerek sárosan jött haza.",
-      "Az eső sarassá tette az utat.",
-      "A kutya sarat fröcskölt az udvarban."
-    ],
-    "id": [
-      "Sepatuku terkena lumpur.",
-      "Anak itu pulang penuh lumpur.",
-      "Hujan mengubah jalan menjadi lumpur.",
-      "Anjing itu memercikkan lumpur di halaman."
-    ],
-    "it": [
-      "Mi è finito del fango sulle scarpe.",
-      "Il bambino è tornato a casa tutto infangato.",
-      "La pioggia ha trasformato la strada in fango.",
-      "Il cane ha schizzato fango in giardino."
-    ],
-    "ko": [
-      "신발에 진흙이 묻었다.",
-      "아이가 온몸이 진흙투성이가 되어 돌아왔다.",
-      "비가 와서 길이 진흙이 되었다.",
-      "개가 마당에서 진흙을 튀겼다."
-    ],
-    "nb": [
-      "Det kom søle på skoene mine.",
-      "Barnet kom hjem tilsølt av søle.",
-      "Regnet gjorde veien om til søle.",
-      "Hunden sprutet søle i hagen."
-    ],
-    "nl": [
-      "Er kwam modder op mijn schoenen.",
-      "Het kind kwam onder de modder thuis.",
-      "De regen maakte de weg modderig.",
-      "De hond spetterde modder in de tuin."
-    ],
-    "pl": [
-      "Na moich butach była błotna plama.",
-      "Dziecko wróciło do domu całe w błocie.",
-      "Deszcz zamienił drogę w błoto.",
-      "Pies ochlapał błotem podwórko."
-    ],
-    "pt": [
-      "Meu sapato ficou com lama.",
-      "A criança voltou para casa coberta de lama.",
-      "A chuva transformou a estrada em lama.",
-      "O cachorro espirrou lama no quintal."
-    ],
-    "ro": [
-      "Mi s-a lipit noroi de pantofi.",
-      "Copilul a venit acasă plin de noroi.",
-      "Ploaia a transformat drumul în noroi.",
-      "Câinele a împroșcat noroi în curte."
-    ],
-    "ru": [
-      "На мою обувь попала грязь.",
-      "Ребёнок вернулся домой весь в грязи.",
-      "Дождь превратил дорогу в грязь.",
-      "Собака разбрызгала грязь во дворе."
-    ],
-    "sv": [
-      "Det kom lera på mina skor.",
-      "Barnet kom hem täckt av lera.",
-      "Regnet gjorde vägen till lera.",
-      "Hunden skvätte lera i trädgården."
-    ],
-    "tr": [
-      "Ayakkabılarıma çamur bulaştı.",
-      "Çocuk çamur içinde eve geldi.",
-      "Yağmur yolu çamura çevirdi.",
-      "Köpek bahçede çamur sıçrattı."
-    ],
-    "uk": [
-      "На моє взуття потрапило багно.",
-      "Дитина прийшла додому вся в багні.",
-      "Дощ перетворив дорогу на багно.",
-      "Собака розбризкав багно у дворі."
-    ],
-    "vi": [
-      "Bùn dính vào giày tôi.",
-      "Đứa trẻ về nhà lấm lem bùn.",
-      "Mưa biến con đường thành bùn.",
-      "Con chó làm bùn bắn tung tóe trong sân."
-    ],
-    "yue": [
-      "泥黐咗喺我對鞋度。",
-      "個細路滿身泥返咗屋企。",
-      "落雨將條路變咗做泥。",
-      "隻狗喺個院度濺起泥。"
-    ],
-    "zh-Hans": [
-      "我的鞋上沾了泥。",
-      "孩子浑身是泥地回家了。",
-      "雨把路变成了泥。",
-      "狗在院子里把泥溅得到处都是。"
-    ],
     "pos_analysis": [
       {
-        "sentence": "くつに泥がついた。",
+        "sentence": "靴に泥がついた。",
         "tokens": [
           {
-            "surface": "くつ",
-            "lemma": "くつ",
+            "surface": "靴",
+            "lemma": "靴",
             "pos": "名詞/普通名詞/一般/*/*/*",
             "upos": "NOUN",
             "xpos": "名詞",
             "feats": {},
             "start": 0,
-            "end": 2,
+            "end": 1,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "くつ",
-            "ruby_text": "くつ",
-            "ruby_spans": [],
-            "ruby_confidence": "high",
-            "furigana": "くつ"
+            "ruby_text": "靴[くつ]",
+            "ruby_spans": [
+              {
+                "base": "靴",
+                "reading": "くつ",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "くつ",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "に",
@@ -1080,8 +1765,8 @@
             "upos": "PART",
             "xpos": "助詞",
             "feats": {},
-            "start": 2,
-            "end": 3,
+            "start": 1,
+            "end": 2,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "に",
             "ruby_text": "に",
@@ -1096,8 +1781,8 @@
             "upos": "NOUN",
             "xpos": "名詞",
             "feats": {},
-            "start": 3,
-            "end": 4,
+            "start": 2,
+            "end": 3,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "どろ",
             "ruby_text": "泥[どろ]",
@@ -1109,8 +1794,9 @@
                 "length": 1
               }
             ],
-            "ruby_confidence": "high",
+            "ruby_confidence": "reviewed",
             "furigana": "どろ",
+            "ruby_source": "mediawiki_sentence_ruby",
             "is_main_word": true
           },
           {
@@ -1120,8 +1806,8 @@
             "upos": "PART",
             "xpos": "助詞",
             "feats": {},
-            "start": 4,
-            "end": 5,
+            "start": 3,
+            "end": 4,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "が",
             "ruby_text": "が",
@@ -1136,8 +1822,8 @@
             "upos": "VERB",
             "xpos": "動詞",
             "feats": {},
-            "start": 5,
-            "end": 7,
+            "start": 4,
+            "end": 6,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "つい",
             "ruby_text": "つい",
@@ -1152,8 +1838,8 @@
             "upos": "AUX",
             "xpos": "助動詞",
             "feats": {},
-            "start": 7,
-            "end": 8,
+            "start": 6,
+            "end": 7,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "た",
             "ruby_text": "た",
@@ -1168,8 +1854,8 @@
             "upos": "PUNCT",
             "xpos": "補助記号",
             "feats": {},
-            "start": 8,
-            "end": 9,
+            "start": 7,
+            "end": 8,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "。",
             "ruby_text": "。",
@@ -1509,7 +2195,7 @@
         "difficulty_aggregated": null
       },
       {
-        "sentence": "犬が庭で泥をはねた。",
+        "sentence": "犬が庭で泥を跳ねた。",
         "tokens": [
           {
             "surface": "犬",
@@ -1531,8 +2217,9 @@
                 "length": 1
               }
             ],
-            "ruby_confidence": "high",
-            "furigana": "いぬ"
+            "ruby_confidence": "reviewed",
+            "furigana": "いぬ",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "が",
@@ -1570,8 +2257,9 @@
                 "length": 1
               }
             ],
-            "ruby_confidence": "high",
-            "furigana": "にわ"
+            "ruby_confidence": "reviewed",
+            "furigana": "にわ",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "で",
@@ -1609,8 +2297,9 @@
                 "length": 1
               }
             ],
-            "ruby_confidence": "high",
+            "ruby_confidence": "reviewed",
             "furigana": "どろ",
+            "ruby_source": "mediawiki_sentence_ruby",
             "is_main_word": true
           },
           {
@@ -1630,8 +2319,8 @@
             "furigana": "を"
           },
           {
-            "surface": "はね",
-            "lemma": "はねる",
+            "surface": "跳ね",
+            "lemma": "跳ねる",
             "pos": "動詞/一般/*/*/下一段-ナ行/連用形-一般",
             "upos": "VERB",
             "xpos": "動詞",
@@ -1640,10 +2329,18 @@
             "end": 8,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "はね",
-            "ruby_text": "はね",
-            "ruby_spans": [],
-            "ruby_confidence": "high",
-            "furigana": "はね"
+            "ruby_text": "跳[は]ね",
+            "ruby_spans": [
+              {
+                "base": "跳",
+                "reading": "は",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "はね",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "た",
@@ -1680,6 +2377,196 @@
         ],
         "difficulty_aggregated": null
       }
+    ],
+    "word_en": "mud; (wet) dirt",
+    "word_es": "barro",
+    "word_fr": "boue",
+    "word_de": "Schlamm",
+    "word_it": "fango",
+    "word_ko": "진흙",
+    "word_zh-Hans": "泥",
+    "word_yue": "泥",
+    "word_ru": "грязь",
+    "word_pt": "lama",
+    "word_he": "בוץ",
+    "word_tr": "çamur",
+    "word_vi": "bùn",
+    "word_ar": "طين",
+    "word_nl": "modder",
+    "word_uk": "бруд",
+    "word_hu": "sár",
+    "word_hi": "कीचड़",
+    "word_pl": "błoto",
+    "word_el": "λάσπη",
+    "word_nb": "gjørme",
+    "word_id": "lumpur",
+    "word_sv": "lera",
+    "word_ro": "noroi",
+    "word_cs": "bahno",
+    "word_da": "mudder",
+    "word_fi": "muta",
+    "word_ja": "泥",
+    "ar": [
+      "علقت طين على حذائي.",
+      "عاد الطفل وهو مغطى بالطين.",
+      "حوّل المطر الطريق إلى طين.",
+      "رشّ الكلب الطين في الحديقة."
+    ],
+    "cs": [
+      "Na boty mi nalepilo bláto.",
+      "Dítě se vrátilo domů celé od bláta.",
+      "Déšť změnil cestu v bláto.",
+      "Pes na dvoře rozstříkl bláto."
+    ],
+    "da": [
+      "Der kom mudder på mine sko.",
+      "Barnet kom hjem dækket af mudder.",
+      "Regnen gjorde vejen til mudder.",
+      "Hunden sprøjtede mudder i haven."
+    ],
+    "de": [
+      "An meinen Schuhen war Matsch.",
+      "Das Kind kam voller Matsch nach Hause.",
+      "Der Regen machte die Straße zu Matsch.",
+      "Der Hund spritzte im Garten Matsch auf."
+    ],
+    "el": [
+      "Λάσπη έπεσε στα παπούτσια μου.",
+      "Το παιδί γύρισε σπίτι γεμάτο λάσπη.",
+      "Η βροχή έκανε τον δρόμο λάσπη.",
+      "Ο σκύλος πιτσίλισε λάσπη στην αυλή."
+    ],
+    "en": [
+      "Mud got on my shoes.",
+      "The child came home covered in mud.",
+      "The rain turned the road to mud.",
+      "The dog splashed mud in the yard."
+    ],
+    "es": [
+      "Se me pegó barro en los zapatos.",
+      "El niño volvió a casa lleno de barro.",
+      "La lluvia convirtió el camino en barro.",
+      "El perro salpicó barro en el patio."
+    ],
+    "fi": [
+      "Kengilleni tarttui mutaa.",
+      "Lapsi tuli kotiin mutaisena.",
+      "Sade muutti tien mudaksi.",
+      "Koira roiskutti mutaa pihalla."
+    ],
+    "fr": [
+      "J'ai de la boue sur mes chaussures.",
+      "L'enfant est rentré couvert de boue.",
+      "La pluie a transformé la route en boue.",
+      "Le chien a éclaboussé de la boue dans le jardin."
+    ],
+    "he": [
+      "בוץ נדבק לנעליים שלי.",
+      "הילד חזר הביתה מכוסה בבוץ.",
+      "הגשם הפך את הדרך לבוץ.",
+      "הכלב השפריץ בוץ בחצר."
+    ],
+    "hi": [
+      "मेरे जूतों पर कीचड़ लग गया।",
+      "बच्चा कीचड़ में सना हुआ घर लौटा।",
+      "बारिश ने सड़क को कीचड़ बना दिया।",
+      "कुत्ते ने आँगन में कीचड़ उछाला।"
+    ],
+    "hu": [
+      "Sár ragadt a cipőmre.",
+      "A gyerek sárosan jött haza.",
+      "Az eső sarassá tette az utat.",
+      "A kutya sarat fröcskölt az udvarban."
+    ],
+    "id": [
+      "Sepatuku terkena lumpur.",
+      "Anak itu pulang penuh lumpur.",
+      "Hujan mengubah jalan menjadi lumpur.",
+      "Anjing itu memercikkan lumpur di halaman."
+    ],
+    "it": [
+      "Mi è finito del fango sulle scarpe.",
+      "Il bambino è tornato a casa tutto infangato.",
+      "La pioggia ha trasformato la strada in fango.",
+      "Il cane ha schizzato fango in giardino."
+    ],
+    "ko": [
+      "신발에 진흙이 묻었다.",
+      "아이가 온몸이 진흙투성이가 되어 돌아왔다.",
+      "비가 와서 길이 진흙이 되었다.",
+      "개가 마당에서 진흙을 튀겼다."
+    ],
+    "nb": [
+      "Det kom søle på skoene mine.",
+      "Barnet kom hjem tilsølt av søle.",
+      "Regnet gjorde veien om til søle.",
+      "Hunden sprutet søle i hagen."
+    ],
+    "nl": [
+      "Er kwam modder op mijn schoenen.",
+      "Het kind kwam onder de modder thuis.",
+      "De regen maakte de weg modderig.",
+      "De hond spetterde modder in de tuin."
+    ],
+    "pl": [
+      "Na moich butach była błotna plama.",
+      "Dziecko wróciło do domu całe w błocie.",
+      "Deszcz zamienił drogę w błoto.",
+      "Pies ochlapał błotem podwórko."
+    ],
+    "pt": [
+      "Meu sapato ficou com lama.",
+      "A criança voltou para casa coberta de lama.",
+      "A chuva transformou a estrada em lama.",
+      "O cachorro espirrou lama no quintal."
+    ],
+    "ro": [
+      "Mi s-a lipit noroi de pantofi.",
+      "Copilul a venit acasă plin de noroi.",
+      "Ploaia a transformat drumul în noroi.",
+      "Câinele a împroșcat noroi în curte."
+    ],
+    "ru": [
+      "На мою обувь попала грязь.",
+      "Ребёнок вернулся домой весь в грязи.",
+      "Дождь превратил дорогу в грязь.",
+      "Собака разбрызгала грязь во дворе."
+    ],
+    "sv": [
+      "Det kom lera på mina skor.",
+      "Barnet kom hem täckt av lera.",
+      "Regnet gjorde vägen till lera.",
+      "Hunden skvätte lera i trädgården."
+    ],
+    "tr": [
+      "Ayakkabılarıma çamur bulaştı.",
+      "Çocuk çamur içinde eve geldi.",
+      "Yağmur yolu çamura çevirdi.",
+      "Köpek bahçede çamur sıçrattı."
+    ],
+    "uk": [
+      "На моє взуття потрапило багно.",
+      "Дитина прийшла додому вся в багні.",
+      "Дощ перетворив дорогу на багно.",
+      "Собака розбризкав багно у дворі."
+    ],
+    "vi": [
+      "Bùn dính vào giày tôi.",
+      "Đứa trẻ về nhà lấm lem bùn.",
+      "Mưa biến con đường thành bùn.",
+      "Con chó làm bùn bắn tung tóe trong sân."
+    ],
+    "yue": [
+      "泥黐咗喺我對鞋度。",
+      "個細路滿身泥返咗屋企。",
+      "落雨將條路變咗做泥。",
+      "隻狗喺個院度濺起泥。"
+    ],
+    "zh-Hans": [
+      "我的鞋上沾了泥。",
+      "孩子浑身是泥地回家了。",
+      "雨把路变成了泥。",
+      "狗在院子里把泥溅得到处都是。"
     ]
   }
 }

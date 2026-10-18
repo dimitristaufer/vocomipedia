@@ -276,36 +276,36 @@
       "difficulty": null
     },
     {
-      "target": "長い労働の一日が終わって、すぐにねむりました。",
-      "reading": "ながいろうどうのついたちがおわって、すぐにねむりました。",
+      "target": "長い一日の労働が終わって、すぐに眠りました。",
+      "reading": "ながいいちにちのろうどうがおわって、すぐにねむりました。",
       "translations": {
-        "en": "After a long day of labor, I fell asleep right away.",
+        "en": "After a long day at work, I fell asleep right away.",
         "ar": "بعد يوم طويل من العمل، نمت على الفور.",
-        "cs": "Po dlouhém dni práce jsem hned usnul.",
+        "cs": "Po dlouhém pracovním dni se mi hned podařilo usnout.",
         "da": "Efter en lang arbejdsdag faldt jeg straks i søvn.",
         "de": "Nach einem langen Arbeitstag bin ich sofort eingeschlafen.",
         "el": "Μετά από μια κουραστική μέρα δουλειάς, αποκοιμήθηκα αμέσως.",
-        "es": "Después de un largo día de trabajo, me quedé dormido enseguida.",
+        "es": "Después de una larga jornada de trabajo, me dormí enseguida.",
         "fi": "Pitkän työpäivän jälkeen nukahdin heti.",
-        "fr": "Après une longue journée de travail, je me suis endormi tout de suite.",
+        "fr": "Après une longue journée de travail, j’ai vite trouvé le sommeil.",
         "he": "אחרי יום עבודה ארוך, נרדמתי מיד.",
-        "hi": "लंबे काम के दिन के बाद, मैं तुरंत सो गया।",
+        "hi": "लंबे काम के दिन के बाद मुझे तुरंत नींद आ गई।",
         "hu": "Egy hosszú munkanap után azonnal elaludtam.",
         "id": "Setelah seharian bekerja keras, saya langsung tertidur.",
-        "it": "Dopo una lunga giornata di lavoro, mi sono addormentato subito.",
-        "ko": "긴 노동의 하루가 끝나고 바로 잠들었습니다.",
+        "it": "Dopo una lunga giornata di lavoro, ho subito preso sonno.",
+        "ko": "하루 종일 일한 뒤 바로 잠들었습니다.",
         "nb": "Etter en lang arbeidsdag sovnet jeg med en gang.",
         "nl": "Na een lange werkdag viel ik meteen in slaap.",
-        "pl": "Po długim dniu pracy od razu zasnąłem.",
+        "pl": "Po długim dniu pracy od razu udało mi się zasnąć.",
         "pt": "Depois de um longo dia de trabalho, dormi na hora.",
         "ro": "După o zi lungă de muncă, am adormit imediat.",
-        "ru": "После долгого рабочего дня я сразу заснул.",
+        "ru": "После долгого рабочего дня мне сразу удалось уснуть.",
         "sv": "Efter en lång arbetsdag somnade jag direkt.",
         "tr": "Uzun bir iş gününden sonra hemen uykuya daldım.",
-        "uk": "Після довгого робочого дня я відразу заснув.",
-        "vi": "Sau một ngày lao động dài, tôi ngủ ngay.",
+        "uk": "Після довгого робочого дня мені одразу вдалося заснути.",
+        "vi": "Sau một ngày dài làm việc, tôi ngủ ngay.",
         "yue": "長咗一日工之後，我即刻瞓著咗。",
-        "zh-Hans": "经过漫长的一天劳动后，我立刻睡着了。"
+        "zh-Hans": "漫长的工作日结束后，我立刻睡着了。"
       },
       "tokens": [
         {
@@ -328,32 +328,57 @@
               "length": 1
             }
           ],
-          "ruby_confidence": "high",
-          "furigana": "ながい"
+          "ruby_confidence": "reviewed",
+          "furigana": "ながい",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
-          "surface": "労働",
-          "lemma": "労働",
-          "pos": "名詞/普通名詞/サ変可能/*/*/*",
+          "surface": "一",
+          "lemma": "一",
+          "pos": "名詞/数詞/*/*/*/*",
           "upos": "NOUN",
           "xpos": "名詞",
           "feats": {},
           "start": 2,
-          "end": 4,
+          "end": 3,
           "analyzer": "sudachipy_sudachidict_core_c",
-          "reading_kana": "ろうどう",
-          "ruby_text": "労働[ろうどう]",
+          "reading_kana": "いち",
+          "ruby_text": "一[いち]",
           "ruby_spans": [
             {
-              "base": "労働",
-              "reading": "ろうどう",
+              "base": "一",
+              "reading": "いち",
               "start": 0,
-              "length": 2
+              "length": 1
             }
           ],
-          "ruby_confidence": "medium",
-          "furigana": "ろうどう",
-          "is_main_word": true
+          "ruby_confidence": "reviewed",
+          "furigana": "いち",
+          "ruby_source": "mediawiki_sentence_ruby"
+        },
+        {
+          "surface": "日",
+          "lemma": "日",
+          "pos": "名詞/普通名詞/助数詞可能/*/*/*",
+          "upos": "NOUN",
+          "xpos": "名詞",
+          "feats": {},
+          "start": 3,
+          "end": 4,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "にち",
+          "ruby_text": "日[にち]",
+          "ruby_spans": [
+            {
+              "base": "日",
+              "reading": "にち",
+              "start": 0,
+              "length": 1
+            }
+          ],
+          "ruby_confidence": "reviewed",
+          "furigana": "にち",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "の",
@@ -372,27 +397,29 @@
           "furigana": "の"
         },
         {
-          "surface": "一日",
-          "lemma": "一日",
-          "pos": "名詞/普通名詞/副詞可能/*/*/*",
+          "surface": "労働",
+          "lemma": "労働",
+          "pos": "名詞/普通名詞/サ変可能/*/*/*",
           "upos": "NOUN",
           "xpos": "名詞",
           "feats": {},
           "start": 5,
           "end": 7,
           "analyzer": "sudachipy_sudachidict_core_c",
-          "reading_kana": "ついたち",
-          "ruby_text": "一日[ついたち]",
+          "reading_kana": "ろうどう",
+          "ruby_text": "労働[ろうどう]",
           "ruby_spans": [
             {
-              "base": "一日",
-              "reading": "ついたち",
+              "base": "労働",
+              "reading": "ろうどう",
               "start": 0,
               "length": 2
             }
           ],
-          "ruby_confidence": "medium",
-          "furigana": "ついたち"
+          "ruby_confidence": "reviewed",
+          "furigana": "ろうどう",
+          "ruby_source": "mediawiki_sentence_ruby",
+          "is_main_word": true
         },
         {
           "surface": "が",
@@ -430,8 +457,9 @@
               "length": 1
             }
           ],
-          "ruby_confidence": "high",
-          "furigana": "おわっ"
+          "ruby_confidence": "reviewed",
+          "furigana": "おわっ",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "て",
@@ -498,20 +526,28 @@
           "furigana": "に"
         },
         {
-          "surface": "ねむり",
-          "lemma": "ねむる",
+          "surface": "眠り",
+          "lemma": "眠る",
           "pos": "動詞/一般/*/*/五段-ラ行/連用形-一般",
           "upos": "VERB",
           "xpos": "動詞",
           "feats": {},
           "start": 16,
-          "end": 19,
+          "end": 18,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "ねむり",
-          "ruby_text": "ねむり",
-          "ruby_spans": [],
-          "ruby_confidence": "high",
-          "furigana": "ねむり"
+          "ruby_text": "眠[ねむ]り",
+          "ruby_spans": [
+            {
+              "base": "眠",
+              "reading": "ねむ",
+              "start": 0,
+              "length": 1
+            }
+          ],
+          "ruby_confidence": "reviewed",
+          "furigana": "ねむり",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "まし",
@@ -520,8 +556,8 @@
           "upos": "AUX",
           "xpos": "助動詞",
           "feats": {},
-          "start": 19,
-          "end": 21,
+          "start": 18,
+          "end": 20,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "まし",
           "ruby_text": "まし",
@@ -536,8 +572,8 @@
           "upos": "AUX",
           "xpos": "助動詞",
           "feats": {},
-          "start": 21,
-          "end": 22,
+          "start": 20,
+          "end": 21,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "た",
           "ruby_text": "た",
@@ -552,8 +588,8 @@
           "upos": "PUNCT",
           "xpos": "補助記号",
           "feats": {},
-          "start": 22,
-          "end": 23,
+          "start": 21,
+          "end": 22,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "。",
           "ruby_text": "。",
@@ -586,7 +622,7 @@
         "nb": "Det selskapet har lange arbeidstider.",
         "nl": "Dat bedrijf heeft lange werktijden.",
         "pl": "W tej firmie są długie godziny pracy.",
-        "pt": "Essa empresa tem longas horas de trabalho.",
+        "pt": "Essa empresa tem uma jornada de trabalho longa.",
         "ro": "Compania aceea are ore lungi de lucru.",
         "ru": "В той компании длинный рабочий день.",
         "sv": "Det företaget har långa arbetstider.",
@@ -754,33 +790,33 @@
       "target": "今日の労働が終わって、ほっとしました。",
       "reading": "きょうのろうどうがおわって、ほっとしました。",
       "translations": {
-        "en": "When today's labor was over, I felt relieved.",
+        "en": "When work was over for the day, I felt relieved.",
         "ar": "تنهدت بارتياح عندما انتهى عمل اليوم.",
         "cs": "Když dnešní práce skončila, ulevilo se mi.",
         "da": "Da dagens arbejde var slut, følte jeg lettelse.",
         "de": "Als die Arbeit für heute vorbei war, war ich erleichtert.",
         "el": "Όταν τελείωσε η σημερινή δουλειά, ένιωσα ανακούφιση.",
-        "es": "Cuando terminó el trabajo de hoy, me sentí aliviado.",
+        "es": "Cuando terminó el trabajo de hoy, sentí alivio.",
         "fi": "Kun päivän työt olivat ohi, huojennuin.",
-        "fr": "Quand le travail d'aujourd'hui a été terminé, j'ai été soulagé.",
+        "fr": "Quand le travail d’aujourd’hui a pris fin, j’ai ressenti un soulagement.",
         "he": "כשהעבודה של היום נגמרה, הרגשתי הקלה.",
         "hi": "आज का काम खत्म होने पर, मुझे राहत मिली।",
         "hu": "Amikor véget ért a mai munka, megkönnyebbültem.",
         "id": "Saat pekerjaan hari ini selesai, saya merasa lega.",
-        "it": "Quando il lavoro di oggi è finito, mi sono sentito sollevato.",
+        "it": "Quando il lavoro di oggi è finito, ho provato sollievo.",
         "ko": "오늘의 일이 끝나서 안도했습니다.",
         "nb": "Da dagens arbeid var over, følte jeg meg lettet.",
         "nl": "Toen het werk voor vandaag voorbij was, voelde ik me opgelucht.",
-        "pl": "Gdy dzisiejsza praca się skończyła, poczułem ulgę.",
+        "pl": "Gdy dzisiejsza praca się skończyła, ogarnęła mnie ulga.",
         "pt": "Quando o trabalho de hoje terminou, senti alívio.",
         "ro": "Când s-a terminat munca de azi, am simțit ușurare.",
-        "ru": "Когда сегодняшняя работа закончилась, я почувствовал облегчение.",
+        "ru": "Когда работа на сегодня закончилась, мне стало легче.",
         "sv": "När dagens arbete var slut kände jag lättnad.",
         "tr": "Bugünün işi bitince rahatladım.",
-        "uk": "Коли сьогоднішня робота закінчилася, я відчув полегшення.",
+        "uk": "Коли сьогоднішня робота закінчилася, мені стало легше.",
         "vi": "Khi công việc hôm nay xong, tôi thấy nhẹ nhõm.",
         "yue": "今日嘅工作完咗，我鬆咗一口氣。",
-        "zh-Hans": "今天的劳动结束后，我松了一口气。"
+        "zh-Hans": "今天的工作结束后，我松了一口气。"
       },
       "tokens": [
         {
@@ -1012,8 +1048,712 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-13T07:47:51Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:Ja n3/7e8a450586715731",
+      "revision_id": 80253,
+      "parent_revision_id": 68319,
+      "revision_timestamp_utc": "2026-10-13T07:47:51Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Fix the 一日 reading and phrase the long workday and relief translations naturally.",
+      "pulled_utc": "2026-10-18T17:39:06Z",
+      "applied_utc": "2026-10-18T17:39:43Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-12fafa7a081ea263",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "ja_n3:7e8a450586715731",
+        "pack_code": "ja_n3",
+        "entry_id": "労働",
+        "language": "ja",
+        "sentence_index": 2,
+        "old_sentence": "長い労働の一日が終わって、すぐにねむりました。",
+        "old_translations": {
+          "en": "After a long day of labor, I fell asleep right away.",
+          "ar": "بعد يوم طويل من العمل، نمت على الفور.",
+          "cs": "Po dlouhém dni práce jsem hned usnul.",
+          "da": "Efter en lang arbejdsdag faldt jeg straks i søvn.",
+          "de": "Nach einem langen Arbeitstag bin ich sofort eingeschlafen.",
+          "el": "Μετά από μια κουραστική μέρα δουλειάς, αποκοιμήθηκα αμέσως.",
+          "es": "Después de un largo día de trabajo, me quedé dormido enseguida.",
+          "fi": "Pitkän työpäivän jälkeen nukahdin heti.",
+          "fr": "Après une longue journée de travail, je me suis endormi tout de suite.",
+          "he": "אחרי יום עבודה ארוך, נרדמתי מיד.",
+          "hi": "लंबे काम के दिन के बाद, मैं तुरंत सो गया।",
+          "hu": "Egy hosszú munkanap után azonnal elaludtam.",
+          "id": "Setelah seharian bekerja keras, saya langsung tertidur.",
+          "it": "Dopo una lunga giornata di lavoro, mi sono addormentato subito.",
+          "ko": "긴 노동의 하루가 끝나고 바로 잠들었습니다.",
+          "nb": "Etter en lang arbeidsdag sovnet jeg med en gang.",
+          "nl": "Na een lange werkdag viel ik meteen in slaap.",
+          "pl": "Po długim dniu pracy od razu zasnąłem.",
+          "pt": "Depois de um longo dia de trabalho, dormi na hora.",
+          "ro": "După o zi lungă de muncă, am adormit imediat.",
+          "ru": "После долгого рабочего дня я сразу заснул.",
+          "sv": "Efter en lång arbetsdag somnade jag direkt.",
+          "tr": "Uzun bir iş gününden sonra hemen uykuya daldım.",
+          "uk": "Після довгого робочого дня я відразу заснув.",
+          "vi": "Sau một ngày lao động dài, tôi ngủ ngay.",
+          "yue": "長咗一日工之後，我即刻瞓著咗。",
+          "zh-Hans": "经过漫长的一天劳动后，我立刻睡着了。"
+        },
+        "proposed_sentence": "長い一日の労働が終わって、すぐに眠りました。",
+        "proposed_translations": {
+          "en": "After a long day at work, I fell asleep right away.",
+          "ar": "بعد يوم طويل من العمل، نمت على الفور.",
+          "cs": "Po dlouhém pracovním dni se mi hned podařilo usnout.",
+          "da": "Efter en lang arbejdsdag faldt jeg straks i søvn.",
+          "de": "Nach einem langen Arbeitstag bin ich sofort eingeschlafen.",
+          "el": "Μετά από μια κουραστική μέρα δουλειάς, αποκοιμήθηκα αμέσως.",
+          "es": "Después de una larga jornada de trabajo, me dormí enseguida.",
+          "fi": "Pitkän työpäivän jälkeen nukahdin heti.",
+          "fr": "Après une longue journée de travail, j’ai vite trouvé le sommeil.",
+          "he": "אחרי יום עבודה ארוך, נרדמתי מיד.",
+          "hi": "लंबे काम के दिन के बाद मुझे तुरंत नींद आ गई।",
+          "hu": "Egy hosszú munkanap után azonnal elaludtam.",
+          "id": "Setelah seharian bekerja keras, saya langsung tertidur.",
+          "it": "Dopo una lunga giornata di lavoro, ho subito preso sonno.",
+          "ko": "하루 종일 일한 뒤 바로 잠들었습니다.",
+          "nb": "Etter en lang arbeidsdag sovnet jeg med en gang.",
+          "nl": "Na een lange werkdag viel ik meteen in slaap.",
+          "pl": "Po długim dniu pracy od razu udało mi się zasnąć.",
+          "pt": "Depois de um longo dia de trabalho, dormi na hora.",
+          "ro": "După o zi lungă de muncă, am adormit imediat.",
+          "ru": "После долгого рабочего дня мне сразу удалось уснуть.",
+          "sv": "Efter en lång arbetsdag somnade jag direkt.",
+          "tr": "Uzun bir iş gününden sonra hemen uykuya daldım.",
+          "uk": "Після довгого робочого дня мені одразу вдалося заснути.",
+          "vi": "Sau một ngày dài làm việc, tôi ngủ ngay.",
+          "yue": "長咗一日工之後，我即刻瞓著咗。",
+          "zh-Hans": "漫长的工作日结束后，我立刻睡着了。"
+        },
+        "old_ruby_source": "長[なが]い労働[ろうどう]の一日[ついたち]が終[お]わって、すぐにねむりました。",
+        "proposed_ruby_source": "長[なが]い一[いち]日[にち]の労働[ろうどう]が終[お]わって、すぐに眠[ねむ]りました。",
+        "old_japanese": "長い労働の一日が終わって、すぐにねむりました。",
+        "old_english": "After a long day of labor, I fell asleep right away.",
+        "proposed_japanese": "長い一日の労働が終わって、すぐに眠りました。",
+        "proposed_english": "After a long day at work, I fell asleep right away.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "ja",
+          "sentence": "長い一日の労働が終わって、すぐに眠りました。",
+          "tokens": [
+            {
+              "surface": "長い",
+              "lemma": "長い",
+              "pos": "形容詞/一般/*/*/形容詞/連体形-一般",
+              "upos": "ADJ",
+              "xpos": "形容詞",
+              "feats": {},
+              "start": 0,
+              "end": 2,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "ながい",
+              "ruby_text": "長[なが]い",
+              "ruby_spans": [
+                {
+                  "base": "長",
+                  "reading": "なが",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "ながい",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "一",
+              "lemma": "一",
+              "pos": "名詞/数詞/*/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 2,
+              "end": 3,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "いち",
+              "ruby_text": "一[いち]",
+              "ruby_spans": [
+                {
+                  "base": "一",
+                  "reading": "いち",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "いち",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "日",
+              "lemma": "日",
+              "pos": "名詞/普通名詞/助数詞可能/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 3,
+              "end": 4,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "にち",
+              "ruby_text": "日[にち]",
+              "ruby_spans": [
+                {
+                  "base": "日",
+                  "reading": "にち",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "にち",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "の",
+              "lemma": "の",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 4,
+              "end": 5,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "の",
+              "ruby_text": "の",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "の"
+            },
+            {
+              "surface": "労働",
+              "lemma": "労働",
+              "pos": "名詞/普通名詞/サ変可能/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 5,
+              "end": 7,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "ろうどう",
+              "ruby_text": "労働[ろうどう]",
+              "ruby_spans": [
+                {
+                  "base": "労働",
+                  "reading": "ろうどう",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "ろうどう",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "が",
+              "lemma": "が",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 7,
+              "end": 8,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "が",
+              "ruby_text": "が",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "が"
+            },
+            {
+              "surface": "終わっ",
+              "lemma": "終わる",
+              "pos": "動詞/非自立可能/*/*/五段-ラ行/連用形-促音便",
+              "upos": "VERB",
+              "xpos": "動詞",
+              "feats": {},
+              "start": 8,
+              "end": 11,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "おわっ",
+              "ruby_text": "終[お]わっ",
+              "ruby_spans": [
+                {
+                  "base": "終",
+                  "reading": "お",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "おわっ",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "て",
+              "lemma": "て",
+              "pos": "助詞/接続助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 11,
+              "end": 12,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "て",
+              "ruby_text": "て",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "て"
+            },
+            {
+              "surface": "、",
+              "lemma": "、",
+              "pos": "補助記号/読点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 12,
+              "end": 13,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "、",
+              "ruby_text": "、",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "、"
+            },
+            {
+              "surface": "すぐ",
+              "lemma": "すぐ",
+              "pos": "副詞/*/*/*/*/*",
+              "upos": "ADV",
+              "xpos": "副詞",
+              "feats": {},
+              "start": 13,
+              "end": 15,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "すぐ",
+              "ruby_text": "すぐ",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "すぐ"
+            },
+            {
+              "surface": "に",
+              "lemma": "に",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 15,
+              "end": 16,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "に",
+              "ruby_text": "に",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "に"
+            },
+            {
+              "surface": "眠り",
+              "lemma": "眠る",
+              "pos": "動詞/一般/*/*/五段-ラ行/連用形-一般",
+              "upos": "VERB",
+              "xpos": "動詞",
+              "feats": {},
+              "start": 16,
+              "end": 18,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "ねむり",
+              "ruby_text": "眠[ねむ]り",
+              "ruby_spans": [
+                {
+                  "base": "眠",
+                  "reading": "ねむ",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "ねむり",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "まし",
+              "lemma": "ます",
+              "pos": "助動詞/*/*/*/助動詞-マス/連用形-一般",
+              "upos": "AUX",
+              "xpos": "助動詞",
+              "feats": {},
+              "start": 18,
+              "end": 20,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "まし",
+              "ruby_text": "まし",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "まし"
+            },
+            {
+              "surface": "た",
+              "lemma": "た",
+              "pos": "助動詞/*/*/*/助動詞-タ/終止形-一般",
+              "upos": "AUX",
+              "xpos": "助動詞",
+              "feats": {},
+              "start": 20,
+              "end": 21,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "た",
+              "ruby_text": "た",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "た"
+            },
+            {
+              "surface": "。",
+              "lemma": "。",
+              "pos": "補助記号/句点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 21,
+              "end": 22,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "。",
+              "ruby_text": "。",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "。"
+            }
+          ],
+          "reading": "ながいいちにちのろうどうがおわって、すぐにねむりました。",
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "warnings": [
+            "mediawiki ruby hints applied"
+          ]
+        },
+        "generated_tokens": [
+          {
+            "surface": "長い",
+            "lemma": "長い",
+            "pos": "形容詞/一般/*/*/形容詞/連体形-一般",
+            "upos": "ADJ",
+            "xpos": "形容詞",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ながい",
+            "ruby_text": "長[なが]い",
+            "ruby_spans": [
+              {
+                "base": "長",
+                "reading": "なが",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "ながい",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "一",
+            "lemma": "一",
+            "pos": "名詞/数詞/*/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 2,
+            "end": 3,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "いち",
+            "ruby_text": "一[いち]",
+            "ruby_spans": [
+              {
+                "base": "一",
+                "reading": "いち",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "いち",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "日",
+            "lemma": "日",
+            "pos": "名詞/普通名詞/助数詞可能/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 3,
+            "end": 4,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "にち",
+            "ruby_text": "日[にち]",
+            "ruby_spans": [
+              {
+                "base": "日",
+                "reading": "にち",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "にち",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "の",
+            "lemma": "の",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 4,
+            "end": 5,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "の",
+            "ruby_text": "の",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "の"
+          },
+          {
+            "surface": "労働",
+            "lemma": "労働",
+            "pos": "名詞/普通名詞/サ変可能/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 5,
+            "end": 7,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ろうどう",
+            "ruby_text": "労働[ろうどう]",
+            "ruby_spans": [
+              {
+                "base": "労働",
+                "reading": "ろうどう",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "ろうどう",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "が",
+            "lemma": "が",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 7,
+            "end": 8,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "が",
+            "ruby_text": "が",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "が"
+          },
+          {
+            "surface": "終わっ",
+            "lemma": "終わる",
+            "pos": "動詞/非自立可能/*/*/五段-ラ行/連用形-促音便",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 8,
+            "end": 11,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "おわっ",
+            "ruby_text": "終[お]わっ",
+            "ruby_spans": [
+              {
+                "base": "終",
+                "reading": "お",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "おわっ",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "て",
+            "lemma": "て",
+            "pos": "助詞/接続助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 11,
+            "end": 12,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "て",
+            "ruby_text": "て",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "て"
+          },
+          {
+            "surface": "、",
+            "lemma": "、",
+            "pos": "補助記号/読点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 12,
+            "end": 13,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "、",
+            "ruby_text": "、",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "、"
+          },
+          {
+            "surface": "すぐ",
+            "lemma": "すぐ",
+            "pos": "副詞/*/*/*/*/*",
+            "upos": "ADV",
+            "xpos": "副詞",
+            "feats": {},
+            "start": 13,
+            "end": 15,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "すぐ",
+            "ruby_text": "すぐ",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "すぐ"
+          },
+          {
+            "surface": "に",
+            "lemma": "に",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 15,
+            "end": 16,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "に",
+            "ruby_text": "に",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "に"
+          },
+          {
+            "surface": "眠り",
+            "lemma": "眠る",
+            "pos": "動詞/一般/*/*/五段-ラ行/連用形-一般",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 16,
+            "end": 18,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ねむり",
+            "ruby_text": "眠[ねむ]り",
+            "ruby_spans": [
+              {
+                "base": "眠",
+                "reading": "ねむ",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "ねむり",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "まし",
+            "lemma": "ます",
+            "pos": "助動詞/*/*/*/助動詞-マス/連用形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 18,
+            "end": 20,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "まし",
+            "ruby_text": "まし",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "まし"
+          },
+          {
+            "surface": "た",
+            "lemma": "た",
+            "pos": "助動詞/*/*/*/助動詞-タ/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 20,
+            "end": 21,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "た",
+            "ruby_text": "た",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "た"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 21,
+            "end": 22,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
+          }
+        ],
+        "generated_reading": "ながいいちにちのろうどうがおわって、すぐにねむりました。",
+        "analyzer": "sudachipy_sudachidict_core_c",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-18T17:39:06Z",
+        "updated_utc": "2026-10-18T17:40:51Z",
+        "applied_utc": "2026-10-18T17:40:51Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-18T17:40:51Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -1035,15 +1775,9 @@
     ],
     "fu": [
       "ちちはこうじょうでろうどうをしています。",
-      "ながいろうどうのいちにちがおわって、すぐにねむりました。",
+      "ながいろうどうのついたちがおわって、すぐにねむりました。",
       "そのかいしゃはろうどうじかんがながいです。",
       "きょうのろうどうがおわって、ほっとしました。"
-    ],
-    "en": [
-      "My father works in a factory.",
-      "After a long day of labor, I fell asleep right away.",
-      "That company has long working hours.",
-      "When today's labor was over, I felt relieved."
     ],
     "generation": {
       "generator": "vocomipedia_source_generator.py",
@@ -1082,190 +1816,6 @@
         "parts_of_speech": "Noun; Suru verb; Intransitive verb"
       }
     },
-    "word_en": "labor; labour; work",
-    "word_es": "trabajo",
-    "word_fr": "travail",
-    "word_de": "Arbeit",
-    "word_it": "lavoro",
-    "word_ko": "노동",
-    "word_zh-Hans": "劳动",
-    "word_yue": "勞動",
-    "word_ru": "труд",
-    "word_pt": "trabalho",
-    "word_he": "עבודה",
-    "word_tr": "emek",
-    "word_vi": "lao động",
-    "word_ar": "عمل",
-    "word_nl": "arbeid",
-    "word_uk": "праця",
-    "word_hu": "munka",
-    "word_hi": "श्रम",
-    "word_pl": "praca",
-    "word_el": "εργασία",
-    "word_nb": "arbeid",
-    "word_id": "kerja",
-    "word_sv": "arbete",
-    "word_ro": "muncă",
-    "word_cs": "práce",
-    "word_da": "arbejde",
-    "word_fi": "työ",
-    "word_ja": "労働",
-    "ar": [
-      "يعمل أبي في مصنع.",
-      "بعد يوم طويل من العمل، نمت على الفور.",
-      "ساعات العمل في تلك الشركة طويلة.",
-      "تنهدت بارتياح عندما انتهى عمل اليوم."
-    ],
-    "cs": [
-      "Můj otec pracuje v továrně.",
-      "Po dlouhém dni práce jsem hned usnul.",
-      "V té společnosti jsou dlouhé pracovní hodiny.",
-      "Když dnešní práce skončila, ulevilo se mi."
-    ],
-    "da": [
-      "Min far arbejder på en fabrik.",
-      "Efter en lang arbejdsdag faldt jeg straks i søvn.",
-      "Den virksomhed har lange arbejdstider.",
-      "Da dagens arbejde var slut, følte jeg lettelse."
-    ],
-    "de": [
-      "Mein Vater arbeitet in einer Fabrik.",
-      "Nach einem langen Arbeitstag bin ich sofort eingeschlafen.",
-      "Die Firma hat lange Arbeitszeiten.",
-      "Als die Arbeit für heute vorbei war, war ich erleichtert."
-    ],
-    "el": [
-      "Ο πατέρας μου δουλεύει σε ένα εργοστάσιο.",
-      "Μετά από μια κουραστική μέρα δουλειάς, αποκοιμήθηκα αμέσως.",
-      "Η εταιρεία αυτή έχει πολλές ώρες εργασίας.",
-      "Όταν τελείωσε η σημερινή δουλειά, ένιωσα ανακούφιση."
-    ],
-    "es": [
-      "Mi padre trabaja en una fábrica.",
-      "Después de un largo día de trabajo, me quedé dormido enseguida.",
-      "Esa empresa tiene largas jornadas de trabajo.",
-      "Cuando terminó el trabajo de hoy, me sentí aliviado."
-    ],
-    "fi": [
-      "Isäni työskentelee tehtaassa.",
-      "Pitkän työpäivän jälkeen nukahdin heti.",
-      "Tuolla yrityksellä on pitkät työajat.",
-      "Kun päivän työt olivat ohi, huojennuin."
-    ],
-    "fr": [
-      "Mon père travaille dans une usine.",
-      "Après une longue journée de travail, je me suis endormi tout de suite.",
-      "Cette entreprise a de longues heures de travail.",
-      "Quand le travail d'aujourd'hui a été terminé, j'ai été soulagé."
-    ],
-    "he": [
-      "אבא שלי עובד במפעל.",
-      "אחרי יום עבודה ארוך, נרדמתי מיד.",
-      "בחברה הזאת יש שעות עבודה ארוכות.",
-      "כשהעבודה של היום נגמרה, הרגשתי הקלה."
-    ],
-    "hi": [
-      "मेरे पिता एक कारखाने में काम करते हैं।",
-      "लंबे काम के दिन के बाद, मैं तुरंत सो गया।",
-      "उस कंपनी में काम के घंटे लंबे हैं।",
-      "आज का काम खत्म होने पर, मुझे राहत मिली।"
-    ],
-    "hu": [
-      "Az apám egy gyárban dolgozik.",
-      "Egy hosszú munkanap után azonnal elaludtam.",
-      "Annál a cégnél hosszú a munkaidő.",
-      "Amikor véget ért a mai munka, megkönnyebbültem."
-    ],
-    "id": [
-      "Ayah saya bekerja di pabrik.",
-      "Setelah seharian bekerja keras, saya langsung tertidur.",
-      "Perusahaan itu punya jam kerja yang panjang.",
-      "Saat pekerjaan hari ini selesai, saya merasa lega."
-    ],
-    "it": [
-      "Mio padre lavora in una fabbrica.",
-      "Dopo una lunga giornata di lavoro, mi sono addormentato subito.",
-      "Quella azienda ha orari di lavoro lunghi.",
-      "Quando il lavoro di oggi è finito, mi sono sentito sollevato."
-    ],
-    "ko": [
-      "아버지는 공장에서 일하십니다.",
-      "긴 노동의 하루가 끝나고 바로 잠들었습니다.",
-      "그 회사는 근무 시간이 깁니다.",
-      "오늘의 일이 끝나서 안도했습니다."
-    ],
-    "nb": [
-      "Faren min jobber på en fabrikk.",
-      "Etter en lang arbeidsdag sovnet jeg med en gang.",
-      "Det selskapet har lange arbeidstider.",
-      "Da dagens arbeid var over, følte jeg meg lettet."
-    ],
-    "nl": [
-      "Mijn vader werkt in een fabriek.",
-      "Na een lange werkdag viel ik meteen in slaap.",
-      "Dat bedrijf heeft lange werktijden.",
-      "Toen het werk voor vandaag voorbij was, voelde ik me opgelucht."
-    ],
-    "pl": [
-      "Mój tata pracuje w fabryce.",
-      "Po długim dniu pracy od razu zasnąłem.",
-      "W tej firmie są długie godziny pracy.",
-      "Gdy dzisiejsza praca się skończyła, poczułem ulgę."
-    ],
-    "pt": [
-      "Meu pai trabalha em uma fábrica.",
-      "Depois de um longo dia de trabalho, dormi na hora.",
-      "Essa empresa tem longas horas de trabalho.",
-      "Quando o trabalho de hoje terminou, senti alívio."
-    ],
-    "ro": [
-      "Tatăl meu lucrează într-o fabrică.",
-      "După o zi lungă de muncă, am adormit imediat.",
-      "Compania aceea are ore lungi de lucru.",
-      "Când s-a terminat munca de azi, am simțit ușurare."
-    ],
-    "ru": [
-      "Мой отец работает на фабрике.",
-      "После долгого рабочего дня я сразу заснул.",
-      "В той компании длинный рабочий день.",
-      "Когда сегодняшняя работа закончилась, я почувствовал облегчение."
-    ],
-    "sv": [
-      "Min pappa arbetar på en fabrik.",
-      "Efter en lång arbetsdag somnade jag direkt.",
-      "Det företaget har långa arbetstider.",
-      "När dagens arbete var slut kände jag lättnad."
-    ],
-    "tr": [
-      "Babam bir fabrikada çalışıyor.",
-      "Uzun bir iş gününden sonra hemen uykuya daldım.",
-      "O şirketin çalışma saatleri uzun.",
-      "Bugünün işi bitince rahatladım."
-    ],
-    "uk": [
-      "Мій батько працює на фабриці.",
-      "Після довгого робочого дня я відразу заснув.",
-      "У тій компанії довгий робочий день.",
-      "Коли сьогоднішня робота закінчилася, я відчув полегшення."
-    ],
-    "vi": [
-      "Bố tôi làm việc ở một nhà máy.",
-      "Sau một ngày lao động dài, tôi ngủ ngay.",
-      "Công ty đó có giờ làm việc dài.",
-      "Khi công việc hôm nay xong, tôi thấy nhẹ nhõm."
-    ],
-    "yue": [
-      "我爸爸喺工廠做嘢。",
-      "長咗一日工之後，我即刻瞓著咗。",
-      "嗰間公司嘅工時好長。",
-      "今日嘅工作完咗，我鬆咗一口氣。"
-    ],
-    "zh-Hans": [
-      "我父亲在工厂工作。",
-      "经过漫长的一天劳动后，我立刻睡着了。",
-      "那家公司的工作时间很长。",
-      "今天的劳动结束后，我松了一口气。"
-    ],
     "pos_analysis": [
       {
         "sentence": "父は工場で労働をしています。",
@@ -1472,7 +2022,7 @@
         "difficulty_aggregated": null
       },
       {
-        "sentence": "長い労働の一日が終わって、すぐにねむりました。",
+        "sentence": "長い一日の労働が終わって、すぐに眠りました。",
         "tokens": [
           {
             "surface": "長い",
@@ -1494,32 +2044,57 @@
                 "length": 1
               }
             ],
-            "ruby_confidence": "high",
-            "furigana": "ながい"
+            "ruby_confidence": "reviewed",
+            "furigana": "ながい",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
-            "surface": "労働",
-            "lemma": "労働",
-            "pos": "名詞/普通名詞/サ変可能/*/*/*",
+            "surface": "一",
+            "lemma": "一",
+            "pos": "名詞/数詞/*/*/*/*",
             "upos": "NOUN",
             "xpos": "名詞",
             "feats": {},
             "start": 2,
-            "end": 4,
+            "end": 3,
             "analyzer": "sudachipy_sudachidict_core_c",
-            "reading_kana": "ろうどう",
-            "ruby_text": "労働[ろうどう]",
+            "reading_kana": "いち",
+            "ruby_text": "一[いち]",
             "ruby_spans": [
               {
-                "base": "労働",
-                "reading": "ろうどう",
+                "base": "一",
+                "reading": "いち",
                 "start": 0,
-                "length": 2
+                "length": 1
               }
             ],
-            "ruby_confidence": "medium",
-            "furigana": "ろうどう",
-            "is_main_word": true
+            "ruby_confidence": "reviewed",
+            "furigana": "いち",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "日",
+            "lemma": "日",
+            "pos": "名詞/普通名詞/助数詞可能/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 3,
+            "end": 4,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "にち",
+            "ruby_text": "日[にち]",
+            "ruby_spans": [
+              {
+                "base": "日",
+                "reading": "にち",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "にち",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "の",
@@ -1538,27 +2113,29 @@
             "furigana": "の"
           },
           {
-            "surface": "一日",
-            "lemma": "一日",
-            "pos": "名詞/普通名詞/副詞可能/*/*/*",
+            "surface": "労働",
+            "lemma": "労働",
+            "pos": "名詞/普通名詞/サ変可能/*/*/*",
             "upos": "NOUN",
             "xpos": "名詞",
             "feats": {},
             "start": 5,
             "end": 7,
             "analyzer": "sudachipy_sudachidict_core_c",
-            "reading_kana": "ついたち",
-            "ruby_text": "一日[ついたち]",
+            "reading_kana": "ろうどう",
+            "ruby_text": "労働[ろうどう]",
             "ruby_spans": [
               {
-                "base": "一日",
-                "reading": "ついたち",
+                "base": "労働",
+                "reading": "ろうどう",
                 "start": 0,
                 "length": 2
               }
             ],
-            "ruby_confidence": "medium",
-            "furigana": "ついたち"
+            "ruby_confidence": "reviewed",
+            "furigana": "ろうどう",
+            "ruby_source": "mediawiki_sentence_ruby",
+            "is_main_word": true
           },
           {
             "surface": "が",
@@ -1596,8 +2173,9 @@
                 "length": 1
               }
             ],
-            "ruby_confidence": "high",
-            "furigana": "おわっ"
+            "ruby_confidence": "reviewed",
+            "furigana": "おわっ",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "て",
@@ -1664,20 +2242,28 @@
             "furigana": "に"
           },
           {
-            "surface": "ねむり",
-            "lemma": "ねむる",
+            "surface": "眠り",
+            "lemma": "眠る",
             "pos": "動詞/一般/*/*/五段-ラ行/連用形-一般",
             "upos": "VERB",
             "xpos": "動詞",
             "feats": {},
             "start": 16,
-            "end": 19,
+            "end": 18,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "ねむり",
-            "ruby_text": "ねむり",
-            "ruby_spans": [],
-            "ruby_confidence": "high",
-            "furigana": "ねむり"
+            "ruby_text": "眠[ねむ]り",
+            "ruby_spans": [
+              {
+                "base": "眠",
+                "reading": "ねむ",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "ねむり",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "まし",
@@ -1686,8 +2272,8 @@
             "upos": "AUX",
             "xpos": "助動詞",
             "feats": {},
-            "start": 19,
-            "end": 21,
+            "start": 18,
+            "end": 20,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "まし",
             "ruby_text": "まし",
@@ -1702,8 +2288,8 @@
             "upos": "AUX",
             "xpos": "助動詞",
             "feats": {},
-            "start": 21,
-            "end": 22,
+            "start": 20,
+            "end": 21,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "た",
             "ruby_text": "た",
@@ -1718,8 +2304,8 @@
             "upos": "PUNCT",
             "xpos": "補助記号",
             "feats": {},
-            "start": 22,
-            "end": 23,
+            "start": 21,
+            "end": 22,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "。",
             "ruby_text": "。",
@@ -2106,6 +2692,196 @@
         ],
         "difficulty_aggregated": null
       }
+    ],
+    "word_en": "labor; labour; work",
+    "word_es": "trabajo",
+    "word_fr": "travail",
+    "word_de": "Arbeit",
+    "word_it": "lavoro",
+    "word_ko": "노동",
+    "word_zh-Hans": "劳动",
+    "word_yue": "勞動",
+    "word_ru": "труд",
+    "word_pt": "trabalho",
+    "word_he": "עבודה",
+    "word_tr": "emek",
+    "word_vi": "lao động",
+    "word_ar": "عمل",
+    "word_nl": "arbeid",
+    "word_uk": "праця",
+    "word_hu": "munka",
+    "word_hi": "श्रम",
+    "word_pl": "praca",
+    "word_el": "εργασία",
+    "word_nb": "arbeid",
+    "word_id": "kerja",
+    "word_sv": "arbete",
+    "word_ro": "muncă",
+    "word_cs": "práce",
+    "word_da": "arbejde",
+    "word_fi": "työ",
+    "word_ja": "労働",
+    "ar": [
+      "يعمل أبي في مصنع.",
+      "بعد يوم طويل من العمل، نمت على الفور.",
+      "ساعات العمل في تلك الشركة طويلة.",
+      "تنهدت بارتياح عندما انتهى عمل اليوم."
+    ],
+    "cs": [
+      "Můj otec pracuje v továrně.",
+      "Po dlouhém dni práce jsem hned usnul.",
+      "V té společnosti jsou dlouhé pracovní hodiny.",
+      "Když dnešní práce skončila, ulevilo se mi."
+    ],
+    "da": [
+      "Min far arbejder på en fabrik.",
+      "Efter en lang arbejdsdag faldt jeg straks i søvn.",
+      "Den virksomhed har lange arbejdstider.",
+      "Da dagens arbejde var slut, følte jeg lettelse."
+    ],
+    "de": [
+      "Mein Vater arbeitet in einer Fabrik.",
+      "Nach einem langen Arbeitstag bin ich sofort eingeschlafen.",
+      "Die Firma hat lange Arbeitszeiten.",
+      "Als die Arbeit für heute vorbei war, war ich erleichtert."
+    ],
+    "el": [
+      "Ο πατέρας μου δουλεύει σε ένα εργοστάσιο.",
+      "Μετά από μια κουραστική μέρα δουλειάς, αποκοιμήθηκα αμέσως.",
+      "Η εταιρεία αυτή έχει πολλές ώρες εργασίας.",
+      "Όταν τελείωσε η σημερινή δουλειά, ένιωσα ανακούφιση."
+    ],
+    "en": [
+      "My father works in a factory.",
+      "After a long day of labor, I fell asleep right away.",
+      "That company has long working hours.",
+      "When work was over for the day, I felt relieved."
+    ],
+    "es": [
+      "Mi padre trabaja en una fábrica.",
+      "Después de un largo día de trabajo, me quedé dormido enseguida.",
+      "Esa empresa tiene largas jornadas de trabajo.",
+      "Cuando terminó el trabajo de hoy, sentí alivio."
+    ],
+    "fi": [
+      "Isäni työskentelee tehtaassa.",
+      "Pitkän työpäivän jälkeen nukahdin heti.",
+      "Tuolla yrityksellä on pitkät työajat.",
+      "Kun päivän työt olivat ohi, huojennuin."
+    ],
+    "fr": [
+      "Mon père travaille dans une usine.",
+      "Après une longue journée de travail, je me suis endormi tout de suite.",
+      "Cette entreprise a de longues heures de travail.",
+      "Quand le travail d’aujourd’hui a pris fin, j’ai ressenti un soulagement."
+    ],
+    "he": [
+      "אבא שלי עובד במפעל.",
+      "אחרי יום עבודה ארוך, נרדמתי מיד.",
+      "בחברה הזאת יש שעות עבודה ארוכות.",
+      "כשהעבודה של היום נגמרה, הרגשתי הקלה."
+    ],
+    "hi": [
+      "मेरे पिता एक कारखाने में काम करते हैं।",
+      "लंबे काम के दिन के बाद, मैं तुरंत सो गया।",
+      "उस कंपनी में काम के घंटे लंबे हैं।",
+      "आज का काम खत्म होने पर, मुझे राहत मिली।"
+    ],
+    "hu": [
+      "Az apám egy gyárban dolgozik.",
+      "Egy hosszú munkanap után azonnal elaludtam.",
+      "Annál a cégnél hosszú a munkaidő.",
+      "Amikor véget ért a mai munka, megkönnyebbültem."
+    ],
+    "id": [
+      "Ayah saya bekerja di pabrik.",
+      "Setelah seharian bekerja keras, saya langsung tertidur.",
+      "Perusahaan itu punya jam kerja yang panjang.",
+      "Saat pekerjaan hari ini selesai, saya merasa lega."
+    ],
+    "it": [
+      "Mio padre lavora in una fabbrica.",
+      "Dopo una lunga giornata di lavoro, mi sono addormentato subito.",
+      "Quella azienda ha orari di lavoro lunghi.",
+      "Quando il lavoro di oggi è finito, ho provato sollievo."
+    ],
+    "ko": [
+      "아버지는 공장에서 일하십니다.",
+      "긴 노동의 하루가 끝나고 바로 잠들었습니다.",
+      "그 회사는 근무 시간이 깁니다.",
+      "오늘의 일이 끝나서 안도했습니다."
+    ],
+    "nb": [
+      "Faren min jobber på en fabrikk.",
+      "Etter en lang arbeidsdag sovnet jeg med en gang.",
+      "Det selskapet har lange arbeidstider.",
+      "Da dagens arbeid var over, følte jeg meg lettet."
+    ],
+    "nl": [
+      "Mijn vader werkt in een fabriek.",
+      "Na een lange werkdag viel ik meteen in slaap.",
+      "Dat bedrijf heeft lange werktijden.",
+      "Toen het werk voor vandaag voorbij was, voelde ik me opgelucht."
+    ],
+    "pl": [
+      "Mój tata pracuje w fabryce.",
+      "Po długim dniu pracy od razu zasnąłem.",
+      "W tej firmie są długie godziny pracy.",
+      "Gdy dzisiejsza praca się skończyła, ogarnęła mnie ulga."
+    ],
+    "pt": [
+      "Meu pai trabalha em uma fábrica.",
+      "Depois de um longo dia de trabalho, dormi na hora.",
+      "Essa empresa tem uma jornada de trabalho longa.",
+      "Quando o trabalho de hoje terminou, senti alívio."
+    ],
+    "ro": [
+      "Tatăl meu lucrează într-o fabrică.",
+      "După o zi lungă de muncă, am adormit imediat.",
+      "Compania aceea are ore lungi de lucru.",
+      "Când s-a terminat munca de azi, am simțit ușurare."
+    ],
+    "ru": [
+      "Мой отец работает на фабрике.",
+      "После долгого рабочего дня я сразу заснул.",
+      "В той компании длинный рабочий день.",
+      "Когда работа на сегодня закончилась, мне стало легче."
+    ],
+    "sv": [
+      "Min pappa arbetar på en fabrik.",
+      "Efter en lång arbetsdag somnade jag direkt.",
+      "Det företaget har långa arbetstider.",
+      "När dagens arbete var slut kände jag lättnad."
+    ],
+    "tr": [
+      "Babam bir fabrikada çalışıyor.",
+      "Uzun bir iş gününden sonra hemen uykuya daldım.",
+      "O şirketin çalışma saatleri uzun.",
+      "Bugünün işi bitince rahatladım."
+    ],
+    "uk": [
+      "Мій батько працює на фабриці.",
+      "Після довгого робочого дня я відразу заснув.",
+      "У тій компанії довгий робочий день.",
+      "Коли сьогоднішня робота закінчилася, мені стало легше."
+    ],
+    "vi": [
+      "Bố tôi làm việc ở một nhà máy.",
+      "Sau một ngày lao động dài, tôi ngủ ngay.",
+      "Công ty đó có giờ làm việc dài.",
+      "Khi công việc hôm nay xong, tôi thấy nhẹ nhõm."
+    ],
+    "yue": [
+      "我爸爸喺工廠做嘢。",
+      "長咗一日工之後，我即刻瞓著咗。",
+      "嗰間公司嘅工時好長。",
+      "今日嘅工作完咗，我鬆咗一口氣。"
+    ],
+    "zh-Hans": [
+      "我父亲在工厂工作。",
+      "经过漫长的一天劳动后，我立刻睡着了。",
+      "那家公司的工作时间很长。",
+      "今天的工作结束后，我松了一口气。"
     ]
   }
 }

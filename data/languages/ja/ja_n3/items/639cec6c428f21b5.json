@@ -62,13 +62,13 @@
         "ko": "저는 사무 일을 합니다.",
         "nb": "Jeg jobber med kontorarbeid.",
         "nl": "Ik doe kantoorwerk.",
-        "pl": "Pracuję przy biurowych sprawach.",
+        "pl": "Wykonuję pracę biurową.",
         "pt": "Eu faço trabalho de escritório.",
         "ro": "Fac muncă de birou.",
-        "ru": "Я работаю в офисе.",
+        "ru": "Я занимаюсь офисной работой.",
         "sv": "Jag arbetar med kontorsarbete.",
         "tr": "Ofis işi yapıyorum.",
-        "uk": "Я працюю в офісі.",
+        "uk": "Я займаюся офісною роботою.",
         "vi": "Tôi làm công việc văn phòng.",
         "yue": "我做辦公室工作。",
         "zh-Hans": "我做办公室工作。"
@@ -632,10 +632,10 @@
       "difficulty": null
     },
     {
-      "target": "事務の手続きをしました。",
-      "reading": "じむのてつづきをしました。",
+      "target": "事務手続きをしました。",
+      "reading": "じむてつづきをしました。",
       "translations": {
-        "en": "I handled the office procedure.",
+        "en": "I handled the administrative paperwork.",
         "ar": "قمت بالإجراءات الإدارية.",
         "cs": "Vyřídil jsem administrativní záležitosti.",
         "da": "Jeg ordnede det administrative.",
@@ -644,8 +644,8 @@
         "es": "Hice el trámite de oficina.",
         "fi": "Hoidin toimistoon liittyvän asian.",
         "fr": "J’ai réglé les formalités administratives.",
-        "he": "טיפלתי בהליך המשרדי.",
-        "hi": "मैंने दफ्तर की प्रक्रिया पूरी की।",
+        "he": "טיפלתי בהליך המנהלי.",
+        "hi": "मैंने प्रशासनिक प्रक्रिया पूरी की।",
         "hu": "Elintéztem az irodai ügyintézést.",
         "id": "Saya mengurus prosedur kantor.",
         "it": "Ho sbrigato la pratica d'ufficio.",
@@ -653,79 +653,47 @@
         "nb": "Jeg ordnet den administrative saken.",
         "nl": "Ik heb de administratieve procedure afgehandeld.",
         "pl": "Załatwiłem formalności biurowe.",
-        "pt": "Eu resolvi o procedimento do escritório.",
-        "ro": "Am rezolvat procedura de birou.",
+        "pt": "Cuidei dos trâmites administrativos.",
+        "ro": "Am rezolvat formalitățile administrative.",
         "ru": "Я оформил служебную процедуру.",
         "sv": "Jag ordnade den administrativa saken.",
         "tr": "Ofis prosedürünü hallettim.",
-        "uk": "Я оформив офісну процедуру.",
+        "uk": "Я владнав адміністративні формальності.",
         "vi": "Tôi đã xử lý thủ tục văn phòng.",
         "yue": "我辦妥咗辦公室手續。",
         "zh-Hans": "我办理了办公室手续。"
       },
       "tokens": [
         {
-          "surface": "事務",
-          "lemma": "事務",
+          "surface": "事務手続き",
+          "lemma": "事務手続き",
           "pos": "名詞/普通名詞/一般/*/*/*",
           "upos": "NOUN",
           "xpos": "名詞",
           "feats": {},
           "start": 0,
-          "end": 2,
+          "end": 5,
           "analyzer": "sudachipy_sudachidict_core_c",
-          "reading_kana": "じむ",
-          "ruby_text": "事務[じむ]",
+          "reading_kana": "じむてつづき",
+          "ruby_text": "事務[じむ]手続[てつづ]き",
           "ruby_spans": [
             {
               "base": "事務",
               "reading": "じむ",
               "start": 0,
               "length": 2
-            }
-          ],
-          "ruby_confidence": "medium",
-          "furigana": "じむ",
-          "is_main_word": true
-        },
-        {
-          "surface": "の",
-          "lemma": "の",
-          "pos": "助詞/格助詞/*/*/*/*",
-          "upos": "PART",
-          "xpos": "助詞",
-          "feats": {},
-          "start": 2,
-          "end": 3,
-          "analyzer": "sudachipy_sudachidict_core_c",
-          "reading_kana": "の",
-          "ruby_text": "の",
-          "ruby_spans": [],
-          "ruby_confidence": "high",
-          "furigana": "の"
-        },
-        {
-          "surface": "手続き",
-          "lemma": "手続き",
-          "pos": "名詞/普通名詞/サ変可能/*/*/*",
-          "upos": "NOUN",
-          "xpos": "名詞",
-          "feats": {},
-          "start": 3,
-          "end": 6,
-          "analyzer": "sudachipy_sudachidict_core_c",
-          "reading_kana": "てつづき",
-          "ruby_text": "手続[てつづ]き",
-          "ruby_spans": [
+            },
             {
               "base": "手続",
               "reading": "てつづ",
-              "start": 0,
+              "start": 2,
               "length": 2
             }
           ],
-          "ruby_confidence": "high",
-          "furigana": "てつづき"
+          "ruby_confidence": "reviewed",
+          "furigana": "じむてつづき",
+          "ruby_source": "mediawiki_sentence_ruby",
+          "is_main_word": true
         },
         {
           "surface": "を",
@@ -734,8 +702,8 @@
           "upos": "PART",
           "xpos": "助詞",
           "feats": {},
-          "start": 6,
-          "end": 7,
+          "start": 5,
+          "end": 6,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "を",
           "ruby_text": "を",
@@ -750,8 +718,8 @@
           "upos": "VERB",
           "xpos": "動詞",
           "feats": {},
-          "start": 7,
-          "end": 8,
+          "start": 6,
+          "end": 7,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "し",
           "ruby_text": "し",
@@ -766,8 +734,8 @@
           "upos": "AUX",
           "xpos": "助動詞",
           "feats": {},
-          "start": 8,
-          "end": 10,
+          "start": 7,
+          "end": 9,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "まし",
           "ruby_text": "まし",
@@ -782,8 +750,8 @@
           "upos": "AUX",
           "xpos": "助動詞",
           "feats": {},
-          "start": 10,
-          "end": 11,
+          "start": 9,
+          "end": 10,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "た",
           "ruby_text": "た",
@@ -798,8 +766,8 @@
           "upos": "PUNCT",
           "xpos": "補助記号",
           "feats": {},
-          "start": 11,
-          "end": 12,
+          "start": 10,
+          "end": 11,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "。",
           "ruby_text": "。",
@@ -822,8 +790,356 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-13T01:30:16Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:Ja n3/639cec6c428f21b5",
+      "revision_id": 81159,
+      "parent_revision_id": 67622,
+      "revision_timestamp_utc": "2026-10-13T01:30:16Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Clarified office work and improved translations of administrative procedures.",
+      "pulled_utc": "2026-10-18T17:39:03Z",
+      "applied_utc": "2026-10-18T17:39:40Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-ad3b333ed3448528",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "ja_n3:639cec6c428f21b5",
+        "pack_code": "ja_n3",
+        "entry_id": "事務",
+        "language": "ja",
+        "sentence_index": 4,
+        "old_sentence": "事務の手続きをしました。",
+        "old_translations": {
+          "en": "I handled the office procedure.",
+          "ar": "قمت بالإجراءات الإدارية.",
+          "cs": "Vyřídil jsem administrativní záležitosti.",
+          "da": "Jeg ordnede det administrative.",
+          "de": "Ich habe die Verwaltungsangelegenheit erledigt.",
+          "el": "Τακτοποίησα τη διοικητική διαδικασία.",
+          "es": "Hice el trámite de oficina.",
+          "fi": "Hoidin toimistoon liittyvän asian.",
+          "fr": "J’ai réglé les formalités administratives.",
+          "he": "טיפלתי בהליך המשרדי.",
+          "hi": "मैंने दफ्तर की प्रक्रिया पूरी की।",
+          "hu": "Elintéztem az irodai ügyintézést.",
+          "id": "Saya mengurus prosedur kantor.",
+          "it": "Ho sbrigato la pratica d'ufficio.",
+          "ko": "사무 절차를 처리했습니다.",
+          "nb": "Jeg ordnet den administrative saken.",
+          "nl": "Ik heb de administratieve procedure afgehandeld.",
+          "pl": "Załatwiłem formalności biurowe.",
+          "pt": "Eu resolvi o procedimento do escritório.",
+          "ro": "Am rezolvat procedura de birou.",
+          "ru": "Я оформил служебную процедуру.",
+          "sv": "Jag ordnade den administrativa saken.",
+          "tr": "Ofis prosedürünü hallettim.",
+          "uk": "Я оформив офісну процедуру.",
+          "vi": "Tôi đã xử lý thủ tục văn phòng.",
+          "yue": "我辦妥咗辦公室手續。",
+          "zh-Hans": "我办理了办公室手续。"
+        },
+        "proposed_sentence": "事務手続きをしました。",
+        "proposed_translations": {
+          "en": "I handled the administrative paperwork.",
+          "ar": "قمت بالإجراءات الإدارية.",
+          "cs": "Vyřídil jsem administrativní záležitosti.",
+          "da": "Jeg ordnede det administrative.",
+          "de": "Ich habe die Verwaltungsangelegenheit erledigt.",
+          "el": "Τακτοποίησα τη διοικητική διαδικασία.",
+          "es": "Hice el trámite de oficina.",
+          "fi": "Hoidin toimistoon liittyvän asian.",
+          "fr": "J’ai réglé les formalités administratives.",
+          "he": "טיפלתי בהליך המנהלי.",
+          "hi": "मैंने प्रशासनिक प्रक्रिया पूरी की।",
+          "hu": "Elintéztem az irodai ügyintézést.",
+          "id": "Saya mengurus prosedur kantor.",
+          "it": "Ho sbrigato la pratica d'ufficio.",
+          "ko": "사무 절차를 처리했습니다.",
+          "nb": "Jeg ordnet den administrative saken.",
+          "nl": "Ik heb de administratieve procedure afgehandeld.",
+          "pl": "Załatwiłem formalności biurowe.",
+          "pt": "Cuidei dos trâmites administrativos.",
+          "ro": "Am rezolvat formalitățile administrative.",
+          "ru": "Я оформил служебную процедуру.",
+          "sv": "Jag ordnade den administrativa saken.",
+          "tr": "Ofis prosedürünü hallettim.",
+          "uk": "Я владнав адміністративні формальності.",
+          "vi": "Tôi đã xử lý thủ tục văn phòng.",
+          "yue": "我辦妥咗辦公室手續。",
+          "zh-Hans": "我办理了办公室手续。"
+        },
+        "old_ruby_source": "事務[じむ]の手続[てつづ]きをしました。",
+        "proposed_ruby_source": "事務[じむ]手続[てつづ]きをしました。",
+        "old_japanese": "事務の手続きをしました。",
+        "old_english": "I handled the office procedure.",
+        "proposed_japanese": "事務手続きをしました。",
+        "proposed_english": "I handled the administrative paperwork.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "ja",
+          "sentence": "事務手続きをしました。",
+          "tokens": [
+            {
+              "surface": "事務手続き",
+              "lemma": "事務手続き",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 0,
+              "end": 5,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "じむてつづき",
+              "ruby_text": "事務[じむ]手続[てつづ]き",
+              "ruby_spans": [
+                {
+                  "base": "事務",
+                  "reading": "じむ",
+                  "start": 0,
+                  "length": 2
+                },
+                {
+                  "base": "手続",
+                  "reading": "てつづ",
+                  "start": 2,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "じむてつづき",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "を",
+              "lemma": "を",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 5,
+              "end": 6,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "を",
+              "ruby_text": "を",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "を"
+            },
+            {
+              "surface": "し",
+              "lemma": "する",
+              "pos": "動詞/非自立可能/*/*/サ行変格/連用形-一般",
+              "upos": "VERB",
+              "xpos": "動詞",
+              "feats": {},
+              "start": 6,
+              "end": 7,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "し",
+              "ruby_text": "し",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "し"
+            },
+            {
+              "surface": "まし",
+              "lemma": "ます",
+              "pos": "助動詞/*/*/*/助動詞-マス/連用形-一般",
+              "upos": "AUX",
+              "xpos": "助動詞",
+              "feats": {},
+              "start": 7,
+              "end": 9,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "まし",
+              "ruby_text": "まし",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "まし"
+            },
+            {
+              "surface": "た",
+              "lemma": "た",
+              "pos": "助動詞/*/*/*/助動詞-タ/終止形-一般",
+              "upos": "AUX",
+              "xpos": "助動詞",
+              "feats": {},
+              "start": 9,
+              "end": 10,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "た",
+              "ruby_text": "た",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "た"
+            },
+            {
+              "surface": "。",
+              "lemma": "。",
+              "pos": "補助記号/句点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 10,
+              "end": 11,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "。",
+              "ruby_text": "。",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "。"
+            }
+          ],
+          "reading": "じむてつづきをしました。",
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "warnings": [
+            "mediawiki ruby hints applied"
+          ]
+        },
+        "generated_tokens": [
+          {
+            "surface": "事務手続き",
+            "lemma": "事務手続き",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 0,
+            "end": 5,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "じむてつづき",
+            "ruby_text": "事務[じむ]手続[てつづ]き",
+            "ruby_spans": [
+              {
+                "base": "事務",
+                "reading": "じむ",
+                "start": 0,
+                "length": 2
+              },
+              {
+                "base": "手続",
+                "reading": "てつづ",
+                "start": 2,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "じむてつづき",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "を",
+            "lemma": "を",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 5,
+            "end": 6,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "を",
+            "ruby_text": "を",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "を"
+          },
+          {
+            "surface": "し",
+            "lemma": "する",
+            "pos": "動詞/非自立可能/*/*/サ行変格/連用形-一般",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 6,
+            "end": 7,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "し",
+            "ruby_text": "し",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "し"
+          },
+          {
+            "surface": "まし",
+            "lemma": "ます",
+            "pos": "助動詞/*/*/*/助動詞-マス/連用形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 7,
+            "end": 9,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "まし",
+            "ruby_text": "まし",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "まし"
+          },
+          {
+            "surface": "た",
+            "lemma": "た",
+            "pos": "助動詞/*/*/*/助動詞-タ/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 9,
+            "end": 10,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "た",
+            "ruby_text": "た",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "た"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 10,
+            "end": 11,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
+          }
+        ],
+        "generated_reading": "じむてつづきをしました。",
+        "analyzer": "sudachipy_sudachidict_core_c",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-18T17:39:03Z",
+        "updated_utc": "2026-10-18T17:40:45Z",
+        "applied_utc": "2026-10-18T17:40:45Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-18T17:40:45Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -844,16 +1160,10 @@
       "事務の手続きをしました。"
     ],
     "fu": [
-      "わたしはじむのしごとをしています。",
+      "わたくしはじむのしごとをしています。",
       "じむしつはにかいにあります。",
       "かのじょはじむがとくいです。",
       "じむのてつづきをしました。"
-    ],
-    "en": [
-      "I do office work.",
-      "The office is on the second floor.",
-      "She is good at office work.",
-      "I handled the office procedure."
     ],
     "generation": {
       "generator": "vocomipedia_source_generator.py",
@@ -892,190 +1202,6 @@
         "parts_of_speech": "Noun"
       }
     },
-    "word_en": "office work; clerical work; administration; business; affairs",
-    "word_es": "trabajo de oficina",
-    "word_fr": "travail de bureau",
-    "word_de": "Büroarbeit",
-    "word_it": "lavoro d'ufficio",
-    "word_ko": "사무",
-    "word_zh-Hans": "事务",
-    "word_yue": "事務",
-    "word_ru": "канцелярская работа",
-    "word_pt": "trabalho de escritório",
-    "word_he": "עבודת משרד",
-    "word_tr": "büro işi",
-    "word_vi": "công việc văn phòng",
-    "word_ar": "عمل مكتبي",
-    "word_nl": "kantoorwerk",
-    "word_uk": "канцелярська робота",
-    "word_hu": "irodai munka",
-    "word_hi": "दफ्तर का काम",
-    "word_pl": "praca biurowa",
-    "word_el": "γραφειακή εργασία",
-    "word_nb": "kontorarbeid",
-    "word_id": "pekerjaan kantor",
-    "word_sv": "kontorsarbete",
-    "word_ro": "muncă de birou",
-    "word_cs": "kancelářská práce",
-    "word_da": "kontorarbejde",
-    "word_fi": "toimistotyö",
-    "word_ja": "事務",
-    "ar": [
-      "أعمل في الأعمال المكتبية.",
-      "المكتب في الطابق الثاني.",
-      "هي جيدة في الأعمال المكتبية.",
-      "قمت بالإجراءات الإدارية."
-    ],
-    "cs": [
-      "Dělám kancelářskou práci.",
-      "Kancelář je ve druhém patře.",
-      "Je dobrá v kancelářské práci.",
-      "Vyřídil jsem administrativní záležitosti."
-    ],
-    "da": [
-      "Jeg arbejder med kontorarbejde.",
-      "Kontoret ligger på anden sal.",
-      "Hun er god til kontorarbejde.",
-      "Jeg ordnede det administrative."
-    ],
-    "de": [
-      "Ich mache Büroarbeit.",
-      "Das Büro ist im zweiten Stock.",
-      "Sie ist gut in der Büroarbeit.",
-      "Ich habe die Verwaltungsangelegenheit erledigt."
-    ],
-    "el": [
-      "Κάνω γραφειακή εργασία.",
-      "Το γραφείο είναι στον δεύτερο όροφο.",
-      "Είναι καλή στη γραφειακή εργασία.",
-      "Τακτοποίησα τη διοικητική διαδικασία."
-    ],
-    "es": [
-      "Hago trabajo de oficina.",
-      "La oficina está en el segundo piso.",
-      "Ella es buena en el trabajo de oficina.",
-      "Hice el trámite de oficina."
-    ],
-    "fi": [
-      "Teen toimistotöitä.",
-      "Toimisto on toisessa kerroksessa.",
-      "Hän on hyvä toimistotöissä.",
-      "Hoidin toimistoon liittyvän asian."
-    ],
-    "fr": [
-      "Je fais du travail de bureau.",
-      "Le bureau est au deuxième étage.",
-      "Elle est douée pour le travail de bureau.",
-      "J’ai réglé les formalités administratives."
-    ],
-    "he": [
-      "אני עושה עבודת משרד.",
-      "המשרד נמצא בקומה השנייה.",
-      "היא טובה בעבודת משרד.",
-      "טיפלתי בהליך המשרדי."
-    ],
-    "hi": [
-      "मैं दफ्तर का काम करता हूँ.",
-      "दफ्तर दूसरी मंज़िल पर है।",
-      "वह दफ्तर के काम में अच्छी है।",
-      "मैंने दफ्तर की प्रक्रिया पूरी की।"
-    ],
-    "hu": [
-      "Irodai munkát végzek.",
-      "Az iroda a második emeleten van.",
-      "Jó az irodai munkában.",
-      "Elintéztem az irodai ügyintézést."
-    ],
-    "id": [
-      "Saya bekerja di bagian administrasi.",
-      "Kantornya ada di lantai dua.",
-      "Dia pandai dalam pekerjaan administrasi.",
-      "Saya mengurus prosedur kantor."
-    ],
-    "it": [
-      "Faccio lavoro d'ufficio.",
-      "L'ufficio è al secondo piano.",
-      "Lei è brava nel lavoro d'ufficio.",
-      "Ho sbrigato la pratica d'ufficio."
-    ],
-    "ko": [
-      "저는 사무 일을 합니다.",
-      "사무실은 2층에 있습니다.",
-      "그녀는 사무 일을 잘합니다.",
-      "사무 절차를 처리했습니다."
-    ],
-    "nb": [
-      "Jeg jobber med kontorarbeid.",
-      "Kontoret ligger i andre etasje.",
-      "Hun er flink til kontorarbeid.",
-      "Jeg ordnet den administrative saken."
-    ],
-    "nl": [
-      "Ik doe kantoorwerk.",
-      "Het kantoor is op de tweede verdieping.",
-      "Zij is goed in kantoorwerk.",
-      "Ik heb de administratieve procedure afgehandeld."
-    ],
-    "pl": [
-      "Pracuję przy biurowych sprawach.",
-      "Biuro jest na drugim piętrze.",
-      "Ona dobrze sobie radzi z pracą biurową.",
-      "Załatwiłem formalności biurowe."
-    ],
-    "pt": [
-      "Eu faço trabalho de escritório.",
-      "O escritório fica no segundo andar.",
-      "Ela é boa em trabalho de escritório.",
-      "Eu resolvi o procedimento do escritório."
-    ],
-    "ro": [
-      "Fac muncă de birou.",
-      "Biroul este la etajul doi.",
-      "Ea se pricepe la munca de birou.",
-      "Am rezolvat procedura de birou."
-    ],
-    "ru": [
-      "Я работаю в офисе.",
-      "Офис находится на втором этаже.",
-      "Она хорошо справляется с офисной работой.",
-      "Я оформил служебную процедуру."
-    ],
-    "sv": [
-      "Jag arbetar med kontorsarbete.",
-      "Kontoret ligger på andra våningen.",
-      "Hon är duktig på kontorsarbete.",
-      "Jag ordnade den administrativa saken."
-    ],
-    "tr": [
-      "Ofis işi yapıyorum.",
-      "Ofis ikinci katta.",
-      "O, ofis işinde iyidir.",
-      "Ofis prosedürünü hallettim."
-    ],
-    "uk": [
-      "Я працюю в офісі.",
-      "Офіс на другому поверсі.",
-      "Вона добре справляється з офісною роботою.",
-      "Я оформив офісну процедуру."
-    ],
-    "vi": [
-      "Tôi làm công việc văn phòng.",
-      "Văn phòng ở tầng hai.",
-      "Cô ấy giỏi công việc văn phòng.",
-      "Tôi đã xử lý thủ tục văn phòng."
-    ],
-    "yue": [
-      "我做辦公室工作。",
-      "辦公室喺二樓。",
-      "佢好擅長辦公室工作。",
-      "我辦妥咗辦公室手續。"
-    ],
-    "zh-Hans": [
-      "我做办公室工作。",
-      "办公室在二楼。",
-      "她擅长办公室工作。",
-      "我办理了办公室手续。"
-    ],
     "pos_analysis": [
       {
         "sentence": "私は事務の仕事をしています。",
@@ -1578,70 +1704,38 @@
         "difficulty_aggregated": null
       },
       {
-        "sentence": "事務の手続きをしました。",
+        "sentence": "事務手続きをしました。",
         "tokens": [
           {
-            "surface": "事務",
-            "lemma": "事務",
+            "surface": "事務手続き",
+            "lemma": "事務手続き",
             "pos": "名詞/普通名詞/一般/*/*/*",
             "upos": "NOUN",
             "xpos": "名詞",
             "feats": {},
             "start": 0,
-            "end": 2,
+            "end": 5,
             "analyzer": "sudachipy_sudachidict_core_c",
-            "reading_kana": "じむ",
-            "ruby_text": "事務[じむ]",
+            "reading_kana": "じむてつづき",
+            "ruby_text": "事務[じむ]手続[てつづ]き",
             "ruby_spans": [
               {
                 "base": "事務",
                 "reading": "じむ",
                 "start": 0,
                 "length": 2
-              }
-            ],
-            "ruby_confidence": "medium",
-            "furigana": "じむ",
-            "is_main_word": true
-          },
-          {
-            "surface": "の",
-            "lemma": "の",
-            "pos": "助詞/格助詞/*/*/*/*",
-            "upos": "PART",
-            "xpos": "助詞",
-            "feats": {},
-            "start": 2,
-            "end": 3,
-            "analyzer": "sudachipy_sudachidict_core_c",
-            "reading_kana": "の",
-            "ruby_text": "の",
-            "ruby_spans": [],
-            "ruby_confidence": "high",
-            "furigana": "の"
-          },
-          {
-            "surface": "手続き",
-            "lemma": "手続き",
-            "pos": "名詞/普通名詞/サ変可能/*/*/*",
-            "upos": "NOUN",
-            "xpos": "名詞",
-            "feats": {},
-            "start": 3,
-            "end": 6,
-            "analyzer": "sudachipy_sudachidict_core_c",
-            "reading_kana": "てつづき",
-            "ruby_text": "手続[てつづ]き",
-            "ruby_spans": [
+              },
               {
                 "base": "手続",
                 "reading": "てつづ",
-                "start": 0,
+                "start": 2,
                 "length": 2
               }
             ],
-            "ruby_confidence": "high",
-            "furigana": "てつづき"
+            "ruby_confidence": "reviewed",
+            "furigana": "じむてつづき",
+            "ruby_source": "mediawiki_sentence_ruby",
+            "is_main_word": true
           },
           {
             "surface": "を",
@@ -1650,8 +1744,8 @@
             "upos": "PART",
             "xpos": "助詞",
             "feats": {},
-            "start": 6,
-            "end": 7,
+            "start": 5,
+            "end": 6,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "を",
             "ruby_text": "を",
@@ -1666,8 +1760,8 @@
             "upos": "VERB",
             "xpos": "動詞",
             "feats": {},
-            "start": 7,
-            "end": 8,
+            "start": 6,
+            "end": 7,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "し",
             "ruby_text": "し",
@@ -1682,8 +1776,8 @@
             "upos": "AUX",
             "xpos": "助動詞",
             "feats": {},
-            "start": 8,
-            "end": 10,
+            "start": 7,
+            "end": 9,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "まし",
             "ruby_text": "まし",
@@ -1698,8 +1792,8 @@
             "upos": "AUX",
             "xpos": "助動詞",
             "feats": {},
-            "start": 10,
-            "end": 11,
+            "start": 9,
+            "end": 10,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "た",
             "ruby_text": "た",
@@ -1714,8 +1808,8 @@
             "upos": "PUNCT",
             "xpos": "補助記号",
             "feats": {},
-            "start": 11,
-            "end": 12,
+            "start": 10,
+            "end": 11,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "。",
             "ruby_text": "。",
@@ -1726,6 +1820,196 @@
         ],
         "difficulty_aggregated": null
       }
+    ],
+    "word_en": "office work; clerical work; administration; business; affairs",
+    "word_es": "trabajo de oficina",
+    "word_fr": "travail de bureau",
+    "word_de": "Büroarbeit",
+    "word_it": "lavoro d'ufficio",
+    "word_ko": "사무",
+    "word_zh-Hans": "事务",
+    "word_yue": "事務",
+    "word_ru": "канцелярская работа",
+    "word_pt": "trabalho de escritório",
+    "word_he": "עבודת משרד",
+    "word_tr": "büro işi",
+    "word_vi": "công việc văn phòng",
+    "word_ar": "عمل مكتبي",
+    "word_nl": "kantoorwerk",
+    "word_uk": "канцелярська робота",
+    "word_hu": "irodai munka",
+    "word_hi": "दफ्तर का काम",
+    "word_pl": "praca biurowa",
+    "word_el": "γραφειακή εργασία",
+    "word_nb": "kontorarbeid",
+    "word_id": "pekerjaan kantor",
+    "word_sv": "kontorsarbete",
+    "word_ro": "muncă de birou",
+    "word_cs": "kancelářská práce",
+    "word_da": "kontorarbejde",
+    "word_fi": "toimistotyö",
+    "word_ja": "事務",
+    "ar": [
+      "أعمل في الأعمال المكتبية.",
+      "المكتب في الطابق الثاني.",
+      "هي جيدة في الأعمال المكتبية.",
+      "قمت بالإجراءات الإدارية."
+    ],
+    "cs": [
+      "Dělám kancelářskou práci.",
+      "Kancelář je ve druhém patře.",
+      "Je dobrá v kancelářské práci.",
+      "Vyřídil jsem administrativní záležitosti."
+    ],
+    "da": [
+      "Jeg arbejder med kontorarbejde.",
+      "Kontoret ligger på anden sal.",
+      "Hun er god til kontorarbejde.",
+      "Jeg ordnede det administrative."
+    ],
+    "de": [
+      "Ich mache Büroarbeit.",
+      "Das Büro ist im zweiten Stock.",
+      "Sie ist gut in der Büroarbeit.",
+      "Ich habe die Verwaltungsangelegenheit erledigt."
+    ],
+    "el": [
+      "Κάνω γραφειακή εργασία.",
+      "Το γραφείο είναι στον δεύτερο όροφο.",
+      "Είναι καλή στη γραφειακή εργασία.",
+      "Τακτοποίησα τη διοικητική διαδικασία."
+    ],
+    "en": [
+      "I do office work.",
+      "The office is on the second floor.",
+      "She is good at office work.",
+      "I handled the office procedure."
+    ],
+    "es": [
+      "Hago trabajo de oficina.",
+      "La oficina está en el segundo piso.",
+      "Ella es buena en el trabajo de oficina.",
+      "Hice el trámite de oficina."
+    ],
+    "fi": [
+      "Teen toimistotöitä.",
+      "Toimisto on toisessa kerroksessa.",
+      "Hän on hyvä toimistotöissä.",
+      "Hoidin toimistoon liittyvän asian."
+    ],
+    "fr": [
+      "Je fais du travail de bureau.",
+      "Le bureau est au deuxième étage.",
+      "Elle est douée pour le travail de bureau.",
+      "J’ai réglé les formalités administratives."
+    ],
+    "he": [
+      "אני עושה עבודת משרד.",
+      "המשרד נמצא בקומה השנייה.",
+      "היא טובה בעבודת משרד.",
+      "טיפלתי בהליך המשרדי."
+    ],
+    "hi": [
+      "मैं दफ्तर का काम करता हूँ.",
+      "दफ्तर दूसरी मंज़िल पर है।",
+      "वह दफ्तर के काम में अच्छी है।",
+      "मैंने दफ्तर की प्रक्रिया पूरी की।"
+    ],
+    "hu": [
+      "Irodai munkát végzek.",
+      "Az iroda a második emeleten van.",
+      "Jó az irodai munkában.",
+      "Elintéztem az irodai ügyintézést."
+    ],
+    "id": [
+      "Saya bekerja di bagian administrasi.",
+      "Kantornya ada di lantai dua.",
+      "Dia pandai dalam pekerjaan administrasi.",
+      "Saya mengurus prosedur kantor."
+    ],
+    "it": [
+      "Faccio lavoro d'ufficio.",
+      "L'ufficio è al secondo piano.",
+      "Lei è brava nel lavoro d'ufficio.",
+      "Ho sbrigato la pratica d'ufficio."
+    ],
+    "ko": [
+      "저는 사무 일을 합니다.",
+      "사무실은 2층에 있습니다.",
+      "그녀는 사무 일을 잘합니다.",
+      "사무 절차를 처리했습니다."
+    ],
+    "nb": [
+      "Jeg jobber med kontorarbeid.",
+      "Kontoret ligger i andre etasje.",
+      "Hun er flink til kontorarbeid.",
+      "Jeg ordnet den administrative saken."
+    ],
+    "nl": [
+      "Ik doe kantoorwerk.",
+      "Het kantoor is op de tweede verdieping.",
+      "Zij is goed in kantoorwerk.",
+      "Ik heb de administratieve procedure afgehandeld."
+    ],
+    "pl": [
+      "Wykonuję pracę biurową.",
+      "Biuro jest na drugim piętrze.",
+      "Ona dobrze sobie radzi z pracą biurową.",
+      "Załatwiłem formalności biurowe."
+    ],
+    "pt": [
+      "Eu faço trabalho de escritório.",
+      "O escritório fica no segundo andar.",
+      "Ela é boa em trabalho de escritório.",
+      "Eu resolvi o procedimento do escritório."
+    ],
+    "ro": [
+      "Fac muncă de birou.",
+      "Biroul este la etajul doi.",
+      "Ea se pricepe la munca de birou.",
+      "Am rezolvat procedura de birou."
+    ],
+    "ru": [
+      "Я занимаюсь офисной работой.",
+      "Офис находится на втором этаже.",
+      "Она хорошо справляется с офисной работой.",
+      "Я оформил служебную процедуру."
+    ],
+    "sv": [
+      "Jag arbetar med kontorsarbete.",
+      "Kontoret ligger på andra våningen.",
+      "Hon är duktig på kontorsarbete.",
+      "Jag ordnade den administrativa saken."
+    ],
+    "tr": [
+      "Ofis işi yapıyorum.",
+      "Ofis ikinci katta.",
+      "O, ofis işinde iyidir.",
+      "Ofis prosedürünü hallettim."
+    ],
+    "uk": [
+      "Я займаюся офісною роботою.",
+      "Офіс на другому поверсі.",
+      "Вона добре справляється з офісною роботою.",
+      "Я оформив офісну процедуру."
+    ],
+    "vi": [
+      "Tôi làm công việc văn phòng.",
+      "Văn phòng ở tầng hai.",
+      "Cô ấy giỏi công việc văn phòng.",
+      "Tôi đã xử lý thủ tục văn phòng."
+    ],
+    "yue": [
+      "我做辦公室工作。",
+      "辦公室喺二樓。",
+      "佢好擅長辦公室工作。",
+      "我辦妥咗辦公室手續。"
+    ],
+    "zh-Hans": [
+      "我做办公室工作。",
+      "办公室在二楼。",
+      "她擅长办公室工作。",
+      "我办理了办公室手续。"
     ]
   }
 }

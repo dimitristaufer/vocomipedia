@@ -221,12 +221,12 @@
       "difficulty": 5.6
     },
     {
-      "target": "Meine Mutter schreibt den Empfänger falsch.",
+      "target": "Meine Mutter schreibt den Namen des Empfängers falsch.",
       "reading": "/ˈmaɪ̯nə ˈmʊtɐ ʃraɪ̯pt deːn ɛmˈfɛŋɐ falʃ/",
       "translations": {
-        "de": "Meine Mutter schreibt den Empfänger falsch.",
+        "de": "Meine Mutter schreibt den Namen des Empfängers falsch.",
         "ipa": "/ˈmaɪ̯nə ˈmʊtɐ ʃraɪ̯pt deːn ɛmˈfɛŋɐ falʃ/",
-        "en": "My mom writes the recipient incorrectly.",
+        "en": "My mom writes the recipient's name incorrectly.",
         "es": "Mi madre escribe mal el nombre del destinatario.",
         "fr": "Ma mère écrit mal le nom du destinataire.",
         "it": "Mia madre scrive male il nome del destinatario.",
@@ -257,58 +257,103 @@
       "tokens": [
         {
           "surface": "Meine",
-          "surface_en": "my",
-          "furigana": "[ˈmaɪ̯nə]",
-          "pos": "DET",
           "lemma": "mein",
-          "explanation": "Possessive determiner; 1st person singular possessor; feminine nominative singular; agrees with 'Mutter'.",
-          "difficulty": 7
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "PPOSAT",
+          "feats": {},
+          "start": 0,
+          "end": 5,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "Mutter",
-          "surface_en": "mother",
-          "furigana": "[ˈmʊtɐ]",
-          "pos": "NOUN",
           "lemma": "Mutter",
-          "explanation": "Common noun; feminine; singular; nominative case; head of the subject NP.",
-          "difficulty": 7
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 6,
+          "end": 12,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "schreibt",
-          "surface_en": "writes",
-          "furigana": "[ʃraɪ̯pt]",
-          "pos": "VERB",
           "lemma": "schreiben",
-          "explanation": "Finite verb; present tense; 3rd person singular; transitive; main predicate; takes an accusative object.",
-          "difficulty": 10
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VVFIN",
+          "feats": {},
+          "start": 13,
+          "end": 21,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "den",
-          "surface_en": "the",
-          "furigana": "[deːn]",
-          "pos": "DET",
           "lemma": "der",
-          "explanation": "Definite article; accusative masculine singular; determiner of the verb's direct object.",
-          "difficulty": 2
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "ART",
+          "feats": {},
+          "start": 22,
+          "end": 25,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "Empfänger",
-          "surface_en": "recipient",
-          "furigana": "[ɛmˈpfɛŋɐ]",
+          "surface": "Namen",
+          "lemma": "Name",
           "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 26,
+          "end": 31,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "des",
+          "lemma": "der",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "ART",
+          "feats": {},
+          "start": 32,
+          "end": 35,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "Empfängers",
           "lemma": "Empfänger",
-          "explanation": "Common noun; masculine; singular; accusative case; direct object of 'schreibt' (the item being written/spelled).",
-          "difficulty": 10,
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 36,
+          "end": 46,
+          "analyzer": "spacy_de_core_news_lg",
           "is_main_word": true
         },
         {
-          "surface": "falsch.",
-          "surface_en": "incorrectly",
-          "furigana": "[falʃ]",
-          "pos": "ADV",
+          "surface": "falsch",
           "lemma": "falsch",
-          "explanation": "Adverb of manner; modifies 'schreibt'; indicates that the writing/spelling is incorrect.",
-          "difficulty": 7
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "ADJD",
+          "feats": {},
+          "start": 47,
+          "end": 53,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 53,
+          "end": 54,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 7.17
@@ -418,8 +463,336 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-14T22:14:06Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:De a1/9ef92942374126a6",
+      "revision_id": 86063,
+      "parent_revision_id": 12574,
+      "revision_timestamp_utc": "2026-10-14T22:14:06Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Content suggestion: improve German or translation wording",
+      "pulled_utc": "2026-10-18T17:32:05Z",
+      "applied_utc": "2026-10-18T17:32:11Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-6a6a26b0b4d0e5ed",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_a1:9ef92942374126a6",
+        "pack_code": "de_a1",
+        "entry_id": "Empfänger",
+        "language": "de",
+        "sentence_index": 3,
+        "old_sentence": "Meine Mutter schreibt den Empfänger falsch.",
+        "old_translations": {
+          "de": "Meine Mutter schreibt den Empfänger falsch.",
+          "ipa": "/ˈmaɪ̯nə ˈmʊtɐ ʃraɪ̯pt deːn ɛmˈfɛŋɐ falʃ/",
+          "en": "My mom writes the recipient incorrectly.",
+          "es": "Mi madre escribe mal el nombre del destinatario.",
+          "fr": "Ma mère écrit mal le nom du destinataire.",
+          "it": "Mia madre scrive male il nome del destinatario.",
+          "ko": "엄마가 받는 사람 이름을 틀리게 써요.",
+          "zh-Hans": "我妈妈把收件人名字写错了。",
+          "yue": "我媽媽將收件人個名寫錯咗。",
+          "ru": "Моя мама неправильно пишет имя получателя.",
+          "pt": "Minha mãe escreve o nome do destinatário errado.",
+          "he": "אמא שלי כותבת את שם הנמען לא נכון.",
+          "tr": "Annem alıcının adını yanlış yazıyor.",
+          "vi": "Mẹ tôi viết sai tên người nhận.",
+          "ar": "أمي تكتب اسم المستلم بشكل خاطئ.",
+          "nl": "Mijn moeder schrijft de naam van de ontvanger verkeerd.",
+          "uk": "Моя мама неправильно пише ім'я одержувача.",
+          "hu": "Anyukám rosszul írja a címzett nevét.",
+          "hi": "मेरी माँ प्राप्तकर्ता का नाम गलत लिखती हैं।",
+          "pl": "Moja mama źle pisze imię odbiorcy.",
+          "el": "Η μητέρα μου γράφει λάθος το όνομα του παραλήπτη.",
+          "nb": "Moren min skriver mottakerens navn feil.",
+          "id": "Ibu saya menulis nama penerima dengan salah.",
+          "sv": "Min mamma skriver mottagarens namn fel.",
+          "ro": "Mama mea scrie greșit numele destinatarului.",
+          "cs": "Moje maminka píše jméno adresáta špatně.",
+          "da": "Min mor skriver modtagerens navn forkert.",
+          "fi": "Äitini kirjoittaa vastaanottajan nimen väärin.",
+          "ja": "母は受取人の名前を間違えて書きます。"
+        },
+        "proposed_sentence": "Meine Mutter schreibt den Namen des Empfängers falsch.",
+        "proposed_translations": {
+          "de": "Meine Mutter schreibt den Namen des Empfängers falsch.",
+          "ipa": "/ˈmaɪ̯nə ˈmʊtɐ ʃraɪ̯pt deːn ɛmˈfɛŋɐ falʃ/",
+          "en": "My mom writes the recipient's name incorrectly.",
+          "es": "Mi madre escribe mal el nombre del destinatario.",
+          "fr": "Ma mère écrit mal le nom du destinataire.",
+          "it": "Mia madre scrive male il nome del destinatario.",
+          "ko": "엄마가 받는 사람 이름을 틀리게 써요.",
+          "zh-Hans": "我妈妈把收件人名字写错了。",
+          "yue": "我媽媽將收件人個名寫錯咗。",
+          "ru": "Моя мама неправильно пишет имя получателя.",
+          "pt": "Minha mãe escreve o nome do destinatário errado.",
+          "he": "אמא שלי כותבת את שם הנמען לא נכון.",
+          "tr": "Annem alıcının adını yanlış yazıyor.",
+          "vi": "Mẹ tôi viết sai tên người nhận.",
+          "ar": "أمي تكتب اسم المستلم بشكل خاطئ.",
+          "nl": "Mijn moeder schrijft de naam van de ontvanger verkeerd.",
+          "uk": "Моя мама неправильно пише ім'я одержувача.",
+          "hu": "Anyukám rosszul írja a címzett nevét.",
+          "hi": "मेरी माँ प्राप्तकर्ता का नाम गलत लिखती हैं।",
+          "pl": "Moja mama źle pisze imię odbiorcy.",
+          "el": "Η μητέρα μου γράφει λάθος το όνομα του παραλήπτη.",
+          "nb": "Moren min skriver mottakerens navn feil.",
+          "id": "Ibu saya menulis nama penerima dengan salah.",
+          "sv": "Min mamma skriver mottagarens namn fel.",
+          "ro": "Mama mea scrie greșit numele destinatarului.",
+          "cs": "Moje maminka píše jméno adresáta špatně.",
+          "da": "Min mor skriver modtagerens navn forkert.",
+          "fi": "Äitini kirjoittaa vastaanottajan nimen väärin.",
+          "ja": "母は受取人の名前を間違えて書きます。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Meine Mutter schreibt den Namen des Empfängers falsch.",
+        "old_japanese": "Meine Mutter schreibt den Empfänger falsch.",
+        "old_english": "My mom writes the recipient incorrectly.",
+        "proposed_japanese": "Meine Mutter schreibt den Namen des Empfängers falsch.",
+        "proposed_english": "My mom writes the recipient's name incorrectly.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Meine Mutter schreibt den Namen des Empfängers falsch.",
+          "tokens": [
+            {
+              "surface": "Meine",
+              "lemma": "mein",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "PPOSAT",
+              "feats": {},
+              "start": 0,
+              "end": 5,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Mutter",
+              "lemma": "Mutter",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 6,
+              "end": 12,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "schreibt",
+              "lemma": "schreiben",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVFIN",
+              "feats": {},
+              "start": 13,
+              "end": 21,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "den",
+              "lemma": "der",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "ART",
+              "feats": {},
+              "start": 22,
+              "end": 25,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Namen",
+              "lemma": "Name",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 26,
+              "end": 31,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "des",
+              "lemma": "der",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "ART",
+              "feats": {},
+              "start": 32,
+              "end": 35,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Empfängers",
+              "lemma": "Empfänger",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 36,
+              "end": 46,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "falsch",
+              "lemma": "falsch",
+              "pos": "ADV",
+              "upos": "ADV",
+              "xpos": "ADJD",
+              "feats": {},
+              "start": 47,
+              "end": 53,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 53,
+              "end": 54,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Meine",
+            "lemma": "mein",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "PPOSAT",
+            "feats": {},
+            "start": 0,
+            "end": 5,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Mutter",
+            "lemma": "Mutter",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 6,
+            "end": 12,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "schreibt",
+            "lemma": "schreiben",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 13,
+            "end": 21,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "den",
+            "lemma": "der",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 22,
+            "end": 25,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Namen",
+            "lemma": "Name",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 26,
+            "end": 31,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "des",
+            "lemma": "der",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 32,
+            "end": 35,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Empfängers",
+            "lemma": "Empfänger",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 36,
+            "end": 46,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "falsch",
+            "lemma": "falsch",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADJD",
+            "feats": {},
+            "start": 47,
+            "end": 53,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 53,
+            "end": 54,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-18T17:32:05Z",
+        "updated_utc": "2026-10-18T17:32:25Z",
+        "applied_utc": "2026-10-18T17:32:25Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-18T17:32:25Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -431,34 +804,6 @@
     "word": "Empfänger",
     "word_reading": "",
     "word_label": "Substantiv (der mask.)",
-    "word_en": "recipient; receiver",
-    "word_es": "destinatario; receptor",
-    "word_fr": "destinataire; récepteur",
-    "word_it": "destinatario; ricevitore",
-    "word_ko": "수신자; 수신기",
-    "word_zh-Hans": "收件人; 接收器",
-    "word_yue": "收件人; 接收器",
-    "word_ru": "получатель; приёмник",
-    "word_pt": "destinatário; receptor",
-    "word_he": "נמען; מקלט",
-    "word_tr": "alıcı; alıcı (cihaz)",
-    "word_vi": "người nhận; máy thu",
-    "word_ar": "مستلم; جهاز استقبال",
-    "word_nl": "ontvanger; ontvanger (apparaat)",
-    "word_uk": "одержувач; приймач",
-    "word_hu": "címzett; vevő (készülék)",
-    "word_hi": "प्राप्तकर्ता; रिसीवर",
-    "word_pl": "odbiorca; odbiornik",
-    "word_el": "παραλήπτης; δέκτης",
-    "word_nb": "mottaker; mottaker (apparat)",
-    "word_id": "penerima; penerima (perangkat)",
-    "word_sv": "mottagare; mottagare (apparat)",
-    "word_ro": "destinatar; receptor",
-    "word_cs": "příjemce; přijímač",
-    "word_da": "modtager; modtager (apparat)",
-    "word_fi": "vastaanottaja; vastaanotin",
-    "word_ja": "受取人; 受信機",
-    "word_de": "Empfänger",
     "comic_difficulty": 6.11,
     "jp": [
       "Der Empfänger steht auf dem Paket.",
@@ -471,24 +816,6 @@
       "/ɪç ˈkɛnə deːn ɛmˈfɛŋɐ nɪçt/",
       "/ˈmaɪ̯nə ˈmʊtɐ ʃraɪ̯pt deːn ɛmˈfɛŋɐ falʃ/",
       "/deːɐ̯ ɛmˈfɛŋɐ voːnt nɪçt meːɐ̯ hiːɐ̯/"
-    ],
-    "de": [
-      "Der Empfänger steht auf dem Paket.",
-      "Ich kenne den Empfänger nicht.",
-      "Meine Mutter schreibt den Empfänger falsch.",
-      "Der Empfänger wohnt nicht mehr hier."
-    ],
-    "ipa": [
-      "/deːɐ̯ ɛmˈfɛŋɐ ʃteːt aʊ̯f deːm paˈkeːt/",
-      "/ɪç ˈkɛnə deːn ɛmˈfɛŋɐ nɪçt/",
-      "/ˈmaɪ̯nə ˈmʊtɐ ʃraɪ̯pt deːn ɛmˈfɛŋɐ falʃ/",
-      "/deːɐ̯ ɛmˈfɛŋɐ voːnt nɪçt meːɐ̯ hiːɐ̯/"
-    ],
-    "en": [
-      "The recipient is on the package.",
-      "I don't know the recipient.",
-      "My mom writes the recipient incorrectly.",
-      "The recipient no longer lives here."
     ],
     "pos_analysis": [
       {
@@ -605,62 +932,107 @@
         "difficulty_aggregated": 5.6
       },
       {
-        "sentence": "Meine Mutter schreibt den Empfänger falsch.",
+        "sentence": "Meine Mutter schreibt den Namen des Empfängers falsch.",
         "tokens": [
           {
             "surface": "Meine",
-            "surface_en": "my",
-            "furigana": "[ˈmaɪ̯nə]",
-            "pos": "DET",
             "lemma": "mein",
-            "explanation": "Possessive determiner; 1st person singular possessor; feminine nominative singular; agrees with 'Mutter'.",
-            "difficulty": 7
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "PPOSAT",
+            "feats": {},
+            "start": 0,
+            "end": 5,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "Mutter",
-            "surface_en": "mother",
-            "furigana": "[ˈmʊtɐ]",
-            "pos": "NOUN",
             "lemma": "Mutter",
-            "explanation": "Common noun; feminine; singular; nominative case; head of the subject NP.",
-            "difficulty": 7
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 6,
+            "end": 12,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "schreibt",
-            "surface_en": "writes",
-            "furigana": "[ʃraɪ̯pt]",
-            "pos": "VERB",
             "lemma": "schreiben",
-            "explanation": "Finite verb; present tense; 3rd person singular; transitive; main predicate; takes an accusative object.",
-            "difficulty": 10
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 13,
+            "end": 21,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "den",
-            "surface_en": "the",
-            "furigana": "[deːn]",
-            "pos": "DET",
             "lemma": "der",
-            "explanation": "Definite article; accusative masculine singular; determiner of the verb's direct object.",
-            "difficulty": 2
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 22,
+            "end": 25,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "Empfänger",
-            "surface_en": "recipient",
-            "furigana": "[ɛmˈpfɛŋɐ]",
+            "surface": "Namen",
+            "lemma": "Name",
             "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 26,
+            "end": 31,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "des",
+            "lemma": "der",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 32,
+            "end": 35,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Empfängers",
             "lemma": "Empfänger",
-            "explanation": "Common noun; masculine; singular; accusative case; direct object of 'schreibt' (the item being written/spelled).",
-            "difficulty": 10,
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 36,
+            "end": 46,
+            "analyzer": "spacy_de_core_news_lg",
             "is_main_word": true
           },
           {
-            "surface": "falsch.",
-            "surface_en": "incorrectly",
-            "furigana": "[falʃ]",
-            "pos": "ADV",
+            "surface": "falsch",
             "lemma": "falsch",
-            "explanation": "Adverb of manner; modifies 'schreibt'; indicates that the writing/spelling is incorrect.",
-            "difficulty": 7
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADJD",
+            "feats": {},
+            "start": 47,
+            "end": 53,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 53,
+            "end": 54,
+            "analyzer": "spacy_de_core_news_lg"
           }
         ],
         "difficulty_aggregated": 7.17
@@ -727,137 +1099,41 @@
         "difficulty_aggregated": 6.67
       }
     ],
-    "es": [
-      "El destinatario está escrito en el paquete.",
-      "No conozco al destinatario.",
-      "Mi madre escribe mal el nombre del destinatario.",
-      "El destinatario ya no vive aquí."
-    ],
-    "fr": [
-      "Le destinataire est écrit sur le colis.",
-      "Je ne connais pas le destinataire.",
-      "Ma mère écrit mal le nom du destinataire.",
-      "Le destinataire n'habite plus ici."
-    ],
-    "it": [
-      "Il destinatario è scritto sul pacco.",
-      "Non conosco il destinatario.",
-      "Mia madre scrive male il nome del destinatario.",
-      "Il destinatario non vive più qui."
-    ],
-    "ko": [
-      "받는 사람 이름이 상자에 적혀 있어요.",
-      "받는 사람을 몰라요.",
-      "엄마가 받는 사람 이름을 틀리게 써요.",
-      "받는 사람은 이제 여기 살지 않아요."
-    ],
-    "zh-Hans": [
-      "包裹上写着收件人。",
-      "我不认识收件人。",
-      "我妈妈把收件人名字写错了。",
-      "收件人已经不住在这里了。"
-    ],
-    "yue": [
-      "包裹上面寫咗收件人。",
-      "我唔識個收件人。",
-      "我媽媽將收件人個名寫錯咗。",
-      "收件人已經唔喺呢度住喇。"
-    ],
-    "ru": [
-      "Получатель указан на посылке.",
-      "Я не знаю получателя.",
-      "Моя мама неправильно пишет имя получателя.",
-      "Получатель здесь больше не живёт."
-    ],
-    "pt": [
-      "O destinatário está escrito no pacote.",
-      "Eu não conheço o destinatário.",
-      "Minha mãe escreve o nome do destinatário errado.",
-      "O destinatário não mora mais aqui."
-    ],
-    "he": [
-      "שם הנמען כתוב על החבילה.",
-      "אני לא מכיר את הנמען.",
-      "אמא שלי כותבת את שם הנמען לא נכון.",
-      "הנמען כבר לא גר כאן."
-    ],
-    "tr": [
-      "Alıcı paketin üzerinde yazıyor.",
-      "Alıcıyı tanımıyorum.",
-      "Annem alıcının adını yanlış yazıyor.",
-      "Alıcı artık burada oturmuyor."
-    ],
-    "vi": [
-      "Tên người nhận được ghi trên gói hàng.",
-      "Tôi không biết người nhận.",
-      "Mẹ tôi viết sai tên người nhận.",
-      "Người nhận không còn ở đây nữa."
-    ],
+    "word_POS": "Noun",
+    "entry_id": "Empfänger",
+    "word_en": "recipient; receiver",
+    "word_es": "destinatario; receptor",
+    "word_fr": "destinataire; récepteur",
+    "word_it": "destinatario; ricevitore",
+    "word_ko": "수신자; 수신기",
+    "word_zh-Hans": "收件人; 接收器",
+    "word_yue": "收件人; 接收器",
+    "word_ru": "получатель; приёмник",
+    "word_pt": "destinatário; receptor",
+    "word_he": "נמען; מקלט",
+    "word_tr": "alıcı; alıcı (cihaz)",
+    "word_vi": "người nhận; máy thu",
+    "word_ar": "مستلم; جهاز استقبال",
+    "word_nl": "ontvanger; ontvanger (apparaat)",
+    "word_uk": "одержувач; приймач",
+    "word_hu": "címzett; vevő (készülék)",
+    "word_hi": "प्राप्तकर्ता; रिसीवर",
+    "word_pl": "odbiorca; odbiornik",
+    "word_el": "παραλήπτης; δέκτης",
+    "word_nb": "mottaker; mottaker (apparat)",
+    "word_id": "penerima; penerima (perangkat)",
+    "word_sv": "mottagare; mottagare (apparat)",
+    "word_ro": "destinatar; receptor",
+    "word_cs": "příjemce; přijímač",
+    "word_da": "modtager; modtager (apparat)",
+    "word_fi": "vastaanottaja; vastaanotin",
+    "word_ja": "受取人; 受信機",
+    "word_de": "Empfänger",
     "ar": [
       "اسم المستلم مكتوب على الطرد.",
       "أنا لا أعرف المستلم.",
       "أمي تكتب اسم المستلم بشكل خاطئ.",
       "المستلم لم يعد يعيش هنا."
-    ],
-    "nl": [
-      "De ontvanger staat op het pakket.",
-      "Ik ken de ontvanger niet.",
-      "Mijn moeder schrijft de naam van de ontvanger verkeerd.",
-      "De ontvanger woont hier niet meer."
-    ],
-    "uk": [
-      "Одержувач зазначений на посилці.",
-      "Я не знаю одержувача.",
-      "Моя мама неправильно пише ім'я одержувача.",
-      "Одержувач тут більше не живе."
-    ],
-    "hu": [
-      "A címzett rá van írva a csomagra.",
-      "Nem ismerem a címzettet.",
-      "Anyukám rosszul írja a címzett nevét.",
-      "A címzett már nem lakik itt."
-    ],
-    "hi": [
-      "प्राप्तकर्ता का नाम पैकेट पर लिखा है.",
-      "मुझे प्राप्तकर्ता के बारे में पता नहीं है।",
-      "मेरी माँ प्राप्तकर्ता का नाम गलत लिखती हैं।",
-      "प्राप्तकर्ता अब यहाँ नहीं रहता है।"
-    ],
-    "pl": [
-      "Odbiorca jest podany na paczce.",
-      "Nie znam odbiorcy.",
-      "Moja mama źle pisze imię odbiorcy.",
-      "Odbiorca już tu nie mieszka."
-    ],
-    "el": [
-      "Ο παραλήπτης είναι γραμμένος στο πακέτο.",
-      "Δεν γνωρίζω τον παραλήπτη.",
-      "Η μητέρα μου γράφει λάθος το όνομα του παραλήπτη.",
-      "Ο παραλήπτης δεν μένει πια εδώ."
-    ],
-    "nb": [
-      "Mottakeren står på pakken.",
-      "Jeg kjenner ikke mottakeren.",
-      "Moren min skriver mottakerens navn feil.",
-      "Mottakeren bor ikke her lenger."
-    ],
-    "id": [
-      "Penerima tertulis di paket.",
-      "Saya tidak kenal penerima.",
-      "Ibu saya menulis nama penerima dengan salah.",
-      "Penerima sudah tidak tinggal di sini lagi."
-    ],
-    "sv": [
-      "Mottagaren står på paketet.",
-      "Jag känner inte mottagaren.",
-      "Min mamma skriver mottagarens namn fel.",
-      "Mottagaren bor inte här längre."
-    ],
-    "ro": [
-      "Destinatarul este scris pe colet.",
-      "Nu cunosc destinatarul.",
-      "Mama mea scrie greșit numele destinatarului.",
-      "Destinatarul nu mai locuiește aici."
     ],
     "cs": [
       "Adresát je napsaný na balíku.",
@@ -871,11 +1147,77 @@
       "Min mor skriver modtagerens navn forkert.",
       "Modtageren bor ikke her længere."
     ],
+    "de": [
+      "Der Empfänger steht auf dem Paket.",
+      "Ich kenne den Empfänger nicht.",
+      "Meine Mutter schreibt den Empfänger falsch.",
+      "Der Empfänger wohnt nicht mehr hier."
+    ],
+    "el": [
+      "Ο παραλήπτης είναι γραμμένος στο πακέτο.",
+      "Δεν γνωρίζω τον παραλήπτη.",
+      "Η μητέρα μου γράφει λάθος το όνομα του παραλήπτη.",
+      "Ο παραλήπτης δεν μένει πια εδώ."
+    ],
+    "en": [
+      "The recipient is on the package.",
+      "I don't know the recipient.",
+      "My mom writes the recipient incorrectly.",
+      "The recipient no longer lives here."
+    ],
+    "es": [
+      "El destinatario está escrito en el paquete.",
+      "No conozco al destinatario.",
+      "Mi madre escribe mal el nombre del destinatario.",
+      "El destinatario ya no vive aquí."
+    ],
     "fi": [
       "Vastaanottaja lukee paketissa.",
       "En tunne vastaanottajaa.",
       "Äitini kirjoittaa vastaanottajan nimen väärin.",
       "Vastaanottaja ei asu enää täällä."
+    ],
+    "fr": [
+      "Le destinataire est écrit sur le colis.",
+      "Je ne connais pas le destinataire.",
+      "Ma mère écrit mal le nom du destinataire.",
+      "Le destinataire n'habite plus ici."
+    ],
+    "he": [
+      "שם הנמען כתוב על החבילה.",
+      "אני לא מכיר את הנמען.",
+      "אמא שלי כותבת את שם הנמען לא נכון.",
+      "הנמען כבר לא גר כאן."
+    ],
+    "hi": [
+      "प्राप्तकर्ता का नाम पैकेट पर लिखा है.",
+      "मुझे प्राप्तकर्ता के बारे में पता नहीं है।",
+      "मेरी माँ प्राप्तकर्ता का नाम गलत लिखती हैं।",
+      "प्राप्तकर्ता अब यहाँ नहीं रहता है।"
+    ],
+    "hu": [
+      "A címzett rá van írva a csomagra.",
+      "Nem ismerem a címzettet.",
+      "Anyukám rosszul írja a címzett nevét.",
+      "A címzett már nem lakik itt."
+    ],
+    "id": [
+      "Penerima tertulis di paket.",
+      "Saya tidak kenal penerima.",
+      "Ibu saya menulis nama penerima dengan salah.",
+      "Penerima sudah tidak tinggal di sini lagi."
+    ],
+    "ipa": [
+      "/deːɐ̯ ɛmˈfɛŋɐ ʃteːt aʊ̯f deːm paˈkeːt/",
+      "/ɪç ˈkɛnə deːn ɛmˈfɛŋɐ nɪçt/",
+      "/ˈmaɪ̯nə ˈmʊtɐ ʃraɪ̯pt deːn ɛmˈfɛŋɐ falʃ/",
+      "/deːɐ̯ ɛmˈfɛŋɐ voːnt nɪçt meːɐ̯ hiːɐ̯/"
+    ],
+    "it": [
+      "Il destinatario è scritto sul pacco.",
+      "Non conosco il destinatario.",
+      "Mia madre scrive male il nome del destinatario.",
+      "Il destinatario non vive più qui."
     ],
     "ja": [
       "宛先は荷物に書いてあります。",
@@ -883,6 +1225,83 @@
       "母は受取人の名前を間違えて書きます。",
       "受取人はもうここに住んでいません。"
     ],
-    "word_POS": "Noun"
+    "ko": [
+      "받는 사람 이름이 상자에 적혀 있어요.",
+      "받는 사람을 몰라요.",
+      "엄마가 받는 사람 이름을 틀리게 써요.",
+      "받는 사람은 이제 여기 살지 않아요."
+    ],
+    "nb": [
+      "Mottakeren står på pakken.",
+      "Jeg kjenner ikke mottakeren.",
+      "Moren min skriver mottakerens navn feil.",
+      "Mottakeren bor ikke her lenger."
+    ],
+    "nl": [
+      "De ontvanger staat op het pakket.",
+      "Ik ken de ontvanger niet.",
+      "Mijn moeder schrijft de naam van de ontvanger verkeerd.",
+      "De ontvanger woont hier niet meer."
+    ],
+    "pl": [
+      "Odbiorca jest podany na paczce.",
+      "Nie znam odbiorcy.",
+      "Moja mama źle pisze imię odbiorcy.",
+      "Odbiorca już tu nie mieszka."
+    ],
+    "pt": [
+      "O destinatário está escrito no pacote.",
+      "Eu não conheço o destinatário.",
+      "Minha mãe escreve o nome do destinatário errado.",
+      "O destinatário não mora mais aqui."
+    ],
+    "ro": [
+      "Destinatarul este scris pe colet.",
+      "Nu cunosc destinatarul.",
+      "Mama mea scrie greșit numele destinatarului.",
+      "Destinatarul nu mai locuiește aici."
+    ],
+    "ru": [
+      "Получатель указан на посылке.",
+      "Я не знаю получателя.",
+      "Моя мама неправильно пишет имя получателя.",
+      "Получатель здесь больше не живёт."
+    ],
+    "sv": [
+      "Mottagaren står på paketet.",
+      "Jag känner inte mottagaren.",
+      "Min mamma skriver mottagarens namn fel.",
+      "Mottagaren bor inte här längre."
+    ],
+    "tr": [
+      "Alıcı paketin üzerinde yazıyor.",
+      "Alıcıyı tanımıyorum.",
+      "Annem alıcının adını yanlış yazıyor.",
+      "Alıcı artık burada oturmuyor."
+    ],
+    "uk": [
+      "Одержувач зазначений на посилці.",
+      "Я не знаю одержувача.",
+      "Моя мама неправильно пише ім'я одержувача.",
+      "Одержувач тут більше не живе."
+    ],
+    "vi": [
+      "Tên người nhận được ghi trên gói hàng.",
+      "Tôi không biết người nhận.",
+      "Mẹ tôi viết sai tên người nhận.",
+      "Người nhận không còn ở đây nữa."
+    ],
+    "yue": [
+      "包裹上面寫咗收件人。",
+      "我唔識個收件人。",
+      "我媽媽將收件人個名寫錯咗。",
+      "收件人已經唔喺呢度住喇。"
+    ],
+    "zh-Hans": [
+      "包裹上写着收件人。",
+      "我不认识收件人。",
+      "我妈妈把收件人名字写错了。",
+      "收件人已经不住在这里了。"
+    ]
   }
 }

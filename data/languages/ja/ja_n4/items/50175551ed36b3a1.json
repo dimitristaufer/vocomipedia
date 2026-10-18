@@ -30,7 +30,7 @@
     "nl": "Ontbijt",
     "uk": "Сніданок",
     "hu": "Reggeli",
-    "hi": "कलेवा",
+    "hi": "नाश्ता",
     "pl": "Śniadanie",
     "el": "Πρωινό",
     "nb": "Frokost",
@@ -189,33 +189,33 @@
       "target": "朝食を家族と一緒に食べるのが好きです。",
       "reading": "ちょうしょくをかぞくといっしょにたべるのがすきです。",
       "translations": {
-        "en": "I love eating breakfast together with my family.",
-        "es": "Me encanta desayunar con mi familia.",
-        "fr": "J’adore prendre le petit-déjeuner avec ma famille.",
-        "de": "Ich liebe es, zusammen mit meiner Familie zu frühstücken.",
-        "it": "Adoro fare colazione insieme alla mia famiglia.",
-        "ko": "저는 가족과 함께 아침을 먹는 것을 정말 좋아합니다.",
+        "en": "I like eating breakfast with my family.",
+        "es": "Me gusta desayunar con mi familia.",
+        "fr": "J’aime prendre le petit-déjeuner avec ma famille.",
+        "de": "Ich frühstücke gern mit meiner Familie.",
+        "it": "Mi piace fare colazione con la mia famiglia.",
+        "ko": "저는 가족과 함께 아침을 먹는 것을 좋아합니다.",
         "zh-Hans": "我喜欢和家人一起吃早餐。",
         "yue": "我鍾意同屋企人一齊食早餐。",
         "ru": "Я люблю завтракать вместе с семьёй.",
-        "pt": "Adoro tomar café da manhã com minha família.",
+        "pt": "Gosto de tomar café da manhã com minha família.",
         "he": "אני אוהב לאכול ארוחת בוקר יחד עם המשפחה שלי.",
-        "tr": "Ailemle birlikte kahvaltı yapmayı çok seviyorum.",
+        "tr": "Ailemle birlikte kahvaltı yapmayı seviyorum.",
         "vi": "Tôi thích ăn sáng cùng gia đình.",
         "ar": "أحب تناول الإفطار مع عائلتي.",
         "nl": "Ik eet graag samen met mijn gezin ontbijt.",
         "uk": "Я люблю снідати разом із родиною.",
-        "hu": "Imádok együtt reggelizni a családommal.",
+        "hu": "Szeretek együtt reggelizni a családommal.",
         "hi": "मुझे अपने परिवार के साथ नाश्ता करना पसंद है।",
-        "pl": "Uwielbiam jeść śniadanie razem z rodziną.",
+        "pl": "Lubię jeść śniadanie z rodziną.",
         "el": "Μου αρέσει να τρώω πρωινό μαζί με την οικογένειά μου.",
-        "nb": "Jeg elsker å spise frokost sammen med familien min.",
+        "nb": "Jeg liker å spise frokost sammen med familien min.",
         "id": "Saya suka sarapan bersama keluarga saya.",
-        "sv": "Jag älskar att äta frukost tillsammans med min familj.",
+        "sv": "Jag tycker om att äta frukost tillsammans med min familj.",
         "ro": "Îmi place să mănânc micul dejun împreună cu familia.",
         "cs": "Rád snídám společně s rodinou.",
-        "da": "Jeg elsker at spise morgenmad sammen med min familie.",
-        "fi": "Rakastan syödä aamiaista yhdessä perheeni kanssa."
+        "da": "Jeg kan godt lide at spise morgenmad sammen med min familie.",
+        "fi": "Tykkään syödä aamiaista yhdessä perheeni kanssa."
       },
       "tokens": [
         {
@@ -521,14 +521,14 @@
       "ruby_source": "sudachipy_sudachidict_core_c"
     },
     {
-      "target": "今日は朝食にパンを焼いた.",
-      "reading": "きょうはちょうしょくにぱんをやいた.",
+      "target": "今日は朝食にパンを焼いた。",
+      "reading": "きょうはちょうしょくにぱんをやいた。",
       "translations": {
         "en": "I baked bread for breakfast today.",
         "es": "Hoy he horneado pan para desayunar.",
         "fr": "J’ai fait du pain pour le petit-déjeuner aujourd’hui.",
         "de": "Ich habe heute Brot zum Frühstück gebacken.",
-        "it": "Oggi ho preparato il pane pentru colazione.",
+        "it": "Oggi ho sfornato il pane per colazione.",
         "ko": "오늘 아침으로 빵을 구웠어.",
         "zh-Hans": "我今天早餐烤了面包。",
         "yue": "我今日早餐焗咗麵包。",
@@ -541,7 +541,7 @@
         "nl": "Ik heb vandaag brood gebakken voor het ontbijt.",
         "uk": "Сьогодні я спекла хліб на сніданок.",
         "hu": "Ma reggelire kenyeret sütöttem.",
-        "hi": "मैंने आज नाश्ते में रोटी पकाई।",
+        "hi": "मैंने आज नाश्ते के लिए ब्रेड सेंकी।",
         "pl": "Dziś piekłem chleb na śniadanie.",
         "el": "Έψησα ψωμί για πρωινό σήμερα.",
         "nb": "Jeg bakte brød til frokost i dag.",
@@ -555,12 +555,14 @@
       "tokens": [
         {
           "surface": "今日",
-          "surface_en": "today",
-          "furigana": "きょう",
-          "pos": "noun",
           "lemma": "今日",
-          "explanation": "Refers to the current day, marking the topic.",
-          "difficulty": 3,
+          "pos": "名詞/普通名詞/副詞可能/*/*/*",
+          "upos": "NOUN",
+          "xpos": "名詞",
+          "feats": {},
+          "start": 0,
+          "end": 2,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "きょう",
           "ruby_text": "今日[きょう]",
           "ruby_spans": [
@@ -571,32 +573,36 @@
               "length": 2
             }
           ],
-          "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "ruby_confidence": "reviewed",
+          "furigana": "きょう",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "は",
-          "surface_en": "(topic marker)",
-          "furigana": "は",
-          "pos": "particle",
           "lemma": "は",
-          "explanation": "Marks「今日」as the topic of the sentence.",
-          "difficulty": 1,
+          "pos": "助詞/係助詞/*/*/*/*",
+          "upos": "PART",
+          "xpos": "助詞",
+          "feats": {},
+          "start": 2,
+          "end": 3,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "は",
           "ruby_text": "は",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "は"
         },
         {
           "surface": "朝食",
-          "surface_en": "breakfast",
-          "furigana": "ちょうしょく",
-          "pos": "noun",
           "lemma": "朝食",
-          "explanation": "Indicates the occasion or purpose (for breakfast).",
-          "difficulty": 1,
-          "is_main_word": true,
+          "pos": "名詞/普通名詞/一般/*/*/*",
+          "upos": "NOUN",
+          "xpos": "名詞",
+          "feats": {},
+          "start": 3,
+          "end": 5,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "ちょうしょく",
           "ruby_text": "朝食[ちょうしょく]",
           "ruby_spans": [
@@ -607,61 +613,71 @@
               "length": 2
             }
           ],
-          "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "ruby_confidence": "reviewed",
+          "furigana": "ちょうしょく",
+          "ruby_source": "mediawiki_sentence_ruby",
+          "is_main_word": true
         },
         {
           "surface": "に",
-          "surface_en": "for",
-          "furigana": "に",
-          "pos": "particle",
           "lemma": "に",
-          "explanation": "Marks「朝食」as the intended time/purpose for the action.",
-          "difficulty": 1,
+          "pos": "助詞/格助詞/*/*/*/*",
+          "upos": "PART",
+          "xpos": "助詞",
+          "feats": {},
+          "start": 5,
+          "end": 6,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "に",
           "ruby_text": "に",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "に"
         },
         {
           "surface": "パン",
-          "surface_en": "bread",
-          "furigana": "ぱん",
-          "pos": "noun",
           "lemma": "パン",
-          "explanation": "The item being baked, serves as the direct object.",
-          "difficulty": 1,
+          "pos": "名詞/普通名詞/一般/*/*/*",
+          "upos": "NOUN",
+          "xpos": "名詞",
+          "feats": {},
+          "start": 6,
+          "end": 8,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "ぱん",
           "ruby_text": "パン",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "ぱん"
         },
         {
           "surface": "を",
-          "surface_en": "(object marker)",
-          "furigana": "を",
-          "pos": "particle",
           "lemma": "を",
-          "explanation": "Marks「パン」as the direct object of 焼いた.",
-          "difficulty": 1,
+          "pos": "助詞/格助詞/*/*/*/*",
+          "upos": "PART",
+          "xpos": "助詞",
+          "feats": {},
+          "start": 8,
+          "end": 9,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "を",
           "ruby_text": "を",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "を"
         },
         {
-          "surface": "焼いた",
-          "surface_en": "baked",
-          "furigana": "やいた",
-          "pos": "verb",
+          "surface": "焼い",
           "lemma": "焼く",
-          "explanation": "Past tense of 焼く, meaning 'baked'.",
-          "difficulty": 18,
-          "reading_kana": "やいた",
-          "ruby_text": "焼[や]いた",
+          "pos": "動詞/一般/*/*/五段-カ行/連用形-イ音便",
+          "upos": "VERB",
+          "xpos": "動詞",
+          "feats": {},
+          "start": 9,
+          "end": 11,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "やい",
+          "ruby_text": "焼[や]い",
           "ruby_spans": [
             {
               "base": "焼",
@@ -670,8 +686,41 @@
               "length": 1
             }
           ],
+          "ruby_confidence": "reviewed",
+          "furigana": "やい",
+          "ruby_source": "mediawiki_sentence_ruby"
+        },
+        {
+          "surface": "た",
+          "lemma": "た",
+          "pos": "助動詞/*/*/*/助動詞-タ/終止形-一般",
+          "upos": "AUX",
+          "xpos": "助動詞",
+          "feats": {},
+          "start": 11,
+          "end": 12,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "た",
+          "ruby_text": "た",
+          "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "た"
+        },
+        {
+          "surface": "。",
+          "lemma": "。",
+          "pos": "補助記号/句点/*/*/*/*",
+          "upos": "PUNCT",
+          "xpos": "補助記号",
+          "feats": {},
+          "start": 12,
+          "end": 13,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "。",
+          "ruby_text": "。",
+          "ruby_spans": [],
+          "ruby_confidence": "high",
+          "furigana": "。"
         }
       ],
       "difficulty": 3.71,
@@ -689,8 +738,472 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-12T04:26:41Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:Ja n4/50175551ed36b3a1",
+      "revision_id": 82207,
+      "parent_revision_id": 29818,
+      "revision_timestamp_utc": "2026-10-12T04:26:41Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Corrected the Hindi headword gloss, softened several translations from “love” to “like,” and fixed the Japanese punctuation and mixed-language Italian.",
+      "pulled_utc": "2026-10-18T17:47:16Z",
+      "applied_utc": "2026-10-18T17:47:48Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-a4dd80f295d41bfa",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "ja_n4:50175551ed36b3a1",
+        "pack_code": "ja_n4",
+        "entry_id": "朝食",
+        "language": "ja",
+        "sentence_index": 4,
+        "old_sentence": "今日は朝食にパンを焼いた.",
+        "old_translations": {
+          "en": "I baked bread for breakfast today.",
+          "es": "Hoy he horneado pan para desayunar.",
+          "fr": "J’ai fait du pain pour le petit-déjeuner aujourd’hui.",
+          "de": "Ich habe heute Brot zum Frühstück gebacken.",
+          "it": "Oggi ho preparato il pane pentru colazione.",
+          "ko": "오늘 아침으로 빵을 구웠어.",
+          "zh-Hans": "我今天早餐烤了面包。",
+          "yue": "我今日早餐焗咗麵包。",
+          "ru": "Сегодня я испекла хлеб на завтрак.",
+          "pt": "Hoje fiz pão no café da manhã.",
+          "he": "אפיתי לחם לארוחת בוקר היום.",
+          "tr": "Bugün kahvaltıda ekmek pişirdim.",
+          "vi": "Hôm nay tôi đã nướng bánh mì cho bữa sáng.",
+          "ar": "خبزت الخبز على الإفطار اليوم.",
+          "nl": "Ik heb vandaag brood gebakken voor het ontbijt.",
+          "uk": "Сьогодні я спекла хліб на сніданок.",
+          "hu": "Ma reggelire kenyeret sütöttem.",
+          "hi": "मैंने आज नाश्ते में रोटी पकाई।",
+          "pl": "Dziś piekłem chleb na śniadanie.",
+          "el": "Έψησα ψωμί για πρωινό σήμερα.",
+          "nb": "Jeg bakte brød til frokost i dag.",
+          "id": "Saya memanggang roti untuk sarapan hari ini.",
+          "sv": "Jag bakade bröd till frukost idag.",
+          "ro": "Am copt pâine la micul dejun azi.",
+          "cs": "Dnes jsem pekla chleba k snídani.",
+          "da": "Jeg bagte brød til morgenmad i dag.",
+          "fi": "Leivoin leipää aamupalaksi tänään."
+        },
+        "proposed_sentence": "今日は朝食にパンを焼いた。",
+        "proposed_translations": {
+          "en": "I baked bread for breakfast today.",
+          "es": "Hoy he horneado pan para desayunar.",
+          "fr": "J’ai fait du pain pour le petit-déjeuner aujourd’hui.",
+          "de": "Ich habe heute Brot zum Frühstück gebacken.",
+          "it": "Oggi ho sfornato il pane per colazione.",
+          "ko": "오늘 아침으로 빵을 구웠어.",
+          "zh-Hans": "我今天早餐烤了面包。",
+          "yue": "我今日早餐焗咗麵包。",
+          "ru": "Сегодня я испекла хлеб на завтрак.",
+          "pt": "Hoje fiz pão no café da manhã.",
+          "he": "אפיתי לחם לארוחת בוקר היום.",
+          "tr": "Bugün kahvaltıda ekmek pişirdim.",
+          "vi": "Hôm nay tôi đã nướng bánh mì cho bữa sáng.",
+          "ar": "خبزت الخبز على الإفطار اليوم.",
+          "nl": "Ik heb vandaag brood gebakken voor het ontbijt.",
+          "uk": "Сьогодні я спекла хліб на сніданок.",
+          "hu": "Ma reggelire kenyeret sütöttem.",
+          "hi": "मैंने आज नाश्ते के लिए ब्रेड सेंकी।",
+          "pl": "Dziś piekłem chleb na śniadanie.",
+          "el": "Έψησα ψωμί για πρωινό σήμερα.",
+          "nb": "Jeg bakte brød til frokost i dag.",
+          "id": "Saya memanggang roti untuk sarapan hari ini.",
+          "sv": "Jag bakade bröd till frukost idag.",
+          "ro": "Am copt pâine la micul dejun azi.",
+          "cs": "Dnes jsem pekla chleba k snídani.",
+          "da": "Jeg bagte brød til morgenmad i dag.",
+          "fi": "Leivoin leipää aamupalaksi tänään."
+        },
+        "old_ruby_source": "今日[きょう]は朝食[ちょうしょく]にパンを焼[や]いた.",
+        "proposed_ruby_source": "今日[きょう]は朝食[ちょうしょく]にパンを焼[や]いた。",
+        "old_japanese": "今日は朝食にパンを焼いた.",
+        "old_english": "I baked bread for breakfast today.",
+        "proposed_japanese": "今日は朝食にパンを焼いた。",
+        "proposed_english": "I baked bread for breakfast today.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "ja",
+          "sentence": "今日は朝食にパンを焼いた。",
+          "tokens": [
+            {
+              "surface": "今日",
+              "lemma": "今日",
+              "pos": "名詞/普通名詞/副詞可能/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 0,
+              "end": 2,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "きょう",
+              "ruby_text": "今日[きょう]",
+              "ruby_spans": [
+                {
+                  "base": "今日",
+                  "reading": "きょう",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "きょう",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "は",
+              "lemma": "は",
+              "pos": "助詞/係助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 2,
+              "end": 3,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "は",
+              "ruby_text": "は",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "は"
+            },
+            {
+              "surface": "朝食",
+              "lemma": "朝食",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 3,
+              "end": 5,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "ちょうしょく",
+              "ruby_text": "朝食[ちょうしょく]",
+              "ruby_spans": [
+                {
+                  "base": "朝食",
+                  "reading": "ちょうしょく",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "ちょうしょく",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "に",
+              "lemma": "に",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 5,
+              "end": 6,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "に",
+              "ruby_text": "に",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "に"
+            },
+            {
+              "surface": "パン",
+              "lemma": "パン",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 6,
+              "end": 8,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "ぱん",
+              "ruby_text": "パン",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "ぱん"
+            },
+            {
+              "surface": "を",
+              "lemma": "を",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 8,
+              "end": 9,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "を",
+              "ruby_text": "を",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "を"
+            },
+            {
+              "surface": "焼い",
+              "lemma": "焼く",
+              "pos": "動詞/一般/*/*/五段-カ行/連用形-イ音便",
+              "upos": "VERB",
+              "xpos": "動詞",
+              "feats": {},
+              "start": 9,
+              "end": 11,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "やい",
+              "ruby_text": "焼[や]い",
+              "ruby_spans": [
+                {
+                  "base": "焼",
+                  "reading": "や",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "やい",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "た",
+              "lemma": "た",
+              "pos": "助動詞/*/*/*/助動詞-タ/終止形-一般",
+              "upos": "AUX",
+              "xpos": "助動詞",
+              "feats": {},
+              "start": 11,
+              "end": 12,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "た",
+              "ruby_text": "た",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "た"
+            },
+            {
+              "surface": "。",
+              "lemma": "。",
+              "pos": "補助記号/句点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 12,
+              "end": 13,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "。",
+              "ruby_text": "。",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "。"
+            }
+          ],
+          "reading": "きょうはちょうしょくにぱんをやいた。",
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "warnings": [
+            "mediawiki ruby hints applied"
+          ]
+        },
+        "generated_tokens": [
+          {
+            "surface": "今日",
+            "lemma": "今日",
+            "pos": "名詞/普通名詞/副詞可能/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "きょう",
+            "ruby_text": "今日[きょう]",
+            "ruby_spans": [
+              {
+                "base": "今日",
+                "reading": "きょう",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "きょう",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "は",
+            "lemma": "は",
+            "pos": "助詞/係助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 2,
+            "end": 3,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "は",
+            "ruby_text": "は",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "は"
+          },
+          {
+            "surface": "朝食",
+            "lemma": "朝食",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 3,
+            "end": 5,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ちょうしょく",
+            "ruby_text": "朝食[ちょうしょく]",
+            "ruby_spans": [
+              {
+                "base": "朝食",
+                "reading": "ちょうしょく",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "ちょうしょく",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "に",
+            "lemma": "に",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 5,
+            "end": 6,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "に",
+            "ruby_text": "に",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "に"
+          },
+          {
+            "surface": "パン",
+            "lemma": "パン",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 6,
+            "end": 8,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ぱん",
+            "ruby_text": "パン",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "ぱん"
+          },
+          {
+            "surface": "を",
+            "lemma": "を",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 8,
+            "end": 9,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "を",
+            "ruby_text": "を",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "を"
+          },
+          {
+            "surface": "焼い",
+            "lemma": "焼く",
+            "pos": "動詞/一般/*/*/五段-カ行/連用形-イ音便",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 9,
+            "end": 11,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "やい",
+            "ruby_text": "焼[や]い",
+            "ruby_spans": [
+              {
+                "base": "焼",
+                "reading": "や",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "やい",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "た",
+            "lemma": "た",
+            "pos": "助動詞/*/*/*/助動詞-タ/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 11,
+            "end": 12,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "た",
+            "ruby_text": "た",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "た"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 12,
+            "end": 13,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
+          }
+        ],
+        "generated_reading": "きょうはちょうしょくにぱんをやいた。",
+        "analyzer": "sudachipy_sudachidict_core_c",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-18T17:47:16Z",
+        "updated_utc": "2026-10-18T17:48:27Z",
+        "applied_utc": "2026-10-18T17:48:27Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-18T17:48:27Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -707,33 +1220,6 @@
   "app_payload": {
     "word": "朝食",
     "word_reading": "ちょうしょく",
-    "word_en": "breakfast",
-    "word_es": "Desayuno",
-    "word_fr": "petit-déjeuner",
-    "word_de": "Frühstück",
-    "word_it": "Colazione",
-    "word_ko": "아침 식사",
-    "word_zh-Hans": "早餐",
-    "word_yue": "早餐",
-    "word_ru": "завтрак",
-    "word_pt": "café da manhã",
-    "word_he": "ארוחת בוקר",
-    "word_tr": "Kahvaltı",
-    "word_vi": "Bữa sáng",
-    "word_ar": "الإفطار",
-    "word_nl": "Ontbijt",
-    "word_uk": "Сніданок",
-    "word_hu": "Reggeli",
-    "word_hi": "कलेवा",
-    "word_pl": "Śniadanie",
-    "word_el": "Πρωινό",
-    "word_nb": "Frokost",
-    "word_id": "sarapan pagi",
-    "word_sv": "Frukost",
-    "word_ro": "Mic dejun",
-    "word_cs": "Snídaně",
-    "word_da": "Morgenmad",
-    "word_fi": "Aamiainen",
     "comic_difficulty": 2.83,
     "jp": [
       "朝食を食べる時間がない！",
@@ -745,13 +1231,7 @@
       "ちょうしょくをたべるじかんがない！",
       "ちょうしょくをかぞくといっしょにたべるのがすきです。",
       "ちょうしょくまえにじょぎんぐした。",
-      "きょうはちょうしょくにぱんをやいた。"
-    ],
-    "en": [
-      "I have no time to eat breakfast!",
-      "I love eating breakfast together with my family.",
-      "I went jogging before breakfast.",
-      "I baked bread for breakfast today."
+      "きょうはちょうしょくにぱんをやいた."
     ],
     "pos_analysis": [
       {
@@ -1140,16 +1620,18 @@
         "difficulty_aggregated": 1
       },
       {
-        "sentence": "今日は朝食にパンを焼いた.",
+        "sentence": "今日は朝食にパンを焼いた。",
         "tokens": [
           {
             "surface": "今日",
-            "surface_en": "today",
-            "furigana": "きょう",
-            "pos": "noun",
             "lemma": "今日",
-            "explanation": "Refers to the current day, marking the topic.",
-            "difficulty": 3,
+            "pos": "名詞/普通名詞/副詞可能/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "きょう",
             "ruby_text": "今日[きょう]",
             "ruby_spans": [
@@ -1160,32 +1642,36 @@
                 "length": 2
               }
             ],
-            "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "ruby_confidence": "reviewed",
+            "furigana": "きょう",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "は",
-            "surface_en": "(topic marker)",
-            "furigana": "は",
-            "pos": "particle",
             "lemma": "は",
-            "explanation": "Marks「今日」as the topic of the sentence.",
-            "difficulty": 1,
+            "pos": "助詞/係助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 2,
+            "end": 3,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "は",
             "ruby_text": "は",
             "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "は"
           },
           {
             "surface": "朝食",
-            "surface_en": "breakfast",
-            "furigana": "ちょうしょく",
-            "pos": "noun",
             "lemma": "朝食",
-            "explanation": "Indicates the occasion or purpose (for breakfast).",
-            "difficulty": 1,
-            "is_main_word": true,
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 3,
+            "end": 5,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "ちょうしょく",
             "ruby_text": "朝食[ちょうしょく]",
             "ruby_spans": [
@@ -1196,61 +1682,71 @@
                 "length": 2
               }
             ],
-            "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "ruby_confidence": "reviewed",
+            "furigana": "ちょうしょく",
+            "ruby_source": "mediawiki_sentence_ruby",
+            "is_main_word": true
           },
           {
             "surface": "に",
-            "surface_en": "for",
-            "furigana": "に",
-            "pos": "particle",
             "lemma": "に",
-            "explanation": "Marks「朝食」as the intended time/purpose for the action.",
-            "difficulty": 1,
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 5,
+            "end": 6,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "に",
             "ruby_text": "に",
             "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "に"
           },
           {
             "surface": "パン",
-            "surface_en": "bread",
-            "furigana": "ぱん",
-            "pos": "noun",
             "lemma": "パン",
-            "explanation": "The item being baked, serves as the direct object.",
-            "difficulty": 1,
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 6,
+            "end": 8,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "ぱん",
             "ruby_text": "パン",
             "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "ぱん"
           },
           {
             "surface": "を",
-            "surface_en": "(object marker)",
-            "furigana": "を",
-            "pos": "particle",
             "lemma": "を",
-            "explanation": "Marks「パン」as the direct object of 焼いた.",
-            "difficulty": 1,
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 8,
+            "end": 9,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "を",
             "ruby_text": "を",
             "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "を"
           },
           {
-            "surface": "焼いた",
-            "surface_en": "baked",
-            "furigana": "やいた",
-            "pos": "verb",
+            "surface": "焼い",
             "lemma": "焼く",
-            "explanation": "Past tense of 焼く, meaning 'baked'.",
-            "difficulty": 18,
-            "reading_kana": "やいた",
-            "ruby_text": "焼[や]いた",
+            "pos": "動詞/一般/*/*/五段-カ行/連用形-イ音便",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 9,
+            "end": 11,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "やい",
+            "ruby_text": "焼[や]い",
             "ruby_spans": [
               {
                 "base": "焼",
@@ -1259,150 +1755,80 @@
                 "length": 1
               }
             ],
+            "ruby_confidence": "reviewed",
+            "furigana": "やい",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "た",
+            "lemma": "た",
+            "pos": "助動詞/*/*/*/助動詞-タ/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 11,
+            "end": 12,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "た",
+            "ruby_text": "た",
+            "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "た"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 12,
+            "end": 13,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
           }
         ],
         "difficulty_aggregated": 3.71
       }
     ],
-    "es": [
-      "¡No tengo tiempo para desayunar!",
-      "Me encanta desayunar con mi familia.",
-      "Salí a correr antes del desayuno.",
-      "Hoy he horneado pan para desayunar."
-    ],
-    "fr": [
-      "Je n’ai pas le temps de prendre le petit-déjeuner !",
-      "J’adore prendre le petit-déjeuner avec ma famille.",
-      "Je suis allé faire du jogging avant le petit-déjeuner.",
-      "J’ai fait du pain pour le petit-déjeuner aujourd’hui."
-    ],
-    "de": [
-      "Ich habe keine Zeit zum Frühstück!",
-      "Ich liebe es, zusammen mit meiner Familie zu frühstücken.",
-      "Ich war vor dem Frühstück joggen.",
-      "Ich habe heute Brot zum Frühstück gebacken."
-    ],
-    "it": [
-      "Non ho tempo per fare colazione!",
-      "Adoro fare colazione insieme alla mia famiglia.",
-      "Sono andato a correre prima di colazione.",
-      "Oggi ho preparato il pane pentru colazione."
-    ],
-    "ko": [
-      "아침 먹을 시간이 없어!",
-      "저는 가족과 함께 아침을 먹는 것을 정말 좋아합니다.",
-      "아침 먹기 전에 조깅을 했어요.",
-      "오늘 아침으로 빵을 구웠어."
-    ],
-    "zh-Hans": [
-      "我没时间吃早餐！",
-      "我喜欢和家人一起吃早餐。",
-      "我早餐前去慢跑了。",
-      "我今天早餐烤了面包。"
-    ],
-    "yue": [
-      "我冇時間食早餐！",
-      "我鍾意同屋企人一齊食早餐。",
-      "早餐前我去慢跑。",
-      "我今日早餐焗咗麵包。"
-    ],
-    "ru": [
-      "У меня нет времени завтракать!",
-      "Я люблю завтракать вместе с семьёй.",
-      "Я пошла на пробежку перед завтраком.",
-      "Сегодня я испекла хлеб на завтрак."
-    ],
-    "pt": [
-      "Não tenho tempo para tomar café da manhã!",
-      "Adoro tomar café da manhã com minha família.",
-      "Fui correr antes do café da manhã.",
-      "Hoje fiz pão no café da manhã."
-    ],
-    "he": [
-      "אין לי זמן לאכול ארוחת בוקר!",
-      "אני אוהב לאכול ארוחת בוקר יחד עם המשפחה שלי.",
-      "הלכתי לרוץ לפני ארוחת הבוקר.",
-      "אפיתי לחם לארוחת בוקר היום."
-    ],
-    "tr": [
-      "Kahvaltı yapmaya vaktim yok!",
-      "Ailemle birlikte kahvaltı yapmayı çok seviyorum.",
-      "Kahvaltıdan önce koşmaya çıktım.",
-      "Bugün kahvaltıda ekmek pişirdim."
-    ],
-    "vi": [
-      "Tôi không có thời gian để ăn sáng!",
-      "Tôi thích ăn sáng cùng gia đình.",
-      "Tôi đã chạy bộ trước khi ăn sáng.",
-      "Hôm nay tôi đã nướng bánh mì cho bữa sáng."
-    ],
+    "word_POS": "Noun",
+    "entry_id": "朝食",
+    "word_en": "breakfast",
+    "word_es": "Desayuno",
+    "word_fr": "petit-déjeuner",
+    "word_de": "Frühstück",
+    "word_it": "Colazione",
+    "word_ko": "아침 식사",
+    "word_zh-Hans": "早餐",
+    "word_yue": "早餐",
+    "word_ru": "завтрак",
+    "word_pt": "café da manhã",
+    "word_he": "ארוחת בוקר",
+    "word_tr": "Kahvaltı",
+    "word_vi": "Bữa sáng",
+    "word_ar": "الإفطار",
+    "word_nl": "Ontbijt",
+    "word_uk": "Сніданок",
+    "word_hu": "Reggeli",
+    "word_hi": "नाश्ता",
+    "word_pl": "Śniadanie",
+    "word_el": "Πρωινό",
+    "word_nb": "Frokost",
+    "word_id": "sarapan pagi",
+    "word_sv": "Frukost",
+    "word_ro": "Mic dejun",
+    "word_cs": "Snídaně",
+    "word_da": "Morgenmad",
+    "word_fi": "Aamiainen",
     "ar": [
       "ليس لدي وقت لتناول الإفطار!",
       "أحب تناول الإفطار مع عائلتي.",
       "ذهبت للجري قبل الإفطار.",
       "خبزت الخبز على الإفطار اليوم."
-    ],
-    "nl": [
-      "Ik heb geen tijd om te ontbijten!",
-      "Ik eet graag samen met mijn gezin ontbijt.",
-      "Ik ben gaan joggen voor het ontbijt.",
-      "Ik heb vandaag brood gebakken voor het ontbijt."
-    ],
-    "uk": [
-      "У мене немає часу снідати!",
-      "Я люблю снідати разом із родиною.",
-      "Я пішов бігати до сніданку.",
-      "Сьогодні я спекла хліб на сніданок."
-    ],
-    "hu": [
-      "Nincs időm reggelizni!",
-      "Imádok együtt reggelizni a családommal.",
-      "Reggeli előtt elmentem kocogni.",
-      "Ma reggelire kenyeret sütöttem."
-    ],
-    "hi": [
-      "मेरे पास नाश्ता करने का समय नहीं है!",
-      "मुझे अपने परिवार के साथ नाश्ता करना पसंद है।",
-      "मैं नाश्ते से पहले जॉगिंग करने गया।",
-      "मैंने आज नाश्ते में रोटी पकाई।"
-    ],
-    "pl": [
-      "Nie mam czasu na śniadanie!",
-      "Uwielbiam jeść śniadanie razem z rodziną.",
-      "Poszedłem pobiegać przed śniadaniem.",
-      "Dziś piekłem chleb na śniadanie."
-    ],
-    "el": [
-      "Δεν έχω χρόνο να φάω πρωινό!",
-      "Μου αρέσει να τρώω πρωινό μαζί με την οικογένειά μου.",
-      "Πήγα για τζόκινγκ πριν το πρωινό.",
-      "Έψησα ψωμί για πρωινό σήμερα."
-    ],
-    "nb": [
-      "Jeg har ikke tid til å spise frokost!",
-      "Jeg elsker å spise frokost sammen med familien min.",
-      "Jeg jogget før frokost.",
-      "Jeg bakte brød til frokost i dag."
-    ],
-    "id": [
-      "Saya tidak punya waktu untuk sarapan!",
-      "Saya suka sarapan bersama keluarga saya.",
-      "Saya pergi jogging sebelum sarapan.",
-      "Saya memanggang roti untuk sarapan hari ini."
-    ],
-    "sv": [
-      "Jag har inte tid att äta frukost!",
-      "Jag älskar att äta frukost tillsammans med min familj.",
-      "Jag gick ut och joggade innan frukost.",
-      "Jag bakade bröd till frukost idag."
-    ],
-    "ro": [
-      "Nu am timp să mănânc micul dejun!",
-      "Îmi place să mănânc micul dejun împreună cu familia.",
-      "Am ieșit la jogging înainte de micul dejun.",
-      "Am copt pâine la micul dejun azi."
     ],
     "cs": [
       "Nemám čas na snídani!",
@@ -1412,16 +1838,153 @@
     ],
     "da": [
       "Jeg har ikke tid til at spise morgenmad!",
-      "Jeg elsker at spise morgenmad sammen med min familie.",
+      "Jeg kan godt lide at spise morgenmad sammen med min familie.",
       "Jeg var ude at jogge før morgenmaden.",
       "Jeg bagte brød til morgenmad i dag."
     ],
+    "de": [
+      "Ich habe keine Zeit zum Frühstück!",
+      "Ich frühstücke gern mit meiner Familie.",
+      "Ich war vor dem Frühstück joggen.",
+      "Ich habe heute Brot zum Frühstück gebacken."
+    ],
+    "el": [
+      "Δεν έχω χρόνο να φάω πρωινό!",
+      "Μου αρέσει να τρώω πρωινό μαζί με την οικογένειά μου.",
+      "Πήγα για τζόκινγκ πριν το πρωινό.",
+      "Έψησα ψωμί για πρωινό σήμερα."
+    ],
+    "en": [
+      "I have no time to eat breakfast!",
+      "I like eating breakfast with my family.",
+      "I went jogging before breakfast.",
+      "I baked bread for breakfast today."
+    ],
+    "es": [
+      "¡No tengo tiempo para desayunar!",
+      "Me gusta desayunar con mi familia.",
+      "Salí a correr antes del desayuno.",
+      "Hoy he horneado pan para desayunar."
+    ],
     "fi": [
       "Minulla ei ole aikaa syödä aamupalaa!",
-      "Rakastan syödä aamiaista yhdessä perheeni kanssa.",
+      "Tykkään syödä aamiaista yhdessä perheeni kanssa.",
       "Kävin lenkillä ennen aamiaista.",
       "Leivoin leipää aamupalaksi tänään."
     ],
-    "word_POS": "Noun"
+    "fr": [
+      "Je n’ai pas le temps de prendre le petit-déjeuner !",
+      "J’aime prendre le petit-déjeuner avec ma famille.",
+      "Je suis allé faire du jogging avant le petit-déjeuner.",
+      "J’ai fait du pain pour le petit-déjeuner aujourd’hui."
+    ],
+    "he": [
+      "אין לי זמן לאכול ארוחת בוקר!",
+      "אני אוהב לאכול ארוחת בוקר יחד עם המשפחה שלי.",
+      "הלכתי לרוץ לפני ארוחת הבוקר.",
+      "אפיתי לחם לארוחת בוקר היום."
+    ],
+    "hi": [
+      "मेरे पास नाश्ता करने का समय नहीं है!",
+      "मुझे अपने परिवार के साथ नाश्ता करना पसंद है।",
+      "मैं नाश्ते से पहले जॉगिंग करने गया।",
+      "मैंने आज नाश्ते में रोटी पकाई।"
+    ],
+    "hu": [
+      "Nincs időm reggelizni!",
+      "Szeretek együtt reggelizni a családommal.",
+      "Reggeli előtt elmentem kocogni.",
+      "Ma reggelire kenyeret sütöttem."
+    ],
+    "id": [
+      "Saya tidak punya waktu untuk sarapan!",
+      "Saya suka sarapan bersama keluarga saya.",
+      "Saya pergi jogging sebelum sarapan.",
+      "Saya memanggang roti untuk sarapan hari ini."
+    ],
+    "it": [
+      "Non ho tempo per fare colazione!",
+      "Mi piace fare colazione con la mia famiglia.",
+      "Sono andato a correre prima di colazione.",
+      "Oggi ho preparato il pane pentru colazione."
+    ],
+    "ko": [
+      "아침 먹을 시간이 없어!",
+      "저는 가족과 함께 아침을 먹는 것을 좋아합니다.",
+      "아침 먹기 전에 조깅을 했어요.",
+      "오늘 아침으로 빵을 구웠어."
+    ],
+    "nb": [
+      "Jeg har ikke tid til å spise frokost!",
+      "Jeg liker å spise frokost sammen med familien min.",
+      "Jeg jogget før frokost.",
+      "Jeg bakte brød til frokost i dag."
+    ],
+    "nl": [
+      "Ik heb geen tijd om te ontbijten!",
+      "Ik eet graag samen met mijn gezin ontbijt.",
+      "Ik ben gaan joggen voor het ontbijt.",
+      "Ik heb vandaag brood gebakken voor het ontbijt."
+    ],
+    "pl": [
+      "Nie mam czasu na śniadanie!",
+      "Lubię jeść śniadanie z rodziną.",
+      "Poszedłem pobiegać przed śniadaniem.",
+      "Dziś piekłem chleb na śniadanie."
+    ],
+    "pt": [
+      "Não tenho tempo para tomar café da manhã!",
+      "Gosto de tomar café da manhã com minha família.",
+      "Fui correr antes do café da manhã.",
+      "Hoje fiz pão no café da manhã."
+    ],
+    "ro": [
+      "Nu am timp să mănânc micul dejun!",
+      "Îmi place să mănânc micul dejun împreună cu familia.",
+      "Am ieșit la jogging înainte de micul dejun.",
+      "Am copt pâine la micul dejun azi."
+    ],
+    "ru": [
+      "У меня нет времени завтракать!",
+      "Я люблю завтракать вместе с семьёй.",
+      "Я пошла на пробежку перед завтраком.",
+      "Сегодня я испекла хлеб на завтрак."
+    ],
+    "sv": [
+      "Jag har inte tid att äta frukost!",
+      "Jag tycker om att äta frukost tillsammans med min familj.",
+      "Jag gick ut och joggade innan frukost.",
+      "Jag bakade bröd till frukost idag."
+    ],
+    "tr": [
+      "Kahvaltı yapmaya vaktim yok!",
+      "Ailemle birlikte kahvaltı yapmayı seviyorum.",
+      "Kahvaltıdan önce koşmaya çıktım.",
+      "Bugün kahvaltıda ekmek pişirdim."
+    ],
+    "uk": [
+      "У мене немає часу снідати!",
+      "Я люблю снідати разом із родиною.",
+      "Я пішов бігати до сніданку.",
+      "Сьогодні я спекла хліб на сніданок."
+    ],
+    "vi": [
+      "Tôi không có thời gian để ăn sáng!",
+      "Tôi thích ăn sáng cùng gia đình.",
+      "Tôi đã chạy bộ trước khi ăn sáng.",
+      "Hôm nay tôi đã nướng bánh mì cho bữa sáng."
+    ],
+    "yue": [
+      "我冇時間食早餐！",
+      "我鍾意同屋企人一齊食早餐。",
+      "早餐前我去慢跑。",
+      "我今日早餐焗咗麵包。"
+    ],
+    "zh-Hans": [
+      "我没时间吃早餐！",
+      "我喜欢和家人一起吃早餐。",
+      "我早餐前去慢跑了。",
+      "我今天早餐烤了面包。"
+    ]
   }
 }

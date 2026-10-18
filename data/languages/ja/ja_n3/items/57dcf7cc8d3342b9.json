@@ -5,7 +5,7 @@
   "language": "ja",
   "entry_id": "カロリー",
   "headword": "カロリー",
-  "reading": "カロリー",
+  "reading": "かろりー",
   "label": "calorie",
   "level": "N3",
   "order": 245,
@@ -55,7 +55,7 @@
         "fi": "Tässä kakussa on paljon kaloreita.",
         "fr": "Ce gâteau est très calorique.",
         "he": "בעוגה הזאת יש הרבה קלוריות.",
-        "hi": "इस केक में बहुत कैलोरी है।",
+        "hi": "इस केक में बहुत अधिक कैलोरी है।",
         "hu": "Ennek a süteménynek magas a kalóriatartalma.",
         "id": "Kue ini tinggi kalori.",
         "it": "Questa torta ha molte calorie.",
@@ -214,14 +214,14 @@
       "difficulty": null
     },
     {
-      "target": "今日はカロリーを少しへらします。",
+      "target": "今日はカロリーを少し減らします。",
       "reading": "きょうはかろりーをすこしへらします。",
       "translations": {
         "en": "I'll cut back on calories a little today.",
         "ar": "سأقلل السعرات الحرارية قليلًا اليوم.",
         "cs": "Dnes trochu omezím kalorie.",
         "da": "Jeg skærer lidt ned på kalorierne i dag.",
-        "de": "Ich werde heute ein wenig Kalorien sparen.",
+        "de": "Heute werde ich meine Kalorienzufuhr etwas reduzieren.",
         "el": "Σήμερα θα μειώσω λίγο τις θερμίδες μου.",
         "es": "Hoy reduciré un poco las calorías.",
         "fi": "Vähennän tänään kaloreita vähän.",
@@ -266,8 +266,9 @@
               "length": 2
             }
           ],
-          "ruby_confidence": "medium",
-          "furigana": "きょう"
+          "ruby_confidence": "reviewed",
+          "furigana": "きょう",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "は",
@@ -338,12 +339,13 @@
               "length": 1
             }
           ],
-          "ruby_confidence": "high",
-          "furigana": "すこし"
+          "ruby_confidence": "reviewed",
+          "furigana": "すこし",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
-          "surface": "へらし",
-          "lemma": "へらす",
+          "surface": "減らし",
+          "lemma": "減らす",
           "pos": "動詞/一般/*/*/五段-サ行/連用形-一般",
           "upos": "VERB",
           "xpos": "動詞",
@@ -352,10 +354,18 @@
           "end": 13,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "へらし",
-          "ruby_text": "へらし",
-          "ruby_spans": [],
-          "ruby_confidence": "high",
-          "furigana": "へらし"
+          "ruby_text": "減[へ]らし",
+          "ruby_spans": [
+            {
+              "base": "減",
+              "reading": "へ",
+              "start": 0,
+              "length": 1
+            }
+          ],
+          "ruby_confidence": "reviewed",
+          "furigana": "へらし",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "ます",
@@ -787,8 +797,440 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-12T23:18:24Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:Ja n3/57dcf7cc8d3342b9",
+      "revision_id": 81533,
+      "parent_revision_id": 67366,
+      "revision_timestamp_utc": "2026-10-12T23:18:24Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Used the standard kanji for 減らす, clarified the German meaning as reducing calorie intake, and corrected the Hindi quantity phrasing.",
+      "pulled_utc": "2026-10-18T17:39:01Z",
+      "applied_utc": "2026-10-18T17:39:39Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-8a2ea09021061e36",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "ja_n3:57dcf7cc8d3342b9",
+        "pack_code": "ja_n3",
+        "entry_id": "カロリー",
+        "language": "ja",
+        "sentence_index": 2,
+        "old_sentence": "今日はカロリーを少しへらします。",
+        "old_translations": {
+          "en": "I'll cut back on calories a little today.",
+          "ar": "سأقلل السعرات الحرارية قليلًا اليوم.",
+          "cs": "Dnes trochu omezím kalorie.",
+          "da": "Jeg skærer lidt ned på kalorierne i dag.",
+          "de": "Ich werde heute ein wenig Kalorien sparen.",
+          "el": "Σήμερα θα μειώσω λίγο τις θερμίδες μου.",
+          "es": "Hoy reduciré un poco las calorías.",
+          "fi": "Vähennän tänään kaloreita vähän.",
+          "fr": "Aujourd'hui, je vais réduire un peu les calories.",
+          "he": "היום אצמצם קצת את הקלוריות.",
+          "hi": "आज मैं कैलोरी थोड़ा कम करूँगा।",
+          "hu": "Ma egy kicsit csökkentem a kalóriabevitelem.",
+          "id": "Hari ini saya akan mengurangi kalori sedikit.",
+          "it": "Oggi ridurrò un po' le calorie.",
+          "ko": "오늘은 칼로리를 조금 줄일 거예요.",
+          "nb": "I dag skal jeg kutte litt ned på kaloriene.",
+          "nl": "Ik ga vandaag wat minder calorieën eten.",
+          "pl": "Dziś trochę ograniczę kalorie.",
+          "pt": "Hoje vou reduzir um pouco as calorias.",
+          "ro": "Azi voi reduce puțin caloriile.",
+          "ru": "Сегодня я немного сокращу калории.",
+          "sv": "I dag ska jag dra ner lite på kalorierna.",
+          "tr": "Bugün kalorileri biraz azaltacağım.",
+          "uk": "Сьогодні я трохи зменшу калорії.",
+          "vi": "Hôm nay tôi sẽ giảm bớt calo một chút.",
+          "yue": "我今日會少食啲卡路里。",
+          "zh-Hans": "今天我要少摄入一点热量。"
+        },
+        "proposed_sentence": "今日はカロリーを少し減らします。",
+        "proposed_translations": {
+          "en": "I'll cut back on calories a little today.",
+          "ar": "سأقلل السعرات الحرارية قليلًا اليوم.",
+          "cs": "Dnes trochu omezím kalorie.",
+          "da": "Jeg skærer lidt ned på kalorierne i dag.",
+          "de": "Heute werde ich meine Kalorienzufuhr etwas reduzieren.",
+          "el": "Σήμερα θα μειώσω λίγο τις θερμίδες μου.",
+          "es": "Hoy reduciré un poco las calorías.",
+          "fi": "Vähennän tänään kaloreita vähän.",
+          "fr": "Aujourd'hui, je vais réduire un peu les calories.",
+          "he": "היום אצמצם קצת את הקלוריות.",
+          "hi": "आज मैं कैलोरी थोड़ा कम करूँगा।",
+          "hu": "Ma egy kicsit csökkentem a kalóriabevitelem.",
+          "id": "Hari ini saya akan mengurangi kalori sedikit.",
+          "it": "Oggi ridurrò un po' le calorie.",
+          "ko": "오늘은 칼로리를 조금 줄일 거예요.",
+          "nb": "I dag skal jeg kutte litt ned på kaloriene.",
+          "nl": "Ik ga vandaag wat minder calorieën eten.",
+          "pl": "Dziś trochę ograniczę kalorie.",
+          "pt": "Hoje vou reduzir um pouco as calorias.",
+          "ro": "Azi voi reduce puțin caloriile.",
+          "ru": "Сегодня я немного сокращу калории.",
+          "sv": "I dag ska jag dra ner lite på kalorierna.",
+          "tr": "Bugün kalorileri biraz azaltacağım.",
+          "uk": "Сьогодні я трохи зменшу калорії.",
+          "vi": "Hôm nay tôi sẽ giảm bớt calo một chút.",
+          "yue": "我今日會少食啲卡路里。",
+          "zh-Hans": "今天我要少摄入一点热量。"
+        },
+        "old_ruby_source": "今日[きょう]はカロリーを少[すこ]しへらします。",
+        "proposed_ruby_source": "今日[きょう]はカロリーを少[すこ]し減[へ]らします。",
+        "old_japanese": "今日はカロリーを少しへらします。",
+        "old_english": "I'll cut back on calories a little today.",
+        "proposed_japanese": "今日はカロリーを少し減らします。",
+        "proposed_english": "I'll cut back on calories a little today.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "ja",
+          "sentence": "今日はカロリーを少し減らします。",
+          "tokens": [
+            {
+              "surface": "今日",
+              "lemma": "今日",
+              "pos": "名詞/普通名詞/副詞可能/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 0,
+              "end": 2,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "きょう",
+              "ruby_text": "今日[きょう]",
+              "ruby_spans": [
+                {
+                  "base": "今日",
+                  "reading": "きょう",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "きょう",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "は",
+              "lemma": "は",
+              "pos": "助詞/係助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 2,
+              "end": 3,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "は",
+              "ruby_text": "は",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "は"
+            },
+            {
+              "surface": "カロリー",
+              "lemma": "カロリー",
+              "pos": "名詞/普通名詞/助数詞可能/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 3,
+              "end": 7,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "かろりー",
+              "ruby_text": "カロリー",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "かろりー"
+            },
+            {
+              "surface": "を",
+              "lemma": "を",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 7,
+              "end": 8,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "を",
+              "ruby_text": "を",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "を"
+            },
+            {
+              "surface": "少し",
+              "lemma": "少し",
+              "pos": "副詞/*/*/*/*/*",
+              "upos": "ADV",
+              "xpos": "副詞",
+              "feats": {},
+              "start": 8,
+              "end": 10,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "すこし",
+              "ruby_text": "少[すこ]し",
+              "ruby_spans": [
+                {
+                  "base": "少",
+                  "reading": "すこ",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "すこし",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "減らし",
+              "lemma": "減らす",
+              "pos": "動詞/一般/*/*/五段-サ行/連用形-一般",
+              "upos": "VERB",
+              "xpos": "動詞",
+              "feats": {},
+              "start": 10,
+              "end": 13,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "へらし",
+              "ruby_text": "減[へ]らし",
+              "ruby_spans": [
+                {
+                  "base": "減",
+                  "reading": "へ",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "へらし",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "ます",
+              "lemma": "ます",
+              "pos": "助動詞/*/*/*/助動詞-マス/終止形-一般",
+              "upos": "AUX",
+              "xpos": "助動詞",
+              "feats": {},
+              "start": 13,
+              "end": 15,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "ます",
+              "ruby_text": "ます",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "ます"
+            },
+            {
+              "surface": "。",
+              "lemma": "。",
+              "pos": "補助記号/句点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 15,
+              "end": 16,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "。",
+              "ruby_text": "。",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "。"
+            }
+          ],
+          "reading": "きょうはかろりーをすこしへらします。",
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "warnings": [
+            "mediawiki ruby hints applied"
+          ]
+        },
+        "generated_tokens": [
+          {
+            "surface": "今日",
+            "lemma": "今日",
+            "pos": "名詞/普通名詞/副詞可能/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "きょう",
+            "ruby_text": "今日[きょう]",
+            "ruby_spans": [
+              {
+                "base": "今日",
+                "reading": "きょう",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "きょう",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "は",
+            "lemma": "は",
+            "pos": "助詞/係助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 2,
+            "end": 3,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "は",
+            "ruby_text": "は",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "は"
+          },
+          {
+            "surface": "カロリー",
+            "lemma": "カロリー",
+            "pos": "名詞/普通名詞/助数詞可能/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 3,
+            "end": 7,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "かろりー",
+            "ruby_text": "カロリー",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "かろりー"
+          },
+          {
+            "surface": "を",
+            "lemma": "を",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 7,
+            "end": 8,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "を",
+            "ruby_text": "を",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "を"
+          },
+          {
+            "surface": "少し",
+            "lemma": "少し",
+            "pos": "副詞/*/*/*/*/*",
+            "upos": "ADV",
+            "xpos": "副詞",
+            "feats": {},
+            "start": 8,
+            "end": 10,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "すこし",
+            "ruby_text": "少[すこ]し",
+            "ruby_spans": [
+              {
+                "base": "少",
+                "reading": "すこ",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "すこし",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "減らし",
+            "lemma": "減らす",
+            "pos": "動詞/一般/*/*/五段-サ行/連用形-一般",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 10,
+            "end": 13,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "へらし",
+            "ruby_text": "減[へ]らし",
+            "ruby_spans": [
+              {
+                "base": "減",
+                "reading": "へ",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "へらし",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "ます",
+            "lemma": "ます",
+            "pos": "助動詞/*/*/*/助動詞-マス/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 13,
+            "end": 15,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ます",
+            "ruby_text": "ます",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "ます"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 15,
+            "end": 16,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
+          }
+        ],
+        "generated_reading": "きょうはかろりーをすこしへらします。",
+        "analyzer": "sudachipy_sudachidict_core_c",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-18T17:39:01Z",
+        "updated_utc": "2026-10-18T17:40:38Z",
+        "applied_utc": "2026-10-18T17:40:38Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-18T17:40:38Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -799,7 +1241,7 @@
   "app_payload": {
     "entry_id": "カロリー",
     "word": "カロリー",
-    "word_reading": "カロリー",
+    "word_reading": "かろりー",
     "word_label": "calorie",
     "comic_difficulty": 0.0,
     "jp": [
@@ -813,12 +1255,6 @@
       "きょうはかろりーをすこしへらします。",
       "このじゅーすはかろりーがひくいです。",
       "うんどうをするとかろりーをしょうひします。"
-    ],
-    "en": [
-      "This cake is high in calories.",
-      "I'll cut back on calories a little today.",
-      "This juice is low in calories.",
-      "Exercise burns calories."
     ],
     "generation": {
       "generator": "vocomipedia_source_generator.py",
@@ -856,190 +1292,6 @@
         "definitions": "calorie"
       }
     },
-    "word_en": "calorie",
-    "word_es": "caloría",
-    "word_fr": "calorie",
-    "word_de": "Kalorie",
-    "word_it": "caloria",
-    "word_ko": "칼로리",
-    "word_zh-Hans": "卡路里",
-    "word_yue": "卡路里",
-    "word_ru": "калория",
-    "word_pt": "caloria",
-    "word_he": "קלוריה",
-    "word_tr": "kalori",
-    "word_vi": "calo",
-    "word_ar": "سعرة حرارية",
-    "word_nl": "calorie",
-    "word_uk": "калорія",
-    "word_hu": "kalória",
-    "word_hi": "कैलोरी",
-    "word_pl": "kaloria",
-    "word_el": "θερμίδα",
-    "word_nb": "kalori",
-    "word_id": "kalori",
-    "word_sv": "kalori",
-    "word_ro": "calorie",
-    "word_cs": "kalorie",
-    "word_da": "kalorie",
-    "word_fi": "kalori",
-    "word_ja": "カロリー",
-    "ar": [
-      "هذه الكعكة عالية السعرات الحرارية.",
-      "سأقلل السعرات الحرارية قليلًا اليوم.",
-      "هذا العصير قليل السعرات الحرارية.",
-      "التمرين يحرق السعرات الحرارية."
-    ],
-    "cs": [
-      "Tento dort má hodně kalorií.",
-      "Dnes trochu omezím kalorie.",
-      "Tato šťáva má málo kalorií.",
-      "Cvičení spaluje kalorie."
-    ],
-    "da": [
-      "Denne kage har mange kalorier.",
-      "Jeg skærer lidt ned på kalorierne i dag.",
-      "Denne juice er kaloriefattig.",
-      "Motion forbrænder kalorier."
-    ],
-    "de": [
-      "Dieser Kuchen hat viele Kalorien.",
-      "Ich werde heute ein wenig Kalorien sparen.",
-      "Dieser Saft hat wenig Kalorien.",
-      "Sport verbrennt Kalorien."
-    ],
-    "el": [
-      "Αυτό το κέικ έχει πολλές θερμίδες.",
-      "Σήμερα θα μειώσω λίγο τις θερμίδες μου.",
-      "Αυτός ο χυμός έχει λίγες θερμίδες.",
-      "Η άσκηση καίει θερμίδες."
-    ],
-    "es": [
-      "Este pastel tiene muchas calorías.",
-      "Hoy reduciré un poco las calorías.",
-      "Este jugo tiene pocas calorías.",
-      "El ejercicio quema calorías."
-    ],
-    "fi": [
-      "Tässä kakussa on paljon kaloreita.",
-      "Vähennän tänään kaloreita vähän.",
-      "Tässä mehussa on vähän kaloreita.",
-      "Liikunta kuluttaa kaloreita."
-    ],
-    "fr": [
-      "Ce gâteau est très calorique.",
-      "Aujourd'hui, je vais réduire un peu les calories.",
-      "Ce jus est peu calorique.",
-      "L'exercice brûle des calories."
-    ],
-    "he": [
-      "בעוגה הזאת יש הרבה קלוריות.",
-      "היום אצמצם קצת את הקלוריות.",
-      "המיץ הזה דל קלוריות.",
-      "פעילות גופנית שורפת קלוריות."
-    ],
-    "hi": [
-      "इस केक में बहुत कैलोरी है।",
-      "आज मैं कैलोरी थोड़ा कम करूँगा।",
-      "इस जूस में कम कैलोरी है।",
-      "व्यायाम कैलोरी जलाता है।"
-    ],
-    "hu": [
-      "Ennek a süteménynek magas a kalóriatartalma.",
-      "Ma egy kicsit csökkentem a kalóriabevitelem.",
-      "Ennek a lének alacsony a kalóriatartalma.",
-      "A mozgás kalóriát éget."
-    ],
-    "id": [
-      "Kue ini tinggi kalori.",
-      "Hari ini saya akan mengurangi kalori sedikit.",
-      "Jus ini rendah kalori.",
-      "Olahraga membakar kalori."
-    ],
-    "it": [
-      "Questa torta ha molte calorie.",
-      "Oggi ridurrò un po' le calorie.",
-      "Questo succo ha poche calorie.",
-      "L'esercizio brucia calorie."
-    ],
-    "ko": [
-      "이 케이크는 칼로리가 높습니다.",
-      "오늘은 칼로리를 조금 줄일 거예요.",
-      "이 주스는 칼로리가 낮습니다.",
-      "운동을 하면 칼로리를 소비합니다."
-    ],
-    "nb": [
-      "Denne kaken har mange kalorier.",
-      "I dag skal jeg kutte litt ned på kaloriene.",
-      "Denne juicen har få kalorier.",
-      "Trening forbrenner kalorier."
-    ],
-    "nl": [
-      "Deze taart bevat veel calorieën.",
-      "Ik ga vandaag wat minder calorieën eten.",
-      "Dit sap bevat weinig calorieën.",
-      "Lichaamsbeweging verbrandt calorieën."
-    ],
-    "pl": [
-      "To ciasto ma dużo kalorii.",
-      "Dziś trochę ograniczę kalorie.",
-      "Ten sok ma mało kalorii.",
-      "Ćwiczenia spalają kalorie."
-    ],
-    "pt": [
-      "Este bolo tem muitas calorias.",
-      "Hoje vou reduzir um pouco as calorias.",
-      "Este suco tem poucas calorias.",
-      "O exercício queima calorias."
-    ],
-    "ro": [
-      "Acest tort are multe calorii.",
-      "Azi voi reduce puțin caloriile.",
-      "Acest suc are puține calorii.",
-      "Exercițiile ard calorii."
-    ],
-    "ru": [
-      "В этом торте много калорий.",
-      "Сегодня я немного сокращу калории.",
-      "В этом соке мало калорий.",
-      "Физические упражнения сжигают калории."
-    ],
-    "sv": [
-      "Den här kakan har många kalorier.",
-      "I dag ska jag dra ner lite på kalorierna.",
-      "Den här juicen har få kalorier.",
-      "Motion förbränner kalorier."
-    ],
-    "tr": [
-      "Bu kekin kalorisi yüksek.",
-      "Bugün kalorileri biraz azaltacağım.",
-      "Bu meyve suyunun kalorisi düşük.",
-      "Egzersiz kalori yakar."
-    ],
-    "uk": [
-      "У цьому торті багато калорій.",
-      "Сьогодні я трохи зменшу калорії.",
-      "У цьому соку мало калорій.",
-      "Вправи спалюють калорії."
-    ],
-    "vi": [
-      "Bánh này nhiều calo.",
-      "Hôm nay tôi sẽ giảm bớt calo một chút.",
-      "Nước ép này ít calo.",
-      "Tập thể dục đốt cháy calo."
-    ],
-    "yue": [
-      "呢個蛋糕嘅卡路里好高。",
-      "我今日會少食啲卡路里。",
-      "呢杯果汁卡路里好低。",
-      "做運動會消耗卡路里。"
-    ],
-    "zh-Hans": [
-      "这个蛋糕热量很高。",
-      "今天我要少摄入一点热量。",
-      "这个果汁热量很低。",
-      "运动会消耗热量。"
-    ],
     "pos_analysis": [
       {
         "sentence": "このケーキはカロリーが高いです。",
@@ -1184,7 +1436,7 @@
         "difficulty_aggregated": null
       },
       {
-        "sentence": "今日はカロリーを少しへらします。",
+        "sentence": "今日はカロリーを少し減らします。",
         "tokens": [
           {
             "surface": "今日",
@@ -1206,8 +1458,9 @@
                 "length": 2
               }
             ],
-            "ruby_confidence": "medium",
-            "furigana": "きょう"
+            "ruby_confidence": "reviewed",
+            "furigana": "きょう",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "は",
@@ -1278,12 +1531,13 @@
                 "length": 1
               }
             ],
-            "ruby_confidence": "high",
-            "furigana": "すこし"
+            "ruby_confidence": "reviewed",
+            "furigana": "すこし",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
-            "surface": "へらし",
-            "lemma": "へらす",
+            "surface": "減らし",
+            "lemma": "減らす",
             "pos": "動詞/一般/*/*/五段-サ行/連用形-一般",
             "upos": "VERB",
             "xpos": "動詞",
@@ -1292,10 +1546,18 @@
             "end": 13,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "へらし",
-            "ruby_text": "へらし",
-            "ruby_spans": [],
-            "ruby_confidence": "high",
-            "furigana": "へらし"
+            "ruby_text": "減[へ]らし",
+            "ruby_spans": [
+              {
+                "base": "減",
+                "reading": "へ",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "へらし",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "ます",
@@ -1655,6 +1917,196 @@
         ],
         "difficulty_aggregated": null
       }
+    ],
+    "word_en": "calorie",
+    "word_es": "caloría",
+    "word_fr": "calorie",
+    "word_de": "Kalorie",
+    "word_it": "caloria",
+    "word_ko": "칼로리",
+    "word_zh-Hans": "卡路里",
+    "word_yue": "卡路里",
+    "word_ru": "калория",
+    "word_pt": "caloria",
+    "word_he": "קלוריה",
+    "word_tr": "kalori",
+    "word_vi": "calo",
+    "word_ar": "سعرة حرارية",
+    "word_nl": "calorie",
+    "word_uk": "калорія",
+    "word_hu": "kalória",
+    "word_hi": "कैलोरी",
+    "word_pl": "kaloria",
+    "word_el": "θερμίδα",
+    "word_nb": "kalori",
+    "word_id": "kalori",
+    "word_sv": "kalori",
+    "word_ro": "calorie",
+    "word_cs": "kalorie",
+    "word_da": "kalorie",
+    "word_fi": "kalori",
+    "word_ja": "カロリー",
+    "ar": [
+      "هذه الكعكة عالية السعرات الحرارية.",
+      "سأقلل السعرات الحرارية قليلًا اليوم.",
+      "هذا العصير قليل السعرات الحرارية.",
+      "التمرين يحرق السعرات الحرارية."
+    ],
+    "cs": [
+      "Tento dort má hodně kalorií.",
+      "Dnes trochu omezím kalorie.",
+      "Tato šťáva má málo kalorií.",
+      "Cvičení spaluje kalorie."
+    ],
+    "da": [
+      "Denne kage har mange kalorier.",
+      "Jeg skærer lidt ned på kalorierne i dag.",
+      "Denne juice er kaloriefattig.",
+      "Motion forbrænder kalorier."
+    ],
+    "de": [
+      "Dieser Kuchen hat viele Kalorien.",
+      "Ich werde heute ein wenig Kalorien sparen.",
+      "Dieser Saft hat wenig Kalorien.",
+      "Sport verbrennt Kalorien."
+    ],
+    "el": [
+      "Αυτό το κέικ έχει πολλές θερμίδες.",
+      "Σήμερα θα μειώσω λίγο τις θερμίδες μου.",
+      "Αυτός ο χυμός έχει λίγες θερμίδες.",
+      "Η άσκηση καίει θερμίδες."
+    ],
+    "en": [
+      "This cake is high in calories.",
+      "I'll cut back on calories a little today.",
+      "This juice is low in calories.",
+      "Exercise burns calories."
+    ],
+    "es": [
+      "Este pastel tiene muchas calorías.",
+      "Hoy reduciré un poco las calorías.",
+      "Este jugo tiene pocas calorías.",
+      "El ejercicio quema calorías."
+    ],
+    "fi": [
+      "Tässä kakussa on paljon kaloreita.",
+      "Vähennän tänään kaloreita vähän.",
+      "Tässä mehussa on vähän kaloreita.",
+      "Liikunta kuluttaa kaloreita."
+    ],
+    "fr": [
+      "Ce gâteau est très calorique.",
+      "Aujourd'hui, je vais réduire un peu les calories.",
+      "Ce jus est peu calorique.",
+      "L'exercice brûle des calories."
+    ],
+    "he": [
+      "בעוגה הזאת יש הרבה קלוריות.",
+      "היום אצמצם קצת את הקלוריות.",
+      "המיץ הזה דל קלוריות.",
+      "פעילות גופנית שורפת קלוריות."
+    ],
+    "hi": [
+      "इस केक में बहुत अधिक कैलोरी है।",
+      "आज मैं कैलोरी थोड़ा कम करूँगा।",
+      "इस जूस में कम कैलोरी है।",
+      "व्यायाम कैलोरी जलाता है।"
+    ],
+    "hu": [
+      "Ennek a süteménynek magas a kalóriatartalma.",
+      "Ma egy kicsit csökkentem a kalóriabevitelem.",
+      "Ennek a lének alacsony a kalóriatartalma.",
+      "A mozgás kalóriát éget."
+    ],
+    "id": [
+      "Kue ini tinggi kalori.",
+      "Hari ini saya akan mengurangi kalori sedikit.",
+      "Jus ini rendah kalori.",
+      "Olahraga membakar kalori."
+    ],
+    "it": [
+      "Questa torta ha molte calorie.",
+      "Oggi ridurrò un po' le calorie.",
+      "Questo succo ha poche calorie.",
+      "L'esercizio brucia calorie."
+    ],
+    "ko": [
+      "이 케이크는 칼로리가 높습니다.",
+      "오늘은 칼로리를 조금 줄일 거예요.",
+      "이 주스는 칼로리가 낮습니다.",
+      "운동을 하면 칼로리를 소비합니다."
+    ],
+    "nb": [
+      "Denne kaken har mange kalorier.",
+      "I dag skal jeg kutte litt ned på kaloriene.",
+      "Denne juicen har få kalorier.",
+      "Trening forbrenner kalorier."
+    ],
+    "nl": [
+      "Deze taart bevat veel calorieën.",
+      "Ik ga vandaag wat minder calorieën eten.",
+      "Dit sap bevat weinig calorieën.",
+      "Lichaamsbeweging verbrandt calorieën."
+    ],
+    "pl": [
+      "To ciasto ma dużo kalorii.",
+      "Dziś trochę ograniczę kalorie.",
+      "Ten sok ma mało kalorii.",
+      "Ćwiczenia spalają kalorie."
+    ],
+    "pt": [
+      "Este bolo tem muitas calorias.",
+      "Hoje vou reduzir um pouco as calorias.",
+      "Este suco tem poucas calorias.",
+      "O exercício queima calorias."
+    ],
+    "ro": [
+      "Acest tort are multe calorii.",
+      "Azi voi reduce puțin caloriile.",
+      "Acest suc are puține calorii.",
+      "Exercițiile ard calorii."
+    ],
+    "ru": [
+      "В этом торте много калорий.",
+      "Сегодня я немного сокращу калории.",
+      "В этом соке мало калорий.",
+      "Физические упражнения сжигают калории."
+    ],
+    "sv": [
+      "Den här kakan har många kalorier.",
+      "I dag ska jag dra ner lite på kalorierna.",
+      "Den här juicen har få kalorier.",
+      "Motion förbränner kalorier."
+    ],
+    "tr": [
+      "Bu kekin kalorisi yüksek.",
+      "Bugün kalorileri biraz azaltacağım.",
+      "Bu meyve suyunun kalorisi düşük.",
+      "Egzersiz kalori yakar."
+    ],
+    "uk": [
+      "У цьому торті багато калорій.",
+      "Сьогодні я трохи зменшу калорії.",
+      "У цьому соку мало калорій.",
+      "Вправи спалюють калорії."
+    ],
+    "vi": [
+      "Bánh này nhiều calo.",
+      "Hôm nay tôi sẽ giảm bớt calo một chút.",
+      "Nước ép này ít calo.",
+      "Tập thể dục đốt cháy calo."
+    ],
+    "yue": [
+      "呢個蛋糕嘅卡路里好高。",
+      "我今日會少食啲卡路里。",
+      "呢杯果汁卡路里好低。",
+      "做運動會消耗卡路里。"
+    ],
+    "zh-Hans": [
+      "这个蛋糕热量很高。",
+      "今天我要少摄入一点热量。",
+      "这个果汁热量很低。",
+      "运动会消耗热量。"
     ]
   }
 }

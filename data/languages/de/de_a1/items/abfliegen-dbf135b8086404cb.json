@@ -44,12 +44,12 @@
   },
   "sentences": [
     {
-      "target": "Das Flugzeug für meinen Flug wird gleich abfliegen.",
+      "target": "Dieser Flug soll um acht abfliegen.",
       "reading": "/maɪ̯n fluːk vɪʁt ɡlaɪ̯ç ˈapfliːɡən/",
       "translations": {
-        "de": "Das Flugzeug für meinen Flug wird gleich abfliegen.",
+        "de": "Dieser Flug soll um acht abfliegen.",
         "ipa": "/maɪ̯n fluːk vɪʁt ɡlaɪ̯ç ˈapfliːɡən/",
-        "en": "My flight will take off soon.",
+        "en": "This flight is scheduled to take off at eight.",
         "es": "Mi vuelo sale pronto.",
         "fr": "Mon vol part bientôt.",
         "it": "Il mio volo parte tra poco.",
@@ -79,77 +79,82 @@
       },
       "tokens": [
         {
-          "surface": "Das",
-          "surface_en": "the",
-          "furigana": "[das]",
+          "surface": "Dieser",
+          "lemma": "dieser",
           "pos": "DET",
-          "lemma": "der",
-          "explanation": "Definite article; nominative neuter singular.",
-          "difficulty": 2
-        },
-        {
-          "surface": "Flugzeug",
-          "surface_en": "airplane",
-          "furigana": "[ˈfluːktsɔʏ̯k]",
-          "pos": "NOUN",
-          "lemma": "Flugzeug",
-          "explanation": "Subject; nominative neuter singular.",
-          "difficulty": 10
-        },
-        {
-          "surface": "für",
-          "surface_en": "for",
-          "furigana": "[fyːɐ̯]",
-          "pos": "ADP",
-          "lemma": "für",
-          "explanation": "Preposition requiring accusative; indicates purpose or relation.",
-          "difficulty": 5
-        },
-        {
-          "surface": "meinen",
-          "surface_en": "my",
-          "furigana": "[ˈmaɪ̯nən]",
-          "pos": "DET",
-          "lemma": "mein",
-          "explanation": "Possessive determiner; accusative masculine singular modifying 'Flug'.",
-          "difficulty": 7
+          "upos": "DET",
+          "xpos": "PDAT",
+          "feats": {},
+          "start": 0,
+          "end": 6,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "Flug",
-          "surface_en": "flight",
-          "furigana": "[fluːk]",
-          "pos": "NOUN",
           "lemma": "Flug",
-          "explanation": "Object of preposition; accusative masculine singular.",
-          "difficulty": 7
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 7,
+          "end": 11,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "wird",
-          "surface_en": "will",
-          "furigana": "[vɪʁt]",
+          "surface": "soll",
+          "lemma": "sollen",
           "pos": "AUX",
-          "lemma": "werden",
-          "explanation": "Auxiliary verb forming Futur I.",
-          "difficulty": 7
+          "upos": "AUX",
+          "xpos": "VMFIN",
+          "feats": {},
+          "start": 12,
+          "end": 16,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "gleich",
-          "surface_en": "soon",
-          "furigana": "[ɡlaɪ̯ç]",
-          "pos": "ADV",
-          "lemma": "gleich",
-          "explanation": "Temporal adverb indicating immediacy.",
-          "difficulty": 4
+          "surface": "um",
+          "lemma": "um",
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "APPR",
+          "feats": {},
+          "start": 17,
+          "end": 19,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "abfliegen.",
-          "surface_en": "to take off",
-          "furigana": "[ˈapˌfliːɡən]",
-          "pos": "VERB",
+          "surface": "acht",
+          "lemma": "acht",
+          "pos": "NUM",
+          "upos": "NUM",
+          "xpos": "CARD",
+          "feats": {},
+          "start": 20,
+          "end": 24,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "abfliegen",
           "lemma": "abfliegen",
-          "explanation": "Main verb in infinitive.",
-          "difficulty": 10,
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VVINF",
+          "feats": {},
+          "start": 25,
+          "end": 34,
+          "analyzer": "spacy_de_core_news_lg",
           "is_main_word": true
+        },
+        {
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 34,
+          "end": 35,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 6.5
@@ -279,7 +284,7 @@
         "zh-Hans": "我们得马上出发。",
         "yue": "我哋快啲要出發。",
         "ru": "Нам нужно скоро вылетать.",
-        "pt": "Temos que ir logo.",
+        "pt": "Temos que decolar em breve.",
         "he": "אנחנו צריכים לצאת בקרוב.",
         "tr": "Yakında gitmemiz lazım.",
         "vi": "Chúng ta cần đi sớm.",
@@ -436,8 +441,292 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-14T23:01:55Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:De a1/dbf135b8086404cb",
+      "revision_id": 85731,
+      "parent_revision_id": 84754,
+      "revision_timestamp_utc": "2026-10-14T23:01:55Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Content suggestion: improve German or translation wording",
+      "pulled_utc": "2026-10-18T17:32:07Z",
+      "applied_utc": "2026-10-18T17:32:13Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-157ddeee26aad087",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_a1:dbf135b8086404cb",
+        "pack_code": "de_a1",
+        "entry_id": "abfliegen",
+        "language": "de",
+        "sentence_index": 1,
+        "old_sentence": "Das Flugzeug für meinen Flug wird gleich abfliegen.",
+        "old_translations": {
+          "de": "Das Flugzeug für meinen Flug wird gleich abfliegen.",
+          "ipa": "/maɪ̯n fluːk vɪʁt ɡlaɪ̯ç ˈapfliːɡən/",
+          "en": "My flight will take off soon.",
+          "es": "Mi vuelo sale pronto.",
+          "fr": "Mon vol part bientôt.",
+          "it": "Il mio volo parte tra poco.",
+          "ko": "제 비행기는 곧 출발해요.",
+          "zh-Hans": "我的航班马上起飞。",
+          "yue": "我班機好快就起飛。",
+          "ru": "Мой рейс скоро вылетает.",
+          "pt": "Meu voo sai logo.",
+          "he": "הטיסה שלי ממריאה בקרוב.",
+          "tr": "Uçağım yakında kalkacak.",
+          "vi": "Chuyến bay của tôi sắp cất cánh.",
+          "ar": "رحلتي ستقلع قريبًا.",
+          "nl": "Mijn vlucht vertrekt binnenkort.",
+          "uk": "Мій рейс скоро вилітає.",
+          "hu": "A járatom hamarosan felszáll.",
+          "hi": "मेरी फ्लाइट जल्द उड़ान भरेगी.",
+          "pl": "Mój lot wkrótce wystartuje.",
+          "el": "Η πτήση μου θα απογειωθεί σύντομα.",
+          "nb": "Flyet mitt tar av snart.",
+          "id": "Penerbangan saya akan lepas landas sebentar lagi.",
+          "sv": "Mitt flyg lyfter snart.",
+          "ro": "Zborul meu decolează în curând.",
+          "cs": "Můj let brzy odletí.",
+          "da": "Mit fly letter snart.",
+          "fi": "Lentoni lähtee pian.",
+          "ja": "私の便はもうすぐ離陸します。"
+        },
+        "proposed_sentence": "Dieser Flug soll um acht abfliegen.",
+        "proposed_translations": {
+          "de": "Dieser Flug soll um acht abfliegen.",
+          "ipa": "/maɪ̯n fluːk vɪʁt ɡlaɪ̯ç ˈapfliːɡən/",
+          "en": "This flight is scheduled to take off at eight.",
+          "es": "Mi vuelo sale pronto.",
+          "fr": "Mon vol part bientôt.",
+          "it": "Il mio volo parte tra poco.",
+          "ko": "제 비행기는 곧 출발해요.",
+          "zh-Hans": "我的航班马上起飞。",
+          "yue": "我班機好快就起飛。",
+          "ru": "Мой рейс скоро вылетает.",
+          "pt": "Meu voo sai logo.",
+          "he": "הטיסה שלי ממריאה בקרוב.",
+          "tr": "Uçağım yakında kalkacak.",
+          "vi": "Chuyến bay của tôi sắp cất cánh.",
+          "ar": "رحلتي ستقلع قريبًا.",
+          "nl": "Mijn vlucht vertrekt binnenkort.",
+          "uk": "Мій рейс скоро вилітає.",
+          "hu": "A járatom hamarosan felszáll.",
+          "hi": "मेरी फ्लाइट जल्द उड़ान भरेगी.",
+          "pl": "Mój lot wkrótce wystartuje.",
+          "el": "Η πτήση μου θα απογειωθεί σύντομα.",
+          "nb": "Flyet mitt tar av snart.",
+          "id": "Penerbangan saya akan lepas landas sebentar lagi.",
+          "sv": "Mitt flyg lyfter snart.",
+          "ro": "Zborul meu decolează în curând.",
+          "cs": "Můj let brzy odletí.",
+          "da": "Mit fly letter snart.",
+          "fi": "Lentoni lähtee pian.",
+          "ja": "私の便はもうすぐ離陸します。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Dieser Flug soll um acht abfliegen.",
+        "old_japanese": "Das Flugzeug für meinen Flug wird gleich abfliegen.",
+        "old_english": "My flight will take off soon.",
+        "proposed_japanese": "Dieser Flug soll um acht abfliegen.",
+        "proposed_english": "This flight is scheduled to take off at eight.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Dieser Flug soll um acht abfliegen.",
+          "tokens": [
+            {
+              "surface": "Dieser",
+              "lemma": "dieser",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "PDAT",
+              "feats": {},
+              "start": 0,
+              "end": 6,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Flug",
+              "lemma": "Flug",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 7,
+              "end": 11,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "soll",
+              "lemma": "sollen",
+              "pos": "AUX",
+              "upos": "AUX",
+              "xpos": "VMFIN",
+              "feats": {},
+              "start": 12,
+              "end": 16,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "um",
+              "lemma": "um",
+              "pos": "ADP",
+              "upos": "ADP",
+              "xpos": "APPR",
+              "feats": {},
+              "start": 17,
+              "end": 19,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "acht",
+              "lemma": "acht",
+              "pos": "NUM",
+              "upos": "NUM",
+              "xpos": "CARD",
+              "feats": {},
+              "start": 20,
+              "end": 24,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "abfliegen",
+              "lemma": "abfliegen",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVINF",
+              "feats": {},
+              "start": 25,
+              "end": 34,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 34,
+              "end": 35,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Dieser",
+            "lemma": "dieser",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "PDAT",
+            "feats": {},
+            "start": 0,
+            "end": 6,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Flug",
+            "lemma": "Flug",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 7,
+            "end": 11,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "soll",
+            "lemma": "sollen",
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "VMFIN",
+            "feats": {},
+            "start": 12,
+            "end": 16,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "um",
+            "lemma": "um",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 17,
+            "end": 19,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "acht",
+            "lemma": "acht",
+            "pos": "NUM",
+            "upos": "NUM",
+            "xpos": "CARD",
+            "feats": {},
+            "start": 20,
+            "end": 24,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "abfliegen",
+            "lemma": "abfliegen",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVINF",
+            "feats": {},
+            "start": 25,
+            "end": 34,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 34,
+            "end": 35,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-18T17:32:07Z",
+        "updated_utc": "2026-10-18T17:32:25Z",
+        "applied_utc": "2026-10-18T17:32:25Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-18T17:32:25Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -449,34 +738,6 @@
     "word": "abfliegen",
     "word_reading": "",
     "word_label": "Verb",
-    "word_en": "to take off; to depart (by air)",
-    "word_es": "despegar; salir en avión",
-    "word_fr": "décoller; partir en avion",
-    "word_it": "decollare; partire in aereo",
-    "word_ko": "이륙하다; 비행기로 출발하다",
-    "word_zh-Hans": "起飞; 乘飞机出发",
-    "word_yue": "起飛; 搭飛機出發",
-    "word_ru": "взлетать; вылетать",
-    "word_pt": "decolar; partir de avião",
-    "word_he": "להמריא; לצאת בטיסה",
-    "word_tr": "havalanmak; uçakla yola çıkmak",
-    "word_vi": "cất cánh; đi bằng máy bay",
-    "word_ar": "يقلع; يغادر بالطائرة",
-    "word_nl": "opstijgen; vertrekken met het vliegtuig",
-    "word_uk": "злітати; вилітати",
-    "word_hu": "felszáll; repülővel elindul",
-    "word_hi": "उड़ान भरना; हवाई जहाज से रवाना होना",
-    "word_pl": "startować; odlatywać",
-    "word_el": "απογειώνομαι; αναχωρώ με αεροπλάνο",
-    "word_nb": "lette; reise med fly",
-    "word_id": "lepas landas; berangkat naik pesawat",
-    "word_sv": "lyfta; resa med flyg",
-    "word_ro": "decola; pleca cu avionul",
-    "word_cs": "vzlétnout; odletět",
-    "word_da": "lette; flyve af sted",
-    "word_fi": "nousta ilmaan; lähteä lentokoneella",
-    "word_ja": "離陸する; 飛行機で出発する",
-    "word_de": "abfliegen",
     "comic_difficulty": 6.47,
     "jp": [
       "Das Flugzeug für meinen Flug wird gleich abfliegen.",
@@ -490,100 +751,87 @@
       "/viːɐ ˈmʏsən balt ˈapfliːɡən/",
       "/viːɐ ˈzeːən das ˈfluːktsɔʏ̯k ˈapfliːɡən/"
     ],
-    "de": [
-      "Das Flugzeug für meinen Flug wird gleich abfliegen.",
-      "Das Flugzeug dieses Flugs soll um acht abfliegen.",
-      "Wir müssen bald abfliegen.",
-      "Wir sehen das Flugzeug abfliegen."
-    ],
-    "ipa": [
-      "/maɪ̯n fluːk vɪʁt ɡlaɪ̯ç ˈapfliːɡən/",
-      "/deːɐ fluːk zɔl ʊm axt ˈapfliːɡən/",
-      "/viːɐ ˈmʏsən balt ˈapfliːɡən/",
-      "/viːɐ ˈzeːən das ˈfluːktsɔʏ̯k ˈapfliːɡən/"
-    ],
-    "en": [
-      "My flight will take off soon.",
-      "The flight is supposed to take off at eight.",
-      "We need to take off soon.",
-      "We watch the plane take off."
-    ],
     "pos_analysis": [
       {
-        "sentence": "Das Flugzeug für meinen Flug wird gleich abfliegen.",
+        "sentence": "Dieser Flug soll um acht abfliegen.",
         "tokens": [
           {
-            "surface": "Das",
-            "surface_en": "the",
-            "furigana": "[das]",
+            "surface": "Dieser",
+            "lemma": "dieser",
             "pos": "DET",
-            "lemma": "der",
-            "explanation": "Definite article; nominative neuter singular.",
-            "difficulty": 2
-          },
-          {
-            "surface": "Flugzeug",
-            "surface_en": "airplane",
-            "furigana": "[ˈfluːktsɔʏ̯k]",
-            "pos": "NOUN",
-            "lemma": "Flugzeug",
-            "explanation": "Subject; nominative neuter singular.",
-            "difficulty": 10
-          },
-          {
-            "surface": "für",
-            "surface_en": "for",
-            "furigana": "[fyːɐ̯]",
-            "pos": "ADP",
-            "lemma": "für",
-            "explanation": "Preposition requiring accusative; indicates purpose or relation.",
-            "difficulty": 5
-          },
-          {
-            "surface": "meinen",
-            "surface_en": "my",
-            "furigana": "[ˈmaɪ̯nən]",
-            "pos": "DET",
-            "lemma": "mein",
-            "explanation": "Possessive determiner; accusative masculine singular modifying 'Flug'.",
-            "difficulty": 7
+            "upos": "DET",
+            "xpos": "PDAT",
+            "feats": {},
+            "start": 0,
+            "end": 6,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "Flug",
-            "surface_en": "flight",
-            "furigana": "[fluːk]",
-            "pos": "NOUN",
             "lemma": "Flug",
-            "explanation": "Object of preposition; accusative masculine singular.",
-            "difficulty": 7
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 7,
+            "end": 11,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "wird",
-            "surface_en": "will",
-            "furigana": "[vɪʁt]",
+            "surface": "soll",
+            "lemma": "sollen",
             "pos": "AUX",
-            "lemma": "werden",
-            "explanation": "Auxiliary verb forming Futur I.",
-            "difficulty": 7
+            "upos": "AUX",
+            "xpos": "VMFIN",
+            "feats": {},
+            "start": 12,
+            "end": 16,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "gleich",
-            "surface_en": "soon",
-            "furigana": "[ɡlaɪ̯ç]",
-            "pos": "ADV",
-            "lemma": "gleich",
-            "explanation": "Temporal adverb indicating immediacy.",
-            "difficulty": 4
+            "surface": "um",
+            "lemma": "um",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 17,
+            "end": 19,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "abfliegen.",
-            "surface_en": "to take off",
-            "furigana": "[ˈapˌfliːɡən]",
-            "pos": "VERB",
+            "surface": "acht",
+            "lemma": "acht",
+            "pos": "NUM",
+            "upos": "NUM",
+            "xpos": "CARD",
+            "feats": {},
+            "start": 20,
+            "end": 24,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "abfliegen",
             "lemma": "abfliegen",
-            "explanation": "Main verb in infinitive.",
-            "difficulty": 10,
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVINF",
+            "feats": {},
+            "start": 25,
+            "end": 34,
+            "analyzer": "spacy_de_core_news_lg",
             "is_main_word": true
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 34,
+            "end": 35,
+            "analyzer": "spacy_de_core_news_lg"
           }
         ],
         "difficulty_aggregated": 6.5
@@ -763,137 +1011,41 @@
         "difficulty_aggregated": 6.2
       }
     ],
-    "es": [
-      "Mi vuelo sale pronto.",
-      "El vuelo sale a las ocho.",
-      "Tenemos que salir pronto.",
-      "Vemos el avión despegar."
-    ],
-    "fr": [
-      "Mon vol part bientôt.",
-      "Le vol part à huit heures.",
-      "Nous devons partir bientôt.",
-      "Nous regardons l'avion décoller."
-    ],
-    "it": [
-      "Il mio volo parte tra poco.",
-      "Il volo parte alle otto.",
-      "Dobbiamo partire tra poco.",
-      "Guardiamo l'aereo decollare."
-    ],
-    "ko": [
-      "제 비행기는 곧 출발해요.",
-      "비행기는 여덟 시에 출발해요.",
-      "우리 곧 출발해야 해요.",
-      "우리는 비행기가 이륙하는 것을 봐요."
-    ],
-    "zh-Hans": [
-      "我的航班马上起飞。",
-      "航班在八点起飞。",
-      "我们得马上出发。",
-      "我们看着飞机起飞。"
-    ],
-    "yue": [
-      "我班機好快就起飛。",
-      "班機喺八點起飛。",
-      "我哋快啲要出發。",
-      "我哋睇住架飛機起飛。"
-    ],
-    "ru": [
-      "Мой рейс скоро вылетает.",
-      "Рейс вылетает в восемь.",
-      "Нам нужно скоро вылетать.",
-      "Мы смотрим, как самолёт взлетает."
-    ],
-    "pt": [
-      "Meu voo sai logo.",
-      "O voo sai às oito.",
-      "Temos que ir logo.",
-      "Nós vemos o avião decolar."
-    ],
-    "he": [
-      "הטיסה שלי ממריאה בקרוב.",
-      "הטיסה יוצאת בשמונה.",
-      "אנחנו צריכים לצאת בקרוב.",
-      "אנחנו צופים במטוס ממריא."
-    ],
-    "tr": [
-      "Uçağım yakında kalkacak.",
-      "Uçak saat sekizde kalkacak.",
-      "Yakında gitmemiz lazım.",
-      "Uçağın havalanmasını izliyoruz."
-    ],
-    "vi": [
-      "Chuyến bay của tôi sắp cất cánh.",
-      "Chuyến bay cất cánh lúc tám giờ.",
-      "Chúng ta cần đi sớm.",
-      "Chúng tôi xem máy bay cất cánh."
-    ],
+    "word_POS": "Verb",
+    "entry_id": "abfliegen",
+    "word_en": "to take off; to depart (by air)",
+    "word_es": "despegar; salir en avión",
+    "word_fr": "décoller; partir en avion",
+    "word_it": "decollare; partire in aereo",
+    "word_ko": "이륙하다; 비행기로 출발하다",
+    "word_zh-Hans": "起飞; 乘飞机出发",
+    "word_yue": "起飛; 搭飛機出發",
+    "word_ru": "взлетать; вылетать",
+    "word_pt": "decolar; partir de avião",
+    "word_he": "להמריא; לצאת בטיסה",
+    "word_tr": "havalanmak; uçakla yola çıkmak",
+    "word_vi": "cất cánh; đi bằng máy bay",
+    "word_ar": "يقلع; يغادر بالطائرة",
+    "word_nl": "opstijgen; vertrekken met het vliegtuig",
+    "word_uk": "злітати; вилітати",
+    "word_hu": "felszáll; repülővel elindul",
+    "word_hi": "उड़ान भरना; हवाई जहाज से रवाना होना",
+    "word_pl": "startować; odlatywać",
+    "word_el": "απογειώνομαι; αναχωρώ με αεροπλάνο",
+    "word_nb": "lette; reise med fly",
+    "word_id": "lepas landas; berangkat naik pesawat",
+    "word_sv": "lyfta; resa med flyg",
+    "word_ro": "decola; pleca cu avionul",
+    "word_cs": "vzlétnout; odletět",
+    "word_da": "lette; flyve af sted",
+    "word_fi": "nousta ilmaan; lähteä lentokoneella",
+    "word_ja": "離陸する; 飛行機で出発する",
+    "word_de": "abfliegen",
     "ar": [
       "رحلتي ستقلع قريبًا.",
       "الرحلة تقلع الساعة الثامنة.",
       "علينا أن نغادر قريبًا.",
       "نحن نشاهد الطائرة تقلع."
-    ],
-    "nl": [
-      "Mijn vlucht vertrekt binnenkort.",
-      "De vlucht vertrekt om acht uur.",
-      "We moeten snel vertrekken.",
-      "We zien het vliegtuig opstijgen."
-    ],
-    "uk": [
-      "Мій рейс скоро вилітає.",
-      "Рейс вилітає о восьмій.",
-      "Нам треба скоро вирушати.",
-      "Ми дивимося, як літак злітає."
-    ],
-    "hu": [
-      "A járatom hamarosan felszáll.",
-      "A járat nyolckor indul.",
-      "Hamarosan indulnunk kell.",
-      "Nézzük, ahogy a repülő felszáll."
-    ],
-    "hi": [
-      "मेरी फ्लाइट जल्द उड़ान भरेगी.",
-      "फ्लाइट आठ बजे उड़ान भरेगी.",
-      "हमें जल्दी निकलना है.",
-      "हम विमान को उड़ान भरते हुए देखते हैं."
-    ],
-    "pl": [
-      "Mój lot wkrótce wystartuje.",
-      "Lot odlatuje o ósmej.",
-      "Musimy wkrótce wyruszyć.",
-      "Patrzymy, jak samolot startuje."
-    ],
-    "el": [
-      "Η πτήση μου θα απογειωθεί σύντομα.",
-      "Η πτήση φεύγει στις οκτώ.",
-      "Πρέπει να φύγουμε σύντομα.",
-      "Βλέπουμε το αεροπλάνο να απογειώνεται."
-    ],
-    "nb": [
-      "Flyet mitt tar av snart.",
-      "Flyet går klokka åtte.",
-      "Vi må dra snart.",
-      "Vi ser flyet lette."
-    ],
-    "id": [
-      "Penerbangan saya akan lepas landas sebentar lagi.",
-      "Penerbangan berangkat pukul delapan.",
-      "Kita harus berangkat sebentar lagi.",
-      "Kami melihat pesawat lepas landas."
-    ],
-    "sv": [
-      "Mitt flyg lyfter snart.",
-      "Planet lyfter klockan åtta.",
-      "Vi måste åka snart.",
-      "Vi ser planet lyfta."
-    ],
-    "ro": [
-      "Zborul meu decolează în curând.",
-      "Zborul pleacă la ora opt.",
-      "Trebuie să plecăm curând.",
-      "Privim avionul cum decolează."
     ],
     "cs": [
       "Můj let brzy odletí.",
@@ -907,11 +1059,77 @@
       "Vi skal snart af sted.",
       "Vi ser flyet lette."
     ],
+    "de": [
+      "Das Flugzeug für meinen Flug wird gleich abfliegen.",
+      "Das Flugzeug dieses Flugs soll um acht abfliegen.",
+      "Wir müssen bald abfliegen.",
+      "Wir sehen das Flugzeug abfliegen."
+    ],
+    "el": [
+      "Η πτήση μου θα απογειωθεί σύντομα.",
+      "Η πτήση φεύγει στις οκτώ.",
+      "Πρέπει να φύγουμε σύντομα.",
+      "Βλέπουμε το αεροπλάνο να απογειώνεται."
+    ],
+    "en": [
+      "My flight will take off soon.",
+      "The flight is supposed to take off at eight.",
+      "We need to take off soon.",
+      "We watch the plane take off."
+    ],
+    "es": [
+      "Mi vuelo sale pronto.",
+      "El vuelo sale a las ocho.",
+      "Tenemos que salir pronto.",
+      "Vemos el avión despegar."
+    ],
     "fi": [
       "Lentoni lähtee pian.",
       "Lento lähtee kello kahdeksalta.",
       "Meidän täytyy lähteä pian.",
       "Me katsomme, kun lentokone nousee ilmaan."
+    ],
+    "fr": [
+      "Mon vol part bientôt.",
+      "Le vol part à huit heures.",
+      "Nous devons partir bientôt.",
+      "Nous regardons l'avion décoller."
+    ],
+    "he": [
+      "הטיסה שלי ממריאה בקרוב.",
+      "הטיסה יוצאת בשמונה.",
+      "אנחנו צריכים לצאת בקרוב.",
+      "אנחנו צופים במטוס ממריא."
+    ],
+    "hi": [
+      "मेरी फ्लाइट जल्द उड़ान भरेगी.",
+      "फ्लाइट आठ बजे उड़ान भरेगी.",
+      "हमें जल्दी निकलना है.",
+      "हम विमान को उड़ान भरते हुए देखते हैं."
+    ],
+    "hu": [
+      "A járatom hamarosan felszáll.",
+      "A járat nyolckor indul.",
+      "Hamarosan indulnunk kell.",
+      "Nézzük, ahogy a repülő felszáll."
+    ],
+    "id": [
+      "Penerbangan saya akan lepas landas sebentar lagi.",
+      "Penerbangan berangkat pukul delapan.",
+      "Kita harus berangkat sebentar lagi.",
+      "Kami melihat pesawat lepas landas."
+    ],
+    "ipa": [
+      "/maɪ̯n fluːk vɪʁt ɡlaɪ̯ç ˈapfliːɡən/",
+      "/deːɐ fluːk zɔl ʊm axt ˈapfliːɡən/",
+      "/viːɐ ˈmʏsən balt ˈapfliːɡən/",
+      "/viːɐ ˈzeːən das ˈfluːktsɔʏ̯k ˈapfliːɡən/"
+    ],
+    "it": [
+      "Il mio volo parte tra poco.",
+      "Il volo parte alle otto.",
+      "Dobbiamo partire tra poco.",
+      "Guardiamo l'aereo decollare."
     ],
     "ja": [
       "私の便はもうすぐ離陸します。",
@@ -919,6 +1137,83 @@
       "私たちはもうすぐ出発しないといけません。",
       "私たちは飛行機が離陸するのを見ます。"
     ],
-    "word_POS": "Verb"
+    "ko": [
+      "제 비행기는 곧 출발해요.",
+      "비행기는 여덟 시에 출발해요.",
+      "우리 곧 출발해야 해요.",
+      "우리는 비행기가 이륙하는 것을 봐요."
+    ],
+    "nb": [
+      "Flyet mitt tar av snart.",
+      "Flyet går klokka åtte.",
+      "Vi må dra snart.",
+      "Vi ser flyet lette."
+    ],
+    "nl": [
+      "Mijn vlucht vertrekt binnenkort.",
+      "De vlucht vertrekt om acht uur.",
+      "We moeten snel vertrekken.",
+      "We zien het vliegtuig opstijgen."
+    ],
+    "pl": [
+      "Mój lot wkrótce wystartuje.",
+      "Lot odlatuje o ósmej.",
+      "Musimy wkrótce wyruszyć.",
+      "Patrzymy, jak samolot startuje."
+    ],
+    "pt": [
+      "Meu voo sai logo.",
+      "O voo sai às oito.",
+      "Temos que decolar em breve.",
+      "Nós vemos o avião decolar."
+    ],
+    "ro": [
+      "Zborul meu decolează în curând.",
+      "Zborul pleacă la ora opt.",
+      "Trebuie să plecăm curând.",
+      "Privim avionul cum decolează."
+    ],
+    "ru": [
+      "Мой рейс скоро вылетает.",
+      "Рейс вылетает в восемь.",
+      "Нам нужно скоро вылетать.",
+      "Мы смотрим, как самолёт взлетает."
+    ],
+    "sv": [
+      "Mitt flyg lyfter snart.",
+      "Planet lyfter klockan åtta.",
+      "Vi måste åka snart.",
+      "Vi ser planet lyfta."
+    ],
+    "tr": [
+      "Uçağım yakında kalkacak.",
+      "Uçak saat sekizde kalkacak.",
+      "Yakında gitmemiz lazım.",
+      "Uçağın havalanmasını izliyoruz."
+    ],
+    "uk": [
+      "Мій рейс скоро вилітає.",
+      "Рейс вилітає о восьмій.",
+      "Нам треба скоро вирушати.",
+      "Ми дивимося, як літак злітає."
+    ],
+    "vi": [
+      "Chuyến bay của tôi sắp cất cánh.",
+      "Chuyến bay cất cánh lúc tám giờ.",
+      "Chúng ta cần đi sớm.",
+      "Chúng tôi xem máy bay cất cánh."
+    ],
+    "yue": [
+      "我班機好快就起飛。",
+      "班機喺八點起飛。",
+      "我哋快啲要出發。",
+      "我哋睇住架飛機起飛。"
+    ],
+    "zh-Hans": [
+      "我的航班马上起飞。",
+      "航班在八点起飞。",
+      "我们得马上出发。",
+      "我们看着飞机起飞。"
+    ]
   }
 }

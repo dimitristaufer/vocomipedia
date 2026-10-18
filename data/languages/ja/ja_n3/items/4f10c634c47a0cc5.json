@@ -42,7 +42,7 @@
   },
   "sentences": [
     {
-      "target": "あの小屋にねこがいます。",
+      "target": "あの小屋に猫がいます。",
       "reading": "あのこやにねこがいます。",
       "translations": {
         "en": "There is a cat in that shed.",
@@ -63,13 +63,13 @@
         "nb": "Det er en katt i det skuret.",
         "nl": "Er zit een kat in dat schuurtje.",
         "pl": "W tej szopie jest kot.",
-        "pt": "Há um gato naquele barracão.",
+        "pt": "Há um gato naquela cabana.",
         "ro": "Este o pisică în șopronul acela.",
         "ru": "В том сарае есть кошка.",
         "sv": "Det finns en katt i det skjulet.",
         "tr": "O kulübede bir kedi var.",
         "uk": "У тій халупі є кіт.",
-        "vi": "Có một con mèo trong cái lều đó.",
+        "vi": "Có một con mèo trong cái chòi đó.",
         "yue": "嗰間木屋入面有隻貓。",
         "zh-Hans": "那间小屋里有一只猫。"
       },
@@ -110,8 +110,9 @@
               "length": 2
             }
           ],
-          "ruby_confidence": "medium",
+          "ruby_confidence": "reviewed",
           "furigana": "こや",
+          "ruby_source": "mediawiki_sentence_ruby",
           "is_main_word": true
         },
         {
@@ -131,20 +132,28 @@
           "furigana": "に"
         },
         {
-          "surface": "ねこ",
-          "lemma": "ねこ",
+          "surface": "猫",
+          "lemma": "猫",
           "pos": "名詞/普通名詞/一般/*/*/*",
           "upos": "NOUN",
           "xpos": "名詞",
           "feats": {},
           "start": 5,
-          "end": 7,
+          "end": 6,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "ねこ",
-          "ruby_text": "ねこ",
-          "ruby_spans": [],
-          "ruby_confidence": "high",
-          "furigana": "ねこ"
+          "ruby_text": "猫[ねこ]",
+          "ruby_spans": [
+            {
+              "base": "猫",
+              "reading": "ねこ",
+              "start": 0,
+              "length": 1
+            }
+          ],
+          "ruby_confidence": "reviewed",
+          "furigana": "ねこ",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "が",
@@ -153,8 +162,8 @@
           "upos": "PART",
           "xpos": "助詞",
           "feats": {},
-          "start": 7,
-          "end": 8,
+          "start": 6,
+          "end": 7,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "が",
           "ruby_text": "が",
@@ -169,8 +178,8 @@
           "upos": "VERB",
           "xpos": "動詞",
           "feats": {},
-          "start": 8,
-          "end": 9,
+          "start": 7,
+          "end": 8,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "い",
           "ruby_text": "い",
@@ -185,8 +194,8 @@
           "upos": "AUX",
           "xpos": "助動詞",
           "feats": {},
-          "start": 9,
-          "end": 11,
+          "start": 8,
+          "end": 10,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "ます",
           "ruby_text": "ます",
@@ -201,8 +210,8 @@
           "upos": "PUNCT",
           "xpos": "補助記号",
           "feats": {},
-          "start": 11,
-          "end": 12,
+          "start": 10,
+          "end": 11,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "。",
           "ruby_text": "。",
@@ -214,7 +223,7 @@
       "difficulty": null
     },
     {
-      "target": "森の小屋でお茶をのみました。",
+      "target": "森の小屋でお茶を飲みました。",
       "reading": "もりのこやでおちゃをのみました。",
       "translations": {
         "en": "I drank tea in the cabin in the forest.",
@@ -224,8 +233,8 @@
         "de": "Ich habe im Waldhäuschen Tee getrunken.",
         "el": "Ήπια τσάι στην καλύβα στο δάσος.",
         "es": "Tomé té en la cabaña del bosque.",
-        "fi": "Join teetä mökissä metsässä.",
-        "fr": "J’ai bu du thé dans la cabane dans la forêt.",
+        "fi": "Join teetä metsässä olevassa mökissä.",
+        "fr": "J’ai bu du thé dans une cabane en forêt.",
         "he": "שתיתי תה בבקתה ביער.",
         "hi": "मैंने जंगल की झोपड़ी में चाय पी।",
         "hu": "Az erdei házikóban ittam teát.",
@@ -235,13 +244,13 @@
         "nb": "Jeg drakk te i hytta i skogen.",
         "nl": "Ik dronk thee in het huisje in het bos.",
         "pl": "Piłem herbatę w chatce w lesie.",
-        "pt": "Bebi chá na cabana na floresta.",
+        "pt": "Tomei chá na cabana da floresta.",
         "ro": "Am băut ceai în cabana din pădure.",
         "ru": "Я пил чай в домике в лесу.",
         "sv": "Jag drack te i stugan i skogen.",
         "tr": "Ormandaki kulübede çay içtim.",
         "uk": "Я пив чай у хатинці в лісі.",
-        "vi": "Tôi đã uống trà trong căn nhà gỗ ở rừng.",
+        "vi": "Tôi đã uống trà trong căn chòi giữa rừng.",
         "yue": "我喺森林入面嘅小屋飲咗茶。",
         "zh-Hans": "我在森林里的小屋里喝了茶。"
       },
@@ -266,8 +275,9 @@
               "length": 1
             }
           ],
-          "ruby_confidence": "high",
-          "furigana": "もり"
+          "ruby_confidence": "reviewed",
+          "furigana": "もり",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "の",
@@ -305,8 +315,9 @@
               "length": 2
             }
           ],
-          "ruby_confidence": "medium",
+          "ruby_confidence": "reviewed",
           "furigana": "こや",
+          "ruby_source": "mediawiki_sentence_ruby",
           "is_main_word": true
         },
         {
@@ -361,8 +372,9 @@
               "length": 1
             }
           ],
-          "ruby_confidence": "high",
-          "furigana": "ちゃ"
+          "ruby_confidence": "reviewed",
+          "furigana": "ちゃ",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "を",
@@ -381,8 +393,8 @@
           "furigana": "を"
         },
         {
-          "surface": "のみ",
-          "lemma": "のむ",
+          "surface": "飲み",
+          "lemma": "飲む",
           "pos": "動詞/一般/*/*/五段-マ行/連用形-一般",
           "upos": "VERB",
           "xpos": "動詞",
@@ -391,10 +403,18 @@
           "end": 10,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "のみ",
-          "ruby_text": "のみ",
-          "ruby_spans": [],
-          "ruby_confidence": "high",
-          "furigana": "のみ"
+          "ruby_text": "飲[の]み",
+          "ruby_spans": [
+            {
+              "base": "飲",
+              "reading": "の",
+              "start": 0,
+              "length": 1
+            }
+          ],
+          "ruby_confidence": "reviewed",
+          "furigana": "のみ",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "まし",
@@ -469,13 +489,13 @@
         "nb": "Det er et skur foran stasjonen.",
         "nl": "Er staat een schuurtje voor het station.",
         "pl": "Przed stacją jest szopa.",
-        "pt": "Há um barracão em frente à estação.",
+        "pt": "Há uma cabana em frente à estação.",
         "ro": "Este un șopron în fața gării.",
         "ru": "Перед вокзалом есть сарай.",
         "sv": "Det finns ett skjul framför stationen.",
         "tr": "İstasyonun önünde bir kulübe var.",
         "uk": "Перед вокзалом є сарай.",
-        "vi": "Có một cái lều trước ga tàu.",
+        "vi": "Có một cái chòi trước ga tàu.",
         "yue": "車站前面有間木屋。",
         "zh-Hans": "车站前面有一间小屋。"
       },
@@ -671,13 +691,13 @@
         "nb": "Det er et skur i hagen.",
         "nl": "Er staat een schuurtje in de tuin.",
         "pl": "W ogrodzie jest szopa.",
-        "pt": "Há um barracão no jardim.",
+        "pt": "Há uma cabana no jardim.",
         "ro": "Este un șopron în grădină.",
         "ru": "В саду есть сарай.",
         "sv": "Det finns ett skjul i trädgården.",
         "tr": "Bahçede bir kulübe var.",
         "uk": "У саду є сарай.",
-        "vi": "Có một cái lều trong vườn.",
+        "vi": "Có một cái chòi trong vườn.",
         "yue": "花園入面有間木屋。",
         "zh-Hans": "院子里有一间小屋。"
       },
@@ -824,8 +844,951 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-13T00:50:02Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:Ja n3/4f10c634c47a0cc5",
+      "revision_id": 81277,
+      "parent_revision_id": 67536,
+      "revision_timestamp_utc": "2026-10-13T00:50:02Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Use standard Japanese spellings and keep the hut translations from implying a tent or large shed.",
+      "pulled_utc": "2026-10-18T17:39:01Z",
+      "applied_utc": "2026-10-18T17:39:38Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-568d1db91dd71ee5",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "ja_n3:4f10c634c47a0cc5",
+        "pack_code": "ja_n3",
+        "entry_id": "小屋",
+        "language": "ja",
+        "sentence_index": 1,
+        "old_sentence": "あの小屋にねこがいます。",
+        "old_translations": {
+          "en": "There is a cat in that shed.",
+          "ar": "هناك قطة في ذلك الكوخ.",
+          "cs": "V té boudě je kočka.",
+          "da": "Der er en kat i det skur.",
+          "de": "In dem Schuppen ist eine Katze.",
+          "el": "Υπάρχει μια γάτα σε εκείνη την παράγκα.",
+          "es": "Hay un gato en ese cobertizo.",
+          "fi": "Tuossa vajassa on kissa.",
+          "fr": "Il y a un chat dans ce cabanon.",
+          "he": "יש חתול במחסן ההוא.",
+          "hi": "उस शेड में एक बिल्ली है।",
+          "hu": "Abban a fészerben van egy macska.",
+          "id": "Ada kucing di gudang itu.",
+          "it": "C'è un gatto in quel capanno.",
+          "ko": "저 창고에 고양이가 있어요.",
+          "nb": "Det er en katt i det skuret.",
+          "nl": "Er zit een kat in dat schuurtje.",
+          "pl": "W tej szopie jest kot.",
+          "pt": "Há um gato naquele barracão.",
+          "ro": "Este o pisică în șopronul acela.",
+          "ru": "В том сарае есть кошка.",
+          "sv": "Det finns en katt i det skjulet.",
+          "tr": "O kulübede bir kedi var.",
+          "uk": "У тій халупі є кіт.",
+          "vi": "Có một con mèo trong cái lều đó.",
+          "yue": "嗰間木屋入面有隻貓。",
+          "zh-Hans": "那间小屋里有一只猫。"
+        },
+        "proposed_sentence": "あの小屋に猫がいます。",
+        "proposed_translations": {
+          "en": "There is a cat in that shed.",
+          "ar": "هناك قطة في ذلك الكوخ.",
+          "cs": "V té boudě je kočka.",
+          "da": "Der er en kat i det skur.",
+          "de": "In dem Schuppen ist eine Katze.",
+          "el": "Υπάρχει μια γάτα σε εκείνη την παράγκα.",
+          "es": "Hay un gato en ese cobertizo.",
+          "fi": "Tuossa vajassa on kissa.",
+          "fr": "Il y a un chat dans ce cabanon.",
+          "he": "יש חתול במחסן ההוא.",
+          "hi": "उस शेड में एक बिल्ली है।",
+          "hu": "Abban a fészerben van egy macska.",
+          "id": "Ada kucing di gudang itu.",
+          "it": "C'è un gatto in quel capanno.",
+          "ko": "저 창고에 고양이가 있어요.",
+          "nb": "Det er en katt i det skuret.",
+          "nl": "Er zit een kat in dat schuurtje.",
+          "pl": "W tej szopie jest kot.",
+          "pt": "Há um gato naquela cabana.",
+          "ro": "Este o pisică în șopronul acela.",
+          "ru": "В том сарае есть кошка.",
+          "sv": "Det finns en katt i det skjulet.",
+          "tr": "O kulübede bir kedi var.",
+          "uk": "У тій халупі є кіт.",
+          "vi": "Có một con mèo trong cái chòi đó.",
+          "yue": "嗰間木屋入面有隻貓。",
+          "zh-Hans": "那间小屋里有一只猫。"
+        },
+        "old_ruby_source": "あの小屋[こや]にねこがいます。",
+        "proposed_ruby_source": "あの小屋[こや]に猫[ねこ]がいます。",
+        "old_japanese": "あの小屋にねこがいます。",
+        "old_english": "There is a cat in that shed.",
+        "proposed_japanese": "あの小屋に猫がいます。",
+        "proposed_english": "There is a cat in that shed.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "ja",
+          "sentence": "あの小屋に猫がいます。",
+          "tokens": [
+            {
+              "surface": "あの",
+              "lemma": "あの",
+              "pos": "連体詞/*/*/*/*/*",
+              "upos": "DET",
+              "xpos": "連体詞",
+              "feats": {},
+              "start": 0,
+              "end": 2,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "あの",
+              "ruby_text": "あの",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "あの"
+            },
+            {
+              "surface": "小屋",
+              "lemma": "小屋",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 2,
+              "end": 4,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "こや",
+              "ruby_text": "小屋[こや]",
+              "ruby_spans": [
+                {
+                  "base": "小屋",
+                  "reading": "こや",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "こや",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "に",
+              "lemma": "に",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 4,
+              "end": 5,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "に",
+              "ruby_text": "に",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "に"
+            },
+            {
+              "surface": "猫",
+              "lemma": "猫",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 5,
+              "end": 6,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "ねこ",
+              "ruby_text": "猫[ねこ]",
+              "ruby_spans": [
+                {
+                  "base": "猫",
+                  "reading": "ねこ",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "ねこ",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "が",
+              "lemma": "が",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 6,
+              "end": 7,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "が",
+              "ruby_text": "が",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "が"
+            },
+            {
+              "surface": "い",
+              "lemma": "いる",
+              "pos": "動詞/非自立可能/*/*/上一段-ア行/連用形-一般",
+              "upos": "VERB",
+              "xpos": "動詞",
+              "feats": {},
+              "start": 7,
+              "end": 8,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "い",
+              "ruby_text": "い",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "い"
+            },
+            {
+              "surface": "ます",
+              "lemma": "ます",
+              "pos": "助動詞/*/*/*/助動詞-マス/終止形-一般",
+              "upos": "AUX",
+              "xpos": "助動詞",
+              "feats": {},
+              "start": 8,
+              "end": 10,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "ます",
+              "ruby_text": "ます",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "ます"
+            },
+            {
+              "surface": "。",
+              "lemma": "。",
+              "pos": "補助記号/句点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 10,
+              "end": 11,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "。",
+              "ruby_text": "。",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "。"
+            }
+          ],
+          "reading": "あのこやにねこがいます。",
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "warnings": [
+            "mediawiki ruby hints applied"
+          ]
+        },
+        "generated_tokens": [
+          {
+            "surface": "あの",
+            "lemma": "あの",
+            "pos": "連体詞/*/*/*/*/*",
+            "upos": "DET",
+            "xpos": "連体詞",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "あの",
+            "ruby_text": "あの",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "あの"
+          },
+          {
+            "surface": "小屋",
+            "lemma": "小屋",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 2,
+            "end": 4,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "こや",
+            "ruby_text": "小屋[こや]",
+            "ruby_spans": [
+              {
+                "base": "小屋",
+                "reading": "こや",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "こや",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "に",
+            "lemma": "に",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 4,
+            "end": 5,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "に",
+            "ruby_text": "に",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "に"
+          },
+          {
+            "surface": "猫",
+            "lemma": "猫",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 5,
+            "end": 6,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ねこ",
+            "ruby_text": "猫[ねこ]",
+            "ruby_spans": [
+              {
+                "base": "猫",
+                "reading": "ねこ",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "ねこ",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "が",
+            "lemma": "が",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 6,
+            "end": 7,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "が",
+            "ruby_text": "が",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "が"
+          },
+          {
+            "surface": "い",
+            "lemma": "いる",
+            "pos": "動詞/非自立可能/*/*/上一段-ア行/連用形-一般",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 7,
+            "end": 8,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "い",
+            "ruby_text": "い",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "い"
+          },
+          {
+            "surface": "ます",
+            "lemma": "ます",
+            "pos": "助動詞/*/*/*/助動詞-マス/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 8,
+            "end": 10,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ます",
+            "ruby_text": "ます",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "ます"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 10,
+            "end": 11,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
+          }
+        ],
+        "generated_reading": "あのこやにねこがいます。",
+        "analyzer": "sudachipy_sudachidict_core_c",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-18T17:39:01Z",
+        "updated_utc": "2026-10-18T17:40:42Z",
+        "applied_utc": "2026-10-18T17:40:42Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      },
+      {
+        "id": "sentprop-3fd6cd3ee1dd3bbe",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "ja_n3:4f10c634c47a0cc5",
+        "pack_code": "ja_n3",
+        "entry_id": "小屋",
+        "language": "ja",
+        "sentence_index": 2,
+        "old_sentence": "森の小屋でお茶をのみました。",
+        "old_translations": {
+          "en": "I drank tea in the cabin in the forest.",
+          "ar": "شربت الشاي في الكوخ في الغابة.",
+          "cs": "Pil jsem čaj v chatě v lese.",
+          "da": "Jeg drak te i hytten i skoven.",
+          "de": "Ich habe im Waldhäuschen Tee getrunken.",
+          "el": "Ήπια τσάι στην καλύβα στο δάσος.",
+          "es": "Tomé té en la cabaña del bosque.",
+          "fi": "Join teetä mökissä metsässä.",
+          "fr": "J’ai bu du thé dans la cabane dans la forêt.",
+          "he": "שתיתי תה בבקתה ביער.",
+          "hi": "मैंने जंगल की झोपड़ी में चाय पी।",
+          "hu": "Az erdei házikóban ittam teát.",
+          "id": "Saya minum teh di pondok di hutan.",
+          "it": "Ho bevuto il tè nella casetta nel bosco.",
+          "ko": "숲 속 오두막에서 차를 마셨어요.",
+          "nb": "Jeg drakk te i hytta i skogen.",
+          "nl": "Ik dronk thee in het huisje in het bos.",
+          "pl": "Piłem herbatę w chatce w lesie.",
+          "pt": "Bebi chá na cabana na floresta.",
+          "ro": "Am băut ceai în cabana din pădure.",
+          "ru": "Я пил чай в домике в лесу.",
+          "sv": "Jag drack te i stugan i skogen.",
+          "tr": "Ormandaki kulübede çay içtim.",
+          "uk": "Я пив чай у хатинці в лісі.",
+          "vi": "Tôi đã uống trà trong căn nhà gỗ ở rừng.",
+          "yue": "我喺森林入面嘅小屋飲咗茶。",
+          "zh-Hans": "我在森林里的小屋里喝了茶。"
+        },
+        "proposed_sentence": "森の小屋でお茶を飲みました。",
+        "proposed_translations": {
+          "en": "I drank tea in the cabin in the forest.",
+          "ar": "شربت الشاي في الكوخ في الغابة.",
+          "cs": "Pil jsem čaj v chatě v lese.",
+          "da": "Jeg drak te i hytten i skoven.",
+          "de": "Ich habe im Waldhäuschen Tee getrunken.",
+          "el": "Ήπια τσάι στην καλύβα στο δάσος.",
+          "es": "Tomé té en la cabaña del bosque.",
+          "fi": "Join teetä metsässä olevassa mökissä.",
+          "fr": "J’ai bu du thé dans une cabane en forêt.",
+          "he": "שתיתי תה בבקתה ביער.",
+          "hi": "मैंने जंगल की झोपड़ी में चाय पी।",
+          "hu": "Az erdei házikóban ittam teát.",
+          "id": "Saya minum teh di pondok di hutan.",
+          "it": "Ho bevuto il tè nella casetta nel bosco.",
+          "ko": "숲 속 오두막에서 차를 마셨어요.",
+          "nb": "Jeg drakk te i hytta i skogen.",
+          "nl": "Ik dronk thee in het huisje in het bos.",
+          "pl": "Piłem herbatę w chatce w lesie.",
+          "pt": "Tomei chá na cabana da floresta.",
+          "ro": "Am băut ceai în cabana din pădure.",
+          "ru": "Я пил чай в домике в лесу.",
+          "sv": "Jag drack te i stugan i skogen.",
+          "tr": "Ormandaki kulübede çay içtim.",
+          "uk": "Я пив чай у хатинці в лісі.",
+          "vi": "Tôi đã uống trà trong căn chòi giữa rừng.",
+          "yue": "我喺森林入面嘅小屋飲咗茶。",
+          "zh-Hans": "我在森林里的小屋里喝了茶。"
+        },
+        "old_ruby_source": "森[もり]の小屋[こや]でお茶[ちゃ]をのみました。",
+        "proposed_ruby_source": "森[もり]の小屋[こや]でお茶[ちゃ]を飲[の]みました。",
+        "old_japanese": "森の小屋でお茶をのみました。",
+        "old_english": "I drank tea in the cabin in the forest.",
+        "proposed_japanese": "森の小屋でお茶を飲みました。",
+        "proposed_english": "I drank tea in the cabin in the forest.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "ja",
+          "sentence": "森の小屋でお茶を飲みました。",
+          "tokens": [
+            {
+              "surface": "森",
+              "lemma": "森",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 0,
+              "end": 1,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "もり",
+              "ruby_text": "森[もり]",
+              "ruby_spans": [
+                {
+                  "base": "森",
+                  "reading": "もり",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "もり",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "の",
+              "lemma": "の",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 1,
+              "end": 2,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "の",
+              "ruby_text": "の",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "の"
+            },
+            {
+              "surface": "小屋",
+              "lemma": "小屋",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 2,
+              "end": 4,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "こや",
+              "ruby_text": "小屋[こや]",
+              "ruby_spans": [
+                {
+                  "base": "小屋",
+                  "reading": "こや",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "こや",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "で",
+              "lemma": "で",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 4,
+              "end": 5,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "で",
+              "ruby_text": "で",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "で"
+            },
+            {
+              "surface": "お",
+              "lemma": "お",
+              "pos": "接頭辞/*/*/*/*/*",
+              "upos": "PREFIX",
+              "xpos": "接頭辞",
+              "feats": {},
+              "start": 5,
+              "end": 6,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "お",
+              "ruby_text": "お",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "お"
+            },
+            {
+              "surface": "茶",
+              "lemma": "茶",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 6,
+              "end": 7,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "ちゃ",
+              "ruby_text": "茶[ちゃ]",
+              "ruby_spans": [
+                {
+                  "base": "茶",
+                  "reading": "ちゃ",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "ちゃ",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "を",
+              "lemma": "を",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 7,
+              "end": 8,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "を",
+              "ruby_text": "を",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "を"
+            },
+            {
+              "surface": "飲み",
+              "lemma": "飲む",
+              "pos": "動詞/一般/*/*/五段-マ行/連用形-一般",
+              "upos": "VERB",
+              "xpos": "動詞",
+              "feats": {},
+              "start": 8,
+              "end": 10,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "のみ",
+              "ruby_text": "飲[の]み",
+              "ruby_spans": [
+                {
+                  "base": "飲",
+                  "reading": "の",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "のみ",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "まし",
+              "lemma": "ます",
+              "pos": "助動詞/*/*/*/助動詞-マス/連用形-一般",
+              "upos": "AUX",
+              "xpos": "助動詞",
+              "feats": {},
+              "start": 10,
+              "end": 12,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "まし",
+              "ruby_text": "まし",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "まし"
+            },
+            {
+              "surface": "た",
+              "lemma": "た",
+              "pos": "助動詞/*/*/*/助動詞-タ/終止形-一般",
+              "upos": "AUX",
+              "xpos": "助動詞",
+              "feats": {},
+              "start": 12,
+              "end": 13,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "た",
+              "ruby_text": "た",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "た"
+            },
+            {
+              "surface": "。",
+              "lemma": "。",
+              "pos": "補助記号/句点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 13,
+              "end": 14,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "。",
+              "ruby_text": "。",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "。"
+            }
+          ],
+          "reading": "もりのこやでおちゃをのみました。",
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "warnings": [
+            "mediawiki ruby hints applied"
+          ]
+        },
+        "generated_tokens": [
+          {
+            "surface": "森",
+            "lemma": "森",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 0,
+            "end": 1,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "もり",
+            "ruby_text": "森[もり]",
+            "ruby_spans": [
+              {
+                "base": "森",
+                "reading": "もり",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "もり",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "の",
+            "lemma": "の",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 1,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "の",
+            "ruby_text": "の",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "の"
+          },
+          {
+            "surface": "小屋",
+            "lemma": "小屋",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 2,
+            "end": 4,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "こや",
+            "ruby_text": "小屋[こや]",
+            "ruby_spans": [
+              {
+                "base": "小屋",
+                "reading": "こや",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "こや",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "で",
+            "lemma": "で",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 4,
+            "end": 5,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "で",
+            "ruby_text": "で",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "で"
+          },
+          {
+            "surface": "お",
+            "lemma": "お",
+            "pos": "接頭辞/*/*/*/*/*",
+            "upos": "PREFIX",
+            "xpos": "接頭辞",
+            "feats": {},
+            "start": 5,
+            "end": 6,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "お",
+            "ruby_text": "お",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "お"
+          },
+          {
+            "surface": "茶",
+            "lemma": "茶",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 6,
+            "end": 7,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ちゃ",
+            "ruby_text": "茶[ちゃ]",
+            "ruby_spans": [
+              {
+                "base": "茶",
+                "reading": "ちゃ",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "ちゃ",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "を",
+            "lemma": "を",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 7,
+            "end": 8,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "を",
+            "ruby_text": "を",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "を"
+          },
+          {
+            "surface": "飲み",
+            "lemma": "飲む",
+            "pos": "動詞/一般/*/*/五段-マ行/連用形-一般",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 8,
+            "end": 10,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "のみ",
+            "ruby_text": "飲[の]み",
+            "ruby_spans": [
+              {
+                "base": "飲",
+                "reading": "の",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "のみ",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "まし",
+            "lemma": "ます",
+            "pos": "助動詞/*/*/*/助動詞-マス/連用形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 10,
+            "end": 12,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "まし",
+            "ruby_text": "まし",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "まし"
+          },
+          {
+            "surface": "た",
+            "lemma": "た",
+            "pos": "助動詞/*/*/*/助動詞-タ/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 12,
+            "end": 13,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "た",
+            "ruby_text": "た",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "た"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 13,
+            "end": 14,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
+          }
+        ],
+        "generated_reading": "もりのこやでおちゃをのみました。",
+        "analyzer": "sudachipy_sudachidict_core_c",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-18T17:39:01Z",
+        "updated_utc": "2026-10-18T17:40:42Z",
+        "applied_utc": "2026-10-18T17:40:42Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-18T17:40:42Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -850,12 +1813,6 @@
       "もりのこやでおちゃをのみました。",
       "えきのまえにこやがあります。",
       "にわにこやがあります。"
-    ],
-    "en": [
-      "There is a cat in that shed.",
-      "I drank tea in the cabin in the forest.",
-      "There is a shed in front of the station.",
-      "There is a shed in the yard."
     ],
     "generation": {
       "generator": "vocomipedia_source_generator.py",
@@ -894,193 +1851,9 @@
         "parts_of_speech": "Noun"
       }
     },
-    "word_en": "hut; cabin; shed; (animal) pen; small theatre (theater); temporary playhouse; circus tent; booth; one's own house",
-    "word_es": "cabaña",
-    "word_fr": "cabane",
-    "word_de": "Hütte",
-    "word_it": "capanna",
-    "word_ko": "오두막",
-    "word_zh-Hans": "小屋",
-    "word_yue": "小屋",
-    "word_ru": "хижина",
-    "word_pt": "cabana",
-    "word_he": "צריף",
-    "word_tr": "kulübe",
-    "word_vi": "chòi",
-    "word_ar": "كوخ",
-    "word_nl": "hut",
-    "word_uk": "хижина",
-    "word_hu": "kunyhó",
-    "word_hi": "झोपड़ी",
-    "word_pl": "chata",
-    "word_el": "καλύβα",
-    "word_nb": "hytte",
-    "word_id": "gubuk",
-    "word_sv": "koja",
-    "word_ro": "colibă",
-    "word_cs": "chata",
-    "word_da": "hytte",
-    "word_fi": "mökki",
-    "word_ja": "小屋",
-    "ar": [
-      "هناك قطة في ذلك الكوخ.",
-      "شربت الشاي في الكوخ في الغابة.",
-      "هناك كوخ أمام المحطة.",
-      "هناك كوخ في الحديقة."
-    ],
-    "cs": [
-      "V té boudě je kočka.",
-      "Pil jsem čaj v chatě v lese.",
-      "Před nádražím je bouda.",
-      "Na zahradě je bouda."
-    ],
-    "da": [
-      "Der er en kat i det skur.",
-      "Jeg drak te i hytten i skoven.",
-      "Der er et skur foran stationen.",
-      "Der er et skur i haven."
-    ],
-    "de": [
-      "In dem Schuppen ist eine Katze.",
-      "Ich habe im Waldhäuschen Tee getrunken.",
-      "Vor dem Bahnhof steht ein Schuppen.",
-      "Im Garten steht ein Schuppen."
-    ],
-    "el": [
-      "Υπάρχει μια γάτα σε εκείνη την παράγκα.",
-      "Ήπια τσάι στην καλύβα στο δάσος.",
-      "Υπάρχει μια παράγκα μπροστά από τον σταθμό.",
-      "Υπάρχει μια παράγκα στον κήπο."
-    ],
-    "es": [
-      "Hay un gato en ese cobertizo.",
-      "Tomé té en la cabaña del bosque.",
-      "Hay un cobertizo delante de la estación.",
-      "Hay un cobertizo en el jardín."
-    ],
-    "fi": [
-      "Tuossa vajassa on kissa.",
-      "Join teetä mökissä metsässä.",
-      "Aseman edessä on vaja.",
-      "Pihassa on vaja."
-    ],
-    "fr": [
-      "Il y a un chat dans ce cabanon.",
-      "J’ai bu du thé dans la cabane dans la forêt.",
-      "Il y a un cabanon devant la gare.",
-      "Il y a un cabanon dans le jardin."
-    ],
-    "he": [
-      "יש חתול במחסן ההוא.",
-      "שתיתי תה בבקתה ביער.",
-      "יש מחסן מול התחנה.",
-      "יש מחסן בגינה."
-    ],
-    "hi": [
-      "उस शेड में एक बिल्ली है।",
-      "मैंने जंगल की झोपड़ी में चाय पी।",
-      "स्टेशन के सामने एक शेड है।",
-      "आँगन में एक शेड है।"
-    ],
-    "hu": [
-      "Abban a fészerben van egy macska.",
-      "Az erdei házikóban ittam teát.",
-      "Van egy fészer az állomás előtt.",
-      "Van egy fészer a kertben."
-    ],
-    "id": [
-      "Ada kucing di gudang itu.",
-      "Saya minum teh di pondok di hutan.",
-      "Ada gudang di depan stasiun.",
-      "Ada gudang di halaman."
-    ],
-    "it": [
-      "C'è un gatto in quel capanno.",
-      "Ho bevuto il tè nella casetta nel bosco.",
-      "C'è un capanno davanti alla stazione.",
-      "C'è un capanno in giardino."
-    ],
-    "ko": [
-      "저 창고에 고양이가 있어요.",
-      "숲 속 오두막에서 차를 마셨어요.",
-      "역 앞에 창고가 있어요.",
-      "정원에 창고가 있어요."
-    ],
-    "nb": [
-      "Det er en katt i det skuret.",
-      "Jeg drakk te i hytta i skogen.",
-      "Det er et skur foran stasjonen.",
-      "Det er et skur i hagen."
-    ],
-    "nl": [
-      "Er zit een kat in dat schuurtje.",
-      "Ik dronk thee in het huisje in het bos.",
-      "Er staat een schuurtje voor het station.",
-      "Er staat een schuurtje in de tuin."
-    ],
-    "pl": [
-      "W tej szopie jest kot.",
-      "Piłem herbatę w chatce w lesie.",
-      "Przed stacją jest szopa.",
-      "W ogrodzie jest szopa."
-    ],
-    "pt": [
-      "Há um gato naquele barracão.",
-      "Bebi chá na cabana na floresta.",
-      "Há um barracão em frente à estação.",
-      "Há um barracão no jardim."
-    ],
-    "ro": [
-      "Este o pisică în șopronul acela.",
-      "Am băut ceai în cabana din pădure.",
-      "Este un șopron în fața gării.",
-      "Este un șopron în grădină."
-    ],
-    "ru": [
-      "В том сарае есть кошка.",
-      "Я пил чай в домике в лесу.",
-      "Перед вокзалом есть сарай.",
-      "В саду есть сарай."
-    ],
-    "sv": [
-      "Det finns en katt i det skjulet.",
-      "Jag drack te i stugan i skogen.",
-      "Det finns ett skjul framför stationen.",
-      "Det finns ett skjul i trädgården."
-    ],
-    "tr": [
-      "O kulübede bir kedi var.",
-      "Ormandaki kulübede çay içtim.",
-      "İstasyonun önünde bir kulübe var.",
-      "Bahçede bir kulübe var."
-    ],
-    "uk": [
-      "У тій халупі є кіт.",
-      "Я пив чай у хатинці в лісі.",
-      "Перед вокзалом є сарай.",
-      "У саду є сарай."
-    ],
-    "vi": [
-      "Có một con mèo trong cái lều đó.",
-      "Tôi đã uống trà trong căn nhà gỗ ở rừng.",
-      "Có một cái lều trước ga tàu.",
-      "Có một cái lều trong vườn."
-    ],
-    "yue": [
-      "嗰間木屋入面有隻貓。",
-      "我喺森林入面嘅小屋飲咗茶。",
-      "車站前面有間木屋。",
-      "花園入面有間木屋。"
-    ],
-    "zh-Hans": [
-      "那间小屋里有一只猫。",
-      "我在森林里的小屋里喝了茶。",
-      "车站前面有一间小屋。",
-      "院子里有一间小屋。"
-    ],
     "pos_analysis": [
       {
-        "sentence": "あの小屋にねこがいます。",
+        "sentence": "あの小屋に猫がいます。",
         "tokens": [
           {
             "surface": "あの",
@@ -1118,8 +1891,9 @@
                 "length": 2
               }
             ],
-            "ruby_confidence": "medium",
+            "ruby_confidence": "reviewed",
             "furigana": "こや",
+            "ruby_source": "mediawiki_sentence_ruby",
             "is_main_word": true
           },
           {
@@ -1139,20 +1913,28 @@
             "furigana": "に"
           },
           {
-            "surface": "ねこ",
-            "lemma": "ねこ",
+            "surface": "猫",
+            "lemma": "猫",
             "pos": "名詞/普通名詞/一般/*/*/*",
             "upos": "NOUN",
             "xpos": "名詞",
             "feats": {},
             "start": 5,
-            "end": 7,
+            "end": 6,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "ねこ",
-            "ruby_text": "ねこ",
-            "ruby_spans": [],
-            "ruby_confidence": "high",
-            "furigana": "ねこ"
+            "ruby_text": "猫[ねこ]",
+            "ruby_spans": [
+              {
+                "base": "猫",
+                "reading": "ねこ",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "ねこ",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "が",
@@ -1161,8 +1943,8 @@
             "upos": "PART",
             "xpos": "助詞",
             "feats": {},
-            "start": 7,
-            "end": 8,
+            "start": 6,
+            "end": 7,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "が",
             "ruby_text": "が",
@@ -1177,8 +1959,8 @@
             "upos": "VERB",
             "xpos": "動詞",
             "feats": {},
-            "start": 8,
-            "end": 9,
+            "start": 7,
+            "end": 8,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "い",
             "ruby_text": "い",
@@ -1193,8 +1975,8 @@
             "upos": "AUX",
             "xpos": "助動詞",
             "feats": {},
-            "start": 9,
-            "end": 11,
+            "start": 8,
+            "end": 10,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "ます",
             "ruby_text": "ます",
@@ -1209,8 +1991,8 @@
             "upos": "PUNCT",
             "xpos": "補助記号",
             "feats": {},
-            "start": 11,
-            "end": 12,
+            "start": 10,
+            "end": 11,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "。",
             "ruby_text": "。",
@@ -1222,7 +2004,7 @@
         "difficulty_aggregated": null
       },
       {
-        "sentence": "森の小屋でお茶をのみました。",
+        "sentence": "森の小屋でお茶を飲みました。",
         "tokens": [
           {
             "surface": "森",
@@ -1244,8 +2026,9 @@
                 "length": 1
               }
             ],
-            "ruby_confidence": "high",
-            "furigana": "もり"
+            "ruby_confidence": "reviewed",
+            "furigana": "もり",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "の",
@@ -1283,8 +2066,9 @@
                 "length": 2
               }
             ],
-            "ruby_confidence": "medium",
+            "ruby_confidence": "reviewed",
             "furigana": "こや",
+            "ruby_source": "mediawiki_sentence_ruby",
             "is_main_word": true
           },
           {
@@ -1339,8 +2123,9 @@
                 "length": 1
               }
             ],
-            "ruby_confidence": "high",
-            "furigana": "ちゃ"
+            "ruby_confidence": "reviewed",
+            "furigana": "ちゃ",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "を",
@@ -1359,8 +2144,8 @@
             "furigana": "を"
           },
           {
-            "surface": "のみ",
-            "lemma": "のむ",
+            "surface": "飲み",
+            "lemma": "飲む",
             "pos": "動詞/一般/*/*/五段-マ行/連用形-一般",
             "upos": "VERB",
             "xpos": "動詞",
@@ -1369,10 +2154,18 @@
             "end": 10,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "のみ",
-            "ruby_text": "のみ",
-            "ruby_spans": [],
-            "ruby_confidence": "high",
-            "furigana": "のみ"
+            "ruby_text": "飲[の]み",
+            "ruby_spans": [
+              {
+                "base": "飲",
+                "reading": "の",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "のみ",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "まし",
@@ -1730,6 +2523,196 @@
         ],
         "difficulty_aggregated": null
       }
+    ],
+    "word_en": "hut; cabin; shed; (animal) pen; small theatre (theater); temporary playhouse; circus tent; booth; one's own house",
+    "word_es": "cabaña",
+    "word_fr": "cabane",
+    "word_de": "Hütte",
+    "word_it": "capanna",
+    "word_ko": "오두막",
+    "word_zh-Hans": "小屋",
+    "word_yue": "小屋",
+    "word_ru": "хижина",
+    "word_pt": "cabana",
+    "word_he": "צריף",
+    "word_tr": "kulübe",
+    "word_vi": "chòi",
+    "word_ar": "كوخ",
+    "word_nl": "hut",
+    "word_uk": "хижина",
+    "word_hu": "kunyhó",
+    "word_hi": "झोपड़ी",
+    "word_pl": "chata",
+    "word_el": "καλύβα",
+    "word_nb": "hytte",
+    "word_id": "gubuk",
+    "word_sv": "koja",
+    "word_ro": "colibă",
+    "word_cs": "chata",
+    "word_da": "hytte",
+    "word_fi": "mökki",
+    "word_ja": "小屋",
+    "ar": [
+      "هناك قطة في ذلك الكوخ.",
+      "شربت الشاي في الكوخ في الغابة.",
+      "هناك كوخ أمام المحطة.",
+      "هناك كوخ في الحديقة."
+    ],
+    "cs": [
+      "V té boudě je kočka.",
+      "Pil jsem čaj v chatě v lese.",
+      "Před nádražím je bouda.",
+      "Na zahradě je bouda."
+    ],
+    "da": [
+      "Der er en kat i det skur.",
+      "Jeg drak te i hytten i skoven.",
+      "Der er et skur foran stationen.",
+      "Der er et skur i haven."
+    ],
+    "de": [
+      "In dem Schuppen ist eine Katze.",
+      "Ich habe im Waldhäuschen Tee getrunken.",
+      "Vor dem Bahnhof steht ein Schuppen.",
+      "Im Garten steht ein Schuppen."
+    ],
+    "el": [
+      "Υπάρχει μια γάτα σε εκείνη την παράγκα.",
+      "Ήπια τσάι στην καλύβα στο δάσος.",
+      "Υπάρχει μια παράγκα μπροστά από τον σταθμό.",
+      "Υπάρχει μια παράγκα στον κήπο."
+    ],
+    "en": [
+      "There is a cat in that shed.",
+      "I drank tea in the cabin in the forest.",
+      "There is a shed in front of the station.",
+      "There is a shed in the yard."
+    ],
+    "es": [
+      "Hay un gato en ese cobertizo.",
+      "Tomé té en la cabaña del bosque.",
+      "Hay un cobertizo delante de la estación.",
+      "Hay un cobertizo en el jardín."
+    ],
+    "fi": [
+      "Tuossa vajassa on kissa.",
+      "Join teetä mökissä metsässä.",
+      "Aseman edessä on vaja.",
+      "Pihassa on vaja."
+    ],
+    "fr": [
+      "Il y a un chat dans ce cabanon.",
+      "J’ai bu du thé dans la cabane dans la forêt.",
+      "Il y a un cabanon devant la gare.",
+      "Il y a un cabanon dans le jardin."
+    ],
+    "he": [
+      "יש חתול במחסן ההוא.",
+      "שתיתי תה בבקתה ביער.",
+      "יש מחסן מול התחנה.",
+      "יש מחסן בגינה."
+    ],
+    "hi": [
+      "उस शेड में एक बिल्ली है।",
+      "मैंने जंगल की झोपड़ी में चाय पी।",
+      "स्टेशन के सामने एक शेड है।",
+      "आँगन में एक शेड है।"
+    ],
+    "hu": [
+      "Abban a fészerben van egy macska.",
+      "Az erdei házikóban ittam teát.",
+      "Van egy fészer az állomás előtt.",
+      "Van egy fészer a kertben."
+    ],
+    "id": [
+      "Ada kucing di gudang itu.",
+      "Saya minum teh di pondok di hutan.",
+      "Ada gudang di depan stasiun.",
+      "Ada gudang di halaman."
+    ],
+    "it": [
+      "C'è un gatto in quel capanno.",
+      "Ho bevuto il tè nella casetta nel bosco.",
+      "C'è un capanno davanti alla stazione.",
+      "C'è un capanno in giardino."
+    ],
+    "ko": [
+      "저 창고에 고양이가 있어요.",
+      "숲 속 오두막에서 차를 마셨어요.",
+      "역 앞에 창고가 있어요.",
+      "정원에 창고가 있어요."
+    ],
+    "nb": [
+      "Det er en katt i det skuret.",
+      "Jeg drakk te i hytta i skogen.",
+      "Det er et skur foran stasjonen.",
+      "Det er et skur i hagen."
+    ],
+    "nl": [
+      "Er zit een kat in dat schuurtje.",
+      "Ik dronk thee in het huisje in het bos.",
+      "Er staat een schuurtje voor het station.",
+      "Er staat een schuurtje in de tuin."
+    ],
+    "pl": [
+      "W tej szopie jest kot.",
+      "Piłem herbatę w chatce w lesie.",
+      "Przed stacją jest szopa.",
+      "W ogrodzie jest szopa."
+    ],
+    "pt": [
+      "Há um gato naquele barracão.",
+      "Bebi chá na cabana na floresta.",
+      "Há uma cabana em frente à estação.",
+      "Há uma cabana no jardim."
+    ],
+    "ro": [
+      "Este o pisică în șopronul acela.",
+      "Am băut ceai în cabana din pădure.",
+      "Este un șopron în fața gării.",
+      "Este un șopron în grădină."
+    ],
+    "ru": [
+      "В том сарае есть кошка.",
+      "Я пил чай в домике в лесу.",
+      "Перед вокзалом есть сарай.",
+      "В саду есть сарай."
+    ],
+    "sv": [
+      "Det finns en katt i det skjulet.",
+      "Jag drack te i stugan i skogen.",
+      "Det finns ett skjul framför stationen.",
+      "Det finns ett skjul i trädgården."
+    ],
+    "tr": [
+      "O kulübede bir kedi var.",
+      "Ormandaki kulübede çay içtim.",
+      "İstasyonun önünde bir kulübe var.",
+      "Bahçede bir kulübe var."
+    ],
+    "uk": [
+      "У тій халупі є кіт.",
+      "Я пив чай у хатинці в лісі.",
+      "Перед вокзалом є сарай.",
+      "У саду є сарай."
+    ],
+    "vi": [
+      "Có một con mèo trong cái lều đó.",
+      "Tôi đã uống trà trong căn nhà gỗ ở rừng.",
+      "Có một cái chòi trước ga tàu.",
+      "Có một cái chòi trong vườn."
+    ],
+    "yue": [
+      "嗰間木屋入面有隻貓。",
+      "我喺森林入面嘅小屋飲咗茶。",
+      "車站前面有間木屋。",
+      "花園入面有間木屋。"
+    ],
+    "zh-Hans": [
+      "那间小屋里有一只猫。",
+      "我在森林里的小屋里喝了茶。",
+      "车站前面有一间小屋。",
+      "院子里有一间小屋。"
     ]
   }
 }

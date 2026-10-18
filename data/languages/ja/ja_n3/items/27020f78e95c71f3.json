@@ -522,28 +522,28 @@
       "difficulty": null
     },
     {
-      "target": "可能な日を教えてください。",
-      "reading": "かのうなひをおしえてください。",
+      "target": "参加可能な日を教えてください。",
+      "reading": "さんかかのうなひをおしえてください。",
       "translations": {
-        "en": "Please tell me a possible day.",
+        "en": "Please tell me a day that works for you.",
         "ar": "من فضلك أخبرني باليوم المناسب.",
         "cs": "Prosím, dejte mi vědět, který den by vám vyhovoval.",
         "da": "Fortæl mig venligst en passende dag.",
         "de": "Bitte sagen Sie mir einen passenden Tag.",
         "el": "Πείτε μου, παρακαλώ, μια κατάλληλη μέρα.",
-        "es": "Por favor, dime un día posible.",
+        "es": "Por favor, dime qué día te viene bien.",
         "fi": "Kerro minulle sopiva päivä, kiitos.",
-        "fr": "Dites-moi, s'il vous plaît, un jour possible.",
-        "he": "אנא אמור לי יום אפשרי.",
+        "fr": "Dites-moi, s'il vous plaît, quel jour vous conviendrait.",
+        "he": "אנא אמור לי איזה יום נוח לך.",
         "hi": "कृपया मुझे एक उपयुक्त दिन बताइए।",
         "hu": "Kérem, mondjon egy megfelelő napot.",
-        "id": "Tolong beri tahu saya hari yang memungkinkan.",
-        "it": "Dimmi, per favore, un giorno possibile.",
+        "id": "Tolong beri tahu saya hari apa yang cocok bagi Anda.",
+        "it": "Dimmi, per favore, quale giorno ti va bene.",
         "ko": "가능한 날짜를 알려 주세요.",
         "nb": "Si meg en passende dag, takk.",
         "nl": "Laat me alsjeblieft een geschikte dag weten.",
         "pl": "Proszę, powiedz mi, który dzień pasuje.",
-        "pt": "Por favor, diga-me um dia possível.",
+        "pt": "Por favor, diga-me qual dia lhe é conveniente.",
         "ro": "Spuneți-mi, vă rog, o zi potrivită.",
         "ru": "Пожалуйста, скажите мне подходящий день.",
         "sv": "Berätta gärna en lämplig dag.",
@@ -555,14 +555,38 @@
       },
       "tokens": [
         {
+          "surface": "参加",
+          "lemma": "参加",
+          "pos": "名詞/普通名詞/サ変可能/*/*/*",
+          "upos": "NOUN",
+          "xpos": "名詞",
+          "feats": {},
+          "start": 0,
+          "end": 2,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "さんか",
+          "ruby_text": "参加[さんか]",
+          "ruby_spans": [
+            {
+              "base": "参加",
+              "reading": "さんか",
+              "start": 0,
+              "length": 2
+            }
+          ],
+          "ruby_confidence": "reviewed",
+          "furigana": "さんか",
+          "ruby_source": "mediawiki_sentence_ruby"
+        },
+        {
           "surface": "可能",
           "lemma": "可能",
           "pos": "形状詞/一般/*/*/*/*",
           "upos": "ADJ",
           "xpos": "形状詞",
           "feats": {},
-          "start": 0,
-          "end": 2,
+          "start": 2,
+          "end": 4,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "かのう",
           "ruby_text": "可能[かのう]",
@@ -574,8 +598,9 @@
               "length": 2
             }
           ],
-          "ruby_confidence": "medium",
+          "ruby_confidence": "reviewed",
           "furigana": "かのう",
+          "ruby_source": "mediawiki_sentence_ruby",
           "is_main_word": true
         },
         {
@@ -585,8 +610,8 @@
           "upos": "AUX",
           "xpos": "助動詞",
           "feats": {},
-          "start": 2,
-          "end": 3,
+          "start": 4,
+          "end": 5,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "な",
           "ruby_text": "な",
@@ -601,8 +626,8 @@
           "upos": "NOUN",
           "xpos": "名詞",
           "feats": {},
-          "start": 3,
-          "end": 4,
+          "start": 5,
+          "end": 6,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "ひ",
           "ruby_text": "日[ひ]",
@@ -614,8 +639,9 @@
               "length": 1
             }
           ],
-          "ruby_confidence": "high",
-          "furigana": "ひ"
+          "ruby_confidence": "reviewed",
+          "furigana": "ひ",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "を",
@@ -624,8 +650,8 @@
           "upos": "PART",
           "xpos": "助詞",
           "feats": {},
-          "start": 4,
-          "end": 5,
+          "start": 6,
+          "end": 7,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "を",
           "ruby_text": "を",
@@ -640,8 +666,8 @@
           "upos": "VERB",
           "xpos": "動詞",
           "feats": {},
-          "start": 5,
-          "end": 7,
+          "start": 7,
+          "end": 9,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "おしえ",
           "ruby_text": "教[おし]え",
@@ -653,8 +679,9 @@
               "length": 1
             }
           ],
-          "ruby_confidence": "high",
-          "furigana": "おしえ"
+          "ruby_confidence": "reviewed",
+          "furigana": "おしえ",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "て",
@@ -663,8 +690,8 @@
           "upos": "PART",
           "xpos": "助詞",
           "feats": {},
-          "start": 7,
-          "end": 8,
+          "start": 9,
+          "end": 10,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "て",
           "ruby_text": "て",
@@ -679,8 +706,8 @@
           "upos": "VERB",
           "xpos": "動詞",
           "feats": {},
-          "start": 8,
-          "end": 12,
+          "start": 10,
+          "end": 14,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "ください",
           "ruby_text": "ください",
@@ -695,8 +722,8 @@
           "upos": "PUNCT",
           "xpos": "補助記号",
           "feats": {},
-          "start": 12,
-          "end": 13,
+          "start": 14,
+          "end": 15,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "。",
           "ruby_text": "。",
@@ -719,8 +746,488 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-12T23:14:32Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:Ja n3/27020f78e95c71f3",
+      "revision_id": 81547,
+      "parent_revision_id": 67357,
+      "revision_timestamp_utc": "2026-10-12T23:14:32Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Clarify that the requested date is one when participation is possible, and make these scheduling translations natural.",
+      "pulled_utc": "2026-10-18T17:38:56Z",
+      "applied_utc": "2026-10-18T17:39:32Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-387041b49d12cf09",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "ja_n3:27020f78e95c71f3",
+        "pack_code": "ja_n3",
+        "entry_id": "可能",
+        "language": "ja",
+        "sentence_index": 4,
+        "old_sentence": "可能な日を教えてください。",
+        "old_translations": {
+          "en": "Please tell me a possible day.",
+          "ar": "من فضلك أخبرني باليوم المناسب.",
+          "cs": "Prosím, dejte mi vědět, který den by vám vyhovoval.",
+          "da": "Fortæl mig venligst en passende dag.",
+          "de": "Bitte sagen Sie mir einen passenden Tag.",
+          "el": "Πείτε μου, παρακαλώ, μια κατάλληλη μέρα.",
+          "es": "Por favor, dime un día posible.",
+          "fi": "Kerro minulle sopiva päivä, kiitos.",
+          "fr": "Dites-moi, s'il vous plaît, un jour possible.",
+          "he": "אנא אמור לי יום אפשרי.",
+          "hi": "कृपया मुझे एक उपयुक्त दिन बताइए।",
+          "hu": "Kérem, mondjon egy megfelelő napot.",
+          "id": "Tolong beri tahu saya hari yang memungkinkan.",
+          "it": "Dimmi, per favore, un giorno possibile.",
+          "ko": "가능한 날짜를 알려 주세요.",
+          "nb": "Si meg en passende dag, takk.",
+          "nl": "Laat me alsjeblieft een geschikte dag weten.",
+          "pl": "Proszę, powiedz mi, który dzień pasuje.",
+          "pt": "Por favor, diga-me um dia possível.",
+          "ro": "Spuneți-mi, vă rog, o zi potrivită.",
+          "ru": "Пожалуйста, скажите мне подходящий день.",
+          "sv": "Berätta gärna en lämplig dag.",
+          "tr": "Lütfen bana uygun bir gün söyle.",
+          "uk": "Будь ласка, скажіть мені зручний день.",
+          "vi": "Làm ơn cho tôi biết một ngày phù hợp.",
+          "yue": "請話俾我知一個合適嘅日子。",
+          "zh-Hans": "请告诉我一个合适的日子。"
+        },
+        "proposed_sentence": "参加可能な日を教えてください。",
+        "proposed_translations": {
+          "en": "Please tell me a day that works for you.",
+          "ar": "من فضلك أخبرني باليوم المناسب.",
+          "cs": "Prosím, dejte mi vědět, který den by vám vyhovoval.",
+          "da": "Fortæl mig venligst en passende dag.",
+          "de": "Bitte sagen Sie mir einen passenden Tag.",
+          "el": "Πείτε μου, παρακαλώ, μια κατάλληλη μέρα.",
+          "es": "Por favor, dime qué día te viene bien.",
+          "fi": "Kerro minulle sopiva päivä, kiitos.",
+          "fr": "Dites-moi, s'il vous plaît, quel jour vous conviendrait.",
+          "he": "אנא אמור לי איזה יום נוח לך.",
+          "hi": "कृपया मुझे एक उपयुक्त दिन बताइए।",
+          "hu": "Kérem, mondjon egy megfelelő napot.",
+          "id": "Tolong beri tahu saya hari apa yang cocok bagi Anda.",
+          "it": "Dimmi, per favore, quale giorno ti va bene.",
+          "ko": "가능한 날짜를 알려 주세요.",
+          "nb": "Si meg en passende dag, takk.",
+          "nl": "Laat me alsjeblieft een geschikte dag weten.",
+          "pl": "Proszę, powiedz mi, który dzień pasuje.",
+          "pt": "Por favor, diga-me qual dia lhe é conveniente.",
+          "ro": "Spuneți-mi, vă rog, o zi potrivită.",
+          "ru": "Пожалуйста, скажите мне подходящий день.",
+          "sv": "Berätta gärna en lämplig dag.",
+          "tr": "Lütfen bana uygun bir gün söyle.",
+          "uk": "Будь ласка, скажіть мені зручний день.",
+          "vi": "Làm ơn cho tôi biết một ngày phù hợp.",
+          "yue": "請話俾我知一個合適嘅日子。",
+          "zh-Hans": "请告诉我一个合适的日子。"
+        },
+        "old_ruby_source": "可能[かのう]な日[ひ]を教[おし]えてください。",
+        "proposed_ruby_source": "参加[さんか]可能[かのう]な日[ひ]を教[おし]えてください。",
+        "old_japanese": "可能な日を教えてください。",
+        "old_english": "Please tell me a possible day.",
+        "proposed_japanese": "参加可能な日を教えてください。",
+        "proposed_english": "Please tell me a day that works for you.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "ja",
+          "sentence": "参加可能な日を教えてください。",
+          "tokens": [
+            {
+              "surface": "参加",
+              "lemma": "参加",
+              "pos": "名詞/普通名詞/サ変可能/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 0,
+              "end": 2,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "さんか",
+              "ruby_text": "参加[さんか]",
+              "ruby_spans": [
+                {
+                  "base": "参加",
+                  "reading": "さんか",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "さんか",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "可能",
+              "lemma": "可能",
+              "pos": "形状詞/一般/*/*/*/*",
+              "upos": "ADJ",
+              "xpos": "形状詞",
+              "feats": {},
+              "start": 2,
+              "end": 4,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "かのう",
+              "ruby_text": "可能[かのう]",
+              "ruby_spans": [
+                {
+                  "base": "可能",
+                  "reading": "かのう",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "かのう",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "な",
+              "lemma": "だ",
+              "pos": "助動詞/*/*/*/助動詞-ダ/連体形-一般",
+              "upos": "AUX",
+              "xpos": "助動詞",
+              "feats": {},
+              "start": 4,
+              "end": 5,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "な",
+              "ruby_text": "な",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "な"
+            },
+            {
+              "surface": "日",
+              "lemma": "日",
+              "pos": "名詞/普通名詞/副詞可能/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 5,
+              "end": 6,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "ひ",
+              "ruby_text": "日[ひ]",
+              "ruby_spans": [
+                {
+                  "base": "日",
+                  "reading": "ひ",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "ひ",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "を",
+              "lemma": "を",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 6,
+              "end": 7,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "を",
+              "ruby_text": "を",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "を"
+            },
+            {
+              "surface": "教え",
+              "lemma": "教える",
+              "pos": "動詞/一般/*/*/下一段-ア行/連用形-一般",
+              "upos": "VERB",
+              "xpos": "動詞",
+              "feats": {},
+              "start": 7,
+              "end": 9,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "おしえ",
+              "ruby_text": "教[おし]え",
+              "ruby_spans": [
+                {
+                  "base": "教",
+                  "reading": "おし",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "おしえ",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "て",
+              "lemma": "て",
+              "pos": "助詞/接続助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 9,
+              "end": 10,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "て",
+              "ruby_text": "て",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "て"
+            },
+            {
+              "surface": "ください",
+              "lemma": "くださる",
+              "pos": "動詞/非自立可能/*/*/五段-ラ行/命令形",
+              "upos": "VERB",
+              "xpos": "動詞",
+              "feats": {},
+              "start": 10,
+              "end": 14,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "ください",
+              "ruby_text": "ください",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "ください"
+            },
+            {
+              "surface": "。",
+              "lemma": "。",
+              "pos": "補助記号/句点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 14,
+              "end": 15,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "。",
+              "ruby_text": "。",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "。"
+            }
+          ],
+          "reading": "さんかかのうなひをおしえてください。",
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "warnings": [
+            "mediawiki ruby hints applied"
+          ]
+        },
+        "generated_tokens": [
+          {
+            "surface": "参加",
+            "lemma": "参加",
+            "pos": "名詞/普通名詞/サ変可能/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "さんか",
+            "ruby_text": "参加[さんか]",
+            "ruby_spans": [
+              {
+                "base": "参加",
+                "reading": "さんか",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "さんか",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "可能",
+            "lemma": "可能",
+            "pos": "形状詞/一般/*/*/*/*",
+            "upos": "ADJ",
+            "xpos": "形状詞",
+            "feats": {},
+            "start": 2,
+            "end": 4,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "かのう",
+            "ruby_text": "可能[かのう]",
+            "ruby_spans": [
+              {
+                "base": "可能",
+                "reading": "かのう",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "かのう",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "な",
+            "lemma": "だ",
+            "pos": "助動詞/*/*/*/助動詞-ダ/連体形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 4,
+            "end": 5,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "な",
+            "ruby_text": "な",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "な"
+          },
+          {
+            "surface": "日",
+            "lemma": "日",
+            "pos": "名詞/普通名詞/副詞可能/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 5,
+            "end": 6,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ひ",
+            "ruby_text": "日[ひ]",
+            "ruby_spans": [
+              {
+                "base": "日",
+                "reading": "ひ",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "ひ",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "を",
+            "lemma": "を",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 6,
+            "end": 7,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "を",
+            "ruby_text": "を",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "を"
+          },
+          {
+            "surface": "教え",
+            "lemma": "教える",
+            "pos": "動詞/一般/*/*/下一段-ア行/連用形-一般",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 7,
+            "end": 9,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "おしえ",
+            "ruby_text": "教[おし]え",
+            "ruby_spans": [
+              {
+                "base": "教",
+                "reading": "おし",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "おしえ",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "て",
+            "lemma": "て",
+            "pos": "助詞/接続助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 9,
+            "end": 10,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "て",
+            "ruby_text": "て",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "て"
+          },
+          {
+            "surface": "ください",
+            "lemma": "くださる",
+            "pos": "動詞/非自立可能/*/*/五段-ラ行/命令形",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 10,
+            "end": 14,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ください",
+            "ruby_text": "ください",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "ください"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 14,
+            "end": 15,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
+          }
+        ],
+        "generated_reading": "さんかかのうなひをおしえてください。",
+        "analyzer": "sudachipy_sudachidict_core_c",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-18T17:38:56Z",
+        "updated_utc": "2026-10-18T17:40:38Z",
+        "applied_utc": "2026-10-18T17:40:38Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-18T17:40:38Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -745,12 +1252,6 @@
       "きょうのさんかはかのうです。",
       "くるまでいくことはかのうです。",
       "かのうなひをおしえてください。"
-    ],
-    "en": [
-      "That is possible.",
-      "I can join today.",
-      "It is possible to go by car.",
-      "Please tell me a possible day."
     ],
     "generation": {
       "generator": "vocomipedia_source_generator.py",
@@ -789,190 +1290,6 @@
         "parts_of_speech": "Na-adjective (keiyodoshi); Noun"
       }
     },
-    "word_en": "possible; potential; practicable; feasible",
-    "word_es": "posible; factible",
-    "word_fr": "possible; faisable",
-    "word_de": "möglich; machbar",
-    "word_it": "possibile; fattibile",
-    "word_ko": "가능한; 실현 가능한",
-    "word_zh-Hans": "可能的; 可行的",
-    "word_yue": "可能的; 可行的",
-    "word_ru": "возможный; осуществимый",
-    "word_pt": "possível; viável",
-    "word_he": "אפשרי; בר-ביצוע",
-    "word_tr": "mümkün; yapılabilir",
-    "word_vi": "có thể; khả thi",
-    "word_ar": "ممكن; قابل للتنفيذ",
-    "word_nl": "mogelijk; haalbaar",
-    "word_uk": "можливий; здійсненний",
-    "word_hu": "lehetséges; megvalósítható",
-    "word_hi": "संभव; व्यवहार्य",
-    "word_pl": "możliwy; wykonalny",
-    "word_el": "δυνατός; εφικτός",
-    "word_nb": "mulig; gjennomførbar",
-    "word_id": "mungkin; layak",
-    "word_sv": "möjlig; genomförbar",
-    "word_ro": "posibil; fezabil",
-    "word_cs": "možný; proveditelný",
-    "word_da": "mulig; gennemførlig",
-    "word_fi": "mahdollinen; toteuttamiskelpoinen",
-    "word_ja": "可能",
-    "ar": [
-      "ذلك ممكن.",
-      "يمكنني الحضور اليوم.",
-      "يمكن الذهاب بالسيارة.",
-      "من فضلك أخبرني باليوم المناسب."
-    ],
-    "cs": [
-      "To je možné.",
-      "Dnes se můžu zúčastnit.",
-      "Je možné jet autem.",
-      "Prosím, dejte mi vědět, který den by vám vyhovoval."
-    ],
-    "da": [
-      "Det er muligt.",
-      "Jeg kan være med i dag.",
-      "Det er muligt at tage derhen i bil.",
-      "Fortæl mig venligst en passende dag."
-    ],
-    "de": [
-      "Das ist möglich.",
-      "Ich kann heute teilnehmen.",
-      "Man kann mit dem Auto fahren.",
-      "Bitte sagen Sie mir einen passenden Tag."
-    ],
-    "el": [
-      "Αυτό είναι δυνατό.",
-      "Μπορώ να συμμετάσχω σήμερα.",
-      "Είναι δυνατόν να πάει κανείς με το αυτοκίνητο.",
-      "Πείτε μου, παρακαλώ, μια κατάλληλη μέρα."
-    ],
-    "es": [
-      "Eso es posible.",
-      "Puedo unirme hoy.",
-      "Es posible ir en coche.",
-      "Por favor, dime un día posible."
-    ],
-    "fi": [
-      "Se on mahdollista.",
-      "Voin osallistua tänään.",
-      "Autolla voi mennä.",
-      "Kerro minulle sopiva päivä, kiitos."
-    ],
-    "fr": [
-      "C'est possible.",
-      "Je peux venir aujourd'hui.",
-      "On peut y aller en voiture.",
-      "Dites-moi, s'il vous plaît, un jour possible."
-    ],
-    "he": [
-      "זה אפשרי.",
-      "אני יכול להצטרף היום.",
-      "אפשר לנסוע לשם ברכב.",
-      "אנא אמור לי יום אפשרי."
-    ],
-    "hi": [
-      "यह संभव है।",
-      "मैं आज शामिल हो सकता हूँ।",
-      "कार से जाना संभव है।",
-      "कृपया मुझे एक उपयुक्त दिन बताइए।"
-    ],
-    "hu": [
-      "Ez lehetséges.",
-      "Ma tudok csatlakozni.",
-      "Autóval is lehet menni.",
-      "Kérem, mondjon egy megfelelő napot."
-    ],
-    "id": [
-      "Itu mungkin.",
-      "Saya bisa ikut hari ini.",
-      "Bisa pergi dengan mobil.",
-      "Tolong beri tahu saya hari yang memungkinkan."
-    ],
-    "it": [
-      "Questo è possibile.",
-      "Posso partecipare oggi.",
-      "Si può andare in macchina.",
-      "Dimmi, per favore, un giorno possibile."
-    ],
-    "ko": [
-      "그것은 가능합니다.",
-      "오늘 참여할 수 있습니다.",
-      "차로 갈 수 있습니다.",
-      "가능한 날짜를 알려 주세요."
-    ],
-    "nb": [
-      "Det er mulig.",
-      "Jeg kan være med i dag.",
-      "Det er mulig å dra med bil.",
-      "Si meg en passende dag, takk."
-    ],
-    "nl": [
-      "Dat is mogelijk.",
-      "Ik kan vandaag meedoen.",
-      "Het is mogelijk om met de auto te gaan.",
-      "Laat me alsjeblieft een geschikte dag weten."
-    ],
-    "pl": [
-      "To jest możliwe.",
-      "Mogę dołączyć dzisiaj.",
-      "Można pojechać samochodem.",
-      "Proszę, powiedz mi, który dzień pasuje."
-    ],
-    "pt": [
-      "Isso é possível.",
-      "Posso participar hoje.",
-      "É possível ir de carro.",
-      "Por favor, diga-me um dia possível."
-    ],
-    "ro": [
-      "Asta este posibil.",
-      "Pot să particip azi.",
-      "Se poate merge cu mașina.",
-      "Spuneți-mi, vă rog, o zi potrivită."
-    ],
-    "ru": [
-      "Это возможно.",
-      "Я могу присоединиться сегодня.",
-      "Можно поехать на машине.",
-      "Пожалуйста, скажите мне подходящий день."
-    ],
-    "sv": [
-      "Det är möjligt.",
-      "Jag kan vara med i dag.",
-      "Det går att åka med bil.",
-      "Berätta gärna en lämplig dag."
-    ],
-    "tr": [
-      "Bu mümkün.",
-      "Bugün katılabilirim.",
-      "Arabayla gitmek mümkün.",
-      "Lütfen bana uygun bir gün söyle."
-    ],
-    "uk": [
-      "Це можливо.",
-      "Я можу приєднатися сьогодні.",
-      "Можна поїхати машиною.",
-      "Будь ласка, скажіть мені зручний день."
-    ],
-    "vi": [
-      "Điều đó là có thể.",
-      "Tôi có thể tham gia hôm nay.",
-      "Có thể đi bằng xe hơi.",
-      "Làm ơn cho tôi biết một ngày phù hợp."
-    ],
-    "yue": [
-      "嗰個係可能嘅。",
-      "我今日可以參加。",
-      "可以揸車去。",
-      "請話俾我知一個合適嘅日子。"
-    ],
-    "zh-Hans": [
-      "那是可能的。",
-      "我今天可以参加。",
-      "可以开车去。",
-      "请告诉我一个合适的日子。"
-    ],
     "pos_analysis": [
       {
         "sentence": "それは可能です。",
@@ -1365,8 +1682,32 @@
         "difficulty_aggregated": null
       },
       {
-        "sentence": "可能な日を教えてください。",
+        "sentence": "参加可能な日を教えてください。",
         "tokens": [
+          {
+            "surface": "参加",
+            "lemma": "参加",
+            "pos": "名詞/普通名詞/サ変可能/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "さんか",
+            "ruby_text": "参加[さんか]",
+            "ruby_spans": [
+              {
+                "base": "参加",
+                "reading": "さんか",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "さんか",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
           {
             "surface": "可能",
             "lemma": "可能",
@@ -1374,8 +1715,8 @@
             "upos": "ADJ",
             "xpos": "形状詞",
             "feats": {},
-            "start": 0,
-            "end": 2,
+            "start": 2,
+            "end": 4,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "かのう",
             "ruby_text": "可能[かのう]",
@@ -1387,8 +1728,9 @@
                 "length": 2
               }
             ],
-            "ruby_confidence": "medium",
+            "ruby_confidence": "reviewed",
             "furigana": "かのう",
+            "ruby_source": "mediawiki_sentence_ruby",
             "is_main_word": true
           },
           {
@@ -1398,8 +1740,8 @@
             "upos": "AUX",
             "xpos": "助動詞",
             "feats": {},
-            "start": 2,
-            "end": 3,
+            "start": 4,
+            "end": 5,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "な",
             "ruby_text": "な",
@@ -1414,8 +1756,8 @@
             "upos": "NOUN",
             "xpos": "名詞",
             "feats": {},
-            "start": 3,
-            "end": 4,
+            "start": 5,
+            "end": 6,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "ひ",
             "ruby_text": "日[ひ]",
@@ -1427,8 +1769,9 @@
                 "length": 1
               }
             ],
-            "ruby_confidence": "high",
-            "furigana": "ひ"
+            "ruby_confidence": "reviewed",
+            "furigana": "ひ",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "を",
@@ -1437,8 +1780,8 @@
             "upos": "PART",
             "xpos": "助詞",
             "feats": {},
-            "start": 4,
-            "end": 5,
+            "start": 6,
+            "end": 7,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "を",
             "ruby_text": "を",
@@ -1453,8 +1796,8 @@
             "upos": "VERB",
             "xpos": "動詞",
             "feats": {},
-            "start": 5,
-            "end": 7,
+            "start": 7,
+            "end": 9,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "おしえ",
             "ruby_text": "教[おし]え",
@@ -1466,8 +1809,9 @@
                 "length": 1
               }
             ],
-            "ruby_confidence": "high",
-            "furigana": "おしえ"
+            "ruby_confidence": "reviewed",
+            "furigana": "おしえ",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "て",
@@ -1476,8 +1820,8 @@
             "upos": "PART",
             "xpos": "助詞",
             "feats": {},
-            "start": 7,
-            "end": 8,
+            "start": 9,
+            "end": 10,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "て",
             "ruby_text": "て",
@@ -1492,8 +1836,8 @@
             "upos": "VERB",
             "xpos": "動詞",
             "feats": {},
-            "start": 8,
-            "end": 12,
+            "start": 10,
+            "end": 14,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "ください",
             "ruby_text": "ください",
@@ -1508,8 +1852,8 @@
             "upos": "PUNCT",
             "xpos": "補助記号",
             "feats": {},
-            "start": 12,
-            "end": 13,
+            "start": 14,
+            "end": 15,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "。",
             "ruby_text": "。",
@@ -1520,6 +1864,196 @@
         ],
         "difficulty_aggregated": null
       }
+    ],
+    "word_en": "possible; potential; practicable; feasible",
+    "word_es": "posible; factible",
+    "word_fr": "possible; faisable",
+    "word_de": "möglich; machbar",
+    "word_it": "possibile; fattibile",
+    "word_ko": "가능한; 실현 가능한",
+    "word_zh-Hans": "可能的; 可行的",
+    "word_yue": "可能的; 可行的",
+    "word_ru": "возможный; осуществимый",
+    "word_pt": "possível; viável",
+    "word_he": "אפשרי; בר-ביצוע",
+    "word_tr": "mümkün; yapılabilir",
+    "word_vi": "có thể; khả thi",
+    "word_ar": "ممكن; قابل للتنفيذ",
+    "word_nl": "mogelijk; haalbaar",
+    "word_uk": "можливий; здійсненний",
+    "word_hu": "lehetséges; megvalósítható",
+    "word_hi": "संभव; व्यवहार्य",
+    "word_pl": "możliwy; wykonalny",
+    "word_el": "δυνατός; εφικτός",
+    "word_nb": "mulig; gjennomførbar",
+    "word_id": "mungkin; layak",
+    "word_sv": "möjlig; genomförbar",
+    "word_ro": "posibil; fezabil",
+    "word_cs": "možný; proveditelný",
+    "word_da": "mulig; gennemførlig",
+    "word_fi": "mahdollinen; toteuttamiskelpoinen",
+    "word_ja": "可能",
+    "ar": [
+      "ذلك ممكن.",
+      "يمكنني الحضور اليوم.",
+      "يمكن الذهاب بالسيارة.",
+      "من فضلك أخبرني باليوم المناسب."
+    ],
+    "cs": [
+      "To je možné.",
+      "Dnes se můžu zúčastnit.",
+      "Je možné jet autem.",
+      "Prosím, dejte mi vědět, který den by vám vyhovoval."
+    ],
+    "da": [
+      "Det er muligt.",
+      "Jeg kan være med i dag.",
+      "Det er muligt at tage derhen i bil.",
+      "Fortæl mig venligst en passende dag."
+    ],
+    "de": [
+      "Das ist möglich.",
+      "Ich kann heute teilnehmen.",
+      "Man kann mit dem Auto fahren.",
+      "Bitte sagen Sie mir einen passenden Tag."
+    ],
+    "el": [
+      "Αυτό είναι δυνατό.",
+      "Μπορώ να συμμετάσχω σήμερα.",
+      "Είναι δυνατόν να πάει κανείς με το αυτοκίνητο.",
+      "Πείτε μου, παρακαλώ, μια κατάλληλη μέρα."
+    ],
+    "en": [
+      "That is possible.",
+      "I can join today.",
+      "It is possible to go by car.",
+      "Please tell me a possible day."
+    ],
+    "es": [
+      "Eso es posible.",
+      "Puedo unirme hoy.",
+      "Es posible ir en coche.",
+      "Por favor, dime un día posible."
+    ],
+    "fi": [
+      "Se on mahdollista.",
+      "Voin osallistua tänään.",
+      "Autolla voi mennä.",
+      "Kerro minulle sopiva päivä, kiitos."
+    ],
+    "fr": [
+      "C'est possible.",
+      "Je peux venir aujourd'hui.",
+      "On peut y aller en voiture.",
+      "Dites-moi, s'il vous plaît, un jour possible."
+    ],
+    "he": [
+      "זה אפשרי.",
+      "אני יכול להצטרף היום.",
+      "אפשר לנסוע לשם ברכב.",
+      "אנא אמור לי יום אפשרי."
+    ],
+    "hi": [
+      "यह संभव है।",
+      "मैं आज शामिल हो सकता हूँ।",
+      "कार से जाना संभव है।",
+      "कृपया मुझे एक उपयुक्त दिन बताइए।"
+    ],
+    "hu": [
+      "Ez lehetséges.",
+      "Ma tudok csatlakozni.",
+      "Autóval is lehet menni.",
+      "Kérem, mondjon egy megfelelő napot."
+    ],
+    "id": [
+      "Itu mungkin.",
+      "Saya bisa ikut hari ini.",
+      "Bisa pergi dengan mobil.",
+      "Tolong beri tahu saya hari yang memungkinkan."
+    ],
+    "it": [
+      "Questo è possibile.",
+      "Posso partecipare oggi.",
+      "Si può andare in macchina.",
+      "Dimmi, per favore, un giorno possibile."
+    ],
+    "ko": [
+      "그것은 가능합니다.",
+      "오늘 참여할 수 있습니다.",
+      "차로 갈 수 있습니다.",
+      "가능한 날짜를 알려 주세요."
+    ],
+    "nb": [
+      "Det er mulig.",
+      "Jeg kan være med i dag.",
+      "Det er mulig å dra med bil.",
+      "Si meg en passende dag, takk."
+    ],
+    "nl": [
+      "Dat is mogelijk.",
+      "Ik kan vandaag meedoen.",
+      "Het is mogelijk om met de auto te gaan.",
+      "Laat me alsjeblieft een geschikte dag weten."
+    ],
+    "pl": [
+      "To jest możliwe.",
+      "Mogę dołączyć dzisiaj.",
+      "Można pojechać samochodem.",
+      "Proszę, powiedz mi, który dzień pasuje."
+    ],
+    "pt": [
+      "Isso é possível.",
+      "Posso participar hoje.",
+      "É possível ir de carro.",
+      "Por favor, diga-me um dia possível."
+    ],
+    "ro": [
+      "Asta este posibil.",
+      "Pot să particip azi.",
+      "Se poate merge cu mașina.",
+      "Spuneți-mi, vă rog, o zi potrivită."
+    ],
+    "ru": [
+      "Это возможно.",
+      "Я могу присоединиться сегодня.",
+      "Можно поехать на машине.",
+      "Пожалуйста, скажите мне подходящий день."
+    ],
+    "sv": [
+      "Det är möjligt.",
+      "Jag kan vara med i dag.",
+      "Det går att åka med bil.",
+      "Berätta gärna en lämplig dag."
+    ],
+    "tr": [
+      "Bu mümkün.",
+      "Bugün katılabilirim.",
+      "Arabayla gitmek mümkün.",
+      "Lütfen bana uygun bir gün söyle."
+    ],
+    "uk": [
+      "Це можливо.",
+      "Я можу приєднатися сьогодні.",
+      "Можна поїхати машиною.",
+      "Будь ласка, скажіть мені зручний день."
+    ],
+    "vi": [
+      "Điều đó là có thể.",
+      "Tôi có thể tham gia hôm nay.",
+      "Có thể đi bằng xe hơi.",
+      "Làm ơn cho tôi biết một ngày phù hợp."
+    ],
+    "yue": [
+      "嗰個係可能嘅。",
+      "我今日可以參加。",
+      "可以揸車去。",
+      "請話俾我知一個合適嘅日子。"
+    ],
+    "zh-Hans": [
+      "那是可能的。",
+      "我今天可以参加。",
+      "可以开车去。",
+      "请告诉我一个合适的日子。"
     ]
   }
 }

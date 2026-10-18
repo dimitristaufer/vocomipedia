@@ -46,7 +46,7 @@
       "reading": "それはいはんです。",
       "translations": {
         "en": "That's a violation.",
-        "ar": "هذا مخالفة.",
+        "ar": "هذه مخالفة.",
         "cs": "To je porušení pravidel.",
         "da": "Det er en overtrædelse.",
         "de": "Das ist ein Verstoß.",
@@ -572,14 +572,14 @@
       "target": "自転車の二人乗りは違反です。",
       "reading": "じてんしゃのふたりのりはいはんです。",
       "translations": {
-        "en": "Riding two people on a bicycle is a violation.",
-        "ar": "ركوب شخصين على دراجة مخالفة.",
+        "en": "Riding double on a bicycle is a violation.",
+        "ar": "يُعَدّ ركوب شخصين على دراجة مخالفةً.",
         "cs": "Jízda na kole ve dvou je porušení pravidel.",
         "da": "Det er en overtrædelse at køre to på en cykel.",
         "de": "Zu zweit Fahrrad zu fahren ist ein Verstoß.",
         "el": "Το να κάνεις ποδήλατο με δύο άτομα είναι παράβαση.",
         "es": "Llevar a dos personas en una bicicleta es una infracción.",
-        "fi": "Kahden ihmisen ajaminen samalla pyörällä on rikkomus.",
+        "fi": "Pyörällä kahdestaan ajaminen on rikkomus.",
         "fr": "Faire du vélo à deux est une infraction.",
         "he": "לרכוב על אופניים עם שני אנשים זו עבירה.",
         "hi": "साइकिल पर दो लोगों का बैठना उल्लंघन है।",
@@ -588,15 +588,15 @@
         "it": "Andare in due in bicicletta è una violazione.",
         "ko": "자전거에 두 사람이 타는 것은 위반입니다.",
         "nb": "Det er et regelbrudd å sykle to på en sykkel.",
-        "nl": "Met z'n tweeën op een fiets is een overtreding.",
-        "pl": "Jazda na rowerze we dwie osoby to wykroczenie.",
+        "nl": "Met z'n tweeën op één fiets rijden is een overtreding.",
+        "pl": "Jazda na jednym rowerze w dwie osoby to wykroczenie.",
         "pt": "Andar de bicicleta com duas pessoas é uma infração.",
-        "ro": "Să mergi cu două persoane pe bicicletă este o încălcare.",
+        "ro": "Să mergi două persoane pe aceeași bicicletă este o încălcare.",
         "ru": "Ездить вдвоём на велосипеде — нарушение.",
         "sv": "Det är ett regelbrott att cykla två på en cykel.",
         "tr": "Bisiklete iki kişi binmek bir ihlaldir.",
         "uk": "Їздити удвох на велосипеді — порушення.",
-        "vi": "Đi xe đạp hai người là vi phạm.",
+        "vi": "Chở hai người trên một chiếc xe đạp là vi phạm.",
         "yue": "一架單車載兩個人係違規。",
         "zh-Hans": "自行车载两个人是违规。"
       },
@@ -621,8 +621,9 @@
               "length": 3
             }
           ],
-          "ruby_confidence": "medium",
-          "furigana": "じてんしゃ"
+          "ruby_confidence": "reviewed",
+          "furigana": "じてんしゃ",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "の",
@@ -651,17 +652,24 @@
           "end": 8,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "ふたりのり",
-          "ruby_text": "二人乗[ふた]り",
+          "ruby_text": "二人[ふたり]乗[の]り",
           "ruby_spans": [
             {
-              "base": "二人乗",
-              "reading": "ふた",
+              "base": "二人",
+              "reading": "ふたり",
               "start": 0,
-              "length": 3
+              "length": 2
+            },
+            {
+              "base": "乗",
+              "reading": "の",
+              "start": 2,
+              "length": 1
             }
           ],
-          "ruby_confidence": "high",
-          "furigana": "ふたりのり"
+          "ruby_confidence": "reviewed",
+          "furigana": "ふたりのり",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "は",
@@ -699,8 +707,9 @@
               "length": 2
             }
           ],
-          "ruby_confidence": "medium",
-          "furigana": "いはん"
+          "ruby_confidence": "reviewed",
+          "furigana": "いはん",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "です",
@@ -749,8 +758,418 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-12T21:58:58Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:Ja n3/5a97f7d693665226",
+      "revision_id": 81724,
+      "parent_revision_id": 60684,
+      "revision_timestamp_utc": "2026-10-12T21:58:58Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Correct the 二人乗り reading and improve translation grammar and naturalness.",
+      "pulled_utc": "2026-10-18T17:39:02Z",
+      "applied_utc": "2026-10-18T17:39:39Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-e1c4cd9f946caf64",
+        "status": "applied",
+        "type": "translation_update",
+        "item_id": "ja_n3:5a97f7d693665226",
+        "pack_code": "ja_n3",
+        "entry_id": "いはん",
+        "language": "ja",
+        "sentence_index": 4,
+        "old_sentence": "自転車の二人乗りは違反です。",
+        "old_translations": {
+          "en": "Riding two people on a bicycle is a violation.",
+          "ar": "ركوب شخصين على دراجة مخالفة.",
+          "cs": "Jízda na kole ve dvou je porušení pravidel.",
+          "da": "Det er en overtrædelse at køre to på en cykel.",
+          "de": "Zu zweit Fahrrad zu fahren ist ein Verstoß.",
+          "el": "Το να κάνεις ποδήλατο με δύο άτομα είναι παράβαση.",
+          "es": "Llevar a dos personas en una bicicleta es una infracción.",
+          "fi": "Kahden ihmisen ajaminen samalla pyörällä on rikkomus.",
+          "fr": "Faire du vélo à deux est une infraction.",
+          "he": "לרכוב על אופניים עם שני אנשים זו עבירה.",
+          "hi": "साइकिल पर दो लोगों का बैठना उल्लंघन है।",
+          "hu": "Ketten biciklizni szabálysértés.",
+          "id": "Berboncengan dua di sepeda adalah pelanggaran.",
+          "it": "Andare in due in bicicletta è una violazione.",
+          "ko": "자전거에 두 사람이 타는 것은 위반입니다.",
+          "nb": "Det er et regelbrudd å sykle to på en sykkel.",
+          "nl": "Met z'n tweeën op een fiets is een overtreding.",
+          "pl": "Jazda na rowerze we dwie osoby to wykroczenie.",
+          "pt": "Andar de bicicleta com duas pessoas é uma infração.",
+          "ro": "Să mergi cu două persoane pe bicicletă este o încălcare.",
+          "ru": "Ездить вдвоём на велосипеде — нарушение.",
+          "sv": "Det är ett regelbrott att cykla två på en cykel.",
+          "tr": "Bisiklete iki kişi binmek bir ihlaldir.",
+          "uk": "Їздити удвох на велосипеді — порушення.",
+          "vi": "Đi xe đạp hai người là vi phạm.",
+          "yue": "一架單車載兩個人係違規。",
+          "zh-Hans": "自行车载两个人是违规。"
+        },
+        "proposed_sentence": "自転車の二人乗りは違反です。",
+        "proposed_translations": {
+          "en": "Riding double on a bicycle is a violation.",
+          "ar": "يُعَدّ ركوب شخصين على دراجة مخالفةً.",
+          "cs": "Jízda na kole ve dvou je porušení pravidel.",
+          "da": "Det er en overtrædelse at køre to på en cykel.",
+          "de": "Zu zweit Fahrrad zu fahren ist ein Verstoß.",
+          "el": "Το να κάνεις ποδήλατο με δύο άτομα είναι παράβαση.",
+          "es": "Llevar a dos personas en una bicicleta es una infracción.",
+          "fi": "Pyörällä kahdestaan ajaminen on rikkomus.",
+          "fr": "Faire du vélo à deux est une infraction.",
+          "he": "לרכוב על אופניים עם שני אנשים זו עבירה.",
+          "hi": "साइकिल पर दो लोगों का बैठना उल्लंघन है।",
+          "hu": "Ketten biciklizni szabálysértés.",
+          "id": "Berboncengan dua di sepeda adalah pelanggaran.",
+          "it": "Andare in due in bicicletta è una violazione.",
+          "ko": "자전거에 두 사람이 타는 것은 위반입니다.",
+          "nb": "Det er et regelbrudd å sykle to på en sykkel.",
+          "nl": "Met z'n tweeën op één fiets rijden is een overtreding.",
+          "pl": "Jazda na jednym rowerze w dwie osoby to wykroczenie.",
+          "pt": "Andar de bicicleta com duas pessoas é uma infração.",
+          "ro": "Să mergi două persoane pe aceeași bicicletă este o încălcare.",
+          "ru": "Ездить вдвоём на велосипеде — нарушение.",
+          "sv": "Det är ett regelbrott att cykla två på en cykel.",
+          "tr": "Bisiklete iki kişi binmek bir ihlaldir.",
+          "uk": "Їздити удвох на велосипеді — порушення.",
+          "vi": "Chở hai người trên một chiếc xe đạp là vi phạm.",
+          "yue": "一架單車載兩個人係違規。",
+          "zh-Hans": "自行车载两个人是违规。"
+        },
+        "old_ruby_source": "自転車[じてんしゃ]の二人乗[ふた]りは違反[いはん]です。",
+        "proposed_ruby_source": "自転車[じてんしゃ]の二人[ふたり]乗[の]りは違反[いはん]です。",
+        "old_japanese": "自転車の二人乗りは違反です。",
+        "old_english": "Riding two people on a bicycle is a violation.",
+        "proposed_japanese": "自転車の二人乗りは違反です。",
+        "proposed_english": "Riding double on a bicycle is a violation.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "ja",
+          "sentence": "自転車の二人乗りは違反です。",
+          "tokens": [
+            {
+              "surface": "自転車",
+              "lemma": "自転車",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 0,
+              "end": 3,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "じてんしゃ",
+              "ruby_text": "自転車[じてんしゃ]",
+              "ruby_spans": [
+                {
+                  "base": "自転車",
+                  "reading": "じてんしゃ",
+                  "start": 0,
+                  "length": 3
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "じてんしゃ",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "の",
+              "lemma": "の",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 3,
+              "end": 4,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "の",
+              "ruby_text": "の",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "の"
+            },
+            {
+              "surface": "二人乗り",
+              "lemma": "二人乗り",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 4,
+              "end": 8,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "ふたりのり",
+              "ruby_text": "二人[ふたり]乗[の]り",
+              "ruby_spans": [
+                {
+                  "base": "二人",
+                  "reading": "ふたり",
+                  "start": 0,
+                  "length": 2
+                },
+                {
+                  "base": "乗",
+                  "reading": "の",
+                  "start": 2,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "ふたりのり",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "は",
+              "lemma": "は",
+              "pos": "助詞/係助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 8,
+              "end": 9,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "は",
+              "ruby_text": "は",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "は"
+            },
+            {
+              "surface": "違反",
+              "lemma": "違反",
+              "pos": "名詞/普通名詞/サ変可能/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 9,
+              "end": 11,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "いはん",
+              "ruby_text": "違反[いはん]",
+              "ruby_spans": [
+                {
+                  "base": "違反",
+                  "reading": "いはん",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "いはん",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "です",
+              "lemma": "です",
+              "pos": "助動詞/*/*/*/助動詞-デス/終止形-一般",
+              "upos": "AUX",
+              "xpos": "助動詞",
+              "feats": {},
+              "start": 11,
+              "end": 13,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "です",
+              "ruby_text": "です",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "です"
+            },
+            {
+              "surface": "。",
+              "lemma": "。",
+              "pos": "補助記号/句点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 13,
+              "end": 14,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "。",
+              "ruby_text": "。",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "。"
+            }
+          ],
+          "reading": "じてんしゃのふたりのりはいはんです。",
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "warnings": [
+            "mediawiki ruby hints applied"
+          ]
+        },
+        "generated_tokens": [
+          {
+            "surface": "自転車",
+            "lemma": "自転車",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "じてんしゃ",
+            "ruby_text": "自転車[じてんしゃ]",
+            "ruby_spans": [
+              {
+                "base": "自転車",
+                "reading": "じてんしゃ",
+                "start": 0,
+                "length": 3
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "じてんしゃ",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "の",
+            "lemma": "の",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 3,
+            "end": 4,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "の",
+            "ruby_text": "の",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "の"
+          },
+          {
+            "surface": "二人乗り",
+            "lemma": "二人乗り",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 4,
+            "end": 8,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ふたりのり",
+            "ruby_text": "二人[ふたり]乗[の]り",
+            "ruby_spans": [
+              {
+                "base": "二人",
+                "reading": "ふたり",
+                "start": 0,
+                "length": 2
+              },
+              {
+                "base": "乗",
+                "reading": "の",
+                "start": 2,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "ふたりのり",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "は",
+            "lemma": "は",
+            "pos": "助詞/係助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 8,
+            "end": 9,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "は",
+            "ruby_text": "は",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "は"
+          },
+          {
+            "surface": "違反",
+            "lemma": "違反",
+            "pos": "名詞/普通名詞/サ変可能/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 9,
+            "end": 11,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "いはん",
+            "ruby_text": "違反[いはん]",
+            "ruby_spans": [
+              {
+                "base": "違反",
+                "reading": "いはん",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "いはん",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "です",
+            "lemma": "です",
+            "pos": "助動詞/*/*/*/助動詞-デス/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 11,
+            "end": 13,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "です",
+            "ruby_text": "です",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "です"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 13,
+            "end": 14,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
+          }
+        ],
+        "generated_reading": "じてんしゃのふたりのりはいはんです。",
+        "analyzer": "sudachipy_sudachidict_core_c",
+        "requires": [
+          "human_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-18T17:39:02Z",
+        "updated_utc": "2026-10-18T17:40:35Z",
+        "applied_utc": "2026-10-18T17:40:35Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-18T17:40:35Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -774,13 +1193,7 @@
       "それはいはんです。",
       "ここにくるまをとめるのはいはんです。",
       "かれはるーるにいはんしました。",
-      "じてんしゃのふたりのりはいはんです。"
-    ],
-    "en": [
-      "That's a violation.",
-      "Parking here is a violation.",
-      "He broke the rules.",
-      "Riding two people on a bicycle is a violation."
+      "じてんしゃのふたりはいはんです。"
     ],
     "generation": {
       "generator": "vocomipedia_source_generator.py",
@@ -819,190 +1232,6 @@
         "parts_of_speech": "Noun; Suru verb; Intransitive verb"
       }
     },
-    "word_en": "violation; offense; offence; breach; transgression; infringement; contravention",
-    "word_es": "infracción",
-    "word_fr": "violation",
-    "word_de": "Verstoß",
-    "word_it": "violazione",
-    "word_ko": "위반",
-    "word_zh-Hans": "违犯",
-    "word_yue": "違反",
-    "word_ru": "нарушение",
-    "word_pt": "violação",
-    "word_he": "הפרה",
-    "word_tr": "ihlal",
-    "word_vi": "vi phạm",
-    "word_ar": "انتهاك",
-    "word_nl": "overtreding",
-    "word_uk": "порушення",
-    "word_hu": "megsértés",
-    "word_hi": "उल्लंघन",
-    "word_pl": "naruszenie",
-    "word_el": "παραβίαση",
-    "word_nb": "overtredelse",
-    "word_id": "pelanggaran",
-    "word_sv": "överträdelse",
-    "word_ro": "încălcare",
-    "word_cs": "porušení",
-    "word_da": "overtrædelse",
-    "word_fi": "rikkomus",
-    "word_ja": "いはん",
-    "ar": [
-      "هذا مخالفة.",
-      "ركن السيارة هنا مخالفة.",
-      "لقد خالف القواعد.",
-      "ركوب شخصين على دراجة مخالفة."
-    ],
-    "cs": [
-      "To je porušení pravidel.",
-      "Parkování tady je porušení pravidel.",
-      "Porušil pravidla.",
-      "Jízda na kole ve dvou je porušení pravidel."
-    ],
-    "da": [
-      "Det er en overtrædelse.",
-      "Det er en overtrædelse at parkere her.",
-      "Han brød reglerne.",
-      "Det er en overtrædelse at køre to på en cykel."
-    ],
-    "de": [
-      "Das ist ein Verstoß.",
-      "Hier zu parken ist ein Verstoß.",
-      "Er hat gegen die Regeln verstoßen.",
-      "Zu zweit Fahrrad zu fahren ist ein Verstoß."
-    ],
-    "el": [
-      "Αυτό είναι παράβαση.",
-      "Το να παρκάρεις εδώ είναι παράβαση.",
-      "Παραβίασε τους κανόνες.",
-      "Το να κάνεις ποδήλατο με δύο άτομα είναι παράβαση."
-    ],
-    "es": [
-      "Eso es una infracción.",
-      "Estacionar aquí es una infracción.",
-      "Él rompió las reglas.",
-      "Llevar a dos personas en una bicicleta es una infracción."
-    ],
-    "fi": [
-      "Se on rikkomus.",
-      "Tässä pysäköiminen on rikkomus.",
-      "Hän rikkoi sääntöjä.",
-      "Kahden ihmisen ajaminen samalla pyörällä on rikkomus."
-    ],
-    "fr": [
-      "C'est une infraction.",
-      "Se garer ici est une infraction.",
-      "Il a enfreint les règles.",
-      "Faire du vélo à deux est une infraction."
-    ],
-    "he": [
-      "זו עבירה.",
-      "לחנות כאן זו עבירה.",
-      "הוא הפר את הכללים.",
-      "לרכוב על אופניים עם שני אנשים זו עבירה."
-    ],
-    "hi": [
-      "यह उल्लंघन है।",
-      "यहाँ गाड़ी खड़ी करना उल्लंघन है।",
-      "उसने नियम तोड़े।",
-      "साइकिल पर दो लोगों का बैठना उल्लंघन है।"
-    ],
-    "hu": [
-      "Ez szabálysértés.",
-      "Itt parkolni szabálysértés.",
-      "Megszegte a szabályokat.",
-      "Ketten biciklizni szabálysértés."
-    ],
-    "id": [
-      "Itu pelanggaran.",
-      "Parkir di sini adalah pelanggaran.",
-      "Dia melanggar aturan.",
-      "Berboncengan dua di sepeda adalah pelanggaran."
-    ],
-    "it": [
-      "Questa è una violazione.",
-      "Parcheggiare qui è una violazione.",
-      "Ha infranto le regole.",
-      "Andare in due in bicicletta è una violazione."
-    ],
-    "ko": [
-      "그것은 위반입니다.",
-      "여기에 주차하는 것은 위반입니다.",
-      "그는 규칙을 어겼습니다.",
-      "자전거에 두 사람이 타는 것은 위반입니다."
-    ],
-    "nb": [
-      "Det er et regelbrudd.",
-      "Det er et regelbrudd å parkere her.",
-      "Han brøt reglene.",
-      "Det er et regelbrudd å sykle to på en sykkel."
-    ],
-    "nl": [
-      "Dat is een overtreding.",
-      "Hier parkeren is een overtreding.",
-      "Hij heeft de regels overtreden.",
-      "Met z'n tweeën op een fiets is een overtreding."
-    ],
-    "pl": [
-      "To jest wykroczenie.",
-      "Parkowanie tutaj jest wykroczeniem.",
-      "On złamał zasady.",
-      "Jazda na rowerze we dwie osoby to wykroczenie."
-    ],
-    "pt": [
-      "Isso é uma infração.",
-      "Estacionar aqui é uma infração.",
-      "Ele quebrou as regras.",
-      "Andar de bicicleta com duas pessoas é uma infração."
-    ],
-    "ro": [
-      "Asta e o încălcare.",
-      "Parcarea aici este o încălcare.",
-      "El a încălcat regulile.",
-      "Să mergi cu două persoane pe bicicletă este o încălcare."
-    ],
-    "ru": [
-      "Это нарушение.",
-      "Парковаться здесь — нарушение.",
-      "Он нарушил правила.",
-      "Ездить вдвоём на велосипеде — нарушение."
-    ],
-    "sv": [
-      "Det är ett regelbrott.",
-      "Det är ett regelbrott att parkera här.",
-      "Han bröt mot reglerna.",
-      "Det är ett regelbrott att cykla två på en cykel."
-    ],
-    "tr": [
-      "Bu bir ihlaldir.",
-      "Buraya park etmek bir ihlaldir.",
-      "O, kuralları çiğnedi.",
-      "Bisiklete iki kişi binmek bir ihlaldir."
-    ],
-    "uk": [
-      "Це порушення.",
-      "Паркуватися тут — порушення.",
-      "Він порушив правила.",
-      "Їздити удвох на велосипеді — порушення."
-    ],
-    "vi": [
-      "Đó là một vi phạm.",
-      "Đỗ xe ở đây là vi phạm.",
-      "Anh ấy đã vi phạm các quy tắc.",
-      "Đi xe đạp hai người là vi phạm."
-    ],
-    "yue": [
-      "呢個係違規。",
-      "喺呢度泊車係違規。",
-      "佢違反咗規則。",
-      "一架單車載兩個人係違規。"
-    ],
-    "zh-Hans": [
-      "那是违规。",
-      "在这里停车是违规。",
-      "他违反了规则。",
-      "自行车载两个人是违规。"
-    ],
     "pos_analysis": [
       {
         "sentence": "それは違反です。",
@@ -1464,8 +1693,9 @@
                 "length": 3
               }
             ],
-            "ruby_confidence": "medium",
-            "furigana": "じてんしゃ"
+            "ruby_confidence": "reviewed",
+            "furigana": "じてんしゃ",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "の",
@@ -1494,17 +1724,24 @@
             "end": 8,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "ふたりのり",
-            "ruby_text": "二人乗[ふた]り",
+            "ruby_text": "二人[ふたり]乗[の]り",
             "ruby_spans": [
               {
-                "base": "二人乗",
-                "reading": "ふた",
+                "base": "二人",
+                "reading": "ふたり",
                 "start": 0,
-                "length": 3
+                "length": 2
+              },
+              {
+                "base": "乗",
+                "reading": "の",
+                "start": 2,
+                "length": 1
               }
             ],
-            "ruby_confidence": "high",
-            "furigana": "ふたりのり"
+            "ruby_confidence": "reviewed",
+            "furigana": "ふたりのり",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "は",
@@ -1542,8 +1779,9 @@
                 "length": 2
               }
             ],
-            "ruby_confidence": "medium",
-            "furigana": "いはん"
+            "ruby_confidence": "reviewed",
+            "furigana": "いはん",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "です",
@@ -1580,6 +1818,196 @@
         ],
         "difficulty_aggregated": null
       }
+    ],
+    "word_en": "violation; offense; offence; breach; transgression; infringement; contravention",
+    "word_es": "infracción",
+    "word_fr": "violation",
+    "word_de": "Verstoß",
+    "word_it": "violazione",
+    "word_ko": "위반",
+    "word_zh-Hans": "违犯",
+    "word_yue": "違反",
+    "word_ru": "нарушение",
+    "word_pt": "violação",
+    "word_he": "הפרה",
+    "word_tr": "ihlal",
+    "word_vi": "vi phạm",
+    "word_ar": "انتهاك",
+    "word_nl": "overtreding",
+    "word_uk": "порушення",
+    "word_hu": "megsértés",
+    "word_hi": "उल्लंघन",
+    "word_pl": "naruszenie",
+    "word_el": "παραβίαση",
+    "word_nb": "overtredelse",
+    "word_id": "pelanggaran",
+    "word_sv": "överträdelse",
+    "word_ro": "încălcare",
+    "word_cs": "porušení",
+    "word_da": "overtrædelse",
+    "word_fi": "rikkomus",
+    "word_ja": "いはん",
+    "ar": [
+      "هذه مخالفة.",
+      "ركن السيارة هنا مخالفة.",
+      "لقد خالف القواعد.",
+      "ركوب شخصين على دراجة مخالفة."
+    ],
+    "cs": [
+      "To je porušení pravidel.",
+      "Parkování tady je porušení pravidel.",
+      "Porušil pravidla.",
+      "Jízda na kole ve dvou je porušení pravidel."
+    ],
+    "da": [
+      "Det er en overtrædelse.",
+      "Det er en overtrædelse at parkere her.",
+      "Han brød reglerne.",
+      "Det er en overtrædelse at køre to på en cykel."
+    ],
+    "de": [
+      "Das ist ein Verstoß.",
+      "Hier zu parken ist ein Verstoß.",
+      "Er hat gegen die Regeln verstoßen.",
+      "Zu zweit Fahrrad zu fahren ist ein Verstoß."
+    ],
+    "el": [
+      "Αυτό είναι παράβαση.",
+      "Το να παρκάρεις εδώ είναι παράβαση.",
+      "Παραβίασε τους κανόνες.",
+      "Το να κάνεις ποδήλατο με δύο άτομα είναι παράβαση."
+    ],
+    "en": [
+      "That's a violation.",
+      "Parking here is a violation.",
+      "He broke the rules.",
+      "Riding two people on a bicycle is a violation."
+    ],
+    "es": [
+      "Eso es una infracción.",
+      "Estacionar aquí es una infracción.",
+      "Él rompió las reglas.",
+      "Llevar a dos personas en una bicicleta es una infracción."
+    ],
+    "fi": [
+      "Se on rikkomus.",
+      "Tässä pysäköiminen on rikkomus.",
+      "Hän rikkoi sääntöjä.",
+      "Kahden ihmisen ajaminen samalla pyörällä on rikkomus."
+    ],
+    "fr": [
+      "C'est une infraction.",
+      "Se garer ici est une infraction.",
+      "Il a enfreint les règles.",
+      "Faire du vélo à deux est une infraction."
+    ],
+    "he": [
+      "זו עבירה.",
+      "לחנות כאן זו עבירה.",
+      "הוא הפר את הכללים.",
+      "לרכוב על אופניים עם שני אנשים זו עבירה."
+    ],
+    "hi": [
+      "यह उल्लंघन है।",
+      "यहाँ गाड़ी खड़ी करना उल्लंघन है।",
+      "उसने नियम तोड़े।",
+      "साइकिल पर दो लोगों का बैठना उल्लंघन है।"
+    ],
+    "hu": [
+      "Ez szabálysértés.",
+      "Itt parkolni szabálysértés.",
+      "Megszegte a szabályokat.",
+      "Ketten biciklizni szabálysértés."
+    ],
+    "id": [
+      "Itu pelanggaran.",
+      "Parkir di sini adalah pelanggaran.",
+      "Dia melanggar aturan.",
+      "Berboncengan dua di sepeda adalah pelanggaran."
+    ],
+    "it": [
+      "Questa è una violazione.",
+      "Parcheggiare qui è una violazione.",
+      "Ha infranto le regole.",
+      "Andare in due in bicicletta è una violazione."
+    ],
+    "ko": [
+      "그것은 위반입니다.",
+      "여기에 주차하는 것은 위반입니다.",
+      "그는 규칙을 어겼습니다.",
+      "자전거에 두 사람이 타는 것은 위반입니다."
+    ],
+    "nb": [
+      "Det er et regelbrudd.",
+      "Det er et regelbrudd å parkere her.",
+      "Han brøt reglene.",
+      "Det er et regelbrudd å sykle to på en sykkel."
+    ],
+    "nl": [
+      "Dat is een overtreding.",
+      "Hier parkeren is een overtreding.",
+      "Hij heeft de regels overtreden.",
+      "Met z'n tweeën op een fiets is een overtreding."
+    ],
+    "pl": [
+      "To jest wykroczenie.",
+      "Parkowanie tutaj jest wykroczeniem.",
+      "On złamał zasady.",
+      "Jazda na rowerze we dwie osoby to wykroczenie."
+    ],
+    "pt": [
+      "Isso é uma infração.",
+      "Estacionar aqui é uma infração.",
+      "Ele quebrou as regras.",
+      "Andar de bicicleta com duas pessoas é uma infração."
+    ],
+    "ro": [
+      "Asta e o încălcare.",
+      "Parcarea aici este o încălcare.",
+      "El a încălcat regulile.",
+      "Să mergi cu două persoane pe bicicletă este o încălcare."
+    ],
+    "ru": [
+      "Это нарушение.",
+      "Парковаться здесь — нарушение.",
+      "Он нарушил правила.",
+      "Ездить вдвоём на велосипеде — нарушение."
+    ],
+    "sv": [
+      "Det är ett regelbrott.",
+      "Det är ett regelbrott att parkera här.",
+      "Han bröt mot reglerna.",
+      "Det är ett regelbrott att cykla två på en cykel."
+    ],
+    "tr": [
+      "Bu bir ihlaldir.",
+      "Buraya park etmek bir ihlaldir.",
+      "O, kuralları çiğnedi.",
+      "Bisiklete iki kişi binmek bir ihlaldir."
+    ],
+    "uk": [
+      "Це порушення.",
+      "Паркуватися тут — порушення.",
+      "Він порушив правила.",
+      "Їздити удвох на велосипеді — порушення."
+    ],
+    "vi": [
+      "Đó là một vi phạm.",
+      "Đỗ xe ở đây là vi phạm.",
+      "Anh ấy đã vi phạm các quy tắc.",
+      "Đi xe đạp hai người là vi phạm."
+    ],
+    "yue": [
+      "呢個係違規。",
+      "喺呢度泊車係違規。",
+      "佢違反咗規則。",
+      "一架單車載兩個人係違規。"
+    ],
+    "zh-Hans": [
+      "那是违规。",
+      "在这里停车是违规。",
+      "他违反了规则。",
+      "自行车载两个人是违规。"
     ]
   }
 }

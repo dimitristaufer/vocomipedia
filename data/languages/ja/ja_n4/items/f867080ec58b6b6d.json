@@ -18,15 +18,15 @@
     "fr": "préparer / faire [du café]",
     "de": "[Kaffee] zubereiten / machen",
     "it": "preparare / fare [il caffè]",
-    "ko": "[커피를] 끓이다 / 만들다",
-    "zh-Hans": "冲 / 煮［咖啡］",
-    "yue": "煲／沖［咖啡］",
+    "ko": "[커피를] 내리다 / 타다",
+    "zh-Hans": "冲泡［咖啡］",
+    "yue": "沖／沖泡［咖啡］",
     "ru": "заваривать / готовить [кофе]",
     "pt": "preparar / fazer [café]",
-    "he": "להכין / לבשל [קפה]",
+    "he": "להכין / לחלוט [קפה]",
     "tr": "[kahve] yapmak / demlemek",
-    "vi": "pha / nấu [cà phê]",
-    "ar": "تحضير / إعداد [القهوة]",
+    "vi": "pha [cà phê]",
+    "ar": "أن يُحضّر [القهوة]",
     "nl": "[koffie] zetten / maken",
     "uk": "готувати / заварювати [каву]",
     "hu": "kávét főzni / készíteni",
@@ -162,7 +162,7 @@
         "ko": "어젯밤에 커피를 만들었어요.",
         "zh-Hans": "昨晚我煮了咖啡。",
         "yue": "琴晚，我煮咗杯咖啡。",
-        "ru": "Вчера вечером я заваривал кофе.",
+        "ru": "Вчера вечером я приготовил кофе.",
         "pt": "Ontem à noite, fiz café.",
         "he": "אתמול בלילה הכנתי קפה.",
         "tr": "Dün gece kahve yaptım.",
@@ -280,13 +280,13 @@
         "es": "Después, yo haré el café.",
         "fr": "Ensuite, je vais faire le café.",
         "de": "Als Nächstes mache ich den Kaffee.",
-        "it": "Ora preparo io il caffè.",
+        "it": "Adesso preparo io il caffè.",
         "ko": "다음엔 내가 커피를 만들게.",
         "zh-Hans": "接下来，我来煮咖啡。",
-        "yue": "跟住煲咖啡",
+        "yue": "跟住我嚟沖咖啡。",
         "ru": "Дальше я приготовлю кофе.",
         "pt": "Depois, eu faço o café.",
-        "he": "הבא, אני אכין את הקפה.",
+        "he": "עכשיו אני אכין את הקפה.",
         "tr": "Sonra kahveyi ben yapacağım.",
         "vi": "Tiếp theo, tôi sẽ pha cà phê.",
         "ar": "بعدها، سأعد القهوة.",
@@ -294,14 +294,14 @@
         "uk": "Далі я зроблю каву.",
         "hu": "Ezután főzöm a kávét.",
         "hi": "इसके बाद, मैं कॉफी बनाऊंगा।",
-        "pl": "Teraz zrobię kawę.",
+        "pl": "Następnie ja zrobię kawę.",
         "el": "Στη συνέχεια, θα φτιάξω τον καφέ.",
-        "nb": "Neste gang lager jeg kaffen.",
+        "nb": "Deretter lager jeg kaffen.",
         "id": "Selanjutnya, saya akan membuat kopi.",
-        "sv": "Nästa steg är att jag gör kaffet.",
+        "sv": "Då gör jag kaffet.",
         "ro": "Apoi, fac eu cafeaua.",
         "cs": "Teď udělám kávu.",
-        "da": "Næste gang laver jeg kaffen.",
+        "da": "Så laver jeg kaffen.",
         "fi": "Seuraavaksi teen kahvin."
       },
       "tokens": [
@@ -433,11 +433,11 @@
         "it": "Vuoi provare anche a fare il caffè?",
         "ko": "커피도 만들어볼래?",
         "zh-Hans": "想试着做咖啡吗？",
-        "yue": "都想煮咖啡？",
+        "yue": "你都想試吓沖咖啡？",
         "ru": "Хочешь попробовать приготовить кофе?",
         "pt": "Quer tentar fazer café também?",
         "he": "רוצה לנסות גם להכין קפה?",
-        "tr": "Kahve yapmayı da denemek ister misiniz?",
+        "tr": "Sen de kahve yapmayı denemek ister misin?",
         "vi": "Bạn cũng muốn thử pha cà phê?",
         "ar": "هل تريد تجربة صنع القهوة أيضا؟",
         "nl": "Wil je ook koffie proberen te maken?",
@@ -445,14 +445,14 @@
         "hu": "Szeretnél kávét is készíteni?",
         "hi": "क्या आप भी कॉफी बनाने की कोशिश करना चाहते हैं?",
         "pl": "Chcesz też spróbować zrobić kawę?",
-        "el": "Θέλετε να δοκιμάσετε να φτιάξετε και καφέ;",
+        "el": "Θέλεις να δοκιμάσεις να φτιάξεις και καφέ;",
         "nb": "Vil du prøve å lage kaffe også?",
         "id": "Ingin mencoba membuat kopi juga?",
         "sv": "Vill du prova att göra kaffe också?",
         "ro": "Vrei să încerci să faci și cafea?",
         "cs": "Chceš zkusit udělat i kávu?",
         "da": "Vil du også prøve at lave kaffe?",
-        "fi": "Haluатко kokeilla myös kahvin tekemistä?"
+        "fi": "Haluatko sinäkin kokeilla kahvin keittämistä?"
       },
       "tokens": [
         {
@@ -556,8 +556,22 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-14T10:45:26Z",
+    "approval_source": "mediawiki_visible_revision",
+    "wiki": {
+      "title": "Item:Ja n4/f867080ec58b6b6d",
+      "revision_id": 84590,
+      "parent_revision_id": 79453,
+      "revision_timestamp_utc": "2026-10-14T10:45:26Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Restore item image reference",
+      "pulled_utc": "2026-10-18T17:47:33Z",
+      "applied_utc": "2026-10-18T17:48:05Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    }
   },
   "provenance": {
     "origin": "legacy_import",
@@ -574,33 +588,6 @@
   "app_payload": {
     "word": "いれる",
     "word_reading": "いれる",
-    "word_en": "to make / brew [coffee]",
-    "word_es": "preparar / hacer [café]",
-    "word_fr": "préparer / faire [du café]",
-    "word_de": "[Kaffee] zubereiten / machen",
-    "word_it": "preparare / fare [il caffè]",
-    "word_ko": "[커피를] 끓이다 / 만들다",
-    "word_zh-Hans": "冲 / 煮［咖啡］",
-    "word_yue": "煲／沖［咖啡］",
-    "word_ru": "заваривать / готовить [кофе]",
-    "word_pt": "preparar / fazer [café]",
-    "word_he": "להכין / לבשל [קפה]",
-    "word_tr": "[kahve] yapmak / demlemek",
-    "word_vi": "pha / nấu [cà phê]",
-    "word_ar": "تحضير / إعداد [القهوة]",
-    "word_nl": "[koffie] zetten / maken",
-    "word_uk": "готувати / заварювати [каву]",
-    "word_hu": "kávét főzni / készíteni",
-    "word_hi": "[कॉफी] बनाना / तैयार करना",
-    "word_pl": "parzyć / robić [kawę]",
-    "word_el": "να φτιάξω / ετοιμάσω [καφέ]",
-    "word_nb": "lage / brygge [kaffe]",
-    "word_id": "membuat / menyeduh [kopi]",
-    "word_sv": "göra / brygga [kaffe]",
-    "word_ro": "a face / prepara [cafea]",
-    "word_cs": "vařit / dělat [kávu]",
-    "word_da": "lave / brygge [kaffe]",
-    "word_fi": "keittää / tehdä [kahvia]",
     "comic_difficulty": 1,
     "jp": [
       "おかあさんがコーヒーをいれます。",
@@ -609,16 +596,10 @@
       "きみもコーヒーをいれてみる？"
     ],
     "fu": [
-      "おかあさんがコーヒーをいれます。",
-      "ゆうべぼくがコーヒーをいれました。",
-      "つぎはわたしがコーヒーをいれるよ。",
-      "きみもコーヒーをいれてみる？"
-    ],
-    "en": [
-      "My mom makes coffee.",
-      "Last night, I made coffee.",
-      "Next, I'll make the coffee.",
-      "Want to try making coffee too?"
+      "おかあさんがこーひーをいれます。",
+      "ゆうべぼくがこーひーをいれました。",
+      "つぎはわたしがこーひーをいれるよ。",
+      "きみもこーひーをいれてみる？"
     ],
     "pos_analysis": [
       {
@@ -1000,143 +981,40 @@
         "difficulty_aggregated": 1
       }
     ],
-    "es": [
-      "Mi madre hace café.",
-      "Anoche hice café.",
-      "Después, yo haré el café.",
-      "¿Quieres probar a hacer café también?"
-    ],
-    "fr": [
-      "Ma mère fait du café.",
-      "Hier soir, j’ai fait du café.",
-      "Ensuite, je vais faire le café.",
-      "Tu veux essayer de faire du café aussi ?"
-    ],
-    "de": [
-      "Meine Mutter macht Kaffee.",
-      "Letzte Nacht habe ich Kaffee gemacht.",
-      "Als Nächstes mache ich den Kaffee.",
-      "Möchtest du auch mal Kaffee machen?"
-    ],
-    "it": [
-      "Mia madre fa il caffè.",
-      "Ieri sera ho fatto il caffè.",
-      "Ora preparo io il caffè.",
-      "Vuoi provare anche a fare il caffè?"
-    ],
-    "ko": [
-      "우리 엄마가 커피를 만들어.",
-      "어젯밤에 커피를 만들었어요.",
-      "다음엔 내가 커피를 만들게.",
-      "커피도 만들어볼래?"
-    ],
-    "zh-Hans": [
-      "我妈妈会煮咖啡。",
-      "昨晚我煮了咖啡。",
-      "接下来，我来煮咖啡。",
-      "想试着做咖啡吗？"
-    ],
-    "yue": [
-      "我媽媽煮咖啡。",
-      "琴晚，我煮咗杯咖啡。",
-      "跟住煲咖啡",
-      "都想煮咖啡？"
-    ],
-    "ru": [
-      "Моя мама готовит кофе.",
-      "Вчера вечером я заваривал кофе.",
-      "Дальше я приготовлю кофе.",
-      "Хочешь попробовать приготовить кофе?"
-    ],
-    "pt": [
-      "Minha mãe faz café.",
-      "Ontem à noite, fiz café.",
-      "Depois, eu faço o café.",
-      "Quer tentar fazer café também?"
-    ],
-    "he": [
-      "אמא שלי מכינה קפה.",
-      "אתמול בלילה הכנתי קפה.",
-      "הבא, אני אכין את הקפה.",
-      "רוצה לנסות גם להכין קפה?"
-    ],
-    "tr": [
-      "Annem kahve yapıyor.",
-      "Dün gece kahve yaptım.",
-      "Sonra kahveyi ben yapacağım.",
-      "Kahve yapmayı da denemek ister misiniz?"
-    ],
-    "vi": [
-      "Mẹ tôi pha cà phê.",
-      "Đêm qua, tôi pha cà phê.",
-      "Tiếp theo, tôi sẽ pha cà phê.",
-      "Bạn cũng muốn thử pha cà phê?"
-    ],
+    "word_POS": "Verb",
+    "entry_id": "いれる",
+    "word_en": "to make / brew [coffee]",
+    "word_es": "preparar / hacer [café]",
+    "word_fr": "préparer / faire [du café]",
+    "word_de": "[Kaffee] zubereiten / machen",
+    "word_it": "preparare / fare [il caffè]",
+    "word_ko": "[커피를] 내리다 / 타다",
+    "word_zh-Hans": "冲泡［咖啡］",
+    "word_yue": "沖／沖泡［咖啡］",
+    "word_ru": "заваривать / готовить [кофе]",
+    "word_pt": "preparar / fazer [café]",
+    "word_he": "להכין / לחלוט [קפה]",
+    "word_tr": "[kahve] yapmak / demlemek",
+    "word_vi": "pha [cà phê]",
+    "word_ar": "أن يُحضّر [القهوة]",
+    "word_nl": "[koffie] zetten / maken",
+    "word_uk": "готувати / заварювати [каву]",
+    "word_hu": "kávét főzni / készíteni",
+    "word_hi": "[कॉफी] बनाना / तैयार करना",
+    "word_pl": "parzyć / robić [kawę]",
+    "word_el": "να φτιάξω / ετοιμάσω [καφέ]",
+    "word_nb": "lage / brygge [kaffe]",
+    "word_id": "membuat / menyeduh [kopi]",
+    "word_sv": "göra / brygga [kaffe]",
+    "word_ro": "a face / prepara [cafea]",
+    "word_cs": "vařit / dělat [kávu]",
+    "word_da": "lave / brygge [kaffe]",
+    "word_fi": "keittää / tehdä [kahvia]",
     "ar": [
       "أمي تصنع القهوة.",
       "البارحة، حضرت قهوة.",
       "بعدها، سأعد القهوة.",
       "هل تريد تجربة صنع القهوة أيضا؟"
-    ],
-    "nl": [
-      "Mijn moeder zet koffie.",
-      "Gisteravond heb ik koffie gezet.",
-      "Vervolgens maak ik de koffie.",
-      "Wil je ook koffie proberen te maken?"
-    ],
-    "uk": [
-      "Моя мама готує каву.",
-      "Вчора ввечері я зробив каву.",
-      "Далі я зроблю каву.",
-      "Хочеш спробувати зробити каву?"
-    ],
-    "hu": [
-      "Anyám kávét főz.",
-      "Tegnap este kávét főztem.",
-      "Ezután főzöm a kávét.",
-      "Szeretnél kávét is készíteni?"
-    ],
-    "hi": [
-      "मेरी माँ कॉफी बनाती है।",
-      "कल रात, मैंने कॉफी बनाई।",
-      "इसके बाद, मैं कॉफी बनाऊंगा।",
-      "क्या आप भी कॉफी बनाने की कोशिश करना चाहते हैं?"
-    ],
-    "pl": [
-      "Moja mama robi kawę.",
-      "Wczoraj wieczorem zrobiłem kawę.",
-      "Teraz zrobię kawę.",
-      "Chcesz też spróbować zrobić kawę?"
-    ],
-    "el": [
-      "Η μαμά μου φτιάχνει καφέ.",
-      "Χθες το βράδυ, έφτιαξα καφέ.",
-      "Στη συνέχεια, θα φτιάξω τον καφέ.",
-      "Θέλετε να δοκιμάσετε να φτιάξετε και καφέ;"
-    ],
-    "nb": [
-      "Moren min lager kaffe.",
-      "I går kveld lagde jeg kaffe.",
-      "Neste gang lager jeg kaffen.",
-      "Vil du prøve å lage kaffe også?"
-    ],
-    "id": [
-      "Ibuku membuat kopi.",
-      "Tadi malam, saya membuat kopi.",
-      "Selanjutnya, saya akan membuat kopi.",
-      "Ingin mencoba membuat kopi juga?"
-    ],
-    "sv": [
-      "Min mamma gör kaffe.",
-      "I går kväll gjorde jag kaffe.",
-      "Nästa steg är att jag gör kaffet.",
-      "Vill du prova att göra kaffe också?"
-    ],
-    "ro": [
-      "Mama mea face cafea.",
-      "Aseară am făcut cafea.",
-      "Apoi, fac eu cafeaua.",
-      "Vrei să încerci să faci și cafea?"
     ],
     "cs": [
       "Moje máma dělá kávu.",
@@ -1147,15 +1025,152 @@
     "da": [
       "Min mor laver kaffe.",
       "I går aftes lavede jeg kaffe.",
-      "Næste gang laver jeg kaffen.",
+      "Så laver jeg kaffen.",
       "Vil du også prøve at lave kaffe?"
+    ],
+    "de": [
+      "Meine Mutter macht Kaffee.",
+      "Letzte Nacht habe ich Kaffee gemacht.",
+      "Als Nächstes mache ich den Kaffee.",
+      "Möchtest du auch mal Kaffee machen?"
+    ],
+    "el": [
+      "Η μαμά μου φτιάχνει καφέ.",
+      "Χθες το βράδυ, έφτιαξα καφέ.",
+      "Στη συνέχεια, θα φτιάξω τον καφέ.",
+      "Θέλεις να δοκιμάσεις να φτιάξεις και καφέ;"
+    ],
+    "en": [
+      "My mom makes coffee.",
+      "Last night, I made coffee.",
+      "Next, I'll make the coffee.",
+      "Want to try making coffee too?"
+    ],
+    "es": [
+      "Mi madre hace café.",
+      "Anoche hice café.",
+      "Después, yo haré el café.",
+      "¿Quieres probar a hacer café también?"
     ],
     "fi": [
       "Äitini tekee kahvia.",
       "Eilen illalla keitin kahvia.",
       "Seuraavaksi teen kahvin.",
-      "Haluатко kokeilla myös kahvin tekemistä?"
+      "Haluatko sinäkin kokeilla kahvin keittämistä?"
     ],
-    "word_POS": "Verb"
+    "fr": [
+      "Ma mère fait du café.",
+      "Hier soir, j’ai fait du café.",
+      "Ensuite, je vais faire le café.",
+      "Tu veux essayer de faire du café aussi ?"
+    ],
+    "he": [
+      "אמא שלי מכינה קפה.",
+      "אתמול בלילה הכנתי קפה.",
+      "עכשיו אני אכין את הקפה.",
+      "רוצה לנסות גם להכין קפה?"
+    ],
+    "hi": [
+      "मेरी माँ कॉफी बनाती है।",
+      "कल रात, मैंने कॉफी बनाई।",
+      "इसके बाद, मैं कॉफी बनाऊंगा।",
+      "क्या आप भी कॉफी बनाने की कोशिश करना चाहते हैं?"
+    ],
+    "hu": [
+      "Anyám kávét főz.",
+      "Tegnap este kávét főztem.",
+      "Ezután főzöm a kávét.",
+      "Szeretnél kávét is készíteni?"
+    ],
+    "id": [
+      "Ibuku membuat kopi.",
+      "Tadi malam, saya membuat kopi.",
+      "Selanjutnya, saya akan membuat kopi.",
+      "Ingin mencoba membuat kopi juga?"
+    ],
+    "it": [
+      "Mia madre fa il caffè.",
+      "Ieri sera ho fatto il caffè.",
+      "Adesso preparo io il caffè.",
+      "Vuoi provare anche a fare il caffè?"
+    ],
+    "ko": [
+      "우리 엄마가 커피를 만들어.",
+      "어젯밤에 커피를 만들었어요.",
+      "다음엔 내가 커피를 만들게.",
+      "커피도 만들어볼래?"
+    ],
+    "nb": [
+      "Moren min lager kaffe.",
+      "I går kveld lagde jeg kaffe.",
+      "Deretter lager jeg kaffen.",
+      "Vil du prøve å lage kaffe også?"
+    ],
+    "nl": [
+      "Mijn moeder zet koffie.",
+      "Gisteravond heb ik koffie gezet.",
+      "Vervolgens maak ik de koffie.",
+      "Wil je ook koffie proberen te maken?"
+    ],
+    "pl": [
+      "Moja mama robi kawę.",
+      "Wczoraj wieczorem zrobiłem kawę.",
+      "Następnie ja zrobię kawę.",
+      "Chcesz też spróbować zrobić kawę?"
+    ],
+    "pt": [
+      "Minha mãe faz café.",
+      "Ontem à noite, fiz café.",
+      "Depois, eu faço o café.",
+      "Quer tentar fazer café também?"
+    ],
+    "ro": [
+      "Mama mea face cafea.",
+      "Aseară am făcut cafea.",
+      "Apoi, fac eu cafeaua.",
+      "Vrei să încerci să faci și cafea?"
+    ],
+    "ru": [
+      "Моя мама готовит кофе.",
+      "Вчера вечером я приготовил кофе.",
+      "Дальше я приготовлю кофе.",
+      "Хочешь попробовать приготовить кофе?"
+    ],
+    "sv": [
+      "Min mamma gör kaffe.",
+      "I går kväll gjorde jag kaffe.",
+      "Då gör jag kaffet.",
+      "Vill du prova att göra kaffe också?"
+    ],
+    "tr": [
+      "Annem kahve yapıyor.",
+      "Dün gece kahve yaptım.",
+      "Sonra kahveyi ben yapacağım.",
+      "Sen de kahve yapmayı denemek ister misin?"
+    ],
+    "uk": [
+      "Моя мама готує каву.",
+      "Вчора ввечері я зробив каву.",
+      "Далі я зроблю каву.",
+      "Хочеш спробувати зробити каву?"
+    ],
+    "vi": [
+      "Mẹ tôi pha cà phê.",
+      "Đêm qua, tôi pha cà phê.",
+      "Tiếp theo, tôi sẽ pha cà phê.",
+      "Bạn cũng muốn thử pha cà phê?"
+    ],
+    "yue": [
+      "我媽媽煮咖啡。",
+      "琴晚，我煮咗杯咖啡。",
+      "跟住我嚟沖咖啡。",
+      "你都想試吓沖咖啡？"
+    ],
+    "zh-Hans": [
+      "我妈妈会煮咖啡。",
+      "昨晚我煮了咖啡。",
+      "接下来，我来煮咖啡。",
+      "想试着做咖啡吗？"
+    ]
   }
 }

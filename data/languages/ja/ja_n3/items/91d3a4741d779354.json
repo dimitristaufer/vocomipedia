@@ -11,7 +11,7 @@
   "order": 457,
   "part_of_speech": [],
   "glosses": {
-    "en": "thank you (for the meal); that was a delicious meal; thank you (for displaying lovey-dovey behaviour)",
+    "en": "thanks for the meal; said after eating; a playful “Aww, how sweet!” in response to a couple acting lovey-dovey",
     "es": "gracias por la comida",
     "fr": "merci pour le repas",
     "de": "danke fürs Essen",
@@ -56,7 +56,7 @@
         "fr": "Merci pour le repas, Asami.",
         "he": "תודה על הארוחה, אסאמי.",
         "hi": "असामी, खाने के लिए धन्यवाद।",
-        "hu": "Köszönöm az ebédet, Asami.",
+        "hu": "Köszönöm az ételt, Asami.",
         "id": "Terima kasih untuk makanannya, Asami.",
         "it": "Grazie per il pasto, Asami.",
         "ko": "아사미, 잘 먹었습니다.",
@@ -176,7 +176,7 @@
       "difficulty": null
     },
     {
-      "target": "きょうは、ごちそうさまでした。",
+      "target": "今日は、ごちそうさまでした。",
       "reading": "きょうは、ごちそうさまでした。",
       "translations": {
         "en": "Thanks for the meal today.",
@@ -190,7 +190,7 @@
         "fr": "Merci pour le repas d'aujourd'hui.",
         "he": "תודה על הארוחה היום.",
         "hi": "आज के खाने के लिए धन्यवाद।",
-        "hu": "Köszönöm a mai ebédet.",
+        "hu": "Köszönöm a mai ételt.",
         "id": "Terima kasih untuk makanannya hari ini.",
         "it": "Grazie per il pasto di oggi.",
         "ko": "오늘 잘 먹었습니다.",
@@ -209,20 +209,28 @@
       },
       "tokens": [
         {
-          "surface": "きょう",
-          "lemma": "きょう",
+          "surface": "今日",
+          "lemma": "今日",
           "pos": "名詞/普通名詞/副詞可能/*/*/*",
           "upos": "NOUN",
           "xpos": "名詞",
           "feats": {},
           "start": 0,
-          "end": 3,
+          "end": 2,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "きょう",
-          "ruby_text": "きょう",
-          "ruby_spans": [],
-          "ruby_confidence": "high",
-          "furigana": "きょう"
+          "ruby_text": "今日[きょう]",
+          "ruby_spans": [
+            {
+              "base": "今日",
+              "reading": "きょう",
+              "start": 0,
+              "length": 2
+            }
+          ],
+          "ruby_confidence": "reviewed",
+          "furigana": "きょう",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "は",
@@ -231,8 +239,8 @@
           "upos": "PART",
           "xpos": "助詞",
           "feats": {},
-          "start": 3,
-          "end": 4,
+          "start": 2,
+          "end": 3,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "は",
           "ruby_text": "は",
@@ -247,8 +255,8 @@
           "upos": "PUNCT",
           "xpos": "補助記号",
           "feats": {},
-          "start": 4,
-          "end": 5,
+          "start": 3,
+          "end": 4,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "、",
           "ruby_text": "、",
@@ -263,8 +271,8 @@
           "upos": "NOUN",
           "xpos": "名詞",
           "feats": {},
-          "start": 5,
-          "end": 9,
+          "start": 4,
+          "end": 8,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "ごちそう",
           "ruby_text": "ごちそう",
@@ -280,8 +288,8 @@
           "upos": "SUFFIX",
           "xpos": "接尾辞",
           "feats": {},
-          "start": 9,
-          "end": 11,
+          "start": 8,
+          "end": 10,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "さま",
           "ruby_text": "さま",
@@ -297,8 +305,8 @@
           "upos": "AUX",
           "xpos": "助動詞",
           "feats": {},
-          "start": 11,
-          "end": 13,
+          "start": 10,
+          "end": 12,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "でし",
           "ruby_text": "でし",
@@ -313,8 +321,8 @@
           "upos": "AUX",
           "xpos": "助動詞",
           "feats": {},
-          "start": 13,
-          "end": 14,
+          "start": 12,
+          "end": 13,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "た",
           "ruby_text": "た",
@@ -329,8 +337,8 @@
           "upos": "PUNCT",
           "xpos": "補助記号",
           "feats": {},
-          "start": 14,
-          "end": 15,
+          "start": 13,
+          "end": 14,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "。",
           "ruby_text": "。",
@@ -460,21 +468,21 @@
       "difficulty": null
     },
     {
-      "target": "おなかいっぱい。ごちそうさま。",
-      "reading": "おなかいっぱい。ごちそうさま。",
+      "target": "お腹いっぱい。ごちそうさま。",
+      "reading": "おおなかいっぱい。ごちそうさま。",
       "translations": {
         "en": "I'm full. Thanks for the meal.",
-        "ar": "شبعْت. شكرًا على الوجبة.",
+        "ar": "شبعت. شكرًا على الوجبة.",
         "cs": "Jsem sytý. Děkuju za jídlo.",
         "da": "Jeg er mæt. Tak for maden.",
         "de": "Ich bin satt. Danke fürs Essen.",
-        "el": "Έφαγα καλά. Ευχαριστώ για το φαγητό.",
+        "el": "Έχω χορτάσει. Ευχαριστώ για το φαγητό.",
         "es": "Estoy lleno. Gracias por la comida.",
         "fi": "Olen kylläinen. Kiitos ruoasta.",
         "fr": "J'ai bien mangé. Merci pour le repas.",
         "he": "אני שבע. תודה על הארוחה.",
-        "hi": "मैं पेट भर गया। खाने के लिए धन्यवाद।",
-        "hu": "Jól laktam. Köszönöm az ebédet.",
+        "hi": "मेरा पेट भर गया है। खाने के लिए धन्यवाद।",
+        "hu": "Jól laktam. Köszönöm az ételt.",
         "id": "Aku kenyang. Terima kasih untuk makanannya.",
         "it": "Sono pieno. Grazie per il pasto.",
         "ko": "배불러. 잘 먹었습니다.",
@@ -482,7 +490,7 @@
         "nl": "Ik zit vol. Dank je voor de maaltijd.",
         "pl": "Jestem najedzony. Dzięki za jedzenie.",
         "pt": "Estou satisfeito. Obrigado pela comida.",
-        "ro": "M-am săturat. Mulțumesc pentru masă.",
+        "ro": "Sunt sătul. Mulțumesc pentru masă.",
         "ru": "Я наелся. Спасибо за угощение.",
         "sv": "Jag är mätt. Tack för maten.",
         "tr": "Doydum. Yemek için teşekkürler.",
@@ -493,20 +501,28 @@
       },
       "tokens": [
         {
-          "surface": "おなか",
-          "lemma": "おなか",
+          "surface": "お腹",
+          "lemma": "お腹",
           "pos": "名詞/普通名詞/一般/*/*/*",
           "upos": "NOUN",
           "xpos": "名詞",
           "feats": {},
           "start": 0,
-          "end": 3,
+          "end": 2,
           "analyzer": "sudachipy_sudachidict_core_c",
-          "reading_kana": "おなか",
-          "ruby_text": "おなか",
-          "ruby_spans": [],
-          "ruby_confidence": "high",
-          "furigana": "おなか"
+          "reading_kana": "おおなか",
+          "ruby_text": "お腹[おなか]",
+          "ruby_spans": [
+            {
+              "base": "腹",
+              "reading": "おなか",
+              "start": 1,
+              "length": 1
+            }
+          ],
+          "ruby_confidence": "reviewed",
+          "furigana": "おおなか",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "いっぱい",
@@ -515,8 +531,8 @@
           "upos": "NOUN",
           "xpos": "名詞",
           "feats": {},
-          "start": 3,
-          "end": 7,
+          "start": 2,
+          "end": 6,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "いっぱい",
           "ruby_text": "いっぱい",
@@ -531,8 +547,8 @@
           "upos": "PUNCT",
           "xpos": "補助記号",
           "feats": {},
-          "start": 7,
-          "end": 8,
+          "start": 6,
+          "end": 7,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "。",
           "ruby_text": "。",
@@ -547,8 +563,8 @@
           "upos": "NOUN",
           "xpos": "名詞",
           "feats": {},
-          "start": 8,
-          "end": 12,
+          "start": 7,
+          "end": 11,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "ごちそう",
           "ruby_text": "ごちそう",
@@ -564,8 +580,8 @@
           "upos": "SUFFIX",
           "xpos": "接尾辞",
           "feats": {},
-          "start": 12,
-          "end": 14,
+          "start": 11,
+          "end": 13,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "さま",
           "ruby_text": "さま",
@@ -581,8 +597,8 @@
           "upos": "PUNCT",
           "xpos": "補助記号",
           "feats": {},
-          "start": 14,
-          "end": 15,
+          "start": 13,
+          "end": 14,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "。",
           "ruby_text": "。",
@@ -605,8 +621,727 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-13T00:44:54Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:Ja n3/91d3a4741d779354",
+      "revision_id": 81296,
+      "parent_revision_id": 69411,
+      "revision_timestamp_utc": "2026-10-13T00:44:54Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Clarify the playful gloss, standardize common Japanese spellings, and polish meal translations.",
+      "pulled_utc": "2026-10-18T17:39:07Z",
+      "applied_utc": "2026-10-18T17:39:46Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-e52ea91cf0a21459",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "ja_n3:91d3a4741d779354",
+        "pack_code": "ja_n3",
+        "entry_id": "ごちそうさま",
+        "language": "ja",
+        "sentence_index": 2,
+        "old_sentence": "きょうは、ごちそうさまでした。",
+        "old_translations": {
+          "en": "Thanks for the meal today.",
+          "ar": "شكرًا على الوجبة اليوم.",
+          "cs": "Děkuju za dnešní jídlo.",
+          "da": "Tak for maden i dag.",
+          "de": "Danke für das Essen heute.",
+          "el": "Ευχαριστώ για το φαγητό σήμερα.",
+          "es": "Gracias por la comida de hoy.",
+          "fi": "Kiitos tämän päivän ruoasta.",
+          "fr": "Merci pour le repas d'aujourd'hui.",
+          "he": "תודה על הארוחה היום.",
+          "hi": "आज के खाने के लिए धन्यवाद।",
+          "hu": "Köszönöm a mai ebédet.",
+          "id": "Terima kasih untuk makanannya hari ini.",
+          "it": "Grazie per il pasto di oggi.",
+          "ko": "오늘 잘 먹었습니다.",
+          "nb": "Takk for maten i dag.",
+          "nl": "Dank je voor de maaltijd vandaag.",
+          "pl": "Dzięki za dzisiejszy posiłek.",
+          "pt": "Obrigado pela refeição de hoje.",
+          "ro": "Mulțumesc pentru masa de azi.",
+          "ru": "Спасибо за сегодняшнюю еду.",
+          "sv": "Tack för maten idag.",
+          "tr": "Bugünkü yemek için teşekkürler.",
+          "uk": "Дякую за сьогоднішню їжу.",
+          "vi": "Cảm ơn bữa ăn hôm nay.",
+          "yue": "多謝你今日呢餐。",
+          "zh-Hans": "谢谢你今天的招待。"
+        },
+        "proposed_sentence": "今日は、ごちそうさまでした。",
+        "proposed_translations": {
+          "en": "Thanks for the meal today.",
+          "ar": "شكرًا على الوجبة اليوم.",
+          "cs": "Děkuju za dnešní jídlo.",
+          "da": "Tak for maden i dag.",
+          "de": "Danke für das Essen heute.",
+          "el": "Ευχαριστώ για το φαγητό σήμερα.",
+          "es": "Gracias por la comida de hoy.",
+          "fi": "Kiitos tämän päivän ruoasta.",
+          "fr": "Merci pour le repas d'aujourd'hui.",
+          "he": "תודה על הארוחה היום.",
+          "hi": "आज के खाने के लिए धन्यवाद।",
+          "hu": "Köszönöm a mai ételt.",
+          "id": "Terima kasih untuk makanannya hari ini.",
+          "it": "Grazie per il pasto di oggi.",
+          "ko": "오늘 잘 먹었습니다.",
+          "nb": "Takk for maten i dag.",
+          "nl": "Dank je voor de maaltijd vandaag.",
+          "pl": "Dzięki za dzisiejszy posiłek.",
+          "pt": "Obrigado pela refeição de hoje.",
+          "ro": "Mulțumesc pentru masa de azi.",
+          "ru": "Спасибо за сегодняшнюю еду.",
+          "sv": "Tack för maten idag.",
+          "tr": "Bugünkü yemek için teşekkürler.",
+          "uk": "Дякую за сьогоднішню їжу.",
+          "vi": "Cảm ơn bữa ăn hôm nay.",
+          "yue": "多謝你今日呢餐。",
+          "zh-Hans": "谢谢你今天的招待。"
+        },
+        "old_ruby_source": "きょうは、ごちそうさまでした。",
+        "proposed_ruby_source": "今日[きょう]は、ごちそうさまでした。",
+        "old_japanese": "きょうは、ごちそうさまでした。",
+        "old_english": "Thanks for the meal today.",
+        "proposed_japanese": "今日は、ごちそうさまでした。",
+        "proposed_english": "Thanks for the meal today.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "ja",
+          "sentence": "今日は、ごちそうさまでした。",
+          "tokens": [
+            {
+              "surface": "今日",
+              "lemma": "今日",
+              "pos": "名詞/普通名詞/副詞可能/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 0,
+              "end": 2,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "きょう",
+              "ruby_text": "今日[きょう]",
+              "ruby_spans": [
+                {
+                  "base": "今日",
+                  "reading": "きょう",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "きょう",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "は",
+              "lemma": "は",
+              "pos": "助詞/係助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 2,
+              "end": 3,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "は",
+              "ruby_text": "は",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "は"
+            },
+            {
+              "surface": "、",
+              "lemma": "、",
+              "pos": "補助記号/読点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 3,
+              "end": 4,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "、",
+              "ruby_text": "、",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "、"
+            },
+            {
+              "surface": "ごちそう",
+              "lemma": "ごちそう",
+              "pos": "名詞/普通名詞/サ変可能/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 4,
+              "end": 8,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "ごちそう",
+              "ruby_text": "ごちそう",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "ごちそう"
+            },
+            {
+              "surface": "さま",
+              "lemma": "さま",
+              "pos": "接尾辞/名詞的/一般/*/*/*",
+              "upos": "SUFFIX",
+              "xpos": "接尾辞",
+              "feats": {},
+              "start": 8,
+              "end": 10,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "さま",
+              "ruby_text": "さま",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "さま"
+            },
+            {
+              "surface": "でし",
+              "lemma": "です",
+              "pos": "助動詞/*/*/*/助動詞-デス/連用形-一般",
+              "upos": "AUX",
+              "xpos": "助動詞",
+              "feats": {},
+              "start": 10,
+              "end": 12,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "でし",
+              "ruby_text": "でし",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "でし"
+            },
+            {
+              "surface": "た",
+              "lemma": "た",
+              "pos": "助動詞/*/*/*/助動詞-タ/終止形-一般",
+              "upos": "AUX",
+              "xpos": "助動詞",
+              "feats": {},
+              "start": 12,
+              "end": 13,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "た",
+              "ruby_text": "た",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "た"
+            },
+            {
+              "surface": "。",
+              "lemma": "。",
+              "pos": "補助記号/句点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 13,
+              "end": 14,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "。",
+              "ruby_text": "。",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "。"
+            }
+          ],
+          "reading": "きょうは、ごちそうさまでした。",
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "warnings": [
+            "mediawiki ruby hints applied"
+          ]
+        },
+        "generated_tokens": [
+          {
+            "surface": "今日",
+            "lemma": "今日",
+            "pos": "名詞/普通名詞/副詞可能/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "きょう",
+            "ruby_text": "今日[きょう]",
+            "ruby_spans": [
+              {
+                "base": "今日",
+                "reading": "きょう",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "きょう",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "は",
+            "lemma": "は",
+            "pos": "助詞/係助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 2,
+            "end": 3,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "は",
+            "ruby_text": "は",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "は"
+          },
+          {
+            "surface": "、",
+            "lemma": "、",
+            "pos": "補助記号/読点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 3,
+            "end": 4,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "、",
+            "ruby_text": "、",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "、"
+          },
+          {
+            "surface": "ごちそう",
+            "lemma": "ごちそう",
+            "pos": "名詞/普通名詞/サ変可能/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 4,
+            "end": 8,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ごちそう",
+            "ruby_text": "ごちそう",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "ごちそう"
+          },
+          {
+            "surface": "さま",
+            "lemma": "さま",
+            "pos": "接尾辞/名詞的/一般/*/*/*",
+            "upos": "SUFFIX",
+            "xpos": "接尾辞",
+            "feats": {},
+            "start": 8,
+            "end": 10,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "さま",
+            "ruby_text": "さま",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "さま"
+          },
+          {
+            "surface": "でし",
+            "lemma": "です",
+            "pos": "助動詞/*/*/*/助動詞-デス/連用形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 10,
+            "end": 12,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "でし",
+            "ruby_text": "でし",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "でし"
+          },
+          {
+            "surface": "た",
+            "lemma": "た",
+            "pos": "助動詞/*/*/*/助動詞-タ/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 12,
+            "end": 13,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "た",
+            "ruby_text": "た",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "た"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 13,
+            "end": 14,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
+          }
+        ],
+        "generated_reading": "きょうは、ごちそうさまでした。",
+        "analyzer": "sudachipy_sudachidict_core_c",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-18T17:39:07Z",
+        "updated_utc": "2026-10-18T17:40:42Z",
+        "applied_utc": "2026-10-18T17:40:42Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      },
+      {
+        "id": "sentprop-b3504e8800e68c27",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "ja_n3:91d3a4741d779354",
+        "pack_code": "ja_n3",
+        "entry_id": "ごちそうさま",
+        "language": "ja",
+        "sentence_index": 4,
+        "old_sentence": "おなかいっぱい。ごちそうさま。",
+        "old_translations": {
+          "en": "I'm full. Thanks for the meal.",
+          "ar": "شبعْت. شكرًا على الوجبة.",
+          "cs": "Jsem sytý. Děkuju za jídlo.",
+          "da": "Jeg er mæt. Tak for maden.",
+          "de": "Ich bin satt. Danke fürs Essen.",
+          "el": "Έφαγα καλά. Ευχαριστώ για το φαγητό.",
+          "es": "Estoy lleno. Gracias por la comida.",
+          "fi": "Olen kylläinen. Kiitos ruoasta.",
+          "fr": "J'ai bien mangé. Merci pour le repas.",
+          "he": "אני שבע. תודה על הארוחה.",
+          "hi": "मैं पेट भर गया। खाने के लिए धन्यवाद।",
+          "hu": "Jól laktam. Köszönöm az ebédet.",
+          "id": "Aku kenyang. Terima kasih untuk makanannya.",
+          "it": "Sono pieno. Grazie per il pasto.",
+          "ko": "배불러. 잘 먹었습니다.",
+          "nb": "Jeg er mett. Takk for maten.",
+          "nl": "Ik zit vol. Dank je voor de maaltijd.",
+          "pl": "Jestem najedzony. Dzięki za jedzenie.",
+          "pt": "Estou satisfeito. Obrigado pela comida.",
+          "ro": "M-am săturat. Mulțumesc pentru masă.",
+          "ru": "Я наелся. Спасибо за угощение.",
+          "sv": "Jag är mätt. Tack för maten.",
+          "tr": "Doydum. Yemek için teşekkürler.",
+          "uk": "Я наївся. Дякую за їжу.",
+          "vi": "Mình no rồi. Cảm ơn bữa ăn nhé.",
+          "yue": "我食飽喇。多謝款待。",
+          "zh-Hans": "我吃饱了。谢谢款待。"
+        },
+        "proposed_sentence": "お腹いっぱい。ごちそうさま。",
+        "proposed_translations": {
+          "en": "I'm full. Thanks for the meal.",
+          "ar": "شبعت. شكرًا على الوجبة.",
+          "cs": "Jsem sytý. Děkuju za jídlo.",
+          "da": "Jeg er mæt. Tak for maden.",
+          "de": "Ich bin satt. Danke fürs Essen.",
+          "el": "Έχω χορτάσει. Ευχαριστώ για το φαγητό.",
+          "es": "Estoy lleno. Gracias por la comida.",
+          "fi": "Olen kylläinen. Kiitos ruoasta.",
+          "fr": "J'ai bien mangé. Merci pour le repas.",
+          "he": "אני שבע. תודה על הארוחה.",
+          "hi": "मेरा पेट भर गया है। खाने के लिए धन्यवाद।",
+          "hu": "Jól laktam. Köszönöm az ételt.",
+          "id": "Aku kenyang. Terima kasih untuk makanannya.",
+          "it": "Sono pieno. Grazie per il pasto.",
+          "ko": "배불러. 잘 먹었습니다.",
+          "nb": "Jeg er mett. Takk for maten.",
+          "nl": "Ik zit vol. Dank je voor de maaltijd.",
+          "pl": "Jestem najedzony. Dzięki za jedzenie.",
+          "pt": "Estou satisfeito. Obrigado pela comida.",
+          "ro": "Sunt sătul. Mulțumesc pentru masă.",
+          "ru": "Я наелся. Спасибо за угощение.",
+          "sv": "Jag är mätt. Tack för maten.",
+          "tr": "Doydum. Yemek için teşekkürler.",
+          "uk": "Я наївся. Дякую за їжу.",
+          "vi": "Mình no rồi. Cảm ơn bữa ăn nhé.",
+          "yue": "我食飽喇。多謝款待。",
+          "zh-Hans": "我吃饱了。谢谢款待。"
+        },
+        "old_ruby_source": "おなかいっぱい。ごちそうさま。",
+        "proposed_ruby_source": "お腹[おなか]いっぱい。ごちそうさま。",
+        "old_japanese": "おなかいっぱい。ごちそうさま。",
+        "old_english": "I'm full. Thanks for the meal.",
+        "proposed_japanese": "お腹いっぱい。ごちそうさま。",
+        "proposed_english": "I'm full. Thanks for the meal.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "ja",
+          "sentence": "お腹いっぱい。ごちそうさま。",
+          "tokens": [
+            {
+              "surface": "お腹",
+              "lemma": "お腹",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 0,
+              "end": 2,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "おおなか",
+              "ruby_text": "お腹[おなか]",
+              "ruby_spans": [
+                {
+                  "base": "腹",
+                  "reading": "おなか",
+                  "start": 1,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "おおなか",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "いっぱい",
+              "lemma": "いっぱい",
+              "pos": "名詞/普通名詞/形状詞可能/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 2,
+              "end": 6,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "いっぱい",
+              "ruby_text": "いっぱい",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "いっぱい"
+            },
+            {
+              "surface": "。",
+              "lemma": "。",
+              "pos": "補助記号/句点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 6,
+              "end": 7,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "。",
+              "ruby_text": "。",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "。"
+            },
+            {
+              "surface": "ごちそう",
+              "lemma": "ごちそう",
+              "pos": "名詞/普通名詞/サ変可能/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 7,
+              "end": 11,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "ごちそう",
+              "ruby_text": "ごちそう",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "ごちそう"
+            },
+            {
+              "surface": "さま",
+              "lemma": "さま",
+              "pos": "接尾辞/名詞的/一般/*/*/*",
+              "upos": "SUFFIX",
+              "xpos": "接尾辞",
+              "feats": {},
+              "start": 11,
+              "end": 13,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "さま",
+              "ruby_text": "さま",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "さま"
+            },
+            {
+              "surface": "。",
+              "lemma": "。",
+              "pos": "補助記号/句点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 13,
+              "end": 14,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "。",
+              "ruby_text": "。",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "。"
+            }
+          ],
+          "reading": "おおなかいっぱい。ごちそうさま。",
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "warnings": [
+            "mediawiki ruby hints applied"
+          ]
+        },
+        "generated_tokens": [
+          {
+            "surface": "お腹",
+            "lemma": "お腹",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "おおなか",
+            "ruby_text": "お腹[おなか]",
+            "ruby_spans": [
+              {
+                "base": "腹",
+                "reading": "おなか",
+                "start": 1,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "おおなか",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "いっぱい",
+            "lemma": "いっぱい",
+            "pos": "名詞/普通名詞/形状詞可能/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 2,
+            "end": 6,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "いっぱい",
+            "ruby_text": "いっぱい",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "いっぱい"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 6,
+            "end": 7,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
+          },
+          {
+            "surface": "ごちそう",
+            "lemma": "ごちそう",
+            "pos": "名詞/普通名詞/サ変可能/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 7,
+            "end": 11,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ごちそう",
+            "ruby_text": "ごちそう",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "ごちそう"
+          },
+          {
+            "surface": "さま",
+            "lemma": "さま",
+            "pos": "接尾辞/名詞的/一般/*/*/*",
+            "upos": "SUFFIX",
+            "xpos": "接尾辞",
+            "feats": {},
+            "start": 11,
+            "end": 13,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "さま",
+            "ruby_text": "さま",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "さま"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 13,
+            "end": 14,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
+          }
+        ],
+        "generated_reading": "おおなかいっぱい。ごちそうさま。",
+        "analyzer": "sudachipy_sudachidict_core_c",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-18T17:39:07Z",
+        "updated_utc": "2026-10-18T17:40:42Z",
+        "applied_utc": "2026-10-18T17:40:42Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-18T17:40:42Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -631,12 +1366,6 @@
       "きょうは、ごちそうさまでした。",
       "あら、ごちそうさま。",
       "おなかいっぱい。ごちそうさま。"
-    ],
-    "en": [
-      "Thanks for the meal, Asami.",
-      "Thanks for the meal today.",
-      "Oh, how sweet.",
-      "I'm full. Thanks for the meal."
     ],
     "generation": {
       "generator": "vocomipedia_source_generator.py",
@@ -674,190 +1403,6 @@
         "definitions": "thank you (for the meal); that was a delicious meal; thank you (for displaying lovey-dovey behaviour)"
       }
     },
-    "word_en": "thank you (for the meal); that was a delicious meal; thank you (for displaying lovey-dovey behaviour)",
-    "word_es": "gracias por la comida",
-    "word_fr": "merci pour le repas",
-    "word_de": "danke fürs Essen",
-    "word_it": "grazie per il pasto",
-    "word_ko": "잘 먹었습니다",
-    "word_zh-Hans": "多谢款待",
-    "word_yue": "多謝款待",
-    "word_ru": "спасибо за еду",
-    "word_pt": "obrigado pela refeição",
-    "word_he": "תודה על הארוחה",
-    "word_tr": "yemeğin için teşekkürler",
-    "word_vi": "cảm ơn vì bữa ăn",
-    "word_ar": "شكراً على الوجبة",
-    "word_nl": "dank voor de maaltijd",
-    "word_uk": "дякую за їжу",
-    "word_hu": "köszönöm az ételt",
-    "word_hi": "भोजन के लिए धन्यवाद",
-    "word_pl": "dziękuję za posiłek",
-    "word_el": "ευχαριστώ για το γεύμα",
-    "word_nb": "takk for maten",
-    "word_id": "terima kasih atas makanannya",
-    "word_sv": "tack för maten",
-    "word_ro": "mulțumesc pentru masă",
-    "word_cs": "děkuji za jídlo",
-    "word_da": "tak for maden",
-    "word_fi": "kiitos ruoasta",
-    "word_ja": "ごちそうさま",
-    "ar": [
-      "شكراً على الوجبة، يا أسامي.",
-      "شكرًا على الوجبة اليوم.",
-      "يا للعذوبة.",
-      "شبعْت. شكرًا على الوجبة."
-    ],
-    "cs": [
-      "Děkuju za jídlo, Asami.",
-      "Děkuju za dnešní jídlo.",
-      "Ach, to je milé.",
-      "Jsem sytý. Děkuju za jídlo."
-    ],
-    "da": [
-      "Tak for maden, Asami.",
-      "Tak for maden i dag.",
-      "Nå, hvor sødt.",
-      "Jeg er mæt. Tak for maden."
-    ],
-    "de": [
-      "Danke für das Essen, Asami.",
-      "Danke für das Essen heute.",
-      "Oh, wie süß.",
-      "Ich bin satt. Danke fürs Essen."
-    ],
-    "el": [
-      "Ευχαριστώ για το φαγητό, Ασάμι.",
-      "Ευχαριστώ για το φαγητό σήμερα.",
-      "Α, τι γλυκό.",
-      "Έφαγα καλά. Ευχαριστώ για το φαγητό."
-    ],
-    "es": [
-      "Gracias por la comida, Asami.",
-      "Gracias por la comida de hoy.",
-      "Ay, qué tierno.",
-      "Estoy lleno. Gracias por la comida."
-    ],
-    "fi": [
-      "Kiitos ruoasta, Asami.",
-      "Kiitos tämän päivän ruoasta.",
-      "Voi miten söpöä.",
-      "Olen kylläinen. Kiitos ruoasta."
-    ],
-    "fr": [
-      "Merci pour le repas, Asami.",
-      "Merci pour le repas d'aujourd'hui.",
-      "Oh, comme c'est mignon.",
-      "J'ai bien mangé. Merci pour le repas."
-    ],
-    "he": [
-      "תודה על הארוחה, אסאמי.",
-      "תודה על הארוחה היום.",
-      "אוי, זה ממש חמוד.",
-      "אני שבע. תודה על הארוחה."
-    ],
-    "hi": [
-      "असामी, खाने के लिए धन्यवाद।",
-      "आज के खाने के लिए धन्यवाद।",
-      "अरे, कितना प्यारा।",
-      "मैं पेट भर गया। खाने के लिए धन्यवाद।"
-    ],
-    "hu": [
-      "Köszönöm az ebédet, Asami.",
-      "Köszönöm a mai ebédet.",
-      "Ó, milyen kedves.",
-      "Jól laktam. Köszönöm az ebédet."
-    ],
-    "id": [
-      "Terima kasih untuk makanannya, Asami.",
-      "Terima kasih untuk makanannya hari ini.",
-      "Wah, manis sekali.",
-      "Aku kenyang. Terima kasih untuk makanannya."
-    ],
-    "it": [
-      "Grazie per il pasto, Asami.",
-      "Grazie per il pasto di oggi.",
-      "Oh, che carini.",
-      "Sono pieno. Grazie per il pasto."
-    ],
-    "ko": [
-      "아사미, 잘 먹었습니다.",
-      "오늘 잘 먹었습니다.",
-      "어머, 다정하네요.",
-      "배불러. 잘 먹었습니다."
-    ],
-    "nb": [
-      "Takk for maten, Asami.",
-      "Takk for maten i dag.",
-      "Å, så søtt.",
-      "Jeg er mett. Takk for maten."
-    ],
-    "nl": [
-      "Dank je voor de maaltijd, Asami.",
-      "Dank je voor de maaltijd vandaag.",
-      "O, wat schattig.",
-      "Ik zit vol. Dank je voor de maaltijd."
-    ],
-    "pl": [
-      "Dzięki za jedzenie, Asami.",
-      "Dzięki za dzisiejszy posiłek.",
-      "Och, jakie to słodkie.",
-      "Jestem najedzony. Dzięki za jedzenie."
-    ],
-    "pt": [
-      "Obrigado pela comida, Asami.",
-      "Obrigado pela refeição de hoje.",
-      "Ah, que fofo.",
-      "Estou satisfeito. Obrigado pela comida."
-    ],
-    "ro": [
-      "Mulțumesc pentru masă, Asami.",
-      "Mulțumesc pentru masa de azi.",
-      "A, ce drăguț.",
-      "M-am săturat. Mulțumesc pentru masă."
-    ],
-    "ru": [
-      "Спасибо за угощение, Асами.",
-      "Спасибо за сегодняшнюю еду.",
-      "О, как мило.",
-      "Я наелся. Спасибо за угощение."
-    ],
-    "sv": [
-      "Tack för maten, Asami.",
-      "Tack för maten idag.",
-      "Åh, vad gulligt.",
-      "Jag är mätt. Tack för maten."
-    ],
-    "tr": [
-      "Yemek için teşekkürler, Asami.",
-      "Bugünkü yemek için teşekkürler.",
-      "Aa, ne kadar tatlı.",
-      "Doydum. Yemek için teşekkürler."
-    ],
-    "uk": [
-      "Дякую за їжу, Асамі.",
-      "Дякую за сьогоднішню їжу.",
-      "Ой, як мило.",
-      "Я наївся. Дякую за їжу."
-    ],
-    "vi": [
-      "Cảm ơn bữa ăn nhé, Asami.",
-      "Cảm ơn bữa ăn hôm nay.",
-      "Ồ, dễ thương quá.",
-      "Mình no rồi. Cảm ơn bữa ăn nhé."
-    ],
-    "yue": [
-      "多謝款待，Asami。",
-      "多謝你今日呢餐。",
-      "哎呀，真係好可愛。",
-      "我食飽喇。多謝款待。"
-    ],
-    "zh-Hans": [
-      "谢谢款待，Asami。",
-      "谢谢你今天的招待。",
-      "哎呀，真可爱。",
-      "我吃饱了。谢谢款待。"
-    ],
     "pos_analysis": [
       {
         "sentence": "あさみさん、ごちそうさま。",
@@ -964,23 +1509,31 @@
         "difficulty_aggregated": null
       },
       {
-        "sentence": "きょうは、ごちそうさまでした。",
+        "sentence": "今日は、ごちそうさまでした。",
         "tokens": [
           {
-            "surface": "きょう",
-            "lemma": "きょう",
+            "surface": "今日",
+            "lemma": "今日",
             "pos": "名詞/普通名詞/副詞可能/*/*/*",
             "upos": "NOUN",
             "xpos": "名詞",
             "feats": {},
             "start": 0,
-            "end": 3,
+            "end": 2,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "きょう",
-            "ruby_text": "きょう",
-            "ruby_spans": [],
-            "ruby_confidence": "high",
-            "furigana": "きょう"
+            "ruby_text": "今日[きょう]",
+            "ruby_spans": [
+              {
+                "base": "今日",
+                "reading": "きょう",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "きょう",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "は",
@@ -989,8 +1542,8 @@
             "upos": "PART",
             "xpos": "助詞",
             "feats": {},
-            "start": 3,
-            "end": 4,
+            "start": 2,
+            "end": 3,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "は",
             "ruby_text": "は",
@@ -1005,8 +1558,8 @@
             "upos": "PUNCT",
             "xpos": "補助記号",
             "feats": {},
-            "start": 4,
-            "end": 5,
+            "start": 3,
+            "end": 4,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "、",
             "ruby_text": "、",
@@ -1021,8 +1574,8 @@
             "upos": "NOUN",
             "xpos": "名詞",
             "feats": {},
-            "start": 5,
-            "end": 9,
+            "start": 4,
+            "end": 8,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "ごちそう",
             "ruby_text": "ごちそう",
@@ -1038,8 +1591,8 @@
             "upos": "SUFFIX",
             "xpos": "接尾辞",
             "feats": {},
-            "start": 9,
-            "end": 11,
+            "start": 8,
+            "end": 10,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "さま",
             "ruby_text": "さま",
@@ -1055,8 +1608,8 @@
             "upos": "AUX",
             "xpos": "助動詞",
             "feats": {},
-            "start": 11,
-            "end": 13,
+            "start": 10,
+            "end": 12,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "でし",
             "ruby_text": "でし",
@@ -1071,8 +1624,8 @@
             "upos": "AUX",
             "xpos": "助動詞",
             "feats": {},
-            "start": 13,
-            "end": 14,
+            "start": 12,
+            "end": 13,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "た",
             "ruby_text": "た",
@@ -1087,8 +1640,8 @@
             "upos": "PUNCT",
             "xpos": "補助記号",
             "feats": {},
-            "start": 14,
-            "end": 15,
+            "start": 13,
+            "end": 14,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "。",
             "ruby_text": "。",
@@ -1188,23 +1741,31 @@
         "difficulty_aggregated": null
       },
       {
-        "sentence": "おなかいっぱい。ごちそうさま。",
+        "sentence": "お腹いっぱい。ごちそうさま。",
         "tokens": [
           {
-            "surface": "おなか",
-            "lemma": "おなか",
+            "surface": "お腹",
+            "lemma": "お腹",
             "pos": "名詞/普通名詞/一般/*/*/*",
             "upos": "NOUN",
             "xpos": "名詞",
             "feats": {},
             "start": 0,
-            "end": 3,
+            "end": 2,
             "analyzer": "sudachipy_sudachidict_core_c",
-            "reading_kana": "おなか",
-            "ruby_text": "おなか",
-            "ruby_spans": [],
-            "ruby_confidence": "high",
-            "furigana": "おなか"
+            "reading_kana": "おおなか",
+            "ruby_text": "お腹[おなか]",
+            "ruby_spans": [
+              {
+                "base": "腹",
+                "reading": "おなか",
+                "start": 1,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "おおなか",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "いっぱい",
@@ -1213,8 +1774,8 @@
             "upos": "NOUN",
             "xpos": "名詞",
             "feats": {},
-            "start": 3,
-            "end": 7,
+            "start": 2,
+            "end": 6,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "いっぱい",
             "ruby_text": "いっぱい",
@@ -1229,8 +1790,8 @@
             "upos": "PUNCT",
             "xpos": "補助記号",
             "feats": {},
-            "start": 7,
-            "end": 8,
+            "start": 6,
+            "end": 7,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "。",
             "ruby_text": "。",
@@ -1245,8 +1806,8 @@
             "upos": "NOUN",
             "xpos": "名詞",
             "feats": {},
-            "start": 8,
-            "end": 12,
+            "start": 7,
+            "end": 11,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "ごちそう",
             "ruby_text": "ごちそう",
@@ -1262,8 +1823,8 @@
             "upos": "SUFFIX",
             "xpos": "接尾辞",
             "feats": {},
-            "start": 12,
-            "end": 14,
+            "start": 11,
+            "end": 13,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "さま",
             "ruby_text": "さま",
@@ -1279,8 +1840,8 @@
             "upos": "PUNCT",
             "xpos": "補助記号",
             "feats": {},
-            "start": 14,
-            "end": 15,
+            "start": 13,
+            "end": 14,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "。",
             "ruby_text": "。",
@@ -1291,6 +1852,196 @@
         ],
         "difficulty_aggregated": null
       }
+    ],
+    "word_en": "thanks for the meal; said after eating; a playful “Aww, how sweet!” in response to a couple acting lovey-dovey",
+    "word_es": "gracias por la comida",
+    "word_fr": "merci pour le repas",
+    "word_de": "danke fürs Essen",
+    "word_it": "grazie per il pasto",
+    "word_ko": "잘 먹었습니다",
+    "word_zh-Hans": "多谢款待",
+    "word_yue": "多謝款待",
+    "word_ru": "спасибо за еду",
+    "word_pt": "obrigado pela refeição",
+    "word_he": "תודה על הארוחה",
+    "word_tr": "yemeğin için teşekkürler",
+    "word_vi": "cảm ơn vì bữa ăn",
+    "word_ar": "شكراً على الوجبة",
+    "word_nl": "dank voor de maaltijd",
+    "word_uk": "дякую за їжу",
+    "word_hu": "köszönöm az ételt",
+    "word_hi": "भोजन के लिए धन्यवाद",
+    "word_pl": "dziękuję za posiłek",
+    "word_el": "ευχαριστώ για το γεύμα",
+    "word_nb": "takk for maten",
+    "word_id": "terima kasih atas makanannya",
+    "word_sv": "tack för maten",
+    "word_ro": "mulțumesc pentru masă",
+    "word_cs": "děkuji za jídlo",
+    "word_da": "tak for maden",
+    "word_fi": "kiitos ruoasta",
+    "word_ja": "ごちそうさま",
+    "ar": [
+      "شكراً على الوجبة، يا أسامي.",
+      "شكرًا على الوجبة اليوم.",
+      "يا للعذوبة.",
+      "شبعْت. شكرًا على الوجبة."
+    ],
+    "cs": [
+      "Děkuju za jídlo, Asami.",
+      "Děkuju za dnešní jídlo.",
+      "Ach, to je milé.",
+      "Jsem sytý. Děkuju za jídlo."
+    ],
+    "da": [
+      "Tak for maden, Asami.",
+      "Tak for maden i dag.",
+      "Nå, hvor sødt.",
+      "Jeg er mæt. Tak for maden."
+    ],
+    "de": [
+      "Danke für das Essen, Asami.",
+      "Danke für das Essen heute.",
+      "Oh, wie süß.",
+      "Ich bin satt. Danke fürs Essen."
+    ],
+    "el": [
+      "Ευχαριστώ για το φαγητό, Ασάμι.",
+      "Ευχαριστώ για το φαγητό σήμερα.",
+      "Α, τι γλυκό.",
+      "Έφαγα καλά. Ευχαριστώ για το φαγητό."
+    ],
+    "en": [
+      "Thanks for the meal, Asami.",
+      "Thanks for the meal today.",
+      "Oh, how sweet.",
+      "I'm full. Thanks for the meal."
+    ],
+    "es": [
+      "Gracias por la comida, Asami.",
+      "Gracias por la comida de hoy.",
+      "Ay, qué tierno.",
+      "Estoy lleno. Gracias por la comida."
+    ],
+    "fi": [
+      "Kiitos ruoasta, Asami.",
+      "Kiitos tämän päivän ruoasta.",
+      "Voi miten söpöä.",
+      "Olen kylläinen. Kiitos ruoasta."
+    ],
+    "fr": [
+      "Merci pour le repas, Asami.",
+      "Merci pour le repas d'aujourd'hui.",
+      "Oh, comme c'est mignon.",
+      "J'ai bien mangé. Merci pour le repas."
+    ],
+    "he": [
+      "תודה על הארוחה, אסאמי.",
+      "תודה על הארוחה היום.",
+      "אוי, זה ממש חמוד.",
+      "אני שבע. תודה על הארוחה."
+    ],
+    "hi": [
+      "असामी, खाने के लिए धन्यवाद।",
+      "आज के खाने के लिए धन्यवाद।",
+      "अरे, कितना प्यारा।",
+      "मैं पेट भर गया। खाने के लिए धन्यवाद।"
+    ],
+    "hu": [
+      "Köszönöm az ételt, Asami.",
+      "Köszönöm a mai ebédet.",
+      "Ó, milyen kedves.",
+      "Jól laktam. Köszönöm az ebédet."
+    ],
+    "id": [
+      "Terima kasih untuk makanannya, Asami.",
+      "Terima kasih untuk makanannya hari ini.",
+      "Wah, manis sekali.",
+      "Aku kenyang. Terima kasih untuk makanannya."
+    ],
+    "it": [
+      "Grazie per il pasto, Asami.",
+      "Grazie per il pasto di oggi.",
+      "Oh, che carini.",
+      "Sono pieno. Grazie per il pasto."
+    ],
+    "ko": [
+      "아사미, 잘 먹었습니다.",
+      "오늘 잘 먹었습니다.",
+      "어머, 다정하네요.",
+      "배불러. 잘 먹었습니다."
+    ],
+    "nb": [
+      "Takk for maten, Asami.",
+      "Takk for maten i dag.",
+      "Å, så søtt.",
+      "Jeg er mett. Takk for maten."
+    ],
+    "nl": [
+      "Dank je voor de maaltijd, Asami.",
+      "Dank je voor de maaltijd vandaag.",
+      "O, wat schattig.",
+      "Ik zit vol. Dank je voor de maaltijd."
+    ],
+    "pl": [
+      "Dzięki za jedzenie, Asami.",
+      "Dzięki za dzisiejszy posiłek.",
+      "Och, jakie to słodkie.",
+      "Jestem najedzony. Dzięki za jedzenie."
+    ],
+    "pt": [
+      "Obrigado pela comida, Asami.",
+      "Obrigado pela refeição de hoje.",
+      "Ah, que fofo.",
+      "Estou satisfeito. Obrigado pela comida."
+    ],
+    "ro": [
+      "Mulțumesc pentru masă, Asami.",
+      "Mulțumesc pentru masa de azi.",
+      "A, ce drăguț.",
+      "M-am săturat. Mulțumesc pentru masă."
+    ],
+    "ru": [
+      "Спасибо за угощение, Асами.",
+      "Спасибо за сегодняшнюю еду.",
+      "О, как мило.",
+      "Я наелся. Спасибо за угощение."
+    ],
+    "sv": [
+      "Tack för maten, Asami.",
+      "Tack för maten idag.",
+      "Åh, vad gulligt.",
+      "Jag är mätt. Tack för maten."
+    ],
+    "tr": [
+      "Yemek için teşekkürler, Asami.",
+      "Bugünkü yemek için teşekkürler.",
+      "Aa, ne kadar tatlı.",
+      "Doydum. Yemek için teşekkürler."
+    ],
+    "uk": [
+      "Дякую за їжу, Асамі.",
+      "Дякую за сьогоднішню їжу.",
+      "Ой, як мило.",
+      "Я наївся. Дякую за їжу."
+    ],
+    "vi": [
+      "Cảm ơn bữa ăn nhé, Asami.",
+      "Cảm ơn bữa ăn hôm nay.",
+      "Ồ, dễ thương quá.",
+      "Mình no rồi. Cảm ơn bữa ăn nhé."
+    ],
+    "yue": [
+      "多謝款待，Asami。",
+      "多謝你今日呢餐。",
+      "哎呀，真係好可愛。",
+      "我食飽喇。多謝款待。"
+    ],
+    "zh-Hans": [
+      "谢谢款待，Asami。",
+      "谢谢你今天的招待。",
+      "哎呀，真可爱。",
+      "我吃饱了。谢谢款待。"
     ]
   }
 }

@@ -45,7 +45,7 @@
       "target": "この時計はアナログ式です。",
       "reading": "このとけいはあなろぐしきです。",
       "translations": {
-        "en": "This clock is analog-style.",
+        "en": "This is an analog clock.",
         "ar": "هذه الساعة بنمط تناظري.",
         "cs": "Tyto hodiny jsou analogového typu.",
         "da": "Dette ur er analogt.",
@@ -391,10 +391,10 @@
       "difficulty": null
     },
     {
-      "target": "彼のあいさつは日本式です。",
+      "target": "彼の挨拶は日本式です。",
       "reading": "かれのあいさつはにっぽんしきです。",
       "translations": {
-        "en": "His greeting is the Japanese style.",
+        "en": "His greeting is in the Japanese style.",
         "ar": "تحيته على الطريقة اليابانية.",
         "cs": "Jeho pozdrav je japonského stylu.",
         "da": "Hans hilsen er i japansk stil.",
@@ -443,8 +443,9 @@
               "length": 1
             }
           ],
-          "ruby_confidence": "high",
-          "furigana": "かれ"
+          "ruby_confidence": "reviewed",
+          "furigana": "かれ",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "の",
@@ -463,20 +464,28 @@
           "furigana": "の"
         },
         {
-          "surface": "あいさつ",
-          "lemma": "あいさつ",
+          "surface": "挨拶",
+          "lemma": "挨拶",
           "pos": "名詞/普通名詞/サ変可能/*/*/*",
           "upos": "NOUN",
           "xpos": "名詞",
           "feats": {},
           "start": 2,
-          "end": 6,
+          "end": 4,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "あいさつ",
-          "ruby_text": "あいさつ",
-          "ruby_spans": [],
-          "ruby_confidence": "high",
-          "furigana": "あいさつ"
+          "ruby_text": "挨拶[あいさつ]",
+          "ruby_spans": [
+            {
+              "base": "挨拶",
+              "reading": "あいさつ",
+              "start": 0,
+              "length": 2
+            }
+          ],
+          "ruby_confidence": "reviewed",
+          "furigana": "あいさつ",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "は",
@@ -485,8 +494,8 @@
           "upos": "PART",
           "xpos": "助詞",
           "feats": {},
-          "start": 6,
-          "end": 7,
+          "start": 4,
+          "end": 5,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "は",
           "ruby_text": "は",
@@ -501,8 +510,8 @@
           "upos": "NOUN",
           "xpos": "名詞",
           "feats": {},
-          "start": 7,
-          "end": 9,
+          "start": 5,
+          "end": 7,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "にっぽん",
           "ruby_text": "日本[にっぽん]",
@@ -514,8 +523,9 @@
               "length": 2
             }
           ],
-          "ruby_confidence": "medium",
-          "furigana": "にっぽん"
+          "ruby_confidence": "reviewed",
+          "furigana": "にっぽん",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "式",
@@ -524,8 +534,8 @@
           "upos": "SUFFIX",
           "xpos": "接尾辞",
           "feats": {},
-          "start": 9,
-          "end": 10,
+          "start": 7,
+          "end": 8,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "しき",
           "ruby_text": "式[しき]",
@@ -537,8 +547,9 @@
               "length": 1
             }
           ],
-          "ruby_confidence": "high",
+          "ruby_confidence": "reviewed",
           "furigana": "しき",
+          "ruby_source": "mediawiki_sentence_ruby",
           "is_main_word": true
         },
         {
@@ -548,8 +559,8 @@
           "upos": "AUX",
           "xpos": "助動詞",
           "feats": {},
-          "start": 10,
-          "end": 12,
+          "start": 8,
+          "end": 10,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "です",
           "ruby_text": "です",
@@ -564,8 +575,8 @@
           "upos": "PUNCT",
           "xpos": "補助記号",
           "feats": {},
-          "start": 12,
-          "end": 13,
+          "start": 10,
+          "end": 11,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "。",
           "ruby_text": "。",
@@ -580,12 +591,12 @@
       "target": "このエアコンは省エネ式です。",
       "reading": "このえあこんはしょうえねしきです。",
       "translations": {
-        "en": "This air conditioner is energy-saving type.",
+        "en": "This air conditioner is an energy-saving model.",
         "ar": "هذا المكيف من النوع الموفر للطاقة.",
         "cs": "Tato klimatizace je úsporného typu.",
         "da": "Denne aircondition er energibesparende.",
         "de": "Diese Klimaanlage ist energiesparend.",
-        "el": "Αυτό το κλιματιστικό είναι εξοικονόμησης ενέργειας.",
+        "el": "Αυτό το κλιματιστικό εξοικονομεί ενέργεια.",
         "es": "Este aire acondicionado es de bajo consumo.",
         "fi": "Tämä ilmastointilaite on energiatehokas.",
         "fr": "Ce climatiseur est économe en énergie.",
@@ -598,7 +609,7 @@
         "nb": "Dette klimaanlegget er energieffektivt.",
         "nl": "Deze airco is energiezuinig.",
         "pl": "Ta klimatyzacja jest energooszczędna.",
-        "pt": "Este ar-condicionado é econômico em energia.",
+        "pt": "Este ar-condicionado economiza energia.",
         "ro": "Acest aparat de aer condiționat este eficient energetic.",
         "ru": "Этот кондиционер энергосберегающий.",
         "sv": "Den här luftkonditioneringen är energieffektiv.",
@@ -751,8 +762,456 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-13T08:28:19Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:Ja n3/84edf94dd3ccc147",
+      "revision_id": 80141,
+      "parent_revision_id": 68405,
+      "revision_timestamp_utc": "2026-10-13T08:28:19Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Use standard Japanese spelling and repair the English, Greek, and Portuguese type/style phrasing.",
+      "pulled_utc": "2026-10-18T17:39:06Z",
+      "applied_utc": "2026-10-18T17:39:44Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-ea3c959e43d78bb5",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "ja_n3:84edf94dd3ccc147",
+        "pack_code": "ja_n3",
+        "entry_id": "式",
+        "language": "ja",
+        "sentence_index": 3,
+        "old_sentence": "彼のあいさつは日本式です。",
+        "old_translations": {
+          "en": "His greeting is the Japanese style.",
+          "ar": "تحيته على الطريقة اليابانية.",
+          "cs": "Jeho pozdrav je japonského stylu.",
+          "da": "Hans hilsen er i japansk stil.",
+          "de": "Seine Begrüßung ist japanischer Art.",
+          "el": "Ο χαιρετισμός του είναι ιαπωνικού τύπου.",
+          "es": "Su saludo es al estilo japonés.",
+          "fi": "Hänen tervehdyksensä on japanilaista tyyliä.",
+          "fr": "Sa salutation est de style japonais.",
+          "he": "הברכה שלו היא בסגנון יפני.",
+          "hi": "उसका अभिवादन जापानी शैली का है।",
+          "hu": "Az ő köszönése japán stílusú.",
+          "id": "Salamannya bergaya Jepang.",
+          "it": "Il suo saluto è in stile giapponese.",
+          "ko": "그의 인사는 일본식입니다.",
+          "nb": "Hans hilsen er i japansk stil.",
+          "nl": "Zijn begroeting is in Japanse stijl.",
+          "pl": "Jego powitanie jest w japońskim stylu.",
+          "pt": "A saudação dele é no estilo japonês.",
+          "ro": "Salutul lui este în stil japonez.",
+          "ru": "Его приветствие в японском стиле.",
+          "sv": "Hans hälsning är i japansk stil.",
+          "tr": "Onun selamı Japon tarzındadır.",
+          "uk": "Його привітання в японському стилі.",
+          "vi": "Lời chào của anh ấy theo kiểu Nhật.",
+          "yue": "佢嘅打招呼方式係日本式。",
+          "zh-Hans": "他的问候是日本式的。"
+        },
+        "proposed_sentence": "彼の挨拶は日本式です。",
+        "proposed_translations": {
+          "en": "His greeting is in the Japanese style.",
+          "ar": "تحيته على الطريقة اليابانية.",
+          "cs": "Jeho pozdrav je japonského stylu.",
+          "da": "Hans hilsen er i japansk stil.",
+          "de": "Seine Begrüßung ist japanischer Art.",
+          "el": "Ο χαιρετισμός του είναι ιαπωνικού τύπου.",
+          "es": "Su saludo es al estilo japonés.",
+          "fi": "Hänen tervehdyksensä on japanilaista tyyliä.",
+          "fr": "Sa salutation est de style japonais.",
+          "he": "הברכה שלו היא בסגנון יפני.",
+          "hi": "उसका अभिवादन जापानी शैली का है।",
+          "hu": "Az ő köszönése japán stílusú.",
+          "id": "Salamannya bergaya Jepang.",
+          "it": "Il suo saluto è in stile giapponese.",
+          "ko": "그의 인사는 일본식입니다.",
+          "nb": "Hans hilsen er i japansk stil.",
+          "nl": "Zijn begroeting is in Japanse stijl.",
+          "pl": "Jego powitanie jest w japońskim stylu.",
+          "pt": "A saudação dele é no estilo japonês.",
+          "ro": "Salutul lui este în stil japonez.",
+          "ru": "Его приветствие в японском стиле.",
+          "sv": "Hans hälsning är i japansk stil.",
+          "tr": "Onun selamı Japon tarzındadır.",
+          "uk": "Його привітання в японському стилі.",
+          "vi": "Lời chào của anh ấy theo kiểu Nhật.",
+          "yue": "佢嘅打招呼方式係日本式。",
+          "zh-Hans": "他的问候是日本式的。"
+        },
+        "old_ruby_source": "彼[かれ]のあいさつは日本[にっぽん]式[しき]です。",
+        "proposed_ruby_source": "彼[かれ]の挨拶[あいさつ]は日本[にっぽん]式[しき]です。",
+        "old_japanese": "彼のあいさつは日本式です。",
+        "old_english": "His greeting is the Japanese style.",
+        "proposed_japanese": "彼の挨拶は日本式です。",
+        "proposed_english": "His greeting is in the Japanese style.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "ja",
+          "sentence": "彼の挨拶は日本式です。",
+          "tokens": [
+            {
+              "surface": "彼",
+              "lemma": "彼",
+              "pos": "代名詞/*/*/*/*/*",
+              "upos": "PRON",
+              "xpos": "代名詞",
+              "feats": {},
+              "start": 0,
+              "end": 1,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "かれ",
+              "ruby_text": "彼[かれ]",
+              "ruby_spans": [
+                {
+                  "base": "彼",
+                  "reading": "かれ",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "かれ",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "の",
+              "lemma": "の",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 1,
+              "end": 2,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "の",
+              "ruby_text": "の",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "の"
+            },
+            {
+              "surface": "挨拶",
+              "lemma": "挨拶",
+              "pos": "名詞/普通名詞/サ変可能/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 2,
+              "end": 4,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "あいさつ",
+              "ruby_text": "挨拶[あいさつ]",
+              "ruby_spans": [
+                {
+                  "base": "挨拶",
+                  "reading": "あいさつ",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "あいさつ",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "は",
+              "lemma": "は",
+              "pos": "助詞/係助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 4,
+              "end": 5,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "は",
+              "ruby_text": "は",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "は"
+            },
+            {
+              "surface": "日本",
+              "lemma": "日本",
+              "pos": "名詞/固有名詞/地名/国/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 5,
+              "end": 7,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "にっぽん",
+              "ruby_text": "日本[にっぽん]",
+              "ruby_spans": [
+                {
+                  "base": "日本",
+                  "reading": "にっぽん",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "にっぽん",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "式",
+              "lemma": "式",
+              "pos": "接尾辞/名詞的/一般/*/*/*",
+              "upos": "SUFFIX",
+              "xpos": "接尾辞",
+              "feats": {},
+              "start": 7,
+              "end": 8,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "しき",
+              "ruby_text": "式[しき]",
+              "ruby_spans": [
+                {
+                  "base": "式",
+                  "reading": "しき",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "しき",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "です",
+              "lemma": "です",
+              "pos": "助動詞/*/*/*/助動詞-デス/終止形-一般",
+              "upos": "AUX",
+              "xpos": "助動詞",
+              "feats": {},
+              "start": 8,
+              "end": 10,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "です",
+              "ruby_text": "です",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "です"
+            },
+            {
+              "surface": "。",
+              "lemma": "。",
+              "pos": "補助記号/句点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 10,
+              "end": 11,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "。",
+              "ruby_text": "。",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "。"
+            }
+          ],
+          "reading": "かれのあいさつはにっぽんしきです。",
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "warnings": [
+            "mediawiki ruby hints applied"
+          ]
+        },
+        "generated_tokens": [
+          {
+            "surface": "彼",
+            "lemma": "彼",
+            "pos": "代名詞/*/*/*/*/*",
+            "upos": "PRON",
+            "xpos": "代名詞",
+            "feats": {},
+            "start": 0,
+            "end": 1,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "かれ",
+            "ruby_text": "彼[かれ]",
+            "ruby_spans": [
+              {
+                "base": "彼",
+                "reading": "かれ",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "かれ",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "の",
+            "lemma": "の",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 1,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "の",
+            "ruby_text": "の",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "の"
+          },
+          {
+            "surface": "挨拶",
+            "lemma": "挨拶",
+            "pos": "名詞/普通名詞/サ変可能/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 2,
+            "end": 4,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "あいさつ",
+            "ruby_text": "挨拶[あいさつ]",
+            "ruby_spans": [
+              {
+                "base": "挨拶",
+                "reading": "あいさつ",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "あいさつ",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "は",
+            "lemma": "は",
+            "pos": "助詞/係助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 4,
+            "end": 5,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "は",
+            "ruby_text": "は",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "は"
+          },
+          {
+            "surface": "日本",
+            "lemma": "日本",
+            "pos": "名詞/固有名詞/地名/国/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 5,
+            "end": 7,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "にっぽん",
+            "ruby_text": "日本[にっぽん]",
+            "ruby_spans": [
+              {
+                "base": "日本",
+                "reading": "にっぽん",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "にっぽん",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "式",
+            "lemma": "式",
+            "pos": "接尾辞/名詞的/一般/*/*/*",
+            "upos": "SUFFIX",
+            "xpos": "接尾辞",
+            "feats": {},
+            "start": 7,
+            "end": 8,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "しき",
+            "ruby_text": "式[しき]",
+            "ruby_spans": [
+              {
+                "base": "式",
+                "reading": "しき",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "しき",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "です",
+            "lemma": "です",
+            "pos": "助動詞/*/*/*/助動詞-デス/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 8,
+            "end": 10,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "です",
+            "ruby_text": "です",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "です"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 10,
+            "end": 11,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
+          }
+        ],
+        "generated_reading": "かれのあいさつはにっぽんしきです。",
+        "analyzer": "sudachipy_sudachidict_core_c",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-18T17:39:06Z",
+        "updated_utc": "2026-10-18T17:40:52Z",
+        "applied_utc": "2026-10-18T17:40:52Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-18T17:40:52Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -775,14 +1234,8 @@
     "fu": [
       "このとけいはあなろぐしきです。",
       "このしきでこたえをだします。",
-      "かれのあいさつはにほんしきです。",
+      "かれのあいさつはにっぽんしきです。",
       "このえあこんはしょうえねしきです。"
-    ],
-    "en": [
-      "This clock is analog-style.",
-      "I’ll get the answer with this formula.",
-      "His greeting is the Japanese style.",
-      "This air conditioner is energy-saving type."
     ],
     "generation": {
       "generator": "vocomipedia_source_generator.py",
@@ -821,190 +1274,6 @@
         "parts_of_speech": "Noun; Noun, used as a suffix"
       }
     },
-    "word_en": "way; style; fashion; method; system; form; type",
-    "word_es": "modo; estilo",
-    "word_fr": "style; méthode",
-    "word_de": "Art; Methode",
-    "word_it": "stile; metodo",
-    "word_ko": "방식",
-    "word_zh-Hans": "方式",
-    "word_yue": "方式",
-    "word_ru": "способ; стиль",
-    "word_pt": "modo; estilo",
-    "word_he": "אופן; סגנון",
-    "word_tr": "tarz; yöntem",
-    "word_vi": "cách; kiểu",
-    "word_ar": "طريقة; أسلوب",
-    "word_nl": "wijze; methode",
-    "word_uk": "спосіб; стиль",
-    "word_hu": "mód; stílus",
-    "word_hi": "ढंग; तरीका",
-    "word_pl": "sposób; styl",
-    "word_el": "τρόπος; μέθοδος",
-    "word_nb": "måte; metode",
-    "word_id": "cara; metode",
-    "word_sv": "sätt; metod",
-    "word_ro": "mod; stil",
-    "word_cs": "způsob; styl",
-    "word_da": "måde; metode",
-    "word_fi": "tapa; menetelmä",
-    "word_ja": "式",
-    "ar": [
-      "هذه الساعة بنمط تناظري.",
-      "سأحصل على الجواب بهذه المعادلة.",
-      "تحيته على الطريقة اليابانية.",
-      "هذا المكيف من النوع الموفر للطاقة."
-    ],
-    "cs": [
-      "Tyto hodiny jsou analogového typu.",
-      "Dostanu odpověď pomocí tohoto vzorce.",
-      "Jeho pozdrav je japonského stylu.",
-      "Tato klimatizace je úsporného typu."
-    ],
-    "da": [
-      "Dette ur er analogt.",
-      "Jeg får svaret med denne formel.",
-      "Hans hilsen er i japansk stil.",
-      "Denne aircondition er energibesparende."
-    ],
-    "de": [
-      "Diese Uhr ist analog.",
-      "Ich bekomme die Antwort mit dieser Formel.",
-      "Seine Begrüßung ist japanischer Art.",
-      "Diese Klimaanlage ist energiesparend."
-    ],
-    "el": [
-      "Αυτό το ρολόι είναι αναλογικού τύπου.",
-      "Θα βγάλω την απάντηση με αυτόν τον τύπο.",
-      "Ο χαιρετισμός του είναι ιαπωνικού τύπου.",
-      "Αυτό το κλιματιστικό είναι εξοικονόμησης ενέργειας."
-    ],
-    "es": [
-      "Este reloj es de estilo analógico.",
-      "Sacaré la respuesta con esta fórmula.",
-      "Su saludo es al estilo japonés.",
-      "Este aire acondicionado es de bajo consumo."
-    ],
-    "fi": [
-      "Tämä kello on analoginen.",
-      "Saan vastauksen tällä kaavalla.",
-      "Hänen tervehdyksensä on japanilaista tyyliä.",
-      "Tämä ilmastointilaite on energiatehokas."
-    ],
-    "fr": [
-      "Cette horloge est de style analogique.",
-      "J’obtiendrai la réponse avec cette formule.",
-      "Sa salutation est de style japonais.",
-      "Ce climatiseur est économe en énergie."
-    ],
-    "he": [
-      "השעון הזה הוא בסגנון אנלוגי.",
-      "אמצא את התשובה בעזרת הנוסחה הזאת.",
-      "הברכה שלו היא בסגנון יפני.",
-      "המזגן הזה חסכוני באנרגיה."
-    ],
-    "hi": [
-      "यह घड़ी एनालॉग शैली की है।",
-      "मैं इस सूत्र से जवाब निकाल लूँगा।",
-      "उसका अभिवादन जापानी शैली का है।",
-      "यह एयर कंडीशनर ऊर्जा-बचत वाला है।"
-    ],
-    "hu": [
-      "Ez az óra analóg típusú.",
-      "Ezzel a képlettel megkapom a választ.",
-      "Az ő köszönése japán stílusú.",
-      "Ez a légkondicionáló energiatakarékos."
-    ],
-    "id": [
-      "Jam ini bergaya analog.",
-      "Saya akan mendapatkan jawabannya dengan rumus ini.",
-      "Salamannya bergaya Jepang.",
-      "AC ini hemat energi."
-    ],
-    "it": [
-      "Questo orologio è di tipo analogico.",
-      "Troverò la risposta con questa formula.",
-      "Il suo saluto è in stile giapponese.",
-      "Questo condizionatore è a risparmio energetico."
-    ],
-    "ko": [
-      "이 시계는 아날로그식입니다.",
-      "이 식으로 답을 구할게요.",
-      "그의 인사는 일본식입니다.",
-      "이 에어컨은 에너지 절약형입니다."
-    ],
-    "nb": [
-      "Denne klokken er analog.",
-      "Jeg finner svaret med denne formelen.",
-      "Hans hilsen er i japansk stil.",
-      "Dette klimaanlegget er energieffektivt."
-    ],
-    "nl": [
-      "Dit horloge is analoog.",
-      "Ik krijg het antwoord met deze formule.",
-      "Zijn begroeting is in Japanse stijl.",
-      "Deze airco is energiezuinig."
-    ],
-    "pl": [
-      "Ten zegar jest analogowy.",
-      "Dostanę odpowiedź za pomocą tego wzoru.",
-      "Jego powitanie jest w japońskim stylu.",
-      "Ta klimatyzacja jest energooszczędna."
-    ],
-    "pt": [
-      "Este relógio é do tipo analógico.",
-      "Vou obter a resposta com esta fórmula.",
-      "A saudação dele é no estilo japonês.",
-      "Este ar-condicionado é econômico em energia."
-    ],
-    "ro": [
-      "Acest ceas este de tip analogic.",
-      "Voi obține răspunsul cu această formulă.",
-      "Salutul lui este în stil japonez.",
-      "Acest aparat de aer condiționat este eficient energetic."
-    ],
-    "ru": [
-      "Эти часы аналоговые.",
-      "Я найду ответ по этой формуле.",
-      "Его приветствие в японском стиле.",
-      "Этот кондиционер энергосберегающий."
-    ],
-    "sv": [
-      "Den här klockan är analog.",
-      "Jag får fram svaret med den här formeln.",
-      "Hans hälsning är i japansk stil.",
-      "Den här luftkonditioneringen är energieffektiv."
-    ],
-    "tr": [
-      "Bu saat analog türdedir.",
-      "Bu formülle cevabı bulacağım.",
-      "Onun selamı Japon tarzındadır.",
-      "Bu klima enerji tasarruflu."
-    ],
-    "uk": [
-      "Цей годинник аналоговий.",
-      "Я знайду відповідь за цією формулою.",
-      "Його привітання в японському стилі.",
-      "Цей кондиціонер енергоощадний."
-    ],
-    "vi": [
-      "Chiếc đồng hồ này là loại analog.",
-      "Tôi sẽ tìm ra đáp án bằng công thức này.",
-      "Lời chào của anh ấy theo kiểu Nhật.",
-      "Máy điều hòa này tiết kiệm điện."
-    ],
-    "yue": [
-      "呢個鐘係類比式。",
-      "我會用呢條公式搵到答案。",
-      "佢嘅打招呼方式係日本式。",
-      "呢部冷氣機係慳電型。"
-    ],
-    "zh-Hans": [
-      "这个钟是模拟式的。",
-      "我会用这个公式得出答案。",
-      "他的问候是日本式的。",
-      "这台空调是节能型的。"
-    ],
     "pos_analysis": [
       {
         "sentence": "この時計はアナログ式です。",
@@ -1296,7 +1565,7 @@
         "difficulty_aggregated": null
       },
       {
-        "sentence": "彼のあいさつは日本式です。",
+        "sentence": "彼の挨拶は日本式です。",
         "tokens": [
           {
             "surface": "彼",
@@ -1318,8 +1587,9 @@
                 "length": 1
               }
             ],
-            "ruby_confidence": "high",
-            "furigana": "かれ"
+            "ruby_confidence": "reviewed",
+            "furigana": "かれ",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "の",
@@ -1338,20 +1608,28 @@
             "furigana": "の"
           },
           {
-            "surface": "あいさつ",
-            "lemma": "あいさつ",
+            "surface": "挨拶",
+            "lemma": "挨拶",
             "pos": "名詞/普通名詞/サ変可能/*/*/*",
             "upos": "NOUN",
             "xpos": "名詞",
             "feats": {},
             "start": 2,
-            "end": 6,
+            "end": 4,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "あいさつ",
-            "ruby_text": "あいさつ",
-            "ruby_spans": [],
-            "ruby_confidence": "high",
-            "furigana": "あいさつ"
+            "ruby_text": "挨拶[あいさつ]",
+            "ruby_spans": [
+              {
+                "base": "挨拶",
+                "reading": "あいさつ",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "あいさつ",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "は",
@@ -1360,8 +1638,8 @@
             "upos": "PART",
             "xpos": "助詞",
             "feats": {},
-            "start": 6,
-            "end": 7,
+            "start": 4,
+            "end": 5,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "は",
             "ruby_text": "は",
@@ -1376,8 +1654,8 @@
             "upos": "NOUN",
             "xpos": "名詞",
             "feats": {},
-            "start": 7,
-            "end": 9,
+            "start": 5,
+            "end": 7,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "にっぽん",
             "ruby_text": "日本[にっぽん]",
@@ -1389,8 +1667,9 @@
                 "length": 2
               }
             ],
-            "ruby_confidence": "medium",
-            "furigana": "にっぽん"
+            "ruby_confidence": "reviewed",
+            "furigana": "にっぽん",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "式",
@@ -1399,8 +1678,8 @@
             "upos": "SUFFIX",
             "xpos": "接尾辞",
             "feats": {},
-            "start": 9,
-            "end": 10,
+            "start": 7,
+            "end": 8,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "しき",
             "ruby_text": "式[しき]",
@@ -1412,8 +1691,9 @@
                 "length": 1
               }
             ],
-            "ruby_confidence": "high",
+            "ruby_confidence": "reviewed",
             "furigana": "しき",
+            "ruby_source": "mediawiki_sentence_ruby",
             "is_main_word": true
           },
           {
@@ -1423,8 +1703,8 @@
             "upos": "AUX",
             "xpos": "助動詞",
             "feats": {},
-            "start": 10,
-            "end": 12,
+            "start": 8,
+            "end": 10,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "です",
             "ruby_text": "です",
@@ -1439,8 +1719,8 @@
             "upos": "PUNCT",
             "xpos": "補助記号",
             "feats": {},
-            "start": 12,
-            "end": 13,
+            "start": 10,
+            "end": 11,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "。",
             "ruby_text": "。",
@@ -1584,6 +1864,196 @@
         ],
         "difficulty_aggregated": null
       }
+    ],
+    "word_en": "way; style; fashion; method; system; form; type",
+    "word_es": "modo; estilo",
+    "word_fr": "style; méthode",
+    "word_de": "Art; Methode",
+    "word_it": "stile; metodo",
+    "word_ko": "방식",
+    "word_zh-Hans": "方式",
+    "word_yue": "方式",
+    "word_ru": "способ; стиль",
+    "word_pt": "modo; estilo",
+    "word_he": "אופן; סגנון",
+    "word_tr": "tarz; yöntem",
+    "word_vi": "cách; kiểu",
+    "word_ar": "طريقة; أسلوب",
+    "word_nl": "wijze; methode",
+    "word_uk": "спосіб; стиль",
+    "word_hu": "mód; stílus",
+    "word_hi": "ढंग; तरीका",
+    "word_pl": "sposób; styl",
+    "word_el": "τρόπος; μέθοδος",
+    "word_nb": "måte; metode",
+    "word_id": "cara; metode",
+    "word_sv": "sätt; metod",
+    "word_ro": "mod; stil",
+    "word_cs": "způsob; styl",
+    "word_da": "måde; metode",
+    "word_fi": "tapa; menetelmä",
+    "word_ja": "式",
+    "ar": [
+      "هذه الساعة بنمط تناظري.",
+      "سأحصل على الجواب بهذه المعادلة.",
+      "تحيته على الطريقة اليابانية.",
+      "هذا المكيف من النوع الموفر للطاقة."
+    ],
+    "cs": [
+      "Tyto hodiny jsou analogového typu.",
+      "Dostanu odpověď pomocí tohoto vzorce.",
+      "Jeho pozdrav je japonského stylu.",
+      "Tato klimatizace je úsporného typu."
+    ],
+    "da": [
+      "Dette ur er analogt.",
+      "Jeg får svaret med denne formel.",
+      "Hans hilsen er i japansk stil.",
+      "Denne aircondition er energibesparende."
+    ],
+    "de": [
+      "Diese Uhr ist analog.",
+      "Ich bekomme die Antwort mit dieser Formel.",
+      "Seine Begrüßung ist japanischer Art.",
+      "Diese Klimaanlage ist energiesparend."
+    ],
+    "el": [
+      "Αυτό το ρολόι είναι αναλογικού τύπου.",
+      "Θα βγάλω την απάντηση με αυτόν τον τύπο.",
+      "Ο χαιρετισμός του είναι ιαπωνικού τύπου.",
+      "Αυτό το κλιματιστικό εξοικονομεί ενέργεια."
+    ],
+    "en": [
+      "This is an analog clock.",
+      "I’ll get the answer with this formula.",
+      "His greeting is the Japanese style.",
+      "This air conditioner is an energy-saving model."
+    ],
+    "es": [
+      "Este reloj es de estilo analógico.",
+      "Sacaré la respuesta con esta fórmula.",
+      "Su saludo es al estilo japonés.",
+      "Este aire acondicionado es de bajo consumo."
+    ],
+    "fi": [
+      "Tämä kello on analoginen.",
+      "Saan vastauksen tällä kaavalla.",
+      "Hänen tervehdyksensä on japanilaista tyyliä.",
+      "Tämä ilmastointilaite on energiatehokas."
+    ],
+    "fr": [
+      "Cette horloge est de style analogique.",
+      "J’obtiendrai la réponse avec cette formule.",
+      "Sa salutation est de style japonais.",
+      "Ce climatiseur est économe en énergie."
+    ],
+    "he": [
+      "השעון הזה הוא בסגנון אנלוגי.",
+      "אמצא את התשובה בעזרת הנוסחה הזאת.",
+      "הברכה שלו היא בסגנון יפני.",
+      "המזגן הזה חסכוני באנרגיה."
+    ],
+    "hi": [
+      "यह घड़ी एनालॉग शैली की है।",
+      "मैं इस सूत्र से जवाब निकाल लूँगा।",
+      "उसका अभिवादन जापानी शैली का है।",
+      "यह एयर कंडीशनर ऊर्जा-बचत वाला है।"
+    ],
+    "hu": [
+      "Ez az óra analóg típusú.",
+      "Ezzel a képlettel megkapom a választ.",
+      "Az ő köszönése japán stílusú.",
+      "Ez a légkondicionáló energiatakarékos."
+    ],
+    "id": [
+      "Jam ini bergaya analog.",
+      "Saya akan mendapatkan jawabannya dengan rumus ini.",
+      "Salamannya bergaya Jepang.",
+      "AC ini hemat energi."
+    ],
+    "it": [
+      "Questo orologio è di tipo analogico.",
+      "Troverò la risposta con questa formula.",
+      "Il suo saluto è in stile giapponese.",
+      "Questo condizionatore è a risparmio energetico."
+    ],
+    "ko": [
+      "이 시계는 아날로그식입니다.",
+      "이 식으로 답을 구할게요.",
+      "그의 인사는 일본식입니다.",
+      "이 에어컨은 에너지 절약형입니다."
+    ],
+    "nb": [
+      "Denne klokken er analog.",
+      "Jeg finner svaret med denne formelen.",
+      "Hans hilsen er i japansk stil.",
+      "Dette klimaanlegget er energieffektivt."
+    ],
+    "nl": [
+      "Dit horloge is analoog.",
+      "Ik krijg het antwoord met deze formule.",
+      "Zijn begroeting is in Japanse stijl.",
+      "Deze airco is energiezuinig."
+    ],
+    "pl": [
+      "Ten zegar jest analogowy.",
+      "Dostanę odpowiedź za pomocą tego wzoru.",
+      "Jego powitanie jest w japońskim stylu.",
+      "Ta klimatyzacja jest energooszczędna."
+    ],
+    "pt": [
+      "Este relógio é do tipo analógico.",
+      "Vou obter a resposta com esta fórmula.",
+      "A saudação dele é no estilo japonês.",
+      "Este ar-condicionado economiza energia."
+    ],
+    "ro": [
+      "Acest ceas este de tip analogic.",
+      "Voi obține răspunsul cu această formulă.",
+      "Salutul lui este în stil japonez.",
+      "Acest aparat de aer condiționat este eficient energetic."
+    ],
+    "ru": [
+      "Эти часы аналоговые.",
+      "Я найду ответ по этой формуле.",
+      "Его приветствие в японском стиле.",
+      "Этот кондиционер энергосберегающий."
+    ],
+    "sv": [
+      "Den här klockan är analog.",
+      "Jag får fram svaret med den här formeln.",
+      "Hans hälsning är i japansk stil.",
+      "Den här luftkonditioneringen är energieffektiv."
+    ],
+    "tr": [
+      "Bu saat analog türdedir.",
+      "Bu formülle cevabı bulacağım.",
+      "Onun selamı Japon tarzındadır.",
+      "Bu klima enerji tasarruflu."
+    ],
+    "uk": [
+      "Цей годинник аналоговий.",
+      "Я знайду відповідь за цією формулою.",
+      "Його привітання в японському стилі.",
+      "Цей кондиціонер енергоощадний."
+    ],
+    "vi": [
+      "Chiếc đồng hồ này là loại analog.",
+      "Tôi sẽ tìm ra đáp án bằng công thức này.",
+      "Lời chào của anh ấy theo kiểu Nhật.",
+      "Máy điều hòa này tiết kiệm điện."
+    ],
+    "yue": [
+      "呢個鐘係類比式。",
+      "我會用呢條公式搵到答案。",
+      "佢嘅打招呼方式係日本式。",
+      "呢部冷氣機係慳電型。"
+    ],
+    "zh-Hans": [
+      "这个钟是模拟式的。",
+      "我会用这个公式得出答案。",
+      "他的问候是日本式的。",
+      "这台空调是节能型的。"
     ]
   }
 }

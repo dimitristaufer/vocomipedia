@@ -42,7 +42,7 @@
   },
   "sentences": [
     {
-      "target": "きょうのあつさは異常だ。",
+      "target": "今日の暑さは異常だ。",
       "reading": "きょうのあつさはいじょうだ。",
       "translations": {
         "en": "Today's heat is abnormal.",
@@ -75,20 +75,28 @@
       },
       "tokens": [
         {
-          "surface": "きょう",
-          "lemma": "きょう",
+          "surface": "今日",
+          "lemma": "今日",
           "pos": "名詞/普通名詞/副詞可能/*/*/*",
           "upos": "NOUN",
           "xpos": "名詞",
           "feats": {},
           "start": 0,
-          "end": 3,
+          "end": 2,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "きょう",
-          "ruby_text": "きょう",
-          "ruby_spans": [],
-          "ruby_confidence": "high",
-          "furigana": "きょう"
+          "ruby_text": "今日[きょう]",
+          "ruby_spans": [
+            {
+              "base": "今日",
+              "reading": "きょう",
+              "start": 0,
+              "length": 2
+            }
+          ],
+          "ruby_confidence": "reviewed",
+          "furigana": "きょう",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "の",
@@ -97,8 +105,8 @@
           "upos": "PART",
           "xpos": "助詞",
           "feats": {},
-          "start": 3,
-          "end": 4,
+          "start": 2,
+          "end": 3,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "の",
           "ruby_text": "の",
@@ -107,36 +115,28 @@
           "furigana": "の"
         },
         {
-          "surface": "あつ",
-          "lemma": "あつい",
-          "pos": "形容詞/一般/*/*/形容詞/語幹-一般",
-          "upos": "ADJ",
-          "xpos": "形容詞",
+          "surface": "暑さ",
+          "lemma": "暑さ",
+          "pos": "名詞/普通名詞/一般/*/*/*",
+          "upos": "NOUN",
+          "xpos": "名詞",
           "feats": {},
-          "start": 4,
-          "end": 6,
+          "start": 3,
+          "end": 5,
           "analyzer": "sudachipy_sudachidict_core_c",
-          "reading_kana": "あつ",
-          "ruby_text": "あつ",
-          "ruby_spans": [],
-          "ruby_confidence": "high",
-          "furigana": "あつ"
-        },
-        {
-          "surface": "さ",
-          "lemma": "さ",
-          "pos": "接尾辞/名詞的/一般/*/*/*",
-          "upos": "SUFFIX",
-          "xpos": "接尾辞",
-          "feats": {},
-          "start": 6,
-          "end": 7,
-          "analyzer": "sudachipy_sudachidict_core_c",
-          "reading_kana": "さ",
-          "ruby_text": "さ",
-          "ruby_spans": [],
-          "ruby_confidence": "high",
-          "furigana": "さ"
+          "reading_kana": "あつさ",
+          "ruby_text": "暑[あつ]さ",
+          "ruby_spans": [
+            {
+              "base": "暑",
+              "reading": "あつ",
+              "start": 0,
+              "length": 1
+            }
+          ],
+          "ruby_confidence": "reviewed",
+          "furigana": "あつさ",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "は",
@@ -145,8 +145,8 @@
           "upos": "PART",
           "xpos": "助詞",
           "feats": {},
-          "start": 7,
-          "end": 8,
+          "start": 5,
+          "end": 6,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "は",
           "ruby_text": "は",
@@ -161,8 +161,8 @@
           "upos": "NOUN",
           "xpos": "名詞",
           "feats": {},
-          "start": 8,
-          "end": 10,
+          "start": 6,
+          "end": 8,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "いじょう",
           "ruby_text": "異常[いじょう]",
@@ -174,8 +174,9 @@
               "length": 2
             }
           ],
-          "ruby_confidence": "medium",
+          "ruby_confidence": "reviewed",
           "furigana": "いじょう",
+          "ruby_source": "mediawiki_sentence_ruby",
           "is_main_word": true
         },
         {
@@ -185,8 +186,8 @@
           "upos": "AUX",
           "xpos": "助動詞",
           "feats": {},
-          "start": 10,
-          "end": 11,
+          "start": 8,
+          "end": 9,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "だ",
           "ruby_text": "だ",
@@ -201,8 +202,8 @@
           "upos": "PUNCT",
           "xpos": "補助記号",
           "feats": {},
-          "start": 11,
-          "end": 12,
+          "start": 9,
+          "end": 10,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "。",
           "ruby_text": "。",
@@ -547,11 +548,11 @@
       "difficulty": null
     },
     {
-      "target": "彼は異常に早く走る。",
+      "target": "彼は異常に速く走る。",
       "reading": "かれはいじょうにはやくはしる。",
       "translations": {
         "en": "He runs unusually fast.",
-        "ar": "يعدو بسرعة كبيرة بشكل غير عادي.",
+        "ar": "يركض بسرعة غير معتادة.",
         "cs": "Běží neobvykle rychle.",
         "da": "Han løber usædvanligt hurtigt.",
         "de": "Er läuft ungewöhnlich schnell.",
@@ -561,8 +562,8 @@
         "fr": "Il court très vite, de façon inhabituelle.",
         "he": "הוא רץ מהר באופן חריג.",
         "hi": "वह असामान्य रूप से तेज़ दौड़ता है।",
-        "hu": "Nagyon gyorsan fut, szokatlanul gyorsan.",
-        "id": "Dia berlari sangat cepat, tidak biasa.",
+        "hu": "Szokatlanul gyorsan fut.",
+        "id": "Dia berlari luar biasa cepat.",
         "it": "Corre insolitamente veloce.",
         "ko": "그는 이상할 정도로 빨리 달린다.",
         "nb": "Han løper uvanlig fort.",
@@ -599,8 +600,9 @@
               "length": 1
             }
           ],
-          "ruby_confidence": "high",
-          "furigana": "かれ"
+          "ruby_confidence": "reviewed",
+          "furigana": "かれ",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "は",
@@ -638,8 +640,9 @@
               "length": 2
             }
           ],
-          "ruby_confidence": "medium",
+          "ruby_confidence": "reviewed",
           "furigana": "いじょう",
+          "ruby_source": "mediawiki_sentence_ruby",
           "is_main_word": true
         },
         {
@@ -659,8 +662,8 @@
           "furigana": "に"
         },
         {
-          "surface": "早く",
-          "lemma": "早い",
+          "surface": "速く",
+          "lemma": "速い",
           "pos": "形容詞/一般/*/*/形容詞/連用形-一般",
           "upos": "ADJ",
           "xpos": "形容詞",
@@ -669,17 +672,18 @@
           "end": 7,
           "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "はやく",
-          "ruby_text": "早[はや]く",
+          "ruby_text": "速[はや]く",
           "ruby_spans": [
             {
-              "base": "早",
+              "base": "速",
               "reading": "はや",
               "start": 0,
               "length": 1
             }
           ],
-          "ruby_confidence": "high",
-          "furigana": "はやく"
+          "ruby_confidence": "reviewed",
+          "furigana": "はやく",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "走る",
@@ -701,8 +705,9 @@
               "length": 1
             }
           ],
-          "ruby_confidence": "high",
-          "furigana": "はしる"
+          "ruby_confidence": "reviewed",
+          "furigana": "はしる",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "。",
@@ -735,8 +740,807 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-13T08:15:39Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:Ja n3/c19ea4f6bf0bc4ff",
+      "revision_id": 80179,
+      "parent_revision_id": 68374,
+      "revision_timestamp_utc": "2026-10-13T08:15:39Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Standardized Japanese heat/speed kanji and removed redundant or awkward adverb phrasing.",
+      "pulled_utc": "2026-10-18T17:39:14Z",
+      "applied_utc": "2026-10-18T17:39:52Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-6e78b4095642ef59",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "ja_n3:c19ea4f6bf0bc4ff",
+        "pack_code": "ja_n3",
+        "entry_id": "異常",
+        "language": "ja",
+        "sentence_index": 1,
+        "old_sentence": "きょうのあつさは異常だ。",
+        "old_translations": {
+          "en": "Today's heat is abnormal.",
+          "ar": "حرارة اليوم غير عادية.",
+          "cs": "Dnešní vedro je neobvyklé.",
+          "da": "Dagens varme er usædvanlig.",
+          "de": "Die heutige Hitze ist ungewöhnlich.",
+          "el": "Η σημερινή ζέστη είναι ασυνήθιστη.",
+          "es": "El calor de hoy es anormal.",
+          "fi": "Tämän päivän helle on poikkeuksellinen.",
+          "fr": "La chaleur d'aujourd'hui est anormale.",
+          "he": "החום של היום חריג.",
+          "hi": "आज की गर्मी असामान्य है।",
+          "hu": "A mai hőség szokatlan.",
+          "id": "Panas hari ini tidak normal.",
+          "it": "Il caldo di oggi è anomalo.",
+          "ko": "오늘 더위는 이상하다.",
+          "nb": "Dagens varme er unormal.",
+          "nl": "De hitte van vandaag is abnormaal.",
+          "pl": "Dzisiejszy upał jest niezwykły.",
+          "pt": "O calor de hoje está anormal.",
+          "ro": "Căldura de azi este anormală.",
+          "ru": "Сегодняшняя жара ненормальная.",
+          "sv": "Dagens värme är ovanlig.",
+          "tr": "Bugünkü sıcaklık anormal.",
+          "uk": "Сьогоднішня спека ненормальна.",
+          "vi": "Cái nóng hôm nay thật bất thường.",
+          "yue": "今日嘅熱得唔正常。",
+          "zh-Hans": "今天的热度异常高。"
+        },
+        "proposed_sentence": "今日の暑さは異常だ。",
+        "proposed_translations": {
+          "en": "Today's heat is abnormal.",
+          "ar": "حرارة اليوم غير عادية.",
+          "cs": "Dnešní vedro je neobvyklé.",
+          "da": "Dagens varme er usædvanlig.",
+          "de": "Die heutige Hitze ist ungewöhnlich.",
+          "el": "Η σημερινή ζέστη είναι ασυνήθιστη.",
+          "es": "El calor de hoy es anormal.",
+          "fi": "Tämän päivän helle on poikkeuksellinen.",
+          "fr": "La chaleur d'aujourd'hui est anormale.",
+          "he": "החום של היום חריג.",
+          "hi": "आज की गर्मी असामान्य है।",
+          "hu": "A mai hőség szokatlan.",
+          "id": "Panas hari ini tidak normal.",
+          "it": "Il caldo di oggi è anomalo.",
+          "ko": "오늘 더위는 이상하다.",
+          "nb": "Dagens varme er unormal.",
+          "nl": "De hitte van vandaag is abnormaal.",
+          "pl": "Dzisiejszy upał jest niezwykły.",
+          "pt": "O calor de hoje está anormal.",
+          "ro": "Căldura de azi este anormală.",
+          "ru": "Сегодняшняя жара ненормальная.",
+          "sv": "Dagens värme är ovanlig.",
+          "tr": "Bugünkü sıcaklık anormal.",
+          "uk": "Сьогоднішня спека ненормальна.",
+          "vi": "Cái nóng hôm nay thật bất thường.",
+          "yue": "今日嘅熱得唔正常。",
+          "zh-Hans": "今天的热度异常高。"
+        },
+        "old_ruby_source": "きょうのあつさは異常[いじょう]だ。",
+        "proposed_ruby_source": "今日[きょう]の暑[あつ]さは異常[いじょう]だ。",
+        "old_japanese": "きょうのあつさは異常だ。",
+        "old_english": "Today's heat is abnormal.",
+        "proposed_japanese": "今日の暑さは異常だ。",
+        "proposed_english": "Today's heat is abnormal.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "ja",
+          "sentence": "今日の暑さは異常だ。",
+          "tokens": [
+            {
+              "surface": "今日",
+              "lemma": "今日",
+              "pos": "名詞/普通名詞/副詞可能/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 0,
+              "end": 2,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "きょう",
+              "ruby_text": "今日[きょう]",
+              "ruby_spans": [
+                {
+                  "base": "今日",
+                  "reading": "きょう",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "きょう",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "の",
+              "lemma": "の",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 2,
+              "end": 3,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "の",
+              "ruby_text": "の",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "の"
+            },
+            {
+              "surface": "暑さ",
+              "lemma": "暑さ",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 3,
+              "end": 5,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "あつさ",
+              "ruby_text": "暑[あつ]さ",
+              "ruby_spans": [
+                {
+                  "base": "暑",
+                  "reading": "あつ",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "あつさ",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "は",
+              "lemma": "は",
+              "pos": "助詞/係助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 5,
+              "end": 6,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "は",
+              "ruby_text": "は",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "は"
+            },
+            {
+              "surface": "異常",
+              "lemma": "異常",
+              "pos": "名詞/普通名詞/形状詞可能/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 6,
+              "end": 8,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "いじょう",
+              "ruby_text": "異常[いじょう]",
+              "ruby_spans": [
+                {
+                  "base": "異常",
+                  "reading": "いじょう",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "いじょう",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "だ",
+              "lemma": "だ",
+              "pos": "助動詞/*/*/*/助動詞-ダ/終止形-一般",
+              "upos": "AUX",
+              "xpos": "助動詞",
+              "feats": {},
+              "start": 8,
+              "end": 9,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "だ",
+              "ruby_text": "だ",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "だ"
+            },
+            {
+              "surface": "。",
+              "lemma": "。",
+              "pos": "補助記号/句点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 9,
+              "end": 10,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "。",
+              "ruby_text": "。",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "。"
+            }
+          ],
+          "reading": "きょうのあつさはいじょうだ。",
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "warnings": [
+            "mediawiki ruby hints applied"
+          ]
+        },
+        "generated_tokens": [
+          {
+            "surface": "今日",
+            "lemma": "今日",
+            "pos": "名詞/普通名詞/副詞可能/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "きょう",
+            "ruby_text": "今日[きょう]",
+            "ruby_spans": [
+              {
+                "base": "今日",
+                "reading": "きょう",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "きょう",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "の",
+            "lemma": "の",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 2,
+            "end": 3,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "の",
+            "ruby_text": "の",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "の"
+          },
+          {
+            "surface": "暑さ",
+            "lemma": "暑さ",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 3,
+            "end": 5,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "あつさ",
+            "ruby_text": "暑[あつ]さ",
+            "ruby_spans": [
+              {
+                "base": "暑",
+                "reading": "あつ",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "あつさ",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "は",
+            "lemma": "は",
+            "pos": "助詞/係助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 5,
+            "end": 6,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "は",
+            "ruby_text": "は",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "は"
+          },
+          {
+            "surface": "異常",
+            "lemma": "異常",
+            "pos": "名詞/普通名詞/形状詞可能/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 6,
+            "end": 8,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "いじょう",
+            "ruby_text": "異常[いじょう]",
+            "ruby_spans": [
+              {
+                "base": "異常",
+                "reading": "いじょう",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "いじょう",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "だ",
+            "lemma": "だ",
+            "pos": "助動詞/*/*/*/助動詞-ダ/終止形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 8,
+            "end": 9,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "だ",
+            "ruby_text": "だ",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "だ"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 9,
+            "end": 10,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
+          }
+        ],
+        "generated_reading": "きょうのあつさはいじょうだ。",
+        "analyzer": "sudachipy_sudachidict_core_c",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-18T17:39:14Z",
+        "updated_utc": "2026-10-18T17:40:52Z",
+        "applied_utc": "2026-10-18T17:40:52Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      },
+      {
+        "id": "sentprop-0480a3ecc2d1347b",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "ja_n3:c19ea4f6bf0bc4ff",
+        "pack_code": "ja_n3",
+        "entry_id": "異常",
+        "language": "ja",
+        "sentence_index": 4,
+        "old_sentence": "彼は異常に早く走る。",
+        "old_translations": {
+          "en": "He runs unusually fast.",
+          "ar": "يعدو بسرعة كبيرة بشكل غير عادي.",
+          "cs": "Běží neobvykle rychle.",
+          "da": "Han løber usædvanligt hurtigt.",
+          "de": "Er läuft ungewöhnlich schnell.",
+          "el": "Τρέχει ασυνήθιστα γρήγορα.",
+          "es": "Corre extraordinariamente rápido.",
+          "fi": "Hän juoksee epätavallisen nopeasti.",
+          "fr": "Il court très vite, de façon inhabituelle.",
+          "he": "הוא רץ מהר באופן חריג.",
+          "hi": "वह असामान्य रूप से तेज़ दौड़ता है।",
+          "hu": "Nagyon gyorsan fut, szokatlanul gyorsan.",
+          "id": "Dia berlari sangat cepat, tidak biasa.",
+          "it": "Corre insolitamente veloce.",
+          "ko": "그는 이상할 정도로 빨리 달린다.",
+          "nb": "Han løper uvanlig fort.",
+          "nl": "Hij rent ongewoon snel.",
+          "pl": "On biegnie niezwykle szybko.",
+          "pt": "Ele corre muito rápido, de um jeito incomum.",
+          "ro": "El aleargă neobișnuit de repede.",
+          "ru": "Он бегает необычайно быстро.",
+          "sv": "Han springer ovanligt fort.",
+          "tr": "O, alışılmadık derecede hızlı koşuyor.",
+          "uk": "Він біжить незвично швидко.",
+          "vi": "Anh ấy chạy nhanh một cách bất thường.",
+          "yue": "佢跑得異常咁快。",
+          "zh-Hans": "他跑得异常快。"
+        },
+        "proposed_sentence": "彼は異常に速く走る。",
+        "proposed_translations": {
+          "en": "He runs unusually fast.",
+          "ar": "يركض بسرعة غير معتادة.",
+          "cs": "Běží neobvykle rychle.",
+          "da": "Han løber usædvanligt hurtigt.",
+          "de": "Er läuft ungewöhnlich schnell.",
+          "el": "Τρέχει ασυνήθιστα γρήγορα.",
+          "es": "Corre extraordinariamente rápido.",
+          "fi": "Hän juoksee epätavallisen nopeasti.",
+          "fr": "Il court très vite, de façon inhabituelle.",
+          "he": "הוא רץ מהר באופן חריג.",
+          "hi": "वह असामान्य रूप से तेज़ दौड़ता है।",
+          "hu": "Szokatlanul gyorsan fut.",
+          "id": "Dia berlari luar biasa cepat.",
+          "it": "Corre insolitamente veloce.",
+          "ko": "그는 이상할 정도로 빨리 달린다.",
+          "nb": "Han løper uvanlig fort.",
+          "nl": "Hij rent ongewoon snel.",
+          "pl": "On biegnie niezwykle szybko.",
+          "pt": "Ele corre muito rápido, de um jeito incomum.",
+          "ro": "El aleargă neobișnuit de repede.",
+          "ru": "Он бегает необычайно быстро.",
+          "sv": "Han springer ovanligt fort.",
+          "tr": "O, alışılmadık derecede hızlı koşuyor.",
+          "uk": "Він біжить незвично швидко.",
+          "vi": "Anh ấy chạy nhanh một cách bất thường.",
+          "yue": "佢跑得異常咁快。",
+          "zh-Hans": "他跑得异常快。"
+        },
+        "old_ruby_source": "彼[かれ]は異常[いじょう]に早[はや]く走[はし]る。",
+        "proposed_ruby_source": "彼[かれ]は異常[いじょう]に速[はや]く走[はし]る。",
+        "old_japanese": "彼は異常に早く走る。",
+        "old_english": "He runs unusually fast.",
+        "proposed_japanese": "彼は異常に速く走る。",
+        "proposed_english": "He runs unusually fast.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "ja",
+          "sentence": "彼は異常に速く走る。",
+          "tokens": [
+            {
+              "surface": "彼",
+              "lemma": "彼",
+              "pos": "代名詞/*/*/*/*/*",
+              "upos": "PRON",
+              "xpos": "代名詞",
+              "feats": {},
+              "start": 0,
+              "end": 1,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "かれ",
+              "ruby_text": "彼[かれ]",
+              "ruby_spans": [
+                {
+                  "base": "彼",
+                  "reading": "かれ",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "かれ",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "は",
+              "lemma": "は",
+              "pos": "助詞/係助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 1,
+              "end": 2,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "は",
+              "ruby_text": "は",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "は"
+            },
+            {
+              "surface": "異常",
+              "lemma": "異常",
+              "pos": "名詞/普通名詞/形状詞可能/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 2,
+              "end": 4,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "いじょう",
+              "ruby_text": "異常[いじょう]",
+              "ruby_spans": [
+                {
+                  "base": "異常",
+                  "reading": "いじょう",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "いじょう",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "に",
+              "lemma": "だ",
+              "pos": "助動詞/*/*/*/助動詞-ダ/連用形-ニ",
+              "upos": "AUX",
+              "xpos": "助動詞",
+              "feats": {},
+              "start": 4,
+              "end": 5,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "に",
+              "ruby_text": "に",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "に"
+            },
+            {
+              "surface": "速く",
+              "lemma": "速い",
+              "pos": "形容詞/一般/*/*/形容詞/連用形-一般",
+              "upos": "ADJ",
+              "xpos": "形容詞",
+              "feats": {},
+              "start": 5,
+              "end": 7,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "はやく",
+              "ruby_text": "速[はや]く",
+              "ruby_spans": [
+                {
+                  "base": "速",
+                  "reading": "はや",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "はやく",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "走る",
+              "lemma": "走る",
+              "pos": "動詞/一般/*/*/五段-ラ行/終止形-一般",
+              "upos": "VERB",
+              "xpos": "動詞",
+              "feats": {},
+              "start": 7,
+              "end": 9,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "はしる",
+              "ruby_text": "走[はし]る",
+              "ruby_spans": [
+                {
+                  "base": "走",
+                  "reading": "はし",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "はしる",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "。",
+              "lemma": "。",
+              "pos": "補助記号/句点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 9,
+              "end": 10,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "。",
+              "ruby_text": "。",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "。"
+            }
+          ],
+          "reading": "かれはいじょうにはやくはしる。",
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "warnings": [
+            "mediawiki ruby hints applied"
+          ]
+        },
+        "generated_tokens": [
+          {
+            "surface": "彼",
+            "lemma": "彼",
+            "pos": "代名詞/*/*/*/*/*",
+            "upos": "PRON",
+            "xpos": "代名詞",
+            "feats": {},
+            "start": 0,
+            "end": 1,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "かれ",
+            "ruby_text": "彼[かれ]",
+            "ruby_spans": [
+              {
+                "base": "彼",
+                "reading": "かれ",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "かれ",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "は",
+            "lemma": "は",
+            "pos": "助詞/係助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 1,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "は",
+            "ruby_text": "は",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "は"
+          },
+          {
+            "surface": "異常",
+            "lemma": "異常",
+            "pos": "名詞/普通名詞/形状詞可能/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 2,
+            "end": 4,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "いじょう",
+            "ruby_text": "異常[いじょう]",
+            "ruby_spans": [
+              {
+                "base": "異常",
+                "reading": "いじょう",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "いじょう",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "に",
+            "lemma": "だ",
+            "pos": "助動詞/*/*/*/助動詞-ダ/連用形-ニ",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 4,
+            "end": 5,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "に",
+            "ruby_text": "に",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "に"
+          },
+          {
+            "surface": "速く",
+            "lemma": "速い",
+            "pos": "形容詞/一般/*/*/形容詞/連用形-一般",
+            "upos": "ADJ",
+            "xpos": "形容詞",
+            "feats": {},
+            "start": 5,
+            "end": 7,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "はやく",
+            "ruby_text": "速[はや]く",
+            "ruby_spans": [
+              {
+                "base": "速",
+                "reading": "はや",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "はやく",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "走る",
+            "lemma": "走る",
+            "pos": "動詞/一般/*/*/五段-ラ行/終止形-一般",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 7,
+            "end": 9,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "はしる",
+            "ruby_text": "走[はし]る",
+            "ruby_spans": [
+              {
+                "base": "走",
+                "reading": "はし",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "はしる",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 9,
+            "end": 10,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
+          }
+        ],
+        "generated_reading": "かれはいじょうにはやくはしる。",
+        "analyzer": "sudachipy_sudachidict_core_c",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-18T17:39:14Z",
+        "updated_utc": "2026-10-18T17:40:52Z",
+        "applied_utc": "2026-10-18T17:40:52Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-18T17:40:52Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -761,12 +1565,6 @@
       "このおとはいじょうだ。",
       "きかいのうごきがいじょうでした。",
       "かれはいじょうにはやくはしる。"
-    ],
-    "en": [
-      "Today's heat is abnormal.",
-      "This sound is abnormal.",
-      "The machine's movement was abnormal.",
-      "He runs unusually fast."
     ],
     "generation": {
       "generator": "vocomipedia_source_generator.py",
@@ -805,209 +1603,33 @@
         "parts_of_speech": "Na-adjective (keiyodoshi); Noun"
       }
     },
-    "word_en": "abnormal; unusual; extraordinary; remarkable; uncommon",
-    "word_es": "anormal",
-    "word_fr": "anormal",
-    "word_de": "abnormal",
-    "word_it": "anomalo",
-    "word_ko": "이상",
-    "word_zh-Hans": "异常",
-    "word_yue": "異常",
-    "word_ru": "аномальный",
-    "word_pt": "anormal",
-    "word_he": "חריג",
-    "word_tr": "anormal",
-    "word_vi": "bất thường",
-    "word_ar": "غير طبيعي",
-    "word_nl": "abnormaal",
-    "word_uk": "аномальний",
-    "word_hu": "rendellenes",
-    "word_hi": "असामान्य",
-    "word_pl": "nienormalny",
-    "word_el": "ανώμαλος",
-    "word_nb": "unormal",
-    "word_id": "abnormal",
-    "word_sv": "onormal",
-    "word_ro": "anormal",
-    "word_cs": "abnormální",
-    "word_da": "unormal",
-    "word_fi": "epänormaali",
-    "word_ja": "異常",
-    "ar": [
-      "حرارة اليوم غير عادية.",
-      "هذا الصوت غير عادي.",
-      "كانت حركة الآلة غير عادية.",
-      "يعدو بسرعة كبيرة بشكل غير عادي."
-    ],
-    "cs": [
-      "Dnešní vedro je neobvyklé.",
-      "Ten zvuk je neobvyklý.",
-      "Pohyb stroje byl neobvyklý.",
-      "Běží neobvykle rychle."
-    ],
-    "da": [
-      "Dagens varme er usædvanlig.",
-      "Denne lyd er usædvanlig.",
-      "Maskinens bevægelse var usædvanlig.",
-      "Han løber usædvanligt hurtigt."
-    ],
-    "de": [
-      "Die heutige Hitze ist ungewöhnlich.",
-      "Dieses Geräusch ist ungewöhnlich.",
-      "Die Bewegung der Maschine war ungewöhnlich.",
-      "Er läuft ungewöhnlich schnell."
-    ],
-    "el": [
-      "Η σημερινή ζέστη είναι ασυνήθιστη.",
-      "Αυτός ο ήχος είναι ασυνήθιστος.",
-      "Η κίνηση της μηχανής ήταν ασυνήθιστη.",
-      "Τρέχει ασυνήθιστα γρήγορα."
-    ],
-    "es": [
-      "El calor de hoy es anormal.",
-      "Este sonido es anormal.",
-      "El movimiento de la máquina fue anormal.",
-      "Corre extraordinariamente rápido."
-    ],
-    "fi": [
-      "Tämän päivän helle on poikkeuksellinen.",
-      "Tämä ääni on poikkeuksellinen.",
-      "Koneen liike oli poikkeuksellinen.",
-      "Hän juoksee epätavallisen nopeasti."
-    ],
-    "fr": [
-      "La chaleur d'aujourd'hui est anormale.",
-      "Ce son est anormal.",
-      "Le mouvement de la machine était anormal.",
-      "Il court très vite, de façon inhabituelle."
-    ],
-    "he": [
-      "החום של היום חריג.",
-      "הצליל הזה חריג.",
-      "התנועה של המכונה הייתה חריגה.",
-      "הוא רץ מהר באופן חריג."
-    ],
-    "hi": [
-      "आज की गर्मी असामान्य है।",
-      "यह आवाज़ असामान्य है।",
-      "मशीन की चाल असामान्य थी।",
-      "वह असामान्य रूप से तेज़ दौड़ता है।"
-    ],
-    "hu": [
-      "A mai hőség szokatlan.",
-      "Ez a hang szokatlan.",
-      "A gép mozgása szokatlan volt.",
-      "Nagyon gyorsan fut, szokatlanul gyorsan."
-    ],
-    "id": [
-      "Panas hari ini tidak normal.",
-      "Suara ini tidak normal.",
-      "Gerakan mesin itu tidak normal.",
-      "Dia berlari sangat cepat, tidak biasa."
-    ],
-    "it": [
-      "Il caldo di oggi è anomalo.",
-      "Questo suono è anomalo.",
-      "Il movimento della macchina era anomalo.",
-      "Corre insolitamente veloce."
-    ],
-    "ko": [
-      "오늘 더위는 이상하다.",
-      "이 소리는 이상하다.",
-      "기계의 움직임이 이상했다.",
-      "그는 이상할 정도로 빨리 달린다."
-    ],
-    "nb": [
-      "Dagens varme er unormal.",
-      "Denne lyden er unormal.",
-      "Maskinens bevegelse var unormal.",
-      "Han løper uvanlig fort."
-    ],
-    "nl": [
-      "De hitte van vandaag is abnormaal.",
-      "Dit geluid is abnormaal.",
-      "De beweging van de machine was abnormaal.",
-      "Hij rent ongewoon snel."
-    ],
-    "pl": [
-      "Dzisiejszy upał jest niezwykły.",
-      "Ten dźwięk jest niezwykły.",
-      "Ruch maszyny był niezwykły.",
-      "On biegnie niezwykle szybko."
-    ],
-    "pt": [
-      "O calor de hoje está anormal.",
-      "Este som está anormal.",
-      "O movimento da máquina estava anormal.",
-      "Ele corre muito rápido, de um jeito incomum."
-    ],
-    "ro": [
-      "Căldura de azi este anormală.",
-      "Sunetul acesta este anormal.",
-      "Mișcarea mașinii a fost anormală.",
-      "El aleargă neobișnuit de repede."
-    ],
-    "ru": [
-      "Сегодняшняя жара ненормальная.",
-      "Этот звук ненормальный.",
-      "Движение машины было ненормальным.",
-      "Он бегает необычайно быстро."
-    ],
-    "sv": [
-      "Dagens värme är ovanlig.",
-      "Det här ljudet är ovanligt.",
-      "Maskinens rörelse var ovanlig.",
-      "Han springer ovanligt fort."
-    ],
-    "tr": [
-      "Bugünkü sıcaklık anormal.",
-      "Bu ses anormal.",
-      "Makinenin hareketi anormaldi.",
-      "O, alışılmadık derecede hızlı koşuyor."
-    ],
-    "uk": [
-      "Сьогоднішня спека ненормальна.",
-      "Цей звук ненормальний.",
-      "Рух машини був ненормальний.",
-      "Він біжить незвично швидко."
-    ],
-    "vi": [
-      "Cái nóng hôm nay thật bất thường.",
-      "Âm thanh này bất thường.",
-      "Chuyển động của máy đã bất thường.",
-      "Anh ấy chạy nhanh một cách bất thường."
-    ],
-    "yue": [
-      "今日嘅熱得唔正常。",
-      "呢個聲音唔正常。",
-      "機器嘅運作唔正常。",
-      "佢跑得異常咁快。"
-    ],
-    "zh-Hans": [
-      "今天的热度异常高。",
-      "这个声音不正常。",
-      "机器的运转不正常。",
-      "他跑得异常快。"
-    ],
     "pos_analysis": [
       {
-        "sentence": "きょうのあつさは異常だ。",
+        "sentence": "今日の暑さは異常だ。",
         "tokens": [
           {
-            "surface": "きょう",
-            "lemma": "きょう",
+            "surface": "今日",
+            "lemma": "今日",
             "pos": "名詞/普通名詞/副詞可能/*/*/*",
             "upos": "NOUN",
             "xpos": "名詞",
             "feats": {},
             "start": 0,
-            "end": 3,
+            "end": 2,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "きょう",
-            "ruby_text": "きょう",
-            "ruby_spans": [],
-            "ruby_confidence": "high",
-            "furigana": "きょう"
+            "ruby_text": "今日[きょう]",
+            "ruby_spans": [
+              {
+                "base": "今日",
+                "reading": "きょう",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "きょう",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "の",
@@ -1016,8 +1638,8 @@
             "upos": "PART",
             "xpos": "助詞",
             "feats": {},
-            "start": 3,
-            "end": 4,
+            "start": 2,
+            "end": 3,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "の",
             "ruby_text": "の",
@@ -1026,36 +1648,28 @@
             "furigana": "の"
           },
           {
-            "surface": "あつ",
-            "lemma": "あつい",
-            "pos": "形容詞/一般/*/*/形容詞/語幹-一般",
-            "upos": "ADJ",
-            "xpos": "形容詞",
+            "surface": "暑さ",
+            "lemma": "暑さ",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
             "feats": {},
-            "start": 4,
-            "end": 6,
+            "start": 3,
+            "end": 5,
             "analyzer": "sudachipy_sudachidict_core_c",
-            "reading_kana": "あつ",
-            "ruby_text": "あつ",
-            "ruby_spans": [],
-            "ruby_confidence": "high",
-            "furigana": "あつ"
-          },
-          {
-            "surface": "さ",
-            "lemma": "さ",
-            "pos": "接尾辞/名詞的/一般/*/*/*",
-            "upos": "SUFFIX",
-            "xpos": "接尾辞",
-            "feats": {},
-            "start": 6,
-            "end": 7,
-            "analyzer": "sudachipy_sudachidict_core_c",
-            "reading_kana": "さ",
-            "ruby_text": "さ",
-            "ruby_spans": [],
-            "ruby_confidence": "high",
-            "furigana": "さ"
+            "reading_kana": "あつさ",
+            "ruby_text": "暑[あつ]さ",
+            "ruby_spans": [
+              {
+                "base": "暑",
+                "reading": "あつ",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "あつさ",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "は",
@@ -1064,8 +1678,8 @@
             "upos": "PART",
             "xpos": "助詞",
             "feats": {},
-            "start": 7,
-            "end": 8,
+            "start": 5,
+            "end": 6,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "は",
             "ruby_text": "は",
@@ -1080,8 +1694,8 @@
             "upos": "NOUN",
             "xpos": "名詞",
             "feats": {},
-            "start": 8,
-            "end": 10,
+            "start": 6,
+            "end": 8,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "いじょう",
             "ruby_text": "異常[いじょう]",
@@ -1093,8 +1707,9 @@
                 "length": 2
               }
             ],
-            "ruby_confidence": "medium",
+            "ruby_confidence": "reviewed",
             "furigana": "いじょう",
+            "ruby_source": "mediawiki_sentence_ruby",
             "is_main_word": true
           },
           {
@@ -1104,8 +1719,8 @@
             "upos": "AUX",
             "xpos": "助動詞",
             "feats": {},
-            "start": 10,
-            "end": 11,
+            "start": 8,
+            "end": 9,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "だ",
             "ruby_text": "だ",
@@ -1120,8 +1735,8 @@
             "upos": "PUNCT",
             "xpos": "補助記号",
             "feats": {},
-            "start": 11,
-            "end": 12,
+            "start": 9,
+            "end": 10,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "。",
             "ruby_text": "。",
@@ -1406,7 +2021,7 @@
         "difficulty_aggregated": null
       },
       {
-        "sentence": "彼は異常に早く走る。",
+        "sentence": "彼は異常に速く走る。",
         "tokens": [
           {
             "surface": "彼",
@@ -1428,8 +2043,9 @@
                 "length": 1
               }
             ],
-            "ruby_confidence": "high",
-            "furigana": "かれ"
+            "ruby_confidence": "reviewed",
+            "furigana": "かれ",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "は",
@@ -1467,8 +2083,9 @@
                 "length": 2
               }
             ],
-            "ruby_confidence": "medium",
+            "ruby_confidence": "reviewed",
             "furigana": "いじょう",
+            "ruby_source": "mediawiki_sentence_ruby",
             "is_main_word": true
           },
           {
@@ -1488,8 +2105,8 @@
             "furigana": "に"
           },
           {
-            "surface": "早く",
-            "lemma": "早い",
+            "surface": "速く",
+            "lemma": "速い",
             "pos": "形容詞/一般/*/*/形容詞/連用形-一般",
             "upos": "ADJ",
             "xpos": "形容詞",
@@ -1498,17 +2115,18 @@
             "end": 7,
             "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "はやく",
-            "ruby_text": "早[はや]く",
+            "ruby_text": "速[はや]く",
             "ruby_spans": [
               {
-                "base": "早",
+                "base": "速",
                 "reading": "はや",
                 "start": 0,
                 "length": 1
               }
             ],
-            "ruby_confidence": "high",
-            "furigana": "はやく"
+            "ruby_confidence": "reviewed",
+            "furigana": "はやく",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "走る",
@@ -1530,8 +2148,9 @@
                 "length": 1
               }
             ],
-            "ruby_confidence": "high",
-            "furigana": "はしる"
+            "ruby_confidence": "reviewed",
+            "furigana": "はしる",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "。",
@@ -1552,6 +2171,196 @@
         ],
         "difficulty_aggregated": null
       }
+    ],
+    "word_en": "abnormal; unusual; extraordinary; remarkable; uncommon",
+    "word_es": "anormal",
+    "word_fr": "anormal",
+    "word_de": "abnormal",
+    "word_it": "anomalo",
+    "word_ko": "이상",
+    "word_zh-Hans": "异常",
+    "word_yue": "異常",
+    "word_ru": "аномальный",
+    "word_pt": "anormal",
+    "word_he": "חריג",
+    "word_tr": "anormal",
+    "word_vi": "bất thường",
+    "word_ar": "غير طبيعي",
+    "word_nl": "abnormaal",
+    "word_uk": "аномальний",
+    "word_hu": "rendellenes",
+    "word_hi": "असामान्य",
+    "word_pl": "nienormalny",
+    "word_el": "ανώμαλος",
+    "word_nb": "unormal",
+    "word_id": "abnormal",
+    "word_sv": "onormal",
+    "word_ro": "anormal",
+    "word_cs": "abnormální",
+    "word_da": "unormal",
+    "word_fi": "epänormaali",
+    "word_ja": "異常",
+    "ar": [
+      "حرارة اليوم غير عادية.",
+      "هذا الصوت غير عادي.",
+      "كانت حركة الآلة غير عادية.",
+      "يعدو بسرعة كبيرة بشكل غير عادي."
+    ],
+    "cs": [
+      "Dnešní vedro je neobvyklé.",
+      "Ten zvuk je neobvyklý.",
+      "Pohyb stroje byl neobvyklý.",
+      "Běží neobvykle rychle."
+    ],
+    "da": [
+      "Dagens varme er usædvanlig.",
+      "Denne lyd er usædvanlig.",
+      "Maskinens bevægelse var usædvanlig.",
+      "Han løber usædvanligt hurtigt."
+    ],
+    "de": [
+      "Die heutige Hitze ist ungewöhnlich.",
+      "Dieses Geräusch ist ungewöhnlich.",
+      "Die Bewegung der Maschine war ungewöhnlich.",
+      "Er läuft ungewöhnlich schnell."
+    ],
+    "el": [
+      "Η σημερινή ζέστη είναι ασυνήθιστη.",
+      "Αυτός ο ήχος είναι ασυνήθιστος.",
+      "Η κίνηση της μηχανής ήταν ασυνήθιστη.",
+      "Τρέχει ασυνήθιστα γρήγορα."
+    ],
+    "en": [
+      "Today's heat is abnormal.",
+      "This sound is abnormal.",
+      "The machine's movement was abnormal.",
+      "He runs unusually fast."
+    ],
+    "es": [
+      "El calor de hoy es anormal.",
+      "Este sonido es anormal.",
+      "El movimiento de la máquina fue anormal.",
+      "Corre extraordinariamente rápido."
+    ],
+    "fi": [
+      "Tämän päivän helle on poikkeuksellinen.",
+      "Tämä ääni on poikkeuksellinen.",
+      "Koneen liike oli poikkeuksellinen.",
+      "Hän juoksee epätavallisen nopeasti."
+    ],
+    "fr": [
+      "La chaleur d'aujourd'hui est anormale.",
+      "Ce son est anormal.",
+      "Le mouvement de la machine était anormal.",
+      "Il court très vite, de façon inhabituelle."
+    ],
+    "he": [
+      "החום של היום חריג.",
+      "הצליל הזה חריג.",
+      "התנועה של המכונה הייתה חריגה.",
+      "הוא רץ מהר באופן חריג."
+    ],
+    "hi": [
+      "आज की गर्मी असामान्य है।",
+      "यह आवाज़ असामान्य है।",
+      "मशीन की चाल असामान्य थी।",
+      "वह असामान्य रूप से तेज़ दौड़ता है।"
+    ],
+    "hu": [
+      "A mai hőség szokatlan.",
+      "Ez a hang szokatlan.",
+      "A gép mozgása szokatlan volt.",
+      "Nagyon gyorsan fut, szokatlanul gyorsan."
+    ],
+    "id": [
+      "Panas hari ini tidak normal.",
+      "Suara ini tidak normal.",
+      "Gerakan mesin itu tidak normal.",
+      "Dia berlari sangat cepat, tidak biasa."
+    ],
+    "it": [
+      "Il caldo di oggi è anomalo.",
+      "Questo suono è anomalo.",
+      "Il movimento della macchina era anomalo.",
+      "Corre insolitamente veloce."
+    ],
+    "ko": [
+      "오늘 더위는 이상하다.",
+      "이 소리는 이상하다.",
+      "기계의 움직임이 이상했다.",
+      "그는 이상할 정도로 빨리 달린다."
+    ],
+    "nb": [
+      "Dagens varme er unormal.",
+      "Denne lyden er unormal.",
+      "Maskinens bevegelse var unormal.",
+      "Han løper uvanlig fort."
+    ],
+    "nl": [
+      "De hitte van vandaag is abnormaal.",
+      "Dit geluid is abnormaal.",
+      "De beweging van de machine was abnormaal.",
+      "Hij rent ongewoon snel."
+    ],
+    "pl": [
+      "Dzisiejszy upał jest niezwykły.",
+      "Ten dźwięk jest niezwykły.",
+      "Ruch maszyny był niezwykły.",
+      "On biegnie niezwykle szybko."
+    ],
+    "pt": [
+      "O calor de hoje está anormal.",
+      "Este som está anormal.",
+      "O movimento da máquina estava anormal.",
+      "Ele corre muito rápido, de um jeito incomum."
+    ],
+    "ro": [
+      "Căldura de azi este anormală.",
+      "Sunetul acesta este anormal.",
+      "Mișcarea mașinii a fost anormală.",
+      "El aleargă neobișnuit de repede."
+    ],
+    "ru": [
+      "Сегодняшняя жара ненормальная.",
+      "Этот звук ненормальный.",
+      "Движение машины было ненормальным.",
+      "Он бегает необычайно быстро."
+    ],
+    "sv": [
+      "Dagens värme är ovanlig.",
+      "Det här ljudet är ovanligt.",
+      "Maskinens rörelse var ovanlig.",
+      "Han springer ovanligt fort."
+    ],
+    "tr": [
+      "Bugünkü sıcaklık anormal.",
+      "Bu ses anormal.",
+      "Makinenin hareketi anormaldi.",
+      "O, alışılmadık derecede hızlı koşuyor."
+    ],
+    "uk": [
+      "Сьогоднішня спека ненормальна.",
+      "Цей звук ненормальний.",
+      "Рух машини був ненормальний.",
+      "Він біжить незвично швидко."
+    ],
+    "vi": [
+      "Cái nóng hôm nay thật bất thường.",
+      "Âm thanh này bất thường.",
+      "Chuyển động của máy đã bất thường.",
+      "Anh ấy chạy nhanh một cách bất thường."
+    ],
+    "yue": [
+      "今日嘅熱得唔正常。",
+      "呢個聲音唔正常。",
+      "機器嘅運作唔正常。",
+      "佢跑得異常咁快。"
+    ],
+    "zh-Hans": [
+      "今天的热度异常高。",
+      "这个声音不正常。",
+      "机器的运转不正常。",
+      "他跑得异常快。"
     ]
   }
 }

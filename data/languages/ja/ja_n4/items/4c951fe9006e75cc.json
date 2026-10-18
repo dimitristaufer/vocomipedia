@@ -43,8 +43,8 @@
   },
   "sentences": [
     {
-      "target": "昨日のフルーツサラダはまだ腐りません。",
-      "reading": "きのうのふるーつさらだはまだくさりません。",
+      "target": "昨日のフルーツサラダはまだ腐っていません。",
+      "reading": "きのうのふるーつさらだはまだくさっていません。",
       "translations": {
         "en": "The fruit salad from yesterday hasn't rotted yet.",
         "es": "La ensalada de frutas de ayer aún no se ha podrido.",
@@ -77,12 +77,14 @@
       "tokens": [
         {
           "surface": "昨日",
-          "surface_en": "yesterday",
-          "furigana": "きのう",
-          "pos": "noun",
           "lemma": "昨日",
-          "explanation": "Indicates the time when something happened.",
-          "difficulty": 15,
+          "pos": "名詞/普通名詞/副詞可能/*/*/*",
+          "upos": "NOUN",
+          "xpos": "名詞",
+          "feats": {},
+          "start": 0,
+          "end": 2,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "きのう",
           "ruby_text": "昨日[きのう]",
           "ruby_spans": [
@@ -93,76 +95,86 @@
               "length": 2
             }
           ],
-          "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "ruby_confidence": "reviewed",
+          "furigana": "きのう",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "の",
-          "surface_en": "of",
-          "furigana": "の",
-          "pos": "particle",
           "lemma": "の",
-          "explanation": "Genitive particle marking possession or association.",
-          "difficulty": 1,
+          "pos": "助詞/格助詞/*/*/*/*",
+          "upos": "PART",
+          "xpos": "助詞",
+          "feats": {},
+          "start": 2,
+          "end": 3,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "の",
           "ruby_text": "の",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "の"
         },
         {
           "surface": "フルーツサラダ",
-          "surface_en": "fruit salad",
-          "furigana": "ふるーつさらだ",
-          "pos": "noun",
           "lemma": "フルーツサラダ",
-          "explanation": "The dish being discussed.",
-          "difficulty": 1,
+          "pos": "名詞/普通名詞/一般/*/*/*",
+          "upos": "NOUN",
+          "xpos": "名詞",
+          "feats": {},
+          "start": 3,
+          "end": 10,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "ふるーつさらだ",
           "ruby_text": "フルーツサラダ",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "ふるーつさらだ"
         },
         {
           "surface": "は",
-          "surface_en": "as for",
-          "furigana": "は",
-          "pos": "particle",
           "lemma": "は",
-          "explanation": "Topic marker indicating what the sentence is about.",
-          "difficulty": 1,
+          "pos": "助詞/係助詞/*/*/*/*",
+          "upos": "PART",
+          "xpos": "助詞",
+          "feats": {},
+          "start": 10,
+          "end": 11,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "は",
           "ruby_text": "は",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "は"
         },
         {
           "surface": "まだ",
-          "surface_en": "still",
-          "furigana": "まだ",
-          "pos": "adverb",
           "lemma": "まだ",
-          "explanation": "Indicates that the state continues up to now.",
-          "difficulty": 1,
+          "pos": "副詞/*/*/*/*/*",
+          "upos": "ADV",
+          "xpos": "副詞",
+          "feats": {},
+          "start": 11,
+          "end": 13,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "まだ",
           "ruby_text": "まだ",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "まだ"
         },
         {
-          "surface": "腐りません",
-          "surface_en": "does not rot",
-          "furigana": "くさりません",
-          "pos": "verb",
+          "surface": "腐っ",
           "lemma": "腐る",
-          "explanation": "Polite negative form of ‘to rot,’ indicating it hasn’t spoiled yet.",
-          "difficulty": 34,
-          "is_main_word": true,
-          "reading_kana": "くさりません",
-          "ruby_text": "腐[くさ]りません",
+          "pos": "動詞/一般/*/*/五段-ラ行/連用形-促音便",
+          "upos": "VERB",
+          "xpos": "動詞",
+          "feats": {},
+          "start": 13,
+          "end": 15,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "くさっ",
+          "ruby_text": "腐[くさ]っ",
           "ruby_spans": [
             {
               "base": "腐",
@@ -171,8 +183,90 @@
               "length": 1
             }
           ],
+          "ruby_confidence": "reviewed",
+          "furigana": "くさっ",
+          "ruby_source": "mediawiki_sentence_ruby",
+          "is_main_word": true
+        },
+        {
+          "surface": "て",
+          "lemma": "て",
+          "pos": "助詞/接続助詞/*/*/*/*",
+          "upos": "PART",
+          "xpos": "助詞",
+          "feats": {},
+          "start": 15,
+          "end": 16,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "て",
+          "ruby_text": "て",
+          "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "て"
+        },
+        {
+          "surface": "い",
+          "lemma": "いる",
+          "pos": "動詞/非自立可能/*/*/上一段-ア行/連用形-一般",
+          "upos": "VERB",
+          "xpos": "動詞",
+          "feats": {},
+          "start": 16,
+          "end": 17,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "い",
+          "ruby_text": "い",
+          "ruby_spans": [],
+          "ruby_confidence": "high",
+          "furigana": "い"
+        },
+        {
+          "surface": "ませ",
+          "lemma": "ます",
+          "pos": "助動詞/*/*/*/助動詞-マス/未然形-一般",
+          "upos": "AUX",
+          "xpos": "助動詞",
+          "feats": {},
+          "start": 17,
+          "end": 19,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "ませ",
+          "ruby_text": "ませ",
+          "ruby_spans": [],
+          "ruby_confidence": "high",
+          "furigana": "ませ"
+        },
+        {
+          "surface": "ん",
+          "lemma": "ぬ",
+          "pos": "助動詞/*/*/*/助動詞-ヌ/終止形-撥音便",
+          "upos": "AUX",
+          "xpos": "助動詞",
+          "feats": {},
+          "start": 19,
+          "end": 20,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "ん",
+          "ruby_text": "ん",
+          "ruby_spans": [],
+          "ruby_confidence": "high",
+          "furigana": "ん"
+        },
+        {
+          "surface": "。",
+          "lemma": "。",
+          "pos": "補助記号/句点/*/*/*/*",
+          "upos": "PUNCT",
+          "xpos": "補助記号",
+          "feats": {},
+          "start": 20,
+          "end": 21,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "。",
+          "ruby_text": "。",
+          "ruby_spans": [],
+          "ruby_confidence": "high",
+          "furigana": "。"
         }
       ],
       "difficulty": 8.83,
@@ -294,8 +388,8 @@
       "ruby_source": "sudachipy_sudachidict_core_c"
     },
     {
-      "target": "牛乳が腐っている臭いがする。",
-      "reading": "ぎゅうにゅうがくさっているにおいがする。",
+      "target": "牛乳が腐った臭いがする。",
+      "reading": "ぎゅうにゅうがくさったにおいがする。",
       "translations": {
         "en": "The milk smells rotten.",
         "es": "La leche huele a podrido.",
@@ -312,10 +406,10 @@
         "vi": "Sữa có mùi thối.",
         "ar": "رائحة الحليب فاسدة.",
         "nl": "De melk ruikt bedorven.",
-        "uk": "Від молока тхне кислим, зіпсованим.",
+        "uk": "Молоко пахне зіпсованим.",
         "hu": "A tej romlott szagot áraszt.",
         "hi": "दूध से सड़ी हुई बदबू आ रही है।",
-        "pl": "Mleko pachnie zepsutym.",
+        "pl": "Mleko pachnie jak zepsute.",
         "el": "Το γάλα μυρίζει χαλασμένο.",
         "nb": "Melken lukter vondt og surt.",
         "id": "Susu berbau busuk.",
@@ -328,12 +422,14 @@
       "tokens": [
         {
           "surface": "牛乳",
-          "surface_en": "milk",
-          "furigana": "ぎゅうにゅう",
-          "pos": "noun",
           "lemma": "牛乳",
-          "explanation": "The substance whose smell is being noticed.",
-          "difficulty": 23,
+          "pos": "名詞/普通名詞/一般/*/*/*",
+          "upos": "NOUN",
+          "xpos": "名詞",
+          "feats": {},
+          "start": 0,
+          "end": 2,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "ぎゅうにゅう",
           "ruby_text": "牛乳[ぎゅうにゅう]",
           "ruby_spans": [
@@ -344,34 +440,38 @@
               "length": 2
             }
           ],
-          "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "ruby_confidence": "reviewed",
+          "furigana": "ぎゅうにゅう",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "が",
-          "surface_en": "[subject marker]",
-          "furigana": "が",
-          "pos": "particle",
           "lemma": "が",
-          "explanation": "Marks ‘milk’ as the subject of the clause.",
-          "difficulty": 1,
+          "pos": "助詞/格助詞/*/*/*/*",
+          "upos": "PART",
+          "xpos": "助詞",
+          "feats": {},
+          "start": 2,
+          "end": 3,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "が",
           "ruby_text": "が",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "が"
         },
         {
-          "surface": "腐っている",
-          "surface_en": "is rotting",
-          "furigana": "くさっている",
-          "pos": "verb",
+          "surface": "腐っ",
           "lemma": "腐る",
-          "explanation": "Progressive form indicating the ongoing state of spoilage.",
-          "difficulty": 34,
-          "is_main_word": true,
-          "reading_kana": "くさっている",
-          "ruby_text": "腐[くさ]っている",
+          "pos": "動詞/一般/*/*/五段-ラ行/連用形-促音便",
+          "upos": "VERB",
+          "xpos": "動詞",
+          "feats": {},
+          "start": 3,
+          "end": 5,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "くさっ",
+          "ruby_text": "腐[くさ]っ",
           "ruby_spans": [
             {
               "base": "腐",
@@ -380,17 +480,37 @@
               "length": 1
             }
           ],
+          "ruby_confidence": "reviewed",
+          "furigana": "くさっ",
+          "ruby_source": "mediawiki_sentence_ruby",
+          "is_main_word": true
+        },
+        {
+          "surface": "た",
+          "lemma": "た",
+          "pos": "助動詞/*/*/*/助動詞-タ/連体形-一般",
+          "upos": "AUX",
+          "xpos": "助動詞",
+          "feats": {},
+          "start": 5,
+          "end": 6,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "た",
+          "ruby_text": "た",
+          "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "た"
         },
         {
           "surface": "臭い",
-          "surface_en": "smell",
-          "furigana": "におい",
-          "pos": "noun",
           "lemma": "臭い",
-          "explanation": "Refers to the odor being detected.",
-          "difficulty": 20,
+          "pos": "名詞/普通名詞/一般/*/*/*",
+          "upos": "NOUN",
+          "xpos": "名詞",
+          "feats": {},
+          "start": 6,
+          "end": 8,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "におい",
           "ruby_text": "臭[にお]い",
           "ruby_spans": [
@@ -401,55 +521,76 @@
               "length": 1
             }
           ],
-          "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "ruby_confidence": "reviewed",
+          "furigana": "におい",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "が",
-          "surface_en": "[subject marker]",
-          "furigana": "が",
-          "pos": "particle",
           "lemma": "が",
-          "explanation": "Marks ‘smell’ as the subject for ‘to sense.’",
-          "difficulty": 1,
+          "pos": "助詞/格助詞/*/*/*/*",
+          "upos": "PART",
+          "xpos": "助詞",
+          "feats": {},
+          "start": 8,
+          "end": 9,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "が",
           "ruby_text": "が",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "が"
         },
         {
           "surface": "する",
-          "surface_en": "to sense",
-          "furigana": "する",
-          "pos": "verb",
           "lemma": "する",
-          "explanation": "Used with ‘odor’ to mean ‘to smell.’",
-          "difficulty": 1,
+          "pos": "動詞/非自立可能/*/*/サ行変格/終止形-一般",
+          "upos": "VERB",
+          "xpos": "動詞",
+          "feats": {},
+          "start": 9,
+          "end": 11,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "する",
           "ruby_text": "する",
           "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "する"
+        },
+        {
+          "surface": "。",
+          "lemma": "。",
+          "pos": "補助記号/句点/*/*/*/*",
+          "upos": "PUNCT",
+          "xpos": "補助記号",
+          "feats": {},
+          "start": 11,
+          "end": 12,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "。",
+          "ruby_text": "。",
+          "ruby_spans": [],
+          "ruby_confidence": "high",
+          "furigana": "。"
         }
       ],
       "difficulty": 13.33,
       "ruby_source": "sudachipy_sudachidict_core_c"
     },
     {
-      "target": "早く腐らないうちに片付けよう。",
-      "reading": "はやくくさらないうちにかたづけよう。",
+      "target": "腐らないうちに早く片付けよう。",
+      "reading": "くさらないうちにはやくかたづけよう。",
       "translations": {
-        "en": "Let's clean it up before it rots.",
+        "en": "Let's put it away before it spoils.",
         "es": "Vamos a limpiarlo antes de que se pudra.",
         "fr": "Nettoyons-le avant qu’il ne pourrisse.",
-        "de": "Lass es uns wegmachen, bevor es verdirbt.",
+        "de": "Lass es uns wegräumen, bevor es verdirbt.",
         "it": "Puliamolo prima che marcisca.",
-        "ko": "빨리 썩기 전에 치우자.",
+        "ko": "썩기 전에 빨리 치우자.",
         "zh-Hans": "趁它还没腐烂，赶紧清理干净。",
         "yue": "喺未爛之前快啲執好佢。",
         "ru": "Давай уберём это, пока не испортится.",
-        "pt": "Vamos limpar isso antes que apodreça.",
+        "pt": "Vamos guardar isso logo, antes que apodreça.",
         "he": "בוא ננקה את זה לפני שיירקב.",
         "tr": "Çürümeden önce bunu temizleyelim.",
         "vi": "Hãy dọn dẹp nó trước khi nó thối rữa.",
@@ -457,11 +598,11 @@
         "nl": "Laten we het opruimen voordat het bederft.",
         "uk": "Давай приберемо це, поки не зіпсується.",
         "hu": "Takarítsuk el, mielőtt megromlik.",
-        "hi": "सड़ने से पहले इसे साफ कर लें।",
+        "hi": "इसके सड़ने से पहले इसे जल्दी हटा दें।",
         "pl": "Posprzątajmy to, zanim się zepsuje.",
         "el": "Ας το καθαρίσουμε πριν σαπίσει.",
         "nb": "La oss rydde opp før den råtner.",
-        "id": "Mari kita bersihkan sebelum membusuk.",
+        "id": "Mari kita segera membereskannya sebelum membusuk.",
         "sv": "Låt oss städa upp innan det ruttnar.",
         "ro": "Hai să curățăm înainte să se strice.",
         "cs": "Uklidíme to, než se to zkazí.",
@@ -470,13 +611,88 @@
       },
       "tokens": [
         {
+          "surface": "腐ら",
+          "lemma": "腐る",
+          "pos": "動詞/一般/*/*/五段-ラ行/未然形-一般",
+          "upos": "VERB",
+          "xpos": "動詞",
+          "feats": {},
+          "start": 0,
+          "end": 2,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "くさら",
+          "ruby_text": "腐[くさ]ら",
+          "ruby_spans": [
+            {
+              "base": "腐",
+              "reading": "くさ",
+              "start": 0,
+              "length": 1
+            }
+          ],
+          "ruby_confidence": "reviewed",
+          "furigana": "くさら",
+          "ruby_source": "mediawiki_sentence_ruby",
+          "is_main_word": true
+        },
+        {
+          "surface": "ない",
+          "lemma": "ない",
+          "pos": "助動詞/*/*/*/助動詞-ナイ/連体形-一般",
+          "upos": "AUX",
+          "xpos": "助動詞",
+          "feats": {},
+          "start": 2,
+          "end": 4,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "ない",
+          "ruby_text": "ない",
+          "ruby_spans": [],
+          "ruby_confidence": "high",
+          "furigana": "ない"
+        },
+        {
+          "surface": "うち",
+          "lemma": "うち",
+          "pos": "名詞/普通名詞/副詞可能/*/*/*",
+          "upos": "NOUN",
+          "xpos": "名詞",
+          "feats": {},
+          "start": 4,
+          "end": 6,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "うち",
+          "ruby_text": "うち",
+          "ruby_spans": [],
+          "ruby_confidence": "high",
+          "furigana": "うち"
+        },
+        {
+          "surface": "に",
+          "lemma": "に",
+          "pos": "助詞/格助詞/*/*/*/*",
+          "upos": "PART",
+          "xpos": "助詞",
+          "feats": {},
+          "start": 6,
+          "end": 7,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "に",
+          "ruby_text": "に",
+          "ruby_spans": [],
+          "ruby_confidence": "high",
+          "furigana": "に"
+        },
+        {
           "surface": "早く",
-          "surface_en": "quickly",
-          "furigana": "はやく",
-          "pos": "adverb",
-          "lemma": "早く",
-          "explanation": "Expresses the manner or urgency of the action.",
-          "difficulty": 6,
+          "lemma": "早い",
+          "pos": "形容詞/一般/*/*/形容詞/連用形-一般",
+          "upos": "ADJ",
+          "xpos": "形容詞",
+          "feats": {},
+          "start": 7,
+          "end": 9,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "はやく",
           "ruby_text": "早[はや]く",
           "ruby_spans": [
@@ -487,67 +703,20 @@
               "length": 1
             }
           ],
-          "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
-        },
-        {
-          "surface": "腐らない",
-          "surface_en": "does not rot",
-          "furigana": "くさらない",
-          "pos": "verb",
-          "lemma": "腐る",
-          "explanation": "Negative form meaning ‘before it spoils.’",
-          "difficulty": 34,
-          "is_main_word": true,
-          "reading_kana": "くさらない",
-          "ruby_text": "腐[くさ]らない",
-          "ruby_spans": [
-            {
-              "base": "腐",
-              "reading": "くさ",
-              "start": 0,
-              "length": 1
-            }
-          ],
-          "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
-        },
-        {
-          "surface": "うち",
-          "surface_en": "time/within",
-          "furigana": "うち",
-          "pos": "noun",
-          "lemma": "うち",
-          "explanation": "Refers to the period or opportunity before something happens.",
-          "difficulty": 1,
-          "reading_kana": "うち",
-          "ruby_text": "うち",
-          "ruby_spans": [],
-          "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
-        },
-        {
-          "surface": "に",
-          "surface_en": "by/until",
-          "furigana": "に",
-          "pos": "particle",
-          "lemma": "に",
-          "explanation": "Indicates the time limit by which the action should be completed.",
-          "difficulty": 1,
-          "reading_kana": "に",
-          "ruby_text": "に",
-          "ruby_spans": [],
-          "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "ruby_confidence": "reviewed",
+          "furigana": "はやく",
+          "ruby_source": "mediawiki_sentence_ruby"
         },
         {
           "surface": "片付けよう",
-          "surface_en": "let’s put away",
-          "furigana": "かたづけよう",
-          "pos": "verb",
           "lemma": "片付ける",
-          "explanation": "Volitional form suggesting ‘let’s clean up/put away.’",
-          "difficulty": 1,
+          "pos": "動詞/一般/*/*/下一段-カ行/意志推量形",
+          "upos": "VERB",
+          "xpos": "動詞",
+          "feats": {},
+          "start": 9,
+          "end": 14,
+          "analyzer": "sudachipy_sudachidict_core_c",
           "reading_kana": "かたづけよう",
           "ruby_text": "片付[かたづ]けよう",
           "ruby_spans": [
@@ -558,8 +727,25 @@
               "length": 2
             }
           ],
+          "ruby_confidence": "reviewed",
+          "furigana": "かたづけよう",
+          "ruby_source": "mediawiki_sentence_ruby"
+        },
+        {
+          "surface": "。",
+          "lemma": "。",
+          "pos": "補助記号/句点/*/*/*/*",
+          "upos": "PUNCT",
+          "xpos": "補助記号",
+          "feats": {},
+          "start": 14,
+          "end": 15,
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "reading_kana": "。",
+          "ruby_text": "。",
+          "ruby_spans": [],
           "ruby_confidence": "high",
-          "ruby_source": "sudachipy_sudachidict_core_c"
+          "furigana": "。"
         }
       ],
       "difficulty": 8.6,
@@ -577,8 +763,1318 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-12T03:44:14Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:Ja n4/4c951fe9006e75cc",
+      "revision_id": 82230,
+      "parent_revision_id": 30992,
+      "revision_timestamp_utc": "2026-10-12T03:44:14Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Corrected Japanese aspect and phrasing, and adjusted translations to express spoiled food and putting it away naturally.",
+      "pulled_utc": "2026-10-18T17:47:16Z",
+      "applied_utc": "2026-10-18T17:47:47Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-c8a1a67f490efae3",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "ja_n4:4c951fe9006e75cc",
+        "pack_code": "ja_n4",
+        "entry_id": "腐る",
+        "language": "ja",
+        "sentence_index": 1,
+        "old_sentence": "昨日のフルーツサラダはまだ腐りません。",
+        "old_translations": {
+          "en": "The fruit salad from yesterday hasn't rotted yet.",
+          "es": "La ensalada de frutas de ayer aún no se ha podrido.",
+          "fr": "La salade de fruits d’hier n’a pas encore pourri.",
+          "de": "Der Obstsalat von gestern ist noch nicht verdorben.",
+          "it": "L'insalata di frutta di ieri non è ancora marcita.",
+          "ko": "어제의 과일 샐러드는 아직 썩지 않았어요.",
+          "zh-Hans": "昨天的水果沙拉还没腐烂。",
+          "yue": "琴日嘅生果沙律仲未爛。",
+          "ru": "Фруктовый салат со вчера ещё не испортился.",
+          "pt": "A salada de frutas de ontem ainda não apodreceu.",
+          "he": "סלט הפירות מאתמול עדיין לא נרקב.",
+          "tr": "Dünkü meyve salatası henüz çürümedi.",
+          "vi": "Salad trái cây từ hôm qua vẫn chưa bị thối rữa.",
+          "ar": "سلطة الفواكه من الأمس لم تتعفن بعد.",
+          "nl": "De fruitsalade van gisteren is nog niet bedorven.",
+          "uk": "Фруктовий салат учорашнього дня ще не зіпсувався.",
+          "hu": "A tegnapi gyümölcssaláta még nem romlott meg.",
+          "hi": "कल का फलों का सलाद अभी तक सड़ा नहीं है।",
+          "pl": "Sałatka owocowa z wczoraj jeszcze się nie zepsuła.",
+          "el": "Η φρουτοσαλάτα από χθες δεν έχει σαπίσει ακόμα.",
+          "nb": "Fruktsalaten fra i går har ikke råtnet ennå.",
+          "id": "Salad buah dari kemarin belum membusuk.",
+          "sv": "Fruktsalladen från igår har inte ruttnat än.",
+          "ro": "Salata de fructe de ieri nu s-a stricat încă.",
+          "cs": "Ovocný salát ze včerejška ještě nezhnil / nezkazil se.",
+          "da": "Frugtsalaten fra i går er ikke blevet dårlig endnu.",
+          "fi": "Eilinen hedelmäsalaatti ei ole vielä pilaantunut."
+        },
+        "proposed_sentence": "昨日のフルーツサラダはまだ腐っていません。",
+        "proposed_translations": {
+          "en": "The fruit salad from yesterday hasn't rotted yet.",
+          "es": "La ensalada de frutas de ayer aún no se ha podrido.",
+          "fr": "La salade de fruits d’hier n’a pas encore pourri.",
+          "de": "Der Obstsalat von gestern ist noch nicht verdorben.",
+          "it": "L'insalata di frutta di ieri non è ancora marcita.",
+          "ko": "어제의 과일 샐러드는 아직 썩지 않았어요.",
+          "zh-Hans": "昨天的水果沙拉还没腐烂。",
+          "yue": "琴日嘅生果沙律仲未爛。",
+          "ru": "Фруктовый салат со вчера ещё не испортился.",
+          "pt": "A salada de frutas de ontem ainda não apodreceu.",
+          "he": "סלט הפירות מאתמול עדיין לא נרקב.",
+          "tr": "Dünkü meyve salatası henüz çürümedi.",
+          "vi": "Salad trái cây từ hôm qua vẫn chưa bị thối rữa.",
+          "ar": "سلطة الفواكه من الأمس لم تتعفن بعد.",
+          "nl": "De fruitsalade van gisteren is nog niet bedorven.",
+          "uk": "Фруктовий салат учорашнього дня ще не зіпсувався.",
+          "hu": "A tegnapi gyümölcssaláta még nem romlott meg.",
+          "hi": "कल का फलों का सलाद अभी तक सड़ा नहीं है।",
+          "pl": "Sałatka owocowa z wczoraj jeszcze się nie zepsuła.",
+          "el": "Η φρουτοσαλάτα από χθες δεν έχει σαπίσει ακόμα.",
+          "nb": "Fruktsalaten fra i går har ikke råtnet ennå.",
+          "id": "Salad buah dari kemarin belum membusuk.",
+          "sv": "Fruktsalladen från igår har inte ruttnat än.",
+          "ro": "Salata de fructe de ieri nu s-a stricat încă.",
+          "cs": "Ovocný salát ze včerejška ještě nezhnil / nezkazil se.",
+          "da": "Frugtsalaten fra i går er ikke blevet dårlig endnu.",
+          "fi": "Eilinen hedelmäsalaatti ei ole vielä pilaantunut."
+        },
+        "old_ruby_source": "昨日[きのう]のフルーツサラダはまだ腐[くさ]りません。",
+        "proposed_ruby_source": "昨日[きのう]のフルーツサラダはまだ腐[くさ]っていません。",
+        "old_japanese": "昨日のフルーツサラダはまだ腐りません。",
+        "old_english": "The fruit salad from yesterday hasn't rotted yet.",
+        "proposed_japanese": "昨日のフルーツサラダはまだ腐っていません。",
+        "proposed_english": "The fruit salad from yesterday hasn't rotted yet.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "ja",
+          "sentence": "昨日のフルーツサラダはまだ腐っていません。",
+          "tokens": [
+            {
+              "surface": "昨日",
+              "lemma": "昨日",
+              "pos": "名詞/普通名詞/副詞可能/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 0,
+              "end": 2,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "きのう",
+              "ruby_text": "昨日[きのう]",
+              "ruby_spans": [
+                {
+                  "base": "昨日",
+                  "reading": "きのう",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "きのう",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "の",
+              "lemma": "の",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 2,
+              "end": 3,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "の",
+              "ruby_text": "の",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "の"
+            },
+            {
+              "surface": "フルーツサラダ",
+              "lemma": "フルーツサラダ",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 3,
+              "end": 10,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "ふるーつさらだ",
+              "ruby_text": "フルーツサラダ",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "ふるーつさらだ"
+            },
+            {
+              "surface": "は",
+              "lemma": "は",
+              "pos": "助詞/係助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 10,
+              "end": 11,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "は",
+              "ruby_text": "は",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "は"
+            },
+            {
+              "surface": "まだ",
+              "lemma": "まだ",
+              "pos": "副詞/*/*/*/*/*",
+              "upos": "ADV",
+              "xpos": "副詞",
+              "feats": {},
+              "start": 11,
+              "end": 13,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "まだ",
+              "ruby_text": "まだ",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "まだ"
+            },
+            {
+              "surface": "腐っ",
+              "lemma": "腐る",
+              "pos": "動詞/一般/*/*/五段-ラ行/連用形-促音便",
+              "upos": "VERB",
+              "xpos": "動詞",
+              "feats": {},
+              "start": 13,
+              "end": 15,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "くさっ",
+              "ruby_text": "腐[くさ]っ",
+              "ruby_spans": [
+                {
+                  "base": "腐",
+                  "reading": "くさ",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "くさっ",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "て",
+              "lemma": "て",
+              "pos": "助詞/接続助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 15,
+              "end": 16,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "て",
+              "ruby_text": "て",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "て"
+            },
+            {
+              "surface": "い",
+              "lemma": "いる",
+              "pos": "動詞/非自立可能/*/*/上一段-ア行/連用形-一般",
+              "upos": "VERB",
+              "xpos": "動詞",
+              "feats": {},
+              "start": 16,
+              "end": 17,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "い",
+              "ruby_text": "い",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "い"
+            },
+            {
+              "surface": "ませ",
+              "lemma": "ます",
+              "pos": "助動詞/*/*/*/助動詞-マス/未然形-一般",
+              "upos": "AUX",
+              "xpos": "助動詞",
+              "feats": {},
+              "start": 17,
+              "end": 19,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "ませ",
+              "ruby_text": "ませ",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "ませ"
+            },
+            {
+              "surface": "ん",
+              "lemma": "ぬ",
+              "pos": "助動詞/*/*/*/助動詞-ヌ/終止形-撥音便",
+              "upos": "AUX",
+              "xpos": "助動詞",
+              "feats": {},
+              "start": 19,
+              "end": 20,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "ん",
+              "ruby_text": "ん",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "ん"
+            },
+            {
+              "surface": "。",
+              "lemma": "。",
+              "pos": "補助記号/句点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 20,
+              "end": 21,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "。",
+              "ruby_text": "。",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "。"
+            }
+          ],
+          "reading": "きのうのふるーつさらだはまだくさっていません。",
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "warnings": [
+            "mediawiki ruby hints applied"
+          ]
+        },
+        "generated_tokens": [
+          {
+            "surface": "昨日",
+            "lemma": "昨日",
+            "pos": "名詞/普通名詞/副詞可能/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "きのう",
+            "ruby_text": "昨日[きのう]",
+            "ruby_spans": [
+              {
+                "base": "昨日",
+                "reading": "きのう",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "きのう",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "の",
+            "lemma": "の",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 2,
+            "end": 3,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "の",
+            "ruby_text": "の",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "の"
+          },
+          {
+            "surface": "フルーツサラダ",
+            "lemma": "フルーツサラダ",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 3,
+            "end": 10,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ふるーつさらだ",
+            "ruby_text": "フルーツサラダ",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "ふるーつさらだ"
+          },
+          {
+            "surface": "は",
+            "lemma": "は",
+            "pos": "助詞/係助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 10,
+            "end": 11,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "は",
+            "ruby_text": "は",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "は"
+          },
+          {
+            "surface": "まだ",
+            "lemma": "まだ",
+            "pos": "副詞/*/*/*/*/*",
+            "upos": "ADV",
+            "xpos": "副詞",
+            "feats": {},
+            "start": 11,
+            "end": 13,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "まだ",
+            "ruby_text": "まだ",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "まだ"
+          },
+          {
+            "surface": "腐っ",
+            "lemma": "腐る",
+            "pos": "動詞/一般/*/*/五段-ラ行/連用形-促音便",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 13,
+            "end": 15,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "くさっ",
+            "ruby_text": "腐[くさ]っ",
+            "ruby_spans": [
+              {
+                "base": "腐",
+                "reading": "くさ",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "くさっ",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "て",
+            "lemma": "て",
+            "pos": "助詞/接続助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 15,
+            "end": 16,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "て",
+            "ruby_text": "て",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "て"
+          },
+          {
+            "surface": "い",
+            "lemma": "いる",
+            "pos": "動詞/非自立可能/*/*/上一段-ア行/連用形-一般",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 16,
+            "end": 17,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "い",
+            "ruby_text": "い",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "い"
+          },
+          {
+            "surface": "ませ",
+            "lemma": "ます",
+            "pos": "助動詞/*/*/*/助動詞-マス/未然形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 17,
+            "end": 19,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ませ",
+            "ruby_text": "ませ",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "ませ"
+          },
+          {
+            "surface": "ん",
+            "lemma": "ぬ",
+            "pos": "助動詞/*/*/*/助動詞-ヌ/終止形-撥音便",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 19,
+            "end": 20,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ん",
+            "ruby_text": "ん",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "ん"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 20,
+            "end": 21,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
+          }
+        ],
+        "generated_reading": "きのうのふるーつさらだはまだくさっていません。",
+        "analyzer": "sudachipy_sudachidict_core_c",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-18T17:47:16Z",
+        "updated_utc": "2026-10-18T17:48:28Z",
+        "applied_utc": "2026-10-18T17:48:28Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      },
+      {
+        "id": "sentprop-7a2c40f225dd0bca",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "ja_n4:4c951fe9006e75cc",
+        "pack_code": "ja_n4",
+        "entry_id": "腐る",
+        "language": "ja",
+        "sentence_index": 3,
+        "old_sentence": "牛乳が腐っている臭いがする。",
+        "old_translations": {
+          "en": "The milk smells rotten.",
+          "es": "La leche huele a podrido.",
+          "fr": "Le lait sent la pourriture.",
+          "de": "Die Milch riecht verdorben.",
+          "it": "Il latte puzza di marcio.",
+          "ko": "우유에서 썩은 냄새가 나.",
+          "zh-Hans": "牛奶闻起来有腐烂的味道。",
+          "yue": "牛奶有腐臭味。",
+          "ru": "От молока пахнет прокисшим.",
+          "pt": "O leite cheira a estragado.",
+          "he": "החלב מריח מקולקל.",
+          "tr": "Süt ekşi, çürük kokuyor.",
+          "vi": "Sữa có mùi thối.",
+          "ar": "رائحة الحليب فاسدة.",
+          "nl": "De melk ruikt bedorven.",
+          "uk": "Від молока тхне кислим, зіпсованим.",
+          "hu": "A tej romlott szagot áraszt.",
+          "hi": "दूध से सड़ी हुई बदबू आ रही है।",
+          "pl": "Mleko pachnie zepsutym.",
+          "el": "Το γάλα μυρίζει χαλασμένο.",
+          "nb": "Melken lukter vondt og surt.",
+          "id": "Susu berbau busuk.",
+          "sv": "Mjölken luktar surt och ruttet.",
+          "ro": "Lapte miroase a stricat.",
+          "cs": "Mléko zapáchá zkaženě.",
+          "da": "Mælken lugter surt og råddent.",
+          "fi": "Maito haisee pilaantuneelta."
+        },
+        "proposed_sentence": "牛乳が腐った臭いがする。",
+        "proposed_translations": {
+          "en": "The milk smells rotten.",
+          "es": "La leche huele a podrido.",
+          "fr": "Le lait sent la pourriture.",
+          "de": "Die Milch riecht verdorben.",
+          "it": "Il latte puzza di marcio.",
+          "ko": "우유에서 썩은 냄새가 나.",
+          "zh-Hans": "牛奶闻起来有腐烂的味道。",
+          "yue": "牛奶有腐臭味。",
+          "ru": "От молока пахнет прокисшим.",
+          "pt": "O leite cheira a estragado.",
+          "he": "החלב מריח מקולקל.",
+          "tr": "Süt ekşi, çürük kokuyor.",
+          "vi": "Sữa có mùi thối.",
+          "ar": "رائحة الحليب فاسدة.",
+          "nl": "De melk ruikt bedorven.",
+          "uk": "Молоко пахне зіпсованим.",
+          "hu": "A tej romlott szagot áraszt.",
+          "hi": "दूध से सड़ी हुई बदबू आ रही है।",
+          "pl": "Mleko pachnie jak zepsute.",
+          "el": "Το γάλα μυρίζει χαλασμένο.",
+          "nb": "Melken lukter vondt og surt.",
+          "id": "Susu berbau busuk.",
+          "sv": "Mjölken luktar surt och ruttet.",
+          "ro": "Lapte miroase a stricat.",
+          "cs": "Mléko zapáchá zkaženě.",
+          "da": "Mælken lugter surt og råddent.",
+          "fi": "Maito haisee pilaantuneelta."
+        },
+        "old_ruby_source": "牛乳[ぎゅうにゅう]が腐[くさ]っている臭[にお]いがする。",
+        "proposed_ruby_source": "牛乳[ぎゅうにゅう]が腐[くさ]った臭[にお]いがする。",
+        "old_japanese": "牛乳が腐っている臭いがする。",
+        "old_english": "The milk smells rotten.",
+        "proposed_japanese": "牛乳が腐った臭いがする。",
+        "proposed_english": "The milk smells rotten.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "ja",
+          "sentence": "牛乳が腐った臭いがする。",
+          "tokens": [
+            {
+              "surface": "牛乳",
+              "lemma": "牛乳",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 0,
+              "end": 2,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "ぎゅうにゅう",
+              "ruby_text": "牛乳[ぎゅうにゅう]",
+              "ruby_spans": [
+                {
+                  "base": "牛乳",
+                  "reading": "ぎゅうにゅう",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "ぎゅうにゅう",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "が",
+              "lemma": "が",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 2,
+              "end": 3,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "が",
+              "ruby_text": "が",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "が"
+            },
+            {
+              "surface": "腐っ",
+              "lemma": "腐る",
+              "pos": "動詞/一般/*/*/五段-ラ行/連用形-促音便",
+              "upos": "VERB",
+              "xpos": "動詞",
+              "feats": {},
+              "start": 3,
+              "end": 5,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "くさっ",
+              "ruby_text": "腐[くさ]っ",
+              "ruby_spans": [
+                {
+                  "base": "腐",
+                  "reading": "くさ",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "くさっ",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "た",
+              "lemma": "た",
+              "pos": "助動詞/*/*/*/助動詞-タ/連体形-一般",
+              "upos": "AUX",
+              "xpos": "助動詞",
+              "feats": {},
+              "start": 5,
+              "end": 6,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "た",
+              "ruby_text": "た",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "た"
+            },
+            {
+              "surface": "臭い",
+              "lemma": "臭い",
+              "pos": "名詞/普通名詞/一般/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 6,
+              "end": 8,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "におい",
+              "ruby_text": "臭[にお]い",
+              "ruby_spans": [
+                {
+                  "base": "臭",
+                  "reading": "にお",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "におい",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "が",
+              "lemma": "が",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 8,
+              "end": 9,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "が",
+              "ruby_text": "が",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "が"
+            },
+            {
+              "surface": "する",
+              "lemma": "する",
+              "pos": "動詞/非自立可能/*/*/サ行変格/終止形-一般",
+              "upos": "VERB",
+              "xpos": "動詞",
+              "feats": {},
+              "start": 9,
+              "end": 11,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "する",
+              "ruby_text": "する",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "する"
+            },
+            {
+              "surface": "。",
+              "lemma": "。",
+              "pos": "補助記号/句点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 11,
+              "end": 12,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "。",
+              "ruby_text": "。",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "。"
+            }
+          ],
+          "reading": "ぎゅうにゅうがくさったにおいがする。",
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "warnings": [
+            "mediawiki ruby hints applied"
+          ]
+        },
+        "generated_tokens": [
+          {
+            "surface": "牛乳",
+            "lemma": "牛乳",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ぎゅうにゅう",
+            "ruby_text": "牛乳[ぎゅうにゅう]",
+            "ruby_spans": [
+              {
+                "base": "牛乳",
+                "reading": "ぎゅうにゅう",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "ぎゅうにゅう",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "が",
+            "lemma": "が",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 2,
+            "end": 3,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "が",
+            "ruby_text": "が",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "が"
+          },
+          {
+            "surface": "腐っ",
+            "lemma": "腐る",
+            "pos": "動詞/一般/*/*/五段-ラ行/連用形-促音便",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 3,
+            "end": 5,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "くさっ",
+            "ruby_text": "腐[くさ]っ",
+            "ruby_spans": [
+              {
+                "base": "腐",
+                "reading": "くさ",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "くさっ",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "た",
+            "lemma": "た",
+            "pos": "助動詞/*/*/*/助動詞-タ/連体形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 5,
+            "end": 6,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "た",
+            "ruby_text": "た",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "た"
+          },
+          {
+            "surface": "臭い",
+            "lemma": "臭い",
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 6,
+            "end": 8,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "におい",
+            "ruby_text": "臭[にお]い",
+            "ruby_spans": [
+              {
+                "base": "臭",
+                "reading": "にお",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "におい",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "が",
+            "lemma": "が",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 8,
+            "end": 9,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "が",
+            "ruby_text": "が",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "が"
+          },
+          {
+            "surface": "する",
+            "lemma": "する",
+            "pos": "動詞/非自立可能/*/*/サ行変格/終止形-一般",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 9,
+            "end": 11,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "する",
+            "ruby_text": "する",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "する"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 11,
+            "end": 12,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
+          }
+        ],
+        "generated_reading": "ぎゅうにゅうがくさったにおいがする。",
+        "analyzer": "sudachipy_sudachidict_core_c",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-18T17:47:16Z",
+        "updated_utc": "2026-10-18T17:48:28Z",
+        "applied_utc": "2026-10-18T17:48:28Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      },
+      {
+        "id": "sentprop-5ab8e95330f403d4",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "ja_n4:4c951fe9006e75cc",
+        "pack_code": "ja_n4",
+        "entry_id": "腐る",
+        "language": "ja",
+        "sentence_index": 4,
+        "old_sentence": "早く腐らないうちに片付けよう。",
+        "old_translations": {
+          "en": "Let's clean it up before it rots.",
+          "es": "Vamos a limpiarlo antes de que se pudra.",
+          "fr": "Nettoyons-le avant qu’il ne pourrisse.",
+          "de": "Lass es uns wegmachen, bevor es verdirbt.",
+          "it": "Puliamolo prima che marcisca.",
+          "ko": "빨리 썩기 전에 치우자.",
+          "zh-Hans": "趁它还没腐烂，赶紧清理干净。",
+          "yue": "喺未爛之前快啲執好佢。",
+          "ru": "Давай уберём это, пока не испортится.",
+          "pt": "Vamos limpar isso antes que apodreça.",
+          "he": "בוא ננקה את זה לפני שיירקב.",
+          "tr": "Çürümeden önce bunu temizleyelim.",
+          "vi": "Hãy dọn dẹp nó trước khi nó thối rữa.",
+          "ar": "دعونا ننظفه قبل أن يتعفن.",
+          "nl": "Laten we het opruimen voordat het bederft.",
+          "uk": "Давай приберемо це, поки не зіпсується.",
+          "hu": "Takarítsuk el, mielőtt megromlik.",
+          "hi": "सड़ने से पहले इसे साफ कर लें।",
+          "pl": "Posprzątajmy to, zanim się zepsuje.",
+          "el": "Ας το καθαρίσουμε πριν σαπίσει.",
+          "nb": "La oss rydde opp før den råtner.",
+          "id": "Mari kita bersihkan sebelum membusuk.",
+          "sv": "Låt oss städa upp innan det ruttnar.",
+          "ro": "Hai să curățăm înainte să se strice.",
+          "cs": "Uklidíme to, než se to zkazí.",
+          "da": "Lad os rydde op, før det bliver dårligt.",
+          "fi": "Siivotaan se ennen kuin se pilaantuu."
+        },
+        "proposed_sentence": "腐らないうちに早く片付けよう。",
+        "proposed_translations": {
+          "en": "Let's put it away before it spoils.",
+          "es": "Vamos a limpiarlo antes de que se pudra.",
+          "fr": "Nettoyons-le avant qu’il ne pourrisse.",
+          "de": "Lass es uns wegräumen, bevor es verdirbt.",
+          "it": "Puliamolo prima che marcisca.",
+          "ko": "썩기 전에 빨리 치우자.",
+          "zh-Hans": "趁它还没腐烂，赶紧清理干净。",
+          "yue": "喺未爛之前快啲執好佢。",
+          "ru": "Давай уберём это, пока не испортится.",
+          "pt": "Vamos guardar isso logo, antes que apodreça.",
+          "he": "בוא ננקה את זה לפני שיירקב.",
+          "tr": "Çürümeden önce bunu temizleyelim.",
+          "vi": "Hãy dọn dẹp nó trước khi nó thối rữa.",
+          "ar": "دعونا ننظفه قبل أن يتعفن.",
+          "nl": "Laten we het opruimen voordat het bederft.",
+          "uk": "Давай приберемо це, поки не зіпсується.",
+          "hu": "Takarítsuk el, mielőtt megromlik.",
+          "hi": "इसके सड़ने से पहले इसे जल्दी हटा दें।",
+          "pl": "Posprzątajmy to, zanim się zepsuje.",
+          "el": "Ας το καθαρίσουμε πριν σαπίσει.",
+          "nb": "La oss rydde opp før den råtner.",
+          "id": "Mari kita segera membereskannya sebelum membusuk.",
+          "sv": "Låt oss städa upp innan det ruttnar.",
+          "ro": "Hai să curățăm înainte să se strice.",
+          "cs": "Uklidíme to, než se to zkazí.",
+          "da": "Lad os rydde op, før det bliver dårligt.",
+          "fi": "Siivotaan se ennen kuin se pilaantuu."
+        },
+        "old_ruby_source": "早[はや]く腐[くさ]らないうちに片付[かたづ]けよう。",
+        "proposed_ruby_source": "腐[くさ]らないうちに早[はや]く片付[かたづ]けよう。",
+        "old_japanese": "早く腐らないうちに片付けよう。",
+        "old_english": "Let's clean it up before it rots.",
+        "proposed_japanese": "腐らないうちに早く片付けよう。",
+        "proposed_english": "Let's put it away before it spoils.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "ja",
+          "sentence": "腐らないうちに早く片付けよう。",
+          "tokens": [
+            {
+              "surface": "腐ら",
+              "lemma": "腐る",
+              "pos": "動詞/一般/*/*/五段-ラ行/未然形-一般",
+              "upos": "VERB",
+              "xpos": "動詞",
+              "feats": {},
+              "start": 0,
+              "end": 2,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "くさら",
+              "ruby_text": "腐[くさ]ら",
+              "ruby_spans": [
+                {
+                  "base": "腐",
+                  "reading": "くさ",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "くさら",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "ない",
+              "lemma": "ない",
+              "pos": "助動詞/*/*/*/助動詞-ナイ/連体形-一般",
+              "upos": "AUX",
+              "xpos": "助動詞",
+              "feats": {},
+              "start": 2,
+              "end": 4,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "ない",
+              "ruby_text": "ない",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "ない"
+            },
+            {
+              "surface": "うち",
+              "lemma": "うち",
+              "pos": "名詞/普通名詞/副詞可能/*/*/*",
+              "upos": "NOUN",
+              "xpos": "名詞",
+              "feats": {},
+              "start": 4,
+              "end": 6,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "うち",
+              "ruby_text": "うち",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "うち"
+            },
+            {
+              "surface": "に",
+              "lemma": "に",
+              "pos": "助詞/格助詞/*/*/*/*",
+              "upos": "PART",
+              "xpos": "助詞",
+              "feats": {},
+              "start": 6,
+              "end": 7,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "に",
+              "ruby_text": "に",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "に"
+            },
+            {
+              "surface": "早く",
+              "lemma": "早い",
+              "pos": "形容詞/一般/*/*/形容詞/連用形-一般",
+              "upos": "ADJ",
+              "xpos": "形容詞",
+              "feats": {},
+              "start": 7,
+              "end": 9,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "はやく",
+              "ruby_text": "早[はや]く",
+              "ruby_spans": [
+                {
+                  "base": "早",
+                  "reading": "はや",
+                  "start": 0,
+                  "length": 1
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "はやく",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "片付けよう",
+              "lemma": "片付ける",
+              "pos": "動詞/一般/*/*/下一段-カ行/意志推量形",
+              "upos": "VERB",
+              "xpos": "動詞",
+              "feats": {},
+              "start": 9,
+              "end": 14,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "かたづけよう",
+              "ruby_text": "片付[かたづ]けよう",
+              "ruby_spans": [
+                {
+                  "base": "片付",
+                  "reading": "かたづ",
+                  "start": 0,
+                  "length": 2
+                }
+              ],
+              "ruby_confidence": "reviewed",
+              "furigana": "かたづけよう",
+              "ruby_source": "mediawiki_sentence_ruby"
+            },
+            {
+              "surface": "。",
+              "lemma": "。",
+              "pos": "補助記号/句点/*/*/*/*",
+              "upos": "PUNCT",
+              "xpos": "補助記号",
+              "feats": {},
+              "start": 14,
+              "end": 15,
+              "analyzer": "sudachipy_sudachidict_core_c",
+              "reading_kana": "。",
+              "ruby_text": "。",
+              "ruby_spans": [],
+              "ruby_confidence": "high",
+              "furigana": "。"
+            }
+          ],
+          "reading": "くさらないうちにはやくかたづけよう。",
+          "analyzer": "sudachipy_sudachidict_core_c",
+          "warnings": [
+            "mediawiki ruby hints applied"
+          ]
+        },
+        "generated_tokens": [
+          {
+            "surface": "腐ら",
+            "lemma": "腐る",
+            "pos": "動詞/一般/*/*/五段-ラ行/未然形-一般",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "くさら",
+            "ruby_text": "腐[くさ]ら",
+            "ruby_spans": [
+              {
+                "base": "腐",
+                "reading": "くさ",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "くさら",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "ない",
+            "lemma": "ない",
+            "pos": "助動詞/*/*/*/助動詞-ナイ/連体形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 2,
+            "end": 4,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ない",
+            "ruby_text": "ない",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "ない"
+          },
+          {
+            "surface": "うち",
+            "lemma": "うち",
+            "pos": "名詞/普通名詞/副詞可能/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 4,
+            "end": 6,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "うち",
+            "ruby_text": "うち",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "うち"
+          },
+          {
+            "surface": "に",
+            "lemma": "に",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 6,
+            "end": 7,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "に",
+            "ruby_text": "に",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "に"
+          },
+          {
+            "surface": "早く",
+            "lemma": "早い",
+            "pos": "形容詞/一般/*/*/形容詞/連用形-一般",
+            "upos": "ADJ",
+            "xpos": "形容詞",
+            "feats": {},
+            "start": 7,
+            "end": 9,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "はやく",
+            "ruby_text": "早[はや]く",
+            "ruby_spans": [
+              {
+                "base": "早",
+                "reading": "はや",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "はやく",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "片付けよう",
+            "lemma": "片付ける",
+            "pos": "動詞/一般/*/*/下一段-カ行/意志推量形",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 9,
+            "end": 14,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "かたづけよう",
+            "ruby_text": "片付[かたづ]けよう",
+            "ruby_spans": [
+              {
+                "base": "片付",
+                "reading": "かたづ",
+                "start": 0,
+                "length": 2
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "かたづけよう",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 14,
+            "end": 15,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
+          }
+        ],
+        "generated_reading": "くさらないうちにはやくかたづけよう。",
+        "analyzer": "sudachipy_sudachidict_core_c",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-18T17:47:16Z",
+        "updated_utc": "2026-10-18T17:48:28Z",
+        "applied_utc": "2026-10-18T17:48:28Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-18T17:48:28Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -595,33 +2091,6 @@
   "app_payload": {
     "word": "腐る",
     "word_reading": "くさる",
-    "word_en": "to [food] rot",
-    "word_es": "[comida] pudrirse",
-    "word_fr": "[nourriture] pourrir",
-    "word_de": "[Essen] verderben",
-    "word_it": "[cibo] marcire",
-    "word_ko": "[음식이] 썩다",
-    "word_zh-Hans": "（食物）腐烂",
-    "word_yue": "（食物）腐爛",
-    "word_ru": "[еда] гнить",
-    "word_pt": "[comida] apodrecer",
-    "word_he": "[אוכל] להירקב",
-    "word_tr": "[yiyecek] çürümek",
-    "word_vi": "[thức ăn] bị thối rữa",
-    "word_ar": "[الطعام] يفسد / يتعفن",
-    "word_nl": "[voedsel] bederven",
-    "word_uk": "[їжа] гнити",
-    "word_hu": "[étel] megromlik / megrothad",
-    "word_hi": "[भोजन] सड़ना",
-    "word_pl": "[jedzenie] psuć się",
-    "word_el": "[φαγητό] να σαπίζει",
-    "word_nb": "[mat] råtne",
-    "word_id": "[makanan] membusuk",
-    "word_sv": "[mat] ruttna",
-    "word_ro": "[mâncare] a putrezi",
-    "word_cs": "[jídlo] hnít / kazit se",
-    "word_da": "[mad] rådne",
-    "word_fi": "[ruoka] pilaantua / mädäntyä",
     "comic_difficulty": 9.59,
     "jp": [
       "昨日のフルーツサラダはまだ腐りません。",
@@ -635,24 +2104,20 @@
       "ぎゅうにゅうがくさっているにおいがする。",
       "はやくくさらないうちにかたづけよう。"
     ],
-    "en": [
-      "The fruit salad from yesterday hasn't rotted yet.",
-      "This soup has already rotted!",
-      "The milk smells rotten.",
-      "Let's clean it up before it rots."
-    ],
     "pos_analysis": [
       {
-        "sentence": "昨日のフルーツサラダはまだ腐りません。",
+        "sentence": "昨日のフルーツサラダはまだ腐っていません。",
         "tokens": [
           {
             "surface": "昨日",
-            "surface_en": "yesterday",
-            "furigana": "きのう",
-            "pos": "noun",
             "lemma": "昨日",
-            "explanation": "Indicates the time when something happened.",
-            "difficulty": 15,
+            "pos": "名詞/普通名詞/副詞可能/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "きのう",
             "ruby_text": "昨日[きのう]",
             "ruby_spans": [
@@ -663,76 +2128,86 @@
                 "length": 2
               }
             ],
-            "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "ruby_confidence": "reviewed",
+            "furigana": "きのう",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "の",
-            "surface_en": "of",
-            "furigana": "の",
-            "pos": "particle",
             "lemma": "の",
-            "explanation": "Genitive particle marking possession or association.",
-            "difficulty": 1,
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 2,
+            "end": 3,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "の",
             "ruby_text": "の",
             "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "の"
           },
           {
             "surface": "フルーツサラダ",
-            "surface_en": "fruit salad",
-            "furigana": "ふるーつさらだ",
-            "pos": "noun",
             "lemma": "フルーツサラダ",
-            "explanation": "The dish being discussed.",
-            "difficulty": 1,
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 3,
+            "end": 10,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "ふるーつさらだ",
             "ruby_text": "フルーツサラダ",
             "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "ふるーつさらだ"
           },
           {
             "surface": "は",
-            "surface_en": "as for",
-            "furigana": "は",
-            "pos": "particle",
             "lemma": "は",
-            "explanation": "Topic marker indicating what the sentence is about.",
-            "difficulty": 1,
+            "pos": "助詞/係助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 10,
+            "end": 11,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "は",
             "ruby_text": "は",
             "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "は"
           },
           {
             "surface": "まだ",
-            "surface_en": "still",
-            "furigana": "まだ",
-            "pos": "adverb",
             "lemma": "まだ",
-            "explanation": "Indicates that the state continues up to now.",
-            "difficulty": 1,
+            "pos": "副詞/*/*/*/*/*",
+            "upos": "ADV",
+            "xpos": "副詞",
+            "feats": {},
+            "start": 11,
+            "end": 13,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "まだ",
             "ruby_text": "まだ",
             "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "まだ"
           },
           {
-            "surface": "腐りません",
-            "surface_en": "does not rot",
-            "furigana": "くさりません",
-            "pos": "verb",
+            "surface": "腐っ",
             "lemma": "腐る",
-            "explanation": "Polite negative form of ‘to rot,’ indicating it hasn’t spoiled yet.",
-            "difficulty": 34,
-            "is_main_word": true,
-            "reading_kana": "くさりません",
-            "ruby_text": "腐[くさ]りません",
+            "pos": "動詞/一般/*/*/五段-ラ行/連用形-促音便",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 13,
+            "end": 15,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "くさっ",
+            "ruby_text": "腐[くさ]っ",
             "ruby_spans": [
               {
                 "base": "腐",
@@ -741,8 +2216,90 @@
                 "length": 1
               }
             ],
+            "ruby_confidence": "reviewed",
+            "furigana": "くさっ",
+            "ruby_source": "mediawiki_sentence_ruby",
+            "is_main_word": true
+          },
+          {
+            "surface": "て",
+            "lemma": "て",
+            "pos": "助詞/接続助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 15,
+            "end": 16,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "て",
+            "ruby_text": "て",
+            "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "て"
+          },
+          {
+            "surface": "い",
+            "lemma": "いる",
+            "pos": "動詞/非自立可能/*/*/上一段-ア行/連用形-一般",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 16,
+            "end": 17,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "い",
+            "ruby_text": "い",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "い"
+          },
+          {
+            "surface": "ませ",
+            "lemma": "ます",
+            "pos": "助動詞/*/*/*/助動詞-マス/未然形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 17,
+            "end": 19,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ませ",
+            "ruby_text": "ませ",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "ませ"
+          },
+          {
+            "surface": "ん",
+            "lemma": "ぬ",
+            "pos": "助動詞/*/*/*/助動詞-ヌ/終止形-撥音便",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 19,
+            "end": 20,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ん",
+            "ruby_text": "ん",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "ん"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 20,
+            "end": 21,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
           }
         ],
         "difficulty_aggregated": 8.83
@@ -832,16 +2389,18 @@
         "difficulty_aggregated": 7.6
       },
       {
-        "sentence": "牛乳が腐っている臭いがする。",
+        "sentence": "牛乳が腐った臭いがする。",
         "tokens": [
           {
             "surface": "牛乳",
-            "surface_en": "milk",
-            "furigana": "ぎゅうにゅう",
-            "pos": "noun",
             "lemma": "牛乳",
-            "explanation": "The substance whose smell is being noticed.",
-            "difficulty": 23,
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "ぎゅうにゅう",
             "ruby_text": "牛乳[ぎゅうにゅう]",
             "ruby_spans": [
@@ -852,34 +2411,38 @@
                 "length": 2
               }
             ],
-            "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "ruby_confidence": "reviewed",
+            "furigana": "ぎゅうにゅう",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "が",
-            "surface_en": "[subject marker]",
-            "furigana": "が",
-            "pos": "particle",
             "lemma": "が",
-            "explanation": "Marks ‘milk’ as the subject of the clause.",
-            "difficulty": 1,
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 2,
+            "end": 3,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "が",
             "ruby_text": "が",
             "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "が"
           },
           {
-            "surface": "腐っている",
-            "surface_en": "is rotting",
-            "furigana": "くさっている",
-            "pos": "verb",
+            "surface": "腐っ",
             "lemma": "腐る",
-            "explanation": "Progressive form indicating the ongoing state of spoilage.",
-            "difficulty": 34,
-            "is_main_word": true,
-            "reading_kana": "くさっている",
-            "ruby_text": "腐[くさ]っている",
+            "pos": "動詞/一般/*/*/五段-ラ行/連用形-促音便",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 3,
+            "end": 5,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "くさっ",
+            "ruby_text": "腐[くさ]っ",
             "ruby_spans": [
               {
                 "base": "腐",
@@ -888,17 +2451,37 @@
                 "length": 1
               }
             ],
+            "ruby_confidence": "reviewed",
+            "furigana": "くさっ",
+            "ruby_source": "mediawiki_sentence_ruby",
+            "is_main_word": true
+          },
+          {
+            "surface": "た",
+            "lemma": "た",
+            "pos": "助動詞/*/*/*/助動詞-タ/連体形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 5,
+            "end": 6,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "た",
+            "ruby_text": "た",
+            "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "た"
           },
           {
             "surface": "臭い",
-            "surface_en": "smell",
-            "furigana": "におい",
-            "pos": "noun",
             "lemma": "臭い",
-            "explanation": "Refers to the odor being detected.",
-            "difficulty": 20,
+            "pos": "名詞/普通名詞/一般/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 6,
+            "end": 8,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "におい",
             "ruby_text": "臭[にお]い",
             "ruby_spans": [
@@ -909,51 +2492,147 @@
                 "length": 1
               }
             ],
-            "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "ruby_confidence": "reviewed",
+            "furigana": "におい",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "が",
-            "surface_en": "[subject marker]",
-            "furigana": "が",
-            "pos": "particle",
             "lemma": "が",
-            "explanation": "Marks ‘smell’ as the subject for ‘to sense.’",
-            "difficulty": 1,
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 8,
+            "end": 9,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "が",
             "ruby_text": "が",
             "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "が"
           },
           {
             "surface": "する",
-            "surface_en": "to sense",
-            "furigana": "する",
-            "pos": "verb",
             "lemma": "する",
-            "explanation": "Used with ‘odor’ to mean ‘to smell.’",
-            "difficulty": 1,
+            "pos": "動詞/非自立可能/*/*/サ行変格/終止形-一般",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 9,
+            "end": 11,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "する",
             "ruby_text": "する",
             "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "する"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 11,
+            "end": 12,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "。"
           }
         ],
         "difficulty_aggregated": 13.33
       },
       {
-        "sentence": "早く腐らないうちに片付けよう。",
+        "sentence": "腐らないうちに早く片付けよう。",
         "tokens": [
           {
+            "surface": "腐ら",
+            "lemma": "腐る",
+            "pos": "動詞/一般/*/*/五段-ラ行/未然形-一般",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "くさら",
+            "ruby_text": "腐[くさ]ら",
+            "ruby_spans": [
+              {
+                "base": "腐",
+                "reading": "くさ",
+                "start": 0,
+                "length": 1
+              }
+            ],
+            "ruby_confidence": "reviewed",
+            "furigana": "くさら",
+            "ruby_source": "mediawiki_sentence_ruby",
+            "is_main_word": true
+          },
+          {
+            "surface": "ない",
+            "lemma": "ない",
+            "pos": "助動詞/*/*/*/助動詞-ナイ/連体形-一般",
+            "upos": "AUX",
+            "xpos": "助動詞",
+            "feats": {},
+            "start": 2,
+            "end": 4,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "ない",
+            "ruby_text": "ない",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "ない"
+          },
+          {
+            "surface": "うち",
+            "lemma": "うち",
+            "pos": "名詞/普通名詞/副詞可能/*/*/*",
+            "upos": "NOUN",
+            "xpos": "名詞",
+            "feats": {},
+            "start": 4,
+            "end": 6,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "うち",
+            "ruby_text": "うち",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "うち"
+          },
+          {
+            "surface": "に",
+            "lemma": "に",
+            "pos": "助詞/格助詞/*/*/*/*",
+            "upos": "PART",
+            "xpos": "助詞",
+            "feats": {},
+            "start": 6,
+            "end": 7,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "に",
+            "ruby_text": "に",
+            "ruby_spans": [],
+            "ruby_confidence": "high",
+            "furigana": "に"
+          },
+          {
             "surface": "早く",
-            "surface_en": "quickly",
-            "furigana": "はやく",
-            "pos": "adverb",
-            "lemma": "早く",
-            "explanation": "Expresses the manner or urgency of the action.",
-            "difficulty": 6,
+            "lemma": "早い",
+            "pos": "形容詞/一般/*/*/形容詞/連用形-一般",
+            "upos": "ADJ",
+            "xpos": "形容詞",
+            "feats": {},
+            "start": 7,
+            "end": 9,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "はやく",
             "ruby_text": "早[はや]く",
             "ruby_spans": [
@@ -964,67 +2643,20 @@
                 "length": 1
               }
             ],
-            "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
-          },
-          {
-            "surface": "腐らない",
-            "surface_en": "does not rot",
-            "furigana": "くさらない",
-            "pos": "verb",
-            "lemma": "腐る",
-            "explanation": "Negative form meaning ‘before it spoils.’",
-            "difficulty": 34,
-            "is_main_word": true,
-            "reading_kana": "くさらない",
-            "ruby_text": "腐[くさ]らない",
-            "ruby_spans": [
-              {
-                "base": "腐",
-                "reading": "くさ",
-                "start": 0,
-                "length": 1
-              }
-            ],
-            "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
-          },
-          {
-            "surface": "うち",
-            "surface_en": "time/within",
-            "furigana": "うち",
-            "pos": "noun",
-            "lemma": "うち",
-            "explanation": "Refers to the period or opportunity before something happens.",
-            "difficulty": 1,
-            "reading_kana": "うち",
-            "ruby_text": "うち",
-            "ruby_spans": [],
-            "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
-          },
-          {
-            "surface": "に",
-            "surface_en": "by/until",
-            "furigana": "に",
-            "pos": "particle",
-            "lemma": "に",
-            "explanation": "Indicates the time limit by which the action should be completed.",
-            "difficulty": 1,
-            "reading_kana": "に",
-            "ruby_text": "に",
-            "ruby_spans": [],
-            "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "ruby_confidence": "reviewed",
+            "furigana": "はやく",
+            "ruby_source": "mediawiki_sentence_ruby"
           },
           {
             "surface": "片付けよう",
-            "surface_en": "let’s put away",
-            "furigana": "かたづけよう",
-            "pos": "verb",
             "lemma": "片付ける",
-            "explanation": "Volitional form suggesting ‘let’s clean up/put away.’",
-            "difficulty": 1,
+            "pos": "動詞/一般/*/*/下一段-カ行/意志推量形",
+            "upos": "VERB",
+            "xpos": "動詞",
+            "feats": {},
+            "start": 9,
+            "end": 14,
+            "analyzer": "sudachipy_sudachidict_core_c",
             "reading_kana": "かたづけよう",
             "ruby_text": "片付[かたづ]けよう",
             "ruby_spans": [
@@ -1035,150 +2667,64 @@
                 "length": 2
               }
             ],
+            "ruby_confidence": "reviewed",
+            "furigana": "かたづけよう",
+            "ruby_source": "mediawiki_sentence_ruby"
+          },
+          {
+            "surface": "。",
+            "lemma": "。",
+            "pos": "補助記号/句点/*/*/*/*",
+            "upos": "PUNCT",
+            "xpos": "補助記号",
+            "feats": {},
+            "start": 14,
+            "end": 15,
+            "analyzer": "sudachipy_sudachidict_core_c",
+            "reading_kana": "。",
+            "ruby_text": "。",
+            "ruby_spans": [],
             "ruby_confidence": "high",
-            "ruby_source": "sudachipy_sudachidict_core_c"
+            "furigana": "。"
           }
         ],
         "difficulty_aggregated": 8.6
       }
     ],
-    "es": [
-      "La ensalada de frutas de ayer aún no se ha podrido.",
-      "¡Esta sopa ya se ha podrido!",
-      "La leche huele a podrido.",
-      "Vamos a limpiarlo antes de que se pudra."
-    ],
-    "fr": [
-      "La salade de fruits d’hier n’a pas encore pourri.",
-      "Cette soupe a déjà pourri !",
-      "Le lait sent la pourriture.",
-      "Nettoyons-le avant qu’il ne pourrisse."
-    ],
-    "de": [
-      "Der Obstsalat von gestern ist noch nicht verdorben.",
-      "Diese Suppe ist schon verdorben!",
-      "Die Milch riecht verdorben.",
-      "Lass es uns wegmachen, bevor es verdirbt."
-    ],
-    "it": [
-      "L'insalata di frutta di ieri non è ancora marcita.",
-      "Questa zuppa è già marcita!",
-      "Il latte puzza di marcio.",
-      "Puliamolo prima che marcisca."
-    ],
-    "ko": [
-      "어제의 과일 샐러드는 아직 썩지 않았어요.",
-      "이 수프는 벌써 썩어 버렸어!",
-      "우유에서 썩은 냄새가 나.",
-      "빨리 썩기 전에 치우자."
-    ],
-    "zh-Hans": [
-      "昨天的水果沙拉还没腐烂。",
-      "这汤已经坏掉了！",
-      "牛奶闻起来有腐烂的味道。",
-      "趁它还没腐烂，赶紧清理干净。"
-    ],
-    "yue": [
-      "琴日嘅生果沙律仲未爛。",
-      "呢啲湯已經爛咗啦！",
-      "牛奶有腐臭味。",
-      "喺未爛之前快啲執好佢。"
-    ],
-    "ru": [
-      "Фруктовый салат со вчера ещё не испортился.",
-      "Этот суп уже испортился!",
-      "От молока пахнет прокисшим.",
-      "Давай уберём это, пока не испортится."
-    ],
-    "pt": [
-      "A salada de frutas de ontem ainda não apodreceu.",
-      "Essa sopa já apodreceu!",
-      "O leite cheira a estragado.",
-      "Vamos limpar isso antes que apodreça."
-    ],
-    "he": [
-      "סלט הפירות מאתמול עדיין לא נרקב.",
-      "המרק הזה כבר נרקב!",
-      "החלב מריח מקולקל.",
-      "בוא ננקה את זה לפני שיירקב."
-    ],
-    "tr": [
-      "Dünkü meyve salatası henüz çürümedi.",
-      "Bu çorba çoktan bozulmuş!",
-      "Süt ekşi, çürük kokuyor.",
-      "Çürümeden önce bunu temizleyelim."
-    ],
-    "vi": [
-      "Salad trái cây từ hôm qua vẫn chưa bị thối rữa.",
-      "Món súp này đã thối rữa rồi!",
-      "Sữa có mùi thối.",
-      "Hãy dọn dẹp nó trước khi nó thối rữa."
-    ],
+    "word_POS": "Verb",
+    "entry_id": "腐る",
+    "word_en": "to [food] rot",
+    "word_es": "[comida] pudrirse",
+    "word_fr": "[nourriture] pourrir",
+    "word_de": "[Essen] verderben",
+    "word_it": "[cibo] marcire",
+    "word_ko": "[음식이] 썩다",
+    "word_zh-Hans": "（食物）腐烂",
+    "word_yue": "（食物）腐爛",
+    "word_ru": "[еда] гнить",
+    "word_pt": "[comida] apodrecer",
+    "word_he": "[אוכל] להירקב",
+    "word_tr": "[yiyecek] çürümek",
+    "word_vi": "[thức ăn] bị thối rữa",
+    "word_ar": "[الطعام] يفسد / يتعفن",
+    "word_nl": "[voedsel] bederven",
+    "word_uk": "[їжа] гнити",
+    "word_hu": "[étel] megromlik / megrothad",
+    "word_hi": "[भोजन] सड़ना",
+    "word_pl": "[jedzenie] psuć się",
+    "word_el": "[φαγητό] να σαπίζει",
+    "word_nb": "[mat] råtne",
+    "word_id": "[makanan] membusuk",
+    "word_sv": "[mat] ruttna",
+    "word_ro": "[mâncare] a putrezi",
+    "word_cs": "[jídlo] hnít / kazit se",
+    "word_da": "[mad] rådne",
+    "word_fi": "[ruoka] pilaantua / mädäntyä",
     "ar": [
       "سلطة الفواكه من الأمس لم تتعفن بعد.",
       "هذا الحساء قد تعفن بالفعل!",
       "رائحة الحليب فاسدة.",
       "دعونا ننظفه قبل أن يتعفن."
-    ],
-    "nl": [
-      "De fruitsalade van gisteren is nog niet bedorven.",
-      "Deze soep is al bedorven!",
-      "De melk ruikt bedorven.",
-      "Laten we het opruimen voordat het bederft."
-    ],
-    "uk": [
-      "Фруктовий салат учорашнього дня ще не зіпсувався.",
-      "Цей суп уже зіпсувався!",
-      "Від молока тхне кислим, зіпсованим.",
-      "Давай приберемо це, поки не зіпсується."
-    ],
-    "hu": [
-      "A tegnapi gyümölcssaláta még nem romlott meg.",
-      "Ez a leves már megromlott!",
-      "A tej romlott szagot áraszt.",
-      "Takarítsuk el, mielőtt megromlik."
-    ],
-    "hi": [
-      "कल का फलों का सलाद अभी तक सड़ा नहीं है।",
-      "यह सूप पहले ही सड़ चुका है!",
-      "दूध से सड़ी हुई बदबू आ रही है।",
-      "सड़ने से पहले इसे साफ कर लें।"
-    ],
-    "pl": [
-      "Sałatka owocowa z wczoraj jeszcze się nie zepsuła.",
-      "Ta zupa już się zepsuła!",
-      "Mleko pachnie zepsutym.",
-      "Posprzątajmy to, zanim się zepsuje."
-    ],
-    "el": [
-      "Η φρουτοσαλάτα από χθες δεν έχει σαπίσει ακόμα.",
-      "Αυτή η σούπα έχει ήδη σαπίσει!",
-      "Το γάλα μυρίζει χαλασμένο.",
-      "Ας το καθαρίσουμε πριν σαπίσει."
-    ],
-    "nb": [
-      "Fruktsalaten fra i går har ikke råtnet ennå.",
-      "Denne suppen har allerede råtnet!",
-      "Melken lukter vondt og surt.",
-      "La oss rydde opp før den råtner."
-    ],
-    "id": [
-      "Salad buah dari kemarin belum membusuk.",
-      "Sup ini sudah membusuk!",
-      "Susu berbau busuk.",
-      "Mari kita bersihkan sebelum membusuk."
-    ],
-    "sv": [
-      "Fruktsalladen från igår har inte ruttnat än.",
-      "Den här soppan har redan ruttnat!",
-      "Mjölken luktar surt och ruttet.",
-      "Låt oss städa upp innan det ruttnar."
-    ],
-    "ro": [
-      "Salata de fructe de ieri nu s-a stricat încă.",
-      "Supa asta deja s-a stricat!",
-      "Lapte miroase a stricat.",
-      "Hai să curățăm înainte să se strice."
     ],
     "cs": [
       "Ovocný salát ze včerejška ještě nezhnil / nezkazil se.",
@@ -1192,12 +2738,149 @@
       "Mælken lugter surt og råddent.",
       "Lad os rydde op, før det bliver dårligt."
     ],
+    "de": [
+      "Der Obstsalat von gestern ist noch nicht verdorben.",
+      "Diese Suppe ist schon verdorben!",
+      "Die Milch riecht verdorben.",
+      "Lass es uns wegmachen, bevor es verdirbt."
+    ],
+    "el": [
+      "Η φρουτοσαλάτα από χθες δεν έχει σαπίσει ακόμα.",
+      "Αυτή η σούπα έχει ήδη σαπίσει!",
+      "Το γάλα μυρίζει χαλασμένο.",
+      "Ας το καθαρίσουμε πριν σαπίσει."
+    ],
+    "en": [
+      "The fruit salad from yesterday hasn't rotted yet.",
+      "This soup has already rotted!",
+      "The milk smells rotten.",
+      "Let's clean it up before it rots."
+    ],
+    "es": [
+      "La ensalada de frutas de ayer aún no se ha podrido.",
+      "¡Esta sopa ya se ha podrido!",
+      "La leche huele a podrido.",
+      "Vamos a limpiarlo antes de que se pudra."
+    ],
     "fi": [
       "Eilinen hedelmäsalaatti ei ole vielä pilaantunut.",
       "Tämä keitto on jo pilaantunut!",
       "Maito haisee pilaantuneelta.",
       "Siivotaan se ennen kuin se pilaantuu."
     ],
-    "word_POS": "Verb"
+    "fr": [
+      "La salade de fruits d’hier n’a pas encore pourri.",
+      "Cette soupe a déjà pourri !",
+      "Le lait sent la pourriture.",
+      "Nettoyons-le avant qu’il ne pourrisse."
+    ],
+    "he": [
+      "סלט הפירות מאתמול עדיין לא נרקב.",
+      "המרק הזה כבר נרקב!",
+      "החלב מריח מקולקל.",
+      "בוא ננקה את זה לפני שיירקב."
+    ],
+    "hi": [
+      "कल का फलों का सलाद अभी तक सड़ा नहीं है।",
+      "यह सूप पहले ही सड़ चुका है!",
+      "दूध से सड़ी हुई बदबू आ रही है।",
+      "सड़ने से पहले इसे साफ कर लें।"
+    ],
+    "hu": [
+      "A tegnapi gyümölcssaláta még nem romlott meg.",
+      "Ez a leves már megromlott!",
+      "A tej romlott szagot áraszt.",
+      "Takarítsuk el, mielőtt megromlik."
+    ],
+    "id": [
+      "Salad buah dari kemarin belum membusuk.",
+      "Sup ini sudah membusuk!",
+      "Susu berbau busuk.",
+      "Mari kita bersihkan sebelum membusuk."
+    ],
+    "it": [
+      "L'insalata di frutta di ieri non è ancora marcita.",
+      "Questa zuppa è già marcita!",
+      "Il latte puzza di marcio.",
+      "Puliamolo prima che marcisca."
+    ],
+    "ko": [
+      "어제의 과일 샐러드는 아직 썩지 않았어요.",
+      "이 수프는 벌써 썩어 버렸어!",
+      "우유에서 썩은 냄새가 나.",
+      "빨리 썩기 전에 치우자."
+    ],
+    "nb": [
+      "Fruktsalaten fra i går har ikke råtnet ennå.",
+      "Denne suppen har allerede råtnet!",
+      "Melken lukter vondt og surt.",
+      "La oss rydde opp før den råtner."
+    ],
+    "nl": [
+      "De fruitsalade van gisteren is nog niet bedorven.",
+      "Deze soep is al bedorven!",
+      "De melk ruikt bedorven.",
+      "Laten we het opruimen voordat het bederft."
+    ],
+    "pl": [
+      "Sałatka owocowa z wczoraj jeszcze się nie zepsuła.",
+      "Ta zupa już się zepsuła!",
+      "Mleko pachnie zepsutym.",
+      "Posprzątajmy to, zanim się zepsuje."
+    ],
+    "pt": [
+      "A salada de frutas de ontem ainda não apodreceu.",
+      "Essa sopa já apodreceu!",
+      "O leite cheira a estragado.",
+      "Vamos limpar isso antes que apodreça."
+    ],
+    "ro": [
+      "Salata de fructe de ieri nu s-a stricat încă.",
+      "Supa asta deja s-a stricat!",
+      "Lapte miroase a stricat.",
+      "Hai să curățăm înainte să se strice."
+    ],
+    "ru": [
+      "Фруктовый салат со вчера ещё не испортился.",
+      "Этот суп уже испортился!",
+      "От молока пахнет прокисшим.",
+      "Давай уберём это, пока не испортится."
+    ],
+    "sv": [
+      "Fruktsalladen från igår har inte ruttnat än.",
+      "Den här soppan har redan ruttnat!",
+      "Mjölken luktar surt och ruttet.",
+      "Låt oss städa upp innan det ruttnar."
+    ],
+    "tr": [
+      "Dünkü meyve salatası henüz çürümedi.",
+      "Bu çorba çoktan bozulmuş!",
+      "Süt ekşi, çürük kokuyor.",
+      "Çürümeden önce bunu temizleyelim."
+    ],
+    "uk": [
+      "Фруктовий салат учорашнього дня ще не зіпсувався.",
+      "Цей суп уже зіпсувався!",
+      "Від молока тхне кислим, зіпсованим.",
+      "Давай приберемо це, поки не зіпсується."
+    ],
+    "vi": [
+      "Salad trái cây từ hôm qua vẫn chưa bị thối rữa.",
+      "Món súp này đã thối rữa rồi!",
+      "Sữa có mùi thối.",
+      "Hãy dọn dẹp nó trước khi nó thối rữa."
+    ],
+    "yue": [
+      "琴日嘅生果沙律仲未爛。",
+      "呢啲湯已經爛咗啦！",
+      "牛奶有腐臭味。",
+      "喺未爛之前快啲執好佢。"
+    ],
+    "zh-Hans": [
+      "昨天的水果沙拉还没腐烂。",
+      "这汤已经坏掉了！",
+      "牛奶闻起来有腐烂的味道。",
+      "趁它还没腐烂，赶紧清理干净。"
+    ]
   }
 }
