@@ -119,10 +119,10 @@
       "difficulty": 5.75
     },
     {
-      "target": "Alles ist heute gut.",
+      "target": "Heute ist alles gut.",
       "reading": "/ˈaləs ɪst ˈhɔʏ̯tə ɡuːt/",
       "translations": {
-        "de": "Alles ist heute gut.",
+        "de": "Heute ist alles gut.",
         "ipa": "/ˈaləs ɪst ˈhɔʏ̯tə ɡuːt/",
         "en": "Everything is good today.",
         "es": "Hoy todo está bien.",
@@ -154,41 +154,60 @@
       },
       "tokens": [
         {
-          "surface": "Alles",
-          "surface_en": "everything",
-          "furigana": "[ˈaləs]",
-          "pos": "PRON",
-          "lemma": "alles",
-          "explanation": "Indefinite pronoun used as subject; nominative.",
-          "difficulty": 7,
-          "is_main_word": true
+          "surface": "Heute",
+          "lemma": "heute",
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "ADV",
+          "feats": {},
+          "start": 0,
+          "end": 5,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "ist",
-          "surface_en": "is",
-          "furigana": "[ɪst]",
-          "pos": "AUX",
           "lemma": "sein",
-          "explanation": "Copular auxiliary linking the subject 'Alles' to the predicative complement.",
-          "difficulty": 4
+          "pos": "AUX",
+          "upos": "AUX",
+          "xpos": "VAFIN",
+          "feats": {},
+          "start": 6,
+          "end": 9,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "heute",
-          "surface_en": "today",
-          "furigana": "[ˈhɔʏ̯tə]",
-          "pos": "ADV",
-          "lemma": "heute",
-          "explanation": "Temporal adverb modifying the clause (time frame).",
-          "difficulty": 7
+          "surface": "alles",
+          "lemma": "alle",
+          "pos": "PRON",
+          "upos": "PRON",
+          "xpos": "PIS",
+          "feats": {},
+          "start": 10,
+          "end": 15,
+          "analyzer": "spacy_de_core_news_lg",
+          "is_main_word": true
         },
         {
-          "surface": "gut.",
-          "surface_en": "good",
-          "furigana": "[ɡuːt]",
-          "pos": "ADJ",
+          "surface": "gut",
           "lemma": "gut",
-          "explanation": "Predicative adjective serving as subject complement with the copula 'ist'.",
-          "difficulty": 4
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "ADJD",
+          "feats": {},
+          "start": 16,
+          "end": 19,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 19,
+          "end": 20,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 5.5
@@ -366,8 +385,248 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-14T18:57:24Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:De a1/e8321a7bd8ed1ae3",
+      "revision_id": 84748,
+      "parent_revision_id": 12170,
+      "revision_timestamp_utc": "2026-10-14T18:57:24Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Suggest natural German word order in sentence 2",
+      "pulled_utc": "2026-10-18T19:12:27Z",
+      "applied_utc": "2026-10-18T19:12:33Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-94a11c0eefae6927",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_a1:e8321a7bd8ed1ae3",
+        "pack_code": "de_a1",
+        "entry_id": "alles",
+        "language": "de",
+        "sentence_index": 2,
+        "old_sentence": "Alles ist heute gut.",
+        "old_translations": {
+          "de": "Alles ist heute gut.",
+          "ipa": "/ˈaləs ɪst ˈhɔʏ̯tə ɡuːt/",
+          "en": "Everything is good today.",
+          "es": "Hoy todo está bien.",
+          "fr": "Aujourd'hui, tout va bien.",
+          "it": "Oggi va tutto bene.",
+          "ko": "오늘은 다 좋아요.",
+          "zh-Hans": "今天一切都很好。",
+          "yue": "今日一切都好。",
+          "ru": "Сегодня всё хорошо.",
+          "pt": "Hoje está tudo bem.",
+          "he": "היום הכול טוב.",
+          "tr": "Bugün her şey iyi.",
+          "vi": "Hôm nay mọi thứ đều ổn.",
+          "ar": "اليوم كل شيء جيد.",
+          "nl": "Vandaag is alles goed.",
+          "uk": "Сьогодні все добре.",
+          "hu": "Ma minden rendben van.",
+          "hi": "आज सब ठीक है.",
+          "pl": "Dziś wszystko jest w porządku.",
+          "el": "Σήμερα όλα είναι καλά.",
+          "nb": "I dag er alt bra.",
+          "id": "Hari ini semuanya baik.",
+          "sv": "Idag är allt bra.",
+          "ro": "Astăzi totul este bine.",
+          "cs": "Dnes je všechno v pořádku.",
+          "da": "I dag er alt godt.",
+          "fi": "Tänään kaikki on hyvin.",
+          "ja": "今日は全部大丈夫。"
+        },
+        "proposed_sentence": "Heute ist alles gut.",
+        "proposed_translations": {
+          "de": "Heute ist alles gut.",
+          "ipa": "/ˈaləs ɪst ˈhɔʏ̯tə ɡuːt/",
+          "en": "Everything is good today.",
+          "es": "Hoy todo está bien.",
+          "fr": "Aujourd'hui, tout va bien.",
+          "it": "Oggi va tutto bene.",
+          "ko": "오늘은 다 좋아요.",
+          "zh-Hans": "今天一切都很好。",
+          "yue": "今日一切都好。",
+          "ru": "Сегодня всё хорошо.",
+          "pt": "Hoje está tudo bem.",
+          "he": "היום הכול טוב.",
+          "tr": "Bugün her şey iyi.",
+          "vi": "Hôm nay mọi thứ đều ổn.",
+          "ar": "اليوم كل شيء جيد.",
+          "nl": "Vandaag is alles goed.",
+          "uk": "Сьогодні все добре.",
+          "hu": "Ma minden rendben van.",
+          "hi": "आज सब ठीक है.",
+          "pl": "Dziś wszystko jest w porządku.",
+          "el": "Σήμερα όλα είναι καλά.",
+          "nb": "I dag er alt bra.",
+          "id": "Hari ini semuanya baik.",
+          "sv": "Idag är allt bra.",
+          "ro": "Astăzi totul este bine.",
+          "cs": "Dnes je všechno v pořádku.",
+          "da": "I dag er alt godt.",
+          "fi": "Tänään kaikki on hyvin.",
+          "ja": "今日は全部大丈夫。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Heute ist alles gut.",
+        "old_japanese": "Alles ist heute gut.",
+        "old_english": "Everything is good today.",
+        "proposed_japanese": "Heute ist alles gut.",
+        "proposed_english": "Everything is good today.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Heute ist alles gut.",
+          "tokens": [
+            {
+              "surface": "Heute",
+              "lemma": "heute",
+              "pos": "ADV",
+              "upos": "ADV",
+              "xpos": "ADV",
+              "feats": {},
+              "start": 0,
+              "end": 5,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "ist",
+              "lemma": "sein",
+              "pos": "AUX",
+              "upos": "AUX",
+              "xpos": "VAFIN",
+              "feats": {},
+              "start": 6,
+              "end": 9,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "alles",
+              "lemma": "alle",
+              "pos": "PRON",
+              "upos": "PRON",
+              "xpos": "PIS",
+              "feats": {},
+              "start": 10,
+              "end": 15,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "gut",
+              "lemma": "gut",
+              "pos": "ADV",
+              "upos": "ADV",
+              "xpos": "ADJD",
+              "feats": {},
+              "start": 16,
+              "end": 19,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 19,
+              "end": 20,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Heute",
+            "lemma": "heute",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 0,
+            "end": 5,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "ist",
+            "lemma": "sein",
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "VAFIN",
+            "feats": {},
+            "start": 6,
+            "end": 9,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "alles",
+            "lemma": "alle",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PIS",
+            "feats": {},
+            "start": 10,
+            "end": 15,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "gut",
+            "lemma": "gut",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADJD",
+            "feats": {},
+            "start": 16,
+            "end": 19,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 19,
+            "end": 20,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-18T19:12:27Z",
+        "updated_utc": "2026-10-18T19:12:44Z",
+        "applied_utc": "2026-10-18T19:12:44Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-18T19:12:44Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -379,34 +638,6 @@
     "word": "alles",
     "word_reading": "",
     "word_label": "Pronomen",
-    "word_en": "everything; all",
-    "word_es": "todo",
-    "word_fr": "tout",
-    "word_it": "tutto",
-    "word_ko": "모든 것; 전부",
-    "word_zh-Hans": "一切; 全部",
-    "word_yue": "所有嘢; 一切",
-    "word_ru": "всё",
-    "word_pt": "tudo",
-    "word_he": "הכול",
-    "word_tr": "her şey",
-    "word_vi": "mọi thứ; tất cả",
-    "word_ar": "كل شيء",
-    "word_nl": "alles",
-    "word_uk": "все",
-    "word_hu": "minden",
-    "word_hi": "सब कुछ",
-    "word_pl": "wszystko",
-    "word_el": "τα πάντα; όλα",
-    "word_nb": "alt",
-    "word_id": "semuanya; segala sesuatu",
-    "word_sv": "allt",
-    "word_ro": "totul",
-    "word_cs": "všechno",
-    "word_da": "alt",
-    "word_fi": "kaikki",
-    "word_ja": "すべて; 全部",
-    "word_de": "alles",
     "comic_difficulty": 5.29,
     "jp": [
       "Ich habe alles dabei.",
@@ -419,24 +650,6 @@
       "/ˈaləs ɪst ˈhɔʏ̯tə ɡuːt/",
       "/eːɐ̯ nɪmt ˈaləs mɪt/",
       "/ɪm ˈkyːlʃʁaŋk ɪst ˈaləs vɛk/"
-    ],
-    "de": [
-      "Ich habe alles dabei.",
-      "Alles ist heute gut.",
-      "Er nimmt alles mit.",
-      "Im Kühlschrank ist alles weg."
-    ],
-    "ipa": [
-      "/ɪç ˈhaːbə ˈaləs daˈbaɪ̯/",
-      "/ˈaləs ɪst ˈhɔʏ̯tə ɡuːt/",
-      "/eːɐ̯ nɪmt ˈaləs mɪt/",
-      "/ɪm ˈkyːlʃʁaŋk ɪst ˈaləs vɛk/"
-    ],
-    "en": [
-      "I have everything with me.",
-      "Everything is good today.",
-      "He takes everything with him.",
-      "Everything in the fridge is gone."
     ],
     "pos_analysis": [
       {
@@ -483,44 +696,63 @@
         "difficulty_aggregated": 5.75
       },
       {
-        "sentence": "Alles ist heute gut.",
+        "sentence": "Heute ist alles gut.",
         "tokens": [
           {
-            "surface": "Alles",
-            "surface_en": "everything",
-            "furigana": "[ˈaləs]",
-            "pos": "PRON",
-            "lemma": "alles",
-            "explanation": "Indefinite pronoun used as subject; nominative.",
-            "difficulty": 7,
-            "is_main_word": true
+            "surface": "Heute",
+            "lemma": "heute",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 0,
+            "end": 5,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "ist",
-            "surface_en": "is",
-            "furigana": "[ɪst]",
-            "pos": "AUX",
             "lemma": "sein",
-            "explanation": "Copular auxiliary linking the subject 'Alles' to the predicative complement.",
-            "difficulty": 4
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "VAFIN",
+            "feats": {},
+            "start": 6,
+            "end": 9,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "heute",
-            "surface_en": "today",
-            "furigana": "[ˈhɔʏ̯tə]",
-            "pos": "ADV",
-            "lemma": "heute",
-            "explanation": "Temporal adverb modifying the clause (time frame).",
-            "difficulty": 7
+            "surface": "alles",
+            "lemma": "alle",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PIS",
+            "feats": {},
+            "start": 10,
+            "end": 15,
+            "analyzer": "spacy_de_core_news_lg",
+            "is_main_word": true
           },
           {
-            "surface": "gut.",
-            "surface_en": "good",
-            "furigana": "[ɡuːt]",
-            "pos": "ADJ",
+            "surface": "gut",
             "lemma": "gut",
-            "explanation": "Predicative adjective serving as subject complement with the copula 'ist'.",
-            "difficulty": 4
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADJD",
+            "feats": {},
+            "start": 16,
+            "end": 19,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 19,
+            "end": 20,
+            "analyzer": "spacy_de_core_news_lg"
           }
         ],
         "difficulty_aggregated": 5.5
@@ -623,137 +855,41 @@
         "difficulty_aggregated": 5.4
       }
     ],
-    "es": [
-      "Llevo todo conmigo.",
-      "Hoy todo está bien.",
-      "Se lleva todo.",
-      "En la nevera no queda nada."
-    ],
-    "fr": [
-      "J'ai tout sur moi.",
-      "Aujourd'hui, tout va bien.",
-      "Il emporte tout.",
-      "Il n'y a plus rien dans le frigo."
-    ],
-    "it": [
-      "Ho tutto con me.",
-      "Oggi va tutto bene.",
-      "Porta tutto con sé.",
-      "In frigo non è rimasto niente."
-    ],
-    "ko": [
-      "다 챙겼어요.",
-      "오늘은 다 좋아요.",
-      "그는 다 챙겨요.",
-      "냉장고에 아무것도 없어요."
-    ],
-    "zh-Hans": [
-      "我东西都带齐了。",
-      "今天一切都很好。",
-      "他把所有东西都带走。",
-      "冰箱里什么都没了。"
-    ],
-    "yue": [
-      "我帶齊曬嘢。",
-      "今日一切都好。",
-      "佢乜嘢都帶埋。",
-      "雪櫃入面乜嘢都冇晒。"
-    ],
-    "ru": [
-      "У меня всё с собой.",
-      "Сегодня всё хорошо.",
-      "Он берёт всё с собой.",
-      "В холодильнике ничего не осталось."
-    ],
-    "pt": [
-      "Tenho tudo comigo.",
-      "Hoje está tudo bem.",
-      "Ele leva tudo.",
-      "Na geladeira não sobrou nada."
-    ],
-    "he": [
-      "יש לי הכול איתי.",
-      "היום הכול טוב.",
-      "הוא לוקח הכול איתו.",
-      "במקרר לא נשאר כלום."
-    ],
-    "tr": [
-      "Her şey yanımda.",
-      "Bugün her şey iyi.",
-      "Her şeyi yanına alıyor.",
-      "Buzdolabında hiçbir şey kalmadı."
-    ],
-    "vi": [
-      "Tôi mang theo hết rồi.",
-      "Hôm nay mọi thứ đều ổn.",
-      "Anh ấy mang theo hết.",
-      "Trong tủ lạnh không còn gì."
-    ],
+    "word_POS": "Other",
+    "entry_id": "alles",
+    "word_en": "everything; all",
+    "word_es": "todo",
+    "word_fr": "tout",
+    "word_it": "tutto",
+    "word_ko": "모든 것; 전부",
+    "word_zh-Hans": "一切; 全部",
+    "word_yue": "所有嘢; 一切",
+    "word_ru": "всё",
+    "word_pt": "tudo",
+    "word_he": "הכול",
+    "word_tr": "her şey",
+    "word_vi": "mọi thứ; tất cả",
+    "word_ar": "كل شيء",
+    "word_nl": "alles",
+    "word_uk": "все",
+    "word_hu": "minden",
+    "word_hi": "सब कुछ",
+    "word_pl": "wszystko",
+    "word_el": "τα πάντα; όλα",
+    "word_nb": "alt",
+    "word_id": "semuanya; segala sesuatu",
+    "word_sv": "allt",
+    "word_ro": "totul",
+    "word_cs": "všechno",
+    "word_da": "alt",
+    "word_fi": "kaikki",
+    "word_ja": "すべて; 全部",
+    "word_de": "alles",
     "ar": [
       "معي كل شيء.",
       "اليوم كل شيء جيد.",
       "هو يأخذ كل شيء معه.",
       "في الثلاجة لم يبق شيء."
-    ],
-    "nl": [
-      "Ik heb alles bij me.",
-      "Vandaag is alles goed.",
-      "Hij neemt alles mee.",
-      "In de koelkast is alles op."
-    ],
-    "uk": [
-      "У мене все із собою.",
-      "Сьогодні все добре.",
-      "Він бере все із собою.",
-      "У холодильнику нічого не залишилося."
-    ],
-    "hu": [
-      "Minden nálam van.",
-      "Ma minden rendben van.",
-      "Mindent magával visz.",
-      "A hűtőben semmi nem maradt."
-    ],
-    "hi": [
-      "मेरे पास सब कुछ है.",
-      "आज सब ठीक है.",
-      "वह सब कुछ साथ ले जाता है.",
-      "फ्रिज में कुछ भी नहीं बचा है."
-    ],
-    "pl": [
-      "Mam wszystko przy sobie.",
-      "Dziś wszystko jest w porządku.",
-      "Zabiera wszystko ze sobą.",
-      "W lodówce nic nie zostało."
-    ],
-    "el": [
-      "Τα έχω όλα μαζί μου.",
-      "Σήμερα όλα είναι καλά.",
-      "Τα παίρνει όλα μαζί του.",
-      "Στο ψυγείο δεν έχει μείνει τίποτα."
-    ],
-    "nb": [
-      "Jeg har alt med meg.",
-      "I dag er alt bra.",
-      "Han tar med seg alt.",
-      "Det er tomt i kjøleskapet."
-    ],
-    "id": [
-      "Aku sudah bawa semuanya.",
-      "Hari ini semuanya baik.",
-      "Dia bawa semuanya.",
-      "Di kulkas tidak ada apa-apa lagi."
-    ],
-    "sv": [
-      "Jag har allt med mig.",
-      "Idag är allt bra.",
-      "Han tar med allt.",
-      "Det finns inget kvar i kylen."
-    ],
-    "ro": [
-      "Am totul la mine.",
-      "Astăzi totul este bine.",
-      "Ia totul cu el.",
-      "În frigider nu a mai rămas nimic."
     ],
     "cs": [
       "Mám všechno s sebou.",
@@ -767,11 +903,77 @@
       "Han tager alt med.",
       "I køleskabet er der ikke noget tilbage."
     ],
+    "de": [
+      "Ich habe alles dabei.",
+      "Alles ist heute gut.",
+      "Er nimmt alles mit.",
+      "Im Kühlschrank ist alles weg."
+    ],
+    "el": [
+      "Τα έχω όλα μαζί μου.",
+      "Σήμερα όλα είναι καλά.",
+      "Τα παίρνει όλα μαζί του.",
+      "Στο ψυγείο δεν έχει μείνει τίποτα."
+    ],
+    "en": [
+      "I have everything with me.",
+      "Everything is good today.",
+      "He takes everything with him.",
+      "Everything in the fridge is gone."
+    ],
+    "es": [
+      "Llevo todo conmigo.",
+      "Hoy todo está bien.",
+      "Se lleva todo.",
+      "En la nevera no queda nada."
+    ],
     "fi": [
       "Minulla on kaikki mukana.",
       "Tänään kaikki on hyvin.",
       "Hän ottaa kaiken mukaan.",
       "Jääkaapissa ei ole mitään jäljellä."
+    ],
+    "fr": [
+      "J'ai tout sur moi.",
+      "Aujourd'hui, tout va bien.",
+      "Il emporte tout.",
+      "Il n'y a plus rien dans le frigo."
+    ],
+    "he": [
+      "יש לי הכול איתי.",
+      "היום הכול טוב.",
+      "הוא לוקח הכול איתו.",
+      "במקרר לא נשאר כלום."
+    ],
+    "hi": [
+      "मेरे पास सब कुछ है.",
+      "आज सब ठीक है.",
+      "वह सब कुछ साथ ले जाता है.",
+      "फ्रिज में कुछ भी नहीं बचा है."
+    ],
+    "hu": [
+      "Minden nálam van.",
+      "Ma minden rendben van.",
+      "Mindent magával visz.",
+      "A hűtőben semmi nem maradt."
+    ],
+    "id": [
+      "Aku sudah bawa semuanya.",
+      "Hari ini semuanya baik.",
+      "Dia bawa semuanya.",
+      "Di kulkas tidak ada apa-apa lagi."
+    ],
+    "ipa": [
+      "/ɪç ˈhaːbə ˈaləs daˈbaɪ̯/",
+      "/ˈaləs ɪst ˈhɔʏ̯tə ɡuːt/",
+      "/eːɐ̯ nɪmt ˈaləs mɪt/",
+      "/ɪm ˈkyːlʃʁaŋk ɪst ˈaləs vɛk/"
+    ],
+    "it": [
+      "Ho tutto con me.",
+      "Oggi va tutto bene.",
+      "Porta tutto con sé.",
+      "In frigo non è rimasto niente."
     ],
     "ja": [
       "全部持ってる。",
@@ -779,6 +981,83 @@
       "彼は全部持っていく。",
       "冷蔵庫にもう何もない。"
     ],
-    "word_POS": "Other"
+    "ko": [
+      "다 챙겼어요.",
+      "오늘은 다 좋아요.",
+      "그는 다 챙겨요.",
+      "냉장고에 아무것도 없어요."
+    ],
+    "nb": [
+      "Jeg har alt med meg.",
+      "I dag er alt bra.",
+      "Han tar med seg alt.",
+      "Det er tomt i kjøleskapet."
+    ],
+    "nl": [
+      "Ik heb alles bij me.",
+      "Vandaag is alles goed.",
+      "Hij neemt alles mee.",
+      "In de koelkast is alles op."
+    ],
+    "pl": [
+      "Mam wszystko przy sobie.",
+      "Dziś wszystko jest w porządku.",
+      "Zabiera wszystko ze sobą.",
+      "W lodówce nic nie zostało."
+    ],
+    "pt": [
+      "Tenho tudo comigo.",
+      "Hoje está tudo bem.",
+      "Ele leva tudo.",
+      "Na geladeira não sobrou nada."
+    ],
+    "ro": [
+      "Am totul la mine.",
+      "Astăzi totul este bine.",
+      "Ia totul cu el.",
+      "În frigider nu a mai rămas nimic."
+    ],
+    "ru": [
+      "У меня всё с собой.",
+      "Сегодня всё хорошо.",
+      "Он берёт всё с собой.",
+      "В холодильнике ничего не осталось."
+    ],
+    "sv": [
+      "Jag har allt med mig.",
+      "Idag är allt bra.",
+      "Han tar med allt.",
+      "Det finns inget kvar i kylen."
+    ],
+    "tr": [
+      "Her şey yanımda.",
+      "Bugün her şey iyi.",
+      "Her şeyi yanına alıyor.",
+      "Buzdolabında hiçbir şey kalmadı."
+    ],
+    "uk": [
+      "У мене все із собою.",
+      "Сьогодні все добре.",
+      "Він бере все із собою.",
+      "У холодильнику нічого не залишилося."
+    ],
+    "vi": [
+      "Tôi mang theo hết rồi.",
+      "Hôm nay mọi thứ đều ổn.",
+      "Anh ấy mang theo hết.",
+      "Trong tủ lạnh không còn gì."
+    ],
+    "yue": [
+      "我帶齊曬嘢。",
+      "今日一切都好。",
+      "佢乜嘢都帶埋。",
+      "雪櫃入面乜嘢都冇晒。"
+    ],
+    "zh-Hans": [
+      "我东西都带齐了。",
+      "今天一切都很好。",
+      "他把所有东西都带走。",
+      "冰箱里什么都没了。"
+    ]
   }
 }

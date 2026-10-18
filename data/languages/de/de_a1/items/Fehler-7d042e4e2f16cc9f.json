@@ -203,10 +203,10 @@
       "difficulty": 3.75
     },
     {
-      "target": "Der Fehler tut mir leid.",
+      "target": "Es tut mir leid, dass dieser Fehler passiert ist.",
       "reading": "/deːɐ̯ ˈfeːlɐ tuːt miːɐ̯ laɪ̯t/",
       "translations": {
-        "de": "Der Fehler tut mir leid.",
+        "de": "Es tut mir leid, dass dieser Fehler passiert ist.",
         "ipa": "/deːɐ̯ ˈfeːlɐ tuːt miːɐ̯ laɪ̯t/",
         "en": "I'm sorry about the mistake.",
         "es": "Lo siento por el error.",
@@ -238,52 +238,126 @@
       },
       "tokens": [
         {
-          "surface": "Der",
-          "surface_en": "the",
-          "furigana": "[deːɐ]",
-          "pos": "DET",
-          "lemma": "der",
-          "explanation": "Definite article, nominative masculine singular; marks the subject.",
-          "difficulty": 2
-        },
-        {
-          "surface": "Fehler",
-          "surface_en": "mistake",
-          "furigana": "[ˈfeːlɐ]",
-          "pos": "NOUN",
-          "lemma": "Fehler",
-          "explanation": "Common noun; subject of the clause.",
-          "difficulty": 7,
-          "is_main_word": true
+          "surface": "Es",
+          "lemma": "es",
+          "pos": "PRON",
+          "upos": "PRON",
+          "xpos": "PPER",
+          "feats": {},
+          "start": 0,
+          "end": 2,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "tut",
-          "surface_en": "does",
-          "furigana": "[tuːt]",
-          "pos": "VERB",
           "lemma": "tun",
-          "compound_id": "leidtun",
-          "explanation": "Finite main verb (3sg present); part of the fixed separable verb construction 'leidtun'.",
-          "difficulty": 4
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VVFIN",
+          "feats": {},
+          "start": 3,
+          "end": 6,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "mir",
-          "surface_en": "to me",
-          "furigana": "[miːɐ]",
+          "lemma": "mir",
           "pos": "PRON",
-          "lemma": "ich",
-          "explanation": "Personal pronoun, dative 1st person singular; indirect experiencer argument.",
-          "difficulty": 4
+          "upos": "PRON",
+          "xpos": "PPER",
+          "feats": {},
+          "start": 7,
+          "end": 10,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "leid.",
-          "surface_en": "sorry",
-          "furigana": "[laɪ̯t]",
-          "pos": "ADJ",
+          "surface": "leid",
           "lemma": "leid",
-          "compound_id": "leidtun",
-          "explanation": "Adjective used as a fixed part of the separable verb 'leidtun'; completes the construction expressing regret.",
-          "difficulty": 7
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "ADJD",
+          "feats": {},
+          "start": 11,
+          "end": 15,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": ",",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$,",
+          "feats": {},
+          "start": 15,
+          "end": 16,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "dass",
+          "lemma": "dass",
+          "pos": "SCONJ",
+          "upos": "SCONJ",
+          "xpos": "KOUS",
+          "feats": {},
+          "start": 17,
+          "end": 21,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "dieser",
+          "lemma": "dieser",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "PDAT",
+          "feats": {},
+          "start": 22,
+          "end": 28,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "Fehler",
+          "lemma": "Fehler",
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 29,
+          "end": 35,
+          "analyzer": "spacy_de_core_news_lg",
+          "is_main_word": true
+        },
+        {
+          "surface": "passiert",
+          "lemma": "passieren",
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VVPP",
+          "feats": {},
+          "start": 36,
+          "end": 44,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "ist",
+          "lemma": "sein",
+          "pos": "AUX",
+          "upos": "AUX",
+          "xpos": "VAFIN",
+          "feats": {},
+          "start": 45,
+          "end": 48,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 48,
+          "end": 49,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 4.8
@@ -384,8 +458,380 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-14T21:52:54Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:De a1/7d042e4e2f16cc9f",
+      "revision_id": 86213,
+      "parent_revision_id": 12638,
+      "revision_timestamp_utc": "2026-10-14T21:52:54Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Content suggestion: improve German or translation wording",
+      "pulled_utc": "2026-10-18T19:12:24Z",
+      "applied_utc": "2026-10-18T19:12:31Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-975209ef10e10be4",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_a1:7d042e4e2f16cc9f",
+        "pack_code": "de_a1",
+        "entry_id": "Fehler",
+        "language": "de",
+        "sentence_index": 3,
+        "old_sentence": "Der Fehler tut mir leid.",
+        "old_translations": {
+          "de": "Der Fehler tut mir leid.",
+          "ipa": "/deːɐ̯ ˈfeːlɐ tuːt miːɐ̯ laɪ̯t/",
+          "en": "I'm sorry about the mistake.",
+          "es": "Lo siento por el error.",
+          "fr": "Pardon pour l'erreur.",
+          "it": "Scusa per l'errore.",
+          "ko": "실수해서 미안해요.",
+          "zh-Hans": "对这个错误很抱歉。",
+          "yue": "為呢個錯誤唔好意思。",
+          "ru": "Извините за ошибку.",
+          "pt": "Desculpa pelo erro.",
+          "he": "סליחה על הטעות.",
+          "tr": "Hata için özür dilerim.",
+          "vi": "Xin lỗi vì lỗi này.",
+          "ar": "آسف على الخطأ.",
+          "nl": "Sorry voor de fout.",
+          "uk": "Вибачте за помилку.",
+          "hu": "Bocsánat a hibáért.",
+          "hi": "मुझे गलती के लिए खेद है।",
+          "pl": "Przepraszam za błąd.",
+          "el": "Συγγνώμη για το λάθος.",
+          "nb": "Beklager feilen.",
+          "id": "Maaf atas kesalahan itu.",
+          "sv": "Förlåt för misstaget.",
+          "ro": "Îmi pare rău pentru greșeală.",
+          "cs": "Omlouvám se za chybu.",
+          "da": "Undskyld fejlen.",
+          "fi": "Anteeksi virheestä.",
+          "ja": "間違えてすみません。"
+        },
+        "proposed_sentence": "Es tut mir leid, dass dieser Fehler passiert ist.",
+        "proposed_translations": {
+          "de": "Es tut mir leid, dass dieser Fehler passiert ist.",
+          "ipa": "/deːɐ̯ ˈfeːlɐ tuːt miːɐ̯ laɪ̯t/",
+          "en": "I'm sorry about the mistake.",
+          "es": "Lo siento por el error.",
+          "fr": "Pardon pour l'erreur.",
+          "it": "Scusa per l'errore.",
+          "ko": "실수해서 미안해요.",
+          "zh-Hans": "对这个错误很抱歉。",
+          "yue": "為呢個錯誤唔好意思。",
+          "ru": "Извините за ошибку.",
+          "pt": "Desculpa pelo erro.",
+          "he": "סליחה על הטעות.",
+          "tr": "Hata için özür dilerim.",
+          "vi": "Xin lỗi vì lỗi này.",
+          "ar": "آسف على الخطأ.",
+          "nl": "Sorry voor de fout.",
+          "uk": "Вибачте за помилку.",
+          "hu": "Bocsánat a hibáért.",
+          "hi": "मुझे गलती के लिए खेद है।",
+          "pl": "Przepraszam za błąd.",
+          "el": "Συγγνώμη για το λάθος.",
+          "nb": "Beklager feilen.",
+          "id": "Maaf atas kesalahan itu.",
+          "sv": "Förlåt för misstaget.",
+          "ro": "Îmi pare rău pentru greșeală.",
+          "cs": "Omlouvám se za chybu.",
+          "da": "Undskyld fejlen.",
+          "fi": "Anteeksi virheestä.",
+          "ja": "間違えてすみません。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Es tut mir leid, dass dieser Fehler passiert ist.",
+        "old_japanese": "Der Fehler tut mir leid.",
+        "old_english": "I'm sorry about the mistake.",
+        "proposed_japanese": "Es tut mir leid, dass dieser Fehler passiert ist.",
+        "proposed_english": "I'm sorry about the mistake.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Es tut mir leid, dass dieser Fehler passiert ist.",
+          "tokens": [
+            {
+              "surface": "Es",
+              "lemma": "es",
+              "pos": "PRON",
+              "upos": "PRON",
+              "xpos": "PPER",
+              "feats": {},
+              "start": 0,
+              "end": 2,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "tut",
+              "lemma": "tun",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVFIN",
+              "feats": {},
+              "start": 3,
+              "end": 6,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "mir",
+              "lemma": "mir",
+              "pos": "PRON",
+              "upos": "PRON",
+              "xpos": "PPER",
+              "feats": {},
+              "start": 7,
+              "end": 10,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "leid",
+              "lemma": "leid",
+              "pos": "ADV",
+              "upos": "ADV",
+              "xpos": "ADJD",
+              "feats": {},
+              "start": 11,
+              "end": 15,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ",",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$,",
+              "feats": {},
+              "start": 15,
+              "end": 16,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "dass",
+              "lemma": "dass",
+              "pos": "SCONJ",
+              "upos": "SCONJ",
+              "xpos": "KOUS",
+              "feats": {},
+              "start": 17,
+              "end": 21,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "dieser",
+              "lemma": "dieser",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "PDAT",
+              "feats": {},
+              "start": 22,
+              "end": 28,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Fehler",
+              "lemma": "Fehler",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 29,
+              "end": 35,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "passiert",
+              "lemma": "passieren",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVPP",
+              "feats": {},
+              "start": 36,
+              "end": 44,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "ist",
+              "lemma": "sein",
+              "pos": "AUX",
+              "upos": "AUX",
+              "xpos": "VAFIN",
+              "feats": {},
+              "start": 45,
+              "end": 48,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 48,
+              "end": 49,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Es",
+            "lemma": "es",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "tut",
+            "lemma": "tun",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 3,
+            "end": 6,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "mir",
+            "lemma": "mir",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 7,
+            "end": 10,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "leid",
+            "lemma": "leid",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADJD",
+            "feats": {},
+            "start": 11,
+            "end": 15,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ",",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$,",
+            "feats": {},
+            "start": 15,
+            "end": 16,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "dass",
+            "lemma": "dass",
+            "pos": "SCONJ",
+            "upos": "SCONJ",
+            "xpos": "KOUS",
+            "feats": {},
+            "start": 17,
+            "end": 21,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "dieser",
+            "lemma": "dieser",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "PDAT",
+            "feats": {},
+            "start": 22,
+            "end": 28,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Fehler",
+            "lemma": "Fehler",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 29,
+            "end": 35,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "passiert",
+            "lemma": "passieren",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVPP",
+            "feats": {},
+            "start": 36,
+            "end": 44,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "ist",
+            "lemma": "sein",
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "VAFIN",
+            "feats": {},
+            "start": 45,
+            "end": 48,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 48,
+            "end": 49,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-18T19:12:24Z",
+        "updated_utc": "2026-10-18T19:12:44Z",
+        "applied_utc": "2026-10-18T19:12:44Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-18T19:12:44Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -397,34 +843,6 @@
     "word": "Fehler",
     "word_reading": "",
     "word_label": "Substantiv (der mask.)",
-    "word_en": "mistake; error",
-    "word_es": "error; defecto",
-    "word_fr": "erreur; défaut",
-    "word_it": "errore; difetto",
-    "word_ko": "실수; 결함",
-    "word_zh-Hans": "错误; 缺陷",
-    "word_yue": "錯誤; 缺陷",
-    "word_ru": "ошибка; дефект",
-    "word_pt": "erro; defeito",
-    "word_he": "טעות; פגם",
-    "word_tr": "hata; kusur",
-    "word_vi": "lỗi; khuyết điểm",
-    "word_ar": "خطأ; عيب",
-    "word_nl": "fout; defect",
-    "word_uk": "помилка; дефект",
-    "word_hu": "hiba; tévedés",
-    "word_hi": "गलती; दोष",
-    "word_pl": "błąd; wada",
-    "word_el": "λάθος; ελάττωμα",
-    "word_nb": "feil; defekt",
-    "word_id": "kesalahan; cacat",
-    "word_sv": "fel; defekt",
-    "word_ro": "greșeală; defect",
-    "word_cs": "chyba; vada",
-    "word_da": "fejl; defekt",
-    "word_fi": "virhe; vika",
-    "word_ja": "間違い; 欠陥",
-    "word_de": "Fehler",
     "comic_difficulty": 4.79,
     "jp": [
       "Ich habe einen Fehler gemacht.",
@@ -437,24 +855,6 @@
       "/ɛs ɪst kaɪ̯n ˈfeːlɐ/",
       "/deːɐ̯ ˈfeːlɐ tuːt miːɐ̯ laɪ̯t/",
       "/ɪç ˈfɪndə deːn ˈfeːlɐ nɪçt/"
-    ],
-    "de": [
-      "Ich habe einen Fehler gemacht.",
-      "Es ist kein Fehler.",
-      "Der Fehler tut mir leid.",
-      "Ich finde den Fehler nicht."
-    ],
-    "ipa": [
-      "/ɪç ˈhaːbə ˈaɪ̯nən ˈfeːlɐ ɡəˈmaxt/",
-      "/ɛs ɪst kaɪ̯n ˈfeːlɐ/",
-      "/deːɐ̯ ˈfeːlɐ tuːt miːɐ̯ laɪ̯t/",
-      "/ɪç ˈfɪndə deːn ˈfeːlɐ nɪçt/"
-    ],
-    "en": [
-      "I made a mistake.",
-      "It isn't a mistake.",
-      "I'm sorry about the mistake.",
-      "I can't find the mistake."
     ],
     "pos_analysis": [
       {
@@ -553,55 +953,129 @@
         "difficulty_aggregated": 3.75
       },
       {
-        "sentence": "Der Fehler tut mir leid.",
+        "sentence": "Es tut mir leid, dass dieser Fehler passiert ist.",
         "tokens": [
           {
-            "surface": "Der",
-            "surface_en": "the",
-            "furigana": "[deːɐ]",
-            "pos": "DET",
-            "lemma": "der",
-            "explanation": "Definite article, nominative masculine singular; marks the subject.",
-            "difficulty": 2
-          },
-          {
-            "surface": "Fehler",
-            "surface_en": "mistake",
-            "furigana": "[ˈfeːlɐ]",
-            "pos": "NOUN",
-            "lemma": "Fehler",
-            "explanation": "Common noun; subject of the clause.",
-            "difficulty": 7,
-            "is_main_word": true
+            "surface": "Es",
+            "lemma": "es",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "tut",
-            "surface_en": "does",
-            "furigana": "[tuːt]",
-            "pos": "VERB",
             "lemma": "tun",
-            "compound_id": "leidtun",
-            "explanation": "Finite main verb (3sg present); part of the fixed separable verb construction 'leidtun'.",
-            "difficulty": 4
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 3,
+            "end": 6,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "mir",
-            "surface_en": "to me",
-            "furigana": "[miːɐ]",
+            "lemma": "mir",
             "pos": "PRON",
-            "lemma": "ich",
-            "explanation": "Personal pronoun, dative 1st person singular; indirect experiencer argument.",
-            "difficulty": 4
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 7,
+            "end": 10,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "leid.",
-            "surface_en": "sorry",
-            "furigana": "[laɪ̯t]",
-            "pos": "ADJ",
+            "surface": "leid",
             "lemma": "leid",
-            "compound_id": "leidtun",
-            "explanation": "Adjective used as a fixed part of the separable verb 'leidtun'; completes the construction expressing regret.",
-            "difficulty": 7
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADJD",
+            "feats": {},
+            "start": 11,
+            "end": 15,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ",",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$,",
+            "feats": {},
+            "start": 15,
+            "end": 16,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "dass",
+            "lemma": "dass",
+            "pos": "SCONJ",
+            "upos": "SCONJ",
+            "xpos": "KOUS",
+            "feats": {},
+            "start": 17,
+            "end": 21,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "dieser",
+            "lemma": "dieser",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "PDAT",
+            "feats": {},
+            "start": 22,
+            "end": 28,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Fehler",
+            "lemma": "Fehler",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 29,
+            "end": 35,
+            "analyzer": "spacy_de_core_news_lg",
+            "is_main_word": true
+          },
+          {
+            "surface": "passiert",
+            "lemma": "passieren",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVPP",
+            "feats": {},
+            "start": 36,
+            "end": 44,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "ist",
+            "lemma": "sein",
+            "pos": "AUX",
+            "upos": "AUX",
+            "xpos": "VAFIN",
+            "feats": {},
+            "start": 45,
+            "end": 48,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 48,
+            "end": 49,
+            "analyzer": "spacy_de_core_news_lg"
           }
         ],
         "difficulty_aggregated": 4.8
@@ -659,137 +1133,41 @@
         "difficulty_aggregated": 5
       }
     ],
-    "es": [
-      "Cometí un error.",
-      "No es un error.",
-      "Lo siento por el error.",
-      "No encuentro el error."
-    ],
-    "fr": [
-      "J'ai fait une erreur.",
-      "Ce n'est pas une erreur.",
-      "Pardon pour l'erreur.",
-      "Je ne trouve pas l'erreur."
-    ],
-    "it": [
-      "Ho fatto un errore.",
-      "Non è un errore.",
-      "Scusa per l'errore.",
-      "Non trovo l'errore."
-    ],
-    "ko": [
-      "제가 실수를 했어요.",
-      "그건 실수가 아니에요.",
-      "실수해서 미안해요.",
-      "실수를 못 찾겠어요."
-    ],
-    "zh-Hans": [
-      "我犯了一个错误。",
-      "这不是错误。",
-      "对这个错误很抱歉。",
-      "我找不到错误。"
-    ],
-    "yue": [
-      "我搞错咗。",
-      "呢個唔係錯。",
-      "為呢個錯誤唔好意思。",
-      "我搵唔到錯誤。"
-    ],
-    "ru": [
-      "Я ошибся.",
-      "Это не ошибка.",
-      "Извините за ошибку.",
-      "Я не могу найти ошибку."
-    ],
-    "pt": [
-      "Eu cometi um erro.",
-      "Não é um erro.",
-      "Desculpa pelo erro.",
-      "Não encontro o erro."
-    ],
-    "he": [
-      "עשיתי טעות.",
-      "זו לא טעות.",
-      "סליחה על הטעות.",
-      "אני לא מוצא את הטעות."
-    ],
-    "tr": [
-      "Bir hata yaptım.",
-      "Bu bir hata değil.",
-      "Hata için özür dilerim.",
-      "Hatayı bulamıyorum."
-    ],
-    "vi": [
-      "Tôi đã mắc lỗi.",
-      "Đây không phải là lỗi.",
-      "Xin lỗi vì lỗi này.",
-      "Tôi không tìm ra lỗi."
-    ],
+    "word_POS": "Noun",
+    "entry_id": "Fehler",
+    "word_en": "mistake; error",
+    "word_es": "error; defecto",
+    "word_fr": "erreur; défaut",
+    "word_it": "errore; difetto",
+    "word_ko": "실수; 결함",
+    "word_zh-Hans": "错误; 缺陷",
+    "word_yue": "錯誤; 缺陷",
+    "word_ru": "ошибка; дефект",
+    "word_pt": "erro; defeito",
+    "word_he": "טעות; פגם",
+    "word_tr": "hata; kusur",
+    "word_vi": "lỗi; khuyết điểm",
+    "word_ar": "خطأ; عيب",
+    "word_nl": "fout; defect",
+    "word_uk": "помилка; дефект",
+    "word_hu": "hiba; tévedés",
+    "word_hi": "गलती; दोष",
+    "word_pl": "błąd; wada",
+    "word_el": "λάθος; ελάττωμα",
+    "word_nb": "feil; defekt",
+    "word_id": "kesalahan; cacat",
+    "word_sv": "fel; defekt",
+    "word_ro": "greșeală; defect",
+    "word_cs": "chyba; vada",
+    "word_da": "fejl; defekt",
+    "word_fi": "virhe; vika",
+    "word_ja": "間違い; 欠陥",
+    "word_de": "Fehler",
     "ar": [
       "ارتكبت خطأ.",
       "هذا ليس خطأ.",
       "آسف على الخطأ.",
       "لا أجد الخطأ."
-    ],
-    "nl": [
-      "Ik heb een fout gemaakt.",
-      "Het is geen fout.",
-      "Sorry voor de fout.",
-      "Ik kan de fout niet vinden."
-    ],
-    "uk": [
-      "Я зробив помилку.",
-      "Це не помилка.",
-      "Вибачте за помилку.",
-      "Я не можу знайти помилку."
-    ],
-    "hu": [
-      "Hibát követtem el.",
-      "Ez nem hiba.",
-      "Bocsánat a hibáért.",
-      "Nem találom a hibát."
-    ],
-    "hi": [
-      "मैंने गलती की।",
-      "यह गलती नहीं है।",
-      "मुझे गलती के लिए खेद है।",
-      "मुझे गलती नहीं मिल रही है।"
-    ],
-    "pl": [
-      "Popełniłem błąd.",
-      "To nie jest błąd.",
-      "Przepraszam za błąd.",
-      "Nie mogę znaleźć błędu."
-    ],
-    "el": [
-      "Έκανα λάθος.",
-      "Δεν είναι λάθος.",
-      "Συγγνώμη για το λάθος.",
-      "Δεν μπορώ να βρω το λάθος."
-    ],
-    "nb": [
-      "Jeg gjorde en feil.",
-      "Det er ikke en feil.",
-      "Beklager feilen.",
-      "Jeg finner ikke feilen."
-    ],
-    "id": [
-      "Saya membuat kesalahan.",
-      "Itu bukan kesalahan.",
-      "Maaf atas kesalahan itu.",
-      "Saya tidak bisa menemukan kesalahan itu."
-    ],
-    "sv": [
-      "Jag gjorde ett misstag.",
-      "Det är inte ett misstag.",
-      "Förlåt för misstaget.",
-      "Jag kan inte hitta felet."
-    ],
-    "ro": [
-      "Am făcut o greșeală.",
-      "Nu este o greșeală.",
-      "Îmi pare rău pentru greșeală.",
-      "Nu găsesc greșeala."
     ],
     "cs": [
       "Udělal jsem chybu.",
@@ -803,11 +1181,77 @@
       "Undskyld fejlen.",
       "Jeg kan ikke finde fejlen."
     ],
+    "de": [
+      "Ich habe einen Fehler gemacht.",
+      "Es ist kein Fehler.",
+      "Der Fehler tut mir leid.",
+      "Ich finde den Fehler nicht."
+    ],
+    "el": [
+      "Έκανα λάθος.",
+      "Δεν είναι λάθος.",
+      "Συγγνώμη για το λάθος.",
+      "Δεν μπορώ να βρω το λάθος."
+    ],
+    "en": [
+      "I made a mistake.",
+      "It isn't a mistake.",
+      "I'm sorry about the mistake.",
+      "I can't find the mistake."
+    ],
+    "es": [
+      "Cometí un error.",
+      "No es un error.",
+      "Lo siento por el error.",
+      "No encuentro el error."
+    ],
     "fi": [
       "Tein virheen.",
       "Se ei ole virhe.",
       "Anteeksi virheestä.",
       "En löydä virhettä."
+    ],
+    "fr": [
+      "J'ai fait une erreur.",
+      "Ce n'est pas une erreur.",
+      "Pardon pour l'erreur.",
+      "Je ne trouve pas l'erreur."
+    ],
+    "he": [
+      "עשיתי טעות.",
+      "זו לא טעות.",
+      "סליחה על הטעות.",
+      "אני לא מוצא את הטעות."
+    ],
+    "hi": [
+      "मैंने गलती की।",
+      "यह गलती नहीं है।",
+      "मुझे गलती के लिए खेद है।",
+      "मुझे गलती नहीं मिल रही है।"
+    ],
+    "hu": [
+      "Hibát követtem el.",
+      "Ez nem hiba.",
+      "Bocsánat a hibáért.",
+      "Nem találom a hibát."
+    ],
+    "id": [
+      "Saya membuat kesalahan.",
+      "Itu bukan kesalahan.",
+      "Maaf atas kesalahan itu.",
+      "Saya tidak bisa menemukan kesalahan itu."
+    ],
+    "ipa": [
+      "/ɪç ˈhaːbə ˈaɪ̯nən ˈfeːlɐ ɡəˈmaxt/",
+      "/ɛs ɪst kaɪ̯n ˈfeːlɐ/",
+      "/deːɐ̯ ˈfeːlɐ tuːt miːɐ̯ laɪ̯t/",
+      "/ɪç ˈfɪndə deːn ˈfeːlɐ nɪçt/"
+    ],
+    "it": [
+      "Ho fatto un errore.",
+      "Non è un errore.",
+      "Scusa per l'errore.",
+      "Non trovo l'errore."
     ],
     "ja": [
       "間違えました。",
@@ -815,6 +1259,83 @@
       "間違えてすみません。",
       "間違いが見つかりません。"
     ],
-    "word_POS": "Noun"
+    "ko": [
+      "제가 실수를 했어요.",
+      "그건 실수가 아니에요.",
+      "실수해서 미안해요.",
+      "실수를 못 찾겠어요."
+    ],
+    "nb": [
+      "Jeg gjorde en feil.",
+      "Det er ikke en feil.",
+      "Beklager feilen.",
+      "Jeg finner ikke feilen."
+    ],
+    "nl": [
+      "Ik heb een fout gemaakt.",
+      "Het is geen fout.",
+      "Sorry voor de fout.",
+      "Ik kan de fout niet vinden."
+    ],
+    "pl": [
+      "Popełniłem błąd.",
+      "To nie jest błąd.",
+      "Przepraszam za błąd.",
+      "Nie mogę znaleźć błędu."
+    ],
+    "pt": [
+      "Eu cometi um erro.",
+      "Não é um erro.",
+      "Desculpa pelo erro.",
+      "Não encontro o erro."
+    ],
+    "ro": [
+      "Am făcut o greșeală.",
+      "Nu este o greșeală.",
+      "Îmi pare rău pentru greșeală.",
+      "Nu găsesc greșeala."
+    ],
+    "ru": [
+      "Я ошибся.",
+      "Это не ошибка.",
+      "Извините за ошибку.",
+      "Я не могу найти ошибку."
+    ],
+    "sv": [
+      "Jag gjorde ett misstag.",
+      "Det är inte ett misstag.",
+      "Förlåt för misstaget.",
+      "Jag kan inte hitta felet."
+    ],
+    "tr": [
+      "Bir hata yaptım.",
+      "Bu bir hata değil.",
+      "Hata için özür dilerim.",
+      "Hatayı bulamıyorum."
+    ],
+    "uk": [
+      "Я зробив помилку.",
+      "Це не помилка.",
+      "Вибачте за помилку.",
+      "Я не можу знайти помилку."
+    ],
+    "vi": [
+      "Tôi đã mắc lỗi.",
+      "Đây không phải là lỗi.",
+      "Xin lỗi vì lỗi này.",
+      "Tôi không tìm ra lỗi."
+    ],
+    "yue": [
+      "我搞错咗。",
+      "呢個唔係錯。",
+      "為呢個錯誤唔好意思。",
+      "我搵唔到錯誤。"
+    ],
+    "zh-Hans": [
+      "我犯了一个错误。",
+      "这不是错误。",
+      "对这个错误很抱歉。",
+      "我找不到错误。"
+    ]
   }
 }

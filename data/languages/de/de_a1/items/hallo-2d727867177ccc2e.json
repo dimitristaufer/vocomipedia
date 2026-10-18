@@ -44,10 +44,10 @@
   },
   "sentences": [
     {
-      "target": "Ich sage hallo und lächle.",
+      "target": "Ich sage Hallo und lächle.",
       "reading": "/ɪç ˈzaːɡə haˈloː ʊnt ˈlɛçlə/",
       "translations": {
-        "de": "Ich sage hallo und lächle.",
+        "de": "Ich sage Hallo und lächle.",
         "ipa": "/ɪç ˈzaːɡə haˈloː ʊnt ˈlɛçlə/",
         "en": "I say hello and smile.",
         "es": "Digo hola y sonrío.",
@@ -80,58 +80,79 @@
       "tokens": [
         {
           "surface": "Ich",
-          "surface_en": "I",
-          "furigana": "[ɪç]",
-          "pos": "PRON",
           "lemma": "ich",
-          "explanation": "Personal pronoun in nominative singular; subject of the clause.",
-          "difficulty": 2
+          "pos": "PRON",
+          "upos": "PRON",
+          "xpos": "PPER",
+          "feats": {},
+          "start": 0,
+          "end": 3,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "sage",
-          "surface_en": "say",
-          "furigana": "[ˈzaːɡə]",
-          "pos": "VERB",
           "lemma": "sagen",
-          "explanation": "Finite main verb, present indicative, 1st person singular; predicates what the subject does.",
-          "difficulty": 7
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VVFIN",
+          "feats": {},
+          "start": 4,
+          "end": 8,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "hallo",
-          "surface_en": "hello",
-          "furigana": "[haˈloː]",
-          "pos": "INTJ",
-          "lemma": "hallo",
-          "explanation": "Interjection functioning as the spoken content/complement of \"sage\".",
-          "difficulty": 7,
+          "surface": "Hallo",
+          "lemma": "Hallo",
+          "pos": "PROPN",
+          "upos": "PROPN",
+          "xpos": "NE",
+          "feats": {},
+          "start": 9,
+          "end": 14,
+          "analyzer": "spacy_de_core_news_lg",
           "is_main_word": true
         },
         {
           "surface": "und",
-          "surface_en": "and",
-          "furigana": "[ʊnt]",
-          "pos": "CCONJ",
           "lemma": "und",
-          "explanation": "Coordinating conjunction linking two coordinated predicates in the sentence.",
-          "difficulty": 2
+          "pos": "CCONJ",
+          "upos": "CCONJ",
+          "xpos": "KON",
+          "feats": {},
+          "start": 15,
+          "end": 18,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "lächle.",
-          "surface_en": "smile",
-          "furigana": "[ˈlɛçlə]",
+          "surface": "lächle",
+          "lemma": "lächlen",
           "pos": "VERB",
-          "lemma": "lächeln",
-          "explanation": "Finite main verb, present indicative, 1st person singular; second coordinated predicate sharing the same subject.",
-          "difficulty": 7
+          "upos": "VERB",
+          "xpos": "VVFIN",
+          "feats": {},
+          "start": 19,
+          "end": 25,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 25,
+          "end": 26,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 5
     },
     {
-      "target": "Er sagt leise hallo.",
+      "target": "Er sagt leise Hallo.",
       "reading": "/eːɐ̯ zaːkt ˈlaɪ̯zə haˈloː/",
       "translations": {
-        "de": "Er sagt leise hallo.",
+        "de": "Er sagt leise Hallo.",
         "ipa": "/eːɐ̯ zaːkt ˈlaɪ̯zə haˈloː/",
         "en": "He says hello quietly.",
         "es": "Él dice hola en voz baja.",
@@ -164,49 +185,68 @@
       "tokens": [
         {
           "surface": "Er",
-          "surface_en": "he",
-          "furigana": "[eːɐ̯]",
-          "pos": "PRON",
           "lemma": "er",
-          "explanation": "Personal pronoun in nominative singular; subject of the clause.",
-          "difficulty": 2
+          "pos": "PRON",
+          "upos": "PRON",
+          "xpos": "PPER",
+          "feats": {},
+          "start": 0,
+          "end": 2,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "sagt",
-          "surface_en": "says",
-          "furigana": "[zaːkt]",
-          "pos": "VERB",
           "lemma": "sagen",
-          "explanation": "Finite main verb, present indicative, 3rd person singular; predicates the action.",
-          "difficulty": 7
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VVFIN",
+          "feats": {},
+          "start": 3,
+          "end": 7,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "leise",
-          "surface_en": "quietly",
-          "furigana": "[ˈlaɪ̯zə]",
-          "pos": "ADV",
           "lemma": "leise",
-          "explanation": "Adverb of manner modifying the verb \"sagt\".",
-          "difficulty": 7
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "ADJA",
+          "feats": {},
+          "start": 8,
+          "end": 13,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "hallo.",
-          "surface_en": "hello",
-          "furigana": "[haˈloː]",
-          "pos": "INTJ",
-          "lemma": "hallo",
-          "explanation": "Interjection expressing the spoken content of \"sagt\".",
-          "difficulty": 7,
+          "surface": "Hallo",
+          "lemma": "Hallo",
+          "pos": "PROPN",
+          "upos": "PROPN",
+          "xpos": "NE",
+          "feats": {},
+          "start": 14,
+          "end": 19,
+          "analyzer": "spacy_de_core_news_lg",
           "is_main_word": true
+        },
+        {
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 19,
+          "end": 20,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 5.75
     },
     {
-      "target": "Wir sagen an der Tür hallo.",
+      "target": "Wir sagen an der Tür Hallo.",
       "reading": "/viːɐ̯ ˈzaːɡən haˈloː an deːɐ̯ tyːɐ̯/",
       "translations": {
-        "de": "Wir sagen an der Tür hallo.",
+        "de": "Wir sagen an der Tür Hallo.",
         "ipa": "/viːɐ̯ ˈzaːɡən haˈloː an deːɐ̯ tyːɐ̯/",
         "en": "We say hello at the door.",
         "es": "Decimos hola en la puerta.",
@@ -239,67 +279,90 @@
       "tokens": [
         {
           "surface": "Wir",
-          "surface_en": "we",
-          "furigana": "[viːɐ̯]",
-          "pos": "PRON",
           "lemma": "wir",
-          "explanation": "Personal pronoun in nominative plural; subject of the clause.",
-          "difficulty": 2
+          "pos": "PRON",
+          "upos": "PRON",
+          "xpos": "PPER",
+          "feats": {},
+          "start": 0,
+          "end": 3,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "sagen",
-          "surface_en": "say",
-          "furigana": "[ˈzaːɡən]",
-          "pos": "VERB",
           "lemma": "sagen",
-          "explanation": "Finite main verb, present indicative, 1st person plural; predicates the action.",
-          "difficulty": 7
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VVFIN",
+          "feats": {},
+          "start": 4,
+          "end": 9,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "an",
-          "surface_en": "at",
-          "furigana": "[an]",
-          "pos": "ADP",
           "lemma": "an",
-          "explanation": "Preposition introducing the prepositional phrase \"an der Tür\" indicating location; takes dative here.",
-          "difficulty": 2
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "APPR",
+          "feats": {},
+          "start": 10,
+          "end": 12,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "der",
-          "surface_en": "the",
-          "furigana": "[deːɐ̯]",
-          "pos": "DET",
           "lemma": "der",
-          "explanation": "Definite article in dative singular feminine; determiner for \"Tür\".",
-          "difficulty": 2
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "ART",
+          "feats": {},
+          "start": 13,
+          "end": 16,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "Tür",
-          "surface_en": "door",
-          "furigana": "[tyːɐ̯]",
-          "pos": "NOUN",
           "lemma": "Tür",
-          "explanation": "Common noun; head of the prepositional object of \"an\".",
-          "difficulty": 4
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 17,
+          "end": 20,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "hallo.",
-          "surface_en": "hello",
-          "furigana": "[haˈloː]",
-          "pos": "INTJ",
-          "lemma": "hallo",
-          "explanation": "Interjection functioning as the spoken content of \"sagen\".",
-          "difficulty": 7,
+          "surface": "Hallo",
+          "lemma": "Hallo",
+          "pos": "PROPN",
+          "upos": "PROPN",
+          "xpos": "NE",
+          "feats": {},
+          "start": 21,
+          "end": 26,
+          "analyzer": "spacy_de_core_news_lg",
           "is_main_word": true
+        },
+        {
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 26,
+          "end": 27,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 4
     },
     {
-      "target": "Die Kinder sagen hallo und winken.",
+      "target": "Die Kinder sagen Hallo und winken.",
       "reading": "/diː ˈkɪndɐ ˈzaːɡən haˈloː ʊnt ˈvɪŋkən/",
       "translations": {
-        "de": "Die Kinder sagen hallo und winken.",
+        "de": "Die Kinder sagen Hallo und winken.",
         "ipa": "/diː ˈkɪndɐ ˈzaːɡən haˈloː ʊnt ˈvɪŋkən/",
         "en": "The children say hello and wave.",
         "es": "Los niños dicen hola y saludan con la mano.",
@@ -332,58 +395,81 @@
       "tokens": [
         {
           "surface": "Die",
-          "surface_en": "the",
-          "furigana": "[diː]",
+          "lemma": "der",
           "pos": "DET",
-          "lemma": "die",
-          "explanation": "Definite article in nominative plural; determiner for \"Kinder\".",
-          "difficulty": 2
+          "upos": "DET",
+          "xpos": "ART",
+          "feats": {},
+          "start": 0,
+          "end": 3,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "Kinder",
-          "surface_en": "children",
-          "furigana": "[ˈkɪndɐ]",
-          "pos": "NOUN",
           "lemma": "Kind",
-          "explanation": "Common noun in plural; subject of the clause.",
-          "difficulty": 7
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 4,
+          "end": 10,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "sagen",
-          "surface_en": "say",
-          "furigana": "[ˈzaːɡən]",
-          "pos": "VERB",
           "lemma": "sagen",
-          "explanation": "Finite main verb, present indicative, 3rd person plural; predicates the action by the subject.",
-          "difficulty": 7
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VVFIN",
+          "feats": {},
+          "start": 11,
+          "end": 16,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "hallo",
-          "surface_en": "hello",
-          "furigana": "[haˈloː]",
-          "pos": "INTJ",
-          "lemma": "hallo",
-          "explanation": "Interjection serving as the spoken content associated with \"sagen\".",
-          "difficulty": 7,
+          "surface": "Hallo",
+          "lemma": "Hallo",
+          "pos": "PROPN",
+          "upos": "PROPN",
+          "xpos": "NE",
+          "feats": {},
+          "start": 17,
+          "end": 22,
+          "analyzer": "spacy_de_core_news_lg",
           "is_main_word": true
         },
         {
           "surface": "und",
-          "surface_en": "and",
-          "furigana": "[ʊnt]",
-          "pos": "CCONJ",
           "lemma": "und",
-          "explanation": "Coordinating conjunction linking two coordinated predicates.",
-          "difficulty": 2
+          "pos": "CCONJ",
+          "upos": "CCONJ",
+          "xpos": "KON",
+          "feats": {},
+          "start": 23,
+          "end": 26,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "winken.",
-          "surface_en": "wave",
-          "furigana": "[ˈvɪŋkən]",
-          "pos": "VERB",
+          "surface": "winken",
           "lemma": "winken",
-          "explanation": "Finite main verb, present indicative, 3rd person plural; second coordinated predicate.",
-          "difficulty": 7
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VVFIN",
+          "feats": {},
+          "start": 27,
+          "end": 33,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 33,
+          "end": 34,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 5.33
@@ -400,8 +486,1027 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-14T20:56:35Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:De a1/2d727867177ccc2e",
+      "revision_id": 86607,
+      "parent_revision_id": 12840,
+      "revision_timestamp_utc": "2026-10-14T20:56:35Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Content suggestion: improve German or translation wording",
+      "pulled_utc": "2026-10-18T19:12:21Z",
+      "applied_utc": "2026-10-18T19:12:34Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-281edd635f45af8a",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_a1:2d727867177ccc2e",
+        "pack_code": "de_a1",
+        "entry_id": "hallo",
+        "language": "de",
+        "sentence_index": 1,
+        "old_sentence": "Ich sage hallo und lächle.",
+        "old_translations": {
+          "de": "Ich sage hallo und lächle.",
+          "ipa": "/ɪç ˈzaːɡə haˈloː ʊnt ˈlɛçlə/",
+          "en": "I say hello and smile.",
+          "es": "Digo hola y sonrío.",
+          "fr": "Je dis bonjour et je souris.",
+          "it": "Dico ciao e sorrido.",
+          "ko": "안녕하세요 하고 웃어요.",
+          "zh-Hans": "我打招呼并微笑。",
+          "yue": "我打招呼，笑一笑。",
+          "ru": "Я здороваюсь и улыбаюсь.",
+          "pt": "Eu digo oi e sorrio.",
+          "he": "אני אומר שלום ומחייך.",
+          "tr": "Merhaba diyorum ve gülümsüyorum.",
+          "vi": "Tôi chào và mỉm cười.",
+          "ar": "أقول مرحبًا وأبتسم.",
+          "nl": "Ik zeg hallo en glimlach.",
+          "uk": "Я кажу привіт і усміхаюся.",
+          "hu": "Köszönök és mosolygok.",
+          "hi": "मैं नमस्ते कहता हूँ और मुस्कुराता हूँ।",
+          "pl": "Mówię cześć i się uśmiecham.",
+          "el": "Λέω γεια και χαμογελάω.",
+          "nb": "Jeg sier hei og smiler.",
+          "id": "Saya bilang halo dan tersenyum.",
+          "sv": "Jag säger hej och ler.",
+          "ro": "Spun salut și zâmbesc.",
+          "cs": "Říkám ahoj a usmívám se.",
+          "da": "Jeg siger hej og smiler.",
+          "fi": "Sanon hei ja hymyilen.",
+          "ja": "こんにちはと言って、笑います。"
+        },
+        "proposed_sentence": "Ich sage Hallo und lächle.",
+        "proposed_translations": {
+          "de": "Ich sage Hallo und lächle.",
+          "ipa": "/ɪç ˈzaːɡə haˈloː ʊnt ˈlɛçlə/",
+          "en": "I say hello and smile.",
+          "es": "Digo hola y sonrío.",
+          "fr": "Je dis bonjour et je souris.",
+          "it": "Dico ciao e sorrido.",
+          "ko": "안녕하세요 하고 웃어요.",
+          "zh-Hans": "我打招呼并微笑。",
+          "yue": "我打招呼，笑一笑。",
+          "ru": "Я здороваюсь и улыбаюсь.",
+          "pt": "Eu digo oi e sorrio.",
+          "he": "אני אומר שלום ומחייך.",
+          "tr": "Merhaba diyorum ve gülümsüyorum.",
+          "vi": "Tôi chào và mỉm cười.",
+          "ar": "أقول مرحبًا وأبتسم.",
+          "nl": "Ik zeg hallo en glimlach.",
+          "uk": "Я кажу привіт і усміхаюся.",
+          "hu": "Köszönök és mosolygok.",
+          "hi": "मैं नमस्ते कहता हूँ और मुस्कुराता हूँ।",
+          "pl": "Mówię cześć i się uśmiecham.",
+          "el": "Λέω γεια και χαμογελάω.",
+          "nb": "Jeg sier hei og smiler.",
+          "id": "Saya bilang halo dan tersenyum.",
+          "sv": "Jag säger hej och ler.",
+          "ro": "Spun salut și zâmbesc.",
+          "cs": "Říkám ahoj a usmívám se.",
+          "da": "Jeg siger hej og smiler.",
+          "fi": "Sanon hei ja hymyilen.",
+          "ja": "こんにちはと言って、笑います。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Ich sage Hallo und lächle.",
+        "old_japanese": "Ich sage hallo und lächle.",
+        "old_english": "I say hello and smile.",
+        "proposed_japanese": "Ich sage Hallo und lächle.",
+        "proposed_english": "I say hello and smile.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Ich sage Hallo und lächle.",
+          "tokens": [
+            {
+              "surface": "Ich",
+              "lemma": "ich",
+              "pos": "PRON",
+              "upos": "PRON",
+              "xpos": "PPER",
+              "feats": {},
+              "start": 0,
+              "end": 3,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "sage",
+              "lemma": "sagen",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVFIN",
+              "feats": {},
+              "start": 4,
+              "end": 8,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Hallo",
+              "lemma": "Hallo",
+              "pos": "PROPN",
+              "upos": "PROPN",
+              "xpos": "NE",
+              "feats": {},
+              "start": 9,
+              "end": 14,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "und",
+              "lemma": "und",
+              "pos": "CCONJ",
+              "upos": "CCONJ",
+              "xpos": "KON",
+              "feats": {},
+              "start": 15,
+              "end": 18,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "lächle",
+              "lemma": "lächlen",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVFIN",
+              "feats": {},
+              "start": 19,
+              "end": 25,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 25,
+              "end": 26,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Ich",
+            "lemma": "ich",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "sage",
+            "lemma": "sagen",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 4,
+            "end": 8,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Hallo",
+            "lemma": "Hallo",
+            "pos": "PROPN",
+            "upos": "PROPN",
+            "xpos": "NE",
+            "feats": {},
+            "start": 9,
+            "end": 14,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "und",
+            "lemma": "und",
+            "pos": "CCONJ",
+            "upos": "CCONJ",
+            "xpos": "KON",
+            "feats": {},
+            "start": 15,
+            "end": 18,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "lächle",
+            "lemma": "lächlen",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 19,
+            "end": 25,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 25,
+            "end": 26,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-18T19:12:21Z",
+        "updated_utc": "2026-10-18T19:12:45Z",
+        "applied_utc": "2026-10-18T19:12:45Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      },
+      {
+        "id": "sentprop-f7ecab5371b0c0e7",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_a1:2d727867177ccc2e",
+        "pack_code": "de_a1",
+        "entry_id": "hallo",
+        "language": "de",
+        "sentence_index": 2,
+        "old_sentence": "Er sagt leise hallo.",
+        "old_translations": {
+          "de": "Er sagt leise hallo.",
+          "ipa": "/eːɐ̯ zaːkt ˈlaɪ̯zə haˈloː/",
+          "en": "He says hello quietly.",
+          "es": "Él dice hola en voz baja.",
+          "fr": "Il dit bonjour à voix basse.",
+          "it": "Lui dice ciao sottovoce.",
+          "ko": "그는 조용히 인사해요.",
+          "zh-Hans": "他轻声打招呼。",
+          "yue": "佢細聲打個招呼。",
+          "ru": "Он тихо здоровается.",
+          "pt": "Ele diz oi baixinho.",
+          "he": "הוא אומר שלום בשקט.",
+          "tr": "O sessizce merhaba diyor.",
+          "vi": "Anh ấy chào khẽ.",
+          "ar": "هو يقول مرحبًا بهدوء.",
+          "nl": "Hij zegt zachtjes hallo.",
+          "uk": "Він тихо каже привіт.",
+          "hu": "Halkan köszön.",
+          "hi": "वह धीरे से नमस्ते कहता है।",
+          "pl": "On cicho mówi cześć.",
+          "el": "Λέει γεια ήσυχα.",
+          "nb": "Han sier hei stille.",
+          "id": "Dia bilang halo pelan.",
+          "sv": "Han säger hej tyst.",
+          "ro": "El spune salut încet.",
+          "cs": "On tiše říká ahoj.",
+          "da": "Han siger hej stille.",
+          "fi": "Hän sanoo hei hiljaa.",
+          "ja": "彼は小さな声であいさつします。"
+        },
+        "proposed_sentence": "Er sagt leise Hallo.",
+        "proposed_translations": {
+          "de": "Er sagt leise Hallo.",
+          "ipa": "/eːɐ̯ zaːkt ˈlaɪ̯zə haˈloː/",
+          "en": "He says hello quietly.",
+          "es": "Él dice hola en voz baja.",
+          "fr": "Il dit bonjour à voix basse.",
+          "it": "Lui dice ciao sottovoce.",
+          "ko": "그는 조용히 인사해요.",
+          "zh-Hans": "他轻声打招呼。",
+          "yue": "佢細聲打個招呼。",
+          "ru": "Он тихо здоровается.",
+          "pt": "Ele diz oi baixinho.",
+          "he": "הוא אומר שלום בשקט.",
+          "tr": "O sessizce merhaba diyor.",
+          "vi": "Anh ấy chào khẽ.",
+          "ar": "هو يقول مرحبًا بهدوء.",
+          "nl": "Hij zegt zachtjes hallo.",
+          "uk": "Він тихо каже привіт.",
+          "hu": "Halkan köszön.",
+          "hi": "वह धीरे से नमस्ते कहता है।",
+          "pl": "On cicho mówi cześć.",
+          "el": "Λέει γεια ήσυχα.",
+          "nb": "Han sier hei stille.",
+          "id": "Dia bilang halo pelan.",
+          "sv": "Han säger hej tyst.",
+          "ro": "El spune salut încet.",
+          "cs": "On tiše říká ahoj.",
+          "da": "Han siger hej stille.",
+          "fi": "Hän sanoo hei hiljaa.",
+          "ja": "彼は小さな声であいさつします。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Er sagt leise Hallo.",
+        "old_japanese": "Er sagt leise hallo.",
+        "old_english": "He says hello quietly.",
+        "proposed_japanese": "Er sagt leise Hallo.",
+        "proposed_english": "He says hello quietly.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Er sagt leise Hallo.",
+          "tokens": [
+            {
+              "surface": "Er",
+              "lemma": "er",
+              "pos": "PRON",
+              "upos": "PRON",
+              "xpos": "PPER",
+              "feats": {},
+              "start": 0,
+              "end": 2,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "sagt",
+              "lemma": "sagen",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVFIN",
+              "feats": {},
+              "start": 3,
+              "end": 7,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "leise",
+              "lemma": "leise",
+              "pos": "ADV",
+              "upos": "ADV",
+              "xpos": "ADJA",
+              "feats": {},
+              "start": 8,
+              "end": 13,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Hallo",
+              "lemma": "Hallo",
+              "pos": "PROPN",
+              "upos": "PROPN",
+              "xpos": "NE",
+              "feats": {},
+              "start": 14,
+              "end": 19,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 19,
+              "end": 20,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Er",
+            "lemma": "er",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "sagt",
+            "lemma": "sagen",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 3,
+            "end": 7,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "leise",
+            "lemma": "leise",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADJA",
+            "feats": {},
+            "start": 8,
+            "end": 13,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Hallo",
+            "lemma": "Hallo",
+            "pos": "PROPN",
+            "upos": "PROPN",
+            "xpos": "NE",
+            "feats": {},
+            "start": 14,
+            "end": 19,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 19,
+            "end": 20,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-18T19:12:21Z",
+        "updated_utc": "2026-10-18T19:12:45Z",
+        "applied_utc": "2026-10-18T19:12:45Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      },
+      {
+        "id": "sentprop-209bc67c30f4fc5f",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_a1:2d727867177ccc2e",
+        "pack_code": "de_a1",
+        "entry_id": "hallo",
+        "language": "de",
+        "sentence_index": 3,
+        "old_sentence": "Wir sagen an der Tür hallo.",
+        "old_translations": {
+          "de": "Wir sagen an der Tür hallo.",
+          "ipa": "/viːɐ̯ ˈzaːɡən haˈloː an deːɐ̯ tyːɐ̯/",
+          "en": "We say hello at the door.",
+          "es": "Decimos hola en la puerta.",
+          "fr": "Nous disons bonjour à la porte.",
+          "it": "Diciamo ciao alla porta.",
+          "ko": "우리는 문에서 인사해요.",
+          "zh-Hans": "我们在门口打招呼。",
+          "yue": "我哋喺門口打招呼。",
+          "ru": "Мы здороваемся у двери.",
+          "pt": "Nós dizemos oi na porta.",
+          "he": "אנחנו אומרים שלום ליד הדלת.",
+          "tr": "Kapıda merhaba diyoruz.",
+          "vi": "Chúng tôi chào ở cửa.",
+          "ar": "نقول مرحبًا عند الباب.",
+          "nl": "We zeggen hallo bij de deur.",
+          "uk": "Ми кажемо привіт біля дверей.",
+          "hu": "Az ajtónál köszönünk.",
+          "hi": "हम दरवाज़े पर नमस्ते कहते हैं।",
+          "pl": "Mówimy cześć przy drzwiach.",
+          "el": "Λέμε γεια στην πόρτα.",
+          "nb": "Vi sier hei ved døra.",
+          "id": "Kami bilang halo di pintu.",
+          "sv": "Vi säger hej vid dörren.",
+          "ro": "Spunem salut la ușă.",
+          "cs": "Říkáme ahoj u dveří.",
+          "da": "Vi siger hej ved døren.",
+          "fi": "Sanomme hei ovella.",
+          "ja": "私たちはドアのところであいさつします。"
+        },
+        "proposed_sentence": "Wir sagen an der Tür Hallo.",
+        "proposed_translations": {
+          "de": "Wir sagen an der Tür Hallo.",
+          "ipa": "/viːɐ̯ ˈzaːɡən haˈloː an deːɐ̯ tyːɐ̯/",
+          "en": "We say hello at the door.",
+          "es": "Decimos hola en la puerta.",
+          "fr": "Nous disons bonjour à la porte.",
+          "it": "Diciamo ciao alla porta.",
+          "ko": "우리는 문에서 인사해요.",
+          "zh-Hans": "我们在门口打招呼。",
+          "yue": "我哋喺門口打招呼。",
+          "ru": "Мы здороваемся у двери.",
+          "pt": "Nós dizemos oi na porta.",
+          "he": "אנחנו אומרים שלום ליד הדלת.",
+          "tr": "Kapıda merhaba diyoruz.",
+          "vi": "Chúng tôi chào ở cửa.",
+          "ar": "نقول مرحبًا عند الباب.",
+          "nl": "We zeggen hallo bij de deur.",
+          "uk": "Ми кажемо привіт біля дверей.",
+          "hu": "Az ajtónál köszönünk.",
+          "hi": "हम दरवाज़े पर नमस्ते कहते हैं।",
+          "pl": "Mówimy cześć przy drzwiach.",
+          "el": "Λέμε γεια στην πόρτα.",
+          "nb": "Vi sier hei ved døra.",
+          "id": "Kami bilang halo di pintu.",
+          "sv": "Vi säger hej vid dörren.",
+          "ro": "Spunem salut la ușă.",
+          "cs": "Říkáme ahoj u dveří.",
+          "da": "Vi siger hej ved døren.",
+          "fi": "Sanomme hei ovella.",
+          "ja": "私たちはドアのところであいさつします。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Wir sagen an der Tür Hallo.",
+        "old_japanese": "Wir sagen an der Tür hallo.",
+        "old_english": "We say hello at the door.",
+        "proposed_japanese": "Wir sagen an der Tür Hallo.",
+        "proposed_english": "We say hello at the door.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Wir sagen an der Tür Hallo.",
+          "tokens": [
+            {
+              "surface": "Wir",
+              "lemma": "wir",
+              "pos": "PRON",
+              "upos": "PRON",
+              "xpos": "PPER",
+              "feats": {},
+              "start": 0,
+              "end": 3,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "sagen",
+              "lemma": "sagen",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVFIN",
+              "feats": {},
+              "start": 4,
+              "end": 9,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "an",
+              "lemma": "an",
+              "pos": "ADP",
+              "upos": "ADP",
+              "xpos": "APPR",
+              "feats": {},
+              "start": 10,
+              "end": 12,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "der",
+              "lemma": "der",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "ART",
+              "feats": {},
+              "start": 13,
+              "end": 16,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Tür",
+              "lemma": "Tür",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 17,
+              "end": 20,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Hallo",
+              "lemma": "Hallo",
+              "pos": "PROPN",
+              "upos": "PROPN",
+              "xpos": "NE",
+              "feats": {},
+              "start": 21,
+              "end": 26,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 26,
+              "end": 27,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Wir",
+            "lemma": "wir",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "sagen",
+            "lemma": "sagen",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 4,
+            "end": 9,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "an",
+            "lemma": "an",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 10,
+            "end": 12,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "der",
+            "lemma": "der",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 13,
+            "end": 16,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Tür",
+            "lemma": "Tür",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 17,
+            "end": 20,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Hallo",
+            "lemma": "Hallo",
+            "pos": "PROPN",
+            "upos": "PROPN",
+            "xpos": "NE",
+            "feats": {},
+            "start": 21,
+            "end": 26,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 26,
+            "end": 27,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-18T19:12:21Z",
+        "updated_utc": "2026-10-18T19:12:45Z",
+        "applied_utc": "2026-10-18T19:12:45Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      },
+      {
+        "id": "sentprop-54cae446bae5ed94",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_a1:2d727867177ccc2e",
+        "pack_code": "de_a1",
+        "entry_id": "hallo",
+        "language": "de",
+        "sentence_index": 4,
+        "old_sentence": "Die Kinder sagen hallo und winken.",
+        "old_translations": {
+          "de": "Die Kinder sagen hallo und winken.",
+          "ipa": "/diː ˈkɪndɐ ˈzaːɡən haˈloː ʊnt ˈvɪŋkən/",
+          "en": "The children say hello and wave.",
+          "es": "Los niños dicen hola y saludan con la mano.",
+          "fr": "Les enfants disent bonjour et font signe de la main.",
+          "it": "I bambini dicono ciao e salutano con la mano.",
+          "ko": "아이들이 인사하고 손을 흔들어요.",
+          "zh-Hans": "孩子们打招呼并挥手。",
+          "yue": "啲小朋友打招呼，揮下手。",
+          "ru": "Дети здороваются и машут.",
+          "pt": "As crianças dizem oi e acenam.",
+          "he": "הילדים אומרים שלום ומנופפים.",
+          "tr": "Çocuklar merhaba diyor ve el sallıyor.",
+          "vi": "Bọn trẻ chào và vẫy tay.",
+          "ar": "الأطفال يقولون مرحبًا ويلوحون.",
+          "nl": "De kinderen zeggen hallo en zwaaien.",
+          "uk": "Діти кажуть привіт і махають.",
+          "hu": "A gyerekek köszönnek és integetnek.",
+          "hi": "बच्चे नमस्ते कहते हैं और हाथ हिलाते हैं।",
+          "pl": "Dzieci mówią cześć i machają.",
+          "el": "Τα παιδιά λένε γεια και κουνάνε το χέρι.",
+          "nb": "Barna sier hei og vinker.",
+          "id": "Anak-anak bilang halo dan melambai.",
+          "sv": "Barnen säger hej och vinkar.",
+          "ro": "Copiii spun salut și fac cu mâna.",
+          "cs": "Děti říkají ahoj a mávají.",
+          "da": "Børnene siger hej og vinker.",
+          "fi": "Lapset sanovat hei ja vilkuttavat.",
+          "ja": "子どもたちはあいさつして手を振ります。"
+        },
+        "proposed_sentence": "Die Kinder sagen Hallo und winken.",
+        "proposed_translations": {
+          "de": "Die Kinder sagen Hallo und winken.",
+          "ipa": "/diː ˈkɪndɐ ˈzaːɡən haˈloː ʊnt ˈvɪŋkən/",
+          "en": "The children say hello and wave.",
+          "es": "Los niños dicen hola y saludan con la mano.",
+          "fr": "Les enfants disent bonjour et font signe de la main.",
+          "it": "I bambini dicono ciao e salutano con la mano.",
+          "ko": "아이들이 인사하고 손을 흔들어요.",
+          "zh-Hans": "孩子们打招呼并挥手。",
+          "yue": "啲小朋友打招呼，揮下手。",
+          "ru": "Дети здороваются и машут.",
+          "pt": "As crianças dizem oi e acenam.",
+          "he": "הילדים אומרים שלום ומנופפים.",
+          "tr": "Çocuklar merhaba diyor ve el sallıyor.",
+          "vi": "Bọn trẻ chào và vẫy tay.",
+          "ar": "الأطفال يقولون مرحبًا ويلوحون.",
+          "nl": "De kinderen zeggen hallo en zwaaien.",
+          "uk": "Діти кажуть привіт і махають.",
+          "hu": "A gyerekek köszönnek és integetnek.",
+          "hi": "बच्चे नमस्ते कहते हैं और हाथ हिलाते हैं।",
+          "pl": "Dzieci mówią cześć i machają.",
+          "el": "Τα παιδιά λένε γεια και κουνάνε το χέρι.",
+          "nb": "Barna sier hei og vinker.",
+          "id": "Anak-anak bilang halo dan melambai.",
+          "sv": "Barnen säger hej och vinkar.",
+          "ro": "Copiii spun salut și fac cu mâna.",
+          "cs": "Děti říkají ahoj a mávají.",
+          "da": "Børnene siger hej og vinker.",
+          "fi": "Lapset sanovat hei ja vilkuttavat.",
+          "ja": "子どもたちはあいさつして手を振ります。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Die Kinder sagen Hallo und winken.",
+        "old_japanese": "Die Kinder sagen hallo und winken.",
+        "old_english": "The children say hello and wave.",
+        "proposed_japanese": "Die Kinder sagen Hallo und winken.",
+        "proposed_english": "The children say hello and wave.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Die Kinder sagen Hallo und winken.",
+          "tokens": [
+            {
+              "surface": "Die",
+              "lemma": "der",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "ART",
+              "feats": {},
+              "start": 0,
+              "end": 3,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Kinder",
+              "lemma": "Kind",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 4,
+              "end": 10,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "sagen",
+              "lemma": "sagen",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVFIN",
+              "feats": {},
+              "start": 11,
+              "end": 16,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Hallo",
+              "lemma": "Hallo",
+              "pos": "PROPN",
+              "upos": "PROPN",
+              "xpos": "NE",
+              "feats": {},
+              "start": 17,
+              "end": 22,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "und",
+              "lemma": "und",
+              "pos": "CCONJ",
+              "upos": "CCONJ",
+              "xpos": "KON",
+              "feats": {},
+              "start": 23,
+              "end": 26,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "winken",
+              "lemma": "winken",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVFIN",
+              "feats": {},
+              "start": 27,
+              "end": 33,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 33,
+              "end": 34,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Die",
+            "lemma": "der",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Kinder",
+            "lemma": "Kind",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 4,
+            "end": 10,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "sagen",
+            "lemma": "sagen",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 11,
+            "end": 16,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Hallo",
+            "lemma": "Hallo",
+            "pos": "PROPN",
+            "upos": "PROPN",
+            "xpos": "NE",
+            "feats": {},
+            "start": 17,
+            "end": 22,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "und",
+            "lemma": "und",
+            "pos": "CCONJ",
+            "upos": "CCONJ",
+            "xpos": "KON",
+            "feats": {},
+            "start": 23,
+            "end": 26,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "winken",
+            "lemma": "winken",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 27,
+            "end": 33,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 33,
+            "end": 34,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-18T19:12:21Z",
+        "updated_utc": "2026-10-18T19:12:45Z",
+        "applied_utc": "2026-10-18T19:12:45Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-18T19:12:45Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -413,6 +1518,326 @@
     "word": "hallo",
     "word_reading": "",
     "word_label": "Interjektion",
+    "comic_difficulty": 5.02,
+    "jp": [
+      "Ich sage hallo und lächle.",
+      "Er sagt leise hallo.",
+      "Wir sagen an der Tür hallo.",
+      "Die Kinder sagen hallo und winken."
+    ],
+    "fu": [
+      "/ɪç ˈzaːɡə haˈloː ʊnt ˈlɛçlə/",
+      "/eːɐ̯ zaːkt ˈlaɪ̯zə haˈloː/",
+      "/viːɐ̯ ˈzaːɡən haˈloː an deːɐ̯ tyːɐ̯/",
+      "/diː ˈkɪndɐ ˈzaːɡən haˈloː ʊnt ˈvɪŋkən/"
+    ],
+    "pos_analysis": [
+      {
+        "sentence": "Ich sage Hallo und lächle.",
+        "tokens": [
+          {
+            "surface": "Ich",
+            "lemma": "ich",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "sage",
+            "lemma": "sagen",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 4,
+            "end": 8,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Hallo",
+            "lemma": "Hallo",
+            "pos": "PROPN",
+            "upos": "PROPN",
+            "xpos": "NE",
+            "feats": {},
+            "start": 9,
+            "end": 14,
+            "analyzer": "spacy_de_core_news_lg",
+            "is_main_word": true
+          },
+          {
+            "surface": "und",
+            "lemma": "und",
+            "pos": "CCONJ",
+            "upos": "CCONJ",
+            "xpos": "KON",
+            "feats": {},
+            "start": 15,
+            "end": 18,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "lächle",
+            "lemma": "lächlen",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 19,
+            "end": 25,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 25,
+            "end": 26,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "difficulty_aggregated": 5
+      },
+      {
+        "sentence": "Er sagt leise Hallo.",
+        "tokens": [
+          {
+            "surface": "Er",
+            "lemma": "er",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 2,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "sagt",
+            "lemma": "sagen",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 3,
+            "end": 7,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "leise",
+            "lemma": "leise",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADJA",
+            "feats": {},
+            "start": 8,
+            "end": 13,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Hallo",
+            "lemma": "Hallo",
+            "pos": "PROPN",
+            "upos": "PROPN",
+            "xpos": "NE",
+            "feats": {},
+            "start": 14,
+            "end": 19,
+            "analyzer": "spacy_de_core_news_lg",
+            "is_main_word": true
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 19,
+            "end": 20,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "difficulty_aggregated": 5.75
+      },
+      {
+        "sentence": "Wir sagen an der Tür Hallo.",
+        "tokens": [
+          {
+            "surface": "Wir",
+            "lemma": "wir",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "sagen",
+            "lemma": "sagen",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 4,
+            "end": 9,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "an",
+            "lemma": "an",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 10,
+            "end": 12,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "der",
+            "lemma": "der",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 13,
+            "end": 16,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Tür",
+            "lemma": "Tür",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 17,
+            "end": 20,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Hallo",
+            "lemma": "Hallo",
+            "pos": "PROPN",
+            "upos": "PROPN",
+            "xpos": "NE",
+            "feats": {},
+            "start": 21,
+            "end": 26,
+            "analyzer": "spacy_de_core_news_lg",
+            "is_main_word": true
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 26,
+            "end": 27,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "difficulty_aggregated": 4
+      },
+      {
+        "sentence": "Die Kinder sagen Hallo und winken.",
+        "tokens": [
+          {
+            "surface": "Die",
+            "lemma": "der",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Kinder",
+            "lemma": "Kind",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 4,
+            "end": 10,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "sagen",
+            "lemma": "sagen",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 11,
+            "end": 16,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Hallo",
+            "lemma": "Hallo",
+            "pos": "PROPN",
+            "upos": "PROPN",
+            "xpos": "NE",
+            "feats": {},
+            "start": 17,
+            "end": 22,
+            "analyzer": "spacy_de_core_news_lg",
+            "is_main_word": true
+          },
+          {
+            "surface": "und",
+            "lemma": "und",
+            "pos": "CCONJ",
+            "upos": "CCONJ",
+            "xpos": "KON",
+            "feats": {},
+            "start": 23,
+            "end": 26,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "winken",
+            "lemma": "winken",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 27,
+            "end": 33,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 33,
+            "end": 34,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "difficulty_aggregated": 5.33
+      }
+    ],
+    "word_POS": "Other",
+    "entry_id": "hallo",
     "word_en": "hello; hi",
     "word_es": "hola; oye",
     "word_fr": "bonjour; allô",
@@ -441,387 +1866,11 @@
     "word_fi": "hei; haloo",
     "word_ja": "こんにちは; もしもし",
     "word_de": "hallo",
-    "comic_difficulty": 5.02,
-    "jp": [
-      "Ich sage hallo und lächle.",
-      "Er sagt leise hallo.",
-      "Wir sagen an der Tür hallo.",
-      "Die Kinder sagen hallo und winken."
-    ],
-    "fu": [
-      "/ɪç ˈzaːɡə haˈloː ʊnt ˈlɛçlə/",
-      "/eːɐ̯ zaːkt ˈlaɪ̯zə haˈloː/",
-      "/viːɐ̯ ˈzaːɡən haˈloː an deːɐ̯ tyːɐ̯/",
-      "/diː ˈkɪndɐ ˈzaːɡən haˈloː ʊnt ˈvɪŋkən/"
-    ],
-    "de": [
-      "Ich sage hallo und lächle.",
-      "Er sagt leise hallo.",
-      "Wir sagen an der Tür hallo.",
-      "Die Kinder sagen hallo und winken."
-    ],
-    "ipa": [
-      "/ɪç ˈzaːɡə haˈloː ʊnt ˈlɛçlə/",
-      "/eːɐ̯ zaːkt ˈlaɪ̯zə haˈloː/",
-      "/viːɐ̯ ˈzaːɡən haˈloː an deːɐ̯ tyːɐ̯/",
-      "/diː ˈkɪndɐ ˈzaːɡən haˈloː ʊnt ˈvɪŋkən/"
-    ],
-    "en": [
-      "I say hello and smile.",
-      "He says hello quietly.",
-      "We say hello at the door.",
-      "The children say hello and wave."
-    ],
-    "pos_analysis": [
-      {
-        "sentence": "Ich sage hallo und lächle.",
-        "tokens": [
-          {
-            "surface": "Ich",
-            "surface_en": "I",
-            "furigana": "[ɪç]",
-            "pos": "PRON",
-            "lemma": "ich",
-            "explanation": "Personal pronoun in nominative singular; subject of the clause.",
-            "difficulty": 2
-          },
-          {
-            "surface": "sage",
-            "surface_en": "say",
-            "furigana": "[ˈzaːɡə]",
-            "pos": "VERB",
-            "lemma": "sagen",
-            "explanation": "Finite main verb, present indicative, 1st person singular; predicates what the subject does.",
-            "difficulty": 7
-          },
-          {
-            "surface": "hallo",
-            "surface_en": "hello",
-            "furigana": "[haˈloː]",
-            "pos": "INTJ",
-            "lemma": "hallo",
-            "explanation": "Interjection functioning as the spoken content/complement of \"sage\".",
-            "difficulty": 7,
-            "is_main_word": true
-          },
-          {
-            "surface": "und",
-            "surface_en": "and",
-            "furigana": "[ʊnt]",
-            "pos": "CCONJ",
-            "lemma": "und",
-            "explanation": "Coordinating conjunction linking two coordinated predicates in the sentence.",
-            "difficulty": 2
-          },
-          {
-            "surface": "lächle.",
-            "surface_en": "smile",
-            "furigana": "[ˈlɛçlə]",
-            "pos": "VERB",
-            "lemma": "lächeln",
-            "explanation": "Finite main verb, present indicative, 1st person singular; second coordinated predicate sharing the same subject.",
-            "difficulty": 7
-          }
-        ],
-        "difficulty_aggregated": 5
-      },
-      {
-        "sentence": "Er sagt leise hallo.",
-        "tokens": [
-          {
-            "surface": "Er",
-            "surface_en": "he",
-            "furigana": "[eːɐ̯]",
-            "pos": "PRON",
-            "lemma": "er",
-            "explanation": "Personal pronoun in nominative singular; subject of the clause.",
-            "difficulty": 2
-          },
-          {
-            "surface": "sagt",
-            "surface_en": "says",
-            "furigana": "[zaːkt]",
-            "pos": "VERB",
-            "lemma": "sagen",
-            "explanation": "Finite main verb, present indicative, 3rd person singular; predicates the action.",
-            "difficulty": 7
-          },
-          {
-            "surface": "leise",
-            "surface_en": "quietly",
-            "furigana": "[ˈlaɪ̯zə]",
-            "pos": "ADV",
-            "lemma": "leise",
-            "explanation": "Adverb of manner modifying the verb \"sagt\".",
-            "difficulty": 7
-          },
-          {
-            "surface": "hallo.",
-            "surface_en": "hello",
-            "furigana": "[haˈloː]",
-            "pos": "INTJ",
-            "lemma": "hallo",
-            "explanation": "Interjection expressing the spoken content of \"sagt\".",
-            "difficulty": 7,
-            "is_main_word": true
-          }
-        ],
-        "difficulty_aggregated": 5.75
-      },
-      {
-        "sentence": "Wir sagen an der Tür hallo.",
-        "tokens": [
-          {
-            "surface": "Wir",
-            "surface_en": "we",
-            "furigana": "[viːɐ̯]",
-            "pos": "PRON",
-            "lemma": "wir",
-            "explanation": "Personal pronoun in nominative plural; subject of the clause.",
-            "difficulty": 2
-          },
-          {
-            "surface": "sagen",
-            "surface_en": "say",
-            "furigana": "[ˈzaːɡən]",
-            "pos": "VERB",
-            "lemma": "sagen",
-            "explanation": "Finite main verb, present indicative, 1st person plural; predicates the action.",
-            "difficulty": 7
-          },
-          {
-            "surface": "an",
-            "surface_en": "at",
-            "furigana": "[an]",
-            "pos": "ADP",
-            "lemma": "an",
-            "explanation": "Preposition introducing the prepositional phrase \"an der Tür\" indicating location; takes dative here.",
-            "difficulty": 2
-          },
-          {
-            "surface": "der",
-            "surface_en": "the",
-            "furigana": "[deːɐ̯]",
-            "pos": "DET",
-            "lemma": "der",
-            "explanation": "Definite article in dative singular feminine; determiner for \"Tür\".",
-            "difficulty": 2
-          },
-          {
-            "surface": "Tür",
-            "surface_en": "door",
-            "furigana": "[tyːɐ̯]",
-            "pos": "NOUN",
-            "lemma": "Tür",
-            "explanation": "Common noun; head of the prepositional object of \"an\".",
-            "difficulty": 4
-          },
-          {
-            "surface": "hallo.",
-            "surface_en": "hello",
-            "furigana": "[haˈloː]",
-            "pos": "INTJ",
-            "lemma": "hallo",
-            "explanation": "Interjection functioning as the spoken content of \"sagen\".",
-            "difficulty": 7,
-            "is_main_word": true
-          }
-        ],
-        "difficulty_aggregated": 4
-      },
-      {
-        "sentence": "Die Kinder sagen hallo und winken.",
-        "tokens": [
-          {
-            "surface": "Die",
-            "surface_en": "the",
-            "furigana": "[diː]",
-            "pos": "DET",
-            "lemma": "die",
-            "explanation": "Definite article in nominative plural; determiner for \"Kinder\".",
-            "difficulty": 2
-          },
-          {
-            "surface": "Kinder",
-            "surface_en": "children",
-            "furigana": "[ˈkɪndɐ]",
-            "pos": "NOUN",
-            "lemma": "Kind",
-            "explanation": "Common noun in plural; subject of the clause.",
-            "difficulty": 7
-          },
-          {
-            "surface": "sagen",
-            "surface_en": "say",
-            "furigana": "[ˈzaːɡən]",
-            "pos": "VERB",
-            "lemma": "sagen",
-            "explanation": "Finite main verb, present indicative, 3rd person plural; predicates the action by the subject.",
-            "difficulty": 7
-          },
-          {
-            "surface": "hallo",
-            "surface_en": "hello",
-            "furigana": "[haˈloː]",
-            "pos": "INTJ",
-            "lemma": "hallo",
-            "explanation": "Interjection serving as the spoken content associated with \"sagen\".",
-            "difficulty": 7,
-            "is_main_word": true
-          },
-          {
-            "surface": "und",
-            "surface_en": "and",
-            "furigana": "[ʊnt]",
-            "pos": "CCONJ",
-            "lemma": "und",
-            "explanation": "Coordinating conjunction linking two coordinated predicates.",
-            "difficulty": 2
-          },
-          {
-            "surface": "winken.",
-            "surface_en": "wave",
-            "furigana": "[ˈvɪŋkən]",
-            "pos": "VERB",
-            "lemma": "winken",
-            "explanation": "Finite main verb, present indicative, 3rd person plural; second coordinated predicate.",
-            "difficulty": 7
-          }
-        ],
-        "difficulty_aggregated": 5.33
-      }
-    ],
-    "es": [
-      "Digo hola y sonrío.",
-      "Él dice hola en voz baja.",
-      "Decimos hola en la puerta.",
-      "Los niños dicen hola y saludan con la mano."
-    ],
-    "fr": [
-      "Je dis bonjour et je souris.",
-      "Il dit bonjour à voix basse.",
-      "Nous disons bonjour à la porte.",
-      "Les enfants disent bonjour et font signe de la main."
-    ],
-    "it": [
-      "Dico ciao e sorrido.",
-      "Lui dice ciao sottovoce.",
-      "Diciamo ciao alla porta.",
-      "I bambini dicono ciao e salutano con la mano."
-    ],
-    "ko": [
-      "안녕하세요 하고 웃어요.",
-      "그는 조용히 인사해요.",
-      "우리는 문에서 인사해요.",
-      "아이들이 인사하고 손을 흔들어요."
-    ],
-    "zh-Hans": [
-      "我打招呼并微笑。",
-      "他轻声打招呼。",
-      "我们在门口打招呼。",
-      "孩子们打招呼并挥手。"
-    ],
-    "yue": [
-      "我打招呼，笑一笑。",
-      "佢細聲打個招呼。",
-      "我哋喺門口打招呼。",
-      "啲小朋友打招呼，揮下手。"
-    ],
-    "ru": [
-      "Я здороваюсь и улыбаюсь.",
-      "Он тихо здоровается.",
-      "Мы здороваемся у двери.",
-      "Дети здороваются и машут."
-    ],
-    "pt": [
-      "Eu digo oi e sorrio.",
-      "Ele diz oi baixinho.",
-      "Nós dizemos oi na porta.",
-      "As crianças dizem oi e acenam."
-    ],
-    "he": [
-      "אני אומר שלום ומחייך.",
-      "הוא אומר שלום בשקט.",
-      "אנחנו אומרים שלום ליד הדלת.",
-      "הילדים אומרים שלום ומנופפים."
-    ],
-    "tr": [
-      "Merhaba diyorum ve gülümsüyorum.",
-      "O sessizce merhaba diyor.",
-      "Kapıda merhaba diyoruz.",
-      "Çocuklar merhaba diyor ve el sallıyor."
-    ],
-    "vi": [
-      "Tôi chào và mỉm cười.",
-      "Anh ấy chào khẽ.",
-      "Chúng tôi chào ở cửa.",
-      "Bọn trẻ chào và vẫy tay."
-    ],
     "ar": [
       "أقول مرحبًا وأبتسم.",
       "هو يقول مرحبًا بهدوء.",
       "نقول مرحبًا عند الباب.",
       "الأطفال يقولون مرحبًا ويلوحون."
-    ],
-    "nl": [
-      "Ik zeg hallo en glimlach.",
-      "Hij zegt zachtjes hallo.",
-      "We zeggen hallo bij de deur.",
-      "De kinderen zeggen hallo en zwaaien."
-    ],
-    "uk": [
-      "Я кажу привіт і усміхаюся.",
-      "Він тихо каже привіт.",
-      "Ми кажемо привіт біля дверей.",
-      "Діти кажуть привіт і махають."
-    ],
-    "hu": [
-      "Köszönök és mosolygok.",
-      "Halkan köszön.",
-      "Az ajtónál köszönünk.",
-      "A gyerekek köszönnek és integetnek."
-    ],
-    "hi": [
-      "मैं नमस्ते कहता हूँ और मुस्कुराता हूँ।",
-      "वह धीरे से नमस्ते कहता है।",
-      "हम दरवाज़े पर नमस्ते कहते हैं।",
-      "बच्चे नमस्ते कहते हैं और हाथ हिलाते हैं।"
-    ],
-    "pl": [
-      "Mówię cześć i się uśmiecham.",
-      "On cicho mówi cześć.",
-      "Mówimy cześć przy drzwiach.",
-      "Dzieci mówią cześć i machają."
-    ],
-    "el": [
-      "Λέω γεια και χαμογελάω.",
-      "Λέει γεια ήσυχα.",
-      "Λέμε γεια στην πόρτα.",
-      "Τα παιδιά λένε γεια και κουνάνε το χέρι."
-    ],
-    "nb": [
-      "Jeg sier hei og smiler.",
-      "Han sier hei stille.",
-      "Vi sier hei ved døra.",
-      "Barna sier hei og vinker."
-    ],
-    "id": [
-      "Saya bilang halo dan tersenyum.",
-      "Dia bilang halo pelan.",
-      "Kami bilang halo di pintu.",
-      "Anak-anak bilang halo dan melambai."
-    ],
-    "sv": [
-      "Jag säger hej och ler.",
-      "Han säger hej tyst.",
-      "Vi säger hej vid dörren.",
-      "Barnen säger hej och vinkar."
-    ],
-    "ro": [
-      "Spun salut și zâmbesc.",
-      "El spune salut încet.",
-      "Spunem salut la ușă.",
-      "Copiii spun salut și fac cu mâna."
     ],
     "cs": [
       "Říkám ahoj a usmívám se.",
@@ -835,11 +1884,77 @@
       "Vi siger hej ved døren.",
       "Børnene siger hej og vinker."
     ],
+    "de": [
+      "Ich sage hallo und lächle.",
+      "Er sagt leise hallo.",
+      "Wir sagen an der Tür hallo.",
+      "Die Kinder sagen hallo und winken."
+    ],
+    "el": [
+      "Λέω γεια και χαμογελάω.",
+      "Λέει γεια ήσυχα.",
+      "Λέμε γεια στην πόρτα.",
+      "Τα παιδιά λένε γεια και κουνάνε το χέρι."
+    ],
+    "en": [
+      "I say hello and smile.",
+      "He says hello quietly.",
+      "We say hello at the door.",
+      "The children say hello and wave."
+    ],
+    "es": [
+      "Digo hola y sonrío.",
+      "Él dice hola en voz baja.",
+      "Decimos hola en la puerta.",
+      "Los niños dicen hola y saludan con la mano."
+    ],
     "fi": [
       "Sanon hei ja hymyilen.",
       "Hän sanoo hei hiljaa.",
       "Sanomme hei ovella.",
       "Lapset sanovat hei ja vilkuttavat."
+    ],
+    "fr": [
+      "Je dis bonjour et je souris.",
+      "Il dit bonjour à voix basse.",
+      "Nous disons bonjour à la porte.",
+      "Les enfants disent bonjour et font signe de la main."
+    ],
+    "he": [
+      "אני אומר שלום ומחייך.",
+      "הוא אומר שלום בשקט.",
+      "אנחנו אומרים שלום ליד הדלת.",
+      "הילדים אומרים שלום ומנופפים."
+    ],
+    "hi": [
+      "मैं नमस्ते कहता हूँ और मुस्कुराता हूँ।",
+      "वह धीरे से नमस्ते कहता है।",
+      "हम दरवाज़े पर नमस्ते कहते हैं।",
+      "बच्चे नमस्ते कहते हैं और हाथ हिलाते हैं।"
+    ],
+    "hu": [
+      "Köszönök és mosolygok.",
+      "Halkan köszön.",
+      "Az ajtónál köszönünk.",
+      "A gyerekek köszönnek és integetnek."
+    ],
+    "id": [
+      "Saya bilang halo dan tersenyum.",
+      "Dia bilang halo pelan.",
+      "Kami bilang halo di pintu.",
+      "Anak-anak bilang halo dan melambai."
+    ],
+    "ipa": [
+      "/ɪç ˈzaːɡə haˈloː ʊnt ˈlɛçlə/",
+      "/eːɐ̯ zaːkt ˈlaɪ̯zə haˈloː/",
+      "/viːɐ̯ ˈzaːɡən haˈloː an deːɐ̯ tyːɐ̯/",
+      "/diː ˈkɪndɐ ˈzaːɡən haˈloː ʊnt ˈvɪŋkən/"
+    ],
+    "it": [
+      "Dico ciao e sorrido.",
+      "Lui dice ciao sottovoce.",
+      "Diciamo ciao alla porta.",
+      "I bambini dicono ciao e salutano con la mano."
     ],
     "ja": [
       "こんにちはと言って、笑います。",
@@ -847,6 +1962,83 @@
       "私たちはドアのところであいさつします。",
       "子どもたちはあいさつして手を振ります。"
     ],
-    "word_POS": "Other"
+    "ko": [
+      "안녕하세요 하고 웃어요.",
+      "그는 조용히 인사해요.",
+      "우리는 문에서 인사해요.",
+      "아이들이 인사하고 손을 흔들어요."
+    ],
+    "nb": [
+      "Jeg sier hei og smiler.",
+      "Han sier hei stille.",
+      "Vi sier hei ved døra.",
+      "Barna sier hei og vinker."
+    ],
+    "nl": [
+      "Ik zeg hallo en glimlach.",
+      "Hij zegt zachtjes hallo.",
+      "We zeggen hallo bij de deur.",
+      "De kinderen zeggen hallo en zwaaien."
+    ],
+    "pl": [
+      "Mówię cześć i się uśmiecham.",
+      "On cicho mówi cześć.",
+      "Mówimy cześć przy drzwiach.",
+      "Dzieci mówią cześć i machają."
+    ],
+    "pt": [
+      "Eu digo oi e sorrio.",
+      "Ele diz oi baixinho.",
+      "Nós dizemos oi na porta.",
+      "As crianças dizem oi e acenam."
+    ],
+    "ro": [
+      "Spun salut și zâmbesc.",
+      "El spune salut încet.",
+      "Spunem salut la ușă.",
+      "Copiii spun salut și fac cu mâna."
+    ],
+    "ru": [
+      "Я здороваюсь и улыбаюсь.",
+      "Он тихо здоровается.",
+      "Мы здороваемся у двери.",
+      "Дети здороваются и машут."
+    ],
+    "sv": [
+      "Jag säger hej och ler.",
+      "Han säger hej tyst.",
+      "Vi säger hej vid dörren.",
+      "Barnen säger hej och vinkar."
+    ],
+    "tr": [
+      "Merhaba diyorum ve gülümsüyorum.",
+      "O sessizce merhaba diyor.",
+      "Kapıda merhaba diyoruz.",
+      "Çocuklar merhaba diyor ve el sallıyor."
+    ],
+    "uk": [
+      "Я кажу привіт і усміхаюся.",
+      "Він тихо каже привіт.",
+      "Ми кажемо привіт біля дверей.",
+      "Діти кажуть привіт і махають."
+    ],
+    "vi": [
+      "Tôi chào và mỉm cười.",
+      "Anh ấy chào khẽ.",
+      "Chúng tôi chào ở cửa.",
+      "Bọn trẻ chào và vẫy tay."
+    ],
+    "yue": [
+      "我打招呼，笑一笑。",
+      "佢細聲打個招呼。",
+      "我哋喺門口打招呼。",
+      "啲小朋友打招呼，揮下手。"
+    ],
+    "zh-Hans": [
+      "我打招呼并微笑。",
+      "他轻声打招呼。",
+      "我们在门口打招呼。",
+      "孩子们打招呼并挥手。"
+    ]
   }
 }

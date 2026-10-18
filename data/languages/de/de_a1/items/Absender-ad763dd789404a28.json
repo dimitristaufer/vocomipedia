@@ -239,7 +239,7 @@
       "difficulty": 5.43
     },
     {
-      "target": "Der Absender fehlt auf dem Paket.",
+      "target": "Der Name des Absenders fehlt auf dem Paket.",
       "reading": "/deːɐ ˈapzɛndɐ feːlt aʊ̯f deːm paˈkeːt/",
       "translations": {
         "de": "Der Absender fehlt auf dem Paket.",
@@ -275,58 +275,103 @@
       "tokens": [
         {
           "surface": "Der",
-          "surface_en": "the",
-          "furigana": "[deːɐ̯]",
-          "pos": "DET",
           "lemma": "der",
-          "explanation": "Definite article, nominative masculine singular; determines the subject noun 'Absender'.",
-          "difficulty": 2
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "ART",
+          "feats": {},
+          "start": 0,
+          "end": 3,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "Absender",
-          "surface_en": "sender",
-          "furigana": "[ˈapzɛndɐ]",
+          "surface": "Name",
+          "lemma": "Name",
           "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 4,
+          "end": 8,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "des",
+          "lemma": "der",
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "ART",
+          "feats": {},
+          "start": 9,
+          "end": 12,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": "Absenders",
           "lemma": "Absender",
-          "explanation": "Common noun, masculine singular; subject of the clause.",
-          "difficulty": 10,
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 13,
+          "end": 22,
+          "analyzer": "spacy_de_core_news_lg",
           "is_main_word": true
         },
         {
           "surface": "fehlt",
-          "surface_en": "is missing",
-          "furigana": "[feːlt]",
-          "pos": "VERB",
           "lemma": "fehlen",
-          "explanation": "Finite verb, 3rd person singular present; intransitive predicate expressing absence.",
-          "difficulty": 7
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VVFIN",
+          "feats": {},
+          "start": 23,
+          "end": 28,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "auf",
-          "surface_en": "on",
-          "furigana": "[aʊ̯f]",
-          "pos": "ADP",
           "lemma": "auf",
-          "explanation": "Preposition governing dative for static reference; introduces the PP.",
-          "difficulty": 2
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "APPR",
+          "feats": {},
+          "start": 29,
+          "end": 32,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "dem",
-          "surface_en": "the",
-          "furigana": "[deːm]",
-          "pos": "DET",
           "lemma": "der",
-          "explanation": "Definite article, dative neuter singular; determines 'Paket' as object of the preposition.",
-          "difficulty": 2
+          "pos": "DET",
+          "upos": "DET",
+          "xpos": "ART",
+          "feats": {},
+          "start": 33,
+          "end": 36,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "Paket.",
-          "surface_en": "package",
-          "furigana": "[paˈkeːt]",
-          "pos": "NOUN",
+          "surface": "Paket",
           "lemma": "Paket",
-          "explanation": "Common noun, neuter singular; object of the preposition 'auf'.",
-          "difficulty": 7
+          "pos": "NOUN",
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 37,
+          "end": 42,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 42,
+          "end": 43,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 5
@@ -445,8 +490,336 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-14T18:54:03Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:De a1/ad763dd789404a28",
+      "revision_id": 84751,
+      "parent_revision_id": 12150,
+      "revision_timestamp_utc": "2026-10-14T18:54:03Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Clarify the missing sender information in German (content suggestion)",
+      "pulled_utc": "2026-10-18T19:12:26Z",
+      "applied_utc": "2026-10-18T19:12:30Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-6eab76f3187861ec",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_a1:ad763dd789404a28",
+        "pack_code": "de_a1",
+        "entry_id": "Absender",
+        "language": "de",
+        "sentence_index": 3,
+        "old_sentence": "Der Absender fehlt auf dem Paket.",
+        "old_translations": {
+          "de": "Der Absender fehlt auf dem Paket.",
+          "ipa": "/deːɐ ˈapzɛndɐ feːlt aʊ̯f deːm paˈkeːt/",
+          "en": "The sender's name is missing from the package.",
+          "es": "Falta el nombre del remitente en el paquete.",
+          "fr": "Il manque le nom de l'expéditeur sur le colis.",
+          "it": "Sul pacco manca il nome del mittente.",
+          "ko": "소포에 보낸 사람 이름이 없어요.",
+          "zh-Hans": "包裹上没有寄件人的名字。",
+          "yue": "包裹上冇寄件人嘅名字。",
+          "ru": "На посылке нет имени отправителя.",
+          "pt": "Falta o nome do remetente no pacote.",
+          "he": "שם השולח לא מופיע על החבילה.",
+          "tr": "Pakette gönderenin adı yok.",
+          "vi": "Trên gói hàng không có tên người gửi.",
+          "ar": "اسم المرسل غير موجود على الطرد.",
+          "nl": "Op het pakket ontbreekt de naam van de afzender.",
+          "uk": "На посилці немає імені відправника.",
+          "hu": "A csomagon nincs a feladó neve.",
+          "hi": "पार्सल पर भेजने वाले का नाम नहीं है.",
+          "pl": "Na paczce brakuje imienia i nazwiska nadawcy.",
+          "el": "Λείπει το όνομα του αποστολέα από το πακέτο.",
+          "nb": "Avsenderens navn mangler på pakken.",
+          "id": "Nama pengirim tidak ada di paket.",
+          "sv": "Avsändarens namn saknas på paketet.",
+          "ro": "Numele expeditorului lipsește de pe colet.",
+          "cs": "Na balíku chybí jméno odesílatele.",
+          "da": "Afsenderens navn mangler på pakken.",
+          "fi": "Paketista puuttuu lähettäjän nimi.",
+          "ja": "荷物に差出人の名前がありません。"
+        },
+        "proposed_sentence": "Der Name des Absenders fehlt auf dem Paket.",
+        "proposed_translations": {
+          "de": "Der Absender fehlt auf dem Paket.",
+          "ipa": "/deːɐ ˈapzɛndɐ feːlt aʊ̯f deːm paˈkeːt/",
+          "en": "The sender's name is missing from the package.",
+          "es": "Falta el nombre del remitente en el paquete.",
+          "fr": "Il manque le nom de l'expéditeur sur le colis.",
+          "it": "Sul pacco manca il nome del mittente.",
+          "ko": "소포에 보낸 사람 이름이 없어요.",
+          "zh-Hans": "包裹上没有寄件人的名字。",
+          "yue": "包裹上冇寄件人嘅名字。",
+          "ru": "На посылке нет имени отправителя.",
+          "pt": "Falta o nome do remetente no pacote.",
+          "he": "שם השולח לא מופיע על החבילה.",
+          "tr": "Pakette gönderenin adı yok.",
+          "vi": "Trên gói hàng không có tên người gửi.",
+          "ar": "اسم المرسل غير موجود على الطرد.",
+          "nl": "Op het pakket ontbreekt de naam van de afzender.",
+          "uk": "На посилці немає імені відправника.",
+          "hu": "A csomagon nincs a feladó neve.",
+          "hi": "पार्सल पर भेजने वाले का नाम नहीं है.",
+          "pl": "Na paczce brakuje imienia i nazwiska nadawcy.",
+          "el": "Λείπει το όνομα του αποστολέα από το πακέτο.",
+          "nb": "Avsenderens navn mangler på pakken.",
+          "id": "Nama pengirim tidak ada di paket.",
+          "sv": "Avsändarens namn saknas på paketet.",
+          "ro": "Numele expeditorului lipsește de pe colet.",
+          "cs": "Na balíku chybí jméno odesílatele.",
+          "da": "Afsenderens navn mangler på pakken.",
+          "fi": "Paketista puuttuu lähettäjän nimi.",
+          "ja": "荷物に差出人の名前がありません。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Der Name des Absenders fehlt auf dem Paket.",
+        "old_japanese": "Der Absender fehlt auf dem Paket.",
+        "old_english": "The sender's name is missing from the package.",
+        "proposed_japanese": "Der Name des Absenders fehlt auf dem Paket.",
+        "proposed_english": "The sender's name is missing from the package.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Der Name des Absenders fehlt auf dem Paket.",
+          "tokens": [
+            {
+              "surface": "Der",
+              "lemma": "der",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "ART",
+              "feats": {},
+              "start": 0,
+              "end": 3,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Name",
+              "lemma": "Name",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 4,
+              "end": 8,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "des",
+              "lemma": "der",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "ART",
+              "feats": {},
+              "start": 9,
+              "end": 12,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Absenders",
+              "lemma": "Absender",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 13,
+              "end": 22,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "fehlt",
+              "lemma": "fehlen",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVFIN",
+              "feats": {},
+              "start": 23,
+              "end": 28,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "auf",
+              "lemma": "auf",
+              "pos": "ADP",
+              "upos": "ADP",
+              "xpos": "APPR",
+              "feats": {},
+              "start": 29,
+              "end": 32,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "dem",
+              "lemma": "der",
+              "pos": "DET",
+              "upos": "DET",
+              "xpos": "ART",
+              "feats": {},
+              "start": 33,
+              "end": 36,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Paket",
+              "lemma": "Paket",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 37,
+              "end": 42,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 42,
+              "end": 43,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Der",
+            "lemma": "der",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Name",
+            "lemma": "Name",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 4,
+            "end": 8,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "des",
+            "lemma": "der",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 9,
+            "end": 12,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Absenders",
+            "lemma": "Absender",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 13,
+            "end": 22,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "fehlt",
+            "lemma": "fehlen",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 23,
+            "end": 28,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "auf",
+            "lemma": "auf",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 29,
+            "end": 32,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "dem",
+            "lemma": "der",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 33,
+            "end": 36,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Paket",
+            "lemma": "Paket",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 37,
+            "end": 42,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 42,
+            "end": 43,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-18T19:12:26Z",
+        "updated_utc": "2026-10-18T19:12:44Z",
+        "applied_utc": "2026-10-18T19:12:44Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-18T19:12:44Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -458,34 +831,6 @@
     "word": "Absender",
     "word_reading": "",
     "word_label": "Substantiv (der mask.)",
-    "word_en": "sender; return address",
-    "word_es": "remitente; dirección del remitente",
-    "word_fr": "expéditeur; adresse de l’expéditeur",
-    "word_it": "mittente; indirizzo del mittente",
-    "word_ko": "보낸 사람; 보낸 사람 주소",
-    "word_zh-Hans": "寄件人; 回邮地址",
-    "word_yue": "寄件人; 回郵地址",
-    "word_ru": "отправитель; обратный адрес",
-    "word_pt": "remetente; endereço do remetente",
-    "word_he": "שולח; כתובת השולח",
-    "word_tr": "gönderen; gönderen adresi",
-    "word_vi": "người gửi; địa chỉ người gửi",
-    "word_ar": "المرسل; عنوان المرسل",
-    "word_nl": "afzender; retouradres",
-    "word_uk": "відправник; зворотна адреса",
-    "word_hu": "feladó; feladó címe",
-    "word_hi": "भेजने वाला; भेजने वाले का पता",
-    "word_pl": "nadawca; adres zwrotny",
-    "word_el": "αποστολέας; διεύθυνση αποστολέα",
-    "word_nb": "avsender; returadresse",
-    "word_id": "pengirim; alamat pengirim",
-    "word_sv": "avsändare; returadress",
-    "word_ro": "expeditor; adresa expeditorului",
-    "word_cs": "odesílatel; zpáteční adresa",
-    "word_da": "afsender; returadresse",
-    "word_fi": "lähettäjä; palautusosoite",
-    "word_ja": "差出人; 差出人住所",
-    "word_de": "Absender",
     "comic_difficulty": 5.18,
     "jp": [
       "Der Absender steht auf dem Brief.",
@@ -498,24 +843,6 @@
       "/ɪç ˈʃʁaɪ̯bə deːn ˈapzɛndɐ aʊ̯f deːn ˈʊmʃlaːk/",
       "/deːɐ ˈapzɛndɐ feːlt aʊ̯f deːm paˈkeːt/",
       "/ˈliːza zuːxt deːn ˈapzɛndɐ ɪn deːɐ ˈiːmeːl/"
-    ],
-    "de": [
-      "Der Absender steht auf dem Brief.",
-      "Ich schreibe den Absender auf den Umschlag.",
-      "Der Absender fehlt auf dem Paket.",
-      "Lisa sucht den Absender in der E-Mail."
-    ],
-    "ipa": [
-      "/deːɐ ˈapzɛndɐ ʃteːt aʊ̯f deːm bʁiːf/",
-      "/ɪç ˈʃʁaɪ̯bə deːn ˈapzɛndɐ aʊ̯f deːn ˈʊmʃlaːk/",
-      "/deːɐ ˈapzɛndɐ feːlt aʊ̯f deːm paˈkeːt/",
-      "/ˈliːza zuːxt deːn ˈapzɛndɐ ɪn deːɐ ˈiːmeːl/"
-    ],
-    "en": [
-      "The sender's name is on the letter.",
-      "I write the sender's name on the envelope.",
-      "The sender's name is missing from the package.",
-      "Lisa looks for the sender in the email."
     ],
     "pos_analysis": [
       {
@@ -650,62 +977,107 @@
         "difficulty_aggregated": 5.43
       },
       {
-        "sentence": "Der Absender fehlt auf dem Paket.",
+        "sentence": "Der Name des Absenders fehlt auf dem Paket.",
         "tokens": [
           {
             "surface": "Der",
-            "surface_en": "the",
-            "furigana": "[deːɐ̯]",
-            "pos": "DET",
             "lemma": "der",
-            "explanation": "Definite article, nominative masculine singular; determines the subject noun 'Absender'.",
-            "difficulty": 2
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "Absender",
-            "surface_en": "sender",
-            "furigana": "[ˈapzɛndɐ]",
+            "surface": "Name",
+            "lemma": "Name",
             "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 4,
+            "end": 8,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "des",
+            "lemma": "der",
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 9,
+            "end": 12,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Absenders",
             "lemma": "Absender",
-            "explanation": "Common noun, masculine singular; subject of the clause.",
-            "difficulty": 10,
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 13,
+            "end": 22,
+            "analyzer": "spacy_de_core_news_lg",
             "is_main_word": true
           },
           {
             "surface": "fehlt",
-            "surface_en": "is missing",
-            "furigana": "[feːlt]",
-            "pos": "VERB",
             "lemma": "fehlen",
-            "explanation": "Finite verb, 3rd person singular present; intransitive predicate expressing absence.",
-            "difficulty": 7
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 23,
+            "end": 28,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "auf",
-            "surface_en": "on",
-            "furigana": "[aʊ̯f]",
-            "pos": "ADP",
             "lemma": "auf",
-            "explanation": "Preposition governing dative for static reference; introduces the PP.",
-            "difficulty": 2
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPR",
+            "feats": {},
+            "start": 29,
+            "end": 32,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "dem",
-            "surface_en": "the",
-            "furigana": "[deːm]",
-            "pos": "DET",
             "lemma": "der",
-            "explanation": "Definite article, dative neuter singular; determines 'Paket' as object of the preposition.",
-            "difficulty": 2
+            "pos": "DET",
+            "upos": "DET",
+            "xpos": "ART",
+            "feats": {},
+            "start": 33,
+            "end": 36,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "Paket.",
-            "surface_en": "package",
-            "furigana": "[paˈkeːt]",
-            "pos": "NOUN",
+            "surface": "Paket",
             "lemma": "Paket",
-            "explanation": "Common noun, neuter singular; object of the preposition 'auf'.",
-            "difficulty": 7
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 37,
+            "end": 42,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 42,
+            "end": 43,
+            "analyzer": "spacy_de_core_news_lg"
           }
         ],
         "difficulty_aggregated": 5
@@ -781,137 +1153,41 @@
         "difficulty_aggregated": 5.29
       }
     ],
-    "es": [
-      "El nombre del remitente está en la carta.",
-      "Escribo el nombre del remitente en el sobre.",
-      "Falta el nombre del remitente en el paquete.",
-      "Lisa busca el remitente en el correo electrónico."
-    ],
-    "fr": [
-      "Le nom de l'expéditeur est sur la lettre.",
-      "J'écris le nom de l'expéditeur sur l'enveloppe.",
-      "Il manque le nom de l'expéditeur sur le colis.",
-      "Lisa cherche l'expéditeur dans l'e-mail."
-    ],
-    "it": [
-      "Il nome del mittente è sulla lettera.",
-      "Scrivo il nome del mittente sulla busta.",
-      "Sul pacco manca il nome del mittente.",
-      "Lisa cerca il mittente nell'email."
-    ],
-    "ko": [
-      "편지에 보낸 사람 이름이 있어요.",
-      "봉투에 보낸 사람 이름을 씁니다.",
-      "소포에 보낸 사람 이름이 없어요.",
-      "리사는 이메일에서 보낸 사람을 찾고 있어요."
-    ],
-    "zh-Hans": [
-      "信上有寄件人的名字。",
-      "我在信封上写寄件人的名字。",
-      "包裹上没有寄件人的名字。",
-      "丽莎在邮件里找发件人。"
-    ],
-    "yue": [
-      "信上有寄件人嘅名字。",
-      "我喺信封上寫寄件人嘅名字。",
-      "包裹上冇寄件人嘅名字。",
-      "麗莎喺電郵入面搵寄件人。"
-    ],
-    "ru": [
-      "На письме есть имя отправителя.",
-      "Я пишу имя отправителя на конверте.",
-      "На посылке нет имени отправителя.",
-      "Лиза ищет отправителя в электронном письме."
-    ],
-    "pt": [
-      "O nome do remetente está na carta.",
-      "Eu escrevo o nome do remetente no envelope.",
-      "Falta o nome do remetente no pacote.",
-      "Lisa procura o remetente no e-mail."
-    ],
-    "he": [
-      "שם השולח נמצא על המכתב.",
-      "אני כותב את שם השולח על המעטפה.",
-      "שם השולח לא מופיע על החבילה.",
-      "ליסה מחפשת את השולח באימייל."
-    ],
-    "tr": [
-      "Mektupta gönderenin adı var.",
-      "Zarfa gönderenin adını yazıyorum.",
-      "Pakette gönderenin adı yok.",
-      "Lisa e-postada göndereni arıyor."
-    ],
-    "vi": [
-      "Tên người gửi có trên thư.",
-      "Tôi viết tên người gửi trên phong bì.",
-      "Trên gói hàng không có tên người gửi.",
-      "Lisa tìm người gửi trong email."
-    ],
+    "word_POS": "Noun",
+    "entry_id": "Absender",
+    "word_en": "sender; return address",
+    "word_es": "remitente; dirección del remitente",
+    "word_fr": "expéditeur; adresse de l’expéditeur",
+    "word_it": "mittente; indirizzo del mittente",
+    "word_ko": "보낸 사람; 보낸 사람 주소",
+    "word_zh-Hans": "寄件人; 回邮地址",
+    "word_yue": "寄件人; 回郵地址",
+    "word_ru": "отправитель; обратный адрес",
+    "word_pt": "remetente; endereço do remetente",
+    "word_he": "שולח; כתובת השולח",
+    "word_tr": "gönderen; gönderen adresi",
+    "word_vi": "người gửi; địa chỉ người gửi",
+    "word_ar": "المرسل; عنوان المرسل",
+    "word_nl": "afzender; retouradres",
+    "word_uk": "відправник; зворотна адреса",
+    "word_hu": "feladó; feladó címe",
+    "word_hi": "भेजने वाला; भेजने वाले का पता",
+    "word_pl": "nadawca; adres zwrotny",
+    "word_el": "αποστολέας; διεύθυνση αποστολέα",
+    "word_nb": "avsender; returadresse",
+    "word_id": "pengirim; alamat pengirim",
+    "word_sv": "avsändare; returadress",
+    "word_ro": "expeditor; adresa expeditorului",
+    "word_cs": "odesílatel; zpáteční adresa",
+    "word_da": "afsender; returadresse",
+    "word_fi": "lähettäjä; palautusosoite",
+    "word_ja": "差出人; 差出人住所",
+    "word_de": "Absender",
     "ar": [
       "اسم المرسل موجود على الرسالة.",
       "أكتب اسم المرسل على الظرف.",
       "اسم المرسل غير موجود على الطرد.",
       "ليزا تبحث عن المرسل في البريد الإلكتروني."
-    ],
-    "nl": [
-      "De naam van de afzender staat op de brief.",
-      "Ik schrijf de naam van de afzender op de envelop.",
-      "Op het pakket ontbreekt de naam van de afzender.",
-      "Lisa zoekt de afzender in de e-mail."
-    ],
-    "uk": [
-      "Ім’я відправника є на листі.",
-      "Я пишу ім’я відправника на конверті.",
-      "На посилці немає імені відправника.",
-      "Ліза шукає відправника в електронному листі."
-    ],
-    "hu": [
-      "A feladó neve rajta van a levélen.",
-      "Ráírom a feladó nevét a borítékra.",
-      "A csomagon nincs a feladó neve.",
-      "Lisa a feladót keresi az e-mailben."
-    ],
-    "hi": [
-      "चिट्ठी पर भेजने वाले का नाम लिखा है.",
-      "मैं लिफाफे पर भेजने वाले का नाम लिखता हूँ.",
-      "पार्सल पर भेजने वाले का नाम नहीं है.",
-      "लीसा ईमेल में भेजने वाले को ढूंढ रही है."
-    ],
-    "pl": [
-      "Na liście jest imię i nazwisko nadawcy.",
-      "Piszę imię i nazwisko nadawcy na kopercie.",
-      "Na paczce brakuje imienia i nazwiska nadawcy.",
-      "Lisa szuka nadawcy w e-mailu."
-    ],
-    "el": [
-      "Το όνομα του αποστολέα είναι στο γράμμα.",
-      "Γράφω το όνομα του αποστολέα στο φάκελο.",
-      "Λείπει το όνομα του αποστολέα από το πακέτο.",
-      "Η Λίζα ψάχνει τον αποστολέα στο email."
-    ],
-    "nb": [
-      "Avsenderens navn står på brevet.",
-      "Jeg skriver avsenderens navn på konvolutten.",
-      "Avsenderens navn mangler på pakken.",
-      "Lisa leter etter avsenderen i e-posten."
-    ],
-    "id": [
-      "Nama pengirim ada di surat.",
-      "Saya menulis nama pengirim di amplop.",
-      "Nama pengirim tidak ada di paket.",
-      "Lisa mencari pengirim di email."
-    ],
-    "sv": [
-      "Avsändarens namn står på brevet.",
-      "Jag skriver avsändarens namn på kuvertet.",
-      "Avsändarens namn saknas på paketet.",
-      "Lisa letar efter avsändaren i mejlet."
-    ],
-    "ro": [
-      "Numele expeditorului este pe scrisoare.",
-      "Scriu numele expeditorului pe plic.",
-      "Numele expeditorului lipsește de pe colet.",
-      "Lisa caută expeditorul în e-mail."
     ],
     "cs": [
       "Na dopise je jméno odesílatele.",
@@ -925,11 +1201,77 @@
       "Afsenderens navn mangler på pakken.",
       "Lisa leder efter afsenderen i mailen."
     ],
+    "de": [
+      "Der Absender steht auf dem Brief.",
+      "Ich schreibe den Absender auf den Umschlag.",
+      "Der Absender fehlt auf dem Paket.",
+      "Lisa sucht den Absender in der E-Mail."
+    ],
+    "el": [
+      "Το όνομα του αποστολέα είναι στο γράμμα.",
+      "Γράφω το όνομα του αποστολέα στο φάκελο.",
+      "Λείπει το όνομα του αποστολέα από το πακέτο.",
+      "Η Λίζα ψάχνει τον αποστολέα στο email."
+    ],
+    "en": [
+      "The sender's name is on the letter.",
+      "I write the sender's name on the envelope.",
+      "The sender's name is missing from the package.",
+      "Lisa looks for the sender in the email."
+    ],
+    "es": [
+      "El nombre del remitente está en la carta.",
+      "Escribo el nombre del remitente en el sobre.",
+      "Falta el nombre del remitente en el paquete.",
+      "Lisa busca el remitente en el correo electrónico."
+    ],
     "fi": [
       "Lähettäjän nimi on kirjeessä.",
       "Kirjoitan lähettäjän nimen kuoreen.",
       "Paketista puuttuu lähettäjän nimi.",
       "Lisa etsii lähettäjää sähköpostista."
+    ],
+    "fr": [
+      "Le nom de l'expéditeur est sur la lettre.",
+      "J'écris le nom de l'expéditeur sur l'enveloppe.",
+      "Il manque le nom de l'expéditeur sur le colis.",
+      "Lisa cherche l'expéditeur dans l'e-mail."
+    ],
+    "he": [
+      "שם השולח נמצא על המכתב.",
+      "אני כותב את שם השולח על המעטפה.",
+      "שם השולח לא מופיע על החבילה.",
+      "ליסה מחפשת את השולח באימייל."
+    ],
+    "hi": [
+      "चिट्ठी पर भेजने वाले का नाम लिखा है.",
+      "मैं लिफाफे पर भेजने वाले का नाम लिखता हूँ.",
+      "पार्सल पर भेजने वाले का नाम नहीं है.",
+      "लीसा ईमेल में भेजने वाले को ढूंढ रही है."
+    ],
+    "hu": [
+      "A feladó neve rajta van a levélen.",
+      "Ráírom a feladó nevét a borítékra.",
+      "A csomagon nincs a feladó neve.",
+      "Lisa a feladót keresi az e-mailben."
+    ],
+    "id": [
+      "Nama pengirim ada di surat.",
+      "Saya menulis nama pengirim di amplop.",
+      "Nama pengirim tidak ada di paket.",
+      "Lisa mencari pengirim di email."
+    ],
+    "ipa": [
+      "/deːɐ ˈapzɛndɐ ʃteːt aʊ̯f deːm bʁiːf/",
+      "/ɪç ˈʃʁaɪ̯bə deːn ˈapzɛndɐ aʊ̯f deːn ˈʊmʃlaːk/",
+      "/deːɐ ˈapzɛndɐ feːlt aʊ̯f deːm paˈkeːt/",
+      "/ˈliːza zuːxt deːn ˈapzɛndɐ ɪn deːɐ ˈiːmeːl/"
+    ],
+    "it": [
+      "Il nome del mittente è sulla lettera.",
+      "Scrivo il nome del mittente sulla busta.",
+      "Sul pacco manca il nome del mittente.",
+      "Lisa cerca il mittente nell'email."
     ],
     "ja": [
       "手紙に差出人の名前があります。",
@@ -937,6 +1279,83 @@
       "荷物に差出人の名前がありません。",
       "リサはメールで差出人を探します。"
     ],
-    "word_POS": "Noun"
+    "ko": [
+      "편지에 보낸 사람 이름이 있어요.",
+      "봉투에 보낸 사람 이름을 씁니다.",
+      "소포에 보낸 사람 이름이 없어요.",
+      "리사는 이메일에서 보낸 사람을 찾고 있어요."
+    ],
+    "nb": [
+      "Avsenderens navn står på brevet.",
+      "Jeg skriver avsenderens navn på konvolutten.",
+      "Avsenderens navn mangler på pakken.",
+      "Lisa leter etter avsenderen i e-posten."
+    ],
+    "nl": [
+      "De naam van de afzender staat op de brief.",
+      "Ik schrijf de naam van de afzender op de envelop.",
+      "Op het pakket ontbreekt de naam van de afzender.",
+      "Lisa zoekt de afzender in de e-mail."
+    ],
+    "pl": [
+      "Na liście jest imię i nazwisko nadawcy.",
+      "Piszę imię i nazwisko nadawcy na kopercie.",
+      "Na paczce brakuje imienia i nazwiska nadawcy.",
+      "Lisa szuka nadawcy w e-mailu."
+    ],
+    "pt": [
+      "O nome do remetente está na carta.",
+      "Eu escrevo o nome do remetente no envelope.",
+      "Falta o nome do remetente no pacote.",
+      "Lisa procura o remetente no e-mail."
+    ],
+    "ro": [
+      "Numele expeditorului este pe scrisoare.",
+      "Scriu numele expeditorului pe plic.",
+      "Numele expeditorului lipsește de pe colet.",
+      "Lisa caută expeditorul în e-mail."
+    ],
+    "ru": [
+      "На письме есть имя отправителя.",
+      "Я пишу имя отправителя на конверте.",
+      "На посылке нет имени отправителя.",
+      "Лиза ищет отправителя в электронном письме."
+    ],
+    "sv": [
+      "Avsändarens namn står på brevet.",
+      "Jag skriver avsändarens namn på kuvertet.",
+      "Avsändarens namn saknas på paketet.",
+      "Lisa letar efter avsändaren i mejlet."
+    ],
+    "tr": [
+      "Mektupta gönderenin adı var.",
+      "Zarfa gönderenin adını yazıyorum.",
+      "Pakette gönderenin adı yok.",
+      "Lisa e-postada göndereni arıyor."
+    ],
+    "uk": [
+      "Ім’я відправника є на листі.",
+      "Я пишу ім’я відправника на конверті.",
+      "На посилці немає імені відправника.",
+      "Ліза шукає відправника в електронному листі."
+    ],
+    "vi": [
+      "Tên người gửi có trên thư.",
+      "Tôi viết tên người gửi trên phong bì.",
+      "Trên gói hàng không có tên người gửi.",
+      "Lisa tìm người gửi trong email."
+    ],
+    "yue": [
+      "信上有寄件人嘅名字。",
+      "我喺信封上寫寄件人嘅名字。",
+      "包裹上冇寄件人嘅名字。",
+      "麗莎喺電郵入面搵寄件人。"
+    ],
+    "zh-Hans": [
+      "信上有寄件人的名字。",
+      "我在信封上写寄件人的名字。",
+      "包裹上没有寄件人的名字。",
+      "丽莎在邮件里找发件人。"
+    ]
   }
 }

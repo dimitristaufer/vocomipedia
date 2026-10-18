@@ -14,9 +14,9 @@
   ],
   "glosses": {
     "en": "departure (flight); takeoff",
-    "es": "salida (vuelos); despegue",
-    "fr": "départ (vols); décollage",
-    "it": "partenza (voli); decollo",
+    "es": "salida (de un vuelo); despegue",
+    "fr": "départ (d'un vol); décollage",
+    "it": "partenza (di un volo); decollo",
     "ko": "출발(항공편); 이륙",
     "zh-Hans": "出发（航班）；起飞",
     "yue": "出發（航班）；起飛",
@@ -158,7 +158,7 @@
         "nl": "Onze vlucht heeft twintig minuten vertraging.",
         "uk": "Наш рейс затримується на двадцять хвилин.",
         "hu": "A járatunk húsz percet késik.",
-        "hi": "हमारी उड़ान बीस मिनट देर है.",
+        "hi": "हमारी उड़ान में बीस मिनट की देरी है।",
         "pl": "Nasz lot ma dwadzieścia minut opóźnienia.",
         "el": "Η πτήση μας καθυστερεί είκοσι λεπτά.",
         "nb": "Flyet vårt er tjue minutter forsinket.",
@@ -230,7 +230,7 @@
       "difficulty": 8
     },
     {
-      "target": "Wir gehen jetzt zum Abflug.",
+      "target": "Wir gehen jetzt zum Abflugbereich.",
       "reading": "/viːɐ̯ ˈɡeːən jɛtst tsʊm ˈapfluːk/",
       "translations": {
         "de": "Wir gehen jetzt zum Abflug.",
@@ -255,7 +255,7 @@
         "pl": "Teraz idziemy do odlotów.",
         "el": "Τώρα πάμε στις αναχωρήσεις.",
         "nb": "Nå går vi til avgangshallen.",
-        "id": "Sekarang kami pergi ke keberangkatan.",
+        "id": "Sekarang kami pergi ke area keberangkatan.",
         "sv": "Nu går vi till avgångshallen.",
         "ro": "Acum mergem la plecări.",
         "cs": "Teď jdeme na odlety.",
@@ -266,49 +266,69 @@
       "tokens": [
         {
           "surface": "Wir",
-          "surface_en": "we",
-          "furigana": "[viːɐ̯]",
-          "pos": "PRON",
           "lemma": "wir",
-          "explanation": "Personal pronoun, 1st person plural nominative; subject.",
-          "difficulty": 2
+          "pos": "PRON",
+          "upos": "PRON",
+          "xpos": "PPER",
+          "feats": {},
+          "start": 0,
+          "end": 3,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "gehen",
-          "surface_en": "go",
-          "furigana": "[ˈɡeːən]",
-          "pos": "VERB",
           "lemma": "gehen",
-          "explanation": "Finite verb, 1st person plural present; intransitive motion verb.",
-          "difficulty": 7
+          "pos": "VERB",
+          "upos": "VERB",
+          "xpos": "VVFIN",
+          "feats": {},
+          "start": 4,
+          "end": 9,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "jetzt",
-          "surface_en": "now",
-          "furigana": "[jɛtst]",
-          "pos": "ADV",
           "lemma": "jetzt",
-          "explanation": "Temporal adverb modifying the verb phrase.",
-          "difficulty": 7
+          "pos": "ADV",
+          "upos": "ADV",
+          "xpos": "ADV",
+          "feats": {},
+          "start": 10,
+          "end": 15,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
           "surface": "zum",
-          "surface_en": "to the",
-          "furigana": "[tsʊm]",
-          "pos": "ADP",
           "lemma": "zu",
-          "explanation": "Preposition 'zu' contracted with article 'dem' (zu + dem); governs dative.",
-          "difficulty": 2
+          "pos": "ADP",
+          "upos": "ADP",
+          "xpos": "APPRART",
+          "feats": {},
+          "start": 16,
+          "end": 19,
+          "analyzer": "spacy_de_core_news_lg"
         },
         {
-          "surface": "Abflug",
-          "surface_en": "departure (flight)",
-          "furigana": "[ˈapfluːk]",
+          "surface": "Abflugbereich",
+          "lemma": "Abflugbereich",
           "pos": "NOUN",
-          "lemma": "Abflug",
-          "explanation": "Common noun, masculine singular dative; object of the preposition 'zum' indicating goal/direction.",
-          "difficulty": 7,
-          "is_main_word": true
+          "upos": "NOUN",
+          "xpos": "NN",
+          "feats": {},
+          "start": 20,
+          "end": 33,
+          "analyzer": "spacy_de_core_news_lg"
+        },
+        {
+          "surface": ".",
+          "lemma": "--",
+          "pos": "PUNCT",
+          "upos": "PUNCT",
+          "xpos": "$.",
+          "feats": {},
+          "start": 33,
+          "end": 34,
+          "analyzer": "spacy_de_core_news_lg"
         }
       ],
       "difficulty": 5
@@ -319,7 +339,7 @@
       "translations": {
         "de": "Der Abflug fällt heute aus.",
         "ipa": "/deːɐ̯ ˈapfluːk fɛlt ˈhɔʏ̯tə aʊs/",
-        "en": "The departure is canceled today.",
+        "en": "Today's flight is canceled.",
         "es": "El vuelo de hoy está cancelado.",
         "fr": "Le vol d'aujourd'hui est annulé.",
         "it": "Il volo di oggi è annullato.",
@@ -411,8 +431,270 @@
   "review": {
     "status": "approved",
     "language_reviewers": [],
-    "content_reviewers": [],
-    "last_reviewed_utc": null
+    "content_reviewers": [
+      "mediawiki-visible-revision"
+    ],
+    "last_reviewed_utc": "2026-10-14T22:45:30Z",
+    "approval_source": "mediawiki_visible_revision_with_sentence_proposals",
+    "wiki": {
+      "title": "Item:De a1/c8123cad4182470e",
+      "revision_id": 85826,
+      "parent_revision_id": 84753,
+      "revision_timestamp_utc": "2026-10-14T22:45:30Z",
+      "revision_user": "VocomiBotContributor",
+      "revision_comment": "Content suggestion: improve German or translation wording",
+      "pulled_utc": "2026-10-18T19:12:26Z",
+      "applied_utc": "2026-10-18T19:12:30Z",
+      "applied_by": "vocomipedia-apply-pulled"
+    },
+    "sentence_proposals": [
+      {
+        "id": "sentprop-a723bb9484b9aee4",
+        "status": "applied",
+        "type": "sentence_replacement",
+        "item_id": "de_a1:c8123cad4182470e",
+        "pack_code": "de_a1",
+        "entry_id": "Abflug",
+        "language": "de",
+        "sentence_index": 3,
+        "old_sentence": "Wir gehen jetzt zum Abflug.",
+        "old_translations": {
+          "de": "Wir gehen jetzt zum Abflug.",
+          "ipa": "/viːɐ̯ ˈɡeːən jɛtst tsʊm ˈapfluːk/",
+          "en": "We are going to departures now.",
+          "es": "Ahora vamos a salidas.",
+          "fr": "On va aux départs maintenant.",
+          "it": "Adesso andiamo alle partenze.",
+          "ko": "이제 출발장으로 가요.",
+          "zh-Hans": "我们现在去出发大厅。",
+          "yue": "我哋而家去離境大堂。",
+          "ru": "Мы сейчас идем в зону вылета.",
+          "pt": "Agora vamos para o embarque.",
+          "he": "עכשיו אנחנו הולכים להמראות.",
+          "tr": "Şimdi gidişlere gidiyoruz.",
+          "vi": "Bây giờ chúng tôi đi đến khu khởi hành.",
+          "ar": "نحن ذاهبون الآن إلى صالة المغادرة.",
+          "nl": "We gaan nu naar de vertrekhal.",
+          "uk": "Ми зараз йдемо до зони вильоту.",
+          "hu": "Most megyünk az indulási csarnokba.",
+          "hi": "हम अब प्रस्थान क्षेत्र की ओर जा रहे हैं.",
+          "pl": "Teraz idziemy do odlotów.",
+          "el": "Τώρα πάμε στις αναχωρήσεις.",
+          "nb": "Nå går vi til avgangshallen.",
+          "id": "Sekarang kami pergi ke keberangkatan.",
+          "sv": "Nu går vi till avgångshallen.",
+          "ro": "Acum mergem la plecări.",
+          "cs": "Teď jdeme na odlety.",
+          "da": "Nu går vi til afgangshallen.",
+          "fi": "Nyt menemme lähtöalueelle.",
+          "ja": "今から出発ロビーに行きます。"
+        },
+        "proposed_sentence": "Wir gehen jetzt zum Abflugbereich.",
+        "proposed_translations": {
+          "de": "Wir gehen jetzt zum Abflug.",
+          "ipa": "/viːɐ̯ ˈɡeːən jɛtst tsʊm ˈapfluːk/",
+          "en": "We are going to departures now.",
+          "es": "Ahora vamos a salidas.",
+          "fr": "On va aux départs maintenant.",
+          "it": "Adesso andiamo alle partenze.",
+          "ko": "이제 출발장으로 가요.",
+          "zh-Hans": "我们现在去出发大厅。",
+          "yue": "我哋而家去離境大堂。",
+          "ru": "Мы сейчас идем в зону вылета.",
+          "pt": "Agora vamos para o embarque.",
+          "he": "עכשיו אנחנו הולכים להמראות.",
+          "tr": "Şimdi gidişlere gidiyoruz.",
+          "vi": "Bây giờ chúng tôi đi đến khu khởi hành.",
+          "ar": "نحن ذاهبون الآن إلى صالة المغادرة.",
+          "nl": "We gaan nu naar de vertrekhal.",
+          "uk": "Ми зараз йдемо до зони вильоту.",
+          "hu": "Most megyünk az indulási csarnokba.",
+          "hi": "हम अब प्रस्थान क्षेत्र की ओर जा रहे हैं.",
+          "pl": "Teraz idziemy do odlotów.",
+          "el": "Τώρα πάμε στις αναχωρήσεις.",
+          "nb": "Nå går vi til avgangshallen.",
+          "id": "Sekarang kami pergi ke area keberangkatan.",
+          "sv": "Nu går vi till avgångshallen.",
+          "ro": "Acum mergem la plecări.",
+          "cs": "Teď jdeme na odlety.",
+          "da": "Nu går vi til afgangshallen.",
+          "fi": "Nyt menemme lähtöalueelle.",
+          "ja": "今から出発ロビーに行きます。"
+        },
+        "old_ruby_source": "",
+        "proposed_ruby_source": "Wir gehen jetzt zum Abflugbereich.",
+        "old_japanese": "Wir gehen jetzt zum Abflug.",
+        "old_english": "We are going to departures now.",
+        "proposed_japanese": "Wir gehen jetzt zum Abflugbereich.",
+        "proposed_english": "We are going to departures now.",
+        "reason": "",
+        "analysis_status": "generated",
+        "analysis": {
+          "language": "de",
+          "sentence": "Wir gehen jetzt zum Abflugbereich.",
+          "tokens": [
+            {
+              "surface": "Wir",
+              "lemma": "wir",
+              "pos": "PRON",
+              "upos": "PRON",
+              "xpos": "PPER",
+              "feats": {},
+              "start": 0,
+              "end": 3,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "gehen",
+              "lemma": "gehen",
+              "pos": "VERB",
+              "upos": "VERB",
+              "xpos": "VVFIN",
+              "feats": {},
+              "start": 4,
+              "end": 9,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "jetzt",
+              "lemma": "jetzt",
+              "pos": "ADV",
+              "upos": "ADV",
+              "xpos": "ADV",
+              "feats": {},
+              "start": 10,
+              "end": 15,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "zum",
+              "lemma": "zu",
+              "pos": "ADP",
+              "upos": "ADP",
+              "xpos": "APPRART",
+              "feats": {},
+              "start": 16,
+              "end": 19,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": "Abflugbereich",
+              "lemma": "Abflugbereich",
+              "pos": "NOUN",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": {},
+              "start": 20,
+              "end": 33,
+              "analyzer": "spacy_de_core_news_lg"
+            },
+            {
+              "surface": ".",
+              "lemma": "--",
+              "pos": "PUNCT",
+              "upos": "PUNCT",
+              "xpos": "$.",
+              "feats": {},
+              "start": 33,
+              "end": 34,
+              "analyzer": "spacy_de_core_news_lg"
+            }
+          ],
+          "reading": "",
+          "analyzer": "spacy_de_core_news_lg",
+          "warnings": []
+        },
+        "generated_tokens": [
+          {
+            "surface": "Wir",
+            "lemma": "wir",
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "gehen",
+            "lemma": "gehen",
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 4,
+            "end": 9,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "jetzt",
+            "lemma": "jetzt",
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 10,
+            "end": 15,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "zum",
+            "lemma": "zu",
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPRART",
+            "feats": {},
+            "start": 16,
+            "end": 19,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": "Abflugbereich",
+            "lemma": "Abflugbereich",
+            "pos": "NOUN",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 20,
+            "end": 33,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 33,
+            "end": 34,
+            "analyzer": "spacy_de_core_news_lg"
+          }
+        ],
+        "generated_reading": "",
+        "analyzer": "spacy_de_core_news_lg",
+        "requires": [
+          "human_review",
+          "auto_generated_token_review",
+          "comic_scene_compatibility_review"
+        ],
+        "validation": {
+          "token_sequence_errors": [],
+          "comic_policy": "must_remain_valid",
+          "comic_invalidation_supported": false,
+          "notes": [
+            "Automatic sentence analysis is attached to this proposal.",
+            "Review generated tokens/POS before applying to release content."
+          ]
+        },
+        "created_utc": "2026-10-18T19:12:26Z",
+        "updated_utc": "2026-10-18T19:12:44Z",
+        "applied_utc": "2026-10-18T19:12:44Z",
+        "applied_by": "vocomipedia-sentence-proposal-tool"
+      }
+    ],
+    "last_sentence_proposal_applied_utc": "2026-10-18T19:12:44Z"
   },
   "provenance": {
     "origin": "legacy_import",
@@ -424,34 +706,6 @@
     "word": "Abflug",
     "word_reading": "",
     "word_label": "Substantiv (der mask.)",
-    "word_en": "departure (flight); takeoff",
-    "word_es": "salida (vuelos); despegue",
-    "word_fr": "départ (vols); décollage",
-    "word_it": "partenza (voli); decollo",
-    "word_ko": "출발(항공편); 이륙",
-    "word_zh-Hans": "出发（航班）；起飞",
-    "word_yue": "出發（航班）；起飛",
-    "word_ru": "вылет; взлёт",
-    "word_pt": "partida (voos); decolagem",
-    "word_he": "יציאה (טיסות); המראה",
-    "word_tr": "gidiş (uçuşlar); kalkış",
-    "word_vi": "khởi hành (chuyến bay); cất cánh",
-    "word_ar": "المغادرة (رحلات طيران); الإقلاع",
-    "word_nl": "vertrek (vluchten); opstijging",
-    "word_uk": "виліт; зліт",
-    "word_hu": "indulás (járatok); felszállás",
-    "word_hi": "प्रस्थान (उड़ान); टेकऑफ़",
-    "word_pl": "odlot; start",
-    "word_el": "αναχώρηση (πτήσεις); απογείωση",
-    "word_nb": "avgang (fly); start",
-    "word_id": "keberangkatan (penerbangan); lepas landas",
-    "word_sv": "avgång (flyg); start",
-    "word_ro": "plecare (zboruri); decolare",
-    "word_cs": "odlet; vzlet",
-    "word_da": "afgang (fly); start",
-    "word_fi": "lähtö (lennot); lentoonlähtö",
-    "word_ja": "出発（便）；離陸",
-    "word_de": "Abflug",
     "comic_difficulty": 5.67,
     "jp": [
       "Der Abflug ist um neun Uhr.",
@@ -464,24 +718,6 @@
       "/ˈʊnzɐ ˈapfluːk hat ˈtsvantsɪç miˈnuːtən fɛɐ̯ˈʃpɛːtʊŋ/",
       "/viːɐ̯ ˈɡeːən jɛtst tsʊm ˈapfluːk/",
       "/deːɐ̯ ˈapfluːk fɛlt ˈhɔʏ̯tə aʊs/"
-    ],
-    "de": [
-      "Der Abflug ist um neun Uhr.",
-      "Unser Abflug hat zwanzig Minuten Verspätung.",
-      "Wir gehen jetzt zum Abflug.",
-      "Der Abflug fällt heute aus."
-    ],
-    "ipa": [
-      "/deːɐ̯ ˈapfluːk ɪst ʊm nɔʏ̯n uːɐ̯/",
-      "/ˈʊnzɐ ˈapfluːk hat ˈtsvantsɪç miˈnuːtən fɛɐ̯ˈʃpɛːtʊŋ/",
-      "/viːɐ̯ ˈɡeːən jɛtst tsʊm ˈapfluːk/",
-      "/deːɐ̯ ˈapfluːk fɛlt ˈhɔʏ̯tə aʊs/"
-    ],
-    "en": [
-      "The departure is at nine o'clock.",
-      "Our departure is twenty minutes late.",
-      "We are going to departures now.",
-      "The departure is canceled today."
     ],
     "pos_analysis": [
       {
@@ -607,53 +843,73 @@
         "difficulty_aggregated": 8
       },
       {
-        "sentence": "Wir gehen jetzt zum Abflug.",
+        "sentence": "Wir gehen jetzt zum Abflugbereich.",
         "tokens": [
           {
             "surface": "Wir",
-            "surface_en": "we",
-            "furigana": "[viːɐ̯]",
-            "pos": "PRON",
             "lemma": "wir",
-            "explanation": "Personal pronoun, 1st person plural nominative; subject.",
-            "difficulty": 2
+            "pos": "PRON",
+            "upos": "PRON",
+            "xpos": "PPER",
+            "feats": {},
+            "start": 0,
+            "end": 3,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "gehen",
-            "surface_en": "go",
-            "furigana": "[ˈɡeːən]",
-            "pos": "VERB",
             "lemma": "gehen",
-            "explanation": "Finite verb, 1st person plural present; intransitive motion verb.",
-            "difficulty": 7
+            "pos": "VERB",
+            "upos": "VERB",
+            "xpos": "VVFIN",
+            "feats": {},
+            "start": 4,
+            "end": 9,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "jetzt",
-            "surface_en": "now",
-            "furigana": "[jɛtst]",
-            "pos": "ADV",
             "lemma": "jetzt",
-            "explanation": "Temporal adverb modifying the verb phrase.",
-            "difficulty": 7
+            "pos": "ADV",
+            "upos": "ADV",
+            "xpos": "ADV",
+            "feats": {},
+            "start": 10,
+            "end": 15,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
             "surface": "zum",
-            "surface_en": "to the",
-            "furigana": "[tsʊm]",
-            "pos": "ADP",
             "lemma": "zu",
-            "explanation": "Preposition 'zu' contracted with article 'dem' (zu + dem); governs dative.",
-            "difficulty": 2
+            "pos": "ADP",
+            "upos": "ADP",
+            "xpos": "APPRART",
+            "feats": {},
+            "start": 16,
+            "end": 19,
+            "analyzer": "spacy_de_core_news_lg"
           },
           {
-            "surface": "Abflug",
-            "surface_en": "departure (flight)",
-            "furigana": "[ˈapfluːk]",
+            "surface": "Abflugbereich",
+            "lemma": "Abflugbereich",
             "pos": "NOUN",
-            "lemma": "Abflug",
-            "explanation": "Common noun, masculine singular dative; object of the preposition 'zum' indicating goal/direction.",
-            "difficulty": 7,
-            "is_main_word": true
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {},
+            "start": 20,
+            "end": 33,
+            "analyzer": "spacy_de_core_news_lg"
+          },
+          {
+            "surface": ".",
+            "lemma": "--",
+            "pos": "PUNCT",
+            "upos": "PUNCT",
+            "xpos": "$.",
+            "feats": {},
+            "start": 33,
+            "end": 34,
+            "analyzer": "spacy_de_core_news_lg"
           }
         ],
         "difficulty_aggregated": 5
@@ -713,137 +969,41 @@
         "difficulty_aggregated": 5
       }
     ],
-    "es": [
-      "El vuelo sale a las nueve.",
-      "Nuestro vuelo tiene veinte minutos de retraso.",
-      "Ahora vamos a salidas.",
-      "El vuelo de hoy está cancelado."
-    ],
-    "fr": [
-      "Le vol part à neuf heures.",
-      "Notre vol a vingt minutes de retard.",
-      "On va aux départs maintenant.",
-      "Le vol d'aujourd'hui est annulé."
-    ],
-    "it": [
-      "Il volo parte alle nove.",
-      "Il nostro volo ha venti minuti di ritardo.",
-      "Adesso andiamo alle partenze.",
-      "Il volo di oggi è annullato."
-    ],
-    "ko": [
-      "비행기는 아홉 시에 출발해요.",
-      "우리 비행기가 20분 지연됐어요.",
-      "이제 출발장으로 가요.",
-      "오늘 비행편이 취소됐어요."
-    ],
-    "zh-Hans": [
-      "航班在九点起飞。",
-      "我们的航班晚点二十分钟。",
-      "我们现在去出发大厅。",
-      "今天的航班被取消了。"
-    ],
-    "yue": [
-      "班機喺九點起飛。",
-      "我哋班機延誤二十分鐘。",
-      "我哋而家去離境大堂。",
-      "今日嘅航班取消咗。"
-    ],
-    "ru": [
-      "Рейс вылетает в девять.",
-      "Наш рейс задерживается на двадцать минут.",
-      "Мы сейчас идем в зону вылета.",
-      "Сегодня рейс отменён."
-    ],
-    "pt": [
-      "O voo sai às nove.",
-      "O nosso voo está vinte minutos atrasado.",
-      "Agora vamos para o embarque.",
-      "O voo de hoje foi cancelado."
-    ],
-    "he": [
-      "הטיסה יוצאת בתשע.",
-      "הטיסה שלנו מתעכבת בעשרים דקות.",
-      "עכשיו אנחנו הולכים להמראות.",
-      "הטיסה של היום בוטלה."
-    ],
-    "tr": [
-      "Uçak saat dokuzda kalkıyor.",
-      "Uçağımız yirmi dakika gecikmeli.",
-      "Şimdi gidişlere gidiyoruz.",
-      "Bugünkü uçuş iptal edildi."
-    ],
-    "vi": [
-      "Chuyến bay khởi hành lúc chín giờ.",
-      "Chuyến bay của chúng tôi trễ 20 phút.",
-      "Bây giờ chúng tôi đi đến khu khởi hành.",
-      "Chuyến bay hôm nay bị hủy."
-    ],
+    "word_POS": "Noun",
+    "entry_id": "Abflug",
+    "word_en": "departure (flight); takeoff",
+    "word_es": "salida (de un vuelo); despegue",
+    "word_fr": "départ (d'un vol); décollage",
+    "word_it": "partenza (di un volo); decollo",
+    "word_ko": "출발(항공편); 이륙",
+    "word_zh-Hans": "出发（航班）；起飞",
+    "word_yue": "出發（航班）；起飛",
+    "word_ru": "вылет; взлёт",
+    "word_pt": "partida (voos); decolagem",
+    "word_he": "יציאה (טיסות); המראה",
+    "word_tr": "gidiş (uçuşlar); kalkış",
+    "word_vi": "khởi hành (chuyến bay); cất cánh",
+    "word_ar": "المغادرة (رحلات طيران); الإقلاع",
+    "word_nl": "vertrek (vluchten); opstijging",
+    "word_uk": "виліт; зліт",
+    "word_hu": "indulás (járatok); felszállás",
+    "word_hi": "प्रस्थान (उड़ान); टेकऑफ़",
+    "word_pl": "odlot; start",
+    "word_el": "αναχώρηση (πτήσεις); απογείωση",
+    "word_nb": "avgang (fly); start",
+    "word_id": "keberangkatan (penerbangan); lepas landas",
+    "word_sv": "avgång (flyg); start",
+    "word_ro": "plecare (zboruri); decolare",
+    "word_cs": "odlet; vzlet",
+    "word_da": "afgang (fly); start",
+    "word_fi": "lähtö (lennot); lentoonlähtö",
+    "word_ja": "出発（便）；離陸",
+    "word_de": "Abflug",
     "ar": [
       "تغادر الرحلة الساعة التاسعة.",
       "رحلتنا متأخرة بعشرين دقيقة.",
       "نحن ذاهبون الآن إلى صالة المغادرة.",
       "تم إلغاء رحلة اليوم."
-    ],
-    "nl": [
-      "De vlucht vertrekt om negen uur.",
-      "Onze vlucht heeft twintig minuten vertraging.",
-      "We gaan nu naar de vertrekhal.",
-      "De vlucht van vandaag is geannuleerd."
-    ],
-    "uk": [
-      "Рейс вилітає о дев’ятій.",
-      "Наш рейс затримується на двадцять хвилин.",
-      "Ми зараз йдемо до зони вильоту.",
-      "Сьогоднішній рейс скасовано."
-    ],
-    "hu": [
-      "A járat kilenckor indul.",
-      "A járatunk húsz percet késik.",
-      "Most megyünk az indulási csarnokba.",
-      "A mai járatot törölték."
-    ],
-    "hi": [
-      "उड़ान नौ बजे रवाना होती है.",
-      "हमारी उड़ान बीस मिनट देर है.",
-      "हम अब प्रस्थान क्षेत्र की ओर जा रहे हैं.",
-      "आज की उड़ान रद्द है."
-    ],
-    "pl": [
-      "Lot odlatuje o dziewiątej.",
-      "Nasz lot ma dwadzieścia minut opóźnienia.",
-      "Teraz idziemy do odlotów.",
-      "Dzisiejszy lot został odwołany."
-    ],
-    "el": [
-      "Η πτήση αναχωρεί στις εννέα.",
-      "Η πτήση μας καθυστερεί είκοσι λεπτά.",
-      "Τώρα πάμε στις αναχωρήσεις.",
-      "Η σημερινή πτήση ακυρώθηκε."
-    ],
-    "nb": [
-      "Flyet går klokken ni.",
-      "Flyet vårt er tjue minutter forsinket.",
-      "Nå går vi til avgangshallen.",
-      "Dagens fly er avlyst."
-    ],
-    "id": [
-      "Pesawat berangkat jam sembilan.",
-      "Pesawat kami terlambat dua puluh menit.",
-      "Sekarang kami pergi ke keberangkatan.",
-      "Penerbangan hari ini dibatalkan."
-    ],
-    "sv": [
-      "Flyget går klockan nio.",
-      "Vårt flyg är tjugo minuter försenat.",
-      "Nu går vi till avgångshallen.",
-      "Dagens flyg är inställt."
-    ],
-    "ro": [
-      "Zborul pleacă la ora nouă.",
-      "Zborul nostru întârzie douăzeci de minute.",
-      "Acum mergem la plecări.",
-      "Zborul de astăzi a fost anulat."
     ],
     "cs": [
       "Let odlétá v devět.",
@@ -857,11 +1017,77 @@
       "Nu går vi til afgangshallen.",
       "Dagens fly er aflyst."
     ],
+    "de": [
+      "Der Abflug ist um neun Uhr.",
+      "Unser Abflug hat zwanzig Minuten Verspätung.",
+      "Wir gehen jetzt zum Abflug.",
+      "Der Abflug fällt heute aus."
+    ],
+    "el": [
+      "Η πτήση αναχωρεί στις εννέα.",
+      "Η πτήση μας καθυστερεί είκοσι λεπτά.",
+      "Τώρα πάμε στις αναχωρήσεις.",
+      "Η σημερινή πτήση ακυρώθηκε."
+    ],
+    "en": [
+      "The departure is at nine o'clock.",
+      "Our departure is twenty minutes late.",
+      "We are going to departures now.",
+      "Today's flight is canceled."
+    ],
+    "es": [
+      "El vuelo sale a las nueve.",
+      "Nuestro vuelo tiene veinte minutos de retraso.",
+      "Ahora vamos a salidas.",
+      "El vuelo de hoy está cancelado."
+    ],
     "fi": [
       "Lento lähtee kello yhdeksältä.",
       "Lentomme on kaksikymmentä minuuttia myöhässä.",
       "Nyt menemme lähtöalueelle.",
       "Tämän päivän lento on peruttu."
+    ],
+    "fr": [
+      "Le vol part à neuf heures.",
+      "Notre vol a vingt minutes de retard.",
+      "On va aux départs maintenant.",
+      "Le vol d'aujourd'hui est annulé."
+    ],
+    "he": [
+      "הטיסה יוצאת בתשע.",
+      "הטיסה שלנו מתעכבת בעשרים דקות.",
+      "עכשיו אנחנו הולכים להמראות.",
+      "הטיסה של היום בוטלה."
+    ],
+    "hi": [
+      "उड़ान नौ बजे रवाना होती है.",
+      "हमारी उड़ान में बीस मिनट की देरी है।",
+      "हम अब प्रस्थान क्षेत्र की ओर जा रहे हैं.",
+      "आज की उड़ान रद्द है."
+    ],
+    "hu": [
+      "A járat kilenckor indul.",
+      "A járatunk húsz percet késik.",
+      "Most megyünk az indulási csarnokba.",
+      "A mai járatot törölték."
+    ],
+    "id": [
+      "Pesawat berangkat jam sembilan.",
+      "Pesawat kami terlambat dua puluh menit.",
+      "Sekarang kami pergi ke keberangkatan.",
+      "Penerbangan hari ini dibatalkan."
+    ],
+    "ipa": [
+      "/deːɐ̯ ˈapfluːk ɪst ʊm nɔʏ̯n uːɐ̯/",
+      "/ˈʊnzɐ ˈapfluːk hat ˈtsvantsɪç miˈnuːtən fɛɐ̯ˈʃpɛːtʊŋ/",
+      "/viːɐ̯ ˈɡeːən jɛtst tsʊm ˈapfluːk/",
+      "/deːɐ̯ ˈapfluːk fɛlt ˈhɔʏ̯tə aʊs/"
+    ],
+    "it": [
+      "Il volo parte alle nove.",
+      "Il nostro volo ha venti minuti di ritardo.",
+      "Adesso andiamo alle partenze.",
+      "Il volo di oggi è annullato."
     ],
     "ja": [
       "フライトは9時に出発します。",
@@ -869,6 +1095,83 @@
       "今から出発ロビーに行きます。",
       "本日のフライトは欠航です。"
     ],
-    "word_POS": "Noun"
+    "ko": [
+      "비행기는 아홉 시에 출발해요.",
+      "우리 비행기가 20분 지연됐어요.",
+      "이제 출발장으로 가요.",
+      "오늘 비행편이 취소됐어요."
+    ],
+    "nb": [
+      "Flyet går klokken ni.",
+      "Flyet vårt er tjue minutter forsinket.",
+      "Nå går vi til avgangshallen.",
+      "Dagens fly er avlyst."
+    ],
+    "nl": [
+      "De vlucht vertrekt om negen uur.",
+      "Onze vlucht heeft twintig minuten vertraging.",
+      "We gaan nu naar de vertrekhal.",
+      "De vlucht van vandaag is geannuleerd."
+    ],
+    "pl": [
+      "Lot odlatuje o dziewiątej.",
+      "Nasz lot ma dwadzieścia minut opóźnienia.",
+      "Teraz idziemy do odlotów.",
+      "Dzisiejszy lot został odwołany."
+    ],
+    "pt": [
+      "O voo sai às nove.",
+      "O nosso voo está vinte minutos atrasado.",
+      "Agora vamos para o embarque.",
+      "O voo de hoje foi cancelado."
+    ],
+    "ro": [
+      "Zborul pleacă la ora nouă.",
+      "Zborul nostru întârzie douăzeci de minute.",
+      "Acum mergem la plecări.",
+      "Zborul de astăzi a fost anulat."
+    ],
+    "ru": [
+      "Рейс вылетает в девять.",
+      "Наш рейс задерживается на двадцать минут.",
+      "Мы сейчас идем в зону вылета.",
+      "Сегодня рейс отменён."
+    ],
+    "sv": [
+      "Flyget går klockan nio.",
+      "Vårt flyg är tjugo minuter försenat.",
+      "Nu går vi till avgångshallen.",
+      "Dagens flyg är inställt."
+    ],
+    "tr": [
+      "Uçak saat dokuzda kalkıyor.",
+      "Uçağımız yirmi dakika gecikmeli.",
+      "Şimdi gidişlere gidiyoruz.",
+      "Bugünkü uçuş iptal edildi."
+    ],
+    "uk": [
+      "Рейс вилітає о дев’ятій.",
+      "Наш рейс затримується на двадцять хвилин.",
+      "Ми зараз йдемо до зони вильоту.",
+      "Сьогоднішній рейс скасовано."
+    ],
+    "vi": [
+      "Chuyến bay khởi hành lúc chín giờ.",
+      "Chuyến bay của chúng tôi trễ 20 phút.",
+      "Bây giờ chúng tôi đi đến khu khởi hành.",
+      "Chuyến bay hôm nay bị hủy."
+    ],
+    "yue": [
+      "班機喺九點起飛。",
+      "我哋班機延誤二十分鐘。",
+      "我哋而家去離境大堂。",
+      "今日嘅航班取消咗。"
+    ],
+    "zh-Hans": [
+      "航班在九点起飞。",
+      "我们的航班晚点二十分钟。",
+      "我们现在去出发大厅。",
+      "今天的航班被取消了。"
+    ]
   }
 }
